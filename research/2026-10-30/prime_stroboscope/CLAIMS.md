@@ -1,0 +1,14 @@
+# Scoped claim ledger — Operation Prime Stroboscope
+
+| ID | Scope / claim | Status | Controls and unfulfilled obligations |
+|---|---|---|---|
+| PS-00 | Authentic positive BBP four-pole forcing, rational `U_n(0)`, original `U_0=0` unchanged | Source-pinned classical | Compare original source/archives; no new claim on pi digits |
+| PS-01 | For `p≡1 mod4`, prime `p>8k−2`, `N=((4k−1)p+1)/4`, exact `pU_N≡U_k (mod p)` | **PROVED LOCAL** paper p-adic termwise proof; 138 direct/oracle finite coefficient comparisons | Test p≥13 in both classes, p-integral coefficients, p²-exclusion; different implementation; no automatic real-circle conclusion |
+| PS-02 | General-source involution `J(A,B,C,D)=(-4C,B,-A/4,D)` for p≡5mod8; fixed subspace `A=-4C` | **PROVED LOCAL** using Euler criterion / χ₈ and original pole offsets | `A=5,C=-1` mutation refutes fixed property; `A=4,C=-1,B=D=0` survives, refuting uniqueness |
+| PS-03 | Prime birth, residues `4/-1`, universal `7/2`, class-specific `33/10` or `−66/5`, universal `47/15=U1`; full ordₚ(16) period before first collision | **PROVED LOCAL** rational recurrence, FLT/quadratic reciprocity, 15 local tests | Distinguish p-primary rational phase from selected real circle; exceptional p=73,k=4 cancellation |
+| PS-04 | CRT split `e(hU_N)=e_p(h a)e_D(hb)` with `a≡U_k modp`; p-integral changed seed invisible | **PROVED LOCAL**, exact finite rational identity; **NO-GO** for p-only implication | Complementary phase remains unconstrained; arbitrary complementary marks can restore coherent full phases |
+| PS-05 | First 256 actual pure π hexadecimal phase positions certified in 16 equal bins from rational `U_n` and analytic original-tail upper bound | **OBSERVED FINITE + PROVED LOCAL CERTIFICATE**; source rational arithmetic no floating source digits | 410-dps independent π check; finite counts cannot imply any all-N asymptotic bound |
+| PS-06 | Mixed p-fiber/complementary-conductor arithmetic bounds force all-horizon selected arc occupancy ≤CN|I|+o(N) | **UNVERIFIED / OPEN** | Stoneham 16,3 and 16,5 normal controls; conductor 2 nonnormal; genuine zero seed vs coherent s*=−π/16; full CRT and signed holds |
+| PS-07 | p-stroboscopic self-similarity implies base-16 π normality or RH | **REFUTED as a source-only inference** by p-integral seed blindness / lack of CRT cofiber control; π normality and RH remain OPEN | Source-only finite congruences are not real-circle cancellation; never claim universal refutation of π normality itself |
+
+One reasoner using direct Fraction and distinct modular-event implementations is not an independent blind referee. Full SUCC root test suite, hosted CI, Lean checks, and mathematical priority review have NOT run. Preserve author's harmonic/golden/Euler–Mascheroni triangle and Oily–Macaroni naming provenance; this distinct prime-conductor mechanism is a complementary arithmetic research interface, not a replacement of the operational triangle.

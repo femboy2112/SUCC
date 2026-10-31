@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "m": 11,
+      "N": 1,
+      "checks": 16,
+      "first_unmatched_positive": true
+    },
+    {
+      "m": 13,
+      "N": 0,
+      "checks": 16,
+      "first_unmatched_positive": true
+    }
+  ],
+  "reviewed_sha256": "a167fc98484ac2f7e07ed67b0c5d55f4c71425710c56ee13ac0fc8a2f327f688",
+  "scope": "complementary same-model proof review and N=0/1 exact checks"
+}

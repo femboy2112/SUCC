@@ -1,0 +1,77 @@
+{
+  "tested_cases": 6,
+  "rows": [
+    {
+      "name": "debruijn2",
+      "N": 256,
+      "m": 2,
+      "k": 1,
+      "base": 16,
+      "Q": "1",
+      "Q_decimal": 1,
+      "L1": 0,
+      "upper": 0.015625,
+      "pass": true
+    },
+    {
+      "name": "debruijn3",
+      "N": 4096,
+      "m": 3,
+      "k": 2,
+      "base": 16,
+      "Q": "1",
+      "Q_decimal": 1,
+      "L1": 0,
+      "upper": 0.00146484375,
+      "pass": true
+    },
+    {
+      "name": "zeros",
+      "N": 512,
+      "m": 2,
+      "k": 1,
+      "base": 16,
+      "Q": "256",
+      "Q_decimal": 256,
+      "L1": 1.875,
+      "upper": 2.3626325450309493,
+      "pass": true
+    },
+    {
+      "name": "uniform",
+      "N": 8192,
+      "m": 4,
+      "k": 1,
+      "base": 16,
+      "Q": "287/32",
+      "Q_decimal": 8.96875,
+      "L1": 0.036376953125,
+      "upper": 1.048293685667547,
+      "pass": true
+    },
+    {
+      "name": "biased",
+      "N": 4096,
+      "m": 4,
+      "k": 1,
+      "base": 16,
+      "Q": "333881/128",
+      "Q_decimal": 2608.4453125,
+      "L1": 1.2001953125,
+      "upper": 1.9851966371699787,
+      "pass": true
+    },
+    {
+      "name": "quarter_cycle",
+      "N": 8192,
+      "m": 2,
+      "k": 1,
+      "base": 16,
+      "Q": "16",
+      "Q_decimal": 16,
+      "L1": 0,
+      "upper": 1.6655975035653954,
+      "pass": true
+    }
+  ]
+}

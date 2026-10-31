@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/2026-10-30/triangle_fabric/period_preserving",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric",
+  "start_utc": "2026-10-30T22:29:34.695700+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.17,
+  "end_utc": "2026-10-30T22:29:34.865232+00:00",
+  "log_sha256": "e953b76b93474ce3b380d27070d22d5ff990a94288e5c6ed4d45b5b967b4677d",
+  "log_bytes": 105
+}

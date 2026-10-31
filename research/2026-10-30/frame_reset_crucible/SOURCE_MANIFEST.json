@@ -1,0 +1,51 @@
+{
+  "branch": "research/normal-digit-frame-reset-stoneham-choice-2026-10-30",
+  "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+  "scope": "research-only; full root suite and hosted CI not run",
+  "files": {
+    "README.md": {
+      "sha256": "bd969659c396ad7ebb89892ef9cbf58759f8034d1760a1de8e0372b44878ff51",
+      "bytes": 4376
+    },
+    "RESEARCH.md": {
+      "sha256": "984ae30c8da9b60c3ee7306f71d7b406869f891266f3a320bf1e8682a44fdf48",
+      "bytes": 15693
+    },
+    "CLAIMS.md": {
+      "sha256": "83b580d4e16511934c303fb99f6e9e8a880bd35989476d1b945b52c272e89bd6",
+      "bytes": 4417
+    },
+    "NEXT.md": {
+      "sha256": "afebd0527ab098d817298ce46f53086b97b7e494bb674d0ea6a35a406f0c12d3",
+      "bytes": 3815
+    },
+    "VALIDATION.md": {
+      "sha256": "9fee1baa28554c7af944152aad85d12964677234e26fd468d865ad71e5eceaed",
+      "bytes": 4460
+    },
+    "frame_reset.py": {
+      "sha256": "e13ce4498cbd6a4961a899569950e70a106c18a7b2059479191eaf93a8075a98",
+      "bytes": 9586
+    },
+    "test_frame_reset.py": {
+      "sha256": "fac43caca7aadb9add01de108158125fdba4a62fd5d6f82699e1fc8890bdf03b",
+      "bytes": 9529
+    },
+    "independent_oracle.py": {
+      "sha256": "bacceb687cd08cca3c5b8cf7772577f213352b7fab6795688d84ebb1a969189b",
+      "bytes": 3198
+    },
+    "oracle_receipt.json": {
+      "sha256": "937d8feed415dfbfeff80517bc98fc19177a355b89229bae585c4d03a48c851b",
+      "bytes": 3627
+    },
+    "focused_tests.log": {
+      "sha256": "28997ffaac0bf1757e22928b8c34f598d4addee2c73c0a35c979b3bf8d46899a",
+      "bytes": 2816
+    },
+    "independent_oracle.log": {
+      "sha256": "23ea1bbf19462b7ad173af2efd01540904a840a614ce50a3ccd22e0f7af4e36e",
+      "bytes": 133
+    }
+  }
+}

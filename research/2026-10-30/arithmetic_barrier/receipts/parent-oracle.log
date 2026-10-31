@@ -1,0 +1,473 @@
+{
+  "status": "PASS",
+  "external_novelty": "not assessed",
+  "primes": [
+    13,
+    17,
+    29,
+    37,
+    41,
+    53,
+    61,
+    73,
+    89,
+    97,
+    101,
+    109,
+    113
+  ],
+  "independent_equalities": 138,
+  "main_cases": [
+    {
+      "p": 13,
+      "class8": 5,
+      "k": 1,
+      "N": 10,
+      "source_residue": 4,
+      "earlier_residue": 4,
+      "events": 4
+    },
+    {
+      "p": 17,
+      "class8": 1,
+      "k": 1,
+      "N": 13,
+      "source_residue": 2,
+      "earlier_residue": 2,
+      "events": 4
+    },
+    {
+      "p": 17,
+      "class8": 1,
+      "k": 2,
+      "N": 30,
+      "source_residue": 5,
+      "earlier_residue": 5,
+      "events": 8
+    },
+    {
+      "p": 29,
+      "class8": 5,
+      "k": 1,
+      "N": 22,
+      "source_residue": 7,
+      "earlier_residue": 7,
+      "events": 4
+    },
+    {
+      "p": 29,
+      "class8": 5,
+      "k": 2,
+      "N": 51,
+      "source_residue": 7,
+      "earlier_residue": 7,
+      "events": 8
+    },
+    {
+      "p": 29,
+      "class8": 5,
+      "k": 3,
+      "N": 80,
+      "source_residue": 19,
+      "earlier_residue": 19,
+      "events": 12
+    },
+    {
+      "p": 37,
+      "class8": 5,
+      "k": 1,
+      "N": 28,
+      "source_residue": 13,
+      "earlier_residue": 13,
+      "events": 4
+    },
+    {
+      "p": 37,
+      "class8": 5,
+      "k": 2,
+      "N": 65,
+      "source_residue": 22,
+      "earlier_residue": 22,
+      "events": 8
+    },
+    {
+      "p": 37,
+      "class8": 5,
+      "k": 3,
+      "N": 102,
+      "source_residue": 27,
+      "earlier_residue": 27,
+      "events": 12
+    },
+    {
+      "p": 37,
+      "class8": 5,
+      "k": 4,
+      "N": 139,
+      "source_residue": 22,
+      "earlier_residue": 22,
+      "events": 16
+    },
+    {
+      "p": 41,
+      "class8": 1,
+      "k": 1,
+      "N": 31,
+      "source_residue": 25,
+      "earlier_residue": 25,
+      "events": 4
+    },
+    {
+      "p": 41,
+      "class8": 1,
+      "k": 2,
+      "N": 72,
+      "source_residue": 7,
+      "earlier_residue": 7,
+      "events": 8
+    },
+    {
+      "p": 41,
+      "class8": 1,
+      "k": 3,
+      "N": 113,
+      "source_residue": 38,
+      "earlier_residue": 38,
+      "events": 12
+    },
+    {
+      "p": 41,
+      "class8": 1,
+      "k": 4,
+      "N": 154,
+      "source_residue": 39,
+      "earlier_residue": 39,
+      "events": 16
+    },
+    {
+      "p": 53,
+      "class8": 5,
+      "k": 1,
+      "N": 40,
+      "source_residue": 42,
+      "earlier_residue": 42,
+      "events": 4
+    },
+    {
+      "p": 53,
+      "class8": 5,
+      "k": 2,
+      "N": 93,
+      "source_residue": 36,
+      "earlier_residue": 36,
+      "events": 8
+    },
+    {
+      "p": 53,
+      "class8": 5,
+      "k": 3,
+      "N": 146,
+      "source_residue": 41,
+      "earlier_residue": 41,
+      "events": 12
+    },
+    {
+      "p": 53,
+      "class8": 5,
+      "k": 4,
+      "N": 199,
+      "source_residue": 35,
+      "earlier_residue": 35,
+      "events": 16
+    },
+    {
+      "p": 61,
+      "class8": 5,
+      "k": 1,
+      "N": 46,
+      "source_residue": 56,
+      "earlier_residue": 56,
+      "events": 4
+    },
+    {
+      "p": 61,
+      "class8": 5,
+      "k": 2,
+      "N": 107,
+      "source_residue": 32,
+      "earlier_residue": 32,
+      "events": 8
+    },
+    {
+      "p": 61,
+      "class8": 5,
+      "k": 3,
+      "N": 168,
+      "source_residue": 45,
+      "earlier_residue": 45,
+      "events": 12
+    },
+    {
+      "p": 61,
+      "class8": 5,
+      "k": 4,
+      "N": 229,
+      "source_residue": 51,
+      "earlier_residue": 51,
+      "events": 16
+    },
+    {
+      "p": 73,
+      "class8": 1,
+      "k": 1,
+      "N": 55,
+      "source_residue": 8,
+      "earlier_residue": 8,
+      "events": 4
+    },
+    {
+      "p": 73,
+      "class8": 1,
+      "k": 2,
+      "N": 128,
+      "source_residue": 16,
+      "earlier_residue": 16,
+      "events": 8
+    },
+    {
+      "p": 73,
+      "class8": 1,
+      "k": 3,
+      "N": 201,
+      "source_residue": 24,
+      "earlier_residue": 24,
+      "events": 12
+    },
+    {
+      "p": 73,
+      "class8": 1,
+      "k": 4,
+      "N": 274,
+      "source_residue": 0,
+      "earlier_residue": 0,
+      "events": 16
+    },
+    {
+      "p": 89,
+      "class8": 1,
+      "k": 1,
+      "N": 67,
+      "source_residue": 15,
+      "earlier_residue": 15,
+      "events": 4
+    },
+    {
+      "p": 89,
+      "class8": 1,
+      "k": 2,
+      "N": 156,
+      "source_residue": 58,
+      "earlier_residue": 58,
+      "events": 8
+    },
+    {
+      "p": 89,
+      "class8": 1,
+      "k": 3,
+      "N": 245,
+      "source_residue": 11,
+      "earlier_residue": 11,
+      "events": 12
+    },
+    {
+      "p": 89,
+      "class8": 1,
+      "k": 4,
+      "N": 334,
+      "source_residue": 21,
+      "earlier_residue": 21,
+      "events": 16
+    },
+    {
+      "p": 97,
+      "class8": 1,
+      "k": 1,
+      "N": 73,
+      "source_residue": 29,
+      "earlier_residue": 29,
+      "events": 4
+    },
+    {
+      "p": 97,
+      "class8": 1,
+      "k": 2,
+      "N": 170,
+      "source_residue": 92,
+      "earlier_residue": 92,
+      "events": 8
+    },
+    {
+      "p": 97,
+      "class8": 1,
+      "k": 3,
+      "N": 267,
+      "source_residue": 94,
+      "earlier_residue": 94,
+      "events": 12
+    },
+    {
+      "p": 97,
+      "class8": 1,
+      "k": 4,
+      "N": 364,
+      "source_residue": 67,
+      "earlier_residue": 67,
+      "events": 16
+    },
+    {
+      "p": 101,
+      "class8": 5,
+      "k": 1,
+      "N": 76,
+      "source_residue": 57,
+      "earlier_residue": 57,
+      "events": 4
+    },
+    {
+      "p": 101,
+      "class8": 5,
+      "k": 2,
+      "N": 177,
+      "source_residue": 31,
+      "earlier_residue": 31,
+      "events": 8
+    },
+    {
+      "p": 101,
+      "class8": 5,
+      "k": 3,
+      "N": 278,
+      "source_residue": 26,
+      "earlier_residue": 26,
+      "events": 12
+    },
+    {
+      "p": 101,
+      "class8": 5,
+      "k": 4,
+      "N": 379,
+      "source_residue": 62,
+      "earlier_residue": 62,
+      "events": 16
+    },
+    {
+      "p": 109,
+      "class8": 5,
+      "k": 1,
+      "N": 82,
+      "source_residue": 54,
+      "earlier_residue": 54,
+      "events": 4
+    },
+    {
+      "p": 109,
+      "class8": 5,
+      "k": 2,
+      "N": 191,
+      "source_residue": 99,
+      "earlier_residue": 99,
+      "events": 8
+    },
+    {
+      "p": 109,
+      "class8": 5,
+      "k": 3,
+      "N": 300,
+      "source_residue": 106,
+      "earlier_residue": 106,
+      "events": 12
+    },
+    {
+      "p": 109,
+      "class8": 5,
+      "k": 4,
+      "N": 409,
+      "source_residue": 80,
+      "earlier_residue": 80,
+      "events": 16
+    },
+    {
+      "p": 113,
+      "class8": 1,
+      "k": 1,
+      "N": 85,
+      "source_residue": 86,
+      "earlier_residue": 86,
+      "events": 4
+    },
+    {
+      "p": 113,
+      "class8": 1,
+      "k": 2,
+      "N": 198,
+      "source_residue": 48,
+      "earlier_residue": 48,
+      "events": 8
+    },
+    {
+      "p": 113,
+      "class8": 1,
+      "k": 3,
+      "N": 311,
+      "source_residue": 30,
+      "earlier_residue": 30,
+      "events": 12
+    },
+    {
+      "p": 113,
+      "class8": 1,
+      "k": 4,
+      "N": 424,
+      "source_residue": 25,
+      "earlier_residue": 25,
+      "events": 16
+    }
+  ],
+  "crt_controls": [
+    {
+      "p": 13,
+      "k": 1,
+      "p_part": 4,
+      "cofiber_denominator_digits": 20,
+      "p_conductor_present": true
+    },
+    {
+      "p": 17,
+      "k": 1,
+      "p_part": 2,
+      "cofiber_denominator_digits": 30,
+      "p_conductor_present": true
+    },
+    {
+      "p": 29,
+      "k": 2,
+      "p_part": 7,
+      "cofiber_denominator_digits": 131,
+      "p_conductor_present": true
+    },
+    {
+      "p": 41,
+      "k": 3,
+      "p_part": 38,
+      "cofiber_denominator_digits": 286,
+      "p_conductor_present": true
+    },
+    {
+      "p": 73,
+      "k": 4,
+      "p_part": 0,
+      "cofiber_denominator_digits": 705,
+      "p_conductor_present": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "parent_commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "recorded_utc": "2026-10-30T22:37:52.636356+00:00",
+  "source_inputs": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/OPERATIONAL_TRIANGLE.md": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035",
+    "docs/PI_SELECTED_CATEGORICAL_FRONTIER.md": "1e8900f28728b2aab5b1d9c3d98736a43a671303234acc5adce044ac574a90c5",
+    "docs/CATEGORICAL_OBSERVER_ATLAS.md": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc",
+    "research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md": "02161fa38733c4edad939cd626cda796dc9add08a9b42c4df7584f79137d2dc7",
+    "research/2026-10-29/operational_triangle_frontier/operational_triangle.py": "8b8be12cdbde8d3ae3fc17c4776aac3378dc44d2daa4dc6da64865f1194c809b",
+    "research/2026-10-30/gamma_twist/geometry/GEOMETRY_DOSSIER.md": "f151c69621dcd1b0bf3dab3cff6ef0c4372ddbacd2385fe75cc34370b2553f6b",
+    "research/2026-10-30/zero_boundary_dispersion/spectral/SPECTRAL_DOSSIER.md": "bd41f3a0515f2a27405c094b3c926b2952b730aa2f2bd48070d900899cc7a8dd",
+    "research/2026-10-30/zero_boundary_dispersion/run_receipt.py": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28"
+  },
+  "artifacts": {
+    "CATEGORICAL_ARROWS.md": "6d8c5e0e220a1e10d9f234365864c1f02189670f3e672c01933427aa6bdc27c7",
+    "CLAIMS_AND_ROUTES.md": "7262bf6341c953a84b72bc66c4072e6042f4d8da540001585ec7890c3536da24",
+    "PREREGISTRATION.md": "e4e30a6f48523edd4f7006e34c49a0cfeb37ffe4c683507172c5cc7e2e2adfd7",
+    "README.md": "ecfb4c5ec733e28c7d8d2fb39d9b80e403ff29d257dc48071a873c11f997d727",
+    "SIGNED_REVIEW.md": "9e09b911051e41ef8f65dc882d9501970b747c18a496345d5fdfd257bf198e84",
+    "VALIDATION.md": "d877c6fd216636b776109d30a35ab6aade0fa7119ae268b57bbebd5ec70b3e65",
+    "arrow_probe.py": "d02a6af45814dd8940d80b2a3bc9a090c5dd157f59f3ff3615572fcf72117bc7",
+    "independent_oracle.py": "3bb4c91c2e0cba7ef62dbc6a30f22a8fddd5e236751d8dc172762596987a3865",
+    "receipts/focused-final.json": "fd21440ccdbcc93a7aa3ed66ac644c114a7097f4a46bd7d74a2a4bc2be9b0dbf",
+    "receipts/focused-final.log": "72b729c8af2bda1fab077df372cf36a1912e3af9509450e306aea219f7208a0e",
+    "receipts/focused.json": "b7118af727ad3bd47a0d92785f9d80ac67614542a8755ba21c0aa681532041c8",
+    "receipts/focused.log": "cfe33eea9aef04cf3ef047b1f8a25daae8c8145d9a9be24c194c0d2a3507c688",
+    "receipts/oracle-run.json": "1415b91d44976781c0f2b716017d36b73374546235d466b685fb8e58d3336f7f",
+    "receipts/oracle-run.log": "de0f72531877795ed5c9d661cf4a64199b777c355a100b60b060b188fbf6172f",
+    "receipts/oracle.json": "290dd783bdc2584db419e5fdb60710936c38d4e86c744ba458ff163481462abd",
+    "receipts/probe-run.json": "a2c51d98a1975b18331322b686e7350c74f65a49727fbc6c74d871e41f0855e3",
+    "receipts/probe-run.log": "74cc446e44800bea9c0c59409418a695f55b4e1782349040e2c72eb37cf2aa5c",
+    "receipts/probe.json": "284fc2ae8e4063d5a9cc0c6540d75cda4c104f6e96515a9019c3e96134cf525d",
+    "receipts/signed-review-run.json": "9a1d75334ed7604cd504c69461534fd4fd939d2158065c0b3f7d5329c26d3717",
+    "receipts/signed-review-run.log": "e6a05f53e67fd0739a9ae2aeaf1324c623a7a1a59547e93079e3207c4a12df0d",
+    "receipts/signed-review.json": "da41cb99da5db1ce2ac5bf41aed2543cfe77c7e0c76371064eb949e57e00e8c5",
+    "review_signed.py": "aa7d4dab1a14ce827fe72bfe85617121796e6788381db888c7409648da1a91c1",
+    "run_probe.py": "8ed8df0dd06e70fbb88cfe11d67e394daa8df87b20722bfa0655b0ac12036aed",
+    "run_receipt.py": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28",
+    "test_arrows.py": "06d0b9f0631239f406643186268874cf4646167a7d900bc11627848ed6fa5d63"
+  },
+  "authority": "paper proofs and separate implementations; shared-model review, not external authority",
+  "exclusions": [
+    "SOURCE_MANIFEST.json self-hash",
+    "__pycache__ generated files"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://emilyriehl.github.io/files/context.pdf",
+      "used_for": "classical Yoneda scope; not a proof premise for the finite theorems"
+    },
+    {
+      "url": "https://dlmf.nist.gov/5.5",
+      "used_for": "digamma recurrence"
+    },
+    {
+      "url": "https://dlmf.nist.gov/5.4",
+      "used_for": "integer digamma values, inherited identity; linked for precise attribution"
+    }
+  ]
+}

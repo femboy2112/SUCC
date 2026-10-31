@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "review_authority": "complementary same-model review; no external proof authority",
+  "dossier_sha256": "abc117a4dbfc2b9b95af87f0d8a3a58abc109354ebbdedd8c23b8bf6dfdf6167",
+  "sympy_version": "1.12",
+  "four_fresh_filters": [
+    {
+      "N": 2,
+      "M": 5,
+      "minimal_degree": 7,
+      "gram_det_positive": true,
+      "machin_error_interval_inside_norm_bound": true
+    },
+    {
+      "N": 4,
+      "M": 3,
+      "minimal_degree": 7,
+      "gram_det_positive": true,
+      "machin_error_interval_inside_norm_bound": true
+    },
+    {
+      "N": 6,
+      "M": 2,
+      "minimal_degree": 8,
+      "gram_det_positive": true,
+      "machin_error_interval_inside_norm_bound": true
+    },
+    {
+      "N": 9,
+      "M": 4,
+      "minimal_degree": 13,
+      "gram_det_positive": true,
+      "machin_error_interval_inside_norm_bound": true
+    }
+  ],
+  "two_fresh_dyadics": [
+    {
+      "N": 3,
+      "M": 4,
+      "dyadic": "452751216129820177/144115188075855872",
+      "denominator_power": 57,
+      "onset": 16
+    },
+    {
+      "N": 6,
+      "M": 2,
+      "dyadic": "7595904947272677161575987/2417851639229258349412352",
+      "denominator_power": 81,
+      "onset": 22
+    }
+  ],
+  "machin_terms": [
+    240,
+    80
+  ]
+}

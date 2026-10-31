@@ -1,0 +1,26 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/2026-10-30/arithmetic_barrier/arithmetic",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist",
+  "start_utc": "2026-10-30T17:13:19.016732+00:00",
+  "timeout_seconds": 1800,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "threads": 1,
+  "git_head_at_launch": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 2.275,
+  "end_utc": "2026-10-30T17:13:21.291407+00:00",
+  "log_sha256": "36af78728c37e3ee80b4a37b7a7e35bfa00babb46873b21c9fd6a6d8a2eb540d",
+  "log_bytes": 2021
+}

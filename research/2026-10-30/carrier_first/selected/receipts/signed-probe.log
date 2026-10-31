@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first/research/2026-10-30/carrier_first/selected/signed_probe.py", line 89, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first/research/2026-10-30/carrier_first/selected/signed_probe.py", line 31, in main
+    assert all(isprime(p) and p%4==1 and order(p)>=64 for p in primes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

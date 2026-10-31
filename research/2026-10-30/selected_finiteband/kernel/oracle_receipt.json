@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "precision_dps": 85,
+  "source_route": "combined rational numerator; unrolled prefixes; Beta-type integral tails",
+  "fresh_transport_rows": [
+    {
+      "N": 19,
+      "H": 7,
+      "seed": "0",
+      "pair_spectral_gap": "1.60861175e-86",
+      "sqrt_energy_gap": "0.00097733846528483309419084351993565",
+      "point_budget": "0.03839052054987780621544923788078",
+      "global_budget": "0.17452408010411953212985874355713"
+    },
+    {
+      "N": 41,
+      "H": 29,
+      "seed": "2/9",
+      "pair_spectral_gap": "8.04305873e-86",
+      "sqrt_energy_gap": "0.00030431646892901383499827742916664",
+      "point_budget": "0.15549720287624205894650787135252",
+      "global_budget": "0.33669339198429187200915710739102"
+    },
+    {
+      "N": 73,
+      "H": 127,
+      "seed": "-7/13",
+      "pair_spectral_gap": "2.25205645e-85",
+      "sqrt_energy_gap": "0.012528054780307384539227786656795",
+      "point_budget": "0.61190000497107607561679087660936",
+      "global_budget": "0.82836884792209700020059501445692"
+    }
+  ],
+  "independent_tail_intervals": [
+    {
+      "n": 1,
+      "interval_width": "112577/552063239422908791193924820237987359385190400",
+      "n2_T": "0.008259320256459905129310049946"
+    },
+    {
+      "n": 2,
+      "interval_width": "2501/13085600503510727037261999768461394900418560",
+      "n2_T": "0.01089197870891622375813867885"
+    },
+    {
+      "n": 13,
+      "interval_width": "218069/2081469598456993690333017730386136367156428800",
+      "n2_T": "0.01464548735855016861734706041"
+    },
+    {
+      "n": 19,
+      "interval_width": "11351/141204137976329576801938962630085687860264960",
+      "n2_T": "0.01494020111031217228333148024"
+    },
+    {
+      "n": 73,
+      "interval_width": "1263929/70425777884228489789694009429910947539347046400",
+      "n2_T": "0.01544018822748102409415780411"
+    },
+    {
+      "n": 239,
+      "interval_width": "192431/73689346361533513339753206295258184395259904000",
+      "n2_T": "0.01556802925720040899257277327"
+    }
+  ],
+  "mellin_cosine_integral": "2.50662827463100050241576528481104525300698674",
+  "mellin_K": "0.209439510239319549230842892218633525613144626",
+  "coherent_asymptotic_calibration": [
+    {
+      "N": 128,
+      "H": 128,
+      "sqrt_energy_loss": 0.13039947964476895,
+      "scaled_loss": 0.13039947964476895,
+      "pi_over_15": 0.20943951023931953,
+      "finite_mass_scaled": 0.13279619833833514,
+      "quadratic_remainder": 0.0023967186935661966,
+      "quadratic_remainder_bound": 0.010019920548139563,
+      "authority": "double calibration; 28 positive tail terms"
+    },
+    {
+      "N": 512,
+      "H": 512,
+      "sqrt_energy_loss": 0.16650386522272598,
+      "scaled_loss": 0.16650386522272598,
+      "pi_over_15": 0.20943951023931953,
+      "finite_mass_scaled": 0.16783089794727923,
+      "quadratic_remainder": 0.0013270327245532565,
+      "quadratic_remainder_bound": 0.0050099602740697816,
+      "authority": "double calibration; 28 positive tail terms"
+    },
+    {
+      "N": 2048,
+      "H": 2048,
+      "sqrt_energy_loss": 0.18838146610528383,
+      "scaled_loss": 0.18838146610528383,
+      "pi_over_15": 0.20943951023931953,
+      "finite_mass_scaled": 0.18904530515242704,
+      "quadratic_remainder": 0.0006638390471432054,
+      "quadratic_remainder_bound": 0.0025049801370348908,
+      "authority": "double calibration; 28 positive tail terms"
+    },
+    {
+      "N": 1536,
+      "H": 768,
+      "sqrt_energy_loss": 0.08832986144593846,
+      "scaled_loss": 0.17665972289187692,
+      "pi_over_15": 0.20943951023931953,
+      "finite_mass_scaled": 0.17719994929093497,
+      "quadratic_remainder": 0.0002701131995290207,
+      "quadratic_remainder_bound": 0.0010226538585904274,
+      "authority": "double calibration; 28 positive tail terms"
+    },
+    {
+      "N": 4096,
+      "H": 2048,
+      "sqrt_energy_loss": 0.09435650155984376,
+      "scaled_loss": 0.18871300311968753,
+      "pi_over_15": 0.20943951023931953,
+      "finite_mass_scaled": 0.18904530767632333,
+      "quadratic_remainder": 0.00016615227831789925,
+      "quadratic_remainder_bound": 0.0006262450342587227,
+      "authority": "double calibration; 28 positive tail terms"
+    }
+  ]
+}

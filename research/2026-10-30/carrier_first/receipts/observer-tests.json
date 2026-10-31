@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "-v",
+    "test_observer.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first/research/2026-10-30/carrier_first",
+  "start_utc": "2026-10-31T02:33:00.497625+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.271,
+  "end_utc": "2026-10-31T02:33:00.768683+00:00",
+  "log_sha256": "740236d02ed77f186a7667d778fba9f80bc8f2278a627192c9557b2a1f3477df",
+  "log_bytes": 1057
+}

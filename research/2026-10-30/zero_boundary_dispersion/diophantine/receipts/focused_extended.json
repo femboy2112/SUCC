@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-v",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/research/2026-10-30/zero_boundary_dispersion/diophantine",
+  "start_utc": "2026-10-30T19:54:00.483039+00:00",
+  "timeout_seconds": 180,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "5f350af7808532e55d74e80c948c02bb385c6e70",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.119,
+  "end_utc": "2026-10-30T19:54:00.602359+00:00",
+  "log_sha256": "d3287b43c4ac92fe81b37f52e58a227d8adba8c594cd356919968cc160273fec",
+  "log_bytes": 1733
+}

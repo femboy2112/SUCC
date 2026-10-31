@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "machin_pi_width_upper": "1/1000000000000",
+  "rows": [
+    {
+      "A": 40,
+      "h": 54614,
+      "source_modulus_squared_upper": "7037991659043/1000000000000",
+      "analytic_modulus_bound": "1638400/81921",
+      "signed_deficit_lower": "20/289"
+    },
+    {
+      "A": 40,
+      "h": 64000,
+      "source_modulus_squared_upper": "1051848746177/200000000000",
+      "analytic_modulus_bound": "256/15",
+      "signed_deficit_lower": "20/289"
+    },
+    {
+      "A": 76,
+      "h": 197155,
+      "source_modulus_squared_upper": "26672009407971/1000000000000",
+      "analytic_modulus_bound": "112377856/2957325",
+      "signed_deficit_lower": "38/289"
+    },
+    {
+      "A": 76,
+      "h": 219488,
+      "source_modulus_squared_upper": "30805822299431/1000000000000",
+      "analytic_modulus_bound": "512/15",
+      "signed_deficit_lower": "38/289"
+    },
+    {
+      "A": 76,
+      "h": 438976,
+      "source_modulus_squared_upper": "5003085946367/500000000000",
+      "analytic_modulus_bound": "256/15",
+      "signed_deficit_lower": "38/289"
+    }
+  ],
+  "scope": "finite rational source sum certificates, not pi normality"
+}

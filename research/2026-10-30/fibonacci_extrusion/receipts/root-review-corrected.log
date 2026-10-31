@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "authority": "complementary shared-model algebra checks; not a formal proof checker",
+  "radix_modulus_cases": [
+    {
+      "radix": 2,
+      "modulus": 5,
+      "rows": 1
+    },
+    {
+      "radix": 2,
+      "modulus": 7,
+      "rows": 1
+    },
+    {
+      "radix": 2,
+      "modulus": 13,
+      "rows": 1
+    },
+    {
+      "radix": 2,
+      "modulus": 19,
+      "rows": 1
+    },
+    {
+      "radix": 2,
+      "modulus": 31,
+      "rows": 1
+    },
+    {
+      "radix": 3,
+      "modulus": 5,
+      "rows": 5
+    },
+    {
+      "radix": 3,
+      "modulus": 7,
+      "rows": 1
+    },
+    {
+      "radix": 3,
+      "modulus": 13,
+      "rows": 1
+    },
+    {
+      "radix": 3,
+      "modulus": 19,
+      "rows": 1
+    },
+    {
+      "radix": 3,
+      "modulus": 31,
+      "rows": 1
+    },
+    {
+      "radix": 5,
+      "modulus": 5,
+      "rows": 1
+    },
+    {
+      "radix": 5,
+      "modulus": 7,
+      "rows": 1
+    },
+    {
+      "radix": 5,
+      "modulus": 13,
+      "rows": 1
+    },
+    {
+      "radix": 5,
+      "modulus": 19,
+      "rows": 19
+    },
+    {
+      "radix": 5,
+      "modulus": 31,
+      "rows": 1
+    },
+    {
+      "radix": 11,
+      "modulus": 5,
+      "rows": 1
+    },
+    {
+      "radix": 11,
+      "modulus": 7,
+      "rows": 1
+    },
+    {
+      "radix": 11,
+      "modulus": 13,
+      "rows": 1
+    },
+    {
+      "radix": 11,
+      "modulus": 19,
+      "rows": 1
+    },
+    {
+      "radix": 11,
+      "modulus": 31,
+      "rows": 1
+    },
+    {
+      "radix": 17,
+      "modulus": 5,
+      "rows": 1
+    },
+    {
+      "radix": 17,
+      "modulus": 7,
+      "rows": 1
+    },
+    {
+      "radix": 17,
+      "modulus": 13,
+      "rows": 1
+    },
+    {
+      "radix": 17,
+      "modulus": 19,
+      "rows": 1
+    },
+    {
+      "radix": 17,
+      "modulus": 31,
+      "rows": 1
+    },
+    {
+      "radix": 31,
+      "modulus": 5,
+      "rows": 1
+    },
+    {
+      "radix": 31,
+      "modulus": 7,
+      "rows": 1
+    },
+    {
+      "radix": 31,
+      "modulus": 13,
+      "rows": 1
+    },
+    {
+      "radix": 31,
+      "modulus": 19,
+      "rows": 1
+    },
+    {
+      "radix": 31,
+      "modulus": 31,
+      "rows": 1
+    }
+  ],
+  "gamma_transform_identity": true,
+  "source_clock_cases": [
+    {
+      "a": "97",
+      "s": "5/11",
+      "weights": [
+        3,
+        5
+      ],
+      "defect": "90947555106791961331646149416222322127/38596044983285599914172171953470058244800",
+      "lower": "1086140/489921551"
+    },
+    {
+      "a": "233",
+      "s": "7/13",
+      "weights": [
+        8,
+        13
+      ],
+      "defect": "7771267372199944098518760889342239025097/1933452189130376243011189638007977558242400",
+      "lower": "19136/4884075"
+    },
+    {
+      "a": "31/3",
+      "s": "11/17",
+      "weights": [
+        21,
+        34
+      ],
+      "defect": "1048928301468031577046241557495612051/205769754474587566285126373379644800",
+      "lower": "24300837/6731900"
+    }
+  ],
+  "residual_fubini_cases": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      13
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      13
+    ],
+    [
+      17,
+      0
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      17,
+      4
+    ],
+    [
+      17,
+      5
+    ],
+    [
+      17,
+      8
+    ],
+    [
+      17,
+      13
+    ]
+  ],
+  "reviewed_hashes": {
+    "composition/FIBONACCI_COMPOSITION.md": "6a7df2ce932b9251ca546878118ba4238c83947bff2c93aa3e36feea6263db4c",
+    "arrows/FIBONACCI_ARROWS.md": "1063cb8a0d69d3c981482f5aa57f4606e2256e75b0a5c90e932b5dff7c690e1f",
+    "clock_constants/CLOCK_CONSTANTS.md": "09681e325e1bf1e3d835cc222e03e12a3e2651804aca841ca84ad1ae7eb45a4a"
+  }
+}

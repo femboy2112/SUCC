@@ -1,0 +1,109 @@
+{
+  "oracle": "independent direct-prefix Fractions + Machin rational pi interval",
+  "machin_pi_interval_width_log10_approx": 307,
+  "green_verified_indices": [
+    1,
+    2,
+    5,
+    10,
+    17,
+    31,
+    59,
+    89,
+    127
+  ],
+  "slip_rows": [
+    {
+      "h": 1,
+      "A": 4,
+      "first_slip": 4,
+      "within_range": true
+    },
+    {
+      "h": 1,
+      "A": 8,
+      "first_slip": 9,
+      "within_range": true
+    },
+    {
+      "h": 1,
+      "A": 16,
+      "first_slip": 16,
+      "within_range": true
+    },
+    {
+      "h": 1,
+      "A": 32,
+      "first_slip": 32,
+      "within_range": true
+    },
+    {
+      "h": 1,
+      "A": 64,
+      "first_slip": 64,
+      "within_range": true
+    },
+    {
+      "h": 3,
+      "A": 4,
+      "first_slip": 4,
+      "within_range": true
+    },
+    {
+      "h": 3,
+      "A": 8,
+      "first_slip": 9,
+      "within_range": true
+    },
+    {
+      "h": 3,
+      "A": 16,
+      "first_slip": 16,
+      "within_range": true
+    },
+    {
+      "h": 3,
+      "A": 32,
+      "first_slip": 32,
+      "within_range": true
+    },
+    {
+      "h": 3,
+      "A": 64,
+      "first_slip": 64,
+      "within_range": true
+    },
+    {
+      "h": 7,
+      "A": 4,
+      "first_slip": 4,
+      "within_range": true
+    },
+    {
+      "h": 7,
+      "A": 8,
+      "first_slip": 8,
+      "within_range": true
+    },
+    {
+      "h": 7,
+      "A": 16,
+      "first_slip": 16,
+      "within_range": true
+    },
+    {
+      "h": 7,
+      "A": 32,
+      "first_slip": 32,
+      "within_range": true
+    },
+    {
+      "h": 7,
+      "A": 64,
+      "first_slip": 64,
+      "within_range": true
+    }
+  ],
+  "rows_passed": 15,
+  "scope": "finite calibration; no asymptotic claims"
+}

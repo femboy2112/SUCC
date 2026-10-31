@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/data/SUCC_boundary_slip_round/independent_oracle.py", line 75, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/mnt/data/SUCC_boundary_slip_round/independent_oracle.py", line 56, in run
+    assert Q(3141592653589793,10**15)<hi and Q(3141592653589793,10**15)>lo
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

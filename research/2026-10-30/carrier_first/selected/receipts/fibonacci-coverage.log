@@ -1,0 +1,206 @@
+{
+  "status": "PASS",
+  "basis": "1,omega with omega\u00b2=\u22121\u2212omega",
+  "all_terms_unit_complex": true,
+  "rows": [
+    {
+      "k": 5,
+      "F_k": 5,
+      "gap": 3,
+      "midpoint_N": 5,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "0"
+    },
+    {
+      "k": 6,
+      "F_k": 8,
+      "gap": 5,
+      "midpoint_N": 9,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "1/9"
+    },
+    {
+      "k": 7,
+      "F_k": 13,
+      "gap": 8,
+      "midpoint_N": 17,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "4/17"
+    },
+    {
+      "k": 8,
+      "F_k": 21,
+      "gap": 13,
+      "midpoint_N": 26,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "5/26"
+    },
+    {
+      "k": 9,
+      "F_k": 34,
+      "gap": 21,
+      "midpoint_N": 43,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "9/43"
+    },
+    {
+      "k": 10,
+      "F_k": 55,
+      "gap": 34,
+      "midpoint_N": 72,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "17/72"
+    },
+    {
+      "k": 11,
+      "F_k": 89,
+      "gap": 55,
+      "midpoint_N": 115,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "26/115"
+    },
+    {
+      "k": 12,
+      "F_k": 144,
+      "gap": 89,
+      "midpoint_N": 187,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "43/187"
+    },
+    {
+      "k": 13,
+      "F_k": 233,
+      "gap": 144,
+      "midpoint_N": 305,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "72/305"
+    },
+    {
+      "k": 14,
+      "F_k": 377,
+      "gap": 233,
+      "midpoint_N": 492,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "115/492"
+    },
+    {
+      "k": 15,
+      "F_k": 610,
+      "gap": 377,
+      "midpoint_N": 797,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "187/797"
+    },
+    {
+      "k": 16,
+      "F_k": 987,
+      "gap": 610,
+      "midpoint_N": 1292,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "305/1292"
+    },
+    {
+      "k": 17,
+      "F_k": 1597,
+      "gap": 987,
+      "midpoint_N": 2089,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "492/2089"
+    },
+    {
+      "k": 18,
+      "F_k": 2584,
+      "gap": 1597,
+      "midpoint_N": 3381,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "797/3381"
+    },
+    {
+      "k": 19,
+      "F_k": 4181,
+      "gap": 2584,
+      "midpoint_N": 5473,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "1292/5473"
+    },
+    {
+      "k": 20,
+      "F_k": 6765,
+      "gap": 4181,
+      "midpoint_N": 8854,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "2089/8854"
+    },
+    {
+      "k": 21,
+      "F_k": 10946,
+      "gap": 6765,
+      "midpoint_N": 14327,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "3381/14327"
+    },
+    {
+      "k": 22,
+      "F_k": 17711,
+      "gap": 10946,
+      "midpoint_N": 23184,
+      "Fibonacci_prefix_sum": [
+        0,
+        0
+      ],
+      "midpoint_average": "5473/23184"
+    }
+  ],
+  "scope": "generic unit-sequence coverage countermodel, not a radix16 orbit"
+}

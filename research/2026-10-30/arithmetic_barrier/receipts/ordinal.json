@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "scripts/ordinal_succ_report_probe.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier",
+  "start_utc": "2026-10-30T15:46:42.477898+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "threads": 1,
+  "git_head_at_launch": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 3.18,
+  "end_utc": "2026-10-30T15:46:45.658165+00:00",
+  "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+  "log_bytes": 3612
+}

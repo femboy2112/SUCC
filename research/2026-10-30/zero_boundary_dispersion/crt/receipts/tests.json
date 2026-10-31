@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/2026-10-30/zero_boundary_dispersion/crt",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion",
+  "start_utc": "2026-10-30T19:52:45.877871+00:00",
+  "timeout_seconds": 300,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "5f350af7808532e55d74e80c948c02bb385c6e70",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.27,
+  "end_utc": "2026-10-30T19:52:46.148006+00:00",
+  "log_sha256": "3bd994910e5e9b2299dd2921febf076cfb6ddd53054ce852708c763d1cedd1b7",
+  "log_bytes": 1393
+}

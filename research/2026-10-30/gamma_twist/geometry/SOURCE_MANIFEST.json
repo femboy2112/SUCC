@@ -1,0 +1,259 @@
+{
+  "parent_commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+  "source_rule": "original four poles and zero seed unchanged",
+  "source_inputs_actually_read": [
+    {
+      "commit": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "path": "research/2026-10-30/time_extrusion/TIME_EXTRUDED_TRIANGLE.md",
+      "git_blob": "29c92d70a08a9309549f740422ce4c78a9a0a822",
+      "sha256": "0adbd8004085716921d970e1f2f5891ffa6d69195973ca2480a195739e06d123",
+      "bytes": 14671
+    },
+    {
+      "commit": "7ce94d38479c22c3d427753812e38207515dc868",
+      "path": "research/2026-10-30/spacetime_triangle/RESEARCH.md",
+      "git_blob": "c887e8e52e9f94ffa34e72c1afc2de32c38ac602",
+      "sha256": "834a34ec66d4017e55a64117a7a81a3e9345a58296912b12527a54cb434a9dae",
+      "bytes": 18668
+    },
+    {
+      "commit": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "path": "research/2026-10-30/double_triangle_fourier/DOUBLE_TRIANGLE_FOURIER.md",
+      "git_blob": "5185241418f9956d8233d6deca2da629d127f2ed",
+      "sha256": "30ac00e5352ae17623618e45d4e0bde1103bd3d16edd08a0697ddb5e2534e4ed",
+      "bytes": 14356
+    },
+    {
+      "commit": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "path": "research/2026-10-30/double_triangle_fourier/GAMMA_MELLIN_FOURIER_TILING.md",
+      "git_blob": "3d4780c3b8101b8b0db876265cec040957ff3912",
+      "sha256": "b3c1600610458e53417b66bff6c4ea6d6b2cecf372948f2b26041db9efa820c8",
+      "bytes": 5477
+    },
+    {
+      "commit": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "path": "research/2026-10-30/lorentz_clock_tiling/LORENTZ_CLOCK_TILING.md",
+      "git_blob": "ffb9d46ed537d9c0d789a0413fff59b30da6e82b",
+      "sha256": "8f858efcee1288fa45c7eab4e91d632f1e9fce29c6088f036c749c74a5ebba41",
+      "bytes": 9452
+    },
+    {
+      "commit": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+      "path": "research/2026-10-30/arithmetic_energy_momentum/OPERATION_ARITHMETIC_ENERGY_MOMENTUM.md",
+      "git_blob": "ec074a8644e9eb53fefec4239dbfddaf0db69bce",
+      "sha256": "23710bc00517a5e6465d203c4207f39d973f8139aa12b7b97dee9e85f9abc2d0",
+      "bytes": 15919
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "AGENTS.md",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "bytes": 3058
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "docs/METHOD.md",
+      "git_blob": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "bytes": 6649
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/RESEARCH.md",
+      "git_blob": "62f47a6ab6e73b1dba8c8b1618a275455b752828",
+      "sha256": "945d28d7c6b4bb44c701af04eb3eaeb0937cd3820a4a41c197686a814eed9a66",
+      "bytes": 13369
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/CODEX_ASTRA_ULTRA_MEGA_ROUND.md",
+      "git_blob": "9ab1eb48fc2d7d0e474c8dc2529247289d4ba1cd",
+      "sha256": "23294adb7b13edcf3bf5ceea555fc15f4d3f953dc8c95fecbf6187840fb392a0",
+      "bytes": 17198
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/gamma_all_places.py",
+      "git_blob": "3f8250c53028a464e8d04b4248b92fbab73393fc",
+      "sha256": "62aed19fa42dab51a535f3306c01d626021d9b51b700e6f3ea5decd3a22c1a11",
+      "bytes": 3359
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/test_gamma_all_places.py",
+      "git_blob": "acf0e5087195adebc865b8c249be39303fed8ae3",
+      "sha256": "608ba290d705f14e99b368b75d218a411b15c0c64669d3ffc377b4ac833b60cf",
+      "bytes": 7470
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/independent_oracle.py",
+      "git_blob": "95e545563fb55662e76698dde87c189c7969b18e",
+      "sha256": "db82a48b5aa46e2b20e19ba2ff9d790071f0a39da83a9431e2bed918367e6be1",
+      "bytes": 3928
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/SOURCE_MANIFEST.json",
+      "git_blob": "3ab2fbf9c7c4ba96268e1dcb8dfc9877638ee340",
+      "sha256": "4c896dc49bf06c70497301aa7b03c262eed545e63be0d04b067c102a9703ed9a",
+      "bytes": 2042
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/independent_oracle_receipt.json",
+      "git_blob": "8e23b4546fc8dfd5f0d0251c3550067b4d67d58f",
+      "sha256": "fe5ec84b572ece4fe6fcb1c1672130fa11b3431173adefddb143b6ebb64d29aa",
+      "bytes": 1904
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/gamma_all_places/INITIAL_CORRECTIONS.md",
+      "git_blob": "bb381860152454fcb7b65395cf819c9e1c382653",
+      "sha256": "4812c5486732b1b64ad7434c447996a20c3264286c0e1b31b38079c3937203e6",
+      "bytes": 1225
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-30/arithmetic_barrier/transfer/TRANSFER_DOSSIER.md",
+      "git_blob": "a4b4020bf1ed91c6855877772e3b950f7f7b60da",
+      "sha256": "7fb6b885438ba7ca0014638d8e5b1375e7ed437597e5f7dc0b4b3f90d7c04988",
+      "bytes": 18078
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-29/pascal_oily_bbp/PASCAL_OILY_SIGNED_LIFT.md",
+      "git_blob": "0b38be679b990e6985f33a58c3a82ab6af92c924",
+      "sha256": "fbfc35d0115cf71860f0b87643b57ae9d6fbd1113ba943b1744c92d49d570827",
+      "bytes": 16259
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-29/triangular_harmonic_gamma_bbp/TRIANGULAR_HARMONIC_GAMMA_BBP.md",
+      "git_blob": "0271e48b0f46cfb7354ad9f1de34371844d1ff82",
+      "sha256": "667c1768cbbea52b497566c84046ee35952c7cd7c769f0517ccefb01d5e571c0",
+      "bytes": 12322
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-29/triangle_genesis_repair/GOLDEN_LOCUS_THEOREM.md",
+      "git_blob": "1c16faf3bda0e70deb85a2973d8458c6c7eea642",
+      "sha256": "62c6afbfed25b06965ffdbf590420f64db1932ccd105c565e47c3398a5a0bab1",
+      "bytes": 9289
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-14/PASCAL_ROTATED_GAMMA_BULK.md",
+      "git_blob": "37a9b65f0a5eb2252be08f39bab2475d1a537216",
+      "sha256": "d7047e6b30a53487684ded22323a034bfecffd31d4830b336910594d9f5bbad1",
+      "bytes": 25485
+    },
+    {
+      "commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "path": "research/2026-10-13/SWARM_ATLAS/E37.md",
+      "git_blob": "50d41bec159f3afd2cd514dc3a8e083df5e5b89e",
+      "sha256": "f16b9be1c79bd365fb572cfabe787528b1682006f1f06ee5491c3659362ee3ed",
+      "bytes": 4935
+    }
+  ],
+  "artifact_files": {
+    "CLAIMS_AND_ROUTES.md": {
+      "sha256": "8cd28231b52dbfcc772a7c3be031839433932c1d3c36d536bc960f6969d61b16",
+      "bytes": 5391
+    },
+    "GAUSS_REVIEW.md": {
+      "sha256": "fb83304cb201365b696e561b11f73cef736359dbc6970aa3cbba10e150c3c4d1",
+      "bytes": 2902
+    },
+    "GEOMETRY_DOSSIER.md": {
+      "sha256": "f151c69621dcd1b0bf3dab3cff6ef0c4372ddbacd2385fe75cc34370b2553f6b",
+      "bytes": 16007
+    },
+    "PREREGISTRATION.md": {
+      "sha256": "88b0cd208b92bc23ad1688db1bd1db575a03669d1804e3e0c434a79a169721c6",
+      "bytes": 3512
+    },
+    "README.md": {
+      "sha256": "64c156caea15fe7972140a03d92c4bb2cdb35a1ca4716faedc04b9df07ba4782",
+      "bytes": 1657
+    },
+    "ROOT_IDENTIFICATION_REVIEW.md": {
+      "sha256": "779a26c2c8546794d622d6db1bf650ff342519819cddf0796527c250b3eaf6b9",
+      "bytes": 5688
+    },
+    "VALIDATION.md": {
+      "sha256": "4aa8e1dcf1af38366269333337c568919c68b92cc61c258f6b8f7772c7fc3189",
+      "bytes": 2235
+    },
+    "analytic_audit.py": {
+      "sha256": "c5b0319874fd3aa9b31af5db955d58c57e1995d6bfe0794444c4edecbe674dce",
+      "bytes": 5066
+    },
+    "geometry_probe.py": {
+      "sha256": "db90a935d59bb2f0a325addbcc04492823acbce579e7374c5ee3b6a4a32ad8eb",
+      "bytes": 7080
+    },
+    "independent_oracle.py": {
+      "sha256": "ee380d5e9f2341e32c2608a509331e4d0ea93e68892f8fba060134921c60369c",
+      "bytes": 7565
+    },
+    "receipts/analytic-audit.json": {
+      "sha256": "8a4e7baae377a07ac29848767685f432eba999d9ad6d777763dd0258127295ee",
+      "bytes": 710
+    },
+    "receipts/analytic-audit.log": {
+      "sha256": "946616577b4eb862a4d71817cabcafba792308cfdb185dea216702e79bf5402f",
+      "bytes": 3188
+    },
+    "receipts/exact-probe.json": {
+      "sha256": "ac95dcd5656ac46cf98e7aca17eaebde85884b4ccc8bac93e1aa63afd93719d3",
+      "bytes": 646
+    },
+    "receipts/exact-probe.log": {
+      "sha256": "a2ffbf242fb9101d09a48a6456dbfd35fc101d75cf3512b56b90d0adbe88c089",
+      "bytes": 63518
+    },
+    "receipts/focused.json": {
+      "sha256": "7e59fa842c30598dfe6b070eaeafe998d52685b4d689503f85110bfaf7fda589",
+      "bytes": 679
+    },
+    "receipts/focused.log": {
+      "sha256": "657f849f023b529c8a640d1d05a7674312fd25bc7352e569d71f172953e09b95",
+      "bytes": 1597
+    },
+    "receipts/independent-oracle.json": {
+      "sha256": "ddf86e18cf795ac80603650f431a8d9a11f3622eeeb7b53fe1e433fc7b5fdb48",
+      "bytes": 714
+    },
+    "receipts/independent-oracle.log": {
+      "sha256": "29101c2bb758290834a4ce3d41359d7286b8bd82cc8398d7cf655256ac5a2131",
+      "bytes": 7805
+    },
+    "receipts/tensor-audit.json": {
+      "sha256": "08b82372093713a126ca9efbd18949fff8eb57160f25d5c2fdb2240c504a1d7e",
+      "bytes": 708
+    },
+    "receipts/tensor-audit.log": {
+      "sha256": "6977b0d7a28d16860b4cf595e86ff320877125012f3eef8f54001a45e4dc9a46",
+      "bytes": 3362
+    },
+    "run_receipt.py": {
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28",
+      "bytes": 3223
+    },
+    "tensor_audit.py": {
+      "sha256": "3aa4a9a9057a474304d204b2963ae00f6237389222ae230d26b6dd0766d3d201",
+      "bytes": 1598
+    },
+    "test_geometry.py": {
+      "sha256": "fa3c0f837aea0a4fb374175884970873ff43d003b9cf92461095a1acd498ce98",
+      "bytes": 4667
+    }
+  },
+  "exclusions": [
+    "SOURCE_MANIFEST.json (self)",
+    "__pycache__"
+  ],
+  "proof_authority": "local paper proof and finite exact tests, shared-model complementary reviews; no Lean or external referee"
+}

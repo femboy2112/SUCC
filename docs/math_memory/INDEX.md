@@ -25,6 +25,10 @@
 
 Relation-label discipline: `reduces_to`/`depends_on` = proved implication with stated hypotheses; `does_not_imply` = refutation with a counterexample; `candidate_bridge` = unproved proposal; `shares_value_with` = equal scalar only (not a common source); `shares_source_with` = common source passport only. An equivalence is **not** a proof of either side.
 
+## Operation Main XVII — carrier & selected-arithmetic frontier (2026-10-31)
+
+[Integration index](../../research/2026-10-31/main_xvii/MAIN_XVII_CLAIM_REGISTRY.md) · [architecture](../../research/2026-10-31/main_xvii/MAIN_XVII_ARCHITECTURE.md) · [provenance DAG](../../research/2026-10-31/main_xvii/MAIN_XVII_PROVENANCE_DAG.md) · [selected-arithmetic attack](../../research/2026-10-31/main_xvii/MAIN_XVII_SELECTED_ARITHMETIC.md). Merged the 35 open research PRs #390–#424 (13 leaves) as a typed carrier stack; firewall intact, nothing promoted. The new sub-result NET-XVII-1 (`Ẽ_p(h) ≥ 1 − (√p+2)/(L−1)`, subgroup/Gauss bound) is a *primary-only* per-window saving — **not** a saving on the full window sum, on dyadic blocks, or on `o(N)`. These supplements are scoped research and mint no registry namespace by design (their internal IDs — PIG/BC/CQ/NWR/RS/FEO/CAT/UZ/DY/SA/FB/MS/CTC/… — stay local, like the prior π-frontier rounds).
+
 ## Lonely Runner exact-certificate campaign (2026-10-28)
 
 [Research entry](../../research/2026-10-28/lonely_runner/README.md) and

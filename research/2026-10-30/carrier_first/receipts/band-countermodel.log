@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first/research/2026-10-30/carrier_first/band_countermodel_probe.py", line 59, in <module>
+    main()
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first/research/2026-10-30/carrier_first/band_countermodel_probe.py", line 51, in main
+    'finite_partial_tail_sum':str(partial_tails),
+                              ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/fractions.py", line 415, in __str__
+    return '%s/%s' % (self._numerator, self._denominator)
+                      ^^^^^^^^^^^^^^^
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/2026-10-30/fibonacci_extrusion/arrows",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-fibonacci-extrusion",
+  "started_utc": "2026-10-30T23:06:18.897847+00:00",
+  "duration_seconds": 3.56243537098635,
+  "returncode": 0,
+  "output_sha256": "323b121aed6e547a73c4ff78329fdf3ff1dfbbdec3fc83e9e896e68cd37ee8b8"
+}

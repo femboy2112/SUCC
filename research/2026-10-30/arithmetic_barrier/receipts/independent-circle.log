@@ -1,0 +1,27 @@
+{
+  "status": "PASS_NUMERICAL_CROSSCHECK_ONLY",
+  "pi_decimal_precision": 1400,
+  "character_decimal_precision": 100,
+  "complex_rectangles_checked": 64,
+  "bin_tables": [
+    {
+      "bins": 16,
+      "checked": 1024
+    },
+    {
+      "bins": 64,
+      "checked": 1024
+    },
+    {
+      "bins": 256,
+      "checked": 1024
+    }
+  ],
+  "largest_certified_mean": {
+    "start": 1,
+    "end": 256,
+    "h": 2,
+    "upper_millionths": 102382
+  },
+  "authority": "Exact certificate comes from separate integer intervals and BBP tail, not mpmath"
+}

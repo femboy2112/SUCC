@@ -1,0 +1,53 @@
+{
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "runs": [
+    {
+      "command": [
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_kernel_transport.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/kernel",
+      "start_utc": "2026-10-30T23:55:42.819321+00:00",
+      "end_utc": "2026-10-30T23:55:43.032304+00:00",
+      "elapsed_seconds": 0.21298319601919502,
+      "exit_code": 0,
+      "stdout_file": "tests.log",
+      "stderr_file": "tests.log.stderr",
+      "stdout_sha256": "aab448c8a892f21be9d90d853029e054ec84512c7d0a8a6351d58437258851a2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+        "kernel_transport.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/kernel",
+      "start_utc": "2026-10-30T23:55:43.032446+00:00",
+      "end_utc": "2026-10-30T23:55:43.157496+00:00",
+      "elapsed_seconds": 0.12506219802889973,
+      "exit_code": 0,
+      "stdout_file": "probe_receipt.json",
+      "stderr_file": "probe_receipt.json.stderr",
+      "stdout_sha256": "5974aa91eec41f382244894358f1737855b2dc88e979820fe2bfcd65b18d7339",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+        "independent_oracle.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/kernel",
+      "start_utc": "2026-10-30T23:55:43.157580+00:00",
+      "end_utc": "2026-10-30T23:55:48.395374+00:00",
+      "elapsed_seconds": 5.237820815003943,
+      "exit_code": 0,
+      "stdout_file": "oracle_receipt.json",
+      "stderr_file": "oracle_receipt.json.stderr",
+      "stdout_sha256": "5acb8283220929fc437e8db847595d658dfc2d179fce7be1c6fcc52adb51b7b2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

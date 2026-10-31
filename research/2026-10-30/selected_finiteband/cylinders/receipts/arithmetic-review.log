@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "reviewed_paper_sha256": "a3fca923e38ea38807ece8c88a63704c68e8dbd78695cdabd87ff2eb7d3b0d3a",
+  "witness_input_sha256": "9443f9bd029ba4641eaa35aeb89e389f387c4d200dd50b529cd595a6f6ce9888",
+  "moment_method": "geometric shift recurrence plus integrated offset powers",
+  "moments": [
+    "1/64",
+    "7/1024",
+    "55/12288",
+    "595/131072",
+    "8551/1310720",
+    "149467/12582912"
+  ],
+  "existing_holdout_checks": [
+    {
+      "M": 1,
+      "J": 5,
+      "nodes": 7,
+      "equations": 7
+    },
+    {
+      "M": 5,
+      "J": 2,
+      "nodes": 8,
+      "equations": 8
+    },
+    {
+      "M": 6,
+      "J": 0,
+      "nodes": 7,
+      "equations": 7
+    }
+  ],
+  "fresh_closed_form_witness": {
+    "M": 1,
+    "J": 0,
+    "nodes": [
+      "1/8",
+      "3/4"
+    ],
+    "weights": [
+      "213849/78990400",
+      "127547/9873800"
+    ],
+    "completed_rational": "6975152/2221605",
+    "next_source_defect": "-23580814251/785504975255"
+  },
+  "scope": "same-model hostile paper audit and exact independent finite witness"
+}

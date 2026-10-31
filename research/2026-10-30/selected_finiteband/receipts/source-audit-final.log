@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/source_audit.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/source_audit.py", line 51, in main
+    assert Path(observational_succ.__file__).resolve().is_relative_to(ROOT)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+AssertionError

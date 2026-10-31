@@ -1,0 +1,77 @@
+{
+  "parent_commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "recorded_utc": "2026-10-30T23:10:14.002659+00:00",
+  "source_inputs": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "research/2026-10-30/triangle_fabric/category/CATEGORICAL_ARROWS.md": "6d8c5e0e220a1e10d9f234365864c1f02189670f3e672c01933427aa6bdc27c7",
+    "research/2026-10-30/triangle_fabric/category/arrow_probe.py": "d02a6af45814dd8940d80b2a3bc9a090c5dd157f59f3ff3615572fcf72117bc7",
+    "research/2026-10-13/POSITIVE_CARRIER_REALIZATION_THEORY_II.md": "464a0139b0cdb8cfdfe4ea1e3edafd2ffb3ea3ba7e29b37804df20450534ae5b"
+  },
+  "pinned_git_sources": [
+    {
+      "observed_local_ref": "origin/research/fibonacci-epicycle-demon-normality-2026-10-30",
+      "commit": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "path": "research/2026-10-30/fibonacci_epicycle_demon/RESEARCH.md",
+      "sha256": "c5bb6df9f6675f0bc5b275d76d5fc19cf78b64a2b2f8f834fa57b72d432025ea",
+      "status": "read-only comparison, not a new theorem premise"
+    },
+    {
+      "observed_local_ref": "origin/research/lorentz-gamma-null-continuum-2026-10-30",
+      "commit": "bb9bbe5f6223f804b267d67c9fb9f209c06bb44f",
+      "path": "research/2026-10-30/lorentz_gamma_continuum/RESEARCH.md",
+      "sha256": "4d53f85a5585b33cb9c2af49893525609a4be4c152e23a196d8678c7f9eba745",
+      "status": "read-only comparison, not a new theorem premise"
+    }
+  ],
+  "artifacts": {
+    "ARITHMETIC_REVIEW.md": "e87d73017205610f48e92ceb2188fed2ffdf74ba7c1f88e405f3fd0fc67abbc4",
+    "CLAIMS_AND_ROUTES.md": "3c7ffc3313ee49a92512fd7dec3086b03754e988aea6482a32bbf5f3cc745e1d",
+    "FIBONACCI_ARROWS.md": "1063cb8a0d69d3c981482f5aa57f4606e2256e75b0a5c90e932b5dff7c690e1f",
+    "PREREGISTRATION.md": "5029d02ed72cb43fd7553e61732aa03080eba2d95f64715b94722fb0b869dcf8",
+    "VALIDATION.md": "173f5d274086a7db00874edc2a0c53527e8fdf727d7902fbd5074e4f323f6457",
+    "fibonacci_arrows.py": "81ca7e77af3353de990ba994b2abc8c5747cbaab87e0041515082cbbff5b54aa",
+    "independent_oracle.py": "1dff541354f852383d799b33b64126fb46599d330f684d1a2ef98bdf39e11223",
+    "receipts/arithmetic-review-run.json": "b5d2ade64d811fa705e16db5ad4a01c05fc153c52b5692eaa71bc34a2a6d931f",
+    "receipts/arithmetic-review-run.log": "965b1ac9aad849ca0e1083bc3e565b0162f8e71e5eb4237c2305fdfd246da194",
+    "receipts/arithmetic-review.json": "a8b11be829855cb2d4f77b51ca12634eae6011749c46d56b6a8eebcf3fd045d2",
+    "receipts/focused-final.json": "9ae8cee266ff0119978523dbc0120926d7cc44019047943bf1efe0da8ec56497",
+    "receipts/focused-final.log": "323b121aed6e547a73c4ff78329fdf3ff1dfbbdec3fc83e9e896e68cd37ee8b8",
+    "receipts/focused.json": "6b86de5ff51fbf4eb2ee453478aaf15ea07a487f6af8819a46bcb4edea50bc49",
+    "receipts/focused.log": "be27e774b9ee20257bde54235bad934e0bcbd65e5c97d6d912aeb0a28435394b",
+    "receipts/oracle-run.json": "907b20a7c45b00128d46e9c1efd1249b9cf2c7b58be97934625f10c53aea8d6a",
+    "receipts/oracle-run.log": "e0f50143a75c014da285e024c02a264708e4381cbdd77e511f25a4ec08b7146e",
+    "receipts/oracle.json": "971c12cdfb5644ecb8d04cb9cd06dd95fa78c7530685017afabc25a30e8132d5",
+    "receipts/probe-replay.json": "091e751eb088572800c226ab956c7da306c99963a714fd44ba2cfca644a8d30e",
+    "receipts/probe-run.json": "31c1de7fd41bb7139f05a5641c864101b5d3b6708b281e0244750a2817d86570",
+    "receipts/probe-run.log": "17985c1c5a9a21ad4ff45c1d4ca4fc8ba8180b3c641c0cc15c6ed858ec0ecdc8",
+    "receipts/probe.json": "091e751eb088572800c226ab956c7da306c99963a714fd44ba2cfca644a8d30e",
+    "review_arithmetic.py": "50ab48e723e17b60a171f8e7af4f3c310f3bda2f74952251debc5e563327d736",
+    "run_probe.py": "1e21eef26a285c4fdc087fbfaa1ddaa4de83fb3ef0959e1c00929c267b0dcb35",
+    "run_receipt.py": "e9f332e42007a9931f6c4a5aa99305aa09711f369e9a92f4309613e4a1868949",
+    "test_fibonacci_arrows.py": "5ddb77c118212a19d3c3ba19650c33a70d8e0b245bd77dd22477e7159825864a"
+  },
+  "exclusions": [
+    "SOURCE_MANIFEST.json self-hash",
+    "generated __pycache__"
+  ],
+  "authority": "paper proofs and exact separate implementations; shared-model reasoning",
+  "primary_sources": [
+    {
+      "url": "https://doi.org/10.1112/jlms/54.1.102",
+      "use": "primary classical Muntz attribution; proof supplied locally"
+    },
+    {
+      "url": "https://www.cecm.sfu.ca/~pborwein/PAPERS/P65.pdf",
+      "use": "primary lacunary Muntz attribution; full open hit size limit"
+    },
+    {
+      "url": "https://pages.cs.wisc.edu/~deboor/sat/papers/10/10.pdf",
+      "use": "author-hosted Gram/Cauchy exposition inspected"
+    }
+  ],
+  "reviewed_sibling": {
+    "path": "research/2026-10-30/fibonacci_extrusion/arithmetic/FIBONACCI_ARITHMETIC.md",
+    "sha256": "bde7824367225e3b5eff51530e3a7dad0f604a7d5bbf2e032b03459b0e237a9e"
+  }
+}

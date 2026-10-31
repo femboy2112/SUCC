@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "counts": {
+    "artifact_files": 128,
+    "python_asts": 27,
+    "json_files": 46,
+    "local_links": 87,
+    "receipt_hashes": 35,
+    "source_input_hashes": 47,
+    "nested_artifact_hashes": 53
+  },
+  "preserved_expected_failed_receipts": [
+    "gauss/extra_command_receipts.json",
+    "receipts/baseline-catalog.json",
+    "receipts/math-catalog.json",
+    "signed/command_receipts-with-grids.tests.json",
+    "signed/command_receipts.grids.json"
+  ],
+  "authority": "byte/structure/provenance validation only"
+}

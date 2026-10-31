@@ -1,0 +1,290 @@
+{
+  "parent": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+  "artifacts": {
+    "ANALYTIC_TRANSPORT.md": "447de1597b52e1363fb4422faea080627ed1b3c78dc3d3169906f0a435cf9b7d",
+    "PREREGISTRATION.md": "2f9af244594373ceed3c53f1e91a50ddae66c41e443a39883a7b9abcc2a9d17e",
+    "VALIDATION_AND_LEDGER.md": "6c0f5957af67d8157cc1538bed7c72da570245a9e74ac6ec7cf9ec6432a4bd43",
+    "independent_oracle.py": "cd228ca16353b41072581f2119cc27f2f02c96cfb94445caf2aafa3823ac3f41",
+    "probe.py": "6d65875ff94aa3708ba35eb9d51d095a274af72ff3854dc028ced3427649cb97",
+    "receipts/focused.json": "3954e169c090fb8db4d1d5ff9a6bfc8ac280b690e242b57dfeaecb81a8024462",
+    "receipts/focused.log": "041c61196dc34f265060c78e7f566addf7529605a06fe14a01c5b4af67d1cf35",
+    "receipts/independent-oracle.json": "61887c6d3b5151c09eacf1427cc5ca251d21ab9de969f5240bb59c79922060ba",
+    "receipts/independent-oracle.log": "988181e7a25649501782a1a0361452059edb75aeb4044d340376830bddf78dae",
+    "receipts/resolvent-probe.json": "c656702cb40f6d9beefc2159cd30a515c815d8ee5b62a81f91535163af6352ae",
+    "receipts/resolvent-probe.log": "51da995c8bbdbdede9ae7ecc97ac9abcbcda2e1037fc62e1ae4fb85c2c226029",
+    "resolvent.py": "fb34b909e1cebbf6a3ed536040cc62ba1298f45ec5ea6b942c648d726f840db8",
+    "run_receipt.py": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28",
+    "test_resolvent.py": "9f601a85dde13e719a8536555ca42b556b846ceeffebf3fa8765f12bc35cee3e",
+    "write_manifest.py": "972cd7978fdebe41c17d1f8da01e50d86b13335e2e181a2622fb5e4e22d6b64b"
+  },
+  "sources": [
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_SOURCE_TWISTED_ZETA_POLE.md",
+      "sha256": "41eb5011c735ecb68b1583fecfadfbf7441bac6fd386f75a4e95e580a0d8294d"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_TWISTED_SOURCE_MANIFEST.json",
+      "sha256": "bea80a076edd17a9945a920615f9d07bde49aa0d685c5d2450925aae42cfade8"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_TWISTED_SOURCE_VALIDATION.md",
+      "sha256": "83c9cde29cbe69046a7efce40497083623e833d789d8e618c084fee42ba71d94"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/CLAIMS.md",
+      "sha256": "5fa3e76523e96e36aee021bc13ca8c490bde527d098c804135603c8aa931a53c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/CRUCIBLE.md",
+      "sha256": "bd0886fdf1b040f6ef54486254f4f524899b0904eb55dd125934c82260f51a51"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/FIBONACCI_GAMMA_OBSERVER.md",
+      "sha256": "94e79458643fb5fa09e3c7d3e27c7f8a10a07c0376a4323a105cad2b9f04b13b"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/LOGJET_CROSS_AUDIT.md",
+      "sha256": "8396e98570ca24043bb50044ba73917556591ef7ce35e5a2867e15a235ec0a1a"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/LOGJET_SOURCE_MANIFEST.json",
+      "sha256": "62a3917267ee5afbad0b7e04462d7fa677efc512a2b1609f9f67ca303539c23d"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/MEGA_ROUND_CROSS_AUDIT_ADDENDUM.md",
+      "sha256": "7ba2b8b5614e7205c906a6148640bd4d607e3607375b1be8cab02b9d6e543092"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/NEXT_ZETA_GRADE_HANDOFF.md",
+      "sha256": "6da8b5f50bab21e43d2d73d36ffa4ce7967578f1bf07e17faaa6e58cba2aabd1"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/README.md",
+      "sha256": "1fae02b15fc2a783e45ee30638d08769ec57b89420c4fbc874023a2d08c5dba5"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/SOURCE_MANIFEST.json",
+      "sha256": "8b0d7cc5609e86d828a5e4425fb5fe7913dc38d458655acc57cf2f21de99b919"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/UNIVERSAL_CARRIER.md",
+      "sha256": "05d2ebb52b03be9da81deb15a7f7e1760f18e1017ea3e04a1b489f98f05c4d5e"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/UNIVERSAL_CARRIER_MEGA_ROUND.md",
+      "sha256": "c1675f3e8de8b24b02a60f858b6e7077a4bf85cfda5a877fbe5ccd498df81823"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/VALIDATION.md",
+      "sha256": "e208c6511f2eafbd2b4ba467fbc2a1df83b7b764570e4446a069c3c4c30c338a"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_ALLGRADE_SOURCE_MANIFEST.json",
+      "sha256": "3b0892e715cc4badf883859819951ecf68299023f612227f831825671e642718"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_ARCHIMEDEAN_PATH.md",
+      "sha256": "f2ee9a7c264d65edf3e8280591a4b52a099739fd24ebeb4944ef540927bf0c01"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_NEGATIVE_INTEGER_TANGENT_FAMILY.md",
+      "sha256": "0ff56ca89360a00c9fe311473ebc8311630c030aa20b0b9137f53579e3f01e2c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_PASCAL_ALLGRADE_PRIME.md",
+      "sha256": "179fcdf06587bea986360e5ca10f9296fae2139490dd3832baec576cc38e2f15"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_TANGENT_SOURCE_MANIFEST.json",
+      "sha256": "c65a1a9102edd9e2545313a150dd8b87ad8188e341ef1a26b26d05ea2e4ae0e6"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_independent_oracle.py",
+      "sha256": "d9e3fe64499423874b98ad9674d4745b6f2791f2e9d7d4dc4352161f4994326a"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_oracle_receipt.json",
+      "sha256": "ea75cfc4a8c3d4aad90137489261fa774121f59b34fc798130f4913e70e03b87"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_tests.log",
+      "sha256": "832d1236412fc6df9e0df6612891705af72aa379189de8102b9a71e57d765acc"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_tests_initial_failure.log",
+      "sha256": "dc8429dcce19518d8ad4e101e6f14eef5461697bb5bdc7487bbd0d87e9d501fc"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/carrier_probe.py",
+      "sha256": "31133fe8c337300573c8a572694b62294cb6fe7d7ca6f6bcb77bd247ca4f1b71"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/combined_suite_final.log",
+      "sha256": "68fc0db55dcedb79013f5a2fa91b739309d0afc1bf6a9ca2ad7719df58640c64"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/combined_suite_initial_precision_failure.log",
+      "sha256": "68667210d413a2cd8ccb15246d00f287357f6eda4213f7795dacc19a87835c31"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/independent_oracle.py",
+      "sha256": "9dda3285423b8724c89f2acff2ea90f5ecf011d4581aecf1b4432657a0552b13"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/independent_oracle_receipt.json",
+      "sha256": "172097cef523c0cb046a2ef1ff09a12f22449319b1e42c3d71c471c0370a6267"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_independent_oracle.py",
+      "sha256": "42e535989dea3006b03351973f55423978d421053c8dc1ca5dc7bdbbe7b04bd6"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_independent_receipt.json",
+      "sha256": "78fd04a8da7995cccc43ad451df1e9ee322630d9d1509e845942963f3b5132d7"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_probe.py",
+      "sha256": "aaff0dcae8d7dd875620847eb00e2f70d2ee288cb60150eee1f780dc39009dd0"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_tests.log",
+      "sha256": "aed411c45668345188248cbee5f926a2d4175b9551dd2da830899d4f51131b6c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_bbp_source_twisted_zeta.py",
+      "sha256": "1287f859dc4329d43580cd0c686f420a9e24c26179d6b3cd6570531a6b5643e5"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_carrier_probe.py",
+      "sha256": "352b9c105f962b2c8db10c581aab857713e82c23534a26b7203bec889ad387d5"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_logjet_probe.py",
+      "sha256": "116946581c5a03e149be2b249d5181faa8032305841a85c0b340099664f65386"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_zeta_allgrade.py",
+      "sha256": "eeb5ae0611b85702d1d78fcfeb43d090a854f302b56cc48fbf3aeac6fde6a8d8"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_zeta_tangent_family.py",
+      "sha256": "568c5bba9a197fcf057e48142900da121d3012ace4f90e7920d36306e476b808"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/tests.log",
+      "sha256": "2b1ddd80b5abe873547d6eb9cf06be28cf789345d37c43e23df2e39f2d98881c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/verify_manifest.py",
+      "sha256": "930087556f84e931a8f3cb1501c9b117e1b4ef990c76c0a90ac44b3f42892f83"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_oracle.py",
+      "sha256": "1731f738e18266a12560cfa9cc9211e418be021c5b0fa6c9bb03ef2e5b71608f"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_receipt.json",
+      "sha256": "4b22c0147d46890e24cb0d514a2cf317e8c780e368560c1bf113f02d7d72e0d9"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_tests.log",
+      "sha256": "1bb52d4736780ed819d0dc544c8f0a59f2977a9afc59a473314512ab95cebde2"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_independent_oracle.py",
+      "sha256": "440a324a99bf47eee3d7849e637a2dc72caad36030ae385f0377a886793b18ab"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_independent_receipt.json",
+      "sha256": "2068fea0f706831a82818fc0c7c0b1a1c663a8798f5376511ce00bedfd270816"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_tests.log",
+      "sha256": "5450cbf9ec2f261e845f9140905da03882c68b4f35104166b51c938703b81767"
+    },
+    {
+      "commit": "f650aab0c8710b502f3e08ec1cb2b351c26b2b3f",
+      "path": "research/2026-10-30/selected_finiteband/arithmetic/ARITHMETIC_THEOREMS.md",
+      "sha256": "08fb418d338659c38f994a5f8e9e25121e69f8a63bd4bdc36b29ea02fc4f74eb"
+    },
+    {
+      "commit": "1573ec5b8fbd60b251cb16741bd5165271ec6dbf",
+      "path": "research/2026-10-30/basel_line_circle/BASEL_CIRCLE_THEOREMS.md",
+      "sha256": "50719b482c5f5c66d7ae38ad894e3d89096b4b27edf9d1091ef97764a3e5a37d"
+    },
+    {
+      "commit": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+      "path": "research/2026-10-30/carrier_adelic_transport/SPECTRAL_SOURCE_TRANSPORT.md",
+      "sha256": "1ca4cd5c32b60e7ed406bf6f418515afe6b405894601e4dd1c1645d7f05afb28"
+    },
+    {
+      "commit": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+      "path": "research/2026-10-30/carrier_adelic_transport/ALL_ORDER_SHADOW.md",
+      "sha256": "2f51e76c44973cdf84ff0f9663a9159ef20542d3d563113840fea4b7f5a576ea"
+    },
+    {
+      "commit": "e8a4978207871a47466cdbb6f15cc86fae784164",
+      "path": "research/2026-10-30/dyadic_zeta_prime_exposure/README.md",
+      "sha256": "ff32b58529749e7456065b6ad8589d0050f9399e37bbd15c7dbbd1154f36c86a"
+    },
+    {
+      "commit": "287b9e9214f0214586cb6f0a993e29b58bed496a",
+      "path": "research/2026-10-30/summation_snapshot_arrows/README.md",
+      "sha256": "e07084c9ea6ecb45d04db74200f5845d0d78ecc3fb17381677ac123997e60940"
+    }
+  ],
+  "literature_retrieved_utc_date": "2026-10-31",
+  "literature": [
+    "https://dlmf.nist.gov/3.5",
+    "https://dlmf.nist.gov/18.2",
+    "https://dlmf.nist.gov/25.4",
+    "https://dlmf.nist.gov/25.5"
+  ],
+  "authority": "local proofs; exact rational tests; same-model independent implementations; no new Lean"
+}

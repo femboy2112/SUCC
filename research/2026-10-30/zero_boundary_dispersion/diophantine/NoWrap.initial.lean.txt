@@ -1,0 +1,57 @@
+/-!
+Exact denominator-cleared no-wrap lemma, standalone Lean 4.14.
+This formalizes the finite integer core, not real pi, irrationality exponents,
+Green tails, infinite sums, or the analytical theorems in THEOREMS.md.
+-/
+namespace ZeroBoundaryDispersion
+set_option autoImplicit false
+
+theorem no_wrap (a b q k : Int) (hq : 0 < q)
+    (ha0 : -q < 17 * a) (ha1 : 17 * a < q)
+    (hb0 : -q < 17 * b) (hb1 : 17 * b < q)
+    (hk : 16 * a - b = k * q) : k = 0 ∧ b = 16 * a := by
+  have hlo : -q < 16 * a - b := by omega
+  have hhi : 16 * a - b < q := by omega
+  have hnonneg : 0 ≤ q := by omega
+  have hkn : ¬ k < 0 := by
+    intro hn
+    have hle : k ≤ -1 := by omega
+    have hm := Int.mul_le_mul_of_nonneg_right hle hnonneg
+    simp only [Int.neg_one_mul] at hm
+    omega
+  have hkp : ¬ 0 < k := by
+    intro hp
+    have hle : 1 ≤ k := by omega
+    have hm := Int.mul_le_mul_of_nonneg_right hle hnonneg
+    simp only [Int.one_mul] at hm
+    omega
+  have hz : k = 0 := by omega
+  constructor
+  · exact hz
+  · subst k
+    simp only [Int.zero_mul] at hk
+    omega
+
+theorem finite_no_wrap (a : Nat → Int) (q : Int) (L : Nat)
+    (hq : 0 < q)
+    (hsmall : ∀ j, j ≤ L → -q < 17 * a j ∧ 17 * a j < q)
+    (hcong : ∀ j, j < L → ∃ k : Int, 16 * a j - a (j+1) = k*q) :
+    ∀ j, j ≤ L → a j = (16 : Int)^j * a 0 := by
+  intro j hj
+  induction j with
+  | zero => simp
+  | succ j ih =>
+    have hjlt : j < L := by omega
+    have hjle : j ≤ L := by omega
+    obtain ⟨k, hk⟩ := hcong j hjlt
+    have ha := hsmall j hjle
+    have hb := hsmall (j+1) hj
+    have hn := no_wrap (a j) (a (j+1)) q k hq ha.1 ha.2 hb.1 hb.2 hk
+    rw [hn.2, ih hjle]
+    rw [Int.pow_succ]
+    rw [Int.mul_comm ((16 : Int)^j) 16]
+    rw [Int.mul_assoc]
+
+#print axioms no_wrap
+#print axioms finite_no_wrap
+end ZeroBoundaryDispersion

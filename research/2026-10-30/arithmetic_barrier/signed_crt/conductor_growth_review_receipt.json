@@ -1,0 +1,62 @@
+{
+  "status": "PASS finite calibration; universal proof separately reviewed",
+  "reviewed_dossier_sha256": "c707cf382ba098f2895d71529f065d832e212b9f24529090896da9df0f8dd7b2",
+  "partial_shadow_checks": [
+    {
+      "class8": 1,
+      "packets": 32,
+      "partial_states_checked": 128,
+      "nonzero": true,
+      "exact_shadow_sha256": "c0d003c904b35dcdb2cc167851698f191f47189da572ca93fd1433f7743a7433"
+    },
+    {
+      "class8": 5,
+      "packets": 32,
+      "partial_states_checked": 128,
+      "nonzero": true,
+      "exact_shadow_sha256": "c0d003c904b35dcdb2cc167851698f191f47189da572ca93fd1433f7743a7433"
+    },
+    {
+      "class8": 3,
+      "packets": 32,
+      "partial_states_checked": 128,
+      "nonzero": true,
+      "exact_shadow_sha256": "f7616699ed737f23a9f97e677064ca4abf02e82a0331d5d51b48dafbb45a9243"
+    },
+    {
+      "class8": 7,
+      "packets": 32,
+      "partial_states_checked": 128,
+      "nonzero": true,
+      "exact_shadow_sha256": "140d74570cb1d85268110f9b8de813669059870176501098f2c7dc4e400c3384"
+    }
+  ],
+  "finite_diagnostics_only": [
+    {
+      "n": 64,
+      "log_den_U_over_n": 5.866348416050397,
+      "log_den_delta_over_n": 5.824035131658175
+    },
+    {
+      "n": 128,
+      "log_den_U_over_n": 6.010474148692674,
+      "log_den_delta_over_n": 5.989317506496563
+    },
+    {
+      "n": 256,
+      "log_den_U_over_n": 5.87860390870305,
+      "log_den_delta_over_n": 5.8877994472126405
+    },
+    {
+      "n": 512,
+      "log_den_U_over_n": 5.987234093462403,
+      "log_den_delta_over_n": 5.981944932913375
+    },
+    {
+      "n": 1024,
+      "log_den_U_over_n": 6.011864292112275,
+      "log_den_delta_over_n": 6.017343245353879
+    }
+  ],
+  "boundary": "fixed epsilon first, then n tends to infinity; no error rate or normality claim"
+}

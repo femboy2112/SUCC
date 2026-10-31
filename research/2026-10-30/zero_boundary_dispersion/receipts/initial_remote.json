@@ -1,0 +1,1072 @@
+{
+  "observed_utc": "2026-10-30 19:44:34 UTC",
+  "rows": [
+    {
+      "pr": 390,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/390",
+        "number": 390,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation TIME EXTRUSION — source-native triangle worldtube (RESEARCH ONLY)\n\n**Base:** Merged Main XVI at `e18ba565ca540adb7edf3292f5593929e76d91c5` (PRs #388/#389). The original signed BBP four poles and the selected zero boundary `U_0=0` are unchanged. All 6 additions are under `research/2026-10-30/time_extrusion/`. No main/source/archive/workflow/legacy claim edits; no merge requested. Base-16 π normality and RH **OPEN**.\n\n### Exact source-specific results\n1. **3D time-extrusion conservation:** the complete unnormalized Pascal posterior has formula `M~_(n,m,j)(dx)=exp(-[8(n+m-j)-7]x) Q(x)(1-exp(-8x))^j dx`, yielding **measure identity** `M~_(n+1,m,j)=M~_(n,m+1,j)`. Normalized posteriors agree; grade masses acquire the exact normalization/combination factor. The conserved diagonal is `v=n+m-j`. This equivalence corresponds to a *declared failure observation*, **not arbitrary successful path realization or a physical π-digit mechanism**.\n2. **Gamma-rank face and authentic first jet:** at each fixed grade j, `Z=[8(n+m-j)-7]X => Gamma(j+2,1)`; the harmonic–golden–Euler readout is `H_(j+1)-gamma-lambda^(j+2)`, with original four-pole first correction `-(59/30+4j)[1+(j+2)lambda^(j+4)]/A+O_j(A^-2)`. The coefficient `59/30` comes from `Q''(0)=-59`, while `4j` comes from the selected success likelihood. Do not extend fixed-j remainder uniformly to moving j. Main XVI's corrected golden-locus theorem is retained.\n3. **Sharp virtual-grade extrusion cone:** the native m=n grade PGF obeys `E z^J <= R(8n(2-z)-7)/R(8n-7)`, giving an explicit exponential tail at every fixed 1<z<2 and `limsup J_n/log_2 n <= 1` a.s. **for every coupling of the specified native marginal distributions**. The constant 1 is sharp for an independently coupled grade process by the inherited `TV(q_n,w)<=22/n`. This is a virtual probabilistic law, NOT a deterministic statement about one selected π-digit orbit.\n4. **Source-recentered arithmetic worldtube:** `y_n={x_n+T_n}` satisfies **exactly** `y_(n+1)={16 y_n}`. The inherited sum of transverse circle displacements is finite `sum T_n=0.0162969977338265...`. A circle-Lipschitz signed observer transfers with an O_h(1) *unnormalized* error; no Weyl saving is claimed.\n5. **Exact integer seam/carry cocycle:** `eta_n=floor(x_n+T_n)=1_[y_n<T_n]` and the bare digit `d_(n+1)=floor(16y_n)` give `kappa_(n+1)=d_(n+1)+16eta_n-eta_(n+1)`. Coherent same-forcing counterseed `s*=-pi/16` has `y_n=0,eta_n=1,d_n=0,kappa_n=15`, exposing why tiny geometric displacement does **not** imply similar carry statistics.\n6. **Long periodic-corridor exclusion:** if L consecutive base-16 π digits from position n agree with a p-periodic word, the published Zeilberger–Zudilin `mu(pi)<=7.103205334137...` implies, for every nu above that bound and all sufficiently large n, `L <= (nu-1)(n-1)+nu log_16(16^p-1) < (nu-1)(n-1)+nu p`. This is a genuinely global arithmetic restriction on near-periodic routes in the extruded worldtube, not digit equidistribution. A newer unreviewed 2026 exponent-2 preprint is **not** assumed.\n\n### Tests / provenance\n- **12/12 local exact-Fraction** tests passed; 40+ actual selected-seed integer-seam checks, rational-seed holdouts, finite Pascal conservation and excursion bounds.\n- Independent SymPy exact Taylor/source/Gold identities passed. Separate 68-digit mpmath integrals at original and Gamma-matched-mutant sources support the first-jet expansion. Independently original BBP-source positive rational outward intervals certify finite π hex cylinders; periodic rational hostile path retained.\n- **6/6 GitHub blob SHA-1 values verified byte-equal** to the locally executed/reviewed source/docs after correcting a missing upload newline.\n- Full native SUCC gate, hosted CI, Lean, peer review **not performed** on the new head. The apparent 3D field flatness and positive-grade concentration **do not establish any source-derived likelihood by which the actual π carry changes the auxiliary field**. Signed selected Weyl `sum e(hU_n(0))=o(N)` remains OPEN.\n\n### Files\n- [Full theorem, proofs and counterexamples](research/2026-10-30/time_extrusion/TIME_EXTRUDED_TRIANGLE.md)\n- [Claim/status ledger and next gate](research/2026-10-30/time_extrusion/CLAIMS_AND_NEXT.md)\n- [Exact local tests](research/2026-10-30/time_extrusion/time_extrusion_probe.py)\n- [Independent Gamma-rank oracle](research/2026-10-30/time_extrusion/asymptotic_oracle.py)\n- [Symbolic control](research/2026-10-30/time_extrusion/independent_symbolic_oracle.py)\n- [Original finite π cylinder certificates](research/2026-10-30/time_extrusion/periodic_tube_probe.py)\n\n**Next proof gate:** a genuine source-locked, zero-seed-sensitive signed **bulk 16-digit occupation** estimate, beyond the thin worldtube, diagonal field identity, irrationality-measure periodic exclusion, or any normality-equivalent observer.\n### Addendum: complementary source cut and carry-correction windows\nThe source-recentered pure phase y_n has two **disjoint** shrinking targets: the origin seam [0,T_n) (eta_n=1) and the Kepler III correction window [T_n,T_n+r_n). Original Green normalization gives **T_n/r_n -> 1/15**, so under Haar *reference over physical seeds* the conditional union probabilities tend to **1/16 versus 15/16**, with relative information-surprise contrast log 15. The union is summable: P_H(some seam or correction at n>=N) < 33/[64(N-1)], hence **eventual literal/pure carry equality for Haar-a.e. seed**. Coherent same-forcing s*=-pi/16 sits in the origin seam at *every* time, and all these metric statements are explicitly NOT asserted for the actual s=0. The new addendum and independent 4-test source are committed byte-identically.\n\n**Final local focused count:** 12 exact source tests + 4 exact seam-split tests = **16/16 PASS**; independent exact SymPy and 68-digit mpmath oracles PASS, plus outward original-BBP finite digit certificates. Remote 8/8 Git blobs match exact local source files. Full root suite, hosted CI, Lean, and external peer review not run.\n\n[Seam split proof](research/2026-10-30/time_extrusion/SEAM_SPLIT_AND_METRIC_FIREWALL.md) · [4 additional exact tests](research/2026-10-30/time_extrusion/seam_split_probe.py)\n",
+        "title": "[DRAFT] Time-extruded operational triangles: exact BBP diagonal, Gamma rank jet and integer seam",
+        "base": "main",
+        "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+        "head": "research/time-extruded-operational-triangle-2026-10-30",
+        "head_sha": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "6919db563b1ab63ccef81a42920dd11ddb3f6032",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T05:07:01Z",
+        "updated_at": "2026-10-30T05:09:36Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 14,
+        "changed_files": 8,
+        "additions": 630,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/390",
+        "display_title": "[DRAFT] Time-extruded operational triangles: exact BBP diagonal, Gamma rank jet and integer seam"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41006780719,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4365,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780719/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780719/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 41006780812,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 443,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780812/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780812/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41006780702,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 755,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780702/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780702/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41006780665,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 632,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780665/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780665/logs",
+            "workflow_id": 386978686
+          }
+        ]
+      }
+    },
+    {
+      "pr": 391,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/391",
+        "number": 391,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Spacetime Triangle — extrude / rotate / triangulate / Fourier\n\n**DRAFT RESEARCH ONLY.** Exact parent current Main XVI `e18ba565ca540adb7edf3292f5593929e76d91c5`. Single additive commit `078b69c73d8ff9c08081e01a95947e4be6821ca7`; 11 files under `research/2026-10-30/spacetime_triangle/`. No main, archived sources, authentic four signed BBP poles, `U_0=0`, history, workflows or theorem namespaces modified. **π base-16/base-3 normality and RH remain OPEN.**\n\n### Results with proofs and negative controls\n\n1. **ST-01 — genuine triangular time tiling.** Under a *single retained* latent `X~mu_1`, measures `M_(m,j)=C(m,j)f^(m-j)(1-f)^j mu_1` satisfy the exact Pascal transport `M_(m+1,j)=f M_(m,j)+(1-f)M_(m,j-1)`. Grade Fourier multiplier `m_eta=f+(1-f)e^(i eta)` has exact damping `1-|m_eta|²=4f(1-f)sin²(eta/2)`. The multiplier has **L² norm 1** for every `eta`: no uniform spectral gap, despite local strict damping.\n2. **ST-02 — exact native BBP zero-relative spine.** Condition on `n-1` consecutive zero likelihood observations of the retained latent: `X|0^(n-1) ~ mu_(8n-7)` *exactly*, so the actual original four-pole source clock is one coherent conditional history, not unrelated snapshots. Survival `r(n)/R(1) ~ 225/(3008 n²)`; infinite all-zero path has probability zero; scaled conditional latent has `Gamma(2,1)` tangent. Source-specific hazard `2/n-209/(120n²)+O(n^-3)` differs from Gamma-matched fake by **`-59/(120n²)`**. Harmonic/Euler finite part `log(3008/225)-2 gamma`.\n3. **ST-03 — fan from each zero-spine endpoint.** Exact original pole / Pascal polynomial `B_n(z)`; normalized grade modes approach `(2-z)^(-2)`, **parity mode tends to 1/9, not zero**. Proved all-clock positive-field occupancy `P(J_n>=L | 0^(n-1)) <= (256/81)L² 2^-L` for integers `n>=1,L>=4`. Kepler moving window `L≈log_16 n²` gives `O((log n)²/sqrt(n))` auxiliary fan probability, not pi digit occupancy.\n4. **ST-04 — temporal Fourier/Lerch symbol.** `T(w)=sum_n [r(n)/R1] w^(n-1)` has exact four-pole Lerch representation and a sharp cusp `T(e^(it))-T(1)= i(225/3008)t log(1/|t|)+O(|t|)`; the **rank-two harmonic time-Fourier regularity threshold** generalizes to boundary rank `r`. Fourier smoothing of the rare spine does not imply selected arithmetic cancellation.\n5. **ST-05 — proof firewall.** Auxiliary positive source/posterior conditioning **does not generate** the selected BBP orbit; `e(hU_(n+1))=e(hr(n+1))e(16hU_n)` remains a unit-modulus frequency-ladder map. Counterseed `s*=-pi/16` retains positive source geometry while its phases remain coherent, disproving any source-only normality implication.\n\n### Validation\n\n- **10/10 locally executed exact Fraction unit tests PASSED** and compileall passed.\n- Independent source polynomial oracle (99 cases), 12 direct positive-integral SciPy quadrature holdouts, native/fake hazard exact-rational asymptotic holds and independent finite time-cusp Fourier probe PASS.\n- Every committed non-manifest Git blob SHA-1 **matched the locally tested exact source bytes** in `SOURCE_MANIFEST.json`; the self-manifest was committed as the eleventh file. Full SUCC root AGENTS gates, hosted exact-head CI, Lean and independent mathematical peer review **NOT RUN / NOT CLAIMED**.\n- Signed π-normality and RH **OPEN**. The author’s historical harmonic/golden/Euler–Mascheroni triangle and Oily–Macaroni attribution are preserved as the separately marked rank-two tangent/fan specialization.\n\nStart at [RESEARCH.md](https://github.com/femboy2112/SUCC/blob/research/spacetime-triangle-zero-spine-fourier-2026-10-30/research/2026-10-30/spacetime_triangle/RESEARCH.md), [CLAIMS.md](https://github.com/femboy2112/SUCC/blob/research/spacetime-triangle-zero-spine-fourier-2026-10-30/research/2026-10-30/spacetime_triangle/CLAIMS.md) and [NEXT.md](https://github.com/femboy2112/SUCC/blob/research/spacetime-triangle-zero-spine-fourier-2026-10-30/research/2026-10-30/spacetime_triangle/NEXT.md).\n\n**No automatic main integration requested: independent review and exact root validation first.**\n\n### NEW second-commit theorem — two-axis Fourier factorization\n\nThe **full time×grade symbol** `D(w,z)=sum_n w^(n-1)[r(n)/R(1)]G_n(z)` has, uniformly for `|z|<=1` and real `t->0`, the proved Fourier cusp\n\n`D(e^(it),z)-D(1,z)=i(225/3008)(2-z)^(-2)t log(1/|t|)+O(|t|)`.\n\nIt uses the prior source-faithful Pascal total-variation estimate `sum_j |q_n(j)-w_j|<=44/n`, so `[r(n)/R1]G_n(z)=(225/3008)n^-2(2-z)^-2+O(n^-3)` **uniformly on the disk**. At genuine parity frequency `z=-1`, the coefficient is `iC/9`. At the historical *real PGF mark* `z=lambda²` (not a unit-circle Fourier frequency), the coefficient is `iC lambda²` by the golden fixed point: the old harmonic/golden/Euler triangle is an exact marked slice of the time-extruded operator. This is source-only, **not** selected π Weyl cancellation.\n\nThe second exact-head research commit is `a35ed37a511304ed3117418c9c4a7b50c2364c30`; updated focused tests **11/11 passed**, independent direct integral holdouts **12/12** plus new mixed-symbol coefficient checks **9/9**, compileall passed. Every updated non-manifest file's remote Git blob SHA exactly matches locally tested source bytes. Full root validation, post-push CI and formal peer review are not asserted.\n\n### NEW third-commit theorem — natural zero-boundary coordinate\n\nThe native source `mu_(8n-7)` is a conditional law on an exchangeable Pascal/de Finetti path space. If `p(X)=1-exp(-8X)` is the latent success probability, **the actual scaled distance of the conditioned path from the zero boundary** obeys\n\n`n p(X) | (n-1 zeros)  ⇒  Gamma(2,1)`.\n\nIts exact all-fixed-order moment tower is\n\n`E[(n p(X))^k | (n-1 zeros)] = [n^k/r(n)] sum_(ell=0)^k (-1)^ell C(k,ell) r(n+ell) → (k+1)!`.\n\nUniform exponential integrability from the **original four-pole source** `R(a_n-8tn)/R(a_n)→(1-t)^(-2)` proves moment convergence rather than merely fitting finite moments. This makes the zero-relative tangent geometry precise: the unscaled path coordinate tends to 0 at speed 1/n, while its blow-up retains a rank-two Gamma field, yielding the subsequent negative-binomial/golden fan under the declared observation grammar. The infinite zero spine is still probability zero; π digit selection remains unproved.\n\nUpdated exact-head research commit `7ce94d38479c22c3d427753812e38207515dc868` includes the theorem, source module, **12/12** passed exact rational regression tests and the unchanged independent polynomial/integral/time-Fourier checks (12/12 direct integrals, 9/9 joint coefficient holds). All updated remote Git blob SHAs match locally tested byte hashes; hosted exact-head CI may still be pending.",
+        "title": "[DRAFT] Spacetime Triangle: native zero spine, triangular Fourier transport and rank-two temporal cusp",
+        "base": "main",
+        "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+        "head": "research/spacetime-triangle-zero-spine-fourier-2026-10-30",
+        "head_sha": "7ce94d38479c22c3d427753812e38207515dc868",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "8cafeb98cce6cb124881ee2e91d58646a5937228",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T05:17:19Z",
+        "updated_at": "2026-10-30T05:24:09Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 3,
+        "changed_files": 11,
+        "additions": 824,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/391",
+        "display_title": "[DRAFT] Spacetime Triangle: native zero spine, triangular Fourier transport and rank-two temporal cusp"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41008225000,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4372,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008225000/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008225000/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 41008224570,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 446,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224570/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224570/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41008224668,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 758,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224668/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224668/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41008224421,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 635,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224421/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224421/logs",
+            "workflow_id": 386978686
+          }
+        ]
+      }
+    },
+    {
+      "pr": 392,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/392",
+        "number": 392,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Double Triangle × Time-Horizontal Fourier (research only)\n\n**Exact parent:** PR #390 head `269b6024b03b67a5732449e7cb2391a36134ccc5`, rooted in merged Main XVI. **New head:** `f2a937f510fc87acff0ee88388e674a2fdb5a9b5`. Nine additive files, confined to `research/2026-10-30/double_triangle_fourier/`. No original four signed BBP poles, neutral `U_0=0`, production, frozen history, proof contracts, workflows, or main changed. **Base-16 π normality/RH OPEN. DO NOT MERGE BLINDLY.**\n\n### Why this is an actual 2D effect\nThe author's time extrusion is turned into a time-horizontal rectangle, tiled by two observation triangles sharing **one retained BBP positive latent posterior**, not independently reset priors. The finite two-panel joint law has exact rational coefficients and a source-independent hypergeometric split conditional on total grade (Vandermonde).\n\nAt native two-full-panel clock `m1=m2=n`, the joint Gamma(2)-Poisson limit is the classical **negative-multinomial** Fourier symbol\n`H(z,w)=(3-z-w)^(-2)`, with coefficient `(j+k+1)binom(j+k,j)/3^(j+k+2)`, local inverse `(3-X-Y)^2=9-6X-6Y+X²+2XY+Y²`, and grade cross-covariance 2. The reset-independent model instead has `[(2-z)(2-w)]^(-2)` and covariance 0. Neither is an actual stochastic digit sampler.\n\n### Source-specific new-to-program results\n1. **Exact q=6 primitive correlation in two linked triangles:** `P(primitive J and primitive K)=6533558611/64571925600`, `Cov(chi6(J),chi6(K))=197519239153/85428657568800>0`. Proven via the exact 36-state rational cyclic group algebra, independently cross-checked with SymPy.\n2. **Genuine original-four-pole bivariate first jet:** for fixed `0<=z,w<=1`, `H_n=1/(3-z-w)^2+J(z,w)/n+O(n^-2)`, `J=[-511(z²+w²)-302zw+1115(z+w)-906]/[120(3-z-w)^4]`. Against `Q_fake=15x`, the first difference is `59(2-z-w)/[120n(3-z-w)^3]+O(n^-2)`. The `w=1` slice exactly recovers Main XVI's authenticated one-variable jet.\n3. **Golden-clock conservation:** splitting **one** native observation budget across two panels (`theta1+theta2=1`) retains `H(z,z)=(2-z)^(-2)` and original golden fixed point `phi^(-2)`; doubling the entire budget (`theta1=theta2=1`) changes the fixed point to `1-sqrt(3)/2`. The clock is a declared observer choice.\n4. **Signed endpoint firewall:** total-grade readout differs in Cesàro average from the arbitrary original signed phase sequence by at most `8/N+90*sum_(n=L)^(L+N-1)(1/n)/N` for `L>=3`, via a source-derived `TV<=min(1,45/n)`. This holds for **every bounded sequence** and therefore gives no new Weyl saving. Coherent same-forcing counterseed remains nonnormal.\n5. **Where genuinely new signed information may live:** an exact finite `(intermediate literal carry, final carry, relative rational phase)` group-algebra tensor breaks total-grade sufficiency. Grades `(1,0)` and `(0,1)` have the same total and positive posterior but may have different actual intermediate carries. Zero-seed, rational changed-seed, and exact circle-alias controls are retained.\n\nAn optional **opposing** independent-time observer has exact bilateral Oily kernel `(5+3|m|)/(27*2^|m|)` and five-point local inverse; it too preserves coherent phases. Do not conflate it with the shared-posterior two-panel model.\n\n### Execution and authority\n- **18/18** locally executed standard-library exact Fraction unit tests PASSED.\n- Separate independent SymPy exact proofs/checks and 75-digit mpmath source integrals for `n=30,90,270` passed; raw logs retained. Early test-only errors (wrong geometric tail factor, wrong doubled-clock sign) repaired and disclosed in VALIDATION.\n- **9/9 Git blob SHA-1 identities match byte-for-byte** the locally authored and tested docs, Python programs, SVG, and receipts. One-parent atomic research commit from #390.\n- Full root SUCC gate/hosted exact-head CI/Lean/external referee **NOT RUN**, no scholarly novelty asserted for classical negative multinomial identities.\n\n[Full mathematical proof](research/2026-10-30/double_triangle_fourier/DOUBLE_TRIANGLE_FOURIER.md) · [Exact stdlib tests](research/2026-10-30/double_triangle_fourier/two_triangle_fourier_probe.py) · [Independent oracle](research/2026-10-30/double_triangle_fourier/independent_oracle.py) · [Time-horizontal lattice SVG](research/2026-10-30/double_triangle_fourier/DOUBLE_TRIANGLE_TIME_HORIZONTAL.svg) · [Scoped claims](research/2026-10-30/double_triangle_fourier/CLAIMS.md) · [Validation](research/2026-10-30/double_triangle_fourier/VALIDATION.md) · [Next original zero-seed signed proof target](research/2026-10-30/double_triangle_fourier/NEXT.md).\n\n**Verdict-changing target still OPEN:** prove an independently sourced nontrivial signed estimate on the **internal two-time carry/phase** tensor for authentic `U_0=0`, not another invertible Fourier observer.\n\n### Addendum GMF — a genuine harmonic / golden / Euler–Mascheroni **two-dimensional Fourier surface** (second commit `00b073fb9adedcda91cc499540add10dfcfabc66`)\n\nAt each actual shared-field auxiliary grade tile `(J=j,K=k)`, `Y|j,k~Gamma(j+k+2,rate=3)`; after source-relative scaling `Z=3Y`, the exact tile constant is `H_(j+k+1)-gamma-lambda^(j+k+2)`, with **the original Oily–Macaroni constant at (0,0)**. The full analytic Mellin–Fourier generating function is\n\n`M(s;z,w)=3^s Gamma(s+2)/(3-z-w)^(s+2)`.\n\nThe exact two-dimensional harmonic–golden field is\n\n`D(z,w)=[1-gamma+log3-log(3-z-w)]/(3-z-w)^2 - lambda²/(3-lambda*z-lambda*w)^2`.\n\nEach coefficient is the genuine shared-posterior cell mass times its conditional harmonic/golden/Gamma contrast. The golden-Laplace identity and 8 nontrivial symbolic coefficient/marginal checks **passed 8/8**; total focused local execution is **18/18 exact Fraction + 8/8 SymPy = 26/26**. One test-only Python float/SymPy mismatch was corrected and disclosed. The committed **4/4 addendum Git blobs exactly match locally executed/generated originals**. Full repo CI/Lean/peer review still **UNRUN**. No arithmetic-time signed Weyl decay has been obtained.\n\n[Mathematical Gamma/Fourier tiling proof](research/2026-10-30/double_triangle_fourier/GAMMA_MELLIN_FOURIER_TILING.md) · [8 exact symbolic tests](research/2026-10-30/double_triangle_fourier/gamma_mellin_surface_probe.py) · [Validation](research/2026-10-30/double_triangle_fourier/GAMMA_SURFACE_VALIDATION.md).\n",
+        "title": "[DRAFT] Superimposed time-horizontal SUCC triangles: exact 2D Fourier, q6 covariance and BBP 59-jet",
+        "base": "research/time-extruded-operational-triangle-2026-10-30",
+        "base_sha": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+        "head": "research/double-triangle-shared-field-fourier-2026-10-30",
+        "head_sha": "00b073fb9adedcda91cc499540add10dfcfabc66",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "e62d494f3d2149f4d8e76080cfce67e2811ec2f2",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T05:30:33Z",
+        "updated_at": "2026-10-30T05:35:04Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 2,
+        "changed_files": 13,
+        "additions": 972,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/392",
+        "display_title": "[DRAFT] Superimposed time-horizontal SUCC triangles: exact 2D Fourier, q6 covariance and BBP 59-jet"
+      },
+      "ci": {
+        "workflow_runs": []
+      }
+    },
+    {
+      "pr": 393,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/393",
+        "number": 393,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Scope and provenance\nResearch-only, one-parent continuation of [PR #392](https://github.com/femboy2112/SUCC/pull/392) exact head `00b073fb9adedcda91cc499540add10dfcfabc66` (stacked over #390 and merged Main XVI). No original four-pole forcing, retarded `U_0=0`, historical sources, production modules, workflows, or main were modified. **Pi normality, RH, physical special relativity and physical heat claims remain OPEN/UNVERIFIED.**\n\n## Mathematical results\n1. **Coherent two-triangle clock allocation:** The two shared-posterior panels with `m_++m_-=n` have exact source-rational joint law, original-total-grade Vandermonde identity, and hypergeometric partition conditional on total `S`. At the authentic Gamma(2) boundary, `H_p(z,w)=(2-pz-(1-p)w)^(-2)`, so `H_p(z,z)=(2-z)^(-2)` and the original rank-two golden/Oily mark survive every allocation `0<=p<=1`.\n2. **Quantitative original-source finite-to-limit theorem:** `TV(P_n(J,K),P_p(J,K))<=min(1,28/n)` for `n>=3`, uniformly over the integer budget split; proof uses inherited original-source grade TV `22/n`, hypergeometric-vs-binomial sampling collisions and the authentic exact second-moment bound.\n3. **Projective Lorentz clock action:** The normalized boost `p_eta=e^eta p/(e^eta p+e^(-eta)(1-p))` gives `v_eta=(v+tanh eta)/(1+v tanh eta)`, velocity-composition group, and exact conditional directional Gibbs weighting `P_eta(j,k)/P_0(j,k)=e^(eta(j-k))/cosh(eta)^(j+k)`. Its relative information cost is `2[eta tanh(eta)-log cosh(eta)]`. **Projective clock-normalization is not Minkowski interval invariance.**\n4. **Exact golden arithmetic Lorentz form:** The integer matrix `B=[[1,1],[1,2]]` preserves `Q(a,b)=2(b²-ab-a²)` (signature (1,1)), with eigenvalues `phi^±2`. Its contracting eigenvalue equals the independently marked Oily fixed point `phi^-2`. Golden rapidity has `cosh eta=3/2`, `tanh eta=sqrt5/3`.\n5. **Falsifier: no Lorentz invariance of the actual source Fourier law:** `H_(p=1/2)(-1,1)=1/4`, but the golden integer torus map sends this frequency pair to `(-1,-1)` with value `1/9`. Source-time clock and literal carry also have no authenticated Lorentz transport. Full source/selected π covariance remains **unproved**.\n6. **Original-four-pole first jet for any clock split:** At `m_+/n=p`, `H_n=d^-2+n^-1[-151 C/(120d³)+3D/d⁴]+O(n^-2)` with `C=p(1-z)+(1-p)(1-w)`, `D=pz(1-z)+(1-p)w(1-w)`, `d=1+C`. Compared to `Q_fake=15x`, the leading source fingerprint is `59C/(120 n d³)`, retaining the genuine four-pole `Q''(0)=-59` without deriving selected Fourier cancellation.\n\n## Validation and limitations\n- The exact **remote research code bytes** equal locally executed files after restoring Git trailing newlines. **12/12 stdlib Fraction test methods passed**.\n- Separately authored SymPy oracle passed the integral Lorentz form, 25 bivariate coefficient identities, exact balanced/golden parity covariance, frequency-space noninvariance, and direct four-pole finite transforms.\n- Initial too-tight *finite observation* error threshold for the first jet was corrected after inspecting exact rational residues; this is recorded in VALIDATION and is not a claimed proved uniform bound.\n- Full native SUCC AGENTS gates, root suite, Lean, hosted exact-head CI and independent review **have not been executed**.\n- Noncentral intermediate-carry original-selected signed `o(N)` estimate remains **OPEN**; the same positive observer boosts also hold for coherent same-forcing counterseed `s=-pi/16`.\n\nFiles: `research/2026-10-30/lorentz_clock_tiling/` — mathematical paper, standalone exact probe, independent oracle, scoped validation, and next falsification handoff.\n\n**No merge or theorem-status promotion requested.**",
+        "title": "[DRAFT] Lorentz-clock triangle: projective boosts, golden integral isometry, and source-Fourier firewall",
+        "base": "research/double-triangle-shared-field-fourier-2026-10-30",
+        "base_sha": "00b073fb9adedcda91cc499540add10dfcfabc66",
+        "head": "research/lorentz-clock-triangular-tiling-2026-10-30",
+        "head_sha": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "f07f8250e69f293664b7f98e60269e97bf61d934",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T13:54:57Z",
+        "updated_at": "2026-10-30T13:54:57Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 10,
+        "changed_files": 5,
+        "additions": 455,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/393",
+        "display_title": "[DRAFT] Lorentz-clock triangle: projective boosts, golden integral isometry, and source-Fourier firewall"
+      },
+      "ci": {
+        "workflow_runs": []
+      }
+    },
+    {
+      "pr": 394,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/394",
+        "number": 394,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Arithmetic Energy–Momentum — original-source Lorentz mass shell\n\n**DRAFT RESEARCH ONLY. DO NOT MERGE BLINDLY.** Exact parent [PR #393](https://github.com/femboy2112/SUCC/pull/393) head `903fdb77ba92f14c620d7c0ab50229a2823b2ac9`, ancestral #392/#390 and merged Main XVI. Single additive child commit `3d9c16063e7a0ec69f9713065f5007375ea3a917`; **11 new files only** in `research/2026-10-30/arithmetic_energy_momentum/`. Original four BBP poles, authentic `U_0=0`, archives, historical theorem IDs, workflows and main untouched. π base-16 normality, RH and physical Lorentz covariance remain **OPEN / UNVERIFIED**.\n\n### Exact mathematical results\n1. **Golden arithmetic lattice mass shell.** For `ξ=v-uφ` in `Z[φ]`, `E_ar=v-u/2`, `P_ar=√5 u/2` obey `E_ar²-P_ar²=N(ξ)=v²-uv-u²`. SUCC's integer boost `B=[[1,1],[1,2]]` preserves the norm, rapidity `2logφ`, and has `(E,P)=(3/2,√5/2)` after one step from rest. Its contracting eigenvalue equals the **marked** Oily `φ^-2` fixed point; this is arithmetic, not a physical spacetime law.\n2. **Original-four-pole running rest mass.** Define `R(a)=4/a-2/(a+3)-1/(a+4)-1/(a+5)`, `M(a)=-a ∂_a logR(a)=E_μ[aX]`. Exact positive-polynomial certificates prove **for every real a>0**, `1<M(a)<2`, `M'(a)>0`; limits 1 and 2 with source-specific first jet `M(a)=2-59/(15a)+O(a^-2)`.\n3. **Original source effective rank.** `ρ(a)=[(logR)'²/(logR)'']` is strictly increasing from 1 to 2, with `ρ(a)=2-1379/(150a²)+O(a^-3)`. Polynomial certificates for `ρ-1`, `2-ρ`, and `ρ'` are independently reconstructed.\n4. **Genuine operational E–P shell in a declared shared-source Poisson-clock extension.** Under one retained `X~μ_a` and conditional independent `J±|X~Pois(θ±aX)`, define `E=E[J++J-]`, `P=E[J+-J-]`. Then `E=M(θ++θ-)`, `P=M(θ+-θ-)`, and **exactly** `E²-P²=4M(a)²θ+θ-=4ρ(a)Cov(J+,J-)`. In rest-normalized unprojected boosts `θ±=e^(±η)/2`, `E²-P²=M(a)²→4`. **Posterior reset kills covariance** while preserving the mean counts, disproving a source-memory-free mass interpretation.\n5. **Finite-source Lorentz-covariant Laplace symbol.** The original four-pole bivariate source law is `H_a(z,w)=R(a[1+θ+(1-z)+θ-(1-w)])/R(a)`. Paired transformations `θ±→e^(±η)θ±`, `t±→e^(∓η)t±` leave the full **finite-source Laplace** functional invariant; its first original-minus-fake jet is `59(d-1)/(15a d³)`. This does **not** preserve the actual unit-modulus Fourier torus or selected carries.\n6. **Original finite native Pascal shell is distinct.** For `p(X)=1-e^-8X`, integer budgets `m±`, the exact `E_m²-P_m²=4ρ_P(a) Cov(J+,J-)` uses `ρ_P(a)=2+48/a+18061/(150a²)+O(a^-3)`; Gamma-matched fake instead has `2+48/a+224/a²`. This prevents silently identifying the finite Bernoulli and Poisson clocks.\n7. **Sharp no-go and signed golden co-moving mark.** A fixed total budget `θ++θ-=1` and fixed rest mass factor `4θ+θ-=1` force `θ+=θ-=1/2`; nontrivial Lorentz boosts must change coordinate budget or transform the measuring probe. At the golden boost the co-moving original marked readout becomes **`z+=1-λ³`, `z-=-λ`**, retaining Gamma-limit `λ²` only as a signed analytic probe, not a physical π phase-cancellation theorem.\n\n### Validation and firewall\n- **11/11** exact stdlib `Fraction` tests PASS. One initial test mistakenly demanded strictly positive padded polynomial trailing zeros; repaired correctly and disclosed.\n- Independent SymPy source polynomial, rank-jet, lattice norm and golden signed-mark oracle **PASS**; separate 65-dps direct quadrature of original positive Q at a=1,9,17,73,257 **PASS**. Numerical holdouts are not universal interval proofs.\n- **11/11 GitHub remote blob SHA-1 hashes matched** the exact locally tested/generated source bytes, including source, independent oracles, claim ledger, raw receipts and manifest.\n- Full native SUCC root tests, provenance/observer/ordinal gates, hosted exact-head CI, Lean checking, independent blind review, and any selected zero-seed signed Weyl estimate **NOT RUN / UNVERIFIED**.\n- The same forcing with coherent counterseed `s*=-π/16` preserves every positive source mass-shell identity yet yields phase mean 1. Thus **no source-only inference to π normality** is valid.\n\n[Full derivation](https://github.com/femboy2112/SUCC/blob/research/arithmetic-energy-momentum-shell-2026-10-30/research/2026-10-30/arithmetic_energy_momentum/OPERATION_ARITHMETIC_ENERGY_MOMENTUM.md) · [Exact tests](https://github.com/femboy2112/SUCC/blob/research/arithmetic-energy-momentum-shell-2026-10-30/research/2026-10-30/arithmetic_energy_momentum/energy_momentum_probe.py) · [Claim ledger](https://github.com/femboy2112/SUCC/blob/research/arithmetic-energy-momentum-shell-2026-10-30/research/2026-10-30/arithmetic_energy_momentum/CLAIMS.md) · [Validation](https://github.com/femboy2112/SUCC/blob/research/arithmetic-energy-momentum-shell-2026-10-30/research/2026-10-30/arithmetic_energy_momentum/VALIDATION.md) · [Next actual π-proof gate](https://github.com/femboy2112/SUCC/blob/research/arithmetic-energy-momentum-shell-2026-10-30/research/2026-10-30/arithmetic_energy_momentum/NEXT.md)\n\n**Verdict:** A genuine **arithmetic** Lorentz mass shell and a separate **operational clock** mass shell are proved with an original-source finite running mass. They are not identified with a physical conservation law or the still-open selected BBP digit dynamics.",
+        "title": "[DRAFT] SUCC arithmetic energy–momentum: golden norm, running four-pole mass and shared-triangle covariance",
+        "base": "research/lorentz-clock-triangular-tiling-2026-10-30",
+        "base_sha": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+        "head": "research/arithmetic-energy-momentum-shell-2026-10-30",
+        "head_sha": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "e8179e838b516670d8a2955c7047def9bffec2ee",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T14:25:09Z",
+        "updated_at": "2026-10-30T14:25:09Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 11,
+        "additions": 794,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/394",
+        "display_title": "[DRAFT] SUCC arithmetic energy–momentum: golden norm, running four-pole mass and shared-triangle covariance"
+      },
+      "ci": {
+        "workflow_runs": []
+      }
+    },
+    {
+      "pr": 395,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/395",
+        "number": 395,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Frame-Reset Crucible — actually test the choice/T-action on normal systems\n\n**DRAFT, RESEARCH-ONLY.** Exactly one additive commit from Main XVI `e18ba565ca540adb7edf3292f5593929e76d91c5`, head `2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548`. **12 new files** only under `research/2026-10-30/frame_reset_crucible/`. No main or frozen BBP source, selected `U_0=0`, original signed four poles, provenance, historical contracts or workflows changed. Read-only context: draft #390–#393. Base-16 π normality and RH remain OPEN.\n\n### Concrete arithmetic normality controls\n- For Stoneham `alpha_(16,c)=sum_(p>=1)1/(c^p 16^(c^p))`, **c=3 and c=5** are CLASSICALLY base-16 normal (Bailey–Crandall 2002). Their exact source-rational stage `c^p<=n<c^(p+1)` visits each residue `1 mod c` modulo `c^p` exactly **c(c−1) times** (6 or 20). The genuine pure radix orbit is within `1/[16(c−1)c^p]` of this stage surrogate.\n- **All-horizon source certificate** (elementary paper proof, not fitted): for every circle arc I, `N>c`,\n  `A_N(I) <= c N |I| + 3c(c−1) floor(log_c(N−1)) + c`. Every weak empirical limit is T-invariant and absolutely continuous with density bounded by c; Fourier invariance + Riemann–Lebesgue forces Haar. This reproduces known Stoneham normality via a SUCC-typed finite source-to-selected arithmetic certificate.\n- Complete-stage rational character sums are EXACTLY zero when `c^(p−1) ∤h`; true-orbit complete-stage sums differ by at most `π|h|/8`. Partial stages are handled by bounded occupancy, not claimed to cancel term by term.\n- **Negative same-grammar control c=2:** each term is one isolated hex digit `2^(4ceil(p/4)−p)` at `2^p+ceil(p/4)`. Nonzero digit density `O(logN/N)`, so demonstrably nonnormal. Exact arithmetic explains why c=2 lacks 3/5 unit-subgroup transport.\n- **Independent hostile controls:** periodic hexadecimal order-two de Bruijn cycle has exactly uniform one-step transitions yet nonnormal; a biased i.i.d. digit law is invariant under ALL cylinder resets but non-Haar; computable normal hexadecimal Champernowne allows algorithm-informed selective observation. Observer policy / deterministic selected digit / epistemic recentering are therefore distinct typed operations.\n\n### Actual missing BBP bridge, and negative control\nA generic **finite lattice/grid occupancy lemma** is proved: source-authenticated rational surrogates z_n, bounded per-grid-cell visits and sublinear edge/error budget imply normalized orbit is Haar. Stoneham satisfies these hypotheses with explicit c=3/5 grids. Original BBP `z_n={U_n(0)}` has source-verified precision `T_n<(8n+1)^(-2)`, but **NO comparable all-horizon grid-occupancy/conductor certificate** is known. Matching exceptional primes 2,3,5 and `16−1=3×5=Q'(0)` does not transfer source arithmetic. Finite **exact BBP** counts on naive Stoneham c=3 p=2 equal bins are `(9,7,2)`, NOT six each: naive identification REFUTED at that finite scope. No genuine signed π Weyl estimate claimed.\n\n### Reproducibility and authority\n- **20/20 exact Python regression test methods PASS**, retained raw log; full source hashes and git blob SHA identities match all 12 posted files.\n- Independently implemented **direct pulse recurrence** / exact residue loop and **75-digit** root-of-unity oracle: c=3 stages 1..6, c=5 stages 1..4, seven Fourier modes each, independent exact tail checks. PASS; raw JSON receipt and log retained.\n- Compileall PASS. **Full SUCC root suite, provenance/observer/ordinal gates, hosted exact-head CI, Lean and independent external mathematical review NOT RUN / NOT CLAIMED.** Normality of alpha16,3 and alpha16,5 is published prior work, not academic priority.\n\nStart at `research/2026-10-30/frame_reset_crucible/README.md`, `RESEARCH.md`, `CLAIMS.md`, `NEXT.md`, `VALIDATION.md`. New instrumental target: obtain *selected*, zero-seed-sensitive arithmetic grid/source-occupancy control for original four-pole BBP or a truly stronger signed estimate. Source-only positive triangle, golden/Oily mark, and finite frame reset do not prove π normality. **Do not merge blindly.**",
+        "title": "[DRAFT] Frame-Reset Crucible: normal Stoneham 3/5, nonnormal 2, choice and BBP occupancy gate",
+        "base": "main",
+        "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+        "head": "research/normal-digit-frame-reset-stoneham-choice-2026-10-30",
+        "head_sha": "2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "b414178688e39bf33862dc56691f986b157ebaca",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T14:45:07Z",
+        "updated_at": "2026-10-30T14:45:07Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 12,
+        "additions": 1081,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/395",
+        "display_title": "[DRAFT] Frame-Reset Crucible: normal Stoneham 3/5, nonnormal 2, choice and BBP occupancy gate"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41074409382,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 447,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409382/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409382/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41074409377,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 636,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409377/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409377/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41074409553,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 759,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409553/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409553/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41074409491,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4379,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409491/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409491/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 396,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/396",
+        "number": 396,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Purpose\nMake the author's **human T-action** and new **snapshot-universe / inverse reconstruction** insight durable without conflating frame coordinates, actual physical events, arithmetic source selection, and global proof authority.\n\n## Changes\n- `research/2026-10-30/HUMAN_T_ACTION_SNAPSHOT_RECONSTRUCTION.md`: formal digit + residual recentering `H_b(x)=(floor(bx), {bx})` with exact inverse, a declared expanding interpolation, distributional reset current `DQ=(log b/a)Q dt - sum d_n delta_(n+1)a`, source-aware inverse fibers, temporal aliasing, continuous-interpolation countermodel, and the existing authentic four-pole BBP / selected-Weyl firewall.\n- `docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md`: HTS-01–07 with domain, quantifiers, statuses, derivations, countermodels, and next falsifiers.\n- `tests/test_human_t_action_snapshot.py`: 10 stdlib / exact-Fraction finite-model tests including signed Dirac jump pairing and deliberately wrong-sign mutation.\n- `docs/CLAIM_INDEX.md`: front-door navigation; `docs/math_memory/CLAIM_CATALOG.json`: updated deterministic mathematical-memory entries (unregistered research-only namespace warnings are explicitly retained).\n\n## Steelman / crucible / verdict\n- **PROVED PAPER / CLASSICAL:** preserving the realized digit and recentered residual preserves predecessor information; a *chosen* chart with a jump has a precisely computed Dirac-atomic derivative.\n- **REFUTED as physical necessity:** identical snapshots admit continuous interpolation with no Dirac masses. A frame jump is not by itself evidence of a physical delta-force.\n- **REFUTED as inference from finite observations:** oscillator temporal aliases and radix cylinder fibers prevent automatic recovery of hidden dynamics or proof of selected normality.\n- **UNVERIFIED:** a new source-selected non-scalar signed intertime Weyl estimate for authentic BBP `U_0=0`. **π base-16/base-3 normality and RH remain OPEN.**\n\n## Evidence and validation boundary\n- **Executed in isolated Python 3:** 10/10 exact tests pass; no external dependencies.\n- **Prepared catalog:** derived from the verified canonical main catalog via the repository's deterministic indexing rules; original bytes/layout preserved for all old entries. The full checkout `build_math_memory.py --check` has **not** run in this environment.\n- **Not run:** complete `AGENTS.md` suite, provenance verifier, observer probes, hosted CI (requires full checkout/runner). Do not infer a pass.\n- Only additive docs/tests and generated index/catalog update; preserved source/manifest/frozen proofs untouched.\n\n## Next gate\nFind an authenticated BBP **non-scalar**, **non-circular** observer coupling frame marks, source coefficients, real-circle carries, and moving Mellin alias modes. Predeclare contrast against same-forcing `s*=-pi/16`, `alpha=1`, wrong carry/source controls, and independent holdouts. Even successful finite separation is instrumentation, not a normality proof.\n\n**Draft research PR only; please do not merge or promote status without review and repository validation.**",
+        "title": "Research: human T-action, Dirac frame resets, and inverse snapshot reconstruction",
+        "base": "main",
+        "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+        "head": "research/human-t-action-snapshot-dirac-2026-10-30",
+        "head_sha": "adb0a53a4b86793b084b8ea122e88674a9c74adc",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "3802d8f13a115d44053cb2ca9744b5d83ade763c",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T14:48:19Z",
+        "updated_at": "2026-10-30T14:48:19Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 5,
+        "additions": 450,
+        "deletions": 3,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/396",
+        "display_title": "Research: human T-action, Dirac frame resets, and inverse snapshot reconstruction"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41074898409,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 448,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898409/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898409/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41074898400,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 760,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898400/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898400/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41074898434,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 637,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898434/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898434/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41074898424,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4381,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898424/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898424/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 397,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/397",
+        "number": 397,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Fibonacci Clock × Epicycle-Demon Observer\n\n**Additive research only; do not merge blindly.** Based on exact Main XVI at `e18ba565ca540adb7edf3292f5593929e76d91c5`. Four additive files, all confined to `research/2026-10-30/fibonacci_epicycle_demon/`; no changes to the original signed four-pole BBP source, the neutral `U_0=0` boundary, archives, historical proof contracts, production, CI workflows or main. Read-only reference to draft PRs #379 and #390–#396; these branches are not silently imported or merged.\n\n### Actual new-to-program mathematical work\n\n1. **Exact golden/Fibonacci spectral bridge:** original Gamma(2), clock=1 auxiliary PGF fixed point `q=phi^-2` equals the contracting eigenvalue of `B=[[1,1],[1,2]]`, with `B=S^2`, primitive Fibonacci `S` an anti-isometry, and Lorentz rapidity `2 log phi`. This is *not* proof of the native/physical time clock.\n2. **Original-four-pole source on a declared Fibonacci schedule:** for `a_k=8F_(2k)-7`, the symmetric KL divergence of the authentic posterior pair tends to **2**; original minus Gamma-matched counterfeit has first asymptotic jet `-59(sqrt(5)-1)/48 * phi^(-2k)`. Fisher step approaches `2 sqrt(2) log phi`; harmonic finite part equals `gamma-(1/2)log5`, while the chosen Gamma-tile diagonal has `-(1/2)log5`.\n3. **Proved conditional normality/evidence theorem:** every fixed full-support nonuniform order-k Markov predictor has limiting log-likelihood ratio per digit `-average_context KL(U||p(.|context)) < 0` against uniform on a normal sequence. Thus each such fixed degenerate observer has a finite but generally ineffective eventual exponential defeat horizon.\n4. **Precise corridor theorem:** on an assumed normal sequence, every corridor avoiding any *fixed* finite word, or following a fixed periodic template, has length **o(N)** relative to elapsed prefix length. This is necessary, not sufficient, for normality.\n5. **Hard no-go:** normality allows arbitrarily long ordered runs at arbitrarily late places and arbitrary biased finite prefixes; computable normal numbers are predictable by more powerful observers. There is no universal absolute 'last epicycle' or algorithm-independent new-information bill.\n6. **Maxwell-demon analogy with a strict firewall:** cost model exceptions, prequential prediction, selection policies and frame resets together; deterministic digits have no thermodynamic heat/erasure law without a physically instantiated observer.\n\n### Validation\n\n- **10/10** locally executed Python stdlib regression tests PASSED, including exact original `R(a)` and `E[X]`, integer boost invariants, Fibonacci powers, Decimal first-jet holdouts, cyclic de Bruijn countercontrols, Markov evidence checks, and computable normal examples.\n- The remote Git blob for `epicycle_probe.py` matches the locally executed source exactly: **`fdbd938c770f568f3e3afbff317a489e90360437`** (6648 bytes).\n- Compare against main: **4 added files, 0 changed/deleted original files; 4 commits ahead, 0 behind** at review.\n- Full SUCC root provenance/observer/ordinal suite, hosted exact-head CI, Lean and external peer review **NOT RUN / NOT CLAIMED**. Infinite claims rest on paper derivations and prior classical theorems, not on finite tests.\n\nStart at [RESEARCH.md](https://github.com/femboy2112/SUCC/blob/research/fibonacci-epicycle-demon-normality-2026-10-30/research/2026-10-30/fibonacci_epicycle_demon/RESEARCH.md); [CLAIMS.md](https://github.com/femboy2112/SUCC/blob/research/fibonacci-epicycle-demon-normality-2026-10-30/research/2026-10-30/fibonacci_epicycle_demon/CLAIMS.md); [VALIDATION.md](https://github.com/femboy2112/SUCC/blob/research/fibonacci-epicycle-demon-normality-2026-10-30/research/2026-10-30/fibonacci_epicycle_demon/VALIDATION.md); [executed probe](https://github.com/femboy2112/SUCC/blob/research/fibonacci-epicycle-demon-normality-2026-10-30/research/2026-10-30/fibonacci_epicycle_demon/epicycle_probe.py).\n\n### Remaining mathematical gate\n\nDerive a genuinely new **source-locked, selected `U_0=0`-sensitive** all-horizon signed Weyl or full 16-carry/grade grid occupancy theorem for the authentic four signed BBP poles. Contrast against coherent same-forcing counterseed `s*=-pi/16`, Gamma-matched and higher-jet-matched mutant sources, periodic de Bruijn, and normal Stoneham c=3/5 controls. A conditional implication from assumed normality cannot establish π normality.\n\n**π base-16/base-3 normality and RH remain OPEN. No physical Maxwell demon, energy conservation law, or proper-time identification claimed.**\n---\n\n### 2026-10-30 addendum: no-discard arithmetic information budget\n\n**Author's constraint:** an observer cannot knowingly discard evidence. We now formalize this as a left-invertible history-update contract and account for what total-grade projection actually forgets. Three new additive files: [mathematical dossier](research/2026-10-30/fibonacci_epicycle_demon/NO_DISCARD_OILY_INFORMATION.md), [validation](research/2026-10-30/fibonacci_epicycle_demon/NO_DISCARD_VALIDATION.md), and [exact probe](research/2026-10-30/fibonacci_epicycle_demon/no_discard_oily_probe.py).\n\n1. **Exact Oily–Macaroni prior:** W_(jk)=p_(jk)[H_(j+k+1)−γ−φ^(-(j+k+2))]/Z, Z=1−γ+log3−(1+3φ^-1)^−2≈1.39863545. Precommitted path-label code-length surprise obeys L_OM(j,k)≥(j+k)log2(3/2)−O(log(j+k+2)). This is *prior-relative surprise*, not Kolmogorov complexity or physical energy.\n2. **Information not lost to normalization:** at finite two-panel depth, P(J=j|J+K=s)=C(n,j)C(n,s−j)/C(2n,s), unchanged by any total-grade Oily tilt. Source-limiting average split entropy is 1.70078039 bits before and 2.11701518 bits after the Oily tilt. For a witnessed ordered 2n-trial word, H(word|S=s)=log2 C(2n,s) **exactly**, and Oily-normalized expected retained-history uncertainty is 5.65804172644 log2 n+O(1) bits.\n3. **Exact four-pole positive logarithmic information invariant:** for c=(4,−2,−1,−1), t=(0,3,4,5), R(a)=Σ c_i/(a+t_i), authentic-source-vs-Gamma chi² is [−Σ c_i c_j log(a+t_i+t_j)]/[a²R(a)²]−1=3481/(450a²)+O(a^−3). Independent numerical integration of ∫e^(−ax)Q(x)²/x dx checks it. A rational all-a upper bound is proved.\n4. **No-go:** authentic and Gamma-matched sources through the same retained-X two-panel channel with the same Oily grade tilt have a per-clock KL upper bound O((log n)^3/n²), summable. These are marginal source comparisons, NOT a multitime path law or selected π-digit KL bound.\n5. **Unconditional arithmetic state-capacity bound for π:** any autonomous deterministic q-state generator produces an eventually periodic stream with preperiod+period≤q. The published Zeilberger–Zudilin irrationality bound gives q≥N/ν for sufficiently large N and any ν>7.103205334137... when matching the first N hexadecimal digits of π exactly. This concerns **states**, not description bits; unrestricted π algorithms and external clocks are not covered.\n\n**Validation:** exact committed standalone stdlib Decimal/Fraction probe **8/8 PASS** after detecting/correcting an initial Fraction-to-Decimal TypeError; Git blob SHA-1 aabd1b395ec3442102c264492fd06056c6a26490 matches the locally executed source byte-for-byte. Separately implemented mpmath direct-integral controls and **11/11** focused local calculation tests PASS. Full native SUCC root tests, hosted CI, Lean, and peer review **NOT RUN**. All changes additive relative to Main XVI.\n\n**Claim boundaries:** no π base-16 normality proof, no selection-from-positive-source proof, no physical heat law, no canonically selected Fibonacci clock. Next: lossless source-zero-seed-sensitive **signed internal two-time carry/phase** estimate rejecting the same-forcing coherent counterseed.\n\n\n---\n\n### Addendum: inertial capacity is not active carrier access\n\nThe author's **load-bearing refinement** distinguishes finite *inertial internal information* from indefinite *causal contact with infinite carrier structure*. “Active” means fresh distinguishable contact, **not** acceleration or non-geodesic movement. New files: [mathematical dossier](research/2026-10-30/fibonacci_epicycle_demon/INERTIAL_CONTACT_FIELD.md), [exact test probe](research/2026-10-30/fibonacci_epicycle_demon/inertial_contact_probe.py), [validation receipt](research/2026-10-30/fibonacci_epicycle_demon/INERTIAL_CONTACT_VALIDATION.md).\n\n- **Finite memory theorem:** for M fully witnessed, admissible histories, K internal bits and E external retained record bits, exact no-discard reconstruction requires K+E≥log₂ M. At original shared-source two-panel grade s=1, M=2n, hence n≤2^(K−1) without external storage. Continuous acquisition is possible along an infinite carrier with expanding *external* record; no finite-time infinite-information accumulation follows.\n- **Contact test:** a fixed probe of a frozen independent-bit carrier sees 1 bit total; a predetermined path probing T fresh sites sees T bits; cycling p sites saturates at p bits. A stationary receiver of a changing field can receive new bits. Motion/acceleration are neither necessary nor sufficient for fresh information.\n- **Actual SUCC radix map:** the digit-and-residual action (floor(16y), {16y}) is invertible as a *carrier rechart*; treating its exact real residual as a physically finite K-bit internal register would illegitimately smuggle infinite precision. Every m-digit observed prefix remains compatible with all 16 next digits absent additional information or an independent algorithm.\n- **Horizon firewall:** distinguish memory/storage capacity, causal observational reachability, and genuine global GR event horizon. A black-hole horizon is distinct from its singularity. Posterior memory and Oily weighting alone do not imply spacetime curvature or selected π normality.\n\n**Validation:** standalone exact Python tests **7/7 PASS**; exact committed test blob matches locally executed SHA-1 831a9b5df9460269eb5d960bfa05d4f76d4cef31. Three additive files; full root repository suite, hosted CI, Lean and independent referee NOT RUN. No main or original source edits. Remaining bridge: derive a zero-seed-sensitive, source-locked signed two-time carry/phase **contact current** and a discriminating nontrivial all-horizon bound. Base-16 normality of π and RH remain OPEN.\n\n\n---\n\n### Addendum: accelerating-frame virtual-field response\n\n**New additive research:** [derivation](research/2026-10-30/fibonacci_epicycle_demon/ACCELERATING_FRAME_RESPONSE.md), [exact probe](research/2026-10-30/fibonacci_epicycle_demon/accelerating_frame_probe.py), [validation / clock correction](research/2026-10-30/fibonacci_epicycle_demon/ACCELERATING_FRAME_VALIDATION.md). Original source and selected U_0=0 unchanged.\n\n1. **Frame covariance (not backreaction):** original-source E=M(a)coshη, P=M(a)sinhη preserves E²−P²=M². For a fixed source, time-varying η creates component mixing dE/dτ=ηdot P, dP/dτ=ηdot E, removed by the exact co-moving derivative. Pure boost connection is flat.\n2. **Exact fixed-budget Oily directional response:** normalized projective pη=(1+tanhη)/2 leaves total grade PGF (2−z)^−2 invariant. Original harmonic/golden conditional grade tilt D_s yields **Z_OM,clock1 = 4/5 + log2 − γ** and **mean total grade 3.33319417546...**, not 5.6580417264... (which belongs to the **two-full-panel clock2** model). Result: E_OM[J−K]=meanS·tanhη, Fisher metric meanS·sech²η, KL from rest meanS·(η tanhη−logcoshη), Fisher distance to η=+∞ **2.867808741...**. This is channel-saturation under conserved budget, not a physical causal horizon or universal information capacity bound.\n3. **Time-history observational effect:** reversing clock allocations (3/4,1/4) changes a fixed marked history (+,−) likelihood from 9/16 to 1/16 without changing total grade. This is chronological evidence, not intrinsic curvature.\n4. **Source-blind no-go:** in a marked shared-Y Poisson model, mark probabilities depending only on time/boost factor out of the posterior. η(t) can perturb directional grades without perturbing the latent virtual source.\n5. **Declared source-sensitive coupling:** set P(+|x,α)=1/2+εα b(x), with α=±1, b=e^(-8x)(1−e^(-8x)), |ε|≤1. Opposite-acceleration schedules and histories with the same grade give exact rational posterior contrast ΔE[b]=8ε Var_μ(b)+O(ε³), with authentic four-pole b-moments calculated from R(a+8k) and source-minus-Gamma-matched first variance jet **−128·59/(15a³)+O(a^-4)**. This is a Bayesian measurement update, NOT physical field backreaction, Unruh heat, or selected π Weyl cancellation.\n\n**Validation:** Final exact-committed stdlib probe **8/8 PASS**. First local run caught a full-clock versus conserved-clock normalizer mismatch (7/8 then), repaired **before upload** and disclosed in validation. The GitHub blob SHA **ca9c7cf3f4e25ef0adddc53a4ec5666d645c09d5** equals the successfully locally executed file. Full repo tests, hosted CI, Lean and external review NOT RUN. Base-16 normality of π, RH and physical GR identification remain OPEN. Next real gate is a source-locked, selected zero-seed **signed intertime carry/phase** inequality with matched-control discrimination.\n\n\n---\n\n### Addendum: interaction-supported curvature and source-sensitive wave equation\n\n**Author's new hypothesis:** begin with an object and a place, study the admissible paths through a carrier to a target, and recover geometry from transport; acceleration might modify interaction geometry and permit propagating sinusoidal/periodic arithmetic modes. We tested the strongest **conditional** formulation instead of assuming equivalence to GR.\n\nNew additive files: [mathematical dossier](research/2026-10-30/fibonacci_epicycle_demon/INTERACTION_CURVATURE_WAVES.md), [exact executed probe](research/2026-10-30/fibonacci_epicycle_demon/interaction_curvature_wave_probe.py), [validation receipt](research/2026-10-30/fibonacci_epicycle_demon/INTERACTION_CURVATURE_VALIDATION.md).\n\n**Results and falsifiers:**\n1. **Same support != same curvature:** on a fixed 3-vertex path, changing lazy transition probability p changes exact Ollivier curvature κ(0,1)=p. Transport/metric data are additional load-bearing inputs.\n2. **Pure acceleration != intrinsic holonomy:** an accelerated frame with both spatial and temporal edges transformed as a gradient has exactly zero plaquette curvature. If the spatial link is separately coupled to the observer while the temporal link is not, a real *declared* U(1) loop defect appears. Its lifted phase must be preserved separately from modulo-one winding, in accordance with no-discard.\n3. **Original source passport:** use κ_a=M(a)/2 from the original four-pole source, with M(a)=−aR'(a)/R(a)=2−59/(15a)+O(a^-2). The **reference-relative** lifted defect is (κ_a−1) Δη≈−59 Δη/(30a), while its Gamma-matched reference is zero. This does not identify physical gravitational curvature.\n4. **Exact discrete hyperbolic field with waves:** ψ_(t+1)−2ψ_t+ψ_(t−1)+c² L_t ψ_t=J_t, where L_t is a positive weighted graph Laplacian. Static uniform ring admits exact sin²(ω/2)=c² sin²(k/2); waves occur on flat graphs, so oscillations are NOT by themselves evidence of curvature. Exact static energy conservation and an exact dynamic edge-work balance hold.\n5. **Conditional acceleration-to-wave witness:** for a **declared** source-curvature bond response w_e*=1+ε[(κ_a−1)Δη]^2 at one link and a pre-existing field gradient, a unit rapidity step launches an exact local opposite-sign dipole pulse ±c²ε(κ_a−1)^2, propagating at finite graph speed. The source asymptotic amplitude is c²ε·3481/(900a²), while independent #397 chi² source-vs-Gamma asymptotic is 3481/(450a²), so the chosen pulse/chi² ratio tends to c²ε/2=1/32 for c²=ε=1/4. Matching 59² is **calibration**, not evidence that the coupling was forced by the source.\n6. **Physical/carry firewalls:** 1+1 scalar lattice waves are not GR gravitational waves; 2+1 vacuum GR has no local propagating gravitational waves. Genuine 3+1 gravitational radiation has source conservation/quadrupole requirements. The positive source and coherent nonnormal counterseed both retain these results; no zero-seed signed π Weyl cancellation follows.\n\n**Validation:** exact committed Python stdlib probe **8/8 PASS**, exact Git blob SHA-1 **4f4e516cfa18769cc0d746066e01173bac05e3c0** independently verified against executed local bytes. Separately implemented local extended probe **11/11 PASS**. Three additive research files, no edits to source, history or main. Full root SUCC tests, hosted CI, Lean and external review **NOT RUN**.\n\n**Next verdict gate:** recover source/observer interaction transports from the real signed two-time BBP intermediate carry and phase tensor, demonstrate non-gauge, non-product loop holonomy, and derive wave dynamics from a constrained action rather than supplying source-dependent links by fiat; test all original source/seed and arithmetic holdouts.\n",
+        "title": "[DRAFT] Fibonacci information clock × epicycle-demon observer: exact KL jets and conditional normality limits",
+        "base": "main",
+        "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+        "head": "research/fibonacci-epicycle-demon-normality-2026-10-30",
+        "head_sha": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "43ffb0632606f1e9ad1ef5d652f0e29cb8efcaf8",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T15:06:06Z",
+        "updated_at": "2026-10-30T17:02:00Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 18,
+        "changed_files": 17,
+        "additions": 1748,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/397",
+        "display_title": "[DRAFT] Fibonacci information clock × epicycle-demon observer: exact KL jets and conditional normality limits"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41095159533,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 466,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159533/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159533/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41095159957,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 778,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159957/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159957/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41095159606,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 655,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159606/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159606/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41095159511,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4423,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159511/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159511/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 398,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/398",
+        "number": 398,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Prime Stroboscope — authentic-source arithmetic certificate (DRAFT, NOT MERGE REQUEST)\n\n**Base** merged Main XVI `e18ba565ca540adb7edf3292f5593929e76d91c5`; **head** `1a1524de28b155139d8fe84ea90fc2f117fbb9f3`. Single additive 16-file commit under `research/2026-10-30/prime_stroboscope/`. No changes to original four-pole BBP source, `U_0=0`, archives, theorem contracts, CI/workflows or main. **π base-16 normality and RH OPEN.**\n\n### New-to-SUCC theorem: prime stroboscopic frame reset\nFor the exact original rational BBP recurrence `U_n=16 U_(n-1)+r(n)`, `U_0=0`, any prime `p≡1 mod4`, and integer `k>=1` with `p>8k-2`, let `N_p(k)=((4k-1)p+1)/4`. Then in the localization of rationals at p:\n`p U_(N_p(k)) ≡ U_k (mod p)`.\n\n**Full coefficient rigidity:** for general four-pole coefficients `(A,B,C,D)`, p≡5mod8 transports the vector under the exact involution `(A,B,C,D)→(-4C,B,-A/4,D)`, whereas p≡1mod8 transports identically. BBP's source ratio `A=-4C` is fixed. This is **not a unique characterization**: mutant `(4,0,-1,0)` also survives. Proof uses the actual BBP pole offsets, Fermat/Euler criterion and the supplementary law for 2; no fitted digit statistics.\n\n**Conductor birth/collision:** the new p-primary denominator enters at `(p+7)/8` for p≡1mod8 or `(p+3)/8` for p≡5mod8. The next original pole events yield common `pU_((p+1)/2)≡7/2` and ultimately `pU_((3p+1)/4)≡47/15=U_1` for both prime classes. A complete multiplicative period `ord_p(16)|(p-1)/4` appears before the first collision.\n\n**CRT firewall:** the theorem controls only the p-primary character of the remote **rational** selected orbit, not the complementary conductor phase. Real-circle Weyl cancellation is still unproved. For `p=73,k=4`, p-primary conductor disappears because `U_4` numerator has factor 73; included as an exact negative test. p-integral changed seeds also share the same p-primary congruence.\n\n**Finite real selected orbit:** rigorous original BBP Green tail `0<T_n<(8n+1)^(-2)` and exact Fraction recursion certify all 256 first pure hexadecimal bin positions for π; counts `[17,18,18,15,14,12,16,18,19,24,13,13,14,16,13,16]`. Finite certificate only; zero implication to all-horizon normality without further arithmetic occupancy theorem.\n\n### Executed validation\n- **15/15** focused unittest methods PASS and compileall PASS.\n- Independent exact rational recurrence vs event-based modular oracle: **138 comparisons** across **46 authentic prime/time cases**, three source families, and five CRT split checks: PASS.\n- 410-decimal-digit mpmath independent check of the 256 exact bins: PASS, numerics NOT the certificate.\n- Every one of the **15 non-manifest Git blob SHAs** matches the SHA-1 recorded for locally executed bytes in `SOURCE_MANIFEST.json`; complete docs, code, logs and negative controls uploaded.\n\n**Not run:** complete SUCC root suite/AGENTS gates, hosted CI, Lean theorem kernel, external blind referee/novelty review. No merge requested.\n\n### Codex Astra Ultra research handoff\nStart with [README](https://github.com/femboy2112/SUCC/blob/research/bbp-prime-stroboscopic-crt-2026-10-30/research/2026-10-30/prime_stroboscope/README.md), [full proofs](https://github.com/femboy2112/SUCC/blob/research/bbp-prime-stroboscopic-crt-2026-10-30/research/2026-10-30/prime_stroboscope/RESEARCH.md), [status ledger](https://github.com/femboy2112/SUCC/blob/research/bbp-prime-stroboscopic-crt-2026-10-30/research/2026-10-30/prime_stroboscope/CLAIMS.md), and [CODEX_ASTRA_ULTRA_HANDOFF.md](https://github.com/femboy2112/SUCC/blob/research/bbp-prime-stroboscopic-crt-2026-10-30/research/2026-10-30/prime_stroboscope/CODEX_ASTRA_ULTRA_HANDOFF.md). Focus: multi-prime p-primary × complementary-CRT signed coupling, p², other residue classes, actual interval occupancy/Stoneham calibration, and genuinely improved selected Weyl sums. Do not promote source-only modular congruences to π normality.",
+        "title": "[DRAFT] BBP prime stroboscope: p-adic frame reset, pole involution and real-circle CRT firewall",
+        "base": "main",
+        "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+        "head": "research/bbp-prime-stroboscopic-crt-2026-10-30",
+        "head_sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "d8d4eb4a322a2aa9a94117d388a6ab4ff7c309e0",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T15:12:21Z",
+        "updated_at": "2026-10-30T15:12:21Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 16,
+        "additions": 1402,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/398",
+        "display_title": "[DRAFT] BBP prime stroboscope: p-adic frame reset, pole involution and real-circle CRT firewall"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41078534253,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 450,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534253/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534253/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41078534381,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4390,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534381/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534381/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 41078534554,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 762,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534554/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534554/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41078534284,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 639,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534284/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534284/logs",
+            "workflow_id": 386978686
+          }
+        ]
+      }
+    },
+    {
+      "pr": 399,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/399",
+        "number": 399,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "This child of #398 addresses the missing bridge from prime-primary arithmetic to the selected full CRT phase. It proves sharp denominator growth for the unchanged four-pole, zero-seed BBP trajectory:\n`log den(U_n) = log den(U_(n+1)-U_n) = 6n+o(n)`.\nFor every fixed integer polynomial P, `P(16)!=0` retains that rate, while `P(16)=0` leaves at most polynomial denominator growth.\n\nThe package also derives all-class prime-power transport, authentic even-depth returns, the corrected modulo-p-squared lift, and every odd-prime conductor birth. Exact controls preserve p19/p73 cancellations and refute the naive lift, a proposed full-versus-primary sum bound, and small cofiber variation. A published BBP null relation identifies the reflected source and supplies a zero-seed coherent adversary with every odd conductor depth.\n\nStoneham 3/5 calibration, the conductor-2 adversary, exact-grid and bounded-posterior obstructions, finite real-circle interval certificates, independent implementations, source manifests, failed receipts, and a six-front proof-route ledger are included. All changes are additions under `research/2026-10-30/arithmetic_barrier/`; no historical source or theorem contract changes.\n\n**Authority and remaining obligation:** these are local paper proofs plus exact/interval finite checks, with complementary model-family review. No new Lean result or scholarly-priority claim. The source-selected signed lag-one CRT interaction SC-06 was attacked but remains open. No unbounded selected cancellation, pi normality, or RH proof is claimed.\n\n**Validation**\n- Full repository suite: **10,008 tests passed**.\n- New focused suites: **53 tests passed**; parent focused suite: **15 passed**.\n- Provenance, foundations, ordinal and math-graph checks passed.\n- Exact arithmetic oracles, source mutation/seed controls, rigorous finite-circle certificates, independent high-precision comparison, and final source/artifact validation passed.\n- Requested math-catalog check fails with the same stale catalog on the untouched parent; both raw failures are retained.\n- Exact head: `fe9da9b0942f046cc67b02c4fed825ef74aa675a`. At 2026-10-30 16:17 UTC, the [Institute contracts/core Lean workflow](https://github.com/femboy2112/SUCC/actions/runs/41088348189) passed; [full validation](https://github.com/femboy2112/SUCC/actions/runs/41088348258), [collective observer](https://github.com/femboy2112/SUCC/actions/runs/41088348514), and [One Object II](https://github.com/femboy2112/SUCC/actions/runs/41088348518) remained in progress. Existing core Lean success does not formalize the new paper proofs. Hosted full-suite success is not yet claimed.\n\nStart with [README](https://github.com/femboy2112/SUCC/blob/fe9da9b0942f046cc67b02c4fed825ef74aa675a/research/2026-10-30/arithmetic_barrier/README.md), [sharp proof](https://github.com/femboy2112/SUCC/blob/fe9da9b0942f046cc67b02c4fed825ef74aa675a/research/2026-10-30/arithmetic_barrier/SHARP_CONDUCTOR_GROWTH.md), [claim ledger](https://github.com/femboy2112/SUCC/blob/fe9da9b0942f046cc67b02c4fed825ef74aa675a/research/2026-10-30/arithmetic_barrier/CLAIMS.md), [route ledger](https://github.com/femboy2112/SUCC/blob/fe9da9b0942f046cc67b02c4fed825ef74aa675a/research/2026-10-30/arithmetic_barrier/PROOF_ROUTE_LEDGER.md), and [validation](https://github.com/femboy2112/SUCC/blob/fe9da9b0942f046cc67b02c4fed825ef74aa675a/research/2026-10-30/arithmetic_barrier/VALIDATION.md).\n",
+        "title": "[DRAFT] Sharp BBP conductor growth, prime-power transport, and signed CRT barriers",
+        "base": "research/bbp-prime-stroboscopic-crt-2026-10-30",
+        "base_sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+        "head": "research/bbp-arithmetic-barrier-2026-10-30",
+        "head_sha": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "7944dce54ab4806972de8fa932feef0a87b3ac4f",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T16:16:14Z",
+        "updated_at": "2026-10-30T16:17:45Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 99,
+        "additions": 14179,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/399",
+        "display_title": "[DRAFT] Sharp BBP conductor growth, prime-power transport, and signed CRT barriers"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41088348258,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4402,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348258/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348258/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 41088348514,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 645,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348514/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348514/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41088348189,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 456,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348189/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348189/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41088348518,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 768,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348518/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348518/logs",
+            "workflow_id": 385135609
+          }
+        ]
+      }
+    },
+    {
+      "pr": 400,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/400",
+        "number": 400,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Gamma–Prime–Real Holonomy — draft research, not a normality claim\n\n**Exact parent:** Codex [PR #399](https://github.com/femboy2112/SUCC/pull/399) head `fe9da9b0942f046cc67b02c4fed825ef74aa675a`, ultimately descending from prime-stroboscope #398 and Main XVI. New branch head `2b0628f52e9d88993c2e3ffa30b9748adfb781f0`; **13 additive files** exclusively under `research/2026-10-30/gamma_all_places/`. No changes to original BBP poles, U0=0, production code, archives, Lean contracts, provenance, CI/workflows or main. **π base-16 normality and RH remain OPEN.**\n\n### Strong mathematical results and precise authority\n\n1. **GPR-01 (PROVED LOCAL): all-prime, including p=2, source-affine Morita Gamma cocycle.** The locally rational p-unit ratio built from `Gamma_p(8t+delta+1)/Gamma_p(8t+delta)` has logarithmic derivative exactly equal to the p-unit part of the authentic rational four-pole forcing. This **does not identify** it with the older fractional-shift p-adic Gamma function, which is not defined at p=2 in the same coordinates.\n2. **GPR-02 (PROVED LOCAL):** For integer four-pole coefficients (A,B,C,D) the source is 2-integral for every n iff `B+2D = 0 mod 4`. The authentic p2 omitted defect is `-(3n-1)/((2n-1)(4n-1))` and is 2-integral.\n3. **GPR-03 (PROVED LOCAL / SHARP HOSTILE CONTROL):** For every k>=1 the positive, rank-two, four-age-matched coefficient mutant `c_t=(4,-2,-1,-1)+t(1,-3,1,1)` with `t=2^(k+2)` has exact valuation `v2(r_t(n)-r(n))=v2(U_t(n)-U(n))=k` for **all n>=1**. So arbitrary fixed 2-adic precision cannot identify the source, even over all time. Its genuine p=13 first-birth residue differs, and its source second jet differs. This is not a nonnormality counterexample.\n4. **GPR-04 (PROVED LOCAL):** Exact total positive Green-tail budget `sum_n T_n=(S_R-pi)/15` where `S_R=-(1/8)sum_delta c_delta psi(delta/8)`. Consequently all-N *authentic* selected-to-pure-radix complex character sum discrepancy is `<=2pi|h|(S_R-pi)/15≈0.1023970567123|h|`. This makes a pre-existing SUCC O_h(1) comparison's constant explicit; **no Weyl saving** follows.\n5. **GPR-05 (CLASSICAL Gross–Koblitz input):** Choose `f=ord_8(p)` and `q=p^f` for every odd p. The separately defined weighted Gauss product has exact valuations by p mod8 `(-15/8,-5/2,-5/4,0)`. **There is no proved identification with the actual changing BBP complementary real phase.** Full units and selected phase remain dark.\n6. **GPR-06 OPEN:** original-zero-seed source-specific signed cofiber correlation, e.g. Codex SC-06.\n\n### Execution\n\n- `python -m unittest -v test_gamma_all_places.py` **18/18 focused tests PASS**.\n- An **independently implemented** SymPy rational/factorization and 80-digit positive-integral oracle PASS (raw JSON retained). Distinct implementation, shared source and model family; not blind peer review.\n- `compileall` pass. Exact Git blob SHA1 verified for **13/13 posted files** against locally executed source bytes, with SHA256 manifest and initial harness-failure notes.\n- **NOT RUN / NOT CLAIMED:** full SUCC root 10k+ suite on this child, AGENTS provenance/observer/ordinal gates, new Lean checks, hosted exact-head CI, external referee. The parent #399 math catalog has an explicitly retained baseline stale-catalog check.\n\n### Handoff / research fronts\n\n[Read complete paper](https://github.com/femboy2112/SUCC/blob/2b0628f52e9d88993c2e3ffa30b9748adfb781f0/research/2026-10-30/gamma_all_places/RESEARCH.md) · [Scoped claims](https://github.com/femboy2112/SUCC/blob/2b0628f52e9d88993c2e3ffa30b9748adfb781f0/research/2026-10-30/gamma_all_places/CLAIMS.md) · [Tests](https://github.com/femboy2112/SUCC/blob/2b0628f52e9d88993c2e3ffa30b9748adfb781f0/research/2026-10-30/gamma_all_places/test_gamma_all_places.py) · [Full Astra Ultra machine-gun execution prompt](https://github.com/femboy2112/SUCC/blob/2b0628f52e9d88993c2e3ffa30b9748adfb781f0/research/2026-10-30/gamma_all_places/CODEX_ASTRA_ULTRA_MEGA_ROUND.md).\n\nThe research north star remains an **actual** selected signed arithmetic interaction, not more Gamma or p-adic representations. **Draft only. No blind merge.**",
+        "title": "[DRAFT] Gamma–prime–real holonomy: p=2 affine cocycle, all-horizon mutants, exact phase budget",
+        "base": "research/bbp-arithmetic-barrier-2026-10-30",
+        "base_sha": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+        "head": "research/gamma-prime-real-holonomy-2026-10-30",
+        "head_sha": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "ce6f0a05baf5ec403c9f984faa26af221ceaccf2",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T16:59:32Z",
+        "updated_at": "2026-10-30T16:59:32Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 13,
+        "additions": 878,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/400",
+        "display_title": "[DRAFT] Gamma–prime–real holonomy: p=2 affine cocycle, all-horizon mutants, exact phase budget"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41094840450,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 653,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840450/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840450/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41094840607,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 464,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840607/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840607/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41094840748,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 776,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840748/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840748/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41094840816,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4419,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840816/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840816/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 401,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/401",
+        "number": 401,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "The complete Gamma/Gauss data in #400 still lacked a proved connection to the selected real BBP phase. This child executes the twelve-front Gamma Twist inventory and establishes exact source-identification limits, repairs, and a sharp source-only signed-energy obstruction. **No new unbounded zero-seed cancellation bound, π normality proof, or RH proof is claimed.**\n\nThe authentic four poles and U0=0 are unchanged. Exact parent: `2b0628f52e9d88993c2e3ffa30b9748adfb781f0`. Exact child: `abf51bf061f583d0e38a915c2e1bae5e28ddaace`. All 131 additions are under `research/2026-10-30/gamma_twist/`; no source, archive, historical contract, workflow or main edits.\n\n### Strongest proved results\n\n- **Exact complete-Gauss fiber:** with c=(4,-2,-1,-1), e=(1,-3,1,1), one complete algebraic order-eight product at p17 has coefficient fiber exactly c+2Ze. These vectors share every odd-prime complete product, including units. Adding every-time modulo-2^k source/orbit data leaves c+2^(k+2)Ze. The exact original involution condition A+4C=0 uniquely removes the ambiguity. Source authentication still supplies no selected signed estimate.\n- **Sharp signed-energy barrier:** for fixed nonzero h and A,L→∞ with L≤CA, the infimum over real seeds of mean lag-one energy is asymptotic to pi²h²/(512L) times the sum of n^-6 over the window. The coherent same-forcing seed -pi/16 attains it. A finite global-minimum theorem proves the required unwrapping and quadratic-projection enclosure. Thus a source-only bound has p^-6 scale on prime windows; SC-06 needs a positive constant for the zero seed.\n- **Exact identification precision:** four source samples characterize all-time 2-adic congruence; Smith exponents (0,2,6,11) yield a sharp nine-bit coefficient loss and a height-based repair. Higher derivatives, affine Morita unit factors and eventual residue cycles retain fixed-precision mutants.\n- **Actual conductor obstructions:** selected complementary roots escape the declared single-prime Gauss fields; authentic prime-square births escape every finite compositum of ordinary prime-additive Gauss fields. Galois/Ramanujan cancellation does not control the selected embedding. The original generating series, even with a fixed rational-in-time multiplier, cannot be a rational diagonal.\n- **Original triangle extension:** authentic second finite golden coefficient 6031/80−12139211 sqrt(5)/360000, corresponding Oily correction, and exact cubic/quartic mutant distinctions. Positive unit-phase averaging and periodic Gamma gauges have explicit obstruction/repair theorems.\n\n### Executed signed attacks and controls\n\n36 fresh eligible SC-06 cases pass the trial threshold, with minimum certified lower endpoint >0.9456199934. All 18 actual-weight Fourier-completion absolute bounds are vacuous. Exact minimax searches exclude all 413 declared small approximate grids. These finite results do not prove SC-06.\n\nComplete Gauss/GK computations, separate cyclotomic and rational oracles, exact cofiber history, prime disappearances, source/seed aliases, coherent/null controls, Stoneham 3/5/2 and other typed normal/nonnormal controls are retained. The initial conductor-2 calibration failure and a serialization failure remain alongside their corrections.\n\n### Validation and authority\n\n- Full repository suite: **10,008 tests passed**.\n- New focused suites: **57 passed**; inherited focused suites: **51 passed**.\n- Provenance, foundations, ordinal, math graph, separate oracles and final artifact/source audit passed.\n- Math-catalog check fails identically on the untouched exact parent; both receipts preserved.\n- 123 inherited manifest files verified unchanged; related PR390–400 heads and ancestry refreshed. Parent400 now has four successful workflows.\n- New theorems are local paper proofs with complementary shared-model review, not Lean or external peer review. Independent implementations do not erase shared provenance. Classical GK normalization is explicit; power comparisons do not independently choose its root.\n- Own exact-head hosted CI at 2026-10-30 17:29:35 UTC: [full validation](https://github.com/femboy2112/SUCC/actions/runs/41099230183), [collective observer](https://github.com/femboy2112/SUCC/actions/runs/41099230172), and [One Object II](https://github.com/femboy2112/SUCC/actions/runs/41099230316) are in progress; [Institute contracts/core Lean](https://github.com/femboy2112/SUCC/actions/runs/41099230193) is queued. No child hosted success is claimed. Parent CI is not child CI.\n\n[README](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/README.md) · [claims](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/CLAIMS.md) · [Gauss proof](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/gauss/GAUSS_UNIT_BLINDNESS.md) · [signed proof](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/signed/SHARP_SEED_ENERGY.md) · [twelve-front ledger](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/PROOF_ROUTE_LEDGER.md) · [validation/receipts](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/VALIDATION.md) · [remaining signed obligation](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/CURRENT_OBSTRUCTION.md) · [next handoff](https://github.com/femboy2112/SUCC/blob/abf51bf061f583d0e38a915c2e1bae5e28ddaace/research/2026-10-30/gamma_twist/NEXT_HANDOFF.md)\n\nPrior-art correction is additive: the exact Green budget and authentic two-adic zero/isometry were already present in October27 dossiers; the first golden correction is inherited. The author's Harmonic/Golden/Euler–Mascheroni triangle and Oily–Macaroni provenance remain intact. Draft research only; no merge requested.\n",
+        "title": "[DRAFT] Complete Gauss coefficient fiber and sharp BBP seed-energy barrier",
+        "base": "research/gamma-prime-real-holonomy-2026-10-30",
+        "base_sha": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+        "head": "research/gamma-twist-selected-phase-2026-10-30",
+        "head_sha": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "651a1a95306f84ab106417e6104aa9c6ca678df0",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T17:29:08Z",
+        "updated_at": "2026-10-30T17:29:36Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 131,
+        "additions": 37148,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/401",
+        "display_title": "[DRAFT] Complete Gauss coefficient fiber and sharp BBP seed-energy barrier"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41099230316,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 779,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230316/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230316/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41099230193,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 467,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230193/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230193/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41099230172,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 656,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230172/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230172/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41099230183,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4441,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230183/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230183/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 402,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/402",
+        "number": 402,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Third Dimension — authentic three-atom channels, Fisher H3, radial contact and 3+1 waves\n\n**DRAFT RESEARCH ONLY.** Exactly stacked on PR #397 head 992b3f9d77f1016300f1daf7db3c88da7392269b, rooted in Main XVI. Six additive files under research/2026-10-30/three_channel_spatial_h3/. The original four signed BBP poles, selected U_0=0, archives, historical proofs, workflows, production, main, and parent PR #397 are untouched. Do NOT merge blindly. Pi base-16/base-3 normality and RH OPEN.\n\n### Principal results\n\n1. **Honest third-direction rank:** With three independently controllable shared Gamma(2)-Poisson observation intensities, the 3-parameter Fisher metric is a positive-octant sector of H3 with sectional curvature **-1/8**, scalar curvature **-3/4**, and exact ambient Minkowski hyperboloid T²-X1²-X2²-X3²=8. A **fixed total clock** Θ=1 collapses the geometry to an S2 octant of positive curvature **+1/8**: no third independent direction. Free total-contact intensity opens the radial coordinate.\n2. **Three ORIGINAL positive BBP source atoms:** Q(x)=2(1-e^(-3x))+(1-e^(-4x))+(1-e^(-5x)); their exact rational marked weights have boundary proportions **6:4:5**. Original weighted moments **15,59,243** generate a new source-angular variance **164/225** and Fisher squared speed **328Θ/(225a⁴)+O(a^-5)**. At native a_n=8n-7 and Θ=1, successive angular Fisher steps equal **sqrt(82)/(60n²)+O(n^-3)**, summable. Atoms are a chosen source-mark extension, NOT independent physical spatial coordinates.\n3. **Operational rank qualification:** Source-marked detector gains g3,g4,g5 and total intensity Θ give a full-rank three-control chart with exact Jacobian det θ3θ4θ5>0 **only when those three interventions are independently available**. Fixed Θ has rank 2; a fixed source ray can be rank 1. This is a candidate observer instrument, not an observed physical one.\n4. **Exact native three-time posterior:** Original finite shared-X three-panel joint grades have positive rational coefficients and multivariate hypergeometric splits conditional on total S. Gamma limit H(z1,z2,z3)=(4-z1-z2-z3)^(-2). Three-way cumulant tends to 4, with original-minus-Gamma fake defect **-59/(20n)+O(n^-2)**; three-variable PGF difference **59C/[120n(1+C)^3]** for C=sum_i(1-z_i). Original selected U0=0 carries at n=3/4 distinguish all three total-grade-1 intermediate histories.\n5. **Static Fourier NO-GO:** the triple-grade kernel has no zeros on the unit 3-torus. Three-panel endpoint filters change ANY bounded Cesaro mean by <=12/N+(126/N)sum_(n=L)^(L+N-1)(1/n), L>=3, with exact source total-variation <=min(1,63/n). This cannot imply actual selected pi Weyl cancellation.\n6. **Conditional 3+1 spacetime and waves:** adding an independent temporal coordinate tau and spatial H3 produces a Milne flat Minkowski null control with A=tau/sqrt(8). A DECLARED cubic lattice hyperbolic field has 3D Fourier waves, stable nonzero modes at 0<c²<1/3; two distinct TT plus/cross tensor slots exist in 3 spatial dimensions. An assumed source-relative local bond produces a finite pulse propagating along x,y,z. NOT an Einstein-equation, gravitational-wave, physical acceleration or source-native action theorem.\n\n### Validation and claim boundary\n\n**17/17 locally executed exact stdlib tests PASS**, with committed remote source Git SHA **de8c143339f030b1d5ee287de787c83c3c2519d7** equal to executed bytes. Separately authored SymPy plus direct 58-dps original-source mpmath quadrature PASS; remote source Git SHA **d296a0f6ab7ad06a6c3e9690fbdfedbe9531a7b2** equal to executed bytes. Early too-strict finite-a numerical test and an oracle floating-precision defect were repaired and disclosed. Full root SUCC suite, provenance, hosted current-head CI, Lean and external peer review **NOT RUN**. No inference to pi normality, RH or physical GR.\n\n### Review links\n- [Mathematical dossier](https://github.com/femboy2112/SUCC/blob/research/three-channel-native-h3-wave-2026-10-30/research/2026-10-30/three_channel_spatial_h3/THREE_DIMENSION_THEOREMS.md)\n- [Scoped claims](https://github.com/femboy2112/SUCC/blob/research/three-channel-native-h3-wave-2026-10-30/research/2026-10-30/three_channel_spatial_h3/CLAIMS.md)\n- [Exact tested source](https://github.com/femboy2112/SUCC/blob/research/three-channel-native-h3-wave-2026-10-30/research/2026-10-30/three_channel_spatial_h3/third_dimension_probe.py)\n- [Independent oracle](https://github.com/femboy2112/SUCC/blob/research/three-channel-native-h3-wave-2026-10-30/research/2026-10-30/three_channel_spatial_h3/third_dimension_independent_oracle.py)\n- [Validation and repaired failures](https://github.com/femboy2112/SUCC/blob/research/three-channel-native-h3-wave-2026-10-30/research/2026-10-30/three_channel_spatial_h3/VALIDATION.md)\n- [Next execution proof gates](https://github.com/femboy2112/SUCC/blob/research/three-channel-native-h3-wave-2026-10-30/research/2026-10-30/three_channel_spatial_h3/NEXT.md)\n\n**Next verdict:** prove actual independently controllable source-marked observer contact and source-selected zero-seed-sensitive signed intertime carry/phase holonomy beyond a gauge/endpoint filter, while recovering 3+1 stress-energy and TT constraints from an independently constrained action. Include coherent -pi/16 seed, Gamma and high-jet fakes, prior resets, fixed-budget rank controls, Stoneham normality calibrators and nonnormal de Bruijn controls.",
+        "title": "[DRAFT] Third spatial interaction axis: original BBP three-atom H3, 164 angular jet, 3+1 wave firewall",
+        "base": "research/fibonacci-epicycle-demon-normality-2026-10-30",
+        "base_sha": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+        "head": "research/three-channel-native-h3-wave-2026-10-30",
+        "head_sha": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "0fea429fb348781744434ea45f5ed0ea17e71ebd",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T17:36:01Z",
+        "updated_at": "2026-10-30T17:36:01Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 24,
+        "changed_files": 6,
+        "additions": 794,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/402",
+        "display_title": "[DRAFT] Third spatial interaction axis: original BBP three-atom H3, 164 angular jet, 3+1 wave firewall"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41100210404,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 468,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210404/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210404/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41100210823,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 780,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210823/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210823/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41100210406,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 657,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210406/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210406/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 41100210453,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4451,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210453/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210453/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 403,
+      "info": {
+        "url": "https://github.com/femboy2112/SUCC/pull/403",
+        "number": 403,
+        "state": "open",
+        "merged": false,
+        "mergeable": true,
+        "draft": true,
+        "body": "## Operation Selected Boundary — Diophantine phase slips and logarithmic signed saving\n\n**Research only, draft child of #401** at verified parent `abf51bf061f583d0e38a915c2e1bae5e28ddaace`. Additive 12-file commit `5f350af7808532e55d74e80c948c02bb385c6e70`. Original four signed BBP poles, U_0=0, source contracts, production, Lean, workflows and `main` untouched.\n\n### New-to-SUCC theorem (PROVED LOCAL, with published Diophantine input)\nThe exact source-positive Green tail obeys, for all n>=1,\n```\n0 < D_n=T_n-T_(n+1) <= 16/(8n+1)^3.\n```\nFor any fixed nonzero integer h, combine this with the **published** Zeilberger–Zudilin upper bound on the irrationality exponent of pi (<=7.103205334137...) and an exact no-integer-wrap argument for multiplication by 16. Then for every sufficiently large integer A:\n```\nmax_(A<=n<8A) [1-Re e(h(U_(n+1)-U_n))] >= 1-cos(pi/10).\n```\nSumming over disjoint geometric windows gives\n```\nsum_(n<N) E_n(h,0) >= [1-cos(pi/10)]/log(8) * log N - O_h(1).\n|sum_(n=1)^N e(hU_n(0))| <= N - [1-cos(pi/10)]/(4log(8)) * log N + O_h(1).\n```\nThis is a **nontrivial unbounded absolute saving over the trivial N bound**, but is much weaker than o(N), and does **not** prove pi normality or SC-06. The Diophantine threshold is non-effective; the source-error threshold is explicit.\n\n### Hostile/positive controls\n- The coherent same-forcing nonzero seed s=-pi/16 has **summable** lag energy.\n- Fixed rational seed translations inherit the same finite irrationality exponent and hence the logarithmic lower bound; this is not an exclusive zero-seed classifier.\n- Sparse Liouville-type digit expansions refute replacing finite irrationality exponent with mere irrationality at the same window scale.\n- For any base-16 normal beta, the corresponding forced process has average lag energy 1; pi's value is still unknown.\n- The theorem does not cover every SC-06 prime window: its length is at most about twice its starting time, whereas the published Diophantine control guarantees a slip only over seven times that start.\n\n### Executed validation\n- **12/12** exact Fraction regression tests passed.\n- Independent direct-prefix Fraction + rational Machin-pi oracle verified **9** source/Green points and **15** finite h/A window controls.\n- Initial mistaken 15-digit pi decimal endpoint preserved in `initial_oracle_failure.log`; fixed rational bracketing passed.\n- All **12 Git blob SHA-1 values verified byte-identical** to the locally tested files, with SHA256 manifest.\n- **Not claimed:** new Lean proof, complete SUCC root validation or hosted exact-head CI until separately reported, independent external referee, scholarly priority or pi normality.\n\nStart with [THEOREMS.md](https://github.com/femboy2112/SUCC/blob/research/selected-zero-boundary-diophantine-slip-2026-10-30/research/2026-10-30/selected_boundary_slip/THEOREMS.md), [CLAIMS.md](https://github.com/femboy2112/SUCC/blob/research/selected-zero-boundary-diophantine-slip-2026-10-30/research/2026-10-30/selected_boundary_slip/CLAIMS.md), [validation](https://github.com/femboy2112/SUCC/blob/research/selected-zero-boundary-diophantine-slip-2026-10-30/research/2026-10-30/selected_boundary_slip/VALIDATION.md), and [ASTRA ULTRA FANOUT](https://github.com/femboy2112/SUCC/blob/research/selected-zero-boundary-diophantine-slip-2026-10-30/research/2026-10-30/selected_boundary_slip/ASTRA_ULTRA_FANOUT.md).\n\n**Main unsolved target:** prove source-and-zero-boundary-selected **positive-density** lag-energy/CRT cofiber cancellation, preferably on SC-06 prime windows and then enough time/frequency coverage to yield Weyl o(N). Do not mistake the logarithmic bound for normality.\n\nNo merge, source rewrite, release or publication requested.",
+        "title": "[DRAFT] Selected BBP zero boundary: Diophantine phase slips and logarithmic signed saving",
+        "base": "research/gamma-twist-selected-phase-2026-10-30",
+        "base_sha": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+        "head": "research/selected-zero-boundary-diophantine-slip-2026-10-30",
+        "head_sha": "5f350af7808532e55d74e80c948c02bb385c6e70",
+        "head_repo_id": 1413783047,
+        "head_repo_full_name": "femboy2112/SUCC",
+        "merge_commit_sha": "4bc66caf8f640eabb8fe54b3a933b7292747eb3e",
+        "user": {
+          "login": "femboy2112",
+          "name": "femboy2112",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/136249657?v=4",
+          "id": 136249657
+        },
+        "requested_reviewers": null,
+        "requested_team_reviewers": null,
+        "diff": null,
+        "comments": null,
+        "created_at": "2026-10-30T19:39:45Z",
+        "updated_at": "2026-10-30T19:39:45Z",
+        "closed_at": null,
+        "merged_at": null,
+        "commits": 1,
+        "changed_files": 12,
+        "additions": 694,
+        "deletions": 0,
+        "display_url": "https://github.com/femboy2112/SUCC/pull/403",
+        "display_title": "[DRAFT] Selected BBP zero boundary: Diophantine phase slips and logarithmic signed saving"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 41117070086,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 4454,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070086/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070086/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 41117070361,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 469,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070361/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070361/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 41117070214,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 781,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070214/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070214/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 41117070313,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 658,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070313/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070313/logs",
+            "workflow_id": 386978686
+          }
+        ]
+      }
+    }
+  ]
+}

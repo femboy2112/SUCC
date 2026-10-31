@@ -1,0 +1,140 @@
+{
+  "status": "CERTIFIED FINITE ONLY",
+  "bits": 128,
+  "candidate": "each declared squared mean modulus <1/4",
+  "rows": [
+    {
+      "p": 1201,
+      "birth": 151,
+      "length": 75,
+      "h": 11,
+      "squared_modulus_lower": "0.003247349950",
+      "squared_modulus_upper": "0.003247349951",
+      "dyadic_lower": "1105015927537074711881605590259206107",
+      "dyadic_upper": "1105015927537074711881605590259207676",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1201,
+      "birth": 151,
+      "length": 75,
+      "h": 13,
+      "squared_modulus_lower": "0.023310266794",
+      "squared_modulus_upper": "0.023310266795",
+      "dyadic_lower": "7932072758542219608208053589619284941",
+      "dyadic_upper": "7932072758542219608208053589619290656",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1213,
+      "birth": 152,
+      "length": 303,
+      "h": 11,
+      "squared_modulus_lower": "0.004984404892",
+      "squared_modulus_upper": "0.004984404893",
+      "dyadic_lower": "1696105094368405235949887396822066870",
+      "dyadic_upper": "1696105094368405235949887396822068270",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1213,
+      "birth": 152,
+      "length": 303,
+      "h": 13,
+      "squared_modulus_lower": "0.003198428823",
+      "squared_modulus_upper": "0.003198428824",
+      "dyadic_lower": "1088368930629562196974750709778379016",
+      "dyadic_upper": "1088368930629562196974750709778380748",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1229,
+      "birth": 154,
+      "length": 307,
+      "h": 11,
+      "squared_modulus_lower": "0.005233575562",
+      "squared_modulus_upper": "0.005233575563",
+      "dyadic_lower": "1780893479860641313721014203489302767",
+      "dyadic_upper": "1780893479860641313721014203489304209",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1229,
+      "birth": 154,
+      "length": 307,
+      "h": 13,
+      "squared_modulus_lower": "0.003537177312",
+      "squared_modulus_upper": "0.003537177313",
+      "dyadic_lower": "1203639068157695913468189361624156263",
+      "dyadic_upper": "1203639068157695913468189361624158174",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1237,
+      "birth": 155,
+      "length": 309,
+      "h": 11,
+      "squared_modulus_lower": "0.005520061152",
+      "squared_modulus_upper": "0.005520061153",
+      "dyadic_lower": "1878379474454216091861840312718464473",
+      "dyadic_upper": "1878379474454216091861840312718465843",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1237,
+      "birth": 155,
+      "length": 309,
+      "h": 13,
+      "squared_modulus_lower": "0.003596955023",
+      "squared_modulus_upper": "0.003596955024",
+      "dyadic_lower": "1223980369211682718048961632363737949",
+      "dyadic_upper": "1223980369211682718048961632363739869",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1249,
+      "birth": 157,
+      "length": 39,
+      "h": 11,
+      "squared_modulus_lower": "0.024455718830",
+      "squared_modulus_upper": "0.024455718831",
+      "dyadic_lower": "8321849888493577683983518364288467103",
+      "dyadic_upper": "8321849888493577683983518364288471012",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1249,
+      "birth": 157,
+      "length": 39,
+      "h": 13,
+      "squared_modulus_lower": "0.013865209890",
+      "squared_modulus_upper": "0.013865209891",
+      "dyadic_lower": "4718086439357037675386703031191212292",
+      "dyadic_upper": "4718086439357037675386703031191216544",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1277,
+      "birth": 160,
+      "length": 319,
+      "h": 11,
+      "squared_modulus_lower": "0.003901405976",
+      "squared_modulus_upper": "0.003901405977",
+      "dyadic_lower": "1327579659890981645035965070588579742",
+      "dyadic_upper": "1327579659890981645035965070588580909",
+      "verdict": "PASS FINITE"
+    },
+    {
+      "p": 1277,
+      "birth": 160,
+      "length": 319,
+      "h": 13,
+      "squared_modulus_lower": "0.003846447918",
+      "squared_modulus_upper": "0.003846447919",
+      "dyadic_lower": "1308878401865913712842047526062373920",
+      "dyadic_upper": "1308878401865913712842047526062375863",
+      "verdict": "PASS FINITE"
+    }
+  ],
+  "asymptotic_selected_bound": "DARK; no window-coverage theorem supplied"
+}

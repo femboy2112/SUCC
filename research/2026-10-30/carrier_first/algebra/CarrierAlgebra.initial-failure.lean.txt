@@ -1,0 +1,59 @@
+import Std
+
+/-! Standalone Lean 4.14: finite recursive Pascal normalization, universal
+integer polarization (doubled to avoid hidden division hypotheses), and
+noncommutative update-order defects. Analytic claims are not formalized. -/
+namespace CarrierFirst
+
+def pascal : Nat → Nat → Nat
+  | 0, 0 => 1
+  | 0, _ + 1 => 0
+  | _ + 1, 0 => 1
+  | n + 1, k + 1 => pascal n k + pascal n (k + 1)
+
+theorem pascal_step (n k : Nat) :
+    pascal (n + 1) (k + 1) = pascal n k + pascal n (k + 1) := rfl
+
+theorem pascal_normalization (n : Nat) : pascal n 0 = 1 := by
+  cases n <;> rfl
+
+def gradeTwoTwice (a : Int) : Int := a * (a - 1)
+
+theorem polarization (a b : Int) :
+    gradeTwoTwice (a+b) - gradeTwoTwice a - gradeTwoTwice b = 2*a*b := by
+  simp only [gradeTwoTwice, Int.mul_sub, Int.add_mul, Int.mul_add, Int.mul_one]
+  rw [Int.mul_comm b a]
+  omega
+
+theorem polarization_integer_recovery (a b c : Int)
+    (certificate : gradeTwoTwice (a+b) - gradeTwoTwice a - gradeTwoTwice b = 2*c) :
+    c = a*b := by
+  rw [polarization] at certificate
+  omega
+
+def affine (b r x : Int) : Int := b*x+r
+
+theorem affine_swap_defect (b r s x : Int) :
+    affine b s (affine b r x) - affine b r (affine b s x) = (b-1)*(r-s) := by
+  simp only [affine, Int.mul_add, Int.sub_mul, Int.mul_sub, Int.one_mul]
+  omega
+
+def wordGrade : List Bool → Nat
+  | [] => 0
+  | b :: bs => (if b then 1 else 0) + wordGrade bs
+
+theorem wordGrade_append (a b : List Bool) : wordGrade (a ++ b) = wordGrade a + wordGrade b := by
+  induction a with
+  | nil => simp [wordGrade]
+  | cons bit rest ih => simp [wordGrade, ih, Nat.add_assoc]
+
+theorem history_concatenation_associative (a b c : List Bool) :
+    (a ++ b) ++ c = a ++ (b ++ c) := List.append_assoc a b c
+
+#print axioms polarization
+#print axioms polarization_integer_recovery
+#print axioms affine_swap_defect
+#print axioms wordGrade_append
+#print axioms history_concatenation_associative
+
+end CarrierFirst

@@ -1,0 +1,308 @@
+{
+  "status": "PASS_FINITE_EXACT",
+  "filter_cases": 28,
+  "retained_prime_checks": 4055,
+  "rows": [
+    {
+      "coefficients": [
+        1
+      ],
+      "n": 103,
+      "P_at_16": 1,
+      "denominator_bits": 870,
+      "retained_prime_checks": 99
+    },
+    {
+      "coefficients": [
+        1
+      ],
+      "n": 173,
+      "P_at_16": 1,
+      "denominator_bits": 1505,
+      "retained_prime_checks": 158
+    },
+    {
+      "coefficients": [
+        1
+      ],
+      "n": 281,
+      "P_at_16": 1,
+      "denominator_bits": 2408,
+      "retained_prime_checks": 235
+    },
+    {
+      "coefficients": [
+        1
+      ],
+      "n": 419,
+      "P_at_16": 1,
+      "denominator_bits": 3636,
+      "retained_prime_checks": 335
+    },
+    {
+      "coefficients": [
+        -1,
+        1
+      ],
+      "n": 103,
+      "P_at_16": 15,
+      "denominator_bits": 876,
+      "retained_prime_checks": 98
+    },
+    {
+      "coefficients": [
+        -1,
+        1
+      ],
+      "n": 173,
+      "P_at_16": 15,
+      "denominator_bits": 1501,
+      "retained_prime_checks": 154
+    },
+    {
+      "coefficients": [
+        -1,
+        1
+      ],
+      "n": 281,
+      "P_at_16": 15,
+      "denominator_bits": 2404,
+      "retained_prime_checks": 232
+    },
+    {
+      "coefficients": [
+        -1,
+        1
+      ],
+      "n": 419,
+      "P_at_16": 15,
+      "denominator_bits": 3632,
+      "retained_prime_checks": 332
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        1
+      ],
+      "n": 103,
+      "P_at_16": 225,
+      "denominator_bits": 881,
+      "retained_prime_checks": 98
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        1
+      ],
+      "n": 173,
+      "P_at_16": 225,
+      "denominator_bits": 1497,
+      "retained_prime_checks": 150
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        1
+      ],
+      "n": 281,
+      "P_at_16": 225,
+      "denominator_bits": 2400,
+      "retained_prime_checks": 231
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        1
+      ],
+      "n": 419,
+      "P_at_16": 225,
+      "denominator_bits": 3640,
+      "retained_prime_checks": 331
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "n": 103,
+      "P_at_16": 4095,
+      "denominator_bits": 885,
+      "retained_prime_checks": 96
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "n": 173,
+      "P_at_16": 4095,
+      "denominator_bits": 1493,
+      "retained_prime_checks": 148
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "n": 281,
+      "P_at_16": 4095,
+      "denominator_bits": 2406,
+      "retained_prime_checks": 229
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "n": 419,
+      "P_at_16": 4095,
+      "denominator_bits": 3647,
+      "retained_prime_checks": 328
+    },
+    {
+      "coefficients": [
+        -16,
+        1
+      ],
+      "n": 103,
+      "P_at_16": 0,
+      "denominator_bits": 32,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        -16,
+        1
+      ],
+      "n": 173,
+      "P_at_16": 0,
+      "denominator_bits": 35,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        -16,
+        1
+      ],
+      "n": 281,
+      "P_at_16": 0,
+      "denominator_bits": 42,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        -16,
+        1
+      ],
+      "n": 419,
+      "P_at_16": 0,
+      "denominator_bits": 44,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        256,
+        -32,
+        1
+      ],
+      "n": 103,
+      "P_at_16": 0,
+      "denominator_bits": 62,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        256,
+        -32,
+        1
+      ],
+      "n": 173,
+      "P_at_16": 0,
+      "denominator_bits": 70,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        256,
+        -32,
+        1
+      ],
+      "n": 281,
+      "P_at_16": 0,
+      "denominator_bits": 74,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        256,
+        -32,
+        1
+      ],
+      "n": 419,
+      "P_at_16": 0,
+      "denominator_bits": 85,
+      "retained_prime_checks": 0
+    },
+    {
+      "coefficients": [
+        7,
+        -3,
+        0,
+        2
+      ],
+      "n": 103,
+      "P_at_16": 8151,
+      "denominator_bits": 884,
+      "retained_prime_checks": 96
+    },
+    {
+      "coefficients": [
+        7,
+        -3,
+        0,
+        2
+      ],
+      "n": 173,
+      "P_at_16": 8151,
+      "denominator_bits": 1492,
+      "retained_prime_checks": 148
+    },
+    {
+      "coefficients": [
+        7,
+        -3,
+        0,
+        2
+      ],
+      "n": 281,
+      "P_at_16": 8151,
+      "denominator_bits": 2406,
+      "retained_prime_checks": 229
+    },
+    {
+      "coefficients": [
+        7,
+        -3,
+        0,
+        2
+      ],
+      "n": 419,
+      "P_at_16": 8151,
+      "denominator_bits": 3646,
+      "retained_prime_checks": 328
+    }
+  ],
+  "asymptotic_rate_certified_by_this_run": false
+}

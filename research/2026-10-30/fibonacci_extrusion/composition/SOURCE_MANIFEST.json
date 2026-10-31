@@ -1,0 +1,175 @@
+{
+  "base_commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "source_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/constants/CONSTANTS_AND_COMPOSITION.md",
+      "sha256": "216d707e7d583c790a53f7e0f290c37fa72e06f0cb024040ab952b2f05d45ead",
+      "git_blob": "fad2d86aa27821b1e69a58ce6e4566237d4ac506"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/constants/composition.py",
+      "sha256": "ea608bb4239241016c37886fddd4f26bd38d01e277f73d79bc488290de097dd9",
+      "git_blob": "5bb4fbf8d22263f0c5ac5b0f8df7a7ee9c4f20fe"
+    },
+    {
+      "path": "research/2026-10-29/oily_triangle_sheet/PASCAL_GOLDEN_HARMONIC.md",
+      "sha256": "0ea240a466e5d2ab96b3220b370b4a6c98fcf209aa52e2506ca10936cf751efa",
+      "git_blob": "b4292d35d777382a1433287733d3403c61584ffe"
+    },
+    {
+      "path": "research/2026-10-29/recursive_carrier_triangle/ATOMIC_SOURCE_AND_INTERACTIONS.md",
+      "sha256": "4ea3b9d35ef1642c9ececf60e706af8c12cdbc9dba9bbb9d6fc6d8fb1807781a",
+      "git_blob": "3d946c186b07a14d352912a6b18bfef48c0e8027"
+    }
+  ],
+  "git_source_inputs": [
+    {
+      "path": "research/2026-10-30/fibonacci_epicycle_demon/RESEARCH.md",
+      "commit": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "sha256": "c5bb6df9f6675f0bc5b275d76d5fc19cf78b64a2b2f8f834fa57b72d432025ea",
+      "role": "read-only prior Fibonacci information-clock provenance, not merged"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "CLAIMS.md",
+      "sha256": "6e206d44e9ee818a71f4d3308cd1e8154e9981c711eb4daa900d56a4efc67f3f",
+      "bytes": 2895
+    },
+    {
+      "path": "FIBONACCI_COMPOSITION.md",
+      "sha256": "2cc698b15bcf1e0fe93811bb4c514664c9974c646ffe848c18dd297fa21c0f53",
+      "bytes": 13542
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "sha256": "cf065146560be241cc24e835f4f5cc8bcbb357731439f3181a2028efeccb568d",
+      "bytes": 3049
+    },
+    {
+      "path": "README.md",
+      "sha256": "0942c16d6262a65acd6e7200579cdf31f998ddd7cde7c1a070b810d00d4e4a1d",
+      "bytes": 853
+    },
+    {
+      "path": "ROOT_CLOCK_REVIEW.md",
+      "sha256": "113e99f1f40add5e9f55456135d61024d858a163f8a0b8e078e049fb3f56f2c4",
+      "bytes": 1549
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "114a0596050aa0227e4acc8ebb3e25673b3ffb260187aec62abd193743b1d3ed",
+      "bytes": 2806
+    },
+    {
+      "path": "clock_oracle.py",
+      "sha256": "b4138ec9b76453bc9728f2829bb0ac2d40980092154e7554084686141a515f0c",
+      "bytes": 1027
+    },
+    {
+      "path": "clock_oracle_receipt.json",
+      "sha256": "a029302f339f733db23e66899be6277ff64fcba1d104565bf9509bc71452ce1a",
+      "bytes": 2884
+    },
+    {
+      "path": "clock_probe.py",
+      "sha256": "3e43a55a49022da064f7e7f3a8cafe16bcf781759cc3992b132f0514438652a5",
+      "bytes": 718
+    },
+    {
+      "path": "clock_receipt.json",
+      "sha256": "73935697935ae67df706d240e695810e59cd139edc22c28d4b0afc1f074a66a6",
+      "bytes": 3256
+    },
+    {
+      "path": "exact_receipt.json",
+      "sha256": "1d7ffa5a01019c92ead6bbbd1e2e605cd70a959e8f4f20f9f8b41f1d05219207",
+      "bytes": 9816
+    },
+    {
+      "path": "fib_composition.py",
+      "sha256": "86ec5ea27ace6863febbbad73c02b2cd0d90ace5b4e254c43b261aac3e72e7a8",
+      "bytes": 4730
+    },
+    {
+      "path": "independent_oracle.py",
+      "sha256": "5eb0038b613aad65ff268581cdb5cf2a521cb732e079a86dcf6027acd46998af",
+      "bytes": 3294
+    },
+    {
+      "path": "oracle_receipt.json",
+      "sha256": "7218121a576bcc94f2d46570ecc4c248b23b4bc60822f3e8ffb201287078775e",
+      "bytes": 2987
+    },
+    {
+      "path": "receipts/COMMANDS.json",
+      "sha256": "501abfe88e81b4b28211d4d37d08b9b1efb69a5bf86021bf8a5066e94ab8f6c0",
+      "bytes": 2202
+    },
+    {
+      "path": "receipts/clock_oracle.log",
+      "sha256": "a029302f339f733db23e66899be6277ff64fcba1d104565bf9509bc71452ce1a",
+      "bytes": 2884
+    },
+    {
+      "path": "receipts/clock_probe.log",
+      "sha256": "73935697935ae67df706d240e695810e59cd139edc22c28d4b0afc1f074a66a6",
+      "bytes": 3256
+    },
+    {
+      "path": "receipts/exact_probe.log",
+      "sha256": "98ba6fca8fc30cd08024b3677ca0bb05f877b003ef6dbf52988d9bb704310db8",
+      "bytes": 10028
+    },
+    {
+      "path": "receipts/focused.log",
+      "sha256": "dce65b7642ae2b93539c6b40d2811b35bc6487436a84a0826c419d9977944b9f",
+      "bytes": 1392
+    },
+    {
+      "path": "receipts/focused_final.log",
+      "sha256": "0516150ad4ea0c68bdcdf36180f594520995a4da7c531ec1ef73a95908fb8af8",
+      "bytes": 1508
+    },
+    {
+      "path": "receipts/oracle.log",
+      "sha256": "7218121a576bcc94f2d46570ecc4c248b23b4bc60822f3e8ffb201287078775e",
+      "bytes": 2987
+    },
+    {
+      "path": "receipts/root_clock_review.log",
+      "sha256": "2a79c4da778b3e9a329bf4c04542040cd37bb64a73d433bd1da998439b2f95f2",
+      "bytes": 2376
+    },
+    {
+      "path": "root_clock_review.py",
+      "sha256": "0a4ae86d6c40922c3c93644dbb2b49e0372b85d92b5f84a3848d74587e0eddef",
+      "bytes": 2458
+    },
+    {
+      "path": "root_clock_review_receipt.json",
+      "sha256": "2a79c4da778b3e9a329bf4c04542040cd37bb64a73d433bd1da998439b2f95f2",
+      "bytes": 2376
+    },
+    {
+      "path": "run_probe.py",
+      "sha256": "986b0f21e79b505eff76a3ce2eb6f95559c4201dd07ab500968185a47a3ff572",
+      "bytes": 1624
+    },
+    {
+      "path": "test_fib_composition.py",
+      "sha256": "7fa21c4dc601d774c9f60520409cb79e4c36216177fc41e0b0668aac2d0dba61",
+      "bytes": 3872
+    },
+    {
+      "path": "validate_manifest.py",
+      "sha256": "1ab362770f5b8634fd127b2423a60981f714091a9efc075ae0fa7ed328df40d9",
+      "bytes": 1033
+    }
+  ]
+}
