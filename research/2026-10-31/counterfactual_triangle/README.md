@@ -11,3 +11,5 @@ Goal: assume π is not normal, deduce carrier-visible statistical defects, and t
 See [PROOF.md](PROOF.md), [CLAIMS.md](CLAIMS.md), [NEXT.md](NEXT.md), [VALIDATION.md](VALIDATION.md), the exact rational probe counterfactual_carrier.py, and the discoverable root regression tests/test_counterfactual_triangle_carrier.py.
 
 **Firewalls:** original BBP source, literal U0=0, frozen archives, formal/Lean, production modules, scripts, workflows, and canonical claim catalog unchanged. Cardinal triangular sensors are classical piecewise-linear functions, not Pascal combinatorics, physical curvature, or quantum effects.
+
+**Additional finite↔global result (CT-12):** a selected, signed triangular forcing charge exists as an absolutely convergent vector with rational N-term prefixes and explicit error <15q/(32N). This is a certified global *source forcing* object, not a proof about selected digit frequencies.
