@@ -67,7 +67,7 @@ For every nonnegative integer m,
 \[
 \boxed{\zeta(-m)=(-1)^m m!\,[t^m]K(t).}
 \]
-This follows from K(t)=t^{-1}\sum_{j>=0}B_j t^j/j! and ζ(-m)=-B_(m+1)/(m+1), including m=0 with B1=-1/2. At m=1 the coefficient is +1/12 and ζ(-1)=-1/12; at m=3 the coefficient is -1/720 and ζ(-3)=1/120.
+For m>=1 this follows from K(t)=t^{-1}\sum_{j>=0}B_j t^j/j!, ζ(-m)=-B_(m+1)/(m+1), vanishing B_(odd>=3), and the parity of m; for m=0 use the separate identity ζ(0)=-1/2=B1. The convention B1=-1/2 is essential. At m=1 the coefficient is +1/12 and ζ(-1)=-1/12; at m=3 the coefficient is -1/720 and ζ(-3)=1/120.
 
 **No unearned arrows:** e is a rational function of the specific point evaluation K(1); gamma and Basel require the entire kernel and different integrals. On a general family of positive kernels, a single point value cannot recover these integrals.
 
