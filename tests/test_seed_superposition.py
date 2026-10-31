@@ -270,4 +270,34 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
         for n in range(1,8):
             self.assertEqual((a[n]-z[n]).denominator,1)
 
+    def test_27_exact_source_truncation_symbolic_irrational_shadow(self):
+        from seed_superposition import (
+            rational_bbp_truncation,near_zero_nonnormal_seed_certificate)
+        for K in range(1,36):
+            q=rational_bbp_truncation(K)
+            self.assertEqual(q,states(K+1,0)[K]/16**K)
+            cert=near_zero_nonnormal_seed_certificate(K)
+            self.assertEqual(cert['rational_completed_target'],q)
+            self.assertEqual(cert['selected_seed'],0)
+            self.assertGreater(cert['seed_distance_upper'],0)
+            self.assertLess(cert['seed_distance_upper'],F(1,16**K))
+            self.assertLess(cert['prefix_complex_sum_error_coefficient_times_2pi_abs_h'],
+                            cert['uniform_prefix_error_coefficient_upper'])
+            self.assertEqual(cert['resonant_integer_harmonic'],q.denominator)
+
+    def test_28_same_source_near_zero_counterseeds_are_periodic_completed(self):
+        from seed_superposition import near_zero_nonnormal_seed_certificate
+        for K in (1,2,3,5,8,13,21):
+            z=near_zero_nonnormal_seed_certificate(K)
+            q=z['rational_completed_target'];h=z['resonant_integer_harmonic']
+            # Given the *symbolic irrational* s_K=q-pi/16, the completed
+            # character e(h*16^n q)=1 for every n, unconditionally.
+            self.assertEqual((h*q).denominator,1)
+            for n in range(0,2*K+5):
+                self.assertEqual((h*16**n*q).denominator,1)
+            # The user-visible source state is not claimed to be rational
+            # for this changed seed; the target q itself is exactly rational.
+            self.assertTrue(z['realized_nonnormality_proved_by_periodic_rational_target'])
+            self.assertLess(z['seed_distance_upper'],F(1,16**K*(8*K+1)**2))
+
 if __name__=='__main__':unittest.main()
