@@ -185,5 +185,54 @@ class MultiplaceBBPDifferenceTests(unittest.TestCase):
             self.assertEqual(valuation(c,3),-2*pole_depth_three(y))
 
 
+
+class SourceGammaAndPrimeLeakageTests(unittest.TestCase):
+    def test_18_exact_gamma_moment_upper_and_fixed_J_limit(self):
+        from multiplace_difference import (
+            source_gamma_moment_upper,source_moving_prefix_upper)
+        for y in range(1,80):
+            for j in range(0,13):
+                self.assertLess(source_moment_coefficient(y,j),
+                                source_gamma_moment_upper(y,j))
+        for J in (1,2,3,5,9):
+            for m in range(2,9):
+                h=6**m; y=1+h
+                prefix=sum(((8*h)**j*source_moment_coefficient(y,j)
+                    for j in range(1,J)),F(0))
+                self.assertLessEqual(prefix,source_moving_prefix_upper(m,J))
+            self.assertLess(source_moving_prefix_upper(9,J),
+                            source_moving_prefix_upper(8,J)+F(1,1000000))
+
+    def test_19_exact_polynomial_source_diff_and_exposed_prime_five(self):
+        from multiplace_difference import (
+            source_difference_polynomial,source_perpetual_five_exposure)
+        for h in range(1,100):
+            self.assertEqual(source_difference_polynomial(h),
+                             bbp_source(1)-bbp_source(1+h))
+        for m in range(2,11):
+            q=source_perpetual_five_exposure(m)
+            self.assertEqual(q["five_denominator_valuation"],1)
+            self.assertEqual(q["numerator_mod_five"],4)
+            self.assertEqual(q["value"],prime_exposure(m)["delta"])
+
+    def test_20_witness_real_series_prefix_does_not_exchange_limits(self):
+        from multiplace_difference import source_moving_prefix_upper
+        # For fixed J the real partial sum vanishes as m grows,
+        # while for each fixed m the complete sum approaches r(1)-r(1+6^m).
+        for J in (2,4,8):
+            bounds=[source_moving_prefix_upper(m,J) for m in range(2,10)]
+            self.assertTrue(all(bounds[i+1]<bounds[i]
+                                for i in range(len(bounds)-1)))
+        for m in range(2,8):
+            h=6**m;y=1+h
+            a=resolvent_certificate(y,h,1)
+            self.assertEqual(a["prefix"],0)
+            self.assertGreater(a["remainder"],3)
+            # Increasing series length recovers the same rational value.
+            last=resolvent_certificate(y,h,16)
+            self.assertGreater(last["prefix"],a["prefix"])
+            self.assertLess(last["prefix"],last["exact"])
+            self.assertEqual(last["prefix"]+last["remainder"],last["exact"])
+
 if __name__=="__main__":
     unittest.main()
