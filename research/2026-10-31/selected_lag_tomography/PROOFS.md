@@ -100,9 +100,9 @@ For h=1,K=4, direct finite source computation gives (displays abbreviated; exact
 
 | N | selected signed L | coherent nonnormal seed signed L LOWER bound | selected normalized squared Weyl UPPER bound |
 |---:|---:|---:|---:|
-| 512, calibration | −0.003785708291 | 0.524562290736 | 0.471960 |
-| 1024, fresh horizon | −0.009154820708 | 0.637281145368 | 0.353371 |
-| 1536, fresh horizon | −0.007533026406 | 0.674854096912 | 0.317420 |
+| 512, calibration | −0.003785708291 | 0.524562290736 | 0.471959875551 |
+| 1024, fresh horizon | −0.009154820708 | 0.637281145368 | 0.353375586652 |
+| 1536, fresh horizon | −0.007533026406 | 0.674854096912 | 0.317417822792 |
 
 These are real finite inequalities using the original rational zero seed and a genuine same-forcing nonnormal control. They are **NOT asymptotic information**; there is no proof they continue at later N. The intervals derive from rational arithmetic, not from Monte Carlo or auxiliary seed Haar.
 
