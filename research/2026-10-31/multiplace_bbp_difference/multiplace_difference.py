@@ -225,3 +225,29 @@ def source_perpetual_five_exposure(m):
     x=source_difference_polynomial(h)
     return {"value":x,"five_denominator_valuation":-valuation(x,5),
             "numerator_mod_five":(h*B)%5}
+
+
+def deep_pole_count(N,k,start=0):
+    """Literal source-pole positions d(n+1)>=k for a finite integer window."""
+    for z in (N,k,start):_integer(z)
+    if N<1 or k<2 or start<0:
+        raise ValueError("N>=1,k>=2,start>=0 required")
+    q=3**k
+    rootset=set(pole_depth_profile(k)["roots"])
+    return sum(1 for n in range(start,start+N) if (n+1)%q in rootset)
+
+def deep_pole_fraction_upper(N,k):
+    """At ANY horizon fraction of deep 3-adic source poles <= 4/3^k+4/N."""
+    _integer(N);_integer(k)
+    if N<1 or k<2:raise ValueError("N>=1,k>=2 required")
+    return F(4,3**k)+F(4,N)
+
+def shallow_phase_removal_certificate(N,k,start=0):
+    """If |z_n|=1, removing deep poles alters mean by at most this count/N.
+
+    Valid for actual BBP Fourier phases z_n=e(hU_n), any fixed integer h.
+    Does NOT assert the retained shallow-phase sum decays.
+    """
+    bad=deep_pole_count(N,k,start)
+    return {"discarded":bad,"exact_fraction":F(bad,N),
+            "universal_upper":deep_pole_fraction_upper(N,k)}
