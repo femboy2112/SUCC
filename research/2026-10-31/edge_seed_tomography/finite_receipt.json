@@ -1,0 +1,214 @@
+{
+  "label": "FINITE_DIAGNOSTIC_ONLY_NOT_PI_PROOF",
+  "base": "BBP four-pole zero seed and source-preserving changing rational seeds",
+  "tomography": {
+    "first_nine_prime": 73,
+    "modes": 9,
+    "total_channels": 73,
+    "D": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      37,
+      55,
+      64
+    ],
+    "ordered_differences": 72
+  },
+  "alias_free_prime_table": {
+    "2": 7,
+    "3": 7,
+    "4": 19,
+    "5": 31,
+    "6": 53,
+    "7": 73,
+    "8": 73,
+    "9": 73,
+    "10": 283,
+    "11": 337,
+    "12": 503,
+    "13": 643,
+    "14": 761
+  },
+  "measurements": [
+    {
+      "N": 16,
+      "h": 1,
+      "selected_vertex_abs_mean": 0.237249803,
+      "selected_edge_abs_mean": 0.1300371,
+      "vertex_15h_abs_mean": 0.15103837,
+      "edge_minus_15vertex_actual_abs": 0.957372932,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 1.500580896,
+      "rational_seed_control_abs_mean": 0.99992109,
+      "rational_seed_control_K": 80
+    },
+    {
+      "N": 16,
+      "h": 3,
+      "selected_vertex_abs_mean": 0.277713398,
+      "selected_edge_abs_mean": 0.208659372,
+      "vertex_15h_abs_mean": 0.284896462,
+      "edge_minus_15vertex_actual_abs": 1.928552542,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 4.501742687,
+      "rational_seed_control_abs_mean": 0.999290642,
+      "rational_seed_control_K": 80
+    },
+    {
+      "N": 16,
+      "h": 5,
+      "selected_vertex_abs_mean": 0.139581817,
+      "selected_edge_abs_mean": 0.128860594,
+      "vertex_15h_abs_mean": 0.156391856,
+      "edge_minus_15vertex_actual_abs": 1.375858752,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 5.654006238,
+      "rational_seed_control_abs_mean": 0.998034188,
+      "rational_seed_control_K": 80
+    },
+    {
+      "N": 16,
+      "h": 15,
+      "selected_vertex_abs_mean": 0.15103837,
+      "selected_edge_abs_mean": 0.163033808,
+      "vertex_15h_abs_mean": 0.087765984,
+      "edge_minus_15vertex_actual_abs": 4.005715921,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 9.003637323,
+      "rational_seed_control_abs_mean": 0.982825081,
+      "rational_seed_control_K": 80
+    },
+    {
+      "N": 32,
+      "h": 1,
+      "selected_vertex_abs_mean": 0.256060621,
+      "selected_edge_abs_mean": 0.137869975,
+      "vertex_15h_abs_mean": 0.130968056,
+      "edge_minus_15vertex_actual_abs": 0.96510246,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 1.543052904,
+      "rational_seed_control_abs_mean": 0.999956251,
+      "rational_seed_control_K": 96
+    },
+    {
+      "N": 32,
+      "h": 3,
+      "selected_vertex_abs_mean": 0.231612205,
+      "selected_edge_abs_mean": 0.091506683,
+      "vertex_15h_abs_mean": 0.100643952,
+      "edge_minus_15vertex_actual_abs": 1.913923996,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 4.629158712,
+      "rational_seed_control_abs_mean": 0.999606791,
+      "rational_seed_control_K": 96
+    },
+    {
+      "N": 32,
+      "h": 5,
+      "selected_vertex_abs_mean": 0.204669334,
+      "selected_edge_abs_mean": 0.091604789,
+      "vertex_15h_abs_mean": 0.052456522,
+      "edge_minus_15vertex_actual_abs": 1.373868508,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 5.866366279,
+      "rational_seed_control_abs_mean": 0.998910719,
+      "rational_seed_control_K": 96
+    },
+    {
+      "N": 32,
+      "h": 15,
+      "selected_vertex_abs_mean": 0.130968056,
+      "selected_edge_abs_mean": 0.079342365,
+      "vertex_15h_abs_mean": 0.203719933,
+      "edge_minus_15vertex_actual_abs": 4.035739863,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 9.640717447,
+      "rational_seed_control_abs_mean": 0.990526363,
+      "rational_seed_control_K": 96
+    },
+    {
+      "N": 64,
+      "h": 1,
+      "selected_vertex_abs_mean": 0.105752122,
+      "selected_edge_abs_mean": 0.05850187,
+      "vertex_15h_abs_mean": 0.072035789,
+      "edge_minus_15vertex_actual_abs": 0.962873063,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 1.565150184,
+      "rational_seed_control_abs_mean": 0.999976955,
+      "rational_seed_control_K": 128
+    },
+    {
+      "N": 64,
+      "h": 3,
+      "selected_vertex_abs_mean": 0.24355177,
+      "selected_edge_abs_mean": 0.110673157,
+      "vertex_15h_abs_mean": 0.1382427,
+      "edge_minus_15vertex_actual_abs": 1.924023102,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 4.695450552,
+      "rational_seed_control_abs_mean": 0.999792895,
+      "rational_seed_control_K": 128
+    },
+    {
+      "N": 64,
+      "h": 5,
+      "selected_vertex_abs_mean": 0.168037396,
+      "selected_edge_abs_mean": 0.021101433,
+      "vertex_15h_abs_mean": 0.016092301,
+      "edge_minus_15vertex_actual_abs": 1.374412769,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 5.976852679,
+      "rational_seed_control_abs_mean": 0.99942639,
+      "rational_seed_control_K": 128
+    },
+    {
+      "N": 64,
+      "h": 15,
+      "selected_vertex_abs_mean": 0.072035789,
+      "selected_edge_abs_mean": 0.096253774,
+      "vertex_15h_abs_mean": 0.158089744,
+      "edge_minus_15vertex_actual_abs": 4.053348384,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 9.972176648,
+      "rational_seed_control_abs_mean": 0.995023805,
+      "rational_seed_control_K": 128
+    },
+    {
+      "N": 128,
+      "h": 1,
+      "selected_vertex_abs_mean": 0.079525725,
+      "selected_edge_abs_mean": 0.017635319,
+      "vertex_15h_abs_mean": 0.014112903,
+      "edge_minus_15vertex_actual_abs": 0.963179814,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 1.576423618,
+      "rational_seed_control_abs_mean": 0.999988171,
+      "rational_seed_control_K": 192
+    },
+    {
+      "N": 128,
+      "h": 3,
+      "selected_vertex_abs_mean": 0.101090378,
+      "selected_edge_abs_mean": 0.066872132,
+      "vertex_15h_abs_mean": 0.077654878,
+      "edge_minus_15vertex_actual_abs": 1.926221272,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 4.729270855,
+      "rational_seed_control_abs_mean": 0.999893705,
+      "rational_seed_control_K": 192
+    },
+    {
+      "N": 128,
+      "h": 5,
+      "selected_vertex_abs_mean": 0.059418547,
+      "selected_edge_abs_mean": 0.040154687,
+      "vertex_15h_abs_mean": 0.034401572,
+      "edge_minus_15vertex_actual_abs": 1.372960134,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 6.033219851,
+      "rational_seed_control_abs_mean": 0.99970563,
+      "rational_seed_control_K": 192
+    },
+    {
+      "N": 128,
+      "h": 15,
+      "selected_vertex_abs_mean": 0.014112903,
+      "selected_edge_abs_mean": 0.074973986,
+      "vertex_15h_abs_mean": 0.106612738,
+      "edge_minus_15vertex_actual_abs": 4.049824436,
+      "edge_minus_15vertex_analytic_upper_2pi_dist": 10.141278164,
+      "rational_seed_control_abs_mean": 0.99744967,
+      "rational_seed_control_K": 192
+    }
+  ]
+}
