@@ -137,5 +137,19 @@ class CounterfactualCarrierTests(unittest.TestCase):
         coherent=tuple(-green_tail_bracket(n,16)[0] for n in range(1,257))
         self.assertGreater(tent_defect(coherent,16),Fraction(9,5))
 
+
+class GlobalWardChargeTests(unittest.TestCase):
+    def test_exact_finite_global_charge_cauchy_certificate(self):
+        from counterfactual_carrier import certified_forcing_charge
+        for q in (16,256):
+            prior=certified_forcing_charge(128,q)
+            self.assertEqual(prior['sum_coordinates'],0)
+            for N in (256,512):
+                nex=certified_forcing_charge(N,q)
+                self.assertEqual(nex['sum_coordinates'],0)
+                self.assertLessEqual(vector_l1(prior['prefix'],nex['prefix']),
+                                     prior['tail_l1_upper'])
+                prior=nex
+
 if __name__=="__main__":
     unittest.main()
