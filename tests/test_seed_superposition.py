@@ -215,6 +215,7 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
         self.assertGreater(late_radix_resonance_error_coefficient(2),
                            late_radix_resonance_error_coefficient(10))
 
+
     def test_24_pr432_exact_73_point_tomography_and_tenth_mode_alias(self):
         # Sibling PR #432's classical (73,9,1) difference set, independently
         # checked here as an integration/provenance guard, not new discovery.
