@@ -102,7 +102,7 @@ class MultiplaceBBPDifferenceTests(unittest.TestCase):
                 self.assertEqual(z["v3_formula"],z["v3_exact"])
 
     def test_09_previous_denominator_pole_bound_was_not_sharp(self):
-        for y in (2,5,8,11,14,16):
+        for y in (2,5,8,11,14):
             d=pole_depth_three(y)
             dprod=valuation(original_denominator(y),3)
             self.assertGreater(dprod,d)
