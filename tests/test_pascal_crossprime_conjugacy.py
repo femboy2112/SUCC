@@ -191,5 +191,42 @@ class PascalInformationTransferTests(unittest.TestCase):
         self.assertNotEqual(pascal_codeword_count_law(5),
                             native_ternary_codeword_count_law(5))
 
+
+class OriginalSelectedSourceTransportTests(unittest.TestCase):
+    def test_18_authenticated_two_adic_BBP_permutation(self):
+        from pascal_crossprime import original_bbp_two_residues
+        for a in range(1,9):
+            q=2**a
+            src=original_bbp_two_residues(q,a)
+            self.assertEqual(set(src),set(range(q)))
+            self.assertEqual(len(src),q)
+            self.assertEqual(src[0],0)
+
+    def test_19_source_transported_ternary_Haar_distortion(self):
+        from pascal_crossprime import selected_source_ternary_histogram
+        self.assertEqual(selected_source_ternary_histogram(1),{0:2,1:1,2:1})
+        for b in range(1,6):
+            q=2**(2*b)
+            cnt=selected_source_ternary_histogram(b)
+            self.assertEqual(sum(cnt.values()),q)
+            self.assertEqual(sum(cnt.get(j,0) for j in range(0,3**b,3)),
+                             q//2)
+
+    def test_20_authentic_source_joint_clock_factorizes_exactly(self):
+        from pascal_crossprime import selected_source_joint_ternary_clock
+        for b in (1,2,3,4):
+            result=selected_source_joint_ternary_clock(b)
+            self.assertTrue(result['exact_factorization'])
+            self.assertEqual(sum(result['observed'].values()),result['period'])
+            self.assertEqual(result['observed'],result['expected'])
+
+    def test_21_selected_source_unit_pascal_law(self):
+        from pascal_crossprime import selected_source_unit_pascal_histogram
+        for m in range(1,7):
+            result=selected_source_unit_pascal_histogram(m)
+            self.assertEqual(result['total'],2**(2*m-1))
+            self.assertEqual(result['probabilities'],result['expected'])
+            self.assertEqual(sum(result['probabilities'].values()),1)
+
 if __name__=="__main__":
     unittest.main()
