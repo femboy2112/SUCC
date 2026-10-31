@@ -108,3 +108,20 @@ Prove from **all four authentic signed poles and selected \(U_0=0\)** either:
 Test any proposed inequality against coherent changed seeds, seven-pole AT-07, de Bruijn, and Gaussian finite-prefix shadows; pay full primary×cofiber signed weights and cross-window coverage. Do NOT infer CT-10 from CT-03/05 or finite readings. RH and π normality remain OPEN.
 
 **Provenance:** Main XVII selected arithmetic and claim registry; PR407 CTC-02/03; PR410 MS-01/02; PR411 FB-01; PR415 K01/K04; PR414 observer-vs-carrier adequacy; older source-tail exact identities. All new exact arithmetic code is under this research directory; source archives and production interfaces unchanged.
+
+
+## CT-12 — a genuinely certified finite-to-global *source forcing charge* (PROVED LOCAL)
+
+Define the full original-source (zero-selected) triangular forcing current
+\[
+C_q=\sum_{n=1}^{\infty}\left[\Phi_q(U_{n+1})-\Phi_q(16U_n)\right].
+\]
+Unlike a formal infinite digit census, this is an **effectively computable real vector with a finite symbolic proof of every requested precision**. Its prefix \(C_{q,N}\) is exactly rational, and every term has \(\ell^1\) norm at most \(2q\,r(n+1)\). Since the positive original four-pole regrouping gives \(r(n+1)<15/(64n^2)\) for \(n\ge1\), the convergent series has a rigorous, source-derived uniform tail modulus
+\[
+\boxed{\|C_q-C_{q,N}\|_1
+< 2q\sum_{n>N}\frac{15}{64n^2}
+\le \frac{15q}{32N}.}\tag{CT-12}
+\]
+Moreover \(\sum_j C_q(j)=0\), since each hat vector has coordinate sum 1. The resulting all-horizon forcing charge is **source-selected**, unlike the seed-blind Ward error *bound*. It can be enclosed with exact rational arithmetic and a prescribed error radius, but it does not itself bound the limiting selected occupation measure. In particular, the Ward identity becomes \(N\mathcal W_{q,N}=\Phi_q(U_1)-\Phi_q(U_{N+1})+C_{q,N}\); the first term need not converge. No Haar/normality assertion follows. This is a concrete finite↔global certificate for a source forcing observable, **not** the global normality predicate.
+
+The exact implementation records \(C_{q,N}\), its tail certificate and coordinate-sum conservation. Independent finite Cauchy comparisons at \(q=16,256\) and \(N=128,256,512\) lie inside the analytic tail budget. No unperformed infinite computation or numerical extrapolation is claimed.
