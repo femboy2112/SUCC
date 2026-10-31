@@ -1,5 +1,6 @@
 """Research-only exact four-pole lag Gram, CRT and VdC tests."""
 import sys
+import importlib.util
 import unittest
 from fractions import Fraction as F
 from itertools import product
@@ -12,7 +13,15 @@ from selected_lag import (
     gaussian_norm2,gaussian_sum,gaussian_vdc,vdc_lag_error_bound_rational,
     dyadic_character_zero,exact_dyadic_lag_histogram,
     coherent_lag_lower_bound,exact_gram_grouping)
-from independent_oracle import window_energy,independently_unroll_difference,direct_shifted_character_histogram
+# Unique source-file name avoids the global independent_oracle module cache
+# shared by older SUCC test files under unittest discovery.
+_path=Path(__file__).resolve().parents[1]/'research'/'2026-10-31'/'selected_lag_tomography'/'independent_oracle.py'
+_spec=importlib.util.spec_from_file_location('_signed_lag_independent_oracle',_path)
+_oracle=importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_oracle)
+window_energy=_oracle.window_energy
+independently_unroll_difference=_oracle.independently_unroll_difference
+direct_shifted_character_histogram=_oracle.direct_shifted_character_histogram
 
 class SelectedLagTests(unittest.TestCase):
     def test_01_original_source(self):
