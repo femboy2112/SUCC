@@ -30,7 +30,7 @@ Decimal views of EXACT intervals: N512 L in (-0.003785708292,-0.003785708290), b
     python research/2026-10-31/selected_lag_tomography/run_receipt.py 1024 4
     python research/2026-10-31/selected_lag_tomography/run_receipt.py 1536 4
 
-The three full-horizon receipt runs were **actually executed locally** against the exact file content uploaded to GitHub, before this handoff. Exact source code blob SHA-1 59d0351484865ab919317ae1a34f6e9ec1b12da3; independent source oracle d4c5a4a815fe3d8beb29b075972e2de03eb63fdf; receipt runner f294eb5ae0c6b77fe300623591755c27e0037304; exact root test 55a5857cc8e1b13606dac4edb9fd479775d82ca4. Those blobs were verified byte-for-byte against local tested copies before the atomic Git tree commit. The exact SUCC full-root suite and Lean/hosted CI are separate and must not be claimed from these receipts.
+The three full-horizon receipt runs were **actually executed locally** against the exact file content uploaded to GitHub, before this handoff. Exact source code blob SHA-1 59d0351484865ab919317ae1a34f6e9ec1b12da3; independent source oracle d4c5a4a815fe3d8beb29b075972e2de03eb63fdf; receipt runner f294eb5ae0c6b77fe300623591755c27e0037304; exact root test 75df7fdae1a790bce4e23a39620da3dd9c2f4551. Those blobs were verified byte-for-byte against local tested copies before the atomic Git tree commit. The exact SUCC full-root suite and Lean/hosted CI are separate and must not be claimed from these receipts.
 
 ## Required holdout interpretations
 
