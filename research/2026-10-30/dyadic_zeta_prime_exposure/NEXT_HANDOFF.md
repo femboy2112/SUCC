@@ -4,6 +4,8 @@
 
 The new independently based package proves DY-01..DY-09 on the finite Pascal/Stirling, zeta/eta, Archimedean, prime-denominator and finite-circle layers. Read the current heads and source contracts in unmerged SUCC #417, #420 and #421 rather than assuming they are merged. The original four signed BBP poles and the literal zero initial condition are nonnegotiable.
 
+The complete prime-denominator theorem DY-11 and finite Stirling cancellation law DY-12 are now recorded in DENOMINATOR_SURVIVAL.md; the surviving primes at each even index are exactly those with p-1 dividing the index. Do not treat all factors of 2^m-1 as surviving.
+
 ## Three falsifiable next probes
 
 1. **Completion-vs-place:** preserve the real dyadic finite paths AND raw p-adic valuations; construct a deliberately different finite dyadic approximant with the same real limit and a different p-adic behavior. PASS only with a declared common-basis map; a formal shared limit without it fails the claim.
