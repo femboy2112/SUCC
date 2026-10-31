@@ -250,4 +250,24 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
             self.assertEqual(exact_grid_seed_alias(depth,resolution,onset,1),1)
             self.assertTrue(future_integral_is_zero(depth,onset,1))
 
+    def test_26_main_xvi_seed_alias_scope_and_required_failure_firewall(self):
+        # Main XVI has already classified these source-equivalence classes.
+        # An asymptotic |S_N(h)| bound CANNOT be required to fail on them.
+        for s in (F(1,16),F(1,256),F(3,16**5)):
+            onset=dyadic_seed_coalescence_time(s)
+            self.assertEqual(onset,(s.denominator.bit_length()-1+3)//4)
+            for n in range(onset,onset+9):
+                self.assertEqual(16**n*s%1,0)
+            for n in range(onset):
+                self.assertNotEqual(16**n*s%1,0)
+        for s in (F(1,3),F(2,5),F(7,15)):
+            for n in range(0,30):
+                self.assertEqual((16**n*s)%1,s%1)
+        # The finite alias class is invisible in post-boundary circle phases,
+        # yet the literal initial state is different (not the selected U0).
+        a=states(8,F(1,16));z=states(8,0)
+        self.assertNotEqual(a[0],z[0])
+        for n in range(1,8):
+            self.assertEqual((a[n]-z[n]).denominator,1)
+
 if __name__=='__main__':unittest.main()
