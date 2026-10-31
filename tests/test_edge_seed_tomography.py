@@ -52,7 +52,7 @@ class ExactBBPSource(unittest.TestCase):
             states=M.original_states(K,sK)
             tail_budget=Fraction(1,(8*K+1)*(8*K+2))
             for n in range(1,K+1):
-                bound=Fraction(1,(8*n+1)*(8*n+2))+Fraction(16**(n-K)) * tail_budget
+                bound=Fraction(1,(8*n+1)*(8*n+2))+Fraction(16**n,16**K) * tail_budget
                 self.assertLess(abs(states[n]),bound)
             self.assertLess(sum((abs(x) for x in states[1:]),Fraction(0)),
                             Fraction(1,32)+Fraction(16,15)*tail_budget)
