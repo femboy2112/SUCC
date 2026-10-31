@@ -176,3 +176,57 @@ def mean_binary_code_length(m:int)->Fraction:
     """One- and two-bit codewords require expected 3m/2 source bits."""
     if type(m) is not int or m<0:raise ValueError("nonnegative m")
     return Fraction(3*m,2)
+
+
+def original_bbp_two_residues(N:int,a:int)->tuple[int,...]:
+    """Original four signed poles, U0=0, exact n=0,...,N-1 in Z/2^a.
+
+    Finite independent implementation of the inherited SUCC DSI isometry.
+    """
+    if type(N) is not int or N<1 or type(a) is not int or not 1<=a<=18:
+        raise ValueError("positive N, dyadic bits a=1..18")
+    q=2**a;u=0;rows=[u]
+    for n in range(1,N):
+        A=120*n*n-89*n+16
+        D=(2*n-1)*(4*n-1)*(8*n-7)*(8*n-3)
+        u=(16*u+A*pow(D,-1,q))%q
+        rows.append(u)
+    return tuple(rows)
+
+def selected_source_ternary_histogram(b:int):
+    """Genuine BBP source time distribution of H(U_n) modulo 3^b."""
+    if type(b) is not int or not 1<=b<=6:
+        raise ValueError("ternary depth 1..6")
+    q=2**(2*b);r=3**b
+    states=original_bbp_two_residues(q,2*b)
+    return dict(Counter(binary_affine_to_ternary(x)%r for x in states))
+
+def selected_source_joint_ternary_clock(b:int):
+    """Compare H(U_n) and authentic 16^n mod3^b over CRT joint period."""
+    if type(b) is not int or not 1<=b<=4:
+        raise ValueError("joint source depth 1..4")
+    q=2**(2*b);r=3**b;L=3**(b-1);N=q*L
+    states=original_bbp_two_residues(N,2*b)
+    observed=Counter((binary_affine_to_ternary(x)%r,pow(16,n,r))
+                      for n,x in enumerate(states))
+    local=selected_source_ternary_histogram(b)
+    clock={pow(16,n,r) for n in range(L)}
+    expected={(v,z):count for v,count in local.items() for z in clock}
+    return {'period':N,'observed':dict(observed),'expected':expected,
+            'exact_factorization':dict(observed)==expected}
+
+def selected_source_unit_pascal_histogram(m:int):
+    """Authentic BBP source conditional binary unit -> ternary prefix law.
+
+    Source DSI guarantees U_n mod2^(2m) visits EVERY residue once per
+    complete period. Condition U_n+1 odd; induced path count is Pascal.
+    """
+    if type(m) is not int or not 1<=m<=6:
+        raise ValueError("unit output prefix depth m 1..6")
+    q=2**(2*m);seq=original_bbp_two_residues(q,2*m)
+    unit=[x+1 for x in seq if (x+1)%2==1]
+    c=Counter(tuple((odd_binary_to_ternary_unit(u)//3**k)%3
+                    for k in range(m)) for u in unit)
+    return {'total':len(unit),'probabilities':
+            {w:Fraction(n,len(unit)) for w,n in c.items()},
+            'expected':induced_ternary_prefix_probabilities(m)}
