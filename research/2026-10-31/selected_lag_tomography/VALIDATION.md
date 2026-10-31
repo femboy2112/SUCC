@@ -21,7 +21,7 @@
   - selected_lag.py: 59d0351484865ab919317ae1a34f6e9ec1b12da3 (the locally tested file has no terminal newline, exactly matching the blob).
   - independent_oracle.py: d4c5a4a815fe3d8beb29b075972e2de03eb63fdf.
   - run_receipt.py: f294eb5ae0c6b77fe300623591755c27e0037304.
-  - tests/test_selected_lag_tomography.py: 55a5857cc8e1b13606dac4edb9fd479775d82ca4.
+  - tests/test_selected_lag_tomography.py: 75df7fdae1a790bce4e23a39620da3dd9c2f4551.
   The four files were installed in one atomic Git tree/commit bdda83caabe5a647bef405f01e47d3180a3cd1eb on the dedicated research branch.
 
 ## Validation NOT performed and not claimed
@@ -44,3 +44,4 @@
 **Hard false-positive firewalls:** inherited same forcing coherent seed s*=-π/16, nearzero irrational fixed nonnormal seeds s_L from PR #433, rational changed seeds whose NORMALITY status is unchanged by Wall, Gaussian-Pascal phase-by-fiat from PR #431, 73-channel phase-tomography alias at N=10 from PR #432, and the T16 invariant non-Haar 3-point measure with vanishing h=1 Fourier coefficient.
 
 **Next verdict-changing test:** a new all-horizon signed bound on the actual original zero-selected critical-log lag observable for every fixed h, independently derived and successfully replayed on fresh time/frequency/pole-class holdouts; the known finite results alone do not satisfy it.
+**Integration test isolation correction:** The original integrated PR #431 already used a top-level module named independent_oracle. To avoid an order-dependent Python sys.modules collision in full root discovery, this new research test now loads its own independent_oracle.py by a unique importlib.util source-file module name. After the change, 28/28 focused tests were re-executed locally, and the new exact Git blob 75df7fdae1a790bce4e23a39620da3dd9c2f4551 MATCHES the re-executed test bytes. No parent/sibling code was changed.
