@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first",
+  "start_utc": "2026-10-31T02:27:10.037329+00:00",
+  "timeout_seconds": 1800,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 960.603,
+  "end_utc": "2026-10-31T02:43:10.640035+00:00",
+  "log_sha256": "33db1b8abb9916e4a13433457579681f5d9c5aa8f032901a8cfe231bffd7a58a",
+  "log_bytes": 11425
+}
