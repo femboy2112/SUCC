@@ -148,3 +148,31 @@ def quadratic_power(x:tuple[int,int],n:int)->tuple[int,int]:
 def algebraic_pascal_conjugate_trace(seq):
     """Applied to exact traces Tr((a+b√2)^k); Pascal shifts a by +1."""
     return pascal_forward(seq)
+
+
+def pascal_codeword_count_law(m:int)->tuple[Fraction,...]:
+    """Under fair binary bits, A=#one-bit codewords among m ternary outputs.
+
+    A ~ Binomial(m,1/2): exact Pascal triangle normalized by row sum.
+    """
+    if type(m) is not int or not 0<=m<=64:
+        raise ValueError("integer count depth 0..64")
+    return tuple(Fraction(comb(m,a),2**m) for a in range(m+1))
+
+def native_ternary_codeword_count_law(m:int)->tuple[Fraction,...]:
+    """Under ternary Haar A=#digit2 ~ Binomial(m,1/3)."""
+    if type(m) is not int or not 0<=m<=64:
+        raise ValueError("integer count depth 0..64")
+    return tuple(Fraction(comb(m,a)*2**(m-a),3**m) for a in range(m+1))
+
+def word_law_pair(word:tuple[int,...])->tuple[Fraction,Fraction]:
+    """Two exact probabilities of one word under transported and native Haar."""
+    if type(word) is not tuple or any(d not in (0,1,2) or type(d) is not int for d in word):
+        raise ValueError("ternary tuple required")
+    m=len(word); a=word.count(2)
+    return Fraction(1,2**(2*m-a)),Fraction(1,3**m)
+
+def mean_binary_code_length(m:int)->Fraction:
+    """One- and two-bit codewords require expected 3m/2 source bits."""
+    if type(m) is not int or m<0:raise ValueError("nonnegative m")
+    return Fraction(3*m,2)
