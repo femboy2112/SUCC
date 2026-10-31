@@ -155,5 +155,41 @@ class PascalCrossprimeTests(unittest.TestCase):
         ):
             with self.assertRaises(ValueError):fn(*args)
 
+
+class PascalInformationTransferTests(unittest.TestCase):
+    def test_17_pascal_path_count_sufficient_for_haar_defect(self):
+        from pascal_crossprime import (
+            pascal_codeword_count_law,native_ternary_codeword_count_law,
+            word_law_pair,mean_binary_code_length)
+        from itertools import product
+        from math import comb
+        for m in range(0,7):
+            pt=pascal_codeword_count_law(m)
+            pn=native_ternary_codeword_count_law(m)
+            self.assertEqual(sum(pt),1)
+            self.assertEqual(sum(pn),1)
+            self.assertEqual(sum(Fraction(a)*pt[a] for a in range(m+1)),
+                             Fraction(m,2))
+            self.assertEqual(mean_binary_code_length(m),Fraction(3*m,2))
+            tally=[0]*(m+1)
+            totals=[Fraction(0)]*(m+1)
+            native=[Fraction(0)]*(m+1)
+            for word in product((0,1,2),repeat=m):
+                a=word.count(2)
+                tally[a]+=1
+                q,h=word_law_pair(word)
+                totals[a]+=q
+                native[a]+=h
+                # Conditional on A=a, the OTHER symbol positions carry no
+                # additional likelihood evidence. This is the exact
+                # Pascal-triangle sufficiency / KL equality certificate.
+                self.assertEqual(q/pt[a],h/pn[a])
+            self.assertEqual(tuple(totals),pt)
+            self.assertEqual(tuple(native),pn)
+            self.assertEqual(tuple(tally),tuple(comb(m,a)*2**(m-a)
+                                               for a in range(m+1)))
+        self.assertNotEqual(pascal_codeword_count_law(5),
+                            native_ternary_codeword_count_law(5))
+
 if __name__=="__main__":
     unittest.main()
