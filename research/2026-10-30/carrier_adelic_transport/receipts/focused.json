@@ -1,0 +1,20 @@
+{
+  "name": "focused",
+  "command": [
+    "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/carrier_adelic_transport",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+  "started_utc": "2026-10-31T01:16:43.981382+00:00",
+  "elapsed_seconds": 19.69,
+  "returncode": 0,
+  "log_sha256": "9fb384dc55a537e95a193672fa275ed510bce1365d63a85b87921d7d19455ea7",
+  "log": "focused.log"
+}

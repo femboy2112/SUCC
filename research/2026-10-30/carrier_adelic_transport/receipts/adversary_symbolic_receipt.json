@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "integer log potential derivative",
+    "four-pole telescoping",
+    "n^2 r leading 15/64",
+    "Q first derivative 15",
+    "Q second derivative 1"
+  ],
+  "source": "separate SymPy algebra, same mathematical definitions",
+  "sympy": "1.14.0"
+}

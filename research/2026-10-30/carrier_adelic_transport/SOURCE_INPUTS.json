@@ -1,0 +1,443 @@
+{
+  "schema": "succ.research.source-inputs.v1",
+  "repository": "https://github.com/femboy2112/SUCC",
+  "research_date": "2026-10-30",
+  "execution_date_utc": "2026-10-31",
+  "branch_parent": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+  "inspected_heads": {
+    "main": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+    "PR_417": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+    "PR_416": "725377a64748ab0c442d16a61509b99687412505",
+    "PR_418": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+    "PR_419": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+    "PR_415": "f650aab0c8710b502f3e08ec1cb2b351c26b2b3f",
+    "PR_398": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+    "PR_399": "fe9da9b0942f046cc67b02c4fed825ef74aa675a"
+  },
+  "audit_scope": "Key locally inspected parent files match their pinned git blobs. Every locally materialized #418/#419 sibling file matches the GitHub Contents API blob SHA at the pinned head. Other sibling references were inspected through the connector; no merge of their trees is implied.",
+  "files": [
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "AGENTS.md",
+      "bytes": 3058,
+      "git_blob_sha1": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/METHOD.md",
+      "bytes": 6649,
+      "git_blob_sha1": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/FOUNDATIONS.md",
+      "bytes": 16978,
+      "git_blob_sha1": "24d7e61ab10d7313f661c6505164fa51dc4fee70",
+      "sha256": "7ded158d63a838591709acf1260c3e966adaacd71b0277434b9c670e353662c8"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 102048,
+      "git_blob_sha1": "daf607e194193241b838de9462d9c378c94ce266",
+      "sha256": "7b199af1fe0cecbcdd698f411088f68a2f04fe113dc2f6a38b24fc94c3286c20"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/ROADMAP.md",
+      "bytes": 122599,
+      "git_blob_sha1": "7eb8c99610b7e2eb0dde6f61006afc12d07febb2",
+      "sha256": "dd48dc89374f519f9b6af7b3a29ffbdaeb926362178c1aa6b987c7d71b57156d"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/CLAIM_LEDGER.md",
+      "bytes": 277352,
+      "git_blob_sha1": "7e927af3b76faaeb194f47c4b72632559cc3d4ca",
+      "sha256": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/OPERATIONAL_TRIANGLE.md",
+      "bytes": 14963,
+      "git_blob_sha1": "678223ba666d4c36a5babcf171f338b2fbf5c692",
+      "sha256": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md",
+      "bytes": 3385,
+      "git_blob_sha1": "0dcc6f0b0e7e8fb3ee2074a1bb985b2aa3f15037",
+      "sha256": "f8829b713da6aed52e4d3e64eb69bfec36368c33246cc99ca82c22598e83b1a3"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-24/PI_SOURCE_GENESIS_NONCOBOUNDARY.md",
+      "bytes": 16373,
+      "git_blob_sha1": "105b9f198b74b614ab58d91ef5377d4e221d1e7e",
+      "sha256": "cdb0f94a30aeb9556ff7a9526466eff89c2fd16aca577ec96cbffe61237ed7e3"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-24/PI_DYADIC_SOURCE_ISOMETRY.md",
+      "bytes": 21841,
+      "git_blob_sha1": "9ab6a33a3905d3b0042a423d86e320158a88f730",
+      "sha256": "33252937eaf014c74bada378709e3e90559868c5d4ea0aff90475bb34e86e75f"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "observational_succ/bbp_source_memory.py",
+      "bytes": 7588,
+      "git_blob_sha1": "c178b5c714bcdcb4dafc0d112c6aca172e44bcb6",
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "pyproject.toml",
+      "bytes": 1921,
+      "git_blob_sha1": "26fc1b52dc952ef8b313d24c763c51e5d7bedb3d",
+      "sha256": "fe8ac90682ce22c43f09cf2b8827f81df45f521104928e1b025657d9d84cbbd9"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_SOURCE_TWISTED_ZETA_POLE.md",
+      "bytes": 5949,
+      "git_blob_sha1": "85ad98ba51a01e2eba6068676fd8d234d44657f8",
+      "sha256": "41eb5011c735ecb68b1583fecfadfbf7441bac6fd386f75a4e95e580a0d8294d"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_TWISTED_SOURCE_VALIDATION.md",
+      "bytes": 3084,
+      "git_blob_sha1": "76ec9cc2d3f90b7d96752121034eff5939164bf8",
+      "sha256": "83c9cde29cbe69046a7efce40497083623e833d789d8e618c084fee42ba71d94"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/CLAIMS.md",
+      "bytes": 3488,
+      "git_blob_sha1": "90745c6b1007368c499c36f186f1f9be9a87deff",
+      "sha256": "5fa3e76523e96e36aee021bc13ca8c490bde527d098c804135603c8aa931a53c"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/CRUCIBLE.md",
+      "bytes": 3946,
+      "git_blob_sha1": "72c889cf50faf5e5c77569fcf73473ce0b43af15",
+      "sha256": "bd0886fdf1b040f6ef54486254f4f524899b0904eb55dd125934c82260f51a51"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/FIBONACCI_GAMMA_OBSERVER.md",
+      "bytes": 3859,
+      "git_blob_sha1": "e90315d8287ead938b3c3b5842c5dddf57be712f",
+      "sha256": "94e79458643fb5fa09e3c7d3e27c7f8a10a07c0376a4323a105cad2b9f04b13b"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/LOGJET_CROSS_AUDIT.md",
+      "bytes": 6492,
+      "git_blob_sha1": "882f872e34a52d0665a8dc2c4a4d26ad5dcac9ac",
+      "sha256": "8396e98570ca24043bb50044ba73917556591ef7ce35e5a2867e15a235ec0a1a"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/MEGA_ROUND_CROSS_AUDIT_ADDENDUM.md",
+      "bytes": 4520,
+      "git_blob_sha1": "101cafad259a9ea7b663c666096037b4d9988358",
+      "sha256": "7ba2b8b5614e7205c906a6148640bd4d607e3607375b1be8cab02b9d6e543092"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/NEXT_ZETA_GRADE_HANDOFF.md",
+      "bytes": 2306,
+      "git_blob_sha1": "703240cfbec934f7842efc4a38dfa8f3927a044f",
+      "sha256": "6da8b5f50bab21e43d2d73d36ffa4ce7967578f1bf07e17faaa6e58cba2aabd1"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/README.md",
+      "bytes": 3672,
+      "git_blob_sha1": "8f2a5c6dcefff7e4f2314f33a95e3f21a5a529e4",
+      "sha256": "1fae02b15fc2a783e45ee30638d08769ec57b89420c4fbc874023a2d08c5dba5"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/UNIVERSAL_CARRIER.md",
+      "bytes": 7853,
+      "git_blob_sha1": "4128dfcb4fc159bd428648239bb5182d4b7cbbd8",
+      "sha256": "05d2ebb52b03be9da81deb15a7f7e1760f18e1017ea3e04a1b489f98f05c4d5e"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/UNIVERSAL_CARRIER_MEGA_ROUND.md",
+      "bytes": 10847,
+      "git_blob_sha1": "6b53b834b94d02d3cb7aba602a342725eaff4095",
+      "sha256": "c1675f3e8de8b24b02a60f858b6e7077a4bf85cfda5a877fbe5ccd498df81823"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/VALIDATION.md",
+      "bytes": 3926,
+      "git_blob_sha1": "d2f5f278102a4e80fd618cbad5bb18303e2f5727",
+      "sha256": "e208c6511f2eafbd2b4ba467fbc2a1df83b7b764570e4446a069c3c4c30c338a"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_ARCHIMEDEAN_PATH.md",
+      "bytes": 7803,
+      "git_blob_sha1": "e6734cef6bd427c9e70346b3acb3d4d2a8f48b03",
+      "sha256": "f2ee9a7c264d65edf3e8280591a4b52a099739fd24ebeb4944ef540927bf0c01"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_NEGATIVE_INTEGER_TANGENT_FAMILY.md",
+      "bytes": 5994,
+      "git_blob_sha1": "b4665e5700cab6d80e3cff6229ba0bc913478693",
+      "sha256": "0ff56ca89360a00c9fe311473ebc8311630c030aa20b0b9137f53579e3f01e2c"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_PASCAL_ALLGRADE_PRIME.md",
+      "bytes": 5942,
+      "git_blob_sha1": "c21647752226c13b31b7a82a516a3de9b60cfa95",
+      "sha256": "179fcdf06587bea986360e5ca10f9296fae2139490dd3832baec576cc38e2f15"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_independent_oracle.py",
+      "bytes": 1099,
+      "git_blob_sha1": "6a2f5e5432b036b50f7e66c013536c69b9809b74",
+      "sha256": "d9e3fe64499423874b98ad9674d4745b6f2791f2e9d7d4dc4352161f4994326a"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/carrier_probe.py",
+      "bytes": 5396,
+      "git_blob_sha1": "fe43082f4fc5d5cbb058609700c94882877b23e0",
+      "sha256": "31133fe8c337300573c8a572694b62294cb6fe7d7ca6f6bcb77bd247ca4f1b71"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/independent_oracle.py",
+      "bytes": 2976,
+      "git_blob_sha1": "796ece545eaafadd6b3b4d7f04670798a2455739",
+      "sha256": "9dda3285423b8724c89f2acff2ea90f5ecf011d4581aecf1b4432657a0552b13"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_independent_oracle.py",
+      "bytes": 1840,
+      "git_blob_sha1": "9f224339e2ec6eebb85c500fe9486d68e613921f",
+      "sha256": "42e535989dea3006b03351973f55423978d421053c8dc1ca5dc7bdbbe7b04bd6"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_probe.py",
+      "bytes": 2729,
+      "git_blob_sha1": "bcd20d462680f10290cc5a7d6a2186911b40fce5",
+      "sha256": "aaff0dcae8d7dd875620847eb00e2f70d2ee288cb60150eee1f780dc39009dd0"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_bbp_source_twisted_zeta.py",
+      "bytes": 2437,
+      "git_blob_sha1": "a9d4add39d6706d5598086bcd8e00836b61761a8",
+      "sha256": "1287f859dc4329d43580cd0c686f420a9e24c26179d6b3cd6570531a6b5643e5"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_carrier_probe.py",
+      "bytes": 5052,
+      "git_blob_sha1": "22f3bce034505e0e35047e17aca6fb8943f41d92",
+      "sha256": "352b9c105f962b2c8db10c581aab857713e82c23534a26b7203bec889ad387d5"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_logjet_probe.py",
+      "bytes": 2639,
+      "git_blob_sha1": "49b469beda88a2fd6a84e351bd73fc306c8f8efa",
+      "sha256": "116946581c5a03e149be2b249d5181faa8032305841a85c0b340099664f65386"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_zeta_allgrade.py",
+      "bytes": 2019,
+      "git_blob_sha1": "15a84ce7f7bd1a5d359329b7f60ba78b70348112",
+      "sha256": "eeb5ae0611b85702d1d78fcfeb43d090a854f302b56cc48fbf3aeac6fde6a8d8"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_zeta_tangent_family.py",
+      "bytes": 2751,
+      "git_blob_sha1": "1d247597c315604193d80481d3bb3311fc881c6e",
+      "sha256": "568c5bba9a197fcf057e48142900da121d3012ace4f90e7920d36306e476b808"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/verify_manifest.py",
+      "bytes": 527,
+      "git_blob_sha1": "efc353109f69b4f82ebc835e56fd22853acb3370",
+      "sha256": "930087556f84e931a8f3cb1501c9b117e1b4ef990c76c0a90ac44b3f42892f83"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_oracle.py",
+      "bytes": 911,
+      "git_blob_sha1": "0aab7071e3cc5238a9c2bb9db4984e68a7a681c0",
+      "sha256": "1731f738e18266a12560cfa9cc9211e418be021c5b0fa6c9bb03ef2e5b71608f"
+    },
+    {
+      "ref": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_independent_oracle.py",
+      "bytes": 1210,
+      "git_blob_sha1": "e06cbb8ebbe99555f1af48d16e31b4d0dfdc9e14",
+      "sha256": "440a324a99bf47eee3d7849e637a2dc72caad36030ae385f0377a886793b18ab"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/CLAIMS.md",
+      "bytes": 4215,
+      "git_blob_sha1": "852ada2bee965f3421541836d4cb21226d2d0623",
+      "sha256": "dda50df339df597e7baa99700ad62339d67959dc4e57e1c8f6153e2c5b1ba01b"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/NEXT.md",
+      "bytes": 2936,
+      "git_blob_sha1": "1240f4c7076376cc67f14cfbf7cf22d30a3a2c1d",
+      "sha256": "461df2ac0cefd22bdbd60f06c67d782d44d533969bc943e0728c24f29a4d6517"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/PISOT_RAMIFICATION.md",
+      "bytes": 15956,
+      "git_blob_sha1": "b911eec1756726c3cb232cba26ca83f771e831a8",
+      "sha256": "2fb770ba33fe15d8063013efcbec860b1f3130a2feb816b81ad40e2ad72a2b10"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/RAW_TEST_LOGS.md",
+      "bytes": 2047,
+      "git_blob_sha1": "9c5474067d4cdf05b129bd30c567d1fa45fbfd9b",
+      "sha256": "bff6b32f6c578635a4c14891644aed4a5229f757e17da88752566711a3b16311"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/README.md",
+      "bytes": 1982,
+      "git_blob_sha1": "3dd08d3b9d8706a1eb3e8397ea35af169d84ab65",
+      "sha256": "91af6bb42bd13bbba57b2f2a25c4a3a5be53740eab1ebd0e7574c9bfa01c33ed"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/VALIDATION.md",
+      "bytes": 2445,
+      "git_blob_sha1": "0207f7fce3ece51601b5c0490da1a8c6df425341",
+      "sha256": "dfd6127a47b2b24a1e7329df5af60e902c2bde243959dc0bc56b0f3c6cecbeec"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/independent_oracle.py",
+      "bytes": 2264,
+      "git_blob_sha1": "a98d20b3b6b180b16804f124d7261176bdf347ad",
+      "sha256": "f6c8689bee359322353e1d4bd31d7ed7dfbc850cfb3a8a3ac1709936212df0b6"
+    },
+    {
+      "ref": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+      "path": "research/2026-10-30/pisot_ramification/pisot_ramification_probe.py",
+      "bytes": 7674,
+      "git_blob_sha1": "7a8f240b065925a25dcb2178a0e132a3a8d21f71",
+      "sha256": "41890884612ab286edf965804dfdf052823e98a6a354fc75d60fd8a57ceb70c9"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/CLAIMS.md",
+      "bytes": 3606,
+      "git_blob_sha1": "8c394e9b86ebd5866441c7ef070a356241dc38eb",
+      "sha256": "6d404092072d6a57c6b48f2066c0d4fd201e1e1889a64cc0eb7c6b765be238ad"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/NEXT.md",
+      "bytes": 3383,
+      "git_blob_sha1": "8f11a07f561fcd5afbf31707d87fde942d81c0de",
+      "sha256": "f4de9c4f3676c1d6421a941e6d45a6ad5f0205d7c1f2456e81b329f15e4258a4"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/README.md",
+      "bytes": 3219,
+      "git_blob_sha1": "578cf8ff29c85bb43d8e9d4e9f8f5e5c91a3f377",
+      "sha256": "b0b364440ef2b390562101e7cfd161a197dbcb8ce7ff213490b247375c862cb1"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/THEOREMS.md",
+      "bytes": 16079,
+      "git_blob_sha1": "d9f6d54efdfdad90f49b6eda7caa474f101b4e59",
+      "sha256": "cbcd410f771bd778748cc57aad47809550740ee4975e530a627d370e9b63a2fc"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/VALIDATION.md",
+      "bytes": 2811,
+      "git_blob_sha1": "fdb93c89bfa6e0180f90710491638213182f9c82",
+      "sha256": "1cf6f1b11318f9360837cd5e8c599c14349ccce8dc565ba2c56c260eb56276b2"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/independent_oracle.py",
+      "bytes": 2057,
+      "git_blob_sha1": "d0cbf09bb0124e880cf9f363b876ddbad88fdb5c",
+      "sha256": "3dd99294ad0bf7853c04da9ff7b1f1bfcdc440b4a2fb8775d07f8f8ceff25669"
+    },
+    {
+      "ref": "5a4acddf08cc7296ddcc64af872495c5b35f4f8f",
+      "path": "research/2026-10-30/pisot_lagrangian_geometry/proof_probe.py",
+      "bytes": 3339,
+      "git_blob_sha1": "ce68fe06fcded27a8ae2bde925d69e2d694679b8",
+      "sha256": "4bdd6f81cd77f378dd723934d2b189e69a1223ce1dfb15e7357cada017383235"
+    }
+  ],
+  "primary_external_references": [
+    {
+      "title": "NIST DLMF 25.2: zeta definition and continuation",
+      "url": "https://dlmf.nist.gov/25.2"
+    },
+    {
+      "title": "NIST DLMF 25.12: polylogarithm",
+      "url": "https://dlmf.nist.gov/25.12"
+    },
+    {
+      "title": "NIST DLMF 5.15: polygamma functions",
+      "url": "https://dlmf.nist.gov/5.15"
+    },
+    {
+      "title": "Bailey, Borwein, Plouffe: On the Rapid Computation of Various Polylogarithmic Constants",
+      "url": "https://www.davidhbailey.com/dhbpapers/digits.pdf"
+    },
+    {
+      "title": "Keith Conrad: The character group of Q",
+      "url": "https://math.stanford.edu/~conrad/154Page/handouts/characterQ.pdf"
+    },
+    {
+      "title": "Arreche and Sitaula: Computing Discrete Residues of Rational Functions",
+      "url": "https://arxiv.org/abs/2402.07328"
+    },
+    {
+      "title": "NIST DLMF 25.4: zeta reflection formulas",
+      "url": "https://dlmf.nist.gov/25.4"
+    },
+    {
+      "title": "NIST DLMF 5.4: Gamma and digamma integer values",
+      "url": "https://dlmf.nist.gov/5.4"
+    },
+    {
+      "title": "NIST DLMF 25.6: integer zeta values",
+      "url": "https://dlmf.nist.gov/25.6"
+    }
+  ]
+}
