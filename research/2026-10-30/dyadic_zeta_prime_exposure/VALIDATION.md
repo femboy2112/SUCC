@@ -31,4 +31,6 @@ OK
 
 **GitHub artifact verification:** the uploaded dyadic_zeta_prime_probe.py Git blob SHA was re-fetched and exactly matched the pre-upload local Git blob SHA: 20418fe17dc48e2cb00cae486fd3d4d7d17b6b3b. This verifies file identity, not remote execution.
 
+**Additional independent denominator-survival probe:** denominator_survival_probe.py was run locally; 3/3 unittest methods PASS (0.031s). It checks the full p^(1+v_p(m)) denominator product and the p-adic Stirling-numerator cancellation law for every even m=2..100, and the first-prime appearances through 101. Its uploaded Git blob SHA was re-fetched and matched the pre-upload local Git SHA: 8581f6df80fcabdff5999ebefa3bbbf6475c6578. Combined focused total: **14/14 test methods across two files**. These do not constitute a full-SUCC-suite result.
+
 **Not run or claimed here:** the full native SUCC ~10k tests, provenance verification, both main foundation probes, hosted CI, a Lean proof, or a blind independent referee. The finite tests calibrate the implementation; all-order mathematics depends on the explicit derivations and cited classical input. No run of pi-digit signed Weyl cancellation or RH is claimed.
