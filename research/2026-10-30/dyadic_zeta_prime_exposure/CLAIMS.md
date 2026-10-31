@@ -11,6 +11,7 @@
 | DY-07 | Prime/Gamma/harmonic logarithmic-derivative identity | DISCLOSED (classical) | README §6, derivative of functional eq + positive Euler product | No convergent negative-side Euler product, no RH conclusion |
 | DY-08 | 1+2+4+...=-1 only under a stated meromorphic/f.p. prescription | DISCLOSED (scoped) | README §7 | Starting at 2 gives -2, and ordinary series diverges |
 | DY-09 | Pascal inverse central-binomial series computes zeta(2) | CORROBORATED (classical published identity) | DLMF 25.6.8, README §6 | Not a BBP π-digit Weyl estimate |
+| DY-11/12 | Complete denominator product, and precise odd-prime valuations of the finite Stirling numerator | DISCLOSED (classical von Staudt B.4) | DENOMINATOR_SURVIVAL.md; Milnor–Stasheff App. B | 17 and 31 exposed then cancelled; 3-test probe through m=100 |
 | DY-10 | Dyadic/Gamma/prime transport implies π normality or RH | UNVERIFIED / NOT CLAIMED | README §8 | Same-source nonnormal counterseed; #421 whole-polar-data shadow |
 
 All local exact test outcomes are finite-scope **OBSERVED** and are separately recorded in VALIDATION.md. Algebraic proof labels do not mean Lean-verified, blind-reviewed, or novel mathematics. The only new-to-SUCC contribution claimed is the combined typed construction, exact interfaces and hostile completion tests, not mathematical priority.
