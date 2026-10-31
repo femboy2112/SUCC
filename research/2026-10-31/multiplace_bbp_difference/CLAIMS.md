@@ -14,3 +14,4 @@
 | TD-09 | Exact rational finite probes | 22 discoverable root tests plus mathematical paper derivations | OBSERVED/TESTABLE FINITE | Hosted exact-head CI and independent proof review separate from formal truth |
 
 Original source and the user's proposed multi-series construction are retained exactly. The source difference uses rationally continued negative indices only as algebraic comparisons, not as new physical or digit observations.
+| TD-07C | m≥2, original rational source, p3 good pole classes and finite y mod3^K | Good-class 3-adic L1 source norm equals 4/3−7/3^m; full finite-residue p3 norm mean ≥(2/3)(K−m−1) for K≥m+2 | PROVED LOCAL | Real bounded phase and p3 unbounded norm are not interchangeable; p2 uniform convergence remains valid |
