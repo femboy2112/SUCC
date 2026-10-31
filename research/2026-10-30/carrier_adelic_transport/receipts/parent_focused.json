@@ -1,0 +1,20 @@
+{
+  "name": "parent_focused",
+  "command": [
+    "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+  "started_utc": "2026-10-31T01:05:40.771233+00:00",
+  "elapsed_seconds": 20.518,
+  "returncode": 0,
+  "log_sha256": "29d45caa672195c6cd1b3321d67ca900cad0f69e851469b8d2691b2f46398b0c",
+  "log": "parent_focused.log"
+}

@@ -1,0 +1,149 @@
+{
+  "scope": "baseline",
+  "all_returncodes_zero": false,
+  "results": [
+    {
+      "name": "native_unittest",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:40.597244+00:00",
+      "elapsed_seconds": 1479.441,
+      "returncode": 1,
+      "log_sha256": "8334037aae588b00a3a12dee93b9d111fc3f92aef95a0852595311e297f754f4",
+      "log": "native_unittest.log"
+    },
+    {
+      "name": "observer_foundations",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:40.598294+00:00",
+      "elapsed_seconds": 0.173,
+      "returncode": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "log": "observer_foundations.log"
+    },
+    {
+      "name": "ordinal_succ",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:40.653717+00:00",
+      "elapsed_seconds": 3.323,
+      "returncode": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "log": "ordinal_succ.log"
+    },
+    {
+      "name": "parent_bbp_twisted_zeta_independent_oracle",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_independent_oracle.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:46.811218+00:00",
+      "elapsed_seconds": 0.781,
+      "returncode": 0,
+      "log_sha256": "ea75cfc4a8c3d4aad90137489261fa774121f59b34fc798130f4913e70e03b87",
+      "log": "parent_bbp_twisted_zeta_independent_oracle.log"
+    },
+    {
+      "name": "parent_focused",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:40.771233+00:00",
+      "elapsed_seconds": 20.518,
+      "returncode": 0,
+      "log_sha256": "29d45caa672195c6cd1b3321d67ca900cad0f69e851469b8d2691b2f46398b0c",
+      "log": "parent_focused.log"
+    },
+    {
+      "name": "parent_independent_oracle",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier/independent_oracle.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:43.976478+00:00",
+      "elapsed_seconds": 0.957,
+      "returncode": 0,
+      "log_sha256": "172097cef523c0cb046a2ef1ff09a12f22449319b1e42c3d71c471c0370a6267",
+      "log": "parent_independent_oracle.log"
+    },
+    {
+      "name": "parent_logjet_independent_oracle",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier/logjet_independent_oracle.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:44.934445+00:00",
+      "elapsed_seconds": 0.583,
+      "returncode": 0,
+      "log_sha256": "78fd04a8da7995cccc43ad451df1e9ee322630d9d1509e845942963f3b5132d7",
+      "log": "parent_logjet_independent_oracle.log"
+    },
+    {
+      "name": "parent_zeta_allgrade_oracle",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier/zeta_allgrade_oracle.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:45.518111+00:00",
+      "elapsed_seconds": 0.538,
+      "returncode": 0,
+      "log_sha256": "4b22c0147d46890e24cb0d514a2cf317e8c780e368560c1bf113f02d7d72e0d9",
+      "log": "parent_zeta_allgrade_oracle.log"
+    },
+    {
+      "name": "parent_zeta_tangent_independent_oracle",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "/workspace/scratch/95e8f4273943/SUCC/research/2026-10-30/universal_nz_carrier/zeta_tangent_independent_oracle.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:46.056491+00:00",
+      "elapsed_seconds": 0.754,
+      "returncode": 0,
+      "log_sha256": "2068fea0f706831a82818fc0c7c0b1a1c663a8798f5376511ce00bedfd270816",
+      "log": "parent_zeta_tangent_independent_oracle.log"
+    },
+    {
+      "name": "source_provenance",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:05:40.596752+00:00",
+      "elapsed_seconds": 0.056,
+      "returncode": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "log": "source_provenance.log"
+    }
+  ]
+}
