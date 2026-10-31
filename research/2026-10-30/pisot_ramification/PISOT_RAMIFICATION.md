@@ -140,6 +140,17 @@ A theorem due to Pisot, developed by Salem/Meyer and in later algorithmic work, 
 
 **Hard scope limit:** A rational polynomial representation does not generally yield (i) a nonnegative-integer transfer matrix, (ii) a unimodular integral order change, (iii) a fixed finite positive sum of Pisot-recursive sequences, (iv) the original recurrence's time evolution as a conjugate operator, or (v) any normality/mixing statement about a selected digit stream. Some finite-state recurrences have additional spectral factors from number fields without real embeddings. Claim of universal **positive finite Pisot decomposition** is UNVERIFIED.
 
+### Two further hostile controls: positive coefficients and inverse amplification
+
+A **positive integral matrix** is not the same requirement as a **nonnegative-coefficient polynomial** \(P(A)\). For example,
+\[
+A_+=\begin{pmatrix}2&1\\1&3\end{pmatrix},
+\quad \chi_{A_+}(x)=x^2-5x+5,
+\]
+has two real algebraic conjugates \(\alpha_+=(5+\sqrt5)/2>1\), \(\beta_+=(5-\sqrt5)/2>1\). Every nonconstant \(P\in\mathbb Z_{\ge0}[x]\) has \(P(\beta_+)>1\), so **no such nonnegative-coefficient polynomial** can make its dominant root Pisot while generating this field. Nevertheless \(A_+-I=\begin{pmatrix}1&1\\1&2\end{pmatrix}\) is still a strictly positive integer matrix, with Pisot-unit polynomial \(x^2-3x+1\). Thus the sign of a polynomial coefficient and the sign of the resulting interaction matrix are different constraints.
+
+Even where a positive polynomial carrier \(B\) exists, the original non-Pisot dynamics does not become contracting under the **inverse observation**. In the cubic example the non-dominant eigenvalues of B have modulus \(\Theta^{-1/2}\approx0.36918\), while B^{-1} has corresponding eigenvalue modulus \(\sqrt\Theta\approx2.7087\). The exact observer \(A=2I-B^{-1}\) requires those expanding inverse modes and a signed subtraction; they cannot be discarded merely because the Pisot carrier forward iterates contract in the other embeddings. In exact integer arithmetic the map is lossless, but finite-precision numerical inversion can be exponentially ill-conditioned. **This prevents using Pisot conjugate contraction as a shortcut to an arithmetic mixing or π-normality theorem.**
+
 ## PR-06. SUCC observer/carrier truth and the next decisive probe
 
 Build the generic Pascal/Bratteli finite path grammar over N first. Distinguish:
