@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/observer_foundations_probe.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion",
+  "start_utc": "2026-10-30T23:57:22.756658+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.224,
+  "end_utc": "2026-10-30T23:57:22.980215+00:00",
+  "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+  "log_bytes": 2498
+}

@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-10-30T23:59:56.043021+00:00",
+  "authority": "byte/provenance integrity only; paper proofs and finite tests separately scoped",
+  "external_inputs": [
+    "https://dlmf.nist.gov/5.9.E7",
+    "https://dlmf.nist.gov/5.4.E6"
+  ],
+  "artifacts": {
+    "KERNEL_TRANSPORT.md": {
+      "bytes": 11194,
+      "sha256": "58003553e965fce21c56f1bb8a89d662103560f76972d72ebd1295395bc557ea"
+    },
+    "PREREGISTRATION.md": {
+      "bytes": 2553,
+      "sha256": "3926e177fb5e82d0dbe0c7a0d657a5b3c9141ece84e240f3d76210fb092ef85e"
+    },
+    "ROOT_INTERVAL_REVIEW.md": {
+      "bytes": 4846,
+      "sha256": "b199aa31da18e78988b9cd0164b5364cf26f91c4ec612890b5ec4998a2a09f5b"
+    },
+    "VALIDATION.md": {
+      "bytes": 3596,
+      "sha256": "1f8d0bbe11749e62560414dd324ef74208917e51b9a3f6c9679e6f87e46a59fa"
+    },
+    "independent_oracle.py": {
+      "bytes": 4219,
+      "sha256": "a5ceac14bb7e3226b869023988d3805cd1362776b5426a37d8af3a401af0ef6a"
+    },
+    "kernel_transport.py": {
+      "bytes": 3550,
+      "sha256": "3be15710e71eb4f838cd9ef0e34b526579af61bde13c1e25fcd6ed301cd4c0d4"
+    },
+    "oracle_receipt.json": {
+      "bytes": 4212,
+      "sha256": "5acb8283220929fc437e8db847595d658dfc2d179fce7be1c6fcc52adb51b7b2"
+    },
+    "oracle_receipt.json.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "probe_receipt.json": {
+      "bytes": 3245,
+      "sha256": "5974aa91eec41f382244894358f1737855b2dc88e979820fe2bfcd65b18d7339"
+    },
+    "probe_receipt.json.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "root_interval_review.json": {
+      "bytes": 1968,
+      "sha256": "536229c1d6025c41a88c30a6faa98a4110878ba5a52a9c5ca864b40098cc0eeb"
+    },
+    "root_interval_review.py": {
+      "bytes": 4208,
+      "sha256": "2c0b1d63f6e5eda76b7caf3f638c122c95730cf2bc7d98ae1ca72ef8b07fc125"
+    },
+    "run_validation.py": {
+      "bytes": 1815,
+      "sha256": "caa16f352449a845f8362ff2324a94638aea67a99a967d8c78f981e5e96258a6"
+    },
+    "source_manifest.py": {
+      "bytes": 2928,
+      "sha256": "80f509da0083eef02495a3a97b61e78c8383fe147cc901801aaaccc22f7d8031"
+    },
+    "test_kernel_transport.py": {
+      "bytes": 4196,
+      "sha256": "ef9c5f9899792bf6dd4431c8b07b109d2b9f2b982272f98a969d9400394c6a7a"
+    },
+    "tests.log": {
+      "bytes": 1661,
+      "sha256": "aab448c8a892f21be9d90d853029e054ec84512c7d0a8a6351d58437258851a2"
+    },
+    "tests.log.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "validation_receipt.json": {
+      "bytes": 2291,
+      "sha256": "a2f711d11cabbf067414d96280bb4d9d3bc6b724c187f537928a6a4153e96001"
+    }
+  },
+  "read_only_git_inputs": [
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/CLAIMS.md",
+      "sha256": "1bd9c127a48ba6eff5e9b0746eb2d5d6c5e67cd21f6f0289535e6b2c999ce996"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/CODEX_ASTRA_ULTRA_MEGA_ROUND.md",
+      "sha256": "331e936066c9e74230b44c434fb0f4dc261a6a5fe8ca5a9b26f1049141d9e464"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/FINITE_BAND_CERTIFICATE.md",
+      "sha256": "c9dc8ccbe63e18b14678d7642501f96f45452d4bf66877d1dda76794be4e1b56"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/PROOF_ROUTE_LEDGER.md",
+      "sha256": "30beeadded2f26eb3625977f4a1a35444feb5a0f29d98d4299ebd66da0b2a424"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/README.md",
+      "sha256": "3abdcf063b13e2e1ae238813e70716a28f2506338218fd8aaf52eb439b6761b8"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/SOURCE_MANIFEST.json",
+      "sha256": "ea367692527b7adaaf3431493db89860191efce798f08a8ab2395d65c52a6ca0"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/VALIDATION.md",
+      "sha256": "6cbcc3949321aa969457af32b04936413d9a69a5a1af59d3909122908691396b"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/finite_band.py",
+      "sha256": "7f667cf83148ee044e5427e57305174f8d5e692e4d24114f7759ba3ddcad09f7"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/independent_oracle.py",
+      "sha256": "65ba93ccd5e28a4a0ac15754dcfa6fbb01162cb06f3f9de895c765ddee8e54a3"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/independent_receipt.json",
+      "sha256": "f6975d57c242a2cd5b251df79f3b0bd0e3cd1d28130ff0561df31d5cbde3d3a3"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/test_finite_band.py",
+      "sha256": "0e92adfa9f3f6b84360cecc6bc49b9cc794b2e7fd1530a8634173cc98cd5682d"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/codex_finite_band_crt/tests.log",
+      "sha256": "a5d473ab6094774cf3567aca5e51ed2ef20f3c0c4e3d5f4a8057d13ecd76a9db"
+    },
+    {
+      "commit": "5a54cd1a4200f3b0e673f6c3feecff76bf6b6dc6",
+      "path": "research/2026-10-30/deepseek_cylinder_fanout/MOVING_SCALE_THEOREM.md",
+      "sha256": "e8208882065a696485eb52b8b697dd3cc5c86a31162a472c5d72af75e6071eeb"
+    },
+    {
+      "commit": "3857e70472cac7c572528cc6d4198246e57d36df",
+      "path": "research/2026-10-30/carrier_realization_quotient/CARRIER_REALIZATION_QUOTIENT.md",
+      "sha256": "a5e63459d37b81d34ac117c422b019ca1c1d1690e9b583400ac1bd6ba64f630d"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "research/2026-10-30/selected_boundary_slip/THEOREMS.md",
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+      "path": "docs/METHOD.md",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    }
+  ],
+  "local_review_inputs": [
+    {
+      "path": "research/2026-10-30/selected_finiteband/certified_band.py",
+      "sha256": "ae4349d8fee04b3da04351202f48ad2cde68daac4ec59b991c652be43c0cd947"
+    },
+    {
+      "path": "research/2026-10-30/selected_finiteband/cylinders/CYLINDERS_AND_STONEHAM.md",
+      "sha256": "a2c18866434bd3055f404ee733a19220b09f166092d049398476a5d7f4f2162c"
+    }
+  ]
+}

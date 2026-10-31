@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "counts": {
+    "artifacts": 156,
+    "python": 29,
+    "json": 64,
+    "links": 12,
+    "command_logs": 46,
+    "nested_artifacts": 78,
+    "source_inputs": 40
+  },
+  "retained_failed_commands": [
+    "receipts/baseline-catalog.json",
+    "receipts/math-catalog.json",
+    "receipts/source-audit-final.json",
+    "receipts/source-audit.json"
+  ],
+  "authority": "byte/provenance/structure only"
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "precision_dps": 90,
+  "machin_digits": 320,
+  "independent_source_slip_checks": 320,
+  "fresh_stages": [
+    {
+      "c": 3,
+      "p": 3,
+      "grid_size": 9,
+      "multiplicity": 6
+    },
+    {
+      "c": 3,
+      "p": 6,
+      "grid_size": 243,
+      "multiplicity": 6
+    },
+    {
+      "c": 5,
+      "p": 4,
+      "grid_size": 125,
+      "multiplicity": 20
+    }
+  ],
+  "exact_gram_checks": 25,
+  "periodic_energy_rows": [
+    {
+      "H": 8,
+      "energy": "5.83533111839824614054891940478",
+      "lower": "4"
+    },
+    {
+      "H": 17,
+      "energy": "8.5",
+      "lower": "17/2"
+    },
+    {
+      "H": 34,
+      "energy": "17.0",
+      "lower": "17"
+    },
+    {
+      "H": 128,
+      "energy": "64.1147081948998903837843074628",
+      "lower": "64"
+    },
+    {
+      "H": 257,
+      "energy": "128.507519347196125898072268933",
+      "lower": "257/2"
+    }
+  ],
+  "stoneham_energy_rows": [
+    {
+      "c": 3,
+      "N": 82,
+      "H": 8,
+      "surrogate_energy": "1.086499297912981309172936",
+      "completed_truncation_energy": "1.087581499961008994642207",
+      "upper": "5.741420236951846598386529",
+      "omitted_energy_lt_1e_minus_100": true
+    },
+    {
+      "c": 5,
+      "N": 251,
+      "H": 16,
+      "surrogate_energy": "1.439718792868418571449337",
+      "completed_truncation_energy": "1.443138496845289967549274",
+      "upper": "9.214352025379849249739528",
+      "omitted_energy_lt_1e_minus_100": true
+    },
+    {
+      "c": 3,
+      "N": 730,
+      "H": 32,
+      "surrogate_energy": "1.025433635187941523418275",
+      "completed_truncation_energy": "1.025830555580006793295331",
+      "upper": "4.905257186278377989829363",
+      "omitted_energy_lt_1e_minus_100": true
+    }
+  ],
+  "scope": "exact rational identities plus numerical phase checks with declared tail bounds"
+}

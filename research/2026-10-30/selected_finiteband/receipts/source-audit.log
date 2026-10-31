@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/source_audit.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/selected_finiteband/source_audit.py", line 29, in main
+    raw=(base/path).read_bytes()
+  File "/home/leah/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/home/leah/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/cylinder_tiling_collision/research/2026-10-30/cylinder_tiling_collision/README.md'

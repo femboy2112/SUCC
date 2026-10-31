@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "reviewed_code_sha256": "ae4349d8fee04b3da04351202f48ad2cde68daac4ec59b991c652be43c0cd947",
+  "exact_interval_operations": 100,
+  "independent_Machin": [
+    {
+      "bits": 97,
+      "bbp_width_units": 26
+    },
+    {
+      "bits": 193,
+      "bbp_width_units": 50
+    },
+    {
+      "bits": 389,
+      "bbp_width_units": 99
+    },
+    {
+      "bits": 521,
+      "bbp_width_units": 132
+    }
+  ],
+  "rational_unit_powers": [
+    {
+      "unit": [
+        3,
+        4,
+        5
+      ],
+      "exact_powers_checked": 1001
+    },
+    {
+      "unit": [
+        -3,
+        4,
+        5
+      ],
+      "exact_powers_checked": 1001
+    },
+    {
+      "unit": [
+        5,
+        -12,
+        13
+      ],
+      "exact_powers_checked": 1001
+    },
+    {
+      "unit": [
+        7,
+        24,
+        25
+      ],
+      "exact_powers_checked": 1001
+    }
+  ],
+  "exact_special_trig_points": 4,
+  "high_precision_trig_points": 6,
+  "independent_tail_enclosures": [
+    {
+      "n": 1,
+      "root_width_units": 41
+    },
+    {
+      "n": 7,
+      "root_width_units": 41
+    },
+    {
+      "n": 31,
+      "root_width_units": 41
+    },
+    {
+      "n": 97,
+      "root_width_units": 41
+    },
+    {
+      "n": 257,
+      "root_width_units": 41
+    }
+  ],
+  "exact_original_states": 53,
+  "energy_enclosures": [
+    {
+      "N": 11,
+      "H": 7,
+      "value": "1.4159358483642819556926355352169171",
+      "enclosure_width_units": 20790
+    },
+    {
+      "N": 11,
+      "H": 19,
+      "value": "3.0678018656539103019116144780156654",
+      "enclosure_width_units": 274068
+    },
+    {
+      "N": 23,
+      "H": 7,
+      "value": "1.3941697926544233341679712330483957",
+      "enclosure_width_units": 20390
+    },
+    {
+      "N": 23,
+      "H": 19,
+      "value": "2.1409003855608408404907804483944616",
+      "enclosure_width_units": 174353
+    }
+  ],
+  "authority": "same-model complementary review; high precision checks not independent proof"
+}
