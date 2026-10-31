@@ -66,4 +66,3 @@ class AllNegativeIntegers(unittest.TestCase):
         self.assertLess(abs(deriv-target),bound)
 
 if __name__ == '__main__':unittest.main()
-
