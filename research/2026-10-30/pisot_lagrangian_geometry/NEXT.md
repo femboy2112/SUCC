@@ -1,0 +1,16 @@
+# Next source-adequacy and action probes — PIG handoff
+
+**Do not stop with visually compelling sixfold holonomy.** The pair (A,B) is a constructed witness. The source derived from π supplies forcing, but it does not determine these links. A proof of physical curvature or of π normality requires substantially more.
+
+## Immediate discriminating probes (preregister before fitting)
+
+1. **Independently select the lattices and glue them.** First apply the common-field commutation no-go (PIG-09): genuine multiplication links α,β in one commutative arithmetic field cannot produce nontrivial commutator curvature. The existing PIG witness depends on a chosen identification between Q(√5) and Q(√3) rank-two lattices. Obtain a source-authenticated gluing/connection map (or prove its absence). Attempt to derive a rank-two Fibonacci/Pisot link and a second independent link from the same authentic SUCC Pascal/Gamma/posterior/prime-carry carrier. Require a natural transformation commuting with original four-pole r(n) and U_0=0. If different sources force different links, preserve that specificity. The flat B=A² and unimodular conjugate controls must remain.
+2. **Metric/link compatibility.** Compare PIG GL₂(Z) holonomy with PR #402's Fisher H³ source metric on the SAME declared observer parameter manifold. A transport preserving a chosen metric must explicitly satisfy Tᵀg_(end)T=g_(start). Constant Gram q_H is not a substitute for the full source-derived Fisher geometry.
+3. **Time-dependent non-abelian curvature.** Let temporal/spatial link transport be source-evolved and prove a covariant discrete Bianchi/flatness identity. Detect if apparent curvature is actually a gauge-frame reset. Keep orientation/parity sheet because det A=−1 prevents one-step real logarithm.
+4. **Physical Lagrangian compatibility.** Separate positive Euclidean cell energy from Lorentzian kinetic-minus-potential equations; if claiming the latter derive an Euler–Lagrange system with well-posed initial/boundary data and apply discrete inverse-Helmholtz tests, not merely a multiplier action that repackages the known recurrence.
+5. **Source-selected signed phase.** Replace source-only f by a non-circular source+history carrier whose measurable Wilson/plaquette signature changes between authentic zero seed and s*=−π/16 while failing on Gamma fake, finite jet-matched mutants, rational α=1, and alias controls. A hand-defined phase that secretly contains the desired Weyl mean is prohibited.
+6. **Genuine long-time estimate.** Establish a signed o(N) bound for T_N(h)=Σ_(n≤N)e(hU_n(0)) for every fixed h≠0, not the vacuous normalized o(N). Finite energy/coherence/normality of a probability observer do not replace this gate.
+
+**Most informative negative outcomes:** exact flatness under all source-authentic maps; a hidden link gauge yielding zero holonomy; non-convergence of a proposed continuum limit; same Pisot+Gamma action for the known nonnormal counterseed. Preserve all as signed countermodels rather than rebranding them.
+
+**Recent source branches:** #390–394 (triangle extrusion/Lorentz), #396 (human frame reset), #402/#404 (H³/Noether), #408/#413 (triangle/fibonacci snapshot identifiability), #416/#417 (universal N/Z and original-source potential). These are unmerged independent or stacked research trees; do not cherry-pick or merge casually.
