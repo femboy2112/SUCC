@@ -169,5 +169,26 @@ class ExceptionalBorelSourceTests(unittest.TestCase):
                 self.assertEqual((16*exceptional_integer_orbit_phase(n,a))%1,
                     exceptional_integer_orbit_phase(n+1,a))
 
+
+class DualSpectralCarrierTests(unittest.TestCase):
+    def test_18_exact_rank_two_spectral_actions_and_sparse_density(self):
+        from two_three_carrier import solenoid_dual_shift,semigroup_16_3_below
+        for x in (Fraction(1),Fraction(1,6),Fraction(-5,72)):
+            for a,b in ((-3,5),(0,0),(2,-4),(7,3)):
+                self.assertEqual(
+                    solenoid_dual_shift(solenoid_dual_shift(x,a,0),0,b),
+                    solenoid_dual_shift(solenoid_dual_shift(x,0,b),a,0))
+        with self.assertRaises(ValueError):
+            solenoid_dual_shift(Fraction(1,5),1,1)
+        for X in (16,100,1000,100000,100000000):
+            vals=semigroup_16_3_below(X)
+            self.assertEqual(len(vals),len(set(vals)))
+            self.assertEqual(vals[0],1)
+            self.assertTrue(all(v<=X for v in vals))
+            import math
+            bound=(int(math.log(X,16))+1)*(int(math.log(X,3))+1)
+            self.assertLessEqual(len(vals),bound)
+        self.assertLess(len(semigroup_16_3_below(100000000)),1000)
+
 if __name__=="__main__":
     unittest.main()
