@@ -137,6 +137,42 @@ The completed Riemann zeta contains the genuine Archimedean Gamma factor \(\pi^{
 
 The literal quotient line→circle is \(\mathbb R\to\mathbb R/\mathbb Z\); they are NOT homeomorphic or algebraically identical. The quotient forgets the integer winding/carry. Any reconstruction using SUCC's Pascal triangles, adelic solenoids or arithmetic prime spectra must preserve the source-selected real phase, its integer carries, and all limits in the correct topology.
 
+## 7b. CP-10: authentic BBP source realizes the cross-prime Pascal law EXACTLY (PROVED LOCAL from inherited DSI)
+
+This theorem connects the constructed topological parameterization to **the original zero-selected signed four-pole BBP recurrence**, rather than sampling an unrelated model.
+
+Main XVII's inherited DSI-4 proves that \(n\mapsto U_n\bmod2^a\) is an exact permutation of the residues in every complete block of \(2^a\) consecutive times, since the original 2-adic source interpolation \(F_2\) is an isometry and satisfies \(F_2(0)=U_0=0\).
+
+By CP-04, the ternary prefix \(H(x)\bmod3^b\) is determined by \(x\bmod2^{2b}\). Set \(M=2^{2b}\). Thus for **every starting time A**, every ternary residue c, and the exact original BBP source,
+\[
+\boxed{
+\#\{A\le n<A+M:\ H(U_n)\equiv c\bmod3^b\}
+=\#\{0\le x<M:\ H(x)\equiv c\bmod3^b\}.
+}\tag{CP-10a}
+\]
+Here U_n is interpreted in Z₂ using its odd reduced rational denominator; H is the explicitly declared nonadditive homeomorphism of §3. The left side is a genuine source-dependent statement, the right side a finite and exact rational/integer counting problem.
+
+At b=1 (M=4), the distribution is explicitly
+\[
+\boxed{\Pr(H(U_n)\bmod3=0,1,2)=(1/2,1/4,1/4).}\tag{CP-10b}
+\]
+This is **not** the 3-adic Haar law \((1/3,1/3,1/3)\). It is a precise source-authenticated example that *perfect* local 2-adic arithmetic equidistribution can become a nonuniform 3-adic probability law under a lawful but non-Haar coordinate change.
+
+**Joint authenticated clock:** the true 3-adic time clock \(16^n\bmod3^b\) has period \(L=3^{b-1}\). By the parent #427 CRT theorem, \((U_n\bmod M,16^n\bmod3^b)\) visits every product state exactly once per \(ML\) consecutive time indices. Applying H to its first coordinate gives the exact factorization
+\[
+\#\{A\le n<A+ML:\ (H(U_n)\bmod3^b,16^n\bmod3^b)=(c,z)\}
+=\#\{0\le x<M:H(x)\equiv c\bmod3^b\}
+\]
+for every \(z\in1+3\mathbb Z/3^b\mathbb Z\). This is a finite **joint product law** with a biased H-pushforward factor; it does not equate the transported source with the native 3-adic BBP value or with the Archimedean π phase.
+
+**Source/Pascal triangle calibration:** Within an \(M'=2^{2m}\) time block, condition on \(U_n+1\) being a 2-adic unit. Exactly half the times satisfy this, and their first \(2m-1\) freely varying binary unit bits are Haar-uniform by the DSI permutation. Applying g gives precisely the conditional unit prefix word law from CP-06; consequently the short-codeword count has the exact Pascal distribution
+\[
+\boxed{\Pr_{\mathrm{BBP},\,\mathrm{unit}}(A=k)={m-1\choose k}2^{-(m-1)}}
+\]
+for the \(m-1\) ternary tail symbols. This is SOURCE-AUTHENTICATED 2-adic local probability. It does **not** assert that \(U_n\) is 3-adically integral (it need not be), or that π's real-circle orbit is normal.
+
+Finite exact tests cross-check b=1..6 complete source periods, b=1..4 full joint clock periods, and m=1..6 conditioned Pascal paths. Every all-horizon assertion is justified by inherited DSI plus the declared exact modulus, not by extrapolating these tests.
+
 ## 8. Source-aware verdict and next falsification
 
 - **DISCLOSED/CLASSICAL:** CP-01 binomial transform; CP-02 local interpolation/nonextension; CP-03 explicit Cantor dynamical conjugacy; CP-04 no pro-p group iso and quantitative modulus; CP-05/06 Haar obstruction and exact q-sensor defect; CP-07/08 established Pisot algebraic generator and Schmidt eventual-periodic expansion, plus explicit Pisot-shift failure.
