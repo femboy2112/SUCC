@@ -1,0 +1,97 @@
+{
+  "status": "CERTIFIED FINITE ONLY",
+  "method": "outward integer Taylor intervals; positive BBP pi enclosure and Green tail",
+  "code_sha256": "ae4349d8fee04b3da04351202f48ad2cde68daac4ec59b991c652be43c0cd947",
+  "rows": [
+    {
+      "N": 256,
+      "H": 8,
+      "mode": "original",
+      "lower": "1.025845293281",
+      "upper": "1.025845293282",
+      "dyadic_lower": "349077064492448245933755916123612205200",
+      "dyadic_upper": "349077064492448245933755916123612211081",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 256,
+      "H": 128,
+      "mode": "original",
+      "lower": "1.464344785506",
+      "upper": "1.464344785507",
+      "dyadic_lower": "498290709600613436480306728733084722105",
+      "dyadic_upper": "498290709600613436480306728733086387999",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 256,
+      "H": 512,
+      "mode": "original",
+      "lower": "3.009478916426",
+      "upper": "3.009478916427",
+      "dyadic_lower": "1024072608880313350418039391464822699694",
+      "dyadic_upper": "1024072608880313350418039391464849094400",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 1024,
+      "H": 8,
+      "mode": "original",
+      "lower": "1.007774511587",
+      "upper": "1.007774511588",
+      "dyadic_lower": "342927896125436960832563463784122238840",
+      "dyadic_upper": "342927896125436960832563463784122241608",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 1024,
+      "H": 128,
+      "mode": "original",
+      "lower": "1.115378537901",
+      "upper": "1.115378537902",
+      "dyadic_lower": "379543648890023235574762580753455646388",
+      "dyadic_upper": "379543648890023235574762580753456427821",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 1024,
+      "H": 512,
+      "mode": "original",
+      "lower": "1.459511477113",
+      "upper": "1.459511477114",
+      "dyadic_lower": "496646019980344409060638079763875782873",
+      "dyadic_upper": "496646019980344409060638079763888198118",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 4096,
+      "H": 8,
+      "mode": "original",
+      "lower": "1.001515510835",
+      "upper": "1.001515510836",
+      "dyadic_lower": "340798068535265705583700248731046702913",
+      "dyadic_upper": "340798068535265705583700248731046704404",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 4096,
+      "H": 128,
+      "mode": "original",
+      "lower": "1.025102348841",
+      "upper": "1.025102348842",
+      "dyadic_lower": "348824253599857696804180852965566269329",
+      "dyadic_upper": "348824253599857696804180852965566623307",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 4096,
+      "H": 512,
+      "mode": "original",
+      "lower": "1.107927975730",
+      "upper": "1.107927975731",
+      "dyadic_lower": "377008353959423912302654103342304264875",
+      "dyadic_upper": "377008353959423912302654103342310151505",
+      "denominator_power_two": 128
+    }
+  ]
+}

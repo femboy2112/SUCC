@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "reviewed_sha256": "a2c18866434bd3055f404ee733a19220b09f166092d049398476a5d7f4f2162c",
+  "transition_configurations": 16984,
+  "constant_word_positions": 768,
+  "periodic01_positions": 100,
+  "exact_grid_inequalities": 2048,
+  "stages": [
+    {
+      "c": 3,
+      "p": 1,
+      "q": 1,
+      "multiplicity": 6
+    },
+    {
+      "c": 3,
+      "p": 2,
+      "q": 3,
+      "multiplicity": 6
+    },
+    {
+      "c": 3,
+      "p": 3,
+      "q": 9,
+      "multiplicity": 6
+    },
+    {
+      "c": 5,
+      "p": 1,
+      "q": 1,
+      "multiplicity": 20
+    },
+    {
+      "c": 5,
+      "p": 2,
+      "q": 5,
+      "multiplicity": 20
+    },
+    {
+      "c": 5,
+      "p": 3,
+      "q": 25,
+      "multiplicity": 20
+    }
+  ],
+  "scope": "same-model independent finite implementation plus paper audit; no external referee"
+}

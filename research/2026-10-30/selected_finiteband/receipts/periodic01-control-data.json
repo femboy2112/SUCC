@@ -1,0 +1,37 @@
+{
+  "status": "CERTIFIED FINITE ONLY",
+  "method": "outward integer Taylor intervals; positive BBP pi enclosure and Green tail",
+  "code_sha256": "ae4349d8fee04b3da04351202f48ad2cde68daac4ec59b991c652be43c0cd947",
+  "rows": [
+    {
+      "N": 1024,
+      "H": 8,
+      "mode": "periodic01",
+      "lower": "5.834568712817",
+      "upper": "5.834568712818",
+      "dyadic_lower": "1985400851560410290281314317102982763201",
+      "dyadic_upper": "1985400851560410290281314317102982781624",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 1024,
+      "H": 128,
+      "mode": "periodic01",
+      "lower": "63.927235603178",
+      "upper": "63.927235603179",
+      "dyadic_lower": "21753311041762116653489327261099035566291",
+      "dyadic_upper": "21753311041762116653489327261099039714497",
+      "denominator_power_two": 128
+    },
+    {
+      "N": 1024,
+      "H": 512,
+      "mode": "periodic01",
+      "lower": "254.116767226350",
+      "upper": "254.116767226351",
+      "dyadic_lower": "86471455026079547600603096439713689068260",
+      "dyadic_upper": "86471455026079547600603096439713755245890",
+      "denominator_power_two": 128
+    }
+  ]
+}

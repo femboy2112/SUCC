@@ -1,0 +1,147 @@
+{
+  "observed_utc": "2026-10-31 00:12:25 UTC",
+  "refs": [
+    {
+      "pr": 411,
+      "number": 411,
+      "state": "open",
+      "draft": true,
+      "head": {
+        "ref": "research/codex-ultra-finiteband-crt-cylinder-2026-10-30",
+        "sha": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09"
+      },
+      "base": {
+        "ref": "research/arithmetic-cylinder-collision-2026-10-30",
+        "sha": "5f05181339ea97a56999ca8b8ab10a2009c6c84d"
+      },
+      "updated_at": "2026-10-30T23:01:13Z",
+      "html_url": "https://github.com/femboy2112/SUCC/pull/411"
+    },
+    {
+      "pr": 410,
+      "number": 410,
+      "state": "open",
+      "draft": true,
+      "head": {
+        "ref": "research/deepseek-v4-cylinder-proof-forge-2026-10-30",
+        "sha": "5a54cd1a4200f3b0e673f6c3feecff76bf6b6dc6"
+      },
+      "base": {
+        "ref": "research/arithmetic-cylinder-collision-2026-10-30",
+        "sha": "5f05181339ea97a56999ca8b8ab10a2009c6c84d"
+      },
+      "updated_at": "2026-10-30T22:51:07Z",
+      "html_url": "https://github.com/femboy2112/SUCC/pull/410"
+    },
+    {
+      "pr": 409,
+      "number": 409,
+      "state": "open",
+      "draft": true,
+      "head": {
+        "ref": "research/carrier-realization-maxcyl-2026-10-30",
+        "sha": "3857e70472cac7c572528cc6d4198246e57d36df"
+      },
+      "base": {
+        "ref": "research/count-out-observer-source-2026-10-30",
+        "sha": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c"
+      },
+      "updated_at": "2026-10-30T22:48:00Z",
+      "html_url": "https://github.com/femboy2112/SUCC/pull/409"
+    },
+    {
+      "pr": 408,
+      "number": 408,
+      "state": "open",
+      "draft": true,
+      "head": {
+        "ref": "research/triangle-categorical-fabric-2026-10-30",
+        "sha": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe"
+      },
+      "base": {
+        "ref": "research/zero-boundary-dispersion-2026-10-30",
+        "sha": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5"
+      },
+      "updated_at": "2026-10-30T22:47:08Z",
+      "html_url": "https://github.com/femboy2112/SUCC/pull/408"
+    },
+    {
+      "pr": 407,
+      "number": 407,
+      "state": "open",
+      "draft": true,
+      "head": {
+        "ref": "research/arithmetic-cylinder-collision-2026-10-30",
+        "sha": "5f05181339ea97a56999ca8b8ab10a2009c6c84d"
+      },
+      "base": {
+        "ref": "research/zero-boundary-dispersion-2026-10-30",
+        "sha": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5"
+      },
+      "updated_at": "2026-10-30T22:39:21Z",
+      "html_url": "https://github.com/femboy2112/SUCC/pull/407"
+    },
+    {
+      "pr": 413,
+      "number": 413,
+      "state": "open",
+      "draft": true,
+      "head": {
+        "ref": "research/fibonacci-triangle-extrusion-2026-10-30",
+        "sha": "f316d1b1e87291a89c4d4034ccf27a947e7088ad"
+      },
+      "base": {
+        "ref": "research/triangle-categorical-fabric-2026-10-30",
+        "sha": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe"
+      },
+      "updated_at": "2026-10-30T23:22:20Z",
+      "html_url": "https://github.com/femboy2112/SUCC/pull/413"
+    }
+  ],
+  "parent_ci": {
+    "commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+    "workflow_runs": [
+      {
+        "id": 41141853621,
+        "name": "Observational SUCC validation",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 4491,
+        "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853621/jobs",
+        "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853621/logs",
+        "workflow_id": 380913247
+      },
+      {
+        "id": 41141853662,
+        "name": "Institute theorem contracts and core Lean",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 479,
+        "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853662/jobs",
+        "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853662/logs",
+        "workflow_id": 388839929
+      },
+      {
+        "id": 41141853930,
+        "name": "One Object II original source cancellation and zero-shift Schur",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 791,
+        "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853930/jobs",
+        "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853930/logs",
+        "workflow_id": 385135609
+      },
+      {
+        "id": 41141853818,
+        "name": "Collective observer source and certificate replay",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 668,
+        "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853818/jobs",
+        "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41141853818/logs",
+        "workflow_id": 386978686
+      }
+    ]
+  },
+  "scope": "read-only closing refresh; no sibling merge; child exact-head CI is recorded in its PR after push"
+}

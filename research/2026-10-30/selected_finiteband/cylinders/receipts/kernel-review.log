@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "paper_sha256": "58003553e965fce21c56f1bb8a89d662103560f76972d72ebd1295395bc557ea",
+  "exact_moments": [
+    {
+      "H": 3,
+      "weighted_second_moment": "4"
+    },
+    {
+      "H": 7,
+      "weighted_second_moment": "56"
+    },
+    {
+      "H": 19,
+      "weighted_second_moment": "1140"
+    },
+    {
+      "H": 73,
+      "weighted_second_moment": "64824"
+    },
+    {
+      "H": 239,
+      "weighted_second_moment": "2275280"
+    }
+  ],
+  "source_tail_cases": 7,
+  "hilbert_constant_square": "sqrt(3)*pi/24",
+  "mellin_value": "pi/15",
+  "scope": "same-model complementary proof review and fresh exact symbolic cases"
+}

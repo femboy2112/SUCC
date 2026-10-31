@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "research/2026-10-30/selected_finiteband/validate_artifacts.py",
+    "--write-manifest"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion",
+  "start_utc": "2026-10-31T00:12:25.820635+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.27,
+  "end_utc": "2026-10-31T00:12:26.090249+00:00",
+  "log_sha256": "11c08ef99e716956fccd64d3332481187733d9262377340f8598182b2de5f4af",
+  "log_bytes": 422
+}
