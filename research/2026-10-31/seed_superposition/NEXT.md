@@ -25,3 +25,12 @@ Keep the exact cut-off r=16 for balanced moments and first source phase at r=17 
 The Archimedean Gamma, genuine prime-power factors and Weil positivity remain a separate *potential* conditional route. If using RH, construct a new full-source signed Euler/Gamma/Weil-to-selected-phase inequality with correct domain and source/seed; never equate an auxiliary positive path Gram with the Weil form. Prove a fresh exact source-selected estimate, not a renamed Weyl condition.
 
 **Pass/fail:** PASS only if a sourced theorem gives a nontrivial bound on actual selected zero-seed phase that fails on coherent/periodic controls, with all N and phase frequencies quantified. FAIL if a constructed source measure's Haar statistics or chosen Pascal phase is simply identified with actual π. AMBIGUOUS if a finite observation matches without a tail/coverage proof. Do not merge into main without original-source provenance, root regression and explicit PR review.
+
+
+## Cross-review of sibling PR 432
+
+The read-only PR432_CROSSREVIEW.md records an explicit provenance overlap: PR 432 already established conditional second/fourth seed-cylinder moments, a source-attested edge-normality equivalence, and exact finite phase tomography on an alias-free 73-channel projective-plane difference set at N=9. Our branch extends conditional moments to the first 16 balanced orders and proves a complete late-time finite-seed alias/coalescence theorem.
+
+Any finite uniform Fourier grid at N time modes needs at least N(N-1)+1 distinct character labels to recover every off-diagonal phase pair. Even a known perfect 73-channel design fails at N=10; any fixed modulus eventually aliases. A robust next proof instrument must pick a new modulus for each horizon, verify actual h-weighted phase-difference labels, and authenticate the four original signed BBP poles, literal zero seed and real tail.
+
+The all-horizon mathematical obligation remains a selected signed saving on the complete original source. Use both hostile controls: fixed coherent changed seed and sibling PR 432's horizon-dependent rational coherent seeds. Finite reconstruction alone is not saving.
