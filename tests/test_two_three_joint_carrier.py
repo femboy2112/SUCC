@@ -149,5 +149,15 @@ class TwoThreeCarrierTests(unittest.TestCase):
             self.assertEqual(occupied,k)
             self.assertLess(Fraction(occupied,N),Fraction(1,5))
 
+
+class IndependentBackwardSourceTests(unittest.TestCase):
+    def test_16_backward_green_matches_original_zero_selected_forward(self):
+        from two_three_carrier import independent_backward_f2_residue
+        for a in (4,8,12,16):
+            forward=two_mod_states(100,a)
+            self.assertEqual(independent_backward_f2_residue(0,a),0)
+            for t in range(101):
+                self.assertEqual(independent_backward_f2_residue(t,a),forward[t])
+
 if __name__=="__main__":
     unittest.main()
