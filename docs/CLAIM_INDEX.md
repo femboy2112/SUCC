@@ -1,5 +1,21 @@
 # Claim Index
 
+**2026-10-31 Operation Main XVII — carrier & selected-arithmetic frontier (research integration):**
+[architecture](../research/2026-10-31/main_xvii/MAIN_XVII_ARCHITECTURE.md) ·
+[claim registry + countermodel ledger](../research/2026-10-31/main_xvii/MAIN_XVII_CLAIM_REGISTRY.md) ·
+[provenance DAG](../research/2026-10-31/main_xvii/MAIN_XVII_PROVENANCE_DAG.md) ·
+[selected-arithmetic attack](../research/2026-10-31/main_xvii/MAIN_XVII_SELECTED_ARITHMETIC.md) ·
+[receipt](../research/2026-10-31/main_xvii/MAIN_XVII_RECEIPT.md) ·
+[handoff](../research/2026-10-31/main_xvii/MAIN_XVII_HANDOFF.md) ·
+[regression](../tests/test_main_xvii_primary_saving.py).
+Integrates 35 open research PRs (#390–#424, via 13 ancestry-minimal leaves) as a typed carrier
+architecture (ℕ/ℤ → Pascal path → embedded observer → Gamma/golden analytic → source realization →
+selected trajectory). Firewall intact across all; everything research-status. New rigorous
+sub-result NET-XVII-1: the *primary* component of an eligible BBP first-birth window saves
+(`Ẽ_p(h) ≥ 1 − (√p+2)/(L−1)`, via the subgroup/Gauss bound `|Σ_{g∈⟨16⟩}e_p(αg)|≤√p`), isolating the
+open cofiber cross-term. The dyadic-block saving and finite-band certificate were NOT reached. π
+base-16/base-3 normality, the signed Weyl gate `T_N(h)=o(N)`, and RH remain OPEN.
+
 **2026-10-30 Human T-action, snapshot reconstruction, and Dirac frame reset (research draft):**
 [HTS-01–07 scoped claims](CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md) ·
 [formal frame-reset / inverse-problem dossier](../research/2026-10-30/HUMAN_T_ACTION_SNAPSHOT_RECONSTRUCTION.md) ·
