@@ -160,3 +160,19 @@ def periodic_character_control(alpha:Fraction,period:int)->bool:
     if type(period) is not int or period<1:raise ValueError("period positive")
     a=Fraction(alpha)%1
     return ((16**period-1)*a).denominator==1
+
+
+def independent_backward_f2_residue(t:int,a:int)->int:
+    """Independent finite 2-adic Green F₂(t), not the forward BBP recurrence.
+
+    F₂(t)=sum_(j>=0)16^j r(t-j), with r on arbitrary integer indices.
+    All terms 4j>=a vanish mod 2^a. F₂(0)=0 is a separate analytic theorem.
+    """
+    if type(t) is not int or type(a) is not int or not 1<=a<=20:
+        raise ValueError("integer time and dyadic precision 1..20 required")
+    q=2**a;total=0
+    for j in range((a+3)//4):
+        n=t-j;A=120*n*n-89*n+16
+        D=(2*n-1)*(4*n-1)*(8*n-7)*(8*n-3)
+        total=(total+pow(16,j,q)*A*pow(D,-1,q))%q
+    return total
