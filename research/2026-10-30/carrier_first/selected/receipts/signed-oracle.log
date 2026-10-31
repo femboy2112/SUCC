@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "precision_dps": 2040,
+  "rows": [
+    {
+      "p": 4201,
+      "h": 17,
+      "full_squared": "0.014776958035346997270147334632167236",
+      "primary_squared": "0.021994418535195278634657399738777308",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 4201,
+      "h": 19,
+      "full_squared": "0.030986407234752784480309859426280183",
+      "primary_squared": "0.028036851013380562567337265233380496",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 5009,
+      "h": 17,
+      "full_squared": "0.005456918655857108680216845922333017",
+      "primary_squared": "0.0067118210583196249408185441030517627",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 5009,
+      "h": 19,
+      "full_squared": "0.021750703751667391869619134686511132",
+      "primary_squared": "0.015111648894596182527349339872166818",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 6029,
+      "h": 17,
+      "full_squared": "0.0036539833860192718187920810418779723",
+      "primary_squared": "0.059100296466460804621214936776216204",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 6029,
+      "h": 19,
+      "full_squared": "0.018150629249272098109565754055226728",
+      "primary_squared": "0.018613266611997976974353103584596821",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 7001,
+      "h": 17,
+      "full_squared": "0.0022000643116754133976031549846564331",
+      "primary_squared": "0.00046613975474895672583594024385273217",
+      "inside_integer_intervals": true
+    },
+    {
+      "p": 7001,
+      "h": 19,
+      "full_squared": "0.016612477615456211771475625150027794",
+      "primary_squared": "0.026474001856877709812228203763297424",
+      "inside_integer_intervals": true
+    }
+  ],
+  "authority": "numerical independent route; interval theorem is separately derived"
+}

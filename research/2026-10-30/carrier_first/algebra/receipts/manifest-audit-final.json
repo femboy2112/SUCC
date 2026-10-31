@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "source_manifest.py",
+    "--write"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carrier-first/research/2026-10-30/carrier_first/algebra",
+  "start_utc": "2026-10-31T02:38:35.630483+00:00",
+  "timeout_seconds": 90,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.42,
+  "end_utc": "2026-10-31T02:38:36.050422+00:00",
+  "log_sha256": "4171f801119f50a443d599b0f91f5e085dfda9d6f33c341ca246b384becc0f3a",
+  "log_bytes": 202
+}

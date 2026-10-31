@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "root_artifacts": 148,
+  "front_artifact_pins": 86,
+  "unique_front_git_inputs": 61,
+  "unchanged_parent_files": 46,
+  "original_provenance_files": 5,
+  "python_syntax_files": 32,
+  "local_markdown_links": 12,
+  "checked_receipts": [
+    {
+      "path": "algebra/receipts/focused.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/independent-oracle.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/lean-final.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/lean-fixed.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/lean-initial-failure.json",
+      "exit_code": 1
+    },
+    {
+      "path": "algebra/receipts/lean-negative-control.json",
+      "exit_code": 1
+    },
+    {
+      "path": "algebra/receipts/manifest-audit-final.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/manifest-audit.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/new-transport-review.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/observer-review-refreshed.json",
+      "exit_code": 0
+    },
+    {
+      "path": "algebra/receipts/observer-review.json",
+      "exit_code": 0
+    },
+    {
+      "path": "analytic/receipts/focused.json",
+      "exit_code": 0
+    },
+    {
+      "path": "analytic/receipts/independent-oracle.json",
+      "exit_code": 0
+    },
+    {
+      "path": "analytic/receipts/resolvent-probe.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/band-countermodel-repaired.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/band-countermodel.json",
+      "exit_code": 1
+    },
+    {
+      "path": "receipts/baseline57.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/foundations.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/native-suite.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/observer-oracle-final.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/observer-oracle.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/observer-probe.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/observer-tests-final.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/observer-tests.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/ordinal.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/parent-oracle-1.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/parent-oracle-2.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/parent-oracle-3.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/parent-oracle-4.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/parent-oracle-5.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/provenance.json",
+      "exit_code": 0
+    },
+    {
+      "path": "receipts/source-audit.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/analytic-crosscheck.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/fibonacci-coverage.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/focused-initial.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/frame-oracle.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/frame-probe.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/inherited-hostile-controls.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/signed-oracle.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/signed-probe-domain-repaired.json",
+      "exit_code": 0
+    },
+    {
+      "path": "selected/receipts/signed-probe.json",
+      "exit_code": 1
+    }
+  ],
+  "expected_nonzero_receipts": [
+    "algebra/receipts/lean-initial-failure.json",
+    "algebra/receipts/lean-negative-control.json",
+    "receipts/band-countermodel.json",
+    "selected/receipts/signed-probe.json"
+  ],
+  "scope": "bytes, syntax, declared exit statuses and source fidelity; not analytic proof authority"
+}

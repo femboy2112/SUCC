@@ -1,0 +1,405 @@
+{
+  "parent": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+  "read_only_sibling": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+  "authority": "paper, scoped Lean kernel, exact implementation checks; no external referee",
+  "excluded": [
+    "SOURCE_MANIFEST.json",
+    "receipts/manifest-audit-final.json",
+    "receipts/manifest-audit-final.log",
+    "__pycache__"
+  ],
+  "artifacts": [
+    {
+      "path": "ALGEBRA_THEOREMS.md",
+      "sha256": "0721fc2c91dfc0d1afc8d5f749bc6b2406ccede1cb7fb3afde19721ea8685252"
+    },
+    {
+      "path": "CarrierAlgebra.initial-failure.lean.txt",
+      "sha256": "6d62faada7dc544e3bc247fe1e180be8e5ef6fd03d25ab9bf1a3b532fd7f010b"
+    },
+    {
+      "path": "CarrierAlgebra.lean",
+      "sha256": "4ae6fd13f25adbb091fe05324cea87ee0be257f1b27695479249ad935740f967"
+    },
+    {
+      "path": "OBSERVER_REVIEW.md",
+      "sha256": "7925593cab971fc4b21207b0381325f90547d40be2f7c782f13a6a81c053fcc3"
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "sha256": "5e4f335db1bd8d3d6ba12c65f372c9edf0b28ca2d6df647ffceb7bb279de568e"
+    },
+    {
+      "path": "REVIEW_NEW_TRANSPORT.md",
+      "sha256": "4b9c7b305cc301afa6ea58ffb010c07f3d65276ef9de12d621119af8bfbf26db"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "a1e72d185acc6888f6f1585edddbfc44115174d19ca50cccee1231b39dc374ba"
+    },
+    {
+      "path": "carrier_algebra.py",
+      "sha256": "cb7b450826ecfc4b2b2da515095d375ff81a62f88d61350187676f112505733d"
+    },
+    {
+      "path": "controls/WrongPolarization.lean",
+      "sha256": "7b71c30ad373cd121f0881a19d2b5498ce4a7097335561e8c39797c643f4953d"
+    },
+    {
+      "path": "independent_oracle.py",
+      "sha256": "b98ed2e4eaae02f2b55eb6716f3f4575046648d11af7bab8cbeb0c483aa198fb"
+    },
+    {
+      "path": "new_transport_review.py",
+      "sha256": "4fb17f549e4decaf2913da0718c9506f308105aa0fc75df401fdb574a0fd0a92"
+    },
+    {
+      "path": "observer_review.py",
+      "sha256": "fa5fe180817b51a83f96e487299b800d6c6b05c5c1ec76cf64fc6e3660f4d72a"
+    },
+    {
+      "path": "receipts/focused.json",
+      "sha256": "ebf50271f1fc77997222e94676f26ae33ed16c761fb0ae97e08c12dd1409b893"
+    },
+    {
+      "path": "receipts/focused.log",
+      "sha256": "260433c8c02017283f6acf23869b8735c3dddb7b4be9e64494692316deb5b2bd"
+    },
+    {
+      "path": "receipts/independent-oracle.json",
+      "sha256": "97f4a000b180a2aa801e8792513360fe69b7d7d0dc6c7b2c54449b13cd1b2d9e"
+    },
+    {
+      "path": "receipts/independent-oracle.log",
+      "sha256": "76aa03e968acad92211126243041c35bfd59f78549a5c931696147628b07cfb2"
+    },
+    {
+      "path": "receipts/lean-final.json",
+      "sha256": "8b3aa943b1db8e5c455a7d602bf3576a428935a5f089a5f1ff38af077b6acfe0"
+    },
+    {
+      "path": "receipts/lean-final.log",
+      "sha256": "3b6be233af26f3eff767f6395a2431b84e8c5e0c708ec928a271a8f8cbfe0158"
+    },
+    {
+      "path": "receipts/lean-fixed.json",
+      "sha256": "2e1286c9ff819e8b91104e39368c91ac4e54813502cb3f387b7ce8edfb9e9bd3"
+    },
+    {
+      "path": "receipts/lean-fixed.log",
+      "sha256": "e57fe7b3bb319e79096229a1b1b1363b7d7b70f5282dd9a6de5109b369d15cd2"
+    },
+    {
+      "path": "receipts/lean-initial-failure.json",
+      "sha256": "fc88c91555850a9e19db7ea0e85a6a7ddec85327846bc58a9beedfe5582d808d"
+    },
+    {
+      "path": "receipts/lean-initial-failure.log",
+      "sha256": "a231441afd00803f9e62e727f848bb8417f952dd068e8f3c14433220d8afadf7"
+    },
+    {
+      "path": "receipts/lean-negative-control.json",
+      "sha256": "d4924e80800f5920fbfe9df1b49034df28fbb7a8054de3a3a9cd3b527b242e26"
+    },
+    {
+      "path": "receipts/lean-negative-control.log",
+      "sha256": "f92d57e18db28b06a0f9dfbec5dbad7923ca9d7e1147e24927ecb0bbbab5ffa1"
+    },
+    {
+      "path": "receipts/manifest-audit.json",
+      "sha256": "08d2842354e1a63b958acb19c6675e14b7525f0b796695228204c53610e9a42d"
+    },
+    {
+      "path": "receipts/manifest-audit.log",
+      "sha256": "58acc096348dd2ad9cfc8c9e65585e1f2dd0d501d4b5eadb6874423edfdc2ae1"
+    },
+    {
+      "path": "receipts/new-transport-review.json",
+      "sha256": "e14ff5236b72d3f98a5510f02a640767b1f4bc4e4c3d0904b104c9bf391c7033"
+    },
+    {
+      "path": "receipts/new-transport-review.log",
+      "sha256": "95f40ed4131ee40b8db2152cba2774c327e445fc105d449e0303fbe36c1140de"
+    },
+    {
+      "path": "receipts/observer-review-refreshed.json",
+      "sha256": "f4db44317df813a63e6459a0b4f3303ecfe3692c797db127357d5079351689f2"
+    },
+    {
+      "path": "receipts/observer-review-refreshed.log",
+      "sha256": "593b866c9a2d41f0497cc46feb639863ff740d45607a03349ef64e07901b122a"
+    },
+    {
+      "path": "receipts/observer-review.json",
+      "sha256": "f9fc83be85593dc2cd499c6b90950c6f12f0ab8f45554d8775528d30c28d9b70"
+    },
+    {
+      "path": "receipts/observer-review.log",
+      "sha256": "96ef3fc12c4a45c95dab8667b6efd250f6fdb3d352cebd8a3aa153f63ed34d86"
+    },
+    {
+      "path": "run_receipt.py",
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28"
+    },
+    {
+      "path": "source_manifest.py",
+      "sha256": "01fb744255420765e512a1b01dca763a2a1fdde576372fb8d6ae7b858cbe0b37"
+    },
+    {
+      "path": "test_carrier_algebra.py",
+      "sha256": "09362c5d6f4301dc701272f383afec31b1f57b066f176bd1f9d7eca4582f3420"
+    }
+  ],
+  "git_inputs": [
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_SOURCE_TWISTED_ZETA_POLE.md",
+      "sha256": "41eb5011c735ecb68b1583fecfadfbf7441bac6fd386f75a4e95e580a0d8294d"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_TWISTED_SOURCE_MANIFEST.json",
+      "sha256": "bea80a076edd17a9945a920615f9d07bde49aa0d685c5d2450925aae42cfade8"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/BBP_TWISTED_SOURCE_VALIDATION.md",
+      "sha256": "83c9cde29cbe69046a7efce40497083623e833d789d8e618c084fee42ba71d94"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/CLAIMS.md",
+      "sha256": "5fa3e76523e96e36aee021bc13ca8c490bde527d098c804135603c8aa931a53c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/CRUCIBLE.md",
+      "sha256": "bd0886fdf1b040f6ef54486254f4f524899b0904eb55dd125934c82260f51a51"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/FIBONACCI_GAMMA_OBSERVER.md",
+      "sha256": "94e79458643fb5fa09e3c7d3e27c7f8a10a07c0376a4323a105cad2b9f04b13b"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/LOGJET_CROSS_AUDIT.md",
+      "sha256": "8396e98570ca24043bb50044ba73917556591ef7ce35e5a2867e15a235ec0a1a"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/LOGJET_SOURCE_MANIFEST.json",
+      "sha256": "62a3917267ee5afbad0b7e04462d7fa677efc512a2b1609f9f67ca303539c23d"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/MEGA_ROUND_CROSS_AUDIT_ADDENDUM.md",
+      "sha256": "7ba2b8b5614e7205c906a6148640bd4d607e3607375b1be8cab02b9d6e543092"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/NEXT_ZETA_GRADE_HANDOFF.md",
+      "sha256": "6da8b5f50bab21e43d2d73d36ffa4ce7967578f1bf07e17faaa6e58cba2aabd1"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/README.md",
+      "sha256": "1fae02b15fc2a783e45ee30638d08769ec57b89420c4fbc874023a2d08c5dba5"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/SOURCE_MANIFEST.json",
+      "sha256": "8b0d7cc5609e86d828a5e4425fb5fe7913dc38d458655acc57cf2f21de99b919"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/UNIVERSAL_CARRIER.md",
+      "sha256": "05d2ebb52b03be9da81deb15a7f7e1760f18e1017ea3e04a1b489f98f05c4d5e"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/UNIVERSAL_CARRIER_MEGA_ROUND.md",
+      "sha256": "c1675f3e8de8b24b02a60f858b6e7077a4bf85cfda5a877fbe5ccd498df81823"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/VALIDATION.md",
+      "sha256": "e208c6511f2eafbd2b4ba467fbc2a1df83b7b764570e4446a069c3c4c30c338a"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_ALLGRADE_SOURCE_MANIFEST.json",
+      "sha256": "3b0892e715cc4badf883859819951ecf68299023f612227f831825671e642718"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_ARCHIMEDEAN_PATH.md",
+      "sha256": "f2ee9a7c264d65edf3e8280591a4b52a099739fd24ebeb4944ef540927bf0c01"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_NEGATIVE_INTEGER_TANGENT_FAMILY.md",
+      "sha256": "0ff56ca89360a00c9fe311473ebc8311630c030aa20b0b9137f53579e3f01e2c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_PASCAL_ALLGRADE_PRIME.md",
+      "sha256": "179fcdf06587bea986360e5ca10f9296fae2139490dd3832baec576cc38e2f15"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/ZETA_TANGENT_SOURCE_MANIFEST.json",
+      "sha256": "c65a1a9102edd9e2545313a150dd8b87ad8188e341ef1a26b26d05ea2e4ae0e6"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_independent_oracle.py",
+      "sha256": "d9e3fe64499423874b98ad9674d4745b6f2791f2e9d7d4dc4352161f4994326a"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_oracle_receipt.json",
+      "sha256": "ea75cfc4a8c3d4aad90137489261fa774121f59b34fc798130f4913e70e03b87"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_tests.log",
+      "sha256": "832d1236412fc6df9e0df6612891705af72aa379189de8102b9a71e57d765acc"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/bbp_twisted_zeta_tests_initial_failure.log",
+      "sha256": "dc8429dcce19518d8ad4e101e6f14eef5461697bb5bdc7487bbd0d87e9d501fc"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/carrier_probe.py",
+      "sha256": "31133fe8c337300573c8a572694b62294cb6fe7d7ca6f6bcb77bd247ca4f1b71"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/combined_suite_final.log",
+      "sha256": "68fc0db55dcedb79013f5a2fa91b739309d0afc1bf6a9ca2ad7719df58640c64"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/combined_suite_initial_precision_failure.log",
+      "sha256": "68667210d413a2cd8ccb15246d00f287357f6eda4213f7795dacc19a87835c31"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/independent_oracle.py",
+      "sha256": "9dda3285423b8724c89f2acff2ea90f5ecf011d4581aecf1b4432657a0552b13"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/independent_oracle_receipt.json",
+      "sha256": "172097cef523c0cb046a2ef1ff09a12f22449319b1e42c3d71c471c0370a6267"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_independent_oracle.py",
+      "sha256": "42e535989dea3006b03351973f55423978d421053c8dc1ca5dc7bdbbe7b04bd6"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_independent_receipt.json",
+      "sha256": "78fd04a8da7995cccc43ad451df1e9ee322630d9d1509e845942963f3b5132d7"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_probe.py",
+      "sha256": "aaff0dcae8d7dd875620847eb00e2f70d2ee288cb60150eee1f780dc39009dd0"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/logjet_tests.log",
+      "sha256": "aed411c45668345188248cbee5f926a2d4175b9551dd2da830899d4f51131b6c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_bbp_source_twisted_zeta.py",
+      "sha256": "1287f859dc4329d43580cd0c686f420a9e24c26179d6b3cd6570531a6b5643e5"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_carrier_probe.py",
+      "sha256": "352b9c105f962b2c8db10c581aab857713e82c23534a26b7203bec889ad387d5"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_logjet_probe.py",
+      "sha256": "116946581c5a03e149be2b249d5181faa8032305841a85c0b340099664f65386"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_zeta_allgrade.py",
+      "sha256": "eeb5ae0611b85702d1d78fcfeb43d090a854f302b56cc48fbf3aeac6fde6a8d8"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/test_zeta_tangent_family.py",
+      "sha256": "568c5bba9a197fcf057e48142900da121d3012ace4f90e7920d36306e476b808"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/tests.log",
+      "sha256": "2b1ddd80b5abe873547d6eb9cf06be28cf789345d37c43e23df2e39f2d98881c"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/verify_manifest.py",
+      "sha256": "930087556f84e931a8f3cb1501c9b117e1b4ef990c76c0a90ac44b3f42892f83"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_oracle.py",
+      "sha256": "1731f738e18266a12560cfa9cc9211e418be021c5b0fa6c9bb03ef2e5b71608f"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_receipt.json",
+      "sha256": "4b22c0147d46890e24cb0d514a2cf317e8c780e368560c1bf113f02d7d72e0d9"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_allgrade_tests.log",
+      "sha256": "1bb52d4736780ed819d0dc544c8f0a59f2977a9afc59a473314512ab95cebde2"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_independent_oracle.py",
+      "sha256": "440a324a99bf47eee3d7849e637a2dc72caad36030ae385f0377a886793b18ab"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_independent_receipt.json",
+      "sha256": "2068fea0f706831a82818fc0c7c0b1a1c663a8798f5376511ce00bedfd270816"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "research/2026-10-30/universal_nz_carrier/zeta_tangent_tests.log",
+      "sha256": "5450cbf9ec2f261e845f9140905da03882c68b4f35104166b51c938703b81767"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "commit": "1c6ce7d7ee83a0bd751bde8092e46ff798855fd3",
+      "path": "docs/OPERATIONAL_TRIANGLE.md",
+      "sha256": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035"
+    },
+    {
+      "commit": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+      "path": "research/2026-10-30/carrier_adelic_transport/CARRIER_REALIZATION.md",
+      "sha256": "bb01e85da9e946dbca9ae1ec55333131db27c573f9c2d671cae852d14513d755"
+    },
+    {
+      "commit": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+      "path": "research/2026-10-30/carrier_adelic_transport/CLAIMS.md",
+      "sha256": "b5cc04e4646159bccde0b4c05b4e0f514d3c5fc440c93ba1eb4fd075450470b3"
+    }
+  ]
+}

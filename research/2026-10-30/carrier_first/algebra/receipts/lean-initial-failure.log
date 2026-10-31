@@ -1,0 +1,17 @@
+CarrierAlgebra.lean:26:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c - 2*d ≥ 1
+where
+ c := 2 * a * b
+ d := a * b
+CarrierAlgebra.lean:32:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d - e ≤ -1
+where
+ d := c
+ e := a * b
+'CarrierFirst.polarization' depends on axioms: [propext, sorryAx]
+'CarrierFirst.polarization_integer_recovery' depends on axioms: [propext, sorryAx]
+'CarrierFirst.affine_swap_defect' depends on axioms: [propext, Quot.sound]
+'CarrierFirst.wordGrade_append' depends on axioms: [propext]
+'CarrierFirst.history_concatenation_associative' depends on axioms: [propext]

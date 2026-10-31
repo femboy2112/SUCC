@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "rational_markov_function_identities": 2,
+  "authentic_Pade_degrees": [
+    2,
+    4,
+    6
+  ],
+  "prime_germ_exact_moment_cases": 90,
+  "Hermite_stencil_monomials": 180,
+  "reviewed_inputs": {
+    "analytic/ANALYTIC_TRANSPORT.md": "447de1597b52e1363fb4422faea080627ed1b3c78dc3d3169906f0a435cf9b7d",
+    "selected/HIGH_ORDER_FRAMES.md": "8c0d2fa3e27ad68095ddf6237e10c04524c112f19e409ab0d6cd5f123ef2c32a",
+    "OBSERVER_THEOREMS.md": "22becab5c35fde90f7780294d984fa18cab6d41c0803d7bfb9c23234c8c788f1",
+    "observer.py": "118a4a3b1d1d21de85be84c86c482351bbb3b7505fa4db6d7ed3e02d8ccd5a98"
+  },
+  "authority": "separate derivation/code, same model lineage; paper proofs not inferred from probes"
+}
