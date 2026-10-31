@@ -185,8 +185,12 @@ class DualSpectralCarrierTests(unittest.TestCase):
             self.assertEqual(len(vals),len(set(vals)))
             self.assertEqual(vals[0],1)
             self.assertTrue(all(v<=X for v in vals))
-            import math
-            bound=(int(math.log(X,16))+1)*(int(math.log(X,3))+1)
+            def number_of_powers(base):
+                count=0;value=1
+                while value<=X:
+                    count+=1;value*=base
+                return count
+            bound=number_of_powers(16)*number_of_powers(3)
             self.assertLessEqual(len(vals),bound)
         self.assertLess(len(semigroup_16_3_below(100000000)),1000)
 
