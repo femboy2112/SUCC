@@ -1,0 +1,47 @@
+[
+  {
+    "argv": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed/../../../../.venv/bin/python",
+      "-m",
+      "unittest",
+      "-v",
+      "test_signed_transport.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed",
+    "start_utc": "2026-10-30T17:12:15.168856+00:00",
+    "head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.3186339639942162,
+    "end_utc": "2026-10-30T17:12:15.487494+00:00",
+    "output": "focused_tests.log",
+    "sha256": "aed6d32e2ba48d45f7a5c03bf0872d52c18605ddef64d9cc55ccd6a90ec080d2"
+  },
+  {
+    "argv": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed/../../../../.venv/bin/python",
+      "run_probe.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed",
+    "start_utc": "2026-10-30T17:12:15.488159+00:00",
+    "head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+    "exit_code": 0,
+    "elapsed_seconds": 3.3755549209890887,
+    "end_utc": "2026-10-30T17:12:18.863717+00:00",
+    "output": "probe_receipt.json",
+    "sha256": "3c748dabdebe884887b0500bdd22bdf9e7dd32935325b348ed25165b055e5560"
+  },
+  {
+    "argv": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed/../../../../.venv/bin/python",
+      "independent_oracle.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed",
+    "start_utc": "2026-10-30T17:12:18.864371+00:00",
+    "head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+    "exit_code": 0,
+    "elapsed_seconds": 5.379693958966527,
+    "end_utc": "2026-10-30T17:12:24.244067+00:00",
+    "output": "independent_oracle_receipt.json",
+    "sha256": "dd0a1e2fca14aeb934c7bcc2f8ba263ad911d80f40c9cfcea04f6806d03e4de1"
+  }
+]

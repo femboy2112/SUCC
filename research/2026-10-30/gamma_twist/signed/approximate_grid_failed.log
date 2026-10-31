@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed/approximate_grids.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed/approximate_grids.py", line 54, in main
+    'BBP_cases':rows,'Stoneham_controls':[stoneham(c,j) for c,j in ((3,3),(5,2),(2,5))],
+                                          ~~~~~~~~^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/signed/approximate_grids.py", line 43, in stoneham
+    assert set(counts)=={0} and max(counts.values())==q
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

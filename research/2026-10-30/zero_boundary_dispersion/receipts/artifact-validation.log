@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "counts": {
+    "artifacts": 127,
+    "python": 27,
+    "json": 38,
+    "links": 40,
+    "receipts": 32,
+    "nested_artifacts": 68,
+    "source_inputs": 37
+  },
+  "retained_failed_receipts": [
+    "diophantine/receipts/lean_initial.json",
+    "receipts/baseline-catalog.json",
+    "receipts/math-catalog.json",
+    "spectral/command_receipts.json:1"
+  ],
+  "authority": "byte/structure/provenance check only"
+}

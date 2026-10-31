@@ -1,0 +1,59 @@
+{
+  "parent": "5f350af7808532e55d74e80c948c02bb385c6e70",
+  "source_inputs": [
+    {
+      "path": "../../selected_boundary_slip/THEOREMS.md",
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a"
+    },
+    {
+      "path": "../../selected_boundary_slip/CLAIMS.md",
+      "sha256": "b8bb0104882e0493f687dee94864d65a1cffe0cd4368b223e4372061bb21f912"
+    },
+    {
+      "path": "../../selected_boundary_slip/VALIDATION.md",
+      "sha256": "84b001254fb22ccaec5c1e983c15d4fbee07859280f9b82c9b60372727d12ed2"
+    },
+    {
+      "path": "../../gamma_twist/geometry/GEOMETRY_DOSSIER.md",
+      "sha256": "f151c69621dcd1b0bf3dab3cff6ef0c4372ddbacd2385fe75cc34370b2553f6b"
+    },
+    {
+      "path": "../../gamma_twist/signed/SHARP_SEED_ENERGY.md",
+      "sha256": "7b73ae06c80b31289c493c32bfb022f4ce20b58981a0acb2164b6d401ab19846"
+    },
+    {
+      "path": "../../arithmetic_barrier/transfer/TRANSFER_DOSSIER.md",
+      "sha256": "7fb6b885438ba7ca0014638d8e5b1375e7ed437597e5f7dc0b4b3f90d7c04988"
+    },
+    {
+      "git_commit": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+      "path": "research/2026-10-30/three_channel_spatial_h3/THREE_DIMENSION_THEOREMS.md",
+      "sha256": "bc9afa8d1c7b19c5ce1df1405d2762297f9ea744776ca6e4631d9fa9c1fefcae"
+    }
+  ],
+  "artifacts": {
+    "geometry_controls.py": "e85fe4301210a1495d6d9b217cf546e65cfe943b02dedd21f544e1ad931b5b3c",
+    "independent_oracle_receipt.json": "27ca992f580025769f6c4480809e0ec6121cc3eef3a4e5b26784d9d2543c070a",
+    "spectral_probe_initial_failed.py": "e692a6a7060f2a94804c215fbee70fe1f9eb25215a73fa2d140ccd5ba1bbf5e2",
+    "VALIDATION.md": "4134e4679b7789d4a59f91c3a7770b45c7307f6cd86bbc085cc8e587c9b6ba4f",
+    "test_spectral.py": "11cf96edda072080eacc179eccc66633cccadb1a00db1e759cedf66a14f98f7b",
+    "SPECTRAL_DOSSIER.md": "bd41f3a0515f2a27405c094b3c926b2952b730aa2f2bd48070d900899cc7a8dd",
+    "command_receipts.json": "8bdb20faea6a49f8ff69517332df9a4e631e47651c49cab37162ff0fd126d370",
+    "focused_tests_final.log": "92ee6d6c93133cfdd29c69f74d6ea65fee3e3cd8a16830678760e089352a222c",
+    "run_probe.py": "1fb85615aea23f606b911f913dd5ca214215a27bfd38ff54152e705a11fb6b5b",
+    "independent_oracle.log": "c878e22e6c7d1d8d01e0b279aea509eed70ba8817689e261a5c3caddbd590246",
+    "probe_receipt.json": "60a79b5ff894af51e64fb283b698ebca785e6967aa1fe57dc16cbe858efa1f35",
+    "probe_initial_serialization_failure.log": "78cc9ba63087a79c0ca1d7ad59660aeaff39bab77235b6015af9011acca4150f",
+    "focused_tests.log": "ff0348f635e337bae5dce8427259f2c007f92b2d4a55d40e30a324a2e935aaaa",
+    "geometry_controls.log": "7c34bddf2c6b833611e6991a327fb3a638a99a8df47a81c75888c265855538e8",
+    "DIOPHANTINE_REVIEW.md": "3563a87e4175502743c42b88dfac2b5c43d78259b030a8969124c6bb2ad13915",
+    "CLAIMS_AND_ROUTES.md": "60ddbb133e57b5aabeec7c941aa715a977a06f3dbc2d401e05d7a9c87af4f875",
+    "spectral_probe.py": "03ad7793d9e35bd94dfd8befebab15f40c8abb43c0dcebd551a94246246001fd",
+    "PREREGISTRATION.md": "e27e0c95d4ae84eb942cf70e81baa47b378e07e133ca8cd5cf7f9a0973e017eb",
+    "probe.log": "825afcc36aafc1997c452ff27b9b784412a2d51b31f05e074c6d60b34ee1d27a",
+    "independent_oracle.py": "0f47aa1c29235784fd04425fd548c944d65d65900576f2e2ce627b4508a26d33",
+    "geometry_control_receipt.json": "979bb6ea05e59cab683a05e4f768becb510776e3da735e5ac1abe3533a5d725d",
+    "focused_tests_controls.log": "53ea5f8cdb5ad16edb2519944b805e5a45e27a921ea45c77b92693936746a59d"
+  },
+  "recorded_utc": "2026-10-30T19:56:47.605867+00:00"
+}

@@ -1,0 +1,182 @@
+{
+  "base_commit": "5f350af7808532e55d74e80c948c02bb385c6e70",
+  "scope": "CRT front; local proofs and exact finite checks, no selected asymptotic SC06 bound",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3058,
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/ASTRA_ULTRA_FANOUT.md",
+      "bytes": 8366,
+      "sha256": "441ff3437f6460ca16e44f749e4b6fcd5849d62c4215599d1c41c23c163bff31",
+      "git_blob": "b1276c22533859ff94aaf71bb7c551cc0036bceb"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/THEOREMS.md",
+      "bytes": 8881,
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a",
+      "git_blob": "bb734fff7fd045f911de9dbbeff37ea1b5825ae1"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/selected_boundary.py",
+      "bytes": 3188,
+      "sha256": "32944e6de122b62a185868ae869091f265f3e9c4113cc721b04c128a74ee9340",
+      "git_blob": "71fadc7893076bce6720e96463a944a86d2b84dd"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/test_selected_boundary.py",
+      "bytes": 3026,
+      "sha256": "f01c5e138bc8fbf9887b207aa182ef31c23bf853f06a5d557ebfa2e880638945",
+      "git_blob": "58831e29fdec66465d63e5be22fd551d913562e0"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/independent_oracle.py",
+      "bytes": 2322,
+      "sha256": "2cc93d9e98ba748a31215ab225129359816bd6da36bc81d4f23553b733fcf1a9",
+      "git_blob": "458a86ee64419edf1e67a5a467c34aa72ce3411d"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/SOURCE_MANIFEST.json",
+      "bytes": 1886,
+      "sha256": "615bceda071c124d1ee91faa7603c11aae1957d7b7158fdb05122e8ae205be46",
+      "git_blob": "dfb329cb0a6cc5e0eaae954b0070eea53d94593b"
+    },
+    {
+      "path": "research/2026-10-30/prime_stroboscope/RESEARCH.md",
+      "bytes": 11880,
+      "sha256": "d17a3d121134b5e93a6a65d9a23e996b8211d2193fb0ba168e200d2b53718d74",
+      "git_blob": "850be99575bf689e199730ce36f7a28d948514c2"
+    },
+    {
+      "path": "research/2026-10-30/arithmetic_barrier/arithmetic/ARITHMETIC_THEOREMS.md",
+      "bytes": 20428,
+      "sha256": "4e4b151609ffa3a14f525ba7d67dd761c777b9e84a59d2ceec52358a3c627f5f",
+      "git_blob": "b81d717d8f78c74511dd542f50c773c11a202eaf"
+    },
+    {
+      "path": "research/2026-10-30/arithmetic_barrier/SHARP_CONDUCTOR_GROWTH.md",
+      "bytes": 9318,
+      "sha256": "c707cf382ba098f2895d71529f065d832e212b9f24529090896da9df0f8dd7b2",
+      "git_blob": "27baca185fc154860929c988c825f55503a344f1"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/SHARP_SEED_ENERGY.md",
+      "bytes": 13455,
+      "sha256": "7b73ae06c80b31289c493c32bfb022f4ce20b58981a0acb2164b6d401ab19846",
+      "git_blob": "ab3cd10bcd70c7c603a32a84857dc4c46854d5dc"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/gauss/GAUSS_UNIT_BLINDNESS.md",
+      "bytes": 18475,
+      "sha256": "e73ad51af320d4ced4ed3833defbabc6ee11e23e6e0e54aa040ff934a40cf242",
+      "git_blob": "eebf5d59080d251c9ac3f082a4a27f9783d15dd9"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/run_receipt.py",
+      "bytes": 3223,
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28",
+      "git_blob": "34384dba3cbb8a4e46a832d19d83bbae2cfe4d48"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/CURRENT_OBSTRUCTION.md",
+      "bytes": 3310,
+      "sha256": "a4e6e18769043ff0de3dcee30a3344aec8401d77ffde6a9d9c5f7b57edaee9bb",
+      "git_blob": "1d8664828851ede5e3415e53a90e07b0ad027a07"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/CRT_DOSSIER.md",
+      "bytes": 14619,
+      "sha256": "6527cbf35ce3d2e7f4142769413925d9982e5f63a87e4daa1ef207ad5b398b5c"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/PREREGISTRATION.md",
+      "bytes": 4352,
+      "sha256": "bb8679790ea9a7a835e72318aa0e3e55656893aee2771ad30de2f7bd554f214f"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/README.md",
+      "bytes": 1756,
+      "sha256": "513de6e5b85f5d5c752d2cc3510a326b08355b0b3da15ec7751059afaa5ccf02"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/ROUTE_LEDGER.md",
+      "bytes": 4761,
+      "sha256": "1c30394f30fea7fd1c3fbec8acdfda427bfaa99803889eff29b62e31ad9bbeb0"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/character_field_probe.py",
+      "bytes": 3293,
+      "sha256": "c40a5e726f788284837d19f3d3222c9788f822c97feb1b3e8416620da384da83"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/crt_probe.py",
+      "bytes": 9281,
+      "sha256": "7f8d15e6fbc625e9625aae8f8ad23d2912692c5e8bdb08511e83e5cbae5a9dc2"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/independent_oracle.py",
+      "bytes": 4386,
+      "sha256": "5077b22919cef73597251a0efbd356146472a81dad7d450a587fbd878e73bf57"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/field-polynomial.json",
+      "bytes": 666,
+      "sha256": "f0d5ec83aa6af55c2fa9cfacaa9ccc52ddbbdc3c0412921e381694e126e36014"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/field-polynomial.log",
+      "bytes": 34442,
+      "sha256": "54391c92942f011b46dc9aa4418aeab17fa316d9b81afad5f780804ff229b4c3"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/oracle.json",
+      "bytes": 662,
+      "sha256": "792d1f08443a8045ae4daa6129ff9add483fc4b6e94f2ea202d914226b8ab9fb"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/oracle.log",
+      "bytes": 2996,
+      "sha256": "db4ec8ebae4513ce1ff774f65794a4444434d7ae267e4e38b6d715669a34bac8"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/probe.json",
+      "bytes": 654,
+      "sha256": "d5c6c66b687d8e5743108bd19919640e8e07db74b2ebfd2198317e921b18d1fb"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/probe.log",
+      "bytes": 57286,
+      "sha256": "79f18ab1344923c5d39b150c032fdf92d3237fd3e97fd1c468185c65378f94e6"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/tests.json",
+      "bytes": 728,
+      "sha256": "fc8aecd5ef387e48f35faf9f843c753ba276585f2bae36d070e8f941976503ba"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/receipts/tests.log",
+      "bytes": 1393,
+      "sha256": "3bd994910e5e9b2299dd2921febf076cfb6ddd53054ce852708c763d1cedd1b7"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/run_receipt.py",
+      "bytes": 3223,
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/test_crt_probe.py",
+      "bytes": 3739,
+      "sha256": "8c6f19aad5369938c2ffc72ff316fcfefd170a7ec03ce1907e376c148f0c0454"
+    }
+  ],
+  "excluded": [
+    "SOURCE_MANIFEST.json self-hash",
+    "__pycache__ local caches"
+  ],
+  "runner_copy": "run_receipt.py is byte-identical to gamma_twist/run_receipt.py"
+}

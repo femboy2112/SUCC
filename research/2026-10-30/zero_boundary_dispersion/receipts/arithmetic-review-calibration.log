@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "independence": "separate implementation; same model/context",
+  "interval_lcm_cases": 1260,
+  "moving_filter_cases": [
+    {
+      "n": 19,
+      "degree": 1,
+      "denominator_bits": 168,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 19,
+      "degree": 1,
+      "denominator_bits": 167,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 19,
+      "degree": 4,
+      "denominator_bits": 193,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 19,
+      "degree": 4,
+      "denominator_bits": 189,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 47,
+      "degree": 1,
+      "denominator_bits": 402,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 47,
+      "degree": 1,
+      "denominator_bits": 402,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 47,
+      "degree": 4,
+      "denominator_bits": 425,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 47,
+      "degree": 4,
+      "denominator_bits": 436,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 47,
+      "degree": 6,
+      "denominator_bits": 441,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 47,
+      "degree": 6,
+      "denominator_bits": 443,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 1,
+      "denominator_bits": 759,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 1,
+      "denominator_bits": 758,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 4,
+      "denominator_bits": 771,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 4,
+      "denominator_bits": 786,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 8,
+      "denominator_bits": 825,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 8,
+      "denominator_bits": 826,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 9,
+      "denominator_bits": 815,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 89,
+      "degree": 9,
+      "denominator_bits": 833,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 1,
+      "denominator_bits": 1501,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 1,
+      "denominator_bits": 1500,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 4,
+      "denominator_bits": 1499,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 4,
+      "denominator_bits": 1512,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 13,
+      "denominator_bits": 1589,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 13,
+      "denominator_bits": 1601,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 17,
+      "denominator_bits": 1600,
+      "sandwich_and_identity": true
+    },
+    {
+      "n": 173,
+      "degree": 17,
+      "denominator_bits": 1623,
+      "sandwich_and_identity": true
+    }
+  ],
+  "cyclotomic_degree_cases": 1024,
+  "independent_orders": [
+    {
+      "p": 13,
+      "n": 2,
+      "order": "12",
+      "bits": 4
+    },
+    {
+      "p": 19,
+      "n": 5,
+      "order": "2520",
+      "bits": 12
+    },
+    {
+      "p": 73,
+      "n": 10,
+      "order": "240240",
+      "bits": 18
+    },
+    {
+      "p": 1033,
+      "n": 130,
+      "order": "79485107315235635798288344798367669127511763134382323790061621715934060448000",
+      "bits": 256
+    },
+    {
+      "p": 1061,
+      "n": 133,
+      "order": "79485107315235635798288344798367669127511763134382323790061621715934060448000",
+      "bits": 256
+    }
+  ],
+  "distinct_annihilator_symbolic_cases": [
+    {
+      "quotient_coefficients": [
+        2,
+        0,
+        -3,
+        1
+      ],
+      "denominator_degree": 12
+    },
+    {
+      "quotient_coefficients": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "denominator_degree": 8
+    },
+    {
+      "quotient_coefficients": [
+        3
+      ],
+      "denominator_degree": 4
+    }
+  ]
+}

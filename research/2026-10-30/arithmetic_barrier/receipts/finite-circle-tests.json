@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/.venv/bin/python",
+    "-m",
+    "unittest",
+    "test_finite_circle",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier",
+  "start_utc": "2026-10-30T15:48:24.672991+00:00",
+  "timeout_seconds": 180,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "threads": 1,
+  "git_head_at_launch": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.17,
+  "end_utc": "2026-10-30T15:48:24.843071+00:00",
+  "log_sha256": "f55f12584a67707fc32c2d159429eec05d14306e80d88ff4375e3c81f85e924b",
+  "log_bytes": 1020
+}

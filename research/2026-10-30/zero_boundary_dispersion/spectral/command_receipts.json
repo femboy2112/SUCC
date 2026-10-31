@@ -1,0 +1,56 @@
+{
+  "recorded_after_execution_utc": "2026-10-30T19:56:47.604985+00:00",
+  "timestamp_scope": "Exact start/end times were not captured by this front; exit codes and raw outputs were observed from exec tool. This timestamp is metadata recording, not execution time.",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/research/2026-10-30/zero_boundary_dispersion/spectral",
+  "runs": [
+    {
+      "command": "python -m unittest -v test_spectral.py",
+      "exit_code": 0,
+      "log": "focused_tests_controls.log",
+      "log_sha256": "53ea5f8cdb5ad16edb2519944b805e5a45e27a921ea45c77b92693936746a59d",
+      "input_sha256": {
+        "spectral_probe.py": "03ad7793d9e35bd94dfd8befebab15f40c8abb43c0dcebd551a94246246001fd",
+        "test_spectral.py": "11cf96edda072080eacc179eccc66633cccadb1a00db1e759cedf66a14f98f7b"
+      }
+    },
+    {
+      "command": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/.venv/bin/python run_probe.py",
+      "exit_code": 1,
+      "log": "probe_initial_serialization_failure.log",
+      "log_sha256": "78cc9ba63087a79c0ca1d7ad59660aeaff39bab77235b6015af9011acca4150f",
+      "input_sha256": {
+        "spectral_probe_initial_failed.py": "e692a6a7060f2a94804c215fbee70fe1f9eb25215a73fa2d140ccd5ba1bbf5e2"
+      }
+    },
+    {
+      "command": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/.venv/bin/python run_probe.py",
+      "exit_code": 0,
+      "log": "probe.log",
+      "log_sha256": "825afcc36aafc1997c452ff27b9b784412a2d51b31f05e074c6d60b34ee1d27a",
+      "input_sha256": {
+        "spectral_probe.py": "03ad7793d9e35bd94dfd8befebab15f40c8abb43c0dcebd551a94246246001fd",
+        "run_probe.py": "1fb85615aea23f606b911f913dd5ca214215a27bfd38ff54152e705a11fb6b5b"
+      }
+    },
+    {
+      "command": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/.venv/bin/python independent_oracle.py",
+      "exit_code": 0,
+      "log": "independent_oracle.log",
+      "log_sha256": "c878e22e6c7d1d8d01e0b279aea509eed70ba8817689e261a5c3caddbd590246",
+      "input_sha256": {
+        "independent_oracle.py": "0f47aa1c29235784fd04425fd548c944d65d65900576f2e2ce627b4508a26d33",
+        "probe_receipt.json": "60a79b5ff894af51e64fb283b698ebca785e6967aa1fe57dc16cbe858efa1f35"
+      }
+    },
+    {
+      "command": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/.venv/bin/python geometry_controls.py",
+      "exit_code": 0,
+      "log": "geometry_controls.log",
+      "log_sha256": "7c34bddf2c6b833611e6991a327fb3a638a99a8df47a81c75888c265855538e8",
+      "input_sha256": {
+        "geometry_controls.py": "e85fe4301210a1495d6d9b217cf546e65cfe943b02dedd21f544e1ad931b5b3c",
+        "spectral_probe.py": "03ad7793d9e35bd94dfd8befebab15f40c8abb43c0dcebd551a94246246001fd"
+      }
+    }
+  ]
+}

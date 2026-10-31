@@ -1,0 +1,244 @@
+{
+  "parent_commit": "5f350af7808532e55d74e80c948c02bb385c6e70",
+  "scope": "Diophantine branch artifacts; no source changes",
+  "source_inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3058,
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/ASTRA_ULTRA_FANOUT.md",
+      "bytes": 8366,
+      "sha256": "441ff3437f6460ca16e44f749e4b6fcd5849d62c4215599d1c41c23c163bff31"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/CLAIMS.md",
+      "bytes": 2754,
+      "sha256": "b8bb0104882e0493f687dee94864d65a1cffe0cd4368b223e4372061bb21f912"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/README.md",
+      "bytes": 2677,
+      "sha256": "a3441e6b642a91316777be020a985d1b2420595b1bb59e7a0651fdac652ef3af"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/SOURCE_MANIFEST.json",
+      "bytes": 1886,
+      "sha256": "615bceda071c124d1ee91faa7603c11aae1957d7b7158fdb05122e8ae205be46"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/THEOREMS.md",
+      "bytes": 8881,
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/VALIDATION.md",
+      "bytes": 1637,
+      "sha256": "84b001254fb22ccaec5c1e983c15d4fbee07859280f9b82c9b60372727d12ed2"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/focused_tests.log",
+      "bytes": 1403,
+      "sha256": "04c9a6e1306482bdf98aca1636401317556a1c8e4187599d7c89f493d777e6d7"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/independent_oracle.py",
+      "bytes": 2322,
+      "sha256": "2cc93d9e98ba748a31215ab225129359816bd6da36bc81d4f23553b733fcf1a9"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/independent_oracle_receipt.json",
+      "bytes": 1716,
+      "sha256": "396b27911489df48869f2e85001e233b352b999ab5975355b33acf0319704d70"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/initial_oracle_failure.log",
+      "bytes": 439,
+      "sha256": "053cedffec6c94b123d8547cc902e09102000a846a2e2fc1340ce5747ac540f9"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/selected_boundary.py",
+      "bytes": 3188,
+      "sha256": "32944e6de122b62a185868ae869091f265f3e9c4113cc721b04c128a74ee9340"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/test_selected_boundary.py",
+      "bytes": 3026,
+      "sha256": "f01c5e138bc8fbf9887b207aa182ef31c23bf853f06a5d557ebfa2e880638945"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/SHARP_SEED_ENERGY.md",
+      "bytes": 13455,
+      "sha256": "7b73ae06c80b31289c493c32bfb022f4ce20b58981a0acb2164b6d401ab19846"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/CURRENT_OBSTRUCTION.md",
+      "bytes": 3310,
+      "sha256": "a4e6e18769043ff0de3dcee30a3344aec8401d77ffde6a9d9c5f7b57edaee9bb"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/run_receipt.py",
+      "bytes": 3223,
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "CLAIMS.md",
+      "bytes": 2793,
+      "sha256": "b2c8121eea4e3d6d39d86acfd11b030e8b04249dcc34ba450731a38f133b6fd9"
+    },
+    {
+      "path": "MOVING_FREQUENCY_REVIEW.md",
+      "bytes": 1856,
+      "sha256": "f0751806b4e6d34a2a23f74becf9f429c1b5d6f43d1be25a06d0bd8f8f07b439"
+    },
+    {
+      "path": "NoWrap.initial.lean.txt",
+      "bytes": 1829,
+      "sha256": "a205f929b193ea395d380926f74decc530ceca25be356c85c0beac09f32e5f89"
+    },
+    {
+      "path": "NoWrap.lean",
+      "bytes": 1838,
+      "sha256": "134b026d228c566a1d32e1575d98fa24542e4591702529727f0296e3e6d0a11b"
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "bytes": 3350,
+      "sha256": "dcc096c7081fd49cbc0cb71208118d1179dbee337530be914fa3ed0b161dda18"
+    },
+    {
+      "path": "THEOREMS.md",
+      "bytes": 13449,
+      "sha256": "d11c75f879b88a568efce37122cabbe1f2da6ab001806a53525bed31155054d6"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3460,
+      "sha256": "64739c6016e107ec8a484f33e593185dc86448aa6690089f33d97212148e1fb9"
+    },
+    {
+      "path": "independent_oracle.py",
+      "bytes": 3157,
+      "sha256": "6d251f31067b5b8aa16a1be3a51ee1c5f45ff004fec595dfa7cc96bad135eea3"
+    },
+    {
+      "path": "kempner_calibration.py",
+      "bytes": 1583,
+      "sha256": "a34519ea5c4742cc31b867be9f62f249479a60f8621c8a7a151e37f43af204f3"
+    },
+    {
+      "path": "probes.py",
+      "bytes": 4243,
+      "sha256": "38fd66716cff875feff4ca287c9899505113ea1378992b2021afc3c1db1955bf"
+    },
+    {
+      "path": "receipts/focused.json",
+      "bytes": 698,
+      "sha256": "e8031091be6efdb0bac0439ec1bf4c54de20c66014308522c4a5d8d767989d69"
+    },
+    {
+      "path": "receipts/focused.log",
+      "bytes": 1325,
+      "sha256": "70e2a77b3245d00bea2afe84d6abf9713dacf81b746eb7dd22f58169101e18de"
+    },
+    {
+      "path": "receipts/focused_extended.json",
+      "bytes": 720,
+      "sha256": "86826fea7b97e5f7c40207e5b03c1172a32430539ebb90a043b176a6ecda22d1"
+    },
+    {
+      "path": "receipts/focused_extended.log",
+      "bytes": 1733,
+      "sha256": "d3287b43c4ac92fe81b37f52e58a227d8adba8c594cd356919968cc160273fec"
+    },
+    {
+      "path": "receipts/kempner.json",
+      "bytes": 670,
+      "sha256": "c771dc4a98e7dd5a1135a3be93347f55cf0ce6b91aea0fb188c66a8aa7cd328f"
+    },
+    {
+      "path": "receipts/kempner.log",
+      "bytes": 5547,
+      "sha256": "9eaad69053f904aa698ca0253b0d1f9dc4ea6cfe29f791379f5e09208f4cf74a"
+    },
+    {
+      "path": "receipts/lean_checked.json",
+      "bytes": 655,
+      "sha256": "766188e9d2ca86d45b8a4221a1fbf7b59ad7162a001af92defa108d62b8929e1"
+    },
+    {
+      "path": "receipts/lean_checked.log",
+      "bytes": 155,
+      "sha256": "fa0aac4917e7e0775bac0502ee33b2df9a650bec4f87cc61efa63a04894625f2"
+    },
+    {
+      "path": "receipts/lean_final.log",
+      "bytes": 155,
+      "sha256": "fa0aac4917e7e0775bac0502ee33b2df9a650bec4f87cc61efa63a04894625f2"
+    },
+    {
+      "path": "receipts/lean_initial.json",
+      "bytes": 513,
+      "sha256": "112be1420eac5e7b8f48c1457e957f17414182ac6a2130044bf51026133ccc62"
+    },
+    {
+      "path": "receipts/lean_initial.log",
+      "bytes": 273,
+      "sha256": "ec76035a5ed380f9c3321d3fedfd984b0834e213170d0ccabf3858f67dfc8f25"
+    },
+    {
+      "path": "receipts/oracle.json",
+      "bytes": 670,
+      "sha256": "d324a9aaf282b990d6acc1837bc59184c85179d7d5880634fa43557627ddf85d"
+    },
+    {
+      "path": "receipts/oracle.log",
+      "bytes": 10968,
+      "sha256": "d6a2e30b6de8231c24180e9abdfabcb338df1e1accb9447e462830a0a21446fd"
+    },
+    {
+      "path": "receipts/probes.json",
+      "bytes": 659,
+      "sha256": "59de5b889dc8e8c9177f1308fa183441884a9e7747c47a790932112765cd7ef9"
+    },
+    {
+      "path": "receipts/probes.log",
+      "bytes": 32916,
+      "sha256": "4fbbf736a9a8647a8e71cb7dde97ab4296e78f88efab2fbcd010dc3dc7b25118"
+    },
+    {
+      "path": "run_receipt.py",
+      "bytes": 3223,
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28"
+    },
+    {
+      "path": "test_kempner.py",
+      "bytes": 891,
+      "sha256": "10ec1bf9921cc2178eb6c1ef5cf0f340ce823182b0708a87b5fc6121ad93ae25"
+    },
+    {
+      "path": "test_probes.py",
+      "bytes": 3008,
+      "sha256": "048096a102da2408e71e67d9a5ab1db76ea9e1b29c77cce0e307b60556b795e3"
+    },
+    {
+      "path": "write_manifest.py",
+      "bytes": 1674,
+      "sha256": "932c6bdf6ed63b5d1a5de05aa362d94d423c942fdf1f110682c93e6b24235c86"
+    }
+  ],
+  "external_primary_inputs": [
+    {
+      "url": "https://arxiv.org/abs/1912.06345",
+      "authority": "Published Zeilberger-Zudilin 2020; pi mu<15/2"
+    },
+    {
+      "url": "https://cs.uwaterloo.ca/~shallit/Papers/scf.pdf",
+      "authority": "Shallit 1979 Theorems1,8,9; bounded partial quotients for beta_2"
+    }
+  ],
+  "proof_authority": "Paper proofs plus narrowly scoped Lean finite integer kernel; no external referee."
+}

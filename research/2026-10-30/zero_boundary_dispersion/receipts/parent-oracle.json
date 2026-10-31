@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "research/2026-10-30/selected_boundary_slip/independent_oracle.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion",
+  "start_utc": "2026-10-30T19:49:39.594308+00:00",
+  "timeout_seconds": 1800,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "threads": 1,
+  "git_head_at_launch": "5f350af7808532e55d74e80c948c02bb385c6e70",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.123,
+  "end_utc": "2026-10-30T19:49:39.717291+00:00",
+  "log_sha256": "396b27911489df48869f2e85001e233b352b999ab5975355b33acf0319704d70",
+  "log_bytes": 1716
+}

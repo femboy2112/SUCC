@@ -1,0 +1,103 @@
+{
+  "status": "EXACT_FINITE_SEARCH",
+  "source": "authentic U0=0",
+  "criterion": "max_n distance(U_n,theta+Z/q)<=1/p^2, q<=L",
+  "BBP_cases": [
+    {
+      "p": 701,
+      "birth": 88,
+      "L": 175,
+      "q_min": 1,
+      "q_max": 175,
+      "allowed_error": "1/491401",
+      "best_q": 173,
+      "best_radius": [
+        "2778301843243953152359751479/1000000000000000000000000000000",
+        "69457546081098828808993787/25000000000000000000000000000"
+      ],
+      "passing_q": [],
+      "all_q_excluded": true,
+      "minimum_radius_over_allowed_error": [
+        "136526030407192182302273/100000000000000000000",
+        "68263015203596091151137/50000000000000000000"
+      ]
+    },
+    {
+      "p": 709,
+      "birth": 89,
+      "L": 177,
+      "q_min": 1,
+      "q_max": 177,
+      "allowed_error": "1/502681",
+      "best_q": 177,
+      "best_radius": [
+        "2754900336744550162621121953/1000000000000000000000000000000",
+        "1377450168372275081310560977/500000000000000000000000000000"
+      ],
+      "passing_q": [],
+      "all_q_excluded": true,
+      "minimum_radius_over_allowed_error": [
+        "69241802808754361014827/50000000000000000000",
+        "27696721123501744405931/20000000000000000000"
+      ]
+    },
+    {
+      "p": 733,
+      "birth": 92,
+      "L": 61,
+      "q_min": 1,
+      "q_max": 61,
+      "allowed_error": "1/537289",
+      "best_q": 61,
+      "best_radius": [
+        "1898781541324609855696047927/250000000000000000000000000000",
+        "7595126165298439422784191709/1000000000000000000000000000000"
+      ],
+      "passing_q": [],
+      "all_q_excluded": true,
+      "minimum_radius_over_allowed_error": [
+        "408077774222703321902829/100000000000000000000",
+        "40807777422270332190283/10000000000000000000"
+      ]
+    }
+  ],
+  "Stoneham_controls": [
+    {
+      "c": 3,
+      "j": 3,
+      "q": 27,
+      "A": 27,
+      "L": 54,
+      "exact_truncated_grid_radius": "0",
+      "distinct_cells": 9,
+      "maximum_cell_multiplicity": 6,
+      "complete_constant_tail_error_bound": "1/864",
+      "bounded_multiplicity_mechanism": true
+    },
+    {
+      "c": 5,
+      "j": 2,
+      "q": 25,
+      "A": 25,
+      "L": 100,
+      "exact_truncated_grid_radius": "0",
+      "distinct_cells": 5,
+      "maximum_cell_multiplicity": 20,
+      "complete_constant_tail_error_bound": "1/1600",
+      "bounded_multiplicity_mechanism": true
+    },
+    {
+      "c": 2,
+      "j": 5,
+      "q": 32,
+      "A": 32,
+      "L": 32,
+      "exact_truncated_grid_radius": "0",
+      "distinct_cells": 3,
+      "maximum_cell_multiplicity": 30,
+      "complete_constant_tail_error_bound": "1/512",
+      "bounded_multiplicity_mechanism": false
+    }
+  ],
+  "boundary": "excludes only stated finite q/error/window classes; no all-horizon approximate-grid no-go"
+}

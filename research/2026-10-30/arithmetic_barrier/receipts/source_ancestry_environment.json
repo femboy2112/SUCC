@@ -1,0 +1,117 @@
+{
+  "status": "PASS_SOURCE_BYTES_AND_ANCESTRY",
+  "parent_files_verified": [
+    "CLAIMS.md",
+    "CODEX_ASTRA_ULTRA_HANDOFF.md",
+    "NEXT.md",
+    "README.md",
+    "RESEARCH.md",
+    "VALIDATION.md",
+    "finite_selected_occupancy.json",
+    "focused_tests.log",
+    "independent_oracle.py",
+    "independent_oracle_receipt.json",
+    "independent_pi_check.py",
+    "independent_pi_receipt.json",
+    "prime_stroboscope.py",
+    "selected_occupancy.py",
+    "test_prime_stroboscope.py"
+  ],
+  "related_prs": [
+    {
+      "pr": 390,
+      "head_sha": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "base_is_ancestor": true,
+      "branch": "research/time-extruded-operational-triangle-2026-10-30"
+    },
+    {
+      "pr": 391,
+      "head_sha": "7ce94d38479c22c3d427753812e38207515dc868",
+      "base_is_ancestor": true,
+      "branch": "research/spacetime-triangle-zero-spine-fourier-2026-10-30"
+    },
+    {
+      "pr": 392,
+      "head_sha": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "base_is_ancestor": true,
+      "branch": "research/double-triangle-shared-field-fourier-2026-10-30"
+    },
+    {
+      "pr": 393,
+      "head_sha": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "base_is_ancestor": true,
+      "branch": "research/lorentz-clock-triangular-tiling-2026-10-30"
+    },
+    {
+      "pr": 394,
+      "head_sha": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+      "base_is_ancestor": true,
+      "branch": "research/arithmetic-energy-momentum-shell-2026-10-30"
+    },
+    {
+      "pr": 395,
+      "head_sha": "2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548",
+      "base_is_ancestor": true,
+      "branch": "research/normal-digit-frame-reset-stoneham-choice-2026-10-30"
+    },
+    {
+      "pr": 396,
+      "head_sha": "adb0a53a4b86793b084b8ea122e88674a9c74adc",
+      "base_is_ancestor": true,
+      "branch": "research/human-t-action-snapshot-dirac-2026-10-30"
+    },
+    {
+      "pr": 397,
+      "head_sha": "c884b20850679718c9c837c3024a9d8d6d51d48c",
+      "base_is_ancestor": true,
+      "branch": "research/fibonacci-epicycle-demon-normality-2026-10-30"
+    },
+    {
+      "pr": 398,
+      "head_sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "base_is_ancestor": true,
+      "branch": "research/bbp-prime-stroboscopic-crt-2026-10-30"
+    }
+  ],
+  "branch": "research/bbp-arithmetic-barrier-2026-10-30",
+  "head": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+  "origin_main": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+  "worktree": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "packages": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1",
+    "observational-succ": "0.3.0"
+  },
+  "baseline_system_python": "3.12.3 with mpmath1.2.1 below declared >=1.3; isolated .venv uses Python3.13.13 and installed .[test]",
+  "preserved_worktrees": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC                             809504e1 [research/prime-ladder-ravel-audit-2026-10-27]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier          1a1524de [research/bbp-arithmetic-barrier-2026-10-30]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-baseline         1a1524de (detached HEAD)",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance        95dbf405 [research/arithmetic-wavefront-spectral-response-2026-10-16]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent               ad19e379 [research/bbp-resolvent-observer-rigidity-2026-10-28]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect                e9b14db7 [research/carry-defect-coercivity-2026-10-27]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer         f7cc849d [research/collective-observer-2026-10-16]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-cyclotomic-selected-source  a777aa99 [research/cyclotomic-selected-source-2026-10-24]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed               848bad22 [research/global-signed-source-2026-10-27]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute                   e42096ec [research/institute-nucleus-2026-10-18]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee              6174ad02 [research/lonely-runner-referee-cubic-2026-10-28]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee-publication  6174ad02 (detached HEAD)",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner               27af9600 [research/succ-lonely-runner-exact-certificates-2026-10-28]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur              24d0f18a [research/observers-schur-complement-2026-10-16]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-periodic-mixed              6a187a61 [research/periodic-mixed-lag-source-2026-10-27]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-lag-carry                e821a90d [research/pi-lag-carry-rigidity-2026-10-24]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-selected-phase           d5c96014 [research/pi-selected-phase-forge-2026-10-25]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-source-genesis           2ab8a852 [research/pi-source-genesis-2026-10-24]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-principia-bridge            d7b5a5b9 [research/principia-ancestral-bridge-2026-10-24]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth                 5d6d7173 [research/succ-yean-proof-teeth-ultra-2026-10-15]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2                      b40601fc [research/round2-morphism-2026-10-18]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal               81aeebbc [research/round2-causal-2026-10-18]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-operators            da239e23 [research/round2-operators-2026-10-18]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-signed               a84d2ed9 [research/round2-signed-2026-10-18]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-selected-branch             79344c62 [research/selected-branch-cross-energy-2026-10-26]",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity             dc6b87d3 [research/spectral-purity-2026-10-25]"
+  ]
+}
