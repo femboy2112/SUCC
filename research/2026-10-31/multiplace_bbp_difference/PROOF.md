@@ -152,3 +152,102 @@ This is a density of ordinary integer residue classes, NOT a probability law for
 
 The existing SUCC DSI-4 proves n→U_n mod2^a is a permutation every 2^a steps for the authentic zero-seeded source. The depth min(d(n+1),K) depends only on n+1 mod3^K. CRT therefore shows that over every translated block of length 2^a3^K the BBP dyadic state residue and the original 3-adic pole depth have EXACT product frequencies. This establishes a deterministic joint local source-law, without postulating independent stochastic primes and without identifying it with the real-circle occupation measure.
 
+
+## TD-06. One actual BBP source difference forces EXPONENTIAL denominators at other primes
+
+Take the same two positive original source indices for every m≥2:
+
+\[
+x=1,\qquad y_m=1+6^m,\qquad
+\Delta_m=r(1)-r(1+6^m).
+\]
+
+Now d(y_m)=1<m, so the triple-place TD04/TD07 series is valid simultaneously in R, Q2, Q3. The source-positive real integral is
+
+\[
+\boxed{\Delta_m=\int_0^1(1-t^{8\cdot6^m})P(t)\,dt.}\tag{TD11}
+\]
+
+Therefore Δ_m increases and approaches r(1)=47/15 in the REAL metric. Since r(2)=106/819<2/15 and r is decreasing, for all m≥2,
+
+\[
+\boxed{3<\Delta_m<47/15,\qquad
+\lim_{m\to\infty}\Delta_m=47/15\quad\text{in }\mathbb R.}
+\]
+
+But TD08 yields
+
+\[
+\boxed{v_2(\Delta_m)=m,\qquad v_3(\Delta_m)=m-2,}\tag{TD12}
+\]
+
+so these very same finite rational numbers converge to ZERO in both Q2 and Q3.
+
+There is an independently checkable closed rational formula: for every positive h,
+
+\[
+\boxed{
+r(1)-r(1+h)=
+\frac{h(24064h^3+48128h^2+31664h+6853)}
+{15(2h+1)(4h+3)(8h+1)(8h+5)}.
+}\tag{TD13}
+\]
+
+When h=6^m, the cubic factor is odd and a 3-adic unit: 6853≡1 mod3; the denominator has exactly v3=2 from the factors 15 and 4h+3, independently recovering TD12. Since h≡1 mod5, the cubic factor is 4 mod5 while all four linear factors (2h+1),(4h+3),(8h+1),(8h+5) are 5-adic units. The initial factor 15 has exactly one factor5, so the REDUCED denominator B_m has v5(B_m)=1. It has no factors2 or3, because v2(Δ_m),v3(Δ_m) are nonnegative.
+
+Write Δ_m=A_m/B_m in lowest positive terms. Its numerator is divisible by 2^m3^(m−2)=6^m/9. Since Δ_m<47/15, we obtain the rigorous **complementary-prime exposure bound**
+
+\[
+\boxed{\gcd(B_m,6)=1,\quad v_5(B_m)=1,\quad
+B_m>\frac5{141}6^m.}\tag{TD14}
+\]
+
+A nonzero Archimedean source limit simultaneously with local cancellation at 2 and 3 therefore FORCES an exponentially growing denominator supported at other primes, with 5 always present. This proves a precise arithmetic radiation effect. It does NOT prove anything about distribution of those prime factors, zeta-zero positions, or π hexadecimal digit frequencies. The ordinary product formula also gives the exact identity
+
+\[
+\prod_{p\ge5}|\Delta_m|_p
+=\frac{6^m}{9|\Delta_m|_\infty},
+\]
+
+but TD14 is proved directly using integer divisibility and the real bound.
+
+## TD-07. A TRUE noncommuting finite-vs-global Gamma/real horizon (PROVED LOCAL)
+
+For h_m=6^m, y_m=1+h_m, let the finite original-source resolvent partial sum be
+
+\[
+S_{m,J}=\sum_{j=1}^{J-1}(8h_m)^j C_j(y_m),\qquad J\ge1.
+\]
+
+All terms are positive for real y≥1 by TD02. The Gamma-moment upper bound TD03 yields
+
+\[
+\boxed{0\le S_{m,J}
+\le\frac{15(J-1)(J+2)}{2(8\cdot6^m+1)^2}.}\tag{TD15}
+\]
+
+For every fixed J, S_(m,J)→0 in the real metric as m→∞. But for every fixed m, J→∞ sums the entire positive resolvent and gives Δ_m, whose real limit is 47/15. Therefore
+
+\[
+\boxed{
+\lim_{m\to\infty}\lim_{J\to\infty}S_{m,J}
+=\frac{47}{15},
+\qquad
+\lim_{J\to\infty}\lim_{m\to\infty}S_{m,J}
+=0.
+}\tag{TD16}
+\]
+
+These are both well-defined iterated limits, with a rigorous counterexample to exchanging them. The obstruction is quantitative: the real geometric ratio 8h_m/(8h_m+1) approaches 1, and its convergence is not uniform in the moving observation horizon. This is a source-specific finite-to-global failure of observer interchange, NOT the naive assignment of a value to a divergent ordinary sum.
+
+**Complementary prime-place behavior.** For any fixed J≥2, the p-adic remainder budgets from TD07 are at least J(m+1)−2 for p=2 and J(m−1)−1 for p=3. They tend to +infinity as m→∞. In fact the FIRST nonzero term j=1 already has the full source local valuations m and m−2 (TD04), while its real magnitude decays O(6^(−2m)) by TD03. The same finite rational term is consequently decisive for p-adic observation, but asymptotically invisible for the real realization. This is precisely why the full coefficient series and its declared completion protocol matter.
+
+## TD-08. What the theorem does and does not establish for π/RH
+
+**PROVED LOCAL / classical inputs:** TD-01 through TD-07, including positive original-source Gamma moments, a simultaneously convergent three-place rational resolvent with exact finite remainder, the SHARP 3-adic pole non-cancellation theorem, deterministic pole-depth distribution independent of the authenticated dyadic source residue, a forced complementary-prime denominator-growth law, and noncommuting real finite/global limits. Original source labels and all four pole signs are retained. A nearby approximation or same-source changed seed can share some of these universal forcing identities; no seed-dependent phase cancellation has been earned.
+
+**OPEN:** selected zero-boundary Weyl sum o(N), source-derived real ×3 invariance of every π occupation limit, positive entropy in all joint ergodic components, RH, and any theorem RH⇒π normality. The difference of two source values is NOT the difference of the selected real-circle Fourier phases. An exact arithmetic source-transfer identity cannot be silently promoted to an invariant-measure theorem.
+
+**Next verdict-changing probe:** condition the original signed two-time phase increments e(hU_n) on the certified 3-adic pole-depth strata d(n) while preserving the real Green correction and literal U0=0. The exceptional depths have rigorously known relative density 4/3^k; test whether their full complex cofiber interactions permit or rule out a persistent source-selected non-Haar defect. A valid normality-relevant gain must be a new all-horizon SIGNED arithmetic inequality that fails on the coherent same-forcing changed seed and rational periodic controls. Repeating the local pole statistics is NOT such a gain.
+
+**Provenance:** Original BBP source and prior SUCC DSI dyadic isometry; draft #429 half-power 6-adic successor; Operation SUMMATION SNAPSHOT ARROWS. Classical tools: rational geometric series, Gamma Laplace moments, CRT, integer valuations, and product formula. A finite exact Fraction probe and a discoverable unittest file calibrate the claims without claiming Lean kernel authority or external independent refereeing.
