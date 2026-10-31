@@ -15,3 +15,5 @@
 
 No claims of RH, π normality, absolute independence, physical black-hole measurement, or resolution of Furstenberg's measure conjecture. The underlying classical results are credited, not claimed as novel.
 | TWTH-03B | Every real selected α; K=Z₂×Z₃ under +1 | Borel globally equivariant map can realize chosen orbit on Haar-null diagonal integers while pushing Haar to δ0 | PROVED LOCAL / elementary | Mere measurable orbit representation cannot transfer local Haar to source-selected real distribution |
+
+| TWTH-11 | Z[1/6] characters, all integer dual powers, all X≥1 | Dual actions r↦16r, r↦3r commute, and the positive frequency semigroup up to X is O(log²X) | PROVED LOCAL / classical | x=0 and sparse spectrum refute automatic selected spectral Haar |
