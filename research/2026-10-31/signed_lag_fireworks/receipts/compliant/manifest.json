@@ -1,0 +1,86 @@
+[
+  {
+    "name": "pip_check",
+    "command": [
+      "/tmp/succ-fireworks-venv/bin/python",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:38:33.428019+00:00",
+    "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+    "git_status_before": " M docs/PI_SELECTED_CATEGORICAL_FRONTIER.md\n?? research/2026-10-31/signed_lag_fireworks/\n?? tests/test_signed_lag_fireworks_arithmetic.py\n?? tests/test_signed_lag_fireworks_audit.py\n?? tests/test_signed_lag_fireworks_boundary.py\n?? tests/test_signed_lag_fireworks_sharpness.py\n?? tests/test_signed_lag_fireworks_transport.py\n",
+    "seconds": 1.986,
+    "exit_code": 0,
+    "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "log": "pip_check.log"
+  },
+  {
+    "name": "new_tests",
+    "command": [
+      "/tmp/succ-fireworks-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_signed_lag_fireworks*.py",
+      "-v"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:38:35.418918+00:00",
+    "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+    "git_status_before": " M docs/PI_SELECTED_CATEGORICAL_FRONTIER.md\n?? research/2026-10-31/signed_lag_fireworks/\n?? tests/test_signed_lag_fireworks_arithmetic.py\n?? tests/test_signed_lag_fireworks_audit.py\n?? tests/test_signed_lag_fireworks_boundary.py\n?? tests/test_signed_lag_fireworks_sharpness.py\n?? tests/test_signed_lag_fireworks_transport.py\n",
+    "seconds": 2.79,
+    "exit_code": 0,
+    "sha256": "b238211c75d605f9f9b89dca924bfed5b05a7de84926dfcfca23f50b46f9855c",
+    "log": "new_tests.log"
+  },
+  {
+    "name": "provenance",
+    "command": [
+      "/tmp/succ-fireworks-venv/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:38:38.486292+00:00",
+    "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+    "git_status_before": " M docs/PI_SELECTED_CATEGORICAL_FRONTIER.md\n?? research/2026-10-31/signed_lag_fireworks/\n?? tests/test_signed_lag_fireworks_arithmetic.py\n?? tests/test_signed_lag_fireworks_audit.py\n?? tests/test_signed_lag_fireworks_boundary.py\n?? tests/test_signed_lag_fireworks_sharpness.py\n?? tests/test_signed_lag_fireworks_transport.py\n",
+    "seconds": 1.739,
+    "exit_code": 0,
+    "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "log": "provenance.log"
+  },
+  {
+    "name": "foundations",
+    "command": [
+      "/tmp/succ-fireworks-venv/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:38:40.259265+00:00",
+    "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+    "git_status_before": " M docs/PI_SELECTED_CATEGORICAL_FRONTIER.md\n?? research/2026-10-31/signed_lag_fireworks/\n?? tests/test_signed_lag_fireworks_arithmetic.py\n?? tests/test_signed_lag_fireworks_audit.py\n?? tests/test_signed_lag_fireworks_boundary.py\n?? tests/test_signed_lag_fireworks_sharpness.py\n?? tests/test_signed_lag_fireworks_transport.py\n",
+    "seconds": 0.175,
+    "exit_code": 0,
+    "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "log": "foundations.log"
+  },
+  {
+    "name": "ordinal",
+    "command": [
+      "/tmp/succ-fireworks-venv/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:38:40.435236+00:00",
+    "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+    "git_status_before": " M docs/PI_SELECTED_CATEGORICAL_FRONTIER.md\n?? research/2026-10-31/signed_lag_fireworks/\n?? tests/test_signed_lag_fireworks_arithmetic.py\n?? tests/test_signed_lag_fireworks_audit.py\n?? tests/test_signed_lag_fireworks_boundary.py\n?? tests/test_signed_lag_fireworks_sharpness.py\n?? tests/test_signed_lag_fireworks_transport.py\n",
+    "seconds": 3.605,
+    "exit_code": 0,
+    "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "log": "ordinal.log"
+  }
+]

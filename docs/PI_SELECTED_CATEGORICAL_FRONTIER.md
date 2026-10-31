@@ -243,3 +243,33 @@ The genuine centered third cumulant has leading coefficient `8/81` at order
 `(8n)^-2`, while all higher fixed-order leading mixed cumulants are gamma-free.
 These source-typed identities and the degree-17 seed-character restriction
 do not pay the remaining signed arithmetic estimate.
+
+## 7. October 31 signed-lag continuation: doubled clock and exact hostile spectra
+
+The additive [signed lag fireworks dossier](../research/2026-10-31/signed_lag_fireworks/README.md)
+starts at PR #434 head `030ee84b8b7f655fcf433375bfc0b347e0483c89`.
+It preserves this source contract and proves no new zero-selected cancellation
+estimate. Pi normality remains OPEN.
+
+Clipping each original-source lag error at two gives
+`|C_(h,k)-D_(h,k)| <= sqrt(11|h|(16^k-1)/14)`, and a weighted error
+`<=8 ceil(sqrt(11|h|/14)) 4^K/(9K²N)`. The usable clock therefore extends to
+`K=floor(log_4 N)`. A two-scale Jensen argument proves that both the original
+and doubled-clock signed criteria are necessary as well as sufficient within
+the BBP forcing family. This settles gate equivalence, not the selected bound.
+
+The leading transport scale has an exact hostile barrier: at the coherent
+seed and `K~c log16N`, `2<c<3`, the reduced lag score tends to `4/c-4/c²`
+while the actual score tends to one. The positive gap `(1-2/c)²` rules out
+seed-uniform vanishing transport at that scale.
+
+Two stronger boundary controls are proved. Exact dyadic rounding of U_M
+produces nearzero irrational seeds whose entire M-term Weyl sum differs by
+less than `22|h|/(105M²)`, followed only `O(log M)` steps later by coherence
+at every fixed harmonic. Prime-smooth completed orbits with `q=3^a5^b` have
+the exact limiting signed spectrum `1_(q/15 divides h)` under the same
+forcing. They pass arbitrarily many low modes while remaining nonnormal.
+Neither family preserves the exact zero selector or the original diagonal
+rational-state authentication; they constrain partial-source proof routes.
+Proofs, independent interval instruments, raw receipts, and actual validation
+status are linked from the dossier.
