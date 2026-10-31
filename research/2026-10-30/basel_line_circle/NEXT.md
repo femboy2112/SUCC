@@ -1,0 +1,17 @@
+# Next proof-producing gates — Basel / finite line-circle / original BBP
+
+Research-only child of PR #416 exact head 725377a64748ab0c442d16a61509b99687412505, rooted in Main XVI. Refresh repository heads and AGENTS.md before edits. Do not merge, publish, release, alter historic theorem statuses, source defaults or archives.
+
+**1. Establish an independent operational source→connection map.** Start with the original rational multiplicative carrier from PR #416, V(a)=a⁴/[(a+3)²(a+4)(a+5)] and B_0(u)=1, B_(n+1)=B_n^16 V(8(n+1)−7+u). Its logarithmic derivative is the actual signed U_n(0) trajectory, with literal integer carries. Derive a non-fitted edge transport law from that original source and the selected initial first jet. Exact scalar-difference transports on loops are a known flat/gauge-null control. Retain all integer windings in a separate no-discard record.
+
+**2. Test topology/contact scaling.** Reuse exact weighted cycle Green and magnetic determinant. The original normalized contact w_n=a_n²R(a_n)/15 has continuum-scaled response O(log N/N)→0. A genuinely weak closing edge w_N∼c/N gives L²/[12(1+c)] instead. Prove whether any source-native, non-arbitrary observer coupling actually reaches that scale. If not, record that as a true boundary rather than announcing curvature.
+
+**3. Preserve arrangement and chronology.** Magnetic determinant only sees product w_e, while Green trace distinguishes nontrivial permutations. An observer quotient that retains only total source amplitude loses positional information. Build a sourced ordered-path observable that preserves the original Pascal/posterior/carry time marks, q6/four-bit Walsh and authentic source three atoms where applicable. Replay exact C4 ordering counterexample.
+
+**4. Stress source-map adequacy.** Compare exact original source with rank-two positive mutant Qmut=5(1−e^(−3x)), coherent same-forcing s*=−π/16 (source geometry identical, selected phases nonnormal), 1/16 rational aliases, prior reset, flat gauge, fixed-budget Fisher rank loss, Stoneham normal c3/c5 and nonnormal c2/de Bruijn controls. A test that fails to distinguish selected seed must not be used to claim pi normality.
+
+**5. Actual global theorem obligation.** Derive an independent original four-pole/source- and U0=0-specific signed all-horizon bound, positive-density lag energy, or selected long-cylinder nonconcentration. Do not insert the original Weyl phase into a chosen loop twist and then claim that its determinant supplies the desired cancellation: the normalized determinant is exactly the original phase-slip observable and carries no new bound.
+
+**6. Reproducibility gates.** Re-execute the standalone stdlib Fraction probe and independent SymPy/mpmath source oracle; preserve source byte hashes and full raw logs. Run AGENTS.md provenance, 10k+ full unittest suite, observer-foundations, ordinal probes, hosted exact-head CI, and new Lean formalization where warranted. Distinguish parent CI and source-equivalent tests from exact child-head validation. External blind mathematical referee needed before scholarly-priority claims.
+
+**Next verdict-changing lamp:** a naturalized source-to-holonomy law that survives gauge ablations, carries selected zero-boundary information and proves a genuinely new signed long-range inequality. Until that exists, finite-cycle/Basel/Gamma/Oily results describe a powerful mathematical observer instrument—not the empirical/statistical realization of π's digits.
