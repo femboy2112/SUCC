@@ -8,6 +8,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] /
     "research" / "2026-10-31" / "seed_superposition"))
+import importlib.util as _selected_import_util
+_selected_oracle_path = Path(__file__).resolve().parents[1] / 'research' / '2026-10-31' / 'seed_superposition' / 'independent_oracle.py'
+_selected_oracle_spec = _selected_import_util.spec_from_file_location('_seed_superposition_independent_oracle', _selected_oracle_path)
+_selected_oracle = _selected_import_util.module_from_spec(_selected_oracle_spec)
+_selected_oracle_spec.loader.exec_module(_selected_oracle)
 from seed_superposition import (
     forcing,states,seed_lift_identity,recurrence_resonance,prefix_cylinder,
     future_integral_is_zero,covariance_late,late_second_moment,
@@ -163,7 +168,7 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
         with self.assertRaises(ValueError):dyadic_seed_coalescence_time(F(1,3))
 
     def test_18_independent_cyclotomic_anti_aliasing(self):
-        from independent_oracle import independent_cyclic_grid
+        independent_cyclic_grid = _selected_oracle.independent_cyclic_grid
         for order in (16,256,4096):
             for freq in (0,1,16,256,4096,order-1):
                 vec=independent_cyclic_grid(order,freq)
@@ -171,7 +176,7 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
                 self.assertEqual(sum(abs(x) for x in vec),order if freq%order==0 else 0)
 
     def test_19_source_independent_moment_boundary_at_r17(self):
-        from independent_oracle import direct_equal_count_collisions
+        direct_equal_count_collisions = _selected_oracle.direct_equal_count_collisions
         for k in (3,4):
             for r in range(1,17):
                 _, collisions=direct_equal_count_collisions(k,r)
@@ -180,7 +185,7 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
             self.assertGreater(collisions,0)
 
     def test_20_independent_moment_in_original_source(self):
-        from independent_oracle import direct_haar_moment_tuples
+        direct_haar_moment_tuples = _selected_oracle.direct_haar_moment_tuples
         for k,r in ((2,9),(3,6),(5,5)):
             self.assertEqual(iid_balanced_moment(k,r),
                              direct_haar_moment_tuples(k,r))
