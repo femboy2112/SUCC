@@ -90,6 +90,29 @@ D_{\mathrm{KL}}(q\,\|\,u_3)=\log3-\tfrac32\log2>0}
 
 By the strong law for i.i.d. ternary digits, q-almost every output has asymptotic digit-2 frequency 1/2; Haar₃-almost every output has frequency 1/3. The explicit transported measure is therefore singular to Haar₃ on unit shells. This is a quantifiable example of a faithful *topological* source map with a NON-HAAR image law. It is not a physical black-hole result, a quantum measurement, or a model of actual π digits.
 
+## 5b. CP-06B: Pascal occupancy is a SUFFICIENT statistic for the induced Haar defect
+
+For the explicit prefix code, among the next m ternary output symbols let A be the number of occurrences of symbol 2, which is encoded by a **single** binary bit; the others (0 or 1) each consume **two** bits. The induced q law gives each ternary word w with A(w)=a probability \(2^{-(2m-a)}\); native Haar₃ gives \(3^{-m}\).
+
+There are exactly \({m\choose a}2^{m-a}\) such words. Therefore
+\[
+\boxed{\Pr_{\mathrm{transport}}(A=a)={m\choose a}2^{-m},\qquad
+\Pr_{\mathrm{Haar}_3}(A=a)={m\choose a}
+(1/3)^a(2/3)^{m-a}.}\tag{CP-06B}
+\]
+These are **two different binomial/Pascal rows**: probability parameter 1/2 versus 1/3. Conditional on A=a, both measures are UNIFORM among precisely those \({m\choose a}2^{m-a}\) words. Hence A is a sufficient statistic for discriminating the two finite-prefix probability laws. The data-processing inequality becomes an exact equality:
+\[
+D_{\mathrm{KL}}(q^{\otimes m}\Vert u_3^{\otimes m})
+=D_{\mathrm{KL}}(\operatorname{Bin}(m,1/2)\Vert
+\operatorname{Bin}(m,1/3))
+=m\big(\log3-\tfrac32\log2\big).
+\]
+The right-hand KL is between the *distributions of the count A*, not between the two Bernoulli symbols at a fixed position. The common per-word likelihood ratio depends only on A, so the equality follows directly. Also the average source bits consumed are \(\mathbb E(2m-A)=3m/2\).
+
+**Significance:** the Pascal triangle is an **operational and complete information discriminator** for this particular cross-adic code, not merely a visual analogy or arbitrary connection of numbers. But g is still a *chosen* homeomorphism, not a BBP-source-derived function. Nothing licenses applying CP-06B's probabilities to the π-selected orbit until a compatible, authenticated source diagram and its measure pushforward are proved.
+
+Exact Fraction regression: for each 0≤m≤6, enumerate all \(3^m\) ternary words; the word probabilities, Pascal count histograms and their conditional ratios agree without floating-point approximation.
+
 ## 6. CP-07/08: Pisot generation and the sharp limit of algebraic decompositions
 
 SUCC previously proved/registered PIS-10: every **real number field** K has a Pisot-unit generator β with K=Q(β). This is classical (Salem, and algorithmic work by Vávra–Veneziano 2018, DOI 10.1016/j.jsc.2017.11.005). Thus for any *real algebraic number* α, choosing K=Q(α), one can express α as a rational polynomial in a Pisot β. This is a finite field-coordinate expression, stronger than existence of an arbitrary infinite Pisot-based series. It does **not** preserve positive path grammar, original BBP prime-place labels, or selected real orbits without extra maps.
