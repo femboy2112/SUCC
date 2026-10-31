@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "base": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    },
+    {
+      "path": "provenance/IMPORT_MANIFEST.json",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    },
+    {
+      "path": "research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "02161fa38733c4edad939cd626cda796dc9add08a9b42c4df7584f79137d2dc7"
+    },
+    {
+      "path": "research/2026-10-29/oily_triangle_sheet/PASCAL_GOLDEN_HARMONIC.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "0ea240a466e5d2ab96b3220b370b4a6c98fcf209aa52e2506ca10936cf751efa"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/README.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "38bd1d9b546d4c11536daa53cab67924233b296869ed5c6b3a2250ce9264f1d7"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/constants/CONSTANTS_AND_COMPOSITION.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "216d707e7d583c790a53f7e0f290c37fa72e06f0cb024040ab952b2f05d45ead"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/category/CATEGORICAL_ARROWS.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "6d8c5e0e220a1e10d9f234365864c1f02189670f3e672c01933427aa6bdc27c7"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/signed/SIGNED_FABRIC.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "4f90a1d0f62f553c95549416580899ddd8324c58a05fc0d8d8e723b6eb932b9d"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/period_preserving/PERIOD_FIBERS.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "a167fc98484ac2f7e07ed67b0c5d55f4c71425710c56ee13ac0fc8a2f327f688"
+    },
+    {
+      "path": "research/2026-10-30/triangle_fabric/NEXT_HANDOFF.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "704372476044c0ec5ec177aa9640518203876a2236d01e3ccb9c5804cf1b3d84"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/README.md",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "56e401057846672a3caaa1ab6edc239d6caccc041a15863cc772b33b039e88aa"
+    },
+    {
+      "path": "observational_succ/bbp_source_memory.py",
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54"
+    },
+    {
+      "path": "research/2026-10-30/cylinder_tiling_collision/THEOREMS.md",
+      "commit": "5f05181339ea97a56999ca8b8ab10a2009c6c84d",
+      "sha256": "6758390a43afc3a201885b80835774961c07f5cf383db5d6355e8668c8121363",
+      "type": "read-only sibling; not merged"
+    },
+    {
+      "path": "research/2026-10-30/fibonacci_epicycle_demon/RESEARCH.md",
+      "commit": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "sha256": "c5bb6df9f6675f0bc5b275d76d5fc19cf78b64a2b2f8f834fa57b72d432025ea",
+      "type": "read-only sibling; not merged"
+    }
+  ],
+  "ancestry": [
+    {
+      "pr": 408,
+      "head": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "base": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "ancestor": true
+    },
+    {
+      "pr": 407,
+      "head": "5f05181339ea97a56999ca8b8ab10a2009c6c84d",
+      "base": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "ancestor": true
+    },
+    {
+      "pr": 405,
+      "head": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "base": "5f350af7808532e55d74e80c948c02bb385c6e70",
+      "ancestor": true
+    },
+    {
+      "pr": 397,
+      "head": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 390,
+      "head": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 391,
+      "head": "7ce94d38479c22c3d427753812e38207515dc868",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 392,
+      "head": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "base": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "ancestor": true
+    },
+    {
+      "pr": 393,
+      "head": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "base": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "ancestor": true
+    },
+    {
+      "pr": 394,
+      "head": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+      "base": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "ancestor": true
+    }
+  ],
+  "parent_artifacts_unchanged": 136,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "branch": "research/fibonacci-triangle-extrusion-2026-10-30"
+}

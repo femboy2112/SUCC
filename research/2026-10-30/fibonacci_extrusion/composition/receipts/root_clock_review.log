@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "authority": "same-model complementary proof/code review plus exact field and fresh high-precision checks",
+  "reviewed_sha256": {
+    "clock_constants/CLOCK_CONSTANTS.md": "09681e325e1bf1e3d835cc222e03e12a3e2651804aca841ca84ad1ae7eb45a4a",
+    "clock_constants/clock_constants.py": "5e4df613d2b05ea6c902607a3830284fbbb2b4cafa057d2b3f11262fc80dc9a5",
+    "clock_constants/numerical_oracle.py": "a004fd04ba6c06db3cbeaf535aff39a47625f3a88d2e0a8f41d49c6129bcb821",
+    "receipts/clock-exact.log": "362a90118583b790e8a73e5f2973c9c549ca48913f8c2de3187b3ae012939ab3",
+    "receipts/clock-oracle.log": "a2ce8c3b3699f92b4ecda0002fe119d6fd9f49bbd36b518b8141c7c4a296e9cb"
+  },
+  "finite_aggregate_rows": [
+    {
+      "N": 10,
+      "maximum_rank": 55,
+      "aggregate_field": [
+        "79050243843474506011925736030061/82124679362518912719600",
+        "-77518775226957549482220209221/49772532946981159224"
+      ],
+      "numeric_residual": "3.8823574e-153",
+      "status": "PASS"
+    },
+    {
+      "N": 11,
+      "maximum_rank": 89,
+      "aggregate_field": [
+        "1093440016450916513912338855674683458645097134961858041/143753350989097891060894451413015058880",
+        "-353844622255364444711683612969936284488597868980636225/28750670197819578212178890282603011776"
+      ],
+      "numeric_residual": "7.2737261e-146",
+      "status": "PASS"
+    },
+    {
+      "N": 12,
+      "maximum_rank": 144,
+      "aggregate_field": [
+        "-382509450160628207163571745498858231996639494367283521038492026961573501733924545262236/260255629832446451879396196008752817240807621800046254926375",
+        "633767210371000693439680955342772860774632108706447467222076589141819794062733087945155/266501764948425166724501704712962884854587004723247365044608"
+      ],
+      "numeric_residual": "1.1312407e-134",
+      "status": "PASS"
+    }
+  ],
+  "product_rows": [
+    {
+      "N": 3,
+      "identity": "exact Q(lambda) fibonorial",
+      "status": "PASS"
+    },
+    {
+      "N": 6,
+      "identity": "exact Q(lambda) fibonorial",
+      "status": "PASS"
+    },
+    {
+      "N": 11,
+      "identity": "exact Q(lambda) fibonorial",
+      "status": "PASS"
+    },
+    {
+      "N": 17,
+      "identity": "exact Q(lambda) fibonorial",
+      "status": "PASS"
+    },
+    {
+      "N": 25,
+      "identity": "exact Q(lambda) fibonorial",
+      "status": "PASS"
+    }
+  ]
+}

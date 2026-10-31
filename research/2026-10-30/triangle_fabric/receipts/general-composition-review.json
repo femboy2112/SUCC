@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "authority": "complementary same-model review; exact finite Hessian/variance algebra; numerical Frullani calibration not universal proof",
+  "source_dossier": "constants/CONSTANTS_AND_COMPOSITION.md",
+  "source_sha256": "47b7696a4c823df9168126577dad39af711ba133b5975809f341bf35d2cf53f3",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "mpmath": "1.2.1",
+  "exact_checks": {
+    "pointwise_hessian": 60,
+    "dirichlet_hessian": 16,
+    "tilt_variance": 3,
+    "log_variance": 0
+  },
+  "calibration": [
+    {
+      "k": 2,
+      "a": "1/2",
+      "gap_100dps": "0.05892743057551065235952724025998611968224164385704877636325507385443658",
+      "lower_bound": "1379/1993006125",
+      "quadrature_tail_upper": "1.342836858e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 2,
+      "a": "29/3",
+      "gap_100dps": "0.002078356055721679441705445492106618292515825698441424247871432369327322",
+      "lower_bound": "975340499/3628156928000",
+      "quadrature_tail_upper": "1.342836858e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 2,
+      "a": "211",
+      "gap_100dps": "0.000006711853370249127304568369917642265809667163551476089762158572865587046",
+      "lower_bound": "2733342709139/457019805007872000",
+      "quadrature_tail_upper": "1.342836858e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 4,
+      "a": "1/2",
+      "gap_100dps": "0.0938369360807118154766259346145321689600045326514695813119556921525071",
+      "lower_bound": "1379/1195803675",
+      "quadrature_tail_upper": "4.028510573e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 4,
+      "a": "29/3",
+      "gap_100dps": "0.003446190532632552233630185185738526122420866134750956771027719221470054",
+      "lower_bound": "975340499/2176894156800",
+      "quadrature_tail_upper": "4.028510573e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 4,
+      "a": "211",
+      "gap_100dps": "0.00001118307636019317000910485200191311406284678337370463120531501254740409",
+      "lower_bound": "2733342709139/274211883004723200",
+      "quadrature_tail_upper": "4.028510573e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 7,
+      "a": "1/2",
+      "gap_100dps": "0.1097512778610260936403683308396612039152857558975181382959654635885801",
+      "lower_bound": "2758/1993006125",
+      "quadrature_tail_upper": "8.057021146e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 7,
+      "a": "29/3",
+      "gap_100dps": "0.004123479103923449670211013780737595083813424499351447077558449309237619",
+      "lower_bound": "975340499/1814078464000",
+      "quadrature_tail_upper": "8.057021146e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    },
+    {
+      "k": 7,
+      "a": "211",
+      "gap_100dps": "0.00001341743379179515089963038599966040569942956262961686922193589696675271",
+      "lower_bound": "2733342709139/228509902503936000",
+      "quadrature_tail_upper": "8.057021146e-78",
+      "precision_agreement": "abs difference<1e-60; NOT a quadrature error certificate"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "independent_oracle.py",
+    "receipts/probe.json",
+    "receipts/oracle.json"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric/research/2026-10-30/triangle_fabric/signed",
+  "started_utc": "2026-10-30T22:31:54.435957+00:00",
+  "elapsed_seconds": 2.6124448589980602,
+  "exit_code": 0,
+  "log": "receipts/oracle.log",
+  "log_sha256": "77d9beeb6bde8129068e9898955d1b822c5a8808832ca2d5d582b6785871cc80"
+}

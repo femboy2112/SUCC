@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "Complementary review of FIC01 and FIC05 only",
+  "reviewed_sha256": "6a7df2ce932b9251ca546878118ba4238c83947bff2c93aa3e36feea6263db4c",
+  "rate_moments": [
+    "1",
+    "59/30",
+    "27/5"
+  ],
+  "variance": "1379/900",
+  "dirichlet_cases": [
+    {
+      "k": 2,
+      "coefficient": "1/5"
+    },
+    {
+      "k": 3,
+      "coefficient": "2/7"
+    },
+    {
+      "k": 7,
+      "coefficient": "2/5"
+    },
+    {
+      "k": 29,
+      "coefficient": "28/59"
+    },
+    {
+      "k": 101,
+      "coefficient": "100/203"
+    }
+  ],
+  "scalar_clock_cases": [
+    {
+      "a": "23/2",
+      "s": "5/11",
+      "c": "2/3",
+      "d": "7/5",
+      "forced_shift": "7/11",
+      "exact_mean_gap": "88342665326900944317221279583376/36128674747530306275023544756211765",
+      "unequal_laws": true
+    },
+    {
+      "a": "31/3",
+      "s": "7/13",
+      "c": "3",
+      "d": "8",
+      "forced_shift": "56/13",
+      "exact_mean_gap": "5378089328339176321921454405545/72720364279320237791097123536848",
+      "unequal_laws": true
+    },
+    {
+      "a": "19/2",
+      "s": "2/7",
+      "c": "0",
+      "d": "9/4",
+      "forced_shift": "9/14",
+      "exact_mean_gap": "0",
+      "unequal_laws": false
+    },
+    {
+      "a": "41/3",
+      "s": "3/17",
+      "c": "5/3",
+      "d": "5/3",
+      "forced_shift": "5/17",
+      "exact_mean_gap": "0",
+      "unequal_laws": false
+    }
+  ],
+  "reasoner_authority": "Same-model sibling review; computational routes differ, no external referee"
+}

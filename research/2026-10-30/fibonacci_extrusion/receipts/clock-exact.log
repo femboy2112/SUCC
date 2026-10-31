@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "authority": "exact rational enclosures plus proved analytic tails",
+  "cutoff": 120,
+  "constants": {
+    "harmonic_budget": {
+      "lo_numerator": "1067784349182849709828308",
+      "hi_numerator": "1067784349182849709828309",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 1.0677843491828498,
+      "display_width": 2.2544102841100655e-25
+    },
+    "golden_budget": {
+      "lo_numerator": "596266786068165685141757",
+      "hi_numerator": "596266786068165685141758",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.5962667860681656,
+      "display_width": 2.935271206769615e-39
+    },
+    "oily_budget": {
+      "lo_numerator": "1664051135251015394970065",
+      "hi_numerator": "1664051135251015394970066",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 1.6640511352510154,
+      "display_width": 2.254410284110095e-25
+    },
+    "reciprocal_fibonacci": {
+      "lo_numerator": "3359885666243177553172011",
+      "hi_numerator": "3359885666243177553172012",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 3.3598856662431777,
+      "display_width": 3.7324858316230456e-25
+    },
+    "fibonacci_square_reciprocal": {
+      "lo_numerator": "1426320751167241187741569",
+      "hi_numerator": "1426320751167241187741570",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 1.426320751167241,
+      "display_width": 2.451303934940088e-50
+    },
+    "log_fibonorial_constant": {
+      "lo_numerator": "204361883409386065693068",
+      "hi_numerator": "204361883409386065693069",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.20436188340938607,
+      "display_width": 4.508373780915827e-34
+    },
+    "renormalized_pascal_sum": {
+      "lo_numerator": "1544905887502954720860513",
+      "hi_numerator": "1544905887502954720860514",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 1.5449058875029547,
+      "display_width": 2.2544102886184684e-25
+    }
+  },
+  "point_controls": {
+    "1": {
+      "lo_numerator": "767173996467779186184418",
+      "hi_numerator": "767173996467779186184419",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.7671739964677792,
+      "display_width": 4.308232357047235e-27
+    },
+    "2": {
+      "lo_numerator": "383043810282781300869480",
+      "hi_numerator": "383043810282781300869481",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.3830438102827813,
+      "display_width": 4.308232357047235e-27
+    },
+    "3": {
+      "lo_numerator": "232222709674687020088409",
+      "hi_numerator": "232222709674687020088410",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.23222270967468703,
+      "display_width": 4.308232357047235e-27
+    },
+    "5": {
+      "lo_numerator": "116888588721222624831748",
+      "hi_numerator": "116888588721222624831749",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.11688858872122262,
+      "display_width": 4.308232357047235e-27
+    },
+    "8": {
+      "lo_numerator": "64539709646397079610687",
+      "hi_numerator": "64539709646397079610688",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.06453970964639708,
+      "display_width": 4.308232357047235e-27
+    },
+    "13": {
+      "lo_numerator": "38170444735744017595639",
+      "hi_numerator": "38170444735744017595640",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.03817044473574402,
+      "display_width": 4.308232357047235e-27
+    },
+    "21": {
+      "lo_numerator": "23623419647067988163197",
+      "hi_numerator": "23623419647067988163198",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.02362341964706799,
+      "display_width": 4.308232357047235e-27
+    },
+    "55": {
+      "lo_numerator": "9063361792174078003677",
+      "hi_numerator": "9063361792174078003678",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.009063361792174079,
+      "display_width": 4.308232357047235e-27
+    },
+    "144": {
+      "lo_numerator": "3468203465882282516394",
+      "hi_numerator": "3468203465882282516395",
+      "denominator": "1000000000000000000000000",
+      "display_midpoint": 0.0034682034658822824,
+      "display_width": 5.055264301259205e-32
+    }
+  }
+}

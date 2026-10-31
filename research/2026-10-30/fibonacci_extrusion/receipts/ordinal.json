@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/ordinal_succ_report_probe.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-fibonacci-extrusion",
+  "start_utc": "2026-10-30T23:01:14.204024+00:00",
+  "timeout_seconds": 180,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 4.539,
+  "end_utc": "2026-10-30T23:01:18.743193+00:00",
+  "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+  "log_bytes": 3612
+}

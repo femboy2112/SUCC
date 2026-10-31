@@ -1,0 +1,170 @@
+{
+  "parent": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "created_utc": "2026-10-30T22:36:55.584802+00:00",
+  "scope": "signed front additive only; no exact-head CI or external refereeing inferred",
+  "author_provenance": "Leah / femboy2112 original triangle, Oily-Macaroni, and source",
+  "source_inputs": [
+    {
+      "path": "AGENTS.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "path": "research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "f84746c66541ba915c2fe4951aa78fdaa338c278",
+      "sha256": "47bbffcb01ed8daa1eee91a17f834652f84391ba74fe2798236ba6ede2004f4f"
+    },
+    {
+      "path": "observational_succ/zero_one_gamma_bridge.py",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "9e761f653071f1430c0cea2ea4a9a6243a5ffd99",
+      "sha256": "59f2e7cf132cc543df1390394fafbd24deaddf923fe2105671414e29f523c8d8"
+    },
+    {
+      "path": "observational_succ/duck_bbp_fourier.py",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "5c24c7f045cff0d1f250f25b7b9e0046c9768e58",
+      "sha256": "c97f08e9fda23a1d750b06dd39ef807a36e3ee8d39d1e7c82442861365817a0a"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/CURRENT_OBSTRUCTION.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "97c05bcba93862ab1cc688055c0ed79ffa151344",
+      "sha256": "58424518396358741e826e0861c90b6cf7b33447766d6d3d2a6f1dfa02a6971e"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/MOVING_FREQUENCY.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "37c58c465ae1e1fc5a7b8888b2dd5157eab04823",
+      "sha256": "de443a42a2e5f21423cc9525688c62a03eeaa6568dfd5ab9e04865aec5d69267"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/geometry/GEOMETRY_DOSSIER.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "b0519a1e977028e923b238c71e781c0be2081224",
+      "sha256": "f151c69621dcd1b0bf3dab3cff6ef0c4372ddbacd2385fe75cc34370b2553f6b"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/spectral/SPECTRAL_DOSSIER.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "git_blob": "8efc2d0ef4f3288c99d42bc9383b9991e261a9fd",
+      "sha256": "bd41f3a0515f2a27405c094b3c926b2952b730aa2f2bd48070d900899cc7a8dd"
+    }
+  ],
+  "read_only_siblings": [
+    {
+      "commit": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+      "path": "research/2026-10-30/noether_radix_ward/NOETHER_RADIX_WARD.md",
+      "sha256": "68517361565af44fbc234cf3e4079efdce1fc8d4ca87a38cce3ee163def5f1aa"
+    },
+    {
+      "commit": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c",
+      "path": "research/2026-10-30/count_out/COUNTING_QUOTIENT.md",
+      "sha256": "e3add66ebcb224ef849333075bee449b081ac8f7e6d0fd0aed174476aac6f385"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "CATEGORY_REVIEW.md",
+      "sha256": "5fd7e98f41aecb04f0b77bbdbb26c70ca3fd3d2498e166ecb58a5c4b51b17bb8",
+      "bytes": 2044
+    },
+    {
+      "path": "CLAIMS_AND_ROUTES.md",
+      "sha256": "39e0ec075021bd1de132eccb1cf369b5abb16350999a604c6b1e1488f1ee6f7c",
+      "bytes": 3802
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "sha256": "4ea83bc75f34ccfe62ec0f76e74110ee92ccb63ecfb6eb438039ec96259f159e",
+      "bytes": 2449
+    },
+    {
+      "path": "SIGNED_FABRIC.md",
+      "sha256": "4f90a1d0f62f553c95549416580899ddd8324c58a05fc0d8d8e723b6eb932b9d",
+      "bytes": 14312
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "a7c1e46cb4bc82f0949a3e8a511b61c3886ee312d4a71d6f6937eae521adbfc1",
+      "bytes": 2353
+    },
+    {
+      "path": "category_review.py",
+      "sha256": "96ae636d1afa662e413ea49efa87a17dccff0298770ca7c880046356203b931a",
+      "bytes": 3740
+    },
+    {
+      "path": "filters.py",
+      "sha256": "14723bac3da4f2c64055f55217e519b86238ce1739a85f8d575500033fbe42c2",
+      "bytes": 4362
+    },
+    {
+      "path": "independent_oracle.py",
+      "sha256": "12d0a1b7ee2b52e6482b64e73972abc8ae42c218d359ee22927d547f3047bb7f",
+      "bytes": 3836
+    },
+    {
+      "path": "probe.py",
+      "sha256": "966cfba3e7329ba83a20fba738c62c36989dd70481aecb87e6148bf9e98c6a6f",
+      "bytes": 1998
+    },
+    {
+      "path": "receipts/category-review-command.json",
+      "sha256": "a32cea0565cd65ef85235dd12f4929a4bcf3f5ba88eae3a0703f68c5be279d4c",
+      "bytes": 453
+    },
+    {
+      "path": "receipts/category-review.json",
+      "sha256": "069333b180e779b2d30fbb5c996cef8718a24e0a29b2ebf55d287648befb1638",
+      "bytes": 996
+    },
+    {
+      "path": "receipts/category-review.log",
+      "sha256": "3d625118c34e68b45e41952b92211659d404daf8a278138f4da1a6ef2b417254",
+      "bytes": 186
+    },
+    {
+      "path": "receipts/initial-commands.json",
+      "sha256": "dcf70267b256c4f948b5604232b430276355ed908f08c9851da41ece3daf4fac",
+      "bytes": 929
+    },
+    {
+      "path": "receipts/oracle-command.json",
+      "sha256": "fb86e7002ed9f711532732fc9152a3ed19ec5d513f8147dcadb353d2d8e9f513",
+      "bytes": 465
+    },
+    {
+      "path": "receipts/oracle.json",
+      "sha256": "fa6ccd7cac8f40f9ca9a7125a39279184ca68e38d6a12d25ab92bcb67413163c",
+      "bytes": 477
+    },
+    {
+      "path": "receipts/oracle.log",
+      "sha256": "77d9beeb6bde8129068e9898955d1b822c5a8808832ca2d5d582b6785871cc80",
+      "bytes": 213
+    },
+    {
+      "path": "receipts/probe.json",
+      "sha256": "3463d20da5ac08758c106f5e5f618603169adc13be2e194c9fc29627bc53deb5",
+      "bytes": 108105
+    },
+    {
+      "path": "receipts/probe.log",
+      "sha256": "4a902d2806cb2fd09c936fab69bc880e1e635c5e960af2042e27284ba3c8a1ce",
+      "bytes": 70
+    },
+    {
+      "path": "receipts/tests-initial.log",
+      "sha256": "7b205ed772a3a7326160fb0e29cddd35cdcca5ef6c559a97808941b3ed3ff857",
+      "bytes": 987
+    },
+    {
+      "path": "test_filters.py",
+      "sha256": "390baabd7fff67fe86b3c09057cc138c0f7a0f2a48ab7f58d2dc0a37598ff5b0",
+      "bytes": 4384
+    }
+  ]
+}
