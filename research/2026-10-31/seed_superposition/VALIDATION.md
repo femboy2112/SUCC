@@ -1,0 +1,27 @@
+# Validation receipt — selected BBP seed superposition
+
+**Date:** 2026-10-31. **Starting GitHub head:** SUCC PR #431 `cf23b8cfc39f56935c432ed764adf0a33efb0d7e` (all 19 hosted checks had succeeded at audit); inherited main head `e8598cfa5d32fd1de8e94a3e458a366a0850d59e`. No parent changes, no main write, original four signed poles and zero seed unchanged.
+
+Local standalone research module and independent oracle prepared under `/mnt/data/succ_seed_superposition`, with exact stdlib Fraction/integer routines and no network. Validation actually executed:
+
+```
+python -m unittest discover -s /mnt/data/succ_seed_superposition/tests -p 'test_*.py' -q
+# Ran 23 tests in 0.157s — OK
+```
+
+The 23 focused tests include: original four-pole combined rational identity for 69 n; selected `U0=0` and exact seed lift on rational source states; source-carry 17-factor exact recurrence for several rational seeds and harmonics; every depth-M seed cylinder normalized length; future conditional complex-character mean and off-diagonal Gram by exact integer phase frequency; early selected anchor bound and coefficient; conditional second/fourth/sixth moments and independent frequency-collision enumeration; original first equal-cardinality collision at 17 and no collision before 17 for short supports; exact Markov concentration rational bounds; quadrature aliases with exact finite group characters and an independent cyclotomic quotient oracle; finite dyadic path-ensemble coalescence and persistent 1/3 negative control; exponential derivative/Dirichlet energy formula; changed seed all-horizon tail control from authentic Green-source bound; late 17-factor resonance summability; invalid inputs fail closed.
+
+**Independent algorithms:** (a) frequency moments by ordered `K^r` tuple enumeration versus multinomial-vector coefficient sums; (b) reduced primitive-root polynomial coefficients via explicitly enumerated finite-grid paths versus integer divisibility; (c) equal-cardinality carry classification via direct finite compositions versus the general minimal-index 16-divisibility proof. These tests share arithmetic definitions and are not external referees. Source-specific π normality remains **unverified**. The analytic all-N statements are supported by paper proofs in PROOFS.md, NOT finite extrapolations.
+
+**Full repository baseline gates still required on exact PR head:** `python scripts/verify_provenance.py`; `python -m unittest discover -s tests -p 'test_*.py'`; `python scripts/observer_foundations_probe.py`; `python scripts/ordinal_succ_report_probe.py`; core Lean/theorem contract jobs where configured. No full-suite/Lean/CI result is asserted before checking GitHub at the final pushed commit. Full repo checkout not available locally; do not invent runs.
+
+**Claim status:** SS01–SS13 are elementary classical/local proof combinations; moment cutoff is inherited from PR #404, localized to resolved seed cylinders here. No π-normality, RH, new quantum theory, or independent scholarly originality claim.
+
+
+**SIBLING REVIEW ADDENDUM, 2026-10-31:** Two further finite exact tests were executed, bringing standalone focused tests to 25 PASS (0.155 seconds). One checks the classical modulus-73 complete 72-difference design for N=9, its immediate collision at N=10, and failure for harmonics divisible by 73. The other checks inevitable late aliasing for nine finite moduli and compares the exact continuous cylinder's vanishing phase mean to finite dyadic-grid resonance. PR 432 already contained independent finite tomography and conditional second/fourth moments; do not attribute those to this child as new discoveries. Final GitHub test blob sha 9d7f8a49dbeba7f6e9c475f528c18c9a003cba15 matches the standalone file executed locally. Exact-head hosted CI must be checked independently.
+
+
+**SOURCE NEGATIVE-CONTROL CORRECTION (additional local test):** Main XVI was re-read and its periodic rational seed mandatory-failure table tested against Wall's classical rational-addition theorem. A new test 26 validates exact/finitely testable alias and constant-twist identities with rational Fractions. The focused test suite now executes **26/26 PASS in 0.156 seconds** on the same standalone source files. Local test file Git SHA-1 51815ea07eb969c69c857fda4253d32f740d4fb1 matches the GitHub uploaded blob exactly. This is NOT a computational proof of Wall's theorem or a proof that pi is normal. The historical Main XVI source and parent PRs are untouched; the additive correction is in RATIONAL_SEED_NORMALITY_ERRATUM.md.
+
+
+**NEW source-specific near-zero shadow controls:** The addendum module functions rational_bbp_truncation(K) and near_zero_nonnormal_seed_certificate(K) were executed with two more focused exact tests (K=1..35 and additional held-out K). They check the original four-pole rational prefix q_K=16^-K U_K(0), source Green-tail upper bounds, its symbolic irrational changed-seed proximity, exact integer resonance for h_K=den(q_K), and unnormalized K-prefix phase error coefficients. The full focused standalone run now reports **28/28 PASS in 0.164 seconds**. The updated GitHub module/test blobs SHA-1 **8141d2eeb59357b2f2715db5cefcce1b027a3c5c** and **7f2c05de1e42657b12a4a19b0ccfae3d5d3c26a6** respectively MATCH the exact locally run files. π irrationality and full asymptotic nonnormality are theorems in NEAR_ZERO_SHADOW.md, not numerical tests. The entire repository/hosted CI remains a separate gate.
