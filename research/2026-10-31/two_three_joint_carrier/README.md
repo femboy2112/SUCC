@@ -20,3 +20,5 @@ Read [PROOF.md](PROOF.md), [SOLENOID_ERRATUM.md](SOLENOID_ERRATUM.md), [CLAIMS.m
 **Author's proposal retained as a research hypothesis:** RH may eventually constrain the selected additive π-phase through a source-faithful spectrum/curvature bridge. The present local theorem and no-go independently establish which parts do NOT require RH and where the unknown Archimedean selected correlation begins.
 
 **Additional sharp interface control (TWTH-03B):** even allowing arbitrary Borel equivariant decoders does not authenticate the source probability law: the selected π orbit can be placed on the Haar-null dense integer orbit while the pushforward of local Haar is δ0. Neither continuity nor mere measurability is a free selected source-to-Haar transfer.
+
+**TWTH-11 spectral completion:** See [SPECTRAL_ACTION.md](SPECTRAL_ACTION.md). Dual ×16/×3 actions on Z[1/6] commute and have rank two; their positive integer frequency orbit up to X has at most O(log²X) elements, not a uniformly distributed set of integer indices. An 18th local control checks the exact finite formulas.
