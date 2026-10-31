@@ -234,5 +234,24 @@ class SourceGammaAndPrimeLeakageTests(unittest.TestCase):
             self.assertLess(last["prefix"],last["exact"])
             self.assertEqual(last["prefix"]+last["remainder"],last["exact"])
 
+
+class DeepPoleFourierFirewallTests(unittest.TestCase):
+    def test_21_exceptional_poles_have_exact_periodic_density(self):
+        from multiplace_difference import deep_pole_count,deep_pole_fraction_upper
+        for k in range(2,8):
+            q=3**k
+            for start in (0,1,15,q-3):
+                self.assertEqual(deep_pole_count(q,k,start),4)
+                self.assertEqual(deep_pole_count(2*q,k,start),8)
+            self.assertEqual(deep_pole_fraction_upper(q,k),F(4,q)+F(4,q))
+
+    def test_22_all_horizon_deep_pole_weyl_error_budget(self):
+        from multiplace_difference import shallow_phase_removal_certificate
+        for N in (1,2,6,16,100,250,1024):
+            for k in (2,3,4,6):
+                z=shallow_phase_removal_certificate(N,k,7)
+                self.assertLessEqual(z["exact_fraction"],z["universal_upper"])
+                self.assertLessEqual(z["exact_fraction"],1)
+
 if __name__=="__main__":
     unittest.main()
