@@ -14,3 +14,4 @@
 | TWTH-10 | Exact local finite arithmetic | Fraction-only FFT-free CRT, 3-adic LTE, source prime poles, pi carries, solenoid dual counterexample | OBSERVED FINITE | 15 local tests cannot establish asymptotic selected truth |
 
 No claims of RH, π normality, absolute independence, physical black-hole measurement, or resolution of Furstenberg's measure conjecture. The underlying classical results are credited, not claimed as novel.
+| TWTH-03B | Every real selected α; K=Z₂×Z₃ under +1 | Borel globally equivariant map can realize chosen orbit on Haar-null diagonal integers while pushing Haar to δ0 | PROVED LOCAL / elementary | Mere measurable orbit representation cannot transfer local Haar to source-selected real distribution |
