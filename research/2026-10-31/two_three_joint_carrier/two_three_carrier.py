@@ -188,3 +188,26 @@ def exceptional_integer_orbit_phase(n:int,alpha:Fraction)->Fraction:
     if type(n) is not int:raise ValueError("integer time required")
     a=Fraction(alpha)%1
     return (a*16**n)%1 if n>=0 else (a/Fraction(16**(-n)))%1
+
+
+def solenoid_dual_shift(label:Fraction,power16:int,power3:int)->Fraction:
+    """Dual ×16/×3 action on the S-localized character lattice Z[1/6]."""
+    if type(power16) is not int or type(power3) is not int:
+        raise ValueError("integer exponents required")
+    x=Fraction(label)
+    d=x.denominator
+    while d%2==0:d//=2
+    while d%3==0:d//=3
+    if d!=1:raise ValueError("character not in Z[1/6]")
+    return x*(Fraction(16)**power16)*(Fraction(3)**power3)
+
+def semigroup_16_3_below(X:int)->tuple[int,...]:
+    """Exact sparse spectrum {16^m 3^n <=X}, distinct by unique factorization."""
+    if type(X) is not int or X<1:raise ValueError("X positive integer")
+    states=set();v=1
+    while v<=X:
+        w=v
+        while w<=X:
+            states.add(w);w*=3
+        v*=16
+    return tuple(sorted(states))
