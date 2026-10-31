@@ -242,6 +242,26 @@ These are both well-defined iterated limits, with a rigorous counterexample to e
 
 **Complementary prime-place behavior.** For any fixed J≥2, the p-adic remainder budgets from TD07 are at least J(m+1)−2 for p=2 and J(m−1)−1 for p=3. They tend to +infinity as m→∞. In fact the FIRST nonzero term j=1 already has the full source local valuations m and m−2 (TD04), while its real magnitude decays O(6^(−2m)) by TD03. The same finite rational term is consequently decisive for p-adic observation, but asymptotically invisible for the real realization. This is precisely why the full coefficient series and its declared completion protocol matter.
 
+## TD-07B. Deep 3-adic BBP source poles cannot alone carry a persistent real Weyl defect
+
+For k≥2 let E_k(A,N) be the positions A≤n<A+N where d(n+1)≥k. Since exactly four residue classes mod3^k meet this condition, elementary finite counting gives, **for every starting index A and every N**,
+
+\[
+\boxed{\frac{|E_k(A,N)|}{N}\le\frac4{3^k}+\frac4N.}\tag{TD17}
+\]
+
+For arbitrary complex source-selected phases z_n of modulus ≤1 (in particular the TRUE e(hU_n), with original zero-seeded states), deleting those exceptional positions changes the normalized sum by at most their fraction:
+
+\[
+\boxed{\left|\frac1N\sum_{A\le n<A+N}z_n-
+\frac1N\sum_{\substack{A\le n<A+N\\d(n+1)<k}}z_n\right|
+\le\frac4{3^k}+\frac4N.}\tag{TD18}
+\]
+
+Thus for ANY declared sequence k_N≥2 tending to infinity, the full and shallow-truncated normalized Weyl means differ by o(1), without assuming independent source phases. In particular, a hypothetical persistent π nonnormality Fourier defect **cannot be supported solely on arbitrarily deep 3-adic source-pole positions**; it must survive on the increasingly comprehensive shallow-source strata. This is an actual all-horizon elimination of one family of attempted mechanisms. It is NOT a saving on the shallow signed sum, so it does not prove normality.
+
+The same bound sharpens the typical-domain restriction of TD08: at any depth m≥2, all but at most 4/3^m+4/N of the original consecutive source positions obey the exact 3-adic finite difference valuation m−2d(n+1). The exceptional depth classes remain separately visible rather than being discarded inside a false uniform 3-adic isometry.
+
 ## TD-08. What the theorem does and does not establish for π/RH
 
 **PROVED LOCAL / classical inputs:** TD-01 through TD-07, including positive original-source Gamma moments, a simultaneously convergent three-place rational resolvent with exact finite remainder, the SHARP 3-adic pole non-cancellation theorem, deterministic pole-depth distribution independent of the authenticated dyadic source residue, a forced complementary-prime denominator-growth law, and noncommuting real finite/global limits. Original source labels and all four pole signs are retained. A nearby approximation or same-source changed seed can share some of these universal forcing identities; no seed-dependent phase cancellation has been earned.
