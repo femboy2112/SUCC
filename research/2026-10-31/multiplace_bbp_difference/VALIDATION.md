@@ -20,3 +20,4 @@
 - python -m unittest discover -s tests -p test_*.py
 
 **Status:** TD01–TD07B paper proofs with declared scopes; mathematical original-source synthesis, not a scholarly priority claim; all pi-normality/RH bridges remain OPEN.
+**Further local exact check (actually run):** For m=2,...,6, summing the true Fraction-valued BBP source differences over every good y mod3^m produced exactly 4/3−7/3^m for the normalized p3 absolute norm, with the individual source valuations checked. The single c=2 pole shell calculation was independently checked for (m,K)=(2,5),(2,7),(3,7), giving normalized contributions 4/3,8/3,2 respectively, equal to (2/3)(K−m−1). The committed suite now has 24 discoverable exact tests; full hosted CI is a separate check. No independent source family or external referee is claimed.
