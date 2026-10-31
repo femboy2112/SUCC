@@ -1,0 +1,22 @@
+======================================================================
+FAIL: test_mellin_integral_for_every_parity (test_zeta_tangent_family.AllNegativeIntegers.test_mellin_integral_for_every_parity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_nz_carrier_20261030/test_zeta_tangent_family.py", line 35, in test_mellin_integral_for_every_parity
+    self.assertLess(abs(predicted-difference(n,m)),mp.mpf('1e-99'))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: mpf('2.3408381773460991635779247069293382849575116693970916581685777269301916383369998247433175487696323e-97') not less than mpf('1.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008e-99')
+
+======================================================================
+FAIL: test_odd_reflected_prime_weight_identity (test_zeta_tangent_family.AllNegativeIntegers.test_odd_reflected_prime_weight_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_nz_carrier_20261030/test_zeta_tangent_family.py", line 43, in test_odd_reflected_prime_weight_identity
+    self.assertLess(abs(lhs-rhs),mp.mpf('1e-99'))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: mpf('1.8726705418768793308623397655434706279660093355176733265348621815441533106695998597946540390157059e-96') not less than mpf('1.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008e-99')
+
+----------------------------------------------------------------------
+Ran 57 tests in 9.165s
+
+FAILED (failures=2)

@@ -1,0 +1,46 @@
+{
+  "scope": "native_recovery",
+  "all_returncodes_zero": true,
+  "results": [
+    {
+      "name": "recovered_meta_choice_descent",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_eodcs_meta_choice_descent.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:31:57.570549+00:00",
+      "elapsed_seconds": 0.312,
+      "returncode": 0,
+      "log_sha256": "b4abc9ea79774ef105686d30605fd3559a8c4dabc528efb579d0e8736b2d3c4c",
+      "log": "recovered_meta_choice_descent.log"
+    },
+    {
+      "name": "recovered_round2_registry",
+      "command": [
+        "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_round2_registry.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+      "started_utc": "2026-10-31T01:31:57.570749+00:00",
+      "elapsed_seconds": 0.804,
+      "returncode": 0,
+      "log_sha256": "4221dfbde09f8696906856b2ad53d8b28eb72d2fc56354ac424f958dcc1fc15b",
+      "log": "recovered_round2_registry.log"
+    }
+  ]
+}

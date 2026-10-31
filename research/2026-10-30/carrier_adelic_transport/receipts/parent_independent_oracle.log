@@ -1,0 +1,104 @@
+{
+  "result": "PASS",
+  "independent_negative_zeta_cases": 16,
+  "negative_zeta_values": [
+    {
+      "m": 0,
+      "zeta_neg": "-1/2"
+    },
+    {
+      "m": 1,
+      "zeta_neg": "-1/12"
+    },
+    {
+      "m": 2,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 3,
+      "zeta_neg": "1/120"
+    },
+    {
+      "m": 4,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 5,
+      "zeta_neg": "-1/252"
+    },
+    {
+      "m": 6,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 7,
+      "zeta_neg": "1/240"
+    },
+    {
+      "m": 8,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 9,
+      "zeta_neg": "-1/132"
+    },
+    {
+      "m": 10,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 11,
+      "zeta_neg": "691/32760"
+    },
+    {
+      "m": 12,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 13,
+      "zeta_neg": "-1/12"
+    },
+    {
+      "m": 14,
+      "zeta_neg": "0"
+    },
+    {
+      "m": 15,
+      "zeta_neg": "3617/8160"
+    }
+  ],
+  "functional_eq_prime_identity": {
+    "log_derivative_zeta_minus1": "1.9850537244054111505670359229133677131684365640224",
+    "completed_arch_prime_mass": "0.56996099309453280639986436001973000240348228080693",
+    "prime_power_truncation_N": 50000,
+    "prime_power_count": 5217,
+    "truncated_prime_power_sum": "0.56994098736666551752264354866206138147561073249185",
+    "remainder_bound": "0.000236395565688205662213454503039"
+  },
+  "theta": [
+    {
+      "t": "0.23",
+      "residual": "0.0",
+      "analytic_truncation_bound": "1.03958818766e-113"
+    },
+    {
+      "t": "0.37",
+      "residual": "1.81113581577e-71",
+      "analytic_truncation_bound": "1.15154367171e-182"
+    },
+    {
+      "t": "1.0",
+      "residual": "0.0",
+      "analytic_truncation_bound": "1.1539746125e-492"
+    },
+    {
+      "t": "2.7",
+      "residual": "1.81113581577e-71",
+      "analytic_truncation_bound": "4.60443513449e-183"
+    }
+  ],
+  "gamma_moment_numerical_cases": 16,
+  "pi_BBP_laplace_independent": "0.19634954084936207740391521145496893026232308746094411381093403702",
+  "mpmath_version": "1.3.0",
+  "sympy_version": "1.14.0"
+}

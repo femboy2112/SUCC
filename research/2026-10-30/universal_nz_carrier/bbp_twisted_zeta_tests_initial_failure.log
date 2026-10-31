@@ -1,0 +1,21 @@
+test_exact_partial_fraction (test_bbp_source_twisted_zeta.TwistedSourceTests.test_exact_partial_fraction) ... FAIL
+test_exact_positive_remainder_bound (test_bbp_source_twisted_zeta.TwistedSourceTests.test_exact_positive_remainder_bound) ... ok
+test_exact_weight_and_grade (test_bbp_source_twisted_zeta.TwistedSourceTests.test_exact_weight_and_grade) ... ok
+test_finite_harmonic_remainder_bound (test_bbp_source_twisted_zeta.TwistedSourceTests.test_finite_harmonic_remainder_bound) ... ok
+test_laurent_finite_difference (test_bbp_source_twisted_zeta.TwistedSourceTests.test_laurent_finite_difference) ... ok
+test_positive_defect_with_strict_tail (test_bbp_source_twisted_zeta.TwistedSourceTests.test_positive_defect_with_strict_tail) ... ok
+test_same_residue_different_mutant_finite_part (test_bbp_source_twisted_zeta.TwistedSourceTests.test_same_residue_different_mutant_finite_part) ... ok
+
+======================================================================
+FAIL: test_exact_partial_fraction (test_bbp_source_twisted_zeta.TwistedSourceTests.test_exact_partial_fraction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_nz_carrier_20261030/test_bbp_source_twisted_zeta.py", line 23, in test_exact_partial_fraction
+    self.assertEqual(n*source(n),got)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: Fraction(212, 819) != Fraction(813, 560)
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.420s
+
+FAILED (failures=1)

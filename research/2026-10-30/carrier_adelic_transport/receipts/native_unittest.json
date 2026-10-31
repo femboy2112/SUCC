@@ -1,0 +1,19 @@
+{
+  "name": "native_unittest",
+  "command": [
+    "/workspace/scratch/95e8f4273943/succ-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/workspace/scratch/95e8f4273943/SUCC",
+  "started_utc": "2026-10-31T01:05:40.597244+00:00",
+  "elapsed_seconds": 1479.441,
+  "returncode": 1,
+  "log_sha256": "8334037aae588b00a3a12dee93b9d111fc3f92aef95a0852595311e297f754f4",
+  "log": "native_unittest.log"
+}
