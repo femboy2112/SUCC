@@ -1,0 +1,14 @@
+# Next proof execution — From Pisot ramification to source-faithful SUCC
+
+Parent PR #416 exact 725377a64748ab0c442d16a61509b99687412505. New draft branch additive only. Do not merge, rewrite archives, alter provenance or claim academic novelty.
+
+1. **General carrier category:** Construct typed colored-path grammars over N with count-preserving positive functors. For finite nonnegative adjacency matrix A, identify when P(A) has Pisot Perron root while retaining full marked histories; characterize failed polynomial-positive and scalar-shift cases separately.
+2. **Proof forge:** Kernel-check exact identities B=2I+A+A², B(2I-A)=I, Z[alpha]=Z[theta], discriminant -255, prime ramification {3,5,17} and source-tagged signed inverse. Reproduce quadratic shift theorem and both Fibonacci convolution expansions in two independent implementations.
+3. **A genuine field-level theorem:** Use the classical Pisot-unit-generator existence theorem for real fields. Audit whether its rational polynomial representation can be lifted to nonnegative-integer finite path maps, and where denominator/index information changes at primes.
+4. **No-discard observer:** For cubic toy B, track expanding conjugates of B^-1 and signed-cancellation costs when reconstructing A. Prove a finite-capacity/no-discard bound on what part of this inverse representation can be retained without external side records.
+5. **Authentic BBP connection requires a DIFFERENT source map:** R(8n-7) is a time-dependent rational forcing, not an unchanging finite-order integer recurrence. Demonstrate a source-specific intertwiner to the universal finite N/Pisot path carrier **before** transporting original U0=0 real-circle/literal carry/CRT statistics. Must fail for positive Gamma-rank matched mutants and coherent seed s*=-π/16.
+6. **A real proof gate:** Obtain a selected zero-seed signed o(N) Weyl estimate, long-cylinder nonconcentration, or source-independent coercivity forcing such a result. Exact toy-field Pisotization alone proves none.
+7. **Controls:** NonPisot degree2 root, nonPisot cubic with no affine shift, 2x2 positive conjugate >1 defeating positive polynomial P, actual source versus mutant, irrational coherent counterseed, normal Stoneham 3/5 and nonnormal 2, source reset, integer seam, q6/full Walsh and prime-adic CRT aliases.
+8. **Validation:** Re-execute stdlib focused source, independent SymPy oracle, root AGENTS provenance, full tests, observer/ordinal, exact-head CI, Lean where possible and blind mathematical referee. Preserve known failed SymPy full-series expansion as a harness overload, not a theorem failure.
+
+**Verdict-changing test:** Is there a source-faithful, signed-invertible Pisot-enriched functor into which the original BBP selected carry/phase recurrence embeds, with a non-tautological all-horizon bound preserved by the functor? Positive count equivalence and field-coordinate existence alone cannot answer yes.
