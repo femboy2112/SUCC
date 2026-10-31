@@ -153,3 +153,37 @@ The smallest distinctly useful next theorem would bound the *authentic selected*
 - **OPEN:** original π-selected real ×3 invariance, uniform all-scale nonconcentration/component entropy, full zero-entropy Furstenberg conjecture, π normality, RH, RH-to-selected-phase transport.
 
 No code was written to the source archive or main. No publication, formal Lean authority, or resolution of Furstenberg's conjecture is claimed.
+
+
+## 5b. TWTH-03B — measurable source-selection exists but Haar misses the source (PROVED LOCAL)
+
+The continuity in TWTH-03 is essential; dropping it does **not** solve the
+selection/occupation bridge. Let \(\alpha\in[0,1)\) be any real (including
+\(\pi/16\bmod1\)). The diagonal copy \(D=\{(n,n):n\in\mathbb Z\}\subset K\)
+is a countable, dense, S-invariant set of Haar measure ZERO. Define
+\[
+f_\alpha(t)=
+\begin{cases}
+16^n\alpha\bmod1,&t=(n,n),\ n\ge0,\\
+\alpha/16^{-n}\bmod1,&t=(n,n),\ n<0,\\
+0,&t\notin D.
+\end{cases}
+\]
+This is Borel measurable (countable modification of the constant-zero
+map), satisfies \(f_\alpha(S t)=T_{16}f_\alpha(t)\) for **every** \(t\in K\),
+and \(f_\alpha(0)=\alpha\). But it pushes Haar_K to \(\delta_0\) because
+\(f_\alpha=0\) outside the Haar-null set D. Hence the selected orbit can
+be realized on a dense exceptional set by a lawful measurable equivariant
+decoder while all Haar-generic local observations predict **the wrong**
+real occupation law. There is no contradiction with the continuous-factor
+no-go because this decoder is discontinuous for irrational \(\alpha\).
+
+This is an exact **source-map adequacy obstruction** to promoting
+profinite Haar to selected real Haar by a merely measurable embedding:
+the observer's selected path may be exceptional under its auxiliary
+Haar measure. Probability laws for internal virtual branches must be
+authenticated against the one actual source trajectory, not inferred
+from typicality of an unrelated measure. The integer-orbit formula was
+calibrated by exact Fraction arithmetic for rational positive/negative
+times; the global Borel/Haar claim is an elementary paper proof, not a
+finite test or proof of π normality.
