@@ -159,5 +159,15 @@ class IndependentBackwardSourceTests(unittest.TestCase):
             for t in range(101):
                 self.assertEqual(independent_backward_f2_residue(t,a),forward[t])
 
+
+class ExceptionalBorelSourceTests(unittest.TestCase):
+    def test_17_measurable_null_orbit_decoder_source_faithful(self):
+        from two_three_carrier import exceptional_integer_orbit_phase
+        for a in (Fraction(1,17), Fraction(3,7), Fraction(47,15)):
+            self.assertEqual(exceptional_integer_orbit_phase(0,a),a%1)
+            for n in range(-20,20):
+                self.assertEqual((16*exceptional_integer_orbit_phase(n,a))%1,
+                    exceptional_integer_orbit_phase(n+1,a))
+
 if __name__=="__main__":
     unittest.main()
