@@ -14,3 +14,6 @@ The latest **carrier-relative path measure** is strong enough to define a precis
 
 
 **Concurrent sibling review:** [PR432_CROSSREVIEW.md](PR432_CROSSREVIEW.md) compares this branch with [PR #432](https://github.com/femboy2112/SUCC/pull/432). That sibling already proved cylinder second/fourth moments and the selected edge-normality equivalence. Our incremental scope is the full r<=16 conditional moment ladder, finite dyadic seed rank-one coalescence, gradient capacity and carry localization. PR #432's 73-channel phase tomography works at N=9, but aliases at N=10; all fixed finite moduli eventually alias. Two new tests bring focused local validation to 25 passes.
+
+
+**Additional proof-integrity correction:** [RATIONAL_SEED_NORMALITY_ERRATUM.md](RATIONAL_SEED_NORMALITY_ERRATUM.md) fixes the Main XVI required-failure expectation for changed rational seeds. Classical Wall rational-addition invariance proves that ALL fixed rational seed shifts preserve the authentic orbit's base-16 normality status, even if their finite phases differ. Only the irrational coherent changed seed supplies the universal *nonnormal* anti-control; sibling #432's rational s_K remain finite-horizon spoofing controls. Exact regression total: 26 local passes.
