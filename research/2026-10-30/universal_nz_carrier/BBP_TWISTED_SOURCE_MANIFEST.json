@@ -1,0 +1,59 @@
+{
+  "parent_pr417": "69a1fd4c1465a4d31563a94501ed2068b0badf1f",
+  "files": [
+    {
+      "name": "BBP_SOURCE_TWISTED_ZETA_POLE.md",
+      "bytes": 5949,
+      "sha256": "41eb5011c735ecb68b1583fecfadfbf7441bac6fd386f75a4e95e580a0d8294d",
+      "git_blob_sha1": "85ad98ba51a01e2eba6068676fd8d234d44657f8"
+    },
+    {
+      "name": "test_bbp_source_twisted_zeta.py",
+      "bytes": 2437,
+      "sha256": "1287f859dc4329d43580cd0c686f420a9e24c26179d6b3cd6570531a6b5643e5",
+      "git_blob_sha1": "a9d4add39d6706d5598086bcd8e00836b61761a8"
+    },
+    {
+      "name": "bbp_twisted_zeta_independent_oracle.py",
+      "bytes": 1099,
+      "sha256": "d9e3fe64499423874b98ad9674d4745b6f2791f2e9d7d4dc4352161f4994326a",
+      "git_blob_sha1": "6a2f5e5432b036b50f7e66c013536c69b9809b74"
+    },
+    {
+      "name": "bbp_twisted_zeta_tests_initial_failure.log",
+      "bytes": 1546,
+      "sha256": "dc8429dcce19518d8ad4e101e6f14eef5461697bb5bdc7487bbd0d87e9d501fc",
+      "git_blob_sha1": "e4e5912fc8605826f2033216bf7b7419e342c96a"
+    },
+    {
+      "name": "bbp_twisted_zeta_tests.log",
+      "bytes": 987,
+      "sha256": "832d1236412fc6df9e0df6612891705af72aa379189de8102b9a71e57d765acc",
+      "git_blob_sha1": "e2b1948a170669a496a8270a13ee48c6741d22c9"
+    },
+    {
+      "name": "bbp_twisted_zeta_oracle_receipt.json",
+      "bytes": 337,
+      "sha256": "ea75cfc4a8c3d4aad90137489261fa774121f59b34fc798130f4913e70e03b87",
+      "git_blob_sha1": "224ddcae83ef64905f21f4fe3271384902fa1163"
+    },
+    {
+      "name": "combined_suite_initial_precision_failure.log",
+      "bytes": 1724,
+      "sha256": "68667210d413a2cd8ccb15246d00f287357f6eda4213f7795dacc19a87835c31",
+      "git_blob_sha1": "b01f80b494db73c8581055d648f4a673e92fe7bc"
+    },
+    {
+      "name": "combined_suite_final.log",
+      "bytes": 99,
+      "sha256": "68fc0db55dcedb79013f5a2fa91b739309d0afc1bf6a9ca2ad7719df58640c64",
+      "git_blob_sha1": "3fdef2841617c3cbbe9b9b61288bde77925be1c7"
+    },
+    {
+      "name": "BBP_TWISTED_SOURCE_VALIDATION.md",
+      "bytes": 3084,
+      "sha256": "83c9cde29cbe69046a7efce40497083623e833d789d8e618c084fee42ba71d94",
+      "git_blob_sha1": "76ec9cc2d3f90b7d96752121034eff5939164bf8"
+    }
+  ]
+}

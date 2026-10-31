@@ -19,6 +19,9 @@ def ratio_pascal(m,M):
         -mp.fsum(difference(n,m)/mp.power(2,n+1) for n in range(M+1))/eta)
 
 class AllNegativeIntegers(unittest.TestCase):
+ @classmethod
+ def setUpClass(cls):
+    mp.mp.dps=115  # isolate this test class from global mpmath precision changed by other modules
  def test_values_truncate_at_grade_m(self):
     for m in range(0,8):
         for n in range(m+1,m+8):
@@ -63,3 +66,4 @@ class AllNegativeIntegers(unittest.TestCase):
         self.assertLess(abs(deriv-target),bound)
 
 if __name__ == '__main__':unittest.main()
+
