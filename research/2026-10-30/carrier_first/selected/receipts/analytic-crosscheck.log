@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "domain": "d=1 exact rational crosscheck, not general proof",
+  "analytic_dossier_sha256": "447de1597b52e1363fb4422faea080627ed1b3c78dc3d3169906f0a435cf9b7d",
+  "source_mass": "47/15",
+  "gaussian_node": "530/12831",
+  "rational_boundary": "201019/1023830",
+  "source_third_deficit": "362310761/9825530715",
+  "exact_tail_budget": "10654007/1259413283",
+  "direct_bbp_terms": 40,
+  "fake_path_checks": 64,
+  "biased_collision_factor": "64/15",
+  "non_pisot_negative_root_interval": [
+    -2,
+    -1
+  ],
+  "authority": "same-model different implementation; no independent referee"
+}

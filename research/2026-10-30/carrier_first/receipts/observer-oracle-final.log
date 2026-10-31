@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "independent_Machin_digits": 1028,
+  "integer_rounding_scale_bits": 4144,
+  "atan_terms": [
+    890,
+    262
+  ],
+  "selected_count_transport_lasso_cases": 18,
+  "finite_Weyl_bounds_via_O3": [
+    {
+      "N": 128,
+      "h": 1,
+      "normalized_modulus_upper": "88517/107520"
+    },
+    {
+      "N": 256,
+      "h": 1,
+      "normalized_modulus_upper": "99737/215040"
+    },
+    {
+      "N": 512,
+      "h": 1,
+      "normalized_modulus_upper": "32593/86016"
+    },
+    {
+      "N": 1024,
+      "h": 1,
+      "normalized_modulus_upper": "80707/286720"
+    }
+  ],
+  "source": "Machin arctangent identity, integer outward term bounds; independent count coupling"
+}

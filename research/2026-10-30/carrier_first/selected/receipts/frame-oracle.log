@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "precision_dps": 210,
+  "rows": [
+    {
+      "n": 1,
+      "m": 1,
+      "signed_error": "0.390762184651975923614375185833",
+      "bound": "2.6666666666666666667",
+      "interval_membership": true,
+      "weight_count": 2
+    },
+    {
+      "n": 2,
+      "m": 2,
+      "signed_error": "0.256034224637538257977502418067",
+      "bound": "6.8",
+      "interval_membership": true,
+      "weight_count": 4
+    },
+    {
+      "n": 3,
+      "m": 3,
+      "signed_error": "0.157519129418541712878835337682",
+      "bound": "15.407407407407407407",
+      "interval_membership": true,
+      "weight_count": 6
+    },
+    {
+      "n": 5,
+      "m": 4,
+      "signed_error": "1.52373427120137934453725817812",
+      "bound": "546.1328125",
+      "interval_membership": true,
+      "weight_count": 8
+    },
+    {
+      "n": 8,
+      "m": 6,
+      "signed_error": "8.7437660871887844686361043401",
+      "bound": "41962.874004900753872",
+      "interval_membership": true,
+      "weight_count": 12
+    },
+    {
+      "n": 4,
+      "m": 5,
+      "signed_error": "0.00357159524506908536472234242635",
+      "bound": "4.6853473745454545455",
+      "interval_membership": true,
+      "weight_count": 10
+    },
+    {
+      "n": 7,
+      "m": 7,
+      "signed_error": "0.0203666642641349862403589453961",
+      "bound": "357.46692014327490292",
+      "interval_membership": true,
+      "weight_count": 14
+    },
+    {
+      "n": 11,
+      "m": 10,
+      "signed_error": "0.0685930042377990002544193030564",
+      "bound": "58833.584380084056883",
+      "interval_membership": true,
+      "weight_count": 20
+    },
+    {
+      "n": 17,
+      "m": 13,
+      "signed_error": "58.8355981594363658859865551547",
+      "bound": "2464382645.2431674639",
+      "interval_membership": true,
+      "weight_count": 26
+    },
+    {
+      "n": 1,
+      "m": 10,
+      "signed_error": "6.23849739329662045332990020215e-14",
+      "bound": "5.01645312e-8",
+      "interval_membership": true,
+      "weight_count": 20
+    },
+    {
+      "n": 3,
+      "m": 20,
+      "signed_error": "7.86411763773196250953171884478e-26",
+      "bound": "2.8675974433289216471e-14",
+      "interval_membership": true,
+      "weight_count": 40
+    },
+    {
+      "n": 7,
+      "m": 38,
+      "signed_error": "8.92221005614262624337578948285e-47",
+      "bound": "4.3937513566747918365e-25",
+      "interval_membership": true,
+      "weight_count": 76
+    },
+    {
+      "n": 17,
+      "m": 81,
+      "signed_error": "2.78454571240047655824729640918e-96",
+      "bound": "2.1712171118334512542e-50",
+      "interval_membership": true,
+      "weight_count": 162
+    }
+  ],
+  "finite_germ_aliases": [
+    {
+      "m": 2,
+      "same_values": 5,
+      "different_initial_jet": true
+    },
+    {
+      "m": 5,
+      "same_values": 11,
+      "different_initial_jet": true
+    },
+    {
+      "m": 9,
+      "same_values": 19,
+      "different_initial_jet": true
+    }
+  ],
+  "coherent_real_extension": [
+    {
+      "n": 7,
+      "linear_seed_stencil_exact": true,
+      "prime_value_domain": false
+    },
+    {
+      "n": 17,
+      "linear_seed_stencil_exact": true,
+      "prime_value_domain": false
+    },
+    {
+      "n": 31,
+      "linear_seed_stencil_exact": true,
+      "prime_value_domain": false
+    }
+  ],
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "authority": "separate implementation; not external mathematical referee"
+}

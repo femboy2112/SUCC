@@ -1,0 +1,446 @@
+{
+  "status": "PASS finite instrument execution only",
+  "word_sha256": "256eb3d4f3f25d8a0f4016674b200e407e479643bd4cac05a099ae19ac6bad4f",
+  "selected": [
+    {
+      "N": 128,
+      "k": 0,
+      "partition": "discovery",
+      "rho": "21/512",
+      "tv": "17/128",
+      "deficiency": 0.046255493757378155,
+      "sampling_floor": 0.0,
+      "occupied_futures": 1,
+      "w1_upper": "71/640",
+      "minimal_states": 127,
+      "lasso": [
+        123,
+        4
+      ]
+    },
+    {
+      "N": 128,
+      "k": 1,
+      "partition": "discovery",
+      "rho": "121/1024",
+      "tv": "1187/2048",
+      "deficiency": 0.9715852234862867,
+      "sampling_floor": 0.6452392789255801,
+      "occupied_futures": 16,
+      "w1_upper": "251/1920",
+      "minimal_states": 127,
+      "lasso": [
+        123,
+        4
+      ]
+    },
+    {
+      "N": 128,
+      "k": 2,
+      "partition": "discovery",
+      "rho": "1193/4096",
+      "tv": "929/1024",
+      "deficiency": 2.4570732023753274,
+      "sampling_floor": 2.4462427776790774,
+      "occupied_futures": 99,
+      "w1_upper": "299/960",
+      "minimal_states": 127,
+      "lasso": [
+        123,
+        4
+      ]
+    },
+    {
+      "N": 128,
+      "k": 3,
+      "partition": "discovery",
+      "rho": "673/2048",
+      "tv": "959/1024",
+      "deficiency": 2.7617582975435355,
+      "sampling_floor": 2.7617582975435355,
+      "occupied_futures": 127,
+      "w1_upper": "21569/61440",
+      "minimal_states": 127,
+      "lasso": [
+        123,
+        4
+      ]
+    },
+    {
+      "N": 256,
+      "k": 0,
+      "partition": "discovery",
+      "rho": "13/1024",
+      "tv": "9/128",
+      "deficiency": 0.016133371352357276,
+      "sampling_floor": 0.0,
+      "occupied_futures": 1,
+      "w1_upper": "103/1280",
+      "minimal_states": 254,
+      "lasso": [
+        242,
+        12
+      ]
+    },
+    {
+      "N": 256,
+      "k": 1,
+      "partition": "discovery",
+      "rho": "2127/32768",
+      "tv": "749/2048",
+      "deficiency": 0.5381607023331019,
+      "sampling_floor": 0.06026251820683298,
+      "occupied_futures": 16,
+      "w1_upper": "2263/30720",
+      "minimal_states": 254,
+      "lasso": [
+        242,
+        12
+      ]
+    },
+    {
+      "N": 256,
+      "k": 2,
+      "partition": "discovery",
+      "rho": "8427/32768",
+      "tv": "1811/2048",
+      "deficiency": 2.2626304247829236,
+      "sampling_floor": 2.2193087259979243,
+      "occupied_futures": 164,
+      "w1_upper": "8443/30720",
+      "minimal_states": 254,
+      "lasso": [
+        242,
+        12
+      ]
+    },
+    {
+      "N": 256,
+      "k": 3,
+      "partition": "discovery",
+      "rho": "10681/32768",
+      "tv": "239/256",
+      "deficiency": 2.7292670234547898,
+      "sampling_floor": 2.7292670234547898,
+      "occupied_futures": 248,
+      "w1_upper": "21379/61440",
+      "minimal_states": 254,
+      "lasso": [
+        242,
+        12
+      ]
+    },
+    {
+      "N": 512,
+      "k": 0,
+      "partition": "fresh",
+      "rho": "115/8192",
+      "tv": "13/256",
+      "deficiency": 0.007702209427659264,
+      "sampling_floor": 0.0,
+      "occupied_futures": 1,
+      "w1_upper": "157/1920",
+      "minimal_states": 510,
+      "lasso": [
+        266,
+        244
+      ]
+    },
+    {
+      "N": 512,
+      "k": 1,
+      "partition": "fresh",
+      "rho": "859/16384",
+      "tv": "2107/8192",
+      "deficiency": 0.23298910538337048,
+      "sampling_floor": 0.0,
+      "occupied_futures": 16,
+      "w1_upper": "185/3072",
+      "minimal_states": 510,
+      "lasso": [
+        266,
+        244
+      ]
+    },
+    {
+      "N": 512,
+      "k": 2,
+      "partition": "fresh",
+      "rho": "14029/65536",
+      "tv": "429/512",
+      "deficiency": 1.9308739530152716,
+      "sampling_floor": 1.8377933740663723,
+      "occupied_futures": 230,
+      "w1_upper": "14053/61440",
+      "minimal_states": 510,
+      "lasso": [
+        266,
+        244
+      ]
+    },
+    {
+      "N": 512,
+      "k": 3,
+      "partition": "fresh",
+      "rho": "20729/65536",
+      "tv": "3807/4096",
+      "deficiency": 2.684923355639002,
+      "sampling_floor": 2.6795081432908785,
+      "occupied_futures": 478,
+      "w1_upper": "10369/30720",
+      "minimal_states": 510,
+      "lasso": [
+        266,
+        244
+      ]
+    },
+    {
+      "N": 512,
+      "k": 4,
+      "partition": "fresh",
+      "rho": "21439/65536",
+      "tv": "1919/2048",
+      "deficiency": 2.7671735098916623,
+      "sampling_floor": 2.7671735098916628,
+      "occupied_futures": 510,
+      "w1_upper": "343153/983040",
+      "minimal_states": 510,
+      "lasso": [
+        266,
+        244
+      ]
+    },
+    {
+      "N": 1024,
+      "k": 0,
+      "partition": "fresh",
+      "rho": "205/16384",
+      "tv": "45/1024",
+      "deficiency": 0.006363173007753951,
+      "sampling_floor": 0.0,
+      "occupied_futures": 1,
+      "w1_upper": "41/512",
+      "minimal_states": 1021,
+      "lasso": [
+        174,
+        847
+      ]
+    },
+    {
+      "N": 1024,
+      "k": 1,
+      "partition": "fresh",
+      "rho": "4979/131072",
+      "tv": "389/2048",
+      "deficiency": 0.11932297834007229,
+      "sampling_floor": 0.0,
+      "occupied_futures": 16,
+      "w1_upper": "1833/40960",
+      "minimal_states": 1021,
+      "lasso": [
+        174,
+        847
+      ]
+    },
+    {
+      "N": 1024,
+      "k": 2,
+      "partition": "fresh",
+      "rho": "631/4096",
+      "tv": "6017/8192",
+      "deficiency": 1.434860213691232,
+      "sampling_floor": 1.2612151176329467,
+      "occupied_futures": 252,
+      "w1_upper": "843/5120",
+      "minimal_states": 1021,
+      "lasso": [
+        174,
+        847
+      ]
+    },
+    {
+      "N": 1024,
+      "k": 3,
+      "partition": "fresh",
+      "rho": "9989/32768",
+      "tv": "15129/16384",
+      "deficiency": 2.6192506724869142,
+      "sampling_floor": 2.6002974292684744,
+      "occupied_futures": 899,
+      "w1_upper": "6661/20480",
+      "minimal_states": 1021,
+      "lasso": [
+        174,
+        847
+      ]
+    },
+    {
+      "N": 1024,
+      "k": 4,
+      "partition": "fresh",
+      "rho": "21387/65536",
+      "tv": "7667/8192",
+      "deficiency": 2.7549892821083217,
+      "sampling_floor": 2.7536354790212902,
+      "occupied_futures": 1010,
+      "w1_upper": "342257/983040",
+      "minimal_states": 1021,
+      "lasso": [
+        174,
+        847
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "zero",
+      "b": 16,
+      "k": 0,
+      "rho": "15/32",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 1
+    },
+    {
+      "name": "zero",
+      "b": 16,
+      "k": 1,
+      "rho": "15/32",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 1
+    },
+    {
+      "name": "zero",
+      "b": 16,
+      "k": 2,
+      "rho": "15/32",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 1
+    },
+    {
+      "name": "zero",
+      "b": 16,
+      "k": 3,
+      "rho": "15/32",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 1
+    },
+    {
+      "name": "zero",
+      "b": 16,
+      "k": 4,
+      "rho": "15/32",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 1
+    },
+    {
+      "name": "zero",
+      "b": 16,
+      "k": 5,
+      "rho": "15/32",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 1
+    },
+    {
+      "name": "period01",
+      "b": 16,
+      "k": 0,
+      "rho": "7/16",
+      "deficiency": 2.0794415416798357,
+      "minimal_states": 2
+    },
+    {
+      "name": "period01",
+      "b": 16,
+      "k": 1,
+      "rho": "113/256",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 2
+    },
+    {
+      "name": "period01",
+      "b": 16,
+      "k": 2,
+      "rho": "113/256",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 2
+    },
+    {
+      "name": "period01",
+      "b": 16,
+      "k": 3,
+      "rho": "113/256",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 2
+    },
+    {
+      "name": "period01",
+      "b": 16,
+      "k": 4,
+      "rho": "113/256",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 2
+    },
+    {
+      "name": "period01",
+      "b": 16,
+      "k": 5,
+      "rho": "113/256",
+      "deficiency": 2.772588722239781,
+      "minimal_states": 2
+    },
+    {
+      "name": "binary_debruijn",
+      "b": 2,
+      "k": 0,
+      "rho": "0",
+      "deficiency": 0.0,
+      "minimal_states": 32
+    },
+    {
+      "name": "binary_debruijn",
+      "b": 2,
+      "k": 1,
+      "rho": "0",
+      "deficiency": 0.0,
+      "minimal_states": 32
+    },
+    {
+      "name": "binary_debruijn",
+      "b": 2,
+      "k": 2,
+      "rho": "0",
+      "deficiency": 0.0,
+      "minimal_states": 32
+    },
+    {
+      "name": "binary_debruijn",
+      "b": 2,
+      "k": 3,
+      "rho": "0",
+      "deficiency": 0.0,
+      "minimal_states": 32
+    },
+    {
+      "name": "binary_debruijn",
+      "b": 2,
+      "k": 4,
+      "rho": "0",
+      "deficiency": 0.0,
+      "minimal_states": 32
+    },
+    {
+      "name": "binary_debruijn",
+      "b": 2,
+      "k": 5,
+      "rho": "1/4",
+      "deficiency": 0.6931471805599448,
+      "minimal_states": 32
+    },
+    {
+      "name": "finite-exponent-sparse3",
+      "N": 1024,
+      "minimal_states": 567,
+      "status": "nonnormal infinite control; finite prefix state calculation"
+    }
+  ]
+}
