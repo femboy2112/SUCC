@@ -304,3 +304,39 @@ def late_radix_resonance_error_coefficient(start: int, h: int=1) -> F:
     if type(start) is not int or start<2 or type(h) is not int or h==0:
         raise ValueError("start>=2 and h nonzero integer")
     return F(15*abs(h),32*(start-1))
+
+
+def rational_bbp_truncation(K: int) -> F:
+    """q_K=sum_(j=1)^K 16^-j r(j)=16^-K U_K(0), exact rational.
+
+    The REAL selected completed target alpha=pi/16 is q_K+16^-K T_K.
+    """
+    if type(K) is not int or K<1:
+        raise ValueError("positive truncation length")
+    return states(K+1,0)[K]/16**K
+
+
+def near_zero_nonnormal_seed_certificate(K: int) -> dict:
+    """Source-exact symbolic counterseed s_K=q_K-pi/16.
+
+    The seed is irrational, not numerically represented. Its completed orbit
+    is rational q_K and hence nonnormal. This function returns only Fraction
+    bounds and the rational target, not an invented rational value for s_K.
+    """
+    q=rational_bbp_truncation(K)
+    t=source_tail_upper(K)
+    # |s_K|=16^-K T_K, 0<T_K<t.  All n<=K sampled phases differ by
+    # at most 2pi|h|16^(n-K)T_K, summing to <2pi|h|*(16/15)t.
+    return {
+        "rational_completed_target":q,
+        "symbolic_seed":"q_K - pi/16 (irrational)",
+        "source_tag":SOURCE,
+        "selected_seed":F(0),
+        "seed_distance_upper":t/16**K,
+        "prefix_complex_sum_error_coefficient_times_2pi_abs_h":
+             t*sum((F(16**n,16**K) for n in range(1,K+1)),F(0)),
+        "uniform_prefix_error_coefficient_upper":F(16,15)*t,
+        "resonant_integer_harmonic":q.denominator,
+        "all_completed_resonant_phases_are_one":True,
+        "realized_nonnormality_proved_by_periodic_rational_target":True,
+    }
