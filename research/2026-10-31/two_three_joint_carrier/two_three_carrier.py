@@ -176,3 +176,15 @@ def independent_backward_f2_residue(t:int,a:int)->int:
         D=(2*n-1)*(4*n-1)*(8*n-7)*(8*n-3)
         total=(total+pow(16,j,q)*A*pow(D,-1,q))%q
     return total
+
+
+def exceptional_integer_orbit_phase(n:int,alpha:Fraction)->Fraction:
+    """The integer-orbit branch of a Borel-equivariant null-orbit decoder.
+
+    Outside diagonal integers in Z₂×Z₃ set f(t)=0. This Borel map
+    is Haar-almost-everywhere zero despite f(0)=alpha; only this exact
+    countable branch is executable from rational alpha in finite code.
+    """
+    if type(n) is not int:raise ValueError("integer time required")
+    a=Fraction(alpha)%1
+    return (a*16**n)%1 if n>=0 else (a/Fraction(16**(-n)))%1
