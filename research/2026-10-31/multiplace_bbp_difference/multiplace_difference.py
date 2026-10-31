@@ -186,3 +186,42 @@ def real_positive_tail_limit(m):
     _integer(m)
     if m<1:raise ValueError("m>=1")
     return source_two_point_arch(1,1+6**m)
+
+
+def source_gamma_moment_upper(y,j):
+    """Rigorous positive real upper bound on C_j(y) via P(e^-u)<=15u."""
+    _integer(y);_integer(j)
+    if y<1 or j<0:raise ValueError("positive real y, j>=0")
+    return F(15*(j+1),(8*y-7)**(j+2))
+
+def source_moving_prefix_upper(m,J):
+    """For y=1+6^m, finite REAL resolvent prefix j=1..J-1 is O_J(6^-2m)."""
+    _integer(m);_integer(J)
+    if m<1 or J<1:raise ValueError("m>=1,J>=1")
+    return F(15*(J-1)*(J+2),2*(8*6**m+1)**2)
+
+def source_difference_polynomial(h):
+    """Exact factored Δ(h)=r(1)-r(1+h), h≥1.
+
+    Polynomial numerator factors show p=2 and p=3 cancellation and
+    the necessity of growing complementary denominator primes.
+    """
+    _integer(h)
+    if h<1:raise ValueError("h>=1")
+    B=24064*h**3+48128*h**2+31664*h+6853
+    Den=15*(2*h+1)*(4*h+3)*(8*h+1)*(8*h+5)
+    result=F(h*B,Den)
+    assert result==bbp_source(1)-bbp_source(h+1)
+    return result
+
+def source_perpetual_five_exposure(m):
+    """The reduced denominator of Δ(6^m) always contains prime5."""
+    _integer(m)
+    if m<2:raise ValueError("m>=2")
+    h=6**m
+    B=24064*h**3+48128*h**2+31664*h+6853
+    # h ≡1 (mod5), so B≡4 (mod5), while
+    # (2h+1)(4h+3)(8h+1)(8h+5) is a 5-adic unit.
+    x=source_difference_polynomial(h)
+    return {"value":x,"five_denominator_valuation":-valuation(x,5),
+            "numerator_mod_five":(h*B)%5}
