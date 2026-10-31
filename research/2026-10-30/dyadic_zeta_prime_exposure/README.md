@@ -137,6 +137,12 @@ Examples: p=3 -> zeta(-1); p=5 -> zeta(-3); p=7 -> zeta(-5); p=11 -> zeta(-9); p
 
 **Two nonidentical sieves:** the dyadic condition \(\operatorname{ord}_p(2)\mid2k\) marks possible exposure; the Bernoulli criterion \(p-1\mid2k\) determines the Bernoulli denominator. Fermat gives the implication from the latter to the former, not its converse. Denominator cancellations matter.
 
+**Sharper complete survival theorem (DY-11/DY-12).** Von Staudt's second theorem additionally determines the *entire* denominator: for every even m>=2,
+\[
+\operatorname{den}\zeta(1-m)=\prod_{p-1\mid m}p^{1+v_p(m)}.
+\]
+It also yields an exact p-adic cancellation law for the finite integer Stirling numerator C_(m-1). See [DENOMINATOR_SURVIVAL.md](DENOMINATOR_SURVIVAL.md) for full proof provenance, prime 17/31 controls, and the independent index-100 exact-rational test.
+
 ## 5. DY-06 — all odd negative zeta values from positive finite-cycle Green moments (PROVED)
 
 On the N-cycle (N>=3), let \(L_N\) be its ordinary combinatorial Laplacian, \(G_N=L_N^+\) its mean-zero Moore–Penrose inverse. The nonzero eigenvalues are \(\lambda_j=4\sin^2(\pi j/N)\), j=1,...,N-1. Define
