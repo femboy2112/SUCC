@@ -163,3 +163,16 @@ def triangle_refinement(N: int, q: int):
     return {'observed':observed, 'boundary':boundary, 'forcing':response,
             'l1':sum((abs(z) for z in observed),Fraction(0)),
             'source_upper':budget, 'universal_upper':Fraction(2+8*q,N)}
+
+
+def certified_forcing_charge(N: int, q: int):
+    """Source-selected all-horizon forcing charge: exact prefix, rigorous L1 tail.
+
+    C_q=sum_{n>=1}(Phi_q(U_{n+1})-Phi_q(16U_n)). Absolute convergence
+    follows from r(n+1)<15/(64n^2). Radius <15q/(32N) after N terms.
+    Not a Haar-occupancy or normality certificate.
+    """
+    w=triangle_refinement(N,q)
+    prefix=tuple(N*x for x in w['forcing'])
+    return {'prefix':prefix, 'tail_l1_upper':Fraction(15*q,32*N),
+            'sum_coordinates':sum(prefix,Fraction(0))}
