@@ -251,3 +251,33 @@ def shallow_phase_removal_certificate(N,k,start=0):
     bad=deep_pole_count(N,k,start)
     return {"discarded":bad,"exact_fraction":F(bad,N),
             "universal_upper":deep_pole_fraction_upper(N,k)}
+
+
+def pole_two_mod_three_shell_count(k,K):
+    """For m<k<K, there are exactly 2*3^(K-k-1) residues with v3(8y-2)=k."""
+    _integer(k);_integer(K)
+    if not 1<=k<K:
+        raise ValueError("1<=k<K required")
+    return 2*3**(K-k-1)
+
+def prime_three_L1_divergence_lower(m,K):
+    """Exact certified lower bound for normalized p3 ABSOLUTE magnitude.
+
+    (1/3^K) sum_(0<=y<3^K) |r(y-6^m)-r(y)|_3
+       >= (2/3)(K-m-1), K>=m+2.
+    This is NOT a bound on bounded real Fourier phases!
+    """
+    _integer(m);_integer(K)
+    if m<1 or K<m+2:
+        raise ValueError("m>=1 and K>=m+2 required")
+    return F(2*(K-m-1),3)
+
+def good_pole_mean_absolute(m):
+    """EXACT density-weighted p3 norm on d(y)<m classes.
+
+    For m>=2, sum_(d<m) Pr(d)*3^(2*d-m) = 4/3-7/3^m.
+    This tends to 4/3, hence p3 pointwise convergence is not L1.
+    """
+    _integer(m)
+    if m<2:raise ValueError("m>=2 required")
+    return F(4,3)-F(7,3**m)
