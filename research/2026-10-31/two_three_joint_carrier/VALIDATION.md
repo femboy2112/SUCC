@@ -29,3 +29,6 @@ Reproduction after branch checkout:
 **Mathematical proof authority:** paper arguments are in PROOF.md, relying on inherited DSI-1..4, elementary CRT/LTE/circle positive expansivity, and clearly cited classical duality and Rudolph–Johnson theorems. No new Lean declarations or external referee report. No claim that all repo tests have run locally; hosted CI must be inspected separately. No publication, tag, release or main merge authorized.
 
 **Independent forward/backward calibration:** The original forward zero-seeded recurrence and the independently evaluated 2-adic backward Green series F₂(t) agree exactly modulo 2^a for a=4,8,12,16 and all t=0,...,100, including F₂(0)≡0. This comparison uses different chronological source representations and a bounded number ceil(a/4) of reversed-source terms. A 16th focused exact test passed locally. It calibrates the inherited all-horizon source theorem; it is not a second independent proof of π normality.
+
+
+**TWTH-03B control:** The discontinuous Borel decoder is proved in PROOF.md, including its Haar-null exceptional selected orbit. A 17th exact local regression checks the integer-orbit equivariance for n=-20,...,20 and rational anchors 1/17,3/7,47/15. The Borel/Haar conclusion is a paper theorem, not a numerical observation.
