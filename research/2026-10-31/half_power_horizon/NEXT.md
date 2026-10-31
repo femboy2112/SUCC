@@ -1,0 +1,11 @@
+# Next decisive source/observer probe
+
+The new common 6-adic successor is a **source-law interface** and the half-power root branch gives an explicit finite-to-global precision/ramification diagnostic. Neither says π's selected real-circle digit shifts are Haar. To move toward that target:
+
+1. Combine the exact original BBP source pole profile d(n)=v₃(D(n)) and 6-adic successor with the zero-selected **real Green tail** T_n and the triangle observable φ_(q,j). Find a nontrivial original-source mixed real/2/3 character or tripling-defect upper bound, explicitly uniform across N and sufficient for a fixed q,j observable. A finite 3-adic pole budget alone is not a Weyl bound.
+2. Compare two **named** completions of the source forcing: the real forward decaying Green series Σ_(k≥1)16^(−k)r(n+k) and the backward 2-adic series Σ_(k≥0)16^k r(n−k). These are different Green operators with different boundary conditions; the identity Σ16^k=−1/15 (2-adic) and Σ16^(−k)=1/15 (real) holds for **constant forcing only**. Preserve the original rational U_n, complete integer carries and U0=0 in any cross-place diagram.
+3. Treat the algebraic Q₂(i) extension as ramified at 2 while Q₃(i) is unramified; do not use a generic square-root symbol as if every field carried the same branch. Use the m-moving-target ghost root as a mutation: any claimed fixed-polynomial lift that accepts it is refuted.
+4. Require source/seed discrimination against the coherent changed BBP seed −π/16, Gaussian finite-prefix spoofing, prime-factor mutations and periodic rational controls. Identity of generic geometric series cannot exclude those.
+5. RH remains an allowed **conditional hypothesis**, but a successful RH-based proof needs a new specified full Euler/Gamma/pole/Weil-to-selected-phase estimate with legitimate analytic domains and nontrivial zeros not supplied as inputs.
+
+**Success criterion:** a genuine all-horizon original zero-selected π-phase estimate, not another p-adic reduction or branch-counting identity. The current HP claims are exact local arithmetic results with an unresolved selected Archimedean bridge.
