@@ -193,3 +193,13 @@ The smooth zero-alias path shows O(1) cancellation while **the sum of nonzero sa
 **Next decisive falsifier:** use the EXACT original four-pole and U0=0 source labels to derive a quantitative bound on the genuinely joint three-channel character (or its same-basis cofiber/lag representation). Calibrate source-preserving changed seed q=1/5, nearzero irrational shadows, the first-eight-moment-matched Beta fake, pairwise-Haar triple-lock, and AT-07 seven-pole null. A proposition depending only on the signed moments through j7, positive Hausdorff Gram, one/two-path Haar or smooth-time cancellation must FAIL on at least one explicit control. A candidate passing all of them still owes fresh infinite signed source-specific proof.
 
 **Classical provenance:** Prony exponential decomposition (Potts–Tasche); moment Hankel positivity and Andréief (Khare); Poisson sampling of smooth compact support (UPenn Advanced Analysis). Repo precedents: Main XVIII signed-lag and Main XVII NET-XVII-2; original three-place Gamma resolvent already contains P(t), positivity and source tail (not rediscovered here).
+
+## Classical primary/academic provenance for the instruments
+
+- Potts and Tasche, *Prony's Method for Exponential Sums Revisited*, https://na.math.uni-goettingen.de/pdf/general-Prony-revised-sw.pdf — finite signed exponential/source-atom recovery via Hankel and Vandermonde with declared rank hypothesis.
+- Apoorva Khare, *Moment-Sequence Transforms*, https://math.iisc.ac.in/~khare/papers/hankel.pdf — Hankel moment-positive and total-nonnegative structures; the strict continuous-support statement here also follows directly from the generalized Vandermonde integral determinant.
+- University of Pennsylvania, *Advanced Analysis — Poisson Summation*, https://www2.math.upenn.edu/~gressman/analysis/14-poisson.html — classical Schwartz/C-infinity compactly supported sampling identity. Our bump is explicitly smooth and compactly supported.
+- SUCC Main XVIII, research/2026-10-31/multiplace_bbp_difference/PROOF.md — the ORIGINAL positive P(t), four-pole Gamma and real/p-adic source distinctions.
+- SUCC Main XVIII, research/2026-10-31/signed_lag_fireworks/SHARPNESS.md — original source future-tail interpolation and derivative controls. Our FP-06 adds an explicit smooth Poisson alias decomposition and quantified q=1/5 alias-restoration counterseed, without reclassifying that parent result.
+
+The named classical methods are inputs, NOT independent confirmation of a new academic theorem. All finite tests share the original signed four-pole arithmetic even where different implementations were used.
