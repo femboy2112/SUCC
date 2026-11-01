@@ -1,0 +1,10 @@
+{
+  "stdlib_symbolic_inverse_identity": true,
+  "stdlib_delay_curve_identity": true,
+  "stdlib_inverse_nonzero": true,
+  "stdlib_original_zero_chart_nonzero": true,
+  "stdlib_shifted_chart_all_coefficients_positive": true,
+  "stdlib_shifted_chart_matches_receipt": true,
+  "independent_algorithm": "integer coefficient convolution and binomial shift; no SymPy",
+  "cleared_inverse_degree": 18
+}
