@@ -1,0 +1,321 @@
+{
+  "authority": "exact rational/integer tests + paper proof; no Lean kernel or all-horizon signed saving",
+  "base": 16,
+  "corrected_clock_budgets": [
+    {
+      "K": 6,
+      "N": 256,
+      "h1_transport_budget": "15/128",
+      "h3_transport_budget": "251/1536",
+      "laurent_order": 2
+    },
+    {
+      "K": 8,
+      "N": 256,
+      "h1_transport_budget": "395/3072",
+      "h3_transport_budget": "493/3072",
+      "laurent_order": 3
+    },
+    {
+      "K": 10,
+      "N": 256,
+      "h1_transport_budget": "69/512",
+      "h3_transport_budget": "429/2560",
+      "laurent_order": 4
+    },
+    {
+      "K": 7,
+      "N": 1024,
+      "h1_transport_budget": "1353/25088",
+      "h3_transport_budget": "1917/25088",
+      "laurent_order": 2
+    },
+    {
+      "K": 10,
+      "N": 1024,
+      "h1_transport_budget": "13/160",
+      "h3_transport_budget": "1007/9600",
+      "laurent_order": 3
+    },
+    {
+      "K": 12,
+      "N": 1024,
+      "h1_transport_budget": "55/768",
+      "h3_transport_budget": "365/4096",
+      "laurent_order": 4
+    },
+    {
+      "K": 9,
+      "N": 4096,
+      "h1_transport_budget": "355/6912",
+      "h3_transport_budget": "151/2048",
+      "laurent_order": 2
+    },
+    {
+      "K": 12,
+      "N": 4096,
+      "h1_transport_budget": "2063/36864",
+      "h3_transport_budget": "1349/18432",
+      "laurent_order": 3
+    },
+    {
+      "K": 15,
+      "N": 4096,
+      "h1_transport_budget": "931/15360",
+      "h3_transport_budget": "1391/18432",
+      "laurent_order": 4
+    },
+    {
+      "K": 10,
+      "N": 16384,
+      "h1_transport_budget": "21423/819200",
+      "h3_transport_budget": "7707/204800",
+      "laurent_order": 2
+    },
+    {
+      "K": 14,
+      "N": 16384,
+      "h1_transport_budget": "8223/200704",
+      "h3_transport_budget": "8101/150528",
+      "laurent_order": 3
+    },
+    {
+      "K": 17,
+      "N": 16384,
+      "h1_transport_budget": "169295/4734976",
+      "h3_transport_budget": "26355/591872",
+      "laurent_order": 4
+    }
+  ],
+  "critical_bulk_phase_receipts": [
+    {
+      "N": 256,
+      "k": 4,
+      "leading_exact": "65535/1048576",
+      "n": 128,
+      "phase_correction_exact": "39240042208842049776689825448315822652/632138130842276341604803708669322204325",
+      "target_limit": "1/16",
+      "upper_error_bound": "1/960"
+    },
+    {
+      "N": 1024,
+      "k": 5,
+      "leading_exact": "1048575/16777216",
+      "n": 512,
+      "phase_correction_exact": "226803339350065119274032544487096188665218487760901373061/3635057194454467303457346354897570769263759542512998389625",
+      "target_limit": "1/16",
+      "upper_error_bound": "1/3840"
+    },
+    {
+      "N": 4096,
+      "k": 6,
+      "leading_exact": "16777215/268435456",
+      "n": 2048,
+      "phase_correction_exact": "29986547657084805979668345552057115417873009660870566449781853730464818036482/479989766416018730704625671675645206344569868299624942746518105104789395234525",
+      "target_limit": "1/16",
+      "upper_error_bound": "1/15360"
+    }
+  ],
+  "debruijn_control": {
+    "conditional_third_digit_entropy": "0",
+    "depth2_cells": 256,
+    "depth3_cells": 256,
+    "exact_depth2_collision": "0",
+    "exact_depth3_collision": "15",
+    "period": 256
+  },
+  "exact_laurent_moments": {
+    "2": "272/3375",
+    "3": "1712/16875",
+    "4": "37808/253125",
+    "5": "201968/759375",
+    "6": "2168656/3796875"
+  },
+  "parent": "702cf6fa45c9e6d10bd48c84efe7d3c4389a9037",
+  "rational_counterfeit_N8": "253132954581542222630708145091/1289195551395601433132374425600",
+  "selected_collision_profiles": [
+    {
+      "base": 16,
+      "horizon": 64,
+      "profile": [
+        {
+          "cells": 16,
+          "centered_offdiagonal": "19/128",
+          "collision_defect": "49/128",
+          "depth": 1,
+          "diagonal": "15/64",
+          "occupied": 15
+        },
+        {
+          "cells": 256,
+          "centered_offdiagonal": "25/64",
+          "collision_defect": "35/8",
+          "depth": 2,
+          "diagonal": "255/64",
+          "occupied": 55
+        },
+        {
+          "cells": 4096,
+          "centered_offdiagonal": "65/64",
+          "collision_defect": "65",
+          "depth": 3,
+          "diagonal": "4095/64",
+          "occupied": 63
+        }
+      ]
+    },
+    {
+      "base": 16,
+      "horizon": 128,
+      "profile": [
+        {
+          "cells": 16,
+          "centered_offdiagonal": "-13/512",
+          "collision_defect": "47/512",
+          "depth": 1,
+          "diagonal": "15/128",
+          "occupied": 16
+        },
+        {
+          "cells": 256,
+          "centered_offdiagonal": "9/128",
+          "collision_defect": "33/16",
+          "depth": 2,
+          "diagonal": "255/128",
+          "occupied": 98
+        },
+        {
+          "cells": 4096,
+          "centered_offdiagonal": "1/128",
+          "collision_defect": "32",
+          "depth": 3,
+          "diagonal": "4095/128",
+          "occupied": 126
+        }
+      ]
+    },
+    {
+      "base": 16,
+      "horizon": 256,
+      "profile": [
+        {
+          "cells": 16,
+          "centered_offdiagonal": "-51/2048",
+          "collision_defect": "69/2048",
+          "depth": 1,
+          "diagonal": "15/256",
+          "occupied": 16
+        },
+        {
+          "cells": 256,
+          "centered_offdiagonal": "-13/256",
+          "collision_defect": "121/128",
+          "depth": 2,
+          "diagonal": "255/256",
+          "occupied": 164
+        },
+        {
+          "cells": 4096,
+          "centered_offdiagonal": "33/256",
+          "collision_defect": "129/8",
+          "depth": 3,
+          "diagonal": "4095/256",
+          "occupied": 247
+        }
+      ]
+    },
+    {
+      "base": 16,
+      "horizon": 512,
+      "profile": [
+        {
+          "cells": 16,
+          "centered_offdiagonal": "-111/8192",
+          "collision_defect": "129/8192",
+          "depth": 1,
+          "diagonal": "15/512",
+          "occupied": 16
+        },
+        {
+          "cells": 256,
+          "centered_offdiagonal": "-39/512",
+          "collision_defect": "27/64",
+          "depth": 2,
+          "diagonal": "255/512",
+          "occupied": 230
+        },
+        {
+          "cells": 4096,
+          "centered_offdiagonal": "33/512",
+          "collision_defect": "129/16",
+          "depth": 3,
+          "diagonal": "4095/512",
+          "occupied": 479
+        }
+      ]
+    },
+    {
+      "base": 16,
+      "horizon": 1024,
+      "profile": [
+        {
+          "cells": 16,
+          "centered_offdiagonal": "-29/16384",
+          "collision_defect": "211/16384",
+          "depth": 1,
+          "diagonal": "15/1024",
+          "occupied": 16
+        },
+        {
+          "cells": 256,
+          "centered_offdiagonal": "-17/1024",
+          "collision_defect": "119/512",
+          "depth": 2,
+          "diagonal": "255/1024",
+          "occupied": 252
+        },
+        {
+          "cells": 4096,
+          "centered_offdiagonal": "1/1024",
+          "collision_defect": "4",
+          "depth": 3,
+          "diagonal": "4095/1024",
+          "occupied": 902
+        }
+      ]
+    },
+    {
+      "base": 16,
+      "horizon": 2048,
+      "profile": [
+        {
+          "cells": 16,
+          "centered_offdiagonal": "-367/131072",
+          "collision_defect": "593/131072",
+          "depth": 1,
+          "diagonal": "15/2048",
+          "occupied": 16
+        },
+        {
+          "cells": 256,
+          "centered_offdiagonal": "-31/4096",
+          "collision_defect": "479/4096",
+          "depth": 2,
+          "diagonal": "255/2048",
+          "occupied": 256
+        },
+        {
+          "cells": 4096,
+          "centered_offdiagonal": "-27/2048",
+          "collision_defect": "1017/512",
+          "depth": 3,
+          "diagonal": "4095/2048",
+          "occupied": 1612
+        }
+      ]
+    }
+  ],
+  "source_check_first_48": true,
+  "source_contract": "original four signed poles, literal U0=0",
+  "status": "FINITE_EXACT_RECEIPTS_NOT_PI_NORMALITY"
+}
