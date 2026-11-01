@@ -1,0 +1,46 @@
+{
+  "coefficients": {
+    "source_lower_n_ge_2": [
+      44553,
+      80434,
+      48328,
+      9664
+    ],
+    "source_upper_n_ge_2": [
+      576,
+      11364,
+      19418,
+      11511,
+      2296
+    ],
+    "source_upper_n_ge_8": [
+      248013,
+      442690,
+      147976,
+      18208,
+      768
+    ],
+    "weighted_lower_n_eq_2": 723,
+    "weighted_lower_n_ge_3": [
+      1090,
+      641,
+      621,
+      435,
+      88
+    ]
+  },
+  "delta_lower": {
+    "den": 432000,
+    "num": 55513
+  },
+  "sine_lower_taylor": {
+    "den": 483729408000000000,
+    "num": 61989274639109303
+  },
+  "status": "EXACT_INTEGER_POLYNOMIAL_CERTIFIED",
+  "uniform_sine_lower": {
+    "den": 8,
+    "num": 1
+  },
+  "witnesses": 5
+}
