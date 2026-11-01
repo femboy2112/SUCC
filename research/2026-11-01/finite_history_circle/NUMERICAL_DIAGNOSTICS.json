@@ -1,0 +1,160 @@
+{
+  "precision_dps": 160,
+  "probe_horizons": [
+    3,
+    7,
+    16,
+    31
+  ],
+  "harmonics": [
+    1,
+    3,
+    5
+  ],
+  "rows": [
+    {
+      "N": 3,
+      "h": 1,
+      "k": 8,
+      "L": 2,
+      "J": 1,
+      "observed_absolute_error": "0.032117265338678423685719740296034637",
+      "certified_bound": "0.075962611607142857142857142857142857",
+      "observed_max_phase_error": "0.03139203860200105669714194153396639",
+      "certified_operator_bound": "0.071614583333333333333333333333333333",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 3,
+      "h": 3,
+      "k": 8,
+      "L": 2,
+      "J": 1,
+      "observed_absolute_error": "0.099701028915535197198801259800032289",
+      "certified_bound": "0.22788783482142857142857142857142857",
+      "observed_max_phase_error": "0.094145180204892828397171617941868456",
+      "certified_operator_bound": "0.21484375",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 3,
+      "h": 5,
+      "k": 8,
+      "L": 2,
+      "J": 1,
+      "observed_absolute_error": "0.16733518023072534684413728538825057",
+      "certified_bound": "0.37981305803571428571428571428571429",
+      "observed_max_phase_error": "0.15680554549025375484635477624289161",
+      "certified_operator_bound": "0.35807291666666666666666666666666667",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 7,
+      "h": 1,
+      "k": 17,
+      "L": 3,
+      "J": 2,
+      "observed_absolute_error": "0.0083333217663231176266643696000129622",
+      "certified_bound": "0.017652142172058423360188802083333333",
+      "observed_max_phase_error": "0.0079228332875880654406927638148541043",
+      "certified_operator_bound": "0.016464960007440476190476190476190476",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 7,
+      "h": 3,
+      "k": 17,
+      "L": 3,
+      "J": 2,
+      "observed_absolute_error": "0.02262336724796469951497957683384409",
+      "certified_bound": "0.05295642651617527008056640625",
+      "observed_max_phase_error": "0.023768002536319648044818572797662162",
+      "certified_operator_bound": "0.049394880022321428571428571428571429",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 7,
+      "h": 5,
+      "k": 17,
+      "L": 3,
+      "J": 2,
+      "observed_absolute_error": "0.037768892047426000960340264643800236",
+      "certified_bound": "0.088260710860292116800944010416666667",
+      "observed_max_phase_error": "0.039611679836935406951241623623476868",
+      "certified_operator_bound": "0.082324800037202380952380952380952381",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 16,
+      "h": 1,
+      "k": 36,
+      "L": 4,
+      "J": 2,
+      "observed_absolute_error": "0.0018425207684526807959185328604991471",
+      "certified_bound": "0.0045569041418650793648427336528305447",
+      "observed_max_phase_error": "0.0019806636923808051881684182834694409",
+      "certified_operator_bound": "0.0041881742931547619047619047619047619",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 16,
+      "h": 3,
+      "k": 36,
+      "L": 4,
+      "J": 2,
+      "observed_absolute_error": "0.0061886878164091018336155205129811919",
+      "certified_bound": "0.013670712425595238094528200958491634",
+      "observed_max_phase_error": "0.0059419833069419799468275746866710955",
+      "certified_operator_bound": "0.012564522879464285714285714285714286",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 16,
+      "h": 5,
+      "k": 36,
+      "L": 4,
+      "J": 2,
+      "observed_absolute_error": "0.010323632091724677119379868148219085",
+      "certified_bound": "0.022784520709325396824213668264152723",
+      "observed_max_phase_error": "0.0099032796109323305714745556362733965",
+      "certified_operator_bound": "0.02094087146577380952380952380952381",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 31,
+      "h": 1,
+      "k": 67,
+      "L": 5,
+      "J": 3,
+      "observed_absolute_error": "0.00052260812602805185322932081566893239",
+      "certified_bound": "0.0010992625403025793650793650793650794",
+      "observed_max_phase_error": "0.00049542803736261995625261496135566452",
+      "certified_operator_bound": "0.0010257297092013888888888888888888889",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 31,
+      "h": 3,
+      "k": 67,
+      "L": 5,
+      "J": 3,
+      "observed_absolute_error": "0.0015142324439868619339925867312048906",
+      "certified_bound": "0.0032977876209077380952380952380952381",
+      "observed_max_phase_error": "0.0014862839904855731502707530545176432",
+      "certified_operator_bound": "0.0030771891276041666666666666666666667",
+      "provenance": "mpmath diagnostic, not interval proof"
+    },
+    {
+      "N": 31,
+      "h": 5,
+      "k": 67,
+      "L": 5,
+      "J": 3,
+      "observed_absolute_error": "0.0024241637984297475706927688648439088",
+      "certified_bound": "0.0054963127015128968253968253968253968",
+      "observed_max_phase_error": "0.0024771395788016960359800172135061189",
+      "certified_operator_bound": "0.0051286485460069444444444444444444444",
+      "provenance": "mpmath diagnostic, not interval proof"
+    }
+  ]
+}

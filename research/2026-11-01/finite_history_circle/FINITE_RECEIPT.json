@@ -1,0 +1,150 @@
+{
+  "scope": "original four signed BBP poles and literal U_0=0, plus explicitly declared rational source type (2,4)",
+  "source_class": {
+    "max_numerator_degree": 2,
+    "max_denominator_degree": 4,
+    "observations_needed": 7,
+    "first_source_branch_if_phase_only": "3<r(1)<4",
+    "subsequent_source_branch": "0<r(n)<1 for n>=2"
+  },
+  "seven_original_samples": [
+    {
+      "n": 1,
+      "forcing": "47/15"
+    },
+    {
+      "n": 2,
+      "forcing": "106/819"
+    },
+    {
+      "n": 3,
+      "forcing": "829/19635"
+    },
+    {
+      "n": 4,
+      "forcing": "316/15225"
+    },
+    {
+      "n": 5,
+      "forcing": "857/69597"
+    },
+    {
+      "n": 6,
+      "forcing": "3802/466785"
+    },
+    {
+      "n": 7,
+      "forcing": "5273/911547"
+    }
+  ],
+  "fit_monic_numerator_low_to_high": [
+    "1/32",
+    "-89/512",
+    "15/64"
+  ],
+  "fit_monic_denominator_low_to_high": [
+    "21/512",
+    "-103/256",
+    "89/64",
+    "-2",
+    "1"
+  ],
+  "six_source_spoof": {
+    "epsilon": "1/100000000",
+    "first_six_exact_match": true,
+    "seventh_difference": "104857600/12101122644582669027899751",
+    "all_real_x_ge_1_positivity_proof_bounds": [
+      "A(x)>=31x^2",
+      "D(x)>=15x^4",
+      "|p(x)|<30000x^2",
+      "|q(x)|<320000x^3"
+    ]
+  },
+  "exact_inverse_preimages_per_step": 16,
+  "prior_conditioned_history_branch_bits_per_step_if_uniform": 4,
+  "projection_budgets": [
+    {
+      "N": 1,
+      "h": 1,
+      "power": 2,
+      "k_L_J": [
+        2,
+        0,
+        1
+      ],
+      "all_weyl_absolute_bound": "5665/5376",
+      "whole_controlled_echo_operator_bound": "5665/5376"
+    },
+    {
+      "N": 2,
+      "h": 1,
+      "power": 2,
+      "k_L_J": [
+        5,
+        1,
+        1
+      ],
+      "all_weyl_absolute_bound": "1529/5376",
+      "whole_controlled_echo_operator_bound": "1441/5376"
+    },
+    {
+      "N": 3,
+      "h": 1,
+      "power": 2,
+      "k_L_J": [
+        8,
+        2,
+        1
+      ],
+      "all_weyl_absolute_bound": "1089/14336",
+      "whole_controlled_echo_operator_bound": "55/768"
+    },
+    {
+      "N": 7,
+      "h": 1,
+      "power": 2,
+      "k_L_J": [
+        17,
+        3,
+        2
+      ],
+      "all_weyl_absolute_bound": "28430765/1610612736",
+      "whole_controlled_echo_operator_bound": "5665/344064"
+    },
+    {
+      "N": 16,
+      "h": 1,
+      "power": 2,
+      "k_L_J": [
+        36,
+        4,
+        2
+      ],
+      "all_weyl_absolute_bound": "14122087471533243323/3099053004383204671488",
+      "whole_controlled_echo_operator_bound": "1441/344064"
+    },
+    {
+      "N": 31,
+      "h": 1,
+      "power": 2,
+      "k_L_J": [
+        67,
+        5,
+        3
+      ],
+      "all_weyl_absolute_bound": "5236835227143593038855224586621850601/4763953136893138488487244504044754960384",
+      "whole_controlled_echo_operator_bound": "605/589824"
+    }
+  ],
+  "validation": {
+    "new_exact_unit_tests": 55,
+    "combined_mounted_research_snapshot_tests": 539,
+    "independent_high_precision_cases": 12,
+    "separate_symbolic_checks": 6,
+    "full_repository_suite": "NOT RUN",
+    "new_Lean_kernel": "NOT RUN",
+    "pi_normality": "OPEN",
+    "RH": "OPEN"
+  },
+  "authority": "exact rational algebra + paper all-N proofs + reproducible local finite tests; not independent peer review"
+}
