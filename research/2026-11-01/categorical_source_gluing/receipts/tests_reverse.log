@@ -1,0 +1,65 @@
+test_wrong_source_mutation (test_categorical_source_gluing.SourceTests.test_wrong_source_mutation) ... ok
+test_word_composition (test_categorical_source_gluing.SourceTests.test_word_composition) ... ok
+test_source_pole_rejected (test_categorical_source_gluing.SourceTests.test_source_pole_rejected) ... ok
+test_source_initial_values (test_categorical_source_gluing.SourceTests.test_source_initial_values) ... ok
+test_seed_binding (test_categorical_source_gluing.SourceTests.test_seed_binding) ... ok
+test_original_odd_denominators (test_categorical_source_gluing.SourceTests.test_original_odd_denominators) ... ok
+test_order_commutator (test_categorical_source_gluing.SourceTests.test_order_commutator) ... ok
+test_orbit_independent_convolution (test_categorical_source_gluing.SourceTests.test_orbit_independent_convolution) ... ok
+test_four_poles_equal_combined (test_categorical_source_gluing.SourceTests.test_four_poles_equal_combined) ... ok
+test_float_rejected (test_categorical_source_gluing.SourceTests.test_float_rejected) ... ok
+test_conductor_source_equals_state (test_categorical_source_gluing.SourceTests.test_conductor_source_equals_state) ... ok
+test_conductor_prefix (test_categorical_source_gluing.SourceTests.test_conductor_prefix) ... ok
+test_existing_observation_path_category (test_categorical_source_gluing.IntegrationTests.test_existing_observation_path_category) ... skipped 'complete SUCC package unavailable in this local research bundle'
+test_undersized_conductor_rejected (test_categorical_source_gluing.FourierTests.test_undersized_conductor_rejected) ... ok
+test_sign_mutation_rejected (test_categorical_source_gluing.FourierTests.test_sign_mutation_rejected) ... ok
+test_selected_point_trace_norm_cost (test_categorical_source_gluing.FourierTests.test_selected_point_trace_norm_cost) ... ok
+test_same_embedding_wrong_in_fourier (test_categorical_source_gluing.FourierTests.test_same_embedding_wrong_in_fourier) ... ok
+test_primal_conductor_naturality (test_categorical_source_gluing.FourierTests.test_primal_conductor_naturality) ... ok
+test_phase_echo_exact (test_categorical_source_gluing.FourierTests.test_phase_echo_exact) ... ok
+test_joint_even_carrier_not_permutation (test_categorical_source_gluing.FourierTests.test_joint_even_carrier_not_permutation) ... ok
+test_inverse_conductor_invalid (test_categorical_source_gluing.FourierTests.test_inverse_conductor_invalid) ... ok
+test_full_sixteen_branches (test_categorical_source_gluing.FourierTests.test_full_sixteen_branches) ... ok
+test_fourier_embedding_phase_naturality (test_categorical_source_gluing.FourierTests.test_fourier_embedding_phase_naturality) ... ok
+test_fourier_embedding_norm (test_categorical_source_gluing.FourierTests.test_fourier_embedding_norm) ... ok
+test_fixed_seed_tilt_not_erased (test_categorical_source_gluing.FourierTests.test_fixed_seed_tilt_not_erased) ... ok
+test_exact_carry_seam (test_categorical_source_gluing.FourierTests.test_exact_carry_seam) ... ok
+test_embedding_composition (test_categorical_source_gluing.FourierTests.test_embedding_composition) ... ok
+test_dual_phase_operator_naturality (test_categorical_source_gluing.FourierTests.test_dual_phase_operator_naturality) ... ok
+test_dual_embedding_composition_norm (test_categorical_source_gluing.FourierTests.test_dual_embedding_composition_norm) ... ok
+test_bad_even_arithmetic_register_rejected (test_categorical_source_gluing.FourierTests.test_bad_even_arithmetic_register_rejected) ... ok
+test_affine_fourier_kernel_all_small_register (test_categorical_source_gluing.FourierTests.test_affine_fourier_kernel_all_small_register) ... ok
+test_affine_fourier_fresh_large_conductors (test_categorical_source_gluing.FourierTests.test_affine_fourier_fresh_large_conductors) ... ok
+test_symbolic_receipt_success (test_categorical_source_gluing.CoverTests.test_symbolic_receipt_success) ... ok
+test_reconstructed_source_successor (test_categorical_source_gluing.CoverTests.test_reconstructed_source_successor) ... ok
+test_reconstructed_bbp_skew_product (test_categorical_source_gluing.CoverTests.test_reconstructed_bbp_skew_product) ... ok
+test_mutated_inverse_rejected (test_categorical_source_gluing.CoverTests.test_mutated_inverse_rejected) ... ok
+test_mutated_delay_pair_rejected (test_categorical_source_gluing.CoverTests.test_mutated_delay_pair_rejected) ... ok
+test_inverse_does_not_select_seed (test_categorical_source_gluing.CoverTests.test_inverse_does_not_select_seed) ... ok
+test_independent_stdlib_symbolic_certificate (test_categorical_source_gluing.CoverTests.test_independent_stdlib_symbolic_certificate) ... ok
+test_independent_oracle_rejects_mutation (test_categorical_source_gluing.CoverTests.test_independent_oracle_rejects_mutation) ... ok
+test_delay_inverse_off_grid (test_categorical_source_gluing.CoverTests.test_delay_inverse_off_grid) ... ok
+test_delay_inverse_integer_source (test_categorical_source_gluing.CoverTests.test_delay_inverse_integer_source) ... ok
+test_delay_curve_exact (test_categorical_source_gluing.CoverTests.test_delay_curve_exact) ... ok
+test_cover_pole_chart_rejected (test_categorical_source_gluing.CoverTests.test_cover_pole_chart_rejected) ... ok
+test_cover_initial (test_categorical_source_gluing.CoverTests.test_cover_initial) ... ok
+test_all_horizon_chart_certificate (test_categorical_source_gluing.CoverTests.test_all_horizon_chart_certificate) ... ok
+test_two_snapshots_not_everywhere_injective (test_categorical_source_gluing.CompositionTests.test_two_snapshots_not_everywhere_injective) ... ok
+test_state_advance_composition (test_categorical_source_gluing.CompositionTests.test_state_advance_composition) ... ok
+test_stable_quotient_positive_control (test_categorical_source_gluing.CompositionTests.test_stable_quotient_positive_control) ... ok
+test_source_path_identity (test_categorical_source_gluing.CompositionTests.test_source_path_identity) ... ok
+test_source_path_associativity (test_categorical_source_gluing.CompositionTests.test_source_path_associativity) ... ok
+test_seed_seam_rejected (test_categorical_source_gluing.CompositionTests.test_seed_seam_rejected) ... ok
+test_projective_infinity_retained (test_categorical_source_gluing.CompositionTests.test_projective_infinity_retained) ... ok
+test_predictive_refinement_succeeds (test_categorical_source_gluing.CompositionTests.test_predictive_refinement_succeeds) ... ok
+test_observation_descent_fails (test_categorical_source_gluing.CompositionTests.test_observation_descent_fails) ... ok
+test_mutated_source_path_rejected (test_categorical_source_gluing.CompositionTests.test_mutated_source_path_rejected) ... ok
+test_invalid_finite_table (test_categorical_source_gluing.CompositionTests.test_invalid_finite_table) ... ok
+test_false_fiber_gluing (test_categorical_source_gluing.CompositionTests.test_false_fiber_gluing) ... ok
+test_constant_observer_null_control (test_categorical_source_gluing.CompositionTests.test_constant_observer_null_control) ... ok
+test_cocycle_composition_all_grid (test_categorical_source_gluing.CompositionTests.test_cocycle_composition_all_grid) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 0.248s
+
+OK (skipped=1)

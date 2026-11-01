@@ -1,0 +1,39 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "pinned_upstream": "6fedcbe445f856878ecb1b1d9a0a84ad97a77e2e",
+  "tests": {
+    "run": 60,
+    "passed": 59,
+    "skipped": 1,
+    "orders": [
+      "forward",
+      "reverse"
+    ]
+  },
+  "remote_changed": false,
+  "files": {
+    "BUNDLE_README.md": "3e4a0e5170d572350782c1fd8276ccc3b5e67cfe4f3530050c4b9b6d0271a2fd",
+    "research/2026-11-01/categorical_source_gluing/CLAIMS.md": "73490ffe729f7b8434931832a3bef576fe343ee2c44b1ddf0aeae7617dcb2592",
+    "research/2026-11-01/categorical_source_gluing/INTEGRATION.md": "fe440c975d286b8a3e1b5c38762804475412272227e22dbd5cbda42bb76d108b",
+    "research/2026-11-01/categorical_source_gluing/PROOFS.md": "0f64dc6494b0c6bbd110e86b3a2114d2880fcdd022dd8ef83005119c49e56408",
+    "research/2026-11-01/categorical_source_gluing/README.md": "5e6d1e630f8b294469b8aac302b21e2c339b46123ed7d141e204b8b94728217b",
+    "research/2026-11-01/categorical_source_gluing/SOURCE_MAP.md": "6911a4cd386f213efbd9c4e22f8ebde26004d33edcd9104048f69a12ca7e1d5e",
+    "research/2026-11-01/categorical_source_gluing/VALIDATION.md": "3c22ac29565a496411f468e3879b535eedabda875f36f45c8d1ab28b3b866f3e",
+    "research/2026-11-01/categorical_source_gluing/cover_certificate.py": "fdd1ead07a3e4bc2f36cd8f7030d8cf0971968ba840ef5c1eeb511bce7feeaf9",
+    "research/2026-11-01/categorical_source_gluing/frame_and_monodromy_audit.py": "aad0c470b79856263bed90e2d77b43d4214f1e9231c2db1a91118d61f35c82a7",
+    "research/2026-11-01/categorical_source_gluing/independent_polynomial_oracle.py": "9a1ee6389d46518cc487d1b6368068878ca884a4cc4899f85651b13985ca1363",
+    "research/2026-11-01/categorical_source_gluing/receipts/aborted_naive_symbolic_exploration.py": "afb75b12defe1d23e936f10f787f963d7da7d615666984dc17227dab76c9244a",
+    "research/2026-11-01/categorical_source_gluing/receipts/cover_audit.log": "a4738db6878d4b2c7a85eab3d3931b2d094e53fced81c49f5ba56d58540e3578",
+    "research/2026-11-01/categorical_source_gluing/receipts/cover_certificate.json": "f08741381a6c497075dfc42cfd74f62fde7c67fe433994774033899b50243b08",
+    "research/2026-11-01/categorical_source_gluing/receipts/cover_exploration.txt": "b0b386b826bb015aad229d1e26c613b702c9fd549f81172d5d99cee728817f77",
+    "research/2026-11-01/categorical_source_gluing/receipts/frame_audit.log": "b4f61fe621dba99b35874718db73d9f232ea114d2456e9a4be8be329fc8dfbbf",
+    "research/2026-11-01/categorical_source_gluing/receipts/frame_monodromy_receipt.json": "b4f61fe621dba99b35874718db73d9f232ea114d2456e9a4be8be329fc8dfbbf",
+    "research/2026-11-01/categorical_source_gluing/receipts/independent_polynomial_receipt.json": "1f814c28c49493bd6868af3e9293113cf8e81791164861b6d493ea562a274edd",
+    "research/2026-11-01/categorical_source_gluing/receipts/tests_forward.log": "d2a61cd566863044be0bcb69bb74cf0217f8793eb71e28670bab6c5be6759255",
+    "research/2026-11-01/categorical_source_gluing/receipts/tests_reverse.log": "e7258faef5419c65d5d55dc68158411d75675ab08b1e9c791aaba38840f27800",
+    "research/2026-11-01/categorical_source_gluing/repo_adapter.py": "7bcb79aaebb3b484b213b9406851a12a05d29299475d3c0133e197c8f99880ae",
+    "research/2026-11-01/categorical_source_gluing/source_gluing.py": "dc65eaa5584e100b569018e2d7d82415d7b6cb139b7b6f5b43b2b8a319a8ad78",
+    "tests/test_categorical_source_gluing.py": "d2086519f5d3d9bb9edf816ab8a805f92c93ef3301ba1f059c096489ff2f3fbb"
+  }
+}
