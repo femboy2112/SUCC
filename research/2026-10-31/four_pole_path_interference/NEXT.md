@@ -1,0 +1,15 @@
+# Next gate: a source-authentic three-way signed cofiber, not more untyped positivity
+
+**Main XVIII remains the canonical branch and π normality remains OPEN.** This new research branch makes the four-pole interacting paths operational but obtains no selected all-horizon signed saving.
+
+**P0 — native first-birth source joint measurement.** Reproduce Main XVII NET-XVII-2 first-birth windows with exact source states U0=0, original four poles, primary residues and the three edge-channel states V3,V4,V5. Build the joint real character muhat_N(2h,h,h), not product of three means or pairwise covariance. Couple this with authentic primary×cofiber L² and predeclare \(\eta_h\) and error budgets on all eligible prime windows. The pairwise-Haar triple-lock model is a required failure control for any argument using only marginal/pairwise statistics.
+
+**P1 — source-level alias discrimination.** Using exact positive four-pole tail interpolation, decompose genuine sampled phase via smooth Poisson alias channels with justified fixed-N absolute convergence. At the altered same-forcing coherent q=1/5, nonzero aliases must restore N−O_h(1); at the actual zero selector q=π/16, show from source arithmetic that their signed sum is o(N). Smooth zero-alias O(1) is already proved for BOTH, and repeating it is not an advance.
+
+**P2 — complete source authentication.** Prony from first eight Laurent moments uniquely recovers the authentic source only in the explicitly declared at-most-four-pole class. Test alleged source rigidity against positive nine-term Beta finite differences with identical first eight atomic moments and literal U0=0. Derive source/full-support constraints before claiming a theorem about π. Include AT-07 seven-pole null and source-negative mutations.
+
+**P3 — feed any real saving to Main XVIII signed lag.** For k up to the certified log4 N window, express D_h,k over three channel increments. Establish nontrivial cancellation on actual zero-seeded joint phase with all Fejér weights and conductor 3/5 strata; local p-adic pole depths alone cannot infer the real phase. Test the coherent s*=-π/16 and prime-smooth completed orbits q=3^a5^b.
+
+**P4 — validity and source projection.** Independently reproduce the signed atomic Hankel inertia, strict positive time Hankel, Beta moment spoof and exact Poisson alias bound in Lean or a second mathematical derivation with domains. Retain original source as kernel input, not an inferred label. Run full tests and CI on exact new head and report all missing certificates.
+
+**PASS:** New source-selected all-horizon signed character/cofiber estimate with genuine arithmetic saving and correct counterseed rejection. **AMBIGUOUS:** finite interaction/cumulant numbers or a new exact Fourier representation. **FAIL:** deriving π normality from four source moments, positive time Gram, one/two-path Haar, zero Poisson alias or an altered-seed arithmetic character. No RH conclusion follows from this round.
