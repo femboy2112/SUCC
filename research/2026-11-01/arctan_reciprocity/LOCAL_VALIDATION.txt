@@ -1,0 +1,56 @@
+test_parent_pointed_original_source_contract (test_arctan_reciprocity.ExistingCategoricalCore.test_parent_pointed_original_source_contract)
+Exact integration with PR #450's original source-gluing code if mounted. ... skipped 'full parent categorical_source_gluing module not mounted'
+test_cantor_countermodel_digits_closed (test_arctan_reciprocity.MirrorNormalityGate.test_cantor_countermodel_digits_closed) ... ok
+test_coherent_nonnormal_real_seed_fails_irrational_reflection (test_arctan_reciprocity.MirrorNormalityGate.test_coherent_nonnormal_real_seed_fails_irrational_reflection) ... ok
+test_complex_reflection_gate_exact_numeric (test_arctan_reciprocity.MirrorNormalityGate.test_complex_reflection_gate_exact_numeric) ... ok
+test_exact_radix_error_finite (test_arctan_reciprocity.MirrorNormalityGate.test_exact_radix_error_finite) ... ok
+test_failure_domains (test_arctan_reciprocity.MirrorNormalityGate.test_failure_domains) ... ok
+test_one_real_quadrature_bound (test_arctan_reciprocity.MirrorNormalityGate.test_one_real_quadrature_bound) ... ok
+test_phase_antisymmetry_is_exact (test_arctan_reciprocity.MirrorNormalityGate.test_phase_antisymmetry_is_exact) ... ok
+test_rational_mirror_countermodel_explicit_digits (test_arctan_reciprocity.MirrorNormalityGate.test_rational_mirror_countermodel_explicit_digits) ... ok
+test_source_axis_certificate_a_conditional_not_proof (test_arctan_reciprocity.MirrorNormalityGate.test_source_axis_certificate_a_conditional_not_proof) ... ok
+test_source_derivative_mirror_no_pi_evaluation (test_arctan_reciprocity.MirrorNormalityGate.test_source_derivative_mirror_no_pi_evaluation) ... ok
+test_geometry_path_error_budget (test_arctan_reciprocity.OriginalSource.test_geometry_path_error_budget) ... ok
+test_harmonics_are_typed (test_arctan_reciprocity.OriginalSource.test_harmonics_are_typed) ... ok
+test_original_first_terms (test_arctan_reciprocity.OriginalSource.test_original_first_terms) ... ok
+test_original_four_poles_combined (test_arctan_reciprocity.OriginalSource.test_original_four_poles_combined) ... ok
+test_pi_rational_brackets (test_arctan_reciprocity.OriginalSource.test_pi_rational_brackets) ... ok
+test_rational_seed_is_typed (test_arctan_reciprocity.OriginalSource.test_rational_seed_is_typed) ... ok
+test_source_alpha_brackets (test_arctan_reciprocity.OriginalSource.test_source_alpha_brackets) ... ok
+test_source_midpoint_error_budget (test_arctan_reciprocity.OriginalSource.test_source_midpoint_error_budget) ... ok
+test_source_step_sum_bound (test_arctan_reciprocity.OriginalSource.test_source_step_sum_bound) ... ok
+test_source_tail_r_is_small (test_arctan_reciprocity.OriginalSource.test_source_tail_r_is_small) ... ok
+test_circle_angle_involution (test_arctan_reciprocity.ReciprocalProjective.test_circle_angle_involution) ... ok
+test_exact_gaussian_commutator (test_arctan_reciprocity.ReciprocalProjective.test_exact_gaussian_commutator) ... ok
+test_exact_rational_source_axis (test_arctan_reciprocity.ReciprocalProjective.test_exact_rational_source_axis) ... ok
+test_gaussian_integer_powers (test_arctan_reciprocity.ReciprocalProjective.test_gaussian_integer_powers) ... ok
+test_integer_signed_projection (test_arctan_reciprocity.ReciprocalProjective.test_integer_signed_projection) ... ok
+test_mobius_involution_integer_matrix (test_arctan_reciprocity.ReciprocalProjective.test_mobius_involution_integer_matrix) ... ok
+test_rational_axis_source_versus_machin_selected (test_arctan_reciprocity.ReciprocalProjective.test_rational_axis_source_versus_machin_selected) ... ok
+test_rational_mirror_denominators_all_positive (test_arctan_reciprocity.ReciprocalProjective.test_rational_mirror_denominators_all_positive) ... ok
+test_rational_reciprocal_rotation (test_arctan_reciprocity.ReciprocalProjective.test_rational_reciprocal_rotation) ... ok
+test_source_mirror_not_torsion (test_arctan_reciprocity.ReciprocalProjective.test_source_mirror_not_torsion) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.365s
+
+OK (skipped=1)
+ARCTAN_RECIPROCITY_SYMBOLIC_PASS 14
+ARCTAN_EXACT_RECEIPT_PASS 6 harmonics, exact signed coefficient & denominator certificates
+ARCTAN_MIRROR_FINITE_DIAGNOSTICS_PASS 16 cases
+32 1 0.2560606208 0.4245630963
+32 3 0.2316122045 1.1168765186
+32 5 0.2046693338 1.7537512217
+32 7 0.0540391729 0.6609350927
+64 1 0.1057521224 0.2209638850
+64 3 0.2435517700 1.0560949747
+64 5 0.1680373958 1.8394703729
+64 7 0.0336847399 0.3483242194
+128 1 0.0795257248 0.1152184638
+128 3 0.1010903777 0.3258721076
+128 5 0.0594185466 0.8922957833
+128 7 0.0575132578 0.2074529222
+256 1 0.0265654243 0.0495323246
+256 3 0.0517225851 0.1035524550
+256 5 0.0616055656 0.6948860544
+256 7 0.0625549357 0.1754042934

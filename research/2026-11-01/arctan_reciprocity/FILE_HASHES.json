@@ -1,0 +1,68 @@
+{
+  "purpose": "original source, rational arctan mirror research-only addition",
+  "base_parent_pr": 450,
+  "base_parent_sha": "a62c5385681890d40e7ca05127e0cc5d71e8b9c0",
+  "file_count": 15,
+  "files": {
+    "research/2026-11-01/arctan_reciprocity/CLAIMS.md": {
+      "sha256": "8fd24cc5a7ada5b80e3dc6a2db1c915dd22dd591db6c6276c2e49764b36d2cef",
+      "bytes": 2015
+    },
+    "research/2026-11-01/arctan_reciprocity/FINITE_DIAGNOSTICS.json": {
+      "sha256": "436f44020ffb246ad6240703a3dd8c2bcde3df63d342249723e55cdab5448c64",
+      "bytes": 22820
+    },
+    "research/2026-11-01/arctan_reciprocity/FINITE_RECEIPT.json": {
+      "sha256": "bb8fbd0d1481cf03858b5a18bfe48177aa0453e365d23b0030c7d266bd64b0c5",
+      "bytes": 4946
+    },
+    "research/2026-11-01/arctan_reciprocity/LOCAL_VALIDATION.txt": {
+      "sha256": "b095593e0081d7b3b170324cf3243dfb540fc65e0656e4796677e49ea7e44233",
+      "bytes": 4717
+    },
+    "research/2026-11-01/arctan_reciprocity/NEXT.md": {
+      "sha256": "ad4c052dd290c4ed4875e24febf53027d5dc6eab551639e28ee8a28edce2eba9",
+      "bytes": 2929
+    },
+    "research/2026-11-01/arctan_reciprocity/PROOFS.md": {
+      "sha256": "2d0a4299352d986f34c489f1d19ec5ccafac0ff8b5373184c4bb0456f90f68eb",
+      "bytes": 15073
+    },
+    "research/2026-11-01/arctan_reciprocity/README.md": {
+      "sha256": "ac88a3a1205ecc83d351668b60a8f3c2990cf518bd8eadbf4d9a87c09fe81121",
+      "bytes": 3132
+    },
+    "research/2026-11-01/arctan_reciprocity/SOURCE_MAP.md": {
+      "sha256": "96aed17459f5beedbce21948c81d14a1ee386a538958b545a1fdbf9b05e54aa2",
+      "bytes": 2352
+    },
+    "research/2026-11-01/arctan_reciprocity/SYMBOLIC_RECEIPT.json": {
+      "sha256": "23e2ef9d92e0a7da3b2eb4637fbeed9b831a52fede3d2861ada42913370c49e8",
+      "bytes": 674
+    },
+    "research/2026-11-01/arctan_reciprocity/VALIDATION.md": {
+      "sha256": "dc4ef5028fa873027876ded960ac0d6894f9c4b0315cbb9c942c41a6e8413a89",
+      "bytes": 6092
+    },
+    "research/2026-11-01/arctan_reciprocity/arctan_mirror.py": {
+      "sha256": "9f8dbda79586226ff7d880eb6a3983ab5a293342c1ec878c99f8d5173dadde1a",
+      "bytes": 11205
+    },
+    "research/2026-11-01/arctan_reciprocity/exact_receipt.py": {
+      "sha256": "14bda462d0687f0e8fa28eb7a8d05a71865583d3479159bc5ca695f4ff9beece",
+      "bytes": 2195
+    },
+    "research/2026-11-01/arctan_reciprocity/finite_probe.py": {
+      "sha256": "8a0189f41162a418e24ab8afbcfcd771e361e50fdd483417570ec6e34457efdd",
+      "bytes": 3161
+    },
+    "research/2026-11-01/arctan_reciprocity/symbolic_probe.py": {
+      "sha256": "069929d5f14e0031001d684207fe7862a34afccf911447cc023371130a52f05e",
+      "bytes": 2703
+    },
+    "tests/test_arctan_reciprocity.py": {
+      "sha256": "d922aab28258b3186063f8be899272d13d4875c276af281799b4b0e365b8de76",
+      "bytes": 12009
+    }
+  }
+}
