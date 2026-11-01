@@ -1,0 +1,24 @@
+{
+  "sympy_version": "1.14.0",
+  "checks": {
+    "original_dlog": true,
+    "subresultant_linear": true,
+    "resultant_curve": true,
+    "inverse_rational_identity": true,
+    "non_descent_derivative": true,
+    "quartic_discriminant": true,
+    "branch_values_distinct": true,
+    "circle_angular_pullback": true,
+    "first_contour_pushforward": true,
+    "first_contour_residue": true,
+    "positive_time_inverse_chart": true,
+    "curve_irreducible_Q": true,
+    "frame_conjugacy": true,
+    "frame_is_not_fixed_source_symmetry": true
+  },
+  "passed": 14,
+  "total": 14,
+  "discriminant": "5566277615616*u**3*(32*u**2 - 2507*u - 18432000)",
+  "frame_successor": "(-w - 1)/(w - 3)",
+  "scope": "exact polynomial/rational identities; no Lean or normality proof"
+}
