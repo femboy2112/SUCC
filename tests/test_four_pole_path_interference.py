@@ -252,3 +252,24 @@ class ZeroSeedNonnormalMutantControls(unittest.TestCase):
   for n in range(1,100):
    self.assertEqual(pow(16,n,5),1)
    self.assertEqual((F(16**n,5)-F(1,5)).denominator,1)
+
+class CrossPlaceLaurentClockTests(unittest.TestCase):
+ def test_29_real_positive_laurent_series_diverges_dyadically(self):
+  from pole_interactions import prime_clock_laurent
+  for n in (1,2,3,5,16,96):
+   k=n;v=0
+   while k%2==0:k//=2;v+=1
+   for j in range(1,51):
+    x=prime_clock_laurent(j,n)
+    self.assertEqual(x['v2_term'],-(j+1)*(3+v))
+    self.assertEqual(x['moment']%2,1)
+    self.assertEqual(x['predicted_mod3'],x['m_mod3'])
+   # In contrast the FULL original rational source has odd denominator:
+   self.assertEqual(four_pole_source(n).denominator%2,1)
+
+ def test_30_exact_prime_three_five_laurent_moment_clocks(self):
+  from pole_interactions import prime_clock_laurent
+  for j in range(1,130):
+   x=prime_clock_laurent(j,1)
+   self.assertEqual(x['m_mod3'],0 if j%2 else 1)
+   self.assertEqual(x['m_mod5'],(0,1,4,0)[(j-1)%4])

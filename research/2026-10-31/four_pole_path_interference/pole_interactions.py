@@ -244,3 +244,21 @@ def mutant_states(N,epsilon=F(1)):
         u=16*u+four_pole_source(n)+F(epsilon)*finite_difference_null(n)
         out.append(u)
     return tuple(out)
+
+
+def prime_clock_laurent(j,n):
+    """Signed Laurent moments' exact prime clocks and Q2 divergence receipt.
+
+    j>=1, n>=1: m_j is ODD, x=8n has v2>=3; the real
+    term m_j/x^(j+1) has v2=-(j+1)*(3+v2(n)). Thus terms do not
+    even tend to zero in Q2 although the summed rational r(n) lies in Z2.
+    """
+    _pos(j);_pos(n)
+    k=n;v=0
+    while k%2==0:
+        v+=1;k//=2
+    m=laurent_moment(j)
+    assert m%2==1
+    return {'j':j,'n':n,'moment':m,'v2_term':-(j+1)*(3+v),
+            'm_mod3':m%3,'m_mod5':m%5,
+            'predicted_mod3':(2-(-1)**j)%3}
