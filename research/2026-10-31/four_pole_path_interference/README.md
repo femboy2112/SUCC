@@ -1,0 +1,17 @@
+# Operation FOUR-POLE PATH INTERFERENCE — exact paths and phase conspiracies
+
+**Research only, 2026-10-31, child of Main XVIII.** The original four signed BBP poles, U0=0, historical source and formal files remain UNCHANGED. **π base-16 normality, NET-XVII-2 and RH are OPEN.**
+
+User hypothesis: the four authentic BBP poles have several infinite-series realizations, and it is their JOINT interactions that may explain how local/marginal cancellation fails to prevent source-phase coherence.
+
+- **FP-01:** The original signed source equals three positive overlap edges of lengths (3,4,5), weights (2,1,1): r(n)=∫_0^5 W(s)/(8n-7+s)^2 ds, W=4/2/1 on adjacent subintervals. Exact original zero-seed states obey U_n=2V3_n+V4_n+V5_n. These are the SAME four poles.
+- **FP-02/03:** Signed finite pole moments have m0=0, m1=15, m2=151, a four-state rational generating function and a signed Hankel with determinant -115200, inertia (1+,3-). Four distinct poles can be Prony-reconstructed from eight moments WITH A FOUR-ATOM ASSUMPTION. Yet the same source's positive Hausdorff time moments have positive Hankel minors and complete monotonicity. The two forms are different source-coordinate functionals, not contradictory.
+- **FP-04:** Positive Beta/Gamma b_n=B(8n,9) has its first EIGHT signed Laurent moments zero, so r+εb spoofs the original eight moments, preserves literal U0=0, and changes the completed source constant. A finite moment fingerprint cannot establish the exact entire four-pole source without its support restriction.
+- **FP-05:** Actual original selected phase is the JOINT empirical three-torus character at (2h,h,h). Even exact Haar on ALL individual paths AND ALL pairs can conceal a perfectly coherent weighted triple phase. An exact finite counterexample demonstrates this; it does not obey the original forcing.
+- **FP-06:** The real analytic interpolation of the original four-pole forcing has an O_h(1) continuous-time oscillatory integral even at the authentic selected seed. At the SAME forcing with altered completed carrier q=1/5, integer-time phases are coherent. An exact smooth Poisson decomposition proves the NONZERO sampling-alias modes collectively restore N-scale coherence despite bounded zero-alias response. The q=1/5 seed is NOT the authentic seed.
+
+The full exact mathematics, qualifications and classical provenance are in [PROOFS.md](PROOFS.md). Also see [SOURCE_MAP.md](SOURCE_MAP.md), [CLAIMS.md](CLAIMS.md), [VALIDATION.md](VALIDATION.md), [FINITE_DIAGNOSTICS.md](FINITE_DIAGNOSTICS.md), and [NEXT.md](NEXT.md).
+
+**Reproducibility:** pure stdlib exact Fraction module pole_interactions.py; distinct independent_oracle.py; root-discoverable tests/test_four_pole_path_interference.py (26 focused exact tests locally PASS); optional finite-only mpmath probe finite_probe.py.
+
+**Research status:** A set of new-to-SUCC exact source/falsification results, NOT a new all-horizon signed saving. The analytic Poisson alias sum, source-authenticated third-order character and main XVII joint cofiber L² estimate remain unproved at the original zero boundary. Positive paths, first eight jets, marginal/pairwise Haar and the continuous integral do not pay that truth debt.
