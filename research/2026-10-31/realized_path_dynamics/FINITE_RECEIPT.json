@@ -1,0 +1,66 @@
+{
+  "scope": "finite exact declared path model + unchanged original four signed BBP source and U0=0",
+  "baseline_commit": "4f49abd7bf50ceebf5281a39a3f3d4dca8841450",
+  "source": {
+    "r1": "47/15",
+    "r2": "106/819",
+    "F2F1_minus_F1F2_upper_right": "12301/273",
+    "original_A1": "47/240",
+    "original_A2": "102913/524160",
+    "first_half_step_x": "47/75",
+    "first_half_step_p": "1/4",
+    "first_half_step_action": "47/300",
+    "action_tail_total_bound_strict": "1/1024",
+    "gibbs_action_tilt_deviation_bound_beta_positive": "beta*exp(beta/5)/(512*N)",
+    "beta_zero_case": "exact identity"
+  },
+  "finite_model": {
+    "priors": {
+      "A.hit": "3/8",
+      "A.miss": "1/8",
+      "B.hit": "1/8",
+      "B.miss": "1/8",
+      "B.sidetrack": "1/4"
+    },
+    "lambda": "1/2",
+    "desirabilities": {
+      "root": "13/32",
+      "A": "3/4",
+      "B": "1/16"
+    },
+    "first_posterior": {
+      "A": "12/13",
+      "B": "1/13"
+    },
+    "A_future_support": [
+      "T",
+      "X"
+    ],
+    "B_future_support": [
+      "T",
+      "X",
+      "Y"
+    ],
+    "coarse_A_equals_B": true,
+    "coarse_markov_descent": false,
+    "energy_tied_geodesic_unique": false
+  },
+  "algebra": {
+    "idempotence": "G_i^2=G_i",
+    "right_zero_band": "G_i*G_j=G_j",
+    "ordered_product": "F_N...F_1=I+15*sum(j=1..N)16^(N-j)*G_j",
+    "Hamiltonian": "H_n=(ln16)*p*(x+r(n)/15)",
+    "quarter_time_flow": "x(s)=16^s*x0+((16^s-1)/15)*r(n);p(s)=16^(-s)*p0"
+  },
+  "validation": {
+    "new_exact_unittest_count": 83,
+    "new_exact_unittest_status": "PASS",
+    "combined_local_research_unittest_count": 228,
+    "combined_local_research_unittest_status": "PASS",
+    "separate_sympy_crosscheck": "PASS",
+    "full_repository_checkout_suite": "NOT_RUN",
+    "new_lean_kernel": "NOT_RUN",
+    "independent_external_referee": "NOT_RUN",
+    "pi_normality": "OPEN"
+  }
+}
