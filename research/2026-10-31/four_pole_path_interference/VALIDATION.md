@@ -6,7 +6,7 @@
 
     python -m unittest discover -s /mnt/data/succ_pole_lab/tests -p 'test_*.py' -q
 
-**26/26 tests PASS, approximately 0.08 s.** The final locally tested root test loads its independent oracle by a UNIQUE file-derived importlib module identity, avoiding the inherited Main XVIII generic independent_oracle module cache collision. No test needed π digits.
+**28/28 tests PASS, approximately 0.08 s.** The final locally tested root test loads its independent oracle by a UNIQUE file-derived importlib module identity, avoiding the inherited Main XVIII generic independent_oracle module cache collision. No test needed π digits.
 
 **Exact coverage:** Original four signed source r(n) at n=1..159 matched the independent combined rational numerator/denominator; zero seed/three positive channel recurrence checked at multiple horizons; finite spectral Q(x)=x^4−16x³+89x²−206x+168, Vandermonde120; signed moments m0..m7 and all j<=99 positive; Laurent partial sum and rigorous strict positive tail bounds; all eight moment Prony recovery and weight Vandermonde solve; atomic Hankel det -115200, its independent permutation determinant and signed inertia factor; genuine time-Hankel positive minors up to order 4, multiple n; complete discrete monotonicity k<=12 checked against independent Euler integral coefficients; nine-term Beta/Gamma mutant and first eight exact zero Laurent moments, eighth 8!=40320; mutation of literal zero-seed states, completion geometric tail budgets; pairwise uniform yet triple-locked finite counterfeits at p=3,5,7,9,11,17 and separate linear-algebra controls; coherent q=1/5 Poisson zero/nonzero alias rational bounds; fail-closed invalid domains.
 
@@ -35,3 +35,5 @@ All four exact blob IDs were reproduced by Git SHA-1 from local files and checke
     python -m unittest discover -s tests -p 'test_*.py'
 
 The exact SourceMap, frozen BBP parent, paper proof statuses and results must be verified separately. A successful suite is software evidence, not a kernel proof of analytic normality.
+
+**FP-04B addendum and final-byte revalidation:** The source-positive zero-seeded nonnormal fake is proved symbolically by choosing ε_q=(q−π/16)/B_* where B_*=Σ16^-n B(8n,9)>0. The mathematical proof uses q=1/5>π/16 and exact rational completed-period arithmetic, not a numerical invented value for ε_q. Two further EXACT tests check strict positivity of mutant time-Hankel minors for multiple rational positive epsilon strengths and finite differences, literal zero initial state, positivity/completion coefficient, and 16^n≡1 mod5. The entire locally executed focused regression now reports **28/28 tests PASS in 0.072 s**. The GitHub root test blob is BYTE-IDENTICAL to the locally executed source SHA-1 **60d7824a470e39847febdbd020ca4aa4f52f3e05**. This does NOT constitute a numeric realization of the symbolic irrational coefficient or a proof of π normality; that is the domain of FP-04B's exact paper derivation.
