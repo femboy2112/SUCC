@@ -225,7 +225,6 @@ class IndependentImplementations(unittest.TestCase):
    hist=o.counterfeit_character_histogram(p)
    self.assertEqual(hist,[[p]*p]*3)
 
-
 class ZeroSeedNonnormalMutantControls(unittest.TestCase):
  def test_27_beta_mutant_preserves_positive_moment_Hankel(self):
   from pole_interactions import mutant_states
