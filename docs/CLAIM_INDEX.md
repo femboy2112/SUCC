@@ -1,5 +1,23 @@
 # Claim Index
 
+**2026-10-31 Operation Main XVIII — signed-lag frontier (research integration):**
+[architecture](../research/2026-10-31/main_xviii/MAIN_XVIII_ARCHITECTURE.md) ·
+[claim registry + countermodel ledger](../research/2026-10-31/main_xviii/MAIN_XVIII_CLAIM_REGISTRY.md) ·
+[provenance DAG](../research/2026-10-31/main_xviii/MAIN_XVIII_PROVENANCE_DAG.md) ·
+[validation](../research/2026-10-31/main_xviii/MAIN_XVIII_VALIDATION.md) ·
+[receipt](../research/2026-10-31/main_xviii/MAIN_XVIII_RECEIPT.md) ·
+[handoff](../research/2026-10-31/main_xviii/MAIN_XVIII_HANDOFF.md).
+Integrated four ancestry-minimal leaves (PRs #426, #430, #432, #435) subsuming #426–#435; three
+independent reviewers + principal found the firewall intact across all, every package INTEGRATE or
+INTEGRATE-SCOPED, no DEFER. The signed lag observable
+`L_(N,K)(h)=(2/KN)Σ_(k<K)(1−k/K)Re Σ_(n≤N−k) e(h(16^k−1)U_n)` now has a certified source-transport
+error at `K=⌊log_4 N⌋` and a proved **gate equivalence** (original ⇔ doubled-clock criterion within
+the BBP forcing family — a criterion, not progress), with a sharp hostile **barrier** `(1−2/c)²` and
+two nonnormal counterexample families (dyadic near-zero seeds; prime-smooth `q=3^a5^b`,
+spectrum `1_((q/15)|h)`). The selected zero-boundary signed estimate, π base-16 normality, and RH
+remain **OPEN**. The research-dir claim prefixes (CT/TWTH/CP/HP/TD) stay local by design and mint no
+registry namespace.
+
 **2026-10-31 Operation Main XVII — carrier & selected-arithmetic frontier (research integration):**
 [architecture](../research/2026-10-31/main_xvii/MAIN_XVII_ARCHITECTURE.md) ·
 [claim registry + countermodel ledger](../research/2026-10-31/main_xvii/MAIN_XVII_CLAIM_REGISTRY.md) ·
