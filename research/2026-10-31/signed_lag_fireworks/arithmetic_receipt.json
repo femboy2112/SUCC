@@ -1,0 +1,338 @@
+{
+  "status": "EXACT_FINITE_PARAMETERS_AND_PAPER_PROVED_LIMIT_LABELS",
+  "phase_encoding": "None means exact zero complex mean; rational t means exp(2*pi*i*t)",
+  "limit_authority": "ARITHMETIC.md A9 paper proof, not inferred from this JSON",
+  "cases": [
+    {
+      "a": 2,
+      "b": 2,
+      "c": 1,
+      "q": 225,
+      "period": 15,
+      "harmonics": [
+        {
+          "h": 1,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "1/15",
+            "2": "2/15",
+            "3": "1/5",
+            "5": "1/3",
+            "9": "3/5",
+            "15": "0",
+            "25": "2/3",
+            "45": "0"
+          }
+        },
+        {
+          "h": 3,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "1/5",
+            "2": "2/5",
+            "3": "3/5",
+            "5": "0",
+            "9": "4/5",
+            "15": "0",
+            "25": "0",
+            "45": "0"
+          }
+        },
+        {
+          "h": 5,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "1/3",
+            "2": "2/3",
+            "3": "0",
+            "5": "2/3",
+            "9": "0",
+            "15": "0",
+            "25": "1/3",
+            "45": "0"
+          }
+        },
+        {
+          "h": 7,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "7/15",
+            "2": "14/15",
+            "3": "2/5",
+            "5": "1/3",
+            "9": "1/5",
+            "15": "0",
+            "25": "2/3",
+            "45": "0"
+          }
+        },
+        {
+          "h": 11,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "11/15",
+            "2": "7/15",
+            "3": "1/5",
+            "5": "2/3",
+            "9": "3/5",
+            "15": "0",
+            "25": "1/3",
+            "45": "0"
+          }
+        },
+        {
+          "h": 15,
+          "full_period_mean_phase": "1/15",
+          "critical_signed_lag_limit": 1,
+          "lag_mean_phases": {
+            "1": "0",
+            "2": "0",
+            "3": "0",
+            "5": "0",
+            "9": "0",
+            "15": "0",
+            "25": "0",
+            "45": "0"
+          }
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "c": 7,
+      "q": 3375,
+      "period": 225,
+      "harmonics": [
+        {
+          "h": 1,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "7/15",
+            "25": "None",
+            "45": "2/5"
+          }
+        },
+        {
+          "h": 3,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "7/15",
+            "9": "None",
+            "15": "2/5",
+            "25": "1/3",
+            "45": "1/5"
+          }
+        },
+        {
+          "h": 5,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "7/15",
+            "5": "None",
+            "9": "2/5",
+            "15": "1/3",
+            "25": "None",
+            "45": "0"
+          }
+        },
+        {
+          "h": 7,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "4/15",
+            "25": "None",
+            "45": "4/5"
+          }
+        },
+        {
+          "h": 11,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "2/15",
+            "25": "None",
+            "45": "2/5"
+          }
+        },
+        {
+          "h": 225,
+          "full_period_mean_phase": "7/15",
+          "critical_signed_lag_limit": 1,
+          "lag_mean_phases": {
+            "1": "0",
+            "2": "0",
+            "3": "0",
+            "5": "0",
+            "9": "0",
+            "15": "0",
+            "25": "0",
+            "45": "0"
+          }
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "c": 11,
+      "q": 10125,
+      "period": 675,
+      "harmonics": [
+        {
+          "h": 1,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "None",
+            "25": "None",
+            "45": "11/15"
+          }
+        },
+        {
+          "h": 3,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "11/15",
+            "25": "None",
+            "45": "1/5"
+          }
+        },
+        {
+          "h": 5,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "11/15",
+            "15": "None",
+            "25": "None",
+            "45": "2/3"
+          }
+        },
+        {
+          "h": 7,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "None",
+            "25": "None",
+            "45": "2/15"
+          }
+        },
+        {
+          "h": 11,
+          "full_period_mean_phase": "None",
+          "critical_signed_lag_limit": 0,
+          "lag_mean_phases": {
+            "1": "None",
+            "2": "None",
+            "3": "None",
+            "5": "None",
+            "9": "None",
+            "15": "None",
+            "25": "None",
+            "45": "1/15"
+          }
+        },
+        {
+          "h": 675,
+          "full_period_mean_phase": "11/15",
+          "critical_signed_lag_limit": 1,
+          "lag_mean_phases": {
+            "1": "0",
+            "2": "0",
+            "3": "0",
+            "5": "0",
+            "9": "0",
+            "15": "0",
+            "25": "0",
+            "45": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "nearzero_source_prefix_choices": [
+    {
+      "q": 3375,
+      "period": 225,
+      "c": 661,
+      "completed_seed": "661/3375",
+      "source_prefix": "615863723/3136573440",
+      "seed_absolute_upper": "262169/58982400"
+    },
+    {
+      "q": 759375,
+      "period": 50625,
+      "c": 149101,
+      "completed_seed": "149101/759375",
+      "source_prefix": "16071212445820879/81850013083238400",
+      "seed_absolute_upper": "67110889/3397386240000"
+    },
+    {
+      "q": 2562890625,
+      "period": 170859375,
+      "c": 503222386,
+      "completed_seed": "503222386/2562890625",
+      "source_prefix": "16331158360096799798177512637/83173906541651705363378995200",
+      "seed_absolute_upper": "17592356903791/3005789912432640000000"
+    },
+    {
+      "q": 129746337890625,
+      "period": 8649755859375,
+      "c": 25475633871706,
+      "completed_seed": "25475633871706/129746337890625",
+      "source_prefix": "4437861562367075948602657783785247810411/22601843341063734314851782946018924953600",
+      "seed_absolute_upper": "288231337235696119/2493122384968128921600000000000"
+    }
+  ]
+}

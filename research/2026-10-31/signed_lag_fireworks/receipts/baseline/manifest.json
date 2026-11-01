@@ -1,0 +1,185 @@
+[
+  {
+    "name": "lag_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_selected_lag_tomography.py",
+      "-v"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:26:58.764980+00:00",
+    "seconds": 2.953,
+    "exit_code": 0,
+    "sha256": "beb9700c31e6aca8adabf7c3b936e1e3e4a147ab74062a0b3cb0f79ad4c1033d",
+    "log": "lag_tests.log"
+  },
+  {
+    "name": "edge_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_edge_seed_tomography.py",
+      "-v"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:01.718289+00:00",
+    "seconds": 0.144,
+    "exit_code": 0,
+    "sha256": "d2291008eda5312e57cd5221f070c3086d82224925747ac04202196f1e73c0e8",
+    "log": "edge_tests.log"
+  },
+  {
+    "name": "seed_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_seed_superposition.py",
+      "-v"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:01.862567+00:00",
+    "seconds": 0.291,
+    "exit_code": 0,
+    "sha256": "9c5932a2e298734427a91c0d471283801a508f49529d3b91f2de13512a61fef6",
+    "log": "seed_tests.log"
+  },
+  {
+    "name": "carrier_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_carrier_path_measure.py",
+      "-v"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:02.154300+00:00",
+    "seconds": 0.146,
+    "exit_code": 0,
+    "sha256": "f93a3ca8d4875d7463250428b625b75d30f18ee145ef8755f9a487a49b9a21a5",
+    "log": "carrier_tests.log"
+  },
+  {
+    "name": "provenance",
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:02.301167+00:00",
+    "seconds": 0.042,
+    "exit_code": 0,
+    "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "log": "provenance.log"
+  },
+  {
+    "name": "foundations",
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:02.343904+00:00",
+    "seconds": 0.184,
+    "exit_code": 0,
+    "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "log": "foundations.log"
+  },
+  {
+    "name": "ordinal",
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:02.528259+00:00",
+    "seconds": 2.858,
+    "exit_code": 0,
+    "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "log": "ordinal.log"
+  },
+  {
+    "name": "receipt_512",
+    "command": [
+      "python",
+      "research/2026-10-31/selected_lag_tomography/run_receipt.py",
+      "512",
+      "4"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:05.386942+00:00",
+    "seconds": 5.456,
+    "exit_code": 0,
+    "sha256": "5092c16efb47b9ac92e5eededd1cbf5d060a91b0475eb343718041beb966096b",
+    "log": "receipt_512.log"
+  },
+  {
+    "name": "receipt_1024",
+    "command": [
+      "python",
+      "research/2026-10-31/selected_lag_tomography/run_receipt.py",
+      "1024",
+      "4"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:10.843355+00:00",
+    "seconds": 11.022,
+    "exit_code": 0,
+    "sha256": "1ad4b64487afe60146bff7768cc3b9b6f740874b824ff16c26693bbb0e045a5f",
+    "log": "receipt_1024.log"
+  },
+  {
+    "name": "receipt_1536",
+    "command": [
+      "python",
+      "research/2026-10-31/selected_lag_tomography/run_receipt.py",
+      "1536",
+      "4"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:21.865440+00:00",
+    "seconds": 16.879,
+    "exit_code": 0,
+    "sha256": "a5e1c2c2c47076174d1c26c02f96a9905a687f61764f87c3a296505aec481004",
+    "log": "receipt_1536.log"
+  },
+  {
+    "name": "full_regression",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:27:38.744345+00:00",
+    "seconds": 650.605,
+    "exit_code": -2,
+    "sha256": "d0e88cec613538ababccea0c8ce1ee2f1b5d65ac2b0b08079e189d476da9d6f0",
+    "log": "full_regression.log"
+  }
+]
