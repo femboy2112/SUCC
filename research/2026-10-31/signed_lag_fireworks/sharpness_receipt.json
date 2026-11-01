@@ -1,0 +1,24 @@
+{
+  "A": 16777215,
+  "analytic_upper": "13295809335180319/113092617830400",
+  "b": 512,
+  "certified": true,
+  "depth": 20,
+  "imag_interval": [
+    "-81769220227/2500000000",
+    "-40884610113/1250000000"
+  ],
+  "limit_at_c_5_over_2": {
+    "reduced_score": "24/25",
+    "signed_transport_gap": "1/25",
+    "status": "PAPER_THEOREM_NOT_FINITE_EXTRAPOLATION"
+  },
+  "m": 256,
+  "norm_square_upper": "5751276075336161442841/5000000000000000000",
+  "real_interval": [
+    "8970081093/1000000000",
+    "44850405467/5000000000"
+  ],
+  "seed": "symbolic s*=-pi/16; not selected seed zero",
+  "status": "EXACT_FINITE_COHERENT_COUNTERSEED_BULK_CERTIFICATE"
+}

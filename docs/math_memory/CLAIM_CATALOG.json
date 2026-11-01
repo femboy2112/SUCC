@@ -21547,7 +21547,7 @@
     "claim_supplements_scanned": 204,
     "registered_claim_rows": 1863,
     "registered_namespace_count": 176,
-    "source_documents_found": 1593
+    "source_documents_found": 1665
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -29828,6 +29828,132 @@
       "title": "Spectral validation receipts"
     },
     {
+      "path": "research/2026-10-31/carrier_path_measure/CLAIMS.md",
+      "sha256": "2cdc8628d3741b80e3c200a85b9c2f842ea9413159459e6da7268ff7b63a31bf",
+      "size": 4527,
+      "title": "CRPM scoped claim ledger — research-only namespace"
+    },
+    {
+      "path": "research/2026-10-31/carrier_path_measure/NEXT.md",
+      "sha256": "ed3e313ec5b7eb39c4f34eeea236efff6d3fb894d90aa32979cbe5edb6d1f605",
+      "size": 4701,
+      "title": "Next source-sensitive research execution — no phase-by-fiat"
+    },
+    {
+      "path": "research/2026-10-31/carrier_path_measure/PROOFS.md",
+      "sha256": "047297829fcc7bbd49f9a32a7418e2762d8c3381113984387949d550884c9f47",
+      "size": 17520,
+      "title": "Carrier-relative path measures: theorem dossier and source obligations"
+    },
+    {
+      "path": "research/2026-10-31/carrier_path_measure/README.md",
+      "sha256": "39e88c6e9d646694f166d4b42776e9839ce1fdb2b5b20df2f86a9dfc4d8daf30",
+      "size": 4907,
+      "title": "Operation Carrier-Relative Path Measure (CRPM)"
+    },
+    {
+      "path": "research/2026-10-31/carrier_path_measure/VALIDATION.md",
+      "sha256": "5e84184468a765bfc00d62e404cea12afdf2a68b0ade70bc8c7c9ef57c3a8555",
+      "size": 3399,
+      "title": "Local exact validation and scope"
+    },
+    {
+      "path": "research/2026-10-31/counterfactual_triangle/CLAIMS.md",
+      "sha256": "4b8fff883995dea8a93fdd68790d8814f5b710259fc554bb519b6839980d4807",
+      "size": 2167,
+      "title": "Counterfactual Triangle Claim Ledger"
+    },
+    {
+      "path": "research/2026-10-31/counterfactual_triangle/NEXT.md",
+      "sha256": "5617daaae23ff7bea468431344e28382ed723b000abf3382c5ba0e4bbaaa0127",
+      "size": 2611,
+      "title": "Next proof-producing target — CT-10 OPEN"
+    },
+    {
+      "path": "research/2026-10-31/counterfactual_triangle/PROOF.md",
+      "sha256": "fe805745fe16f88744441f809f8c3514931a48eb9d7c35bb847e73b6bdece079",
+      "size": 9926,
+      "title": "Counterfactual Triangle Carrier Rigidity — source-faithful reductio"
+    },
+    {
+      "path": "research/2026-10-31/counterfactual_triangle/README.md",
+      "sha256": "b9b2b1209d4a016f6d8cee242096b227830ace2b9c8023da37bb1c60ae03853a",
+      "size": 1876,
+      "title": "Counterfactual Triangle Carrier Rigidity (2026-10-31)"
+    },
+    {
+      "path": "research/2026-10-31/counterfactual_triangle/VALIDATION.md",
+      "sha256": "d3e9a4bc85d7803714a7890097f0c9a51ecece525537da859fa916b4c527b2f2",
+      "size": 2898,
+      "title": "Counterfactual Triangle Validation — 2026-10-31"
+    },
+    {
+      "path": "research/2026-10-31/edge_seed_tomography/CLAIMS.md",
+      "sha256": "bc5271cf271d80dedbf461096eb0c1fcb24fb3dc3fc000b6153cd46dd6e915c3",
+      "size": 3934,
+      "title": "Provisional scoped claim ledger: edge / seed tomography (ESM)"
+    },
+    {
+      "path": "research/2026-10-31/edge_seed_tomography/NEXT.md",
+      "sha256": "f5deae86fb26f9cee82a69e1cc72d5eddbc6976ce742b36006398004cb4f247c",
+      "size": 6048,
+      "title": "Next verdict-changing moonshot — selected signed edge estimate (no false Haar)"
+    },
+    {
+      "path": "research/2026-10-31/edge_seed_tomography/PROOFS.md",
+      "sha256": "50f3754470531af8e08742128610d805b1cb1d75b116af26ddeb59ca26e612ef",
+      "size": 19314,
+      "title": "Original-source BBP edge measure, exact seed tomography, and a 73-point cyclic plane"
+    },
+    {
+      "path": "research/2026-10-31/edge_seed_tomography/README.md",
+      "sha256": "2506fa8961da9269781486e32c0edd17f5bcc65930e15a1315bfb41bfcc62774",
+      "size": 2994,
+      "title": "Operation EDGE / SEED — original-source normality observer and finite signed tomography"
+    },
+    {
+      "path": "research/2026-10-31/edge_seed_tomography/SOURCE_MAP.md",
+      "sha256": "846d8cd6ca9655c16efa0d244022de071bdf86b492a454599cc673489162ad37",
+      "size": 4617,
+      "title": "Source / measurement / carrier adequacy map"
+    },
+    {
+      "path": "research/2026-10-31/edge_seed_tomography/VALIDATION.md",
+      "sha256": "f2c4a8270d2cb3e17ef8dd594a9dee6dc2fcf7c28a662a9f2f50a71dc5607442",
+      "size": 3839,
+      "title": "Validation, exact boundaries, and reproducibility"
+    },
+    {
+      "path": "research/2026-10-31/half_power_horizon/CLAIMS.md",
+      "sha256": "35385729f8f6abca73cc273a20221e2a804fb7456cfe2da22f488c209828b61e",
+      "size": 2503,
+      "title": "HP claim ledger — finite-to-global with original BBP source"
+    },
+    {
+      "path": "research/2026-10-31/half_power_horizon/NEXT.md",
+      "sha256": "d45a29d807809f7fb3818576706e0721f40508193e635bfb23024b988a11b65a",
+      "size": 2143,
+      "title": "Next decisive source/observer probe"
+    },
+    {
+      "path": "research/2026-10-31/half_power_horizon/PROOF.md",
+      "sha256": "97e375fa90b9717826e72b7ef0ba3bdad9251f91a44a8b9c8d21506f380eac17",
+      "size": 12793,
+      "title": "Half-power horizon: true 2-adic ramification, joint 2×3 successor, and source pole costs"
+    },
+    {
+      "path": "research/2026-10-31/half_power_horizon/README.md",
+      "sha256": "9d94535653a390816abc8cf34e1f5e00655aef69f74f7eb68c8415e9ee5ad423",
+      "size": 3065,
+      "title": "Operation HALF-POWER HORIZON — two-place successor, real seam, and genuine ramification"
+    },
+    {
+      "path": "research/2026-10-31/half_power_horizon/VALIDATION.md",
+      "sha256": "70dcb1d2448baf99a823a56d00284bb4af2b7538096b6ea0ef8f2329f37e1f90",
+      "size": 3045,
+      "title": "Finite validation and provenance — Operation HALF-POWER HORIZON"
+    },
+    {
       "path": "research/2026-10-31/main_xvii/MAIN_XVII_ARCHITECTURE.md",
       "sha256": "ceca4efecf62700fa142881effa6c49050c7bffc7a308382bfc976cdef645abb",
       "size": 6052,
@@ -29862,6 +29988,312 @@
       "sha256": "316f2697f801c33fa5c917af6cf8a90b7ec13eff246c95ed275375f1d6222d36",
       "size": 9395,
       "title": "Operation Main XVII — the selected-arithmetic attack (directive §V)"
+    },
+    {
+      "path": "research/2026-10-31/main_xviii/MAIN_XVIII_ARCHITECTURE.md",
+      "sha256": "517d76c61857188e17a5a4a7b24020c616bcef22077f02268d9ce367a5ce4cec",
+      "size": 5929,
+      "title": "Operation Main XVIII — architecture overview"
+    },
+    {
+      "path": "research/2026-10-31/main_xviii/MAIN_XVIII_CLAIM_REGISTRY.md",
+      "sha256": "f7cda534fc730b1f6f78ca671e84bb056631304b48efc15b8dd2d00c5cfa9453",
+      "size": 11261,
+      "title": "Operation Main XVIII — claim registry and countermodel ledger"
+    },
+    {
+      "path": "research/2026-10-31/main_xviii/MAIN_XVIII_HANDOFF.md",
+      "sha256": "1169359dd55cffc990990b9ea78b663038d21cad8a8a76ddbdcda04aef0def32",
+      "size": 4022,
+      "title": "Operation Main XVIII — handoff and next proof-producing attack"
+    },
+    {
+      "path": "research/2026-10-31/main_xviii/MAIN_XVIII_PROVENANCE_DAG.md",
+      "sha256": "b75928327388be6d62a33f37525c012ebb512ff5f1ca5c273243b76cf3514992",
+      "size": 6176,
+      "title": "Operation Main XVIII — provenance DAG and integration reconciliation"
+    },
+    {
+      "path": "research/2026-10-31/main_xviii/MAIN_XVIII_RECEIPT.md",
+      "sha256": "71b670d7e1f437d1b54a6b8624541dbe693b5cafc0b6ac993adc2dc81b0cf909",
+      "size": 6507,
+      "title": "Operation Main XVIII — validation and integration receipt"
+    },
+    {
+      "path": "research/2026-10-31/main_xviii/MAIN_XVIII_VALIDATION.md",
+      "sha256": "1a56a0a1b2c27efc57323f03865104c770d227a559c140a258e99d6068a1066c",
+      "size": 5128,
+      "title": "Operation Main XVIII — validation"
+    },
+    {
+      "path": "research/2026-10-31/multiplace_bbp_difference/CLAIMS.md",
+      "sha256": "ccee88d21de2ce52637f9bde0f28c57206a191402565c6272b6c22c2704a652c",
+      "size": 3030,
+      "title": "BBP Multiplace Difference Claim Ledger — 2026-10-31"
+    },
+    {
+      "path": "research/2026-10-31/multiplace_bbp_difference/NEXT.md",
+      "sha256": "ae46ec77666b7ba35d2b0c6309b38cf3d659462692b17e97098e6962011b53d1",
+      "size": 3724,
+      "title": "Next proof-producing step — selected shallow-source signed correlation"
+    },
+    {
+      "path": "research/2026-10-31/multiplace_bbp_difference/PROOF.md",
+      "sha256": "40d56462472398e5409384c205f576b37df9d22e4f0c554e8ac528e68a7f3e45",
+      "size": 17790,
+      "title": "Three-place BBP difference resolvent: exact common Gamma moments and pole spectrum"
+    },
+    {
+      "path": "research/2026-10-31/multiplace_bbp_difference/README.md",
+      "sha256": "715316e11f4a0aef5ac2edb2b15d6c4d739a62b055f1d8e534cfd32fb14c9af2",
+      "size": 3642,
+      "title": "Operation BBP Three-Place Difference — Gamma resolvent and arithmetic prime exposure"
+    },
+    {
+      "path": "research/2026-10-31/multiplace_bbp_difference/VALIDATION.md",
+      "sha256": "78432b8dbfd015470e3c5aa470c9515888c5524ebc180df0304485edf4e2c1b5",
+      "size": 3280,
+      "title": "Scope and validation — Multiplace BBP Difference Resolvent (2026-10-31)"
+    },
+    {
+      "path": "research/2026-10-31/pascal_crossprime/CLAIMS.md",
+      "sha256": "cc6b50c65dcb0c2cf2119f3d3b398eecc4a1379baba66dac3ad592a14092cd8a",
+      "size": 2766,
+      "title": "Pascal Crossprime Claim Ledger — source, scope, and verdict"
+    },
+    {
+      "path": "research/2026-10-31/pascal_crossprime/NEXT.md",
+      "sha256": "bbd09eb85671a55e679be8338a951ba666823a54efb43fd48583dc02184b34c8",
+      "size": 3404,
+      "title": "Next mathematical campaign: make Pascal transport source-natural and π-phase sensitive"
+    },
+    {
+      "path": "research/2026-10-31/pascal_crossprime/PROOF.md",
+      "sha256": "a892c57ac9e2be2a1c6a394a3503ebd9cdad8d505bbfa91960bd0b2ca58ee7da",
+      "size": 18016,
+      "title": "Pascal transport, explicit 2-adic↔3-adic dynamical conjugacy, and Pisot field boundaries"
+    },
+    {
+      "path": "research/2026-10-31/pascal_crossprime/README.md",
+      "sha256": "aa23f2769a7e09e1ae4e296e9c0bc45c440d48701f65e0af779db734114db23c",
+      "size": 3241,
+      "title": "SUCC: Pascal 2↔3 carrier, source-conditioned measure transport, and Pisot algebra"
+    },
+    {
+      "path": "research/2026-10-31/pascal_crossprime/VALIDATION.md",
+      "sha256": "04c2227a48bc3a2f8fe882d8aa32c2f8351b43d19ed9052370d6217034c525ef",
+      "size": 3038,
+      "title": "Validation / scope receipt — Pascal 2↔3, 2026-10-31"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/CLAIMS.md",
+      "sha256": "3e5be88c85e50cac77a1d6ee2264453775fd8969148f7603a32ea5bbf97331c2",
+      "size": 4840,
+      "title": "Selected-seed superposition — scoped claim ledger"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/NEAR_ZERO_SHADOW.md",
+      "sha256": "a08a427a872d4ec4ea9cbcc53a4c2fa7f9a672b0a7d7097e14be929772f20221",
+      "size": 6303,
+      "title": "Original BBP near-zero nonnormal shadow theorem — exact selected-prefix spoofing"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/NEXT.md",
+      "sha256": "cc7797692ce95fd0064dd28948bf3a47876b6b31ff56995a671f78f850169a73",
+      "size": 7190,
+      "title": "Next SUCC research round: replace generic seed superposition with selected arithmetic rigidity"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/PR432_CROSSREVIEW.md",
+      "sha256": "66131651a33f47ca792b375e32628e5010a791661a6e4dadacf71de86ea54a94",
+      "size": 5179,
+      "title": "Read-only sibling cross-review — PR #432 edge/seed tomography vs PR #433 superposition"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/PROOFS.md",
+      "sha256": "21515c3297e54c500e9656aa4fe3f80f7bf61761c3dce3164a5499c3c362553c",
+      "size": 17506,
+      "title": "Operation SELECTED SEED × SUPERPOSITION — exact cylinder Gram, Pascal moment cutoff, aliasing and resistance"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/RATIONAL_SEED_NORMALITY_ERRATUM.md",
+      "sha256": "57f20c5f726726f36c249e5e1b85621d59a5949e69b05d717de642477f1b9ccb",
+      "size": 5017,
+      "title": "Rational seed normality: corrective control ledger (Wall theorem)"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/README.md",
+      "sha256": "9de7f6fa1784a92055e5a48509f75d2bd304e7f449c36b5636b6a31cd0ddf121",
+      "size": 4400,
+      "title": "SUCC: Selected-seed superposition horizon (2026-10-31)"
+    },
+    {
+      "path": "research/2026-10-31/seed_superposition/VALIDATION.md",
+      "sha256": "2cbae944b6649215bd48fb7e81f931e2969aca7e07e7f56f0c707992e752c43e",
+      "size": 5452,
+      "title": "Validation receipt — selected BBP seed superposition"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/ASTRA_ULTRA_HANDOFF.md",
+      "sha256": "eacc3cde60b47f28eab36b04abbf4b34dbe2e8873d0217772e4180d14d84981c",
+      "size": 9487,
+      "title": "ASTRA 6 ULTRA — OPERATION SELECTED SIGNED FIREWORKS"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/CERTIFIED_LAG_RECEIPTS.md",
+      "sha256": "9de19b1e488fe3ee15e82eec7ac85448e248b9881f28ef1dd3013f871234505d",
+      "size": 4795,
+      "title": "Source-selected signed lag finite receipts — exact rational enclosures"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/CLAIMS.md",
+      "sha256": "bf3557f83855cb62a58ea340223012203690cc1b47c557bc3adeac1f86649c06",
+      "size": 4781,
+      "title": "SIGNED LAG FORGE — scoped claims, provenance, and epistemic boundary"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/INTEGRATION.md",
+      "sha256": "cfa448ae55d363bf6d11873c06122049a39a2ef86daf52892f965fb4f0bb40e2",
+      "size": 4773,
+      "title": "Integration and exact source provenance — SUCC signed lag forge"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/INTEGRATION_TEST_IMPORT_REPAIR.md",
+      "sha256": "0a7c4685e8f7d48efacdb693e5c7147904adc72fe8c30b393d5ef47b24404a98",
+      "size": 2898,
+      "title": "Integration-only test oracle namespace repair (2026-10-31)"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/NEXT.md",
+      "sha256": "b8a5c5deae823ff6e41460e23308b0eb8e5cbb07b65361e7fef0b4978d29ed96",
+      "size": 4365,
+      "title": "Next theorem — a true all-horizon SOURCE-SELECTED signed lag estimate"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/PROOFS.md",
+      "sha256": "5a29e983276a1a60529147b8c970e1fdfdf97a1d7d939dbd0518c560a9edf866",
+      "size": 8865,
+      "title": "Operation SIGNED LAG FORGE — true BBP phase, logarithmic conductor sieve, and finite tomography"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/README.md",
+      "sha256": "6c311de816448a5f95af0bfb6775b0393893464e8698864b67eaafdae96bd321",
+      "size": 3317,
+      "title": "Operation SIGNED LAG FORGE — the next selected π normality attack"
+    },
+    {
+      "path": "research/2026-10-31/selected_lag_tomography/VALIDATION.md",
+      "sha256": "6ca63f5cb431474fc3ab77c8f56bc5e4deee858aa1f195df1cd2e6860bf27246",
+      "size": 6794,
+      "title": "Validation and source provenance — signed lag forge"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/ARITHMETIC.md",
+      "sha256": "d64874cf71ed4b84238b255bb6b0cee4ee210c44aa6c42d19828282df15b0a0b",
+      "size": 11210,
+      "title": "Exact 3-by-5 conductor shadows of the original BBP forcing"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/AUDIT.md",
+      "sha256": "a3c3478e79abbd41de68a8a74ad6a1e2168391dcfc4df5562fc2f468249341fb",
+      "size": 5874,
+      "title": "Integration and adversarial source audit"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/BOUNDARY.md",
+      "sha256": "bd2ff1cea060531412b27e53f022408705fad5f8ea5a1e1ffe1ea8c6adc39c19",
+      "size": 11425,
+      "title": "Two-scale lag equivalence and fixed-harmonic near-zero coherent shadows"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/CLAIMS.md",
+      "sha256": "06bfed0904e9e968c4e948e5f5a9d2135a98f8ee92dabfe6e9f730bde7a5b4a0",
+      "size": 4312,
+      "title": "Claim ledger"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/EXPERIMENTS.md",
+      "sha256": "475d65d28862d9e1dbee68ec7bf9550f57d1f6f9989f4c221de5c08744736d38",
+      "size": 2381,
+      "title": "Predeclared exact probes and interpretation"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/NEXT.md",
+      "sha256": "235b2a824f7c15c6f2a14dc8fe58b7240e1311b1efca0d447cdb9792c6fd6632",
+      "size": 2070,
+      "title": "Remaining obstruction and next falsification probe"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/README.md",
+      "sha256": "91835b1ea7ed5c8ad5dba5133cc318ca399309724119e1ebde3a3f5b03873d67",
+      "size": 4458,
+      "title": "Signed lag fireworks: exact conductor counterexamples and a wider source bridge"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/RESULTS.md",
+      "sha256": "a3b535500ed9f3f5e984ce2f03a9c31dc1b5848a576766d37c284cbda2b6037d",
+      "size": 4793,
+      "title": "Exact finite outcomes and limits of inference"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/SHARPNESS.md",
+      "sha256": "e5cb7e04e57365a7bdacf5f2829bc2b5a5e6e423a49fd083393b1bcb533a296c",
+      "size": 7354,
+      "title": "A sharp leading clock barrier for seed-uniform lag transport"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/TRANSPORT.md",
+      "sha256": "97f2b509bb862a51678d1c0e87e2678b616082d90aeaa05e833c36b02518d582",
+      "size": 5034,
+      "title": "Clipped four-pole transport and the doubled logarithmic clock"
+    },
+    {
+      "path": "research/2026-10-31/signed_lag_fireworks/VALIDATION.md",
+      "sha256": "3f7bbc0b3763efb9c669587e11f9029d24ebf66325e38b95a5b3c578775dfeda",
+      "size": 8718,
+      "title": "Executed validation and environment repair"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/CLAIMS.md",
+      "sha256": "4e9092913efeafeb93e88cc03faa942e19dab3edf92612ffc983c164f13d1d89",
+      "size": 3489,
+      "title": "TWTH claim ledger — 2026-10-31"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/NEXT.md",
+      "sha256": "46bce205cf7227b3bade07b6c0683734de51590a6c75ff607570b6d5351455b3",
+      "size": 3734,
+      "title": "Next source-selected proof frontier: the ×3-real interface"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/PROOF.md",
+      "sha256": "290d32696212e9dab469dbebf2e8dee253ff6ba77c6f282105a15c79a690d714",
+      "size": 17454,
+      "title": "Original π-BBP ×2-adic/3-adic Joint Clock: Solenoid, Exact Haar, and Archimedean No-Go"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/README.md",
+      "sha256": "9aa85d5ffc1c0ec0582f1661780160af385581ec16cf1d9dd49a12f94358733e",
+      "size": 4283,
+      "title": "SUCC: Original BBP 2-adic × 3-adic Joint Carrier (2026-10-31)"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/SOLENOID_ERRATUM.md",
+      "sha256": "a7eafd153be14157b59427d6a15659a02e6d868331aa0f2095d085265c6d9df6",
+      "size": 3596,
+      "title": "Erratum to inherited Atom-3 {2,3}-solenoid finite/global duality argument"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/SPECTRAL_ACTION.md",
+      "sha256": "cd7190d6fe2175b3715359d9dfc4bef7a8b9528cf7eb0f5c8cf3d4b231ed368b",
+      "size": 1560,
+      "title": "Joint localized spectral action (TWTH-11)"
+    },
+    {
+      "path": "research/2026-10-31/two_three_joint_carrier/VALIDATION.md",
+      "sha256": "3a7afb7c3985c73d4270e5dcbf282da1c2f2889ab47e5803d49455254d8bbe95",
+      "size": 4820,
+      "title": "Validation and provenance — TWTH 2026-10-31"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
