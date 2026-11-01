@@ -224,3 +224,32 @@ class IndependentImplementations(unittest.TestCase):
   for p in (3,5,7,9,11):
    hist=o.counterfeit_character_histogram(p)
    self.assertEqual(hist,[[p]*p]*3)
+
+
+class ZeroSeedNonnormalMutantControls(unittest.TestCase):
+ def test_27_beta_mutant_preserves_positive_moment_Hankel(self):
+  from pole_interactions import mutant_states
+  for eps in (F(1,10),F(1),F(10000)):
+   for n in (1,2,5):
+    for d in (1,2,3):
+     A=tuple(tuple(four_pole_source(n+i+j)+eps*finite_difference_null(n+i+j)
+                   for j in range(d)) for i in range(d))
+     self.assertGreater(rational_det(A),0)
+    for k in range(0,8):
+     diff=sum((-1)**j*comb(k,j)*finite_difference_null(n+j)
+              for j in range(k+1))
+     self.assertGreater(diff,0)
+   U=mutant_states(30,eps)
+   self.assertEqual(U[0],0)
+   for n in range(1,31):
+    self.assertGreater(U[n],0)
+
+ def test_28_q_fifth_positive_mutant_parameter_and_integer_coherence(self):
+  from pole_interactions import mutant_completion_prefix
+  self.assertLess(F(11,56),F(1,5))
+  B=mutant_completion_prefix(24)
+  self.assertGreater(B['prefix'],0)
+  self.assertLess(B['tail_upper'],F(1,10**20))
+  for n in range(1,100):
+   self.assertEqual(pow(16,n,5),1)
+   self.assertEqual((F(16**n,5)-F(1,5)).denominator,1)
