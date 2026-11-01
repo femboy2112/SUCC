@@ -165,7 +165,13 @@ if __name__ == '__main__':
     unittest.main()
 
 # Independent algorithms are deliberately imported after the test class.
-from independent_oracle import direct_pascal_cyclotomic_zero, two_forest_resistance
+import importlib.util as _carrier_import_util
+_carrier_oracle_path = ROOT / 'research' / '2026-10-31' / 'carrier_path_measure' / 'independent_oracle.py'
+_carrier_oracle_spec = _carrier_import_util.spec_from_file_location('_carrier_path_independent_oracle', _carrier_oracle_path)
+_carrier_oracle = _carrier_import_util.module_from_spec(_carrier_oracle_spec)
+_carrier_oracle_spec.loader.exec_module(_carrier_oracle)
+direct_pascal_cyclotomic_zero = _carrier_oracle.direct_pascal_cyclotomic_zero
+two_forest_resistance = _carrier_oracle.two_forest_resistance
 
 class TestIndependentOracles(unittest.TestCase):
     def test_full_bitword_oracle_sixteen(self):

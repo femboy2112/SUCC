@@ -1,0 +1,24 @@
+# SIGNED LAG FORGE — scoped claims, provenance, and epistemic boundary
+
+**Research-only 2026-10-31, Main XVII original U0=0.** Mathematics statuses are by derivation and declared quantifiers, not by agreement of finite experiments. Base-16 normality of π and RH **OPEN**. Source first, original signed BBP four poles unchanged.
+
+| ID | Domain and statement | Status | Falsifier / unpaid debt |
+|---|---|---|---|
+| SL-01 | All n,k≥1, original U0=0 and four-pole source: U_(n+k)−U_n=(16^k−1)U_n+F_(n,k) | PROVED LOCAL / elementary original source algebra | No inference from scalar time-gradient to nonflat path holonomy |
+| SL-02 | All k≥1: Σ_n F_(n,k)<(16^k−1)/32; any h,N>k, absolute complex lag transport error <11|h|(16^k−1)/56 | PROVED LOCAL / original source-positive estimate and classical π<22/7 | Bound grows in k, does not itself cancel any source phase |
+| SL-03 | All N,K,h nonzero; exact finite VdC signed lag inequality L6–L7 | CLASSICAL algebra + PROVED LOCAL source transport | Full original point selection remains necessary; independent Gaussian window oracle |
+| SL-04 | At K_N=floor(log16 N), original forcing error <=11|h|/(420K_N)→0; signed lag limsup≤0 for every fixed nonzero h SUFFICES for π normality | PROVED CONDITIONAL | Selected signed lag limsup upper bound is OPEN; criterion may be stronger than normality in arbitrary sequences |
+| SL-05 | All k≥1: v3(16^k−1)=1+v3(k), v5(16^k−1)=1+v5(k), cofactor odd; source local dyadic Haar for full residue periods | CLASSICAL LTE + inherited source DSI; PROVED LOCAL | Nonzero real-circle signed current does not follow local CRT character cancellation |
+| SL-06 | Finite calibration N512, fresh horizons N1024,N1536, h=1,K=4; rigorous source-selected rational cosine intervals and VdC finite upper | OBSERVED FINITE (exact rational outward enclosures) | No all-horizon estimate or independence from the same implementation/source family |
+| SL-07 | Same original forcing, coherent nonnormal seed s*=-π/16: signed lag score >=(K−1)/K(1−(K+1)/(3N))−E, tends to 1 at critical K_N | PROVED LOCAL / original Green-tail source | All seed-blind normality claims REFUTED, actual U0=0 unaffected |
+| SL-08 | PR #433 symbolic irrational nearzero seed s_L=q_L−π/16 gives rational nonnormal completed orbit and arbitrarily small finite lag-score error at fixed N≤L | PROVED LOCAL / inherited source theorem, exact new sensitivity budget | Refutes finite-observer extrapolation; does not refute exact zero-boundary global proof |
+| SL-09 | µ=(δ0+δ1/3+δ2/3)/3 is ×16-invariant, non-Haar, and has µhat(1)=0, µhat(3)=1 | CLASSICAL / PROVED LOCAL counterexample | One frequency is insufficient even under source-compatible invariance |
+| SL-10 | PR #432 exact finite intensity source tomography imported 11 original blobs; rank-two pair frequencies factor as h16^n(16^k−1); PR #431 path measure and PR #433 superposition guards inherited | VERIFIED IMPORT & CLASSICAL FINITE | Finite phase recovery is not a global phase bound; the 73-channel N=9 grid aliases N=10 |
+| SL-11 | An unconditional all-N authentic selected upper estimate on signed critical-log lag scalar for all nonzero h | OPEN / UNVERIFIED | Must distinguish coherent and nearzero shadows and pass genuinely independent source proof checks |
+| SL-12 | 28 new root-discoverable tests and exact finite receipt, local Python 3 | OBSERVED FINITE, actually run | Hosted full CI, independent formal proof and external review separately required |
+
+**Existing provenance not to double count:** Full seed superposition r<=16 and first carry resonance from SUCC PR #404/#433, gauge-flat path cancellation obstruction from PR #431, selected edge/Weyl equivalence and finite 73-tomography from PR #432, dyadic isometry and the original selected normality gate from Main XVII. Our key increment is the **quantitative original-source critical logarithmic lag reduction with signed weighted current and explicit finite phase certificates**, not discovery of van der Corput or LTE.
+
+**Corrected old control:** Wall rational-addition invariance means fixed rational changed seeds (e.g. s=1/7) have the same unknown normality status as true π/16; a normality proof cannot be obliged to fail on them. This is documented by the additive PR #433 erratum. A test can distinguish their literal U0 provenance, which is a different claim.
+
+**Falsification gate:** LAG04 target predicts a shrinking signed lag scalar for the original zero seed at growing logarithmic windows. A uniform-in-seed proof would contradict LAG07. A finite-only estimate contradicted by LAG08 cannot be promoted. If one harmonic vanishes, SL09 shows no normality yet. No declaration of RH/π proofs without the complete fixed-h all-horizon source estimate.
