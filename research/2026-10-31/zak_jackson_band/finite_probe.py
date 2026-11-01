@@ -56,6 +56,19 @@ def band_value(M,N,q,h,points):
         "b_per_cell_abs": [float(abs(z)) for z in b_complex]}
 
 
+def slice_energy(N,q,h,points):
+    s=-.25+(np.arange(points,dtype=float)+.5)*(.5/points)
+    psi=_cutoff(s)
+    total=np.zeros(points,dtype=complex)
+    for n in range(1,N+1):
+        values=q*16.**(n+s)-_t(n+s)
+        total+=np.exp((2j*np.pi*h)*np.remainder(values,1))
+    diag=float(.5*N*np.mean(psi**2))
+    full=float(.5*np.mean(psi**2*np.abs(total)**2))
+    return {"N":N,"q":q,"h":h,"diagonal":diag,"full_energy":full,
+            "offdiagonal":full-diag,"strict_paper_bound_at_h1":"8/(75*pi)"}
+
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument('--points',type=int,default=131072)
@@ -69,6 +82,15 @@ def main():
             a2['grid_difference']=abs(complex(*a1['band'])-complex(*a2['band']))
             a2['proof_grade']=False
             results.append(a2)
-    print(json.dumps({"kind":"finite_nonproof_diagnostic", "results":results},indent=2))
+    slices=[]
+    for q in (math.pi/16,.2):
+        for N in (2,3):
+            a1=slice_energy(N,q,1,a.points)
+            a2=slice_energy(N,q,1,a.points*2)
+            a2['grid_difference']=abs(a2['offdiagonal']-a1['offdiagonal'])
+            a2['proof_grade']=False
+            slices.append(a2)
+    print(json.dumps({"kind":"finite_nonproof_diagnostic", "results":results,
+                      "continuous_slice_diagnostics":slices},indent=2))
 
 if __name__=='__main__':main()

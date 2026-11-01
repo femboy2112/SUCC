@@ -8,9 +8,9 @@ From a local research package that includes the **unchanged uploaded parent PR #
 
     python -m unittest discover -s tests -p 'test_*.py' -q
 
-Observed **48 tests PASS**, zero errors, zero failures. This is **27 new** exact Fraction/integer tests and **21 inherited parent** tests in the same standard-library process. The inherited parent tests are shared provenance and are not independent external witness. Parent helper modules and new helper use unique importlib names and avoid global `independent_oracle` collision.
+Observed **51 tests PASS**, zero errors, zero failures. This is **30 new** exact Fraction/integer tests and **21 inherited parent** tests in the same standard-library process. The inherited parent tests are shared provenance and are not independent external witness. Parent helper modules and new helper use unique importlib names and avoid global `independent_oracle` collision.
 
-New exact testing covers all four original poles against an independently combined rational source, rational noninteger source inputs, strict positive/decreasing forcing, selected zero-seeded recursion and Green telescope, nested tail intervals, normalized fourth-power Dirichlet coefficients, four-tuple independent 65,536 path enumeration, exact nonnegative flat-top weight bounds/support/plateau, all ideal ladder transfer shapes, explicit rational constants for the `<99|h|` analytic theorem, coherent high-alias conditional lower bound, periodic horizontal finite-energy selector algebra, and Beta eight-jet source-fake mutation controls, plus deliberately wrong frequency-rectangle and fourth-power coefficients that fail exact recovery. Invalid domains and coefficient-budget errors fail closed.
+New exact testing covers all four original poles against an independently combined rational source, rational noninteger source inputs, strict positive/decreasing forcing, selected zero-seeded recursion and Green telescope, nested tail intervals, normalized fourth-power Dirichlet coefficients, four-tuple independent 65,536 path enumeration, exact nonnegative flat-top weight bounds/support/plateau, all ideal ladder transfer shapes, explicit rational constants for the `<99|h|` analytic theorem, coherent high-alias conditional lower bound, periodic horizontal finite-energy selector algebra, and Beta eight-jet source-fake mutation controls, plus deliberately wrong frequency-rectangle and fourth-power coefficients that fail exact recovery, and independent exact stationary-gap/pair-shear/geometric-sum constants behind the continuous-slice energy theorem. Invalid domains and coefficient-budget errors fail closed.
 
 The analytic universal constant and oscillatory-integral estimate are **paper proved** from declared standard lemmas and original P(t); no numeric experiment, unit test or special case is called a universal theorem.
 
@@ -20,7 +20,7 @@ The analytic universal constant and oscillatory-integral estimate are **paper pr
 
     python research/2026-10-31/zak_jackson_band/finite_probe.py --points 65536
 
-The output file `NUMERICAL_DIAGNOSTIC.json` includes 2× grid resolution comparison on M=1,N=3 and M=2,N=4 at q=pi/16 (approximate) and changed q=1/5. It shows finite band/prefix differences around 10^-7 and 10^-12, respectively, **without certified floating-point error enclosures**. No extrapolation to M→infty or the original signed Weyl gate is warranted; the analytic proof stands without these numbers.
+The output file `NUMERICAL_DIAGNOSTIC.json` includes 2× grid resolution comparison on M=1,N=3 and M=2,N=4, PLUS continuous-slice source cross-correlations at N=2,3, at q=pi/16 (approximate) and changed q=1/5. It shows finite band/prefix differences around 10^-7 and 10^-12, respectively, **without certified floating-point error enclosures**. No extrapolation to M→infty or the original signed Weyl gate is warranted; the analytic proof stands without these numbers.
 
 ## NOT RUN / NOT CLAIMED LOCALLY
 

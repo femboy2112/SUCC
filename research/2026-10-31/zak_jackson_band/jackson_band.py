@@ -163,3 +163,30 @@ def horizontal_action_coefficient(epsilon: Fraction | int, periods: int) -> Frac
     if type(periods) is not int or periods<0:
         raise ValueError('Nonnegative integer periods required')
     return periods*e*e
+
+
+def stationary_band_gap_lower(n: int) -> int:
+    """Strict lower bound on U'(n+1-1/4)-U'(n+1/4), all canonical q.
+
+    The actual gap is >3*16**n-1, by the original monotone Green derivative.
+    """
+    if type(n) is not int or n < 1:
+        raise ValueError('Positive integer cell required')
+    return 3*16**n-1
+
+
+def pair_derivative_lower(m: int) -> Fraction:
+    """Uniform lower for U'(m+t)-U'(n+t), m>n>=1, |t|<=1/4."""
+    if type(m) is not int or m<2:
+        raise ValueError('Upper cell index >=2 required')
+    return Fraction(16**m,8)
+
+
+def continuous_slice_error_upper_rational(h: int) -> Fraction:
+    """Strict rational upper for |int|Z(t,0)|^2 - N*int psi^2|.
+
+    Paper proof gives <8/(75*pi*|h|)<8/(225*|h|).
+    """
+    if type(h) is not int or h==0:
+        raise ValueError('Nonzero integer harmonic')
+    return Fraction(8,225*abs(h))

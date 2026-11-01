@@ -109,6 +109,21 @@ class TestZakJacksonBand(unittest.TestCase):
             self.assertEqual(m.horizontal_action_coefficient(e,6),6*e*e)
             self.assertGreater(m.horizontal_action_coefficient(e,100),m.horizontal_action_coefficient(e,10))
         self.assertEqual(m.horizontal_action_coefficient(0,10**6),0)
+    def test_source_stationary_gap_lower_rational(self):
+        for n in range(1,12):
+            self.assertEqual(m.stationary_band_gap_lower(n),3*16**n-1)
+            self.assertGreater(m.stationary_band_gap_lower(n),0)
+    def test_source_pairs_have_strong_uniform_shear(self):
+        for upper in range(2,16):
+            raw=Fraction(15,64)*16**upper-1
+            self.assertGreater(raw,m.pair_derivative_lower(upper))
+    def test_source_pair_cross_energy_bound(self):
+        for h in (-5,-1,1,2,7):
+            # Upper bound after pi>3, summed exactly over infinite geometric pairs.
+            self.assertEqual(m.continuous_slice_error_upper_rational(h),Fraction(8,225*abs(h)))
+            for N in (2,3,10,100):
+                geometric=sum((Fraction(upper-1,16**upper) for upper in range(2,N+1)),Fraction())
+                self.assertLess(geometric,Fraction(1,225))
     def test_horizontal_action_invalid(self):
         with self.assertRaises(ValueError):m.horizontal_action_coefficient(1,-1)
     def test_eight_jet_positive_source_mutant_firewall(self):

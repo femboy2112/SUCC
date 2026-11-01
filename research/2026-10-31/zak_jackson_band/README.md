@@ -23,3 +23,5 @@ for **every** `N>=M>=1`, every nonzero integer `h`, and every *constant-horizont
 - `finite_probe.py`, `NUMERICAL_DIAGNOSTIC.json`: optional numpy/midpoint numerical sanity checks, **not** proof or claimed precision enclosures.
 
 The canonical frontier remains `docs/PI_SELECTED_CATEGORICAL_FRONTIER.md`; original source and analytic bridge from PR #438 and PR #437 are inherited. **Main, imported historical sources, formal kernel and CI workflows remain untouched.**
+
+**Additional source-derived analytic orthogonality:** Successive cell stationary-frequency windows are disjoint by a strict gap `>|h|(3*16^n-1)`. The entire one-dimensional Zak slice obeys `|int |Z(t,0)|² dt - N int psi² dt| < 8/(75*pi*|h|)` for both original and coherent counterseed. Continuous near-orthogonality does **not** control the N-scale point seam at q=1/5. Proof J25–J31.

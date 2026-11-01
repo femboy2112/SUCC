@@ -278,7 +278,88 @@ Since `Q'` is 1-periodic, its period-one energy is `e_Q=int_0^1|Q'|^2>=0`, and `
 
 For the exact periodic mutant `Q(x)=alpha+epsilon sin(2pi x)` with `epsilon!=0`, each unit interval has action `2pi^2 epsilon^2`; over K intervals the action is `2K pi² epsilon²` and diverges. This gives an explicit hostile control without evaluating pi numerically.
 
-## 7. Falsification/claim boundary
+## 7. Analytic cell phases are almost ORTHOGONAL, even for a coherent arithmetic seed (ZJB-09A, PROVED PAPER)
+
+This is a stronger and genuinely source-authenticated statement about the *one-dimensional Zak slice*, not merely the universal two-dimensional Zak isometry of parent PR #438. It sharpens the finite/analytic geometry without asserting a physical chirality law.
+
+For `q in [3/16,1/4]`, integer h!=0, and integer n>=1, define the **source stationary-frequency window**
+
+\[
+ \mathcal W_n(q,h)=\left[|h|U_q'(n-1/4),\ |h|U_q'(n+1/4)\right].
+\tag{J25}
+\]
+
+Since `T''>0` and `T'''<0` (differentiate the positive Laplace integral J0), `T'` increases and `T''` decreases. The real-source derivatives obey the strict adjacent-cell gap
+
+\[
+ \boxed{\inf\mathcal W_{n+1}-\sup\mathcal W_n
+ >|h|(6q\log16\,16^n-1)
+ >|h|(3\cdot16^n-1)>0.}
+\tag{J26}
+\]
+
+The identity `16^(1/4)=2` and `16^(3/4)=8` makes the separation elementary. In particular, **no real alias frequency can have a stationary point in TWO different integer cells**. That does not mean the full Fourier transforms have disjoint support: they have nonstationary tails, which must be bounded.
+
+Now define the source-specific continuous Zak slice at dual frequency `xi=0`:
+
+\[
+ Z_{N,q,h}(t,0)=\psi(t)\sum_{n=1}^{N}e(hU_q(n+t)),
+ \qquad -1/2\le t\le1/2.
+\tag{J27}
+\]
+
+**Theorem (uniform analytic orthogonality).** For ALL q in the declared range, ALL integers `N>=1`, and ALL nonzero integer h,
+
+\[
+ \boxed{\left|\int_{-1/2}^{1/2}|Z_{N,q,h}(t,0)|^2dt
+  -N\int_{-1/2}^{1/2}|\psi(t)|^2dt\right|
+ <\frac8{75\pi |h|}<\frac8{225|h|}.}
+\tag{J28}
+\]
+
+This is `N||psi||²+O_h(1)` with an EXPLICIT all-horizon error, irrespective of the arithmetic seed q. The proof does **not** assume normality, randomness, independent channels, positivity of a fictitious Weil form or cancellation of the sampled `S_N`.
+
+**Proof.** Expand the square; the diagonal contribution is exactly `N int psi²`. For every pair `1<=n<m<=N` consider
+
+\[
+ C_{n,m}=\int_{-1/4}^{1/4}\psi(t)^2
+    e\bigl(h(U_q(m+t)-U_q(n+t))\bigr)dt.\tag{J29}
+\]
+
+The derivative of its phase divided by h is
+
+\[
+ U_q'(m+t)-U_q'(n+t)
+ =q\log16(16^m-16^n)16^t-[T'(m+t)-T'(n+t)].
+\]
+
+Because `T'` increases and both values lie between -1 and 0, the bracket lies in `(0,1)`. Also `16^m-16^n>=15*16^m/16` and `16^t>=1/2`. Therefore, using `q log16>1/2`,
+
+\[
+ U_q'(m+t)-U_q'(n+t)>
+ (15/64)16^m-1 >16^m/8,\quad m>=2.\tag{J30}
+\]
+
+The derivative is itself strictly increasing in t: its derivative equals `q(log16)^2(16^m-16^n)16^t-[T''(m+t)-T''(n+t)]`, which is positive because T'' is decreasing. For h<0 the full phase derivative is decreasing but still monotone and bounded away from zero. The same integration-by-parts first-derivative test as J18, now with amplitude `psi²` of variation 2 and supremum 1, yields
+
+\[
+ |C_{n,m}|<\frac{12}{\pi |h|16^m}.\tag{J31}
+\]
+
+Sum the ordered off-diagonal contributions with the exact geometric identity `sum_(m=2)^infty (m-1)/16^m=1/225`:
+
+\[
+ |2\operatorname{Re}\sum_{n<m}C_{n,m}|
+ <\frac{24}{\pi|h|}\frac1{225}=\frac8{75\pi|h|}.
+\]
+
+This proves J28. QED.
+
+**Strong negative control.** Take q=1/5 and the EXACT SAME original four signed poles. The integer seam has `|Z_(N,1/5,h)(0,0)|=N+O_h(1)` (inherited coherent source), while J28 proves its **one-dimensional continuous Zak slice** has energy `N||psi||²+O_h(1)`, just as for the original q=pi/16. Hence **even source-derived analytic phase orthogonality at every continuous within-cell offset does not force cancellation at the singled-out arithmetic seam**. A direct restriction from this `L²(t)` bound to the point `t=0` would be mathematically invalid without an additional, seed-sensitive trace estimate.
+
+The source-specialized disjoint stationary windows are potentially useful for designing non-overlapping signed alias instruments. Yet the evidence is stronger as a **proof of where the remaining issue lives** than as a proof that the selected seam is small: the missing quantity is a source/seed-selected complex trace, not global band energy.
+
+## 8. Falsification/claim boundary
 
 - `r` is authentic at **all x>=1**, not just the first eight pole jets.
 - `q=alpha` is selected only from the literal `U_0=0`; changed coherent q=1/5 is an explicit nonzero seed of the same forcing.
