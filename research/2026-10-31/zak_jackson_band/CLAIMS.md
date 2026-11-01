@@ -1,0 +1,18 @@
+# ZJB scoped claim ledger — local branch only
+
+`ZJB-xx` identifiers are NEW LOCAL research labels, not canonical registered statuses. A mathematical proposition is only as strong as its weakest input; an exact finite regression is not an external proof witness. The source is the literal original BBP four-pole rational forcing with `U_0=0` when `q=pi/16`; declarations of other q are counterseed models.
+
+| ID | Status | Domain / quantifiers | Receipt | Boundary / hostile falsifier |
+|---|---|---|---|---|
+| ZJB-01 | **Disclosed (classical algebra)** | all integer L>=16; every integer Fourier alias ell | PROOFS J4–J7; exact rational convolution plus independent four-index enumeration | K_L is signed in real space; coefficients c_{L,ell} are nonnegative, not the kernel itself |
+| ZJB-02 | **Disclosed (finite toy identity)** | any unit coefficients z_n, N>=M>=1; exact linear cell phases 16^n | J8; direct coefficient threshold oracle | Toy linear cells do not satisfy nonlinear canonical BBP interpolation |
+| ZJB-03 | **Disclosed (elementary bounds)** | every L>=16; torus cell t in [-1/2,1/2] | J9–J11, exact rational envelopes | No use of unverified numerical quadrature |
+| ZJB-04 | **Disclosed (source-specialized paper proof)** | genuine original r at ALL x>=1, q in [3/16,1/4], x>=3/4 | J0, J12–J13; independent exact rational source checks | A changed positive source can violate the same numeric constants; no source replacement |
+| ZJB-05 | **Disclosed within stated hypotheses (paper proof)** | every N>=M>=1, h nonzero integer, canonical constant-q interpolation with q in [3/16,1/4] | J14–J19, explicit `<99|h|`; independent low/high and exact constant tests | Transport ONLY; bound is O_h(1), not all-N signed saving of S_M |
+| ZJB-06 | **Classical derived equivalence** | original zero-seed q=pi/16; any N_M>=M; for **every** fixed h!=0 | J20 and inherited Weyl/Green criterion | Restates precisely the missing signed goal in a new observer, not a π proof |
+| ZJB-07 | **Disclosed coherent counterseed barrier** | all N>=M>=1, fixed q=1/5 with same r but NONZERO seed, each fixed h!=0 | J21–J23; exact high-frequency flat-top support | Does not prove the selected q=pi/16 is small or large |
+| ZJB-08 | **Classical conditional selector** | C1 1-periodic Q, finite source-relative total horizontal action and U(0)=0 | J24, periodic Dirichlet-energy identity | Finite action is an *extra* axiom; not implied by the integer samples |
+| ZJB-09 | **OBSERVED FINITE (not proof)** | selected q numerically approximated, M in {1,2}, N in {3,4}, midpoint grids | NUMERICAL_DIAGNOSTIC.json, two grid resolutions | No rigorous numerical bounds; theorem proof is independently analytic |
+| ZJB-10 | **OPEN** | original four poles, literal U0=0, each fixed h!=0, every asymptotic horizon M | Show `B_(N_M,M)(pi/16,h)=o(M)` by source arithmetic | Needed source-specific signed saving; no filter algebra/positive Haar proof supplies it |
+
+Mandatory hostile controls: same-forcing altered q=1/5, nearzero irrational counterseeds of #433, periodic-Q interpolations of #438, eight-jet Beta positive fake of #437, pairwise-Haar triple lock of #437, irrationality-only control of main, genuine primary×real cofiber first-birth windows. Finite source prefix matching is NOT an infinite source proof; if a new candidate bound passes q=1/5 as if it were selected, reject it.
