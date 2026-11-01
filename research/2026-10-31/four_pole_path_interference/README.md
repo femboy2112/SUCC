@@ -12,8 +12,11 @@ User hypothesis: the four authentic BBP poles have several infinite-series reali
 
 The full exact mathematics, qualifications and classical provenance are in [PROOFS.md](PROOFS.md). Also see [SOURCE_MAP.md](SOURCE_MAP.md), [CLAIMS.md](CLAIMS.md), [VALIDATION.md](VALIDATION.md), [FINITE_DIAGNOSTICS.md](FINITE_DIAGNOSTICS.md), and [NEXT.md](NEXT.md).
 
-**Reproducibility:** pure stdlib exact Fraction module pole_interactions.py; distinct independent_oracle.py; root-discoverable tests/test_four_pole_path_interference.py (26 focused exact tests locally PASS); optional finite-only mpmath probe finite_probe.py.
+**Reproducibility:** pure stdlib exact Fraction module pole_interactions.py; distinct independent_oracle.py; root-discoverable tests/test_four_pole_path_interference.py (30 focused exact tests locally PASS); optional finite-only mpmath probe finite_probe.py.
 
 **Research status:** A set of new-to-SUCC exact source/falsification results, NOT a new all-horizon signed saving. The analytic Poisson alias sum, source-authenticated third-order character and main XVII joint cofiber L² estimate remain unproved at the original zero boundary. Positive paths, first eight jets, marginal/pairwise Haar and the continuous integral do not pay that truth debt.
 
 **FP-04B stronger source/zero-boundary hostile theorem:** An explicitly chosen real positive coefficient ε_q=(q−π/16)/B_* (B_*>0 the beta completion) for any rational q>π/16 yields a genuinely ZERO-SEEDED, positive/strict time-Hankel, eight-Laurent-moment-matching but NONAUTHENTIC many-pole forcing with completed constant q. At q=1/5 its integer-time orbit is provably NONNORMAL at every fixed harmonic. The additional pole weights need not be rational; this fails the exact original-four-pole requirement, not π normality. Arbitrarily close positive source mutants result by choosing rational q decreasing to π/16. See FP-04B in PROOFS.md. **28 exact focused tests passed locally**, including two additional positive-mutation/rational-completion controls.
+
+
+**FP-02B new completion firewall:** The authentic Laurent coefficients m_j are all odd for j≥1. Thus every positive Laurent summand has 2-adic valuation -(j+1)(3+v2(n))→-infinity: the series converges absolutely in the real place, does NOT converge 2-adically, yet the exact rational r(n) belongs to Z2. Source moment residues also follow period-two mod3 and period-four mod5 clocks. See PROOFS.md FP-02B. Final **30 exact focused tests PASS locally**, including two new prime-completion clock regressions.

@@ -239,3 +239,27 @@ Thus this **genuinely zero-seeded** source mutant is provably nonnormal at every
 More generally let \(q_j>\alpha\) be ANY sequence of distinct rationals decreasing to \(\alpha\). Then \(\epsilon_{q_j}\to0\), so for every fixed finite observation horizon \(M\), both the mutated source values and the zero-seeded state prefixes \(U^{q_j}_0,\ldots,U^{q_j}_M\) converge to the authentic original values, while **each fixed j** has a rational nonnormal completed point q_j. This keeps the order of limits explicit: fix j before \(N\to\infty\); fix M before \(j\to\infty\).
 
 **Strongest valid conclusion:** literal zero seed, positive definite time moments, exact first-eight pole jets and arbitrarily accurate finite source observations **together** are insufficient to certify selected normality if the complete original rational four-pole forcing is not fixed. This is a stronger source-map adequacy counterexample, not an obstruction to a theorem whose hypotheses really bind all four original rational poles and their exact weights.
+
+
+## FP-02B — the REAL positive Laurent path is 2-ADICALLY divergent, although the exact source is 2-adically integral
+
+This is a new-to-SUCC source-completion warning with a decisive exact parity receipt. For every \(j\ge1\),
+\[
+m_j=4\cdot7^j-2\cdot4^j-3^j-2^j\equiv1\pmod2.
+\]
+Therefore \(v_2(m_j)=0\). But for any positive integer \(n\), \(x=8n\) has \(v_2(x)=3+v_2(n)\ge3\), and the jth positive Laurent term in FP4 satisfies
+\[
+\boxed{v_2(m_j/x^{j+1})=-(j+1)(3+v_2(n))\longrightarrow-\infty.}\tag{FP4B}
+\]
+The Laurent terms do not even tend to zero in \(\mathbb Q_2\); their infinite sum cannot converge there. The REAL series in FP4 does converge absolutely because \(7/x<1\).
+
+**Yet the original rational source is an integral 2-adic number:** \(r(n)=(120n^2-89n+16)/[(2n-1)(4n-1)(8n-7)(8n-3)]\), whose denominator is ODD. Consequently \(r(n)\in\mathbb Z_2\). One may evaluate the EXACT rational function in \(\mathbb Q_2\), but one MUST NOT substitute the source coordinate \(z=1/(8n)\) into a formal real-power-series expansion and pretend that its original termwise 2-adic sum exists.
+
+The same atomic moment path has exact finite 3/5 residue clocks:
+\[
+\boxed{m_j\bmod3=0\ {\rm if}\ j\ {\rm odd},\ 1\ {\rm if}\ j\ {\rm even};\quad
+(m_1,m_2,m_3,m_4)\bmod5=(0,1,4,0)\ \text{repeating with period 4}.}\tag{FP4C}
+\]
+Proof: reduce \(7,4,3,2\) modulo 3/5 and use the multiplicative orders; j≥1 avoids \(0^0\). The residue clocks are FINITE arithmetic relationships in the exact pole atoms, not a theorem about real-circle π digits. The pure Fraction tests certify FP4B–FP4C across multiple source indices and all moments j≤129.
+
+**Boundary:** Real-positive coefficient path, p-adic rational resummation, and selected real BBP phase are THREE different typed operations. Their existence does not prove an all-horizon source-selected signed cofiber estimate or RH.
