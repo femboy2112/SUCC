@@ -203,3 +203,39 @@ The smooth zero-alias path shows O(1) cancellation while **the sum of nonzero sa
 - SUCC Main XVIII, research/2026-10-31/signed_lag_fireworks/SHARPNESS.md — original source future-tail interpolation and derivative controls. Our FP-06 adds an explicit smooth Poisson alias decomposition and quantified q=1/5 alias-restoration counterseed, without reclassifying that parent result.
 
 The named classical methods are inputs, NOT independent confirmation of a new academic theorem. All finite tests share the original signed four-pole arithmetic even where different implementations were used.
+
+## FP-04B — a POSITIVE, zero-seeded, eight-moment-matched source with provably NONNORMAL completed orbit (PROVED PAPER hostile source)
+
+FP-04 only established that a rational finite-jet mutation changes the completed source constant, without classifying its digits. We can sharpen this into a *mathematically explicit nonnormal source-mutation family* while stating exactly which authentic hypothesis is lost.
+
+Keep \(b_n=B(8n,9)>0\), and define the fixed strictly positive number
+\[
+B_*=\sum_{n\ge1}16^{-n}b_n
+=\int_0^1\frac{t^7(1-t)^8}{16-t^8}dt>0.
+\]
+Let \(\alpha=\pi/16\). For any fixed rational \(q>\alpha\), define the **real** positive mutation parameter
+\[
+\boxed{\epsilon_q=(q-\alpha)/B_*>0,\quad
+r_q(n)=r(n)+\epsilon_q b_n,\quad
+U^q_0=0,\quad U^q_n=16U^q_{n-1}+r_q(n).}\tag{FP12B}
+\]
+This is not the original four-pole rational forcing: the perturbation introduces nine additional poles and \(\epsilon_q\) is a declared real parameter that depends on the actual original completed value. No rationality of \(\epsilon_q\) or of the mutated source states is claimed.
+
+Nevertheless ALL of the following hold exactly:
+- The literal selected boundary remains \(U^q_0=0\).
+- The original first EIGHT signed Laurent moments \(m_0,\ldots,m_7\) are unchanged by FP11.
+- The mutated source remains strictly positive and Hausdorff/strictly totally positive: its Euler weight is \(P_q(t)=P(t)+\epsilon_q t^7(1-t)^8>0\) for \(0<t<1\).
+- Its completed zero-boundary constant is exactly \(\sum_{n\ge1}16^{-n}r_q(n)=\alpha+\epsilon_q B_*=q\).
+- Its exact trajectory is \(U^q_n=16^nq-T^q_n\), where \(T^q_n=\sum_{j\ge1}16^{-j}r_q(n+j)>0\) and \(\sum_{n\ge1}T^q_n<\infty\), since \(r_q(n)=O(n^{-2})\).
+
+For the especially simple rational \(q=1/5\), the required positive coefficient is well-defined because \(\pi/16<11/56<1/5\) (classical \(\pi<22/7\)). Since \(16^n\equiv1\pmod5\), for any fixed nonzero integer \(h\),
+\[
+\boxed{\sum_{n=1}^N e(hU^{1/5}_n)
+=N e(h/5)+O_{h,\epsilon_{1/5}}(1),\qquad
+N^{-1}\sum_{n=1}^N e(hU^{1/5}_n)\to e(h/5)\ne0.}\tag{FP12C}
+\]
+Thus this **genuinely zero-seeded** source mutant is provably nonnormal at every fixed harmonic, even though it retains positive path geometry, complete moment/Hankel positivity and the first eight Laurent fingerprints. This does not refute π normality: its forcing violates the literal original four signed poles and original rational-source authentication.
+
+More generally let \(q_j>\alpha\) be ANY sequence of distinct rationals decreasing to \(\alpha\). Then \(\epsilon_{q_j}\to0\), so for every fixed finite observation horizon \(M\), both the mutated source values and the zero-seeded state prefixes \(U^{q_j}_0,\ldots,U^{q_j}_M\) converge to the authentic original values, while **each fixed j** has a rational nonnormal completed point q_j. This keeps the order of limits explicit: fix j before \(N\to\infty\); fix M before \(j\to\infty\).
+
+**Strongest valid conclusion:** literal zero seed, positive definite time moments, exact first-eight pole jets and arbitrarily accurate finite source observations **together** are insufficient to certify selected normality if the complete original rational four-pole forcing is not fixed. This is a stronger source-map adequacy counterexample, not an obstruction to a theorem whose hypotheses really bind all four original rational poles and their exact weights.
