@@ -175,8 +175,11 @@ S3 bound = 13295809335180319/113092617830400 < 257.
 
 The certified norm is below the analytic bound, which itself improves on the
 trivial 257-term bound. This is a finite control of S3, not evidence replacing
-the all-horizon limit proof. Four exact regression tests pass, including this
-control, the weighted profile, rational limiting constants, and scope rejection.
+the all-horizon limit proof. Five exact regression tests pass, including this
+control, the weighted profile, rational limiting constants, scope rejection,
+and independent differentiated-four-pole sums at seven rational real points.
+The latter encloses the derivative tail by retaining only its positive pole
+term, without borrowing S2 as its own error certificate.
 Reproduce with:
 
 ```

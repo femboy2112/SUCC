@@ -82,5 +82,27 @@
     "exit_code": 0,
     "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
     "log": "ordinal.log"
+  },
+  {
+    "name": "full_regression",
+    "command": [
+      "/tmp/succ-fireworks-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lag-fireworks",
+    "started_utc": "2026-10-31T23:38:44.106459+00:00",
+    "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+    "git_status_before": " M docs/PI_SELECTED_CATEGORICAL_FRONTIER.md\n?? research/2026-10-31/signed_lag_fireworks/\n?? tests/test_signed_lag_fireworks_arithmetic.py\n?? tests/test_signed_lag_fireworks_audit.py\n?? tests/test_signed_lag_fireworks_boundary.py\n?? tests/test_signed_lag_fireworks_sharpness.py\n?? tests/test_signed_lag_fireworks_transport.py\n",
+    "seconds": 1174.274,
+    "exit_code": 0,
+    "sha256": "fee03fb6761691b5d3a8541916b02a559b8cd69ad6d6e4c6f8fc70e3c96902dc",
+    "log": "full_regression.log"
   }
 ]

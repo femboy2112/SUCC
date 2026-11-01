@@ -30,7 +30,7 @@ At K=17 the instrument measures deeper 3/5 conductor classes, but the resulting 
 
 ## Signed conductor contributions at N=1024,K=17
 
-Each entry is the sum of the actual weighted real lag intervals in the indicated valuation class. It retains signs; class support alone is not a bound.
+Each entry is the sum of the actual weighted real lag intervals in the indicated valuation class of the cofactor `16^k-1`. For the full frequency `h(16^k-1)`, add `v3(h)` and `v5(h)` respectively. It retains signs; class support alone is not a bound.
 
 | h | (v3,v5) | Signed contribution (outward display) |
 |---:|---|---|

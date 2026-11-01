@@ -1,5 +1,8 @@
 # Signed lag fireworks: exact conductor counterexamples and a wider source bridge
 
+Delivery: [draft PR #435](https://github.com/femboy2112/SUCC/pull/435), branch
+`research/selected-pi-lag-fireworks-2026-10-31`.
+
 **π base-16 normality remains OPEN.** This round proves no new unconditional
 cancellation estimate for the actual zero-selected orbit. It supplies stronger
 hostile examples, resolves the necessity of the lag gate, and improves the

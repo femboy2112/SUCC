@@ -1,0 +1,29 @@
+{
+  "snapshot_head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+  "final_head": "5e429965bac8af16bd10c3f8e917fdcdc99be354",
+  "changed_python_inputs": [
+    "tests/test_signed_lag_fireworks_sharpness.py",
+    "tests/test_signed_lag_fireworks_transport.py",
+    "research/2026-10-31/signed_lag_fireworks/interval_oracle.py"
+  ],
+  "missing_python_inputs": [],
+  "final_focused_sha256": "61b7f96ee4ed47737ee058b6e5628068912de0c72bee7c741d182a439a7fddb9",
+  "final_focused_tests": 43,
+  "final_focused_seconds": 2.651,
+  "final_focused_result": "OK",
+  "final_new_python_sha256": {
+    "research/2026-10-31/signed_lag_fireworks/interval_oracle.py": "ff7d9ecad90afd2d198b23328a0eb4ff729b9e267e0bef99180cf713d0902fa8",
+    "research/2026-10-31/signed_lag_fireworks/arithmetic.py": "59e995c6645cb88cf27ba38a1efe5d702da81dd1eaad014f4606dc8384363880",
+    "research/2026-10-31/signed_lag_fireworks/transport.py": "c0ffbd0c58a26ae7e918976d8cfc4dca3119a6316241093e72fd127a91204f21",
+    "research/2026-10-31/signed_lag_fireworks/sharpness.py": "c6c1cb8d367cf5969090ce450483c6b5df3af44e057082744a8176452a87ceea",
+    "research/2026-10-31/signed_lag_fireworks/run_sharpness_receipt.py": "0e5cc5895a98eb3f4da6f2535668d080daa20471a31b7a6f8aa411fcac00f100",
+    "research/2026-10-31/signed_lag_fireworks/boundary.py": "c3cb6bcb7dd8793214faf1cae250efc4b96428d31ccb7c6d33773eed2bbfd907",
+    "research/2026-10-31/signed_lag_fireworks/run_boundary_receipt.py": "9dd3171dea65edfbc1525091c92e1923c031cc7dfa978b817b762dc2cb6961a3",
+    "research/2026-10-31/signed_lag_fireworks/probe.py": "703292a9d9dbe846c282a4f01a94a99c0992101875b882c4787ccf5fbac5198c",
+    "tests/test_signed_lag_fireworks_sharpness.py": "e5d98f5ad0e370f7c386d2868758ef0e2b60ebb4498deda117823f9a78837d60",
+    "tests/test_signed_lag_fireworks_audit.py": "ecf8d39271b492b55dd34adc7d0122fe6b3eb66c3362817764d90d91bdabfc31",
+    "tests/test_signed_lag_fireworks_arithmetic.py": "7d2f58135ca27876b23d540524367cf1ef950a22ff005cc4c54453a5be3cbfe4",
+    "tests/test_signed_lag_fireworks_boundary.py": "1bed9ed7320d2a3cefc51738d8db3d123ec4185b04d9c2c73cf652126e6f5962",
+    "tests/test_signed_lag_fireworks_transport.py": "1077a6582c8afda57fd4bcd31560e67b9706c58577461a48f6767bd6fba92cd6"
+  }
+}

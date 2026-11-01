@@ -1,0 +1,15 @@
+{
+  "raw_filename": "full_regression.log",
+  "archive_filename": "full_regression.log.gz",
+  "raw_sha256": "fee03fb6761691b5d3a8541916b02a559b8cd69ad6d6e4c6f8fc70e3c96902dc",
+  "archive_sha256": "64febf748d587182e5b74d7b3eb680f8ac7245198e8cdbaa29ee736b5f34b2ec",
+  "raw_bytes": 1562795,
+  "archive_bytes": 252370,
+  "tests": 10164,
+  "test_seconds": 1155.496,
+  "command_seconds": 1174.274,
+  "exit_code": 0,
+  "input_snapshot": "python_snapshot.json.gz",
+  "final_changed_input_coverage": "final_focused_delta.json",
+  "scope": "Broad run loaded captured inputs; final 43-test replay covers three later changed new Python files."
+}
