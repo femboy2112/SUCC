@@ -13,6 +13,9 @@ That would imply base16 pi normality, but is **currently only a representation o
 
 ## Higher-order causal SOURCE interventions
 
+CR-06C is now a proved finite source-effect Jacobian, not a pending proposal: J_(n,j)=16^(n−j)1_(j<=n), with exact (E−16)J_(n,j)=delta_(n+1,j) and unimodular finite inverse. The next *unpaid* step is a quantitative bound using its exact original-source values and the selected real phase, rather than this invertible Green representation.
+
+
 **Do not rely on any globally seed-translation-invariant causal statistic:** CR-04B constructs a known normal and a known nonnormal real-seed orbit with the SAME exact authentic four-pole forcing and IDENTICAL global causal intensity invariants. The missing information is the marked zero-seed causal origin and the signed chronological interaction. A new source-only or unpointed symmetry theorem cannot suffice.
 
 The initial-seed susceptibility ∂_s U_n=16^n is universal to every source. To get beyond that seed-blind axis, introduce a labelled intervention at each exact forcing step r_j: on any finite horizon \(J_{n,j}=\partial U_n/\partial r_j=16^{n-j}1_{j\le n}\). The exact causal Green difference \((E-16)J_{n,j}=\delta_{n+1,j}\) identifies the impulse-birth time and restores original four-pole labels. A future multi-intervention Fourier/jet readout must still preserve the selected REAL phase and prove a new signed bound, not simply re-express the invertible lower-triangular source map. Test against the same-source coherent changed seed and the zero-seeded positive matched-jet changed source.
