@@ -1,0 +1,104 @@
+{
+  "authority": "finite exact interval arithmetic; NOT selected asymptotic saving",
+  "base_pr": "#451",
+  "cases": [
+    {
+      "N": 40,
+      "h": 13,
+      "index_16h": 29,
+      "index_h": 4,
+      "original_imag": {
+        "lower_scaled_1e12": -54034325767,
+        "outward_rounded_sha256": "d69bae6ec48416865ec0e33a7627c5ab6e787a864016a05f3ca2356f489d4de8",
+        "upper_scaled_1e12": -54034325766,
+        "width_lt_1e10": true
+      },
+      "original_real": {
+        "lower_scaled_1e12": -242852190191,
+        "outward_rounded_sha256": "83877f3f3afa1197502604edad9b001093a0119375098c47987e339ba85bbc5d",
+        "upper_scaled_1e12": -242852190190,
+        "width_lt_1e10": true
+      },
+      "signed_16h": {
+        "lower_scaled_1e12": -30560934136,
+        "outward_rounded_sha256": "78e7e4b3c48ceae0149fed231a579c96ff9e24110746b717249caad1722db62d",
+        "upper_scaled_1e12": -30560934135,
+        "width_lt_1e10": true
+      },
+      "signed_h": {
+        "lower_scaled_1e12": 12645099443,
+        "outward_rounded_sha256": "327614f24218871182904e81ecb5dba0ebf7e109eb83ce83282c1db73b8c174c",
+        "upper_scaled_1e12": 12645099444,
+        "width_lt_1e10": true
+      },
+      "uniform_det_sin_gt": "1/8",
+      "verified_original_ineq": true
+    },
+    {
+      "N": 72,
+      "h": 17,
+      "index_16h": 33,
+      "index_h": 5,
+      "original_imag": {
+        "lower_scaled_1e12": 106273161403,
+        "outward_rounded_sha256": "99e15d36e4ec49ab72c984d54d6a8b4662982fd1005538d2d1b1dd2bcc351096",
+        "upper_scaled_1e12": 106273161404,
+        "width_lt_1e10": true
+      },
+      "original_real": {
+        "lower_scaled_1e12": 6090397185,
+        "outward_rounded_sha256": "fdd5990460fdf62714a8a29b1685d6809dad66308b76341e71c1dcd4ad61d93d",
+        "upper_scaled_1e12": 6090397186,
+        "width_lt_1e10": true
+      },
+      "signed_16h": {
+        "lower_scaled_1e12": 21972677770,
+        "outward_rounded_sha256": "f5c422431ad3a6613c25dc5cc1275bc6ac4b409ac28dcb4b496116ab31a53ca1",
+        "upper_scaled_1e12": 21972677771,
+        "width_lt_1e10": true
+      },
+      "signed_h": {
+        "lower_scaled_1e12": 102687836424,
+        "outward_rounded_sha256": "7596dc305d7591742b028747afeaf4715a76b57f5de5123a597ec00ca1b122c8",
+        "upper_scaled_1e12": 102687836425,
+        "width_lt_1e10": true
+      },
+      "uniform_det_sin_gt": "1/8",
+      "verified_original_ineq": true
+    },
+    {
+      "N": 96,
+      "h": 29,
+      "index_16h": 44,
+      "index_h": 6,
+      "original_imag": {
+        "lower_scaled_1e12": 58394357046,
+        "outward_rounded_sha256": "9d7cf8f7d3ee6c6832677bbaaec8206ee2a7939280fc54a1185f7176a696351a",
+        "upper_scaled_1e12": 58394357047,
+        "width_lt_1e10": true
+      },
+      "original_real": {
+        "lower_scaled_1e12": -45658355831,
+        "outward_rounded_sha256": "47065bf8655dd5127af1d6e457124359700e479cb224f8543c23d62e125e7dda",
+        "upper_scaled_1e12": -45658355830,
+        "width_lt_1e10": true
+      },
+      "signed_16h": {
+        "lower_scaled_1e12": 41887074416,
+        "outward_rounded_sha256": "f57cb71831104c86756b3a0caeba6d2de924c1f5653a1c86209bce7d9785a2cc",
+        "upper_scaled_1e12": 41887074417,
+        "width_lt_1e10": true
+      },
+      "signed_h": {
+        "lower_scaled_1e12": 67457559234,
+        "outward_rounded_sha256": "9004e50e985eb4ca12ad7281676230d486761e7c669c440c029cf9c493cf3e2c",
+        "upper_scaled_1e12": 67457559235,
+        "width_lt_1e10": true
+      },
+      "uniform_det_sin_gt": "1/8",
+      "verified_original_ineq": true
+    }
+  ],
+  "source": "Original four signed BBP poles; U_0=0",
+  "status": "EXACT_RATIONAL_INTERVAL_HOLDOUTS_PASS"
+}

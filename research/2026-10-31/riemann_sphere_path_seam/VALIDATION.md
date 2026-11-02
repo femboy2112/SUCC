@@ -1,0 +1,8 @@
+# Validation report — exact source contour and harmonic infinity seam
+
+- Baseline: SUCC PR #441 `ab87a8d825d41dce846da2d93e776e2c760e9bf1`; Main XVIII SHA `4eb411e3730a9e7b95480369a438b89d9a433a4b` (no changes).
+- Focused local command: `python -m unittest discover -s tests -p 'test_riemann_sphere_path_seam.py' -v`.
+- Result: **28/28 exact Fraction tests PASS**. The Newton polynomial is implemented by falling-factorial products; an independent Lagrange polynomial interpolation implementation reproduces coefficients exactly. A separate combined-rational BBP recurrence oracle confirms U_n/16^n and source. Infinity residue is independently extracted from Laurent moments and integer power sums; the global residue comparison is an independent identity, not a circular definition.
+- Exact checks include source m0=0,m1=15 and four pole residues; first six action fractions; N=1..10 entire sphere source/sampling/infinity residue balance; infinity first birth N=3; unit puncture persistence; harmonic sum decomposition; λ=8/5 and j=470596/225; original first two affine steps noncommuting by 12301/273; fail-closed invalid horizons.
+- Analytic asymptotics: proof from binomial geometric tail and digamma asymptotics. Source finite part \(C_0=γ/8+5log2/16-3π/32-log(1+√2)/8\), checked by independent symbolic reduction and 50+ digit digamma numerical agreement **as diagnostic, not as an analytic proof certificate**. Classical formulas cited from NIST DLMF §5.4/5.5.
+- No claim of full repository 10k+ tests, provenance scripts, new Lean kernel, independent external referee, exact-head GitHub CI before it runs, or π normality/RH. No main-branch or source edits.

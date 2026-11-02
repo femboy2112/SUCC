@@ -1,0 +1,154 @@
+{
+  "bbp_first_n": [
+    {
+      "carry": 14,
+      "completed_action_prefix": "47/240",
+      "digit": 1,
+      "n": 0,
+      "next_state_mod256": 225,
+      "prior_state_mod16": 0,
+      "source_r": "47/15"
+    },
+    {
+      "carry": 14,
+      "completed_action_prefix": "102913/524160",
+      "digit": 14,
+      "n": 1,
+      "next_state_mod256": 254,
+      "prior_state_mod16": 1,
+      "source_r": "106/819"
+    },
+    {
+      "carry": 4,
+      "completed_action_prefix": "615863723/3136573440",
+      "digit": 15,
+      "n": 2,
+      "next_state_mod256": 47,
+      "prior_state_mod16": 14,
+      "source_r": "829/19635"
+    },
+    {
+      "carry": 1,
+      "completed_action_prefix": "357201535487/1819212595200",
+      "digit": 12,
+      "n": 3,
+      "next_state_mod256": 12,
+      "prior_state_mod16": 15,
+      "source_r": "316/15225"
+    },
+    {
+      "carry": 10,
+      "completed_action_prefix": "16071212445820879/81850013083238400",
+      "digit": 13,
+      "n": 4,
+      "next_state_mod256": 109,
+      "prior_state_mod16": 12,
+      "source_r": "857/69597"
+    },
+    {
+      "carry": 1,
+      "completed_action_prefix": "40413742330349316707/205825499566650163200",
+      "digit": 10,
+      "n": 5,
+      "next_state_mod256": 234,
+      "prior_state_mod16": 13,
+      "source_r": "3802/466785"
+    },
+    {
+      "carry": 11,
+      "completed_action_prefix": "4318127540987083098959311/21992042977697436637593600",
+      "digit": 11,
+      "n": 6,
+      "next_state_mod256": 91,
+      "prior_state_mod16": 10,
+      "source_r": "5273/911547"
+    }
+  ],
+  "claims": "finite exact receipt only; no pi normality, physical hbar or SR theorem",
+  "parent": "7833a238012bb8e70ff363a3bcf6d60354ecb795",
+  "pisot": {
+    "beta": "2+sqrt2",
+    "beta_squared_equals": "2*(3+2*sqrt2)",
+    "has_primitive_4th_root_character": false,
+    "matrix": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "second_quotient": "(Z/2Z)^2",
+    "squared_matrix": [
+      [
+        6,
+        8
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "unit_norm": 1
+  },
+  "radix_clocks": [
+    {
+      "Q": 16,
+      "effective_phase_ratio_to_2pi": "1/16",
+      "level": 1
+    },
+    {
+      "Q": 256,
+      "effective_phase_ratio_to_2pi": "1/256",
+      "level": 2
+    },
+    {
+      "Q": 4096,
+      "effective_phase_ratio_to_2pi": "1/4096",
+      "level": 3
+    },
+    {
+      "Q": 65536,
+      "effective_phase_ratio_to_2pi": "1/65536",
+      "level": 4
+    }
+  ],
+  "real_cofiber_witness": [
+    {
+      "chord_squared": 3,
+      "level": 1,
+      "same_local_residue": 0,
+      "second_rational": "16/3",
+      "second_real_fractional_part": "1/3"
+    },
+    {
+      "chord_squared": 3,
+      "level": 2,
+      "same_local_residue": 0,
+      "second_rational": "256/3",
+      "second_real_fractional_part": "1/3"
+    },
+    {
+      "chord_squared": 3,
+      "level": 3,
+      "same_local_residue": 0,
+      "second_rational": "4096/3",
+      "second_real_fractional_part": "1/3"
+    },
+    {
+      "chord_squared": 3,
+      "level": 4,
+      "same_local_residue": 0,
+      "second_rational": "65536/3",
+      "second_real_fractional_part": "1/3"
+    }
+  ],
+  "scope": "original four-pole BBP r(n), literal U_0=0, finite carrier relative Weyl phases only",
+  "test_receipt": {
+    "combined_prior_packages_tested": 117,
+    "full_repo_tests_ran": false,
+    "new_exact_tests": 35
+  }
+}

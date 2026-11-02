@@ -1,0 +1,248 @@
+{
+  "Machin_Gaussian_factor": "(5+i)^4 = 2(1+i)(239+i) = 476+480i",
+  "Machin_rational_pi_bounds_12terms": [
+    "240931279310479434562506860048186437270119759353340069129713066413477366442224219204/76690808095433789090413743740393929841870359095609637537803083094513416290283203125",
+    "2636194211744361035424790317757879357071655647554078081436653451212942592452239648/839126679498715326788897075291857743232243385703261908249626703560352325439453125"
+  ],
+  "all_r_ge_2_Fourier_support_rule": "ell == 3*k or 11*k (mod 16), necessary not sufficient",
+  "chiral_torsor_Q15_permutation_count": 30,
+  "chosen_halfturn_tower_first4": [
+    "1/2",
+    "1/32",
+    "1/512",
+    "1/8192"
+  ],
+  "clock_permutation_receipts": {
+    "16": {
+      "clock_size": 16,
+      "exact_bijection": true,
+      "permuted_residue_count": 16
+    },
+    "256": {
+      "clock_size": 256,
+      "exact_bijection": true,
+      "permuted_residue_count": 256
+    },
+    "4096": {
+      "clock_size": 4096,
+      "exact_bijection": true,
+      "permuted_residue_count": 4096
+    },
+    "65536": {
+      "clock_size": 65536,
+      "exact_bijection": true,
+      "permuted_residue_count": 65536
+    }
+  },
+  "dual_chiral_law": "J(z)=-z^-1, J F_r J=F_(1/2-r)",
+  "finite_carrier_fourier_square": "DFT_(2Q)^2|x> = |-x>; shift by Q realizes x->Q-x",
+  "fourier_16_exact_cyclotomic_coefficients": {
+    "0": {
+      "allowed_ell": [
+        0
+      ],
+      "polynomial_numerator": {
+        "0": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "1": {
+      "allowed_ell": [
+        7,
+        15
+      ],
+      "polynomial_numerator": {
+        "15": [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -8,
+          0
+        ],
+        "7": [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0
+        ]
+      }
+    },
+    "2": {
+      "allowed_ell": [
+        6,
+        14
+      ],
+      "polynomial_numerator": {
+        "14": [
+          8,
+          0,
+          0,
+          0,
+          -8,
+          0,
+          0,
+          0
+        ],
+        "6": [
+          8,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "3": {
+      "allowed_ell": [
+        5,
+        13
+      ],
+      "polynomial_numerator": {
+        "13": [
+          8,
+          0,
+          -8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "5": [
+          8,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "4": {
+      "allowed_ell": [
+        4
+      ],
+      "polynomial_numerator": {
+        "4": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "7": {
+      "allowed_ell": [
+        1,
+        9
+      ],
+      "polynomial_numerator": {
+        "1": [
+          8,
+          0,
+          -8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "9": [
+          8,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "8": {
+      "allowed_ell": [
+        8
+      ],
+      "polynomial_numerator": {
+        "8": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "full_repository_tests_executed": false,
+  "selected_normality_theorem_proved": false,
+  "solenoid_odd_torsion_r1_first4": [
+    "2/15",
+    "2/15",
+    "2/15",
+    "2/15"
+  ],
+  "source": "unchanged four-pole BBP, literal U0=0",
+  "source_examples": {
+    "1": {
+      "actual_U": "47/15",
+      "chiral_carry": 8,
+      "chiral_unwrapped": "161/30",
+      "source": "47/15",
+      "source_derivative_mod_16": 11,
+      "source_mod_16": 1
+    },
+    "2": {
+      "actual_U": "205826/4095",
+      "chiral_carry": 136,
+      "chiral_unwrapped": "706283/8190",
+      "source": "106/819",
+      "source_derivative_mod_16": 3,
+      "source_mod_16": 14
+    },
+    "3": {
+      "actual_U": "615863723/765765",
+      "chiral_carry": 2184,
+      "chiral_unwrapped": "2113899839/1531530",
+      "source": "829/19635",
+      "source_derivative_mod_16": 3,
+      "source_mod_16": 15
+    },
+    "4": {
+      "actual_U": "1428806141948/111035925",
+      "chiral_carry": 34952,
+      "chiral_unwrapped": "4904354053229/222071850",
+      "source": "316/15225",
+      "source_derivative_mod_16": 11,
+      "source_mod_16": 12
+    }
+  },
+  "test_scope": "finite exact Fraction/cyclotomic test receipts; analytic claims separately proved in PROOFS"
+}

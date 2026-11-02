@@ -1,0 +1,81 @@
+{
+  "scope": "Original four signed BBP poles; literal U_0=0; all N finite",
+  "main_parent": "ab87a8d825d41dce846da2d93e776e2c760e9bf1",
+  "source_poles": [
+    "7/8",
+    "1/2",
+    "3/8",
+    "1/4"
+  ],
+  "source_pole_residues": [
+    "1/2",
+    "-1/4",
+    "-1/8",
+    "-1/8"
+  ],
+  "source_cross_ratio": "8/5",
+  "elliptic_double_cover_j": "470596/225",
+  "weighted_source_16_power_residue": "-1/8",
+  "source_infinity_log_cancel": "(+log N/8)+(-log N/8)",
+  "source_finite_part": "gamma/8+5*log(2)/16-3*pi/32-log(1+sqrt(2))/8",
+  "source_affine_two_step_order_defect": "12301/273",
+  "horizons": [
+    {
+      "n": 1,
+      "U_n": "47/15",
+      "A_n": "47/240",
+      "source_residue_sum": "-47/240",
+      "infinity_residue": "0",
+      "residue_balance": "0"
+    },
+    {
+      "n": 2,
+      "U_n": "205826/4095",
+      "A_n": "102913/524160",
+      "source_residue_sum": "-102913/524160",
+      "infinity_residue": "0",
+      "residue_balance": "0"
+    },
+    {
+      "n": 3,
+      "U_n": "615863723/765765",
+      "A_n": "615863723/3136573440",
+      "source_residue_sum": "-71077185919/401481400320",
+      "infinity_residue": "-10125/524288",
+      "residue_balance": "0"
+    },
+    {
+      "n": 4,
+      "U_n": "1428806141948/111035925",
+      "A_n": "357201535487/1819212595200",
+      "source_residue_sum": "-284204605935563/1862873697484800",
+      "infinity_residue": "-734625/16777216",
+      "residue_balance": "0"
+    },
+    {
+      "n": 5,
+      "U_n": "16071212445820879/78058255275",
+      "A_n": "16071212445820879/81850013083238400",
+      "source_residue_sum": "-339876919747539984947/2682061228711555891200",
+      "infinity_residue": "-2392374375/34359738368",
+      "residue_balance": "0"
+    },
+    {
+      "n": 6,
+      "U_n": "80827484660698633414/24536311574775",
+      "A_n": "40413742330349316707/205825499566650163200",
+      "source_residue_sum": "-5446007521984415084211683/53955919758399940381900800",
+      "infinity_residue": "-209820148875/2199023255552",
+      "residue_balance": "0"
+    },
+    {
+      "n": 7,
+      "U_n": "4318127540987083098959311/81926744348173725",
+      "A_n": "4318127540987083098959311/21992042977697436637593600",
+      "source_residue_sum": "-6993104184477246651923388930169/92241313829528269278805386854400",
+      "infinity_residue": "-135711915829875/1125899906842624",
+      "residue_balance": "0"
+    }
+  ],
+  "authority": "paper derivations plus exact stdlib tests; not pi normality, Lean kernel or external referee"
+}

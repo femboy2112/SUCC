@@ -1,0 +1,29 @@
+{
+  "repository": "femboy2112/SUCC",
+  "parent_pr": 447,
+  "parent_head": "6fedcbe445f856878ecb1b1d9a0a84ad97a77e2e",
+  "parent_tree": "5f4300a78e4e6449b1bbee35f07f09d919da6d1d",
+  "main_observed": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+  "workspace": "standalone additive research package, NOT a full Git checkout",
+  "instructions_read": [
+    "AGENTS.md",
+    "docs/METHOD.md",
+    "docs/FOUNDATIONS.md"
+  ],
+  "upstream_apis_read": {
+    "observational_succ/operational_yoneda_descent.py": "1f918f47e0309ba7dc45f1fb5b63142928e9cd6e",
+    "observational_succ/noncommuting_proof_transport.py": "540b06fc09689f03d4ddb6c72a6e2c070901c1ff"
+  },
+  "inherited_source": "r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2); U0=0; U_n=16U_(n-1)+r(n)",
+  "source_cover": "R(z)=(8z-7)^4/((8z-4)^2(8z-3)(8z-2))",
+  "new": "two-frame source inverse; global three-frame embedding certificate; categorical and Fourier adapters",
+  "nonclaims": [
+    "pi normality",
+    "RH",
+    "physical quantum dynamics",
+    "new Lean/kernel theorem",
+    "external academic priority",
+    "independent external reviewer"
+  ],
+  "independence": "symbolic generation vs stdlib integer expansion and distinct reconstruction algorithms; same principal model and shared original source"
+}
