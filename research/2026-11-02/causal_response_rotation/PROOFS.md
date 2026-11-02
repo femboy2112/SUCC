@@ -156,6 +156,39 @@ This is an exact **representation equivalence**, not a newly proved o(N) estimat
 \(\Phi^{s0}_{N,h}(s)=\Phi^{0}_{N,h}(s+s0)\).
 Thus every Haar-averaged nonlinear statistic of intensity (all its integrated moments, distribution of values, etc.) is identical for the authentic seed and the coherent same-forcing counterseed \(s_*=-\pi/16\). An **uncalibrated** seed origin cannot select pi. Keeping the actual origin/anchor in CR-7 is essential.
 
+## 4B. CR-04B — same authentic four-pole source has BOTH normal and coherent seeds, yet identical global causal invariants (PROVED, classical existence)
+
+This makes the observer inadequacy decisive without assuming ANY currently open statement about pi.
+
+For original signed four poles, the completed zero-seed point is alpha=pi/16. The exact source Green tail gives
+\[
+U_n(s)=16^n(\alpha+s)-T_n,\qquad \sum_{n\ge1}|T_n|<\infty.
+\]
+Choose **one proven base-16 normal real number** c, such as the base-16 Champernowne constant (or simply use Borel's theorem that almost every real c is base-16 normal). Define
+\[
+s_{\rm normal}=c-\alpha,\qquad s_{\rm coh}=-\alpha.
+\]
+Then the SAME unchanged forcing r(n) yields
+\[
+U_n(s_{\rm normal})=16^n c-T_n,
+\qquad U_n(s_{\rm coh})=-T_n.
+\]
+The summable tail changes any fixed-h exponential Weyl sum by O_h(1), so the first orbit is rigorously base-16 equidistributed; the second has
+\(\lim_N N^{-1}\sum_{n\le N}e(hU_n(s_{\rm coh}))=1\)
+for every fixed h!=0 and is manifestly nonnormal.
+
+Yet their causal interference profiles are translations of each other:
+\[
+\boxed{\rho_N^{s_{\rm normal}}(s)=
+\rho_N^{0}(s+s_{\rm normal}),\quad
+\rho_N^{s_{\rm coh}}(s)=\rho_N^{0}(s+s_{\rm coh}).}\tag{CR-7a}
+\]
+Consequently **EVERY** statistic invariant under translation of the causal-intervention circle is exactly identical for a genuinely normal and genuinely nonnormal member of the SAME FOUR-POLE SOURCE CLASS at each N: all seed-integrated moments, full distributions of intensity values, absolute magnitudes of all Fourier coefficients and global weak-Haar conclusions. The source itself has not changed; ONLY the selected real seed did.
+
+This is an unconditional **source-matched obstruction**, stronger than a hypothetical "if pi is normal" comparison. It proves that global seed-translation invariant observations are insufficient to classify the normality of a marked initial condition. To prove pi normal one must supplement them with the authentic anchor U0=0 and a genuine seed-specific signed estimate. This does NOT refute the possibility that those additional data could establish normality.
+
+External classical normal-number existence: Borel's almost-everywhere normality theorem; constructive base-b Champernowne normality. No new normal-number result is claimed here.
+
 ## 5. CR-05 — exact exponential resolution boundary of an intensity-only causal observer (PROVED)
 
 For every latest time N>=1, the smallest absolute difference frequency involving z_N is
