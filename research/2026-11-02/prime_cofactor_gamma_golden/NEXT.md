@@ -1,5 +1,7 @@
 # Next verdict-changing attack: selected p-free real collision cap
 
+**STRONGER QUANTIFIER REDUCTION PGC-10:** the next genuine arithmetic discriminator is now just a single exact scalar **self-scale collision energy per dyadic epoch**: for each A=2^j let v_i(A)=#{A≤n<2A: floor(A*{U_n})=i}; prove sup_j A^(-1)Σ_i v_i(A)^2<∞. PGC-10 proves this implies the uniform all-mesh PGC-09 local source hypothesis (fine-to-coarse Cauchy), hence the square Fejér cap and π normality by #471. It is UNVERIFIED. Read [SELF_SCALE_PRIME_COLLISION.md](SELF_SCALE_PRIME_COLLISION.md) before pursuing the older broader (A,M) condition.
+
 **One exact all-L π proof target.** Let N=L², M=L+1, and construct α_N=A_N/D_N from the ORIGINAL signed four-pole BBP source, literal U₀=0. Form exact integers
 
 \[
