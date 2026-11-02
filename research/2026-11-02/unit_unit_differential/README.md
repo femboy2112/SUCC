@@ -23,6 +23,15 @@ H_{n,d}H_{n+1,d+1}-H_{n+1,d}H_{n,d+1}
 \]
 Thus the unit-time branch probability increases with time n and decreases with differential order d; this is a real source-dependent mixed Hessian. The coherent shadow satisfies it too, so this is a valid observer curvature/variance **diagnostic**, not a theorem about normal digits.
 
+## An actual differential as well as finite differences
+
+The positive Hausdorff density defines a canonical holomorphic continuation d(z) for Re z>−1/8, agreeing with the **finite rational** d_n at every integer. It is not a fictitious finite sum with a fractional upper index. For real z>−1/8 and all nonnegative orders a,b,
+\[
+(-1)^{a+b}\partial_z^a\Delta^b d(z)
+=\int_0^1x^z(-\log x)^a(1-x)^b\widetilde w(x)\,dx>0.
+\]
+The shadow/true ratio stays in [19/20,1] for every such mixed continuous/discrete derivative. The same holds for both source forcings. This is a genuine mixed **unit-SUCC × infinitesimal differential** hierarchy, with explicit analytic domain; it remains nonnormal as a selected real-circle shadow.
+
 ## Exact new arithmetic
 
 **Original source, every higher differential:** for every fixed epsilon>0, uniformly \(0\le d\le(3-\varepsilon)n\),
