@@ -1,0 +1,223 @@
+{
+  "status": "EXACT RATIONAL INTERVAL FINITE CERTIFICATES ONLY; π-NORMALITY OPEN",
+  "source": "literal unchanged original signed four-pole rational recurrence U0=0",
+  "preselected_N": [
+    768,
+    1536,
+    3072
+  ],
+  "preselected_h": [
+    9,
+    11,
+    17
+  ],
+  "preselected_Q": [
+    16,
+    256
+  ],
+  "target": "G_(N,Q)(h) < 2Q/N for all 18",
+  "method": "rational Machin arctan bounds; 2^19 binning; exact rational degree18 Taylor; rigorous (22/7)^19/19! remainder; outward 1e-9 enclosure",
+  "test_program": "conditional_interval.py (run unmodified on these N/h/Q)",
+  "locally_executed": "2026-11-02; 18/18 strict PASS; ~10.17s; same-session predeclaration, not blind",
+  "all_pass": true,
+  "results": [
+    {
+      "N": 768,
+      "h": 9,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 25441341,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 768,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 1.221184368
+    },
+    {
+      "N": 768,
+      "h": 9,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 344071933,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 768,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 1.032215799
+    },
+    {
+      "N": 1536,
+      "h": 9,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 11331052,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 1536,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 1.087780992
+    },
+    {
+      "N": 1536,
+      "h": 9,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 170416624,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 1536,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 1.022499744
+    },
+    {
+      "N": 3072,
+      "h": 9,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 6554911,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 3072,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 1.258542912
+    },
+    {
+      "N": 3072,
+      "h": 9,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 82917381,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 3072,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.995008572
+    },
+    {
+      "N": 768,
+      "h": 11,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 11736358,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 768,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.563345184
+    },
+    {
+      "N": 768,
+      "h": 11,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 345012004,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 768,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 1.035036012
+    },
+    {
+      "N": 1536,
+      "h": 11,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 9370552,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 1536,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.899572992
+    },
+    {
+      "N": 1536,
+      "h": 11,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 154447659,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 1536,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.926685954
+    },
+    {
+      "N": 3072,
+      "h": 11,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 4112497,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 3072,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.789599424
+    },
+    {
+      "N": 3072,
+      "h": 11,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 77743881,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 3072,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.932926572
+    },
+    {
+      "N": 768,
+      "h": 17,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 18581622,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 768,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.891917856
+    },
+    {
+      "N": 768,
+      "h": 17,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 321457378,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 768,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.964372134
+    },
+    {
+      "N": 1536,
+      "h": 17,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 9799550,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 1536,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.9407568
+    },
+    {
+      "N": 1536,
+      "h": 17,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 155920839,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 1536,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.935525034
+    },
+    {
+      "N": 3072,
+      "h": 17,
+      "Q": 16,
+      "rigorous_G_upper_numerator": 4111233,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 32,
+      "strict_threshold_denominator": 3072,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.789356736
+    },
+    {
+      "N": 3072,
+      "h": 17,
+      "Q": 256,
+      "rigorous_G_upper_numerator": 80170914,
+      "rigorous_G_upper_denominator": 1000000000,
+      "strict_threshold_numerator": 512,
+      "strict_threshold_denominator": 3072,
+      "pass": true,
+      "relative_upper_to_Q_over_N": 0.962050968
+    }
+  ]
+}
