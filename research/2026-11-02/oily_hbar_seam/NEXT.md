@@ -7,6 +7,10 @@
 3. The joint, signed REAL conditional cofiber energy G_(N,Q)(h) obeys |S_N(h)/N|²≤G_(N,Q)(h)≤1 and is NONDECREASING under finer Q. Thus improving local resolution does not automatically reduce the conditional real-phase energy.
 4. New predeclared N=768/1536/3072, h=9/11/17, Q=16/256: 18/18 authentic BBP finite strict interval certificates G<2Q/N, with actual opposite coherent and Thue–Morse changed-seed controls. No all-N signed estimate was proved.
 
+## Hostile update: a UNIVERSAL coefficient 2 is already refuted
+
+At original U0=0, N4096, Q16, posthoc exploratory harmonics 1203, 1800 and 3576 have RIGOROUS exact lower G/(Q/N) bounds 2.22338, 2.29695 and 2.25889 (>2). This refutes any argument claiming the predeclared 18 finite G<2Q/N examples support a literal universal all-N/all-h coefficient 2. Do not revive it. It does NOT address eventual fixed-h decay or a source-derived bound with h-dependent constants and slowly growing logs.
+
 ## One concrete analytic target: full ORIGINAL conditional cofiber correlation
 
 Freeze r(n)=4/(8n−7)−2/(8n−4)−1/(8n−3)−1/(8n−2), literal U0=0, exact unwrapped rational states, real phase e(hU_n). For Q|N, put L=N/Q. Then the exact within-carrier signed energy is
