@@ -12,11 +12,11 @@ python -m unittest discover -s tests -p 'test_causal_response_rotation.py'
 
 The standalone exact local script was executed after its final edits:
 ~~~text
-Ran 9 tests in 0.037s
+Ran 10 tests in 0.041s
 OK
 ~~~
 
-The 9 test methods prove finite regression identities **by exact integer/Fraction arithmetic**, with no floating trigonometry or pi digit inputs:
+The 10 test methods check finite regression identities **by exact integer/Fraction arithmetic**, with no floating trigonometry or pi digit inputs:
 
 - uniqueness of all nonzero causal b-power differences for b in {2,3,5,16}, multiple horizons;
 - complete original four-pole and coherent zero-seeded changed-source exact Fourier-intensity phase coefficients for h in {1,3,7} and N<=8;
@@ -29,7 +29,7 @@ The 9 test methods prove finite regression identities **by exact integer/Fractio
 - **new** rational Lagrange causal-differential projectors: modes b^n, moments of arbitrary rational coefficients, exact recovery of each coefficient from N+1 causal derivatives for N<=7 across b=2,3,16.
 
 The remote uploaded final exact source Git blob was fetched and **matches the actually executed local git hash**:
-causal_rotation_probe.py = 39d7c1e957772a8e754ccedda7f9f10dbbd21c69.
+causal_rotation_probe.py = 23510da129832cec6a9c338734270e44923785f0.
 
 These finite checks calibrate a proof; they do not establish infinite weak-Haar convergence, which is proved by the analytic Fourier/Stone-Weierstrass derivation in PROOFS.md.
 
