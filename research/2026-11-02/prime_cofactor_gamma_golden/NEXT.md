@@ -10,7 +10,7 @@ Prove **some** absolute finite C with \(\frac{M}{N^2}\sum_{j=0}^{M-1}c_j^2\le C\
 
 ## Program and falsification order
 
-1. **Prove pair coverage:** enumerate p≡1 mod8 clean windows [k+1,4k], plus #460 complementary prime families if appropriate. Establish which checkpoint pairs are covered and with what multiplicity. A dense family of times is not necessarily a dense family of pairs.
+1. **UPDATED by [PGC-09](DYADIC_PRIME_GLUING.md):** classical PNT-AP proves every sufficiently large dyadic time epoch [A,2A) is contained in a genuine p=8k+1 clean window. A deterministic ℓ² Minkowski gluing theorem handles cross-epoch pairs, so **do not** expend effort on covering every ordered pair. Instead prove the source-selected local bin bound Σ_j u_j(A,M)² ≤ C(A²/M+A) uniformly on dyadic A and growing M≤A.
 2. **Keep the true real cofactor:** within a clean p interval write B_t−B_s=A/Q (p∤Q) and count, on actual original U, integer events
 \[
  M\min_{\ell\in\mathbb Z}|4(16^t-16^s)Q+pA-\ell pQ|\le pQ.
@@ -22,4 +22,4 @@ Preserve complete signed four-pole data, original zero seed, integer carry and A
 6. **Gamma/golden:** use proved \(T_n<D_n^2/16\) for certified real-phase transport on Fibonacci scales. Test whether the genuine cubic residual supplies an extra signed inequality, and if not record that it does not. Do not identify γ with φ⁻¹.
 7. **Alternate route:** compare #468 dyadic signed aggregate Haar-loss criterion and #469 local 16-adic Haar/real-cofiber firewall; neither is independent evidence for the other premise.
 
-**PASS:** authentic zero-seeded all-horizon integer collision or Fejér cap and consequent Weyl. **PARTIAL:** source-selected cofactor near-pair bound on unbounded windows with provable fraction of checkpoint pairs covered. **FAIL:** positive Γ, high conductor, Galois mean, one finite certificate, or harmonic shell η/η² offered as signed cancellation. The remaining lamp is selected cofactor arithmetic plus proven covering.
+**PASS:** authentic zero-seeded all-horizon integer collision or Fejér cap and consequent Weyl. **PARTIAL:** source-selected cofactor near-pair bound on unbounded windows with provable fraction of checkpoint pairs covered. **FAIL:** positive Γ, high conductor, Galois mean, one finite certificate, or harmonic shell η/η² offered as signed cancellation. The remaining lamp is the ORIGINAL selected real p-cofactor *local* dyadic histogram estimate (PGC-09); dyadic epoch prime coverage and global ℓ² gluing have now been PROVED, conditionally on that missing estimate.
