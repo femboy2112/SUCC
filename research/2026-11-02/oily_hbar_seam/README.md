@@ -31,7 +31,20 @@ An exact local Fourier Parseval formula shows that G is a **joint local residue 
 
 **18/18 strict certified PASS** by actual exact Fraction original signed source, rigorous Machin interval, dyadic phase grid 2^19, degree18 rational sin/cos Taylor and outward error. Largest rigorous upper ratio G/(Q/N) = **1.258542912** at N3072,h9,Q16. Separate combined rational source and floating trig oracle reproduces all values under the rigorous upper bounds; float is NOT authority.
 
-These finite results do not extrapolate to all N/h/Q, nor prove the conditional sufficient theorem. The 2^19 grid in the trig oracle is an *Archimedean numerical phase precision*, NOT the source 16-adic \(\hbar\) dimension.
+These finite results do not extrapolate to all N/h/Q, nor prove the conditional sufficient theorem.
+
+### A decisive POST-HOC FALSIFIER of the naïve universal coefficient 2
+
+After those eighteen predeclared PASS cases, an exploratory scan at N=4096, Q=16, h=1..4096 found three source-authentic violations of \(G<2Q/N\). They were then confirmed by **exact rational LOWER bounds**, not by the discovery scan's float values:
+\[
+\begin{array}{c|r}
+h & \text{rigorous lower for } G/(Q/N)\\
+1203&2.223383997\\
+1800&2.296954454\\
+3576&2.258894761
+\end{array}
+\]
+All exceed the proposed ceiling 2. Thus **the all-N/all-h universal coefficient 2 is REFUTED for the ORIGINAL four-pole zero seed**. The new harmonics were chosen after exploration—NOT preregistered. This finite negative does not refute an eventual h-fixed inequality, the weaker source-dependent \(C_h(\log N)^{A_h}\) bound, or π normality. See [posthoc_falsifier.py](posthoc_falsifier.py), [POSTHOC_FALSE_BOUND.json](POSTHOC_FALSE_BOUND.json), and [exploratory_scan.py](exploratory_scan.py). The 2^19 grid in the trig oracle is an *Archimedean numerical phase precision*, NOT the source 16-adic \(\hbar\) dimension.
 
 ## Reproduction
 
