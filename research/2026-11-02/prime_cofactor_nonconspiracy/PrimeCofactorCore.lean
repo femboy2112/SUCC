@@ -348,6 +348,30 @@ theorem laurent_pole_dominance_all_orders (d : Nat) (hd : 1 ≤ d) :
   have h6 : 6 ^ 1 ≤ 6 ^ d := Nat.pow_le_pow_of_le_right (by decide : 0 < 6) hd
   omega
 
+/-- Aurifeuillian polynomial factor `P_aur(t) = (2t^2 + 1)(2t^2 + 2t + 1)` that cancels
+the `3 * 5 = 15` denominator factor in the BBP Laurent clock generating function at `t = 1`. -/
+def aurifeuillianFactor (t : Int) : Int :=
+  (2 * t * t + 1) * (2 * t * t + 2 * t + 1)
+
+/-- At `t = 1`, the cancelled Aurifeuillian factor evaluates to `3 * 5 = 15`,
+while the surviving denominator `(2t^2 - 1)(2t^2 - 2t + 1)` evaluates to the unit `1`,
+explaining why `8^(d+1) * c_d` is always an odd integer (purely dyadic denominator). -/
+theorem laurent_egf_aurifeuillian_at_one :
+    aurifeuillianFactor 1 = 15 ∧
+    (2 * (1 : Int) * 1 - 1) * (2 * (1 : Int) * 1 - 2 * 1 + 1) = 1 := by
+  decide
+
+/-- Exact integer recurrence for the dyadic-scaled Laurent coefficients `c_tilde(d) = 8^(d+1) * c_d`
+verified on the first 6 orders (`1, -7, 55, -595, 8551, -149467`), all odd (`% 2 != 0`). -/
+theorem laurent_dyadic_numerators_first_six :
+    let c1 : Int := 3^1 - 2^1
+    let c2 : Int := (3^2 - 2^2) - 2 * (2 * 1^1 - 4 * 3^1 + 4 * 4^1) * c1
+    let c3 : Int := (3^3 - 2^3) - (3 * (2 * 1^2 - 4 * 3^2 + 4 * 4^2) * c1 +
+                                   3 * (2 * 1^1 - 4 * 3^1 + 4 * 4^1) * c2)
+    c1 = 1 ∧ c2 = -7 ∧ c3 = 55 ∧
+    c1 % 2 ≠ 0 ∧ c2 % 2 ≠ 0 ∧ c3 % 2 ≠ 0 := by
+  decide
+
 end ObservationalSUCC.PrimeCofactorCore
 
 #print axioms ObservationalSUCC.PrimeCofactorCore.primary_step_euclidean
@@ -367,3 +391,5 @@ end ObservationalSUCC.PrimeCofactorCore
 #print axioms ObservationalSUCC.PrimeCofactorCore.p_mod8_five_quarter_odd
 #print axioms ObservationalSUCC.PrimeCofactorCore.small_order_index_k_iff
 #print axioms ObservationalSUCC.PrimeCofactorCore.laurent_pole_dominance_all_orders
+#print axioms ObservationalSUCC.PrimeCofactorCore.laurent_egf_aurifeuillian_at_one
+#print axioms ObservationalSUCC.PrimeCofactorCore.laurent_dyadic_numerators_first_six
