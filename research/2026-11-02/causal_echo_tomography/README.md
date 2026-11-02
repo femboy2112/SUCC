@@ -22,6 +22,12 @@ For the explicit polynomial bump with M=4 and rational epsilon, the perturbed fo
 \]
 This is an exact rational finite example of **small, late source echo → macroscopic real-circle phase difference**. There is no claim that this particular rational-ε source is nonnormal; its completed normality is NOT classified.
 
+## General categorical observability criterion — the source-kernel lamp
+
+For ANY finite list of linear source measurements \(L_i(\mu)=\int\phi_i(x)d\mu(x)\) on an interval inside (0,1), the completed boundary \(A(\mu)=\int(16-x)^{-1}d\mu\) is determined by those observations on the full measure class **if and only if** the resolvent weight \(1/(16-x)\) belongs to the linear span of the measured weights \(\phi_i\). Otherwise a smooth, compactly supported source perturbation can annihilate *all* those measurements, preserve positivity with arbitrarily small all-jet relative error, and change the completion.
+
+This includes ANY FINITE set of Pascal/Newton and ordinary analytic source-time derivative moments, whose weights are polynomial/log-power functions with no pole at x=16. It does **not** cover nonlinear observers automatically. It is the explicit weight-kernel incarnation of SUCC #423's exact categorical arrow test, not an academic novelty or a theorem that mathematical proof from a known complete four-pole law is impossible.
+
 ## Exact observer-map arrow
 
 For source measure μ define the finite local history \(q_M(\mu)=(\int x^j d\mu)_{j=0}^{M-1}\) and the completed boundary \(A(\mu)=\int d\mu/(16-x)\). Our ψ_M has q_M(ψ_Mdx)=0 but A(ψ_Mdx)≠0. Hence A **does not factor through** q_M, even with all pole/principal-part and all asymptotic observers appended. This explicitly instantiates SUCC #423's categorical fiber/ker inclusion criterion.
