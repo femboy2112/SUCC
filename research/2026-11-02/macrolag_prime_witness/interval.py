@@ -9,6 +9,7 @@ from fractions import Fraction as F
 from math import factorial, isqrt
 import json
 import time
+from pathlib import Path
 
 Q=2**19   # phase resolution
 SCALE=10**9
@@ -90,5 +91,5 @@ if __name__=='__main__':
         out['results'].append(rr)
         print(p, {h:(v['upper_decimal'],v['pass']) for h,v in rr['harmonics'].items()},rr['seconds'],flush=True)
     out['elapsed_seconds']=round(time.monotonic()-t,3)
-    with open('/mnt/data/succ_macrolag/window_receipt.json','w') as f:json.dump(out,f,indent=2)
+    with open(Path(__file__).with_name('FINITE_WINDOWS_RAW_4000.json'),'w') as f:json.dump(out,f,indent=2)
     assert all(v['pass'] for r in out['results'] for v in r['harmonics'].values())
