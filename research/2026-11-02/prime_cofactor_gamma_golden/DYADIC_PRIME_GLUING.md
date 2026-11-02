@@ -104,3 +104,7 @@ PGC-05 bounds the original \(\mathscr Q_L\) by \((3+\pi^2/12)\) times this integ
 - **Falsifier:** find unbounded dyadic epochs with selected original \(u(A,M)^2\) substantially above \(A^2/M+A\), at meshes \(M\lesssim A\). Any proposed uniform local C is then false; a slower-growing admissible mesh, sparse-mesoscopic dissipation, or a different norm may still work.
 
 This is a proof-producing **route reduction**, not a proof of the local premise. It retains complete p-free cofactor, real embedding, original four signed poles and causal zero seed. The strong exact \(\gamma\)-defect bound PGC-06 ensures Gamma transport without phase smearing; it contributes no missing local collision saving.
+
+## VI. PGC-10 subsequently compresses the open all-M quantifier
+
+See [SELF_SCALE_PRIME_COLLISION.md](SELF_SCALE_PRIME_COLLISION.md). A universal fine→coarse bin identity shows that a single uniform bound on the **self-resolution** original state histogram — A points [A,2A) in A equal bins — implies OPEN-LOCAL-COLLISION at all M≤A (with an absolute multiplicative constant). The open input to this dyadic gluing theorem is now equivalently one exact scalar per dyadic A, rather than a family of independently hypothesized meshes. This simplification does NOT supply the required all-A arithmetic estimate. Wrong completed real seed 1/5 has self-scale collision energy A, so the condition is indeed source-selected.
