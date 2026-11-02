@@ -33,6 +33,8 @@ causal_rotation_probe.py = 39d7c1e957772a8e754ccedda7f9f10dbbd21c69.
 
 These finite checks calibrate a proof; they do not establish infinite weak-Haar convergence, which is proved by the analytic Fourier/Stone-Weierstrass derivation in PROOFS.md.
 
+**Later new exact solenoid test:** the same exact script was extended from 9 to **10** unittest methods, final local run **10/10 PASS** (0.041 seconds). The added method checks rational compatible inverse-limit towers for b=2,3,16, the explicit loss of inverse branch at circle coordinate zero, forward/backward solenoid coordinate shifts and exact Fourier-character q-commutation D_h C_b=b C_b D_h. Updated final tested Git blob SHA: 23510da129832cec6a9c338734270e44923785f0. The earlier 9-method receipt is historical, not the current final exact version.
+
 ## 2. Independent numerical direct-seed quadrature
 
 A separate implementation does **not** use the difference-pair expansion to calculate the intensity Fourier coefficients. It directly samples the seed circle, evaluates the complex superposition and nonnegative intensity, and integrates via a Nyquist-sufficient equally spaced grid. The original orbit is built from literal four signed rational terms; the coherent shadow from its separately declared source truncation.
