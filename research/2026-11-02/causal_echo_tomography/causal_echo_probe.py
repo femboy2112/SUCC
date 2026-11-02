@@ -154,6 +154,24 @@ class CausalEchoTests(unittest.TestCase):
             self.assertLess(t,F(63,80)**n)
             self.assertEqual(state(n,r_atomic),16**n*q-t)
 
+    def test_same_prefix_cosmic_causal_field_and_fourier(self):
+        # Equal exact U_1..U_M means every phase, causal seed response,
+        # intensity Fourier coefficient and matched reference is identical.
+        M=4
+        _,eps,_=echo_profile(M)
+        models=(lambda n:delta_step(n,M,eps),r_atomic)
+        for alt in models:
+            for h in (1,3,7):
+                for n in range(1,M+1):
+                    self.assertEqual((h*state(n,alt))%1,(h*state(n,source))%1)
+                for n in range(1,M+1):
+                    for m in range(1,M+1):
+                        angle=(h*(state(n,alt)-state(m,alt)))%1
+                        orig=(h*(state(n,source)-state(m,source)))%1
+                        self.assertEqual(angle,orig)
+            self.assertNotEqual(state(5,alt)-state(5,source),0)
+            self.assertNotEqual((state(5,alt)-state(5,source))%1,0)
+
     def test_positive_source_alpha_prefix_bound(self):
         # For any measures with same first M moments and mass r1,
         # |alpha1-alpha2| <= 2*r1/(15*16^M).
