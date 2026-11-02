@@ -43,6 +43,15 @@ The first exact-rational atomic test asserted a false over-tight bound \(T_n<(1/
 
 **New generalized weight-span theorem (CE-05B):** paper proof uses independent continuous evaluation functions and k+1 disjoint smooth compact bumps to construct a finite linear-system nullspace witness. This is a mathematical finite-dimensional linear algebra / approximation argument, NOT an unperformed numerical general-rank experiment. The original explicit ψ_M test is its polynomial-source special case. The theorem is for finitely many LINEAR source observables; it is not a claim of arbitrary nonlinear or exact four-pole model indistinguishability.
 
+## Root-discoverable integration adapter, staged verified
+
+The NEW root adapter tests/test_causal_echo_tomography.py was also placed in a local miniature checkout with the exact locally tested source under its correct relative research/ path. The command
+\[
+\texttt{python -m unittest discover -s tests -p 'test_causal_echo_tomography.py' -v}
+\]
+executed **9/9 PASS** (0.681 seconds), with all methods discovered and no import/path skip. GitHub re-fetch matched the executed adapter's local Git hash:
+tests/test_causal_echo_tomography.py = 7d6678def3f1de81d335659c6e1aeb8a04ccfdb5 (**MATCH**). This is a *staged adapter test*, NOT a claim to have executed the full actual SUCC checkout.
+
 ## Paper proof versus finite checks
 
 The quantified arbitrary-M compact ψ_M bump, pointwise 95%-105% density inequality, all-(n,d) complete monotonicity, entire time correction, and norm/normality control are **paper derivations** in PROOFS.md. They do not follow from M<=6 test loops. The arbitrary-M rational-positive quadrature theorem uses the rational interior convex-hull argument; the independent exact M=4 example only checks an instance. A known base16 normal q is selected by a classical rational translate of Champernowne; the parameter ε may be irrational, so the altered normal/nonnormal source *is not necessarily rational valued*.
