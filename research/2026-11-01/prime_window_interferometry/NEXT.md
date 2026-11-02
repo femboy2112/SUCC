@@ -1,0 +1,11 @@
+# Verdict-changing next research probes
+
+**Priority 0: a genuinely NEW original-source mixed estimate.** Work with `p=8k+5` and `W_p=sum_(n=k+1)^(4k+2) e(hU_n)`. A successful argument must prove either `Q_h(X)=o_h(X^3/log X)` for each fixed nonzero h, or a sufficiently dense set of windows with `W_p=o_h(p)`. Do not count prime density, source period, positivity of the Gram, or the all-seed algebraic identity as an estimate: PWI-02/03 show the first two mean-zero criteria are universal.
+
+**Priority 1: source cofactor arithmetic.** Use the exact edge isolation `f4` to derive a *source-bound* on the mixed cross-term, not an assumed statistical independence of `e(-h16^j/p)` and `e(hV_(p,n))`. Test primal `p≡5 mod8` with t=(p-1)/(4ord_p16) in `{1,3,9,...}`, including small subgroup-order exceptions. Apply BGK only to actual additive characters on multiplicative subgroups, not arbitrary time-weighted cofactors. If proposing bilinear decoupling, list its needed rank, smoothing, and source-regularity assumptions and check them against exact rational residues.
+
+**Priority 2: hostile holdouts.** The same-source irrational counterseed `s=-pi/16` yields coherent actual phases even though the source poles and period are the same. The p-free spoof proves that the cofactor's p-integrality cannot alone give cancellation; PR #459 p=257 demonstrates isolated-clock coherence, while p=373,h=1 in this dossier shows full cofactor can *increase* a prime-clock amplitude. Test exact recent-source positive mutants, 3-channel triple-lock, Galois tracing and high-alias controls.
+
+**Priority 3: certify and validate.** Rerun this branch's standalone 12 unittest cases plus the 15 Fraction interval cases, check independent source/convolution, then run genuine >11k suite, provenance/foundations/ordinal and hosted CI only on an actual checkout (NOT claimed here). Give any new analytic lemma a domain, sign/carry transport rule, falsifier, and independent formal proof/Lean receipt as appropriate.
+
+**Success:** a source-specific inequality that excludes the coherent controls and implies the mixed little-o; **partial:** a mathematically proved power- or logarithmic-saving on a genuine cofactor-dependent subexpression under checkable conditions; **failure:** a universal/seed-blind reformulation or uncertified extrapolation from finitely many primes.
