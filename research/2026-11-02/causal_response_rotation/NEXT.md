@@ -11,6 +11,10 @@ Retain the original signed four-pole BBP r(n), literal U0=0, unwrapped exact rat
 \]
 That would imply base16 pi normality, but is **currently only a representation of the Weyl gate**. Proving it by citing weak-Haar convergence, flat causal spectra, high-order seed-integrated moments, positive source jets or all-lag p-conductor is invalid; each of those also holds for coherent nonnormal controls.
 
+## Higher-order causal SOURCE interventions
+
+The initial-seed susceptibility ∂_s U_n=16^n is universal to every source. To get beyond that seed-blind axis, introduce a labelled intervention at each exact forcing step r_j: on any finite horizon \(J_{n,j}=\partial U_n/\partial r_j=16^{n-j}1_{j\le n}\). The exact causal Green difference \((E-16)J_{n,j}=\delta_{n+1,j}\) identifies the impulse-birth time and restores original four-pole labels. A future multi-intervention Fourier/jet readout must still preserve the selected REAL phase and prove a new signed bound, not simply re-express the invertible lower-triangular source map. Test against the same-source coherent changed seed and the zero-seeded positive matched-jet changed source.
+
 ## Most promising next discriminator
 
 1. Work in the exponentially shrinking marked seed aperture, not the whole seed Haar orbit. Expand the aperture's positive real intensity into the exact joint time-pair phase e(h(U_n−U_m)) with an explicitly controlled sinc kernel at frequencies h(16^n−16^m). Seek a NEW original-source signed bound on a well-defined cofactor-dependent subset of those correlations (use #460's prime-born cofactor and exact U0=0; do not assume prime/cofactor independence).
