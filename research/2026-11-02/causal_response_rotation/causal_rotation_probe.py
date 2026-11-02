@@ -136,6 +136,34 @@ class CausalResponseTest(unittest.TestCase):
                 self.assertEqual(mod_one(seq(n+1)-seq(n)),
                                  mod_one(15*seq(n)+forcing(n+1)))
 
+    def test_causal_differential_lagrange_phase_projectors(self):
+        # Exact polynomial functional calculus in D_h = (2*pi*i*h)^-1 d/ds.
+        # The k-th causal moment is sum_j (b^j)^k z_j, with arbitrary z_j.
+        for b in (2,3,16):
+            for N in range(1,8):
+                lam=[b**j for j in range(N+1)]
+                coeffs=[Q(j+2,j+3) for j in range(N+1)]
+                moments=[sum((Q(lam[j]**k)*coeffs[j]
+                             for j in range(N+1)),Q(0)) for k in range(N+1)]
+                for n in range(N+1):
+                    poly=[Q(1)]
+                    for m in range(N+1):
+                        if m==n:continue
+                        factor=Q(1,lam[n]-lam[m])
+                        nxt=[Q(0)]*(len(poly)+1)
+                        for k,c in enumerate(poly):
+                            nxt[k]-=c*factor*lam[m]
+                            nxt[k+1]+=c*factor
+                        poly=nxt
+                    self.assertEqual(len(poly),N+1)
+                    for j in range(N+1):
+                        evaluation=sum((c*lam[j]**k
+                                        for k,c in enumerate(poly)),Q(0))
+                        self.assertEqual(evaluation,int(n==j))
+                    recovered=sum((poly[k]*moments[k]
+                                   for k in range(N+1)),Q(0))
+                    self.assertEqual(recovered,coeffs[n])
+
     def test_exponential_causal_resolution_floor(self):
         for b in (2,3,16):
             for N in range(1,9):
