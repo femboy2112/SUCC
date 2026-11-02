@@ -191,3 +191,28 @@ Finite all-exact source witness: the first 256 original states give exactly 16 o
 - Bailey/Borwein/Plouffe, Math. Comput. 66 (1997), 903–913, https://doi.org/10.1090/S0025-5718-97-00856-9 .
 
 The test suite checks exact finite statements; the all-horizon claims come from the displayed derivations and classical irrationality input, NOT finite computation or Lean kernel checking.
+
+
+## HBR-08. Explicit 10n-level source-bounded rational hbar→real reconstruction (PROVED)
+
+There IS a source-conditioned finite 2-adic→Archimedean arrow once the authentic rational HEIGHT is admitted. This is stronger than merely certifying finite circles by directly evaluating the BBP series: the input is a local residue, and the output is the entire rational time state.
+
+For n>=1 put \(L_n=\operatorname{lcm}(1,\ldots,8n)\), \(Q_n=16^{10n}\), and \(H_n=16^nL_n\). Each of the four original signed source-pole denominators at times j<=n is an integer between 1 and 8n. Because U_n is an integer-weighted sum of those fractions, its reduced positive denominator B_n DIVIDES L_n; the original source positivity and real completion imply \(0<U_n<16^n\), so its reduced numerator A_n satisfies \(0<A_n<H_n\). The reduced B_n is odd.
+
+Import the **elementary** classical LCM bound \(\operatorname{lcm}(1,\ldots,m)\le4^m\), for which a formally checked combinatorial proof is given by Chan–Norrish, *Bounding Least Common Multiples with Triangles*. Hence \(L_n\le4^{8n}=2^{16n}\) and, for every n>=1,
+\[
+\boxed{Q_n=16^{10n}=2^{40n}> 2\cdot16^nL_n^2=2H_nL_n,}
+\]
+because \(2H_nL_n\le2^{36n+1}<2^{40n}\).
+
+Now let \(a_n=U_n\bmod Q_n\) be its authenticated source-local 2-adic residue. **Theorem:** among ALL rationals A/B with |A|<H_n, 1<=B<=L_n, B odd, and \(A B^{-1}\equiv a_n\pmod{Q_n}\), there is EXACTLY ONE, namely the true \(U_n\).
+
+Proof: for any two such rational candidates A/B and C/D, the congruence implies \(Q_n\mid AD-BC\), but \(|AD-BC|<2H_nL_n<Q_n\). Thus AD=BC, so the rational values are equal. Existence is supplied by the genuine U_n. A finite bounded search is a constructive inverse; classical extended-Euclidean rational reconstruction can compute it more efficiently, with source-labeled numerator/denominator constraints and exact postverification.
+
+**All finite history, one scale.** At a given horizon N, the single carrier \(Q=16^{10N}\) and bounds \(H=16^NL_N\), \(B\le L_N\) work for EVERY n<=N, since all earlier source denominators and heights are smaller. Therefore a finite carrier report at resolution \(\theta_{10N}=2\pi/16^{10N}\), plus certified original four-pole height class, determines ALL exact rational states U_0,...,U_N and their real-circle characters. It does NOT directly certify the infinite limiting digit frequencies.
+
+**Actual exact computation:** 200/200 authentic BBP rational states (n=1..200) were recovered by a Euclidean rational reconstruction algorithm from their 16^(10n) local residues, without passing the source state numerator to that decoder. Additional original source odd-denominator and wrong-residue controls pass. A separate earlier local oracle also reconstructed 59/59 states using a less efficient denominator-product height bound. All use Python Fraction and integer arithmetic, no decimal pi digits.
+
+**No contradiction with the 2-adic→real topology no-go.** This decoder is restricted to an expanding bounded-height subset of \(\mathbb Z_2\cap\mathbb Q\) and its demanded precision grows with the time horizon. It is not a single uniform continuous map \(\mathbb Z_2\to\mathbb R/\mathbb Z\). Importantly, the finite-carry Haar estimate of HBR-01 is useful when \(r(N)\lesssim\log_{16}N\), whereas this exact source-bounded decoding uses r=10N. **For large N these two resolution regimes DO NOT OVERLAP.** This is the exact, paid precision barrier between finite-carrier Haar and infinite selected real normality.
+
+Classical LCM citation: Chan and Norrish, *Bounding Least Common Multiples with Triangles*, Journal of Automated Reasoning (2019), formally verifies the elementary inequality LCM(1,...,m)<=4^m, https://trustworthy.systems/publications/full_text/Chan_Norrish_19.pdf ; no mathematical priority asserted for LCM/rational reconstruction.
