@@ -60,6 +60,7 @@ python research/2026-11-02/unit_unit_differential/unit_unit_exact_probe.py
 python -m unittest discover -s tests -p 'test_unit_unit_differential.py'
 # Optional (mpmath):
 python research/2026-11-02/unit_unit_differential/moment_independent_oracle.py
+python research/2026-11-02/unit_unit_differential/analytic_differential_oracle.py
 # Required repo-wide gates from AGENTS.md:
 python scripts/verify_provenance.py
 python -m unittest discover -s tests -p 'test_*.py'
