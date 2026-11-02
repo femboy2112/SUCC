@@ -43,6 +43,8 @@ The first exact-rational atomic test asserted a false over-tight bound \(T_n<(1/
 
 **New generalized weight-span theorem (CE-05B):** paper proof uses independent continuous evaluation functions and k+1 disjoint smooth compact bumps to construct a finite linear-system nullspace witness. This is a mathematical finite-dimensional linear algebra / approximation argument, NOT an unperformed numerical general-rank experiment. The original explicit ψ_M test is its polynomial-source special case. The theorem is for finitely many LINEAR source observables; it is not a claim of arbitrary nonlinear or exact four-pole model indistinguishability.
 
+**Exact relative-period theorem (CE-05C):** the same symbolic positive integral β_M from CE-02 yields the endpoint primitive difference. This is a paper-level 1D de Rham boundary statement, NOT a separately executed Lean cohomology verification or new physical curvature. The original endpoint-vanishing AC-13 identity is an inherited #452 theorem; our intentionally changed source has nonzero endpoint period.
+
 ## Root-discoverable integration adapter, staged verified
 
 The NEW root adapter tests/test_causal_echo_tomography.py was also placed in a local miniature checkout with the exact locally tested source under its correct relative research/ path. The command
