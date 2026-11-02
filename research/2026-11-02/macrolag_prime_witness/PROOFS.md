@@ -155,7 +155,7 @@ Choose beta=4/(12+log16)=0.27077177028411376... . Use (10) below ell=beta*m, and
 \]
 The theta errors are uniform in the proportional-window cases. This proves (9). QED.
 
-**Verdict:** the coherent *positive, zero-seeded* changed source satisfies an even stronger uniform lower bound on denominator growth of all time differences than the certified bound (1) for the original source. One must not infer that the two true optimal constants are ordered, only that these respective **proved lower bounds** are. Therefore, exponential denominator growth, rationality, and even all-order source asymptotics do not imply ANY nontrivial fixed-frequency real cancellation. The source's exponentially small entire remainder is a real selection datum.
+**Verdict:** the coherent *positive, zero-seeded* changed source also has eventually pairwise distinct phases at every fixed nonzero h (its witnessing primes are >|h|), yet all of those distinct phases converge to the SAME point e(2h/15). It satisfies an even stronger uniform lower bound on denominator growth of all time differences than the certified bound (1) for the original source. One must not infer that the two true optimal constants are ordered, only that these respective **proved lower bounds** are. Therefore, exponential denominator growth, rationality, and even all-order source asymptotics do not imply ANY nontrivial fixed-frequency real cancellation. The source's exponentially small entire remainder is a real selection datum.
 
 **Additional same-four-pole counterseed:** s_*=-pi/16 (not rational) gives U_n(s_*)=-T_n, with the original source and \(0<T_n<(8n+1)^{-2}\). The identical window inequality (8), with limit phase 1, holds for this changed seed. This rules out a seed-blind signed theorem.
 
@@ -185,7 +185,7 @@ In the SAME windows and for the SAME h, the zero-seeded positive changed-source 
 **Next verdict-changing probe:** identify a theorem involving the **complete exact original source and real selected boundary**, not just all-order coefficients, that bounds the Archimedean signed cofactor/prime interaction on all large p=5 mod8 windows. It must fail on the two coherent controls and distinguish complete source from matched asymptotic shadow. The current p-window energy criterion (PWI-03) is an equivalence, not such a bound.
 
 ### External/classical references
-- Prime number theorem in arithmetic progressions: standard theta(x;4,1)=x/2+o(x); e.g. https://www.math.tau.ac.il/~rudnick/courses/sieves2015/BrunTitchmarsh.pdf (survey/context; PNT-AP used as a theorem, not proved here).
+- Prime number theorem in arithmetic progressions: exact weighted theta(x;4,1)=x/2+o(x), stated as Theorem 6.1.1 in https://alexkontorovich.github.io/PrimeNumberTheoremAnd/blueprint/corollaries-chapter.html and in analytic number theory notes https://www.homepages.ucl.ac.uk/~ucahpet/IANTnotes2018.pdf (PNT-AP is imported classical mathematics, not proved here).
 - Original BBP source and single-prime births: SUCC #459, PROOFS.md SPP-01/02.
 - Prime-window equivalences, genuine weighted cofactor and controls: SUCC #460, PROOFS.md PWI-01..08.
 - Positive zero-seeded all-order coherent shadow: SUCC #421, ALL_ORDER_SHADOW.md, construction M=0,K=1.
