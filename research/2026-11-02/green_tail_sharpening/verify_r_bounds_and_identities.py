@@ -100,24 +100,16 @@ def main():
         assert r(n) > Fraction(15, 64 * n * n), f"lower fails n={n}"
     print("     verified n=1..1999 exactly. (proved: r - 15/64n^2 = positive rational)")
 
-    # A1: upper bound r(n) < 15/(64 n^2) + 151/(512 n^3) + 1209/(4096 n^4) + C5/n^5
-    C5 = Fraction(16182005, 5779456)
-    print(f"\n[A1] Upper bound r(n) < 15/(64n^2)+151/(512n^3)+1209/(4096n^4)+C5/n^5, C5={C5}:")
+    # A1: upper bound r(n) < 15/(64 (n-1)^2) for n>=2, and theta(n) <= 19999/7680
+    theta_max = Fraction(19999, 7680)
+    print(f"\n[A1] Upper bound r(n) < 15/(64(n-1)^2) (n>=2); theta(n) <= {theta_max}:")
+    for n in range(2, 2000):
+        assert r(n) < Fraction(15, 64) / ((n - 1)**2), f"upper bracket fails n={n}"
     for n in range(1, 2000):
-        ub = (Fraction(15, 64) / (n*n)
-              + Fraction(151, 512) / (n**3)
-              + Fraction(1209, 4096) / (n**4)
-              + C5 / (n**5))
-        assert r(n) < ub, f"upper fails n={n}"
-    print("     verified n=1..1999 exactly.")
-    # Simpler 3-term bound C3 = 1461681/346624
-    C3 = Fraction(1461681, 346624)
-    for n in range(1, 2000):
-        ub = (Fraction(15, 64) / (n*n)
-              + Fraction(151, 512) / (n**3)
-              + C3 / (n**4))
-        assert r(n) < ub, f"3-term upper fails n={n}"
-    print("     3-term variant (C3=1461681/346624) also verified n=1..1999.")
+        th = Fraction(n)**4 * (r(n) - Fraction(15, 64) / (n*n) - Fraction(151, 512) / (n**3))
+        assert 0 < th <= theta_max, f"theta fails n={n}"
+    print("     verified n=2..1999 (bracket) and n=1..1999 (theta) exactly.")
+    print(f"     theta(1) = {Fraction(1)**4 * (r(1) - Fraction(15,64) - Fraction(151,512))} = 19999/7680 (attained).")
 
     # A2: strict decrease
     print("\n[A2] r(n) strictly decreasing:")

@@ -5,6 +5,11 @@
 four-pole forcing `r(n)`. Part B — hunt for new exact identities in the BBP orbit
 `(U_n, T_n)`. **No normality claim.** Everything below is proved or machine-checked exactly.
 
+**Companion files on this branch:** `R_BOUNDS.md` (two-sided `r(n)` brackets), `TN_SERIES.md`
+(exact `T_n` asymptotic series), `CONSTANTS.md` (exact digamma closed forms). The Part A bounds
+here agree with and sharpen those; Part B (orbit identities `U_n + T_n = 16^{n-1}π` and
+`v_2(U_n) = v_2(n)`) is the genuinely new material not present in the companions.
+
 ---
 
 ## 0. Objects (fixed conventions, matching the repo)
