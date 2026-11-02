@@ -59,6 +59,14 @@ Then
 \]
 This makes the higher unit–unit SUCC differential an **actual causal-generator spectral projector**. It is exact finite phase reconstruction, not a new signed bound or computational speedup.
 
+## A stronger no-go: the SAME four-pole source yields normal and nonnormal seeds
+
+This does not depend on the unknown normality of π. Let \(\alpha=\pi/16\), choose an explicitly known base-16 normal real \(c\) (the base-16 Champernowne constant), and use two real initial seeds:
+\[
+s_{\rm normal}=c-\alpha,\qquad s_{\rm coherent}=-\alpha.
+\]
+Both obey the **identical exact four-pole forcing**. The first orbit is normal because its unwrapped state equals \(16^nc-T_n\) with a summable tail; the second tends to zero on the circle and is nonnormal. Nevertheless **their entire causal intensity profiles differ only by seed-coordinate translation**; all globally translation-invariant causal statistics are identical at every N. This is a rigorous observer inadequacy theorem, not an assumption that pi is normal. See CR-04B.
+
 ## Circle↔line is the actual universal covering
 
 The lifted line phase is \(\Theta_{n,h}(s)=h(U_n+16^n s)\). The circle map \(e(\Theta_{n,h})\) has winding \(h16^n\), with \(\Theta(s+1)-\Theta(s)=h16^n\). A circle is a quotient of the real line here; this is not a homeomorphism or proof of intrinsic Riemannian curvature. The original integer lift and carry must be retained.
