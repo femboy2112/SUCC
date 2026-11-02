@@ -157,6 +157,36 @@ This is an operational **causal structural differential**: two mathematically di
 
 The ratios are scalar exact coboundaries on these response fields: they do NOT establish nontrivial physical gauge curvature, a Riemann-sphere rotation, or a new asymptotic signed estimate. Their role is to specify a legitimate source/seed-faithful common-basis transport in the causal parameter.
 
+## 6B. CR-06B — a finite-order causal DIFFERENTIAL projector recovers any historical phase (PROVED)
+
+The causal rotation has a second exact, source-faithful inverse that does NOT require integrating against exponentially large Fourier frequencies. Instead use the user's proposed *differential along the structural intervention axis*:
+\[
+\boxed{\mathcal D_h=(2\pi i h)^{-1}\partial_s,\quad
+\mathcal D_h Z_{n,h}(s)=b^nZ_{n,h}(s).}\tag{CR-12a}
+\]
+This is **not** chronological differentiation \(\Delta_n\), and not the seed-blind source covariant difference \(E-b\) from #463. The operator is the infinitesimal generator of the initial-seed translation action on the response field.
+
+At finite N, let the known distinct eigenvalues be \(\lambda_n=b^n\) for \(0\le n\le N\). Construct the rational Lagrange spectral projectors
+\[
+\boxed{L_{n,N}(X)=\prod_{\substack{0\le m\le N\\m\ne n}}
+\frac{X-\lambda_m}{\lambda_n-\lambda_m}\in\mathbb Q[X].}\tag{CR-12b}
+\]
+Then \(L_{n,N}(\lambda_m)=\delta_{nm}\), and therefore
+\[
+\boxed{[L_{n,N}(\mathcal D_h)\Phi_{N,h}](0)=z_n=e(hu_n),\quad0\le n\le N.}\tag{CR-12c}
+\]
+This is an exact **unit–unit causal differential tomography theorem**, recovering any historical complex phase from the complete complex response function and its first N derivatives at the *calibrated* intervention origin.
+
+Equivalently the measured causal derivatives define polynomial moments
+\[
+\boxed{M_k=(2\pi i h)^{-k}\Phi^{(k)}_{N,h}(0)
+=\sum_{n=0}^N (b^n)^k z_n,\quad0\le k\le N.}\tag{CR-12d}
+\]
+The Vandermonde matrix has nonzero determinant
+\(\prod_{0\le m<n\le N}(b^n-b^m)\), so all phase coefficients are uniquely recoverable by a rational linear inverse on their coefficient vector.
+
+**Very important precision and authority firewall.** The theorem is a finite interpolation/reconstruction identity valid for ANY phases; it does not certify the actual source or bound their signed sum. Higher derivatives have magnitudes growing up to \(b^{N^2}\), so a finite-precision implementation may be badly conditioned. This is not a uniform-in-N stability theorem, computational speedup, or a normality proof. Unlike CR-04's *intensity-only* spectral readout, this instrument requires complex response values and high-order causal derivatives. The two are mathematically independent readout implementations of the same finite phase record, not blind independent mathematical provenance.
+
 ## 7. CR-07 — 34th-moment first resonance is source-only, not a selected-seed proof (INHERITED #404, independently exact-probed)
 
 **Prior art inside SUCC:** PR #404 (already integrated into Main XVII and then Main XIX) proved Haar seed-averaged balanced moments up through order 32 are phase-blind and identified the first phase-dependent balanced moment at order 34 (17 factors per side). This round DOES NOT rediscover or claim that result.
