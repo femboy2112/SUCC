@@ -223,6 +223,16 @@ Thus
     (A) + (B) + ORIGINAL r + U_0=0
           ==> every empirical limit is Haar ==> π base-16 normal.
 
+
+**Logical strength, deliberately explicit:** For this same selected source,
+base-16 normality also IMPLIES (A) and (B): normality gives μ_N→Haar,
+which is T_3-invariant and has lower Hausdorff dimension 1. Thus
+(A) AND (B) is **another equivalent criterion**, not an already
+verified weaker assumption. The mathematical opportunity is to attack
+the two obligations by different source-specific tools (Pascal/prime
+real-circle differences versus arithmetic nonconcentration), not to
+rename the normality problem and call that progress.
+
 This is a **correct conditional proof route**, not a claim that (A) or (B)
 currently holds. The source-normality debt is redistributed into *new
 two simultaneous original-source obligations*: a special ×3 Weyl-defect
