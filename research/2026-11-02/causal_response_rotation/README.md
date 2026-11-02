@@ -67,6 +67,16 @@ s_{\rm normal}=c-\alpha,\qquad s_{\rm coherent}=-\alpha.
 \]
 Both obey the **identical exact four-pole forcing**. The first orbit is normal because its unwrapped state equals \(16^nc-T_n\) with a summable tail; the second tends to zero on the circle and is nonnormal. Nevertheless **their entire causal intensity profiles differ only by seed-coordinate translation**; all globally translation-invariant causal statistics are identical at every N. This is a rigorous observer inadequacy theorem, not an assumption that pi is normal. See CR-04B.
 
+## The whole causal-effect axis, not just the initial seed
+
+The same construction extends to separate forcing interventions at every time j, which intentionally change the forcing rather than merely its initial condition:
+\[
+J_{n,j}=\frac{\partial U_n}{\partial r_j}
+=16^{n-j}\mathbf1_{j\le n},\qquad
+(E-16)J_{n,j}=\delta_{n+1,j}.
+\]
+This is an exact lower-triangular Green operator of determinant 1, inverted by \(U_n-16U_{n-1}=r_n\). It is an actual structural-effect derivative across the chronological source path. **The full phase, integer carry and zero-seed anchor still matter.** See CR-06C.
+
 ## Circle↔line is the actual universal covering
 
 The lifted line phase is \(\Theta_{n,h}(s)=h(U_n+16^n s)\). The circle map \(e(\Theta_{n,h})\) has winding \(h16^n\), with \(\Theta(s+1)-\Theta(s)=h16^n\). A circle is a quotient of the real line here; this is not a homeomorphism or proof of intrinsic Riemannian curvature. The original integer lift and carry must be retained.
