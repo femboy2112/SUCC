@@ -1,6 +1,7 @@
 """Finite exact rational/regulator diagnostics. Not a π-normality probe."""
 import importlib.util
 from pathlib import Path
+from fractions import Fraction
 
 spec=importlib.util.spec_from_file_location(
     "pg_finite",Path(__file__).with_name("pell_gamma.py"))
@@ -17,7 +18,7 @@ def produce():
         P,Q=g.pell(k)
         e=g.phase_error_rational_upper(n,b,k)
         assert e>0
-        assert e < 1/a
+        assert e < Fraction(1,a)
         assert g.signed_sheet_coefficient(k)==(1,0)
         assert g.signed_sheet_coefficient(k,True)==(1,0)
         assert g.exact_seam_verify(n,b,b+1)
