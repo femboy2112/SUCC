@@ -10,7 +10,7 @@ from fractions import Fraction as F
 from prime_window import (source,combined_source,edge,states_through,prime,primes5,
     window,order16,period_split,phase,split_window,original_window,kernel,
     energy_direct,energy_kernel)
-from interval import prove_window,certify_both_directions
+from interval import prove_window,certify_both_directions,certify_holdout_directions
 
 class PrimeWindowResearch(unittest.TestCase):
     def test_four_poles_and_three_edges(self):
@@ -117,6 +117,16 @@ class PrimeWindowResearch(unittest.TestCase):
         self.assertEqual([(r['prime'],r['h'],r['strict_order']) for r in rows],
                          [(373,1,'joint_larger'),(397,3,'joint_smaller')])
         self.assertTrue(all(F(r['certified_gap_lower'])>0 for r in rows))
+
+    def test_pre_registered_fresh_holdouts(self):
+        for p in (1013,1021):
+            rows=prove_window(p)
+            self.assertEqual([r['h'] for r in rows],[1,3,5])
+            self.assertTrue(all(F(r['upper_l1'])<F(1,4) for r in rows))
+        directions=certify_holdout_directions()
+        self.assertEqual([(r['prime'],r['h'],r['strict_order']) for r in directions],
+                         [(1013,1,'joint_smaller'),(1021,5,'joint_larger')])
+        self.assertTrue(all(F(r['certified_squared_gap_lower'])>0 for r in directions))
 
     def test_invalid_domains(self):
         for p in (2,5,9,17,257):

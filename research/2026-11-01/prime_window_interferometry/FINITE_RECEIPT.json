@@ -126,12 +126,78 @@
     3,
     5
   ],
+  "holdout_post_observation_directions_certified": [
+    {
+      "certified_squared_gap_lower": "65082749/1000000000",
+      "h": 1,
+      "method": "two-component rational square-norm lower vs upper intervals",
+      "prime": 1013,
+      "strict_order": "joint_smaller"
+    },
+    {
+      "certified_squared_gap_lower": "1212399/1000000000",
+      "h": 5,
+      "method": "two-component rational square-norm lower vs upper intervals",
+      "prime": 1021,
+      "strict_order": "joint_larger"
+    }
+  ],
   "not_an_asymptotic_pi_normality_claim": true,
   "parent_main": "81045770234a114247e43eb08ae5c6d446e9514a",
+  "preregistered_holdout_cases": [
+    {
+      "L": 380,
+      "h": 1,
+      "p": 1013,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "48729157/1000000000"
+    },
+    {
+      "L": 380,
+      "h": 3,
+      "p": 1013,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "54585981/1000000000"
+    },
+    {
+      "L": 380,
+      "h": 5,
+      "p": 1013,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "66887411/1000000000"
+    },
+    {
+      "L": 383,
+      "h": 1,
+      "p": 1021,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "10587593/200000000"
+    },
+    {
+      "L": 383,
+      "h": 3,
+      "p": 1021,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "8968223/200000000"
+    },
+    {
+      "L": 383,
+      "h": 5,
+      "p": 1021,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "30941993/500000000"
+    }
+  ],
   "program_sha256": {
-    "interval.py": "e5e88366ad274ea94b1a166bc919893e0c8cc2cc4f15051ef255d92295b74a96",
+    "interval.py": "1a95d50970aa920553b5db1357cd1aa2d336b6ee262e20dc2026e30ec5fa7e03",
     "prime_window.py": "e2e9115574811d4ec30e26850788cb6d30de1904f817bad1ea628170987ed6e3",
-    "run_receipt.py": "fb25b8dba2610f3c97d6f45ce37333a23ec2fd7fa0c96dd92a4c05e2adf69fb6"
+    "run_receipt.py": "5d028a548377d20ade57750dd44c827507251c8fe61e148ea642ff91c2246862"
   },
   "rigorous_phase_comparison": [
     {

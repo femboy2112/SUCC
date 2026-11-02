@@ -80,3 +80,31 @@ def certify_both_directions():
                      'certified_gap_lower':str(F(gap.numerator*10**9//gap.denominator,10**9)),
                      'method':'real-component lower vs other-vector L1 upper; exact outward intervals'})
     return rows
+
+
+def certify_holdout_directions():
+    """Finite signed comparison AFTER preregistered holdouts; signs not predicted."""
+    lo,hi=pi_bounds();mid=(lo+hi)/2;bits=32;terms=12
+    err=(F(22,7)**(2*terms+1)/F(factorial(2*terms+1)) +
+         F(22,7)**(2*terms+2)/F(factorial(2*terms+2)) +
+         (hi-lo)+F(44,7*2**bits))
+    rows=[]
+    for p,h,direction in ((1013,1,'joint_smaller'),(1021,5,'joint_larger')):
+        a,b,L=window(p);us=states_through(b)
+        fr=fi=pr=pi=F(0)
+        for n in range(a,b+1):
+            c,s=fixed_angle(us[n],h,mid,bits,terms);fr+=c;fi+=s
+            c,s=fixed_angle(-F(pow(16,n-a,p),p),h,mid,bits,terms)
+            pr+=c;pi+=s
+        fr/=L;fi/=L;pr/=L;pi/=L
+        def lower_sq(r,i):
+            return max(F(0),abs(r)-err)**2+max(F(0),abs(i)-err)**2
+        def upper_sq(r,i):
+            return (abs(r)+err)**2+(abs(i)+err)**2
+        gap=(lower_sq(fr,fi)-upper_sq(pr,pi) if direction=='joint_larger' else
+             lower_sq(pr,pi)-upper_sq(fr,fi))
+        assert gap>0,(p,h)
+        rows.append({'prime':p,'h':h,'strict_order':direction,
+                     'certified_squared_gap_lower':str(F(gap.numerator*10**9//gap.denominator,10**9)),
+                     'method':'two-component rational square-norm lower vs upper intervals'})
+    return rows

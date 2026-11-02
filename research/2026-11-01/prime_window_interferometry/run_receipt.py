@@ -2,7 +2,7 @@
 import hashlib
 import json
 from pathlib import Path
-from interval import prove_window,certify_both_directions
+from interval import prove_window,certify_both_directions,certify_holdout_directions
 
 HERE=Path(__file__).resolve().parent
 PRIMES=(269,373,397,509,997)
@@ -10,7 +10,9 @@ PRIMES=(269,373,397,509,997)
 def build():
     intervals=[r for p in PRIMES for r in prove_window(p)]
     anti=certify_both_directions()
-    assert len(intervals)==15 and len(anti)==2
+    holdouts=[r for p in (1013,1021) for r in prove_window(p)]
+    holdout_compare=certify_holdout_directions()
+    assert len(intervals)==15 and len(anti)==2 and len(holdouts)==6 and len(holdout_compare)==2
     blobs={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest()
            for name in ('prime_window.py','interval.py','run_receipt.py')}
     return {'status':'CERTIFIED_FINITE_EXACT_RATIONAL_INTERVAL',
@@ -20,11 +22,14 @@ def build():
             'window_class':'p prime, p>5, p congruent 5 mod 8',
             'harmonics':[1,3,5],
             'trig_method':'exact Fraction source; exact mod1; 32-bit dyadic floor; Machin rational pi interval; Taylor/Lagrange rational error; outward 10^9 L1 ceiling',
-            'cases':intervals,'rigorous_phase_comparison':anti,'program_sha256':blobs}
+            'cases':intervals,'rigorous_phase_comparison':anti,
+            'preregistered_holdout_cases':holdouts,
+            'holdout_post_observation_directions_certified':holdout_compare,
+            'program_sha256':blobs}
 
 if __name__=='__main__':
     rec=build()
     p=HERE/'FINITE_RECEIPT.json'
     p.write_text(json.dumps(rec,indent=2,sort_keys=True)+'\n')
-    print('RATIONAL_INTERVAL_CERTIFIED: %s cases; %s strict cofactor directions' %
-          (len(rec['cases']),len(rec['rigorous_phase_comparison'])))
+    print('RATIONAL_INTERVAL_CERTIFIED: %s exploratory, %s preregistered holdout cases; %s + %s strict directions' %
+          (len(rec['cases']),len(rec['preregistered_holdout_cases']),len(rec['rigorous_phase_comparison']),len(rec['holdout_post_observation_directions_certified'])))
