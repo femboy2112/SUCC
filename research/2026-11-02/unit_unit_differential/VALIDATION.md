@@ -32,6 +32,8 @@ The check independently computed original four signed poles, U_0=0, rational d_n
 
 A broader preceding probe also checked 547 authentic and 495 shadow higher-grade prime-residue instances and a finite grid of complete-monotonicity signs, with no failures. The first attempt at that probe had a Python **operator-parentheses mistake in the modular inverse calculation**, yielding a spurious mismatch; it was corrected by pow(den//p, -1, p) and all exact checks passed. This is a code calibration error, not a counterexample to the theorem, and the failed attempt is retained here.
 
+**Additional strictly mixed second-differential test:** A new root-discoverable Fraction method checks the negative 2x2 determinant, its exact variance algebra and monotone branch ratios on 17×15 integer (n,d) pairs. This extends (but does not change the provenance of) the earlier independent 360 positive conservation nodes. The revised exact standalone test class is committed on the research head; its hosted run must be observed separately.
+
 ## Independent real integral oracle
 
 A second algorithm numerically integrated the ORIGINAL measure using the substitution x=v^8:
