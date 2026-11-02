@@ -29,6 +29,7 @@
 
 - Local 16-adic Haar and selected Archimedean real-circle Haar are different types; identical numerical character-mesh widths are NOT a phase transport map. Exact finite rational states can be decoded at source-qualified linear-depth resolution but this cannot be used to borrow logarithmic-depth finite Haar without a new inequality.
 - The new signed conditional cofiber energy G_(N,Q)(h) is monotone NONDECREASING as a carrier is refined, Q1|Q2|N. Source-local uniformity by itself cannot prove G→0.
+- POST-HOC ORIGINAL-source finite counterexample: N4096,Q16,h1203/1800/3576 were selected via an optional FLOAT exploratory scan after the frozen 18 PASS cells. Their **strict NEGATIVE** verdict is instead certified with exact rational LOWER bounds and an explicit published phase-enclosure algorithm; no external distribution assertion enters. This refutes a uniform all-h, all-N coefficient 2 for G, not eventual fixed-h results or π normality.
 - The numerical 2^19 phase grid in conditional_interval.py is an ARCHIMEDEAN rational error bound, not the 16-adic carrier θ_r nor physical ħ. 18 exact finite certificates are not an all-N theorem.
 - Same-source changed-seed Thue–Morse and period-3 controls are genuinely nonnormal while satisfying strong anti-lock conditions; exact original literal zero seed is necessary.
 - Scholarly priority, new Lean authority, a physical quantum model, RH and π normality are NOT claimed.
