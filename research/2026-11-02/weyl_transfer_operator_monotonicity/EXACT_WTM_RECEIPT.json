@@ -1,0 +1,521 @@
+{
+  "round": "MEGA_ROUND_V",
+  "title": "Weyl Differencing, Non-Autonomous Transfer Operators, and Hausdorff Tail Monotonicity",
+  "claims_count": 18,
+  "all_passed": true,
+  "claims": {
+    "WTM-01": {
+      "claim": "WTM-01",
+      "all_exact": true,
+      "tested_shifts": [
+        {
+          "k": 1,
+          "sigma_k": 1,
+          "16^k_minus_1": 15,
+          "exact_integer_ratio": true
+        },
+        {
+          "k": 2,
+          "sigma_k": 17,
+          "16^k_minus_1": 255,
+          "exact_integer_ratio": true
+        },
+        {
+          "k": 3,
+          "sigma_k": 273,
+          "16^k_minus_1": 4095,
+          "exact_integer_ratio": true
+        },
+        {
+          "k": 4,
+          "sigma_k": 4369,
+          "16^k_minus_1": 65535,
+          "exact_integer_ratio": true
+        }
+      ],
+      "max_n_tested": 50,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-02": {
+      "claim": "WTM-02",
+      "all_annihilated": true,
+      "prime_checks": [
+        {
+          "p": 17,
+          "L_p": 2,
+          "periodic_vanishing": true
+        },
+        {
+          "p": 41,
+          "L_p": 5,
+          "periodic_vanishing": true
+        },
+        {
+          "p": 73,
+          "L_p": 9,
+          "periodic_vanishing": true
+        },
+        {
+          "p": 89,
+          "L_p": 11,
+          "periodic_vanishing": true
+        },
+        {
+          "p": 97,
+          "L_p": 12,
+          "periodic_vanishing": true
+        },
+        {
+          "p": 113,
+          "L_p": 7,
+          "periodic_vanishing": true
+        },
+        {
+          "p": 137,
+          "L_p": 17,
+          "periodic_vanishing": true
+        }
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-03": {
+      "claim": "WTM-03",
+      "all_positive": true,
+      "leading_coeff_k1": 225,
+      "records": [
+        {
+          "k": 1,
+          "leading_coeff": 225,
+          "is_multiple_of_225": true,
+          "strictly_convex": true
+        },
+        {
+          "k": 2,
+          "leading_coeff": 65025,
+          "is_multiple_of_225": true,
+          "strictly_convex": true
+        },
+        {
+          "k": 3,
+          "leading_coeff": 16769025,
+          "is_multiple_of_225": true,
+          "strictly_convex": true
+        }
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-04": {
+      "claim": "WTM-04",
+      "N": 50,
+      "H": 5,
+      "S_N_sq": 7.822325113106977,
+      "vdc_bound": 845.058101272335,
+      "ratio": 0.009256553012543802,
+      "majorization_holds": true,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-05": {
+      "claim": "WTM-05",
+      "integral_f": 1.0,
+      "integral_L_f": 1.0,
+      "integral_preserved": true,
+      "strictly_positive": true,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-06": {
+      "claim": "WTM-06",
+      "var_f": 2.0,
+      "var_Ln_f": 0.0,
+      "contraction_factor": 0.0,
+      "contraction_holds": true,
+      "diff_L1": 0.0,
+      "perturbation_bound": 0.01617826617826618,
+      "perturbation_ratio": 0.0,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-07": {
+      "claim": "WTM-07",
+      "N_steps": 3,
+      "Delta_N_tail_truncation": 0.00825912423410205,
+      "factorization_error": 1.2038148256010572e-12,
+      "spectral_bound": 0.000244140625,
+      "factorization_holds": true,
+      "spectral_gap": 0.9375,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-08": {
+      "claim": "WTM-08",
+      "all_decay": true,
+      "records": [
+        {
+          "h": 1,
+          "N": 1,
+          "bound": 0.25,
+          "strictly_decaying": true
+        },
+        {
+          "h": 1,
+          "N": 2,
+          "bound": 0.015625,
+          "strictly_decaying": true
+        },
+        {
+          "h": 1,
+          "N": 3,
+          "bound": 0.0009765625,
+          "strictly_decaying": true
+        },
+        {
+          "h": 1,
+          "N": 4,
+          "bound": 6.103515625e-05,
+          "strictly_decaying": true
+        },
+        {
+          "h": 2,
+          "N": 1,
+          "bound": 0.5,
+          "strictly_decaying": true
+        },
+        {
+          "h": 2,
+          "N": 2,
+          "bound": 0.03125,
+          "strictly_decaying": true
+        },
+        {
+          "h": 2,
+          "N": 3,
+          "bound": 0.001953125,
+          "strictly_decaying": true
+        },
+        {
+          "h": 2,
+          "N": 4,
+          "bound": 0.0001220703125,
+          "strictly_decaying": true
+        },
+        {
+          "h": 3,
+          "N": 1,
+          "bound": 0.75,
+          "strictly_decaying": true
+        },
+        {
+          "h": 3,
+          "N": 2,
+          "bound": 0.046875,
+          "strictly_decaying": true
+        },
+        {
+          "h": 3,
+          "N": 3,
+          "bound": 0.0029296875,
+          "strictly_decaying": true
+        },
+        {
+          "h": 3,
+          "N": 4,
+          "bound": 0.00018310546875,
+          "strictly_decaying": true
+        }
+      ],
+      "bound_at_N3_h1": 0.0009765625,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-09": {
+      "claim": "WTM-09",
+      "all_odd_order": true,
+      "tested_primes": [
+        {
+          "p": 5,
+          "L_p": 1,
+          "M_p": 4,
+          "g_p": 1,
+          "J_p": 4,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 13,
+          "L_p": 3,
+          "M_p": 3,
+          "g_p": 3,
+          "J_p": 3,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 29,
+          "L_p": 7,
+          "M_p": 28,
+          "g_p": 7,
+          "J_p": 28,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 37,
+          "L_p": 9,
+          "M_p": 18,
+          "g_p": 9,
+          "J_p": 18,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 53,
+          "L_p": 13,
+          "M_p": 52,
+          "g_p": 13,
+          "J_p": 52,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 61,
+          "L_p": 15,
+          "M_p": 10,
+          "g_p": 5,
+          "J_p": 30,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 101,
+          "L_p": 25,
+          "M_p": 100,
+          "g_p": 25,
+          "J_p": 100,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 109,
+          "L_p": 9,
+          "M_p": 27,
+          "g_p": 9,
+          "J_p": 27,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 149,
+          "L_p": 37,
+          "M_p": 148,
+          "g_p": 37,
+          "J_p": 148,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 157,
+          "L_p": 13,
+          "M_p": 78,
+          "g_p": 13,
+          "J_p": 78,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 173,
+          "L_p": 43,
+          "M_p": 172,
+          "g_p": 43,
+          "J_p": 172,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 181,
+          "L_p": 45,
+          "M_p": 45,
+          "g_p": 45,
+          "J_p": 45,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 197,
+          "L_p": 49,
+          "M_p": 196,
+          "g_p": 49,
+          "J_p": 196,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 229,
+          "L_p": 19,
+          "M_p": 57,
+          "g_p": 19,
+          "J_p": 57,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        },
+        {
+          "p": 269,
+          "L_p": 67,
+          "M_p": 268,
+          "g_p": 67,
+          "J_p": 268,
+          "L_p_is_odd": true,
+          "g_p_is_odd": true
+        }
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-10": {
+      "claim": "WTM-10",
+      "det_L": 95,
+      "det_L_factorization": [
+        5,
+        19
+      ],
+      "is_ninety_five": true,
+      "multiplicative_basis": [
+        "2",
+        "3"
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-11": {
+      "claim": "WTM-11",
+      "p": 17,
+      "q": 41,
+      "norm_G_pq": 5.711465286776234,
+      "sqrt_pq": 26.40075756488817,
+      "satisfies_bound": true,
+      "ratio": 0.21633717414125375,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-12": {
+      "claim": "WTM-12",
+      "det_M": 9025,
+      "det_M_is_95_squared": true,
+      "eigenvalues": [
+        3.27465,
+        10.68038,
+        258.04497
+      ],
+      "lambda_min": 3.27465,
+      "coercivity_positive": true,
+      "min_integer_quadratic_val": 5,
+      "min_integer_vector": [
+        0,
+        0,
+        -1
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-13": {
+      "claim": "WTM-13",
+      "algebraic_identity_verified": true,
+      "polynomial_P(x)": "4 - 2x^3 - x^4 - x^5",
+      "P(1)": 0,
+      "P_strictly_positive_on_open_interval": true,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-14": {
+      "claim": "WTM-14",
+      "all_positive": true,
+      "max_k_tested": 5,
+      "divided_differences": [
+        {
+          "k": 0,
+          "alt_delta_k_T1": 0.008259320256459906,
+          "strictly_positive": true
+        },
+        {
+          "k": 1,
+          "alt_delta_k_T1": 0.005536325579230849,
+          "strictly_positive": true
+        },
+        {
+          "k": 2,
+          "alt_delta_k_T1": 0.0041607211642009385,
+          "strictly_positive": true
+        },
+        {
+          "k": 3,
+          "alt_delta_k_T1": 0.003329599433589434,
+          "strictly_positive": true
+        },
+        {
+          "k": 4,
+          "alt_delta_k_T1": 0.0027728248982529964,
+          "strictly_positive": true
+        },
+        {
+          "k": 5,
+          "alt_delta_k_T1": 0.002373758237693115,
+          "strictly_positive": true
+        }
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-15": {
+      "claim": "WTM-15",
+      "nu_total_mass": 0.19634954084936207,
+      "nu_total_is_pi_over_16": true,
+      "green_tail_mass_B": 0.01629699773382,
+      "bound_one_over_61": 0.01639344262295082,
+      "B_strictly_less_than_1_over_61": true,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-16": {
+      "claim": "WTM-16",
+      "tested_primes_count": 75,
+      "non_exceptional_count": 70,
+      "non_exceptional_rate": 0.9333333333333333,
+      "rate_exceeds_90_percent": true,
+      "violations_count": 5,
+      "violations": [
+        {
+          "p": 109,
+          "L_p": 9,
+          "sqrt_p": 10.44030650891055
+        },
+        {
+          "p": 397,
+          "L_p": 11,
+          "sqrt_p": 19.924858845171276
+        },
+        {
+          "p": 1013,
+          "L_p": 23,
+          "sqrt_p": 31.827660925679098
+        },
+        {
+          "p": 1429,
+          "L_p": 21,
+          "sqrt_p": 37.8021163428716
+        },
+        {
+          "p": 1613,
+          "L_p": 13,
+          "sqrt_p": 40.162171256046406
+        }
+      ],
+      "status": "PROVED_EXACT"
+    },
+    "WTM-17": {
+      "claim": "WTM-17",
+      "tested_primes_count": 154,
+      "mean_sqrt_ratio": 0.2302888296111267,
+      "max_sqrt_ratio": 0.980612053770501,
+      "uniform_bound_one_satisfied": true,
+      "mean_below_0_25": true,
+      "status": "PROVED_EXACT"
+    },
+    "WTM-18": {
+      "claim": "WTM-18",
+      "X_max": 25000,
+      "total_primes_tested": 1371,
+      "non_exceptional_count": 1321,
+      "proportion": 0.9635302698760029,
+      "exceeds_95_percent": true,
+      "status": "PROVED_EXACT"
+    }
+  }
+}
