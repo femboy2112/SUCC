@@ -222,6 +222,32 @@ This is the *mathematical* equivalent of an unresolved astrophysical reverberati
 
 **Important restoration:** Prior SUCC #437/#448/#421 already proves finite source authentication in a much NARROWER four-simple-pole rational class via Prony/Hankel/source rigidity. CE-01 adds an entire correction; CE-03 replaces the rational poles with exponential atoms. Both EXIT that restricted class. When the exact global four-pole model is independently established and literal U0=0 is retained, the entire causal path is uniquely specified. Source identifiability then is no longer the obstruction; the selected signed Fourier saving remains.
 
+## CE-05B. General finite-observer *weight-span theorem*: the exact lamp for categorical descent (PROVED, classical functional linear algebra)
+
+The preceding witness is not special to observing the first M raw moments. It extends to **any finite list of genuine LINEAR source observations**. Work with signed finite Borel measures on the closed compact interval \(I=[a,c]\subset(0,1)\), or with smooth density perturbations supported inside I. Let
+\[
+L_i(\nu)=\int_I\phi_i(x)\,d\nu(x),\qquad i=1,\dots,k,
+\quad A_I(\nu)=\int_I K(x)\,d\nu(x),\quad K(x)=\frac1{16-x},
+\tag{19}
+\]
+where each specified real observer weight \(\phi_i\) is continuous on I. Reduce to a linearly independent list of observer weights. Then the following are EQUIVALENT:
+
+1. \(A_I\) factors through the combined finite linear observation \(L=(L_1,\ldots,L_k)\) on **all signed measures** supported in I.
+2. \(\ker L\subseteq\ker A_I\).
+3. \(K\in\operatorname{span}_{\mathbb R}\{\phi_1,\ldots,\phi_k\}\) as a continuous function on I.
+
+Proof: 3→1 is direct, with A_I a fixed linear combination of the L_i. 1→2 is the #423 quotient criterion. If 3 fails, the continuous functions \((\phi_1,\ldots,\phi_k,K)\) are independent, hence there exist k+1 distinct interior evaluation nodes x_j for which their evaluation matrix is invertible. Choose k+1 disjoint nonnegative C_c^∞ bumps β_j narrowly concentrated at those nodes, each with integral 1. The matrix \(B_{ij}=\int\phi_i\beta_j\), extended with final row \(\int K\beta_j\), tends to the invertible evaluation matrix, so it is itself invertible for sufficiently narrow bumps. Solve \(Bc=(0,\ldots,0,1)^{\top}\) and put \(\psi=\sum c_j\beta_j\). This **constructs** a smooth compactly supported signed density with
+\[
+\boxed{L_i(\psi dx)=0\ \forall i,\qquad A_I(\psi dx)=1.}\tag{20}
+\]
+Thus ker inclusion fails, refuting 2. This also establishes the contrapositive 2→3.
+
+Because the authentic BBP source density f has a positive lower bound on I, \(f+\epsilon\psi\) is strictly positive and between (1−η)f and (1+η)f for ANY predeclared η>0 when |\epsilon| is sufficiently small. It therefore retains ALL source unit/analytic mixed Hausdorff moment positivity and multiplicative proximity bounds, exactly as CE-01. Moreover \(\delta r(z)=\epsilon\int_Ix^{z-1}\psi(x)dx\) is entire and exponentially small at positive integer z, preserving every original meromorphic pole and inverse-power asymptotic coefficient. Completion changes by exactly ε; by density of rational and base-16-normal constants, arbitrarily nearby changed-source normal and nonnormal completions exist, with identical finite specified L_i observations.
+
+**Applications and limits:** finite Pascal/Newton source moments have polynomial weights, and finite analytic source-time derivatives have weights \(x^{z}(\log x)^a(1-x)^d\) on I. Any FINITE collection of those weights is analytic away from x=0 and lacks the pole at x=16, hence cannot express \(K(x)=1/(16-x)\) on an open I; the real-analytic identity theorem would extend such an equality toward 16 and contradict the pole. Therefore **no finite bundle of those pure source-jet observations** determines the complete boundary on the full Hausdorff source class. This statement is restricted to these explicitly linear source observables: it does NOT automatically apply to nonlinear observables such as log Γ, conditional Bayesian likelihoods or an arbitrary real-circle interference intensity. For the specific nonlinear finite causal intensity in #466, prefix equality of all U_n directly establishes equality separately (CE-05).
+
+This is a mathematical diagnosis of the observer \(\sigma\)/source-map and \(\phi\)/pathway gap, NOT a theorem forbidding finite mathematical PROOFS that exploit a known global four-pole formula. On the restricted at-most-four-pole rational model class, the admissible perturbations ψ are excluded and previous Prony source identification may restore the arrow. Normality remains another, genuinely signed and all-horizon proposition.
+
 ## CE-06. The precise next original-source π-normality probe (UNVERIFIED)
 
 This dossier does NOT establish a new original-source \(o(N)\) Weyl bound, any all-prime cofactor cancellation, or RH. It proves a source-map separation and finite-time instrument limitations.
