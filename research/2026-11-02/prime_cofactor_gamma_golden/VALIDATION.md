@@ -1,6 +1,6 @@
 # Validation and authority ledger
 
-**2026-11-02, isolated local Python 3.13.5.** Source and test modules staged and executed with Python standard library. On staged files, **23/23 focused tests PASS**, 0.915 seconds; compileall PASS. The remotely committed executable blobs were separately re-fetched and compared against locally tested git object hashes: source **28ec684f6168f17917cea95b477bfde2c2e187b6** and tests **c4caf9c6b51afba51561f19071688e7edb433174**: both byte-identical.
+**2026-11-02, isolated local Python 3.13.5.** Source and test modules staged and executed with Python standard library. On staged files, **27/27 focused tests PASS**, 0.961 seconds; compileall PASS. The remotely committed executable blobs were separately re-fetched and compared against locally tested git object hashes: source **28ec684f6168f17917cea95b477bfde2c2e187b6** and tests **c4caf9c6b51afba51561f19071688e7edb433174**: both byte-identical.
 
 ## Checked
 
@@ -23,6 +23,8 @@
 **PGC-09 dyadic extension:** five additional root-discoverable focused tests pass, covering explicit prime-clean epochs A=16..4096 (finite, not the PNT-AP proof), original-source p-cofactor on three epochs, exact Gamma finite/original phase shifts of at most one M-bin for L=4,8,16,32, deterministic ℓ² histogram gluing, and the wrong-seed control. Git blob of the new staged-and-fetched test module: **91f325cc036c33ee682c32c67c8848d2934a32cf**. No all-epoch local source-collision saving is claimed.
 
 **No all-L conclusion** is inferred. FINITE_RECEIPT.json separates exact integers from floating Galois diagnostics.
+
+**PGC-10 self-scale addendum:** four extra focused tests pass: exact A=8..256 original dyadic self-collision integers, an explicit fine→coarse Cauchy bound including boundary/coherent points, all M≤A on selected finite original dyadic epochs, and a same-source coherent completed wrong-seed control that violates the self-scale cap. Re-fetched new root test Git object SHA **73ac9206978385b0821097771ece3e90ba75dc88** matches the staged local-tested bytes. Full selected original-source uniform all-A bound remains OPEN.
 
 ## Not run or claimed
 
