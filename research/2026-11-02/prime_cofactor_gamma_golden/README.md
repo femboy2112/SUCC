@@ -19,6 +19,8 @@
 
 **PGC-09:** [dyadic prime-clean coverage and ℓ² gluing](DYADIC_PRIME_GLUING.md). Every sufficiently large dyadic time epoch fits an exact p-clean window (classical PNT-AP); a source-selected *local* histogram bound would imply the global square-checkpoint cap without covering every cross-epoch pair.
 
+**PGC-10:** [self-resolution dyadic collision criterion](SELF_SCALE_PRIME_COLLISION.md) compresses PGC-09's all-mesh missing premise to **one scalar collision energy per dyadic epoch**. Fine-to-coarse bin Cauchy shows this single-scale bound is equivalent up to universal constants to the local all-M estimate.
+
 **Still OPEN:** source-selected all-L integer collision cap, all-pair prime-window coverage, long-range cofactor dephasing and π normality.
 
-**Files:** [PROOFS.md](PROOFS.md), [DYADIC_PRIME_GLUING.md](DYADIC_PRIME_GLUING.md), [NEXT.md](NEXT.md), [SOURCE_MAP.md](SOURCE_MAP.md), [VALIDATION.md](VALIDATION.md), [prime_cofactor_gamma.py](prime_cofactor_gamma.py), [generate_receipt.py](generate_receipt.py), [FINITE_RECEIPT.json](FINITE_RECEIPT.json), and root-discoverable tests/test_prime_cofactor_gamma_golden.py. Draft only; no merge/release/publication authority.
+**Files:** [PROOFS.md](PROOFS.md), [DYADIC_PRIME_GLUING.md](DYADIC_PRIME_GLUING.md), [SELF_SCALE_PRIME_COLLISION.md](SELF_SCALE_PRIME_COLLISION.md), [NEXT.md](NEXT.md), [SOURCE_MAP.md](SOURCE_MAP.md), [VALIDATION.md](VALIDATION.md), [prime_cofactor_gamma.py](prime_cofactor_gamma.py), [generate_receipt.py](generate_receipt.py), [FINITE_RECEIPT.json](FINITE_RECEIPT.json), and root-discoverable tests/test_prime_cofactor_gamma_golden.py. Draft only; no merge/release/publication authority.
