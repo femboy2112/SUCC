@@ -24,7 +24,7 @@ An explicit positive zero-seeded changed forcing differs from the exact BBP forc
 \boxed{\liminf_{m\to\infty}\inf_{n>m}\frac{\log\operatorname{den}(\widetilde U_n-\widetilde U_m)}m
 \ge\frac{32}{12+\log16}>2.16,}
 \]
-but for every fixed h!=0 its real Fourier mean converges in modulus to ONE. Therefore even *all-lag* prime-local conductor, zero seed, positivity and all-order source asymptotics together DO NOT imply real Fourier mixing. This is an explicitly changed source, not a proof about pi.
+but for every fixed h!=0 its real Fourier mean converges in modulus to ONE **despite those late phases also being pairwise distinct**. Therefore even *all-lag* prime-local conductor, zero seed, positivity and all-order source asymptotics together DO NOT imply real Fourier mixing. This is an explicitly changed source, not a proof about pi.
 
 ## What the actual real selected source does at fresh finite windows
 For p=4013,4021,4093 and all h=1,3,5,7, the complete original phase on I_p passes a **strict rational-interval** normalized L1 upper bound <1/8. For p=10037,10061,10069, the same harmonics pass the stronger **preregistered** threshold <1/16. All 24 also pass <1/16 if evaluated post hoc. For the zero-seeded positive shadow, on every one of these same windows,
