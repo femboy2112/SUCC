@@ -4,6 +4,15 @@
 **Companion:** `X3_RIGIDITY.md` (this file attacks obligation (B) of that dossier by tools that are
 *not* Weyl/Fourier cancellation).
 
+**Cross-reference (parallel rounds, same branch):** `X3_SPACING.md` and `X3_SPACING_CORE.md` already
+carry the spacing sub-target (obligation (B) sub-target 1) and independently reach the *same* verdict
+this file reaches in §2: the conductor gives only a vacuous `exp(−12N)` bound, and spacing does **not**
+imply positive dimension. This file adds the two things those files do not: (i) the exact relationship
+between `dim_*` and irrationality measure (item 1 of the task), with the explicit **counterexample**
+that `μ(x)<∞ ⟹ dim_*>0` is FALSE; and (ii) the item-4 ledger and the reformulation of (B) as a
+positive-entropy statement (Hochman's identity). Conductor conventions agree: `ln den(U_n) ≈ 6n`
+(this file's `log Q_n = 6n + o(n)`) equals `log₂ den ≈ 8.6n` via `ln = log₂·ln2`.
+
 ## Scope and standing of this file
 
 This is an **attack assessment**, not a claimed proof. Per `docs/METHOD.md` (steelman–crucible–verdict)
