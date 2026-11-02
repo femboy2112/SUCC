@@ -16,7 +16,7 @@ Ran 11 tests in 0.063s
 OK
 ~~~
 
-The 10 test methods check finite regression identities **by exact integer/Fraction arithmetic**, with no floating trigonometry or pi digit inputs:
+The 11 test methods check finite regression identities **by exact integer/Fraction arithmetic**, with no floating trigonometry or pi digit inputs:
 
 - uniqueness of all nonzero causal b-power differences for b in {2,3,5,16}, multiple horizons;
 - complete original four-pole and coherent zero-seeded changed-source exact Fourier-intensity phase coefficients for h in {1,3,7} and N<=8;
@@ -26,14 +26,15 @@ The 10 test methods check finite regression identities **by exact integer/Fracti
 - exact original and changed forcing 34th-moment resonance \(16U_n+U_{n+2}-17U_{n+1}=\Delta r\), including arbitrary seed shifts;
 - exact source cocycle / phase-power versus causal dilation alignment;
 - exact exponential latest-phase Fourier-band cutoff for b=2,3,16;
-- **new** rational Lagrange causal-differential projectors: modes b^n, moments of arbitrary rational coefficients, exact recovery of each coefficient from N+1 causal derivatives for N<=7 across b=2,3,16.
+- **new** rational Lagrange causal-differential projectors: modes b^n, moments of arbitrary rational coefficients, exact recovery of each coefficient from N+1 causal derivatives for N<=7 across b=2,3,16;
+- rational solenoid branch history/q-commutation and exact full retarded causal Green matrix inversion/source response for b=2,3,16.
 
 The remote uploaded final exact source Git blob was fetched and **matches the actually executed local git hash**:
-causal_rotation_probe.py = 23510da129832cec6a9c338734270e44923785f0.
+causal_rotation_probe.py = 0f4c25a2e7db18346fbfbf7aa6352f875d5e6c44.
 
 These finite checks calibrate a proof; they do not establish infinite weak-Haar convergence, which is proved by the analytic Fourier/Stone-Weierstrass derivation in PROOFS.md.
 
-**Later new exact solenoid test:** the same exact script was extended from 9 to **10** unittest methods, final local run **10/10 PASS** (0.041 seconds). The added method checks rational compatible inverse-limit towers for b=2,3,16, the explicit loss of inverse branch at circle coordinate zero, forward/backward solenoid coordinate shifts and exact Fourier-character q-commutation D_h C_b=b C_b D_h. Updated final tested Git blob SHA: 23510da129832cec6a9c338734270e44923785f0. The earlier 9-method receipt is historical, not the current final exact version.
+**Added exact structural controls after the original nine methods:** test 10 checks compatible solenoid towers, inverse branch loss and Fourier-character q-commutation at bases 2,3,16. Test 11 checks the full original and changed-source lower-triangular causal effect Jacobian, two-sided inverse, unit source impulse and source difference for N through 24. Final local run is **11/11 PASS** (0.063 s) with exact hash 0f4c25a2e7db18346fbfbf7aa6352f875d5e6c44. Historical 9/10-test receipts remain documented as development stages, not latest validation.
 
 ## 2. Independent numerical direct-seed quadrature
 
