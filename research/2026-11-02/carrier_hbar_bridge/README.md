@@ -18,6 +18,17 @@ SUCC #441's effective dimensionless clock angle is \(\theta_r=2\pi/16^r\) on the
 6. The original backward 2-adic source passport F(0)=0 rejects #467's strictly positive rational-atom fake: its p-adic backwards value is \(-\alpha_{atom}\ne0\pmod{16}\), though the first four source moments match. The explicit smooth source echo additionally fails 2-integrality of its fifth source value. These are source-class tests, not normality proofs.
 7. All **finite** π phase intervals can be certified to finer than one real carrier cell with a single rational original-source Gamma completion (#465), but no uniform asymptotic frequency law is derived.
 
+### NEW: an actual finite source-local → REAL reconstruction at carrier ħ
+
+There IS an exact inverse when the source's rational *height* is certified. The original four-pole poles at j<=n have denominators <=8n, so den(U_n) divides \(L_n=\operatorname{lcm}(1,\ldots,8n)\). The elementary classical \(L_n\le4^{8n}\) and \(0<U_n<16^n\) imply an explicit universal decoder budget:
+\[
+\boxed{\text{the unique admissible original rational } U_n
+\text{ is recoverable from } U_n\bmod16^{10n}.}
+\]
+A common level \(16^{10N}\) recovers the ENTIRE exact finite selected path U0..UN, given its original source height class. Exact Euclidean rational reconstruction succeeded for **200/200** original BBP states, no π digit oracle. This is a genuine height-qualified finite ħ→real map and **not** a continuous 2-adic→real map on all source values.
+
+The price is the important obstruction: finite local Haar cancellation works with resolution depth r≲log16 N, whereas exact pointwise real reconstruction is guaranteed only by r=10N. These scales are widely separated. This is a proved observer-precision deficit, not π normality.
+
 ### Critical same-source counterexamples
 
 A changed initial seed \(-\pi/16\) is maximally coherent while satisfying the same original forcing; a changed seed \(1/7-\pi/16\) has **LINEAR** fixed-Q real lag energy yet nonzero h=1 Weyl mean (squared modulus 2/9). Neither is the authentic zero seed. Hence even strong anti-lock energy is insufficient by itself to prove normality.
