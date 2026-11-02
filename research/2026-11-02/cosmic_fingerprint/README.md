@@ -22,6 +22,10 @@ I_{90}=\int|\Phi_z+iR|^2=2M+2\operatorname{Im}S_M,
 \]
 so \(S_M=((I_0-2M)+i(I_{90}-2M))/2\). This is a new-to-SUCC phase-referenced observation route, a *classical* Fourier identity, **not** a new signed estimate.
 
+### An exact deterministic quadratic estimator — not a cosmological N0 claim
+
+The calibrated observable C_M+1/M is **exactly nonnegative**, equal to the squared normalized source/reference phase overlap. This resembles the off-diagonal-coupling and bias-subtraction logic of CMB lensing quadratic estimators, but Planck's statistical Gaussian N0/mean-field biases are NOT this deterministic 1/M diagonal correction. The core missing arithmetic signed estimate is unchanged. See CF-02B and the lensing papers cited in SOURCE_MAP.md.
+
 ### A certified finite source fingerprint, with a foreground-noise budget
 
 The independently pre-existing exact original p=257 signed certificate in SUCC #459 implies the calibrated 96-state cross-contrast is strictly less than −5/768. The coherent positive **changed source** from #421/#462 has contrast greater than 989/1000 on those same n=33..128 states. With an exactly calibrated reference and L² science-residual foreground error <=1/512, the signs remain separated: original contrast <−7/1536, shadow >987/1000. Those are exact finite inequalities and **not** all-p cancellation bounds.
