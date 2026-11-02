@@ -256,6 +256,34 @@ The Vandermonde matrix has nonzero determinant
 
 **Very important precision and authority firewall.** The theorem is a finite interpolation/reconstruction identity valid for ANY phases; it does not certify the actual source or bound their signed sum. Higher derivatives have magnitudes growing up to \(b^{N^2}\), so a finite-precision implementation may be badly conditioned. This is not a uniform-in-N stability theorem, computational speedup, or a normality proof. Unlike CR-04's *intensity-only* spectral readout, this instrument requires complex response values and high-order causal derivatives. The two are mathematically independent readout implementations of the same finite phase record, not blind independent mathematical provenance.
 
+## 6C. CR-06C — the full structural-effect Jacobian across causal time (PROVED, elementary Green algebra)
+
+The seed-intervention axis above varies U0 while retaining the exact forcing. A SECOND, separately typed causal experiment allows a small intervention at EACH forcing step. On a finite horizon 0<=n<=N, choose input changes \(\epsilon_0\) in the initial value and \(\epsilon_j\) in r_j, j>=1. The resulting state changes are EXACTLY
+\[
+\boxed{
+\delta U_n=\sum_{j=0}^{n}J_{n,j}\epsilon_j,\qquad
+J_{n,j}=b^{n-j}\mathbf1_{j\le n}.}\tag{CR-12e}
+\]
+This lower-triangular retarded Green matrix has every diagonal entry 1, hence \(\det J=1\). Its inverse is the *actual causal source differential*
+\[
+\boxed{
+(D_bv)_0=v_0,\quad (D_bv)_n=v_n-bv_{n-1}\ (n\ge1),
+\quad D_bJ=JD_b=I.}\tag{CR-12f}
+\]
+The first-order causal effect-birth law is
+\[
+\boxed{J_{n+1,j}-bJ_{n,j}=\delta_{j,n+1}.}\tag{CR-12g}
+\]
+This pinpoints the precise time at which a forcing intervention first enters the source path, rather than distributing it over a fictitious homogeneous time-frequency mode.
+
+For the authentic forcing r and coherent changed forcing r_tilde, with both literal zero seeds,
+\[
+\boxed{U_n-\widetilde U_n=\sum_{j=1}^{n}b^{n-j}(r_j-\widetilde r_j).}\tag{CR-12h}
+\]
+The identity reproduces the exact source boundary-amplifier comparison already made in #462. It is a **unimodular causal source-to-state isomorphism on finite line histories**; passing to circle states modulo one discards integer carry unless it is separately retained. This is the finite algebra behind the user's intended "rotate along structural effect across time" language.
+
+**Source-type firewall:** varying the source slots \(\epsilon_j\) changes the exact forcing, while varying only the initial seed \(\epsilon_0\) preserves it. A multi-intervention Fourier transform may be a richer observation instrument, but simply knowing J, its inverse or its δ birth law neither forces π digit equidistribution nor identifies the real selected seed. The source/carry/Archimedean phase must still enter a NEW signed estimate.
+
 ## 7. CR-07 — 34th-moment first resonance is source-only, not a selected-seed proof (INHERITED #404, independently exact-probed)
 
 **Prior art inside SUCC:** PR #404 (already integrated into Main XVII and then Main XIX) proved Haar seed-averaged balanced moments up through order 32 are phase-blind and identified the first phase-dependent balanced moment at order 34 (17 factors per side). This round DOES NOT rediscover or claim that result.
