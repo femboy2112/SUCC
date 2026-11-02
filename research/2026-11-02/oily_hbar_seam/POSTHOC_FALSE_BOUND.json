@@ -1,0 +1,39 @@
+{
+  "status": "RIGOROUS FINITE REFUTATION OF UNIVERSAL 2Q/N; POST-HOC SELECTED H, NOT BLIND",
+  "source": "UNCHANGED original signed four pole BBP, literal U0=0",
+  "selection": "exploratory numpy double sweep at N4096 Q16 h1..4096; 3 h selected after sweep",
+  "method": "Fraction exact selected state, rational Machin pi enclosure, 2^19 grid and degree18 rational Taylor, rigorous per-component LOWER; floor to 1e-9",
+  "reference_source_code": "posthoc_falsifier.py",
+  "results": [
+    {
+      "N": 4096,
+      "Q": 16,
+      "h": 1203,
+      "G_lower_floor_1e9": 8685093,
+      "strict_threshold_1e9": 7812500,
+      "relative_lower_floor_1e9": 2223383997,
+      "threshold_relative": 2,
+      "strict_counterexample": true
+    },
+    {
+      "N": 4096,
+      "Q": 16,
+      "h": 1800,
+      "G_lower_floor_1e9": 8972478,
+      "strict_threshold_1e9": 7812500,
+      "relative_lower_floor_1e9": 2296954454,
+      "threshold_relative": 2,
+      "strict_counterexample": true
+    },
+    {
+      "N": 4096,
+      "Q": 16,
+      "h": 3576,
+      "G_lower_floor_1e9": 8823807,
+      "strict_threshold_1e9": 7812500,
+      "relative_lower_floor_1e9": 2258894761,
+      "threshold_relative": 2,
+      "strict_counterexample": true
+    }
+  ]
+}
