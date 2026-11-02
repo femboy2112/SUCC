@@ -90,6 +90,6 @@ For every fixed integer polynomial P(E), the source-selection quotient is P↦P(
 - [SOURCE_MAP.md](SOURCE_MAP.md) — inherited sources, immutable original BBP and changed-source distinction
 - [NEXT.md](NEXT.md) — source-selected signed probe that could genuinely change the π-normality verdict
 - [unit_unit_exact_probe.py](unit_unit_exact_probe.py) and [tests/test_unit_unit_differential.py](../../../tests/test_unit_unit_differential.py) — stdlib, Fraction-based root-discoverable regression
-- [moment_independent_oracle.py](moment_independent_oracle.py) — optional numerical Beta integral cross-check, never proof authority
+- [moment_independent_oracle.py](moment_independent_oracle.py) and [analytic_differential_oracle.py](analytic_differential_oracle.py) — optional numerical Beta and continuous mixed-differential cross-checks, never proof authority
 
 **Progress:** new-to-SUCC source-class/observer theorem, unconditional exact identities, PNT-AP-dependent p-adic estimates, and stronger coherent hostile controls. **Not achieved:** selected original \(S_N(h)=o(N)\), base16 π normality or RH.
