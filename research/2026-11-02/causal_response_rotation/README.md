@@ -4,6 +4,20 @@
 
 The user's proposed rotation has a faithful operational meaning: rotate **the observer's independent variable** from chronological time to the counterfactual initial-seed perturbation s, measuring how the same fixed source changes with that initial condition. This is a source/seed-labelled Fourier representation in the *causal input* direction, not the ordinary DFT of the time series.
 
+## The correct line/circle/solenoid diagram and structural differential
+
+The honest maps are real-line causal lifts into the **inverse-limit solenoid**, then projection to a single circle:
+\[
+\mathbb R\xrightarrow{\ \iota\ }\Sigma_{16}\xrightarrow{\ \pi_0\ }\mathbb R/\mathbb Z.
+\]
+There is no canonical inverse from a single circle point into its whole branch-history solenoid. Multiplication by 16 is invertible on the real line and on \(\Sigma_{16}\), but **16-to-1 on the circle**. This is prior SUCC #452 topology applied to the new causal observer; no topological novelty claim.
+
+The causal intervention differential and dilation satisfy
+\[
+\mathcal D_h\mathcal C_{16}=16\mathcal C_{16}\mathcal D_h.
+\]
+This is an exact source-independent q-commutation law, and the source enters through the separately retained phase/time cocycle. See CR-01B in PROOFS.md.
+
 ## Three exact theorems
 
 Let b=16, h≠0, original U0=0 and the unchanged four-pole forcing. Then
