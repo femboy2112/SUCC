@@ -55,6 +55,8 @@ For both sources, N=2,3, h=1,2, every sampled Haar normalization was within 1e-1
 The remote uploaded numeric source Git blob was fetched and **matches** the executed local hash:
 causal_direct_oracle.py = 688a0c9135146da7bf802166f73face8c315ed80.
 
+**Source-matched normal vs coherent control is an analytic paper theorem (CR-04B), not a finite computation.** It imports the classical existence of a known base-16 normal number (Champernowne) or Borel almost-everywhere normality, the inherited summable real BBP Green tail, and the exact seed translation identity. It proves no normality of π itself, and its source-matched counterseed is an irrational real initial state distinct from the literal rational U0=0 register.
+
 ## 3. Proof scope and inherited 34th moment
 
 - CR-01 through CR-06B: full finite proof and infinite weak-limit arguments in PROOFS.md.
