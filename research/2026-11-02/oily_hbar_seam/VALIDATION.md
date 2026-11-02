@@ -18,6 +18,19 @@ The uploaded exact oracle Git blob was re-fetched:
 - conditional_interval.py SHA **676391bc73893104ec278031dec1fa1e837adf80**. 
 - CONDITIONAL_HOLDOUTS.json gives the 18 rational outward upper bounds. An externally usable independent replay is obtained by running the source module in a full checkout and comparing its freshly written receipt values to the preserved entries (allow metadata/output field differences; the actual upper fractions must agree).
 
+## POST-HOC RIGOROUS FALSIFICATION: 3 authentic original-source threshold violations
+
+This was performed only AFTER the 18 preregistered PASS results were known, so it must NEVER be described as a fresh blind holdout.
+
+A separate exploratory numpy/double scan at N4096,Q16 over h=1..4096 found three harmonic values exceeding the attractive universal \(G<2Q/N\): h=1203,1800,3576. Exploratory script exploratory_scan.py is FLOAT ONLY; no claims about rigorous pass/fail rely on it.
+
+A second rigorous program posthoc_falsifier.py then computed ORIGINAL four signed rational source states through N4096, the exact same Machin π bracket, dyadic phase grid and rational degree18 trig series as conditional_interval.py. For each complex local-class sum, it **SUBTRACTS** the proven per-component group error, clips at zero, and squares, giving a rational LOWER bound on G. The following lower bounds were rounded DOWN to denominator 10^9, so the strict inequalities remain certified:
+- h=1203: \(G>0.008685093>0.0078125=2Q/N\), and \(G/(Q/N)>2.223383997\).
+- h=1800: \(G>0.008972478>0.0078125\), and \(G/(Q/N)>2.296954454\).
+- h=3576: \(G>0.008823807>0.0078125\), and \(G/(Q/N)>2.258894761\).
+
+All **3/3 rigorous rational negative certificates PASS**. Same-session exploration/verification is not independent blinding; the mathematical certificate is nevertheless decisive for its exactly stated FINITE universal-inequality counterexamples. The exact lower receipt is POSTHOC_FALSE_BOUND.json. These finite h were selected by posthoc exploration; fixed-h eventual normality and weaker h-dependent polylog sufficient criteria remain OPEN.
+
 ## Independently implemented numerical source replay
 
 A separate local implementation builds each rational original U_n using the **combined** authentic numerator/denominator
