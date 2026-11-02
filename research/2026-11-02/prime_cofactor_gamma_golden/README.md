@@ -17,6 +17,8 @@
 - **PGC-06/07:** for n≥2, authentic Gamma tail satisfies 0<T_n<[H_n−log n−γ]²/16, with ratio 16T_n/D_n²→1 and nonzero cubic discrepancy.
 - **PGC-08:** exact Fibonacci golden circle-return identity; harmonic defects contract by η=φ⁻¹ and BBP Gamma tails by η² along Fibonacci scales. This is not γ=η or a signed dynamical estimate.
 
+**PGC-09:** [dyadic prime-clean coverage and ℓ² gluing](DYADIC_PRIME_GLUING.md). Every sufficiently large dyadic time epoch fits an exact p-clean window (classical PNT-AP); a source-selected *local* histogram bound would imply the global square-checkpoint cap without covering every cross-epoch pair.
+
 **Still OPEN:** source-selected all-L integer collision cap, all-pair prime-window coverage, long-range cofactor dephasing and π normality.
 
-**Files:** [PROOFS.md](PROOFS.md), [NEXT.md](NEXT.md), [SOURCE_MAP.md](SOURCE_MAP.md), [VALIDATION.md](VALIDATION.md), [prime_cofactor_gamma.py](prime_cofactor_gamma.py), [generate_receipt.py](generate_receipt.py), [FINITE_RECEIPT.json](FINITE_RECEIPT.json), and root-discoverable tests/test_prime_cofactor_gamma_golden.py. Draft only; no merge/release/publication authority.
+**Files:** [PROOFS.md](PROOFS.md), [DYADIC_PRIME_GLUING.md](DYADIC_PRIME_GLUING.md), [NEXT.md](NEXT.md), [SOURCE_MAP.md](SOURCE_MAP.md), [VALIDATION.md](VALIDATION.md), [prime_cofactor_gamma.py](prime_cofactor_gamma.py), [generate_receipt.py](generate_receipt.py), [FINITE_RECEIPT.json](FINITE_RECEIPT.json), and root-discoverable tests/test_prime_cofactor_gamma_golden.py. Draft only; no merge/release/publication authority.
