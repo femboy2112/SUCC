@@ -173,6 +173,16 @@ class UnitUnitDifferential(unittest.TestCase):
             self.assertEqual(shadow(n+1)-16*shadow(n),changed_source(n+1))
             self.assertGreater(changed_source(n+1),0)
 
+    def test_strict_mixed_unit_covariance_and_branch_monotonicity(self):
+        for n in range(0, 17):
+            for d in range(0, 15):
+                a,b,c=eta(n,d),eta(n+1,d),eta(n+2,d)
+                cross=a*eta(n+1,d+1)-b*eta(n,d+1)
+                self.assertEqual(cross,b*b-a*c)
+                self.assertLess(cross,0)
+                self.assertGreater(c/b,b/a)
+                self.assertLess(eta(n+1,d+1)/eta(n,d+1),b/a)
+
     def test_stronger_complete_moment_source_jet_comparison(self):
         # The paper-level density inequality w_shadow >= (19/20) w_true
         # implies this at every n,d; here the whole finite grid is exact.
