@@ -168,6 +168,28 @@ At each node \(H_{n+1,d}/H_{n,d}\) and \(H_{n,d+1}/H_{n,d}\) lie in (0,1) and su
 
 This is compatible with PR #440's original source Pascal jets, but the **coherent-shadow positive measure and all-grade domination** are new to this research round.
 
+## UU-04B. The genuine second unit–unit differential measures a strictly positive variance (PROVED)
+
+The two-axis conservation law has a nonzero, quantitative *mixed second differential*. Fix n,d and normalize the positive measure to a probability
+\[
+d\mathbb P_{n,d}(x)=\frac{x^n(1-x)^d\widetilde w(x)\,dx}{\widetilde H_{n,d}}.
+\]
+Let \(a=\widetilde H_{n,d}\), \(b=\widetilde H_{n+1,d}\), \(c=\widetilde H_{n+2,d}\). The Pascal law gives \(\widetilde H_{n,d+1}=a-b\), \(\widetilde H_{n+1,d+1}=b-c\). Hence the exact 2x2 mixed determinant is
+\[
+\boxed{
+a\widetilde H_{n+1,d+1}-b\widetilde H_{n,d+1}
+=b^2-ac=-a^2\operatorname{Var}_{n,d}(X)<0.
+}\tag{11a}
+\]
+Strictness holds because the explicit density is positive throughout (0,1), not a point mass. Thus the discrete cross-difference of the log of the tower is STRICTLY NEGATIVE:
+\[
+\boxed{\Delta_n\Delta_d\log\widetilde H_{n,d}
+=\log\frac{\widetilde H_{n+1,d+1}\widetilde H_{n,d}}
+{\widetilde H_{n+1,d}\widetilde H_{n,d+1}}<0.}\tag{11b}
+\]
+The time-branch probability \(b/a\) increases strictly with n and decreases strictly with d. In particular, \(p_{n+1,d}-p_{n,d}=\operatorname{Var}(X)/\mathbb E X>0\).
+The same strict determinant and monotonicities hold for the TRUE tail H; their actual determinant *values* differ because their measures differ. This is an operational source-dependent posterior covariance, not a geometrically normalized connection curvature or a physical field. Both the true and coherent changed sources have it, so even STRICT 2D cross-differential sign cannot certify normality.
+
 ## UU-05. Higher derivatives still have huge prime conductors in the coherent shadow (PROVED PAPER)
 
 For n>=1,d>=1, \(15^d16^nq=47\cdot15^{d-1}16^{n-1}\in\mathbb Z\), so
