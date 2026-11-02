@@ -1,0 +1,435 @@
+{
+  "receipt_version": "MEGA_ROUND_3_PLANCHEREL_BILINEAR_COLLAPSE_2026_11_02",
+  "claims": {
+    "PBC-01": {
+      "p": 97,
+      "L": 12,
+      "h": 1,
+      "fourier_coupling_sum_re": 3.9230616876187003,
+      "fourier_coupling_sum_im": 0.8641790456100408,
+      "direct_product_sum_re": 3.9230616876187017,
+      "direct_product_sum_im": 0.864179045610044,
+      "plancherel_error": 3.4844027277880974e-15,
+      "plancherel_exact_match": true
+    },
+    "PBC-02": {
+      "p": 97,
+      "L": 12,
+      "h": 1,
+      "max_fractional_pole_discrepancy": "0",
+      "pole_annihilated_identically": true
+    },
+    "PBC-03": {
+      "p": 97,
+      "L": 12,
+      "h": 1,
+      "weyl_sum_norm": 1.0546790619314637,
+      "gauss_dc_norm": 3.318460578783179,
+      "discrepancy_re": 0.3566419716017002,
+      "discrepancy_im": 0.07856173141909496,
+      "discrepancy_magnitude": 0.36519233501199605
+    },
+    "PBC-04": {
+      "p": 97,
+      "L": 12,
+      "total_gauss_energy": 144.0,
+      "expected_L_squared": 144,
+      "energy_partition_error": 0.0,
+      "energy_conservation_exact": true
+    },
+    "PBC-05": {
+      "total_rows": 630,
+      "dps": 2000,
+      "statistics_by_h": {
+        "1": {
+          "n": 210,
+          "mean": 0.496816,
+          "median": 0.502186,
+          "stdev": 0.066156,
+          "diff_from_half": 0.003184
+        },
+        "3": {
+          "n": 210,
+          "mean": 0.503335,
+          "median": 0.501831,
+          "stdev": 0.047982,
+          "diff_from_half": 0.003335
+        },
+        "5": {
+          "n": 210,
+          "mean": 0.504139,
+          "median": 0.502609,
+          "stdev": 0.072285,
+          "diff_from_half": 0.004139
+        }
+      },
+      "all_means_within_0_01_of_half": true
+    },
+    "PBC-06": {
+      "split_statistics": {
+        "1": {
+          "p_1_mod_8": {
+            "n": 101,
+            "mean": 0.502191,
+            "diff_from_half": 0.002191
+          },
+          "p_5_mod_8": {
+            "n": 109,
+            "mean": 0.491835,
+            "diff_from_half": 0.008165
+          }
+        },
+        "3": {
+          "p_1_mod_8": {
+            "n": 101,
+            "mean": 0.512209,
+            "diff_from_half": 0.012209
+          },
+          "p_5_mod_8": {
+            "n": 109,
+            "mean": 0.495112,
+            "diff_from_half": 0.004888
+          }
+        },
+        "5": {
+          "p_1_mod_8": {
+            "n": 101,
+            "mean": 0.498994,
+            "diff_from_half": 0.001006
+          },
+          "p_5_mod_8": {
+            "n": 109,
+            "mean": 0.508907,
+            "diff_from_half": 0.008907
+          }
+        }
+      },
+      "max_mod8_mean_divergence": 0.017097,
+      "mod8_invariance_holds": true
+    },
+    "PBC-07": {
+      "correlations": {
+        "1": {
+          "pearson_corr_with_L": 0.0569,
+          "pearson_corr_with_p": 0.1367
+        },
+        "3": {
+          "pearson_corr_with_L": -0.0388,
+          "pearson_corr_with_p": -0.0629
+        },
+        "5": {
+          "pearson_corr_with_L": -0.027,
+          "pearson_corr_with_p": -0.0335
+        }
+      },
+      "all_correlations_small": true
+    },
+    "PBC-08": {
+      "p": 97,
+      "L": 12,
+      "total_dhat_energy": 1.8132473948018564,
+      "parseval_rhs": 1.8132473948018555,
+      "parseval_error": 8.881784197001252e-16,
+      "rms_mode_amplitude": 0.38872091475353027,
+      "rms_bound_sqrt_2_over_L": 0.408248290463863,
+      "total_energy_bounded": true
+    },
+    "PBC-09": {
+      "log_ratio": 2.5237190142858297,
+      "convergents": [
+        {
+          "num": 2,
+          "den": 1,
+          "integer_gap": 7
+        },
+        {
+          "num": 5,
+          "den": 2,
+          "integer_gap": 13
+        },
+        {
+          "num": 13,
+          "den": 5,
+          "integer_gap": -545747
+        }
+      ],
+      "proximity_16_2_minus_3_5": 13,
+      "proximity_verified": true
+    },
+    "PBC-10": {
+      "num_states": 48,
+      "uniform_stationary_prob": "1/48",
+      "strong_connectivity": true,
+      "spectral_gap_lower_bound": "1/16"
+    },
+    "PBC-11": {
+      "a": 257,
+      "b": -38,
+      "c": 10,
+      "discriminant": -8836,
+      "is_positive_definite": true,
+      "min_eigenvalue": 8.547008839323894,
+      "max_eigenvalue": 258.4529911606761
+    },
+    "PBC-12": {
+      "seed_s_star": -0.19634954084936207,
+      "first_ten_base3_steps": [
+        0.8036504591506379,
+        0.410951377451914,
+        0.23285413235574204,
+        0.6985623970672261,
+        0.09568719120167835,
+        0.28706157360503504,
+        0.8611847208151051,
+        0.5835541624453153,
+        0.750662487335946,
+        0.25198746200783795
+      ],
+      "unique_points_in_first_ten": 10,
+      "non_torsion_confirmed": true
+    },
+    "PBC-13": {
+      "denominator_formula": "8*n*(8*n + 7)",
+      "roots": [
+        0.0,
+        -0.875
+      ],
+      "values_n_1_to_10": [
+        [
+          1,
+          120
+        ],
+        [
+          2,
+          368
+        ],
+        [
+          3,
+          744
+        ],
+        [
+          4,
+          1248
+        ],
+        [
+          5,
+          1880
+        ],
+        [
+          6,
+          2640
+        ],
+        [
+          7,
+          3528
+        ],
+        [
+          8,
+          4544
+        ],
+        [
+          9,
+          5688
+        ],
+        [
+          10,
+          6960
+        ]
+      ],
+      "strictly_positive_on_physical_range": true
+    },
+    "PBC-14": {
+      "convexity_records": [
+        {
+          "n": 1,
+          "U_n": "47/15",
+          "delta2_U_n": "541284196/765765",
+          "is_positive": true
+        },
+        {
+          "n": 2,
+          "U_n": "205826/4095",
+          "delta2_U_n": "139531848252/12337325",
+          "is_positive": true
+        },
+        {
+          "n": 3,
+          "U_n": "615863723/765765",
+          "delta2_U_n": "14125089078845996/78058255275",
+          "is_positive": true
+        },
+        {
+          "n": 4,
+          "U_n": "1428806141948/111035925",
+          "delta2_U_n": "14207956289076877876/4907262314955",
+          "is_positive": true
+        },
+        {
+          "n": 5,
+          "U_n": "16071212445820879/78058255275",
+          "delta2_U_n": "759045856817272188192596/16385348869634745",
+          "is_positive": true
+        },
+        {
+          "n": 6,
+          "U_n": "80827484660698633414/24536311574775",
+          "delta2_U_n": "24667767394082846326694956/33281089916733945",
+          "is_positive": true
+        },
+        {
+          "n": 7,
+          "U_n": "4318127540987083098959311/81926744348173725",
+          "delta2_U_n": "8165579180050519425738451196/688548771388428951",
+          "is_positive": true
+        },
+        {
+          "n": 8,
+          "U_n": "130649266880774398385420101096/154923473562396513975",
+          "delta2_U_n": "47686982411495107429430405807828/251320301556776567115",
+          "is_positive": true
+        },
+        {
+          "n": 9,
+          "U_n": "2090388270092909093421859664191/154923473562396513975",
+          "delta2_U_n": "885833385275933169996775812924702716/291782870107417594420515",
+          "is_positive": true
+        },
+        {
+          "n": 10,
+          "U_n": "128503868393081475309569689733902/595232293160786606325",
+          "delta2_U_n": "3120371411039350281714990852527471063668/64238302403122515655842855",
+          "is_positive": true
+        }
+      ],
+      "all_strictly_positive": true
+    },
+    "PBC-15": {
+      "amplification_factor": 225,
+      "is_fifteen_squared": true,
+      "escape_rate_per_step": 15
+    },
+    "PBC-16": {
+      "quartic_factorization_checks": [
+        {
+          "x": 1,
+          "poly": 5,
+          "f1": 1,
+          "f2": 5,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 2,
+          "poly": 65,
+          "f1": 5,
+          "f2": 13,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 3,
+          "poly": 325,
+          "f1": 13,
+          "f2": 25,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 4,
+          "poly": 1025,
+          "f1": 25,
+          "f2": 41,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 5,
+          "poly": 2501,
+          "f1": 41,
+          "f2": 61,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 6,
+          "poly": 5185,
+          "f1": 61,
+          "f2": 85,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 7,
+          "poly": 9605,
+          "f1": 85,
+          "f2": 113,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 8,
+          "poly": 16385,
+          "f1": 113,
+          "f2": 145,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 9,
+          "poly": 26245,
+          "f1": 145,
+          "f2": 181,
+          "product_matches": true,
+          "gcd": 1
+        },
+        {
+          "x": 10,
+          "poly": 40001,
+          "f1": 181,
+          "f2": 221,
+          "product_matches": true,
+          "gcd": 1
+        }
+      ],
+      "all_products_match": true,
+      "all_gcds_one": true
+    },
+    "PBC-17": {
+      "sieve_order_sums": [
+        {
+          "K": 10,
+          "exact_sum": 55,
+          "bound": 55,
+          "asymptotic_order": "O(10^2)"
+        },
+        {
+          "K": 20,
+          "exact_sum": 210,
+          "bound": 210,
+          "asymptotic_order": "O(20^2)"
+        },
+        {
+          "K": 50,
+          "exact_sum": 1275,
+          "bound": 1275,
+          "asymptotic_order": "O(50^2)"
+        },
+        {
+          "K": 100,
+          "exact_sum": 5050,
+          "bound": 5050,
+          "asymptotic_order": "O(100^2)"
+        }
+      ],
+      "all_bounds_tight": true
+    },
+    "PBC-18": {
+      "prime_bound": 10000,
+      "total_primes_1_mod_4": 608,
+      "primes_with_L_gt_sqrt_p": 569,
+      "percentage": 93.59,
+      "mean_order": 676.4,
+      "census_exceeds_93_pct": true
+    }
+  }
+}
