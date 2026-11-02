@@ -164,6 +164,28 @@ class CausalResponseTest(unittest.TestCase):
                                    for k in range(N+1)),Q(0))
                     self.assertEqual(recovered,coeffs[n])
 
+    def test_solenoid_branch_history_and_causal_q_commutator(self):
+        for b in (2,3,16):
+            seed=Q(7,11)
+            tower=[(seed/Q(b**j))%1 for j in range(9)]
+            self.assertEqual(tower[0],seed%1)
+            for j in range(8):
+                self.assertEqual((b*tower[j+1])%1,tower[j])
+            forward=[(b*tower[0])%1]+tower[:8]
+            self.assertEqual(forward,[(b*x)%1 for x in tower])
+            self.assertEqual(forward[1:],tower[:8])
+            zero=[Q(0)]*9
+            alternative=[Q(0)]+[Q(1,b**j) for j in range(1,9)]
+            self.assertEqual(zero[0],alternative[0])
+            self.assertNotEqual(zero[1],alternative[1])
+            for j in range(8):
+                self.assertEqual((b*alternative[j+1])%1,alternative[j])
+            # On e(k*s), D_h C_b has eigenvalue b*k/h while
+            # b C_b D_h multiplies the same frequency by b*k/h.
+            for h in (1,3):
+                for k in (-4,-1,0,1,7):
+                    self.assertEqual(Q(b*k,h),b*Q(k,h))
+
     def test_exponential_causal_resolution_floor(self):
         for b in (2,3,16):
             for N in range(1,9):
