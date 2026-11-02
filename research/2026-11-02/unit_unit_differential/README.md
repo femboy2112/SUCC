@@ -14,6 +14,15 @@ H_{n,d}=H_{n+1,d}+H_{n,d+1}.
 
 Here \(d_n=\sum_{j=1}^{n+1}16^{-j}r(n+j)\) belongs to the **zero-seeded coherent changed source** from #421 and #462. Original source r is unchanged throughout. A new positive Hausdorff moment measure \(\widetilde w\) is explicitly constructed and **uniformly dominates 95% of the original complete tail measure**. In fact the changed forcing, not merely the finite tail, has positive *all-order* unit difference jets dominated between 95% and 100% of the original source's own jets. This is a rigorous, all-n/all-d positive-Pascal **coherent counterexample**: positivity of a complete higher-SUCC differential tower does not force real signed phase mixing.
 
+## The second differential has a genuine mixed covariance
+
+There is more than positive conservation. The strict 2D mixed determinant satisfies
+\[
+H_{n,d}H_{n+1,d+1}-H_{n+1,d}H_{n,d+1}
+=-H_{n,d}^2\operatorname{Var}_{n,d}(X)<0.
+\]
+Thus the unit-time branch probability increases with time n and decreases with differential order d; this is a real source-dependent mixed Hessian. The coherent shadow satisfies it too, so this is a valid observer curvature/variance **diagnostic**, not a theorem about normal digits.
+
 ## Exact new arithmetic
 
 **Original source, every higher differential:** for every fixed epsilon>0, uniformly \(0\le d\le(3-\varepsilon)n\),
