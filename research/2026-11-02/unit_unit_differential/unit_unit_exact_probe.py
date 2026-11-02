@@ -173,6 +173,18 @@ class UnitUnitDifferential(unittest.TestCase):
             self.assertEqual(shadow(n+1)-16*shadow(n),changed_source(n+1))
             self.assertGreater(changed_source(n+1),0)
 
+    def test_stronger_complete_moment_source_jet_comparison(self):
+        # The paper-level density inequality w_shadow >= (19/20) w_true
+        # implies this at every n,d; here the whole finite grid is exact.
+        for n in range(0, 15):
+            for d in range(0, 13):
+                true_src = (-1)**d*delta(lambda j: source(j+1), n, d)
+                shadow_src = (-1)**d*delta(lambda j: changed_source(j+1),n,d)
+                self.assertGreater(true_src,0)
+                self.assertGreater(shadow_src,0)
+                self.assertGreaterEqual(shadow_src, Q(19,20)*true_src)
+                self.assertLessEqual(shadow_src, true_src)
+
     def test_positive_shadow_moment_stirling_control(self):
         for n in (0, 1, 2, 3, 5, 8):
             for d in (0, 1, 2, 3, 5, 9, 16, 28):
