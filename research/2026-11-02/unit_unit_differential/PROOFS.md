@@ -190,6 +190,38 @@ Strictness holds because the explicit density is positive throughout (0,1), not 
 The time-branch probability \(b/a\) increases strictly with n and decreases strictly with d. In particular, \(p_{n+1,d}-p_{n,d}=\operatorname{Var}(X)/\mathbb E X>0\).
 The same strict determinant and monotonicities hold for the TRUE tail H; their actual determinant *values* differ because their measures differ. This is an operational source-dependent posterior covariance, not a geometrically normalized connection curvature or a physical field. Both the true and coherent changed sources have it, so even STRICT 2D cross-differential sign cannot certify normality.
 
+## UU-04C. A literal continuous differential, not merely a discrete derivative (PROVED)
+
+The reconstructed Hausdorff source supplies a **declared analytic extension**, rather than an undefined noninteger upper limit in the finite sum. For \(\Re z>-1/8\), set
+\[
+T(z)=\int_0^1x^z w(x)\,dx,\quad
+d(z)=\int_0^1x^z\widetilde w(x)\,dx.
+\]
+These are holomorphic on the indicated half-plane (integrability near zero follows from \(w(x)=O(x^{-7/8})\), including any fixed power of \(|\log x|\)). Their restrictions at nonnegative integers are EXACTLY the original T_n and finite rational d_n. The positive compact-interval Hausdorff moment measure is unique given its entire infinite integer moment sequence; **a finite prefix does not determine it**. The expression d(z) is NOT defined by pretending the upper limit "z+1" in d_n is a noninteger summation endpoint.
+
+Let \(D=\partial_z\) and \(E f(z)=f(z+1)\), \(\Delta=E-I\). On their declared common analytic domain D and E commute, but their different meanings are retained. For integers a,b>=0 and REAL z>−1/8 define
+\[
+\boxed{
+J_{a,b}(z)=(-1)^{a+b}D^a\Delta^b d(z)
+=\int_0^1x^z(-\log x)^a(1-x)^b\widetilde w(x)\,dx>0.
+}\tag{11c}
+\]
+The completely original counterpart uses w(x). The explicit density comparison (8) yields, for EVERY real z>−1/8 and EVERY a,b>=0,
+\[
+\boxed{\frac{19}{20}J_{a,b}^{\rm true}(z)
+\le J_{a,b}^{\rm shadow}(z)\le J_{a,b}^{\rm true}(z).}\tag{11d}
+\]
+The two actual differential directions have the exact joint update laws
+\[
+\boxed{\partial_zJ_{a,b}(z)=-J_{a+1,b}(z),\qquad
+\Delta_zJ_{a,b}(z)=-J_{a,b+1}(z),}\tag{11e}
+\]
+and the unit-Pascal conservation
+\(J_{a,b}(z)=J_{a,b}(z+1)+J_{a,b+1}(z)\).
+The same identities hold after multiplying the integrand by (16−x) for the two source forcings themselves.
+
+Thus the original and coherent changed sources admit a **joint continuous differential × discrete unit successor** positivity tower, uniform in the entire real analytic time domain and in both orders. This is stronger than only the integer Newton jets. It does NOT mean physical time is a continuum, nor that scalar differentiation is source-selected signed mixing. Do not infer a globally convergent Taylor representation for E by summing a formal \(e^D\) series outside its radius.
+
 ## UU-05. Higher derivatives still have huge prime conductors in the coherent shadow (PROVED PAPER)
 
 For n>=1,d>=1, \(15^d16^nq=47\cdot15^{d-1}16^{n-1}\in\mathbb Z\), so
