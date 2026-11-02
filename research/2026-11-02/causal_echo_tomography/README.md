@@ -22,6 +22,14 @@ For the explicit polynomial bump with M=4 and rational epsilon, the perturbed fo
 \]
 This is an exact rational finite example of **small, late source echo → macroscopic real-circle phase difference**. There is no claim that this particular rational-ε source is nonnormal; its completed normality is NOT classified.
 
+## Circle/line geometry: the hidden echo is a relative boundary class
+
+The source-echo correction is the ordinary exact one-form
+\[
+\delta\omega=\epsilon\psi_M(x)/(16-x)\,dx=dF,
+\]
+but \(F(1)-F(0)=\epsilon\beta_M\ne0\). It is therefore **not endpoint-relative exact**. This explains how identical local pole/asymptotic data can coexist with different global completed periods. It directly complements SUCC #452's ORIGINAL four-pole angular coboundary, whose primitive vanishes at both endpoints. The altered source is a different period, NOT a second value of π.
+
 ## General categorical observability criterion — the source-kernel lamp
 
 For ANY finite list of linear source measurements \(L_i(\mu)=\int\phi_i(x)d\mu(x)\) on an interval inside (0,1), the completed boundary \(A(\mu)=\int(16-x)^{-1}d\mu\) is determined by those observations on the full measure class **if and only if** the resolvent weight \(1/(16-x)\) belongs to the linear span of the measured weights \(\phi_i\). Otherwise a smooth, compactly supported source perturbation can annihilate *all* those measurements, preserve positivity with arbitrarily small all-jet relative error, and change the completion.
