@@ -6,6 +6,8 @@ A complete 2D unit–unit Pascal moment tower, 19/20 source-jet domination, sour
 
 The positive Pascal tower now additionally has a nonzero strict mixed logarithmic Hessian, exactly a negative variance (UU-04B). This is a genuine nontrivial unit–unit diagnostic. Since BOTH the true and coherent changed-source measures satisfy it, a proposed normality mechanism must extract a *quantitative real-phase constraint* from the specific mixed variance, not merely assert its sign.
 
+The hierarchy is now jointly analytic in z and discrete in unit order: both D^a Delta^b and the finite Pascal towers are positive and 19/20-matched for all real z>−1/8. The analytic-continuation construction is exact only after declaring the Hausdorff measure, not a fractional finite truncation. Any proposed normality attack must use more than the signs or relative size of these mixed derivatives, because the coherent changed source satisfies every one of them.
+
 ## First falsifiable target: a genuinely NEW mixed real-source inequality
 
 Freeze source to ORIGINAL four poles, U0=0, and the exact source selected phase z_n=e(hU_n). In the p=8k+5 prime birth windows I_p, the mixed factor is
