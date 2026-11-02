@@ -41,6 +41,42 @@ The circle is the quotient of this lifted line by integer deck translations. The
 
 The cause-to-effect derivative b^n is source-independent. It records the causal amplification of the initial state; it does NOT itself determine the actual pi trajectory or which seed was selected.
 
+## 1B. CR-01B — the correct invertible circle/line carrier is a solenoid (PROVED; solenoid idea inherited #452)
+
+Define the inverse-limit solenoid
+\[
+\Sigma_b=\{(s_0,s_1,\ldots)\in(\mathbb R/\mathbb Z)^\mathbb N:
+bs_{j+1}=s_j\bmod1\}.
+\]
+Multiplication by b on every coordinate is an **automorphism**
+\[
+\boxed{[b](s_0,s_1,\ldots)=(bs_0,s_0,s_1,\ldots),\quad
+[b]^{-1}(s_0,s_1,\ldots)=(s_1,s_2,\ldots).}\tag{CR-1a}
+\]
+On the individual circle, the map s_0→bs_0 is b-to-1 and cannot be inverted without a choice of inverse-branch history. Its solenoidal lift IS invertible because the compatible whole history is retained. The exact mathematical idea of a solenoidal invertible cover was previously developed in SUCC #452; it is **not newly discovered** here.
+
+The lifted real causal coordinate s has a canonical map
+\[
+\boxed{\iota(s)=(s\bmod1,s/b\bmod1,s/b^2\bmod1,\ldots)\in\Sigma_b,}\tag{CR-1b}
+\]
+and projection \(\pi_0:\Sigma_b\to\mathbb R/\mathbb Z\) obeys
+\(\pi_0\iota(s)=s\bmod1\) and \([b]\iota(s)=\iota(bs)\).
+There is NO canonical continuous circle→solenoid inverse without selecting infinitely many compatible roots. As an explicit counterexample, both towers
+\[
+(0,0,0,\ldots)\quad\text{and}\quad
+(0,1/b,1/b^2,\ldots)
+\]
+project to the SAME initial circle value zero, but encode different inverse histories.
+
+On any continuously differentiable circle function f(s), write \(C_bf(s)=f(bs)\) and \(D_h=(2\pi ih)^{-1}\partial_s\). The chain rule yields the **noncommutative unit–unit causal differential law**
+\[
+\boxed{D_h C_b=b\,C_b D_h,\qquad
+[D_h,C_b]=(b-1)C_b D_h.}\tag{CR-1c}
+\]
+This is the explicit operator-level version of the user's proposed rotation along *causal effect* rather than along ordinary chronological Fourier frequencies. It is classical dilation/differentiation algebra; it does not create intrinsic Riemann curvature or a source-derived signed saving. A scalar phase field's open-path cocycle is not automatically nontrivial closed-loop holonomy.
+
+The correct **typed factorization is real line→solenoid→circle**, not circle→line as an invertible homeomorphism. Causal-time dilation is invertible in the first two carriers (with all inverse history retained) and noninvertible on a single circle snapshot. Source identity and the literal U0=0 real-lift anchor remain separate additional data.
+
 ## 2. CR-02 — the causal-axis Fourier lift is isometric, not a chronological DFT (PROVED)
 
 Let M=N+1 and consider arbitrary unit complex phases z_0,...,z_N. Define
