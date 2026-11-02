@@ -8,6 +8,8 @@
 \]
 Do not count the PWI-03 equivalence or any Galois/principal-character average as this bound. A stronger log-power saving is optional, not free.
 
+**Do not mistake the source amplifier for the solution:** DPF-06 proves the exact true-vs-shadow difference equals 16^n(15pi−47)/240 plus an exponentially negligible real remainder. This authentically distinguishes complete source boundary data, but proving distribution of that amplified irrational constant is the original normality problem under a rational translation, not a shortcut. Require a NEW inequality rather than this exact identity.
+
 **Weakest testable next source discriminator:**
 1. Take an explicit mixed prime/cofactor correlation involving **complete** source first jets and the genuine real archimedean embedding, not only finite moments or Laurent poles. Predict a quantitative upper for authentic vs coherent positive shadow BEFORE viewing results.
 2. Search for a proof of the source-specific cofactor Fourier **weighted** estimate, with a declared rank/variation/moment hypothesis and an explicit proof that the authentic V_(p,n) satisfies it. BGK applies to unweighted periods, not arbitrary cofactor weights.
