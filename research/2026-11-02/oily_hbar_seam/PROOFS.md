@@ -208,6 +208,17 @@ therefore gives
 \]
 This is a genuine original-source upper \(G<1\), uniform at moving Q≤M, but vastly too small to imply (18), let alone normality.
 
+## OMH-05B. An exact refinement monotonicity obstruction (PROVED, universal)
+
+The conditional energy (15) is monotone **NONDECREASING** under carrier refinement at a fixed, divisible horizon. For divisors \(Q_1\mid Q_2\mid N\), group each \(Q_1\)-class as \(t=Q_2/Q_1\) finer classes. Cauchy–Schwarz gives \(|\sum_{j=1}^t A_j|^2\le t\sum_j|A_j|^2\), hence
+\[
+\boxed{G_{N,Q_1}(h)\le G_{N,Q_2}(h),\quad
+G_{N,1}(h)=|S_N(h)/N|^2,\quad G_{N,N}(h)=1.}\tag{20a}
+\]
+This is a finite exact fact for ANY unit phases. It creates a nontrivial design constraint: increasing carrier precision while observing the same finite time span cannot *by itself* reduce the normalized conditional real-energy upper bound. In particular a good finite \(Q=16\) estimate cannot be extrapolated mechanically to growing Q, even though the original carrier source is exactly Haar at both levels. A proof of small \(G_{N,Q(N)}\) must derive a genuinely NEW signed cofiber estimate, not invoke refinement monotonicity in the wrong direction.
+
+On the exact base-16 orbit, normality would also imply \(G_{N,Q}(h)\to0\) at any fixed Q by the classical theorem that b-normality implies b^Q-normality and shift invariance, but this is NOT an all-growing-Q bound and is not used as a proof input.
+
 ## OMH-06. PREDECLARED 18 original-source finite conditional-energy certificates (OBSERVED CALIBRATED)
 
 The first committed file on this draft branch was PREREGISTRATION.md, created **before** inspecting selected amplitudes at these fresh choices:
