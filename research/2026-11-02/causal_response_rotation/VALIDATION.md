@@ -12,7 +12,7 @@ python -m unittest discover -s tests -p 'test_causal_response_rotation.py'
 
 The standalone exact local script was executed after its final edits:
 ~~~text
-Ran 10 tests in 0.041s
+Ran 11 tests in 0.063s
 OK
 ~~~
 
