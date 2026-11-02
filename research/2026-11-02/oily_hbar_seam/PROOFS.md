@@ -231,6 +231,33 @@ The strict finite target is **G_(N,Q)(h)<2Q/N on EVERY one of 18 pairs**. The so
 
 These 18 finite cases were selected by the SAME model that implemented the oracle; not externally blind. No all-N G estimate was inferred or proved.
 
+## OMH-06B. POST-HOC exact original-source counterexamples to universal coefficient 2 (OBSERVED EXACT FINITE; NOT a normality refutation)
+
+After the 18 predeclared certificates were complete, a SEPARATE exploratory floating scan examined N=4096, Q=16 and h=1,...,4096, using the same authentic four-pole signed rational source. It found h=1203,1800,3576 with \(G_{N,Q}(h)>2Q/N\). These harmonics were selected **AFTER seeing the float outputs**, so this is NOT another blind/preregistered holdout. The search is reproduced in exploratory_scan.py (requires optional numpy; **not** proof-authoritative).
+
+The discoveries were then rigorously certified independently of floating decisions by posthoc_falsifier.py, which reuses the EXACT source/Machin/Taylor rational phase enclosures and takes a **lower** bound on each class complex norm:
+\[
+\boxed{\left|\sum_{n\equiv a(Q)}e(hU_n)\right|^2
+\ge
+\bigl[\max(0,|R_a|/10^9-L\epsilon)\bigr]^2+
+\bigl[\max(0,|I_a|/10^9-L\epsilon)\bigr]^2,}
+\]
+where \(L=N/Q=256\), \(R_a,I_a\) are the actual integer truncated rational Taylor group sums, and \(\epsilon\) is the provably sufficient per-coordinate error from conditional_interval.py. Sum these 16 rational lower bounds and multiply by Q/N²; every comparison below uses exact Fraction, with the displayed lower bounds rounded **DOWN** to nine decimal places.
+
+For original U0=0, N=4096, Q=16, hence \(2Q/N=0.0078125\), one obtains:
+\[
+\begin{array}{r|cc}
+h & \text{certified }G_{4096,16}(h)\text{ lower} &
+\text{certified }G/(Q/N)\text{ lower}\\
+1203&0.008685093&2.223383997\\
+1800&0.008972478&2.296954454\\
+3576&0.008823807&2.258894761
+\end{array}
+\]
+All three strict lower bounds EXCEED 2Q/N, so the pleasant universal inequality \(G_{N,Q}(h)<2Q/N\) at every time/harmonic is **REFUTED by authentic source evidence**, even though all 18 earlier predeclared cells PASS. The exact lower construction and receipt are committed as posthoc_falsifier.py and POSTHOC_FALSE_BOUND.json.
+
+This does NOT refute a theorem with a **FIXED** harmonic h and a sufficiently late h-dependent onset; nor the weaker still-open bound \(G\le C_h Q(\log N)^{A_h}/N\), nor π normality itself. It does refute any proposed proof that assumes a universal coefficient 2 simultaneously over arbitrary N and h without an actual arithmetic estimate. This is a genuine finite hostile control with its post-selection provenance disclosed.
+
 ## OMH-07. Oily/Gamma normalizations as a falsifiable source map, NOT free interference
 
 The original Oily–Macaroni constant \(\Omega=\varphi^{-1}-\gamma\) is an exact FIRST-JET mismatch in a declared exponentially tilted Gamma reference family from SUCC 2026-10-26/OILY_MACARONI_SOURCE_BRIDGE.md. It is not an independent exact selected π phase term.
