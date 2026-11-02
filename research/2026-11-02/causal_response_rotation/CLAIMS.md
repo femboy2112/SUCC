@@ -3,6 +3,7 @@
 | ID | Claim | Status / authority | Falsifier, caveat or unverified next step |
 |---|---|---|---|
 | CR-01 | Line lift to circle winding deg=h b^n, causal derivative b^n | DISCLOSED classical covering space theorem | No global phase logarithm on the circle, no physical curvature |
+| CR-01B | Inverse-limit solenoid makes ×b invertible, circle projection loses compatible inverse branch history; D_h C_b=b C_b D_h | DISCLOSED classical inverse-limit/dilation chain rule, SUCC #452 solenoid precedent | No canonical section from a circle snapshot and no physical curvature |
 | CR-02 | Fourier lift in seed s has orthogonal characters at hb^n and flat power on N+1 slots | DISCLOSED classical Fourier orthogonality | Holds for ANY complex phases; not chronological normality |
 | CR-03 | Unique nonzero b-power differences, normalized causal intensity weak-* Haar for every unit-phase trajectory | DISCLOSED elementary proof; new-to-SUCC applied causal observer | Includes coherent nonnormal original-forcing and changed-source controls |
 | CR-03B | Nonzero causal intensity coefficients all magnitude 1/(N+1); L2 density defect tends to 1 | DISCLOSED exact Parseval identity | Weak measure convergence is not strong density convergence |
