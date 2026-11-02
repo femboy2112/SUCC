@@ -54,6 +54,20 @@ class CarrierHbarRationalDecoder(unittest.TestCase):
             # no two admissible rationals can share this residue at modulus>2HD.
             self.assertGreater(modulus,2*bound*D)
 
+    def test_uniform_10n_hbar_lcm_reconstruction(self):
+        from math import lcm
+        u=F(0); L=1; j=0
+        for n in range(1,201):
+            while j<8*n:
+                j+=1;L=lcm(L,j)
+            u=16*u+source(n)
+            modulus=16**(10*n)
+            bound=16**n*L
+            self.assertLessEqual(L,4**(8*n))
+            self.assertGreater(modulus,2*bound*L)
+            local=u.numerator*pow(u.denominator,-1,modulus)%modulus
+            self.assertEqual(reconstruct(local,modulus,bound,L),u,n)
+
     def test_reduced_source_denominators_are_odd(self):
         u=F(0)
         for n in range(1,160):
