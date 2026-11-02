@@ -4,6 +4,7 @@
 |---|---|---|---|
 | CF-01 | Causal normalized intensity splits into universal diagonal 1 and off-diagonal pair phases; auto anisotropy L² norm=(M−1)/M for every unit-phase vector | DISCLOSED finite Fourier/Sidon arithmetic | Auto-power identical for coherent and normal orbits |
 | CF-02 | Centered cross intensity of calibrated causal patterns equals (abs(sum z_n conj(w_n))²−M)/M² | DISCLOSED finite deterministic identity | Coherent reference gives exact Weyl modulus but no signed saving |
+| CF-02B | Diagonal correction C_M+1/M gives a nonnegative deterministic quadratic estimator, exactly abs(normalized source/template overlap)^2 | DISCLOSED finite identity; analogous only in method to CMB lensing bias subtraction | NOT the statistical Gaussian N0 bias of Planck; remains Weyl-equivalent |
 | CF-03 | Two positive phase-stepped global field intensities give both real and imaginary parts of complex Weyl sum | DISCLOSED classical phase-reference/orthogonality | Reference high bandwidth and exact phase calibration must be paid; Iθ=2M+o(M) still OPEN |
 | CF-04 | Relative seed translation gauge, and full-rank two-channel source/foreground mixing criterion | DISCLOSED finite group/linear algebra | No unique component separation if channels rank-deficient; intensity is not automatically linear |
 | CF-05 | Pure rank-one triangle closure phase exactly zero; unequal rank2 mixture yields 93/125−24i/625 | DISCLOSED Gaussian-rational counterexample | EHT astronomical source visibilities are not this rank-one toy |
