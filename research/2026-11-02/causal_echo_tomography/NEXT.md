@@ -4,6 +4,10 @@
 
 At finite horizon M, positive Hausdorff source data, all-order 95%-matched unit/differential responses and complete pole/asymptotic snapshots still have a nontrivial observational kernel. A real normal-versus-nonnormal future and a rational complete-monotone nonnormal counterfeit can share the exact first M original source states. The causal instrument therefore needs the **full exact global four-pole source** and selected U0=0, not generic moment positivity or source-Haar averaging. Finite Prony/Hankel authentication within an admitted 4-simple-pole class is available from #437/#448, and the exact causal Green transfer is #443/#464; no new source reconstruction should be reinvented.
 
+## Period-passport admission test
+
+SUCC #452 AC-13 reconstructs the original relative angular period with endpoint-vanishing primitive. CE-05C proves that arbitrary entire source corrections can be absolutely exact yet **not endpoint-relative exact**, shifting the completed period by εβ_M. For a proposed analytic/geometric normality route, verify both endpoints of the primitive and the full exact four-pole source before treating the period as π/16. Then demand a NEW source-selected signed phase inequality; fixing a period is not equidistribution.
+
 ## Observer-span admission test (new exact decision instrument)
 
 For any newly proposed linear SUCC source snapshot (finite moments, Newton levels, analytic derivatives, Gamma moment probes), write its actual measure-weight function \(\phi_i(x)\) on a compact interior I of the authentic source measure. Before claiming it determines a completed normality-relevant constant, ask whether \(1/(16-x)\) belongs to the span of those measured weights. If NO, CE-05B constructs a positive entire source echo that keeps every measured snapshot but changes the completed boundary. If YES, the exact arrow recovers the constant but still does NOT establish temporal Fourier cancellation. Do not apply the linear criterion automatically to nonlinear phase/interference measurements.
