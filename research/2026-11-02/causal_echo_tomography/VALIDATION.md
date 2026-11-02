@@ -41,6 +41,8 @@ These are two implementation routes in one assistant session, NOT an external bl
 
 The first exact-rational atomic test asserted a false over-tight bound \(T_n<(1/2)^n\) although a positive atom sits at \(x=63/80>1/2\). This produced ONE failed local test. The bound was repaired to \(T_n<(63/80)^n\), justified by total mass 47/15 and \(\sum_i w_i/(16-x_i)\le47/225<1\). **The final run then passed all 8 tests**, followed by a ninth exact causal-Fourier prefix-identity test, and the 9/9 run is the final locally tested source.
 
+**New generalized weight-span theorem (CE-05B):** paper proof uses independent continuous evaluation functions and k+1 disjoint smooth compact bumps to construct a finite linear-system nullspace witness. This is a mathematical finite-dimensional linear algebra / approximation argument, NOT an unperformed numerical general-rank experiment. The original explicit ψ_M test is its polynomial-source special case. The theorem is for finitely many LINEAR source observables; it is not a claim of arbitrary nonlinear or exact four-pole model indistinguishability.
+
 ## Paper proof versus finite checks
 
 The quantified arbitrary-M compact ψ_M bump, pointwise 95%-105% density inequality, all-(n,d) complete monotonicity, entire time correction, and norm/normality control are **paper derivations** in PROOFS.md. They do not follow from M<=6 test loops. The arbitrary-M rational-positive quadrature theorem uses the rational interior convex-hull argument; the independent exact M=4 example only checks an instance. A known base16 normal q is selected by a classical rational translate of Champernowne; the parameter ε may be irrational, so the altered normal/nonnormal source *is not necessarily rational valued*.
