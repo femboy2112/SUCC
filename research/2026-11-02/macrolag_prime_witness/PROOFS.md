@@ -159,6 +159,33 @@ The theta errors are uniform in the proportional-window cases. This proves (9). 
 
 **Additional same-four-pole counterseed:** s_*=-pi/16 (not rational) gives U_n(s_*)=-T_n, with the original source and \(0<T_n<(8n+1)^{-2}\). The identical window inequality (8), with limit phase 1, holds for this changed seed. This rules out a seed-blind signed theorem.
 
+## 2a. DPF-06 — the exact exponentially amplified entire-boundary defect (PROVED IDENTITY, NOT A NEW GATE)
+
+There is a remarkably short explicit real-embedding map between the TRUE original orbit and the coherent changed-source shadow. Define alpha=sum_(j>=1)16^-j r(j)=pi/16, and T_n=sum_(j>=1)16^-j r(n+j). Then
+\[
+U_n=16^n\alpha-T_n,\quad
+\widetilde U_n=16^n q-d_n,\quad
+\alpha-q=\frac{15\pi-47}{240}>0,
+\]
+and **exactly**
+\[
+\boxed{
+U_n-\widetilde U_n
+=16^n\frac{15\pi-47}{240}-E_n,\quad
+E_n=\sum_{j=n+2}^\infty16^{-j}r(n+j).
+}\tag{12}
+\]
+Since the authentic r is positive and decreasing with r(t)<15/(8t-7)^2,
+\[
+\boxed{0<E_n<
+\frac{16^{-n-1}}{(16n+9)^2}.}\tag{13}
+\]
+This follows from bounding the tail by r(2n+2) times the remaining geometric weight, which is 16^(-n-1)/15.
+
+Consequently the ENTIRE source-forcing difference is exponentially tiny per step, but the small **completed boundary difference** alpha-q is multiplied by the expanding factor 16^n. This is the operational finite-to-infinite seam: a perturbation invisible to every inverse-power source jet can dominate the selected real phase after long transport.
+
+**Critical firewall:** (12) is an *identity*, not a real-mixing bound. The orbit of (15pi-47)/240 is a rational translate/scale of the pi orbit, so proving its base16 normality would merely re-prove the original missing Weyl condition. Do not count this source-amplifier equality as a solution or as an independent normality route.
+
 ## 3. DPF-03 — source-selected *finite* Archimedean contrast at fresh prime windows (EXACT INTERVAL MEASUREMENT)
 
 The original source and literal seed **are** observed to cancel strongly on concrete, prespecified windows. This is NOT an asymptotic theorem. The independent interval oracle uses only:
