@@ -31,6 +31,18 @@ Result **11/11 PASS (1.033 s)**, 0 skips. Remote GitHub root adapter blob SHA **
 - Rational modulo 7 changed-seed periodic nonnormal control with strong linear lag difference and nonzero mean modulus²=2/9 (the infinite mean proof is elementary algebra, not finite computation).
 - Exact causal seed aperture winding identity: for n>=r, the Fourier mode over a real \(\delta=16^{-r}\) aperture has integer nonzero frequency and integral exactly zero.
 
+## NEW: finite source-local to real rational reconstruction
+
+The added module rational_reconstruction_probe.py has uploaded Git blob **8453cb3c4a11e86a94434dc43429c3c57b7620d8**, matched against the locally executed exact source. The source/rational decoder satisfies:
+- Exact Euclidean rational reconstruction of the first **59** states with original pole-product height bounds.
+- Exact reconstruction of the first **200/200** original states from their residues modulo **16^(10n)** using original source denominator lcm(1..8n) and elementary bound lcm(1..m)≤4^m.
+- All original reduced denominators remain odd in the tested range; wrong-residue mutations do not recover the same state.
+- Final standalone test **4/4 PASS (0.318s)** with exact Fraction/integer arithmetic.
+
+The new root adapter tests/test_carrier_hbar_rational_decoder.py ran along with the previous carrier root adapter in a staged correct repo layout: **15/15 PASS (0.575s)**, no skips. The new adapter Git blob **f989f09ca8313059088b8ee8dd97be5a7398c223** was matched to locally executed source. This is not the full genuine SUCC native suite.
+
+The all-n theorem is a mathematical uniqueness proof: if Q>2H D and rational A/B,C/E meet the bounds |A|,|C|<H, 1<=B,E<=D and share residue mod Q, then Q divides AE−BC yet |AE−BC|<2HD<Q, forcing equality. The source gives D=lcm(1..8n), H=16^n D and Q=16^(10n)>2HD. The explicit Euclidean algorithm is tested, and finite exhaustive search establishes constructibility independently of implementation. This is NOT a uniform continuous map Z₂→R/Z, nor π normality.
+
 ## Asymptotic proof authority and limits
 
 **New selected-real all-r limsup mismatch** uses elementary irrational expanding-circle arithmetic and original source positive Green tail (not finite data). **New quantitative original real lag-energy bound** uses the **published** upper irrationality exponent μ(π)≤7.103205334137...<15/2, a non-effective C>0, and a rigorous contradiction on an all-late [M,8M) interval. It is NOT formally checked in Lean, independently refereed, or a normality estimate.
