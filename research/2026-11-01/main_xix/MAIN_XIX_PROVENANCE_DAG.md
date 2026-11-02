@@ -5,7 +5,7 @@ All SHAs verified against live GitHub and recomputed from the actual fetched hea
 
 ## Source PRs and the three ancestry-minimal leaves
 
-Ten open research PRs are subsumed by three leaves whose union is complete and whose
+Nineteen open research PRs are subsumed by three leaves whose union is complete and whose
 pairwise unique content is disjoint:
 
 | leaf | head | cluster | subsumes (git ancestors) |

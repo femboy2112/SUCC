@@ -1,6 +1,6 @@
 # Operation Main XIX — validation and integration receipt
 
-**Date:** 2026-11-01 (New York). **Status:** faithful integration of ten open research PRs
+**Date:** 2026-11-01 (New York). **Status:** faithful integration of nineteen open research PRs
 (#437, #438–#455) into a three-leaf angular / Laurent-clock frontier, with a per-cluster firewall
 audit, an independently reproduced central sharpness theorem, and full local validation, delivered
 through a reviewed PR for an authorized merge to `main`. No publish, tag, release, force-push,
@@ -20,7 +20,7 @@ Lonely Runner n=18..94 remain OPEN.**
 ## 2. What was integrated
 
 Three ancestry-minimal `--no-ff` leaves (#437, #452, #455), ancestry-preserving, **zero conflicts**,
-subsuming all ten open PRs #437–#455. Diff vs `main`: **255 files, additive (+ / −0)**. All content
+subsuming all nineteen open PRs #437–#455. Diff vs `main`: **255 files, additive (+ / −0)**. All content
 is additive under `research/2026-10-31/…`, `research/2026-11-01/…`, and the new
 `research/2026-11-01/main_xix/`, except the additive Main XIX nav blocks in `docs/CLAIM_INDEX.md`,
 `docs/ROADMAP.md`, `docs/math_memory/INDEX.md`, the 23 new `tests/test_*.py`, and the regenerated
@@ -58,7 +58,7 @@ The central Laurent-clock sharpness theorem is a **seed-uniform transport-precis
 negative result) on the counterseed `s_*=−π/16`; it is not a source-selected impossibility theorem,
 not a statement about the actual `U_0=0` seed, and not progress on π normality. The carrier-relative
 entropy ⇔ normality statement is a reformulation; the resolution ceiling `D_{N,k}≥log(M/N)` refutes
-only the naive one-resolution certificate; AC-13 is an exact coboundary/transport identity. All ten
+only the naive one-resolution certificate; AC-13 is an exact coboundary/transport identity. All nineteen
 integrated PRs are research-status with their own labels. π base-16/base-3 normality, the signed
 Weyl gate, RH, Weil positivity, general Collatz, and shifted Lonely Runner n=18..94 remain **OPEN**.
 Main XIX promotes no mathematical status and supplies no signed cancellation.

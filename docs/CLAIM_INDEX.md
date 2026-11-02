@@ -7,7 +7,7 @@
 [validation](../research/2026-11-01/main_xix/MAIN_XIX_VALIDATION.md) ·
 [receipt](../research/2026-11-01/main_xix/MAIN_XIX_RECEIPT.md) ·
 [handoff](../research/2026-11-01/main_xix/MAIN_XIX_HANDOFF.md).
-Integrated three ancestry-minimal leaves (PRs #437, #452, #455) subsuming the ten open research
+Integrated three ancestry-minimal leaves (PRs #437, #452, #455) subsuming the nineteen open research
 PRs #437–#455; three independent reviewers + principal found the firewall intact across all. Three
 clusters: four-pole path interference (#437); arctan/chiral-solenoid + finite-history geometry
 (#452); and the categorical / carrier-relative-entropy / all-order Laurent-clock branch (#455). The
