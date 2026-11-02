@@ -33,5 +33,14 @@ For p=4013,4021,4093 and all h=1,3,5,7, the complete original phase on I_p passe
 \]
 This is a sharply source-discriminating **finite** theorem; an infinite extension remains UNVERIFIED. An independent raw-four-pole floating numerical implementation reproduces the finite phase sizes, but float is not proof authority.
 
+## Exact boundary amplifier — valuable diagnostic, not a new proof
+
+The true-vs-shadow difference is precisely
+\[
+U_n-\widetilde U_n=16^n(15\pi-47)/240-E_n,\quad
+0<E_n<16^{-n-1}/(16n+9)^2.
+\]
+This cleanly identifies how an exponentially small source change shifts the completed boundary and gets amplified by the successor. Proving distribution of this particular irrational boundary is STILL the original pi-normality gate after rational translation. See DPF-06 in PROOFS.md.
+
 ## The actual gate
 For each fixed h!=0, show an **all-X** original zero-seed weighted cofactor/prime sum bound \(Q_h(X)=o_h(X^3/\log X)\) as in #460, or another genuinely source-sensitive signed bound implying the Weyl criterion. The exact new conductor results do NOT supply it, and the coherent shadow proves why the missing Archimedean transport is not a trivial formality.
