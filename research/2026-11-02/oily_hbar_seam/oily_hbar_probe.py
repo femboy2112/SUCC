@@ -156,6 +156,22 @@ class OilyHbarSelectedProbe(unittest.TestCase):
         self.assertEqual(F(Q,64**2)*Q*(64//Q)**2,F(1))
         self.assertGreater(F(1),F(2*Q,64))
 
+    def test_conditional_energy_refinement_monotonicity(self):
+        N=64
+        basis=((F(1),F(0)),(F(0),F(1)),(F(-1),F(0)),
+               (F(0),F(-1)),(F(3,5),F(4,5)),(F(-5,13),F(12,13)))
+        z=[basis[(7*n+3)//2%len(basis)] for n in range(N)]
+        energies=[]
+        for Q in (1,2,4,8,16,32,64):
+            sums=[[F(),F()] for _ in range(Q)]
+            for n,(a,b) in enumerate(z):
+                sums[n%Q][0]+=a; sums[n%Q][1]+=b
+            val=F(Q,N*N)*sum((x*x+y*y for x,y in sums),F())
+            energies.append(val)
+        self.assertTrue(all(a<=b for a,b in zip(energies,energies[1:])))
+        self.assertEqual(energies[-1],F(1))
+        self.assertLess(energies[0],energies[1])
+
     def test_gamma_reference_common_euler_constant_cancels(self):
         weights=[4,-2,-1,-1]
         self.assertEqual(sum(weights),0)
