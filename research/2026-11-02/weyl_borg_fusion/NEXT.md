@@ -10,3 +10,27 @@
 6. After an independently reviewed proof/test, on a real full repo run AGENTS.md provenance verification, complete unittest discovery, observer foundation + ordinal probes, relevant Lean compilation, and exact-head hosted CI before any integration. Do not merge/tag/release without authorization.
 
 Pass: genuine o(N) original-source theorem. Partial: rigorously stronger quantified source-specific transport or a decisive counterexample. Fail: finite numerical trend or formal character identity treated as asymptotic cancellation.
+
+
+## Parallel two-key ×3 rigidity experiment (WB-10; OPEN)
+
+Treat as **a rival proof route**, not as evidence for Weyl cancellation.
+External Hochman–Shmerkin Theorem 10.4 turns a genuine
+T_16+T_3-invariant empirical limit of **positive lower dimension**
+into Haar. Original BBP already gives T_16-invariance for every limit.
+To use the theorem, separately prove on the literal U_0=0 source:
+
+- **Real ×3 defect:** for every fixed h, N^-1 Σ_[e(3hU_n)-e(hU_n)]→0.
+  The 2-/3-adic clock alone is not this real-circle statement.
+- **Every-limit nonconcentration:** every weak empirical limit has dim_*>0.
+  An actionable stronger version is a uniform source-derived
+  μ_N(I)≤C|I|^η+ε_N on all circle intervals, η>0 and ε_N→0.
+  This cannot be inferred merely from a finite entropy/collision plot.
+
+Calibration: s*=−π/16 yields δ_0 (satisfies invariance, fails dimension);
+s=1/5−π/16 yields δ_(1/5) (fails real ×3 and dimension).
+For the actual zero-seeded source, compare signed real D_N(h) and
+the worst interval-mass upper bound at preregistered horizons.
+No finite confirmations establish either all-horizon hypothesis.
+If either hypothesis is false on the genuine orbit, report the
+counterexample and retire this route without changing WB-01.

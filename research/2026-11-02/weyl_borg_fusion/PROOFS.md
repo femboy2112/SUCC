@@ -167,3 +167,100 @@ The exact chiral identity in the existing arctan solenoid gives S_N^dual(h)=(-1)
 First use the original certified p=257 window [33,128] from draft PR #459 as calibration. Preregister fresh primes p≡5 (mod8), modes h=1,3,5,7, radix levels M=16,256 and two independent rational-interval sign oracles. Compare: actual signed full original e(hU_n), source-isolated p-primary character, exact p-free phase, within-cell signed cofiber C_(N,M)(h), and corrected moving-band phases. Require true source/carry/seed provenance. Hostile controls are the changed seed 1/5-π/16 (completed real point 1/5), near-zero shadows, positive matched-prefix source mutants, uniform bins with locked within-cell phase, and Galois averaged fake phases. A source-specific signed saving must fail on coherent counterseeds and must hold for every sufficiently large original-source horizon, not only finite windows.
 
 **Verdict / claim boundary:** WB-02/03/04/05 are exact mathematical statements with derivations and scoped finite Fraction tests. The open conjecture is a genuine new source-specific signed cancellation bound on C_(N,M) or on the original prime/cofactor cross correlation that forces (1.2). No such theorem is proved in this PR.
+
+
+## WB-10. A separate Weyl gate via ×16–×3 measure rigidity and positive dimension
+
+**Source of the classical rigidity theorem:** Michael Hochman and Pablo Shmerkin,
+*Local entropy averages and projections of fractal measures*, Annals of Mathematics
+175 (2012), 1001–1059, §10.5, **Theorem 10.4**, p.1047
+(https://annals.math.princeton.edu/2012/175-3/p01).
+The theorem says that a probability measure μ on [0,1] invariant under both
+T_m:x↦mx mod 1 and T_n:x↦nx mod 1, where m and n are not powers of the
+same integer, equals Lebesgue measure **provided its lower Hausdorff dimension
+dim_* μ is strictly positive**. This deep theorem is an external mathematical
+input, NOT proved by SUCC or by our finite probes. It generalizes the
+Rudolph–Johnson positive-entropy approach to a different nonconcentration hypothesis.
+
+Here is a rigorous conditional application to the **actual** original zero-seed
+BBP stream (not an auxiliary Haar or 3-adic source). Put x_n={U_n},
+μ_N=N^-1 Σ_(n=1)^N δ_(x_n), all viewed on R/Z. The probability measures
+have subsequential weak-* limits by compactness. The exact source recurrence
+implies x_(n+1)={16 x_n+r(n+1)}, and r(n+1)→0. For any continuous f on R/Z,
+
+    ∫f(T_16 x)dμ_N - ∫f(x)dμ_N
+      = N^-1 Σ_[ f(16x_n)-f(x_(n+1)) ]
+        + N^-1 [f(x_(N+1))-f(x_1)] →0.
+
+The first term →0 by uniform continuity, r(n+1)→0 and Cesàro convergence;
+the second is O_f(1/N). Therefore **every** weak-* limit μ of the actual
+selected orbit is automatically T_16-invariant. This invariance alone
+does not select Haar; for example δ_0 is T_16-invariant.
+
+**Two-key conditional theorem (NOT yet an established premise):** Suppose
+
+(A) For every fixed integer h, the genuine ARCHIMEDEAN signed defect vanishes:
+
+    D_N(h)=(1/N)Σ_(n=1)^N [e(3h U_n)-e(hU_n)] →0.   (10.1)
+
+This is strictly a real-circle comparison of the same selected U_n,
+NOT the dyadic, ternary or Pascal-source local character law.
+
+(B) For every weak-* empirical accumulation measure μ of the actual μ_N,
+
+    dim_* μ >0.                                      (10.2)
+
+Then every such μ is T_16- and T_3-invariant: (A) gives
+μhat(3h)=μhat(h) for every integer h, which by uniqueness of circle Fourier
+coefficients says (T_3)_* μ=μ. Since 16 and 3 are multiplicatively
+independent and (B) is precisely the dimension hypothesis of
+Hochman–Shmerkin Theorem 10.4, μ is Lebesgue/Haar. As **every**
+subsequential limit is Haar, the full μ_N weakly converges to Haar.
+By the inherited source-tail Weyl equivalence, π is normal to base 16.
+
+Thus
+
+    (A) + (B) + ORIGINAL r + U_0=0
+          ==> every empirical limit is Haar ==> π base-16 normal.
+
+This is a **correct conditional proof route**, not a claim that (A) or (B)
+currently holds. The source-normality debt is redistributed into *new
+two simultaneous original-source obligations*: a special ×3 Weyl-defect
+comparison and a positive-dimension/nonconcentration theorem. Both are
+OPEN and may be no easier than direct Weyl cancellation.
+
+A reproducible sufficient, still-open criterion for (B): find universal
+constants C<∞, η>0 and ε_N→0 such that **for all N and every open circle
+interval I**, the original empirical measure obeys
+
+    μ_N(I) ≤ C |I|^η + ε_N.                         (10.3)
+
+By weak-* portmanteau for open I, each accumulation μ obeys
+μ(I)≤C|I|^η. Such a Frostman bound implies dim_* μ≥η>0.
+A finite empirical measure has atoms, so ε_N cannot in general be
+smaller than O(1/N) uniformly over tiny intervals; a proof must pay
+this finite-sample floor. A finite-level entropy bound or one well-covered
+depth is NOT automatically (10.3). This ties to CRE-04's resolution ceiling
+and the adaptive collision criterion, without conflating them with dimension.
+
+**Adversarial controls clarify the two keys.**
+
+- Original four poles but changed real seed s*=−π/16: U_n(s*)=−T_n→0,
+  so μ_N→δ_0. Both ×16 and ×3 invariance (A) hold, but (B) fails
+  with dim_*δ_0=0. Thus dual invariance alone is NOT enough.
+- Same forcing but s=1/5−π/16: U_n(s)=16^n/5−T_n, so
+  μ_N→δ_(1/5). T_16-invariance holds (16≡1 mod5), but
+  D_N(1)→e(3/5)−e(1/5)≠0 and (B) also fails. Thus the
+  new real ×3 hypothesis genuinely rejects a standard coherent counterfeit.
+- Dyadic source isometry and local Pascal 2↔3 constructions do
+  NOT establish (A). Multiplying the selected real circle coordinate by
+  3 is an extra test, not a symmetry inferred from a local finite chart.
+- A **single** positive-dimensional accumulation limit is insufficient;
+  the dimension hypothesis must hold for **every** empirical limit.
+  A positive-dimensional invariant measure for just one map also
+  does not satisfy the two-map theorem.
+
+**Claim status:** EXISTING externally proved Hochman–Shmerkin
+Theorem 10.4 + NEW elementary conditional SUCC specialization (paper),
+with both source-specific assumptions (A) and (B) **OPEN**. This is a
+second route to discharge the Weyl gate, not a proof of its premises.

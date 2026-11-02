@@ -28,3 +28,14 @@ Prime phase:
 Classical background: D.H. Bailey and R.E. Crandall, On the Random Character of Fundamental Constant Expansions, Experimental Mathematics 10 (2001), 175–190, DOI 10.1080/10586458.2001.10504441; Weyl criterion and finite Heisenberg–Weyl character relations.
 
 **Required typed arrows**: four signed complex BBP poles → original rational forcing r(n) → literal zero-seeded unwrapped rational U_n → real circle x={U_n} → finite address a PLUS residual real phase s → actual signed Weyl character. Any map that drops s, changes U_0, averages over unselected Galois embeddings or swaps source index characters for real-circle characters is insufficient. This dossier creates NO new proof authority for imported work.
+
+
+**Additional deep external rigidity input (WB-10):**
+Michael Hochman and Pablo Shmerkin, *Local entropy averages and projections of fractal measures*,
+Annals of Mathematics 175(3) (2012), 1001–1059, §10.5, Theorem 10.4, printed p.1047,
+https://annals.math.princeton.edu/2012/175-3/p01.
+Invariance under two multiplicatively independent integer maps together with
+strict positive lower Hausdorff dimension implies Lebesgue measure. This theorem
+is **external literature**, not a SUCC discovery. Its two new arithmetic
+premises on the actual BBP orbit are **unproved**, including real ×3 Weyl defects
+and every-limit positive dimension.
