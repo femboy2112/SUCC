@@ -77,9 +77,9 @@ def main():
     pi_Kf = mpf(pi_K.numerator) / pi_K.denominator
     delta_K = mpf(15) / 64 * mpf(16) ** (-K) / mpf(K - 1)
 
-    # True S (independent high-precision): direct sum with rigorous tail
-    # S = sum_{m>=1} r(m); tail sum_{m>M} r(m) < (15/64)/(M-1) -> negligible at M=200000.
-    S_true = S_M + mpf(15) / 64 / mpf(M)  # S_M + leading tail estimate (within eps_M)
+    # True S via exact digamma closed form (Gauss digamma at eighths), and true pi
+    S_true = (mpf(1) / 8) * (2 * mp.digamma(mpf(1) / 2) + mp.digamma(mpf(5) / 8)
+                            + mp.digamma(mpf(3) / 4) - 4 * mp.digamma(mpf(1) / 8))
     assert S_M <= S_true <= S_M + eps_M, "S bracket fails"
     assert pi_Kf <= pi <= pi_Kf + delta_K, "pi bracket fails"
     print(f"    S in [{S_M}, {S_M + eps_M}], true S = {S_true}")

@@ -100,7 +100,7 @@ We claim `r(n+1) ≥ 6784/(819·64)·(1/n²)` for `n ≥ 1`. With `f(n)=64 n² r
 `f(n) ≥ f(1) = 6784/819`. Indeed the same exact form shows
 
 $$
-f(n+1)-f(n)=\frac{64\,Q(n)}{(2n+1)(2n+3)(4n+3)(4n+7)(8n+1)(8n+9)(8n+5)(8n+13)},
+f(n+1)-f(n)=\frac{64\,Q(n)}{(2n+1)(2n+3)(4n+3)(4n+7)(8n+1)(8n+5)(8n+9)(8n+13)},
 $$
 
 with `Q(n)=45568n^6+259456n^5+572808n^4+615308n^3+328475n^2+77097n+4770`, all coefficients
@@ -206,7 +206,8 @@ $$
 $$
 
 Both endpoints agree to 6 decimals (`0.0162969…`), so `B` is certified to 6 decimals as
-`0.016297`, and the true value `B = 0.0162969977267691…` is strictly inside. The interval has
+`0.016297`, and the true value `B = 0.0162969977338265655…` (exact `(S−π)/15`, digamma closed
+form) is strictly inside. The interval has
 width `7.82·10^{−8} < 10^{−7}`.
 
 ---
