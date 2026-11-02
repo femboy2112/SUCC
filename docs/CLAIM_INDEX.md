@@ -1,5 +1,28 @@
 # Claim Index
 
+**2026-11-01 Operation Main XIX — angular / Laurent-clock frontier (research integration):**
+[architecture](../research/2026-11-01/main_xix/MAIN_XIX_ARCHITECTURE.md) ·
+[claim registry + countermodel ledger](../research/2026-11-01/main_xix/MAIN_XIX_CLAIM_REGISTRY.md) ·
+[provenance DAG](../research/2026-11-01/main_xix/MAIN_XIX_PROVENANCE_DAG.md) ·
+[validation](../research/2026-11-01/main_xix/MAIN_XIX_VALIDATION.md) ·
+[receipt](../research/2026-11-01/main_xix/MAIN_XIX_RECEIPT.md) ·
+[handoff](../research/2026-11-01/main_xix/MAIN_XIX_HANDOFF.md).
+Integrated three ancestry-minimal leaves (PRs #437, #452, #455) subsuming the ten open research
+PRs #437–#455; three independent reviewers + principal found the firewall intact across all. Three
+clusters: four-pole path interference (#437); arctan/chiral-solenoid + finite-history geometry
+(#452); and the categorical / carrier-relative-entropy / all-order Laurent-clock branch (#455). The
+round's central result is the **Laurent-clock sharpness theorem**: for the same four-pole forcing
+but the distinct real counterseed `s_*=−π/16` (completed point 0, nonnormal, not in the original
+rational-state register), every fixed `d≥1`, `h≠0`, `d+1<c<d+2`, `K_N=⌊c·log_16 N⌋` gives
+`L^C→1`, `L^[d]→2(d+1)/c−((d+1)/c)²`, and a positive transport defect `(1−(d+1)/c)²` — recovering
+Main XVIII's `d=1` barrier and extending it to every order. This is a **seed-uniform
+transport-precision barrier (a negative result), not a source-selected impossibility theorem and
+not progress on π normality**. The carrier-relative entropy ⇔ normality statement is a
+reformulation; the observation-resolution ceiling `D_{N,k}≥log(M/N)` refutes only the naive
+one-resolution entropy→Fourier certificate. The selected zero-boundary signed estimate, base-16 π
+normality, the signed Weyl gate `S_N(h)=o(N)`, and RH remain **OPEN**. Research-dir claim prefixes
+(FP/AC/CH/CSG/CRE/LCS/…) stay local by design and mint no registry namespace.
+
 **2026-10-31 Operation Main XVIII — signed-lag frontier (research integration):**
 [architecture](../research/2026-10-31/main_xviii/MAIN_XVIII_ARCHITECTURE.md) ·
 [claim registry + countermodel ledger](../research/2026-10-31/main_xviii/MAIN_XVIII_CLAIM_REGISTRY.md) ·
