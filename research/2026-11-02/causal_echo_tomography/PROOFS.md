@@ -248,6 +248,31 @@ Because the authentic BBP source density f has a positive lower bound on I, \(f+
 
 This is a mathematical diagnosis of the observer \(\sigma\)/source-map and \(\phi\)/pathway gap, NOT a theorem forbidding finite mathematical PROOFS that exploit a known global four-pole formula. On the restricted at-most-four-pole rational model class, the admissible perturbations ψ are excluded and previous Prony source identification may restore the arrow. Normality remains another, genuinely signed and all-horizon proposition.
 
+## CE-05C. The circle/line relative-period defect: absolutely exact is NOT endpoint-relative exact (PROVED)
+
+SUCC #452's original BBP angular decomposition is precise about its **endpoint-vanishing coboundary**, which preserves the completed source's relative period. Our causal echo produces the complementary boundary-sensitive case.
+
+The completed source in the positive Hausdorff x-coordinate has one-form \(\omega=f(x)/(16-x)\,dx\). Its CE-01 perturbation is
+\[
+\boxed{
+\delta\omega_\epsilon=
+\frac{\epsilon\psi_M(x)}{16-x}dx=dF_\epsilon(x),\qquad
+F_\epsilon(x)=\epsilon\int_0^x\frac{\psi_M(t)}{16-t}dt.
+}\tag{21}
+\]
+This is an **ordinary exact one-form** on [0,1], with primitive zero on the left endpoint. But
+\[
+\boxed{
+F_\epsilon(0)=0,\qquad F_\epsilon(1)=\epsilon\beta_M\ne0,\qquad
+\int_0^1\delta\omega_\epsilon=\epsilon\beta_M.
+}\tag{22}
+\]
+It is therefore NOT exact in the **relative** de Rham complex with primitives vanishing on BOTH boundary endpoints. Its relative cohomology class in \(H^1([0,1],\{0,1\};\mathbb R)\cong\mathbb R\) is nonzero and detected by the endpoint period.
+
+Thus a completely local-looking, pole-invisible source correction can shift the global circumference/diameter-type period **without** contradicting #452 AC-13: that earlier original-source coboundary was independently shown to vanish at BOTH endpoints and hence did NOT alter the period. Our perturbation deliberately changes the full source; it is not a second derivation or modification of π, nor curvature of a 1D circle.
+
+This is the geometric transport of the same categorical observation-gap theorem CE-05B: retaining only local differential/pole data does not certify the boundary class. The appropriate extra datum is an endpoint-relative period passport (or the complete global rational four-pole source law). **Neither passport proves digit-normality; it only fixes WHICH completed constant the signed Fourier orbit concerns.**
+
 ## CE-06. The precise next original-source π-normality probe (UNVERIFIED)
 
 This dossier does NOT establish a new original-source \(o(N)\) Weyl bound, any all-prime cofactor cancellation, or RH. It proves a source-map separation and finite-time instrument limitations.
