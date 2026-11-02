@@ -186,6 +186,33 @@ class CausalResponseTest(unittest.TestCase):
                 for k in (-4,-1,0,1,7):
                     self.assertEqual(Q(b*k,h),b*Q(k,h))
 
+    def test_full_causal_impulse_green_and_source_inverse(self):
+        # All forcing-step interventions, not merely U0; the structural
+        # response J_(n,j)=b^(n-j) for j<=n has a bidiagonal inverse.
+        for b in (2,3,16):
+            for N in range(1,11):
+                J=[[b**(n-j) if j<=n else 0 for j in range(N+1)]
+                   for n in range(N+1)]
+                D=[[int(j==n)-b*int(j==n-1) if n else int(j==0)
+                    for j in range(N+1)] for n in range(N+1)]
+                for n in range(N+1):
+                    for j in range(N+1):
+                        self.assertEqual(sum(D[n][k]*J[k][j]
+                                             for k in range(N+1)),int(n==j))
+                        self.assertEqual(sum(J[n][k]*D[k][j]
+                                             for k in range(N+1)),int(n==j))
+                for j in range(1,N+1):
+                    delta=Q(1,7)
+                    perturb=Q(0)
+                    for n in range(1,N+1):
+                        perturb=b*perturb+(delta if n==j else Q(0))
+                        self.assertEqual(perturb,delta*J[n][j])
+        for N in range(1,25):
+            residual=sum((16**(N-j)*(r(j)-
+                (r(j)-r(2*j)/16**j-r(2*j+1)/16**(j+1)))
+                for j in range(1,N+1)),Q(0))
+            self.assertEqual(residual,U(N)-shadow(N))
+
     def test_exponential_causal_resolution_floor(self):
         for b in (2,3,16):
             for N in range(1,9):
