@@ -4,6 +4,8 @@
 
 A complete 2D unit–unit Pascal moment tower, 19/20 source-jet domination, source fingerprint [Delta,R]T=-16^-n-2 r(2n+3), a stable complete rational shadow→authentic Green tail inverse, and new all-grade original/shadow p-adic conductor bounds.
 
+The positive Pascal tower now additionally has a nonzero strict mixed logarithmic Hessian, exactly a negative variance (UU-04B). This is a genuine nontrivial unit–unit diagnostic. Since BOTH the true and coherent changed-source measures satisfy it, a proposed normality mechanism must extract a *quantitative real-phase constraint* from the specific mixed variance, not merely assert its sign.
+
 ## First falsifiable target: a genuinely NEW mixed real-source inequality
 
 Freeze source to ORIGINAL four poles, U0=0, and the exact source selected phase z_n=e(hU_n). In the p=8k+5 prime birth windows I_p, the mixed factor is
