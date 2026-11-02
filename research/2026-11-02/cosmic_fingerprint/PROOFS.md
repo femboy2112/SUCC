@@ -56,6 +56,19 @@ S_M(h)=\sum_{n=1}^{M}e(hU_n).}\tag{CF4}
 \]
 For every fixed h!=0, C_M→0 iff S_M(h)=o(M). By the already established summable BBP Green-tail Weyl transport, vanishing for all fixed nonzero h is equivalent to pi being base-16 normal. **CF4 is a new phase-referenced observation, NOT a proof that its limit is zero.**
 
+## CF-02B — deterministic quadratic estimator and diagonal-bias correction (PROVED)
+
+The matched observation defines a nonnegative **calibrated quadratic estimator**:
+\[
+\boxed{\widehat Q_M(z,w):=C_M(z,w)+1/M
+=\left|\frac1M\sum_{n=1}^M z_n\bar w_n\right|^2\ge0.}\tag{CF4a}
+\]
+The correction \(1/M\) is the precisely known diagonal combinatorial bias caused by removing the universal causal monopole from the intensity-product comparison. It is a finite deterministic identity, not a fitted Gaussian disconnected N0 bias or Bayesian posterior.
+
+This is analogous in **method** to CMB lensing quadratic estimators: the lensing analysis extracts information from off-diagonal mode couplings and subtracts mean-field and disconnected biases. See Planck 2018 results VIII, https://doi.org/10.1051/0004-6361/201833886 , and Hu–Okamoto full-sky estimators, https://arxiv.org/abs/astro-ph/0301031 . Their formulas depend on statistical ensembles, sky masks, instrument noise, lensing geometry and S2 spherical harmonics; the SUCC result is deterministic on a *causal seed circle* S1 with lacunary integer frequencies. Do NOT identify the physical CMB estimator with this exact polynomial identity.
+
+For the unreferenced auto-intensity, the entire quadratic auto-power is constant for all z and cannot measure chronological mixing. For a **fixed calibrated** w=1, the estimator becomes precisely the original BBP Weyl modulus squared. No smallness estimate is supplied by this reformulation.
+
 ## CF-03 — TWO phase-stepped positive sky intensities reconstruct the entire COMPLEX Weyl sum (PROVED)
 
 For any coherent reference w, put S_(z,w)=sum z_n conj(w_n). Measure an ideal phase-controlled reference field at angles θ=0,π/2:
