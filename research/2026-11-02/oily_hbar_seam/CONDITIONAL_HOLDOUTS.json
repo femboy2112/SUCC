@@ -30,7 +30,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 768,
       "pass": true,
-      "relative_upper_to_Q_over_N": 1.221184368
+      "relative_upper_to_Q_over_N": 1.221184368,
+      "G_upper_1e9": 25441341,
+      "bound_pass": true
     },
     {
       "N": 768,
@@ -41,7 +43,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 768,
       "pass": true,
-      "relative_upper_to_Q_over_N": 1.032215799
+      "relative_upper_to_Q_over_N": 1.032215799,
+      "G_upper_1e9": 344071933,
+      "bound_pass": true
     },
     {
       "N": 1536,
@@ -52,7 +56,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 1536,
       "pass": true,
-      "relative_upper_to_Q_over_N": 1.087780992
+      "relative_upper_to_Q_over_N": 1.087780992,
+      "G_upper_1e9": 11331052,
+      "bound_pass": true
     },
     {
       "N": 1536,
@@ -63,7 +69,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 1536,
       "pass": true,
-      "relative_upper_to_Q_over_N": 1.022499744
+      "relative_upper_to_Q_over_N": 1.022499744,
+      "G_upper_1e9": 170416624,
+      "bound_pass": true
     },
     {
       "N": 3072,
@@ -74,7 +82,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 3072,
       "pass": true,
-      "relative_upper_to_Q_over_N": 1.258542912
+      "relative_upper_to_Q_over_N": 1.258542912,
+      "G_upper_1e9": 6554911,
+      "bound_pass": true
     },
     {
       "N": 3072,
@@ -85,7 +95,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 3072,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.995008572
+      "relative_upper_to_Q_over_N": 0.995008572,
+      "G_upper_1e9": 82917381,
+      "bound_pass": true
     },
     {
       "N": 768,
@@ -96,7 +108,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 768,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.563345184
+      "relative_upper_to_Q_over_N": 0.563345184,
+      "G_upper_1e9": 11736358,
+      "bound_pass": true
     },
     {
       "N": 768,
@@ -107,7 +121,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 768,
       "pass": true,
-      "relative_upper_to_Q_over_N": 1.035036012
+      "relative_upper_to_Q_over_N": 1.035036012,
+      "G_upper_1e9": 345012004,
+      "bound_pass": true
     },
     {
       "N": 1536,
@@ -118,7 +134,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 1536,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.899572992
+      "relative_upper_to_Q_over_N": 0.899572992,
+      "G_upper_1e9": 9370552,
+      "bound_pass": true
     },
     {
       "N": 1536,
@@ -129,7 +147,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 1536,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.926685954
+      "relative_upper_to_Q_over_N": 0.926685954,
+      "G_upper_1e9": 154447659,
+      "bound_pass": true
     },
     {
       "N": 3072,
@@ -140,7 +160,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 3072,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.789599424
+      "relative_upper_to_Q_over_N": 0.789599424,
+      "G_upper_1e9": 4112497,
+      "bound_pass": true
     },
     {
       "N": 3072,
@@ -151,7 +173,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 3072,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.932926572
+      "relative_upper_to_Q_over_N": 0.932926572,
+      "G_upper_1e9": 77743881,
+      "bound_pass": true
     },
     {
       "N": 768,
@@ -162,7 +186,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 768,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.891917856
+      "relative_upper_to_Q_over_N": 0.891917856,
+      "G_upper_1e9": 18581622,
+      "bound_pass": true
     },
     {
       "N": 768,
@@ -173,7 +199,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 768,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.964372134
+      "relative_upper_to_Q_over_N": 0.964372134,
+      "G_upper_1e9": 321457378,
+      "bound_pass": true
     },
     {
       "N": 1536,
@@ -184,7 +212,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 1536,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.9407568
+      "relative_upper_to_Q_over_N": 0.9407568,
+      "G_upper_1e9": 9799550,
+      "bound_pass": true
     },
     {
       "N": 1536,
@@ -195,7 +225,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 1536,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.935525034
+      "relative_upper_to_Q_over_N": 0.935525034,
+      "G_upper_1e9": 155920839,
+      "bound_pass": true
     },
     {
       "N": 3072,
@@ -206,7 +238,9 @@
       "strict_threshold_numerator": 32,
       "strict_threshold_denominator": 3072,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.789356736
+      "relative_upper_to_Q_over_N": 0.789356736,
+      "G_upper_1e9": 4111233,
+      "bound_pass": true
     },
     {
       "N": 3072,
@@ -217,7 +251,9 @@
       "strict_threshold_numerator": 512,
       "strict_threshold_denominator": 3072,
       "pass": true,
-      "relative_upper_to_Q_over_N": 0.962050968
+      "relative_upper_to_Q_over_N": 0.962050968,
+      "G_upper_1e9": 80170914,
+      "bound_pass": true
     }
   ]
 }
