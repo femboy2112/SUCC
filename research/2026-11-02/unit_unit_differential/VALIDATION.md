@@ -51,6 +51,8 @@ At mpmath 55 digits, compared with Fraction Newton differences from d_n, every s
 
 The Beta bound sum_(n>=1) H_(n,d) <= B(9/8,d)/30 was checked numerically at d=1,2,4,8,16,32. The committed optional moment_independent_oracle.py is a reproducible implementation of this comparison; it is NOT an interval certificate or an independent proof.
 
+**Independent optional analytic differential calibration:** a separate mpmath integral calculation sampled real z in {−1/16,0,1/2,11/4} and mixed orders (a,b) in {(0,0),(1,0),(0,2),(1,3),(2,2)}. All 20 ratios of the positive shadow analytic mixed differential to the authentic one lay in (0.95,1). The smallest observed ratio in this sampled grid was about 0.9953757. These are numerical checks of the paper density inequality, not rigorous intervals or a proof.
+
 ## Reproduction from an actual checkout
 
 ~~~sh
