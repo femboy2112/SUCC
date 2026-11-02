@@ -1,0 +1,160 @@
+{
+  "status": "POST-HOC DIRECT ORIGINAL RATIONAL SOURCE CHECK, finite only; all pass/fail rational, display ratios rounded; run actual_source_verification.py",
+  "first_phase_source": "Original four signed poles, U_0=0, exact recurrence U_n=16U_(n−1)+r(n) versus independent combined rational",
+  "trigonometric_bound": "rational Machin/Taylor interval from parent GH oracle; NO completed pi phase input; same oracle family not blind independent",
+  "threshold": "W > 0.1 E",
+  "rows": [
+    {
+      "N": 512,
+      "h": 1,
+      "scales": [
+        {
+          "L": 16,
+          "W_over_E_approx": 0.96934,
+          "strict_certified": true
+        },
+        {
+          "L": 32,
+          "W_over_E_approx": 1.05852,
+          "strict_certified": true
+        },
+        {
+          "L": 64,
+          "W_over_E_approx": 1.23551,
+          "strict_certified": true
+        }
+      ]
+    },
+    {
+      "N": 512,
+      "h": 5,
+      "scales": [
+        {
+          "L": 16,
+          "W_over_E_approx": 0.85775,
+          "strict_certified": true
+        },
+        {
+          "L": 32,
+          "W_over_E_approx": 1.08957,
+          "strict_certified": true
+        },
+        {
+          "L": 64,
+          "W_over_E_approx": 1.26436,
+          "strict_certified": true
+        }
+      ]
+    },
+    {
+      "N": 512,
+      "h": 11,
+      "scales": [
+        {
+          "L": 16,
+          "W_over_E_approx": 0.9193,
+          "strict_certified": true
+        },
+        {
+          "L": 32,
+          "W_over_E_approx": 0.95303,
+          "strict_certified": true
+        },
+        {
+          "L": 64,
+          "W_over_E_approx": 1.2299,
+          "strict_certified": true
+        }
+      ]
+    },
+    {
+      "N": 1024,
+      "h": 1,
+      "scales": [
+        {
+          "L": 32,
+          "W_over_E_approx": 1.19752,
+          "strict_certified": true
+        },
+        {
+          "L": 64,
+          "W_over_E_approx": 1.29161,
+          "strict_certified": true
+        },
+        {
+          "L": 128,
+          "W_over_E_approx": 0.91694,
+          "strict_certified": true
+        }
+      ]
+    },
+    {
+      "N": 1024,
+      "h": 5,
+      "scales": [
+        {
+          "L": 32,
+          "W_over_E_approx": 0.96999,
+          "strict_certified": true
+        },
+        {
+          "L": 64,
+          "W_over_E_approx": 1.24545,
+          "strict_certified": true
+        },
+        {
+          "L": 128,
+          "W_over_E_approx": 0.37937,
+          "strict_certified": true
+        }
+      ]
+    },
+    {
+      "N": 1024,
+      "h": 11,
+      "scales": [
+        {
+          "L": 32,
+          "W_over_E_approx": 1.05125,
+          "strict_certified": true
+        },
+        {
+          "L": 64,
+          "W_over_E_approx": 1.19115,
+          "strict_certified": true
+        },
+        {
+          "L": 128,
+          "W_over_E_approx": 0.58669,
+          "strict_certified": true
+        }
+      ]
+    }
+  ],
+  "individual_pair_failures_strict_rational": [
+    {
+      "N": 512,
+      "h": 1,
+      "L": 16,
+      "start": 321,
+      "ratio_approx": 0.014986383453,
+      "certified_W_less_than_0_1_E": true
+    },
+    {
+      "N": 1024,
+      "h": 5,
+      "L": 32,
+      "start": 577,
+      "ratio_approx": 0.04847612578,
+      "certified_W_less_than_0_1_E": true
+    },
+    {
+      "N": 256,
+      "h": 5,
+      "L": 128,
+      "start": 1,
+      "ratio_approx": 0.031806796125,
+      "certified_W_less_than_0_1_E": true
+    }
+  ]
+}
