@@ -196,7 +196,7 @@ If the source can be shown to satisfy the quantitative but still OPEN
 ## LS-04. Simultaneous ORIGINAL newborn primes: a prime-clock tensor sheet
 
 For dyadic \(A=2^j\), let \(\mathcal P_A=\{p=8k+1\text{ prime}: A/2\le k<A\}\). Classical PNT in the fixed progression p≡1 (mod 8) gives
-\(|\mathcal P_A|\sim A/(2\log A)\). EVERY \(p\in\mathcal P_A\), simultaneously, has an exact original-source clean interval covering ALL \(n\in[A,2A)\).
+\(|\mathcal P_A|\sim A/\log A\). EVERY \(p\in\mathcal P_A\), simultaneously, has an exact original-source clean interval covering ALL \(n\in[A,2A)\).
 
 For any such n, put \(b_p=(p+7)/8=k+1\) and
 \(a_{p,n}=4\,16^{n-b_p}\bmod p\in\{0,\ldots,p-1\}\). The original exact rational state has p-valuation −1. Consequently, with \(\mathbb Z_{(\mathcal P_A)}\) denoting rationals whose reduced denominator is coprime to every p in the set,
