@@ -1,0 +1,328 @@
+{
+  "development_iid_candidate": [
+    {
+      "A": 2,
+      "candidate_pass": false,
+      "counts": [
+        2,
+        0
+      ],
+      "energy": [
+        2,
+        1
+      ],
+      "iid_mean_ceiling": [
+        3,
+        2
+      ],
+      "mesh": 2
+    },
+    {
+      "A": 4,
+      "candidate_pass": true,
+      "counts": [
+        1,
+        3
+      ],
+      "energy": [
+        5,
+        4
+      ],
+      "iid_mean_ceiling": [
+        5,
+        4
+      ],
+      "mesh": 2
+    },
+    {
+      "A": 8,
+      "candidate_pass": true,
+      "counts": [
+        3,
+        5
+      ],
+      "energy": [
+        17,
+        16
+      ],
+      "iid_mean_ceiling": [
+        9,
+        8
+      ],
+      "mesh": 2
+    },
+    {
+      "A": 16,
+      "candidate_pass": false,
+      "counts": [
+        9,
+        3,
+        3,
+        1
+      ],
+      "energy": [
+        25,
+        16
+      ],
+      "iid_mean_ceiling": [
+        19,
+        16
+      ],
+      "mesh": 4
+    },
+    {
+      "A": 32,
+      "candidate_pass": true,
+      "counts": [
+        10,
+        4,
+        10,
+        8
+      ],
+      "energy": [
+        35,
+        32
+      ],
+      "iid_mean_ceiling": [
+        35,
+        32
+      ],
+      "mesh": 4
+    },
+    {
+      "A": 64,
+      "candidate_pass": true,
+      "counts": [
+        15,
+        20,
+        13,
+        16
+      ],
+      "energy": [
+        525,
+        512
+      ],
+      "iid_mean_ceiling": [
+        67,
+        64
+      ],
+      "mesh": 4
+    },
+    {
+      "A": 128,
+      "candidate_pass": true,
+      "counts": [
+        30,
+        30,
+        36,
+        32
+      ],
+      "energy": [
+        515,
+        512
+      ],
+      "iid_mean_ceiling": [
+        131,
+        128
+      ],
+      "mesh": 4
+    },
+    {
+      "A": 256,
+      "candidate_pass": false,
+      "counts": [
+        33,
+        28,
+        42,
+        28,
+        36,
+        36,
+        26,
+        27
+      ],
+      "energy": [
+        4209,
+        4096
+      ],
+      "iid_mean_ceiling": [
+        263,
+        256
+      ],
+      "mesh": 8
+    },
+    {
+      "A": 512,
+      "candidate_pass": true,
+      "counts": [
+        64,
+        72,
+        58,
+        65,
+        74,
+        65,
+        52,
+        62
+      ],
+      "energy": [
+        16559,
+        16384
+      ],
+      "iid_mean_ceiling": [
+        519,
+        512
+      ],
+      "mesh": 8
+    },
+    {
+      "A": 1024,
+      "candidate_pass": false,
+      "counts": [
+        134,
+        122,
+        120,
+        115,
+        117,
+        141,
+        129,
+        146
+      ],
+      "energy": [
+        16499,
+        16384
+      ],
+      "iid_mean_ceiling": [
+        1031,
+        1024
+      ],
+      "mesh": 8
+    },
+    {
+      "A": 2048,
+      "candidate_pass": true,
+      "counts": [
+        269,
+        265,
+        252,
+        260,
+        250,
+        255,
+        227,
+        270
+      ],
+      "energy": [
+        131411,
+        131072
+      ],
+      "iid_mean_ceiling": [
+        2055,
+        2048
+      ],
+      "mesh": 8
+    },
+    {
+      "A": 4096,
+      "candidate_pass": true,
+      "counts": [
+        516,
+        524,
+        499,
+        526,
+        475,
+        510,
+        518,
+        528
+      ],
+      "energy": [
+        1049671,
+        1048576
+      ],
+      "iid_mean_ceiling": [
+        4103,
+        4096
+      ],
+      "mesh": 8
+    }
+  ],
+  "last": 12288,
+  "literal_carry_sha256": "b50c70fda55bcf99a97557079545a853b1e90195ad3528721fb7413e880e309f",
+  "matching_costs": {
+    "17": {
+      "coverage": 12288,
+      "denominator_sha256": "2c850be798fa878358b19204f7b15db46faa3a44efde1f82cb07e6afb2ec8bfb",
+      "interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 2763679866,
+        "upper_numerator": 2763679867
+      },
+      "normalized_weyl_ceiling_rational": [
+        30400478537,
+        3848290697216
+      ],
+      "numerator_sha256": "f5467a03e9c86d3aaeae3cc9959cf1d31348615f53f8374ba4582cbca6bb1fe1",
+      "permutation_sha256_u32_big_endian": "7e478fc020eb6ca14e38b98be51ee73859ceb31e5e96d5447a5fb076a0e940f0",
+      "unmatched_mass": 0
+    },
+    "255": {
+      "coverage": 12288,
+      "denominator_sha256": "ba0dc1a7b2293f68854a8925561b94808f8e4827f23769ff193aa58563129bf9",
+      "interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 4894878683,
+        "upper_numerator": 4894878684
+      },
+      "normalized_weyl_ceiling_rational": [
+        13460916381,
+        962072674304
+      ],
+      "numerator_sha256": "1f5fc599d1a8b21a50533642f394eb1e75956b74ff6962036013af0c7f588547",
+      "permutation_sha256_u32_big_endian": "612607ece75dd77486968b0440882f6920f4b5f02834145d746ad561ee0d3257",
+      "unmatched_mass": 0
+    },
+    "256": {
+      "coverage": 12288,
+      "denominator_sha256": "0255b6860a68faa6b7da106aaca1eb3b9aacd72c73c4874a2a0b24898d6ac349",
+      "interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 3784409582,
+        "upper_numerator": 3784409583
+      },
+      "normalized_weyl_ceiling_rational": [
+        41628505413,
+        3848290697216
+      ],
+      "numerator_sha256": "2624204e16e2ea553b6112cd2656085b0a10a176d379844c5471188a131310d7",
+      "permutation_sha256_u32_big_endian": "1a005736b2fa242f6afff8f987aa0fc288e386e347514f8e0a8667299a7b78cd",
+      "unmatched_mass": 0
+    },
+    "7": {
+      "coverage": 12288,
+      "denominator_sha256": "768a1936e840755568b7be54dcce65182b14fcb346b236db9831064b08907fff",
+      "interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 1276159793,
+        "upper_numerator": 1276159794
+      },
+      "normalized_weyl_ceiling_rational": [
+        1002696981,
+        274877906944
+      ],
+      "numerator_sha256": "7540785ce8ef4f11b0a4a32436f4c35993bf04ddea69cdab2e5c937154bb0c40",
+      "permutation_sha256_u32_big_endian": "265c003cd9c0a0c718468ac534e6b1c830d3780322632d8d2705822e0f683fc5",
+      "unmatched_mass": 0
+    }
+  },
+  "mirror_W1": {
+    "denominator_sha256": "e500141122f26713ffb8ebf88ac6bc084175b66e0db148f20e21f9896c9aa2cd",
+    "interval": {
+      "denominator": 1099511627776,
+      "lower_numerator": 2345235049,
+      "upper_numerator": 2345235050
+    },
+    "numerator_sha256": "887205c7b1473eb7b910a373ef54471c76a61b4437756d41c8f85457ebde4a28"
+  },
+  "modulus_bits": 106349,
+  "modulus_sha256": "5225f056c720cc86db0ea65bab596a170bb3824d03cdbec9fd4be5f98c0c200f",
+  "oracle_agreement_length": 384,
+  "source": "all four original poles; literal U0=0",
+  "status": "FINITE EXACT OBSERVATIONS; no asymptotic inference"
+}
