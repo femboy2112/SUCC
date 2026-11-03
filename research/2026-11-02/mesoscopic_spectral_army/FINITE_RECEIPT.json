@@ -1,0 +1,206 @@
+{
+  "epochs": {
+    "1024": {
+      "half": {
+        "counts_sha256": "759dc76cd303584177a0b668d7480b7c60d0b43eaf6df6bbb169a18e0c80e7e3",
+        "energy_fraction": "4207/4096",
+        "max_occupancy": 50,
+        "mesh": 32,
+        "sum_count_squared": 33656
+      },
+      "quarter": {
+        "counts_sha256": "f26ea0555cb17bf06f0fa542bb9271b5ca3a27d3297b82a54c4b43647ec31bb4",
+        "energy_fraction": "131475/131072",
+        "max_occupancy": 275,
+        "mesh": 4,
+        "sum_count_squared": 262950
+      },
+      "self": {
+        "counts_sha256": "7963e7b6ebde9d3259dd32d653162b0c57b45e140e787ba8079f7ddd037e9809",
+        "energy_fraction": "1013/512",
+        "max_occupancy": 5,
+        "mesh": 1024,
+        "sum_count_squared": 2026
+      },
+      "three_quarters": {
+        "counts_sha256": "7626bf925c82dd0fb6c8bfa56108d0999e6dbc0d125cc22e99e9b063c0c157a3",
+        "energy_fraction": "4627/4096",
+        "max_occupancy": 21,
+        "mesh": 128,
+        "sum_count_squared": 9254
+      }
+    },
+    "2048": {
+      "half": {
+        "counts_sha256": "f46b17b5ddeca17d617ee8d0b70ca57fe6b22a585fa268242f4ec9d5ad0e6482",
+        "energy_fraction": "66513/65536",
+        "max_occupancy": 78,
+        "mesh": 32,
+        "sum_count_squared": 133026
+      },
+      "quarter": {
+        "counts_sha256": "ae7ed851d4748d72b731e8ffea8f3565307830d2bcffd717ebc83c5f010e5e49",
+        "energy_fraction": "524667/524288",
+        "max_occupancy": 534,
+        "mesh": 4,
+        "sum_count_squared": 1049334
+      },
+      "self": {
+        "counts_sha256": "1e87292e40e722ca067b05ac6fa9499f4d3dd7847ebb60f82882f5d9c6d955db",
+        "energy_fraction": "2025/1024",
+        "max_occupancy": 6,
+        "mesh": 2048,
+        "sum_count_squared": 4050
+      },
+      "three_quarters": {
+        "counts_sha256": "ed807796634d6f3ce75751008ad703ce874771d22360d9d7bfc7a5b6fc4f5dc8",
+        "energy_fraction": "9113/8192",
+        "max_occupancy": 15,
+        "mesh": 256,
+        "sum_count_squared": 18226
+      }
+    },
+    "256": {
+      "half": {
+        "counts_sha256": "dd75189089607ad66d326a9627cc572f817ffc2145653bf963312081043da5b7",
+        "energy_fraction": "1085/1024",
+        "max_occupancy": 26,
+        "mesh": 16,
+        "sum_count_squared": 4340
+      },
+      "quarter": {
+        "counts_sha256": "21f8171e84cdc6d6d45ba373350fbc650379d2ba8a806145d1469319ac67af33",
+        "energy_fraction": "8307/8192",
+        "max_occupancy": 72,
+        "mesh": 4,
+        "sum_count_squared": 16614
+      },
+      "self": {
+        "counts_sha256": "af1565798058ea526a82c9437a16dbbdada39d950979b3f8a4e22469ba73bfc4",
+        "energy_fraction": "63/32",
+        "max_occupancy": 5,
+        "mesh": 256,
+        "sum_count_squared": 504
+      },
+      "three_quarters": {
+        "counts_sha256": "ae53ab31c10368a1ad3c8b0d797a3154125bf3becf957aed890d5226a847837c",
+        "energy_fraction": "315/256",
+        "max_occupancy": 11,
+        "mesh": 64,
+        "sum_count_squared": 1260
+      }
+    },
+    "4096": {
+      "half": {
+        "counts_sha256": "7a8afefc94bce73028091efb3d55371bf0a731a48a2c463232182c6427c8abd9",
+        "energy_fraction": "16625/16384",
+        "exact_ordered_near_pairs": 528208,
+        "max_occupancy": 81,
+        "mesh": 64,
+        "sum_count_squared": 266000
+      },
+      "quarter": {
+        "counts_sha256": "6363aa54ac86e3fb010e4b6013f446c659eb7334b66f7c3fa838115167225fec",
+        "energy_fraction": "1049671/1048576",
+        "max_occupancy": 528,
+        "mesh": 8,
+        "sum_count_squared": 2099342
+      },
+      "self": {
+        "counts_sha256": "e5393e22241bd340f781bdbe9233eac573573f14ae74a7b3aaa029b091bf3cfb",
+        "energy_fraction": "2049/1024",
+        "exact_ordered_near_pairs": 12248,
+        "max_occupancy": 8,
+        "mesh": 4096,
+        "sum_count_squared": 8196
+      },
+      "three_quarters": {
+        "counts_sha256": "ac8dd58ba4ea7ca660d5b5b6213c232694e0e34cba7c606c4915278f1d062091",
+        "energy_fraction": "18565/16384",
+        "max_occupancy": 17,
+        "mesh": 512,
+        "sum_count_squared": 37130
+      }
+    },
+    "512": {
+      "half": {
+        "counts_sha256": "99452c3ee10bfaee98c4a9ede0e37f00b20d0fbd69cbdfbfbef79a164dcdb179",
+        "energy_fraction": "8423/8192",
+        "max_occupancy": 42,
+        "mesh": 16,
+        "sum_count_squared": 16846
+      },
+      "quarter": {
+        "counts_sha256": "5b15e2b2fa09405a301d2822e568cba8d1b0e7ac7aa415d81bbe5382e5c36889",
+        "energy_fraction": "32971/32768",
+        "max_occupancy": 139,
+        "mesh": 4,
+        "sum_count_squared": 65942
+      },
+      "self": {
+        "counts_sha256": "d67341aae736c847745dcb6ae2957e2aa6d1bb6f3f88a43a60a04095377cc282",
+        "energy_fraction": "485/256",
+        "max_occupancy": 4,
+        "mesh": 512,
+        "sum_count_squared": 970
+      },
+      "three_quarters": {
+        "counts_sha256": "e51e20dfa8fade71681846613915c670281c9ed037566bf16c5cb57ca2e16603",
+        "energy_fraction": "1135/1024",
+        "max_occupancy": 14,
+        "mesh": 64,
+        "sum_count_squared": 4540
+      }
+    },
+    "8192": {
+      "half": {
+        "counts_sha256": "2aad7fd529cfac72063769c632b79ba9e9acf286618bec4994b9e3fc0a5d6113",
+        "energy_fraction": "132009/131072",
+        "exact_ordered_near_pairs": 2102538,
+        "max_occupancy": 151,
+        "mesh": 64,
+        "sum_count_squared": 1056072
+      },
+      "quarter": {
+        "counts_sha256": "0eb5a87bf7dc32e03511ed8a51d5b871ffa64c977397b1db460df4dac34f96ef",
+        "energy_fraction": "1048959/1048576",
+        "max_occupancy": 1042,
+        "mesh": 8,
+        "sum_count_squared": 8391672
+      },
+      "self": {
+        "counts_sha256": "f3992509ea8fbcfce806048cfece942008a0c4799718236e6c93836102ae954d",
+        "energy_fraction": "8149/4096",
+        "exact_ordered_near_pairs": 24346,
+        "max_occupancy": 7,
+        "mesh": 8192,
+        "sum_count_squared": 16298
+      },
+      "three_quarters": {
+        "counts_sha256": "3db84203208ac4e6f1c29fa6aecabc4ec0c55508d05904924bc427b794d00a88",
+        "energy_fraction": "69597/65536",
+        "max_occupancy": 31,
+        "mesh": 512,
+        "sum_count_squared": 139194
+      }
+    }
+  },
+  "independent_crosscheck_indices": [
+    0,
+    1,
+    2,
+    8,
+    31,
+    131,
+    257,
+    511,
+    1024,
+    2048,
+    4096,
+    8192,
+    16383
+  ],
+  "last_n": 16383,
+  "method": "exact original four signed pole U_0=0; fixed global lcm and independent online lcm oracles; finite data, not proof of all A",
+  "source": "r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)"
+}
