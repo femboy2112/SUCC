@@ -1,0 +1,15 @@
+# Provenance / boundary / independence map
+
+**Repository base.** Child of PR #473 exact SHA 80dc4d8b54574e03843f198ff833e2add469422a. #473 itself stems from #471 global-prior Fejér, #470 Pisot/Gamma, #468 positive gamma seam, #461 original Laurent clock and merged Main XIX. Parallel PR #472 Oily×ħ is read-only research context, not merged. No edits to prior claims, source, AGENTS, formal, frozen archive, workflow or main.
+
+**Original BBP source passport.** All arithmetic uses \(r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)\), \(U_0=0\), and exact rational state; the initial condition is not silently replaced by a coherent real seed. At every p≡1 mod8 clean epoch, genuine p-primary residue is \(a_{p,n}=4\,16^{n-b_p}\bmod p\) and remainder is p-integral. The joint CRT decomposition is unique modulo the declared integer residues.
+
+**External classical inputs.** NIST [DLMF §5.9.13](https://dlmf.nist.gov/5.9.E13) for the digamma Laplace integral and \(\psi(s+1)=\psi(s)+1/s\). Standard Cauchy/Tonelli/convolution, a power-series Bernoulli inequality, elementary exponential/log bounds, Fourier orthogonality and analytic disk Bergman area integral. Classical fixed-modulus [PNT-AP (Kedlaya §5.4, Thm 5.10)](https://kskedlaya.org/ant/chapter-5.html) with \(\varphi(8)=4\), so prime count in interval (4A,8A) at p≡1 mod8 is **A/log A**, not A/(2logA). Classical Ramanujan/cyclotomic Galois character orthogonality.
+
+**Old SUCC antecedents (not new inventions).** #296 original Fourier matrix/Fejér Gram identity; #407 original-source cylinder/collision refinement; #465/#468 positive Γ finite-to-infinite seam; #471 GF-02 radion Ward/Fejér logarithmic harmonic ladder and GF-07 square checkpoints; #473 PGC-01 first-pole clean interval, PGC-05 Fejér-to-integer histogram majorant, PGC-09 dyadic ℓ² gluing and PGC-10 self-scale criterion. Reframing old equalities as a holomorphic disk norm is exact but not separately a source-specific saving.
+
+**New scoped results.** Pointwise strict Γ continuum kernel domination, and thus all-real s>0 completely monotone defect; source-selected sublog selfscale SUFFICIENT normality implication; simultaneous ORIGINAL prime clock decomposition, exponential Galois-AVERAGED short-lag attenuation and p-free coherent counterfeit. These depend on many of the same source identities; they are NOT independent evidence for the remaining real-circle theorem.
+
+**Falsifiers.** Same four original poles with real counterseed \(s=1/5-\pi/16\): analytic Gamma sheet unchanged, real selected orbit tends one constant and violates collision bounds. Distinct fake rational p-free cofactor rounds away all selected prime phases. Generic base16 normal digit sequence altered at zero-density blocks can violate sublog selfscale, so the condition is not necessary for normality. Finite three-horizon holdouts are same-reasoner preregistered, not independent validation.
+
+**Unverified.** Any source-selected all-A o(log A) upper bound; real-selected transfer from joint Galois tensor; physical quantum claim; original π normality; RH; new Lean kernel certification.
