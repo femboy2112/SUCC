@@ -1,7 +1,7 @@
 # OPERATION STATIONARY E² — finite receiver, intrinsic Gamma updates, real selected orbit
 
 **2026-11-03 · DRAFT RESEARCH ONLY · π base-16 normality and RH OPEN.**
-Strictly additive child of [PR #478](https://github.com/femboy2112/SUCC/pull/478), pinned parent SHA 16e4d36369822e669f214b455481c25a93ba294c. Repo-old E-tower precedents: [A/B climbers to E #26](https://github.com/femboy2112/SUCC/pull/26), [verified local-to-global E gluing #27](https://github.com/femboy2112/SUCC/pull/27), [shared carrier/no-ghost #28](https://github.com/femboy2112/SUCC/pull/28), [no-ghost #61](https://github.com/femboy2112/SUCC/pull/61), and main-integrated [rank-two chiral E² original BBP](../../../2026-10-27/BBP_RANK_TWO_CHIRAL_E_TOWERS.md). PR #479 is a READ-ONLY sibling. Original four signed BBP poles, literal U₀=0, historical theorem contracts, production, formal/Lean, workflow files and main are unchanged.
+Strictly additive child of [PR #478](https://github.com/femboy2112/SUCC/pull/478), pinned parent SHA 16e4d36369822e669f214b455481c25a93ba294c. Repo-old E-tower precedents: [A/B climbers to E #26](https://github.com/femboy2112/SUCC/pull/26), [verified local-to-global E gluing #27](https://github.com/femboy2112/SUCC/pull/27), [shared carrier/no-ghost #28](https://github.com/femboy2112/SUCC/pull/28), [no-ghost #61](https://github.com/femboy2112/SUCC/pull/61), and main-integrated [rank-two chiral E² original BBP](../../2026-10-27/BBP_RANK_TWO_CHIRAL_E_TOWERS.md). PR #479 is a READ-ONLY sibling. Original four signed BBP poles, literal U₀=0, historical theorem contracts, production, formal/Lean, workflow files and main are unchanged.
 
 ## What has actually been constructed
 
