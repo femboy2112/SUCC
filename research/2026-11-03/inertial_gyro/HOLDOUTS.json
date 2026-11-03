@@ -19,19 +19,19 @@
         {
           "h": 1,
           "identity_coherence_sq_float": 0.018911356099,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         },
         {
           "h": 2,
           "identity_coherence_sq_float": 0.016269744364,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         },
         {
           "h": 16,
           "identity_coherence_sq_float": 0.013867869855,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         }
       ]
@@ -50,19 +50,19 @@
         {
           "h": 1,
           "identity_coherence_sq_float": 0.000558203922,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         },
         {
           "h": 2,
           "identity_coherence_sq_float": 0.007132218901,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         },
         {
           "h": 16,
           "identity_coherence_sq_float": 0.000710295648,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         }
       ]
@@ -81,19 +81,19 @@
         {
           "h": 1,
           "identity_coherence_sq_float": 0.000914246982,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         },
         {
           "h": 2,
           "identity_coherence_sq_float": 0.007288382231,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         },
         {
           "h": 16,
           "identity_coherence_sq_float": 0.000696925479,
-          "max_frame_difference_float": 0,
+          "max_frame_difference_float": 0.0,
           "three_frame_comparison_pass": true
         }
       ]
@@ -101,7 +101,7 @@
   ],
   "wrong_seed_control": {
     "different_seed": "1/5 - alpha_384",
-    "last_192_coherence_sq_float": 1,
+    "last_192_coherence_sq_float": 1.0,
     "greater_than_0_999": true
   },
   "central_sign_control": {
