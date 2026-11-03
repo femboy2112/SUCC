@@ -1,0 +1,11 @@
+# Next original-source discriminator: prove sector balance, not just residual existence
+
+**Primary objective:** For every fixed integer h≠0, choose an explicit power-of-two mesh M_N→∞ and prove the genuine ZERO-SEEDED original four-pole source satisfies A_(N,M_N)(h)→0 for ALL prefixes N; see SWB-04 in PROOFS.md. Its deterministic bound gives Weyl decay and base-16 π normality, conditionally. Alternatively, attack the ALREADY WEAKER #475/#476 authentic mesoscopic source collision criterion E_(A,m_A)=o(log m_A); neither original-source premise is currently verified.
+
+**Selected arithmetic:** Use all first-pole p≡1 mod8 source-clean windows from #474 together with the complementary Archimedean cofactor and original carries. Derive a signed conservation/nonconspiracy bound on opposing phase-sector occupancy mismatches. The sector pairs depend on v₂(h); h-even cannot be controlled by a generic half-circle match.
+
+**Diagnostics:** Compare exact original phase sector counts across successive dyadic epochs at M=16,64,256 and new logarithmic meshes; preserve raw absolute count differences, not just mean phases. For time-aligned windows, exact phase gap is (16^L−1)U_n+F(n,L). The finite observed mean half-turn distance ≈1/4 warns that fixed-time matching is not the mechanism; a dynamically sourced phase-bin allocation remains plausible but unproved.
+
+**Mandatory hostiles:** same-source real coherent seed q=1/5 (all phases settle in one bin); h=2 case where half-circle counts balance but harmonic does NOT; source changed p-free coherent counterfeit; normal yet clustered control; π source exactly odd denominator with NO exact half-turn pairs. The same positive W_n occurs in coherent seed, so source-only positivity is not a discriminator.
+
+**Verdict-changing acceptance:** rigorous original zero-seed all-prefix signed window balance or an original-source all-scale collision upper bound. Lesser outcomes: new source-specific unbounded-family partial inequality with explicit exceptional-set costs. Refused as proofs: positive residual, fixed-point/steady-state existence, phase conjugation, local carrier Haar, finite tests and Galois-average cancellation. Keep the project claim ledger intact.
