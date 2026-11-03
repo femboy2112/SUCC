@@ -1,0 +1,104 @@
+{
+  "blob_hashes_self_excluded": true,
+  "files": [
+    {
+      "git_blob_sha1": "685ec2f5c38f17f30d4803c15ad2e86d49e77430",
+      "path": "research/2026-11-03/joint_carry_cocycle/CLAIM_LEDGER.md",
+      "sha256": "06355008aa6cf71afb5a8c1c69a28aa49be03385fe376ff02ccd04d416345bbb",
+      "size": 1968
+    },
+    {
+      "git_blob_sha1": "feaed92cc7fd49b9a91d83bd6bfc0db1d0b54042",
+      "path": "research/2026-11-03/joint_carry_cocycle/CODEX_HANDOFF.md",
+      "sha256": "a24c331432b215de30924a8a1d33c132f325641e57b2f7897d8fa8de2c750c99",
+      "size": 4020
+    },
+    {
+      "git_blob_sha1": "2f40ff27abbdb0866e589e836db39ca080454d9a",
+      "path": "research/2026-11-03/joint_carry_cocycle/EXACT_RECEIPT.json",
+      "sha256": "30a89ac4487eab601f42d6d626821c9aace4b182ffcc8c96f276a6a894ebb19d",
+      "size": 16869
+    },
+    {
+      "git_blob_sha1": "5d7e8ef5ad99cbeb074ead0249af85ef6c6b64bd",
+      "path": "research/2026-11-03/joint_carry_cocycle/NEXT.md",
+      "sha256": "edcc701e373de61c214fbea31caefbdc779ee1627b9a0270d9288c5aa76123a6",
+      "size": 4123
+    },
+    {
+      "git_blob_sha1": "405fa9571226c1aa1161fc71a64bfef3129153ec",
+      "path": "research/2026-11-03/joint_carry_cocycle/PREREGISTRATION.md",
+      "sha256": "a547e491dae8a59feee1926c35576d0ac19f499a91d3715e44b190c553232dce",
+      "size": 2293
+    },
+    {
+      "git_blob_sha1": "64a38b54ac5e0f8cb97b55c3ba945545da2aa92c",
+      "path": "research/2026-11-03/joint_carry_cocycle/PROOFS.md",
+      "sha256": "8672a5c9036934e06e1e195e33e70d68e6bc8237d6a1fdb0a8de12ead4e27a93",
+      "size": 17653
+    },
+    {
+      "git_blob_sha1": "94e44f6cea319e33f90c681976a10f3fa51353ab",
+      "path": "research/2026-11-03/joint_carry_cocycle/README.md",
+      "sha256": "1f35052ee49e407ed01aa14e487cb1f3ec6c2a8e8cbee844e207539f0454a080",
+      "size": 1304
+    },
+    {
+      "git_blob_sha1": "8372576a89cc00bec5ee31a4bf6878af2d6ac2fd",
+      "path": "research/2026-11-03/joint_carry_cocycle/SOURCE_MAP.md",
+      "sha256": "e122d5cb0683f893512ccc9189b145688742b6b9134a9d4740ca22d6318832b1",
+      "size": 2870
+    },
+    {
+      "git_blob_sha1": "96de1223c9a64290fc3051dfe3a6d1178f547203",
+      "path": "research/2026-11-03/joint_carry_cocycle/SYMBOLIC_RECEIPT.json",
+      "sha256": "a1b8d94ccb5fc911091783e4e48a9935700664125f00c5ba733516cce633ba61",
+      "size": 521
+    },
+    {
+      "git_blob_sha1": "82bc2ff56bcc749f1beaf7302bfeb870bfe32880",
+      "path": "research/2026-11-03/joint_carry_cocycle/TEST_LOG.txt",
+      "sha256": "3754e53616990afd8847a78df853b4502b83cfdd340a3dbe1d1fdd3820bda4b3",
+      "size": 9287
+    },
+    {
+      "git_blob_sha1": "4e759dd80b88fbf3a01368bd30bc83fb54b51307",
+      "path": "research/2026-11-03/joint_carry_cocycle/VALIDATION.md",
+      "sha256": "9e2df9809576fd2d891aee58a5649248123f857105a09c1571e1a8f802f36f2c",
+      "size": 5267
+    },
+    {
+      "git_blob_sha1": "3f235813636f195b08159c1e711c71f09e57e6ce",
+      "path": "research/2026-11-03/joint_carry_cocycle/joint_carry.py",
+      "sha256": "837c18685f12a3981867d2e11f2326c4257a2123782b024c42db8b16acd391e6",
+      "size": 13240
+    },
+    {
+      "git_blob_sha1": "15a77b3c304bda3d495c77a5c9d4e47efe2fef30",
+      "path": "research/2026-11-03/joint_carry_cocycle/probe.py",
+      "sha256": "65eef918e1f75696a9bc29e4a0f3b6d6f443b9946c513f599ac2c2c61e3c534f",
+      "size": 5192
+    },
+    {
+      "git_blob_sha1": "580bde49791618693d5d5c6b2769483eb8397076",
+      "path": "research/2026-11-03/joint_carry_cocycle/symbolic_oracle.py",
+      "sha256": "23618fc92fbfc941017a8a4203b513491900ac6df7ff5be74b4c0727633a5f2f",
+      "size": 2196
+    },
+    {
+      "git_blob_sha1": "b99d2beb53b01a5e7b551aef1e8a2c38771f4c18",
+      "path": "tests/test_joint_carry_cocycle.py",
+      "sha256": "4fbc96c16edfffc4e5c74c4ead6416634fc448bffe6a21863bd2e86ef9446192",
+      "size": 8776
+    },
+    {
+      "git_blob_sha1": "2b4d3eb104f071aa456e2321b9760c169ef37ac1",
+      "path": "tests/test_joint_carry_independent.py",
+      "sha256": "fdeff9fefeddcca9a7c22cc6d3ebe26cad057803ccc80f00e68a09d73890f872",
+      "size": 2500
+    }
+  ],
+  "parent_sha": "8383f69f5eb92eb037dde84f686cf3c77e043c2e",
+  "preregistration_commit": "2dc96f2116d3a6079a680300f7037a19456ca69c",
+  "scope": "original source research only, no pi normality proof"
+}
