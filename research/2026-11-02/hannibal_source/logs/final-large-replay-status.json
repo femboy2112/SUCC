@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "research/2026-11-02/hannibal_source/probe.py",
+    "--large",
+    "--verify"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 398.042,
+  "unchanged_tested_sha256": {
+    "research/2026-11-02/hannibal_source/probe.py": "0e198f325fdb0aec5efe1ca3e416934ff5b066035ca50453afc5b30b83aaf3b9",
+    "research/2026-11-02/hannibal_source/hannibal.py": "3d76cce5c99c58ab043a6548af22e745e8ec1772b8694849bcb0ae18b6433d77",
+    "research/2026-11-02/weyl_mirror_campaign/weyl_mirror.py": "aff7f405d126e3ba70fda1143a5f588188ff3b71acf9f9bc98cc629eea363b7c",
+    "research/2026-11-02/mesoscopic_spectral_army/mesoscopic.py": "a94cccac96f5fc14d4a50f809c8dafdebdec554ecec0ab208e6100d85c415325"
+  }
+}
