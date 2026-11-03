@@ -228,7 +228,7 @@ def exact_gyro_upper_bound(phases,h,mesh):
     """|c_N(h)| <= imbalance + (22/7)*|h|/mesh, rigorous rational bound.
 
     Uses original sector proof and elementary pi<22/7; bound can exceed 1.
-    Caller must separately verify \`phases\` really come from U0=0.
+    Caller must separately verify `phases` really come from U0=0.
     """
     return exact_sector_imbalance(phases,h,mesh)+F(22*abs(h),7*mesh)
 
@@ -324,7 +324,7 @@ def relay_triangle(ab:LinkReceipt,bc:LinkReceipt,ca:LinkReceipt,
 class Spin2Mark:
     """Exact formal root of unity exp(pi*i*a), a in Q/(2Z).
 
-    Does NOT evaluate cos/sin. Center \`a=1\` is -1, invisible in Bloch SO3.
+    Does NOT evaluate cos/sin. Center `a=1` is -1, invisible in Bloch SO3.
     Original BBP U_n are rational, so every mark is a finite root of unity.
     """
     angle: F
