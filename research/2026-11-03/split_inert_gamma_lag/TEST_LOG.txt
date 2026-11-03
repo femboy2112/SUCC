@@ -1,0 +1,58 @@
+OPERATION SOURCE-SELECTED GAMMA + SPLIT/INERT
+Isolated local staging; NO full repo checkout available.
+Pinned source parent PR #484: 057a68c4b4e01439e76c2050c28309a4858b9dc2
+Remote prereg committed BEFORE held-outs: 2235c5e00dcdfcbb96d5a9eee7709cd25f67848c
+
+COMMAND: cd /mnt/data/succ_round && python -m unittest discover -s tests -p test_*.py -v
+test_harmonic_renormalized_series_finite_diagnostic (test_gamma_odd.BoundsAndValidation.test_harmonic_renormalized_series_finite_diagnostic) ... ok
+test_invalid_inputs (test_gamma_odd.BoundsAndValidation.test_invalid_inputs) ... ok
+test_positive_gamma_kernel_finite_sanity (test_gamma_odd.BoundsAndValidation.test_positive_gamma_kernel_finite_sanity) ... ok
+test_dirichlet_l1_simple_integrals_numeric_diagnostic (test_gamma_odd.DirichletCharacters.test_dirichlet_l1_simple_integrals_numeric_diagnostic) ... ok
+test_multiplicative_on_all_odd_values (test_gamma_odd.DirichletCharacters.test_multiplicative_on_all_odd_values) ... ok
+test_tables (test_gamma_odd.DirichletCharacters.test_tables) ... ok
+test_base16_modular_vs_independent_exact_fraction (test_gamma_odd.OriginalBBP.test_base16_modular_vs_independent_exact_fraction) ... ok
+test_class_grouped_crt_vs_per_prime_oracle (test_gamma_odd.OriginalBBP.test_class_grouped_crt_vs_per_prime_oracle) ... ok
+test_near_lock_of_coprime_odd_prime_classes (test_gamma_odd.OriginalBBP.test_near_lock_of_coprime_odd_prime_classes) ... ok
+test_odd_denominator_class_is_not_its_prime_support (test_gamma_odd.OriginalBBP.test_odd_denominator_class_is_not_its_prime_support) ... ok
+test_single_source_original_not_independent_products (test_gamma_odd.OriginalBBP.test_single_source_original_not_independent_products) ... ok
+test_source_immutability_and_real_gauss_glue (test_gamma_odd.OriginalBBP.test_source_immutability_and_real_gauss_glue) ... ok
+test_dependent_odd_prime_classes_can_lock_exactly (test_gamma_odd_symbolic.SourceCrossChecks.test_dependent_odd_prime_classes_can_lock_exactly) ... ok
+test_exact_source_2primary_debt_cancelled_before_odd_split (test_gamma_odd_symbolic.SourceCrossChecks.test_exact_source_2primary_debt_cancelled_before_odd_split) ... ok
+test_reduced_original_poles_have_gaussian_classes (test_gamma_odd_symbolic.SourceCrossChecks.test_reduced_original_poles_have_gaussian_classes) ... ok
+test_source_unweighted_finite_tail_bounded (test_gamma_odd_symbolic.SourceCrossChecks.test_source_unweighted_finite_tail_bounded) ... ok
+test_symbolic_independent_oracle (test_gamma_odd_symbolic.SourceCrossChecks.test_symbolic_independent_oracle) ... ok
+test_bad_window_c (test_odd_gamma_front.PrimePassports.test_bad_window_c) ... ok
+test_class_disjointness_and_valid_windows (test_odd_gamma_front.PrimePassports.test_class_disjointness_and_valid_windows) ... ok
+test_exact_prime_product_and_alias_counts (test_odd_gamma_front.PrimePassports.test_exact_prime_product_and_alias_counts) ... ok
+test_exact_residues_original_fraction (test_odd_gamma_front.PrimePassports.test_exact_residues_original_fraction) ... ok
+test_inert_secondary_poles_are_real (test_odd_gamma_front.PrimePassports.test_inert_secondary_poles_are_real) ... ok
+test_variable_interval_clean_and_original_no_repeat (test_odd_gamma_front.PrimePassports.test_variable_interval_clean_and_original_no_repeat) ... ok
+test_chord_upper_and_errors (test_odd_gamma_front.SourceGaussianGamma.test_chord_upper_and_errors) ... ok
+test_exact_mixed_compensation_law (test_odd_gamma_front.SourceGaussianGamma.test_exact_mixed_compensation_law) ... ok
+test_geometric_gamma_tail_vs_independent_source_series (test_odd_gamma_front.SourceGaussianGamma.test_geometric_gamma_tail_vs_independent_source_series) ... ok
+test_original_source_unchanged (test_odd_gamma_front.SourceGaussianGamma.test_original_source_unchanged) ... ok
+test_rational_compensation_sharp_and_positive (test_odd_gamma_front.SourceGaussianGamma.test_rational_compensation_sharp_and_positive) ... ok
+test_signed_zero_seed_gluing (test_odd_gamma_front.SourceGaussianGamma.test_signed_zero_seed_gluing) ... ok
+test_chi4_not_additive_character_of_rational_circle (test_odd_gamma_symbolic.IndependentProofSanity.test_chi4_not_additive_character_of_rational_circle) ... ok
+test_old_large_sieve_spacing_premise_is_unpurchased (test_odd_gamma_symbolic.IndependentProofSanity.test_old_large_sieve_spacing_premise_is_unpurchased) ... ok
+test_phase_derivative_source_bound (test_odd_gamma_symbolic.IndependentProofSanity.test_phase_derivative_source_bound) ... ok
+test_product_criteria_is_exact_integer (test_odd_gamma_symbolic.IndependentProofSanity.test_product_criteria_is_exact_integer) ... ok
+test_ramanujan_factors_without_float_roots (test_odd_gamma_symbolic.IndependentProofSanity.test_ramanujan_factors_without_float_roots) ... ok
+test_second_inert_source_residue_not_avoided (test_odd_gamma_symbolic.IndependentProofSanity.test_second_inert_source_residue_not_avoided) ... ok
+test_symbolic_checks_not_numerical_fits (test_odd_gamma_symbolic.IndependentProofSanity.test_symbolic_checks_not_numerical_fits) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 1.278s
+
+OK
+
+COMMAND: python research/2026-11-03/split_inert_gamma_lag/probe.py --verify
+Original-source exact prime/Gamma receipt replay: PASS (exit 0)
+COMMAND: python research/2026-11-03/split_inert_gamma_lag/symbolic_oracle.py --verify
+Independent symbolic oracle: PASS (exit 0)
+COMMAND: python -m compileall -q research/2026-11-03/split_inert_gamma_lag tests/test_odd_gamma_front.py tests/test_odd_gamma_symbolic.py
+Compilation: PASS (exit 0)
+COMMAND: timeout 8 git ls-remote https://github.com/femboy2112/SUCC.git HEAD
+Exit 128, fatal: unable to access https://github.com/femboy2112/SUCC.git/: Could not resolve host: github.com
+This is an environment access gap, not a test failure.
+NOT RUN: full native SUCC >11k suite, root provenance/observer/ordinal, new Lean compilation, external referee.
