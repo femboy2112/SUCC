@@ -246,3 +246,31 @@ There are TWO type-correct positive sheets:
 The missing mathematical arrow between those two sheets is **not** positivity or a visual identification of their dimensions: it is the original selected real cofactor/carry estimate LS-10, or an alternative original source-specific signed dyadic loss. Neither pointwise Gamma kernel domination nor exponentially small Galois AVERAGE proves the selected real-circle cancellation.
 
 **Ledger:** LS-01/02 positive convolution and strict all-real kernel dominance = **paper PROVED**, with classical Laplace/coth/Bernoulli ingredients attributed; LS-03 sublogarithmic conditional normality and its normal-but-failing counterexample = **paper PROVED as implication**, source premise **OPEN**; LS-04 simultaneous original CRT and exponential short-lag Galois-average bound = **paper PROVED**, selected real saving **OPEN**. No Lean proof compilation, independent mathematical referee or all-horizon numerical extrapolation is claimed. A false assertion of π normality is explicitly excluded.
+
+
+## LS-15. Genuine ORIGINAL selected-real phase nonrepeat at short gaps — not yet near-collision
+
+This is a source-selected arithmetic statement beyond the Galois mean, but it retains an important quantitative gap.
+
+By classical fixed-modulus PNT-AP and partial summation, the simultaneous CLEAN newborn-prime product obeys
+
+\[
+\boxed{\sum_{p\in\mathcal P_A}\log p=A+o(A),\qquad
+\prod_{p\in\mathcal P_A}p=\exp(A+o(A)).}
+\tag{LS-15a}
+\]
+
+The constant is exactly \((8A-4A)/\varphi(8)=A\), since \(\varphi(8)=4\). This is unconditional classical arithmetic; no RH or Artin primitive-root conjecture is used.
+
+Fix any \(0<c<1/\log16\) and integer \(h\ne0\). For all sufficiently large dyadic \(A\) (depending on c,h), take any distinct original source times \(n,m\in[A,2A)\) with \(d=|n-m|\le cA\). If all newborn-prime residues were equal, every \(p\in\mathcal P_A\) would divide \(16^d-1\). Then \(\prod_{p\in\mathcal P_A}p\le16^d-1<\exp(cA\log16)\), contradicting LS-15a, because \(c\log16<1\). Thus some p has \(a_{p,n}\ne a_{p,m}\), and the exact original rational difference \(U_n-U_m\) is NOT p-integral, hence cannot be an integer. For fixed h and sufficiently large p>|h|, h times this difference is also nonintegral. Therefore
+
+\[
+\boxed{\forall 0<|n-m|\le cA,\quad
+e(hU_n)\ne e(hU_m)\quad
+\text{for ORIGINAL }U_0=0,\quad
+A\gg_{c,h}1.}\tag{LS-15b}
+\]
+
+This certifies source-selected exact phase distinctness over a fraction \(c<1/\log16\simeq0.3607\) of each large epoch's possible time lags; no averaging or alternate seed entered the proof. Its **quantitative defect** is decisive: nonzero rational real-circle distance may be exponentially or superexponentially small due to the full complementary denominator height. LS-15b does NOT bound the number of pairs within \(1/A\) and does NOT establish \(\mathscr C_A=o(\log A)\).
+
+The multi-prime rational cofactor counterfeit from LS-04 can make all selected phases \(O(1/Q)\)-close to one another while preserving every prime clock (but changing the source), proving why any attempted inference from LS-15b to a uniform real spacing fails without the original complete source law. A next probe must give a **source-specific quantitative Archimedean gap or near-pair count**, not just another nonvanishing theorem.
