@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-02",
+  "source": "original four signed BBP poles; literal U0=0",
+  "method": "Fraction exact recurrence and exact integer circle bins floor(A * frac(U_n)) for A<=n<2A",
+  "preregistration": "PREREGISTRATION.md committed before calculation",
+  "threshold": "C_A<7/2 at each A (finite calibration only)",
+  "status": "3/3 finite holdout PASS; no all-scale normality result",
+  "rows": [
+    {
+      "A": 512,
+      "collision_integer": 970,
+      "exact_C_A": "485/256",
+      "max_occupancy": 4,
+      "occupied_bins": 338,
+      "newborn_prime_count": 64,
+      "pass": true,
+      "galois_d1_log10_abs_float": -222.1541239473649,
+      "galois_d4_log10_abs_float": -222.1541239473649
+    },
+    {
+      "A": 1024,
+      "collision_integer": 2026,
+      "exact_C_A": "1013/512",
+      "max_occupancy": 5,
+      "occupied_bins": 643,
+      "newborn_prime_count": 115,
+      "pass": true,
+      "galois_d1_log10_abs_float": -434.5171330176633,
+      "galois_d4_log10_abs_float": -434.5171330176633
+    },
+    {
+      "A": 2048,
+      "collision_integer": 4050,
+      "exact_C_A": "2025/1024",
+      "max_occupancy": 6,
+      "occupied_bins": 1300,
+      "newborn_prime_count": 216,
+      "pass": true,
+      "galois_d1_log10_abs_float": -882.0850664097343,
+      "galois_d4_log10_abs_float": -882.0850664097343
+    }
+  ],
+  "limits": "finite evidence; exact collision integers but log10 Galois quantities are approximate diagnostics; not independent blinding; neither prime clocks nor finite samples prove selected real cofactor cancellation"
+}
