@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-03",
+  "status": "FINITE EXACT OBSERVATIONS ONLY; no source-selected Weyl cancellation",
+  "source": "original 4 signed BBP poles; U0=0; old SUCC E2 rank-two chiral 8-tap shell",
+  "parent": "16e4d36369822e669f214b455481c25a93ba294c",
+  "e_receivers": [
+    {
+      "B": 72,
+      "q_B": "1/73",
+      "p_B": "1/497323236409786642155382248146820840100456150797347717440463976893159497012533375533056",
+      "alpha_B_canonical_sha256": "af5248d493cdd9b4261c68461d2ae2af9117f07798d57156a39b8a85c26531f3",
+      "U_B_canonical_sha256": "fab42c39fddc7d5793f8b575f187db83ca5b8771cd32c7bfb54dd4d3eb3394da",
+      "three_independent_exact_completions": true,
+      "seams": [
+        {
+          "n": 24,
+          "exact_seam": true
+        },
+        {
+          "n": 48,
+          "exact_seam": true
+        }
+      ]
+    },
+    {
+      "B": 160,
+      "q_B": "1/161",
+      "p_B": "1/4562440617622195218641171605700291324893228507248559930579192517899275167208677386505912811317371399778642309573594407310688704721375437998252661319722214188251994674360264950082874192246603776",
+      "alpha_B_canonical_sha256": "1e0e773b2002a9d26defa47c814df63380fdd7913f6807ec2ac8ba51fca063bb",
+      "U_B_canonical_sha256": "fa131677efb83290e897ea53e766882a2b261bfb7b84a86554b6c4ba71931bc8",
+      "three_independent_exact_completions": true,
+      "seams": [
+        {
+          "n": 53,
+          "exact_seam": true
+        },
+        {
+          "n": 106,
+          "exact_seam": true
+        }
+      ]
+    }
+  ],
+  "gamma_finite_anomaly": {
+    "q": "1/2",
+    "B": 12,
+    "equals_exact_positive_residual": true,
+    "canonical_sha256": "61ae49f92d767196f18ee7b9360d6c0867816ad623e2a2d8657f8a35f00240e2"
+  },
+  "auxiliary_gamma_tangent": [
+    {
+      "N": 24,
+      "omega": "1/2",
+      "q_N": "1/25",
+      "rational_Gaussian_product_factorization": true,
+      "corrected_modulus_float_diagnostic": 0.205576010896
+    },
+    {
+      "N": 48,
+      "omega": "1/2",
+      "q_N": "1/49",
+      "rational_Gaussian_product_factorization": true,
+      "corrected_modulus_float_diagnostic": 0.205534449629
+    }
+  ],
+  "warning": "Gamma tangent is an auxiliary probability model; coherent same-original-forcing non-Haar seeds persist; exact finite checks do not prove universal bounds."
+}
