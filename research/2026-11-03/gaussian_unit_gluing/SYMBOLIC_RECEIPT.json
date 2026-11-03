@@ -1,0 +1,41 @@
+{
+  "claims_pi_normality": false,
+  "fourpole_den_discriminant": 3774873600,
+  "fourpole_resultant": -7372800,
+  "gaussian_mod13_complete": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "hankel_determinant": 4,
+  "integral_channels": [
+    "-2*log(2)",
+    "pi+2*log(2)"
+  ],
+  "minimal_degree": 4,
+  "minimal_integer_discriminant": -2048,
+  "mutation_integral_shift": "67/480",
+  "original_K": "16*(t - 1)/((t**2 - 2)*(t**2 - 2*t + 2))",
+  "projectors": [
+    "2*u**3 - u + 1",
+    "-2*u**3 + u"
+  ],
+  "source_sector_leading_coefficients": [
+    "-15/32",
+    "15/32"
+  ],
+  "source_total_leading_coefficient": "15/64",
+  "source_two_adic_pole_residues": [
+    "-1/32",
+    "1/32"
+  ]
+}
