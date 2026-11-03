@@ -188,6 +188,7 @@ class SourceValuationTree(unittest.TestCase):
             if k>=5:
                 self.assertEqual(m.v2_rat(states[n])-4,k-4)
 
+
     def test_preregistered_fresh_high_power_modular_receipts(self):
         import json
         receipt=Path(__file__).resolve().parents[1]/'research'/'2026-11-03'/'figure_eight_pow2'/'HOLDOUTS.json'
