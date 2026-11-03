@@ -163,7 +163,6 @@ class OriginalSourceFiniteCertificates(unittest.TestCase):
 
 if __name__=='__main__':unittest.main()
 
-
 class GyroFejerBridge(unittest.TestCase):
     def test_original_gamma_purity_error_decreases_inverse_horizon(self):
         self.assertEqual(g.original_gamma_gyro_purity_error(1,1),F(561,392))
