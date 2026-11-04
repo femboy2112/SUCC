@@ -1,0 +1,9 @@
+# Source map and provenance
+
+* **Canonical source:** `femboy2112/SUCC`, Main XIX `81045770234a114247e43eb08ae5c6d446e9514a`, unchanged `r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)`, literal `U_0=0`.
+* **Independent algebraic oracle:** combined numerator `(120n^2-89n+16)` divided by `(2n-1)(4n-1)(8n-7)(8n-3)`, from exact source algebra in Main XIX. Independent from four separate fractions in `prime_phase.py`; `independent_oracle.py` uses it to replay all U_n.
+* **Prior local source/seed firewall:** `research/2026-11-01/main_xix/MAIN_XIX_HANDOFF.md`, `research/2026-10-31/signed_lag_fireworks/BOUNDARY.md`, `research/2026-10-31/four_pole_path_interference/PROOFS.md`; PR #458 `selected_zero_boundary_signed/PROOFS.md` gives a negative source-selected positivity probe, not merged at starting point.
+* **Classical theorem used, NOT reproduced here:** prime number theorem for arithmetic progressions (`theta(x;4,1)=x/2+o(x)`), e.g. `https://www.math.purdue.edu/~sahay5/imsc.pdf` and `https://encyclopediaofmath.org/wiki/Brun%E2%80%93Titchmarsh_theorem`.
+* **Other classical inputs:** Dirichlet character orthogonality/Gauss sum, cyclotomic CRT and relative Galois trace, normality preserved by rational addition and grouping radix powers, basic trig/sine chord, Weil/Weyl criterion for base16 normality. All formulas in PROOFS are explicitly derived within their domain.
+* **Research-specific new derivations:** direct single-prime valuations; exact all-horizon `P_N` denominator; Galois observer false-positive for *actual* source; specific period-four p=257; source-mass bound `65/256`; improved real quadrature reconstruction; p-window suffix contraction. No independent academic priority is asserted.
+* **No source claims:** no physical Galois observer, no quantum model, no true random digits, no RH, no original-source Weyl saving. Rational counterexamples never rebranded as authentic source trajectories.

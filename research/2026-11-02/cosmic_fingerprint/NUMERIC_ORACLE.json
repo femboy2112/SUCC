@@ -1,0 +1,58 @@
+{
+  "method": "independently evaluated actual complex causal field, direct periodic grid, double precision only",
+  "grid_samples": 32768,
+  "causal_sky": [
+    {
+      "source": "authentic four-pole zero seed",
+      "M": 3,
+      "cross_observed": 0.5422396960404278,
+      "cross_formula": 0.5422396960404208,
+      "i0_observed": 7.22368051681491,
+      "i0_formula": 7.223680516814897,
+      "i90_observed": 11.479346224708072,
+      "i90_formula": 11.479346224708088
+    },
+    {
+      "source": "zero-seeded positive changed forcing, rational coherent shadow",
+      "M": 3,
+      "cross_observed": 0.6663149685342631,
+      "cross_formula": 0.6663149685342594,
+      "i0_observed": 10.1277967662308,
+      "i0_formula": 10.127796766230816,
+      "i90_observed": 10.353002725008036,
+      "i90_formula": 10.353002725008078
+    }
+  ],
+  "finite_source_window": [
+    {
+      "p": 257,
+      "h": 1,
+      "start": 33,
+      "end": 128,
+      "M": 96,
+      "original_mean_abs": 0.02760764063818946,
+      "shadow_mean_abs": 0.9999999998068007,
+      "original_contrast": -0.009654484845059257,
+      "shadow_contrast": 0.9895833329469345
+    },
+    {
+      "p": 257,
+      "h": 3,
+      "start": 33,
+      "end": 128,
+      "M": 96,
+      "original_mean_abs": 0.06570739156132797,
+      "shadow_mean_abs": 0.9999999982612059,
+      "original_contrast": -0.006099205360872991,
+      "shadow_contrast": 0.9895833298557452
+    }
+  ],
+  "exact_preexisting_finite_certificate_used": "SUCC PR #459 SPP-10 h=1 p=257 |S|/96<1/16; no new rigorous original interval oracle this round",
+  "exact_derived_contrast_bounds": {
+    "original": "<-5/768",
+    "shadow": ">989/1000",
+    "noise_robust_original": "<-7/1536",
+    "noise_robust_shadow": ">987/1000",
+    "noise_condition": "science-channel additive anisotropy L2<=1/512; reference clean"
+  }
+}

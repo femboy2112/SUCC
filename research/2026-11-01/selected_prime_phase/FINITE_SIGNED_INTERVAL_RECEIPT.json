@@ -1,0 +1,71 @@
+{
+  "bits": 32,
+  "cases": [
+    {
+      "N": 128,
+      "certified_strict_less_than": "1/16",
+      "h": 1,
+      "imag_interval": [
+        "3422699/250000000",
+        "34227/2500000"
+      ],
+      "prime": 257,
+      "real_interval": [
+        "-11986909/500000000",
+        "-11986907/500000000"
+      ],
+      "sample_count": 96,
+      "upper_L1": "18832309/500000000",
+      "window": [
+        33,
+        128
+      ]
+    },
+    {
+      "N": 128,
+      "certified_strict_less_than": "1/8",
+      "h": 3,
+      "imag_interval": [
+        "-101431/5000000",
+        "-5071549/250000000"
+      ],
+      "prime": 257,
+      "real_interval": [
+        "-31248727/500000000",
+        "-1249949/20000000"
+      ],
+      "sample_count": 96,
+      "upper_L1": "82783653/1000000000",
+      "window": [
+        33,
+        128
+      ]
+    },
+    {
+      "N": 128,
+      "certified_strict_less_than": "1/8",
+      "h": 5,
+      "imag_interval": [
+        "-868493/12500000",
+        "-17369859/250000000"
+      ],
+      "prime": 257,
+      "real_interval": [
+        "25985983/1000000000",
+        "25985987/1000000000"
+      ],
+      "sample_count": 96,
+      "upper_L1": "47732713/500000000",
+      "window": [
+        33,
+        128
+      ]
+    }
+  ],
+  "not_asymptotic": true,
+  "phase_method": "dyadic floor + Taylor derivative remainder + source Fraction",
+  "pi_source": "Machin arctangent rational alternating series; not digits of pi",
+  "pi_terms": 15,
+  "status": "CERTIFIED_EXACT_RATIONAL_INTERVAL",
+  "terms": 12
+}
