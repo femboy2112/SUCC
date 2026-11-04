@@ -1,0 +1,199 @@
+{
+  "RH_proved": false,
+  "claim": "universal pulse and sharp log denominator exponent, paper theorem",
+  "development_first_pulse_normalizers": {
+    "1": [
+      [
+        1,
+        "4"
+      ],
+      [
+        4,
+        "7/2"
+      ],
+      [
+        5,
+        "33/10"
+      ],
+      [
+        6,
+        "47/15"
+      ]
+    ],
+    "3": [
+      [
+        2,
+        "-1/2"
+      ],
+      [
+        3,
+        "16/3"
+      ],
+      [
+        4,
+        "-19/6"
+      ],
+      [
+        7,
+        "130/21"
+      ]
+    ],
+    "5": [
+      [
+        1,
+        "-1"
+      ],
+      [
+        4,
+        "7/2"
+      ],
+      [
+        5,
+        "-66/5"
+      ],
+      [
+        6,
+        "47/15"
+      ]
+    ],
+    "7": [
+      [
+        2,
+        "-1/2"
+      ],
+      [
+        3,
+        "-4/3"
+      ],
+      [
+        4,
+        "-19/6"
+      ],
+      [
+        7,
+        "-520/21"
+      ]
+    ]
+  },
+  "finite_sign_checks_not_universal_proof": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "7": true
+  },
+  "fresh_declared_source_holdouts": [
+    {
+      "N": 128,
+      "cancelled_large_source_primes": [
+        37
+      ],
+      "cumulative_LCM_binary_bits": 1116,
+      "denominator_binary_bits": 1110,
+      "denominator_divides_LCM": true,
+      "eligible_large_source_primes": 124,
+      "log_den_per_N_FLOAT_DIAGNOSTIC": "6.0104741486927",
+      "log_lcm_per_N_FLOAT_DIAGNOSTIC": "6.0386844448852",
+      "prime_residue_sequence_sha256": "86c60d35043ac27c4c1ee010bd14036dee0ae84dbe4b21103ccb6890c5ec2505",
+      "source_lift_sha256": "eb76b2739d94b5bea250a1116ced496dbd932e5d17a2e046f65f54616c9fbf3e"
+    },
+    {
+      "N": 257,
+      "cancelled_large_source_primes": [
+        47
+      ],
+      "cumulative_LCM_binary_bits": 2192,
+      "denominator_binary_bits": 2183,
+      "denominator_divides_LCM": true,
+      "eligible_large_source_primes": 225,
+      "log_den_per_N_FLOAT_DIAGNOSTIC": "5.8854072297471",
+      "log_lcm_per_N_FLOAT_DIAGNOSTIC": "5.9103686965143",
+      "prime_residue_sequence_sha256": "986ca203151631c43c458c0252062ec5d48da4e41bee9a495c907376818f74ea",
+      "source_lift_sha256": "44b94f8c8cacb0c3db6c923fbf1a74a82424ec80c865d94e93146ff5508e68c9"
+    },
+    {
+      "N": 509,
+      "cancelled_large_source_primes": [
+        113,
+        151
+      ],
+      "cumulative_LCM_binary_bits": 4396,
+      "denominator_binary_bits": 4381,
+      "denominator_divides_LCM": true,
+      "eligible_large_source_primes": 415,
+      "log_den_per_N_FLOAT_DIAGNOSTIC": "5.9650239541478",
+      "log_lcm_per_N_FLOAT_DIAGNOSTIC": "5.9863270581639",
+      "prime_residue_sequence_sha256": "f7262187fd69b5d8469785db2ff6a8a16493167c538daa93338b215db3c73696",
+      "source_lift_sha256": "6a8ab5893921795415aecb56710da32cd55a0647a3bac4531844cd44b5edd606"
+    },
+    {
+      "N": 911,
+      "cancelled_large_source_primes": [],
+      "cumulative_LCM_binary_bits": 7844,
+      "denominator_binary_bits": 7844,
+      "denominator_divides_LCM": true,
+      "eligible_large_source_primes": 691,
+      "log_den_per_N_FLOAT_DIAGNOSTIC": "5.9681414982166",
+      "log_lcm_per_N_FLOAT_DIAGNOSTIC": "5.9681414982166",
+      "prime_residue_sequence_sha256": "f3366d52beef7626be3c0de9b0ac27dc9822fab433e32c6a4f0a64e7b3dc533b",
+      "source_lift_sha256": "a6cb7d8b9ed16e79a13a405686ba784d535fee6f5cbe061fa37b7e04503504cb"
+    },
+    {
+      "N": 1511,
+      "cancelled_large_source_primes": [],
+      "cumulative_LCM_binary_bits": 13014,
+      "denominator_binary_bits": 13014,
+      "denominator_divides_LCM": true,
+      "eligible_large_source_primes": 1078,
+      "log_den_per_N_FLOAT_DIAGNOSTIC": "5.9698666103870",
+      "log_lcm_per_N_FLOAT_DIAGNOSTIC": "5.9698666103870",
+      "prime_residue_sequence_sha256": "a4477205e36e1e28ab95c790b297f4f96b359985b9abe40d7e0714a060c3117e",
+      "source_lift_sha256": "93dfb95dd27a91bae1a9f5c074ad99dba7a1fd8e75393c4e9e4a3d71c283b0e8"
+    }
+  ],
+  "independent_sympy_exact_oracle": {
+    "all_four_full_shell_symbolic_recurrences": true,
+    "dual_source_leading_asymptotics": true,
+    "global_dual_null_exact_derivative": true,
+    "symbolic_original_pole": true
+  },
+  "novelty_priority": "UNVERIFIED; new-to-SUCC",
+  "observed_negative_controls": {
+    "N128_missing_p": 37,
+    "N257_missing_p": 47,
+    "N509_missing_p": [
+      113,
+      151
+    ],
+    "no_uniform_N_exception_free_claim": true,
+    "p_squared_regime_unclaimed": true
+  },
+  "pi_normality_proved": false,
+  "source": "original BBP four poles, U_0=0; no pi digits",
+  "strict_finite_null_defects": [
+    {
+      "N": 1,
+      "positive_defect_sha256": "9141ddb66539c5ef7d1f51c35188ce394dd6266e8c98cdfd7dd61e4b30fe61b0",
+      "under_exact_bound": "1/12"
+    },
+    {
+      "N": 3,
+      "positive_defect_sha256": "a84b0c7246a7f554ce25128189102985fd0750f16699d5bc38f751769e7de81e",
+      "under_exact_bound": "1/28"
+    },
+    {
+      "N": 17,
+      "positive_defect_sha256": "ce13270614330e089a0e31de64042d50229ad5159c9ab1d5b0b4a2c58f8d8a2a",
+      "under_exact_bound": "1/140"
+    },
+    {
+      "N": 101,
+      "positive_defect_sha256": "bf9c8367724aae845a0dc6b150df80a768ed4d48e56f49864d8e3626f37e0b6e",
+      "under_exact_bound": "1/812"
+    },
+    {
+      "N": 257,
+      "positive_defect_sha256": "291bc87e05eaf29390539878a8dddd777550f735db4fdd778158cbb6762b0266",
+      "under_exact_bound": "1/2060"
+    }
+  ]
+}
