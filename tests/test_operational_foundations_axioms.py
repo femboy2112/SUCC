@@ -1,11 +1,13 @@
 """Finite exact controls for operational foundation proposal, not physical data."""
 import importlib.util
+import sys
 import unittest
 from pathlib import Path
 
 P=Path(__file__).resolve().parents[1]/"research"/"2026-11-04"/"operational_foundations"/"operational_probe.py"
 spec=importlib.util.spec_from_file_location("operational_probe",P)
 m=importlib.util.module_from_spec(spec)
+sys.modules[spec.name]=m  # dataclasses resolves cls.__module__ through sys.modules
 spec.loader.exec_module(m)
 
 
