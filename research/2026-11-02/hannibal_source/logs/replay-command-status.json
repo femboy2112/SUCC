@@ -1,0 +1,59 @@
+[
+  {
+    "name": "odd-replay",
+    "command": [
+      "python",
+      "research/2026-11-02/hannibal_source/odd_replay.py",
+      "--write"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 299.002
+  },
+  {
+    "name": "small-replay",
+    "command": [
+      "python",
+      "research/2026-11-02/hannibal_source/probe.py",
+      "--verify"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 187.619
+  },
+  {
+    "name": "parent-replay",
+    "command": [
+      "python",
+      "research/2026-11-02/weyl_mirror_campaign/probe.py",
+      "--verify"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.64
+  },
+  {
+    "name": "provenance-final",
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.091
+  },
+  {
+    "name": "observer-final",
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.194
+  },
+  {
+    "name": "ordinal-final",
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.46
+  }
+]

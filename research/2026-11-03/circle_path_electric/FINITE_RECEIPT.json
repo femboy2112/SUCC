@@ -1,0 +1,92 @@
+{
+  "geometric_2_adic_sum": "-1/15",
+  "group_ring_orthogonality_exact": true,
+  "noncontinuous_odd_inverse_witness": "y_k=1/(16k-1)->0, x_k=k/(16k-1)->1/16",
+  "periodic_hostile": "x=1/5 fixed by x->16x",
+  "pi_normality_proved": false,
+  "predeclared_source_arrow_indices": [
+    {
+      "current_sha256": "9a769e7b404e48e337fcc1eba94d2b42589877cbe830dd57009d317fe4ca345d",
+      "n": 97,
+      "odd_candidates": 1,
+      "previous_sha256": "554bc1901f934528f7a52dfedf4572207440acfb421ff057588c33e367c935e5",
+      "selected_inverse_branch": 12
+    },
+    {
+      "current_sha256": "dfd53aaa7a93376e18e20cf07b33888c3b03a3d7f7bb589064e12c21de00f40b",
+      "n": 193,
+      "odd_candidates": 1,
+      "previous_sha256": "c65eb5e546a1df2402f54e693efffe2ce995972db9553069304aeba600a8c201",
+      "selected_inverse_branch": 6
+    },
+    {
+      "current_sha256": "0acb8a6cca9b397b07ea488ae3f130d38ad9961820ad263706b154aed310573a",
+      "n": 385,
+      "odd_candidates": 1,
+      "previous_sha256": "6aaf705984a01d6d238376341130d77f194ac4096b2060b30b34944aeae514d0",
+      "selected_inverse_branch": 14
+    },
+    {
+      "current_sha256": "4b6c845cb52d5cda21405a3234d9e6b1879b7ab2d7931d7452bffdabd947399b",
+      "n": 769,
+      "odd_candidates": 1,
+      "previous_sha256": "2f7d85e00a5bd6478bb94a6ea29514b2e4b86a12f1af8a6f2bb4c3d7d7e31d5d",
+      "selected_inverse_branch": 10
+    }
+  ],
+  "predeclared_source_windows": [
+    {
+      "A": 96,
+      "exact_branch_imbalance": [
+        "59/288",
+        "709/288",
+        "125/3"
+      ],
+      "exact_energy": [
+        "1",
+        "347/288",
+        "11/3",
+        "136/3"
+      ],
+      "exact_telescoping": true,
+      "original_phase_sha256": "b480072cbb0b5302e0c9c40cd61e321649fb8a22d88857860f5a48220321d270"
+    },
+    {
+      "A": 192,
+      "exact_branch_imbalance": [
+        "23/576",
+        "697/576",
+        "245/12"
+      ],
+      "exact_energy": [
+        "1",
+        "599/576",
+        "9/4",
+        "68/3"
+      ],
+      "exact_telescoping": true,
+      "original_phase_sha256": "67beb4caef711145894b5686bcfcad7cb392b676dcd0fdaed1e00da8f87516d1"
+    },
+    {
+      "A": 384,
+      "exact_branch_imbalance": [
+        "31/576",
+        "125/192",
+        "2917/288"
+      ],
+      "exact_energy": [
+        "1",
+        "607/576",
+        "491/288",
+        "71/6"
+      ],
+      "exact_telescoping": true,
+      "original_phase_sha256": "d06952756deeceb277417ce1cbd2d815c3475d15b8156d956d5de371e32669ed"
+    }
+  ],
+  "projector_cyclotomic_exact": true,
+  "provenance": "original zero-seeded 4-signed-pole BBP rational source",
+  "resistance_real": "1/15",
+  "selected_branch_current_saving_proved": false,
+  "two_independent_arithmetic_oracles_agree_n0_to_769": true
+}

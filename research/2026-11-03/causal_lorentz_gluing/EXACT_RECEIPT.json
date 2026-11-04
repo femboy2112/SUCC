@@ -1,0 +1,108 @@
+{
+  "boost_beta": "255/257",
+  "boost_gamma": "257/32",
+  "boost_gamma_beta": "255/32",
+  "boost_half_parameter": "15/17",
+  "causal_bit_slope": 4,
+  "channel_gluing": [
+    {
+      "glued_mod_2_53": 1746364824385761,
+      "glued_mod_2_9": 225,
+      "index": 257,
+      "separate_reduction_forbidden": true,
+      "v2_gaussian_channel": -5,
+      "v2_real_channel": -5
+    },
+    {
+      "glued_mod_2_53": 6343143722065621,
+      "glued_mod_2_9": 213,
+      "index": 509,
+      "separate_reduction_forbidden": true,
+      "v2_gaussian_channel": -5,
+      "v2_real_channel": -5
+    },
+    {
+      "glued_mod_2_53": 1597356283688149,
+      "glued_mod_2_9": 213,
+      "index": 1021,
+      "separate_reduction_forbidden": true,
+      "v2_gaussian_channel": -5,
+      "v2_real_channel": -5
+    }
+  ],
+  "clock_depth": [
+    {
+      "cone_depth": 3,
+      "precision_bits": 9,
+      "same_modular_state": true,
+      "source_residue": 225,
+      "source_time": 257
+    },
+    {
+      "cone_depth": 7,
+      "precision_bits": 28,
+      "same_modular_state": true,
+      "source_residue": 61324483,
+      "source_time": 1023
+    },
+    {
+      "cone_depth": 14,
+      "precision_bits": 53,
+      "same_modular_state": true,
+      "source_residue": 4135881867955681,
+      "source_time": 4097
+    },
+    {
+      "cone_depth": 25,
+      "precision_bits": 97,
+      "same_modular_state": true,
+      "source_residue": 153209022271344076743301565921,
+      "source_time": 4097
+    }
+  ],
+  "eight_return": "1/16",
+  "frame_conjugacies": [
+    {
+      "index": -133,
+      "precision_bits": 11,
+      "state_index_bijection": true,
+      "state_residue": 1431,
+      "successor_residue": 1204
+    },
+    {
+      "index": 255,
+      "precision_bits": 32,
+      "state_index_bijection": true,
+      "state_residue": 673780675,
+      "successor_residue": 3304053504
+    },
+    {
+      "index": 1027,
+      "precision_bits": 65,
+      "state_index_bijection": true,
+      "state_residue": 24087505285602235439,
+      "successor_residue": 8378986453425565452
+    },
+    {
+      "index": 65537,
+      "precision_bits": 53,
+      "state_index_bijection": true,
+      "state_residue": 1744281667165665,
+      "successor_residue": 982421271985150
+    }
+  ],
+  "half_clock_signs": [
+    true,
+    true
+  ],
+  "p2_tiny_real_large_ghost_k97": "158456325028528675187087900672/316912650057057350374175801345",
+  "parent_pr_481_head": "7237c2ae8b7b98557f39e47e8988b033404b587a",
+  "pi_normality_proved": false,
+  "same_forward_map_on_dual_fails_metric": true,
+  "seed_mutant_congruent_mod_2_53": true,
+  "seed_mutant_real_offset": "1/5",
+  "source": "literal original 4 poles and U0=0; all rational",
+  "source_module_sha256": "9e4c9c38979326971d5f3edd178b27fc0c650f128da40b09876a60d47345e4e3",
+  "split_metric_preserved": true,
+  "status": "FINITE EXACT OBSERVATION; no source-selected Weyl decay"
+}

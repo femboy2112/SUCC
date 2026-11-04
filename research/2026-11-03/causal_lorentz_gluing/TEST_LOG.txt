@@ -1,0 +1,92 @@
+$ python -m unittest discover -s tests -p test_gaussian_unit_gluing*.py -v
+exit_code: 0
+
+test_canonical_projectors_and_complex_structure (test_gaussian_unit_gluing.Algebra.test_canonical_projectors_and_complex_structure) ... ok
+test_eighth_return_and_fourth_sign (test_gaussian_unit_gluing.Algebra.test_eighth_return_and_fourth_sign) ... ok
+test_exact_independently_predicted_sector_taps (test_gaussian_unit_gluing.Algebra.test_exact_independently_predicted_sector_taps) ... ok
+test_frobenius_gram_duality_and_handle (test_gaussian_unit_gluing.Algebra.test_frobenius_gram_duality_and_handle) ... ok
+test_hankel_rank_four (test_gaussian_unit_gluing.Algebra.test_hankel_rank_four) ... ok
+test_minimal_rational_algebra_is_associative_and_has_unit (test_gaussian_unit_gluing.Algebra.test_minimal_rational_algebra_is_associative_and_has_unit) ... ok
+test_trace_independent_of_extension_embeddings (test_gaussian_unit_gluing.Algebra.test_trace_independent_of_extension_embeddings) ... ok
+test_two_sector_difference_recovery_all_64 (test_gaussian_unit_gluing.Algebra.test_two_sector_difference_recovery_all_64) ... ok
+test_channel_mellin_moments_and_exact_local_pole_cancellation (test_gaussian_unit_gluing.Source.test_channel_mellin_moments_and_exact_local_pole_cancellation) ... ok
+test_coupled_zero_seed_channel_states_recover_original_source (test_gaussian_unit_gluing.Source.test_coupled_zero_seed_channel_states_recover_original_source) ... ok
+test_invalid_types (test_gaussian_unit_gluing.Source.test_invalid_types) ... ok
+test_mellin_four_signed_poles (test_gaussian_unit_gluing.Source.test_mellin_four_signed_poles) ... ok
+test_mutation_retains_atoms_and_jets_but_changes_completion (test_gaussian_unit_gluing.Source.test_mutation_retains_atoms_and_jets_but_changes_completion) ... ok
+test_padic_reduction_must_happen_after_gluing (test_gaussian_unit_gluing.Source.test_padic_reduction_must_happen_after_gluing) ... ok
+test_reconstruct_exact_eight_taps (test_gaussian_unit_gluing.Source.test_reconstruct_exact_eight_taps) ... ok
+test_wrong_seed_preserves_all_linear_atoms (test_gaussian_unit_gluing.Source.test_wrong_seed_preserves_all_linear_atoms) ... ok
+test_zero_seed_finite_original_rational_states (test_gaussian_unit_gluing.Source.test_zero_seed_finite_original_rational_states) ... ok
+test_original_transfer_factorization_and_reconstruction (test_gaussian_unit_gluing_symbolic.SymbolicOracle.test_original_transfer_factorization_and_reconstruction) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.134s
+
+OK
+
+$ python -m unittest discover -s tests -p test_causal_lorentz*.py -v
+exit_code: 0
+
+test_cotangent_lift_preserves_exact_pairing_and_metric (test_causal_lorentz_gluing.ExactCotangent.test_cotangent_lift_preserves_exact_pairing_and_metric) ... ok
+test_exact_lorentz_form_and_velocity_composition (test_causal_lorentz_gluing.ExactCotangent.test_exact_lorentz_form_and_velocity_composition) ... ok
+test_flat_source_frame_groupoid_and_twisted_loop (test_causal_lorentz_gluing.ExactCotangent.test_flat_source_frame_groupoid_and_twisted_loop) ... ok
+test_gauge_scale_not_physical_c_or_convergence (test_causal_lorentz_gluing.ExactCotangent.test_gauge_scale_not_physical_c_or_convergence) ... ok
+test_metric_preservation_is_not_source_authentication (test_causal_lorentz_gluing.ExactCotangent.test_metric_preservation_is_not_source_authentication) ... ok
+test_source_algebra_eighth_return_both_duals (test_causal_lorentz_gluing.ExactCotangent.test_source_algebra_eighth_return_both_duals) ... ok
+test_source_selected_null_plane_and_canonical_gamma (test_causal_lorentz_gluing.ExactCotangent.test_source_selected_null_plane_and_canonical_gamma) ... ok
+test_F_zero_and_original_recursion_all_small_precisions (test_causal_lorentz_gluing.IsometricReferenceFrame.test_F_zero_and_original_recursion_all_small_precisions) ... ok
+test_every_finite_residue_is_unique_and_shift_is_full_cycle (test_causal_lorentz_gluing.IsometricReferenceFrame.test_every_finite_residue_is_unique_and_shift_is_full_cycle) ... ok
+test_independent_absolute_value_shift_modulus (test_causal_lorentz_gluing.IsometricReferenceFrame.test_independent_absolute_value_shift_modulus) ... ok
+test_original_source_forcing_is_2adic_isometry_at_index (test_causal_lorentz_gluing.IsometricReferenceFrame.test_original_source_forcing_is_2adic_isometry_at_index) ... ok
+test_state_map_isometry_despite_contracting_linear_part (test_causal_lorentz_gluing.IsometricReferenceFrame.test_state_map_isometry_despite_contracting_linear_part) ... ok
+test_glue_before_2adic_quotient_is_mandatory (test_causal_lorentz_gluing.SourcePrecisionCone.test_glue_before_2adic_quotient_is_mandatory) ... ok
+test_no_2adic_to_real_circle_uniform_control (test_causal_lorentz_gluing.SourcePrecisionCone.test_no_2adic_to_real_circle_uniform_control) ... ok
+test_original_source_integer_and_2_integral (test_causal_lorentz_gluing.SourcePrecisionCone.test_original_source_integer_and_2_integral) ... ok
+test_original_zero_source_exact_suffix_equals_full (test_causal_lorentz_gluing.SourcePrecisionCone.test_original_zero_source_exact_suffix_equals_full) ... ok
+test_same_original_forcing_different_seed_remains_real_shift (test_causal_lorentz_gluing.SourcePrecisionCone.test_same_original_forcing_different_seed_remains_real_shift) ... ok
+test_sharp_pulse_horizon_for_every_precision (test_causal_lorentz_gluing.SourcePrecisionCone.test_sharp_pulse_horizon_for_every_precision) ... ok
+test_all_exact_independent_symbolic_relations (test_causal_lorentz_independent.SympyOracle.test_all_exact_independent_symbolic_relations) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.979s
+
+OK
+
+$ python -m compileall -q research/2026-11-03/causal_lorentz_gluing tests/test_causal_lorentz_gluing.py tests/test_causal_lorentz_independent.py
+exit_code: 0
+
+
+$ python research/2026-11-03/causal_lorentz_gluing/probe.py --verify
+exit_code: 0
+EXACT RECEIPT VERIFIED: canonical dual + source cone + 2-adic frames
+
+
+$ python research/2026-11-03/causal_lorentz_gluing/independent_symbolic.py
+exit_code: 0
+{
+  "Lorentz_metric_preserved": true,
+  "beta": "255/257",
+  "cotangent_split_signature": "(4,4)",
+  "eight_step_scalar_return": "1/16",
+  "gamma": "257/32",
+  "gamma_beta": "255/32",
+  "half_clock_Gaussian_sign": -1,
+  "minimal_polynomial": "(2*s**2 - 1)*(2*s**2 - 2*s + 1)/4",
+  "original_four_poles_preserved": true,
+  "root_transfer_factorization": true,
+  "selected_pi_normality_proved": false,
+  "source_difference_quotient_mod2_unit": true,
+  "source_impulses": [
+    "4",
+    "0",
+    "0",
+    "-2",
+    "-1",
+    "-1",
+    "0",
+    "0"
+  ],
+  "tanh_half_rapidity": "15/17"
+}
+

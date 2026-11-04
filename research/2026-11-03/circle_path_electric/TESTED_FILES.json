@@ -1,0 +1,57 @@
+{
+  "excluded_self": "TESTED_FILES.json",
+  "parent_pr": 487,
+  "parent_sha": "5f69d87d8bddde4f7136229289bc9ebde430c5f0",
+  "preregistration_sha": "2772bf00fef7b5a43df302560766d0547beee6a1",
+  "source": "original four signed BBP poles, literal U0=0",
+  "tested": {
+    "research/2026-11-03/circle_path_electric/CLAIM_LEDGER.md": {
+      "bytes": 2090,
+      "sha256": "79e84ae32071493baf695c878f6816031596aaee2845fbee3585fe4f9868bb65"
+    },
+    "research/2026-11-03/circle_path_electric/CODEX_HANDOFF.md": {
+      "bytes": 3631,
+      "sha256": "f76d2c52d645a33511e16e0c5a9373f19dd9ab7d5e5c34c1a5395987ed287193"
+    },
+    "research/2026-11-03/circle_path_electric/FINITE_RECEIPT.json": {
+      "bytes": 2742,
+      "sha256": "3a6b28a030027a984026ced0c2adc9e382f6ec93f0c8308d522da98e707bfb55"
+    },
+    "research/2026-11-03/circle_path_electric/NEXT.md": {
+      "bytes": 2240,
+      "sha256": "495e1df93a8d2b480ccbcd445873c1494e1cc786141fc8a4829f7e81b400b11e"
+    },
+    "research/2026-11-03/circle_path_electric/PROOFS.md": {
+      "bytes": 12725,
+      "sha256": "a3a0b06368f0631fcc6c024827e5e2a00ddc869914afae089fa9830087738c57"
+    },
+    "research/2026-11-03/circle_path_electric/README.md": {
+      "bytes": 1538,
+      "sha256": "61d660f0f092e68c544643631db8c5691aafadf205e14293c0be31a56f01116c"
+    },
+    "research/2026-11-03/circle_path_electric/SOURCE_MAP.md": {
+      "bytes": 1611,
+      "sha256": "043e1f2f89692e754e7057b97b11aa4fb0604a7a0b83e0bcbf41965e430c4efa"
+    },
+    "research/2026-11-03/circle_path_electric/TEST_LOG.txt": {
+      "bytes": 1405,
+      "sha256": "a8e601a58c1ab9e262f06ec87cd11b601a5d5e2c5f46650573e63a3aa10ef4e0"
+    },
+    "research/2026-11-03/circle_path_electric/VALIDATION.md": {
+      "bytes": 2151,
+      "sha256": "1285de0e4d524d8ccf351dd8a756babfa97bea12bc183851eef18c1ef45c9423"
+    },
+    "research/2026-11-03/circle_path_electric/circle_path_electric.py": {
+      "bytes": 6900,
+      "sha256": "a78b0327c0123a1f9e3cb5c720405035eada33628fdb81ef9acf70b9035554e2"
+    },
+    "research/2026-11-03/circle_path_electric/probe.py": {
+      "bytes": 3089,
+      "sha256": "e670e4e52189a4af5185a0a2a02859e0f81739816a86dedc0381594f56c6377d"
+    },
+    "tests/test_circle_path_electric.py": {
+      "bytes": 4275,
+      "sha256": "8f55ec1cff628dce1b3c68ddba1434f3716c990fdcdc881ade06f27d9f5712d7"
+    }
+  }
+}

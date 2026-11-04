@@ -1,0 +1,158 @@
+{
+  "status": "FINITE OBSERVATIONS ONLY; pass/fail computed by exact rational Machin/Taylor/Gamma intervals, not by displayed rounded ratios. Re-run finite_holdout.py for proof-grade comparisons.",
+  "preregistration": "PREREGISTRATION.md",
+  "threshold": "1/10",
+  "certificate_method": "inherited finite_certificate.py phase_packet + level_packet; Eerr=2L*eta+eta^2, Werr=4L*eta+eta^2; pass iff W-Werr>(1/10)(E+Eerr)",
+  "rows": [
+    {
+      "N": 512,
+      "h": 1,
+      "eta_upper_approx": 4.010574216740884e-7,
+      "levels": [
+        {
+          "L": 16,
+          "pass": true,
+          "ratio_approx": 0.969014,
+          "certified_margin_lower_approx": 469.118825
+        },
+        {
+          "L": 32,
+          "pass": true,
+          "ratio_approx": 1.058883,
+          "certified_margin_lower_approx": 533.671285
+        },
+        {
+          "L": 64,
+          "pass": true,
+          "ratio_approx": 1.234122,
+          "certified_margin_lower_approx": 594.034896
+        }
+      ]
+    },
+    {
+      "N": 512,
+      "h": 5,
+      "eta_upper_approx": 0.000001998,
+      "levels": [
+        {
+          "L": 16,
+          "pass": true,
+          "ratio_approx": 0.859067,
+          "certified_margin_lower_approx": 332.951675
+        },
+        {
+          "L": 32,
+          "pass": true,
+          "ratio_approx": 1.083832,
+          "certified_margin_lower_approx": 492.359127
+        },
+        {
+          "L": 64,
+          "pass": true,
+          "ratio_approx": 1.26396,
+          "certified_margin_lower_approx": 533.671426
+        }
+      ]
+    },
+    {
+      "N": 512,
+      "h": 11,
+      "eta_upper_approx": 0.000004394,
+      "levels": [
+        {
+          "L": 16,
+          "pass": true,
+          "ratio_approx": 0.916072,
+          "certified_margin_lower_approx": 340.40009
+        },
+        {
+          "L": 32,
+          "pass": true,
+          "ratio_approx": 0.962926,
+          "certified_margin_lower_approx": 390.152568
+        },
+        {
+          "L": 64,
+          "pass": true,
+          "ratio_approx": 1.237168,
+          "certified_margin_lower_approx": 533.206368
+        }
+      ]
+    },
+    {
+      "N": 1024,
+      "h": 1,
+      "eta_upper_approx": 1.033e-7,
+      "levels": [
+        {
+          "L": 32,
+          "pass": true,
+          "ratio_approx": 1.197619,
+          "certified_margin_lower_approx": 1152.946966
+        },
+        {
+          "L": 64,
+          "pass": true,
+          "ratio_approx": 1.290717,
+          "certified_margin_lower_approx": 1003.56872
+        },
+        {
+          "L": 128,
+          "pass": true,
+          "ratio_approx": 0.91736,
+          "certified_margin_lower_approx": 488.619679
+        }
+      ]
+    },
+    {
+      "N": 1024,
+      "h": 5,
+      "eta_upper_approx": 5.027908128046399e-7,
+      "levels": [
+        {
+          "L": 32,
+          "pass": true,
+          "ratio_approx": 0.967031,
+          "certified_margin_lower_approx": 828.611684
+        },
+        {
+          "L": 64,
+          "pass": true,
+          "ratio_approx": 1.245327,
+          "certified_margin_lower_approx": 1130.663828
+        },
+        {
+          "L": 128,
+          "pass": true,
+          "ratio_approx": 0.377592,
+          "certified_margin_lower_approx": 206.808965
+        }
+      ]
+    },
+    {
+      "N": 1024,
+      "h": 11,
+      "eta_upper_approx": 0.000001102,
+      "levels": [
+        {
+          "L": 32,
+          "pass": true,
+          "ratio_approx": 1.054916,
+          "certified_margin_lower_approx": 1016.157082
+        },
+        {
+          "L": 64,
+          "pass": true,
+          "ratio_approx": 1.1946,
+          "certified_margin_lower_approx": 1100.832511
+        },
+        {
+          "L": 128,
+          "pass": true,
+          "ratio_approx": 0.585343,
+          "certified_margin_lower_approx": 393.120052
+        }
+      ]
+    }
+  ]
+}

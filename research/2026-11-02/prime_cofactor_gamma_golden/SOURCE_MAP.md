@@ -1,0 +1,14 @@
+# Provenance, source map and independence
+
+- **Source:** original \(r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)\), \(U_0=0\), exact rational \(U_n\). Historic Main XIX source through parent PR #471, original #470 prime birth, #468 Gamma seam and #461 Laurent source clocks. No changed poles or seed.
+- **Target:** parent #471 SQUARE_CHECKPOINT theorem; prior SUCC #296 internal Fourier Fejér matrix and #407 original-source cylinder collision. One-mesh is a scoped stronger sufficient arithmetic route, not independent discovery of normality criteria.
+- **Prime:** p≡1 mod8 clean window and p-free cofactor derive from all original denominator classes. Cyclotomic average uses classical Ramanujan-sum identities (https://planetmath.org/ramanujansum). PGC-04 counterfeit preserves p-free arithmetic but explicitly changes the original forcing.
+- **Real place:** selected carry is centered integer residue of original rational phase; p-adic residue is NOT directly a real phase. Sibling #469 read only for the real/2-adic bridge firewall.
+- **Gamma and Euler:** authentic T_n positive Gamma upper from #465/#468; third-order coefficient −7/512 from #461; classical strict harmonic/digamma defect from [DLMF](https://dlmf.nist.gov/5.11) and [Huang et al.](https://link.springer.com/article/10.1186/s13660-019-2104-9).
+- **Golden circle:** classical Binet and Fibonacci rotation identity; harmonic defect has renormalization factor η=φ⁻¹ on Fibonacci scales. Source-native silver regulator log(1+√2) from #468 remains distinct. No mechanistic proof of π normality.
+- **Independence:** prime/cofactor and Gamma/golden results depend on same original BBP source. Two numerical Galois oracles are not independent external refereeing. Finite samples cannot certify universal all-L inequality.
+- **Policy:** draft child branch from exact SHA 92f7d4684a1ec68bf0346e0e74ec763e03d8c3b4. Additive research/test files only. On full checkout follow AGENTS.md provenance, unittest, observer/ordinal, Lean/CI before status promotion. No merge/tag/release/publication absent authorization.
+
+- **PGC-09 dyadic prime supply:** classical unconditional prime number theorem in the fixed arithmetic progression p≡1 mod8 (https://kskedlaya.org/ant/chapter-5.html, Theorem 5.10) covers every sufficiently large dyadic time epoch by a PGC-01 clean window. This does not imply local cofactor mixing. The global ℓ² gluing uses only classical Cauchy/Young/Minkowski and exact original source Gamma tail; no unproved RH assumption.
+
+- **PGC-10:** exact fine-to-coarse histogram inequality uses classical Cauchy–Schwarz and half-open circle-bin refinement. It provides a one-scalar-per-dyadic-epoch sufficient condition, not an all-A original arithmetic estimate; reviewed with coherent seed countermodel and verified finite original rational states.

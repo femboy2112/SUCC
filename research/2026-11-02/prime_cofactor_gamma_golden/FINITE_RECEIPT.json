@@ -1,0 +1,267 @@
+{
+  "title": "PGC exact first-birth, integer mesh and Gamma/golden staged receipt",
+  "date": "2026-11-02",
+  "source": "authentic original signed 4-pole BBP, U0=0",
+  "parent_commit": "92f7d4684a1ec68bf0346e0e74ec763e03d8c3b4",
+  "precision_note": "All prime and histogram counts / fractions exact; Galois amplitudes and displayed decimal energies floating diagnostics only; no asymptotic claim.",
+  "first_pole_prime_windows": [
+    {
+      "p": 17,
+      "birth": 3,
+      "last_clean": 8,
+      "secondary_pole": 9,
+      "clean_length": 6,
+      "order_16_mod_p": 2
+    },
+    {
+      "p": 41,
+      "birth": 6,
+      "last_clean": 20,
+      "secondary_pole": 21,
+      "clean_length": 15,
+      "order_16_mod_p": 5
+    },
+    {
+      "p": 73,
+      "birth": 10,
+      "last_clean": 36,
+      "secondary_pole": 37,
+      "clean_length": 27,
+      "order_16_mod_p": 9
+    },
+    {
+      "p": 89,
+      "birth": 12,
+      "last_clean": 44,
+      "secondary_pole": 45,
+      "clean_length": 33,
+      "order_16_mod_p": 11
+    },
+    {
+      "p": 97,
+      "birth": 13,
+      "last_clean": 48,
+      "secondary_pole": 49,
+      "clean_length": 36,
+      "order_16_mod_p": 12
+    },
+    {
+      "p": 113,
+      "birth": 15,
+      "last_clean": 56,
+      "secondary_pole": 57,
+      "clean_length": 42,
+      "order_16_mod_p": 7
+    },
+    {
+      "p": 137,
+      "birth": 18,
+      "last_clean": 68,
+      "secondary_pole": 69,
+      "clean_length": 51,
+      "order_16_mod_p": 17
+    },
+    {
+      "p": 193,
+      "birth": 25,
+      "last_clean": 96,
+      "secondary_pole": 97,
+      "clean_length": 72,
+      "order_16_mod_p": 24
+    },
+    {
+      "p": 233,
+      "birth": 30,
+      "last_clean": 116,
+      "secondary_pole": 117,
+      "clean_length": 87,
+      "order_16_mod_p": 29
+    },
+    {
+      "p": 241,
+      "birth": 31,
+      "last_clean": 120,
+      "secondary_pole": 121,
+      "clean_length": 90,
+      "order_16_mod_p": 6
+    },
+    {
+      "p": 257,
+      "birth": 33,
+      "last_clean": 128,
+      "secondary_pole": 129,
+      "clean_length": 96,
+      "order_16_mod_p": 4
+    }
+  ],
+  "source_integer_histograms": [
+    {
+      "L": 4,
+      "N": 16,
+      "M": 5,
+      "histogram_exact_counts": [
+        4,
+        3,
+        5,
+        2,
+        2
+      ],
+      "collision_exact": "145/128",
+      "collision_float_display_only": 1.1328125,
+      "exact_near_pairs_radius_1_over_M": 112
+    },
+    {
+      "L": 8,
+      "N": 64,
+      "M": 9,
+      "histogram_exact_counts": [
+        8,
+        15,
+        6,
+        4,
+        9,
+        11,
+        1,
+        4,
+        6
+      ],
+      "collision_exact": "1341/1024",
+      "collision_float_display_only": 1.3095703125,
+      "exact_near_pairs_radius_1_over_M": 1064
+    },
+    {
+      "L": 16,
+      "N": 256,
+      "M": 17,
+      "histogram_exact_counts": [
+        17,
+        16,
+        15,
+        19,
+        12,
+        11,
+        11,
+        18,
+        18,
+        21,
+        18,
+        10,
+        15,
+        14,
+        14,
+        11,
+        16
+      ],
+      "collision_exact": "8551/8192",
+      "collision_float_display_only": 1.043823242188,
+      "exact_near_pairs_radius_1_over_M": 7908
+    },
+    {
+      "L": 32,
+      "N": 1024,
+      "M": 33,
+      "histogram_exact_counts": [
+        30,
+        30,
+        32,
+        36,
+        35,
+        24,
+        34,
+        34,
+        36,
+        32,
+        23,
+        34,
+        32,
+        37,
+        33,
+        26,
+        29,
+        44,
+        35,
+        38,
+        27,
+        36,
+        29,
+        33,
+        26,
+        32,
+        25,
+        29,
+        20,
+        23,
+        35,
+        28,
+        27
+      ],
+      "collision_exact": "538395/524288",
+      "collision_float_display_only": 1.026906967163
+    }
+  ],
+  "gamma_square_domination_rational_gaps": [
+    {
+      "n": 2,
+      "rational_domination_gap_exact": "1/69632"
+    },
+    {
+      "n": 3,
+      "rational_domination_gap_exact": "613/60652800"
+    },
+    {
+      "n": 4,
+      "rational_domination_gap_exact": "619/110297088"
+    },
+    {
+      "n": 8,
+      "rational_domination_gap_exact": "6571/6747586560"
+    },
+    {
+      "n": 16,
+      "rational_domination_gap_exact": "59051/422030868480"
+    },
+    {
+      "n": 32,
+      "rational_domination_gap_exact": "498347/26698322018304"
+    },
+    {
+      "n": 64,
+      "rational_domination_gap_exact": "1363513/566252783271936"
+    },
+    {
+      "n": 128,
+      "rational_domination_gap_exact": "11046457/36134418854707200"
+    }
+  ],
+  "golden_circle_ring_check_passed_k_1_to_90": true,
+  "numerical_galois_diagnostics": [
+    {
+      "p": 17,
+      "T": 6,
+      "h": 1,
+      "selected_norm_square_float_only": 0.156283254,
+      "galois_mean_norm_square_float_only": 0.191929163
+    },
+    {
+      "p": 41,
+      "T": 8,
+      "h": 2,
+      "selected_norm_square_float_only": 0.224394682,
+      "galois_mean_norm_square_float_only": 0.165711278
+    },
+    {
+      "p": 73,
+      "T": 9,
+      "h": 3,
+      "selected_norm_square_float_only": 0.031657852,
+      "galois_mean_norm_square_float_only": 0.112181879
+    },
+    {
+      "p": 113,
+      "T": 11,
+      "h": 1,
+      "selected_norm_square_float_only": 0.057858434,
+      "galois_mean_norm_square_float_only": 0.125966889
+    }
+  ]
+}
