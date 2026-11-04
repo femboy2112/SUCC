@@ -7,7 +7,9 @@
 | AV-03 | PROVED PAPER | Source-correct signed chronological valve balance and epoch bound O(q/A+q²/A²) | Difference of flows near zero, not absolute energy |
 | AV-04 | PROVED PAPER / exact finite | Every distinct rational pair evacuates at finite depth; exact surviving duplicate mass | Useful escape-depth distribution at logarithmic mesh |
 | AV-05 | PROVED PAPER / constructed hostile family | Same forcing, odd denominators and epoch-dependent rational changed seed with maximal clustered energy | Not a fixed seed; literal original U0=0 excluded |
-| AV-06 | UNVERIFIED | Actual zero-seeded J_(A,q_A)=o(K_A), equivalently usable source-selected close-pair/escape estimate as a research target, NOT a biconditional to all alternate gates | Genuine signed source/cofactor correlation |
+| AV-07 | PROVED PAPER / source denominator bound | Original D_A divides 15*lcm(1..16A); all distinct rational pair gaps release by a depth ≤(16/log16+o(1))A | Not early enough versus K_A≈loglog A |
+| AV-08 | PROVED PAPER / exact signed folding | Total original source shear S_A=sum_(k)(3A−2k)r(k)=(15/64)(3/2−log4)+O(1/A), improving the flux error | Signed phase flux and positive individual flows remain uncontrolled |
+| AV-06 | UNVERIFIED | Actual zero-seeded J_(A,q_A)=o(K_A); a suitable close-pair counting bound is **sufficient** but not asserted equivalent | Genuine signed source/cofactor correlation |
 | VA-REFUTED | REFUTED AS INFERENCE | Approximate stationarity + source shear + finite evacuation ⇒ normality | AV-05 shows missing seed/distribution condition |
 | π base-16 normality | OPEN | Exact original zero seed | AV-06 |
 | RH | OPEN | Separate completed signed Weil positivity program | Not addressed |
