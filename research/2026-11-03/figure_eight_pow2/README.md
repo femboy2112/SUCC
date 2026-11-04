@@ -1,0 +1,13 @@
+# SUCC — Figure-eight boundaries and powers of two (2026-11-03)
+
+**Draft mathematical research; π base-16 normality OPEN.** Research child of exact [PR #482](https://github.com/femboy2112/SUCC/pull/482) head 5599ebd35bda64ad817e1b30d5aaa486e7049b35. Main SUCC E² and 2-adic isometry are authoritative antecedents; parallel PR #481 canonical Gaussian restoration was inspected READ ONLY. The previous local 8-step figure-eight theorem was re-run with 8/8 tests passing, and a new independent exact suite has 25/25 tests passing.
+
+**All powers-of-two microsteps classified:** T^4=−J/4, T^8=I/16, T^16=I/256, and T^(2^k)=16^(−2^(k−3))I for k≥3. A 16-microstep truncation contains TWO original BBP source-index moments, not 16. Every finite whole-eight-tap shell retains zero endpoint mass, with exact derivative P_B'(1)=−16(1−16^(−B)). The finite/global first-jet shortfall is 1/16 at sixteen microsteps and 1/4096 at thirty-two.
+
+**The real new arithmetic:** original numerator Q(n)=120n²−89n+16 has exactly ONE 2-adic root ζ. The original source valuation is exactly v₂(r(n))=v₂(n−ζ), and every modulus 2^m has ONE congruence class of high forcing valuations. Arithmetic n=16 matches ζ through seven bits, yielding a 16-bit gain when the chiral lanes (each v₂=−9) recombine into r(16) (v₂=7).
+
+**Two separate gluing stages:** at n=2^k≥32, each chiral lane has v₂=−5−k, their original sum r(n) has v₂=4, and the subsequent original memory step 16U_(n−1)+r(n) has v₂=k. The second interface gains k−4 additional bits. At index16 only first stage is exceptional; the selected U16 has v₂=4. These are real *2-adic* source constraints, not automatically real Fourier phase cancellation.
+
+**Test authority:** [PROOFS.md](PROOFS.md), [SOURCE_MAP.md](SOURCE_MAP.md), [VALIDATION.md](VALIDATION.md), [NEXT.md](NEXT.md), [PREREGISTRATION.md](PREREGISTRATION.md), [HOLDOUTS.json](HOLDOUTS.json), [pow2_fig8.py](pow2_fig8.py), root [25-case regression](../../../tests/test_figure_eight_pow2.py). Preregistered n=8192,16384,32768 original finite modular receipts all match the independent 2-adic particular and forward causal recurrence. No π digits, no main edits, no merge, no new Lean compilation.
+
+The original zero-seeded real selected Weyl/mesoscopic near-pair bound remains **UNVERIFIED**. The changed-real-seed 1/5−α_B finite-completion control is fully coherent despite the SAME four-pole source/Gamma boundary. A phase-preserving transport from the new 2-adic exception census to actual real near-pair counts is still missing.

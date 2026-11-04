@@ -1,0 +1,70 @@
+{
+  "status": "finite original-source preregistered holdouts, all exact, not pi-normality proof",
+  "root_mods": {
+    "7": 16,
+    "8": 144,
+    "16": 13968,
+    "24": 3487376,
+    "32": 2486515344
+  },
+  "epochs": [
+    {
+      "k": 13,
+      "n": 8192,
+      "U_n_mod_2_24": 12279808,
+      "r_n_mod_2_24": 3298256,
+      "16Uprev_mod_2_24": 8981552,
+      "v2_U_n": 13,
+      "v2_r": 4,
+      "v2_prev": 4,
+      "extra_dynamic_bits": 9,
+      "match_particular": true
+    },
+    {
+      "k": 14,
+      "n": 16384,
+      "U_n_mod_2_24": 7782400,
+      "r_n_mod_2_24": 2601936,
+      "16Uprev_mod_2_24": 5180464,
+      "v2_U_n": 14,
+      "v2_r": 4,
+      "v2_prev": 4,
+      "extra_dynamic_bits": 10,
+      "match_particular": true
+    },
+    {
+      "k": 15,
+      "n": 32768,
+      "U_n_mod_2_24": 15564800,
+      "r_n_mod_2_24": 1209296,
+      "16Uprev_mod_2_24": 14355504,
+      "v2_U_n": 15,
+      "v2_r": 4,
+      "v2_prev": 4,
+      "extra_dynamic_bits": 11,
+      "match_particular": true
+    }
+  ],
+  "microstep_jet_gaps": [
+    {
+      "microsteps": 8,
+      "gap": "-1"
+    },
+    {
+      "microsteps": 16,
+      "gap": "-1/16"
+    },
+    {
+      "microsteps": 32,
+      "gap": "-1/4096"
+    },
+    {
+      "microsteps": 64,
+      "gap": "-1/268435456"
+    },
+    {
+      "microsteps": 128,
+      "gap": "-1/1152921504606846976"
+    }
+  ]
+}
