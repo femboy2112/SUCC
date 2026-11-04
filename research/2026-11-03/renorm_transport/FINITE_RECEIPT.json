@@ -1,7 +1,85 @@
 {
-  "barrier_RENORM2": "x16 injective on frequencies; transport preserves band mass",
+  "barrier_RENORM2": "common-depth x16 transport is injective; band relocated to a distinct high band <= A^{3/2} at equal cardinality, mass preserved up to o(1); information-preserving, not a size bound",
   "blind_source_max_abs_diff": "0.0",
   "claim": "RENORM-1: c_A(h)=c_A(16h)+eps, |eps|<=2/A+15*pi*|h|/(4A(8A-15))",
+  "defect_regression": {
+    "D0_band_vs_J_cloud": [
+      {
+        "J_q": "1",
+        "band_eq_2q": true,
+        "q": 4,
+        "unweighted_band": 8
+      },
+      {
+        "J_q": "1",
+        "band_eq_2q": true,
+        "q": 8,
+        "unweighted_band": 16
+      },
+      {
+        "J_q": "1",
+        "band_eq_2q": true,
+        "q": 16,
+        "unweighted_band": 32
+      },
+      {
+        "J_q": "1",
+        "band_eq_2q": true,
+        "q": 32,
+        "unweighted_band": 64
+      }
+    ],
+    "D1_old_depth_reaches_A34_not_A32": [
+      {
+        "A": 65536,
+        "h": 1,
+        "reached_over_A32": "2.441e-04",
+        "reached_over_A34_sqrth": "1.000"
+      },
+      {
+        "A": 65536,
+        "h": 16,
+        "reached_over_A32": "2.441e-04",
+        "reached_over_A34_sqrth": "0.250"
+      },
+      {
+        "A": 65536,
+        "h": 100,
+        "reached_over_A32": "1.526e-03",
+        "reached_over_A34_sqrth": "0.625"
+      },
+      {
+        "A": 4294967296,
+        "h": 1,
+        "reached_over_A32": "5.960e-08",
+        "reached_over_A34_sqrth": "1.000"
+      },
+      {
+        "A": 4294967296,
+        "h": 16,
+        "reached_over_A32": "5.960e-08",
+        "reached_over_A34_sqrth": "0.250"
+      },
+      {
+        "A": 4294967296,
+        "h": 100,
+        "reached_over_A32": "3.725e-07",
+        "reached_over_A34_sqrth": "0.625"
+      }
+    ],
+    "D2_old_depth_noninjective_collision": {
+      "A": 4294967296,
+      "collision": true,
+      "h16_depth": 5,
+      "h16_target": 16777216,
+      "h1_depth": 6,
+      "h1_target": 16777216
+    },
+    "D3_acc_error_true_le_correct_bound": {
+      "violations": 0,
+      "worst_true_over_bound": "0.923240"
+    }
+  },
   "dps": 50,
   "heldout_A": [
     40,
@@ -27,6 +105,32 @@
   "immutable_source": "r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2), U0=0, U_n=16U_{n-1}+r(n)",
   "instrument": "renorm_transport",
   "pi_base16_normality": "OPEN",
+  "renorm2_corrected_barrier": [
+    {
+      "A": 64,
+      "H_band": 2,
+      "common_depth_j": 2,
+      "edge_acc_error_bound": "7.509e-02",
+      "top_frequency_16j_H": 512,
+      "top_le_A32": true
+    },
+    {
+      "A": 256,
+      "H_band": 4,
+      "common_depth_j": 2,
+      "edge_acc_error_bound": "1.716e-02",
+      "top_frequency_16j_H": 1024,
+      "top_le_A32": true
+    },
+    {
+      "A": 1024,
+      "H_band": 6,
+      "common_depth_j": 3,
+      "edge_acc_error_bound": "8.164e-03",
+      "top_frequency_16j_H": 24576,
+      "top_le_A32": true
+    }
+  ],
   "rigorous_bound_violations": 0,
   "rows": [
     {
@@ -528,7 +632,7 @@
     }
   ],
   "signed_weyl_gate_S_N_h_eq_o_N": "OPEN",
-  "status": "RENORM1_VERIFIED_ON_HELDOUT; NO_NORMALITY_PROOF",
+  "status": "RENORM1_VERIFIED_ON_HELDOUT; RENORM2_BARRIER_CORRECTED; NO_NORMALITY_PROOF",
   "worst_residual_over_asymptotic_bound": "0.980907",
   "worst_residual_over_rigorous_bound": "0.980873"
 }

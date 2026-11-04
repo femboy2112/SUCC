@@ -81,6 +81,66 @@ class RenormTransport(unittest.TestCase):
         rec = rt.build_receipt()
         self.assertEqual(rec["rigorous_bound_violations"], 0)
         self.assertEqual(rec["pi_base16_normality"], "OPEN")
+        self.assertEqual(
+            rec["defect_regression"]["D3_acc_error_true_le_correct_bound"]["violations"], 0)
+
+    # ---- regression tests for the three corrected RT-03 defects + the converse ----
+
+    def test_D1_old_depth_has_wrong_exponent(self):
+        # the ORIGINAL per-h depth j*=floor(.5 log16(A^1.5/|h|)) reaches ~A^{3/4} sqrt|h|,
+        # NOT A^{3/2}. Lock the defect: reached/A^{3/2} -> 0, reached/(A^{3/4} sqrt|h|) ~ O(1).
+        for A in (16 ** 4, 16 ** 8):
+            for h in (1, 16, 100):
+                reached = rt.reached_frequency_old(A, h)
+                self.assertLess(reached / A ** 1.5, 1e-2,
+                                msg=f"old depth must NOT reach A^3/2 (A={A},h={h})")
+                ratio = reached / (A ** 0.75 * h ** 0.5)
+                self.assertTrue(0.2 <= ratio <= 1.01,
+                                msg=f"old depth reaches ~A^3/4 sqrt|h| (A={A},h={h}, ratio={ratio})")
+
+    def test_D2_old_depth_noninjective_but_common_depth_injective(self):
+        # D2: the per-h depth collapses h=1 and h=16 onto 16^6 at A=16^8.
+        A = 16 ** 8
+        self.assertEqual(rt.reached_frequency_old(A, 1), rt.reached_frequency_old(A, 16))
+        self.assertEqual(rt.reached_frequency_old(A, 1), 16 ** 6)
+        # fix: a COMMON depth makes h -> 16^j h injective over the whole band
+        H = 64
+        j = rt.common_depth(A, H)
+        targets = [16 ** j * h for h in range(1, H + 1)]
+        self.assertEqual(len(set(targets)), H, "common-depth transport must be injective")
+
+    def test_D3_accumulated_error_correct_bound_and_geometric(self):
+        # D3: true accumulated error <= CORRECT bound 2j/A + pi|h|(16^j-1)/(4A(8A-15)).
+        for A in (40, 64, 128, 256):
+            ph = rt.source_epoch(A)
+            for h in (1, 3):
+                for j in (1, 2, 3):
+                    if 16 ** j * h > A * A:
+                        continue
+                    t = float(rt.acc_error_true(ph, h, j))
+                    self.assertLessEqual(t, rt.acc_error_bound(A, h, j),
+                                         msg=f"acc error exceeds corrected bound A={A},h={h},j={j}")
+        # the forcing part is GEOMETRIC: bound(j+1)-2(j+1)/A ~ 16*(bound(j)-2j/A)
+        A, h = 256, 1
+        f1 = rt.acc_error_bound(A, h, 2) - 2.0 * 2 / A
+        f2 = rt.acc_error_bound(A, h, 3) - 2.0 * 3 / A
+        self.assertGreater(f2 / f1, 10.0, "forcing term must grow geometrically (~16x), not linearly")
+
+    def test_D0_band_to_J_converse_is_false(self):
+        # D0: equally-spaced cloud has J_q=1 but unweighted band = 2q. So J=o(K) does
+        # NOT imply unweighted-band=o(K); only band=>J is proved (SC-8, sinc^2<=1).
+        from fractions import Fraction as F
+        for q in (4, 8, 16, 32):
+            J, band = rt.band_vs_J_cloud(q)
+            self.assertEqual(J, F(1), f"equally-spaced cloud has J_q=1 (q={q})")
+            self.assertEqual(band, 2 * q, f"unweighted band = 2q (q={q})")
+
+    def test_common_depth_barrier_is_o1_and_injective_reach(self):
+        # corrected RENORM-2: common depth keeps top freq <= A^{3/2} with o(1) edge error < 1.
+        for A, H in ((64, 2), (256, 4), (1024, 6)):
+            j = rt.common_depth(A, H)
+            self.assertLessEqual(16 ** j * H, A ** 1.5)
+            self.assertLess(rt.acc_error_bound(A, H, j), 1.0)
 
 
 if __name__ == "__main__":

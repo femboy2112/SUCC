@@ -20,12 +20,14 @@ RENORM-1  c_A(h)=c_A(16h)+ε_A(h)             [RT-01, exact]
         v
 RENORM-1 bound  |ε_A(h)| ≤ 2/A + 15π|h|/(4A(8A-15))          [RT-02, rigorous; receipt 0 violations]
         |
-        |  iterate (×16 injective on ℤ); telescope error o(1) up to freq ~A^{3/2}
+        |  iterate at COMMON depth j=⌊log₁₆(A^{3/2}/H)⌋ (×16 injective on ℤ, fixed j);
+        |  corrected geometric accumulation 2j/A+π|h|(16^j−1)/(4A(8A−15)) = o(1) up to freq ≤A^{3/2}
         v
-RENORM-2 barrier  low band ↔ high band bijection, mass transported not killed   [RT-03]
+RENORM-2 barrier  low band → DISTINCT high band ≤A^{3/2}, each modulus preserved up to o(1)   [RT-03]
         |
+        |  one-directional sufficiency (NOT ⇔): band ⟹ J ⟹ E ⟹ normal; converse J⟹band FALSE (RT-00)
         v
-SC-8 gate  Σ_{1≤|h|≤q_A²}|c_A(h)|² = o(K_A)   ───────────────►  **OPEN**  (⇔ π base-16 normality)
+SC-8 gate  Σ_{1≤|h|≤q_A²}|c_A(h)|² = o(K_A)   ──►  **OPEN**  ⟹ π normal;  π normal ⟺ S_N(h)=o(N)
 ```
 
 **Pins.** Source manifest blob `a8805a8e4d64f35ff61937a36755d9b6d1ba3fae` (unchanged). SC-6
