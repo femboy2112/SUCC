@@ -14,4 +14,11 @@
 | π base-16 normality | OPEN | Exact original zero seed | AV-06 |
 | RH | OPEN | Separate completed signed Weil positivity program | Not addressed |
 
+| AS-01 | PROVED PAPER / classical PNT-AP | Original common forcing conductor B_A has log B_A >= (6+o(1))A; valid for all sufficiently large A, onset not extracted | No selected real-circle dispersion |
+| AS-02 | PROVED PAPER / counterseed | Nonzero rational wrong seed with denominator dividing B_A, same genuine forcing and start-of-epoch source lattice, yet selected epoch diameter < 1/(32A^2) and J_q near q | Varies with A; cannot replace original U0=0 |
+| AS-03 | PROVED PAPER | Source-native wrong seed retains unreleased central-tent mass >q/2 through j~2log_16 A depths | Does not bound original early release |
+| AS-04 | DERIVED with external theorem | Reduced seed denominator Q_A >= c*16^(4A/15) A^(4/15) from published irrationality exponent μ(pi)<15/2 | Arithmetic height not Shannon entropy or Kolmogorov complexity |
+| AS-05 | CLASSICAL / exact finite | Finite 16^K uniform virtual seed ensemble loses one radix-16 degree of support per step, collapsing at n=K; fixed rational shifts preserve base-16 normality (Wall) | Virtual averaging does not distribute the selected seed |
+| AS-FIREWALL | REFUTED AS INFERENCE | Same forcing + only source-born prime powers by epoch start + finite escape ⇒ J=o(K) | Explicit AS-02/03 hostile family disproves this universal route |
+
 Proven means an explicit paper derivation in PROOFS.md; Python finite tests do not turn an asymptotic conjecture into a theorem. Scope must not be widened.

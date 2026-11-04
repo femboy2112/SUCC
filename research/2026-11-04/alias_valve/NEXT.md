@@ -16,3 +16,7 @@ Hostile controls before status promotions:
 - A point mass at 1/5 (unforced shift control), and finite synthetic periodic cycles.
 
 PREDECLARE the candidate inequality and the predicted opposite outcomes before running new holdouts. A new theorem must be quantitatively stronger on the original source, not simply a normality-equivalent rearrangement. No same-model or finite-sample pass can certify the universal asymptotic.
+
+## Added discriminator from AS-01..05
+
+The stronger source-native wrong seed AS-02 defeats tests that merely prohibit extraneous prime factors or require the state at epoch A to lie in the source conductor lattice available by then. The prospective proof must preserve the *literal entire chronology beginning at U0=0*, and derive a new signed numerator/carry escape saving valid for that one path while excluding the same-forcing AS-02 rational seed (which preloads a future-tuned numerator). No rule may infer entropy from choosing zero: selected seed delta has zero entropy, while the virtual seed ensemble is a separate measure. See SOURCE_NATIVE_SEED_NEXT.md for an exact adversarial slate and source/provenance requirements.
