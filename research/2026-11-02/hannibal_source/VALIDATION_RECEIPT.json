@@ -1,0 +1,118 @@
+{
+  "authority": {
+    "all_epoch_logmesh_bound_proved": false,
+    "analytic_proofs": "paper derivations with separate reasoner audit",
+    "external_referee": false,
+    "hosted_ci": "not inferred from local tests",
+    "lean_kernel_receipt": false,
+    "pi_normality_proved": false
+  },
+  "branch": "research/hannibal-source-collision-2026-11-02",
+  "campaign_parent": "1478b51cf1370411aea6ec42c09d080598384528",
+  "final_large_replay": {
+    "command": [
+      "python",
+      "research/2026-11-02/hannibal_source/probe.py",
+      "--large",
+      "--verify"
+    ],
+    "elapsed_seconds": 398.042,
+    "exit_code": 0,
+    "unchanged_tested_sha256": {
+      "research/2026-11-02/hannibal_source/hannibal.py": "3d76cce5c99c58ab043a6548af22e745e8ec1772b8694849bcb0ae18b6433d77",
+      "research/2026-11-02/hannibal_source/probe.py": "0e198f325fdb0aec5efe1ca3e416934ff5b066035ca50453afc5b30b83aaf3b9",
+      "research/2026-11-02/mesoscopic_spectral_army/mesoscopic.py": "a94cccac96f5fc14d4a50f809c8dafdebdec554ecec0ab208e6100d85c415325",
+      "research/2026-11-02/weyl_mirror_campaign/weyl_mirror.py": "aff7f405d126e3ba70fda1143a5f588188ff3b71acf9f9bc98cc629eea363b7c"
+    }
+  },
+  "focused": {
+    "elapsed_seconds": 10.662,
+    "errors": 0,
+    "failures": 0,
+    "patterns": [
+      "test_hannibal_source.py",
+      "test_weyl_mirror_campaign.py",
+      "test_mesoscopic_spectral_army.py",
+      "test_line_sheet_gamma.py",
+      "test_line_sheet_shortgap.py",
+      "test_arctan_reciprocity.py",
+      "test_arctan_reciprocity_topology.py",
+      "test_adaptive_arctan_frame.py",
+      "test_pi_lag_carry.py"
+    ],
+    "skipped": 0,
+    "successful": true,
+    "tests_run": 141
+  },
+  "native": {
+    "command": "PYTHONPATH=/media/leah/SPANKBANK/SUCCYBOI/SUCC-hannibal-source python -m unittest discover -s tests -p 'test_*.py'",
+    "elapsed_seconds": 1330.271,
+    "errors": 0,
+    "exit_code": 0,
+    "failures": 0,
+    "initial_import_path_failure_retained": true,
+    "skipped": 0,
+    "tests_run": 11234
+  },
+  "preregistration_commit": "bf514802d769fbe297fb08c32385bd0fc4279958",
+  "recorded_utc": "2026-11-03T02:47:19.642925+00:00",
+  "replays_and_probes": [
+    {
+      "command": [
+        "python",
+        "research/2026-11-02/hannibal_source/odd_replay.py",
+        "--write"
+      ],
+      "elapsed_seconds": 299.002,
+      "exit_code": 0,
+      "name": "odd-replay"
+    },
+    {
+      "command": [
+        "python",
+        "research/2026-11-02/hannibal_source/probe.py",
+        "--verify"
+      ],
+      "elapsed_seconds": 187.619,
+      "exit_code": 0,
+      "name": "small-replay"
+    },
+    {
+      "command": [
+        "python",
+        "research/2026-11-02/weyl_mirror_campaign/probe.py",
+        "--verify"
+      ],
+      "elapsed_seconds": 2.64,
+      "exit_code": 0,
+      "name": "parent-replay"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "elapsed_seconds": 0.091,
+      "exit_code": 0,
+      "name": "provenance-final"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "elapsed_seconds": 0.194,
+      "exit_code": 0,
+      "name": "observer-final"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "elapsed_seconds": 3.46,
+      "exit_code": 0,
+      "name": "ordinal-final"
+    }
+  ]
+}

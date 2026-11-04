@@ -1,0 +1,241 @@
+{
+  "epochs": {
+    "1024": {
+      "counts": [
+        134,
+        122,
+        120,
+        115,
+        117,
+        141,
+        129,
+        146
+      ],
+      "energy": [
+        16499,
+        16384
+      ],
+      "mesh": 8
+    },
+    "2048": {
+      "counts": [
+        269,
+        265,
+        252,
+        260,
+        250,
+        255,
+        227,
+        270
+      ],
+      "energy": [
+        131411,
+        131072
+      ],
+      "mesh": 8
+    },
+    "4096": {
+      "counts": [
+        516,
+        524,
+        499,
+        526,
+        475,
+        510,
+        518,
+        528
+      ],
+      "energy": [
+        1049671,
+        1048576
+      ],
+      "mesh": 8
+    }
+  },
+  "independent_fraction_prefix_agreement": 256,
+  "last_time": 8191,
+  "modulus_bits": 70813,
+  "modulus_odd": true,
+  "modulus_sha256_unsigned_big_endian": "e48139cc22476d4df82ede6db70d68fb790942b02ed4f06116032df7e3a0c68f",
+  "parent_sha": "20acb35a42b6ae5fb9260c041ed3a1aa47429484",
+  "prefixes": {
+    "1024": {
+      "feasible_antiphase_costs": {
+        "1": {
+          "approx": 0.01797170021674905,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 19760093359,
+            "upper_numerator": 19760093360
+          }
+        },
+        "16": {
+          "approx": 0.01768120842539661,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 19440694256,
+            "upper_numerator": 19440694257
+          }
+        },
+        "3": {
+          "approx": 0.0040215850779992636,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 4421779555,
+            "upper_numerator": 4421779556
+          }
+        },
+        "5": {
+          "approx": 0.011557333245825016,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 12707422289,
+            "upper_numerator": 12707422290
+          }
+        }
+      },
+      "mirror_W1_approx": 0.02825155790570513,
+      "mirror_W1_interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 31062916420,
+        "upper_numerator": 31062916421
+      },
+      "mirror_cost_denominator_sha256": "3acc83d6c98590f70965cdde3132901817b0904f557f84cf9e219134c78d4fda",
+      "mirror_cost_numerator_sha256": "228b5a3e94875e1579970f3d2777643ef5647e5dafead56c453fcaae08d051b4"
+    },
+    "1500": {
+      "feasible_antiphase_costs": {
+        "1": {
+          "approx": 0.008478378354021677,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 9322075584,
+            "upper_numerator": 9322075585
+          }
+        },
+        "16": {
+          "approx": 0.008431284287373124,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 9270295111,
+            "upper_numerator": 9270295112
+          }
+        },
+        "3": {
+          "approx": 0.011922347016509254,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 13108759175,
+            "upper_numerator": 13108759176
+          }
+        },
+        "5": {
+          "approx": 0.016408252109350804,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 18041063985,
+            "upper_numerator": 18041063986
+          }
+        }
+      },
+      "mirror_W1_approx": 0.009154622407727861,
+      "mirror_W1_interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 10065613785,
+        "upper_numerator": 10065613786
+      },
+      "mirror_cost_denominator_sha256": "21d63587b01ebf97f619cc2620e848e05211f514c065c0aa510ebdc584ad758b",
+      "mirror_cost_numerator_sha256": "7830844341bd5ed9310d6eca1de105881a8ef2e966af8f4ffaabddf07b295fc1"
+    },
+    "3000": {
+      "feasible_antiphase_costs": {
+        "1": {
+          "approx": 0.0041714823283008,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 4586593325,
+            "upper_numerator": 4586593326
+          }
+        },
+        "16": {
+          "approx": 0.004055094917427096,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 4458624013,
+            "upper_numerator": 4458624014
+          }
+        },
+        "3": {
+          "approx": 0.009959032547908375,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 10950072087,
+            "upper_numerator": 10950072088
+          }
+        },
+        "5": {
+          "approx": 0.0041141138205764895,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 4523515983,
+            "upper_numerator": 4523515984
+          }
+        }
+      },
+      "mirror_W1_approx": 0.0075449552803077465,
+      "mirror_W1_interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 8295766061,
+        "upper_numerator": 8295766062
+      },
+      "mirror_cost_denominator_sha256": "d8e41697e59da94decba399c818f1456d26878eccc66bcacc5f16fa6d4cf03d0",
+      "mirror_cost_numerator_sha256": "3f34f848a5f67073e5bbfc0a0916d10aa21e9845731f1f532b42c42e6a1983a1"
+    },
+    "512": {
+      "feasible_antiphase_costs": {
+        "1": {
+          "approx": 0.019359313871686733,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 21285790707,
+            "upper_numerator": 21285790708
+          }
+        },
+        "16": {
+          "approx": 0.018978208676289854,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 20866761113,
+            "upper_numerator": 20866761114
+          }
+        },
+        "3": {
+          "approx": 0.008145348868653259,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 8955905793,
+            "upper_numerator": 8955905794
+          }
+        },
+        "5": {
+          "approx": 0.014337191701195108,
+          "interval": {
+            "denominator": 1099511627776,
+            "lower_numerator": 15763908985,
+            "upper_numerator": 15763908986
+          }
+        }
+      },
+      "mirror_W1_approx": 0.030006111376049086,
+      "mirror_W1_interval": {
+        "denominator": 1099511627776,
+        "lower_numerator": 32992068362,
+        "upper_numerator": 32992068363
+      },
+      "mirror_cost_denominator_sha256": "ef9e4350a6f4ea26baec35515b2e3983dd2f545b6bf073b3ad5ff49c5062ef7a",
+      "mirror_cost_numerator_sha256": "5b0e96b45589cf79e272b9c120039ed9d811c0dd27fed47965767877428f437f"
+    }
+  },
+  "source": "original four poles, literal U0=0",
+  "status": "FINITE OBSERVATIONS ONLY; no asymptotic source bound"
+}

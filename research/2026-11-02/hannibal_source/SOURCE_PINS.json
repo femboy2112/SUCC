@@ -1,0 +1,87 @@
+{
+  "branch": "research/hannibal-source-collision-2026-11-02",
+  "campaign_live_recheck": "1478b51cf1370411aea6ec42c09d080598384528",
+  "original_checkout_recheck": {
+    "branch": "research/prime-ladder-ravel-audit-2026-10-27",
+    "head": "809504e11cebe043383b8a0a0eaf3b080b085300",
+    "path": "/media/leah/SPANKBANK/SUCCYBOI/SUCC",
+    "status_porcelain": ""
+  },
+  "parallel_472_is_ancestor": false,
+  "parent": "1478b51cf1370411aea6ec42c09d080598384528",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "preregister_commit": "bf514802d769fbe297fb08c32385bd0fc4279958",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "remote": "https://github.com/femboy2112/SUCC.git",
+  "source_pins": {
+    "AGENTS.md": {
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    "docs/METHOD.md": {
+      "git_blob": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    },
+    "provenance/IMPORT_MANIFEST.json": {
+      "git_blob": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae",
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    },
+    "research/2026-10-24/PI_LAG_ARITHMETIC_TRACK.md": {
+      "git_blob": "92a66b7b0e3c601af5cf93db6dc116eb8d1f8860",
+      "sha256": "093d2daaef5bd0b88352bdb07a57f93bad00f63dd2e252f681417cb8b10ae830"
+    },
+    "research/2026-11-01/adaptive_arctan_frame/PROOFS.md": {
+      "git_blob": "ba43cf80ad060c2bded2570f4e588427c9909d2e",
+      "sha256": "8a49385877fe89cf766e079f3de82b2519093c2d9387815ae57b6b7946d8c9fa"
+    },
+    "research/2026-11-01/arctan_reciprocity/PROOFS.md": {
+      "git_blob": "641ab0f842a0ed0aa2cead8468a7e60e613d3f5b",
+      "sha256": "2d0a4299352d986f34c489f1d19ec5ccafac0ff8b5373184c4bb0456f90f68eb"
+    },
+    "research/2026-11-02/line_sheet_gamma/PROOFS.md": {
+      "git_blob": "0821dc16b2d5a50d3fae4a0d43a12bc462b41432",
+      "sha256": "4c028feb87515e476e34fc397ec58a9c8b9443da1ddef864d5f7643afd31bceb"
+    },
+    "research/2026-11-02/mesoscopic_spectral_army/PROOFS.md": {
+      "git_blob": "89a3e97121de4e22581472f418aa0361dcc1a9ea",
+      "sha256": "8e8cfe78d00dfe17000ae138666c2fda64396b99eed32aecb52b99123183324f"
+    },
+    "research/2026-11-02/mesoscopic_spectral_army/mesoscopic.py": {
+      "git_blob": "d67d4f69d0a6d6d9e230e0b796820454b16d471f",
+      "sha256": "a94cccac96f5fc14d4a50f809c8dafdebdec554ecec0ab208e6100d85c415325"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/CODEX_ASTRA_ULTRA_HANDOFF.md": {
+      "git_blob": "dd0a70fd2e31ddfccbf2fe4ed9f561f4269c52cb",
+      "sha256": "84b87776058502f74660e0391d29d33f2b93fabc5acff9b6abda26b25913626c"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/FINITE_RECEIPT.json": {
+      "git_blob": "e9a378add7704f57d877f1c6dc85b4db7a6611c6",
+      "sha256": "77e4c2c61bf4a187f40c2c8b1e3843b292798efe8c9e373f114b8fd5e7712494"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/PREREGISTRATION.md": {
+      "git_blob": "616e2acd85bbfe2c42aebaa59136e96d5e0f3b26",
+      "sha256": "96e9fcfb8d60f0335e2642be080e22aaf2488b742e24e15f456d8950e79f4a63"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/PROOFS.md": {
+      "git_blob": "a07a50f866f79692bda1d37971d284ec57202fa2",
+      "sha256": "6b0d12f3daee98c5db721456aec0c5b4d6abdfcf8a6ff0320c5c494c1ef58b39"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/VALIDATION.md": {
+      "git_blob": "65f29ba4fd0739f7d6c101dcf23baffe5cb53c07",
+      "sha256": "e71a0455aa79c118d8b8162689297e2188c3cdbda1718d6e03a76d50a23cd2e5"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/probe.py": {
+      "git_blob": "d61872e8cfbd6ed321f8e4ca64d2add27c625af5",
+      "sha256": "6b9a77e21793e51afe8c86957fbd16e47f39fd6c9652435947eadf587164cca7"
+    },
+    "research/2026-11-02/weyl_mirror_campaign/weyl_mirror.py": {
+      "git_blob": "8f3c5e0af40dd41b38f425defa68aaea3d545e8e",
+      "sha256": "aff7f405d126e3ba70fda1143a5f588188ff3b71acf9f9bc98cc629eea363b7c"
+    },
+    "tests/test_weyl_mirror_campaign.py": {
+      "git_blob": "30ae14769ad3e57fa79d9a834fe5eec999d24908",
+      "sha256": "a491f45774eabd2eb2e23b0cce2dae745e6a6741439a8f9b29ae841809ed9864"
+    }
+  },
+  "worktree": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-hannibal-source"
+}

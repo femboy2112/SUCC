@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "beta_cap_derivative_polynomial_positive": true,
+    "factorized_transfer": true,
+    "original_beta_kernel": true,
+    "original_four_poles_exact": true,
+    "radial_null_derivative": true,
+    "source_positive_beta_defect": true
+  },
+  "status": "Exact symbolic polynomial oracle checks; not an external proof referee"
+}

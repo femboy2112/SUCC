@@ -1,0 +1,35 @@
+[
+  {
+    "N": 512,
+    "h": 1,
+    "L": 16,
+    "start": 321,
+    "threshold": "1/10",
+    "certified_true_inequality": "W < (1/10) E",
+    "ratio_approx": 0.0149863812086521,
+    "rejection_margin_approx": 2.2981539370590807,
+    "eta_upper_approx": 4.010574216740884e-7
+  },
+  {
+    "N": 1024,
+    "h": 5,
+    "L": 32,
+    "start": 577,
+    "threshold": "1/10",
+    "certified_true_inequality": "W < (1/10) E",
+    "ratio_approx": 0.04847610400549014,
+    "rejection_margin_approx": 3.069669957282929,
+    "eta_upper_approx": 5.027908128046399e-7
+  },
+  {
+    "N": 256,
+    "h": 5,
+    "L": 128,
+    "start": 1,
+    "threshold": "1/10",
+    "certified_true_inequality": "W < (1/10) E",
+    "ratio_approx": 0.028325985861616495,
+    "rejection_margin_approx": 9.234654386422676,
+    "eta_upper_approx": 0.0000079818618052091
+  }
+]

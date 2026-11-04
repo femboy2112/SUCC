@@ -1,0 +1,81 @@
+{
+  "file_hashes": {
+    "research/2026-11-03/gaussian_unit_gluing/CODEX_HANDOFF.md": {
+      "bytes": 3067,
+      "git_blob": "b2026334df5b8bffe3fea2246147cfe84d71b071",
+      "sha256": "33e1fabaa8ccac85bdc3f57acd86696e7f7876dcb35c6509085e1a4aebd0f52f"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/EXACT_RECEIPT.json": {
+      "bytes": 8603,
+      "git_blob": "bb6b763939d9779ae3bbdd4da5a2f133c88201e4",
+      "sha256": "17c01622089a41cb9b7d6f9f7f739f9c11d6b0de3e04c24cd263aa03e044fc2e"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/NEXT.md": {
+      "bytes": 2976,
+      "git_blob": "e4ca677559a48f861151b4e61b4dc5c38ce3b85b",
+      "sha256": "ea2df34763061257cf256e5d51e389fcd0929fa9b4985ed7813ce97eb7638442"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/PREREGISTRATION.md": {
+      "bytes": 1006,
+      "git_blob": "86ed17ff896676e281075285e84da2ed956909b1",
+      "sha256": "cf7c7ae753de140a01e341137541203d8b4cba263950aa5df1749e0460289ce2"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/PROOFS.md": {
+      "bytes": 17634,
+      "git_blob": "ecf9c42d9be8118fcb2bce0e4878da1d4804c53d",
+      "sha256": "a2d18c2550755279b45ff66bcf822f37c121527620eb4facdceb87f5f02e273a"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/README.md": {
+      "bytes": 1672,
+      "git_blob": "ff41a502a09681e9900fb9c0d36d31246e311b3d",
+      "sha256": "70ab378978309632559173fe844046197734ede341ced2bdd354dca2c682de15"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/SOURCE_MAP.md": {
+      "bytes": 2279,
+      "git_blob": "afe3d788663a876b1c4df2b8d303f8a566a6780c",
+      "sha256": "9a2145a55024128b87481d9a44e3d2ad65c38a8b7fc61b00f2e679afd7143165"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/SYMBOLIC_RECEIPT.json": {
+      "bytes": 738,
+      "git_blob": "ad72328d4886a81584c0af2c8db1ac6b10f59a6a",
+      "sha256": "97c5840695e7056d45c50748124ba6a3a2c2d09ff76068a4f385c42861f9cba6"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/TEST_LOG.txt": {
+      "bytes": 2476,
+      "git_blob": "ac686c58577855656f824ba8bb47bb2d80e19bd7",
+      "sha256": "d474d3d537cbfe58eca0cd53a58a9b5f51f47cd6f8d0d561ba33d9ea37e6c1a4"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/VALIDATION.md": {
+      "bytes": 3458,
+      "git_blob": "072326d7dc699a085b59478e77857b5628d6d58c",
+      "sha256": "cbb1bbe52dad3ea63dd8727e8ce804721ab49f09cd9aae52de57e3d76fbf45f4"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/gaussian_unit_gluing.py": {
+      "bytes": 10947,
+      "git_blob": "82f1544e6f5fb1301072f2bad36482258e1ffd41",
+      "sha256": "c03b9ff5c9b3509761d60dc100b4ee4ecf42f7b56fe8850e7a8f14fb2c2deb7f"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/generate_receipt.py": {
+      "bytes": 2172,
+      "git_blob": "804995a2bc7ac425df5c0106bf3898444d4ef32a",
+      "sha256": "d9d0944e2f247db6edf1bcb3d82457484b653a40e03fe587c90ca40044255948"
+    },
+    "research/2026-11-03/gaussian_unit_gluing/symbolic_oracle.py": {
+      "bytes": 4266,
+      "git_blob": "c16c21f929614d0465d8e16d02bbd9e59ef6cf90",
+      "sha256": "7aa006838057c6328e24bd8d740dd541087de6f3bc37e528ad71e9bc3299d7a4"
+    },
+    "tests/test_gaussian_unit_gluing.py": {
+      "bytes": 8415,
+      "git_blob": "3ede810d720697fd0ef07613db98837709693f22",
+      "sha256": "b84e893ad15f3b65724cd256febf5e26d87e569acf9a4caf532a8eec1672ec7d"
+    },
+    "tests/test_gaussian_unit_gluing_symbolic.py": {
+      "bytes": 918,
+      "git_blob": "7ba367665dd1f5409dba72f6aae58037c4ca3fc0",
+      "sha256": "f755e1c81039f4308075da20cd634778260548efa946dd3b3e284d5ab08534f9"
+    }
+  },
+  "pinned_parent": "61bab5cb354e6143fd2fd7ce229ef1b8e9902538",
+  "provenance": "original four Mellin BBP terms, U0=0, add-only"
+}

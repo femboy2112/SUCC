@@ -1,0 +1,222 @@
+{
+  "cases": [
+    {
+      "L": 101,
+      "h": 1,
+      "p": 269,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "1653203/31250000"
+    },
+    {
+      "L": 101,
+      "h": 3,
+      "p": 269,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "89804543/1000000000"
+    },
+    {
+      "L": 101,
+      "h": 5,
+      "p": 269,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "109022321/1000000000"
+    },
+    {
+      "L": 140,
+      "h": 1,
+      "p": 373,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "119716867/1000000000"
+    },
+    {
+      "L": 140,
+      "h": 3,
+      "p": 373,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "152049/1953125"
+    },
+    {
+      "L": 140,
+      "h": 5,
+      "p": 373,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "41341781/1000000000"
+    },
+    {
+      "L": 149,
+      "h": 1,
+      "p": 397,
+      "under_1_16": false,
+      "under_1_8": false,
+      "upper_l1": "152986179/1000000000"
+    },
+    {
+      "L": 149,
+      "h": 3,
+      "p": 397,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "46212981/500000000"
+    },
+    {
+      "L": 149,
+      "h": 5,
+      "p": 397,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "1846591/40000000"
+    },
+    {
+      "L": 191,
+      "h": 1,
+      "p": 509,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "62937291/1000000000"
+    },
+    {
+      "L": 191,
+      "h": 3,
+      "p": 509,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "103873181/1000000000"
+    },
+    {
+      "L": 191,
+      "h": 5,
+      "p": 509,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "23991341/500000000"
+    },
+    {
+      "L": 374,
+      "h": 1,
+      "p": 997,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "42871969/1000000000"
+    },
+    {
+      "L": 374,
+      "h": 3,
+      "p": 997,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "82943/1600000"
+    },
+    {
+      "L": 374,
+      "h": 5,
+      "p": 997,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "57432693/1000000000"
+    }
+  ],
+  "harmonics": [
+    1,
+    3,
+    5
+  ],
+  "holdout_post_observation_directions_certified": [
+    {
+      "certified_squared_gap_lower": "65082749/1000000000",
+      "h": 1,
+      "method": "two-component rational square-norm lower vs upper intervals",
+      "prime": 1013,
+      "strict_order": "joint_smaller"
+    },
+    {
+      "certified_squared_gap_lower": "1212399/1000000000",
+      "h": 5,
+      "method": "two-component rational square-norm lower vs upper intervals",
+      "prime": 1021,
+      "strict_order": "joint_larger"
+    }
+  ],
+  "not_an_asymptotic_pi_normality_claim": true,
+  "parent_main": "81045770234a114247e43eb08ae5c6d446e9514a",
+  "preregistered_holdout_cases": [
+    {
+      "L": 380,
+      "h": 1,
+      "p": 1013,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "48729157/1000000000"
+    },
+    {
+      "L": 380,
+      "h": 3,
+      "p": 1013,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "54585981/1000000000"
+    },
+    {
+      "L": 380,
+      "h": 5,
+      "p": 1013,
+      "under_1_16": false,
+      "under_1_8": true,
+      "upper_l1": "66887411/1000000000"
+    },
+    {
+      "L": 383,
+      "h": 1,
+      "p": 1021,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "10587593/200000000"
+    },
+    {
+      "L": 383,
+      "h": 3,
+      "p": 1021,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "8968223/200000000"
+    },
+    {
+      "L": 383,
+      "h": 5,
+      "p": 1021,
+      "under_1_16": true,
+      "under_1_8": true,
+      "upper_l1": "30941993/500000000"
+    }
+  ],
+  "program_sha256": {
+    "interval.py": "1a95d50970aa920553b5db1357cd1aa2d336b6ee262e20dc2026e30ec5fa7e03",
+    "prime_window.py": "e2e9115574811d4ec30e26850788cb6d30de1904f817bad1ea628170987ed6e3",
+    "run_receipt.py": "5d028a548377d20ade57750dd44c827507251c8fe61e148ea642ff91c2246862"
+  },
+  "rigorous_phase_comparison": [
+    {
+      "certified_gap_lower": "5287967/500000000",
+      "h": 1,
+      "method": "real-component lower vs other-vector L1 upper; exact outward intervals",
+      "prime": 373,
+      "strict_order": "joint_larger"
+    },
+    {
+      "certified_gap_lower": "357809941/1000000000",
+      "h": 3,
+      "method": "real-component lower vs other-vector L1 upper; exact outward intervals",
+      "prime": 397,
+      "strict_order": "joint_smaller"
+    }
+  ],
+  "stacked_on_pr459": "ec9c5a98772c60ab06bd4bb0a3d52a751a8bdc6a",
+  "status": "CERTIFIED_FINITE_EXACT_RATIONAL_INTERVAL",
+  "trig_method": "exact Fraction source; exact mod1; 32-bit dyadic floor; Machin rational pi interval; Taylor/Lagrange rational error; outward 10^9 L1 ceiling",
+  "window_class": "p prime, p>5, p congruent 5 mod 8"
+}

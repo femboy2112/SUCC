@@ -1,0 +1,50 @@
+$ python -m unittest discover -s /mnt/data/succ_selected_current_front/tests -p test_selected_current_front.py -v
+test_actual_original_forcing_crossings_and_bound (test_selected_current_front.SelectedSourceExactness.test_actual_original_forcing_crossings_and_bound) ... ok
+test_endpoint_and_zero_anchoring (test_selected_current_front.SelectedSourceExactness.test_endpoint_and_zero_anchoring) ... ok
+test_exact_shift_average_of_time_branch_squares (test_selected_current_front.SelectedSourceExactness.test_exact_shift_average_of_time_branch_squares) ... ok
+test_gamma_energy_transport_with_synthetic_monotone_tail (test_selected_current_front.SelectedSourceExactness.test_gamma_energy_transport_with_synthetic_monotone_tail) ... ok
+test_independent_exact_origin_integral_synthetic (test_selected_current_front.SelectedSourceExactness.test_independent_exact_origin_integral_synthetic) ... ok
+test_invalid_mesh_and_empty_inputs (test_selected_current_front.SelectedSourceExactness.test_invalid_mesh_and_empty_inputs) ... ok
+test_original_immutable_source (test_selected_current_front.SelectedSourceExactness.test_original_immutable_source) ... ok
+test_original_source_positive_bound_on_preregistered_epochs (test_selected_current_front.SelectedSourceExactness.test_original_source_positive_bound_on_preregistered_epochs) ... ok
+test_point_mass_cannot_be_made_haar_by_origin_average (test_selected_current_front.SelectedSourceExactness.test_point_mass_cannot_be_made_haar_by_origin_average) ... ok
+test_preregistered_all_meshes_slow_cylinder (test_selected_current_front.SelectedSourceExactness.test_preregistered_all_meshes_slow_cylinder) ... ok
+test_preregistered_exact_origin_integral_original (test_selected_current_front.SelectedSourceExactness.test_preregistered_exact_origin_integral_original) ... ok
+test_preregistered_independent_original_source_epochs (test_selected_current_front.SelectedSourceExactness.test_preregistered_independent_original_source_epochs) ... ok
+test_rotational_gauge_keeps_selected_tent_energy (test_selected_current_front.SelectedSourceExactness.test_rotational_gauge_keeps_selected_tent_energy) ... ok
+test_selected_branch_square_at_levels (test_selected_current_front.SelectedSourceExactness.test_selected_branch_square_at_levels) ... ok
+test_translated_boundary_crossing_identity (test_selected_current_front.SelectedSourceExactness.test_translated_boundary_crossing_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 7.493s
+
+OK
+$ python -m unittest discover -s /mnt/data/succ_circle_path_electric/tests -p test_circle_path_electric.py -v
+test_electrical_resistance_limit (test_circle_path_electric.FlowEnergyTests.test_electrical_resistance_limit) ... ok
+test_exact_source_currents (test_circle_path_electric.FlowEnergyTests.test_exact_source_currents) ... ok
+test_invalid (test_circle_path_electric.FlowEnergyTests.test_invalid) ... ok
+test_uniform_synthetic_control (test_circle_path_electric.FlowEnergyTests.test_uniform_synthetic_control) ... ok
+test_dft_exact_group_ring (test_circle_path_electric.PathGroupoidTests.test_dft_exact_group_ring) ... ok
+test_discontinuous_odd_inverse (test_circle_path_electric.PathGroupoidTests.test_discontinuous_odd_inverse) ... ok
+test_forced_odd_inverse_source (test_circle_path_electric.PathGroupoidTests.test_forced_odd_inverse_source) ... ok
+test_modular_independent_oracle_holdouts (test_circle_path_electric.PathGroupoidTests.test_modular_independent_oracle_holdouts) ... ok
+test_odd_inverse_unique (test_circle_path_electric.PathGroupoidTests.test_odd_inverse_unique) ... ok
+test_periodic_wrong_orbit (test_circle_path_electric.PathGroupoidTests.test_periodic_wrong_orbit) ... ok
+test_source_original_four_poles (test_circle_path_electric.PathGroupoidTests.test_source_original_four_poles) ... ok
+test_transfer_harmonics (test_circle_path_electric.PathGroupoidTests.test_transfer_harmonics) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.974s
+
+OK
+$ python /mnt/data/succ_selected_current_front/research/2026-11-03/selected_current_front/independent_oracle.py
+{
+  "independent_source": "collapsed A/D plus integer common modulus",
+  "origin_integral": "piecewise exact partition; no triangular pair formula",
+  "status": "PASS",
+  "pi_digits_instrument": false
+}
+$ python /mnt/data/succ_selected_current_front/research/2026-11-03/selected_current_front/probe.py --verify
+PASS: selected source exact finite receipt replay, bytes 39003
+$ python -m compileall -q research/2026-11-03/selected_current_front tests/test_selected_current_front.py
+ALL EXIT CODES 0

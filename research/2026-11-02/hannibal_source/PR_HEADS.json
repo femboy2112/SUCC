@@ -1,0 +1,56 @@
+{
+  "campaign": {
+    "number": 476,
+    "head": "research/weyl-mirror-slowmesh-2026-11-02",
+    "head_sha": "1478b51cf1370411aea6ec42c09d080598384528",
+    "base_sha": "20acb35a42b6ae5fb9260c041ed3a1aa47429484",
+    "draft": true
+  },
+  "antecedents_and_read_only_parallel": [
+    {
+      "number": 451,
+      "url": "https://github.com/femboy2112/SUCC/pull/451",
+      "head": "research/arctan-reciprocity-irrational-mirror-2026-11-01",
+      "head_sha": "8ccec135f8abf64f0ea44fab555d9ac1e1b787e1",
+      "base": "research/categorical-source-gluing-independent-audit-2026-11-01",
+      "base_sha": "a62c5385681890d40e7ca05127e0cc5d71e8b9c0",
+      "draft": true
+    },
+    {
+      "number": 453,
+      "url": "https://github.com/femboy2112/SUCC/pull/453",
+      "head": "research/adaptive-arctan-harmonic-frame-2026-11-01",
+      "head_sha": "702cf6fa45c9e6d10bd48c84efe7d3c4389a9037",
+      "base": "research/arctan-reciprocity-irrational-mirror-2026-11-01",
+      "base_sha": "8ccec135f8abf64f0ea44fab555d9ac1e1b787e1",
+      "draft": true
+    },
+    {
+      "number": 474,
+      "url": "https://github.com/femboy2112/SUCC/pull/474",
+      "head": "research/line-sheet-gamma-sublog-multiprime-2026-11-02",
+      "head_sha": "f60ebe5885c1de1f618d52445de77e089e841d3a",
+      "base": "research/prime-cofactor-gamma-golden-defect-2026-11-02",
+      "base_sha": "80dc4d8b54574e03843f198ff833e2add469422a",
+      "draft": true
+    },
+    {
+      "number": 475,
+      "url": "https://github.com/femboy2112/SUCC/pull/475",
+      "head": "research/mesoscopic-spectral-army-2026-11-02",
+      "head_sha": "20acb35a42b6ae5fb9260c041ed3a1aa47429484",
+      "base": "research/line-sheet-gamma-sublog-multiprime-2026-11-02",
+      "base_sha": "f60ebe5885c1de1f618d52445de77e089e841d3a",
+      "draft": true
+    },
+    {
+      "number": 472,
+      "url": "https://github.com/femboy2112/SUCC/pull/472",
+      "head": "research/oily-hbar-moving-alias-vs-weyl-2026-11-02",
+      "head_sha": "85189e389ca1568636a7fedb7b2d6268b8eae447",
+      "base": "research/carrier-hbar-selected-alias-energy-2026-11-02",
+      "base_sha": "ef6f8894741cac8d952e9fd12d49e4aa7d13fa25",
+      "draft": true
+    }
+  ]
+}

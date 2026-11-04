@@ -1,0 +1,384 @@
+{
+  "authority": "exact stdlib Fraction + independent combined-rational oracle",
+  "horizons": [
+    {
+      "N": 2,
+      "denominator_digits": 4,
+      "first_residues": [
+        {
+          "a": 12,
+          "prime": 13
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 3,
+      "prime_count": 1,
+      "prime_list": [
+        13
+      ],
+      "relative_trace_abs_denominator": 12,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 3,
+      "denominator_digits": 6,
+      "first_residues": [
+        {
+          "a": 10,
+          "prime": 13
+        },
+        {
+          "a": 4,
+          "prime": 17
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 4,
+      "prime_count": 2,
+      "prime_list": [
+        13,
+        17
+      ],
+      "relative_trace_abs_denominator": 192,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 4,
+      "denominator_digits": 9,
+      "first_residues": [
+        {
+          "a": 4,
+          "prime": 13
+        },
+        {
+          "a": 13,
+          "prime": 17
+        },
+        {
+          "a": 28,
+          "prime": 29
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 5,
+      "prime_count": 3,
+      "prime_list": [
+        13,
+        17,
+        29
+      ],
+      "relative_trace_abs_denominator": 5376,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 5,
+      "denominator_digits": 11,
+      "first_residues": [
+        {
+          "a": 12,
+          "prime": 13
+        },
+        {
+          "a": 4,
+          "prime": 17
+        },
+        {
+          "a": 13,
+          "prime": 29
+        },
+        {
+          "a": 36,
+          "prime": 37
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 6,
+      "prime_count": 4,
+      "prime_list": [
+        13,
+        17,
+        29,
+        37
+      ],
+      "relative_trace_abs_denominator": 193536,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 8,
+      "denominator_digits": 21,
+      "first_residues": [
+        {
+          "a": 13,
+          "prime": 17
+        },
+        {
+          "a": 4,
+          "prime": 29
+        },
+        {
+          "a": 11,
+          "prime": 37
+        },
+        {
+          "a": 40,
+          "prime": 41
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 11,
+      "prime_count": 6,
+      "prime_list": [
+        17,
+        29,
+        37,
+        41,
+        53,
+        61
+      ],
+      "relative_trace_abs_denominator": 2012774400,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 16,
+      "denominator_digits": 39,
+      "first_residues": [
+        {
+          "a": 3,
+          "prime": 37
+        },
+        {
+          "a": 4,
+          "prime": 41
+        },
+        {
+          "a": 17,
+          "prime": 53
+        },
+        {
+          "a": 4,
+          "prime": 61
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 20,
+      "prime_count": 10,
+      "prime_list": [
+        37,
+        41,
+        53,
+        61,
+        73,
+        89,
+        97,
+        101,
+        109,
+        113
+      ],
+      "relative_trace_abs_denominator": 3305561684705280000,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 32,
+      "denominator_digits": 77,
+      "first_residues": [
+        {
+          "a": 1,
+          "prime": 73
+        },
+        {
+          "a": 32,
+          "prime": 89
+        },
+        {
+          "a": 33,
+          "prime": 97
+        },
+        {
+          "a": 20,
+          "prime": 101
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 43,
+      "prime_count": 16,
+      "prime_list": [
+        73,
+        89,
+        97,
+        101,
+        109,
+        113,
+        137,
+        149,
+        157,
+        173,
+        181,
+        193,
+        197,
+        229,
+        233,
+        241
+      ],
+      "relative_trace_abs_denominator": 34170058912998964701964365987840000,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 64,
+      "denominator_digits": 164,
+      "first_residues": [
+        {
+          "a": 87,
+          "prime": 137
+        },
+        {
+          "a": 20,
+          "prime": 149
+        },
+        {
+          "a": 27,
+          "prime": 157
+        },
+        {
+          "a": 54,
+          "prime": 173
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 87,
+      "prime_count": 31,
+      "prime_list": [
+        137,
+        149,
+        157,
+        173,
+        181,
+        193,
+        197,
+        229,
+        233,
+        241,
+        257,
+        269,
+        277,
+        281,
+        293,
+        313,
+        317,
+        337,
+        349,
+        353,
+        373,
+        389,
+        397,
+        401,
+        409,
+        421,
+        433,
+        449,
+        457,
+        461,
+        509
+      ],
+      "relative_trace_abs_denominator": 23573961889581920613243445265211095627883615032584348523677005989806080000000,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    },
+    {
+      "N": 100,
+      "denominator_digits": 257,
+      "first_residues": [
+        {
+          "a": 168,
+          "prime": 229
+        },
+        {
+          "a": 152,
+          "prime": 233
+        },
+        {
+          "a": 237,
+          "prime": 241
+        },
+        {
+          "a": 193,
+          "prime": 257
+        }
+      ],
+      "p_free_cofactor_denominator_digits": 134,
+      "prime_count": 46,
+      "prime_list": [
+        229,
+        233,
+        241,
+        257,
+        269,
+        277,
+        281,
+        293,
+        313,
+        317,
+        337,
+        349,
+        353,
+        373,
+        389,
+        397,
+        401,
+        409,
+        421,
+        433,
+        449,
+        457,
+        461,
+        509,
+        521,
+        541,
+        557,
+        569,
+        577,
+        593,
+        601,
+        613,
+        617,
+        641,
+        653,
+        661,
+        673,
+        677,
+        701,
+        709,
+        733,
+        757,
+        761,
+        769,
+        773,
+        797
+      ],
+      "relative_trace_abs_denominator": 542442535641650464078090609540513099308937691096520255885678627575308513424431778045105002491572477195452416000000000000000,
+      "relative_trace_abs_numerator": 1,
+      "verified_all_primes": true
+    }
+  ],
+  "mass_2_through_16": "568612402575697330206608798372159395571/2389628621914839023080520710079233831125",
+  "mass_2_to_infinity_upper": "38780822386759468156303483805897435147669/152936231802549697477153325445070965192000",
+  "n3_sample": {
+    "P": 221,
+    "U": "615863723/765765",
+    "cofactor": "2783233/3465",
+    "parts": [
+      [
+        13,
+        10
+      ],
+      [
+        17,
+        4
+      ]
+    ],
+    "trace_multiplier": "1/192"
+  },
+  "not_a_pi_normality_proof": true,
+  "p257_primary_complete_cycle_mean_lower": "49/100",
+  "p257_primary_period": 4,
+  "rational_simpler_upper": "65/256",
+  "source": "original four signed BBP poles; exact U0=0"
+}

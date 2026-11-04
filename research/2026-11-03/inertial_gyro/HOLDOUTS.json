@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-03",
+  "parent_sha": "a5ea2c51446feb1e48099f18730fc60fa2f45d8e",
+  "source": "original signed 4-pole BBP, zero seed, actual rational U_n",
+  "exact_gyro_frames": "common source labelled SU2 quaternion groupoid, main H algebra",
+  "observations_float_only": "coherence and Fejer energy use math.cos/sin; no numerical asymptotic certificate",
+  "rows": [
+    {
+      "N": 96,
+      "source_phase_difference_hashes": {
+        "0:95": "3d7f1ed1807a4141d38ab5d9effa8768d309bc57071cd71a02eb0f5617830dbf",
+        "32:64": "52f4a5fb125cb3dd4e27e307ce70af9a5764ab1539509c0e70ff6e403b350267"
+      },
+      "collision_energy_exact": "4/3",
+      "Fejer_Q_upper_exact": "1850/441",
+      "gyro_fejer_excess_float": 0.099485528001,
+      "gyro_fejer_majorant_pass": true,
+      "harmonics": [
+        {
+          "h": 1,
+          "identity_coherence_sq_float": 0.018911356099,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        },
+        {
+          "h": 2,
+          "identity_coherence_sq_float": 0.016269744364,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        },
+        {
+          "h": 16,
+          "identity_coherence_sq_float": 0.013867869855,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        }
+      ]
+    },
+    {
+      "N": 192,
+      "source_phase_difference_hashes": {
+        "0:191": "8dbf1618a7ffce9e0e8d000bc12fc1b462f6c945816ae713c31b7e37215abf96",
+        "64:128": "ce25d72c1ccc86c2f4a4e6f97c0e4a15f08d4a4673b707c94b84d855518c6ce0"
+      },
+      "collision_energy_exact": "209/192",
+      "Fejer_Q_upper_exact": "193325/56448",
+      "gyro_fejer_excess_float": 0.020247004614,
+      "gyro_fejer_majorant_pass": true,
+      "harmonics": [
+        {
+          "h": 1,
+          "identity_coherence_sq_float": 0.000558203922,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        },
+        {
+          "h": 2,
+          "identity_coherence_sq_float": 0.007132218901,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        },
+        {
+          "h": 16,
+          "identity_coherence_sq_float": 0.000710295648,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        }
+      ]
+    },
+    {
+      "N": 384,
+      "source_phase_difference_hashes": {
+        "0:383": "51d81c99a8ee837ef2081c7853f41f1272d91ce79fa6f70a633935a77d55c37d",
+        "128:256": "aea5e1872fc0b04abb14f7a59a2ef8f9a9ea8655534822edc7413a18199d52ab"
+      },
+      "collision_energy_exact": "803/768",
+      "Fejer_Q_upper_exact": "742775/225792",
+      "gyro_fejer_excess_float": 0.015720039797,
+      "gyro_fejer_majorant_pass": true,
+      "harmonics": [
+        {
+          "h": 1,
+          "identity_coherence_sq_float": 0.000914246982,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        },
+        {
+          "h": 2,
+          "identity_coherence_sq_float": 0.007288382231,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        },
+        {
+          "h": 16,
+          "identity_coherence_sq_float": 0.000696925479,
+          "max_frame_difference_float": 0.0,
+          "three_frame_comparison_pass": true
+        }
+      ]
+    }
+  ],
+  "wrong_seed_control": {
+    "different_seed": "1/5 - alpha_384",
+    "last_192_coherence_sq_float": 1.0,
+    "greater_than_0_999": true
+  },
+  "central_sign_control": {
+    "SO3_closed_SU2_holonomy": "-1",
+    "rejected_by_spin_lift": true
+  },
+  "unverified": "original selected all-scale Fourier/Weyl cancellation and pi normality"
+}

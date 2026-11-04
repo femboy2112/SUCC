@@ -1,0 +1,17 @@
+# Codex Astra Ultra — Operation Archimedean Numerator, Oily Gamma Shadow
+
+Repository https://github.com/femboy2112/SUCC. Start from the draft PR opened for the `research/archimedean-numerator-oily-shear-2026-11-03` branch; this child has committed preregistration SHA `48777b17383d8c42c6f3adb9853923b2017bed23` above PR #485. Check live heads/AGENTS.md and preserve all intervening work; sibling #486 is read-only unless deliberately integrated with full provenance.
+
+MANDATORY READ: `research/2026-11-03/archimedean_oily_shear/PROOFS.md`, `SOURCE_MAP.md`, `CLAIM_LEDGER.md`, `FINITE_RECEIPT.json`, `NEXT.md`, `VALIDATION.md` and test/source oracles. Verify original four signed poles and `U0=0`, source time vs generating-function coefficient clock, exact real and p-adic types. Reproduce all finite receipts before new work.
+
+MISSION: prove the original selected **Archimedean centered numerator nonconcentration** on all genuine 4/3 split/inert windows at m_A≈log A; via SUCC #485 three-window gluing and #476 Fejér ladder this would establish π normal base16. Do not announce success without the all-A source estimate. A strategy-only response or another equivalent Weyl criterion is not enough.
+
+FRONT A: Let D_A=lcm source denominators in the ORIGINAL window, P_A selected split/inert product, S_A generic old primes. OMC-07 constructs an exact fake cloud preserving every selected clock and p-local recurrence but clustering at 1/5. Seek an original ALL-PLACE source/carry constraint excluding this fake; derive an explicit inequality on `|center(D_A*(U_(n+d)-U_n))|` for almost all actual pairs. Never mistake denominator growth for real separation.
+
+FRONT B: The Gamma shear σ_d(n)=T_n-T_(n+d)>0 is strictly completely monotone and has n³σ_d/d→1/32 at fixed d. Its lag-window sum telescopes to O(d/A²) and its selected/true Fourier lag discrepancy to O(|h|d/A²). Use OMC-11's oriented boundary gain/loss as a SIGNED source observable, preserving exact integer carries and canonical real/odd CRT. Any proposed all-A signed flux estimate must show independent source input, not assume π equidistribution.
+
+FRONT C: The original radial logarithmic null has 0<R_N<4/(16^N(8N+1)) for every finite N and COMPLETE limit 0. The source rational alpha_M shadow has exact future horizon within one step: q≈2log16M−log16m, without imported π digits. Investigate whether a truly additional Tauberian/adelic coupling carries a signed source inequality from the finite simulator to the completed orbit; do not claim exact zero of an unrelated Fourier sum.
+
+FRONT D: Challenge strong forms against a same-four-pole changed rational seed; the CRT ghost preserving every selected p-clock and p-local recurrence, the p-free cofactor lock, Gaussian 4k+1 / inert 4k+3 signed splitting and false inert long window, and old prime S_A. Prove or refute each transfer with exact rational witnesses and preregister genuinely unseen holdouts. No Galois-average=>selected embedding or numeric finite=>all-horizon inference.
+
+DELIVERABLE: strongest new source-specific signed/near-pair inequality with proof and quantified boundary, or a decisive exact obstruction with the surviving next lamp; reproducible oracle, actual native tests/provenance when available, committed additive draft PR, no merge. Explicitly label Paper-proved / Observed / UNVERIFIED / Refuted. Normality of π and RH are OPEN unless fully proved. Do not claim workflows completed before checking the exact head.
