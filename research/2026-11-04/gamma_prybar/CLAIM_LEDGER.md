@@ -5,7 +5,7 @@ Paper authority is local to this draft. Finite checks re-evaluate inputs and ide
 | ID | State and scope | Result and paid dependency |
 |---|---|---|
 | GPB-1 | Disclosed · reduction | Birth pairs cost O(1); full and interior near-pair targets are equivalent. Even a set of o(A sqrt(K/q)) indices is disposable in the little-o energy gate. Positivity and fixed-modulus PNT. |
-| GPB-2 | Disclosed · genuine real-circle upper estimate | At w≤A^(-2)log^(-4)A, maximal occupancy is O(A/log A), and ordered close pairs are O(A²/log² A). Chronological two-arc returns plus concentration in the most occupied bins. |
+| GPB-2 | Disclosed · genuine real-circle upper estimate | At w≤A^(-2)log^(-4)A, maximal occupancy is O(A/log A), and ordered close pairs are O(A²/log² A). After deleting O_δ(A/log A) visits, the A^(-2−δ)-close pair count improves to O_δ(A^(2−min(δ,1)/2)). This deletion costs O_δ(1) at the coarse energy. |
 | GPB-3 | Disclosed · sharpness over different seeds | At A^(-B)≤w≤A^(-2)log^(-4)A for fixed B>2, both orders are attained by a same-forcing rational seed on the source grid. The zero-seed lower count beyond the diagonal is unverified. |
 | GPB-4 | Disclosed · selected two-time arithmetic | For fixed η>0 only O_η(1) distinct lag diagonals in an epoch can have a difference with log denominator below (6−η)t. Uses CG-5, PNT, sparse torsion divisors and bounded intersections of lost-prime sets. Also a uniform O(A^(3/2)) row bound on lost log prime mass in each of three frames. |
 | GPB-5 | Disclosed · signed estimate | Bounded sum of maximal squared character means along the sparse superquadratic ladder, with a proved sharp retrieval cost. Includes the genuine source and changed-seed controls. |
@@ -20,3 +20,5 @@ Paper authority is local to this draft. Finite checks re-evaluate inputs and ide
 | GPB-D | Dark for the present probes | The actual seed's location relative to the exceptional high-energy orientations at the coarse real scale. Classification by the mixed denominator identifies it, but gives no inequality on it. |
 
 π normality, the original fixed-character gate, original J=o(K), and RH remain OPEN. No status for RH depends on this work.
+
+The later [#500 reconciliation](SOURCE_MAP.md) assigns the square-root pair-loss, five-shift count comparison and radial conductor/concentration results to their overlapping primary dossiers. Same-source rederivation supplies a check on the calculation, not multiple witnesses to mixing.

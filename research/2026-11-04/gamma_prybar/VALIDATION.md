@@ -48,3 +48,7 @@ Detached donor worktrees were exact Git checkouts. For each row, the command was
 | #498 | test_gamma_pigeonhole | 17 |
 
 The 115 donor tests have six raw logs under validation/. PR #499 added three Markdown files to #497; 26 additional tests passed in the isolated ZIP extraction. The archive SHA and test log are in SOURCE_MAP.md. Hosted runs on donor SHAs do not certify the integration SHA, and local runs confer no hosted status. No new Lean authority.
+
+Main's #485/#487/#488/#489 descendant tests were also exercised by their five named modules (odd_gamma_front, odd_gamma_symbolic, oily_shear, circle_path_electric, selected_current_front): 72 passed, [log](validation/main_ancestry.txt). At the newly appeared #500 SHA the restored primal tests and Europa research entrypoint passed, [log](validation/pr500.txt). The local archive and restored native runs are separately identified and share their underlying 26 tests.
+
+The native discovery run initially had the repository on the current interpreter's working-directory path but lacked the editable package needed by child script processes. The meta_choice_descent subprocess therefore raised ModuleNotFoundError. After installing the local checkout in editable mode with the already-installed test dependencies, the exact failed test passed. The discovery process continued; its raw final exit and explicit reruns are tracked on the PR instead of restarting the full matrix on each documentation change.

@@ -1,6 +1,6 @@
 # A finite large-sieve inequality across the quadratic crossover
 
-**Authority:** paper proof with elementary summation by parts. No Lean receipt, independent referee or priority claim. Source is the literal zero-seeded four-pole recurrence in the campaign contract. All estimates also hold after arbitrary real seed changes with the same forcing. Constants below are absolute. Let $e(x)=\exp(2\pi ix)$ and $c_A(t)=A^{-1}\sum_{A\le n<2A} e(tU_n)$ for integer $A$. 
+**Authority:** paper proof with elementary summation by parts. No Lean receipt, independent referee or priority claim. Source is the literal zero-seeded four-pole recurrence in the campaign contract. All estimates also hold after arbitrary real seed changes with the same forcing. Constants below are absolute. Let $e(x)=\exp(2\pi ix)$ and $c_A(t)=A^{-1}\sum_{A\le n<2A} e(tU_n)$ for integer $A$.
 
 **F1.** For all sufficiently large integer $A$, all integers $1\le |h|\le A^2$, all real $L\ge1$, let
 \[
