@@ -1,0 +1,15 @@
+# Claim ledger — source-selected oily-Gamma and near-pair research
+
+| ID | Claim | Verdict and scope | Missing discriminating probe |
+|---|---|---|---|
+| OMC-01 | Complete monotonicity of actual original Gamma lag shear, all real s,d>0, sharp fixed-d limit n³σ/d->1/32 | DISCLOSED paper proof from authenticated source integral, independent symbolic rational source checks | Re-derive from independent original BBP tail integral, not from fitted samples |
+| OMC-02 | Oily/Gamma square gap W and its signed lag decomposition | INHERITED proven source #474 plus exact difference; dependency, not independent confirmation | Test whether source-corrected signed phase inequality exists that excludes fake cofactor |
+| OMC-03 | Signed lag sum U vs completed π differs by at most 2π|h|d B(A) for every finite window | DISCLOSED source-specific paper proof; grows only O(logA/A) for d≤A/3,h≤logA | Prove either side small, not merely that the difference is small |
+| OMC-04 | Rational source cutoff α_M shadows π for two-sided explicitly bounded Gamma horizon q~2log16M-log16m; exact horizon within one step | DISCLOSED paper implication, exact finite interval holdouts | Expose an all-horizon condition not satisfied by the rational nonnormal cutoff |
+| OMC-05 | Finite radial null BBP shells R_N>0, complete integral 0, R_N=O(16^-N/N) | INHERITED original quadratic null decomposition, DISCLOSED new stated rational cap; verifies finite/global thesis for **linear** channel only | Show any justified transport to source-selected nonlinear Weyl, or mark it absent |
+| OMC-06 | Nonalias selected split/inert radical divides actual reduced lag denominator, exponent >0 on whole c=4/3 window | DISCLOSED source-specific paper proof + classical PNT-AP, finite exact pair/h checks | Prove actual centered numerator small-count, not merely p-divisibility |
+| OMC-07 | Full selected p-clock/recurrence-preserving CRT counterfeit clusters exponentially in ONE real log-mesh cell | REFUTES local-p-passport=>real-mixing; changed global source; explicit all-window construction, independent source initial condition not retained | Determine full global four-pole/zero-seed numerator constraints that exclude this counterfeit |
+| OMC-08 | Signed oriented boundary flux of actual U vs true π nearpairs and binary-2adic boundary noncontact | DISCLOSED exact signed indicator identity, no event-frequency bound | Bound signed boundary flux, retaining actual odd cofactor and carries |
+| OMC-09 | Original nearpair P_(A,m_A)=o(A² logm_A/m_A), m_A~logA, or selected all-prefix Weyl | UNVERIFIED / OPEN | Find genuine source-selected Archimedean numerator inequality, fresh holdouts and independent referee |
+
+**Independence:** sympy checks and alternative integer recurrences are numerical/implementation constraints within one shared mathematical lineage, not blind academic validation. Historical exact local2 result and original Gamma/Fejér route are shared provenance, not independent pi-normality witnesses. This document does not promote an unproved implication to an unconditional π/RH theorem.

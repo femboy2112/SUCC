@@ -1,0 +1,63 @@
+{
+  "files": {
+    "research/2026-11-03/archimedean_oily_shear/CLAIM_LEDGER.md": {
+      "bytes": 3096,
+      "sha256": "ec0b51e48a7dd290f9a2bbc4075c9ed0ca42feebb36ab4ceaa1e8faa6406f15c"
+    },
+    "research/2026-11-03/archimedean_oily_shear/CODEX_HANDOFF.md": {
+      "bytes": 3483,
+      "sha256": "9e369754b7b5fc85831eabc5ec5dc98efa6815b03acd5c926cbf01580c242870"
+    },
+    "research/2026-11-03/archimedean_oily_shear/FINITE_RECEIPT.json": {
+      "bytes": 14106,
+      "sha256": "fc6b41180099ab29d894b170d1ab380f995b6edf6f4aa60edb22cf4175df1e24"
+    },
+    "research/2026-11-03/archimedean_oily_shear/NEXT.md": {
+      "bytes": 3060,
+      "sha256": "6c8615562cf2e7bac18e3d8e2935797581f10d17c5ebe55b3ec1ef4c94ce355c"
+    },
+    "research/2026-11-03/archimedean_oily_shear/PROOFS.md": {
+      "bytes": 15622,
+      "sha256": "41d4c68d1db40b4bad7158ff03f60e7e2f77ecab91232f9f26e2f553a7105475"
+    },
+    "research/2026-11-03/archimedean_oily_shear/README.md": {
+      "bytes": 2260,
+      "sha256": "126568d5d7355ff352d157368894b8e0a877b168db3c20cf4eb58e08b326f4d6"
+    },
+    "research/2026-11-03/archimedean_oily_shear/SOURCE_MAP.md": {
+      "bytes": 3165,
+      "sha256": "d73d0cdf7e14558b97f481af71658949f3398ae1681d307cf0a44122bcef8e75"
+    },
+    "research/2026-11-03/archimedean_oily_shear/SYMBOLIC_RECEIPT.json": {
+      "bytes": 343,
+      "sha256": "de7eb502766b2ddbbe04785ef1fe54452f1371d44def27026423dc448134b4f5"
+    },
+    "research/2026-11-03/archimedean_oily_shear/TEST_LOG.txt": {
+      "bytes": 3725,
+      "sha256": "1e0c8736315bb563f2d1c8cd087b3fc35d96f44eb949e492fced56fcfbdacf0b"
+    },
+    "research/2026-11-03/archimedean_oily_shear/VALIDATION.md": {
+      "bytes": 4453,
+      "sha256": "20cfb594f3abcbe07186d17ee3855497d2fba9df069e374234df5b0ee10dd137"
+    },
+    "research/2026-11-03/archimedean_oily_shear/generate_receipt.py": {
+      "bytes": 5211,
+      "sha256": "c92423efcc04836695b64923982c1ba570015159dc1a24b639e503b349c34be2"
+    },
+    "research/2026-11-03/archimedean_oily_shear/oily_shear.py": {
+      "bytes": 17050,
+      "sha256": "1bb5ae076c6302453a3ec585ca696901968e4a256a99f48be7188d6d0c21cdf1"
+    },
+    "research/2026-11-03/archimedean_oily_shear/symbolic_oracle.py": {
+      "bytes": 1184,
+      "sha256": "712cfe27d8c98c736d4482d6d1c36e315d49569f1c050998f3bd0ab20d38388c"
+    },
+    "tests/test_oily_shear.py": {
+      "bytes": 14497,
+      "sha256": "1a73c6dfd27f014225bb893cc236c6d52f9fb1e5705f132d3a546070fc52c639"
+    }
+  },
+  "parent": "cdb01d73839f08cb10b46f51d42afecf44469ee2",
+  "predeclared_prereg_commit": "48777b17383d8c42c6f3adb9853923b2017bed23",
+  "status": "Staged exact bytes used for isolated tests; SHA256 over UTF-8 or JSON bytes; excludes self"
+}
