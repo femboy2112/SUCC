@@ -10,6 +10,7 @@ CASES = (
     ("reflection/referee_probe.py", "REFEREE_RECEIPT.json"),
     ("reflection/marked_transport.py", "MARKED_TRANSPORT_RECEIPT.json"),
     ("primal/prime_layers_probe.py", "PRIME_LAYERS_RECEIPT.json"),
+    ("radial/radial_probe.py", "RECEIPT.json"),
     ("energy/energy_probe.py", "FINITE.json"),
     ("boundary/probe.py", "RECEIPT.json"),
     ("weyl/probe_weyl.py", "WEYL_RECEIPT.json"),
