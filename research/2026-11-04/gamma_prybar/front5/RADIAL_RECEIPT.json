@@ -1,0 +1,25 @@
+{
+  "corrected_partial_at_303": "0.0909874506252713663087655864861",
+  "exact_lift_times": 303,
+  "finite_part": "0.0912445782579115029739031485668",
+  "simple_poles": [
+    {
+      "N": 77,
+      "checked": 102,
+      "finite_cancellations": []
+    },
+    {
+      "N": 163,
+      "checked": 200,
+      "finite_cancellations": [
+        67
+      ]
+    },
+    {
+      "N": 303,
+      "checked": 344,
+      "finite_cancellations": []
+    }
+  ],
+  "slots": 40
+}

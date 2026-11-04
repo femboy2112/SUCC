@@ -1,0 +1,35 @@
+[
+  {
+    "T": 28,
+    "all_after_3T_within_1_over_64": true,
+    "all_forcings_positive": false,
+    "designated": [
+      28,
+      56,
+      112
+    ],
+    "through": 115
+  },
+  {
+    "T": 56,
+    "all_after_3T_within_1_over_64": true,
+    "all_forcings_positive": true,
+    "designated": [
+      56,
+      112,
+      224
+    ],
+    "through": 227
+  },
+  {
+    "T": 112,
+    "all_after_3T_within_1_over_64": true,
+    "all_forcings_positive": true,
+    "designated": [
+      112,
+      224,
+      448
+    ],
+    "through": 451
+  }
+]

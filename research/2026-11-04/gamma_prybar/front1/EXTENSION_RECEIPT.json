@@ -1,0 +1,79 @@
+{
+  "pulse_check": {
+    "1": {
+      "nonzero_prefixes": 128,
+      "sha256": "b66212ac70736eb69025030892f80f1f63978823cb75bb208fa6c281260b2494"
+    },
+    "3": {
+      "nonzero_prefixes": 128,
+      "sha256": "a66de98de177c337d344957d9f38e7f5009f45491d6ab2889ce3d055fd89741b"
+    },
+    "5": {
+      "nonzero_prefixes": 128,
+      "sha256": "b66212ac70736eb69025030892f80f1f63978823cb75bb208fa6c281260b2494"
+    },
+    "7": {
+      "nonzero_prefixes": 128,
+      "sha256": "a66de98de177c337d344957d9f38e7f5009f45491d6ab2889ce3d055fd89741b"
+    }
+  },
+  "epochs": [
+    {
+      "A": 1536,
+      "band_size": 599,
+      "H_bits": 6312,
+      "excepted": [
+        97,
+        101,
+        103,
+        107,
+        109,
+        113,
+        127,
+        131,
+        137,
+        139,
+        149,
+        151,
+        157,
+        197
+      ],
+      "candidate_bits": 144,
+      "success": true,
+      "denominators_matched": 1536,
+      "offset_in_interval": 308,
+      "seed_sha256": "173104a1d29009c879c0d08558ef7f258f65b771d66ffc6a96180cf798cc5c64",
+      "floor_inverse_diameter": 201651215
+    },
+    {
+      "A": 2048,
+      "band_size": 770,
+      "H_bits": 8438,
+      "excepted": [
+        131,
+        137,
+        139,
+        149,
+        151,
+        157,
+        163,
+        167,
+        173,
+        179,
+        181,
+        197,
+        281,
+        283,
+        311,
+        331,
+        347
+      ],
+      "candidate_bits": 221,
+      "success": true,
+      "denominators_matched": 2048,
+      "offset_in_interval": 300,
+      "seed_sha256": "60d033eebf87ab31030ee7f1601aefcfb50ad62e7db87690367f20b9e77563c5",
+      "floor_inverse_diameter": 358353383
+    }
+  ]
+}
