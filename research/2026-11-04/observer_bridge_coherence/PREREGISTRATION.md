@@ -1,0 +1,16 @@
+# Preregistration: observer bridge coherence / Busy Beaver search debt
+
+Date 2026-11-04. Parent main SHA a673ec95dfac4ef6a61c60222be8b615fd08535d, independent of unmerged sibling drafts #491 and #492. This exact declaration precedes new held-out results. Same-model derivations are not blind independent corroboration.
+
+MISSION: test the user's "growing haystack" hypothesis as a logical/computational theorem. Preserve the line and circle as independently declared known group carriers, but force a would-be bridge to earn its map via source-labelled observations and proof contracts rather than an oracle. No edits to canonical observer, original BBP four-pole source, literal U0=0, formal/Lean, old proofs, main, workflows, or claim contracts.
+
+Predicted mathematical results / acceptance:
+(1) For a finite nonempty rational probe set Q, let M=lcm of its reduced denominators. Compare continuous circle-valued group homomorphisms b0(x)=[x], b1(x)=[(M+1)x]. They agree on every q in Q, differ at x=1/(2M) by exactly 1/2. Both pass all source-local group law tests; finite sampling does not select the global bridge.
+(2) For a fixed bounded-description machine p, hypothesis H_p="p never halts" survives all tests through t<T_p but is refuted by a finite step if T_p<infinity. No total computable bound in program length can cover the halting times of all machines that halt. Prove by reduction to the halting problem, without asserting that a finite simulation has measured Busy Beaver values.
+(3) Distinguish forall N exists bridge_N consistent through N (moving impostor) from exists bridge forall N, and true source/map nonidentifiability when probes never target a hidden source coordinate. Compactness applies only to declared closed fibers in a compact carrier; no computable selector follows without extra hypotheses.
+(4) Infinite-limit statistical claims such as pi base-16 normality are NOT falsified by a single long finite prefix: any finite base16 word extends to both a normal and a nonnormal sequence. Demonstrate using a normal-tail example (Champernowne) and periodic continuation; this is a proof-access boundary, not a refutation of pi normality.
+(5) Zero knowledge protocol can verify a declared finite NP witness under assumptions but cannot by itself certify arbitrary infinite source truths. No physical observer omniscience or quantum claim.
+
+New **predeclared exact finite holdouts**: rational probe sets (1/2,1/3,5/12), (7/20,11/28,13/45), (-7/16,0,19/50), and a source-trajectory rational probe block from original BBP indices n=1..12. For each run an independent modular congruence oracle and exact Fraction evaluation; enumerate all multiplier c<=2M+1 only when M<=10000. Also test hidden-tag and noncompact-switch controls for horizons 1,2,5,12,32; one finite bounded TM from field_limit_trichotomy for budgets 0,2,17,64,128 without asserting nonhalting.
+
+PASS: exact algebraic receipts, independent checks, honest quantifier classifications and hostile models; FAIL: promoting finite agreement to global truth, inferring false from search timeout, inferring pi-normality, claiming computed Busy Beaver, changing source or treating tool closure as omniscient. Deliver only add-only draft research PR; do not merge or release.
