@@ -1,0 +1,11 @@
+# Next verdict-changing probe
+
+**Target:** Source-selected branch-dissipation estimate on all dyadic epochs A: K_A=floor(log_16 log A), m_A=16^K_A, prove E_K(A)-1=o(K_A), where E_K is the ACTUAL original zero-seeded BBP phase cylinder collision energy. Then the already-established SUCC #476 Fejér-Ward theorem implies base16 π normality. This is STILL OPEN.
+
+1. Use original forcing U_n=16U_(n-1)+r(n), exact odd-conductor inverse branch j*(y), real integer carry and canonical Gaussian/real quadratic gluing. Derive an authentic update law on the 16-way *empirical cylinder currents*. Explicitly pay for source perturbations crossing cylinder boundaries with the original positive Gamma tail.
+2. Seek a source-specific upper bound on the total nonuniform branch-split squared mass, not the uniform inverse-branch **average**. In particular no automatic normality from the Perron operator annihilating low Fourier characters; the selected 1/5 periodic path falsifies that shortcut.
+3. Apply parent #485 split/inert prime passports only inside correct clean [A,ceil(4A/3)) windows; glue three such windows. Do not infer real spacing from exact p nonaliases or Galois-averaged Ramanujan factors. Parent #487 coherent CRT ghost remains a falsifier for p-local arguments.
+4. Explore a source-dependent electrical conductance/Dirichlet-to-Neumann law only after specifying its boundary data and showing that the actual original current flow minimizes a sourced energy. Uniform symmetric conductance trivially selects Haar and ignores U0. Check **hostile original forcing altered seed**, source-mutant cofactor, finite rational shadows.
+5. Possible category diagram: original arithmetic affine arrow groupoid -> solenoid-compatible histories (requires history lift) -> finite cylinder current functor -> excess-energy square decomposition -> Fejér/Ward. Demonstrate functoriality or construct a counterexample. Preserve all edge labels and source provenance.
+
+Passing a reconstructed path category, Feynman-like character identity, or electrical 1/15 alone is NOT success. Success requires the **original selected** source-derived o(K_A) estimate and all-prefix Weyl consequences, or a decisive refutation of a concrete attempted inequality.
