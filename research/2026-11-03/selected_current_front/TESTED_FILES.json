@@ -1,0 +1,26 @@
+{
+  "file_sha256_excluding_this_manifest_and_remote_prereg": {
+    "docs/PI_BRANCH_CURRENT_FRONTIER_2026-11-03.md": "d927f5965b8d6b6a461ef6d3d0ba28fd9488a931c17907647507abf643beafe1",
+    "research/2026-11-03/selected_current_front/CLAIM_LEDGER.md": "072e288e99ad595268f5451a4292c0cd83b9e96b6eafd2cb06a43702a3b31b16",
+    "research/2026-11-03/selected_current_front/CLAUDE_CONSOLIDATE_MEGAROUND.md": "98912e6a01b665efbb33f8a5d3c190b498fe7a869941b0a85a3a3d383a2b0081",
+    "research/2026-11-03/selected_current_front/FINITE_RECEIPT.json": "2f9c873473449e5f861616db8ec5e299ff1c557cc53993ed9c9146435cc46060",
+    "research/2026-11-03/selected_current_front/FRONTIER.md": "c327c6383d70e7375138971f3003d5b46cbe51dab8d20a3e8b3ffa52f17d196b",
+    "research/2026-11-03/selected_current_front/INTEGRATION_AUDIT.md": "6edd6ea4e435ef890a6ef18e190c98bcb9afb31bf67de811bb8cfed74b83f0ad",
+    "research/2026-11-03/selected_current_front/NEXT.md": "665fd0936de4f36b6fb265991bc6eb39f947ee0eb63de1438c6454910d9b1291",
+    "research/2026-11-03/selected_current_front/PROOFS.md": "656530b9eb9ff41bbee7238ea0f291618c2aa768da0db9b6130ac7cd4d911a8d",
+    "research/2026-11-03/selected_current_front/README.md": "5532a370afd4619abde6c25b2a11e57f956bb1dc7b247ac865573a30238eacd4",
+    "research/2026-11-03/selected_current_front/SOURCE_MAP.md": "a6870d504b5457ba4c9a107a8ff226e5e80eae4068c85566497960a0792ca144",
+    "research/2026-11-03/selected_current_front/TEST_LOG.txt": "cec6295abc691ab73902bfa9428f38eb01f48a4cd37cecf06e1aef4b4da6876f",
+    "research/2026-11-03/selected_current_front/VALIDATION.md": "2af438245f853c3dfdbffce776914645308657a5c6a4a34eb84b6c9a9f24a684",
+    "research/2026-11-03/selected_current_front/independent_oracle.py": "69bc7139e540f441ab6789c125ece74ed2c5b2289cdb39731bfa2cc51e690ebc",
+    "research/2026-11-03/selected_current_front/probe.py": "78c7eb5164207510969406acc73177ea21f70b464175cf222b7b2bde3a112cc2",
+    "research/2026-11-03/selected_current_front/selected_current.py": "55afbbedaa29e3e18080d1bb257149cf4093e3902d21327f84a57d2cd7cf8f9e",
+    "tests/test_selected_current_front.py": "61c8f17c9236e2f1e3376cdcb2257dbfee9526a1445194b24af77f8c40f05436"
+  },
+  "github_preregistration_commit": "d07f6d1487eb032de36935e66e7a81357aa71ebc",
+  "normality_proved": false,
+  "parent_head": "f47e3768631cd1628c1390d529811c911e0f6443",
+  "parent_pr": 488,
+  "source_repository": "femboy2112/SUCC",
+  "stage_test_claims": "15/15 new focused; 12/12 inherited #488; independent oracle; exact receipt replay"
+}
