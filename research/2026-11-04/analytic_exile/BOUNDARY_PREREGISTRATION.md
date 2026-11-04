@@ -1,0 +1,12 @@
+# Analytic boundary / Gamma(2) Tauberian addendum (before new tests)
+
+This continuation is preregistered AFTER the initial 15 exact tests and BEFORE testing the newly derived analytic-boundary instruments. The earlier prereg is commit be35e9935a01f714f466b9bed8f73c1f03e48dd6. Same-source / same-reasoner proof audit only, no blind independent claim.
+
+Exact targets:
+1. For a unit-modulus chronological character stream a_n=e(hU_(n+1)), define F_h(z)=sum_(n>=0)a_n z^n (|z|<1). Abel mean A_h(r)=(1-r)F_h(r). Since |a_n|<=1, import and explicitly identify the classical bounded-sequence Abel <=> Cesaro Tauberian theorem; derive the exact conditional analytic equivalence: pi base16 normal iff A_h(r)->0 for every fixed nonzero integer h. The result is a different **criterion**, not a new BBP cancellation proof.
+2. Let S_n=sum_(j<=n)a_j and c_(n+1)=S_n/(n+1). Prove exact algebra A_h(r)=sum_(n>=0)(n+1)(1-r)^2 r^n c_(n+1), with weights summing to 1 (negative binomial shape2). For r->1, (1-r)N_r tends to Gamma(shape2,rate1) with Laplace (1+s)^-2 and Elog(Gamma2)=psi(2)=1-gamma. Do not infer that sampled BBP characters are random.
+3. Ghost F_M(z)=z^M/(1-z) has first M coefficients zero, converges to zero on compact |z|<1 as M grows, but (1-z)F_M(z)->1 when z->1 at fixed M. Preserve a stronger ±1 phase sequence pair whose analytic difference is -2 z^M/(1-z).
+4. For the actual original BBP source, the completed-to-rational character coefficient difference is absolutely summable, so its generating-function correction is bounded up to |z|<=1 and its normalized Abel boundary residue vanishes. No counterexample to selected fixed-h Weyl decay can be localized only in this original Gamma tail.
+5. Test exact finite NB2 mass and tail with r in {1/2,3/4,7/8,31/32} and last in {0,1,3,8,17}, plus exact finite Abel-Cesaro identity on source-inspired rational and ±1 streams. Test boundary ghosts M in {1,3,8,32} at rational z in {1/2,7/8,31/32,127/128}. Synthetic controls are not original π claims.
+
+No original signed Weyl estimate or pi base16 normality claimed. Reject conflation of analytic interior convergence, a fixed finite counterexample, bounded Tauberian assumptions and the actual selected real source.
