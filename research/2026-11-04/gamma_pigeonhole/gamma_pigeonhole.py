@@ -108,7 +108,7 @@ def pair_exclusion_possible(L:int,M:int,q:int)->bool:
     """Necessary, never sufficient, for congruence-only near-pair exclusion."""
     if any(type(x) is not int for x in (L,M,q)) or q<=2 or L<1 or M<1 or L%M:
         raise ValueError("q>2 and M|L required")
-    return 2*(L//M)<q
+    return 2*(L//M)<=q
 
 
 def gamma_corrected_pin(n:int,K:int=4)->dict:

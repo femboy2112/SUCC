@@ -98,3 +98,13 @@ class GammaPigeonhole(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+
+
+class EndpointFirewall(unittest.TestCase):
+    def test_open_nearpair_arc_equality_can_have_no_candidate(self):
+        # At equality 2(L/M)/q=1, the open arc can omit both endpoints.
+        Q,M,q,a=8,4,4,2
+        self.assertTrue(pair_exclusion_possible(Q,M,q))
+        pts=[F(a+M*k,Q)%1 for k in range(Q//M)]
+        self.assertEqual(pts,[F(1,4),F(3,4)])
+        self.assertTrue(all(min(x,1-x)>=F(1,q) for x in pts))

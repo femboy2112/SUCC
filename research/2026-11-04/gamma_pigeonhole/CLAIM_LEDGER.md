@@ -7,7 +7,7 @@
 | GP-03 | CLASSICAL EXACT | For any L,M|L,a, every half-open real arc of length w has floor(Cw) or ceil(Cw) affine rational candidates, C=L/M | Counts candidates, not actual visits |
 | GP-04 | PAPER PROVED SOURCE + FINITE CERTIFICATE | For every eligible prime p>=41, Gamma-jet rational interval width W<1/C_p contains exactly authentic r(n) among pC_p-height/p-residue hypotheses | Analytic predictor is source-derived; identifies forcing, not orbit statistics |
 | GP-05 | PAPER PROVED / imported PNT-AP | Authentic state phase x_n=4/p+k_n/C_n with selected k from zero-seed integer register; source conductor exponential from prime clocks | Selected old-cofactor address statistics OPEN |
-| GP-06 | CLASSICAL NEGATIVE | If 2(L/M)/q>=1, every residue class contains potential near-zero gap; static congruences cannot exclude pairs | Dynamic source-selected carries might exclude them |
+| GP-06 | CLASSICAL NEGATIVE | If 2(L/M)/q>1, every residue class contains potential near-zero gap in the open arc; static congruences cannot exclude pairs | Dynamic source-selected carries might exclude them |
 | GP-07 | OPEN | Original J_(A,q_A)=o(K_A) or nearpair P_A=o(A²K_A/q_A) | No signed source/current saving obtained |
 | P-GHOST | REFUTED AS INFERENCE | Γ window + new-p passport + source conductor alone implies normality | #492 coherent seed preserves post-A newborn passports and clusters |
 | π normality | OPEN | Original zero-seeded BBP orbit | Signed Weyl/selected current |

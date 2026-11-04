@@ -163,15 +163,15 @@ I_q=\{x\pmod1:\|x\|<1/q\}.
 \]
 By GP-04's general lattice count (GP-4), **if**
 \[
-\boxed{\frac{2L}{Mq}\ge1}\tag{GP-12}
+\boxed{\frac{2L}{Mq}>1}\tag{GP-12}
 \]
-then EVERY possible numerator congruence class has at least one representative inside I_q. Such partial modular observations **cannot exclude even a single specific nearpair independently of its remaining real lift**. A necessary (NOT sufficient) condition for an exclusion certificate from congruences alone is
+then EVERY possible numerator congruence class has at least one representative strictly inside I_q. Such partial modular observations **cannot exclude even a single specific nearpair independently of its remaining real lift**. A necessary (NOT sufficient) condition for an exclusion certificate from congruences alone is
 \[
-\boxed{L/M<q/2.}\tag{GP-13}
+\boxed{L/M\le q/2.}\tag{GP-13}
 \]
 At SUCC's logarithmic mesh \(q_A=16^{K_A}/2\asymp\log A\), this requires observing all but an \(O(\log A)\)-sized multiplicative cofactor of the often exponentially large joint clock. A single newborn prime is very far from sufficient.
 
-This does NOT prove a lower bound on the **actual selected** pair count: potential candidates are not realized pairs. The full original numerator/carry history can be much more discriminating than a static congruence class.
+At equality 2L/(Mq)=1, the boundary matters: an OPEN arc can omit the two neighboring lattice points when they lie exactly at its endpoints (e.g. L=8, M=4, q=4, residue a=2, points 1/4 and 3/4). Thus the strict inequality in GP-12 is necessary; the half-open counting lemma GP-4 has a different endpoint convention.\n\nThis does NOT prove a lower bound on the **actual selected** pair count: potential candidates are not realized pairs. The full original numerator/carry history can be much more discriminating than a static congruence class.
 
 ## GP-07 — what remains OPEN
 

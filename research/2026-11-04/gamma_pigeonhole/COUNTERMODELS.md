@@ -8,7 +8,7 @@
 
 **Control 4 — source-native wrong-seed.** Fix A and the exact source conductor Q_A. The coherent rational seed from #492 has denominator dividing Q_A and follows the *same* r(n). For any newly born p=8n−7 prime at A<n<2A, p∤Q_A; adding 16^n s_A changes the state but does NOT change pU_n (modp). The source-native coherent epoch may cluster, so new-prime fingerprints plus Γ forcing do not constrain selected orbit dispersion.
 
-**Control 5 — macroscopic nearpair no-exclusion.** At q>2, if the unresolved cofactor L/M is at least q/2, every possible congruence class has a candidate in the nearzero arc of width 2/q. Thus no congruence-only sieve can *exclude* that pair. The converse is false: L/M<q/2 enables possible exclusion but does not guarantee it.
+**Control 5 — macroscopic nearpair no-exclusion.** At q>2, if the unresolved cofactor L/M is greater than q/2, every possible congruence class has a candidate in the open nearzero arc of width 2/q. Thus no congruence-only sieve can *exclude* that pair. The converse is false: L/M<q/2 enables possible exclusion but does not guarantee it.
 
 **Control 6 — Γ value versus Γ defect.** E1(p) contains Euler's constant γ, but the local δ(p)=E1(p)−E1(p+1) cancels γ. The theorem uses the normalized field's **successor cocycle**, not an unproved number-theoretic property of Euler's constant.
 
