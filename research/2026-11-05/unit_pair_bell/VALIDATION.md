@@ -39,3 +39,5 @@ python scripts/ordinal_succ_report_probe.py
 Run the expensive full \`test_*.py\` suite only once when the research integration gate is stable.
 
 **Original fixed-h Weyl, critical signed-maximal rate, π normality and RH remain OPEN.**
+
+**Post-preregistration addition:** Source-time radial Bell-return UP-04b was additionally checked in a separate exact \`Fraction\` calculation through n=299, including \`r_rad(n)<0\` and strictly decreasing \`d_n^{(r)}=Z_n/16^n\` for all n≥2 in that range. Exact first bright probability \`1/2822401\`. These finite observations confirm the expected finite behavior, while the all-time theorem uses the inherited analytic proof of source injection signs and zero total period. The committed test source now contains **15** test methods including \`test_15_exact_radial_bell_return\`. **The exact committed Python test file was not executed in this container**; do not report its entire 15-method suite as locally passing. The previously reported independent 14-method suite remains separately verified.
