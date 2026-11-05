@@ -181,5 +181,23 @@ class PairedUnitBell(unittest.TestCase):
             self.assertEqual(negativity(a,b),Q(1,2))
             self.assertEqual(bright_probability(a,b),0)
 
+    def test_15_exact_radial_bell_return(self):
+        z=Q(0);last=None
+        for n in range(1,181):
+            radial_r=forcing(n,RADIAL)
+            z=16*z+radial_r
+            dn=z/Q(16)**n
+            self.assertGreater(dn,0)
+            if n==1:
+                self.assertEqual(radial_r,Q(2,105))
+                self.assertEqual(dn,Q(1,840))
+                self.assertEqual(dn*dn/(4+dn*dn),Q(1,2822401))
+            else:
+                self.assertLess(radial_r,0)
+                self.assertLess(dn,last)
+                self.assertLess(dn*dn/(4+dn*dn),
+                                last*last/(4+last*last))
+            last=dn
+
 if __name__=="__main__":
     unittest.main()
