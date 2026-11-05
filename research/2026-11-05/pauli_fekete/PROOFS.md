@@ -129,6 +129,48 @@ For the A selected times \(n=A,\ldots,2A-1\), all wrong-seed phases lie in a cir
 \]
 The wrong seed is not excluded merely for violating a source-contract word: it VIOLATES a precise global anti-concentration determinant condition by an amount growing with log A. The forcing (and radial source) is the same; the initial seed differs. This is a genuinely discriminating prospective source-level theorem, but PF7 remains unproved for the original zero seed.
 
+## PF-06: the exact multiscale exclusion/current identity
+
+This identifies **precisely** how SUCC's pair-count technology could bear on the new Fekete sufficient condition, without assuming any distribution theorem.
+
+For arbitrary N distinct phases let \(\delta_{ij}=\|x_i-x_j\|_{\mathbb R/\mathbb Z}\in(0,1/2]\), and define the normalized **ordered off-diagonal** close-pair count
+\[
+C_N(t)=\frac1{N^2}\#\{(i,j):i\ne j,\ \delta_{ij}\le t\},
+\qquad 0\le t\le\tfrac12.
+\]
+Because \(d_{ij}=|z_i-z_j|=2\sin(\pi\delta_{ij})\) and
+\[
+\log[2\sin(\pi\delta)]=\log2-\int_\delta^{1/2}\pi\cot(\pi t)\,dt,
+\]
+interchanging a FINITE sum and the nonnegative integral (all phases distinct) yields
+\[
+\boxed{\mathcal E_N=
+(1-\tfrac1N)\log2-\int_0^{1/2}\pi\cot(\pi t)\,C_N(t)\,dt.}\tag{PF12}
+\]
+Now use the elementary exact identity
+\[
+\int_0^{1/2}\pi\cot(\pi t)\,2t\,dt=\log2.
+\]
+It follows that
+\[
+\boxed{
+\mathcal E_N=
+-\int_0^{1/2}\pi\cot(\pi t)
+\Big[C_N(t)-2(1-\tfrac1N)t\Big]dt.
+}\tag{PF13}
+\]
+The weight is positive, behaves like \(1/t\) near zero, and vanishes at t=1/2. This is an **exact multiscale excess-collision budget** relative to a finite-mass Haar reference \(2(1-1/N)t\). If phases repeat, both the full logarithmic energy and the improper collision integral diverge in the appropriate direction.
+
+Thus a SUCC source-derived **UPPER bound on the weighted positive excess of \(C_A(t)-2(1-1/A)t\) by o(1)** would immediately yield \(\mathcal E_A\ge-o(1)\), and therefore original Weyl equidistribution by PF6. This is a rigorous alternative sufficient obligation stated entirely in terms of pair occupancy across ALL scales. A small-scale collision estimate alone does NOT suffice.
+
+**Half-circle mutant exposes the scale issue exactly.** The limiting empirical measure \(2\mathbf1_{[0,1/2]}(x)\,dx\) has close-pair distribution
+\[
+C_{\rm half}(t)=4t-4t^2,\quad 0\le t\le1/2,
+\]
+whereas Haar has \(C_{\rm Haar}(t)=2t\). Their difference \(2t(1-2t)>0\) for ALL interior scales, producing the negative energy PF10. Every finite half-grid nevertheless has separation \(1/(2N)\): hard-core separation **does not pay the mesoscopic/macroscopic collision excess**.
+
+**Critical research boundary.** PF12–PF13 are classical layer-cake rewritings of the determinant energy. They move the source proof obligation from an Archimedean determinant lower bound to a global signed pair-count inequality. They do NOT prove either inequality for the selected original π orbit. Existing #501 near-collision saving at microscopic widths is valuable input, but it does not control the entire positive weighted excess. No source- or π-specific generalization of Haar has been assumed.
+
 ## PF-05: source arithmetic and the missing bridge
 
 At every n the actual original zero-seeded U_n is rational, and the phase z_n=e(U_n) is a root of unity. On a finite epoch one can clear denominators with a common LCM L and regard each z_n as a power of a primitive Lth root. However a Galois norm of \(\Delta_N\) averages ALL cyclotomic embeddings; a lower bound on that integer norm does NOT bound the original selected real/complex embedding unless the other conjugates are controlled. This is the same **source-selected Archimedean orientation problem** exposed by #505's cofactor/carry mutants. A crude lower bound from minimum distinct Lth-root spacing of order 1/L only gives \(\mathcal E_N\gtrsim-\log L\), hopeless when L grows exponentially.
