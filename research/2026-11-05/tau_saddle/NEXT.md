@@ -26,3 +26,7 @@ Measure original signed maximal-subinterval correlation at the prescribed critic
 Use small exact tests and fresh read-only holdouts first, not repeated 11k+ CI. Preserve literal source and claim ledger. A new theorem must explain why the actual angular/carry source excludes hostile controls. If the new operator only repackages the original Weyl character, classify it as an equivalence, not a cancellation theorem.
 
 **Status:** improved scalar observer mechanics and sharp interior saddle disclosed; π normality and selected Weyl remain OPEN.
+
+## Refined angular current lamp
+
+[ANGULAR_RESPONSE.md](ANGULAR_RESPONSE.md) now proves a source-only **positive** mixed angular/radial observer current at the exact scalar radial cancellation point. Investigate whether there exists an exact *source-authenticated* time-indexed transport from its beta-weighted Mellin observations to the original equal-time angular/radial/carry Weyl product, with a quantitative operator bound and every sharp interval endpoint paid. Reject any transport whose application to the coherent wrong seed would falsely imply the selected saving; beta source moments alone are seed-blind. The candidate must use a seed-distinguishing arithmetic carry constraint or fail this gate.
