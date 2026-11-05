@@ -1,0 +1,63 @@
+{
+  "source": "femboy2112/SUCC original four signed BBP recurrence with U_0=0",
+  "pin_parent": "16b0809b1f1426e77dad52381c3ac3fbeb187e3f",
+  "original_taps": [
+    "4",
+    "0",
+    "0",
+    "-2",
+    "-1",
+    "-1",
+    "0",
+    "0"
+  ],
+  "radial_taps": [
+    "2",
+    "-2",
+    "-1",
+    "-2",
+    "-1/2",
+    "-1/2",
+    "1/4",
+    "0"
+  ],
+  "exact": {
+    "r_original_n1": "47/15",
+    "d_original_upper": "427/2160 < 1/5",
+    "r_radial_n1": "2/105",
+    "d_radial_n1": "1/840",
+    "bright_radial_n1": "1/2822401",
+    "cohomology_residue_rows": [
+      [
+        "1/2",
+        "1/4"
+      ],
+      [
+        "0",
+        "-1/4"
+      ]
+    ],
+    "cohomology_residue_determinant": "-1/8",
+    "real_pair_identity": "p_bright + negativity = 1/2",
+    "dark_bright": "epsilon(a|00>-b|11>)=a-b=U_n"
+  },
+  "observed": {
+    "local_independent_unittest_methods_passed": 14,
+    "local_execution": "0.029 seconds, 0 failures/errors, separate reduced independent script",
+    "source_exact_checked_through_n": 128,
+    "radial_discrete_exact_checked_through_n": 299,
+    "mixed_joint_bright_at_original_n64_approx": 0.009546275815707654,
+    "negativity_at_original_n64_approx": 0.49045372418429234,
+    "bell_analytic_peak_at_tau_approx": 0.11538054931801395
+  },
+  "unverified": [
+    "Exact committed root test file execution on repo checkout",
+    "Native full SUCC suite exact child",
+    "Hosted exact child CI",
+    "Lean new theorem formalization",
+    "Physical entanglement of BBP source",
+    "Base-16 normality of pi",
+    "External scholarly novelty"
+  ],
+  "notes": "Independent local exact scripts are not identical verified source bytes of committed test suite. The all-horizon theorem is paper proof, not finite inference. Physical Bell model is a declared encoding."
+}
