@@ -142,5 +142,33 @@ class PointedCocategoryTransportTests(unittest.TestCase):
             self.assertEqual(link, phase(exact_forcing(n+1)))
 
 
+    def test_comoving_frame_flattens_states_and_holds_source_in_transition(self):
+        u = orbit(10)
+        theta = [Q(0)]
+        for n in range(1, 11):
+            theta.append(theta[-1]-exact_forcing(n)/16**n)
+        for n in range(11):
+            self.assertEqual(u[n]+16**n*theta[n], 0)
+            self.assertEqual(theta[n], -u[n]/16**n)
+            if n:
+                self.assertEqual(theta[n]-theta[n-1],
+                                 -exact_forcing(n)/16**n)
+
+    def test_finite_counterseed_tail_and_rigorous_decay_envelope(self):
+        last = 15
+        u = orbit(last)
+        finite_counterseed = -sum((exact_forcing(j)/16**j
+                                   for j in range(1, last+1)), Q(0))
+        for n in range(last):
+            residual = u[n]+16**n*finite_counterseed
+            exact_tail = -sum((exact_forcing(n+k)/16**k
+                               for k in range(1, last-n+1)), Q(0))
+            self.assertEqual(residual, exact_tail)
+            self.assertLess(residual, 0)
+            self.assertLess(-residual, Q(8, 15*(n+1)**2))
+        for j in range(1, 50):
+            self.assertLessEqual(exact_forcing(j), Q(8, j*j))
+
+
 if __name__ == "__main__":
     unittest.main()
