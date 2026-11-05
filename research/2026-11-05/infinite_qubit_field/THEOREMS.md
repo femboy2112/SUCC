@@ -44,6 +44,18 @@ Moreover, for any fixed \(m<N\), the reduced GHZ_N state on the first m sites is
 \]
 independent of \(\theta\). Every fixed local observable has the same \(N\to\infty\) expectation as the **separable mixture of the two infinite product states** \(|0^\infty\rangle\) and \(|1^\infty\rangle\). Since the local observables are norm dense in the quasilocal algebra, the limiting algebraic state loses the phase on the ENTIRE quasilocal algebra. This is a precise *local-access* obstruction to interpreting "infinite GHZ wavefunction" as a retained operational global coherence. It is NOT a no-go for all genuinely entangled infinite spin systems or for non-quasilocal global observables in different representations.
 
+## IQ-01b: a PURE Bell pair cannot remain unchanged while joining genuine larger entanglement
+
+**Sharp compatibility/monogamy lemma.** Let \(\rho_{ABC}\ge0\) be any normalized state on finite-dimensional tensor factors A,B,C. If its AB restriction is PURE, \(\rho_{AB}=|\psi\rangle\langle\psi|\), then necessarily
+\[
+\boxed{\rho_{ABC}=|\psi\rangle\langle\psi|_{AB}\otimes\sigma_C.} \tag{IQ1b}
+\]
+**Proof:** Let \(P=|\psi\rangle\langle\psi|\) on AB. Since \(\operatorname{Tr}_{AB}[(I-P)\rho_{AB}]=0\) and \(\rho_{ABC}\) is positive, \((I-P)\otimes I_C\) has zero expectation; positivity forces \(\rho_{ABC}\) to have support only on the rank-one AB subspace \(P\otimes H_C\). Thus the state factors as claimed. The same argument extends to arbitrary remaining finite or quasilocal environment using restrictions.
+
+In particular, the **exact pure parent Bell pair** of SUCC #511 cannot be an unchanged two-site reduced density matrix of a connected graph state genuinely involving new sites. One MUST either (a) allow the original two-site marginal to become mixed, (b) retain the Bell pair as a decoupled factor, or (c) change the meaning of inclusion/observation and declare that new map explicitly. For example, finite \(|C_2\rangle\) is a pure Bell-equivalent state with two-site purity 1, whereas the actual first-two-site restriction of the semi-infinite cluster is mixed, with purity 1/2, already witnessed by \(\operatorname{Tr}_3|C_3\rangle\langle C_3|\). This is not a failure of global coherence: it is precisely how *multipartite* entanglement redistributes local information.
+
+This no-go directly constrains the user's idea that all finite entangled forms should remain simultaneously realized. **The correct invariant is compatibility of the finite marginal states and their jointly supported observables, not preservation of every standalone pure finite-state wavefunction.**
+
 ## IQ-02: coherent infinite reconstruction via a quasilocal cluster automorphism
 
 For every finite \(N\ge2\), define the N-qubit path graph state
