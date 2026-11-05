@@ -4,6 +4,18 @@
 
 The user's concrete question is whether source-conditioned/categorical **randomized arrows** can transport SUCC's exactly neutral and tightly concentrated Haar-seed Fekete energy into the authenticated **zero seed**. The answer is a new-to-SUCC *exact cut/deformation theorem*, a SHARP \(A^{2/3}\) source-independent mean-neutrality boundary, and a Gaussian randomized-arrow digit-block falsifier. This narrows the source-selected proof obligation, but does not pay it.
 
+## CM-00: randomized arrows do not create structure from a true zero object by themselves
+
+Define \(\mathbf{FinStoch}_*\) as follows: an object is a finite set X with a chosen basepoint \(x_0\). A morphism \((X,x_0)\to(Y,y_0)\) is a row-stochastic matrix \(K(y|x)\) with entries in \([0,1]\) such that the entire row at the basepoint is the Dirac distribution \(\delta_{y_0}\). Composition is ordinary stochastic matrix multiplication; the basepoint condition is preserved. (This is a **declared** subcategory of ordinary finite stochastic kernels, not a claim about every Markov category.)
+
+The pointed singleton \(*\) is BOTH initial and terminal: from \(*\) into Y there is exactly one permitted stochastic arrow, the Dirac row at \(y_0\), and from any X into \(*\) the only row-stochastic matrix is the all-ones column. Hence \(*\) is an actual zero object in this category. Its endomorphism is uniquely the identity. It is also the tensor unit for the usual product-of-systems monoidal structure.
+
+**Source-creation no-go.** A composable sequence of pointed stochastic arrows \(K_n:X\to X\) satisfies \(K_n(x_0)=\delta_{x_0}\) at every step. Therefore a process initialized at the pure basepoint \(\delta_{x_0}\) stays there for all times: **randomized arrows preserving the zero object cannot spontaneously produce a nonzero state from pure zero.**
+
+The repair is explicit and source-labelled. Supply a second pointed SOURCE object S with non-basepoint \(s_1\). A pointed stochastic transition \(T:X\times S\to X\) must send the overall basepoint \((x_0,s_0)\) to \(x_0\), but it MAY map \((x_0,s_1)\) to a nontrivial distribution. For example \(X=S=\{0,1\}\) with basepoint 0, choose \(T(\cdot|0,0)=\delta_0\), \(T(\cdot|0,1)=(1/2,1/2)\), and \(T(\cdot|1,s)=\delta_1\). This preserves the categorical zero and still allows nontrivial branching when a source has been actualized.
+
+**Connection to authentic SUCC:** the bare scalar \(U_0=0\) is a zero STATE, not itself the category's zero object. The original forcing \(r_o(n)\) is source input, so the affine arrow \(U_{n+1}=16U_n+r_o(n+1)\) is not required to preserve the basepoint. Similarly the unit-pair \(a=b=1\) is a NONZERO object of the kernel of subtraction, not the zero object. This distinguishes (1) categorical zero, (2) observed relational zero, (3) source injection, and (4) conditional randomized realization. It does not give a physical vacuum theory or a source-selected Weyl bound.
+
 ## CM-01: an exact Clausen/Bloch–Wigner boundary primitive for the authentic source
 
 Let \(e(x)=e^{2\pi ix}\), and let \(g(t)=\log|1-e(t)|^2=2\log(2|\sin\pi t|)\). This function is 1-periodic, integrable, with \(\int_0^1g(t)dt=0\). Define its continuous periodic primitive
