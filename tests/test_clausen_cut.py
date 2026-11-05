@@ -159,4 +159,20 @@ class ClausenCut(unittest.TestCase):
                 child+=(primitive(beta+Qchild)-primitive(beta))/asmp(Qchild)/16
             self.assertLess(abs(parent-child),mp.mpf('1e-38'))
 
+    def test_13_pointed_stochastic_zero_object_requires_source(self):
+        # A basepoint-preserving stochastic arrow is absorbing at basepoint.
+        K=((Q(1),Q(0)),(Q(1,3),Q(2,3)))
+        state=(Q(1),Q(0))
+        for _ in range(17):
+            state=tuple(sum(state[i]*K[i][j] for i in range(2)) for j in range(2))
+            self.assertEqual(state,(Q(1),Q(0)))
+        # A separate non-basepoint source changes what is allowed.
+        def source_arrow(x,s):
+            if x==0 and s==0:return (Q(1),Q(0))
+            if x==0 and s==1:return (Q(1,2),Q(1,2))
+            return (Q(0),Q(1))
+        self.assertEqual(source_arrow(0,0),(Q(1),Q(0)))
+        self.assertEqual(source_arrow(0,1),(Q(1,2),Q(1,2)))
+        self.assertEqual(sum(source_arrow(0,1)),1)
+
 if __name__=='__main__':unittest.main()
