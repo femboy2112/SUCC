@@ -181,6 +181,51 @@ Indeed every indexed future phase \(e(U_n(s))\), n>=A, itself has that period in
 \]
 In particular the exact mean0 and variance CZ8/CZ10 hold **unchanged** even after arbitrarily many BUT FINITELY MANY initial zero digits have been selected, once observation time A is later than K.
 
+## CZ-05b — the two-scale boundary: full ensemble transparency vs exact selected reconstruction
+
+The seed-cylinder theorem is stronger than equal future marginals: it identifies the **entire joint law** of every finite source-time window beginning after the finite zero-prefix has expired.
+
+Fix integer \(A\ge1\) and let \(X_A(s)=(U_A(s)\bmod1,\ldots,U_{2A-1}(s)\bmod1)\). For all \(n\ge A\),
+\[
+U_n(s)\bmod1=(u_n+16^{n-A}t)\bmod1,\qquad t=16^As\bmod1.
+\]
+Under \(\mu_K=\mathrm{Uniform}[0,16^{-K})\), if K<=A, the variable \(t\) is **EXACTLY Haar uniform** on the circle, because the interval winds \(16^{A-K}\) full periods. It is also Haar under a full-uniform seed s. Consequently, for EVERY bounded measurable function F on the A-dimensional torus,
+\[
+\boxed{
+\mathbb E_{\mu_K}F(X_A(s))
+=\mathbb E_{s\sim\mathrm{Haar}}F(X_A(s)),
+\quad K\le A.}\tag{CZ16a}
+\]
+The whole future epoch's JOINT distribution, not merely its marginals or Fekete energy, is unchanged by any finite number of selected leading zero digits K that is no greater than its first observation time A. This is an exact strong "virtual baseline support" statement under the declared seed ensemble. It does **not** imply the individual \(U_n(s)\) are mutually independent; their graph law retains source resonance CZ14.
+
+At the other end, an approximation to the actual pointed zero seed becomes **uniformly** accurate on the epoch once K exceeds its LAST observation time. For every s in C_K and \(A\le n<2A\),
+\[
+|U_n(s)-u_n|=16^n s\le16^{2A-1-K}
+\]
+(with ordinary unwrapped representatives; the comparison is modulo1 after applying the exponential). Therefore, for any integer harmonic H and ANY consecutive sharp subinterval \(I\subseteq[A,2A)\),
+\[
+\boxed{
+\frac1A\left|\sum_{n\in I}
+[e(HU_n(s))-e(Hu_n)]\right|
+\le2\pi|H|\,16^{2A-1-K}.}\tag{CZ16b}
+\]
+This is a source-independent, exact Lipschitz transport bound; no distribution hypothesis.
+
+For the authentic #501/#503 high-depth schedule \(H_A(h)\le A^2\log A\) for fixed nonzero h, choose
+\[
+K_A=2A+\lceil 3\log_{16}A\rceil.
+\]
+Then CZ16b is \(O(\log A/A)=o(1/\log A)\) uniformly in the selected cylinder and in ALL sharp subintervals. Thus the **selected critical Weyl statistic** is reproduced at the needed precision by a cylinder with roughly 2A **plus logarithmically many** zero hexadecimal digits.
+
+The two exact regimes are:
+
+1. \(K\le A\): the entire epoch is statistically identical to the full symmetric Haar seed ensemble, in every bounded measurable finite-time observation.
+2. \(K\ge2A+O(\log A)\): the original zero-seeded critical signed Weyl statistic is uniformly reconstructible, with error negligible at the #501 sufficient scale.
+
+The intermediate \(A<K<2A+O(\log A)\) is an **unresolved boundary/selection layer**; the exact statements above alone place NO nontrivial signed constraint across it. The unforced seed-zero countermodel shows the missing bridge cannot be universal. An original source-specific inequality must pay both this selection-resolution information and its true carry arithmetic.
+
+This is a rigorous form of the "Haar at low resolution / exact carrier at high resolution" distinction. It is not a physical plate separation or a proof that increasing K breaks quantum symmetry spontaneously.
+
 ## CZ-06 — the zero-point pressure / limit-exchange obstruction is decisive
 
 \(\mu_K\) tends weakly to \(\delta_0\), the truly **pointed zero seed**; its relative information cost is
