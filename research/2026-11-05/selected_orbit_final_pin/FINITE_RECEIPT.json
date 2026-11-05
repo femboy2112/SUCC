@@ -1,0 +1,53 @@
+{
+  "status": "FINITE_ONLY_NO_ASYMPTOTIC_SOURCE_SELECTION",
+  "primary_parent": "749931f0f357c60ef4e21879d96b0306999f428f",
+  "evidence": [
+    {
+      "file": "front_alpha/FINITE_RECEIPT.json",
+      "sha256": "c099927c2c364f44b89f43fea39c8d2665dc46e9c530b3b79cc38ad0195f820a",
+      "bytes": 217840
+    },
+    {
+      "file": "front_delta/FINITE_RECEIPT.json",
+      "sha256": "102325f0a70ae561c75743be720fbe7f219a33e3264d01877ec5bca4e6d27d16",
+      "bytes": 249709
+    },
+    {
+      "file": "front_referee/FINITE_RECEIPT.json",
+      "sha256": "aa8fa706efce4eaeabb9448b3d4a7f85609246c737503a34b46b75fe6f7a11f3",
+      "bytes": 1795
+    },
+    {
+      "file": "CHARGE_RECEIPT.json",
+      "sha256": "888a88bb085776fb25e82fe29b61baba2ee60d2e4a96547a71cce08597cedf8f",
+      "bytes": 7360
+    }
+  ],
+  "focused_tests": {
+    "alpha": 6,
+    "delta": 8,
+    "referee": 9
+  },
+  "charge_identities": 24,
+  "alpha_epochs": [
+    125,
+    257,
+    521
+  ],
+  "alpha_depths": [
+    1,
+    2,
+    3
+  ],
+  "larger_epoch_scope": "521 exceeds primary #518 epoch384; not a claim to exceed all historical SUCC finite computations",
+  "delta_epochs": [
+    17,
+    29,
+    53,
+    89
+  ],
+  "delta_rows": 48,
+  "delta_rational_intervals": 816,
+  "delta_cross_version_replay": "mpmath1.2.1 and1.4.1 byte-identical",
+  "native_and_hosted_status": "actual exact-head results recorded externally by validate.py and in draft PR; no inherited green claim"
+}
