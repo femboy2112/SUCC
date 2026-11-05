@@ -93,4 +93,3 @@ def outward_decimal(x: F, places: int = 9, upper: bool = False) -> str:
     sign = "-" if v < 0 else ""
     v = abs(v)
     return f"{sign}{v//scale}.{v%scale:0{places}d}"
-

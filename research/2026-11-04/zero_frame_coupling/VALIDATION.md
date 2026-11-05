@@ -67,6 +67,16 @@ The complete native command is recorded above and need not be repeated after
 every mathematical prose edit. Research front tests live outside native
 discovery and are covered by the focused receipt.
 
+The final formatting pass removed one trailing blank line from
+`certified_phase.py`. Its parsed Python AST is identical to the version used
+in the native run. The receipt's helper hash was refreshed, then all 12 native
+instrument tests and the complete deterministic finite receipt were replayed
+successfully. Raw observations and their hashes did not change. See
+[FINAL_FOCUSED.log](validation/FINAL_FOCUSED.log) and
+[FINAL_AUDIT.json](validation/FINAL_AUDIT.json). All 1,512 native package/test
+inputs still match the completed suite. No full-suite result is claimed for
+a later commit merely by inheritance.
+
 ## Hosted validation
 
 Hosted workflows are associated with exact commit SHAs. At the time this
