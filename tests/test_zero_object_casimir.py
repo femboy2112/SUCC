@@ -101,4 +101,20 @@ class SourcePressure(unittest.TestCase):
                 if K<=A:
                     self.assertEqual(16**(A-K)%1,0)
 
+    def test_12_high_resolution_zero_cylinder_recovers_selected_phase(self):
+        # Post-prereg theorem test: the future source phases are uniformly close
+        # to the EXACT zero seed once K exceeds the last epoch time.
+        for A in (3,9,17):
+            U=mod.original_states(2*A-1)
+            K=2*A+math.ceil(3*math.log(A,16))
+            H=16**math.floor(math.log(A*A*math.log(A),16))
+            worst=2*math.pi*H*16**(2*A-1-K)
+            self.assertLess(worst*math.log(A),.1)
+            for s in (F(),F(1,2*16**K),F(15,16**(K+1))):
+                for n in range(A,2*A):
+                    self.assertLessEqual(16**n*s,F(1,16**(K-2*A+1)))
+                    actual=char(H*(U[n]+16**n*s))
+                    selected=char(H*U[n])
+                    self.assertLessEqual(abs(actual-selected),worst+1e-11)
+
 if __name__=='__main__': unittest.main()
