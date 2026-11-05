@@ -4,6 +4,20 @@
 
 Notation: \(e(t)=\exp(2\pi i t)\); \(X,Y,Z\) are Pauli matrices; \(CZ=\operatorname{diag}(1,1,1,-1)\); \(|+\rangle=(|0\rangle+|1\rangle)/\sqrt2\). Here **q-bit means a declared two-level Hilbert factor**, not an a priori actual quantum substrate of mathematical truth.
 
+## IQ-00: the global state is the inverse limit of compatible finite observations
+
+For the unital inclusions \(\iota_N:\mathcal A_N\hookrightarrow\mathcal A_{N+1}\) with \(\iota_N(O)=O\otimes I\), let \(\mathrm{State}(\mathcal A_N)\) denote all positive normalized linear functionals on the finite matrix algebra, or equivalently finite density matrices. Restriction is dual to inclusion. Then there is a natural bijection
+\[
+\boxed{
+\mathrm{State}\left(\overline{\varinjlim_N\mathcal A_N}^{\|\cdot\|}\right)
+\ \cong\ 
+\varprojlim_N\mathrm{State}(\mathcal A_N).
+} \tag{IQ0}
+\]
+**Proof:** any infinite state restricts to a normalized positive compatible family. Conversely suppose \(\omega_{N+1}(O\otimes I)=\omega_N(O)\) for all O. Define a functional on the algebraic union by \(\omega([O]_N)=\omega_N(O)\); compatibility makes it well-defined. It is positive, normalized, and \(|\omega(O)|\le\|O\|\), so it extends uniquely by continuity to the norm completion. These constructions are inverse. In density-matrix language, the condition is \(\rho_N=\operatorname{Tr}_{N+1}\rho_{N+1}\).
+
+This is the exact categorical content of "all finite forms coherent inside one global state." **The state spaces are convex; the set of PURE states is not generally preserved by restriction.** An entangled pure global state naturally has mixed finite marginals. This does not yield a canonical single global Hilbert-space wavefunction or joint definite values for noncommuting propositions. The physical tensor factorization is an explicit model choice.
+
 ## IQ-01: finite global coherence does NOT automatically glue to infinity (sharp GHZ obstruction)
 
 For \(N\ge2\), choose \(\theta\in\mathbb R\) and define the *finite pure* GHZ vector
