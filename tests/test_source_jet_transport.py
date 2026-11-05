@@ -126,17 +126,23 @@ class JetTransport(unittest.TestCase):
             self.assertGreater(errors[1],errors[2])
             self.assertLess(errors[2],Q(1,10000))
 
-    def test_08_literal_original_recurrence_and_exact_ward_identity(self):
-        U=[Q(0)]
-        for n in range(1,58):U.append(16*U[-1]+force(n,ORIG))
+    def test_08_literal_zero_seeds_and_source_exact_ward_identity(self):
+        U=[Q(0)]; Z=[Q(0)]
+        for n in range(1,58):
+            U.append(16*U[-1]+force(n,ORIG))
+            Z.append(16*Z[-1]+force(n,RAD))
         H=65536
         for n in (7,17,53):
             for m in (1,2,3):
-                B=sum((a*tail_lag(n,ell) for ell,a in enumerate(solve(m),1)),Q(0))
-                # The finite tail truncation is not exact z, so use exact
-                # algebraic residual for the same approximate B.
-                self.assertEqual(U[n]+B-16*U[n-1],force(n,ORIG)+B)
-                self.assertEqual((H*(U[n]+B-16*U[n-1]))%1,
-                                 (H*(force(n,ORIG)+B))%1)
+                ws=solve(m)
+                B=sum((a*(Z[n+ell]-Z[n])
+                       for ell,a in enumerate(ws,1)),Q(0))
+                B_future=sum((a*tail_lag(n,ell)
+                              for ell,a in enumerate(ws,1)),Q(0))
+                self.assertLess(abs(B-B_future),Q(1,10**40))
+                defect=force(n,ORIG)+B
+                self.assertEqual(U[n]+B,16*U[n-1]+defect)
+                self.assertEqual((H*(U[n]+B))%1,
+                                 (H*(16*U[n-1]+defect))%1)
 
 if __name__=="__main__":unittest.main()
