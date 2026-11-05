@@ -46,3 +46,29 @@ def cross_constant():
 def past_bound(A,t):
     return (t*(t-1)*(1+mp.log(mp.mpf(16)/15))+
         mp.log(16)/3*t*(t-1)*(t+1))/A**2
+
+def verify():
+    C=cross_constant()
+    for A in (7,11,13):
+        u=states(2*A-1)
+        for K in sorted(set((A,A+1,A+2,3*A//2,2*A,2*A+3))):
+            d=pressure(A,K,u)
+            assert abs(d['future'])<mp.mpf('1e-35')
+            assert abs(d['cross'])<=C/A**2+mp.mpf('1e-34')
+            if K<=2*A:
+                assert abs(d['past'])<=past_bound(A,K-A)+mp.mpf('1e-34')
+            if K<=A: assert abs(sum(d.values()))<mp.mpf('1e-40')
+            print('BBP',A,K,'full',float(sum(d.values())),
+                  'cross',float(d['cross']),'past',float(d['past']))
+    for A,t in ((64,8),(125,20),(216,36)):
+        u={n:F(0) for n in range(A,2*A)}
+        d=pressure(A,A+t,u)
+        total=float(sum(d.values()))
+        leading=-(log(16)/3)*t*(t-1)*(t+1)/A**2
+        assert total<0 and abs(d['cross'])<=C/A**2
+        print('ZERO-FORCING',A,t,'mean',total,'onset',leading,
+              'ratio',total/leading)
+    print('CLAUSEN_CUT_PREREGISTERED_HOLDS_PASS')
+
+if __name__=='__main__':
+    verify()
