@@ -17,3 +17,10 @@
 Provenance: #499 original prime character source, #504 radial return, #506 source jets, #507 positive coefficient and joint order controls, #508 nonlinear delayed observer. All share original BBP source; no statistical independence claims.
 
 **Warning:** tau is an algebraic root of a quadratic; Lambert W is an approximate inversion of a separate large-order asymptotic envelope. No physical energy borrowing or quantum speedup claim.
+
+## Post-preregistration source angular-response result
+
+| AR-01 | For every n>=1, real k>=0 and q=1,...,8, the Gaussian-half-arc transported analytic mixed radial moment has strictly positive imaginary part | Disclosed exact analytic sign proof; not a π time-orbit Weyl sum |
+| AR-02 | At exact radial scalar moment zero, \(n \mathcal M_{n,k_c(n)}(q)/[\mathrm B(n+1/8,k_c(n)+1)/8]\to i q(3825\sqrt2-5406)/2048\) | Disclosed paper beta-delta-method argument; four focused symbolic/numerical tests; external review and new Lean kernel UNVERIFIED |
+
+These cross-field statements use a declared common angular reference \(\theta_0(\tau)=\pi/8\). They are not a transported proof for the *chronological selected* Weyl orbit. No statistical interpretation of the auxiliary beta measure is supplied.
