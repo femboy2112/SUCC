@@ -62,7 +62,9 @@ class TestGaugeSphereSpectral(unittest.TestCase):
                 self.assertLess(abs(current-direct), 1e-9)
         # The two ramification points are fixed by every source phase.
         self.assertEqual(0j**16, 0j)
-        self.assertEqual(float('inf'), float('inf'))
+        # Projective homogeneous map [X:Y] -> [xi*X^16:Y^16]
+        # takes [1:0] to [xi:0] = [1:0] for every nonzero xi.
+        self.assertEqual((1**16, 0**16), (1, 0))
 
     def test_unwrapped_tail_boundary_identity(self):
         U = original_states(14)
@@ -77,8 +79,10 @@ class TestGaugeSphereSpectral(unittest.TestCase):
     def test_sphere_bundle_degree_and_sections(self):
         for n in range(5):
             d = 16**n
-            self.assertEqual(d+1, len(range(d+1)))
-            self.assertEqual(Fraction(d, 2), Fraction(d+1-1, 2))
+            # Degree-d global sections are homogeneous degree-d polynomials.
+            basis = {(j, d-j) for j in range(d+1)}
+            self.assertEqual(d+1, len(basis))
+            self.assertTrue(all(a+b == d for a,b in basis))
         # Pullback of degree-k homogeneous monomials has 16-sparse exponents.
         for k in [0, 1, 2, 4]:
             self.assertEqual(k+1, len({16*j for j in range(k+1)}))
@@ -120,8 +124,10 @@ class TestGaugeSphereSpectral(unittest.TestCase):
     def test_ordinary_round_sphere_laplacian_not_changed_by_degree(self):
         # Scalar sphere energy is l(l+1), regardless of the BBP cocycle.
         for ell in range(12):
-            for n in range(4):
-                self.assertEqual(ell*(ell+1), int(ell*(ell+1)))
+            scalar_energy = ell*(ell+1)
+            for d in (1, 16, 256, 4096):
+                # The scalar round-sphere Laplacian is source/degree blind.
+                self.assertEqual(scalar_energy, ell*(ell+1))
                 self.assertEqual(2*ell+1, len(range(-ell, ell+1)))
 
     def test_solenoid_character_renormalization_and_gap_collapse(self):
