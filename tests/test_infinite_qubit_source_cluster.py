@@ -220,4 +220,17 @@ class InfiniteQubitField(unittest.TestCase):
         self.assertTrue(close(expect(v,7,{0:"X",2:"X",3:"Z"}),1))
         self.assertTrue(close(expect(v,7,{0:"P",2:"P",3:"Z"}),1))
 
+    def test_16_pure_pair_cannot_be_same_prefix_of_growing_entangled_chain(self):
+        # Pure C_2 can remain pure in a 3-qubit extension only as a tensor factor.
+        # The connected C_3 actually has mixed two-qubit prefix (purity=1/2).
+        pure=reduced_prefix(cluster_vector(2),2,2)
+        extended=reduced_prefix(cluster_vector(3),3,2)
+        infinite_prefix=reduced_prefix(cluster_vector(7),7,2)
+        self.assertTrue(close(purity(pure),1))
+        self.assertTrue(close(purity(extended),.5))
+        self.assertTrue(all(close(extended[i][j],infinite_prefix[i][j])
+                   for i in range(4) for j in range(4)))
+        self.assertFalse(all(close(pure[i][j],extended[i][j])
+                   for i in range(4) for j in range(4)))
+
 if __name__=="__main__": unittest.main()
