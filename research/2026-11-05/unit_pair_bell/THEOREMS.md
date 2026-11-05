@@ -192,6 +192,43 @@ The signed change \(p'_{\rm bright}(t)=\frac12\sin(G(t))\,G'(t)\) reverses orien
 
 It is NOT derived as a physical Hamiltonian of BBP; t is an analytic source coordinate, not BBP digit time. A chosen time-dependent local Hamiltonian could realize this phase path in an engineered quantum system, but nothing here asserts such a physical implementation. A *dephased* mixture has the same local reductions but joint Bell-bright probability 1/2, so it cannot reproduce this coherent loop.
 
+## UP-04b — the authentic radial source has an exact DISCRETE dark→bright→dark return
+
+The source-analytic unitary loop UP-04 uses the Mellin coordinate t. There is also a fully **chronological**, exactly rational counterpart using the genuine original BBP *radial* source and its source-time labels n.
+
+Let \(Z_0=0,\ Z_n=16Z_{n-1}+r_r(n)\), retaining the literal original radial taps. Define the paired amplitudes \(a_n^{(r)}=16^n+Z_n/2,\ b_n^{(r)}=16^n-Z_n/2\), and their normalized relative coordinate \(d_n^{(r)}=16^{-n}Z_n\). From #504's exact radial repayment theorem,
+\[
+r_r(1)=2/105>0,\qquad r_r(n)<0\ \forall n\ge2,\qquad
+\sum_{n\ge1}16^{-n}r_r(n)=0.
+\]
+The normalized radial recurrence gives
+\[
+d_n^{(r)}-d_{n-1}^{(r)}=16^{-n}r_r(n),
+\]
+and the inherited strictly positive radial-tail state gives \(d_n^{(r)}>0\) for n>=1. Hence
+\[
+\boxed{d_0^{(r)}=0,\quad d_1^{(r)}=1/840,\quad
+0<d_{n+1}^{(r)}<d_n^{(r)}\ (n\ge1),\quad
+d_n^{(r)}\longrightarrow0.}\tag{UP16}
+\]
+The exact zero completed source period, not a numerical extrapolation, establishes the limiting return.
+
+In the same DECLARED normalized two-qubit encoding, let
+\[
+p_n^{(r)}=\frac{(d_n^{(r)})^2}{4+(d_n^{(r)})^2},\qquad
+\mathcal N_n^{(r)}=\frac12-p_n^{(r)}.
+\]
+As the function \(x\mapsto x^2/(4+x^2)\) increases strictly for x>0, the original source implies
+\[
+\boxed{
+p_0^{(r)}=0,\quad p_1^{(r)}=\frac{1}{2\,822\,401},
+\quad 0<p_{n+1}^{(r)}<p_n^{(r)}\ (n\ge1),\quad
+p_n^{(r)}\to0.}\tag{UP17}
+\]
+The encoded negativity is correspondingly \(1/2\) at n=0, strictly smaller but still positive at finite n>=1, then tends back to \(1/2\). Thus the chosen coherent relational lift has an **exact discrete source-time bright pulse with full eventual return**.
+
+Important type distinctions: (a) source time n is actual BBP recurrence time; (b) the Hilbert encoding and post-normalization are OPTIONAL mathematical constructions and the update is NOT unitary; (c) the quantum-information negativity is NOT a physical resource budget assigned to π; (d) the radial source \(Z_n\) is itself nonnormal despite this complete brightness return. The theorem does not establish cancellation in the original coupled signed Weyl sum.
+
 ## UP-05 — sharp normality firewall
 
 - The pair lift and normalized Bell state are reversible representations of the original source after the reference is declared. They cannot produce extra Weyl cancellation absent a NEW inequality.
