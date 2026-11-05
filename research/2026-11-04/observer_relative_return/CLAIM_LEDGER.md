@@ -13,3 +13,18 @@
 | OR-X | General academic originality | **UNVERIFIED.** Classical summation by parts, nonstationary phase, and flat cocycles are known; cross-link to SUCC's selected radial source is newly written here, not priority-certified. |
 
 Read-only sibling #505 **already** proves the radial channel passes a scalar critical ratchet while remaining nonnormal, a compatible negative control. #482 independently shows why rotating/twirling observers does not make coherent sources mixed. Source-independent normality cannot be manufactured by a frame choice.
+
+
+## Additional source-specific claims (subsequent research)
+
+| ID | Scope | Authority / boundary |
+|---|---|---|
+| RC-01/02 | Reciprocal-square observation clock `tau=1/x²`; `w(x)=8/(3x³)` gives an EXACT continuum sinc zero at `q=128k`, and source finite observation `O_k(1/A)` | **Disclosed paper algebra** and source expansion; the observer Jacobian/frequency differs from the original selected unweighted critical Weyl gate. |
+| RC-04 | Radix-frequency covariant gauge cocycle `D_(n,k)(h)=D_(m,k)(h)D_(n,m)(16^(k-m)h)` | **Disclosed exact algebra**, separate from ordinary flat Wilson link and any physical Lorentz claim. |
+| SJ-01/02 | Original forcing reconstructed by one/two delayed radial readings through orders `n^-2`/`n^-3`, rational coefficients `15/2` and `(541/16,-421/32)` | **Disclosed algebraic source Laurent coefficients**, finite exact Fraction probes only calibrate. |
+| SJ-03 | For every **fixed** m, a unique rational m-lag combination reproduces original source to `O_m(n^(-m-2))` | **Disclosed paper proof:** nonzero Vandermonde determinant, rational moments. NO uniformity for m growing with n. |
+| SJ-04 | At H=O(A²log A), transported source phase error `O_m(log A/A^m)` even against unit-bounded arbitrary observer factors | **Disclosed exact Ward identity + bounded residual**. No estimate for the *size* of the genuine signed angular/radial Weyl sum. |
+| C-OBS | Authentic finite mixed lag original-source source-preserving verification | **Observed** A=128,256,512 exact rational phase lift and float Fourier current, with A=512 `qM=0.238707420` matching sibling #505's finite result; finite evidence does not validate an asymptotic. |
+| OR-T | Fully independent global theorem validation and normality | **UNVERIFIED**. Local 9+7+8 tests and finite source observations are not a new kernel, blind referee or π normality proof. |
+
+No cycle of observer frame transforms or source jets may be promoted to signed cancellation without a **source-specific inequality** surviving coherent wrong-seed and altered-source controls.
