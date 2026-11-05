@@ -20,3 +20,7 @@ A sufficiently strong upper bound on its weighted **positive** collision excess 
 **Pass:** genuine original selected \(E_A(0)\ge-o(1)\) (sufficient, not necessary), or directly fixed-h selected Weyl decay, with complete all-A proof and hostile source controls. **Ambiguous:** a source-independent ensemble concentration, Gaussian conditioning pressure, or a new globally equivalent representation. **Fail:** claiming a selected theorem from a.e. seeds, from finite K, from a physical quantum analogy, or from a premature swap of K→∞ and A→∞.
 
 **State:** \(\pi\) base-16 normality OPEN. Full native SUCC suite is a later integration gate; focussed mathematical proofs and exact source tests first.
+
+## Newly located 2A-scale reference-resolution layer
+
+[THEOREMS.md](THEOREMS.md) CZ-05b proves **full ensemble transparency** for each K≤A and **selected critical-Weyl approximation** by K=2A+3log_16(A)+O(1). This leaves a quantified A-to-2A zero-pointing regime that cannot be crossed by formal symmetry alone. Investigate an arithmetic original-source/carry inequality transmitting *signed* orbit information across this layer; do not treat a high-K approximation as already providing smallness of the selected Weyl sum. The unforced \(s=0\) example kills any universal transfer of a.e. Haar into the selected zero boundary.
