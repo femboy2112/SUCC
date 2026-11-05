@@ -17,3 +17,5 @@
 | UP-P External scholarly novelty, physical entanglement in arithmetic, new Lean theorem | UNVERIFIED | Mathematical analogy only, none assumed |
 
 No physical energy borrowing, quantum vacuum creation, entanglement entropy proof for π digits or automatic equality of observational/physical source categories is claimed.
+
+| UP-04b | Authentic zero-seeded radial DISCRETE source time n has exact bright zero→1/2822401→0 and negativity 1/2→slightly lower→1/2 | Disclosed paper proof: #504 r_rad first-positive/all-later-negative, zero completed period and exact pair formulas; independent exact finite checks through n=299, appended committed regression method not executed in full checkout |
