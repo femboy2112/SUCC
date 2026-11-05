@@ -42,4 +42,4 @@ n\,\mathcal M_{n,k_c(n)}(q)/
   \left[\mathrm B(n+1/8,k_c(n)+1)/8\right]
 =i q\,\frac{3825\sqrt2-5406}{2048}.
 \]
-This is a strictly oriented analytic angular–radial response despite scalar radial cancellation. It does not bound the original chronological \(\pi\)-orbit's Weyl sums. [Four new focused tests](../../../../tests/test_tau_angular_response.py) passed locally, making 17/17 total. Their executed Git blob SHA is \`1f7e0b42453882998233526dcd9c2bfce255e152\`, verified against GitHub.
+This is a strictly oriented analytic angular–radial response despite scalar radial cancellation. It does not bound the original chronological \(\pi\)-orbit's Weyl sums. [Four new focused tests](../../../tests/test_tau_angular_response.py) passed locally, making 17/17 total. Their executed Git blob SHA is \`1f7e0b42453882998233526dcd9c2bfce255e152\`, verified against GitHub.
