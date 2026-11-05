@@ -280,3 +280,81 @@ barrier. It refutes a seed-uniform little-o claim, not a zero-seed theorem.
 **Remaining statuses:** authentic fixed-h Weyl OPEN; critical selected ratchet
 OPEN; original coarse collision energy OPEN; pi base-16 normality OPEN; RH
 OPEN and separate.
+
+## AH-05: an explicit finite retrieval constant, with no upper frequency cap
+
+**Status: quantified inherited retrieval, not new cancellation.** For every
+integer `A>=1`, integer `j>=0`, nonzero integer `h`, and every real initial
+seed for the unchanged four-pole forcing,
+
+\[
+\boxed{
+ M_A(h)\le\frac jA+
+ \left[1+\frac{2\pi|h|(16^j-1)}{(8A+1)(8A+2)}\right]
+ M_A(|h|16^j).
+} \tag{11}
+\]
+
+Here the maximum is over integer endpoints `A<=a<b<=2A`. There is no
+hypothesis `|h|16^j<=A³`. In particular, with `H=|h|16^j`,
+
+\[
+M_A(h)\le j/A+\left(1+\frac{\pi H}{32A^2}\right)M_A(H). \tag{12}
+\]
+
+The explicit constant is a valid sufficient constant; no optimality is
+claimed. This quantifies the existing F4 proof and supplies no saving on its
+right-hand side.
+
+**Proof and edge cases.** For `j=0`, (11) is equality because negative h
+conjugates the characters and leaves their modulus unchanged. If `j>=A`,
+`M_A(h)<=1<=j/A` proves (11) directly, including the case `A=1`.
+It remains to take `1<=j<A`.
+
+Fix an arbitrary interval `[a,b)` in the epoch and discard its indices
+`m<A+j`. At most j terms are lost. If no terms remain, their normalized
+sum is already at most `j/A`. Otherwise write `c=max(a,A+j)<b` and use
+exact affine iteration:
+
+\[
+U_m=16^jU_{m-j}+S_j(m),\qquad
+S_j(m)=\sum_{\ell=0}^{j-1}16^\ell r(m-\ell).
+\]
+
+Every shifted index `m-j` in the retained interval lies in `[A,2A)`.
+Consequently every partial sum of `e(h16^jU_(m-j))` on that interval is
+bounded in modulus by `A M_A(H)`. This remains true for negative h by
+conjugation.
+
+The positive Mellin representation makes each r(s), and hence S_j(m),
+positive and decreasing. Discrete Abel summation with the multiplier
+`w_m=e(h S_j(m))` gives
+
+\[
+\left|\sum_{m=c}^{b-1}e(hU_m)\right|
+\le A M_A(H)\left[1+\sum_{m=c}^{b-2}|w_{m+1}-w_m|\right]
+\le A M_A(H)\left[1+2\pi|h|S_j(A+j)\right].
+\]
+
+The variation sum is empty for a single retained term, so that case is
+included. At `m=A+j`, each source index satisfies `m-ell>=A+1`.
+Since `B(t)<=15`, for all such indices
+
+\[
+r(s)\le15\int_0^1t^{8s-8}(1-t)\,dt
+ =\frac{15}{(8s-7)(8s-6)}
+ \le\frac{15}{(8A+1)(8A+2)}.
+\]
+
+Summing the geometric coefficients yields
+
+\[
+S_j(A+j)\le
+\frac{15}{(8A+1)(8A+2)}\sum_{\ell=0}^{j-1}16^\ell
+=\frac{16^j-1}{(8A+1)(8A+2)}.
+\]
+
+Add back the discarded terms, divide by A, and maximize over `[a,b)` to
+obtain (11). Finally `(8A+1)(8A+2)>=64A²` and
+`|h|(16^j-1)<=H` imply (12). No step used a frequency cap or selected seed.
+The original zero-seed cancellation obligation remains unchanged.

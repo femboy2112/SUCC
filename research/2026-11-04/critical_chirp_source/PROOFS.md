@@ -6,6 +6,20 @@ mission's exact dyadic schedule `H_A(h)=|h|16^j`,
 `j=floor(log_16(A² log A/|h|))`, `Lambda=H/A²`. Maximal sums always range
 over **all contiguous subintervals**, normalized by A.
 
+The inherited retrieval inequality also admits an explicit finite constant.
+For every integer A>=1, j>=0, h!=0 and every real seed,
+
+\[
+M_A(h)\le\frac jA+
+\left(1+\frac{2\pi|h|(16^j-1)}{(8A+1)(8A+2)}\right)M_A(|h|16^j).
+\]
+
+There is no H<=A³ restriction for this inequality; the j>=A case is trivial.
+Thus C=pi/32 suffices in the original `1+CH/A²` cost. The proof bounds each
+retained injection at source index at least A+1, sums the geometric weights,
+and applies monotone-variation summation by parts. This is a quantified version
+of inherited F4, **not new signed cancellation**. See [AH-05](front_ah/PROOFS.md).
+
 ## 1. The original source has a sharper all-derivative tail bound
 
 For every real x>0 and integer k>=0,

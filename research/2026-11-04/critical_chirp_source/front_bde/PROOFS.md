@@ -30,8 +30,9 @@ for EVERY fixed integer h != 0 and the original prescribed H_A(h),
     Lambda_A M_A^Z(H_A)
        = O((log A)^(3/2)/sqrt A) -> 0.                    (BDE-2)
 
-Nonetheless `A^-1 sum_[A,2A) e(h Z_n) -> 1` for each fixed h, and the inherited
-radial theorem gives `J_(A,q_A)(Z)/q_A -> 1`. Thus the critical ratchet is NOT a
+Nonetheless `A^-1 sum_[A,2A) e(h Z_n) -> 1` for each fixed h, and
+`J_(A,q_A)(Z)/q_A -> 1`: the expansion below gives every epoch pair distance
+O(1/A), so every tent factor is `1-O(q_A/A)`. Thus the critical ratchet is NOT a
 source-free normality criterion. This is a signed estimate on an actual
 zero-seeded sibling source, not a saving for U.
 

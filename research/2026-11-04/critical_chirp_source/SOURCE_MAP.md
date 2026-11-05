@@ -45,16 +45,16 @@ passes its native verification; this dossier does not rewrite it.
 
 [Bailey--Crandall, On the Random Character of Fundamental Constant
 Expansions](https://www.davidhbailey.com/dhbpapers/bcrandom.pdf), Hypothesis A,
-Theorem1.1 and the displayed BBP recurrence: the normality conclusion is
+Theorem 1.1 and the displayed BBP recurrence: the normality conclusion is
 conditional on the selected zero-seed dichotomy.
 
 [Lagarias, On the Normality of Arithmetical
-Constants](https://arxiv.org/pdf/math/0101055), Theorems3.1,3.3,4.1: general
+Constants](https://arxiv.org/pdf/math/0101055), Theorems 3.1, 3.3, 4.1: general
 orbit shadowing does not establish the restricted rational-function hypothesis.
 Our changed-seed/changed-forcing controls do not refute that hypothesis.
 
 [Bailey--Crandall, Random Generators and Normal
-Numbers](https://www.davidhbailey.com/dhbpapers/bcnormal-em.pdf), Theorems4.6/4.8:
+Numbers](https://www.davidhbailey.com/dhbpapers/bcnormal-em.pdf), Theorems 4.6/4.8:
 their modular exponential-sum results have explicit orbit-length and arithmetic
 conditions. Those conditions are not supplied by BBP denominator height alone.
 

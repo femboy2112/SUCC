@@ -7,6 +7,7 @@ round. It does not mean Lean/kernel certification or external peer review.
 |---|---|---|---|---|---|
 | AH-01 | Sharp all-derivative tail sandwich | PROVED PAPER | Original four poles; all real x>0, integers k>=0 | Laplace proof, beta derivative oracle, dropped-pole control | Tail, not orbit cancellation |
 | AH-02 | Coherent 256/pi asymptotic with O(Lambda^-2+A^-1) error | PROVED PAPER | Same forcing, fixed wrong real seed; uniform 1<=Lambda<=A | Exact discrete summation by parts, continuous endpoint check, CFG review | No zero-seed bound |
+| AH-05 | Explicit finite retrieval with C=pi/32, no frequency cap | PROVED PAPER | All A>=1, j>=0, h!=0, real seeds; genuine forcing | Exact retained-index source bound and summation by parts | Quantifies inherited F4; no cancellation gain |
 | CFG-1 | One normal counterseed has all-h critical liminf>=256/pi | PROVED PAPER | One changed seed; every fixed h; all dyadic epochs | Density-zero edits, local half-turn limit, AH review | Normality has no such uniform rate |
 | CFG-2 | One normal counterseed has R_A(1)>=[cos(pi/15)/16-o(1)]sqrt(log A) | PROVED PAPER | One changed seed, original forcing, all dyadic epochs | Rational digit rule; paid switch budget; wrong-orientation control | Not original zero seed |
 | BDE-1 | Radial critical M bound | PROVED PAPER | Actual radial projection, different order-1/n forcing | Rational derivative expansion and elementary differencing | Original F4 does not apply |

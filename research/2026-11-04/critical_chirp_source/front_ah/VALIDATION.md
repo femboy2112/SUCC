@@ -27,3 +27,14 @@ universal statement. No new Lean/kernel proof or external independent
 mathematical referee is claimed. The two derivative implementations share
 BBP source provenance. Full native suite and hosted CI are owned by the
 coordinator and are not certified by this front's focused results.
+
+## Additional paper review: AH-05
+
+The coordinator's explicit finite F4 constant was independently checked and
+appended as AH-05 in PROOFS.md. The audit checked `j=0`, `j>=A`, `A=1`, empty
+and singleton retained intervals, negative h, all shifted source indices, and
+the geometric coefficient. It proves the seed-uniform finite retrieval bound
+with explicit sufficient constant `pi/32` and no upper frequency cap. This is
+**quantified inherited retrieval, not new cancellation**. It is a paper-proof
+review; no additional test execution or formal-kernel authority is claimed.
+No shared code or native tests were changed for this addition.

@@ -1,0 +1,26 @@
+{
+  "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v",
+  "distinct_test_labels": 11634,
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "gzip_log_sha256": "6a7d70cd283e8d926348241daef7eab9832e06840da5f812db79d8b614be844b",
+  "input_snapshot_sha256": "277fdc694cf57ed229457897e11f7b55bfe11e55fe0d93db9e7c158018a105e3",
+  "integration_commit_before_validation_receipt": "353e7137d7dcca198dceb2de1cc667fabe0c3c90",
+  "native_test_package_files_snapshotted": 1502,
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "raw_log_sha256": "80a7a69cac5c9f313f402957daf55769c15a3fc929378693d85bc0b0b2e79d8e",
+  "scope": "Native execution began at the implementation commit; additive research dossier was integrated while it ran. All snapshotted tests/package files stayed identical. Research-only front probes ran separately. Final-head hosted CI must be checked independently; this receipt is not a hosted result.",
+  "seconds_reported": 1038.63,
+  "skips": 0,
+  "snapshotted_files_changed": [],
+  "started_at_implementation_commit": "29ed93c733cfb2587d37e6f59a0509a9d7971e40",
+  "status": "COMPLETE_NATIVE_SUITE_PASS",
+  "test_labels_sha256": "f091c086286f82e523ee1d89144b98d79e3c2b602af09580f5b1a410426cb4d5",
+  "tests": 11634,
+  "thread_caps": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}
