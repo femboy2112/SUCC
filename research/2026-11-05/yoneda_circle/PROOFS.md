@@ -170,6 +170,28 @@ because m↦limsup_N P_N,m is nondecreasing by YO6. The reversed order \(\lim_N\
 
 **Natural pair-count version:** \(\mathcal P_{N,m}=(16^m/N^2)\#\{(i,j)<N:\lfloor16^m x_i\rfloor=\lfloor16^m x_j\rfloor\}\), including diagonal. It is a direct, signed-free source-selected pair-count task on the natural 16-adic observation partitions.
 
+### YO-04b. The SAME sufficient criterion works directly on SUCC's dyadic epochs
+
+The research front #501/#513 uses \([A,2A)\) rather than prefixes. Define the epoch measure \(\nu_A=A^{-1}\sum_{n=A}^{2A-1}\delta_{x_n}\) and epoch pressure \(P^{\rm epoch}_{A,m}=16^m\sum_k \nu_A(I_{m,k})^2\). The source recurrence gives the sharpened source-specific approximate invariance
+\[
+\boxed{
+|\nu_A(f\circ T)-\nu_A(f)|
+\le\frac{2\|f\|_\infty+
+\operatorname{Lip}(f)\sum_{n=A+1}^{2A}r_o(n)}A
+\le\frac{2\|f\|_\infty+ (1920/2457)\operatorname{Lip}(f)/A}{A}.}\tag{YO10a}
+\]
+For all n>A, \(r_o(n)\le1920/(2457n^2)\); the sum from A+1 to2A is bounded by \((1920/2457)/A\) through the integral tail, so the displayed bound is rigorous for A≥1 with the trivial n=1 exception excluded.
+
+Suppose \(\exists C<\infty\) such that for **every fixed m**,
+\[
+\boxed{\limsup_{A\to\infty} P^{\rm epoch}_{A,m}\le C.}\tag{YO10b, OPEN PREMISE}
+\]
+Exactly the cell-step/L² dual argument of YO-04 shows every epoch empirical limit is absolutely continuous; YO10a shows it is T-invariant, hence Haar. Thus \(\nu_A\Rightarrow\lambda\) for all integer A→∞.
+
+This epoch convergence also implies original full-prefix equidistribution: for any bounded f let \(e(N)=\sum_{n=1}^N[f(x_n)-\lambda(f)]\). The epoch property is \(e(2A-1)-e(A-1)=o(A)\). Halving an arbitrary integer prefix and decomposing it into logarithmically many dyadic blocks, with a finite bounded leftover, gives \(e(N)=o(N)\) by a geometric weighted sum of the uniform large-A error. Therefore YO10b alone implies base16 normality of π, with no desired little-o critical Fourier rate. The same caveats apply: the original zero-seeded all-m pressure estimate YO10b is NOT PROVED.
+
+For any fixed finite A, this pressure diverges with m because the epoch measure is atomic. The correct order remains \(A\to\infty\) FIRST for each fixed m, then \(m\to\infty\). This is mathematically different from tuning m(A) beyond available sample resolution.
+
 ## YO-05. Source-faithful nearby NONNORMAL completions: finite observer probes cannot confer typicality
 
 Let \(\alpha=\pi/16\) be defined via the authenticated original BBP series, and for each p≥1 put \(q_p=16^p-1\). Choose integer \(k_p\) nearest to \(q_p\alpha\), and set
