@@ -145,6 +145,22 @@ This is a source-exact *encoding of the BBP recurrence*. A time-dependent produc
 
 A finite array of additional source angles \(\theta_{j,n}\) may refine any source decomposition whose sum is the correct original phase, but new algebraic phase slots are not automatically independent arithmetic information. Conversely source-dependent constraints must be preserved before treating their product as an original-source correlation.
 
+## IQ-04b: the gluing of source channels COMMUTES with their actual dynamics
+
+The many-body phase product is not merely a simultaneous snapshot; it is a morphism of the **declared source-labelled nonautonomous phase recurrences**.
+
+For any fixed finite group of source channels \(j=0,\ldots,m-1\) with exact forcing \(r_j(n)\), literal initial phase \(\theta_{j,0}=0\), and recurrences \(q_{j,n+1}=16q_{j,n}+r_j(n+1)\), define \(w_{j,n}=e(hq_{j,n})\). The local phase dynamics are \(w_{j,n+1}=w_{j,n}^{16}e(hr_j(n+1))\). The graph-state grouped character is \(W_{m,n}=\omega_{n,h}(B_m)=\prod_{j<m}w_{j,n}\). Then
+\[
+\boxed{
+W_{m,n+1}=W_{m,n}^{16}\,
+e\!\left(h\sum_{j<m}r_j(n+1)\right),\qquad
+W_{m,0}=1.} \tag{IQ6}
+\]
+
+**Proof:** The multiplication map \(\mu_m:(S^1)^m\to S^1\), \(\mu_m(z_0,\ldots,z_{m-1})=\prod_j z_j\), is a continuous group homomorphism. It commutes with the power map \(z\mapsto z^{16}\). Multiplying the individual exact source-rotated phase recurrences gives IQ6 term by term. In SUCC's actual two-sector partition \(r_o=r_a+r_r\), this becomes IQ5 and retains the original four-pole source without changing initial seed.
+
+There is a coherent commuting source/gluing diagram at **EVERY finite group size**, and these observations coexist in the same compatible infinite cluster state. What does NOT follow is time distribution of \(W_{m,n}\). The homomorphism law holds identically for coherent wrong-seed extensions too (with the correctly transported initial values). This is an exact dynamic composition law, not a contraction estimate, a measured energy force, or a normality theorem.
+
 ## IQ-05: the sharp normality and logical-consistency firewalls
 
 For any source time n, the global state \(\omega_{n,h}\) is a pure, compatible, genuinely multipartite-entangled algebraic state. Yet
