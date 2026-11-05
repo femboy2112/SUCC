@@ -1,0 +1,20 @@
+# Infinite Qubit Field × Source-Compatible Multipartite Gluing
+
+**Draft research-only extension of #511** at pinned SHA \`378a77eefa084225f30a209c27a2b4bc54897e72\`. The original BBP signed four-pole forcing, literal U0=0, source/Lean/production/workflow contracts and main are untouched. **π normality and RH remain OPEN**. No physical quantum ontology of mathematics or worldwide novelty is asserted.
+
+The user's hypothesis: a unit pair \(1-1=0\) is the baseline of a coherent hierarchy of larger jointly supported groups, and a "global wavefunction" should contain compatible realizations of all its local forms. We give a **precise mathematical conditional realization** in the quasilocal C*-algebra of an infinite spin-1/2 chain, with a source-derived time family of compatible states.
+
+**Key mathematical discovery, including a falsifier:**
+
+1. Pure finite **GHZ_N** states are genuinely N-partite entangled but **fail** the partial-trace consistency condition \(\rho_N=\operatorname{Tr}_{N+1}\rho_{N+1}\). Their quasilocal infinite-volume limit loses all relative GHZ phase information and is a separable product-state mixture. Thus "every finite construction coherent" does not imply "coherent global construction."
+2. A one-dimensional connected **cluster-state** (graph-state) family **does** define a compatible, pure infinite algebraic state: its CZ circuit induces a locality-preserving automorphism on every local operator. Each finite graph state has **exactly one ebit across every contiguous cut**, while finite subsystem states stabilize once a one-site buffer is included.
+3. For every finite m, a group observable \(B_m=\prod_{j<m}(X_{2j}+iY_{2j})Z_{2m-1}\) has **exact** expectation \(\exp(i\sum_{j<m}\theta_j)\) after source-labelled local Z rotations. All these observations exist simultaneously as compatible expectations of **one infinite state**, with no independent Haar sampling.
+4. With actual zero-seeded SUCC phases \(\theta_{0,n}=2\pi hY_n\), \(\theta_{1,n}=2\pi hZ_n\) and zero remaining angles, the m=1 witness is the Gaussian angular \(e(hY_n)\), and every m>=2 witness is the ORIGINAL \(e(hU_n)\). The source time recurrence for this witness is exactly the original \(\times16\) BBP forcing. Multi-qubit entanglement is operationally meaningful: one-site reductions are phase-blind, while three-/four-/higher-body witnesses retain the source phase.
+5. The canonical m-channel witness has operator norm \(2^m\); dividing it to norm one reduces its expected amplitude to \(2^{-m}\). Compatible infinite-state existence does NOT hand us a uniformly accessible infinite product phase.
+6. The **same-forcing coherent wrong seed** and even a separable equatorial qubit also admit phase encodings. The entire quasilocal construction supplies no original selected signed Weyl saving, and neither quantum speedup nor an actual physical wavefunction of mathematical truth follows.
+
+[Detailed theorems and proof scopes](THEOREMS.md) · [chronological preregistration](PREREGISTRATION.md) · [hostile controls](COUNTERMODELS.md) · [claim ledger](CLAIM_LEDGER.md) · [validation and tests](VALIDATION.md) · [next source-carry discriminator](NEXT.md) · [source map](SOURCE_MAP.md).
+
+**Independent finite verification:** a locally executed separate numpy/Fraction implementation at new preregistered N=7,8,9 and source times n=2,5,11 confirmed all graph stabilizers, one-ebit cut purity, stabilized prefix density matrices, source two-/three-channel complex witnesses and the GHZ inconsistency. A related new stdlib root test file was pushed but **its exact committed blob has not been run in a full native checkout**. Details in VALIDATION.md.
+
+Source literature: [quasilocal spin algebras and states](https://link.springer.com/article/10.1007/s00220-026-05571-y); [cluster state many-body stabilizers](https://pmc.ncbi.nlm.nih.gov/articles/PMC9021024/). These are **classical-in-the-literature mathematical/quantum information constructions** combined with SUCC's source labels here; no scholarly priority claim.
