@@ -1,0 +1,311 @@
+{
+  "content_sha256": "4e671e46bf0656fa20990b8d095491453735be6ece8454e6873179f1571595df",
+  "receipt": {
+    "cayley": {
+      "-2/3": {
+        "imag": "-12/13",
+        "real": "5/13"
+      },
+      "0/1": {
+        "imag": "0/1",
+        "real": "1/1"
+      },
+      "1/1": {
+        "imag": "1/1",
+        "real": "0/1"
+      },
+      "1/2": {
+        "imag": "4/5",
+        "real": "3/5"
+      },
+      "2/3": {
+        "imag": "12/13",
+        "real": "5/13"
+      },
+      "4/35": {
+        "imag": "280/1241",
+        "real": "1209/1241"
+      },
+      "5/8": {
+        "imag": "80/89",
+        "real": "39/89"
+      },
+      "infinity": {
+        "imag": "0/1",
+        "real": "-1/1"
+      }
+    },
+    "metadata": {
+      "inherited_asymptotic": "#497 (6N), #499 (8N); not re-proved by finite probe",
+      "parent": "#500 exact head bf103c4a25bbd83b6cfbad1dd77895928300ddd9",
+      "project": "SUCC",
+      "scope": "finite exact observations, no pi-normality proof",
+      "source": "Original BBP + prime-character Gaussian primal"
+    },
+    "original_first_source": "47/15",
+    "primal_first_source": "109/35",
+    "quarter_chart_at_half": [
+      {
+        "imag": "4/5",
+        "real": "3/5"
+      },
+      {
+        "imag": "4/5",
+        "real": "-3/5"
+      },
+      {
+        "imag": "-4/5",
+        "real": "-3/5"
+      },
+      {
+        "imag": "-4/5",
+        "real": "3/5"
+      }
+    ],
+    "reciprocity_at_first_primal_phase": {
+      "Fourier_h_phase_identity": "e(h(1/2-x))=(-1)^h conj(e(hx))",
+      "from": "4/35",
+      "to": "27/70"
+    },
+    "source_states": {
+      "angular_primal": [
+        {
+          "all_source_denominator_odd": true,
+          "n": 1,
+          "source_denominator_bits": 6,
+          "source_phase": "4/35",
+          "source_phase_sha256": "f54e2fa0de0864e824fd65b26d8b140969ca01b0187c4513d178456d16a60e07",
+          "tangent_field_degree": 24,
+          "tangent_field_degree_bits": 5
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 2,
+          "source_denominator_bits": 14,
+          "source_phase": "2260/9009",
+          "source_phase_sha256": "d0b5fa3daecfb7adc195c12ab47f68098c09536270241620ef13d4130fd911ce",
+          "tangent_field_degree": 4320,
+          "tangent_field_degree_bits": 13
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 3,
+          "source_denominator_bits": 25,
+          "source_phase": "5303975/22309287",
+          "source_phase_sha256": "9f4041d6722dfbdd7cb2c79ba99861d6e5deb48347a656cefca8dc16e81cba11",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 24
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 5,
+          "source_denominator_bits": 48,
+          "source_phase": null,
+          "source_phase_sha256": "104cddee1a2b1e6f632d1135a3fc55a346f6a66e10be7b87105cefe8ad847b32",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 46
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 8,
+          "source_denominator_bits": 83,
+          "source_phase": null,
+          "source_phase_sha256": "5011c7e85f8683223889b5b2737bf32c6af32c92e332449154bbab5a0b171686",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 81
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 13,
+          "source_denominator_bits": 141,
+          "source_phase": null,
+          "source_phase_sha256": "74e0e68bea69096f533d14a5b5405f41be5d12d8f2d6af225ff1531e30c1316d",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 139
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 21,
+          "source_denominator_bits": 227,
+          "source_phase": null,
+          "source_phase_sha256": "d21ee2579cd84cc69e029603669d9bb39499bbd888e839e40b18f75f6db611f0",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 225
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 37,
+          "source_denominator_bits": 421,
+          "source_phase": null,
+          "source_phase_sha256": "c2326b681fc69b0f2b6de706b3dd266ae9bb0120b50047a1e7605825728b1b76",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 419
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 61,
+          "source_denominator_bits": 686,
+          "source_phase": null,
+          "source_phase_sha256": "2a1f3f280faa29adc2b5f25c569e878c1084e91c54968222df620ba5d8700afb",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 684
+        }
+      ],
+      "original": [
+        {
+          "all_source_denominator_odd": true,
+          "n": 1,
+          "source_denominator_bits": 4,
+          "source_phase": "2/15",
+          "source_phase_sha256": "3d9e0949dfd88625c2042dd6d84f515e48907b31a7e8c4232c891613ddce9e00",
+          "tangent_field_degree": 8,
+          "tangent_field_degree_bits": 4
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 2,
+          "source_denominator_bits": 12,
+          "source_phase": "1076/4095",
+          "source_phase_sha256": "6cf07c69d85b3e83d72e3ca87e6f8c6ec6ef92a78065494af480e5a24026175c",
+          "tangent_field_degree": 1728,
+          "tangent_field_degree_bits": 11
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 3,
+          "source_denominator_bits": 20,
+          "source_phase": "188663/765765",
+          "source_phase_sha256": "707874ff748df7ae316e909d0c1d19d893c2f1f7cb31f5d86d8437dad53b9f50",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 19
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 5,
+          "source_denominator_bits": 37,
+          "source_phase": null,
+          "source_phase_sha256": "969ef52567092995b3879c2476d0bc54bb9850501fd503fbbb884d5597e40315",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 35
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 8,
+          "source_denominator_bits": 68,
+          "source_phase": null,
+          "source_phase_sha256": "302c26b2948e4e6c2dbfb51179acfd18ad7a211a7f133f66d4300d107698362a",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 66
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 13,
+          "source_denominator_bits": 102,
+          "source_phase": null,
+          "source_phase_sha256": "ce71043cba8270862d63c5d72e033584e6c4301f0dfd1230f32ccf0b242bdf7c",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 100
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 21,
+          "source_denominator_bits": 174,
+          "source_phase": null,
+          "source_phase_sha256": "4c67e449968179e33470bb34cbe56b5f55bfc5275093242f7bbbfb6fd33941fd",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 172
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 37,
+          "source_denominator_bits": 310,
+          "source_phase": null,
+          "source_phase_sha256": "014be7a3d0fa34e5d94d3b893f7e3a600107e77419e779d82e2db3f400f5bf93",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 308
+        },
+        {
+          "all_source_denominator_odd": true,
+          "n": 61,
+          "source_denominator_bits": 525,
+          "source_phase": null,
+          "source_phase_sha256": "1821dc22fff55042b33b4f39c07dd0340e1ce58497dd52714c4342940124fe33",
+          "tangent_field_degree": null,
+          "tangent_field_degree_bits": 523
+        }
+      ]
+    },
+    "tangent_minpolys": {
+      "11": {
+        "coefficients_sha256": "a1b6cbffe72a08b4e2478637a635c462054b1eaacb69d18f96444a4439295ba6",
+        "constant": "11",
+        "degree": 10,
+        "leading": "-1"
+      },
+      "15": {
+        "coefficients_sha256": "38e7243cf3a77f7d252a13db58a02adc066204e2bbeb3aa6522f244d37cabe4e",
+        "constant": "1",
+        "degree": 8,
+        "leading": "1"
+      },
+      "21": {
+        "coefficients_sha256": "a9dd4b1684c9acdf56d63119b7f552a1e8de269799d88ea55b8aa04e2bc3cd08",
+        "constant": "1",
+        "degree": 12,
+        "leading": "1"
+      },
+      "3": {
+        "coefficients_sha256": "310ac8ddc46523b672edcb55a95e412e36d428fbb5cea39d219017433941bcf6",
+        "constant": "3",
+        "degree": 2,
+        "leading": "-1"
+      },
+      "35": {
+        "coefficients_sha256": "22d1672ad8cd14099a9a639362311a6e04f763706b7cbc6edb2f0a0600771184",
+        "constant": "1",
+        "degree": 24,
+        "leading": "1"
+      },
+      "5": {
+        "coefficients_sha256": "3f8beab00ec8f15d7bd1baebf68ff9fb4f56b46701ad8e27d25ca90e2dc1af41",
+        "constant": "5",
+        "degree": 4,
+        "leading": "1"
+      },
+      "7": {
+        "coefficients_sha256": "b071384845852ff8f467bda2e9d9a557490c311b65409ea6a77d2a0009f208dd",
+        "constant": "7",
+        "degree": 6,
+        "leading": "-1"
+      },
+      "9": {
+        "coefficients_sha256": "52917aff9a9346e596b1bf78bdca0475757bd351e5c16abaa682fc69e45202ff",
+        "constant": "3",
+        "degree": 6,
+        "leading": "-1"
+      }
+    },
+    "two_zero_projectors": {
+      "15": {
+        "commutator_HS_norm_squared": "28/225",
+        "overlap": "1/15"
+      },
+      "3": {
+        "commutator_HS_norm_squared": "4/9",
+        "overlap": "1/3"
+      },
+      "35": {
+        "commutator_HS_norm_squared": "68/1225",
+        "overlap": "1/35"
+      },
+      "5": {
+        "commutator_HS_norm_squared": "8/25",
+        "overlap": "1/5"
+      },
+      "7": {
+        "commutator_HS_norm_squared": "12/49",
+        "overlap": "1/7"
+      }
+    }
+  }
+}
