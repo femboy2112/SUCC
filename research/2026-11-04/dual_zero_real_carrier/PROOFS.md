@@ -1,131 +1,208 @@
-# Dual Zero / Rational-Real Cayley Carrier — source-preserving theorem dossier
+# Operation Dual Zero × Cayley R-Support — exact rational/real carrier for the original BBP source
 
-**Date 2026-11-04.** Research-only add-on to Europa #500 (pinned parent bf103c4a25bbd83b6cfbad1dd77895928300ddd9), with Gamma Prybar #501 as READ-ONLY sibling. PREREGISTRATION.md was committed before the source holdouts. Original signed four-pole BBP forcing, literal U0=0, older source contracts, historical Lean, main and workflows remain UNCHANGED. All claims below are classical mathematical deductions and source-specific compositions, not a normality proof, physical Feynman amplitude, or independently certified scholarly first.
+**Research date:** 2026-11-04. **Provenance:** additive descendant of SUCC #500 at `bf103c4a25bbd83b6cfbad1dd77895928300ddd9` (which contains #499/#497 and restored primal code). Parallel Gamma Prybar #501 is *read-only context*, not an incorporated ancestry. The original four signed BBP poles, literal `U_0=0`, historical theorem contracts, old Lean and main are unchanged. The first projector/Cayley/cyclotomic identities were derived **before** this round's GitHub preregistration and were marked developmental, never passed off as blinded discovery. The independent finite holdouts were tested afterward.
 
-## DZ-01 — two different zeros really are Fourier dual, NOT the same 1
+**Status:** DZ-01–09 are elementary/classical paper identities applied to the authentic SUCC source and calibrated by exact tests, NOT a proof of π normality or a world-first theorem. The exact tangent degree is classical (Calcut, *Rationality and the Tangent Function*, Proposition 2). The source-dependent exponential rates inherit paper-proved but externally unrefereed SUCC #497/#499 arithmetic theorems. The original signed fixed-frequency Weyl, source-selected `J=o(K)`, signed completed Weil form, RH and π normality are all **OPEN**.
 
-For an odd cyclic source carrier C_M=Z/MZ and basis |a> in C[C_M], define X|a>=|a+1>, Z|a>=exp(2πia/M)|a>. The two character identities exp(2πi 0*a/M)=1 and exp(2πi h*0/M)=1 are different row/column restrictions of ONE bicharacter.
+## Source and two meanings of zero
 
-The zero-frequency and zero-phase projectors are
+Let `e(x)=exp(2πi x)`. For an odd integer `M>=3`, put `H_M=Z/MZ`, and let `|a>` be the standard basis of `C[H_M]`. On this space
 
-P_F = M^(-1) sum_(j mod M) X^j = |u><u|, u=M^(-1/2) sum_a |a>;
-P_0 = M^(-1) sum_(h mod M) Z^h = |0><0|.
+- `X|a>=|a+1>` (shifts source position), `Z|a>=e(a/M)|a>` (measures character);
+- `|u_M> = M^{-1/2} Σ_a |a>` is the *uniform ensemble vector*, not any actual SUCC orbit;
+- `P_freq0=|u_M><u_M| = M^{-1} Σ_j X^j` is the trivial Fourier-mode projector;
+- `P_phase0=|0><0| = M^{-1} Σ_h Z^h` is the source phase-zero projector.
 
-The normalized discrete Fourier transform interchanges them. Rank-one algebra proves exactly
+The two universal characters `e(0*a/M)=1` and `e(h*0/M)=1` are two different evaluations of the same bi-character. They are NOT equal projections.
 
-tr(P_F P_0)=1/M,
-P_F P_0 P_F=P_F/M,
-P_0 P_F P_0=P_0/M,
-||[P_F,P_0]||_HS^2=2(M-1)/M^2.
+### DZ-01 — Exact dual-zero interference/projector theorem
 
-The projections do not commute for M>1. This is a finite path/character sum, not a quantum path integral or a statistical conclusion about a single chosen orbit. In particular, as the authentic conductor increases, their *overlap tends to zero*, although both unprojected zero evaluations return scalar 1.
+Character orthogonality proves both projector formulas. The discrete Fourier transform `F_M` interchanges them (for the declared `+` exponential Fourier convention; either orientation gives the same projections). Both have trace one and rank one, but
 
-## DZ-02 — the rational/real projective Cayley interval
+```
+tr(P_freq0 P_phase0) = 1/M,
+P_freq0 P_phase0 P_freq0 = P_freq0/M,
+P_phase0 P_freq0 P_phase0 = P_phase0/M,
+||[P_freq0,P_phase0]||_HS² = 2(M-1)/M².
+```
 
-Define C(t)=(1+it)/(1-it), with C(infinity)=-1. It is an oriented homeomorphism RP^1(R) -> S^1, with inverse t=-i(z-1)/(z+1) for z != -1. For reduced rational t=a/b,
+Proof: `|<0|u_M>|²=1/M`; sandwich formulas for rank-one projectors are immediate. In the two-dimensional span of `|0>` and `|u_M>`, the commutator has squared HS norm `2s²(1-s²)` with `s²=1/M` and vanishes elsewhere. For `M>1` the projections do NOT commute. The product is literally a finite sum over alternative position/character paths, but it is a **classical finite character sum**, not a quantum path integral or a proof of source-selected Haar mixing.
 
-C(a/b)=((b^2-a^2)+2iab)/(a^2+b^2).
+**Precision:** although both zero conventions produce scalar `1`, their overlap tends to **zero**, not one, as M→infinity. This is the first obstruction to treating a trivial frequency and a phase-fixed source as the same universal state.
 
-This parametrizes all rational-coordinate circle points. No odd p congruent 3 modulo 4 can divide a^2+b^2 when gcd(a,b)=1; if a,b are both odd the only factor 2 in the norm cancels from both coordinates. Thus the reduced coordinate denominators of rational Cayley points are odd and have only splitting primes p=1 mod4. This is the classical Gaussian norm/sum-of-two-squares structure.
+### DZ-02 — Rational and real Cayley interval carrier, including reciprocal arctangent
 
-The four rational UNIT INTERVAL charts C(u), C(1/u), C(-1/u), C(-u) cover the four oriented quarter arcs, with matching endpoints 1,i,-1,-i,1 (reverse direction for the second and fourth charts). For t>0,
+For `t∈R∪{∞}=RP^1(R)` define the *algebraic circle map*
 
-arctan(t)+arctan(1/t)=π/2,
-C(1/t)=-C(t)^(-1).
+```
+C(t) = (1+i t)/(1-i t),   C(∞)=-1.
+```
 
-For t<0 the principal arctan sum is -π/2, giving the same projective circle relation. This is exact elementary geometry, not evidence of temporal Weyl decay.
+For finite t it is `exp(2i arctan t)`. The inverse for `z != -1` is `t=-i(z-1)/(z+1)`. It is a homeomorphism `RP^1(R) -> S¹` (the source has to declare circle orientation, not an observed Haar law). Its rational restriction is a bijection `RP^1(Q) -> S¹(Q)`, where the codomain means points whose real and imaginary coordinates are rational. Indeed, for reduced t=m/n,
 
-## DZ-03 — the REAL algebraic lift of the ACTUAL rational source
+```
+C(m/n) = (n²-m²+2imn)/(n²+m²).
+```
 
-Let x=a/M mod1 be a reduced source phase with odd M>1. Its authentic circle point is ζ=exp(2πia/M), and its CORRECT tangent coordinate is
+If an odd p≡3 mod4 divided `m²+n²`, then `-1` would be a square modulo p unless p divided both m,n, contradicting coprimality. If m,n both odd, `m²+n²≡2 mod8` and the numerators are both even, so the factor 2 cancels. Hence every *reduced coordinate denominator* of a rational Cayley point is ODD and its odd primes are all `1 mod4`—the classical Gaussian split-prime filter. This applies to the rational **chart coordinate**, not automatically to SUCC's actual source phase.
 
-t(x)=tan(πa/M)=-i(ζ-1)/(ζ+1).
+For t>0,
 
-It is real, finite and algebraic. It is NOT generally rational, and crucially it is NOT the original phase number a/M. The inverse C(t(x))=ζ exactly reproduces the selected source character.
+```
+arctan t + arctan(1/t) = π/2,
+C(1/t) = - C(t)^(-1).
+```
 
-The field K=Q(i,ζ)=Q(i,t). Since M is odd, Q(ζ) does not contain i: otherwise it would contain a primitive (4M)th root, impossible because φ(4M)=2φ(M)>φ(M). Hence [K:Q]=2φ(M). Since t is real, [K:Q(t)]=2. Consequently
+The first identity is exact with the principal real branches; for t<0 the arctangent sum is `−π/2`, with the same circle equation. The four rational unit-interval charts `C(u)`, `C(1/u)`, `C(−1/u)`, `C(−u)` for u∈[0,1] cover the oriented four quarter arcs, with endpoints 1,i,−1,−i,1 and the appropriate chart orientations. The infinity endpoints are real/projective, not silently identified with zero inside Q.
 
-**[Q(tan(πa/M)):Q]=φ(M), for reduced odd M>1.**
+### DZ-03 — Source phase → cyclotomic real algebraic tangent (exact degree)
 
-The M=1 origin is t=0 with degree1. This exact tangent degree is classical (Calcut, Rationality and the Tangent Function, Proposition 2). A finite polynomial certificate requiring no π DIGITS is
+Let the **actual** source phase be `x=a/M mod1` in lowest terms with odd `M>1`, and `ζ=e(x)`, a primitive M-th root. Its *correct* Cayley tangent coordinate is
 
-R_M(T)=(1-iT)^φ(M) Φ_M((1+iT)/(1-iT)) in Z[T],
+```
+t(x) = tan(πa/M) = -i (ζ-1)/(ζ+1).
+```
 
-which is irreducible of degree φ(M) for odd M>1. The original rational numerator a specifies WHICH real root. The polynomial without that orientation is not a selected source.
+`ζ != -1` since M is odd; this coordinate is real and finite. Let `K=Q(i,ζ)`. Conversely `ζ=(1+it)/(1-it)`; therefore `K=Q(i,t)`. Since `M` is odd, `i∉Q(ζ)`: otherwise `Q(ζ,i)` would contain a primitive 4M-th root, contradicting `φ(4M)=2φ(M)>φ(M)`. Hence `[K:Q]=2φ(M)`. Because t is real, `[Q(i,t):Q(t)]=2`. Thus **for every reduced odd M>1**,
 
-EXACT source example: the primal zero-seeded first state Y1=109/35 has phase 4/35. Its actual tangent t=tan(4π/35) has degree φ(35)=24. Mistakenly applying C to the rational number 4/35 produces (1209+280i)/1241, with 1241=17*73, an entirely different circle point. This is an explicit no-oracle/source-map discriminator.
+```
+[Q(t(x)):Q] = φ(M).
+```
 
-## DZ-04 — an all-time algebraic degree lower bound, then 6N / 8N
+For M=1, t=0 and degree1. This is an application of **classical** cyclotomic degree theory, not a novel irrationality proof; see J. S. Calcut, *Rationality and the Tangent Function*, Proposition 2, https://www2.oberlin.edu/faculty/jcalcut/tanpap.pdf . An exact **integer** polynomial certificate for t, with no pi digits as an input, is
 
-Both original four-pole and prime-character angular projected source states have ODD reduced phase denominators D_N. All prime factors in D_N arise from the rational forcing factors at indices ≤N and are ≤8N (possible fixed powers of 2 cancel because the source phase has odd denominator). Thus for N>=1,
+```
+R_M(T)=(1−iT)^φ(M) Φ_M((1+iT)/(1−iT)),
+```
 
-0 ≤ log(D_N/φ(D_N)) = sum_(p|D_N) log(p/(p-1))
-  ≤ sum_(p|D_N) 1/(p-1) ≤ H_(8N-1) ≤ 1+log(8N).
+which lies in `Z[T]`, is irreducible and has degree φ(M) for odd M>1. `R_3(T)=3−T²`; `R_5(T)=T⁴−10T²+5`; `R_35` has degree 24. **The source's integer numerator a/M determines the correct real root/branch; the polynomial alone has φ(M) competing roots.** That is a legitimate observer-source selection obligation, not an oracle for π digits.
 
-So the **exact uniform all-N bound** is D_N/(8eN) ≤ φ(D_N) ≤ D_N. By the classical tangent degree theorem, the source-selected R/tangent phase has algebraic degree φ(D_N). Combined with the prior paper-proved, not externally refereed, SUCC #497/#499 results log D_N^U=(6+o(1))N and log D_N^Y=(8+o(1))N, this yields
+**Crucial false chart:** For the primal's first state `Y_1=109/35`, its source circle phase is `4/35` and its *true* tangent is algebraic irrational of degree 24. The **different** rational chart point `C(4/35)=(1209+280i)/1241` with `1241=17·73` is not the original phase `e(4/35)`: one lives in `Q(i)`, the other has root-of-unity order35. The latter requires `tan(4π/35)`, not t=4/35.
 
-log deg_Q tan(πU_N)=(6+o(1))N,
-log deg_Q tan(πY_N)=(8+o(1))N.
+### DZ-04 — Actual BBP source algebraic-degree asymptotics and zero-projector overlap
 
-At the MINIMAL instantaneous finite circle C_D the negative logarithm of the two-zero projector overlap is log D, so its growth exponent matches the real tangent coordinate's algebraic-degree exponent. This is arithmetic complexity, NOT digit entropy, Haar mixing or a physical probability. Use source cumulative LCM M_N for nested chronological conductor arrows; D_N need not be nested.
+Let `D_N^U=den(U_N)` and `D_N^Y=den(Y_N)` for the actual unwrapped **zero-seeded** original and `χ_-4`-primal states. Both are odd (the source and the primal have explicit odd forcing denominators). Every prime dividing either D_N comes from some source rational denominator of size at most `8N`, because integer radix multiplication adds none. For any such odd D,
 
-## DZ-05 — reciprocal arctan is a 2-primary carrier change
+```
+0 <= log(D/φ(D))
+   = sum_{p|D} log(p/(p−1))
+  <= sum_{p|D}1/(p−1)
+  <= H_(8N−1) <= 1+log(8N).
+```
 
-For reduced x=a/M with M odd, the reciprocal tangent 1/t corresponds to the REAL circle phase x'=(1/2-x) mod1. Its reduced denominator is exactly 2M because M-2a is odd and coprime to M. Therefore reciprocal arctan gluing cannot act INSIDE the original odd-denominator source subcategory: it requires a declared 2-primary extension, retaining the old rational numerator, odd conductor and source carry.
+Thus the **exact all-N inequality** is `D/[e·8N] <= φ(D) <= D` for N≥1. Inherit #497's paper source theorem `log D_N^U=(6+o(1))N` and #499's `log D_N^Y=(8+o(1))N`. Then the source-selected REAL tangent coordinate's algebraic degrees obey
 
-The Fourier transform is exact: exp(2πi h x')=(-1)^h conjugate(exp(2πi h x)). A global reciprocal reflection preserves the MODULUS of every Weyl coefficient and every circle tent/collision energy. The parity (-1)^h here is a circle character, NOT the multiplicative χ_-4(p) prime-class character of the Gaussian primal. This distinction is load-bearing.
+```
+log deg_Q tan(π U_N)  = (6+o(1))N,
+log deg_Q tan(π Y_N)  = (8+o(1))N.
+```
 
-## DZ-06 — exact finite Fourier compatibility under conductor growth
+On its **instantaneous minimal** finite cyclic carrier `C_D`, the exact two-zero projector overlap is `1/D`, so the *negative log overlap* has exactly the same exponent 6N or 8N. This is a cross-typed equality of **growth rates**, not a probability of actual source truth, digit entropy, coherent quantum amplitude, or source-selected signed cancellation. For time-compatible carrier inclusions use the cumulative `M_N=lcm_{j<=N}den r(j)` instead of the possibly nonnested D_N.
 
-If M|M'=kM, embed |a> in C_M as |ka> in C_M'. With the + Fourier convention,
+### DZ-05 — Reciprocal chart forces a new 2-primary interface
 
-(F_M f)(h)=M^(-1/2)sum_a exp(2πiha/M)f(a),
+If x=a/M mod1 is reduced, M odd, and t=tan(πx), the reciprocal chart has phase
 
-the genuine Fourier-refinement law is
+```
+x' = 1/2 − x mod 1,
+C(1/t)=e(x')= -conj(e(x)).
+```
 
-(F_M' iota f)(h)=sqrt(M/M') (F_M f)(h modM).
+Its reduced denominator is **exactly 2M**, because M−2a is odd and coprime to M. Hence reciprocal arctangent gluing does NOT act internally on SUCC's original odd-denominator rational phase carrier. It requires a declared 2-primary extension, preserving the old odd arithmetic component. For every integer h,
 
-There are k aliased frequency copies. The old normalized uniform state is mapped to a subgroup-uniform state, NOT the new full Haar vector. Source conductor refinement does not give a natural selected Haar time orbit. The full UNIFORM ensemble on C_M has a weak Haar limit as M grows, but source-selected rational phases are a different object.
+```
+e(hx') = (−1)^h conjugate(e(hx)).
+```
 
-## DZ-07 — the primal angular BBP kernel is exactly quarter-Haar Jacobian
+The absolute Weyl sum and triangular collision energy are unchanged under this global circle reflection. The real half-turn parity `(−1)^h` is an **additive circle character**; it is *not* the multiplicative Dirichlet character `χ_-4(p)` used by the prime-character source quotient. A source-specific signed mixing estimate cannot be conjured from this symmetry alone.
 
-On RP^1(R), C(t)=exp(2i arctan(t)). The pullback of normalized real-circle Haar is the Cauchy reference density dt/(π(1+t^2)); the projective infinity point has no atom. Each of the four unit-interval charts carries probability 1/4. Because the authenticated prime-character angular primal has kernel K_ang(t)=4/(1+t^2) after t=1-source_x,
+### DZ-06 — Exact naturality of the finite Fourier projector under conductor refinement
 
-K_ang(t)dt/π = 4 dt/[π(1+t^2)] on 0≤t≤1
+For odd M|M'=kM, inject the old basis via `ι|a> = |ka>` into the larger cyclic carrier. With
 
-is EXACTLY the reference Haar measure CONDITIONED on its first quarter arc. This is a genuine source scalar/angular integral identification, NOT source time equidistribution. A uniform t-grid is not quarter-Haar: its mean is 1/2 rather than 2log(2)/π<1/2.
+```
+(F_M f)(h) = M^(−1/2) Σ_a e(ha/M) f(a),
+```
 
-## DZ-08 — exact real-projective source dynamics, algebraic forcing and negative controls
+the exact diagram satisfies
 
-Let x_n={U_n} or {Y_n}, source forcing r(n+1), and t_n=tan(πx_n), s_n=tan(πr(n+1)). These are algebraic real numbers with source-authenticated cyclotomic root choices. Define A16+i B16=(1+it)^16, i.e.
+```
+(F_M' ι f)(h) = sqrt(M/M') (F_M f)(h mod M).
+```
 
-A16(t)=sum_(j=0)^8 (-1)^j binom(16,2j)t^(2j),
-B16(t)=sum_(j=0)^7 (-1)^j binom(16,2j+1)t^(2j+1).
+Proof: substitute the subgroup support, factor out 1/sqrt(M') and compare with the old Fourier normalization. Its squared scale is M/M'. The finite Haar unit `|u_M>` becomes uniform on a SUBGROUP under ι, not `|u_M'>`. Thus finite-source conductor growth does NOT canonically select Haar on the completed circle; its Fourier transform has alias copies that must be controlled. The family of uniform probability measures on the entire cyclic groups does converge weakly to real Haar as M→∞, but this is a different **ensemble** from the time-selected SUCC source.
 
-The ORIGINAL affine circle recurrence has the exact projective rational update
+### DZ-07 — Gamma angular kernel is the *quarter-Haar Jacobian*, not selected Haar
 
-t_(n+1)=[B16(t_n)+s_n A16(t_n)]/[A16(t_n)-s_n B16(t_n)],
+The real/Cayley circle angle is `θ=2 arctan t`. Differentiation gives the exact normalized Haar reference on the compactified real line:
 
-including ∞ when the projective denominator vanishes. The coefficients in t are integers and the ONLY external parameter is the exact source-defined algebraic forcing s_n. The original UNWRAPPED integer/rational state and its literal carries remain parallel data; this circle quotient does not discard their source provenance.
+```
+C^* (dθ/(2π)) = dt/[π(1+t²)] ,  t∈R.
+```
 
-This map preserves the Cauchy REFERENCE probability measure because it is conjugate to ×16 followed by a circle rotation. But preserving Cauchy does NOT select Cauchy: the unforced nonnormal fixed orbits x=1/3,1/5,1/15 have algebraic irrational tangent coordinates with minimal polynomials dividing B16(t)-t A16(t). Thus every uniformity claim based solely on this rational/projective naturality is refuted.
+The point at ∞ has zero Haar mass. Each of the four unit-interval charts in DZ-02 carries Haar mass 1/4, with `∫_0^1 dt/(1+t²)=π/4`. SUCC's prime-derived primal transfer is exactly
 
-**Endogenous source falsifier:** the genuine zero-seeded RADIAL projection Z_N=U_N-Y_N from #499 satisfies 0<Z_N<1/(32N+16), while #500 reports log den(Z_N)=(8+o(1))N. Hence its real tangent algebraic degree grows like exp((8+o(1))N), and its two-zero projector overlap decays similarly, YET Z_N→0 and its real-circle empirical measure approaches the point mass δ0. Therefore even the same source's own high-degree real coordinates and vanishing zero-projector overlaps do NOT imply angular mixing.
+```
+K_ang(t)=4/(1+t²)
+```
 
-## DZ-09 — equivalence to a real Cauchy observational normality gate (OPEN)
+after its source-marked `t=1-x` reversal. Therefore `K_ang(t)dt/π = 4dt/[π(1+t²)]` on [0,1] is exactly **Haar conditioned to the first quarter-arc**. This equality is between classical deterministic measures and the **complete scalar BBP kernel**, NOT a distribution theorem for actual chronological Y_n. Uniform u sampling on [0,1] has mean 1/2, while this quarter-Haar density has mean `2 log 2/π<1/2`; a uniform interval grid is NOT a Haar sample without the Jacobian. In particular a bounded empirical histogram or flat measure density cannot be supplied to SUCC's observer as an unearned premise.
 
-For the chosen ZERO-SEEDED angular time trajectory, ν_A=A^(-1)sum_(A≤n<2A) δ_(tan πY_n) is a measure on RP^1(R). By the Cayley homeomorphism, ν_A tends weakly to dt/[π(1+t^2)] iff its selected nontrivial circle Weyl coefficients
+### DZ-08 — Full original source on real projective tangent carrier, with exact rational dynamic formula
 
-A^(-1) sum_(A≤n<2A) C(t_n)^h → 0, for each fixed h!=0.
+Let `x_n={Y_n}` or `{U_n}`, with exactly the same genuine forcing `r(n+1)` and literal zero seed as its chosen source; take `t_n=tan(πx_n)` and `s_n=tan(πr(n+1))` as algebraic real source coordinates. Put
 
-The same original/primal full-prefix normality equivalence is inherited from #499 and SUCC's earlier source bridge. THIS IS AN EQUIVALENT REFORMULATION, NOT A NEW SIGNED SAVING. The Cauchy measure has no finite first absolute moment: any polynomial-moment argument on bare R must state its truncation, while bounded continuous tests on compact RP^1 are legitimate.
+```
+A16(t)+i B16(t) = (1+it)^16,
+A16(t)=Σ_{k=0}^8 (−1)^k binom(16,2k) t^(2k),
+B16(t)=Σ_{k=0}^7 (−1)^k binom(16,2k+1)t^(2k+1).
+```
 
-## Validation, source map and limits
+Because the Cayley map takes rational tangent addition to multiplication on the unit circle, the source-forced recurrence is **EXACTLY**
 
-A complete source/test/receipt package is attached to the conversation as SUCC_Dual_Zero_Rational_Real_Cayley_2026-11-04.zip. Its isolated staged tests: 30 new exact-source and symbolic regressions + 26 inherited primal regressions = 56 PASS; deterministic exact source receipt and compileall PASS. Includes independent integer-LCM vs Fraction original/primal states through n=61; integer cyclotomic character orthogonality; rational Cayley Pythagorean/split-prime checks; SymPy tangent minimal polynomials; genuine radial source controls; 16-multiple tangent polynomial, reciprocal 2M, and irrational fixed-point regressions. Same reasoning/source provenance, not blind independent referee. The full new file payload is separately attached; not claimed committed until byte re-fetch confirms it.
+```
+ t_(n+1) = [B16(t_n)+s_n A16(t_n)] / [A16(t_n)−s_n B16(t_n)]
+```
 
-**NOT CLAIMED:** native complete SUCC checkout tests on THIS child, full provenance/foundations/ordinal, new compiled Lean theorem, independently established world academic priority, selected J=o(K), fixed-h signed Weyl decay, π base16 normality, beta GRH, zeta RH or physical quantum interference. 
+as an equality in `RP^1(R)`, including the projective pole case. In parallel retain the unwrapped integer/rational U_n (or Y_n) and literal carry—this circle/tangent chart does not replace the source's integer lift. Every coefficient of the rational dynamical map is an integer; its sole forcing parameter s_n is an algebraic number determined from the authenticated rational source by DZ-03. No π digit sequence, normality, Haar, or arbitrary sample path is used as construction input.
 
-**NEXT:** Seek a source-specific signed estimate on the actual angular phase amplitudes which fails for the radial null, periodic 1/5, altered-seed and CRT-cofactor mutants. A new 2-primary carrier or exact Cauchy reference without such an inequality does not close normality.
+The reference Cauchy measure is invariant under each such real map because `×16` is a circle covering preserving Haar and multiplication by the source-forcing phase is a circle rotation. **But invariance does not establish mixing of one trajectory**: the unforced fixed phases `1/3`, `1/5`, `1/15` yield irrational fixed tangent coordinates whose exact cyclotomic minimal polynomials divide `B16(t)-tA16(t)`. This is an all-integer algebraic negative control, not a floating test.
 
-**Classical references:** J. S. Calcut, Rationality and the Tangent Function, Proposition 2 (https://www2.oberlin.edu/faculty/jcalcut/tanpap.pdf); NIST DLMF §4.24 tangent addition (https://dlmf.nist.gov/4.24). Earlier SUCC #497/#499/#500 theorem lineage and parallel #501 microscopic signed probes are named source dependencies, not independent new sources.
+### DZ-08b — Endogenous radial null as the decisive anti-Haar witness
+
+The SAME authentic original BBP source's radial complement `Z_N=U_N−Y_N` is STRICTLY positive with `0<Z_N<1/(32N+16)` for every positive N (#499). Europa #500 independently reports `log den(Z_N)=(8+o(1))N` and its matching pair-denominator survival. Therefore the EXACT cyclotomic tangent coordinates `tan(π Z_N)` have algebraic degrees `exp((8+o(1))N)` by DZ-03/04, and the corresponding *two-zero finite-projector overlap* is `exp(−(8+o(1))N)`; nevertheless their REAL phases converge to zero and their empirical measure tends to the Dirac mass at the circle origin, not Haar. This is an actual, zero-seeded, within-source, **signed channel** control, not a mutated source or a random Galois average. A successful new zero-naturalness argument must distinguish angular Y from radial Z by source orientation, not by denominator growth, cyclotomic degree or unit-normalization alone.
+
+### DZ-09 — A legitimate real-observer equidistribution gate (equivalent, not proved)
+
+For real/projective empirical measures `ν_A=A^{-1}Σ_{A<=n<2A} δ_{tan(πY_n)}` on `RP^1(R)`, the Cayley homeomorphism gives
+
+```
+ν_A -> Cauchy(dt/[π(1+t²)]) weakly
+     iff A^(-1)Σ_{n=A}^{2A-1} C(t_n)^h -> 0 for every integer h !=0
+     iff source-selected angular fixed-h Weyl decay on epochs.
+```
+
+The analogous full-prefix and original/primal comparisons are already handled by SUCC's Weyl transport. This is a source-faithful coordinate change, NOT an independent route to the open decay. The reference Cauchy distribution has *no absolute first moment*, so a supposed proof through polynomial moments on the noncompact R coordinate is invalid unless appropriately truncated/bounded or reexpressed on compact `RP^1(R)`. Its correct test space consists of bounded continuous functions on the compactification. The Cauchy reference is obtained from the **declared circle geometry**, never inferred from finite source histograms.
+
+### Resulting claim ledger
+
+| Claim | Status and prior art | Missing for π |
+|---|---|---|
+| DZ-01 | Classical finite Fourier, exact projector compositions | Selected temporal off-diagonal signed cancellation |
+| DZ-02 | Classical stereographic/Cayley Gaussian rational atlas; explicit split/inert denominator filter | Source map into *actual* cyclotomic phase, not guessed rational tangent |
+| DZ-03 | Classical Calcut/tangent cyclotomic degree; exact branch selection | Source-specific real mixing law |
+| DZ-04 | New-to-SUCC composition with #497/#499 paper denominator asymptotics | Galois degree/prime mass is NOT Haar entropy |
+| DZ-05 | Classical reciprocal arctangent, new typed 2-primary SUCC boundary | Directed source asymmetry preserved after reflection |
+| DZ-06 | Exact finite Fourier refinement map | Source-selected phase orientations not uniform ensemble |
+| DZ-07 | Classical Haar Jacobian + *existing* SUCC Gaussian primal | Scalar period measure not time-orbit law |
+| DZ-08 | Exact tangent-angle conjugacy of authentic source | No spectral-gap/mixing deduction, periodic hostile controls |
+| DZ-09 | Classical homeomorphic weak-* transport | All-horizon original selected Weyl saving OPEN |
+
+**Explicit next verdict-changing task:** Transport the signed `0-frequency-row versus phase0-column`0 commutator through the *ACTUAL, ZERO-SEEDED chronological source* and derive a new bound on the source-selected (not ensemble) nontrivial character amplitudes. Calibrate against real-algebraic fixed points, radial π-null projection, prime-cofactor CRT ghost and coherent wrong seed. Unless a source-dependent inequality rejects all of them for an authenticated reason, no further "zero naturality" or "arctan chart" identity advances π normality.
+
+### Primary provenance and citations
+
+- SUCC source: PR #500 Europa Weyl README, source-selected finite Weyl form; #499 PRIMAL_QUOTIENT_THEOREM; #497 selected prime saturation; original Oct26 TWO_QUADRATIC_ATOMS; #501 Prybar is sibling context only.
+- J. S. Calcut, *Rationality and the Tangent Function*, Sections 2–3, especially Proposition 2 (exact cyclotomic tangent degrees): https://www2.oberlin.edu/faculty/jcalcut/tanpap.pdf
+- NIST DLMF §§4.23–4.24 (arctangent and tangent addition): https://dlmf.nist.gov/4.24
+- Classical Fourier/Pontryagin duality and finite Fourier representations; these methods are not claimed new.

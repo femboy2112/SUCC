@@ -1,0 +1,74 @@
+RUN: 2026-11-04 source-preserving staged proof campaign
+ROOT: isolated source/test staging, NOT complete SUCC checkout
+CMD: python -m unittest discover -s tests -p test_zero_real_carrier.py -v
+test_all_projector_overlap_m (test_zero_real_carrier.DualZeroTests.test_all_projector_overlap_m) ... ok
+test_angular_kernel_is_quarter_haar_jacobian (test_zero_real_carrier.DualZeroTests.test_angular_kernel_is_quarter_haar_jacobian) ... ok
+test_cayley_pythagorean_unit_and_inverse (test_zero_real_carrier.DualZeroTests.test_cayley_pythagorean_unit_and_inverse) ... ok
+test_cayley_split_only_odd_denominators (test_zero_real_carrier.DualZeroTests.test_cayley_split_only_odd_denominators) ... ok
+test_commutator_exact_hilbert_schmidt (test_zero_real_carrier.DualZeroTests.test_commutator_exact_hilbert_schmidt) ... ok
+test_cyclotomic_tangent_polynomial_irreducible (test_zero_real_carrier.DualZeroTests.test_cyclotomic_tangent_polynomial_irreducible) ... ok
+test_endogenous_radial_collapses_despite_high_degree (test_zero_real_carrier.DualZeroTests.test_endogenous_radial_collapses_despite_high_degree) ... ok
+test_exact_cyclotomic_character_orthogonality (test_zero_real_carrier.DualZeroTests.test_exact_cyclotomic_character_orthogonality) ... ok
+test_explicit_totient_lower_bound_via_source_support (test_zero_real_carrier.DualZeroTests.test_explicit_totient_lower_bound_via_source_support) ... ok
+test_false_commuting_cayley_16_scale (test_zero_real_carrier.DualZeroTests.test_false_commuting_cayley_16_scale) ... ok
+test_forced_mobius_source_step (test_zero_real_carrier.DualZeroTests.test_forced_mobius_source_step) ... ok
+test_four_pole_equals_angular_plus_radial (test_zero_real_carrier.DualZeroTests.test_four_pole_equals_angular_plus_radial) ... ok
+test_fourier_swaps_const_and_delta_projectors_symbolically (test_zero_real_carrier.DualZeroTests.test_fourier_swaps_const_and_delta_projectors_symbolically) ... ok
+test_fractional_primal_first_tangent_degree (test_zero_real_carrier.DualZeroTests.test_fractional_primal_first_tangent_degree) ... ok
+test_haar_reference_not_source_h1 (test_zero_real_carrier.DualZeroTests.test_haar_reference_not_source_h1) ... ok
+test_harmonic_weight_density_not_uniform (test_zero_real_carrier.DualZeroTests.test_harmonic_weight_density_not_uniform) ... ok
+test_independent_sympy_minimal_polynomial (test_zero_real_carrier.DualZeroTests.test_independent_sympy_minimal_polynomial) ... ok
+test_irrational_tangent_periodic_controls_are_exact (test_zero_real_carrier.DualZeroTests.test_irrational_tangent_periodic_controls_are_exact) ... ok
+test_nested_fourier_refinement_intensity (test_zero_real_carrier.DualZeroTests.test_nested_fourier_refinement_intensity) ... ok
+test_original_signed_source_first (test_zero_real_carrier.DualZeroTests.test_original_signed_source_first) ... ok
+test_primal_rational_phase_not_rational_cayley_coordinate (test_zero_real_carrier.DualZeroTests.test_primal_rational_phase_not_rational_cayley_coordinate) ... ok
+test_quarter_arcs_source_rational (test_zero_real_carrier.DualZeroTests.test_quarter_arcs_source_rational) ... ok
+test_rational_tangent16_integer_binomial (test_zero_real_carrier.DualZeroTests.test_rational_tangent16_integer_binomial) ... ok
+test_reciprocal_cayley_reflection (test_zero_real_carrier.DualZeroTests.test_reciprocal_cayley_reflection) ... ok
+test_reciprocal_doubles_original_odd_conductor (test_zero_real_carrier.DualZeroTests.test_reciprocal_doubles_original_odd_conductor) ... ok
+test_source_cyclotomic_phase_exponent (test_zero_real_carrier.DualZeroTests.test_source_cyclotomic_phase_exponent) ... ok
+test_source_field_degree_growth_diagnostic_only (test_zero_real_carrier.DualZeroTests.test_source_field_degree_growth_diagnostic_only) ... ok
+test_source_independent_modular_oracle_both (test_zero_real_carrier.DualZeroTests.test_source_independent_modular_oracle_both) ... ok
+test_source_odd_phase_never_recovers_even_halfturn (test_zero_real_carrier.DualZeroTests.test_source_odd_phase_never_recovers_even_halfturn) ... ok
+test_zero_character_row_col_both_one (test_zero_real_carrier.DualZeroTests.test_zero_character_row_col_both_one) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.829s
+
+OK
+CMD: python -m unittest discover -s tests -p test_prime_character_primal.py -v
+test_01_group_on_every_8_tap_basis (test_prime_character_primal.PrimeCharacterPrimalExact.test_01_group_on_every_8_tap_basis) ... ok
+test_02_group_characters_are_orthogonal_projectors (test_prime_character_primal.PrimeCharacterPrimalExact.test_02_group_characters_are_orthogonal_projectors) ... ok
+test_03_character_dimensions (test_prime_character_primal.PrimeCharacterPrimalExact.test_03_character_dimensions) ... ok
+test_04_source_echo_is_actual_dual_formula (test_prime_character_primal.PrimeCharacterPrimalExact.test_04_source_echo_is_actual_dual_formula) ... ok
+test_05_original_angular_and_radial_source_taps (test_prime_character_primal.PrimeCharacterPrimalExact.test_05_original_angular_and_radial_source_taps) ... ok
+test_06_angular_is_chi4_eigen_and_radial_trivial (test_prime_character_primal.PrimeCharacterPrimalExact.test_06_angular_is_chi4_eigen_and_radial_trivial) ... ok
+test_07_source_orig_not_altered (test_prime_character_primal.PrimeCharacterPrimalExact.test_07_source_orig_not_altered) ... ok
+test_08_independent_prime_residue_all_four_classes (test_prime_character_primal.PrimeCharacterPrimalExact.test_08_independent_prime_residue_all_four_classes) ... ok
+test_09_full_fraction_prime_source_observer (test_prime_character_primal.PrimeCharacterPrimalExact.test_09_full_fraction_prime_source_observer) ... ok
+test_10_angular_and_radial_eigen_residue_actual (test_prime_character_primal.PrimeCharacterPrimalExact.test_10_angular_and_radial_eigen_residue_actual) ... ok
+test_11_angular_odd_denominator_every_source_index (test_prime_character_primal.PrimeCharacterPrimalExact.test_11_angular_odd_denominator_every_source_index) ... ok
+test_12_primitive_state_odd_denominator_and_exact_split (test_prime_character_primal.PrimeCharacterPrimalExact.test_12_primitive_state_odd_denominator_and_exact_split) ... ok
+test_13_radial_strict_positive_and_decay (test_prime_character_primal.PrimeCharacterPrimalExact.test_13_radial_strict_positive_and_decay) ... ok
+test_14_source_odd_inverse_branch_never_lost (test_prime_character_primal.PrimeCharacterPrimalExact.test_14_source_odd_inverse_branch_never_lost) ... ok
+test_15_two_state_impulse_and_negative_4_clock (test_prime_character_primal.PrimeCharacterPrimalExact.test_15_two_state_impulse_and_negative_4_clock) ... ok
+test_16_radial_and_angle_state_by_2_independent_recurrences (test_prime_character_primal.PrimeCharacterPrimalExact.test_16_radial_and_angle_state_by_2_independent_recurrences) ... ok
+test_17_original_epoch_current_transfer_exact_bound (test_prime_character_primal.PrimeCharacterPrimalExact.test_17_original_epoch_current_transfer_exact_bound) ... ok
+test_18_base_minus4_series_is_alternating_positive_terms (test_prime_character_primal.PrimeCharacterPrimalExact.test_18_base_minus4_series_is_alternating_positive_terms) ... ok
+test_19_original_mutant_is_not_frobenius_pure_gaussian (test_prime_character_primal.PrimeCharacterPrimalExact.test_19_original_mutant_is_not_frobenius_pure_gaussian) ... ok
+test_20_prime_shadow_blind_to_a_rational_wrong_seed (test_prime_character_primal.PrimeCharacterPrimalExact.test_20_prime_shadow_blind_to_a_rational_wrong_seed) ... ok
+test_21_reject_wrong_legendre_sign (test_prime_character_primal.PrimeCharacterPrimalExact.test_21_reject_wrong_legendre_sign) ... ok
+test_22_prime_transport_for_every_eight_tap_basis (test_prime_character_primal.PrimeCharacterPrimalExact.test_22_prime_transport_for_every_eight_tap_basis) ... ok
+test_23_primal_prime_pulses_all_signs_and_genuine_recurrence (test_prime_character_primal.PrimeCharacterPrimalExact.test_23_primal_prime_pulses_all_signs_and_genuine_recurrence) ... ok
+test_24_independent_angular_integer_lcm_state_horizons (test_prime_character_primal.PrimeCharacterPrimalExact.test_24_independent_angular_integer_lcm_state_horizons) ... ok
+test_25_original_angular_p_local_survival_holdouts (test_prime_character_primal.PrimeCharacterPrimalExact.test_25_original_angular_p_local_survival_holdouts) ... ok
+test_26_character_pulse_mutant_fails_original_primal (test_prime_character_primal.PrimeCharacterPrimalExact.test_26_character_pulse_mutant_fails_original_primal) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 2.904s
+
+OK
+CMD: python research/2026-11-04/dual_zero_real_carrier/probe.py --verify
+DUAL_ZERO_REAL_SOURCE_EXACT_RECEIPT_VERIFIED 4e671e46bf0656fa20990b8d095491453735be6ece8454e6873179f1571595df
+CMD: python -m compileall -q research/2026-11-04/dual_zero_real_carrier tests/test_zero_real_carrier.py
+COMPILEALL_PASS
