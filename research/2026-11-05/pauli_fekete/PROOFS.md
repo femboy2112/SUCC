@@ -89,6 +89,19 @@ This is a coherent "Pauli-like" antisymmetric **SUFFICIENT** equidistribution me
 
 To use this theorem on SUCC epochs \(n=A,\ldots,2A-1\), replace N by A and \(x_j=U_{A+j-1}\bmod1\). A source-derived proof of \(\inf_{A\to\infty}\mathcal E_A^{\rm orig}\ge0\) for ALL sufficiently large integer epochs A would give uniform Haar limits on every such epoch. Geometrically decomposing long prefixes into dyadic-length consecutive epochs then implies the full original Weyl criterion, with bounded initial blocks negligible. The theorem does not assert this new source inequality.
 
+### Exact Slater-wedge interpretation, and its limit
+
+Use the full N-mode character vectors \(v_N(x_j)\in\mathbb C^N\). Their antisymmetrized exterior product obeys the **literal fermionic linear-algebra identity**
+\[
+\boxed{
+\|v_N(x_1)\wedge\cdots\wedge v_N(x_N)\|^2
+=\det[\langle v_N(x_i),v_N(x_j)\rangle]_{ij}
+=\frac{|\Delta_N|^2}{N^N}\in[0,1].}\tag{PF8a}
+\]
+The wedge vanishes for identical phase orbitals and reaches norm one at a rotated complete root-of-unity grid, where the N orbitals are orthonormal. This is the closest formal Pauli-exclusion analogue in the user's sense.
+
+**Important scaling:** PF7 asks only that \(\log\|v_1\wedge\cdots\wedge v_N\|^2=o(N^2)\), NOT that the wedge norm tends to one. That distinction is necessary because normality is an asymptotic empirical statement, and no actual source-fermion statistics or global quantum state has been identified. The cluster/qubit model in parent #512 is an OPTIONAL separate tensor-product encoding; it does not enforce a large Slater wedge norm for its source phases.
+
 ## PF-03: local "hard core" exclusion is NOT enough
 
 Take \(x_{N,j}=j/(2N)\), j=0,...,N-1. All phases are distinct, with minimum circular spacing exactly \(1/(2N)\). The empirical measure nevertheless converges to twice Lebesgue measure on HALF the circle, not Haar on all of S¹. In particular
