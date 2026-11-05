@@ -1,9 +1,11 @@
 from fractions import Fraction as Q
 from math import pi, sin, cos, sqrt, floor
+from functools import lru_cache
 import cmath, time
 ORIG=(Q(4),Q(0),Q(0),Q(-2),Q(-1),Q(-1),Q(0),Q(0))
 ANG=(Q(2),Q(2),Q(1),Q(0),Q(-1,2),Q(-1,2),Q(-1,4),Q(0))
 RAD=(Q(2),Q(-2),Q(-1),Q(-2),Q(-1,2),Q(-1,2),Q(1,4),Q(0))
+@lru_cache(None)
 def forcing(n,taps=ORIG):
     return sum((w/Q(8*(n-1)+j) for j,w in enumerate(taps,1)),Q())
 def forcing_poly(n):
