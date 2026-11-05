@@ -114,11 +114,13 @@ class ObserverRelativeReturn(unittest.TestCase):
         s=Q(1,5)
         for n in (0,1,2,7,21,65):
             self.assertEqual((16**n*s)%1,s)
-        # A changed same-forcing seed does NOT alter the radial zero-seed link.
+        # A 1/5 seed adds a constant circle rotation, and hence cancels
+        # EXACTLY in all lag characters (though it changes the initial seed).
         states=state_prefix(22,RAD)
         for n in (1,5,15):
-            self.assertEqual((states[n+1]-states[n]),stable_exact_lag(n,1,48)
-                             + ((states[n+1]-states[n])-stable_exact_lag(n,1,48)))
+            raw=(states[n+1]+16**(n+1)*s)-(states[n]+16**n*s)
+            self.assertEqual((raw-(states[n+1]-states[n]))%1,0)
+            self.assertNotEqual(raw,states[n+1]-states[n])
 
     def test_06_two_independent_numerical_lag_oracles(self):
         for ell in (1,2):
