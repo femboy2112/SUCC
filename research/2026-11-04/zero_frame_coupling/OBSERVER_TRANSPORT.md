@@ -84,7 +84,7 @@ BE-02, with w=1 and c=-15/64, then gives
 
 `M(f)=256/(15 pi Lambda_A)+O(Lambda_A^-2+Lambda_A/A+H_A(4sigma)^-A)`.
 
-Since `Lambda_A~log A`, the error is o(1/Lambda_A); inversion proves the
+Since `log(A)/16 < Lambda_A <= log(A)`, the error is o(1/Lambda_A); inversion proves the
 lower bound. This establishes the optimal **order** Theta(Lambda_A), not
 an exact leading operator norm. The chosen f is adversarial observer data,
 not a claim that the genuine angular stream equals this compensator. A better

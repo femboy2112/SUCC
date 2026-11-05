@@ -62,3 +62,10 @@ explicitly not selected lag zero. All remaining original normality and
 signed-cancellation gates are left open.
 
 No main source, inherited proof, or test file was changed during this review.
+
+Coordinator notation correction after this review: the final observer file
+replaces `Lambda_A~log A` with the exact schedule bracket
+`log(A)/16 < Lambda_A <= log(A)`. The floor gives comparability, not ratio
+convergence to one. The reviewed error argument uses only comparability;
+the theorem and its constants are unchanged. The hash above records the
+pre-correction reviewed text, rather than falsely certifying a later file.
