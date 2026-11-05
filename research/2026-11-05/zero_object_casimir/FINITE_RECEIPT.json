@@ -1,0 +1,94 @@
+{
+  "topic": "original BBP zero-object/casimir source-seed pressure",
+  "parent_pr": 513,
+  "parent_sha": "727a97a006e929243e0fee1ab44cf52dc68e2c8f",
+  "original_source_taps": [
+    "4",
+    "0",
+    "0",
+    "-2",
+    "-1",
+    "-1",
+    "0",
+    "0"
+  ],
+  "original_seed": "U_0=0",
+  "fresh_preregistered_epochs": [
+    9,
+    11
+  ],
+  "exact_var_over_pi2": [
+    {
+      "A": 9,
+      "rational_num_digits": 99,
+      "rational_den_digits": 102,
+      "approx": 0.0020651539376644,
+      "variance_approx": 0.020382252392099,
+      "proven_upper_approx": 0.0527610853908
+    },
+    {
+      "A": 11,
+      "rational_num_digits": 138,
+      "rational_den_digits": 141,
+      "approx": 0.0014160838577158,
+      "variance_approx": 0.013976187474423,
+      "proven_upper_approx": 0.0361221180033
+    }
+  ],
+  "independent_rational_gaussian_bridge": [
+    {
+      "rho": "2/5",
+      "d": 4,
+      "k": 1,
+      "two_boundary_var": "15561/18589",
+      "single_boundary_var": "21/25"
+    },
+    {
+      "rho": "3/7",
+      "d": 7,
+      "k": 3,
+      "two_boundary_var": "16831335520/16955457247",
+      "single_boundary_var": "116920/117649"
+    },
+    {
+      "rho": "1/2",
+      "d": 5,
+      "k": 2,
+      "two_boundary_var": "315/341",
+      "single_boundary_var": "15/16"
+    }
+  ],
+  "probe": {
+    "file": "research/2026-11-05/zero_object_casimir/seed_pressure_probe.py",
+    "git_blob_sha": "73227edaace1304c9373bef3ce3d56ac0d58c5e7",
+    "sha256": "b9155ee4f8b04198d483206ed81f03bd0f8b2a66086fb5de5393057ada522259",
+    "stdout_sha256": "ef494a31952b71a820cde0398ca08f5d927f34a89b591f73db09bee424de7992",
+    "outcome": "PASS"
+  },
+  "focused_tests": {
+    "file": "tests/test_zero_object_casimir.py",
+    "methods_passed": 12,
+    "failures": 0,
+    "errors": 0,
+    "git_blob_sha": "613f4c356620c7d2d0c2f5694e1d25f8ad57f427",
+    "sha256": "58a9aabe1bb0b96bad92b712d627fcfd3e522b44b6138881d286540c4305d5a4",
+    "log_sha256": "f3adb2227fe2e5f50a815286b553431faa9cdb846c174b9793bfb5886476f219"
+  },
+  "paper_claims": [
+    "source-independent seed ensemble Fekete mean zero",
+    "Bernoulli exact covariance, bound < 4.808/A^2",
+    "all-integer-epoch typical Fekete energy via first Borel-Cantelli",
+    "finite zero-prefix whole-epoch Haar joint law, causal source resonance",
+    "high-resolution zero-cylinder phase repair at K=2A+O(log A)",
+    "Gaussian two-form Schur complement and reversible baseline"
+  ],
+  "unverified": [
+    "selected original determinant lower bound",
+    "selected original fixed-h Weyl",
+    "pi base-16 normality",
+    "new Lean theorem",
+    "external academic referee",
+    "physical Casimir force in mathematics",
+    "full native SUCC CI exact child"
+  ]
+}
