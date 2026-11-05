@@ -5,6 +5,7 @@ Commands executed from the isolated `SUCC-final-clausen` worktree:
 ```
 python research/2026-11-05/selected_orbit_final_pin/front_delta/regularized_cut.py
 python research/2026-11-05/selected_orbit_final_pin/front_delta/test_regularized_cut.py
+python research/2026-11-05/selected_orbit_final_pin/front_delta/verify_receipt.py
 ```
 
 The probe completed all four preregistered fresh epochs `17,29,53,89`, two
@@ -13,6 +14,24 @@ energy: 48 source/radius/epoch rows. The final focused suite passed **8 tests**
 in 0.228 seconds. This worker did not run the full repository suite; that is
 reserved for the coordinator's integration head. No hosted CI result is
 claimed here.
+
+The first run used system mpmath 1.2.1, below the repository's declared
+`mpmath>=1.3,<2` range. The coordinator then supplied the isolated declared
+environment `/tmp/succ-final-pin-venv-20261105` with mpmath **1.4.1**. Under that
+Python, all 8 focused tests passed again (0.203 seconds), and an exact-byte
+copy of the generator replayed the entire 48-row probe in a temporary
+directory. The historical receipt was preserved. The replay was
+**byte-identical**, SHA-256
+`102325f0a70ae561c75743be720fbe7f219a33e3264d01877ec5bca4e6d27d16`.
+All **816 rational intervals** and every literal-carry digest were identical.
+Thus the finite result is also reproduced in the declared dependency range.
+
+`verify_receipt.py` checks all 816 exact interval orderings/signs, all 48
+finite-cut transport bounds using the rational upper bound `pi<22/7`, exact
+zero means at `K=A`, all eight original/`1/5` row equalities, and the generator
+hash. Its optional second receipt argument verifies exact endpoint overlap
+and reports byte and interval equality. The source hash matches the actual
+generator bytes. No original sample is relabeled fresh by this replay.
 
 The first test run had one test-oracle error and one test-oracle assertion
 failure: mpmath interval conversion does not accept a bare Fraction in a

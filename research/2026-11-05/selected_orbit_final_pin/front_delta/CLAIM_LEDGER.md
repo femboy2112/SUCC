@@ -6,6 +6,7 @@
 | RC-01 | Fixed Abel radius gives source-uniform `o(A)` neutral cut layer | C, independently paper-reviewed within campaign | PROOFS §3, exact series and geometric sums | Universal in source and seed, so cannot select original zero |
 | RC-01S | Unforced cut profile tends to `c^2 log(1-r)` at `t/A->c` | D, independently paper-reviewed within campaign | RC2 and unforced interval controls | Refutes source-uniform neutrality at positive linear cut fraction |
 | RC-02 | Cut `K=2A+ell` approximates actual energy within `LIP_r16^-ell/(30A)` | C, independently paper-reviewed within campaign | PROOFS §4, focused tests | Smooth fixed radius required; no singular Fekete conclusion |
+| RC-02S | Source-uniform endpoint error cannot be `o(1/A)` | D, paper derivation checked by coordinator | PROOFS §4, explicit `A`-dependent source | Not a counterexample for the fixed original source |
 | RC-03 | One fixed radius and finite cut give a weaker sufficient obligation than singular Fekete | C relative to Gate C; B relative to Gate A | RC3–RC4 and sparse-collision equidistributed countermodel | Final premise is equivalent to Weyl and remains OPEN |
 | RC-04 | Original and rational seed `1/5` have identical pair observables | B, exact elementary congruence | `16^j-16^i` divisible by 5 | Therefore these pair observables cannot identify literal zero |
 | RC-E01 | 48 fresh interval rows at four epochs, two radii, six controls | E, finite verified observation | FINITE_RECEIPT.json; independent forcing and interval remainder | No asymptotic rate, typicality or normality follows |

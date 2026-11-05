@@ -132,6 +132,17 @@ minimum-spacing hypothesis, no infinite sum of shells and no control of
 logarithmically singular pairs. This estimate survives coherent wrong seeds;
 it transports their negative energy faithfully.
 
+The order `1/A` is sharp **uniformly over arbitrary sources**. For each `A`
+choose source lifts zero on `A,...,2A-2` and `u_(2A-1)=1/4` (any such finite
+lift history is realized by deterministic forcing). Every final pair has
+`15/256<=Q<1/16`. Since `g_r` strictly increases on `[0,1/2]`, its mean excess
+over `g_r(1/4)` is at least
+`d_r=[g_r(1/4+15/512)-g_r(1/4)]/2>0`: use the upper half of the integration
+interval. Every earlier zero-phase pair has nonnegative excess as well.
+Thus `P_(A,2A,r)-E_(A,r)(0)>=d_r(A-1)/A^2`, ruling out a source-uniform
+`o(1/A)` replacement. This adversary depends on `A` and is **not** the
+original BBP source or a fixed-source asymptotic counterexample.
+
 ## 5. RC-03: a strictly weaker replacement for the singular Fekete obligation
 
 For `c_A(h)=A^-1 sum_(A<=n<2A)e(hU_n(0))`, absolute Fourier convergence gives
