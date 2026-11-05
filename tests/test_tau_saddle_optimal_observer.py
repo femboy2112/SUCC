@@ -110,6 +110,7 @@ class TauSaddle(unittest.TestCase):
         self.assertLess(abs(a0-w),mp.mpf('0.1'))
         self.assertLess(abs(phi(a0)),mp.mpf('1e-37'))
 
+
     def test_11_preregistered_fresh_crossing_n7(self):
         self.assertEqual(certified_sign(7,480),1)
         self.assertEqual(certified_sign(7,481),-1)
