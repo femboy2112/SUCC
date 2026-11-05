@@ -131,5 +131,16 @@ class PointedCocategoryTransportTests(unittest.TestCase):
             self.assertEqual(found, expected)
 
 
+    def test_integer_forcing_mutant_is_invisible_to_circle_characters(self):
+        # The phase link sees r mod 1, NOT the unwrapped integer carry.
+        altered = orbit(4, forcing=lambda n: exact_forcing(n)+1)
+        self.assertNotEqual(altered[1], orbit(1)[1])
+        s = Q(3, 11)
+        for n in range(4):
+            link = phase(character(altered, n+1, s)
+                         - 16*character(altered, n, s))
+            self.assertEqual(link, phase(exact_forcing(n+1)))
+
+
 if __name__ == "__main__":
     unittest.main()
