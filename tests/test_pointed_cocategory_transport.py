@@ -170,5 +170,35 @@ class PointedCocategoryTransportTests(unittest.TestCase):
             self.assertLessEqual(exact_forcing(j), Q(8, j*j))
 
 
+    def test_sharp_four_pole_polynomial_certificate(self):
+        for j in range(2, 65):
+            t = j-2
+            p = 120*j*j-89*j+16
+            d = (2*j-1)*(4*j-1)*(8*j-7)*(8*j-3)
+            defect = 13*d-25*j*j*p
+            predicted = (3656*t**4+18161*t**3+30078*t*t
+                         +16694*t+141)
+            self.assertEqual(defect, predicted)
+            self.assertGreater(defect, 0)
+            self.assertLess(exact_forcing(j), Q(13, 25*j*j))
+
+    def test_source_mass_finite_reindexing_exact(self):
+        # Truncated rectangular source sums: no infinite inference from test.
+        for N, M in ((1, 4), (3, 8), (6, 14), (8, 16)):
+            lhs = sum((exact_forcing(n+k)/16**k
+                       for n in range(1, N+1)
+                       for k in range(1, M-n+1)), Q(0))
+            rhs = sum((exact_forcing(j) * sum(
+                (Q(1, 16**(j-n))
+                 for n in range(1, min(N, j-1)+1)), Q(0))
+                       for j in range(2, M+1)), Q(0))
+            self.assertEqual(lhs, rhs)
+
+    def test_certified_constant_strictly_improves_inherited_one(self):
+        self.assertLess(Q(143, 875), Q(119, 648))
+        self.assertEqual(143*648, 92664)
+        self.assertEqual(119*875, 104125)
+
+
 if __name__ == "__main__":
     unittest.main()
