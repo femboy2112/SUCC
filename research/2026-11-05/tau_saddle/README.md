@@ -27,3 +27,19 @@ where the coefficient L1 norm grows as \(\exp((50.29309+o(1))n)\). **Very accura
 **Validation:** 13/13 focused local tests pass. The exact tested source Git blob SHA is \`372bb3661041f55b681c167f7d920169f1eb5cbc\`, verified against the remote committed Git blob. Development exact moment crossings: n=1,2,3,5. New prospectively declared exact Fraction+tail certified crossings: n=7→481, n=11→765, n=13→908. All tests use original radial taps, not π digits. Source-dependent infinite results rest on displayed mathematics, not these finite cases. No full native/hosted suite, new Lean kernel, external referee or worldwide novelty claim.
 
 **Next:** A source-authenticated *signed angular–radial–carry* inequality. The same-forcing coherent wrong seed shares this entire radial saddle/optimal-truncation theorem, so this discovery is NOT evidence of equidistribution by itself.
+
+## New post-preregistration signed angular response (AR-01/02)
+
+[ANGULAR_RESPONSE.md](ANGULAR_RESPONSE.md) proves an additional **source-only mixed observation**. At the unique real radial moment zero \(k_c(n)\), the scalar \(I_{k_c(n)}(n)=0\), but the Gaussian-half-arc transported response
+\[
+\mathcal M_{n,k}(q)=\int_0^1t^{8n}\rho(t)(1-t^8)^k
+   e^{i q[\theta_0(t)-\pi/8]}dt
+\]
+has **strictly positive imaginary part for every n>=1, real k>=0 and integer q=1,...,8**. Its exact saddle behavior is
+\[
+\lim_{n\to\infty}
+n\,\mathcal M_{n,k_c(n)}(q)/
+  \left[\mathrm B(n+1/8,k_c(n)+1)/8\right]
+=i q\,\frac{3825\sqrt2-5406}{2048}.
+\]
+This is a strictly oriented analytic angular–radial response despite scalar radial cancellation. It does not bound the original chronological \(\pi\)-orbit's Weyl sums. [Four new focused tests](../../../../tests/test_tau_angular_response.py) passed locally, making 17/17 total. Their executed Git blob SHA is \`1f7e0b42453882998233526dcd9c2bfce255e152\`, verified against GitHub.
