@@ -1,0 +1,22 @@
+{
+  "checked_from_head": "c07e54a6ca6895486741402d8e851840ff8db6a0",
+  "working_tree_change": "Remove one final blank line from certified_phase.py and refresh its receipt hash; no AST change",
+  "native_input_manifest_unchanged": true,
+  "native_input_count": 1512,
+  "helper_ast_matches_native_run": true,
+  "focused_test_count": 12,
+  "focused_result": "OK",
+  "full_receipt_replay": {
+    "status": "PASS",
+    "cases": 5,
+    "factorial_cells": 80,
+    "chords": 4272640,
+    "state_sha256": "4c03b526680b65fc0a81de14c8ea62317620616e38a08f4a54abe583ce9cea2b"
+  },
+  "instrument_hashes": {
+    "certified_phase.py": "202fa182dec8574e3de7a7b1dba545c92540094b452349532d5e0e3b1778d64f",
+    "coupling_probe.py": "a391ab2f4241e16767dbc385b921d1641c12bd74d626395fdc63dcac9179201b"
+  },
+  "raw_grid_sha256": "820ff99d557ae18608c6464aac2e96f36b9c6cec5548f1f92f88a73534cb0bf1",
+  "authority": "exact finite replay and input comparison; no asymptotic conclusion"
+}

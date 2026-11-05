@@ -1,0 +1,67 @@
+{
+  "determinants": [
+    {
+      "determinant": "-135/131072",
+      "m": 5,
+      "predicted_equal": true
+    },
+    {
+      "determinant": "-6075/262144",
+      "m": 6,
+      "predicted_equal": true
+    }
+  ],
+  "observer_rows": [
+    {
+      "A": 7,
+      "both_transfer_bounds": true,
+      "exact_inverse_bound": "6591/2744",
+      "plain_max_squared": "3217/21609",
+      "weighted_max_squared": "120982732997811976600473594061/649314170754782860883556000000"
+    },
+    {
+      "A": 13,
+      "both_transfer_bounds": true,
+      "exact_inverse_bound": "46875/17576",
+      "plain_max_squared": "9/169",
+      "weighted_max_squared": "40698502575747911916737086305406848580028890210664453944381/799335930742973123322562147545373309255926359616000000000000"
+    },
+    {
+      "A": 29,
+      "both_transfer_bounds": true,
+      "exact_inverse_bound": "555579/195112",
+      "plain_max_squared": "190381/3337929",
+      "weighted_max_squared": "69747332666155188245761083581212868939676588991368523605373145193093470212786822651737079621553921711682448356430401421316059189/1010904676815421551467089082148285033368661577815739246915240558018646662603232802241821513233061043017261914812869672960000000000"
+    }
+  ],
+  "parent": "bc2d7b01b6b0a37cb79994e180758e98681aa68e",
+  "radial_coefficients": [
+    "1/32",
+    "-5/256",
+    "27/2048",
+    "-209/16384",
+    "2355/131072",
+    "-34385/1048576",
+    "599907/8388608",
+    "-12123809/67108864"
+  ],
+  "radial_interior_zero_not_shared_by_original": true,
+  "source_rows": [
+    {
+      "exact_state_sha256": "488a92c66442d1cba81ece8a73ca94597c8892e85112aa6e63fa33ab7f5b57b8",
+      "n": 23,
+      "unwrapped_source_gluing": true
+    },
+    {
+      "exact_state_sha256": "8cb77339ed53c8a35d09d165138b7b33d3468b7c08d3d106212a5b08beb7a800",
+      "n": 61,
+      "unwrapped_source_gluing": true
+    },
+    {
+      "exact_state_sha256": "d64642a28f8e580f2623e806ba07e9a77d6625c1fab178678ae9d9cb08bb7806",
+      "n": 113,
+      "unwrapped_source_gluing": true
+    }
+  ],
+  "status": "exact finite algebra only; selected cancellation OPEN"
+}
