@@ -17,3 +17,14 @@ This strong sufficient condition is not necessary for normality (read sibling #5
 **Pass:** a true signed full-original selected rate or an independently validated source-specific theorem that excludes all listed hostile controls. **Ambiguous:** finite numerical improvements, endpoint-window artefacts, or cross-correlation tests with no proved uniform bound. **Fail:** any assertion that scalar radial repayment, flat holonomy, a smooth-window zero, or generic mean-zero amplitudes prove π normality.
 
 **Status:** original signed Weyl and π base-16 normality OPEN; no CI duration or branch validation policy should block further mathematical probes.
+
+
+## New verdict-changing instrument: phase-covariant jet versus zero-seed carry
+
+The [all-order source-jet identity](SOURCE_JET_TRANSPORT.md) gives for every fixed m a canonical rational future-observer correction `B_m(n)` with `epsilon_m(n)=r_original(n)+B_m(n)=O_m(n^(-m-2))` and
+`e(HU_n)e(HB_m(n))=e(16HU_(n-1))e(H epsilon_m(n))`.
+At the critical H depth the error is negligible. The **missing** step is not improving this error further; it is proving source-selected signed cancellation for **either** side at the required maximal-subinterval scale while paying the nonconstant factor `e(HB_m(n))`. This must use the literal zero-initialized unwrapped numerator, not just forcing or fractional denominators. All-time same-forcing coherent wrong seeds satisfy the same transport identity, so a seed-blind argument is decisively insufficient.
+
+The [reciprocal observer](RECIPROCAL_CLOCK.md) yields exact tuned Fourier zeros under a different measure/frequency; compare with unweighted sharp-source clock and preserve the observer Jacobian/boundary flux. The [original mixed finite probe](COUPLED_FINITE.md) checks lags `-2,-1,0,1,2` and prevents universal "retime to improve" claims: at A=512, both improvement and deterioration occur depending on lag sign.
+
+**Future pass:** new unconditional original signed `o(1/log A)` maximal-subinterval estimate for each fixed h at sibling #501/#503's declared critical schedule, or an independently validated invariant that falsifies the coherent wrong-seed and residual mutant source controls. **No such source-specific inequality has yet been proved.**
