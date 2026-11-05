@@ -128,4 +128,35 @@ class ClausenCut(unittest.TestCase):
             q1=16**j-16**i;q2=16**l-16**k
             self.assertEqual(gcd(q1,q2),16**min(i,k)*(16**gcd(j-i,l-k)-1))
 
+    def test_11_cross_screening_uniform_over_nonzero_prefixes(self):
+        for A in (7,11):
+            u=states(2*A-1)
+            K=A+2
+            for d in (0,1,15,255):
+                cross=past=mp.mpf(0)
+                s0=Q(d,16**K)
+                for i in range(A,2*A):
+                    for j in range(i+1,2*A):
+                        Qfreq=Q(16**j-16**i,16**K)
+                        beta=(u[j]-u[i]+(16**j-16**i)*s0)%1
+                        v=(primitive(beta+Qfreq)-primitive(beta))/asmp(Qfreq)
+                        if i<K<=j:cross+=v/A**2
+                        if i<j<K:past+=v/A**2
+                self.assertLessEqual(abs(cross),cross_bound(A))
+                self.assertLessEqual(abs(past),past_bound(A,K-A))
+
+    def test_12_markov_digit_children_reassemble_parent_integral(self):
+        A=7;K=8;u=states(2*A-1)
+        for i,j in ((7,9),(7,11),(8,10)):
+            freq=16**j-16**i
+            alpha=(u[j]-u[i])%1
+            Qparent=Q(freq,16**K)
+            parent=(primitive(alpha+Qparent)-primitive(alpha))/asmp(Qparent)
+            Qchild=Q(freq,16**(K+1))
+            child=mp.mpf(0)
+            for d in range(16):
+                beta=alpha+freq*Q(d,16**(K+1))
+                child+=(primitive(beta+Qchild)-primitive(beta))/asmp(Qchild)/16
+            self.assertLess(abs(parent-child),mp.mpf('1e-38'))
+
 if __name__=='__main__':unittest.main()
