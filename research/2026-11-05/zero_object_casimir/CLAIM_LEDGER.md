@@ -12,8 +12,10 @@
 | CZ-05P | Epoch Fekete energy has exact seed period 16^-A; every K<=A zero-prefix has same FULL energy distribution as Haar | Disclosed source-seed circle alias identity; noncommuting finite-zero/long-time limits |
 | CZ-05I | Every Haar future phase has 16 equal-weight inverse branches; finite zero cylinder entropy cost K log16 | Disclosed conditional uniform circle covering and KL algebra; **chosen ensemble**, no physical information law |
 | CZ-06 | Weak \(\mu_K\Rightarrow\delta_0\) does NOT permit swapping zero-selection and long-time averaging | Refuted as a universal interchange using exact unforced zero-seed counterexample |
-| CZ-O | New A=9,11 exact variance, Gaussian plates, source and 11 focused tests | Observed; all exact-source probe/test Git blobs matched locally executed files; no universal numerical proof |
+| CZ-O | New A=9,11 exact variance, Gaussian plates, source and 12 focused tests | Observed; all exact-source probe/test Git blobs matched locally executed files; no universal numerical proof |
 | CZ-W | Original \(\mathcal E_A(0)\ge-o(1)\), original fixed-h Weyl, critical signed rate and π normality | OPEN / UNVERIFIED |
 | CZ-P | Physical vacuum/Casimir theory of mathematics, new Lean formalization, external priority | UNVERIFIED, not claimed |
 
 Conclusions inherit the weakest premise. Same BBP source in several algebraic representations does not provide independent evidence for source-selected signed Weyl cancellation.
+
+| CZ-05b | For K≤A, entire epoch vector under finite zero-prefix has same joint law as full seed Haar; for K≈2A+O(log A), all original critical sharp intervals recover exact s=0 with o(1/log A) error | Disclosed direct radix-character factorization + Lipschitz bounds, post-prereg theoretical extension; fresh finite A=3,9,17 calibration, source-only |
