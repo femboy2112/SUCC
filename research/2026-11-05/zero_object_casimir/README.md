@@ -30,8 +30,14 @@ All general multitime characters obey an exact radix linear-resonance selector. 
 
 **5. The source/observer limit barrier:** for A>=K, \(\mathcal E_A(s)\) is exactly periodic under \(s\mapsto s+16^{-A}\); therefore its FULL distribution under \(\mu_K\) is identical to its full-Haar seed distribution. Finite zero-prefix conditioning never yields the source-selected determinant bound once epoch time passes its resolution. \(D_{\rm KL}(\mu_K\|\mathrm{Haar})=K\log16\) grows to infinity as \(\mu_K\Rightarrow\delta_0\). The same-four-pole coherent wrong seed satisfies \(\mathcal E_A(s_*)\to-\infty\); exceptional points can coexist with extremely concentrated ensembles.
 
-[Paper proofs](THEOREMS.md) · [Chronological preregistration](PREREGISTRATION.md) · [focused exact tests](../../../../tests/test_zero_object_casimir.py) · [source probe](seed_pressure_probe.py) · [countermodels](COUNTERMODELS.md) · [claim ledger](CLAIM_LEDGER.md) · [validation](VALIDATION.md) · [next verdict-changing probe](NEXT.md).
+[Paper proofs](THEOREMS.md) · [Chronological preregistration](PREREGISTRATION.md) · [focused exact tests](../../../tests/test_zero_object_casimir.py) · [source probe](seed_pressure_probe.py) · [countermodels](COUNTERMODELS.md) · [claim ledger](CLAIM_LEDGER.md) · [validation](VALIDATION.md) · [next verdict-changing probe](NEXT.md).
 
-**Validation:** fresh predeclared exact source rational variance checks A=9,11 passed and 11 focused local methods passed. The exact executed Git blobs of the committed probe and test match the GitHub blobs. Full 11k+ native SUCC CI and independent external review not claimed. Source-specific pointwise \(\mathcal E_A(0)\ge-o(1)\), original fixed-h signed Weyl and base-16 π normality are **OPEN**.
+**Validation:** fresh predeclared exact source rational variance checks A=9,11 passed and 12 focused local methods passed. The exact executed Git blobs of the committed probe and test match the GitHub blobs. Full 11k+ native SUCC CI and independent external review not claimed. Source-specific pointwise \(\mathcal E_A(0)\ge-o(1)\), original fixed-h signed Weyl and base-16 π normality are **OPEN**.
 
 The mathematical outcome matches the hypothesis's *structural* content: neutral marginals may coexist with exact causal source gluing, with measurable boundary-conditioned interaction. It still does not prove that the ONE authenticated zero-seed BBP orbit equidistributes.
+
+## The measured zero-pointing crossover
+
+The source-driven epoch has **two exact reference-resolution regimes** proved after initial preregistration in [CZ-05b](THEOREMS.md): if the zero-prefix length K≤epoch start A, the *entire future epoch joint law* is indistinguishable from full-seed Haar; if \(K=2A+\lceil3\log_{16}A\rceil\), every sharp original critical-frequency interval is uniformly approximated by the exact zero-seed orbit with error \(O(\log A/A)=o(1/\log A)\). This is a quantified baseline/pointed-source selection gap, **not** a proof of the missing interpolation or π normality.
+
+The direct causal state relation persists even with all future marginals Haar: \(\mathbb E e(16U_n-U_{n+1})=e(-r_o(n+1))\). Thus "virtual support" and "actualized causal coupling" can be represented simultaneously, without invoking quantum vacuum dynamics or assumed statistical independence.
