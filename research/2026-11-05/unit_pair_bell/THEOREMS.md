@@ -95,6 +95,30 @@ for every n. Only joint coherent observation distinguishes their cross-term.
 
 Conversely the SEPARABLE product \(|+\rangle_A\otimes|-\rangle_B\) has \(\langle\Phi^+|+\!-\rangle=0\) too! Therefore **zero joint bright amplitude ALONE does not certify entanglement**. One must verify the independently specified tensor factors, pure-state rank/coherence, or an entanglement witness. The source/Bell embedding is a constructive example, not a necessary consequence of \(0=1-1\).
 
+## UP-02b — exact first-order interference/negativity budget, and the MISSING PHASE
+
+For the strictly positive real pair coefficients a_n,b_n of UP-02, the pure two-qubit encoded state's negativity and bright Bell probability obey a universal exact complementarity:
+\[
+\boxed{p_{+,n}+\mathcal N_n=\frac12.}\tag{UP9a}
+\]
+Indeed the bright probability is \((a-b)^2/[2(a^2+b^2)]=1/2-ab/(a^2+b^2)\) and \(\mathcal N=ab/(a^2+b^2)\). This algebraic relation holds for every source time n and its chosen real relative phase. It is **not conservation of physical energy**; it is an identity between a specific quantum-information entanglement measure and a specific joint interference measurement in this model.
+
+More generally, if the two amplitudes have a declared relative phase \(\varphi\),
+\[
+|\Psi(a,b;\varphi)\rangle=
+\frac{a|00\rangle-b e^{i\varphi}|11\rangle}{\sqrt{a^2+b^2}},
+\quad a,b>0,
+\]
+then negativity stays \(\mathcal N=ab/(a^2+b^2)\), while
+\[
+\boxed{p_+(\varphi)=\frac12-\mathcal N\cos\varphi.}\tag{UP9b}
+\]
+A second independently phased Bell projection recovers the sine quadrature; a single real/unsigned joint measurement does not recover the whole complex relative coherence. This splits the proposed baseline coupling into (1) entanglement/correlation magnitude and (2) orientation/relative phase. It is the latter kind of signed phase information that the authentic BBP Weyl problem lacks.
+
+For the source-inspired local unitary loop UP-04 one has a=b and \(\varphi=G(t)\), so \(\mathcal N=1/2\) is CONSTANT while \(p_+(t)=\frac12(1-\cos G(t))\) varies and returns to zero. Thus **the real-amplitude complementarity UP9a must not be applied without its phase hypothesis**.
+
+A more ambitious phase-encoded two-qubit sequence using \(\varphi_n=2\pi hU_n\) has Bell projections whose signed quadratures exactly reconstruct \(e(hU_n)\). But this is simply a UNITARILY ENCODED version of the unknown Weyl statistic; it gives **no additional bound** and cannot establish π normality without a new source-selected phase constraint.
+
 ## UP-03 — the dynamical gluing class IS nontrivial over the rational source category
 
 The split exact sequence UP1 is too weak to enforce a new interaction. Now equip the carrier with its genuine time-shift structure.
