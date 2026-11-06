@@ -1,0 +1,9 @@
+# Failed hypotheses and controls — preserved rather than sanitized
+
+1. **False single-pole rule** (first exploration, n=10,p=23). Initial prediction retained only 4j−1=p and gave [p U_n]_p=7; the exact rational oracle returned **17 mod23**. The missing **8j−3=3p** contribution occurs at j=9. Euler's criterion gives 16^(j_b−j_a)=2, and the correct normalized two-pole coefficient is −4/3. Corrected exact checks pass. This is a genuine arithmetic probe error resolved by distinct-source denominators, not evidence for normality.
+2. **Genuine finite exceptional cancellation** (p=19). At n=10..16 with n<19≤2n, source residue coefficient F=-19/6 becomes 0 mod19; therefore 19 does **not** divide reduced d_n. The k=7 pole enters at n=17, changing F to −65/21 and restoring the denominator prime at n=17,18. Neither interval was refit; explicit tests and independent pole scans verify it.
+3. **Tempting but invalid normality transfer:** every rational y_n=1/Q_n has a very large reduced denominator and exponentially Haar-equidistributed Galois orbit, but its chosen real phase tends to zero. Hence Galois virtual Haar + denominator growth does not imply real time Haar.
+4. **Tempting but invalid spectral equivalence:** a Bernoulli shift with biased digit weights is mixing (no nontrivial Koopman eigenfunctions) and has positive entropy, yet the induced ×16-invariant measure is singular/non-Haar. A mere spectral eigenvalue exclusion is not the wanted non-Haar Fourier-mass decay.
+5. **No finite fit:** dyadic source wavelet contrast ratios are recorded for N=128,256,512,1024 and h=1,2,3, including levels with ratios <0.25. An η=0.25 *all-level* conjecture is **REFUTED by its own finite original-source data**. A positive-density-in-levels gap is only a sufficient HYPOTHESIS and has not been proved for infinite horizons.
+
+Original four-pole history and literal zero remain immutable. These failures are mathematical falsifiers, not removed data.
