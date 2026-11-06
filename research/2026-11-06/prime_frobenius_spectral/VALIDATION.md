@@ -27,8 +27,8 @@ Finite dyadic wavelet contrasts N=128,256,512,1024; h=1,2,3, original source vs 
 ## Exact GitHub source readback
 
 Source code GitHub blob identity (SHA1, tested local git hash-object):
-- prime_certificate.py: 68596b33c21652f095f422d8d5acbcb9dcbf2d3f MATCH.
-- full_prime.py: 45119fbec1a5f24fe6b82d5a40f2263ace33b613 MATCH.
+- prime_certificate.py: 027e82bd00d33e368025749dd28f64dd73e56006 MATCH.
+- full_prime.py: 05b57872ad87b7327d0302c714e0473938149a63 MATCH.
 - spectral_probe.py: b5ee0676f5fb6075cbfbbf3f5abd0000b87bbc56 MATCH.
 - test_prime_spectral.py: 3db874037a04dfc915c8a7d2e38ebc4be24aca2f MATCH.
 
@@ -39,3 +39,5 @@ README / CLAIM ledger / finite compact results are reproducibility aids, not sta
 Not executed locally on full repository: native SUCC 12k+ suite, scripts/verify_provenance.py, observer_foundations_probe.py, ordinal_succ_report_probe.py, formal Lean, external academic review. Hosted exact-head CI must be checked after PR opening. No all-scale source-selected Poisson contraction, real phase Weyl cancellation, π normality, RH or claim of original-world novelty.
 
 Arithmetic theorems are locally proved from standard Euler/Fermat, prime-arc residue combinatorics, PNT/AP, and Ramanujan sums. Two private implementations of the same source do not count as independent outside referees.
+
+**Exact source cleanup:** after the initial tests, replaced a redundant ternary p19 probe with the identical direct exact Fraction reduction and corrected a THEOREMS.md cross-reference; both revised Python blobs were rehashed locally against live GitHub, and the complete 7-test suite plus compileall were rerun cleanly at these final bytes.
