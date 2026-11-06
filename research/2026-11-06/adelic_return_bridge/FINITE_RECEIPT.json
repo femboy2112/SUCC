@@ -1,0 +1,38 @@
+{
+  "checksums_sha256": {
+    "CLAIM_LEDGER.md": "8fed5917b3947d2a91b8fdaed4cf1b51b1973d236e8c88a4085e637e9905d245",
+    "FINITE_RESULTS.json": "d402f7fecaa72ee80349b2a131159f479bface3dcef0a2a9a333aee3cd498781",
+    "INDEPENDENT_ORACLE_RAW.json": "ae3e06ba68d8778633f5001207c23f9fb8fac5e84b78f8bb548dcd9ad54dce25",
+    "INITIAL_FAILED_TEST_LOG.txt": "b51e7796b7221672d3309a9d02e9d85f016315fbbc047c1e3ea93293832f88f0",
+    "LOCAL_TEST_STDERR.txt": "f213cb28733b41aa27853fce1165c9206f5ad58ec29895c82eec7c16d580e44d",
+    "LOCAL_TEST_STDOUT.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NEXT.md": "1ec817146b2b8d1fd52fc637f2a5fcc46792ae89e3d026f878096b3a22981aae",
+    "PREREGISTRATION.md": "4c276d3742ea5db2df4e42cae767853c998832d24737b6cc233aaffcaef852d6",
+    "README.md": "28c99e476e5a3e10d6e3f8106c3be53cb14920d3a0046b2e08551e466bbc6569",
+    "SYMPY_AUDIT_LOG.txt": "30c0f75a6c737b9bfef0c151592f3c397f42270c485e27212bf6cfc6528afaf1",
+    "THEOREMS.md": "d278472790c45dfab1059248eb2cb910917210628bbab13708a6355ac8fbdec8",
+    "VALIDATION.md": "f4cf0e22dbeb5d0d87365052ba138d1d5b12dc40b41966596bd18ed302411818",
+    "WRONG_SEAM_NEGATIVE_CONTROL.json": "cdf5a5683d73f0708f97bee4b5b6abf0ce781cd3b524de07d1bd09e9d4e4e0df",
+    "bridge.py": "6942764f1c96ae68ce6c083e4fef28d29164b586fca370cfc6b96c0708347d2f",
+    "independent_oracle.py": "5433bdb34d2b6f2494c4bf55db569d3779a6fec98b54bdf4774c00ba6c08d40b",
+    "run_probes.py": "0a72aa6d80446884cee89f3ffaf4e478ba14e26299b44eff8013da4c1e73ac2c",
+    "symbolic_audit.py": "cf2fbf4b7cfa238eee1907c89d6a65ff89a091888066e5b477d76042931b7ac9",
+    "test_bridge.py": "1580c98859e87372c3c22662303c92a63f25f7ba9830346fc264449d961807ad",
+    "wrong_seam_probe.py": "d18b0d04a424c75f6dd50cff42f493efbd99b0b5c6a6672290fc6093cae5b82d"
+  },
+  "claims": {
+    "finite_source_witnesses": "OBSERVED-FINITE",
+    "measurable_haartohaar_factor": "REFUTED",
+    "pi_normality": "OPEN",
+    "real_phase_return_expansivity": "PROVED LOCAL",
+    "return_fiber_signed_decay": "OPEN",
+    "source_return_clone": "PROVED LOCAL",
+    "two_place_carry_exact_reconstruction": "PROVED LOCAL"
+  },
+  "experiment": "original-BBP-2adic-odometer-to-real-return-carry-seam",
+  "hosted_ci": "NOT RUN",
+  "kernel": "NOT RUN",
+  "parent_sha": "c550cd4089db0367464ff38884797e06359fbcbc",
+  "preregistration_commit": "c0a3bda86236486421a6ffd0502ee366f851e8f5",
+  "root_native_suite": "NOT RUN"
+}

@@ -1,0 +1,138 @@
+{
+  "all_source_clone_checks_passed": true,
+  "caution": "The exact fraction hashes and comparisons are exact; printed decimal, RMS and entropy numbers are floating diagnostics, not rigorous real-Weyl certificates.",
+  "claim_label": "OBSERVED-FINITE",
+  "denominator_budget": [
+    {
+      "denominator_bits": 616,
+      "fractional_numerator_bits": 614,
+      "integer_carry_bits": 290,
+      "n": 73
+    },
+    {
+      "denominator_bits": 1272,
+      "fractional_numerator_bits": 1268,
+      "integer_carry_bits": 594,
+      "n": 149
+    },
+    {
+      "denominator_bits": 2528,
+      "fractional_numerator_bits": 2528,
+      "integer_carry_bits": 1170,
+      "n": 293
+    },
+    {
+      "denominator_bits": 5062,
+      "fractional_numerator_bits": 5062,
+      "integer_carry_bits": 2346,
+      "n": 587
+    }
+  ],
+  "float_diagnostics_only": {
+    "normalized_residue_reference": [
+      {
+        "N": 512,
+        "cross_correlation_abs_float": 0.040233833586,
+        "k": 9,
+        "rms_phase_error_float": 1.441506879745,
+        "surrogate_abs_float": 0.0,
+        "surrogate_exact_mean_zero": true,
+        "weyl_abs_float": 0.04701219839
+      },
+      {
+        "N": 1024,
+        "cross_correlation_abs_float": 0.038082542223,
+        "k": 10,
+        "rms_phase_error_float": 1.390713935194,
+        "surrogate_abs_float": 0.0,
+        "surrogate_exact_mean_zero": true,
+        "weyl_abs_float": 0.042699955558
+      }
+    ],
+    "return_fiber_energy": [
+      {
+        "M": 64,
+        "diagonal_contribution_float": 0.015625,
+        "h": 1,
+        "k": 3,
+        "q": 8,
+        "return_energy_float": 0.018183323497,
+        "signed_weyl_squared_float": 0.002210146797
+      },
+      {
+        "M": 32,
+        "diagonal_contribution_float": 0.03125,
+        "h": 1,
+        "k": 4,
+        "q": 16,
+        "return_energy_float": 0.024190033738,
+        "signed_weyl_squared_float": 0.002210146797
+      },
+      {
+        "M": 16,
+        "diagonal_contribution_float": 0.0625,
+        "h": 1,
+        "k": 5,
+        "q": 32,
+        "return_energy_float": 0.058492103633,
+        "signed_weyl_squared_float": 0.002210146797
+      }
+    ]
+  },
+  "four_signed_poles": true,
+  "fresh_probes_preregistered": true,
+  "original_U0": "0",
+  "pi_base16_normality": "OPEN",
+  "real_selected_weyl_infinite": "OPEN",
+  "return_witnesses": [
+    {
+      "denominator_bits": 5520,
+      "distance_decimal": 0.39296837686,
+      "exact_ge_quarter": true,
+      "exact_rational_sha256_bigendian": "01590e408f5e3d24406719fbffb7ce10adff0a1da67282fa3ccf6a992020996a",
+      "fractional_left_residue": 239,
+      "fractional_right_residue": 231,
+      "k": 9,
+      "lag": 512,
+      "modulus": 512,
+      "n": 128,
+      "numerator_bits": 5519,
+      "unwrapped_left_residue": 384,
+      "unwrapped_residues_equal": true,
+      "unwrapped_right_residue": 384
+    },
+    {
+      "denominator_bits": 9991,
+      "distance_decimal": 0.326762596234,
+      "exact_ge_quarter": true,
+      "exact_rational_sha256_bigendian": "f14dad45f92f0e0ebbf258c33a2278189789ba766966f226fcd0359a6245d1c9",
+      "fractional_left_residue": 239,
+      "fractional_right_residue": 46,
+      "k": 10,
+      "lag": 1024,
+      "modulus": 1024,
+      "n": 128,
+      "numerator_bits": 9990,
+      "unwrapped_left_residue": 384,
+      "unwrapped_residues_equal": true,
+      "unwrapped_right_residue": 384
+    },
+    {
+      "denominator_bits": 18680,
+      "distance_decimal": 0.40853458968,
+      "exact_ge_quarter": true,
+      "exact_rational_sha256_bigendian": "79ffee3d2091ae423f57a506554847be5d40057e7b7b2f0942fbc30782aabbdc",
+      "fractional_left_residue": 1263,
+      "fractional_right_residue": 1158,
+      "k": 11,
+      "lag": 2048,
+      "modulus": 2048,
+      "n": 128,
+      "numerator_bits": 18679,
+      "unwrapped_left_residue": 1408,
+      "unwrapped_residues_equal": true,
+      "unwrapped_right_residue": 1408
+    }
+  ],
+  "source_return_clone_cases": 40
+}
