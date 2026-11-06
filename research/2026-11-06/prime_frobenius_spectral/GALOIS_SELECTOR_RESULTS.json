@@ -1,0 +1,45 @@
+{
+  "label": "OBSERVED FINITE Galois character tables; exact group theorem separately proved",
+  "original_four_poles": true,
+  "literal_U0": "0",
+  "first_original_state": "47/15",
+  "full_G15": {
+    "unit_group_order": 8,
+    "character_count": 8,
+    "h1_trivial_mean_exact": "1/8",
+    "h1_nontrivial_l2_energy_exact": "63/64",
+    "h1_nontrivial_coherent_sum_abs_float": 0.921055019209,
+    "selected_phase_abs_exact": 1
+  },
+  "prime_field_tables": [
+    7,
+    11,
+    17
+  ],
+  "prime_field_h": [
+    1,
+    2,
+    3
+  ],
+  "G15_h": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "noncoprime_mutant": {
+    "a": 3,
+    "d": 15,
+    "h": 1,
+    "trivial_mean_signed_exact": "-1/4",
+    "absolute": 0.25,
+    "shows_gcd_requirement": true
+  },
+  "tests": "5 additional focused methods, total 12/12 PASS with original prime suite",
+  "script": "galois_selector.py prints detailed character rows; test_galois_selector.py independently checks Fourier orthogonality and Parseval",
+  "unbounded_trivial_sector": "fixed h exponentially decays using original d_n growth and Ramanujan",
+  "selected_nontrivial_temporal_sector": "OPEN",
+  "pi_normality": "OPEN",
+  "RH": "OPEN"
+}
