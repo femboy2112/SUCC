@@ -1,0 +1,38 @@
+{
+  "claims": {
+    "AT-01": "CLASSICAL/PROVED LOCAL",
+    "AT-02": "PROVED LOCAL",
+    "AT-03": "CLASSICAL LOCAL BOUND",
+    "AT-04": "REFUTED UNIVERSAL IMPLICATION",
+    "AT-05": "CLASSICAL DIGAMMA/PROVED LOCAL",
+    "AT-06": "ABSTRACT ALGEBRA/CONJECTURED INTERPRETATION",
+    "AT-08": "OPEN"
+  },
+  "operation": "ODD-PLACE TRIANGLE",
+  "registered_at_commit": "c0eab859aa9a3762ce15fec6da44b1d2fcbb6b74",
+  "run": {
+    "compileall": "PASS",
+    "independent_oracle": "PASS",
+    "pi_normality": "OPEN",
+    "source_weyl": "OPEN",
+    "unittest": "19/19 PASS"
+  },
+  "scope": "research-local",
+  "sha256": {
+    "CLAIM_LEDGER.md": "7b40a846beacc1969f307605c448d1f6a416b66a4ba77e42c07cba8752ce381c",
+    "FINITE_RESULTS.json": "12d9a86b72bfd42b848b1f22850e9b73ddeb8977d1524e321738a77da9098286",
+    "INDEPENDENT_ORACLE_LOG.txt": "0db3890ac9baa1c1084334354b0a3b025faa59882c1cc3fd001bc3d51f34c979",
+    "LOCAL_TEST_STDERR.txt": "bbd004fac6d816c1aebc70b980e66f26f6fb02c25a954f1cca5cf1b251052fc8",
+    "LOCAL_TEST_STDOUT.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NEXT.md": "d97c602db6c7ce55876fbc0978f71316cf1551992d4c5aa793e57102c0a7e269",
+    "PREREGISTRATION.md": "55f539176668c799facd8c0e38e628a4a59b505b4a0e257c821538a2fae8ca75",
+    "README.md": "62c1e15dd7d688e73c6ee8e440ea7239c6b94617080eabde43f0e47932fac3d3",
+    "THEOREMS.md": "b7a7ac07939104e58cf68cd68dd371e59300bdfbf3c68e843da2e3c8a1b6cfba",
+    "VALIDATION.md": "0f54f276889ac142dd7593f27b69f1bf1d57eaeb3ec073f26fa28b5a64c1fe79",
+    "adelic_triangle.py": "764ffa006f9b3bebfcb06eb16e56f5b4130c2fc54954a58d34383c92ec571e87",
+    "independent_oracle.py": "4393f0ca7833f6ebbdf8ccb5313cbce163d032f0a8a3a8d219f107a3fcf20677",
+    "run_probes.py": "0cb5e32b6ad99d47edaaa607548e5ab4d2d1919ce11ff4ec706758c604d8b0b1",
+    "test_adelic_triangle.py": "e39f6e890032c6ca575d14fa4990296c3c8668525099f08cc85aadd11b2ca14d"
+  },
+  "source_parent": "45c5d41435fdf94998d81901b0e58b9fa7775106"
+}
