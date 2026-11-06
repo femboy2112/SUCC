@@ -1,4 +1,5 @@
 {
+  "all_one_bit_flip_checks_passed": true,
   "all_source_clone_checks_passed": true,
   "caution": "The exact fraction hashes and comparisons are exact; printed decimal, RMS and entropy numbers are floating diagnostics, not rigorous real-Weyl certificates.",
   "claim_label": "OBSERVED-FINITE",
@@ -81,6 +82,7 @@
   },
   "four_signed_poles": true,
   "fresh_probes_preregistered": true,
+  "one_bit_flip_cases_postregistration": 40,
   "original_U0": "0",
   "pi_base16_normality": "OPEN",
   "real_selected_weyl_infinite": "OPEN",

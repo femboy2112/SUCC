@@ -52,6 +52,17 @@ class CrossPlaceTests(unittest.TestCase):
             r={v_padic_mod(n,k) for n in range(1<<k)}
             self.assertEqual(r,set(range(1<<k)))
 
+    def test_return_exact_one_bit_flip_not_just_replication(self):
+        for k in range(1,11):
+            Q=1<<k;M=1<<(k+1)
+            for n in [0,7,43,128]:
+                old=v_padic_mod(n,k+1)
+                future=v_padic_mod(n+Q,k+1)
+                source_sum=source_return_sum_mod(n,Q,k+1)
+                self.assertEqual(future,(old+Q)%M)
+                self.assertEqual(source_sum,(old+Q)%M)
+                self.assertEqual((future-old)%M,Q)
+
     def test_known_denominator_reconstruction(self):
         for n in [1,2,7,17,43,73,149,293,587]:
             x=self.phases[n]

@@ -21,9 +21,11 @@ python receipt.py --verify
 
 A **preliminary red run** is archived as `INITIAL_FAILED_TEST_LOG.txt`. It assumed wrong-carry decoding necessarily threw an error. Correct arithmetic showed it can instead produce a *different plausible fraction*; the subsequent test insists on inequality of reconstructed values and passed. A still-earlier scratch probe initially compared fractional rather than unwrapped 2-adic residues and correctly found discrepancies. This is an input/typing defect, NOT a counterexample to original 2-adic Haar.
 
-**Executed scoped result:** 16/16 focused research-local methods PASS, 0 errors/failures; independent arithmetic oracle and rational-return probe PASS; optional SymPy identities PASS; compileall PASS; SHA256 receipt replay PASS. All initial finite failures are retained rather than edited away.
+**Executed scoped result:** 17/17 focused research-local methods PASS, 0 errors/failures; independent arithmetic oracle and rational-return probe PASS; optional SymPy identities PASS; compileall PASS; SHA256 receipt replay PASS. All initial finite failures are retained rather than edited away.
 
 **Independent source:** `independent_oracle.py` independently iterates the authentic original four partial fractions as full unwrapped rational U, then checks held-out p-adic returns and reconstructs fractions using bounded numerators, without importing `bridge.py`. These are two implementations of the SAME underlying mathematics, not blind outside witnesses.
+
+**Postregistration theorem refinement:** RS1b, the exact k-th-bit flip, was derived after first fresh measurements; its 40 arithmetic checks are NOT blind preregistered tests and do not promote real Haar.
 
 **Fresh finite scope:** exact n=128 for k=9,10,11 real distances >=1/4 and same *unwrapped* residue; original U0=0 and all positive-time poles are retained. Source-return clone independently checked for k=1..10 at n=0,7,43,128. Denominator precision probes k bits at n=73,149,293,587 are exact finite but not an exponential growth theorem. Floating normalized-residue RMS is NOT a rigorous bound on π's infinite Weyl sums.
 

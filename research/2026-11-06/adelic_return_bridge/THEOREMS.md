@@ -41,7 +41,14 @@ Because `V` is a 2-adic isometry, `V(t+Q)≡V(t) mod 2^k`. As `v₂(16^Q)=4Q>=k`
 \[
 \boxed{S_{2^k}(t)\equiv V(t)\pmod{2^k}\quad\forall t\in Z_2.}\tag{RS1}
 \]
-In particular `S_(2^k)(n)≡U_n mod2^k` for original literal zero-seeded rational BBP times n>=0. This is the actual four-pole *future forcing* reconstructing the present 2-adic source state at matching resolution. The real value S_Q(n) can be enormous; this is NOT a real modulo-one phase identity. Fixed finite independent `Fraction` controls cover k=1..10 and n=0,7,43,128.
+**One-bit strengthening (RS1b — PROVED LOCAL).** Isometry gives not just agreement of the lower k digits but the *exact valuation* `v₂(V(t+Q)−V(t))=k`. Every 2-adic unit is odd, so for all t
+\[
+\boxed{V(t+2^k)\equiv V(t)+2^k\pmod{2^{k+1}},\qquad
+S_{2^k}(t)\equiv V(t)+2^k\pmod{2^{k+1}}.}\tag{RS1b}
+\]
+For the source sum, `v₂(16^Q V(t))>=4Q>=k+1`. Thus the future source **copies exactly the first k bits and flips the very next bit**. This is a mathematical form of recursive self-replication with retained differentiation. It still supplies no archimedean antiphase: a real phase need not negate when the k-th 2-adic bit flips. Source/carry defects remain essential.
+
+In particular `S_(2^k)(n)≡U_n mod2^k` for original literal zero-seeded rational BBP times n>=0. This is the actual four-pole *future forcing* reconstructing the present 2-adic source state at matching resolution. The real value S_Q(n) can be enormous; this is NOT a real modulo-one phase identity. Fixed finite independent `Fraction` controls cover k=1..10 and n=0,7,43,128 for both RS1 and the stronger RS1b. This strengthening was derived **after** the preregistered holdout probes and is not presented as a preregistered discovery.
 
 ## 2. RS-02: the integer-carry seam and exact finite cross-place reconstruction — PROVED LOCAL
 

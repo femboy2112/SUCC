@@ -9,6 +9,7 @@ test_known_denominator_reconstruction (test_bridge.CrossPlaceTests.test_known_de
 test_original_four_signed_poles (test_bridge.CrossPlaceTests.test_original_four_signed_poles) ... ok
 test_periodic_2power_factor_calibration (test_bridge.CrossPlaceTests.test_periodic_2power_factor_calibration) ... ok
 test_rational_ambiguity_below_denominator_bit_depth (test_bridge.CrossPlaceTests.test_rational_ambiguity_below_denominator_bit_depth) ... ok
+test_return_exact_one_bit_flip_not_just_replication (test_bridge.CrossPlaceTests.test_return_exact_one_bit_flip_not_just_replication) ... ok
 test_shadow_padic_isometry_nonhaar_real (test_bridge.CrossPlaceTests.test_shadow_padic_isometry_nonhaar_real) ... ok
 test_source_mutants_identify_which_boundary_is_specific (test_bridge.CrossPlaceTests.test_source_mutants_identify_which_boundary_is_specific) ... ok
 test_surrogate_holdout_reports_not_proof (test_bridge.CrossPlaceTests.test_surrogate_holdout_reports_not_proof) ... ok
@@ -16,6 +17,6 @@ test_unwrapped_recurrence_independent_carry (test_bridge.CrossPlaceTests.test_un
 test_witness_pre_registered_k9_10_11 (test_bridge.CrossPlaceTests.test_witness_pre_registered_k9_10_11) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 1.093s
+Ran 17 tests in 1.218s
 
 OK

@@ -18,6 +18,7 @@ def receipt():
             'preregistration_commit':'c0a3bda86236486421a6ffd0502ee366f851e8f5',
             'checksums_sha256':{n:sha256((ROOT/n).read_bytes()).hexdigest() for n in FILES},
             'claims':{'source_return_clone':'PROVED LOCAL',
+                      'source_one_bit_return_flip':'PROVED LOCAL',
                       'two_place_carry_exact_reconstruction':'PROVED LOCAL',
                       'real_phase_return_expansivity':'PROVED LOCAL',
                       'finite_source_witnesses':'OBSERVED-FINITE',

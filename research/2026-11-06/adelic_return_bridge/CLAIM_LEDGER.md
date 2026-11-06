@@ -4,6 +4,7 @@
 |---|---|---|
 | RS-00 | INHERITED PROVED LOCAL | Original four poles, U0=0, exact real π/16 completion, V(0)=0 in Z₂ and V is isometric; parent #527 proof, verified derivative identities and finite modular controls. Not independently re-proved in full Lean. |
 | RS-01 | PROVED LOCAL | S_(2^k)(t)≡V(t) mod2^k for **all t in Z₂** and k>=1. Proof uses source recurrence, isometry and valuation. Does not imply real-phase copy. |
+| RS-01b | PROVED LOCAL (postregistration) | Stronger exact `V(t+2^k) ≡ S_(2^k)(t) ≡ V(t)+2^k mod2^(k+1)` for ALL t∈Z₂. The first k bits are copied and the next bit flips; this does not force real-circle antiphase. 40 finite checks after theorem derivation (not new blind holdouts). |
 | RS-02 | PROVED LOCAL | Original unwrapped U_n=C_n+x_n and exact carry-increment recurrence. Finite last-ceil(K/4) carry suffix determines C_n mod2^K. This corrects a failed reduction of **fractional part** instead of unwrapped state. |
 | RS-03 | PROVED LOCAL | For rational x=a/d (odd d known), 2^K>=d plus V(n), C_n mod2^K recovers a and exact real character; without carry data source residue alone cannot distinguish fractional numerator, without adequate K multiple numerators are compatible. A reconstruction identity, not a signed bound. |
 | RS-04 | PROVED LOCAL / CLASSICAL | Optimal positive expansivity constant 1/17 for ×16. For the true π/16 irrational completed orbit, arbitrarily late 2^k p-adic return pairs differ by >=1/17 on real circle; raw source tail loses <=2/[15(n+1)^2]. No density statement. |
