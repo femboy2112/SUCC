@@ -106,6 +106,8 @@ Then `μ_A\to` Haar, so the orbit is equidistributed (normal, by Wall).
 
 *Remark.* If `μ_{[A,2A)}\to ν` for **every integer** `A`, then telescoping gives Cesàro convergence (H1), and Lemma 2.1 then controls every sub-window. Convergence along powers of two only, `A=2^j`, does **not** control sub-windows. Witness: the counting defect `G(t)=εt\sin(2\pi\log_2t)` vanishes at every `t=2^j`, but not on `[1.5\cdot2^{j},2^{j+1})`. A greedy 0/1 realisation with `ε=0.05` has frequency `0.5` on `[2^{19},2^{20})` but `0.57632` on `[1.5\cdot2^{19},2^{20})` (hostile-review probe `p6_cb2.py`). That is why (LS) is stated for arbitrary sub-windows. An earlier witness with a fixed `A` was defective (it is `O(1)=o(A)`) and is withdrawn.
 
+**Sharpening (Front A, FA-3/FA-5).** The hypotheses can be weakened: `k=1` alone, and lattice values `c\in(0,c_*)` for any fixed `c_*>0`. Weak limits of the windows are ×16-invariant (#520 R-04). Front A's rigidity lemma FA-3 then applies: a ×b-invariant measure that dominates Lebesgue on an open arc is Haar. See `../front_a/PROOFS.md`.
+
 **Status.** CB-2/CB-2′ are a *conditional equivalence*: under (H1) or (LS), `J`-smallness ⟺ normality. **This is not progress on π.** Both (H1) and (LS) are open for π, and so is (H2).
 
 ## CB-3. Non-stationary countermodel — PROVED (the transport fails without stationarity)
