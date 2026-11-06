@@ -74,7 +74,7 @@ def run():
         z=16*z+source(n)
         if 10<=n<=18:
             expected,coeff=mid_residue(n,19)
-            actual=frac_mod(19*z,19) if z.denominator%19!=0 or (19*z).denominator%19!=0 else frac_mod(19*z,19)
+            actual=frac_mod(19*z,19)
             # If v19(U_n)>=0, 19 U_n ≡0 mod19; if v=-1, pU unit modulo p.
             assert actual==expected,(n,expected,actual)
             assert (expected==0)==(n<=16)
