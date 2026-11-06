@@ -18,3 +18,8 @@
 | P1 | New Lean formalization, physical quantum theorem, external academic priority | UNVERIFIED / not claimed |
 
 All tests and complementary methods share the original SUCC source, so they are not blind independent witnesses of π-digit distribution. Finite signs never certify asymptotic rates.
+
+| SM-01 | Original pole moment derivative tower \(M_0=0,M_1=15,M_2=151,M_3=1209\); \(r(n)=zF(z)\) and \(F^{(q)}(0)=q!M_q\) | Disclosed exact original-source rational derivation; 5 exact symbolic/finite controls |
+| SM-02 | Original four poles exactly decompose into three signed primitive pole differences relative to reference c=2 | Disclosed algebra; decomposition choice is not canonical, moments are invariant |
+| SM-03 | First nonzero source moment order q sets observer scale \(16^m\asymp n^{q+1}\); one-pole mutant q=0, original q=1, double-null mutant q=2 | Disclosed asymptotic uniform geometric-moment argument; controls PASS |
+| SM-F | Source moment cancellation order alone selects Haar for literal zero seed | REFUTED as implication from seed-uniform source moments by coherent same-forcing completion |
