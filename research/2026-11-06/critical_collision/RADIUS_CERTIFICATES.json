@@ -1,0 +1,173 @@
+{
+  "status": "CERTIFIED FINITE ONLY — selected original zero-seed rational near-pair count",
+  "preregistration_scope": "initial project preregistration was BEFORE original numerics, but K=3 all-radius interpretation was exploratory; N4096 freeze in separate PREREGISTRATION_RADIUS_HOLDOUT.md",
+  "grid": "r0=1/(N+1); r_(j+1)=min((4/3)r_j,1/2); list A counts in order; exact each check 4(A−N)*den(r)<=9*N²*num(r)",
+  "proof": "For each interval [r_j,r_(j+1)], monotonicity gives A(delta)<=A(r_(j+1))<=N+(9/4)N² r_(j+1)<=N+3N²delta; so continuum all radii certified for each SPECIFIC N only.",
+  "source": "authentic r(n) four poles, U0=0",
+  "normality": "OPEN",
+  "cases": [
+    {
+      "N": 128,
+      "A_at_grid_radii": [
+        356,
+        412,
+        520,
+        676,
+        864,
+        1174,
+        1522,
+        1980,
+        2618,
+        3466,
+        4588,
+        6062,
+        8086,
+        10750,
+        14256,
+        16384
+      ],
+      "certified_K_all_delta": 3,
+      "delta_min": "1/129",
+      "delta_max": "1/2"
+    },
+    {
+      "N": 256,
+      "A_at_grid_radii": [
+        742,
+        922,
+        1096,
+        1368,
+        1764,
+        2344,
+        2992,
+        4034,
+        5326,
+        6974,
+        9304,
+        12340,
+        16290,
+        21664,
+        28678,
+        38058,
+        50696,
+        65536
+      ],
+      "certified_K_all_delta": 3,
+      "delta_min": "1/257",
+      "delta_max": "1/2"
+    },
+    {
+      "N": 512,
+      "A_at_grid_radii": [
+        1466,
+        1762,
+        2226,
+        2876,
+        3752,
+        4660,
+        6168,
+        8022,
+        10536,
+        13996,
+        18484,
+        24568,
+        32606,
+        43418,
+        57834,
+        76866,
+        102368,
+        136296,
+        181338,
+        241692,
+        262144
+      ],
+      "certified_K_all_delta": 3,
+      "delta_min": "1/513",
+      "delta_max": "1/2"
+    },
+    {
+      "N": 1024,
+      "A_at_grid_radii": [
+        2980,
+        3634,
+        4582,
+        5786,
+        7366,
+        9544,
+        12564,
+        16296,
+        21286,
+        28012,
+        37084,
+        49080,
+        65464,
+        87138,
+        115732,
+        154444,
+        205384,
+        273606,
+        364482,
+        485284,
+        645924,
+        860086,
+        1048576
+      ],
+      "certified_K_all_delta": 3,
+      "delta_min": "1/1025",
+      "delta_max": "1/2"
+    },
+    {
+      "N": 2048,
+      "A_at_grid_radii": [
+        5920,
+        7236,
+        9034,
+        11450,
+        14712,
+        18974,
+        24666,
+        32398,
+        42650,
+        55994,
+        74286,
+        98658,
+        130868,
+        173724,
+        231382,
+        307804,
+        409478,
+        545524,
+        726964,
+        968952,
+        1291750,
+        1721752,
+        2294700,
+        3059522,
+        4080548,
+        4194304
+      ],
+      "certified_K_all_delta": 3,
+      "delta_min": "1/2049",
+      "delta_max": "1/2"
+    }
+  ],
+  "first_naive_one_step_violations": [
+    {
+      "n": 43,
+      "new_point_neighbors": 4
+    },
+    {
+      "n": 45,
+      "new_point_neighbors": 6
+    },
+    {
+      "n": 51,
+      "new_point_neighbors": 5
+    },
+    {
+      "n": 63,
+      "new_point_neighbors": 5
+    }
+  ],
+  "note": "A bound that every new point has <=3n delta close neighbors fails locally; cumulative signed slack, not pointwise induction, is necessary."
+}
