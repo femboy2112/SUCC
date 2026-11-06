@@ -26,3 +26,11 @@ Weil positivity for RH is a sign criterion on a nontrivial arithmetic quadratic 
 ## Merge / publication gate
 
 PR stacked draft only. No merge to main, semantic theorem promotion, tag, release, peer-reviewed priority claim, or changes to frozen source/proofs without separate reviewed authorization and full native checks.
+
+## New exact missing channel: selected nontrivial Galois/Gauss sector
+
+PF11–PF14 in GALOIS_SELECTOR_THEOREM.md identify the *exact* information lost from each source rational phase by averaging over its Galois conjugates. The Haar-averaged (trivial) character goes to zero **exponentially** at each time; almost all normalized character L2 mass remains in the nontrivial sector. The selected phase is the **coherent u=1 evaluation** of that sector. Since groups G_n change with n, no channel identification across time is supplied by Galois theory alone.
+
+A potential original zero-seed proof needs a **source- and carry-defined transport of nontrivial χ across changing G_n**, plus a signed cancellation bound for the selected sum, or a direct estimate of PR #531's real Poisson energy. Define the common real complex character basis first; a Legendre (2/p) sign in F_p cannot be directly treated as e(hU_n) without such an operational bridge.
+
+Hostile probes: the source-preserving rational seed perturbation, nonnormal rational sequence 1/Q_n with identical virtual Haar, isometric H-shadow and mixing-but-biased base16 Bernoulli measure. The new exact character decomposition alone is an **equivalent reformulation**, not a provable asymptotic saving. Avoid presenting the asymptotically full nontrivial L2 energy as "extraneous noise that must vanish": the actual goal is destructive *temporal coherent interference*, not zero nontrivial energy at each n.
