@@ -1,0 +1,51 @@
+======================================================================
+FRONT A — compensated-clock corrected lag at the LITERAL zero seed
+  candidate lemma: 'L^[d](N,K_N;0) >= 0 and per-lag corr >= 0' (a positivity shortcut)
+======================================================================
+  d=2 h=1 N=16384 K=10: L^[d]=-0.00079  min per-lag corr=-0.0106 @k=4  <-- sign-negative
+  d=2 h=1 N=65536 K=12: L^[d]=+0.00032  min per-lag corr=-0.0061 @k=4  <-- sign-negative
+  d=2 h=3 N=16384 K=10: L^[d]=+0.00015  min per-lag corr=-0.0039 @k=3  <-- sign-negative
+  d=2 h=3 N=65536 K=12: L^[d]=-0.00034  min per-lag corr=-0.0034 @k=2  <-- sign-negative
+  d=2 h=5 N=16384 K=10: L^[d]=-0.00130  min per-lag corr=-0.0095 @k=5  <-- sign-negative
+  d=2 h=5 N=65536 K=12: L^[d]=+0.00049  min per-lag corr=-0.0042 @k=4  <-- sign-negative
+  d=2 h=7 N=16384 K=10: L^[d]=+0.00027  min per-lag corr=-0.0073 @k=8  <-- sign-negative
+  d=2 h=7 N=65536 K=12: L^[d]=-0.00098  min per-lag corr=-0.0059 @k=10  <-- sign-negative
+  d=3 h=1 N=16384 K=14: L^[d]=+0.00018  min per-lag corr=-0.0103 @k=4  <-- sign-negative
+  d=3 h=1 N=65536 K=16: L^[d]=+0.00044  min per-lag corr=-0.0061 @k=4  <-- sign-negative
+  d=3 h=3 N=16384 K=14: L^[d]=-0.00002  min per-lag corr=-0.0052 @k=13  <-- sign-negative
+  d=3 h=3 N=65536 K=16: L^[d]=-0.00029  min per-lag corr=-0.0042 @k=15  <-- sign-negative
+  d=3 h=5 N=16384 K=14: L^[d]=-0.00152  min per-lag corr=-0.0099 @k=5  <-- sign-negative
+  d=3 h=5 N=65536 K=16: L^[d]=+0.00009  min per-lag corr=-0.0050 @k=13  <-- sign-negative
+  d=3 h=7 N=16384 K=14: L^[d]=-0.00028  min per-lag corr=-0.0078 @k=8  <-- sign-negative
+  d=3 h=7 N=65536 K=16: L^[d]=-0.00084  min per-lag corr=-0.0032 @k=15  <-- sign-negative
+
+  CANDIDATE POSITIVITY LEMMA REFUTED: True  (persistent negatives => no one-sided shortcut)
+
+======================================================================
+FRONT B — angular-period identity (AC-13) is SEED-BLIND => representation identity
+======================================================================
+  source angular period  ∫_0^1 P/(16-t^8) dt = 0.1963495408493620774039152114549689302623
+  pi/16                                     = 0.1963495408493620774039152114549689302623
+  match: True
+  q=1/5 counterfeit (SAME source, SAME angular period): |S_4000(1)|/N = 1.0000  (-> 1, NONnormal)
+  q=1/5 counterfeit (SAME source, SAME angular period): |S_4000(2)|/N = 1.0000  (-> 1, NONnormal)
+  q=1/5 counterfeit (SAME source, SAME angular period): |S_4000(3)|/N = 1.0000  (-> 1, NONnormal)
+  The AC-13 identity is unchanged by the seed, so it holds identically for the normal-
+  candidate zero seed AND the nonnormal q=1/5 orbit. It fixes only the completed constant
+  pi/16; it is BLIND to the digit distribution. => representation identity, NOT a mechanism.
+
+======================================================================
+FRONT C — within-cell signed phase = the gate at a SHIFTED frequency; ceiling blocks it
+======================================================================
+  zero seed: |S_N(h*16^k)|/N at h=1,k=1 (freq 16) = 0.0073  (small => gate at shifted harmonic)
+  zero seed: |S_N(h*16^k)|/N at h=3,k=1 (freq 48) = 0.0018  (small => gate at shifted harmonic)
+  zero seed: |S_N(h*16^k)|/N at h=1,k=2 (freq 256) = 0.0073  (small => gate at shifted harmonic)
+  zero seed: |S_N(h*16^k)|/N at h=3,k=2 (freq 768) = 0.0018  (small => gate at shifted harmonic)
+  zero seed: |S_N(h*16^k)|/N at h=1,k=3 (freq 4096) = 0.0073  (small => gate at shifted harmonic)
+  zero seed: |S_N(h*16^k)|/N at h=3,k=3 (freq 12288) = 0.0018  (small => gate at shifted harmonic)
+  Resolution ceiling D_{N,k} >= max(0, log(M/N)), M=16^k: an AFFORDABLE resolution needs
+  M<=N i.e. k<=log_16 N; beyond it the deficit is forced. Within-cell control at affordable
+  resolution is exactly S_N(h*16^k)=o(N) at a higher harmonic — the gate again, no new
+  seed-specific signed leverage below the ceiling.
+
+DONE
