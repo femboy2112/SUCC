@@ -1,0 +1,40 @@
+{
+  "RH": "OPEN",
+  "bbp_final_Q": "97239622636742443729110636467186349210292529220642614603625",
+  "bbp_final_remainder": "85163772948496106427952366724558046046423903599204100177366",
+  "calculus_ledger": "exact arithmetic/model-relative/conditional separate",
+  "claim": "exact finite source groups and original zero-seeded BBP carrier, not normality",
+  "finite_horizon": 24,
+  "original_exact_data_sha256": "5b611a2a2f05c38a7e4291f4c905f3d566767300f8e6b869368315aa858a0783",
+  "phase_priors": {
+    "clock": 6,
+    "correlated_prior_independent": false,
+    "uniform_independent": true,
+    "zero_dirac_independent": true
+  },
+  "pi_base16_normality": "OPEN",
+  "sample_join_clocks": [
+    [
+      2,
+      3
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      12,
+      18
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      9,
+      15
+    ]
+  ],
+  "source": "original four signed BBP poles, U0=0",
+  "task": "source-sound-calculus / intrinsic-LCM-carrier"
+}
