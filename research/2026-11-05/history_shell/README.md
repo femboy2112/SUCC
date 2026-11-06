@@ -1,0 +1,22 @@
+# OPERATION HISTORY-FIRST SUCC: causal shell, sphere duality and observer policy
+
+**Research-only draft.** Additive child of [PR #521](https://github.com/femboy2112/SUCC/pull/521), pinned parent 7f26807a26ec3167005ed5bec7a021da49fe9b7a. The original four signed BBP poles, literal U0=0, exact rational carries, archives, formal proof contracts, production, CI workflows and main are unchanged.
+
+**Core idea.** Use the exact authenticated SUCC trajectory as evidence. Radix-prefix shells, CP1 sphere coverings and compatible quantum-state observations are *typed views* of that trajectory. An internal seed ensemble is a deliberately chosen prediction model, validated against the realized history; it does not randomize the selected zero seed or prove normality.
+
+### Results and limits
+
+1. **Exact two-cell closure.** At depth m and lookahead k, source accumulation S_k(n) plus the first m+k hexadecimal digits of x_n determines two possible output m-cells. The actual remainder selects precisely one. With a uniform hidden remainder, their model probabilities are 1−δ and δ. The source-sensitive tradeoff is 16^(m+k) comparable to n².
+2. **Chiral shell transport.** State pushforward and observable pullback satisfy the exact adjoint pairing. Forward radix prefixes and backward sphere-cover roots have symbolically related rooted 16-branch trees; the latter's fixed-endpoint inverse fiber is a 16-adic torsor, not the entire solenoid or a canonical quantum wavefunction.
+3. **Arithmetic history selection.** On odd-order roots of unity, the source-twisted degree-16 circle map is bijective. Exactly one of 16 inverse roots is odd-order, but the arithmetic inverse is discontinuous in the ambient circle topology. Exact source history is stronger than approximate chart observations, without being a Haar theorem.
+4. **Non-lumpable coarse observations.** Replacing the actual within-cell conditional remainder by an independent uniform one breaks time composition. The exact base16 example predicts 1/4,1/2,1/4 instead of the true single-cell outcome (TV=1/2). The genuine original four-pole source yields a separate exact rational non-lumpability example at n=13,m=2 with TV≈0.216168.
+5. **Ensemble no-go.** Haar-random initial seed makes the *first observed hexadecimal digit at every source time* IID uniform for every deterministic forcing. This full source-blind ensemble statement does not extend to the literal zero seed. Classical prefix probabilities embed as compatible but separable diagonal density matrices; extra quantum coherence is not supplied automatically.
+6. **Koopman/transfer defect.** Source-labelled character pullback e_h→e(hr)e_(16h) has a Haar adjoint that erases frequencies not divisible by16. The seed-ensemble Weyl polynomial has L² norm A^(-1/2), while evaluation at the selected seed has norm √A on that finite mode space. The apparent averaging benefit is exactly paid by point evaluation.
+7. **Higher-order observation incompleteness.** Matching all polynomial observer moments through degree3 does not determine a discontinuous carry-threshold probability (exact shifted Legendre degree4 countermodel).
+8. **History-guided experimental policy.** A source-only entropy rule preregistered new A=211,419,829 epochs before inspecting selected branches. It chose k=3 each time; a coherent nonnormal same-source seed received better finite Brier scores than the genuine zero seed. Model fitness is NOT a normality certificate.
+
+**Validation:** 26/26 focused exact-source local tests reportedly PASS, with executed source blobs matched to the GitHub branch; separate exact history and observer-policy probes also passed. Read [VALIDATION.md](VALIDATION.md) for exact receipts and limitations. No full native suite, new Lean proof, outside referee, π normality or RH proof is claimed.
+
+**Read:** [PROOFS.md](PROOFS.md), [HISTORY_LEDGER.md](HISTORY_LEDGER.md), [PREREGISTRATION.md](PREREGISTRATION.md), [DECISION_PROTOCOL.md](DECISION_PROTOCOL.md), [COUNTERMODELS.md](COUNTERMODELS.md), [CLAIM_LEDGER.md](CLAIM_LEDGER.md), [SOURCE_MAP.md](SOURCE_MAP.md), [NEXT.md](NEXT.md), [FINITE_RECEIPT.json](FINITE_RECEIPT.json).
+
+**Open:** an unconditional signed arithmetic inequality for the *single original* zero-seeded history, such as the original fixed-h Weyl estimate or fixed-radius Clausen discrepancy Q_(1/2)(mu_A)→0. Accurate history keeping does not by itself establish long-run Haar occupancy.
