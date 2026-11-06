@@ -24,3 +24,13 @@
 - **ρ/identity coupling:** symbolic golden/silver interpretation is not mathematical identification of the user's framework with the BBP source.
 - **κ/contact:** actual remote PR head and blob verification; full GitHub native CI / Lean / peer review not yet certified.
 - **Contextual verdict:** source arithmetic is pinned, but the signed cancellation obstruction remains. No scalar truth score is assigned.
+
+
+## Additional exact finite/gamma results (2026-11-06 extension)
+
+| ID | Status | Boundary |
+|---|---|---|
+| TS-09 | **CERTIFIED FINITE** | Original literal-zero four-pole orbit has signed return-energy correction R−1/M negative at (N,h,Q)=(512,1,4),(512,1,16),(768,2,8),(768,2,16), positive at (512,1,8), and **AMBIGUOUS** at (768,2,4) under a predeclared rational error <1/2400. 512 signs are post-hoc certification; 768 is preregistered unfit holdout; no asymptotic signed saving. |
+| TS-10 | **PROVED LOCAL** | Original first moment Σ_(n≤N) n r(n) = (15/64)H_N+B−E_N, B exact in FIRST_MOMENT_THEOREM.md, 0<E_N<241/(288N). Therefore subtracting (15/64)log N leaves (15/64)gamma+B. Source-mass gamma cancels unweighted, enters first moment via universal harmonic counterterm. |
+| TS-10g | **PROVED LOCAL / gauge sensitivity** | Coboundary mutant r+2H(n)−32H(n−1) retains original leading harmonic/gamma coefficient and completed pi orbit but shifts B by −2Σ_(n≥1)(15n+16)H(n)<0. B is a source fingerprint, not a phase-normality invariant. Pure rational H shadow has zero logarithmic first-moment coefficient. |
+| TS-11 | **OBSERVED FINITE** | 18/18 local focused tests PASS, independent optional SymPy identities PASS, 5 rationally certified energy signs + one ambiguous, exact original pole weighted-prefix sample N=128,512,1024 inside theorem tail envelope. NOT host CI/Lean. |
