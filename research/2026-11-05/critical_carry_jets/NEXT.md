@@ -30,3 +30,9 @@ The fixed-radius energy is quadratic in µ and has zero third MEASURE derivative
 Same-four-pole coherent β=0, source-periodic β=k/(16^p−1), rational phase-rotation seed1/5, original radial-only null, one signed-pole mutant, half-circle grid, high-frequency cosine density, source-gauge transformation and selected chronological carry. Use NEW epochs beyond 139,277,557, with chosen m and source/wrong-seed predictions written BEFORE arithmetic computation.
 
 **Research rule:** No 'exact zero unprovable' claim from general Gödel/Turing. Define instrument, closure, radius and tolerance. An actual O(A^-δ) or o(1) bound for Q_(1/2)(µ_A), proved all A, would be a genuine classical normality theorem. No such bound exists here. 
+
+## The new primitive-moment contrast to test
+
+[Source multipole jet theorem](SOURCE_MULTIPOLE_JETS.md) states \(F(0)=0\) but \(F'(0)=15\), \(F''(0)=302\), \(F'''(0)=7254\) for the actual signed four-pole generator. Mutating the leading moment changes the critical forcing-detection scale. A genuine next source-selected advance should use these moment invariants **together with** exact zero-seeded centered rational numerators/carries to prove a signed zero-branch correction correlation or fixed-radius Clausen discrepancy inequality. Pure moment cancellation is shared by coherent wrong-seed completions, so do not promote it as normality evidence.
+
+Compare actual original source and q=0 / q=2 signed primitive mutants on NEW preregistered epochs. Predict an inequality about selected carry visits or signed regularized energy, not just the already-proved different \(n^{-1},n^{-2},n^{-3}\) scales. The decisive condition remains Q_(1/2)(µ_A)→0, or an independently useful weaker source-specific theorem.
