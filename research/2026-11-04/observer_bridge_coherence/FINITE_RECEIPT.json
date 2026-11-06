@@ -1,0 +1,65 @@
+{
+  "busy_beaver_computed": false,
+  "moving_switch_examples": {
+    "1": {
+      "fails_at": 2,
+      "survives_through_n": true
+    },
+    "12": {
+      "fails_at": 13,
+      "survives_through_n": true
+    },
+    "2": {
+      "fails_at": 3,
+      "survives_through_n": true
+    },
+    "32": {
+      "fails_at": 33,
+      "survives_through_n": true
+    },
+    "5": {
+      "fails_at": 6,
+      "survives_through_n": true
+    }
+  },
+  "only_finite_checks_performed": true,
+  "original_12_state_sha256": "b35c83c605d237cf21c5d97e6e29c972f7533b68387a0414632fa1f891acc96d",
+  "original_horizon12": {
+    "M": "6102638728296638987305071225",
+    "candidate_winding": "6102638728296638987305071226",
+    "difference": "1/2",
+    "distinguishing_point": "1/12205277456593277974610142450",
+    "probe_count": 24
+  },
+  "original_source_first_new_prime": {
+    "index": 13,
+    "prime": 97,
+    "shift": "7489/9797",
+    "source_forcing": "19139/12491175"
+  },
+  "pi_normality_proved": false,
+  "rational_probe_sets": [
+    {
+      "M": "12",
+      "candidate_winding": "13",
+      "difference": "1/2",
+      "distinguishing_point": "1/24",
+      "probe_count": 3
+    },
+    {
+      "M": "1260",
+      "candidate_winding": "1261",
+      "difference": "1/2",
+      "distinguishing_point": "1/2520",
+      "probe_count": 3
+    },
+    {
+      "M": "400",
+      "candidate_winding": "401",
+      "difference": "1/2",
+      "distinguishing_point": "1/800",
+      "probe_count": 3
+    }
+  ],
+  "source": "original four signed BBP terms with U0=0"
+}

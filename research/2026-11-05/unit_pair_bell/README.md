@@ -1,0 +1,26 @@
+# Operation UNIT-PAIR ZERO × FIRST-ORDER BELL GLUING
+
+**Draft mathematical research.** Additive child of SUCC [#509](https://github.com/femboy2112/SUCC/pull/509), exact pinned parent \`16b0809b1f1426e77dad52381c3ac3fbeb187e3f\`. Original signed four-pole BBP, its literal U0=0, historical theorem/Lean/source contracts, production, workflows and main remain untouched. **No quantum-physics claim, normality claim, RH claim, merge, tag or publication.**
+
+The user's working idea is that **zero can be an observed cancellation of two mutually source-coupled units**, rather than an empty primitive. We separate three claims instead of conflating them:
+
+1. **Exact algebraic relational zero:** \(0\to A\xrightarrow{\Delta}A^2\xrightarrow{\delta}A\to0\), \(\delta(a,b)=a-b\), is SPLIT. The authentic source adds a separately specified antisymmetric forcing. For initial units a0=b0=1, \((a_n+b_n)/2=16^n,\ a_n-b_n=U_n\) exactly. A scalar zero loses common-mode provenance.
+2. **Optional TRUE quantum-information encoding:** In a declared \(\mathbb C^2\otimes\mathbb C^2\) space, \(\Psi_n=a_n|00\rangle-b_n|11\rangle=\sqrt2\,16^n\Phi^-+U_n\Phi^+/\sqrt2\). At the original boundary, the normalized \(\Phi^-\) is ENTANGLED even though the joint \(\Phi^+\) amplitude is zero. This DOES NOT mean that bare \(1-1=0\) creates or certifies physical entanglement; a separable product can give the same zero. For the normalized source-defined Bell lift, negativity \(>99/202\), bright probability \(<1/101\), and the exact real-phase relation \(p_{\rm bright}+\mathcal N=1/2\). Relative phase changes this relationship to \(p_{\rm bright}(\varphi)=1/2-\mathcal N\cos\varphi\).
+3. **Genuinely nontrivial arithmetic/source gluing:** The original and radial rational forcing functions represent **linearly independent classes** in \(\mathbb Q(x)/(E-16)\mathbb Q(x)\), certified by the two rational weighted-residue functionals (determinant \(-1/8\)). This is a source-category obstruction to rationally re-referencing the dynamics even though the radial analytic completed period is exactly zero. It is much stronger than declaring the bare difference sequence to be a non-split extension.
+
+The same source radial analytic potential \(G(t)\) generates a formally valid **LOCAL UNITARY Bell loop** with \(G(0)=G(1)=0\), \(G(2-\sqrt2)=\log2\). The entanglement stays 1 ebit and local marginals remain \(I/2\), while joint Bell-plus brightness rises to \(\sin^2((\log2)/2)\approx0.11538\), then returns to zero. This is an explicitly chosen quantum model of transient **relative coherence**. It is not borrowed energy, and the analytic t is not a π-digit time.
+
+**Essential boundary:** The same-four-pole coherent wrong seed \(s_*=-\pi/16\) inherits the forcing cohomology and analytic Bell loop, yet its completed circle orbit is nonnormal. These constructions alone do not constrain the source-selected signed Weyl sum. No normality theorem is proved.
+
+- [THEOREMS.md](THEOREMS.md) — exact source-pair, Hilbert/tensor, residue and Bell loop proofs.
+- [PREREGISTRATION.md](PREREGISTRATION.md) — what was known before holdouts and the prospective controls.
+- [COUNTERMODELS.md](COUNTERMODELS.md) — zero ≠ entanglement; dephased mixture, coherent source and other falsifiers.
+- [CLAIM_LEDGER.md](CLAIM_LEDGER.md) and [NEXT.md](NEXT.md) — scoped authority and the next signed carry-coupling test.
+- [VALIDATION.md](VALIDATION.md) — independent local exact checks and honest native CI state.
+- [tests/test_unit_pair_bell_coupling.py](../../../tests/test_unit_pair_bell_coupling.py) — standalone rooted exact regression suite.
+
+Related work: #502 dual zero, #507 rational pole obstruction and actual carry visibility, #508 nonlinear bispectrum, #509 τ angular response. External Bell/Schmidt guidance: [IBM Quantum Bell States](https://quantum.cloud.ibm.com/learning/en/courses/use-a-qc-today/quantum-mechanics-basics) and [Technion Quantum Information Lecture Notes](https://phsites.technion.ac.il/avron/wp-content/uploads/sites/3/2023/07/Quantum_information_116031____Lecture_Notes.pdf).
+
+**Next verdict-changing result:** prove an authentic original zero-seed **signed time-orbit** estimate using two-channel source cohomology plus literal integer carries, which explicitly excludes the coherent wrong seed. Encoding a hard Weyl character into a Bell-phase observation is not a solution.
+
+**New exact chronological counterpart:** the ACTUAL zero-seeded radial source also generates a discrete Bell-encoding *dark → bright → dark* pattern. Write \(d_n^{(r)}=16^{-n}Z_n\). Then \(d_0^{(r)}=0,\ d_1^{(r)}=1/840\); all n>=1 have \(d_n^{(r)}>0\), but \(d_{n+1}^{(r)}<d_n^{(r)}\), and \(d_n^{(r)}\to0\) from the original radial completed period. The declared Bell bright probability starts at zero, peaks **exactly at n=1 with \(1/2\,822\,401\)**, and strictly returns to zero; encoded negativity approaches its original 1/2. This is source-time mathematics, unlike the analytical t-loop. It is not physical energy repayment. See UP-04b in THEOREMS.md. The root test suite now has **15 methods** (the appended radial monotonicity method has independent standalone exact checks, but exact committed bytes and full native suite have not been run in this session).

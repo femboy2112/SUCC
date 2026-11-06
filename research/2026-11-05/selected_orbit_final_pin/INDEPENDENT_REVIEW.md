@@ -1,0 +1,7 @@
+# Review provenance
+
+The separate hostile worker began with its own entropy/countermodel derivation before reading the positive candidates. See [its pinned review](front_referee/INDEPENDENT_REVIEW.md) for independent derivations and proof SHA256 hashes. Alpha independently reviewed GT1/GT2 by division of P(t) by t-16; see [that review](front_alpha/INDEPENDENT_GT_REVIEW.md). Coordinator independently checked Alpha's reset/count and pressure constants, Delta's Fourier/finite-cut formulas, and the referee's entropy, boundary and Diophantine arguments.
+
+The singular Clausen sibling was audited read-only at its exact live head. Its signs, integer periods, cross constants and A^(2/3) threshold were independently rederived by Delta; the referee independently checked the new regularized version. The 48-row interval implementation is separate from the analytic proof. Review hashes refer to reviewed bytes; later append-only clarifications are not silently included in those hashes.
+
+All workers share a model family and this task's source context. These are real separate reasoning agents and worktrees, not independent external scholarly referees. A valid second derivation is stronger evidence than agreement, but no Lean/kernel certification was performed. Remaining selected inequalities are explicitly OPEN; no failure found in a candidate is recorded as automatic mathematical certification.

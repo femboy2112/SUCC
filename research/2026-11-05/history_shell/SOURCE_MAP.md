@@ -1,0 +1,18 @@
+# Provenance, mathematical categories and source normalization
+
+- Pinned additive parent [SUCC PR #521](https://github.com/femboy2112/SUCC/pull/521), exact head 7f26807a26ec3167005ed5bec7a021da49fe9b7a. Parent supplies critical block-forcing scale and fixed-r source-jet results. Original four-pole rational forcing and U0=0 preserved.
+- [SUCC #516](https://github.com/femboy2112/SUCC/pull/516) supplies source-twisted CP1 stage maps \(P_n([Z:W])=[e(r(n))Z^{16}:W^{16}]\), a degree16 forward branched sphere covering. Its Chern/curvature is source-blind, its anchored sections retain e(hU_n). Our inverse-root torsor restricts to its unit-circle boundary and uses a fixed ENDPOINT, not a claim that the chronological forward orbit is an inverse-limit random path.
+- [SUCC #515](https://github.com/femboy2112/SUCC/pull/515) proved a DIFFERENT degree2 Gaussian sphere observation injective on odd torsion but unstable on weak distribution limits. This round adds the elementary degree16 stage restriction and explicit discontinuity of its unique odd-root inverse; not a transport of #515's source-selected normality.
+- [SUCC #512](https://github.com/femboy2112/SUCC/pull/512) proves compatibility of finite quantum marginals and pure-cluster extension. The current classical-prefix/diagonal-state inclusion is separate and does not claim those nested quantum states are the same objects as the source-history records.
+- [SUCC #520/#521](https://github.com/femboy2112/SUCC/pull/520) provides source-selected carry labels, critical m~2log16n, and a fixed-radius Clausen test for normality. The present history bookkeeper adds explicit missing microstate and nonlumpability, but no source-selected signed inequality.
+- Classical independent solenoid source: Alain Robert, *A Course in p-adic Analysis*, appendix on p-adic solenoid: https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/robert.pdf (kernel of solenoid→circle is p-adic integers). Source-twisted finite covers yield a torsor after choosing a reference inverse history.
+- Koopman and Perron-Frobenius are classical adjoints for a Haar-preserving circle endomorphism; all Fourier calculations here are direct elementary proofs. Not physical quantum energy, not a linear spectral gap for source-selected π.
+- Shifted Legendre P4 moment-matching is a classical orthogonal-polynomial countermodel; exact Fraction integration in focused tests. It is an observer/probe sufficiency check, not π mathematics itself.
+
+## Non-interchangeable objects and limits
+
+(1) n = actual chronological source step and signed rational carry; (2) m = how many leading radix16 digits are observed; (3) k = optional future observation horizon; (4) the 16-adic inverse-root branch code over a fixed endpoint (least-significant-first); (5) a classical posterior over a truncated state, requiring an explicitly declared prior; (6) a compatible quantum state requiring a chosen tensor-product system; (7) the actual selected phase U_n(0), not Haar-typical seeds. Exact diagrams can compare these types but do not identify their probability measures or imply Haar.
+
+The odd-torsion admissibility condition is source-arithmetic and holds for many odd-denominator mutations and shifts. It cannot by itself authenticate the original four-pole formula or original zero seed.
+
+**Publication/promotion firewall:** No new π base16 normality, RH, global scholarly priority, physical entanglement, new Lean theorem or full native suite claim.

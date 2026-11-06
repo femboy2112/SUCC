@@ -1,0 +1,91 @@
+{
+  "kind": "source-labelled finite projective-cluster verification",
+  "parent_pr": 511,
+  "parent_head_sha": "378a77eefa084225f30a209c27a2b4bc54897e72",
+  "new_source_branch": "research/infinite-qubit-cluster-source-gluing-2026-11-05",
+  "source_contract": {
+    "original_taps": [
+      "4",
+      "0",
+      "0",
+      "-2",
+      "-1",
+      "-1",
+      "0",
+      "0"
+    ],
+    "angular_taps": [
+      "2",
+      "2",
+      "1",
+      "0",
+      "-1/2",
+      "-1/2",
+      "-1/4",
+      "0"
+    ],
+    "radial_taps": [
+      "2",
+      "-2",
+      "-1",
+      "-2",
+      "-1/2",
+      "-1/2",
+      "1/4",
+      "0"
+    ],
+    "initial_conditions": "U_0=Y_0=Z_0=0"
+  },
+  "preregistration": {
+    "N": [
+      7,
+      8,
+      9
+    ],
+    "source_times": [
+      2,
+      5,
+      11
+    ],
+    "harmonics": [
+      1,
+      3,
+      -2
+    ],
+    "prefix_lengths": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "executed_independent_script": {
+    "repo_path": "research/2026-11-05/infinite_qubit_field/independent_numpy_probe.py",
+    "git_blob_sha": "3d90321a8af44792d6abad394567e64b224506da",
+    "sha256": "74fb2cdcba2b2997f44c75c8e7626a77039bb2b9112ec6885b3d03e14aff1982",
+    "stdout_sha256": "368f44892b5f591eec5cb0390e043dbcb9000925431c98dac4e4888422dea554",
+    "numeric_tolerance": 2e-11,
+    "result": "PASS"
+  },
+  "finite_results": {
+    "stabilizer_evaluations": 24,
+    "contiguous_cuts_with_purity_half": 21,
+    "grouped_source_character_evaluations": 81,
+    "prefix_lengths_checked": 4,
+    "cluster_sizes_checked": 3,
+    "GHZ_N_incompatibility_checks": 3,
+    "two_qubit_cluster_purity_N2": "1",
+    "two_qubit_cluster_prefix_purity_N3": "1/2",
+    "original_phase_n2": "1076/4095",
+    "original_phase_n5": "32442016954/78058255275",
+    "original_phase_n11": "48891577015658186678698/76784965817741472215925"
+  },
+  "scopes": {
+    "new_stdlib_root_suite": "16 methods committed, exact blob not run in this session",
+    "all_N_cluster_purity": "paper proof from one crossing CZ edge",
+    "infinite_state": "paper construction via quasilocal automorphism",
+    "pi_normality": "OPEN",
+    "physical_quantum_claim": "NOT CLAIMED",
+    "hosted_ci": "not yet checked at this exact head"
+  }
+}

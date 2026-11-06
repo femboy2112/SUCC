@@ -1,0 +1,12 @@
+# Next verdict-changing probe — carry the prime-Frobenius echo to the real observer
+
+This round pays a substantial SOURCE-SELECTED arithmetic obligation: universal nonzero p-pulses and `log den(U_N)~6N`. It **does not** pay the real-circle centered numerator, which is the true normality obstruction. Avoid simply renaming the new exponent as an equidistribution proof.
+
+1. **Prime-Frobenius observational path category.** Build source-labelled arrows `(p,a,m,C_a(m))` to original rational shadow U_k or dual V_k. Verify exact naturality under event m→m+8, source integer carries, and p-primary residues without hiding full source readout or promoting the second formula to a new original source.
+2. **Archimedean numerator nonconspiracy.** For source selected real gaps `U_(n+d)-U_n`, use the new p-survival theorem plus original cofactor and zero-seed to bound centered numerators, not just denominator size. The #487 coherent CRT ghost matches all local passports; it MUST be rejected by a genuinely full source arithmetic premise.
+3. **Oily/Gamma null comparator.** Because the alternative π BBP source is the prime reduction's exact dual, test whether the strict `0<2U_n−V_n<1/(8n+4)` plus `−gamma/8` cumulative correction constrains the selected *joint* real Fourier characters better than a generic O(log N) transport estimate. Avoid treating the known zero integral as normality.
+4. **All-precision prime exceptions.** Classify source-local zeros for small fixed p and p² recollisions separately, with actual exceptional primes, not by extrapolating `den(U_N)=M_N`. A potential effective rate for `log M_N−log den(U_N)=o(N)` needs an explicit uniform bound on exceptional numerator factors as m grows; the current epsilon proof is noneffective and that's stated.
+5. **Independent priority/referee.** Compare the all-m prime echo theorem and 6N denominator limit against scholarly literature and seek blinded independent mathematical review. The alternate BBP formula itself is classical; academic-first novelty is NOT certified.
+6. **Next mathematical target remains** original `J_(A,q_A)=o(K_A)` (q_A≈log A, K_A~log log A), or a signed fixed-h Weyl bound `S_N(h)=o(N)`. A finite-prime Galois average, source-independent Perron operator or merely an exact saturated denominator is not enough.
+
+**Repro contract:** run original full provenance/foundations/ordinal suite and Lean only in a real repository checkout; locally focused proofs/tests do not impersonate native CI. Keep original four signed poles, U0=0, and proof-status distinctions.

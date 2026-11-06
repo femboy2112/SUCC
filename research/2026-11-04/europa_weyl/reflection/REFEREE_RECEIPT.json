@@ -1,0 +1,54 @@
+{
+  "exact": [
+    {
+      "N": 23,
+      "first_failure_at_l": 22,
+      "rounded_tape_rows_verified": 22,
+      "raw_tape_rows_verified": 25,
+      "rigorous_residual_upper_bound_approx": 2.2911012367350935e-15
+    },
+    {
+      "N": 73,
+      "first_failure_at_l": 66,
+      "rounded_tape_rows_verified": 66,
+      "raw_tape_rows_verified": 69,
+      "rigorous_residual_upper_bound_approx": 1.4124303092450606e-47
+    },
+    {
+      "N": 199,
+      "first_failure_at_l": 177,
+      "rounded_tape_rows_verified": 177,
+      "raw_tape_rows_verified": 180,
+      "rigorous_residual_upper_bound_approx": 7.171649392615621e-131
+    }
+  ],
+  "scaling": {
+    "lambda": 0.8802229155068764,
+    "slope": 2.0904565070882892,
+    "coefficient_constant": 0.4439537717400979,
+    "weighted_constant": 0.5399508779116343,
+    "cases": [
+      {
+        "N": 50,
+        "L": 45,
+        "leading_weighted_error_over_asymptotic": 0.9609295041096365
+      },
+      {
+        "N": 200,
+        "L": 177,
+        "leading_weighted_error_over_asymptotic": 0.9740590601641875
+      },
+      {
+        "N": 800,
+        "L": 706,
+        "leading_weighted_error_over_asymptotic": 0.9790779360245656
+      },
+      {
+        "N": 2400,
+        "L": 2115,
+        "leading_weighted_error_over_asymptotic": 0.9823881252305903
+      }
+    ]
+  },
+  "authority": "exact finite coefficient and rounded tape checks; floating leading-term diagnostic"
+}

@@ -1,0 +1,185 @@
+[
+  {
+    "name": "test_observer_relative_return.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_observer_relative_return.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 9 tests in 3.671s",
+      "OK"
+    ]
+  },
+  {
+    "name": "test_reciprocal_observer_clock.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_reciprocal_observer_clock.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 7 tests in 1.982s",
+      "OK"
+    ]
+  },
+  {
+    "name": "test_source_jet_transport.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_source_jet_transport.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 8 tests in 0.072s",
+      "OK"
+    ]
+  },
+  {
+    "name": "test_virtual_gauge_circle.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_virtual_gauge_circle.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 12 tests in 0.196s",
+      "OK"
+    ]
+  },
+  {
+    "name": "test_virtual_return_law.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_virtual_return_law.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 6 tests in 0.034s",
+      "OK"
+    ]
+  },
+  {
+    "name": "test_virtual_time_gauge.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_virtual_time_gauge.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 4 tests in 0.215s",
+      "OK"
+    ]
+  },
+  {
+    "name": "test_zero_frame_coupling.py",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_zero_frame_coupling.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 12 tests in 0.579s",
+      "OK"
+    ]
+  },
+  {
+    "name": "front_ad",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-frame/research/2026-11-04/zero_frame_coupling/front_ad",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 4 tests in 0.996s",
+      "OK"
+    ]
+  },
+  {
+    "name": "front_be",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-frame/research/2026-11-04/zero_frame_coupling/front_be",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 6 tests in 0.015s",
+      "OK"
+    ]
+  },
+  {
+    "name": "front_cf",
+    "command": [
+      ".venv/bin/python",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-frame/research/2026-11-04/zero_frame_coupling/front_cf/probe.py"
+    ],
+    "exit_code": 0,
+    "summary": [
+      "Ran 9 tests in 0.098s",
+      "OK"
+    ]
+  }
+]

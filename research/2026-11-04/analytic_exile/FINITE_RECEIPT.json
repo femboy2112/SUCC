@@ -1,0 +1,171 @@
+{
+  "Ward_conditionals": {
+    "160": {
+      "1": {
+        "0": "0",
+        "1": "7201/573440",
+        "2": "14897/573440",
+        "3": "4359/81920"
+      },
+      "3": {
+        "0": "0",
+        "1": "7267/573440",
+        "2": "16019/573440",
+        "3": "6933/81920"
+      },
+      "5": {
+        "0": "0",
+        "1": "7333/573440",
+        "2": "17141/573440",
+        "3": "9507/81920"
+      }
+    },
+    "40": {
+      "1": {
+        "0": "0",
+        "1": "365/7168",
+        "2": "829/7168",
+        "3": "411/1024"
+      },
+      "3": {
+        "0": "0",
+        "1": "1891/35840",
+        "2": "5267/35840",
+        "3": "4629/5120"
+      },
+      "5": {
+        "0": "0",
+        "1": "1957/35840",
+        "2": "6389/35840",
+        "3": "7203/5120"
+      }
+    },
+    "96": {
+      "1": {
+        "0": "0",
+        "1": "7223/344064",
+        "2": "15271/344064",
+        "3": "1739/16384"
+      },
+      "3": {
+        "0": "0",
+        "1": "7333/344064",
+        "2": "17141/344064",
+        "3": "3169/16384"
+      },
+      "5": {
+        "0": "0",
+        "1": "2481/114688",
+        "2": "6337/114688",
+        "3": "4599/16384"
+      }
+    }
+  },
+  "analytic_boundary_ghosts": {
+    "1": {
+      "at_fixed_M_boundary_residue": 1,
+      "first_M_coefficients_zero": true,
+      "normalized_test_at_z_127_128": "127/128",
+      "unit_phase_pair_boundary_difference": -2
+    },
+    "3": {
+      "at_fixed_M_boundary_residue": 1,
+      "first_M_coefficients_zero": true,
+      "normalized_test_at_z_127_128": "2048383/2097152",
+      "unit_phase_pair_boundary_difference": -2
+    },
+    "32": {
+      "at_fixed_M_boundary_residue": 1,
+      "first_M_coefficients_zero": true,
+      "normalized_test_at_z_127_128": "20975825942850835435487946371038619427046538071435595461971578449921/26959946667150639794667015087019630673637144422540572481103610249216",
+      "unit_phase_pair_boundary_difference": -2
+    },
+    "8": {
+      "at_fixed_M_boundary_residue": 1,
+      "first_M_coefficients_zero": true,
+      "normalized_test_at_z_127_128": "67675234241018881/72057594037927936",
+      "unit_phase_pair_boundary_difference": -2
+    }
+  },
+  "gamma2_abel_exact": {
+    "1/2": {
+      "analytic_ward_source_error_upper_h3": "132/7",
+      "exact_abel_cesaro": "3/8",
+      "mass_adds_to_one": true,
+      "mass_sum_last_17": "262125/262144",
+      "omitted_mass_last_17": "19/262144",
+      "scaled_mean": "3/2",
+      "source_gamma_abel_error_upper_h3": "33/112"
+    },
+    "31/32": {
+      "analytic_ward_source_error_upper_h3": "1023/448",
+      "exact_abel_cesaro": "993/32768",
+      "mass_adds_to_one": true,
+      "mass_sum_last_17": "132984317351405859143661585/1237940039285380274899124224",
+      "omitted_mass_last_17": "1104955721933974415755462639/1237940039285380274899124224",
+      "scaled_mean": "63/32",
+      "source_gamma_abel_error_upper_h3": "33/1792"
+    },
+    "7/8": {
+      "analytic_ward_source_error_upper_h3": "33/4",
+      "exact_abel_cesaro": "57/512",
+      "mass_adds_to_one": true,
+      "mass_sum_last_17": "12198635659801809/18014398509481984",
+      "omitted_mass_last_17": "5815762849680175/18014398509481984",
+      "scaled_mean": "15/8",
+      "source_gamma_abel_error_upper_h3": "33/448"
+    }
+  },
+  "observer_notes": "All exact rational diagnostics, neither pi digits nor a blind independent referee",
+  "rational_normal_prefix_control": {
+    "17": {
+      "denominator_bits": 65,
+      "eventually_non_normal": true,
+      "limit_normality_imported_classical_theorem": true,
+      "terminating_tail_after_M": true
+    },
+    "4": {
+      "denominator_bits": 15,
+      "eventually_non_normal": true,
+      "limit_normality_imported_classical_theorem": true,
+      "terminating_tail_after_M": true
+    },
+    "40": {
+      "denominator_bits": 161,
+      "eventually_non_normal": true,
+      "limit_normality_imported_classical_theorem": true,
+      "terminating_tail_after_M": true
+    }
+  },
+  "source": "original four signed BBP poles, zero seed",
+  "source_normality_proved": false,
+  "tested_original_epochs": {
+    "160": {
+      "gamma_epoch_upper_h5": "11/573440",
+      "independent_modular_exact_match": true,
+      "max_source_positive_denominator_bits": 43,
+      "n": 160,
+      "odd_denominators": true,
+      "phase_sha256": "0e2ea093c2e1bb2dae98b76a9085e21fe5d51ccb4bb03b24d3f2c09cbc43dc83",
+      "phase_shadow_bound_h5": "11/5511476880"
+    },
+    "40": {
+      "gamma_epoch_upper_h5": "11/35840",
+      "independent_modular_exact_match": true,
+      "max_source_positive_denominator_bits": 35,
+      "n": 40,
+      "odd_denominators": true,
+      "phase_sha256": "3638a731463190d47aa458a1e89b4c9b4888880f9d4d30be37724d2349ff010e",
+      "phase_shadow_bound_h5": "11/86419620"
+    },
+    "96": {
+      "gamma_epoch_upper_h5": "55/1032192",
+      "independent_modular_exact_match": true,
+      "max_source_positive_denominator_bits": 40,
+      "n": 96,
+      "odd_denominators": true,
+      "phase_sha256": "6552c3653335453bcabb5161eedc2b68a1d0e2e975f72784e8d97d81fc8d6ef5",
+      "phase_shadow_bound_h5": "11/1191408624"
+    }
+  }
+}

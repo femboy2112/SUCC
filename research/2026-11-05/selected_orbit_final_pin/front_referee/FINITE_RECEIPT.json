@@ -1,0 +1,90 @@
+{
+  "status": "EXACT_FINITE_CALIBRATION_NOT_ASYMPTOTIC_PROOF",
+  "parent": "749931f0f357c60ef4e21879d96b0306999f428f",
+  "python": "3.12.3",
+  "command": "python -m unittest discover -s research/2026-11-05/selected_orbit_final_pin/front_referee -p 'test_*.py' -v",
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "test_runtime_seconds": 0.11,
+  "independent_source_checks": {
+    "indices": [
+      1,
+      73
+    ],
+    "paths": [
+      "four signed fractions",
+      "expanded polynomial quotient"
+    ]
+  },
+  "unwrapped_seed_check": {
+    "seed": "1/5",
+    "indices": [
+      0,
+      73
+    ],
+    "difference": "16^n/5"
+  },
+  "bernoulli": {
+    "probabilities": [
+      "9/128",
+      "7/128",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16"
+    ],
+    "exact_pressure_base": "513/512",
+    "direct_enumeration_depths": [
+      1,
+      2,
+      3
+    ],
+    "factorized_depth_max": 47
+  },
+  "markov": {
+    "transition": "1/24 + (1/3 if i=j else 0)",
+    "exact_pressure": "(8/3)^(m-1)",
+    "direct_enumeration_depths": [
+      1,
+      2,
+      3
+    ]
+  },
+  "mixture": {
+    "weights": [
+      "1/7",
+      "2/11"
+    ],
+    "depths": [
+      1,
+      2,
+      5,
+      13,
+      29
+    ],
+    "formula": "1+theta^2(16^m-1)"
+  },
+  "irrationality_exponent_check": {
+    "left": "729/2097152",
+    "right": "1/256",
+    "strict_less": true
+  },
+  "test_source_sha256": "dec36e3bbbee4f74b2b481b986dc919688f46b600339ecd36938a3447987d02b",
+  "limits": [
+    "No new original-orbit asymptotic count bound",
+    "No Lean/kernel certification",
+    "No full native suite on this worker",
+    "No external scholarly certification"
+  ]
+}
