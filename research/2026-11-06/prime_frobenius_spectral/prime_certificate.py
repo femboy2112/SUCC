@@ -1,7 +1,7 @@
 """Original BBP source prime-denominator sieve: exact rational post-prereg holdouts.
 
 No normality claims. Only the finite checks run here; the all-n and PNT/AP proofs
-are written separately in THEOREM.md.
+are written separately in THEOREMS.md.
 """
 from fractions import Fraction
 from math import log
@@ -89,7 +89,7 @@ def run():
     return {'label':'OBSERVED-FINITE / exact arithmetic','original_source':True,'literal_U0':'0',
             'holdouts':ns,'total_selected_prime_residue_checks':total,
             'all_pole_collisions_covered':True,'data':out,
-            'all_n_theorem':'in THEOREM.md, not inferred from checks',
+            'all_n_theorem':'in THEOREMS.md, not inferred from checks',
             'pnt_in_AP':'classical unconditional theorem',
             'real_Weyl_source_selected_contraction':'OPEN','pi_normality':'OPEN'}
 
