@@ -1,5 +1,7 @@
 # SUCC's next π-normality front: original-source branch currents
 
+> **Navigation note (2026-11-05, Main XX):** the maintained π entrypoint is now [PI_NORMALITY_FRONTIER.md](PI_NORMALITY_FRONTIER.md). This document is preserved unchanged below as the 2026-11-03 front.
+
 **Status (2026-11-03): the original selected branch-current saving is OPEN; base-16 normality of π is OPEN; RH remains a separate OPEN program.** This document is a proposed concise main front door, not a retroactive change to existing theorem contracts.
 
 ## One objective
