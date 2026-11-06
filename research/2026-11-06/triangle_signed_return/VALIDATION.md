@@ -55,3 +55,20 @@ See FAILED_SCRATCH_LOG.md. Two failures surfaced and were not suppressed: (a) as
 The local theorem arguments are not Lean-kernel proofs, externally blind peer review, or a world-novelty assertion. We did **NOT** execute the full SUCC native 12k+ suite, root scripts/verify_provenance.py, observer_foundations_probe.py or ordinal_succ_report_probe.py, full Lean or hosted exact-head CI in this local environment. A credential-less local clone could not resolve github.com; all writes were made through the authorized GitHub connector. Hosted CI is to be inspected after the draft PR exists, not reported as passing here.
 
 Source-map σ is authenticated for original tests; false transport and shadow controls are explicitly marked separate. Probe μ covers finite exact controls and independent CAS algebra but NOT the all-horizon source-selected real signed inequality. Pathway φ to π normality remains **OPEN**.
+
+
+## Follow-up execution: certified finite return signs + source Gamma moment
+
+After preregistration files PREREGISTRATION_INTERVAL.md and PREREGISTRATION_GAMMA_MOMENT.md landed on the branch, the following were *locally executed* on the actual committed Python source bytes:
+
+    python -m compileall -q experiment.py test_experiment.py certified_finite.py test_certified_finite.py first_moment.py test_first_moment.py
+    python -m unittest -v test_experiment test_certified_finite test_first_moment
+    python certified_finite.py > CERTIFIED_FINITE_RESULTS.generated.json
+    python first_moment.py > FIRST_MOMENT_RESULTS.generated.json
+    python symbolic_first_moment_audit.py  # optional SymPy
+
+**18/18 total focused unit tests PASS**, 0 failures/errors. The new finite Fourier certificate uses rational Machin π enclosure and exact Taylor remainder errors, |R−Rhat|<1/2400; see CERTIFIED_FINITE_THEOREM.md. Five finite signs are rigorously decided, one fresh sample at N=768,h=2,Q=4 is AMBIGUOUS. First-moment constant B has exact algebraic/analytic proof and 0<E_N<241/(288N); displayed 75-digit Decimal values are **diagnostics**, not independent proof. All first-moment program behavior uses standard-library fractions/decimal; SymPy audit is optional.
+
+Preserved symbolics: the first optional CAS audit initially FAILED solely because SymPy did not simplify two equal real logarithms in the same normal form; we replaced that brittle expectation with explicit positive algebraic ratio verification, retained the exact digamma equality, and reran the audit successfully. This is not a counterexample to the theorem. The source and error proofs do not depend on CAS.
+
+Current research additional docs: CERTIFIED_FINITE_THEOREM.md, CERTIFIED_FINITE_RESULTS.json, FIRST_MOMENT_THEOREM.md, FIRST_MOMENT_RESULTS.json and corresponding scripts/tests; no original/frozen source changes. Full native suite, formal Lean, independent academic review and hosted exact-head CI are separate gates.
