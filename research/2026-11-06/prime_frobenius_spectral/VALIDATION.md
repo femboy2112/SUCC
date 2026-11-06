@@ -41,3 +41,22 @@ Not executed locally on full repository: native SUCC 12k+ suite, scripts/verify_
 Arithmetic theorems are locally proved from standard Euler/Fermat, prime-arc residue combinatorics, PNT/AP, and Ramanujan sums. Two private implementations of the same source do not count as independent outside referees.
 
 **Exact source cleanup:** after the initial tests, replaced a redundant ternary p19 probe with the identical direct exact Fraction reduction and corrected a THEOREMS.md cross-reference; both revised Python blobs were rehashed locally against live GitHub, and the complete 7-test suite plus compileall were rerun cleanly at these final bytes.
+
+
+## Additional exact character theorem and fresh finite calibrations
+
+After initial PR #532 denominator/Frobenius audit, a new preregistration at [PREREGISTRATION_GALOIS_SELECTOR.md](PREREGISTRATION_GALOIS_SELECTOR.md) was committed before the character-table tests. **The algebraic Galois-selection theorem was already derived and was openly recorded as non-blind; tests check the proof, not discover it.** Theorem in GALOIS_SELECTOR_THEOREM.md uses orthogonality and Parseval in the finite group (Z/d_n)^× and the already proven PF-04 source denominator bound; real temporal cancellation remains OPEN.
+
+Local standard-library Python:
+    python -m compileall -q galois_selector.py test_galois_selector.py
+    python -m unittest -v test_galois_selector.py
+    python -m unittest discover -q -s . -p 'test_*.py'
+    python galois_selector.py > GALOIS_SELECTOR_RESULTS.generated.json
+
+**5/5 new tests PASS, 12/12 complete research-local tests PASS**, 0 failures/errors. Character table construction explicitly uses C2×C4 for d=15, prime primitive-root exponents for p∈{7,11,17}, orthogonality, inverse Fourier reconstruction of selected complex phase, Parseval, and signed/trivial mean mutation. Finite complex calculations use float and error tolerance <5×10^-12, not rigorous intervals. GALOIS_SELECTOR_RESULTS.json is a compact semantic digest, not byte-identical regenerated raw JSON.
+
+GitHub blob readbacks match *tested* local git hash-object:
+- galois_selector.py 54fdb76819a5e8015616aec39dd44538b382388d
+- test_galois_selector.py 21d2fa239a094409c1864d7bc04d28ef240bab2c
+
+This has not executed the full native SUCC suite or independent Lean kernel for the new theorem. No original-source π real Weyl saving is claimed.
