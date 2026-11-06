@@ -1,0 +1,52 @@
+{
+  "B_symbolic": "((27+31*sqrt(2))*pi)/128 + (39*log(2))/32 + (31*sqrt(2)*log(1+sqrt(2)))/64",
+  "claim_status": "PROVED LOCAL symbolic theorem / OBSERVED FINITE rational controls",
+  "exact_source_moment_tail_results": [
+    {
+      "N": 128,
+      "rational_prefix_decimal_diagnostic": "3.184908908355142131349509",
+      "B_minus_prefix_decimal_diagnostic": "0.002304081289965861040571970",
+      "rigorous_tail_bound": "241/36864",
+      "symbolic_theorem_required": true
+    },
+    {
+      "N": 512,
+      "rational_prefix_decimal_diagnostic": "3.186636969943973846127634",
+      "B_minus_prefix_decimal_diagnostic": "0.0005760197011341462624475109",
+      "rigorous_tail_bound": "241/147456",
+      "symbolic_theorem_required": true
+    },
+    {
+      "N": 1024,
+      "rational_prefix_decimal_diagnostic": "3.186924979891591131023797",
+      "B_minus_prefix_decimal_diagnostic": "0.0002880097535168613662839286",
+      "rigorous_tail_bound": "241/294912",
+      "symbolic_theorem_required": true
+    }
+  ],
+  "gamma_coefficient_in_log_N_renormalization": "15/64",
+  "linear_harmonic_coefficient_exact": "15/64",
+  "original_U0": "0",
+  "original_four_poles": true,
+  "real_weyl_saving": "OPEN",
+  "shadow_source_samples": [
+    [
+      4,
+      "-112748/1500625"
+    ],
+    [
+      8,
+      "-5441512/1445900625"
+    ],
+    [
+      16,
+      "-210328544/653188856401"
+    ],
+    [
+      32,
+      "-7370401744/218112993285201"
+    ]
+  ],
+  "shadow_source_weighted_moment_coefficient": "0",
+  "source_renormalized_residue_B_numeric": "3.187212989645107992390081116710734839678"
+}
