@@ -1,0 +1,38 @@
+{
+  "fresh_epochs_h_3": [
+    {
+      "A": 239,
+      "N": 239,
+      "h": 3,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.062069108483",
+      "rigorous_upper_ceil_12dp": "0.062069108492"
+    },
+    {
+      "A": 503,
+      "N": 503,
+      "h": 3,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.007157640762",
+      "rigorous_upper_ceil_12dp": "0.007157640771"
+    }
+  ],
+  "infinite_time_status": "OPEN",
+  "periodic_beta_1_5_h_3": {
+    "N": 239,
+    "h": 3,
+    "rigorous_average_error_ceiling_12dp": "0.000000000004",
+    "rigorous_lower_floor_12dp": "0.999999999995",
+    "rigorous_upper_ceil_12dp": "1.000000000004"
+  },
+  "prereg_commit": "6659899812abee3ae6625907212c8d991dfbf6ee",
+  "prereg_sha256": "98d45acdaa6c62a87dceef23fdf9e3ee6f50d441632b2ce354654dbe4ecfb0d7",
+  "rootgrid_h_3": {
+    "N": 16,
+    "h": 3,
+    "rigorous_average_error_ceiling_12dp": "0.000000000004",
+    "rigorous_lower_floor_12dp": "0.000000000000",
+    "rigorous_upper_ceil_12dp": "0.000000000005"
+  },
+  "status": "OBSERVED-FINITE / RIGOROUS RATIONAL INTERVAL"
+}
