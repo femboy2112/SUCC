@@ -1,0 +1,159 @@
+{
+  "operation": "History-first SUCC: causal shell / 16-adic sphere / source-conditioned observer",
+  "parent_pr": 521,
+  "parent_sha": "7f26807a26ec3167005ed5bec7a021da49fe9b7a",
+  "source_contract": {
+    "original_poles": [
+      "4/(8n-7)",
+      "-2/(8n-4)",
+      "-1/(8n-3)",
+      "-1/(8n-2)"
+    ],
+    "original_initial_state": "U_0=0",
+    "source_arithmetic": "unwrapped exact rational with literal integer carries",
+    "all_n_source_field": "r_o(n)=16U_(n-1)-U_n with sign convention U_n=16U_(n-1)+r_o(n)"
+  },
+  "math_status": {
+    "exact_results": [
+      "two-cell shell identity for every m,k and source",
+      "state pushforward and observable pullback",
+      "fixed-endpoint 16-adic inverse root torsor",
+      "bijective odd-order torsion inverse with discontinuous ambient circle inverse",
+      "original source two-step coarse re-uniformization error",
+      "all-forcing Haar-seed IID leading hexadecimal digits",
+      "Koopman/transfer character action and source-neutral point-evaluation norm",
+      "first three polynomial moments do not determine threshold probability"
+    ],
+    "not_proved": [
+      "original source-selected fixed-h Weyl cancellation",
+      "original fixed-radius Clausen discrepancy limit",
+      "original signed critical carry deviation asymptotic",
+      "pi base16 normality",
+      "Riemann Hypothesis"
+    ]
+  },
+  "new_source_epochs": [
+    {
+      "A": 173,
+      "m": 4,
+      "k": 1,
+      "observed_branches": 38,
+      "model_expected_approx": 44.442670032,
+      "innovation_per_observation_approx": -0.037240867
+    },
+    {
+      "A": 173,
+      "m": 3,
+      "k": 2,
+      "observed_branches": 42,
+      "model_expected_approx": 47.196399813,
+      "innovation_per_observation_approx": -0.030036993
+    },
+    {
+      "A": 347,
+      "m": 4,
+      "k": 1,
+      "observed_branches": 21,
+      "model_expected_approx": 22.144908962,
+      "innovation_per_observation_approx": -0.003299449
+    },
+    {
+      "A": 347,
+      "m": 3,
+      "k": 2,
+      "observed_branches": 21,
+      "model_expected_approx": 23.523001033,
+      "innovation_per_observation_approx": -0.007270896
+    },
+    {
+      "A": 691,
+      "m": 5,
+      "k": 1,
+      "observed_branches": 179,
+      "model_expected_approx": 177.879066808,
+      "innovation_per_observation_approx": 0.00162219
+    },
+    {
+      "A": 691,
+      "m": 4,
+      "k": 2,
+      "observed_branches": 194,
+      "model_expected_approx": 188.97241205,
+      "innovation_per_observation_approx": 0.007275815
+    }
+  ],
+  "preregistered_observer_policy": [
+    {
+      "A": 211,
+      "total_depth": 5,
+      "selected_m": 2,
+      "selected_k": 3,
+      "actual_branch_count": 39,
+      "expected_sum_approx": 38.8326342,
+      "observed_brier_approx": 0.149987443,
+      "coherent_nonnormal_brier_approx": 0.039518583
+    },
+    {
+      "A": 419,
+      "total_depth": 5,
+      "selected_m": 2,
+      "selected_k": 3,
+      "actual_branch_count": 15,
+      "expected_sum_approx": 19.5509667,
+      "observed_brier_approx": 0.034647867,
+      "coherent_nonnormal_brier_approx": 0.002540205
+    },
+    {
+      "A": 829,
+      "total_depth": 6,
+      "selected_m": 3,
+      "selected_k": 3,
+      "actual_branch_count": 153,
+      "expected_sum_approx": 158.0880546,
+      "observed_brier_approx": 0.143625618,
+      "coherent_nonnormal_brier_approx": 0.042427047
+    }
+  ],
+  "controls": {
+    "toy_two_step_total_variation": "1/2",
+    "original_source_n13_m2_two_step_tv_approx": 0.21616806492334834,
+    "shifted_Legendre_P4_moment_match_orders": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "P4_threshold_probability_delta": "-15*epsilon/512",
+    "haar_seed_iid_word_count_checked": {
+      "depth1": 16,
+      "depth2": 256,
+      "depth3": 4096
+    },
+    "root_inverse_holdouts": "odd denominators q=16t±1 for t=1,10,100,1000",
+    "unforced_selected_seed": "a.e. ensemble IID does not imply literal zero seed normal"
+  },
+  "validation": {
+    "focused_test_methods_reported": 26,
+    "failures_reported": 0,
+    "errors_reported": 0,
+    "full_log_sha256": "36ec0638878f5b72b6f7282c388067483a655fdb692bccf55d8d37e5608dd62b",
+    "test_git_blobs": {
+      "tests/test_history_shell_duality.py": "790fab1fdd6123d333389bb8c34829624848e9cf",
+      "tests/test_sphere_history_transfer.py": "670fdafb5d46eb0f0def712606a4774c5bbe9a82",
+      "tests/test_history_jet_incompleteness.py": "45542abd6d19b5c683c6d43cea499612a0706fdb",
+      "tests/test_history_policy.py": "7967fe43f49a96db2790faf7e36b32b09e1f484e"
+    },
+    "executable_git_blobs": {
+      "research/2026-11-05/history_shell/history_shell_probe.py": "8fa1bffae594d8a1499c3ae90ca0d5561e627053",
+      "research/2026-11-05/history_shell/history_policy.py": "cea4b67e6de065c891a5a585be753ff766b63ac9"
+    },
+    "provenance": "Exact executed source blob hashes verified against committed GitHub files as recorded in VALIDATION.md",
+    "not_claimed": [
+      "full native repository test suite",
+      "new Lean certification",
+      "external independent referee",
+      "hosted CI all-green",
+      "physical entanglement of original arithmetic source"
+    ]
+  }
+}
