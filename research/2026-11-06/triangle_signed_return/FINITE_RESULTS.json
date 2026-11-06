@@ -1,0 +1,103 @@
+{
+  "U0": "0",
+  "arbitrary_lag_clone": {
+    "all_pass": true,
+    "cases": 21,
+    "representative": [
+      {"ell": 0, "holds": true, "n": 0, "q": 3},
+      {"ell": 0, "holds": true, "n": 0, "q": 5},
+      {"ell": 1, "holds": true, "n": 0, "q": 6},
+      {"ell": 1, "holds": true, "n": 0, "q": 10},
+      {"ell": 2, "holds": true, "n": 0, "q": 12},
+      {"ell": 3, "holds": true, "n": 0, "q": 24},
+      {"ell": 3, "holds": true, "n": 0, "q": 40}
+    ]
+  },
+  "dyadic_signed_shells_float": [
+    {
+      "M": 128, "N": 512, "Q": 4, "diagonal": 0.0078125,
+      "direct_R_float": 0.0032113467343143506,
+      "real_signed_shell_contribution_float": {
+        "0": -0.005880315014, "1": 0.003044153314,
+        "2": -0.00126400452, "3": -0.000226763064,
+        "4": -1.0694474e-05, "5": -5.3006419e-05, "6": -0.000210523089
+      }, "reconstructed_R_float": 0.003211346734
+    },
+    {
+      "M": 64, "N": 512, "Q": 8, "diagonal": 0.015625,
+      "direct_R_float": 0.018183323496775015,
+      "real_signed_shell_contribution_float": {
+        "0": 0.006088306628, "1": -0.002528009039,
+        "2": -0.000453526128, "3": -2.1388948e-05,
+        "4": -0.000106012838, "5": -0.000421046178
+      }, "reconstructed_R_float": 0.018183323497
+    },
+    {
+      "M": 32, "N": 512, "Q": 16, "diagonal": 0.03125,
+      "direct_R_float": 0.024190033737539557,
+      "real_signed_shell_contribution_float": {
+        "0": -0.005056018079, "1": -0.000907052255,
+        "2": -4.2777896e-05, "3": -0.000212025675,
+        "4": -0.000842092357
+      }, "reconstructed_R_float": 0.024190033738
+    }
+  ],
+  "haar_seed_frequency_null": [
+    {"M": 4, "Q": 2, "base": 2, "expectation_R": "1/4", "frequency_count": 24, "variance_R": "3/128"},
+    {"M": 3, "Q": 3, "base": 3, "expectation_R": "1/3", "frequency_count": 18, "variance_R": "2/81"},
+    {"M": 3, "Q": 4, "base": 16, "expectation_R": "1/3", "frequency_count": 24, "variance_R": "2/108"}
+  ],
+  "nonnormal_shadow_return_energy_float": [
+    {"M": 128, "Q": 4, "R_shadow_float": 0.99995143025},
+    {"M": 64, "Q": 8, "R_shadow_float": 0.999951800862},
+    {"M": 32, "Q": 16, "R_shadow_float": 0.999952561235}
+  ],
+  "normality": "OPEN",
+  "real_original_energies_float": [
+    {"M": 128, "N": 512, "Q": 4, "R_float": 0.003211346734, "W_abs_squared_float": 0.002210146797, "h": 1, "relabel_difference_float": 0.0},
+    {"M": 64, "N": 512, "Q": 8, "R_float": 0.018183323497, "W_abs_squared_float": 0.002210146797, "h": 1, "relabel_difference_float": 0.0},
+    {"M": 32, "N": 512, "Q": 16, "R_float": 0.024190033738, "W_abs_squared_float": 0.002210146797, "h": 1, "relabel_difference_float": 0.0}
+  ],
+  "source_carry_borrow": [
+    {
+      "Q": 4, "cases": 384, "k": 2,
+      "lower_carry_agrees": {"count": 91, "fraction_distance_ge_quarter_float": 0.57142857, "mean_return_character_abs_float": 0.05693014},
+      "lower_carry_differs": {"count": 293, "fraction_distance_ge_quarter_float": 0.53924915, "mean_return_character_abs_float": 0.04623436},
+      "sample_first": 128, "sample_last": 511
+    },
+    {
+      "Q": 8, "cases": 384, "k": 3,
+      "lower_carry_agrees": {"count": 45, "fraction_distance_ge_quarter_float": 0.42222222, "mean_return_character_abs_float": 0.08936807},
+      "lower_carry_differs": {"count": 339, "fraction_distance_ge_quarter_float": 0.44247788, "mean_return_character_abs_float": 0.09319261},
+      "sample_first": 128, "sample_last": 511
+    },
+    {
+      "Q": 16, "cases": 384, "k": 4,
+      "lower_carry_agrees": {"count": 26, "fraction_distance_ge_quarter_float": 0.46153846, "mean_return_character_abs_float": 0.18430554},
+      "lower_carry_differs": {"count": 358, "fraction_distance_ge_quarter_float": 0.47765363, "mean_return_character_abs_float": 0.01783798},
+      "sample_first": 128, "sample_last": 511
+    },
+    {
+      "Q": 32, "cases": 384, "k": 5,
+      "lower_carry_agrees": {"count": 7, "fraction_distance_ge_quarter_float": 0.71428571, "mean_return_character_abs_float": 0.30868417},
+      "lower_carry_differs": {"count": 377, "fraction_distance_ge_quarter_float": 0.49071618, "mean_return_character_abs_float": 0.0089192},
+      "sample_first": 128, "sample_last": 511
+    }
+  ],
+  "source_mass": {
+    "closed_float": 3.38604761959719,
+    "finite_checks": [
+      {"N": 128, "closed_minus_partial_float": 0.00183289763907, "rational_partial_float": 3.38421472195812, "rigorous_tail_upper_bound": "1/128"},
+      {"N": 512, "closed_minus_partial_float": 0.00045787908122, "rational_partial_float": 3.38558974051597, "rigorous_tail_upper_bound": "1/512"}
+    ],
+    "symbolic_proof_required": true
+  },
+  "source_original": true,
+  "status": "OBSERVED-FINITE, exact-identity-controls plus floats",
+  "triangle": [
+    {"fiber_cardinality": 2, "image_count": 4, "k": 1},
+    {"fiber_cardinality": 2, "image_count": 32, "k": 2},
+    {"fiber_cardinality": 2, "image_count": 256, "k": 3}
+  ],
+  "warning": "Exact theorem proofs are separate. Circle characters and transcendental source mass are float diagnostics only; no certified asymptotic saving."
+}
