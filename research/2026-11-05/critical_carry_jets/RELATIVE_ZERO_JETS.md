@@ -91,3 +91,47 @@ The halting problem gives a uniform-undecidability example for testing whether a
 **Verdict:** these are proved classical source/observer identities and demonstrated scale no-gos, not a new source-selected discrepancy bound. π normality, the selected signed Clausen energy, full-depth cell pressure, RH and original critical signed Weyl remain OPEN.
 
 **Classical sources:** [Bailey–Crandall (2001)](https://doi.org/10.1080/10586458.2001.10504441), [Cockett–Cruttwell, Tangent Structure](https://www.reluctantm.com/gcruttw/publications/sman.pdf), [Characteristic kernel mean embeddings](https://www.cs.cmu.edu/~arthurg/papers/nips09_mmd.pdf). The theorem application shares SUCC's original four-pole source provenance, not an independent witness to digit distribution.
+
+
+## J3-03: a quantitative THREE-JET CLAUSEN transport along the actual radial-null source
+
+The previous source-character jets can be transported directly to PR #520's FIXED-RADIUS regularized determinant energy. Fix 0<r<1, λ∈R, and define
+\[
+E_{A,r}(\lambda)=\frac1{A^2}\sum_{A\le i<j<2A}
+g_r(U_j-U_i+\lambda(Z_j-Z_i)),
+\quad g_r(t)=\log|1-r e(t)|^2.
+\]
+The source Z_n is positive and \(Z_n≤11/[20(8n+1)]<11/(160A)\) for all epoch indices n≥A, so
+\[
+|Z_j-Z_i|≤11/(160A).
+\]
+For q=1,2,3, exact termwise differentiation gives
+\[
+\boxed{
+\frac{d^q}{d\lambda^q}E_{A,r}(\lambda)
+=\frac1{A^2}\sum_{A\le i<j<2A}
+g_r^{(q)}(U_j-U_i+\lambda(Z_j-Z_i))(Z_j-Z_i)^q.}\tag{J4}
+\]
+With \(M_q(r)=\sup_{t\in\mathbb T}|g_r^{(q)}(t)|<∞\),
+\[
+\boxed{
+|E_{A,r}^{(q)}(\lambda)|≤\frac{M_q(r)}2
+\left(\frac{11}{160A}\right)^q.}\tag{J5}
+\]
+In particular the inherited exact bound \(M_1(r)≤4πr/(1-r)\) implies
+\[
+\boxed{
+|E_{A,r}(\lambda)-E_{A,r}(0)|
+≤\frac{11\pi r}{80(1-r)}\frac{|\lambda|}{A}.}\tag{J6}
+\]
+This is a new-to-SUCC explicit quantitative **field-relative zero**: at ANY fixed observation radius, bounded radial-null deformations are asymptotically indistinguishable in the regularized-energy observable through first, second and third source jets. The bound holds for the actual source without assuming its normality.
+
+**But there is no globally favorable Hessian.** Direct differentiation of the kernel gives
+\[
+g_r''(t)=
+\frac{8\pi^2r[(1+r^2)\cos(2πt)-2r]}
+{[1-2r\cos(2πt)+r^2]^2}.
+\]
+Hence \(g_r''(0)=8π^2r/(1-r)^2>0\) while \(g_r''(1/2)=-8π^2r/(1+r)^2<0\). Even at r=1/2 the selected second-order pairwise energy curvature has no universal sign; nonnegative global drift does NOT follow from differentiability or source positivity. Third derivatives likewise do not impose a one-sided selected energy estimate.
+
+At the source-critical growing-frequency scale the corresponding phase-character jets grow as powers of A log A, as J3-01 explains. **Do not transport the O(A^-q) fixed-r three-jet control to the growing carry observer without an explicit scale-loss estimate.**
