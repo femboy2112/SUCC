@@ -1,0 +1,89 @@
+[
+  {
+    "A": 128,
+    "K": 2,
+    "q": 128,
+    "B_passes_AS02": true,
+    "seeds": {
+      "coherent": {
+        "lateral_fraction_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "leakage_fraction_sha256": "b0017c48e89dc5a336cf9cb5db86193601b24cf10436641b64344c0d07a404ee",
+        "lateral_ppm_floor": 0,
+        "leakage_ppm_floor": 417,
+        "certified_periodic_pairs": 0
+      },
+      "periodic": {
+        "lateral_fraction_sha256": "c834d74fe07c5ff838fb319f009ecb41d79145d407b1316a7521af40099508ac",
+        "leakage_fraction_sha256": "6598049a82c88f201521b41a94055afe52091d11235244636ac179568cd0160b",
+        "lateral_ppm_floor": 184088,
+        "leakage_ppm_floor": 184186,
+        "certified_periodic_pairs": 2048
+      },
+      "original": {
+        "lateral_fraction_sha256": "20185d588ceb2929c44acfacdc047c339a4e3c6df1a5574066365d2ec96297ab",
+        "leakage_fraction_sha256": "04a1d62e9796e0f13bf82bc792ee644f6fb65c7c10bffa72a8d7b4863e6b0409",
+        "lateral_ppm_floor": 6385,
+        "leakage_ppm_floor": 6285,
+        "certified_periodic_pairs": 0
+      }
+    }
+  },
+  {
+    "A": 160,
+    "K": 3,
+    "q": 2048,
+    "B_passes_AS02": true,
+    "seeds": {
+      "coherent": {
+        "lateral_fraction_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "leakage_fraction_sha256": "d1e92f0e2e5e5b911d3082444834999336069d41134274729f6cf500d6fd2434",
+        "lateral_ppm_floor": 0,
+        "leakage_ppm_floor": 4271,
+        "certified_periodic_pairs": 0
+      },
+      "periodic": {
+        "lateral_fraction_sha256": "1035a2d361387cbb0257902f5dfdee19569f87485c3bc45d465575fee5a63488",
+        "leakage_fraction_sha256": "dbdc03fe91ff8f4c3b1c4749692dad10498eb3d53a1a6915d50b3103745f9607",
+        "lateral_ppm_floor": 139265,
+        "leakage_ppm_floor": 134998,
+        "certified_periodic_pairs": 2916
+      },
+      "original": {
+        "lateral_fraction_sha256": "c8426605ac1655d7f0e8bc897278efbec728a25489e5a41d6c1eb5ce14e52f88",
+        "leakage_fraction_sha256": "dc6f5f8ed3866a0c514896b8c7ec5ccda60cf7c38bf9b426ca8ca2a9e06c9b6a",
+        "lateral_ppm_floor": 366,
+        "leakage_ppm_floor": 322,
+        "certified_periodic_pairs": 0
+      }
+    }
+  },
+  {
+    "A": 192,
+    "K": 4,
+    "q": 32768,
+    "B_passes_AS02": true,
+    "seeds": {
+      "coherent": {
+        "lateral_fraction_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "leakage_fraction_sha256": "0bc35e065ee66c22750d88fea1b12de3a3c788102b4cd71400142e867e7831f7",
+        "lateral_ppm_floor": 0,
+        "leakage_ppm_floor": 47445,
+        "certified_periodic_pairs": 0
+      },
+      "periodic": {
+        "lateral_fraction_sha256": "e7e13deb296bf86dfc5678eedf38b7f85fd6522231233901744faee97db39f66",
+        "leakage_fraction_sha256": "5729922058015fe4d8686a6b2b94f2388ccc2131e59463e51d784f908cf45ee0",
+        "lateral_ppm_floor": 104579,
+        "leakage_ppm_floor": 117536,
+        "certified_periodic_pairs": 3456
+      },
+      "original": {
+        "lateral_fraction_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "leakage_fraction_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "lateral_ppm_floor": 0,
+        "leakage_ppm_floor": 0,
+        "certified_periodic_pairs": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "rectangles": [
+    {
+      "p": 17,
+      "end": 36,
+      "distinct_lag_checks": 13
+    },
+    {
+      "p": 31,
+      "end": 120,
+      "distinct_lag_checks": 23
+    },
+    {
+      "p": 73,
+      "end": 365,
+      "distinct_lag_checks": 63
+    },
+    {
+      "p": 127,
+      "end": 635,
+      "distinct_lag_checks": 120
+    },
+    {
+      "p": 257,
+      "end": 1285,
+      "distinct_lag_checks": 324
+    }
+  ],
+  "height": [
+    {
+      "A": 251,
+      "unordered_pairs": 31375,
+      "pairs_losing_some_native_factor": 734,
+      "max_distinct_lost": 2,
+      "maximum_lost_product": "387229"
+    },
+    {
+      "A": 509,
+      "unordered_pairs": 129286,
+      "pairs_losing_some_native_factor": 2765,
+      "max_distinct_lost": 1,
+      "maximum_lost_product": "1997"
+    },
+    {
+      "A": 1024,
+      "unordered_pairs": 523776,
+      "pairs_losing_some_native_factor": 13903,
+      "max_distinct_lost": 2,
+      "maximum_lost_product": "5036909"
+    }
+  ]
+}
