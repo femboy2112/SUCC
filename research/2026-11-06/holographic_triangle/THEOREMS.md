@@ -189,6 +189,57 @@ For p<2N each expression is <N when N>=6; hence 0<n_p<N. Before n_p every origin
 
 This proves the need for separate *low-depth census* k and *high-depth readout* K **within this exact residue-census/denominator-bounded reconstruction protocol at every finite horizon**. It does NOT forbid adaptive observers, alternative source-aware decoders, or proofs using a weaker property than numerator reconstruction. Previous PR #528 documented only finite denominator-growth measurements and a conditional bound; HT14 supplies the missing universal original-source quantifier.
 
+## HT-06c. STRONGER original-source Gaussian prime strip and linear readout depth — PROVED LOCAL + CLASSICAL PNT-AP
+
+At a **single arbitrary time n>=2**, look at all odd primes in the strip
+
+\[
+\mathcal P_n=\{p\text{ prime}:4n<p\le8n-7\}.
+\]
+
+The original four signed BBP poles enforce an **exact Gaussian split/inert distinction**:
+
+\[
+\boxed{\text{For every }p\in\mathcal P_n:\quad
+v_p(U_n)=\begin{cases}-1,&p\equiv1\pmod4,\\\ge0,&p\equiv3\pmod4.\end{cases}}\tag{HT18}
+\]
+
+Proof, with **no probabilistic or asymptotic assumption**: for all 1<=j<=n we have 2j−1<p and 4j−1<p, while 8j−7 and 8j−3 are strictly below 2p. So p divides *some* original source denominator iff it is **exactly equal** to `8j−7=p` (requiring p=1 mod8) or `8j−3=p` (requiring p=5 mod8); those are precisely p=1 mod4. Because p<=8n−7, the corresponding j=(p+7)/8 or j=(p+3)/8 lies in 1..n. Its occurrence is unique among all four pole factors and all source times 1..n, and the signed coefficient there is 4 or −1, a p-unit for p>4n>=8. The rational convolution `U_n=sum_(j=1)^n 16^(n-j)r(j)` therefore contains **one** term of valuation −1 and all others have valuation >=0. Its p-adic valuation is exactly −1, since 16 is a p-unit. For p=3 mod4 in the strip no denominator factor is divisible by p, so U_n is p-integral. QED.
+
+Put
+
+\[
+D_n^{\mathrm{split}}=\prod_{\substack{4n<p\le8n-7\\p\equiv1\ (\mathrm{mod}\,4)}}p.
+\]
+
+Every such p occurs to *exactly* the first power in the reduced denominator d_n, yielding
+
+\[
+\boxed{D_n^{\mathrm{split}}\mid d_n.}\tag{HT19}
+\]
+
+The primes congruent to 1 modulo4 are exactly the rational primes that **split** in the Gaussian field Q(i); those congruent to 3 modulo4 are inert. The original source's native atom algebra (PR #481) has a Q(i) component. This is an **exact source-level Gaussian-splitting signature**, not yet a proof of a canonical Frobenius transport arrow from that factor to π's real Weyl phases.
+
+**Linear lower bound using classical PNT in arithmetic progressions.** Let \(\vartheta(x;4,1)=\sum_{p\le x,\ p\equiv1(4)}\log p\). The classical PNT-AP gives \(\vartheta(x;4,1)=x/2+o(x)\). Therefore
+
+\[
+\log d_n\ \ge\ \vartheta(8n-7;4,1)-\vartheta(4n;4,1)
+=2n+o(n),
+\]
+
+where the last remainder is an asymptotic equality for the explicit **lower-bound expression**, not an assertion that log d_n itself equals 2n. Equivalently,
+
+\[
+\boxed{\liminf_{n\to\infty}\frac{\log d_n}{n}\ge2,\qquad
+\liminf_{n\to\infty}\frac{\log_2 d_n}{n}\ge\frac2{\log2}\approx2.88539.}\tag{HT20}
+\]
+
+This is an **unconditional, original-source, all-sufficiently-large-time linear lower bound on denominator precision**, using only (a) the exact original pole genealogy proved above and (b) the classical prime number theorem in progressions. No RH or unknown zero information is assumed.
+
+**Two-resolution consequence (sharpening HT16):** the worst-case denominator-certified readout modulus requires \(K_n\ge\lceil\log_2 d_n\rceil\ge(2/\log2-o(1))n\) at EACH sufficiently large original time n. Meanwhile a complete census of all 2^k states from N observations can have only k<=floor(log2 N). Thus the exact modular reconstruction protocol demands LINEAR high-precision readout against LOGARITHMIC low-precision census. This quantifies the obstruction first identified in SUCC #528 without claiming all possible source-aware decoders obey the same cost.
+
+Classical references: Gaussian prime splitting in Q(i) (Fermat two squares), e.g. Dartmouth number theory notes `https://math.dartmouth.edu/~carlp/kalai3.pdf`; weighted PNT in arithmetic progressions, e.g. Kontorovich's formalized blueprint `https://alexkontorovich.github.io/PrimeNumberTheoremAnd/blueprint/corollaries-chapter.html`. Parent SUCC PR #529 supplies source first-pole machinery, though the stronger one-time-window proof above is self-contained.
+
 ## HT-07. The source-faithful real signed character is still the decisive gate — OPEN
 
 At high readout depth 2^K>=d_n, edge decoding gives X_n=Q_n−R_n modulo 2^K and the exact real numerator

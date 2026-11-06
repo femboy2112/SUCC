@@ -24,3 +24,9 @@ The boundary reconstruction is exact, and `W_N(h)=2^-k sum_a Z_a`. A positive pa
 An unconditional, source-and-zero-boundary-dependent all-horizon estimate for the selected joint character (direct) or a signed return-fiber energy with sufficiently dense N, for every fixed h≠0. A compatibility defect contraction D'=16D, a Clifford-like parity analogy, or a mere Gabriel-style Gamma/Pisot representation cannot discharge that premise.
 
 **Critical architecture correction:** the unrestricted parity obstruction is eliminated by the exact physical seam. The unknown residual is NOT the same bit; it is the signed cross-place transport of original real fractional phases as arithmetic precision grows. A future “holographic” theorem must make this dependence explicit.
+
+## New source-origin signal: Gaussian splitting strip
+
+The original source now has a PROVED local prime-support theorem: at each n>=2 its reduced denominator includes **every split Gaussian prime** `p=1 mod4` in `4n<p<=8n−7` with exponent exactly one, and excludes every inert `p=3 mod4` in that window. Classical PNT-AP makes this support exponentially large (log denominator >=(2-o(1))*n). This is a genuine all-time SOURCE genealogy, not a signed real cancellation estimate.
+
+A useful new (still OPEN) probe: preserve each newborn split-prime additive character (PR #529) and control covariance of its product with the remaining odd-prime characters, while tracking the exact carry/Gamma edge. A large number of independent **conductor primes** is not the same as probabilistic independence: do not promote count/splitting alone into a signed estimate. Use the prime-complement compensation control to falsify any source-blind covariance claim.
