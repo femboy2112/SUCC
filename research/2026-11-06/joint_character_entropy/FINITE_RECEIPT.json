@@ -1,0 +1,102 @@
+{
+  "RH": "OPEN",
+  "all_new_claims_formalized_in_lean": false,
+  "certified_selected_pi_hex_digits": 1536,
+  "claim_statuses": {
+    "JC02": "PROVED LOCAL",
+    "JC03": "CLASSICAL",
+    "JC04": "PROVED LOCAL",
+    "JC05": "PROVED LOCAL",
+    "JC07": "PROVED LOCAL (conditional)",
+    "JC09": "OBSERVED-FINITE / certified rational bounds",
+    "JC10": "UNVERIFIED / OPEN"
+  },
+  "earlier_signed_epochs_are_preseen": true,
+  "file_sha256": {
+    "CLAIM_LEDGER.md": "865312b83d2721adebc26ef243e3cb45ac07442d54547be1a1d838befc5c806c",
+    "FRESH_HOLDOUT_RAW.json": "426bac4eb44814c66098bcaa9744a767a60b6bff87b87e686cd5646d952054ab",
+    "HOLDOUT_RAW.json": "478219d95e4f09169e2f9dde00d56e71371d088c56ed781cd530fd3993695509",
+    "INDEPENDENT_ORACLE_RAW.json": "3f3523475416aba6c800b348be06a98a8d2e78cc2236c2116e781e54c0e1ee4a",
+    "LOCAL_TEST_STDERR.txt": "3daff46d5cdb91e8d7a37037725418496899eefdf98f9b1fe6ccbb4f8ed8b4f7",
+    "NEXT.md": "610c60421e7af96329178fe5b184f8602b114c5f1ba8ba00b71180b00e44bc0a",
+    "PREREGISTRATION.md": "efcefe2c71f3d9898b7dd6f6b45f3cc7ed287cbef651bae66793fd43ae10cc32",
+    "PREREG_ADDENDUM.md": "98d45acdaa6c62a87dceef23fdf9e3ee6f50d441632b2ce354654dbe4ecfb0d7",
+    "README.md": "7076bed7a7a353157c786feeb111eae18f7a1160344dba369815418bbda27aff",
+    "THEOREMS.md": "452ad3157ef1e7ddcd99b253c3fb4ea2048be14eeeb949b26ec1beb7beeff036",
+    "VALIDATION.md": "9b6b742dfb0ef2cdcd105a129fe2f02a7520cfc8792d27eb29ab585b282bd521",
+    "entropy_to_character.py": "d03378dd0dca87bb2c940b6167265a54aa284b37f73feb4881e0c0dda75e6522",
+    "fresh_holdout_probe.py": "c6b4a4478744ca83637578500756f8638d569653708707957ba7dd213304dcee",
+    "holdout_probe.py": "a6139e283135719b8e7cecc7c26271f0ea4b7c237b13e84fd8adbe2ca74e3995",
+    "independent_oracle.py": "bbae6c49649408451db6dbf21575727e4fb874de59d8cd7270b0c43fcf6f7eff",
+    "joint_entropy.py": "427285ddaa8c887b34c09c7d7076a5a219fc32b8d579b7870c5b26451f013f09",
+    "signed_certificate.py": "166c822c0e86fb9b0812117b3a2609a6e95fab426d0e883646a7f5d53e0422ad",
+    "test_entropy_to_character.py": "c8e48418c3d8d24e897ad21b07c63d7b61bc25468a2ed83d42e4a969de274b3a",
+    "test_fresh_holdout.py": "713fc0cc3ace161c8b0022ce5ef2b75f9d2050d493dff40fafdb24c4f158211b",
+    "test_joint_entropy.py": "008bb5665bd331c499257d7a8e2c4726f3d0df1122180643ee6771ebeba74e6d",
+    "test_signed_certificate.py": "156ed95944cca66ae46abb6ea4f1e470cffe9933b6da3f9bb0abb29300fc4106"
+  },
+  "finite_selected_signed_bounds": [
+    {
+      "N": 223,
+      "epoch_start_A": 223,
+      "h": 1,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.052672448794",
+      "rigorous_upper_ceil_12dp": "0.052672448803"
+    },
+    {
+      "N": 223,
+      "epoch_start_A": 223,
+      "h": 2,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.055542748280",
+      "rigorous_upper_ceil_12dp": "0.055542748289"
+    },
+    {
+      "N": 457,
+      "epoch_start_A": 457,
+      "h": 1,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.051686285871",
+      "rigorous_upper_ceil_12dp": "0.051686285880"
+    },
+    {
+      "N": 457,
+      "epoch_start_A": 457,
+      "h": 2,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.042329803610",
+      "rigorous_upper_ceil_12dp": "0.042329803619"
+    }
+  ],
+  "fresh_commit_first_h3_bounds": [
+    {
+      "A": 239,
+      "N": 239,
+      "h": 3,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.062069108483",
+      "rigorous_upper_ceil_12dp": "0.062069108492"
+    },
+    {
+      "A": 503,
+      "N": 503,
+      "h": 3,
+      "rigorous_average_error_ceiling_12dp": "0.000000000004",
+      "rigorous_lower_floor_12dp": "0.007157640762",
+      "rigorous_upper_ceil_12dp": "0.007157640771"
+    }
+  ],
+  "github_prereg_commit": "d7b5b7b330394992eb43fe533f10962b9c0e9544",
+  "independent_late_phase_oracle_checks": 7,
+  "independent_machin_digits": 128,
+  "local_focused_tests": 29,
+  "native_SUCC_full_suite_executed": false,
+  "original_pole_independent_checks": 200,
+  "parent": "f45e4459f2efa6a94bfa5adcf8184c57aa028c55",
+  "pi_normality": "OPEN",
+  "prereg_addendum_sha256": "98d45acdaa6c62a87dceef23fdf9e3ee6f50d441632b2ce354654dbe4ecfb0d7",
+  "prereg_sha256": "efcefe2c71f3d9898b7dd6f6b45f3cc7ed287cbef651bae66793fd43ae10cc32",
+  "selected_signed_Weyl_limit": "OPEN",
+  "source": "four authentic signed BBP poles, original U0=0"
+}
