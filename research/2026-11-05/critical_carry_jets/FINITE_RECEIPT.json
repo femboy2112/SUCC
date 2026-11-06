@@ -1,0 +1,126 @@
+{
+  "parent_pr": 520,
+  "parent_sha": "dad940dc69ae02f71119e8fbb908cca98e6e0846",
+  "source": "authentic original four signed BBP poles; U_0=0",
+  "source_moments": {
+    "weights": [
+      4,
+      -2,
+      -1,
+      -1
+    ],
+    "shifts": [
+      7,
+      4,
+      3,
+      2
+    ],
+    "M0": 0,
+    "M1": 15,
+    "M2": 151,
+    "M3": 1209
+  },
+  "new_exact_theorems": [
+    "all order |R_m(n)-(16^m-1)/(64n^2)|<16^m/(10n^3) n>=2",
+    "critical correction threshold b=1_{{16^m x_n}>=1-R_m(n)} for 0<R_m<1",
+    "ensemble second covariance <=1/(3*16^lag), epoch variance <=53/(180A)",
+    "exact finite rational source 2 and 3 point centered moments",
+    "single fixed-r characteristic Fourier discrepancy and scale countermodel",
+    "radial-null fixed-r source energy 1/2/3 jets O(A^-q)",
+    "source multipole first nonzero moment sets critical exponent q+1",
+    "coherent wrong seed correction-free despite critical forcing window"
+  ],
+  "preregistered_original_epochs": [
+    {
+      "A": 139,
+      "m": 3,
+      "corrections": 0,
+      "mean_R": 0.001656956442904
+    },
+    {
+      "A": 139,
+      "m": 4,
+      "corrections": 4,
+      "mean_R": 0.0265171848731
+    },
+    {
+      "A": 139,
+      "m": 5,
+      "corrections": 48,
+      "mean_R": 0.424280777867
+    },
+    {
+      "A": 277,
+      "m": 4,
+      "corrections": 2,
+      "mean_R": 0.00667499661713
+    },
+    {
+      "A": 277,
+      "m": 5,
+      "corrections": 31,
+      "mean_R": 0.106801441663
+    },
+    {
+      "A": 557,
+      "m": 4,
+      "corrections": 1,
+      "mean_R": 0.00165054034111
+    },
+    {
+      "A": 557,
+      "m": 5,
+      "corrections": 15,
+      "mean_R": 0.026409019273
+    },
+    {
+      "A": 557,
+      "m": 6,
+      "corrections": 244,
+      "mean_R": 0.422544681179
+    }
+  ],
+  "three_point_holdouts": [
+    {
+      "n": 13,
+      "m": 2,
+      "third_moment_sign": "negative",
+      "third_moment_approx": -0.000033038146822746
+    },
+    {
+      "n": 29,
+      "m": 3,
+      "third_moment_sign": "positive",
+      "third_moment_approx": 0.000170847553650345
+    },
+    {
+      "n": 61,
+      "m": 3,
+      "third_moment_sign": "positive",
+      "third_moment_approx": 0.000029130375862375
+    }
+  ],
+  "validation": {
+    "isolated_local_unittest_methods": 31,
+    "failures": 0,
+    "errors": 0,
+    "full_log_sha256": "7e53abfbe80e41887c2b1c5991144d4b33106816af9fe5c9d717dbd26c8e6f3d",
+    "exact_remote_git_blobs": {
+      "tests/test_critical_carry_jets.py": "e7a32dfa7b85e754d7250e1988883178b1b6a8ab",
+      "tests/test_relative_zero_scale.py": "9800d58680a4c7fd03517cc2f627d35f56837ad9",
+      "research/2026-11-05/critical_carry_jets/test_pair_carry_correlations.py": "63a53fd5f8ab8572faed3598c787eeb2e76ca40c",
+      "tests/test_radial_clausen_jet.py": "8685b9a3ff7d899cc268c4604056671cce6be543",
+      "tests/test_source_multipole_jets.py": "c5fe7ca404c0a94b506717a36e62b83bdad6ae4f",
+      "research/2026-11-05/critical_carry_jets/paired_carry_correlations.py": "98c8e004fa0171d53d9805b018e820b29ad376bb"
+    }
+  },
+  "not_proved": [
+    "authentic zero seed fixed-h Weyl",
+    "selected fixed-radius Q_(1/2) goes to zero",
+    "selected growing critical carry window frequency",
+    "pi base16 normality",
+    "RH",
+    "new Lean kernel certification",
+    "full native SUCC CI"
+  ]
+}
