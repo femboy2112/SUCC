@@ -1,0 +1,14 @@
+# Source genealogy, independent mathematical methods and claim boundaries
+
+- Child of SUCC [#513](https://github.com/femboy2112/SUCC/pull/513), pinned parent \`727a97a006e929243e0fee1ab44cf52dc68e2c8f\`. #513 establishes the original phase Fekete/Vandermonde determinant and its quantitative regularized Fourier sufficient criterion. The *new* source-ensemble seed variance, cylinder transparency and causal resonance identities are derived here.
+- Original BBP signed four-pole forcing, literal U0=0, inherited original source exact rational recurrence. No supplied π-digit data.
+- #503/#505: authentic forcing with different seed s*=-π/16 gives coherent -T_n, a necessary pointwise counterexample for any seed-blind distribution proof.
+- #501 microscopic collision inequalities and #507/#508 source carry geometry remain relevant. The new ensemble pressure theorem does **not** control the original selected Archimedean embedding.
+- #511/#512: optional Bell/multipartite quantum-information encodings, read-only analogy; neither supplies actual field probability or physical Casimir dynamics.
+- **Independent classical categorical sources:** pointed sets singleton zero object (Rotman note: https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/rotman.pdf); pointed products/coproducts and non-distributivity (https://cahierstgdc.com/wp-content/uploads/2017/03/Dugowson.pdf).
+- **Independent classical harmonic instruments:** log chord's \(\hat g(k)=-1/|k|\), Bernoulli B2 Fourier series, elementary gcd identity, geometric sum, Chebyshev and Borel–Cantelli. Source BBP arithmetic is shared, not independent statistical evidence.
+- **Gaussian Schur complement:** independent **explicitly defined mathematical model** with centered stationary AR(1) covariance \(\rho^{|i-j|}\). Its log-determinant conditional constraint interaction is a rigorous analogy, not an observed physical force or a BBP entropy law.
+- **Source tests:** two independently evaluated original rational forcing expressions, full exact Fraction pair–pair covariance, fresh holdouts A=9,11, and small-radix numerical covariance quadrature. The latter is numerical, not interval proof.
+- **Source-type firewall:** additive zero/coproduct unit vs multiplicative unit in pointed sets, Gaussian boundary density ratio vs fermionic/Vandermonde determinant, Haar seed ensemble vs the original selected s=0. These are different objects and operators; no silent cross-type inference.
+
+**Status:** New-to-SUCC arithmetic and categorical/Gaussian results are paper proofs/finite tests. No global scholarly novelty, original selected Fekete lower bound, π normality, RH, new Lean kernel or physical quantum interpretation claimed.

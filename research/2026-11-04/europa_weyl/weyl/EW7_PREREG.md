@@ -1,0 +1,3 @@
+# Cyclotomic slicing probe
+
+Prospective check for a theorem derived after EW6. Epochs A=31,54,89. For each, multiply a hostile frequency by the first three primes above 4A, and choose the coefficient field conductor B=3^7 times the next two primes. Also test h=−1,B=1 and h=16^A,B=15. For each pair require a surviving top prime in the denominator of its h-scaled rational difference, prime to B, and >A; count misses explicitly. Rejection controls: the whole 7-gon sums to zero, any six of its kets are Q-independent, while two of its phases depend over the conductor-7 cyclotomic field. Build these checks by polynomial reduction and exact rational rank. All checks finite; no estimate of how close a nonzero sum is to zero.

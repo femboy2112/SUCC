@@ -80,7 +80,9 @@ odd-conductor source epochs (two blind evaluators).
 - `README.md`: added the active π current-front pointer; corrected pre-existing stale
   math-memory counts to the true values (48→51 nodes, 56→60 relations, 1876→1997 rows).
 - `docs/PI_SELECTED_CATEGORICAL_FRONTIER.md`: cross-linked the parallel branch-current front,
-  stating the gate is the **same** open estimate in another basis, not a second route.
+  stating the band gate is a **strictly sufficient** estimate for the `J` route (`band⟹J`), sharing
+  the same open high-frequency core — not a proven equivalence and not a second route (corrected
+  2026-11-03; converse `J⟹band` is false, see `research/2026-11-03/renorm_transport/PROOFS.md` RT-00).
 - `docs/ROADMAP.md`: added the dated operation entry.
 - `docs/PI_BRANCH_CURRENT_FRONTIER_2026-11-03.md` (added by trunk A) is the active concise front.
 
@@ -94,8 +96,13 @@ conditional log-mesh normality gate (#476); the exact source-selected current br
 decomposition (#488) and the new shifted-bin comparison (SC-1..SC-8).
 
 **OPEN (not proved):** the actual source-selected real near-pair/carry/cofactor bound; the signed
-second moment `Σ_{1≤|h|≤q_A²}|c_A(h)|²=o(K_A)`; equivalently `J_{A,m_A/2}=o(K_A)`; equivalently
-`S_N(h)=o(N)` for every fixed nonzero `h`; **π base-16 normality**. RH is a separate OPEN program.
+second moment `Σ_{1≤|h|≤q_A²}|c_A(h)|²=o(K_A)`. **Correction (2026-11-03, see
+`research/2026-11-03/renorm_transport/PROOFS.md` RT-00):** these are linked by a **one-directional
+sufficiency chain** `band=o(K_A) ⟹ J_{A,m_A/2}=o(K_A) ⟹ E_{A,m_A}=o(log m_A) ⟹ π base-16 normal`,
+**not** a ring of equivalences. The generic converse `J=o(K) ⟹ band=o(K)` is **false** (equally-spaced
+cloud: `J=1`, unweighted band `=2q`). Only the Green-tail reduction is a biconditional:
+`π base-16 normal ⟺ S_N(h)=o(N)` for every fixed nonzero `h`. **π base-16 normality** is OPEN; RH is a
+separate OPEN program.
 
 **False shortcuts (retained as corpses):** "Galois average implies the selected embedding";
 "periodic branch inverse implies Haar"; "uniform current minimum is the actual source law";

@@ -1,0 +1,124 @@
+{
+  "debruijn_prefix": {
+    "distinct_pairs": 256,
+    "first_pairs": 256,
+    "zero_from_digit": 258
+  },
+  "features": {
+    "dyadic": "GPCZ",
+    "fixed_rational_seed": "GPC",
+    "genuine": "GPCZ",
+    "jet6": "Z",
+    "pole_flip": "PCZ",
+    "source_native_seed": "GC",
+    "ternary": "GPCZ"
+  },
+  "full_numerator_history": [
+    "genuine"
+  ],
+  "last": 128,
+  "survivors": {
+    "C": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "pole_flip",
+      "source_native_seed",
+      "ternary"
+    ],
+    "CZ": [
+      "dyadic",
+      "genuine",
+      "pole_flip",
+      "ternary"
+    ],
+    "G": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "source_native_seed",
+      "ternary"
+    ],
+    "GC": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "source_native_seed",
+      "ternary"
+    ],
+    "GCZ": [
+      "dyadic",
+      "genuine",
+      "ternary"
+    ],
+    "GP": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "ternary"
+    ],
+    "GPC": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "ternary"
+    ],
+    "GPCZ": [
+      "dyadic",
+      "genuine",
+      "ternary"
+    ],
+    "GPZ": [
+      "dyadic",
+      "genuine",
+      "ternary"
+    ],
+    "GZ": [
+      "dyadic",
+      "genuine",
+      "ternary"
+    ],
+    "P": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "pole_flip",
+      "ternary"
+    ],
+    "PC": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "pole_flip",
+      "ternary"
+    ],
+    "PCZ": [
+      "dyadic",
+      "genuine",
+      "pole_flip",
+      "ternary"
+    ],
+    "PZ": [
+      "dyadic",
+      "genuine",
+      "pole_flip",
+      "ternary"
+    ],
+    "Z": [
+      "dyadic",
+      "genuine",
+      "jet6",
+      "pole_flip",
+      "ternary"
+    ],
+    "empty": [
+      "dyadic",
+      "fixed_rational_seed",
+      "genuine",
+      "jet6",
+      "pole_flip",
+      "source_native_seed",
+      "ternary"
+    ]
+  }
+}

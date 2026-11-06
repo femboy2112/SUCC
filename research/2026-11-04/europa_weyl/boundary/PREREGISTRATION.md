@@ -1,0 +1,11 @@
+# Boundary and seed holdouts
+
+Predictions fixed before generating the numerical tables. Evaluate the angular Mellin tail at n = 9, 37, 113 by two alternating exact beta-moment enclosures and a truncation of the eight-tap forcing at 19 future terms. Check the two enclosures overlap and that dropping the leading factor 1/4 breaks the overlap. The one-term correction should have strictly positive error of order n^-3.
+
+Test primes 11, 19, 29, 47, 73 and every k>=1 with 8k<p up to k=5. A seed 1/5 passes the raw p-residue equality to the authentic time kp and fails every genuinely self-aligned test. A rational seed divisible by the whole prime product passes all aligned tests. Build a different odd-conductor rational seed using just the authentic rational taps, those primes, and the requested finite epoch A=37, B=73, q=64. Demand that all its phases lie within 1/(4(8A+1))+1/8192 of 1/5, and that exact triangle energy exceeds 3q/4. Reject any construction that assumes a digit oracle or supplies real phases in place of congruences. Preserve the positive/negative controls and exact rational bounds.
+
+All computations are finite. Paper proofs are required for the universal claims. These same-session preregistrations are not independent historical authority.
+
+Before running old-conductor probes: test A=79,107,149, c=1, P the product of every prime 8<p<=A. Strip every P-factor of Q=den(Y_A). Use nearest grid point to 1/5-Y_(2A-1)/16^(2A-1). Demand old conductor divisibility, exact divisibility of the seed numerator by all test primes, and phase radius < 1/(4(8A+1))+1/8192 throughout each epoch; accept an explicit finite threshold miss without changing the schedule. Test independent universal arithmetic by fixed p,k direct recurrence as above. Compare full versus raw seed reductions separately.
+
+Follow-up after observing the old-conductor table: construct epoch-start mutants from just Y_A and C_(4A)(A), choosing s_* between 16^(−A) and 2 times that. At fresh epochs A=83,131,167 test c=1 and h=1. Demand the same phase-radius bound, nonzero seed below 3 times 16^(−A), every prime 8<p≤A dividing its numerator, and its reduced denominator dividing den(Y_A). Register before inspecting these additional values.

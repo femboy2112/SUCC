@@ -1,0 +1,146 @@
+{
+  "pulse_check": {
+    "1": {
+      "nonzero_prefixes": 128,
+      "sha256": "b66212ac70736eb69025030892f80f1f63978823cb75bb208fa6c281260b2494"
+    },
+    "3": {
+      "nonzero_prefixes": 128,
+      "sha256": "a66de98de177c337d344957d9f38e7f5009f45491d6ab2889ce3d055fd89741b"
+    },
+    "5": {
+      "nonzero_prefixes": 128,
+      "sha256": "b66212ac70736eb69025030892f80f1f63978823cb75bb208fa6c281260b2494"
+    },
+    "7": {
+      "nonzero_prefixes": 128,
+      "sha256": "a66de98de177c337d344957d9f38e7f5009f45491d6ab2889ce3d055fd89741b"
+    }
+  },
+  "epochs": [
+    {
+      "A": 192,
+      "band_size": 100,
+      "H_bits": 693,
+      "excepted": [
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        67,
+        73
+      ],
+      "candidate_bits": 0,
+      "success": false
+    },
+    {
+      "A": 384,
+      "band_size": 181,
+      "H_bits": 1460,
+      "excepted": [
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        97,
+        113,
+        151,
+        281,
+        349,
+        569
+      ],
+      "candidate_bits": 0,
+      "success": false
+    },
+    {
+      "A": 768,
+      "band_size": 327,
+      "H_bits": 3044,
+      "excepted": [
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97,
+        101,
+        103,
+        107,
+        109,
+        131,
+        151,
+        157,
+        463,
+        569
+      ],
+      "candidate_bits": 0,
+      "success": false
+    },
+    {
+      "A": 127,
+      "band_size": 71,
+      "H_bits": 444,
+      "excepted": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        67
+      ],
+      "candidate_bits": 0,
+      "success": false
+    },
+    {
+      "A": 251,
+      "band_size": 127,
+      "H_bits": 935,
+      "excepted": [
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        73,
+        113,
+        151
+      ],
+      "candidate_bits": 0,
+      "success": false
+    }
+  ]
+}

@@ -1,0 +1,8472 @@
+{
+  "authority": "exact finite rational enclosures; no asymptotic inference",
+  "cases": [
+    {
+      "A": 128,
+      "Lambda": "4",
+      "complete_mixed_differences": [
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 1,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "20746767286870817917/147573952589676412928",
+            "4801388542885703577/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 2,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "14143045590484940959/147573952589676412928",
+            "-1310937537019534461/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 3,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-6447301852999232635/36893488147419103232",
+            "-6166111408639114353/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 4,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-5248970803683577049/147573952589676412928",
+            "2720068896458524237/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 5,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "1123258994052891219/36893488147419103232",
+            "-347074401400478395/4611686018427387904"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 6,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1546928875129867839/147573952589676412928",
+            "-2187777662462634313/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 7,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-3319650383146843993/147573952589676412928",
+            "3346331262003744423/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 8,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1820571326666994543/147573952589676412928",
+            "-12163197985874191587/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 9,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "4134835528856084893/147573952589676412928",
+            "20189866630156337503/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 10,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "1603234068838610803/18446744073709551616",
+            "834137109835647107/18446744073709551616"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 11,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-424448391666340469/9223372036854775808",
+            "-7210192276794079657/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 12,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-3752119492407954539/147573952589676412928",
+            "4146433532387223215/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 13,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "6918782381757758561/147573952589676412928",
+            "-1677807788478773405/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 14,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1350841826033205279/147573952589676412928",
+            "-6433592798006076447/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/36028797018963968",
+          "mask": 15,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1638267952991713901/73786976294838206464",
+            "5194148991523220413/147573952589676412928"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "M_interval": [
+            "173281831835492885/2305843009213693952",
+            "11090037237471806785/147573952589676412928"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "radial",
+          "signed_mean_grid": [
+            "200158026377268773/147573952589676412928",
+            "4367420150503211781/147573952589676412928"
+          ],
+          "witness_offsets": [
+            113,
+            128
+          ]
+        },
+        {
+          "M_interval": [
+            "18387431850434572961/18446744073709551616",
+            "147099454803476845833/147573952589676412928"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_same_forcing",
+          "signed_mean_grid": [
+            "144270662556551072537/147573952589676412928",
+            "-28709328257098964703/147573952589676412928"
+          ],
+          "witness_offsets": [
+            0,
+            128
+          ]
+        },
+        {
+          "M_interval": [
+            "71707290883958248133/73786976294838206464",
+            "143414581767916758411/147573952589676412928"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_lag1",
+          "signed_mean_grid": [
+            "29898605023066696527/36893488147419103232",
+            "-79151228331977632973/147573952589676412928"
+          ],
+          "witness_offsets": [
+            0,
+            128
+          ]
+        },
+        {
+          "M_interval": [
+            "1125899906842623/1125899906842624",
+            "147573952589676544001/147573952589676412928"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "anti_companion",
+          "signed_mean_grid": [
+            "1",
+            "0"
+          ],
+          "witness_offsets": [
+            0,
+            128
+          ]
+        }
+      ],
+      "depth": 4,
+      "factor_cells": [
+        {
+          "M_interval": [
+            "2558139948755452249/18446744073709551616",
+            "20465119590044404937/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 0,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-8875873520063167537/147573952589676412928",
+            "-8422178588551978403/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-8875873520063167537/147573952589676412928",
+            "-8422178588551978403/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "23da36c53587727a869818d0b65f4ccedcd7d401c0efb71eee771d291b8db884",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "16061080277868991095/147573952589676412928",
+            "2007635034733722255/18446744073709551616"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 1,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "2967723441701912595/36893488147419103232",
+            "-1810395022833137413/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "2967723441701912595/36893488147419103232",
+            "-1810395022833137413/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "b8db2c4932154db4677d7addd0f82881d28a9ce652f31c3871c3a704567d73ea",
+          "witness_offsets": [
+            21,
+            116
+          ]
+        },
+        {
+          "M_interval": [
+            "5116279897510904487/36893488147419103232",
+            "20465119590044404893/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 2,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "4/5",
+          "signed_mean_grid": [
+            "2633586035210886711/73786976294838206464",
+            "-11044053662591047325/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-8875873520063167537/147573952589676412928",
+            "-8422178588551978403/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "c3de0eb6dfbcafc2aa3ba195be528656c69abad6a881b85828d704ac4387c965",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "16061080277868991167/147573952589676412928",
+            "250954379341715283/2305843009213693952"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 3,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "1/5",
+          "signed_mean_grid": [
+            "224731945295660799/147573952589676412928",
+            "-12408776528344458101/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "2967723441701912595/36893488147419103232",
+            "-1810395022833137413/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "cd657b0466834dacc36699a73d6cc92c9fd7cddae655802b9c1ca958ba43e236",
+          "witness_offsets": [
+            21,
+            116
+          ]
+        },
+        {
+          "M_interval": [
+            "634585728657353839/4611686018427387904",
+            "20306743317036109793/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 4,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-7062422161873372293/73786976294838206464",
+            "-2982040795634929929/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7062422161873372293/73786976294838206464",
+            "-2982040795634929929/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "2fc3ac92847015a9cb66913220c607d63a33881757df9fc627b78917217c895f",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "4154862619374637197/36893488147419103232",
+            "16619450477499335733/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 5,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "11114958939335638207/147573952589676412928",
+            "-580439568597783437/9223372036854775808"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "11114958939335638207/147573952589676412928",
+            "-580439568597783437/9223372036854775808"
+          ],
+          "unwrapped_phase_sha256": "cb1ccad1cdf5aaa6d2ead3650bc3cb77a56295efbbcbe2789d15300e43d814da",
+          "witness_offsets": [
+            17,
+            116
+          ]
+        },
+        {
+          "M_interval": [
+            "5076685829258830705/36893488147419103232",
+            "20306743317036109765/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 6,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "4/5",
+          "signed_mean_grid": [
+            "-764363804195835733/73786976294838206464",
+            "-14355026519524536103/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7062422161873372293/73786976294838206464",
+            "-2982040795634929929/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "3e6d0ca1c89e0965bc7a03019dd372b4b6438247c1faa47d5975d17d13c8dad9",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "8309725238749274423/73786976294838206464",
+            "16619450477499335791/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 7,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "1/5",
+          "signed_mean_grid": [
+            "-2698891070226531603/73786976294838206464",
+            "-13440805182078277827/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "11114958939335638207/147573952589676412928",
+            "-580439568597783437/9223372036854775808"
+          ],
+          "unwrapped_phase_sha256": "da8b92aa0a407af0acf6397a9cb05049867edd288dadbf9b87f895cd7bac4ac3",
+          "witness_offsets": [
+            17,
+            116
+          ]
+        },
+        {
+          "M_interval": [
+            "29013731813681361963/147573952589676412928",
+            "7253432953420537227/36893488147419103232"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 8,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-334263901460317565/4611686018427387904",
+            "-10292688287213084995/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-334263901460317565/4611686018427387904",
+            "-10292688287213084995/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "23da36c53587727a869818d0b65f4ccedcd7d401c0efb71eee771d291b8db884",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "21472500546907975395/147573952589676412928",
+            "5368125136727190585/36893488147419103232"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 9,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "7092578984498370365/73786976294838206464",
+            "2202939299307935545/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "7092578984498370365/73786976294838206464",
+            "2202939299307935545/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "b8db2c4932154db4677d7addd0f82881d28a9ce652f31c3871c3a704567d73ea",
+          "witness_offsets": [
+            2,
+            64
+          ]
+        },
+        {
+          "M_interval": [
+            "14506865906840680925/73786976294838206464",
+            "29013731813682148795/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 10,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "4/5",
+          "signed_mean_grid": [
+            "16272473294463665303/147573952589676412928",
+            "-2066769346222507757/18446744073709551616"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-334263901460317565/4611686018427387904",
+            "-10292688287213084995/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "c3de0eb6dfbcafc2aa3ba195be528656c69abad6a881b85828d704ac4387c965",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "10736250273453987745/73786976294838206464",
+            "21472500546908762435/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 11,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "1/5",
+          "signed_mean_grid": [
+            "8573694431532190069/147573952589676412928",
+            "-12129395558965294643/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "7092578984498370365/73786976294838206464",
+            "2202939299307935545/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "cd657b0466834dacc36699a73d6cc92c9fd7cddae655802b9c1ca958ba43e236",
+          "witness_offsets": [
+            2,
+            64
+          ]
+        },
+        {
+          "M_interval": [
+            "27903922280994941547/147573952589676412928",
+            "6975980570248932123/36893488147419103232"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 12,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-4924383785705423417/36893488147419103232",
+            "-10998805249121898301/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-4924383785705423417/36893488147419103232",
+            "-10998805249121898301/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "2fc3ac92847015a9cb66913220c607d63a33881757df9fc627b78917217c895f",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "714468784469580577/4611686018427387904",
+            "22863001103027365409/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 13,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "16595886030874532579/147573952589676412928",
+            "-3825162074810259481/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "16595886030874532579/147573952589676412928",
+            "-3825162074810259481/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "cb1ccad1cdf5aaa6d2ead3650bc3cb77a56295efbbcbe2789d15300e43d814da",
+          "witness_offsets": [
+            2,
+            64
+          ]
+        },
+        {
+          "M_interval": [
+            "13951961140497470741/73786976294838206464",
+            "27903922280995728427/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 14,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "4/5",
+          "signed_mean_grid": [
+            "4373612297209060597/147573952589676412928",
+            "-11066143446166202033/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-4924383785705423417/36893488147419103232",
+            "-10998805249121898301/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "3e6d0ca1c89e0965bc7a03019dd372b4b6438247c1faa47d5975d17d13c8dad9",
+          "witness_offsets": [
+            1,
+            66
+          ]
+        },
+        {
+          "M_interval": [
+            "5715750275756644647/36893488147419103232",
+            "22863001103027365533/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 15,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "1/5",
+          "signed_mean_grid": [
+            "1490465503116637005/147573952589676412928",
+            "-2120708205088730101/18446744073709551616"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "16595886030874532579/147573952589676412928",
+            "-3825162074810259481/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "da8b92aa0a407af0acf6397a9cb05049867edd288dadbf9b87f895cd7bac4ac3",
+          "witness_offsets": [
+            2,
+            64
+          ]
+        }
+      ],
+      "h": 1,
+      "schedule_label": "development_actual_h1",
+      "signed_H": 65536
+    },
+    {
+      "A": 256,
+      "Lambda": "7/16",
+      "complete_mixed_differences": [
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 1,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "11347853482879238539/295147905179352825856",
+            "27293309209468049173/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 2,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "54580274204194862069/295147905179352825856",
+            "1906348235749552079/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 3,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-4007570838671460559/73786976294838206464",
+            "-12163380493798290737/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 4,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-388962554987629263/295147905179352825856",
+            "102030118704256313/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 5,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "1189904131494319931/295147905179352825856",
+            "241287253437072253/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 6,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "223865479636023071/295147905179352825856",
+            "-426305050727117875/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 7,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1051182921389522973/295147905179352825856",
+            "-678647935096506377/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 8,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "6253944275020981201/147573952589676412928",
+            "557080489247700097/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 9,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-26543067093180745339/295147905179352825856",
+            "493544749852500355/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 10,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-11477213323346702031/147573952589676412928",
+            "6344184354748750995/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 11,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "24480922585773714809/147573952589676412928",
+            "4887693948478565/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 12,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-102997395734656567/295147905179352825856",
+            "-3737722148563887/2305843009213693952"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 13,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "431911537594849511/295147905179352825856",
+            "1320410869321935189/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 14,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "467537217640232437/295147905179352825856",
+            "804944819299112503/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/36028797018963968",
+          "mask": 15,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-283821816190666657/147573952589676412928",
+            "-1260718116889635819/147573952589676412928"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "M_interval": [
+            "21180752670292419377/73786976294838206464",
+            "84723010681170201797/295147905179352825856"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "radial",
+          "signed_mean_grid": [
+            "26348318207041908501/147573952589676412928",
+            "4152527231901112189/295147905179352825856"
+          ],
+          "witness_offsets": [
+            150,
+            256
+          ]
+        },
+        {
+          "M_interval": [
+            "295136549451112570725/295147905179352825856",
+            "147568274725556547507/147573952589676412928"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_same_forcing",
+          "signed_mean_grid": [
+            "73767110789297050325/73786976294838206464",
+            "-1585021188785144307/73786976294838206464"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        },
+        {
+          "M_interval": [
+            "295046534597509143613/295147905179352825856",
+            "147523267298754833951/147573952589676412928"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_lag1",
+          "signed_mean_grid": [
+            "294437265166523670001/295147905179352825856",
+            "-18951370907075346091/295147905179352825856"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        },
+        {
+          "M_interval": [
+            "1125899906842623/1125899906842624",
+            "295147905179353088001/295147905179352825856"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "anti_companion",
+          "signed_mean_grid": [
+            "1",
+            "0"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        }
+      ],
+      "depth": 3,
+      "factor_cells": [
+        {
+          "M_interval": [
+            "17957363665192423095/147573952589676412928",
+            "35914727330386420079/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 0,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-26980432057260490481/295147905179352825856",
+            "-9820277175242639993/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26980432057260490481/295147905179352825856",
+            "-9820277175242639993/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "39213870bbf52cc05d2b3aa2142d0ea78425a8bba29d940a17a7f8267931c641",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "13953509124283949987/147573952589676412928",
+            "27907018248569473863/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 1,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-7816289287190625971/147573952589676412928",
+            "4368258008556352295/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7816289287190625971/147573952589676412928",
+            "4368258008556352295/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "8f2b897d9e3c12fa309a92323adac3e23a67de20916adf2ff37458658a3a152f",
+          "witness_offsets": [
+            12,
+            229
+          ]
+        },
+        {
+          "M_interval": [
+            "17957363665192422987/147573952589676412928",
+            "35914727330386419863/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 2,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "6899960536733592897/73786976294838206464",
+            "-3956964469746543957/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26980432057260490481/295147905179352825856",
+            "-9820277175242639993/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "58ca4c6f705059a29def220349bad19d4f54988a5290dc0b373c6d958d876804",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "27907018248567899843/295147905179352825856",
+            "6976754562142368433/73786976294838206464"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 3,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "22917412275127767891/295147905179352825856",
+            "-4947380717621620215/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7816289287190625971/147573952589676412928",
+            "4368258008556352295/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "db1078dc4e55c5ebca6797f633f227929e689da35c3fb0415082adcdc7c5851d",
+          "witness_offsets": [
+            12,
+            229
+          ]
+        },
+        {
+          "M_interval": [
+            "35951843186752460963/295147905179352825856",
+            "8987960796688508713/73786976294838206464"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 4,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-427646790816376871/4611686018427387904",
+            "-9004036225608589489/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-427646790816376871/4611686018427387904",
+            "-9004036225608589489/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "bd5d59c55f8529ce28db08bbbbad7ba3300fdda8d9323249ce33324c22fe9211",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "28081903830731957103/295147905179352825856",
+            "1755118989420845687/18446744073709551616"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 5,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-7415818498937280637/147573952589676412928",
+            "18530560237296531937/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7415818498937280637/147573952589676412928",
+            "18530560237296531937/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "d7ebc3b605c9485cc082f087b9b381bd23a1ceb0783a775fa0a963304c8d0254",
+          "witness_offsets": [
+            12,
+            229
+          ]
+        },
+        {
+          "M_interval": [
+            "17975921593376230377/147573952589676412928",
+            "35951843186754034643/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 6,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "6858686267895691349/73786976294838206464",
+            "-4401454096383754455/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-427646790816376871/4611686018427387904",
+            "-9004036225608589489/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "15643965a7c3765daa32dc84e9f447a122f64ad537eb37b64202a473b3afe43f",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "109694936838796707/1152921504606846976",
+            "28081903830733530881/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 7,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "22891036409880958657/295147905179352825856",
+            "-6273720652555475335/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7415818498937280637/147573952589676412928",
+            "18530560237296531937/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "59bd943898d580db06c0784f074d0bff6d11b7e172e294555c950de40dc1a953",
+          "witness_offsets": [
+            12,
+            229
+          ]
+        },
+        {
+          "M_interval": [
+            "28751989776834785713/295147905179352825856",
+            "14375994888418179801/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 8,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-14472543507218528079/295147905179352825856",
+            "-1157899585749367487/36893488147419103232"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-14472543507218528079/295147905179352825856",
+            "-1157899585749367487/36893488147419103232"
+          ],
+          "unwrapped_phase_sha256": "39213870bbf52cc05d2b3aa2142d0ea78425a8bba29d940a17a7f8267931c641",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "20604053130071549869/147573952589676412928",
+            "41208106260144673627/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 9,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-29667757117520034879/295147905179352825856",
+            "578864289791425301/9223372036854775808"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-29667757117520034879/295147905179352825856",
+            "578864289791425301/9223372036854775808"
+          ],
+          "unwrapped_phase_sha256": "8f2b897d9e3c12fa309a92323adac3e23a67de20916adf2ff37458658a3a152f",
+          "witness_offsets": [
+            12,
+            136
+          ]
+        },
+        {
+          "M_interval": [
+            "28751989776834785283/295147905179352825856",
+            "7187997444209089793/73786976294838206464"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 10,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "2144163006285366241/36893488147419103232",
+            "-506332047748318411/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-14472543507218528079/295147905179352825856",
+            "-1157899585749367487/36893488147419103232"
+          ],
+          "unwrapped_phase_sha256": "58ca4c6f705059a29def220349bad19d4f54988a5290dc0b373c6d958d876804",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "20604053130071549749/147573952589676412928",
+            "41208106260144673387/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 11,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "17444826128421505255/147573952589676412928",
+            "2452316570175809797/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-29667757117520034879/295147905179352825856",
+            "578864289791425301/9223372036854775808"
+          ],
+          "unwrapped_phase_sha256": "db1078dc4e55c5ebca6797f633f227929e689da35c3fb0415082adcdc7c5851d",
+          "witness_offsets": [
+            12,
+            136
+          ]
+        },
+        {
+          "M_interval": [
+            "14418852742091087329/147573952589676412928",
+            "28837705484183748547/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 12,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-14964503457940813909/295147905179352825856",
+            "-557836510711066683/18446744073709551616"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-14964503457940813909/295147905179352825856",
+            "-557836510711066683/18446744073709551616"
+          ],
+          "unwrapped_phase_sha256": "bd5d59c55f8529ce28db08bbbbad7ba3300fdda8d9323249ce33324c22fe9211",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "20626280871771516377/147573952589676412928",
+            "41252561743544606643/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 13,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-28537901399153151267/295147905179352825856",
+            "10211583955351245021/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-28537901399153151267/295147905179352825856",
+            "10211583955351245021/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "d7ebc3b605c9485cc082f087b9b381bd23a1ceb0783a775fa0a963304c8d0254",
+          "witness_offsets": [
+            12,
+            136
+          ]
+        },
+        {
+          "M_interval": [
+            "28837705484182174239/295147905179352825856",
+            "901178296380742129/9223372036854775808"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 14,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "8676373398418449803/147573952589676412928",
+            "-1575126964488122851/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-14964503457940813909/295147905179352825856",
+            "-557836510711066683/18446744073709551616"
+          ],
+          "unwrapped_phase_sha256": "15643965a7c3765daa32dc84e9f447a122f64ad537eb37b64202a473b3afe43f",
+          "witness_offsets": [
+            27,
+            248
+          ]
+        },
+        {
+          "M_interval": [
+            "20626280871771516269/147573952589676412928",
+            "41252561743544606427/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 15,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "35092084118715293343/295147905179352825856",
+            "251467655067553195/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-28537901399153151267/295147905179352825856",
+            "10211583955351245021/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "59bd943898d580db06c0784f074d0bff6d11b7e172e294555c950de40dc1a953",
+          "witness_offsets": [
+            12,
+            136
+          ]
+        }
+      ],
+      "h": 7,
+      "schedule_label": "fresh_actual_h7",
+      "signed_H": 28672
+    },
+    {
+      "A": 512,
+      "Lambda": "3/4",
+      "complete_mixed_differences": [
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 1,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-3206794737169634669/590295810358705651712",
+            "-7115873541208294287/590295810358705651712"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 2,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "911770026671168873/590295810358705651712",
+            "8375586768147994089/590295810358705651712"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 3,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-3478638309434301979/590295810358705651712",
+            "6846986529905787267/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 4,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "124285069560151015/73786976294838206464",
+            "-186199317335805653/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 5,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "147284395686748143/590295810358705651712",
+            "-21338409653320179/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 6,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1360889572983434101/590295810358705651712",
+            "120735897834172015/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 7,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1167086481542067827/590295810358705651712",
+            "-18409615621367397/9223372036854775808"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 8,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1122097454164045463/36893488147419103232",
+            "-7037491586310393365/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 9,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "3449055809394573201/590295810358705651712",
+            "4372018322312083031/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 10,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "40751361357973172089/590295810358705651712",
+            "7454523195865766409/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 11,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-17645919858789822395/590295810358705651712",
+            "3260259697503549723/590295810358705651712"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 12,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "2006624275191748621/590295810358705651712",
+            "-1459371150956669387/590295810358705651712"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 13,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-509255230473853927/295147905179352825856",
+            "-1938189412564587/9223372036854775808"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 14,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-2772220574993761665/590295810358705651712",
+            "3819491369030924729/590295810358705651712"
+          ]
+        },
+        {
+          "complex_error": "1537/36028797018963968",
+          "mask": 15,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "26998873356753515/295147905179352825856",
+            "-767932478983745313/295147905179352825856"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "M_interval": [
+            "57929082047265191003/590295810358705651712",
+            "14482270511816559895/147573952589676412928"
+          ],
+          "chords": 131328,
+          "complex_error": "1/1125899906842624",
+          "kind": "radial",
+          "signed_mean_grid": [
+            "1440315995409675135/590295810358705651712",
+            "-23360645887976100169/590295810358705651712"
+          ],
+          "witness_offsets": [
+            435,
+            512
+          ]
+        },
+        {
+          "M_interval": [
+            "590229104045774284615/590295810358705651712",
+            "73778638005721916649/73786976294838206464"
+          ],
+          "chords": 131328,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_same_forcing",
+          "signed_mean_grid": [
+            "589829018207441627781/590295810358705651712",
+            "21728427074308845069/590295810358705651712"
+          ],
+          "witness_offsets": [
+            0,
+            512
+          ]
+        },
+        {
+          "M_interval": [
+            "294849041802929024749/295147905179352825856",
+            "589698083605859098075/590295810358705651712"
+          ],
+          "chords": 131328,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_lag1",
+          "signed_mean_grid": [
+            "1144754037146657409/1152921504606846976",
+            "64916332696521706679/590295810358705651712"
+          ],
+          "witness_offsets": [
+            0,
+            512
+          ]
+        },
+        {
+          "M_interval": [
+            "1125899906842623/1125899906842624",
+            "590295810358706176001/590295810358705651712"
+          ],
+          "chords": 131328,
+          "complex_error": "1/1125899906842624",
+          "kind": "anti_companion",
+          "signed_mean_grid": [
+            "1",
+            "0"
+          ],
+          "witness_offsets": [
+            0,
+            512
+          ]
+        }
+      ],
+      "depth": 4,
+      "factor_cells": [
+        {
+          "M_interval": [
+            "29082987390035428909/590295810358705651712",
+            "14541493695019288343/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 0,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "904811540903913245/590295810358705651712",
+            "-1083979851031032461/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "904811540903913245/590295810358705651712",
+            "-1083979851031032461/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "3209517984f9c548e65eff305d27a8334f910fff465c94be253f810a360f2698",
+          "witness_offsets": [
+            194,
+            441
+          ]
+        },
+        {
+          "M_interval": [
+            "10519599488396834111/295147905179352825856",
+            "21039198976796815999/590295810358705651712"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 1,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-143873949766607589/36893488147419103232",
+            "-11451792945332424131/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-143873949766607589/36893488147419103232",
+            "-11451792945332424131/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "28636d8f9f825fcf8014675f9ac529fdbf9e2c0c51b0c11d6c494b8b1e4d5743",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "14541493695017714605/295147905179352825856",
+            "29082987390038576987/590295810358705651712"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 2,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "908290783787541059/295147905179352825856",
+            "4039667364023864245/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "904811540903913245/590295810358705651712",
+            "-1083979851031032461/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "b9087df07912d4d7f9e488acc2c1df4e7cebe3e59852be877661908b61d4a540",
+          "witness_offsets": [
+            194,
+            441
+          ]
+        },
+        {
+          "M_interval": [
+            "2629899872099208495/73786976294838206464",
+            "21039198976796815737/590295810358705651712"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 3,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "-2434425739514427265/295147905179352825856",
+            "2654441720656786123/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-143873949766607589/36893488147419103232",
+            "-11451792945332424131/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "7590674bb070a571d50018a65c57965ae1ffb3cb763edc881c1a8f0b2bf02f57",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "7221934344382827737/147573952589676412928",
+            "28887737377534458725/590295810358705651712"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 4,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "1899092097385121365/590295810358705651712",
+            "-635089584183419057/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "1899092097385121365/590295810358705651712",
+            "-635089584183419057/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "5ce199d189c9c20494a5b6f5f9a989efeaedbd3b526df4d58060f3166dae8945",
+          "witness_offsets": [
+            194,
+            441
+          ]
+        },
+        {
+          "M_interval": [
+            "21238164453984006019/590295810358705651712",
+            "5309541113496788449/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 5,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-1160418244097765161/590295810358705651712",
+            "-12239267033982287101/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-1160418244097765161/590295810358705651712",
+            "-12239267033982287101/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "dfbf0f2d4ad2c3d1716af43eb7b0d08060d41e46dcbf427593093ae1a1645f84",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "14443868688765655627/295147905179352825856",
+            "28887737377534459031/590295810358705651712"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 6,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "1449972551072856137/590295810358705651712",
+            "5226644460027393873/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "1899092097385121365/590295810358705651712",
+            "-635089584183419057/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "91851da12ccd71b8139fedac50511e38b0e042f7b17cff33489b2503a56b3588",
+          "witness_offsets": [
+            194,
+            441
+          ]
+        },
+        {
+          "M_interval": [
+            "10619082226992002889/295147905179352825856",
+            "21238164453987153555/590295810358705651712"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 7,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "-6255262581386400195/590295810358705651712",
+            "5291925879778260177/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-1160418244097765161/590295810358705651712",
+            "-12239267033982287101/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "7fb23b81b746aabcc18155359351d3289efe8a70226a5665227cbe03e0adb40d",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "43536327097828104661/590295810358705651712",
+            "21768163548915626219/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 8,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-17048747725720814163/590295810358705651712",
+            "-9205451288372458287/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-17048747725720814163/590295810358705651712",
+            "-9205451288372458287/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "3209517984f9c548e65eff305d27a8334f910fff465c94be253f810a360f2698",
+          "witness_offsets": [
+            3,
+            194
+          ]
+        },
+        {
+          "M_interval": [
+            "2083055232063281221/36893488147419103232",
+            "33328883713015647313/590295810358705651712"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 9,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-16806486653495875631/590295810358705651712",
+            "-16782739473329044799/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-16806486653495875631/590295810358705651712",
+            "-16782739473329044799/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "28636d8f9f825fcf8014675f9ac529fdbf9e2c0c51b0c11d6c494b8b1e4d5743",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "5442040887228512999/73786976294838206464",
+            "43536327097831251769/590295810358705651712"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 10,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "24614383658923526799/590295810358705651712",
+            "4873730583134610333/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-17048747725720814163/590295810358705651712",
+            "-9205451288372458287/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "b9087df07912d4d7f9e488acc2c1df4e7cebe3e59852be877661908b61d4a540",
+          "witness_offsets": [
+            3,
+            194
+          ]
+        },
+        {
+          "M_interval": [
+            "33328883713012498813/590295810358705651712",
+            "16664441856507823295/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 11,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "3732086562924340957/590295810358705651712",
+            "23456126443865606365/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-16806486653495875631/590295810358705651712",
+            "-16782739473329044799/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "7590674bb070a571d50018a65c57965ae1ffb3cb763edc881c1a8f0b2bf02f57",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "43102918946004869997/590295810358705651712",
+            "21551459473004008887/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 12,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-7023921447023928711/295147905179352825856",
+            "-20615070997044808573/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7023921447023928711/295147905179352825856",
+            "-20615070997044808573/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "5ce199d189c9c20494a5b6f5f9a989efeaedbd3b526df4d58060f3166dae8945",
+          "witness_offsets": [
+            3,
+            194
+          ]
+        },
+        {
+          "M_interval": [
+            "263041074479125081/4611686018427387904",
+            "33669257533331158145/590295810358705651712"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 13,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-14676807887083878601/590295810358705651712",
+            "-4788407208834927681/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-14676807887083878601/590295810358705651712",
+            "-4788407208834927681/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "dfbf0f2d4ad2c3d1716af43eb7b0d08060d41e46dcbf427593093ae1a1645f84",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        },
+        {
+          "M_interval": [
+            "43102918946004869321/590295810358705651712",
+            "21551459473004008549/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 14,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "11741089171309643887/295147905179352825856",
+            "8420827897212395303/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-7023921447023928711/295147905179352825856",
+            "-20615070997044808573/590295810358705651712"
+          ],
+          "unwrapped_phase_sha256": "91851da12ccd71b8139fedac50511e38b0e042f7b17cff33489b2503a56b3588",
+          "witness_offsets": [
+            3,
+            194
+          ]
+        },
+        {
+          "M_interval": [
+            "1052164297916500303/18446744073709551616",
+            "33669257533331157473/590295810358705651712"
+          ],
+          "angular_orientation": -1,
+          "chords": 131328,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 15,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "38472902908161339/36893488147419103232",
+            "24122422458497613375/590295810358705651712"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-14676807887083878601/590295810358705651712",
+            "-4788407208834927681/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "7fb23b81b746aabcc18155359351d3289efe8a70226a5665227cbe03e0adb40d",
+          "witness_offsets": [
+            0,
+            218
+          ]
+        }
+      ],
+      "h": -3,
+      "schedule_label": "fresh_actual_hminus3",
+      "signed_H": -196608
+    },
+    {
+      "A": 128,
+      "Lambda": "128",
+      "complete_mixed_differences": [
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 1,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "9398105963928569237/36893488147419103232",
+            "-12034971368813511745/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 2,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "9342922833115917487/73786976294838206464",
+            "-3512526859433371247/18446744073709551616"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 3,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-34602539028684277181/73786976294838206464",
+            "2362286945658332447/9223372036854775808"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 4,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "1466811029861464233/9223372036854775808",
+            "-12407587921824972403/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 5,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-9342819777214955865/36893488147419103232",
+            "22670904952977446145/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 6,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-17581390045962591369/73786976294838206464",
+            "566253994840980643/2305843009213693952"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 7,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "66344908202999520773/147573952589676412928",
+            "-23317601069190932795/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 8,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "178875577998611825/36893488147419103232",
+            "-4566209899563868639/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 9,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-1491348641573083123/73786976294838206464",
+            "7957299443543583007/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 10,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "127298307304954773/4611686018427387904",
+            "8470632161679912173/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 11,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-662870016064727433/147573952589676412928",
+            "-13482827861557518813/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 12,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-10648911129365023055/147573952589676412928",
+            "-531013820376164387/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 13,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "7912366294510987257/147573952589676412928",
+            "491236131345928185/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 14,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "9788091648495217355/73786976294838206464",
+            "-5298659889505497925/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/36028797018963968",
+          "mask": 15,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-7180183285227202039/73786976294838206464",
+            "6090464591266712881/147573952589676412928"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "M_interval": [
+            "15910395027658342017/147573952589676412928",
+            "7955197513829302081/73786976294838206464"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "radial",
+          "signed_mean_grid": [
+            "1173022506454272361/36893488147419103232",
+            "-823445283189013151/73786976294838206464"
+          ],
+          "witness_offsets": [
+            16,
+            118
+          ]
+        },
+        {
+          "M_interval": [
+            "3592286511413381963/9223372036854775808",
+            "57476584182614373553/147573952589676412928"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_same_forcing",
+          "signed_mean_grid": [
+            "-1885650237957489475/18446744073709551616",
+            "43639666731140265311/147573952589676412928"
+          ],
+          "witness_offsets": [
+            60,
+            128
+          ]
+        },
+        {
+          "M_interval": [
+            "25538133844130173021/147573952589676412928",
+            "12769066922065217583/73786976294838206464"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_lag1",
+          "signed_mean_grid": [
+            "-410235158935691793/18446744073709551616",
+            "17009037003084976001/147573952589676412928"
+          ],
+          "witness_offsets": [
+            96,
+            128
+          ]
+        },
+        {
+          "M_interval": [
+            "1125899906842623/1125899906842624",
+            "147573952589676544001/147573952589676412928"
+          ],
+          "chords": 8256,
+          "complex_error": "1/1125899906842624",
+          "kind": "anti_companion",
+          "signed_mean_grid": [
+            "1",
+            "0"
+          ],
+          "witness_offsets": [
+            0,
+            128
+          ]
+        }
+      ],
+      "factor_cells": [
+        {
+          "M_interval": [
+            "21444611077039890739/147573952589676412928",
+            "5361152769260169421/36893488147419103232"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 0,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-6954039736911989661/73786976294838206464",
+            "11014407788869976449/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-6954039736911989661/73786976294838206464",
+            "11014407788869976449/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "3be0a54403ea2654fba143ed7964340292554df077ba2701f59c792f4d65e03e",
+          "witness_offsets": [
+            3,
+            123
+          ]
+        },
+        {
+          "M_interval": [
+            "7997490030923266255/36893488147419103232",
+            "31989960123693851965/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 1,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "11842172190945148813/73786976294838206464",
+            "-13055534948757047041/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "11842172190945148813/73786976294838206464",
+            "-13055534948757047041/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "b63a12322ab78192dc8cf500411f1b3723f20675ca46a1193bf43f3c57db8351",
+          "witness_offsets": [
+            7,
+            126
+          ]
+        },
+        {
+          "M_interval": [
+            "21444611077039890801/147573952589676412928",
+            "10722305538520338873/73786976294838206464"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 2,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "1194441548101963913/36893488147419103232",
+            "-17085807086596993527/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-6954039736911989661/73786976294838206464",
+            "11014407788869976449/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "2a755eb16b03ddf4c82bc3c91c87aaf24b050ecdb363dc819e0a3a0d93151a97",
+          "witness_offsets": [
+            3,
+            123
+          ]
+        },
+        {
+          "M_interval": [
+            "15994980061846532559/73786976294838206464",
+            "31989960123693852063/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 3,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "-13417444004623210881/73786976294838206464",
+            "-3359158693690697865/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "11842172190945148813/73786976294838206464",
+            "-13055534948757047041/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "1fef479075166b4396f8e4162e92ec7763e69b5f22922044195fe5f9ed035fee",
+          "witness_offsets": [
+            7,
+            126
+          ]
+        },
+        {
+          "M_interval": [
+            "5088495775257270547/36893488147419103232",
+            "20353983101029869133/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 4,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "4780448501979724203/73786976294838206464",
+            "-696590066477497977/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "4780448501979724203/73786976294838206464",
+            "-696590066477497977/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "6ee4524372ed720368416ea665a2dd7f0b2eb92003b0fffefe77b620b09f538c",
+          "witness_offsets": [
+            29,
+            111
+          ]
+        },
+        {
+          "M_interval": [
+            "7227950711723792761/73786976294838206464",
+            "14455901423448372467/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 5,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "4891020875406950947/73786976294838206464",
+            "-2792217917604573299/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "4891020875406950947/73786976294838206464",
+            "-2792217917604573299/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "88c1b5296594214f4531a4bd73f862adbfbbc53dd1d77cd006cfb346af306af8",
+          "witness_offsets": [
+            14,
+            125
+          ]
+        },
+        {
+          "M_interval": [
+            "20353983101029082223/147573952589676412928",
+            "1272123943814366823/9223372036854775808"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 6,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "-3458018710866949679/73786976294838206464",
+            "3373430330700397611/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "4780448501979724203/73786976294838206464",
+            "-696590066477497977/73786976294838206464"
+          ],
+          "unwrapped_phase_sha256": "26223d683a462773f0140180c70efbdfbfe47904b176e3e4880445d5ebd38827",
+          "witness_offsets": [
+            29,
+            111
+          ]
+        },
+        {
+          "M_interval": [
+            "7227950711723792833/73786976294838206464",
+            "14455901423448372611/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 7,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "-9555062529248479459/147573952589676412928",
+            "-3490788131097328561/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "4891020875406950947/73786976294838206464",
+            "-2792217917604573299/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "f8f5d5a36a437ab93a5c13c7d98dc3b5e46aa22f5a8ef4ce234d73aeabab1eed",
+          "witness_offsets": [
+            14,
+            125
+          ]
+        },
+        {
+          "M_interval": [
+            "8574239656026060891/73786976294838206464",
+            "17148479312052908727/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 8,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-6596288580914766011/73786976294838206464",
+            "1881987989742239171/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-6596288580914766011/73786976294838206464",
+            "1881987989742239171/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "3be0a54403ea2654fba143ed7964340292554df077ba2701f59c792f4d65e03e",
+          "witness_offsets": [
+            3,
+            123
+          ]
+        },
+        {
+          "M_interval": [
+            "18616831695639633173/73786976294838206464",
+            "37233663391280053291/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 9,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "2677143676342322335/18446744073709551616",
+            "-444707978260662541/4611686018427387904"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "2677143676342322335/18446744073709551616",
+            "-444707978260662541/4611686018427387904"
+          ],
+          "unwrapped_phase_sha256": "b63a12322ab78192dc8cf500411f1b3723f20675ca46a1193bf43f3c57db8351",
+          "witness_offsets": [
+            7,
+            126
+          ]
+        },
+        {
+          "M_interval": [
+            "17148479312052121859/147573952589676412928",
+            "4287119828013227201/36893488147419103232"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 10,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "1195851792270106961/18446744073709551616",
+            "-9276962562364906459/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-6596288580914766011/73786976294838206464",
+            "1881987989742239171/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "2a755eb16b03ddf4c82bc3c91c87aaf24b050ecdb363dc819e0a3a0d93151a97",
+          "witness_offsets": [
+            3,
+            123
+          ]
+        },
+        {
+          "M_interval": [
+            "18616831695639633265/73786976294838206464",
+            "37233663391280053475/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 11,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "-25691407162704315405/147573952589676412928",
+            "-1075842587472546603/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "2677143676342322335/18446744073709551616",
+            "-444707978260662541/4611686018427387904"
+          ],
+          "unwrapped_phase_sha256": "1fef479075166b4396f8e4162e92ec7763e69b5f22922044195fe5f9ed035fee",
+          "witness_offsets": [
+            7,
+            126
+          ]
+        },
+        {
+          "M_interval": [
+            "5193728042578324577/36893488147419103232",
+            "20774912170314085253/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 12,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-372511813411127349/147573952589676412928",
+            "-11056613752458897619/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-372511813411127349/147573952589676412928",
+            "-11056613752458897619/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "6ee4524372ed720368416ea665a2dd7f0b2eb92003b0fffefe77b620b09f538c",
+          "witness_offsets": [
+            3,
+            29
+          ]
+        },
+        {
+          "M_interval": [
+            "20406144260790352045/147573952589676412928",
+            "10203072130395569495/73786976294838206464"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 13,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "2389150972404073575/73786976294838206464",
+            "-3515879830873035587/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "2389150972404073575/73786976294838206464",
+            "-3515879830873035587/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "88c1b5296594214f4531a4bd73f862adbfbbc53dd1d77cd006cfb346af306af8",
+          "witness_offsets": [
+            17,
+            41
+          ]
+        },
+        {
+          "M_interval": [
+            "20774912170313298239/147573952589676412928",
+            "324608002661157581/2305843009213693952"
+          ],
+          "angular_orientation": 1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 14,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "6800282891644512333/147573952589676412928",
+            "4363015737875609989/73786976294838206464"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-372511813411127349/147573952589676412928",
+            "-11056613752458897619/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "26223d683a462773f0140180c70efbdfbfe47904b176e3e4880445d5ebd38827",
+          "witness_offsets": [
+            3,
+            29
+          ]
+        },
+        {
+          "M_interval": [
+            "10203072130395176051/73786976294838206464",
+            "20406144260791139047/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 8256,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 15,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "-1483077447756094567/36893488147419103232",
+            "4473889899716205/18446744073709551616"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "2389150972404073575/73786976294838206464",
+            "-3515879830873035587/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "f8f5d5a36a437ab93a5c13c7d98dc3b5e46aa22f5a8ef4ce234d73aeabab1eed",
+          "witness_offsets": [
+            17,
+            41
+          ]
+        }
+      ],
+      "schedule_label": "diagnostic_reciprocal_tuned",
+      "signed_H": 2097152
+    },
+    {
+      "A": 256,
+      "Lambda": "7/65536",
+      "complete_mixed_differences": [
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 1,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-53579209003121115/295147905179352825856",
+            "1788028724963611067/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 2,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "6571339780259875383/36893488147419103232",
+            "-2608253916114467983/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 3,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-2279570310639985/295147905179352825856",
+            "2776661663606691047/147573952589676412928"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 4,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-74898606561387/295147905179352825856",
+            "191402913340183/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 5,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "148627833618847/295147905179352825856",
+            "578280666683/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 6,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "5747260604349/73786976294838206464",
+            "-390275419359301/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 7,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-43522752591731/295147905179352825856",
+            "-358775526817/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/288230376151711744",
+          "mask": 8,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "6395479550565879039/147573952589676412928",
+            "35216524467791479/36893488147419103232"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 9,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-606972038466879/147573952589676412928",
+            "-118792263263401739/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 10,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-11652330209027785709/147573952589676412928",
+            "1752169698090247023/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 11,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "54094743241342093/295147905179352825856",
+            "-3544092953510579045/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/144115188075855872",
+          "mask": 12,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-316751615833/18446744073709551616",
+            "-117773784577659/295147905179352825856"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 13,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "5530417265463/147573952589676412928",
+            "17324419911/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/72057594037927936",
+          "mask": 14,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "78393838578011/295147905179352825856",
+            "52518966734507/73786976294838206464"
+          ]
+        },
+        {
+          "complex_error": "1537/36028797018963968",
+          "mask": 15,
+          "meaning": "finite nonadditivity only",
+          "signed_grid": [
+            "-79209946423555/147573952589676412928",
+            "-668934385851/295147905179352825856"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "M_interval": [
+            "18446738884282691899/18446744073709551616",
+            "295147822148523594673/295147905179352825856"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "radial",
+          "signed_mean_grid": [
+            "295145779800836050697/295147905179352825856",
+            "274497811097663409/73786976294838206464"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        },
+        {
+          "M_interval": [
+            "295147905178675698821/295147905179352825856",
+            "147573952589338111555/147573952589676412928"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_same_forcing",
+          "signed_mean_grid": [
+            "73786976293654041481/73786976294838206464",
+            "-1548056847789375/295147905179352825856"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        },
+        {
+          "M_interval": [
+            "36893488146663695191/36893488147419103232",
+            "295147905173310085817/295147905179352825856"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "coherent_lag1",
+          "signed_mean_grid": [
+            "295147905136967057801/295147905179352825856",
+            "-4631736437748451/295147905179352825856"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        },
+        {
+          "M_interval": [
+            "1125899906842623/1125899906842624",
+            "295147905179353088001/295147905179352825856"
+          ],
+          "chords": 32896,
+          "complex_error": "1/1125899906842624",
+          "kind": "anti_companion",
+          "signed_mean_grid": [
+            "1",
+            "0"
+          ],
+          "witness_offsets": [
+            0,
+            256
+          ]
+        }
+      ],
+      "factor_cells": [
+        {
+          "M_interval": [
+            "17946689176269853329/147573952589676412928",
+            "35893378352541280547/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 0,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-13354547828050301151/147573952589676412928",
+            "-3618251971461887301/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13354547828050301151/147573952589676412928",
+            "-3618251971461887301/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "eaf9410e13b505d2fccc678d677e6724ff91e474f16936b0d5f7fe63c17dea26",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "35896488628517473263/295147905179352825856",
+            "2243530539282440447/18446744073709551616"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 1,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-26762674865103723417/295147905179352825856",
+            "3533862928392556967/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26762674865103723417/295147905179352825856",
+            "3533862928392556967/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "ea0b669e8af98e652f8bcc32df4a8e4f963939e4b24cdec6475db0a1ee5869ee",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "560834036758432913/4611686018427387904",
+            "35893378352541280321/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 2,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "12930811292989200381/147573952589676412928",
+            "-9844757859038242585/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13354547828050301151/147573952589676412928",
+            "-3618251971461887301/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "e638fa79990e5c4c38b167e5796fb739d5418c4e8157cc573669f02f35bdc41a",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "17948244314258736529/147573952589676412928",
+            "35896488628519046947/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 3,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "12902881903332319831/147573952589676412928",
+            "10012795267884028045/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26762674865103723417/295147905179352825856",
+            "3533862928392556967/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "739a869234bacfa1d5cd0b483c467453af63e546d57ab5aa092bb8a17807ee41",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "8973347206655274121/73786976294838206464",
+            "35893388826622670373/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 4,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-26709170554707163689/295147905179352825856",
+            "-7236312540010434419/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26709170554707163689/295147905179352825856",
+            "-7236312540010434419/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "2e636989a1bda266ca1a1105c4442275d389963512bd7f392046e59c131b0ef7",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "35055154593586505/288230376151711744",
+            "35896478303834155009/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 5,
+          "measure": "uniform",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-26762601135876665957/295147905179352825856",
+            "220872432436847525/9223372036854775808"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26762601135876665957/295147905179352825856",
+            "220872432436847525/9223372036854775808"
+          ],
+          "unwrapped_phase_sha256": "5886dae8aa8a4ae3f8172f59753973a429b4e74621a36680b2091c8698a74f86",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "35893388826621096265/295147905179352825856",
+            "17946694413311335077/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 6,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "25861570676414256771/295147905179352825856",
+            "-9844956731544261703/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26709170554707163689/295147905179352825856",
+            "-7236312540010434419/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "97c639dfb707e823a0d651e71ae17381bc75c3920b5d9408a0031287a405f0d6",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "17948239151916290459/147573952589676412928",
+            "35896478303834154807/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 7,
+          "measure": "uniform",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "25805817002181522787/295147905179352825856",
+            "10012596614883148793/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-26762601135876665957/295147905179352825856",
+            "220872432436847525/9223372036854775808"
+          ],
+          "unwrapped_phase_sha256": "e133381f1b805305d56486dab1d2da0ba5ddc5eb27f205a14e1c626fd6a6ebdb",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "27995212938278261279/295147905179352825856",
+            "874850404321244849/9223372036854775808"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 8,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-217470883671388191/4611686018427387904",
+            "-3477385873590721385/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-217470883671388191/4611686018427387904",
+            "-3477385873590721385/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "eaf9410e13b505d2fccc678d677e6724ff91e474f16936b0d5f7fe63c17dea26",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "28002239184111959703/295147905179352825856",
+            "3500279898014191699/36893488147419103232"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 9,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-13972929708048899097/295147905179352825856",
+            "3437144499736919405/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13972929708048899097/295147905179352825856",
+            "3437144499736919405/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "ea0b669e8af98e652f8bcc32df4a8e4f963939e4b24cdec6475db0a1ee5869ee",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "27995212938278260841/295147905179352825856",
+            "13997606469139917365/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 10,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "7673960634527293711/147573952589676412928",
+            "-2554346870934922661/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-217470883671388191/4611686018427387904",
+            "-3477385873590721385/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "e638fa79990e5c4c38b167e5796fb739d5418c4e8157cc573669f02f35bdc41a",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "14001119592055979675/147573952589676412928",
+            "28002239184113533239/295147905179352825856"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 0,
+          "mask": 11,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "15344943288905234657/295147905179352825856",
+            "2651665388891424833/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13972929708048899097/295147905179352825856",
+            "3437144499736919405/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "739a869234bacfa1d5cd0b483c467453af63e546d57ab5aa092bb8a17807ee41",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "27995234291643138949/295147905179352825856",
+            "13997617145822356419/147573952589676412928"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 12,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-13918216521601258939/295147905179352825856",
+            "-3477349059026340123/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13918216521601258939/295147905179352825856",
+            "-3477349059026340123/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "2e636989a1bda266ca1a1105c4442275d389963512bd7f392046e59c131b0ef7",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "28002217968825739407/295147905179352825856",
+            "1750138623051707081/18446744073709551616"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 13,
+          "measure": "reciprocal",
+          "seed": "0",
+          "seed_transport_phase": "0",
+          "signed_mean_grid": [
+            "-13972849986013164039/295147905179352825856",
+            "6874363276180947661/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13972849986013164039/295147905179352825856",
+            "6874363276180947661/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "5886dae8aa8a4ae3f8172f59753973a429b4e74621a36680b2091c8698a74f86",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "13997617145821569251/147573952589676412928",
+            "27995234291644712391/295147905179352825856"
+          ],
+          "angular_orientation": 1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 14,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "3/5",
+          "signed_mean_grid": [
+            "7673971342651584057/147573952589676412928",
+            "-1277226720679290705/147573952589676412928"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13918216521601258939/295147905179352825856",
+            "-3477349059026340123/147573952589676412928"
+          ],
+          "unwrapped_phase_sha256": "97c639dfb707e823a0d651e71ae17381bc75c3920b5d9408a0031287a405f0d6",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        },
+        {
+          "M_interval": [
+            "28002217968825739065/295147905179352825856",
+            "14001108984413656477/147573952589676412928"
+          ],
+          "angular_orientation": -1,
+          "chords": 32896,
+          "complex_error": "1537/576460752303423488",
+          "lag": 1,
+          "mask": 15,
+          "measure": "reciprocal",
+          "seed": "1/5",
+          "seed_transport_phase": "2/5",
+          "signed_mean_grid": [
+            "15344922451176526281/295147905179352825856",
+            "2651558438336199743/295147905179352825856"
+          ],
+          "source_aligned_seed_defect": "0 (exact phase identity)",
+          "source_aligned_signed_mean_grid": [
+            "-13972849986013164039/295147905179352825856",
+            "6874363276180947661/295147905179352825856"
+          ],
+          "unwrapped_phase_sha256": "e133381f1b805305d56486dab1d2da0ba5ddc5eb27f205a14e1c626fd6a6ebdb",
+          "witness_offsets": [
+            30,
+            251
+          ]
+        }
+      ],
+      "schedule_label": "diagnostic_fixed_character",
+      "signed_H": 7
+    }
+  ],
+  "instrument_hashes": {
+    "certified_phase.py": "202fa182dec8574e3de7a7b1dba545c92540094b452349532d5e0e3b1778d64f",
+    "coupling_probe.py": "a391ab2f4241e16767dbc385b921d1641c12bd74d626395fdc63dcac9179201b"
+  },
+  "raw_grid_sha256": "820ff99d557ae18608c6464aac2e96f36b9c6cec5548f1f92f88a73534cb0bf1",
+  "source_base": "bc2d7b01b6b0a37cb79994e180758e98681aa68e",
+  "state_audit": {
+    "N": 1025,
+    "carry_transcript_sha256": "a2e811e4ae663e674f179482ee65f51e121e98af40c0dcff4997cc77b5a6369f",
+    "integer_LCM_bits": 11784,
+    "literal_carries": [
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        13,
+        13,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        8,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        9,
+        9,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        11,
+        11,
+        0
+      ]
+    ],
+    "reconciled_unwrapped_states": 3075,
+    "state_transcript_sha256": "4c03b526680b65fc0a81de14c8ea62317620616e38a08f4a54abe583ce9cea2b",
+    "zero_initial_values": [
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "total_chords": 4272640
+}

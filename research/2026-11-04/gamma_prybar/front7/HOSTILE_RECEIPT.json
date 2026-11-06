@@ -1,0 +1,232 @@
+{
+  "births": 69,
+  "dyadic_resets": [
+    7,
+    14,
+    28,
+    56,
+    112,
+    224
+  ],
+  "epochs": {
+    "128": {
+      "dyadic": {
+        "max_half_open_arc": 128,
+        "nonbirth_near": 9409,
+        "ordered_near": 16384,
+        "points": 128
+      },
+      "fabricated_prime_points": {
+        "max_half_open_arc": 7,
+        "ordered_near": 249,
+        "points": 31
+      },
+      "fixed_negative_completion": {
+        "certified_max_arc": 128,
+        "certified_near": 16384
+      },
+      "fixed_rational": {
+        "max_half_open_arc": 128,
+        "ordered_near": 16384,
+        "points": 128
+      },
+      "genuine": {
+        "max_half_open_arc": 25,
+        "nonbirth_near": 2407,
+        "ordered_near": 4256,
+        "points": 128
+      },
+      "ghost_487_clean_window": {
+        "max_half_open_arc": 43,
+        "ordered_near": 1849,
+        "points": 43
+      },
+      "grid_prefix": {
+        "max_half_open_arc": 16,
+        "ordered_near": 3968,
+        "points": 128
+      },
+      "jet_matched": {
+        "max_half_open_arc": 26,
+        "nonbirth_near": 2467,
+        "ordered_near": 4258,
+        "points": 128
+      },
+      "periodic": {
+        "max_half_open_arc": 43,
+        "ordered_near": 5462,
+        "points": 128
+      },
+      "sign_flip_last": {
+        "max_half_open_arc": 25,
+        "nonbirth_near": 2371,
+        "ordered_near": 4098,
+        "points": 128
+      },
+      "source_native_seed": {
+        "max_half_open_arc": 128,
+        "nonbirth_near": 9409,
+        "ordered_near": 16384,
+        "points": 128
+      },
+      "ternary": {
+        "max_half_open_arc": 104,
+        "nonbirth_near": 7987,
+        "ordered_near": 13748,
+        "points": 128
+      },
+      "zero_continuation": {
+        "max_half_open_arc": 128,
+        "ordered_near": 16384,
+        "points": 128
+      }
+    },
+    "32": {
+      "dyadic": {
+        "max_half_open_arc": 32,
+        "nonbirth_near": 484,
+        "ordered_near": 1024,
+        "points": 32
+      },
+      "fabricated_prime_points": {
+        "max_half_open_arc": 4,
+        "ordered_near": 54,
+        "points": 10
+      },
+      "fixed_negative_completion": {
+        "certified_max_arc": 32,
+        "certified_near": 1024
+      },
+      "fixed_rational": {
+        "max_half_open_arc": 32,
+        "ordered_near": 1024,
+        "points": 32
+      },
+      "genuine": {
+        "max_half_open_arc": 8,
+        "nonbirth_near": 126,
+        "ordered_near": 276,
+        "points": 32
+      },
+      "ghost_487_clean_window": {
+        "max_half_open_arc": 11,
+        "ordered_near": 121,
+        "points": 11
+      },
+      "grid_prefix": {
+        "max_half_open_arc": 4,
+        "ordered_near": 224,
+        "points": 32
+      },
+      "jet_matched": {
+        "max_half_open_arc": 9,
+        "nonbirth_near": 134,
+        "ordered_near": 278,
+        "points": 32
+      },
+      "periodic": {
+        "max_half_open_arc": 11,
+        "ordered_near": 342,
+        "points": 32
+      },
+      "sign_flip_last": {
+        "max_half_open_arc": 9,
+        "nonbirth_near": 138,
+        "ordered_near": 294,
+        "points": 32
+      },
+      "source_native_seed": {
+        "max_half_open_arc": 32,
+        "nonbirth_near": 484,
+        "ordered_near": 1024,
+        "points": 32
+      },
+      "ternary": {
+        "max_half_open_arc": 21,
+        "nonbirth_near": 300,
+        "ordered_near": 558,
+        "points": 32
+      },
+      "zero_continuation": {
+        "max_half_open_arc": 32,
+        "ordered_near": 1024,
+        "points": 32
+      }
+    },
+    "64": {
+      "dyadic": {
+        "max_half_open_arc": 64,
+        "nonbirth_near": 2116,
+        "ordered_near": 4096,
+        "points": 64
+      },
+      "fabricated_prime_points": {
+        "max_half_open_arc": 7,
+        "ordered_near": 132,
+        "points": 18
+      },
+      "fixed_negative_completion": {
+        "certified_max_arc": 64,
+        "certified_near": 4096
+      },
+      "fixed_rational": {
+        "max_half_open_arc": 64,
+        "ordered_near": 4096,
+        "points": 64
+      },
+      "genuine": {
+        "max_half_open_arc": 13,
+        "nonbirth_near": 532,
+        "ordered_near": 1052,
+        "points": 64
+      },
+      "ghost_487_clean_window": {
+        "max_half_open_arc": 22,
+        "ordered_near": 484,
+        "points": 22
+      },
+      "grid_prefix": {
+        "max_half_open_arc": 8,
+        "ordered_near": 960,
+        "points": 64
+      },
+      "jet_matched": {
+        "max_half_open_arc": 15,
+        "nonbirth_near": 584,
+        "ordered_near": 1090,
+        "points": 64
+      },
+      "periodic": {
+        "max_half_open_arc": 22,
+        "ordered_near": 1366,
+        "points": 64
+      },
+      "sign_flip_last": {
+        "max_half_open_arc": 14,
+        "nonbirth_near": 534,
+        "ordered_near": 1048,
+        "points": 64
+      },
+      "source_native_seed": {
+        "max_half_open_arc": 64,
+        "nonbirth_near": 2116,
+        "ordered_near": 4096,
+        "points": 64
+      },
+      "ternary": {
+        "max_half_open_arc": 47,
+        "nonbirth_near": 1240,
+        "ordered_near": 2600,
+        "points": 64
+      },
+      "zero_continuation": {
+        "max_half_open_arc": 64,
+        "ordered_near": 4096,
+        "points": 64
+      }
+    }
+  },
+  "surrogate_q": 8,
+  "ternary_reset_count": 85,
+  "verified_last": 255
+}

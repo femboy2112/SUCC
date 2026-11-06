@@ -1,0 +1,26 @@
+test_all_4_classes_sign_rules_through_100_cycles (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_all_4_classes_sign_rules_through_100_cycles) ... ok
+test_changed_seed_with_p_denominator_breaks_source_selected_pulse (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_changed_seed_with_p_denominator_breaks_source_selected_pulse) ... ok
+test_computed_conductor_and_reduced_state_independent (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_computed_conductor_and_reduced_state_independent) ... ok
+test_dual_source_positive_and_exact_zero_remainder (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_dual_source_positive_and_exact_zero_remainder) ... ok
+test_exact_self_shadow_and_dual_shadow (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_exact_self_shadow_and_dual_shadow) ... ok
+test_expected_exceptional_small_primes_not_swept_under_rug (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_expected_exceptional_small_primes_not_swept_under_rug) ... ok
+test_fake_legendre_sign_breaks_p5 (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_fake_legendre_sign_breaks_p5) ... ok
+test_first_event_tables (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_first_event_tables) ... ok
+test_fresh_entire_p_survival_windows (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_fresh_entire_p_survival_windows) ... ok
+test_full_shell_finite_field_echo_directly_from_original_poles (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_full_shell_finite_field_echo_directly_from_original_poles) ... ok
+test_mutation_of_pole_breaks_self_shadow (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_mutation_of_pole_breaks_self_shadow) ... ok
+test_original_four_signed_source_independent_polynomial (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_original_four_signed_source_independent_polynomial) ... ok
+test_p2_regime_enforced (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_p2_regime_enforced) ... ok
+test_pi_null_integral_algebraic_derivative (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_pi_null_integral_algebraic_derivative) ... ok
+test_pulse_classes_start_and_finish_are_source_faithful (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_pulse_classes_start_and_finish_are_source_faithful) ... ok
+test_sharp_all_N_harmonic_null_defect (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_sharp_all_N_harmonic_null_defect) ... ok
+test_survival_with_named_finite_exceptional_primes (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_survival_with_named_finite_exceptional_primes) ... ok
+test_universal_modular_formula_moderate_primes (test_frobenius_prime_saturation.FrobeniusTheoremTests.test_universal_modular_formula_moderate_primes) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.843s
+
+OK
+SYMBOLIC_FROBENIUS_PRIME_PASS {'symbolic_original_pole': True, 'global_dual_null_exact_derivative': True, 'all_four_full_shell_symbolic_recurrences': True, 'dual_source_leading_asymptotics': True}
+ORIGINAL_BBP_FROBENIUS_RECEIPT_REPLAY_PASS
+COMPILEALL_PASS

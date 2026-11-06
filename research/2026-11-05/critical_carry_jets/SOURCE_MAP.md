@@ -1,0 +1,11 @@
+# Source map / independent methods / authority
+
+- **Exact parent:** SUCC #520 at dad940dc69ae02f71119e8fbb908cca98e6e0846, and its ancestor #518. Four signed BBP poles and U0=0 remain unchanged. Prior #520 AC-01–AC-04 showed rare corrections at FIXED m and a coherent same-forcing obstruction; this branch quantifies m~2log16 A and exact high-frequency moving windows.
+- **Inherited radial branch:** #507/#509/#511 genuine zero-period radial source Z_n>0, Z_n~1/(32n), finite tap identities and source jet geometry. The radial-null deformation is source-specific but shares provenance; not an independent witness of normality.
+- **Inherited fixed-radius kernel:** #520 Delta RC-01–RC-04 provides smooth logarithmic energy and the finite K=2A seed cut. This branch identifies its characteristic-kernel/observer-zero meaning, radial source derivatives and a sharp scale-transport counterexample.
+- **Classical mathematics:** Fourier character orthogonality on T, Poisson smoothing, characteristic kernel mean embeddings (MMD), Fourier-series covariance, finite rational threshold partition, distributional derivative of a step, and source-labelled tangent/jet structure. These are known tools with new SUCC-specific formulas; no worldwide novelty claim.
+- **Common-source no-go:** the source tail \(T_n\) gauges away forcing in an enlarged completed-sequence category; prior SUCC rational-time weighted residue obstruction is a different category, not a contradiction.
+- **Literature:** Bailey–Crandall, *On the Random Character of Fundamental Constant Expansions* (2001) https://doi.org/10.1080/10586458.2001.10504441 ; Lagarias (2001) https://doi.org/10.1080/10586458.2001.10504456 ; Cockett–Cruttwell tangent structure https://www.reluctantm.com/gcruttw/publications/sman.pdf ; characteristic kernel embedding https://www.cs.cmu.edu/~arthurg/papers/nips09_mmd.pdf .
+- **Identity of source time and observer depth:** n chronological BBP steps; m radix-16 digit blocks; r fixed analytic observation-radius; λ radial-null SOURCE deformation; S Haar-randomized initial seed in ensemble theorems; literal s=0 is one selected deterministic orbit. Do not exchange them or their limits.
+
+No new real physics, RH signed Weil positivity, or source-selected π-normality theorem is claimed.

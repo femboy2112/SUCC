@@ -1,0 +1,122 @@
+{
+  "operation": "Observational Yoneda x source circle x hex-cell collision pressure",
+  "parent_sha": "4243b6c5dda90d49969c62f99b3f3aae73300ebe",
+  "parent_pr": 514,
+  "source": "genuine four signed BBP poles, literal U_0=0",
+  "original_taps": [
+    "4",
+    "0",
+    "0",
+    "-2",
+    "-1",
+    "-1",
+    "0",
+    "0"
+  ],
+  "angular_taps": [
+    "2",
+    "2",
+    "1",
+    "0",
+    "-1/2",
+    "-1/2",
+    "-1/4",
+    "0"
+  ],
+  "radial_taps": [
+    "2",
+    "-2",
+    "-1",
+    "-2",
+    "-1/2",
+    "-1/2",
+    "1/4",
+    "0"
+  ],
+  "source_bound": "sum r(n)< 47/15 + 1920/2457 < 4; analytic all-n proof",
+  "fresh_preregistered_epochs": [
+    96,
+    192,
+    384
+  ],
+  "pressures_exact": {
+    "96": {
+      "1": "347/288",
+      "2": "11/3",
+      "3": "136/3"
+    },
+    "192": {
+      "1": "599/576",
+      "2": "9/4",
+      "3": "68/3"
+    },
+    "384": {
+      "1": "607/576",
+      "2": "491/288",
+      "3": "71/6"
+    }
+  },
+  "wrong_seed_p_m_in_finite_epochs": {
+    "1": "16",
+    "2": "256",
+    "3": "4096"
+  },
+  "periodic_completions": [
+    {
+      "p": 3,
+      "beta_denominator": 1365,
+      "upper_abs_seed_approx": 0.000012544512365740408
+    },
+    {
+      "p": 5,
+      "beta_denominator": 31775,
+      "upper_abs_seed_approx": 2.096141142410546e-7
+    },
+    {
+      "p": 7,
+      "beta_denominator": 268435455,
+      "upper_abs_seed_approx": 1.255197811733421e-9
+    },
+    {
+      "p": 9,
+      "beta_denominator": 68719476735,
+      "upper_abs_seed_approx": 4.739113759633033e-12
+    }
+  ],
+  "control_pressure": {
+    "uniform_roots_at_matching_resolution": "1",
+    "uniform_half_circle_at_matching_resolution": "2, but not T invariant",
+    "biased_bernoulli_invariant_measure": "(64/15)^m, diverges",
+    "finite_uniform_16_point_set_at_m1_m2_m3": [
+      "1",
+      "16",
+      "256"
+    ]
+  },
+  "executed_tests": {
+    "methods": 15,
+    "failures": 0,
+    "errors": 0,
+    "locally_executed_git_blob_sha": "05937ba6bcbdf1a2ad4da8e9d164a88d8e0463dd",
+    "sha256": "50404c300bab397177950eec37640a0765901b89bd09872aa4a6d2a43f428d74",
+    "log_sha256": "cecc2d5c2bd436ee17b49126490d42860e5cbd46c1b5cb2e90815816e5a88f54",
+    "committed_blob_verified": true
+  },
+  "independent_probe": {
+    "passed": true,
+    "locally_executed_git_blob_sha": "f21a158a10b674dfc954691a5851738dcc3d81b0",
+    "sha256": "e552dc1c8f4633e3b5d3a5cc226f5c979e50540add0af2bcfdff19439df0c924",
+    "log_sha256": "a3515f1d22b6b020159da47798cee76a8981d2a8a9700f333450addc73ec5b73",
+    "committed_blob_verified": true
+  },
+  "conditional_paper_theorem": "If limsup_N 16^m sum_k p_N,m,k^2 <= C for all fixed m with one finite C, then authentic circle orbit equidistributes by L2 regularity and asymptotic ×16 invariance",
+  "unproved": [
+    "authentic zero-seed uniform all-depth pressure bound",
+    "original fixed-h Weyl",
+    "original Fekete lower bound",
+    "base16 normality of pi",
+    "new Lean kernel proof",
+    "external referee",
+    "hosted exact-head full-suite success"
+  ]
+}
