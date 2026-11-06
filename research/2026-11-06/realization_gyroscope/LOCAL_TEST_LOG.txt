@@ -1,0 +1,22 @@
+test_original_poles_and_first_value (test_gyroscope.TestAuthenticSource.test_original_poles_and_first_value) ... ok
+test_source_recurrence_exact_selected_seed (test_gyroscope.TestAuthenticSource.test_source_recurrence_exact_selected_seed) ... ok
+test_tail_positive_bounds_and_nested_enclosures (test_gyroscope.TestAuthenticSource.test_tail_positive_bounds_and_nested_enclosures) ... ok
+test_tail_shift_identity_in_intervals (test_gyroscope.TestAuthenticSource.test_tail_shift_identity_in_intervals) ... ok
+test_four_binary_bits_exactly_one_hex_digit (test_gyroscope.TestEncodingAndGauge.test_four_binary_bits_exactly_one_hex_digit) ... ok
+test_four_phase_x16_is_x2_without_approximation (test_gyroscope.TestEncodingAndGauge.test_four_phase_x16_is_x2_without_approximation) ... ok
+test_joint_harmonic_rejects_correct_marginals_wrong_joint (test_gyroscope.TestEncodingAndGauge.test_joint_harmonic_rejects_correct_marginals_wrong_joint) ... ok
+test_same_carrier_non_normal_completion_both_encodings (test_gyroscope.TestEncodingAndGauge.test_same_carrier_non_normal_completion_both_encodings) ... ok
+test_staircase_irrational_chart_has_sublinear_switches (test_gyroscope.TestEncodingAndGauge.test_staircase_irrational_chart_has_sublinear_switches) ... ok
+test_time_dependent_chart_can_fake_uniform_first_digit (test_gyroscope.TestEncodingAndGauge.test_time_dependent_chart_can_fake_uniform_first_digit) ... ok
+test_arbitrary_adaptive_charts_do_not_change_decoded_source (test_gyroscope.TestJointGaugeCertificate.test_arbitrary_adaptive_charts_do_not_change_decoded_source) ... ok
+test_gauge_log_recovers_constant_causal_state (test_gyroscope.TestJointGaugeCertificate.test_gauge_log_recovers_constant_causal_state) ... ok
+test_incorrect_action_log_detectably_changes_decoding (test_gyroscope.TestJointGaugeCertificate.test_incorrect_action_log_detectably_changes_decoding) ... ok
+test_carrier_internal_model_self_reproduces (test_gyroscope.TestRealizedObserver.test_carrier_internal_model_self_reproduces) ... ok
+test_intent_changes_observation_not_arithmetic (test_gyroscope.TestRealizedObserver.test_intent_changes_observation_not_arithmetic) ... ok
+test_projection_discarding_model_does_not_close (test_gyroscope.TestRealizedObserver.test_projection_discarding_model_does_not_close) ... ok
+test_wrong_source_fails_while_full_replay_commutes (test_gyroscope.TestRealizedObserver.test_wrong_source_fails_while_full_replay_commutes) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.087s
+
+OK
