@@ -1,0 +1,266 @@
+{
+  "label": "OBSERVED FINITE, EXACT p-adic arithmetic and FLOAT-only spectral diagnostics",
+  "original_source": "four signed BBP poles",
+  "literal_U0": "0",
+  "preregistrations": [
+    "PREREGISTRATION.md",
+    "PREREGISTRATION_PRIME_EXTENSION.md"
+  ],
+  "band_2n_to_8n": {
+    "selected_primes_checked": 1116,
+    "holdouts": [
+      {
+        "n": 161,
+        "prime_count": 98,
+        "two_pole_collisions": 7,
+        "forced_product_bits": 919,
+        "actual_denominator_bits": 1401,
+        "forced_log_over_n_float": 3.9530231,
+        "actual_log_over_n_float": 6.02876273
+      },
+      {
+        "n": 173,
+        "prime_count": 106,
+        "two_pole_collisions": 9,
+        "forced_product_bits": 1002,
+        "actual_denominator_bits": 1505,
+        "forced_log_over_n_float": 4.0113839,
+        "actual_log_over_n_float": 6.02694384
+      },
+      {
+        "n": 199,
+        "prime_count": 112,
+        "two_pole_collisions": 12,
+        "forced_product_bits": 1079,
+        "actual_denominator_bits": 1668,
+        "forced_log_over_n_float": 3.75593286,
+        "actual_log_over_n_float": 5.80890479
+      },
+      {
+        "n": 211,
+        "prime_count": 120,
+        "two_pole_collisions": 12,
+        "forced_product_bits": 1168,
+        "actual_denominator_bits": 1798,
+        "forced_log_over_n_float": 3.83578838,
+        "actual_log_over_n_float": 5.90376547
+      },
+      {
+        "n": 257,
+        "prime_count": 141,
+        "two_pole_collisions": 13,
+        "forced_product_bits": 1413,
+        "actual_denominator_bits": 2183,
+        "forced_log_over_n_float": 3.80952219,
+        "actual_log_over_n_float": 5.88540723
+      },
+      {
+        "n": 293,
+        "prime_count": 163,
+        "two_pole_collisions": 15,
+        "forced_product_bits": 1664,
+        "actual_denominator_bits": 2528,
+        "forced_log_over_n_float": 3.93538851,
+        "actual_log_over_n_float": 5.97972852
+      },
+      {
+        "n": 317,
+        "prime_count": 170,
+        "two_pole_collisions": 15,
+        "forced_product_bits": 1757,
+        "actual_denominator_bits": 2702,
+        "forced_log_over_n_float": 3.84009507,
+        "actual_log_over_n_float": 5.90681718
+      },
+      {
+        "n": 383,
+        "prime_count": 206,
+        "two_pole_collisions": 18,
+        "forced_product_bits": 2187,
+        "actual_denominator_bits": 3342,
+        "forced_log_over_n_float": 3.95709083,
+        "actual_log_over_n_float": 6.0471402
+      }
+    ]
+  },
+  "full_band_n_to_8n": {
+    "selected_primes_checked": 1847,
+    "fresh_holdouts": [
+      {
+        "n": 389,
+        "prime_count": 267,
+        "band_n_2n": 60,
+        "band_2n_4n": 108,
+        "band_4n_8n": 99,
+        "two_pole_collisions": 19,
+        "forced_product_bits": 2751,
+        "actual_denominator_bits": 3376,
+        "forced_log_over_n_float": 4.901466172,
+        "actual_log_over_n_float": 6.014071571
+      },
+      {
+        "n": 401,
+        "prime_count": 275,
+        "band_n_2n": 60,
+        "band_2n_4n": 113,
+        "band_4n_8n": 102,
+        "two_pole_collisions": 21,
+        "forced_product_bits": 2845,
+        "actual_denominator_bits": 3471,
+        "forced_log_over_n_float": 4.917100655,
+        "actual_log_over_n_float": 5.998450758
+      },
+      {
+        "n": 433,
+        "prime_count": 293,
+        "band_n_2n": 66,
+        "band_2n_4n": 119,
+        "band_4n_8n": 108,
+        "two_pole_collisions": 20,
+        "forced_product_bits": 3064,
+        "actual_denominator_bits": 3745,
+        "forced_log_over_n_float": 4.903373757,
+        "actual_log_over_n_float": 5.994654275
+      },
+      {
+        "n": 463,
+        "prime_count": 310,
+        "band_n_2n": 67,
+        "band_2n_4n": 126,
+        "band_4n_8n": 117,
+        "two_pole_collisions": 20,
+        "forced_product_bits": 3274,
+        "actual_denominator_bits": 4019,
+        "forced_log_over_n_float": 4.901033903,
+        "actual_log_over_n_float": 6.016489687
+      },
+      {
+        "n": 509,
+        "prime_count": 336,
+        "band_n_2n": 73,
+        "band_2n_4n": 138,
+        "band_4n_8n": 125,
+        "two_pole_collisions": 23,
+        "forced_product_bits": 3593,
+        "actual_denominator_bits": 4381,
+        "forced_log_over_n_float": 4.892382975,
+        "actual_log_over_n_float": 5.965023954
+      },
+      {
+        "n": 557,
+        "prime_count": 366,
+        "band_n_2n": 84,
+        "band_2n_4n": 145,
+        "band_4n_8n": 137,
+        "two_pole_collisions": 25,
+        "forced_product_bits": 3959,
+        "actual_denominator_bits": 4801,
+        "forced_log_over_n_float": 4.925695192,
+        "actual_log_over_n_float": 5.973265827
+      }
+    ],
+    "piecewise_coefficients": {
+      "7/2": 79,
+      "33/10": 56,
+      "47/15": 64,
+      "-19/6": 178,
+      "-65/21": 33
+    }
+  },
+  "exception_p19": [
+    {
+      "n": 10,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 11,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 12,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 13,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 14,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 15,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 16,
+      "pU_mod19": 0,
+      "denominator_divisible_by_19": false
+    },
+    {
+      "n": 17,
+      "pU_mod19": 8,
+      "denominator_divisible_by_19": true
+    },
+    {
+      "n": 18,
+      "pU_mod19": 14,
+      "denominator_divisible_by_19": true
+    }
+  ],
+  "spectral_h1_float": [
+    {
+      "N": 128,
+      "h": 1,
+      "selected_weyl_abs_squared_float": 0.005372636436,
+      "gap_sum_float": 3.653223291,
+      "gaps_at_least_quarter": 7,
+      "levels": 7
+    },
+    {
+      "N": 256,
+      "h": 1,
+      "selected_weyl_abs_squared_float": 0.000400658382,
+      "gap_sum_float": 4.70199523,
+      "gaps_at_least_quarter": 8,
+      "levels": 8
+    },
+    {
+      "N": 512,
+      "h": 1,
+      "selected_weyl_abs_squared_float": 0.002210146797,
+      "gap_sum_float": 4.028595074,
+      "gaps_at_least_quarter": 6,
+      "levels": 9
+    },
+    {
+      "N": 1024,
+      "h": 1,
+      "selected_weyl_abs_squared_float": 0.001823286205,
+      "gap_sum_float": 4.615292307,
+      "gaps_at_least_quarter": 9,
+      "levels": 10
+    }
+  ],
+  "shadow_at_N1024_h1": {
+    "weyl_abs_squared_float": 0.999975555832,
+    "gap_sum_float": 0.000024444
+  },
+  "periodic_beta_1_17_at_N1024_h1": {
+    "weyl_abs_squared_float": 0.86950445861,
+    "gap_sum_float": 0.130495541
+  },
+  "full_replay": "python prime_certificate.py; python full_prime.py; python spectral_probe.py",
+  "analytic_lower_limit": "liminf log(d_n)/n >= 5, relies on unconditional PNT in AP",
+  "analytic_upper_limit": "limsup log(d_n)/n <= 8, relies on unconditional PNT",
+  "original_source_selected_real_Poisson_contraction": "OPEN",
+  "pi_base16_normality": "OPEN",
+  "RH": "OPEN",
+  "scope": "Compact archive of deterministic checks; scripts generate detailed raw JSON. Log ratios and spectral phases are float diagnostics, NOT certificates. All p-adic principal-part comparisons exact."
+}
