@@ -1,0 +1,45 @@
+{
+  "algorithm": "exact Fraction numeric data SHA256 canonical-json (sorted keys compact separators)",
+  "base_main_sha": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+  "development_grid_not_blind_holdouts": true,
+  "instrument": "AV source-specific lag alias valve",
+  "rows": [
+    {
+      "A": 8,
+      "authentic_J_approx": "1.0892459967",
+      "coherent_wrong_seed_J_approx": "1.9997744449",
+      "exact_fraction_sha256": "2aa35b8d86c3d19f4dd950e02530a1454038f5133ecee987e488c6b4c97d8c40",
+      "q": 2,
+      "source_flux_sign": "positive",
+      "terminal_depth": 32
+    },
+    {
+      "A": 12,
+      "authentic_J_approx": "1.4297179981",
+      "coherent_wrong_seed_J_approx": "3.9995990521",
+      "exact_fraction_sha256": "f2444aa3f2115ef985cd2aaa74c256dbecb34f2810edddb6f71b1d955a0f66b7",
+      "q": 4,
+      "source_flux_sign": "positive",
+      "terminal_depth": 49
+    },
+    {
+      "A": 16,
+      "authentic_J_approx": "1.3304390117",
+      "coherent_wrong_seed_J_approx": "3.9997747254",
+      "exact_fraction_sha256": "0e4da44ab096a5861b9b87412e6d17f0b584d6b2c0109bbb1db13832e6b49244",
+      "q": 4,
+      "source_flux_sign": "positive",
+      "terminal_depth": 62
+    },
+    {
+      "A": 24,
+      "authentic_J_approx": "1.4248161981",
+      "coherent_wrong_seed_J_approx": "7.9996008925",
+      "exact_fraction_sha256": "ecc5e2ccb6351e38d9bc2cb8659ef05394004f6fa0639b840b331bb34abb708a",
+      "q": 8,
+      "source_flux_sign": "negative",
+      "terminal_depth": 99
+    }
+  ],
+  "status": "finite exact checks only; NOT normality"
+}
