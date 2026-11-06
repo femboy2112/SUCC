@@ -1,0 +1,152 @@
+{
+  "A_holdouts": [
+    2048,
+    4096
+  ],
+  "fourier_h_truncation": 12,
+  "infinite_source_contraction": "OPEN",
+  "normality": "OPEN",
+  "preregistration_before_new_holdouts": true,
+  "rows": [
+    {
+      "A": 2048,
+      "Q": 32,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 0.907640219999,
+      "h1_prefix_shell_sup_float": 0.012073771696,
+      "h1_to_h3_avg_R_float": [
+        0.011520628855,
+        0.010042737088,
+        0.010024933561
+      ],
+      "kind": "original_zero_four_pole",
+      "poisson_half_h1_to_h12_float": 0.021933033343,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 2048,
+      "Q": 32,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 3.05468733087,
+      "h1_prefix_shell_sup_float": 0.999996940584,
+      "h1_to_h3_avg_R_float": [
+        0.999991599064,
+        0.999966589857,
+        0.999925548531
+      ],
+      "kind": "isometric_nonnormal_H_shadow",
+      "poisson_half_h1_to_h12_float": 1.999415881886,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 2048,
+      "Q": 32,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 3.054695097403,
+      "h1_prefix_shell_sup_float": 0.932472246071,
+      "h1_to_h3_avg_R_float": [
+        1,
+        1,
+        1
+      ],
+      "kind": "periodic_rational_beta_1_17",
+      "poisson_half_h1_to_h12_float": 1.99951171875,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 2048,
+      "Q": 32,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 0.851509681938,
+      "h1_prefix_shell_sup_float": 0.045403955724,
+      "h1_to_h3_avg_R_float": [
+        0.008692791905,
+        0.008572992581,
+        0.010574506198
+      ],
+      "kind": "synthetic_iid_real_seed",
+      "poisson_half_h1_to_h12_float": 0.018430203463,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 4096,
+      "Q": 64,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 0.880019171875,
+      "h1_prefix_shell_sup_float": 0.015613792091,
+      "h1_to_h3_avg_R_float": [
+        0.010062817062,
+        0.012801625335,
+        0.010136295478
+      ],
+      "kind": "original_zero_four_pole",
+      "poisson_half_h1_to_h12_float": 0.021751152481,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 4096,
+      "Q": 64,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 3.054691214134,
+      "h1_prefix_shell_sup_float": 0.999998469969,
+      "h1_to_h3_avg_R_float": [
+        0.999995799524,
+        0.999983294894,
+        0.999962774191
+      ],
+      "kind": "isometric_nonnormal_H_shadow",
+      "poisson_half_h1_to_h12_float": 1.999463800223,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 4096,
+      "Q": 64,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 3.054695097403,
+      "h1_prefix_shell_sup_float": 0.932472233573,
+      "h1_to_h3_avg_R_float": [
+        1,
+        1,
+        1
+      ],
+      "kind": "periodic_rational_beta_1_17",
+      "poisson_half_h1_to_h12_float": 1.99951171875,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    },
+    {
+      "A": 4096,
+      "Q": 64,
+      "M_count": 65,
+      "M_max": 128,
+      "M_min": 64,
+      "h1_gluing_bound_float": 0.918939058736,
+      "h1_prefix_shell_sup_float": 0.01961211723,
+      "h1_to_h3_avg_R_float": [
+        0.012155369845,
+        0.011135642219,
+        0.009286870402
+      ],
+      "kind": "synthetic_iid_real_seed",
+      "poisson_half_h1_to_h12_float": 0.023122515807,
+      "uncomputed_poisson_tail_at_most": "1/2048"
+    }
+  ],
+  "scope": "OBSERVED FINITE FLOAT DIAGNOSTICS only",
+  "source_original": true,
+  "source_seed": "literal U0=0",
+  "t_poisson": "1/2"
+}
