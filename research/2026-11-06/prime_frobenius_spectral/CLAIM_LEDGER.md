@@ -17,3 +17,12 @@
 **Source map σ** authentic for the selected tests, fake controls explicitly separated. **Path φ** new all-n denominator and virtual-Galois theorem, original-real signed transfer not constructible. **Probe μ** all exact Fraction/mod-p and independent pole enumerator; Fourier contrasts floating and finite. **Coherence** finite local residue checks corroborate algebra but are not independent external referee. **ρ coupling** no arithmetic identity is treated as proof of user's conceptual triangle. No combined "truth score."
 
 Full [THEOREMS.md](THEOREMS.md), raw regenerators and [VALIDATION.md](VALIDATION.md).
+
+## Additional Galois selection decomposition (same research branch)
+
+| ID | Status | Proof and boundary |
+|---|---|---|
+| PF-09a | **PROVED LOCAL** | For each authentic reduced U_n=a_n/d_n, finite character Fourier inversion on G_n=(Z/d_n)^× gives the *selected* phase e(hU_n)=c_(d_n)(h)/φ(d_n)+Σ_(χ≠1) \hat F_(n,h)(χ), \hat F normalized twisted Gauss sums. The evaluation at u=1 is the declared choice of complex embedding. |
+| PF-09b | **PROVED LOCAL** | Parseval shows Σ_(χ≠1)|\hat F|² =1−|c_d(h)/φ(d)|²→1. Virtual Haar averaging discards an asymptotically full-L2 nontrivial sector; it cannot establish selected real Haar. |
+| PF-09c | **PROVED LOCAL reduction / OPEN cancellation** | For each fixed h, exponential d_n growth makes the time-summed *trivial* Galois sector absolutely summable; original W_N(h) equals N^-1 Σ_(n<N)Σ_(χ≠1)\hat F_(n,h)(χ)+O_h(1/N). Same for completed π orbit by summable BBP real tail. Vanishing of the remaining sum for every h is **EQUIVALENT to π base16 normality**, not proved. |
+| PF-09d | **OBSERVED FINITE** | Authentic U1=47/15 yields trivial mean 1/8 and nontrivial sector energy 63/64 at h1; explicit character-table oracles G15=C2×C4, primes 7,11,17 for several h plus non-coprime numerator mutation. Five new focused tests PASS, total 12/12 PASS, floating phases not analytic interval proofs. |
