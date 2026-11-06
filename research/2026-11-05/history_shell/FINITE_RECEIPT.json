@@ -11,7 +11,7 @@
     ],
     "original_initial_state": "U_0=0",
     "source_arithmetic": "unwrapped exact rational with literal integer carries",
-    "all_n_source_field": "r_o(n)=16U_(n-1)-U_n with sign convention U_n=16U_(n-1)+r_o(n)"
+    "all_n_source_field": "r_o(n)=U_n-16U_(n-1), exactly from U_n=16U_(n-1)+r_o(n)"
   },
   "math_status": {
     "exact_results": [
