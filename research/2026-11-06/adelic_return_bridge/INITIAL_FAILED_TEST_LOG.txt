@@ -1,0 +1,27 @@
+test_2adic_permutations_exact (test_bridge.CrossPlaceTests.test_2adic_permutations_exact) ... ok
+test_2adic_source_completion_and_literal_zero (test_bridge.CrossPlaceTests.test_2adic_source_completion_and_literal_zero) ... ok
+test_carry_omission_changes_phase_reconstruction (test_bridge.CrossPlaceTests.test_carry_omission_changes_phase_reconstruction) ... FAIL
+test_carry_recent_window_exact (test_bridge.CrossPlaceTests.test_carry_recent_window_exact) ... ok
+test_error_bound_for_tail_2adic_close_returns (test_bridge.CrossPlaceTests.test_error_bound_for_tail_2adic_close_returns) ... ok
+test_known_denominator_reconstruction (test_bridge.CrossPlaceTests.test_known_denominator_reconstruction) ... ok
+test_original_four_signed_poles (test_bridge.CrossPlaceTests.test_original_four_signed_poles) ... ok
+test_periodic_2power_factor_calibration (test_bridge.CrossPlaceTests.test_periodic_2power_factor_calibration) ... ok
+test_rational_ambiguity_below_denominator_bit_depth (test_bridge.CrossPlaceTests.test_rational_ambiguity_below_denominator_bit_depth) ... ok
+test_shadow_padic_isometry_nonhaar_real (test_bridge.CrossPlaceTests.test_shadow_padic_isometry_nonhaar_real) ... ok
+test_surrogate_holdout_reports_not_proof (test_bridge.CrossPlaceTests.test_surrogate_holdout_reports_not_proof) ... ok
+test_unwrapped_recurrence_independent_carry (test_bridge.CrossPlaceTests.test_unwrapped_recurrence_independent_carry) ... ok
+test_witness_pre_registered_k9_10_11 (test_bridge.CrossPlaceTests.test_witness_pre_registered_k9_10_11) ... ok
+
+======================================================================
+FAIL: test_carry_omission_changes_phase_reconstruction (test_bridge.CrossPlaceTests.test_carry_omission_changes_phase_reconstruction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_crossplace_20261106/test_bridge.py", line 70, in test_carry_omission_changes_phase_reconstruction
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.955s
+
+FAILED (failures=1)
