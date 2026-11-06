@@ -1,0 +1,148 @@
+{
+  "scope": "CERTIFIED FINITE exact Fraction Fejer rational majorant; FLOAT diagnostics separately",
+  "source": "original four-pole BBP r(n), literal U0=0",
+  "prereg_sha": "1714487e01759cf0cc43afca3b9454af04cba261",
+  "all_N_collision_bound": "OPEN",
+  "pi_normality": "OPEN",
+  "rational_upper_caps": [
+    {
+      "N": 32,
+      "H": 8,
+      "num": 2286406686,
+      "den": 1024000000
+    },
+    {
+      "N": 64,
+      "H": 8,
+      "num": 8695817738,
+      "den": 4096000000
+    },
+    {
+      "N": 64,
+      "H": 16,
+      "num": 9721649446,
+      "den": 4096000000
+    },
+    {
+      "N": 128,
+      "H": 16,
+      "num": 33410332984,
+      "den": 16384000000
+    },
+    {
+      "N": 128,
+      "H": 32,
+      "num": 34911219490,
+      "den": 16384000000
+    },
+    {
+      "N": 128,
+      "H": 64,
+      "num": 37824648298,
+      "den": 16384000000
+    },
+    {
+      "N": 128,
+      "H": 128,
+      "num": 46444121280,
+      "den": 16384000000
+    },
+    {
+      "N": 256,
+      "H": 256,
+      "num": 190901485994,
+      "den": 65536000000
+    },
+    {
+      "N": 512,
+      "H": 512,
+      "num": 769526344650,
+      "den": 262144000000
+    }
+  ],
+  "exact_near_pair_count": {
+    "criterion": "distance on circle <= 1/N, includes ordered diagonal",
+    "N128": 356,
+    "N256": 742,
+    "N512": 1466,
+    "control_N128_periodic_1over17": 8192,
+    "control_N128_Hshadow": 16130
+  },
+  "float_energy_diagnostics": [
+    {
+      "N": 32,
+      "H": 8,
+      "raw": 1.34782645909,
+      "completed": 1.41694435162
+    },
+    {
+      "N": 64,
+      "H": 8,
+      "raw": 1.22229811379,
+      "completed": 1.24220493746
+    },
+    {
+      "N": 64,
+      "H": 16,
+      "raw": 1.37277455179,
+      "completed": 1.40674246571
+    },
+    {
+      "N": 128,
+      "H": 16,
+      "raw": 1.0880734639,
+      "completed": 1.09847038802
+    },
+    {
+      "N": 128,
+      "H": 32,
+      "raw": 1.16377731667,
+      "completed": 1.1793965246
+    },
+    {
+      "N": 128,
+      "H": 64,
+      "raw": 1.40324097769,
+      "completed": 1.4157995867
+    },
+    {
+      "N": 128,
+      "H": 128,
+      "raw": 1.952909109,
+      "completed": 1.94677828398
+    },
+    {
+      "N": 256,
+      "H": 256,
+      "raw": 1.96696122939,
+      "completed": 1.95178421572
+    }
+  ],
+  "hostile_float_energy": [
+    {
+      "N": 128,
+      "H": 128,
+      "kind": "Hshadow",
+      "value": 125.12262885
+    },
+    {
+      "N": 128,
+      "H": 128,
+      "kind": "periodic_beta1over17",
+      "value": 64.508231319
+    },
+    {
+      "N": 256,
+      "H": 256,
+      "kind": "Hshadow",
+      "value": 251.785192762
+    },
+    {
+      "N": 256,
+      "H": 256,
+      "kind": "periodic_beta1over17",
+      "value": 128.506766572
+    }
+  ],
+  "warning": "Exact caps use Fraction + rigorous sin envelope; Fourier values use float; no infinite bound inferred."
+}
