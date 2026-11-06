@@ -63,5 +63,4 @@ def run():
             'pi_normality':'OPEN','rows':rows,
             'naive_one_step_failures':one_step_failures(original(512))}
 
-
 if __name__=='__main__':print(json.dumps(run(),indent=2))
