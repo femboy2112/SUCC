@@ -109,4 +109,24 @@ See [`research/2026-11-05/main_xx_forge/README.md`](../research/2026-11-05/main_
 
 ## 7. Validation receipts at the integration head
 
-(Recorded after the final run; see the commit that adds this section.)
+**Validated content head:** `85b6a912d496307d7012c853062595b4720256de`. The final integration head equals this tree plus this section only. A document cannot carry the CI result of its own commit, so hosted CI on the final head is recorded on PR #523 and in the merge commit, and was required green before merge.
+
+Local runs used the compliant venv (mpmath 1.3.0), `PYTHONPATH=<worktree>`, and no `python -I`. The tree was clean before and after every run.
+
+| Gate | Command | Result at `85b6a912` |
+|---|---|---|
+| Provenance | `python scripts/verify_provenance.py` | `SOURCE_PROVENANCE_VERIFIED`; 72 items; source commit `ba075348b7bcc66d938b3e0ca96c26e95bba340a` |
+| Full suite | `python -m unittest discover -s tests -p 'test_*.py'` | `Ran 12147 tests in 1371.489s` — **OK**, exit 0. HEAD was identical at start and end, with 0 dirty paths. |
+| Observer probe | `python scripts/observer_foundations_probe.py` | exit 0 |
+| Ordinal probe | `python scripts/ordinal_succ_report_probe.py` | exit 0 |
+| Focused | `python -m unittest tests.test_relative_zero_scale tests.test_selected_orbit tests.test_main_xx_forge tests.test_prime_form_heat` | `Ran 117 tests` — OK |
+| P0 hostile order | `python -m unittest tests.test_prime_form_heat tests.test_relative_zero_scale` | `Ran 69 tests` — OK. Before the repair, this order reproduced the CI failure. |
+| Admissibility law | `research/2026-11-05/main_xx_forge/front_b/admissibility_law.py` | `CERTIFIED-FINITE`, `d∈[2,200]`, 0 exceptions |
+| Front receipts | rerun byte-identically | A `b9df1aa66c4c50a3…dd37c4`; B `8e053b8a48dc9067…ae3f`; C `d32549df2ec9ad66…d73e` (sha256) |
+| Lean | `python scripts/check_selected_branch_lean.py` | `KERNEL_CHECKED`: 10 theorems; 4 paired mutant controls, all exit 1 as required |
+| Claim catalog | `python scripts/build_math_memory.py --check` | exit 0. Claim rows 2013, namespaces 177. Warnings stay at 170, unchanged from `main`. |
+| Whitespace | `git diff --check a673ec95...HEAD` | 6 lines, all inherited and pinned (§4) |
+| Frozen invariants | blob compare vs `main` | `IMPORT_MANIFEST.json` blob `a8805a8e…` unchanged; 0 `formal/` paths; 698 added and 7 modified paths (§4); 0 deleted |
+| Hosted CI | PR #523 at `85b6a912` | Every job passed, including `Python 3.10 mathematical and epistemic checks` and `Python 3.13 mathematical and epistemic checks` (run `42164161293`) |
+
+The suite's stderr contains `STALE/MISSING mathematics catalog: /tmp/…`. This is expected output from a negative test that runs on a temporary copy, and it appears identically in the earlier green runs.
