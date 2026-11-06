@@ -1,0 +1,48 @@
+[
+  {
+    "A": 127,
+    "status": "grid width guarantee unavailable",
+    "native_grid_bits": 512,
+    "span": 128,
+    "births": 32
+  },
+  {
+    "A": 251,
+    "births": 62,
+    "L": 2,
+    "m": 2,
+    "mesh": 8,
+    "interior": 97,
+    "native_grid_bits": 1046,
+    "seed_denominator_bits": 1046,
+    "energy_over_q_lower": "18376031043/127012032032",
+    "span": 252,
+    "tail_cutoff": 511
+  },
+  {
+    "A": 509,
+    "births": 115,
+    "L": 3,
+    "m": 2,
+    "mesh": 8,
+    "interior": 171,
+    "native_grid_bits": 2148,
+    "seed_denominator_bits": 2148,
+    "energy_over_q_lower": "234849296187/2147934865952",
+    "span": 511,
+    "tail_cutoff": 1028
+  },
+  {
+    "A": 1024,
+    "births": 216,
+    "L": 3,
+    "m": 2,
+    "mesh": 8,
+    "interior": 353,
+    "native_grid_bits": 4392,
+    "seed_denominator_bits": 4392,
+    "energy_over_q_lower": "1012630427967/8796093022208",
+    "span": 1026,
+    "tail_cutoff": 2058
+  }
+]

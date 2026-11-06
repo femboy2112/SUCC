@@ -1,0 +1,81 @@
+{
+  "RH": "OPEN",
+  "base_main_sha": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+  "development_grid_not_blind": true,
+  "instrument": "exact Fraction original source and Gamma alternating enclosures",
+  "name": "SUCC original four-pole Gamma-pigeonhole source pinning",
+  "pi_base16_normality": "OPEN",
+  "rows": [
+    {
+      "coarse_gamma_candidate_count_certified": 57,
+      "corrected_scaled_width": null,
+      "exact_fraction_record_sha256": "834877df82346668b50bc5c5d925429ffa31ec5f04cf7e15dde58c4726c6b50b",
+      "forcing_conductor_bits": 15,
+      "gamma_corrected_unique": false,
+      "n": 3,
+      "p": 17,
+      "state_conductor_bits": 20
+    },
+    {
+      "coarse_gamma_candidate_count_certified": 100,
+      "corrected_scaled_width": "0.951434356112",
+      "exact_fraction_record_sha256": "76ea39913d953db0f0d050ac9de3e668e6df279f8009fa48be1c96a2aefe1f24",
+      "forcing_conductor_bits": 19,
+      "gamma_corrected_unique": true,
+      "n": 6,
+      "p": 41,
+      "state_conductor_bits": 47
+    },
+    {
+      "coarse_gamma_candidate_count_certified": 159,
+      "corrected_scaled_width": "0.474330139548",
+      "exact_fraction_record_sha256": "e778b5e9fbf33c85e4fdc58314031623003a42681d89a8d88e60edf360c7b3fb",
+      "forcing_conductor_bits": 22,
+      "gamma_corrected_unique": true,
+      "n": 10,
+      "p": 73,
+      "state_conductor_bits": 74
+    },
+    {
+      "coarse_gamma_candidate_count_certified": 189,
+      "corrected_scaled_width": "0.378254986232",
+      "exact_fraction_record_sha256": "7d813d1854fd231664055b83531a24d95cfbd46e18cb510b2fac7c18a77992df",
+      "forcing_conductor_bits": 24,
+      "gamma_corrected_unique": true,
+      "n": 12,
+      "p": 89,
+      "state_conductor_bits": 93
+    },
+    {
+      "coarse_gamma_candidate_count_certified": 204,
+      "corrected_scaled_width": "0.343376396154",
+      "exact_fraction_record_sha256": "6c1e7e43c0c5623c81ad335f42da20e1f8a827692fdef24530c3900eaf48476e",
+      "forcing_conductor_bits": 24,
+      "gamma_corrected_unique": true,
+      "n": 13,
+      "p": 97,
+      "state_conductor_bits": 106
+    },
+    {
+      "coarse_gamma_candidate_count_certified": 234,
+      "corrected_scaled_width": "0.289822301376",
+      "exact_fraction_record_sha256": "af961ddafa46464e3019756876893b2f5d1041005c743882cc0c013e390c6fdd",
+      "forcing_conductor_bits": 25,
+      "gamma_corrected_unique": true,
+      "n": 15,
+      "p": 113,
+      "state_conductor_bits": 126
+    },
+    {
+      "coarse_gamma_candidate_count_certified": 279,
+      "corrected_scaled_width": "0.234777150164",
+      "exact_fraction_record_sha256": "8a211920ff6da7fafdffd74ecf13cb65d804f8128a602c62b5729788f3174ea5",
+      "forcing_conductor_bits": 26,
+      "gamma_corrected_unique": true,
+      "n": 18,
+      "p": 137,
+      "state_conductor_bits": 151
+    }
+  ],
+  "signed_weyl_gate": "OPEN"
+}

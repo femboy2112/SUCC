@@ -1,0 +1,53 @@
+{
+  "development_n": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    16,
+    32,
+    64,
+    127,
+    256
+  ],
+  "name": "SUCC critical coherent chirp: exact Fraction source tail",
+  "parent": "af5c7ba30ea57d725bd334310798357d50f12fce",
+  "pi_base16_normality": "OPEN",
+  "preregistered_holdout_n": [
+    137,
+    509,
+    911
+  ],
+  "rows": [
+    {
+      "exact_fraction_record_sha256": "449b61f285e8505d2d2febf79a27828e64bd28fbf5fd7ba171b9e56385ecfcf9",
+      "n": 137,
+      "n3_scaled_error_lower_bound_display": "0.013574817297",
+      "n3_scaled_error_upper_bound_display": "0.013574817297",
+      "source_oracles_equal": true,
+      "strict_tail_bound": true
+    },
+    {
+      "exact_fraction_record_sha256": "a08fce1c7f6f09735ff5ef9c10832f0c5dcfe1009d3e9a31bba69984961b86f9",
+      "n": 509,
+      "n3_scaled_error_lower_bound_display": "0.013645564222",
+      "n3_scaled_error_upper_bound_display": "0.013645564222",
+      "source_oracles_equal": true,
+      "strict_tail_bound": true
+    },
+    {
+      "exact_fraction_record_sha256": "0fb722799ab77c5541c2e424e8edcb5ea8e7c094cfb2c793f5e4c265ecd220d5",
+      "n": 911,
+      "n3_scaled_error_lower_bound_display": "0.013657157281",
+      "n3_scaled_error_upper_bound_display": "0.013657157281",
+      "source_oracles_equal": true,
+      "strict_tail_bound": true
+    }
+  ],
+  "status": "finite exact source check; coherent asymptotic paper proof; original zero-seed gate OPEN"
+}

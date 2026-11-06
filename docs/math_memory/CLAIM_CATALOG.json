@@ -637,6 +637,14 @@
       "title": "Lonely Runner campaign: research-local claim supplement"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "registered_namespaces": [
+        "MAIN_XX_FORGE"
+      ],
+      "sha256": "08e224c4ab1130bebce26888e7ace95860f27be9bb3b292c2ddb52cdd3f775c7",
+      "title": "Claim supplement — Operation Main XX proof forge (2026-11-05)"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_MAXIMAL_SOURCE_NOVELTY.md",
       "registered_namespaces": [
         "MAXIMAL_SOURCE_NOVELTY"
@@ -9480,6 +9488,166 @@
       "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
       "raw_table_row": "| LRN-15 | Every upper-half deletion pair and every inserted integer w>=n admits a rational time strictly separating every actual retained or inserted speed from all integers by 1/n | FORMALIZED: complete upper_half_one_insertion_hole export, seven new declarations; guarded kernel with false-radius control | Does not formalize the unrestricted cubic theorem or its classical classification dependency |",
       "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-01",
+      "key": "MXX-01",
+      "line": 9,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-01 | The critical carry bit is exactly `1[S_m(n+k)≤x_{n+d}<S_d(n)]` with `δ=S_d(n)-S_m(n+k)` (any seed, positive forcing, `S_d(n)<1`); gauge form with `z_j=\\{16^j(s+π/16)\\}` | PROVED LOCAL (PROVED) | CB-1/CB-1g; front_b/PROOFS.md; 591,175 + 118,235 exact cases |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-02",
+      "key": "MXX-02",
+      "line": 10,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-02 | Admissible ⟺ `A≥2^{2d-3}` ⟺ #521 CT-03 domain | TESTED MODEL (CERTIFIED-FINITE, `d≤200`) | CB-0; front_b/admissibility_law.py |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-03",
+      "key": "MXX-03",
+      "line": 11,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-03 | Frequency existence + lattice smallness of `J` ⟹ Haar; the converse holds | PROVED LOCAL (PROVED-CONDITIONAL; not π progress) | CB-2, Lemma 2.5 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-04",
+      "key": "MXX-04",
+      "line": 12,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-04 | Log-scale local stationarity (LS) + lattice smallness ⟹ normal | PROVED LOCAL (PROVED-CONDITIONAL) | CB-2′ |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-05",
+      "key": "MXX-05",
+      "line": 13,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-05 | A non-normal seed with the same forcing has `\\sup_{\\rm admissible}|J|\\to0`. \"J-family ⟹ normality\" is REFUTED as an unconditional transport | PROVED LOCAL (PROVED) | CB-3; front_b/numerics |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-06",
+      "key": "MXX-06",
+      "line": 14,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-06 | normal ⟺ (LS) ∧ (H2\\*); both conjuncts strictly weaker | PROVED LOCAL (EQUIVALENT-REFORMULATION; not progress) | CB-4 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-07",
+      "key": "MXX-07",
+      "line": 15,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-07 | The second-order statistic `J2` separates CB-3 from Haar in exact expectation (`≈1.44e-5`); first-order `J` does not | TESTED MODEL (OBSERVED-FINITE) | CB-5; front_b/numerics/data/j2.json |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-08",
+      "key": "MXX-08",
+      "line": 16,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-08 | Hierarchy: every finite-order selected carry family can be silenced on a non-normal seed with the same forcing | HYPOTHESIS (CONJECTURE) | CB-6 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-09",
+      "key": "MXX-09",
+      "line": 17,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-09 | `P_{A,2A,r}=-Q_r(μ_A)+O(1/A)` exactly. #520's finite-cut Clausen inequality is the fixed-h Weyl gate | PROVED LOCAL (PROVED / EQUIVALENT-REFORMULATION) | FA-1/FA-2; front_a/PROOFS.md |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-10",
+      "key": "MXX-10",
+      "line": 18,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-10 | A ×b-invariant measure that dominates Lebesgue on an open arc is Haar | PROVED LOCAL (PROVED) | FA-3 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-11",
+      "key": "MXX-11",
+      "line": 19,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-11 | \"Clausen energy ≤ C·carries\" (seed-uniform) | REFUTED | FA FL, receipt CB-3 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-12",
+      "key": "MXX-12",
+      "line": 20,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-12 | Seed-uniform compactness factorization of `Q_{1/2}` by carries + stationarity | PROVED LOCAL (PROVED; not progress) | FA-5 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-13",
+      "key": "MXX-13",
+      "line": 21,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-13 | `\\sup_{V(a)\\le1}|\\sum a_ne(hU_n)|=\\max_L|S_L|` exactly. A mixed angular–radial saving beyond the marginals is REFUTED | PROVED LOCAL / REFUTED | FC-C1-2, FC-C1-V; front_c/PROOFS.md |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-14",
+      "key": "MXX-14",
+      "line": 22,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-14 | Character–period dictionary over `\\mathbb Q(ζ_8)`. χ₋₄ orientation as a normality lever is REFUTED | PROVED LOCAL / REFUTED | FC-C2-3, FC-C2-V |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-15",
+      "key": "MXX-15",
+      "line": 23,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-15 | A mesoscopic pair budget ⟺ normality. Microscopic exclusion ⇏ normality (15-symbol orbit, `β>2/κ`) | PROVED LOCAL / REFUTED | FC-C3-1, FC-C3-2, FC-C3-V |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXX-16",
+      "key": "MXX-16",
+      "line": 24,
+      "namespace": "MAIN_XX_FORGE",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
+      "raw_table_row": "| MXX-16 | `J_{A,m,k}(0)\\to0` for the zero seed; (LS) for the zero seed | HYPOTHESIS (OPEN) | front_b/NEXT.md, docs/PI_NORMALITY_FRONTIER.md §6 |",
+      "registered": true
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
@@ -21543,11 +21711,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 1997,
-    "claim_supplements_scanned": 204,
-    "registered_claim_rows": 1863,
-    "registered_namespace_count": 176,
-    "source_documents_found": 2003
+    "claim_rows_found": 2013,
+    "claim_supplements_scanned": 205,
+    "registered_claim_rows": 1879,
+    "registered_namespace_count": 177,
+    "source_documents_found": 2377
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -31142,6 +31310,30 @@
       "title": "Executed validation and claim boundary"
     },
     {
+      "path": "research/2026-11-01/selected_zero_boundary_signed/CLAIMS.md",
+      "sha256": "d34af62260be07b218744a67e3377b9192a30a198928ddeb8052025f9132eaf5",
+      "size": 2796,
+      "title": "Claim ledger — selected zero-boundary signed-lag attack"
+    },
+    {
+      "path": "research/2026-11-01/selected_zero_boundary_signed/PROOFS.md",
+      "sha256": "0c61ad01f49e9a8722bcf03d54f641ba1b8c4c6f8e2e7fc6b2ad3d76ec86995f",
+      "size": 6681,
+      "title": "Selected zero-boundary signed-lag attack — results and obstructions"
+    },
+    {
+      "path": "research/2026-11-01/selected_zero_boundary_signed/README.md",
+      "sha256": "b880ce2c6a58e1131dea403db033d0a69bb251703da271de66e897b26ced8100",
+      "size": 2461,
+      "title": "Selected zero-boundary signed-lag attack (post-Main-XIX research)"
+    },
+    {
+      "path": "research/2026-11-01/selected_zero_boundary_signed/VALIDATION.md",
+      "sha256": "93d98a0b0ed66bc448c2e208353c1d9dbe35f0977a05e17ab0323b9484e7d6de",
+      "size": 1419,
+      "title": "Validation — selected zero-boundary signed-lag attack"
+    },
+    {
       "path": "research/2026-11-02/carrier_hbar_bridge/CLAIMS.md",
       "sha256": "429daa6efa241a2793c7ba713a69bc95a3b52c0de501b27d41b202296acb269a",
       "size": 3052,
@@ -32180,6 +32372,48 @@
       "title": "Exact execution, source provenance and limitation receipts"
     },
     {
+      "path": "research/2026-11-03/renorm_transport/CLAIM_LEDGER.md",
+      "sha256": "e58649937b2d2d2bc8845ac30f95084d8df26d48fa7aeb5c8f12e004f37a3fc5",
+      "size": 2506,
+      "title": "Claim ledger — RENORM transport (draft research; no status promotion)"
+    },
+    {
+      "path": "research/2026-11-03/renorm_transport/COUNTERMODELS.md",
+      "sha256": "01dafb0d67496b9b050e758ce7250b363713089bf17f0e203af00575ef649981",
+      "size": 5309,
+      "title": "Countermodels and hostile controls — RENORM transport"
+    },
+    {
+      "path": "research/2026-11-03/renorm_transport/NEXT.md",
+      "sha256": "bd4372fa780f7ba38558071c05985404fb38aa0658f596b4ac495648351f5b59",
+      "size": 2744,
+      "title": "Next discriminating probe — pay the high-frequency input RENORM-2 isolates"
+    },
+    {
+      "path": "research/2026-11-03/renorm_transport/PROOFS.md",
+      "sha256": "8c2c11c68a2fbc0bc508df15d843663205f64cc51818e897069e49f451e95ff6",
+      "size": 11279,
+      "title": "RENORM transport: the exact ×16 Fourier renormalization of the original BBP source"
+    },
+    {
+      "path": "research/2026-11-03/renorm_transport/README.md",
+      "sha256": "700ad0fbdd0070e80b35f2690245e753fc126e4ec4c67eee53f3c34e488d9fea",
+      "size": 3115,
+      "title": "RENORM transport — ×16 Fourier renormalization of the original BBP source"
+    },
+    {
+      "path": "research/2026-11-03/renorm_transport/SOURCE_MAP.md",
+      "sha256": "5590706345d52b98be24cf08a53c04cba8cfa63d22cedcfd3ba3d20426e7d872",
+      "size": 1756,
+      "title": "Source map — RENORM transport"
+    },
+    {
+      "path": "research/2026-11-03/renorm_transport/VALIDATION.md",
+      "sha256": "22a00107e4576b7df7628761a0a63a54f205efd7f67eea3ab5584b9edb319dd2",
+      "size": 3565,
+      "title": "Validation — RENORM transport"
+    },
+    {
       "path": "research/2026-11-03/selected_current_front/CLAIM_LEDGER.md",
       "sha256": "072e288e99ad595268f5451a4292c0cd83b9e96b6eafd2cb06a43702a3b31b16",
       "size": 2266,
@@ -32322,6 +32556,2184 @@
       "sha256": "1a31b248e86452ba06d9ce82c5b1944ff6e346b3ca4a0cf862c02f3f5438ee9d",
       "size": 4950,
       "title": "VALIDATION, RECEIPTS, CLAIM AUTHORITY — stationary E² Gamma observer"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/CLAIM_LEDGER.md",
+      "sha256": "bfc5c68f860214f9fbd13de259b2c519f0a8295a9462416e839d1952b8f23d06",
+      "size": 3403,
+      "title": "Alias valve claim ledger (2026-11-04)"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/COUNTERMODELS.md",
+      "sha256": "10333f3773624464dd337886ee58672b92d6628ea7ad2347be6090b51f022dc3",
+      "size": 2598,
+      "title": "Exact hostile controls and method firewalls"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/DENOMINATOR_EXIT.md",
+      "sha256": "de5c2617003d8edb6ba7febea9c8a7b5ba000a4ca57663dfa872372c05ed2004",
+      "size": 3303,
+      "title": "AV-07: a source-specific *linear* upper ceiling on the finite escape depth"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/NEXT.md",
+      "sha256": "f35f123f6972c7de39828b29ef37934b10d33d5dd69c242e01365009af02128a",
+      "size": 3428,
+      "title": "Next decisive mathematical probe — escape-depth distribution, not passive dissipation"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/PROOFS.md",
+      "sha256": "766f58474f73475035a1064ba70df0548b81887ebb33ca798cbc7f24d110c764",
+      "size": 8940,
+      "title": "AV: authentic BBP lag alias valve, source flux and finite escape"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/README.md",
+      "sha256": "6649c3dbcef6993beaba9eba6670aa70ab8becf8e9188acadcf6f3394fc87542",
+      "size": 2392,
+      "title": "Operation Alias Valve — finite escape versus source-selected distribution"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/SHARP_SHEAR.md",
+      "sha256": "7a52e1dd42082aa4c2f6035f3df23a0f0eb4cf2dec9924652a61928cacca92f5",
+      "size": 3017,
+      "title": "AV-08: signed folding of the original BBP shear and its sharp positive total"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/SOURCE_MAP.md",
+      "sha256": "70159b7fd295cd7b5ff32d43b395465715caad5aabcca1b8465942653002647b",
+      "size": 1821,
+      "title": "Source map and provenance"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/SOURCE_NATIVE_SEED.md",
+      "sha256": "aa35fdb05cdf04455313355ed3513521b98aca9a4fb6d617ec82f897cc554434",
+      "size": 9052,
+      "title": "AS — Source-native coherent counterseeds and the zero-boundary information firewall"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/SOURCE_NATIVE_SEED_NEXT.md",
+      "sha256": "2f22e346ca4e99e971cc2e38c23319a5e1322b86d9abcfe1bbbc6d904b563b4d",
+      "size": 1784,
+      "title": "Next decisive probe after the source-native seed firewall"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/SOURCE_NATIVE_SEED_VALIDATION.md",
+      "sha256": "54f2bf052cc390e68c253d4f305678855670a487eb68a01c7438cd56164d20ba",
+      "size": 2422,
+      "title": "Source-native seed research validation — exact finite receipt and scope"
+    },
+    {
+      "path": "research/2026-11-04/alias_valve/VALIDATION.md",
+      "sha256": "ccedb2bfdddcf478f41c90c5dc1b75383808b2a0cc6e1e8aec4e5be50c2f35db",
+      "size": 2544,
+      "title": "Validation and exact scope"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/BOUNDARY_PREREGISTRATION.md",
+      "sha256": "0779de904b33ff1f42219b8234c24429860768d2ef3c487204ee89794e66fefe",
+      "size": 2221,
+      "title": "Analytic boundary / Gamma(2) Tauberian addendum (before new tests)"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/CLAIM_LEDGER.md",
+      "sha256": "99b527e5b0712edb7ef85dbdd111859e5aacadb53362e5c800d7563ac67254b7",
+      "size": 2591,
+      "title": "Analytic Exile claim ledger (research-only)"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/CODEX_HANDOFF.md",
+      "sha256": "f26c59c2bb9eaac0c3ccffbad2b327ac1e3f05a8f9e7cf012bd4c4638e7081e9",
+      "size": 3805,
+      "title": "Claude / Codex next probe — pay source-selected obstruction, not the Gamma tail again"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/NEXT.md",
+      "sha256": "f054da279ba7c13279a7c61b01a96b723959df770e4e46192130947c0d822a27",
+      "size": 3389,
+      "title": "Next verdict-changing probe — not another tail identity"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/PREREGISTRATION.md",
+      "sha256": "abcd6b51ada0a27b19765e3f5fccbeac053940afc2a473830777c6ef8e2beae7",
+      "size": 3544,
+      "title": "Preregistration — analytic-tail exile and fixed-frequency obstruction visibility"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/PROOFS.md",
+      "sha256": "0ac089de794354a7c68c18f2a493e9952798c15c9da360a628dc42581fa19c7f",
+      "size": 21769,
+      "title": "Operation ANALYTIC EXILE — finite counterexamples, Gamma completion, and selected Fourier obstruction visibility"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/README.md",
+      "sha256": "a70052a7b24422c62180fb24cf552d9765318612e2b2a51c8d3996804e03c7d2",
+      "size": 2266,
+      "title": "Analytic Exile: when a counterexample cannot hide in the missing tail"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/SOURCE_MAP.md",
+      "sha256": "63be3e95fa0a2cad6ec0b6144c4760fa7871aa4e44331a8fc38127e53e6a979f",
+      "size": 3074,
+      "title": "Source and proof-map boundary"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/VALIDATION.md",
+      "sha256": "6cf4d2f8bb2708fdd435ae9fa6cfeddc34967c958a1d72ba03749f70bd7fafda",
+      "size": 3353,
+      "title": "Executed local validation and scope"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/CLAIM_LEDGER.md",
+      "sha256": "3a79c0d25688436147039a6c715f89e6c5f89dd43095e6180e5de487b403cf35",
+      "size": 1637,
+      "title": "Claim ledger — Critical Chirp Ratchet"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/CODEX_ASTRA_ULTRA_MOONSHOT.md",
+      "sha256": "9a5e0590bb0bc295ce53136c87eec1989584944ca586828ad885ac1e76faeba5",
+      "size": 13295,
+      "title": "CODEX ASTRA ULTRA — OPERATION CRITICAL CHIRP × GAMMA PRYBAR × ZERO-SEED ORIENTATION"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/COUNTERMODELS.md",
+      "sha256": "bded9a664e39ad89b77f671cde5a12413c4a2041536d1c779d3a762aa26d9028",
+      "size": 2207,
+      "title": "Hostile controls and the exact rate wall"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/NEXT.md",
+      "sha256": "0fb35677200fb6102f1d8e90bd261e28ac382de22665a76bfeecf4258aefbe37",
+      "size": 2584,
+      "title": "Next verdict-changing work: beat the coherent 256/pi wall"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/PREREGISTRATION.md",
+      "sha256": "15094af22973e02a66d29ef07f8c61ca86b76b5928e883b27512e87bbd2b867d",
+      "size": 2266,
+      "title": "Preregistered independent checks — critical coherent-seed chirp"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/PROOFS.md",
+      "sha256": "96a3d95f601bb07d3bb855ea359ea8d1242ecb7e2c60988d0c40cc36a34a49d6",
+      "size": 8267,
+      "title": "Critical-Chirp Ratchet: the sharp coherent high-frequency threshold"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/README.md",
+      "sha256": "90405c025f65abc085bfefd2479d0de8f44400b4e72e6ece90afadeddfdcbcf7",
+      "size": 938,
+      "title": "Critical Chirp Ratchet (research-only)"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/SOURCE_MAP.md",
+      "sha256": "e530d6355637596069f16a55487eaa9006a79d15d00364438506e84ecc527c15",
+      "size": 1598,
+      "title": "Provenance and source dependencies — critical coherent chirp"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp/VALIDATION.md",
+      "sha256": "b955d531351f7933a3875c188cc11e543f799b02d13dfd6cf499ca6c078a3739",
+      "size": 3059,
+      "title": "Validation — Critical coherent signed chirp"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/CLAIM_LEDGER.md",
+      "sha256": "86fac49ac852f73f67752b83907d5ccc33718f7fea391a35a49754aa82d40aba",
+      "size": 3174,
+      "title": "Claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/COUNTERMODELS.md",
+      "sha256": "255bf65e2677ff00e915dcc0ebb4752b0070c870c2382f27e41d19d6c6775a31",
+      "size": 3692,
+      "title": "Hostile models and the first invalid inference"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/HYPOTHESES.md",
+      "sha256": "e04534be50bc4c62e803f1724df1ada2225d8f6817782f0601bce58c9e926f31",
+      "size": 4463,
+      "title": "Hypotheses, source ablations and discrimination"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/INSTRUMENT.md",
+      "sha256": "23bcd2c3032aaa3d4c7d2387c08a5f59dae4f7b175a11adfeca3e41f452a236e",
+      "size": 3270,
+      "title": "Exact finite maximal signed certificate"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/NEXT.md",
+      "sha256": "294c7c68717363d912f0178360ae7c9712bf08d86a1ce59d06b55b936c3b24bf",
+      "size": 1874,
+      "title": "The remaining inequality, after the falsifiers"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/PREREGISTRATION.md",
+      "sha256": "2eee7f833a4a7bfd6e71c1c1389863cd5cb69639a3d203f558e7a7db659b1812",
+      "size": 2370,
+      "title": "Critical selected-source audit: preregistration"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/PROOFS.md",
+      "sha256": "013510b0ac2cbcbd53bdd1a2ba371a24c529397c784cf7515b5533fd9e4fa061",
+      "size": 7708,
+      "title": "Strongest results and the remaining selected-source gap"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/README.md",
+      "sha256": "524875da2980d9c7c05a49b877f8a6dc8f157866c309a2a0839079befbee7f22",
+      "size": 1126,
+      "title": "Critical chirp: source discrimination and quantitative obstructions"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/SOURCE_MAP.md",
+      "sha256": "106c6ff8b1c8f3d0b9a1849f23982dd08152c01b2827d783e5942c99ba345fd5",
+      "size": 4116,
+      "title": "Live source and implementation provenance"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/VALIDATION.md",
+      "sha256": "69c9af88dd9bf2553fc1ef068f707e327fb21b5b7a34dcb7fc8c7a2c04b7105a",
+      "size": 3343,
+      "title": "Validation record"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_ah/INSTRUMENT_REVIEW.md",
+      "sha256": "174c5593150b8d1a0e27e3f9af7ef1e1b030809aa38ca1faa042ed27425e28af",
+      "size": 6403,
+      "title": "Independent same-model signed-instrument and countermodel review"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_ah/PREREGISTRATION.md",
+      "sha256": "812809cf180ede9f8a707c7908038c093c8ff12d773fe6262a3b71084877737c",
+      "size": 1672,
+      "title": "Front A/H preregistration"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_ah/PROOFS.md",
+      "sha256": "c3cf93a682480a71cef3a72f7c5baf0aa8a91ac6855b9a691d94fbc55b8f487a",
+      "size": 13175,
+      "title": "Front A/H: exact-tail derivative control and the discrete coherent barrier"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_ah/REVIEW_BDE.md",
+      "sha256": "32d789b01dfd8a81cf2958d4d41d9aef2aa9f6d929f6f968d899516adb09c50d",
+      "size": 9892,
+      "title": "Independent hostile review of BDE-1 and BDE-3"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_ah/VALIDATION.md",
+      "sha256": "eda04d9468deb24a0970f0098bb01f76ab1ef7c547c6410788214c018779bd4c",
+      "size": 2127,
+      "title": "Front A/H validation and authority"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_bde/CLAIM_LEDGER.md",
+      "sha256": "a7c92a75d07cc05d69a6f75ce923b885241e60df1054221179769772c626e92f",
+      "size": 2142,
+      "title": "B/D/E claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_bde/PREREGISTRATION.md",
+      "sha256": "039f90498e592ab4694c1265bcc4cbf80dd846154ced8ada331987545f442e6b",
+      "size": 1924,
+      "title": "B/D/E source-discrimination probes, before execution"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_bde/PROOFS.md",
+      "sha256": "a4921ea1a5c8065644c89103187d208e26c73557c9269b16946a5fdb6d1ac1f9",
+      "size": 13095,
+      "title": "What the prime clocks and radial control do at the critical frequency"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_bde/SOURCE_MAP.md",
+      "sha256": "36757728551641e35e6ad530c8a956e6b0854c233facee248894be2478b8a72e",
+      "size": 2712,
+      "title": "Source and independence map"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_bde/VALIDATION.md",
+      "sha256": "2b4606c410a2b19231be53eb038bef7f153332609b532e28a2def21c0906f97c",
+      "size": 1950,
+      "title": "Exact validation for B/D/E"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_cfg/PREREGISTRATION.md",
+      "sha256": "6f81bb314d590f5abbf19e113e7f9d7618cf42e177658861e299e7b90ec2264e",
+      "size": 2281,
+      "title": "Front C/F/G: normal completions versus the critical ratchet"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_cfg/PROOFS.md",
+      "sha256": "c861bf4ad7c89d375d6bf5dca09ec2d95dadc3b47aaa5cac5f3e4b5e8f31c005",
+      "size": 10869,
+      "title": "Normal completions can fail the critical ratchet, even divergently"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_cfg/REVIEW_AH.md",
+      "sha256": "d4d8a17987de93d48fd8b891bf1410e7d1e86f235eab1593e0737ea87bc04e74",
+      "size": 3048,
+      "title": "Hostile review of front A/H"
+    },
+    {
+      "path": "research/2026-11-04/critical_chirp_source/front_cfg/VALIDATION.md",
+      "sha256": "ead1c4e2152464c09b7a1705c4c577b36a98e4a5b02980c4494cedd1110ac912",
+      "size": 1650,
+      "title": "Front C/F/G validation"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/CLAIM_LEDGER.md",
+      "sha256": "e1096d51340c3b36d8fdff09e90326af1be428a602c2ca6ee758e7cf6a30d074",
+      "size": 2277,
+      "title": "Claims and authority — Dual Zero × Cayley"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/CODEX_HANDOFF.md",
+      "sha256": "8a2c5bfcfa95e7fc438c3ce2efe119b932bf81db82ef70f98710249ebec3924c",
+      "size": 1695,
+      "title": "ASTRA ULTRA / CLAUDE — DUAL ZERO REAL-SUPPORT CONTINUATION"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/NEXT.md",
+      "sha256": "6fa3ab695c4ea2b8d90d7510d314a9c791b38695d94492c59a87e10266f36bfb",
+      "size": 2889,
+      "title": "Next verdict-changing work — source-selected signed current across REAL support"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/PREREGISTRATION.md",
+      "sha256": "66fe65894c5598d4d87d8fc1b4feaffd59d9ee751814fa032d5a35044fb7c3d2",
+      "size": 5616,
+      "title": "PREREGISTRATION — Dual-Zero Interference × Rational/Real Cayley Carrier"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/PROOFS.md",
+      "sha256": "001cb15272794a5147be35193dd41fff0e1966fbbb9ce99f99ed6ba8fd544d41",
+      "size": 16814,
+      "title": "Operation Dual Zero × Cayley R-Support — exact rational/real carrier for the original BBP source"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/README.md",
+      "sha256": "c68b81d302d6f4f5be7a9b15f361565cc453829670fbbbd9200dc542d13f45b4",
+      "size": 1673,
+      "title": "Operation Dual Zero × Rational/Real Cayley Carrier"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/SOURCE_MAP.md",
+      "sha256": "5df29864e01628ff7969a0955eb1c802cf82070bc4949cce48e4befe401d4011",
+      "size": 2343,
+      "title": "Source map — projective real lift without a π/Haar oracle"
+    },
+    {
+      "path": "research/2026-11-04/dual_zero_real_carrier/VALIDATION.md",
+      "sha256": "fbff6b92d44d8e5f6a03841c4e6e47a3bf7d2ccc106699bfb4f8c2ab72bc0383",
+      "size": 4101,
+      "title": "Validation and precise authority scope"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/PREREGISTRATION.md",
+      "sha256": "21b8f22504effe173dcd8a7fabc0481aa641becbec21dcca1e613ddc5eb2c835",
+      "size": 1545,
+      "title": "Reflected prefix and signed Weil research protocol"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/README.md",
+      "sha256": "6a19441453260cece82834067dfbdb6ccbde2772752139fb9729b60c050d2f56",
+      "size": 11682,
+      "title": "Europa Weyl and the selected π orbit"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/beta/BETA_WEIL.md",
+      "sha256": "1fc1645c63923460f20f778e3f6835fe4c603b195199b3cce1a5711613d639fa",
+      "size": 14130,
+      "title": "From the marked angular source to the signed beta distribution"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/beta/GAMMA_BOUNDARY.md",
+      "sha256": "b099279ec6d6abd4349d457dc9e593a6f8dad41b57e3418363c7077bf0b699ab",
+      "size": 4605,
+      "title": "The Catalan and angular-period remainders recover Euler's constant"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/beta/GAMMA_PREREGISTRATION.md",
+      "sha256": "1a530191890d927c6b375ebac34cfadcb2bc5d670da1303e03f36cea5018c1be",
+      "size": 598,
+      "title": "Two-Mellin-moment holdout"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/beta/MELLIN_PREREGISTRATION.md",
+      "sha256": "05b735fd93052946d1e3d8e0de8d423187c6436c4c01b3de9fb507f0db905482",
+      "size": 657,
+      "title": "Finite Mellin interpolation holdout"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/beta/PREREGISTRATION.md",
+      "sha256": "2659eb370f131a849ffe0335464c7eb9cb84278777f2be91535fee05b106e072",
+      "size": 1528,
+      "title": "Europa signed-form preregistration"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/boundary/PREREGISTRATION.md",
+      "sha256": "e03042cb1d9fc9ba53ffdc9b87297ab301254c93bab7f6504fc11bc49240ec0d",
+      "size": 2236,
+      "title": "Boundary and seed holdouts"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/boundary/PROOFS.md",
+      "sha256": "8dec14384ab972149b44516d057c4631638f62e8e190b1c7d88b3281f451ef06",
+      "size": 14255,
+      "title": "What the angular boundary and the aligned prime tests can determine"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/boundary/SIGNED_PREREGISTRATION.md",
+      "sha256": "b4676175d48115458313d1374a55551d265a50c6e9c3fc7c5183c8cc56491556",
+      "size": 904,
+      "title": "Source-selected prefix loss and its scope"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/energy/PAIR_SIEVE.md",
+      "sha256": "f887829187027ec5dcaaaedb467e98d90cdb90fbdfd47726dd39ca21c8921aa0",
+      "size": 9948,
+      "title": "Pair denominators and the real cofactor obstruction"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/energy/PREREG.md",
+      "sha256": "810cb95b5f07c20b3f4173534a6f7eedc7cafc7ca802347e8ef4415ed0083ac1",
+      "size": 1564,
+      "title": "Declared before the finite runs"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/primal/PREREG_PRIME_LAYERS.md",
+      "sha256": "e306e811031c3d05a1866ed444bcc1abbc292df78958a479669c150446b3c4e7",
+      "size": 2393,
+      "title": "Fresh arithmetic holdouts"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/primal/PRIME_LAYERS.md",
+      "sha256": "c28366c75f72095c43957ee441018d591694f8e99bf791a492eda3f6f5eccaed",
+      "size": 16968,
+      "title": "Prime layers, denominator loss and actual time differences"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/radial/PREREGISTRATION.md",
+      "sha256": "ab2f3de66017715ba2afe6f5105cea63775f5d3b281116900867e30aff2bb009",
+      "size": 972,
+      "title": "Endogenous radial control"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/radial/RADIAL_CONTROL.md",
+      "sha256": "1712c18e34173eede80d589d2e002eb3a32b56ec449f535bd2f857e0117d929f",
+      "size": 4827,
+      "title": "A genuine zero-seeded 8N source with almost maximal real energy"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/reflection/MARKED_TRANSPORT.md",
+      "sha256": "fe54a68f0a7d1de44a4468f6fb88f28ec11029dadc2db67e6c61e353315816fc",
+      "size": 6724,
+      "title": "Recovering the finite primal orbit from signed arithmetic atoms"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/reflection/MARKED_TRANSPORT_PREREG.md",
+      "sha256": "fda85f1e3a8191f5185fdb2b8e8d30e99aa629a7a1d657be00007e9a2d8f9b34",
+      "size": 471,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/reflection/REFEREE.md",
+      "sha256": "1991f4547a1ea97fa16fb6c94dc505f6d99e7b5b1433cd317f638745f8bc2f29",
+      "size": 6448,
+      "title": "From the unrounded reflected source to the signed beta arithmetic tape"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/reflection/REFEREE_PREREG.md",
+      "sha256": "892ddd64ee5e17f0d0bb1dbbdc202ca49c8b1c30ef9a6b798f746cdb58d6a178",
+      "size": 1483,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/reflection/REFLECTED_WINDOW.md",
+      "sha256": "0e9c69a2fa9ad849e4241e24a1b3b79ad25000e4af34d64d8b36477adab985e3",
+      "size": 4895,
+      "title": "Which signed Euler coefficients can one finite BBP prefix recover?"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/weyl/CocycleScratch.lean",
+      "sha256": "a6e9bace37e65e76e37b3239af2f25e694f54ab394aed5c63245e2219c8d7dce",
+      "size": 801,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/weyl/EW6_PREREG.md",
+      "sha256": "27fca7e4ae389485d61c0500f2b8da61f4127ecf84eee0c57d0955b368863719",
+      "size": 544,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/weyl/EW7_PREREG.md",
+      "sha256": "8beaa742a8f2414ffb75ce7fe62df892152f0e7670fcb3cb8efebebf0ecd0791",
+      "size": 729,
+      "title": "Cyclotomic slicing probe"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/weyl/LEAN_REPLAY.md",
+      "sha256": "f4ce80ad969633e8fb8576816c013d72d4558e175c0fe4f0d7abb7a3169daf8f",
+      "size": 856,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/weyl/PREREGISTRATION.md",
+      "sha256": "b7cc6592c58a34a22c6a4a61a1a9377e1697ab6f482e5c1684cd97ff6bde47e9",
+      "size": 1340,
+      "title": "Weyl conductor and marked source holdouts, 2026-11-04"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/weyl/WEYL_CONDUCTOR.md",
+      "sha256": "92a96a510054717e9611a0c57d5aa83fc07e365ca5b4c715386ca42893626ac2",
+      "size": 15972,
+      "title": "The marked primal orbit, finite Weil rotation and conductor refinement"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/CLAIM_LEDGER.md",
+      "sha256": "da5f93d33c347a5ea3d1fae96a89e22eb88380f3316ac6efc67c5f2f9dff617a",
+      "size": 2649,
+      "title": "Claim ledger (source / target / tool / authority)"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/CODEX_HANDOFF.md",
+      "sha256": "e2e40fade88f6e85f2c72d2ef6e1758dc574d8126241099797ebc1a2cc2f4868",
+      "size": 2995,
+      "title": "CLAUDE / CODEX / independent referee — Operation Prime–Frobenius Echo"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/NEXT.md",
+      "sha256": "c130e3c776e56980197396abb0c9670e9384e90cffd441012942f0400803b41d",
+      "size": 2565,
+      "title": "Next verdict-changing probe — carry the prime-Frobenius echo to the real observer"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/PREREGISTRATION.md",
+      "sha256": "fa7995da25414bffe5f0e4720c0ed37989bed2d5b4cc92fec8e323d09f872d76",
+      "size": 4025,
+      "title": "Preregistration — BBP prime-Frobenius pulses and denominator saturation"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/PROOFS.md",
+      "sha256": "36f63293a696295c9a17fdf3d1e01a8ca2e85e9dcf4aa410f2b564c3c95a93c6",
+      "size": 16576,
+      "title": "Operation Prime–Frobenius Echo — source-selected BBP self-shadow and sharp denominator saturation"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/README.md",
+      "sha256": "113c62a8057867b4b281cc736a2d5f962693da35a040b019406fa1efacc18778",
+      "size": 2258,
+      "title": "Operation Prime–Frobenius Echo — source-native arithmetic theorem"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/SOURCE_MAP.md",
+      "sha256": "82f156ec39512dad572c7876fccab964994ada7b6b4de0b55ccc9506cd6f0d63",
+      "size": 2841,
+      "title": "Source map and mathematical types"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/VALIDATION.md",
+      "sha256": "bea1a71b814fc73bc03db9fabd7ef82496125238d1c35fb34a36d792b83e9695",
+      "size": 3860,
+      "title": "Validation / exact-source and authority receipt"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/CLAIM_LEDGER.md",
+      "sha256": "337261d80399f08272b4f210db8995f48ba392f5cdd2896d5447f5c971ce8601",
+      "size": 2046,
+      "title": "Gamma Prime Window claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/COUNTERMODELS.md",
+      "sha256": "a5a0134a2e48f528e18bd0186c0cb9f3d0d3ea9a033e5a19f7471f44c65193df",
+      "size": 2303,
+      "title": "Countermodels and discriminators"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/NEXT.md",
+      "sha256": "e1f0a28ee18b3286843eaf04b1b2f8ca382028d169f1ed6ec121e98e12bcf9a9",
+      "size": 2228,
+      "title": "Next decisive probe: source-selected cross-time cofactor dispersion"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/PREREGISTRATION.md",
+      "sha256": "4b930af8cd4d482baf01f2ab14535e96f42eac2cb41a2389803523bf893a2e6f",
+      "size": 1845,
+      "title": "Preregistration — hostile Gamma–prime pinning holdouts (before execution)"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/PROOFS.md",
+      "sha256": "0ee9dfbdd4d8b5d7733bf8a4aad15cc92a0d4749febe83d75e7ccea172382acc",
+      "size": 11909,
+      "title": "Gamma Prime Window Pigeonhole — Archimedean/finite-place BBP pinning"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/README.md",
+      "sha256": "f64a9ca53952db5931cfb5fa6d671accfa334440b061a528a438407551b07bcf",
+      "size": 1167,
+      "title": "Operation Gamma Pigeonhole — analytic/finite-place pinning"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/SOURCE_MAP.md",
+      "sha256": "44c085a083ba5d8945d215c36da13872084b6c3c1eef3e5efb30dc2e7947a8f2",
+      "size": 1871,
+      "title": "Provenance / source fidelity"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/VALIDATION.md",
+      "sha256": "19a02b30676224ef302f8a2c1e346274b76e833ee7e8c3113d09f5ce49cee58a",
+      "size": 2515,
+      "title": "Validation — original BBP Gamma-prime pigeonhole"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/CLAIM_LEDGER.md",
+      "sha256": "778db257c61277f206bc15a35d213ee8c4c3acc0d5b104906c7bcf3f5c9c72c3",
+      "size": 4289,
+      "title": "Claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/COUNTERMODELS.md",
+      "sha256": "09848995dd9e2ff153029e6a2cf83e41c1faa2b3edeee951c0236e38103d5768",
+      "size": 4206,
+      "title": "Countermodels and first invalid inferences"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/HYPOTHESES.md",
+      "sha256": "6c28ffbd2d6c2c48cf6847a9df52957112eacdc51db9a0b58d7700a43b689183",
+      "size": 3681,
+      "title": "Competing mechanisms at the selected boundary"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/NEXT.md",
+      "sha256": "f6fb5c50f1113accebfebcac5afc0eb4f1205276e747aaa9d76192ac4d589ef2",
+      "size": 2443,
+      "title": "The next verdict-changing inequality"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/PROOFS.md",
+      "sha256": "17d7c4ee6abf4b5f5522368cf65a705d7a1ada7f8902cae9d654d4632c8d72d8",
+      "size": 18448,
+      "title": "Gamma Prybar: real short returns of the four-pole orbit"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/README.md",
+      "sha256": "28bb3440e4ef3001e082ffa402c4a7cb4e5702fb3befc120e85b4270d94add6c",
+      "size": 907,
+      "title": "Gamma Prybar"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/SOURCE_MAP.md",
+      "sha256": "097d0af70fcb2ad225eb8d9357659773b334cc3f2d7f0ce15ea1702df5411d3c",
+      "size": 8666,
+      "title": "Sources, ancestry and authority"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/VALIDATION.md",
+      "sha256": "c3453c29d881e307c218760a10e64c2390ae35f96705b8cc2d694ae356b8339f",
+      "size": 5546,
+      "title": "Validation and reproduction"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front1/COFACTOR_PROOFS.md",
+      "sha256": "cffc8660f5696c79362cd6573b1a7951bc8d493bfcdee984f95f884b1f120631",
+      "size": 18833,
+      "title": "A single chronological arithmetic frame with opposite real collision energies"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front1/PREREGISTERED.md",
+      "sha256": "1d061a197d18bd9b432a611895e5aeb30c53800acb12fd83232a4864246124cd",
+      "size": 2090,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front2/CHECKPOINT_THEOREMS.md",
+      "sha256": "9b2ddcb822bc7adce67560e806b53e4e366f461c6aefe56bc1e0d03943b45010",
+      "size": 15568,
+      "title": "Chronological checkpoint transfer and the denominator of a selected phase difference"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front2/PREREGISTRATION.md",
+      "sha256": "5ad4b10a6fea3e79463809a44d52964b63b7764c340ecfec7ee17a7706878ea2",
+      "size": 1614,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front3/PREREGISTRATION.md",
+      "sha256": "ae5fdab13849e8fc53a871ef135ed9ff2177949fa72c77fe3e9d84391bb99611",
+      "size": 2397,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front3/SPARSE_RESET.md",
+      "sha256": "8e68d1cd58b9d8e044a7276603ab7713ed42d43bc51a909dd97e53abb3eb8a04",
+      "size": 12238,
+      "title": "A sparse forcing mutation with exact prime checkpoints and authentic selected-state denominators"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front3/VALVE_AND_FILTER.md",
+      "sha256": "ebb4be6eb61313e307a8d559777ac1b4fa80e20d81babb5be65d7ea6598a4ba1",
+      "size": 10673,
+      "title": "Positive BBP valve flows and a causal finite-memory countermodel"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front4/FINE_SCALE.md",
+      "sha256": "47116e2a72018dabe06bf43dbfad8d0c1e02014bb65e0aedf8f753d9a6d31f41",
+      "size": 7570,
+      "title": "Real near pairs and interval returns below the quadratic scale"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front4/FOURIER.md",
+      "sha256": "e054cd05343d395d97235ee265d2a81c68d8cc7fa77f8e079de82ca34d4b751d",
+      "size": 12004,
+      "title": "A finite large-sieve inequality across the quadratic crossover"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front4/FOURIER_PREREG.md",
+      "sha256": "4fd6fe38b9c6524a4f68a436d49f5744083b7565a7cffecf24a684267825e3b1",
+      "size": 704,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front5/PREREGISTRATION.md",
+      "sha256": "f754843e4e9b4c4268a7dcedac9a1654af227b8f8a975e9d3c3d0e93ddd0c21e",
+      "size": 1550,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front5/front5_proofs.md",
+      "sha256": "adb067c1b8cae36831cff2f0496dad4d29eb3f66ce672fd1987a3e5144a1363e",
+      "size": 13738,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front7/ABLATION_SPEC.md",
+      "sha256": "22f697af51221c277db048a9d32db63dfb908364bcc928ef93561362c741e777",
+      "size": 1392,
+      "title": "Discrimination by projections"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front7/DYADIC_TARGET_SPEC.md",
+      "sha256": "97e5883c362a257474f63e9004b8b8471fa7517843b9985caae75ae401dbd705",
+      "size": 599,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front7/HOLDOUTS.md",
+      "sha256": "e168180c282b5c475020621578ee483d5741bb961d070fb17bfc2213c6f005a2",
+      "size": 1417,
+      "title": "Frozen probe specifications"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front7/SPARSE_CONTROLS.md",
+      "sha256": "a54df9a586752cf35e922844ff357dc76c8de29158e88e34c0862e72656e4030",
+      "size": 10643,
+      "title": "Sparse rational interventions in the four-pole recurrence"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front7/TERNARY_DEPTH.md",
+      "sha256": "439e734ce255374198dbb784eac441eb333931fb6c835a6880ceb23796bfe74e",
+      "size": 7904,
+      "title": "The original selected ternary pole, and what its exact height leaves unresolved"
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/front7/TERNARY_SPEC.md",
+      "sha256": "04a38ad70ecfd55a8cd42b4ecdfac7649cd4575b34b7bb858d5f83b05f57321c",
+      "size": 391,
+      "title": ""
+    },
+    {
+      "path": "research/2026-11-04/gamma_prybar/principal/PREREGISTRATION.md",
+      "sha256": "fedd49fc87c80cf64ff84a30b64f69a5d2419444e353cec8cba3176deacd1698",
+      "size": 1108,
+      "title": "Protocol before principal holdout"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/CLAIM_LEDGER.md",
+      "sha256": "b42e08fe86fcccb6d2f11b943324806d176c2676eb7ac623655913aede86eb9d",
+      "size": 2105,
+      "title": "OBC Research Claim Ledger"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/CODEX_HANDOFF.md",
+      "sha256": "4c0000732ee720de3196e5ccbd5be772db0d16e6451402f42dc3518850243be3",
+      "size": 2091,
+      "title": "Claude / Codex — Observer-first SUCC truth access and Busy Beaver coherence"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/NEXT.md",
+      "sha256": "382d2e562a46b95f443dd2ebaff1ab87b3e559c4d3bfeac985f7ca4aa7e97b72",
+      "size": 2350,
+      "title": "Next original-source discrimination probes"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/PREREGISTRATION.md",
+      "sha256": "29f166c1d1276cf9afeafc9882707ce735476ede3b417286142d59f50bd173b1",
+      "size": 3257,
+      "title": "Preregistration: observer bridge coherence / Busy Beaver search debt"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/PROOFS.md",
+      "sha256": "a9cd6082b179166120216d100ccfe67780dfb0f5cf83f2bf18df251bde306825",
+      "size": 14037,
+      "title": "Observer bridges, expanding counterexample searches, and Busy Beaver coherence debt"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/README.md",
+      "sha256": "b61b1a127de1109a528b557f05bf7b3590d8737f044cf3315fcaf03985461e84",
+      "size": 1182,
+      "title": "SUCC: Observer bridge vs Busy Beaver coherence debt"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/SOURCE_MAP.md",
+      "sha256": "c92492ae918fed86e6bfb5b480cc1443e487741d5210cd53d28823e91165b0cd",
+      "size": 2484,
+      "title": "Exact source map and permission boundary"
+    },
+    {
+      "path": "research/2026-11-04/observer_bridge_coherence/VALIDATION.md",
+      "sha256": "dfa7e3c033162ec0421944037245574bd19dd7fc2367139d82beb66d4fa2ed79",
+      "size": 3344,
+      "title": "Validation — observer bridge / Busy Beaver coherence"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/CLAIM_LEDGER.md",
+      "sha256": "56f1a455d5308859e95fa082fef064fc5a914c9e5e65dafd2d65c9cf984b7251",
+      "size": 4923,
+      "title": "Two-clock source claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/COUPLED_FINITE.md",
+      "sha256": "33f7dc38ce50c79ae5052048ed06c07246c12778daf572baef8f7319555ae877",
+      "size": 3094,
+      "title": "Exact-source original angular/radial observer-lag finite probe"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/NEXT.md",
+      "sha256": "2e102c451d39c1446422919786e57844d285a510d859cc9642f17d93afa36257",
+      "size": 4669,
+      "title": "Next verdict-changing probe: coupled observer frame without moving the goalposts"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/PREREGISTRATION.md",
+      "sha256": "357bb8d7af4b72fe7d4351164753cf2acfb27f281b094db1527a7db9cb2e5dc4",
+      "size": 5025,
+      "title": "Operation Two-Clock Return × Observer-Relative Boundary Flux — preregistration"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/README.md",
+      "sha256": "81d80844afefb215ed0e82e6ed679b98193183507f5efeac436f272e3cb19453",
+      "size": 4647,
+      "title": "Observer-relative BBP return / two-clock boundary flux"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/RECIPROCAL_CLOCK.md",
+      "sha256": "311953770b575361b523d12b46fe36887d0a832bfb4d47eb97a334163169d4b8",
+      "size": 6979,
+      "title": "The reciprocal-square observer clock: source-derived radial linearization and exact Fourier zeros"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/SOURCE_JET_TRANSPORT.md",
+      "sha256": "78c26e2c3a740211b82081217f9f718e2cb62fc7443e98e933a380bf22092be9",
+      "size": 7619,
+      "title": "Source-jet reconstruction from the zero-period radial field: an all-order BBP observer-transport theorem"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/SOURCE_MAP.md",
+      "sha256": "50ec480aa7ea390048e6bf39464a833fd0b8df074d0b3e2a48e6b516dce82f83",
+      "size": 3530,
+      "title": "Source/provenance map — observer-relative return (2026-11-04)"
+    },
+    {
+      "path": "research/2026-11-04/observer_relative_return/TWO_CLOCK_THEOREMS.md",
+      "sha256": "d90b19b07840d480f9498abf39d6c919bbb4d53fbeffbb571a2bb6b88d7ee8ab",
+      "size": 10830,
+      "title": "Two-clock BBP return: exact source transport, delayed phase and sharp boundary flux"
+    },
+    {
+      "path": "research/2026-11-04/operational_foundations/NEXT.md",
+      "sha256": "e7768837030e5e16ec4bf4b86108e7bb6c54aaa8510fb47134d83156af1623b2",
+      "size": 1624,
+      "title": "Next discriminating SUCC operational-foundations round"
+    },
+    {
+      "path": "research/2026-11-04/operational_foundations/PROPOSAL.md",
+      "sha256": "3401d2a6e013a8fe8b0cb40eef1375e07f73e53f16332c3b3cb2e3affb0c3ada",
+      "size": 8528,
+      "title": "Operational foundations — source-labelled empirical-to-proof interface"
+    },
+    {
+      "path": "research/2026-11-04/operational_foundations/README.md",
+      "sha256": "66f39decf2231afade1f16615073e4f8a78b8eae7064e91a6dc1108f32dd50eb",
+      "size": 1020,
+      "title": "Observer-first axioms, not a new ontology by fiat"
+    },
+    {
+      "path": "research/2026-11-04/operational_foundations/VALIDATION.md",
+      "sha256": "7f06b8c45b854da9fee9716cf3f447c4f206c2d0a9fce4a92ee37774b3a794d3",
+      "size": 1140,
+      "title": "Finite exact controls and authority"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/CLAIM_LEDGER.md",
+      "sha256": "4515f335073d795854b78d0cb027e32d13c0ebf13743d52c378058ca6cfc6d24",
+      "size": 2774,
+      "title": "Claim ledger — source-derived primal quotient"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/CODEX_HANDOFF.md",
+      "sha256": "c681e045c7f5f39bf1e7188dcbd28e7f0417a51649c6b226eec2ad7fb7f01999",
+      "size": 3047,
+      "title": "Claude / Codex — Prime-character primal BBP validation and next proof round"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/NEXT.md",
+      "sha256": "8c470fbbb2d15292c8d741003e6cb59d8f0d8c2810bc50b47926b2b2831f9754",
+      "size": 2900,
+      "title": "Next verdict-changing probe — exploit the primal, don't just name it"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/PREREGISTRATION.md",
+      "sha256": "e09ecb9dfaa294ed61cbb82dec0de5102c723c3ce819461a94456c3d7a820f49",
+      "size": 3829,
+      "title": "Preregistration — universal prime-Frobenius character quotient / primal BBP"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/PRIMAL_DENOMINATOR_PREREGISTRATION.md",
+      "sha256": "6e070eb03f4a1edd2555b809a6e2b991e1f71be90abbab5909279957606c6856",
+      "size": 3039,
+      "title": "Additional preregistration — primal angular all-prime denominator saturation"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/PRIMAL_QUOTIENT_THEOREM.md",
+      "sha256": "89cd0c33974550ecb1ba3e31406dac15bd84bf000a43f2b4d574543bf46d31ad",
+      "size": 11866,
+      "title": "Prime-Frobenius character quotient: the two-state Gaussian primal BBP"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/PROOFS.md",
+      "sha256": "e4a791eba98ac89cc7831dd9d462bb3c363999d165b9861fe9acea0e9a502462",
+      "size": 21657,
+      "title": "Operation Prime–Character Primal: quotient BBP from its own Frobenius echo"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/README.md",
+      "sha256": "4a7644dde239132a97523040301a73e03296774d7c643a7893bb325b4dd78a90",
+      "size": 1805,
+      "title": "BBP's primal form, extracted by its own prime-Frobenius character"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/SOURCE_MAP.md",
+      "sha256": "a7c00de5c0b404f14250e729c4addd14ed85c6cf0af08e39fd81bb96e0bee74c",
+      "size": 3067,
+      "title": "Provenance and observer-access source map"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/VALIDATION.md",
+      "sha256": "68b0a24fb539bdfe67ffb95b57eba5d93071df6ec88ea45377535c0db082730c",
+      "size": 4905,
+      "title": "Validation and authority boundaries — prime-character primal quotient"
+    },
+    {
+      "path": "research/2026-11-04/source_sound_calculus/CLAIM_LEDGER.md",
+      "sha256": "5a4d58202f8a235f4d57c814537ae5f72f03649d0cfa9f36f8cc9c7f5b342104",
+      "size": 2687,
+      "title": "Source-sound / intrinsic-LCM claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/source_sound_calculus/NEXT.md",
+      "sha256": "15b22f91f45a8a3463695b61a7e1ef2030488872a565d600142c4de365ca43ac",
+      "size": 2546,
+      "title": "Source-sound calculus: next verdict-changing work"
+    },
+    {
+      "path": "research/2026-11-04/source_sound_calculus/PROOFS.md",
+      "sha256": "0e0c9d932cbbb492c79e07dedad86a3c30767d500af17e9479d217414373d0d9",
+      "size": 11784,
+      "title": "Source-Sound Calculus × Intrinsic LCM Carrier (Research Draft)"
+    },
+    {
+      "path": "research/2026-11-04/source_sound_calculus/README.md",
+      "sha256": "d2d9d715676077c661eb62de64db0af1649526fb167c779050c0da2eb7c9d392",
+      "size": 1652,
+      "title": "The SUCC source-sound calculus, with intrinsic LCM joins"
+    },
+    {
+      "path": "research/2026-11-04/source_sound_calculus/SOURCE_MAP.md",
+      "sha256": "2ccd08160060beeec11e15aebeab039f4072793ab1ec114ec2fc13986133052e",
+      "size": 2678,
+      "title": "Source map / dependency and review boundary"
+    },
+    {
+      "path": "research/2026-11-04/source_sound_calculus/VALIDATION.md",
+      "sha256": "6048ac50f35e06e6957ea97adaabdbfae6d9ac8183b894a097e1e655c29aa16a",
+      "size": 2649,
+      "title": "Validation and limits"
+    },
+    {
+      "path": "research/2026-11-04/virtual_gauge_circle/CLAIM_LEDGER.md",
+      "sha256": "25cd432e2875155b1695fdf11260f333f3875a667149f9a617c854f639075bb8",
+      "size": 2498,
+      "title": "Claim ledger (2026-11-04)"
+    },
+    {
+      "path": "research/2026-11-04/virtual_gauge_circle/PREREGISTRATION.md",
+      "sha256": "ef6931ae8a04733a68d844c032870740dc28466d9429619638ed21b9f9c2221c",
+      "size": 3266,
+      "title": "Operation Virtual Gauge × Cyclotomic BBP Circle — source contract"
+    },
+    {
+      "path": "research/2026-11-04/virtual_gauge_circle/PROOFS.md",
+      "sha256": "d2d1744fe91118cdcb61ec7c5106e4479a9de41da16366e77fa9791ebd64b5cb",
+      "size": 11646,
+      "title": "Virtual gauge × cyclotomic circle × radial high-frequency chirp"
+    },
+    {
+      "path": "research/2026-11-04/virtual_gauge_circle/README.md",
+      "sha256": "073dc8f789a5b123f1b5b801325c32aa1ee16c3e0f2cc721baffda3bd9c4020e",
+      "size": 1915,
+      "title": "Virtual Gauge × Cyclotomic BBP Circle"
+    },
+    {
+      "path": "research/2026-11-04/virtual_gauge_circle/RETURN_LAW.md",
+      "sha256": "b8cfb3a09b65ea58a58b9322aae6659a389dbcf63ab1e19af17816ec646c9134",
+      "size": 7031,
+      "title": "Exact BBP virtual creation–repayment law"
+    },
+    {
+      "path": "research/2026-11-04/virtual_gauge_circle/TIME_GAUGE.md",
+      "sha256": "b959c469ddd1f9cb21272e8e8ff5a098fc111146730b9fa9e5db761378dca9c6",
+      "size": 5763,
+      "title": "The BBP virtual gauge is an exact nonautonomous conjugacy with a Fourier resolution threshold"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_bispectrum_audit/PROOFS.md",
+      "sha256": "29e1e54002906d44ae643fc1502c8f7cfd0897a734847ba4362ce8fb7a71911d",
+      "size": 7282,
+      "title": "Audit extension: nonlinear delayed-observer bispectrum and a weaker critical carry gate"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_bispectrum_audit/README.md",
+      "sha256": "e7300fc85f2a248a3d3c2ef5d4ddee7cbed25fe7e16b116c358b05b2c8a21c90",
+      "size": 5784,
+      "title": "Independent post-Codex audit: where the two-clock coupling route stands"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/ARITHMETIC_PIN.md",
+      "sha256": "7156d3151dfcea905aa4db35c911aeb32387272ced3c79d2e582b11dd90c3b6b",
+      "size": 2798,
+      "title": "Arithmetic authentication and the surviving real numerator"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/BASELINE.md",
+      "sha256": "e998870b283ce36f6b4b8def691dc7bbaa254415911f3bf69e4916fc9f6b0f6f",
+      "size": 2381,
+      "title": "Zero-frame coupling: verified starting state"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/CLAIM_LEDGER.md",
+      "sha256": "58890cfd650a2cecb6f0e552b730190da86212c7aed049a068850f58f057227f",
+      "size": 4396,
+      "title": "Claim ledger: source coupling without a false normality verdict"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/COUNTERMODELS.md",
+      "sha256": "837a431d47bd670bea646dde1d3518ade3a1dad2d63ded44c6abc049629914d3",
+      "size": 3420,
+      "title": "Adversarial membership and first invalid steps"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/COUPLING_THEOREMS.md",
+      "sha256": "ea9dae215d14da6a2a176bc0e05c10994de419945e3c74721c1d6bd709e8e611",
+      "size": 4978,
+      "title": "What the zero boundary, angular phase and radial observer jointly determine"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/EXTERNAL_AUDIT.md",
+      "sha256": "9b580e444a698af5f40777487e481389dbba7d143a703ebe007703e3c410a995",
+      "size": 3391,
+      "title": "Primary mathematics and the operator-domain test"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/HYPOTHESES.md",
+      "sha256": "64ce268491553b9c7e6b521d779fe63ed86981006b99860f66b9b3a731b36f5b",
+      "size": 3431,
+      "title": "Prospective hypotheses and discriminators"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/INSTRUMENT.md",
+      "sha256": "c9909800834e3beafc46c1bf58168924aaf952f4e5b1fcd14cb7c3a3b76c97c9",
+      "size": 4718,
+      "title": "Exact finite coupled observer instrument"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/NEXT.md",
+      "sha256": "713cafd762f4dcccfed0b72f3e0bb2169195d58d87e92ec204597299737912e3",
+      "size": 2083,
+      "title": "One decisive next obligation: original carry-conditioned mixed correlation"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/OBSERVER_TRANSPORT.md",
+      "sha256": "92fbc811fcba441ab60f6355b6f2b2fa4ede481f85e97a5cad0f7b962412b992",
+      "size": 3835,
+      "title": "Observer inversion and the sharp boundary that remains"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/README.md",
+      "sha256": "08c93c5e19afa99df5a305c71d2b3607b4c97175e775c695f95b0f90382f5093",
+      "size": 5009,
+      "title": "Zero-frame coupling: exact reconstruction, sharp transport cost, open selected cancellation"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/SIGNED_WEYL.md",
+      "sha256": "99c683941f4ab536764f315452fa8c076c199a320d6e61012164f668595e0f63",
+      "size": 2781,
+      "title": "Direct signed-cancellation attempt: keep the mixed term"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/SOURCE_MAP.md",
+      "sha256": "2ea80858f1b49b3c10b3f5e5b11d864a625eeba86fef7206eedc3487c2ac9a4d",
+      "size": 3223,
+      "title": "Source families, exact pins and authority"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/VALIDATION.md",
+      "sha256": "ef2b9f412e79527bb735484c6c9e467c959278c7dd4a6d6e73e65852c14ab440",
+      "size": 5379,
+      "title": "Validation and exact authority"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_ad/CLAIM_LEDGER.md",
+      "sha256": "aa81db1ada6b474fc80567428f796042f12e2b3f77281a3b89e0160a2aacefaf",
+      "size": 2292,
+      "title": "A/D claims"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_ad/PREREGISTRATION.md",
+      "sha256": "e1478e68817579e27bff8b4beb8cb739fffd47098f52089044b114cce012baf2",
+      "size": 2133,
+      "title": "Prospective A/D checks"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_ad/PROOFS.md",
+      "sha256": "8ba542db2d6ca3e335ab4ba6d1d2688a334f501f237322e4146953a59d160a79",
+      "size": 16394,
+      "title": "Positive source-jet residuals, divergent infinite compensation, and exact seed visibility"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_ad/SOURCE_MAP.md",
+      "sha256": "0e3d8e0eebd6ba60a4763d8a8fa8e54355ac54c4ec60171d6b5ca23babd5607f",
+      "size": 2398,
+      "title": "A/D provenance and scope"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_ad/VALIDATION.md",
+      "sha256": "07e3ff701a3c44e8e7a082a5d2bf765a1d933a470d526713d638792f51e6c223",
+      "size": 3216,
+      "title": "Validation and independent source audit"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_be/PREREGISTRATION.md",
+      "sha256": "10861b521089450d187f0695609be2b871dcec94b819f4b8d81997c558953902",
+      "size": 2787,
+      "title": "Front B/E/G: observer inversion and analytic-boundary hypotheses"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_be/PROOFS.md",
+      "sha256": "cb4d02c569451b2d5f4934e6b52385fa799e308a1c3086b33d4ea2a6e3660c07",
+      "size": 13484,
+      "title": "Observer inversion, maximal boundary persistence, and the infinite-shift obstruction"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_be/REFEREE.md",
+      "sha256": "a7b192d29db5f2260401de5526ff750dc5e7f695da161e1ce183ee2b138455c4",
+      "size": 8570,
+      "title": "Independent same-model referee pass"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_be/REVIEW_INTEGRATION.md",
+      "sha256": "c4a3d7aca2c5cbfd03be6706d972c41e4b906ef3fbfda3b648f50801f300dd5b",
+      "size": 3522,
+      "title": "Final read-only integration review"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_be/VALIDATION.md",
+      "sha256": "5fec4a5dfc2d0d6ce71b3fd221f89e57e8126851261fa86384356e46627708e1",
+      "size": 2922,
+      "title": "Front B/E/G execution receipt"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/CLAIM_LEDGER.md",
+      "sha256": "fe4acb95b8b9d3f1ae57c8e460c86cd8453265d2df5dfa1d8b176444877709ad",
+      "size": 1987,
+      "title": "C/F claim ledger"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/HYPOTHESES.md",
+      "sha256": "f92f4a3aac5c031c0a5f1c8e718365bf240195b420995ed1f0888ac473630893",
+      "size": 2270,
+      "title": "C/F hypotheses before integration"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/NUMERIC_REVIEW.md",
+      "sha256": "494ef7e3bb3db5a49c33b2e94f8adb90b7231f176d15631a461232d07f409701",
+      "size": 1763,
+      "title": "Independent numerical check of actual coupled maxima"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/PROOFS.md",
+      "sha256": "d5c2f9e1a3d4d973772f53b30e539365f685bd69f6bab5aff6525950e92f24fe",
+      "size": 13241,
+      "title": "Coupled lag Bessel saving and the surviving mixed correlation"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/REVIEW_BE.md",
+      "sha256": "cc10ee572f2a4066bbdd8ba14eb736bfc57be33cec94f95d8f6056c270f94f63",
+      "size": 5707,
+      "title": "Independent pass over BE-02 and BE-03"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/VALIDATION.md",
+      "sha256": "616ce7118d841ebfe4d087b7052138d8236f1db781fc144de4470f357af1545b",
+      "size": 2376,
+      "title": "C/F exact validation"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/CLAIM_LEDGER.md",
+      "sha256": "b39bd6d20da6074e80a1a7e2a1258607947e6995e01142ddd05a1ad2daa9a930",
+      "size": 3592,
+      "title": "Claim ledger — critical truncation, relative zero and second/third Yoneda"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/COUNTERMODELS.md",
+      "sha256": "26de8d7f7bf75f01d473ca818b327ad91345a8e92ec6f1c5346172644a79089b",
+      "size": 2447,
+      "title": "Hostile controls and failed implication receipts"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/CRITICAL_CARRY.md",
+      "sha256": "711cba6e94deff0b3d671ff551bce897c5d6f63c700bb1e6ba13d262e0490fc4",
+      "size": 8627,
+      "title": "Critical source truncation: a second-order carry field, exact gauge and selected-orbit obstruction"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/NEXT.md",
+      "sha256": "20b463bca76139666243c3fe31464b576c73af35ca872cdd81505516c91c47a2",
+      "size": 4190,
+      "title": "ONE verdict-changing selected-source lamp after critical truncation"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/PREREGISTRATION.md",
+      "sha256": "f55716d182b695d88ed447bb6ba60af7dda66e6b4ab85f05be4ce2d238b280f4",
+      "size": 6667,
+      "title": "PREREGISTRATION — CRITICAL TRUNCATION × FIXED-RADIUS RELATIVE ZERO × 2/3-ORDER SOURCE YONEDA"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/README.md",
+      "sha256": "6924a58bda63b9161797b63e44ce9a6636686391da8dee02f8fe349853cf01fa",
+      "size": 5884,
+      "title": "Operation CRITICAL CARRY × FIELD-RELATIVE ZERO × HIGHER YONEDA JETS ⚡💜"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/RELATIVE_ZERO_JETS.md",
+      "sha256": "9add72b9154034c24f1a636044261939ede4b1bac43a4fdf3ddc60e7ed482917",
+      "size": 10449,
+      "title": "FIXED-RADIUS RELATIVE ZERO × SECOND/THIRD OBSERVER JETS × SCALE OBSTRUCTION"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/SOURCE_MAP.md",
+      "sha256": "2984aebe98ef31a12a8922f621b9f485e0688d14747e2a6e70ddecde65c091d5",
+      "size": 2289,
+      "title": "Source map / independent methods / authority"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/SOURCE_MULTIPOLE_JETS.md",
+      "sha256": "28991e5ae4c27e741600c62721f598694c664d2a0c04858ceb345e2562c6ec59",
+      "size": 4904,
+      "title": "ORIGINAL FOUR-POLE MOMENT JETS: baseline cancellation, hidden derivative and critical exponent"
+    },
+    {
+      "path": "research/2026-11-05/critical_carry_jets/VALIDATION.md",
+      "sha256": "c281a1f5ada1ef60895d69f859715ac362975cea488f518d5447875a8fb18ac2",
+      "size": 6107,
+      "title": "Validation — critical source truncation, field-relative zero, second/third observer jets"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/ARITHMETIC_DECK_RIGIDITY.md",
+      "sha256": "915005dcb65dfc8aca3b95658c7eb00e9ab37c768566b6027573ca22d4458ba0",
+      "size": 8209,
+      "title": "Post-prereg discovery: exact odd-cyclotomic deck rigidity of the Gaussian sphere observation"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/CLAIM_LEDGER.md",
+      "sha256": "bb37634bc2ef3c7d3fd761372edde1176cb177b518f1a0a25668f462d6dac4ee",
+      "size": 3371,
+      "title": "Claim ledger — exact types, outcomes and remaining debt"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/NEXT.md",
+      "sha256": "f2719ee1d5562bc9092af3afd47efaf002b26d72c7a6474b277d8f34836e7961",
+      "size": 2345,
+      "title": "Next decisive operation — make source chronology load-bearing"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/PREREGISTRATION.md",
+      "sha256": "82d89b100673bfbd234c1f3cc61ee6001182261e9578f7a47d5e73f860bc3d78",
+      "size": 5890,
+      "title": "Preregistration — Gamma × SUCC Gaussian sphere solenoids (2026-11-05)"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/PROOFS.md",
+      "sha256": "645ce503d39729aa1392ed03041e213961bae0e3785180a959fad9d66b9d2ddb",
+      "size": 13500,
+      "title": "Operation Gamma × Riemann sphere: intrinsic Gaussian solenoids and exact angular–radial circle"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/README.md",
+      "sha256": "2b1d9bc5bb562ba15f5c0fe857d73e15721b7ac41799884a6065a9ae3d4209e2",
+      "size": 4066,
+      "title": "OPERATION GAMMA SOLENOID × ORTHOGONAL RIEMANN SPHERE — 2026-11-05"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/SOURCE_MAP.md",
+      "sha256": "14acaea856ab523b9e3cff881ff3a8b7e1075df394387e57ad670552a085c5cf",
+      "size": 2921,
+      "title": "Source genealogy / typed provenance"
+    },
+    {
+      "path": "research/2026-11-05/gamma_sphere_solenoid/VALIDATION.md",
+      "sha256": "fd0e5855ef675860c92ca5bd5562f66c68db87914c085ffe1b4fcfac3cf5e49b",
+      "size": 4302,
+      "title": "Validation and reproducibility — Gamma sphere solenoids (2026-11-05)"
+    },
+    {
+      "path": "research/2026-11-05/gauge_sphere_tower/CLAIM_LEDGER.md",
+      "sha256": "c6113bdaa51c97e850201881eb177e8dce43a4e83eb04699bb8acc17a28db823",
+      "size": 3383,
+      "title": "Gauge sphere / arithmetic atom claim ledger"
+    },
+    {
+      "path": "research/2026-11-05/gauge_sphere_tower/NEXT.md",
+      "sha256": "0cac00df27eb8a4b1da708746062c4305af51d4f7a2ae4dcb05e14c3fcb85887",
+      "size": 3098,
+      "title": "Next decisive probe — from quantized charge to source-selected spectral transport"
+    },
+    {
+      "path": "research/2026-11-05/gauge_sphere_tower/PREREGISTRATION.md",
+      "sha256": "0f2dd34d58a38ee2b4f6cab9e525853560930f5e3c839c716329c638f4af2160",
+      "size": 6564,
+      "title": "Preregistration — Gauge-coded sphere tower / Russian-doll virtual field"
+    },
+    {
+      "path": "research/2026-11-05/gauge_sphere_tower/QUANTIZED_ARITHMETIC_ATOMS.md",
+      "sha256": "17f6abde06229d36acaae68d5031a7e876ad17c09a8d57862aaa99b96bc5316e",
+      "size": 10649,
+      "title": "Quantized arithmetic atoms? Sphere-covering charge, chosen Hamiltonians, and the spectral limit"
+    },
+    {
+      "path": "research/2026-11-05/gauge_sphere_tower/VALIDATION.md",
+      "sha256": "ef542635cb443548e0a14836f690695d1f0840a9b4bdf73aa36b72a38781fb6f",
+      "size": 2505,
+      "title": "Focused validation — gauge-coded sphere tower + optional quantum spectra"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/CLAIM_LEDGER.md",
+      "sha256": "c91d356b5bef1bad3bcc216187bdac26127739e4d1c41fe4628cc4fae00c03bd",
+      "size": 2972,
+      "title": "Claim ledger — history-first source observer and chiral shell duality"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/COUNTERMODELS.md",
+      "sha256": "13a1117c531626c9fa400dba6489967fcef7350b68191eb184cd5eb2aed201c5",
+      "size": 4382,
+      "title": "Hostile controls — why an objective SUCC history is not the same as a normality theorem"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/DECISION_PROTOCOL.md",
+      "sha256": "c706eea62be7e3906aecd0fd98853874487217109b9c4e4a5cfed07386ec0b14",
+      "size": 3299,
+      "title": "An internal observer that chooses next measurements, without manufacturing typicality"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/HISTORY_LEDGER.md",
+      "sha256": "988fcdb3f69f7c43093392375bd66892dfcd7e67b0f73801cfcad88af03b7148",
+      "size": 4074,
+      "title": "Exact SUCC History Ledger: source, realized branch, predictive ensemble"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/NEXT.md",
+      "sha256": "df667bafe917c3e66aaf4247e810259e5a345f48869e3b86de7899072004a0a5",
+      "size": 4322,
+      "title": "Next decisive lamp — source-history conditioned arithmetic inequality, NOT another virtual ensemble"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/PREREGISTRATION.md",
+      "sha256": "bf63d68cda85ef42833a8c6354471ac89ccf8917289c98946ac5c1e63ceb925f",
+      "size": 6865,
+      "title": "PREREGISTRATION — HISTORY-FIRST SUCC × CHIRAL SHELL DUALITY × SOURCE-CONDITIONED DECISION PROBES"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/PROOFS.md",
+      "sha256": "b96134b433bd414d2099dff6cf97f3eb50f35c58fd2f3426304d73ad8c6a707d",
+      "size": 16149,
+      "title": "HISTORY-FIRST SUCC: chiral shell duality, arithmetic branch pinning and causal observation bookkeeping"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/README.md",
+      "sha256": "ed3b5d45e4475544454d14155cb4ebc35f051939409e78248fb9a7b1e11efc49",
+      "size": 4442,
+      "title": "OPERATION HISTORY-FIRST SUCC: causal shell, sphere duality and observer policy"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/SOURCE_MAP.md",
+      "sha256": "1b1292fb4eb526e5317144fa4863fec48a987e480624b5be0fb178d82bea6f57",
+      "size": 3477,
+      "title": "Provenance, mathematical categories and source normalization"
+    },
+    {
+      "path": "research/2026-11-05/history_shell/VALIDATION.md",
+      "sha256": "92ee7c3f18ddfb2848b8f17b94c0445e23c6728f2c039903dc70eae23542c39f",
+      "size": 6559,
+      "title": "Validation — exact SUCC history-first sphere/shell and active observation experiment"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/CLAIM_LEDGER.md",
+      "sha256": "73509190c83e6da18cdcd48ddc34a4b575a22f016debefed6bd0d2f2887a2bce",
+      "size": 3131,
+      "title": "Claim Ledger — infinite field and multipartite BBP coherence"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/COUNTERMODELS.md",
+      "sha256": "b97b09e11d95ef61dbb858a420e9f8d5281daf1b884bb281cfa036d7f9a331d5",
+      "size": 3920,
+      "title": "Countermodels and no-go: coherence at infinity needs compatibility and access"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/NEXT.md",
+      "sha256": "b2a1682446ed8bc5d5bacae62f2fbbff33e862bbfecaaf3a540f09043fbfd77a",
+      "size": 2652,
+      "title": "Next source-bearing attack — can genuinely many-body gluing force selected signed cancellation?"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/PREREGISTRATION.md",
+      "sha256": "2f74aaf994df498c85b9c5426f6da9309472ab3942fe12ed472b6d2ddedf1929",
+      "size": 7310,
+      "title": "OPERATION INFINITE QUBIT FIELD × MULTIPARTITE SUCC SOURCE — PREREGISTRATION"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/README.md",
+      "sha256": "6df1235c73b83610ed3888b546c81ba68e8d60072996c864760ef6c6dd725940",
+      "size": 4041,
+      "title": "Infinite Qubit Field × Source-Compatible Multipartite Gluing"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/SOURCE_MAP.md",
+      "sha256": "9be11b43264e2d22a91f21b4ee44306eaddd55913563bb9454200154a0651831",
+      "size": 2657,
+      "title": "Source/provenance map — many-body SUCC gluing"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/THEOREMS.md",
+      "sha256": "1b9fb20c599f6e160f63e42bd9cf29d8a1dcc3eafbd508722e75f2f5aa1af707",
+      "size": 18412,
+      "title": "OPERATION INFINITE QUBIT FIELD — compatible many-body gluing for the authentic BBP source"
+    },
+    {
+      "path": "research/2026-11-05/infinite_qubit_field/VALIDATION.md",
+      "sha256": "770bfcd8add177e1f1344bd4992eaea5a49c3e98d4271b48fe7614f129b72620",
+      "size": 4850,
+      "title": "Validation — infinite cluster/BBP source gluing"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/README.md",
+      "sha256": "847cf86017f2842b49864958f733245bc893a4b0096bc12e988a9dcbd79c02e4",
+      "size": 6619,
+      "title": "Operation Main XX — history-first π proof forge (2026-11-05)"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_a/CLAIM_LEDGER.md",
+      "sha256": "55e45f09115da80e367722fc08b0dc5d8debea472582c92988b98103eb446994",
+      "size": 3998,
+      "title": "Front A claim ledger"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_a/COUNTERMODELS.md",
+      "sha256": "f0067cd6d4f9ecb40fe5808298351ffc7a15a324591de50fa84d5dcac0a29966",
+      "size": 2560,
+      "title": "Front A countermodels and controls (with receipts)"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_a/NEXT.md",
+      "sha256": "b8f26a6075cbbb054ab5a33d05f6e06d259855dbbd784f6493a3c62abf36ccc1",
+      "size": 1999,
+      "title": "Front A — next falsification opportunities"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_a/PREREGISTRATION.md",
+      "sha256": "a419807bd3a8b7d5020c730d2224d9956928fd5ae0655043b2e88ac72cd13a58",
+      "size": 6197,
+      "title": "Front A preregistration: the Clausen gate and the carry gate"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_a/PROOFS.md",
+      "sha256": "2dc30b11c581aa7299714526a6cadbe51d99ea20aca78d395608857f7896da14",
+      "size": 21223,
+      "title": "Front A — Clausen gate audit, the Clausen–carry lemma (dead), and its corrected compactness form"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/CLAIM_LEDGER.md",
+      "sha256": "ec0ff8702f4d3ba2c64c214f0997d6c4b23e18b554a8710d54fccda95714ba1f",
+      "size": 5227,
+      "title": "Front B claim ledger (Main XX, 2026-11-05)"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/NEXT.md",
+      "sha256": "8e4020973da3e386ac87d245c9bde8b41ae5b4029ead5f98ca2ec9c7203553bd",
+      "size": 2435,
+      "title": "Front B — next falsifiable targets"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/PROOFS.md",
+      "sha256": "271b198a51922907805ff27ee5a396503f7c14c994ce6f5b396bdf070762b4e9",
+      "size": 19955,
+      "title": "Front B — the critical carry innovation is an orbit discrepancy; its normality transport needs stationarity"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/VALIDATION.md",
+      "sha256": "49b7f2e71c7a9428283ad517f3f183f886dca6bd30f4376732ce58063b2298c6",
+      "size": 2296,
+      "title": "Front B validation index"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/hostile_review/REVIEW.md",
+      "sha256": "118ea1962fc246a46f29aa367790b6aadbe52a35e6a923653d47e8110c663f25",
+      "size": 3651,
+      "title": "Front B — hostile crucible record"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/numerics/PREREGISTRATION.md",
+      "sha256": "5ca63f0a751d00c5b36ca7cd738a2e724dbd4ee22494ea031c1217d280636551",
+      "size": 7694,
+      "title": "PREREGISTRATION - Front B carry-transport probe (written BEFORE any computation)"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_b/numerics/VALIDATION.md",
+      "sha256": "8f4ea01b2c79012609963cf793f2bf2a00e672a1b2f44269bc19d61be871cf93",
+      "size": 17037,
+      "title": "VALIDATION - Front B carry-transport probe (Daniel Bernoulli)"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_c/CLAIM_LEDGER.md",
+      "sha256": "73433d2166e0585590991878fecdba38effd1000cf9a2e7b25d778921408bf0d",
+      "size": 5084,
+      "title": "Front C claim ledger"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_c/COUNTERMODELS.md",
+      "sha256": "35de892910e036e7c939d65478cddee2f5af3bda61eeef31e1e78065fc3b9d2c",
+      "size": 4039,
+      "title": "Front C countermodels"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_c/NEXT.md",
+      "sha256": "7107a5a8d6f1d73309f8546a73d95fa1f690b169f1a303194ab817e265f52493",
+      "size": 2521,
+      "title": "Front C: the single most discriminating next inequality"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_c/PREREGISTRATION.md",
+      "sha256": "a309e4e123a3a070412648c3e157f3640bb51868c941e18a88342c2be6c40153",
+      "size": 7609,
+      "title": "Front C preregistration: mixed angular-radial correlations, prime-Frobenius orientation, and pair exclusion"
+    },
+    {
+      "path": "research/2026-11-05/main_xx_forge/front_c/PROOFS.md",
+      "sha256": "0058d792b100e3cd49427780ed2771b66097a1dbd87b38ec794ec4a08255e841",
+      "size": 27062,
+      "title": "Front C: proofs"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/CLAIM_LEDGER.md",
+      "sha256": "07e1913eaf650e0d67b18dc750cbafd961cc36a4afdbdad0fda523542bfdf991",
+      "size": 2506,
+      "title": "Claim ledger — orbit exclusion vs selected equidistribution"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/FINITE_DIAGNOSTICS.md",
+      "sha256": "da388423f48df81ff92bea6918adc52e8e1051ec22d32bffdefdb294a9675b7e",
+      "size": 4077,
+      "title": "Fresh exact-source finite diagnostics — orbit exclusion, NOT normality"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/NEXT.md",
+      "sha256": "f2e681d08c98d9c4d8a9f609c547012475386a988fe426b93827340a6bb7bf6f",
+      "size": 2781,
+      "title": "Verdict-changing probe — a source-specific exclusion/repulsion INEQUALITY"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/PREREGISTRATION.md",
+      "sha256": "b47d96ec93c8b96815459b722f05ba37711ef9d5bcad744b1ef5f24d4f767489",
+      "size": 5490,
+      "title": "Operation PAULI × FEKETE: orbit exclusion that is actually sufficient for equidistribution"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/PROOFS.md",
+      "sha256": "7943e4613422d4083b685d1c41de4f760b3149a84bc884937ef4efe73e08fdf8",
+      "size": 13290,
+      "title": "Orbit Pauli exclusion: Fourier frame purity and a quantitative antisymmetric Fekete certificate"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/README.md",
+      "sha256": "c71c83ff4dcaf38d4c74d5760659cf163ccebb4cbe85a7ad536da88d89f92557",
+      "size": 3155,
+      "title": "Operation Pauli × Fekete: a genuine exclusion-shaped route to BBP equidistribution"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/SOURCE_MAP.md",
+      "sha256": "6f51bc891f35bd3ec207a0d4a822dd55de7ea9f48f0423735284b99a576ccd30",
+      "size": 3195,
+      "title": "Source map and independence — SUCC Fekete/Pauli orbit exclusion"
+    },
+    {
+      "path": "research/2026-11-05/pauli_fekete/VALIDATION.md",
+      "sha256": "6edf59d6ccc8e8490f8bf519ee97b187b04e8b7c91ddecddc30e7e6e706cd06d",
+      "size": 3472,
+      "title": "Validation — original-source Fekete and finite Fourier exclusion"
+    },
+    {
+      "path": "research/2026-11-05/pointed_cocategory_transport/PROOFS.md",
+      "sha256": "591dfdbc2250aff91325f609434c8054747897555fb793fa1bf770bfffc5ad6e",
+      "size": 10934,
+      "title": "Pointed cocategory / virtual support: BBP gauge transport and its exact boundary"
+    },
+    {
+      "path": "research/2026-11-05/pointed_cocategory_transport/SOURCE_MASS_BOUND.md",
+      "sha256": "1e69f0086e91f40b1205da72d8d04bfe479deeca4a8e5f8f3c56ca5a11530fcf",
+      "size": 6750,
+      "title": "Original BBP comoving-gauge source mass: an improved uniform Weyl transport constant"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/BETA_BOUNDARY_ESTIMATE.md",
+      "sha256": "0e7861b0aa7c10ef1096cbc2deafb9567c7eb2decee98cddf8490a9bd561d3c1",
+      "size": 3771,
+      "title": "Post-preregistration Gamma/Beta boundary estimate for the first active prime jet"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/BETA_VALIDATION.md",
+      "sha256": "41f2809a54f4c31d3dc66017517a2bf858b91b0b2668307f4a4b1759684a5286",
+      "size": 325,
+      "title": "Beta-boundary numerical calibration"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/BOST_CONNES_POSITIVE_LADDER.md",
+      "sha256": "515ac385f32be214c0a234bdb2da8d62eaaae1536b82df169d741da8f7a4d5c2",
+      "size": 6257,
+      "title": "Independent Bost–Connes cross-check: positive prime ladders versus signed Weil jets"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/CLAIM_LEDGER.md",
+      "sha256": "5d992399556defc7791771a54ae0c62393f0c65811ca5bab9a6ce2b02f71c26b",
+      "size": 3490,
+      "title": "Claim ledger and genuine vs analogous “negative prime reservoir”"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/NEXT.md",
+      "sha256": "627d9f2415aee09b0958b3439ee2a88bc689c9cf44fd9e0c34f65ed369d07ea1",
+      "size": 3817,
+      "title": "Next verdict-changing probes — where arithmetic prime reservoir could meet critical zeros"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/PREREGISTRATION.md",
+      "sha256": "93d0c45f63194138363c9f2d614af360cb4329d83feabce4b79b9f38b183a388",
+      "size": 8193,
+      "title": "Preregistration — prime-jet signed reservoir, gamma balance and Gaussian character obstruction"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/README.md",
+      "sha256": "bbd7f7804047e67dbcef21df83ce4ad3b607c3ca7598c201316b450af145637a",
+      "size": 3152,
+      "title": "PRIME-JET RESERVOIR × GAUSSIAN FOUR-SHEET CLOCK (2026-11-05)"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/SOURCE_MAP.md",
+      "sha256": "2f973fa5df3b41f906e8b7a126785033362ff266dc092e5ea7427ad1234c4442",
+      "size": 3906,
+      "title": "Exact source genealogy and no-silent-transport types"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/THEOREMS.md",
+      "sha256": "7351c55ebbcd61cfe81c5c8b1cf06e4b459028d25d4b100751716c03231a7c68",
+      "size": 12862,
+      "title": "Operation PRIME-JET × GAUSSIAN SOURCE GAUGE: signed energy bands, critical line and arithmetic fiber"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/V4_GAMMA_CLOCK.md",
+      "sha256": "9f2b5fb2302a1465bb886b1930ebbed979a812d1867e1e929373d8951e433952",
+      "size": 7649,
+      "title": "Post-preregistration discovery: the four-sheet Gaussian prime clock and Gamma-weighted unitary transport"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_reservoir/VALIDATION.md",
+      "sha256": "80f642967109ff7b9e4c59b17175afffda33af0b92ab63f39d8d23596492965e",
+      "size": 4985,
+      "title": "Validation & computational receipts — prime-jet reservoir (2026-11-05)"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_volterra/CLAIM_LEDGER.md",
+      "sha256": "471005355437cbd75eedaf1f522049defbe8cf0a07a87cfc81f784fbd03a9233",
+      "size": 1974,
+      "title": "Scoped RH-side ledger"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_volterra/PREREGISTRATION.md",
+      "sha256": "34c47f75f5b34ea1bbaef1fc1c92389df06e42d3d5ad7cc847d02405b967b00d",
+      "size": 1375,
+      "title": "Prime-jet boundary research preregistration"
+    },
+    {
+      "path": "research/2026-11-05/prime_jet_volterra/PROOFS.md",
+      "sha256": "095a7695cec393573a3adc4483ad21b1cc645e6f0bcc8670cb5842f3a3f14a60",
+      "size": 4726,
+      "title": "A joint Volterra bound for newly active prime shifts"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/BASELINE.md",
+      "sha256": "51584ee8049e6931302e568154c4fd45d835a64f4960bfcd4f4d09a8f39137a9",
+      "size": 2058,
+      "title": "Verified baseline and execution scope"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/CLAIM_LEDGER.md",
+      "sha256": "76a3967442bfa1c7097bc1bd91afcfe6e5966916824d7b698a950e50d30fe0e5",
+      "size": 2219,
+      "title": "Claim ledger"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/CLAUSEN_SHELL.md",
+      "sha256": "fb301aed89466ca84be1edd8140265e39f41f58d8ccc4a4144960dbadecda83e",
+      "size": 1052,
+      "title": "Clausen audit and finite regularized resolution"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/COUNTERMODELS.md",
+      "sha256": "33e20dd8c9d6a19da8934244adf2cac95d389131a1fa215b6af7788a4c31d339",
+      "size": 2451,
+      "title": "Hostile control ledger"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/FEKETE_EXCLUSION.md",
+      "sha256": "de16732b86de9d69c5f87b9c95be38b07d568c6e02616168d8657b522488f73f",
+      "size": 805,
+      "title": "Regularize before paying the selected sign"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/GEOMETRIC_TRANSPORT.md",
+      "sha256": "cc465d686a736ea8310d89084540b7f0364b48fe3cc9f8c07ada090e72d38383",
+      "size": 4703,
+      "title": "Finite-delay charge obstruction and audited geometric interfaces"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/HEX_CELL_PRESSURE.md",
+      "sha256": "523b5e4a06560065bc0ffd28c63ae1f04db90073a81ecdca841e2c5aee85e918",
+      "size": 1100,
+      "title": "A weaker growth premise, with an exponential obstruction"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/INDEPENDENT_REVIEW.md",
+      "sha256": "03740db3e6a4a013aae21efbd239e99ba7b652710bed620cf2a12abaeda07338",
+      "size": 1402,
+      "title": "Review provenance"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/NEXT.md",
+      "sha256": "9a502c486ca0ec520f788c3cfde7c00b1aaa5c2eb8be055a08ff0c2929b27ea9",
+      "size": 1934,
+      "title": "One verdict-changing source comparison"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/OBSTRUCTIONS.md",
+      "sha256": "f753c53c0755658507620ae95daa84f0e1a3bc9d3a11e6ad7b995af6548e5df2",
+      "size": 2174,
+      "title": "Obstructions with receipts"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/PREREGISTRATION.md",
+      "sha256": "67da5e240aca4233c8414039281c080b0fcc5c3ceb6b68870758f8c5ad5a1400",
+      "size": 1541,
+      "title": "Final arithmetic pin: coordinator preregistration"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/PROOF_DEPENDENCIES.md",
+      "sha256": "98b2fe3eb41015063ddde93e4d380e280306feb6fb104716ce5838d850e95fad",
+      "size": 1425,
+      "title": "Proof dependencies and forbidden jumps"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/README.md",
+      "sha256": "81a723f00a189e1a9b22989cf12adf727eacd2eff36b055000cd92b1837f159f",
+      "size": 1718,
+      "title": "Operation pi: final arithmetic pin research round"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/SELECTED_CARRY.md",
+      "sha256": "1abdba31ee2d759b38a7f1ce686e19c083f5c4390c198615a87be2db36ad346b",
+      "size": 998,
+      "title": "Carry arithmetic result"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/SIGNED_WEYL.md",
+      "sha256": "4971ef8ba7d4208ce7a6ac636efc214bb1a39f6821fdbc253699505a45a85395",
+      "size": 1268,
+      "title": "Direct signed target: no saving obtained"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/SOURCE_MAP.md",
+      "sha256": "7cedc0f0625d0b93f98809b8c074367d70c34c8e5689c81f9d8888b2a36290be",
+      "size": 2100,
+      "title": "Source and evidence map"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/VALIDATION.md",
+      "sha256": "e0d4615228f3504f07f707cbe7e3714657460f1b6be5369db537f62858b1569c",
+      "size": 1444,
+      "title": "Reproducible validation gate"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/CLAIM_LEDGER.md",
+      "sha256": "e7ad7a8d4d80fabc6f4fd1b9549d58168a1c010e1a631fe73a17792f6ada48ce",
+      "size": 1752,
+      "title": "Alpha ledger"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/GEOMETRY_AUDIT.md",
+      "sha256": "1e51de779662cbd5dcb7bf4e5fa91b2f95d23fd8deece486428201f8682bbd2e",
+      "size": 7534,
+      "title": "Rotated independent EPSILON/ZETA audit"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/INDEPENDENT_GT_REVIEW.md",
+      "sha256": "adc8fa7b5aba4a62bdda48e4114761979fbcdb5c1bbbb85180e812f5477f4dde",
+      "size": 2742,
+      "title": "Independent finite-delay observer review"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/NEXT.md",
+      "sha256": "045b973c3b77c657ad5c6e140d618ea482a8e79c38d2cdae299ae3b44060aa4c",
+      "size": 1547,
+      "title": "Next verdict-changing probe"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/PREREGISTRATION.md",
+      "sha256": "bb0efbe138d193202ea5bf0f9167cf54a36ac501404f426e12301fc8ca0767ff",
+      "size": 2338,
+      "title": "Alpha carry arithmetic preregistration"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/PROOFS.md",
+      "sha256": "95e7391e0c8c931738fad2c0b0e1b4e6495ab0b901da49ef8456d1ee944b8a6c",
+      "size": 6979,
+      "title": "Exact macro-carry correction exclusion, and its selection obstruction"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/SOURCE_MAP.md",
+      "sha256": "eb7783a7a8a81a9cf166b11890d24dc68210a4af89588018893ca815b50a213a",
+      "size": 2004,
+      "title": "Source map and proof dependency boundary"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_alpha/VALIDATION.md",
+      "sha256": "555df88efbc60059c1546033613c4a173d31ae2e56dc3117c3631fb16b4ba55f",
+      "size": 2557,
+      "title": "Alpha validation"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/CLAIM_LEDGER.md",
+      "sha256": "d7666738be05fa820031e073a7c715f1b34d3f8d9c112952e652a46a858dcf61",
+      "size": 2834,
+      "title": "Delta / Gamma claim ledger"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/COUNTERMODELS.md",
+      "sha256": "6b270ff07e65d334ededf8e23871209990fe779c9db25ba6b412421814861a36",
+      "size": 2445,
+      "title": "Countermodel discrimination"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/NEXT.md",
+      "sha256": "3f9770284567c5e81214bb3457d627fa751df10e756f0bb189e9ea03e1e42873",
+      "size": 1765,
+      "title": "Next verdict-changing comparison"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/PREREGISTRATION.md",
+      "sha256": "901ce359a0c9296debe6def3f2f87c1a75d91a9b419766ad1eb37eba6be49b07",
+      "size": 2668,
+      "title": "Delta / Gamma preregistration"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/PROOFS.md",
+      "sha256": "8e455cc648af96dad45ef30e447f3d44e585c4bc154cb0e9dba32da1924a0b4d",
+      "size": 9643,
+      "title": "A finite causal cut for the regularized determinant"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/SOURCE_MAP.md",
+      "sha256": "8b52bdb40f2a7c9f0f98a0c68b8439b40be3d7586839a9dcb21b98f10da29692",
+      "size": 1817,
+      "title": "Source map and preserved contracts"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_delta/VALIDATION.md",
+      "sha256": "555c3dd3f0500d7610e833a6dbe6ac125a3d160ffc2b61a0a1d32cacff16930b",
+      "size": 5128,
+      "title": "Delta / Gamma validation"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/CLAIM_LEDGER.md",
+      "sha256": "53196c80b8accf415f906c2dd8d0806d7947c767be378a65a8f76689885d70e3",
+      "size": 2048,
+      "title": "Referee claim ledger"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/COUNTERMODELS.md",
+      "sha256": "6487257976c7d4ea9d7ca19259ea574f26027e45d08bc2c26b5e9d54333212c7",
+      "size": 2964,
+      "title": "Countermodel matrix and hypothesis boundaries"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/INDEPENDENT_REVIEW.md",
+      "sha256": "348a8062193ef4cbcbecd6046f0b78cc0fd6adeab8cc872aa91cd5ba450ef722",
+      "size": 5990,
+      "title": "Independent hostile review of candidate claims"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/LITERATURE_AUDIT.md",
+      "sha256": "dc0059d4dcfe1f932d678c74dd12bcaa9737a8c042efebb0da90b80244479551",
+      "size": 2740,
+      "title": "Front ETA: primary-source arithmetic-dynamics audit"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/NEXT.md",
+      "sha256": "277f393a5ea28763bbc30d3bd863febf44c49c896a8638e1265c9e697259d329",
+      "size": 1196,
+      "title": "Next verdict-changing arithmetic comparison"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/PREREGISTRATION.md",
+      "sha256": "87b43ffd415f82c4d1d2913213e2914408eef943fcfa5fbc19b6c8ffd9f7fbb9",
+      "size": 3156,
+      "title": "Independent referee preregistration"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/PROOFS.md",
+      "sha256": "e98dc656e7c5563d35408ad7a76bcc30ccbe2fcdf3c4f6bb181ce88efcaa1c66",
+      "size": 11087,
+      "title": "Pressure growth, entropy, and adversarial completions"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/README.md",
+      "sha256": "066c12d5c81f280a9114d742f4e81e07aa43fd958fc7237a7802f74682c7247b",
+      "size": 926,
+      "title": "Independent entropy and hostile-control front"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/SOURCE_MAP.md",
+      "sha256": "5afd857b112207334e86ff5fcf227ba36f6da34ae01d2004f9cd79bad91426e8",
+      "size": 1903,
+      "title": "Source and independence map"
+    },
+    {
+      "path": "research/2026-11-05/selected_orbit_final_pin/front_referee/VALIDATION.md",
+      "sha256": "41fa025287a228b8ad443da253035afda0a0ddc2b61abbb6b1b46df8a95253d1",
+      "size": 738,
+      "title": "Validation"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/ANGULAR_RESPONSE.md",
+      "sha256": "874a200fe5729878bd5c3cb7a3baf481673fc5e4b640314fb68c0407a55b9603",
+      "size": 6168,
+      "title": "Angular response at the radial observer's exact zero: a signed cross-channel theorem"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/CLAIM_LEDGER.md",
+      "sha256": "eca9531e5557d59a2604a54f3e0b8f6a0aab64f7d3db03bcf52d636331a9cb8c",
+      "size": 3367,
+      "title": "Claim ledger — tau saddle and virtual observer"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/FINITE_DIAGNOSTICS.md",
+      "sha256": "d252574ab35f2ff318dc1902201a1bb14b72e4c41758a58511c456568eaf6a46",
+      "size": 3469,
+      "title": "Independent finite diagnostics — tau saddle observer, 2026-11-05"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/NEXT.md",
+      "sha256": "deef21dba28618de2786c1650d186f9bd04d81ec33256b30acab0dc96febad3c",
+      "size": 3554,
+      "title": "Next verdict-changing work — couple the τ saddle to the selected angular/carry orbit"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/PREREGISTRATION.md",
+      "sha256": "52c8ad6dc3870aa923b1b03c17f9aacf6e3fd658a6a5d7d0659ac4df57b05cf7",
+      "size": 4882,
+      "title": "Operation TAU SADDLE × VIRTUAL OBSERVER OPTIMAL DEPTH — chronological preregistration"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/PROOFS.md",
+      "sha256": "bc973fd177e48e30ad082b27592ee1d1a19e1441ad86a03fc405d7ae41569913",
+      "size": 11719,
+      "title": "TAU SADDLE: optimal truncation of the authentic radial BBP observer"
+    },
+    {
+      "path": "research/2026-11-05/tau_saddle/README.md",
+      "sha256": "6a1d400c1370c7a36c3acf176b7f4c0d8998939f5975fc3706166e3f6383665a",
+      "size": 3977,
+      "title": "Operation TAU SADDLE × OPTIMAL VIRTUAL OBSERVER"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/CLAIM_LEDGER.md",
+      "sha256": "efbb2823fcbdb741872ae45c7606be35c00ae57e8b9e3a74fa7c5a116f05b6a4",
+      "size": 2966,
+      "title": "Claim ledger — paired zero and first-order entanglement"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/COUNTERMODELS.md",
+      "sha256": "8f2ed90d3edd8763e1fc08010b06d76ea35f8232cf1ae6b0a5ab8e85fbe333a6",
+      "size": 3952,
+      "title": "Countermodels — where the paired zero/entanglement interpretation stops"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/NEXT.md",
+      "sha256": "47b4d5dd9793932fbec1c59cce6732105b08cc5a5fc90b300b19ccfa42c12f89",
+      "size": 2739,
+      "title": "Next discriminating probe — can source gluing constrain original signed phase?"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/PREREGISTRATION.md",
+      "sha256": "2870180c8307829f27b2649c0308a58cdef64455e3830cc49e59c7df2630be10",
+      "size": 6501,
+      "title": "PREREGISTRATION — OPERATION UNIT-PAIR ZERO × BELL GLUING × RATIONAL COHOMOLOGY"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/README.md",
+      "sha256": "349a55554a3dd9df07cd116ff04914a122bd13de3628edf2038bbe986988b9a3",
+      "size": 5255,
+      "title": "Operation UNIT-PAIR ZERO × FIRST-ORDER BELL GLUING"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/SOURCE_MAP.md",
+      "sha256": "c196270e44ddc499bd316debce0949f1590c740b545cfb36576af3c9d6a36019",
+      "size": 3738,
+      "title": "Provenance and independence — unit-pair zero, original BBP and Bell analogy"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/THEOREMS.md",
+      "sha256": "b7c7a5767e916ee6dc497aa8e18e3772d2a0b8b5a97dac676f09a38de798853f",
+      "size": 16027,
+      "title": "UNIT-PAIR ZERO: an exact relational lift, a quantum-information analogy, and nontrivial rational-time source cohomology"
+    },
+    {
+      "path": "research/2026-11-05/unit_pair_bell/VALIDATION.md",
+      "sha256": "61e832b7a903e1d00bb19efe40257e5ebf72ff355849fdebf373336406e5d28a",
+      "size": 3568,
+      "title": "Validation and computational scope — Unit-Pair Bell Gluing"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/CLAIM_LEDGER.md",
+      "sha256": "e07f6e1ef0d9c34a12804dfd915107af478d3210cbf1ef200c5edb890b581696",
+      "size": 2951,
+      "title": "Claim ledger: source hypothesis, Yoneda, and source-selected Haar"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/COUNTERMODELS.md",
+      "sha256": "ed419672a1d8262a1c1afaf9fc1b4b3968c58a93978968a7c53f2c0d6f388b5e",
+      "size": 4059,
+      "title": "Hostile controls: source point ≠ source-time distribution"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/NEXT.md",
+      "sha256": "6d74cc7dea46adb731536e8e860c28e9c9eb553160e859c0533a6c65823854b1",
+      "size": 3924,
+      "title": "The source-selected arithmetic gate: bounded 16-adic observational collision pressure"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/PREREGISTRATION.md",
+      "sha256": "ad69466417e0272e6e28e7690505021dcb9612987e584d77b1508a7ac234b8d5",
+      "size": 7812,
+      "title": "PREREGISTRATION — OPERATION OBSERVATIONAL YONEDA × RADIX-CELL PAULI PRESSURE"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/PROOFS.md",
+      "sha256": "fb008d6774e9e1d747ccddabd926b623d9af7d0c2b9da80b1c2b264699387bc2",
+      "size": 16330,
+      "title": "Operation OBSERVATIONAL YONEDA × HEX-CELL PAULI PRESSURE — source-faithful theorems"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/README.md",
+      "sha256": "4886c037b82ba02355518d568d25fee8de75a05c4e786fc09db996af8bcfa68a",
+      "size": 4804,
+      "title": "Operation OBSERVATIONAL YONEDA × SOURCE-CIRCLE × HEX CELL PRESSURE ⚡💜"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/SOURCE_MAP.md",
+      "sha256": "1b5b5b6c105809eb214606e8dccf55756598947a34beea67271bda87d3df8165",
+      "size": 3773,
+      "title": "Source/observer genealogy — true Yoneda vs source-selected Haar"
+    },
+    {
+      "path": "research/2026-11-05/yoneda_circle/VALIDATION.md",
+      "sha256": "cf1958edce4142e3eedb9b916d6814b1b58e2045c856aaca65a075ae3ab20625",
+      "size": 4460,
+      "title": "Exact validation and mathematical authority — observational Yoneda × collision pressure"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/CLAIM_LEDGER.md",
+      "sha256": "521ad6c5fa7f549c6bdf302b85e935fa2902068a7131ebec4020e2f8766b1e6f",
+      "size": 2970,
+      "title": "Claim ledger — ZERO OBJECT × CASIMIR SOURCE PRESSURE"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/COUNTERMODELS.md",
+      "sha256": "ea2c6001500eb9fef4abf041bb184c590a6c9144ef8a4df4e629551c8fe50712",
+      "size": 3782,
+      "title": "Crucible: what zero, Casimir pressure and ensemble averaging do NOT prove"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/NEXT.md",
+      "sha256": "5cb017ea12ab9fd15997293d1808fae117d9c662b02ceeb81f935848c994bb9a",
+      "size": 3441,
+      "title": "Next decisive probe: pointwise arithmetic regularity AT the selected zero seed"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/PREREGISTRATION.md",
+      "sha256": "a52cff234ebdb529253254c9377d08d23551cf1783ac7c0f6038d1517f913d13",
+      "size": 6270,
+      "title": "PREREGISTRATION — ZERO OBJECT × CASIMIR CONSTRAINTS × SELECTED BBP EXCLUSION PRESSURE"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/README.md",
+      "sha256": "4c67767c685acd907a19503a17c88da640fb674aa35d9d68aff5430d7b9bdaa6",
+      "size": 5558,
+      "title": "Operation ZERO OBJECT × CASIMIR FIELD × BBP SEED PRESSURE"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/SOURCE_MAP.md",
+      "sha256": "6795e4a075b90a79e5763f3aa97a521e980eb328313108f4834ef64111ba9674",
+      "size": 2708,
+      "title": "Source genealogy, independent mathematical methods and claim boundaries"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/THEOREMS.md",
+      "sha256": "d16923ccb383bd93bcfd76d7294fcc6b785472d7e3964389881d00e090d44282",
+      "size": 19123,
+      "title": "ZERO OBJECT × CASIMIR PRESSURE: source-conditioned field and selected-orbit obstruction"
+    },
+    {
+      "path": "research/2026-11-05/zero_object_casimir/VALIDATION.md",
+      "sha256": "0a22c85ec597b214d0601ce4ce37dd16a9ea2927a1ed9a60efe6da3880bd5a25",
+      "size": 4850,
+      "title": "Validation — zero-object Casimir analogue and source-seed pressure"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",

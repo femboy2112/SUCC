@@ -1,0 +1,29 @@
+[
+  {
+    "name": "AD receipt",
+    "exit_code": 0,
+    "command": [
+      ".venv/bin/python",
+      "research/2026-11-04/zero_frame_coupling/front_ad/probe.py"
+    ]
+  },
+  {
+    "name": "BE receipt",
+    "exit_code": 0,
+    "command": [
+      ".venv/bin/python",
+      "research/2026-11-04/zero_frame_coupling/front_be/probe.py",
+      "--verify",
+      "research/2026-11-04/zero_frame_coupling/front_be/FINITE_RECEIPT.json"
+    ]
+  },
+  {
+    "name": "CF receipt",
+    "exit_code": 0,
+    "command": [
+      ".venv/bin/python",
+      "research/2026-11-04/zero_frame_coupling/front_cf/probe.py",
+      "--verify"
+    ]
+  }
+]

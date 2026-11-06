@@ -1,0 +1,7 @@
+# Reflected prefix and signed Weil research protocol
+
+Parent 4ff640637d18b8161599402f7c6ba23388a63652. The original four taps and the zero seed are fixed. Rebuild the odd-conductor primal through the source projector. No digits, zero ordinates or random points as construction inputs.
+
+Before inspecting finite reflected-coefficient holdouts, predict that nearest-integer rounding of the reflected N-block polynomial recovers every character coefficient through floor(.80 N) and fails at floor(1.15 N) for N = 29, 53, 101, 197. Check all using rational arithmetic, both by reversing raw tap-generated polynomials and via a binomial tail recurrence. Retain exact discrepancies. A wrong reflection or a sign reversal must fail; sample outside the stable window and preserve the first failure. No numerical results are needed to prove the all-N entropy threshold.
+
+Target: determine a two-sided asymptotic for the maximum stable prefix, turn its recovered integers into the exact arithmetic tape through Dirichlet convolution, and specify which test supports it controls. The missing real estimate is still the actual selected signed correlation or circular triangular energy. Test whether all of these Euler recoveries can survive a wrong seed while the selected finite Weyl distribution changes. This separates source-law information from a selected empirical state. Source-preserving inputs to the bridge include complete marked block coefficients; a scalar endpoint alone does not expose the polynomial. Other tracks record their own controls.

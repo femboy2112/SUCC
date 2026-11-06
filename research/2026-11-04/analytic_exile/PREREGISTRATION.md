@@ -1,0 +1,18 @@
+# Preregistration — analytic-tail exile and fixed-frequency obstruction visibility
+
+**Date:** November 4, 2026. Parent draft PR #493 pinned exact SHA `de5e7cef12453e7efa8f41488d09d2e8ace64235`. This file is committed BEFORE the new original-source finite holdouts. All tests and derivations use the SAME mathematical source; not independent human review.
+
+**Unmodified contract:** `U_0=0`, `r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)`, `U_n=16U_(n-1)+r(n)`. `X_n=16^n*pi/16=U_n+T_n`, authentic `0<T_n<1/(64n^2)`. No external pi digits are test inputs. Do not edit main, immutable source, historical proof/Lean, workflows or old PRs. New branch stays draft.
+
+**Claim targets (falsify on exact algebra, not fitted data):**
+- AT-01: on all positive n, an analytic tail bounded by n^-2 is L1, so original X and U fixed-frequency Weyl sums differ by bounded O_h(1), and on epochs [A,2A), their normalized Fourier coefficients differ by at most pi*|h|/(32 A^2). No nonnormality obstruction at fixed h can reside **solely** in the positive Gamma completion tail.
+- AT-02: the standard *UNWEIGHTED* Fourier-band energy is NOT equivalent to shifted triangular energy. However the source-selected **weighted** band W_(A,H)=sum_{1<=|h|<=H} sinc(pi h/q)^2 |c_A(h)|^2 with H=ceil(q^2) has exact |(J-1)-W|<=2q²/(pi² H), thus J=o(K) iff W=o(K) when K→∞.
+- AT-03: source-forcing Ward ladder: for any epoch A>=2, fixed integer h≠0, and j>=0, `|c_A(16^j h)-c_A(h)| <=2j/A+pi*|h|*(16^j-1)/(32 A^2)`. A persistent |c_A(h)|>=eps forces >=(2 eps²/pi²)(L+1) J excess, with L=floor(log_16(q/(2|h|))) when source error <=eps/2. It cannot hide in the **high-frequency analytic truncation tail**. This does NOT by itself exclude such an obstruction or prove pi normality.
+- AT-04: finite digit truncations of an explicitly known base16 normal Champernowne sequence are individually nonnormal. The iterated limits of the normalized h=1 exponential average in truncation M versus horizon N do NOT commute (1 vs 0); only source-synchronized, uniform-in-horizon estimates can support a global property. This is a classical countermodel independent of pi's unknown normality.
+- AT-05: Euler-Mascheroni's logarithmic `(k-h)/(32n)` off-diagonal channel slip is not the π diagonal: for k=h the 1/n term cancels exactly; after correction only a summable residual remains. Thus a Gamma counterexample-exile route must identify an additional, source-derived residual, not rename this already paid tail.
+
+**Predeclared original-source finite diagnostics:** epoch A=40,96,160; h in {1,3,5}, j in {0,1,2,3}; exact phase recurrence and independent common-odd-denominator modular recurrence; exact rational source-Ward identity, source positivity, dyadic digit tail witness. Optional high-precision complex checks are diagnostics only, never a universal proof certificate.
+
+**Controls:** x=1/5 periodic under ×16; normal Champernowne base16 versus all terminating truncations; moving frequency h~A² where uniform Gamma tail comparison cannot be assumed; wrong seed; old-prime/cofactor counterfeit; sinc-null frequency multiples q; model-class moving impostor (forall N exists vs exists forall N); false claims that signed positive Gamma shear implies selected real Fourier cancellation.
+
+**Verdict thresholds:** proved source inequalities/all-range quantifiers plus exact finite oracle agreement; no claim of original J=o(K) or signed Weyl decay. Required review: source map, countermodels, math claim ledger, exact replay. This preregistration commits no result in advance.

@@ -1,0 +1,59 @@
+{
+  "all_assertions_passed": true,
+  "birth_checks": 139,
+  "blocks": [
+    {
+      "donor_count": 18,
+      "grid_bits": 170,
+      "rounding_search": 0,
+      "start": 112
+    },
+    {
+      "donor_count": 22,
+      "grid_bits": 214,
+      "rounding_search": 0,
+      "start": 140
+    },
+    {
+      "donor_count": 27,
+      "grid_bits": 269,
+      "rounding_search": 0,
+      "start": 175
+    },
+    {
+      "donor_count": 29,
+      "grid_bits": 300,
+      "rounding_search": 0,
+      "start": 217
+    },
+    {
+      "donor_count": 36,
+      "grid_bits": 382,
+      "rounding_search": 0,
+      "start": 266
+    },
+    {
+      "donor_count": 43,
+      "grid_bits": 470,
+      "rounding_search": 0,
+      "start": 329
+    },
+    {
+      "donor_count": 51,
+      "grid_bits": 571,
+      "rounding_search": 0,
+      "start": 406
+    },
+    {
+      "donor_count": 63,
+      "grid_bits": 727,
+      "rounding_search": 0,
+      "start": 504
+    }
+  ],
+  "circle_radius_after_double_first": "1/4096",
+  "first": 112,
+  "last": 533,
+  "mesh": 32,
+  "state_denominator_and_lcm_checks": 533
+}

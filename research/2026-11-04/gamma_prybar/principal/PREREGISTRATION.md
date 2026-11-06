@@ -1,0 +1,5 @@
+# Protocol before principal holdout
+
+At first reset 112 and next resets 7 floor(5s/28), use the full 5 mod 8 silent donor band (4s,8s−11]. Use the rational truncation through 2s. Test through time 533, including reset boundaries, both neighbours of 8n−7 prime births and the first 30 normal steps. Cross-check rational mutated forcing LCM and reduced state denominator at every time, all donor unit constraints, agreement on the exact birth injections, within-block sum/difference orders, and circle clustering after twice the first reset. Fixed proxy q=32. Keep integer-lift magnitudes separate from distances modulo one. Unwrapped error can be checked against the rational truncated target with its geometric tail enclosure. Any discrepancy fails the implementation. These finite indices never test the asymptotic mesh.
+
+Packing holdouts before execution: A=91,211,367, width A^-3, target [0,w], M=3A. Check each prescribed site for a rational seed of denominator dividing Q_A. Compare sorted and (A=91) brute-force pair counts. Record genuine counts without fitting. No asymptotic constant is tested.

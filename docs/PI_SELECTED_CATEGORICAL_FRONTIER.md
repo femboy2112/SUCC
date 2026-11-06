@@ -12,8 +12,11 @@ limitations found under adversarial review.
 attacks the same open signed estimate from the translation-averaged pair energy
 `J_{A,q}` (boundary-stable, with the proved `E_{A,m}≤4J_{A,m/2}` domination and the exact
 Gamma transport error `≤q²(A-1)/(64A³)`). It supersedes nothing here; the single load-bearing
-gate — a source-selected signed second moment `Σ_{1≤|h|≤q²}|c_A(h)|²=o(K_A)` — is the **same**
-OPEN estimate in another faithful basis, **not** a second independent route to a proof.
+gate — a source-selected signed second moment `Σ_{1≤|h|≤q²}|c_A(h)|²=o(K_A)` — is a **strictly
+sufficient** estimate for the `J` route (`band=o(K_A) ⟹ J=o(K_A)` via SC-8, `sinc²≤1`), sharing the
+same open high-frequency core, **not** a proven equivalence and **not** a second independent route to
+a proof. (The converse `J ⟹ band` is false — the equally-spaced cloud has `J=1` yet unweighted band
+`=2q`; see `research/2026-11-03/renorm_transport/PROOFS.md` RT-00.)
 
 No claim here promotes a modulus bound to a cancellation theorem, or positivity/formal
 coherence to a signed asymptotic saving. Every load-bearing line carries its status.
