@@ -1,0 +1,94 @@
+{
+  "analysis_status": "OBSERVED_FINITE; universal divisor theorem separately PROVED LOCAL",
+  "epochs": [
+    {
+      "first_pole_mutant_checked": true,
+      "gaussian_split_product_bits": 17,
+      "inert_count": 2,
+      "n": 8,
+      "original_denominator_bits": 68,
+      "ratio_log_denominator_to_n": 5.8111828687,
+      "ratio_log_split_product_to_n": 1.4118477366,
+      "split_count": 3,
+      "split_primes": [
+        37,
+        41,
+        53
+      ]
+    },
+    {
+      "first_pole_mutant_checked": true,
+      "gaussian_split_product_bits": 40,
+      "inert_count": 6,
+      "n": 16,
+      "original_denominator_bits": 127,
+      "ratio_log_denominator_to_n": 5.4829698508,
+      "ratio_log_split_product_to_n": 1.7117289379,
+      "split_count": 6,
+      "split_primes": [
+        73,
+        89,
+        97,
+        101,
+        109,
+        113
+      ]
+    },
+    {
+      "first_pole_mutant_checked": true,
+      "gaussian_split_product_bits": 76,
+      "inert_count": 12,
+      "n": 32,
+      "original_denominator_bits": 256,
+      "ratio_log_denominator_to_n": 5.5278663996,
+      "ratio_log_split_product_to_n": 1.6327316553,
+      "split_count": 10,
+      "split_primes": [
+        137,
+        149,
+        157,
+        173,
+        181,
+        193,
+        197,
+        229,
+        233,
+        241
+      ]
+    },
+    {
+      "first_pole_mutant_checked": true,
+      "gaussian_split_product_bits": 170,
+      "inert_count": 22,
+      "n": 64,
+      "original_denominator_bits": 542,
+      "ratio_log_denominator_to_n": 5.8663484161,
+      "ratio_log_split_product_to_n": 1.8357547755,
+      "split_count": 20,
+      "split_primes": []
+    },
+    {
+      "first_pole_mutant_checked": true,
+      "gaussian_split_product_bits": 354,
+      "inert_count": 36,
+      "n": 128,
+      "original_denominator_bits": 1110,
+      "ratio_log_denominator_to_n": 6.0104741487,
+      "ratio_log_split_product_to_n": 1.9126427053,
+      "split_count": 37,
+      "split_primes": []
+    },
+    {
+      "first_pole_mutant_checked": true,
+      "gaussian_split_product_bits": 696,
+      "inert_count": 71,
+      "n": 257,
+      "original_denominator_bits": 2183,
+      "ratio_log_denominator_to_n": 5.8854072297,
+      "ratio_log_split_product_to_n": 1.8759413171,
+      "split_count": 66,
+      "split_primes": []
+    }
+  ],
+  "source": "four signed original BBP poles; U0=0"
+}
