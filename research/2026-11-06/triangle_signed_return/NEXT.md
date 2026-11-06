@@ -24,3 +24,12 @@
 ## Merge gate
 
 Research remains DRAFT. No automatic main merge, version bump, release, paper priority, formal theorem promotion, or RH/π normality assertion. Before integrating, run native provenance / observer / ordinal scripts, full 12k+ tests, formal Lean as relevant, hosted CI on exact head, and independent theorem review. All inherited frozen contracts must remain byte-for-byte unchanged.
+
+
+## New source-specific analytic diagnostic — Gamma moment NOT a signed normality bridge
+
+TS10 proves precisely the original BBP harmonic/Gamma/silver residue, including a uniform O(1/N) tail. It is **not gauge invariant**: the original #527 source coboundary preserves real π completion and 2-adic Haar while shifting finite B. Therefore DO NOT infer source uniqueness or π normality from B or from the appearance of Euler–Mascheroni. Any productive bridge must specify what under a coboundary is observable and what is merely source-presentation data.
+
+TS9 provides rigorous finite original zero-seed **both-sign** corrections to return-energy diagonal 1/M, contradicting monotone-sign hypotheses even for the true source. A viable asymptotic signed-shell estimate must permit both signs, use source/carry chronology beyond valuation shells, and prove a net saving on dense unbounded horizons. Fix the exact original four-pole source, integer carry suffix and odd denominators, and test the selected zero seed against H-shadow, coherent nonnormal seed, and source-gauge mutants. The N=768,h=2,Q=4 rational certificate is deliberately AMBIGUOUS at the predeclared 1/2400 resolution; do not promote or post-hoc refit that result.
+
+No π normality, RH, physical quantum interpretation, or completed real phase transport has been proved by the triangle or Gamma moment.
