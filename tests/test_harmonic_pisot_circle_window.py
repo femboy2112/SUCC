@@ -53,9 +53,13 @@ class ConstantCircleWindowControls(unittest.TestCase):
         # Rational delta/pi=1/3 erases the h=3 character exactly.
         delta = math.pi/3
         self.assertAlmostEqual(sinc_mode(3, delta), 0.0, delta=2e-16)
-        # Non-Haar (1+cos(3 theta))m has ±3 Fourier modes only.
-        # Multiplication by zero therefore yields Haar exactly.
-        self.assertNotAlmostEqual(0.5, 0.0)
+        # Non-Haar (1+epsilon*cos(3 theta))m has ±3 modes;
+        # they disappear under this rational-width window.
+        eps = 0.8
+        self.assertAlmostEqual(1 + eps * math.cos(0.0), 1.8)
+        for center in (0, 0.4, 1.1, 2.2, 4.5):
+            blurred_density = 1 + eps*math.cos(3*center)*sinc_mode(3, delta)
+            self.assertAlmostEqual(blurred_density, 1.0, delta=3e-15)
 
     def test_golden_locked_orbit_retains_nonzero_energy(self):
         limit_energy = math.pi / DELTA - 1
