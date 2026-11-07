@@ -136,7 +136,7 @@ def source_history(count: int, seed: Fraction | int = 0) -> tuple[Fraction,...]:
 
 
 def local_plaquette(states: tuple[Fraction,...], n: int) -> Fraction:
-    """Zero for ALL seeds; exact cocycle consistency is not pi normality."""
+    """Zero for ALL seeds; exact cocycle consistency is not π normality."""
     if type(n) is not int or not 0<=n<len(states)-1:
         raise ValueError("consecutive states required")
     return (Fraction(states[n+1])-16*Fraction(states[n])-four_pole(n+1))%1
