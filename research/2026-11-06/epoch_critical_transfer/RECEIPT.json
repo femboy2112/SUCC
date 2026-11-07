@@ -1,0 +1,33 @@
+{
+  "files_sha256": {
+    "ALL_RADIUS_HOLDOUT.json": "9cffdc301a9c1a8fbb77eaed1c276cd5e280875364c7bb15921da5f23840bfc6",
+    "CLAIM_LEDGER.md": "243e07b28ca33e741b5b0b58c6f4ce59b5cd0558d7f09a6120f026ea4026c68a",
+    "FINITE_RESULTS.json": "ff370b7c84d96bad939f7b036d079c8181f7afd787d934292d246e88111fc1d6",
+    "INDEPENDENT_ORACLE_LOG.txt": "7f045b5742eb341e3f958ded66a4ff61ba748806993c2a08fb97ca76d28047d7",
+    "INITIAL_RED_TEST_LOG.txt": "31f0891cffc767f0bd13e917d936962bd42622303369f7f29b2d2e723aade55b",
+    "LOCAL_TEST_LOG.txt": "9230fa834906693a20170fd069ebbe6570c8b89ab8f7f7e3fb0984bdb5fb9530",
+    "NEW_EPOCH_FOURIER_DIAGNOSTICS.json": "bf429897175bf1ca3650a4ce794b215923d1538255b9e23574c52d78d3d7e97e",
+    "NEXT.md": "14e2e9309a7ed48f73a529a625fd18005475493c9690df7a0de118ea2c1a7fbc",
+    "README.md": "f1b7e40cd3975768a6945f63224488c0114df3c8794b80e10fa53a191b568a64",
+    "THEOREMS.md": "9fa69d037e9ed3fceb0f29f1a0d1457dc54c21ce7ceea9fd4bf7e706763ebefd",
+    "VALIDATION.md": "8a9c9d2d85ca63bd6e569a6bc910273647f76da5f4fa882969e9613d5c233254",
+    "all_radius.py": "7e3daf1eb2682072a09ad410a8a2ab86e8d64ac8325068ad0597c05fcfc0a36a",
+    "epoch_fejer.py": "a5c479982d850f018a9bc7347b43c363a66cfdb71b7ca522739d5a60268bba0f",
+    "independent_oracle.py": "c176d585f69a3be757a9b7216c0a1f596e2b69a45e4e0c61a5cb74158ffa014f",
+    "test_epoch_fejer.py": "5386b4e9a3820114e4e457a9cd8e5578dc4df458d17ccd627ad56fc06adb3af4"
+  },
+  "holdouts": {
+    "A191": "CERTIFIED FINITE K3",
+    "A319": "CERTIFIED FINITE K3"
+  },
+  "independent_oracle": "15 exact checks PASS; same source genealogy",
+  "infinite_selected_K3": "OPEN",
+  "parent_exact_head": "e463a191d82355c707662bdbfb4bf2150fdd4eb7",
+  "parent_pr": 536,
+  "pi_base16_normality": "OPEN",
+  "preregistration_commits": {
+    "all_radius": "c0c36518ea83a003c0892b312fb3536202e3f1f6",
+    "first": "fd4f118a8a44cce1d15e9c42b14e57876cfc2844"
+  },
+  "tests_focused": "14/14 PASS"
+}
