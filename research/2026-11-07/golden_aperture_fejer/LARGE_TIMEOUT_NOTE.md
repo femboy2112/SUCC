@@ -1,0 +1,5 @@
+# Preserved large-probe execution boundary
+
+After PREREG_LARGE_EPOCHS.md was GitHub-committed before measurement, the original exact Fraction accumulation of pair distances returned A=1024 but stalled at A=2048 in a wall-time-limited session. A rigorous fixed-point interval sweep was then implemented with full exact-rational input states and small-sample crosschecks. It certified both A=1024 and A=2048 quickly. A further attempt to run all preregistered epochs, including A=4096, also timed out after certifying the first two. `LARGE_PROBE_LOG.txt` is the partial output from this aborted run, and `LARGE_RESULTS.json` is marked PARTIAL_HOLDOUTS; A=4096 was **NOT** computed and is not a certified pass.
+
+The default `large_probe.py` replays A=1024/2048. The optional `--include-4096` attempts the previously unverified case. Do not infer the large-A asymptotic from two certified observations or from this implementation's runtime. The first exact Fraction/float strict-inequality red unittest is retained separately in `INITIAL_TEST_LOG.txt`; it was repaired with exact rational interval checks, without changing the source or window width.

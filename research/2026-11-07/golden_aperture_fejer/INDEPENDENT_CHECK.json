@@ -1,0 +1,46 @@
+{
+  "verdict": "PASS",
+  "independence": "separate combined-source recurrence and direct arc sweep; same mathematical definitions, not blind referee",
+  "cases": [
+    {
+      "A": 8,
+      "oracle_sweep_decimal": "0.0623313837838369023543539511952745912525538811",
+      "exact_interval": [
+        "0.06233138378383",
+        "0.06233138378384"
+      ]
+    },
+    {
+      "A": 16,
+      "oracle_sweep_decimal": "0.0696581057675954931934806849338949198714762433",
+      "exact_interval": [
+        "0.06965810576759",
+        "0.06965810576760"
+      ]
+    },
+    {
+      "A": 32,
+      "oracle_sweep_decimal": "0.00659744218929742332007719549392566418573739958",
+      "exact_interval": [
+        "0.00659744218929",
+        "0.00659744218930"
+      ]
+    },
+    {
+      "A": 64,
+      "oracle_sweep_decimal": "0.00425608996448937958295391337192823705618911483",
+      "exact_interval": [
+        "0.00425608996448",
+        "0.00425608996449"
+      ]
+    },
+    {
+      "A": 128,
+      "oracle_sweep_decimal": "0.0040933840748084129196413531006431092248466175",
+      "exact_interval": [
+        "0.00409338407480",
+        "0.00409338407481"
+      ]
+    }
+  ]
+}
