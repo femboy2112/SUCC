@@ -85,6 +85,15 @@ class ConstantCircleWindowControls(unittest.TestCase):
             self.assertLessEqual(abs(hat(h)), upper + 1e-12)
         # No assumption about equidistribution is smuggled into this finite check.
 
+    def test_golden_aperture_is_unique_self_calibration(self):
+        # Capacity fraction a; locked-orbit L2 residual 1/a - 1.
+        a = ALPHA
+        self.assertAlmostEqual(a, (1/a - 1), delta=1e-14)
+        self.assertAlmostEqual(a*a+a-1, 0.0, delta=1e-14)
+        for other in (0.15, 0.25, 0.5, 0.75, 0.9):
+            self.assertGreater(abs(other - (1/other - 1)), 1e-3)
+        # Uniqueness: a strictly increases; (1/a-1) decreases.
+
     def test_stationary_source_rotating_observer_countermodel(self):
         # Source never leaves zero; rotating centers scan a substantial arc.
         N = 2000
