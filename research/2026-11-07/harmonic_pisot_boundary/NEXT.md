@@ -87,3 +87,9 @@ If a real controller is proposed, specify sensor output z_n, harmonic gain 1/n, 
 - Numeric B_crit was computed at high precision and finite samples were replayed; a formal interval-arithmetic decimal certificate has **not** been built.
 
 **Decision:** maintain as a draft research instrument with a valuable anti-normality obstruction; do not merge, tag, release, or promote a main-ledger theorem without standard SUCC review gates.
+
+## P5. Constant circular aperture — new author refinement (HPB-C1…C4)
+
+See [CIRCLE_WINDOW.md](CIRCLE_WINDOW.md). The circle's constant geometric window survives trajectory lock-in; the harmonic threshold changes allowed *controls* only if an explicit latch is installed. Select a fixed golden-angular half-width `delta=pi/phi`; its Fourier multipliers never vanish, with an explicit lower bound `2/[delta (sqrt5+1/2) h^2]`. For the authenticated dyadic BBP orbit define an L² aperture discrepancy; its convergence to zero is equivalent to the **still OPEN** fixed-h Weyl gate. Golden Pisot phase locking leaves a strictly positive geometric energy residual `phi^-1`, not Haar mixing.
+
+**Pass:** prove a zero-seed/four-pole original-source decay estimate for this fixed-aperture energy; independently refute the same estimate for wrong seed `s_*=-pi/16` and CB-3. **Fail:** a moving observer-center distribution is presented as source uniformity, a rational aperture silently erases harmonics, or constant geometric width is misidentified with controllable reachability. **Ambiguous:** the aperture criterion alone, with no source-specific decay mechanism.
