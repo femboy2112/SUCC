@@ -1,11 +1,13 @@
-# Oscillator-driven Yoneda–Fourier pin-bed — research-only entrypoint
+# Oscillator-driven Yoneda–Fourier pin-bed — draft research
 
-**Motivation:** build an observer-facing pin-array surface, use programmable coherent oscillators to expose its otherwise blind Fourier modes, and treat exact observational indistinguishability relative to a declared authentic carrier as a legitimate truth output — while keeping such truth distinct from externally certified global identity.
+The author proposed a surface of responsive pins whose observer-readable patterns encode the accessible carrier, **including carrier-relative indistinguishability as a legitimate scoped truth output**. The subsequent refinement adds phase-coherent oscillator drives and closure under lawful carrier dynamics.
 
-**New-to-SUCC constructive result:** on a finite m-site circle, every proper rectangular window 1<=L<m becomes fully observable over complex state space using translated pin readouts at only **two oscillator modes** (0 and 1); with all m modes a full-footprint stationary collector is also complete. Exact cyclotomic algebra, independent rational-rank tests, explicit non-dihedral equal-power counterexamples, and source-labelled BBP finite probes accompany the derivations.
+Read [RESEARCH_NOTE.md](RESEARCH_NOTE.md) for the exact finite theorems, constructive proofs, categorical caveats, hostile counterexamples, source-specific π application and open proof gate.
 
-**Truth boundary:** finite observation-fiber equivalence is not an infinite theorem about π, source authentication, a physical experiment, or an implemented fully faithful Yoneda functor. A shared known additive drive never opens a fixed linear initial-state blind space. The missing source-specific signed decay is OPEN.
+**Leading finite theorem.** On a cyclic m-site carrier with a proper sliding window 1<=L<m, observing every translated pin through two coherent modes k=0 and k=1 detects every Fourier frequency. Full-footprint, single-collector coherent m-mode Fourier measurements also reconstruct any finite vector. Power-only spectra are insufficient: explicit non-dihedral equal-power probability pairs are exhibited.
 
-Read in order: [PROOFS.md](PROOFS.md), [CLAIM_LEDGER.md](CLAIM_LEDGER.md), [VALIDATION.md](VALIDATION.md), [NEXT.md](NEXT.md). Exact model: [`observational_succ/pinbed_yoneda_fourier.py`](../../../observational_succ/pinbed_yoneda_fourier.py). Tests: [`tests/test_pinbed_yoneda_fourier.py`](../../../tests/test_pinbed_yoneda_fourier.py).
+**Relative truth.** Equality on a declared probe menu is a valid observation result. Closing the observation row space under allowed carrier dynamics makes this equality stable under future declared actions. A linear target is determined on every complete finite probability fiber exactly when its row is in the closed probe row space plus the total-mass row. No global source identity is inferred without provenance and appropriate categorical density.
 
-**Infinite-tower result (classical):** the full Fibonacci-grid pin profiles determine an arbitrary Borel probability on the circle; the original zero-seed BBP profiles converge to Haar on every fixed grid iff π is base-16 normal. The convergence remains OPEN.
+**Validation.** An *isolated expanded local bundle* contains full stdlib exact-arithmetic code, a 26-test passing focused suite and additional proof, claim, validation and next-work notes. That bundle was **not** all committed to this initial GitHub research branch; the on-repository note is the actual committed checkpoint. No full SUCC suite, exact-head hosted CI, Lean or physical measurement is claimed.
+
+**Firewall.** Original signed four-pole BBP source, literal zero seed, carriers, provenance and formal code unchanged; π base-16 normality, selected signed Weyl cancellation and RH remain **OPEN**. This is a draft PR, not a merge or release.
