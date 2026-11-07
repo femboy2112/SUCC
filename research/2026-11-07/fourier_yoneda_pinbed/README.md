@@ -44,6 +44,8 @@ completed imprint. If false models also share it, their witnesses remain visible
 - [Exact original-source receipt](FINITE_RECEIPT.json),
   [independent surface receipt](INDEPENDENT_SURFACE_RECEIPT.json),
   [independent finite-affine receipt](INDEPENDENT_F2_RECEIPT.json).
+- [Full-suite receipt](FULL_TEST_RECEIPT.json) and [raw log](FULL_TEST_LOG.txt):
+  12,178 tests pass with the import setup and snapshot scope recorded in validation.
 
 From the repository root:
 

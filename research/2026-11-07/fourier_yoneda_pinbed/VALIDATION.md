@@ -27,7 +27,9 @@ from an uninstalled checkout. The raw failure is preserved in
 Re-running that unchanged test module with the repository root on PYTHONPATH
 passes **11/11** tests (`IMPORT_RECHECK_LOG.txt`). No historical source file or
 test was changed to suppress the error. A complete suite rerun with that import
-setup was launched; its final result will be recorded before task completion.
+setup **passed all 12,178 tests** in 988.189 seconds with exit code 0. The raw
+output is in `FULL_TEST_LOG.txt`; `FULL_TEST_RECEIPT.json` records the command,
+Python version, snapshot scope and artifact hashes.
 
 The complete rerun began before the last fail-closed input-shape/docstring
 cleanup of the new module. The final new module and its expanded malformed-input
@@ -53,6 +55,7 @@ These four values are finite observations. They do not establish a decay rate,
 typicality or normality. The all-A surface norm comparison to the completed pi
 orbit is proved separately, with squared error upper bound `1/(2700 A^4)`.
 
-No Lean kernel check or successful hosted CI run is claimed here. Consult the
-draft PR checks for hosted status at its current exact head. All changes are
+The new mathematical theorems have no Lean kernel certificate. Hosted checks
+are separate from these local receipts; consult the draft PR for their status
+at its current exact head. All changes are
 additive research artifacts on a non-main branch; no merge is performed.
