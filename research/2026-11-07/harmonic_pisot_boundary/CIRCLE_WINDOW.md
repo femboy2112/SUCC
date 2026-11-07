@@ -135,6 +135,28 @@ This memorable constant is **only** a geometric/convolution identity; it is not 
 
 **Moving-frame countermodel:** Keep \(x_n=0\) for every \(n\), but rotate an observer's window center as \(c_n=2\pi n/\varphi\bmod2\pi\). The centers scan the circle uniformly while the *source* remains a point mass. Without a declared common-basis transport, the apparent scanning is not source equidistribution.
 
+## HPB-C5 — the uniquely self-calibrating aperture is golden (PROVED, conditional normalization)
+
+There is a particularly clean reason to consider the golden aperture beyond its Diophantine robustness.
+
+Let \(a=\delta/\pi\in(0,1)\). Define two quantities from the *same, declared* geometric/observational model:
+
+1. **Geometric capacity fraction** \(C(a)=m(A_\delta(c))=a\), independent of center \(c\).
+2. **Locked-point deviation from Haar** \(L(a)=E_\delta(\delta_c)=1/a-1\), also independent of center \(c\).
+
+Demand the explicit **self-calibration condition** \(C(a)=L(a)\). Then
+\[
+a=\frac1a-1\quad\Longleftrightarrow\quad a^2+a-1=0.
+\]
+The **unique** solution in \((0,1)\) is
+\[
+\boxed{a=(\sqrt5-1)/2=\varphi^{-1}.}
+\]
+
+*Proof:* \(C(a)\) strictly increases from 0 to 1 while \(L(a)\) strictly decreases from infinity to 0, so they intersect once; solving the quadratic gives the stated value. This is an exact equality of two distinct, typed observables: window measure and \(L^2\) discrepancy for a maximally locked orbit.
+
+**Boundary:** The equality \(C=L\) is an *optional design/normalization criterion*. Circle geometry alone does not require the geometric aperture and statistical discrepancy to be equal, and changing the discrepancy functional changes the selected number. We have found a coherent way to **choose** a golden observation window, not derived \(\varphi\) from a physical law or from the original BBP source. Once chosen, HPB-C3 additionally proves no Fourier mode is erased and provides explicit polynomial inverse-conditioning.
+
 ## Original-source SUCC integration and critical gate
 
 Use the authentic BBP rational forcing and \(U_0=0\), not \(\varphi^n\) as an invented π source:
@@ -163,6 +185,7 @@ It is not a proof that either condition holds. This is an alternative *positive 
 - HPB-C2 — aperture Fourier/Parseval equivalence and rational-angle mutant: **PROVED elementary analysis**.
 - HPB-C3 — golden Diophantine inverse bound: **PROVED elementary quadratic algebra**.
 - HPB-C4 — locked-phase residual/moving-frame mutant: **PROVED MODEL**.
+- HPB-C5 — unique self-calibrated golden aperture under the explicitly chosen Haar/\(L^2\) equality: **PROVED MODEL**; not a physical selection law.
 - π original-source aperture-energy decay: **OPEN**. Physical window of future freedom: **UNVERIFIED**.
 - Classical context: https://mathworld.wolfram.com/BadlyApproximable.html (quadratic irrationals); https://mccuan.math.gatech.edu/courses/6455/curvature.pdf (intrinsic/extrinsic); SUCC main frontier and draft PRs #470, #471, #534, #537.
 
