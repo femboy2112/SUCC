@@ -1,0 +1,33 @@
+test_averaged_tail_bound (test_epoch_fejer.EpochFejer.test_averaged_tail_bound) ... ok
+test_clock_endpoint_source_identity (test_epoch_fejer.EpochFejer.test_clock_endpoint_source_identity) ... FAIL
+test_critical_transport_decreases (test_epoch_fejer.EpochFejer.test_critical_transport_decreases) ... ok
+test_epoch_ray_with_direct_completed_diagnostics (test_epoch_fejer.EpochFejer.test_epoch_ray_with_direct_completed_diagnostics) ... ERROR
+test_epoch_transport_float_diagnostic (test_epoch_fejer.EpochFejer.test_epoch_transport_float_diagnostic) ... ok
+test_exact_pair_counts_original (test_epoch_fejer.EpochFejer.test_exact_pair_counts_original) ... ok
+test_harmonic_square_weight_identity (test_epoch_fejer.EpochFejer.test_harmonic_square_weight_identity) ... ok
+test_nonnormal_controls_fail_uniform_critical_energy (test_epoch_fejer.EpochFejer.test_nonnormal_controls_fail_uniform_critical_energy) ... ok
+test_original_source_contract (test_epoch_fejer.EpochFejer.test_original_source_contract) ... ok
+test_tail_positive_and_numerators (test_epoch_fejer.EpochFejer.test_tail_positive_and_numerators) ... ok
+
+======================================================================
+ERROR: test_epoch_ray_with_direct_completed_diagnostics (test_epoch_fejer.EpochFejer.test_epoch_ray_with_direct_completed_diagnostics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_epoch_fejer_20261106/test_epoch_fejer.py", line 55, in test_epoch_ray_with_direct_completed_diagnostics
+    z=[(x[n]+sum((Fraction(1,16**j)*original_r(n+j) for j in range(1,21)),Fraction(0)))%1 for n in range(A,2*A+1)]
+        ~^^^
+IndexError: tuple index out of range
+
+======================================================================
+FAIL: test_clock_endpoint_source_identity (test_epoch_fejer.EpochFejer.test_clock_endpoint_source_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_epoch_fejer_20261106/test_epoch_fejer.py", line 51, in test_clock_endpoint_source_identity
+    self.assertLess(abs(float((16*zprev-znow)%1)),1.0)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1.0 not less than 1.0
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.659s
+
+FAILED (failures=1, errors=1)
