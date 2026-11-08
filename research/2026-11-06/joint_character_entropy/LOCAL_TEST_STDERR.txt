@@ -1,0 +1,37 @@
+test_current_observer_entropy_gate_is_vacuous_at_finite_epochs (test_entropy_to_character.SignedEntropyBridge.test_current_observer_entropy_gate_is_vacuous_at_finite_epochs) ... ok
+test_invalid_frequency_and_divisibility_are_rejected (test_entropy_to_character.SignedEntropyBridge.test_invalid_frequency_and_divisibility_are_rejected) ... ok
+test_original_selected_epochs_respect_the_finite_bridge (test_entropy_to_character.SignedEntropyBridge.test_original_selected_epochs_respect_the_finite_bridge) ... ok
+test_fresh_commit_first_original_character_and_controls (test_fresh_holdout.FreshSourceCharacterHoldout.test_fresh_commit_first_original_character_and_controls) ... /mnt/data/succ_joint_entropy_round2/fresh_holdout_probe.py:17: ResourceWarning: unclosed file <_io.BufferedReader name='PREREG_ADDENDUM.md'>
+  assert hashlib.sha256(open('PREREG_ADDENDUM.md','rb').read()).hexdigest()==ADDENDUM_SHA256
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_digit_boundary_mutation_fails_closed_certificate (test_joint_entropy.BBPSourceChecks.test_digit_boundary_mutation_fails_closed_certificate) ... ok
+test_periodic_source_pole_clock (test_joint_entropy.BBPSourceChecks.test_periodic_source_pole_clock) ... ok
+test_pi_digits_certified_by_two_analytic_routes (test_joint_entropy.BBPSourceChecks.test_pi_digits_certified_by_two_analytic_routes) ... ok
+test_poles_two_oracles (test_joint_entropy.BBPSourceChecks.test_poles_two_oracles) ... ok
+test_rational_seed_translation_exact_every_state (test_joint_entropy.BBPSourceChecks.test_rational_seed_translation_exact_every_state) ... ok
+test_source_enclosure_contains_deeper_source_enclosure (test_joint_entropy.BBPSourceChecks.test_source_enclosure_contains_deeper_source_enclosure) ... ok
+test_constant_input_periodic_source_cannot_fake_asymptotic_normality (test_joint_entropy.FiniteStateEntropyChecks.test_constant_input_periodic_source_cannot_fake_asymptotic_normality) ... ok
+test_finite_entropy_inequality_exact_path_families (test_joint_entropy.FiniteStateEntropyChecks.test_finite_entropy_inequality_exact_path_families) ... ok
+test_mealy_output_and_state_determinism (test_joint_entropy.FiniteStateEntropyChecks.test_mealy_output_and_state_determinism) ... ok
+test_necessary_source_information_term_with_debruijn_mutant (test_joint_entropy.FiniteStateEntropyChecks.test_necessary_source_information_term_with_debruijn_mutant) ... ok
+test_nontrivial_certified_source_digit_observer (test_joint_entropy.FiniteStateEntropyChecks.test_nontrivial_certified_source_digit_observer) ... ok
+test_source_logged_reversible_observer (test_joint_entropy.FiniteStateEntropyChecks.test_source_logged_reversible_observer) ... ok
+test_unconstrained_output_length_rejected (test_joint_entropy.FiniteStateEntropyChecks.test_unconstrained_output_length_rejected) ... ok
+test_irrational_staircase_needs_unbounded_clock (test_joint_entropy.GaugeHostileControls.test_irrational_staircase_needs_unbounded_clock) ... ok
+test_periodic_chart_fourier_and_exact_joint_reconstruction (test_joint_entropy.GaugeHostileControls.test_periodic_chart_fourier_and_exact_joint_reconstruction) ... ok
+test_periodic_chart_marginal_can_mask_one_mode_but_not_all (test_joint_entropy.GaugeHostileControls.test_periodic_chart_marginal_can_mask_one_mode_but_not_all) ... ok
+test_character_input_rejection (test_signed_certificate.SignedCertificateTests.test_character_input_rejection) ... ok
+test_error_budget_always_nonnegative (test_signed_certificate.SignedCertificateTests.test_error_budget_always_nonnegative) ... ok
+test_gauge_integer_shift_does_not_change_bound (test_signed_certificate.SignedCertificateTests.test_gauge_integer_shift_does_not_change_bound) ... ok
+test_periodic_completion_counterseed_never_saves (test_signed_certificate.SignedCertificateTests.test_periodic_completion_counterseed_never_saves) ... ok
+test_pi_rational_enclosure_is_independently_anchored (test_signed_certificate.SignedCertificateTests.test_pi_rational_enclosure_is_independently_anchored) ... ok
+test_root_grid_cancels_two_modes_with_rational_certificate (test_signed_certificate.SignedCertificateTests.test_root_grid_cancels_two_modes_with_rational_certificate) ... ok
+test_source_enclosures_are_not_fake_point_values (test_signed_certificate.SignedCertificateTests.test_source_enclosures_are_not_fake_point_values) ... ok
+test_source_selected_epoch_certificates_are_nontrivial (test_signed_certificate.SignedCertificateTests.test_source_selected_epoch_certificates_are_nontrivial) ... ok
+test_taylor_polynomial_at_zero (test_signed_certificate.SignedCertificateTests.test_taylor_polynomial_at_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 3.061s
+
+OK

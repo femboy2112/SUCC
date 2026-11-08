@@ -1,0 +1,44 @@
+{
+  "scope": "Exact 2-adic modular residues, independently checked real-phase paired odd-band identity; DFT floats only.",
+  "normality": "OPEN",
+  "rows": [
+    {
+      "Q": 64,
+      "source": "original",
+      "mean": 0.013234432085,
+      "odd_band": 0.48625905824
+    },
+    {
+      "Q": 64,
+      "source": "isometric_H_shadow",
+      "mean": 0.999618847517,
+      "odd_band": 0.000195852295
+    },
+    {
+      "Q": 128,
+      "source": "original",
+      "mean": 0.005372636436,
+      "odd_band": 0.503242227805
+    },
+    {
+      "Q": 128,
+      "source": "isometric_H_shadow",
+      "mean": 0.999806770172,
+      "odd_band": 0.000097940425
+    },
+    {
+      "Q": 256,
+      "source": "original",
+      "mean": 0.000400658382,
+      "odd_band": 0.564644969013
+    },
+    {
+      "Q": 256,
+      "source": "isometric_H_shadow",
+      "mean": 0.999902721271,
+      "odd_band": 0.000048971185
+    }
+  ],
+  "identity": "sum_odd |M_j|^2 = 1/(2Q) sum_n<Q/2 |exp(2pi ihU_n)-exp(2pi ihU_(n+Q/2))|^2",
+  "independence_warning": "2-adic char basis is a finite relabelled clock; odd band identity universal for any isometry and cannot prove large Q phase escape."
+}

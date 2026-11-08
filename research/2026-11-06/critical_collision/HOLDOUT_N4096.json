@@ -1,0 +1,129 @@
+{
+  "N": 4096,
+  "status": "PREREGISTERED HOLDOUT PASSED FINITE only; π normality OPEN",
+  "preregistration_commit": "81dbf746651a237517bf7dd823feffb9069d5ccd",
+  "literal_seed": "U0=0",
+  "source": "original four signed BBP poles",
+  "grid": "r0=1/(N+1), r_(j+1)=min(4*r_j/3,1/2)",
+  "predicate_each_grid": "4*(A_N(r)-N)*denominator(r) <= 9*N*N*numerator(r) exact integers",
+  "verified": "28/28 exact grid predicates passed",
+  "proof_full_continuum": "A_N monotone; any r_j <= δ <= r_(j+1) gives A_N(δ)-N <= 9/4*N^2*r_(j+1) <=3N^2*δ",
+  "conclusion": "for this single N=4096 and all real δ∈[1/4097,1/2], A_N(δ)<=4096+3*4096^2*δ",
+  "first_attempt": "local exact Fraction holdout execution timed out before completing; no success asserted",
+  "rerun": "same frozen exact Fraction source and predicate; 28 grid values, DONE PASS",
+  "max_sampled_ratio_float_diagnostic": 1.999706887079113,
+  "grid_pairs_ordered_including_diagonal": [
+    {
+      "radius": "1/4097",
+      "A": 12156
+    },
+    {
+      "radius": "4/12291",
+      "A": 14780
+    },
+    {
+      "radius": "16/36873",
+      "A": 18268
+    },
+    {
+      "radius": "64/110619",
+      "A": 22964
+    },
+    {
+      "radius": "256/331857",
+      "A": 29304
+    },
+    {
+      "radius": "1024/995571",
+      "A": 38030
+    },
+    {
+      "radius": "4096/2986713",
+      "A": 49568
+    },
+    {
+      "radius": "16384/8960139",
+      "A": 64786
+    },
+    {
+      "radius": "65536/26880417",
+      "A": 85444
+    },
+    {
+      "radius": "262144/80641251",
+      "A": 112240
+    },
+    {
+      "radius": "1048576/241923753",
+      "A": 148788
+    },
+    {
+      "radius": "4194304/725771259",
+      "A": 196950
+    },
+    {
+      "radius": "16777216/2177313777",
+      "A": 262040
+    },
+    {
+      "radius": "67108864/6531941331",
+      "A": 348026
+    },
+    {
+      "radius": "268435456/19595823993",
+      "A": 462562
+    },
+    {
+      "radius": "1073741824/58787471979",
+      "A": 616466
+    },
+    {
+      "radius": "4294967296/176362415937",
+      "A": 820750
+    },
+    {
+      "radius": "17179869184/529087247811",
+      "A": 1092694
+    },
+    {
+      "radius": "68719476736/1587261743433",
+      "A": 1456468
+    },
+    {
+      "radius": "274877906944/4761785230299",
+      "A": 1939556
+    },
+    {
+      "radius": "1099511627776/14285355690897",
+      "A": 2585426
+    },
+    {
+      "radius": "4398046511104/42856067072691",
+      "A": 3447070
+    },
+    {
+      "radius": "17592186044416/128568201218073",
+      "A": 4593536
+    },
+    {
+      "radius": "70368744177664/385704603654219",
+      "A": 6121854
+    },
+    {
+      "radius": "281474976710656/1157113810962657",
+      "A": 8162438
+    },
+    {
+      "radius": "1125899906842624/3471341432887971",
+      "A": 10882392
+    },
+    {
+      "radius": "4503599627370496/10414024298663913",
+      "A": 14510326
+    },
+    {
+      "radius": "1/2",
+      "A": 16777216
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "preregistered_unverified": [
+    4096
+  ],
+  "preregistration": "PREREG_LARGE_EPOCHS.md, committed before measuring these A",
+  "samples": [
+    {
+      "A": 1024,
+      "completed_pi_energy_certified_outward": [
+        "0.00116154453477",
+        "0.00116187743501"
+      ],
+      "elapsed_seconds_noncertifying": 0.765,
+      "epoch": [
+        1024,
+        2048
+      ],
+      "ordered_pairs_within_golden_b": 802524,
+      "source_energy_certified_outward": [
+        "0.00116171098489",
+        "0.00116171098490"
+      ],
+      "transport_absolute_upper": [
+        "0.00000000000000",
+        "0.00000016645012"
+      ]
+    },
+    {
+      "A": 2048,
+      "completed_pi_energy_certified_outward": [
+        "0.00024350574140",
+        "0.00024358896647"
+      ],
+      "elapsed_seconds_noncertifying": 3.672,
+      "epoch": [
+        2048,
+        4096
+      ],
+      "ordered_pairs_within_golden_b": 3204308,
+      "source_energy_certified_outward": [
+        "0.00024354735393",
+        "0.00024354735394"
+      ],
+      "transport_absolute_upper": [
+        "0.00000000000000",
+        "0.00000004161253"
+      ]
+    }
+  ],
+  "scope": "certified finite, not asymptotic",
+  "source": "original four signed BBP forcing, literal U_0=0",
+  "status": "PARTIAL_HOLDOUTS"
+}

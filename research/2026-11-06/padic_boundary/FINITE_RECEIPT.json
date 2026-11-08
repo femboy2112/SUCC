@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-06",
+  "files_sha256": {
+    "CLAIM_LEDGER.md": "b0d34beab76909c2f35b33faf37524f55e2234c0fc10c0f3a063be332ea0ec66",
+    "INDEPENDENT_ORACLE_LOG.txt": "0342fa28d58a1a3a1fa55768564dac4bec77e2b4461953147bd8ce98e323a360",
+    "LOCAL_TEST_STDERR.txt": "0994c31a9e2a2845209a596f56c3f232f5f82314f7e53fe135251ba8b6278390",
+    "LOCAL_TEST_STDOUT.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NEXT.md": "4501dac71fd508622a05338528d158842a2223b43bb2e6cacdc6cbab7cfba9d8",
+    "PREREGISTRATION.md": "98f25cecc032c3efa64d52ff0fe83023146a8fb8f683ec0f0ac8fcc12d65f973",
+    "README.md": "8980996062506af71e82abbb617307a42d3391f333c3f5ea2520127d7d2de694",
+    "THEOREMS.md": "61841a7021d127f71be9297206028ef85d71799059fdabbec94dc094773fbc39",
+    "VALIDATION.md": "875dcbf8bb5596917172ffeed0570616c071b1d94f359e06c6b1b5c7175ef0ee",
+    "bbp_dual_boundary.py": "2ffa011617d90f2c58a1f1a5f745b1f91529186d8bef77cdb80f263800ff9198",
+    "independent_oracle.py": "7bd89a49f2c0ec9975ee2ee2623c923004f3ecf5ff7740ffb16425770cfd76cf",
+    "test_bbp_dual_boundary.py": "c4d6f876bf85d835473a26918c849fb52bc2df0d7c2113afbed6f6c9e990d8f5"
+  },
+  "focal_claims": {
+    "DB-03": "PROVED LOCAL (analytic log/torsion)",
+    "DB-04": "PROVED LOCAL (isometry and Haar)",
+    "DB-06": "REFUTED universal real-transfer implication",
+    "DB-07": "REFUTED universal source uniqueness",
+    "real_pi_normality": "OPEN",
+    "selected_real_weyl": "OPEN"
+  },
+  "focused_unit_tests": {
+    "errors": 0,
+    "failures": 0,
+    "methods": 18
+  },
+  "new_preregistered_boundary_residues": {
+    "2^2048": 0,
+    "2^4096": 0
+  },
+  "new_preregistered_precision_bits": [
+    2048,
+    4096
+  ],
+  "parent_pr": 526,
+  "parent_sha": "d2960bacf939fbdfa76c81648b031e182e97d1a6",
+  "preregistration_commit": "1f580c21003222946001bc1ceb04b7bbb4901106",
+  "preseen_precision_bits": [
+    4,
+    8,
+    12,
+    16,
+    32,
+    64,
+    128,
+    256,
+    400,
+    1024
+  ],
+  "symbolic_oracle": "PASS"
+}

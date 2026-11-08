@@ -1,0 +1,5 @@
+# Preregistered dyadic shell interrogation (new finite probes)
+
+Derived algebra, before measurement: for any integer lag q>0, ell=v_2(q), the original isometry and recurrence imply V(t+q)−V(t) ≡ 2^ell (mod2^(ell+1)) and S_q(t) ≡ V(t)+2^ell (mod2^(ell+1)). Thus every return-fiber pair lag q=d*2^k belongs to shell ell=k+v_2(d). This is an identity, NOT an implication about real signs.
+
+Frozen tests: exact modular clone at q in {3,5,6,10,12,24,40} and n in {0,7,43}, independently computed from source. Float signed shell decomposition for original x_n with N=512, Q∈{4,8,16}, h=1 must reconstruct return energy R to <=1e-10. Report real off-diagonal Re contributions by shell, without fitting or making asymptotic claims. Compute nonnormal 2-adic-isometric rational shadow H(n)=n/(2n−1)^4 on same fibers, predicted R_shadow much closer to 1 than original R; assert >0.8 for each Q at N=512. This is a source-agnostic 2-adic shell valuation, a negative control against inferring real Haar from cloned bits alone. Do not call signs 'transported phasors' without an operational character.

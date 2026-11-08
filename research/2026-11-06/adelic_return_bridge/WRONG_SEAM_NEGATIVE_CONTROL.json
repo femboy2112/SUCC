@@ -1,0 +1,62 @@
+{
+  "rows": [
+    {
+      "carry_residues": [
+        145,
+        153
+      ],
+      "correct_unwrapped_equality_passes": true,
+      "fractional_residues": [
+        239,
+        231
+      ],
+      "k": 9,
+      "lag": 512,
+      "mistaken_fractional_equality_fails": true,
+      "n": 128,
+      "unwrapped_residues": [
+        384,
+        384
+      ]
+    },
+    {
+      "carry_residues": [
+        145,
+        338
+      ],
+      "correct_unwrapped_equality_passes": true,
+      "fractional_residues": [
+        239,
+        46
+      ],
+      "k": 10,
+      "lag": 1024,
+      "mistaken_fractional_equality_fails": true,
+      "n": 128,
+      "unwrapped_residues": [
+        384,
+        384
+      ]
+    },
+    {
+      "carry_residues": [
+        145,
+        250
+      ],
+      "correct_unwrapped_equality_passes": true,
+      "fractional_residues": [
+        1263,
+        1158
+      ],
+      "k": 11,
+      "lag": 2048,
+      "mistaken_fractional_equality_fails": true,
+      "n": 128,
+      "unwrapped_residues": [
+        1408,
+        1408
+      ]
+    }
+  ],
+  "status": "EXPECTED_NEGATIVE_CONTROL"
+}

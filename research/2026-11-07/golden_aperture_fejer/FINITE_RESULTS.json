@@ -1,0 +1,199 @@
+{
+  "claim": "FINITE ORIGINAL ZERO-SEED GOLDEN APERTURE ENERGY; no asymptotic inference",
+  "double_triangle": [
+    {
+      "epoch": [
+        64,
+        128
+      ],
+      "fibers": [
+        {
+          "M": 64,
+          "Q": 1,
+          "energy_enclosure": [
+            "0.00425608996448",
+            "0.00425608996449"
+          ]
+        },
+        {
+          "M": 32,
+          "Q": 2,
+          "energy_enclosure": [
+            "0.01644575740420",
+            "0.01644575740421"
+          ]
+        },
+        {
+          "M": 16,
+          "Q": 4,
+          "energy_enclosure": [
+            "0.03930192669610",
+            "0.03930192669611"
+          ]
+        },
+        {
+          "M": 8,
+          "Q": 8,
+          "energy_enclosure": [
+            "0.06953357011189",
+            "0.06953357011190"
+          ]
+        },
+        {
+          "M": 4,
+          "Q": 16,
+          "energy_enclosure": [
+            "0.15291575936206",
+            "0.15291575936207"
+          ]
+        }
+      ]
+    },
+    {
+      "epoch": [
+        128,
+        256
+      ],
+      "fibers": [
+        {
+          "M": 128,
+          "Q": 1,
+          "energy_enclosure": [
+            "0.00409338407480",
+            "0.00409338407481"
+          ]
+        },
+        {
+          "M": 64,
+          "Q": 2,
+          "energy_enclosure": [
+            "0.00555087753237",
+            "0.00555087753238"
+          ]
+        },
+        {
+          "M": 32,
+          "Q": 4,
+          "energy_enclosure": [
+            "0.01975107345967",
+            "0.01975107345968"
+          ]
+        },
+        {
+          "M": 16,
+          "Q": 8,
+          "energy_enclosure": [
+            "0.04996293220631",
+            "0.04996293220632"
+          ]
+        },
+        {
+          "M": 8,
+          "Q": 16,
+          "energy_enclosure": [
+            "0.07831150883073",
+            "0.07831150883074"
+          ]
+        }
+      ]
+    }
+  ],
+  "precision": "Q(sqrt5) intervals using exact Fraction and integer isqrt at 35 decimals",
+  "predeclared_epochs": [
+    79,
+    157,
+    281,
+    389
+  ],
+  "runtime_seconds_float_diagnostic": 1.379,
+  "samples": [
+    {
+      "A": 79,
+      "completed_pi_energy_enclosure": [
+        "0.01033188941781",
+        "0.01038782135157"
+      ],
+      "elapsed_seconds_float_diagnostic": 0.02,
+      "epoch": [
+        79,
+        158
+      ],
+      "golden_energy_enclosure": [
+        "0.01035985538469",
+        "0.01035985538470"
+      ],
+      "near_ordered_pairs": 4839,
+      "relative_analytic_transport_upper_float_diagnostic": 0.00516029315068009,
+      "source_to_pi_energy_upper": [
+        "0.00000000000000",
+        "0.00002796596688"
+      ]
+    },
+    {
+      "A": 157,
+      "completed_pi_energy_enclosure": [
+        "0.00215699803615",
+        "0.00217115971406"
+      ],
+      "elapsed_seconds_float_diagnostic": 0.07,
+      "epoch": [
+        157,
+        314
+      ],
+      "golden_energy_enclosure": [
+        "0.00216407887510",
+        "0.00216407887511"
+      ],
+      "near_ordered_pairs": 18791,
+      "relative_analytic_transport_upper_float_diagnostic": 0.0026024689911994504,
+      "source_to_pi_energy_upper": [
+        "0.00000000000000",
+        "0.00000708083895"
+      ]
+    },
+    {
+      "A": 281,
+      "completed_pi_energy_enclosure": [
+        "0.00211082615760",
+        "0.00211524696280"
+      ],
+      "elapsed_seconds_float_diagnostic": 0.262,
+      "epoch": [
+        281,
+        562
+      ],
+      "golden_energy_enclosure": [
+        "0.00211303656019",
+        "0.00211303656020"
+      ],
+      "near_ordered_pairs": 60345,
+      "relative_analytic_transport_upper_float_diagnostic": 0.0014555222723790188,
+      "source_to_pi_energy_upper": [
+        "0.00000000000000",
+        "0.00000221040260"
+      ]
+    },
+    {
+      "A": 389,
+      "completed_pi_energy_enclosure": [
+        "0.00284795782371",
+        "0.00285026464959"
+      ],
+      "elapsed_seconds_float_diagnostic": 0.689,
+      "epoch": [
+        389,
+        778
+      ],
+      "golden_energy_enclosure": [
+        "0.00284911123664",
+        "0.00284911123665"
+      ],
+      "near_ordered_pairs": 115835,
+      "relative_analytic_transport_upper_float_diagnostic": 0.0010517929864348964,
+      "source_to_pi_energy_upper": [
+        "0.00000000000000",
+        "0.00000115341294"
+      ]
+    }
+  ]
+}
