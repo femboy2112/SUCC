@@ -22,6 +22,35 @@ class OscillatorBridgeTests(unittest.TestCase):
         self.assertNotEqual(local_plaquette(tuple(mutated),11),0)
         self.assertEqual(four_pole(1),Fraction(47,15))
 
+    def test_source_lagged_holonomy_is_seed_uniform_at_every_depth(self):
+        # No n,d-local corrected oscillator loop can recover the zero seed.
+        for seed in (0,Fraction(1,3),Fraction(-1,11)):
+            history=source_history(55,seed)
+            for d in range(1,9):
+                for n in range(0,55-d):
+                    source_sum=Fraction()
+                    for j in range(1,d+1):
+                        source_sum=16*source_sum+four_pole(n+j)
+                    defect=(history[n+d]-16**d*history[n]-source_sum)%1
+                    self.assertEqual(defect,0)
+
+    def test_periodic_completions_have_arbitrary_finite_prefix_aliases(self):
+        # Independent fully exact rational calibration of the nearest
+        # k/(16^p-1) argument. Not a claimed computation of pi's normality.
+        alpha=Fraction(123456789,1000000000)
+        N=9
+        p=N+18
+        den=16**p-1
+        q=alpha*den
+        k=(q.numerator*2+q.denominator)//(2*q.denominator)
+        beta=Fraction(k,den)
+        self.assertLessEqual(abs(alpha-beta),Fraction(1,2*den))
+        self.assertEqual((16**p*beta-beta)%1,0)
+        for n in range(N+1):
+            circle_delta=((16**n*alpha-16**n*beta)%1)
+            circle_distance=min(circle_delta,1-circle_delta)
+            self.assertLessEqual(circle_distance, Fraction(16**N,2*den))
+
     def test_mode_syzygy_and_projection_recover_coherent_carrier(self):
         a=(math.sqrt(5)-1)/2
         for h in list(range(-60,0))+list(range(1,61)):
