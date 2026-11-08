@@ -1,0 +1,19 @@
+{
+  "RH": "OPEN",
+  "covariance_containments": 1360,
+  "energy_containments": 3759,
+  "hashes": {
+    "EXPLICIT_CLOCKS.md": "957bd97855f1bb7c2ce23e83754b61496b9b8e2537c1cbce253f546b8441494a",
+    "chronology/THEOREMS.md": "5edaa0a79b40b6f80c14fc2801d7aa089ceb88a5cc6f2f02f9bfc667a0577c10",
+    "cube/THEOREMS.md": "1e6cf2b6cd2a273f081fcaa4aaaf6a8828745892044470c7b66dbf17c0eee21d",
+    "explicit_selector.py": "0c63d0b19225ba50e0bcef51ea67d2819e276ab833c1efab8e995371d6c33657",
+    "hostile/THEOREMS.md": "2feaf94b8f3c0b7fe1b5e04b1eee1b09e97793c8a3d649a805a0351e0a7de016",
+    "hostile/exact_oracle.py": "72597b0f3066b3a0d921e1e120270a4154f46ffaf050f4e620990008a32bc18c",
+    "lag_instrument.py": "9bee7c56d4bb87a992cfa2e64fef71f1a1e911436faeecc5bc2f347b254292a1",
+    "run_lag_probe.py": "53eee402f982996f507705a043172b2fa4a40b65be69c867c9a4ada19896e58a"
+  },
+  "independent_selector_maximality_checks": 384,
+  "pi_base16_normality": "OPEN",
+  "review": "Independent Gaussian-rational oracle; root interval implementation tested without phase evaluation",
+  "status": "CERTIFIED-FINITE"
+}

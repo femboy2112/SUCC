@@ -1,0 +1,28 @@
+{
+  "RH": "OPEN",
+  "command": [
+    "/usr/bin/lean",
+    "research/2026-11-08/signed_covariance_round2/hostile/ExactTransport.lean"
+  ],
+  "exit_code": 0,
+  "lean_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "not_formalized": [
+    "four rational BBP poles",
+    "common denominator divisibility",
+    "prime principal parts",
+    "complex character estimates",
+    "signed covariance decay",
+    "pi normality"
+  ],
+  "pi_base16_normality": "OPEN",
+  "scope": [
+    "literal integer zero boundary",
+    "exact finite-window affine transport",
+    "same-forcing integer seed dependence",
+    "finite forcing-window composition"
+  ],
+  "source_sha256": "fd7d303519d3a69410707ad636a5837d34b35b2607adc14dcd8da60f37a4b5a4",
+  "status": "KERNEL-CHECKED INTEGER RECURRENCE ALGEBRA",
+  "stderr": "",
+  "stdout": "'SignedCovariance.Hostile.literal_zero_boundary' does not depend on any axioms\n'SignedCovariance.Hostile.exact_transport' depends on axioms: [propext]\n'SignedCovariance.Hostile.seed_dependence' depends on axioms: [propext]\n'SignedCovariance.Hostile.window_composition' depends on axioms: [propext]\n"
+}

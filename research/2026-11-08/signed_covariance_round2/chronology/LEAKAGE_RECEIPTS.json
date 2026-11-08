@@ -1,0 +1,5493 @@
+{
+  "RH": "OPEN",
+  "cases": [
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "leakage_proved_lower": "1151410025075864906937201/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -18,
+          18
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "leakage_proved_lower": "-148076626607741901197851/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "leakage_proved_lower": "693374650180209622059095/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "leakage_proved_lower": "-105929212526809219508997/604462909807314587353088",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "leakage_proved_lower": "1198449222463824263558001/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -18,
+          18
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "leakage_proved_lower": "40080162944095525285349/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "leakage_proved_lower": "1116727426671843831646295/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "leakage_proved_lower": "482060754822682738251003/604462909807314587353088",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "leakage_proved_lower": "1198632969328620979794801/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -18,
+          18
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "leakage_proved_lower": "40815150403282390232549/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "leakage_proved_lower": "1118381148455014277777495/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "leakage_proved_lower": "484357590632641691211003/604462909807314587353088",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1198633689904561359074161,
+        1198633689904561359074164
+      ],
+      "leakage_proved_lower": "1198633687089811591967601/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -18,
+          18
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        40818032707043907349989,
+        40818032707043907350001
+      ],
+      "leakage_proved_lower": "40818021448044838923749/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1118387633638477691291735,
+        1118387633638477691291742
+      ],
+      "leakage_proved_lower": "1118387608305729787332695/1208925819614629174706176",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        968733195663792864406006,
+        968733195663792864406016
+      ],
+      "leakage_proved_lower": "484366562647524343371003/604462909807314587353088",
+      "m": 2,
+      "p": 17,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 2
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "leakage_proved_lower": "4058360745599605631687/4722366482869645213696",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "353789834575505272060723/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "leakage_proved_lower": "763642726913731892643577/1208925819614629174706176",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "-142058646125807475377357/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "leakage_proved_lower": "4242107610396321868487/4722366482869645213696",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "447868229351423985302323/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "leakage_proved_lower": "1186995503405366102230777/1208925819614629174706176",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "445931321223684482382643/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "leakage_proved_lower": "4242825371586934041287/4722366482869645213696",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "448235723081017417775923/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "leakage_proved_lower": "1188649225188536548361977/1208925819614629174706176",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "448228157033643435342643/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1086164015702195493848832,
+        1086164015702195493848840
+      ],
+      "leakage_proved_lower": "4242828175341584870087/4722366482869645213696",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "448237158603398642121523/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1188655710371999961876217,
+        1188655710371999961876221
+      ],
+      "leakage_proved_lower": "1188655685039252057917177/1208925819614629174706176",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        896474328465796352669286,
+        896474328465796352669298
+      ],
+      "leakage_proved_lower": "448237129048526087502643/604462909807314587353088",
+      "m": 5,
+      "p": 41,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 5
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          199942118653269204706,
+          199942118653269204709
+        ],
+        "im": [
+          15190186625339390896135,
+          15190186625339390896174
+        ],
+        "re": [
+          3312615274333739616224,
+          3312615274333739616260
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1084901919363980451676125,
+        1084901919363980451676147
+      ],
+      "leakage_proved_lower": "130287759229542464707495/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "560/143883",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        4623819301055718120782,
+        4623819301055718120795
+      ],
+      "real_residual_variance": "14/143883",
+      "word_cells": 7
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1279442700999213210739,
+          1279442700999213210743
+        ],
+        "im": [
+          38630876911558355967061,
+          38630876911558355967100
+        ],
+        "re": [
+          -7376087377428245823528,
+          -7376087377428245823488
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1071268882446717270659897,
+        1071268882446717270659921
+      ],
+      "leakage_proved_lower": "112578884918781295156135/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "2240/143883",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        18256856218318899137008,
+        18256856218318899137023
+      ],
+      "real_residual_variance": "14/143883",
+      "word_cells": 7
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          8701363417000448478981,
+          8701363417000448478992
+        ],
+        "im": [
+          42316238659730252596697,
+          42316238659730252596737
+        ],
+        "re": [
+          -93427184728829158442996,
+          -93427184728829158442958
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1049327664656463595859826,
+        1049327664656463595859848
+      ],
+      "leakage_proved_lower": "83064094400846012570535/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "560/15987",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        40198074008572573937079,
+        40198074008572573937094
+      ],
+      "real_residual_variance": "14/143883",
+      "word_cells": 7
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          26503662967334167593548,
+          26503662967334167593565
+        ],
+        "im": [
+          -161694783622489017329367,
+          -161694783622489017329330
+        ],
+        "re": [
+          -76783848723874285615631,
+          -76783848723874285615594
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        985362326491006831102789,
+        985362326491006831102811
+      ],
+      "leakage_proved_lower": "-11383235256546891703385/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "14000/143883",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        104163412174029338694116,
+        104163412174029338694131
+      ],
+      "real_residual_variance": "14/143883",
+      "word_cells": 7
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "leakage_proved_lower": "136167658903037384285095/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "leakage_proved_lower": "136098483612760973466535/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "leakage_proved_lower": "135983191462300288768935/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "leakage_proved_lower": "135614256580826097736615/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "leakage_proved_lower": "136190627261136973814695/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "leakage_proved_lower": "136190357045159331584935/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "leakage_proved_lower": "136189906685196594535335/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "leakage_proved_lower": "136188465533315835976615/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "leakage_proved_lower": "136190716981285800336295/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796929
+      ],
+      "leakage_proved_lower": "136190715925754637671335/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "leakage_proved_lower": "136190714166536033229735/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1089525738665036169796920,
+        1089525738665036169796927
+      ],
+      "leakage_proved_lower": "136190708537036499016615/151115727451828646838272",
+      "m": 9,
+      "p": 73,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          34731908849860334381,
+          34731908849860334383
+        ],
+        "im": [
+          -2655512185998619408457,
+          -2655512185998619408415
+        ],
+        "re": [
+          -5910715388437412404970,
+          -5910715388437412404931
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1156809464735039255634845,
+        1156809464735039255634864
+      ],
+      "leakage_proved_lower": "1112134570176880659923635/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "560/261393",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        2548770270537856425736,
+        2548770270537856425750
+      ],
+      "real_residual_variance": "14/261393",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          729751893491024367678,
+          729751893491024367682
+        ],
+        "im": [
+          -25615521835231695969706,
+          -25615521835231695969669
+        ],
+        "re": [
+          -15035323310881359737679,
+          -15035323310881359737643
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1149251736422396691758725,
+        1149251736422396691758745
+      ],
+      "leakage_proved_lower": "970463575690791303512755/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "2240/261393",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        10106498583180420301855,
+        10106498583180420301870
+      ],
+      "real_residual_variance": "14/261393",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          3777918590375575971625,
+          3777918590375575971632
+        ],
+        "im": [
+          -65879579275400247030196,
+          -65879579275400247030160
+        ],
+        "re": [
+          15069982176611621556061,
+          15069982176611621556099
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        977189151982529678459123,
+        977189151982529678459148
+      ],
+      "leakage_proved_lower": "287293584408214493080109/604462909807314587353088",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "1680/87131",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        22411000292167376933719,
+        22411000292167376933735
+      ],
+      "real_residual_variance": "14/261393",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          10189466394744030389665,
+          10189466394744030389676
+        ],
+        "im": [
+          31591036969755491636067,
+          31591036969755491636108
+        ],
+        "re": [
+          106396970802167057371289,
+          106396970802167057371331
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        1145637287888307847006894,
+        1145637287888307847006913
+      ],
+      "leakage_proved_lower": "24458986613422384545547/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "14000/261393",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        59413319442525840962637,
+        59413319442525840962653
+      ],
+      "real_residual_variance": "14/261393",
+      "word_cells": 9
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "leakage_proved_lower": "1159173767564840016544435/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -18,
+          18
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "leakage_proved_lower": "1158620365242628729995955/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "leakage_proved_lower": "498969972654031597873709/604462909807314587353088",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "leakage_proved_lower": "1200438921312406300065547/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "leakage_proved_lower": "1159357514429636732781235/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -18,
+          18
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "leakage_proved_lower": "1159355352701815594943155/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "leakage_proved_lower": "499796833545616820939309/604462909807314587353088",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "leakage_proved_lower": "1205032592932324205985547/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "leakage_proved_lower": "1159358232190827344954035/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -18,
+          18
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1159358235005577112060595,
+        1159358235005577112060600
+      ],
+      "leakage_proved_lower": "1159358223746578043634355/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        999600152274697055392858,
+        999600152274697055392867
+      ],
+      "leakage_proved_lower": "499800063470974575716909/604462909807314587353088",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1205050607330833687969547,
+        1205050607330833687969550
+      ],
+      "leakage_proved_lower": "1205050536962089510305547/1208925819614629174706176",
+      "m": 11,
+      "p": 89,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 11
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          594468403772296245709,
+          594468403772296245713
+        ],
+        "im": [
+          21280269178135903997794,
+          21280269178135903997832
+        ],
+        "re": [
+          -16303936517648202918640,
+          -16303936517648202918602
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1187934943377862213295551,
+        1187934943377862213295570
+      ],
+      "leakage_proved_lower": "1147436764531476742352995/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "160/28227",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        6725485982310981194388,
+        6725485982310981194404
+      ],
+      "real_residual_variance": "4/28227",
+      "word_cells": 10
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1356859831298843291249,
+          1356859831298843291256
+        ],
+        "im": [
+          26070893769146870256991,
+          26070893769146870257034
+        ],
+        "re": [
+          30994376614685775848428,
+          30994376614685775848471
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1098898290923503984208445,
+        1098898290923503984208468
+      ],
+      "leakage_proved_lower": "936456593531314113872523/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "640/28227",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        26452961922595938211900,
+        26452961922595938211918
+      ],
+      "real_residual_variance": "4/28227",
+      "word_cells": 10
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1630010197636714548696,
+          1630010197636714548703
+        ],
+        "im": [
+          29754508199220700794174,
+          29754508199220700794216
+        ],
+        "re": [
+          -32942839221607431328272,
+          -32942839221607431328228
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1151007510667270792718857,
+        1151007510667270792718877
+      ],
+      "leakage_proved_lower": "783859982285127329507309/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "480/9409",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        57865455076124606021074,
+        57865455076124606021092
+      ],
+      "real_residual_variance": "4/28227",
+      "word_cells": 10
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          23481991733448537643783,
+          23481991733448537643798
+        ],
+        "im": [
+          162820621084461162868899,
+          162820621084461162868937
+        ],
+        "re": [
+          43329337084861352404520,
+          43329337084861352404557
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        976253631488740354997626,
+        976253631488740354997649
+      ],
+      "leakage_proved_lower": "-900324241228180049443/18889465931478580854784",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "4000/28227",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        146717237790067425262006,
+        146717237790067425262022
+      ],
+      "real_residual_variance": "4/28227",
+      "word_cells": 10
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "leakage_proved_lower": "1194475961919436098973795/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "leakage_proved_lower": "1124613383083151540355723/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "leakage_proved_lower": "1207212758776761539094509/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "leakage_proved_lower": "17474362238443443630557/18889465931478580854784",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "leakage_proved_lower": "1194659708784232815210595/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "leakage_proved_lower": "1125348370542338405302923/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "leakage_proved_lower": "1208866480559931985225709/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "leakage_proved_lower": "17546138357504660910557/18889465931478580854784",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1194660429360173194489955,
+        1194660429360173194489958
+      ],
+      "leakage_proved_lower": "1194660426545423427383395/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1125351252846099922420363,
+        1125351252846099922420368
+      ],
+      "leakage_proved_lower": "1125351241587100853994123/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -22,
+          22
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1208872965743395398739949,
+        1208872965743395398739951
+      ],
+      "leakage_proved_lower": "1208872940410647494780909/1208925819614629174706176",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -19,
+          19
+        ],
+        "re": [
+          -19,
+          19
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1122970869278807780259648,
+        1122970869278807780259655
+      ],
+      "leakage_proved_lower": "17546418732969743790557/18889465931478580854784",
+      "m": 12,
+      "p": 97,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          126132526420873882167,
+          126132526420873882170
+        ],
+        "im": [
+          -8958489734713294115993,
+          -8958489734713294115952
+        ],
+        "re": [
+          8498842836319269207301,
+          8498842836319269207341
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1196035705265447101812034,
+        1196035705265447101812066
+      ],
+      "leakage_proved_lower": "1151051135013806261818047/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "600/319073",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        2239094577055612142945,
+        2239094577055612142973
+      ],
+      "real_residual_variance": "15/319073",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          813556634593534827631,
+          813556634593534827636
+        ],
+        "im": [
+          23921437239891632545157,
+          23921437239891632545198
+        ],
+        "re": [
+          20280395993590318931547,
+          20280395993590318931589
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1036218890176879282202297,
+        1036218890176879282202333
+      ],
+      "leakage_proved_lower": "428112909203201392776741/604462909807314587353088",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "2400/319073",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        8901587544309311898999,
+        8901587544309311899025
+      ],
+      "real_residual_variance": "15/319073",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          295952443077700065566,
+          295952443077700065570
+        ],
+        "im": [
+          7489588797282222845667,
+          7489588797282222845708
+        ],
+        "re": [
+          17369243203498679346465,
+          17369243203498679346505
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1139468063371225549975306,
+        1139468063371225549975341
+      ],
+      "leakage_proved_lower": "183569946350894000188797/302231454903657293676544",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "5400/319073",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        19824705490618520012494,
+        19824705490618520012522
+      ],
+      "real_residual_variance": "15/319073",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          432583646767819532640,
+          432583646767819532644
+        ],
+        "im": [
+          -12020306156950362726557,
+          -12020306156950362726514
+        ],
+        "re": [
+          19454402576636802571354,
+          19454402576636802571396
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        1128733881548099061423327,
+        1128733881548099061423359
+      ],
+      "leakage_proved_lower": "1435551880006866898503/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "15000/319073",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        53293291049319108899149,
+        53293291049319108899176
+      ],
+      "real_residual_variance": "15/319073",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "leakage_proved_lower": "1198090332401765618438847/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "leakage_proved_lower": "522191303979120106018341/604462909807314587353088",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "leakage_proved_lower": "289408140473802552585597/302231454903657293676544",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "leakage_proved_lower": "1177415486578990782418503/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "leakage_proved_lower": "1198274079266562334675647/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "leakage_proved_lower": "522558797708713538491941/604462909807314587353088",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "leakage_proved_lower": "289821570919595164118397/302231454903657293676544",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "leakage_proved_lower": "1182009158198908688338503/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1198274799842502713955007,
+        1198274799842502713955011
+      ],
+      "leakage_proved_lower": "1198274797027752946848447/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1045120477721188594101322,
+        1045120477721188594101332
+      ],
+      "leakage_proved_lower": "522560233231094762837541/604462909807314587353088",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1159292768861844069987828,
+        1159292768861844069987835
+      ],
+      "leakage_proved_lower": "289823185882274041507197/302231454903657293676544",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1182027172597418170322503,
+        1182027172597418170322508
+      ],
+      "leakage_proved_lower": "1182027102228673992658503/1208925819614629174706176",
+      "m": 17,
+      "p": 137,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 17
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1668819775244123919485,
+          1668819775244123919490
+        ],
+        "im": [
+          13493892230678769776257,
+          13493892230678769776295
+        ],
+        "re": [
+          -42841500756193531019548,
+          -42841500756193531019510
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1115215302809657329712179,
+        1115215302809657329712220
+      ],
+      "leakage_proved_lower": "1077928338616525433704301/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "2810/335241",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        9936700635564556129048,
+        9936700635564556129082
+      ],
+      "real_residual_variance": "281/1340964",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          473043951038794211001,
+          473043951038794211005
+        ],
+        "im": [
+          -15514092552698839793633,
+          -15514092552698839793596
+        ],
+        "re": [
+          -18198570781509497493491,
+          -18198570781509497493452
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1043793852587850320054502,
+        1043793852587850320054545
+      ],
+      "leakage_proved_lower": "111735174323041451806195/151115727451828646838272",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "11240/335241",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        38982201311267102942862,
+        38982201311267102942898
+      ],
+      "real_residual_variance": "281/1340964",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          2673498815312864412709,
+          2673498815312864412716
+        ],
+        "im": [
+          -55200131027162936848975,
+          -55200131027162936848938
+        ],
+        "re": [
+          -13601738165576059061039,
+          -13601738165576059061001
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1106018843560979952410892,
+        1106018843560979952410925
+      ],
+      "leakage_proved_lower": "382955428894302966304761/604462909807314587353088",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "2810/37249",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        84904997685894049431240,
+        84904997685894049431270
+      ],
+      "real_residual_variance": "281/1340964",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          35407049741476435387489,
+          35407049741476435387506
+        ],
+        "im": [
+          -197204475903420668638466,
+          -197204475903420668638428
+        ],
+        "re": [
+          -62569092310081664946573,
+          -62569092310081664946535
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        987603287082205351184071,
+        987603287082205351184111
+      ],
+      "leakage_proved_lower": "19328760489717229394425/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "70250/335241",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        212317094124923181634318,
+        212317094124923181634354
+      ],
+      "real_residual_variance": "281/1340964",
+      "word_cells": 12
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "leakage_proved_lower": "1124967536004484790325101/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "leakage_proved_lower": "135254773017021130116595/151115727451828646838272",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "leakage_proved_lower": "594631817140120071098361/604462909807314587353088",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "leakage_proved_lower": "1195308695188701144914425/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "leakage_proved_lower": "1125151282869281506561901/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "leakage_proved_lower": "135346646449419488234995/151115727451828646838272",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "leakage_proved_lower": "595458678031705294163961/604462909807314587353088",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "leakage_proved_lower": "1199902366808619050834425/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1125152003445221885841261,
+        1125152003445221885841268
+      ],
+      "leakage_proved_lower": "1125152000630472118734701/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1082776053899117422997400,
+        1082776053899117422997407
+      ],
+      "leakage_proved_lower": "135347005330014794321395/151115727451828646838272",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1190923841246874001842162,
+        1190923841246874001842165
+      ],
+      "leakage_proved_lower": "595461907957063048941561/604462909807314587353088",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1199920381207128532818425,
+        1199920381207128532818429
+      ],
+      "leakage_proved_lower": "1199920310838384355154425/1208925819614629174706176",
+      "m": 24,
+      "p": 193,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 24
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          48385185089825401601,
+          48385185089825401603
+        ],
+        "im": [
+          -3836633823921278287811,
+          -3836633823921278287774
+        ],
+        "re": [
+          6616217986362442877812,
+          6616217986362442877849
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1147221790875789268137422,
+        1147221790875789268137467
+      ],
+      "leakage_proved_lower": "17314051445780254903403/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "370/54289",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        8101166482843497817292,
+        8101166482843497817330
+      ],
+      "real_residual_variance": "37/217156",
+      "word_cells": 13
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          993065722838966226098,
+          993065722838966226104
+        ],
+        "im": [
+          -20407122423162109727995,
+          -20407122423162109727954
+        ],
+        "re": [
+          28001645439515972104951,
+          28001645439515972104991
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1123283644620220409894723,
+        1123283644620220409894769
+      ],
+      "leakage_proved_lower": "15100442156935108709483/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "1480/54289",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        32039312738412356059990,
+        32039312738412356060029
+      ],
+      "real_residual_variance": "37/217156",
+      "word_cells": 13
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1714368498426923964995,
+          1714368498426923965001
+        ],
+        "im": [
+          28875209915395806574690,
+          28875209915395806574731
+        ],
+        "re": [
+          -35196116183807807436710,
+          -35196116183807807436669
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1133614531641840946380847,
+        1133614531641840946380890
+      ],
+      "leakage_proved_lower": "194835233950433070539031/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "3330/54289",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        70739387618159405007878,
+        70739387618159405007917
+      ],
+      "real_residual_variance": "37/217156",
+      "word_cells": 13
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1138624770355322221,
+          1138624770355322223
+        ],
+        "im": [
+          503441703827333028788,
+          503441703827333028830
+        ],
+        "re": [
+          -1059744938455833689303,
+          -1059744938455833689264
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        1019370951528410979214860,
+        1019370951528410979214901
+      ],
+      "leakage_proved_lower": "5940574635647261991191/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "9250/54289",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        184982967731589372173867,
+        184982967731589372173904
+      ],
+      "real_residual_variance": "37/217156",
+      "word_cells": 13
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "leakage_proved_lower": "18049038904967119850603/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "leakage_proved_lower": "18040391993682568498283/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "leakage_proved_lower": "300673428073341622935831/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "leakage_proved_lower": "299935558310393240871191/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "leakage_proved_lower": "18051909949729568541803/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "leakage_proved_lower": "18051876172732363263083/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "leakage_proved_lower": "301086858519134234468631/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "leakage_proved_lower": "301083976215372717351191/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "leakage_proved_lower": "18051921164748171857003/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1155322957358632765954752,
+        1155322957358632765954759
+      ],
+      "leakage_proved_lower": "18051921032806776523883/18889465931478580854784",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "leakage_proved_lower": "301088473481813111857431/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1204353919260000351388764,
+        1204353919260000351388768
+      ],
+      "leakage_proved_lower": "301088462222814043431191/302231454903657293676544",
+      "m": 29,
+      "p": 233,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 29
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          329036559874946458304,
+          329036559874946458308
+        ],
+        "im": [
+          -15499447862977528140450,
+          -15499447862977528140410
+        ],
+        "re": [
+          -12551808984080302279212,
+          -12551808984080302279172
+        ]
+      },
+      "authentic_signed_residual_upper": "11/56",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 1,
+      "h": 1,
+      "leakage_interval": [
+        1187999510242033923406707,
+        1187999510242033923406752
+      ],
+      "leakage_proved_lower": "574331254257738236479617/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "11036/1658181",
+      "phase_residual_grid_upper": "5/128",
+      "phase_residual_interval": [
+        7886663102139001689445,
+        7886663102139001689487
+      ],
+      "real_residual_variance": "2759/16581810",
+      "word_cells": 16
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          148221808018692158262,
+          148221808018692158265
+        ],
+        "im": [
+          -4723331548730661198680,
+          -4723331548730661198641
+        ],
+        "re": [
+          -12525147097919658595613,
+          -12525147097919658595575
+        ]
+      },
+      "authentic_signed_residual_upper": "11/28",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 1,
+      "h": 2,
+      "leakage_interval": [
+        1164982363578349253870523,
+        1164982363578349253870569
+      ],
+      "leakage_proved_lower": "503495757014693558274177/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "44144/1658181",
+      "phase_residual_grid_upper": "5/32",
+      "phase_residual_interval": [
+        30903809765823671225628,
+        30903809765823671225671
+      ],
+      "real_residual_variance": "2759/16581810",
+      "word_cells": 16
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          1800563570570012468797,
+          1800563570570012468803
+        ],
+        "im": [
+          -18436272794015681971086,
+          -18436272794015681971049
+        ],
+        "re": [
+          -42858507157672124423061,
+          -42858507157672124423024
+        ]
+      },
+      "authentic_signed_residual_upper": "33/56",
+      "changed_complement_covariance": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "digits": 1,
+      "h": 3,
+      "leakage_interval": [
+        1092310808652758533154798,
+        1092310808652758533154849
+      ],
+      "leakage_proved_lower": "734494702509694238521147/1208925819614629174706176",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "33108/552727",
+      "phase_residual_grid_upper": "45/128",
+      "phase_residual_interval": [
+        67196877315203774598944,
+        67196877315203774598989
+      ],
+      "real_residual_variance": "2759/16581810",
+      "word_cells": 16
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          5720864600470896258071,
+          5720864600470896258080
+        ],
+        "im": [
+          31084420279566808734872,
+          31084420279566808734911
+        ],
+        "re": [
+          77135333939199693159064,
+          77135333939199693159103
+        ]
+      },
+      "authentic_signed_residual_upper": "55/56",
+      "changed_complement_covariance": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "digits": 1,
+      "h": 5,
+      "leakage_interval": [
+        1018566898510144460309937,
+        1018566898510144460309981
+      ],
+      "leakage_proved_lower": "1373868720867104106431/302231454903657293676544",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "275900/1658181",
+      "phase_residual_grid_upper": "125/128",
+      "phase_residual_interval": [
+        167520197090735259539747,
+        167520197090735259539787
+      ],
+      "real_residual_variance": "2759/16581810",
+      "word_cells": 16
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/896",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 2,
+      "h": 1,
+      "leakage_interval": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "leakage_proved_lower": "597850852951717914790017/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/448",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 2,
+      "h": 2,
+      "leakage_interval": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "leakage_proved_lower": "597574151790612271515777/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8192",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/896",
+      "changed_complement_covariance": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "digits": 2,
+      "h": 3,
+      "leakage_interval": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "leakage_proved_lower": "1157847479001328448108347/1208925819614629174706176",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/896",
+      "changed_complement_covariance": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "digits": 2,
+      "h": 5,
+      "leakage_interval": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "leakage_proved_lower": "295368852395613082986431/302231454903657293676544",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/32768",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/14336",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 3,
+      "h": 1,
+      "leakage_interval": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "leakage_proved_lower": "597942726384116272908417/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/7168",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 3,
+      "h": 2,
+      "leakage_interval": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "leakage_proved_lower": "597941645520205703989377/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2097152",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/14336",
+      "changed_complement_covariance": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "digits": 3,
+      "h": 3,
+      "leakage_interval": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "leakage_proved_lower": "1159501200784498894239547/1208925819614629174706176",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/14336",
+      "changed_complement_covariance": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "digits": 3,
+      "h": 5,
+      "leakage_interval": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "leakage_proved_lower": "296517270300592559466431/302231454903657293676544",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/8388608",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -22,
+          22
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "11/229376",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 4,
+      "h": 1,
+      "leakage_interval": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "leakage_proved_lower": "597943085264711578994817/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "11/114688",
+      "changed_complement_covariance": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "digits": 4,
+      "h": 2,
+      "leakage_interval": [
+        1195886173344172925096194,
+        1195886173344172925096197
+      ],
+      "leakage_proved_lower": "597943081042586928334977/604462909807314587353088",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "5/536870912",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -20,
+          20
+        ],
+        "re": [
+          -20,
+          20
+        ]
+      },
+      "authentic_signed_residual_upper": "33/229376",
+      "changed_complement_covariance": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "digits": 4,
+      "h": 3,
+      "leakage_interval": [
+        1159507685967962307753787,
+        1159507685967962307753793
+      ],
+      "leakage_proved_lower": "1159507660635214403794747/1208925819614629174706176",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "45/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    },
+    {
+      "authentic_signed_residual": {
+        "abs_squared": [
+          0,
+          2
+        ],
+        "im": [
+          -21,
+          21
+        ],
+        "re": [
+          -21,
+          21
+        ]
+      },
+      "authentic_signed_residual_upper": "55/229376",
+      "changed_complement_covariance": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "digits": 4,
+      "h": 5,
+      "leakage_interval": [
+        1186087095600879719849724,
+        1186087095600879719849728
+      ],
+      "leakage_proved_lower": "296521756308033885546431/302231454903657293676544",
+      "m": 35,
+      "p": 281,
+      "phase_residual_data_upper": "0",
+      "phase_residual_grid_upper": "125/2147483648",
+      "phase_residual_interval": [
+        0,
+        0
+      ],
+      "real_residual_variance": "0",
+      "word_cells": 35
+    }
+  ],
+  "counts": {
+    "authentic_signed_projection_checks": 144,
+    "certified_leakage_lower_bounds": 144,
+    "certified_phase_variance_bounds": 144,
+    "conjugate_complement_controls": 144,
+    "exact_real_variance_checks": 36
+  },
+  "floating_point": false,
+  "phase_engine": "covariance_forge/intervals.py; reused calibrated instrument",
+  "phase_scale": 1208925819614629174706176,
+  "pi_bound": "pi<22/7",
+  "pi_normality": "OPEN",
+  "pi_squared_bound": "pi^2<10",
+  "source": "four original poles, U0=0",
+  "status": "certified_finite_CH7_checks",
+  "total_counted_instances": 612
+}
