@@ -1,4 +1,4 @@
-# Two preregistered rounds: observations and a falsifier
+# Three preregistered rounds: observations and falsifiers
 
 These are finite interval certificates. Their endpoint integers have common
 denominator 2^80. The source starts at literal zero and is computed unwrapped;
@@ -67,6 +67,27 @@ claim about the selected orbit. Overlapping source times are disclosed in
 the second preregistration; these are fresh spectral probes, not wholly new
 independent source datasets.
 
+## Round three: actual causal carry-history models
+
+Protocol was pushed at `0d0d57a9` before measurements. At A=383,769,1543 and
+h=1,2,3,5, test memory lengths0,1,2,3 plus diagnostic singleton cells. Current
+carry information is available after the current update; these are causal
+observation features, not strictly past-only martingale predictors.
+
+All12 original-source cases refute the proposal that one of the four carry
+models gives the sharp CFS-5 **certificate expression** at most1/2. This does
+not assert that the true Weyl modulus exceeds1/2. It means this feature menu
+fails to certify that threshold, despite the small measured signed mean.
+The receipts retain prime leakage, complement prediction error and both
+orthogonal terms for every model. A separate coherent control remains at1
+through all partition refinements; a nonresonant four-point control is
+certified near0. Thus the instrument can detect a real saving when present.
+
+The useful conclusion is specific: these short carry-memory menus do not pay
+the remaining signed estimate. It is not a general impossibility result for
+learning observers. [A separate exact control](PREDICTOR_BOUNDARY.md) shows why
+full cancellation need not imply that a cheap chirp-prediction certificate exists.
+
 ## Reproduction
 
 From the repository root, with its Python requirements installed:
@@ -76,6 +97,7 @@ python research/2026-11-08/covariance_forge/run_experiment.py --stage pilot --ou
 python research/2026-11-08/covariance_forge/run_experiment.py --stage holdout --output /tmp/covariance-holdout
 python research/2026-11-08/covariance_forge/run_experiment.py --stage stress --output /tmp/covariance-stress
 python research/2026-11-08/covariance_forge/run_spectral_probe.py --output /tmp/covariance-spectra
+python research/2026-11-08/covariance_forge/run_history_probe.py --output /tmp/covariance-history
 ```
 
 Elapsed times change on replay; mathematical endpoints, source hashes and

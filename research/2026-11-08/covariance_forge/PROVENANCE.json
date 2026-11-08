@@ -1,0 +1,48 @@
+{
+  "RH": "OPEN",
+  "base_main": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "branch": "research/learning-yoneda-source-cancellation-2026-11-07",
+  "classical_inputs": [
+    {
+      "authority": "Primary paper reopened; analytic input, not re-proved or Lean certified",
+      "theorem": "Bourgain-Konyagin 2003 Theorem2.1, printed p78",
+      "url": "https://www.numdam.org/item/10.1016/S1631-073X(03)00281-4.pdf"
+    },
+    {
+      "authority": "Classical input for prime coverage and denominator mass",
+      "theorem": "PNT in fixed arithmetic progressions; Kedlaya Theorem4.12",
+      "url": "https://kskedlaya.org/ant/chap-primes-in-ap.html"
+    },
+    {
+      "authority": "Background primary exposition; the exact inequality/constants are derived in CFS7",
+      "theorem": "Finite van der Corput from Cauchy-Schwarz",
+      "url": "https://terrytao.wordpress.com/2008/06/14/the-van-der-corputs-trick-and-equidistribution-on-nilmanifolds/"
+    }
+  ],
+  "main_check_utc": "2026-11-08 05:29:51 UTC",
+  "main_refetched_before_publication": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "parent_research": "47ec1ccf9d3579897abb94c047f3b4dc13b4cb70",
+  "pi_normality": "OPEN",
+  "proof_review": "Root, arithmetic and crucible checked CFS7; root, crucible and spectral checked growing-degree corollary. Shared model/classical inputs are not independent scholarly referees.",
+  "protocol_commits": {
+    "0d0d57a9": "0d0d57a98b7aff4e0b66a5e605071e0c94bb60d0",
+    "42f9ed6d": "42f9ed6d66737c0bb93296ad84cac706988a3a30",
+    "fd925707": "fd925707d031721d642b533895db02501115f096"
+  },
+  "read_only_pr532": {
+    "commit": "f6560d9378b76ec4bca2e8b2bfbef591e0020fa3",
+    "path": "research/2026-11-06/prime_frobenius_spectral/THEOREMS.md",
+    "sha256": "1cf52deec71b1ca8a63a3b4acaa4e9e913c04693cc5327ae9ed1e65f9d0eb21a"
+  },
+  "source_hashes": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/pi_succ_character_intervals.py": "29eeb433186a08afd9e1d00ff3359f6e0453bf4c17dd8a7dffe54d00d10520a0",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-11-07/learning_yoneda/ANCHORED_SIGNED_FRONT.md": "0e999de58a5d1e071ab3b47be0c2aac602dc448ad5b8ee88d408d6c3e1bd031d",
+    "research/2026-11-07/learning_yoneda/PROVENANCE.json": "cf7573c9e3246aebfc5320e543e16b464a34e1a10483bfd19467f89975b32250",
+    "research/2026-11-07/learning_yoneda/arithmetic/PRIME_EPOCH_THEOREM.md": "4cd492fea4bbd715b1b4af9f0fbd1d53ffe83effe4bd248db94b2a519ec43f61",
+    "research/2026-11-07/learning_yoneda/arithmetic/finite_adelic.py": "ac5c3e453281d643dd71bdd23424800aff967d89c522b1f14a02b522475f60db"
+  }
+}
