@@ -637,6 +637,14 @@
       "title": "Lonely Runner campaign: research-local claim supplement"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "registered_namespaces": [
+        "MAIN_XXI"
+      ],
+      "sha256": "2101a82fd0269ba80b82551996546f11a7f4d379c93c324c94a6acd0983e0131",
+      "title": "Claim supplement — Operation Main XXI integration (2026-11-07)"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
       "registered_namespaces": [
         "MAIN_XX_FORGE"
@@ -9488,6 +9496,306 @@
       "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
       "raw_table_row": "| LRN-15 | Every upper-half deletion pair and every inserted integer w>=n admits a rational time strictly separating every actual retained or inserted speed from all integers by 1/n | FORMALIZED: complete upper_half_one_insertion_hole export, seven new declarations; guarded kernel with false-radius control | Does not formalize the unrestricted cubic theorem or its classical classification dependency |",
       "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-01",
+      "key": "MXXI-01",
+      "line": 30,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-01 | Bernoulli pin bed: `μ=λ−½D²F` inverts the `B₂` surface (from `D²B₂=2λ−2δ₀`). The affine transport has sharp norm `‖L_{b,a}‖=b²`. The discounted completion has threshold `ρb²=1`. BBP surface-norm transport is `1/(30√3A²)`. | PROVED LOCAL | #541 `research/2026-11-07/fourier_yoneda_pinbed/THEOREMS.md:93–409, 505–516` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-02",
+      "key": "MXXI-02",
+      "line": 31,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-02 | Driven pin bed: the first-order continuous inverse, and the realization characterization (coherence + mass + positivity, with a ghost counterexample). The half-aperture frame `4‖η‖_{H⁻¹} ≤ D ≤ √(16+2π²)‖η‖_{H⁻¹}` is sharp at both ends. | PROVED LOCAL | #543 `driven_pinbed_observability/CONTINUOUS_THEOREMS.md:47–259` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-03",
+      "key": "MXXI-03",
+      "line": 32,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-03 | One-step ×16 constant in the half-aperture metric on **real** probability-law differences: `C₁₆(½)=341/√205≈23.8164730857` (so `C²=116281/205`), attained at `h=2` (densities `1±ε cos(2π·32x)`). The `h=1` value, `(π²+8)/8·255²/257≈565.161`, falls short of `116281/205` by about 0.36%. **Boundary:** on complex inputs the ×16 operator norm is exactly `31`. \"`h=2` wins\" is specific to `b=16`; at `b=32`, `h=1` is larger (2280.617 vs 2273.889), though the `max{·}` formula itself is correct. | PROVED LOCAL (sharp; Verified by two blind bearings: analytic + physical-space quadrature + attaining witness, and an independent scan to `h≤20000`) | #543 `CONTINUOUS_THEOREMS.md:324–367` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-04",
+      "key": "MXXI-04",
+      "line": 33,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-04 | Phase cycle, demodulation and gain calibration `g=∫Y₁/c(−1)`. Lock-in unbiasedness, variance `[S+2Re(āb c)]/(αS²)` and the Hoeffding constant. | PROVED LOCAL | #543 `LOCKIN_AND_CONTROLS.md:49–152`, `COHERENT_SCAN.md:33–66, 117–135` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-05",
+      "key": "MXXI-05",
+      "line": 34,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-05 | Two-tone stable arc STP-1…STP-4. Realization RY-1…RY-3. Learning observer LO-02…LO-05: `4N` bits = `log₂16^N` are necessary and sufficient for lossless distinction of all `16^N` seeds under circle-only access, with noise margin `1/(2·16^{N−t})`. | PROVED LOCAL | #542 `pinbed_yoneda_oscillators/TWO_TONE_STABLE_ARC.md:45–189`, `REALIZATION_AND_DYNAMIC_YONEDA.md:88–183`, `LEARNING_OBSERVER.md:34–63` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-06",
+      "key": "MXXI-06",
+      "line": 35,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-06 | Every pin-bed normality statement is an **equivalent reformulation** of the open gate. None says a learning observer forces π's digits to be normal. Sources: #541 `THEOREMS.md:518–537`; #542 STP-5 and PBFO-10; #543 `CONTINUOUS_THEOREMS.md:543–546`. | PROVED LOCAL (EQUIVALENT-REFORMULATION; premise OPEN; not progress) | as cited |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-07",
+      "key": "MXXI-07",
+      "line": 36,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-07 | Refuted strategies, each with a receipt: seed-blind holonomy (APH-01, receipt `s_*=−π/16`); erased-clock uniformity; raw DC-scan uniformity; positivity without coherence; \"one missing quadrature is always fatal\" (as an inference). | REFUTED | #542 `ANCHORED_PATHS_VS_HOLONOMY.md`; #543 `LOCKIN_AND_CONTROLS.md:173–216`, `COHERENT_SCAN.md:79–101`, `CONTINUOUS_THEOREMS.md:116–125` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-08",
+      "key": "MXXI-08",
+      "line": 83,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-08 | Completion identity (`T₀=π/16`). `0<r(n)<1/n²` for `n≥2`. Base 16 ⇔ base 2 (classical). Staircase and `β=1/5` countermodels. | PROVED LOCAL / CLASSICAL | #525 `realization_gyroscope/` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-09",
+      "key": "MXXI-09",
+      "line": 84,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-09 | J9: a finite entropy-deficit → joint-Weyl inequality, with exact TV `ε=(L−k)/(N−k+1)`. J15 and J18/J19. Six certified `\\|J_A(h)\\|` intervals, reproduced at 1400 digits. The J20 premise is OPEN. | PROVED LOCAL (criterion) / CERTIFIED FINITE | #526 `joint_character_entropy/THEOREMS.md:100–119, 201–210`. **Scope note:** `σ_n` at `:140,:144` and `CLAIM_LEDGER.md:10` is the *index-only* period-7 clock `(n+1) mod 7`, not a source-derived pole clock (its own `SOURCE_CLOCK_AUDIT.md:7`). |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-10",
+      "key": "MXXI-10",
+      "line": 85,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-10 | The original BBP 2-adic zero `V(0)=0`, the isometry, and DB10. DB-06/DB-07: the 2-adic zero plus 2-adic Haar do not force real Haar, and do not fingerprint the source. | PROVED LOCAL (independent **rederivation** of main's 2026-10-27 binwindow zero boundary) / countermodels | #527 `padic_boundary/`. **Scope note (provenance):** prior art is `research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md:90ff`, `observational_succ/bbp_binwindow_conjugacy.py` and `bbp_two_adic.py`. New here: DB10 packaging and DB-06/DB-07. |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-11",
+      "key": "MXXI-11",
+      "line": 86,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-11 | RS8: the state-only 2-adic decoder has a floor of `1/34`. RS-06: no odometer→×16 Haar factor exists. RS6–RS8 use only irrationality, so they hold for **every** irrational `β`. | PROVED LOCAL / CLASSICAL | #528 `adelic_return_bridge/THEOREMS.md:103–125` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-12",
+      "key": "MXXI-12",
+      "line": 87,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-12 | Adelic CRT (AT1/AT2). Birth table (AT3; already present as `observational_succ/bbp_cyclotomic_birth.py:21–26`). Subgroup Gauss bound (AT5). AT6/AT7. AT10. AT9: closed form of `Σr(n)` by digamma. | PROVED LOCAL / CLASSICAL | #529 `odd_place_triangle/THEOREMS.md`. **Scope note:** ledger AT-04…AT-06 ≠ THEOREMS AT-04/AT-05. Read by THEOREMS ids. |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-13",
+      "key": "MXXI-13",
+      "line": 88,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-13 | **log of the reduced denominator is linear:** `5 ≤ liminf log d_n/n ≤ limsup log d_n/n ≤ 8`, where `d_n` is the odd reduced denominator of `U_n` (PF7 / ledger PF-04; unconditional PNT and PNT in progressions). The exact sweep `n=8..300` violates the prime band only at the declared exception `p=19, n=10..16`. PF9: Galois-orbit Haar. | PROVED LOCAL (classical inputs; **not zero-seed selective**: persists for any fixed rational seed) | #532 `prime_frobenius_spectral/THEOREMS.md:13–154`. Its `FAILED_SCRATCH.md:5` refutes \"denominator growth + Galois Haar ⇒ real Haar\". |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-14",
+      "key": "MXXI-14",
+      "line": 89,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-14 | HT14: `max_{n<N} d_n > N` for `N≥6`. HT18: `v_p(U_n)=−1` iff `p≡1 (mod 4)` for `4n<p≤8n−7`. HT20: `liminf log d_n/n ≥ 2`. **HT20 is superseded by MXXI-13's `≥5` on the same `d_n`.** | PROVED LOCAL (+Bertrand, PNT-AP) | #534 `holographic_triangle/THEOREMS.md:167–239`. **Scope notes:** AGENTS.md rule 3 — \"physically admissible plane\" (`:45`, `:66`, `CLAIM_LEDGER.md:15`) is the *definitional* seam `U=C+x`, and HT4 reads `R=A`. \"Gamma/harmonic source functor\" (`:262`) is the exact digamma partial-sum identity. `independent_run.sh` calls a `receipt.py` that never existed and, under `set -eu`, truncates the tracked receipt. **Do not run it.** The committed receipt is internally consistent (17 sha256 pins match). |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-15",
+      "key": "MXXI-15",
+      "line": 90,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-15 | FG10/FG11: at fixed `N`, return energy is monotone nondecreasing under dyadic refinement (`1 = global + between + within`). This refutes contraction-by-refinement. FG2–FG17 hold. | PROVED LOCAL / REFUTED strategy | #535 `fejer_gamma_split/THEOREMS.md:133–147`. **Scope note:** `:136` \"Q from 1 to N\" should read \"Q from 1 to 2^K\". |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-16",
+      "key": "MXXI-16",
+      "line": 91,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-16 | TS5/TS10 closed forms (agree to 40 digits; exact numerator identity). TS-09 signs certified. | PROVED LOCAL / CERTIFIED FINITE | #530 `triangle_signed_return/`. **Scope note:** TS-09…TS-11 are used twice in `CLAIM_LEDGER.md` (`:14–16` vs `:33–36`). Read the second table as TS-13…TS-16. |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-17",
+      "key": "MXXI-17",
+      "line": 92,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-17 | IT1: averaged return gluing. IT3/IT5 are conditional. Source-selected Poisson contraction is OPEN. | PROVED LOCAL / PROVED-CONDITIONAL | #531 `infinity_thread/` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-18",
+      "key": "MXXI-18",
+      "line": 93,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-18 | SE4: energy transport `O(H²/N)`. SE3 is conditional. | PROVED LOCAL / PROVED-CONDITIONAL | #533 `spectral_exorcism/` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-19",
+      "key": "MXXI-19",
+      "line": 94,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-19 | CC1: √-transport `≤4√(H(H+1))/N` on prefixes. CC3: the frequency-ray bound (`\\|W_512^x(1)\\|<0.902184`, recomputed 0.9021831). CC4/CC8 gluing. K3 all-radius certificates to `N=4096` (`K=2.7` chosen post hoc, flagged). | PROVED LOCAL / CERTIFIED FINITE | #536 `critical_collision/` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-20",
+      "key": "MXXI-20",
+      "line": 95,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-20 | ET1, on the original orbit, for all `A,H≥1`: `\\|√C^z_{A,H} − √C^x_{A,H}\\| ≤ (π/(15A²))√(H(H+1)(H+2)/6)`, i.e. **transport error `O(A^{−1/2})` at `H=A`, not `o(1)` for the gate**. ET2b holds. | PROVED LOCAL ORIGINAL SOURCE | #538 `epoch_critical_transfer/THEOREMS.md`. **Scope notes:** the PR title \"transport o(1)\" should read \"transport error `O(A^{−1/2})`\". `:81` should read \"as `A→∞` through all integers `A`\". |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-21",
+      "key": "MXXI-21",
+      "line": 96,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-21 | ET3: `C^x_{A,A}=o(\\log A)` along all `A`, or along `A_j` with `A_{j+1}/A_j→1`, implies normality. ET4a: all-radius `K`-anticlustering implies `C^x_{A,A} ≤ 2K+4(A+1)/(3A)`. ET5: `K≤3` at `A=191,319` over all real radii. | PROVED-CONDITIONAL (premises OPEN) / CERTIFIED FINITE | #538 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-22",
+      "key": "MXXI-22",
+      "line": 97,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-22 | Golden aperture identities GA1–GA3 and GA6–GA9 (for every probability measure). GA4: π normal ⇔ `E_a(μ_A^x)→0`. | PROVED LOCAL / EQUIVALENT-REFORMULATION (limit OPEN) | #540 `golden_aperture_fejer/THEOREMS.md` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-23",
+      "key": "MXXI-23",
+      "line": 98,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-23 | GA5/GA10: fixed-aperture **unsquared** energy transport `\\|E_a(μ^z)−E_a(μ^x)\\| ≤ 1/(15bA²)`, uniform over dyadic fibers `Q\\|A`. This is not a decay rate for `E`. GA11 is conditional. Certificates at `A=79,157,1024,2048` were recomputed independently. | PROVED LOCAL ORIGINAL SOURCE / CERTIFIED FINITE | #540. **Scope note:** ledger GA-09 collides with THEOREMS §GA-09, which is ledger GA-12. |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-24",
+      "key": "MXXI-24",
+      "line": 99,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-24 | **GA-09** — \"K=3 anti-clustering ⇒ `E_a→0`\" — is **REFUTED, with the receipt supplied at integration**. The uniform `A`-point grid on an arc of length `2/3` has `B_A(t)≤A+3A²t` for all `t∈[0,½]`, yet `E_a→√5/9−1/6≈0.08179>0`. | REFUTED (receipt R1) | [`research/2026-11-07/main_xxi_receipts/`](../research/2026-11-07/main_xxi_receipts/README.md) |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-25",
+      "key": "MXXI-25",
+      "line": 100,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-25 | #540 `A=4096` golden interval: `E ∈ [0.00015731538591, 0.00015731538592]`, pair count 12817828. It was computed at integration with the documented `--include-4096` in 46.6 s. The dossier says TIMEOUT / NOT COMPUTED, which is stale for this machine. | TESTED MODEL (OBSERVED-FINITE; integration-time run, not a committed receipt) | integration audit §5 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-26",
+      "key": "MXXI-26",
+      "line": 106,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-26 | QR-01…QR-06: `O_K=ℤ[φ]`, the Galois action, the Frobenius `φᵖ` mod `p` (by `χ₅(p)`), `ζ_K=ζ·L(χ₅)`, root number `+1`, and the harmonic–Lucas expansion. QR-07 is a real firewall: killing the odd test sector does not remove `L(s,χ₅)`, and it implies no Weil positivity. QR-08/QR-09 are OPEN. | PROVED CLASSICAL (QR-05: imported) / PROVED LOCAL; RH OPEN | #537 `quadratic_galois_tate_bridge/`. **Scope notes:** README `:11` should add \"modulo p\". RESEARCH `:66` is an exact involution. `test_local_euler_artin_polynomials` is a table check. NEXT §A mutants are unpaid. |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-27",
+      "key": "MXXI-27",
+      "line": 107,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-27 | HPB-01…HPB-05 (harmonic–Pisot boundary). HPB-04: `Σ‖t_n‖²/n<∞` forces the mean of `e(t_n)` to 1. C2–C5 golden aperture. | PROVED LOCAL / PROVED CLASSICAL | #539 `harmonic_pisot_boundary/`. **Scope notes:** \"anti-normality theorem\" covers finite weighted square-distance energy only; it is elementary for Pisot `αⁿ` and does **not** transfer to the BBP orbit. \"Uniquely self-calibrating\" aperture means unique only under the declared normalization `C=L`. `L(1,χ₅)` \"is equivalent to\", not \"sets\", the rate. |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-28",
+      "key": "MXXI-28",
+      "line": 108,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-28 | `B_crit = Q_∞ − γ = 2.47730946056315501453` (`γ` is Euler–Mascheroni; depends on the counterterm). For `B=2.45`, the first nonpositive margin is at `N=19`. | TESTED MODEL (OBSERVED; independently recomputed at 400 digits; not interval-certified) | #539 |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-29",
+      "key": "MXXI-29",
+      "line": 109,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-29 | The CIRCLE_WINDOW statement \"π normal ⟺ `E_{π/φ}(μ_A)→0`\" re-expresses the `Q_{1/2}` gate. | PROVED LOCAL (EQUIVALENT-REFORMULATION; not progress) | #539 `CIRCLE_WINDOW.md` |",
+      "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "MXXI-30",
+      "key": "MXXI-30",
+      "line": 115,
+      "namespace": "MAIN_XXI",
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md",
+      "raw_table_row": "| MXXI-30 | Source-selected decay of any of these: the combined time-return Fejér × golden spatial witness (#535 × #540), the critical Fejér energy `C^x_{A,A}=o(\\log A)` (ET3), or Main XX's (LS)/(H2\\*). Any valid proof must **fail** on the coherent counterseed `s_*=−π/16`, on the CB-3 same-forcing seeds, and on the GA-09 receipt configuration. | HYPOTHESIS (OPEN) | [`docs/PI_NORMALITY_FRONTIER.md`](PI_NORMALITY_FRONTIER.md) §6 |",
+      "registered": true
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
@@ -21711,11 +22019,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 2013,
-    "claim_supplements_scanned": 205,
-    "registered_claim_rows": 1879,
-    "registered_namespace_count": 177,
-    "source_documents_found": 2377
+    "claim_rows_found": 2043,
+    "claim_supplements_scanned": 206,
+    "registered_claim_rows": 1909,
+    "registered_namespace_count": 178,
+    "source_documents_found": 2508
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -34734,6 +35042,792 @@
       "sha256": "0a22c85ec597b214d0601ce4ce37dd16a9ea2927a1ed9a60efe6da3880bd5a25",
       "size": 4850,
       "title": "Validation — zero-object Casimir analogue and source-seed pressure"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/CLAIM_LEDGER.md",
+      "sha256": "6eea61900fb0cac3270f6517f3e08b98a6159dec2fbba151a781f8d22996d958",
+      "size": 4924,
+      "title": "Claim ledger — cross-place return, carry and entropy"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/NEXT.md",
+      "sha256": "baa71d1efb34886a8a7604b6775cb1a6a802fcaed398180a5bd8dbb1e439e0f0",
+      "size": 3089,
+      "title": "Next decisive SUCC cross-place theorem — make source replication yield *signed* real cancellation"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/PREREGISTRATION.md",
+      "sha256": "4c276d3742ea5db2df4e42cae767853c998832d24737b6cc233aaffcaef852d6",
+      "size": 4041,
+      "title": "Preregistration — cross-place source-selected obstruction and return-fiber probe"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/README.md",
+      "sha256": "8300dd86ac7803547cac1d97f744afe7f35a1a7903e37ea933c5db88d5bca861",
+      "size": 3898,
+      "title": "Operation RETURN SEAM — 2-adic source copies and real-phase carry transport ⚡"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/THEOREMS.md",
+      "sha256": "3f3a98b2bbf95d9d43b566108d3884d0a462f47047806a5af2e3599fd2f49c16",
+      "size": 18528,
+      "title": "Operation RETURN SEAM — BBP 2-adic odometer, exact carry reconstruction, and real-phase non-continuity"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/VALIDATION.md",
+      "sha256": "59ac272dc148e44b59eaa3eda1a3f8208ebcb290aa0664c449b1ffd68f35858f",
+      "size": 3874,
+      "title": "Validation and execution boundaries — Operation RETURN SEAM"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/CLAIM_LEDGER.md",
+      "sha256": "26f658ef176f6d466196ed729bdd8aa35454fc4dbd6880105287f9be793c3c95",
+      "size": 4118,
+      "title": "Claim Ledger — Operation CRITICAL COLLISION (π NORMALITY STILL OPEN)"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/NEXT.md",
+      "sha256": "6b5af892fc5931e6a322f4d5d45ee09209bd01fb73fb560ee03883ee0f88e7d4",
+      "size": 4729,
+      "title": "Next verdict-changing attempt — source-selected signed two-variable shell budget (still OPEN)"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/POSTHOC_K27_10.md",
+      "sha256": "9945910607db56de08a9d5aae6cd02b61201a1c57bdac96b5158c68590f60ddb",
+      "size": 1333,
+      "title": "Post-hoc strengthening of exact finite continuum-radius upper caps (NOT BLIND)"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/PREREGISTRATION.md",
+      "sha256": "3af0576891864fb5fd101ab5128cf6f4886eb99326e80931d842a9b35cace328",
+      "size": 3593,
+      "title": "PREREGISTRATION — Operation CRITICAL COLLISION / source-selected Fejér gate"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/PREREGISTRATION_RADIUS_HOLDOUT.md",
+      "sha256": "3c0a596bcca1ec1574928c18c0823998c1b097825f4e1319a41e9791c185ae60",
+      "size": 1803,
+      "title": "PREREGISTRATION ADDENDUM: source-selected continuum-radius census, N=4096 holdout"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/SLACK_RECURSION.md",
+      "sha256": "23075e537686b7b2c5ce1538dacaab69273af35c1c5b9e6039a069734d8928ab",
+      "size": 4162,
+      "title": "CC8 — Genuine source-selected signed moving-window collision budget"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/THEOREMS.md",
+      "sha256": "7ff501a12e82fc436470d1657b9a30bc37c3475e27718cb5baddf1a736059668",
+      "size": 8419,
+      "title": "Operation CRITICAL COLLISION: BBP Fejér critical transport and source-selected signed gate"
+    },
+    {
+      "path": "research/2026-11-06/critical_collision/VALIDATION.md",
+      "sha256": "fe1516967447459e524127118a71a43111c14eccb2b43d0e047738c4c738ed55",
+      "size": 4917,
+      "title": "Validation & reproduction — critical-scale original BBP Fejer research (2026-11-06)"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/CLAIM_LEDGER.md",
+      "sha256": "243e07b28ca33e741b5b0b58c6f4ce59b5cd0558d7f09a6120f026ea4026c68a",
+      "size": 2917,
+      "title": "Claim ledger — epoch-critical Fejér source transport"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/NEXT.md",
+      "sha256": "14e2e9309a7ed48f73a529a625fd18005475493c9690df7a0de118ea2c1a7fbc",
+      "size": 2400,
+      "title": "Next decisive arithmetic gate"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/PREREGISTRATION.md",
+      "sha256": "eed1e8de600c43b3f10fa3313925cdd54db897804ba3109f2b94b7165f4d937f",
+      "size": 2408,
+      "title": "Preregistration — epoch-critical Fejér Hilbert transport"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/PREREG_ALL_RADIUS.md",
+      "sha256": "7fc8a5e72e54a553ea8bfae28f377b120c4aeda687359b9433aba72ffb6bdda9",
+      "size": 1218,
+      "title": "Preregistered holdout addendum — all-radius exact pair census on odd epochs"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/README.md",
+      "sha256": "f1b7e40cd3975768a6945f63224488c0114df3c8794b80e10fa53a191b568a64",
+      "size": 2885,
+      "title": "Source-selected epoch-critical Fejér transport (2026-11-06)"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/THEOREMS.md",
+      "sha256": "9fa69d037e9ed3fceb0f29f1a0d1457dc54c21ce7ceea9fd4bf7e706763ebefd",
+      "size": 10019,
+      "title": "Critical Fejér transport on BBP *epochs*: vanishing Hilbert error and an all-radius gate"
+    },
+    {
+      "path": "research/2026-11-06/epoch_critical_transfer/VALIDATION.md",
+      "sha256": "8a9c9d2d85ca63bd6e569a6bc910273647f76da5f4fa882969e9613d5c233254",
+      "size": 3029,
+      "title": "Local research validation — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/fejer_gamma_split/CLAIM_LEDGER.md",
+      "sha256": "f396d327687ed584134531523458ea800648aee236a2cde3d5b730ce7be62d18",
+      "size": 2534,
+      "title": "FEJER–GAMMA: claim, source and probe ledger"
+    },
+    {
+      "path": "research/2026-11-06/fejer_gamma_split/NEXT.md",
+      "sha256": "a1ad79faf74e5b15dffddee34cbc03aad23113a24f5ae1efa56bc6c6ecec700f",
+      "size": 2284,
+      "title": "Next verdict-changing probe — weighted real lag correlation, not a normalization artifact"
+    },
+    {
+      "path": "research/2026-11-06/fejer_gamma_split/PREREGISTRATION.md",
+      "sha256": "c81a564ef1e45e552f1688ee3010783280b5d46d9ed086474ca6d05d666f1bbc",
+      "size": 2957,
+      "title": "PREREGISTRATION — split-harmonic/Gamma amplitudes and dyadic return-fiber energy"
+    },
+    {
+      "path": "research/2026-11-06/fejer_gamma_split/README.md",
+      "sha256": "734ee188cb6355aa5f5ec423fe2f7ac47783b22a13de8aa30efe2b52526519dc",
+      "size": 1623,
+      "title": "FEJER–GAMMA — two infinite series in Q, two in M, and the exact return-energy triangle"
+    },
+    {
+      "path": "research/2026-11-06/fejer_gamma_split/THEOREMS.md",
+      "sha256": "26b285ab8f50a1dae412b7ba48e243f28224bed99cc483ef91a8483c9c3dfbdc",
+      "size": 11529,
+      "title": "Operation FEJER–GAMMA: coherent infinite-series splitting of the selected BBP return energy"
+    },
+    {
+      "path": "research/2026-11-06/fejer_gamma_split/VALIDATION.md",
+      "sha256": "a9a212fe25d88214b74095d8ba4432934b24a8dc37581da907508c6f5516a871",
+      "size": 2827,
+      "title": "Validation, provenance and execution boundary — November 6, 2026"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/CLAIM_LEDGER.md",
+      "sha256": "ca455c90a866ccd36ab942d6ea2328ffcf1b8019ab3cfcbabe54f63b5a01b55e",
+      "size": 3637,
+      "title": "Claim ledger: holographic triangle and Gamma-source seam"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/NEXT.md",
+      "sha256": "c9661fa5fbfbe71556eb25203b2f20625a63598cb5b1b171d5226272ecf69796",
+      "size": 3740,
+      "title": "Next probe — signed return-fiber holonomy of the true Gamma/carry hologram"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/PREREGISTRATION.md",
+      "sha256": "efab1ed95effedaad89adb03a6b9e982e87734962f9580d804ae36845088002c",
+      "size": 5147,
+      "title": "Pre-registered research scope — source-authenticated holographic triangle"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/PREREG_LINEAR_DEPTH.md",
+      "sha256": "fe541c76dc78e5652aa9605630a2c6d8dd0b40aa68342729690b624f08105d50",
+      "size": 2842,
+      "title": "Preregistered extension — exact prime-window denominator product and asymptotic readout cost"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/README.md",
+      "sha256": "5611d9a2389952aee0c8d602b0636f8b639d592c92c6d3b5723628b1f0f75a44",
+      "size": 4200,
+      "title": "SUCC: source-authenticated holographic triangle (2026-11-06)"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/THEOREMS.md",
+      "sha256": "26a5b7cb4f690434bac28f3dae790ae19b8fadd4aa9db4c4010bf1a08ff56b3b",
+      "size": 16886,
+      "title": "Source-authenticated holographic triangle — exact reconstruction, Gamma drive, and two-scale obstruction"
+    },
+    {
+      "path": "research/2026-11-06/holographic_triangle/VALIDATION.md",
+      "sha256": "99a48b4141413e7cf962ecdca94c9e303c2f32a1df18302a07949cfa506d0f69",
+      "size": 3269,
+      "title": "Validation scope — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/infinity_thread/CLAIM_LEDGER.md",
+      "sha256": "d92576d3e878619ec5a29d57137a3784ae13e9bd81f15b5daf59e7db5b5a22b6",
+      "size": 3160,
+      "title": "Claim ledger — INFINITY THREAD"
+    },
+    {
+      "path": "research/2026-11-06/infinity_thread/PREREGISTRATION.md",
+      "sha256": "776936359c167d5be261ae7ff46bc96a6b05a246a2ad205b4e69ad46775a7c1b",
+      "size": 2560,
+      "title": "PREREGISTRATION — Operation INFINITY THREAD / MESOSCOPIC GATE"
+    },
+    {
+      "path": "research/2026-11-06/infinity_thread/THEOREM.md",
+      "sha256": "7dfe8c121b585295c66d521fdaed8b697f9579cefeea3095a5b53ddb9305fd10",
+      "size": 11053,
+      "title": "Operation INFINITY THREAD — mesoscopic return-energy gluing and the missing source coercivity"
+    },
+    {
+      "path": "research/2026-11-06/infinity_thread/VALIDATION.md",
+      "sha256": "c69a6a4b3fa4d910cee291553d469edde5fdb63edfad4b939d9027f30504e235",
+      "size": 4375,
+      "title": "Validation — INFINITY THREAD"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/CLAIM_LEDGER.md",
+      "sha256": "865312b83d2721adebc26ef243e3cb45ac07442d54547be1a1d838befc5c806c",
+      "size": 6067,
+      "title": "JC claim ledger — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/NEXT.md",
+      "sha256": "610c60421e7af96329178fe5b184f8602b114c5f1ba8ba00b71180b00e44bc0a",
+      "size": 3691,
+      "title": "Next decisive research test — source-selected entropy debt at logarithmic depth"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/PREREGISTRATION.md",
+      "sha256": "efcefe2c71f3d9898b7dd6f6b45f3cc7ed287cbef651bae66793fd43ae10cc32",
+      "size": 3072,
+      "title": "Fixed probes before selected-epoch output inspection"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/PREREG_ADDENDUM.md",
+      "sha256": "98d45acdaa6c62a87dceef23fdf9e3ee6f50d441632b2ce354654dbe4ecfb0d7",
+      "size": 2179,
+      "title": "Fresh independently dated source-character holdout addendum — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/README.md",
+      "sha256": "7076bed7a7a353157c786feeb111eae18f7a1160344dba369815418bbda27aff",
+      "size": 7453,
+      "title": "SUCC Operation JOINT CHARACTER × SOURCE-ENTROPY GYROSCOPE (2026-11-06)"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_AUDIT.md",
+      "sha256": "bba6c55dac3a20025133ddf640c20c6afb6ea67529d07d304649a6f1f587eec5",
+      "size": 5580,
+      "title": "JC-08 — source-coefficient clock audit (2026-11-06)"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_PREREG.md",
+      "sha256": "aed96cf87efe6828dfe1ccdd045869cfa67635540875b6c6a8982c893c874d7b",
+      "size": 2133,
+      "title": "Predeclared BBP coefficient-fingerprint audit — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/THEOREMS.md",
+      "sha256": "452ad3157ef1e7ddcd99b253c3fb4ea2048be14eeeb949b26ec1beb7beeff036",
+      "size": 23268,
+      "title": "Source-authenticated joint action–observation characters: finite-state entropy, periodic gauge rigidity and a reversible BBP observer"
+    },
+    {
+      "path": "research/2026-11-06/joint_character_entropy/VALIDATION.md",
+      "sha256": "9b6b742dfb0ef2cdcd105a129fe2f02a7520cfc8792d27eb29ab585b282bd521",
+      "size": 5455,
+      "title": "Validation and provenance boundary — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/odd_place_triangle/CLAIM_LEDGER.md",
+      "sha256": "7b40a846beacc1969f307605c448d1f6a416b66a4ba77e42c07cba8752ce381c",
+      "size": 2654,
+      "title": "Odd-place triangle: claim and provenance ledger"
+    },
+    {
+      "path": "research/2026-11-06/odd_place_triangle/NEXT.md",
+      "sha256": "d97c602db6c7ce55876fbc0978f71316cf1551992d4c5aa793e57102c0a7e269",
+      "size": 2294,
+      "title": "Next source-selected odd-prime cross-place inequality"
+    },
+    {
+      "path": "research/2026-11-06/odd_place_triangle/PREREGISTRATION.md",
+      "sha256": "2c18ae7ea0863c0b4335bafdb2ab7dbbc72524dc647842e2f727688b34b2301b",
+      "size": 3203,
+      "title": "Operation ODD-PLACE TRIANGLE: preregistration (2026-11-06)"
+    },
+    {
+      "path": "research/2026-11-06/odd_place_triangle/README.md",
+      "sha256": "62c1e15dd7d688e73c6ee8e440ea7239c6b94617080eabde43f0e47932fac3d3",
+      "size": 2374,
+      "title": "Operation ODD-PLACE TRIANGLE — original BBP adelic character and silver-ratio harmonic edge"
+    },
+    {
+      "path": "research/2026-11-06/odd_place_triangle/THEOREMS.md",
+      "sha256": "b7a7ac07939104e58cf68cd68dd371e59300bdfbf3c68e843da2e3c8a1b6cfba",
+      "size": 11876,
+      "title": "Operation ODD-PLACE TRIANGLE: the exact missing adelic character and its source-born prime clocks"
+    },
+    {
+      "path": "research/2026-11-06/odd_place_triangle/VALIDATION.md",
+      "sha256": "0f54f276889ac142dd7593f27b69f1bf1d57eaeb3ec073f26fa28b5a64c1fe79",
+      "size": 4091,
+      "title": "Validation, hostile controls, and provenance — Operation ODD-PLACE TRIANGLE"
+    },
+    {
+      "path": "research/2026-11-06/padic_boundary/CLAIM_LEDGER.md",
+      "sha256": "b0d34beab76909c2f35b33faf37524f55e2234c0fc10c0f3a063be332ea0ec66",
+      "size": 3765,
+      "title": "DB claim ledger — source, boundaries, probes, and counterexamples"
+    },
+    {
+      "path": "research/2026-11-06/padic_boundary/NEXT.md",
+      "sha256": "4501dac71fd508622a05338528d158842a2223b43bb2e6cacdc6cbab7cfba9d8",
+      "size": 1871,
+      "title": "Next falsifiable source-selected cross-place bridge"
+    },
+    {
+      "path": "research/2026-11-06/padic_boundary/PREREGISTRATION.md",
+      "sha256": "98f25cecc032c3efa64d52ff0fe83023146a8fb8f683ec0f0ac8fcc12d65f973",
+      "size": 2884,
+      "title": "BBP real/2-adic dual-boundary experiment — preregistration"
+    },
+    {
+      "path": "research/2026-11-06/padic_boundary/README.md",
+      "sha256": "8980996062506af71e82abbb617307a42d3391f333c3f5ea2520127d7d2de694",
+      "size": 2110,
+      "title": "Operation DOUBLE BOUNDARY — the π invariant, 2-adic zero, and selected 2-adic Haar"
+    },
+    {
+      "path": "research/2026-11-06/padic_boundary/THEOREMS.md",
+      "sha256": "61841a7021d127f71be9297206028ef85d71799059fdabbec94dc094773fbc39",
+      "size": 10932,
+      "title": "Two completions, one BBP source: an exact 2-adic zero, a Haar source graph, and the real π invariant"
+    },
+    {
+      "path": "research/2026-11-06/padic_boundary/VALIDATION.md",
+      "sha256": "875dcbf8bb5596917172ffeed0570616c071b1d94f359e06c6b1b5c7175ef0ee",
+      "size": 3272,
+      "title": "Validation, source map, and provenance — BBP dual boundary"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/CLAIM_LEDGER.md",
+      "sha256": "4bb2b9ba53b06961af21d8b38e73b6e5ccca9a7dcebabfe3f8ef01ddac12297f",
+      "size": 5143,
+      "title": "Claim Ledger — ORIGINAL BBP PRIME–FROBENIUS × VIRTUAL HAAR × REAL SIGNED GATE"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/FAILED_SCRATCH.md",
+      "sha256": "85fb3f5cb2f8f67dde4c8e8228d4f9735acca12d79c49f50707d842b0106ac26",
+      "size": 1968,
+      "title": "Failed hypotheses and controls — preserved rather than sanitized"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/GALOIS_SELECTOR_THEOREM.md",
+      "sha256": "5fd5213179783249da9c4dc8aa4381a8c321e8b50c7e0a8b23c75f73eb1e61d5",
+      "size": 6765,
+      "title": "PF-09 — exact Galois-selected Fourier sector and the REAL missing cancellation"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/NEXT.md",
+      "sha256": "658902eebb377be5c91d7668355c90f915a9b6187c4cb102e6f9a3b6b698bdc3",
+      "size": 5148,
+      "title": "Verdict-changing next theorem: SOURCE-SELECTED real-phase coercivity"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/PREREGISTRATION.md",
+      "sha256": "64252d78dd8e08a434bae33d613a2f457960f067e2244feca3036c426cb794ab",
+      "size": 3528,
+      "title": "Operation RH-SHAPED PRIMES × ORIGINAL-SOURCE SPECTRAL GAP — preregistration"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/PREREGISTRATION_GALOIS_SELECTOR.md",
+      "sha256": "8dd850f0380c648ce68d9cca6d945c064cf1684e7f05125f15b941a5a0689124",
+      "size": 2152,
+      "title": "Preregistration — the selected Galois character sector (not a normality proof)"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/PREREGISTRATION_PRIME_EXTENSION.md",
+      "sha256": "aa672e45adf0b8d6f2c5712ed989f6c50305dc1928340e5b32b78ebe014f2b1b",
+      "size": 2686,
+      "title": "Preregistration 2 — recovered n<p≤2n source-Frobenius interference"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/THEOREMS.md",
+      "sha256": "1cf52deec71b1ca8a63a3b4acaa4e9e913c04693cc5327ae9ed1e65f9d0eb21a",
+      "size": 14505,
+      "title": "Operation PRIME–FROBENIUS SOURCE SIEVE × RH-SHAPED SPECTRAL GATE"
+    },
+    {
+      "path": "research/2026-11-06/prime_frobenius_spectral/VALIDATION.md",
+      "sha256": "3840e1995fe9ed1652e8f8daeef75928192d2ca20003422b60afdc525627215f",
+      "size": 6450,
+      "title": "Validation — 2026-11-06 Original BBP Prime–Frobenius Spectral"
+    },
+    {
+      "path": "research/2026-11-06/quadratic_galois_tate_bridge/NEXT.md",
+      "sha256": "bf55d7b0c3fb4778297659f80991b0a421099575cba69fabe7d1e01310a550e9",
+      "size": 4477,
+      "title": "Next research round — the signed Artin/Weil bridge, not another parity coincidence"
+    },
+    {
+      "path": "research/2026-11-06/quadratic_galois_tate_bridge/README.md",
+      "sha256": "5c368767dc7735e030ebdaaff3075c4cb0e72a7b1b83650a328f3affbd6ccd9e",
+      "size": 2066,
+      "title": "Operation Quadratic Reflection Carrier — Pisot × Galois × Tate"
+    },
+    {
+      "path": "research/2026-11-06/quadratic_galois_tate_bridge/RESEARCH.md",
+      "sha256": "8324391c38bb16441ee72559841336b5684ebef2c6a4ce5916177a67c80796fc",
+      "size": 17688,
+      "title": "Quadratic Pisot / Galois / Tate carrier: a shared C2 source, not an RH proof"
+    },
+    {
+      "path": "research/2026-11-06/realization_gyroscope/CLAIM_LEDGER.md",
+      "sha256": "029d8c5ed49b1ef9bf0f47ae62ad15912c86e2b1a2341c79981d49ed11d55676",
+      "size": 5347,
+      "title": "Claim ledger and hostile crucible — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/realization_gyroscope/README.md",
+      "sha256": "a569d59b6cb4eb7e8138c433bec3a278d38e15131813827e8e75ddf6371ac658",
+      "size": 5393,
+      "title": "Operation Recursive Carrier × Realization Gyroscope × Encoding Gauge"
+    },
+    {
+      "path": "research/2026-11-06/realization_gyroscope/THEOREMS.md",
+      "sha256": "9f2e4f36f27e7d2eeff4cb985f14d64a11d6b915ba01ea9ea228818479b2c68d",
+      "size": 13285,
+      "title": "Recursive carrier–observer realization and radix-gauge covariance"
+    },
+    {
+      "path": "research/2026-11-06/realization_gyroscope/VALIDATION.md",
+      "sha256": "f3211b4edbe1bd7d45b5330f873d237845ff4f39016aaed49476e00770f6d523",
+      "size": 3500,
+      "title": "Local validation and provenance scope — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/spectral_exorcism/CLAIM_LEDGER.md",
+      "sha256": "62744fac7446521cebd8f48dc7ea3f80fa84157435c04dfb79730ead376e79c0",
+      "size": 2103,
+      "title": "Spectral Exorcism claim ledger"
+    },
+    {
+      "path": "research/2026-11-06/spectral_exorcism/NEXT.md",
+      "sha256": "5e5681a9b33ca0eea945074629ff236bbe3066d877f59c57416ee0f8f9952723",
+      "size": 1727,
+      "title": "Next decisive SUCC theorem — arithmetic mesoscopic collision upper bound"
+    },
+    {
+      "path": "research/2026-11-06/spectral_exorcism/PREREGISTRATION.md",
+      "sha256": "43819c5b529a9b6ef4f5e208e1213fc99162182f427fd42b81a588710ac5d29b",
+      "size": 3117,
+      "title": "Operation SPECTRAL EXORCISM — preregistration"
+    },
+    {
+      "path": "research/2026-11-06/spectral_exorcism/THEOREMS.md",
+      "sha256": "6f75e0fda3c8cefb913c7b2c8fda1e3a3cc733e56bbefc8ddad3dc88b1d77452",
+      "size": 10035,
+      "title": "Operation SPECTRAL EXORCISM — frequency-ray rigidity and a mesoscopic collision certificate"
+    },
+    {
+      "path": "research/2026-11-06/spectral_exorcism/VALIDATION.md",
+      "sha256": "cbbdcb821902a94e0fca71ba80bee625f5fd0f15f2bba4d580afcdf801fb6156",
+      "size": 2089,
+      "title": "Validation and provenance — Spectral Exorcism"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/CERTIFIED_FINITE_THEOREM.md",
+      "sha256": "8e378b5f972722b1aa63e6a6cf882e7140048b5b0c77900e52b207f69fde2fa9",
+      "size": 3534,
+      "title": "TS-09 — certified finite signed return energies (authentic zero-seeded BBP)"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/CLAIM_LEDGER.md",
+      "sha256": "7e0a3e33e137961dda865cf38261813c62621d6a9e6330b51eabecadac931e27",
+      "size": 4977,
+      "title": "Claim ledger — Operation TRIANGLE SEAM × SILVER SOURCE × RETURN SPECTRUM"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/FAILED_SCRATCH_LOG.md",
+      "sha256": "bca6040e8b145c8a0963be17d553375b9052cc88a74db8a1f8dfc8a542d6b551",
+      "size": 1415,
+      "title": "Preserved red scratch probes — NOT quietly discarded"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/FIRST_MOMENT_THEOREM.md",
+      "sha256": "bdc59d2ed61c8d5126643cdce10b26fea3f067dd77e8c373b75d5545e2f33a6e",
+      "size": 6118,
+      "title": "TS-10 — the original BBP Gamma/Harmonic/Silver first-moment theorem"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/NEXT.md",
+      "sha256": "5405d2a17bba38b5bb12d09e866319358024117adfa11242f8d1190b26cebc9a",
+      "size": 4792,
+      "title": "Next discriminating signed bridge — exact source-selected zero boundary remains mandatory"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION.md",
+      "sha256": "df8950aca64d77b59e92444dcc4afb40b7ee6565b860e42dfbdcdfc4cbc47a06",
+      "size": 2892,
+      "title": "Operation TRIANGLE-SEAM × SILVER-SOURCE × RETURN-SPECTRUM — preregistration"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_CARRY_BORROW.md",
+      "sha256": "a06325881300aa06844df75ea2ac3910e8667f7c1095f40cccade0c3eb75d0aa",
+      "size": 1008,
+      "title": "Predeclared carry-borrow probe (separate from first preregistration)"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_GAMMA_MOMENT.md",
+      "sha256": "55ba62570d612778849c2ad5d77bc94a410efb6400553647320294eb44e131a8",
+      "size": 1449,
+      "title": "Preregistered first-moment Gamma / harmonic / silver test — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_INTERVAL.md",
+      "sha256": "c4d8a654e270e41700c559cc9c956a0e06841e249aa1325544cd633e812c390e",
+      "size": 1147,
+      "title": "Interval-certificate preregistration — added after existing float survey, before exact interval computation"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_SHELL.md",
+      "sha256": "9def402bec73bed8c99b2d10dec1563025b1644e72d912bb8cdf945fd726fd6b",
+      "size": 1098,
+      "title": "Preregistered dyadic shell interrogation (new finite probes)"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/THEOREMS.md",
+      "sha256": "67a2997fa3e0cf5070b749756c00766a4fbaeae4ff6e562f6beb494dcf119a2a",
+      "size": 12817,
+      "title": "Operation TRIANGLE SEAM × SILVER SOURCE × SIGNED RETURN SPECTRUM"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/VALIDATION.md",
+      "sha256": "e45d31d8436cb2b39d09bd0b6314b3e1d4325d86c749c22dd13375a50639938c",
+      "size": 7256,
+      "title": "Validation, provenance, and executed scope — 2026-11-06"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/CLAIM_LEDGER.md",
+      "sha256": "3898f7dc60d0eaec91e66144964a1f6fa90daf65c895f997bf285677976b8b3d",
+      "size": 5294,
+      "title": "Driven pin-bed claim ledger"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/COHERENT_SCAN.md",
+      "sha256": "19ae8d837ced3c589ffe1e523666596abb24822f3e2474f8bbacc110226c9d4e",
+      "size": 13055,
+      "title": "Source-authenticated coherent scanning of the B2 pin bed"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/CONTINUOUS_THEOREMS.md",
+      "sha256": "d031634a95b55365f148f5a46de60bdde0036b402b1a7f0c28805264cfbb7023",
+      "size": 17559,
+      "title": "Oscillator constructor: continuum aperture, first-order inverse, and stable dynamics"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/LOCKIN_AND_CONTROLS.md",
+      "sha256": "d75054cc9036889dd306d05d0260fc604e52f21710937387fbd7ac8878394bfc",
+      "size": 15046,
+      "title": "Driven pin bed: adversarial controls and constructive repairs"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/NEXT.md",
+      "sha256": "e0c9e18c4986520c84df98b80cc84ded2b124867fc00006c11bdc4748ad2cbbf",
+      "size": 2626,
+      "title": "Exact remaining dependency cuts"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/PREREGISTRATION.md",
+      "sha256": "d40996e73d65e27eb4496e3dacebbc134d09b4b25b93a85c52b643da6d89dcb0",
+      "size": 2555,
+      "title": "Prospective local protocol"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/PROOF_AUDIT.md",
+      "sha256": "c7368e7f29f2cf974e12702b9eb1edb6c35105973e544abd354954a159278cfc",
+      "size": 3695,
+      "title": "Proof and implementation audit"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/PROTOCOL_AND_TRUTH.md",
+      "sha256": "91cb9898a8e645e4ae438733a2bbf302b31eedc9197d4aa3b55fb22130eb48cd",
+      "size": 5602,
+      "title": "Acquisition, calibration, and carrier-relative truth"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/README.md",
+      "sha256": "8b4310de377d09e9639415e1df35770bf1db2513ee03234fff62fce718ab0ed9",
+      "size": 5428,
+      "title": "Drive the pin bed: coherent oscillators, stable surfaces, and truth targets"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/SOURCE_MAP.md",
+      "sha256": "40de187525714be96eb8ad3ae540dc8b2f98087cfb1f8390a32a314583d0799a",
+      "size": 4683,
+      "title": "Source map and live-frontier reconstruction"
+    },
+    {
+      "path": "research/2026-11-07/driven_pinbed_observability/VALIDATION.md",
+      "sha256": "c90c13a34a36ce3bca603900ac2fda0f0f5f2973595cce3f50972ceb37c61bcb",
+      "size": 3311,
+      "title": "Executed validation and precise scope"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/CLAIM_LEDGER.md",
+      "sha256": "e3f6a99fb16bdc94a17d3a316103fa533a78c872cd01053ef0c3739b290be2d1",
+      "size": 5104,
+      "title": "Pin-bed claim ledger"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/PREREGISTRATION.md",
+      "sha256": "795bacbac1dfd9c68abcd783ca51d166183933608999a2247c9712d1eb93ae65",
+      "size": 4189,
+      "title": "Fourier–Yoneda pin bed: contract and prospective probes"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/PROOF_AUDIT.md",
+      "sha256": "180a9bb7422a7ed2a62e17f3021c4837a85bb6d1a55275a4d97189f358292306",
+      "size": 4005,
+      "title": "Proof and implementation audit"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/README.md",
+      "sha256": "650193b2800762393ea29c4ecde9d2f4e97b9194b20d135e858b632f0bf57b01",
+      "size": 4109,
+      "title": "The Fourier–Yoneda pin bed"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/SOURCE_MAP.md",
+      "sha256": "bf52d2d2c53729ebe21247b117644ec485009fe158b9b392d2f3f8899ef4f2a8",
+      "size": 4031,
+      "title": "Exact source and prior-work map"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/THEOREMS.md",
+      "sha256": "18c0bdc53b852f875ec7b9b5aa4a310d3a794e11e3b06aa6d576b6ee31893168",
+      "size": 27183,
+      "title": "A Fourier–Yoneda pin bed with lawful dynamics"
+    },
+    {
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/VALIDATION.md",
+      "sha256": "539210a1d703d055ebfc05feefdbe489010135764aaccf25130c79a2489dbead",
+      "size": 3379,
+      "title": "Validation receipts"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/CLAIM_LEDGER.md",
+      "sha256": "b297a97b212a7d166fc835df8f87d84301ed45b97b50b9567c0cb07a5679d36f",
+      "size": 4052,
+      "title": "Claim ledger — golden spatial triangle (2026-11-07)"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/LARGE_TIMEOUT_NOTE.md",
+      "sha256": "73e4086a01a53b0f398a5f80b65fbcc0cadfb62ef97c38d368e8a404db8167dc",
+      "size": 1147,
+      "title": "Preserved large-probe execution boundary"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/NEXT.md",
+      "sha256": "cc12d62e832a2a11c5f7c48a22ad9dc9fa46058bcf606722ddeb579f5845d4ea",
+      "size": 3946,
+      "title": "Next source-selected mathematical attack — a fixed golden spatial overlap inequality"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/PREREGISTRATION.md",
+      "sha256": "1a5ea0fde57b4be46ae7ebd0552a5344d2793fee6fbae596b1af7317096dfa98",
+      "size": 3442,
+      "title": "Preregistered research — golden aperture / spatial Fejér triangle"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/PREREG_LARGE_EPOCHS.md",
+      "sha256": "e3713ba699bd7bfb645ff914482f689a2688e5a25c217547afe404d95ee45642",
+      "size": 1278,
+      "title": "Preregistered large original-source golden-aperture holdouts"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/README.md",
+      "sha256": "eb7b78721d8661f22b796fcf28deadaae0b3d47830087030bb58a987cde281ca",
+      "size": 5327,
+      "title": "OPERATION GOLDEN SPATIAL TRIANGLE × BBP CRITICAL FEJÉR"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/THEOREMS.md",
+      "sha256": "9cb6745898b06c3ffb12613c8bf0ec5860d424b2b5afebc4f25bc62cd23a5ba4",
+      "size": 16291,
+      "title": "SUCC GOLDEN APERTURE × SPATIAL FEJÉR TRIANGLE × DYADIC SOURCE FIBERS"
+    },
+    {
+      "path": "research/2026-11-07/golden_aperture_fejer/VALIDATION.md",
+      "sha256": "f727b7a9319182ae895541fea29759fc0ff04b6936efcb53c2dfd9e0dbd2cd25",
+      "size": 5777,
+      "title": "Execution and provenance — golden aperture BBP, 2026-11-07"
+    },
+    {
+      "path": "research/2026-11-07/harmonic_pisot_boundary/CIRCLE_WINDOW.md",
+      "sha256": "3baa70704a1a4f48942bf65b44bb3b71bc3bf65219388ef7f0113a4fc0663c3f",
+      "size": 11095,
+      "title": "Constant circular windows: geometry, Fourier information, and source selection"
+    },
+    {
+      "path": "research/2026-11-07/harmonic_pisot_boundary/NEXT.md",
+      "sha256": "fb4e3f65778689d0690eeba1fcd9de86f4f3bbc30fd5823a775f33d5227810a7",
+      "size": 8062,
+      "title": "Next decisive probes: from phase-locking to source-selective mathematics"
+    },
+    {
+      "path": "research/2026-11-07/harmonic_pisot_boundary/README.md",
+      "sha256": "ba260354d24a6c679ea8e12ac6bce0277b8c61f763d7426f7a28bcda9308fa3c",
+      "size": 2100,
+      "title": "Harmonic–Pisot boundary research (2026-11-07)"
+    },
+    {
+      "path": "research/2026-11-07/harmonic_pisot_boundary/THEOREMS.md",
+      "sha256": "ac35334d683e686da1fda5ac99eff32820065be2c6a3f04039c9f87f87b1fadd",
+      "size": 12980,
+      "title": "Harmonic–Pisot boundary: exact thresholds, residual memory, and an anti-normality theorem"
+    },
+    {
+      "path": "research/2026-11-07/main_xxi_receipts/README.md",
+      "sha256": "722cf918addf416d844bf4d44e87c8e901e3ba7f500980dec8bc3d9b372827f0",
+      "size": 2896,
+      "title": "Main XXI integration-time receipts (2026-11-07)"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/ANCHORED_PATHS_VS_HOLONOMY.md",
+      "sha256": "2ca5624f1e6ab793f167afc03193007515cc61a19472bb62294cac9b0793d025",
+      "size": 6960,
+      "title": "Anchored oscillatory paths versus seed-blind temporal holonomy"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/LEARNING_OBSERVER.md",
+      "sha256": "a35c542292c6bf98b8a0948e2eef589ac1dabe4e9a631222b240d0d039b3ae5d",
+      "size": 9188,
+      "title": "Operation LEARNING PIN-BED: local contact becomes retained path information"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/LEARNING_VALIDATION.md",
+      "sha256": "8d4f8ebbb9ffebecde642f285ea6ce5725b31a8015a9563e68ac7524455e7ba4",
+      "size": 3555,
+      "title": "Learning pin-bed: exact-source, validation and claim receipt"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/README.md",
+      "sha256": "dfd0c1730e2adab7f972ce7615dccfceb35910e85ed40bbfca1ddf4d626834b8",
+      "size": 5657,
+      "title": "Oscillator-driven Yoneda–Fourier pin-bed — draft research"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/REALIZATION_AND_DYNAMIC_YONEDA.md",
+      "sha256": "e56398ee2116e235ebe8204252cf82e7fa6afff9296265f0699557fce8e0414b",
+      "size": 9314,
+      "title": "Two-channel realization, oscillator syzygies and an explicit dynamical observer"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/RESEARCH_NOTE.md",
+      "sha256": "61b65a8081c394e09e486c792fe881bae3c4dac700ce2fdb9f389e51c242e6a0",
+      "size": 12426,
+      "title": "Oscillator-driven Yoneda–Fourier pin-bed: carrier-relative truth"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/TWO_TONE_STABLE_ARC.md",
+      "sha256": "a033ceffc24e8aff74a30e91f108e6f4901d069b0457429324b743f445e61d3f",
+      "size": 13539,
+      "title": "Two-tone stable aperture × exact BBP source transport"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/VALIDATION_FOLLOWUP.md",
+      "sha256": "bac310f6ecabef0df61ab0996a152563c225e962fdd7330358f960c9cf06b77f",
+      "size": 6231,
+      "title": "Oscillator pin-bed follow-up: scope, evidence and falsification ledger"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
