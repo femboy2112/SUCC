@@ -22,3 +22,15 @@ Read [RESEARCH_NOTE.md](RESEARCH_NOTE.md) for the exact finite theorems, constru
 Implemented subset: ../../../observational_succ/pinbed_oscillator_bridge.py and ../../../tests/test_pinbed_oscillator_bridge.py are *new additive GitHub files* tested as byte-identical code/test snapshots in the isolated research bundle. The expanded local zip contains further prototype code/tests but is not itself the full GitHub PR.
 
 **Open theorem remains:** a zero-seed-specific all-epoch signed Fourier/positive energy saving, unlike the source-uniform reconstruction, pin-syzygy, holonomy or tail-transfer identities. π base-16 normality OPEN; RH OPEN. This PR remains DRAFT and is **not** approved for merge.
+
+
+## Learning observer — temporal source memory (2026-11-07)
+
+**New exact object:** a source-calibrated pin-bed with internal memory/belief updates, not merely a static or oscillator-driven response surface.
+
+- [LEARNING_OBSERVER.md](LEARNING_OBSERVER.md) proves a time-local BBP circle reading can survive as a historical constraint even when future projected circle states forget it. For every N, two seeds 0 and 16^(-N) have different earlier phases but *identical entire circle tails* from time N onward. Their **unwrapped integer carries remain different**, so this is a precisely restricted observation-map no-go, not metaphysical nonlocality.
+- A declared 16^N-seed class can be learned in exactly N source-calibrated 16-bin observations: one hexadecimal digit per time step. Worst-case path-distinguishing memory needs 4N bits, achieved by the construction. An offset of 1/(2·16^(N-t)) gives a proved total phase-noise margin for the finite grid.
+- [Learning observer code](../../../observational_succ/learning_pinbed.py) and [hostile tests](../../../tests/test_learning_pinbed.py): actual additive files on this branch, re-fetched SHA1-identical to locally executed tests. Finite belief update, permitted-mode minimax probe choice, claim descent, guarded sensor and impossible-report rejection.
+- [LEARNING_VALIDATION.md](LEARNING_VALIDATION.md): 10 new focused tests, 59/59 across isolated pin-bed bundle, compileall pass. **Native full SUCC suite, Lean, hosted CI and independent physical reference calibration not run.**
+
+**Truth boundary:** identifying an initial seed does NOT itself prove its orbit normal. Tail-identical seeds necessarily share normality; the separate coherent wrong seed and all-epoch signed Weyl gate remain active. This is learning **relative to a declared source/probe model**, not evidence for physical retrocausality or direct π-normality.
