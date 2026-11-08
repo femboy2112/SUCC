@@ -1,0 +1,252 @@
+{
+  "arithmetic": "stdlib fractions.Fraction; exact polynomial integration",
+  "counts": {
+    "affine_naturality": 2022,
+    "bbp_initial_value_calibration": 1,
+    "direct_covariance_identity": 324,
+    "exact_dirac_distance": 324,
+    "exact_operator_norm_saturation": 8,
+    "hostile_mutations_rejected": 8,
+    "original_bbp_forcing_crosscheck": 5,
+    "source_specific_bbp_naturality": 20,
+    "uniform_grid_energies": 10
+  },
+  "coverage_subcategories": {
+    "affine_naturality_cases_at_source_seam": 408,
+    "subcategory_counts_added_to_total": false
+  },
+  "imports_succ_implementation": false,
+  "normalization": "circle Haar mass 1; B2(t)=t^2-t+1/6; centered surface",
+  "oracle": "independent_piecewise_quadratic_pin_surface",
+  "oracle_sha256": "d9ed927f9b1ee5c9c8069f84905507e7604445c5108a82966388c26bfcd7519d",
+  "primary_method": "split at both source seams, multiply local polynomials, integrate exactly",
+  "scope": {
+    "all_parameter_proof_claimed_by_computation": false,
+    "finite_calibration_only": true,
+    "pi_normality": "OPEN",
+    "reserved_fresh_regions_used": [],
+    "source_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "status": "PASS",
+  "total_asserted_checks": 2722,
+  "witnesses": {
+    "bbp_zero_seed_states": [
+      {
+        "forcing": "47/15",
+        "n": 1,
+        "phase": "2/15",
+        "unwrapped_state": "47/15"
+      },
+      {
+        "forcing": "106/819",
+        "n": 2,
+        "phase": "1076/4095",
+        "unwrapped_state": "205826/4095"
+      },
+      {
+        "forcing": "829/19635",
+        "n": 3,
+        "phase": "188663/765765",
+        "unwrapped_state": "615863723/765765"
+      },
+      {
+        "forcing": "316/15225",
+        "n": 4,
+        "phase": "106894973/111035925",
+        "unwrapped_state": "1428806141948/111035925"
+      },
+      {
+        "forcing": "857/69597",
+        "n": 5,
+        "phase": "32442016954/78058255275",
+        "unwrapped_state": "16071212445820879/78058255275"
+      }
+    ],
+    "covariance_samples": [
+      {
+        "claimed_closed_form": "1/180",
+        "direct_integral": "1/180",
+        "x": "0",
+        "y": "0"
+      },
+      {
+        "claimed_closed_form": "-7/1440",
+        "direct_integral": "-7/1440",
+        "x": "0",
+        "y": "1/2"
+      },
+      {
+        "claimed_closed_form": "2983/607500",
+        "direct_integral": "2983/607500",
+        "x": "2/5",
+        "y": "-2/3"
+      }
+    ],
+    "grid_energies": [
+      {
+        "direct_energy": "1/180",
+        "expected": "1/180",
+        "q": 1
+      },
+      {
+        "direct_energy": "1/2880",
+        "expected": "1/2880",
+        "q": 2
+      },
+      {
+        "direct_energy": "1/14580",
+        "expected": "1/14580",
+        "q": 3
+      },
+      {
+        "direct_energy": "1/46080",
+        "expected": "1/46080",
+        "q": 4
+      },
+      {
+        "direct_energy": "1/112500",
+        "expected": "1/112500",
+        "q": 5
+      },
+      {
+        "direct_energy": "1/432180",
+        "expected": "1/432180",
+        "q": 7
+      },
+      {
+        "direct_energy": "1/737280",
+        "expected": "1/737280",
+        "q": 8
+      },
+      {
+        "direct_energy": "1/1180980",
+        "expected": "1/1180980",
+        "q": 9
+      },
+      {
+        "direct_energy": "1/2635380",
+        "expected": "1/2635380",
+        "q": 11
+      },
+      {
+        "direct_energy": "1/5140980",
+        "expected": "1/5140980",
+        "q": 13
+      }
+    ],
+    "mutations": [
+      {
+        "actual": "1/180",
+        "mutated_prediction": "-1/180",
+        "mutation": "wrong_covariance_sign",
+        "rejected": true
+      },
+      {
+        "actual": "1/180",
+        "mutated_prediction": "0",
+        "mutation": "omit_B4_constant",
+        "rejected": true
+      },
+      {
+        "actual": "-179/7350",
+        "mutated_prediction": "-179/66150",
+        "mutation": "omit_b_squared",
+        "rejected": true
+      },
+      {
+        "actual": "-179/7350",
+        "mutated_prediction": "-179/22050",
+        "mutation": "use_b_instead_of_b_squared",
+        "rejected": true
+      },
+      {
+        "actual": "-179/7350",
+        "mutated_prediction": "-599/7350",
+        "mutation": "reverse_translation_sign",
+        "rejected": true
+      },
+      {
+        "actual": "289/4900",
+        "mutated_prediction": "10667/14700",
+        "mutation": "forget_centering",
+        "rejected": true
+      },
+      {
+        "actual": "4/243",
+        "mutated_prediction": "1/972",
+        "mutation": "claim_nonexpansion",
+        "rejected": true
+      },
+      {
+        "actual": "829/19635",
+        "mutated_prediction": "2614/19635",
+        "mutation": "flip_last_BBP_pole_sign",
+        "rejected": true
+      }
+    ],
+    "operator_norm_saturation": [
+      {
+        "displacement": "1/3",
+        "input_norm_squared": "1/972",
+        "output_norm_squared": "4/243",
+        "radix": 2,
+        "squared_ratio": "16"
+      },
+      {
+        "displacement": "1/5",
+        "input_norm_squared": "1/1875",
+        "output_norm_squared": "16/1875",
+        "radix": 2,
+        "squared_ratio": "16"
+      },
+      {
+        "displacement": "1/3",
+        "input_norm_squared": "4/19683",
+        "output_norm_squared": "4/243",
+        "radix": 3,
+        "squared_ratio": "81"
+      },
+      {
+        "displacement": "1/5",
+        "input_norm_squared": "16/151875",
+        "output_norm_squared": "16/1875",
+        "radix": 3,
+        "squared_ratio": "81"
+      },
+      {
+        "displacement": "1/3",
+        "input_norm_squared": "1/15552",
+        "output_norm_squared": "4/243",
+        "radix": 4,
+        "squared_ratio": "256"
+      },
+      {
+        "displacement": "1/5",
+        "input_norm_squared": "1/30000",
+        "output_norm_squared": "16/1875",
+        "radix": 4,
+        "squared_ratio": "256"
+      },
+      {
+        "displacement": "1/3",
+        "input_norm_squared": "1/3981312",
+        "output_norm_squared": "4/243",
+        "radix": 16,
+        "squared_ratio": "65536"
+      },
+      {
+        "displacement": "1/5",
+        "input_norm_squared": "1/7680000",
+        "output_norm_squared": "16/1875",
+        "radix": 16,
+        "squared_ratio": "65536"
+      }
+    ]
+  }
+}

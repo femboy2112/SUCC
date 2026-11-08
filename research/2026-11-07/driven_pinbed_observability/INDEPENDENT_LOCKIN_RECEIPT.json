@@ -1,0 +1,230 @@
+{
+  "arithmetic": "exact Gaussian rationals; Python standard library only",
+  "counts": {
+    "atom_unbiasedness": 36,
+    "constant_gain_calibration": 24,
+    "four_phase_reconstruction": 48,
+    "nonnegative_phase_masks": 192,
+    "second_moment_formula": 36,
+    "source_reference_word_pairs": 66960,
+    "source_words": 783
+  },
+  "infinite_theorems_proved_by_this_run": false,
+  "mutation_witnesses": {
+    "change_source_during_phase_cycle": {
+      "phase_readings": [
+        "2",
+        "1",
+        "1",
+        "1"
+      ],
+      "source_states": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "two_baseline_reconstructions_disagree": true
+    },
+    "erase_clock_false_uniformity": {
+      "clock_a": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "clock_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "identical_relative_word": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "source_a": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_b": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "transported_means": [
+        {
+          "h": 1,
+          "relative_mean": {
+            "imag": "0",
+            "real": "0"
+          },
+          "source_a": {
+            "imag": "0",
+            "real": "1"
+          },
+          "source_b": {
+            "imag": "0",
+            "real": "0"
+          }
+        },
+        {
+          "h": 2,
+          "relative_mean": {
+            "imag": "0",
+            "real": "0"
+          },
+          "source_a": {
+            "imag": "0",
+            "real": "1"
+          },
+          "source_b": {
+            "imag": "0",
+            "real": "0"
+          }
+        },
+        {
+          "h": 3,
+          "relative_mean": {
+            "imag": "0",
+            "real": "0"
+          },
+          "source_a": {
+            "imag": "0",
+            "real": "1"
+          },
+          "source_b": {
+            "imag": "0",
+            "real": "0"
+          }
+        }
+      ]
+    },
+    "erase_profile_phase": {
+      "coherent_profiles_equal": false,
+      "driven_powers_equal": true,
+      "first_law": [
+        "1/2",
+        "0",
+        "1/2",
+        "0"
+      ],
+      "second_law": [
+        "0",
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "static_profiles_equal": true
+    },
+    "erase_reference": {
+      "correct_mean": {
+        "imag": "-1",
+        "real": "0"
+      },
+      "length": 1,
+      "mutant_mean": {
+        "imag": "0",
+        "real": "1"
+      },
+      "source": 1,
+      "target": 1
+    },
+    "omit_normalization": {
+      "correct_mean": {
+        "imag": "0",
+        "real": "1"
+      },
+      "length": 1,
+      "mutant_mean": {
+        "imag": "0",
+        "real": "1/4"
+      },
+      "source": 0,
+      "target": 1
+    },
+    "power_only": {
+      "correct_mean": {
+        "imag": "0",
+        "real": "1"
+      },
+      "length": 1,
+      "mutant_mean": {
+        "imag": "0",
+        "real": "4"
+      },
+      "source": 0,
+      "target": 1
+    },
+    "reverse_reference": {
+      "correct_mean": {
+        "imag": "-1",
+        "real": "0"
+      },
+      "length": 1,
+      "mutant_mean": {
+        "imag": "1",
+        "real": "0"
+      },
+      "source": 1,
+      "target": 1
+    }
+  },
+  "mutations_rejected": 7,
+  "pi_base16_normality": "OPEN",
+  "scope": "G_4; L=1,2,3; h=1,2,3; all source/reference words of lengths 1..3 plus three predeclared length-5 source words",
+  "sha256": "70101ff53127e0f3caf3563d48f83b6deb8b1bd586c93cfb8567d480a34950e1",
+  "single_sample_variances": [
+    {
+      "L": 1,
+      "h": 1,
+      "variance": "3"
+    },
+    {
+      "L": 1,
+      "h": 2,
+      "variance": "3"
+    },
+    {
+      "L": 1,
+      "h": 3,
+      "variance": "3"
+    },
+    {
+      "L": 2,
+      "h": 1,
+      "variance": "11/9"
+    },
+    {
+      "L": 2,
+      "h": 2,
+      "variance": "3"
+    },
+    {
+      "L": 2,
+      "h": 3,
+      "variance": "3"
+    },
+    {
+      "L": 3,
+      "h": 1,
+      "variance": "11/25"
+    },
+    {
+      "L": 3,
+      "h": 2,
+      "variance": "3"
+    },
+    {
+      "L": 3,
+      "h": 3,
+      "variance": "3"
+    }
+  ],
+  "status": "PASS"
+}
