@@ -1,0 +1,22 @@
+research/2026-11-08/chronology_carry/CarryPoisson.lean:32:22: error: unknown constant 'Nat.cast_add'
+research/2026-11-08/chronology_carry/CarryPoisson.lean:32:36: error: unknown constant 'Nat.cast_one'
+research/2026-11-08/chronology_carry/CarryPoisson.lean:34:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a + b - c ≤ -1
+where
+ a := ↑n * mu
+ b := mu
+ c := ↑(n + 1) * mu
+research/2026-11-08/chronology_carry/CarryPoisson.lean:43:22: error: unknown constant 'Nat.cast_add'
+research/2026-11-08/chronology_carry/CarryPoisson.lean:43:36: error: unknown constant 'Nat.cast_one'
+research/2026-11-08/chronology_carry/CarryPoisson.lean:45:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a + b - c ≤ -1
+where
+ a := ↑n * mu
+ b := mu
+ c := ↑(n + 1) * mu
+'SUCC.ChronologyCarry.difference_telescope' depends on axioms: [propext, Quot.sound]
+'SUCC.ChronologyCarry.poisson_sum' depends on axioms: [propext, sorryAx]
+'SUCC.ChronologyCarry.poisson_sum_with_defect' depends on axioms: [propext, sorryAx]
+'SUCC.ChronologyCarry.frozen_control_split' depends on axioms: [propext, Quot.sound]

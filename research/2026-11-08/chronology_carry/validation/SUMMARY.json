@@ -1,0 +1,179 @@
+{
+  "RH": "OPEN",
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "1761722ea7d0fa8769ebc4500bb31a1fe0ffe8337ea8f92fa503b4ffed75c9d8",
+      "name": "root_tests",
+      "seconds": 0.38192330091260374,
+      "tests": 8
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/model",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "17d179873604abd134f4203d4a83b110efc3cb9ed8f72d7782733eb7b5f38114",
+      "name": "model_tests",
+      "seconds": 0.3221893839072436,
+      "tests": 8
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/theory",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "63e23e2c7cfc3e1c5e429033660eaa67d15b9c321a5d86d85cefb7b3022ac254",
+      "name": "theory_tests",
+      "seconds": 0.9056892679072917,
+      "tests": 13
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/crucible",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "9dd587b5f79fff8ab17b4d8ad216f28e65f53234a9c5a44e84f8f6153484967b",
+      "name": "crucible_tests",
+      "seconds": 5.290502013871446,
+      "tests": 12
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "name": "verify_provenance",
+      "seconds": 0.10201182495802641,
+      "tests": null
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "name": "observer_foundations_probe",
+      "seconds": 0.21187930507585406,
+      "tests": null
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "name": "ordinal_succ_report_probe",
+      "seconds": 5.342948625097051,
+      "tests": null
+    },
+    {
+      "command": [
+        "lean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/CarryPoisson.lean"
+      ],
+      "exit_code": 0,
+      "log_sha256": "bcf9f8f3704667e259fbceba2f748780a567cbbf613dc0f2e21d02955a6d9bcb",
+      "name": "lean_kernel",
+      "seconds": 1.3066247969400138,
+      "tests": null
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/signed_probe.py",
+        "--source",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/model/HOLDOUT_55003.json.gz",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/validation/signed_replay.json",
+        "--table",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/model/FROZEN_TABLE.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "dbe1b1f26368cd7c0ec27e6d776b6519a1458b393d5ed5d2c11023c51602d00d",
+      "name": "signed_replay",
+      "seconds": 38.408814121969044,
+      "tests": null
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/retro_probe.py",
+        "--source",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/model/HOLDOUT_55003.json.gz",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/validation/retro_replay.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "a4470cf0bf6df3aa315725fb41270178589eb6f55450fb1fd81717d516c93b19",
+      "name": "retro_replay",
+      "seconds": 26.88546337420121,
+      "tests": null
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "whitespace",
+      "seconds": 0.031074501108378172,
+      "tests": null
+    }
+  ],
+  "focused_tests": 41,
+  "native_suite": "Separate actual run; see native_suite.log and VALIDATION.md.",
+  "pi_normality": "OPEN",
+  "replays": [
+    {
+      "equal": true,
+      "name": "signed"
+    },
+    {
+      "equal": true,
+      "name": "retro"
+    }
+  ],
+  "starting_head": "19d98078b60e47092c9b9d050a70b6b7eabb7cd2"
+}

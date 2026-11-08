@@ -8,7 +8,7 @@ approximation demand that can conflict with the intended normality conclusion.
 Write e(t)=exp(2 pi i t). This theorem concerns the *full* coherently transported
 fold F=aB, rather than the complement B in a moving local-prime frame. Every
 norm comparison uses the same frame. It applies directly to the frozen carry
-predictors in [CM1](model/THEOREMS.md).
+predictors in [CCM1](model/THEOREMS.md).
 
 ## FR1. Quantitative finite inequality
 
@@ -125,7 +125,7 @@ Both hypotheses in bold are conditional here. In particular, FR2 cannot be
 used as an unconditional estimate on the original-zero orbit.
 
 If a predictor g takes at most K different values, its two-replica fold has
-at most M=K(K+1)/2 values. Therefore its CM1 error rho cannot tend to zero under
+at most M=K(K+1)/2 values. Therefore its CCM1 error rho cannot tend to zero under
 the hypotheses of FR2, even if its labels use arbitrary source history and
 its K values vary with the epoch. This covers a fixed categorical carry table
 and its unseen-value convention. The bound is small but positive; it is an
@@ -146,8 +146,12 @@ A zero minimum would therefore force w=-z almost surely. Simultaneous even
 powers send this antidiagonal to the diagonal, and these two unit-circle
 subsets are disjoint. Invariance is impossible. Thus the minimum is positive.
 
-Actual source empirical pair laws have invariant subsequential limits by (3)
-and the one deleted endpoint. Their marginals are Haar under the same
+Actual source empirical pair laws have invariant subsequential limits by the
+componentwise bounds
+`|z_(r+1)-z_r^16|<=2 pi |h| r(n0+r+1)` and
+`|w_(r+1)-w_r^16|<=2 pi |h| r(n0+r+m+1)`, together with the one deleted
+endpoint. These follow directly from the original recurrence; a bound on the
+folded first moment alone would not suffice. Their marginals are Haar under the same
 conditional normality hypothesis. This yields the positive qualitative FR2
 floor without its explicit constant, triangulating the finite arc proof.
 

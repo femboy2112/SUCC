@@ -1,6 +1,6 @@
 # Frozen causal carry models and their charged arithmetic certificates
 
-Status: **PROVED PAPER** for CM1--3 below. These are finite accounting and
+Status: **PROVED PAPER** for CCM1--4 below. These are finite accounting and
 source-transport statements. They do not establish original-zero covariance
 decay. The model table's later-clock success is a separate finite experiment.
 
@@ -16,7 +16,7 @@ For a clean prime clock `S=xi<16>`, let `n=n0+r+jm`, `0<=r<m`, `0<=j<q`,
 `W=mean_r a_r B_r=mean_n e(hU_n)` exactly. The symbol x_r in this finite-field
 formula denotes the principal numerator; it is distinct from the real x_n.
 
-## CM1. The frozen carry-prediction certificate
+## CCM1. The frozen carry-prediction certificate
 
 Let `g_h` be *any fixed table*, with values in the closed unit disk, on either
 literal carry feature `kappa_n` or `(kappa_(n-1),kappa_n)`. The table is fitted
@@ -29,7 +29,7 @@ are defined to be zero. Put
 
 Then
 
-    |W| <= |M|+rho.                                      (CM1)
+    |W| <= |M|+rho.                                      (CCM1)
 
 Proof: `a_r V_r=F_r`, while `|a_r|=1`. Subtract and average. QED.
 
@@ -43,11 +43,11 @@ If N_c is the later-clock count of feature c and L=mq, then
 by the instrument. The experiment does not replace N_c/L by an iid or uniform
 law. Neither masked sums nor table coefficients receive free Weil bounds.
 
-## CM2. An honest signed-orbit certificate for the prediction
+## CCM2. An honest signed-orbit certificate for the prediction
 
 Extend **V**, not B, by zero from S to F_p. Its Fourier coefficients are
 `c_t=p^-1 sum_S V(x)e(-t*x/p)`. Fourier inversion reconstructs V on S,
-so the residual in CM1 is unchanged. The QCO1 orbit calculation gives
+so the residual in CCM1 is unchanged. The QCO1 orbit calculation gives
 
     R=c_(-h)=(m/p) M,
     C_O=sum_(d in O)c_(d-h)=(m/p) M G_O,
@@ -56,18 +56,18 @@ so the residual in CM1 is unchanged. The QCO1 orbit calculation gives
 where O ranges over multiplicative H-cosets in F_p^* and `H=<16>`.
 Consequently, with `beta=min(1,sqrt(p)/m)`,
 
-    |W| <= rho + (m/p)|M| + beta*(m/p)|M| sum_O |G_O|.   (CM2a)
+    |W| <= rho + (m/p)|M| + beta*(m/p)|M| sum_O |G_O|.   (CCM2a)
 
 This formula retains the named resonance and all signed orbit sums. Unlike
 expanding B itself canonically, construction of V uses no held-out phase
-value B_r. Nevertheless, CM2a is a more expensive upper bound than the direct
-CM1 identity: the exact signed orbit reconstruction already averages to M.
+value B_r. Nevertheless, CCM2a is a more expensive upper bound than the direct
+CCM1 identity: the exact signed orbit reconstruction already averages to M.
 It is reported to disclose the arithmetic accounting, not as a manufactured
 improvement. It is not a bound on M derived from local prime geometry.
 
 The periods satisfy the exact identity
 
-    sum_O |G_O|^2=p-m.                                 (CM2b)
+    sum_O |G_O|^2=p-m.                                 (CCM2b)
 
 Proof: use unscaled periods `eta_c=sum_(u in H)e(cu/p)`. Each coset contributes
 m identical values as c ranges over F_p^*. Orthogonality gives
@@ -81,15 +81,15 @@ the period labels. If d=(p-1)/m, Cauchy--Schwarz yields the explicit a-priori
 cost bound
 
     K_p=(m/p)[1+beta*sqrt(d*(p-m))],
-    |W| <= rho+K_p |M|.                                (CM2c)
+    |W| <= rho+K_p |M|.                                (CCM2c)
 
 The code encloses sqrt(p) and sqrt(d*(p-m)) outward with integer square roots.
 It reports `(m/p)|M|` and the nonresonant term separately. Exact period phases
 need not be evaluated, and no held-out B is used to choose K_p. The cost is
 only an upper bound; lower comparison between certificates uses the direct
-CM1 expression, never treats K_p as the exact quotient cost.
+CCM1 expression, never treats K_p as the exact quotient cost.
 
-## CM3. Rigorous finite data and model-selection discipline
+## CCM3. Rigorous finite data and model-selection discipline
 
 The table is defined, rather than merely approximated, by Gaussian dyadics
 with denominator 2^24. In each old training cell, the inherited outward Taylor
@@ -128,11 +128,11 @@ possibility of another model.
 
 For the zero prediction, rho is exactly mean|B|. A two-replica source can have
 large rho even when W is tiny. For coherent control B=conjugate(a), W=1, and
-CM1 must remain at least one for every frozen table. This complement control
+CCM1 must remain at least one for every frozen table. This complement control
 is an observer stress test, not a different authentic U0=0 history.
 
 An independently reset observer gauge without simultaneous transport changes
-aB and invalidates CM1's displayed identification. A future carry encodes
+aB and invalidates CCM1's displayed identification. A future carry encodes
 current-state information and is excluded from the model's feature contract.
 A finite successful certificate, were one obtained, would still leave its
 all-epoch and every-fixed-nonzero-h arithmetic estimate unpaid.
@@ -143,3 +143,39 @@ Inherited dependencies: [QCO1--5](../../frontier_connections/crucible/THEOREMS.m
 [carry-history experiment](../../covariance_forge/HISTORY_PREREGISTRATION.md).
 This round differs by freezing a trained table and transferring it to a later
 clock with explicit signed-orbit accounting. It is not SUCC's first carry model.
+
+## CCM4. A finite dual floor for every table, including a fitted-afterward table
+
+This is a **postregistration analytic family audit**, derived while the
+preregistered source run was executing. It changes neither the frozen table
+nor the preregistered experiment. For every clock r let J_c(r) be the
+fraction of its q replicas having feature c. Thus J_c>=0 and sum_c J_c=1.
+Let `f_r=a_r B_r` and take any auxiliary witnesses v_r with |v_r|<=1. Every
+table with |g_c|<=1, however selected, satisfies
+
+    mean_r |f_r-sum_c J_c(r)g_c|
+      >= Re mean_r conjugate(v_r) f_r
+         - sum_c |mean_r conjugate(v_r) J_c(r)|.         (CCM4)
+
+Proof: `|z|>=Re(conjugate(v)z)` when |v|<=1. Sum this inequality for the
+residual, exchange the finite sums, then use
+`Re(g_c delta_c)<=|delta_c|` for each unit-disk table entry. QED.
+
+The target witness v=f is admissible because |B|<=1 and yields
+`rho>=mean|B|^2-sum_c|mean conjugate(f)J_c|`. A sharper witness can use a
+Gaussian dyadic approximation to f/|f|. The code takes each target box's
+integer midpoint (a,b), lets s=ceil(sqrt(a²+b²)), and rounds `(a,b)*2^24/s`
+toward zero coordinatewise. The resulting exact dyadic has norm<=1. For
+(a,b)=0 use zero. Interval evaluation of the alignment and each feature
+moment therefore certifies CCM4 with no division by an unknown true phase.
+Data-dependent witnesses are allowed: they are lower-bound certificates,
+not causal predictors. The two reported witnesses do not claim optimality.
+For tables bounded by a declared radius G instead of one, the same proof
+multiplies the support-function term by G; no amplitude growth is free.
+
+This bounds the entire declared disk-valued table family, including any
+hypothetical table selected after inspecting the later source. Its positive
+floor would show that a small L1 residual is impossible for this feature
+menu at this finite clock. It is not a lower bound for |W|, not a uniform
+asymptotic floor, and not an exclusion of signed-residual methods. The
+coherent control f=1 admits table g=1 and gives no positive lower floor.

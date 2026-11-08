@@ -1,0 +1,23 @@
+{
+  "cell_counts": {
+    "1": {
+      "one": 16,
+      "two": 256
+    },
+    "3": {
+      "one": 16,
+      "two": 256
+    }
+  },
+  "deduplicated_overlap": 16,
+  "prior_source_file": "research/2026-11-08/complement_budget/results/source_2203.json",
+  "prior_source_sha256": "c0aa44e7b4f7b9957bbe533ee0170aee142a301ff99a882fa92ddad0a82255f8",
+  "replay_keys": {
+    "carry_sha256": "07289eb6640fbb800cce7f08320baeb05ebb84e5ba98a92da7f87dcd9fed5982",
+    "denominator_bits": 37948,
+    "unwrapped_sha256": "9a61dba8f5d39a568a19ea6e8906af789b6f80ea3077eeb97a9748f7dc4cb675"
+  },
+  "scope": "Training-source replay against existing committed source hashes; no holdout phase access.",
+  "table_sha256": "2462a0e3b814a5fb8664701a12832698b04cbd62c7c60ecf63abc669bc4f3887",
+  "training_count": 3274
+}

@@ -1,0 +1,63 @@
+{
+  "RH": "OPEN",
+  "branch": "research/learning-yoneda-source-cancellation-2026-11-07",
+  "fetched_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "fresh_holdout_scope": "Source window55003..110004; earlier branch end44000; same deterministic source, not independent random sample.",
+  "frozen_models_match_pushed_commit": {
+    "FROZEN_TABLE.json": "2462a0e3b814a5fb8664701a12832698b04cbd62c7c60ecf63abc669bc4f3887",
+    "carry_model.py": "10089085b088ec9cd09b2b34feadb5abf2b9345f933cd04575e8cfd3e921b06d"
+  },
+  "main_unmodified": true,
+  "model_freeze_commit": "5e1e3fad",
+  "original_proof_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "pi_normality": "OPEN",
+  "preregistration_commit": "8c43eaf1",
+  "raw_source_sha256": "02cc3a15ab2e40c2db5006fae961586afbbdd4df048f80dab6da6e98974f11ca",
+  "readonly_input_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/CATEGORICAL_OBSERVER_ATLAS.md": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc",
+    "docs/CLAIM_LEDGER.md": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "docs/PI_NORMALITY_FRONTIER.md": "9f7e8b10fcde7e4a74006e4da79c5c972523ab624148db925f8add399537a681",
+    "observational_succ/integer_bbp_carrier.py": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253",
+    "observational_succ/selected_branch_arithmetic.py": "7000d2454efc552782d2aa2e8cfafb69b0528e0fbf58cb89075408d50530939a",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-11-08/complement_budget/source_budget.py": "ded39826508247120315476647f4e03ae0735744eb22bc8f7bb375d008154ec9",
+    "research/2026-11-08/covariance_forge/intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "research/2026-11-08/covariance_forge/source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3",
+    "research/2026-11-08/frontier_connections/crucible/THEOREMS.md": "29b9424e1da076ff1da4e93f19f6b706efed3d7374ed1c9235e803505c9ec191",
+    "research/2026-11-08/frontier_connections/observer/THEOREMS.md": "e5e8b40e1f8f34472908640e21108c2bcfc22b1af14e366017eaf2e06f5a947a",
+    "research/2026-11-08/signal_frontier/prime_resonance/THEOREMS.md": "19da8fdca585c2d1212198136223b7c491877115343f8d0d2476db25a7c2cff9",
+    "research/2026-11-08/signed_covariance_round2/lag_instrument.py": "9bee7c56d4bb87a992cfa2e64fef71f1a1e911436faeecc5bc2f347b254292a1"
+  },
+  "reasoner_independence": "Three fronts and root share model family/repository; separate algorithms and derivations, no external scholarly refereeing.",
+  "repository": "https://github.com/femboy2112/SUCC",
+  "root_instrument_commit": "04f0b41c",
+  "scope": "Only this research namespace changed. No source, native, catalog or workflow modifications.",
+  "source_authentication": {
+    "carry_sha256": "7c6431419bcf89060a351979f5dfb547b1891b81c986de763a5ee71619a45747",
+    "denominator_bits": 952449,
+    "last": 110004,
+    "modular_checkpoints": [
+      55003,
+      110004
+    ],
+    "source_contract": "4,-2,-1,-1; poles7,4,3,2; literal U0=0",
+    "unwrapped_sha256": "b20a84b9e2284bbf3ad83a5494ad9fe4f9345e16dee8cc12a8e9d5b7d00330e7"
+  },
+  "source_clock": {
+    "A": 55003,
+    "L": 55002,
+    "last": 110004,
+    "m": 27501,
+    "n0": 55003,
+    "p": 220009,
+    "q": 2
+  },
+  "starting_head": "19d98078b60e47092c9b9d050a70b6b7eabb7cd2",
+  "tools": {
+    "lean": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  }
+}
