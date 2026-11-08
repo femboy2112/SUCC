@@ -18,10 +18,23 @@ Identities:
 """
 from __future__ import annotations
 
+import functools
+
 import mpmath as mp
 from math import lcm
 
-mp.mp.dps = 50
+# Main XXI: this module used to execute ``mp.mp.dps = 50`` at import, silently raising the
+# global precision of any process that imported it (measured 15 -> 50).  The identities are
+# still evaluated at exactly 50 digits, now scoped per call (values bit-identical).
+_DPS = 50
+
+
+def _at_module_precision(fn):
+    @functools.wraps(fn)
+    def wrapper(*args, **kwargs):
+        with mp.workdps(_DPS):
+            return fn(*args, **kwargs)
+    return wrapper
 
 
 def mobius_sieve(N: int) -> list[int]:
@@ -40,20 +53,24 @@ def mobius_sieve(N: int) -> list[int]:
     return mu
 
 
+@_at_module_precision
 def residue_clock(k: int, n: int) -> mp.mpf:
     return mp.mpf((k % n)) / n
 
 
+@_at_module_precision
 def target_inner(n: int, N: int = 200_000) -> mp.mpf:
     """<1, r_n> by direct partial sum; should equal log(n)/n (T1)."""
     return mp.fsum(residue_clock(k, n) / (k * (k + 1)) for k in range(1, N + 1))
 
 
+@_at_module_precision
 def S_r(L: int, r: int) -> mp.mpf:
     k0 = r if r >= 1 else L
     return (mp.digamma(mp.mpf(k0 + 1) / L) - mp.digamma(mp.mpf(k0) / L)) / L
 
 
+@_at_module_precision
 def gram(m: int, n: int) -> mp.mpf:
     """<r_m, r_n> via the digamma closed form (T4)."""
     L = lcm(m, n)
@@ -61,6 +78,7 @@ def gram(m: int, n: int) -> mp.mpf:
                    for r in range(1, L + 1))
 
 
+@_at_module_precision
 def mobius_cancellation(s: int, N: int = 200_000) -> dict:
     """Verify T3: sum_{n<=N} mu(n)(1/n - n^{-s}) -> -1/zeta(s)."""
     mu = mobius_sieve(N)
@@ -69,6 +87,7 @@ def mobius_cancellation(s: int, N: int = 200_000) -> dict:
             "error": abs(S + 1 / mp.zeta(s))}
 
 
+@_at_module_precision
 def single_clock_optimum() -> dict:
     """T2: optimal single-clock approximation is a_2=2 with E_2* = 1 - log 2."""
     G22 = mp.log(2) / 4
