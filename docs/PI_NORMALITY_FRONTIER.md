@@ -102,9 +102,9 @@
 
 **(LS) for the zero seed.** Prove
 
-\[
+```math
 Λ_A=\sup_{1\le a<b\le8,\ b-a\ge1/4}\ \sup_t\ \bigl|μ_{[aA,bA)}([0,t))-μ_{[A,2A)}([0,t))\bigr|\ \longrightarrow\ 0 .
-\]
+```
 
 - **Why it would matter:** by CB-2′, it reduces π normality to a single uniformity statement at the source lattice, (H2\*).
 - **Equally valuable:** a proof of (H2\*) for the zero seed, which would reduce normality to (LS).
