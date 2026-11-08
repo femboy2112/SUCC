@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/tmp/succ-learning-yoneda-venv/bin/python",
+    "research/2026-11-08/quotient_signal/gamma/oracle.py",
+    "--output",
+    "research/2026-11-08/quotient_signal/gamma/RESULTS.json"
+  ],
+  "exit_code": 0,
+  "source_hash_change": "decimal rational prefix encoding -> hexadecimal; no global integer limit change",
+  "all_other_mathematical_fields_identical_to_full_replay": true,
+  "final_results_sha256": "66c238b42fb9021381bceadaf7bce420fc4493b32da49a5c84ed8721bd299acc",
+  "final_oracle_sha256": "ce02230e1fb30014435f32850957aa46167d5e4eadcb38b663ec1b82d5bb16c2",
+  "import_preserves_integer_string_setting": 4300
+}

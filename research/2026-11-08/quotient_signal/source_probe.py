@@ -134,6 +134,27 @@ def run(A):
                        'matched_primes': list(matched_primes)}, 'rows': rows}
 
 
+def summarize(output):
+    summaries = []
+    cases = 0
+    epochs = 0
+    for path in sorted(output.glob('quotient_*.json')):
+        data = json.loads(path.read_text())
+        cases += len(data['rows'])
+        epochs += 1
+        for row in data['rows']:
+            if row['depth'] == 4 and row['cell_origin'] == '0':
+                summaries.append({'A': data['A'], 'p': data['p'], 'h': row['h'],
+                                  'family': row['family'],
+                                  'W_abs_squared': row['W']['abs_squared'],
+                                  'exact_local_measurability': row['exact_local_measurability'],
+                                  'complement_variance': row['Vb']})
+    (output/'SUMMARY.json').write_text(json.dumps({
+        'scale': SCALE, 'cases': cases, 'epochs': epochs,
+        'claims': 'Finite interval enclosures and consistency checks; no asymptotic decay estimate',
+        'fine_rows': summaries}, indent=2, sort_keys=True)+'\n')
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -152,6 +173,7 @@ def main():
         'protocol_commit': '143fe29d', 'stage': args.stage, 'epochs': index,
         'script_sha256': sha256(Path(__file__).read_bytes()).hexdigest(),
         'pi_normality': 'OPEN', 'RH': 'OPEN'}, indent=2, sort_keys=True)+'\n')
+    summarize(args.output)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/tmp/succ-learning-yoneda-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/2026-11-08/quotient_signal/gamma",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "seconds": 0.13779204711318016,
+  "oracle_sha256": "ce02230e1fb30014435f32850957aa46167d5e4eadcb38b663ec1b82d5bb16c2",
+  "reason": "Narrow serialization cleanup after full replay: hexadecimal source hashes replace disabling global decimal limit; mathematical algorithms unchanged"
+}

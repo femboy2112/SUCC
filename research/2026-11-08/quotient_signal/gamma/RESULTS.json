@@ -1,0 +1,202 @@
+{
+  "arithmetic": "Fraction plus proved outward rational intervals; decimals supplementary",
+  "cases": [
+    {
+      "C_N": {
+        "denominator_power2": 128,
+        "hi": "-4808781025749288304704057888714850610",
+        "lo": "-4808781025749288304704057888753504846"
+      },
+      "C_N_minus_C": {
+        "denominator_power2": 128,
+        "hi": "71585605485088410472839370849695492",
+        "lo": "71585605485088410472839370811041255"
+      },
+      "N": 64,
+      "N_times_gap_display": "0.013463755975666301584331196026",
+      "direct_backward_tail_intersection": true,
+      "finite_backward_telescoping": true,
+      "gamma_error_upper": "11/512",
+      "gamma_estimator": {
+        "denominator_power2": 128,
+        "hi": "203649324525674745158064855978234677758",
+        "lo": "203649324525674745158064855975760806676"
+      },
+      "gamma_estimator_display": "0.59847157632176347108682170068",
+      "gamma_estimator_minus_gamma": {
+        "denominator_power2": 128,
+        "hi": "7233013539338669032649250322397032717",
+        "lo": "7191475164470390411621006349289400866"
+      },
+      "role": "development",
+      "sharp_tail_upper": "7/32768",
+      "source_unwrapped_prefix_sha256": "929566eaea4fd74e6f7490b54c4fa213de9467c22bcedf8e56ab73121f9a2203"
+    },
+    {
+      "C_N": {
+        "denominator_power2": 128,
+        "hi": "-4844017758529567666766725206248255272",
+        "lo": "-4844017758529567666766725206315418111"
+      },
+      "C_N_minus_C": {
+        "denominator_power2": 128,
+        "hi": "36348872704809048410172053316290830",
+        "lo": "36348872704809048410172053249127991"
+      },
+      "N": 127,
+      "N_times_gap_display": "0.013566106511135519324989717322",
+      "direct_backward_tail_intersection": true,
+      "finite_backward_telescoping": true,
+      "gamma_error_upper": "11/1016",
+      "gamma_estimator": {
+        "denominator_power2": 128,
+        "hi": "200080576769422513378051656551542114549",
+        "lo": "200080576769422513378051656547243692914"
+      },
+      "gamma_estimator_display": "0.58798396925430294025843763436",
+      "gamma_estimator_minus_gamma": {
+        "denominator_power2": 128,
+        "hi": "3664265783086437252636050895704469507",
+        "lo": "3622727408218158631607806920772287105"
+      },
+      "role": "development",
+      "sharp_tail_upper": "7/65024",
+      "source_unwrapped_prefix_sha256": "a6cdb591c4f4f5856315b10eb38982a4276a3613614f811ce8a0c8a3e31d0984"
+    },
+    {
+      "C_N": {
+        "denominator_power2": 128,
+        "hi": "-4862333812601621950257420729463753070",
+        "lo": "-4862333812601621950257420729567583368"
+      },
+      "C_N_minus_C": {
+        "denominator_power2": 128,
+        "hi": "18032818632754764919476530100793032",
+        "lo": "18032818632754764919476529996962733"
+      },
+      "N": 257,
+      "N_times_gap_display": "0.013619378607692427341389914969",
+      "direct_backward_tail_intersection": true,
+      "finite_backward_telescoping": true,
+      "gamma_error_upper": "11/2056",
+      "gamma_estimator": {
+        "denominator_power2": 128,
+        "hi": "198232011690183578970981093944861141344",
+        "lo": "198232011690183578970981093938216002295"
+      },
+      "gamma_estimator_display": "0.58255152473487113608879398495",
+      "gamma_estimator_minus_gamma": {
+        "denominator_power2": 128,
+        "hi": "1815700703847502845565488289023496302",
+        "lo": "1774162328979224224537244311744596486"
+      },
+      "role": "fresh_holdout",
+      "sharp_tail_upper": "7/131584",
+      "source_unwrapped_prefix_sha256": "3ab464f037eaa6cffa92aa83b5e7a88697e054ba75805061e984efdc8cde7b43"
+    },
+    {
+      "C_N": {
+        "denominator_power2": 128,
+        "hi": "-4871454026685050296449466204547788867",
+        "lo": "-4871454026685050296449466204693247387"
+      },
+      "C_N_minus_C": {
+        "denominator_power2": 128,
+        "hi": "8912604549326418727431055016757234",
+        "lo": "8912604549326418727431054871298714"
+      },
+      "N": 521,
+      "N_times_gap_display": "0.013645922979247207937728106801",
+      "direct_backward_tail_intersection": true,
+      "finite_backward_telescoping": true,
+      "gamma_error_upper": "11/4168",
+      "gamma_estimator": {
+        "denominator_power2": 128,
+        "hi": "197313181470800661271174495024748722948",
+        "lo": "197313181470800661271174495015439377744"
+      },
+      "gamma_estimator_display": "0.57985132540424757895384298494",
+      "gamma_estimator_minus_gamma": {
+        "denominator_power2": 128,
+        "hi": "896870484464585145758889368911077906",
+        "lo": "855332109596306524730645388967971934"
+      },
+      "role": "fresh_holdout",
+      "sharp_tail_upper": "7/266752",
+      "source_unwrapped_prefix_sha256": "bdacb9f3780f2280c09457319c24464d77dc0e79362dfed6b0c34f6fc736e157"
+    },
+    {
+      "C_N": {
+        "denominator_power2": 128,
+        "hi": "-4875858551048680347479497988558913138",
+        "lo": "-4875858551048680347479497988747241383"
+      },
+      "C_N_minus_C": {
+        "denominator_power2": 128,
+        "hi": "4508080185696367697399271005632963",
+        "lo": "4508080185696367697399270817304719"
+      },
+      "N": 1031,
+      "N_times_gap_display": "0.013658746744678770266158346217",
+      "direct_backward_tail_intersection": true,
+      "finite_backward_telescoping": true,
+      "gamma_error_upper": "11/8248",
+      "gamma_estimator": {
+        "denominator_power2": 128,
+        "hi": "196869828527364557316157465089535109944",
+        "lo": "196869828527364557316157465077482102372"
+      },
+      "gamma_estimator_display": "0.57854842820317364552348335751",
+      "gamma_estimator_minus_gamma": {
+        "denominator_power2": 128,
+        "hi": "453517541028481190741859433697464903",
+        "lo": "411979166160202569713615451010696563"
+      },
+      "role": "fresh_holdout",
+      "sharp_tail_upper": "7/527872",
+      "source_unwrapped_prefix_sha256": "7dbfc947e89374bd1a1571062817a8124073422e5781110a9a61a45c75064045"
+    }
+  ],
+  "constant_C": {
+    "denominator_power2": 128,
+    "hi": "-4880366631234376715176897259564546101",
+    "lo": "-4880366631234376715176897259564546102"
+  },
+  "constant_C_display": "-0.014342108512394019674083738529",
+  "covariance_bridge": "OPEN",
+  "depth": 24,
+  "formal_kernel_claim": false,
+  "gamma_interval": {
+    "denominator_power2": 128,
+    "hi": "196457849361204354746443849626471405810",
+    "lo": "196416310986336076125415605655837645041"
+  },
+  "gamma_interval_definition": "H_4096-log(4096)-1/8192 < gamma < H_4096-log(4096)",
+  "mutated_four_pole_controls": [
+    {
+      "n": 64,
+      "original_n2_tail_upper_rejected": true
+    },
+    {
+      "n": 257,
+      "original_n2_tail_upper_rejected": true
+    },
+    {
+      "n": 1031,
+      "original_n2_tail_upper_rejected": true
+    }
+  ],
+  "normality_proved": false,
+  "oracle_sha256": "ce02230e1fb30014435f32850957aa46167d5e4eadcb38b663ec1b82d5bb16c2",
+  "parent": "a974db527c19708006b9f6d7f0ca01d08d1e0524",
+  "phase_product_authority": "paper theorem; no floating complex products used as proof",
+  "phase_product_error": "11*pi*abs(h)/(256*N), h fixed nonzero integer",
+  "phase_product_limit": "e(-h*(C+gamma/64))",
+  "pointwise_checks": 1031,
+  "polynomial_checks": 185,
+  "schema": "succ-quotient-gamma-calibration-v1",
+  "seed_checks": 192,
+  "sharp_tail_coefficient": "7/512",
+  "source_prefix_hash_encoding": "n:hex(numerator)/hex(denominator), newline; literal zero included",
+  "theorem_sha256": "f9993d356f27aaf4fed00f9ac28d7a15560c3b252c8e713321262c6c429de6b2"
+}
