@@ -1,0 +1,519 @@
+{
+  "RH": "OPEN",
+  "code_sha256": "a2d4416d05e7d495694d0a9448bb68ee2b1e8b5d2c67305da3d5c7cc2e42cc30",
+  "inputs": [
+    {
+      "A": 1103,
+      "data_scope": "Reused development data; no fresh holdout",
+      "m": 551,
+      "p": 4409,
+      "q": 2,
+      "rows": [
+        {
+          "W_upper": {
+            "decimal_diagnostic": 0.028396144204037434,
+            "denominator": 302231454903657293676544,
+            "numerator": 8582207976440288922551
+          },
+          "atomwise_nonresonant_cost_lower": {
+            "decimal_diagnostic": 1.774385377976406,
+            "denominator": 3550512156164564982464385581522796600348316626671632384,
+            "numerator": 6299976854225886187831364338584496179267865508533992789
+          },
+          "atomwise_nonresonant_cost_upper": {
+            "decimal_diagnostic": 1.7743853779824468,
+            "denominator": 1775256078082282491232192790761398300174158313335816192,
+            "numerator": 3149988427123667002654863107083377018545803455180487397
+          },
+          "canonical_rank_one_warning": "All quotient coefficients are known multiples of W; this is not an independent decay premise.",
+          "h": 1,
+          "normalized_fft_error": {
+            "decimal_diagnostic": 5.685937336915887e-15,
+            "denominator": 5330153938680900031279529984,
+            "numerator": 30306921291455
+          },
+          "orbit_coefficients": [
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.07769323869737481,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 414116922251687672093729285
+              },
+              "containment_margin_units": 16699113631360837,
+              "coset_representative": 1,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.08618717614563215,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 459390916396425722245870213
+              },
+              "containment_margin_units": 16699113631376892,
+              "coset_representative": 3,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.058853761489715856,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 313699608610595240143381893
+              },
+              "containment_margin_units": 16699113631401553,
+              "coset_representative": 7,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.08581587651718486,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 457411832219426659992882511
+              },
+              "containment_margin_units": 16699113631373364,
+              "coset_representative": 9,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.08581587651718486,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 457411832219426659992882019
+              },
+              "containment_margin_units": 16699113631375575,
+              "coset_representative": 11,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.058853761489715856,
+                "denominator": 2665076969340450015639764992,
+                "numerator": 156849804305297620071690767
+              },
+              "containment_margin_units": 16699113631398932,
+              "coset_representative": 13,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.07769323869737481,
+                "denominator": 166567310583778125977485312,
+                "numerator": 12941153820365239752928987
+              },
+              "containment_margin_units": 16699113631362716,
+              "coset_representative": 21,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.08618717614563215,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 459390916396425722245869077
+              },
+              "containment_margin_units": 16699113631376153,
+              "coset_representative": 63,
+              "direct_box_inside_fft_l1_ball": true
+            }
+          ],
+          "quotient_nonresonant_cost_upper": {
+            "decimal_diagnostic": 0.07436593991210884,
+            "denominator": 443814019520570622808048197690349575043539578333954048,
+            "numerator": 33004646707818257193036514663825396998077113370027149
+          },
+          "quotient_total_upper": {
+            "decimal_diagnostic": 0.07791465287569463,
+            "denominator": 443814019520570622808048197690349575043539578333954048,
+            "numerator": 34579615272312017673696554881898884938810756904658061
+          },
+          "retained_resonance_upper": {
+            "decimal_diagnostic": 0.003548712963585778,
+            "denominator": 1332538484670225007819882496,
+            "numerator": 4728796595026175926647299
+          }
+        },
+        {
+          "W_upper": {
+            "decimal_diagnostic": 0.0507983902880646,
+            "denominator": 1208925819614629174706176,
+            "numerator": 61411485614102312583051
+          },
+          "atomwise_nonresonant_cost_lower": {
+            "decimal_diagnostic": 1.752073164193687,
+            "denominator": 1775256078082282491232192790761398300174158313335816192,
+            "numerator": 3110378533979700018819509501157187612657099420228894333
+          },
+          "atomwise_nonresonant_cost_upper": {
+            "decimal_diagnostic": 1.7520731641995795,
+            "denominator": 887628039041141245616096395380699150087079156667908096,
+            "numerator": 1555189266995080178493609482292073521073623694803394849
+          },
+          "canonical_rank_one_warning": "All quotient coefficients are known multiples of W; this is not an independent decay premise.",
+          "h": 3,
+          "normalized_fft_error": {
+            "decimal_diagnostic": 5.54618924788502e-15,
+            "denominator": 1332538484670225007819882496,
+            "numerator": 7390510616071
+          },
+          "orbit_coefficients": [
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.1389868791221129,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 740821461177696224611483465
+              },
+              "containment_margin_units": 16288685397531440,
+              "coset_representative": 1,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.15418184173670743,
+                "denominator": 2665076969340450015639764992,
+                "numerator": 410906475502993130411072001
+              },
+              "containment_margin_units": 16288685397548092,
+              "coset_representative": 3,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.10528458809480905,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 561183061915942636875243515
+              },
+              "containment_margin_units": 16288685397571170,
+              "coset_representative": 7,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.15351761692843233,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 818272530527989206897550223
+              },
+              "containment_margin_units": 16288685397548926,
+              "coset_representative": 9,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.15351761692843233,
+                "denominator": 1332538484670225007819882496,
+                "numerator": 204568132631997301724386957
+              },
+              "containment_margin_units": 16288685397546290,
+              "coset_representative": 11,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.10528458809480905,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 561183061915942636875241619
+              },
+              "containment_margin_units": 16288685397568399,
+              "coset_representative": 13,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.1389868791221129,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 740821461177696224611484197
+              },
+              "containment_margin_units": 16288685397533319,
+              "coset_representative": 21,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.15418184173670743,
+                "denominator": 5330153938680900031279529984,
+                "numerator": 821812951005986260822141889
+              },
+              "containment_margin_units": 16288685397546198,
+              "coset_representative": 63,
+              "direct_box_inside_fft_l1_ball": true
+            }
+          ],
+          "quotient_nonresonant_cost_upper": {
+            "decimal_diagnostic": 0.13303461246640577,
+            "denominator": 887628039041141245616096395380699150087079156667908096,
+            "numerator": 118085252188153911245055161105638578942108164290649689
+          },
+          "quotient_total_upper": {
+            "decimal_diagnostic": 0.13938297106217534,
+            "denominator": 887628039041141245616096395380699150087079156667908096,
+            "numerator": 123720233279646830243751227459589690603872823654096473
+          },
+          "retained_resonance_upper": {
+            "decimal_diagnostic": 0.006348358595769573,
+            "denominator": 5330153938680900031279529984,
+            "numerator": 33837728573399936275720661
+          }
+        }
+      ],
+      "source_carry_sha256": "10dcf3e972550e3fd53cfb49a8ddbe1cd4ca3d9fe9ca94b92e847283521bac0c",
+      "source_path": "research/2026-11-08/complement_budget/results/source_1103.json",
+      "source_sha256": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5",
+      "source_unwrapped_sha256": "b7d01220b652828b4fc89ee1810454085d02993d72fda0f7960f4962a8d63f45"
+    },
+    {
+      "A": 2203,
+      "data_scope": "Reused development data; no fresh holdout",
+      "m": 1094,
+      "p": 8753,
+      "q": 2,
+      "rows": [
+        {
+          "W_upper": {
+            "decimal_diagnostic": 0.031167105522743602,
+            "denominator": 37778931862957161709568,
+            "numerator": 1177459955909326432151
+          },
+          "atomwise_nonresonant_cost_lower": {
+            "decimal_diagnostic": 1.7867839977763338,
+            "denominator": 3498755267930947051970579388699398511631731259560951808,
+            "numerator": 6251519924874665784008330464411914353802084366030552237
+          },
+          "atomwise_nonresonant_cost_upper": {
+            "decimal_diagnostic": 1.7867839978042295,
+            "denominator": 1749377633965473525985289694349699255815865629780475904,
+            "numerator": 3125759962486132734057152726519982850871099919549240003
+          },
+          "canonical_rank_one_warning": "All quotient coefficients are known multiples of W; this is not an independent decay premise.",
+          "h": 1,
+          "normalized_fft_error": {
+            "decimal_diagnostic": 1.8635300477492426e-14,
+            "denominator": 330678990596464036443848704,
+            "numerator": 6162302351359
+          },
+          "orbit_coefficients": [
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.0972606081725937,
+                "denominator": 2645431924771712291550789632,
+                "numerator": 257296317882491886729248807
+              },
+              "containment_margin_units": 215729880715774721,
+              "coset_representative": 1,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.06394545348628754,
+                "denominator": 5290863849543424583101579264,
+                "numerator": 338326688193259244735578829
+              },
+              "containment_margin_units": 215729880715856284,
+              "coset_representative": 2,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.16940737597572936,
+                "denominator": 5290863849543424583101579264,
+                "numerator": 896311361395997731913557829
+              },
+              "containment_margin_units": 215729880715601462,
+              "coset_representative": 3,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.07083994506907959,
+                "denominator": 5290863849543424583101579264,
+                "numerator": 374804504469635149221807545
+              },
+              "containment_margin_units": 215729880715837708,
+              "coset_representative": 4,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.12346797873315564,
+                "denominator": 330678990596464036443848704,
+                "numerator": 40828266578465593605674395
+              },
+              "containment_margin_units": 215729880715718062,
+              "coset_representative": 5,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.14275138651791222,
+                "denominator": 661357981192928072887697408,
+                "numerator": 94409768799977796751202049
+              },
+              "containment_margin_units": 215729880715666171,
+              "coset_representative": 8,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.06274844008557771,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 663986906528049296071427785
+              },
+              "containment_margin_units": 215729880715855265,
+              "coset_representative": 10,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.17145217479519584,
+                "denominator": 5290863849543424583101579264,
+                "numerator": 907130113549502033263185865
+              },
+              "containment_margin_units": 215729880715596119,
+              "coset_representative": 20,
+              "direct_box_inside_fft_l1_ball": true
+            }
+          ],
+          "quotient_nonresonant_cost_upper": {
+            "decimal_diagnostic": 0.07712704676234487,
+            "denominator": 6997510535861894103941158777398797023263462519121903616,
+            "numerator": 539697322319421263829972514029233105289517778745513027
+          },
+          "quotient_total_upper": {
+            "decimal_diagnostic": 0.08102248986094474,
+            "denominator": 6997510535861894103941158777398797023263462519121903616,
+            "numerator": 566955726443724320926748798835104752318592219930776643
+          },
+          "retained_resonance_upper": {
+            "decimal_diagnostic": 0.003895443098599865,
+            "denominator": 2645431924771712291550789632,
+            "numerator": 10305129534167723352994007
+          }
+        },
+        {
+          "W_upper": {
+            "decimal_diagnostic": 0.02082535690031006,
+            "denominator": 604462909807314587353088,
+            "numerator": 12588155829737255798607
+          },
+          "atomwise_nonresonant_cost_lower": {
+            "decimal_diagnostic": 1.7582766599540738,
+            "denominator": 13995021071723788207882317554797594046526925038243807232,
+            "numerator": 24607118905977383924980761770250529671406521959881268585
+          },
+          "atomwise_nonresonant_cost_upper": {
+            "decimal_diagnostic": 1.75827665998316,
+            "denominator": 6997510535861894103941158777398797023263462519121903616,
+            "numerator": 12303559453192223475726411646609398594452260520876187507
+          },
+          "canonical_rank_one_warning": "All quotient coefficients are known multiples of W; this is not an independent decay premise.",
+          "h": 3,
+          "normalized_fft_error": {
+            "decimal_diagnostic": 1.943075400568824e-14,
+            "denominator": 5290863849543424583101579264,
+            "numerator": 102805473938067
+          },
+          "orbit_coefficients": [
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.06498796868690217,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 687684988361581524550294005
+              },
+              "containment_margin_units": 224938376976051383,
+              "coset_representative": 1,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.04272732000314564,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 452128865585033855865052635
+              },
+              "containment_margin_units": 224938376976121331,
+              "coset_representative": 2,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.11319527454684772,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 1197801572078119092891423955
+              },
+              "containment_margin_units": 224938376975898039,
+              "coset_representative": 3,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.04733410800766705,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 500876641816299059183403509
+              },
+              "containment_margin_units": 224938376976102395,
+              "coset_representative": 4,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.08249931073129285,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 872985241520894560130078025
+              },
+              "containment_margin_units": 224938376976001017,
+              "coset_representative": 5,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.09538417259563009,
+                "denominator": 5290863849543424583101579264,
+                "numerator": 504664670604829819771787919
+              },
+              "containment_margin_units": 224938376975958391,
+              "coset_representative": 8,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.041927494967546976,
+                "denominator": 5290863849543424583101579264,
+                "numerator": 221832667425708168421029199
+              },
+              "containment_margin_units": 224938376976123059,
+              "coset_representative": 10,
+              "direct_box_inside_fft_l1_ball": true
+            },
+            {
+              "coefficient_abs_upper": {
+                "decimal_diagnostic": 0.11456157611673998,
+                "denominator": 10581727699086849166203158528,
+                "numerator": 1212259403245553844134487531
+              },
+              "containment_margin_units": 224938376975894495,
+              "coset_representative": 20,
+              "direct_box_inside_fft_l1_ball": true
+            }
+          ],
+          "quotient_nonresonant_cost_upper": {
+            "decimal_diagnostic": 0.05153504788833994,
+            "denominator": 874688816982736762992644847174849627907932814890237952,
+            "numerator": 45077130070600744131268951852225644335937731809755663
+          },
+          "quotient_total_upper": {
+            "decimal_diagnostic": 0.054137920097766336,
+            "denominator": 874688816982736762992644847174849627907932814890237952,
+            "numerator": 47353833284221164491269244810064389717777622962520591
+          },
+          "retained_resonance_upper": {
+            "decimal_diagnostic": 0.0026028722094264003,
+            "denominator": 5290863849543424583101579264,
+            "numerator": 13771442477835363317609271
+          }
+        }
+      ],
+      "source_carry_sha256": "07289eb6640fbb800cce7f08320baeb05ebb84e5ba98a92da7f87dcd9fed5982",
+      "source_path": "research/2026-11-08/complement_budget/results/source_2203.json",
+      "source_sha256": "c0aa44e7b4f7b9957bbe533ee0170aee142a301ff99a882fa92ddad0a82255f8",
+      "source_unwrapped_sha256": "9a61dba8f5d39a568a19ea6e8906af789b6f80ea3077eeb97a9748f7dc4cb675"
+    }
+  ],
+  "normality": "OPEN",
+  "status": "CERTIFIED_FINITE_REPLAY",
+  "theorem": "QCO4, canonical zero-extension rank-one quotient"
+}

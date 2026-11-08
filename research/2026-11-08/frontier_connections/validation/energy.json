@@ -1,0 +1,377 @@
+{
+  "RH": "OPEN",
+  "critical_points": [
+    {
+      "b": 2,
+      "exact_minimizers_turns": [
+        "1/3",
+        "2/3"
+      ],
+      "stationary_points": 4
+    },
+    {
+      "b": 4,
+      "exact_minimizers_turns": [
+        "2/5",
+        "3/5"
+      ],
+      "stationary_points": 8
+    },
+    {
+      "b": 6,
+      "exact_minimizers_turns": [
+        "3/7",
+        "4/7"
+      ],
+      "stationary_points": 12
+    },
+    {
+      "b": 16,
+      "exact_minimizers_turns": [
+        "8/17",
+        "9/17"
+      ],
+      "stationary_points": 32
+    },
+    {
+      "b": 32,
+      "exact_minimizers_turns": [
+        "16/33",
+        "17/33"
+      ],
+      "stationary_points": 64
+    }
+  ],
+  "normal_control": {
+    "cycles": [
+      {
+        "base": 2,
+        "length": 2,
+        "order": 1,
+        "word_sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2"
+      },
+      {
+        "base": 2,
+        "length": 4,
+        "order": 2,
+        "word_sha256": "d5e2d2ac07b741be58f6b9e50ede5fdcf16f3e8053ecef9350e7744b0d8bd90c"
+      },
+      {
+        "base": 2,
+        "length": 8,
+        "order": 3,
+        "word_sha256": "6a9307cd881b2acb7e6733d04b30b78964e7e53520a453317c045aa1baad48e5"
+      },
+      {
+        "base": 2,
+        "length": 16,
+        "order": 4,
+        "word_sha256": "6f42316a678f90b614f5902f1956c2989ccbc61e97ae28d77ccdccbfce0ccb6c"
+      },
+      {
+        "base": 2,
+        "length": 32,
+        "order": 5,
+        "word_sha256": "1f275815880e4be917ea1913452a500331669fcf2ca586eae6080b18be6fc5ba"
+      },
+      {
+        "base": 2,
+        "length": 64,
+        "order": 6,
+        "word_sha256": "7c0ed8cce7310f5163f5fe0e5b86a77fb5bfa1f98270e3019254fcefb3d1d7d5"
+      },
+      {
+        "base": 4,
+        "length": 4,
+        "order": 1,
+        "word_sha256": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8"
+      },
+      {
+        "base": 4,
+        "length": 16,
+        "order": 2,
+        "word_sha256": "e91dac5742df9d401617ef15a3ca40a1bb4a232a2615e6b2bde600e583510c2b"
+      },
+      {
+        "base": 4,
+        "length": 64,
+        "order": 3,
+        "word_sha256": "3ee42f2ed68d0b7255ef5f8ed19a607064032feefea89411e5d5e48170fa86d4"
+      },
+      {
+        "base": 4,
+        "length": 256,
+        "order": 4,
+        "word_sha256": "5c60cbcd7d88254df91b14287d841240724abb1cd15ad7533e7cdf737367e85f"
+      },
+      {
+        "base": 16,
+        "length": 16,
+        "order": 1,
+        "word_sha256": "be45cb2605bf36bebde684841a28f0fd43c69850a3dce5fedba69928ee3a8991"
+      },
+      {
+        "base": 16,
+        "length": 256,
+        "order": 2,
+        "word_sha256": "af3add29f5f713174bb346927be914d34f8c221622f0c0544ab26702bb68a603"
+      },
+      {
+        "base": 16,
+        "length": 4096,
+        "order": 3,
+        "word_sha256": "3b46973a164bd34133c120158fc32a3d60c4526abed81c586170bd9b242574c5"
+      }
+    ],
+    "exact_word_counts_checked": 5344,
+    "finite_prefix_errors": [
+      {
+        "declared_bound": 72,
+        "max_count_error": {
+          "decimal_diagnostic": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "word_length": 1
+      },
+      {
+        "declared_bound": 84,
+        "max_count_error": {
+          "decimal_diagnostic": 2.75,
+          "denominator": 4,
+          "numerator": 11
+        },
+        "word_length": 2
+      },
+      {
+        "declared_bound": 148,
+        "max_count_error": {
+          "decimal_diagnostic": 8.75,
+          "denominator": 4,
+          "numerator": 35
+        },
+        "word_length": 3
+      }
+    ],
+    "finite_prefix_length": 100000,
+    "matching_digit_checks": 6875,
+    "scope": "finite construction checks; infinite proof is RE4"
+  },
+  "odd_base_counterexamples": [
+    3,
+    5,
+    15,
+    17
+  ],
+  "pi_normality": "OPEN",
+  "source_energy": {
+    "rows": [
+      {
+        "A": 1103,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.00849796370776651,
+          "denominator": 6173445826860015438112087406018560,
+          "numerator": 52461718588519025365398626771931
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.49939167213537905,
+            "denominator": 1208925819614629174706176,
+            "numerator": 603727486544983258951143
+          },
+          {
+            "decimal_diagnostic": 0.49939167213537905,
+            "denominator": 604462909807314587353088,
+            "numerator": 301863743272491629475579
+          }
+        ],
+        "h": 1,
+        "m": 551,
+        "p": 4409,
+        "source_sha256": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5"
+      },
+      {
+        "A": 1103,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.008497892622657021,
+          "denominator": 6173445826860015438112087406018560,
+          "numerator": 52461279748446505255008208430043
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.48935013755153733,
+            "denominator": 604462909807314587353088,
+            "numerator": 295794008059011888892985
+          },
+          {
+            "decimal_diagnostic": 0.48935013755153733,
+            "denominator": 1208925819614629174706176,
+            "numerator": 591588016118023777785985
+          }
+        ],
+        "h": 3,
+        "m": 551,
+        "p": 4409,
+        "source_sha256": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5"
+      },
+      {
+        "A": 2203,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.008505659177573474,
+          "denominator": 12067714875532793195318495004218884096,
+          "numerator": 102643869783415431162470108711277609
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.5095315640320519,
+            "denominator": 604462909807314587353088,
+            "numerator": 307992931833486161028243
+          },
+          {
+            "decimal_diagnostic": 0.5095315640320519,
+            "denominator": 1208925819614629174706176,
+            "numerator": 615985863666972322056501
+          }
+        ],
+        "h": 1,
+        "m": 1094,
+        "p": 8753,
+        "source_sha256": "c0aa44e7b4f7b9957bbe533ee0170aee142a301ff99a882fa92ddad0a82255f8"
+      },
+      {
+        "A": 2203,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.00850564111087823,
+          "denominator": 12067714875532793195318495004218884096,
+          "numerator": 102643651759688492762171596325966889
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.49313915073368175,
+            "denominator": 1208925819614629174706176,
+            "numerator": 596168651984778368664555
+          },
+          {
+            "decimal_diagnostic": 0.49313915073368175,
+            "denominator": 604462909807314587353088,
+            "numerator": 298084325992389184332285
+          }
+        ],
+        "h": 3,
+        "m": 1094,
+        "p": 8753,
+        "source_sha256": "c0aa44e7b4f7b9957bbe533ee0170aee142a301ff99a882fa92ddad0a82255f8"
+      },
+      {
+        "A": 5501,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.008510349542655537,
+          "denominator": 95466370772162246887212225136286498816,
+          "numerator": 812452184839854943485485424319977921
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.4997233215898163,
+            "denominator": 302231454903657293676544,
+            "numerator": 151032106533378393664347
+          },
+          {
+            "decimal_diagnostic": 0.4997233215898163,
+            "denominator": 1208925819614629174706176,
+            "numerator": 604128426133513574657403
+          }
+        ],
+        "h": 1,
+        "m": 2747,
+        "p": 21977,
+        "source_sha256": "59ad75b8452287c38edcfae38070b482c5930bd119292bafe505cb8fa74d3e82"
+      },
+      {
+        "A": 5501,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.00851034667383275,
+          "denominator": 95466370772162246887212225136286498816,
+          "numerator": 812451910963755138889319040509336001
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.4989901871752269,
+            "denominator": 604462909807314587353088,
+            "numerator": 301621060505234217961039
+          },
+          {
+            "decimal_diagnostic": 0.4989901871752269,
+            "denominator": 1208925819614629174706176,
+            "numerator": 603242121010468435922093
+          }
+        ],
+        "h": 3,
+        "m": 2747,
+        "p": 21977,
+        "source_sha256": "59ad75b8452287c38edcfae38070b482c5930bd119292bafe505cb8fa74d3e82"
+      },
+      {
+        "A": 22003,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.008512676118527589,
+          "denominator": 720941686143568964106897096785788928000,
+          "numerator": 6137143074485372359040894743907435859
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.49827342275535813,
+            "denominator": 1208925819614629174706176,
+            "numerator": 602375605996707949137759
+          },
+          {
+            "decimal_diagnostic": 0.49827342275535813,
+            "denominator": 604462909807314587353088,
+            "numerator": 301187802998353974568887
+          }
+        ],
+        "h": 1,
+        "m": 11000,
+        "p": 88001,
+        "source_sha256": "0fa8ac51abafa34c4d815f465dda9c20d4ebdea8a996988af5bec820dd16a0b4"
+      },
+      {
+        "A": 22003,
+        "RE2_lower": {
+          "decimal_diagnostic": 0.008512675939513284,
+          "denominator": 720941686143568964106897096785788928000,
+          "numerator": 6137142945426496486081157198149616979
+        },
+        "energy_interval": [
+          {
+            "decimal_diagnostic": 0.5000468514448965,
+            "denominator": 1208925819614629174706176,
+            "numerator": 604519549728736156807163
+          },
+          {
+            "decimal_diagnostic": 0.5000468514448965,
+            "denominator": 1208925819614629174706176,
+            "numerator": 604519549728736156807177
+          }
+        ],
+        "h": 3,
+        "m": 11000,
+        "p": 88001,
+        "source_sha256": "0fa8ac51abafa34c4d815f465dda9c20d4ebdea8a996988af5bec820dd16a0b4"
+      }
+    ],
+    "sharp_constant_interval": [
+      {
+        "decimal_diagnostic": 0.00851345015804911,
+        "denominator": 302231454903657293676544,
+        "numerator": 2573032427516953908003
+      },
+      {
+        "decimal_diagnostic": 0.00851345015804911,
+        "denominator": 2417851639229258349412352,
+        "numerator": 20584259420135631264029
+      }
+    ],
+    "source_data_status": "reused prior authentic source boxes, not fresh holdout"
+  },
+  "strict_interval_grid_points": 4093
+}

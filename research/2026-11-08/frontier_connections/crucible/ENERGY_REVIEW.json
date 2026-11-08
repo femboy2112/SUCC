@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "aligned_tail_pairs": 6,
+      "base": 2,
+      "cycle_sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+      "exact_cyclic_word_counts": 2,
+      "length": 2,
+      "matched_digit_positions_by_identity": 21,
+      "order": 1
+    },
+    {
+      "aligned_tail_pairs": 12,
+      "base": 2,
+      "cycle_sha256": "d5e2d2ac07b741be58f6b9e50ede5fdcf16f3e8053ecef9350e7744b0d8bd90c",
+      "exact_cyclic_word_counts": 6,
+      "length": 4,
+      "matched_digit_positions_by_identity": 78,
+      "order": 2
+    },
+    {
+      "aligned_tail_pairs": 24,
+      "base": 2,
+      "cycle_sha256": "6a9307cd881b2acb7e6733d04b30b78964e7e53520a453317c045aa1baad48e5",
+      "exact_cyclic_word_counts": 14,
+      "length": 8,
+      "matched_digit_positions_by_identity": 300,
+      "order": 3
+    },
+    {
+      "aligned_tail_pairs": 12,
+      "base": 4,
+      "cycle_sha256": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+      "exact_cyclic_word_counts": 4,
+      "length": 4,
+      "matched_digit_positions_by_identity": 78,
+      "order": 1
+    },
+    {
+      "aligned_tail_pairs": 48,
+      "base": 4,
+      "cycle_sha256": "e91dac5742df9d401617ef15a3ca40a1bb4a232a2615e6b2bde600e583510c2b",
+      "exact_cyclic_word_counts": 20,
+      "length": 16,
+      "matched_digit_positions_by_identity": 1176,
+      "order": 2
+    },
+    {
+      "aligned_tail_pairs": 192,
+      "base": 4,
+      "cycle_sha256": "3ee42f2ed68d0b7255ef5f8ed19a607064032feefea89411e5d5e48170fa86d4",
+      "exact_cyclic_word_counts": 84,
+      "length": 64,
+      "matched_digit_positions_by_identity": 18528,
+      "order": 3
+    },
+    {
+      "aligned_tail_pairs": 48,
+      "base": 16,
+      "cycle_sha256": "be45cb2605bf36bebde684841a28f0fd43c69850a3dce5fedba69928ee3a8991",
+      "exact_cyclic_word_counts": 16,
+      "length": 16,
+      "matched_digit_positions_by_identity": 1176,
+      "order": 1
+    },
+    {
+      "aligned_tail_pairs": 768,
+      "base": 16,
+      "cycle_sha256": "af3add29f5f713174bb346927be914d34f8c221622f0c0544ab26702bb68a603",
+      "exact_cyclic_word_counts": 272,
+      "length": 256,
+      "matched_digit_positions_by_identity": 295296,
+      "order": 2
+    },
+    {
+      "aligned_tail_pairs": 12288,
+      "base": 16,
+      "cycle_sha256": "3b46973a164bd34133c120158fc32a3d60c4526abed81c586170bd9b242574c5",
+      "exact_cyclic_word_counts": 4368,
+      "length": 4096,
+      "matched_digit_positions_by_identity": 75503616,
+      "order": 3
+    }
+  ],
+  "method": "Independent Hierholzer Euler circuit, exact counts and rational tail sums",
+  "scope": "Finite mechanism only; normality is established by the separate paper limit proof",
+  "status": "PASS_EXACT_FINITE_RE4_COMBINATORICS"
+}

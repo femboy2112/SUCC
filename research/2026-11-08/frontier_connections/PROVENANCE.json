@@ -1,0 +1,64 @@
+{
+  "RH": "OPEN",
+  "agents": [
+    "root",
+    "arithmetic_connections",
+    "observer_connections",
+    "archive_crucible"
+  ],
+  "branch": "research/learning-yoneda-source-cancellation-2026-11-07",
+  "dependencies_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/CATEGORICAL_OBSERVER_ATLAS.md": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc",
+    "docs/CLAIM_LEDGER.md": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "docs/PI_NORMALITY_FRONTIER.md": "9f7e8b10fcde7e4a74006e4da79c5c972523ab624148db925f8add399537a681",
+    "observational_succ/duck_bbp.py": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+    "observational_succ/integer_bbp_carrier.py": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-11-08/complement_budget/certified_fft.py": "5c1d5aec8a097e2d8b17a63010a654443834568376f5d609316539491274f23a",
+    "research/2026-11-08/complement_budget/results/source_1103.json": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5",
+    "research/2026-11-08/complement_budget/results/source_22003.json": "0fa8ac51abafa34c4d815f465dda9c20d4ebdea8a996988af5bec820dd16a0b4",
+    "research/2026-11-08/complement_budget/results/source_2203.json": "c0aa44e7b4f7b9957bbe533ee0170aee142a301ff99a882fa92ddad0a82255f8",
+    "research/2026-11-08/complement_budget/results/source_5501.json": "59ad75b8452287c38edcfae38070b482c5930bd119292bafe505cb8fa74d3e82",
+    "research/2026-11-08/covariance_forge/intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "research/2026-11-08/signal_frontier/prime_resonance/THEOREMS.md": "19da8fdca585c2d1212198136223b7c491877115343f8d0d2476db25a7c2cff9"
+  },
+  "environment": {
+    "mpmath": "1.4.1",
+    "numpy": "2.5.0",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  },
+  "fetched_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "independence": "Separate mathematical assignments and implementations, shared model family/repository/source receipts; not external refereeing",
+  "latest_readonly_branch_pins": {
+    "prime_three_channel_phase_tomography": "34403d5c5d0ae9f37cb78e3c9d68c1e55c11a627",
+    "theta_gamma_extruded_triangle": "9a11fb7a28c27abe702275e352c817cb7b59c51a"
+  },
+  "native_input_changes_since_start": [],
+  "new_lean_proof": false,
+  "new_source_holdout": false,
+  "pi_normality": "OPEN",
+  "proof_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "protocol_commit": "3a1d9b63",
+  "recent_remote_refs": [
+    "origin/research/theta-gamma-extruded-triangle-dual-interference-2026-11-08 9a11fb7a28c27abe702275e352c817cb7b59c51a",
+    "origin/research/prime-three-channel-phase-tomography-2026-11-08 34403d5c5d0ae9f37cb78e3c9d68c1e55c11a627",
+    "origin/research/learning-yoneda-source-cancellation-2026-11-07 3a1d9b637f4183314230d74a2717c93eb8242209",
+    "origin/research/four-pole-three-channel-poisson-matrix-2026-11-08 efcb9985d0a240ea6d5c580de97445e57f5d12b7",
+    "origin/research/xi-cayley-prime-horodisk-jensen-2026-11-08 b90a04f58ebfa8f848a114480b41c79d3990300e",
+    "origin/research/four-pole-nine-pythagorean-golden-2026-11-08 601317501bfa470c5d8d777546d90a382cb773db",
+    "origin/research/fibonacci-circle-triangle-learning-2026-11-08 07b218efadf6daa91dab6e2637485860a1b0cef2",
+    "origin 43a607818907120d4cdab73d240f5b4d7700b63f"
+  ],
+  "source_contract": "4,-2,-1,-1; poles7,4,3,2; literal U0=0; unwrapped states and carries retained",
+  "source_equal_to_fetched_main": {
+    "observational_succ/duck_bbp.py": true,
+    "observational_succ/integer_bbp_carrier.py": true,
+    "observational_succ/selected_orbit.py": true,
+    "provenance/IMPORT_MANIFEST.json": true
+  },
+  "starting_head": "525d7c87dd1016aeeea4ac9cd1366cbb935a0441"
+}
