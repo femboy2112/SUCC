@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import cmath
 from fractions import Fraction
-from math import cos, pi, sin
+from math import cos, isfinite, pi, sin
 
 
 def aperture_factor(a: float, h: int) -> complex:
@@ -54,17 +54,23 @@ def mode_recovery_and_defect(a: float, h: int,
 
 
 def evolve_mode(a: float, h: int, b: int, source_shift: float,
-                input_at_bh: tuple[complex, complex]) -> tuple[complex, complex]:
+                input_at_bh: tuple[complex, complex], *,
+                defect_squared_budget: float) -> tuple[complex, complex]:
     """D_(b,t) on a coherent input, via only two observed input responses.
 
     A noncoherent input must be REJECTED, never silently repaired via this
-    projection. Same mathematical rule works on wrong seeds: no normality.
+    projection. An explicit calibrated squared-error budget is mandatory;
+    the numerical check is not an exact or physical realization certificate.
+    Same mathematical rule works on wrong seeds: no normality.
     """
-    if type(b) is not int or b < 1 or not isinstance(source_shift,(float,int)):
-        raise ValueError("source action must be known integer multiplier and shift")
+    if type(b) is not int or b < 1 or not isinstance(source_shift,(float,int)) or not isfinite(source_shift):
+        raise ValueError("source action must be known integer multiplier and finite shift")
+    if (type(defect_squared_budget) not in (float,int)
+            or not isfinite(defect_squared_budget) or defect_squared_budget < 0):
+        raise ValueError("explicit finite nonnegative defect budget required")
     coeff, defect = mode_recovery_and_defect(a,b*h,input_at_bh)
-    if defect > 1e-16:
-        raise ValueError("unrealizable input channels: nonzero syzygy")
+    if defect > defect_squared_budget:
+        raise ValueError("observed channel defect exceeds declared budget")
     return mode_vector(a,h,cmath.exp(-2j*pi*h*source_shift)*coeff)
 
 
