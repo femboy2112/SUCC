@@ -1,0 +1,12 @@
+# The smallest verdict-changing RH research probe
+
+**Current theorem debt:** prove actual original source log `log(2xi((1-w)^-1))`, anchored at s=2 inside the true Euler horodisk, has no monodromy/zeros in full unit disk. Equivalent to RH. Euler product and functional symmetry establish it on an insufficient region.
+
+1. **Source-faithful analytic bridge:** preserve actual `(1-p^-s)^-1` on Re(s)>1 and full `s(s-1)Gamma(s/2)pi^(-s/2)` completion. Test each proposed disk continuation against exact source-germ agreement; altered half-density `(1-p^(1/2-s))` is a named hostile source, not an interchangeable normalization.
+2. **Potential first real theorem:** an explicit source-derived, independently certified bound `exp(J_xi(r))<r/r0` for one new radius pair `r0<r<1`, with complete contour quadrature/analytic truncation error including Gamma and poles. This excludes actual zeros in |w|<=r0. Extend to a sequence r0→1 *only if bounds and source provenance remain uniform*. Finite numeric Jensen=0 by itself earns no theorem.
+3. **Transported observer:** implement lawful holomorphic chart overlaps and an anchored logarithm transport along closed paths. Retain phase winding, not just `|xi|`; distinguish actual measured winding from only algebraic continuation of Euler-region log. Explicitly forbid any nontrivial zero positions as constructor inputs.
+4. **Li cross-check, NOT duplication:** compare circle log Taylor data to SUCC `euler_gamma_li_bridge.py` certified finite Stieltjes intervals and to Lagarias's completed prime+Archimedean split. A finite positive prefix is insufficient; use prior high-degree matched-source countermodels.
+5. **Hostile altered source:** changed half-density product finite zeros all on Re(s)=1/2 yet creates a new zero at s=3/2 in its infinite-prime limit. Mertens gives `log P E_P(3/2)→e^-gamma`, a robust alternative to vague 'infinite polynomial' imagery. Include fake composite six and wrong Γ, altered prime frequencies, and on-line/off-line reflection-symmetric toy polynomials.
+6. **RH handoff:** review this branch's self-contained `handoffs/rh/2026-11-08-cayley-prime-horodisk-jensen.md` against `docs/RH_HANDOFF.md`; do not directly merge into `FuckingRH` or claim its 2026 program's sign obstruction solved.
+
+**Missing proof-bearing inequality:** original-source, gamma-complete and globally valid zero-excluding Jensen/Weil/Li estimate on the full disk. **RH OPEN.**
