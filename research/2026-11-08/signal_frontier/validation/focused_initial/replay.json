@@ -1,0 +1,411 @@
+{
+  "RH": "OPEN",
+  "code_sha256": {
+    "research/2026-11-08/signal_frontier/crucible/oracle.py": "5d7231f2ce874585f427d3ff7203478e5eda39774dd05ad229839a3d18b7935a",
+    "research/2026-11-08/signal_frontier/crucible/test_oracle.py": "4721381b3e9d2808863737748b84ba14a08998dbaca04f15cb24c7a40634252b",
+    "research/2026-11-08/signal_frontier/fibonacci_covariance/observer.py": "7573c4218c8743ecb1ebb8a0c06a7b982c3c5cc5e5382732e2e88d27a0fd5f93",
+    "research/2026-11-08/signal_frontier/fibonacci_covariance/test_observer.py": "8ab1e480bde3a45c53a2526001f040f0fa7ba4a793c0c019c29f3615416f0d9b",
+    "research/2026-11-08/signal_frontier/fibonacci_geometry/numerical.py": "433dff50304306c966d4f173d4b9e1feca89c33fbec91a6f378fb59a9f1f5c04",
+    "research/2026-11-08/signal_frontier/fibonacci_geometry/oracle.py": "0061d22bab818ce3b32fa94e0846843b21e2f9ad8735916de695ef8e9d40aa10",
+    "research/2026-11-08/signal_frontier/fibonacci_geometry/test_oracle.py": "1270f5061ed5e825d51066db3fb0e86edce548f5fafd21d862bd2e2c49772785",
+    "research/2026-11-08/signal_frontier/fixed_depth/oracle.py": "8231c2e308ab207a04be8d809c6f19deb4a644a76158c745f0044d4b272932a1",
+    "research/2026-11-08/signal_frontier/fixed_depth/test_oracle.py": "3490c894ca0f28ef7a0c7783cf37559b9ac5c5690d24ef212f7b165fa03e19c0",
+    "research/2026-11-08/signal_frontier/prime_resonance/oracle.py": "9c6f3f95a43de096edce4075bbda9b5a338dabbcdf4b31f929141f5b0b4e1933",
+    "research/2026-11-08/signal_frontier/prime_resonance/pr_resonance.py": "de6096cdf5a8d98a369ec21d7b63d2e81e598a14e2a7a0535448d12b708689d2",
+    "research/2026-11-08/signal_frontier/prime_resonance/test_resonance.py": "82e82d1c4ce74bcbc368c47cceb31db10ad8311ac78685a11892b7943734fce6",
+    "research/2026-11-08/signal_frontier/referee/oracle.py": "8dee8c4538c20027dffb70aec0ca591e7ebde32c19c026b8347d7608b76eeaa4",
+    "research/2026-11-08/signal_frontier/source_probe.py": "a24f74cfbfe4192e4953435e52a317f32f166999adf32eae48a52693f320df3e",
+    "research/2026-11-08/signal_frontier/test_source_probe.py": "16ba1f2e99390a9f2f231b1c1085ee422b90433ef6efb76c79832047f12ff49a",
+    "research/2026-11-08/signal_frontier/triangle_geometry/oracle.py": "c442fd132594d050f22969cfdc5fa99602d3081689399845e73367ee1d74325a",
+    "research/2026-11-08/signal_frontier/triangle_geometry/test_oracle.py": "88dc63a78996b85328eb5448e267ed43740d036f58335d839d2cda244480e925",
+    "research/2026-11-08/signal_frontier/triangle_posterior/numerical.py": "93b0f9f36e73405b5aa93ccc8babfd79a33aa2c2107980c0128e5f6ab222a44c",
+    "research/2026-11-08/signal_frontier/triangle_posterior/oracle.py": "4a5ce70299a3bb0a26e1ff9a10457ae3b2713bfc87b24fc28cf3b5733808aac0",
+    "research/2026-11-08/signal_frontier/triangle_posterior/test_oracle.py": "9b9de657b5dffd4e3cd6e5ce61553ce995558be9b6d29949ba6af7cbd92c6a2a",
+    "research/2026-11-08/signal_frontier/triangle_referee/oracle.py": "9cb3fbbf3cc92747ded26a21397cd2bc007be952d733129ff1b2c02798d1e783",
+    "research/2026-11-08/signal_frontier/validate.py": "44f5465db3dabb795de9fe3bde5aa53fb312c963d45899e41804d356ce1b239c",
+    "research/2026-11-08/signal_frontier/verify_source.py": "38a26df029c9aa8b628df5b8592b05933540c4ec6f7b41d560bd9962d6f22240"
+  },
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "fd966b2cf20945a80cfeb43f005fdb39645be84164da0db58cd51e4340ffe2ac",
+      "name": "signal_frontier_tests",
+      "seconds": 0.20474469102919102
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/crucible",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "bba6619a73ecaa0ccc0af4bcc9a0f17597e46d141b7a5171f4b4d94de39bf89f",
+      "name": "crucible_tests",
+      "seconds": 0.24379282700829208
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_covariance",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "41019dff10536450b39198606b7683572e9ef6d79d9e16bba164ad8833634e82",
+      "name": "fibonacci_covariance_tests",
+      "seconds": 0.5996496330481023
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_geometry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "43564f97dd2d94c121f2c2f8559db36042f8530e82424dc41f3f661d08f6d74a",
+      "name": "fibonacci_geometry_tests",
+      "seconds": 0.14742567506618798
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fixed_depth",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "d4994537545bfdf96d83d5d42f079f2b0fb35d008862573f99d13f0c68a46d55",
+      "name": "fixed_depth_tests",
+      "seconds": 0.08871617703698575
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/prime_resonance",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "7f823d01560ceccabf67b27262ff2d743172e620ec1dfed0037af61383818b67",
+      "name": "prime_resonance_tests",
+      "seconds": 0.08394825807772577
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_geometry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "d31e194d6e9951ac45032e9906e17846cac02cfed483218f8c1c2fa0744a0be2",
+      "name": "triangle_geometry_tests",
+      "seconds": 0.14151152479462326
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_posterior",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "06671cf92c7626fd6580ddbd5c09b640ba003b05b54f6ff7613d2570ca17be90",
+      "name": "triangle_posterior_tests",
+      "seconds": 0.15647088806144893
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fixed_depth/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/fixed_depth_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e76eb69e02dcac9d1ff53cd2dab986a193e7aa2a8f9cec783d5417402279477d",
+      "name": "fixed_depth_oracle",
+      "seconds": 0.48420081101357937
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/crucible/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/crucible_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "crucible_oracle",
+      "seconds": 0.2013449021615088
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/prime_resonance/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/prime_resonance_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "8fcbe18cd279345605056a1ce2e48026266f62298b906c1de094ca4634544196",
+      "name": "prime_resonance_oracle",
+      "seconds": 1.587068635970354
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_geometry/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/fibonacci_geometry_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e09f03b31b5ed1cca8dc414bffc586ceb3ea168dfe13f60d946df6dcfbd440c7",
+      "name": "fibonacci_geometry_oracle",
+      "seconds": 0.22933545080013573
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_geometry/numerical.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/fibonacci_geometry_numerical.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "934da76169307c7b695770db7bc18fdfa7c27ca94122d38706f34b6123e323cc",
+      "name": "fibonacci_geometry_numerical",
+      "seconds": 0.17065889504738152
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_posterior/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/triangle_posterior_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "triangle_posterior_oracle",
+      "seconds": 0.5709074209444225
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_posterior/numerical.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/triangle_posterior_numerical.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "triangle_posterior_numerical",
+      "seconds": 4.603912400081754
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_geometry/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/triangle_geometry_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "triangle_geometry_oracle",
+      "seconds": 2.4137083529494703
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_geometry/oracle.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/triangle_geometry_numerical.json",
+        "--numerical"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "triangle_geometry_numerical",
+      "seconds": 0.1370314760133624
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_covariance/observer.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/clock"
+      ],
+      "exit_code": 0,
+      "log_sha256": "8f23c7ae32a33df63134210e72eacff09eded8c6dcd5dcfeed52886db4b8fadf",
+      "name": "fibonacci_clock_oracle",
+      "seconds": 3.2564786029979587
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/verify_source.py",
+        "--output",
+        "/tmp/succ-signal-focused-replay/source_review.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "source_independent_review",
+      "seconds": 1.6163824249524623
+    },
+    {
+      "command": [
+        "lean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/formal/FibonacciClock.lean"
+      ],
+      "exit_code": 0,
+      "log_sha256": "8018c358ef786e7f42315ea0c5268ca16359558294a5ab2fba0b3a520e4dbb72",
+      "name": "lean_clock",
+      "seconds": 1.096871865913272
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "name": "verify_provenance",
+      "seconds": 0.06641562306322157
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "name": "observer_foundations_probe",
+      "seconds": 0.1408231509849429
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "name": "ordinal_succ_report_probe",
+      "seconds": 3.703910594107583
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "whitespace",
+      "seconds": 0.014330791076645255
+    }
+  ],
+  "comparisons": [
+    {
+      "equal": true,
+      "name": "fixed_depth_oracle",
+      "retained_sha256": "e76eb69e02dcac9d1ff53cd2dab986a193e7aa2a8f9cec783d5417402279477d"
+    },
+    {
+      "equal": true,
+      "name": "crucible_oracle",
+      "retained_sha256": "05d20a60a9c59fa23a882e82f4bf78ae74589a8bbb180583932d471a85987be8"
+    },
+    {
+      "equal": true,
+      "name": "prime_resonance_oracle",
+      "retained_sha256": "fb614d413dd6548907a61503b6cae79871930dfe72197d1d0be094fbe3acc5ff"
+    },
+    {
+      "equal": true,
+      "name": "fibonacci_geometry_oracle",
+      "retained_sha256": "6c32e923aca745da852a03ddc1c8b20297807c22669d18c77cabf2174acc3e37"
+    },
+    {
+      "equal": true,
+      "name": "fibonacci_geometry_numerical",
+      "retained_sha256": "d2a3c8b6e2bdafd4c17a1ed2a560e5f4b6131ffb40c99003a207abcaa846f067"
+    },
+    {
+      "equal": true,
+      "name": "triangle_posterior_oracle",
+      "retained_sha256": "803cfe0d8ee06d1c73dac18a7580d3b13116d6e4690bf820d46797a89c35a813"
+    },
+    {
+      "equal": true,
+      "name": "triangle_posterior_numerical",
+      "retained_sha256": "a9b41de0df4d5096216f29b68610e8a0fbde8783648b49e48678d6b8ff4a958e"
+    },
+    {
+      "equal": true,
+      "name": "triangle_geometry_oracle",
+      "retained_sha256": "5124958d7f5ca30f5d27a4c5d0ad24a43d93d3c56b105dc3885858800c726e60"
+    },
+    {
+      "equal": true,
+      "name": "triangle_geometry_numerical",
+      "retained_sha256": "a14cf0959bcd39495959e6782df8d02e0a97831f8c002af16d4d62e939fdeac1"
+    },
+    {
+      "equal": true,
+      "name": "clock_oracle",
+      "retained_sha256": "579c5968c5c3ca8735d26e440f7f86e45dd89a1e5d5e7b64650ea53ba5060643"
+    },
+    {
+      "equal": true,
+      "name": "source_review",
+      "retained_sha256": "e57add1e3e65f462a71be7d2e3a7b9231f14dd3cca6ba5b4882f20add8fde4fa"
+    }
+  ],
+  "full_source_replayed": false,
+  "native_executed_here": false,
+  "parent": "86327467191420d2157eeae5f4cfa1c2c62810da",
+  "pi_normality": "OPEN"
+}

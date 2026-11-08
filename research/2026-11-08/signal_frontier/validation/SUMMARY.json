@@ -1,0 +1,37 @@
+{
+  "RH": "OPEN",
+  "fibonacci_source_configs": 72,
+  "focused_all_exit_zero": true,
+  "focused_commands": 26,
+  "focused_payload_comparisons": 13,
+  "focused_tests": {
+    "crucible_tests": 7,
+    "fibonacci_covariance_tests": 7,
+    "fibonacci_geometry_tests": 7,
+    "fixed_depth_tests": 6,
+    "prime_resonance_tests": 6,
+    "signal_frontier_tests": 7,
+    "triangle_geometry_tests": 7,
+    "triangle_posterior_tests": 7
+  },
+  "lean_clock_exit_code": 0,
+  "native_suite": {
+    "errors": 1,
+    "executed": 12147,
+    "exit_code": 1,
+    "full_suite_rerun_after_env_repair": false,
+    "passed": 12146,
+    "reason": "Existing meta_choice_descent CLI cannot import repository package without PYTHONPATH. Baseline files unchanged.",
+    "resolved_group_exit_code": 0,
+    "resolved_group_tests": 11
+  },
+  "pi_normality": "OPEN",
+  "required_other_gates": {
+    "observer_foundations_probe": 0,
+    "ordinal_succ_report_probe": 0,
+    "verify_provenance": 0
+  },
+  "root_source_configs": 90,
+  "scope": "Results belong to pinned research worktree, not newly fetched main test tree",
+  "unique_focused_test_total": 54
+}

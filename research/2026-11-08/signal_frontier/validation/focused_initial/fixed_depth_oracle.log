@@ -1,0 +1,15 @@
+{
+  "arithmetic": "fractions.Fraction; formal Q[X]/(X^n-1)",
+  "boundaries": [
+    "No finite test proves the continuum discrepancy bound.",
+    "No original-zero asymptotic cancellation asserted."
+  ],
+  "cases": 111,
+  "exact_assertions": 23224,
+  "fixed_origin_counterexample": {
+    "averaged": "1/4",
+    "fixed": "1/2"
+  },
+  "oracle_sha256": "8231c2e308ab207a04be8d809c6f19deb4a644a76158c745f0044d4b272932a1",
+  "status": "PASS"
+}
