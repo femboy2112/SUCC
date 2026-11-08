@@ -129,7 +129,9 @@ formula for a partial, adaptive or destructive observation language.
 \(s_k=k/16^N\), the calibrated pins of #542 read the hex digits of k and
 all circle states coincide at time N. Hence the residual theorem applies
 without substituting a different dynamics. Take M earlier hex data digits,
-then \(\ell=\lceil\log_{16}(4M)\rceil\) address digits (at least one).
+with a pin-only sequential menu and no access to future address digits or
+the full unwrapped state, then
+\(\ell=\lceil\log_{16}(4M)\rceil\) address digits (at least one).
 The binary target asks for the addressed bit of the earlier data; wrap extra
 addresses modulo 4M. At t=M, all \(16^M\) residuals differ: two data words
 differ in some bit, and that bit has an admissible address. Thus even this

@@ -84,7 +84,9 @@ quantifiers are ∀ fixed h≠0, ∀ε>0, ∃A0, ∀A≥A0. They have not been p
   while making the future signed mean arbitrarily close to1. The construction
   uses only the original finite source recurrence. New denominator support
   and the nonzero initial state expose it to complete source authentication.
-  It is an epoch-dependent family, not a fixed rational nonnormality theorem.
+  Combining it with PE9 proves PE14: the selected local mean tends to zero
+  while the complementary complex covariance tends to1. It is an
+  epoch-dependent family, not a fixed rational nonnormality theorem.
 - **Continuum sensor cost (SP3):** for all initial probability laws, exact
   complex Fourier sensors |h|≤H at times0,…,N have future two-tone minimax
   error Θ(sqrt(min(16^k/H,1))) at N+k, uniformly in finite N. Explicit positive

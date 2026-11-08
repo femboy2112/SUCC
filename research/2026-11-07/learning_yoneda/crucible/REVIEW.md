@@ -38,6 +38,50 @@ errors and any finite memory. Its exact interval-based receipt uses authentic
 BBP alpha; the proof does not assume policy continuity. Exact initial-source
 attestation remains outside the observation model and defeats the counterfeit.
 
-No claimed original-zero signed upper bound, LS proof, H2* proof or π-normality
-proof survived because none was produced. This is a statement about this round,
+No full real-circle original-zero signed upper bound, LS proof, H2* proof or
+π-normality proof was produced in this initial audit. This is a statement about that audit,
 not an impossibility theorem for future arithmetic research. π and RH remain OPEN.
+
+## Follow-up: maximal covariance despite proved local prime cancellation
+
+**Verdict: the proposed PE-06 corollary follows from AR-01–02 and PE9.** This is
+a paper audit of that implication; it does not independently reprove the BK or
+PNT/AP imports behind PE9, and it triggers no numerical or native suite rerun.
+
+Fix J,K, eta=1/8 and a finite set P0 of **odd primes**. At each sufficiently large
+A set B=2A−1, L=A, and let P contain P0 and every odd prime at most 8B. AR-01
+constructs one positive rational s_A. Since p_A≤4A≤8B, its p_A-principal parts
+agree with the original ones at every time, including [A,2A). Consequently the
+shadow local factor has exactly the same vanishing mean as in PE9.
+
+For each fixed nonzero integer h, write
+
+    δ_(A,h) = 2π²h² [1/(225(A+1)^4)
+                 + (1−256^(−A))/(64 A (1−1/256))],
+    z_A = p_A^(−gamma) + epsilon_A.
+
+AR gives Re W_A(h;s_A)≥1−δ_(A,h). Since W is an average of unit complex numbers,
+|W|≤1, and therefore **|W−1|≤sqrt(2δ_(A,h))**. This step is required to upgrade
+the real-part bound to complex convergence. With the explicitly bilinear
+covariance Cov=E(ab)−Ea Eb, exact phase factorization and |Eb|≤1 give
+
+    |Cov_A(shadow)−1| ≤ sqrt(2δ_(A,h)) + z_A → 0.
+
+The shadow covariance thus approaches 1 while its actual selected local-prime
+mean tends to zero. This has the maximal possible limiting modulus: the complex
+Cauchy–Schwarz inequality gives |Cov|≤sqrt((1−|Ea|²)(1−|Eb|²))≤1. As a further
+consequence, the complementary marginal also tends to zero, despite the product
+mean tending to one; no independence can be inferred from marginal decay.
+
+The same s_A construction works simultaneously for every fixed h because its
+definition does not depend on h. No growing-frequency claim is made. Negative h
+are handled by complex conjugation. The early lifted prefix tends uniformly to
+the zero prefix for fixed J, and eventually preserves all its integer carries.
+The finite prime set may grow with A without changing that bound.
+
+**Scope retained:** this is ∀A∃s_A, not one fixed nonnormal rational seed. Every
+counterfeit has U0=s_A≠0 and introduces a conductor prime outside the original
+support through B; either exact zero attestation or a no-new-primes test rejects
+it. It does not refute PE9 or the zero-source covariance conjecture. It strengthens
+the obstruction to promoting true local cancellation plus finite-history
+authentication into global real-circle cancellation.

@@ -10,6 +10,7 @@ it is not Lean certification or external peer review. Claim IDs are local.
 | PE10–PE11 | Original Weyl mean equals selected bilinear complement covariance +o(1) | PROVED PAPER | Exact rational principal-part factorization and PE9 |
 | PE12 | Selected complement covariance tends to zero for every fixed h≠0 | OPEN | No upper decay estimate derived; equivalent remaining gate |
 | PE13 | Same-forcing rational controls have identical local phases and positive large covariance | PROVED PAPER + EXACT INSTANCES | Three signed rational lower certificates; wrong initial seeds |
+| PE14 | Finite-authentication fibers admit vanishing selected local means but complex complement covariance tending to1 | PROVED PAPER | AR + PE9; one wrong seed per epoch, valid for every fixed h; exact source support rejects it |
 | AR1–AR4 | Simultaneous finite real-history/odd-place/2-adic authentication can coexist with near-coherent future epoch | PROVED PAPER + EXACT INSTANCES | Four preregistered holdouts; no fixed-seed nonnormality conclusion |
 | SP1–SP2 | Reconciled coherent two-tone inverse and sharp half-aperture ×16 conditioning | AUDITED INHERITED | Proper aperture, distributional derivative, compatible positive law range |
 | SP3 | Continuum finite-bandwidth minimax prediction cost | PROVED PAPER + EXACT INSTANCES | All probability laws, arbitrary finite history, exact complex sensors |

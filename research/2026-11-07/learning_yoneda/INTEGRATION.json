@@ -1,0 +1,15 @@
+{
+  "proof_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "final_fetched_main": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "observed_utc": "2026-11-08T04:56:54.928924+00:00",
+  "baseline_rebased": false,
+  "initial_research_commit": "cf058d7ddeee8c623f2a45694bcc058cf94b85cb",
+  "draft_pr": "https://github.com/femboy2112/SUCC/pull/544",
+  "coordination_comment": "https://github.com/femboy2112/SUCC/pull/529#issuecomment-6717432691",
+  "scope": "All changes inside research/2026-11-07/learning_yoneda/; main, shared source contracts and source PR branches untouched",
+  "final_code_matches_successful_scoped_replay": true,
+  "full_native_tests": 12147,
+  "native_exit_code": 0,
+  "native_scope": "Unchanged pinned main package/tests, distinct from 35 new focused tests",
+  "hosted_ci": "Initial research commit has mixed completed-success and in-progress runs; final validation commit must be checked separately. No final hosted success claimed."
+}

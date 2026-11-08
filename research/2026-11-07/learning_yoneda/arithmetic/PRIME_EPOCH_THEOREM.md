@@ -239,6 +239,44 @@ to full real cancellation without the selected complementary-phase condition.
 They change the seed and introduce a new conductor, so exact source selection
 rejects them. They do not refute PE12 for literal zero.
 
+## PE-06. Asymptotically maximal covariance inside finite-authentication fibers
+
+Fix a finite prefix J, a real tolerance rho>0 and any finite set P0 of odd
+primes. At each sufficiently large A take L=A, B=2A-1, eta=1/8, let P contain
+P0 and every odd prime<=8B, and choose any finite 2-adic precision K_A>=0.
+AR1 constructs a positive rational seed s_A. Its earlier real history is
+rho-close to zero's, its carries through J agree exactly, and its P-principal
+parts and prescribed 2-adic residues agree at every time. These claims hold
+eventually because the AR2 error tends to0 independently of P and K_A.
+
+Since p_A<=4A<=8B, the selected local factor is **exactly the same** for the
+shadow and original orbit. For each fixed integer h!=0 put
+
+\[
+\delta_{A,h}=2\pi^2h^2\left(\frac1{225(A+1)^4}
++\frac{1-256^{-A}}{64A(1-1/256)}\right).
+\]
+
+AR4 gives Re W_A(h;s_A)>=1-delta_(A,h). Since |W_A|<=1, it follows that
+|W_A-1|^2<=2(1-Re W_A)<=2delta_(A,h). Define the shadow complement using
+U_n(s_A) in PE10. Its local mean is bounded by PE9, so
+
+\[
+\boxed{\left|\operatorname{Cov}_A(a,b^{(s_A)})-1\right|
+\le\sqrt{2\delta_{A,h}}+p_A^{-\gamma}+\varepsilon_A\longrightarrow0.}
+\tag{PE14}
+\]
+
+Thus true all-epoch local cancellation coexists with asymptotically maximal
+complex bilinear covariance on these finite-authentication fibers. One seed
+per epoch works for every fixed h; no seed is chosen separately by frequency.
+Every seed is nonzero and has new denominator support, so literal-zero or
+complete-support authentication rejects it. This is **forall A exists s_A**,
+not one nonnormal rational seed or a counterexample to PE12 for zero. It is
+a quantitative obstruction to replacing exact source selection by the listed
+finite observations. The crucible independently checked this corollary's
+complex convergence step and quantifiers; it is a paper result, not Lean.
+
 ## Dependencies and status
 
 - Original poles, U0=0, unwrapped recurrence: pinned main and #529's canonical

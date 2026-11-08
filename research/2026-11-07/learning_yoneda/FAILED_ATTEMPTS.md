@@ -4,7 +4,7 @@
 |---|---|---|
 | Closed calibrated loops select the original phase | Seed charge vanishes; s*=−π/16 has the same forcing-only holonomies | Refuted; open anchored charge must be retained |
 | Enough finite arithmetic/history authentication forces mixing | AR explicit rational seeds preserve finite odd-prime principal parts, 2-adic precision and early carries while a future epoch is near coherent | Refuted at finite resolution; exact U0 and full support reject controls |
-| Small p-local mean forces small real mean | PE13 controls give positive signed covariance despite identical source-prime phases | Refuted without complement decorrelation |
+| Small p-local mean forces small real mean | PE13 finite controls and PE14 family have identical source-prime phases, local mean tending to0 and covariance tending to1 | Refuted without complement decorrelation; seeds depend on epoch |
 | Elementary Gauss bound alone pays every prime-epoch marginal | p=641 has ord16=16 and sqrt(p)/16>1 | Insufficient; final PE proof explicitly imports BK with order>p^(1/3) |
 | Strong multiplicative-order theorem is needed for the selector | Elementary product bound excludes only O(x^(2/3)) bad primes, enough for PNT/AP | Abandoned stronger import; no Erdős–Murty, Artin or GRH dependency |
 | Positive learned-cell energy implies negative global cross terms | SP4 conditional variance is nonnegative even on coherent controls | Refuted; all cross terms retained |
