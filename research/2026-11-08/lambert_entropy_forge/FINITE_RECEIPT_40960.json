@@ -1,0 +1,4211 @@
+{
+  "baseline_controls": {
+    "constant": {
+      "D": {
+        "denominator": 1,
+        "numerator": 1677312000
+      },
+      "D_div_n": {
+        "denominator": 1,
+        "numerator": 40950
+      },
+      "collision_sum": 1677721600,
+      "energy": {
+        "denominator": 1,
+        "numerator": 4095
+      },
+      "max_count": 40960,
+      "max_count_over_average": 4096.0,
+      "missing": 4095,
+      "renyi_deficit": 8.317766166719343,
+      "shannon_deficit": 8.317766166719343,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 838635525
+      },
+      "types": 4096,
+      "unique": 1
+    },
+    "period16": {
+      "D": {
+        "denominator": 1,
+        "numerator": 104448000
+      },
+      "D_div_n": {
+        "denominator": 1,
+        "numerator": 2550
+      },
+      "collision_sum": 104857600,
+      "energy": {
+        "denominator": 1,
+        "numerator": 255
+      },
+      "max_count": 2560,
+      "max_count_over_average": 256.0,
+      "missing": 4080,
+      "renyi_deficit": 5.545177444479562,
+      "shannon_deficit": 5.545177444479561,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 52203525
+      },
+      "types": 4096,
+      "unique": 16
+    },
+    "sorted": {
+      "D": {
+        "denominator": 1,
+        "numerator": 104299514
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 52149757
+      },
+      "collision_sum": 104709114,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 52149757
+      },
+      "max_count": 2600,
+      "max_count_over_average": 260.0,
+      "missing": 4048,
+      "renyi_deficit": 5.543760368055413,
+      "shannon_deficit": 5.538338391716961,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 52129282
+      },
+      "types": 4096,
+      "unique": 48
+    }
+  },
+  "caveat": "Shuffles/ iid coupons are reference models, not source-derived distributions",
+  "checkpoints": {
+    "16384": {
+      "clock": {
+        "continuous_depth": 2.7419911321406203,
+        "continuous_types": 2003.02474479172,
+        "horizon": 16384,
+        "integer_depth": 2,
+        "integer_types": 256,
+        "w": 8.179629354356106
+      },
+      "depth": {
+        "1": {
+          "D": {
+            "denominator": 1,
+            "numerator": 10954
+          },
+          "D_div_n": {
+            "denominator": 8192,
+            "numerator": 5477
+          },
+          "collision_sum": 16788170,
+          "energy": {
+            "denominator": 8388608,
+            "numerator": 5477
+          },
+          "max_count": 1066,
+          "max_count_over_average": 1.041015625,
+          "missing": 0,
+          "renyi_deficit": 0.0006526962263373514,
+          "shannon_deficit": 0.0003282137893978465,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -2203
+          },
+          "types": 16,
+          "unique": 16
+        },
+        "2": {
+          "D": {
+            "denominator": 1,
+            "numerator": 16018
+          },
+          "D_div_n": {
+            "denominator": 8192,
+            "numerator": 8009
+          },
+          "collision_sum": 1064594,
+          "energy": {
+            "denominator": 524288,
+            "numerator": 8009
+          },
+          "max_count": 91,
+          "max_count_over_average": 1.421875,
+          "missing": 0,
+          "renyi_deficit": 0.015160452586411811,
+          "shannon_deficit": 0.007635318449079165,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -151
+          },
+          "types": 256,
+          "unique": 256
+        },
+        "3": {
+          "D": {
+            "denominator": 1,
+            "numerator": 16026
+          },
+          "D_div_n": {
+            "denominator": 8192,
+            "numerator": 8013
+          },
+          "collision_sum": 81562,
+          "energy": {
+            "denominator": 32768,
+            "numerator": 8013
+          },
+          "max_count": 13,
+          "max_count_over_average": 3.25,
+          "missing": 69,
+          "renyi_deficit": 0.21876385725303524,
+          "shannon_deficit": 0.12980533293460184,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -177
+          },
+          "types": 4096,
+          "unique": 4027
+        },
+        "4": {
+          "D": {
+            "denominator": 1,
+            "numerator": 16218
+          },
+          "D_div_n": {
+            "denominator": 8192,
+            "numerator": 8109
+          },
+          "collision_sum": 20314,
+          "energy": {
+            "denominator": 2048,
+            "numerator": 8109
+          },
+          "max_count": 4,
+          "max_count_over_average": 16.0,
+          "missing": 50980,
+          "renyi_deficit": 1.6012994157801028,
+          "shannon_deficit": 1.5452632904003885,
+          "signed_collision_term": {
+            "denominator": 8,
+            "numerator": -663
+          },
+          "types": 65536,
+          "unique": 14556
+        }
+      },
+      "entropy_bounds": [
+        {
+          "k": 2,
+          "pinsker_l1_upper": 0.12312778965940958,
+          "proved_lower_bound": 0.000656427578795693,
+          "renyi_deficit_k": 0.015160452586411811,
+          "shannon_deficit_t": 0.0003282137893978465,
+          "t": 1
+        },
+        {
+          "k": 2,
+          "pinsker_l1_upper": 0.17412899004135876,
+          "proved_lower_bound": 0.007635318449079165,
+          "renyi_deficit_k": 0.015160452586411811,
+          "shannon_deficit_t": 0.007635318449079165,
+          "t": 2
+        }
+      ]
+    },
+    "20480": {
+      "clock": {
+        "continuous_depth": 2.813799381572126,
+        "continuous_types": 2444.28623775698,
+        "horizon": 20480,
+        "integer_depth": 2,
+        "integer_types": 256,
+        "w": 8.378724096893679
+      },
+      "depth": {
+        "1": {
+          "D": {
+            "denominator": 1,
+            "numerator": 14296
+          },
+          "D_div_n": {
+            "denominator": 2560,
+            "numerator": 1787
+          },
+          "collision_sum": 26228696,
+          "energy": {
+            "denominator": 3276800,
+            "numerator": 1787
+          },
+          "max_count": 1332,
+          "max_count_over_average": 1.040625,
+          "missing": 0,
+          "renyi_deficit": 0.0005452004723030939,
+          "shannon_deficit": 0.00027342720731837744,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -2452
+          },
+          "types": 16,
+          "unique": 16
+        },
+        "2": {
+          "D": {
+            "denominator": 1,
+            "numerator": 20112
+          },
+          "D_div_n": {
+            "denominator": 1280,
+            "numerator": 1257
+          },
+          "collision_sum": 1658512,
+          "energy": {
+            "denominator": 102400,
+            "numerator": 1257
+          },
+          "max_count": 104,
+          "max_count_over_average": 1.3,
+          "missing": 0,
+          "renyi_deficit": 0.012200658969465875,
+          "shannon_deficit": 0.0061459158995358365,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -144
+          },
+          "types": 256,
+          "unique": 256
+        },
+        "3": {
+          "D": {
+            "denominator": 1,
+            "numerator": 19848
+          },
+          "D_div_n": {
+            "denominator": 2560,
+            "numerator": 2481
+          },
+          "collision_sum": 122248,
+          "energy": {
+            "denominator": 12800,
+            "numerator": 2481
+          },
+          "max_count": 14,
+          "max_count_over_average": 2.8,
+          "missing": 28,
+          "renyi_deficit": 0.17716505569754867,
+          "shannon_deficit": 0.1018775663925151,
+          "signed_collision_term": {
+            "denominator": 2,
+            "numerator": -627
+          },
+          "types": 4096,
+          "unique": 4068
+        },
+        "4": {
+          "D": {
+            "denominator": 1,
+            "numerator": 20262
+          },
+          "D_div_n": {
+            "denominator": 10240,
+            "numerator": 10131
+          },
+          "collision_sum": 26662,
+          "energy": {
+            "denominator": 3200,
+            "numerator": 10131
+          },
+          "max_count": 5,
+          "max_count_over_average": 16.0,
+          "missing": 47859,
+          "renyi_deficit": 1.426941340325859,
+          "shannon_deficit": 1.3600431697444026,
+          "signed_collision_term": {
+            "denominator": 32,
+            "numerator": -3483
+          },
+          "types": 65536,
+          "unique": 17677
+        }
+      },
+      "entropy_bounds": [
+        {
+          "k": 2,
+          "pinsker_l1_upper": 0.11045659314620325,
+          "proved_lower_bound": 0.0005468544146367549,
+          "renyi_deficit_k": 0.012200658969465875,
+          "shannon_deficit_t": 0.00027342720731837744,
+          "t": 1
+        },
+        {
+          "k": 2,
+          "pinsker_l1_upper": 0.1562092120808877,
+          "proved_lower_bound": 0.0061459158995358365,
+          "renyi_deficit_k": 0.012200658969465875,
+          "shannon_deficit_t": 0.0061459158995358365,
+          "t": 2
+        }
+      ]
+    },
+    "32768": {
+      "clock": {
+        "continuous_depth": 2.965636203588589,
+        "continuous_types": 3723.7611277293977,
+        "horizon": 32768,
+        "integer_depth": 2,
+        "integer_types": 256,
+        "w": 8.799705157237256
+      },
+      "depth": {
+        "1": {
+          "D": {
+            "denominator": 1,
+            "numerator": 16966
+          },
+          "D_div_n": {
+            "denominator": 16384,
+            "numerator": 8483
+          },
+          "collision_sum": 67125830,
+          "energy": {
+            "denominator": 33554432,
+            "numerator": 8483
+          },
+          "max_count": 2102,
+          "max_count_over_average": 1.0263671875,
+          "missing": 0,
+          "renyi_deficit": 0.0002527811489679644,
+          "shannon_deficit": 0.00012683429002935398,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -6877
+          },
+          "types": 16,
+          "unique": 16
+        },
+        "2": {
+          "D": {
+            "denominator": 1,
+            "numerator": 33112
+          },
+          "D_div_n": {
+            "denominator": 4096,
+            "numerator": 4139
+          },
+          "collision_sum": 4227416,
+          "energy": {
+            "denominator": 524288,
+            "numerator": 4139
+          },
+          "max_count": 158,
+          "max_count_over_average": 1.234375,
+          "missing": 0,
+          "renyi_deficit": 0.00786351733919877,
+          "shannon_deficit": 0.00395209035527877,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": 236
+          },
+          "types": 256,
+          "unique": 256
+        },
+        "3": {
+          "D": {
+            "denominator": 1,
+            "numerator": 32624
+          },
+          "D_div_n": {
+            "denominator": 2048,
+            "numerator": 2039
+          },
+          "collision_sum": 294768,
+          "energy": {
+            "denominator": 16384,
+            "numerator": 2039
+          },
+          "max_count": 20,
+          "max_count_over_average": 2.5,
+          "missing": 0,
+          "renyi_deficit": 0.11729463515827458,
+          "shannon_deficit": 0.06354587335681572,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -68
+          },
+          "types": 4096,
+          "unique": 4096
+        },
+        "4": {
+          "D": {
+            "denominator": 1,
+            "numerator": 32584
+          },
+          "D_div_n": {
+            "denominator": 4096,
+            "numerator": 4073
+          },
+          "collision_sum": 48968,
+          "energy": {
+            "denominator": 2048,
+            "numerator": 4073
+          },
+          "max_count": 5,
+          "max_count_over_average": 10.0,
+          "missing": 39681,
+          "renyi_deficit": 1.0948617746916713,
+          "shannon_deficit": 1.0037746483226577,
+          "signed_collision_term": {
+            "denominator": 4,
+            "numerator": -367
+          },
+          "types": 65536,
+          "unique": 25855
+        }
+      },
+      "entropy_bounds": [
+        {
+          "k": 2,
+          "pinsker_l1_upper": 0.08867647568097624,
+          "proved_lower_bound": 0.00025366858005870796,
+          "renyi_deficit_k": 0.00786351733919877,
+          "shannon_deficit_t": 0.00012683429002935398,
+          "t": 1
+        },
+        {
+          "k": 2,
+          "pinsker_l1_upper": 0.12540747457148455,
+          "proved_lower_bound": 0.00395209035527877,
+          "renyi_deficit_k": 0.00786351733919877,
+          "shannon_deficit_t": 0.00395209035527877,
+          "t": 2
+        }
+      ]
+    },
+    "36864": {
+      "clock": {
+        "continuous_depth": 3.003805737099407,
+        "continuous_types": 4139.4487694597965,
+        "horizon": 36864,
+        "integer_depth": 3,
+        "integer_types": 4096,
+        "w": 8.905533575382503
+      },
+      "depth": {
+        "1": {
+          "D": {
+            "denominator": 1,
+            "numerator": 18778
+          },
+          "D_div_n": {
+            "denominator": 18432,
+            "numerator": 9389
+          },
+          "collision_sum": 84953434,
+          "energy": {
+            "denominator": 42467328,
+            "numerator": 9389
+          },
+          "max_count": 2346,
+          "max_count_over_average": 1.0182291666666667,
+          "missing": 0,
+          "renyi_deficit": 0.00022106317254470953,
+          "shannon_deficit": 0.00011105344884931867,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -7891
+          },
+          "types": 16,
+          "unique": 16
+        },
+        "2": {
+          "D": {
+            "denominator": 1,
+            "numerator": 35590
+          },
+          "D_div_n": {
+            "denominator": 18432,
+            "numerator": 17795
+          },
+          "collision_sum": 5344006,
+          "energy": {
+            "denominator": 2654208,
+            "numerator": 17795
+          },
+          "max_count": 173,
+          "max_count_over_average": 1.2013888888888888,
+          "missing": 0,
+          "renyi_deficit": 0.006682073320915709,
+          "shannon_deficit": 0.003347540064408072,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -565
+          },
+          "types": 256,
+          "unique": 256
+        },
+        "3": {
+          "D": {
+            "denominator": 1,
+            "numerator": 36588
+          },
+          "D_div_n": {
+            "denominator": 3072,
+            "numerator": 3049
+          },
+          "collision_sum": 368364,
+          "energy": {
+            "denominator": 27648,
+            "numerator": 3049
+          },
+          "max_count": 21,
+          "max_count_over_average": 2.3333333333333335,
+          "missing": 0,
+          "renyi_deficit": 0.10461153732690193,
+          "shannon_deficit": 0.056071444060490805,
+          "signed_collision_term": {
+            "denominator": 2,
+            "numerator": -267
+          },
+          "types": 4096,
+          "unique": 4096
+        },
+        "4": {
+          "D": {
+            "denominator": 1,
+            "numerator": 36636
+          },
+          "D_div_n": {
+            "denominator": 3072,
+            "numerator": 3053
+          },
+          "collision_sum": 57372,
+          "energy": {
+            "denominator": 1728,
+            "numerator": 3053
+          },
+          "max_count": 5,
+          "max_count_over_average": 8.88888888888889,
+          "missing": 37258,
+          "renyi_deficit": 1.0176850592621025,
+          "shannon_deficit": 0.9208588429658686,
+          "signed_collision_term": {
+            "denominator": 32,
+            "numerator": -3639
+          },
+          "types": 65536,
+          "unique": 28278
+        }
+      },
+      "entropy_bounds": [
+        {
+          "k": 3,
+          "pinsker_l1_upper": 0.2640852606348966,
+          "proved_lower_bound": 0.000333160346547956,
+          "renyi_deficit_k": 0.10461153732690193,
+          "shannon_deficit_t": 0.00011105344884931867,
+          "t": 1
+        },
+        {
+          "k": 3,
+          "pinsker_l1_upper": 0.45740908894971016,
+          "proved_lower_bound": 0.003347540064408072,
+          "renyi_deficit_k": 0.10461153732690193,
+          "shannon_deficit_t": 0.003347540064408072,
+          "t": 2
+        },
+        {
+          "k": 3,
+          "pinsker_l1_upper": 0.45740908894971016,
+          "proved_lower_bound": 0.056071444060490805,
+          "renyi_deficit_k": 0.10461153732690193,
+          "shannon_deficit_t": 0.056071444060490805,
+          "t": 3
+        }
+      ]
+    },
+    "40960": {
+      "clock": {
+        "continuous_depth": 3.0379884259834493,
+        "continuous_types": 4550.955310127834,
+        "horizon": 40960,
+        "integer_depth": 3,
+        "integer_types": 4096,
+        "w": 9.00030811307823
+      },
+      "depth": {
+        "1": {
+          "D": {
+            "denominator": 1,
+            "numerator": 15258
+          },
+          "D_div_n": {
+            "denominator": 20480,
+            "numerator": 7629
+          },
+          "collision_sum": 104872858,
+          "energy": {
+            "denominator": 52428800,
+            "numerator": 7629
+          },
+          "max_count": 2602,
+          "max_count_over_average": 1.01640625,
+          "missing": 0,
+          "renyi_deficit": 0.0001455010414074031,
+          "shannon_deficit": 7.289935217569266e-05,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -11571
+          },
+          "types": 16,
+          "unique": 16
+        },
+        "2": {
+          "D": {
+            "denominator": 1,
+            "numerator": 39240
+          },
+          "D_div_n": {
+            "denominator": 1024,
+            "numerator": 981
+          },
+          "collision_sum": 6592840,
+          "energy": {
+            "denominator": 163840,
+            "numerator": 981
+          },
+          "max_count": 189,
+          "max_count_over_average": 1.18125,
+          "missing": 0,
+          "renyi_deficit": 0.005969694690540263,
+          "shannon_deficit": 0.00299589723195659,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -780
+          },
+          "types": 256,
+          "unique": 256
+        },
+        "3": {
+          "D": {
+            "denominator": 1,
+            "numerator": 40850
+          },
+          "D_div_n": {
+            "denominator": 4096,
+            "numerator": 4085
+          },
+          "collision_sum": 450450,
+          "energy": {
+            "denominator": 8192,
+            "numerator": 817
+          },
+          "max_count": 23,
+          "max_count_over_average": 2.3,
+          "missing": 0,
+          "renyi_deficit": 0.09506600937215094,
+          "shannon_deficit": 0.05056122666965024,
+          "signed_collision_term": {
+            "denominator": 1,
+            "numerator": -50
+          },
+          "types": 4096,
+          "unique": 4096
+        },
+        "4": {
+          "D": {
+            "denominator": 1,
+            "numerator": 40780
+          },
+          "D_div_n": {
+            "denominator": 2048,
+            "numerator": 2039
+          },
+          "collision_sum": 66380,
+          "energy": {
+            "denominator": 1280,
+            "numerator": 2039
+          },
+          "max_count": 6,
+          "max_count_over_average": 9.6,
+          "missing": 35016,
+          "renyi_deficit": 0.9528034548063117,
+          "shannon_deficit": 0.8508464068159594,
+          "signed_collision_term": {
+            "denominator": 16,
+            "numerator": -1435
+          },
+          "types": 65536,
+          "unique": 30520
+        }
+      },
+      "entropy_bounds": [
+        {
+          "k": 3,
+          "pinsker_l1_upper": 0.25174856420928,
+          "proved_lower_bound": 0.00021869805652707797,
+          "renyi_deficit_k": 0.09506600937215094,
+          "shannon_deficit_t": 7.289935217569266e-05,
+          "t": 1
+        },
+        {
+          "k": 3,
+          "pinsker_l1_upper": 0.43604130394298873,
+          "proved_lower_bound": 0.00299589723195659,
+          "renyi_deficit_k": 0.09506600937215094,
+          "shannon_deficit_t": 0.00299589723195659,
+          "t": 2
+        },
+        {
+          "k": 3,
+          "pinsker_l1_upper": 0.43604130394298873,
+          "proved_lower_bound": 0.05056122666965024,
+          "renyi_deficit_k": 0.09506600937215094,
+          "shannon_deficit_t": 0.05056122666965024,
+          "t": 3
+        }
+      ]
+    }
+  },
+  "coupon_reference": [
+    {
+      "continuum_expected_missing": 0.5614594835668851,
+      "depth": 1,
+      "mean_complete_draws": 54.09166389166389,
+      "mean_missing_at_mean": 0.48752813801793515,
+      "types": 16
+    },
+    {
+      "continuum_expected_missing": 0.5614594835668851,
+      "depth": 2,
+      "mean_complete_draws": 1567.8323104812237,
+      "mean_missing_at_mean": 0.5536844323811871,
+      "types": 256
+    },
+    {
+      "continuum_expected_missing": 0.5614594835668851,
+      "depth": 3,
+      "mean_complete_draws": 36434.345561974056,
+      "mean_missing_at_mean": 0.5607816106265103,
+      "types": 4096
+    }
+  ],
+  "digit_count": 40960,
+  "digit_sha256": "c4010a291cf411147dd1a6a65104bd4cf995a4d931b6dfefb9fd9277f8434527",
+  "lag_observations": {
+    "authentic": {
+      "D": {
+        "denominator": 1024,
+        "numerator": 41826303
+      },
+      "computed_lags": [
+        {
+          "lag": 1,
+          "matching": 5,
+          "pairs": 40957,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -20477
+          }
+        },
+        {
+          "lag": 2,
+          "matching": 11,
+          "pairs": 40956,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 1025
+          }
+        },
+        {
+          "lag": 3,
+          "matching": 6,
+          "pairs": 40955,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -16379
+          }
+        },
+        {
+          "lag": 4,
+          "matching": 6,
+          "pairs": 40954,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -8189
+          }
+        },
+        {
+          "lag": 5,
+          "matching": 10,
+          "pairs": 40953,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 7
+          }
+        },
+        {
+          "lag": 6,
+          "matching": 8,
+          "pairs": 40952,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": -1023
+          }
+        },
+        {
+          "lag": 7,
+          "matching": 12,
+          "pairs": 40951,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 8201
+          }
+        },
+        {
+          "lag": 8,
+          "matching": 9,
+          "pairs": 40950,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -2043
+          }
+        },
+        {
+          "lag": 9,
+          "matching": 4,
+          "pairs": 40949,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -24565
+          }
+        },
+        {
+          "lag": 10,
+          "matching": 11,
+          "pairs": 40948,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 1027
+          }
+        },
+        {
+          "lag": 11,
+          "matching": 9,
+          "pairs": 40947,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4083
+          }
+        },
+        {
+          "lag": 12,
+          "matching": 11,
+          "pairs": 40946,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 2055
+          }
+        },
+        {
+          "lag": 13,
+          "matching": 6,
+          "pairs": 40945,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -16369
+          }
+        },
+        {
+          "lag": 14,
+          "matching": 9,
+          "pairs": 40944,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": -255
+          }
+        },
+        {
+          "lag": 15,
+          "matching": 11,
+          "pairs": 40943,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4113
+          }
+        },
+        {
+          "lag": 16,
+          "matching": 9,
+          "pairs": 40942,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -2039
+          }
+        },
+        {
+          "lag": 17,
+          "matching": 9,
+          "pairs": 40941,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4077
+          }
+        },
+        {
+          "lag": 18,
+          "matching": 9,
+          "pairs": 40940,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -1019
+          }
+        },
+        {
+          "lag": 19,
+          "matching": 4,
+          "pairs": 40939,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -24555
+          }
+        },
+        {
+          "lag": 20,
+          "matching": 8,
+          "pairs": 40938,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -4085
+          }
+        },
+        {
+          "lag": 21,
+          "matching": 9,
+          "pairs": 40937,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4073
+          }
+        },
+        {
+          "lag": 22,
+          "matching": 8,
+          "pairs": 40936,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": -1021
+          }
+        },
+        {
+          "lag": 23,
+          "matching": 9,
+          "pairs": 40935,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4071
+          }
+        },
+        {
+          "lag": 24,
+          "matching": 5,
+          "pairs": 40934,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -10227
+          }
+        },
+        {
+          "lag": 25,
+          "matching": 14,
+          "pairs": 40933,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 16411
+          }
+        },
+        {
+          "lag": 26,
+          "matching": 13,
+          "pairs": 40932,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 3079
+          }
+        },
+        {
+          "lag": 27,
+          "matching": 20,
+          "pairs": 40931,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 40989
+          }
+        },
+        {
+          "lag": 28,
+          "matching": 9,
+          "pairs": 40930,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -2033
+          }
+        },
+        {
+          "lag": 29,
+          "matching": 8,
+          "pairs": 40929,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8161
+          }
+        },
+        {
+          "lag": 30,
+          "matching": 10,
+          "pairs": 40928,
+          "signed_excess": {
+            "denominator": 128,
+            "numerator": 1
+          }
+        },
+        {
+          "lag": 31,
+          "matching": 6,
+          "pairs": 40927,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -16351
+          }
+        },
+        {
+          "lag": 32,
+          "matching": 8,
+          "pairs": 40926,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -4079
+          }
+        },
+        {
+          "lag": 33,
+          "matching": 7,
+          "pairs": 40925,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -12253
+          }
+        },
+        {
+          "lag": 34,
+          "matching": 6,
+          "pairs": 40924,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -4087
+          }
+        },
+        {
+          "lag": 35,
+          "matching": 11,
+          "pairs": 40923,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4133
+          }
+        },
+        {
+          "lag": 36,
+          "matching": 14,
+          "pairs": 40922,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 8211
+          }
+        },
+        {
+          "lag": 37,
+          "matching": 12,
+          "pairs": 40921,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 8231
+          }
+        },
+        {
+          "lag": 38,
+          "matching": 14,
+          "pairs": 40920,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 2053
+          }
+        },
+        {
+          "lag": 39,
+          "matching": 15,
+          "pairs": 40919,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 20521
+          }
+        },
+        {
+          "lag": 40,
+          "matching": 14,
+          "pairs": 40918,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 8213
+          }
+        },
+        {
+          "lag": 41,
+          "matching": 13,
+          "pairs": 40917,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 12331
+          }
+        },
+        {
+          "lag": 42,
+          "matching": 11,
+          "pairs": 40916,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 1035
+          }
+        },
+        {
+          "lag": 43,
+          "matching": 10,
+          "pairs": 40915,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 45
+          }
+        },
+        {
+          "lag": 44,
+          "matching": 6,
+          "pairs": 40914,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -8169
+          }
+        },
+        {
+          "lag": 45,
+          "matching": 9,
+          "pairs": 40913,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4049
+          }
+        },
+        {
+          "lag": 46,
+          "matching": 6,
+          "pairs": 40912,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": -1021
+          }
+        },
+        {
+          "lag": 47,
+          "matching": 5,
+          "pairs": 40911,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -20431
+          }
+        },
+        {
+          "lag": 48,
+          "matching": 9,
+          "pairs": 40910,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -2023
+          }
+        },
+        {
+          "lag": 49,
+          "matching": 10,
+          "pairs": 40909,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 51
+          }
+        },
+        {
+          "lag": 50,
+          "matching": 13,
+          "pairs": 40908,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 3085
+          }
+        },
+        {
+          "lag": 51,
+          "matching": 8,
+          "pairs": 40907,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8139
+          }
+        },
+        {
+          "lag": 52,
+          "matching": 6,
+          "pairs": 40906,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -8165
+          }
+        },
+        {
+          "lag": 53,
+          "matching": 9,
+          "pairs": 40905,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4041
+          }
+        },
+        {
+          "lag": 54,
+          "matching": 10,
+          "pairs": 40904,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 7
+          }
+        },
+        {
+          "lag": 55,
+          "matching": 10,
+          "pairs": 40903,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 57
+          }
+        },
+        {
+          "lag": 56,
+          "matching": 7,
+          "pairs": 40902,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -6115
+          }
+        },
+        {
+          "lag": 57,
+          "matching": 9,
+          "pairs": 40901,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4037
+          }
+        },
+        {
+          "lag": 58,
+          "matching": 10,
+          "pairs": 40900,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 15
+          }
+        },
+        {
+          "lag": 59,
+          "matching": 11,
+          "pairs": 40899,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4157
+          }
+        },
+        {
+          "lag": 60,
+          "matching": 10,
+          "pairs": 40898,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 31
+          }
+        },
+        {
+          "lag": 61,
+          "matching": 4,
+          "pairs": 40897,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -24513
+          }
+        },
+        {
+          "lag": 62,
+          "matching": 7,
+          "pairs": 40896,
+          "signed_excess": {
+            "denominator": 64,
+            "numerator": -191
+          }
+        },
+        {
+          "lag": 63,
+          "matching": 4,
+          "pairs": 40895,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -24511
+          }
+        },
+        {
+          "lag": 64,
+          "matching": 12,
+          "pairs": 40894,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 4129
+          }
+        }
+      ],
+      "computed_lags_signed_total": {
+        "denominator": 128,
+        "numerator": -6587
+      },
+      "residual_lags_signed_total": {
+        "denominator": 4096,
+        "numerator": 1885
+      },
+      "total_matches_unordered": 204724,
+      "windows": 40958
+    },
+    "constant": {
+      "D": {
+        "denominator": 1024,
+        "numerator": 1717399760895
+      },
+      "computed_lags": [
+        {
+          "lag": 1,
+          "matching": 40957,
+          "pairs": 40957,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167718915
+          }
+        },
+        {
+          "lag": 2,
+          "matching": 40956,
+          "pairs": 40956,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41928705
+          }
+        },
+        {
+          "lag": 3,
+          "matching": 40955,
+          "pairs": 40955,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167710725
+          }
+        },
+        {
+          "lag": 4,
+          "matching": 40954,
+          "pairs": 40954,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83853315
+          }
+        },
+        {
+          "lag": 5,
+          "matching": 40953,
+          "pairs": 40953,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167702535
+          }
+        },
+        {
+          "lag": 6,
+          "matching": 40952,
+          "pairs": 40952,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20962305
+          }
+        },
+        {
+          "lag": 7,
+          "matching": 40951,
+          "pairs": 40951,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167694345
+          }
+        },
+        {
+          "lag": 8,
+          "matching": 40950,
+          "pairs": 40950,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83845125
+          }
+        },
+        {
+          "lag": 9,
+          "matching": 40949,
+          "pairs": 40949,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167686155
+          }
+        },
+        {
+          "lag": 10,
+          "matching": 40948,
+          "pairs": 40948,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41920515
+          }
+        },
+        {
+          "lag": 11,
+          "matching": 40947,
+          "pairs": 40947,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167677965
+          }
+        },
+        {
+          "lag": 12,
+          "matching": 40946,
+          "pairs": 40946,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83836935
+          }
+        },
+        {
+          "lag": 13,
+          "matching": 40945,
+          "pairs": 40945,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167669775
+          }
+        },
+        {
+          "lag": 14,
+          "matching": 40944,
+          "pairs": 40944,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": 10479105
+          }
+        },
+        {
+          "lag": 15,
+          "matching": 40943,
+          "pairs": 40943,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167661585
+          }
+        },
+        {
+          "lag": 16,
+          "matching": 40942,
+          "pairs": 40942,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83828745
+          }
+        },
+        {
+          "lag": 17,
+          "matching": 40941,
+          "pairs": 40941,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167653395
+          }
+        },
+        {
+          "lag": 18,
+          "matching": 40940,
+          "pairs": 40940,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41912325
+          }
+        },
+        {
+          "lag": 19,
+          "matching": 40939,
+          "pairs": 40939,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167645205
+          }
+        },
+        {
+          "lag": 20,
+          "matching": 40938,
+          "pairs": 40938,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83820555
+          }
+        },
+        {
+          "lag": 21,
+          "matching": 40937,
+          "pairs": 40937,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167637015
+          }
+        },
+        {
+          "lag": 22,
+          "matching": 40936,
+          "pairs": 40936,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20954115
+          }
+        },
+        {
+          "lag": 23,
+          "matching": 40935,
+          "pairs": 40935,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167628825
+          }
+        },
+        {
+          "lag": 24,
+          "matching": 40934,
+          "pairs": 40934,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83812365
+          }
+        },
+        {
+          "lag": 25,
+          "matching": 40933,
+          "pairs": 40933,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167620635
+          }
+        },
+        {
+          "lag": 26,
+          "matching": 40932,
+          "pairs": 40932,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41904135
+          }
+        },
+        {
+          "lag": 27,
+          "matching": 40931,
+          "pairs": 40931,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167612445
+          }
+        },
+        {
+          "lag": 28,
+          "matching": 40930,
+          "pairs": 40930,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83804175
+          }
+        },
+        {
+          "lag": 29,
+          "matching": 40929,
+          "pairs": 40929,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167604255
+          }
+        },
+        {
+          "lag": 30,
+          "matching": 40928,
+          "pairs": 40928,
+          "signed_excess": {
+            "denominator": 128,
+            "numerator": 5237505
+          }
+        },
+        {
+          "lag": 31,
+          "matching": 40927,
+          "pairs": 40927,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167596065
+          }
+        },
+        {
+          "lag": 32,
+          "matching": 40926,
+          "pairs": 40926,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83795985
+          }
+        },
+        {
+          "lag": 33,
+          "matching": 40925,
+          "pairs": 40925,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167587875
+          }
+        },
+        {
+          "lag": 34,
+          "matching": 40924,
+          "pairs": 40924,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41895945
+          }
+        },
+        {
+          "lag": 35,
+          "matching": 40923,
+          "pairs": 40923,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167579685
+          }
+        },
+        {
+          "lag": 36,
+          "matching": 40922,
+          "pairs": 40922,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83787795
+          }
+        },
+        {
+          "lag": 37,
+          "matching": 40921,
+          "pairs": 40921,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167571495
+          }
+        },
+        {
+          "lag": 38,
+          "matching": 40920,
+          "pairs": 40920,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20945925
+          }
+        },
+        {
+          "lag": 39,
+          "matching": 40919,
+          "pairs": 40919,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167563305
+          }
+        },
+        {
+          "lag": 40,
+          "matching": 40918,
+          "pairs": 40918,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83779605
+          }
+        },
+        {
+          "lag": 41,
+          "matching": 40917,
+          "pairs": 40917,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167555115
+          }
+        },
+        {
+          "lag": 42,
+          "matching": 40916,
+          "pairs": 40916,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41887755
+          }
+        },
+        {
+          "lag": 43,
+          "matching": 40915,
+          "pairs": 40915,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167546925
+          }
+        },
+        {
+          "lag": 44,
+          "matching": 40914,
+          "pairs": 40914,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83771415
+          }
+        },
+        {
+          "lag": 45,
+          "matching": 40913,
+          "pairs": 40913,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167538735
+          }
+        },
+        {
+          "lag": 46,
+          "matching": 40912,
+          "pairs": 40912,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": 10470915
+          }
+        },
+        {
+          "lag": 47,
+          "matching": 40911,
+          "pairs": 40911,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167530545
+          }
+        },
+        {
+          "lag": 48,
+          "matching": 40910,
+          "pairs": 40910,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83763225
+          }
+        },
+        {
+          "lag": 49,
+          "matching": 40909,
+          "pairs": 40909,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167522355
+          }
+        },
+        {
+          "lag": 50,
+          "matching": 40908,
+          "pairs": 40908,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41879565
+          }
+        },
+        {
+          "lag": 51,
+          "matching": 40907,
+          "pairs": 40907,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167514165
+          }
+        },
+        {
+          "lag": 52,
+          "matching": 40906,
+          "pairs": 40906,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83755035
+          }
+        },
+        {
+          "lag": 53,
+          "matching": 40905,
+          "pairs": 40905,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167505975
+          }
+        },
+        {
+          "lag": 54,
+          "matching": 40904,
+          "pairs": 40904,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20937735
+          }
+        },
+        {
+          "lag": 55,
+          "matching": 40903,
+          "pairs": 40903,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167497785
+          }
+        },
+        {
+          "lag": 56,
+          "matching": 40902,
+          "pairs": 40902,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83746845
+          }
+        },
+        {
+          "lag": 57,
+          "matching": 40901,
+          "pairs": 40901,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167489595
+          }
+        },
+        {
+          "lag": 58,
+          "matching": 40900,
+          "pairs": 40900,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41871375
+          }
+        },
+        {
+          "lag": 59,
+          "matching": 40899,
+          "pairs": 40899,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167481405
+          }
+        },
+        {
+          "lag": 60,
+          "matching": 40898,
+          "pairs": 40898,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83738655
+          }
+        },
+        {
+          "lag": 61,
+          "matching": 40897,
+          "pairs": 40897,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167473215
+          }
+        },
+        {
+          "lag": 62,
+          "matching": 40896,
+          "pairs": 40896,
+          "signed_excess": {
+            "denominator": 64,
+            "numerator": 2616705
+          }
+        },
+        {
+          "lag": 63,
+          "matching": 40895,
+          "pairs": 40895,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167465025
+          }
+        },
+        {
+          "lag": 64,
+          "matching": 40894,
+          "pairs": 40894,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83730465
+          }
+        }
+      ],
+      "computed_lags_signed_total": {
+        "denominator": 128,
+        "numerator": 335179845
+      },
+      "residual_lags_signed_total": {
+        "denominator": 4096,
+        "numerator": 3423989905245
+      },
+      "total_matches_unordered": 838758403,
+      "windows": 40958
+    },
+    "period16": {
+      "D": {
+        "denominator": 1024,
+        "numerator": 106944309247
+      },
+      "computed_lags": [
+        {
+          "lag": 1,
+          "matching": 0,
+          "pairs": 40957,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40957
+          }
+        },
+        {
+          "lag": 2,
+          "matching": 0,
+          "pairs": 40956,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10239
+          }
+        },
+        {
+          "lag": 3,
+          "matching": 0,
+          "pairs": 40955,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40955
+          }
+        },
+        {
+          "lag": 4,
+          "matching": 0,
+          "pairs": 40954,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20477
+          }
+        },
+        {
+          "lag": 5,
+          "matching": 0,
+          "pairs": 40953,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40953
+          }
+        },
+        {
+          "lag": 6,
+          "matching": 0,
+          "pairs": 40952,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": -5119
+          }
+        },
+        {
+          "lag": 7,
+          "matching": 0,
+          "pairs": 40951,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40951
+          }
+        },
+        {
+          "lag": 8,
+          "matching": 0,
+          "pairs": 40950,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20475
+          }
+        },
+        {
+          "lag": 9,
+          "matching": 0,
+          "pairs": 40949,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40949
+          }
+        },
+        {
+          "lag": 10,
+          "matching": 0,
+          "pairs": 40948,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10237
+          }
+        },
+        {
+          "lag": 11,
+          "matching": 0,
+          "pairs": 40947,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40947
+          }
+        },
+        {
+          "lag": 12,
+          "matching": 0,
+          "pairs": 40946,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20473
+          }
+        },
+        {
+          "lag": 13,
+          "matching": 0,
+          "pairs": 40945,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40945
+          }
+        },
+        {
+          "lag": 14,
+          "matching": 0,
+          "pairs": 40944,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": -2559
+          }
+        },
+        {
+          "lag": 15,
+          "matching": 0,
+          "pairs": 40943,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40943
+          }
+        },
+        {
+          "lag": 16,
+          "matching": 40942,
+          "pairs": 40942,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83828745
+          }
+        },
+        {
+          "lag": 17,
+          "matching": 0,
+          "pairs": 40941,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40941
+          }
+        },
+        {
+          "lag": 18,
+          "matching": 0,
+          "pairs": 40940,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10235
+          }
+        },
+        {
+          "lag": 19,
+          "matching": 0,
+          "pairs": 40939,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40939
+          }
+        },
+        {
+          "lag": 20,
+          "matching": 0,
+          "pairs": 40938,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20469
+          }
+        },
+        {
+          "lag": 21,
+          "matching": 0,
+          "pairs": 40937,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40937
+          }
+        },
+        {
+          "lag": 22,
+          "matching": 0,
+          "pairs": 40936,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": -5117
+          }
+        },
+        {
+          "lag": 23,
+          "matching": 0,
+          "pairs": 40935,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40935
+          }
+        },
+        {
+          "lag": 24,
+          "matching": 0,
+          "pairs": 40934,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20467
+          }
+        },
+        {
+          "lag": 25,
+          "matching": 0,
+          "pairs": 40933,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40933
+          }
+        },
+        {
+          "lag": 26,
+          "matching": 0,
+          "pairs": 40932,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10233
+          }
+        },
+        {
+          "lag": 27,
+          "matching": 0,
+          "pairs": 40931,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40931
+          }
+        },
+        {
+          "lag": 28,
+          "matching": 0,
+          "pairs": 40930,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20465
+          }
+        },
+        {
+          "lag": 29,
+          "matching": 0,
+          "pairs": 40929,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40929
+          }
+        },
+        {
+          "lag": 30,
+          "matching": 0,
+          "pairs": 40928,
+          "signed_excess": {
+            "denominator": 128,
+            "numerator": -1279
+          }
+        },
+        {
+          "lag": 31,
+          "matching": 0,
+          "pairs": 40927,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40927
+          }
+        },
+        {
+          "lag": 32,
+          "matching": 40926,
+          "pairs": 40926,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83795985
+          }
+        },
+        {
+          "lag": 33,
+          "matching": 0,
+          "pairs": 40925,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40925
+          }
+        },
+        {
+          "lag": 34,
+          "matching": 0,
+          "pairs": 40924,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10231
+          }
+        },
+        {
+          "lag": 35,
+          "matching": 0,
+          "pairs": 40923,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40923
+          }
+        },
+        {
+          "lag": 36,
+          "matching": 0,
+          "pairs": 40922,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20461
+          }
+        },
+        {
+          "lag": 37,
+          "matching": 0,
+          "pairs": 40921,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40921
+          }
+        },
+        {
+          "lag": 38,
+          "matching": 0,
+          "pairs": 40920,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": -5115
+          }
+        },
+        {
+          "lag": 39,
+          "matching": 0,
+          "pairs": 40919,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40919
+          }
+        },
+        {
+          "lag": 40,
+          "matching": 0,
+          "pairs": 40918,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20459
+          }
+        },
+        {
+          "lag": 41,
+          "matching": 0,
+          "pairs": 40917,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40917
+          }
+        },
+        {
+          "lag": 42,
+          "matching": 0,
+          "pairs": 40916,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10229
+          }
+        },
+        {
+          "lag": 43,
+          "matching": 0,
+          "pairs": 40915,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40915
+          }
+        },
+        {
+          "lag": 44,
+          "matching": 0,
+          "pairs": 40914,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20457
+          }
+        },
+        {
+          "lag": 45,
+          "matching": 0,
+          "pairs": 40913,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40913
+          }
+        },
+        {
+          "lag": 46,
+          "matching": 0,
+          "pairs": 40912,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": -2557
+          }
+        },
+        {
+          "lag": 47,
+          "matching": 0,
+          "pairs": 40911,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40911
+          }
+        },
+        {
+          "lag": 48,
+          "matching": 40910,
+          "pairs": 40910,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83763225
+          }
+        },
+        {
+          "lag": 49,
+          "matching": 0,
+          "pairs": 40909,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40909
+          }
+        },
+        {
+          "lag": 50,
+          "matching": 0,
+          "pairs": 40908,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10227
+          }
+        },
+        {
+          "lag": 51,
+          "matching": 0,
+          "pairs": 40907,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40907
+          }
+        },
+        {
+          "lag": 52,
+          "matching": 0,
+          "pairs": 40906,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20453
+          }
+        },
+        {
+          "lag": 53,
+          "matching": 0,
+          "pairs": 40905,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40905
+          }
+        },
+        {
+          "lag": 54,
+          "matching": 0,
+          "pairs": 40904,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": -5113
+          }
+        },
+        {
+          "lag": 55,
+          "matching": 0,
+          "pairs": 40903,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40903
+          }
+        },
+        {
+          "lag": 56,
+          "matching": 0,
+          "pairs": 40902,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20451
+          }
+        },
+        {
+          "lag": 57,
+          "matching": 0,
+          "pairs": 40901,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40901
+          }
+        },
+        {
+          "lag": 58,
+          "matching": 0,
+          "pairs": 40900,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -10225
+          }
+        },
+        {
+          "lag": 59,
+          "matching": 0,
+          "pairs": 40899,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40899
+          }
+        },
+        {
+          "lag": 60,
+          "matching": 0,
+          "pairs": 40898,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -20449
+          }
+        },
+        {
+          "lag": 61,
+          "matching": 0,
+          "pairs": 40897,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40897
+          }
+        },
+        {
+          "lag": 62,
+          "matching": 0,
+          "pairs": 40896,
+          "signed_excess": {
+            "denominator": 64,
+            "numerator": -639
+          }
+        },
+        {
+          "lag": 63,
+          "matching": 0,
+          "pairs": 40895,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -40895
+          }
+        },
+        {
+          "lag": 64,
+          "matching": 40894,
+          "pairs": 40894,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83730465
+          }
+        }
+      ],
+      "computed_lags_signed_total": {
+        "denominator": 128,
+        "numerator": 20868165
+      },
+      "residual_lags_signed_total": {
+        "denominator": 4096,
+        "numerator": 213136975709
+      },
+      "total_matches_unordered": 52403202,
+      "windows": 40958
+    },
+    "shuffled_0": {
+      "D": {
+        "denominator": 1024,
+        "numerator": 40564735
+      },
+      "computed_lags": [
+        {
+          "lag": 1,
+          "matching": 7,
+          "pairs": 40957,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -12285
+          }
+        },
+        {
+          "lag": 2,
+          "matching": 13,
+          "pairs": 40956,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 3073
+          }
+        },
+        {
+          "lag": 3,
+          "matching": 5,
+          "pairs": 40955,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -20475
+          }
+        },
+        {
+          "lag": 4,
+          "matching": 6,
+          "pairs": 40954,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -8189
+          }
+        },
+        {
+          "lag": 5,
+          "matching": 14,
+          "pairs": 40953,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 16391
+          }
+        },
+        {
+          "lag": 6,
+          "matching": 12,
+          "pairs": 40952,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 1025
+          }
+        },
+        {
+          "lag": 7,
+          "matching": 8,
+          "pairs": 40951,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8183
+          }
+        },
+        {
+          "lag": 8,
+          "matching": 10,
+          "pairs": 40950,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 5
+          }
+        },
+        {
+          "lag": 9,
+          "matching": 9,
+          "pairs": 40949,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4085
+          }
+        },
+        {
+          "lag": 10,
+          "matching": 15,
+          "pairs": 40948,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 5123
+          }
+        },
+        {
+          "lag": 11,
+          "matching": 6,
+          "pairs": 40947,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -16371
+          }
+        },
+        {
+          "lag": 12,
+          "matching": 16,
+          "pairs": 40946,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 12295
+          }
+        },
+        {
+          "lag": 13,
+          "matching": 8,
+          "pairs": 40945,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8177
+          }
+        },
+        {
+          "lag": 14,
+          "matching": 8,
+          "pairs": 40944,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": -511
+          }
+        },
+        {
+          "lag": 15,
+          "matching": 8,
+          "pairs": 40943,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8175
+          }
+        },
+        {
+          "lag": 16,
+          "matching": 12,
+          "pairs": 40942,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 4105
+          }
+        },
+        {
+          "lag": 17,
+          "matching": 5,
+          "pairs": 40941,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -20461
+          }
+        },
+        {
+          "lag": 18,
+          "matching": 13,
+          "pairs": 40940,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 3077
+          }
+        },
+        {
+          "lag": 19,
+          "matching": 5,
+          "pairs": 40939,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -20459
+          }
+        },
+        {
+          "lag": 20,
+          "matching": 12,
+          "pairs": 40938,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 4107
+          }
+        },
+        {
+          "lag": 21,
+          "matching": 14,
+          "pairs": 40937,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 16407
+          }
+        },
+        {
+          "lag": 22,
+          "matching": 15,
+          "pairs": 40936,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 2563
+          }
+        },
+        {
+          "lag": 23,
+          "matching": 15,
+          "pairs": 40935,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 20505
+          }
+        },
+        {
+          "lag": 24,
+          "matching": 9,
+          "pairs": 40934,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -2035
+          }
+        },
+        {
+          "lag": 25,
+          "matching": 11,
+          "pairs": 40933,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4123
+          }
+        },
+        {
+          "lag": 26,
+          "matching": 15,
+          "pairs": 40932,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 5127
+          }
+        },
+        {
+          "lag": 27,
+          "matching": 12,
+          "pairs": 40931,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 8221
+          }
+        },
+        {
+          "lag": 28,
+          "matching": 7,
+          "pairs": 40930,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -6129
+          }
+        },
+        {
+          "lag": 29,
+          "matching": 8,
+          "pairs": 40929,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8161
+          }
+        },
+        {
+          "lag": 30,
+          "matching": 14,
+          "pairs": 40928,
+          "signed_excess": {
+            "denominator": 128,
+            "numerator": 513
+          }
+        },
+        {
+          "lag": 31,
+          "matching": 11,
+          "pairs": 40927,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4129
+          }
+        },
+        {
+          "lag": 32,
+          "matching": 3,
+          "pairs": 40926,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -14319
+          }
+        },
+        {
+          "lag": 33,
+          "matching": 9,
+          "pairs": 40925,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -4061
+          }
+        },
+        {
+          "lag": 34,
+          "matching": 10,
+          "pairs": 40924,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 9
+          }
+        },
+        {
+          "lag": 35,
+          "matching": 11,
+          "pairs": 40923,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4133
+          }
+        },
+        {
+          "lag": 36,
+          "matching": 6,
+          "pairs": 40922,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -8173
+          }
+        },
+        {
+          "lag": 37,
+          "matching": 6,
+          "pairs": 40921,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -16345
+          }
+        },
+        {
+          "lag": 38,
+          "matching": 14,
+          "pairs": 40920,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 2053
+          }
+        },
+        {
+          "lag": 39,
+          "matching": 7,
+          "pairs": 40919,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -12247
+          }
+        },
+        {
+          "lag": 40,
+          "matching": 8,
+          "pairs": 40918,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -4075
+          }
+        },
+        {
+          "lag": 41,
+          "matching": 8,
+          "pairs": 40917,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8149
+          }
+        },
+        {
+          "lag": 42,
+          "matching": 6,
+          "pairs": 40916,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -4085
+          }
+        },
+        {
+          "lag": 43,
+          "matching": 6,
+          "pairs": 40915,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -16339
+          }
+        },
+        {
+          "lag": 44,
+          "matching": 15,
+          "pairs": 40914,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 10263
+          }
+        },
+        {
+          "lag": 45,
+          "matching": 10,
+          "pairs": 40913,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 47
+          }
+        },
+        {
+          "lag": 46,
+          "matching": 10,
+          "pairs": 40912,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": 3
+          }
+        },
+        {
+          "lag": 47,
+          "matching": 5,
+          "pairs": 40911,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -20431
+          }
+        },
+        {
+          "lag": 48,
+          "matching": 13,
+          "pairs": 40910,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 6169
+          }
+        },
+        {
+          "lag": 49,
+          "matching": 10,
+          "pairs": 40909,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 51
+          }
+        },
+        {
+          "lag": 50,
+          "matching": 14,
+          "pairs": 40908,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 4109
+          }
+        },
+        {
+          "lag": 51,
+          "matching": 11,
+          "pairs": 40907,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 4149
+          }
+        },
+        {
+          "lag": 52,
+          "matching": 8,
+          "pairs": 40906,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": -4069
+          }
+        },
+        {
+          "lag": 53,
+          "matching": 8,
+          "pairs": 40905,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -8137
+          }
+        },
+        {
+          "lag": 54,
+          "matching": 16,
+          "pairs": 40904,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 3079
+          }
+        },
+        {
+          "lag": 55,
+          "matching": 4,
+          "pairs": 40903,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -24519
+          }
+        },
+        {
+          "lag": 56,
+          "matching": 10,
+          "pairs": 40902,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 29
+          }
+        },
+        {
+          "lag": 57,
+          "matching": 10,
+          "pairs": 40901,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 59
+          }
+        },
+        {
+          "lag": 58,
+          "matching": 9,
+          "pairs": 40900,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": -1009
+          }
+        },
+        {
+          "lag": 59,
+          "matching": 10,
+          "pairs": 40899,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 61
+          }
+        },
+        {
+          "lag": 60,
+          "matching": 15,
+          "pairs": 40898,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 10271
+          }
+        },
+        {
+          "lag": 61,
+          "matching": 4,
+          "pairs": 40897,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": -24513
+          }
+        },
+        {
+          "lag": 62,
+          "matching": 10,
+          "pairs": 40896,
+          "signed_excess": {
+            "denominator": 64,
+            "numerator": 1
+          }
+        },
+        {
+          "lag": 63,
+          "matching": 16,
+          "pairs": 40895,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 24641
+          }
+        },
+        {
+          "lag": 64,
+          "matching": 14,
+          "pairs": 40894,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 8225
+          }
+        }
+      ],
+      "computed_lags_signed_total": {
+        "denominator": 128,
+        "numerator": -59
+      },
+      "residual_lags_signed_total": {
+        "denominator": 4096,
+        "numerator": -2730147
+      },
+      "total_matches_unordered": 204108,
+      "windows": 40958
+    },
+    "sorted": {
+      "D": {
+        "denominator": 1024,
+        "numerator": 106802741247
+      },
+      "computed_lags": [
+        {
+          "lag": 1,
+          "matching": 40912,
+          "pairs": 40957,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167534595
+          }
+        },
+        {
+          "lag": 2,
+          "matching": 40896,
+          "pairs": 40956,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41867265
+          }
+        },
+        {
+          "lag": 3,
+          "matching": 40880,
+          "pairs": 40955,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167403525
+          }
+        },
+        {
+          "lag": 4,
+          "matching": 40864,
+          "pairs": 40954,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83668995
+          }
+        },
+        {
+          "lag": 5,
+          "matching": 40848,
+          "pairs": 40953,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167272455
+          }
+        },
+        {
+          "lag": 6,
+          "matching": 40832,
+          "pairs": 40952,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20900865
+          }
+        },
+        {
+          "lag": 7,
+          "matching": 40816,
+          "pairs": 40951,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167141385
+          }
+        },
+        {
+          "lag": 8,
+          "matching": 40800,
+          "pairs": 40950,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83537925
+          }
+        },
+        {
+          "lag": 9,
+          "matching": 40784,
+          "pairs": 40949,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 167010315
+          }
+        },
+        {
+          "lag": 10,
+          "matching": 40768,
+          "pairs": 40948,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41736195
+          }
+        },
+        {
+          "lag": 11,
+          "matching": 40752,
+          "pairs": 40947,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166879245
+          }
+        },
+        {
+          "lag": 12,
+          "matching": 40736,
+          "pairs": 40946,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83406855
+          }
+        },
+        {
+          "lag": 13,
+          "matching": 40720,
+          "pairs": 40945,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166748175
+          }
+        },
+        {
+          "lag": 14,
+          "matching": 40704,
+          "pairs": 40944,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": 10417665
+          }
+        },
+        {
+          "lag": 15,
+          "matching": 40688,
+          "pairs": 40943,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166617105
+          }
+        },
+        {
+          "lag": 16,
+          "matching": 40672,
+          "pairs": 40942,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83275785
+          }
+        },
+        {
+          "lag": 17,
+          "matching": 40656,
+          "pairs": 40941,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166486035
+          }
+        },
+        {
+          "lag": 18,
+          "matching": 40640,
+          "pairs": 40940,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41605125
+          }
+        },
+        {
+          "lag": 19,
+          "matching": 40624,
+          "pairs": 40939,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166354965
+          }
+        },
+        {
+          "lag": 20,
+          "matching": 40608,
+          "pairs": 40938,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83144715
+          }
+        },
+        {
+          "lag": 21,
+          "matching": 40592,
+          "pairs": 40937,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166223895
+          }
+        },
+        {
+          "lag": 22,
+          "matching": 40576,
+          "pairs": 40936,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20769795
+          }
+        },
+        {
+          "lag": 23,
+          "matching": 40560,
+          "pairs": 40935,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 166092825
+          }
+        },
+        {
+          "lag": 24,
+          "matching": 40544,
+          "pairs": 40934,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 83013645
+          }
+        },
+        {
+          "lag": 25,
+          "matching": 40528,
+          "pairs": 40933,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165961755
+          }
+        },
+        {
+          "lag": 26,
+          "matching": 40512,
+          "pairs": 40932,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41474055
+          }
+        },
+        {
+          "lag": 27,
+          "matching": 40496,
+          "pairs": 40931,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165830685
+          }
+        },
+        {
+          "lag": 28,
+          "matching": 40480,
+          "pairs": 40930,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82882575
+          }
+        },
+        {
+          "lag": 29,
+          "matching": 40464,
+          "pairs": 40929,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165699615
+          }
+        },
+        {
+          "lag": 30,
+          "matching": 40448,
+          "pairs": 40928,
+          "signed_excess": {
+            "denominator": 128,
+            "numerator": 5176065
+          }
+        },
+        {
+          "lag": 31,
+          "matching": 40432,
+          "pairs": 40927,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165568545
+          }
+        },
+        {
+          "lag": 32,
+          "matching": 40416,
+          "pairs": 40926,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82751505
+          }
+        },
+        {
+          "lag": 33,
+          "matching": 40400,
+          "pairs": 40925,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165437475
+          }
+        },
+        {
+          "lag": 34,
+          "matching": 40384,
+          "pairs": 40924,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41342985
+          }
+        },
+        {
+          "lag": 35,
+          "matching": 40368,
+          "pairs": 40923,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165306405
+          }
+        },
+        {
+          "lag": 36,
+          "matching": 40352,
+          "pairs": 40922,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82620435
+          }
+        },
+        {
+          "lag": 37,
+          "matching": 40336,
+          "pairs": 40921,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165175335
+          }
+        },
+        {
+          "lag": 38,
+          "matching": 40320,
+          "pairs": 40920,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20638725
+          }
+        },
+        {
+          "lag": 39,
+          "matching": 40304,
+          "pairs": 40919,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 165044265
+          }
+        },
+        {
+          "lag": 40,
+          "matching": 40288,
+          "pairs": 40918,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82489365
+          }
+        },
+        {
+          "lag": 41,
+          "matching": 40272,
+          "pairs": 40917,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164913195
+          }
+        },
+        {
+          "lag": 42,
+          "matching": 40256,
+          "pairs": 40916,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41211915
+          }
+        },
+        {
+          "lag": 43,
+          "matching": 40240,
+          "pairs": 40915,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164782125
+          }
+        },
+        {
+          "lag": 44,
+          "matching": 40224,
+          "pairs": 40914,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82358295
+          }
+        },
+        {
+          "lag": 45,
+          "matching": 40208,
+          "pairs": 40913,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164651055
+          }
+        },
+        {
+          "lag": 46,
+          "matching": 40192,
+          "pairs": 40912,
+          "signed_excess": {
+            "denominator": 256,
+            "numerator": 10286595
+          }
+        },
+        {
+          "lag": 47,
+          "matching": 40176,
+          "pairs": 40911,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164519985
+          }
+        },
+        {
+          "lag": 48,
+          "matching": 40160,
+          "pairs": 40910,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82227225
+          }
+        },
+        {
+          "lag": 49,
+          "matching": 40144,
+          "pairs": 40909,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164388915
+          }
+        },
+        {
+          "lag": 50,
+          "matching": 40128,
+          "pairs": 40908,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 41080845
+          }
+        },
+        {
+          "lag": 51,
+          "matching": 40112,
+          "pairs": 40907,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164257845
+          }
+        },
+        {
+          "lag": 52,
+          "matching": 40096,
+          "pairs": 40906,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 82096155
+          }
+        },
+        {
+          "lag": 53,
+          "matching": 40080,
+          "pairs": 40905,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 164126775
+          }
+        },
+        {
+          "lag": 54,
+          "matching": 40064,
+          "pairs": 40904,
+          "signed_excess": {
+            "denominator": 512,
+            "numerator": 20507655
+          }
+        },
+        {
+          "lag": 55,
+          "matching": 40048,
+          "pairs": 40903,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 163995705
+          }
+        },
+        {
+          "lag": 56,
+          "matching": 40032,
+          "pairs": 40902,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 81965085
+          }
+        },
+        {
+          "lag": 57,
+          "matching": 40016,
+          "pairs": 40901,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 163864635
+          }
+        },
+        {
+          "lag": 58,
+          "matching": 40000,
+          "pairs": 40900,
+          "signed_excess": {
+            "denominator": 1024,
+            "numerator": 40949775
+          }
+        },
+        {
+          "lag": 59,
+          "matching": 39984,
+          "pairs": 40899,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 163733565
+          }
+        },
+        {
+          "lag": 60,
+          "matching": 39968,
+          "pairs": 40898,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 81834015
+          }
+        },
+        {
+          "lag": 61,
+          "matching": 39952,
+          "pairs": 40897,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 163602495
+          }
+        },
+        {
+          "lag": 62,
+          "matching": 39936,
+          "pairs": 40896,
+          "signed_excess": {
+            "denominator": 64,
+            "numerator": 2555265
+          }
+        },
+        {
+          "lag": 63,
+          "matching": 39920,
+          "pairs": 40895,
+          "signed_excess": {
+            "denominator": 4096,
+            "numerator": 163471425
+          }
+        },
+        {
+          "lag": 64,
+          "matching": 39904,
+          "pairs": 40894,
+          "signed_excess": {
+            "denominator": 2048,
+            "numerator": 81702945
+          }
+        }
+      ],
+      "computed_lags_signed_total": {
+        "denominator": 128,
+        "numerator": 330940485
+      },
+      "residual_lags_signed_total": {
+        "denominator": 4096,
+        "numerator": 202931525469
+      },
+      "total_matches_unordered": 52334077,
+      "windows": 40958
+    }
+  },
+  "max_tail_refinement": 24,
+  "old_baseline_sha256": "4c00dfdde55b749bdfb8e219df8116314111566f1c9711c7ee062d345d3321e1",
+  "parent": "44a4a96d2180a66524f882e4a1d50309fc8c97a9",
+  "protocol_commit": "c207e377143818f95ec12957849834e1d3113661",
+  "refinements": 0,
+  "schema": "SUCC-LW-HOLDOUT-1",
+  "scope": "OBSERVED FINITE; pi base16 normality OPEN",
+  "shuffle_seed": 20261108,
+  "shuffled_controls": [
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 39618
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 19809
+      },
+      "collision_sum": 449218,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 19809
+      },
+      "index": 0,
+      "max_count": 22,
+      "max_count_over_average": 2.2,
+      "missing": 0,
+      "renyi_deficit": 0.09232721957391556,
+      "shannon_deficit": 0.04941774125446585,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -666
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 40290
+      },
+      "D_div_n": {
+        "denominator": 4096,
+        "numerator": 4029
+      },
+      "collision_sum": 449890,
+      "energy": {
+        "denominator": 40960,
+        "numerator": 4029
+      },
+      "index": 1,
+      "max_count": 24,
+      "max_count_over_average": 2.4,
+      "missing": 0,
+      "renyi_deficit": 0.09382203471321002,
+      "shannon_deficit": 0.049567193106986096,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -330
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 41888
+      },
+      "D_div_n": {
+        "denominator": 1280,
+        "numerator": 1309
+      },
+      "collision_sum": 451488,
+      "energy": {
+        "denominator": 12800,
+        "numerator": 1309
+      },
+      "index": 2,
+      "max_count": 24,
+      "max_count_over_average": 2.4,
+      "missing": 0,
+      "renyi_deficit": 0.09736772070544916,
+      "shannon_deficit": 0.051934586775802316,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 469
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 39378
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 19689
+      },
+      "collision_sum": 448978,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 19689
+      },
+      "index": 3,
+      "max_count": 25,
+      "max_count_over_average": 2.5,
+      "missing": 0,
+      "renyi_deficit": 0.09179281504369761,
+      "shannon_deficit": 0.04896822815189772,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -786
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 39120
+      },
+      "D_div_n": {
+        "denominator": 512,
+        "numerator": 489
+      },
+      "collision_sum": 448720,
+      "energy": {
+        "denominator": 5120,
+        "numerator": 489
+      },
+      "index": 4,
+      "max_count": 21,
+      "max_count_over_average": 2.1,
+      "missing": 0,
+      "renyi_deficit": 0.09121801147478341,
+      "shannon_deficit": 0.048425239956571886,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -915
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 41476
+      },
+      "D_div_n": {
+        "denominator": 10240,
+        "numerator": 10369
+      },
+      "collision_sum": 451076,
+      "energy": {
+        "denominator": 102400,
+        "numerator": 10369
+      },
+      "index": 5,
+      "max_count": 23,
+      "max_count_over_average": 2.3,
+      "missing": 1,
+      "renyi_deficit": 0.09645476599283853,
+      "shannon_deficit": 0.05172033803774667,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 263
+      },
+      "types": 4096,
+      "unique": 4095
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 39850
+      },
+      "D_div_n": {
+        "denominator": 4096,
+        "numerator": 3985
+      },
+      "collision_sum": 449450,
+      "energy": {
+        "denominator": 8192,
+        "numerator": 797
+      },
+      "index": 6,
+      "max_count": 22,
+      "max_count_over_average": 2.2,
+      "missing": 1,
+      "renyi_deficit": 0.09284353929411027,
+      "shannon_deficit": 0.04991730833678254,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -550
+      },
+      "types": 4096,
+      "unique": 4095
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 42362
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 21181
+      },
+      "collision_sum": 451962,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 21181
+      },
+      "index": 7,
+      "max_count": 27,
+      "max_count_over_average": 2.7,
+      "missing": 0,
+      "renyi_deficit": 0.09841703177632546,
+      "shannon_deficit": 0.05267715129267181,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 706
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 40878
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 20439
+      },
+      "collision_sum": 450478,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 20439
+      },
+      "index": 8,
+      "max_count": 23,
+      "max_count_over_average": 2.3,
+      "missing": 0,
+      "renyi_deficit": 0.09512816750245434,
+      "shannon_deficit": 0.050998892557831965,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -36
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 39782
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 19891
+      },
+      "collision_sum": 449382,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 19891
+      },
+      "index": 9,
+      "max_count": 21,
+      "max_count_over_average": 2.1,
+      "missing": 0,
+      "renyi_deficit": 0.09269223181923229,
+      "shannon_deficit": 0.049490772044121556,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -584
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 39916
+      },
+      "D_div_n": {
+        "denominator": 10240,
+        "numerator": 9979
+      },
+      "collision_sum": 449516,
+      "energy": {
+        "denominator": 102400,
+        "numerator": 9979
+      },
+      "index": 10,
+      "max_count": 21,
+      "max_count_over_average": 2.1,
+      "missing": 0,
+      "renyi_deficit": 0.09299037465855912,
+      "shannon_deficit": 0.04964372923810956,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": -517
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 41690
+      },
+      "D_div_n": {
+        "denominator": 4096,
+        "numerator": 4169
+      },
+      "collision_sum": 451290,
+      "energy": {
+        "denominator": 40960,
+        "numerator": 4169
+      },
+      "index": 11,
+      "max_count": 21,
+      "max_count_over_average": 2.1,
+      "missing": 0,
+      "renyi_deficit": 0.09692907465254398,
+      "shannon_deficit": 0.05197877003082496,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 370
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 41106
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 20553
+      },
+      "collision_sum": 450706,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 20553
+      },
+      "index": 12,
+      "max_count": 24,
+      "max_count_over_average": 2.4,
+      "missing": 0,
+      "renyi_deficit": 0.0956341685074983,
+      "shannon_deficit": 0.0508958855179209,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 78
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 41072
+      },
+      "D_div_n": {
+        "denominator": 2560,
+        "numerator": 2567
+      },
+      "collision_sum": 450672,
+      "energy": {
+        "denominator": 25600,
+        "numerator": 2567
+      },
+      "index": 13,
+      "max_count": 23,
+      "max_count_over_average": 2.3,
+      "missing": 0,
+      "renyi_deficit": 0.09555872845900336,
+      "shannon_deficit": 0.05104831293642498,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 61
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 42160
+      },
+      "D_div_n": {
+        "denominator": 512,
+        "numerator": 527
+      },
+      "collision_sum": 451760,
+      "energy": {
+        "denominator": 5120,
+        "numerator": 527
+      },
+      "index": 14,
+      "max_count": 24,
+      "max_count_over_average": 2.4,
+      "missing": 0,
+      "renyi_deficit": 0.09796999163928331,
+      "shannon_deficit": 0.05246408920948831,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 605
+      },
+      "types": 4096,
+      "unique": 4096
+    },
+    {
+      "D": {
+        "denominator": 1,
+        "numerator": 42298
+      },
+      "D_div_n": {
+        "denominator": 20480,
+        "numerator": 21149
+      },
+      "collision_sum": 451898,
+      "energy": {
+        "denominator": 204800,
+        "numerator": 21149
+      },
+      "index": 15,
+      "max_count": 22,
+      "max_count_over_average": 2.2,
+      "missing": 0,
+      "renyi_deficit": 0.09827541692423114,
+      "shannon_deficit": 0.0527118310032364,
+      "signed_collision_term": {
+        "denominator": 1,
+        "numerator": 674
+      },
+      "types": 4096,
+      "unique": 4096
+    }
+  ],
+  "source": "original four signed rational BBP poles and U0=0"
+}
