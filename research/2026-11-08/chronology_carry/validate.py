@@ -73,7 +73,7 @@ def main():
         (out/'SUMMARY.json').write_text(json.dumps({'starting_head':START,
             'commands':commands,'replays':comparisons,
             'focused_tests':sum(row['tests'] or 0 for row in commands),
-            'native_suite':'Separate actual run; see native_suite.log and VALIDATION.md.',
+            'native_suite':'Separate actual run; see native_corrected_environment.log and VALIDATION.md.',
             'pi_normality':'OPEN','RH':'OPEN'},indent=2,sort_keys=True)+'\n')
 
 

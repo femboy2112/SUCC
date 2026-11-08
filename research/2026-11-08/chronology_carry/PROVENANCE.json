@@ -1,5 +1,6 @@
 {
   "RH": "OPEN",
+  "balanced_sibling_readonly_pin": "90711d2e9dc73020acbc4cde1ad058b62ef54a4d",
   "branch": "research/learning-yoneda-source-cancellation-2026-11-07",
   "fetched_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
   "fresh_holdout_scope": "Source window55003..110004; earlier branch end44000; same deterministic source, not independent random sample.",
@@ -8,10 +9,12 @@
     "carry_model.py": "10089085b088ec9cd09b2b34feadb5abf2b9345f933cd04575e8cfd3e921b06d"
   },
   "main_unmodified": true,
-  "model_freeze_commit": "5e1e3fad",
+  "model_freeze_commit": "5e1e3faddb9f5ec3c6b3b0b68d3d0b593e50d939",
   "original_proof_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
   "pi_normality": "OPEN",
-  "preregistration_commit": "8c43eaf1",
+  "preregistration_commit": "8c43eaf13b0f6ae932b3bbeaa758d5df43813dae",
+  "proof_and_data_checkpoint": "ebe5c55314e41ae2592b30c6abe0ff63a7572db2",
+  "publication_fetch_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
   "raw_source_sha256": "02cc3a15ab2e40c2db5006fae961586afbbdd4df048f80dab6da6e98974f11ca",
   "readonly_input_sha256": {
     "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
@@ -33,7 +36,7 @@
   },
   "reasoner_independence": "Three fronts and root share model family/repository; separate algorithms and derivations, no external scholarly refereeing.",
   "repository": "https://github.com/femboy2112/SUCC",
-  "root_instrument_commit": "04f0b41c",
+  "root_instrument_commit": "04f0b41c6b28d7d236b74fd40a9d6f8334050ec0",
   "scope": "Only this research namespace changed. No source, native, catalog or workflow modifications.",
   "source_authentication": {
     "carry_sha256": "7c6431419bcf89060a351979f5dfb547b1891b81c986de763a5ee71619a45747",

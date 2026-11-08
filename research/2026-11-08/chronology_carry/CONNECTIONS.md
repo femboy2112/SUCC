@@ -29,10 +29,12 @@
    determines their unordered pair. Combined with actual time evolution and
    Haar marginals, it excludes a finite-range folded approximation of vanishing
    L1 error. Normality and infinitely many q2 clocks are explicit hypotheses.
-6. The finite Yoneda/history discipline is respected: a carry prefix maps to an
-   interval for an ancestral state; appending a carry refines that interval.
-   The source signature and forcing correction accompany this map. The current
-   state is a different target. No incompatible new category class is introduced.
+6. The finite Yoneda/history discipline is respected: for a fixed ancestral
+   time, the full carry prefix and forcing define a belief fiber by imposing
+   every retained fractional-state constraint. Appending a carry intersects
+   that fiber with another constraint. Moving the ancestral time is a different
+   target and does not assert nested intervals. The source signature and forcing
+   correction accompany each map. No incompatible new category class is introduced.
 
 ## Classical context, checked against primary records
 
