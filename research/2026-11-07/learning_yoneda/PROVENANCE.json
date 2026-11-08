@@ -1,0 +1,120 @@
+{
+  "baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "root_reads": [
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "docs/METHOD.md",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "docs/PI_NORMALITY_FRONTIER.md",
+      "sha256": "9f7e8b10fcde7e4a74006e4da79c5c972523ab624148db925f8add399537a681",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "docs/CATEGORICAL_OBSERVER_ATLAS.md",
+      "sha256": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "docs/CLAIM_LEDGER.md",
+      "sha256": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "provenance/IMPORT_MANIFEST.json",
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/selected_orbit.py",
+      "sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/operational_yoneda_descent.py",
+      "sha256": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/yoneda.py",
+      "sha256": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/carrier_relative_targets.py",
+      "sha256": "ec4b796a1787dd1a79764fee9890607fdd88d70799f5e76940fbe4608950bf3c",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/adaptive_proof_policy.py",
+      "sha256": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/noncommuting_proof_transport.py",
+      "sha256": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/interobserver_channels.py",
+      "sha256": "5a3c9d72dc84427d3bf72410f8b8ed36fcdb3fc9800c9e1f48cd85532bc88db6",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/proof_contracts.py",
+      "sha256": "85e77e3aa97d88f49eeb7ae565fae44eda8faa33ae847f7e3ac701ebd84020e2",
+      "scope": "root read required source and relevant theorem/API/claim sections; not blanket independent certification"
+    }
+  ],
+  "verified_agent_source_read_counts_by_pr": {
+    "496": 2,
+    "518": 1,
+    "521": 3,
+    "522": 1,
+    "524": 1,
+    "525": 1,
+    "527": 3,
+    "528": 2,
+    "529": 2,
+    "530": 3,
+    "532": 3,
+    "533": 1,
+    "534": 2,
+    "535": 1,
+    "536": 2,
+    "537": 2,
+    "538": 1,
+    "539": 2,
+    "540": 1,
+    "541": 2,
+    "542": 8,
+    "543": 4
+  },
+  "agent_audit_files": [
+    "arithmetic/SOURCE_READ_AUDIT.json",
+    "spectral/SOURCE_READ_AUDIT.json",
+    "crucible/source_reads.json"
+  ],
+  "source_hashes_verified": true,
+  "independence": "same model and common upstream source; separate derivations and independent arithmetic implementations, no external scholarly referee"
+}

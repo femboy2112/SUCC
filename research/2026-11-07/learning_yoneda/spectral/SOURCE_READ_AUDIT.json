@@ -1,0 +1,133 @@
+{
+  "baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "read_only_sources": [
+    {
+      "pr": 541,
+      "head": "e8a4126754dc95eddeca758ea92ead50246da630",
+      "path": "research/2026-11-07/fourier_yoneda_pinbed/THEOREMS.md",
+      "sha256": "18c0bdc53b852f875ec7b9b5aa4a310d3a794e11e3b06aa6d576b6ee31893168",
+      "bytes": 27183,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 541,
+      "head": "e8a4126754dc95eddeca758ea92ead50246da630",
+      "path": "tests/test_fourier_yoneda_pinbed.py",
+      "sha256": "a17153d2479f264938cc410c124dff12708ebe65eea435ac7322be283d585a38",
+      "bytes": 15296,
+      "audit_scope": "focused source execution"
+    },
+    {
+      "pr": 542,
+      "head": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/TWO_TONE_STABLE_ARC.md",
+      "sha256": "a033ceffc24e8aff74a30e91f108e6f4901d069b0457429324b743f445e61d3f",
+      "bytes": 13539,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 542,
+      "head": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/REALIZATION_AND_DYNAMIC_YONEDA.md",
+      "sha256": "e56398ee2116e235ebe8204252cf82e7fa6afff9296265f0699557fce8e0414b",
+      "bytes": 9314,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 542,
+      "head": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "tests/test_pinbed_oscillator_bridge.py",
+      "sha256": "9ca0470f3fa7a54a75e2f601ccd8b065e5ee96edfb9a460a7471a4ca4d9dd2ca",
+      "bytes": 8238,
+      "audit_scope": "focused source execution"
+    },
+    {
+      "pr": 542,
+      "head": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "tests/test_learning_pinbed.py",
+      "sha256": "a6af509424d08e42e1d90ad2ba8cb63f76ddc364b2550d390c99f3c0d0f16bfb",
+      "bytes": 6569,
+      "audit_scope": "focused source execution"
+    },
+    {
+      "pr": 543,
+      "head": "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc",
+      "path": "research/2026-11-07/driven_pinbed_observability/CONTINUOUS_THEOREMS.md",
+      "sha256": "d031634a95b55365f148f5a46de60bdde0036b402b1a7f0c28805264cfbb7023",
+      "bytes": 17559,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 543,
+      "head": "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc",
+      "path": "research/2026-11-07/driven_pinbed_observability/PROOF_AUDIT.md",
+      "sha256": "c7368e7f29f2cf974e12702b9eb1edb6c35105973e544abd354954a159278cfc",
+      "bytes": 3695,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 543,
+      "head": "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc",
+      "path": "observational_succ/driven_pinbed_observer.py",
+      "sha256": "4d47c84a9a7797e1522539bcaea1f51abb78e0fd51231c7a34baeae93dbc75d4",
+      "bytes": 13990,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 543,
+      "head": "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc",
+      "path": "tests/test_driven_pinbed_observer.py",
+      "sha256": "8f0470154f1829278498febc8722040e5838568a31674c550a624e78072e2257",
+      "bytes": 11702,
+      "audit_scope": "focused source execution"
+    },
+    {
+      "pr": 533,
+      "head": "34d1c1f40b34f2dcf76283f307062069c87a579c",
+      "path": "research/2026-11-06/spectral_exorcism/THEOREMS.md",
+      "sha256": "6f75e0fda3c8cefb913c7b2c8fda1e3a3cc733e56bbefc8ddad3dc88b1d77452",
+      "bytes": 10035,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 535,
+      "head": "a265269ae915641e05002e4508a3e7551ffea5cf",
+      "path": "research/2026-11-06/fejer_gamma_split/THEOREMS.md",
+      "sha256": "26b285ab8f50a1dae412b7ba48e243f28224bed99cc483ef91a8483c9c3dfbdc",
+      "bytes": 11529,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 536,
+      "head": "e463a191d82355c707662bdbfb4bf2150fdd4eb7",
+      "path": "research/2026-11-06/critical_collision/THEOREMS.md",
+      "sha256": "7ff501a12e82fc436470d1657b9a30bc37c3475e27718cb5baddf1a736059668",
+      "bytes": 8419,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 536,
+      "head": "e463a191d82355c707662bdbfb4bf2150fdd4eb7",
+      "path": "research/2026-11-06/critical_collision/SLACK_RECURSION.md",
+      "sha256": "23075e537686b7b2c5ce1538dacaab69273af35c1c5b9e6039a069734d8928ab",
+      "bytes": 4162,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 538,
+      "head": "eda162b5610d4a9d66bb3c3acbcdc728cbc0eccd",
+      "path": "research/2026-11-06/epoch_critical_transfer/THEOREMS.md",
+      "sha256": "9fa69d037e9ed3fceb0f29f1a0d1457dc54c21ce7ceea9fd4bf7e706763ebefd",
+      "bytes": 10019,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    },
+    {
+      "pr": 540,
+      "head": "298f60d826a1f733b7eb09740b94248d8e40af60",
+      "path": "research/2026-11-07/golden_aperture_fejer/THEOREMS.md",
+      "sha256": "9cb6745898b06c3ffb12613c8bf0ec5860d424b2b5afebc4f25bc62cd23a5ba4",
+      "bytes": 16291,
+      "audit_scope": "relevant proof and implementation sections reviewed"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "pr": 496,
+    "head": "a0a2619578a88182c73420901c99994699eb2024",
+    "path": "research/2026-11-04/analytic_exile/PROOFS.md",
+    "sha256": "0ac089de794354a7c68c18f2a493e9952798c15c9da360a628dc42581fa19c7f",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 496,
+    "head": "a0a2619578a88182c73420901c99994699eb2024",
+    "path": "tests/test_analytic_exile.py",
+    "sha256": "b7146cc7473c60c21a57ccaa76824bbbbeceff8d691129f1fed37c8809daf453",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 521,
+    "head": "95490b46f986532e268bbcc4b8dd17838fdf4553",
+    "path": "research/2026-11-05/critical_carry_jets/CRITICAL_CARRY.md",
+    "sha256": "711cba6e94deff0b3d671ff551bce897c5d6f63c700bb1e6ba13d262e0490fc4",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 521,
+    "head": "95490b46f986532e268bbcc4b8dd17838fdf4553",
+    "path": "research/2026-11-05/critical_carry_jets/COUNTERMODELS.md",
+    "sha256": "26de8d7f7bf75f01d473ca818b327ad91345a8e92ec6f1c5346172644a79089b",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 521,
+    "head": "95490b46f986532e268bbcc4b8dd17838fdf4553",
+    "path": "research/2026-11-05/critical_carry_jets/test_pair_carry_correlations.py",
+    "sha256": "15926b2725b55875562c56b130e5f3acb94f0c453fb42766c61d2af9663c7f18",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 527,
+    "head": "c550cd4089db0367464ff38884797e06359fbcbc",
+    "path": "research/2026-11-06/padic_boundary/THEOREMS.md",
+    "sha256": "61841a7021d127f71be9297206028ef85d71799059fdabbec94dc094773fbc39",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 527,
+    "head": "c550cd4089db0367464ff38884797e06359fbcbc",
+    "path": "research/2026-11-06/padic_boundary/test_bbp_dual_boundary.py",
+    "sha256": "c4d6f876bf85d835473a26918c849fb52bc2df0d7c2113afbed6f6c9e990d8f5",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 528,
+    "head": "45c5d41435fdf94998d81901b0e58b9fa7775106",
+    "path": "research/2026-11-06/adelic_return_bridge/THEOREMS.md",
+    "sha256": "3f3a98b2bbf95d9d43b566108d3884d0a462f47047806a5af2e3599fd2f49c16",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 528,
+    "head": "45c5d41435fdf94998d81901b0e58b9fa7775106",
+    "path": "research/2026-11-06/adelic_return_bridge/test_bridge.py",
+    "sha256": "aad7ffbdff2bb05d8b38aedecab1e51e31d122ce0b1c0d85e0b36a26dcc20e1e",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 529,
+    "head": "2016e3bd96b3aefc3902380bce8e0ca0bac9d547",
+    "path": "research/2026-11-06/odd_place_triangle/THEOREMS.md",
+    "sha256": "b7a7ac07939104e58cf68cd68dd371e59300bdfbf3c68e843da2e3c8a1b6cfba",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 529,
+    "head": "2016e3bd96b3aefc3902380bce8e0ca0bac9d547",
+    "path": "research/2026-11-06/odd_place_triangle/test_adelic_triangle.py",
+    "sha256": "e39f6e890032c6ca575d14fa4990296c3c8668525099f08cc85aadd11b2ca14d",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 530,
+    "head": "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749",
+    "path": "research/2026-11-06/triangle_signed_return/THEOREMS.md",
+    "sha256": "67a2997fa3e0cf5070b749756c00766a4fbaeae4ff6e562f6beb494dcf119a2a",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 530,
+    "head": "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749",
+    "path": "research/2026-11-06/triangle_signed_return/FIRST_MOMENT_THEOREM.md",
+    "sha256": "bdc59d2ed61c8d5126643cdce10b26fea3f067dd77e8c373b75d5545e2f33a6e",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 530,
+    "head": "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749",
+    "path": "research/2026-11-06/triangle_signed_return/test_first_moment.py",
+    "sha256": "1d0dac0e65efe5f38ae45e5efbff55b5110fedf92115f7eba3ca9721bfcf0a72",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 532,
+    "head": "f6560d9378b76ec4bca2e8b2bfbef591e0020fa3",
+    "path": "research/2026-11-06/prime_frobenius_spectral/THEOREMS.md",
+    "sha256": "1cf52deec71b1ca8a63a3b4acaa4e9e913c04693cc5327ae9ed1e65f9d0eb21a",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 532,
+    "head": "f6560d9378b76ec4bca2e8b2bfbef591e0020fa3",
+    "path": "research/2026-11-06/prime_frobenius_spectral/GALOIS_SELECTOR_THEOREM.md",
+    "sha256": "5fd5213179783249da9c4dc8aa4381a8c321e8b50c7e0a8b23c75f73eb1e61d5",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 532,
+    "head": "f6560d9378b76ec4bca2e8b2bfbef591e0020fa3",
+    "path": "research/2026-11-06/prime_frobenius_spectral/test_prime_spectral.py",
+    "sha256": "b1a8d99144d571d9c798e524b5a031f0f02f74166d8504eea54d63b60025542c",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 534,
+    "head": "ff99fa2861b370d1aac0a76f01e2d8505c5a8740",
+    "path": "research/2026-11-06/holographic_triangle/THEOREMS.md",
+    "sha256": "26a5b7cb4f690434bac28f3dae790ae19b8fadd4aa9db4c4010bf1a08ff56b3b",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 534,
+    "head": "ff99fa2861b370d1aac0a76f01e2d8505c5a8740",
+    "path": "research/2026-11-06/holographic_triangle/test_linear_depth.py",
+    "sha256": "7a7b453073a2b46cf4e21f726c5e603785835f8405d47f491ef369e48c53e9ee",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 537,
+    "head": "5dad2bd474104bfad97b1a0b3313c06521e73439",
+    "path": "research/2026-11-06/quadratic_galois_tate_bridge/RESEARCH.md",
+    "sha256": "8324391c38bb16441ee72559841336b5684ebef2c6a4ce5916177a67c80796fc",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 537,
+    "head": "5dad2bd474104bfad97b1a0b3313c06521e73439",
+    "path": "tests/test_quadratic_galois_tate_bridge.py",
+    "sha256": "58dce8e7df642488cf732af1823c50baee304e2a7473c9a9bee93fc5218b2721",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": 539,
+    "head": "c8c5cf0488b3667b0f603983e9ad3766ba78e546",
+    "path": "research/2026-11-07/harmonic_pisot_boundary/THEOREMS.md",
+    "sha256": "ac35334d683e686da1fda5ac99eff32820065be2c6a3f04039c9f87f87b1fadd",
+    "inspection": "proof and scope"
+  },
+  {
+    "pr": 539,
+    "head": "c8c5cf0488b3667b0f603983e9ad3766ba78e546",
+    "path": "tests/test_harmonic_pisot_boundary.py",
+    "sha256": "71c12a5495e263979d47c45176a34ec1c57259e67c714ae85d1e056ede7f4015",
+    "inspection": "test catalog and selected hostile/source assertion bodies; suite not rerun"
+  },
+  {
+    "pr": null,
+    "head": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+    "path": "AGENTS.md",
+    "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "inspection": "read source contract"
+  },
+  {
+    "pr": null,
+    "head": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+    "path": "docs/METHOD.md",
+    "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "inspection": "read source contract"
+  },
+  {
+    "pr": null,
+    "head": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+    "path": "observational_succ/selected_orbit.py",
+    "sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "inspection": "read source contract"
+  },
+  {
+    "pr": null,
+    "head": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+    "path": "observational_succ/duck_bbp.py",
+    "sha256": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+    "inspection": "read shared forcing implementation and exact input checks"
+  }
+]

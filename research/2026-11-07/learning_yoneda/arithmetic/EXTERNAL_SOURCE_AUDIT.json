@@ -1,0 +1,35 @@
+{
+  "BK2003": {
+    "authors": "Jean Bourgain and S. V. Konyagin",
+    "year": 2003,
+    "title": "Estimates for the number of sums and products and for exponential sums over subgroups in fields of prime order",
+    "url": "https://www.numdam.org/item/10.1016/S1631-073X(03)00281-4.pdf",
+    "doi": "10.1016/S1631-073X(03)00281-4",
+    "theorem": "2.1",
+    "printed_page": 78,
+    "pdf_sha256": "2d87a571d068007f2d6ed2657beb4e37d4dab56e858b2128852a70077dfa7fb6",
+    "checks": [
+      "arithmetic worker read primary PDF text via web tool",
+      "root downloaded and visually rendered theorem; hash supplied by root"
+    ],
+    "import": "For |G|>=p^delta, normalized nontrivial additive character sum <=p^-gamma_delta, gamma_delta>0",
+    "formal_status": "Classical imported theorem; not newly Lean checked in this work"
+  },
+  "PNT_AP": {
+    "author": "Kiran S. Kedlaya",
+    "title": "Notes on Analytic Number Theory, Primes in arithmetic progressions",
+    "url": "https://kskedlaya.org/ant/chap-primes-in-ap.html",
+    "theorem": "4.12",
+    "checks": [
+      "root checked author source",
+      "arithmetic worker independently opened and located theorem statement"
+    ],
+    "import": "For fixed coprime a,q, prime count in class a modq is asymptotic x/(phi(q) logx); apply a=1,q=8",
+    "formal_status": "Classical imported theorem; no claimed effective short-interval error"
+  },
+  "unused_order_route": {
+    "name": "Erdos-Murty order theorem",
+    "status": "NOT USED",
+    "reason": "Replaced by elementary product counting plus BK; search OCR and redirected old PDF not treated as authority"
+  }
+}

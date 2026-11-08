@@ -1,0 +1,59 @@
+{
+  "all_passed": true,
+  "commands": [
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/crucible/hostile_oracle.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda",
+      "name": "oracle",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/crucible",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda",
+      "name": "unit",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda",
+      "name": "lean_version",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "lean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/crucible/ConditionalMemory.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda",
+      "name": "lean",
+      "returncode": 0
+    }
+  ],
+  "formal_scope": "conditional memory decoder lemmas and explicit C5 only",
+  "normality_or_RH_kernel_claim": false,
+  "python": "3.12.3",
+  "sha256": {
+    "research/2026-11-07/learning_yoneda/crucible/ConditionalMemory.lean": "09dfeaa8464801a859e67aec168e3d2586492cf5a2b1bfe3eb6987242e05b18f",
+    "research/2026-11-07/learning_yoneda/crucible/HOSTILE_THEOREMS.md": "beaa3f976ff96f0bb22609909698ce86bba167851ceb1ccf99d5302ca958faf8",
+    "research/2026-11-07/learning_yoneda/crucible/PREREGISTRATION.md": "8cdf3fd0c6a931b1c4027a35f4b1a4e3a53067927f71c6f5d73d9927fd715d46",
+    "research/2026-11-07/learning_yoneda/crucible/finite_receipt.json": "64f7afa9e43b33ab77e7119365eae4af3d8303b34d351c93d9b1ff5a9e5e26f4",
+    "research/2026-11-07/learning_yoneda/crucible/hostile_oracle.py": "405b1bc328356bb6f45d7487ea79e25606f4941ba19ace7916acd4d25271394b",
+    "research/2026-11-07/learning_yoneda/crucible/test_hostile.py": "0340e6a7b40a13d344b48d543cc7e8a1b800f2e5515b5310d982b9ddfb317ad4"
+  }
+}
