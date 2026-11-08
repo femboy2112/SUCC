@@ -2401,6 +2401,24 @@
       "code": [
         "observational_succ/selected_orbit.py"
       ]
+    },
+    {
+      "namespace": "MAIN_XXI",
+      "bare_prefix": "MXXI",
+      "fq_prefix": "MXXI",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_MAIN_XXI.md"
+      ],
+      "id_count": 30,
+      "status": "RESEARCH (Operation Main XXI integration 2026-11-07; per-row statuses in supplement; same-model review only; integration-time receipt R1 for #540 GA-09); pi normality OPEN; no new proof authority",
+      "topic": "Main XXI: Fourier-Yoneda pin beds (#541/#543/#542), adelic/return/Fejer/golden chain (#525-#540), Pisot leaves (#537/#539); audited labels and scope notes",
+      "code": [
+        "observational_succ/fourier_yoneda_pinbed.py",
+        "observational_succ/driven_pinbed_observer.py",
+        "observational_succ/learning_pinbed.py",
+        "observational_succ/pinbed_oscillator_bridge.py",
+        "research/2026-11-07/main_xxi_receipts/ga09_countermodel.py"
+      ]
     }
   ],
   "resolved_collisions": [
