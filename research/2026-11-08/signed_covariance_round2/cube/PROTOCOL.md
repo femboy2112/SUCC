@@ -42,3 +42,18 @@ Fixed exact arithmetic grid:
 No empirical BK exponent will be fitted. No use of seed 1/5 as a nonnormal
 control. Every test receipt records source/code hashes, counts and exact
 parameters. Independent proofs and exact tests remain separate evidence.
+
+## Supplemental protocol: fourth-moment support refinement
+
+Written after the first cube grid passed, before executing this new oracle.
+The exact CQ1 identity at depth two suggests the stronger support budget
+`s*(1/m+delta^2)->0`, replacing `s*(1/m+delta)->0` with the same residual.
+The support implication is an analytic theorem, not a fitted numerical claim.
+
+For every source coefficient/prime pair already listed above, independently
+enumerate Fourier quadruples r1-r2+r3-r4=0 and compare their formal p-th-root
+histogram with the depth-two cube histogram. The same inputs are reused, so
+this is representation diversity, not an independent dataset. On the exact
+four-point Gaussian-rational DFT, enumerate all subsets and check
+`(sum_S |ahat|^2)^2 <= |S| sum_all |ahat|^4`, including the flat-spectrum
+case where equality holds. No new holdout thresholds will be selected.
