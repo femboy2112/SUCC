@@ -1,0 +1,201 @@
+{
+  "crt_receipts": [
+    {
+      "adelic_crt_exact": true,
+      "n": 1,
+      "odd_denominator_digits": 2
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 2,
+      "odd_denominator_digits": 4
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 5,
+      "odd_denominator_digits": 11
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 13,
+      "odd_denominator_digits": 31
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 21,
+      "odd_denominator_digits": 53
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 29,
+      "odd_denominator_digits": 70
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 37,
+      "odd_denominator_digits": 94
+    },
+    {
+      "adelic_crt_exact": true,
+      "n": 40,
+      "odd_denominator_digits": 101
+    }
+  ],
+  "hostile_second_prime": {
+    "adversarial_real_abs": 0.9999983162635911,
+    "local_abs": 0.10740801825011287,
+    "order": 37,
+    "p": 149,
+    "proved_real_lower": 0.9968864294810805,
+    "q": 1009
+  },
+  "p149_preseen_calibration": {
+    "clean_length": 56,
+    "first_residues": [
+      148,
+      133,
+      42,
+      76,
+      24,
+      86,
+      35,
+      113
+    ],
+    "gauss_bound": 0.3299069085333433,
+    "local_abs": 0.10740801825011287,
+    "next_pole": 75,
+    "order": 37,
+    "prime": 149,
+    "real_abs": 0.17040835226954132,
+    "start": 19
+  },
+  "pi_normality": "OPEN",
+  "preregistered_prime_cycles": [
+    {
+      "clean_length": 68,
+      "cross_prime": {
+        "certifiable_bound": 0.430254778636303,
+        "complement_mean_abs": 0.19459435694486252,
+        "covariance_abs": 0.13128535536799835,
+        "covariance_real": 0.03784785441304649,
+        "global_mean_abs": 0.15716348381103792,
+        "interference_real": 0.022658737439948458,
+        "local_mean_abs": 0.15308131309310094,
+        "order": 45,
+        "p": 181
+      },
+      "first_residues": [
+        180,
+        165,
+        106,
+        67,
+        167,
+        138,
+        36,
+        33
+      ],
+      "gauss_bound": 0.29896942326830467,
+      "local_abs": 0.15308131309310094,
+      "next_pole": 91,
+      "order": 45,
+      "prime": 181,
+      "real_abs": 0.15716348381103792,
+      "start": 23
+    },
+    {
+      "clean_length": 74,
+      "cross_prime": {
+        "certifiable_bound": 0.4794659521777793,
+        "complement_mean_abs": 0.0911740411034543,
+        "covariance_abs": 0.1930237307978161,
+        "covariance_real": 0.04089407898080116,
+        "global_mean_abs": 0.18375517617083717,
+        "interference_real": 0.00420628663882917,
+        "local_mean_abs": 0.12413801082241258,
+        "order": 49,
+        "p": 197
+      },
+      "first_residues": [
+        196,
+        181,
+        138,
+        41,
+        65,
+        55,
+        92,
+        93
+      ],
+      "gauss_bound": 0.2864422213799632,
+      "local_abs": 0.12413801082241258,
+      "next_pole": 99,
+      "order": 49,
+      "prime": 197,
+      "real_abs": 0.18375517617083728,
+      "start": 25
+    },
+    {
+      "clean_length": 101,
+      "cross_prime": {
+        "certifiable_bound": 0.29532911743425777,
+        "complement_mean_abs": 0.11347696877730608,
+        "covariance_abs": 0.0505347970334111,
+        "covariance_real": 0.04567646204598624,
+        "global_mean_abs": 0.05540065273339456,
+        "interference_real": -0.0034665461818357422,
+        "local_mean_abs": 0.12934524112338436,
+        "order": 67,
+        "p": 269
+      },
+      "first_residues": [
+        268,
+        253,
+        13,
+        208,
+        100,
+        255,
+        45,
+        182
+      ],
+      "gauss_bound": 0.24479432040084667,
+      "local_abs": 0.12934524112338436,
+      "next_pole": 135,
+      "order": 67,
+      "prime": 269,
+      "real_abs": 0.055400652733394534,
+      "start": 34
+    },
+    {
+      "clean_length": 110,
+      "cross_prime": {
+        "certifiable_bound": 0.2625238813072271,
+        "complement_mean_abs": 0.15594816651592724,
+        "covariance_abs": 0.02804110365484779,
+        "covariance_real": -0.005869798249590753,
+        "global_mean_abs": 0.010829457111692281,
+        "interference_real": -0.00208551648726721,
+        "local_mean_abs": 0.1294027488454302,
+        "order": 73,
+        "p": 293
+      },
+      "first_residues": [
+        292,
+        277,
+        37,
+        6,
+        96,
+        71,
+        257,
+        10
+      ],
+      "gauss_bound": 0.23448277765237932,
+      "local_abs": 0.1294027488454302,
+      "next_pole": 147,
+      "order": 73,
+      "prime": 293,
+      "real_abs": 0.010829457111692366,
+      "start": 37
+    }
+  ],
+  "selected_signed_Weyl": "OPEN",
+  "status": "OBSERVED-FINITE"
+}

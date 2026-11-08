@@ -1,0 +1,19 @@
+test_exact_original_four_poles_and_rational_tail ... ok
+test_exact_rational_upper_smaller_than_3_critical_scale ... ok
+test_fejer_pair_identity_and_kernel_baseline ... ok
+test_finite_normality_ray_certificate ... ok
+test_hilbert_source_tail_transfer_diagnostics ... ok
+test_kempner_sparse_digit_but_large_collision ... ok
+test_near_pairs_source_and_bad_controls ... ok
+test_two_place_clock_basis_isometry_and_odd_energy ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 28.558s
+
+OK
+exact Python blobs:
+experiment.py 33e17366bf484edb095e1a21309a4b1ec5713ff9
+spectral_transport.py 68f9b3356f8747c526b45479ec633413a513fef8
+test_experiment.py db5b5a214687e80c7af23efda472ac234c185a95
+
+No full SUCC native suite, Lean, hosted CI or independent refereeing certified for this PR head.

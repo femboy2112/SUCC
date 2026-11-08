@@ -1,0 +1,37 @@
+test_b2_scan_exact_simple_case (test_driven_pinbed_observer.TestDrivenPinbed.test_b2_scan_exact_simple_case) ... ok
+test_b2_scan_symmetry (test_driven_pinbed_observer.TestDrivenPinbed.test_b2_scan_symmetry) ... ok
+test_binned_character_sign_and_conjugacy (test_driven_pinbed_observer.TestDrivenPinbed.test_binned_character_sign_and_conjugacy) ... ok
+test_coherent_profile_covariance_with_exact_dft (test_driven_pinbed_observer.TestDrivenPinbed.test_coherent_profile_covariance_with_exact_dft) ... ok
+test_consistent_signed_law_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_consistent_signed_law_is_rejected) ... ok
+test_constant_unknown_complex_gain_self_calibrates (test_driven_pinbed_observer.TestDrivenPinbed.test_constant_unknown_complex_gain_self_calibrates) ... ok
+test_direct_nonnegative_phase_masks_on_four_clock (test_driven_pinbed_observer.TestDrivenPinbed.test_direct_nonnegative_phase_masks_on_four_clock) ... ok
+test_duplicate_or_missing_phase_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_duplicate_or_missing_phase_is_rejected) ... ok
+test_exact_source_replay (test_driven_pinbed_observer.TestDrivenPinbed.test_exact_source_replay) ... ok
+test_expected_source_binding (test_driven_pinbed_observer.TestDrivenPinbed.test_expected_source_binding) ... ok
+test_four_phase_demodulation (test_driven_pinbed_observer.TestDrivenPinbed.test_four_phase_demodulation) ... ok
+test_fresh_rational_holdouts (test_driven_pinbed_observer.TestDrivenPinbed.test_fresh_rational_holdouts) ... ok
+test_gain_calibration_requires_mass_reference (test_driven_pinbed_observer.TestDrivenPinbed.test_gain_calibration_requires_mass_reference) ... ok
+test_inconsistent_dc_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_inconsistent_dc_is_rejected) ... ok
+test_local_inverse_every_calibration_point (test_driven_pinbed_observer.TestDrivenPinbed.test_local_inverse_every_calibration_point) ... ok
+test_mixed_protocols_are_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_mixed_protocols_are_rejected) ... ok
+test_mixed_source_snapshots_are_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_mixed_source_snapshots_are_rejected) ... ok
+test_no_zero_or_out_of_band_scan (test_driven_pinbed_observer.TestDrivenPinbed.test_no_zero_or_out_of_band_scan) ... ok
+test_noninvertible_abstract_action_after_recovery (test_driven_pinbed_observer.TestDrivenPinbed.test_noninvertible_abstract_action_after_recovery) ... ok
+test_nonreal_phase_frame_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_nonreal_phase_frame_is_rejected) ... ok
+test_phase_order_is_labelled (test_driven_pinbed_observer.TestDrivenPinbed.test_phase_order_is_labelled) ... ok
+test_protocol_and_probability_domains (test_driven_pinbed_observer.TestDrivenPinbed.test_protocol_and_probability_domains) ... ok
+test_range_coherence_is_required_beyond_positive_inverse (test_driven_pinbed_observer.TestDrivenPinbed.test_range_coherence_is_required_beyond_positive_inverse) ... ok
+test_same_weights_different_history_are_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_same_weights_different_history_are_rejected) ... ok
+test_snapshot_fingerprint_binds_all_source_fields (test_driven_pinbed_observer.TestDrivenPinbed.test_snapshot_fingerprint_binds_all_source_fields) ... ok
+test_source_hash_mutation_fails_authentication (test_driven_pinbed_observer.TestDrivenPinbed.test_source_hash_mutation_fails_authentication) ... ok
+test_source_mass_mutation_fails_authentication (test_driven_pinbed_observer.TestDrivenPinbed.test_source_mass_mutation_fails_authentication) ... ok
+test_static_alias_is_split (test_driven_pinbed_observer.TestDrivenPinbed.test_static_alias_is_split) ... ok
+test_truncated_profile_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_truncated_profile_is_rejected) ... ok
+test_wrong_mass_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_wrong_mass_is_rejected) ... ok
+test_wrong_quadrature_orientation_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_wrong_quadrature_orientation_is_rejected) ... ok
+test_zero_gain_is_rejected (test_driven_pinbed_observer.TestDrivenPinbed.test_zero_gain_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.773s
+
+OK

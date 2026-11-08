@@ -1,0 +1,35 @@
+{
+  "RH": "OPEN",
+  "compile_command": "python -m compileall -q gyroscope.py test_gyroscope.py independent_oracle.py",
+  "compile_result": "PASS",
+  "date_utc": "2026-11-06",
+  "files_sha256": {
+    "CLAIM_LEDGER.md": "029d8c5ed49b1ef9bf0f47ae62ad15912c86e2b1a2341c79981d49ed11d55676",
+    "INDEPENDENT_ORACLE_LOG.txt": "d256babee5c1ee2b552ebf46c629c0ba183eeb151b951508856e0a29693fe5c7",
+    "LOCAL_TEST_LOG.txt": "585b5f0e17944b849923f8454b53427baac25a0bad7acc935edefd817faed766",
+    "README.md": "a569d59b6cb4eb7e8138c433bec3a278d38e15131813827e8e75ddf6371ac658",
+    "THEOREMS.md": "9f2e4f36f27e7d2eeff4cb985f14d64a11d6b915ba01ea9ea228818479b2c68d",
+    "gyroscope.py": "0f749904f6b6ff977189078cf4c057cc1f939a99abe961bbd0b47fd7bda85151",
+    "independent_oracle.py": "0d4a3abb5980e2a3564787bf1c2c872570fccc2567f74a2e2acf776c573c4a9a",
+    "test_gyroscope.py": "c9c155279412dc59a99cfc04f5e5a49813e0f103fca6f2beea33f99340218830"
+  },
+  "not_executed": [
+    "full native SUCC suite",
+    "scripts/verify_provenance.py",
+    "scripts/observer_foundations_probe.py",
+    "scripts/ordinal_succ_report_probe.py",
+    "Lean kernel",
+    "hosted CI",
+    "external independent refereeing"
+  ],
+  "operation": "Recursive Carrier × Realization Gyroscope",
+  "oracle_command": "python independent_oracle.py",
+  "oracle_result": "PASS: 12 source, 33 closed-state, 7 interval, phase/recoding checks",
+  "pi_normality": "OPEN",
+  "pinned_main_sha": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+  "python_version": "3.13.5",
+  "selected_signed_Weyl": "OPEN",
+  "source_contract": "Original four signed BBP poles, exact Fraction and U_0=0; read-only inputs",
+  "test_command": "python -m unittest discover -v -s . -p test_*.py",
+  "test_result": "17 tests, OK, 0 failures, 0 errors"
+}

@@ -1,0 +1,89 @@
+{
+  "status": "OBSERVED FINITE FLOAT DIAGNOSTICS ONLY",
+  "source": "original four-pole BBP",
+  "literal_U0": "0",
+  "spectral_energy": [
+    {
+      "N": 256,
+      "H8": {
+        "unweighted": 0.0492553529,
+        "fejer": 1.0275925976
+      },
+      "H16": {
+        "unweighted": 0.0870265747,
+        "fejer": 1.0477027293
+      },
+      "H32": {
+        "unweighted": 0.1868305213,
+        "fejer": 1.0871548464
+      }
+    },
+    {
+      "N": 512,
+      "H8": {
+        "unweighted": 0.0210418227,
+        "fejer": 1.012665335
+      },
+      "H16": {
+        "unweighted": 0.0494358239,
+        "fejer": 1.023258912
+      },
+      "H32": {
+        "unweighted": 0.1059313784,
+        "fejer": 1.0475432604
+      }
+    },
+    {
+      "N": 1024,
+      "H8": {
+        "unweighted": 0.0145244777,
+        "fejer": 1.0084666038
+      },
+      "H16": {
+        "unweighted": 0.0269021556,
+        "fejer": 1.0140789126
+      },
+      "H32": {
+        "unweighted": 0.0547493726,
+        "fejer": 1.0253416796
+      }
+    }
+  ],
+  "dyadic_energy_escape": [
+    {
+      "N": 256,
+      "original": 0.999599341618,
+      "shadow": 0.000097278729,
+      "periodic": 0.13049554139
+    },
+    {
+      "N": 512,
+      "original": 0.997789853203,
+      "shadow": 0.000048805344,
+      "periodic": 0.13049554139
+    },
+    {
+      "N": 1024,
+      "original": 0.998176713795,
+      "shadow": 0.000024444168,
+      "periodic": 0.13049554139
+    }
+  ],
+  "periodic_fejer": [
+    {
+      "H": 16,
+      "energy": 8.5
+    },
+    {
+      "H": 256,
+      "energy": 128.50676657
+    },
+    {
+      "H": 4096,
+      "energy": 2048.5
+    }
+  ],
+  "source_selected_mesoscopic_bound": "OPEN",
+  "pi_base16_normality": "OPEN",
+  "caution": "All displayed energies use floating Fourier characters, exact rational source recurrence; not an infinite theorem or interval certificate. Full wavelet level arrays are reproducible by probe.py."
+}

@@ -1,0 +1,85 @@
+{
+  "certificate": "RIGOROUS_FINITE_RATIONAL_INTERVAL",
+  "original_four_poles": true,
+  "literal_zero_seed": true,
+  "machin_arctan_terms": {
+    "inverse5": 8,
+    "inverse239": 4
+  },
+  "quantization_bits": 16,
+  "taylor_max_cos_degree": 28,
+  "taylor_max_sin_degree": 29,
+  "single_phase_error_less_than": "1/5000",
+  "energy_error_less_than": "1/2400",
+  "predeclared_uniform_component_bound_less_than": "28751188141417127161026626851780224225733304401252746479214138930599984324287/149867379417922452010639660881970028134272328298022513288033663693750000000000000",
+  "cases": [
+    {
+      "M": 128,
+      "N": 512,
+      "Q": 4,
+      "h": 1,
+      "R_center_float": 0.003211346973,
+      "diagonal_exact": "1/128",
+      "signed_gap_center_float": -0.004601153027,
+      "verdict": "CERTIFIED_BELOW_DIAGONAL",
+      "R_abs_error_less_than": "1/2400"
+    },
+    {
+      "M": 64,
+      "N": 512,
+      "Q": 8,
+      "h": 1,
+      "R_center_float": 0.018183246066,
+      "diagonal_exact": "1/64",
+      "signed_gap_center_float": 0.002558246066,
+      "verdict": "CERTIFIED_ABOVE_DIAGONAL",
+      "R_abs_error_less_than": "1/2400"
+    },
+    {
+      "M": 32,
+      "N": 512,
+      "Q": 16,
+      "h": 1,
+      "R_center_float": 0.024190021041,
+      "diagonal_exact": "1/32",
+      "signed_gap_center_float": -0.007059978959,
+      "verdict": "CERTIFIED_BELOW_DIAGONAL",
+      "R_abs_error_less_than": "1/2400"
+    },
+    {
+      "M": 192,
+      "N": 768,
+      "Q": 4,
+      "h": 2,
+      "R_center_float": 0.004831418959,
+      "diagonal_exact": "1/192",
+      "signed_gap_center_float": -0.000376914375,
+      "verdict": "AMBIGUOUS",
+      "R_abs_error_less_than": "1/2400"
+    },
+    {
+      "M": 96,
+      "N": 768,
+      "Q": 8,
+      "h": 2,
+      "R_center_float": 0.006409217763,
+      "diagonal_exact": "1/96",
+      "signed_gap_center_float": -0.004007448903,
+      "verdict": "CERTIFIED_BELOW_DIAGONAL",
+      "R_abs_error_less_than": "1/2400"
+    },
+    {
+      "M": 48,
+      "N": 768,
+      "Q": 16,
+      "h": 2,
+      "R_center_float": 0.01675928608,
+      "diagonal_exact": "1/48",
+      "signed_gap_center_float": -0.004074047253,
+      "verdict": "CERTIFIED_BELOW_DIAGONAL",
+      "R_abs_error_less_than": "1/2400"
+    }
+  ],
+  "pi_base16_normality": "OPEN",
+  "scope": "finite only; analytic Taylor/Machin bounds justify each sign, not infinite cancellation"
+}

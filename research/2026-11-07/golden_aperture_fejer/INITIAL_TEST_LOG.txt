@@ -1,0 +1,24 @@
+test_constant_phase_calibration (test_golden.GoldenMath.test_constant_phase_calibration) ... FAIL
+test_exact_golden_irrational_cutoff (test_golden.GoldenMath.test_exact_golden_irrational_cutoff) ... ok
+test_exact_pair_to_integrated_excess (test_golden.GoldenMath.test_exact_pair_to_integrated_excess) ... ok
+test_fiber_nonnegative_and_refinement (test_golden.GoldenMath.test_fiber_nonnegative_and_refinement) ... ok
+test_original_source_early_windows (test_golden.GoldenMath.test_original_source_early_windows) ... ok
+test_original_source_fiber_increments (test_golden.GoldenMath.test_original_source_fiber_increments) ... ok
+test_return_constant_control (test_golden.GoldenMath.test_return_constant_control) ... ok
+test_source_authentication (test_golden.GoldenMath.test_source_authentication) ... ok
+test_transport_analytic_bound_and_ghost (test_golden.GoldenMath.test_transport_analytic_bound_and_ghost) ... ok
+test_uniform_grid_decay (test_golden.GoldenMath.test_uniform_grid_decay) ... ok
+
+======================================================================
+FAIL: test_constant_phase_calibration (test_golden.GoldenMath.test_constant_phase_calibration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_golden_aperture_20261107/test_golden.py", line 21, in test_constant_phase_calibration
+    self.assertLess(float(low),a);self.assertGreater(float(high),a)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: 0.6180339887498949 not less than 0.6180339887498949
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.248s
+
+FAILED (failures=1)

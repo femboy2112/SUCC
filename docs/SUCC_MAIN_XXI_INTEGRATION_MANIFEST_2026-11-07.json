@@ -1,0 +1,4142 @@
+{
+ "cross_leaf_overlaps_differing": 0,
+ "cross_leaf_path_overlaps": 258,
+ "date": "2026-11-07",
+ "leaf_contains": {
+  "532": [
+   525,
+   526,
+   527,
+   528,
+   530,
+   531,
+   532
+  ],
+  "535": [
+   525,
+   526,
+   527,
+   528,
+   529,
+   534,
+   535
+  ],
+  "537": [
+   537
+  ],
+  "539": [
+   539
+  ],
+  "540": [
+   525,
+   526,
+   527,
+   528,
+   530,
+   531,
+   533,
+   536,
+   538,
+   540
+  ],
+  "542": [
+   542
+  ],
+  "543": [
+   541,
+   543
+  ]
+ },
+ "leaves": [
+  532,
+  535,
+  537,
+  539,
+  540,
+  542,
+  543
+ ],
+ "main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+ "open_pr_count_at_recon": 125,
+ "operation": "SUCC Main XXI",
+ "pending_count": 19,
+ "prless_branches": [
+  {
+   "all_files_byte_identical_in_main": true,
+   "ancestor_of_main": false,
+   "branch": "research/final-pin-carry-2026-11-05",
+   "disposition": "CONTENT_PRESERVED (folded into #520 selected_orbit_final_pin; branch retained)",
+   "files": 11,
+   "has_pr": false,
+   "head": "80540392cc2e59ddb16e2d24461714c5848b8ce7"
+  },
+  {
+   "all_files_byte_identical_in_main": true,
+   "ancestor_of_main": false,
+   "branch": "research/final-pin-clausen-2026-11-05",
+   "disposition": "CONTENT_PRESERVED (folded into #520 selected_orbit_final_pin; branch retained)",
+   "files": 11,
+   "has_pr": false,
+   "head": "1f5b33906603004c8f1e5a17c7170331e4e834b1"
+  },
+  {
+   "all_files_byte_identical_in_main": true,
+   "ancestor_of_main": false,
+   "branch": "research/final-pin-referee-2026-11-05",
+   "disposition": "CONTENT_PRESERVED (folded into #520 selected_orbit_final_pin; branch retained)",
+   "files": 12,
+   "has_pr": false,
+   "head": "20c29687385e0426d99ad81c386108aded482f4a"
+  }
+ ],
+ "prs": [
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/time-extruded-operational-triangle-2026-10-30",
+   "branch": "research/double-triangle-shared-field-fourier-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "00b073fb9adedcda91cc499540add10dfcfabc66",
+   "merge_base_with_main_before": "00b073fb9adedcda91cc499540add10dfcfabc66",
+   "pr": 392,
+   "title": "[DRAFT] Superimposed time-horizontal SUCC triangles: exact 2D Fourier, q6 covariance and BBP 59-jet",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/double-triangle-shared-field-fourier-2026-10-30",
+   "branch": "research/lorentz-clock-triangular-tiling-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+   "merge_base_with_main_before": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+   "pr": 393,
+   "title": "[DRAFT] Lorentz-clock triangle: projective boosts, golden integral isometry, and source-Fourier firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/lorentz-clock-triangular-tiling-2026-10-30",
+   "branch": "research/arithmetic-energy-momentum-shell-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+   "merge_base_with_main_before": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+   "pr": 394,
+   "title": "[DRAFT] SUCC arithmetic energy\u2013momentum: golden norm, running four-pole mass and shared-triangle covariance",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-prime-stroboscopic-crt-2026-10-30",
+   "branch": "research/bbp-arithmetic-barrier-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+   "merge_base_with_main_before": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+   "pr": 399,
+   "title": "[DRAFT] Sharp BBP conductor growth, prime-power transport, and signed CRT barriers",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-arithmetic-barrier-2026-10-30",
+   "branch": "research/gamma-prime-real-holonomy-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+   "merge_base_with_main_before": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+   "pr": 400,
+   "title": "[DRAFT] Gamma\u2013prime\u2013real holonomy: p=2 affine cocycle, all-horizon mutants, exact phase budget",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gamma-prime-real-holonomy-2026-10-30",
+   "branch": "research/gamma-twist-selected-phase-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+   "merge_base_with_main_before": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+   "pr": 401,
+   "title": "[DRAFT] Complete Gauss coefficient fiber and sharp BBP seed-energy barrier",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/fibonacci-epicycle-demon-normality-2026-10-30",
+   "branch": "research/three-channel-native-h3-wave-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+   "merge_base_with_main_before": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+   "pr": 402,
+   "title": "[DRAFT] Third spatial interaction axis: original BBP three-atom H3, 164 angular jet, 3+1 wave firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gamma-twist-selected-phase-2026-10-30",
+   "branch": "research/selected-zero-boundary-diophantine-slip-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "5f350af7808532e55d74e80c948c02bb385c6e70",
+   "merge_base_with_main_before": "5f350af7808532e55d74e80c948c02bb385c6e70",
+   "pr": 403,
+   "title": "[DRAFT] Selected BBP zero boundary: Diophantine phase slips and logarithmic signed saving",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/three-channel-native-h3-wave-2026-10-30",
+   "branch": "research/noether-radix-ward-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+   "merge_base_with_main_before": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+   "pr": 404,
+   "title": "[DRAFT] Noether \u00d7 radix-16 Ward: exact source/carry charge, first 17-factor and 34th-moment resonances",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/selected-zero-boundary-diophantine-slip-2026-10-30",
+   "branch": "research/zero-boundary-dispersion-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+   "merge_base_with_main_before": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+   "pr": 405,
+   "title": "[DRAFT] Zero-boundary dispersion: uniform slips, sharp coherence controls and signed frequency bands",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/noether-radix-ward-2026-10-30",
+   "branch": "research/count-out-observer-source-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c",
+   "merge_base_with_main_before": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c",
+   "pr": 406,
+   "title": "[DRAFT] COUNT-OUT: quotient universal radix counting, retain BBP boundary and prove exact source dephasing law",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zero-boundary-dispersion-2026-10-30",
+   "branch": "research/arithmetic-cylinder-collision-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "5f05181339ea97a56999ca8b8ab10a2009c6c84d",
+   "merge_base_with_main_before": "5f05181339ea97a56999ca8b8ab10a2009c6c84d",
+   "pr": 407,
+   "title": "[DRAFT] Arithmetic cylinder tiling: authentic BBP two-time Walsh collisions and entropy gate",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zero-boundary-dispersion-2026-10-30",
+   "branch": "research/triangle-categorical-fabric-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+   "merge_base_with_main_before": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+   "pr": 408,
+   "title": "[DRAFT] Triangle fabric: sharp golden composition, hidden arrows and arithmetic boundary controls",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/count-out-observer-source-2026-10-30",
+   "branch": "research/carrier-realization-maxcyl-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "3857e70472cac7c572528cc6d4198246e57d36df",
+   "merge_base_with_main_before": "3857e70472cac7c572528cc6d4198246e57d36df",
+   "pr": 409,
+   "title": "[DRAFT] RAW STATE: source W1, graph-Haar and subexponential max-cylinder rigidity",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/arithmetic-cylinder-collision-2026-10-30",
+   "branch": "research/deepseek-v4-cylinder-proof-forge-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "5a54cd1a4200f3b0e673f6c3feecff76bf6b6dc6",
+   "merge_base_with_main_before": "5a54cd1a4200f3b0e673f6c3feecff76bf6b6dc6",
+   "pr": 410,
+   "title": "[DRAFT] DeepSeek V4 Pro cylinder proof forge: moving-scale entropy certificate and source-selected research handoff",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/arithmetic-cylinder-collision-2026-10-30",
+   "branch": "research/codex-ultra-finiteband-crt-cylinder-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+   "merge_base_with_main_before": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+   "pr": 411,
+   "title": "[DRAFT] Codex Astra Ultra finite-band cylinder/CRT proof forge",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/carrier-realization-maxcyl-2026-10-30",
+   "branch": "research/probability-operations-ifs-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "9dce8c27ea1083554daaf0b48df44bcf81081b53",
+   "merge_base_with_main_before": "9dce8c27ea1083554daaf0b48df44bcf81081b53",
+   "pr": 412,
+   "title": "[DRAFT] SUCC probability operations: unique Haar branch law, Oily Gamma generator and falsifiable observer",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/triangle-categorical-fabric-2026-10-30",
+   "branch": "research/fibonacci-triangle-extrusion-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f316d1b1e87291a89c4d4034ccf27a947e7088ad",
+   "merge_base_with_main_before": "f316d1b1e87291a89c4d4034ccf27a947e7088ad",
+   "pr": 413,
+   "title": "[DRAFT] Fibonacci triangle extrusion: memory laws, complete probes and radix-239 obstruction",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/probability-operations-ifs-2026-10-30",
+   "branch": "research/observer-carrier-model-adequacy-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "e4773979802cf0ef3a8d46444acb6bc5966788a9",
+   "merge_base_with_main_before": "e4773979802cf0ef3a8d46444acb6bc5966788a9",
+   "pr": 414,
+   "title": "[DRAFT] Observer is not carrier: exact inverse-branch adequacy, entropy KL and noncommuting observational limits",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/codex-ultra-finiteband-crt-cylinder-2026-10-30",
+   "branch": "research/selected-finiteband-dispersion-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f650aab0c8710b502f3e08ec1cb2b351c26b2b3f",
+   "merge_base_with_main_before": "f650aab0c8710b502f3e08ec1cb2b351c26b2b3f",
+   "pr": 415,
+   "title": "[DRAFT] Selected finite-band research: sharp Green transport, slip cylinders and rational cubature",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/observer-carrier-model-adequacy-2026-10-30",
+   "branch": "research/universal-N-pascal-gamma-zeta-prime-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "725377a64748ab0c442d16a61509b99687412505",
+   "merge_base_with_main_before": "725377a64748ab0c442d16a61509b99687412505",
+   "pr": 416,
+   "title": "[DRAFT] Universal N carrier: Pascal\u2013Gamma\u2013zeta\u2013prime bridge and exact BBP multiplicative zero-seed lift",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/universal-N-pascal-gamma-zeta-prime-2026-10-30",
+   "branch": "research/nonpisot-pisot-ramification-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+   "merge_base_with_main_before": "7f47df4cba808c4c6fa63b90a47c1f9555105c64",
+   "pr": 418,
+   "title": "[DRAFT] Non-Pisot finite arithmetic: positive Pisot ramification, integral unit inverse and prime discriminant",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/universal-N-pascal-gamma-zeta-prime-2026-10-30",
+   "branch": "research/basel-line-circle-native-green-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "1573ec5b8fbd60b251cb16741bd5165271ec6dbf",
+   "merge_base_with_main_before": "1573ec5b8fbd60b251cb16741bd5165271ec6dbf",
+   "pr": 420,
+   "title": "[DRAFT] Basel \u00d7 line-circle: original BBP Gamma determinant, digamma Green and holonomy firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/universal-nz-carrier-2026-10-30",
+   "branch": "research/carrier-adelic-jet-transport-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+   "merge_base_with_main_before": "e14916aa2b4dfc2cce948facc729fb02ce1efafa",
+   "pr": 421,
+   "title": "[DRAFT] Carrier-to-source research: Pascal transport, prime frames, and all-order shadows",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/dyadic-zeta-prime-exposure-2026-10-30",
+   "branch": "research/summation-snapshot-arrows-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "287b9e9214f0214586cb6f0a993e29b58bed496a",
+   "merge_base_with_main_before": "287b9e9214f0214586cb6f0a993e29b58bed496a",
+   "pr": 423,
+   "title": "[DRAFT] Summation snapshot arrows: kernel quotients, Mellin\u2013Gamma carrier, triangular products and flat shadows",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/universal-nz-carrier-2026-10-30",
+   "branch": "research/carrier-first-certified-transport-2026-10-30",
+   "destination_commit": "e8598cfa5d32fd1de8e94a3e458a366a0850d59e",
+   "destination_integration_pr": 425,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a4282dc5ba659f4e2f40cd316ec7737601692952",
+   "merge_base_with_main_before": "a4282dc5ba659f4e2f40cd316ec7737601692952",
+   "pr": 424,
+   "title": "[DRAFT] Carrier first: certified BBP transport, embedded observers and finite-band countermodels",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/pi-two-three-adic-joint-clock-rigidity-2026-10-31",
+   "branch": "research/pascal-2-3-conjugacy-pisot-probe-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "91e06fd21b2e301d5d73df4415d6cf60ec9d79cd",
+   "merge_base_with_main_before": "91e06fd21b2e301d5d73df4415d6cf60ec9d79cd",
+   "pr": 428,
+   "title": "[DRAFT] Pascal 2\u21943 dynamical conjugacy, Haar information defect, and authentic BBP Pisot bridge",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/pascal-2-3-conjugacy-pisot-probe-2026-10-31",
+   "branch": "research/half-power-two-three-horizon-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "33d53f576fe2c2e847e51c24ccf7a94aa6ec6f10",
+   "merge_base_with_main_before": "33d53f576fe2c2e847e51c24ccf7a94aa6ec6f10",
+   "pr": 429,
+   "title": "[DRAFT] Half-power horizon: genuine 2-adic ramification, 6-adic successor and BBP pole budget",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/half-power-two-three-horizon-2026-10-31",
+   "branch": "research/multiplace-bbp-difference-resolvent-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "ba8bc0d3636af19c93f5983094456e44ecac457c",
+   "merge_base_with_main_before": "ba8bc0d3636af19c93f5983094456e44ecac457c",
+   "pr": 430,
+   "title": "[DRAFT] Original BBP three-place Gamma difference resolvent, sharp 3-adic poles and prime exposure",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/carrier-relative-path-measure-2026-10-31",
+   "branch": "research/edge-seed-tomography-selected-pi-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "d3907a7937b10dbf51f3926e0dd3460d5ff12353",
+   "merge_base_with_main_before": "d3907a7937b10dbf51f3926e0dd3460d5ff12353",
+   "pr": 432,
+   "title": "[DRAFT] Original BBP edge-normality gate, exact 73-point seed-phase tomography and selected-seed firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/carrier-relative-path-measure-2026-10-31",
+   "branch": "research/selected-seed-superposition-horizon-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "5721c048b54430b3d2195d63ba4d1a9ec0794f99",
+   "merge_base_with_main_before": "5721c048b54430b3d2195d63ba4d1a9ec0794f99",
+   "pr": 433,
+   "title": "[DRAFT] BBP selected-seed superposition: exact Haar horizon, anti-aliasing and phase capacity",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/selected-seed-superposition-horizon-2026-10-31",
+   "branch": "research/selected-pi-signed-lag-forge-astra-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+   "merge_base_with_main_before": "030ee84b8b7f655fcf433375bfc0b347e0483c89",
+   "pr": 434,
+   "title": "[DRAFT] \u03c0 Signed Lag Forge: integrate path superposition & tomography, certify critical-log BBP VdC",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/selected-pi-signed-lag-forge-astra-2026-10-31",
+   "branch": "research/selected-pi-lag-fireworks-2026-10-31",
+   "destination_commit": "4eb411e3730a9e7b95480369a438b89d9a433a4b",
+   "destination_integration_pr": 436,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f8b588b18ce20910069f39e154a87567c4bd6637",
+   "merge_base_with_main_before": "f8b588b18ce20910069f39e154a87567c4bd6637",
+   "pr": 435,
+   "title": "[DRAFT] \u03c0 signed lag fireworks: doubled clock, sharp barrier, and exact conductor shadows",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/seeded-zak-arithmetic-seam-2026-10-31",
+   "branch": "research/zak-jackson-alias-prefix-2026-10-31",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "ca156a69cae170b18c5e3c000274525e5d094a4a",
+   "merge_base_with_main_before": "ca156a69cae170b18c5e3c000274525e5d094a4a",
+   "pr": 439,
+   "title": "[DRAFT] Zak\u2013Jackson exact band-to-prefix theorem, finite-action selector and high-alias counterfeit barrier",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zak-jackson-alias-prefix-2026-10-31",
+   "branch": "research/unit-succ-pascal-gamma-seam-2026-10-31",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "7833a238012bb8e70ff363a3bcf6d60354ecb795",
+   "merge_base_with_main_before": "7833a238012bb8e70ff363a3bcf6d60354ecb795",
+   "pr": 440,
+   "title": "[DRAFT] Unit-SUCC Pascal\u2013Gamma seam: unimodular BBP extrusion, bounded Green selector, exact dilation functor",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/unit-succ-pascal-gamma-seam-2026-10-31",
+   "branch": "research/carrier-action-quantum-symplectic-bbp-2026-10-31",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "ab87a8d825d41dce846da2d93e776e2c760e9bf1",
+   "merge_base_with_main_before": "ab87a8d825d41dce846da2d93e776e2c760e9bf1",
+   "pr": 441,
+   "title": "[DRAFT] Carrier-action quantum: original BBP symplectic action, exact Weyl branch/carry, Pisot clock no-go",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/carrier-action-quantum-symplectic-bbp-2026-10-31",
+   "branch": "research/bbp-riemann-sphere-path-seam-2026-10-31",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "4f49abd7bf50ceebf5281a39a3f3d4dca8841450",
+   "merge_base_with_main_before": "4f49abd7bf50ceebf5281a39a3f3d4dca8841450",
+   "pr": 442,
+   "title": "[DRAFT] Original BBP Riemann-sphere path seam: Pascal contour, Euler\u2013Gamma infinity dual, non-Abelian obstruction",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-riemann-sphere-path-seam-2026-10-31",
+   "branch": "research/realized-path-entropy-momentum-bbp-2026-10-31",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "00ba302898a8c81d3dbea0f4dd29f541a0f3d158",
+   "merge_base_with_main_before": "00ba302898a8c81d3dbea0f4dd29f541a0f3d158",
+   "pr": 443,
+   "title": "[DRAFT] Realized path momentum: Doob entropy, authentic BBP idempotent band, Hamiltonian flow and action-tilt no-go",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/realized-path-entropy-momentum-bbp-2026-10-31",
+   "branch": "research/feynman-rigorous-bbp-propagator-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "661553f182c425b06b5339ed02d7739a0ae72380",
+   "merge_base_with_main_before": "661553f182c425b06b5339ed02d7739a0ae72380",
+   "pr": 444,
+   "title": "[DRAFT] Rigorous BBP Feynman path integral: unitary source propagator, Fresnel regulator and selected-seed firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/feynman-rigorous-bbp-propagator-2026-11-01",
+   "branch": "research/moonshot-phase-echo-triangulation-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "8ffb247eb008eb1f2eeee3d1d06687e1c857366e",
+   "merge_base_with_main_before": "8ffb247eb008eb1f2eeee3d1d06687e1c857366e",
+   "pr": 445,
+   "title": "[DRAFT] Moonshot triangulation: exact BBP phase echo, regulator repair, topology firewall and signed holdouts",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/moonshot-phase-echo-triangulation-2026-11-01",
+   "branch": "research/bbp-wilson-holonomy-seed-fisher-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "b225a0e12cc0637ddc9ab9a1f3dbcafc93a8a871",
+   "merge_base_with_main_before": "b225a0e12cc0637ddc9ab9a1f3dbcafc93a8a871",
+   "pr": 446,
+   "title": "[DRAFT] Original BBP double-Wilson holonomy, accelerated \u03c0 curvature and seed-echo Fisher/Helstrom firewalls",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-wilson-holonomy-seed-fisher-2026-11-01",
+   "branch": "research/circle-diameter-recursive-path-ratio-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "6fedcbe445f856878ecb1b1d9a0a84ad97a77e2e",
+   "merge_base_with_main_before": "6fedcbe445f856878ecb1b1d9a0a84ad97a77e2e",
+   "pr": 447,
+   "title": "[DRAFT] Recursive circle/diameter path quotient: projective \u00d716, Wick kernels and BBP\u2013Wilson \u03c0 brackets",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/circle-diameter-recursive-path-ratio-2026-11-01",
+   "branch": "research/constant-curvature-finite-history-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "74de5c986c5bce2e8486450ce6475b3b6c1f68e0",
+   "merge_base_with_main_before": "74de5c986c5bce2e8486450ce6475b3b6c1f68e0",
+   "pr": 448,
+   "title": "[DRAFT] Constant curvature \u2192 finite history: seven-sample BBP source rigidity and power-accurate whole-echo projection",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/circle-diameter-recursive-path-ratio-2026-11-01",
+   "branch": "research/categorical-source-three-frame-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "45a841e868184062ee4e30b7ba4e7fa5bcef4216",
+   "merge_base_with_main_before": "45a841e868184062ee4e30b7ba4e7fa5bcef4216",
+   "pr": 449,
+   "title": "[DRAFT] Categorical full object: global three-frame BBP source sphere, faithful successor and Fourier gluing",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/categorical-source-three-frame-2026-11-01",
+   "branch": "research/categorical-source-gluing-independent-audit-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a62c5385681890d40e7ca05127e0cc5d71e8b9c0",
+   "merge_base_with_main_before": "a62c5385681890d40e7ca05127e0cc5d71e8b9c0",
+   "pr": 450,
+   "title": "[DRAFT] Categorical source gluing: independent certificates and sharp three-frame necessity",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/categorical-source-gluing-independent-audit-2026-11-01",
+   "branch": "research/arctan-reciprocity-irrational-mirror-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "8ccec135f8abf64f0ea44fab555d9ac1e1b787e1",
+   "merge_base_with_main_before": "8ccec135f8abf64f0ea44fab555d9ac1e1b787e1",
+   "pr": 451,
+   "title": "[DRAFT] Arctan reciprocity: exact source-native irrational mirror and \u03c0 one-quadrature gate",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/constant-curvature-finite-history-2026-11-01",
+   "branch": "research/arctan-chiral-solenoid-relative-bbp-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "2ec2a406399277af361ca4da8f257e1ce726b8b9",
+   "merge_base_with_main_before": "2ec2a406399277af361ca4da8f257e1ce726b8b9",
+   "pr": 452,
+   "title": "[DRAFT] Arctan reciprocal / Fourier solenoid: exact four-pole BBP angular-period coboundary and all-level 3/11 bands",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/arctan-reciprocity-irrational-mirror-2026-11-01",
+   "branch": "research/adaptive-arctan-harmonic-frame-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "702cf6fa45c9e6d10bd48c84efe7d3c4389a9037",
+   "merge_base_with_main_before": "702cf6fa45c9e6d10bd48c84efe7d3c4389a9037",
+   "pr": 453,
+   "title": "[DRAFT] Adaptive arctan source frames: uniform 1/8 Fourier gate and finite observer countermodels",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/adaptive-arctan-harmonic-frame-2026-11-01",
+   "branch": "research/carrier-relative-entropy-laurent-signed-lag-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a3802f2c1574362a4fb38cc85ab149a0ccb847f2",
+   "merge_base_with_main_before": "a3802f2c1574362a4fb38cc85ab149a0ccb847f2",
+   "pr": 454,
+   "title": "[DRAFT] Carrier-relative normality entropy and all-order original BBP Laurent signed-lag transport",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/carrier-relative-entropy-laurent-signed-lag-2026-11-01",
+   "branch": "research/laurent-clock-sharpness-all-orders-2026-11-01",
+   "destination_commit": "eb4f69b69758a3632ca98cb893626453eb320d10",
+   "destination_integration_pr": 456,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a5752c3d3403c1b01b0a3b71a3241d77fdc87a59",
+   "merge_base_with_main_before": "a5752c3d3403c1b01b0a3b71a3241d77fdc87a59",
+   "pr": 455,
+   "title": "[DRAFT] Sharp all-order original BBP Laurent clocks: coherent seed barrier and Main XIX handoff",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/selected-prime-phase-cofactor-2026-11-01",
+   "branch": "research/selected-prime-window-energy-2026-11-01",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "b99518cf93048d87c7cfecd43587bf95dc502c87",
+   "merge_base_with_main_before": "b99518cf93048d87c7cfecd43587bf95dc502c87",
+   "pr": 460,
+   "title": "[DRAFT] 5-mod-8 BBP prime-window energy: universal equivalence firewall, subgroup clock, rigorous mixed-phase probes",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/selected-prime-window-energy-2026-11-01",
+   "branch": "research/macrolag-prime-witness-vs-real-shadow-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "25700292b854f4c3a12b505f321b6c1294c96c7d",
+   "merge_base_with_main_before": "25700292b854f4c3a12b505f321b6c1294c96c7d",
+   "pr": 462,
+   "title": "[DRAFT] DUMB PROOF: all-lag BBP prime conductors, stronger coherent shadow, 24 exact signed windows",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/macrolag-prime-witness-vs-real-shadow-2026-11-02",
+   "branch": "research/unit-unit-differential-pascal-shadow-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "43adc90badfc6b8abc1631a4332c09cda007ccb7",
+   "merge_base_with_main_before": "43adc90badfc6b8abc1631a4332c09cda007ccb7",
+   "pr": 463,
+   "title": "[DRAFT] Unit\u2013unit SUCC differential: all-grade BBP primes, positive coherent Pascal shadow, bounded dyadic source inverse",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/unit-unit-differential-pascal-shadow-2026-11-02",
+   "branch": "research/causal-response-rotation-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "0a69fe3d7260170248e2ef3bf1f1eb5de1b0c0f6",
+   "merge_base_with_main_before": "0a69fe3d7260170248e2ef3bf1f1eb5de1b0c0f6",
+   "pr": 464,
+   "title": "[DRAFT] Causal response rotation: weak-Haar coherent circles, calibrated intensity phase retrieval and causal differential",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/weyl-borg-microlocal-fourier-2026-11-02",
+   "branch": "research/gamma-haar-window-backdoor-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "70f4146d9bcb39e45026e88cc141ddad656f337d",
+   "merge_base_with_main_before": "70f4146d9bcb39e45026e88cc141ddad656f337d",
+   "pr": 465,
+   "title": "[DRAFT] Gamma\u2192Haar finite-window certificates: exact BBP Gamma tail and conditional all-prefix Weyl bootstrap",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/causal-response-rotation-2026-11-02",
+   "branch": "research/cosmic-fingerprint-reference-interferometry-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "c71b18dba200c2d227d9c084bbb9d8399f81ede3",
+   "merge_base_with_main_before": "c71b18dba200c2d227d9c084bbb9d8399f81ede3",
+   "pr": 466,
+   "title": "[DRAFT] Cosmic Fingerprint: calibrated causal reference intensities, CMB foreground analogy, closure-phase no-go",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/cosmic-fingerprint-reference-interferometry-2026-11-02",
+   "branch": "research/causal-echo-tomography-moment-null-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "1bbc2b69d79a5c85df10459c13173563ca44bcd3",
+   "merge_base_with_main_before": "1bbc2b69d79a5c85df10459c13173563ca44bcd3",
+   "pr": 467,
+   "title": "[DRAFT] Causal Echo Tomography: all-jet positive nulls, rational nonnormal sources, exact phase divergence",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gamma-haar-window-backdoor-2026-11-02",
+   "branch": "research/gamma-seam-cascade-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "7c7f26ea3ebb530744d695cf485b0e35d0997143",
+   "merge_base_with_main_before": "7c7f26ea3ebb530744d695cf485b0e35d0997143",
+   "pr": 468,
+   "title": "[DRAFT] Gamma seam: exact adjacent-window gluing, sparse-scale Haar loss bootstrap, 18 finite certificates",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/causal-echo-tomography-moment-null-2026-11-02",
+   "branch": "research/carrier-hbar-selected-alias-energy-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "ef6f8894741cac8d952e9fd12d49e4aa7d13fa25",
+   "merge_base_with_main_before": "ef6f8894741cac8d952e9fd12d49e4aa7d13fa25",
+   "pr": 469,
+   "title": "[DRAFT] Carrier \u0127 \u2192 real: original local Haar, selected anti-alias and exact 10n-level rational decoding",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gamma-seam-cascade-2026-11-02",
+   "branch": "research/pisot-gamma-conjugate-seam-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "b682b1f8ea21a1ae1efd529b6011e87453a7e0b6",
+   "merge_base_with_main_before": "b682b1f8ea21a1ae1efd529b6011e87453a7e0b6",
+   "pr": 470,
+   "title": "[DRAFT] Pisot \u00d7 Gamma: exact conjugate-tail seam, newborn-prime nonvanishing and moving-Haar no-go",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/pisot-gamma-conjugate-seam-2026-11-02",
+   "branch": "research/global-prior-fejer-golden-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "92f7d4684a1ec68bf0346e0e74ec763e03d8c3b4",
+   "merge_base_with_main_before": "92f7d4684a1ec68bf0346e0e74ec763e03d8c3b4",
+   "pr": 471,
+   "title": "[DRAFT] Global analytic prior \u2192 bounded Fej\u00e9r gate, exact Gamma finite energy and golden observer",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/carrier-hbar-selected-alias-energy-2026-11-02",
+   "branch": "research/oily-hbar-moving-alias-vs-weyl-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "85189e389ca1568636a7fedb7b2d6268b8eae447",
+   "merge_base_with_main_before": "85189e389ca1568636a7fedb7b2d6268b8eae447",
+   "pr": 472,
+   "title": "[DRAFT] Oily \u00d7 \u0127: moving \u03c0 anti-alias, 18 exact conditional passes and 3 rigorous posthoc falsifiers",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/global-prior-fejer-golden-2026-11-02",
+   "branch": "research/prime-cofactor-gamma-golden-defect-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "80dc4d8b54574e03843f198ff833e2add469422a",
+   "merge_base_with_main_before": "80dc4d8b54574e03843f198ff833e2add469422a",
+   "pr": 473,
+   "title": "[DRAFT] Original BBP prime\u2013cofactor dyadic gluing, integer Fej\u00e9r gate and Gamma\u2013golden defect",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/prime-cofactor-gamma-golden-defect-2026-11-02",
+   "branch": "research/line-sheet-gamma-sublog-multiprime-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f60ebe5885c1de1f618d52445de77e089e841d3a",
+   "merge_base_with_main_before": "f60ebe5885c1de1f618d52445de77e089e841d3a",
+   "pr": 474,
+   "title": "[DRAFT] Circle line\u2192Gamma sheet: all-real kernel domination, sublog \u03c0 gate and simultaneous prime passports",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/line-sheet-gamma-sublog-multiprime-2026-11-02",
+   "branch": "research/mesoscopic-spectral-army-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "20acb35a42b6ae5fb9260c041ed3a1aa47429484",
+   "merge_base_with_main_before": "20acb35a42b6ae5fb9260c041ed3a1aa47429484",
+   "pr": 475,
+   "title": "[DRAFT] Mesoscopic pi-normality gate: any positive scale exponent, two-sided Fejer bridge and exact source probes",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/mesoscopic-spectral-army-2026-11-02",
+   "branch": "research/weyl-mirror-slowmesh-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "1478b51cf1370411aea6ec42c09d080598384528",
+   "merge_base_with_main_before": "1478b51cf1370411aea6ec42c09d080598384528",
+   "pr": 476,
+   "title": "[DRAFT] Weyl encirclement: rational-mirror rigidity, arbitrarily slow mesh gate and exact source matching",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/mesoscopic-spectral-army-2026-11-02",
+   "branch": "research/mobius-reciprocal-mirror-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "66d85548755920603911f086c5d26addf91c797c",
+   "merge_base_with_main_before": "66d85548755920603911f086c5d26addf91c797c",
+   "pr": 477,
+   "title": "[DRAFT] M\u00f6bius mirror: exact reciprocal circle carrier, four-pole rigidity and Gamma source cocycle",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/mobius-reciprocal-mirror-2026-11-02",
+   "branch": "research/residual-steady-window-balance-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "16e4d36369822e669f214b455481c25a93ba294c",
+   "merge_base_with_main_before": "16e4d36369822e669f214b455481c25a93ba294c",
+   "pr": 478,
+   "title": "[DRAFT] Residual vs steady state: exact BBP antiphase window-balance criterion and odd-modulus holdouts",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/weyl-mirror-slowmesh-2026-11-02",
+   "branch": "research/hannibal-source-collision-2026-11-02",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "61bab5cb354e6143fd2fd7ce229ef1b8e9902538",
+   "merge_base_with_main_before": "61bab5cb354e6143fd2fd7ce229ef1b8e9902538",
+   "pr": 479,
+   "title": "[DRAFT] Hannibal: selected lag exclusions and exact source receipts; normality open",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/residual-steady-window-balance-2026-11-02",
+   "branch": "research/stationary-e2-gamma-observer-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a5ea2c51446feb1e48099f18730fc60fa2f45d8e",
+   "merge_base_with_main_before": "a5ea2c51446feb1e48099f18730fc60fa2f45d8e",
+   "pr": 480,
+   "title": "[DRAFT] Stationary E\u00b2 Gamma observer: exact zero-seed carrier, finite receipts and invariant-measure no-go",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/hannibal-source-collision-2026-11-02",
+   "branch": "research/gaussian-unit-frobenius-gluing-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "7237c2ae8b7b98557f39e47e8988b033404b587a",
+   "merge_base_with_main_before": "7237c2ae8b7b98557f39e47e8988b033404b587a",
+   "pr": 481,
+   "title": "[DRAFT] Gaussian-unit gluing: canonical BBP Frobenius source, half-clock projectors and 2-adic descent",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/stationary-e2-gamma-observer-2026-11-03",
+   "branch": "research/inertial-su2-gyro-common-carrier-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "5599ebd35bda64ad817e1b30d5aaa486e7049b35",
+   "merge_base_with_main_before": "5599ebd35bda64ad817e1b30d5aaa486e7049b35",
+   "pr": 482,
+   "title": "[DRAFT] Inertial SU(2) gyroscope: common E-frame coherence, source-marked holonomy and false-Haar firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gaussian-unit-frobenius-gluing-2026-11-03",
+   "branch": "research/causal-lorentz-dual-gluing-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "8383f69f5eb92eb037dde84f686cf3c77e043c2e",
+   "merge_base_with_main_before": "8383f69f5eb92eb037dde84f686cf3c77e043c2e",
+   "pr": 483,
+   "title": "[DRAFT] Causal Lorentz gluing: original BBP four-bit cone, frame isometry and gamma 257/32",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/causal-lorentz-dual-gluing-2026-11-03",
+   "branch": "research/joint-carry-odd-cofiber-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "057a68c4b4e01439e76c2050c28309a4858b9dc2",
+   "merge_base_with_main_before": "057a68c4b4e01439e76c2050c28309a4858b9dc2",
+   "pr": 484,
+   "title": "[DRAFT] Original BBP joint carry: harmonic 2-adic debt, odd-cofactor real bridge and source holdouts",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/joint-carry-odd-cofiber-2026-11-03",
+   "branch": "research/split-inert-gamma-lag-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "cdb01d73839f08cb10b46f51d42afecf44469ee2",
+   "merge_base_with_main_before": "cdb01d73839f08cb10b46f51d42afecf44469ee2",
+   "pr": 485,
+   "title": "[DRAFT] Gamma-corrected BBP mixed Weyl clocks + split/inert prime no-repeat siege",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/inertial-su2-gyro-common-carrier-2026-11-03",
+   "branch": "research/figure-eight-pow2-hensel-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "9eea9e3e89022b9a57716f21b31ffc3e69f0552f",
+   "merge_base_with_main_before": "9eea9e3e89022b9a57716f21b31ffc3e69f0552f",
+   "pr": 486,
+   "title": "[DRAFT] Figure-eight powers of two: BBP 16-step jet, Hensel root and double 2-adic gluing",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/split-inert-gamma-lag-2026-11-03",
+   "branch": "research/archimedean-numerator-oily-shear-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "5f69d87d8bddde4f7136229289bc9ebde430c5f0",
+   "merge_base_with_main_before": "5f69d87d8bddde4f7136229289bc9ebde430c5f0",
+   "pr": 487,
+   "title": "[DRAFT] Oily Gamma boundary flux + BBP Archimedean numerator CRT ghost and rational shadow",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/archimedean-numerator-oily-shear-2026-11-03",
+   "branch": "research/circle-path-electric-natural-extension-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f47e3768631cd1628c1390d529811c911e0f6443",
+   "merge_base_with_main_before": "f47e3768631cd1628c1390d529811c911e0f6443",
+   "pr": 488,
+   "title": "[DRAFT] BBP circle-path natural extension: exact odd inverse, Fourier selection and electrical collision energy",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/circle-path-electric-natural-extension-2026-11-03",
+   "branch": "research/pi-selected-current-shift-coupling-2026-11-03",
+   "destination_commit": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+   "destination_integration_pr": 490,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "c0f9c3bb89c8cb473aa2c7edbd24b5ed20acf71d",
+   "merge_base_with_main_before": "c0f9c3bb89c8cb473aa2c7edbd24b5ed20acf71d",
+   "pr": 489,
+   "title": "[DRAFT] Source-selected shifted current energy, Gamma transport and three-trunk consolidation handoff",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/operational-axioms-observer-source-2026-11-04",
+   "branch": "research/source-sound-calculus-intrinsic-lcm-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "b96befcb671644e374272a8465ac247ac0d3f527",
+   "merge_base_with_main_before": "b96befcb671644e374272a8465ac247ac0d3f527",
+   "pr": 495,
+   "title": "[DRAFT] SUCC Source-Sound Calculus \u00d7 Intrinsic LCM \u2014 exact torsion gluing and BBP carry",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/observer-bridge-busy-beaver-coherence-2026-11-04",
+   "branch": "research/analytic-exile-frequency-ladder-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a0a2619578a88182c73420901c99994699eb2024",
+   "merge_base_with_main_before": "a0a2619578a88182c73420901c99994699eb2024",
+   "pr": 496,
+   "title": "[DRAFT] Analytic Exile: BBP Gamma(2) Abel-Tauberian boundary, Fourier Ward visibility and finite-tail ghosts",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/analytic-exile-frequency-ladder-2026-11-04",
+   "branch": "research/bbp-frobenius-prime-saturation-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "4383bd31340af700e312f13d7ef28af090c152d5",
+   "merge_base_with_main_before": "4383bd31340af700e312f13d7ef28af090c152d5",
+   "pr": 497,
+   "title": "[DRAFT] BBP Prime\u2013Frobenius self-shadow: sharp 6N reduced denominator and Gamma-null dual \u03c0 formula",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-frobenius-prime-saturation-2026-11-04",
+   "branch": "research/bbp-prime-character-primal-quotient-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "4ff640637d18b8161599402f7c6ba23388a63652",
+   "merge_base_with_main_before": "4ff640637d18b8161599402f7c6ba23388a63652",
+   "pr": 499,
+   "title": "[DRAFT] Prime-Frobenius \u03c7\u208b\u2084 self-quotient: two-state Gaussian primal, 8N denominator & source Weyl equivalence",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-prime-character-primal-quotient-2026-11-04",
+   "branch": "research/europa-weyl-source-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "bf103c4a25bbd83b6cfbad1dd77895928300ddd9",
+   "merge_base_with_main_before": "bf103c4a25bbd83b6cfbad1dd77895928300ddd9",
+   "pr": 500,
+   "title": "[Draft] Europa Weyl: restore the primal, bound pair-denominator loss, reconstruct signed beta arithmetic",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/europa-weyl-source-2026-11-04",
+   "branch": "research/dual-zero-cayley-real-carrier-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "7e91606f15dc5e4dbf4d9105f5110df3c4b7d6cd",
+   "merge_base_with_main_before": "7e91606f15dc5e4dbf4d9105f5110df3c4b7d6cd",
+   "pr": 502,
+   "title": "[DRAFT] Dual zero Fourier projectors \u00d7 rational/real Cayley BBP carrier and reciprocal 2-primary bridge",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gamma-prybar-checkpoint-capacity-2026-11-04",
+   "branch": "research/critical-chirp-ratchet-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "c9dfcdf057c4870f113e898464e4821c2ff5fedf",
+   "merge_base_with_main_before": "c9dfcdf057c4870f113e898464e4821c2ff5fedf",
+   "pr": 503,
+   "title": "[DRAFT] Critical Chirp Ratchet \u2014 exact 256/\u03c0 coherent threshold and Codex Astra Ultra Moonshot",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/dual-zero-cayley-real-carrier-2026-11-04",
+   "branch": "research/bbp-virtual-gauge-circle-chirp-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f3327bdce023fe3f68d4c5431b5a7c2b53dac2ed",
+   "merge_base_with_main_before": "f3327bdce023fe3f68d4c5431b5a7c2b53dac2ed",
+   "pr": 504,
+   "title": "[DRAFT] BBP virtual gauge circle: cross-sector cyclotomic norm ghost and radial high-frequency cancellation",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/critical-chirp-ratchet-2026-11-04",
+   "branch": "research/critical-chirp-source-audit-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "00b6385b6e7420b5e108e6766dcf2f7dda875f59",
+   "merge_base_with_main_before": "00b6385b6e7420b5e108e6766dcf2f7dda875f59",
+   "pr": 505,
+   "title": "[DRAFT] Critical chirp: normal counterseeds, radial cancellation and exact source audit",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/bbp-virtual-gauge-circle-chirp-2026-11-04",
+   "branch": "research/observer-lag-return-boundary-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "bc2d7b01b6b0a37cb79994e180758e98681aa68e",
+   "merge_base_with_main_before": "bc2d7b01b6b0a37cb79994e180758e98681aa68e",
+   "pr": 506,
+   "title": "[DRAFT] Two-clock BBP return: observer-lag boundary flux, sharp 1/log A obstruction and smooth-frame cancellation",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/observer-lag-return-boundary-2026-11-04",
+   "branch": "research/zero-frame-coupling-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "c49cc0951981883c8f9a66e3b9c27be18c4fd4b1",
+   "merge_base_with_main_before": "c49cc0951981883c8f9a66e3b9c27be18c4fd4b1",
+   "pr": 507,
+   "title": "[DRAFT] Zero-frame coupling: sharp transport loss and coupled lag selection obstruction",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zero-frame-coupling-2026-11-04",
+   "branch": "research/zero-frame-bispectrum-audit-2026-11-04",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "61cdf240d0c2e75afe934dde6c98ce71a783a832",
+   "merge_base_with_main_before": "61cdf240d0c2e75afe934dde6c98ce71a783a832",
+   "pr": 508,
+   "title": "[DRAFT] Post-Codex audit: nonlinear delayed BBP bispectrum and weaker carry-correlation gate",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zero-frame-bispectrum-audit-2026-11-04",
+   "branch": "research/tau-saddle-optimal-virtual-observer-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "16b0809b1f1426e77dad52381c3ac3fbeb187e3f",
+   "merge_base_with_main_before": "16b0809b1f1426e77dad52381c3ac3fbeb187e3f",
+   "pr": 509,
+   "title": "[DRAFT] \u03c4 saddle: optimal BBP radial observer, Lambert-W envelope and surviving angular current",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zero-frame-bispectrum-audit-2026-11-04",
+   "branch": "research/pointed-cocategory-bbp-haar-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "f7060c813a3d1642d60a6b9a58ec39bf4f900449",
+   "merge_base_with_main_before": "f7060c813a3d1642d60a6b9a58ec39bf4f900449",
+   "pr": 510,
+   "title": "[DRAFT] Pointed cocategory BBP gauge: source transport, coherent endpoint and sharper \u03c0 bridge",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/tau-saddle-optimal-virtual-observer-2026-11-05",
+   "branch": "research/paired-unit-zero-bell-coupling-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "378a77eefa084225f30a209c27a2b4bc54897e72",
+   "merge_base_with_main_before": "378a77eefa084225f30a209c27a2b4bc54897e72",
+   "pr": 511,
+   "title": "[DRAFT] Relational zero \u00d7 BBP Bell coupling: nontrivial time cohomology and exact radial return",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/paired-unit-zero-bell-coupling-2026-11-05",
+   "branch": "research/infinite-qubit-cluster-source-gluing-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "effbd923578a160ddbb792265a6a5ed311ff342f",
+   "merge_base_with_main_before": "effbd923578a160ddbb792265a6a5ed311ff342f",
+   "pr": 512,
+   "title": "[DRAFT] Infinite-qubit SUCC: compatible pure cluster field, GHZ no-go and many-body BBP phase gluing",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/infinite-qubit-cluster-source-gluing-2026-11-05",
+   "branch": "research/pauli-fekete-bbp-orbit-exclusion-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "727a97a006e929243e0fee1ab44cf52dc68e2c8f",
+   "merge_base_with_main_before": "727a97a006e929243e0fee1ab44cf52dc68e2c8f",
+   "pr": 513,
+   "title": "[DRAFT] Pauli\u2013Fekete BBP orbit exclusion: determinant-to-Weyl theorem and all-scale collision budget",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/pauli-fekete-bbp-orbit-exclusion-2026-11-05",
+   "branch": "research/zero-object-casimir-seed-pressure-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "4243b6c5dda90d49969c62f99b3f3aae73300ebe",
+   "merge_base_with_main_before": "4243b6c5dda90d49969c62f99b3f3aae73300ebe",
+   "pr": 514,
+   "title": "[DRAFT] Zero-object Casimir source field: exact seed-pressure variance and causal finite-zero boundary",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/pauli-fekete-bbp-orbit-exclusion-2026-11-05",
+   "branch": "research/gamma-orthogonal-sphere-solenoid-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "2ea21654bfe1f1ec1e4310ef5f71a653200f3e84",
+   "merge_base_with_main_before": "2ea21654bfe1f1ec1e4310ef5f71a653200f3e84",
+   "pr": 515,
+   "title": "[DRAFT] Gamma \u00d7 orthogonal sphere solenoids: Gaussian \u03c0 circle, Beta/Gamma transport and odd-cyclotomic deck rigidity",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gamma-orthogonal-sphere-solenoid-2026-11-05",
+   "branch": "research/gauge-coded-sphere-tower-russian-doll-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "56747eb11cd56de7a6f75dfbbab3cb94721d0427",
+   "merge_base_with_main_before": "56747eb11cd56de7a6f75dfbbab3cb94721d0427",
+   "pr": 516,
+   "title": "[DRAFT] Gauge-coded CP\u00b9 sphere tower: quantized arithmetic charge, source-blind energy no-go, and gapless solenoid",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/gauge-coded-sphere-tower-russian-doll-2026-11-05",
+   "branch": "research/prime-jet-signed-reservoir-archimedean-gauge-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "a2905c9e1770fea519193839433bdca4bd29336f",
+   "merge_base_with_main_before": "a2905c9e1770fea519193839433bdca4bd29336f",
+   "pr": 517,
+   "title": "[DRAFT] Prime-jet signed reservoir \u00d7 Gaussian four-sheet clock: exact spectra, gauge obstruction and Beta boundary",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/zero-object-casimir-seed-pressure-2026-11-05",
+   "branch": "research/yoneda-circle-collision-pressure-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "749931f0f357c60ef4e21879d96b0306999f428f",
+   "merge_base_with_main_before": "749931f0f357c60ef4e21879d96b0306999f428f",
+   "pr": 518,
+   "title": "[DRAFT] Observational Yoneda \u00d7 BBP: source-circle reconstruction and bounded-cell-pressure Haar criterion",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/prime-jet-signed-reservoir-archimedean-gauge-2026-11-05",
+   "branch": "research/prime-jet-volterra-boundary-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "cac249276f2354bed4f1218663b258770056cedd",
+   "merge_base_with_main_before": "cac249276f2354bed4f1218663b258770056cedd",
+   "pr": 519,
+   "title": "[DRAFT] Prime-jet Volterra boundary bound and Gamma absorption obstruction",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/yoneda-circle-collision-pressure-2026-11-05",
+   "branch": "research/selected-orbit-final-pin-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "dad940dc69ae02f71119e8fbb908cca98e6e0846",
+   "merge_base_with_main_before": "dad940dc69ae02f71119e8fbb908cca98e6e0846",
+   "pr": 520,
+   "title": "[DRAFT] Selected orbit: carry obstruction, exponential pressure criterion and finite Clausen cut",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/selected-orbit-final-pin-2026-11-05",
+   "branch": "research/critical-carry-observer-jets-fixed-radius-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "95490b46f986532e268bbcc4b8dd17838fdf4553",
+   "merge_base_with_main_before": "95490b46f986532e268bbcc4b8dd17838fdf4553",
+   "pr": 521,
+   "title": "[DRAFT] Critical four-pole carry truncation \u00d7 relative zero \u00d7 higher-order Yoneda source jets",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/critical-carry-observer-jets-fixed-radius-2026-11-05",
+   "branch": "research/history-first-shell-duality-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "cd6721585f42236b23d2d5ff8fa5bd160dddc213",
+   "merge_base_with_main_before": "cd6721585f42236b23d2d5ff8fa5bd160dddc213",
+   "pr": 522,
+   "title": "[DRAFT] History-first SUCC: causal shell/sphere duality, exact bookkeeping and observer-policy no-go",
+   "unique_content_discarded": false
+  },
+  {
+   "action": "close with provenance comment; branch retained",
+   "base_branch": "research/history-first-shell-duality-2026-11-05",
+   "branch": "research/main-xx-carry-transport-forge-2026-11-05",
+   "destination_commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "destination_integration_pr": 523,
+   "disposition": "INCORPORATED_BY_ANCESTRY",
+   "evidence": "git merge-base --is-ancestor <head> <destination_commit> == 0 (re-checked)",
+   "head": "8da6eefbb0e23b47dc81809d46ebb30e568fc2ce",
+   "merge_base_with_main_before": "8da6eefbb0e23b47dc81809d46ebb30e568fc2ce",
+   "pr": 524,
+   "title": "[DRAFT] Main XX proof forge: exact carry\u2013interval identity, stationary rigidity, same-forcing countermodel (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "RG1 completion identity (T_0=pi/16 to 40 digits), RG2 0<r(n)<1/n^2 (n>=2), RG3 classical, RG6 staircase and RG7 beta=1/5 countermodels proven; RG13 OPEN",
+    "reviewer": "Lagrange-B1 (same-model, read-only)"
+   },
+   "base_branch": "main",
+   "branch": "research/recursive-carrier-realization-gyroscope-2026-11-06",
+   "carried_by_leaves": [
+    532,
+    535,
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 2,
+     "success": 23
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "f45e4459f2efa6a94bfa5adcf8184c57aa028c55",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 10,
+   "own_changed_files": [
+    {
+     "blob": "2fefefa01a7a1f8e3b2c4cda7e00a792a1dfcb3f",
+     "path": "research/2026-11-06/realization_gyroscope/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "4f95a3425c503709c8f6548fb420cb942dc24679",
+     "path": "research/2026-11-06/realization_gyroscope/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "d2c97322699f7280b202dfe2c18909857e18e325",
+     "path": "research/2026-11-06/realization_gyroscope/INDEPENDENT_ORACLE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "1756014d45ff31341976ffb5b72a3265ff2226f5",
+     "path": "research/2026-11-06/realization_gyroscope/LOCAL_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "739901fedae0f97a5be6d03e998a9f4cad285866",
+     "path": "research/2026-11-06/realization_gyroscope/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "c71e215b2477b6e11849001c68e1f9159bc71cf7",
+     "path": "research/2026-11-06/realization_gyroscope/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "41513a3ae420c191ff94b4312f9262cd6e38605d",
+     "path": "research/2026-11-06/realization_gyroscope/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "cebf2a67a1856efc5b4a69f66851b35e26e5d997",
+     "path": "research/2026-11-06/realization_gyroscope/gyroscope.py",
+     "status": "A"
+    },
+    {
+     "blob": "0a989756fd9de29d255ac2c7762bc01aa5d1e015",
+     "path": "research/2026-11-06/realization_gyroscope/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "ec3a35ebc6d5a87e3dfff1aef4bcf100c10fe7ba",
+     "path": "research/2026-11-06/realization_gyroscope/test_gyroscope.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "0644a8d9a8e24d944f13a4b99525d71b828f3702",
+    "c40dc0d94041a21b136be8af46d28f1c00b09493",
+    "f45e4459f2efa6a94bfa5adcf8184c57aa028c55"
+   ],
+   "pr": 525,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Recursive carrier\u2013observer realization, joint gauge reconstruction and radix covariance (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "J9 finite entropy-deficit -> joint-Weyl inequality, J15, J18/J19 proven; J20 OPEN (criterion); signed_certificate error budget sound; six certified |J_A(h)| reproduced at 1400 digits",
+    "reviewer": "Lagrange-B1 (same-model, read-only)",
+    "scope_notes": [
+     "THEOREMS.md:140,:144 and CLAIM_LEDGER.md:10 call sigma_n=(8(n+1)-7) mod 7 a source-derived pole clock; per its own SOURCE_CLOCK_AUDIT.md:7 it is the index-only period-7 clock (n+1) mod 7 carrying no coefficient information"
+    ]
+   },
+   "base_branch": "research/recursive-carrier-realization-gyroscope-2026-11-06",
+   "branch": "research/joint-character-entropy-source-2026-11-06",
+   "carried_by_leaves": [
+    532,
+    535,
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 2,
+     "success": 23
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "d2960bacf939fbdfa76c81648b031e182e97d1a6",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 30,
+   "own_changed_files": [
+    {
+     "blob": "7033632866aa55dd1669557cb3f424900001c9c4",
+     "path": "research/2026-11-06/joint_character_entropy/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "55381628367148db0bbd759fa55c8ab52c274b0e",
+     "path": "research/2026-11-06/joint_character_entropy/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "9416d47029feb1a10e1a14391a628351ea941b06",
+     "path": "research/2026-11-06/joint_character_entropy/FRESH_HOLDOUT_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "b56c6b424944222bf4c2ee65c3be97c793d65891",
+     "path": "research/2026-11-06/joint_character_entropy/HOLDOUT_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "ecce13a70e29a829e8ced89bb2cdc641e7633910",
+     "path": "research/2026-11-06/joint_character_entropy/INDEPENDENT_ORACLE_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "f0596c81df330d9a3a53cc18701ab868b11221b1",
+     "path": "research/2026-11-06/joint_character_entropy/LOCAL_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "026ac350c1aa3716fac8e26604044fcdf9fa160b",
+     "path": "research/2026-11-06/joint_character_entropy/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "0a9cdd8ec721b8ac713a0f764b2334f7abe1ba79",
+     "path": "research/2026-11-06/joint_character_entropy/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "fca26e51bd80caa875d6f35634da76d683052795",
+     "path": "research/2026-11-06/joint_character_entropy/PREREG_ADDENDUM.md",
+     "status": "A"
+    },
+    {
+     "blob": "667d2d0703fe14c14a04c05029d08b7c84e0654a",
+     "path": "research/2026-11-06/joint_character_entropy/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "7bc954daeb782550d292b9850d87461635db9a6a",
+     "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_AUDIT.md",
+     "status": "A"
+    },
+    {
+     "blob": "2482a7cc5f53a660239ad1630f25f593bcd9fb56",
+     "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_AUDIT_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "c5c1df0cb41b436768f7e47c35418c843d73f26d",
+     "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_AUDIT_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "5d6c590f75d1d9fdba2b1883e8811b4e3182721d",
+     "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_AUDIT_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "083a9ce7a977c9626b836e737cd465bb7f0cc5a6",
+     "path": "research/2026-11-06/joint_character_entropy/SOURCE_CLOCK_PREREG.md",
+     "status": "A"
+    },
+    {
+     "blob": "b4473614567b903ea2b4daa68e739c40e36b56f9",
+     "path": "research/2026-11-06/joint_character_entropy/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "8c5436c9b96531be3646628861d7c6c5d3db386c",
+     "path": "research/2026-11-06/joint_character_entropy/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "ca425a220b6fb8d7c6a2dfa4179024cc7aef5f68",
+     "path": "research/2026-11-06/joint_character_entropy/entropy_to_character.py",
+     "status": "A"
+    },
+    {
+     "blob": "9d89ef1e3c7bedc3c93ae23f0f814cc591ca85b1",
+     "path": "research/2026-11-06/joint_character_entropy/fresh_holdout_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "4edfc3448b919f2ec33a369b68dd39c60ac2b863",
+     "path": "research/2026-11-06/joint_character_entropy/holdout_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "49d7c505bcce5b05001833565dcd35338002a30a",
+     "path": "research/2026-11-06/joint_character_entropy/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "e25e78420b6e44c86d0d817e19932fbb53ae8c75",
+     "path": "research/2026-11-06/joint_character_entropy/joint_entropy.py",
+     "status": "A"
+    },
+    {
+     "blob": "8a6795f0d583bbb8db7482d278fa09981e3ffe51",
+     "path": "research/2026-11-06/joint_character_entropy/receipt.py",
+     "status": "A"
+    },
+    {
+     "blob": "9017f33055440af16b427d16c45dcbbf228b4537",
+     "path": "research/2026-11-06/joint_character_entropy/signed_certificate.py",
+     "status": "A"
+    },
+    {
+     "blob": "8ab9157734086088437bdf5e609bde4fc86d886c",
+     "path": "research/2026-11-06/joint_character_entropy/source_clock_audit.py",
+     "status": "A"
+    },
+    {
+     "blob": "4089c66d6316ce5ca6d4ad47cccbba01802e45d2",
+     "path": "research/2026-11-06/joint_character_entropy/test_entropy_to_character.py",
+     "status": "A"
+    },
+    {
+     "blob": "7602d2bebe681e8312c79344b18ba58942951287",
+     "path": "research/2026-11-06/joint_character_entropy/test_fresh_holdout.py",
+     "status": "A"
+    },
+    {
+     "blob": "1d334bcd1e1a7adaa818bda49c3ee07129b85801",
+     "path": "research/2026-11-06/joint_character_entropy/test_joint_entropy.py",
+     "status": "A"
+    },
+    {
+     "blob": "bbd4b032e5efe371cb34085e384d6d7a0ff16263",
+     "path": "research/2026-11-06/joint_character_entropy/test_signed_certificate.py",
+     "status": "A"
+    },
+    {
+     "blob": "a1cf5b2bff58e3e75ae8f02282c244762aa1d5c5",
+     "path": "research/2026-11-06/joint_character_entropy/test_source_clock_audit.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "d7b5b7b330394992eb43fe533f10962b9c0e9544",
+    "6659899812abee3ae6625907212c8d991dfbf6ee",
+    "0f6724054f940721ab61d557fc1bdffe38032fae",
+    "a0289b84295b4fdef3a7f3678d6c3cfdd5ea881c",
+    "d2960bacf939fbdfa76c81648b031e182e97d1a6"
+   ],
+   "pr": 526,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Joint character II: source-clock entropy, signed Weyl transfer and certified BBP holdouts (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "DB4-DB7, DB5 V(0)=0 (also V(0)=0 mod 2^1024), DB9 isometry, DB10, DB11-DB13 and H-shadow/gauge countermodels proven",
+    "reviewer": "Lagrange-B1 (same-model, read-only)",
+    "scope_notes": [
+     "PROVENANCE: the 2-adic zero boundary is already on main since 2026-10-27 (research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md:90ff; observational_succ/bbp_binwindow_conjugacy.py, bbp_two_adic.py). DB-03/DB-04 are independent rederivations; new content = DB10 count-bound packaging and DB-06/DB-07 countermodels. CLAIM_LEDGER.md:28 'real SUCC-local mathematical advances' overstates."
+    ]
+   },
+   "base_branch": "research/joint-character-entropy-source-2026-11-06",
+   "branch": "research/bbp-2adic-boundary-conservation-2026-11-06",
+   "carried_by_leaves": [
+    532,
+    535,
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "c550cd4089db0367464ff38884797e06359fbcbc",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 13,
+   "own_changed_files": [
+    {
+     "blob": "1458e8117f7a7e4e2d8ffa2299efc19be3b8156c",
+     "path": "research/2026-11-06/padic_boundary/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "092ffb899580b13cf18bc633e5cfa47d436ca282",
+     "path": "research/2026-11-06/padic_boundary/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "d44062d8dbc2bb4ce8af1f46235e9a44ed74f135",
+     "path": "research/2026-11-06/padic_boundary/INDEPENDENT_ORACLE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "92b7f16c2d8ca96768c38c23fd50cd45cb524308",
+     "path": "research/2026-11-06/padic_boundary/LOCAL_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+     "path": "research/2026-11-06/padic_boundary/LOCAL_TEST_STDOUT.txt",
+     "status": "A"
+    },
+    {
+     "blob": "463e1db497ddf161ea53fec9901114b2c634619b",
+     "path": "research/2026-11-06/padic_boundary/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "69c9d6a4f020ae81ab5d3f5b846c6720bdeae414",
+     "path": "research/2026-11-06/padic_boundary/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "3b1d764dc240c4aa1236c629a260496110db7c53",
+     "path": "research/2026-11-06/padic_boundary/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "b5ac5fa4bde6c3a58fd6d7b23194940da2aa84b5",
+     "path": "research/2026-11-06/padic_boundary/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "f3eac9e2dbbec91359bc1718bc17d48572c6d99f",
+     "path": "research/2026-11-06/padic_boundary/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "0308aae798e18502c7ec423cb027a4a3f068b2c1",
+     "path": "research/2026-11-06/padic_boundary/bbp_dual_boundary.py",
+     "status": "A"
+    },
+    {
+     "blob": "c22666614d74a4d645609669137e65d9b439130e",
+     "path": "research/2026-11-06/padic_boundary/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "820acde3e61b1a2271dc28f31a9b196499271d54",
+     "path": "research/2026-11-06/padic_boundary/test_bbp_dual_boundary.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "1f580c21003222946001bc1ceb04b7bbb4901106",
+    "c550cd4089db0367464ff38884797e06359fbcbc"
+   ],
+   "pr": 527,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Original BBP 2-adic zero and exact Haar residue theorem \u00d7 dual-boundary controls (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "RS1-RS11a proven; RS8 decoder floor 1/34 and RS-06 odometer->x16 Haar-factor impossibility; RS-08 witnesses reproduce",
+    "reviewer": "Lagrange-B1 (same-model, read-only)",
+    "scope_notes": [
+     "THEOREMS.md:103 RS6-RS8 use only irrationality of pi/16 and hold for every irrational beta; 'for the original selected source' overstates specificity"
+    ]
+   },
+   "base_branch": "research/bbp-2adic-boundary-conservation-2026-11-06",
+   "branch": "research/adelic-odometer-real-phase-bridge-2026-11-06",
+   "carried_by_leaves": [
+    532,
+    535,
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 13,
+     "success": 18
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "45c5d41435fdf94998d81901b0e58b9fa7775106",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 21,
+   "own_changed_files": [
+    {
+     "blob": "b33215d876d824e743e08db2fcd1271f47a21708",
+     "path": "research/2026-11-06/adelic_return_bridge/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "8f4dc03699ec8f6c61761b4ec096c2f8b0c91db8",
+     "path": "research/2026-11-06/adelic_return_bridge/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "322fbaed10500da76ec2625f9a5173a7b71d0bc4",
+     "path": "research/2026-11-06/adelic_return_bridge/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "c890adefcabcf576f01222bcced847032667ad8c",
+     "path": "research/2026-11-06/adelic_return_bridge/INDEPENDENT_ORACLE_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "937b20da8f786af0cafcdb9c437d22d4cd8237f0",
+     "path": "research/2026-11-06/adelic_return_bridge/INITIAL_FAILED_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "b721e81f6ab632b67135764ac3b16800c23f77a3",
+     "path": "research/2026-11-06/adelic_return_bridge/LOCAL_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+     "path": "research/2026-11-06/adelic_return_bridge/LOCAL_TEST_STDOUT.txt",
+     "status": "A"
+    },
+    {
+     "blob": "5d121fbbfd613c6fb87899e6efe1b2296e7cad82",
+     "path": "research/2026-11-06/adelic_return_bridge/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "42aaf9e0807bc1976f1797eebe5e12534d18d264",
+     "path": "research/2026-11-06/adelic_return_bridge/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "b21739fe6e29ad38e21bdb0d4a7d1f61794d8036",
+     "path": "research/2026-11-06/adelic_return_bridge/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "e79476c2c557c5900b723a8f5378dfddfe67309d",
+     "path": "research/2026-11-06/adelic_return_bridge/SYMPY_AUDIT_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "c05b49550fa23f5333bf34cc2f8e12431163a1f7",
+     "path": "research/2026-11-06/adelic_return_bridge/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "cf5f218c064ea89a857e441e1ebe2bcf273c2467",
+     "path": "research/2026-11-06/adelic_return_bridge/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "f3c042c9d21c0ecc1f9c07e35d7885f343312bea",
+     "path": "research/2026-11-06/adelic_return_bridge/WRONG_SEAM_NEGATIVE_CONTROL.json",
+     "status": "A"
+    },
+    {
+     "blob": "fa4d648728d97d46cbe8b1ee88617c1285b12825",
+     "path": "research/2026-11-06/adelic_return_bridge/bridge.py",
+     "status": "A"
+    },
+    {
+     "blob": "2d5152f765afb4c839af8ea57fecc5ac24cebf5a",
+     "path": "research/2026-11-06/adelic_return_bridge/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "8be95ac8cc7f45af8c0fa1581a9f719b3ca6244d",
+     "path": "research/2026-11-06/adelic_return_bridge/receipt.py",
+     "status": "A"
+    },
+    {
+     "blob": "9d56fc3db80b4d31e277d0b8b1ca23d830550e2b",
+     "path": "research/2026-11-06/adelic_return_bridge/run_probes.py",
+     "status": "A"
+    },
+    {
+     "blob": "21b7487c2ac83fb5676fd77148659ff9e4f96c8a",
+     "path": "research/2026-11-06/adelic_return_bridge/symbolic_audit.py",
+     "status": "A"
+    },
+    {
+     "blob": "7b8efd0809b08e7de14138acf92cccb54ad23b1e",
+     "path": "research/2026-11-06/adelic_return_bridge/test_bridge.py",
+     "status": "A"
+    },
+    {
+     "blob": "1cfd0d17ea0eff75d59858275cd1aeca1f2df188",
+     "path": "research/2026-11-06/adelic_return_bridge/wrong_seam_probe.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "c0a3bda86236486421a6ffd0502ee366f851e8f5",
+    "414f3a35f6e8b4b82cd8d49e5064ab063b5bc106",
+    "45c5d41435fdf94998d81901b0e58b9fa7775106"
+   ],
+   "pr": 528,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] BBP cross-place return: exact 2-adic source clone \u00d7 real carry seam \u00d7 expansivity (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "AT1-AT7, AT9 (digamma closed form, 170+ digits), AT10 proven; AT3 birth table exhaustively checked 7<=p<2000",
+    "reviewer": "Lagrange-B1 (same-model, read-only)",
+    "scope_notes": [
+     "Ledger/THEOREMS ID mismatch: ledger AT-04 = hostile control inside THEOREMS AT-03 (:88-100); ledger AT-05/AT-06 = THEOREMS AT-04/AT-05; supplement keys by THEOREMS ids",
+     "AT3 birth table already on main: observational_succ/bbp_cyclotomic_birth.py:21-26 (birth_index, 2026-10-24)"
+    ]
+   },
+   "base_branch": "research/adelic-odometer-real-phase-bridge-2026-11-06",
+   "branch": "research/odd-place-adelic-triangle-2026-11-06",
+   "carried_by_leaves": [
+    535
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "2016e3bd96b3aefc3902380bce8e0ca0bac9d547",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 15,
+   "own_changed_files": [
+    {
+     "blob": "0f20fb548f93d5bb83f684932f01dcd01d15b3da",
+     "path": "research/2026-11-06/odd_place_triangle/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "5f50e984610851f4d353d0a438d247fea8ace58b",
+     "path": "research/2026-11-06/odd_place_triangle/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "bae4181a42545e76bdcc3f71a4b514b949e0277e",
+     "path": "research/2026-11-06/odd_place_triangle/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "f5e655dec5826c15ba7f4171222d8ea19186dcaf",
+     "path": "research/2026-11-06/odd_place_triangle/INDEPENDENT_ORACLE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "470f92d458686618549e28c0120fd768035272ee",
+     "path": "research/2026-11-06/odd_place_triangle/LOCAL_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+     "path": "research/2026-11-06/odd_place_triangle/LOCAL_TEST_STDOUT.txt",
+     "status": "A"
+    },
+    {
+     "blob": "886f99c58a4a831ca79801399e5a43f9e3f2e4dc",
+     "path": "research/2026-11-06/odd_place_triangle/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "f689009e6204908183ae1310db3f6f2e676d9228",
+     "path": "research/2026-11-06/odd_place_triangle/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "2f8cddd9b1691617a0945e2f8b564d3c7df7f589",
+     "path": "research/2026-11-06/odd_place_triangle/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "20f3935748f2c4fcdb3e0f359a011e801570cf35",
+     "path": "research/2026-11-06/odd_place_triangle/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "a60336f9e981ceb305340e5c26e8f0bbc2d97445",
+     "path": "research/2026-11-06/odd_place_triangle/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "ac34b655ca9e72cc7971282cc6be5b98dc0f1b1c",
+     "path": "research/2026-11-06/odd_place_triangle/adelic_triangle.py",
+     "status": "A"
+    },
+    {
+     "blob": "267e01b6cecdc6755c1906f7d65561d95f7f8fa6",
+     "path": "research/2026-11-06/odd_place_triangle/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "d5864990e7547e0963312ae9dc62fb1cbcf46063",
+     "path": "research/2026-11-06/odd_place_triangle/run_probes.py",
+     "status": "A"
+    },
+    {
+     "blob": "ccb93c39195b356e7ea713f4c6bd4b511cbb0d91",
+     "path": "research/2026-11-06/odd_place_triangle/test_adelic_triangle.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "c0eab859aa9a3762ce15fec6da44b1d2fcbb6b74",
+    "2016e3bd96b3aefc3902380bce8e0ca0bac9d547"
+   ],
+   "pr": 529,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Odd-prime adelic BBP characters \u00d7 Gauss clocks \u00d7 silver-Gamma co-dual triangle (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "TS5/TS10 closed forms agree to 40 digits; numerator identity exact; TS-09 signs certified finite",
+    "reviewer": "Lagrange-B2 (same-model, read-only)",
+    "scope_notes": [
+     "research/2026-11-06/triangle_signed_return/CLAIM_LEDGER.md:14-16 vs :33-36 \u2014 IDs TS-09, TS-10, TS-11 each carry two different claims; second table to be read as TS-13..TS-16 (supplement uses the disambiguated IDs)"
+    ]
+   },
+   "base_branch": "research/adelic-odometer-real-phase-bridge-2026-11-06",
+   "branch": "research/triangle-silver-return-spectrum-2026-11-06",
+   "carried_by_leaves": [
+    532,
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 28,
+   "own_changed_files": [
+    {
+     "blob": "0d93474c6eb54550c6f87102b263a3b1cf0efeab",
+     "path": "research/2026-11-06/triangle_signed_return/CERTIFIED_FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "51a5ebdd5df786fd1cf3bedf5912e38fbe635507",
+     "path": "research/2026-11-06/triangle_signed_return/CERTIFIED_FINITE_THEOREM.md",
+     "status": "A"
+    },
+    {
+     "blob": "846d6d9bb1b1f9b8d56ab5e43128f8b788fef12c",
+     "path": "research/2026-11-06/triangle_signed_return/CERTIFIED_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "8edc34bb2220d819b31d837edc6cfb21b2816cea",
+     "path": "research/2026-11-06/triangle_signed_return/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "b1efa00bd9c1d728ad2b48346857f21e4f2b41e5",
+     "path": "research/2026-11-06/triangle_signed_return/COMPLETE_FOCUSED_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "be0d415b99a890b162528d1fe67fe51b3c8a36eb",
+     "path": "research/2026-11-06/triangle_signed_return/FAILED_SCRATCH_LOG.md",
+     "status": "A"
+    },
+    {
+     "blob": "bbfb5f0fc614857da847bd95dc193f8648bd3462",
+     "path": "research/2026-11-06/triangle_signed_return/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "91ae46709a4ab299fafe1b7155139deb7c86e3f3",
+     "path": "research/2026-11-06/triangle_signed_return/FIRST_MOMENT_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "f1fa8225c1c691c4e34e869f0545e5b9f347fd07",
+     "path": "research/2026-11-06/triangle_signed_return/FIRST_MOMENT_THEOREM.md",
+     "status": "A"
+    },
+    {
+     "blob": "0b98d1bcba27c4200b33812e4063b116a096b7ba",
+     "path": "research/2026-11-06/triangle_signed_return/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "cd07de9486a8c4ba36b53bf532296273ada26580",
+     "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "342aa6f1b6b995694a74e1a6ec147e75c7cc16ac",
+     "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_CARRY_BORROW.md",
+     "status": "A"
+    },
+    {
+     "blob": "f2c6b25fbe5c688a6ced2e3b69098369da0a52c2",
+     "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_GAMMA_MOMENT.md",
+     "status": "A"
+    },
+    {
+     "blob": "285d5223c5cb08079e1a988606aff12c1cf0d5d8",
+     "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_INTERVAL.md",
+     "status": "A"
+    },
+    {
+     "blob": "3b3e18196d6ae20787d65bb3a79c31c55bc83a5d",
+     "path": "research/2026-11-06/triangle_signed_return/PREREGISTRATION_SHELL.md",
+     "status": "A"
+    },
+    {
+     "blob": "b53fbceb16481b0ae9615543d3339f72b69a7653",
+     "path": "research/2026-11-06/triangle_signed_return/SYMBOLIC_AUDIT_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "a26b6a94e09d04e5b0ee6e8eccfad2f20e90a260",
+     "path": "research/2026-11-06/triangle_signed_return/SYMBOLIC_FIRST_MOMENT_AUDIT_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "c2c30e671f85dff65510935f2b5bd214b526e675",
+     "path": "research/2026-11-06/triangle_signed_return/TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "42a57fa62402361ed8bfcff8bbf21f89d3791e26",
+     "path": "research/2026-11-06/triangle_signed_return/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "ec40751e46bc2fffce84020a5071c495dbe671d5",
+     "path": "research/2026-11-06/triangle_signed_return/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "83c4ffc85e7b374839b68f6850b1527e4ea24aa9",
+     "path": "research/2026-11-06/triangle_signed_return/certified_finite.py",
+     "status": "A"
+    },
+    {
+     "blob": "cb0990c27c6c50747e033fdd152c5a2aa4d54bde",
+     "path": "research/2026-11-06/triangle_signed_return/experiment.py",
+     "status": "A"
+    },
+    {
+     "blob": "f5f94ed95fcb2e6ab43ccaac3269323eb31cd2ab",
+     "path": "research/2026-11-06/triangle_signed_return/first_moment.py",
+     "status": "A"
+    },
+    {
+     "blob": "4989aa08688b30fc10f811213ac5eb1e0b61db32",
+     "path": "research/2026-11-06/triangle_signed_return/symbolic_audit.py",
+     "status": "A"
+    },
+    {
+     "blob": "edd9eb6ecbe37381e7f5b9d2986dbf704de4372f",
+     "path": "research/2026-11-06/triangle_signed_return/symbolic_first_moment_audit.py",
+     "status": "A"
+    },
+    {
+     "blob": "2f7ac9500eb3d301a12e2ee9ba6302fc3001e2fa",
+     "path": "research/2026-11-06/triangle_signed_return/test_certified_finite.py",
+     "status": "A"
+    },
+    {
+     "blob": "6783e65967dbe47cf8bb58ef6d7a37679e4db9c2",
+     "path": "research/2026-11-06/triangle_signed_return/test_experiment.py",
+     "status": "A"
+    },
+    {
+     "blob": "79c14faaf336179639f205da276d8f69ac17a04e",
+     "path": "research/2026-11-06/triangle_signed_return/test_first_moment.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "b59df1d6f7faa3d77b050cef86f79d2f4ed5747e",
+    "ab50d7f49eb96c611b86e15504dce51898c8d696",
+    "db6d9f0c0cb05399dcb4c7710eae287a6b8252ce",
+    "e8b362cf32fd0f059e711a5b5518f7f4cc8a69c2",
+    "aa10c0140c685e78269442277c1f941356203093",
+    "06e597257ec80eed96a427b32055945bcf56462b",
+    "f5f6e2eea81da06c2df7c925511e957d444e58a1",
+    "340ff8c8576b0b8d693de613405557965a65807c",
+    "ccc4faa43954aa6616663cdff5af9356e4f49672",
+    "c2f468072cb2c35428cfe210b3dbbaa4ba5cf344",
+    "3ccb8cbbf6d15c6bc27a61ef4d8b74d415269d20",
+    "fc99c356b849a4b1450c6f40a3ee996c08df59e3",
+    "a6cff4a6539e31ee10089100f775e65462370c5c",
+    "44408049c0f67cf5d88a8fc599416d40dd46a43e",
+    "d9eac752bb33b2a9eb1a4ba1b4f99510e321a5b9",
+    "a3123eddde1cba9ebcaab7201b63ea507d659df5",
+    "112da912a78f991d6bdef12f9e1c8d649a280c8e",
+    "0db13d280a7d88c52aa51f62f3d7c5dbdeca8e4f",
+    "bdac47ae950d5b38a7920376d6299f4bb4daea38",
+    "794857ae97e7fe2ec46371f5c2b5d1d5dac917a8",
+    "830b9962bbb8120ad1f1999e3e197c8e5b1df89b",
+    "c242c3b646b3f0baec53e43cfb52872ae1015389",
+    "35562a7ddcb61b0c33b6234cbc0589b9009bbd6e",
+    "8ddb9151e78f925bad36458f5454a6c668808bad",
+    "311ad2396aa279eb43eeba032cd83029e0a721a4",
+    "f7331a62693c8173a8f64ada7a70e9e1c3fc96c4",
+    "a6f70a7bc104adb9987ef248f6754e9bad5ef7d5",
+    "ea15d4e19783432cb740a619561a43489c51b10c",
+    "a890df3e666e8be05c82389990d20000213af65c",
+    "ac459221b004c4520155e0aa77acab6cda9c965a",
+    "e9cb78481d4a3d209db777e41e760db0d5215f63",
+    "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749"
+   ],
+   "pr": 530,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] BBP triangle carry seam \u00d7 certified signed returns \u00d7 exact Gamma\u2013silver moment (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "IT1 gluing checked step by step; IT3/IT5 conditional, premises OPEN",
+    "reviewer": "Lagrange-B2 (same-model, read-only)"
+   },
+   "base_branch": "research/triangle-silver-return-spectrum-2026-11-06",
+   "branch": "research/bbp-infinity-thread-mesoscopic-gluing-2026-11-06",
+   "carried_by_leaves": [
+    532,
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled"
+    ],
+    "tally": {
+     "cancelled": 8,
+     "success": 23
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "06b46d5715153412215947a0e9ee4800c9bd9a5f",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 8,
+   "own_changed_files": [
+    {
+     "blob": "4eb711aa5e5e537a6155dfa3f340beb7084c5abd",
+     "path": "research/2026-11-06/infinity_thread/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "d591136e9ccda1135d1cdc1a2693436b3f14677e",
+     "path": "research/2026-11-06/infinity_thread/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "a35c7f627822fce391944540cd98be58bafc053d",
+     "path": "research/2026-11-06/infinity_thread/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "f91fc8e80f106ca48bd4c91aebe516a8a12f3066",
+     "path": "research/2026-11-06/infinity_thread/TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "d4e8dcd84e1a4e631e7a1e153dc511c9df046d7c",
+     "path": "research/2026-11-06/infinity_thread/THEOREM.md",
+     "status": "A"
+    },
+    {
+     "blob": "b491de16a1eabf0939f620ee411c921021f28a9f",
+     "path": "research/2026-11-06/infinity_thread/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "2f84201be3dd82797bdd95d5145d4ecd6af63327",
+     "path": "research/2026-11-06/infinity_thread/probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "60197724eb1f4429ff6ca0e4f214f7997567a1b5",
+     "path": "research/2026-11-06/infinity_thread/test_probe.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "6dc9759cba17de24910700da4f7b8181e2889ed6",
+    "c60fe0323553ce77abbc43acc482191e055c5020",
+    "6ff6298cd2a33b58190d76a915ba202ea356419a",
+    "5f8d03333e8efa0d31c0fad1d8aaa429117ab8de",
+    "d1b33b69682f60cfcd658262a3d781c772866835",
+    "65fbb5c119978944c118d5c81762b26b900ec6f2",
+    "278ebe90706885364e44d4048b90c9efe1845793",
+    "06b46d5715153412215947a0e9ee4800c9bd9a5f"
+   ],
+   "pr": 531,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] SUCC infinity thread: averaged return gluing \u00d7 open source-selected Poisson contraction (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "PF7 5<=liminf log d_n/n<=limsup<=8 (unconditional PNT/PNT in APs mod 4); exact sweep n=8..300 only declared p=19 exception; PF9 Galois-orbit Haar; PF10 conditional; spectral gap OPEN",
+    "reviewer": "Lagrange-B2 (same-model, read-only)"
+   },
+   "base_branch": "research/bbp-infinity-thread-mesoscopic-gluing-2026-11-06",
+   "branch": "research/prime-frobenius-denominator-and-spectral-gap-2026-11-06",
+   "carried_by_leaves": [
+    532
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "f6560d9378b76ec4bca2e8b2bfbef591e0020fa3",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 17,
+   "own_changed_files": [
+    {
+     "blob": "36f906157e7d983f9abd3080893b70ad014aeaec",
+     "path": "research/2026-11-06/prime_frobenius_spectral/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "e990cc099393b149518b0a20c371dd7a0c7376d5",
+     "path": "research/2026-11-06/prime_frobenius_spectral/FAILED_SCRATCH.md",
+     "status": "A"
+    },
+    {
+     "blob": "88efc12f8609d770f48e149706bf4c917248e47c",
+     "path": "research/2026-11-06/prime_frobenius_spectral/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "5780c6b588f7a9afe1c12ba1d9a43e87d2ba0cd3",
+     "path": "research/2026-11-06/prime_frobenius_spectral/GALOIS_SELECTOR_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "85fc48b9873a2e072a906e8a362450f9940acf9f",
+     "path": "research/2026-11-06/prime_frobenius_spectral/GALOIS_SELECTOR_THEOREM.md",
+     "status": "A"
+    },
+    {
+     "blob": "78a99449f8db9b167521f8f88044efdea72df599",
+     "path": "research/2026-11-06/prime_frobenius_spectral/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "e432193bfd32b57367fdb3946ced5f464bcaa993",
+     "path": "research/2026-11-06/prime_frobenius_spectral/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "76a120e57d5bd6148c10f2327a7ba0eb0c56a0e0",
+     "path": "research/2026-11-06/prime_frobenius_spectral/PREREGISTRATION_GALOIS_SELECTOR.md",
+     "status": "A"
+    },
+    {
+     "blob": "c7b8ebd2548b00bd95a7f997da02f27988b56a07",
+     "path": "research/2026-11-06/prime_frobenius_spectral/PREREGISTRATION_PRIME_EXTENSION.md",
+     "status": "A"
+    },
+    {
+     "blob": "444f378858d29dbbdfb8ad53f4e2e480c3e6a125",
+     "path": "research/2026-11-06/prime_frobenius_spectral/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "a1e5ee39d2e192abf7f2f2f4cb59be3a124cf7a2",
+     "path": "research/2026-11-06/prime_frobenius_spectral/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "05b57872ad87b7327d0302c714e0473938149a63",
+     "path": "research/2026-11-06/prime_frobenius_spectral/full_prime.py",
+     "status": "A"
+    },
+    {
+     "blob": "54fdb76819a5e8015616aec39dd44538b382388d",
+     "path": "research/2026-11-06/prime_frobenius_spectral/galois_selector.py",
+     "status": "A"
+    },
+    {
+     "blob": "027e82bd00d33e368025749dd28f64dd73e56006",
+     "path": "research/2026-11-06/prime_frobenius_spectral/prime_certificate.py",
+     "status": "A"
+    },
+    {
+     "blob": "b5ee0676f5fb6075cbfbbf3f5abd0000b87bbc56",
+     "path": "research/2026-11-06/prime_frobenius_spectral/spectral_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "21d2fa239a094409c1864d7bc04d28ef240bab2c",
+     "path": "research/2026-11-06/prime_frobenius_spectral/test_galois_selector.py",
+     "status": "A"
+    },
+    {
+     "blob": "3db874037a04dfc915c8a7d2e38ebc4be24aca2f",
+     "path": "research/2026-11-06/prime_frobenius_spectral/test_prime_spectral.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "5bf2668a948af77881b36fddcc26cf177eb8ab8c",
+    "8631d43431f6d2ca119bc3ad9ef11f493bdeb8d2",
+    "b5ab84a5bcebd87213e811f12727249068dc9cdf",
+    "7433405b475b7011652aef3d617d227c8a55d873",
+    "39a073b3e7500cb18883696910bb218881c7863f",
+    "d11576ac09ee0464b18eaa286800d329ab23084a",
+    "ceecdc6c00c62985648b99c400cd648a4e2fef8c",
+    "4aadaefbef2a8dc55c319894623c5b646490ccf2",
+    "0dce285dc1803b70f84be157946ea6fac4038ec5",
+    "b3479cded5dd16642d4be25a4ab0cba02eb0e795",
+    "d2029008ffd4e9739a7513056e0a9a901a5d4b3b",
+    "8816411744ccf4a4455e685fbaed90c2d4adb1c5",
+    "b75cdb7760e13b65a9f7bc0250d0a201f039e831",
+    "acc5960fedadf125abe05fbf80cce2e7ade349c5",
+    "306afcb43d343a2b8d56695535d95713b3f90753",
+    "c6f59254b422d728b28f82fa771bd29b80e2f906",
+    "370f7ea0155b74a9b275f01b2ed161fab5c2a8e7",
+    "65e0bbaa427a57c864ea43367a5bdbe12f1cc7d0",
+    "5d3440ff75ddfd2ad470265f215b49425489cb4c",
+    "220bcda46a0366e370d44598293bc2465b1fdb63",
+    "9cce6fda5a7e6db15f1fbbe3e37d22ea49b62d03",
+    "1a78c3a5457f41812c2b9a29263380c41bb89e11",
+    "f6560d9378b76ec4bca2e8b2bfbef591e0020fa3"
+   ],
+   "pr": 532,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] BBP prime-Frobenius denominator \u0398(n) \u00d7 Galois Haar \u00d7 selected spectral gap OPEN",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "SE4 energy transport O(H^2/N) demonstrated; SE3 conditional",
+    "reviewer": "Lagrange-B2 (same-model, read-only)"
+   },
+   "base_branch": "research/bbp-infinity-thread-mesoscopic-gluing-2026-11-06",
+   "branch": "research/spectral-obstruction-selected-seed-2026-11-06",
+   "carried_by_leaves": [
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "34d1c1f40b34f2dcf76283f307062069c87a579c",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 8,
+   "own_changed_files": [
+    {
+     "blob": "30a18f711a7a7bc9d4d36775e2c315b59ff799ae",
+     "path": "research/2026-11-06/spectral_exorcism/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "62a90845750e981591f253c2416b0b7c02d0c6e5",
+     "path": "research/2026-11-06/spectral_exorcism/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "e7c0f58dcf35bf1b849eab4d2eaed52f752dd7bb",
+     "path": "research/2026-11-06/spectral_exorcism/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "ad8e698273ab413a40125d70e12958556958e0ed",
+     "path": "research/2026-11-06/spectral_exorcism/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "b571fe9658f240ff2a231fdf8812f72f711ff3ed",
+     "path": "research/2026-11-06/spectral_exorcism/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "fec7ad9bd45149663e991b899e05b021b85e7c8f",
+     "path": "research/2026-11-06/spectral_exorcism/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "94c0a5ce33bbf88511920f49253b36f02cbf145e",
+     "path": "research/2026-11-06/spectral_exorcism/probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "fcea0145d4c11f5890705b5b056b27d647e7378c",
+     "path": "research/2026-11-06/spectral_exorcism/test_probe.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "207ab30c0574a07a2618a7e12fd55e711432dd89",
+    "64105fa716846b6cadd05cbe11d2b06dfaf49779",
+    "c23adee2222b3e0797e8b59b6784a7487f820613",
+    "a0729720184f7ed2deeeb5ba6f5acee9f6a989bb",
+    "fcbb7914ee3b77c6f9f6db11a8790b1bddd21bda",
+    "1dc18977af72af380908f4cd3d1c05a07d90ec65",
+    "2c4205898f074546fb927ad39a7c79e6667acb81",
+    "34d1c1f40b34f2dcf76283f307062069c87a579c"
+   ],
+   "pr": 533,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Spectral Exorcism: \u00d716 frequency-ray rigidity \u00d7 BBP Fej\u00e9r mesoscopic source transport (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "HT3-HT11, HT13, HT5, HT14 (max_{n<N} d_n > N), HT18 (v_p(U_n)=-1 iff p=1 mod 4 for 4n<p<=8n-7), HT20 (liminf log d_n/n >= 2 via PNT-AP) proven",
+    "reviewer": "Lagrange-B1 (same-model, read-only)",
+    "scope_notes": [
+     "AGENTS.md rule 3: THEOREMS.md:45 'physically admissible plane', :66 'physical BBP source/carry seam', CLAIM_LEDGER.md:15 'physically admissible' -> the definitional seam U=C+x (HT4 'reconstruction' reads R=A directly)",
+     "THEOREMS.md:121 'supplies the actual source input' = partial-sum identity r=H_{n+1}-H_n; :262 'exact Gamma/harmonic source functor' -> exact digamma partial-sum identity (no category defined)"
+    ]
+   },
+   "base_branch": "research/odd-place-adelic-triangle-2026-11-06",
+   "branch": "research/holographic-triangle-source-seam-2026-11-06",
+   "carried_by_leaves": [
+    535
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "ff99fa2861b370d1aac0a76f01e2d8505c5a8740",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 18,
+   "own_changed_files": [
+    {
+     "blob": "983033b7852954f869dba8d941ee1e6442172a20",
+     "path": "research/2026-11-06/holographic_triangle/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "4767ad469b7e48f4853d920396d3af982a1f0154",
+     "path": "research/2026-11-06/holographic_triangle/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "a749dfd76ef7d3e1f0babe9f60eab2f5bc08449c",
+     "path": "research/2026-11-06/holographic_triangle/INDEPENDENT_ORACLE_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "45bfafcfc16fd00fedffa8a12028e735131e7df6",
+     "path": "research/2026-11-06/holographic_triangle/LINEAR_DEPTH_RAW.json",
+     "status": "A"
+    },
+    {
+     "blob": "421f33b65b7eed2cd38dd87520236f65a4246740",
+     "path": "research/2026-11-06/holographic_triangle/LOCAL_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+     "path": "research/2026-11-06/holographic_triangle/LOCAL_TEST_STDOUT.txt",
+     "status": "A"
+    },
+    {
+     "blob": "1928b7c11f901b4b65bc65b7f2bf83ece1a29c76",
+     "path": "research/2026-11-06/holographic_triangle/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "737b221641410e89fae3fc11809ed2c8b5025258",
+     "path": "research/2026-11-06/holographic_triangle/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "d638574b23cdd22da863620d816f46e5d865a07e",
+     "path": "research/2026-11-06/holographic_triangle/PREREG_LINEAR_DEPTH.md",
+     "status": "A"
+    },
+    {
+     "blob": "7fd802bc912cf39397d9254caa7d261e309c6c04",
+     "path": "research/2026-11-06/holographic_triangle/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "08d31fd0475066430685c1bfc893c70f79f3652a",
+     "path": "research/2026-11-06/holographic_triangle/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "bc642468a769e768258ca41a4fb22bd703ddc28a",
+     "path": "research/2026-11-06/holographic_triangle/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "d9b36f14b359d6fe05520a567b0b6ac4f771762f",
+     "path": "research/2026-11-06/holographic_triangle/hologram.py",
+     "status": "A"
+    },
+    {
+     "blob": "f37805c4dce65a50e5cc4fc984f9c8f33882053c",
+     "path": "research/2026-11-06/holographic_triangle/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "34f4b9555475bbffe7123d0dac7de08eaf8f04d5",
+     "path": "research/2026-11-06/holographic_triangle/independent_run.sh",
+     "status": "A"
+    },
+    {
+     "blob": "3f2c5178915f3f67abff50301244753c159a6705",
+     "path": "research/2026-11-06/holographic_triangle/linear_depth_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "79dfae0ad917bb4c72e45bef5ca768e3c5fbdfb2",
+     "path": "research/2026-11-06/holographic_triangle/test_hologram.py",
+     "status": "A"
+    },
+    {
+     "blob": "eca6fa33b9d1da5aaba9c57f134311fdf5883222",
+     "path": "research/2026-11-06/holographic_triangle/test_linear_depth.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "3641b5abbba6e1581cc2074e200b46d6cab0cb23",
+    "c4de7b9ddb4de6e360509862869043e843c7edf4",
+    "5592178c570cd4f179c31afd6444407451f7e722",
+    "ff99fa2861b370d1aac0a76f01e2d8505c5a8740"
+   ],
+   "pr": 534,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Source-authenticated holographic triangle: exact carry seam, Gamma drive, universal two-depth theorem (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "FG2-FG17 proven/verified; FG10/FG11 dyadic refinement monotonicity refutes contraction-by-refinement",
+    "reviewer": "Lagrange-B1 (same-model, read-only)",
+    "scope_notes": [
+     "THEOREMS.md:136 'refining Q from 1 to N' holds only for M_0=1; read 'Q from 1 to 2^K'"
+    ]
+   },
+   "base_branch": "research/holographic-triangle-source-seam-2026-11-06",
+   "branch": "research/fejer-gamma-return-amplitudes-2026-11-06",
+   "carried_by_leaves": [
+    535
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "a265269ae915641e05002e4508a3e7551ffea5cf",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 17,
+   "own_changed_files": [
+    {
+     "blob": "f339df48fdfa3a293c582d90adeba817771727c4",
+     "path": "research/2026-11-06/fejer_gamma_split/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "daee9ad7acac2a4290a97550d8b62b9d137e89c6",
+     "path": "research/2026-11-06/fejer_gamma_split/FINITE_DIAGNOSTICS.json",
+     "status": "A"
+    },
+    {
+     "blob": "65618d7a34eef9a83d47caa29bed223eba78a03d",
+     "path": "research/2026-11-06/fejer_gamma_split/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "f5230a91df6a68d56d258332201361364e4ad6fd",
+     "path": "research/2026-11-06/fejer_gamma_split/INDEPENDENT_EXACT_LOG.json",
+     "status": "A"
+    },
+    {
+     "blob": "59b87d4b1e3e68f285de482c8886abc9ef4b55ea",
+     "path": "research/2026-11-06/fejer_gamma_split/INITIAL_TEST_FAILURE.txt",
+     "status": "A"
+    },
+    {
+     "blob": "9c9d0e70d8a7a47a0a73c58808af4c9e4bbbb082",
+     "path": "research/2026-11-06/fejer_gamma_split/LOCAL_TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+     "path": "research/2026-11-06/fejer_gamma_split/LOCAL_TEST_STDOUT.txt",
+     "status": "A"
+    },
+    {
+     "blob": "2777620f8c9fe6ca923c16a8fe627caa0d9a2ebf",
+     "path": "research/2026-11-06/fejer_gamma_split/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "d9c8fff17269f430f6bcd107fa89d52cbd2cc661",
+     "path": "research/2026-11-06/fejer_gamma_split/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "501df8062da70aa1e624ccdadd82e9e6cf83b339",
+     "path": "research/2026-11-06/fejer_gamma_split/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "3442436f3157c6f584f4d9d2f00885c05a3541cd",
+     "path": "research/2026-11-06/fejer_gamma_split/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "24be22b7a122aa6ef24bbc680ae99852e5f7b030",
+     "path": "research/2026-11-06/fejer_gamma_split/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "b6bacd6f054852f53f23641d3e521e68b10c7f31",
+     "path": "research/2026-11-06/fejer_gamma_split/finite_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "98afbc8970e34e4c3d6c2f7733b60220f7b037ec",
+     "path": "research/2026-11-06/fejer_gamma_split/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "fe2f56c187a738e3f2e85fac31d7ea288dccf95e",
+     "path": "research/2026-11-06/fejer_gamma_split/receipt.py",
+     "status": "A"
+    },
+    {
+     "blob": "e4ac4d5ab9d6cf47978954bf604055ed3c30aea8",
+     "path": "research/2026-11-06/fejer_gamma_split/series_split.py",
+     "status": "A"
+    },
+    {
+     "blob": "8313d9c6edefce0aedc9788d74b5c8e8909b3799",
+     "path": "research/2026-11-06/fejer_gamma_split/test_series_split.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "45db50a7dae5ef708acbdbda4bb63f0f2a5dc3e7",
+    "a265269ae915641e05002e4508a3e7551ffea5cf"
+   ],
+   "pr": 535,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Fej\u00e9r\u2013Gamma return-energy split: exact infinite amplitudes, dyadic coherence triangle and source rephasing (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "CC1 sqrt-transport <=4 sqrt(H(H+1))/N; CC3 |W_512^x(1)|<0.902184 recomputed 0.9021831; CC4/CC8 checked; CC5 conditional; K3 all-radius certificates to N=4096 (K=2.7 post hoc, flagged)",
+    "reviewer": "Lagrange-B2 (same-model, read-only)"
+   },
+   "base_branch": "research/spectral-obstruction-selected-seed-2026-11-06",
+   "branch": "research/critical-fejer-source-hilbert-2026-11-06",
+   "carried_by_leaves": [
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled",
+     "Python 3.13 mathematical and epistemic checks: cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "e463a191d82355c707662bdbfb4bf2150fdd4eb7",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 18,
+   "own_changed_files": [
+    {
+     "blob": "5f5133dc51f193dd6eb7170e969d4dd75f03592b",
+     "path": "research/2026-11-06/critical_collision/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "e4939b06689378c5fbe627a29c501cff86b84d79",
+     "path": "research/2026-11-06/critical_collision/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "e3ade8ea0703af0635a93805ec77cc7c2c1af42e",
+     "path": "research/2026-11-06/critical_collision/HOLDOUT_N4096.json",
+     "status": "A"
+    },
+    {
+     "blob": "108552ae8af756de1b6ba038b26821f175b2ffb4",
+     "path": "research/2026-11-06/critical_collision/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "5bc507f280fe85d8a4b024249b3196971766dca2",
+     "path": "research/2026-11-06/critical_collision/POSTHOC_K27_10.md",
+     "status": "A"
+    },
+    {
+     "blob": "8a3f47bbc4973351d4fc2c092a62f0faa944285e",
+     "path": "research/2026-11-06/critical_collision/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "ee8db78238eab50516edbfb21d7d88bc1c058b18",
+     "path": "research/2026-11-06/critical_collision/PREREGISTRATION_RADIUS_HOLDOUT.md",
+     "status": "A"
+    },
+    {
+     "blob": "d690f870ebf6769bfb4bdbc92ea6661b6cd44c18",
+     "path": "research/2026-11-06/critical_collision/RADIUS_CERTIFICATES.json",
+     "status": "A"
+    },
+    {
+     "blob": "dbbaefae20052c4da367ec9a84dde79a922bc334",
+     "path": "research/2026-11-06/critical_collision/SLACK_RECURSION.md",
+     "status": "A"
+    },
+    {
+     "blob": "ad31c1994c2202b5dede1c2894ab8577d3f714ba",
+     "path": "research/2026-11-06/critical_collision/SPECTRAL_TRANSPORT_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "32cb529b79b3ba941a25b18d2b924d5950c6685a",
+     "path": "research/2026-11-06/critical_collision/TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "775c8f5dfc64bb8de214d6276d435891262cb757",
+     "path": "research/2026-11-06/critical_collision/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "0b911474f538195d0e8bde1cb22a5b8ea9fed88b",
+     "path": "research/2026-11-06/critical_collision/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "33e17366bf484edb095e1a21309a4b1ec5713ff9",
+     "path": "research/2026-11-06/critical_collision/experiment.py",
+     "status": "A"
+    },
+    {
+     "blob": "0b9f22dbd13c8ee5f2f818613b10a72783bbb3ac",
+     "path": "research/2026-11-06/critical_collision/run_holdout.py",
+     "status": "A"
+    },
+    {
+     "blob": "4cf034dbc8c7e7f01dd9917c05601970bdbde1a2",
+     "path": "research/2026-11-06/critical_collision/shell_certified.py",
+     "status": "A"
+    },
+    {
+     "blob": "68f9b3356f8747c526b45479ec633413a513fef8",
+     "path": "research/2026-11-06/critical_collision/spectral_transport.py",
+     "status": "A"
+    },
+    {
+     "blob": "db5b5a214687e80c7af23efda472ac234c185a95",
+     "path": "research/2026-11-06/critical_collision/test_experiment.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "1714487e01759cf0cc43afca3b9454af04cba261",
+    "8f4f659e869489d0350fbe2dbf46f5b0d53d32e2",
+    "6732556259a39b2ccbe55a92323e84826da20693",
+    "02ca06542dbf09a2ec00ac0cc39aca01a6188901",
+    "ac31cd6b722c949946a4eab539c626220bd341c1",
+    "1cd988d97a3fb640972335680c1daefb8ac12689",
+    "90e6e63e95c52b3e96ca7712c0876fb6b41bfc1b",
+    "78168ef8b05543abf9bf825d451c884406dd16f0",
+    "81dbf746651a237517bf7dd823feffb9069d5ccd",
+    "314ecdc5fd5ecb6f4b1cbc419f6bb643a3883bfe",
+    "d9fb6bdecadd42b8d562071298756b515cf3a700",
+    "98cd5febdc4f8c4209e5ec107fcff4cea4fb1669",
+    "2e3579c65140c47dd006c724d5bd10a55f741cd0",
+    "c86c6c1d776b7eafd953ea625ff7bb2eae73436a",
+    "4bf3bffe0586979b9604b3e7e9dc20167212f7d9",
+    "bcdf882a9b4e393d151ba74dafbc262c35a63c6d",
+    "48a4087eedce27e7bd15a900f1cf8ecec1bee262",
+    "20d1264c2b5325481540c05ed97c0c625a9dd777",
+    "e463a191d82355c707662bdbfb4bf2150fdd4eb7"
+   ],
+   "pr": 536,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Critical BBP Fej\u00e9r Hilbert transport \u00d7 exact six-horizon collision bounds (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "QR-01..QR-07 re-derived; firewall QR-07 real; QR-08/09 UNVERIFIED/OPEN",
+    "reviewer": "Lagrange-D (same-model, read-only)",
+    "scope_notes": [
+     "README.md:11 'Frobenius acts on phi by identity or conjugation' -> read 'modulo p'",
+     "RESEARCH.md:66 'involution modulo that period' -> exact involution",
+     "tests/test_quadratic_galois_tate_bridge.py:117 test_local_euler_artin_polynomials is a table check (tautological); :77 hand-typed constants; substantive test is test_frobenius_matches_quadratic_character",
+     "NEXT.md \u00a7A wrong-ring/fake-chi/norm-parity mutants: UNPAID",
+     "QR-05 remains PROVED CLASSICAL (imported theorems)"
+    ]
+   },
+   "base_branch": "main",
+   "branch": "research/quadratic-pisot-galois-tate-reflection-2026-11-06",
+   "carried_by_leaves": [
+    537
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "5dad2bd474104bfad97b1a0b3313c06521e73439",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 4,
+   "own_changed_files": [
+    {
+     "blob": "6054a4336b864168f931f4032c0d00cc3591177c",
+     "path": "research/2026-11-06/quadratic_galois_tate_bridge/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "e26e5a3d809dc247483aa4568c7f6fede54634c0",
+     "path": "research/2026-11-06/quadratic_galois_tate_bridge/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "3ebf3b82a1c528ac00f7d9458164653b81644425",
+     "path": "research/2026-11-06/quadratic_galois_tate_bridge/RESEARCH.md",
+     "status": "A"
+    },
+    {
+     "blob": "602e72f1cc198fdfb6d4082522276b458d0a4084",
+     "path": "tests/test_quadratic_galois_tate_bridge.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "805488faaa85304eb8aa0f96a3cfecb69913e7f9",
+    "05a3fdd96f54e0c950ef0bf8bb8cc7fc28866534",
+    "71f04ff586a89382d3c2d22d335317563d406657",
+    "5dad2bd474104bfad97b1a0b3313c06521e73439"
+   ],
+   "pr": 537,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Quadratic Pisot\u2013Galois\u2013Tate carrier: Frobenius bridge, parity transport, and RH firewall",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "ET1 unconditional sqrt-norm transport (pi/(15A^2))sqrt(H(H+1)(H+2)/6) on the original orbit; ET2b demonstrated; ET3/ET4a conditional (premises OPEN); ET5 finite K<=3 at A=191,319",
+    "reviewer": "Lagrange-B2 (same-model, read-only)",
+    "scope_notes": [
+     "PR title 'epoch-critical Fej\u00e9r transport o(1)' -> read 'critical Fej\u00e9r transport ERROR O(A^{-1/2})'; it is NOT an o(1) for the gate",
+     "research/2026-11-06/epoch_critical_transfer/THEOREMS.md:81 '(A->inf) for EVERY integer A>=1' -> 'as A->inf through all integers A'"
+    ]
+   },
+   "base_branch": "research/critical-fejer-source-hilbert-2026-11-06",
+   "branch": "research/epoch-critical-fejer-transfer-2026-11-06",
+   "carried_by_leaves": [
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [
+     "Python 3.13 mathematical and epistemic checks: cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.10): cancelled",
+     "Python 3.10 mathematical and epistemic checks: cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.10): cancelled",
+     "Contextual Bayesian SUCC heuristic guards (3.13): cancelled",
+     "Typed genetic model fusion and source-coupling guards (3.13): cancelled"
+    ],
+    "tally": {
+     "cancelled": 6,
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "eda162b5610d4a9d66bb3c3acbcdc728cbc0eccd",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 19,
+   "own_changed_files": [
+    {
+     "blob": "554815ab6e8e42efabb0c0b9cccd291924d80181",
+     "path": "research/2026-11-06/epoch_critical_transfer/ALL_RADIUS_HOLDOUT.json",
+     "status": "A"
+    },
+    {
+     "blob": "69565a8c6c08c16baeeda95a31d936eb64e9b48c",
+     "path": "research/2026-11-06/epoch_critical_transfer/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "eb8bee02b2f0bc2615faab75ab5b90631ade3184",
+     "path": "research/2026-11-06/epoch_critical_transfer/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "155104c5b6a1ac7264f1368842f25f198d28c7bb",
+     "path": "research/2026-11-06/epoch_critical_transfer/INDEPENDENT_ORACLE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "37cf90f41bd88ad8317506056b21408affc6472e",
+     "path": "research/2026-11-06/epoch_critical_transfer/INITIAL_RED_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "06f7b38d32c1973a60612b74db283610f118b623",
+     "path": "research/2026-11-06/epoch_critical_transfer/LOCAL_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "75687148479431ed5f6f056dc82a3fe01b073e53",
+     "path": "research/2026-11-06/epoch_critical_transfer/NEW_EPOCH_FOURIER_DIAGNOSTICS.json",
+     "status": "A"
+    },
+    {
+     "blob": "1694467232468f09a126da7998374811b33de9e1",
+     "path": "research/2026-11-06/epoch_critical_transfer/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "dbf3b5c3279ae0f4c0abec067621a1607a8373fc",
+     "path": "research/2026-11-06/epoch_critical_transfer/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "164bdd662b2d9ba1a5c60b497874d36ac645f858",
+     "path": "research/2026-11-06/epoch_critical_transfer/PREREG_ALL_RADIUS.md",
+     "status": "A"
+    },
+    {
+     "blob": "1418ee875dd4045dd4b0201cb606c9ae5794343c",
+     "path": "research/2026-11-06/epoch_critical_transfer/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "e79c82e54014ff4f22457ddeae8db3cc04cc2b62",
+     "path": "research/2026-11-06/epoch_critical_transfer/RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "6ec20e0dd9fb2df5c3d12565e17943508b45b2bb",
+     "path": "research/2026-11-06/epoch_critical_transfer/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "3c727ae839893d7a7f1c16963fd527b55e451674",
+     "path": "research/2026-11-06/epoch_critical_transfer/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "5396be18edd1eedae51996099e17066927089b2e",
+     "path": "research/2026-11-06/epoch_critical_transfer/all_radius.py",
+     "status": "A"
+    },
+    {
+     "blob": "a8fa177254f67e5c9c17901eaee97faaf6b11c2c",
+     "path": "research/2026-11-06/epoch_critical_transfer/epoch_fejer.py",
+     "status": "A"
+    },
+    {
+     "blob": "f4160a056b94372ec4e0008e960451755e392976",
+     "path": "research/2026-11-06/epoch_critical_transfer/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "a39f2c65e943b598bace6d47312dda8694d9b77a",
+     "path": "research/2026-11-06/epoch_critical_transfer/receipt.py",
+     "status": "A"
+    },
+    {
+     "blob": "d899c181ff744944c335d4fc979aac82e568e912",
+     "path": "research/2026-11-06/epoch_critical_transfer/test_epoch_fejer.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "fd4f118a8a44cce1d15e9c42b14e57876cfc2844",
+    "c0c36518ea83a003c0892b312fb3536202e3f1f6",
+    "eda162b5610d4a9d66bb3c3acbcdc728cbc0eccd"
+   ],
+   "pr": 538,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] BBP epoch-critical Fej\u00e9r transport o(1) \u00d7 certified all-radius holdouts (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "HPB-01..05, C2-C5 re-derived; B_crit=2.47730946056315501453 and first nonpositive N=19 for B=2.45 independently recomputed (OBSERVED, not interval-certified)",
+    "reviewer": "Lagrange-D (same-model, read-only)",
+    "scope_notes": [
+     "README.md:7, CIRCLE_WINDOW.md:138 'uniquely self-calibrating' golden aperture -> unique only under the declared normalization C=L (design choice)",
+     "THEOREMS.md:172 L(1,chi_5) 'sets' the decay scale -> 'is equivalent to' (rate rho=1/phi fixed by phi)",
+     "THEOREMS.md:132 'anti-normality theorem' -> for sequences with finite weighted square-distance energy; elementary for Pisot alpha^n; no transfer to the BBP orbit",
+     "tests/test_harmonic_pisot_circle_window.py:30 test_constant_arc_measure tautological; :88 checks root + 5 samples, not uniqueness",
+     "test_critical_threshold compares module-computed constant (not independent; independent recomputation agrees)",
+     "CIRCLE_WINDOW 'pi normal <=> E_{pi/phi}(mu_A)->0' is an equivalent re-expression of the Q_{1/2} gate, not progress"
+    ]
+   },
+   "base_branch": "main",
+   "branch": "research/harmonic-pisot-boundary-2026-11-07",
+   "carried_by_leaves": [
+    539
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "c8c5cf0488b3667b0f603983e9ad3766ba78e546",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 6,
+   "own_changed_files": [
+    {
+     "blob": "e0cd4ffee38030c65ca43b7c2c08390f2ecdba89",
+     "path": "research/2026-11-07/harmonic_pisot_boundary/CIRCLE_WINDOW.md",
+     "status": "A"
+    },
+    {
+     "blob": "f93bfe8e8f22308c08e22ac18bb051d4565f9e16",
+     "path": "research/2026-11-07/harmonic_pisot_boundary/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "6abbc25d5c382f7b2959530d46fa054c56f19090",
+     "path": "research/2026-11-07/harmonic_pisot_boundary/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "7bfa0362cd0a6c5dde2efd96f33b2624185b5d4d",
+     "path": "research/2026-11-07/harmonic_pisot_boundary/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "b7712ac27afadf12e4faf6f58a81c6b34339b629",
+     "path": "tests/test_harmonic_pisot_boundary.py",
+     "status": "A"
+    },
+    {
+     "blob": "2980cb819823a44427c1d0a010560e4b14009541",
+     "path": "tests/test_harmonic_pisot_circle_window.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "3c387bcc4d118cebbc11a6114bb2e9581305d361",
+    "6005b406fd603d26e1b66f512d12b30b1455e5b0",
+    "9de385d631db02901b452679a61cb3071664823c",
+    "e4282d37601f8028dee81000c30d96ecaf206941",
+    "99d7d328ecd877675addbf5705b30da5ab66d438",
+    "8877e6f045cf00fa326cf16935832c68c2da8c1f",
+    "999f1800003db4f85ef2083fd3aefbfa8df359d5",
+    "0ceeb2612ad30842e2ce78adbca981f2f9f91923",
+    "bdd4611ebbb4e8610ac69518f076c800cdc7f172",
+    "c87c36e21586a28004be0728626eebc0054fc735",
+    "99a21fc629ff47ad9ee9a0eeb89058fd7a8a768a",
+    "c8c5cf0488b3667b0f603983e9ad3766ba78e546"
+   ],
+   "pr": 539,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Harmonic\u2013Pisot boundary: gamma threshold, stable conjugate memory and anti-normality theorem",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "GA1-GA3, GA6-GA9 identities re-derived; GA4 equivalence (reformulation); GA5/GA10 unconditional fixed-aperture transport |E_a(mu^z)-E_a(mu^x)|<=1/(15bA^2); GA11 conditional; certificates A=79,157,1024,2048 independently recomputed; A=4096 honestly UNVERIFIED",
+    "reviewer": "Lagrange-B2 (same-model, read-only)",
+    "scope_notes": [
+     "ID collision: CLAIM_LEDGER.md:13 GA-09 (REFUTED false shortcut) vs THEOREMS.md:192 \u00a7GA-09 (HPB synthesis = ledger GA-12); supplement keys THEOREMS \u00a7GA-09 as GA-12",
+     "CLAIM_LEDGER GA-09 labelled REFUTED without a countermodel receipt (AGENTS.md rule 11) \u2014 integration-time receipt required (see Main XXI audit)"
+    ]
+   },
+   "base_branch": "research/epoch-critical-fejer-transfer-2026-11-06",
+   "branch": "research/golden-aperture-fejer-triangle-2026-11-07",
+   "carried_by_leaves": [
+    540
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "298f60d826a1f733b7eb09740b94248d8e40af60",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 30,
+   "own_changed_files": [
+    {
+     "blob": "b4d635f4b5c2a4cff709c1c8c7b0be21047f913c",
+     "path": "research/2026-11-07/golden_aperture_fejer/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "108bdbd4c1e367afea9eb675709f143a81231126",
+     "path": "research/2026-11-07/golden_aperture_fejer/FIBER_PROBE.json",
+     "status": "A"
+    },
+    {
+     "blob": "cc1b894ead6488cf897e3a4f8ad7e9febbf14391",
+     "path": "research/2026-11-07/golden_aperture_fejer/FIBER_PROBE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "3bf0540f2df91c078c55da73f2c1fdb180220bca",
+     "path": "research/2026-11-07/golden_aperture_fejer/FINISHED_PROBE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "8327e0deb8eed37bdfecdf21acd4013a7d28c4e7",
+     "path": "research/2026-11-07/golden_aperture_fejer/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "a218def0aab95ea563a2f36e35dae4d84c5568d3",
+     "path": "research/2026-11-07/golden_aperture_fejer/FINITE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "c5bc35541bad10814d5ba7000479d8a85bbf326d",
+     "path": "research/2026-11-07/golden_aperture_fejer/INDEPENDENT_CHECK.json",
+     "status": "A"
+    },
+    {
+     "blob": "c5070ae4c30282a9bbf70ad406f24eb0a13f905c",
+     "path": "research/2026-11-07/golden_aperture_fejer/INDEPENDENT_ORACLE_LOG.json",
+     "status": "A"
+    },
+    {
+     "blob": "ddad514522f3d0b98694df2fe746c448c32776b6",
+     "path": "research/2026-11-07/golden_aperture_fejer/INITIAL_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "6ffb0d9c463aaedc4c3a5bcf0e6ce54bea5b4919",
+     "path": "research/2026-11-07/golden_aperture_fejer/LARGE_PROBE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "89cd99ddde2bc4d3079613bd98bd24ce3584e5c7",
+     "path": "research/2026-11-07/golden_aperture_fejer/LARGE_PROBE_REPLAY_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "b134b5657d8e4cce89a7f3ad5d0b661c5b907c3a",
+     "path": "research/2026-11-07/golden_aperture_fejer/LARGE_RESULTS.json",
+     "status": "A"
+    },
+    {
+     "blob": "11463c8f95e6b40f01b6d70687fd3a8c10005cc3",
+     "path": "research/2026-11-07/golden_aperture_fejer/LARGE_TIMEOUT_NOTE.md",
+     "status": "A"
+    },
+    {
+     "blob": "8955116290a05004fabbeb52b0ac2fad7ecf5536",
+     "path": "research/2026-11-07/golden_aperture_fejer/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "24a4060bdf76295590f6712eac7f6cb3af1fa43a",
+     "path": "research/2026-11-07/golden_aperture_fejer/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "153ffd7fa6b4addbb891ae92ccf09b2910275dc8",
+     "path": "research/2026-11-07/golden_aperture_fejer/PREREG_LARGE_EPOCHS.md",
+     "status": "A"
+    },
+    {
+     "blob": "dbe4128c8ea67700602b8464a476024747510b93",
+     "path": "research/2026-11-07/golden_aperture_fejer/PROBE_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "fada091b23f6f39f0f45dc3c2145a0599b2eb845",
+     "path": "research/2026-11-07/golden_aperture_fejer/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "cba32580d7e0dfe7c8685ffba7dad0f81ccc2457",
+     "path": "research/2026-11-07/golden_aperture_fejer/TEST_STDERR.txt",
+     "status": "A"
+    },
+    {
+     "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+     "path": "research/2026-11-07/golden_aperture_fejer/TEST_STDOUT.txt",
+     "status": "A"
+    },
+    {
+     "blob": "90273a0996a197224e120bdd42bc7d97ef2804fc",
+     "path": "research/2026-11-07/golden_aperture_fejer/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "c99ae66bad9853aab6d8a179a537cd5f92b18de5",
+     "path": "research/2026-11-07/golden_aperture_fejer/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "c080866c9a4ea8988baef8907459387f2d932989",
+     "path": "research/2026-11-07/golden_aperture_fejer/fiber_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "95df67ef8f70f911918f714327b2d37f58823374",
+     "path": "research/2026-11-07/golden_aperture_fejer/finite_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "12ee71e45fd3807c2a4e4996fcf19ed1ffe385ef",
+     "path": "research/2026-11-07/golden_aperture_fejer/golden_aperture.py",
+     "status": "A"
+    },
+    {
+     "blob": "99a5d8c2cd0e87e5115ab54d1365d9f4948d9392",
+     "path": "research/2026-11-07/golden_aperture_fejer/independent_check.py",
+     "status": "A"
+    },
+    {
+     "blob": "274d7a1cdc69ba2f80bf5dee07807684106ce37f",
+     "path": "research/2026-11-07/golden_aperture_fejer/independent_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "1ca2ac0023bc78b448bfefaabf5ec254b36e37e3",
+     "path": "research/2026-11-07/golden_aperture_fejer/large_probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "a1bf21eb246ff347627adc838697786694b300c7",
+     "path": "research/2026-11-07/golden_aperture_fejer/receipt.py",
+     "status": "A"
+    },
+    {
+     "blob": "6f32975a0257229c3e263b419926500c6a199b91",
+     "path": "research/2026-11-07/golden_aperture_fejer/test_golden.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "44a099cc5b9903039e1b305ce989bdf4370839bc",
+    "31ab4a1d123ca48c394cf88b6a4ea74cbe6b7489",
+    "298f60d826a1f733b7eb09740b94248d8e40af60"
+   ],
+   "pr": 540,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Golden spatial Fej\u00e9r triangle \u00d7 BBP O(A\u207b\u00b2) aperture transport \u00d7 2-adic return gluing (\u03c0 OPEN)",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "Theorems 2-6, sharp norm b^2, discounted completion, BBP surface-norm transport 1/(30sqrt3 A^2) walked; adversary found no mathematical kill",
+    "reviewer": "Lagrange-A + d'Alembert-A (two blind same-model bearings, read-only)",
+    "scope_notes": [
+     "tests/test_fourier_yoneda_pinbed.py:171 re-asserts paper constant 1/(2700A^4)",
+     "TEST WEAKNESS (killed mutant): translation bound tail term rho^(J+1)/(45(1-rho)) untested \u2014 deleting it passes; hardening test added at integration"
+    ]
+   },
+   "base_branch": "main",
+   "branch": "research/fourier-yoneda-pinbed-2026-11-07",
+   "carried_by_leaves": [
+    543
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE",
+   "head": "e8a4126754dc95eddeca758ea92ead50246da630",
+   "is_leaf": false,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 27,
+   "own_changed_files": [
+    {
+     "blob": "b83dca07ccd57e14887863288671048388e5312c",
+     "path": "observational_succ/fourier_yoneda_pinbed.py",
+     "status": "A"
+    },
+    {
+     "blob": "5403a98c9a039907fe28cf152d0ff4194dd61410",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/BASELINE_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "af65ecbb6ca8a231ff0e8cb23a203bb2ac877470",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "dfbdef7eb3a50a5933f95b9c624fad16528e0f98",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "75f8894176f260e3cbca832b139f5a4f6c5a4fa5",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/FIRST_RUN_HASHES.json",
+     "status": "A"
+    },
+    {
+     "blob": "cd0c216da3f90b2b334998ced2cd4fa4ef09ad74",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/FOCUSED_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "eac4755eb99a53410882c8361928788fea4b75d9",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/FOUNDATIONS_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "bd39adfd5b01793e1f9d582b31b886ecd6f0bea5",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/FULL_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "5b6c67837c057f6c981a09c64115ed80ea7249d6",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/FULL_TEST_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "45b0ff54e5c8101ec3c52a19c6c4305178a4b6f0",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/IMPORT_RECHECK_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "53db45ce641ca7b4de01f9432f95c8a1046690a7",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/INDEPENDENT_F2_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "3b6a478e1d28d670517413acb7839ea938141116",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/INDEPENDENT_SURFACE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "d9f5a7da2eb6e92ded350e5a3f2e7b6e74a900ed",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/ORDINAL_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "ecb7e4944400c97a199d7018039a33a72e7a6905",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/PINBED.png",
+     "status": "A"
+    },
+    {
+     "blob": "67e6018e7288678722f91545073fc76a697ad123",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/PINBED.svg",
+     "status": "A"
+    },
+    {
+     "blob": "d30ad3d275bccc768ca75994585f13cd4564db63",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "2aaa4391856df38a290ef3e1eba75cd5542bc712",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/PROOF_AUDIT.md",
+     "status": "A"
+    },
+    {
+     "blob": "824ba40a8edb0f7b112cd04dee2f17759f622a3f",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/PROVENANCE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "3b2dbad1c66bcc2655de691dafbf73ea9be15dd3",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "5b42b134ae15a904319e42cb22047a7bb3ad63bb",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/SOURCE_MAP.md",
+     "status": "A"
+    },
+    {
+     "blob": "9e7c9a9b050818a3dbd47c0ed3f9b64f6e85bb57",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "6c3017d0dc591eedc38540411203091f4aabe027",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "ee58a7f613782416f281fb67435c449bb1b744c6",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/independent_f2_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "c85549528cb8c7c59791b970c31ae3db58e92ccf",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/independent_surface_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "43e97a76a2d67be87656af7a677ba37bb43de72a",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "4b809d1e86a38360d4c3afa6c09700d709838334",
+     "path": "research/2026-11-07/fourier_yoneda_pinbed/render_pinbed.py",
+     "status": "A"
+    },
+    {
+     "blob": "a180c796dbc1168cf7df9fb3eaf9f5312bbc5e60",
+     "path": "tests/test_fourier_yoneda_pinbed.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "97892786abf2fde9d53af5cefc753227a6b4fb98",
+    "e8a4126754dc95eddeca758ea92ead50246da630"
+   ],
+   "pr": 541,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Fourier\u2013Yoneda pin bed: realizable surfaces, stable future probes and relative truth",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "STP-1..4, RY-1..3, LO-02..05 (4N-bit pigeonhole bound tight), APH-01/02; learner behaviour independent of the forcing (learning does not imply normality; docs disclaim it)",
+    "reviewer": "Lagrange-A + d'Alembert-A (two blind same-model bearings, read-only)",
+    "scope_notes": [
+     "RESEARCH_NOTE.md:197 'at fixed nonzero h' -> 'for every fixed nonzero h'",
+     "tests/test_pinbed_oscillator_bridge.py:169 vacuous certificate assertEqual(1*1-2*2,-3); VALIDATION_FOLLOWUP.md:21 overstates it as executed",
+     "tests/test_learning_pinbed.py:91 echoes arithmetic; real witness = 256 transcripts at :89",
+     "ANCHORED_PATHS_VS_HOLONOMY.md:55 needs Minkowski, not triangle inequality (bound true)",
+     "validation counts 26/49/59 include an external bundle not in repo (10+11 present)",
+     "TEST WEAKNESS (killed mutants): learner margin inflated 1.9x passes (guarded_pin(5,1,0,3/64) -> 6); bridge energy bound /1000 passes; choose_mode first-entry passes; hardening tests added"
+    ]
+   },
+   "base_branch": "main",
+   "branch": "research/pinbed-yoneda-fourier-relative-truth-2026-11-07",
+   "carried_by_leaves": [
+    542
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "in_progress": 4,
+     "success": 15
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 12,
+   "own_changed_files": [
+    {
+     "blob": "ae2fc7fc7d9d105ff7e0a1af29a0d86c0e6a4226",
+     "path": "observational_succ/learning_pinbed.py",
+     "status": "A"
+    },
+    {
+     "blob": "5b8d4841119ac6a870fae7ff3ac75ab371afee13",
+     "path": "observational_succ/pinbed_oscillator_bridge.py",
+     "status": "A"
+    },
+    {
+     "blob": "16ea75b5ae4860309b61a56ef28593e224886d5e",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/ANCHORED_PATHS_VS_HOLONOMY.md",
+     "status": "A"
+    },
+    {
+     "blob": "7f7e6191f538e660b13b45b36cfe1135e21c4514",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/LEARNING_OBSERVER.md",
+     "status": "A"
+    },
+    {
+     "blob": "ce97ea99ee911c1875586d8535e52629cfca04b8",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/LEARNING_VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "b6098baa65196087738d47fc82974bd8356eef4d",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "3a41ec6acda6dccad4bf323e0ed792c56be4fe6a",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/REALIZATION_AND_DYNAMIC_YONEDA.md",
+     "status": "A"
+    },
+    {
+     "blob": "256c741b48e6e29ff7ae29e3f936ee20f4762040",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/RESEARCH_NOTE.md",
+     "status": "A"
+    },
+    {
+     "blob": "af489c4ec42c93720774e7f078028d75dffff444",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/TWO_TONE_STABLE_ARC.md",
+     "status": "A"
+    },
+    {
+     "blob": "f684ea36dec4f0613328ff8c190d43b8970c5692",
+     "path": "research/2026-11-07/pinbed_yoneda_oscillators/VALIDATION_FOLLOWUP.md",
+     "status": "A"
+    },
+    {
+     "blob": "70cf989b2e9dc9b71098eb7230dcdf1aedfcc0ad",
+     "path": "tests/test_learning_pinbed.py",
+     "status": "A"
+    },
+    {
+     "blob": "1b826c0fca820110e011c82649b2be0909ade849",
+     "path": "tests/test_pinbed_oscillator_bridge.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "6f8421ace09413063b1b8273da53067f1a14f312",
+    "2b15a892f7bc9325ab6d9dc1184a50f53ae35ed0",
+    "c956b42fff15270c10715870874f5cfa951de9df",
+    "b62cdac0b9c1eb91fb11efe1a3c51f37d3b60175",
+    "14d33f6e37a3f6ab596dbf4936ffc5646aaf0ce4",
+    "1085d83d7b7f3cb45e538dc3e94ca6fc4d69baac",
+    "302f0d08d65d4a25a06731d526aa0bb22afe700b",
+    "4dd05aeff0b64ff36043a45834f0b09c1b32c75c",
+    "90e3f3c88992ccdb81682c190a525d28bd914480",
+    "ee90b9b81a4b550f8ec210e9f0da2a5303f3becb",
+    "0b4e915e06a93f001106e7abad220b016caba95f",
+    "f059f5da14b05a0ef2eb07b1e8b066b756c9e33f",
+    "6537bae817372841c625a1700a43122c3fb5b360",
+    "7af343fa5f0b9db4c1ecd75e2084da4be4be125b",
+    "a52b56a2c9a28318e5b005151e091a80b7669f89",
+    "f41223d725dad8335c7153f3e69ca7edef667568",
+    "482da303b84bb163531f89bfe06286e39f6c141e",
+    "f8526d1f05dc39de937e0bdf2844695cc6a6f752",
+    "6fddec2512612fae4463b9da0670e7bc0edb3a96",
+    "c533d1821d6fa3926b250299f94150238aced521",
+    "2a3b4e040bb19f0e39b2b697cf54864ce93495b6",
+    "07aa84c6199bade75e8ae66df1bdf9ac766240a0",
+    "f5c88d5e4117a1fc7e7844dd3f4be2800f83561b",
+    "c638ac1423da983a107a645667d29affd1c78b03",
+    "a8f592b8106226fb065f0101358c01f7cc04d5e1"
+   ],
+   "pr": 542,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Oscillator-driven Yoneda\u2013Fourier pin-bed: exact relative truth, two-tone observability, and dynamical closure",
+   "unique_content_discarded": false
+  },
+  {
+   "audit": {
+    "result": "inverse, realization, sharp half-aperture frame, C16(1/2)=341/sqrt205 (Verified: 3 routes + independent h<=20000 scan), lock-in A/B, scan S1/S3, transport, discrete inverse",
+    "reviewer": "Lagrange-A + d'Alembert-A (two blind same-model bearings, read-only)",
+    "scope_notes": [
+     "CONTINUOUS_THEOREMS.md:43 sign convention matches #542 FINITE windows only; #542 continuous surfaces are backward convolutions with conj multipliers",
+     "341/sqrt205 is for REAL laws only; on complex inputs the x16 operator norm is exactly 31 (ledger row omits 'real')",
+     "'h=2 wins' is specific to b=16: at b=32 h=1 term is larger (2280.617 vs 2273.889); max formula correct",
+     "symbol collisions A_alpha, C_b/C_alpha, a_h scalar/vector",
+     "polynomial normalization: documented numerator is half sympy's combined form (positivity unaffected)",
+     "TEST WEAKNESS (killed mutant): alias bound tested only at (M,h)=(4,1); linear replacement passes; hardening test added"
+    ]
+   },
+   "base_branch": "research/fourier-yoneda-pinbed-2026-11-07",
+   "branch": "research/driven-pinbed-observability-2026-11-07",
+   "carried_by_leaves": [
+    543
+   ],
+   "ci_exact_head_at_inventory": {
+    "non_success": [],
+    "tally": {
+     "success": 19
+    }
+   },
+   "disposition": "INTEGRATE-SCOPED",
+   "head": "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc",
+   "is_leaf": true,
+   "merge_base_with_main_before": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+   "own_changed_file_count": 31,
+   "own_changed_files": [
+    {
+     "blob": "1807fd780b63eac2f7766f0724655ef90fba5809",
+     "path": "observational_succ/driven_pinbed_observer.py",
+     "status": "A"
+    },
+    {
+     "blob": "29a76a2e13943746c8144965dbb2f98a3f62a86b",
+     "path": "research/2026-11-07/driven_pinbed_observability/CLAIM_LEDGER.md",
+     "status": "A"
+    },
+    {
+     "blob": "e838ff5c6460733887b7c259a58d6c62c350c9a2",
+     "path": "research/2026-11-07/driven_pinbed_observability/COHERENT_SCAN.md",
+     "status": "A"
+    },
+    {
+     "blob": "b6b2dabeb9b77da7fcd3f9175b4816075d67097e",
+     "path": "research/2026-11-07/driven_pinbed_observability/CONTINUOUS_THEOREMS.md",
+     "status": "A"
+    },
+    {
+     "blob": "8d505cb2408cd44d8e13c66a10053536f1bee64d",
+     "path": "research/2026-11-07/driven_pinbed_observability/DRIVEN_PINBED.png",
+     "status": "A"
+    },
+    {
+     "blob": "cc14df28cf3cf15c39e69998b6f2714f87e06603",
+     "path": "research/2026-11-07/driven_pinbed_observability/DRIVEN_PINBED.svg",
+     "status": "A"
+    },
+    {
+     "blob": "fa98b06cffe064c13014e8388c5043aa539afcd2",
+     "path": "research/2026-11-07/driven_pinbed_observability/FINITE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "5de8b5d4f507c598315c29b0f1984dfbf4867296",
+     "path": "research/2026-11-07/driven_pinbed_observability/FOCUSED_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "eac4755eb99a53410882c8361928788fea4b75d9",
+     "path": "research/2026-11-07/driven_pinbed_observability/FOUNDATIONS_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "f9945369f44380d38bc43bff7122a18d26690b7f",
+     "path": "research/2026-11-07/driven_pinbed_observability/FULL_TEST_LOG.txt",
+     "status": "A"
+    },
+    {
+     "blob": "cdbb767d5a93685b4561580eedde94f8292f6895",
+     "path": "research/2026-11-07/driven_pinbed_observability/FULL_TEST_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "36423e1fe406c730551967b7b9b042c96e373913",
+     "path": "research/2026-11-07/driven_pinbed_observability/INDEPENDENT_FRAME_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "34649c7c4cc33335ca973fbf6d64a6e294d92caa",
+     "path": "research/2026-11-07/driven_pinbed_observability/INDEPENDENT_LOCKIN_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "f10b33a58b36e5c04647a3fc057d9fb91ac4f3ea",
+     "path": "research/2026-11-07/driven_pinbed_observability/INDEPENDENT_SCAN_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "f2a9db4bfdd12bc7b2ac22f7f07cf7545a39a017",
+     "path": "research/2026-11-07/driven_pinbed_observability/LOCKIN_AND_CONTROLS.md",
+     "status": "A"
+    },
+    {
+     "blob": "d0d04e43f0018832414071f0b919f29b7b7369cf",
+     "path": "research/2026-11-07/driven_pinbed_observability/NEXT.md",
+     "status": "A"
+    },
+    {
+     "blob": "d9f5a7da2eb6e92ded350e5a3f2e7b6e74a900ed",
+     "path": "research/2026-11-07/driven_pinbed_observability/ORDINAL_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "ba2c8af9bc6172e89f269adb87718bb9fbbc2512",
+     "path": "research/2026-11-07/driven_pinbed_observability/PREREGISTRATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "06aadfde15ad0c61e083820b9feff217affadf6c",
+     "path": "research/2026-11-07/driven_pinbed_observability/PROOF_AUDIT.md",
+     "status": "A"
+    },
+    {
+     "blob": "f931e898a85897bad9dd6546ec50bd7dcd6214b4",
+     "path": "research/2026-11-07/driven_pinbed_observability/PROTOCOL_AND_TRUTH.md",
+     "status": "A"
+    },
+    {
+     "blob": "824ba40a8edb0f7b112cd04dee2f17759f622a3f",
+     "path": "research/2026-11-07/driven_pinbed_observability/PROVENANCE_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "f4b2c66c68ff1f92558b163151bd4b2c26f89679",
+     "path": "research/2026-11-07/driven_pinbed_observability/README.md",
+     "status": "A"
+    },
+    {
+     "blob": "4dd3301e9e8a7d94772daff2e5dc58e2ff78fca6",
+     "path": "research/2026-11-07/driven_pinbed_observability/SOURCE_CROSSCHECK_RECEIPT.json",
+     "status": "A"
+    },
+    {
+     "blob": "feb3b862bd1a825d8f9d126b6b4ea01f7a031be5",
+     "path": "research/2026-11-07/driven_pinbed_observability/SOURCE_MAP.md",
+     "status": "A"
+    },
+    {
+     "blob": "a4b5e96a306df52f59e38618df9038e4a640c875",
+     "path": "research/2026-11-07/driven_pinbed_observability/VALIDATION.md",
+     "status": "A"
+    },
+    {
+     "blob": "b5c8f5ee0b20b688611120e3452cdd3578105b5e",
+     "path": "research/2026-11-07/driven_pinbed_observability/independent_frame_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "b6c1e838c748dcb01478a838c1e3a87249d69fae",
+     "path": "research/2026-11-07/driven_pinbed_observability/independent_lockin_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "98edd8aa8646e0ce29cb1c923e3f996ff87c88e4",
+     "path": "research/2026-11-07/driven_pinbed_observability/independent_scan_oracle.py",
+     "status": "A"
+    },
+    {
+     "blob": "37c20c9948aa1a7f705a942f85a5389143aac173",
+     "path": "research/2026-11-07/driven_pinbed_observability/probe.py",
+     "status": "A"
+    },
+    {
+     "blob": "53d816fecd123e0f9f073903f632d4fab8b5c908",
+     "path": "research/2026-11-07/driven_pinbed_observability/render_driven_pinbed.py",
+     "status": "A"
+    },
+    {
+     "blob": "3e620cca8ff7b30dd816f090b499c79af662985b",
+     "path": "tests/test_driven_pinbed_observer.py",
+     "status": "A"
+    }
+   ],
+   "own_commits": [
+    "774dd2f91a8f91c58281fefb10d4fe36d290d59c",
+    "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc"
+   ],
+   "pr": 543,
+   "staging_commit": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+   "title": "[DRAFT] Driven pin bed: first-order inverse, sharp \u00d716 frame and source-bound lock-in",
+   "unique_content_discarded": false
+  }
+ ],
+ "staging": "9d828c778b49511d5812d618302b1dfd4d6f7d07",
+ "status": {
+  "RH": "OPEN",
+  "pi_base16_normality": "OPEN",
+  "selected_weyl_gate": "OPEN"
+ }
+}

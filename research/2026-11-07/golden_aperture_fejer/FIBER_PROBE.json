@@ -1,0 +1,94 @@
+{
+  "duration_seconds_diagnostic": 3.563,
+  "samples": [
+    {
+      "A": 1024,
+      "M": 128,
+      "Q": 8,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.00659308016634",
+        "0.00659308016635"
+      ],
+      "near_count": 100700
+    },
+    {
+      "A": 1024,
+      "M": 64,
+      "Q": 16,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.01341098979066",
+        "0.01341098979067"
+      ],
+      "near_count": 50608
+    },
+    {
+      "A": 1024,
+      "M": 32,
+      "Q": 32,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.02134068882798",
+        "0.02134068882799"
+      ],
+      "near_count": 25452
+    },
+    {
+      "A": 1024,
+      "M": 16,
+      "Q": 64,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.04005758057063",
+        "0.04005758057064"
+      ],
+      "near_count": 12786
+    },
+    {
+      "A": 2048,
+      "M": 128,
+      "Q": 16,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.00359933853774",
+        "0.00359933853775"
+      ],
+      "near_count": 200304
+    },
+    {
+      "A": 2048,
+      "M": 64,
+      "Q": 32,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.00796596191889",
+        "0.00796596191890"
+      ],
+      "near_count": 100288
+    },
+    {
+      "A": 2048,
+      "M": 32,
+      "Q": 64,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.01869222836734",
+        "0.01869222836735"
+      ],
+      "near_count": 50338
+    },
+    {
+      "A": 2048,
+      "M": 16,
+      "Q": 128,
+      "ambiguous": 0,
+      "golden_return_energy_certified": [
+        "0.03856967283350",
+        "0.03856967283351"
+      ],
+      "near_count": 25428
+    }
+  ],
+  "status": "exploratory finite; not blind; no asymptotic bound"
+}

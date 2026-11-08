@@ -1,0 +1,28 @@
+# Claim Ledger — ORIGINAL BBP PRIME–FROBENIUS × VIRTUAL HAAR × REAL SIGNED GATE
+
+| Claim | Status | Proof scope / falsifier |
+|---|---|---|
+| PF-00 | INHERITED / VERIFIED SOURCE | Four original signed BBP poles, exact polynomial A/D, literal U0=0, odd rational denominators, 2-adic isometry/carry and previous return energy. Parent PRs #527–#531, not all formal Lean independently re-run here. |
+| PF-01 | **PROVED LOCAL** | At every n≥8, primes n<p≤2n have normalized local pU_n coefficient among {7/2,33/10,47/15,-19/6,-65/21}, with exact j5,j3,j7 thresholds; Euler χ₂(p) fixes pole interference. All nonzero except p=19, n=10..16. The p19 counterexample is preserved. |
+| PF-02 | **PROVED LOCAL** | For all n≥8 and primes 2n<p≤4n, v_p(U_n)=-1. For p≡3 mod4 a second 3p pole may interfere; nonzero combined coefficients 16/3 or −4/3 are required. Initial false single-pole residue at p=23,n=10 REFUTED. |
+| PF-03 | **PROVED LOCAL** | For all n≥8 and primes 4n<p≤8n−7 with p≡1 mod4, v_p(U_n)=-1. Others in this interval not asserted. |
+| PF-04 | **PROVED LOCAL using known unconditional PNT/AP** | For n≥17, the complete explicitly selected prime product on (n,4n] and (4n,8n−7] class1 mod4 divides original reduced denominator d_n. Consequence 5≤liminf log d_n/n≤limsup log d_n/n≤8. No RH assumed. Source-specific but persists for any fixed rational seed, so NOT zero-selector-specific. |
+| PF-05 | **PROVED LOCAL / scoped impossibility** | Existing PR #528 numerator readout with known odd d_n requires K≥ceil(log₂d_n), now K≥(5/log2−o(1))n. Low-state Haar census of N clocks has depth ≤log₂N. Does NOT rule out other source-aware algorithms, or prove phase mixing. |
+| PF-06 | **PROVED LOCAL / Ramanujan** | Each rational original e(U_n) is a primitive d_n-th root. Its uniform **Galois orbit** converges to circle Haar with each fixed h Fourier error ≤σ₁(h) exp[-(5/2−ε)n]. A fake real-decaying y_n=1/Q_n has same denominator mass and virtual Haar but selected phases→0; virtual→real selected inference REFUTED. |
+| PF-07 | **PROVED LOCAL / classical symbolic countermodel** | Nonuniform base16 IID digit measure is mixing but not Haar. Merely excluding nontrivial Koopman eigenvalues cannot prove normality. Weil/RH positivity is not equivalent to SUCC Fourier energy *vanishing*. |
+| PF-08 | **PROVED CONDITIONAL / selected source gap OPEN** | Dyadic wavelet energy has exact product |W_(2^m)(h)|²=Π_k(1−g_(k,m)); cm levels with gap ratio≥η would force dyadic Weyl decay; all-prefix needs #531 mesoscopic control. Genuine selected π gaps not proved for all m,h. |
+| PF-09 | **OBSERVED FINITE / exact 2-implementation controls** | 1116 first prereg p-residue checks n=161..383, 1847 second prereg checks n=389..557, independent pole-enumeration oracle, p19 red controls, 7/7 focused Python tests PASS. Numeric log/gap values are float diagnostics only. |
+| PF-10 | **OPEN** | Original literal-zero base16 π normality; authenticated real source-carry/denominator signed correlation estimate; Poisson energy scale contraction; RH. Nothing promoted by finite Galois/prime data. |
+
+**Source map σ** authentic for the selected tests, fake controls explicitly separated. **Path φ** new all-n denominator and virtual-Galois theorem, original-real signed transfer not constructible. **Probe μ** all exact Fraction/mod-p and independent pole enumerator; Fourier contrasts floating and finite. **Coherence** finite local residue checks corroborate algebra but are not independent external referee. **ρ coupling** no arithmetic identity is treated as proof of user's conceptual triangle. No combined "truth score."
+
+Full [THEOREMS.md](THEOREMS.md), raw regenerators and [VALIDATION.md](VALIDATION.md).
+
+## Additional Galois selection decomposition (same research branch)
+
+| ID | Status | Proof and boundary |
+|---|---|---|
+| PF-09a | **PROVED LOCAL** | For each authentic reduced U_n=a_n/d_n, finite character Fourier inversion on G_n=(Z/d_n)^× gives the *selected* phase e(hU_n)=c_(d_n)(h)/φ(d_n)+Σ_(χ≠1) \hat F_(n,h)(χ), \hat F normalized twisted Gauss sums. The evaluation at u=1 is the declared choice of complex embedding. |
+| PF-09b | **PROVED LOCAL** | Parseval shows Σ_(χ≠1)|\hat F|² =1−|c_d(h)/φ(d)|²→1. Virtual Haar averaging discards an asymptotically full-L2 nontrivial sector; it cannot establish selected real Haar. |
+| PF-09c | **PROVED LOCAL reduction / OPEN cancellation** | For each fixed h, exponential d_n growth makes the time-summed *trivial* Galois sector absolutely summable; original W_N(h) equals N^-1 Σ_(n<N)Σ_(χ≠1)\hat F_(n,h)(χ)+O_h(1/N). Same for completed π orbit by summable BBP real tail. Vanishing of the remaining sum for every h is **EQUIVALENT to π base16 normality**, not proved. |
+| PF-09d | **OBSERVED FINITE** | Authentic U1=47/15 yields trivial mean 1/8 and nontrivial sector energy 63/64 at h1; explicit character-table oracles G15=C2×C4, primes 7,11,17 for several h plus non-coprime numerator mutation. Five new focused tests PASS, total 12/12 PASS, floating phases not analytic interval proofs. |

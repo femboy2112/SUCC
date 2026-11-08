@@ -1,3 +1,22 @@
+**2026-11-07 Operation Main XXI — pin-bed × golden/Fejér × adelic reunification (research integration).** Integrated the seven ancestry-minimal leaves (#532, #535, #537, #539, #540, #542, #543). Together they carry all 19 open research PRs not yet in main (#525–#543).
+- **Graph.** The Git graph corrects the planning schematic. #529 and #530 are *siblings* off #528. The shared root #525→#528 is carried once, and #543 carries #541. #542 is an independent sibling.
+- **Merge mechanics.** Every merge was `--no-ff` and conflict-free, and the diff is purely additive: 332 paths added, 0 modified or deleted. All 258 cross-leaf overlaps are byte-identical shared-ancestor blobs. `IMPORT_MANIFEST.json` and the `formal/`+`provenance/` tree are unchanged.
+- **Audit.** Two blind bearings (proof audit and adversary) reviewed the pin-bed cluster, and one proof auditor reviewed each remaining cluster. Result: 19/19 integrate (8 INTEGRATE, 11 INTEGRATE-SCOPED), with no DEFER and no BLOCK. Scope corrections are recorded in [`CLAIM_SUPPLEMENT_MAIN_XXI.md`](CLAIM_SUPPLEMENT_MAIN_XXI.md) (`MXXI-01…30`); the original dossiers are byte-identical.
+- **Integration-time additions.**
+  - **Receipt R1.** #540 labelled GA-09 REFUTED without a countermodel, contrary to the METHOD.md receipt rule. R1 supplies one: a uniform arc grid satisfies every all-radius `K=3` anticlustering bound, yet has golden energy `→√5/9−1/6>0`.
+  - **Hardening tests.** Five demonstrated wrong implementations previously passed the pin-bed tests; new tests now fail on each of them.
+  - **Precision fix.** `gram_mobius` no longer sets global mpmath precision at import. Values are bit-identical.
+- **Strongest new results.**
+  - `log d_n=Θ(n)` with `5≤liminf≤limsup≤8` (#532 PF7; not zero-seed selective).
+  - The sharp real-law ×16 constant `341/√205` in the half-aperture pin-bed metric (#543).
+  - Unconditional zero-seed→π transports: √-critical-Fejér error `O(A^{-1/2})` (#538 ET1) and golden-energy error `O(A^{-2})` (#540 GA5).
+  - Dyadic refinement cannot contract return energy (#535 FG11).
+  - The 2-adic decoder floor `1/34` (#528).
+- **Gates.** Every new normality statement is an equivalent reformulation or a conditional with an OPEN premise. The navigation entrypoint is unchanged: [`docs/PI_NORMALITY_FRONTIER.md`](PI_NORMALITY_FRONTIER.md), with additions marked [XXI].
+- **Validation and ancestry:** [`docs/SUCC_MAIN_XXI_INTEGRATION_AUDIT_2026-11-07.md`](SUCC_MAIN_XXI_INTEGRATION_AUDIT_2026-11-07.md).
+
+π base-16 normality, the selected signed Weyl gate `S_N(h)=o(N)`, and RH remain **OPEN**.
+
 **2026-11-05 Operation Main XX — history-first π proof forge × coherent reunification (research integration).** Integrated the ten ancestry-minimal leaves (#458, #491, #492, #494, #495, #498, #505, #510, #519, #522) that carry all 33 open research PRs not yet in main.
 - **Merge mechanics.** The merges were `--no-ff` and conflict-free. The 730 cross-leaf path overlaps are byte-identical shared-ancestor blobs, and #494/#495 carry an identical convergent test fix.
 - **What changed besides additions.** #491's correction of the last integration's false `band⇔J` equivalence (two doc edits) is now in main. The #521 CI order-dependence failure was repaired with locally scoped precision (no loosened tolerance) and merged forward through #522.

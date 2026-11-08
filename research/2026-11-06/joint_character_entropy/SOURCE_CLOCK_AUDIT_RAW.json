@@ -1,0 +1,98 @@
+{
+  "clock_period": 7,
+  "entropy_float_diagnostic_not_rigorous_signed_saving": true,
+  "exact_original_four_pole_checks": 200,
+  "finite_entropy_measurements": [
+    {
+      "N": 384,
+      "k_1": {
+        "coefficient_clock_deficit_nats_float": 0.013019768227,
+        "coefficient_vs_index": "better",
+        "coefficient_vs_input": "worse",
+        "index_only_deficit_nats_float": 0.021974064596,
+        "input_deficit_nats_float": 0.011460303845,
+        "mutant_clock_deficit_nats_float": 0.021485488717
+      },
+      "k_2": {
+        "coefficient_clock_deficit_nats_float": 0.338133887387,
+        "coefficient_vs_index": "better",
+        "coefficient_vs_input": "better",
+        "index_only_deficit_nats_float": 0.401056731471,
+        "input_deficit_nats_float": 0.356757456424,
+        "mutant_clock_deficit_nats_float": 0.398277615667
+      }
+    },
+    {
+      "N": 768,
+      "k_1": {
+        "coefficient_clock_deficit_nats_float": 0.008049240771,
+        "coefficient_vs_index": "better",
+        "coefficient_vs_input": "better",
+        "index_only_deficit_nats_float": 0.010563496654,
+        "input_deficit_nats_float": 0.010008271046,
+        "mutant_clock_deficit_nats_float": 0.011870683688
+      },
+      "k_2": {
+        "coefficient_clock_deficit_nats_float": 0.161683259185,
+        "coefficient_vs_index": "better",
+        "coefficient_vs_input": "better",
+        "index_only_deficit_nats_float": 0.193622962253,
+        "input_deficit_nats_float": 0.170236276608,
+        "mutant_clock_deficit_nats_float": 0.174405112248
+      }
+    },
+    {
+      "N": 1536,
+      "k_1": {
+        "coefficient_clock_deficit_nats_float": 0.005180900597,
+        "coefficient_vs_index": "better",
+        "coefficient_vs_input": "worse",
+        "index_only_deficit_nats_float": 0.005392143438,
+        "input_deficit_nats_float": 0.003862130564,
+        "mutant_clock_deficit_nats_float": 0.005401634314
+      },
+      "k_2": {
+        "coefficient_clock_deficit_nats_float": 0.088049196676,
+        "coefficient_vs_index": "better",
+        "coefficient_vs_input": "worse",
+        "index_only_deficit_nats_float": 0.090773698689,
+        "input_deficit_nats_float": 0.081273554224,
+        "mutant_clock_deficit_nats_float": 0.078783461954
+      }
+    }
+  ],
+  "index_clock_first_period": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    0
+  ],
+  "mutant_clock_first_period": [
+    6,
+    3,
+    3,
+    5,
+    1,
+    4,
+    6
+  ],
+  "mutant_first_clock_mismatch_n": 0,
+  "original_clock_first_period": [
+    5,
+    3,
+    3,
+    5,
+    2,
+    1,
+    2
+  ],
+  "pi_normality": "OPEN",
+  "preregistration_head_before_measurement": "a0289b84295b4fdef3a7f3678d6c3cfdd5ea881c",
+  "reversibility_for_all_3_clocks": true,
+  "source_clock_alone_does_not_uniquely_identify_source": true,
+  "status": "OBSERVED-FINITE",
+  "wrong_clock_replay_rejects_original": true
+}

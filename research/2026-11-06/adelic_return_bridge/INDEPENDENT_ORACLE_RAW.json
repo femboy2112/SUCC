@@ -1,0 +1,63 @@
+{
+  "fresh_witnesses": [
+    {
+      "Q": 512,
+      "dist": 0.39296837686,
+      "k": 9,
+      "n": 128,
+      "real_frac_residues": [
+        239,
+        231
+      ]
+    },
+    {
+      "Q": 1024,
+      "dist": 0.326762596234,
+      "k": 10,
+      "n": 128,
+      "real_frac_residues": [
+        239,
+        46
+      ]
+    },
+    {
+      "Q": 2048,
+      "dist": 0.40853458968,
+      "k": 11,
+      "n": 128,
+      "real_frac_residues": [
+        1263,
+        1158
+      ]
+    }
+  ],
+  "note": "exact Fraction identities; displayed floats not certified error bounds",
+  "rational_reconstruction": [
+    {
+      "carry_bits": 290,
+      "denominator_bits": 616,
+      "n": 73,
+      "numerator_bits": 614
+    },
+    {
+      "carry_bits": 594,
+      "denominator_bits": 1272,
+      "n": 149,
+      "numerator_bits": 1268
+    },
+    {
+      "carry_bits": 1170,
+      "denominator_bits": 2528,
+      "n": 293,
+      "numerator_bits": 2528
+    },
+    {
+      "carry_bits": 2346,
+      "denominator_bits": 5062,
+      "n": 587,
+      "numerator_bits": 5062
+    }
+  ],
+  "source_cases": 200,
+  "status": "PASS"
+}

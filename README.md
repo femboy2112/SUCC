@@ -13,8 +13,9 @@ missing arithmetic estimate, and the actual source decides whether its lines des
 **Start here (one click to the frontier):**
 [**π normality frontier — single entrypoint**](docs/PI_NORMALITY_FRONTIER.md) — the
 authenticated source, the proved exact theorems, the sufficient-but-open gates, every no-go
-and countermodel, the orthogonal tracks, and the precise next theorem (Operation Main XX,
-2026-11-05) · earlier fronts, kept as history:
+and countermodel, the orthogonal tracks, and the precise next theorem (maintained through
+Operation Main XXI, 2026-11-07; [Main XXI claim supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXI.md)) ·
+earlier fronts, kept as history:
 [π current front (2026-11-03)](docs/PI_BRANCH_CURRENT_FRONTIER_2026-11-03.md) — the
 source-selected branch-current route: the boundary-stable sufficient target `J=o(K)`, its proved
 reductions, and the single open signed-second-moment gate ·
