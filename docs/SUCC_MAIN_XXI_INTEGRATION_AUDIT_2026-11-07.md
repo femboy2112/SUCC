@@ -226,3 +226,15 @@ See [`CODEX_HANDOFF_MAIN_XXI.md`](CODEX_HANDOFF_MAIN_XXI.md). It covers:
    duplicate coverage before merging any of them. No CI file was changed in this round.
 5. **The 872 remote branches.** Archive by manifest only, and never delete a branch whose
    commits are not reachable from `main`.
+6. **Invalid escape sequences in docstrings.** Three modules produce
+   `SyntaxWarning: invalid escape sequence` under `compileall`:
+   `apollo_source_first_interference.py:95`, `prime_surplus_dual.py:5,177` and
+   `tate_finite_bruhat_observers.py:352`. An `r` prefix would produce an identical string
+   value. However, these files are **sha256-pinned, and the pins are live**: the current
+   bytes hash to the pinned `d1a38400…` and `15dcabd8…` in
+   `research/2026-10-15/proof_teeth_receipts/`, the `lonely_runner` receipts and the
+   `carry_defect_validation` source snapshot. Any edit therefore needs re-pinning under
+   provenance. Not touched this round.
+7. **Legacy catalog warnings.** The 170 pre-existing math-memory warnings are claim rows
+   in older supplements whose namespaces were never registered (`B7-`, `C-`, `CPS-`,
+   `GS-`, …). Register them additively. This count did not change in Main XXI.
