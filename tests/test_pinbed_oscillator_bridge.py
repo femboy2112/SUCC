@@ -69,20 +69,20 @@ class OscillatorBridgeTests(unittest.TestCase):
             for h in (1,2,7,19):
                 b,t=16,0.031
                 input_f=mode_vector(a,b*h,cmath.exp(-2j*math.pi*b*h*x))
-                after=evolve_mode(a,h,b,t,input_f)
+                after=evolve_mode(a,h,b,t,input_f,defect_squared_budget=1e-24)
                 expected=mode_vector(a,h,cmath.exp(-2j*math.pi*h*(b*x+t)))
                 for u,v in zip(after,expected):
                     self.assertAlmostEqual(abs(u-v),0,delta=1e-12)
                 with self.assertRaises(ValueError):
-                    evolve_mode(a,h,b,t,(input_f[0],input_f[1]+1j))
+                    evolve_mode(a,h,b,t,(input_f[0],input_f[1]+1j),defect_squared_budget=1e-24)
         # General affine composition: (c,u)(b,t)=(bc,ct+u)
         b,t,c,u=3,0.125,5,-0.1
         x=0.17
         for h in (1,2,4):
             initial=mode_vector(a,b*c*h,cmath.exp(-2j*math.pi*b*c*h*x))
-            intermediate=evolve_mode(a,c*h,b,t,initial)
-            composed=evolve_mode(a,h,c,u,intermediate)
-            once=evolve_mode(a,h,b*c,c*t+u,initial)
+            intermediate=evolve_mode(a,c*h,b,t,initial,defect_squared_budget=1e-24)
+            composed=evolve_mode(a,h,c,u,intermediate,defect_squared_budget=1e-24)
+            once=evolve_mode(a,h,b*c,c*t+u,initial,defect_squared_budget=1e-24)
             for v,w in zip(composed,once):
                 self.assertAlmostEqual(abs(v-w),0,delta=1e-12)
 
@@ -96,14 +96,14 @@ class OscillatorBridgeTests(unittest.TestCase):
                 forcing=float(four_pole(n+1))
                 for h in (1,2,5):
                     old=mode_vector(a,16*h,cmath.exp(-2j*math.pi*16*h*float(history[n])))
-                    propagated=evolve_mode(a,h,16,forcing,old)
+                    propagated=evolve_mode(a,h,16,forcing,old,defect_squared_budget=1e-24)
                     observed=mode_vector(a,h,cmath.exp(-2j*math.pi*h*float(history[n+1])))
                     for v,w in zip(propagated,observed):
                         self.assertAlmostEqual(abs(v-w),0,delta=2e-12)
             # The wrong source phase on the same witnessed transition fails.
             h,n=1,10
             old=mode_vector(a,16*h,cmath.exp(-2j*math.pi*16*h*float(history[n])))
-            wrong=evolve_mode(a,h,16,float(four_pole(n+1))+1/7,old)
+            wrong=evolve_mode(a,h,16,float(four_pole(n+1))+1/7,old,defect_squared_budget=1e-24)
             actual=mode_vector(a,h,cmath.exp(-2j*math.pi*h*float(history[n+1])))
             self.assertGreater(abs(wrong[0]-actual[0]),0.05)
 
@@ -144,6 +144,20 @@ class OscillatorBridgeTests(unittest.TestCase):
         for A in (16,32,64,128):
             src=source_history(2*A)
             self.assertGreaterEqual(energy_pair(src[A:2*A],a),-1e-8)
+
+    def test_numerical_projection_requires_an_explicit_noise_budget(self):
+        a=(math.sqrt(5)-1)/2
+        f=mode_vector(a,16,0.6+0.2j)
+        with self.assertRaises(TypeError):
+            evolve_mode(a,1,16,0.0,f)
+        with self.assertRaises(ValueError):
+            evolve_mode(a,1,16,0.0,f,defect_squared_budget=float("nan"))
+        with self.assertRaises(ValueError):
+            evolve_mode(a,1,16,0.0,f,defect_squared_budget=-1.0)
+        with self.assertRaises(ValueError):
+            evolve_mode(a,1,16,float("inf"),f,defect_squared_budget=1e-24)
+        ok=evolve_mode(a,1,16,0.0,f,defect_squared_budget=1e-24)
+        self.assertEqual(len(ok),2)
 
     def test_negative_moment_not_probability_even_if_channel_syzygy(self):
         # m_0=1, m_{+/-1}=2 passes rank-one channel algebra but fails
