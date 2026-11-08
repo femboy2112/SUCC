@@ -1,0 +1,8 @@
+| ID | Claim | Status | Evidence | Boundary / next falsifier |
+|---|---|---|---|---|
+| CR1 | Unit folded models lift to full chronological L2 error at most 2rho | PROVED PAPER | Exact finite expansion; source interval checks | Subunit models do not satisfy this conclusion |
+| CR2 | Nonlinear reduced degree2..m-1 unit chirps have the explicit L1 floor; asymptotic floor1/289 within vanishing arithmetic budget | PROVED PAPER, conditional only on declared PR3 classical input | Complete source-cocycle/Minkowski proof;36 outward finite checks | Applies also to matching rational wrong seeds; no zero selection; not a many-atom theorem |
+| CR3 | Accurate affine unit models have fifteenth-root anchors; inverse slope retains the Weyl signal | PROVED PAPER | Exact integer phase tests and two rational source-matching controls | All15 anchors survive at the h-character level; source amplitude decay still OPEN |
+| CR4 | Optimized resonant unit-model squared full error equals2-2abs(W) | PROVED PAPER | Expansion from CR1 | A projection-based estimate is the original target, not independent arithmetic evidence |
+| CR-X1 | Every low-degree nonlinear phase allowed by the local character budget can accurately fit the complement | REFUTED in the unit single-atom class | CR2 positive lower bound | Does not refute approximation by complex sums or subunit amplitudes |
+| CR-X2 | Source cocycle alone forces the retained affine anchor to zero amplitude | REFUTED | Same-forcing completions theta=k/(15h), plus rational finite matched-seed oracle | Original-zero arithmetic still needs an additional premise |

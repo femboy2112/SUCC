@@ -1,0 +1,330 @@
+{
+  "A": 1103,
+  "L": 1102,
+  "RH": "OPEN",
+  "carry_sha256": "10dcf3e972550e3fd53cfb49a8ddbe1cd4ca3d9fe9ca94b92e847283521bac0c",
+  "code_sha256": {
+    "certified_fft.py": "5c1d5aec8a097e2d8b17a63010a654443834568376f5d609316539491274f23a",
+    "source_budget.py": "6ec9fd2e0568933be4dc6bd5696d2707d221e6de63ad8c36c502351eecdee696"
+  },
+  "denominator_bits": 18947,
+  "fresh_after_20017": false,
+  "last": 2204,
+  "m": 551,
+  "modular_checkpoints": [
+    1103,
+    1654,
+    2204
+  ],
+  "n0": 1103,
+  "p": 4409,
+  "pi_normality": "OPEN",
+  "principal_parts_checked": 1102,
+  "q": 2,
+  "rows": [
+    {
+      "W": {
+        "abs_squared": [
+          974806461152154952687,
+          974806461152154952690
+        ],
+        "im": [
+          -20815257831742530624772,
+          -20815257831742530624764
+        ],
+        "re": [
+          27298236965270968633218,
+          27298236965270968633226
+        ]
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.028396144204037434,
+        "denominator": 302231454903657293676544,
+        "numerator": 8582207976440288922551
+      },
+      "energy": [
+        603727486544983258951143,
+        603727486544983258951158
+      ],
+      "h": 1,
+      "maxima": [
+        {
+          "all_slopes_evaluated": 4409,
+          "degree": 1,
+          "max_correlation_upper": {
+            "decimal_diagnostic": 0.08445501301067783,
+            "denominator": 333059063303830337631551488,
+            "numerator": 28128507524649160035756031
+          },
+          "maximizing_upper_bound_slope": 644,
+          "normalized_L1_radius": {
+            "decimal_diagnostic": 4.549781800083873e-14,
+            "denominator": 666118126607660675263102976,
+            "numerator": 30306921291455
+          },
+          "ratio_upper": {
+            "decimal_diagnostic": 0.7008207993789162,
+            "denominator": 80273038555868501310304561,
+            "numerator": 56257015049298320071512062
+          },
+          "spectrum_center_sha256": "75a340c6981922bc66bd94c4bf346b9b9da311d6100c03424410afb5b0a9bb2d",
+          "unnormalized_L1_radius_units": 30306921291455,
+          "weight_lower": {
+            "decimal_diagnostic": 0.1205087136191218,
+            "denominator": 666118126607660675263102976,
+            "numerator": 80273038555868501310304561
+          }
+        },
+        {
+          "all_slopes_evaluated": 4409,
+          "degree": 2,
+          "max_correlation_upper": {
+            "decimal_diagnostic": 0.08758228217675082,
+            "denominator": 666118126607660675263102976,
+            "numerator": 58340145727600761352185643
+          },
+          "maximizing_upper_bound_slope": 3459,
+          "normalized_L1_radius": {
+            "decimal_diagnostic": 4.624462681544408e-14,
+            "denominator": 333059063303830337631551488,
+            "numerator": 15402192089987
+          },
+          "ratio_upper": {
+            "decimal_diagnostic": 0.36338568202446414,
+            "denominator": 160546077111737002620609122,
+            "numerator": 58340145727600761352185643
+          },
+          "spectrum_center_sha256": "f4e619d960cb59c6d7ad9473e99d75e1c85f96c76435ac3e6dce5d57e5766619",
+          "unnormalized_L1_radius_units": 30804384179974,
+          "weight_lower": {
+            "decimal_diagnostic": 0.2410174272382436,
+            "denominator": 333059063303830337631551488,
+            "numerator": 80273038555868501310304561
+          }
+        },
+        {
+          "all_slopes_evaluated": 4409,
+          "degree": 3,
+          "max_correlation_upper": {
+            "decimal_diagnostic": 0.08442078891371935,
+            "denominator": 666118126607660675263102976,
+            "numerator": 56234217757947503783728103
+          },
+          "maximizing_upper_bound_slope": 1701,
+          "normalized_L1_radius": {
+            "decimal_diagnostic": 4.6617031153768156e-14,
+            "denominator": 666118126607660675263102976,
+            "numerator": 31052449460159
+          },
+          "ratio_upper": {
+            "decimal_diagnostic": 0.23351226750440232,
+            "denominator": 240819115667605503930913683,
+            "numerator": 56234217757947503783728103
+          },
+          "spectrum_center_sha256": "d8e9d4469f8a95121ea6eefb13b071112d6d5d51520c60ae6707dc31fb1fdb20",
+          "unnormalized_L1_radius_units": 31052449460159,
+          "weight_lower": {
+            "decimal_diagnostic": 0.3615261408573654,
+            "denominator": 666118126607660675263102976,
+            "numerator": 240819115667605503930913683
+          }
+        }
+      ],
+      "menu_certificates": [
+        {
+          "M_upper": {
+            "decimal_diagnostic": 0.7008207993789162,
+            "denominator": 80273038555868501310304561,
+            "numerator": 56257015049298320071512062
+          },
+          "maximum_monomial_degree": 1,
+          "rho_plus_budget_lower": {
+            "decimal_diagnostic": 0.4848183590921763,
+            "denominator": 93937665536186753486732264741024830871757127680,
+            "numerator": 45542704862203743023179124624510891024458924847
+          }
+        },
+        {
+          "M_upper": {
+            "decimal_diagnostic": 0.7008207993789162,
+            "denominator": 80273038555868501310304561,
+            "numerator": 56257015049298320071512062
+          },
+          "maximum_monomial_degree": 2,
+          "rho_plus_budget_lower": {
+            "decimal_diagnostic": 0.4848183590921763,
+            "denominator": 93937665536186753486732264741024830871757127680,
+            "numerator": 45542704862203743023179124624510891024458924847
+          }
+        },
+        {
+          "M_upper": {
+            "decimal_diagnostic": 0.7008207993789162,
+            "denominator": 80273038555868501310304561,
+            "numerator": 56257015049298320071512062
+          },
+          "maximum_monomial_degree": 3,
+          "rho_plus_budget_lower": {
+            "decimal_diagnostic": 0.4848183590921763,
+            "denominator": 93937665536186753486732264741024830871757127680,
+            "numerator": 45542704862203743023179124624510891024458924847
+          }
+        }
+      ]
+    },
+    {
+      "W": {
+        "abs_squared": [
+          3119604614395033681452,
+          3119604614395033681455
+        ],
+        "im": [
+          31886732271010398710180,
+          31886732271010398710188
+        ],
+        "re": [
+          52484348813793996745106,
+          52484348813793996745114
+        ]
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.0507983902880646,
+        "denominator": 1208925819614629174706176,
+        "numerator": 61411485614102312583051
+      },
+      "energy": [
+        591588016118023777785970,
+        591588016118023777785985
+      ],
+      "h": 3,
+      "maxima": [
+        {
+          "all_slopes_evaluated": 4409,
+          "degree": 1,
+          "max_correlation_upper": {
+            "decimal_diagnostic": 0.08859306976600174,
+            "denominator": 666118126607660675263102976,
+            "numerator": 59013449662950868038858469
+          },
+          "maximizing_upper_bound_slope": 969,
+          "normalized_L1_radius": {
+            "decimal_diagnostic": 4.4379579662295925e-14,
+            "denominator": 166529531651915168815775744,
+            "numerator": 7390510616071
+          },
+          "ratio_upper": {
+            "decimal_diagnostic": 0.7351590362669358,
+            "denominator": 80273038555868501310304561,
+            "numerator": 59013449662950868038858469
+          },
+          "spectrum_center_sha256": "5924745aa33439e63bea362c56ee8532a3b06b6d95fccecafeda90188e977d90",
+          "unnormalized_L1_radius_units": 29562042464284,
+          "weight_lower": {
+            "decimal_diagnostic": 0.1205087136191218,
+            "denominator": 666118126607660675263102976,
+            "numerator": 80273038555868501310304561
+          }
+        },
+        {
+          "all_slopes_evaluated": 4409,
+          "degree": 2,
+          "max_correlation_upper": {
+            "decimal_diagnostic": 0.08173002341280114,
+            "denominator": 666118126607660675263102976,
+            "numerator": 54441850083335340967907889
+          },
+          "maximizing_upper_bound_slope": 3237,
+          "normalized_L1_radius": {
+            "decimal_diagnostic": 4.464212319062421e-14,
+            "denominator": 666118126607660675263102976,
+            "numerator": 29736927467527
+          },
+          "ratio_upper": {
+            "decimal_diagnostic": 0.3391042064854992,
+            "denominator": 160546077111737002620609122,
+            "numerator": 54441850083335340967907889
+          },
+          "spectrum_center_sha256": "ffddd1f2191ac7c3bef4041a57c85d5094a9ab522a662d283ad8f8068c915ef7",
+          "unnormalized_L1_radius_units": 29736927467527,
+          "weight_lower": {
+            "decimal_diagnostic": 0.2410174272382436,
+            "denominator": 333059063303830337631551488,
+            "numerator": 80273038555868501310304561
+          }
+        },
+        {
+          "all_slopes_evaluated": 4409,
+          "degree": 3,
+          "max_correlation_upper": {
+            "decimal_diagnostic": 0.08318219264622666,
+            "denominator": 666118126607660675263102976,
+            "numerator": 55409166332622030308047309
+          },
+          "maximizing_upper_bound_slope": 2571,
+          "normalized_L1_radius": {
+            "decimal_diagnostic": 4.5402274161938694e-14,
+            "denominator": 333059063303830337631551488,
+            "numerator": 15121638904239
+          },
+          "ratio_upper": {
+            "decimal_diagnostic": 0.23008624618114382,
+            "denominator": 240819115667605503930913683,
+            "numerator": 55409166332622030308047309
+          },
+          "spectrum_center_sha256": "f94d59d2a4326b3b85e576f5e585a6c0200ac8e80fe9932e766962a6c4574536",
+          "unnormalized_L1_radius_units": 30243277808478,
+          "weight_lower": {
+            "decimal_diagnostic": 0.3615261408573654,
+            "denominator": 666118126607660675263102976,
+            "numerator": 240819115667605503930913683
+          }
+        }
+      ],
+      "menu_certificates": [
+        {
+          "M_upper": {
+            "decimal_diagnostic": 0.7351590362669358,
+            "denominator": 80273038555868501310304561,
+            "numerator": 59013449662950868038858469
+          },
+          "maximum_monomial_degree": 1,
+          "rho_plus_budget_lower": {
+            "decimal_diagnostic": 0.46323792041805123,
+            "denominator": 1535743567910683565113419672809486776876455165952,
+            "numerator": 711414656694343255041622343081220570622792682119
+          }
+        },
+        {
+          "M_upper": {
+            "decimal_diagnostic": 0.7351590362669358,
+            "denominator": 80273038555868501310304561,
+            "numerator": 59013449662950868038858469
+          },
+          "maximum_monomial_degree": 2,
+          "rho_plus_budget_lower": {
+            "decimal_diagnostic": 0.46323792041805123,
+            "denominator": 1535743567910683565113419672809486776876455165952,
+            "numerator": 711414656694343255041622343081220570622792682119
+          }
+        },
+        {
+          "M_upper": {
+            "decimal_diagnostic": 0.7351590362669358,
+            "denominator": 80273038555868501310304561,
+            "numerator": 59013449662950868038858469
+          },
+          "maximum_monomial_degree": 3,
+          "rho_plus_budget_lower": {
+            "decimal_diagnostic": 0.46323792041805123,
+            "denominator": 1535743567910683565113419672809486776876455165952,
+            "numerator": 711414656694343255041622343081220570622792682119
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Outward finite lower bounds for specified monomial menus, with arbitrary free resonance; no asymptotic assertion.",
+  "source_contract": "4,-2,-1,-1; poles7,4,3,2; literal U0=0",
+  "source_receipt_sha256": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5",
+  "unwrapped_sha256": "b7d01220b652828b4fc89ee1810454085d02993d72fda0f7960f4962a8d63f45"
+}
