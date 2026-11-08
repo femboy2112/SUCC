@@ -54,7 +54,7 @@ def stream_source(A):
     for n in range(1, last+1):
         for _, pole in POLES:
             den = lcm(den, 8*n-pole)
-    unwrapped, oldfloor = 0, 0
+    unwrapped, oldfloor, oldrem = 0, 0, 0
     hd = sha256(b'BBP:4,-2,-1,-1;7,4,3,2;U0=0;unwrapped\0')
     cd = sha256(b'floor(U_n)-16floor(U_(n-1))\0')
     arrays = {h:[Box() for _ in range(m)] for h in (1,3)}
@@ -63,9 +63,14 @@ def stream_source(A):
     for n in range(1, last+1):
         fn, fd = forcing_pair(n)
         assert den % fd == 0
-        unwrapped = 16*unwrapped + fn*(den//fd)
-        floor, rem = divmod(unwrapped, den)
-        carry = floor-16*oldfloor
+        forcing = fn*(den//fd)
+        unwrapped = 16*unwrapped + forcing
+        # The quotient here is a literal one-step carry, of bounded size.
+        # Algebraically this is the same divmod(unwrapped, den), while avoiding
+        # repeated long division of an exponentially growing integer part.
+        carry, rem = divmod(16*oldrem+forcing, den)
+        floor = 16*oldfloor+carry
+        oldrem = rem
         oldfloor = floor
         digest_int(hd, unwrapped)
         cd.update(str(carry).encode()+b'\n')

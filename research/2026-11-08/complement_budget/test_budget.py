@@ -4,6 +4,7 @@ from math import isqrt
 
 from certified_fft import PrimeDFT, fft, center, SCALE, phase
 from source_budget import Box, Interval, magnitude_upper, stream_source, unpacked
+from source_budget import certify, packed, mean, clock, source_xi, order16
 
 
 class CertifiedTransformTests(unittest.TestCase):
@@ -66,6 +67,29 @@ class CertifiedTransformTests(unittest.TestCase):
         for values in ([],[(0,0)]*3):
             with self.assertRaises(ValueError):fft(values)
         with self.assertRaises(ValueError):PrimeDFT(1)
+
+    def test_complete_menu_known_controls(self):
+        import contextlib
+        import io
+        p = 73
+        xs = clock(p,source_xi(p))
+        m = order16(p)
+        for label,B in [('zero',[Box() for _ in xs]),
+                        ('coherent',[phase(-x,p) for x in xs]),
+                        ('nonresonant',[phase(2*x,p) for x in xs])]:
+            W = mean(b*phase(x,p) for x,b in zip(xs,B))
+            data = {'A':0,'p':p,'m':m,'rows':[{'h':1,'B':[packed(b) for b in B],'W':packed(W)}]}
+            with contextlib.redirect_stdout(io.StringIO()):
+                receipt = certify(data)
+            for row in receipt['rows'][0]['menu_certificates']:
+                value = row['rho_plus_budget_lower']
+                lower = Q(value['numerator'],value['denominator'])
+                if label in ('zero','coherent'):
+                    self.assertEqual(lower,0)
+                else:
+                    # Known exact fit has rho=0 and arithmetic cost sqrt(p)/m.
+                    self.assertGreater(lower,0)
+                    self.assertLessEqual(lower*lower,Q(p,m*m))
 
 
 if __name__ == '__main__':
