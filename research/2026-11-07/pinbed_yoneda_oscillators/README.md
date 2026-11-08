@@ -19,6 +19,6 @@ Read [RESEARCH_NOTE.md](RESEARCH_NOTE.md) for the exact finite theorems, constru
 - [ANCHORED_PATHS_VS_HOLONOMY.md](ANCHORED_PATHS_VS_HOLONOMY.md): exact all-depth **seed-blind corrected oscillator loop** no-go, quantitative periodic finite-horizon aliases, and the need for source-anchored open paths.
 - [VALIDATION_FOLLOWUP.md](VALIDATION_FOLLOWUP.md): exact code SHA, isolated 49/49 unit tests, finite source diagnostics and explicit CI/Lean/nonphysical limitations.
 
-Implemented subset: ../../../../observational_succ/pinbed_oscillator_bridge.py and ../../../../tests/test_pinbed_oscillator_bridge.py are *new additive GitHub files* tested as byte-identical code/test snapshots in the isolated research bundle. The expanded local zip contains further prototype code/tests but is not itself the full GitHub PR.
+Implemented subset: ../../../observational_succ/pinbed_oscillator_bridge.py and ../../../tests/test_pinbed_oscillator_bridge.py are *new additive GitHub files* tested as byte-identical code/test snapshots in the isolated research bundle. The expanded local zip contains further prototype code/tests but is not itself the full GitHub PR.
 
 **Open theorem remains:** a zero-seed-specific all-epoch signed Fourier/positive energy saving, unlike the source-uniform reconstruction, pin-syzygy, holonomy or tail-transfer identities. π base-16 normality OPEN; RH OPEN. This PR remains DRAFT and is **not** approved for merge.
