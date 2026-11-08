@@ -57,6 +57,27 @@ class OscillatorBridgeTests(unittest.TestCase):
             for v,w in zip(composed,once):
                 self.assertAlmostEqual(abs(v-w),0,delta=1e-12)
 
+    def test_real_original_bbp_action_is_an_exact_surface_naturality_oracle(self):
+        # Separate source historian + driven surface agree on the literal
+        # original forcing at every tested time, including nonzero seeds.
+        a=(math.sqrt(5)-1)/2
+        for seed in (0,Fraction(1,3)):
+            history=source_history(30,seed)
+            for n in range(30):
+                forcing=float(four_pole(n+1))
+                for h in (1,2,5):
+                    old=mode_vector(a,16*h,cmath.exp(-2j*math.pi*16*h*float(history[n])))
+                    propagated=evolve_mode(a,h,16,forcing,old)
+                    observed=mode_vector(a,h,cmath.exp(-2j*math.pi*h*float(history[n+1])))
+                    for v,w in zip(propagated,observed):
+                        self.assertAlmostEqual(abs(v-w),0,delta=2e-12)
+            # The wrong source phase on the same witnessed transition fails.
+            h,n=1,10
+            old=mode_vector(a,16*h,cmath.exp(-2j*math.pi*16*h*float(history[n])))
+            wrong=evolve_mode(a,h,16,float(four_pole(n+1))+1/7,old)
+            actual=mode_vector(a,h,cmath.exp(-2j*math.pi*h*float(history[n+1])))
+            self.assertGreater(abs(wrong[0]-actual[0]),0.05)
+
     def test_heterodyne_positive_intensity_recovers_signed_information(self):
         rng=random.Random(2026)
         for _ in range(100):
