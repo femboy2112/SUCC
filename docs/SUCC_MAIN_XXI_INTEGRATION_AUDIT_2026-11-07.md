@@ -196,6 +196,64 @@ directories plus the 7 new top-level test modules.
   - The `joint_character_entropy` receipt pins a test log that records 29 tests; there
     are now 33.
 
+## 7. Cleanup: what was measured, and what was deliberately not changed
+
+**Canonical-module census.** A read-only sweep compared the duplicated source code against
+the canonical modules:
+
+- **25 duplicate forcing functions.** All are value-identical to `duck_bbp.forcing` on
+  `n=1..399`, return `Fraction`, and reject `0`, `-1`, `True` and `1.0`. They differ only
+  in exception subclass.
+- **Orbit and carry loops.** These match `SelectedOrbit` and `integer_bbp_carrier`.
+- **Five tail enclosures.** They are identical to `duck_bbp.tail_interval` on a 560-case
+  grid. The exception is `gamma_bbp_signed_coherence`, whose enclosure is tighter.
+- **The new pin-bed modules.** They import `integer_bbp_carrier.source_states`. They do
+  not reimplement it, apart from the bridge's deliberately independent `four_pole`
+  oracle.
+
+Consolidating the 25 copies inside a proof-sensitive integration would add churn and buy
+no correctness, so it is listed in §10 instead.
+
+**Profile of the full suite.** Python 3.13 at `987b0028` ran with `--durations`. Absolute
+times are inflated: both full suites and up to seven review agents shared 8 cores. The
+ranking is still informative.
+
+- The 80 slowest tests take 1208 s of the 1800 s total, about 67%.
+- The Black Sun numerical family (`black_sun_coverage`, `black_sun_window`) accounts for
+  about 400 s.
+- The single slowest test is
+  `test_pi_normality_moonshot.TestFejerEnergyShape.test_energy_below_trivial_band_bound`,
+  at 115 s.
+
+**Why that test is slow.** It was profiled directly at `n=2048`.
+
+- Computing the phases `frac(16^j π)` takes **0.01 s**.
+- The `expjpi` calls for a single `h` take **8.5 s**. They run at the full 2527-digit
+  working precision, which is needed only to resolve the phases, not the exponentials.
+- `fejer_energy` repeats those exponentials for every `h≤M`. Caching the phases would
+  therefore save nothing.
+
+**The available speedup, not taken.** Computing the exponentials at about 30 digits would
+cut roughly 99% of the time, but it changes result bits.
+`observational_succ/pi_normality_moonshot.py` is also sha256-pinned in five receipts
+(`lonely_runner`, `PI_SIGNED_CANCELLATION_NATIVE_SNAPSHOT`, `pi_prime7_validation`,
+`carry_defect_validation`). So this is deferred, with a recipe: phases at high precision,
+exponentials at low precision, an error bound proving `|Δ|<10⁻²⁰`, and re-pinning under
+provenance.
+
+**Precision isolation.** 15 library modules assign `mp.mp.dps` without restoring it
+(70 sites), and test files add 95 more assignments across 43 files.
+
+- `gram_mobius` was fixed this round (§5).
+- `prime_form_heat` was tried and reverted (§5).
+
+**Hygiene checks.**
+
+- **Links.** All relative links in `README.md` and the 268 top-level `docs/*.md` files
+  resolve. The scan's only two hits were math false positives of the form `[a,b](ξ)`.
+- **CI on main.** The push-validation run `42170900738` on `main` `d32342d3` succeeded.
+  The repository has 141 workflow files, none changed this round.
+
 ## 8. Interface for parallel research
 
 See [`CODEX_HANDOFF_MAIN_XXI.md`](CODEX_HANDOFF_MAIN_XXI.md). It covers:
