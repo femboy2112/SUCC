@@ -61,7 +61,8 @@ rigorously enclosed values in the receipts carry the finite verification.
 - [Fresh source receipt](FINITE_RECEIPT.json),
   [independent lock-in receipt](INDEPENDENT_LOCKIN_RECEIPT.json),
   [independent scan receipt](INDEPENDENT_SCAN_RECEIPT.json),
-  [independent frame receipt](INDEPENDENT_FRAME_RECEIPT.json).
+  [independent frame receipt](INDEPENDENT_FRAME_RECEIPT.json), and
+  [full-suite receipt: 12,210 tests pass](FULL_TEST_RECEIPT.json).
 
 From the repository root:
 
