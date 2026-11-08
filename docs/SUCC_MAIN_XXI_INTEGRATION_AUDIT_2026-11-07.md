@@ -265,6 +265,62 @@ See [`CODEX_HANDOFF_MAIN_XXI.md`](CODEX_HANDOFF_MAIN_XXI.md). It covers:
 - test discipline;
 - the three hostile controls a proof must survive.
 
+## 9. Validation receipts
+
+**Validated content head: `a0b2f698ef36b43543c09ba2f43ff94c37085aec`.** The final integration
+head is this tree plus this section only. A document cannot record the CI result of its own
+commit, so hosted CI on the final head is recorded on the integration PR and in the merge
+commit, and it was required to be green before merging.
+
+Local runs:
+
+- Each full suite ran in its own worktree, and no other process wrote to that tree while
+  it ran.
+- Each run recorded HEAD and the dirty-path count at start and at end. Every run shows the
+  same HEAD at both points and 0 dirty paths.
+- One run was **aborted and discarded**: a 3.13 run on `d36344ad`. A docs edit was written
+  into its worktree a few seconds after it started. It was killed, and the tree was
+  restored and re-certified from scratch. Its partial log is not used anywhere.
+
+**Gates on the content head `a0b2f698`.**
+
+| Gate | Command | Result |
+|---|---|---|
+| Full suite, Py 3.13.13 | `PYTHONPATH=$PWD python -m unittest discover -s tests -p 'test_*.py'` | `Ran 12286 tests in 1871.862s`, **OK**, exit 0 |
+| Full suite, Py 3.10.20 | same command | `Ran 12286 tests in 2545.559s`, **OK**, exit 0 |
+| Provenance | `python scripts/verify_provenance.py` | `SOURCE_PROVENANCE_VERIFIED`; 72 items; source commit `ba075348b7bcc66d938b3e0ca96c26e95bba340a` |
+| Observer probe | `python scripts/observer_foundations_probe.py` | exit 0 |
+| Ordinal probe | `python scripts/ordinal_succ_report_probe.py` | exit 0 |
+| Claim catalog | `python scripts/build_math_memory.py --check` | exit 0. Claim rows 2013→2043 (+30 MXXI); namespaces 177→178; warnings 170→170 |
+| Memory graph | `python scripts/verify_math_memory_graph.py` | `PASS: 51 typed nodes, 60 typed edges` |
+| Compile | `python -m compileall -q observational_succ tests` | exit 0. Three pre-existing `SyntaxWarning`s in pinned files (§10.6) |
+| Lean (regression; no formal change) | `scripts/check_selected_branch_lean.py --dependency-project <compatible cache>` | `KERNEL_CHECKED 10 theorems; 4 paired controls`. Every positive control exits 0 and every mutant exits 1 |
+| Whitespace | `git diff --check 987b0028 a0b2f698` | clean. Against `main` there are 4 inherited lines from research commits, preserved byte-identically |
+| Frozen invariants | blob and tree compare against `main` | `IMPORT_MANIFEST.json` `a8805a8e…` and `formal/`+`provenance/` tree `82c6cf9f…` unchanged. The diff is 342 A / 6 M / 0 D (the 6 M are listed in §5 and the ROADMAP) |
+
+**Research-only staging `987b0028`, before the integration-time commits.**
+
+| Gate | Result |
+|---|---|
+| Full suite, 3.13 (with `--durations`) | `Ran 12260 tests in 1800.218s`, OK |
+| Full suite, 3.10 | `Ran 12260 tests in 2701.576s`, OK |
+| Research-directory replay | 26 targets, 0 failures (§6) |
+
+The 26 extra tests at the content head are exactly the new ones: 6 for the GA-09 receipt,
+17 for the pin-bed hardening and 3 for precision isolation. Each log contains one
+`STALE/MISSING mathematics catalog: /tmp/…` line. It comes from the expected negative
+test, which runs on a temporary copy, and the same line appears in every earlier green
+run.
+
+**New during integration, not in this round.**
+
+- **PR #544** is a draft based on `main` with head `0d0d57a9`. It was opened while this
+  round was running. It is independent of #541–#543, adds 117 files, and shares no path
+  with this integration.
+- It is **not** integrated. It will be audited as a fresh submission in the next round.
+- Before the push, all 19 integrated PR heads were re-checked and found unchanged, and
+  `main` was still `d32342d3`.
+
 ## 10. Next integration round (Main XXI+)
 
 1. **`prime_form_heat` precision repair.** Rescope the six leak-dependent tests, then
