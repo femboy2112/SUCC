@@ -1,0 +1,18 @@
+# Claim ledger: holographic triangle and Gamma-source seam
+
+| ID | Claim status | Precise statement | Control / boundary |
+|---|---|---|---|
+| HT-01 | PROVED LOCAL / algebra | Pairwise map E over Z/2^K has order-2 kernel and even-sum image; det(E)=-2. | Exhaustive K=1..4, full algebraic derivation. |
+| HT-02 | PROVED LOCAL | On authentic seam A=B+X, E is iso onto P+Q=3R with inverse R,P-R,Q-R for every K. | Every K incl. mod2, exhaustive k<=4; mutated source still coherent, so no uniqueness. |
+| HT-03 | PROVED LOCAL | Exact original-source/carry-labelled dynamical triangle and D'=16D, with mismatched labels as explicit defect input. | Original, rational seed, 4->5 mutant, rational shadow, zero-forcing non-Haar; D=0 does NOT imply Weyl saving. |
+| HT-04 | CLASSICAL DIGAMMA / PROVED LOCAL | Exact source H_n via finite digamma/Gamma product, U_n via Abel transform, pi/16 via Gamma-weighted sum. | Independent exact Fraction source + mpmath numeric Gamma calibration; BBP original is mathematical premise. |
+| HT-05 | INHERITED SOURCE ALGORITHM / PROVED LOCAL algebra | Rational source quartic factors as Q(sqrt2)×Q(i); silver is native, golden root absent; no nonzero Q-linear golden multiplication -> ×16 intertwiner. | Direct polynomial and field argument, factor check. Does not prohibit nonlinear/gauge transports. |
+| HT-06 | PROVED LOCAL with CLASSICAL Bertrand | For every N≥6 original BBP max_(n<N) reduced denominator >N; source first-prime-pole birth and Bertrand prime N<p<2N prove it. | Exact original-prime first-birth witnesses N=9/16/31/64/127/257, no finite extrapolation. Only source-specific algebra + classical theorem. |
+| HT-06b | PROVED-CONDITIONAL ON PROTOCOL | A complete modulus-2^K census within N observations and guaranteed original-phase reconstruction from mod2^K plus odd denominator cannot use one K for all times n<N. | Requires both explicit sufficient protocol budgets. Does not rule out smart/compressed two-depth or alternative decoders. |
+| HT-06c | PROVED LOCAL with CLASSICAL PNT-AP | For each n>=2, in 4n<p<=8n−7, p has v_p(U_n)=−1 exactly for p≡1(mod4); p≡3(mod4) absent. Product of Gaussian-split primes divides d_n, implying liminf log d_n/n >=2 and linear readout depth. | Source pole/valuation proof; preregistered fresh windows n=8/16/32/64/128/257. PNT-AP is cited classical, not proved by tests. Golden chart still external; no real Weyl bound. |
+| HT-07 | INHERITED PROVED LOCAL / OPEN SIGNED | High-depth edge + denominator yields exact selected rational real character. No unconditional source-selected real Weyl bound. | Wrong non-Haar shadow satisfies exact hologram; must control conditional real phases/cross-prime covariance. |
+| HT-08 | CONJECTURED | Golden/harmonic/Euler-Mascheroni extruded triangle is a genuinely source-selected categorical co-dual of BBP carry-phase state. | Native source is silver, no canonical golden bridge or Fourier saving defined; new operational comparison required. |
+| HT-09 | REFUTED | “The mod-2 lost bit survives on physically admissible BBP triples.” It does not; exact seam eliminates it. | Inverse HT4, K=1 exhaustive. |
+| HT-10 | REFUTED | “Compatibility defect contraction or perfect holographic reconstruction forces real Haar.” | Zero forcing and H(n)=n/(2n-1)^4 shadow, source-distinct nonnormal controls. |
+
+**Truth debt:** finite reconstruction verified; source prime/gamma maps re-derived; π normality, real signed Weyl o(1), return-fiber energy decay, and cross-prime covariance remain OPEN. Neither same-model tests nor optional high-precision values are external peer review or Lean kernel results.
