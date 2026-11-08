@@ -28,7 +28,7 @@ A 'corrected temporal holonomy' divides the left side by the explicit right side
 
 The corrected loop can still authenticate the **four-pole recurrence** against source mutations. It cannot authenticate **which seed** generated a source-compatible orbit. To retain the zero selector, keep open paths anchored by the independently declared initial boundary s=0 and pursue nonlocal signed sums of their unclosed phases, not merely transport-flatness identities. An anchored path is mathematically reconstructible from the forcing; it is **not** automatically equidistributed.
 
-**Receipt:** all-depth exact Fraction test for d=1..8, n+d<55 and seed controls 0, 1/3, -1/11; 1,092 exact congruences, all zero. An earlier local one-step mutation breaks the plaquette at its boundary. The proof, not the sample, supplies universal n,d quantifiers.
+**Receipt:** all-depth exact Fraction test for d=1..8, n+d<55 and seed controls 0, 1/3, -1/11; 1,212 exact congruences, all zero. An earlier local one-step mutation breaks the plaquette at its boundary. The proof, not the sample, supplies universal n,d quantifiers.
 
 ## APH-02: arbitrarily accurate finite-horizon two-tone impersonation by periodic sources — PROVED LOCAL
 
