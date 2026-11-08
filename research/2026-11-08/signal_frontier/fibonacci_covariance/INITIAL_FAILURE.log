@@ -1,0 +1,26 @@
+test_discrepancy_bound_is_nonvacuous (test_observer.FibonacciObserverTests.test_discrepancy_bound_is_nonvacuous) ... ok
+test_floor_exact_and_boundary_labels (test_observer.FibonacciObserverTests.test_floor_exact_and_boundary_labels) ... ok
+test_interval_frame_actual_energies (test_observer.FibonacciObserverTests.test_interval_frame_actual_energies) ... ERROR
+test_invalid_domains (test_observer.FibonacciObserverTests.test_invalid_domains) ... ok
+test_return_identity_independent_pair_recurrence (test_observer.FibonacciObserverTests.test_return_identity_independent_pair_recurrence) ... ok
+test_single_cell_keeps_only_marginals (test_observer.FibonacciObserverTests.test_single_cell_keeps_only_marginals) ... ok
+test_surd_sign_independent_enclosures (test_observer.FibonacciObserverTests.test_surd_sign_independent_enclosures) ... ok
+
+======================================================================
+ERROR: test_interval_frame_actual_energies (test_observer.FibonacciObserverTests.test_interval_frame_actual_energies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_covariance/test_observer.py", line 39, in test_interval_frame_actual_energies
+    rows=frame_checks()
+         ^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/fibonacci_covariance/observer.py", line 204, in frame_checks
+    [(Q((-1)**m,5),Q(m,7)) for m in range(-H,H+1)],
+      ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/fractions.py", line 277, in __new__
+    raise TypeError("both arguments should be "
+TypeError: both arguments should be Rational instances
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.033s
+
+FAILED (errors=1)
