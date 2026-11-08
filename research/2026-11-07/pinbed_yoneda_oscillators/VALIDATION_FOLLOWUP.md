@@ -4,12 +4,12 @@
 
 ## Actually executed locally (isolated Python 3.13.5 bundle)
 
-- New pushed module source: observational_succ/pinbed_oscillator_bridge.py — exact Git object blob **fd3a9993ca0eb9c0bf2fae19449443d9a423eafa**.
-- New pushed tests: tests/test_pinbed_oscillator_bridge.py — exact Git object blob **7bb215251fe0bb6d8ea2ea8d52fcb1d98883e35c**.
-- Both exact blobs checked using GitHub readback against independent local git hash-object. Byte identity checked **after** adding the ten-test source-specific naturality, wrong-forcing mutation, lagged-holonomy and periodic-alias controls.
-- Isolated command: PYTHONPATH=. python -m unittest discover -s tests -p 'test_pinbed*.py' -q: **48 PASS / zero failures**. Composition: earlier standalone pin-bed suite 26 tests; second isolated continuous-frame supplement 12 tests; **ten tests in the newly pushed on-repo suite**. The earlier 26+12 test files are local-bundle only and must not be claimed as checks run on exact GitHub PR head.
+- New pushed module source: observational_succ/pinbed_oscillator_bridge.py — exact Git object blob **5b8d4841119ac6a870fae7ff3ac75ab371afee13**.
+- New pushed tests: tests/test_pinbed_oscillator_bridge.py — exact Git object blob **1b826c0fca820110e011c82649b2be0909ade849**.
+- Both exact blobs checked using GitHub readback against independent local git hash-object. Byte identity checked **after** adding the eleven-test source-specific naturality, wrong-forcing mutation, lagged-holonomy, periodic-alias and explicit numerical error-budget controls.
+- Isolated command: PYTHONPATH=. python -m unittest discover -s tests -p 'test_pinbed*.py' -q: **49 PASS / zero failures**. Composition: earlier standalone pin-bed suite 26 tests; second isolated continuous-frame supplement 12 tests; **eleven tests in the newly pushed on-repo suite**. The earlier 26+12 test files are local-bundle only and must not be claimed as checks run on exact GitHub PR head.
 - python -m compileall -q observational_succ tests: **PASS** in this isolated worktree. There is no installed full SUCC checkout; package code is tested in isolation against the modules in this bundle, not the complete integrated repository.
-- Old compact root package tests run separately: 26 PASS; new continuous window complement tests: 12 PASS; all 48 together 3.855s on local Python 3.13.5. No mpmath or non-stdlib runtime dependency in the new tests.
+- Old compact root package tests run separately: 26 PASS; new continuous window complement tests: 12 PASS; all 49 together 3.916s on local Python 3.13.5. No mpmath or non-stdlib runtime dependency in the new tests.
 
 ## Independent checks, with honest strength
 
