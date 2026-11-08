@@ -1,0 +1,71 @@
+{
+  "arithmetic": "exact fractions and independently built cyclotomic quotients",
+  "checks": {
+    "full_window_alias": 1,
+    "half_frame": 257,
+    "local_inverse": 10794,
+    "mean_calibration": 663,
+    "primitive_energy": 3,
+    "times16_bound": 257
+  },
+  "domains": {
+    "apertures": "all 1<=L<m",
+    "continuum_frequencies": "1..257",
+    "cyclic_sizes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      23,
+      29
+    ],
+    "laws_per_aperture": 3,
+    "positions": "all y mod m"
+  },
+  "half_times16_sharp_squared": "116281/205",
+  "implementation_sha256": "f67686a9cf30b8f84d4b3e94f388b413483ff7ab9b59821cdf23dc612e0616a9",
+  "local_mass_relocations": [
+    {
+      "Hminus1_squared": "25/28812",
+      "epsilon": "1/7",
+      "interval_discrepancy_supremum": "1/7"
+    },
+    {
+      "Hminus1_squared": "140/390963",
+      "epsilon": "2/19",
+      "interval_discrepancy_supremum": "2/19"
+    },
+    {
+      "Hminus1_squared": "401/1248724812",
+      "epsilon": "1/101",
+      "interval_discrepancy_supremum": "1/101"
+    }
+  ],
+  "mutation_rejections": {
+    "omit_denominator": 4040,
+    "omit_relative_phase": 7196,
+    "omit_static_difference": 4482,
+    "reverse_reconstruction_sign": 4040,
+    "wrong_boundary_phase": 4482
+  },
+  "pi_interval": [
+    "1549720982780685757685860164701015675319826043427590881295064109462816409988478332492008856561497739305105733945406823774064177683899282972/493291509645552306652241074139291769345966087717473907968589007476041603023305487181510569382194353006876119046864914707839488983154296875",
+    "678262365321285410657140178176698973727030205663188545881047031667552909179202627157285662960330494908827470241389699234203872740863872/215897616308167008040931126091670212945311745118902815063019295651354844550736807470768443034170599694891598119284026324748992919921875"
+  ],
+  "status": "PASS",
+  "universal_theorems_established_by_finite_run": false
+}

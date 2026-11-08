@@ -1,0 +1,723 @@
+{
+  "base_commit": "e8a4126754dc95eddeca758ea92ead50246da630",
+  "derived_varying_phase_control": {
+    "apparent_constant_gain": {
+      "coefficients": [
+        "1"
+      ],
+      "conductor": 4
+    },
+    "drifted_law_is_realizable": true,
+    "original_source_substitution_rejected": true,
+    "scope": "expected-snapshot binding; arbitrary drift is not self-calibrated",
+    "static_laws_identical": true
+  },
+  "finite_run_proves_universal_theorems": false,
+  "fresh_source_readouts": [
+    {
+      "epoch": 19,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "9bb722b3627a5858a95d81385b9a06cb3cd157f8bd9c112e9c142b3d0b4296f0",
+      "length": 4,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "1/19",
+            "-1/19",
+            "-3/19",
+            "-2/19"
+          ],
+          "conductor": 8
+        },
+        "2": {
+          "coefficients": [
+            "4/19",
+            "0",
+            "-3/19"
+          ],
+          "conductor": 8
+        },
+        "3": {
+          "coefficients": [
+            "1/19",
+            "-2/19",
+            "3/19",
+            "-1/19"
+          ],
+          "conductor": 8
+        }
+      },
+      "sites": 8,
+      "source_fingerprint": "77635580ad4ed5dcfb00bbcccf8a38716bb4a0b866349f6f522f402839b777e3",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "4/19",
+        "4/19",
+        "3/19",
+        "2/19",
+        "3/19",
+        "2/19",
+        "0",
+        "1/19"
+      ]
+    },
+    {
+      "epoch": 19,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "9bb722b3627a5858a95d81385b9a06cb3cd157f8bd9c112e9c142b3d0b4296f0",
+      "length": 6,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "5/19",
+            "-4/19",
+            "-3/19",
+            "-1/19"
+          ],
+          "conductor": 12
+        },
+        "2": {
+          "coefficients": [
+            "5/19",
+            "0",
+            "-5/19"
+          ],
+          "conductor": 12
+        },
+        "3": {
+          "coefficients": [
+            "-4/19",
+            "0",
+            "0",
+            "3/19"
+          ],
+          "conductor": 12
+        }
+      },
+      "sites": 12,
+      "source_fingerprint": "6f72860564a187472a3269ebd5045dc44779eacb671af7d36a679a56fc5498f4",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "3/19",
+        "1/19",
+        "4/19",
+        "3/19",
+        "0",
+        "2/19",
+        "2/19",
+        "3/19",
+        "0",
+        "0",
+        "1/19",
+        "0"
+      ]
+    },
+    {
+      "epoch": 19,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "9bb722b3627a5858a95d81385b9a06cb3cd157f8bd9c112e9c142b3d0b4296f0",
+      "length": 8,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "2/19",
+            "-2/19",
+            "1/19",
+            "0",
+            "-3/19",
+            "-3/19",
+            "1/19",
+            "1/19"
+          ],
+          "conductor": 16
+        },
+        "2": {
+          "coefficients": [
+            "1/19",
+            "0",
+            "-1/19",
+            "0",
+            "-2/19",
+            "0",
+            "-3/19"
+          ],
+          "conductor": 16
+        },
+        "3": {
+          "coefficients": [
+            "2/19",
+            "0",
+            "1/19",
+            "-2/19",
+            "3/19",
+            "1/19",
+            "1/19",
+            "3/19"
+          ],
+          "conductor": 16
+        }
+      },
+      "sites": 16,
+      "source_fingerprint": "a286f386f311435b0d1d21b1c26343394013832bcc6adf94116e132b67839a0e",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "3/19",
+        "1/19",
+        "1/19",
+        "3/19",
+        "3/19",
+        "0",
+        "0",
+        "2/19",
+        "1/19",
+        "2/19",
+        "2/19",
+        "0",
+        "0",
+        "0",
+        "1/19",
+        "0"
+      ]
+    },
+    {
+      "epoch": 37,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "483e03440ad6d08c625132b1b9c912c8e41f264c756da0e03f0baed3b63d547a",
+      "length": 4,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-5/37",
+            "4/37",
+            "0",
+            "-8/37"
+          ],
+          "conductor": 8
+        },
+        "2": {
+          "coefficients": [
+            "7/37",
+            "0",
+            "-2/37"
+          ],
+          "conductor": 8
+        },
+        "3": {
+          "coefficients": [
+            "-5/37",
+            "-8/37",
+            "0",
+            "4/37"
+          ],
+          "conductor": 8
+        }
+      },
+      "sites": 8,
+      "source_fingerprint": "1eda8adb8bb24d7c6c91ccad9bc8446a28955c7d56dc1b4ed4c3b63dc7cfd37a",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "4/37",
+        "9/37",
+        "3/37",
+        "2/37",
+        "9/37",
+        "1/37",
+        "3/37",
+        "6/37"
+      ]
+    },
+    {
+      "epoch": 37,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "483e03440ad6d08c625132b1b9c912c8e41f264c756da0e03f0baed3b63d547a",
+      "length": 6,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "0",
+            "6/37",
+            "-3/37",
+            "-3/37"
+          ],
+          "conductor": 12
+        },
+        "2": {
+          "coefficients": [
+            "10/37",
+            "0",
+            "-7/37"
+          ],
+          "conductor": 12
+        },
+        "3": {
+          "coefficients": [
+            "-9/37"
+          ],
+          "conductor": 12
+        }
+      },
+      "sites": 12,
+      "source_fingerprint": "13a1ff6a6e37da90c240ac29a7079821f189d14afadeac1296c83f985c8553df",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "2/37",
+        "7/37",
+        "4/37",
+        "3/37",
+        "1/37",
+        "1/37",
+        "6/37",
+        "4/37",
+        "0",
+        "3/37",
+        "2/37",
+        "4/37"
+      ]
+    },
+    {
+      "epoch": 37,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "483e03440ad6d08c625132b1b9c912c8e41f264c756da0e03f0baed3b63d547a",
+      "length": 8,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-3/37",
+            "2/37",
+            "2/37",
+            "0",
+            "0",
+            "-3/37",
+            "-5/37",
+            "2/37"
+          ],
+          "conductor": 16
+        },
+        "2": {
+          "coefficients": [
+            "3/37",
+            "0",
+            "-1/37",
+            "0",
+            "-1/37",
+            "0",
+            "-4/37"
+          ],
+          "conductor": 16
+        },
+        "3": {
+          "coefficients": [
+            "-3/37",
+            "0",
+            "-5/37",
+            "2/37",
+            "0",
+            "2/37",
+            "2/37",
+            "3/37"
+          ],
+          "conductor": 16
+        }
+      },
+      "sites": 16,
+      "source_fingerprint": "770b558ac7633feafef6abb6ea6ccc0b3def1560102a806ad5d462e3d3b4bd98",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "2/37",
+        "2/37",
+        "6/37",
+        "3/37",
+        "2/37",
+        "1/37",
+        "2/37",
+        "0",
+        "5/37",
+        "4/37",
+        "1/37",
+        "0",
+        "2/37",
+        "1/37",
+        "4/37",
+        "2/37"
+      ]
+    },
+    {
+      "epoch": 73,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "b921dac83502a9e30e589d6f852e1a8653f0a54f29853a71f17156adac683e76",
+      "length": 4,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-2/73",
+            "-6/73",
+            "4/73",
+            "1/73"
+          ],
+          "conductor": 8
+        },
+        "2": {
+          "coefficients": [
+            "-4/73",
+            "0",
+            "3/73"
+          ],
+          "conductor": 8
+        },
+        "3": {
+          "coefficients": [
+            "-2/73",
+            "1/73",
+            "-4/73",
+            "-6/73"
+          ],
+          "conductor": 8
+        }
+      },
+      "sites": 8,
+      "source_fingerprint": "7e507dabe15c31306c41687850ba8feea4eb7d7959b33abeafa1aaa89215b26b",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "9/73",
+        "6/73",
+        "10/73",
+        "11/73",
+        "11/73",
+        "7/73",
+        "14/73",
+        "5/73"
+      ]
+    },
+    {
+      "epoch": 73,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "b921dac83502a9e30e589d6f852e1a8653f0a54f29853a71f17156adac683e76",
+      "length": 6,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-3/73",
+            "-7/73",
+            "5/73",
+            "3/73"
+          ],
+          "conductor": 12
+        },
+        "2": {
+          "coefficients": [
+            "-5/73",
+            "0",
+            "2/73"
+          ],
+          "conductor": 12
+        },
+        "3": {
+          "coefficients": [
+            "1/73",
+            "0",
+            "0",
+            "-10/73"
+          ],
+          "conductor": 12
+        }
+      },
+      "sites": 12,
+      "source_fingerprint": "8c2b088a376ed333adf17825e69df7f977e3b3853d5c63738a96a94c448f98f0",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "6/73",
+        "5/73",
+        "4/73",
+        "7/73",
+        "4/73",
+        "10/73",
+        "6/73",
+        "5/73",
+        "7/73",
+        "10/73",
+        "6/73",
+        "3/73"
+      ]
+    },
+    {
+      "epoch": 73,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "b921dac83502a9e30e589d6f852e1a8653f0a54f29853a71f17156adac683e76",
+      "length": 8,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "2/73",
+            "-4/73",
+            "-2/73",
+            "1/73",
+            "3/73",
+            "2/73",
+            "-1/73",
+            "4/73"
+          ],
+          "conductor": 16
+        },
+        "2": {
+          "coefficients": [
+            "-3/73",
+            "0",
+            "0",
+            "0",
+            "3/73",
+            "0",
+            "1/73"
+          ],
+          "conductor": 16
+        },
+        "3": {
+          "coefficients": [
+            "2/73",
+            "-1/73",
+            "-1/73",
+            "-4/73",
+            "-3/73",
+            "4/73",
+            "-2/73",
+            "-2/73"
+          ],
+          "conductor": 16
+        }
+      },
+      "sites": 16,
+      "source_fingerprint": "2ee8570368dcde4f31e529184679bb3339f81d9550546ca984abb1e1cee52774",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "5/73",
+        "4/73",
+        "2/73",
+        "4/73",
+        "4/73",
+        "6/73",
+        "4/73",
+        "7/73",
+        "3/73",
+        "8/73",
+        "1/73",
+        "6/73",
+        "7/73",
+        "7/73",
+        "2/73",
+        "3/73"
+      ]
+    },
+    {
+      "epoch": 137,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "bee74e52a673cabfccf507f7a47dd74b48f421962d1f2a2c00834e3a9284d393",
+      "length": 4,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-3/137",
+            "1/137",
+            "3/137",
+            "4/137"
+          ],
+          "conductor": 8
+        },
+        "2": {
+          "coefficients": [
+            "14/137",
+            "0",
+            "9/137"
+          ],
+          "conductor": 8
+        },
+        "3": {
+          "coefficients": [
+            "-3/137",
+            "4/137",
+            "-3/137",
+            "1/137"
+          ],
+          "conductor": 8
+        }
+      },
+      "sites": 8,
+      "source_fingerprint": "f7486b0bdd56e5a112aefc8901cfbcf2ae01931a8646c57fd1c17da625e51a5c",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "18/137",
+        "14/137",
+        "11/137",
+        "20/137",
+        "21/137",
+        "18/137",
+        "14/137",
+        "21/137"
+      ]
+    },
+    {
+      "epoch": 137,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "bee74e52a673cabfccf507f7a47dd74b48f421962d1f2a2c00834e3a9284d393",
+      "length": 6,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-6/137",
+            "1/137",
+            "3/137",
+            "2/137"
+          ],
+          "conductor": 12
+        },
+        "2": {
+          "coefficients": [
+            "11/137",
+            "0",
+            "6/137"
+          ],
+          "conductor": 12
+        },
+        "3": {
+          "coefficients": [
+            "-3/137",
+            "0",
+            "0",
+            "2/137"
+          ],
+          "conductor": 12
+        }
+      },
+      "sites": 12,
+      "source_fingerprint": "f5c317a548ea5f1786d58c24b2940b0b74017464bc27dd992a39ca54b6f8ee76",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "10/137",
+        "12/137",
+        "10/137",
+        "6/137",
+        "12/137",
+        "13/137",
+        "14/137",
+        "13/137",
+        "12/137",
+        "7/137",
+        "13/137",
+        "15/137"
+      ]
+    },
+    {
+      "epoch": 137,
+      "four_phase_exact_reconstruction": true,
+      "full_prefix_trace_sha256": "bee74e52a673cabfccf507f7a47dd74b48f421962d1f2a2c00834e3a9284d393",
+      "length": 8,
+      "modes": {
+        "1": {
+          "coefficients": [
+            "-1/137",
+            "2/137",
+            "-1/137",
+            "4/137",
+            "-1/137",
+            "3/137",
+            "1/137",
+            "2/137"
+          ],
+          "conductor": 16
+        },
+        "2": {
+          "coefficients": [
+            "4/137",
+            "0",
+            "9/137",
+            "0",
+            "0",
+            "0",
+            "-10/137"
+          ],
+          "conductor": 16
+        },
+        "3": {
+          "coefficients": [
+            "-1/137",
+            "-4/137",
+            "1/137",
+            "2/137",
+            "1/137",
+            "2/137",
+            "-1/137",
+            "-3/137"
+          ],
+          "conductor": 16
+        }
+      },
+      "sites": 16,
+      "source_fingerprint": "c0947a62f785917dba671cd8d70340c2dd7f6dfe5a424b1a101c890e835e532b",
+      "source_rebuilt_exactly": true,
+      "weights": [
+        "7/137",
+        "11/137",
+        "8/137",
+        "6/137",
+        "6/137",
+        "5/137",
+        "9/137",
+        "11/137",
+        "8/137",
+        "13/137",
+        "9/137",
+        "9/137",
+        "5/137",
+        "9/137",
+        "8/137",
+        "13/137"
+      ]
+    }
+  ],
+  "mutations_rejected": {
+    "changed_authentic_trace": true,
+    "duplicate_phase": true,
+    "full_aperture": true,
+    "incoherent_positive_inverse": true,
+    "missing_phase": true,
+    "mixed_snapshot": true,
+    "realizable_varying_phase_substitution_with_expected_source": true,
+    "wrong_expected_source": true,
+    "zero_drive": true
+  },
+  "non_gaussian_gain_calibrations": [
+    {
+      "exact_gain_recovered": true,
+      "sites": 5
+    },
+    {
+      "exact_gain_recovered": true,
+      "sites": 7
+    },
+    {
+      "exact_gain_recovered": true,
+      "sites": 9
+    }
+  ],
+  "physical_attestation": false,
+  "pi_base16_normality": "OPEN",
+  "sha256": {
+    "observational_succ/driven_pinbed_observer.py": "4d47c84a9a7797e1522539bcaea1f51abb78e0fd51231c7a34baeae93dbc75d4",
+    "observational_succ/integer_bbp_carrier.py": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253",
+    "research/2026-11-07/driven_pinbed_observability/PREREGISTRATION.md": "d40996e73d65e27eb4496e3dacebbc134d09b4b25b93a85c52b643da6d89dcb0",
+    "research/2026-11-07/driven_pinbed_observability/probe.py": "7fbd81c424da92774b3b3c12fccf8395bbfe31946901e05cc095be93a9cbcb4b",
+    "tests/test_driven_pinbed_observer.py": "8f0470154f1829278498febc8722040e5838568a31674c550a624e78072e2257"
+  },
+  "source": "original four signed poles and literal U0=0",
+  "source_recurrence_steps_including_repeated_prefixes": 528,
+  "source_selected_Weyl_decay": "OPEN",
+  "static_alias_split_by_coherent_drive": true,
+  "status": "EXACT_FINITE_PASS",
+  "unknown_constant_complex_gain_calibrated": {
+    "coefficients": [
+      "2",
+      "0",
+      "0",
+      "3/2"
+    ],
+    "conductor": 12
+  }
+}
