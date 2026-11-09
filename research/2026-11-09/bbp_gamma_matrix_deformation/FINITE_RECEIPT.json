@@ -1,0 +1,34 @@
+{
+  "blocks": {
+    "complete_131072": {
+      "actual_pair_count": 131071,
+      "centered_norm2": 0.019104662304,
+      "gamma_deformed_norm2": 0.495561993371,
+      "mathematical_tail_bound": 2.4403990902987622e-20,
+      "status": "REUSED SOURCE-CERTIFIED FINITE DIAGNOSTIC, NOT NEW HOLDOUT"
+    },
+    "holdout_65536_PRESEEN": {
+      "actual_pair_count": 65535,
+      "centered_norm2": 0.028325840393,
+      "gamma_deformed_norm2": 0.819409077949,
+      "mathematical_tail_bound": 5.04792908131648e-16,
+      "status": "REUSED SOURCE-CERTIFIED FINITE DIAGNOSTIC, NOT NEW HOLDOUT"
+    },
+    "old_65536": {
+      "actual_pair_count": 65535,
+      "centered_norm2": 0.033070519549,
+      "gamma_deformed_norm2": 0.81819890558,
+      "mathematical_tail_bound": 2.5493190940542083e-14,
+      "status": "REUSED SOURCE-CERTIFIED FINITE DIAGNOSTIC, NOT NEW HOLDOUT"
+    }
+  },
+  "c1": "27.751593906888173317563185315217395893664028151542088184856642808",
+  "claim_status": "SCALAR SOURCE IDENTITY EXACT; MATRIX NUMERICS NON-CERTIFYING",
+  "gamma_bbp": "3.3224979111064047565947323878237979094539520775245790706907070201",
+  "gamma_bbp_closed": "3.3224979111064047565947323878237979094539520775245790706907070201",
+  "gamma_q_1_16": "0.13189581822239801946742096521625613727465040260586194857671128086",
+  "matched_leading_mutation_delta": "0.06718232134424341439994780002002023025467658797833259253570224011",
+  "pi_normality": "OPEN",
+  "source": "AUTHENTIC four signed BBP poles and literal U0=0",
+  "source_digits_sha256_with_newline": "4e349f3af293f07c42135caabffe0ce262c7ff282847d71e158f05551cd89a73"
+}
