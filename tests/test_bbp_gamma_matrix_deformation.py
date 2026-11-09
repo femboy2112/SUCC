@@ -86,6 +86,20 @@ class BBPGammaSourceTests(unittest.TestCase):
         self.assertGreater(float(np.linalg.norm(M-float(bbp_gamma_closed())*np.eye(16),2)),1.5)
         self.assertLess(tail,0.00001)
 
+    def test_source_gamma_local_two_sided_haar_bound(self):
+        import numpy as np
+        H=np.ones((16,16))/16
+        u=np.zeros(16);u[0]=1;u[1]=-1
+        v=np.zeros(16);v[:3]=[1,1,-2]
+        # Source-weighted nilpotent probe scaled into the proved 1/32 radius.
+        P=H+np.outer(u,v)/256
+        x=float(np.linalg.norm(P-H,2))
+        self.assertLess(x,1/32)
+        G,_=matrix_source_gamma(P,terms=24)
+        dev=float(np.linalg.norm(G-float(bbp_gamma_digamma())*np.eye(16),2))
+        self.assertGreaterEqual(dev+1e-12,13*x)
+        self.assertLessEqual(dev,43*x+1e-12)
+
     def test_bad_source_matrix_rejected(self):
         import numpy as np
         H=np.eye(16)

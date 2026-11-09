@@ -126,6 +126,21 @@ This produces a precise **non-Haar matrix Gamma response invisible to eigenvalue
 
 **Second hostile control:** P=H can coexist with a non-Haar one-digit marginal. In that case all observed conditional transitions are Haar but the two-digit joint law is not. Thus a Gamma operator on X alone **cannot** prove full two-digit Haar without a separate actual one-digit source estimate.
 
+### SGM-04B — a quantitative local Gamma/Haar equivalence (PROVED PAPER)
+
+In fact the chosen Gamma diagnostic is *locally coercive*, although this creates no new source-selected decay. For every 16×16 row-stochastic P with `X=P−H` and `||X||₂≤1/32`, the exact source coefficients and Hurwitz tail give
+
+`13 ||X||₂ ≤ ||𝓒_BBP(X)−γ_BBP I||₂ ≤ 43 ||X||₂`.    (SGM6)
+
+**Explicit constants (no numerical fitting):** Let `c1=Σ_i w_i ζ(2,a_i)`. Since `ζ(2,a)≤a^(−2)+2` and the negative weights are only at shifts `1/2,5/8,3/4`,
+
+`c1 ≥28−3/4−171/800−17/144 =193811/7200 >26`, while
+`c1 ≤(28/64)(64+2)=231/8<29`.
+
+For `x≤1/32` the exact higher-order matrix power-series tail after the linear term is bounded by `T(x)≤(40795/2976)x<14x` using (SGM5) with M=1. Hence `||𝓒_BBP(X)−γ_BBP I||₂ ≥(c1−14)x>13x`, and the upper bound is `<(29+14)x=43x`. QED. The inequality applies to the **ideal exact analytic function** in the declared spectral-norm radius; a floating approximation also has rounding error.
+
+**Scope:** If a source argument independently proved `||X_A||₂→0`, then its Gamma observable would converge, and vice versa when the norms enter this radius. The transformation supplies a quantitative **detector** of non-Haar transition structure, not an estimate that transition structure actually decays. Real one-digit marginals still need their own authentic source bound.
+
 ## SGM-05 — BBP q-Gamma blocking is related but a different normalization (PROVED SOURCE ALGEBRA)
 
 The already-used source integral is `r(n)=∫_0^1 u^(8n−8) Q(u)du` with `Q(u)=4−2u³−u⁴−u⁵`. Group g chronological steps with exact kernel

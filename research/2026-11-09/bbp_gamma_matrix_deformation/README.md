@@ -15,4 +15,4 @@ The user's suggested "BBP-dependent Euler–Mascheroni" exists exactly:
 - [VALIDATION.md](VALIDATION.md) states local tests, external mathematical inputs, restrictions and next tests.
 - [NEXT.md](NEXT.md) specifies the sole route that could move the π barrier: a signed, source-selected real conditional carry/growing-depth estimate.
 
-**Core distinction:** the new matrix gamma operator sees the nilpotent non-Haar response concealed by ordinary eigenvalues, but this observer does NOT produce the missing arithmetic cancellation.
+**Core distinction:** the new matrix gamma operator sees the nilpotent non-Haar response concealed by ordinary eigenvalues and obeys an explicit local 13/43 two-sided norm inequality, but this observer does NOT produce the missing arithmetic cancellation.
