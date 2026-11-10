@@ -1,0 +1,121 @@
+{
+  "epochs": [
+    {
+      "A": 16,
+      "N": 64,
+      "W1_Haar_midpoint": "0.0924083623584",
+      "W1_Q_midpoint": "0.0869419751159",
+      "certified_digit_window_sha256": "306ec205a8e688ab8abdc98fdb9871b074aa4ed04d6064fdf5b1b6faa86bb3dd",
+      "certified_source_prefix_16": "313198A2E0370734",
+      "depths": [
+        {
+          "E_depth": "0",
+          "E_next": "11/32",
+          "common_energy": "11/32",
+          "common_gradient_inner": "0",
+          "depth": 0,
+          "gradient_seam": "0",
+          "high_energy": "11/32",
+          "low_energy": "11/32",
+          "rigorous_W1_upper": "127163842289621/131941395333120",
+          "stationarity_l1": "0",
+          "successor_energy": "53/128"
+        },
+        {
+          "E_depth": "11/32",
+          "E_next": "19/4",
+          "common_energy": "545/128",
+          "common_gradient_inner": "1/128",
+          "depth": 1,
+          "gradient_seam": "21/32",
+          "high_energy": "71/16",
+          "low_energy": "141/32",
+          "rigorous_W1_upper": "743656295779449/175921860444160",
+          "stationarity_l1": "1/32",
+          "successor_energy": "37/4"
+        },
+        {
+          "E_depth": "19/4",
+          "E_next": "63",
+          "common_energy": "1799/32",
+          "common_gradient_inner": "1/16",
+          "depth": 2,
+          "gradient_seam": "69/8",
+          "high_energy": "117/2",
+          "low_energy": "233/4",
+          "rigorous_W1_upper": "8106645257318011/527765581332480",
+          "stationarity_l1": "1/32",
+          "successor_energy": "122"
+        }
+      ],
+      "max_phase_radius": "6557/190134306074466975744000"
+    },
+    {
+      "A": 32,
+      "N": 128,
+      "W1_Haar_midpoint": "0.0146988383576",
+      "W1_Q_midpoint": "0.0145475868354",
+      "certified_digit_window_sha256": "5bf8544eec26e414ee68466181e668003171ac7a12ee4a28613ede39efe38192",
+      "certified_source_prefix_16": "4A4093822299F31D",
+      "depths": [
+        {
+          "E_depth": "0",
+          "E_next": "15/256",
+          "common_energy": "15/256",
+          "common_gradient_inner": "0",
+          "depth": 0,
+          "gradient_seam": "0",
+          "high_energy": "15/256",
+          "low_energy": "15/256",
+          "rigorous_W1_upper": "310633132725023/527765581332480",
+          "stationarity_l1": "0",
+          "successor_energy": "71/512"
+        },
+        {
+          "E_depth": "15/256",
+          "E_next": "33/16",
+          "common_energy": "2019/1024",
+          "common_gradient_inner": "-1/1024",
+          "depth": 1,
+          "gradient_seam": "31/256",
+          "high_energy": "2",
+          "low_energy": "513/256",
+          "rigorous_W1_upper": "506450525985037/175921860444160",
+          "stationarity_l1": "1/64",
+          "successor_energy": "137/32"
+        },
+        {
+          "E_depth": "33/16",
+          "E_next": "32",
+          "common_energy": "3701/128",
+          "common_gradient_inner": "-1/128",
+          "depth": 2,
+          "gradient_seam": "129/32",
+          "high_energy": "957/32",
+          "low_energy": "479/16",
+          "rigorous_W1_upper": "242650496445211/21990232555520",
+          "stationarity_l1": "1/64",
+          "successor_energy": "63"
+        }
+      ],
+      "max_phase_radius": "239011/16953017320082807382343680"
+    }
+  ],
+  "hostile_shadow": {
+    "A": 64,
+    "N": 64,
+    "all_certified_digits_zero": true,
+    "certified_length": 68,
+    "lookahead": 4,
+    "max_phase_radius": "191827/1907190370229409606937886469671257819520310198512063479689976149143263458482709333533217481438344994926754752555625466381611385431743528960",
+    "seed_is_dyadic": true,
+    "seed_is_original_zero": false
+  },
+  "main_base": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "original_source": "four signed poles, literal U0=0 on authentic path",
+  "source_api": "observational_succ.duck_bbp.forcing, tail_interval",
+  "status": "OBSERVED-FINITE / PROVED-LOCAL identities, not pi normality",
+  "theorem_sampling": "E_k>=16^k/N-1, sum_(j<k)J_j>=(2-sqrt(2+sqrt(2)))*E_k",
+  "unproved": "original-zero signed source-selected J_j(A)->0 or equivalent fixed-h digit Weyl decay",
+  "validation": "15/15 local isolated Python 3.13 tests; hosted native suite separate"
+}
