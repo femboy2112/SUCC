@@ -1,0 +1,59 @@
+{
+  "p_selection": "finite examples; no asymptotic onset",
+  "rows": [
+    {
+      "A": 32,
+      "abs_W": 0.062387487767,
+      "abs_prime_mean": 0.227894835262,
+      "abs_signed_high_overlap": 0.121134004344,
+      "cutoff_K": 8,
+      "frequency_h": 1,
+      "high_complement_power": 0.340230271891,
+      "low_bound": 54.180177345691,
+      "prime_p": 73,
+      "status": "PRESEEN / DOUBLE FLOAT DIAGNOSTIC; NOT A CERTIFICATE",
+      "tau": 0
+    },
+    {
+      "A": 80,
+      "abs_W": 0.142113596907,
+      "abs_prime_mean": 0.048473402572,
+      "abs_signed_high_overlap": 0.156196551552,
+      "cutoff_K": 8,
+      "frequency_h": 1,
+      "high_complement_power": 0.794270156019,
+      "low_bound": 20.317213370579,
+      "prime_p": 193,
+      "status": "PRESEEN / DOUBLE FLOAT DIAGNOSTIC; NOT A CERTIFICATE",
+      "tau": 0
+    },
+    {
+      "A": 192,
+      "abs_W": 0.069270292642,
+      "abs_prime_mean": 0.078033171458,
+      "abs_signed_high_overlap": 0.055351001313,
+      "cutoff_K": 8,
+      "frequency_h": 1,
+      "high_complement_power": 0.927325995438,
+      "low_bound": 17.783870456705,
+      "prime_p": 457,
+      "status": "PRESEEN / DOUBLE FLOAT DIAGNOSTIC; NOT A CERTIFICATE",
+      "tau": 0
+    },
+    {
+      "A": 320,
+      "abs_W": 0.058684659421,
+      "abs_prime_mean": 0.042388079148,
+      "abs_signed_high_overlap": 0.071838643612,
+      "cutoff_K": 8,
+      "frequency_h": 1,
+      "high_complement_power": 0.93762034485,
+      "low_bound": 11.398369393509,
+      "prime_p": 769,
+      "status": "PRESEEN / DOUBLE FLOAT DIAGNOSTIC; NOT A CERTIFICATE",
+      "tau": 0
+    }
+  ],
+  "schema": "SUCC-LAPLACE-SPECTRUM-01",
+  "scope": "preseen exploratory only"
+}

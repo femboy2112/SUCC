@@ -1,0 +1,306 @@
+{
+  "balanced_epoch_source_profiles": [
+    {
+      "abel_upper": "9.361770108198",
+      "asymptotic_claim": false,
+      "complement_total_variation": "35.523051821",
+      "epoch": 32,
+      "four_stage_prefix_envelope": "153.501039812",
+      "h": 1,
+      "measured_subgroup_delta": "0.314269681",
+      "order": 9,
+      "p_primary_fraction_oracle": true,
+      "prime": 73,
+      "prime_prefix_max": "8.202398993",
+      "signed_real_mean_abs": "0.062387487767",
+      "source_phase_products_match": true
+    },
+    {
+      "abel_upper": "10.681835259215",
+      "asymptotic_claim": false,
+      "complement_total_variation": "110.129981935",
+      "epoch": 80,
+      "four_stage_prefix_envelope": "313.585723393",
+      "h": 1,
+      "measured_subgroup_delta": "0.323030402",
+      "order": 24,
+      "p_primary_fraction_oracle": true,
+      "prime": 193,
+      "prime_prefix_max": "7.689615402",
+      "signed_real_mean_abs": "0.142113596907",
+      "source_phase_products_match": true
+    },
+    {
+      "abel_upper": "18.063477839852",
+      "asymptotic_claim": false,
+      "complement_total_variation": "129.868008635",
+      "epoch": 100,
+      "four_stage_prefix_envelope": "348.769747390",
+      "h": 2,
+      "measured_subgroup_delta": "0.210568869",
+      "order": 29,
+      "p_primary_fraction_oracle": true,
+      "prime": 233,
+      "prime_prefix_max": "13.802821658",
+      "signed_real_mean_abs": "0.045558655145",
+      "source_phase_products_match": true
+    }
+  ],
+  "classification": "exact arithmetic + scoped finite float phase diagnostics",
+  "date": "2026-11-08",
+  "finite_place_exact": [
+    {
+      "k": 1,
+      "n": 1,
+      "p_valuations": {
+        "13": -1,
+        "2": 1,
+        "3": -2,
+        "53": 1,
+        "7": -1
+      },
+      "positive_rational_defect": "106/819",
+      "rational_product_formula_exact": true
+    },
+    {
+      "k": 2,
+      "n": 2,
+      "p_valuations": {
+        "11": -1,
+        "17": -1,
+        "2": 2,
+        "29": -1,
+        "3": -1,
+        "5": -2,
+        "83": 1,
+        "853": 1
+      },
+      "positive_rational_defect": "283196/406725",
+      "rational_product_formula_exact": true
+    },
+    {
+      "k": 3,
+      "n": 4,
+      "p_valuations": {
+        "11": -1,
+        "13": -1,
+        "1631255555429": 1,
+        "19": -1,
+        "23": -1,
+        "3": -3,
+        "37": -1,
+        "41": -1,
+        "5": -1,
+        "53": -1,
+        "67": 1,
+        "7": -2
+      },
+      "positive_rational_defect": "109294122213743/33236001763965",
+      "rational_product_formula_exact": true
+    }
+  ],
+  "hostile_dyadic_epoch_seeds": [
+    {
+      "all_odd_prime_local_source_defects_unchanged": true,
+      "epoch": 8,
+      "observed_mean_abs": "0.000123521841",
+      "one_seed_for_all_epochs": false,
+      "real_mean_abs_bound": "1305639885183800608194308791/1586352460498316403049444147200",
+      "seed_dyadic": true
+    },
+    {
+      "all_odd_prime_local_source_defects_unchanged": true,
+      "epoch": 16,
+      "observed_mean_abs": "0.000030698614",
+      "one_seed_for_all_epochs": false,
+      "real_mean_abs_bound": "536472921712188160326481104439/2325610115622334297530600888729600",
+      "seed_dyadic": true
+    },
+    {
+      "all_odd_prime_local_source_defects_unchanged": true,
+      "epoch": 32,
+      "observed_mean_abs": "0.000007651916",
+      "one_seed_for_all_epochs": false,
+      "real_mean_abs_bound": "362677745884388885452769970271/5924340979021490270647615488000000",
+      "seed_dyadic": true
+    }
+  ],
+  "name": "scale-adelic-thermal-gluing",
+  "pi_normality": "OPEN",
+  "rational_scale_samples": [
+    {
+      "beta": "-89/120",
+      "k": 1,
+      "n": 1,
+      "normalized_ratio": "6784/12285",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-1753/2040",
+      "k": 2,
+      "n": 1,
+      "normalized_ratio": "103557824/195270075",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-458681/524280",
+      "k": 4,
+      "n": 1,
+      "normalized_ratio": "0.528604041986",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-129127208515966861049/147573952589676412920",
+      "k": 16,
+      "n": 1,
+      "normalized_ratio": "0.528596496413",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-89/120",
+      "k": 1,
+      "n": 2,
+      "normalized_ratio": "212224/294525",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-1753/2040",
+      "k": 2,
+      "n": 2,
+      "normalized_ratio": "72498176/103714875",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-458681/524280",
+      "k": 4,
+      "n": 2,
+      "normalized_ratio": "0.697095792662",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-129127208515966861049/147573952589676412920",
+      "k": 16,
+      "n": 2,
+      "normalized_ratio": "0.697086637371",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-89/120",
+      "k": 1,
+      "n": 16,
+      "normalized_ratio": "0.955463791219",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-1753/2040",
+      "k": 2,
+      "n": 16,
+      "normalized_ratio": "0.949177518779",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-458681/524280",
+      "k": 4,
+      "n": 16,
+      "normalized_ratio": "0.948418919440",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-129127208515966861049/147573952589676412920",
+      "k": 16,
+      "n": 16,
+      "normalized_ratio": "0.948413805772",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-89/120",
+      "k": 1,
+      "n": 64,
+      "normalized_ratio": "0.988528519877",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-1753/2040",
+      "k": 2,
+      "n": 64,
+      "normalized_ratio": "0.986763055341",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-458681/524280",
+      "k": 4,
+      "n": 64,
+      "normalized_ratio": "0.986535328960",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-129127208515966861049/147573952589676412920",
+      "k": 16,
+      "n": 64,
+      "normalized_ratio": "0.986533620600",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-89/120",
+      "k": 1,
+      "n": 256,
+      "normalized_ratio": "0.997110236757",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-1753/2040",
+      "k": 2,
+      "n": 256,
+      "normalized_ratio": "0.996655331603",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-458681/524280",
+      "k": 4,
+      "n": 256,
+      "normalized_ratio": "0.996595539025",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-129127208515966861049/147573952589676412920",
+      "k": 16,
+      "n": 256,
+      "normalized_ratio": "0.996595075487",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-89/120",
+      "k": 1,
+      "n": 1024,
+      "normalized_ratio": "0.999276177787",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-1753/2040",
+      "k": 2,
+      "n": 1024,
+      "normalized_ratio": "0.999161580628",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-458681/524280",
+      "k": 4,
+      "n": 1024,
+      "normalized_ratio": "0.999146444661",
+      "second_order_bound_pass": true
+    },
+    {
+      "beta": "-129127208515966861049/147573952589676412920",
+      "k": 16,
+      "n": 1024,
+      "normalized_ratio": "0.999146326296",
+      "second_order_bound_pass": true
+    }
+  ],
+  "source": "canonical four-pole zero-seed BBP; duck_bbp.forcing",
+  "warnings": [
+    "finite complex and logarithmic diagnostics are not interval certificates",
+    "prime-clock asymptotic is imported from draft PR #554, not recomputed",
+    "no source-selected signed covariance decay is established"
+  ]
+}

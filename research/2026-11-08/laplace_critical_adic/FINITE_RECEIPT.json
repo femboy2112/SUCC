@@ -1,0 +1,107 @@
+{
+  "parent_pr": 558,
+  "rows": [
+    {
+      "A": 160,
+      "float_independent_difference": "1.205052e-15",
+      "h": 400,
+      "imag_mp60": "0.138092953746170190334358",
+      "lambda": "1/64",
+      "omitted_abs_tail_upper": "3.055524601628e-08",
+      "real_mp60": "-0.1720573919432942509999957",
+      "status": "finite diagnostic only",
+      "terms": 2880
+    },
+    {
+      "A": 160,
+      "float_independent_difference": "8.920730e-16",
+      "h": 3200,
+      "imag_mp60": "0.2277434721881255558814862",
+      "lambda": "1/8",
+      "omitted_abs_tail_upper": "3.055524601628e-08",
+      "real_mp60": "-0.4181482489734591888215283",
+      "status": "finite diagnostic only",
+      "terms": 2880
+    },
+    {
+      "A": 160,
+      "float_independent_difference": "1.404333e-15",
+      "h": 25600,
+      "imag_mp60": "0.2662791606253981166223795",
+      "lambda": "1/1",
+      "omitted_abs_tail_upper": "3.055524601628e-08",
+      "real_mp60": "-0.8105800736702127842139141",
+      "status": "finite diagnostic only",
+      "terms": 2880
+    },
+    {
+      "A": 320,
+      "float_independent_difference": "2.147966e-15",
+      "h": 1600,
+      "imag_mp60": "0.1409429697617807135455756",
+      "lambda": "1/64",
+      "omitted_abs_tail_upper": "3.050757796450e-08",
+      "real_mp60": "-0.1744704415600002652648594",
+      "status": "finite diagnostic only",
+      "terms": 5760
+    },
+    {
+      "A": 320,
+      "float_independent_difference": "3.265264e-15",
+      "h": 12800,
+      "imag_mp60": "0.2279797722456231731210902",
+      "lambda": "1/8",
+      "omitted_abs_tail_upper": "3.050757796450e-08",
+      "real_mp60": "-0.4184851697281796066835054",
+      "status": "finite diagnostic only",
+      "terms": 5760
+    },
+    {
+      "A": 320,
+      "float_independent_difference": "2.053913e-15",
+      "h": 102400,
+      "imag_mp60": "0.2599564671992350472761048",
+      "lambda": "1/1",
+      "omitted_abs_tail_upper": "3.050757796450e-08",
+      "real_mp60": "-0.8056735365744229672809694",
+      "status": "finite diagnostic only",
+      "terms": 5760
+    },
+    {
+      "A": 640,
+      "float_independent_difference": "4.749773e-15",
+      "h": 6400,
+      "imag_mp60": "0.1338983353871967337203791",
+      "lambda": "1/64",
+      "omitted_abs_tail_upper": "3.048376252987e-08",
+      "real_mp60": "-0.1737823394806985209351483",
+      "status": "finite diagnostic only",
+      "terms": 11520
+    },
+    {
+      "A": 640,
+      "float_independent_difference": "8.757621e-15",
+      "h": 51200,
+      "imag_mp60": "0.2288361221089654581907884",
+      "lambda": "1/8",
+      "omitted_abs_tail_upper": "3.048376252987e-08",
+      "real_mp60": "-0.4117261964381382945639639",
+      "status": "finite diagnostic only",
+      "terms": 11520
+    },
+    {
+      "A": 640,
+      "float_independent_difference": "3.979805e-15",
+      "h": 409600,
+      "imag_mp60": "0.2558116013539388429854344",
+      "lambda": "1/1",
+      "omitted_abs_tail_upper": "3.048376252987e-08",
+      "real_mp60": "-0.8049929895784143299024276",
+      "status": "finite diagnostic only",
+      "terms": 11520
+    }
+  ],
+  "schema": "SUCC-LAPLACE-CRITICAL-01",
+  "scope": "finite source-only critical h=lambda*A^2; no pi normality claim",
+  "source_sha": "34cb7b64f6975e05586ec220a4655961a8e7b636"
+}
