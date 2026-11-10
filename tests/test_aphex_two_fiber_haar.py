@@ -94,7 +94,7 @@ class TwoFiberHaarTests(unittest.TestCase):
         with self.assertRaises(ValueError): two_fiber_haar([1]*4,[1]*4)
         with self.assertRaises(ValueError): two_fiber_haar([1,-1],[1])
         with self.assertRaises(ValueError): two_fiber_haar([1,0],[1,1])
-        t=two_fiber_haar([1,-1]*4,[1]*8)
+        t=two_fiber_haar([1]*5+[-1]*3,[1]*8)
         with self.assertRaises(ValueError): real_parity_bound(t,F(0))
         with self.assertRaises(ValueError): perturbation_budget([1,-1],[1,1],[1])
         with self.assertRaises(ValueError): original_bbp_two_fiber([],1217)
