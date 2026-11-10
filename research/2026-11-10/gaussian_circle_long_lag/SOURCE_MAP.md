@@ -1,0 +1,9 @@
+# Mathematical provenance and source contracts
+
+- Main XXIII integration candidate: [PR #584](https://github.com/femboy2112/SUCC/pull/584), original audited source inherited unchanged from `observational_succ/duck_bbp.py` and import manifest `provenance/IMPORT_MANIFEST.json`. This independent research child adds files only.
+- Exact source-free/seed-dependent distinction: `docs/PI_NORMALITY_FRONTIER.md`, `research/2026-11-09/pi_parity_pressure/PROOFS.md`, `research/2026-11-09/tenacious_d_haar/PROOFS.md`.
+- Gaussian model's classical inputs: Gauss circle bound via square tiling; Jacobi two-squares identity; Möbius inversion and `ζ(2)=π²/6`; convex parallel-body area (Steiner formula); directional characters on C4. Research references: https://mathworld.wolfram.com/GausssCircleProblem.html , https://mathworld.wolfram.com/TwoSquaresTheorem.html .
+- Viète's nested radicals, inscribed/circumscribed polygon area: https://mathworld.wolfram.com/PiFormulas.html .
+- Inner-product norm versus general `ℓ^p`: Jordan–von Neumann parallelogram identity, https://www.mathematik.uni-muenchen.de/~michel/jordan-von_neumann_-_parallelogram_identity.pdf .
+- Source analytic factorization and inverse-beta root: `research/2026-11-10/omega_bbp_operational_completion/INVERSE_BETA_BBP_ROOT.md`. The Gaussian quadratic factors in the source's analytic primitive are not automatically a character-dynamics map.
+- New claims GC-01..08/SL-01 are *new-to-SUCC mathematical packaging and constructive tests*, not globally original theorem priority. The original-source all-epoch J bound, all fixed-h Weyl decay, parity balance and RH are open.
