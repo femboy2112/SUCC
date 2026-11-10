@@ -107,9 +107,9 @@ not proved**. This is **staged on SGO #293, not merged into main**.
 A zero-mass signed comparison of the Euler and authentic BBP moment carriers
 has strictly oriented higher moments, while the authentic forward BBP recursion
 and backward Green tail yield a *uniform-in-N* signed Weyl orbit transport
-\(\lvert S_N(h,\pi)-\sum_{n\le N}e^{2\pi ih U_n}\rvert
-<119|h|/648\). Euler \(\gamma\) also splits exactly into eight
-\(\mathrm{SUCC}^8\) residue channels. This is a certified reduction to the
+$`\lvert S_N(h,\pi)-\sum_{n\le N}e^{2\pi ih U_n}\rvert\lt 119|h|/648`$.
+Euler $`\gamma`$ also splits exactly into eight
+$`\mathrm{SUCC}^8`$ residue channels. This is a certified reduction to the
 authentic rational BBP recurrence, **not** the missing cancellation theorem,
 normality of π, signed-Weil positivity, or RH. This remains on a non-main draft
 branch stacked over the Gamma zero/one PR #292.
