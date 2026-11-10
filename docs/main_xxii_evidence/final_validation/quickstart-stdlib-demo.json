@@ -1,0 +1,21 @@
+{
+  "name": "quickstart-stdlib-demo",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/quickstart-stdlib313/bin/python",
+    "-m",
+    "observational_succ",
+    "demo"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "end_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "exit_code": 0,
+  "seconds": 0.6725378036499023,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "79b19c6e797a496b434d6bea38b1e8f9442e4367257165e4aaea9a377ed91729"
+}

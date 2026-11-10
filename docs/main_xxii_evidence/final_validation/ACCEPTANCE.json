@@ -1,0 +1,61 @@
+{
+  "tested_integration_head": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "stable_candidate": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "main_before": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "observed_utc": "2026-11-10T02:24:44.616980+00:00",
+  "native_final": {
+    "name": "full-final310",
+    "command": [
+      "/home/leah/succ-main-xxii-evidence/venv310/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py"
+    ],
+    "cwd": "/home/leah/SUCC-main-xxii",
+    "start_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+    "end_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+    "exit_code": 0,
+    "seconds": 1706.669406414032,
+    "env": {
+      "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "log_sha256": "a50763a2eb95cd7b121ef4ce78d90160e822ef57547e7ce5f8ac6583ad6b2bed"
+  },
+  "native_test_summaries": [
+    "Ran 4 tests in 0.106s",
+    "Ran 7 tests in 0.213s",
+    "Ran 12806 tests in 1697.942s"
+  ],
+  "exact_head_checks": {
+    "Contextual Bayesian SUCC heuristic guards (3.13)": "success",
+    "Contextual Bayesian SUCC heuristic guards (3.10)": "success",
+    "Typed genetic model fusion and source-coupling guards (3.13)": "success",
+    "Typed genetic model fusion and source-coupling guards (3.10)": "success",
+    "Python 3.13 mathematical and epistemic checks": "success",
+    "Python 3.10 mathematical and epistemic checks": "success",
+    "contracts (3.13)": "success",
+    "contracts (3.10)": "success",
+    "lean": "success",
+    "exact-stdlib (3.10)": "success",
+    "exact-stdlib (3.13)": "success",
+    "finite_source (3.10)": "success",
+    "Collective observer exact replay (3.10)": "success",
+    "finite_source (3.13)": "success",
+    "Collective observer exact replay (3.13)": "success",
+    "exact-source (3.10)": "success",
+    "exact-source (3.13)": "success"
+  },
+  "hosted_gate_pass": true,
+  "recorded_validation_gates_pass": true,
+  "live_ancestry_recheck_required": true,
+  "pi_normality": "OPEN",
+  "original_zero_hex_parity": "OPEN",
+  "RH": "OPEN"
+}

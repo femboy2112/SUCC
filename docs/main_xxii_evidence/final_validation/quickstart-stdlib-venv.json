@@ -1,0 +1,21 @@
+{
+  "name": "quickstart-stdlib-venv",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "-m",
+    "venv",
+    "/home/leah/succ-main-xxii-evidence/quickstart-stdlib313"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "end_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "exit_code": 0,
+  "seconds": 2.4405100345611572,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

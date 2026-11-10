@@ -1,0 +1,23 @@
+{
+  "name": "quickstart-pip-install",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/quickstart-stdlib313/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-e",
+    ".[test]"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "end_commit": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "exit_code": 0,
+  "seconds": 17.719568252563477,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "aa09c4252df257d1d197f1d203929cbc4e53137414c73832197b23aa88e197a5"
+}
