@@ -126,7 +126,7 @@ The central thread is not “a succession of proofs that π must be normal.” I
 
 ## 13. The Yoneda metal pinbed and oscillator drives (November 7)
 
-**USER–DIRECT from current conversation history:** “Fourier and category theory ... had a baby.” The user asked for an analogy to a sheet of metal pins pressed by a hand, with an internal observational model connected to the carrier via Yoneda-shaped mathematics. The user explicitly accepted “indistinguishable from true relative to carrier” as a possible scoped result. Next came coherent oscillator-driven pins.
+**USER–DIRECT from earlier SUCC conversation:** “Its like if Fourier and category theory fucked and had a baby.” The user asked for an analogy to a sheet of metal pins pressed by a hand, with an internal observational model connected to the carrier via Yoneda-shaped mathematics. The user explicitly accepted “indistinguishable from true relative to carrier” as a possible scoped result. Next came coherent oscillator-driven pins.
 
 **Steelman.** Restricted Yoneda observation into a declared probe category, realizable continuous surfaces, phase-coherent finite Fourier measurements, source-conditioned future-action closure and behavioral equivalence. A truth property descends when it is constant over the completed observation fiber, not when the observer merely feels confident.
 
