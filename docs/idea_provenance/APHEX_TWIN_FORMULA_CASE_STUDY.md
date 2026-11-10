@@ -65,38 +65,38 @@ s_n=(-1)^{d_n}=a_n b_n.
 
 Here **a_n=±1** is the selected genuine balanced-prime local parity, while **b_n=±1** is the **complete** remaining factor, retaining the 2-adic clock, every other odd-prime power, global CRT winding, inherited carry history and real Green-tail boundary correction. The complement is NOT an independently sampled random variable. In the true data, it is correlated with a_n.
 
-For one actual source epoch [A,2A), write m=mean(a), mu_b=mean(b), x_n=a_n-m and y_n=b_n-mu_b. Introduce a chosen observer parameter \(\beta\), a reference inverse gain \(g_{\rm ref}\), and the declaration
+For one actual source epoch [A,2A), write m=mean(a), mu_b=mean(b), x_n=a_n-m and y_n=b_n-mu_b. Introduce a chosen observer parameter $`\beta`$, a reference inverse gain $`g_{\rm ref}`$, and the declaration
 
 ```math
 g=M^{-1}_{\mathrm{observer}}=g_{\mathrm{ref}}+\beta.
 ```
 
-It is an **observer gain**, not a measurement of physical inverse mass. Define the residual \(D_n=\beta x_n-y_n\) and source feature \(F_n=x_n\). The *new* Aphex-shaped update is
+It is an **observer gain**, not a measurement of physical inverse mass. Define the residual $`D_n=\beta x_n-y_n`$ and source feature $`F_n=x_n`$. The *new* Aphex-shaped update is
 
 ```math
 \mathcal L_A(\beta)=\frac1{2A}\sum_{n=A}^{2A-1}(y_n-\beta x_n)^2,\qquad
 \beta_{\mathrm{new}}=\beta-\eta\left(V_A\beta-C_A\right),
 ```
 
-where \(V_A=\mathrm{Var}_A(a)\) and \(C_A=\mathrm{Cov}_A(a,b)\). This is ordinary deterministic least squares. For \(V_A>0\) and \(0<\eta<2/V_A\),
+where $`V_A=\mathrm{Var}_A(a)`$ and $`C_A=\mathrm{Cov}_A(a,b)`$. This is ordinary deterministic least squares. For $`V_A>0`$ and $`0<\eta<2/V_A`$,
 
 ```math
 \mathcal L_A(\beta)-\mathcal L_A(\beta_{\rm new})
 =\eta(1-\eta V_A/2)(V_A\beta-C_A)^2\ge0.
 ```
 
-The minimizing coefficient is \(\beta_A^*=C_A/V_A\). Starting at zero with gain \(\eta=1/V_A\) reaches the optimum in one exact batch update. That proves an algorithmic optimization claim; **it does not prove that the arithmetic covariance tends to zero as A grows**.
+The minimizing coefficient is $`\beta_A^*=C_A/V_A`$. Starting at zero with gain $`\eta=1/V_A`$ reaches the optimum in one exact batch update. That proves an algorithmic optimization claim; **it does not prove that the arithmetic covariance tends to zero as A grows**.
 
 **Correspondence table for the new SUCC model (not the track's historical meaning):**
 
 | Track-title symbol | Newly declared mathematical role | Provenance limitation |
 |---|---|---|
-| M_i^{-1} | Observer inverse-response gain \(g_{\rm ref}+\beta\) | Not verified physical inverse mass; require positivity if modeled as such |
-| \(\alpha\) | Calibrated step size \(\eta/A\) or batch \(\eta\) | Units/normalization depend on our chosen loss |
-| \(D_i[n]\) | Centered predicted-minus-observed complement residual | Defined by SUCC, not known from liner notes |
-| \(F_{ji}\) | Internal signed source/Haar interaction features | Requires a real authenticated observation map |
-| \(F_i^{ext}\) | Exogenous original BBP forcing/carry/prime observation | Actual source constraints must be preserved |
-| \(C[i]\) | Declared graph of incident probe channels | Cannot invent missing information/rank |
+| M_i^{-1} | Observer inverse-response gain $`g_{\rm ref}+\beta`$ | Not verified physical inverse mass; require positivity if modeled as such |
+| $`\alpha`$ | Calibrated step size $`\eta/A`$ or batch $`\eta`$ | Units/normalization depend on our chosen loss |
+| $`D_i[n]`$ | Centered predicted-minus-observed complement residual | Defined by SUCC, not known from liner notes |
+| $`F_{ji}`$ | Internal signed source/Haar interaction features | Requires a real authenticated observation map |
+| $`F_i^{ext}`$ | Exogenous original BBP forcing/carry/prime observation | Actual source constraints must be preserved |
+| $`C[i]`$ | Declared graph of incident probe channels | Cannot invent missing information/rank |
 | Time index | Source history/lag *in a defined implementation* | The original n^{-1}/n−1 ambiguity survives |
 
 ## 4. The genuinely exact result: the gain is a binary Haar contrast
@@ -114,7 +114,7 @@ If both fibers contain observations, the optimizer identity becomes
 \boxed{\beta_A^*=\frac{u_+-u_-}{2}}.
 ```
 
-This is a **signed two-fiber Haar detail** of the complementary response. It is not the full 16-child future-conditioned Haar measure of [#565](https://github.com/femboy2112/SUCC/pull/565). Define the *common* response \(t=(u_++u_-)/2\). Direct two-point probability algebra gives
+This is a **signed two-fiber Haar detail** of the complementary response. It is not the full 16-child future-conditioned Haar measure of [#565](https://github.com/femboy2112/SUCC/pull/565). Define the *common* response $`t=(u_++u_-)/2`$. Direct two-point probability algebra gives
 
 ```math
 \mathbb E_A[b]=t+m\beta,\qquad
@@ -137,7 +137,7 @@ The optimal conditional residual half-energy is exactly
 =\frac12\left[p_+(1-u_+^2)+p_-(1-u_-^2)\right].
 ```
 
-For approximate complement readouts with mean absolute error epsilon, the conditional contrast moves by at most \(\varepsilon/(1-|m|)\). This is a paid observation-precision result, NOT a proof that the true complementary sign mixes.
+For approximate complement readouts with mean absolute error epsilon, the conditional contrast moves by at most $`\varepsilon/(1-|m|)`$. This is a paid observation-precision result, NOT a proof that the true complementary sign mixes.
 
 ## 5. The exact finite source receipt — not an asymptotic experiment
 
@@ -157,13 +157,13 @@ u_+=\frac6{127},\quad u_-=-\frac4{129},
 P_A=\frac5{128}.
 ```
 
-The true finite calibration gap is \(|P_A-\beta^*|=133/2097024\). This is smaller than the paid upper bound \(1/128\). The conditional fitted half-loss is \(1046843/2097024\). The prime p-local sample visited 76 out of 1217 residues with large **positive** collision pressure while its signed prime-parity mean was −1/128. Signed cancellation and positive concentration measure different effects.
+The true finite calibration gap is $`|P_A-\beta^*|=133/2097024`$. This is smaller than the paid upper bound $`1/128`$. The conditional fitted half-loss is $`1046843/2097024`$. The prime p-local sample visited 76 out of 1217 residues with large **positive** collision pressure while its signed prime-parity mean was −1/128. Signed cancellation and positive concentration measure different effects.
 
 The receipt establishes exactly those finite numbers and their source selection, no global rate and no academic novelty.
 
 ## 6. The adversarial reality check that MUST stay in the story
 
-#572 constructs an explicit **epoch-dependent p-integral rational wrong seed**, using the authentic four-pole forcing but changing initial condition. On the tested epoch it preserves the selected p-local source sign and 2-adic clock, yet gives **all even completed real digits**. For this control, \(b_n=a_n\), so
+#572 constructs an explicit **epoch-dependent p-integral rational wrong seed**, using the authentic four-pole forcing but changing initial condition. On the tested epoch it preserves the selected p-local source sign and 2-adic clock, yet gives **all even completed real digits**. For this control, $`b_n=a_n`$, so
 
 ```math
 u_+=1,\quad u_-=-1,\quad
@@ -179,12 +179,12 @@ Additional reality checks:
 - **Calibration gauge.** Changing the units of x rescales beta without changing the predictive observable. The coefficient only has meaning with a declared probe normalization.
 - **Missing rank cannot be learned away.** Diagonal gain adjustment cannot restore a channel absent from the source-observation matrix; the balanced prime epoch had to change actual probe geometry.
 - **Wrong "Haar" object.** A binary conditional Haar detail is not a 16-branch full-tail law, a real-circle Haar measure or normality.
-- **Wrong "Fourier" object.** The digit parity character h=8 on Z/16 is a discontinuous step function of the real phase, NOT the continuous Weyl character \(e(8x)\). Its circle Fourier series has infinitely many modes and jump conventions.
+- **Wrong "Fourier" object.** The digit parity character h=8 on Z/16 is a discontinuous step function of the real phase, NOT the continuous Weyl character $`e(8x)`$. Its circle Fourier series has infinitely many modes and jump conventions.
 - **Spectrogram analogy is bounded.** A visible image in a spectrogram is an authored encoding. A sound-derived observation surface with missing phases is not automatically invertible, and no physical mass coupling is established by such an image.
 
 ## 7. The strongest remaining theorem; pass, fail and ambiguous outcomes
 
-Under the explicitly imported balanced-prime local estimate \(m_A\to0\), the true original-zero hexadecimal parity balance is equivalent to
+Under the explicitly imported balanced-prime local estimate $`m_A\to0`$, the true original-zero hexadecimal parity balance is equivalent to
 
 ```math
 \boxed{
