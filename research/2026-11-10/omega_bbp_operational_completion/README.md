@@ -1,5 +1,8 @@
 # Ω arrows, productive BBP, and the exact carry cocycle
 
+> **Corrected research direction (10 Nov):** Instead of imposing an independent raw Ω clock, unfold the original four-pole BBP tree and recover its self-application by reverse-beta folding. The [two BBP fixed-point roots, exact Mellin intertwiner, and inverse-instability proof](INVERSE_BETA_BBP_ROOT.md) supersede the earlier assumption that Ω3 should be the starting object. See the [280 exact rational fold checks](inverse_beta_fold_probe.py). This is a paper-level construction, not yet a faithful AST lambda compiler or a π-normality proof.
+
+
 **10 November 2026 · source-attested research note · follow-up to [draft #579](https://github.com/femboy2112/SUCC/pull/579).**
 
 **Question:** Why can't an infinite BBP expression simply be beta-reduced to beta normal form? Could the nonterminating Ω paths be the arrows that hold the arithmetic and its parity together?
