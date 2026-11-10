@@ -112,6 +112,32 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 | 4 | Lag-1 source autocorrelation bound r(n)r(n+1) < (15/4)²/(n(n+1))² | PROVED (new elementary inequality) |
 | 5 | Uniform lag-k bound r(n)r(n+k) < (15/4)²/(n(n+k))² | PROVED (uniform two-time correlation) |
 | 6 | Zero-seed/shadow separation gap: |s_A+π/16| ≤ r(N+1)/(15·16^N)+1/D | PROVED (quantified obstruction) |
+| 7 | Parity Fourier support exactly on m ≡ 8 (mod 16), coeff 16/(π i m) | PROVED (exact structural) |
+
+---
+
+## Attack 6 (exact structural): the parity character's Fourier support
+
+**Theorem F-10 (PROVED, sharpening PPP-00).**  The hexadecimal parity character
+`f(x) = (−1)^{⌊16x⌋}` on `[0,1)` has Fourier coefficients
+
+    a_m = ∫₀¹ (−1)^{⌊16x⌋} e^{−2πimx} dx = 16/(πim)  if m ≡ 8 (mod 16),
+                                          = 0        otherwise.
+
+**Proof.**  Split `[0,1)` into the 16 digit intervals; the coefficient is
+`(2πim)^{−1}·(z−1)·Σ_{a=0}^{15}(−1)^a z^a` with `z = e^{−2πim/16}`.  The
+alternating geometric sum equals 16 iff `z = −1` iff `m ≡ 8 (mod 16)`, and 0
+otherwise.  This is the **exact support**: parity balance is controlled by the
+Weyl means `c_A(m)` at the arithmetic progression `m ≡ 8 (mod 16)` **only**,
+confirming F-3/F-4 and pinning the weighted-ℓ¹ obligation to that single
+progression.  Kernel-checked in `formal/scott_omega/ParityFourierSupport.lean`
+(support congruence + the 6 residues in 1..96, no Mathlib/sorry).
+
+**Boundary:** exact support and coefficient; does not bound the Weyl means, so
+normality/parity remain OPEN.
+
+**Receipt:** `observational_succ/parity_fourier_support.py` +
+`tests/test_parity_fourier_support.py` (4/4, exit 0).
 
 ---
 
