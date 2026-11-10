@@ -110,6 +110,7 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 | 2 | h=8 character type firewall + weighted-ℓ¹ Weyl obligation | PROVED (reduction) |
 | 3 | Quantified seed-blindness obstruction (ratio ~25.6) | PROVED (obstruction) |
 | 4 | Lag-1 source autocorrelation bound r(n)r(n+1) < (15/4)²/(n(n+1))² | PROVED (new elementary inequality) |
+| 5 | Uniform lag-k bound r(n)r(n+k) < (15/4)²/(n(n+k))² | PROVED (uniform two-time correlation) |
 
 ---
 
@@ -137,6 +138,23 @@ forcing.  It is a clean elementary input, but it does **not** bound any signed
 Weyl mean and does not advance normality or parity balance (both OPEN).
 
 **Receipt:** `observational_succ/source_lag1_autocorrelation.py` + `tests/test_source_lag1_autocorrelation.py` (4/4, exit 0), bound verified for n=1..1999 and by the positive-coefficient certificate.
+
+**Theorem F-7 (uniform lag-k generalization, PROVED).**  For all integers
+`n ≥ 1` and `k ≥ 1`,
+
+    r(n) r(n+k)  <  (15/4)² / (n(n+k))².
+
+**Proof.**  The difference `D_k(n) = (15/4)² den(n)den(n+k) − num(n)num(n+k)n²(n+k)²`
+shifted by `t = n−1 ≥ 0` is a degree-8 polynomial in `t` whose **coefficients are
+polynomials in `k` with all-positive integer coefficients** (the nine t-coefficients
+are listed in `source_lag1_autocorrelation.lagk_polynomial_coefficients()`).  Since
+`k ≥ 1`, every coefficient is positive, so `D_k(n) > 0` for all `n,k ≥ 1`.  This is
+a genuine **uniform two-time correlation bound** for the source, with the sharp
+asymptotic constant `(15/4)²`.  Verified on the full `n,k ∈ 1..299` grid (89,401
+checks) and by the all-positive coefficient certificate (6/6 tests).
+
+**Boundary:** a clean two-time *second-moment* control, not a signed Weyl-mean
+estimate.  Normality and parity balance remain OPEN.
 
 All three independently motivated attacks return **proved structural/reduction
 results or quantified obstructions** — no false victory.  The target `β_A → 0`

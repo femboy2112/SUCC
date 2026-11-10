@@ -25,6 +25,16 @@ class Lag1AutocorrelationTests(unittest.TestCase):
         for n in range(1, 50):
             self.assertGreater(duck_bbp.forcing(n), 0)
 
+    def test_uniform_lagk_bound(self):
+        for n in range(1, 60):
+            for k in range(1, 60):
+                self.assertLess(lag.lagk_product(n, k), lag.lagk_bound(n, k), (n, k))
+
+    def test_lagk_coefficients_all_positive(self):
+        for name, coeffs in lag.lagk_polynomial_coefficients():
+            for c in coeffs:
+                self.assertGreater(c, 0, (name, c))
+
 
 if __name__ == '__main__':
     unittest.main()
