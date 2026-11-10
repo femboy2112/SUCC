@@ -1,0 +1,19 @@
+{
+  "name": "spatial-source-replay",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "research/2026-11-09/bbp_spatial_haar_lift/reproduce.py"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "end_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "exit_code": 0,
+  "seconds": 13.051038265228271,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "d520d6b98152a7620048e5bc82b0305b2a0f96d8716c8646ab009fb5e8a927da"
+}

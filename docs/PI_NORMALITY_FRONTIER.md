@@ -9,8 +9,11 @@ and [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXII.md) for review boundaries.
 ## 1. Authenticated original source
 
 ```math
-r(n)=\frac4{8n-7}-\frac2{8n-4}-\frac1{8n-3}-\frac1{8n-2},
-\quad U_0=0,\quad U_n=16U_{n-1}+r(n).
+r(n)=\frac4{8n-7}-\frac2{8n-4}-\frac1{8n-3}-\frac1{8n-2}.
+```
+
+```math
+U_0=0,\qquad U_n=16U_{n-1}+r(n).
 ```
 
 Put $`C_n=\lfloor U_n\rfloor`$, $`\kappa_n=C_n-16C_{n-1}`$ and

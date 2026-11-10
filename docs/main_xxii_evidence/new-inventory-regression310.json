@@ -1,0 +1,26 @@
+{
+  "name": "new-inventory-regression310",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv310/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_branch_inventory.py",
+    "-v"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "end_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "exit_code": 0,
+  "seconds": 0.25617218017578125,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "a3484024d4485d71cac6f479dd7ea61f1fdf5e5cc33e556fcd8cac7bf7d785f9"
+}

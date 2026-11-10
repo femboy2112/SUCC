@@ -9,10 +9,10 @@
 | You want… | Go to |
 |---|---|
 | The corrected original intuition (circle→line→triangle; φ⁻¹ vs γ; Ω) and the three distinct φ-lineages | [FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md](../../research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md) + [TOPIC_ATLAS.md](TOPIC_ATLAS.md) §Genesis |
-| A machine-readable typed concept graph (48 referents, 56 typed relations) | [RELATION_GRAPH.json](RELATION_GRAPH.json) (lint: `scripts/verify_math_memory_graph.py --path …`) |
-| An exhaustive index of every claim row (1944 rows, path/line/SHA; 176 registered namespaces, 1863 registered rows; 112 residual warnings — the π-frontier supplements #306–#340 are scoped research that intentionally mint no registry namespace, so their local refs stay unregistered by design, alongside the pre-existing legacy single-letter prefixes) | [CLAIM_CATALOG.json](CLAIM_CATALOG.json) (build: `scripts/build_math_memory.py --write/--check`) |
+| A machine-readable typed concept graph (51 referents, 60 typed relations) | [RELATION_GRAPH.json](RELATION_GRAPH.json) (lint: `scripts/verify_math_memory_graph.py --path …`) |
+| Claim-row discovery catalog (2055 rows; 179 namespaces, 1921 registered rows; inherited unregistered research IDs retain warnings) | [CLAIM_CATALOG.json](CLAIM_CATALOG.json) (build: `scripts/build_math_memory.py --write/--check`) |
 | Historical theorem IDs, proof status, counterexamples | [CLAIM_LEDGER.md](../CLAIM_LEDGER.md) + [CLAIM_INDEX.md](../CLAIM_INDEX.md); FQIDs via [CLAIM_NAMESPACE_REGISTRY.json](../CLAIM_NAMESPACE_REGISTRY.json) |
-| The true open-PR ancestry (who descends from whom; what is stale) | [SUCC_MAIN_XII_FRONTIER_ANCESTRY_DAG.md](../../research/2026-10-27/SUCC_MAIN_XII_FRONTIER_ANCESTRY_DAG.md) |
+| Current integration ancestry and historical branch dispositions | [Main XXII manifest](../SUCC_MAIN_XXII_INTEGRATION_MANIFEST_2026-11-09.json); the Main XII DAG below is historical |
 | Which supplements are registered vs. flagged, and why | [REGISTRY_RECONCILIATION_2026-10-27.md](REGISTRY_RECONCILIATION_2026-10-27.md) |
 | Domain atlases + natural-language query crosswalk | [TOPIC_ATLAS.md](TOPIC_ATLAS.md) |
 | The schema and proof-authority contract | [SCHEMA.md](SCHEMA.md), [START_HERE.md](START_HERE.md) |
@@ -24,6 +24,10 @@
 3. **Exact claim ID** (e.g. `CAR-07`, `SB-3`) → [CLAIM_CATALOG.json](CLAIM_CATALOG.json) for path/line/SHA → the supplement/dossier → the Lean receipt if any.
 
 Relation-label discipline: `reduces_to`/`depends_on` = proved implication with stated hypotheses; `does_not_imply` = refutation with a counterexample; `candidate_bridge` = unproved proposal; `shares_value_with` = equal scalar only (not a common source); `shares_source_with` = common source passport only. An equivalence is **not** a proof of either side.
+
+## Operation Main XXII — current entrypoint
+
+[Current frontier](../PI_NORMALITY_FRONTIER.md) · [integration audit](../SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md) · [scoped claims](../CLAIM_SUPPLEMENT_MAIN_XXII.md) · [typed Gamma observables](../MAIN_XXII_GAMMA_OBSERVABLES.md). Original-zero parity contrast is OPEN, as are full pi normality and RH. The research-local dossiers remain discoverable through the history index; catalog registration is not proof authority.
 
 ## Operation Main XIX — angular / Laurent-clock frontier (2026-11-01)
 

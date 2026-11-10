@@ -51,8 +51,11 @@ or establish a universal theorem.
 The authenticated example keeps all four signed poles and the literal zero seed:
 
 ```math
-r(n)=\frac{4}{8n-7}-\frac{2}{8n-4}-\frac{1}{8n-3}-\frac{1}{8n-2},
-\qquad U_0=0,\qquad U_n=16U_{n-1}+r(n).
+r(n)=\frac{4}{8n-7}-\frac{2}{8n-4}-\frac{1}{8n-3}-\frac{1}{8n-2}.
+```
+
+```math
+U_0=0,\qquad U_n=16U_{n-1}+r(n).
 ```
 
 The positive future correction connects this rational recurrence to π exactly:
@@ -91,7 +94,7 @@ keeps the terms that prime-by-prime marginal uniformity cannot determine.
 between the two prime-sign-conditioned complementary responses. Its
 [sharp finite certificate](research/2026-11-09/aphex_two_fiber_haar/PROOFS.md) bounds the gap
 between that coefficient and actual digit parity by the prime-sign imbalance. Decay of the
-coefficient is **OPEN**. A source-preserving coherent wrong seed has zero fitting loss and
+coefficient is **OPEN**. A same-forcing coherent wrong seed has zero fitting loss and
 maximally biased parity, so learning accuracy cannot close the theorem.
 
 These are connected tools with different domains. Binary conditional Haar is not full
