@@ -78,7 +78,7 @@ def group_butterfly(data: tuple[complex, ...], group: int, inverse=False) -> tup
     Group=3 requires a three-dimensional orthogonal butterfly, not a
     single-qubit H. Both preserve detail slots; no projection occurs.
     """
-    if len(data) % group or group not in (2, 3):
+    if group not in (2, 3) or len(data) % group:
         raise ValueError("requires a multiple of group=2 or 3")
     if group == 2:
         mat = ((1/sqrt(2), 1/sqrt(2)), (1/sqrt(2), -1/sqrt(2)))
@@ -224,21 +224,22 @@ def completed_phase_tail_bound(L: int, n: int) -> Fraction:
     return Fraction(16)**(n-L) / ((8*L+1)*(8*L+2))
 
 
-def finite_phase_mean_error_bound(A: int, L: int, h: int) -> float:
+def finite_phase_mean_error_bound(A: int, L: int, h: int) -> Fraction:
     """Bound on |mean(e(h Y_n))-mean(e(h Z_n,L))|, n in [A,2A).
 
+    The rational upper bound uses 2*pi < 44/7 and avoids float underflow.
     For h fixed and L=2A this is O(h/A^2). It does NOT control
     discontinuous digit indicators without a boundary-strip certificate.
     """
     _dyadic_length(A)
     if L < 2*A or not isinstance(h,int):
         raise ValueError("L>=2A and h integer")
-    return 2*pi*abs(h)*float(completed_phase_tail_bound(L,2*A-1))
+    return Fraction(44, 7) * abs(h) * completed_phase_tail_bound(L, 2*A-1)
 
 
-def finite_hadamard_probability_error_bound(A: int, L: int, h: int) -> float:
+def finite_hadamard_probability_error_bound(A: int, L: int, h: int) -> Fraction:
     """|Pr(0...0)exact - Pr(0...0)prefix| <= 2*mean phase error."""
-    return min(1.0,2*finite_phase_mean_error_bound(A,L,h))
+    return min(Fraction(1), 2*finite_phase_mean_error_bound(A,L,h))
 
 
 def coarse_instrument_isometry(data: tuple[complex,...], group: int):

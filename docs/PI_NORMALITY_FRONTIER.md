@@ -1,10 +1,10 @@
-# π base-16 normality — Main XXII frontier
+# π base-16 normality — Main XXIII frontier
 
-Maintained 2026-11-09. **π base-16 normality: OPEN. Original-zero hexadecimal parity
-balance: OPEN. Riemann hypothesis: OPEN.** This page replaces the previous entrypoint;
-its [Main XXI version](archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md) and every
-primary dossier remain historical evidence. See the [integration audit](SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md)
-and [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXII.md) for review boundaries.
+Maintained 2026-11-10. **π base-16 normality, original-zero hexadecimal parity
+balance and parity words, and RH are OPEN.** This is the Main XXIII integration
+candidate. See its [audit](SUCC_MAIN_XXIII_INTEGRATION_AUDIT_2026-11-10.md),
+[tool atlas](MAIN_XXIII_TOOL_ATLAS.md), and
+[Main XXII snapshot](archive/PI_NORMALITY_FRONTIER_MAIN_XXII_2026-11-09.md).
 
 ## 1. Authenticated original source
 
@@ -155,15 +155,28 @@ Mellin, q-Gamma, Euler–Mascheroni and 16×16 matrix objects.
 
 ## 8. Next source-selected theorem
 
-Prove, for the **literal original zero seed** and all sufficiently large integer epochs,
-$`u_+(A)-u_-(A)\to0`$, retaining all prime powers, global winding, the original forcing,
-and real-tail boundary payments. A proof needs an input that rejects PPP-08's p-integral
-control, whose contrast is exactly 2. No finite fitted covariance can pay this quantifier.
-This would establish hexadecimal **parity balance only**, strictly weaker than full normality.
+For every fixed odd integer $`k`$, show that the literal zero-seed orbit satisfies
 
-The [next-round protocol](MAIN_XXII_NEXT_ROUND.md) fixes a fresh experiment and the exact
-proof obligation. Other digit characters and future word depths follow only after a
-defensible parity advance. More equivalent Fourier identities do not change this verdict.
+```math
+\frac{1}{A}\sum_{n=A}^{2A-1} e(8k\,16^{n-1}\pi)\longrightarrow 0
+\qquad (A\to\infty,\; A\in\mathbb N).
+```
+
+Put $`y_n=\{8\cdot16^{n-1}\pi\}`$. The limit gives half-turn symmetry
+of each stationary subsequential law of $`y_n`$. This symmetry excludes
+atoms on radix cuts, then flips the first parity while preserving the
+complete future. Thus every fixed length-$`d`$ parity word has limiting
+epoch frequency $`2^{-d}`$. The
+[proof and finite Fejér boundary payment](../research/2026-11-10/main_xxiii/PARITY_BOUNDARY.md)
+give the boundary step and explicit constants.
+
+This route also has a narrower independent goal. Under the #554 prime marginal
+estimate, decay of the two-fiber contrast in §5 gives one-digit parity balance.
+Neither route has its source-selected signed estimate. Any proof must fail
+on PPP-08 and the coherent seed $`-\pi/16`$. Finite-moment and low-residue
+tests alone also admit [positive zero-seed dyadic mutants](../research/2026-11-10/main_xxiii/MELLIN_AUTHENTICATION.md).
+The four-pole support and endpoint cancellation, together with three
+exact Mellin values, exclude those mutants.
 
 ## 9. Causal-weld audit and Cayley source-observer follow-up
 
@@ -212,7 +225,7 @@ satisfies the gate and is not Haar. It is stronger than fair parity words alone;
 a dependent digit countermodel proves the distinction. This is a **conditional
 paper theorem**, and the displayed hypothesis is **OPEN for the original zero
 seed**. It is another sufficient route, not a necessary condition for one-digit
-parity balance or a replacement for the less demanding contrast target in §8.
+parity balance or a replacement for the less demanding contrast target in §5.
 
 The new real half-turn contrast and the prime-conditioned complement in §5 are
 different objects. Their [source map and next obligation](../research/2026-11-09/cayley_source_observer/NEXT.md)
@@ -220,7 +233,32 @@ retain that distinction and the coherent wrong-seed controls. The exact finite
 certificates validate the observer and its budgets; they supply no asymptotic
 signed saving.
 
-## 10. Independent RH program
+## 10. Source-first clocks and reversible readout
+
+The [inverse-beta BBP root](../research/2026-11-10/omega_bbp_operational_completion/INVERSE_BETA_BBP_ROOT.md)
+folds the actual four-pole source, selects the bounded arithmetic solution,
+and intertwines it with a continuous Mellin fixed point. The finite moment
+observer is non-identifying in the unrestricted positive source class.
+The [six-step diamond](../research/2026-11-10/omega_bbp_operational_completion/OMEGA_HAAR_WAVELET.md)
+identifies two exact chronological groupings. Inserting lossy two- and
+three-cell averages creates the noncommuting Haar projections and their
+rank-two oscillator. The inverse-fiber parity character lives in the
+Möbius line bundle. These operations leave the signed zero-seed bound open.
+
+The [quantum dagger model](../research/2026-11-10/omega_bbp_operational_completion/quantum_bridge/README.md)
+supplies finite unitary and phase precision results. A separate
+[reversible BBP circuit](../research/2026-11-10/main_xxiii/REVERSIBLE_BBP_ORACLE.md)
+implements exact finite classical-basis arithmetic, with explicit register
+widths, gate counts and inverse checks. A typed source-to-lambda compiler
+and a scalable quantum phase implementation remain unverified.
+
+## 11. Independent RH program
+
+The [intrinsic arithmetic Hamiltonians](../research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/PROOFS.md)
+give self-adjoint star blocks on the positive-integer carrier. The
+[prime field endpoint audit](../research/2026-11-10/main_xxiii/HAMILTONIAN_ENDPOINT.md)
+addresses operator domains. The Gibbs generator $`H_0\lvert n\rangle=\log(n)\lvert n\rangle`$
+is a different operator. The signed completed Weil identification is open.
 
 [#550](../research/2026-11-08/xi_cayley_prime_pinbed/PROOFS.md) retains the genuine
 Euler/Gamma source, horodisk of convergence and conditional Jensen certificate.

@@ -15,12 +15,12 @@ proof obligations.
 |---|---|
 | Foundations and toolkit | Exact finite models, transport identities, information bounds, counterexamples and scoped kernel-checked lemmas |
 | π base-16 normality | **OPEN** — the original-source signed cancellation estimate is missing |
-| Original-zero hexadecimal parity balance | **OPEN** — even this weaker one-digit target needs a new source-selected estimate |
+| Original-zero hexadecimal parity balance | **OPEN** — fair parity words and even one-digit balance need a source-selected estimate |
 | Riemann hypothesis | **OPEN** — a separate prime–Archimedean positivity program |
 
 Start with the [current mathematical frontier](docs/PI_NORMALITY_FRONTIER.md), or read the
 [foundations](docs/FOUNDATIONS.md) for the general theory. The
-[Main XXII audit](docs/SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md) records this integration's
+[Main XXIII audit](docs/SUCC_MAIN_XXIII_INTEGRATION_AUDIT_2026-11-10.md) records the candidate's
 coverage, qualifications and validation limits.
 
 ## The mathematical idea
@@ -75,6 +75,12 @@ The [source implementation](observational_succ/duck_bbp.py),
 integer carries, old prime powers, the global CRT winding and real boundary costs.
 
 ## Current research frontier
+
+The [Main XXIII tool atlas](docs/MAIN_XXIII_TOOL_ATLAS.md) connects the complete
+BBP carry and CRT state to inverse-beta and Mellin roots, the Ω₄/Ω₅ Haar
+diamond, and reversible arithmetic. It identifies the exact signed estimate
+still needed for hexadecimal parity words. Intrinsic Hamiltonians and
+the Riemann hypothesis occupy a separate downstream track.
 
 **Cayley source observers and semantic repairs** connect the line–circle picture
 to the actual BBP source without changing its seed. The

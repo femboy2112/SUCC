@@ -46,6 +46,10 @@ class TestOmegaQuantum(unittest.TestCase):
                 # Projected output is lossy even though the analyzed detail is not.
                 self.assertGreater(sum(abs(x-y)**2 for x,y in zip(raw,projected)),0)
 
+    def test_zero_group_rejected(self):
+        with self.assertRaises(ValueError):
+            group_butterfly((1j, 2j), 0)
+
     def test_skew_rotation_unitarity_inverse_period(self):
         for n in (0,2,8):
             v=tuple(float(x) for x in source_block(n))
@@ -125,11 +129,17 @@ class TestOmegaQuantum(unittest.TestCase):
                 self.assertLess(observed,completed_phase_tail_bound(L,n))
         for A in (2,4,8,16):
             for h in (1,8,24):
-                self.assertAlmostEqual(finite_phase_mean_error_bound(A,2*A,h),
-                                2*pi*abs(h)*float(completed_phase_tail_bound(2*A,2*A-1)))
+                self.assertEqual(finite_phase_mean_error_bound(A, 2*A, h),
+                                 Fraction(44, 7) * h * completed_phase_tail_bound(2*A, 2*A-1))
                 self.assertLessEqual(finite_hadamard_probability_error_bound(A,2*A,h),1)
                 if A>=8:
                     self.assertLess(finite_hadamard_probability_error_bound(A,2*A,h),.05)
+
+    def test_phase_bound_beyond_float_range(self):
+        mean_bound = finite_phase_mean_error_bound(2, 1000, 1)
+        self.assertGreater(mean_bound, 0)
+        self.assertEqual(float(mean_bound), 0.0)
+        self.assertEqual(finite_hadamard_probability_error_bound(2, 1000, 1), 2 * mean_bound)
 
     def test_ancilla_dilation_restores_all_details(self):
         for n in (0,1,30):
