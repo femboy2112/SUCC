@@ -1,0 +1,66 @@
+{
+  "altered_source": {
+    "clock_range_inclusive": [
+      1,
+      40
+    ],
+    "completion_identity_cases": 176,
+    "passed": true,
+    "prefix_lengths": [
+      1,
+      2,
+      3,
+      7,
+      16
+    ],
+    "source_cases": 200,
+    "universal_claims_proved_by_this_probe": false
+  },
+  "arithmetic": "fractions.Fraction",
+  "compiler_equality_forgery": {
+    "cases": 2,
+    "passed": true,
+    "rejected": {
+      "status_equality_spoof": true,
+      "wrong_denotation_equality_spoof": true
+    },
+    "valid_controls_passed": true
+  },
+  "general_original_zero_contraction_proved": false,
+  "implementation_sha256": {
+    "observational_succ/c_monoid_succ_embedding.py": "ba0c9d8420e8c39c7bc2acc8f6db65d8e68eb3299491e15a77711c185dcc0a04",
+    "observational_succ/duck_bbp.py": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+    "observational_succ/recursive_haar_pinbed.py": "8133c65be02feacebfa6260c0644d03da3e4d80663c607034164759bcbd74b7d",
+    "observational_succ/zero_anchored_lambda.py": "262c1b4b1b3bbc672e72a10742c6d5f4b9547e13f064b14e4c5b573307c3f7cd"
+  },
+  "normality_proved": false,
+  "quantization_and_defect_floor": {
+    "cases": 448,
+    "independent_wasserstein_implementation": false,
+    "initial_phases": [
+      "0",
+      "1/3",
+      "1/17",
+      "7/31",
+      "1/16",
+      "15/16",
+      "137/991"
+    ],
+    "passed": true,
+    "window_range_inclusive": [
+      1,
+      64
+    ]
+  },
+  "rational_seed_shadow": {
+    "certified_phase_windows": 61,
+    "exact_zero_gate_rejected_shadow": true,
+    "horizon": 64,
+    "infinite_statistics_asserted": false,
+    "margin": 3,
+    "passed": true,
+    "prefix_length": 4,
+    "source_terms": 71
+  },
+  "status": "FINITE_ADVERSARIAL_REPLAY_PASSED"
+}
