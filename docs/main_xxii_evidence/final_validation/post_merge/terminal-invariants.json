@@ -1,0 +1,8 @@
+{
+  "main": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "historical_research_refs_preserved": 567,
+  "frozen_formal_provenance_sha256": "421e59adbfafe8323bb365e14bbfd77fd8d396e883d691196ed4a49f93b1a3f7",
+  "original_README_archive_blob": "96e71e9df1eb92d64c5d99b8a68520a3c4853094",
+  "user_work": "?? .claude/",
+  "corrected_probe_issue": "Initial terminal checker treated the shortened symbolic origin/HEAD name origin as a branch and raised KeyError refs/heads/origin. Corrected using git symbolic-ref; no ref was missing or deleted."
+}
