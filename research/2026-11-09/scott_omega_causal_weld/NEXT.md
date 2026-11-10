@@ -1,0 +1,21 @@
+# Next proof obligations: the strict build sequence
+
+**Do not replace this with a plan-only report. Deliver code/proofs/counterexamples/reproducible receipts on separate branches.**
+
+1. **Actual sound model / compiler (P0).** Declare a concrete λ calculus with products, application and βη; give a genuine C-monoid with checkable equations. Embed original SUCC action and preserve the marked zero-state section. Decide whether the carrier model is an `ω`-algebra/domain rather than Set (Cantor obstruction). For finite-state prototypes classify them explicitly as proxies. Build an explicit counterexample if source faithfulness or observation reflects no identities.
+2. **Computational trace (P0).** Use Ωₖ syntax to index *finite trace steps*; beta-reductions of raw Ω do not terminate. Produce a separate strongly normalizing finite compiled fragment and an infinitary/guarded completion, with simulation and reflection theorems; show when conventional Scott bottom loses distinctions.
+3. **Causal categorical maps (P0).** Reuse the existing `ObservationPathCategory` and `FiniteFunctor`. Map authenticated `F_(n,k)` and `I_(n,L)` into it; test vertical and horizontal naturality, source labels, carries, missing seed, and counterfactual wrong seeds. Add exact source bridge to the canonical `duck_bbp` rather than merely duplicate its poles.
+4. **Source-typed completion / Yoneda (P1).** Formalize `K(X)`, directed compact information and quotient direct-image, including what happens to the deck `Z` channel. Build a double-clock (`n,L`) diagram whose schedules are cofinal, with uniform error budgets for selected finite Fourier probe families. For true all-frequency claims require a nontrivial uniform estimate.
+5. **Higher-dimensional pinbeds (P1).** Give n-axis product, fiber product gluing, restriction/evaluation, CRT period test, orientation, holonomy and 2-/3-cell coherence. Attach to **actual** source maps, not a synthetic cartoon only. Reject equal-period diagonal alias, period-16 and de Bruijn(16,2) controls.
+6. **Source-selected arithmetic (P1).** Identify exact signed phase or future conditioned Haar current whose decay would imply original-zero parity or full normality. Retain all-powers CRT winding, Green completion, full complementary real slip, moving boundaries and endpoint costs. Reuse #544, #554, #565, #571, #572, #574. Prove a new all-epoch nonzero bound or present a hostile counterexample; do not claim success from equivalence/representation alone.
+7. **Analytic and RH sidecar (P2).** Try Euler–Mascheroni/Gamma/q-Gamma, Laplace/Abel, Pascal and prime-Frobenius only through *proven source-intertwining maps*. Keep completed Weil positivity a separately typed RH claim.
+8. **Formal kernel (P2).** Lean-check finite source square + positive polynomial bound + a categorical identity or counterexample. Never label paper algebra as Lean-certified.
+
+## Controls and acceptance criteria
+
+- **Positive:** canonical `U_0=0`, four true poles, exact rational horizons L, selected fixed n, correct q-lift and deck channel.
+- **Negative:** `s=1/16` alias after n≥1; Main XXII coherent rational p-integral wrong seeds; nonnormal fixed/periodic/de Bruijn; equal-period CRT diagonal alias; synthetic holonomy that disappears when source bind removed.
+- **Null:** h=0 Weyl phase; identity zero source action; stationary Haar law vs separated initial-point law; constant Ω₂.
+- **Mutation:** swap pole signs; replace seed by −π/16 (not p-integral); omit global CRT winding; conflate parity Walsh h=8 with real circle e(8x); change lower limit; flip orientation; invent β-normal forms for raw Ω; turn scalar energy into signed decay.
+- **Holdouts:** reserve source epochs and independent algorithms *before* fitting thresholds. Register expected outcome and false-positive controls before running numerical probe.
+- **Acceptance:** exact commit hashes, file provenance, build instructions, test commands/exit codes, independent oracles, theorem quantifiers and unfinished gates. Full native repository suite, provenance scripts, observer and ordinal probes and hosted CI must be checked on the exact final head. Never merge to main without explicit authorization for the relevant round.

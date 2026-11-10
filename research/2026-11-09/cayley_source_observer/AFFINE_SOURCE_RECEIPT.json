@@ -1,0 +1,37 @@
+{
+  "braid_cases": 20,
+  "c_monoid_compiler_proved": false,
+  "clock_forgetting_output_phases": [
+    "0",
+    "106/819"
+  ],
+  "counts": {
+    "clocked_circle_descent": 180,
+    "compositions": 1620,
+    "finite_completion": 180,
+    "seed_preservation": 180,
+    "serial_source": 180,
+    "source_gauge": 180
+  },
+  "false_commutation_cases": 20,
+  "false_fixed_iterate_cases": 4,
+  "grid": {
+    "a_c": "1..3",
+    "b_d": "0..2",
+    "braid_p": "2..5",
+    "n": "0..4",
+    "u": [
+      "0",
+      "1/7",
+      "-3/2",
+      "7"
+    ]
+  },
+  "preregistered_parity_protocol": false,
+  "selected_signed_cancellation_proved": false,
+  "source_hashes": {
+    "observational_succ/duck_bbp.py": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+    "research/2026-11-09/cayley_source_observer/affine_source_probe.py": "eee47621ec4442dd897b45d7ddee88a684ddee30bedab4dbc9ec31449355c7cb"
+  },
+  "status": "PASS_EXACT_FINITE"
+}

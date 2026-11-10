@@ -29,6 +29,15 @@ Relation-label discipline: `reduces_to`/`depends_on` = proved implication with s
 
 [Current frontier](../PI_NORMALITY_FRONTIER.md) · [integration audit](../SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md) · [scoped claims](../CLAIM_SUPPLEMENT_MAIN_XXII.md) · [typed Gamma observables](../MAIN_XXII_GAMMA_OBSERVABLES.md). Original-zero parity contrast is OPEN, as are full pi normality and RH. The research-local dossiers remain discoverable through the history index; catalog registration is not proof authority.
 
+**Causal-weld / Cayley follow-up:** [entrypoint](../../research/2026-11-09/cayley_source_observer/README.md),
+[local claims](../../research/2026-11-09/cayley_source_observer/CLAIM_LEDGER.md), and
+[errata](../../research/2026-11-09/cayley_source_observer/ERRATA.md).
+Exact projective observation, coupled source clocks, a common-horizon mean
+certificate and conditional parity-future fairness are separated from the
+still-open selected signed estimate. The causal-weld semantic repairs do not
+certify a full C-monoid or a faithful BBP compiler. Local CAY/CBO/CS labels do
+not mint historical theorem namespaces.
+
 ## Operation Main XIX — angular / Laurent-clock frontier (2026-11-01)
 
 [Integration index](../../research/2026-11-01/main_xix/MAIN_XIX_CLAIM_REGISTRY.md) · [architecture](../../research/2026-11-01/main_xix/MAIN_XIX_ARCHITECTURE.md) · [provenance DAG](../../research/2026-11-01/main_xix/MAIN_XIX_PROVENANCE_DAG.md) · [validation](../../research/2026-11-01/main_xix/MAIN_XIX_VALIDATION.md) · [handoff](../../research/2026-11-01/main_xix/MAIN_XIX_HANDOFF.md). Integrated three ancestry-minimal leaves (PRs #437, #452, #455) subsuming #437–#455; firewall intact, nothing promoted. The central result is the **all-order Laurent-clock sharpness theorem**: for the same four-pole forcing but the distinct real counterseed `s_*=−π/16` (`U_n(s_*)=−T_n`, completed point 0, nonnormal, not in the original rational-state register), every fixed `d≥1`, `h≠0`, `d+1<c<d+2`, `K_N=⌊c·log_16 N⌋` gives `L^C→1`, `L^[d]→2(d+1)/c−((d+1)/c)²`, defect `(1−(d+1)/c)²>0` — recovering Main XVIII's `d=1` barrier `1/25` and extending it to every order. This is a **seed-uniform transport-precision barrier (a negative result)**, not a source-selected impossibility theorem and **not** progress on `o(N)`. The carrier-relative entropy ⇔ normality statement is a reformulation; the resolution ceiling `D_{N,k}≥log(M/N)` refutes only the naive one-resolution entropy→Fourier certificate. Research-dir prefixes (FP/AC/CH/CSG/CRE/LCS/…) stay local by design and mint no registry namespace. **The selected signed estimate, π base-16/base-3 normality, and RH remain OPEN.**

@@ -76,6 +76,14 @@ integer carries, old prime powers, the global CRT winding and real boundary cost
 
 ## Current research frontier
 
+**Cayley source observers and semantic repairs** connect the line–circle picture
+to the actual BBP source without changing its seed. The
+[research follow-up](research/2026-11-09/cayley_source_observer/README.md)
+adds exact projective dynamics, source-clock compatibility, boundary-aware parity
+certificates, and a conditional binary-future criterion strictly weaker than full
+normality. It also corrects the lambda, omega, cofinality and asymptotic claims
+in the causal-weld draft. The original-zero signed estimate remains **OPEN**.
+
 **Young Nastyman's Haar measure** asks how uniformity of a complete observed law can be
 certified. The recursive sixteen-child construction retains the entire future tail;
 [its sharp transport inequality](research/2026-11-09/recursive_haar_pinbed/THEOREMS.md)
