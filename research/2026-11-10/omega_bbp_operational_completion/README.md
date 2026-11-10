@@ -12,7 +12,7 @@ This note isolates two **proved** generic arithmetic/computation facts, their **
 
 1. **Arithmetic:** `P_∞ = Σ_(j≥1)16^{-j}r(j) = π/16` is a limit of rational partial sums. Its equality to pi is the authenticated classical BBP identity.
 2. **Computational:** a lazy stream may have a head constructor and all finite observations while recursive unfolding never ends. In an infinitary calculus its Böhm/Levy–Longo tree can represent an infinite result, provided the reduction semantics is explicitly chosen.
-3. **Unguarded raw Ω:** set `ω_k=λx.x x ... x` (k left-associated copies), `Ω_k=ω_k ω_k`, k≥2. The unique head redex regenerates a head redex after every contraction; for `k=3`, `E_3(m)→β E_3(m+1)`. There is no head normal form. The syntax carries an infinite *reduction path*, but its ordinary Böhm-tree observation is bottom, not the BBP digit stream. This is [the verified scope of the existing omega interpreter](../scott_omega_causal_weld/OMEGA_INTERPRETER.md), not a source compiler.
+3. **Unguarded raw Ω:** set `ω_k=λx.x x ... x` (k left-associated copies), `Ω_k=ω_k ω_k`, k≥2. The unique head redex regenerates a head redex after every contraction; for `k=3`, `E_3(m)→β E_3(m+1)`. There is no head normal form. The syntax carries an infinite *reduction path*, but its ordinary Böhm-tree observation is bottom, not the BBP digit stream. This is [the verified scope of the existing omega interpreter](../../2026-11-09/scott_omega_causal_weld/OMEGA_INTERPRETER.md), not a source compiler.
 
 A pure beta-normal form is defined by the absence of a subterm `(λx.M)N`. The statement “the infinite BBP has no beta normal form” requires a chosen term encoding, observer, and reduction rules. In particular, **head productivity**, **weak-head normalization**, **full beta normalization**, **infinitary normal forms**, and **Scott-domain convergence** are distinct predicates.
 
@@ -60,7 +60,7 @@ Y_n=16^n(s+\pi/16).
 ```
 The forcing is an **exact arithmetic transfer/coboundary** between the computable prefix and its unresolved future. The square is source-labelled and seed-marked. The same *shape* exists for other bounded forcing sequences, so the commutative square alone cannot exclude a biased orbit.
 
-**Finite scope:** fix `L`, set `P_L=Σ_(j=1)^L16^{-j}r(j)`, `T_n^{(L)}=Σ_(j=n+1)^L16^{n-j}r(j)`. For all `0≤n≤L`, `Y_n^{(L)}=U_n+T_n^{(L)}=16^n(s+P_L)`. These are **exact rational** equalities. Scott/metric completion takes the real limit at fixed `n`; a simultaneous growing-frequency or growing-digit-index assertion requires the paid source-clock coupling already established in [CAYLEY_PROOFS](../cayley_source_observer/CAYLEY_PROOFS.md).
+**Finite scope:** fix `L`, set `P_L=Σ_(j=1)^L16^{-j}r(j)`, `T_n^{(L)}=Σ_(j=n+1)^L16^{n-j}r(j)`. For all `0≤n≤L`, `Y_n^{(L)}=U_n+T_n^{(L)}=16^n(s+P_L)`. These are **exact rational** equalities. Scott/metric completion takes the real limit at fixed `n`; a simultaneous growing-frequency or growing-digit-index assertion requires the paid source-clock coupling already established in [CAYLEY_PROOFS](../../2026-11-09/cayley_source_observer/CAYLEY_PROOFS.md).
 
 ## 4. Proved: the integer-carry observer contributes a genuine cocycle
 
