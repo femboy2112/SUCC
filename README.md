@@ -150,6 +150,7 @@ analytic and kernel proof authority are recorded separately.
 | [Claim ledger](docs/CLAIM_LEDGER.md) · [Main XXII supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXII.md) | Claim status and supporting evidence |
 | [Roadmap](docs/ROADMAP.md) | Longer-term research directions |
 | [Research history](docs/RESEARCH_HISTORY.md) | Archived README, integration history and primary dossiers |
+| [Intellectual provenance](docs/idea_provenance/README.md) | Original intuitions → steelmans → exact results → counterexamples, including the Aphex equation story |
 | [Contribution guide](CONTRIBUTING.md) | Reproduction, attribution and review expectations |
 
 ## Research honesty
