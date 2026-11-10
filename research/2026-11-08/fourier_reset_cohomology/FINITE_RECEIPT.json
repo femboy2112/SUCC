@@ -1,0 +1,2617 @@
+{
+  "checkpoints": {
+    "1024": {
+      "1": {
+        "E": {
+          "denominator": 16384,
+          "numerator": 211
+        },
+        "renormalized": {
+          "denominator": 240,
+          "numerator": 211
+        },
+        "sectors": {
+          "16": {
+            "denominator": 16384,
+            "numerator": 105
+          },
+          "2": {
+            "denominator": 262144,
+            "numerator": 81
+          },
+          "4": {
+            "denominator": 262144,
+            "numerator": 37
+          },
+          "8": {
+            "denominator": 131072,
+            "numerator": 789
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 64,
+          "numerator": 15
+        },
+        "renormalized": {
+          "denominator": 17,
+          "numerator": 16
+        },
+        "sectors": {
+          "16": {
+            "denominator": 2048,
+            "numerator": 231
+          },
+          "2": {
+            "denominator": 8192,
+            "numerator": 111
+          },
+          "4": {
+            "denominator": 16384,
+            "numerator": 423
+          },
+          "8": {
+            "denominator": 1024,
+            "numerator": 71
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 32,
+          "numerator": 129
+        },
+        "renormalized": {
+          "denominator": 1365,
+          "numerator": 1376
+        },
+        "sectors": {
+          "16": {
+            "denominator": 256,
+            "numerator": 509
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 259
+          },
+          "4": {
+            "denominator": 1024,
+            "numerator": 553
+          },
+          "8": {
+            "denominator": 64,
+            "numerator": 65
+          }
+        }
+      }
+    },
+    "128": {
+      "1": {
+        "E": {
+          "denominator": 512,
+          "numerator": 47
+        },
+        "renormalized": {
+          "denominator": 60,
+          "numerator": 47
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1024,
+            "numerator": 51
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 9
+          },
+          "4": {
+            "denominator": 2048,
+            "numerator": 49
+          },
+          "8": {
+            "denominator": 2048,
+            "numerator": 19
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 1,
+          "numerator": 2
+        },
+        "renormalized": {
+          "denominator": 255,
+          "numerator": 256
+        },
+        "sectors": {
+          "16": {
+            "denominator": 64,
+            "numerator": 65
+          },
+          "2": {
+            "denominator": 512,
+            "numerator": 53
+          },
+          "4": {
+            "denominator": 32,
+            "numerator": 9
+          },
+          "8": {
+            "denominator": 128,
+            "numerator": 65
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 2,
+          "numerator": 63
+        },
+        "renormalized": {
+          "denominator": 65,
+          "numerator": 64
+        },
+        "sectors": {
+          "16": {
+            "denominator": 4,
+            "numerator": 65
+          },
+          "2": {
+            "denominator": 16,
+            "numerator": 31
+          },
+          "4": {
+            "denominator": 16,
+            "numerator": 61
+          },
+          "8": {
+            "denominator": 2,
+            "numerator": 15
+          }
+        }
+      }
+    },
+    "16": {
+      "1": {
+        "E": {
+          "denominator": 4,
+          "numerator": 5
+        },
+        "renormalized": {
+          "denominator": 3,
+          "numerator": 4
+        },
+        "sectors": {
+          "16": {
+            "denominator": 16,
+            "numerator": 11
+          },
+          "2": {
+            "denominator": 16,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 16,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 16,
+            "numerator": 7
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 1,
+          "numerator": 17
+        },
+        "renormalized": {
+          "denominator": 15,
+          "numerator": 16
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "2": {
+            "denominator": 2,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 4,
+            "numerator": 9
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 5
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 1,
+          "numerator": 255
+        },
+        "renormalized": {
+          "denominator": 273,
+          "numerator": 272
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 128
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 14
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 64
+          }
+        }
+      }
+    },
+    "16384": {
+      "1": {
+        "E": {
+          "denominator": 8388608,
+          "numerator": 5477
+        },
+        "renormalized": {
+          "denominator": 7680,
+          "numerator": 5477
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1048576,
+            "numerator": 341
+          },
+          "2": {
+            "denominator": 1048576,
+            "numerator": 9
+          },
+          "4": {
+            "denominator": 33554432,
+            "numerator": 2993
+          },
+          "8": {
+            "denominator": 33554432,
+            "numerator": 7715
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 524288,
+          "numerator": 8009
+        },
+        "renormalized": {
+          "denominator": 8160,
+          "numerator": 8009
+        },
+        "sectors": {
+          "16": {
+            "denominator": 524288,
+            "numerator": 3259
+          },
+          "2": {
+            "denominator": 8388608,
+            "numerator": 9507
+          },
+          "4": {
+            "denominator": 65536,
+            "numerator": 177
+          },
+          "8": {
+            "denominator": 1048576,
+            "numerator": 4795
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 32768,
+          "numerator": 8013
+        },
+        "renormalized": {
+          "denominator": 2730,
+          "numerator": 2671
+        },
+        "sectors": {
+          "16": {
+            "denominator": 65536,
+            "numerator": 7927
+          },
+          "2": {
+            "denominator": 524288,
+            "numerator": 7401
+          },
+          "4": {
+            "denominator": 262144,
+            "numerator": 8941
+          },
+          "8": {
+            "denominator": 131072,
+            "numerator": 7875
+          }
+        }
+      }
+    },
+    "2048": {
+      "1": {
+        "E": {
+          "denominator": 131072,
+          "numerator": 593
+        },
+        "renormalized": {
+          "denominator": 960,
+          "numerator": 593
+        },
+        "sectors": {
+          "16": {
+            "denominator": 262144,
+            "numerator": 719
+          },
+          "2": {
+            "denominator": 1048576,
+            "numerator": 25
+          },
+          "4": {
+            "denominator": 1048576,
+            "numerator": 37
+          },
+          "8": {
+            "denominator": 524288,
+            "numerator": 903
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 4096,
+          "numerator": 479
+        },
+        "renormalized": {
+          "denominator": 510,
+          "numerator": 479
+        },
+        "sectors": {
+          "16": {
+            "denominator": 16384,
+            "numerator": 975
+          },
+          "2": {
+            "denominator": 131072,
+            "numerator": 1101
+          },
+          "4": {
+            "denominator": 65536,
+            "numerator": 811
+          },
+          "8": {
+            "denominator": 32768,
+            "numerator": 1053
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 256,
+          "numerator": 511
+        },
+        "renormalized": {
+          "denominator": 585,
+          "numerator": 584
+        },
+        "sectors": {
+          "16": {
+            "denominator": 512,
+            "numerator": 511
+          },
+          "2": {
+            "denominator": 2048,
+            "numerator": 263
+          },
+          "4": {
+            "denominator": 4096,
+            "numerator": 1009
+          },
+          "8": {
+            "denominator": 2048,
+            "numerator": 1037
+          }
+        }
+      }
+    },
+    "256": {
+      "1": {
+        "E": {
+          "denominator": 2048,
+          "numerator": 69
+        },
+        "renormalized": {
+          "denominator": 40,
+          "numerator": 23
+        },
+        "sectors": {
+          "16": {
+            "denominator": 4096,
+            "numerator": 49
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 2048,
+            "numerator": 5
+          },
+          "8": {
+            "denominator": 4096,
+            "numerator": 75
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 128,
+          "numerator": 123
+        },
+        "renormalized": {
+          "denominator": 85,
+          "numerator": 82
+        },
+        "sectors": {
+          "16": {
+            "denominator": 32,
+            "numerator": 15
+          },
+          "2": {
+            "denominator": 2048,
+            "numerator": 79
+          },
+          "4": {
+            "denominator": 64,
+            "numerator": 9
+          },
+          "8": {
+            "denominator": 512,
+            "numerator": 143
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 4,
+          "numerator": 65
+        },
+        "renormalized": {
+          "denominator": 63,
+          "numerator": 64
+        },
+        "sectors": {
+          "16": {
+            "denominator": 8,
+            "numerator": 67
+          },
+          "2": {
+            "denominator": 128,
+            "numerator": 121
+          },
+          "4": {
+            "denominator": 16,
+            "numerator": 31
+          },
+          "8": {
+            "denominator": 32,
+            "numerator": 129
+          }
+        }
+      }
+    },
+    "32": {
+      "1": {
+        "E": {
+          "denominator": 32,
+          "numerator": 21
+        },
+        "renormalized": {
+          "denominator": 5,
+          "numerator": 7
+        },
+        "sectors": {
+          "16": {
+            "denominator": 32,
+            "numerator": 13
+          },
+          "2": {
+            "denominator": 64,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 16,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 64,
+            "numerator": 11
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 1,
+          "numerator": 8
+        },
+        "renormalized": {
+          "denominator": 255,
+          "numerator": 256
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "2": {
+            "denominator": 32,
+            "numerator": 11
+          },
+          "4": {
+            "denominator": 4,
+            "numerator": 3
+          },
+          "8": {
+            "denominator": 4,
+            "numerator": 9
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 1,
+          "numerator": 127
+        },
+        "renormalized": {
+          "denominator": 4095,
+          "numerator": 4064
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 64
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 32
+          }
+        }
+      }
+    },
+    "4096": {
+      "1": {
+        "E": {
+          "denominator": 32768,
+          "numerator": 105
+        },
+        "renormalized": {
+          "denominator": 8,
+          "numerator": 7
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1048576,
+            "numerator": 1565
+          },
+          "2": {
+            "denominator": 4194304,
+            "numerator": 9
+          },
+          "4": {
+            "denominator": 4194304,
+            "numerator": 2113
+          },
+          "8": {
+            "denominator": 2097152,
+            "numerator": 2529
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 16384,
+          "numerator": 935
+        },
+        "renormalized": {
+          "denominator": 12,
+          "numerator": 11
+        },
+        "sectors": {
+          "16": {
+            "denominator": 8192,
+            "numerator": 239
+          },
+          "2": {
+            "denominator": 262144,
+            "numerator": 1437
+          },
+          "4": {
+            "denominator": 262144,
+            "numerator": 1523
+          },
+          "8": {
+            "denominator": 32768,
+            "numerator": 439
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 1024,
+          "numerator": 1013
+        },
+        "renormalized": {
+          "denominator": 4095,
+          "numerator": 4052
+        },
+        "sectors": {
+          "16": {
+            "denominator": 2048,
+            "numerator": 995
+          },
+          "2": {
+            "denominator": 8192,
+            "numerator": 549
+          },
+          "4": {
+            "denominator": 16384,
+            "numerator": 2115
+          },
+          "8": {
+            "denominator": 4096,
+            "numerator": 1025
+          }
+        }
+      }
+    },
+    "512": {
+      "1": {
+        "E": {
+          "denominator": 8192,
+          "numerator": 129
+        },
+        "renormalized": {
+          "denominator": 80,
+          "numerator": 43
+        },
+        "sectors": {
+          "16": {
+            "denominator": 16384,
+            "numerator": 131
+          },
+          "2": {
+            "denominator": 65536,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 65536,
+            "numerator": 221
+          },
+          "8": {
+            "denominator": 32768,
+            "numerator": 143
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 64,
+          "numerator": 27
+        },
+        "renormalized": {
+          "denominator": 85,
+          "numerator": 72
+        },
+        "sectors": {
+          "16": {
+            "denominator": 64,
+            "numerator": 13
+          },
+          "2": {
+            "denominator": 8192,
+            "numerator": 157
+          },
+          "4": {
+            "denominator": 4096,
+            "numerator": 235
+          },
+          "8": {
+            "denominator": 2048,
+            "numerator": 259
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 32,
+          "numerator": 259
+        },
+        "renormalized": {
+          "denominator": 585,
+          "numerator": 592
+        },
+        "sectors": {
+          "16": {
+            "denominator": 32,
+            "numerator": 133
+          },
+          "2": {
+            "denominator": 128,
+            "numerator": 63
+          },
+          "4": {
+            "denominator": 16,
+            "numerator": 17
+          },
+          "8": {
+            "denominator": 128,
+            "numerator": 251
+          }
+        }
+      }
+    },
+    "64": {
+      "1": {
+        "E": {
+          "denominator": 128,
+          "numerator": 49
+        },
+        "renormalized": {
+          "denominator": 30,
+          "numerator": 49
+        },
+        "sectors": {
+          "16": {
+            "denominator": 256,
+            "numerator": 49
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 49
+          },
+          "4": {
+            "denominator": 1024,
+            "numerator": 13
+          },
+          "8": {
+            "denominator": 512,
+            "numerator": 67
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 8,
+          "numerator": 33
+        },
+        "renormalized": {
+          "denominator": 85,
+          "numerator": 88
+        },
+        "sectors": {
+          "16": {
+            "denominator": 8,
+            "numerator": 17
+          },
+          "2": {
+            "denominator": 128,
+            "numerator": 31
+          },
+          "4": {
+            "denominator": 2,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 8,
+            "numerator": 7
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 1,
+          "numerator": 63
+        },
+        "renormalized": {
+          "denominator": 65,
+          "numerator": 64
+        },
+        "sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "2": {
+            "denominator": 8,
+            "numerator": 33
+          },
+          "4": {
+            "denominator": 4,
+            "numerator": 33
+          },
+          "8": {
+            "denominator": 2,
+            "numerator": 29
+          }
+        }
+      }
+    },
+    "8192": {
+      "1": {
+        "E": {
+          "denominator": 1048576,
+          "numerator": 1611
+        },
+        "renormalized": {
+          "denominator": 640,
+          "numerator": 537
+        },
+        "sectors": {
+          "16": {
+            "denominator": 2097152,
+            "numerator": 1235
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "4": {
+            "denominator": 1048576,
+            "numerator": 613
+          },
+          "8": {
+            "denominator": 2097152,
+            "numerator": 761
+          }
+        }
+      },
+      "2": {
+        "E": {
+          "denominator": 16384,
+          "numerator": 497
+        },
+        "renormalized": {
+          "denominator": 510,
+          "numerator": 497
+        },
+        "sectors": {
+          "16": {
+            "denominator": 131072,
+            "numerator": 1799
+          },
+          "2": {
+            "denominator": 1048576,
+            "numerator": 2343
+          },
+          "4": {
+            "denominator": 524288,
+            "numerator": 2175
+          },
+          "8": {
+            "denominator": 131072,
+            "numerator": 1139
+          }
+        }
+      },
+      "3": {
+        "E": {
+          "denominator": 8192,
+          "numerator": 4067
+        },
+        "renormalized": {
+          "denominator": 585,
+          "numerator": 581
+        },
+        "sectors": {
+          "16": {
+            "denominator": 16384,
+            "numerator": 4083
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 29
+          },
+          "4": {
+            "denominator": 32768,
+            "numerator": 2201
+          },
+          "8": {
+            "denominator": 32768,
+            "numerator": 3979
+          }
+        }
+      }
+    }
+  },
+  "controls": {
+    "coherent_constant": {
+      "1": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 15
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 15
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 2048,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 16384,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 8192,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 4096,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 15,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 15
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 4
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 16384
+        }
+      },
+      "2": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 255
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 255
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 128,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 512,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 256,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 240,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 240
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 128
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 16
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 64
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 16384
+        }
+      },
+      "3": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 4095
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 4095
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 8,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 64,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 32,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 16,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 3840,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 3840
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 2048
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 256
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 512
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 1024
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 16384
+        }
+      }
+    },
+    "repeated_16": {
+      "1": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 15
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 2048,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 16384,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 8192,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 4096,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 15,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "2": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 15
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 255
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 128,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 512,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 256,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 240,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 15
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 4
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 17,
+          "numerator": 16384
+        }
+      },
+      "3": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 255
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 4095
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 8,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 64,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 32,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 16,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 3840,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 240
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 128
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 16
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 64
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 273,
+          "numerator": 278528
+        }
+      }
+    },
+    "repeated_de_bruijn_3": {
+      "1": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 15
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 2048,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 16384,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 8192,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 4096,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 15,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "2": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 255
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 128,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 1024,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 512,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 256,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 240,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "3": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 4095
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 8,
+            "numerator": 1
+          },
+          "2": {
+            "denominator": 64,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 32,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 16,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 3840,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "4": {
+        "energy": {
+          "denominator": 1,
+          "numerator": 15
+        },
+        "iid_reference_energy": {
+          "denominator": 16384,
+          "numerator": 65535
+        },
+        "iid_reference_new_sector": {
+          "16": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "2": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 2,
+            "numerator": 1
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 1
+          }
+        },
+        "independent_zero_mass_cycle_coordinates": 61440,
+        "new_energy": {
+          "denominator": 1,
+          "numerator": 15
+        },
+        "primitive_sectors": {
+          "16": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "2": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "4": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "8": {
+            "denominator": 1,
+            "numerator": 4
+          }
+        },
+        "renormalized_energy": {
+          "denominator": 4369,
+          "numerator": 16384
+        }
+      }
+    }
+  },
+  "exact_iid_reference_16": {
+    "denominator": 562949953421312,
+    "numerator": 638512875
+  },
+  "exact_reset_walk": {
+    "exact_uniform_histogram": [],
+    "final_balances": {
+      "16": [
+        7,
+        44,
+        17,
+        11,
+        -64,
+        36,
+        -38,
+        -41
+      ],
+      "2": [
+        -48
+      ],
+      "4": [
+        -94,
+        -56
+      ],
+      "8": [
+        65,
+        60,
+        -57,
+        66
+      ]
+    },
+    "final_counts": [
+      1029,
+      1057,
+      1027,
+      1056,
+      961,
+      1023,
+      1028,
+      997,
+      1022,
+      1013,
+      1010,
+      1045,
+      1025,
+      987,
+      1066,
+      1038
+    ],
+    "minimal_E1_after_16": {
+      "at": 13373,
+      "energy": {
+        "denominator": 178837129,
+        "numerator": 86919
+      }
+    },
+    "prefix_length": 16384,
+    "spectral_zeros": {
+      "16": [],
+      "2": [
+        4,
+        20,
+        146,
+        152,
+        154,
+        502,
+        504,
+        506,
+        508,
+        510,
+        660,
+        728,
+        1350,
+        1368,
+        1394,
+        1454,
+        1462,
+        1464,
+        1474,
+        1476,
+        1480,
+        1482,
+        1690,
+        1692,
+        1694,
+        1696,
+        1764,
+        1770,
+        1772,
+        1776,
+        1778,
+        1788,
+        1792,
+        1794,
+        1798,
+        1800,
+        1802,
+        1804,
+        1808,
+        1810,
+        1814,
+        1822,
+        1824,
+        1828,
+        1846,
+        1848,
+        1862,
+        1926,
+        1938,
+        1944,
+        1946,
+        1948,
+        2420,
+        2422,
+        2450,
+        2460,
+        2470,
+        2472,
+        2480,
+        2482,
+        2484,
+        2490,
+        2492,
+        2578,
+        2666,
+        2674,
+        2676,
+        2678,
+        2686,
+        2688,
+        2690,
+        2694,
+        2696,
+        2698,
+        2700,
+        2724,
+        2726,
+        2728,
+        2730,
+        2756,
+        2758,
+        2760,
+        2762,
+        2764,
+        2766,
+        2768,
+        2770,
+        2772,
+        4110,
+        4112,
+        4114,
+        4148,
+        4310,
+        4320,
+        4322,
+        4352,
+        4354,
+        4356,
+        4358,
+        4360,
+        4366,
+        4372,
+        4374,
+        4512,
+        4814,
+        4816,
+        4822,
+        4942,
+        4948,
+        4950,
+        4952,
+        5278,
+        5280,
+        5284,
+        5286,
+        5288,
+        5500,
+        5504,
+        5506,
+        5512,
+        5532,
+        5726,
+        5742,
+        7008,
+        7010,
+        7012,
+        7014,
+        7030,
+        7034,
+        7038,
+        7040,
+        7042,
+        7046,
+        7048,
+        7056,
+        7058,
+        7062,
+        7072,
+        7138,
+        7140,
+        7146,
+        7150,
+        7654,
+        7758,
+        7826,
+        7860,
+        8096,
+        8190,
+        8192,
+        8202,
+        8206,
+        14992,
+        15478,
+        15484,
+        15490,
+        15492,
+        15494
+      ],
+      "4": [
+        2,
+        24,
+        1132,
+        1134,
+        1148
+      ],
+      "8": []
+    }
+  },
+  "exact_word_energy_zero_times": {
+    "1": [],
+    "2": [],
+    "3": []
+  },
+  "input": {
+    "bytes_sha256": "4c00dfdde55b749bdfb8e219df8116314111566f1c9711c7ee062d345d3321e1",
+    "digits": 16384,
+    "file": "/mnt/data/succ_reset_fourier/research/2026-11-08/zero_origin_spectral_flux/CERTIFIED_HEX_16384.txt",
+    "source_branch": "research/zero-origin-spectral-flux-2026-11-08"
+  },
+  "matched_histogram_shuffles": [
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 65536,
+        "numerator": 927
+      },
+      "E3": {
+        "denominator": 16384,
+        "numerator": 4093
+      },
+      "index": 0,
+      "returns": {
+        "16": 0,
+        "2": 204,
+        "4": 2,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 103776,
+            "numerator": -6937
+          },
+          "samples": 6486
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 262144,
+        "numerator": 3537
+      },
+      "E3": {
+        "denominator": 4096,
+        "numerator": 1011
+      },
+      "index": 1,
+      "returns": {
+        "16": 0,
+        "2": 60,
+        "4": 9,
+        "8": 2
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 3172,
+            "numerator": -1997
+          },
+          "samples": 793
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 524288,
+        "numerator": 8059
+      },
+      "E3": {
+        "denominator": 8192,
+        "numerator": 2039
+      },
+      "index": 2,
+      "returns": {
+        "16": 0,
+        "2": 312,
+        "4": 5,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 15712,
+            "numerator": -10491
+          },
+          "samples": 1964
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 262144,
+        "numerator": 4013
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 8399
+      },
+      "index": 3,
+      "returns": {
+        "16": 0,
+        "2": 123,
+        "4": 6,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 75504,
+            "numerator": -35383
+          },
+          "samples": 4719
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 524288,
+        "numerator": 8111
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 8189
+      },
+      "index": 4,
+      "returns": {
+        "16": 0,
+        "2": 229,
+        "4": 3,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 44888,
+            "numerator": -2355
+          },
+          "samples": 11222
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 32768,
+        "numerator": 397
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 8097
+      },
+      "index": 5,
+      "returns": {
+        "16": 0,
+        "2": 25,
+        "4": 1,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 11272,
+            "numerator": -4635
+          },
+          "samples": 2818
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 524288,
+        "numerator": 8103
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 8035
+      },
+      "index": 6,
+      "returns": {
+        "16": 0,
+        "2": 100,
+        "4": 8,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 11275,
+            "numerator": -453
+          },
+          "samples": 11275
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 524288,
+        "numerator": 7039
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 7721
+      },
+      "index": 7,
+      "returns": {
+        "16": 0,
+        "2": 50,
+        "4": 3,
+        "8": 5
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 134192,
+            "numerator": -13421
+          },
+          "samples": 8387
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 262144,
+        "numerator": 4177
+      },
+      "E3": {
+        "denominator": 16384,
+        "numerator": 4077
+      },
+      "index": 8,
+      "returns": {
+        "16": 0,
+        "2": 114,
+        "4": 1,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 2452,
+            "numerator": -1289
+          },
+          "samples": 613
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 262144,
+        "numerator": 4037
+      },
+      "E3": {
+        "denominator": 16384,
+        "numerator": 4185
+      },
+      "index": 9,
+      "returns": {
+        "16": 0,
+        "2": 243,
+        "4": 0,
+        "8": 2
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 32544,
+            "numerator": -14443
+          },
+          "samples": 2034
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 262144,
+        "numerator": 4255
+      },
+      "E3": {
+        "denominator": 128,
+        "numerator": 33
+      },
+      "index": 10,
+      "returns": {
+        "16": 0,
+        "2": 72,
+        "4": 2,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 41832,
+            "numerator": -3761
+          },
+          "samples": 5229
+        },
+        "2": {
+          "mean_signed_surplus": {
+            "denominator": 936,
+            "numerator": 133
+          },
+          "samples": 234
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 131072,
+        "numerator": 1727
+      },
+      "E3": {
+        "denominator": 16384,
+        "numerator": 4103
+      },
+      "index": 11,
+      "returns": {
+        "16": 0,
+        "2": 166,
+        "4": 0,
+        "8": 1
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 132128,
+            "numerator": -5755
+          },
+          "samples": 8258
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 65536,
+        "numerator": 1019
+      },
+      "E3": {
+        "denominator": 2048,
+        "numerator": 507
+      },
+      "index": 12,
+      "returns": {
+        "16": 0,
+        "2": 22,
+        "4": 0,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 152928,
+            "numerator": -17875
+          },
+          "samples": 9558
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 65536,
+        "numerator": 1105
+      },
+      "E3": {
+        "denominator": 16384,
+        "numerator": 4217
+      },
+      "index": 13,
+      "returns": {
+        "16": 0,
+        "2": 277,
+        "4": 2,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 63576,
+            "numerator": -8987
+          },
+          "samples": 7947
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 524288,
+        "numerator": 8169
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 8247
+      },
+      "index": 14,
+      "returns": {
+        "16": 0,
+        "2": 86,
+        "4": 1,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 21280,
+            "numerator": -3901
+          },
+          "samples": 1330
+        },
+        "2": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    },
+    {
+      "E1": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "E2": {
+        "denominator": 524288,
+        "numerator": 7289
+      },
+      "E3": {
+        "denominator": 32768,
+        "numerator": 8245
+      },
+      "index": 15,
+      "returns": {
+        "16": 0,
+        "2": 73,
+        "4": 0,
+        "8": 0
+      },
+      "signed_high_energy_work": {
+        "1": {
+          "mean_signed_surplus": {
+            "denominator": 19892,
+            "numerator": -649
+          },
+          "samples": 9946
+        },
+        "2": {
+          "mean_signed_surplus": {
+            "denominator": 23392,
+            "numerator": -381
+          },
+          "samples": 2924
+        },
+        "4": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        },
+        "8": {
+          "mean_signed_surplus": null,
+          "samples": 0
+        }
+      }
+    }
+  ],
+  "note": "All reset hits, energies, orthogonal sectors, graph ranks are exact integers/Fractions. Shuffles are illustrative and not blind controls.",
+  "scope": "finite empirical zero-origin BBP digits; NOT pi normality",
+  "sector_energy_final": {
+    "1": {
+      "energy": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "iid_reference_energy": {
+        "denominator": 16384,
+        "numerator": 15
+      },
+      "iid_reference_new_sector": {
+        "16": {
+          "denominator": 2048,
+          "numerator": 1
+        },
+        "2": {
+          "denominator": 16384,
+          "numerator": 1
+        },
+        "4": {
+          "denominator": 8192,
+          "numerator": 1
+        },
+        "8": {
+          "denominator": 4096,
+          "numerator": 1
+        }
+      },
+      "independent_zero_mass_cycle_coordinates": 15,
+      "new_energy": {
+        "denominator": 8388608,
+        "numerator": 5477
+      },
+      "primitive_sectors": {
+        "16": {
+          "denominator": 1048576,
+          "numerator": 341
+        },
+        "2": {
+          "denominator": 1048576,
+          "numerator": 9
+        },
+        "4": {
+          "denominator": 33554432,
+          "numerator": 2993
+        },
+        "8": {
+          "denominator": 33554432,
+          "numerator": 7715
+        }
+      },
+      "renormalized_energy": {
+        "denominator": 7680,
+        "numerator": 5477
+      }
+    },
+    "2": {
+      "energy": {
+        "denominator": 524288,
+        "numerator": 8009
+      },
+      "iid_reference_energy": {
+        "denominator": 16384,
+        "numerator": 255
+      },
+      "iid_reference_new_sector": {
+        "16": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "2": {
+          "denominator": 1024,
+          "numerator": 1
+        },
+        "4": {
+          "denominator": 512,
+          "numerator": 1
+        },
+        "8": {
+          "denominator": 256,
+          "numerator": 1
+        }
+      },
+      "independent_zero_mass_cycle_coordinates": 240,
+      "new_energy": {
+        "denominator": 8388608,
+        "numerator": 122667
+      },
+      "primitive_sectors": {
+        "16": {
+          "denominator": 524288,
+          "numerator": 3259
+        },
+        "2": {
+          "denominator": 8388608,
+          "numerator": 9507
+        },
+        "4": {
+          "denominator": 65536,
+          "numerator": 177
+        },
+        "8": {
+          "denominator": 1048576,
+          "numerator": 4795
+        }
+      },
+      "renormalized_energy": {
+        "denominator": 8160,
+        "numerator": 8009
+      }
+    },
+    "3": {
+      "energy": {
+        "denominator": 32768,
+        "numerator": 8013
+      },
+      "iid_reference_energy": {
+        "denominator": 16384,
+        "numerator": 4095
+      },
+      "iid_reference_new_sector": {
+        "16": {
+          "denominator": 8,
+          "numerator": 1
+        },
+        "2": {
+          "denominator": 64,
+          "numerator": 1
+        },
+        "4": {
+          "denominator": 32,
+          "numerator": 1
+        },
+        "8": {
+          "denominator": 16,
+          "numerator": 1
+        }
+      },
+      "independent_zero_mass_cycle_coordinates": 3840,
+      "new_energy": {
+        "denominator": 524288,
+        "numerator": 120199
+      },
+      "primitive_sectors": {
+        "16": {
+          "denominator": 65536,
+          "numerator": 7927
+        },
+        "2": {
+          "denominator": 524288,
+          "numerator": 7401
+        },
+        "4": {
+          "denominator": 262144,
+          "numerator": 8941
+        },
+        "8": {
+          "denominator": 131072,
+          "numerator": 7875
+        }
+      },
+      "renormalized_energy": {
+        "denominator": 2730,
+        "numerator": 2671
+      }
+    }
+  },
+  "signed_high_energy_work": {
+    "1": {
+      "mean_signed_surplus": {
+        "denominator": 106,
+        "numerator": -81
+      },
+      "samples": 477
+    },
+    "2": {
+      "mean_signed_surplus": null,
+      "samples": 0
+    },
+    "4": {
+      "mean_signed_surplus": null,
+      "samples": 0
+    },
+    "8": {
+      "mean_signed_surplus": null,
+      "samples": 0
+    }
+  }
+}
