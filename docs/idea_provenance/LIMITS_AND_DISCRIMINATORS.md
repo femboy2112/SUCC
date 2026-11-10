@@ -16,7 +16,7 @@ The recurring classification is **pathway gap** (no route), **probe gap** (rival
 
 **Steelman preserved:** the virtual field/space of counterfactual paths can organize which source histories are possible.
 
-**Wall:** a Haar-distributed seed ensemble generates random-looking digit laws independently of whether the one selected zero seed is normal; point evaluation is not continuous in the relevant averaging norm without a strong cost. A same-forcing coherent irrational seed \(-\pi/16\) has completed constant orbit. The original source is unchanged, the selected outcome is different. A **fixed rational seed shift** preserves normality status (Wall's rational-addition invariance); the epoch-dependent rational p-integral shadows are finite-window counterexamples to seed-blind *uniform* estimates, not examples of a fixed forever-nonnormal rational seed.
+**Wall:** a Haar-distributed seed ensemble generates random-looking digit laws independently of whether the one selected zero seed is normal; point evaluation is not continuous in the relevant averaging norm without a strong cost. A same-forcing coherent irrational seed $`-\pi/16`$ has completed constant orbit. The original source is unchanged, the selected outcome is different. A **fixed rational seed shift** preserves normality status (Wall's rational-addition invariance); the epoch-dependent rational p-integral shadows are finite-window counterexamples to seed-blind *uniform* estimates, not examples of a fixed forever-nonnormal rational seed.
 
 **Lamp:** demonstrate a genuinely zero-seed-selective source theorem; explicitly test irrational coherent, nearby periodic and epoch-dependent rational shadows.
 
@@ -40,7 +40,7 @@ The recurring classification is **pathway gap** (no route), **probe gap** (rival
 
 **Steelman preserved:** positive-minus-negative unit successor generates a real signed contrast when applied to **digit-label** child fibers.
 
-**Wall:** averaging the chronological operator \(I-S_{\rm time}\) over a finite path gives only an endpoint divided by N. It tends to zero for *every bounded path*, including a constant nonnormal one. Repeated higher signed finite differences suppress some spectral frequencies automatically with their own transfer multiplier—this does not change the underlying distribution.
+**Wall:** averaging the chronological operator $`I-S_{\rm time}`$ over a finite path gives only an endpoint divided by N. It tends to zero for *every bounded path*, including a constant nonnormal one. Repeated higher signed finite differences suppress some spectral frequencies automatically with their own transfer multiplier—this does not change the underlying distribution.
 
 **Lamp:** declare whether the successor acts on time, digit labels, prime-exponent coordinates or morphisms. Compute its Fourier symbol and show the intended real signed arithmetic signal survives the operator. See [Tenacious D](../../research/2026-11-09/tenacious_d_haar/PROOFS.md).
 
@@ -58,7 +58,7 @@ The recurring classification is **pathway gap** (no route), **probe gap** (rival
 
 ## 8. Gamma, golden ratio, Pascal and π have multiple different natural constants
 
-**Wall:** classical γ, weighted BBP finite-part γ, grouped-log γ_g, local Mellin log Γ(2) jet and q-Gamma/digamma γ_q have different definitions, domains and normalizations. The old Oily–Macaroni \(\phi^{-1}-\gamma\) is a declared mathematical reference. Positive moment or Gamma(2) limits are shared by changed-source countermodels. A matching convergence exponent or suggestive ratio is not an identity of mechanisms.
+**Wall:** classical γ, weighted BBP finite-part γ, grouped-log γ_g, local Mellin log Γ(2) jet and q-Gamma/digamma γ_q have different definitions, domains and normalizations. The old Oily–Macaroni $`\phi^{-1}-\gamma`$ is a declared mathematical reference. Positive moment or Gamma(2) limits are shared by changed-source countermodels. A matching convergence exponent or suggestive ratio is not an identity of mechanisms.
 
 **Lamp:** require a typed exact map connecting a source-preserving scalar to the **selected sign** or a new demonstrable arithmetic inequality. Consult [typed Gamma](../MAIN_XXII_GAMMA_OBSERVABLES.md) before calling two objects “the same constant.”
 
@@ -94,7 +94,7 @@ The recurring classification is **pathway gap** (no route), **probe gap** (rival
 
 Different carriers require different transports:
 - 2-adic spatial precision vs original chronological real ×16 orbit;
-- finite digit Walsh h=8 vs real Weyl \(e(8x)\);
+- finite digit Walsh h=8 vs real Weyl $`e(8x)`$;
 - SU(2) observer-frame spinors vs SO(3) directions, spinor signs and loop holonomy;
 - future-conditioned Haar Q vs binary prime-sign Haar contrast;
 - analytic Gamma finite parts vs empirical transition matrices;
