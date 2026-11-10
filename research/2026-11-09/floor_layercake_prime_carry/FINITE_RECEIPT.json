@@ -1,0 +1,150 @@
+{
+  "cases": [
+    {
+      "A": 100,
+      "AC01_gap_depth": 4,
+      "Fejer_H4096_bound": "61/200",
+      "actual_prime_carry_mean": "761/100",
+      "actual_real_carry_mean": "83/10",
+      "changed_seed_one_fifth_real_mod16_mismatch_count": 100,
+      "forcing_induced_carry_correction_count": 0,
+      "inherited_AC01_bound": 25,
+      "inside_prime_births": [
+        {
+          "n": 121,
+          "prime_carry": 12,
+          "prime_injection": 120,
+          "real_carry": 5,
+          "slip": -7
+        },
+        {
+          "n": 151,
+          "prime_carry": 4,
+          "prime_injection": 48,
+          "real_carry": 11,
+          "slip": 7
+        },
+        {
+          "n": 181,
+          "prime_carry": 4,
+          "prime_injection": 40,
+          "real_carry": 1,
+          "slip": -3
+        }
+      ],
+      "moving_boundary_count": 9,
+      "moving_boundary_radius": "1/512",
+      "p": 241,
+      "p_primeity_provided_by_source_passport_not_this_probe": true,
+      "prime_births_in_prefix": [
+        31,
+        121,
+        151,
+        181
+      ],
+      "real_prime_equal_carry_count": 8,
+      "source_index_n": "100..199"
+    },
+    {
+      "A": 128,
+      "AC01_gap_depth": 4,
+      "Fejer_H4096_bound": "19/64",
+      "actual_prime_carry_mean": "1035/128",
+      "actual_real_carry_mean": "993/128",
+      "changed_seed_one_fifth_real_mod16_mismatch_count": 128,
+      "forcing_induced_carry_correction_count": 0,
+      "inherited_AC01_bound": 32,
+      "inside_prime_births": [
+        {
+          "n": 157,
+          "prime_carry": 12,
+          "prime_injection": 156,
+          "real_carry": 15,
+          "slip": 3
+        },
+        {
+          "n": 196,
+          "prime_carry": 0,
+          "prime_injection": 125,
+          "real_carry": 7,
+          "slip": 7
+        },
+        {
+          "n": 235,
+          "prime_carry": 12,
+          "prime_injection": 52,
+          "real_carry": 5,
+          "slip": -7
+        }
+      ],
+      "moving_boundary_count": 11,
+      "moving_boundary_radius": "1/512",
+      "p": 313,
+      "p_primeity_provided_by_source_passport_not_this_probe": true,
+      "prime_births_in_prefix": [
+        40,
+        157,
+        196,
+        235
+      ],
+      "real_prime_equal_carry_count": 11,
+      "source_index_n": "128..255"
+    },
+    {
+      "A": 256,
+      "AC01_gap_depth": 5,
+      "Fejer_H4096_bound": "13/64",
+      "actual_prime_carry_mean": "971/128",
+      "actual_real_carry_mean": "463/64",
+      "changed_seed_one_fifth_real_mod16_mismatch_count": 256,
+      "forcing_induced_carry_correction_count": 0,
+      "inherited_AC01_bound": 52,
+      "inside_prime_births": [
+        {
+          "n": 309,
+          "prime_carry": 12,
+          "prime_injection": 308,
+          "real_carry": 4,
+          "slip": -8
+        },
+        {
+          "n": 386,
+          "prime_carry": 9,
+          "prime_injection": 370,
+          "real_carry": 6,
+          "slip": -3
+        },
+        {
+          "n": 463,
+          "prime_carry": 7,
+          "prime_injection": 514,
+          "real_carry": 4,
+          "slip": -3
+        }
+      ],
+      "moving_boundary_count": 10,
+      "moving_boundary_radius": "1/512",
+      "p": 617,
+      "p_primeity_provided_by_source_passport_not_this_probe": true,
+      "prime_births_in_prefix": [
+        78,
+        309,
+        386,
+        463
+      ],
+      "real_prime_equal_carry_count": 19,
+      "source_index_n": "256..511"
+    }
+  ],
+  "notes": [
+    "All count/progression quantities are exact integer/Fraction computations",
+    "Fejer budget is deterministic upper bound, not measured cancellation",
+    "The same-forcing seed 1/5 is a p-unit and preserves all odd p-primary histories",
+    "No unverified all-epoch signed estimate is inferred"
+  ],
+  "pi_base16_normality": "OPEN",
+  "prime_simple_pole_passport": "#497/#554 assumed; finite residues checked",
+  "source": "original four signed BBP poles; U0=0; n>=2 layercake",
+  "status": "OBSERVED_FINITE_EXACT",
+  "threshold_integral": "Haar reference only; not selected orbit"
+}
