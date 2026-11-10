@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "all_integer_centers_matched": 25,
+      "m": 3,
+      "overflow_bound": 26620917222824184,
+      "p": 5
+    },
+    {
+      "all_integer_centers_matched": 169,
+      "m": 4,
+      "overflow_bound": 35949505884060112,
+      "p": 13
+    },
+    {
+      "all_integer_centers_matched": 289,
+      "m": 5,
+      "overflow_bound": 44984369539262700,
+      "p": 17
+    }
+  ],
+  "method": "Python arbitrary-precision scalar contractions versus NumPy int64 matrix centers; shared quantization and phase primitive",
+  "proof_review": "RE1-4 and MQ1-5 independently reviewed; root notified of nonzero-seed wording and generic index-range check",
+  "reviewed_hashes": {
+    "research/2026-11-08/frontier_connections/ENERGY_THEOREMS.md": "821cf29d90826910a1ba14ff41e77f807751742c562ee972dec6a01381fe347b",
+    "research/2026-11-08/frontier_connections/arithmetic/THEOREMS.md": "9546969ea6f254aa85932cac4a432416dfaf42fffe710fa80d9775f3080eed19",
+    "research/2026-11-08/frontier_connections/arithmetic/mixed_quadratic.py": "e0d039b67a316b810d3442363c03a33cb0af0f1d3bf8409267f4f64fd120c901"
+  },
+  "total_centers": 483
+}

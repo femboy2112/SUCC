@@ -1,0 +1,162 @@
+{
+  "baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "cross_agent_audit_result": "No error found in stated domains; quantitative obstructions only",
+  "cross_agent_proof_audit": [
+    "arithmetic/THEOREMS.md AR1-4",
+    "spectral/THEOREMS.md SP3"
+  ],
+  "new_source_contract": false,
+  "shared_reasoner_family": "same model, separate agent; not scholarly independence",
+  "source_reads": [
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "AGENTS.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "docs/METHOD.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/adaptive_proof_policy.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/causal_nerode_succ.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/field_limit_compactness.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "aeaf5849416522d98e2c394e45b600f2a7dd9dcc6c6975debf53fa9dc9a92c4f"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "formal/FutureSafeForgetting.lean",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "986609101f0efafdf56453edc6da4919971ad00f34d4d76b417ecb234cd087f6"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "formal/EODCS_CausalDescent.lean",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "624c5ca37a17e3f69500611f1552c5afbd2640fdd124becab8a9f70482d6b880"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "formal/MaximalSourceFactor.lean",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "c3fb2e6cdcc7a06c24404653c502eef03aff0da8bde760d9befff3cadb728805"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/interobserver_channels.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "5a3c9d72dc84427d3bf72410f8b8ed36fcdb3fc9800c9e1f48cd85532bc88db6"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "tests/test_interobserver_channels.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "a17425566f270b3c03cf27e714f1a29b491c652a0b5dd552527169f39afe6f7f"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "docs/CLAIM_LEDGER.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/carrier_relative_targets.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "ec4b796a1787dd1a79764fee9890607fdd88d70799f5e76940fbe4608950bf3c"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/swarm_lawful_history.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "e40cfe6199700b16c12439e4ef8b94103613e55252f11ad890bd4e3aa62ef280"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/selected_orbit.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "formal/EODCS_CambrianRealization.lean",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf"
+    },
+    {
+      "commit": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+      "path": "observational_succ/duck_bbp.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0"
+    },
+    {
+      "commit": "749931f0f357c60ef4e21879d96b0306999f428f",
+      "path": "research/2026-11-05/yoneda_circle/COUNTERMODELS.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "ed419672a1d8262a1c1afaf9fc1b4b3968c58a93978968a7c53f2c0d6f388b5e"
+    },
+    {
+      "commit": "cd6721585f42236b23d2d5ff8fa5bd160dddc213",
+      "path": "research/2026-11-05/history_shell/PROOFS.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "b96134b433bd414d2099dff6cf97f3eb50f35c58fd2f3426304d73ad8c6a707d"
+    },
+    {
+      "commit": "8da6eefbb0e23b47dc81809d46ebb30e568fc2ce",
+      "path": "research/2026-11-05/main_xx_forge/front_b/PROOFS.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "271b198a51922907805ff27ee5a396503f7c14c994ce6f5b396bdf070762b4e9"
+    },
+    {
+      "commit": "f45e4459f2efa6a94bfa5adcf8184c57aa028c55",
+      "path": "research/2026-11-06/realization_gyroscope/THEOREMS.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "9f2e4f36f27e7d2eeff4cb985f14d64a11d6b915ba01ea9ea228818479b2c68d"
+    },
+    {
+      "commit": "c550cd4089db0367464ff38884797e06359fbcbc",
+      "path": "research/2026-11-06/padic_boundary/THEOREMS.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "61841a7021d127f71be9297206028ef85d71799059fdabbec94dc094773fbc39"
+    },
+    {
+      "commit": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/LEARNING_OBSERVER.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "a35c542292c6bf98b8a0948e2eef589ac1dabe4e9a631222b240d0d039b3ae5d"
+    },
+    {
+      "commit": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/ANCHORED_PATHS_VS_HOLONOMY.md",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "2ca5624f1e6ab793f167afc03193007515cc61a19472bb62294cac9b0793d025"
+    },
+    {
+      "commit": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "observational_succ/learning_pinbed.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "c62824de366617cfcc38d70d8cfb8c1662216fedf6bd80831a32ed60988d22e2"
+    },
+    {
+      "commit": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "path": "tests/test_learning_pinbed.py",
+      "scope": "relevant sections inspected; not blanket independent certification",
+      "sha256": "a6af509424d08e42e1d90ad2ba8cb63f76ddc364b2550d390c99f3c0d0f16bfb"
+    }
+  ]
+}

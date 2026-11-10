@@ -1,0 +1,81 @@
+{
+  "parent": "a974db527c19708006b9f6d7f0ca01d08d1e0524",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "observational_succ/selected_orbit.py",
+      "sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "observational_succ/bbp_gamma_boundary.py",
+      "sha256": "3506b315344a360d4f0e361d3d0b931ecfa0abdeee8ab3feb463a56b8840d7fb",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md",
+      "sha256": "3b0b5d3c1b25ddc0f3b000e6565c53d2e53d8550733d4911a727de281594424c",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "research/2026-11-04/analytic_exile/PROOFS.md",
+      "sha256": "0ac089de794354a7c68c18f2a493e9952798c15c9da360a628dc42581fa19c7f",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "research/2026-11-04/europa_weyl/beta/GAMMA_BOUNDARY.md",
+      "sha256": "b099279ec6d6abd4349d457dc9e593a6f8dad41b57e3418363c7077bf0b699ab",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "research/2026-11-04/frobenius_prime_saturation/README.md",
+      "sha256": "113c62a8057867b4b281cc736a2d5f962693da35a040b019406fa1efacc18778",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "research/2026-11-04/zero_frame_coupling/front_cf/PROOFS.md",
+      "sha256": "d5c2f9e1a3d4d973772f53b30e539365f685bd69f6bab5aff6525950e92f24fe",
+      "scope": "read only existing source"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/THEOREMS.md",
+      "commit": "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749",
+      "sha256": "67a2997fa3e0cf5070b749756c00766a4fbaeae4ff6e562f6beb494dcf119a2a",
+      "scope": "read only PR530 source"
+    },
+    {
+      "path": "research/2026-11-06/triangle_signed_return/FIRST_MOMENT_THEOREM.md",
+      "commit": "9b53501e37f6bb9ab5bd6f63cadf4cbfc1607749",
+      "sha256": "bdc59d2ed61c8d5126643cdce10b26fea3f067dd77e8c373b75d5545e2f33a6e",
+      "scope": "read only PR530 source"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://dlmf.nist.gov/5.5.E2",
+      "used": "digamma recurrence"
+    },
+    {
+      "url": "https://dlmf.nist.gov/5.4.E19",
+      "used": "Gauss rational digamma formula"
+    },
+    {
+      "url": "https://dlmf.nist.gov/5.7.E6",
+      "used": "gamma cancellation in balanced digamma sums"
+    },
+    {
+      "url": "https://dlmf.nist.gov/5.11.E2",
+      "used": "checked inherited digamma large-argument asymptotic; new tail proof elementary"
+    }
+  ],
+  "independence": "Same original source and model family; independent exact integral/backward and direct forward algorithms. No external scholarly review."
+}

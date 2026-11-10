@@ -1,0 +1,11 @@
+finite-kernel: exit 0
+axiom-export: exit 0
+odd-unit-unique-positive: exit 0
+odd-unit-unique-mutant: exit 1
+deterministic-energy-positive: exit 0
+deterministic-energy-mutant: exit 1
+even-noninjective-positive: exit 0
+even-noninjective-mutant: exit 1
+critical-scale-eight-positive: exit 0
+critical-scale-eight-mutant: exit 1
+KERNEL_CHECKED 10 theorems; 4 paired controls

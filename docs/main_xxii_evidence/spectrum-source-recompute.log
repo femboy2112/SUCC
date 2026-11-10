@@ -1,0 +1,38 @@
+{
+  "blocks": {
+    "holdout": {
+      "E2_exact": "620759/171793449",
+      "dobrushin_exact": "123803/2292261",
+      "max_count": 302,
+      "min_count": 200,
+      "mixed225_exact": "14136161/4294836225",
+      "opposite15_exact": "40991/252637425",
+      "pairs": 65535
+    },
+    "previous": {
+      "E2_exact": "18061567/4294836225",
+      "dobrushin_exact": "497311/8555180",
+      "max_count": 302,
+      "min_count": 213,
+      "mixed225_exact": "5658763/1431612075",
+      "opposite15_exact": "1991471/4294836225",
+      "pairs": 65535
+    },
+    "total": {
+      "E2_exact": "31358719/17179607041",
+      "dobrushin_exact": "481818/13186475",
+      "max_count": 567,
+      "min_count": 449,
+      "mixed225_exact": "29401825/17179607041",
+      "opposite15_exact": "2408591/17179607041",
+      "pairs": 131071
+    }
+  },
+  "certified_by_recomputation": true,
+  "digits_source": "original zero BBP four signed poles",
+  "fresh_sha256": "344972a0bd1028032907c0e2c9495ad7943265bde1fdd98d4be1c7de38520d03",
+  "full_sha256": "4e349f3af293f07c42135caabffe0ce262c7ff282847d71e158f05551cd89a73",
+  "pi_base16_normality": "OPEN",
+  "preregistered_inverse_mode_replication": "FAILED (not replicated)",
+  "prev_sha256": "e42ee060201573db4a32a8c8e0a4ccac5a6cb061ae1ac8d71809234c58dfae53"
+}

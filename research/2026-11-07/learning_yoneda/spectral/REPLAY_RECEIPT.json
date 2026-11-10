@@ -1,0 +1,32 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "replays": [
+    {
+      "pr": 541,
+      "head": "e8a4126754dc95eddeca758ea92ead50246da630",
+      "tests": 31,
+      "exit_code": 0,
+      "log": "PR541_FOCUSED_REPLAY.txt",
+      "log_sha256": "abb47fe9740086445e1d937dee926948453137bc7fdd88dba68b94f5a39b707a",
+      "scope": "Only listed test files, exact git archive extraction; not full inherited suite."
+    },
+    {
+      "pr": 542,
+      "head": "a8f592b8106226fb065f0101358c01f7cc04d5e1",
+      "tests": 21,
+      "exit_code": 0,
+      "log": "PR542_FOCUSED_REPLAY.txt",
+      "log_sha256": "46f76d4d35cec32925120a9eee4843c655747dac33aeb1e29e65479f9e45390f",
+      "scope": "Only listed test files, exact git archive extraction; not full inherited suite."
+    },
+    {
+      "pr": 543,
+      "head": "92b98bc025dcdb5ae4d919709ceaa6263d9b53fc",
+      "tests": 32,
+      "exit_code": 0,
+      "log": "PR543_FOCUSED_REPLAY.txt",
+      "log_sha256": "7b3c3cb6ac6c86f02a6879385adf31752a616fb6974685f6de257dd026a6c01e",
+      "scope": "Only listed test files, exact git archive extraction; not full inherited suite."
+    }
+  ]
+}

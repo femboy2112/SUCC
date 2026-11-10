@@ -157,9 +157,9 @@ For proposed diagrams, specify the precise functors/morphisms, domain of objects
 
 The new operational_semantics module defines finite rational evidence laws and stochastic readouts mapping physical measurement outcomes to semantic labels. For every such readout C and any two evidence laws p and q, the exact total-variation contraction theorem holds:
 
-\[
-\operatorname{TV}(Cp,Cq)\le\operatorname{TV}(p,q).
-\]
+```math
+\mathrm{TV}(Cp,Cq)\le\mathrm{TV}(p,q).
+```
 
 This follows by triangle inequality and nonnegative stochastic row normalization; its executable certificate reports a rational before/after distance and slack. It does **not** say that all semantic inference is a stochastic map, nor that quantum measurement itself is classical after arbitrary interactions. The real-qubit Kraus instrument supplies explicit physical outcome distributions. A postprocessing channel can erase the observer's ability to distinguish two earlier hypotheses **without erasing the original source or the separate causal record**.
 

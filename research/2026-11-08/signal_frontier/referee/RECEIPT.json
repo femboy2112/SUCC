@@ -1,0 +1,300 @@
+{
+  "authority": "Independent numerical checks and separate paper audit; not interval proof",
+  "dependencies": {
+    "fibonacci_covariance/THEOREMS.md": "4a3ec48c495e50924fb1477fe74b79d1ea0a12fe0bf730913e3403db7dc28868",
+    "fibonacci_geometry/THEOREMS.md": "83c9cc09b912500f3e5e7793ad340ea495935cf624236a4d3f31640d9c858601",
+    "fixed_depth/THEOREMS.md": "1e6d801611c4f0162d003a9ce559fdefc71e526d82213e1fd2005fddb0499b0a",
+    "prime_resonance/THEOREMS.md": "19da8fdca585c2d1212198136223b7c491877115343f8d0d2476db25a7c2cff9",
+    "source_probe.py": "a24f74cfbfe4192e4953435e52a317f32f166999adf32eae48a52693f320df3e"
+  },
+  "frames": {
+    "rank_alias_control": {
+      "q": 13,
+      "rank": 13,
+      "unknowns": 15
+    },
+    "rows": [
+      {
+        "H": 1,
+        "discrepancy": 0.2721359549995796,
+        "discrepancy_bound": 0.27213595499957943,
+        "k": 5,
+        "maximum_singular": 1.0765291933985757,
+        "minimum_singular": 0.896837960109592,
+        "operator_bound": 0.7546937598473347,
+        "operator_error": 0.34342266321603887,
+        "q": 5
+      },
+      {
+        "H": 2,
+        "discrepancy": 0.2721359549995796,
+        "discrepancy_bound": 0.27213595499957943,
+        "k": 5,
+        "maximum_singular": 1.208926399342302,
+        "minimum_singular": 0.7444535281002087,
+        "operator_bound": 1.5093875196946693,
+        "operator_error": 0.6671196697851494,
+        "q": 5
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.17376207875073568,
+        "discrepancy_bound": 0.1737620787507361,
+        "k": 6,
+        "maximum_singular": 1.038052444172264,
+        "minimum_singular": 0.9677398600605989,
+        "operator_bound": 0.4905417551261721,
+        "operator_error": 0.20745104100854658,
+        "q": 8
+      },
+      {
+        "H": 3,
+        "discrepancy": 0.17376207875073568,
+        "discrepancy_bound": 0.1737620787507361,
+        "k": 6,
+        "maximum_singular": 1.2118774506054748,
+        "minimum_singular": 0.767186554889244,
+        "operator_bound": 1.4716252653785162,
+        "operator_error": 0.6659160179589633,
+        "q": 8
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.10871555730643112,
+        "discrepancy_bound": 0.10871555730643051,
+        "k": 7,
+        "maximum_singular": 1.0121520092495349,
+        "minimum_singular": 0.984994585165568,
+        "operator_bound": 0.31072085137781125,
+        "operator_error": 0.12772143882304063,
+        "q": 13
+      },
+      {
+        "H": 6,
+        "discrepancy": 0.10871555730643112,
+        "discrepancy_bound": 0.10871555730643051,
+        "k": 7,
+        "maximum_singular": 1.2169316595278323,
+        "minimum_singular": 0.7285374196615766,
+        "operator_bound": 1.8643251082668677,
+        "operator_error": 0.8034497232335035,
+        "q": 13
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.0678916535735305,
+        "discrepancy_bound": 0.06789165357353162,
+        "k": 8,
+        "maximum_singular": 1.0057029439123513,
+        "minimum_singular": 0.9952887184954418,
+        "operator_bound": 0.1952203155655416,
+        "operator_error": 0.07833956229375666,
+        "q": 21
+      },
+      {
+        "H": 2,
+        "discrepancy": 0.0678916535735305,
+        "discrepancy_bound": 0.06789165357353162,
+        "k": 8,
+        "maximum_singular": 1.0143023984391355,
+        "minimum_singular": 0.9851909603853413,
+        "operator_bound": 0.3904406311310832,
+        "operator_error": 0.15482956653526808,
+        "q": 21
+      },
+      {
+        "H": 10,
+        "discrepancy": 0.0678916535735305,
+        "discrepancy_bound": 0.06789165357353162,
+        "k": 8,
+        "maximum_singular": 1.2185993189810087,
+        "minimum_singular": 0.7259142214524612,
+        "operator_bound": 1.952203155655416,
+        "operator_error": 0.8357511963439634,
+        "q": 21
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.0421804522759418,
+        "discrepancy_bound": 0.04218045227594176,
+        "k": 9,
+        "maximum_singular": 1.0017958853806421,
+        "minimum_singular": 0.9978113148670054,
+        "operator_bound": 0.1217624954513515,
+        "operator_error": 0.048185779059747844,
+        "q": 34
+      },
+      {
+        "H": 4,
+        "discrepancy": 0.0421804522759418,
+        "discrepancy_bound": 0.04218045227594176,
+        "k": 9,
+        "maximum_singular": 1.034954269549326,
+        "minimum_singular": 0.969986245328974,
+        "operator_bound": 0.487049981805406,
+        "operator_error": 0.20916237981144267,
+        "q": 34
+      },
+      {
+        "H": 16,
+        "discrepancy": 0.0421804522759418,
+        "discrepancy_bound": 0.04218045227594176,
+        "k": 9,
+        "maximum_singular": 1.2177483927178154,
+        "minimum_singular": 0.7279427222938274,
+        "operator_bound": 1.948199927221624,
+        "operator_error": 0.8405879523942554,
+        "q": 34
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.026164607505671733,
+        "discrepancy_bound": 0.026164607505678204,
+        "k": 10,
+        "maximum_singular": 1.0008353942912114,
+        "minimum_singular": 0.9993125326851103,
+        "operator_bound": 0.07569651013631547,
+        "operator_error": 0.02967674581951002,
+        "q": 55
+      },
+      {
+        "H": 6,
+        "discrepancy": 0.026164607505671733,
+        "discrepancy_bound": 0.026164607505678204,
+        "k": 10,
+        "maximum_singular": 1.0151037796064726,
+        "minimum_singular": 0.9845184837081307,
+        "operator_bound": 0.45417906081789283,
+        "operator_error": 0.1779457943746,
+        "q": 55
+      },
+      {
+        "H": 27,
+        "discrepancy": 0.026164607505671733,
+        "discrepancy_bound": 0.026164607505678204,
+        "k": 10,
+        "maximum_singular": 1.218887720220553,
+        "minimum_singular": 0.7232594662567144,
+        "operator_bound": 2.0438057736805177,
+        "operator_error": 0.8678302081719551,
+        "q": 55
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.01620449313681885,
+        "discrepancy_bound": 0.01620449313681406,
+        "k": 11,
+        "maximum_singular": 1.0002625110282546,
+        "minimum_singular": 0.9996806862698892,
+        "operator_bound": 0.046946062910683505,
+        "operator_error": 0.018299957502120982,
+        "q": 89
+      },
+      {
+        "H": 11,
+        "discrepancy": 0.01620449313681885,
+        "discrepancy_bound": 0.01620449313681406,
+        "k": 11,
+        "maximum_singular": 1.0351164757034874,
+        "minimum_singular": 0.9698240619835395,
+        "operator_bound": 0.5164066920175184,
+        "operator_error": 0.21580397647965138,
+        "q": 89
+      },
+      {
+        "H": 44,
+        "discrepancy": 0.01620449313681885,
+        "discrepancy_bound": 0.01620449313681406,
+        "k": 11,
+        "maximum_singular": 1.2189241633731636,
+        "minimum_singular": 0.722785031484315,
+        "operator_bound": 2.0656267680700737,
+        "operator_error": 0.875192551578373,
+        "q": 89
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.010028497653923163,
+        "discrepancy_bound": 0.010028497653925598,
+        "k": 12,
+        "maximum_singular": 1.000121954027665,
+        "minimum_singular": 0.9998996977202241,
+        "operator_bound": 0.029077666654003718,
+        "operator_error": 0.011293518737368221,
+        "q": 144
+      },
+      {
+        "H": 18,
+        "discrepancy": 0.010028497653923163,
+        "discrepancy_bound": 0.010028497653925598,
+        "k": 12,
+        "maximum_singular": 1.0351469728353495,
+        "minimum_singular": 0.9698069790768639,
+        "operator_bound": 0.5233979997720669,
+        "operator_error": 0.21744820935406775,
+        "q": 144
+      },
+      {
+        "H": 71,
+        "discrepancy": 0.010028497653923163,
+        "discrepancy_bound": 0.010028497653925598,
+        "k": 12,
+        "maximum_singular": 1.2188793413925303,
+        "minimum_singular": 0.723114296238125,
+        "operator_bound": 2.064514332434264,
+        "operator_error": 0.8770277869465127,
+        "q": 144
+      },
+      {
+        "H": 1,
+        "discrepancy": 0.006202986542126778,
+        "discrepancy_bound": 0.0062029865421283905,
+        "k": 13,
+        "maximum_singular": 1.000038310398453,
+        "minimum_singular": 0.9999534129880522,
+        "operator_bound": 0.01799485196007212,
+        "operator_error": 0.006973360218750763,
+        "q": 233
+      },
+      {
+        "H": 29,
+        "discrepancy": 0.006202986542126778,
+        "discrepancy_bound": 0.0062029865421283905,
+        "k": 13,
+        "maximum_singular": 1.0351324009231526,
+        "minimum_singular": 0.9698214979623765,
+        "operator_bound": 0.5218507068420916,
+        "operator_error": 0.21747571792801426,
+        "q": 233
+      },
+      {
+        "H": 116,
+        "discrepancy": 0.006202986542126778,
+        "discrepancy_bound": 0.0062029865421283905,
+        "k": 13,
+        "maximum_singular": 1.2190094121198585,
+        "minimum_singular": 0.7224474201399895,
+        "operator_bound": 2.0874028273683662,
+        "operator_error": 0.882410793759364,
+        "q": 233
+      }
+    ]
+  },
+  "geometry": {
+    "cases": 86016,
+    "max_ratio_to_declared_bound": {
+      "c": 0.23688851115247017,
+      "curvature": 0.359172406712296,
+      "g": 0.43286118380052635,
+      "radius": 0.42880826765099805,
+      "rho": 0.9999470826849897,
+      "turn": 0.3163479291559629,
+      "unit_phase": 0.12602001872212334,
+      "z": 0.2697534786565948
+    },
+    "noise_menu": "16 boundary directions; exhaustive 16^4 diameter case, deterministic 4096 samples per golden return",
+    "u": "1/64"
+  },
+  "oracle_sha256": "8dee8c4538c20027dffb70aec0ca591e7ebde32c19c026b8347d7608b76eeaa4",
+  "status": "PASS"
+}

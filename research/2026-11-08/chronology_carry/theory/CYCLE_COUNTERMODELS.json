@@ -1,0 +1,94 @@
+{
+  "examples": [
+    {
+      "completed_fixed_point": "4/5",
+      "constant_digit": 12,
+      "cycle_model_mean": [
+        "-1609253/16777216",
+        "413323/16777216"
+      ],
+      "depth": 1,
+      "h": 1,
+      "innovation_limit": [
+        "-31044847/268435456",
+        "3381145/268435456"
+      ],
+      "innovation_modulus_diagnostic": 0.11633495696661988,
+      "innovation_squared_exact": "487607333382217/36028797018963968",
+      "menu": "one",
+      "reference_mean": [
+        "5296799/268435456",
+        "3232023/268435456"
+      ],
+      "residual_mean_modulus_limit_lower": "1/2"
+    },
+    {
+      "completed_fixed_point": "1/3",
+      "constant_digit": 5,
+      "cycle_model_mean": [
+        "-3666283/8388608",
+        "2473199/16777216"
+      ],
+      "depth": 2,
+      "h": 1,
+      "innovation_limit": [
+        "-1946167275/4294967296",
+        "604660205/4294967296"
+      ],
+      "innovation_modulus_diagnostic": 0.474493829827575,
+      "innovation_squared_exact": "2076590512895783825/9223372036854775808",
+      "menu": "two",
+      "reference_mean": [
+        "69030379/4294967296",
+        "28478739/4294967296"
+      ],
+      "residual_mean_modulus_limit_lower": "1/2"
+    },
+    {
+      "completed_fixed_point": "2/15",
+      "constant_digit": 2,
+      "cycle_model_mean": [
+        "1287351/16777216",
+        "-1791181/16777216"
+      ],
+      "depth": 1,
+      "h": 3,
+      "innovation_limit": [
+        "15297523/268435456",
+        "-27471441/268435456"
+      ],
+      "innovation_modulus_diagnostic": 0.11713620034942474,
+      "innovation_squared_exact": "494347140276005/36028797018963968",
+      "menu": "one",
+      "reference_mean": [
+        "5300093/268435456",
+        "-1187455/268435456"
+      ],
+      "residual_mean_modulus_limit_lower": "1/2"
+    },
+    {
+      "completed_fixed_point": "2/5",
+      "constant_digit": 6,
+      "cycle_model_mean": [
+        "-5911101/16777216",
+        "-3737293/16777216"
+      ],
+      "depth": 2,
+      "h": 3,
+      "innovation_limit": [
+        "-1613318633/4294967296",
+        "-28841031/134217728"
+      ],
+      "innovation_modulus_diagnostic": 0.43274977263204073,
+      "innovation_squared_exact": "3454565402387380753/18446744073709551616",
+      "menu": "two",
+      "reference_mean": [
+        "100076777/4294967296",
+        "-1057313/134217728"
+      ],
+      "residual_mean_modulus_limit_lower": "1/2"
+    }
+  ],
+  "input_scope": "frozen earlier training table only; no holdout source data read",
+  "table_sha256": "2462a0e3b814a5fb8664701a12832698b04cbd62c7c60ecf63abc669bc4f3887"
+}

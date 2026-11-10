@@ -1,0 +1,22 @@
+{
+  "RH": "OPEN",
+  "bits": 80,
+  "epochs": [
+    {
+      "A": 4093,
+      "file": "epoch_4093.json",
+      "sha256": "670ac40cae809c997a515d6dce2e13a563122e9317a82703fb19f56898858908"
+    }
+  ],
+  "hashes": {
+    "PREREGISTRATION.md": "d8ad6f7a30b46c35c2509bf23910a8eca71a3fd76e8a1bc66450a19a80f50425",
+    "intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "run_experiment.py": "a1f79c580d82d710f16e96fd0527142d7ae552e2bd393d5929cf25fd5fc99788",
+    "source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3"
+  },
+  "pi_normality": "OPEN",
+  "preregistration_commit": "fd925707",
+  "scale": 1208925819614629174706176,
+  "source_head": "47ec1ccf9d3579897abb94c047f3b4dc13b4cb70",
+  "stage": "stress"
+}

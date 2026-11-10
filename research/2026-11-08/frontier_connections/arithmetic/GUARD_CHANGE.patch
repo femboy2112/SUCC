@@ -1,0 +1,22 @@
+--- initial/mixed_quadratic.py
++++ final/mixed_quadratic.py
+@@ -66,14 +66,18 @@
+     """Certify all p² coefficients; optionally retain for small test cases."""
+     if p < 3 or p % 2 == 0 or len(set(xs)) != len(xs):
+         raise ValueError('odd modulus >=3 and distinct support required')
++    if p*p >= I64 or any(type(x) is not int or not 0 <= x < p for x in xs):
++        raise ValueError('residue representatives and bounded modular index products required')
+     m=len(xs)
+     if not m or chunk < 1:
+         raise ValueError('nonempty support and positive chunk required')
+     roots,rt = root_table(p)
+     centered = [quantize(z) for z in boxes]
++    cb=max(abs(x)+abs(y) for (x,y),r in centered)
++    if cb >= I64:
++        raise ValueError('quantized input centers exceed signed-int64 range')
+     bc=np.asarray([c for c,r in centered],dtype=np.int64)
+     rb=max(r for c,r in centered)
+-    cb=max(int(abs(x)+abs(y)) for x,y in bc)
+     cr=max(int(abs(x)+abs(y)) for x,y in roots)
+     assert cb*cr < I64
+     product_radius=2*rb+ceildiv(rt*cb,Q)+2

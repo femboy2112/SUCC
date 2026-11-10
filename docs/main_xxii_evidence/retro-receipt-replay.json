@@ -1,0 +1,23 @@
+{
+  "name": "retro-receipt-replay",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "/home/leah/SUCC-main-xxii/research/2026-11-08/chronology_carry/retro_probe.py",
+    "--source",
+    "/home/leah/SUCC-main-xxii/research/2026-11-08/chronology_carry/model/HOLDOUT_55003.json.gz",
+    "--output",
+    "/home/leah/succ-main-xxii-evidence/retro-replay.json"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "end_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "exit_code": 0,
+  "seconds": 12.691458463668823,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "a4470cf0bf6df3aa315725fb41270178589eb6f55450fb1fd81717d516c93b19"
+}

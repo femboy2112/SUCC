@@ -1,0 +1,23 @@
+{
+  "name": "selected-lean",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "scripts/check_selected_branch_lean.py",
+    "--dependency-project",
+    "/home/leah/SUCC/formal/mathlib_bridge",
+    "--output",
+    "/home/leah/succ-main-xxii-evidence/selected-lean"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "4a09e0de933e884884e77bfd4285cd212470d481",
+  "end_commit": "4a09e0de933e884884e77bfd4285cd212470d481",
+  "exit_code": 0,
+  "seconds": 27.916614294052124,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "0e21fd793300f089d389676d75fb221d6340586e0a83397f451e82a3abdfb254"
+}

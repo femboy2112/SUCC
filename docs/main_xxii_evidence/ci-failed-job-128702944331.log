@@ -1,0 +1,778 @@
+﻿2026-11-08T10:26:50.2117483Z Current runner version: '2.338.2'
+2026-11-08T10:26:50.2140897Z ##[group]Runner Image Provisioner
+2026-11-08T10:26:50.2141769Z Hosted Compute Agent
+2026-11-08T10:26:50.2142264Z Version: 20261028.624
+2026-11-08T10:26:50.2142827Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-08T10:26:50.2143422Z Build Date: 2026-10-28T21:51:42Z
+2026-11-08T10:26:50.2143989Z Worker ID: {6c7cf332-3c89-425a-8a81-4dc6a727e2cc}
+2026-11-08T10:26:50.2144621Z Region: westus2
+2026-11-08T10:26:50.2145357Z Cloud: Azure
+2026-11-08T10:26:50.2145838Z ##[endgroup]
+2026-11-08T10:26:50.2147036Z ##[group]Operating System
+2026-11-08T10:26:50.2147588Z Ubuntu
+2026-11-08T10:26:50.2148119Z 26.04.1
+2026-11-08T10:26:50.2148547Z LTS
+2026-11-08T10:26:50.2148998Z ##[endgroup]
+2026-11-08T10:26:50.2149474Z ##[group]Runner Image
+2026-11-08T10:26:50.2150019Z Image: ubuntu-26.04
+2026-11-08T10:26:50.2150552Z Version: 20261101.186.1
+2026-11-08T10:26:50.2151617Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-08T10:26:50.2152897Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+2026-11-08T10:26:50.2153678Z ##[endgroup]
+2026-11-08T10:26:50.2154655Z ##[group]GITHUB_TOKEN Permissions
+2026-11-08T10:26:50.2156418Z Contents: read
+2026-11-08T10:26:50.2156989Z Metadata: read
+2026-11-08T10:26:50.2157488Z ##[endgroup]
+2026-11-08T10:26:50.2159283Z Secret source: Actions
+2026-11-08T10:26:50.2160147Z Cache mode: write
+2026-11-08T10:26:50.2160713Z Prepare workflow directory
+2026-11-08T10:26:50.2442969Z Prepare all required actions
+2026-11-08T10:26:50.2501575Z Getting action download info
+2026-11-08T10:26:50.5840090Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-08T10:26:50.7817705Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-08T10:26:50.8560518Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-08T10:26:51.0423203Z Complete job name: Python 3.10 mathematical and epistemic checks
+2026-11-08T10:26:51.1493059Z ##[group]Run actions/checkout@v4
+2026-11-08T10:26:51.1493749Z with:
+2026-11-08T10:26:51.1494100Z   fetch-depth: 0
+2026-11-08T10:26:51.1494473Z   repository: femboy2112/SUCC
+2026-11-08T10:26:51.1497967Z   token: ***
+2026-11-08T10:26:51.1498326Z   ssh-strict: true
+2026-11-08T10:26:51.1498691Z   ssh-user: git
+2026-11-08T10:26:51.1499053Z   persist-credentials: true
+2026-11-08T10:26:51.1499471Z   clean: true
+2026-11-08T10:26:51.1499839Z   sparse-checkout-cone-mode: true
+2026-11-08T10:26:51.1500257Z   fetch-tags: false
+2026-11-08T10:26:51.1500618Z   show-progress: true
+2026-11-08T10:26:51.1500976Z   lfs: false
+2026-11-08T10:26:51.1501311Z   submodules: false
+2026-11-08T10:26:51.1501673Z   set-safe-directory: true
+2026-11-08T10:26:51.1502079Z   allow-unsafe-pr-checkout: false
+2026-11-08T10:26:51.1502642Z ##[endgroup]
+2026-11-08T10:26:51.3677652Z Syncing repository: femboy2112/SUCC
+2026-11-08T10:26:51.3679659Z ##[group]Getting Git version info
+2026-11-08T10:26:51.3680259Z Working directory is '/home/runner/work/SUCC/SUCC'
+2026-11-08T10:26:51.3681311Z [command]/usr/bin/git version
+2026-11-08T10:26:51.3695552Z git version 2.56.0
+2026-11-08T10:26:51.3712230Z ##[endgroup]
+2026-11-08T10:26:51.3736558Z Temporarily overriding HOME='/home/runner/work/_temp/42a11d96-4a24-420c-af11-3602f01498e2' before making global git config changes
+2026-11-08T10:26:51.3738778Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:26:51.3740541Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SUCC/SUCC
+2026-11-08T10:26:51.3791704Z Deleting the contents of '/home/runner/work/SUCC/SUCC'
+2026-11-08T10:26:51.3795143Z ##[group]Initializing the repository
+2026-11-08T10:26:51.3799997Z [command]/usr/bin/git init /home/runner/work/SUCC/SUCC
+2026-11-08T10:26:51.3905194Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-08T10:26:51.3906556Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-08T10:26:51.3907358Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-08T10:26:51.3907981Z hint: call:
+2026-11-08T10:26:51.3908345Z hint:
+2026-11-08T10:26:51.3908795Z hint: 	git config --global init.defaultBranch <name>
+2026-11-08T10:26:51.3909321Z hint:
+2026-11-08T10:26:51.3909827Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-08T10:26:51.3910580Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-08T10:26:51.3911225Z hint:
+2026-11-08T10:26:51.3911627Z hint: 	git branch -m <name>
+2026-11-08T10:26:51.3912044Z hint:
+2026-11-08T10:26:51.3912575Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-08T10:26:51.3920374Z Initialized empty Git repository in /home/runner/work/SUCC/SUCC/.git/
+2026-11-08T10:26:51.3936006Z [command]/usr/bin/git remote add origin https://github.com/femboy2112/SUCC
+2026-11-08T10:26:51.3986935Z ##[endgroup]
+2026-11-08T10:26:51.3987849Z ##[group]Disabling automatic garbage collection
+2026-11-08T10:26:51.3990585Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-08T10:26:51.4031174Z ##[endgroup]
+2026-11-08T10:26:51.4032079Z ##[group]Setting up auth
+2026-11-08T10:26:51.4035580Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:26:51.4073177Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T10:26:51.4545656Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:26:51.4580087Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T10:26:51.4837619Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T10:26:51.4870395Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T10:26:51.5133150Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-08T10:26:51.5177594Z ##[endgroup]
+2026-11-08T10:26:51.5178666Z ##[group]Fetching the repository
+2026-11-08T10:26:51.5187617Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-11-08T10:26:53.4508822Z From https://github.com/femboy2112/SUCC
+2026-11-08T10:26:53.4509787Z  * [new branch]        archive/2026-10-14/integration/gaussian-moat-audit-2026-10-12 -> origin/archive/2026-10-14/integration/gaussian-moat-audit-2026-10-12
+2026-11-08T10:26:53.4510789Z  * [new branch]        archive/2026-10-14/integration/succ-carrier-complete-2026-10-13 -> origin/archive/2026-10-14/integration/succ-carrier-complete-2026-10-13
+2026-11-08T10:26:53.4511981Z  * [new branch]        archive/2026-10-14/integration/succ-consolidation-2026-10-11 -> origin/archive/2026-10-14/integration/succ-consolidation-2026-10-11
+2026-11-08T10:26:53.4513514Z  * [new branch]        archive/2026-10-14/research/absorbing-hard-succ-finite-transmission-2026-10-10 -> origin/archive/2026-10-14/research/absorbing-hard-succ-finite-transmission-2026-10-10
+2026-11-08T10:26:53.4515340Z  * [new branch]        archive/2026-10-14/research/alexander-horned-source-observer-2026-10-14 -> origin/archive/2026-10-14/research/alexander-horned-source-observer-2026-10-14
+2026-11-08T10:26:53.4516683Z  * [new branch]        archive/2026-10-14/research/alexander-wild-ambient-observer-2026-10-14 -> origin/archive/2026-10-14/research/alexander-wild-ambient-observer-2026-10-14
+2026-11-08T10:26:53.4517714Z  * [new branch]        archive/2026-10-14/research/all-places-model-interaction-zeta-2026-10-14 -> origin/archive/2026-10-14/research/all-places-model-interaction-zeta-2026-10-14
+2026-11-08T10:26:53.4519306Z  * [new branch]        archive/2026-10-14/research/arithmetic-meta-weil-boundary-2026-10-14 -> origin/archive/2026-10-14/research/arithmetic-meta-weil-boundary-2026-10-14
+2026-11-08T10:26:53.4520466Z  * [new branch]        archive/2026-10-14/research/basis-indexed-boundary-transport-2026-10-11 -> origin/archive/2026-10-14/research/basis-indexed-boundary-transport-2026-10-11
+2026-11-08T10:26:53.4521570Z  * [new branch]        archive/2026-10-14/research/black-sun-ii-coverage-theory-2026-10-14 -> origin/archive/2026-10-14/research/black-sun-ii-coverage-theory-2026-10-14
+2026-11-08T10:26:53.4522463Z  * [new branch]        archive/2026-10-14/research/black-sun-iii-wild-limits-2026-10-14 -> origin/archive/2026-10-14/research/black-sun-iii-wild-limits-2026-10-14
+2026-11-08T10:26:53.4523373Z  * [new branch]        archive/2026-10-14/research/black-sun-independent-campaign-2026-10-14 -> origin/archive/2026-10-14/research/black-sun-independent-campaign-2026-10-14
+2026-11-08T10:26:53.4524349Z  * [new branch]        archive/2026-10-14/research/black-sun-iv-zeno-completion-2026-10-14 -> origin/archive/2026-10-14/research/black-sun-iv-zeno-completion-2026-10-14
+2026-11-08T10:26:53.4525837Z  * [new branch]        archive/2026-10-14/research/cambrian-observational-realization-2026-10-13 -> origin/archive/2026-10-14/research/cambrian-observational-realization-2026-10-13
+2026-11-08T10:26:53.4527484Z  * [new branch]        archive/2026-10-14/research/carrier-indexed-unification-2026-10-13 -> origin/archive/2026-10-14/research/carrier-indexed-unification-2026-10-13
+2026-11-08T10:26:53.4528832Z  * [new branch]        archive/2026-10-14/research/carrier-locked-dual-succ-rigidity-2026-10-13 -> origin/archive/2026-10-14/research/carrier-locked-dual-succ-rigidity-2026-10-13
+2026-11-08T10:26:53.4529933Z  * [new branch]        archive/2026-10-14/research/carrier-relative-identifiability-realization-2026-10-12 -> origin/archive/2026-10-14/research/carrier-relative-identifiability-realization-2026-10-12
+2026-11-08T10:26:53.4531166Z  * [new branch]        archive/2026-10-14/research/categorical-repair-discovery-2026-10-12 -> origin/archive/2026-10-14/research/categorical-repair-discovery-2026-10-12
+2026-11-08T10:26:53.4532078Z  * [new branch]        archive/2026-10-14/research/cegis-categorical-discovery-2026-10-13 -> origin/archive/2026-10-14/research/cegis-categorical-discovery-2026-10-13
+2026-11-08T10:26:53.4532961Z  * [new branch]        archive/2026-10-14/research/certified-contour-suzuki-2026-10-14 -> origin/archive/2026-10-14/research/certified-contour-suzuki-2026-10-14
+2026-11-08T10:26:53.4533876Z  * [new branch]        archive/2026-10-14/research/chaos-quotients-source-debt-2026-10-12 -> origin/archive/2026-10-14/research/chaos-quotients-source-debt-2026-10-12
+2026-11-08T10:26:53.4535070Z  * [new branch]        archive/2026-10-14/research/circle-cross-language-translation-2026-10-11 -> origin/archive/2026-10-14/research/circle-cross-language-translation-2026-10-11
+2026-11-08T10:26:53.4536406Z  * [new branch]        archive/2026-10-14/research/contextual-heuristic-inference-2026-10-12 -> origin/archive/2026-10-14/research/contextual-heuristic-inference-2026-10-12
+2026-11-08T10:26:53.4537588Z  * [new branch]        archive/2026-10-14/research/covariant-epistemic-momentum-descent-2026-10-12 -> origin/archive/2026-10-14/research/covariant-epistemic-momentum-descent-2026-10-12
+2026-11-08T10:26:53.4539326Z  * [new branch]        archive/2026-10-14/research/diagonal-adelic-zeta-source-reciprocity-2026-10-12 -> origin/archive/2026-10-14/research/diagonal-adelic-zeta-source-reciprocity-2026-10-12
+2026-11-08T10:26:53.4540347Z  * [new branch]        archive/2026-10-14/research/diagonal-ice-climber-tower-holonomy-2026-10-12 -> origin/archive/2026-10-14/research/diagonal-ice-climber-tower-holonomy-2026-10-12
+2026-11-08T10:26:53.4541324Z  * [new branch]        archive/2026-10-14/research/discrete-derivative-succ-integration-2026-10-11 -> origin/archive/2026-10-14/research/discrete-derivative-succ-integration-2026-10-11
+2026-11-08T10:26:53.4542459Z  * [new branch]        archive/2026-10-14/research/dual-e-boundary-correlation-2026-10-12 -> origin/archive/2026-10-14/research/dual-e-boundary-correlation-2026-10-12
+2026-11-08T10:26:53.4543512Z  * [new branch]        archive/2026-10-14/research/empirical-carrier-higgs-spectral-2026-10-13 -> origin/archive/2026-10-14/research/empirical-carrier-higgs-spectral-2026-10-13
+2026-11-08T10:26:53.4544643Z  * [new branch]        archive/2026-10-14/research/eodcs-causal-nerode-moonshot-2026-10-13 -> origin/archive/2026-10-14/research/eodcs-causal-nerode-moonshot-2026-10-13
+2026-11-08T10:26:53.4546092Z  * [new branch]        archive/2026-10-14/research/eodcs-posets-cegis-covers-2026-10-13 -> origin/archive/2026-10-14/research/eodcs-posets-cegis-covers-2026-10-13
+2026-11-08T10:26:53.4547240Z  * [new branch]        archive/2026-10-14/research/eodcs-relational-choice-2026-10-13 -> origin/archive/2026-10-14/research/eodcs-relational-choice-2026-10-13
+2026-11-08T10:26:53.4548141Z  * [new branch]        archive/2026-10-14/research/euler-global-transport-minus-one-2026-10-11 -> origin/archive/2026-10-14/research/euler-global-transport-minus-one-2026-10-11
+2026-11-08T10:26:53.4549099Z  * [new branch]        archive/2026-10-14/research/evolutionary-obstruction-synthesis-2026-10-13 -> origin/archive/2026-10-14/research/evolutionary-obstruction-synthesis-2026-10-13
+2026-11-08T10:26:53.4550141Z  * [new branch]        archive/2026-10-14/research/field-relative-closure-obstruction-calculus-2026-10-12 -> origin/archive/2026-10-14/research/field-relative-closure-obstruction-calculus-2026-10-12
+2026-11-08T10:26:53.4551196Z  * [new branch]        archive/2026-10-14/research/finite-source-weil-negative-depth-2026-10-14 -> origin/archive/2026-10-14/research/finite-source-weil-negative-depth-2026-10-14
+2026-11-08T10:26:53.4552148Z  * [new branch]        archive/2026-10-14/research/gaussian-moat-certificate-duality-2026-10-12 -> origin/archive/2026-10-14/research/gaussian-moat-certificate-duality-2026-10-12
+2026-11-08T10:26:53.4553284Z  * [new branch]        archive/2026-10-14/research/gaussian-moat-voltage-transport-2026-10-11 -> origin/archive/2026-10-14/research/gaussian-moat-voltage-transport-2026-10-11
+2026-11-08T10:26:53.4554289Z  * [new branch]        archive/2026-10-14/research/gaussian-weil-conditional-certificates-2026-10-14 -> origin/archive/2026-10-14/research/gaussian-weil-conditional-certificates-2026-10-14
+2026-11-08T10:26:53.4555422Z  * [new branch]        archive/2026-10-14/research/genetic-categorical-model-fusion-2026-10-12 -> origin/archive/2026-10-14/research/genetic-categorical-model-fusion-2026-10-12
+2026-11-08T10:26:53.4556285Z  * [new branch]        archive/2026-10-14/research/global-model-sandwich-2026-10-14 -> origin/archive/2026-10-14/research/global-model-sandwich-2026-10-14
+2026-11-08T10:26:53.4557255Z  * [new branch]        archive/2026-10-14/research/historical-maxwell-lorentz-obstruction-repair-2026-10-12 -> origin/archive/2026-10-14/research/historical-maxwell-lorentz-obstruction-repair-2026-10-12
+2026-11-08T10:26:53.4558291Z  * [new branch]        archive/2026-10-14/research/ideal-frame-completion-trichotomy-2026-10-10 -> origin/archive/2026-10-14/research/ideal-frame-completion-trichotomy-2026-10-10
+2026-11-08T10:26:53.4559241Z  * [new branch]        archive/2026-10-14/research/knowledge-ladder-synchronization-2026-10-10 -> origin/archive/2026-10-14/research/knowledge-ladder-synchronization-2026-10-10
+2026-11-08T10:26:53.4560146Z  * [new branch]        archive/2026-10-14/research/local-global-yoneda-gluing-2026-10-12 -> origin/archive/2026-10-14/research/local-global-yoneda-gluing-2026-10-12
+2026-11-08T10:26:53.4560983Z  * [new branch]        archive/2026-10-14/research/logistic-observer-tree-2026-10-12 -> origin/archive/2026-10-14/research/logistic-observer-tree-2026-10-12
+2026-11-08T10:26:53.4561802Z  * [new branch]        archive/2026-10-14/research/mahler-clock-kummer-succ-2026-10-11 -> origin/archive/2026-10-14/research/mahler-clock-kummer-succ-2026-10-11
+2026-11-08T10:26:53.4562719Z  * [new branch]        archive/2026-10-14/research/many-worlds-atlas-2026-10-13 -> origin/archive/2026-10-14/research/many-worlds-atlas-2026-10-13
+2026-11-08T10:26:53.4563487Z  * [new branch]        archive/2026-10-14/research/many-worlds-swarm-2026-10-13 -> origin/archive/2026-10-14/research/many-worlds-swarm-2026-10-13
+2026-11-08T10:26:53.4564343Z  * [new branch]        archive/2026-10-14/research/meta-interaction-contour-descent-2026-10-14 -> origin/archive/2026-10-14/research/meta-interaction-contour-descent-2026-10-14
+2026-11-08T10:26:53.4565456Z  * [new branch]        archive/2026-10-14/research/misiurewicz-chaotic-phase-e-2026-10-12 -> origin/archive/2026-10-14/research/misiurewicz-chaotic-phase-e-2026-10-12
+2026-11-08T10:26:53.4566319Z  * [new branch]        archive/2026-10-14/research/no-ghost-causal-gluing-2026-10-13 -> origin/archive/2026-10-14/research/no-ghost-causal-gluing-2026-10-13
+2026-11-08T10:26:53.4567244Z  * [new branch]        archive/2026-10-14/research/noncommuting-source-proof-transport-2026-10-11 -> origin/archive/2026-10-14/research/noncommuting-source-proof-transport-2026-10-11
+2026-11-08T10:26:53.4568237Z  * [new branch]        archive/2026-10-14/research/observational-succ-foundation-import-2026-10-10 -> origin/archive/2026-10-14/research/observational-succ-foundation-import-2026-10-10
+2026-11-08T10:26:53.4569314Z  * [new branch]        archive/2026-10-14/research/observer-relative-dynamic-fourier-virtual-zeros-2026-10-12 -> origin/archive/2026-10-14/research/observer-relative-dynamic-fourier-virtual-zeros-2026-10-12
+2026-11-08T10:26:53.4570356Z  * [new branch]        archive/2026-10-14/research/operational-yoneda-policy-descent-2026-10-11 -> origin/archive/2026-10-14/research/operational-yoneda-policy-descent-2026-10-11
+2026-11-08T10:26:53.4571273Z  * [new branch]        archive/2026-10-14/research/pascal-rotated-gamma-transport-2026-10-14 -> origin/archive/2026-10-14/research/pascal-rotated-gamma-transport-2026-10-14
+2026-11-08T10:26:53.4572279Z  * [new branch]        archive/2026-10-14/research/positive-carrier-realization-2026-10-13 -> origin/archive/2026-10-14/research/positive-carrier-realization-2026-10-13
+2026-11-08T10:26:53.4573137Z  * [new branch]        archive/2026-10-14/research/prime-form-heat-mellin-2026-10-14 -> origin/archive/2026-10-14/research/prime-form-heat-mellin-2026-10-14
+2026-11-08T10:26:53.4573988Z  * [new branch]        archive/2026-10-14/research/proof-backaction-debt-zeno-2026-10-11 -> origin/archive/2026-10-14/research/proof-backaction-debt-zeno-2026-10-11
+2026-11-08T10:26:53.4574974Z  * [new branch]        archive/2026-10-14/research/proof-carrier-backaction-2026-10-11 -> origin/archive/2026-10-14/research/proof-carrier-backaction-2026-10-11
+2026-11-08T10:26:53.4575852Z  * [new branch]        archive/2026-10-14/research/property-proof-graph-bootstrap-2026-10-13 -> origin/archive/2026-10-14/research/property-proof-graph-bootstrap-2026-10-13
+2026-11-08T10:26:53.4576751Z  * [new branch]        archive/2026-10-14/research/proto-succ-variable-unit-lift-2026-10-11 -> origin/archive/2026-10-14/research/proto-succ-variable-unit-lift-2026-10-11
+2026-11-08T10:26:53.4577653Z  * [new branch]        archive/2026-10-14/research/real-place-weil-identification-2026-10-14 -> origin/archive/2026-10-14/research/real-place-weil-identification-2026-10-14
+2026-11-08T10:26:53.4578643Z  * [new branch]        archive/2026-10-14/research/recursive-meta-interaction-coercivity-2026-10-14 -> origin/archive/2026-10-14/research/recursive-meta-interaction-coercivity-2026-10-14
+2026-11-08T10:26:53.4579598Z  * [new branch]        archive/2026-10-14/research/relative-delta-basis-transport-2026-10-11 -> origin/archive/2026-10-14/research/relative-delta-basis-transport-2026-10-11
+2026-11-08T10:26:53.4580497Z  * [new branch]        archive/2026-10-14/research/residue-one-adeles-and-zeta-p-2026-10-11 -> origin/archive/2026-10-14/research/residue-one-adeles-and-zeta-p-2026-10-11
+2026-11-08T10:26:53.4581549Z  * [new branch]        archive/2026-10-14/research/shadow-succ-fucc-global-inference-2026-10-12 -> origin/archive/2026-10-14/research/shadow-succ-fucc-global-inference-2026-10-12
+2026-11-08T10:26:53.4582484Z  * [new branch]        archive/2026-10-14/research/shared-carrier-boundary-descent-2026-10-12 -> origin/archive/2026-10-14/research/shared-carrier-boundary-descent-2026-10-12
+2026-11-08T10:26:53.4583402Z  * [new branch]        archive/2026-10-14/research/signed-weiI-h1-spectral-tail-2026-10-14 -> origin/archive/2026-10-14/research/signed-weiI-h1-spectral-tail-2026-10-14
+2026-11-08T10:26:53.4584271Z  * [new branch]        archive/2026-10-14/research/signed-weil-h1-spectral-tail-2026-10-14 -> origin/archive/2026-10-14/research/signed-weil-h1-spectral-tail-2026-10-14
+2026-11-08T10:26:53.4585426Z  * [new branch]        archive/2026-10-14/research/source-driven-dynamic-boundary-inverse-2026-10-12 -> origin/archive/2026-10-14/research/source-driven-dynamic-boundary-inverse-2026-10-12
+2026-11-08T10:26:53.4586495Z  * [new branch]        archive/2026-10-14/research/source-interaction-adelic-analytic-gluing-2026-10-14 -> origin/archive/2026-10-14/research/source-interaction-adelic-analytic-gluing-2026-10-14
+2026-11-08T10:26:53.4587442Z  * [new branch]        archive/2026-10-14/research/source-relative-coverage-2026-10-12 -> origin/archive/2026-10-14/research/source-relative-coverage-2026-10-12
+2026-11-08T10:26:53.4588344Z  * [new branch]        archive/2026-10-14/research/source-relative-precision-transport-2026-10-11 -> origin/archive/2026-10-14/research/source-relative-precision-transport-2026-10-11
+2026-11-08T10:26:53.4589276Z  * [new branch]        archive/2026-10-14/research/structural-coupling-discovery-2026-10-13 -> origin/archive/2026-10-14/research/structural-coupling-discovery-2026-10-13
+2026-11-08T10:26:53.4590195Z  * [new branch]        archive/2026-10-14/research/succ-gaussian-global-constraint-2026-10-14 -> origin/archive/2026-10-14/research/succ-gaussian-global-constraint-2026-10-14
+2026-11-08T10:26:53.4591232Z  * [new branch]        archive/2026-10-14/research/suzuki-canonical-moment-schur-2026-10-14 -> origin/archive/2026-10-14/research/suzuki-canonical-moment-schur-2026-10-14
+2026-11-08T10:26:53.4592135Z  * [new branch]        archive/2026-10-14/research/suzuki-signed-tail-resolvent-2026-10-14 -> origin/archive/2026-10-14/research/suzuki-signed-tail-resolvent-2026-10-14
+2026-11-08T10:26:53.4592916Z  * [new branch]        archive/2026-10-14/research/swm-a01-2026-10-13 -> origin/archive/2026-10-14/research/swm-a01-2026-10-13
+2026-11-08T10:26:53.4593536Z  * [new branch]        archive/2026-10-14/research/swm-a02-2026-10-13 -> origin/archive/2026-10-14/research/swm-a02-2026-10-13
+2026-11-08T10:26:53.4594158Z  * [new branch]        archive/2026-10-14/research/swm-a03-2026-10-13 -> origin/archive/2026-10-14/research/swm-a03-2026-10-13
+2026-11-08T10:26:53.4594913Z  * [new branch]        archive/2026-10-14/research/swm-a04-2026-10-13 -> origin/archive/2026-10-14/research/swm-a04-2026-10-13
+2026-11-08T10:26:53.4595571Z  * [new branch]        archive/2026-10-14/research/swm-a05-2026-10-13 -> origin/archive/2026-10-14/research/swm-a05-2026-10-13
+2026-11-08T10:26:53.4596195Z  * [new branch]        archive/2026-10-14/research/swm-a06-2026-10-13 -> origin/archive/2026-10-14/research/swm-a06-2026-10-13
+2026-11-08T10:26:53.4596814Z  * [new branch]        archive/2026-10-14/research/swm-a07-2026-10-13 -> origin/archive/2026-10-14/research/swm-a07-2026-10-13
+2026-11-08T10:26:53.4597418Z  * [new branch]        archive/2026-10-14/research/swm-a08-2026-10-13 -> origin/archive/2026-10-14/research/swm-a08-2026-10-13
+2026-11-08T10:26:53.4598027Z  * [new branch]        archive/2026-10-14/research/swm-b09-2026-10-13 -> origin/archive/2026-10-14/research/swm-b09-2026-10-13
+2026-11-08T10:26:53.4598657Z  * [new branch]        archive/2026-10-14/research/swm-b10-2026-10-13 -> origin/archive/2026-10-14/research/swm-b10-2026-10-13
+2026-11-08T10:26:53.4599275Z  * [new branch]        archive/2026-10-14/research/swm-b11-2026-10-13 -> origin/archive/2026-10-14/research/swm-b11-2026-10-13
+2026-11-08T10:26:53.4600007Z  * [new branch]        archive/2026-10-14/research/swm-b12-2026-10-13 -> origin/archive/2026-10-14/research/swm-b12-2026-10-13
+2026-11-08T10:26:53.4600623Z  * [new branch]        archive/2026-10-14/research/swm-b13-2026-10-13 -> origin/archive/2026-10-14/research/swm-b13-2026-10-13
+2026-11-08T10:26:53.4601234Z  * [new branch]        archive/2026-10-14/research/swm-b14-2026-10-13 -> origin/archive/2026-10-14/research/swm-b14-2026-10-13
+2026-11-08T10:26:53.4601836Z  * [new branch]        archive/2026-10-14/research/swm-b15-2026-10-13 -> origin/archive/2026-10-14/research/swm-b15-2026-10-13
+2026-11-08T10:26:53.4602452Z  * [new branch]        archive/2026-10-14/research/swm-b16-2026-10-13 -> origin/archive/2026-10-14/research/swm-b16-2026-10-13
+2026-11-08T10:26:53.4603069Z  * [new branch]        archive/2026-10-14/research/swm-c17-2026-10-13 -> origin/archive/2026-10-14/research/swm-c17-2026-10-13
+2026-11-08T10:26:53.4603686Z  * [new branch]        archive/2026-10-14/research/swm-c18-2026-10-13 -> origin/archive/2026-10-14/research/swm-c18-2026-10-13
+2026-11-08T10:26:53.4604310Z  * [new branch]        archive/2026-10-14/research/swm-c19-2026-10-13 -> origin/archive/2026-10-14/research/swm-c19-2026-10-13
+2026-11-08T10:26:53.4605167Z  * [new branch]        archive/2026-10-14/research/swm-c20-2026-10-13 -> origin/archive/2026-10-14/research/swm-c20-2026-10-13
+2026-11-08T10:26:53.4605791Z  * [new branch]        archive/2026-10-14/research/swm-c21-2026-10-13 -> origin/archive/2026-10-14/research/swm-c21-2026-10-13
+2026-11-08T10:26:53.4606417Z  * [new branch]        archive/2026-10-14/research/swm-c22-2026-10-13 -> origin/archive/2026-10-14/research/swm-c22-2026-10-13
+2026-11-08T10:26:53.4607045Z  * [new branch]        archive/2026-10-14/research/swm-c23-2026-10-13 -> origin/archive/2026-10-14/research/swm-c23-2026-10-13
+2026-11-08T10:26:53.4607661Z  * [new branch]        archive/2026-10-14/research/swm-c24-2026-10-13 -> origin/archive/2026-10-14/research/swm-c24-2026-10-13
+2026-11-08T10:26:53.4608397Z  * [new branch]        archive/2026-10-14/research/swm-d25-2026-10-13 -> origin/archive/2026-10-14/research/swm-d25-2026-10-13
+2026-11-08T10:26:53.4609015Z  * [new branch]        archive/2026-10-14/research/swm-d26-2026-10-13 -> origin/archive/2026-10-14/research/swm-d26-2026-10-13
+2026-11-08T10:26:53.4609643Z  * [new branch]        archive/2026-10-14/research/swm-d27-2026-10-13 -> origin/archive/2026-10-14/research/swm-d27-2026-10-13
+2026-11-08T10:26:53.4610264Z  * [new branch]        archive/2026-10-14/research/swm-d28-2026-10-13 -> origin/archive/2026-10-14/research/swm-d28-2026-10-13
+2026-11-08T10:26:53.4610889Z  * [new branch]        archive/2026-10-14/research/swm-d29-2026-10-13 -> origin/archive/2026-10-14/research/swm-d29-2026-10-13
+2026-11-08T10:26:53.4611502Z  * [new branch]        archive/2026-10-14/research/swm-d30-2026-10-13 -> origin/archive/2026-10-14/research/swm-d30-2026-10-13
+2026-11-08T10:26:53.4612116Z  * [new branch]        archive/2026-10-14/research/swm-d31-2026-10-13 -> origin/archive/2026-10-14/research/swm-d31-2026-10-13
+2026-11-08T10:26:53.4612743Z  * [new branch]        archive/2026-10-14/research/swm-d32-2026-10-13 -> origin/archive/2026-10-14/research/swm-d32-2026-10-13
+2026-11-08T10:26:53.4613365Z  * [new branch]        archive/2026-10-14/research/swm-e33-2026-10-13 -> origin/archive/2026-10-14/research/swm-e33-2026-10-13
+2026-11-08T10:26:53.4614044Z  * [new branch]        archive/2026-10-14/research/swm-e34-2026-10-13 -> origin/archive/2026-10-14/research/swm-e34-2026-10-13
+2026-11-08T10:26:53.4615040Z  * [new branch]        archive/2026-10-14/research/swm-e35-2026-10-13 -> origin/archive/2026-10-14/research/swm-e35-2026-10-13
+2026-11-08T10:26:53.4616002Z  * [new branch]        archive/2026-10-14/research/swm-e36-2026-10-13 -> origin/archive/2026-10-14/research/swm-e36-2026-10-13
+2026-11-08T10:26:53.4616639Z  * [new branch]        archive/2026-10-14/research/swm-e37-2026-10-13 -> origin/archive/2026-10-14/research/swm-e37-2026-10-13
+2026-11-08T10:26:53.4617409Z  * [new branch]        archive/2026-10-14/research/swm-e38-2026-10-13 -> origin/archive/2026-10-14/research/swm-e38-2026-10-13
+2026-11-08T10:26:53.4618121Z  * [new branch]        archive/2026-10-14/research/swm-e39-2026-10-13 -> origin/archive/2026-10-14/research/swm-e39-2026-10-13
+2026-11-08T10:26:53.4618830Z  * [new branch]        archive/2026-10-14/research/swm-e40-2026-10-13 -> origin/archive/2026-10-14/research/swm-e40-2026-10-13
+2026-11-08T10:26:53.4619460Z  * [new branch]        archive/2026-10-14/research/swm-f41-2026-10-13 -> origin/archive/2026-10-14/research/swm-f41-2026-10-13
+2026-11-08T10:26:53.4620093Z  * [new branch]        archive/2026-10-14/research/swm-f42-2026-10-13 -> origin/archive/2026-10-14/research/swm-f42-2026-10-13
+2026-11-08T10:26:53.4620739Z  * [new branch]        archive/2026-10-14/research/swm-f43-2026-10-13 -> origin/archive/2026-10-14/research/swm-f43-2026-10-13
+2026-11-08T10:26:53.4621393Z  * [new branch]        archive/2026-10-14/research/swm-f44-2026-10-13 -> origin/archive/2026-10-14/research/swm-f44-2026-10-13
+2026-11-08T10:26:53.4622076Z  * [new branch]        archive/2026-10-14/research/swm-f45-2026-10-13 -> origin/archive/2026-10-14/research/swm-f45-2026-10-13
+2026-11-08T10:26:53.4622720Z  * [new branch]        archive/2026-10-14/research/swm-f46-2026-10-13 -> origin/archive/2026-10-14/research/swm-f46-2026-10-13
+2026-11-08T10:26:53.4623468Z  * [new branch]        archive/2026-10-14/research/swm-f47-2026-10-13 -> origin/archive/2026-10-14/research/swm-f47-2026-10-13
+2026-11-08T10:26:53.4624207Z  * [new branch]        archive/2026-10-14/research/swm-f48-2026-10-13 -> origin/archive/2026-10-14/research/swm-f48-2026-10-13
+2026-11-08T10:26:53.4625269Z  * [new branch]        archive/2026-10-14/research/swm-parallel-audit-2026-10-13 -> origin/archive/2026-10-14/research/swm-parallel-audit-2026-10-13
+2026-11-08T10:26:53.4625995Z  * [new branch]        archive/2026-10-14/research/swm-rx-c19-2026-10-13 -> origin/archive/2026-10-14/research/swm-rx-c19-2026-10-13
+2026-11-08T10:26:53.4627196Z  * [new branch]        archive/2026-10-14/research/swm-x01-2026-10-13 -> origin/archive/2026-10-14/research/swm-x01-2026-10-13
+2026-11-08T10:26:53.4628147Z  * [new branch]        archive/2026-10-14/research/swm-x02-2026-10-13 -> origin/archive/2026-10-14/research/swm-x02-2026-10-13
+2026-11-08T10:26:53.4629116Z  * [new branch]        archive/2026-10-14/research/swm-x03-2026-10-13 -> origin/archive/2026-10-14/research/swm-x03-2026-10-13
+2026-11-08T10:26:53.4630106Z  * [new branch]        archive/2026-10-14/research/swm-x04-2026-10-13 -> origin/archive/2026-10-14/research/swm-x04-2026-10-13
+2026-11-08T10:26:53.4631036Z  * [new branch]        archive/2026-10-14/research/swm-x05-2026-10-13 -> origin/archive/2026-10-14/research/swm-x05-2026-10-13
+2026-11-08T10:26:53.4631791Z  * [new branch]        archive/2026-10-14/research/swm-x06-2026-10-13 -> origin/archive/2026-10-14/research/swm-x06-2026-10-13
+2026-11-08T10:26:53.4632688Z  * [new branch]        archive/2026-10-14/research/swm-x07-2026-10-13 -> origin/archive/2026-10-14/research/swm-x07-2026-10-13
+2026-11-08T10:26:53.4633332Z  * [new branch]        archive/2026-10-14/research/swm-x08-2026-10-13 -> origin/archive/2026-10-14/research/swm-x08-2026-10-13
+2026-11-08T10:26:53.4633948Z  * [new branch]        archive/2026-10-14/research/swm-x09-2026-10-13 -> origin/archive/2026-10-14/research/swm-x09-2026-10-13
+2026-11-08T10:26:53.4634554Z  * [new branch]        archive/2026-10-14/research/swm-x10-2026-10-13 -> origin/archive/2026-10-14/research/swm-x10-2026-10-13
+2026-11-08T10:26:53.4635364Z  * [new branch]        archive/2026-10-14/research/swm-x11-2026-10-13 -> origin/archive/2026-10-14/research/swm-x11-2026-10-13
+2026-11-08T10:26:53.4636005Z  * [new branch]        archive/2026-10-14/research/swm-x12-2026-10-13 -> origin/archive/2026-10-14/research/swm-x12-2026-10-13
+2026-11-08T10:26:53.4636776Z  * [new branch]        archive/2026-10-14/research/tlica-genie-self-anchor-gauge-2026-10-13 -> origin/archive/2026-10-14/research/tlica-genie-self-anchor-gauge-2026-10-13
+2026-11-08T10:26:53.4637818Z  * [new branch]        archive/2026-10-14/research/twin-frame-invariance-circle-2026-10-11 -> origin/archive/2026-10-14/research/twin-frame-invariance-circle-2026-10-11
+2026-11-08T10:26:53.4638826Z  * [new branch]        archive/2026-10-14/research/voyager-observational-profinite-completion-2026-10-13 -> origin/archive/2026-10-14/research/voyager-observational-profinite-completion-2026-10-13
+2026-11-08T10:26:53.4639993Z  * [new branch]        archive/2026-10-14/research/weil-idealhard-obstruction-2026-10-14 -> origin/archive/2026-10-14/research/weil-idealhard-obstruction-2026-10-14
+2026-11-08T10:26:53.4640876Z  * [new branch]        archive/2026-10-14/research/wild-adelic-embedding-solenoid-2026-10-14 -> origin/archive/2026-10-14/research/wild-adelic-embedding-solenoid-2026-10-14
+2026-11-08T10:26:53.4641775Z  * [new branch]        archive/2026-10-14/research/wild-embedding-boundary-descent-2026-10-14 -> origin/archive/2026-10-14/research/wild-embedding-boundary-descent-2026-10-14
+2026-11-08T10:26:53.4642697Z  * [new branch]        archive/2026-10-14/research/xi-complex-contour-weil-residue-2026-10-14 -> origin/archive/2026-10-14/research/xi-complex-contour-weil-residue-2026-10-14
+2026-11-08T10:26:53.4643602Z  * [new branch]        archive/2026-10-14/research/xi-theta-certified-jets-cave-2026-10-14 -> origin/archive/2026-10-14/research/xi-theta-certified-jets-cave-2026-10-14
+2026-11-08T10:26:53.4644478Z  * [new branch]        archive/2026-10-14/research/zeno-completion-ambient-weil-2026-10-14 -> origin/archive/2026-10-14/research/zeno-completion-ambient-weil-2026-10-14
+2026-11-08T10:26:53.4645590Z  * [new branch]        archive/2026-10-14/research/zeno-finite-global-proof-calculus-2026-10-14 -> origin/archive/2026-10-14/research/zeno-finite-global-proof-calculus-2026-10-14
+2026-11-08T10:26:53.4646513Z  * [new branch]        archive/2026-10-14/research/zeno-limit-transport-calculus-2026-10-14 -> origin/archive/2026-10-14/research/zeno-limit-transport-calculus-2026-10-14
+2026-11-08T10:26:53.4647548Z  * [new branch]        archive/2026-10-14/research/zeno-proof-debt-synthesis-2026-10-14 -> origin/archive/2026-10-14/research/zeno-proof-debt-synthesis-2026-10-14
+2026-11-08T10:26:53.4648449Z  * [new branch]        archive/2026-10-14/research/zero-centered-residue-observers-2026-10-13 -> origin/archive/2026-10-14/research/zero-centered-residue-observers-2026-10-13
+2026-11-08T10:26:53.4649197Z  * [new branch]        astra-cloud/duck-pi-kernel-2026-10-21 -> origin/astra-cloud/duck-pi-kernel-2026-10-21
+2026-11-08T10:26:53.4649776Z  * [new branch]        astra-cloud/vii-arithmetic-2026-10-20 -> origin/astra-cloud/vii-arithmetic-2026-10-20
+2026-11-08T10:26:53.4650346Z  * [new branch]        astra-cloud/vii-operator-2026-10-20 -> origin/astra-cloud/vii-operator-2026-10-20
+2026-11-08T10:26:53.4650884Z  * [new branch]        astra-cloud/vii-slope-2026-10-20 -> origin/astra-cloud/vii-slope-2026-10-20
+2026-11-08T10:26:53.4651515Z  * [new branch]        docs/author-analogy-provenance-ledger-2026-10-28 -> origin/docs/author-analogy-provenance-ledger-2026-10-28
+2026-11-08T10:26:53.4652222Z  * [new branch]        docs/math-render-entrypoints-545-2026-11-08 -> origin/docs/math-render-entrypoints-545-2026-11-08
+2026-11-08T10:26:53.4652799Z  * [new branch]        fix/main-xix-pr-count-2026-11-01 -> origin/fix/main-xix-pr-count-2026-11-01
+2026-11-08T10:26:53.4653461Z  * [new branch]        integrate/academic-main-ix-pi-circle-source-2026-10-23 -> origin/integrate/academic-main-ix-pi-circle-source-2026-10-23
+2026-11-08T10:26:53.4654229Z  * [new branch]        integration/succ-academic-carrier-trunk-2026-10-15 -> origin/integration/succ-academic-carrier-trunk-2026-10-15
+2026-11-08T10:26:53.4655015Z  * [new branch]        integration/succ-academic-main-ii-2026-10-16 -> origin/integration/succ-academic-main-ii-2026-10-16
+2026-11-08T10:26:53.4655677Z  * [new branch]        integration/succ-academic-main-iii-2026-10-16 -> origin/integration/succ-academic-main-iii-2026-10-16
+2026-11-08T10:26:53.4656494Z  * [new branch]        integration/succ-academic-main-v-2026-10-19 -> origin/integration/succ-academic-main-v-2026-10-19
+2026-11-08T10:26:53.4657262Z  * [new branch]        integration/succ-academic-main-vi-proof-forge-2026-10-20 -> origin/integration/succ-academic-main-vi-proof-forge-2026-10-20
+2026-11-08T10:26:53.4658398Z  * [new branch]        integration/succ-academic-main-vii-2026-10-20 -> origin/integration/succ-academic-main-vii-2026-10-20
+2026-11-08T10:26:53.4659255Z  * [new branch]        integration/succ-academic-main-viii-2026-10-21 -> origin/integration/succ-academic-main-viii-2026-10-21
+2026-11-08T10:26:53.4660268Z  * [new branch]        integration/succ-main-xiii-pi-frontier-2026-10-28 -> origin/integration/succ-main-xiii-pi-frontier-2026-10-28
+2026-11-08T10:26:53.4661376Z  * [new branch]        integration/succ-main-xiv-source-faithful-2026-10-28 -> origin/integration/succ-main-xiv-source-faithful-2026-10-28
+2026-11-08T10:26:53.4662639Z  * [new branch]        integration/succ-main-xix-angular-laurent-frontier-2026-11-01 -> origin/integration/succ-main-xix-angular-laurent-frontier-2026-11-01
+2026-11-08T10:26:53.4663736Z  * [new branch]        integration/succ-main-xv-triangle-genesis-2026-10-29 -> origin/integration/succ-main-xv-triangle-genesis-2026-10-29
+2026-11-08T10:26:53.4664677Z  * [new branch]        integration/succ-main-xvi-triangle-repair-2026-10-29 -> origin/integration/succ-main-xvi-triangle-repair-2026-10-29
+2026-11-08T10:26:53.4665705Z  * [new branch]        integration/succ-main-xvii-carrier-selected-frontier-2026-10-31 -> origin/integration/succ-main-xvii-carrier-selected-frontier-2026-10-31
+2026-11-08T10:26:53.4666725Z  * [new branch]        integration/succ-main-xviii-signed-frontier-2026-10-31 -> origin/integration/succ-main-xviii-signed-frontier-2026-10-31
+2026-11-08T10:26:53.4667727Z  * [new branch]        integration/succ-main-xx-history-first-2026-11-05 -> origin/integration/succ-main-xx-history-first-2026-11-05
+2026-11-08T10:26:53.4668949Z  * [new branch]        integration/succ-main-xxi-pinbed-reunification-2026-11-07 -> origin/integration/succ-main-xxi-pinbed-reunification-2026-11-07
+2026-11-08T10:26:53.4669778Z  * [new branch]        integration/succ-selected-current-megaround-2026-11-03 -> origin/integration/succ-selected-current-megaround-2026-11-03
+2026-11-08T10:26:53.4670334Z  * [new branch]        main       -> origin/main
+2026-11-08T10:26:53.4670798Z  * [new branch]        research/abc-clock-green-tao-2026-10-19 -> origin/research/abc-clock-green-tao-2026-10-19
+2026-11-08T10:26:53.4671463Z  * [new branch]        research/academic-main-iii-repairs-2026-10-16 -> origin/research/academic-main-iii-repairs-2026-10-16
+2026-11-08T10:26:53.4672235Z  * [new branch]        research/academic-main-iv-continuation-targets-2026-10-18 -> origin/research/academic-main-iv-continuation-targets-2026-10-18
+2026-11-08T10:26:53.4673169Z  * [new branch]        research/academic-transmutation-2026-10-18 -> origin/research/academic-transmutation-2026-10-18
+2026-11-08T10:26:53.4673890Z  * [new branch]        research/adaptive-arctan-harmonic-frame-2026-11-01 -> origin/research/adaptive-arctan-harmonic-frame-2026-11-01
+2026-11-08T10:26:53.4674660Z  * [new branch]        research/adelic-odometer-real-phase-bridge-2026-11-06 -> origin/research/adelic-odometer-real-phase-bridge-2026-11-06
+2026-11-08T10:26:53.4675629Z  * [new branch]        research/amv-moonshot-a-beck-chevalley-2026-10-19 -> origin/research/amv-moonshot-a-beck-chevalley-2026-10-19
+2026-11-08T10:26:53.4676354Z  * [new branch]        research/amv-moonshot-b-maxcut-repair-2026-10-19 -> origin/research/amv-moonshot-b-maxcut-repair-2026-10-19
+2026-11-08T10:26:53.4677113Z  * [new branch]        research/amv-moonshot-c-hologram-naturality-2026-10-19 -> origin/research/amv-moonshot-c-hologram-naturality-2026-10-19
+2026-11-08T10:26:53.4677849Z  * [new branch]        research/amv-moonshot-d-abc-moment-2026-10-19 -> origin/research/amv-moonshot-d-abc-moment-2026-10-19
+2026-11-08T10:26:53.4678508Z  * [new branch]        research/amv-moonshot-e-rh-source-2026-10-19 -> origin/research/amv-moonshot-e-rh-source-2026-10-19
+2026-11-08T10:26:53.4679335Z  * [new branch]        research/analytic-exile-frequency-ladder-2026-11-04 -> origin/research/analytic-exile-frequency-ladder-2026-11-04
+2026-11-08T10:26:53.4680085Z  * [new branch]        research/apollo-prime-active-domain-2026-10-15 -> origin/research/apollo-prime-active-domain-2026-10-15
+2026-11-08T10:26:53.4680897Z  * [new branch]        research/apollo-prime-interference-source-determinacy-2026-10-15 -> origin/research/apollo-prime-interference-source-determinacy-2026-10-15
+2026-11-08T10:26:53.4681735Z  * [new branch]        research/apollo-suzuki-second-third-jet-2026-10-15 -> origin/research/apollo-suzuki-second-third-jet-2026-10-15
+2026-11-08T10:26:53.4682488Z  * [new branch]        research/archimedean-numerator-oily-shear-2026-11-03 -> origin/research/archimedean-numerator-oily-shear-2026-11-03
+2026-11-08T10:26:53.4683274Z  * [new branch]        research/arctan-chiral-solenoid-relative-bbp-2026-11-01 -> origin/research/arctan-chiral-solenoid-relative-bbp-2026-11-01
+2026-11-08T10:26:53.4684102Z  * [new branch]        research/arctan-reciprocity-irrational-mirror-2026-11-01 -> origin/research/arctan-reciprocity-irrational-mirror-2026-11-01
+2026-11-08T10:26:53.4685100Z  * [new branch]        research/arithmetic-cylinder-collision-2026-10-30 -> origin/research/arithmetic-cylinder-collision-2026-10-30
+2026-11-08T10:26:53.4685864Z  * [new branch]        research/arithmetic-energy-momentum-shell-2026-10-30 -> origin/research/arithmetic-energy-momentum-shell-2026-10-30
+2026-11-08T10:26:53.4686669Z  * [new branch]        research/arithmetic-wavefront-spectral-response-2026-10-16 -> origin/research/arithmetic-wavefront-spectral-response-2026-10-16
+2026-11-08T10:26:53.4687415Z  * [new branch]        research/army-sub-log-collision-2026-11-02 -> origin/research/army-sub-log-collision-2026-11-02
+2026-11-08T10:26:53.4688092Z  * [new branch]        research/astra-cloud-abc-correlations-2026-10-20 -> origin/research/astra-cloud-abc-correlations-2026-10-20
+2026-11-08T10:26:53.4688974Z  * [new branch]        research/astra-cloud-crt-ascent-2026-10-20 -> origin/research/astra-cloud-crt-ascent-2026-10-20
+2026-11-08T10:26:53.4689634Z  * [new branch]        research/astra-cloud-formal-proofs-2026-10-20 -> origin/research/astra-cloud-formal-proofs-2026-10-20
+2026-11-08T10:26:53.4690339Z  * [new branch]        research/astra-cloud-goldbach-harmonic-2026-10-20 -> origin/research/astra-cloud-goldbach-harmonic-2026-10-20
+2026-11-08T10:26:53.4691061Z  * [new branch]        research/astra-cloud-hostile-holdouts-2026-10-20 -> origin/research/astra-cloud-hostile-holdouts-2026-10-20
+2026-11-08T10:26:53.4691760Z  * [new branch]        research/astra-cloud-institute-report-2026-10-20 -> origin/research/astra-cloud-institute-report-2026-10-20
+2026-11-08T10:26:53.4692464Z  * [new branch]        research/astra-cloud-operator-theory-2026-10-20 -> origin/research/astra-cloud-operator-theory-2026-10-20
+2026-11-08T10:26:53.4693279Z  * [new branch]        research/authentic-fredholm-completion-witness-2026-10-17 -> origin/research/authentic-fredholm-completion-witness-2026-10-17
+2026-11-08T10:26:53.4694085Z  * [new branch]        research/basel-line-circle-native-green-2026-10-30 -> origin/research/basel-line-circle-native-green-2026-10-30
+2026-11-08T10:26:53.4694950Z  * [new branch]        research/bbp-2adic-boundary-conservation-2026-11-06 -> origin/research/bbp-2adic-boundary-conservation-2026-11-06
+2026-11-08T10:26:53.4695726Z  * [new branch]        research/bbp-arithmetic-barrier-2026-10-30 -> origin/research/bbp-arithmetic-barrier-2026-10-30
+2026-11-08T10:26:53.4696436Z  * [new branch]        research/bbp-atomic-two-quadratic-gaussian-2026-10-26 -> origin/research/bbp-atomic-two-quadratic-gaussian-2026-10-26
+2026-11-08T10:26:53.4697223Z  * [new branch]        research/bbp-frobenius-prime-saturation-2026-11-04 -> origin/research/bbp-frobenius-prime-saturation-2026-11-04
+2026-11-08T10:26:53.4698032Z  * [new branch]        research/bbp-infinity-thread-mesoscopic-gluing-2026-11-06 -> origin/research/bbp-infinity-thread-mesoscopic-gluing-2026-11-06
+2026-11-08T10:26:53.4698970Z  * [new branch]        research/bbp-prime-character-primal-quotient-2026-11-04 -> origin/research/bbp-prime-character-primal-quotient-2026-11-04
+2026-11-08T10:26:53.4699713Z  * [new branch]        research/bbp-prime-stroboscopic-crt-2026-10-30 -> origin/research/bbp-prime-stroboscopic-crt-2026-10-30
+2026-11-08T10:26:53.4700435Z  * [new branch]        research/bbp-resolvent-observer-rigidity-2026-10-28 -> origin/research/bbp-resolvent-observer-rigidity-2026-10-28
+2026-11-08T10:26:53.4701166Z  * [new branch]        research/bbp-riemann-sphere-path-seam-2026-10-31 -> origin/research/bbp-riemann-sphere-path-seam-2026-10-31
+2026-11-08T10:26:53.4701893Z  * [new branch]        research/bbp-virtual-gauge-circle-chirp-2026-11-04 -> origin/research/bbp-virtual-gauge-circle-chirp-2026-11-04
+2026-11-08T10:26:53.4702639Z  * [new branch]        research/bbp-wilson-holonomy-seed-fisher-2026-11-01 -> origin/research/bbp-wilson-holonomy-seed-fisher-2026-11-01
+2026-11-08T10:26:53.4703366Z  * [new branch]        research/bidirectional-cut-hilbert-2026-10-18 -> origin/research/bidirectional-cut-hilbert-2026-10-18
+2026-11-08T10:26:53.4704064Z  * [new branch]        research/bidirectional-source-history-2026-10-22 -> origin/research/bidirectional-source-history-2026-10-22
+2026-11-08T10:26:53.4704895Z  * [new branch]        research/borwein-abc-height-contact-2026-10-19 -> origin/research/borwein-abc-height-contact-2026-10-19
+2026-11-08T10:26:53.4705594Z  * [new branch]        research/borwein-delta-prime-clock-2026-10-19 -> origin/research/borwein-delta-prime-clock-2026-10-19
+2026-11-08T10:26:53.4706360Z  * [new branch]        research/carrier-action-quantum-symplectic-bbp-2026-10-31 -> origin/research/carrier-action-quantum-symplectic-bbp-2026-10-31
+2026-11-08T10:26:53.4707133Z  * [new branch]        research/carrier-adelic-jet-transport-2026-10-30 -> origin/research/carrier-adelic-jet-transport-2026-10-30
+2026-11-08T10:26:53.4708018Z  * [new branch]        research/carrier-first-certified-transport-2026-10-30 -> origin/research/carrier-first-certified-transport-2026-10-30
+2026-11-08T10:26:53.4708811Z  * [new branch]        research/carrier-hbar-selected-alias-energy-2026-11-02 -> origin/research/carrier-hbar-selected-alias-energy-2026-11-02
+2026-11-08T10:26:53.4709542Z  * [new branch]        research/carrier-realization-maxcyl-2026-10-30 -> origin/research/carrier-realization-maxcyl-2026-10-30
+2026-11-08T10:26:53.4710347Z  * [new branch]        research/carrier-relative-entropy-laurent-signed-lag-2026-11-01 -> origin/research/carrier-relative-entropy-laurent-signed-lag-2026-11-01
+2026-11-08T10:26:53.4711196Z  * [new branch]        research/carrier-relative-lem-fuckedfields-2026-10-20 -> origin/research/carrier-relative-lem-fuckedfields-2026-10-20
+2026-11-08T10:26:53.4711936Z  * [new branch]        research/carrier-relative-path-measure-2026-10-31 -> origin/research/carrier-relative-path-measure-2026-10-31
+2026-11-08T10:26:53.4712590Z  * [new branch]        research/carrier-tate-weil-2026-10-15 -> origin/research/carrier-tate-weil-2026-10-15
+2026-11-08T10:26:53.4713254Z  * [new branch]        research/carry-safe-observer-proof-forge-2026-10-23 -> origin/research/carry-safe-observer-proof-forge-2026-10-23
+2026-11-08T10:26:53.4714082Z  * [new branch]        research/categorical-source-gluing-independent-audit-2026-11-01 -> origin/research/categorical-source-gluing-independent-audit-2026-11-01
+2026-11-08T10:26:53.4715051Z  * [new branch]        research/categorical-source-three-frame-2026-11-01 -> origin/research/categorical-source-three-frame-2026-11-01
+2026-11-08T10:26:53.4715832Z  * [new branch]        research/causal-echo-tomography-moment-null-2026-11-02 -> origin/research/causal-echo-tomography-moment-null-2026-11-02
+2026-11-08T10:26:53.4716575Z  * [new branch]        research/causal-lorentz-dual-gluing-2026-11-03 -> origin/research/causal-lorentz-dual-gluing-2026-11-03
+2026-11-08T10:26:53.4717368Z  * [new branch]        research/causal-response-rotation-2026-11-02 -> origin/research/causal-response-rotation-2026-11-02
+2026-11-08T10:26:53.4718081Z  * [new branch]        research/chiral-target-descent-reassembly-2026-10-27 -> origin/research/chiral-target-descent-reassembly-2026-10-27
+2026-11-08T10:26:53.4718872Z  * [new branch]        research/circle-diameter-recursive-path-ratio-2026-11-01 -> origin/research/circle-diameter-recursive-path-ratio-2026-11-01
+2026-11-08T10:26:53.4719638Z  * [new branch]        research/circle-line-source-stability-2026-10-28 -> origin/research/circle-line-source-stability-2026-10-28
+2026-11-08T10:26:53.4720420Z  * [new branch]        research/circle-path-electric-natural-extension-2026-11-03 -> origin/research/circle-path-electric-natural-extension-2026-11-03
+2026-11-08T10:26:53.4721171Z  * [new branch]        research/classical-affine-carrier-2026-10-15 -> origin/research/classical-affine-carrier-2026-10-15
+2026-11-08T10:26:53.4721870Z  * [new branch]        research/classical-tate-schwartz-gluing-2026-10-15 -> origin/research/classical-tate-schwartz-gluing-2026-10-15
+2026-11-08T10:26:53.4722646Z  * [new branch]        research/codex-ultra-finiteband-crt-cylinder-2026-10-30 -> origin/research/codex-ultra-finiteband-crt-cylinder-2026-10-30
+2026-11-08T10:26:53.4723368Z  * [new branch]        research/cofinal-schur-telescope-2026-10-16 -> origin/research/cofinal-schur-telescope-2026-10-16
+2026-11-08T10:26:53.4724001Z  * [new branch]        research/collective-observer-2026-10-16 -> origin/research/collective-observer-2026-10-16
+2026-11-08T10:26:53.4724656Z  * [new branch]        research/connes-oriented-local-trace-2026-10-18 -> origin/research/connes-oriented-local-trace-2026-10-18
+2026-11-08T10:26:53.4725640Z  * [new branch]        research/constant-curvature-finite-history-2026-11-01 -> origin/research/constant-curvature-finite-history-2026-11-01
+2026-11-08T10:26:53.4726492Z  * [new branch]        research/cosmic-fingerprint-reference-interferometry-2026-11-02 -> origin/research/cosmic-fingerprint-reference-interferometry-2026-11-02
+2026-11-08T10:26:53.4727417Z  * [new branch]        research/cototient-dual-gamma-pascal-2026-10-29 -> origin/research/cototient-dual-gamma-pascal-2026-10-29
+2026-11-08T10:26:53.4728115Z  * [new branch]        research/count-out-observer-source-2026-10-30 -> origin/research/count-out-observer-source-2026-10-30
+2026-11-08T10:26:53.4728891Z  * [new branch]        research/counterfactual-triangle-carrier-rigidity-2026-10-31 -> origin/research/counterfactual-triangle-carrier-rigidity-2026-10-31
+2026-11-08T10:26:53.4729775Z  * [new branch]        research/critical-carry-observer-jets-fixed-radius-2026-11-05 -> origin/research/critical-carry-observer-jets-fixed-radius-2026-11-05
+2026-11-08T10:26:53.4730535Z  * [new branch]        research/critical-chirp-ratchet-2026-11-04 -> origin/research/critical-chirp-ratchet-2026-11-04
+2026-11-08T10:26:53.4731214Z  * [new branch]        research/critical-chirp-source-audit-2026-11-04 -> origin/research/critical-chirp-source-audit-2026-11-04
+2026-11-08T10:26:53.4731936Z  * [new branch]        research/critical-fejer-source-hilbert-2026-11-06 -> origin/research/critical-fejer-source-hilbert-2026-11-06
+2026-11-08T10:26:53.4732678Z  * [new branch]        research/deepseek-pdq-megaswarm-2026-10-16 -> origin/research/deepseek-pdq-megaswarm-2026-10-16
+2026-11-08T10:26:53.4733403Z  * [new branch]        research/deepseek-primitive-abc-effective-2026-10-28 -> origin/research/deepseek-primitive-abc-effective-2026-10-28
+2026-11-08T10:26:53.4734329Z  * [new branch]        research/deepseek-v4-cylinder-proof-forge-2026-10-30 -> origin/research/deepseek-v4-cylinder-proof-forge-2026-10-30
+2026-11-08T10:26:53.4735248Z  * [new branch]        research/dirac-comb-gamma-continuum-2026-10-16 -> origin/research/dirac-comb-gamma-continuum-2026-10-16
+2026-11-08T10:26:53.4736000Z  * [new branch]        research/direct-quotient-pontryagin-transfer-2026-10-17 -> origin/research/direct-quotient-pontryagin-transfer-2026-10-17
+2026-11-08T10:26:53.4737025Z  * [new branch]        research/directional-inertia-entropy-q6-carry-2026-10-29 -> origin/research/directional-inertia-entropy-q6-carry-2026-10-29
+2026-11-08T10:26:53.4737839Z  * [new branch]        research/double-triangle-shared-field-fourier-2026-10-30 -> origin/research/double-triangle-shared-field-fourier-2026-10-30
+2026-11-08T10:26:53.4738887Z  * [new branch]        research/driven-pinbed-observability-2026-11-07 -> origin/research/driven-pinbed-observability-2026-11-07
+2026-11-08T10:26:53.4739921Z  * [new branch]        research/dual-jet-bbp-source-rigidity-2026-10-27 -> origin/research/dual-jet-bbp-source-rigidity-2026-10-27
+2026-11-08T10:26:53.4741007Z  * [new branch]        research/dual-slope-exterior-ascent-2026-10-20 -> origin/research/dual-slope-exterior-ascent-2026-10-20
+2026-11-08T10:26:53.4742107Z  * [new branch]        research/dual-variational-schur-source-gates-2026-10-16 -> origin/research/dual-variational-schur-source-gates-2026-10-16
+2026-11-08T10:26:53.4743239Z  * [new branch]        research/dual-zero-cayley-real-carrier-2026-11-04 -> origin/research/dual-zero-cayley-real-carrier-2026-11-04
+2026-11-08T10:26:53.4744283Z  * [new branch]        research/dyadic-zeta-prime-exposure-2026-10-30 -> origin/research/dyadic-zeta-prime-exposure-2026-10-30
+2026-11-08T10:26:53.4745553Z  * [new branch]        research/e-ladder-consensus-lambda-2026-10-16 -> origin/research/e-ladder-consensus-lambda-2026-10-16
+2026-11-08T10:26:53.4746679Z  * [new branch]        research/echo-succ-green-filter-transport-2026-10-27 -> origin/research/echo-succ-green-filter-transport-2026-10-27
+2026-11-08T10:26:53.4747807Z  * [new branch]        research/edge-carrier-reconstruction-2026-10-15 -> origin/research/edge-carrier-reconstruction-2026-10-15
+2026-11-08T10:26:53.4748984Z  * [new branch]        research/edge-seed-tomography-selected-pi-2026-10-31 -> origin/research/edge-seed-tomography-selected-pi-2026-10-31
+2026-11-08T10:26:53.4750014Z  * [new branch]        research/eodcs-choice-descent-meta-2026-10-19 -> origin/research/eodcs-choice-descent-meta-2026-10-19
+2026-11-08T10:26:53.4750924Z  * [new branch]        research/epoch-critical-fejer-transfer-2026-11-06 -> origin/research/epoch-critical-fejer-transfer-2026-11-06
+2026-11-08T10:26:53.4751658Z  * [new branch]        research/equivariant-redundancy-weil-2026-10-18 -> origin/research/equivariant-redundancy-weil-2026-10-18
+2026-11-08T10:26:53.4752380Z  * [new branch]        research/euler-gamma-odd-split-gaussian-2026-11-03 -> origin/research/euler-gamma-odd-split-gaussian-2026-11-03
+2026-11-08T10:26:53.4753043Z  * [new branch]        research/europa-weyl-source-2026-11-04 -> origin/research/europa-weyl-source-2026-11-04
+2026-11-08T10:26:53.4753739Z  * [new branch]        research/factorial-borwein-holographic-clock-2026-10-19 -> origin/research/factorial-borwein-holographic-clock-2026-10-19
+2026-11-08T10:26:53.4754592Z  * [new branch]        research/farey-totient-gamma-quarterturn-eisenstein-2026-10-29 -> origin/research/farey-totient-gamma-quarterturn-eisenstein-2026-10-29
+2026-11-08T10:26:53.4755683Z  * [new branch]        research/fejer-gamma-return-amplitudes-2026-11-06 -> origin/research/fejer-gamma-return-amplitudes-2026-11-06
+2026-11-08T10:26:53.4756627Z  * [new branch]        research/feynman-rigorous-bbp-propagator-2026-11-01 -> origin/research/feynman-rigorous-bbp-propagator-2026-11-01
+2026-11-08T10:26:53.4757428Z  * [new branch]        research/fibonacci-circle-triangle-learning-2026-11-08 -> origin/research/fibonacci-circle-triangle-learning-2026-11-08
+2026-11-08T10:26:53.4758215Z  * [new branch]        research/fibonacci-epicycle-demon-normality-2026-10-30 -> origin/research/fibonacci-epicycle-demon-normality-2026-10-30
+2026-11-08T10:26:53.4758960Z  * [new branch]        research/fibonacci-triangle-extrusion-2026-10-30 -> origin/research/fibonacci-triangle-extrusion-2026-10-30
+2026-11-08T10:26:53.4759686Z  * [new branch]        research/field-closure-inverse-limit-rh-2026-10-15 -> origin/research/field-closure-inverse-limit-rh-2026-10-15
+2026-11-08T10:26:53.4788532Z  * [new branch]        research/figure-eight-pow2-hensel-2026-11-03 -> origin/research/figure-eight-pow2-hensel-2026-11-03
+2026-11-08T10:26:53.4789489Z  * [new branch]        research/final-pin-carry-2026-11-05 -> origin/research/final-pin-carry-2026-11-05
+2026-11-08T10:26:53.4790312Z  * [new branch]        research/final-pin-clausen-2026-11-05 -> origin/research/final-pin-clausen-2026-11-05
+2026-11-08T10:26:53.4791161Z  * [new branch]        research/final-pin-referee-2026-11-05 -> origin/research/final-pin-referee-2026-11-05
+2026-11-08T10:26:53.4792442Z  * [new branch]        research/finite-field-superposition-triangle-2026-10-29 -> origin/research/finite-field-superposition-triangle-2026-10-29
+2026-11-08T10:26:53.4793803Z  * [new branch]        research/first-prime-binary-shear-ternary-trident-crt-2026-10-27 -> origin/research/first-prime-binary-shear-ternary-trident-crt-2026-10-27
+2026-11-08T10:26:53.4795373Z  * [new branch]        research/four-pole-nine-pythagorean-golden-2026-11-08 -> origin/research/four-pole-nine-pythagorean-golden-2026-11-08
+2026-11-08T10:26:53.4796825Z  * [new branch]        research/four-pole-path-interference-source-alias-2026-10-31 -> origin/research/four-pole-path-interference-source-alias-2026-10-31
+2026-11-08T10:26:53.4798314Z  * [new branch]        research/four-pole-three-channel-poisson-matrix-2026-11-08 -> origin/research/four-pole-three-channel-poisson-matrix-2026-11-08
+2026-11-08T10:26:53.4799538Z  * [new branch]        research/fourier-yoneda-pinbed-2026-11-07 -> origin/research/fourier-yoneda-pinbed-2026-11-07
+2026-11-08T10:26:53.4800752Z  * [new branch]        research/fucc-succ-factorial-gamma-moment-lift-2026-10-16 -> origin/research/fucc-succ-factorial-gamma-moment-lift-2026-10-16
+2026-11-08T10:26:53.4801969Z  * [new branch]        research/full-four-prime-residual-schur-2026-10-17 -> origin/research/full-four-prime-residual-schur-2026-10-17
+2026-11-08T10:26:53.4803036Z  * [new branch]        research/furstenberg-kempner-firewall-2026-10-27 -> origin/research/furstenberg-kempner-firewall-2026-10-27
+2026-11-08T10:26:53.4804098Z  * [new branch]        research/gamma-band-dealias-interleaving-2026-10-16 -> origin/research/gamma-band-dealias-interleaving-2026-10-16
+2026-11-08T10:26:53.4805116Z  * [new branch]        research/gamma-boundary-form-covariance-2026-10-18 -> origin/research/gamma-boundary-form-covariance-2026-10-18
+2026-11-08T10:26:53.4805893Z  * [new branch]        research/gamma-cancellation-packets-2026-10-18 -> origin/research/gamma-cancellation-packets-2026-10-18
+2026-11-08T10:26:53.4806629Z  * [new branch]        research/gamma-fucc-finite-bath-fredholm-2026-10-17 -> origin/research/gamma-fucc-finite-bath-fredholm-2026-10-17
+2026-11-08T10:26:53.4807355Z  * [new branch]        research/gamma-haar-window-backdoor-2026-11-02 -> origin/research/gamma-haar-window-backdoor-2026-11-02
+2026-11-08T10:26:53.4808087Z  * [new branch]        research/gamma-orthogonal-sphere-solenoid-2026-11-05 -> origin/research/gamma-orthogonal-sphere-solenoid-2026-11-05
+2026-11-08T10:26:53.4808829Z  * [new branch]        research/gamma-prime-real-holonomy-2026-10-30 -> origin/research/gamma-prime-real-holonomy-2026-10-30
+2026-11-08T10:26:53.4809536Z  * [new branch]        research/gamma-prime-window-pigeonhole-2026-11-04 -> origin/research/gamma-prime-window-pigeonhole-2026-11-04
+2026-11-08T10:26:53.4810284Z  * [new branch]        research/gamma-prybar-checkpoint-capacity-2026-11-04 -> origin/research/gamma-prybar-checkpoint-capacity-2026-11-04
+2026-11-08T10:26:53.4810962Z  * [new branch]        research/gamma-seam-cascade-2026-11-02 -> origin/research/gamma-seam-cascade-2026-11-02
+2026-11-08T10:26:53.4811608Z  * [new branch]        research/gamma-twist-selected-phase-2026-10-30 -> origin/research/gamma-twist-selected-phase-2026-10-30
+2026-11-08T10:26:53.4812381Z  * [new branch]        research/gauge-coded-sphere-tower-russian-doll-2026-11-05 -> origin/research/gauge-coded-sphere-tower-russian-doll-2026-11-05
+2026-11-08T10:26:53.4813211Z  * [new branch]        research/gaussian-halfdensity-kresidual-2026-10-18 -> origin/research/gaussian-halfdensity-kresidual-2026-10-18
+2026-11-08T10:26:53.4814098Z  * [new branch]        research/gaussian-unit-frobenius-gluing-2026-11-03 -> origin/research/gaussian-unit-frobenius-gluing-2026-11-03
+2026-11-08T10:26:53.4814977Z  * [new branch]        research/global-prior-fejer-golden-2026-11-02 -> origin/research/global-prior-fejer-golden-2026-11-02
+2026-11-08T10:26:53.4815667Z  * [new branch]        research/global-signed-source-2026-10-27 -> origin/research/global-signed-source-2026-10-27
+2026-11-08T10:26:53.4816460Z  * [new branch]        research/goldbach-seinfeld-infinite-bins-zero-boundary-2026-10-27 -> origin/research/goldbach-seinfeld-infinite-bins-zero-boundary-2026-10-27
+2026-11-08T10:26:53.4817327Z  * [new branch]        research/golden-aperture-fejer-triangle-2026-11-07 -> origin/research/golden-aperture-fejer-triangle-2026-11-07
+2026-11-08T10:26:53.4818111Z  * [new branch]        research/green-pascal-oily-carry-martingale-2026-10-29 -> origin/research/green-pascal-oily-carry-martingale-2026-10-29
+2026-11-08T10:26:53.4818823Z  * [new branch]        research/green-tail-sharpening-2026-11-02 -> origin/research/green-tail-sharpening-2026-11-02
+2026-11-08T10:26:53.4819443Z  * [new branch]        research/green-tao-clock-ap-2026-10-19 -> origin/research/green-tao-clock-ap-2026-10-19
+2026-11-08T10:26:53.4820125Z  * [new branch]        research/half-power-two-three-horizon-2026-10-31 -> origin/research/half-power-two-three-horizon-2026-10-31
+2026-11-08T10:26:53.4820816Z  * [new branch]        research/hannibal-source-collision-2026-11-02 -> origin/research/hannibal-source-collision-2026-11-02
+2026-11-08T10:26:53.4821495Z  * [new branch]        research/hannibal-weyl-encirclement-2026-11-02 -> origin/research/hannibal-weyl-encirclement-2026-11-02
+2026-11-08T10:26:53.4822165Z  * [new branch]        research/harmonic-pisot-boundary-2026-11-07 -> origin/research/harmonic-pisot-boundary-2026-11-07
+2026-11-08T10:26:53.4822982Z  * [new branch]        research/hidden-memory-schur-telescope-2026-10-17 -> origin/research/hidden-memory-schur-telescope-2026-10-17
+2026-11-08T10:26:53.4823706Z  * [new branch]        research/hilbert-carrier-completion-2026-10-14 -> origin/research/hilbert-carrier-completion-2026-10-14
+2026-11-08T10:26:53.4824464Z  * [new branch]        research/hilbert-curve-cube-zeno-certificates-2026-10-14 -> origin/research/hilbert-curve-cube-zeno-certificates-2026-10-14
+2026-11-08T10:26:53.4825392Z  * [new branch]        research/hilbert-fractal-source-strata-2026-10-14 -> origin/research/hilbert-fractal-source-strata-2026-10-14
+2026-11-08T10:26:53.4826148Z  * [new branch]        research/hilbert-prime-weil-operator-atlas-2026-10-14 -> origin/research/hilbert-prime-weil-operator-atlas-2026-10-14
+2026-11-08T10:26:53.4826879Z  * [new branch]        research/history-first-shell-duality-2026-11-05 -> origin/research/history-first-shell-duality-2026-11-05
+2026-11-08T10:26:53.4827619Z  * [new branch]        research/holographic-triangle-source-seam-2026-11-06 -> origin/research/holographic-triangle-source-seam-2026-11-06
+2026-11-08T10:26:53.4828372Z  * [new branch]        research/human-t-action-snapshot-dirac-2026-10-30 -> origin/research/human-t-action-snapshot-dirac-2026-10-30
+2026-11-08T10:26:53.4829091Z  * [new branch]        research/inertial-information-boundary-2026-10-29 -> origin/research/inertial-information-boundary-2026-10-29
+2026-11-08T10:26:53.4829886Z  * [new branch]        research/inertial-relative-observer-gamma-memory-2026-10-29 -> origin/research/inertial-relative-observer-gamma-memory-2026-10-29
+2026-11-08T10:26:53.4830686Z  * [new branch]        research/inertial-relative-origin-q6-carry-2026-10-29 -> origin/research/inertial-relative-origin-q6-carry-2026-10-29
+2026-11-08T10:26:53.4831443Z  * [new branch]        research/inertial-su2-gyro-common-carrier-2026-11-03 -> origin/research/inertial-su2-gyro-common-carrier-2026-11-03
+2026-11-08T10:26:53.4832205Z  * [new branch]        research/infinite-gamma-carleman-boundary-2026-10-18 -> origin/research/infinite-gamma-carleman-boundary-2026-10-18
+2026-11-08T10:26:53.4833210Z  * [new branch]        research/infinite-qubit-cluster-source-gluing-2026-11-05 -> origin/research/infinite-qubit-cluster-source-gluing-2026-11-05
+2026-11-08T10:26:53.4833927Z  * [new branch]        research/institute-nucleus-2026-10-18 -> origin/research/institute-nucleus-2026-10-18
+2026-11-08T10:26:53.4834559Z  * [new branch]        research/joint-carry-odd-cofiber-2026-11-03 -> origin/research/joint-carry-odd-cofiber-2026-11-03
+2026-11-08T10:26:53.4835408Z  * [new branch]        research/joint-character-entropy-source-2026-11-06 -> origin/research/joint-character-entropy-source-2026-11-06
+2026-11-08T10:26:53.4836189Z  * [new branch]        research/kepler-ii-orthogonal-entropy-carry-2026-10-29 -> origin/research/kepler-ii-orthogonal-entropy-carry-2026-10-29
+2026-11-08T10:26:53.4837050Z  * [new branch]        research/kepler-iii-selected-phase-shrinking-target-2026-10-29 -> origin/research/kepler-iii-selected-phase-shrinking-target-2026-10-29
+2026-11-08T10:26:53.4837943Z  * [new branch]        research/lambda-inside-out-source-branch-duality-2026-10-26 -> origin/research/lambda-inside-out-source-branch-duality-2026-10-26
+2026-11-08T10:26:53.4838777Z  * [new branch]        research/laurent-clock-sharpness-all-orders-2026-11-01 -> origin/research/laurent-clock-sharpness-all-orders-2026-11-01
+2026-11-08T10:26:53.4839573Z  * [new branch]        research/learning-yoneda-source-cancellation-2026-11-07 -> origin/research/learning-yoneda-source-cancellation-2026-11-07
+2026-11-08T10:26:53.4840383Z  * [new branch]        research/line-sheet-gamma-sublog-multiprime-2026-11-02 -> origin/research/line-sheet-gamma-sublog-multiprime-2026-11-02
+2026-11-08T10:26:53.4841159Z  * [new branch]        research/logarithmic-bbp-dirac-oily-gamma-2026-10-27 -> origin/research/logarithmic-bbp-dirac-oily-gamma-2026-10-27
+2026-11-08T10:26:53.4841897Z  * [new branch]        research/lonely-runner-referee-cubic-2026-10-28 -> origin/research/lonely-runner-referee-cubic-2026-10-28
+2026-11-08T10:26:53.4842760Z  * [new branch]        research/lorentz-clock-triangular-tiling-2026-10-30 -> origin/research/lorentz-clock-triangular-tiling-2026-10-30
+2026-11-08T10:26:53.4843509Z  * [new branch]        research/lorentz-gamma-null-continuum-2026-10-30 -> origin/research/lorentz-gamma-null-continuum-2026-10-30
+2026-11-08T10:26:53.4844281Z  * [new branch]        research/macrolag-prime-witness-vs-real-shadow-2026-11-02 -> origin/research/macrolag-prime-witness-vs-real-shadow-2026-11-02
+2026-11-08T10:26:53.4845284Z  * [new branch]        research/main-xiv-independent-integration-audit-2026-10-28 -> origin/research/main-xiv-independent-integration-audit-2026-10-28
+2026-11-08T10:26:53.4846075Z  * [new branch]        research/main-xx-carry-transport-forge-2026-11-05 -> origin/research/main-xx-carry-transport-forge-2026-11-05
+2026-11-08T10:26:53.4846858Z  * [new branch]        research/math-memory-farey-gauss-consolidation-2026-10-27 -> origin/research/math-memory-farey-gauss-consolidation-2026-10-27
+2026-11-08T10:26:53.4847652Z  * [new branch]        research/max-root-polya-observer-bridge-2026-10-28 -> origin/research/max-root-polya-observer-bridge-2026-10-28
+2026-11-08T10:26:53.4848344Z  * [new branch]        research/maximal-source-entropy-2026-10-18 -> origin/research/maximal-source-entropy-2026-10-18
+2026-11-08T10:26:53.4848994Z  * [new branch]        research/mesoscopic-spectral-army-2026-11-02 -> origin/research/mesoscopic-spectral-army-2026-11-02
+2026-11-08T10:26:53.4849704Z  * [new branch]        research/minimal-pole-fermat-gamma-bridge-2026-10-29 -> origin/research/minimal-pole-fermat-gamma-bridge-2026-10-29
+2026-11-08T10:26:53.4850405Z  * [new branch]        research/mobius-index-infinity-2026-10-18 -> origin/research/mobius-index-infinity-2026-10-18
+2026-11-08T10:26:53.4851064Z  * [new branch]        research/mobius-reciprocal-mirror-2026-11-02 -> origin/research/mobius-reciprocal-mirror-2026-11-02
+2026-11-08T10:26:53.4851802Z  * [new branch]        research/moonshot-phase-echo-triangulation-2026-11-01 -> origin/research/moonshot-phase-echo-triangulation-2026-11-01
+2026-11-08T10:26:53.4852722Z  * [new branch]        research/multiplace-bbp-difference-resolvent-2026-10-31 -> origin/research/multiplace-bbp-difference-resolvent-2026-10-31
+2026-11-08T10:26:53.4853428Z  * [new branch]        research/noether-radix-ward-2026-10-30 -> origin/research/noether-radix-ward-2026-10-30
+2026-11-08T10:26:53.4854077Z  * [new branch]        research/nonpisot-pisot-ramification-2026-10-30 -> origin/research/nonpisot-pisot-ramification-2026-10-30
+2026-11-08T10:26:53.4855014Z  * [new branch]        research/normal-digit-frame-reset-stoneham-choice-2026-10-30 -> origin/research/normal-digit-frame-reset-stoneham-choice-2026-10-30
+2026-11-08T10:26:53.4855881Z  * [new branch]        research/observer-bridge-busy-beaver-coherence-2026-11-04 -> origin/research/observer-bridge-busy-beaver-coherence-2026-11-04
+2026-11-08T10:26:53.4856982Z  * [new branch]        research/observer-carrier-model-adequacy-2026-10-30 -> origin/research/observer-carrier-model-adequacy-2026-10-30
+2026-11-08T10:26:53.4857731Z  * [new branch]        research/observer-lag-return-boundary-2026-11-04 -> origin/research/observer-lag-return-boundary-2026-11-04
+2026-11-08T10:26:53.4858435Z  * [new branch]        research/observer-n-source-selection-2026-10-28 -> origin/research/observer-n-source-selection-2026-10-28
+2026-11-08T10:26:53.4859149Z  * [new branch]        research/observer-tate-bijective-descent-2026-10-15 -> origin/research/observer-tate-bijective-descent-2026-10-15
+2026-11-08T10:26:53.4859861Z  * [new branch]        research/observers-schur-complement-2026-10-16 -> origin/research/observers-schur-complement-2026-10-16
+2026-11-08T10:26:53.4860528Z  * [new branch]        research/odd-place-adelic-triangle-2026-11-06 -> origin/research/odd-place-adelic-triangle-2026-11-06
+2026-11-08T10:26:53.4861163Z  * [new branch]        research/oily-carry-resonance-2026-10-26 -> origin/research/oily-carry-resonance-2026-10-26
+2026-11-08T10:26:53.4861968Z  * [new branch]        research/oily-hbar-moving-alias-vs-weyl-2026-11-02 -> origin/research/oily-hbar-moving-alias-vs-weyl-2026-11-02
+2026-11-08T10:26:53.4862679Z  * [new branch]        research/oily-logarithm-levy-carry-2026-10-29 -> origin/research/oily-logarithm-levy-carry-2026-10-29
+2026-11-08T10:26:53.4863377Z  * [new branch]        research/oily-macaroni-laplace-mellin-2026-10-26 -> origin/research/oily-macaroni-laplace-mellin-2026-10-26
+2026-11-08T10:26:53.4864107Z  * [new branch]        research/oily-macaroni-naming-provenance-2026-10-29 -> origin/research/oily-macaroni-naming-provenance-2026-10-29
+2026-11-08T10:26:53.4865053Z  * [new branch]        research/oily-macaroni-source-mellin-hilbert-2026-10-26 -> origin/research/oily-macaroni-source-mellin-hilbert-2026-10-26
+2026-11-08T10:26:53.4865858Z  * [new branch]        research/oily-macaroni-totient-third-shadow-2026-10-26 -> origin/research/oily-macaroni-totient-third-shadow-2026-10-26
+2026-11-08T10:26:53.4866657Z  * [new branch]        research/oily-one-boundary-log-characters-2026-10-27 -> origin/research/oily-one-boundary-log-characters-2026-10-27
+2026-11-08T10:26:53.4867425Z  * [new branch]        research/oily-order-statistic-golden-sheet-2026-10-29 -> origin/research/oily-order-statistic-golden-sheet-2026-10-29
+2026-11-08T10:26:53.4868172Z  * [new branch]        research/oily-polya-carry-source-forge-2026-10-28 -> origin/research/oily-polya-carry-source-forge-2026-10-28
+2026-11-08T10:26:53.4868860Z  * [new branch]        research/oily-stoneham-pathsheet-2026-10-29 -> origin/research/oily-stoneham-pathsheet-2026-10-29
+2026-11-08T10:26:53.4869527Z  * [new branch]        research/one-object-residual-schur-2026-10-15 -> origin/research/one-object-residual-schur-2026-10-15
+2026-11-08T10:26:53.4870302Z  * [new branch]        research/one-object-signed-cancellation-shorting-2026-10-15 -> origin/research/one-object-signed-cancellation-shorting-2026-10-15
+2026-11-08T10:26:53.4871120Z  * [new branch]        research/one-object-tate-weil-suzuki-connes-2026-10-15 -> origin/research/one-object-tate-weil-suzuki-connes-2026-10-15
+2026-11-08T10:26:53.4872045Z  * [new branch]        research/operation-kepler-gamma-tiling-2026-10-29 -> origin/research/operation-kepler-gamma-tiling-2026-10-29
+2026-11-08T10:26:53.4872815Z  * [new branch]        research/operational-axioms-observer-source-2026-11-04 -> origin/research/operational-axioms-observer-source-2026-11-04
+2026-11-08T10:26:53.4873626Z  * [new branch]        research/operational-triangle-kernel-tomography-2026-10-29 -> origin/research/operational-triangle-kernel-tomography-2026-10-29
+2026-11-08T10:26:53.4874481Z  * [new branch]        research/opposing-bbp-observers-oily-disagreement-2026-10-29 -> origin/research/opposing-bbp-observers-oily-disagreement-2026-10-29
+2026-11-08T10:26:53.4875438Z  * [new branch]        research/orbit-clock-genesis-lcm-mobius-2026-10-17 -> origin/research/orbit-clock-genesis-lcm-mobius-2026-10-17
+2026-11-08T10:26:53.4876184Z  * [new branch]        research/ordinal-authentic-suzuki-margin-2026-10-15 -> origin/research/ordinal-authentic-suzuki-margin-2026-10-15
+2026-11-08T10:26:53.4876936Z  * [new branch]        research/ordinal-ranked-succ-goodstein-2026-10-15 -> origin/research/ordinal-ranked-succ-goodstein-2026-10-15
+2026-11-08T10:26:53.4877671Z  * [new branch]        research/oriented-mobius-adelic-descent-2026-10-18 -> origin/research/oriented-mobius-adelic-descent-2026-10-18
+2026-11-08T10:26:53.4878407Z  * [new branch]        research/origin-locked-oily-prime-frames-2026-10-28 -> origin/research/origin-locked-oily-prime-frames-2026-10-28
+2026-11-08T10:26:53.4879170Z  * [new branch]        research/original-continuum-residual-schur-2026-10-18 -> origin/research/original-continuum-residual-schur-2026-10-18
+2026-11-08T10:26:53.4879972Z  * [new branch]        research/original-four-schur-certified-trial-2026-10-16 -> origin/research/original-four-schur-certified-trial-2026-10-16
+2026-11-08T10:26:53.4880771Z  * [new branch]        research/paired-unit-zero-bell-coupling-2026-11-05 -> origin/research/paired-unit-zero-bell-coupling-2026-11-05
+2026-11-08T10:26:53.4881652Z  * [new branch]        research/pascal-2-3-conjugacy-pisot-probe-2026-10-31 -> origin/research/pascal-2-3-conjugacy-pisot-probe-2026-10-31
+2026-11-08T10:26:53.4882423Z  * [new branch]        research/pascal-oily-source-phase-moonshot-2026-10-29 -> origin/research/pascal-oily-source-phase-moonshot-2026-10-29
+2026-11-08T10:26:53.4883243Z  * [new branch]        research/pauli-fekete-bbp-orbit-exclusion-2026-11-05 -> origin/research/pauli-fekete-bbp-orbit-exclusion-2026-11-05
+2026-11-08T10:26:53.4883978Z  * [new branch]        research/periodic-mixed-lag-source-2026-10-27 -> origin/research/periodic-mixed-lag-source-2026-10-27
+2026-11-08T10:26:53.4884715Z  * [new branch]        research/pi-adelic-all-rank-transport-2026-10-27 -> origin/research/pi-adelic-all-rank-transport-2026-10-27
+2026-11-08T10:26:53.4885587Z  * [new branch]        research/pi-alias-valve-oriented-lag-2026-11-04 -> origin/research/pi-alias-valve-oriented-lag-2026-11-04
+2026-11-08T10:26:53.4886254Z  * [new branch]        research/pi-gamma-prime-carry-2026-10-21 -> origin/research/pi-gamma-prime-carry-2026-10-21
+2026-11-08T10:26:53.4887001Z  * [new branch]        research/pi-gaussian-ramification-prime7-mirror-2026-10-27 -> origin/research/pi-gaussian-ramification-prime7-mirror-2026-10-27
+2026-11-08T10:26:53.4887781Z  * [new branch]        research/pi-normality-framework-spine-2026-11-02 -> origin/research/pi-normality-framework-spine-2026-11-02
+2026-11-08T10:26:53.4888526Z  * [new branch]        research/pi-polygon-normality-path-defect-2026-10-20 -> origin/research/pi-polygon-normality-path-defect-2026-10-20
+2026-11-08T10:26:53.4889283Z  * [new branch]        research/pi-prime7-mirror-source-descent-2026-10-27 -> origin/research/pi-prime7-mirror-source-descent-2026-10-27
+2026-11-08T10:26:53.4890042Z  * [new branch]        research/pi-proof-forge-integration-audit-2026-10-27 -> origin/research/pi-proof-forge-integration-audit-2026-10-27
+2026-11-08T10:26:53.4890905Z  * [new branch]        research/pi-renorm-transport-barrier-2026-11-03 -> origin/research/pi-renorm-transport-barrier-2026-11-03
+2026-11-08T10:26:53.4891701Z  * [new branch]        research/pi-selected-boundary-crt-finite-spectral-2026-10-27 -> origin/research/pi-selected-boundary-crt-finite-spectral-2026-10-27
+2026-11-08T10:26:53.4892534Z  * [new branch]        research/pi-selected-current-shift-coupling-2026-11-03 -> origin/research/pi-selected-current-shift-coupling-2026-11-03
+2026-11-08T10:26:53.4893329Z  * [new branch]        research/pi-signed-cancellation-obstruction-2026-10-27 -> origin/research/pi-signed-cancellation-obstruction-2026-10-27
+2026-11-08T10:26:53.4894110Z  * [new branch]        research/pi-signed-pushforward-obstruction-2026-10-26 -> origin/research/pi-signed-pushforward-obstruction-2026-10-26
+2026-11-08T10:26:53.4895065Z  * [new branch]        research/pi-solenoid-digit-natural-extension-2026-10-27 -> origin/research/pi-solenoid-digit-natural-extension-2026-10-27
+2026-11-08T10:26:53.4895890Z  * [new branch]        research/pi-ternary-bbp-certified-digit-handle-2026-10-27 -> origin/research/pi-ternary-bbp-certified-digit-handle-2026-10-27
+2026-11-08T10:26:53.4896661Z  * [new branch]        research/pi-two-bit-sheet-value-machine-2026-10-27 -> origin/research/pi-two-bit-sheet-value-machine-2026-10-27
+2026-11-08T10:26:53.4897447Z  * [new branch]        research/pi-two-three-adic-joint-clock-rigidity-2026-10-31 -> origin/research/pi-two-three-adic-joint-clock-rigidity-2026-10-31
+2026-11-08T10:26:53.4898254Z  * [new branch]        research/pi-variable-length-source-memory-2026-10-27 -> origin/research/pi-variable-length-source-memory-2026-10-27
+2026-11-08T10:26:53.4899038Z  * [new branch]        research/piecewise-suzuki-certified-resolvent-2026-10-17 -> origin/research/piecewise-suzuki-certified-resolvent-2026-10-17
+2026-11-08T10:26:53.4899856Z  * [new branch]        research/pinbed-yoneda-fourier-relative-truth-2026-11-07 -> origin/research/pinbed-yoneda-fourier-relative-truth-2026-11-07
+2026-11-08T10:26:53.4900724Z  * [new branch]        research/pisot-gamma-conjugate-seam-2026-11-02 -> origin/research/pisot-gamma-conjugate-seam-2026-11-02
+2026-11-08T10:26:53.4901457Z  * [new branch]        research/pisot-hopf-arithmetic-relativity-2026-10-28 -> origin/research/pisot-hopf-arithmetic-relativity-2026-10-28
+2026-11-08T10:26:53.4902254Z  * [new branch]        research/pisot-lagrangian-arithmetic-curvature-2026-10-30 -> origin/research/pisot-lagrangian-arithmetic-curvature-2026-10-30
+2026-11-08T10:26:53.4903103Z  * [new branch]        research/pointed-circle-solenoid-two-adic-clock-2026-10-27 -> origin/research/pointed-circle-solenoid-two-adic-clock-2026-10-27
+2026-11-08T10:26:53.4903895Z  * [new branch]        research/pointed-cocategory-bbp-haar-2026-11-05 -> origin/research/pointed-cocategory-bbp-haar-2026-11-05
+2026-11-08T10:26:53.4904642Z  * [new branch]        research/polya-demon-source-relative-budget-2026-10-28 -> origin/research/polya-demon-source-relative-budget-2026-10-28
+2026-11-08T10:26:53.4905621Z  * [new branch]        research/pontryagin-finite-adelic-duality-2026-10-15 -> origin/research/pontryagin-finite-adelic-duality-2026-10-15
+2026-11-08T10:26:53.4906428Z  * [new branch]        research/portable-prime-sundial-rational-succ-2026-10-19 -> origin/research/portable-prime-sundial-rational-succ-2026-10-19
+2026-11-08T10:26:53.4907288Z  * [new branch]        research/prime-active-source-weil-spline-schur-2026-10-16 -> origin/research/prime-active-source-weil-spline-schur-2026-10-16
+2026-11-08T10:26:53.4908096Z  * [new branch]        research/prime-cofactor-gamma-golden-defect-2026-11-02 -> origin/research/prime-cofactor-gamma-golden-defect-2026-11-02
+2026-11-08T10:26:53.4908848Z  * [new branch]        research/prime-cofactor-nonconspiracy-2026-11-02 -> origin/research/prime-cofactor-nonconspiracy-2026-11-02
+2026-11-08T10:26:53.4909668Z  * [new branch]        research/prime-frobenius-denominator-and-spectral-gap-2026-11-06 -> origin/research/prime-frobenius-denominator-and-spectral-gap-2026-11-06
+2026-11-08T10:26:53.4910663Z  * [new branch]        research/prime-hinge-chiral-edge-relative-jump-2026-10-17 -> origin/research/prime-hinge-chiral-edge-relative-jump-2026-10-17
+2026-11-08T10:26:53.4911466Z  * [new branch]        research/prime-jet-genesis-affine-rigidity-2026-10-17 -> origin/research/prime-jet-genesis-affine-rigidity-2026-10-17
+2026-11-08T10:26:53.4912323Z  * [new branch]        research/prime-jet-signed-reservoir-archimedean-gauge-2026-11-05 -> origin/research/prime-jet-signed-reservoir-archimedean-gauge-2026-11-05
+2026-11-08T10:26:53.4913124Z  * [new branch]        research/prime-jet-volterra-boundary-2026-11-05 -> origin/research/prime-jet-volterra-boundary-2026-11-05
+2026-11-08T10:26:53.4913796Z  * [new branch]        research/prime-ladder-ravel-audit-2026-10-27 -> origin/research/prime-ladder-ravel-audit-2026-10-27
+2026-11-08T10:26:53.4914526Z  * [new branch]        research/prime-pisot-field-zero-transport-2026-10-28 -> origin/research/prime-pisot-field-zero-transport-2026-10-28
+2026-11-08T10:26:53.4915419Z  * [new branch]        research/prime-three-channel-phase-tomography-2026-11-08 -> origin/research/prime-three-channel-phase-tomography-2026-11-08
+2026-11-08T10:26:53.4916207Z  * [new branch]        research/prime-two-surplus-dual-resolvent-2026-10-17 -> origin/research/prime-two-surplus-dual-resolvent-2026-10-17
+2026-11-08T10:26:53.4916981Z  * [new branch]        research/primorial-factorial-phase-clocks-2026-10-19 -> origin/research/primorial-factorial-phase-clocks-2026-10-19
+2026-11-08T10:26:53.4917747Z  * [new branch]        research/probability-operations-ifs-2026-10-30 -> origin/research/probability-operations-ifs-2026-10-30
+2026-11-08T10:26:53.4918368Z  * [new branch]        research/proof-forge-iii-2026-10-20 -> origin/research/proof-forge-iii-2026-10-20
+2026-11-08T10:26:53.4918990Z  * [new branch]        research/proof-forge-mason-stothers-2026-10-20 -> origin/research/proof-forge-mason-stothers-2026-10-20
+2026-11-08T10:26:53.4919800Z  * [new branch]        research/prove-obligation-A-x3-defect-2026-11-02 -> origin/research/prove-obligation-A-x3-defect-2026-11-02
+2026-11-08T10:26:53.4920501Z  * [new branch]        research/q6-gamma-abel-carry-tiling-2026-10-29 -> origin/research/q6-gamma-abel-carry-tiling-2026-10-29
+2026-11-08T10:26:53.4921279Z  * [new branch]        research/quadratic-pisot-galois-tate-reflection-2026-11-06 -> origin/research/quadratic-pisot-galois-tate-reflection-2026-11-06
+2026-11-08T10:26:53.4922029Z  * [new branch]        research/rad-ris-prime-gated-succ-2026-10-19 -> origin/research/rad-ris-prime-gated-succ-2026-10-19
+2026-11-08T10:26:53.4922778Z  * [new branch]        research/rank-two-chiral-e-tower-source-gluing-2026-10-27 -> origin/research/rank-two-chiral-e-tower-source-gluing-2026-10-27
+2026-11-08T10:26:53.4923561Z  * [new branch]        research/ravel-consolidation-manifest-2026-10-28 -> origin/research/ravel-consolidation-manifest-2026-10-28
+2026-11-08T10:26:53.4924248Z  * [new branch]        research/ravel-module-graph-audit-2026-10-28 -> origin/research/ravel-module-graph-audit-2026-10-28
+2026-11-08T10:26:53.4925037Z  * [new branch]        research/ravel-rh-weil-gap-2026-10-28 -> origin/research/ravel-rh-weil-gap-2026-10-28
+2026-11-08T10:26:53.4925699Z  * [new branch]        research/ravel-signed-cancellation-core-2026-10-28 -> origin/research/ravel-signed-cancellation-core-2026-10-28
+2026-11-08T10:26:53.4926467Z  * [new branch]        research/realized-path-entropy-momentum-bbp-2026-10-31 -> origin/research/realized-path-entropy-momentum-bbp-2026-10-31
+2026-11-08T10:26:53.4927303Z  * [new branch]        research/recursive-carrier-realization-gyroscope-2026-11-06 -> origin/research/recursive-carrier-realization-gyroscope-2026-11-06
+2026-11-08T10:26:53.4928085Z  * [new branch]        research/recursive-carrier-triangle-2026-10-29 -> origin/research/recursive-carrier-triangle-2026-10-29
+2026-11-08T10:26:53.4928803Z  * [new branch]        research/residual-steady-window-balance-2026-11-02 -> origin/research/residual-steady-window-balance-2026-11-02
+2026-11-08T10:26:53.4929625Z  * [new branch]        research/rh-carrier-tate-functor-2026-10-15 -> origin/research/rh-carrier-tate-functor-2026-10-15
+2026-11-08T10:26:53.4930238Z  * [new branch]        research/rigidity-forge-2026-10-20 -> origin/research/rigidity-forge-2026-10-20
+2026-11-08T10:26:53.4930789Z  * [new branch]        research/round2-morphism-2026-10-18 -> origin/research/round2-morphism-2026-10-18
+2026-11-08T10:26:53.4931323Z  * [new branch]        research/round2-signed-2026-10-18 -> origin/research/round2-signed-2026-10-18
+2026-11-08T10:26:53.4931924Z  * [new branch]        research/seeded-zak-arithmetic-seam-2026-10-31 -> origin/research/seeded-zak-arithmetic-seam-2026-10-31
+2026-11-08T10:26:53.4932628Z  * [new branch]        research/seinfeld-path-disintegration-2026-10-26 -> origin/research/seinfeld-path-disintegration-2026-10-26
+2026-11-08T10:26:53.4933413Z  * [new branch]        research/seinfeld-selection-reinforcement-memory-2026-10-26 -> origin/research/seinfeld-selection-reinforcement-memory-2026-10-26
+2026-11-08T10:26:53.4934212Z  * [new branch]        research/selected-branch-cross-energy-2026-10-26 -> origin/research/selected-branch-cross-energy-2026-10-26
+2026-11-08T10:26:53.4935029Z  * [new branch]        research/selected-finiteband-dispersion-2026-10-30 -> origin/research/selected-finiteband-dispersion-2026-10-30
+2026-11-08T10:26:53.4935726Z  * [new branch]        research/selected-orbit-final-pin-2026-11-05 -> origin/research/selected-orbit-final-pin-2026-11-05
+2026-11-08T10:26:53.4936395Z  * [new branch]        research/selected-pi-lag-fireworks-2026-10-31 -> origin/research/selected-pi-lag-fireworks-2026-10-31
+2026-11-08T10:26:53.4937135Z  * [new branch]        research/selected-pi-signed-lag-forge-astra-2026-10-31 -> origin/research/selected-pi-signed-lag-forge-astra-2026-10-31
+2026-11-08T10:26:53.4937891Z  * [new branch]        research/selected-prime-phase-cofactor-2026-11-01 -> origin/research/selected-prime-phase-cofactor-2026-11-01
+2026-11-08T10:26:53.4938713Z  * [new branch]        research/selected-prime-window-energy-2026-11-01 -> origin/research/selected-prime-window-energy-2026-11-01
+2026-11-08T10:26:53.4939476Z  * [new branch]        research/selected-seed-superposition-horizon-2026-10-31 -> origin/research/selected-seed-superposition-horizon-2026-10-31
+2026-11-08T10:26:53.4940303Z  * [new branch]        research/selected-zero-boundary-diophantine-slip-2026-10-30 -> origin/research/selected-zero-boundary-diophantine-slip-2026-10-30
+2026-11-08T10:26:53.4941095Z  * [new branch]        research/selected-zero-boundary-signed-2026-11-01 -> origin/research/selected-zero-boundary-signed-2026-11-01
+2026-11-08T10:26:53.4941750Z  * [new branch]        research/shen-tzu-weyl-form-2026-11-02 -> origin/research/shen-tzu-weyl-form-2026-11-02
+2026-11-08T10:26:53.4942387Z  * [new branch]        research/sherman-gs05-signed-cascade-2026-11-02 -> origin/research/sherman-gs05-signed-cascade-2026-11-02
+2026-11-08T10:26:53.4943135Z  * [new branch]        research/source-covariant-ims-fucc-resonance-2026-10-17 -> origin/research/source-covariant-ims-fucc-resonance-2026-10-17
+2026-11-08T10:26:53.4943904Z  * [new branch]        research/source-jump-spectral-polar-schur-2026-10-17 -> origin/research/source-jump-spectral-polar-schur-2026-10-17
+2026-11-08T10:26:53.4944688Z  * [new branch]        research/source-minimality-clock-carry-renewal-2026-10-17 -> origin/research/source-minimality-clock-carry-renewal-2026-10-17
+2026-11-08T10:26:53.4945704Z  * [new branch]        research/source-sound-calculus-intrinsic-lcm-2026-11-04 -> origin/research/source-sound-calculus-intrinsic-lcm-2026-11-04
+2026-11-08T10:26:53.4946529Z  * [new branch]        research/spacetime-triangle-zero-spine-fourier-2026-10-30 -> origin/research/spacetime-triangle-zero-spine-fourier-2026-10-30
+2026-11-08T10:26:53.4947344Z  * [new branch]        research/spectral-obstruction-selected-seed-2026-11-06 -> origin/research/spectral-obstruction-selected-seed-2026-11-06
+2026-11-08T10:26:53.4948053Z  * [new branch]        research/split-inert-gamma-lag-2026-11-03 -> origin/research/split-inert-gamma-lag-2026-11-03
+2026-11-08T10:26:53.4948871Z  * [new branch]        research/stationary-e2-gamma-observer-2026-11-03 -> origin/research/stationary-e2-gamma-observer-2026-11-03
+2026-11-08T10:26:53.4949619Z  * [new branch]        research/succ-lambda-observation-calculus-2026-10-16 -> origin/research/succ-lambda-observation-calculus-2026-10-16
+2026-11-08T10:26:53.4950424Z  * [new branch]        research/succ-lonely-runner-exact-certificates-2026-10-28 -> origin/research/succ-lonely-runner-exact-certificates-2026-10-28
+2026-11-08T10:26:53.4951244Z  * [new branch]        research/succ-main-xii-math-memory-integration-2026-10-27 -> origin/research/succ-main-xii-math-memory-integration-2026-10-27
+2026-11-08T10:26:53.4952000Z  * [new branch]        research/succ-yean-proof-teeth-ultra-2026-10-15 -> origin/research/succ-yean-proof-teeth-ultra-2026-10-15
+2026-11-08T10:26:53.4952679Z  * [new branch]        research/summation-snapshot-arrows-2026-10-30 -> origin/research/summation-snapshot-arrows-2026-10-30
+2026-11-08T10:26:53.4953411Z  * [new branch]        research/suzuki-30mode-neumann-ci-recovery-2026-10-15 -> origin/research/suzuki-30mode-neumann-ci-recovery-2026-10-15
+2026-11-08T10:26:53.4954160Z  * [new branch]        research/suzuki-30mode-neumann-dual-gauge-2026-10-15 -> origin/research/suzuki-30mode-neumann-dual-gauge-2026-10-15
+2026-11-08T10:26:53.4955414Z  * [new branch]        research/suzuki-full30-residual-swarm-2026-10-15 -> origin/research/suzuki-full30-residual-swarm-2026-10-15
+2026-11-08T10:26:53.4956401Z  * [new branch]        research/suzuki-mixed30-gamma-tail-2026-10-15 -> origin/research/suzuki-mixed30-gamma-tail-2026-10-15
+2026-11-08T10:26:53.4957343Z  * [new branch]        research/suzuki-weil-finite-to-global-2026-10-13 -> origin/research/suzuki-weil-finite-to-global-2026-10-13
+2026-11-08T10:26:53.4958126Z  * [new branch]        research/swm-f48-2026-10-13 -> origin/research/swm-f48-2026-10-13
+2026-11-08T10:26:53.4959076Z  * [new branch]        research/tate-bessel-seven-low-schur-2026-10-15 -> origin/research/tate-bessel-seven-low-schur-2026-10-15
+2026-11-08T10:26:53.4960175Z  * [new branch]        research/tate-central-reflection-prime-jet-2026-10-15 -> origin/research/tate-central-reflection-prime-jet-2026-10-15
+2026-11-08T10:26:53.4961390Z  * [new branch]        research/tate-eta-bernoulli-transducer-2026-10-15 -> origin/research/tate-eta-bernoulli-transducer-2026-10-15
+2026-11-08T10:26:53.4962605Z  * [new branch]        research/tate-lattice-finite-global-descent-2026-10-15 -> origin/research/tate-lattice-finite-global-descent-2026-10-15
+2026-11-08T10:26:53.4963802Z  * [new branch]        research/tate-mellin-prime-fucc-escape-2026-10-16 -> origin/research/tate-mellin-prime-fucc-escape-2026-10-16
+2026-11-08T10:26:53.4965088Z  * [new branch]        research/tate-prime-clock-uv-transducer-2026-10-15 -> origin/research/tate-prime-clock-uv-transducer-2026-10-15
+2026-11-08T10:26:53.4966242Z  * [new branch]        research/tate-source-fourier-conductor-2026-10-14 -> origin/research/tate-source-fourier-conductor-2026-10-14
+2026-11-08T10:26:53.4967423Z  * [new branch]        research/tate-suzuki-fourier-high-moment-2026-10-15 -> origin/research/tate-suzuki-fourier-high-moment-2026-10-15
+2026-11-08T10:26:53.4968653Z  * [new branch]        research/tate-suzuki-zero-shift-source-range-2026-10-15 -> origin/research/tate-suzuki-zero-shift-source-range-2026-10-15
+2026-11-08T10:26:53.4969729Z  * [new branch]        research/tate-weighted-bessel-four-low-2026-10-15 -> origin/research/tate-weighted-bessel-four-low-2026-10-15
+2026-11-08T10:26:53.4970504Z  * [new branch]        research/tau-saddle-optimal-virtual-observer-2026-11-05 -> origin/research/tau-saddle-optimal-virtual-observer-2026-11-05
+2026-11-08T10:26:53.4971546Z  * [new branch]        research/tessaiga-iroh-clock-factorial-2026-10-17 -> origin/research/tessaiga-iroh-clock-factorial-2026-10-17
+2026-11-08T10:26:53.4972208Z  * [new branch]        research/theorem-forge-ii-2026-10-19 -> origin/research/theorem-forge-ii-2026-10-19
+2026-11-08T10:26:53.4973141Z  * [new branch]        research/theta-gamma-extruded-triangle-dual-interference-2026-11-08 -> origin/research/theta-gamma-extruded-triangle-dual-interference-2026-11-08
+2026-11-08T10:26:53.4974008Z  * [new branch]        research/three-channel-balanced-epoch-2026-11-08 -> origin/research/three-channel-balanced-epoch-2026-11-08
+2026-11-08T10:26:53.4974714Z  * [new branch]        research/three-channel-native-h3-wave-2026-10-30 -> origin/research/three-channel-native-h3-wave-2026-10-30
+2026-11-08T10:26:53.4975669Z  * [new branch]        research/time-extruded-operational-triangle-2026-10-30 -> origin/research/time-extruded-operational-triangle-2026-10-30
+2026-11-08T10:26:53.4976479Z  * [new branch]        research/totient-selected-pascal-gamma-2026-10-29 -> origin/research/totient-selected-pascal-gamma-2026-10-29
+2026-11-08T10:26:53.4977188Z  * [new branch]        research/triangle-categorical-fabric-2026-10-30 -> origin/research/triangle-categorical-fabric-2026-10-30
+2026-11-08T10:26:53.4977967Z  * [new branch]        research/triangle-silver-return-spectrum-2026-11-06 -> origin/research/triangle-silver-return-spectrum-2026-11-06
+2026-11-08T10:26:53.4978705Z  * [new branch]        research/triangular-harmonic-gamma-bbp-2026-10-29 -> origin/research/triangular-harmonic-gamma-bbp-2026-10-29
+2026-11-08T10:26:53.4979419Z  * [new branch]        research/unit-prime-succ-equivalence-2026-10-16 -> origin/research/unit-prime-succ-equivalence-2026-10-16
+2026-11-08T10:26:53.4980100Z  * [new branch]        research/unit-prime-tate-log-clock-2026-10-16 -> origin/research/unit-prime-tate-log-clock-2026-10-16
+2026-11-08T10:26:53.4980775Z  * [new branch]        research/unit-succ-pascal-gamma-seam-2026-10-31 -> origin/research/unit-succ-pascal-gamma-seam-2026-10-31
+2026-11-08T10:26:53.4981549Z  * [new branch]        research/unit-unit-differential-pascal-shadow-2026-11-02 -> origin/research/unit-unit-differential-pascal-shadow-2026-11-02
+2026-11-08T10:26:53.4982496Z  * [new branch]        research/universal-N-pascal-gamma-zeta-prime-2026-10-30 -> origin/research/universal-N-pascal-gamma-zeta-prime-2026-10-30
+2026-11-08T10:26:53.4983217Z  * [new branch]        research/universal-nz-carrier-2026-10-30 -> origin/research/universal-nz-carrier-2026-10-30
+2026-11-08T10:26:53.4983896Z  * [new branch]        research/virtual-prior-causal-inflation-2026-10-28 -> origin/research/virtual-prior-causal-inflation-2026-10-28
+2026-11-08T10:26:53.4984882Z  * [new branch]        research/wavefront-preobservation-prior-inflation-2026-10-28 -> origin/research/wavefront-preobservation-prior-inflation-2026-10-28
+2026-11-08T10:26:53.4985690Z  * [new branch]        research/weyl-borg-microlocal-fourier-2026-11-02 -> origin/research/weyl-borg-microlocal-fourier-2026-11-02
+2026-11-08T10:26:53.4986360Z  * [new branch]        research/weyl-mirror-slowmesh-2026-11-02 -> origin/research/weyl-mirror-slowmesh-2026-11-02
+2026-11-08T10:26:53.4987116Z  * [new branch]        research/wtf-global-calibration-source-resonance-2026-10-26 -> origin/research/wtf-global-calibration-source-resonance-2026-10-26
+2026-11-08T10:26:53.4987903Z  * [new branch]        research/wtf-global-integration-audit-2026-10-26 -> origin/research/wtf-global-integration-audit-2026-10-26
+2026-11-08T10:26:53.4988550Z  * [new branch]        research/x3-rigidity-frontier-2026-11-02 -> origin/research/x3-rigidity-frontier-2026-11-02
+2026-11-08T10:26:53.4989159Z  * [new branch]        research/x3-rigidity-machinery-2026-11-02 -> origin/research/x3-rigidity-machinery-2026-11-02
+2026-11-08T10:26:53.4989839Z  * [new branch]        research/xi-cayley-prime-horodisk-jensen-2026-11-08 -> origin/research/xi-cayley-prime-horodisk-jensen-2026-11-08
+2026-11-08T10:26:53.4990614Z  * [new branch]        research/yean-proof-kernel-crosspollination-2026-10-15 -> origin/research/yean-proof-kernel-crosspollination-2026-10-15
+2026-11-08T10:26:53.4991400Z  * [new branch]        research/yoneda-circle-collision-pressure-2026-11-05 -> origin/research/yoneda-circle-collision-pressure-2026-11-05
+2026-11-08T10:26:53.4992271Z  * [new branch]        research/zak-jackson-alias-prefix-2026-10-31 -> origin/research/zak-jackson-alias-prefix-2026-10-31
+2026-11-08T10:26:53.4992935Z  * [new branch]        research/zero-boundary-dispersion-2026-10-30 -> origin/research/zero-boundary-dispersion-2026-10-30
+2026-11-08T10:26:53.4993613Z  * [new branch]        research/zero-frame-bispectrum-audit-2026-11-04 -> origin/research/zero-frame-bispectrum-audit-2026-11-04
+2026-11-08T10:26:53.4994258Z  * [new branch]        research/zero-frame-coupling-2026-11-04 -> origin/research/zero-frame-coupling-2026-11-04
+2026-11-08T10:26:53.4995103Z  * [new branch]        research/zero-object-casimir-seed-pressure-2026-11-05 -> origin/research/zero-object-casimir-seed-pressure-2026-11-05
+2026-11-08T10:26:53.4995935Z  * [new branch]        research/zero-one-formal-character-bbp-log-germ-2026-10-27 -> origin/research/zero-one-formal-character-bbp-log-germ-2026-10-27
+2026-11-08T10:26:53.4996743Z  * [new branch]        research/zero-seed-martingale-clausen-cut-2026-11-05 -> origin/research/zero-seed-martingale-clausen-cut-2026-11-05
+2026-11-08T10:26:53.4998144Z [command]/usr/bin/git branch --list --remote origin/research/three-channel-balanced-epoch-2026-11-08
+2026-11-08T10:26:53.4998623Z   origin/research/three-channel-balanced-epoch-2026-11-08
+2026-11-08T10:26:53.4999381Z [command]/usr/bin/git rev-parse refs/remotes/origin/research/three-channel-balanced-epoch-2026-11-08
+2026-11-08T10:26:53.4999833Z 90711d2e9dc73020acbc4cde1ad058b62ef54a4d
+2026-11-08T10:26:53.5000523Z ##[endgroup]
+2026-11-08T10:26:53.5000898Z ##[group]Determining the checkout info
+2026-11-08T10:26:53.5001279Z ##[endgroup]
+2026-11-08T10:26:53.5001517Z [command]/usr/bin/git sparse-checkout disable
+2026-11-08T10:26:53.5002185Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-08T10:26:53.5002938Z ##[group]Checking out the ref
+2026-11-08T10:26:53.5003700Z [command]/usr/bin/git checkout --progress --force -B research/three-channel-balanced-epoch-2026-11-08 refs/remotes/origin/research/three-channel-balanced-epoch-2026-11-08
+2026-11-08T10:26:54.0616900Z Switched to a new branch 'research/three-channel-balanced-epoch-2026-11-08'
+2026-11-08T10:26:54.0626055Z branch 'research/three-channel-balanced-epoch-2026-11-08' set up to track 'origin/research/three-channel-balanced-epoch-2026-11-08'.
+2026-11-08T10:26:54.0645132Z ##[endgroup]
+2026-11-08T10:26:54.0689542Z [command]/usr/bin/git log -1 --format=%H
+2026-11-08T10:26:54.0715223Z 90711d2e9dc73020acbc4cde1ad058b62ef54a4d
+2026-11-08T10:26:54.0953508Z ##[group]Run actions/setup-python@v5
+2026-11-08T10:26:54.0953764Z with:
+2026-11-08T10:26:54.0953948Z   python-version: 3.10
+2026-11-08T10:26:54.0954146Z   check-latest: false
+2026-11-08T10:26:54.0956358Z   token: ***
+2026-11-08T10:26:54.0956541Z   update-environment: true
+2026-11-08T10:26:54.0956745Z   allow-prereleases: false
+2026-11-08T10:26:54.0956945Z   freethreaded: false
+2026-11-08T10:26:54.0957145Z ##[endgroup]
+2026-11-08T10:26:54.2093340Z ##[group]Installed versions
+2026-11-08T10:26:54.2168342Z Version 3.10 was not found in the local cache
+2026-11-08T10:26:54.2316698Z (node:2190) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-08T10:26:54.2317683Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-08T10:26:54.7458152Z Version 3.10 is available for downloading
+2026-11-08T10:26:54.7459734Z Download from "https://github.com/actions/python-versions/releases/download/3.10.22-36876129702/python-3.10.22-linux-26.04-x64.tar.gz"
+2026-11-08T10:27:05.8000727Z Unexpected HTTP response: 504
+2026-11-08T10:27:05.8001146Z Waiting 13 seconds before trying again
+2026-11-08T10:27:29.9223646Z Unexpected HTTP response: 504
+2026-11-08T10:27:29.9223945Z Waiting 10 seconds before trying again
+2026-11-08T10:27:51.0448769Z Unexpected HTTP response: 504
+2026-11-08T10:27:51.0512015Z ##[error]Unexpected HTTP response: 504
+2026-11-08T10:27:51.1786123Z ##[group]Run actions/upload-artifact@v4
+2026-11-08T10:27:51.1786393Z with:
+2026-11-08T10:27:51.1786581Z   name: obs-succ-3.10
+2026-11-08T10:27:51.1791055Z   path: /home/runner/work/_temp/observer-demo.json
+/home/runner/work/_temp/foundations.json
+/home/runner/work/_temp/ordinal.json
+/home/runner/work/_temp/prime-source.json
+/home/runner/work/_temp/field-relative-obstruction.json
+/home/runner/work/_temp/carrier-relative.json
+/home/runner/work/_temp/checkpoint-meta.json
+/home/runner/work/_temp/shared-carrier-boundary.json
+/home/runner/work/_temp/dynamic-fourier-virtual-zeros.json
+/home/runner/work/_temp/shadow-source-inference.json
+/home/runner/work/_temp/diagonal-adelic-zeta.json
+/home/runner/work/_temp/dual-boundary-observers.json
+/home/runner/work/_temp/chaos-source-quotient.json
+/home/runner/work/_temp/misiurewicz-phase.json
+/home/runner/work/_temp/logistic-observer-tree.json
+/home/runner/work/_temp/semantic-data-processing.json
+/home/runner/work/_temp/observer-trap.json
+/home/runner/work/_temp/absorbing-frontier.json
+/home/runner/work/_temp/knowledge-ladder.json
+/home/runner/work/_temp/relative-delta.json
+/home/runner/work/_temp/circle-translator.json
+/home/runner/work/_temp/twin-circle.json
+/home/runner/work/_temp/probe-coherence.json
+/home/runner/work/_temp/basis-boundary.json
+/home/runner/work/_temp/succ-derivatives.json
+/home/runner/work/_temp/zeta-minus-one-transport.json
+/home/runner/work/_temp/residue-arch.json
+/home/runner/work/_temp/clock-mahler.json
+/home/runner/work/_temp/proto-succ-d.json
+/home/runner/work/_temp/source-precision-transport.json
+/home/runner/work/_temp/proof-backaction-debt.json
+/home/runner/work/_temp/noncommuting-source-transport.json
+/home/runner/work/_temp/adaptive-original-source-policy.json
+/home/runner/work/_temp/operational-yoneda-descent.json
+/home/runner/work/_temp/prime-clock-y.json
+
+2026-11-08T10:27:51.1795934Z   if-no-files-found: warn
+2026-11-08T10:27:51.1796139Z   retention-days: 14
+2026-11-08T10:27:51.1796329Z   compression-level: 6
+2026-11-08T10:27:51.1796535Z   overwrite: false
+2026-11-08T10:27:51.1796725Z   include-hidden-files: false
+2026-11-08T10:27:51.1796936Z ##[endgroup]
+2026-11-08T10:27:51.3324327Z (node:2224) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-08T10:27:51.3325080Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-08T10:27:51.3386267Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-08T10:27:51.3399533Z The least common ancestor is /home/runner/work/_temp. This will be the root directory of the artifact
+2026-11-08T10:27:51.3413259Z ##[warning]No files were found with the provided path: /home/runner/work/_temp/observer-demo.json
+/home/runner/work/_temp/foundations.json
+/home/runner/work/_temp/ordinal.json
+/home/runner/work/_temp/prime-source.json
+/home/runner/work/_temp/field-relative-obstruction.json
+/home/runner/work/_temp/carrier-relative.json
+/home/runner/work/_temp/checkpoint-meta.json
+/home/runner/work/_temp/shared-carrier-boundary.json
+/home/runner/work/_temp/dynamic-fourier-virtual-zeros.json
+/home/runner/work/_temp/shadow-source-inference.json
+/home/runner/work/_temp/diagonal-adelic-zeta.json
+/home/runner/work/_temp/dual-boundary-observers.json
+/home/runner/work/_temp/chaos-source-quotient.json
+/home/runner/work/_temp/misiurewicz-phase.json
+/home/runner/work/_temp/logistic-observer-tree.json
+/home/runner/work/_temp/semantic-data-processing.json
+/home/runner/work/_temp/observer-trap.json
+/home/runner/work/_temp/absorbing-frontier.json
+/home/runner/work/_temp/knowledge-ladder.json
+/home/runner/work/_temp/relative-delta.json
+/home/runner/work/_temp/circle-translator.json
+/home/runner/work/_temp/twin-circle.json
+/home/runner/work/_temp/probe-coherence.json
+/home/runner/work/_temp/basis-boundary.json
+/home/runner/work/_temp/succ-derivatives.json
+/home/runner/work/_temp/zeta-minus-one-transport.json
+/home/runner/work/_temp/residue-arch.json
+/home/runner/work/_temp/clock-mahler.json
+/home/runner/work/_temp/proto-succ-d.json
+/home/runner/work/_temp/source-precision-transport.json
+/home/runner/work/_temp/proof-backaction-debt.json
+/home/runner/work/_temp/noncommuting-source-transport.json
+/home/runner/work/_temp/adaptive-original-source-policy.json
+/home/runner/work/_temp/operational-yoneda-descent.json
+/home/runner/work/_temp/prime-clock-y.json. No artifacts will be uploaded.
+2026-11-08T10:27:51.3651871Z Post job cleanup.
+2026-11-08T10:27:51.4414129Z [command]/usr/bin/git version
+2026-11-08T10:27:51.4458973Z git version 2.56.0
+2026-11-08T10:27:51.4496336Z Temporarily overriding HOME='/home/runner/work/_temp/763b0aaf-a2f9-4c55-85c4-a4386e10dbfc' before making global git config changes
+2026-11-08T10:27:51.4496967Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:27:51.4502034Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SUCC/SUCC
+2026-11-08T10:27:51.4549383Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:27:51.4599194Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T10:27:51.4926526Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:27:51.4952792Z http.https://github.com/.extraheader
+2026-11-08T10:27:51.4963715Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-08T10:27:51.4999711Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T10:27:51.5305614Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T10:27:51.5323038Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T10:27:51.5740378Z Cleaning up orphan processes
+2026-11-08T10:27:51.6085456Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

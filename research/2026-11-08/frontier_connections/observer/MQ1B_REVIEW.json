@@ -1,0 +1,78 @@
+{
+  "independent_finite_collision_checks": [
+    {
+      "D": 1,
+      "multisets": 3,
+      "ordered_tuples": 3,
+      "p": 3,
+      "weighted_collision_sum": 14
+    },
+    {
+      "D": 2,
+      "multisets": 6,
+      "ordered_tuples": 9,
+      "p": 3,
+      "weighted_collision_sum": 294
+    },
+    {
+      "D": 1,
+      "multisets": 3,
+      "ordered_tuples": 3,
+      "p": 5,
+      "weighted_collision_sum": 14
+    },
+    {
+      "D": 2,
+      "multisets": 6,
+      "ordered_tuples": 9,
+      "p": 5,
+      "weighted_collision_sum": 294
+    },
+    {
+      "D": 3,
+      "multisets": 10,
+      "ordered_tuples": 27,
+      "p": 5,
+      "weighted_collision_sum": 7292
+    },
+    {
+      "D": 4,
+      "multisets": 15,
+      "ordered_tuples": 81,
+      "p": 5,
+      "weighted_collision_sum": 198310
+    },
+    {
+      "D": 1,
+      "multisets": 3,
+      "ordered_tuples": 3,
+      "p": 7,
+      "weighted_collision_sum": 14
+    },
+    {
+      "D": 2,
+      "multisets": 6,
+      "ordered_tuples": 9,
+      "p": 7,
+      "weighted_collision_sum": 294
+    },
+    {
+      "D": 3,
+      "multisets": 10,
+      "ordered_tuples": 27,
+      "p": 7,
+      "weighted_collision_sum": 7292
+    },
+    {
+      "D": 4,
+      "multisets": 15,
+      "ordered_tuples": 81,
+      "p": 7,
+      "weighted_collision_sum": 198310
+    }
+  ],
+  "qualification": "No source test or asymptotic source claim; proof, not enumeration, supplies all-p,D quantifiers.",
+  "reviewed_theorems_sha256": "9546969ea6f254aa85932cac4a432416dfaf42fffe710fa80d9775f3080eed19",
+  "scope": "MQ1b general-degree weighted critical moment; amplitude-matched coherence control; full unordered-intensity control",
+  "verdict": "SURVIVES PROOF REVIEW"
+}

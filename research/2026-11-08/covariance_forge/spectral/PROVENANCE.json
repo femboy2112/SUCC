@@ -1,0 +1,29 @@
+{
+  "parent_head_at_round_start": "47ec1ccf9d3579897abb94c047f3b4dc13b4cb70",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "inputs": [
+    {
+      "path": "research/2026-11-07/learning_yoneda/arithmetic/PRIME_EPOCH_THEOREM.md",
+      "sha256": "4cd492fea4bbd715b1b4af9f0fbd1d53ffe83effe4bd248db94b2a519ec43f61"
+    },
+    {
+      "path": "research/2026-11-07/learning_yoneda/ANCHORED_SIGNED_FRONT.md",
+      "sha256": "0e999de58a5d1e071ab3b47be0c2aac602dc448ad5b8ee88d408d6c3e1bd031d"
+    },
+    {
+      "path": "observational_succ/selected_orbit.py",
+      "sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77"
+    },
+    {
+      "path": "research/2026-11-08/covariance_forge/run_spectral_probe.py",
+      "sha256": "eed7540f75951ab6b9ff8ed564434d386ee4446a3a315d4cbf7c972dcd68d379"
+    },
+    {
+      "path": "research/2026-11-08/covariance_forge/intervals.py",
+      "sha256": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a"
+    }
+  ],
+  "independence": "Separate spectral agent, shared model family. Root proposed polynomial extension; spectral agent derived finite constants and proof. Oracle imports none of parent observer code.",
+  "classical_import": "Bourgain-Konyagin 2003 Theorem2.1 through PE9; PNT fixed progression through prime selector.",
+  "scope": "New original local-source/time bounds; complement approximation and full Weyl decay OPEN."
+}

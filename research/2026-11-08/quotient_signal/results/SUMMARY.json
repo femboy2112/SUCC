@@ -1,0 +1,458 @@
+{
+  "cases": 300,
+  "claims": "Finite interval enclosures and consistency checks; no asymptotic decay estimate",
+  "epochs": 5,
+  "fine_rows": [
+    {
+      "A": 1093,
+      "W_abs_squared": [
+        1205390055028567438407,
+        1205390055028567438410
+      ],
+      "complement_variance": [
+        583056796716619425413855,
+        583056796716619425413921
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 1,
+      "p": 4337
+    },
+    {
+      "A": 1093,
+      "W_abs_squared": [
+        1208925819614620145342426,
+        1208925819614620145342436
+      ],
+      "complement_variance": [
+        243815754,
+        243815757
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 1,
+      "p": 4337
+    },
+    {
+      "A": 1093,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 1,
+      "p": 4337
+    },
+    {
+      "A": 1093,
+      "W_abs_squared": [
+        2693065885879814174023,
+        2693065885879814174026
+      ],
+      "complement_variance": [
+        589478461952414840726117,
+        589478461952414840726183
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 3,
+      "p": 4337
+    },
+    {
+      "A": 1093,
+      "W_abs_squared": [
+        1208925819614547910432459,
+        1208925819614547910432471
+      ],
+      "complement_variance": [
+        2194341800,
+        2194341803
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 3,
+      "p": 4337
+    },
+    {
+      "A": 1093,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 3,
+      "p": 4337
+    },
+    {
+      "A": 137,
+      "W_abs_squared": [
+        3370360091226765809118,
+        3370360091226765809121
+      ],
+      "complement_variance": [
+        579529694243503976237761,
+        579529694243503976237823
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 1,
+      "p": 521
+    },
+    {
+      "A": 137,
+      "W_abs_squared": [
+        1208925819613180737563418,
+        1208925819613180737563430
+      ],
+      "complement_variance": [
+        900682691711,
+        900682691714
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 1,
+      "p": 521
+    },
+    {
+      "A": 137,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 1,
+      "p": 521
+    },
+    {
+      "A": 137,
+      "W_abs_squared": [
+        224533647963879649709,
+        224533647963879649711
+      ],
+      "complement_variance": [
+        526293510045506050779094,
+        526293510045506050779152
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 3,
+      "p": 521
+    },
+    {
+      "A": 137,
+      "W_abs_squared": [
+        1208925819601593240421454,
+        1208925819601593240421464
+      ],
+      "complement_variance": [
+        8106144225384,
+        8106144225387
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 3,
+      "p": 521
+    },
+    {
+      "A": 137,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 3,
+      "p": 521
+    },
+    {
+      "A": 2203,
+      "W_abs_squared": [
+        1281026459851942270478,
+        1281026459851942270481
+      ],
+      "complement_variance": [
+        1005924227597565523354811,
+        1005924227597565523354902
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 1,
+      "p": 8761
+    },
+    {
+      "A": 2203,
+      "W_abs_squared": [
+        1208925819614628065205314,
+        1208925819614628065205324
+      ],
+      "complement_variance": [
+        19677492,
+        19677495
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 1,
+      "p": 8761
+    },
+    {
+      "A": 2203,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 1,
+      "p": 8761
+    },
+    {
+      "A": 2203,
+      "W_abs_squared": [
+        538647917029331065791,
+        538647917029331065793
+      ],
+      "complement_variance": [
+        1000771918822440484532251,
+        1000771918822440484532342
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 3,
+      "p": 8761
+    },
+    {
+      "A": 2203,
+      "W_abs_squared": [
+        1208925819614619189198453,
+        1208925819614619189198463
+      ],
+      "complement_variance": [
+        177097440,
+        177097443
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 3,
+      "p": 8761
+    },
+    {
+      "A": 2203,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 3,
+      "p": 8761
+    },
+    {
+      "A": 271,
+      "W_abs_squared": [
+        5246724365276281667652,
+        5246724365276281667655
+      ],
+      "complement_variance": [
+        571762670945761261301442,
+        571762670945761261301505
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 1,
+      "p": 1049
+    },
+    {
+      "A": 271,
+      "W_abs_squared": [
+        1208925819614393001423777,
+        1208925819614393001423787
+      ],
+      "complement_variance": [
+        61179503075,
+        61179503078
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 1,
+      "p": 1049
+    },
+    {
+      "A": 271,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 1,
+      "p": 1049
+    },
+    {
+      "A": 271,
+      "W_abs_squared": [
+        3460604117922316234656,
+        3460604117922316234660
+      ],
+      "complement_variance": [
+        526748583850196916321519,
+        526748583850196916321579
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 3,
+      "p": 1049
+    },
+    {
+      "A": 271,
+      "W_abs_squared": [
+        1208925819612503615164645,
+        1208925819612503615164655
+      ],
+      "complement_variance": [
+        550615527688,
+        550615527691
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 3,
+      "p": 1049
+    },
+    {
+      "A": 271,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 3,
+      "p": 1049
+    },
+    {
+      "A": 547,
+      "W_abs_squared": [
+        1203349413413829325992,
+        1203349413413829325994
+      ],
+      "complement_variance": [
+        536826438352186320522275,
+        536826438352186320522339
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 1,
+      "p": 2161
+    },
+    {
+      "A": 547,
+      "W_abs_squared": [
+        1208925819614594860824445,
+        1208925819614594860824457
+      ],
+      "complement_variance": [
+        3852061539,
+        3852061542
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 1,
+      "p": 2161
+    },
+    {
+      "A": 547,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 1,
+      "p": 2161
+    },
+    {
+      "A": 547,
+      "W_abs_squared": [
+        904442596389330245277,
+        904442596389330245280
+      ],
+      "complement_variance": [
+        641900973058866473472738,
+        641900973058866473472807
+      ],
+      "exact_local_measurability": true,
+      "family": "original_zero",
+      "h": 3,
+      "p": 2161
+    },
+    {
+      "A": 547,
+      "W_abs_squared": [
+        1208925819614320349770636,
+        1208925819614320349770648
+      ],
+      "complement_variance": [
+        34668553861,
+        34668553864
+      ],
+      "exact_local_measurability": true,
+      "family": "matched_wrong_seed",
+      "h": 3,
+      "p": 2161
+    },
+    {
+      "A": 547,
+      "W_abs_squared": [
+        1208925819614629174706176,
+        1208925819614629174706176
+      ],
+      "complement_variance": [
+        0,
+        2
+      ],
+      "exact_local_measurability": true,
+      "family": "synthetic_conjugate",
+      "h": 3,
+      "p": 2161
+    }
+  ],
+  "scale": 1208925819614629174706176
+}

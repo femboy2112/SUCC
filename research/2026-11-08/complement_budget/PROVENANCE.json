@@ -1,0 +1,65 @@
+{
+  "RH": "OPEN",
+  "branch": "research/learning-yoneda-source-cancellation-2026-11-07",
+  "classical_import": {
+    "live_hypothesis_check": "For the lifted polynomial degree d*(p-1)/m, 1<=degree<p, hence gcd(degree,p)=1; nontrivial additive character. Bound is an established finite-field theorem, not classical RH assumption.",
+    "location": "Theorem3.2, printed page31",
+    "url": "https://people.math.ethz.ch/~kowalski/exponential-sums-elementary.pdf"
+  },
+  "fetched_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "final_read_only_update_review": "hostile/LATEST_UPDATE_REVIEW.md",
+  "first_results_commit": "627f8644ec055acb22b6b30a3c69deed84f6780a",
+  "independence": "Separate agents and algorithms, shared model family/workspace/source; no external refereeing. Holdout secondary intervals use a different arithmetic context but shared source boxes.",
+  "native_inputs_unchanged_from_parent": true,
+  "normality": "OPEN",
+  "parent_research_head": "95d9860de3a52ab76c1a0719e170b609759b17b9",
+  "proof_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "protocol_commit": "49cb14b598db953c2b9b84a09cf8b59bb3f1b6b4",
+  "read_only_branch_pins": {
+    "research/fibonacci-circle-triangle-learning-2026-11-08": "07b218efadf6daa91dab6e2637485860a1b0cef2",
+    "research/four-pole-nine-pythagorean-golden-2026-11-08": "601317501bfa470c5d8d777546d90a382cb773db",
+    "research/four-pole-three-channel-poisson-matrix-2026-11-08": "efcb9985d0a240ea6d5c580de97445e57f5d12b7",
+    "research/theta-gamma-extruded-triangle-dual-interference-2026-11-08": "43a607818907120d4cdab73d240f5b4d7700b63f",
+    "research/xi-cayley-prime-horodisk-jensen-2026-11-08": "b90a04f58ebfa8f848a114480b41c79d3990300e"
+  },
+  "read_only_update_review": "hostile/REVIEW.md",
+  "source_contract": "r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2); U0=0; Un=16U(n-1)+r(n)",
+  "source_file_hashes": {
+    "AGENTS.md": {
+      "main_sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "worktree_sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    "docs/CATEGORICAL_OBSERVER_ATLAS.md": {
+      "main_sha256": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc",
+      "worktree_sha256": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc"
+    },
+    "docs/CLAIM_LEDGER.md": {
+      "main_sha256": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee",
+      "worktree_sha256": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee"
+    },
+    "docs/METHOD.md": {
+      "main_sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "worktree_sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    },
+    "docs/PI_NORMALITY_FRONTIER.md": {
+      "main_sha256": "44f890e7fb8f8bcf08f6cb536021a489a9fc915dfb02315e6fd1fe6ad3b317eb",
+      "worktree_sha256": "9f7e8b10fcde7e4a74006e4da79c5c972523ab624148db925f8add399537a681"
+    },
+    "observational_succ/duck_bbp.py": {
+      "main_sha256": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+      "worktree_sha256": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0"
+    },
+    "observational_succ/integer_bbp_carrier.py": {
+      "main_sha256": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253",
+      "worktree_sha256": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253"
+    },
+    "observational_succ/selected_orbit.py": {
+      "main_sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+      "worktree_sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77"
+    },
+    "provenance/IMPORT_MANIFEST.json": {
+      "main_sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "worktree_sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    }
+  }
+}

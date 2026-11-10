@@ -1,0 +1,438 @@
+{
+  "A": 2048,
+  "analytical_status": "existing BEC04/CP imported for asymptotic; finite statistics descriptive",
+  "complete_exact_source_tape_sha256": "650ac8bbe33779077dfbeecbcd0ce2dd2acfc8985153b41fac8d13d1aba58658",
+  "hostile": {
+    "all_wrong_real_carries_15": true,
+    "dyadic_seed_denominator_power2": 16464,
+    "dyadic_seed_sha256": "fe96d63cfb3d695403884b5cca655f8d613aee6e3fe787852a68d51f23612e1d",
+    "same_prime_channels_as_original": true,
+    "seed_one_fifth_changes_real_carries": true,
+    "seed_one_fifth_same_prime_clock": true
+  },
+  "local_real_exact_carry_matches": 117,
+  "order_m": 617,
+  "p": 4937,
+  "prime_carry_counts": [
+    128,
+    143,
+    121,
+    136,
+    136,
+    130,
+    115,
+    149,
+    128,
+    118,
+    102,
+    121,
+    122,
+    142,
+    135,
+    122
+  ],
+  "real_carry_counts": [
+    131,
+    138,
+    131,
+    134,
+    117,
+    136,
+    136,
+    124,
+    118,
+    132,
+    131,
+    124,
+    117,
+    109,
+    145,
+    125
+  ],
+  "schema": "PBC-JUNCTION-A2048-v1",
+  "scope": "finite original four-pole rational source; no pi normality theorem",
+  "signed_slip_character": {
+    "1": {
+      "prime_mean": {
+        "abs": 0.024868197907,
+        "imag": 0.017560581201,
+        "real": 0.017608329138
+      },
+      "real_mean": {
+        "abs": 0.017315241759,
+        "imag": 0.014518065837,
+        "real": 0.009436279008
+      },
+      "reconstruction_error": 5.66381237650047e-17,
+      "signed_covariance": {
+        "abs": 0.017406187167,
+        "imag": 0.01452867626,
+        "real": 0.009586079377
+      },
+      "slip_mean": {
+        "abs": 0.006038864182,
+        "imag": 0.003951555611,
+        "real": -0.004566518243
+      }
+    },
+    "3": {
+      "prime_mean": {
+        "abs": 0.030397262495,
+        "imag": 0.015716102838,
+        "real": -0.026019179057
+      },
+      "real_mean": {
+        "abs": 0.014476296819,
+        "imag": -0.007765551936,
+        "real": 0.012217175317
+      },
+      "reconstruction_error": 2.6379777400251016e-17,
+      "signed_covariance": {
+        "abs": 0.01425886573,
+        "imag": -0.007914542052,
+        "real": 0.011860660859
+      },
+      "slip_mean": {
+        "abs": 0.01271148595,
+        "imag": -0.010259398674,
+        "real": -0.007505105857
+      }
+    },
+    "8": {
+      "prime_mean": {
+        "abs": 0.0361328125,
+        "imag": 0.0,
+        "real": -0.0361328125
+      },
+      "real_mean": {
+        "abs": 0.001953125,
+        "imag": 0.0,
+        "real": 0.001953125
+      },
+      "reconstruction_error": 6.410260589286922e-17,
+      "signed_covariance": {
+        "abs": 0.001635551453,
+        "imag": -0.0,
+        "real": 0.001635551453
+      },
+      "slip_mean": {
+        "abs": 0.0087890625,
+        "imag": 0.0,
+        "real": -0.0087890625
+      }
+    }
+  },
+  "source_events": [
+    {
+      "n": 2469,
+      "prime_carry": 12,
+      "prime_injection": 2468,
+      "real_carry": 12
+    },
+    {
+      "n": 3086,
+      "prime_carry": 9,
+      "prime_injection": 2962,
+      "real_carry": 2
+    },
+    {
+      "n": 3703,
+      "prime_carry": 7,
+      "prime_injection": 4114,
+      "real_carry": 2
+    }
+  ],
+  "source_positive_rational_passport": true,
+  "stage_boundaries": [
+    2048,
+    2469,
+    3086,
+    3703,
+    4096
+  ],
+  "stage_junction": [
+    {
+      "birth_indexes": [],
+      "counts": [
+        103,
+        215,
+        103
+      ],
+      "exact_junction_reference": [
+        {
+          "denominator": 4,
+          "numerator": 1
+        },
+        {
+          "denominator": 2,
+          "numerator": 1
+        },
+        {
+          "denominator": 4,
+          "numerator": 1
+        }
+      ],
+      "interval": [
+        2048,
+        2469
+      ],
+      "parity_numerator": -9,
+      "parity_rate": {
+        "denominator": 421,
+        "numerator": -9
+      },
+      "rates": [
+        {
+          "denominator": 421,
+          "numerator": 103
+        },
+        {
+          "denominator": 421,
+          "numerator": 215
+        },
+        {
+          "denominator": 421,
+          "numerator": 103
+        }
+      ],
+      "real_prime_carry_matches": 26,
+      "stage": 1,
+      "total": 421
+    },
+    {
+      "birth_indexes": [
+        2469
+      ],
+      "counts": [
+        175,
+        288,
+        154
+      ],
+      "exact_junction_reference": [
+        {
+          "denominator": 42,
+          "numerator": 11
+        },
+        {
+          "denominator": 21,
+          "numerator": 10
+        },
+        {
+          "denominator": 42,
+          "numerator": 11
+        }
+      ],
+      "interval": [
+        2469,
+        3086
+      ],
+      "parity_numerator": 41,
+      "parity_rate": {
+        "denominator": 617,
+        "numerator": 41
+      },
+      "rates": [
+        {
+          "denominator": 617,
+          "numerator": 175
+        },
+        {
+          "denominator": 617,
+          "numerator": 288
+        },
+        {
+          "denominator": 617,
+          "numerator": 154
+        }
+      ],
+      "real_prime_carry_matches": 38,
+      "stage": 2,
+      "total": 617
+    },
+    {
+      "birth_indexes": [
+        3086
+      ],
+      "counts": [
+        107,
+        404,
+        106
+      ],
+      "exact_junction_reference": [
+        {
+          "denominator": 60,
+          "numerator": 11
+        },
+        {
+          "denominator": 30,
+          "numerator": 19
+        },
+        {
+          "denominator": 60,
+          "numerator": 11
+        }
+      ],
+      "interval": [
+        3086,
+        3703
+      ],
+      "parity_numerator": -191,
+      "parity_rate": {
+        "denominator": 617,
+        "numerator": -191
+      },
+      "rates": [
+        {
+          "denominator": 617,
+          "numerator": 107
+        },
+        {
+          "denominator": 617,
+          "numerator": 404
+        },
+        {
+          "denominator": 617,
+          "numerator": 106
+        }
+      ],
+      "real_prime_carry_matches": 21,
+      "stage": 3,
+      "total": 617
+    },
+    {
+      "birth_indexes": [
+        3703
+      ],
+      "counts": [
+        55,
+        287,
+        51
+      ],
+      "exact_junction_reference": [
+        {
+          "denominator": 940,
+          "numerator": 159
+        },
+        {
+          "denominator": 470,
+          "numerator": 311
+        },
+        {
+          "denominator": 940,
+          "numerator": 159
+        }
+      ],
+      "interval": [
+        3703,
+        4096
+      ],
+      "parity_numerator": -181,
+      "parity_rate": {
+        "denominator": 393,
+        "numerator": -181
+      },
+      "rates": [
+        {
+          "denominator": 393,
+          "numerator": 55
+        },
+        {
+          "denominator": 393,
+          "numerator": 287
+        },
+        {
+          "denominator": 131,
+          "numerator": 17
+        }
+      ],
+      "real_prime_carry_matches": 32,
+      "stage": 4,
+      "total": 393
+    }
+  ],
+  "whole_junction": {
+    "counts": [
+      440,
+      1194,
+      414
+    ],
+    "parity_numerator": -340,
+    "parity_rate": {
+      "denominator": 512,
+      "numerator": -85
+    },
+    "rates": [
+      {
+        "denominator": 256,
+        "numerator": 55
+      },
+      {
+        "denominator": 1024,
+        "numerator": 597
+      },
+      {
+        "denominator": 1024,
+        "numerator": 207
+      }
+    ],
+    "total": 2048
+  },
+  "whole_junction_limit": [
+    {
+      "denominator": 13160,
+      "numerator": 2861
+    },
+    {
+      "denominator": 6580,
+      "numerator": 3719
+    },
+    {
+      "denominator": 13160,
+      "numerator": 2861
+    }
+  ],
+  "word_scans": [
+    {
+      "depth": 1,
+      "prime_distinct": 16,
+      "prime_tv": {
+        "denominator": 2048,
+        "numerator": 75
+      },
+      "real_distinct": 16,
+      "real_tv": {
+        "denominator": 1024,
+        "numerator": 31
+      },
+      "starts": 2048
+    },
+    {
+      "depth": 2,
+      "prime_distinct": 256,
+      "prime_tv": {
+        "denominator": 524032,
+        "numerator": 70805
+      },
+      "real_distinct": 256,
+      "real_tv": {
+        "denominator": 524032,
+        "numerator": 69523
+      },
+      "starts": 2047
+    },
+    {
+      "depth": 3,
+      "prime_distinct": 1529,
+      "prime_tv": {
+        "denominator": 4096,
+        "numerator": 2567
+      },
+      "real_distinct": 1606,
+      "real_tv": {
+        "denominator": 2048,
+        "numerator": 1245
+      },
+      "starts": 2046
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "dependence": "same-model proof review, independent execution but inherited phase engine; no external scholarly certification",
+  "findings": [
+    "Finite bounds and bilinear conditional covariance identities correct.",
+    "Source slice L+1 through L+m stays before next p-pole because m divides L.",
+    "Leakage limit now explicitly requires fixed h, or |h_A|16^(-d_A)->0 and mu_A->0; quantifier concern resolved.",
+    "Reused interval engine is declared; overlap checks are finite consistency checks rather than standalone proofs of identities."
+  ],
+  "fresh_payload_matches_retained": true,
+  "fresh_replay_counts": {
+    "authentic_signed_projection_checks": 144,
+    "certified_leakage_lower_bounds": 144,
+    "certified_phase_variance_bounds": 144,
+    "conjugate_complement_controls": 144,
+    "exact_real_variance_checks": 36
+  },
+  "fresh_replay_sha256": "a0c0006f60acc1db003820c9bb1243c0b0fd2341bfd4175a40bf8d9b2daa9ddf",
+  "review": "CH7 paper and code cross-review",
+  "reviewed_sha256": {
+    "chronology/THEOREMS.md": "5edaa0a79b40b6f80c14fc2801d7aa089ceb88a5cc6f2f02f9bfc667a0577c10",
+    "chronology/leakage_oracle.py": "2be5a05a19f18413a6ca56e030354130326aa504b09aa9522d2f50fbb87ac41c",
+    "chronology/test_leakage.py": "10a6c9c2045ce2072c7fe19cb2e7cfd37a7fb1f8b34298adb139650147eafb57"
+  },
+  "tests": "3 tests pass",
+  "verdict": "no substantive defect found; fixed-h quantifier clarification applied and verified"
+}

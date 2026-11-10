@@ -1,0 +1,39 @@
+{
+  "RH": "OPEN",
+  "authority": "Exact rational finite checks; general and limiting theorems are paper proofs",
+  "code_sha256": "4a5ce70299a3bb0a26e1ff9a10457ae3b2713bfc87b24fc28cf3b5733808aac0",
+  "counts": {
+    "enumerated_paths": 1533,
+    "positive_alias": 12,
+    "posterior_counterexample": 4,
+    "posterior_update": 520,
+    "rank": 13,
+    "recovery": 13,
+    "source_forcing": 100,
+    "source_mass": 455
+  },
+  "inherited_source_sha256": "8b8be12cdbde8d3ae3fc17c4776aac3378dc44d2daa4dc6da64865f1194c809b",
+  "max_depth": 12,
+  "pi_normality": "OPEN",
+  "posterior_counterexample": {
+    "depth2": [
+      "7/25",
+      "11/25",
+      "7/25"
+    ],
+    "depth3_A": [
+      "41/250",
+      "87/250",
+      "39/125",
+      "22/125"
+    ],
+    "depth3_B": [
+      "22/125",
+      "39/125",
+      "87/250",
+      "41/250"
+    ]
+  },
+  "status": "PASS",
+  "total_checks": 2650
+}

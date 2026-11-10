@@ -1,0 +1,43 @@
+{
+  "RH": "OPEN",
+  "cycle_countermodels": {
+    "command": "/tmp/succ-learning-yoneda-venv/bin/python research/2026-11-08/chronology_carry/theory/cycle_countermodels.py",
+    "constant_cycles_checked": 56,
+    "exit_code": 0,
+    "published_examples": 4
+  },
+  "holdout_access": "none",
+  "independence": "Different front and exact Fraction implementation; same model family, repository, source and inherited VdC theorem. Not external refereeing.",
+  "new_claims": {
+    "CCV-A": "PROVED PAPER finite-state-flow obstruction with exact frozen-table periodic controls and finite-horizon rational approximants",
+    "CCV1": "PROVED PAPER finite reference Poisson compiler",
+    "CCV1-L": "PROVED PAPER transient literal-state kernel retains carry16, P^k forgets all symbols",
+    "CCV1-Q": "PROVED PAPER target-sufficient integer-lift quotient with literal carry propagation, exact4k-bit finite-carrier bound for oddh",
+    "CCV2": "PROVED PAPER exact selected transition occupation identity",
+    "CCV3": "PROVED PAPER carry control variate composed with inherited VdC",
+    "CCV4": "PROVED CONDITIONAL; original-zero premises OPEN",
+    "CCV5": "PROVED CONDITIONAL on base16 normality; raw fixed-depth literal or residue carry prediction only",
+    "CCV6": "PROVED PAPER original four-pole literal-carry exception budget, inherited SBA source gap, seed-blind local implication",
+    "CCV7": "PROVED PAPER literal-carry retrodictive residual with epsilon-only error; original-zero Dpsi decay EQUIVALENT-REFORMULATION and OPEN"
+  },
+  "parent": "19d98078b60e47092c9b9d050a70b6b7eabb7cd2",
+  "pi_base16_normality": "OPEN",
+  "reads": {
+    "observational_succ/selected_branch_arithmetic.py": "7000d2454efc552782d2aa2e8cfafb69b0528e0fbf58cb89075408d50530939a",
+    "observational_succ/selected_branch_transport.py": "a30143fe9d6896200babe6e54081a36551f5a6868f574f4aee6e3a9019b0d110",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "research/2026-10-26/SELECTED_BRANCH_ARITHMETIC.md": "9fb35fbdaf1a075b098d3e3f9c711c3c18012c360ef88f5a99c5e2e8dfc72e2e",
+    "research/2026-11-05/history_shell/PROOFS.md": "b96134b433bd414d2099dff6cf97f3eb50f35c58fd2f3426304d73ad8c6a707d",
+    "research/2026-11-08/chronology_carry/model/FROZEN_TABLE.json": "2462a0e3b814a5fb8664701a12832698b04cbd62c7c60ecf63abc669bc4f3887",
+    "research/2026-11-08/covariance_forge/spectral/THEOREMS.md": "4557a77ca42d0dc876c79adca40df3202b2db2edf7046ae10c719afd469e666b",
+    "research/2026-11-08/frontier_connections/crucible/THEOREMS.md": "29b9424e1da076ff1da4e93f19f6b706efed3d7374ed1c9235e803505c9ec191",
+    "research/2026-11-08/signed_covariance_round2/lag_instrument.py": "9bee7c56d4bb87a992cfa2e64fef71f1a1e911436faeecc5bc2f347b254292a1"
+  },
+  "source_contract": "four signed poles, U0=0; no changes",
+  "tests": {
+    "command": "/tmp/succ-learning-yoneda-venv/bin/python -m unittest discover -s research/2026-11-08/chronology_carry/theory -p 'test_*.py' -v",
+    "exit_code": 0,
+    "methods": 13,
+    "scope": "finite algebra and source transport, not asymptotic hypotheses or formal kernel"
+  }
+}

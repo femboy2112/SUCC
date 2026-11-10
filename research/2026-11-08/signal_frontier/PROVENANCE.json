@@ -1,0 +1,65 @@
+{
+  "RH": "OPEN",
+  "classical_imports": "prime_resonance/SOURCE_IMPORTS.json",
+  "formal_scope": "formal/FibonacciClock.lean integer coefficient transport only; analytic paper theorems not formalized",
+  "holdout": "A=10009 starts beyond prior recorded source endpoint9837; smaller source windows overlap",
+  "independence": "Separate assignments and algorithms in shared model family; shared source builder/phase engine identified; not external peer review",
+  "last_fetched_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "live_main_source_comparison": {
+    "observational_succ/duck_bbp.py": {
+      "identical_to_worktree": true,
+      "main_sha256": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0"
+    },
+    "observational_succ/selected_orbit.py": {
+      "identical_to_worktree": true,
+      "main_sha256": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77"
+    },
+    "provenance/IMPORT_MANIFEST.json": {
+      "identical_to_worktree": true,
+      "main_sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    }
+  },
+  "pi_normality": "OPEN",
+  "proof_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "publication_checkpoint": "58d6ec2bbf7156fabf04662ae4955e40b735cdc2",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "read_only_dependencies": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "docs/OPERATIONAL_TRIANGLE.md": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035",
+    "observational_succ/duck_bbp.py": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-29/operational_triangle_frontier/THEOREMS.md": "740a201cd37d41aff408d4628fc65d11e7d4c36eb52b9c8c4937ef7a0cc21079",
+    "research/2026-11-08/covariance_forge/intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "research/2026-11-08/covariance_forge/source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3",
+    "research/2026-11-08/quotient_signal/gamma/THEOREMS.md": "f9993d356f27aaf4fed00f9ac28d7a15560c3b252c8e713321262c6c429de6b2",
+    "research/2026-11-08/quotient_signal/quotient/THEOREMS.md": "b98caac430166c8f4399628b7e4238e4ad749381471ecd03518872736c52bfee",
+    "research/2026-11-08/signed_covariance_round2/explicit_selector.py": "0c63d0b19225ba50e0bcef51ea67d2819e276ab833c1efab8e995371d6c33657"
+  },
+  "research_parent": "86327467191420d2157eeae5f4cfa1c2c62810da",
+  "scope": "Only research/2026-11-08/signal_frontier; shared roadmap/catalog, main and frozen inputs untouched",
+  "source": {
+    "poles": [
+      [
+        4,
+        7
+      ],
+      [
+        -2,
+        4
+      ],
+      [
+        -1,
+        3
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "seed": "literal U0=0",
+    "unwrapped_states_and_carries_preserved": true
+  },
+  "source_protocol_commit": "d08c0f17"
+}

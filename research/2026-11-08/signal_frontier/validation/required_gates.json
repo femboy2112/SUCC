@@ -1,0 +1,28 @@
+[
+  {
+    "name": "provenance",
+    "command": [
+      "/tmp/succ-learning-yoneda-venv/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.059737789910286665,
+    "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+  },
+  {
+    "name": "native_suite",
+    "command": [
+      "/tmp/succ-learning-yoneda-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py"
+    ],
+    "exit_code": 1,
+    "seconds": 1283.629908090923,
+    "log_sha256": "b904623fcdad411504350cccc76167a62bdacd98db68c1e0afd17975081f8d5c"
+  }
+]

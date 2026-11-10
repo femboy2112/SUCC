@@ -1,0 +1,100 @@
+{
+  "id": 128703080840,
+  "run_id": 42471496817,
+  "workflow_name": "Observational SUCC validation",
+  "head_branch": "research/three-channel-balanced-epoch-2026-11-08",
+  "run_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/42471496817",
+  "run_attempt": 1,
+  "node_id": "CR_kwDOVESeB88AAAAd900piA",
+  "head_sha": "90711d2e9dc73020acbc4cde1ad058b62ef54a4d",
+  "url": "https://api.github.com/repos/femboy2112/SUCC/actions/jobs/128703080840",
+  "html_url": "https://github.com/femboy2112/SUCC/actions/runs/42471496817/job/128703080840",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-08T10:27:24Z",
+  "started_at": "2026-11-08T10:28:35Z",
+  "completed_at": "2026-11-08T10:29:55Z",
+  "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-08T10:28:36Z",
+      "completed_at": "2026-11-08T10:28:36Z"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-08T10:28:36Z",
+      "completed_at": "2026-11-08T10:28:40Z"
+    },
+    {
+      "name": "Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 3,
+      "started_at": "2026-11-08T10:28:40Z",
+      "completed_at": "2026-11-08T10:29:53Z"
+    },
+    {
+      "name": "Install verified research dependencies",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 4,
+      "started_at": "2026-11-08T10:29:53Z",
+      "completed_at": "2026-11-08T10:29:53Z"
+    },
+    {
+      "name": "Exact heuristic and source-provenance tests",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 5,
+      "started_at": "2026-11-08T10:29:53Z",
+      "completed_at": "2026-11-08T10:29:53Z"
+    },
+    {
+      "name": "Independently rederive stored Bayesian-source receipt",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 6,
+      "started_at": "2026-11-08T10:29:53Z",
+      "completed_at": "2026-11-08T10:29:53Z"
+    },
+    {
+      "name": "Post Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 11,
+      "started_at": "2026-11-08T10:29:53Z",
+      "completed_at": "2026-11-08T10:29:53Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-08T10:29:53Z",
+      "completed_at": "2026-11-08T10:29:54Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-08T10:29:54Z",
+      "completed_at": "2026-11-08T10:29:54Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/femboy2112/SUCC/check-runs/128703080840",
+  "labels": [
+    "ubuntu-latest"
+  ],
+  "runner_id": 1000043326,
+  "runner_name": "GitHub Actions 1000043326",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}

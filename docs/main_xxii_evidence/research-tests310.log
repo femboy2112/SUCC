@@ -1,0 +1,507 @@
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-07/learning_yoneda', '-p', 'test_*.py', '-v']
+test_adaptive_threshold_strict_resource_advantage (test_learning.LearningTests) ... ok
+test_all_binary_three_digit_targets_independent_rows (test_learning.LearningTests) ... ok
+test_anchored_charge_and_feedback_control (test_learning.LearningTests) ... ok
+test_digit_holdouts (test_learning.LearningTests) ... ok
+test_frozen_source_and_lifts (test_learning.LearningTests) ... ok
+test_genuine_path_yoneda_not_endpoints (test_learning.LearningTests) ... ok
+test_late_query_needs_large_intermediate_memory (test_learning.LearningTests) ... ok
+test_main_functor_and_policy_reuse (test_learning.LearningTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.087s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-07/learning_yoneda/arithmetic', '-p', 'test_*.py', '-v']
+test_carry_erasure_is_not_two_adic_state (test_finite_adelic.FiniteAdelicTests) ... ok
+test_exact_hostile_epoch (test_finite_adelic.FiniteAdelicTests) ... ok
+test_fixed_eta_geometric_sharpening (test_finite_adelic.FiniteAdelicTests) ... ok
+test_four_pole_combined_identity (test_finite_adelic.FiniteAdelicTests) ... ok
+test_invalid_chronology (test_finite_adelic.FiniteAdelicTests) ... ok
+test_main_selected_orbit_compatibility (test_finite_adelic.FiniteAdelicTests) ... ok
+test_prime_principal_part_mutant (test_finite_adelic.FiniteAdelicTests) ... ok
+test_principal_rejects_nonprimes_and_inexact_rationals (test_finite_adelic.FiniteAdelicTests) ... ok
+test_reject_inexact_chronology_seed_and_precision (test_finite_adelic.FiniteAdelicTests) ... ok
+test_reject_invalid_prime_collections (test_finite_adelic.FiniteAdelicTests) ... ok
+test_sign_and_empty_tail (test_finite_adelic.FiniteAdelicTests) ... ok
+test_source_bound (test_finite_adelic.FiniteAdelicTests) ... ok
+test_clean_source_epochs (test_prime_epochs.PrimeEpochTests) ... ok
+test_no_gauss_saving_claim_when_bound_large (test_prime_epochs.PrimeEpochTests) ... ok
+test_reject_wrong_arithmetic_domains (test_prime_epochs.PrimeEpochTests) ... ok
+test_selector_and_exact_interval_weights (test_prime_epochs.PrimeEpochTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.128s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-07/learning_yoneda/crucible', '-p', 'test_*.py', '-v']
+test_calibrated_lattice_is_not_uniform_digits (test_hostile.HostileTests) ... ok
+test_conditional_memory_reuses_existing_solver (test_hostile.HostileTests) ... ok
+test_homometry_is_not_equality (test_hostile.HostileTests) ... ok
+test_original_forcing_exact_zero_and_unwrapped_lift (test_hostile.HostileTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-07/learning_yoneda/spectral', '-p', 'test_*.py', '-v']
+test_exact_piecewise_tail (test_spectral.SpectralAuditTests) ... ok
+test_fejer_independent_square_amplitude_coefficients (test_spectral.SpectralAuditTests) ... ok
+test_next_time_exposes_previously_missing_mode (test_spectral.SpectralAuditTests) ... ok
+test_positive_law_alias_pair_has_exact_low_band (test_spectral.SpectralAuditTests) ... ok
+test_sharp_real_law_constant_and_competing_mode (test_spectral.SpectralAuditTests) ... ok
+test_source_preserves_all_signed_poles (test_spectral.SpectralAuditTests) ... ok
+test_unlimited_finite_memory_does_not_split_witness (test_spectral.SpectralAuditTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.021s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/chronology_carry', '-p', 'test_*.py', '-v']
+test_coherent_carry_table_keeps_the_resonance (test_retro_probe.RetrodictionTests) ... ok
+test_exact_source_ancestor_cells (test_retro_probe.RetrodictionTests) ... ok
+test_phase_word_is_causal_and_keeps_literal_spill (test_retro_probe.RetrodictionTests) ... ok
+test_rejects_truncated_source_instead_of_silently_zipping (test_retro_probe.RetrodictionTests) ... ok
+test_coherent_and_cancelling_residual_controls (test_signed_probe.SignedProbeTests) ... ok
+test_finite_range_constants_and_even_power_geometry (test_signed_probe.SignedProbeTests) ... ok
+test_padded_windows_against_independent_exact_pairs (test_signed_probe.SignedProbeTests) ... ok
+test_poisson_identity_with_exceptional_carries (test_signed_probe.SignedProbeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.152s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/chronology_carry/crucible', '-p', 'test_*.py', '-v']
+test_arbitrary_forcing_full_cells (test_carry_controls.CarryInformationControls) ... ok
+test_future_carry_cells (test_carry_controls.CarryInformationControls) ... ok
+test_integer_forcing_leaves_full_uniform_tail (test_carry_controls.CarryInformationControls) ... ok
+test_original_finite_green_coupling (test_carry_controls.CarryInformationControls) ... ok
+test_same_prefix_antipodal_and_odd_denominator (test_carry_controls.CarryInformationControls) ... ok
+test_guards_and_direct_formula (test_carry_only.CarryOnlyInnovationTests) ... ok
+test_literal_propagation_and_endpoint_timing (test_carry_only.CarryOnlyInnovationTests) ... ok
+test_dyadic_modular_sum_contains_separate_fraction_recurrence (test_independent_phase.IndependentPhaseArithmetic) ... ok
+test_exact_binary_endpoint_conversion (test_independent_phase.IndependentPhaseArithmetic) ... ok
+test_common_factor_interval_and_bound (test_innovation.InnovationTests) ... ok
+test_complete_finite_character_compiler (test_innovation.InnovationTests) ... ok
+test_exact_mode_covariance_and_conjugation (test_innovation.InnovationTests) ... ok
+test_integer_lift_common_transport (test_innovation.InnovationTests) ... ok
+test_literal_digit_tail_constant (test_innovation.InnovationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 6.933s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/chronology_carry/model', '-p', 'test_*.py', '-v']
+test_coherent_control_never_certifies_below_one (test_carry_model.CarryModelTests) ... ok
+test_dyadic_disk_and_outside_carries (test_carry_model.CarryModelTests) ... ok
+test_gauss_period_square_identity (test_carry_model.CarryModelTests) ... ok
+test_modulus_bounds_exact_rationals (test_carry_model.CarryModelTests) ... ok
+test_source_stream_against_fraction (test_carry_model.CarryModelTests) ... ok
+test_coherent_constant_family_has_no_positive_floor (test_family_audit.FamilyAuditTests) ... ok
+test_exact_dual_bound_all_tables (test_family_audit.FamilyAuditTests) ... ok
+test_radial_is_exact_dyadic_in_disk (test_family_audit.FamilyAuditTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.099s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/chronology_carry/theory', '-p', 'test_*.py', '-v']
+test_all_small_causal_paths_have_exact_occupation_identity (test_carry_control.CarryControlTests) ... ok
+test_coherent_residual_cannot_disappear (test_carry_control.CarryControlTests) ... ok
+test_integer_lift_quotient_preserves_literal_carry_and_potential (test_carry_control.CarryControlTests) ... ok
+test_invalid_input_is_rejected (test_carry_control.CarryControlTests) ... ok
+test_literal_carry_spill_is_charged (test_carry_control.CarryControlTests) ... ok
+test_literal_transient_kernel_keeps_exceptional_states (test_carry_control.CarryControlTests) ... ok
+test_nonuniform_rows_can_have_zero_signed_innovation (test_carry_control.CarryControlTests) ... ok
+test_original_four_pole_carry_completion_algebra (test_carry_control.CarryControlTests) ... ok
+test_original_source_retrodictive_phase_identity_and_error (test_carry_control.CarryControlTests) ... ok
+test_padded_vdc_independent_exact_gram_routes (test_carry_control.CarryControlTests) ... ok
+test_poisson_all_small_tables_and_native_depth_two (test_carry_control.CarryControlTests) ... ok
+test_retrodictive_difference_has_paid_window_energy (test_carry_control.CarryControlTests) ... ok
+test_transferred_table_mismatch_is_not_training_risk (test_carry_control.CarryControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.096s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/complement_budget', '-p', 'test_*.py', '-v']
+test_bluestein_prime_and_composite_lengths (test_budget.CertifiedTransformTests) ... ok
+test_complete_menu_known_controls (test_budget.CertifiedTransformTests) ... ok
+test_dual_bound_allows_unbounded_resonance (test_budget.CertifiedTransformTests) ... ok
+test_impulse_constant_and_sign (test_budget.CertifiedTransformTests) ... ok
+test_radix_two_against_direct_interval_sum (test_budget.CertifiedTransformTests) ... ok
+test_reject_invalid_fft_inputs (test_budget.CertifiedTransformTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.854s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/complement_budget/hostile', '-p', 'test_*.py', '-v']
+test_deterministic_q2_floor_positive (test_hostile.HostileTests) ... ok
+test_even_radix_factor (test_hostile.HostileTests) ... ok
+test_exact_nonresonant_reconstruction (test_hostile.HostileTests) ... ok
+test_invalid_clock (test_hostile.HostileTests) ... ok
+test_synthetic_control_needs_forcing_cost (test_hostile.HostileTests) ... ok
+test_two_replicas_are_eligible (test_hostile.HostileTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.011s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/complement_budget/model', '-p', 'test_*.py', '-v']
+test_constant_offset_requires_own_sector (test_model.ModelTests) ... ok
+test_invalid_law_inputs (test_model.ModelTests) ... ok
+test_linear_laws_are_exactly_covariant (test_model.ModelTests) ... ok
+test_literal_source_cocycle (test_model.ModelTests) ... ok
+test_missing_orbit_bound_not_just_formula (test_model.ModelTests) ... ok
+test_nonlinear_closed_orbit_shows_budget_is_necessary (test_model.ModelTests) ... ok
+test_positive_unequal_weights (test_model.ModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.113s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/complement_budget/resonance', '-p', 'test_*.py', '-v']
+test_affine_anchor_fifteenth_roots (test_resonance.ResonanceTests) ... ok
+test_lift_identity_independent_replica_algorithm (test_resonance.ResonanceTests) ... ok
+test_low_order_bound_can_be_vacuous (test_resonance.ResonanceTests) ... ok
+test_reduced_alias_cannot_get_nonlinear_floor (test_resonance.ResonanceTests) ... ok
+test_source_forcing_positive_monotone_bound (test_resonance.ResonanceTests) ... ok
+test_square_root_outward (test_resonance.ResonanceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.046s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/covariance_forge', '-p', 'test_*.py', '-v']
+test_coherent_control_stays_large_at_every_refinement (test_history_certificate.HistoryCertificateTests) ... ok
+test_nonresonant_partition_certifies_zero (test_history_certificate.HistoryCertificateTests) ... ok
+test_source_gate_rejects_seed_mutation_and_wrapping (test_history_certificate.HistoryCertificateTests) ... ok
+test_sqrt_and_domains (test_history_certificate.HistoryCertificateTests) ... ok
+test_bilinear_covariance_is_not_hermitian (test_instrument.InstrumentTests) ... ok
+test_character_product_transport_and_conjugation (test_instrument.InstrumentTests) ... ok
+test_exact_quadrants_and_wraps (test_instrument.InstrumentTests) ... ok
+test_independent_fraction_taylor_calibration (test_instrument.InstrumentTests) ... ok
+test_independent_source_recurrence_and_modular_sum (test_instrument.InstrumentTests) ... ok
+test_outward_operations_signed_and_zero_crossing (test_instrument.InstrumentTests) ... ok
+test_reject_inexact_malformed_domains (test_instrument.InstrumentTests) ... ok
+test_shadow_matches_independent_previous_construction (test_instrument.InstrumentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.168s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/covariance_forge/arithmetic', '-p', 'test_*.py', '-v']
+test_capacity_is_exact_at_boundary (test_terminal_support.TerminalSupportTests) ... ok
+test_elementary_linear_prefix_memory (test_terminal_support.TerminalSupportTests) ... ok
+test_excess_precision_fails_without_new_prime (test_terminal_support.TerminalSupportTests) ... ok
+test_forbidden_candidate_loses_terminal_denominator (test_terminal_support.TerminalSupportTests) ... ok
+test_full_chronological_authentication_rejects (test_terminal_support.TerminalSupportTests) ... ok
+test_independent_source_and_modular_avoidance (test_terminal_support.TerminalSupportTests) ... ok
+test_nonexact_and_nonprime_inputs_fail_closed (test_terminal_support.TerminalSupportTests) ... ok
+test_omitted_selected_prime_is_not_automatically_preserved (test_terminal_support.TerminalSupportTests) ... ok
+test_terminal_denominator_and_all_finite_observations (test_terminal_support.TerminalSupportTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.038s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/covariance_forge/crucible', '-p', 'test_*.py', '-v']
+test_carry_fiber_upper_boundary_is_excluded (test_hostile_exact.HostileExactTests) ... ok
+test_fixed_support_clock_has_strong_signed_covariance (test_hostile_exact.HostileExactTests) ... ok
+test_integer_seed_shift_needs_initial_lift (test_hostile_exact.HostileExactTests) ... ok
+test_sharp_height_boundary_is_not_closed (test_hostile_exact.HostileExactTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.005s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/covariance_forge/spectral', '-p', 'test_*.py', '-v']
+test_all_tones_autocorrelation_rearrangement (test_spectral.CovarianceForgeTests) ... ok
+test_history_refinement_trades_prediction_for_leakage (test_spectral.CovarianceForgeTests) ... ok
+test_original_source_gate (test_spectral.CovarianceForgeTests) ... ok
+test_polynomial_chirp_elimination_keeps_nonzero_source (test_spectral.CovarianceForgeTests) ... ok
+test_source_frequency_and_prime_domain (test_spectral.CovarianceForgeTests) ... ok
+test_sparse_dual_is_attained_by_flat_coherent_control (test_spectral.CovarianceForgeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.088s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/frontier_connections', '-p', 'test_*.py', '-v']
+test_actual_source_energy (test_energy.ReplicaEnergyTests) ... ok
+test_euler_word_coverage_and_temporal_repeat (test_energy.ReplicaEnergyTests) ... ok
+test_invalid_word_model (test_energy.ReplicaEnergyTests) ... ok
+test_parity_hypothesis (test_energy.ReplicaEnergyTests) ... ok
+test_stationary_families (test_energy.ReplicaEnergyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.498s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/frontier_connections/arithmetic', '-p', 'test_*.py', '-v']
+test_affine_transport_exact_exponent_identity (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_characteristic_two_failure (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_exact_fourth_moment_all_subsets (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_higher_moment_curve_weighted_collision (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_int64_matches_python_integers_all_small_coefficients (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_integer_scanner_every_small_coefficient (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_odd_prime_pair_uniqueness_and_tomography (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_phase_blind_moments (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_two_point_tomography_ambiguity (test_arithmetic.QuadraticAlgebraTests) ... ok
+test_wrong_sign_and_scaling_rejected (test_arithmetic.QuadraticAlgebraTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.323s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/frontier_connections/observer', '-p', 'test_*.py', '-v']
+test_deterministic_source_replay_is_singleton (test_observer.MomentMemoryTests) ... ok
+test_even_half_moment_chart (test_observer.MomentMemoryTests) ... ok
+test_exact_chronology_radius (test_observer.MomentMemoryTests) ... ok
+test_extra_moment_removes_antipodal_alias (test_observer.MomentMemoryTests) ... ok
+test_hypothesis_rejections (test_observer.MomentMemoryTests) ... ok
+test_newton_against_direct_atom_powers (test_observer.MomentMemoryTests) ... ok
+test_no_uniform_conditioning (test_observer.MomentMemoryTests) ... ok
+test_pair_mean_closure_and_antipodal_alias (test_observer.MomentMemoryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.700s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/quotient_signal', '-p', 'test_*.py', '-v']
+test_invalid_partition (test_source_probe.SourceQuotientTests) ... ok
+test_measurable_carrier_does_not_require_predictable_complement (test_source_probe.SourceQuotientTests) ... ok
+test_nonuniform_fibers_preserve_weighted_mean (test_source_probe.SourceQuotientTests) ... ok
+test_sharp_conjugate_and_refinement (test_source_probe.SourceQuotientTests) ... ok
+test_signed_cancellation_survives_magnitude_failure (test_source_probe.SourceQuotientTests) ... ok
+test_transcript_measurable_gauge_preserves_quotient (test_source_probe.SourceQuotientTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/quotient_signal/gamma', '-p', 'test_*.py', '-v']
+test_constant_is_inside_independent_first_window (test_gamma.GammaResidualTests) ... ok
+test_dyadic_rounding_is_outward (test_gamma.GammaResidualTests) ... ok
+test_effective_tail_bound (test_gamma.GammaResidualTests) ... ok
+test_invalid_domains_are_rejected (test_gamma.GammaResidualTests) ... ok
+test_seed_boundary_is_not_removed_from_lift (test_gamma.GammaResidualTests) ... ok
+test_source_from_independent_integral (test_gamma.GammaResidualTests) ... ok
+test_wrong_first_pole_fails_tail_scale (test_gamma.GammaResidualTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.036s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/quotient_signal/quotient', '-p', 'test_*.py', '-v']
+test_all_exact_identities (test_quotient.QuotientTests) ... ok
+test_exact_hostile_controls (test_quotient.QuotientTests) ... ok
+test_nonunit_phase_rejected (test_quotient.QuotientTests) ... ok
+test_rational_unit_circle (test_quotient.QuotientTests) ... ok
+test_sharp_operator_constant (test_quotient.QuotientTests) ... ok
+test_weight_and_dimension_guards (test_quotient.QuotientTests) ... ok
+test_weighted_projection (test_quotient.QuotientTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.432s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier', '-p', 'test_*.py', '-v']
+test_discrepancy_grid (test_source_probe.SourceProbeTests) ... ok
+test_discrepancy_rotation (test_source_probe.SourceProbeTests) ... ok
+test_endpoints_duplicates_saturation (test_source_probe.SourceProbeTests) ... ok
+test_interval_sweep_contains_rational_control (test_source_probe.SourceProbeTests) ... ok
+test_invalid_data (test_source_probe.SourceProbeTests) ... ok
+test_sinc_zero_and_alias (test_source_probe.SourceProbeTests) ... ok
+test_sweep_independent_repartition (test_source_probe.SourceProbeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.107s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/crucible', '-p', 'test_*.py', '-v']
+test_beta_by_independent_monomial_integration (test_oracle.SourceCalibration) ... ok
+test_first_orders_have_declared_polarity (test_oracle.SourceCalibration) ... ok
+test_integer_jet_and_uncancelled_routes (test_oracle.SourceCalibration) ... ok
+test_invalid_domains (test_oracle.SourceCalibration) ... ok
+test_lag_gain_requires_actual_difference (test_oracle.SourceCalibration) ... ok
+test_protocol_cases (test_oracle.SourceCalibration) ... ok
+test_source_kernel_polynomial_identity (test_oracle.SourceCalibration) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.254s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/fibonacci_covariance', '-p', 'test_*.py', '-v']
+test_discrepancy_bound_is_nonvacuous (test_observer.FibonacciObserverTests) ... ok
+test_floor_exact_and_boundary_labels (test_observer.FibonacciObserverTests) ... ok
+test_interval_frame_actual_energies (test_observer.FibonacciObserverTests) ... ok
+test_invalid_domains (test_observer.FibonacciObserverTests) ... ok
+test_return_identity_independent_pair_recurrence (test_observer.FibonacciObserverTests) ... ok
+test_single_cell_keeps_only_marginals (test_observer.FibonacciObserverTests) ... ok
+test_surd_sign_independent_enclosures (test_observer.FibonacciObserverTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.452s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/fibonacci_geometry', '-p', 'test_*.py', '-v']
+test_blind_recovery (test_oracle.GeometryTests) ... ok
+test_fibonacci_return (test_oracle.GeometryTests) ... ok
+test_history_memory (test_oracle.GeometryTests) ... ok
+test_no_radius_from_clock (test_oracle.GeometryTests) ... ok
+test_orientation_alias (test_oracle.GeometryTests) ... ok
+test_singular_return_rejected (test_oracle.GeometryTests) ... ok
+test_wrong_gain_not_a_phase_transport (test_oracle.GeometryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/fixed_depth', '-p', 'test_*.py', '-v']
+test_bad_weights (test_oracle.FixedDepthTests) ... ok
+test_discrepancy (test_oracle.FixedDepthTests) ... ok
+test_nonuniform_pair_symmetry (test_oracle.FixedDepthTests) ... ok
+test_repeated_positions (test_oracle.FixedDepthTests) ... ok
+test_sparse_empty_cells (test_oracle.FixedDepthTests) ... ok
+test_uniform_spectral_identity (test_oracle.FixedDepthTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/prime_resonance', '-p', 'test_*.py', '-v']
+test_alias_requires_quotient_reduction (test_resonance.TestPrimeResonance) ... ok
+test_invalid_inputs_and_zero_character (test_resonance.TestPrimeResonance) ... ok
+test_literal_source_and_mutant (test_resonance.TestPrimeResonance) ... ok
+test_nonconstant_remainder_cannot_be_constant_on_clock (test_resonance.TestPrimeResonance) ... ok
+test_orders_against_independent_walk (test_resonance.TestPrimeResonance) ... ok
+test_selector_absence_and_first_birth (test_resonance.TestPrimeResonance) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/triangle_geometry', '-p', 'test_*.py', '-v']
+test_cayley_boundary (test_oracle.TriangleGeometryTests) ... ok
+test_display_guard_does_not_change_ambient_precision (test_oracle.TriangleGeometryTests) ... ok
+test_domains (test_oracle.TriangleGeometryTests) ... ok
+test_exact_field_and_orientation (test_oracle.TriangleGeometryTests) ... ok
+test_posterior_not_arc_probability (test_oracle.TriangleGeometryTests) ... ok
+test_same_grade_distinct_positions (test_oracle.TriangleGeometryTests) ... ok
+test_source_refinement_and_native_failure (test_oracle.TriangleGeometryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.012s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signal_frontier/triangle_posterior', '-p', 'test_*.py', '-v']
+test_alias_is_positive (test_oracle.TriangleTests) ... ok
+test_exact_unit_nodes (test_oracle.TriangleTests) ... ok
+test_invalid_models (test_oracle.TriangleTests) ... ok
+test_minimal_real_menu (test_oracle.TriangleTests) ... ok
+test_posterior_countermodel (test_oracle.TriangleTests) ... ok
+test_source_mass_not_reset_binomial (test_oracle.TriangleTests) ... ok
+test_triangle_mass_recovery (test_oracle.TriangleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.028s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signed_covariance_round2', '-p', 'test_*.py', '-v']
+test_cap_normalization (test_explicit_selector.SelectorTests) ... ok
+test_factored_orders_against_orbits (test_explicit_selector.SelectorTests) ... ok
+test_integer_root_enclosures (test_explicit_selector.SelectorTests) ... ok
+test_invalid_domains_and_empty_selector (test_explicit_selector.SelectorTests) ... ok
+test_selector_predicates (test_explicit_selector.SelectorTests) ... ok
+test_exact_boundary_for_constant_phase (test_lag_instrument.LagInstrumentTests) ... ok
+test_independent_direct_gaussian_windows (test_lag_instrument.LagInstrumentTests) ... ok
+test_invalid_apertures (test_lag_instrument.LagInstrumentTests) ... ok
+test_nonunit_diagonal_is_explicit (test_lag_instrument.LagInstrumentTests) ... ok
+test_periodic_control_requires_every_harmonic (test_lag_instrument.LagInstrumentTests) ... ok
+test_phase_transport_and_bilinear_covariance (test_lag_instrument.LagInstrumentTests) ... ok
+test_rational_phase_conjugate_control (test_lag_instrument.LagInstrumentTests) ... ok
+test_signed_interference_is_not_unsigned (test_lag_instrument.LagInstrumentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.016s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signed_covariance_round2/chronology', '-p', 'test_*.py', '-v']
+test_exact_conditional_variance (test_leakage.LeakageTests) ... ok
+test_invalid_carrier (test_leakage.LeakageTests) ... ok
+test_singleton_phase_identity (test_leakage.LeakageTests) ... ok
+test_base16_word (test_oracle.ChronologyTests) ... ok
+test_carry_initial_floor_required (test_oracle.ChronologyTests) ... ok
+test_carry_radius_endpoint (test_oracle.ChronologyTests) ... ok
+test_literal_first_source (test_oracle.ChronologyTests) ... ok
+test_prime_preconditions (test_oracle.ChronologyTests) ... ok
+test_resonance_classification (test_oracle.ChronologyTests) ... ok
+test_source_contract_rejects_float (test_oracle.ChronologyTests) ... ok
+test_support_horizon (test_oracle.ChronologyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.003s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signed_covariance_round2/cube', '-p', 'test_*.py', '-v']
+test_domain_and_bounded_factor_requirements (test_cube.SourceCubeTests) ... ok
+test_dual_atom_uses_bilinear_source_pairing (test_cube.SourceCubeTests) ... ok
+test_exact_degeneracy_count (test_cube.SourceCubeTests) ... ok
+test_fourth_moment_uses_temporal_fourier_resonance (test_cube.SourceCubeTests) ... ok
+test_signed_histogram_equals_final_pair_square (test_cube.SourceCubeTests) ... ok
+test_source_authentication_preserves_unwrapped_boundary_and_poles (test_cube.SourceCubeTests) ... ok
+test_zero_frequency_and_wrong_conjugations (test_cube.SourceCubeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.033s
+
+OK
+EXIT 0
+COMMAND ['/home/leah/succ-main-xxii-evidence/venv310/bin/python', '-m', 'unittest', 'discover', '-s', 'research/2026-11-08/signed_covariance_round2/hostile', '-p', 'test_*.py', '-v']
+test_absolute_values_erase_cancellation (test_exact_oracle.SignedLagTests) ... ok
+test_full_order_is_degenerate (test_exact_oracle.SignedLagTests) ... ok
+test_literal_source_transport (test_exact_oracle.SignedLagTests) ... ok
+test_signed_pair_identity (test_exact_oracle.SignedLagTests) ... ok
+test_sqrt_comparison (test_exact_oracle.SignedLagTests) ... ok
+test_zero_diagonal_is_not_unit (test_exact_oracle.SignedLagTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK
+EXIT 0
+ALL 34 RESEARCH TEST DIRECTORIES PASS

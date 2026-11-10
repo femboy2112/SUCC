@@ -1,0 +1,27 @@
+{
+  "RH": "OPEN",
+  "checks": [
+    "Independently rederived FD cell-discrepancy bridge and sinc-squared calibration",
+    "Checked PR Ford parameter range, source coset lift, polynomial degree and signed resonance bookkeeping against primary statements",
+    "Checked SC beta remainder sign/constant and corrected strict derivative positivity at x=0 to nonnegative; strict on (0,1]",
+    "Recomputed FG gain/phase/curvature noise constants and known-return versus blind conditioning distinction",
+    "Checked FC disjoint-arc frame proof and B2 Fourier curvature factor",
+    "Recomputed TP real-rank threshold, posterior moments and changing-law Gamma limit",
+    "Independently derived GT native Markov/Chebyshev bound; checked final exponential PGF improvement and fixed-prior decomposition",
+    "Qualified triangle limit obstruction to fixed continuous/injective maps; history-dependent maps remain possible"
+  ],
+  "formal_scope": "Integer coefficient transport only",
+  "independence": "Root review is distinct from worker derivations but shared model family; no external referee claim",
+  "pi_normality": "OPEN",
+  "proof_sha256": {
+    "research/2026-11-08/signal_frontier/crucible/THEOREMS.md": "8da51e7f6b5d9b6606e40b6534fe6438d2cc272324d9de59d5e845b1d6aef34c",
+    "research/2026-11-08/signal_frontier/fibonacci_covariance/THEOREMS.md": "1ff2fdd2bb4f160c3c8cfe8615810b4a46d8673c98191c07cf4475b013f0b58b",
+    "research/2026-11-08/signal_frontier/fibonacci_geometry/THEOREMS.md": "83c9cc09b912500f3e5e7793ad340ea495935cf624236a4d3f31640d9c858601",
+    "research/2026-11-08/signal_frontier/fixed_depth/THEOREMS.md": "1e6d801611c4f0162d003a9ce559fdefc71e526d82213e1fd2005fddb0499b0a",
+    "research/2026-11-08/signal_frontier/prime_resonance/THEOREMS.md": "19da8fdca585c2d1212198136223b7c491877115343f8d0d2476db25a7c2cff9",
+    "research/2026-11-08/signal_frontier/triangle_geometry/THEOREMS.md": "02a9aad6032c7a1eb0ad945543acfc096ce5ec7ee69ca39b7083310a3773eb15",
+    "research/2026-11-08/signal_frontier/triangle_posterior/THEOREMS.md": "ffc0467e176121804854f96ebbcf9a5439c9b8c4a0b14c42c15c65fa62b2861d",
+    "research/2026-11-08/signal_frontier/triangle_referee/REVIEW.md": "3be9b62483afbee92387025f1e25a3942d556cd04cca928c1651644ad2a97656"
+  },
+  "status": "No unresolved correctness defect found in root review of these exact proof files"
+}

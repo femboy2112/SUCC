@@ -1,0 +1,22 @@
+# Claim ledger — FOUR-POLE NINE / source representation
+
+**Frozen source:** original four signed BBP poles, `U_0=0`, real clock `a=8n−7`. Paper proof + local test are distinct from external peer review or kernel check. No RH / π-normality proof. All statuses scoped to stated hypothesis classes.
+
+| ID | Claim (domain) | Status | Receipt and falsifier / boundary |
+|---|---|---|---|
+| FN-01 | Positive three-difference decomposition `(d,m)=(3,2),(4,1),(5,1)` for every `a>0`; `(3,4,5)` Pythagorean and exact `Q` jets `(15,-59,243)` | PROVED LOCAL | Paper §FN-01; exact Fraction and independent SymPy. Source-mutant poles break jets. |
+| FN-01b | In the **fixed** `(2,1,1)` positive-integer-offset family, first jets `(15,59)` uniquely force `(3,4,5)` up to swapping last two channels | PROVED LOCAL | Exact discriminant `-107+60x−8x²`, integer-square proof; NOT universal source authentication. |
+| FN-01c | At three distinct positive source times, the three known-pole channel weights reconstruct uniquely by exact Cauchy determinant | PROVED CLASSICAL / LOCAL | Exact tests and independent symbolic 3×3 inverse; duplicate-time mutant singular. |
+| FN-02a | For all n, zero-seeded component sum is exact unwrapped `U_n`; full real character is **trilinear**, not pairwise; exact 3-valued real carry seam | PROVED LOCAL | Exact rationals and 50 chronological holds. Changed-seed controls need extra homogeneous initial phase. |
+| FN-02b | For all n≥1, `v2(r3)=v2(r5)=−1`, `v2(r4)=2`, yet `r3+r5∈Z2`; component trajectories retain v2s and original orbit remains in Z2 | PROVED LOCAL | Symbolic odd denominator identity; 180 rational-step and 79 history tests; multiplicity 2→1 rejected. |
+| FN-02c | Full first/second-order phase marginals do not determine 3-channel `E(Z3Z4Z5)` in the unrestricted finite model | REFUTED pairwise-sufficiency strategy | Independent exact finite group models with identical pair laws; dependent product 1 versus independent product 0. This is not an authenticated BBP counterseed. |
+| FN-03a | `End(E)` dim 9 with Euclidean `1+3+5` decomposition; E=ker(sum) dim3 | PROVED CLASSICAL | Exact decomposition tests; **chosen** metric/O(3) not source-forced symmetry. |
+| FN-03b | Projected clock `M_a=PD_aP` has nonzero skew commutator for every a≠b; exact Vandermonde op norm; consecutive `a^6` limit `128√362` | PROVED LOCAL | Paper, independent 16-entry SymPy equality and exact rational checks. Mutating signed weights but holding pole shifts leaves it unchanged. |
+| FN-03c | Direct source-only skew commutator or scalar `c^T[M_a,M_b]c` establishes real signed cancellation | REFUTED inference | Skew contraction exactly zero; source-only, seed-blind; defect O(a^-6) summable. |
+| FN-04 | Gamma(2) Poisson circle scalar floor `1/9` depends on endpoint rank/observer clock rather than four pole count | PROVED CLASSICAL / REFUTED four-pole-necessity | Two-pole `1−e^-x` mutant has same Gamma(2), G and 1/9, but only 1 relative pole dimension. |
+| FN-05 | Authentic mixed-Poisson source fixed point q_a exists uniquely for every a>0 and obeys `q_a>φ^-2`, `q_a=φ^-2+59(5−√5)/(150a)+O(a^-2)` | PROVED LOCAL | Positive source scale proof, implicit expansion, independent SymPy jet and exact rational root brackets. Not the finite Bernoulli Pascal law or π's digits. |
+| FN-06 | Three positive source-channel amplitudes converge to a fixed vector at rate ≤5/(2a); their nine-entry Hermitian Gram is asymptotically a rank-one scalar-Weyl lift | PROVED LOCAL / NO-GO | Uniform inequality for every unit-phase input; wrong-seed coherence survives. No signed saving. |
+| FN-DIAG | Eight finite `(A,h)` signed phase/cumulant outputs with program-declared settings with `A=17,31,61,127`, h=1,2 | OBSERVED FINITE | `FINITE_SIGNED_DIAGNOSTIC.json`; epochs declared in program before local execution, but not timestamped in an earlier public preregistration. Reduced exact rational phases + ordinary float characters. Not interval-certified, independent or all-epoch. |
+| FN-NEXT | Original zero-seed, source/carry-conditioned signed **diagonal trilinear** character / #544 covariance decay for every fixed h and all large A | OPEN | Requires a new source-selected bound surviving coherent, CB-3, terminal-denominator, and same-rank two-pole controls. |
+
+**Dependency warning:** Gamma(2) / golden root, Euclidean 1+3+5, 3–4–5 integer pole gaps, and nontrivial 2-adic seam are distinct source/observer constraints. Their numerical overlap does not authorize a composed theorem without a lawful phase/carry map and independent signed estimate.

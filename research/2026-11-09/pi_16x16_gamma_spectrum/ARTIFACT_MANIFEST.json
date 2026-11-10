@@ -1,0 +1,74 @@
+{
+  "base": "4caae7652b430974448437bc716da9a3edba5fd9",
+  "date": "2026-11-09",
+  "files": {
+    "observational_succ/bbp_spectral_gamma.py": {
+      "bytes": 5775,
+      "git_blob_sha1": "459f756a12592e34e67a6d17a17cc61b9efa685b",
+      "sha256": "8fc34e185e9f7090e3e5e12518d740608912d258ddf89548bbe72ef123babf49"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/CERTIFIED_HEX_131072.txt": {
+      "bytes": 131073,
+      "git_blob_sha1": "db83f00995b6933ab51828748015fd910829b9b2",
+      "sha256": "4e349f3af293f07c42135caabffe0ce262c7ff282847d71e158f05551cd89a73"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/CLAIM_LEDGER.md": {
+      "bytes": 2069,
+      "git_blob_sha1": "061475a50715519b1c5c6d52c77fdf28eb867a2f",
+      "sha256": "5f1b1189a5b651740c68cc27bd457145966304eab6c4e1a51f0b421a122d45c0"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/EXACT_VALIDATION_OUTPUT.json": {
+      "bytes": 1291,
+      "git_blob_sha1": "51ad8ddaee0deacc3311899bb85f537ef8efaf3f",
+      "sha256": "5ff0fdd190683967515b0366a26baacebdfa6acbd9fe78857a165a6aafcd932b"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/FINITE_SPECTRAL_HOLDOUT.json": {
+      "bytes": 20683,
+      "git_blob_sha1": "b30cf393224bf29e44a1dc445de4f39ade427a64",
+      "sha256": "f11250ff407bf2e9f5eca6909fc566a1ae12ba2aad5b007cb397551828debc2d"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/LOCAL_TEST_LOG.txt": {
+      "bytes": 2342,
+      "git_blob_sha1": "f340b2af88a0eca4aeb58c243ae11eb33bde39a5",
+      "sha256": "b477fb2b74b18bf0d978733a6cf1daf9516f051a8c0ff781ceebb665ddec862e"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/NEXT.md": {
+      "bytes": 2700,
+      "git_blob_sha1": "1823df02acc225c2e0e2c8ca90997a23ef4bd1ce",
+      "sha256": "75fa4c478b9020f153b8e9268c2fcf53fc43ee3473b8fb6913b8b6745386b75e"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/README.md": {
+      "bytes": 2242,
+      "git_blob_sha1": "840ac3ba732928610f0c7d259b0e28a725c87f03",
+      "sha256": "5204650b21f5ef68b13f57616eec7cdfd689f459f611531982f20b6e9325c92b"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/SOURCE_MAP.md": {
+      "bytes": 1502,
+      "git_blob_sha1": "dcf5d043c269630cd8182f43ec94a7422cd4a753",
+      "sha256": "e86d4355cc3d8a95cf59f6188aa96cdfbd3d385eefe30672c8e9671e6cd5857f"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/THEOREMS.md": {
+      "bytes": 11644,
+      "git_blob_sha1": "c388ed68b92dc1f91421e0fd9bce3e1eee9b1a68",
+      "sha256": "a9ed51676d2f4315dcdfcbc6e3a6a6c8c4c85fd5aa4e6514d57dc96b9956add4"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/VALIDATION.md": {
+      "bytes": 3244,
+      "git_blob_sha1": "61c8649fa4dbcd4c6cf2dce40682fb68c9bfbb95",
+      "sha256": "ff83ebddc7b3939b41fb17c2be686f9d806295d694042952f9dc93234fdef893"
+    },
+    "research/2026-11-09/pi_16x16_gamma_spectrum/reproduce.py": {
+      "bytes": 3482,
+      "git_blob_sha1": "754a8528123a74145f9829859e1d5e4117478da1",
+      "sha256": "c63822d1b83ac16f37778dbb0cd8cceb7c15e09568f91c2877eb46437f94e52d"
+    },
+    "tests/test_bbp_spectral_gamma.py": {
+      "bytes": 5083,
+      "git_blob_sha1": "bccdc79de26ad05f8748668b0f4f23f654e6c4fc",
+      "sha256": "b2c76ece48bd9c8fc94bf907aee95a2831ea7de88dc6e4d753e762444f085a48"
+    }
+  },
+  "notes": "Tests use a local unpublished API-equivalent fixture for inherited PR #566 helpers; exact-head native/hosted validation is separate. Finite holdout failed registered inverse-mode replication.",
+  "preregistration": "a07f3646d139be55a565b65fb7318e5709643509",
+  "source": "original four signed BBP poles, literal U0=0"
+}

@@ -1,0 +1,18 @@
+test_cap_normalization (test_explicit_selector.SelectorTests.test_cap_normalization) ... ok
+test_factored_orders_against_orbits (test_explicit_selector.SelectorTests.test_factored_orders_against_orbits) ... ok
+test_integer_root_enclosures (test_explicit_selector.SelectorTests.test_integer_root_enclosures) ... ok
+test_invalid_domains_and_empty_selector (test_explicit_selector.SelectorTests.test_invalid_domains_and_empty_selector) ... ok
+test_selector_predicates (test_explicit_selector.SelectorTests.test_selector_predicates) ... ok
+test_exact_boundary_for_constant_phase (test_lag_instrument.LagInstrumentTests.test_exact_boundary_for_constant_phase) ... ok
+test_independent_direct_gaussian_windows (test_lag_instrument.LagInstrumentTests.test_independent_direct_gaussian_windows) ... ok
+test_invalid_apertures (test_lag_instrument.LagInstrumentTests.test_invalid_apertures) ... ok
+test_nonunit_diagonal_is_explicit (test_lag_instrument.LagInstrumentTests.test_nonunit_diagonal_is_explicit) ... ok
+test_periodic_control_requires_every_harmonic (test_lag_instrument.LagInstrumentTests.test_periodic_control_requires_every_harmonic) ... ok
+test_phase_transport_and_bilinear_covariance (test_lag_instrument.LagInstrumentTests.test_phase_transport_and_bilinear_covariance) ... ok
+test_rational_phase_conjugate_control (test_lag_instrument.LagInstrumentTests.test_rational_phase_conjugate_control) ... ok
+test_signed_interference_is_not_unsigned (test_lag_instrument.LagInstrumentTests.test_signed_interference_is_not_unsigned) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.020s
+
+OK

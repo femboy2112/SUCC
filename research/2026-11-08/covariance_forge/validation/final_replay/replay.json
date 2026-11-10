@@ -1,0 +1,251 @@
+{
+  "RH": "OPEN",
+  "all_passed": true,
+  "code_sha256": {
+    "research/2026-11-08/covariance_forge/arithmetic/independent_oracle.py": "7bd04c87bd866dc4033a226f52c5bbd78f491fe9c4d8389ccb66ca1d8accb992",
+    "research/2026-11-08/covariance_forge/arithmetic/run_receipts.py": "57f97ae8ddc4f14a329c0bd644f07a8f5409e7ef742d1a25854bd69adaddd662",
+    "research/2026-11-08/covariance_forge/arithmetic/terminal_support.py": "130f0b7409e129bfeb80adc36f2fcddee54bf388a6b97ac153cb541e9b8dd89f",
+    "research/2026-11-08/covariance_forge/arithmetic/test_terminal_support.py": "16b7db55b898ace8ecf640ab9cf2e4dc25c7e332e764ca3c9c3ad2b1a8413b1c",
+    "research/2026-11-08/covariance_forge/arithmetic/update_hashes.py": "8893d9b3442f380553d3cd1c9f888589db1f3e11d741207acaeffbd33f332f58",
+    "research/2026-11-08/covariance_forge/crucible/hostile_exact.py": "3839a4d4b3e352440e6d5a1566813cb3458919145d129a77eed81b6ac9f37603",
+    "research/2026-11-08/covariance_forge/crucible/instrument_audit.py": "4b8c7d2429558519eaaa1663f38e9c2bdd8983990ff6c909cc549707b8e8e30e",
+    "research/2026-11-08/covariance_forge/crucible/test_hostile_exact.py": "7d0505f6e40713fa97684e6695bf15cb3124252bde4d644361fce19e4d8347b2",
+    "research/2026-11-08/covariance_forge/history_certificate.py": "7ffbc440a794cc041def70ed6f5229baa365161530b619c8159e2f0ebb79a0fe",
+    "research/2026-11-08/covariance_forge/intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "research/2026-11-08/covariance_forge/run_experiment.py": "a1f79c580d82d710f16e96fd0527142d7ae552e2bd393d5929cf25fd5fc99788",
+    "research/2026-11-08/covariance_forge/run_history_probe.py": "6722ba85313ac3c22b46886985850f6642fb0239cae0ea9f3cb09f7560d2f689",
+    "research/2026-11-08/covariance_forge/run_spectral_probe.py": "eed7540f75951ab6b9ff8ed564434d386ee4446a3a315d4cbf7c972dcd68d379",
+    "research/2026-11-08/covariance_forge/source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3",
+    "research/2026-11-08/covariance_forge/spectral/oracle.py": "d854c604dda13410d2a19e893d48cf5833e9b55d55e2d74471b6dcd6671d95a8",
+    "research/2026-11-08/covariance_forge/spectral/test_spectral.py": "27a071acc60342fdd95cef396a0bf4eb3b3ac20a4b757c0c211baf46768d50d2",
+    "research/2026-11-08/covariance_forge/test_history_certificate.py": "c297d93198c23801e440f3877575992544ce6480e768213e463f62b018708620",
+    "research/2026-11-08/covariance_forge/test_instrument.py": "97654dbbb8d34d4e68538b5aa5098db724c3c1b55cfb53eca8bb6b8c8242b074",
+    "research/2026-11-08/covariance_forge/validate.py": "cfaa722ba04f018422582ef9970a124fba8f6e25fb5b5592c7a43f7e4fa40810"
+  },
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge",
+        "-p",
+        "test_instrument.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "instrument",
+      "seconds": 0.24682885501533747
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge",
+        "-p",
+        "test_history_certificate.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "history_certificate",
+      "seconds": 0.1270337130408734
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/arithmetic",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "arithmetic",
+      "seconds": 0.14571543503552675
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/spectral",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "spectral",
+      "seconds": 0.10892254207283258
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/crucible",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "crucible",
+      "seconds": 0.1200136081315577
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/arithmetic/run_receipts.py",
+        "--output",
+        "/tmp/succ-covariance-forge-final-replay/terminal_receipts.json"
+      ],
+      "exit_code": 0,
+      "name": "terminal_receipts",
+      "seconds": 1.3042073580436409
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-c",
+        "import importlib.util,json,sys\nsys.path.insert(0,'/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/spectral')\ns=importlib.util.spec_from_file_location('forge_replay_unique','/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/spectral/oracle.py')\nm=importlib.util.module_from_spec(s);sys.modules[s.name]=m;s.loader.exec_module(m)\nopen('/tmp/succ-covariance-forge-final-replay/spectral_oracle.json','w').write(json.dumps(m.run(),indent=2,sort_keys=True)+'\\n')\n"
+      ],
+      "exit_code": 0,
+      "name": "spectral_oracle",
+      "seconds": 0.5833836901001632
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-c",
+        "import importlib.util,json,sys\nsys.path.insert(0,'/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/crucible')\ns=importlib.util.spec_from_file_location('forge_replay_unique','/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/crucible/hostile_exact.py')\nm=importlib.util.module_from_spec(s);sys.modules[s.name]=m;s.loader.exec_module(m)\nopen('/tmp/succ-covariance-forge-final-replay/hostile_oracle.json','w').write(json.dumps(m.run(),indent=2,sort_keys=True)+'\\n')\n"
+      ],
+      "exit_code": 0,
+      "name": "hostile_oracle",
+      "seconds": 0.17358858208172023
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-c",
+        "import importlib.util,json,sys\nsys.path.insert(0,'/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/crucible')\ns=importlib.util.spec_from_file_location('forge_replay_unique','/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/crucible/instrument_audit.py')\nm=importlib.util.module_from_spec(s);sys.modules[s.name]=m;s.loader.exec_module(m)\nopen('/tmp/succ-covariance-forge-final-replay/independent_interval_audit.json','w').write(json.dumps(m.run(),indent=2,sort_keys=True)+'\\n')\n"
+      ],
+      "exit_code": 0,
+      "name": "independent_interval_audit",
+      "seconds": 4.9487515250220895
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/run_experiment.py",
+        "--stage",
+        "pilot",
+        "--output",
+        "/tmp/succ-covariance-forge-final-replay/measurements"
+      ],
+      "exit_code": 0,
+      "name": "pilot",
+      "seconds": 0.7072696548420936
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/run_experiment.py",
+        "--stage",
+        "holdout",
+        "--output",
+        "/tmp/succ-covariance-forge-final-replay/measurements"
+      ],
+      "exit_code": 0,
+      "name": "holdout",
+      "seconds": 18.15568731399253
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/run_experiment.py",
+        "--stage",
+        "stress",
+        "--output",
+        "/tmp/succ-covariance-forge-final-replay/measurements"
+      ],
+      "exit_code": 0,
+      "name": "stress",
+      "seconds": 40.35004839114845
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/run_spectral_probe.py",
+        "--output",
+        "/tmp/succ-covariance-forge-final-replay/measurements"
+      ],
+      "exit_code": 0,
+      "name": "spectral_measurements",
+      "seconds": 5.368220874108374
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge/run_history_probe.py",
+        "--output",
+        "/tmp/succ-covariance-forge-final-replay/measurements"
+      ],
+      "exit_code": 0,
+      "name": "history_measurements",
+      "seconds": 10.639076864114031
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-c",
+        "import json;from pathlib import Path\nroot=Path('/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/covariance_forge');out=Path('/tmp/succ-covariance-forge-final-replay')\ndef normal(x):\n if isinstance(x,dict):return {k:normal(v) for k,v in x.items() if k!='seconds'}\n if isinstance(x,list):return [normal(v) for v in x]\n return x\nfor p in sorted((root/'receipts').glob('*.json')):\n if p.stem.startswith('epoch_') or p.stem.startswith('spectral_') and p.stem!='spectral_probe' or p.stem.startswith('history_') and p.stem!='history_probe':\n  assert normal(json.loads(p.read_text()))==normal(json.loads((out/'measurements'/p.name).read_text())),p\n  print(p.name,'mathematically identical')\nfor left,right in [('arithmetic/RECEIPTS.json','terminal_receipts.json'),('spectral/EXACT_RECEIPT.json','spectral_oracle.json'),('crucible/EXACT_RECEIPTS.json','hostile_oracle.json'),('crucible/INSTRUMENT_AUDIT.json','independent_interval_audit.json')]:\n assert json.loads((root/left).read_text())==json.loads((out/right).read_text()),left\n print(left,'identical JSON payload')\n"
+      ],
+      "exit_code": 0,
+      "name": "receipt_reconciliation",
+      "seconds": 0.07386736012995243
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "name": "verify_provenance",
+      "seconds": 0.05766984191723168
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "name": "observer_foundations_probe",
+      "seconds": 0.11089271493256092
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "name": "ordinal_succ_report_probe",
+      "seconds": 3.3657836441416293
+    }
+  ],
+  "inherited_native_receipt": "research/2026-11-07/learning_yoneda/validation/native_suite.json",
+  "native_inputs_unchanged_from_prior_full_pass": true,
+  "native_suite_rerun": false,
+  "parent_research": "47ec1ccf9d3579897abb94c047f3b4dc13b4cb70",
+  "pi_normality": "OPEN"
+}

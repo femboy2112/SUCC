@@ -1,0 +1,13 @@
+# Next decisive probe — source-selected signed spectral work
+
+## Current strongest actual interface
+
+We now have an *honest finite history instrument*: original zero seed and four signed poles, exact hexadecimal digit certification, three positive source channels, depth-resolved character energies, time-labelled Fourier spectra, signed growth of coherent lines, and the #544 source signed-lag functional. It does **not** have a universal source-selected drift inequality. This is the mathematical obstruction, not lack of an additional visualization.
+
+1. **Source-covariant conditional work.** For original rational BBP phases, not simply digit proxies, choose a declared character and time-frequency basis. Derive from *actual four-pole carries and balanced prime births* a predictable sign or one-sided bound on `2Re(conj(S_n) e(hU_n - mn/q))` when `|S_n|` is large. A time-residue 16-mode toy without source labels does not pay this requirement.
+2. **Hostile cross-source controls.** Run the same instrument on original zero seed, exact epoch-dependent rational terminal shadows, coherent same-forcing `s*=-π/16`, a two-pole Gamma2 source and a source-mutant that preserves π but changes pole fingerprints (#555). A bound shared by all is not zero-seed selective. Tests may be finite; the verdict-changing result must have all-large-A quantifiers.
+3. **Depth/time commuting square.** Compare character refinement flux `E_(k+1)-E_k` (nonnegative at fixed N) to chronological signed work (indefinite at growing N). Find an actual mathematical transport identity with a **nontrivial source-specific remainder**, not a metaphor equating their signs. Classify the source-dependent spectral transport errors, including near-digit-boundary events.
+4. **Stratified words and clocks.** Expand to q=3,5,6,16; source prime birth classes and Oily packet grades with full source/history. Verify whether a subset of strata isolates real complementary-phase resonance. Reject any reference-frame identification that ignores original seed/carry or equates a positive phase-blind Gram with signed covariance.
+5. **Longer, separately frozen horizon.** Use a new protocol and independent source implementation to extend the exact digits beyond 16,384, then compare against matched shuffles. Do not fit a decay exponent to the same data used to choose the instrument.
+
+**Proof target:** A genuinely new source-selected one-sided upper bound on `R_(A,h)(H_A)` from #544, *uniformly over every sufficiently large integer A for each fixed h≠0*. This is equivalent in strength to the missing normality gate; finite experimental similarity is not a substitute.

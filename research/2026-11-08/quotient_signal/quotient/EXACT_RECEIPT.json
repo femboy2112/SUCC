@@ -1,0 +1,39 @@
+{
+  "arithmetic": "Gaussian rational; exact positive rational weights",
+  "cases": 28,
+  "controls": {
+    "arbitrary_gauge_mean_after": [
+      "1",
+      "0"
+    ],
+    "arbitrary_gauge_mean_before": [
+      "0",
+      "0"
+    ],
+    "phase_blind_opposite_means": [
+      [
+        "504799/522750",
+        "0"
+      ],
+      [
+        "-504799/522750",
+        "0"
+      ]
+    ],
+    "signed_refinement_increments": [
+      [
+        "1/3",
+        "0"
+      ],
+      [
+        "-1/3",
+        "0"
+      ]
+    ],
+    "zero_mean_error_unit_reconstruction_error": true
+  },
+  "exact_checks": 3598,
+  "schema": "quotient-signal-exact-v1",
+  "source_scope": "universal finite algebra, no selected-source asymptotic",
+  "status": "PASS; pi base-16 normality OPEN; RH OPEN"
+}

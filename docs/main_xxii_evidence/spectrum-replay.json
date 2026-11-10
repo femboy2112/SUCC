@@ -1,0 +1,19 @@
+{
+  "name": "spectrum-replay",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "research/2026-11-09/pi_16x16_gamma_spectrum/reproduce.py"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "end_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "exit_code": 0,
+  "seconds": 0.24839448928833008,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "5ff0fdd190683967515b0366a26baacebdfa6acbd9fe78857a165a6aafcd932b"
+}

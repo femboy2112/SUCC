@@ -1,0 +1,170 @@
+﻿2026-11-08T10:11:42.8142386Z Current runner version: '2.338.2'
+2026-11-08T10:11:42.8159458Z ##[group]Runner Image Provisioner
+2026-11-08T10:11:42.8160027Z Hosted Compute Agent
+2026-11-08T10:11:42.8160395Z Version: 20261028.624
+2026-11-08T10:11:42.8160796Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-08T10:11:42.8161206Z Build Date: 2026-10-28T21:51:42Z
+2026-11-08T10:11:42.8161589Z Worker ID: {56006a9e-393c-445f-9b0f-b9bbbd8b1f3f}
+2026-11-08T10:11:42.8162032Z Region: centralus
+2026-11-08T10:11:42.8162377Z Cloud: Azure
+2026-11-08T10:11:42.8162674Z ##[endgroup]
+2026-11-08T10:11:42.8163623Z ##[group]Operating System
+2026-11-08T10:11:42.8163973Z Ubuntu
+2026-11-08T10:11:42.8164306Z 26.04.1
+2026-11-08T10:11:42.8164636Z LTS
+2026-11-08T10:11:42.8164951Z ##[endgroup]
+2026-11-08T10:11:42.8165298Z ##[group]Runner Image
+2026-11-08T10:11:42.8165642Z Image: ubuntu-26.04
+2026-11-08T10:11:42.8165987Z Version: 20261101.186.1
+2026-11-08T10:11:42.8166731Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-08T10:11:42.8167600Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+2026-11-08T10:11:42.8168125Z ##[endgroup]
+2026-11-08T10:11:42.8168792Z ##[group]GITHUB_TOKEN Permissions
+2026-11-08T10:11:42.8169933Z Contents: read
+2026-11-08T10:11:42.8170302Z Metadata: read
+2026-11-08T10:11:42.8170628Z ##[endgroup]
+2026-11-08T10:11:42.8172129Z Secret source: Actions
+2026-11-08T10:11:42.8172735Z Cache mode: write
+2026-11-08T10:11:42.8173241Z Prepare workflow directory
+2026-11-08T10:11:42.8374398Z Prepare all required actions
+2026-11-08T10:11:42.8404569Z Getting action download info
+2026-11-08T10:11:43.0552207Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-08T10:11:43.1837940Z Complete job name: lean
+2026-11-08T10:11:43.2371229Z ##[group]Run actions/checkout@v4
+2026-11-08T10:11:43.2371627Z with:
+2026-11-08T10:11:43.2371866Z   repository: femboy2112/SUCC
+2026-11-08T10:11:43.2373938Z   token: ***
+2026-11-08T10:11:43.2374184Z   ssh-strict: true
+2026-11-08T10:11:43.2374421Z   ssh-user: git
+2026-11-08T10:11:43.2374666Z   persist-credentials: true
+2026-11-08T10:11:43.2374927Z   clean: true
+2026-11-08T10:11:43.2375171Z   sparse-checkout-cone-mode: true
+2026-11-08T10:11:43.2375451Z   fetch-depth: 1
+2026-11-08T10:11:43.2375686Z   fetch-tags: false
+2026-11-08T10:11:43.2375936Z   show-progress: true
+2026-11-08T10:11:43.2376231Z   lfs: false
+2026-11-08T10:11:43.2376457Z   submodules: false
+2026-11-08T10:11:43.2376707Z   set-safe-directory: true
+2026-11-08T10:11:43.2376978Z   allow-unsafe-pr-checkout: false
+2026-11-08T10:11:43.2377331Z ##[endgroup]
+2026-11-08T10:11:43.4120252Z Syncing repository: femboy2112/SUCC
+2026-11-08T10:11:43.4121625Z ##[group]Getting Git version info
+2026-11-08T10:11:43.4122239Z Working directory is '/home/runner/work/SUCC/SUCC'
+2026-11-08T10:11:43.4123019Z [command]/usr/bin/git version
+2026-11-08T10:11:43.4139977Z git version 2.56.0
+2026-11-08T10:11:43.4151626Z ##[endgroup]
+2026-11-08T10:11:43.4161820Z Temporarily overriding HOME='/home/runner/work/_temp/155637ab-ad5d-4e5e-8399-94100e7dbe28' before making global git config changes
+2026-11-08T10:11:43.4163096Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:11:43.4164754Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SUCC/SUCC
+2026-11-08T10:11:43.4445166Z Deleting the contents of '/home/runner/work/SUCC/SUCC'
+2026-11-08T10:11:43.4449388Z ##[group]Initializing the repository
+2026-11-08T10:11:43.4453046Z [command]/usr/bin/git init /home/runner/work/SUCC/SUCC
+2026-11-08T10:11:43.5756722Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-08T10:11:43.5757967Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-08T10:11:43.5759103Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-08T10:11:43.5759959Z hint: call:
+2026-11-08T10:11:43.5760347Z hint:
+2026-11-08T10:11:43.5761048Z hint: 	git config --global init.defaultBranch <name>
+2026-11-08T10:11:43.5761716Z hint:
+2026-11-08T10:11:43.5762343Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-08T10:11:43.5763616Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-08T10:11:43.5764466Z hint:
+2026-11-08T10:11:43.5764894Z hint: 	git branch -m <name>
+2026-11-08T10:11:43.5765379Z hint:
+2026-11-08T10:11:43.5766078Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-08T10:11:43.5778212Z Initialized empty Git repository in /home/runner/work/SUCC/SUCC/.git/
+2026-11-08T10:11:43.5787997Z [command]/usr/bin/git remote add origin https://github.com/femboy2112/SUCC
+2026-11-08T10:11:43.6352624Z ##[endgroup]
+2026-11-08T10:11:43.6353673Z ##[group]Disabling automatic garbage collection
+2026-11-08T10:11:43.6354614Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-08T10:11:43.6379689Z ##[endgroup]
+2026-11-08T10:11:43.6380696Z ##[group]Setting up auth
+2026-11-08T10:11:43.6384542Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:11:43.6412173Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T10:11:43.6717126Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:11:43.6742387Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T10:11:43.6946330Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T10:11:43.6971909Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T10:11:43.7173138Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-08T10:11:43.7203177Z ##[endgroup]
+2026-11-08T10:11:43.7204583Z ##[group]Fetching the repository
+2026-11-08T10:11:43.7209456Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a37cb2f0e0c80cdb0797faf96cf4ac7317d5b1f3:refs/remotes/pull/553/merge
+2026-11-08T10:11:45.7422734Z From https://github.com/femboy2112/SUCC
+2026-11-08T10:11:45.7425146Z  * [new ref]         a37cb2f0e0c80cdb0797faf96cf4ac7317d5b1f3 -> pull/553/merge
+2026-11-08T10:11:45.7426908Z ##[endgroup]
+2026-11-08T10:11:45.7427545Z ##[group]Determining the checkout info
+2026-11-08T10:11:45.7428756Z ##[endgroup]
+2026-11-08T10:11:45.7468020Z [command]/usr/bin/git sparse-checkout disable
+2026-11-08T10:11:45.7507736Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-08T10:11:45.7531434Z ##[group]Checking out the ref
+2026-11-08T10:11:45.7533738Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/553/merge
+2026-11-08T10:11:46.2587947Z Note: switching to 'refs/remotes/pull/553/merge'.
+2026-11-08T10:11:46.2588298Z 
+2026-11-08T10:11:46.2588507Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-08T10:11:46.2588960Z changes and commit them, and you can discard any commits you make in this
+2026-11-08T10:11:46.2589443Z state without impacting any branches by switching back to a branch.
+2026-11-08T10:11:46.2589739Z 
+2026-11-08T10:11:46.2589970Z If you want to create a new branch to retain commits you create, you may
+2026-11-08T10:11:46.2590390Z do so (now or later) by using -c with the switch command. Example:
+2026-11-08T10:11:46.2590634Z 
+2026-11-08T10:11:46.2590760Z   git switch -c <new-branch-name>
+2026-11-08T10:11:46.2590929Z 
+2026-11-08T10:11:46.2591134Z Or undo this operation with:
+2026-11-08T10:11:46.2591296Z 
+2026-11-08T10:11:46.2591401Z   git switch -
+2026-11-08T10:11:46.2591573Z 
+2026-11-08T10:11:46.2593872Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-08T10:11:46.2594220Z 
+2026-11-08T10:11:46.2594533Z HEAD is now at a37cb2f Merge 9a11fb7a28c27abe702275e352c817cb7b59c51a into 43a607818907120d4cdab73d240f5b4d7700b63f
+2026-11-08T10:11:46.2615176Z ##[endgroup]
+2026-11-08T10:11:46.2654275Z [command]/usr/bin/git log -1 --format=%H
+2026-11-08T10:11:46.2675614Z a37cb2f0e0c80cdb0797faf96cf4ac7317d5b1f3
+2026-11-08T10:11:46.2852748Z ##[group]Run curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+2026-11-08T10:11:46.2853290Z [36;1mcurl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh[0m
+2026-11-08T10:11:46.2853785Z [36;1msh /tmp/elan-init.sh -y --default-toolchain none[0m
+2026-11-08T10:11:46.2854026Z [36;1mecho "$HOME/.elan/bin" >> "$GITHUB_PATH"[0m
+2026-11-08T10:11:46.2898166Z shell: /usr/bin/bash -e {0}
+2026-11-08T10:11:46.2898353Z ##[endgroup]
+2026-11-08T10:11:46.3691318Z info: downloading installer
+2026-11-08T10:11:46.6919638Z ##[group]Run python3 scripts/verify_institute_lean.py
+2026-11-08T10:11:46.6919894Z [36;1mpython3 scripts/verify_institute_lean.py[0m
+2026-11-08T10:11:46.6920104Z [36;1mpython3 scripts/verify_round2_operators_lean.py[0m
+2026-11-08T10:11:46.6920314Z [36;1mpython3 scripts/round2/verify_causal_lean.py[0m
+2026-11-08T10:11:46.6963944Z shell: /usr/bin/bash -e {0}
+2026-11-08T10:11:46.6964095Z ##[endgroup]
+2026-11-08T10:11:47.1576518Z info: downloading https://releases.lean-lang.org/lean4/v4.14.0/lean-4.14.0-linux.tar.zst
+2026-11-08T10:11:58.7712004Z error: could not download file from 'https://releases.lean-lang.org/lean4/v4.14.0/lean-4.14.0-linux.tar.zst' to '/home/runner/.elan/tmp/2qo2y9yckqe5estl_file'
+2026-11-08T10:11:58.7712477Z info: caused by: http request returned an unsuccessful status code: 504
+2026-11-08T10:11:58.8057068Z Traceback (most recent call last):
+2026-11-08T10:11:58.8059865Z   File "/home/runner/work/SUCC/SUCC/scripts/verify_institute_lean.py", line 98, in <module>
+2026-11-08T10:11:58.8060259Z     main()
+2026-11-08T10:11:58.8060442Z     ~~~~^^
+2026-11-08T10:11:58.8060738Z   File "/home/runner/work/SUCC/SUCC/scripts/verify_institute_lean.py", line 51, in main
+2026-11-08T10:11:58.8061236Z     version = subprocess.check_output(['lean','--version'],cwd=root,text=True).strip()
+2026-11-08T10:11:58.8061643Z               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-08T10:11:58.8062021Z   File "/usr/lib/python3.14/subprocess.py", line 473, in check_output
+2026-11-08T10:11:58.8062421Z     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+2026-11-08T10:11:58.8062752Z            ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-08T10:11:58.8063022Z                **kwargs).stdout
+2026-11-08T10:11:58.8063236Z                ^^^^^^^^^
+2026-11-08T10:11:58.8121425Z   File "/usr/lib/python3.14/subprocess.py", line 578, in run
+2026-11-08T10:11:58.8121836Z     raise CalledProcessError(retcode, process.args,
+2026-11-08T10:11:58.8122167Z                              output=stdout, stderr=stderr)
+2026-11-08T10:11:58.8122600Z subprocess.CalledProcessError: Command '['lean', '--version']' returned non-zero exit status 1.
+2026-11-08T10:11:58.8178272Z ##[error]Process completed with exit code 1.
+2026-11-08T10:11:58.8264784Z Post job cleanup.
+2026-11-08T10:11:58.8790423Z [command]/usr/bin/git version
+2026-11-08T10:11:58.8821002Z git version 2.56.0
+2026-11-08T10:11:58.8844247Z Temporarily overriding HOME='/home/runner/work/_temp/322d0a1a-2191-4325-b939-5604ce179c6a' before making global git config changes
+2026-11-08T10:11:58.8844974Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:11:58.8855469Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SUCC/SUCC
+2026-11-08T10:11:58.8884146Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:11:58.8914032Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T10:11:58.9162268Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:11:58.9188734Z http.https://github.com/.extraheader
+2026-11-08T10:11:58.9195939Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-08T10:11:58.9227215Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T10:11:58.9463466Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T10:11:58.9489970Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T10:11:58.9818266Z Cleaning up orphan processes
+2026-11-08T10:11:59.0062459Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

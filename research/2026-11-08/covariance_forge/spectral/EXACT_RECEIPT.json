@@ -1,0 +1,106 @@
+{
+  "claim_boundary": "BK/PNT and asymptotic theorems require their paper proofs; full source covariance OPEN.",
+  "counts": {
+    "exact_source_prime_phase_checks": 432,
+    "folding_checks": 1,
+    "gaussian_rational_projection_checks": 900,
+    "polynomial_difference_phase_checks": 1374,
+    "root_multiset_autocorrelation_terms": 39648,
+    "sharp_sparse_dual_witness_checks": 16
+  },
+  "negative_controls": {
+    "arbitrary_rank_one_prediction_is_not_safe": true,
+    "chronology_reversal_rejected": true,
+    "dropping_covariance_gives_false_zero": true,
+    "full_cycle_difference_is_degenerate": true,
+    "source_state_mutation_rejected": true,
+    "wrapped_only_source_rejected": true,
+    "wrong_seed_rejected_by_zero_gate": true
+  },
+  "script_sha256": "d854c604dda13410d2a19e893d48cf5833e9b55d55e2d74471b6dcd6671d95a8",
+  "source_rows": [
+    {
+      "L": 4,
+      "m": 2,
+      "p": 17,
+      "source_epoch": [
+        5,
+        9
+      ]
+    },
+    {
+      "L": 10,
+      "m": 5,
+      "p": 41,
+      "source_epoch": [
+        11,
+        21
+      ]
+    },
+    {
+      "L": 18,
+      "m": 9,
+      "p": 73,
+      "source_epoch": [
+        19,
+        37
+      ]
+    },
+    {
+      "L": 22,
+      "m": 11,
+      "p": 89,
+      "source_epoch": [
+        23,
+        45
+      ]
+    },
+    {
+      "L": 24,
+      "m": 12,
+      "p": 97,
+      "source_epoch": [
+        25,
+        49
+      ]
+    },
+    {
+      "L": 34,
+      "m": 17,
+      "p": 137,
+      "source_epoch": [
+        35,
+        69
+      ]
+    },
+    {
+      "L": 48,
+      "m": 24,
+      "p": 193,
+      "source_epoch": [
+        49,
+        97
+      ]
+    },
+    {
+      "L": 58,
+      "m": 29,
+      "p": 233,
+      "source_epoch": [
+        59,
+        117
+      ]
+    },
+    {
+      "L": 70,
+      "m": 35,
+      "p": 281,
+      "source_epoch": [
+        71,
+        141
+      ]
+    }
+  ],
+  "status": "PASS_EXACT_FINITE_ONLY",
+  "total_checks": 42371
+}

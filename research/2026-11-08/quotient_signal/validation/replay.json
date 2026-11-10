@@ -1,0 +1,281 @@
+{
+  "RH": "OPEN",
+  "code_sha256": {
+    "research/2026-11-08/quotient_signal/gamma/oracle.py": "633f9d6baf0e32a2fcffd9dbe579f302a8bb28b1570a976acdad5dd660f48d2d",
+    "research/2026-11-08/quotient_signal/gamma/test_gamma.py": "38dd38b7ed84fe2b3069d9f826b843700c486fd2666ace3a96a431eedfca47df",
+    "research/2026-11-08/quotient_signal/hostile/oracle.py": "4a29b7d4be71a77295234f576bde908226f6ac8ececab2b688d07d058ae84808",
+    "research/2026-11-08/quotient_signal/hostile/verify_source.py": "f93ebd0a802e3151a0ed66c1eb1375d8d740767ec04214f417d792b11cdc263b",
+    "research/2026-11-08/quotient_signal/quotient/oracle.py": "1a9eab6101e859db19edbd686fa5dd409daf52700e1e07e729466bd880d73e0b",
+    "research/2026-11-08/quotient_signal/quotient/test_quotient.py": "f71eb3fb3ca820ff591649718d3fcda54293fe75a7c2112ed9380f67c3c75525",
+    "research/2026-11-08/quotient_signal/source_probe.py": "2c9f0d674f425c3aadf39011d369d14641d622d026906a076ac3616dde6cc0bf",
+    "research/2026-11-08/quotient_signal/test_source_probe.py": "c2de3a633fc93de2cda71210868c818f1efb1bcc0728def76964ede4fabfd523",
+    "research/2026-11-08/quotient_signal/validate.py": "9269eb27a60034cc75fd4494c7b6c67451e70916fe812c121e820f137dc1db0d"
+  },
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal",
+        "-p",
+        "test_source_probe.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "9d0983042bfd83879545c2b2792df0758e425f301bc8df2b2cf6183f02d6a3ec",
+      "name": "root_tests",
+      "seconds": 2.5984085330273956
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal/quotient",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "9756b1c2ac11c88ba36135d480d59955491115a48b6d6189a13ff1f6b7a578dd",
+      "name": "quotient_tests",
+      "seconds": 2.0102942509111017
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal/gamma",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "64522d42fde517a645211fc2902a5763413c8cb576772f67f110cca83c7b6c26",
+      "name": "gamma_tests",
+      "seconds": 0.15698179695755243
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal/hostile",
+        "-p",
+        "oracle.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e230adf5978a836b870f47176cf883b45ccf664e33a56f8f0b53ec44b219a9bb",
+      "name": "hostile_tests",
+      "seconds": 0.723636558977887
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal/quotient/oracle.py",
+        "--output",
+        "/tmp/succ-quotient-final-replay/quotient.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "8cfe5de8cab32cf6de891adece5a89b7a3afb700101bf7cf7921f60ca0fa909c",
+      "name": "quotient_oracle",
+      "seconds": 1.9539227669592947
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal/gamma/oracle.py",
+        "--output",
+        "/tmp/succ-quotient-final-replay/gamma.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "17281afd8e6b7490666f5100c90ff13e77f8507d8cec480405e947e21e08deca",
+      "name": "gamma_oracle",
+      "seconds": 1.4427307609003037
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/quotient_signal/hostile/oracle.py",
+        "--output",
+        "/tmp/succ-quotient-final-replay/hostile.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "736fbeb87b5cac4aa687854f4336edd74855af20c7b9c7ba867301e4454ef547",
+      "name": "hostile_oracle",
+      "seconds": 43.79454298107885
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "research/2026-11-08/quotient_signal/source_probe.py",
+        "--stage",
+        "development",
+        "--output",
+        "/tmp/succ-quotient-final-replay/source"
+      ],
+      "exit_code": 0,
+      "log_sha256": "7fbecb64484824c6dadd4848d0468d8f1f6d003e97be7e64dd21ffbbf69777b1",
+      "name": "development",
+      "seconds": 3.408854009117931
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "research/2026-11-08/quotient_signal/source_probe.py",
+        "--stage",
+        "holdout",
+        "--output",
+        "/tmp/succ-quotient-final-replay/source"
+      ],
+      "exit_code": 0,
+      "log_sha256": "7bd29bbcdc90acb1846d2758931588b9b9836cb13fe12310136343cd73314f68",
+      "name": "holdout",
+      "seconds": 32.410074152983725
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "research/2026-11-08/quotient_signal/hostile/verify_source.py",
+        "--output",
+        "/tmp/succ-quotient-final-replay/source_review.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "c264320382b09c2487bc4e9a6cb355449c916f9a664102df8a68697724e35084",
+      "name": "source_review",
+      "seconds": 25.986024970188737
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "name": "verify_provenance",
+      "seconds": 0.061286044074222445
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "name": "observer_foundations_probe",
+      "seconds": 0.10736198700033128
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "name": "ordinal_succ_report_probe",
+      "seconds": 3.140921992016956
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+        "--",
+        "observational_succ",
+        "tests",
+        "scripts",
+        "formal",
+        "provenance",
+        "docs",
+        "AGENTS.md",
+        "pyproject.toml",
+        "requirements.txt",
+        "requirements-dev.txt"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "native_inputs_unchanged",
+      "seconds": 0.008728147018700838
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "whitespace",
+      "seconds": 0.010042906971648335
+    }
+  ],
+  "comparisons": [
+    {
+      "equal": true,
+      "name": "quotient",
+      "retained_sha256": "8cfe5de8cab32cf6de891adece5a89b7a3afb700101bf7cf7921f60ca0fa909c"
+    },
+    {
+      "equal": true,
+      "name": "gamma",
+      "retained_sha256": "8b4793c628002f1a614fee336b57b882eaf7bcf98586a27b3609384e82177579"
+    },
+    {
+      "equal": true,
+      "name": "hostile",
+      "retained_sha256": "182fe47fd50ea8fb72c4ef6d2201432c3c0166b7b3e2619ad658b9cb1af15448"
+    },
+    {
+      "equal": true,
+      "name": "quotient_1093",
+      "retained_sha256": "d8acf84a5e3c26834ab16330752d38495c4bddddcb521018a7e17c75fecc4eb8"
+    },
+    {
+      "equal": true,
+      "name": "quotient_137",
+      "retained_sha256": "bc85198b0811aa08be84fdd115fb370f9f0779c7af7f648f02b8f5e4927cf3bb"
+    },
+    {
+      "equal": true,
+      "name": "quotient_2203",
+      "retained_sha256": "ae9e67589a2b9b229c4a0b2fe93d08053d74a1a5b8ff020a87137d396d130127"
+    },
+    {
+      "equal": true,
+      "name": "quotient_271",
+      "retained_sha256": "b64e705a89d3221a33085ce558fea091406912eb177d1836977d093f6e8eea3b"
+    },
+    {
+      "equal": true,
+      "name": "quotient_547",
+      "retained_sha256": "148668a43e0a2b69dcdee0bc857db58089d2b668d9a2d89314810246dc9d87a4"
+    },
+    {
+      "equal": true,
+      "name": "summary",
+      "retained_sha256": "910b41b1ad2c291d866d6483595f686224314318ba24e65a85959f2e940a4024"
+    },
+    {
+      "equal": true,
+      "name": "source_review",
+      "retained_sha256": "f566ca15ebbf51436428d4e10168c06c4c86a2754856c0c48d32fc7ea38a21ac"
+    }
+  ],
+  "native_receipt": "research/2026-11-07/learning_yoneda/validation/native_suite.json",
+  "native_suite": "prior pass reused after unchanged-input check",
+  "parent": "a974db527c19708006b9f6d7f0ca01d08d1e0524",
+  "pi_normality": "OPEN",
+  "source_metadata_note": "stage index script hash refreshed by actual fresh producer; source payloads compared unchanged"
+}

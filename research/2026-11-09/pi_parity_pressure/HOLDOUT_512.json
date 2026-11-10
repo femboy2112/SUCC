@@ -1,0 +1,66 @@
+{
+  "kind": "PROTOCOL_FROZEN_INTERNAL_FINITE_REPLAY_NOT_INDEPENDENT_HOLDOUT",
+  "date": "2026-11-09",
+  "preregistered_protocol_commit": "9af9f3d3106d4a05785a7cf51dc94a47781a9ad6",
+  "source": "literal U0=0, unchanged original four-pole rational Bailey-Crandall BBP forcing",
+  "source_time_window": [512, 1023],
+  "source_times": 512,
+  "selected_prime": 1217,
+  "prime_selection": "nearest prime p=1 mod 8 to 12A/5 within [9A/4,5A/2]; no source digit selection",
+  "ord_p_16": 38,
+  "prime_birth_stages": [153, 609, 761, 913],
+  "stage_observation_lengths": [97, 152, 152, 111],
+  "parity": {
+    "local_prime_sign_mean": "-1/128",
+    "original_zero_real_completed_sign_mean": "5/128",
+    "original_zero_complement_sign_mean": "1/128",
+    "original_zero_signed_covariance": "641/16384",
+    "one_epoch_quarter_threshold_passed": true,
+    "original_zero_certified_future_tail_boundary_count": 0,
+    "wrong_seed_real_sign_mean": "1",
+    "wrong_seed_same_prime_local_sign_mean": "-1/128",
+    "wrong_seed_complement_sign_mean": "-1/128",
+    "wrong_seed_signed_covariance": "16383/16384",
+    "wrong_seed_denominator_odd": true,
+    "wrong_seed_denominator_p_unit": true,
+    "wrong_seed_certified_zero_digit_window_length": 520
+  },
+  "support": {
+    "distinct_p_residue_addresses": 76,
+    "total_p_residue_addresses": 1217,
+    "source_four_stage_max_distinct": 152,
+    "Q_bit_length_at_512": 4431,
+    "Q_bit_length_at_1023": 8882,
+    "mean_active_odd_prime_factors": "78667/128",
+    "p_grid_collision_energy": "2051009/131072",
+    "p_grid_collision_energy_approx": 15.647956848144531,
+    "p_grid_effective_volume": "131072/1793",
+    "p_grid_occupied_bins": 76
+  },
+  "hex_digits": {
+    "start_original_fractional_digit_index": 512,
+    "length": 516,
+    "first_16": "3B3EE1411636FBC2",
+    "sha256_uppercase_ascii_no_newline": "de490f103f307780a0cdc92f93a3e11873d26c71cd328d6de9b7a62f932fa58d",
+    "certificates": [
+      "per-time exact rational original-source recurrence + outward green-tail",
+      "independent algorithmic global 1040-term BBP rational interval"
+    ],
+    "full_word_energy_N_512": [
+      {"depth": 1, "cells": 16, "E": "231/8192", "sharp_floor": "0", "excess": "231/8192", "occupied": 16},
+      {"depth": 2, "cells": 256, "E": "235/512", "sharp_floor": "0", "excess": "235/512", "occupied": 225},
+      {"depth": 3, "cells": 4096, "E": "63/8", "sharp_floor": "7", "excess": "7/8", "occupied": 484},
+      {"depth": 4, "cells": 65536, "E": "257/2", "sharp_floor": "127", "excess": "3/2", "occupied": 509}
+    ]
+  },
+  "reproduction": {
+    "source_file": "observational_succ/bbp_parity_pressure.py",
+    "test_file": "tests/test_bbp_parity_pressure.py",
+    "frozen_holdout_test": "tests/test_bbp_parity_holdout_512.py",
+    "local_tests": "23/23 exact-focused Python 3.13 passed; isolated source fixture disclosed in VALIDATION.md",
+    "program_git_blob": "e818287a42cc9ee8cf0522fef612e116f19edf8a",
+    "test_git_blob": "70c90c9325324c7f0786c2aae4236ed3dd53cbdc",
+    "holdout_test_git_blob": "7f506cd31659f9d42d3f4232a1353d97557e539f"
+  },
+  "explicit_limit": "No original-zero all-epoch covariance bound is established. No pi parity-balance theorem, pi normality theorem or RH proof."
+}

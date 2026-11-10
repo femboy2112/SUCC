@@ -1,0 +1,76 @@
+{
+  "id": 128699492273,
+  "run_id": 42470088834,
+  "workflow_name": "Institute theorem contracts and core Lean",
+  "head_branch": "research/theta-gamma-extruded-triangle-dual-interference-2026-11-08",
+  "run_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/42470088834",
+  "run_attempt": 2,
+  "node_id": "CR_kwDOVESeB88AAAAd9xZnsQ",
+  "head_sha": "9a11fb7a28c27abe702275e352c817cb7b59c51a",
+  "url": "https://api.github.com/repos/femboy2112/SUCC/actions/jobs/128699492273",
+  "html_url": "https://github.com/femboy2112/SUCC/actions/runs/42470088834/job/128699492273",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-08T10:11:40Z",
+  "started_at": "2026-11-08T10:11:42Z",
+  "completed_at": "2026-11-08T10:12:00Z",
+  "name": "lean",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-08T10:11:42Z",
+      "completed_at": "2026-11-08T10:11:43Z"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-08T10:11:43Z",
+      "completed_at": "2026-11-08T10:11:46Z"
+    },
+    {
+      "name": "Install elan and pinned core Lean",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-11-08T10:11:46Z",
+      "completed_at": "2026-11-08T10:11:46Z"
+    },
+    {
+      "name": "Kernel, false-proof control, exact axiom manifest",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 4,
+      "started_at": "2026-11-08T10:11:46Z",
+      "completed_at": "2026-11-08T10:11:58Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8,
+      "started_at": "2026-11-08T10:11:58Z",
+      "completed_at": "2026-11-08T10:11:58Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9,
+      "started_at": "2026-11-08T10:11:58Z",
+      "completed_at": "2026-11-08T10:11:59Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/femboy2112/SUCC/check-runs/128699492273",
+  "labels": [
+    "ubuntu-latest"
+  ],
+  "runner_id": 1000043251,
+  "runner_name": "GitHub Actions 1000043251",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}

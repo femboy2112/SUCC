@@ -1,0 +1,36 @@
+{
+  "RH": "OPEN",
+  "epochs": [
+    {
+      "A": 307,
+      "file": "lag_307.json",
+      "sha256": "6d8484eec15e3d47e9bd7e2b150156c202c6a5da106dcf179a0787ce5a7a08cc"
+    },
+    {
+      "A": 613,
+      "file": "lag_613.json",
+      "sha256": "33ee42d4da9f7c8aa5c07c1855cbaadabb2910504e605bc93764d1e1eefef4fe"
+    },
+    {
+      "A": 1229,
+      "file": "lag_1229.json",
+      "sha256": "57229f4bee773b9f832a8607ddff19cc67f329a20036a2ea2caf4d97be0e70c1"
+    },
+    {
+      "A": 2459,
+      "file": "lag_2459.json",
+      "sha256": "bb8e8b2b0cbd6606604a6e28cdf78fa47f3ed3cf33a77a24093cb54b9f0d50c4"
+    }
+  ],
+  "hashes": {
+    "covariance_forge/intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "covariance_forge/source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3",
+    "signed_covariance_round2/PROTOCOL.md": "d74c314e85da752f468ac3096d158b49b66e4a08b8c97183271643b53de1ea6e",
+    "signed_covariance_round2/lag_instrument.py": "9bee7c56d4bb87a992cfa2e64fef71f1a1e911436faeecc5bc2f347b254292a1",
+    "signed_covariance_round2/run_lag_probe.py": "53eee402f982996f507705a043172b2fa4a40b65be69c867c9a4ada19896e58a"
+  },
+  "pi_normality": "OPEN",
+  "protocol_commit": "d613c66a",
+  "scale": 1208925819614629174706176,
+  "stage": "holdout"
+}

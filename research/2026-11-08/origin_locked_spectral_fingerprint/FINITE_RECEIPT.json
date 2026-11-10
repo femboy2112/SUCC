@@ -1,0 +1,93 @@
+{
+  "bbp_machin_prefix_agreement": true,
+  "certified_pi_over_16_prefix32": "3243f6a8885a308d313198a2e0370734",
+  "critical_relative_spectrum_diagnostics": {
+    "192": {
+      "frequency": 75792384,
+      "proven_all_A_real_upper": "13/16 for A>=24",
+      "proven_asymptotic_error": "5*pi/A",
+      "relative_mean_imag_approx": "0.168871643134",
+      "relative_mean_real_approx": "-0.405386529665"
+    },
+    "24": {
+      "frequency": 1184256,
+      "proven_all_A_real_upper": "13/16 for A>=24",
+      "proven_asymptotic_error": "5*pi/A",
+      "relative_mean_imag_approx": "0.177880918881",
+      "relative_mean_real_approx": "-0.414805381406"
+    },
+    "48": {
+      "frequency": 4737024,
+      "proven_all_A_real_upper": "13/16 for A>=24",
+      "proven_asymptotic_error": "5*pi/A",
+      "relative_mean_imag_approx": "0.172747422589",
+      "relative_mean_real_approx": "-0.409354508636"
+    },
+    "96": {
+      "frequency": 18948096,
+      "proven_all_A_real_upper": "13/16 for A>=24",
+      "proven_asymptotic_error": "5*pi/A",
+      "relative_mean_imag_approx": "0.170167136707",
+      "relative_mean_real_approx": "-0.406699945432"
+    }
+  },
+  "cyclic_prefix_word_energy": {
+    "1": "25/32",
+    "2": "17/2",
+    "3": "127"
+  },
+  "exact_mutant_residual_n1": "1/6939",
+  "four_pole_first_forcing": "47/15",
+  "positive_mutant_first_source_difference": "1/6939",
+  "positive_mutant_prime257_component": "238/257",
+  "rational_seed_line_clocks": {
+    "1/17": {
+      "period": 2,
+      "preperiod": 0,
+      "rational_phase_residues": [
+        "1/17",
+        "16/17"
+      ]
+    },
+    "1/257": {
+      "period": 4,
+      "preperiod": 0,
+      "rational_phase_residues": [
+        "1/257",
+        "16/257",
+        "256/257",
+        "241/257"
+      ]
+    },
+    "1/5": {
+      "period": 1,
+      "preperiod": 0,
+      "rational_phase_residues": [
+        "1/5"
+      ]
+    },
+    "1/7": {
+      "period": 3,
+      "preperiod": 0,
+      "rational_phase_residues": [
+        "1/7",
+        "2/7",
+        "4/7"
+      ]
+    },
+    "3/8704": {
+      "period": 2,
+      "preperiod": 3,
+      "rational_phase_residues": [
+        "7/17",
+        "10/17"
+      ]
+    }
+  },
+  "schema": "succ-origin-spectral-fingerprint-v1",
+  "scope": "finite diagnostic; source- and rational-interval theorem proofs separate; pi normality OPEN",
+  "source_sha256": "0e5c7383a02c4d187bafef69cbeb3cf89b343e64bb9cc2e2a6c89e68010ea103",
+  "source_truncation_depth": 40,
+  "tail_upper_exact": "1/149657767662684458824057326870147381212767492400742400",
+  "tests_sha256": "6dcc5f941b42c223d2c0e8a87f9fd1a4ef25bf905b25abc70dbc03807cc53332"
+}

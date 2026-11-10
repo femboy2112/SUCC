@@ -1,0 +1,272 @@
+{
+  "ambiguity": [
+    {
+      "exact_cyclotomic_equalities": 2,
+      "h": 1,
+      "p": 17,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 2,
+      "h": 3,
+      "p": 17,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 2,
+      "h": 1,
+      "p": 17,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 2,
+      "h": 3,
+      "p": 17,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 5,
+      "h": 1,
+      "p": 41,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 5,
+      "h": 3,
+      "p": 41,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 5,
+      "h": 1,
+      "p": 41,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 5,
+      "h": 3,
+      "p": 41,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 9,
+      "h": 1,
+      "p": 73,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 9,
+      "h": 3,
+      "p": 73,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 9,
+      "h": 1,
+      "p": 73,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 9,
+      "h": 3,
+      "p": 73,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 11,
+      "h": 1,
+      "p": 89,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 11,
+      "h": 3,
+      "p": 89,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 11,
+      "h": 1,
+      "p": 89,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 11,
+      "h": 3,
+      "p": 89,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 12,
+      "h": 1,
+      "p": 97,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 12,
+      "h": 3,
+      "p": 97,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 12,
+      "h": 1,
+      "p": 97,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 12,
+      "h": 3,
+      "p": 97,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 7,
+      "h": 1,
+      "p": 113,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 7,
+      "h": 3,
+      "p": 113,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 7,
+      "h": 1,
+      "p": 113,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 7,
+      "h": 3,
+      "p": 113,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 17,
+      "h": 1,
+      "p": 137,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 17,
+      "h": 3,
+      "p": 137,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 17,
+      "h": 1,
+      "p": 137,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 17,
+      "h": 3,
+      "p": 137,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 24,
+      "h": 1,
+      "p": 193,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 24,
+      "h": 3,
+      "p": 193,
+      "xi": 1
+    },
+    {
+      "exact_cyclotomic_equalities": 24,
+      "h": 1,
+      "p": 193,
+      "xi": 3
+    },
+    {
+      "exact_cyclotomic_equalities": 24,
+      "h": 3,
+      "p": 193,
+      "xi": 3
+    }
+  ],
+  "cyclotomic_equalities": 348,
+  "dependencies": {
+    "observational_succ/duck_bbp.py": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0",
+    "research/2026-11-08/complement_budget/hostile/oracle.py": "a823ed203e6f4062739ed9ac156b8f4a43a7cf9e080c7a74e1bc9fccd12ec467"
+  },
+  "eligible_q2_primes_below_5000": [
+    4201,
+    4217,
+    4241,
+    4297,
+    4337,
+    4409,
+    4441,
+    4457,
+    4561,
+    4649,
+    4673,
+    4793,
+    4889,
+    4937,
+    4969
+  ],
+  "even_repeat_prime_checks": 161,
+  "factor_coefficients_checked": 17,
+  "hostile_controls": [
+    "odd radix17 allows constant antipodes",
+    "radix16 antipodes need forcing phase1/2",
+    "coherent complement has rho=Rsig=0 in nonresonant linear representation but budget>=1"
+  ],
+  "implementation_independence": "No other research oracle imported; canonical forcing shared",
+  "source": {
+    "L": 1102,
+    "PR1_eligible": true,
+    "cases": [
+      {
+        "H2_lower_decimal": 0.05871673610258244,
+        "exact_lag_recurrence_checks": 550,
+        "fold_l1_decimal": [
+          0.6394941335754802,
+          0.6394941335754802
+        ],
+        "fold_l1_interval": [
+          "239263161160722301170418608512600458644648693968393/374144419156711147060143317175368453031918731001856",
+          "478526322321444602340837217025200917289297387937057/748288838313422294120286634350736906063837462003712"
+        ],
+        "h": 1,
+        "rational_H2_lower": "2398721798/40852437605"
+      },
+      {
+        "H2_lower_decimal": 0.058716665017472955,
+        "exact_lag_recurrence_checks": 550,
+        "fold_l1_decimal": [
+          0.631958734011267,
+          0.631958734011267
+        ],
+        "fold_l1_interval": [
+          "1847217448966062543484473899391953862295692600717/2923003274661805836407369665432566039311865085952",
+          "59110958366914001391503164780542523593462163222977/93536104789177786765035829293842113257979682750464"
+        ],
+        "h": 3,
+        "rational_H2_lower": "2398718894/40852437605"
+      }
+    ],
+    "interval_decimal_precision": 50,
+    "literal_carry_sha256": "2d559f9c7929832c8568d746cb3f077af7d0c19f1fea9df81893690d5a1dc999",
+    "m": 551,
+    "n0": 1103,
+    "p": 4409,
+    "phase_sha256": "f37d0e0f617771ce5b3e694043388b64f7e4c5b0024551ee0c4b6c6e74933575",
+    "principal_part_checks": 1102,
+    "repeat_count": 2,
+    "source": "original four poles, U0=0; all unwrapped states and carries hashed",
+    "source_checks": 2204,
+    "unwrapped_sha256": "3df18540bdcff6cb81eb37a7c166ac50fd3d774effb94950c03735588ab3c692"
+  },
+  "status": "finite exact/interval checks; no asymptotic inference"
+}

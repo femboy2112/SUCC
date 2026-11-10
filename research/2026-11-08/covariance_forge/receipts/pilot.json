@@ -1,0 +1,32 @@
+{
+  "RH": "OPEN",
+  "bits": 80,
+  "epochs": [
+    {
+      "A": 32,
+      "file": "epoch_32.json",
+      "sha256": "6b27e6e26a8f88baba7e704082478a0b2a44470c7801b5dcf331d870421333cd"
+    },
+    {
+      "A": 64,
+      "file": "epoch_64.json",
+      "sha256": "84d28dafad1d70aeb6581c4174e9bbed007e8fbd9b72ae8a749ddcb5bbaf5f82"
+    },
+    {
+      "A": 128,
+      "file": "epoch_128.json",
+      "sha256": "c2434073b213187c4e8a3365106de2ee4e0582925cb54d79ab96fc9bf1650441"
+    }
+  ],
+  "hashes": {
+    "PREREGISTRATION.md": "d8ad6f7a30b46c35c2509bf23910a8eca71a3fd76e8a1bc66450a19a80f50425",
+    "intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "run_experiment.py": "a1f79c580d82d710f16e96fd0527142d7ae552e2bd393d5929cf25fd5fc99788",
+    "source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3"
+  },
+  "pi_normality": "OPEN",
+  "preregistration_commit": "fd925707",
+  "scale": 1208925819614629174706176,
+  "source_head": "47ec1ccf9d3579897abb94c047f3b4dc13b4cb70",
+  "stage": "pilot"
+}

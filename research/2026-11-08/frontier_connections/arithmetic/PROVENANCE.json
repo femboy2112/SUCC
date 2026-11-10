@@ -1,0 +1,32 @@
+{
+  "claims": "Paper algebra and finite outward source certificates only; normality and RH OPEN.",
+  "external_primary_sources": [
+    {
+      "author": "Mockenhaupt and Tao",
+      "scope": "Read original paper Section5, Lemma5.1 and moment-curve discussion; classical provenance only.",
+      "url": "https://arxiv.org/pdf/math/0204234"
+    },
+    {
+      "author": "Wootters and Fields",
+      "scope": "Read publisher abstract; local elementary proofs carry all formulas used here.",
+      "url": "https://doi.org/10.1016/0003-4916(89)90322-9"
+    }
+  ],
+  "independence": "Shared authenticated source boxes and initial Taylor primitive; exact integer matrix contractions replace prior FFT. Separate MPIntervalContext direct phase path shares source boxes. Same model-family research agents; no external refereeing.",
+  "inputs": {
+    "observational_succ/integer_bbp_carrier.py": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253",
+    "observational_succ/pi_succ_character_intervals.py": "29eeb433186a08afd9e1d00ff3359f6e0453bf4c17dd8a7dffe54d00d10520a0",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+    "research/2026-10-24/BBP_MINIMAL_PATH_GAUGE_AND_MISSING_PRIME.md": "59d5833fa6cf9ebc0c16bd07b60e3c061bcd055f42b9acf1a5004439d0b25459",
+    "research/2026-10-27/PI_QUADRATIC_FIBER_ENERGY_OBSTRUCTION.md": "0ee1522db911aa2173ec6745cebc43460811abfba322ed60e1bae339690cd1ed",
+    "research/2026-11-08/complement_budget/THEOREMS.md": "ee2247951f3d312cdfacf4662f420c8f2bf34fe8e9f843b30411457d4a6f8a77",
+    "research/2026-11-08/complement_budget/results/source_1103.json": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5",
+    "research/2026-11-08/covariance_forge/intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "research/2026-11-08/signal_frontier/prime_resonance/pr_resonance.py": "de6096cdf5a8d98a369ec21d7b63d2e81e598a14e2a7a0535448d12b708689d2"
+  },
+  "protocol_commit": "3a1d9b63",
+  "protocol_sha256": "c36cfac3eda768a4d9ad2cef99f61d70a07cf8722d05ac618f145a9d92cd1a7d",
+  "starting_research_commit": "525d7c87dd1016aeeea4ac9cd1366cbb935a0441"
+}

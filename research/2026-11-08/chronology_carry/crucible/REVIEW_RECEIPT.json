@@ -1,0 +1,54 @@
+{
+  "RH": "OPEN",
+  "carry_only_instrument": {
+    "checks": "6 direct carry-only innovation/source-phase comparisons passed; reference zeros, Poisson identity and coherent controls checked; 2 new tests passed",
+    "files": {
+      "crucible/CARRY_ONLY_COMPARISON.json": "b25c18170a42193795501a691272cdbf772681ddf8b515e72c24a5a78576e3c3",
+      "crucible/CARRY_ONLY_PREPARED.json": "db31008d38ba0aa65c9448dcb9988c91d4d9ec62daf4f2e8d0f8ae1f31941d1f",
+      "crucible/CARRY_ONLY_VALIDATION.md": "7bfd9cd14cfb443539ae5ba33505db0d2057f8c9ed51022dfe77091405407bc0",
+      "crucible/carry_only_innovation.py": "f9cce9abe2cfdfef5092feb8a27fa6487251bd1f4ba8b0b9957346d01c79f6a9",
+      "crucible/test_carry_only.py": "5e9f1cb6a17e557c052a548ac36905544d18fa4cfeeba78ae026dd7aaea689c2"
+    },
+    "remaining_claim": "Signed innovation decay OPEN",
+    "status": "Postregistration implementation/self-check on existing holdout; separate from earlier independent proof reviews"
+  },
+  "hostile_tests_passed": 14,
+  "initial_reviewed_files": {
+    "crucible/THEOREMS.md": "95cbb82615660d1d31457ffe7666b4cb5a543019f061ee6aaa2612d65022b55e",
+    "crucible/carry_controls.py": "0350d450ba58fe67216a955d97dc60b99227932cd99cf3b95407f9f8283b16e1",
+    "model/THEOREMS.md": "c8380d88663be4184b7d114031743159b49975eb2dd87621425cf8581e509358",
+    "model/carry_model.py": "10089085b088ec9cd09b2b34feadb5abf2b9345f933cd04575e8cfd3e921b06d",
+    "theory/THEOREMS.md": "a48b8a8ef4f69d843cd332c587cdd892f9247e968912837167dfb5bbdcfa8a5c",
+    "theory/carry_control.py": "76cfa63a9eb1b6b87055302bd8d0a2026951f6ff3238555388e93329edf2fbcb"
+  },
+  "pi_normality": "OPEN",
+  "results": {
+    "CCM1_to_4": "No substantive defect after proof/code review. Frozen causal predictors, explicit charged residual, canonical quotient limitation and whole-family weak dual are sound.",
+    "CCV1_L_Q_through_7": "Finite Poisson/quotient formulas, source carry exception budget and literal retrodictive residual transport reviewed. Literal reference mass q(16)=0 clarification incorporated. Remaining contrast explicitly Weyl-equivalent.",
+    "EI1_to_5": "Independent theory-agent and root review passed; uniform tail, Z16 integer-lift source transport and coherent control checked. Final additions spell out transition latency, the immediate k=ceil_log16A corollary and archive connection.",
+    "EI6": "Root proposed exact frequency reduction; hostile agent derived finite/infinite proofs and 288 exact root-field scaling/conjugation checks.",
+    "FR1_to_3": "Finite geometric constants, conditional q2 floor and compactness proof checked. Pair-invariance support amended to componentwise transport.",
+    "HCP2_to_3": "Independent theory-agent paper review passed; ideal-word domain extension clarified. Ensemble/window and no-folded-residual scope retained.",
+    "independent_holdout_phase": "14 predefined phase intervals, 28 component containments passed; separate 192-bit modular source sum and 70-digit interval trig, prepared before raw holdout opened.",
+    "signed_probe": "Padded-window normalization, coherent mixed terms, current/past feature timing and exception/endpoint accounting checked."
+  },
+  "reviewed_files": {
+    "FOLDED_FINITE_RANGE.md": "cb21ae0b5ffbcda208312d363f261ea0b48983c5b76208542d4c86a1ad8273f3",
+    "crucible/EXPLICIT_INNOVATION.md": "5ecb5aa0b481dc2e1d00feb35cc4bf1c8bb8020f96352425d66e120f55c88f88",
+    "crucible/THEOREMS.md": "95cbb82615660d1d31457ffe7666b4cb5a543019f061ee6aaa2612d65022b55e",
+    "crucible/carry_controls.py": "0350d450ba58fe67216a955d97dc60b99227932cd99cf3b95407f9f8283b16e1",
+    "crucible/independent_phase_check.py": "aeb912aecc15b6c264fb5398a206eec95a32e6b779c1af62bcc6a7a5cdba9f34",
+    "crucible/innovation_oracle.py": "63029c86bcbfa454f819f19d4e92932f277ab9623cf5578a0c7fdafeccf6f79f",
+    "model/THEOREMS.md": "b5b7a81a1100c168aab2a8741af9e2410b1d977365ff174542f07c947829a532",
+    "model/carry_model.py": "10089085b088ec9cd09b2b34feadb5abf2b9345f933cd04575e8cfd3e921b06d",
+    "model/family_audit.py": "6022f0eeaa890243a3d6c111d5d159302ae3d4a1fb65d2cabf2347bbfb45416d",
+    "signed_probe.py": "151c66bf090a6432501be98bf093fb0eb3871180849b3dceb4a1c27f23d8197f",
+    "test_signed_probe.py": "7de129cd1d99e86d28b6af65d08e4e70005f382205642c3cbf6483d4797d31a7",
+    "theory/ATTEMPT_AND_VERDICT.md": "ad295a7b6d72bb70d401cbb2e7918b5bc8738dabb4a0e61308b020d00d69bea9",
+    "theory/THEOREMS.md": "deab12908b98d19e8aed67cfc30027bb3e8b5884e9b2908ad4fbe2f6f43db9fc",
+    "theory/carry_control.py": "e402db2fe45f7231d1cc10567a592dede3b1bbdf891ec6880d660e55bc0f3fbc"
+  },
+  "reviewer": "carry_crucible",
+  "starting_head": "19d98078b60e47092c9b9d050a70b6b7eabb7cd2",
+  "status": "INDEPENDENT AGENT PAPER/SOURCE REVIEW, shared model family; not external refereeing"
+}

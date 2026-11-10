@@ -1,0 +1,25 @@
+{
+  "name": "signed-receipt-replay",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "/home/leah/SUCC-main-xxii/research/2026-11-08/chronology_carry/signed_probe.py",
+    "--source",
+    "/home/leah/SUCC-main-xxii/research/2026-11-08/chronology_carry/model/HOLDOUT_55003.json.gz",
+    "--output",
+    "/home/leah/succ-main-xxii-evidence/signed-replay.json",
+    "--table",
+    "/home/leah/SUCC-main-xxii/research/2026-11-08/chronology_carry/model/FROZEN_TABLE.json"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii",
+  "start_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "end_commit": "9eafeaa85d9920a12e62ef2e8b755575ef4b6986",
+  "exit_code": 0,
+  "seconds": 17.97876000404358,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "dbe1b1f26368cd7c0ec27e6d776b6519a1458b393d5ed5d2c11023c51602d00d"
+}

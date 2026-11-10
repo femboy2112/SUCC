@@ -1,0 +1,21 @@
+{
+  "independent_exact_checks": {
+    "chronological_word_cases": 24,
+    "gram_cases": 266,
+    "weight_cases": 64
+  },
+  "primary_import_check": {
+    "finding": "Parsed primary text confirms all three subgroup bounds hold globally; side conditions mark optimal ranges. Normalized third bound is lambda*p^(1/8)*m^(-3/8), lambda=2/3^(1/4).",
+    "limits": "No claim to reprove the imported analytic theorem.",
+    "locations": "Theorem 1.1 p1, sentence after Theorem 1.2 p2",
+    "url": "https://www.math.ksu.edu/~cochrane/research/binsum7.pdf"
+  },
+  "reviewed_sha256": {
+    "chronology/THEOREMS.md": "e61efb46718c4e4c9fad1a13c01b16a2457db2e236b1bb3d576ed49d5016d47f",
+    "chronology/oracle.py": "518980ddde31dce6e5d3e66e1f00ca678a0ee5f3b2e649f46e8bc7740414453d",
+    "hostile/THEOREMS.md": "cc7f90f31ea8caa48afcc194527a131bc181423aa8859590b24f9ab244403756",
+    "hostile/exact_oracle.py": "72597b0f3066b3a0d921e1e120270a4154f46ffaf050f4e620990008a32bc18c"
+  },
+  "scope": "CQ author independently read CH1-6 and H1-6; separate exact real-rational Gram and source-clock word checks; shared model and inherited source baseline",
+  "status": "no defect found in stated paper claims; not an external scholarly review"
+}

@@ -1,0 +1,288 @@
+{
+  "status": "EXACT_FINITE_CERTIFICATES",
+  "rows": [
+    {
+      "J": 5,
+      "A": 17,
+      "L": 19,
+      "B": 35,
+      "K": 9,
+      "eta": "1/262144",
+      "prime_count": 58,
+      "max_prime": 277,
+      "seed": {
+        "numerator_bits": 308,
+        "denominator_bits": 376,
+        "sha256": "99240178f275da7e070ba6561cff51672a05c10ccc22456e56ae7d0ebd07761f"
+      },
+      "seed_is_exact_zero": false,
+      "complete_original_denominator_support_preserved": false,
+      "new_seed_denominator_coprime_to_all_original_epoch_support": true,
+      "seed_upper_bound": "1237940039285380274899124225/365375409332725729550921208179070754913983135744",
+      "principal_part_equalities": 2088,
+      "two_adic_equalities": 36,
+      "independent_state_equalities": 72,
+      "prefix_floors_equal": 6,
+      "prefix_carry_increments_equal": 5,
+      "prefix_error": {
+        "numerator_bits": 328,
+        "denominator_bits": 376,
+        "sha256": "ec3eac9c078243089ca93039644903f87745da4d870125e63e31d1f42c347307"
+      },
+      "prefix_margin": "4140952/111035925",
+      "max_future_distance": {
+        "numerator_bits": 498,
+        "denominator_bits": 513,
+        "sha256": "2ef736ae1e66179309f0938e65b25afd680a7bd329cf3ae23305d993f7bc98c7"
+      },
+      "weyl_realpart_lower_bounds": {
+        "1": {
+          "exact": {
+            "numerator_bits": 1340,
+            "denominator_bits": 1340,
+            "sha256": "4c666e59fb189c300633808f512b5699bd922e74e2bb5ee40c3acccdaef21b4c"
+          },
+          "floor_12_decimals": "999999984411/1000000000000"
+        },
+        "2": {
+          "exact": {
+            "numerator_bits": 1340,
+            "denominator_bits": 1340,
+            "sha256": "013ae4c70fd8fb770148daef5440cfd6ebb25e2f958f4be56dc9bf73cae38c0c"
+          },
+          "floor_12_decimals": "999999937647/1000000000000"
+        },
+        "3": {
+          "exact": {
+            "numerator_bits": 1337,
+            "denominator_bits": 1337,
+            "sha256": "48c005b62b482b2156aaffabe008b3e77e7fc78883c1603d0be072d75b37bdc4"
+          },
+          "floor_12_decimals": "999999859707/1000000000000"
+        },
+        "5": {
+          "exact": {
+            "numerator_bits": 1335,
+            "denominator_bits": 1335,
+            "sha256": "f6e136de065d989fc4e7834811713f0e47bb951a49ce2ed277cb9f4ae668f00d"
+          },
+          "floor_12_decimals": "999999610297/1000000000000"
+        }
+      },
+      "source_requires_no_pi_input": true
+    },
+    {
+      "J": 11,
+      "A": 37,
+      "L": 41,
+      "B": 77,
+      "K": 17,
+      "eta": "1/4194304",
+      "prime_count": 111,
+      "max_prime": 613,
+      "seed": {
+        "numerator_bits": 692,
+        "denominator_bits": 840,
+        "sha256": "6d74dc7a0c93bdeae075dffe9db50672e899e7634c10f04ccfe597c2097bdb55"
+      },
+      "seed_is_exact_zero": false,
+      "complete_original_denominator_support_preserved": false,
+      "new_seed_denominator_coprime_to_all_original_epoch_support": true,
+      "seed_upper_bound": "6129982163463555433433388108601236734474956488734408705/2187250724783011924372502227117621365353169430893212436425770606409952999199375923223513177023053824",
+      "principal_part_equalities": 8658,
+      "two_adic_equalities": 78,
+      "independent_state_equalities": 156,
+      "prefix_floors_equal": 12,
+      "prefix_carry_increments_equal": 11,
+      "prefix_error": {
+        "numerator_bits": 736,
+        "denominator_bits": 840,
+        "sha256": "44f9bc9325ae2b0d5f53af33ce0b2136740f8ab6bb19a5239643957be1fef946"
+      },
+      "prefix_margin": "4140952/111035925",
+      "max_future_distance": {
+        "numerator_bits": 1134,
+        "denominator_bits": 1150,
+        "sha256": "f3ff7b054aa659f6678d2550c1f00d721cafd5d2ba29506d0835110cad4ca9e2"
+      },
+      "weyl_realpart_lower_bounds": {
+        "1": {
+          "exact": {
+            "numerator_bits": 2966,
+            "denominator_bits": 2966,
+            "sha256": "b7bf387636ddcb4735e78d07c12499c39f90800bd8206b50cdf22cf4ad88fc88"
+          },
+          "floor_12_decimals": "999999999299/1000000000000"
+        },
+        "2": {
+          "exact": {
+            "numerator_bits": 2966,
+            "denominator_bits": 2966,
+            "sha256": "6492d18fb26cffb8c4e95b8f28cd228c8a0d11ebd49bd76b879042b295a5ca44"
+          },
+          "floor_12_decimals": "999999997199/1000000000000"
+        },
+        "3": {
+          "exact": {
+            "numerator_bits": 2963,
+            "denominator_bits": 2963,
+            "sha256": "51b6aacea42c40b019e0258aeb94f4d776848bc4ba9d7edccb0f05c18a42bc92"
+          },
+          "floor_12_decimals": "999999993699/1000000000000"
+        },
+        "5": {
+          "exact": {
+            "numerator_bits": 2961,
+            "denominator_bits": 2961,
+            "sha256": "9637e05434f37b2adc340ac1baa97c30b82834485d6e565b3ef1653264d62310"
+          },
+          "floor_12_decimals": "999999982499/1000000000000"
+        }
+      },
+      "source_requires_no_pi_input": true
+    },
+    {
+      "J": 17,
+      "A": 73,
+      "L": 79,
+      "B": 151,
+      "K": 31,
+      "eta": "1/67108864",
+      "prime_count": 196,
+      "max_prime": 1201,
+      "seed": {
+        "numerator_bits": 1381,
+        "denominator_bits": 1673,
+        "sha256": "eac93db0926ea1c817a70525e18fbd3d4dfe3bc629673bcc74191cee240b219b"
+      },
+      "seed_is_exact_zero": false,
+      "complete_original_denominator_support_preserved": false,
+      "new_seed_denominator_coprime_to_all_original_epoch_support": true,
+      "seed_upper_bound": "559936185544451052639360570142111069530411374308662383724997275240947967795040236345219373317901778945/4455508415646675018204269146191690746966043464109921807206242693261010905477224010259680479802120507596330380442963288389344438204468201170168614570041224793214838549179946240315306828365824",
+      "principal_part_equalities": 29792,
+      "two_adic_equalities": 152,
+      "independent_state_equalities": 304,
+      "prefix_floors_equal": 18,
+      "prefix_carry_increments_equal": 17,
+      "prefix_error": {
+        "numerator_bits": 1449,
+        "denominator_bits": 1673,
+        "sha256": "f3734ab3606dc31de945e25bfb803dc452d68f153dfdcaa157f13cb227e56d48"
+      },
+      "prefix_margin": "4140952/111035925",
+      "max_future_distance": {
+        "numerator_bits": 2270,
+        "denominator_bits": 2289,
+        "sha256": "76187d487bf4d5c6da177cd1a1cb8fd7eaddd46cf29ed2ba68ac8091807a415d"
+      },
+      "weyl_realpart_lower_bounds": {
+        "1": {
+          "exact": {
+            "numerator_bits": 5934,
+            "denominator_bits": 5934,
+            "sha256": "13e375d513e0368c8da44ed3c80520b7013dd8c1d0d8c65bb368d1eb167b3e9f"
+          },
+          "floor_12_decimals": "999999999952/1000000000000"
+        },
+        "2": {
+          "exact": {
+            "numerator_bits": 5934,
+            "denominator_bits": 5934,
+            "sha256": "c990e66a0f7451240f59d8840d8db9d298b4264f865df88fb906c994fe75f354"
+          },
+          "floor_12_decimals": "999999999811/1000000000000"
+        },
+        "3": {
+          "exact": {
+            "numerator_bits": 5931,
+            "denominator_bits": 5931,
+            "sha256": "e5d03ecff2eaad3a9dc53d21df5a7011b81fc4cc256500edc798cc94950291eb"
+          },
+          "floor_12_decimals": "999999999576/1000000000000"
+        },
+        "5": {
+          "exact": {
+            "numerator_bits": 5929,
+            "denominator_bits": 5929,
+            "sha256": "f79b9ef8989ffc13d88cbff27cd70db2a8d56ebffde00abba7b351117862e6d2"
+          },
+          "floor_12_decimals": "999999998822/1000000000000"
+        }
+      },
+      "source_requires_no_pi_input": true
+    },
+    {
+      "J": 23,
+      "A": 137,
+      "L": 139,
+      "B": 275,
+      "K": 47,
+      "eta": "1/1073741824",
+      "prime_count": 326,
+      "max_prime": 2179,
+      "seed": {
+        "numerator_bits": 2515,
+        "denominator_bits": 3064,
+        "sha256": "68362fe10c512d79a3bec004191d6386c1a247bf6bb97369b4c56004f38bf79c"
+      },
+      "seed_is_exact_zero": false,
+      "complete_original_denominator_support_preserved": false,
+      "new_seed_denominator_coprime_to_all_original_epoch_support": true,
+      "seed_upper_bound": "15829145694278690179872161345257420162248406342477557754500035589945422406818039498900249667919554879334250971265032917718487362195632077437922953926521162746662833417516744705/14584619401180045478828524045754844381603196559772681963490342514734196137450208263823238358058445880965195776670815717350115539635428464567740825865318924352184408419485240472104497718099583244231236651454407673379926151770313667914640458144259458266472778789967242210298729563597596168068181445257646378865849073688706050697488336183885824",
+      "principal_part_equalities": 89976,
+      "two_adic_equalities": 276,
+      "independent_state_equalities": 552,
+      "prefix_floors_equal": 24,
+      "prefix_carry_increments_equal": 23,
+      "prefix_error": {
+        "numerator_bits": 2607,
+        "denominator_bits": 3064,
+        "sha256": "9c0a72ab3b13cfe8d098fe9b59d31856eab6a7d5a2bb811fac14c64694c519a6"
+      },
+      "prefix_margin": "4140952/111035925",
+      "max_future_distance": {
+        "numerator_bits": 4227,
+        "denominator_bits": 4247,
+        "sha256": "bc3428cc3248a05aff89f6dcec6cc653e77f147c064d22a9a20560cbe36c8042"
+      },
+      "weyl_realpart_lower_bounds": {
+        "1": {
+          "exact": {
+            "numerator_bits": 10805,
+            "denominator_bits": 10805,
+            "sha256": "111dd2b707b8cbb0b18729d007744425867940beca3f970883070d436a8ad49c"
+          },
+          "floor_12_decimals": "999999999996/1000000000000"
+        },
+        "2": {
+          "exact": {
+            "numerator_bits": 10805,
+            "denominator_bits": 10805,
+            "sha256": "101d271294af977d0719061b0a09f7a2d7ea90ba40cbc801c9e1d43f0809dd08"
+          },
+          "floor_12_decimals": "999999999984/1000000000000"
+        },
+        "3": {
+          "exact": {
+            "numerator_bits": 10802,
+            "denominator_bits": 10802,
+            "sha256": "d87b79ac5558a91056ae24a29897c7210b84fe6531176feac5823ba76fff0ef2"
+          },
+          "floor_12_decimals": "999999999964/1000000000000"
+        },
+        "5": {
+          "exact": {
+            "numerator_bits": 10801,
+            "denominator_bits": 10801,
+            "sha256": "61f8ce006d6a43542752b27b07b88f10d0128f146b1ce88bb5a93941a87ca38f"
+          },
+          "floor_12_decimals": "999999999900/1000000000000"
+        }
+      },
+      "source_requires_no_pi_input": true
+    }
+  ],
+  "quantifier": "for each horizon a distinct rational seed; no fixed-seed nonnormality",
+  "pi_normality": "OPEN",
+  "rh": "OPEN"
+}
