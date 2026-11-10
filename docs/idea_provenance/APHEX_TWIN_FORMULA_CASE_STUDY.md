@@ -114,7 +114,7 @@ If both fibers contain observations, the optimizer identity becomes
 \boxed{\beta_A^*=\frac{u_+-u_-}{2}}.
 ```
 
-This is a **signed two-fiber Haar detail** of the complementary response. It is not the full 16-child future-conditioned Haar measure of [#565](https://github.com/femboy2112/SUCC/pull/565). Define the *common* response $`t=(u_++u_-)/2`$. Direct two-point probability algebra gives
+This is a **signed two-fiber Haar-shaped contrast** of the complementary response. When the two source-sign fibers have unequal empirical weights, this half-difference is **not itself an orthonormal Haar basis vector for the weighted empirical measure**; the least-squares/variance formula is the correct normalization. It is not the full 16-child future-conditioned Haar measure of [#565](https://github.com/femboy2112/SUCC/pull/565). Define the *common* response $`t=(u_++u_-)/2`$. Direct two-point probability algebra gives
 
 ```math
 \mathbb E_A[b]=t+m\beta,\qquad
