@@ -1,5 +1,7 @@
 # Research history and primary dossiers
 
+For the **human and mathematical origin** of the research—not merely its file chronology—see the [intellectual provenance atlas](idea_provenance/README.md), especially the [Aphex Twin equation case study](idea_provenance/APHEX_TWIN_FORMULA_CASE_STUDY.md). It records the originating prompts, later mathematical interpretations, successful results and counterexamples without changing the historical dossiers.
+
 The old README is preserved byte-for-byte. Its dated announcements are historical statements; current status is in the [frontier](PI_NORMALITY_FRONTIER.md). Archive-relative links are not rewritten inside those frozen bytes; the source-root-resolved link index below provides navigation.
 
 | Snapshot | Git blob | SHA256 |
