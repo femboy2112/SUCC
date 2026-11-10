@@ -109,6 +109,34 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 | 1 | Exact tail-boundary decomposition + boundary control | PROVED (structural) |
 | 2 | h=8 character type firewall + weighted-ℓ¹ Weyl obligation | PROVED (reduction) |
 | 3 | Quantified seed-blindness obstruction (ratio ~25.6) | PROVED (obstruction) |
+| 4 | Lag-1 source autocorrelation bound r(n)r(n+1) < (15/4)²/(n(n+1))² | PROVED (new elementary inequality) |
+
+---
+
+## Attack 4 (new elementary inequality): lag-1 source autocorrelation
+
+**Theorem F-6 (PROVED).**  For the immutable source `r(n)`, for every integer
+`n ≥ 1`,
+
+    r(n) r(n+1)  <  (15/4)² / (n(n+1))².
+
+**Proof.**  Cross-multiply; the difference
+`D(n) = (15/4)² den(n)den(n+1) − num(n)num(n+1)n²(n+1)²`, shifted by
+`t = n−1 ≥ 0`, is the degree-8 polynomial
+
+    3672000 t⁸ + 29339760 t⁷ + 98046119 t⁶ + 177693439 t⁵ + 189263771 t⁴
+    + 119749987 t³ + (172106417/4) t² + 7679368 t + 7335831/16,
+
+with **all positive coefficients** (min `7335831/16 > 0`), so `D(n) > 0` for
+all `n ≥ 1`.  The bound has the **sharp asymptotic constant** `(15/4)²`,
+since `r(n) ~ 15/(4n²)`.  Kernel-checked in `formal/scott_omega/Lag1Autocorrelation.lean`
+(leading-coefficient arithmetic and constant-term positivity, no Mathlib/sorry).
+
+**Boundary:** this is a two-time (lag-1) *second-moment* control of the source
+forcing.  It is a clean elementary input, but it does **not** bound any signed
+Weyl mean and does not advance normality or parity balance (both OPEN).
+
+**Receipt:** `observational_succ/source_lag1_autocorrelation.py` + `tests/test_source_lag1_autocorrelation.py` (4/4, exit 0), bound verified for n=1..1999 and by the positive-coefficient certificate.
 
 All three independently motivated attacks return **proved structural/reduction
 results or quantified obstructions** — no false victory.  The target `β_A → 0`
