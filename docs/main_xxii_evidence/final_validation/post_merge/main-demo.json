@@ -1,0 +1,21 @@
+{
+  "name": "main-demo",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "-m",
+    "observational_succ",
+    "demo"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii-main-verify",
+  "start_commit": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "end_commit": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "exit_code": 0,
+  "seconds": 0.7562916278839111,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii-main-verify",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "79b19c6e797a496b434d6bea38b1e8f9442e4367257165e4aaea9a377ed91729"
+}

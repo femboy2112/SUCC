@@ -1,0 +1,19 @@
+{
+  "name": "main-gates313-corrected",
+  "command": [
+    "/home/leah/succ-main-xxii-evidence/venv313/bin/python",
+    "/home/leah/succ-main-xxii-evidence/gates.py"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxii-main-verify",
+  "start_commit": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "end_commit": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "exit_code": 0,
+  "seconds": 3.2356767654418945,
+  "env": {
+    "PYTHONPATH": "/home/leah/SUCC-main-xxii-main-verify",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "log_sha256": "53c4aaa123d7e018f6610e8535230a0d576784c817a6b65cc8ba43b8e8eba28e"
+}

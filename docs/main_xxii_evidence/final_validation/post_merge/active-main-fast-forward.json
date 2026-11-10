@@ -1,0 +1,14 @@
+{
+  "before_main": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "after_main": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "user_work_before": "?? .claude/",
+  "user_work_after": "?? .claude/",
+  "command": [
+    "git",
+    "merge",
+    "--ff-only",
+    "--no-overwrite-ignore",
+    "origin/main"
+  ],
+  "exit_code": 0
+}

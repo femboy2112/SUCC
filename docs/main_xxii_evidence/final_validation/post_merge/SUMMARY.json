@@ -1,0 +1,46 @@
+{
+  "main_before": "43a607818907120d4cdab73d240f5b4d7700b63f",
+  "main_after": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "tested_integration_head": "33b18ae61478c346550b12e6c84ca7d8481c6bad",
+  "merge_pr": 575,
+  "tree_identical_to_tested_head": true,
+  "main_gates_exit": 0,
+  "main_focused_exit": 0,
+  "main_demo_exit": 0,
+  "research_prs_closed_and_annotated": 28,
+  "research_branches_retained": 28,
+  "local_user_work_preserved": true,
+  "post_merge_hosted_checks": [
+    {
+      "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Python 3.13 mathematical and epistemic checks",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Python 3.10 mathematical and epistemic checks",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "corrected_setup_failure": "Initial main gate ran before new worktree checkout completed; missing script, exit2. Preserved separately; corrected gate exits0."
+}
