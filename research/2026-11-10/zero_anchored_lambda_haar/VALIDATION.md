@@ -12,11 +12,12 @@ library. The broader inherited suite also uses the installed research dependenci
 | New compiler tests | 29 passed | `tests/test_zero_anchored_lambda.py`; focused log |
 | New Haar/Pascal/backend tests | 20 passed | `tests/test_zero_anchored_haar.py`; focused log |
 | Combined new and inherited focused suite | 90 passed in 1.182 seconds | `receipts/focused-tests.log` |
-| Full native unittest discovery | RUNNING; final result will replace this row | `receipts/full-suite.log` |
+| Full native unittest discovery | **12,995 passed in 1065.317 seconds; exit 0** | `receipts/full-suite.log` |
 | Imported source provenance | PASS; 72 imports verified | `receipts/provenance.log` |
 | Observer foundations probe | PASS | `receipts/observer-foundations.log` |
 | Ordinal report probe | PASS | `receipts/ordinal-report.log` |
 | Typed mathematical graph | PASS | `receipts/math-graph.log` |
+| Deterministic mathematics catalog | Regenerated; exact check PASS | `receipts/catalog-build.log`, `receipts/catalog-check.log` |
 | Finite compiler/phase/Pascal/signed-overlap probe | PASS, exact rational receipt | `receipts/FINITE_REPORT.json`, `receipts/finite-probe.log` |
 | Independent adversarial replay | PASS | `receipts/adversarial.json` |
 
@@ -36,6 +37,9 @@ different implementations over 216 grid triples.
 new test files used by the native suite. `FINITE_REPORT.json` additionally
 binds its executable probe, protocol, and the inherited source and reducer.
 The canonical BBP source and import manifest remain byte-identical to the base.
+`receipts/FINAL_VALIDATION.json` records the completed native run, frozen-code
+verification and protected-file checks. Documentation delimiters were normalized
+for GitHub after the code freeze; the mathematical text was unchanged.
 
 ## Retained failures and repairs
 
@@ -58,7 +62,8 @@ The canonical BBP source and import manifest remain byte-identical to the base.
 5. A full native run was deliberately interrupted while these hardening changes
    were made. Its partial output is retained in
    `receipts/full-suite-prehardening-interrupted.log`; it is not counted as a
-   full-suite pass. The final-code run was restarted after the code repairs.
+   full-suite pass. The final-code run was restarted after the code repairs and completed with
+   12,995 passing tests.
 6. An exploratory file-search command referenced a nonexistent catalog-builder
    name. The actual existing tool is `scripts/build_math_memory.py`; the
    failed lookup did not modify any repository file or establish a gate.
