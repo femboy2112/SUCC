@@ -1,0 +1,179 @@
+{
+  "balanced": [
+    {
+      "A": 100,
+      "balanced_ratio_error": "7/100",
+      "direct_modular_recurrence": "PASS",
+      "four_modes_complete_histograms": "PASS",
+      "gram_error_numeric_not_certificate": 0.1719096788042877,
+      "order_of_16": 29,
+      "p": 233,
+      "stage_lengths": [
+        17,
+        29,
+        29,
+        25
+      ],
+      "target_gram_45": "23/50",
+      "weights": [
+        "17/100",
+        "29/100",
+        "29/100",
+        "1/4"
+      ]
+    },
+    {
+      "A": 128,
+      "balanced_ratio_error": "29/640",
+      "direct_modular_recurrence": "PASS",
+      "four_modes_complete_histograms": "PASS",
+      "gram_error_numeric_not_certificate": 0.06657821115250277,
+      "order_of_16": 39,
+      "p": 313,
+      "stage_lengths": [
+        29,
+        39,
+        39,
+        21
+      ],
+      "target_gram_45": "17/32",
+      "weights": [
+        "29/128",
+        "39/128",
+        "39/128",
+        "21/128"
+      ]
+    },
+    {
+      "A": 256,
+      "balanced_ratio_error": "13/1280",
+      "direct_modular_recurrence": "PASS",
+      "four_modes_complete_histograms": "PASS",
+      "gram_error_numeric_not_certificate": 0.06884208212791582,
+      "order_of_16": 77,
+      "p": 617,
+      "stage_lengths": [
+        53,
+        77,
+        77,
+        49
+      ],
+      "target_gram_45": "65/128",
+      "weights": [
+        "53/256",
+        "77/256",
+        "77/256",
+        "49/256"
+      ]
+    },
+    {
+      "A": 512,
+      "balanced_ratio_error": "59/2560",
+      "direct_modular_recurrence": "PASS",
+      "four_modes_complete_histograms": "PASS",
+      "gram_error_numeric_not_certificate": 0.15282337811361338,
+      "order_of_16": 38,
+      "p": 1217,
+      "stage_lengths": [
+        97,
+        152,
+        152,
+        111
+      ],
+      "target_gram_45": "249/512",
+      "weights": [
+        "97/512",
+        "19/64",
+        "19/64",
+        "111/512"
+      ]
+    },
+    {
+      "A": 1024,
+      "balanced_ratio_error": "77/5120",
+      "direct_modular_recurrence": "PASS",
+      "four_modes_complete_histograms": "PASS",
+      "gram_error_numeric_not_certificate": 0.03214380752178042,
+      "order_of_16": 309,
+      "p": 2473,
+      "stage_lengths": [
+        213,
+        309,
+        309,
+        193
+      ],
+      "target_gram_45": "261/512",
+      "weights": [
+        "213/1024",
+        "309/1024",
+        "309/1024",
+        "193/1024"
+      ]
+    }
+  ],
+  "exact_dyadic_hostile_shadow": [
+    {
+      "A": 100,
+      "dyadic_bits": 880,
+      "p": 233,
+      "p_unit_seed": "PASS",
+      "phase_abs_upper_numeric_diagnostic": 6.535306996047501e-06,
+      "phase_abs_upper_rational": "53822586415074121612020985487/8235663060300850483107636644413440",
+      "seed_sha256": "3bdfdf408812a3732bf1a726dfe884ec1a7c93ddabbfd6bca2aebe217b306524",
+      "truncation_N": 210
+    },
+    {
+      "A": 128,
+      "dyadic_bits": 1104,
+      "p": 313,
+      "p_unit_seed": "PASS",
+      "phase_abs_upper_numeric_diagnostic": 4.006169501032439e-06,
+      "phase_abs_upper_rational": "1915180283433902138364915667/478057726449251988860031738052608",
+      "seed_sha256": "db2d7aa3a837bd7004ac3d7cdb3ec66dc9bf5c9c44871ea43fe5a6451661f0fd",
+      "truncation_N": 266
+    },
+    {
+      "A": 256,
+      "dyadic_bits": 2128,
+      "p": 617,
+      "p_unit_seed": "PASS",
+      "phase_abs_upper_numeric_diagnostic": 1.0093516429723586e-06,
+      "phase_abs_upper_rational": "330676270513442525442703345943/327612554867063531372016790080061440",
+      "seed_sha256": "986e8b2632e0d0901e31d66ca5868cc62d6fb9a9999687652b4325ad34b80719",
+      "truncation_N": 522
+    }
+  ],
+  "input_sha256": {
+    "observational_succ/balanced_prime_clock.py": "ed58bbd369c1d44889d6c8302a4aee830fff5057349ec97075e82b44c811cf7e",
+    "observational_succ/three_channel_prime_tomography.py": "07f2a45dc98e7d44fed0039fac8ac80314c9d83b20d3de43f4080bf7e4a6880d",
+    "tests/test_balanced_prime_clock.py": "4c0e29e0a9e85dcabe34eecd055bb0e0d0dd4a4887154f29b20bf8d28850d1cd",
+    "tests/test_three_channel_prime_tomography.py": "5ca88c371917fcaf3b31497a417479259dcd2c26b13443632c3f7553ff979844"
+  },
+  "limitations": [
+    "Cochrane-Pinner and PNT/AP are classical proof imports, not finite tests",
+    "numeric phase Gram is not an interval certificate",
+    "original-zero real signed covariance decay is unproved"
+  ],
+  "old_4A_null": [
+    {
+      "A": 100,
+      "C4_equals_C5_every_original_epoch_time": "PASS",
+      "exact_null_direction": "(0,1,-1)",
+      "p": 401
+    },
+    {
+      "A": 256,
+      "C4_equals_C5_every_original_epoch_time": "PASS",
+      "exact_null_direction": "(0,1,-1)",
+      "p": 1009
+    },
+    {
+      "A": 512,
+      "C4_equals_C5_every_original_epoch_time": "PASS",
+      "exact_null_direction": "(0,1,-1)",
+      "p": 2017
+    }
+  ],
+  "pi_normality": "OPEN",
+  "status": "FINITE_EXACT_PROBES_ONLY"
+}
