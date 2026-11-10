@@ -1,0 +1,159 @@
+﻿2026-11-08T10:28:36.0535775Z Current runner version: '2.338.2'
+2026-11-08T10:28:36.0560547Z ##[group]Runner Image Provisioner
+2026-11-08T10:28:36.0561499Z Hosted Compute Agent
+2026-11-08T10:28:36.0562062Z Version: 20261028.624
+2026-11-08T10:28:36.0562885Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-08T10:28:36.0563671Z Build Date: 2026-10-28T21:51:42Z
+2026-11-08T10:28:36.0564351Z Worker ID: {861ca303-e909-4f94-bc7d-9af9ad910c16}
+2026-11-08T10:28:36.0565092Z Region: northcentralus
+2026-11-08T10:28:36.0565717Z Cloud: Azure
+2026-11-08T10:28:36.0566257Z ##[endgroup]
+2026-11-08T10:28:36.0567548Z ##[group]Operating System
+2026-11-08T10:28:36.0568628Z Ubuntu
+2026-11-08T10:28:36.0569154Z 26.04.1
+2026-11-08T10:28:36.0569660Z LTS
+2026-11-08T10:28:36.0570179Z ##[endgroup]
+2026-11-08T10:28:36.0570716Z ##[group]Runner Image
+2026-11-08T10:28:36.0571293Z Image: ubuntu-26.04
+2026-11-08T10:28:36.0571894Z Version: 20261101.186.1
+2026-11-08T10:28:36.0573119Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-08T10:28:36.0574643Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+2026-11-08T10:28:36.0575616Z ##[endgroup]
+2026-11-08T10:28:36.0576722Z ##[group]GITHUB_TOKEN Permissions
+2026-11-08T10:28:36.0579197Z Contents: read
+2026-11-08T10:28:36.0579788Z Metadata: read
+2026-11-08T10:28:36.0580339Z ##[endgroup]
+2026-11-08T10:28:36.0582437Z Secret source: Actions
+2026-11-08T10:28:36.0583332Z Cache mode: write
+2026-11-08T10:28:36.0584261Z Prepare workflow directory
+2026-11-08T10:28:36.0921931Z Prepare all required actions
+2026-11-08T10:28:36.0973508Z Getting action download info
+2026-11-08T10:28:36.3172900Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-08T10:28:36.4856003Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-08T10:28:36.8502002Z Complete job name: Contextual Bayesian SUCC heuristic guards (3.10)
+2026-11-08T10:28:36.9298095Z ##[group]Run actions/checkout@v4
+2026-11-08T10:28:36.9298978Z with:
+2026-11-08T10:28:36.9299583Z   repository: femboy2112/SUCC
+2026-11-08T10:28:36.9303561Z   token: ***
+2026-11-08T10:28:36.9304209Z   ssh-strict: true
+2026-11-08T10:28:36.9304750Z   ssh-user: git
+2026-11-08T10:28:36.9305257Z   persist-credentials: true
+2026-11-08T10:28:36.9305847Z   clean: true
+2026-11-08T10:28:36.9306397Z   sparse-checkout-cone-mode: true
+2026-11-08T10:28:36.9306986Z   fetch-depth: 1
+2026-11-08T10:28:36.9307500Z   fetch-tags: false
+2026-11-08T10:28:36.9308252Z   show-progress: true
+2026-11-08T10:28:36.9308800Z   lfs: false
+2026-11-08T10:28:36.9309315Z   submodules: false
+2026-11-08T10:28:36.9309878Z   set-safe-directory: true
+2026-11-08T10:28:36.9310464Z   allow-unsafe-pr-checkout: false
+2026-11-08T10:28:36.9311230Z ##[endgroup]
+2026-11-08T10:28:37.1844702Z Syncing repository: femboy2112/SUCC
+2026-11-08T10:28:37.1847158Z ##[group]Getting Git version info
+2026-11-08T10:28:37.1848709Z Working directory is '/home/runner/work/SUCC/SUCC'
+2026-11-08T10:28:37.1850425Z [command]/usr/bin/git version
+2026-11-08T10:28:37.1865698Z git version 2.56.0
+2026-11-08T10:28:37.1891186Z ##[endgroup]
+2026-11-08T10:28:37.1906477Z Temporarily overriding HOME='/home/runner/work/_temp/16393a92-4ab0-4b95-bd7a-5f262f8f07aa' before making global git config changes
+2026-11-08T10:28:37.1909128Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:28:37.1911323Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SUCC/SUCC
+2026-11-08T10:28:37.1982713Z Deleting the contents of '/home/runner/work/SUCC/SUCC'
+2026-11-08T10:28:37.2004860Z ##[group]Initializing the repository
+2026-11-08T10:28:37.2006973Z [command]/usr/bin/git init /home/runner/work/SUCC/SUCC
+2026-11-08T10:28:37.2123479Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-08T10:28:37.2125051Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-08T10:28:37.2126541Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-08T10:28:37.2127482Z hint: call:
+2026-11-08T10:28:37.2128440Z hint:
+2026-11-08T10:28:37.2131137Z hint: 	git config --global init.defaultBranch <name>
+2026-11-08T10:28:37.2132035Z hint:
+2026-11-08T10:28:37.2133113Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-08T10:28:37.2134470Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-08T10:28:37.2135409Z hint:
+2026-11-08T10:28:37.2136071Z hint: 	git branch -m <name>
+2026-11-08T10:28:37.2136788Z hint:
+2026-11-08T10:28:37.2137957Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-08T10:28:37.2139187Z Initialized empty Git repository in /home/runner/work/SUCC/SUCC/.git/
+2026-11-08T10:28:37.2149108Z [command]/usr/bin/git remote add origin https://github.com/femboy2112/SUCC
+2026-11-08T10:28:37.2202822Z ##[endgroup]
+2026-11-08T10:28:37.2203801Z ##[group]Disabling automatic garbage collection
+2026-11-08T10:28:37.2207298Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-08T10:28:37.2242258Z ##[endgroup]
+2026-11-08T10:28:37.2243065Z ##[group]Setting up auth
+2026-11-08T10:28:37.2251249Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:28:37.2285743Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T10:28:37.2720889Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:28:37.2754248Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T10:28:37.2986451Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T10:28:37.3016974Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T10:28:37.3244441Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-08T10:28:37.3286022Z ##[endgroup]
+2026-11-08T10:28:37.3287048Z ##[group]Fetching the repository
+2026-11-08T10:28:37.3295083Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c36d9be536bc0baeb52b3d94475a35fb49d5dcb4:refs/remotes/pull/554/merge
+2026-11-08T10:28:39.6688624Z From https://github.com/femboy2112/SUCC
+2026-11-08T10:28:39.6691291Z  * [new ref]         c36d9be536bc0baeb52b3d94475a35fb49d5dcb4 -> pull/554/merge
+2026-11-08T10:28:39.6696763Z ##[endgroup]
+2026-11-08T10:28:39.6699122Z ##[group]Determining the checkout info
+2026-11-08T10:28:39.6701339Z ##[endgroup]
+2026-11-08T10:28:39.6702561Z [command]/usr/bin/git sparse-checkout disable
+2026-11-08T10:28:39.6759284Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-08T10:28:39.6791671Z ##[group]Checking out the ref
+2026-11-08T10:28:39.6794018Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/554/merge
+2026-11-08T10:28:40.2840975Z Note: switching to 'refs/remotes/pull/554/merge'.
+2026-11-08T10:28:40.2841865Z 
+2026-11-08T10:28:40.2842491Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-08T10:28:40.2843644Z changes and commit them, and you can discard any commits you make in this
+2026-11-08T10:28:40.2844786Z state without impacting any branches by switching back to a branch.
+2026-11-08T10:28:40.2845660Z 
+2026-11-08T10:28:40.2846149Z If you want to create a new branch to retain commits you create, you may
+2026-11-08T10:28:40.2847236Z do so (now or later) by using -c with the switch command. Example:
+2026-11-08T10:28:40.2848046Z 
+2026-11-08T10:28:40.2848369Z   git switch -c <new-branch-name>
+2026-11-08T10:28:40.2848930Z 
+2026-11-08T10:28:40.2849707Z Or undo this operation with:
+2026-11-08T10:28:40.2850120Z 
+2026-11-08T10:28:40.2850451Z   git switch -
+2026-11-08T10:28:40.2850839Z 
+2026-11-08T10:28:40.2851485Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-08T10:28:40.2852133Z 
+2026-11-08T10:28:40.2852864Z HEAD is now at c36d9be Merge 90711d2e9dc73020acbc4cde1ad058b62ef54a4d into efcb9985d0a240ea6d5c580de97445e57f5d12b7
+2026-11-08T10:28:40.2868206Z ##[endgroup]
+2026-11-08T10:28:40.2910607Z [command]/usr/bin/git log -1 --format=%H
+2026-11-08T10:28:40.2934025Z c36d9be536bc0baeb52b3d94475a35fb49d5dcb4
+2026-11-08T10:28:40.3288614Z ##[group]Run actions/setup-python@v5
+2026-11-08T10:28:40.3289292Z with:
+2026-11-08T10:28:40.3289858Z   python-version: 3.10
+2026-11-08T10:28:40.3290385Z   check-latest: false
+2026-11-08T10:28:40.3293184Z   token: ***
+2026-11-08T10:28:40.3293709Z   update-environment: true
+2026-11-08T10:28:40.3294309Z   allow-prereleases: false
+2026-11-08T10:28:40.3294911Z   freethreaded: false
+2026-11-08T10:28:40.3295454Z ##[endgroup]
+2026-11-08T10:28:40.4683339Z ##[group]Installed versions
+2026-11-08T10:28:40.4792142Z Version 3.10 was not found in the local cache
+2026-11-08T10:28:40.5043640Z (node:2408) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-08T10:28:40.5044606Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-08T10:28:41.2677051Z Version 3.10 is available for downloading
+2026-11-08T10:28:41.2679036Z Download from "https://github.com/actions/python-versions/releases/download/3.10.22-36876129702/python-3.10.22-linux-26.04-x64.tar.gz"
+2026-11-08T10:28:52.4900215Z Unexpected HTTP response: 504
+2026-11-08T10:28:52.4904394Z Waiting 20 seconds before trying again
+2026-11-08T10:29:23.6249373Z Unexpected HTTP response: 504
+2026-11-08T10:29:23.6250148Z Waiting 19 seconds before trying again
+2026-11-08T10:29:53.8486274Z Unexpected HTTP response: 504
+2026-11-08T10:29:53.8566992Z ##[error]Unexpected HTTP response: 504
+2026-11-08T10:29:53.9012607Z Post job cleanup.
+2026-11-08T10:29:53.9851087Z [command]/usr/bin/git version
+2026-11-08T10:29:53.9898284Z git version 2.56.0
+2026-11-08T10:29:53.9934361Z Temporarily overriding HOME='/home/runner/work/_temp/4e0ad33f-0acf-4c9a-b455-406c4d882d1c' before making global git config changes
+2026-11-08T10:29:53.9935789Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:29:53.9940179Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SUCC/SUCC
+2026-11-08T10:29:53.9979840Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:29:54.0013349Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-08T10:29:54.0285521Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:29:54.0318450Z http.https://github.com/.extraheader
+2026-11-08T10:29:54.0330814Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-08T10:29:54.0383473Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-08T10:29:54.0709003Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-08T10:29:54.0763818Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-08T10:29:54.1189474Z Cleaning up orphan processes
+2026-11-08T10:29:54.1481597Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

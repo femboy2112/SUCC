@@ -99,7 +99,7 @@ def main() -> int:
             rec["disposition"] = "superseded-by-earlier-integration (head already in main)"
         else:
             parent = by_branch.get(p["baseRefName"])
-            own_base = parent["headRefOid"] if parent else main_sha
+            own_base = parent["headRefOid"] if parent else git("merge-base", main_sha, head)
             if parent and not is_ancestor(own_base, head):  # parent advanced after fork
                 own_base = git("merge-base", own_base, head)
             rec["own_base"] = own_base

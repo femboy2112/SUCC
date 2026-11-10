@@ -1,0 +1,116 @@
+{
+  "id": 128688194262,
+  "run_id": 42466838785,
+  "workflow_name": "Collective observer source and certificate replay",
+  "head_branch": "research/four-pole-three-channel-poisson-matrix-2026-11-08",
+  "run_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/42466838785",
+  "run_attempt": 1,
+  "node_id": "CR_kwDOVESeB88AAAAd9moC1g",
+  "head_sha": "efcb9985d0a240ea6d5c580de97445e57f5d12b7",
+  "url": "https://api.github.com/repos/femboy2112/SUCC/actions/jobs/128688194262",
+  "html_url": "https://github.com/femboy2112/SUCC/actions/runs/42466838785/job/128688194262",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-08T09:21:27Z",
+  "started_at": "2026-11-08T09:21:29Z",
+  "completed_at": "2026-11-08T09:22:44Z",
+  "name": "Collective observer exact replay (3.10)",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-08T09:21:29Z",
+      "completed_at": "2026-11-08T09:21:30Z"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-08T09:21:30Z",
+      "completed_at": "2026-11-08T09:21:33Z"
+    },
+    {
+      "name": "Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 3,
+      "started_at": "2026-11-08T09:21:33Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Install the existing research and test dependencies",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 4,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Mount the pinned arithmetic sibling without merging it",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 5,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Replay exact finite and authenticated source calculations",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 6,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Independently challenge the mathematical interfaces",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 7,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Retain successful and failed receipts",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 8,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Post Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 15,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 16,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 17,
+      "started_at": "2026-11-08T09:22:43Z",
+      "completed_at": "2026-11-08T09:22:43Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/femboy2112/SUCC/check-runs/128688194262",
+  "labels": [
+    "ubuntu-latest"
+  ],
+  "runner_id": 1000043080,
+  "runner_name": "GitHub Actions 1000043080",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}

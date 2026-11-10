@@ -1,0 +1,15 @@
+{
+  "python": "3.12.3",
+  "mpmath": "1.4.1",
+  "scope": "manual exact finite identities; MP agreement diagnostic only; no all-epoch certificate",
+  "checks": {
+    "rational_source_and_partial_fraction_1_100": true,
+    "block_source_constants_and_mellin_jets_g1_8": true,
+    "gamma_BBP_digamma_vs_closed_abs_error": "0.0",
+    "gamma_BBP_70_digit_diagnostic": "3.322497911106404756594732387823797909453952077524579070690707020089071",
+    "gamma_block_clock_g1_diagnostic": "-0.719249476531122295059655039029500783459274406059687006509184741887049",
+    "gamma_q_1_16_diagnostic": "0.131895818222398019467420965216256137274650402605861948576711280862571",
+    "BEC05_counterexample_h_equal_p": "A=80,p=193,h=193: every offdiagonal histogram is {0:80}, Gram=J, min eigenvalue0; claimed fixed target only valid p not dividing h",
+    "nilpotent_counterexample_exact_energy": "3/1024; X!=0, X^2=0, positive doubly stochastic H+X"
+  }
+}

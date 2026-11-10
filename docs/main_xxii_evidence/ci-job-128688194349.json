@@ -1,0 +1,100 @@
+{
+  "id": 128688194349,
+  "run_id": 42466838781,
+  "workflow_name": "Observational SUCC validation",
+  "head_branch": "research/four-pole-three-channel-poisson-matrix-2026-11-08",
+  "run_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/42466838781",
+  "run_attempt": 1,
+  "node_id": "CR_kwDOVESeB88AAAAd9moDLQ",
+  "head_sha": "efcb9985d0a240ea6d5c580de97445e57f5d12b7",
+  "url": "https://api.github.com/repos/femboy2112/SUCC/actions/jobs/128688194349",
+  "html_url": "https://github.com/femboy2112/SUCC/actions/runs/42466838781/job/128688194349",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-08T09:21:27Z",
+  "started_at": "2026-11-08T09:21:45Z",
+  "completed_at": "2026-11-08T09:22:54Z",
+  "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-08T09:21:46Z",
+      "completed_at": "2026-11-08T09:21:47Z"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-08T09:21:47Z",
+      "completed_at": "2026-11-08T09:21:50Z"
+    },
+    {
+      "name": "Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 3,
+      "started_at": "2026-11-08T09:21:50Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    },
+    {
+      "name": "Install verified research dependencies",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 4,
+      "started_at": "2026-11-08T09:22:52Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    },
+    {
+      "name": "Exact heuristic and source-provenance tests",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 5,
+      "started_at": "2026-11-08T09:22:52Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    },
+    {
+      "name": "Independently rederive stored Bayesian-source receipt",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 6,
+      "started_at": "2026-11-08T09:22:52Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    },
+    {
+      "name": "Post Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 11,
+      "started_at": "2026-11-08T09:22:52Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-08T09:22:52Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-08T09:22:52Z",
+      "completed_at": "2026-11-08T09:22:52Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/femboy2112/SUCC/check-runs/128688194349",
+  "labels": [
+    "ubuntu-latest"
+  ],
+  "runner_id": 1000043088,
+  "runner_name": "GitHub Actions 1000043088",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}

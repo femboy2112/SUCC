@@ -1,0 +1,108 @@
+{
+  "id": 128698308203,
+  "run_id": 42469997009,
+  "workflow_name": "Observational SUCC validation",
+  "head_branch": "research/theta-gamma-extruded-triangle-dual-interference-2026-11-08",
+  "run_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/42469997009",
+  "run_attempt": 1,
+  "node_id": "CR_kwDOVESeB88AAAAd9wRWaw",
+  "head_sha": "9a11fb7a28c27abe702275e352c817cb7b59c51a",
+  "url": "https://api.github.com/repos/femboy2112/SUCC/actions/jobs/128698308203",
+  "html_url": "https://github.com/femboy2112/SUCC/actions/runs/42469997009/job/128698308203",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-08T10:06:33Z",
+  "started_at": "2026-11-08T10:06:34Z",
+  "completed_at": "2026-11-08T10:07:39Z",
+  "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-08T10:06:35Z",
+      "completed_at": "2026-11-08T10:06:36Z"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-08T10:06:36Z",
+      "completed_at": "2026-11-08T10:06:39Z"
+    },
+    {
+      "name": "Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 3,
+      "started_at": "2026-11-08T10:06:39Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Install mathematical research package",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 4,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Check exact genetic fusion and holonomy tests",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 5,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Source-derived receipt must be byte identical",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 6,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Explicit RH/source-provenance firewalls",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 7,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Post Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 13,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 15,
+      "started_at": "2026-11-08T10:07:38Z",
+      "completed_at": "2026-11-08T10:07:38Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/femboy2112/SUCC/check-runs/128698308203",
+  "labels": [
+    "ubuntu-latest"
+  ],
+  "runner_id": 1000043224,
+  "runner_name": "GitHub Actions 1000043224",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}
