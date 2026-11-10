@@ -66,6 +66,23 @@ class LambdaSemantics(unittest.TestCase):
                     self.assertEqual(anchor.value, z.Lit(z.RAT, seed))
                     self.assertEqual(anchor.rules.count('beta'), n+1)
 
+    def test_two_beta_strategies_agree_on_source_and_tail(self):
+        for n in range(1,12):
+            for seed in (Q(0),Q(1,16),Q(-2,7)):
+                with self.subTest(n=n,seed=seed):
+                    for program in (z.serial_program(n,seed),
+                                    z.anchor_program(n,seed),
+                                    z.completion_program(n,seed,depth=5)):
+                        normal=z.normalize(program,strategy="normal")
+                        eager=z.normalize(program,strategy="innermost")
+                        self.assertEqual(normal.value,eager.value)
+                        self.assertEqual(normal.result_type,eager.result_type)
+                        self.assertEqual(sorted(normal.rules),sorted(eager.rules))
+        self.assertNotEqual(z.normalize(z.serial_program(3)).rules,
+                            z.normalize(z.serial_program(3),strategy="innermost").rules)
+        with self.assertRaises(ValueError):
+            z.normalize(z.serial_program(1),strategy="invented")
+
     def test_budget_and_invalid_terms(self):
         with self.assertRaises(RuntimeError):
             z.normalize(z.serial_program(4),max_steps=2)
