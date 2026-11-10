@@ -1,0 +1,32 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "file_hashes": {
+    "observational_succ/four_pole_nine.py": "7f7a7b59c0532402a2d37d6b445eb98ae330bb00a9c068b94395efa370274c48",
+    "research/2026-11-08/four_pole_nine/CLAIM_LEDGER.md": "a093450e12b8e4632c90aaaa191b9397ea30696e152dab39e1bf16506f8f9d7b",
+    "research/2026-11-08/four_pole_nine/COMBINED_53_TEST_LOG.txt": "dbcbd5bd6dcda5feb73bb2cc8d8c910c8eefc25ec0278c53049d2e2cdd940bae",
+    "research/2026-11-08/four_pole_nine/COMBINED_55_TEST_LOG.txt": "c5300cdfbc6b2701bcda692aac2b53e4e15fa4875d9c27b5367ede6adeaf183c",
+    "research/2026-11-08/four_pole_nine/FINITE_PROBE_LOG.txt": "7ec31b2a90d8a99c979972fe2e23a0f116e791fb79e4d27a19cfa7d64a6cdcba",
+    "research/2026-11-08/four_pole_nine/FINITE_SIGNED_DIAGNOSTIC.json": "7ec31b2a90d8a99c979972fe2e23a0f116e791fb79e4d27a19cfa7d64a6cdcba",
+    "research/2026-11-08/four_pole_nine/FOCUSED_TEST_LOG.txt": "8be8966706fd2af57863673674d335c372b70c777649b33ce6715d41189c30a2",
+    "research/2026-11-08/four_pole_nine/INDEPENDENT_EXACT_RECEIPT.json": "3d4e98d45d4ad5c289d4d3c6555add688c31fc07db5bb2a4ac7d07eda0eb367e",
+    "research/2026-11-08/four_pole_nine/INDEPENDENT_ORACLE_LOG.txt": "3d4e98d45d4ad5c289d4d3c6555add688c31fc07db5bb2a4ac7d07eda0eb367e",
+    "research/2026-11-08/four_pole_nine/NEXT.md": "6ac57ecb15896139487bcc230a48718205881e654a1e35ee3ec440cd7db1db00",
+    "research/2026-11-08/four_pole_nine/PROOFS.md": "532b0d01ef53c88c704051a1ac7d9aab4cdeb1f348a2000feb7be1f35c2e860c",
+    "research/2026-11-08/four_pole_nine/README.md": "208554a33f52f43558af2df7bf0fbf205c5301a7637c9383c91dac3b8c7a6077",
+    "research/2026-11-08/four_pole_nine/SOURCE_MAP.md": "7f50b0aa2c0209260b8bdd16ce978fa1baf44e55e75eb41047fa40225365a754",
+    "research/2026-11-08/four_pole_nine/VALIDATION.md": "c6dc841c4c3c165d3116322993179d374f29495aa915119626e8c8306e1b4cce",
+    "research/2026-11-08/four_pole_nine/finite_signed_probe.py": "9ef1a34b0ffe8861afe44a94029e486300a661131757ad12943ae626f691a378",
+    "research/2026-11-08/four_pole_nine/independent_sympy_oracle.py": "137aaf144af116e24b9e83b460193b9eac88ba06b9de380fcf3e0d8153a871d0",
+    "tests/test_four_pole_nine.py": "97e00d525e6db9be821901e5cf4de3fbe4caf86e01bd53ee851a2e164a75fd56"
+  },
+  "scoped_assertions": {
+    "combined_with_unchanged_pr549_tests_passed": 55,
+    "native_repo_suite_not_run_locally": true,
+    "new_focused_tests_passed": 34,
+    "normality_open": true,
+    "sympy_exact_independent_oracle_passed": true
+  }
+}
