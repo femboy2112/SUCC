@@ -14,7 +14,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from fractions import Fraction as Q
-from math import floor, comb
+from math import floor, comb, isqrt
 
 from observational_succ import duck_bbp
 
@@ -411,6 +411,17 @@ class DefectCertificate:
     upper: Q
 
 
+def _certified_series(count: int, seed: Q, depth: int) -> tuple[PhaseCertificate, ...]:
+    if type(count) is not int or count < 1:
+        raise ValueError("count must be a positive integer")
+    state = State(0, Q(seed))
+    certs = []
+    for _ in range(count):
+        certs.append(certified_phase(state,depth))
+        state = step(state)
+    return tuple(certs)
+
+
 def certified_haar_defect(count: int, seed: Q = Q(0), depth: int = 16) -> DefectCertificate:
     """Rigorous interval W1 enclosure for exact BBP-selected *completed* phases.
 
@@ -418,13 +429,7 @@ def certified_haar_defect(count: int, seed: Q = Q(0), depth: int = 16) -> Defect
     Q-projections can be coupled using the same branch digit. The two W1
     perturbations cost at most sum(width_i)/N in total.
     """
-    if type(count) is not int or count < 1:
-        raise ValueError("count must be a positive integer")
-    state = State(0, Q(seed))
-    certs = []
-    for _ in range(count):
-        certs.append(certified_phase(state, depth))
-        state = step(state)
+    certs = _certified_series(count, seed, depth)
     mid = exact_haar_defect(tuple(c.midpoint for c in certs))
     err = sum((c.width for c in certs), Q()) / count
     return DefectCertificate(count, mid, err, max(Q(0), mid - err), mid + err)
@@ -505,6 +510,23 @@ class PascalPinCertificate:
     complex_error_bound: Q
 
 
+def _pin_from_series(certs: tuple[PhaseCertificate, ...], m: int, j: int,
+                     h: int) -> PascalPinCertificate:
+    if type(m) is not int or m < 0 or type(j) is not int or not 0 <= j <= m or \
+       type(h) is not int or not 1 <= h <= 15:
+        raise ValueError("0<=j<=m, 1<=h<=15 required")
+    count=len(certs)
+    coeff = [Q(0)] * 8
+    widths = Q(0)
+    for c in certs:
+        y = (16*c.midpoint) % 1
+        weight = Q(comb(m,j),count) * y**j * (1-y)**(m-j)
+        power = (h*c.digit) % 16
+        coeff[power % 8] += weight if power < 8 else -weight
+        widths += c.width
+    return PascalPinCertificate(count,h,m,j,tuple(coeff),Q(8*m,count)*widths)
+
+
 def pascal_fourier_pin(count: int, m: int, j: int, h: int,
                        seed: Q = Q(0), depth: int = 16) -> PascalPinCertificate:
     """Certified G_(h;m,j) for real BBP orbit via rational midpoint Bernstein.
@@ -514,18 +536,27 @@ def pascal_fourier_pin(count: int, m: int, j: int, h: int,
     complex error <=8*m*average(width). Coefficients are exact in Q[zeta16].
     A small finite error is not evidence of asymptotic cancellation.
     """
-    if type(count) is not int or count < 1 or type(m) is not int or m < 0 or \
-       type(j) is not int or not 0 <= j <= m or type(h) is not int or not 1 <= h <= 15:
-        raise ValueError("count>=1, 0<=j<=m, 1<=h<=15 required")
-    coeff = [Q(0)] * 8
-    state = State(0,Q(seed))
-    widths = Q(0)
-    for _ in range(count):
-        c = certified_phase(state,depth)
-        y = (16*c.midpoint) % 1
-        weight = Q(comb(m,j),count) * y**j * (1-y)**(m-j)
-        power = (h*c.digit) % 16
-        coeff[power % 8] += weight if power < 8 else -weight
-        widths += c.width
-        state = step(state)
-    return PascalPinCertificate(count,h,m,j,tuple(coeff),Q(8*m,count)*widths)
+    return _pin_from_series(_certified_series(count,seed,depth),m,j,h)
+
+
+def pascal_haar_upper(count: int, m: int, seed: Q = Q(0),
+                      depth: int = 16) -> Q:
+    """Rigorous, generally loose *rational* upper bound on D_N.
+
+    For each 1-Lipschitz f on [0,1], approximate its 16 inverse-branch
+    functions by Bernstein degree m: error <=1/(32 sqrt(m)) per branch.
+    D_N <= sum_(h=1..15,j=0..m) |G_(h;m,j)|+1/(16 sqrt(m)).
+    Each exact Q[zeta16] midpoint has abs <= coefficient l1, and each
+    actual pin differs by <= its certified complex error. isqrt(m) gives
+    a conservative rational replacement for sqrt(m).
+    """
+    if type(m) is not int or m < 1:
+        raise ValueError("positive Bernstein degree required")
+    result = Q(1,16*isqrt(m))
+    certs = _certified_series(count,seed,depth)
+    for h in range(1,16):
+        for j in range(m+1):
+            cert = _pin_from_series(certs,m,j,h)
+            result += sum((abs(v) for v in cert.coefficients),Q())
+            result += cert.complex_error_bound
+    return result
