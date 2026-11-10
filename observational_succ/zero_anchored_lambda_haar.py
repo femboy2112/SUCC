@@ -268,6 +268,34 @@ def reduce_once(t: Term) -> tuple[Term, str | None]:
     return t, None
 
 
+def reduce_innermost_once(t: Term) -> tuple[Term, str | None]:
+    """Independent eager/rightmost-first strategy for terminating typed terms."""
+    if isinstance(t, App):
+        arg, rule = reduce_innermost_once(t.arg)
+        if rule:
+            return App(t.fn,arg),rule
+        fn, rule = reduce_innermost_once(t.fn)
+        if rule:
+            return App(fn,t.arg),rule
+        if isinstance(t.fn,Lam):
+            return beta(t.fn.body,t.arg),"beta"
+        return t,None
+    if isinstance(t, Lam):
+        body, rule=reduce_innermost_once(t.body)
+        return (Lam(t.arg_type,body),rule) if rule else (t,None)
+    if isinstance(t, Prim):
+        for i in range(len(t.args)-1,-1,-1):
+            if not isinstance(t.args[i],Lit):
+                arg,rule=reduce_innermost_once(t.args[i])
+                if rule:
+                    args=list(t.args)
+                    args[i]=arg
+                    return Prim(t.name,tuple(args)),rule
+                return t,None
+        return _primitive(t.name,t.args),"source:"+t.name
+    return t,None
+
+
 @dataclass(frozen=True)
 class ReductionReceipt:
     value: Term
@@ -275,14 +303,23 @@ class ReductionReceipt:
     rules: tuple[str, ...]
 
 
-def normalize(t: Term, max_steps: int = 10000) -> ReductionReceipt:
-    """Finite proof-relevant evaluator. Budget exhaustion is UNKNOWN, never success."""
+def normalize(t: Term, max_steps: int = 10000,
+              strategy: str = "normal") -> ReductionReceipt:
+    """Finite evaluator, with two independent reduction orders.
+
+    Both use capture-avoiding de Bruijn substitution and total primitives.
+    Exhaustion is UNKNOWN; finite two-strategy agreement is not a universal
+    Church-Rosser proof or a theorem about untyped fixed-point combinators.
+    """
     if type(max_steps) is not int or max_steps < 0:
         raise ValueError("max_steps must be a natural number")
+    if strategy not in ("normal", "innermost"):
+        raise ValueError("strategy must be normal or innermost")
+    reducer = reduce_once if strategy == "normal" else reduce_innermost_once
     target = type_of(t)
     rules: list[str] = []
     for _ in range(max_steps + 1):
-        newer, rule = reduce_once(t)
+        newer, rule = reducer(t)
         if rule is None:
             return ReductionReceipt(t, target, tuple(rules))
         if len(rules) >= max_steps:
