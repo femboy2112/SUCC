@@ -1,0 +1,29 @@
+{
+  "RH": "OPEN",
+  "bits": 80,
+  "epochs": [
+    {
+      "A": 383,
+      "file": "history_383.json",
+      "sha256": "e6a1a794d9e8c50037ca9b5440bb049a36d58126daeeaba31139f035b25c1378"
+    },
+    {
+      "A": 769,
+      "file": "history_769.json",
+      "sha256": "19759edc33fe874761953c403b993b9f6dc24e75b5f960194c03d6ea26b1127d"
+    },
+    {
+      "A": 1543,
+      "file": "history_1543.json",
+      "sha256": "535950c54df77a134c752394f02bd7c742cc07f969c9dbd84a1fe8a47ce99153"
+    }
+  ],
+  "hashes": {
+    "HISTORY_PREREGISTRATION.md": "4b327612a37487d0bd5e79d64c68d5d5667ab0b7e33c9c23871a414ea32f0936",
+    "history_certificate.py": "7ffbc440a794cc041def70ed6f5229baa365161530b619c8159e2f0ebb79a0fe",
+    "run_history_probe.py": "6722ba85313ac3c22b46886985850f6642fb0239cae0ea9f3cb09f7560d2f689"
+  },
+  "pi_normality": "OPEN",
+  "preregistration_commit": "0d0d57a9",
+  "scale": 1208925819614629174706176
+}

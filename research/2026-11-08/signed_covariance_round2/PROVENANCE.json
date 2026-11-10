@@ -1,0 +1,89 @@
+{
+  "RH": "OPEN",
+  "branch": "research/learning-yoneda-source-cancellation-2026-11-07",
+  "external_imports": [
+    {
+      "bytes": 259408,
+      "download_sha256": "88ea90ae7880a9c4113645dbb3f84928598fb249594952672f0b9456788ad7eb",
+      "name": "Cochrane-Pinner",
+      "read_scope": "Theorem1.1, following global-range paragraph, proof reduction",
+      "redistributed": false,
+      "url": "https://www.math.ksu.edu/~cochrane/research/binsum7.pdf"
+    },
+    {
+      "bytes": 182066,
+      "download_sha256": "ffaa3ae7bd02b45d847a5df2cdbee337bdd8a30dd19b83a3d2dd64202b2dbcbc",
+      "name": "Rudnick fixed progression PNT",
+      "read_scope": "Section2, printedpage2",
+      "redistributed": false,
+      "url": "https://www.math.tau.ac.il/~rudnick/courses/sieves2015/fixed%20progressions.pdf"
+    },
+    {
+      "bytes": 179620,
+      "download_sha256": "4434b3992292e881139055eb0390ed7a7ff9ce9b243c156ac631c1442c2930d1",
+      "name": "DiBenedetto etal2020 investigated not imported",
+      "read_scope": "Theorem3.1 size restriction; not used in proof",
+      "redistributed": false,
+      "url": "https://arxiv.org/pdf/2003.06165"
+    }
+  ],
+  "final_main_refetch": {
+    "baseline_rewritten": false,
+    "recorded_utc": "2026-11-08T06:00:44.749873+00:00",
+    "sha": "d32342d375f44ddf62221ad6aff2f534abdc0a03"
+  },
+  "frozen_source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/CATEGORICAL_OBSERVER_ATLAS.md": "1a4941957b136b592d399a69163b2d9a87ed61dd11135b401ad2ff98311b11fc",
+    "docs/CLAIM_LEDGER.md": "8368fa49dba77a82c4b4fae96d8969dd030ffbcf41dfaa453e474827dbcef5ee",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "docs/PI_NORMALITY_FRONTIER.md": "9f7e8b10fcde7e4a74006e4da79c5c972523ab624148db925f8add399537a681",
+    "observational_succ/selected_orbit.py": "3ee56fb08f96bfc9360782f8a63f8211e4fb055fd99ae87a038eccdd0dcfcc77",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+  },
+  "main_baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "native_input_git_objects": {
+    "AGENTS.md": "2c04a24744366d5659f347caeb874a3613f893c9",
+    "docs": "c6dcf12b173d6a451a73376870e00033d97cf791",
+    "formal": "8fc0d989a78d398c6578ed2e5ce6273868f85386",
+    "observational_succ": "e3f83312744220c8276f1a50350d713622a73eed",
+    "provenance": "586b09512b8ce1c8dddb28cdb31930474d196957",
+    "pyproject.toml": "26fc1b52dc952ef8b313d24c763c51e5d7bedb3d",
+    "scripts": "514e1025145f0cf8bd1143e9de48fe50b12532db",
+    "tests": "3801e98b608f6ef2897fdd5782c93a6f4dcc17dc"
+  },
+  "pi_normality": "OPEN",
+  "preregistered_commits": {
+    "5e681653": "5e681653c4f83a032da27374dfabadf57ebc49b7",
+    "6b9dc830": "6b9dc8308c1682dd113651f394bba900273e63bb",
+    "d613c66a": "d613c66a023687053d218f52fea4d6ae142fd785",
+    "f6d72def": "f6d72defec087213b0a2a869694a3a18a13946ad"
+  },
+  "provenance_families": {
+    "analytic_imports": "CP and quantitativePNT new classical inputs; BK generic inherited branch remains",
+    "data": "deterministic windows, some overlap prior source times; no independent physicaldataset",
+    "implementations": "root common-denominator recurrence; independent Fraction histories; modular power-sum; formal coefficient enumeration; Gaussian rational oracles",
+    "phase_engine": "prior covariance_forge interval engine reused; prior independentTaylor audit retained",
+    "reasoners": "root, cube, chronology, hostile; same model; external scholarly referee absent",
+    "source": "one immutable BBP source; variants explicitly labeled"
+  },
+  "research_parent": "1990b05117d84b33094c8e0f53f7d19b60f48060",
+  "source_signature": {
+    "coefficients": [
+      4,
+      -2,
+      -1,
+      -1
+    ],
+    "denominators": [
+      "8n-7",
+      "8n-4",
+      "8n-3",
+      "8n-2"
+    ],
+    "multiplier": 16,
+    "unwrapped_states_and_integer_carries": "preserved",
+    "zero_boundary": "literal U0=0"
+  },
+  "sources_downloaded_utc": "2026-11-08T05:59:22.243705+00:00"
+}

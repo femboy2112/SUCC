@@ -1,0 +1,215 @@
+{
+  "scope": "finite exact hostile controls; positive horizon-dependent seeds; pi normality OPEN",
+  "rational_certificate_rounding": "downward to denominator 10^12",
+  "fraction_encoding": "signed hexadecimal numerator / positive hexadecimal denominator",
+  "rows": [
+    {
+      "J": 5,
+      "A": 37,
+      "B": 73,
+      "K": 73,
+      "eta": "1/8",
+      "selected_prime": 137,
+      "selected_order": 17,
+      "observed_primes": [
+        3,
+        5,
+        7,
+        137
+      ],
+      "q_prime_count": 61,
+      "q_hex": "210d70c9ae5ee1b4ec303b697fddf62bcfe365de84024a4ea7b4c92ea0fae3603e3aa7a6a91a69e6f2b1df3c8450c3b5368c807da10b6b6caa3beee33",
+      "q_bits": 482,
+      "capacity_Kmax": 180,
+      "seed_hex_fraction": "33cb85f23092c41b8aeebe9ef545028b8de3e74ac9461ff2e728ebedd4e390000000000000000000/42578593758730fc9f4a10861a4ff971a1a48c2521f59f20c35c2496b3b60b26add02f98d3e684830526739eb7b57345cae475cef13f5ac24a0f9",
+      "selected_candidate_offset": 0,
+      "original_terminal_denominator_bits": 616,
+      "exact_terminal_denominator_preserved": true,
+      "all_denominators_divide_original_cumulative_D_B": true,
+      "literal_zero_preserved": false,
+      "chronological_support_preserved": false,
+      "observed_principal_part_equalities": 296,
+      "two_adic_equalities": 74,
+      "prefix_carry_equalities": 5,
+      "earliest_original_seed_prime_birth": 12,
+      "latest_original_seed_prime_birth": 73,
+      "original_history_sha256": "8fbae4330bc95f219e7c29b5105f0a811028e6770ddaa4c06432a71d55d5c597",
+      "shadow_history_sha256": "1fb87cfcf60aab0c07bf231deec40ea54bed40e3eda50d07d3d1c139f5a52352",
+      "exact_mean_square_sha256": "099b604f17e2e601e88ca998e71a8f3b99040b8774bed51b1a38beda545eff47",
+      "signed_W_lower": {
+        "1": "999999999241/1000000000000",
+        "2": "249999999241/250000000000",
+        "3": "99999999317/100000000000",
+        "5": "99999998103/100000000000"
+      },
+      "local_clock_mean_abs_upper": "614/629",
+      "signed_covariance_lower": {
+        "1": "23847376029/1000000000000",
+        "2": "23847373753/1000000000000",
+        "3": "23847369959/1000000000000",
+        "5": "11923678909/500000000000"
+      },
+      "independent_oracle": {
+        "independent_source_states": 74,
+        "prime_avoidance_checks": 61,
+        "blocked_candidates": 12
+      }
+    },
+    {
+      "J": 11,
+      "A": 73,
+      "B": 145,
+      "K": 145,
+      "eta": "1/8",
+      "selected_prime": 281,
+      "selected_order": 35,
+      "observed_primes": [
+        3,
+        5,
+        7,
+        281
+      ],
+      "q_prime_count": 114,
+      "q_hex": "1372a0ac9dbbbae223ee7df8ba0eb30724eaa8843aa2c85aea8588831da7aea0a1327e132c45262278f37e74647d5c29aaf4bcfff2fe09d8faeca06f808a36e1f3b9f100d6215f4745306879ad640fc2c76c12259424d421745508129f5ce855b991bd649edc885596be324e7d696f98b2ecb6937f82a8f309ad6af9b44eeb",
+      "q_bits": 1013,
+      "capacity_Kmax": 422,
+      "seed_hex_fraction": "f21bee9b44f84da53c3b3382040a9d76bd75979f8abcd851091fdc247570d33b1eb3bee09409ab8aa3f070213524184de23c2a9d084354a8b81d028dc89c8267ff0d1124f45b553c000000000000000000000000000000000000/1372a0ac9dbbbae223ee7df8ba0eb30724eaa8843aa2c85aea8588831da7aea0a1327e132c45262278f37e74647d5c29aaf4bcfff2fe09d8faeca06f808a36e1f3b9f100d6215f4745306879ad640fc2c76c12259424d421745508129f5ce855b991bd649edc885596be324e7d696f98b2ecb6937f82a8f309ad6af9b44eeb",
+      "selected_candidate_offset": 0,
+      "original_terminal_denominator_bits": 1248,
+      "exact_terminal_denominator_preserved": true,
+      "all_denominators_divide_original_cumulative_D_B": true,
+      "literal_zero_preserved": false,
+      "chronological_support_preserved": false,
+      "observed_principal_part_equalities": 584,
+      "two_adic_equalities": 146,
+      "prefix_carry_equalities": 11,
+      "earliest_original_seed_prime_birth": 19,
+      "latest_original_seed_prime_birth": 145,
+      "original_history_sha256": "fb2458fbee10fbf58a6397d12b9e0ce29e41acff95345fc1fd1934c5aceff1ca",
+      "shadow_history_sha256": "e54e5ef6a25243a6054eac762c10d9708a42ac6f53e6d5d8d684a8f401c064a2",
+      "exact_mean_square_sha256": "abddecede10a485c76085b32e79043059feca991ee695d282f19e58346c2a95e",
+      "signed_W_lower": {
+        "1": "999999999949/1000000000000",
+        "2": "999999999799/1000000000000",
+        "3": "249999999887/250000000000",
+        "5": "999999998747/1000000000000"
+      },
+      "local_clock_mean_abs_upper": "1591/2555",
+      "signed_covariance_lower": {
+        "1": "75459882573/200000000000",
+        "2": "75459882543/200000000000",
+        "3": "23581213279/62500000000",
+        "5": "188649705831/500000000000"
+      },
+      "independent_oracle": {
+        "independent_source_states": 146,
+        "prime_avoidance_checks": 114,
+        "blocked_candidates": 33
+      }
+    },
+    {
+      "J": 17,
+      "A": 137,
+      "B": 273,
+      "K": 273,
+      "eta": "1/8",
+      "selected_prime": 521,
+      "selected_order": 65,
+      "observed_primes": [
+        3,
+        5,
+        7,
+        521
+      ],
+      "q_prime_count": 195,
+      "q_hex": "348ba9e950c48142b9259a8dbfc3344d217acc364b46bebb6a90f5c1127f0f19f1b46de99a51f96d6b154ae1be7dbcb5141e717df482dd9066ba43a0fe7461e79aae547e2d97261f4af43d04e1c764225ef1c05193fe81a153cb3538fcb185e36dafcc60a063b75b9a571a2d8b7f7f80b922a51abb59c46d6b3544bfa471a84de5858a5200fa405361803123f21ef04cdebd40308fbefad4a93ed760f1b906bcb9f4f0388106347aa68111ba14834e3694db3730437fed46e1a69a4f208fe73c32fed3328565b26c28aaf420b565d06f86a5018281fe9e982811741ec1eace61cf5aeddaa366ed602fdc6bbd22bda7",
+      "q_bits": 1910,
+      "capacity_Kmax": 807,
+      "seed_hex_fraction": "11a48a19bebc1edf076a981fc0b4b5f46f8796b2c4467cae89274611b9b81cbdd1aedab1f579ecf8c0fff6ca52b0d6823f21583d98cf6191c906e32a73a81662e58acb5b1ccac44441eec641457be3c4880799fd3ec79af4620f5cd193da7f25d0f32f78b70b2b8dd526a40d50d1cdae18252531dbc7b2d8317cdef04dfada7161a5a4938351b7a00000000000000000000000000000000000000000000000000000000000000000000/261b506f2fb20b1134526307cb9ccb472a69025456802d7e7d25ae99127d81294beee8012991bfc41c57f67c8d0c2352bb30e9266759d42bcdc34613938c3e4c95e33b1982f767cb45964ab5f155dbd634e66fe9f00a852bc00820cbc67c63ff95e44bb221a46adda084c9bcf34eaf240f53ddfda1406009bb4176c0a5aba07e1ca95dc8e2f9a7c2a215e544db1a102c24cbf76f5d5e43526daf62e74d658c802a07eec145a3524be4cebc5b6f5458a16b3a2c5feb54cbfc49b7ea77c096c6274e51d2746971a37aad15b9059721f34319d9916986290fa91687f19537c804a0dbff392f9a09600022b59bbb3407",
+      "selected_candidate_offset": 0,
+      "original_terminal_denominator_bits": 2348,
+      "exact_terminal_denominator_preserved": true,
+      "all_denominators_divide_original_cumulative_D_B": true,
+      "literal_zero_preserved": false,
+      "chronological_support_preserved": false,
+      "observed_principal_part_equalities": 1096,
+      "two_adic_equalities": 274,
+      "prefix_carry_equalities": 17,
+      "earliest_original_seed_prime_birth": 35,
+      "latest_original_seed_prime_birth": 273,
+      "original_history_sha256": "9e21768ed2c8a58162e0fde6cdf631747a8f4c929a36f38de1e821a062028f8a",
+      "shadow_history_sha256": "3dd90963491242cbe91d73faa792a459f270762841527d2bccd403126f835ed0",
+      "exact_mean_square_sha256": "51868897783980994f7c42a24d5593dea9b441304b1e24d3bd0288ac66755fb3",
+      "signed_W_lower": {
+        "1": "199999999999/200000000000",
+        "2": "999999999983/1000000000000",
+        "3": "999999999963/1000000000000",
+        "5": "499999999949/500000000000"
+      },
+      "local_clock_mean_abs_upper": "4841/8905",
+      "signed_covariance_lower": {
+        "1": "456372824251/1000000000000",
+        "2": "456372824239/1000000000000",
+        "3": "456372824219/1000000000000",
+        "5": "91274564831/200000000000"
+      },
+      "independent_oracle": {
+        "independent_source_states": 274,
+        "prime_avoidance_checks": 195,
+        "blocked_candidates": 43
+      }
+    },
+    {
+      "J": 23,
+      "A": 257,
+      "B": 513,
+      "K": 513,
+      "eta": "1/8",
+      "selected_prime": 1009,
+      "selected_order": 126,
+      "observed_primes": [
+        3,
+        5,
+        7,
+        1009
+      ],
+      "q_prime_count": 338,
+      "q_hex": "31cc6f32931414ee907ba1a7b2feadb88dad6a583d902d5b0c1348f9ac258a13a109a58e7b4d32a5e64c03461a799d61d77e76f6c58f4bb27c9a3136455c8e100c58d1407c50f9aebb553b6f26d1ab9d5a2b7ddc7839e1f323b436e7f65ef6d303f4b398b80207fdc3afb7dd0f7d84417f1b0ba28dc2760888e77aa8e65d11efd6a4594dc284dfeea44e890c480ddffff514776018901bc984d615555cef91ba56777ac3752168801d7f4f01605c555fc99052b11d86ca2eca89bc8a009084ae2c8da7022c03dc759b2d622a6f46d577d4be5f38c710ab8baf6074ae120c364d6a21fc90553e72cd370626941daab7fd933a8950ad443a2566c69112342e424b13a39051dab21530d569f6ac0ca5cebbb6a650d25cfee0b07ba9b455a53f9d91e8f91038f875bc52333dd38af936b9eff0c15e4268c19da53318f492c651fb78a797521a7c47e070a7b0b74bfff7c61f955b3cffedafdc62134b27b4ff000384a167716895eef6b3542c1cc99fc67efa6c4193cc953e9f785235ba55ba26711640e4bc2fde7087efb75d1fec818762685d8338afdff9f01bc4af6f8ce8a4be6beff610ea301feccd3702521f8a7fbb066d8c3d55043678d36d88c1aa534033561ca053d4d",
+      "q_bits": 3618,
+      "capacity_Kmax": 1554,
+      "seed_hex_fraction": "11d4282738662f26ad60e79da23a469069d38c2ecea477b24873ccf1b29b9996bbb4785a12587138faf3c342dc7613e08f1e9777c63caa06390c734575beef3851dd04dc85ed58574061137af16c8428354344d23b9bd96cb7b99ac1b2b6c234ffe4bc5cd7a77bc6e5d420553c9721fa9cce1e05cc56c61e63795cc3b69032c14acdcbe0dde22338b78b27a1ae421542ba03c37b154eb22c669884e383fcda657b9d7452f1bdb0a7b45c1fa65bfec89dc64bf0472aa8dd1a2d081890b2fac80fb7814810f8effaf88133f296d5eaa532acc690707e55a442b4c3e5e6296a78d498f69818f590257444adfb4401d924548c9978f794ca446b4238f8ae7706074fe4c3fc9c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/31cc6f32931414ee907ba1a7b2feadb88dad6a583d902d5b0c1348f9ac258a13a109a58e7b4d32a5e64c03461a799d61d77e76f6c58f4bb27c9a3136455c8e100c58d1407c50f9aebb553b6f26d1ab9d5a2b7ddc7839e1f323b436e7f65ef6d303f4b398b80207fdc3afb7dd0f7d84417f1b0ba28dc2760888e77aa8e65d11efd6a4594dc284dfeea44e890c480ddffff514776018901bc984d615555cef91ba56777ac3752168801d7f4f01605c555fc99052b11d86ca2eca89bc8a009084ae2c8da7022c03dc759b2d622a6f46d577d4be5f38c710ab8baf6074ae120c364d6a21fc90553e72cd370626941daab7fd933a8950ad443a2566c69112342e424b13a39051dab21530d569f6ac0ca5cebbb6a650d25cfee0b07ba9b455a53f9d91e8f91038f875bc52333dd38af936b9eff0c15e4268c19da53318f492c651fb78a797521a7c47e070a7b0b74bfff7c61f955b3cffedafdc62134b27b4ff000384a167716895eef6b3542c1cc99fc67efa6c4193cc953e9f785235ba55ba26711640e4bc2fde7087efb75d1fec818762685d8338afdff9f01bc4af6f8ce8a4be6beff610ea301feccd3702521f8a7fbb066d8c3d55043678d36d88c1aa534033561ca053d4d",
+      "selected_candidate_offset": 0,
+      "original_terminal_denominator_bits": 4423,
+      "exact_terminal_denominator_preserved": true,
+      "all_denominators_divide_original_cumulative_D_B": true,
+      "literal_zero_preserved": false,
+      "chronological_support_preserved": false,
+      "observed_principal_part_equalities": 2056,
+      "two_adic_equalities": 514,
+      "prefix_carry_equalities": 23,
+      "earliest_original_seed_prime_birth": 66,
+      "latest_original_seed_prime_birth": 512,
+      "original_history_sha256": "77a52ae4d537abf3c4d5f3fd7e4b25846b4be94603fe8f9805262c3b0a7d1bf0",
+      "shadow_history_sha256": "ecbbbd65edde2191c7bd5f44a3087254886b67ed6cef0e285d500fb7d804b213",
+      "exact_mean_square_sha256": "4486ae6a42585e00a727ec4f9bb58d69fe8fdbfc26cca4bda8716d86167998a9",
+      "signed_W_lower": {
+        "1": "999999999999/1000000000000",
+        "2": "499999999999/500000000000",
+        "3": "999999999997/1000000000000",
+        "5": "999999999991/1000000000000"
+      },
+      "local_clock_mean_abs_upper": "5246/16191",
+      "signed_covariance_lower": {
+        "1": "27039713421/40000000000",
+        "2": "168998208881/250000000000",
+        "3": "337996417761/500000000000",
+        "5": "675992835517/1000000000000"
+      },
+      "independent_oracle": {
+        "independent_source_states": 514,
+        "prime_avoidance_checks": 338,
+        "blocked_candidates": 67
+      }
+    }
+  ]
+}

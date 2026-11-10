@@ -1,0 +1,159 @@
+{
+  "RH": "OPEN",
+  "all_passed": true,
+  "baseline": "d32342d375f44ddf62221ad6aff2f534abdc0a03",
+  "code_sha256": {
+    "research/2026-11-07/learning_yoneda/arithmetic/finite_adelic.py": "ac5c3e453281d643dd71bdd23424800aff967d89c522b1f14a02b522475f60db",
+    "research/2026-11-07/learning_yoneda/arithmetic/independent_oracle.py": "9dc55ffa4473f75936e968d870f45fbaee9911cd05cc56008ed1c79b513ebedf",
+    "research/2026-11-07/learning_yoneda/arithmetic/prime_epochs.py": "86d36954ab03475bf0400fcec51e7c53e24b4b97f42187d467f22cb349c00623",
+    "research/2026-11-07/learning_yoneda/arithmetic/run_prime_epoch_receipts.py": "f9687c08cd9aa60a5b8ac94e0b9d114554ae111140cc3367c1190e5537c94466",
+    "research/2026-11-07/learning_yoneda/arithmetic/run_receipts.py": "78bdca0069003335dae8d9bbefa161947e18d36966c96f5214c000a08ab53a92",
+    "research/2026-11-07/learning_yoneda/arithmetic/test_finite_adelic.py": "a7234f36234ab994ae389bedec84bcb5ac55525ba6335dd4dc9448984d05f625",
+    "research/2026-11-07/learning_yoneda/arithmetic/test_prime_epochs.py": "cdc3d2b951ffa3215d3e3effac1640b6d3d006328c0ef20744adea7dcdd071c5",
+    "research/2026-11-07/learning_yoneda/crucible/ConditionalMemory.lean": "09dfeaa8464801a859e67aec168e3d2586492cf5a2b1bfe3eb6987242e05b18f",
+    "research/2026-11-07/learning_yoneda/crucible/hostile_oracle.py": "405b1bc328356bb6f45d7487ea79e25606f4941ba19ace7916acd4d25271394b",
+    "research/2026-11-07/learning_yoneda/crucible/test_hostile.py": "0340e6a7b40a13d344b48d543cc7e8a1b800f2e5515b5310d982b9ddfb317ad4",
+    "research/2026-11-07/learning_yoneda/crucible/validate.py": "06922676df54a155bbbbbd437fb5ebb325bbec339b9ffba2c191016adeda19b9",
+    "research/2026-11-07/learning_yoneda/learning.py": "7a28673f637f502c596226a3ff3f4f538c94529fc166f8f1b4284e613d2b9581",
+    "research/2026-11-07/learning_yoneda/spectral/independent_oracle.py": "b28271ddc1f1113367677d6d31aef0588ca8791a1c1f86a8782abb52c132e33d",
+    "research/2026-11-07/learning_yoneda/spectral/test_spectral.py": "252c5c999e0100e98fcaa78ce817f1953ab0ce38046f68d87b0f9526c3dea843",
+    "research/2026-11-07/learning_yoneda/test_learning.py": "e6d8df5c9bbfb5a2f69225089c0c2d85dbf14c89b533535b39e6d302b8975465",
+    "research/2026-11-07/learning_yoneda/validate.py": "cabd13dae185730195a74d0a3b260c7eadf2f57329682dcc244faec4e3461319"
+  },
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda",
+        "-p",
+        "test_learning.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "learning",
+      "seconds": 0.6064748850185424
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/arithmetic",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "arithmetic",
+      "seconds": 0.6237773441243917
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/spectral",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "spectral",
+      "seconds": 0.30831509083509445
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/crucible",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "crucible",
+      "seconds": 0.3641998388338834
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/arithmetic/run_receipts.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/validation/root_replay/arithmetic_receipts"
+      ],
+      "exit_code": 0,
+      "name": "arithmetic_receipts",
+      "seconds": 2.44622519495897
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/arithmetic/run_prime_epoch_receipts.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/validation/root_replay/arithmetic_receipts"
+      ],
+      "exit_code": 0,
+      "name": "prime_epoch_receipts",
+      "seconds": 1.141902195988223
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-c",
+        "from pathlib import Path\noriginal=Path('/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/arithmetic')\nreplayed=Path('/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/validation/root_replay/arithmetic_receipts')\nfor name in ('FINITE_RECEIPTS.json','PRIME_EPOCH_RECEIPTS.json'):\n assert (original/name).read_bytes()==(replayed/name).read_bytes(),name\n print(name, 'byte-identical')"
+      ],
+      "exit_code": 0,
+      "name": "receipt_equality",
+      "seconds": 2.118069150019437
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/spectral/independent_oracle.py"
+      ],
+      "exit_code": 0,
+      "name": "spectral_oracle",
+      "seconds": 0.20469161798246205
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-c",
+        "import sys,json;sys.path.insert(0,'/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/crucible')\nimport hostile_oracle;print(json.dumps(hostile_oracle.run(),sort_keys=True))"
+      ],
+      "exit_code": 0,
+      "name": "crucible_oracle",
+      "seconds": 0.14330581412650645
+    },
+    {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "name": "lean_version",
+      "seconds": 0.449148636078462
+    },
+    {
+      "command": [
+        "lean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-07/learning_yoneda/crucible/ConditionalMemory.lean"
+      ],
+      "exit_code": 0,
+      "name": "lean",
+      "seconds": 10.109956961125135
+    }
+  ],
+  "pi_base16_normality": "OPEN"
+}

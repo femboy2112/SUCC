@@ -1,0 +1,106 @@
+{
+  "authority": "Midpoints are descriptive only; source/frame JSON contains outward certificates. All source Weyl rectangles match the independently run parent origin instrument.",
+  "exact_partition_labels": 1206,
+  "exact_return_discrepancy_checks": 57,
+  "examples": [
+    {
+      "A": 149,
+      "F_midpoint": [
+        -0.06570490272645008,
+        -0.03839282607696609
+      ],
+      "W_midpoint": [
+        -0.06620434853085927,
+        -0.04004032704045365
+      ],
+      "calibration_error_midpoint": [
+        -0.00034698799554098785,
+        0.0011355786061170044
+      ],
+      "family": "original_zero"
+    },
+    {
+      "A": 149,
+      "F_midpoint": [
+        0.9914095222510446,
+        -2.164415476421133e-06
+      ],
+      "W_midpoint": [
+        0.9999999999971205,
+        -2.183129766319468e-06
+      ],
+      "calibration_error_midpoint": [
+        0.004194691487229211,
+        -9.197393622405806e-09
+      ],
+      "family": "matched_wrong_seed"
+    },
+    {
+      "A": 149,
+      "F_midpoint": [
+        0.9914095220787733,
+        0.0
+      ],
+      "W_midpoint": [
+        1.0,
+        0.0
+      ],
+      "calibration_error_midpoint": [
+        0.004194691312115213,
+        0.0
+      ],
+      "family": "synthetic_conjugate"
+    },
+    {
+      "A": 673,
+      "F_midpoint": [
+        0.028413577706276047,
+        0.016622189130498476
+      ],
+      "W_midpoint": [
+        0.028820786587758402,
+        0.01678251329181028
+      ],
+      "calibration_error_midpoint": [
+        -3.8730247519835096e-05,
+        5.4243111284797684e-05
+      ],
+      "family": "original_zero"
+    },
+    {
+      "A": 673,
+      "F_midpoint": [
+        0.9918947349181126,
+        -1.0092195621720465e-07
+      ],
+      "W_midpoint": [
+        0.9999999999999802,
+        -1.0169596459670603e-07
+      ],
+      "calibration_error_midpoint": [
+        0.00467990415147414,
+        -5.261917382154605e-10
+      ],
+      "family": "matched_wrong_seed"
+    },
+    {
+      "A": 673,
+      "F_midpoint": [
+        0.9918947349527807,
+        0.0
+      ],
+      "W_midpoint": [
+        1.0,
+        0.0
+      ],
+      "calibration_error_midpoint": [
+        0.004679904186122542,
+        0.0
+      ],
+      "family": "synthetic_conjugate"
+    }
+  ],
+  "frame_interval_certificates": 32,
+  "parent_W_matches": 72,
+  "source_cases": 72
+}

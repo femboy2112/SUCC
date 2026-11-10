@@ -1,0 +1,54 @@
+{
+  "commands": [
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_geometry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.10871427389793098,
+      "log_sha256": "be0847c676341ece27234f8b2377a0bd0466cd73d0e97ad932406af888b229b8"
+    },
+    {
+      "name": "exact",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_geometry/oracle.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/validation/triangle_final/exact.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.0579781620763242,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "numerical",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/triangle_geometry/oracle.py",
+        "--numerical",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/validation/triangle_final/numerical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.10513294907286763,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "comparisons": {
+    "exact": true,
+    "numerical": true
+  },
+  "code_sha256": {
+    "research/2026-11-08/signal_frontier/triangle_geometry/test_oracle.py": "88dc63a78996b85328eb5448e267ed43740d036f58335d839d2cda244480e925",
+    "research/2026-11-08/signal_frontier/triangle_geometry/oracle.py": "ef8aadc910877654bdca0d82340f1cd576c4be5d4b00d843b336f8497d8b2775"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "code_sha256": "c22d6069dcf14bca5177b921148d496df3ed66c5932cd6b3cb334cb4e7aa658f",
+  "different_arithmetic": "Python Gaussian integers and Fraction; no primary Box or phase arithmetic.",
+  "different_basis": "Individual e(hU_n) boxes folded directly; no principal/complement reconstruction.",
+  "primary_receipt_sha256": "fabab5e83232efab2a86b123d12bf4eb197782ad6f3a853d332035c18a33587d",
+  "rows": [
+    {
+      "alignment_lower": {
+        "decimal_diagnostic": 0.6349708533460883,
+        "denominator": 371857697673349725552648905077817344,
+        "numerator": 236118799614958575052066645057542625
+      },
+      "difference_from_primary": {
+        "decimal_diagnostic": 8.408234173668247e-21,
+        "denominator": 1115573093020049176657946715233452032,
+        "numerator": 9379999803955963
+      },
+      "features": 16,
+      "h": 1,
+      "lower_bound": {
+        "decimal_diagnostic": 0.619878976572106,
+        "denominator": 1115573093020049176657946715233452032,
+        "numerator": 691520307192646863382922012209896187
+      },
+      "menu": "one",
+      "radial_witnesses_checked": 27501,
+      "support_function_upper": {
+        "decimal_diagnostic": 0.015091876773982287,
+        "denominator": 139446636627506147082243339404181504,
+        "numerator": 2104511456528607721659740370341461
+      }
+    },
+    {
+      "alignment_lower": {
+        "decimal_diagnostic": 0.6349708533460883,
+        "denominator": 371857697673349725552648905077817344,
+        "numerator": 236118799614958575052066645057542625
+      },
+      "difference_from_primary": {
+        "decimal_diagnostic": 6.283786957699963e-19,
+        "denominator": 23241106104584357847040556567363584,
+        "numerator": 14604215942250819
+      },
+      "features": 256,
+      "h": 1,
+      "lower_bound": {
+        "decimal_diagnostic": 0.5713092402225285,
+        "denominator": 23241106104584357847040556567363584,
+        "numerator": 13277858670541257821844146786533699
+      },
+      "menu": "two",
+      "radial_witnesses_checked": 27501,
+      "support_function_upper": {
+        "decimal_diagnostic": 0.0636616131235598,
+        "denominator": 371857697673349725552648905077817344,
+        "numerator": 23673060886298449902560296473003441
+      }
+    },
+    {
+      "alignment_lower": {
+        "decimal_diagnostic": 0.6359674601968119,
+        "denominator": 69723318313753073541121669702090752,
+        "numerator": 44341761664491403173436560146140241
+      },
+      "difference_from_primary": {
+        "decimal_diagnostic": 1.0320395905230942e-20,
+        "denominator": 92964424418337431388162226269454336,
+        "numerator": 959429665099161
+      },
+      "features": 16,
+      "h": 3,
+      "lower_bound": {
+        "decimal_diagnostic": 0.6165379332639245,
+        "denominator": 92964424418337431388162226269454336,
+        "numerator": 57316094097952070660124906620980633
+      },
+      "menu": "one",
+      "radial_witnesses_checked": 27501,
+      "support_function_upper": {
+        "decimal_diagnostic": 0.01942952693288745,
+        "denominator": 278893273255012294164486678808363008,
+        "numerator": 5418764364109400713371520721619065
+      }
+    },
+    {
+      "alignment_lower": {
+        "decimal_diagnostic": 0.6359674601968119,
+        "denominator": 69723318313753073541121669702090752,
+        "numerator": 44341761664491403173436560146140241
+      },
+      "difference_from_primary": {
+        "decimal_diagnostic": 6.757252532372326e-19,
+        "denominator": 17430829578438268385280417425522688,
+        "numerator": 11778451731025243
+      },
+      "features": 256,
+      "h": 3,
+      "lower_bound": {
+        "decimal_diagnostic": 0.5736927757926247,
+        "denominator": 17430829578438268385280417425522688,
+        "numerator": 9999941005222435323231876051012955
+      },
+      "menu": "two",
+      "radial_witnesses_checked": 27501,
+      "support_function_upper": {
+        "decimal_diagnostic": 0.06227468440418725,
+        "denominator": 69723318313753073541121669702090752,
+        "numerator": 4341997643601661880509055942088421
+      }
+    }
+  ],
+  "scope": "Independent arithmetic replay of finite family floors, not independent source construction.",
+  "source_phase_boxes_shared": true,
+  "source_sha256": "02cc3a15ab2e40c2db5006fae961586afbbdd4df048f80dab6da6e98974f11ca"
+}

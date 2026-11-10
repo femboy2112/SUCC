@@ -1,0 +1,55 @@
+{
+  "runs": [
+    {
+      "name": "import_failure_direct",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/meta_choice_descent_probe.py"
+      ],
+      "PYTHONPATH": null,
+      "exit_code": 1,
+      "log_sha256": "5b9a1ef57aec2e8d2617ef78e7e08bcf6effa8b0bdc64cb22370e88b9fe5be31"
+    },
+    {
+      "name": "native_group_missing_path",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_eodcs_meta_choice_descent.py",
+        "-v"
+      ],
+      "PYTHONPATH": null,
+      "exit_code": 1,
+      "log_sha256": "947daf3357d12e6b4959fe3146d73a587d3efd588b9d9c399c5c3a60f3ac24af"
+    },
+    {
+      "name": "native_group_path_fixed",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_eodcs_meta_choice_descent.py",
+        "-v"
+      ],
+      "PYTHONPATH": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda",
+      "exit_code": 0,
+      "log_sha256": "0363e1420c6d918ed9aee7e826142c798aa8a3a3ec95f6da79e44a2e998526ed"
+    }
+  ],
+  "baseline_inputs_unchanged": true,
+  "inputs": {
+    "scripts/meta_choice_descent_probe.py": "167dab55389b68167a978bb1fadde40730d99fae196d9c880eec3d1e1f877c52",
+    "tests/test_eodcs_meta_choice_descent.py": "ec6231ef81100d8b11fd7dd6f59d65bc978aea20a8e68b8a292616a6d166b0eb",
+    "observational_succ/meta_choice_descent.py": "a51a288e679b89448b69711d714147e025933c7f6a3bac4868fb9bb443ba4d3f"
+  },
+  "resolution": "Invocation environment only; no frozen file edited; full initial native run retains its actual outcome."
+}

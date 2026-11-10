@@ -1,0 +1,85 @@
+{
+  "RH": "OPEN",
+  "complete_dft_coefficients": 738840,
+  "focused_commands": 14,
+  "focused_test_counts": {
+    "complement_budget_tests": 6,
+    "hostile_tests": 6,
+    "model_tests": 7,
+    "prime_resonance_tests": 6,
+    "resonance_tests": 6
+  },
+  "focused_total": 31,
+  "holdout_secondary_direct_terms": 66000,
+  "native": {
+    "command": "PYTHONPATH=\"$PWD\" OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /tmp/succ-learning-yoneda-venv/bin/python -m unittest discover -s tests -p test_*.py",
+    "exit_code": 0,
+    "log_sha256": "1c6a0b0f2efd97ff7f32b741ba45034ea89f78e227647529d932f92ce224f6c8",
+    "scope": "Native inputs unchanged from95d9860 through this round; new namespace checked separately.",
+    "seconds": 1261.37,
+    "tests": 12147
+  },
+  "new_source_configurations": 8,
+  "normality": "OPEN",
+  "payload_replays": [
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "model_oracle",
+      "retained_sha256": "e21f93772557ad6992d11f33d01e2e51967079afb56eef2ba01acde42061b817"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "resonance_oracle",
+      "retained_sha256": "979094abb9cf84c65ee0c46c1a9dd3858adb32492214305bd55783415452f1e9"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "hostile_oracle",
+      "retained_sha256": "b382c534e39bddba3f49797a40f740a458d1a8f82e6051af5f1c0bec97eff8c2"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "hostile_review_oracle",
+      "retained_sha256": "82b83d32937571c04ccfd16c14b667d23aecc20a92fbb66202b4fc36fe4059ff"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "hostile_model5_review_oracle",
+      "retained_sha256": "546cc92a1d04cd2b8d730ab01d3ca6917fe4fb49325b435f4a74ffa53f90fefe"
+    }
+  ],
+  "stream_optimization": {
+    "before_phase_receipt": true,
+    "identical_full_development_payloads": [
+      1103,
+      2203,
+      5501
+    ],
+    "interrupted_exit": 130
+  }
+}

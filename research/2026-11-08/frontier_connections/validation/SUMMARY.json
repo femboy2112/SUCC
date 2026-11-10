@@ -1,0 +1,177 @@
+{
+  "RH": "OPEN",
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections",
+        "-p",
+        "test_energy.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0751a0955e482279229be9301e5655c0b261c4c12d05d4541f4fa31693fa3def",
+      "name": "frontier_connections_tests",
+      "seconds": 0.7757273560855538
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/observer",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "d65f33c4a58e69a5feda2fe5d5035b2c586fc2b8580b546f191693ef712afc66",
+      "name": "observer_tests",
+      "seconds": 0.5609854510985315
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/arithmetic",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2f3e5477d9c031cc585a3be3735c623a073f8818e3f411b333e5dbbd63bc075c",
+      "name": "arithmetic_tests",
+      "seconds": 0.8469057029578835
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/crucible",
+        "-p",
+        "qco_oracle.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "89944b2d8f3d1d36c6965e4e346a51c7dd335d5c50df9a63cc031b0b5c50b26f",
+      "name": "crucible_tests",
+      "seconds": 0.31120994314551353
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/energy_oracle.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/validation/energy.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "d1c9fef6ee023e22bc9c6ebb474810a5feb8bc05e590601986addb6ff2240890",
+      "name": "energy_oracle",
+      "seconds": 1.6131687508895993
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/observer/oracle.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/validation/observer.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "af557cefa9a23b781f9df41653b1952ab52e11e14982eeb2db1ce34b7b345d44",
+      "name": "observer_oracle",
+      "seconds": 0.8386000520549715
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/crucible/qco_oracle.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/frontier_connections/validation/quotient.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "df1e0711e15cb8f10963ad88cbd1626bdcab1aed4784b4d730ae54f9e75caf47",
+      "name": "quotient_oracle",
+      "seconds": 0.2515708690043539
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "name": "verify_provenance",
+      "seconds": 0.10092473309487104
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "name": "observer_foundations_probe",
+      "seconds": 0.18714427389204502
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "name": "ordinal_succ_report_probe",
+      "seconds": 3.8373928798828274
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "whitespace",
+      "seconds": 0.0156317800283432
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "energy",
+      "payload_equal": true,
+      "retained_sha256": "eb71f82a2177df4aa17dab08db92a946df49d6d41355dd83a870dae3ba66c9de"
+    },
+    {
+      "name": "observer",
+      "payload_equal": true,
+      "retained_sha256": "c0e6e4cf723b34c3d60223edc6f90d460c4950288a1369a7f1a366806d662b68"
+    },
+    {
+      "name": "quotient",
+      "payload_equal": true,
+      "retained_sha256": "df1e0711e15cb8f10963ad88cbd1626bdcab1aed4784b4d730ae54f9e75caf47"
+    }
+  ],
+  "native_executed_this_round": false,
+  "native_prior_pass": {
+    "head": "525d7c87dd1016aeeea4ac9cd1366cbb935a0441",
+    "receipt": "research/2026-11-08/complement_budget/validation/native_suite.log",
+    "receipt_sha256": "1c6a0b0f2efd97ff7f32b741ba45034ea89f78e227647529d932f92ce224f6c8",
+    "scope": "Prior run; native input trees compared to starting head, not a new full-suite run.",
+    "tests": 12147
+  },
+  "pi_normality": "OPEN",
+  "starting_head": "525d7c87dd1016aeeea4ac9cd1366cbb935a0441"
+}

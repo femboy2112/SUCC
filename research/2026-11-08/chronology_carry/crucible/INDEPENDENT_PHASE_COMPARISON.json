@@ -1,0 +1,82 @@
+{
+  "RH": "OPEN",
+  "code_sha256": "aeb912aecc15b6c264fb5398a206eec95a32e6b779c1af62bcc6a7a5cdba9f34",
+  "component_containments": 28,
+  "independent_prepared_file_sha256": "6e2f417003f00ea723434d8ba59f382066a0a07817be04d86b5999e139bdb577",
+  "phase_checks": [
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 55003
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 55003
+    },
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 55020
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 55020
+    },
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 55100
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 55100
+    },
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 55736
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 55736
+    },
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 82381
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 82381
+    },
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 82504
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 82504
+    },
+    {
+      "h": 1,
+      "independent_interval_contained": true,
+      "time": 110004
+    },
+    {
+      "h": 3,
+      "independent_interval_contained": true,
+      "time": 110004
+    }
+  ],
+  "pi_normality": "OPEN",
+  "scope": "Fixed selected phase probes; no full source sweep, no independent whole-holdout coefficient or covariance computation.",
+  "source_file_sha256": "02cc3a15ab2e40c2db5006fae961586afbbdd4df048f80dab6da6e98974f11ca",
+  "status": "PASS: all independent source-phase intervals contained"
+}

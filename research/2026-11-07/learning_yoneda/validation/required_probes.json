@@ -1,0 +1,29 @@
+[
+  {
+    "command": [
+      "/tmp/succ-learning-yoneda-venv/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.2761077559553087,
+    "log": "research/2026-11-07/learning_yoneda/validation/verify_provenance.log"
+  },
+  {
+    "command": [
+      "/tmp/succ-learning-yoneda-venv/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.5568924590479583,
+    "log": "research/2026-11-07/learning_yoneda/validation/observer_foundations_probe.log"
+  },
+  {
+    "command": [
+      "/tmp/succ-learning-yoneda-venv/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 13.793012848123908,
+    "log": "research/2026-11-07/learning_yoneda/validation/ordinal_succ_report_probe.log"
+  }
+]

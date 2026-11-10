@@ -1,0 +1,247 @@
+{
+  "RH": "OPEN",
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "5962f209094321ea9fb918622d8a1a02b1db73f68948269e4b0593a554875499",
+      "name": "complement_budget_tests",
+      "seconds": 0.8995221180375665
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/model",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "55a6ee45a24d6a933941398ee54998e0a5bb278adaf21387775a6d4fd4e13fa9",
+      "name": "model_tests",
+      "seconds": 0.155486284988001
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/resonance",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "da9ca32013735ea53a3f3a8baa0111b3f12e4c39fa11f998b3e3b95b5e9b1af3",
+      "name": "resonance_tests",
+      "seconds": 0.16170490300282836
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/hostile",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "49f2abe5db1821b0aff99e6314f98b862fe2aa371a5daf4abb5439e19ec23691",
+      "name": "hostile_tests",
+      "seconds": 0.11951973102986813
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/signal_frontier/prime_resonance",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "dda4b0fce7ea96457ee1be963c8cafa19a237701e2e5ca0115b037c6dcbf7f38",
+      "name": "prime_resonance_tests",
+      "seconds": 0.06505624391138554
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/model/oracle.py",
+        "--output",
+        "/tmp/succ-complement-focused/model_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "73089e7ffe8cb5001ebe33bff6f21c3c203b73d943a1c4abcb1422c556eba623",
+      "name": "model_oracle",
+      "seconds": 15.614280304173008
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/resonance/oracle.py",
+        "--output",
+        "/tmp/succ-complement-focused/resonance_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "a8ba57077b1a490191d09a212bb5dcb93e1cb8e3a56e980f096a6d1d143b91d2",
+      "name": "resonance_oracle",
+      "seconds": 10.748324299929664
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/hostile/oracle.py",
+        "--output",
+        "/tmp/succ-complement-focused/hostile_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "hostile_oracle",
+      "seconds": 2.304223929066211
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/hostile/review_oracle.py",
+        "--output",
+        "/tmp/succ-complement-focused/hostile_review_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "hostile_review_oracle",
+      "seconds": 0.5632744659669697
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/hostile/model5_review_oracle.py",
+        "--output",
+        "/tmp/succ-complement-focused/hostile_model5_review_oracle.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "hostile_model5_review_oracle",
+      "seconds": 3.916019662981853
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "name": "verify_provenance",
+      "seconds": 0.07467042491771281
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "name": "observer_foundations_probe",
+      "seconds": 0.12658451194874942
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "name": "ordinal_succ_report_probe",
+      "seconds": 3.4331349490676075
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "whitespace",
+      "seconds": 0.01344433892518282
+    }
+  ],
+  "comparisons": [
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "model_oracle",
+      "retained_sha256": "e21f93772557ad6992d11f33d01e2e51967079afb56eef2ba01acde42061b817"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "resonance_oracle",
+      "retained_sha256": "979094abb9cf84c65ee0c46c1a9dd3858adb32492214305bd55783415452f1e9"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "hostile_oracle",
+      "retained_sha256": "b382c534e39bddba3f49797a40f740a458d1a8f82e6051af5f1c0bec97eff8c2"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "hostile_review_oracle",
+      "retained_sha256": "82b83d32937571c04ccfd16c14b667d23aecc20a92fbb66202b4fc36fe4059ff"
+    },
+    {
+      "equal": true,
+      "excluded_metadata": [
+        "dependencies",
+        "proof_sha256",
+        "reviewed_hashes"
+      ],
+      "name": "hostile_model5_review_oracle",
+      "retained_sha256": "546cc92a1d04cd2b8d730ab01d3ca6917fe4fb49325b435f4a74ffa53f90fefe"
+    }
+  ],
+  "full_source_replayed": false,
+  "native_executed_here": false,
+  "parent": "95d9860de3a52ab76c1a0719e170b609759b17b9",
+  "pi_normality": "OPEN"
+}

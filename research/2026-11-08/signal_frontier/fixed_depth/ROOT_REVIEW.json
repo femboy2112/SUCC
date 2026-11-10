@@ -1,0 +1,8 @@
+{
+  "cases": "12 fresh rational grids, repeats, six M values",
+  "exact_checks": 84,
+  "limits": "Checks integration and circular discrepancy, not interval trig, original source construction, or asymptotic theorem.",
+  "method": "root event sweep versus independent direct full-partition recomputation; exact Fraction arithmetic",
+  "source_probe_sha256": "a24f74cfbfe4192e4953435e52a317f32f166999adf32eae48a52693f320df3e",
+  "status": "PASS"
+}

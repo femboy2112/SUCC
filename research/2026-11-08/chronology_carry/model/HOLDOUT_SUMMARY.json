@@ -1,0 +1,602 @@
+{
+  "A": 55003,
+  "L": 55002,
+  "code_sha256": "10089085b088ec9cd09b2b34feadb5abf2b9345f933cd04575e8cfd3e921b06d",
+  "execution": {
+    "command": "python research/2026-11-08/chronology_carry/model/carry_model.py evaluate --table research/2026-11-08/chronology_carry/model/FROZEN_TABLE.json --A 55003 --output research/2026-11-08/chronology_carry/model/HOLDOUT_55003.json.gz",
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "exit_code": 0,
+    "log_sha256": "542c4caefdc2b6279d5437e45d0176d424be0260277205015014db6d4a214457",
+    "output_log_creation": "2026-11-08 05:28:03.582599158 -0500",
+    "output_log_last_write": "2026-11-08 05:53:25.195440053 -0500",
+    "output_log_lifetime_seconds": "1521.612840895",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "source_freeze_commit": "5e1e3fad",
+    "time_scope": "Filesystem birth-to-last-write span; approximately25min22s command runtime, not independently timed CPU benchmark."
+  },
+  "frozen_table_file_sha256": "2462a0e3b814a5fb8664701a12832698b04cbd62c7c60ecf63abc669bc4f3887",
+  "holdout_carry_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "last": 110004,
+  "m": 27501,
+  "n0": 55003,
+  "p": 220009,
+  "phase_boxes_per_frequency": {
+    "1": 55002,
+    "3": 55002
+  },
+  "principal_parts_checked": 55002,
+  "q": 2,
+  "raw_sha256": "02cc3a15ab2e40c2db5006fae961586afbbdd4df048f80dab6da6e98974f11ca",
+  "rows": [
+    {
+      "QCO1_certificate_upper": {
+        "decimal_diagnostic": 0.6349708773637518,
+        "denominator": 16623334482610958466797273088,
+        "numerator": 10555333281134589201466545619
+      },
+      "W_abs_lower": {
+        "decimal_diagnostic": 0.003371445227924608,
+        "denominator": 1208925819614629174706176,
+        "numerator": 4075827185454586809325
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.003371445227924608,
+        "denominator": 1208925819614629174706176,
+        "numerator": 4075827185454586809771
+      },
+      "W_box": [
+        -4075726049539569988877,
+        -4075726049539569988859,
+        28712624318049692179,
+        28712624318049692197
+      ],
+      "direct_certificate_upper": {
+        "decimal_diagnostic": 0.6349708773637518,
+        "denominator": 16623334482610958466797273088,
+        "numerator": 10555333281134589201466545619
+      },
+      "factors": {
+        "multiplicative_cosets": 8,
+        "nonresonant_factor_upper": {
+          "decimal_diagnostic": 2.645752170039477,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13292569518855361654965101022071304055970968108533795
+        },
+        "period_square_sum_exact": 192508,
+        "resonance_factor": {
+          "decimal_diagnostic": 0.12499943184142467,
+          "denominator": 220009,
+          "numerator": 27501
+        },
+        "total_factor_upper": {
+          "decimal_diagnostic": 2.7707516018809017,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13920581339609067297988843781204593107901558747039779
+        }
+      },
+      "h": 1,
+      "menu": "zero",
+      "predicted_signed_abs_lower": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      },
+      "predicted_signed_abs_upper": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      },
+      "predicted_signed_mean": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction_sums_sha256": "4309858285c3af3aa67848f1bfece1df105639e9e873411c6a0d8330b519ea02",
+      "retained_resonance_abs_upper": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      },
+      "rho_lower": {
+        "decimal_diagnostic": 0.6349708773637518,
+        "denominator": 11082222988407305644531515392,
+        "numerator": 7036888854089726134310833859
+      },
+      "rho_upper": {
+        "decimal_diagnostic": 0.6349708773637518,
+        "denominator": 16623334482610958466797273088,
+        "numerator": 10555333281134589201466545619
+      },
+      "signed_orbit_cost_upper": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "QCO1_certificate_upper": {
+        "decimal_diagnostic": 0.7020130537490245,
+        "denominator": 55678389368821003498221297069405895009628612329513745418641718707364113313431552,
+        "numerator": 39086956148633248251428964167082661627402995478091964746418423995686038954717021
+      },
+      "W_abs_lower": {
+        "decimal_diagnostic": 0.003371445227924608,
+        "denominator": 1208925819614629174706176,
+        "numerator": 4075827185454586809325
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.003371445227924608,
+        "denominator": 1208925819614629174706176,
+        "numerator": 4075827185454586809771
+      },
+      "W_box": [
+        -4075726049539569988877,
+        -4075726049539569988859,
+        28712624318049692179,
+        28712624318049692197
+      ],
+      "direct_certificate_upper": {
+        "decimal_diagnostic": 0.6609392062181011,
+        "denominator": 5541111494203652822265757696,
+        "numerator": 3662337832544958295644500897
+      },
+      "factors": {
+        "multiplicative_cosets": 8,
+        "nonresonant_factor_upper": {
+          "decimal_diagnostic": 2.645752170039477,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13292569518855361654965101022071304055970968108533795
+        },
+        "period_square_sum_exact": 192508,
+        "resonance_factor": {
+          "decimal_diagnostic": 0.12499943184142467,
+          "denominator": 220009,
+          "numerator": 27501
+        },
+        "total_factor_upper": {
+          "decimal_diagnostic": 2.7707516018809017,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13920581339609067297988843781204593107901558747039779
+        }
+      },
+      "h": 1,
+      "menu": "one",
+      "predicted_signed_abs_lower": {
+        "decimal_diagnostic": 0.02319571389193971,
+        "denominator": 1208925819614629174706176,
+        "numerator": 28041897428359652266533
+      },
+      "predicted_signed_abs_upper": {
+        "decimal_diagnostic": 0.02319571389193971,
+        "denominator": 1208925819614629174706176,
+        "numerator": 28041897428359652266577
+      },
+      "predicted_signed_mean": [
+        24140446156497471220841,
+        24140446156497471220842,
+        14268387110948810683136,
+        14268387110948810683137
+      ],
+      "prediction_sums_sha256": "e0c245c5123d4b67ba5889a5afe4ea88fb2a7bba2b6b2663160c7d21d26efbcf",
+      "retained_resonance_abs_upper": {
+        "decimal_diagnostic": 0.0028994510576487048,
+        "denominator": 265974560647594950097931075584,
+        "numerator": 771180221177318796983134077
+      },
+      "rho_lower": {
+        "decimal_diagnostic": 0.6377434923261613,
+        "denominator": 33246668965221916933594546176,
+        "numerator": 21202846774092430976883406277
+      },
+      "rho_upper": {
+        "decimal_diagnostic": 0.6377434923261613,
+        "denominator": 11082222988407305644531515392,
+        "numerator": 7067615591364143658961290435
+      },
+      "signed_orbit_cost_upper": {
+        "decimal_diagnostic": 0.06137011036521433,
+        "denominator": 6073785248044180593238932810014824371073264135432938302459007167815437254656,
+        "numerator": 372748871007082066252464362938418724848159982452403942812322421907953469715
+      }
+    },
+    {
+      "QCO1_certificate_upper": {
+        "decimal_diagnostic": 0.7112349140693889,
+        "denominator": 167035168106463010494663891208217685028885836988541236255925156122092339940294656,
+        "numerator": 118801243434766145779182593526222745566213534081706586540283651855574608693818425
+      },
+      "W_abs_lower": {
+        "decimal_diagnostic": 0.003371445227924608,
+        "denominator": 1208925819614629174706176,
+        "numerator": 4075827185454586809325
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.003371445227924608,
+        "denominator": 1208925819614629174706176,
+        "numerator": 4075827185454586809771
+      },
+      "W_box": [
+        -4075726049539569988877,
+        -4075726049539569988859,
+        28712624318049692179,
+        28712624318049692197
+      ],
+      "direct_certificate_upper": {
+        "decimal_diagnostic": 0.6816242835172408,
+        "denominator": 33246668965221916933594546176,
+        "numerator": 22661736912754274147990475115
+      },
+      "factors": {
+        "multiplicative_cosets": 8,
+        "nonresonant_factor_upper": {
+          "decimal_diagnostic": 2.645752170039477,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13292569518855361654965101022071304055970968108533795
+        },
+        "period_square_sum_exact": 192508,
+        "resonance_factor": {
+          "decimal_diagnostic": 0.12499943184142467,
+          "denominator": 220009,
+          "numerator": 27501
+        },
+        "total_factor_upper": {
+          "decimal_diagnostic": 2.7707516018809017,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13920581339609067297988843781204593107901558747039779
+        }
+      },
+      "h": 1,
+      "menu": "two",
+      "predicted_signed_abs_lower": {
+        "decimal_diagnostic": 0.01672206904723143,
+        "denominator": 604462909807314587353088,
+        "numerator": 10107870514288338388817
+      },
+      "predicted_signed_abs_upper": {
+        "decimal_diagnostic": 0.01672206904723143,
+        "denominator": 1208925819614629174706176,
+        "numerator": 20215741028576676777695
+      },
+      "predicted_signed_mean": [
+        19058543253846691106127,
+        19058543253846691106128,
+        6741521666191778503349,
+        6741521666191778503350
+      ],
+      "prediction_sums_sha256": "e192e11513ea8873ffe60947140c30a5b7d2a61bce3eef0c15d182b655dfedc9",
+      "retained_resonance_abs_upper": {
+        "decimal_diagnostic": 0.002090249130117002,
+        "denominator": 265974560647594950097931075584,
+        "numerator": 555953094026887188063390195
+      },
+      "rho_lower": {
+        "decimal_diagnostic": 0.6649022144700093,
+        "denominator": 5541111494203652822265757696,
+        "numerator": 3684297303121231159987767333
+      },
+      "rho_upper": {
+        "decimal_diagnostic": 0.6649022144700093,
+        "denominator": 4155833620652739616699318272,
+        "numerator": 2763222977340923369990885615
+      },
+      "signed_orbit_cost_upper": {
+        "decimal_diagnostic": 0.04424245046926253,
+        "denominator": 6073785248044180593238932810014824371073264135432938302459007167815437254656,
+        "numerator": 268719142997532070363476259144010731800843339066090118319340137931609702525
+      }
+    },
+    {
+      "QCO1_certificate_upper": {
+        "decimal_diagnostic": 0.6359674843322825,
+        "denominator": 11082222988407305644531515392,
+        "numerator": 7047933474746783743837071865
+      },
+      "W_abs_lower": {
+        "decimal_diagnostic": 0.007612765781358609,
+        "denominator": 1208925819614629174706176,
+        "numerator": 9203269111763159857145
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.007612765781358609,
+        "denominator": 604462909807314587353088,
+        "numerator": 4601634555881579928639
+      },
+      "W_box": [
+        -3680657228757141049812,
+        -3680657228757141049794,
+        8435219304080461431875,
+        8435219304080461431893
+      ],
+      "direct_certificate_upper": {
+        "decimal_diagnostic": 0.6359674843322825,
+        "denominator": 11082222988407305644531515392,
+        "numerator": 7047933474746783743837071865
+      },
+      "factors": {
+        "multiplicative_cosets": 8,
+        "nonresonant_factor_upper": {
+          "decimal_diagnostic": 2.645752170039477,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13292569518855361654965101022071304055970968108533795
+        },
+        "period_square_sum_exact": 192508,
+        "resonance_factor": {
+          "decimal_diagnostic": 0.12499943184142467,
+          "denominator": 220009,
+          "numerator": 27501
+        },
+        "total_factor_upper": {
+          "decimal_diagnostic": 2.7707516018809017,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13920581339609067297988843781204593107901558747039779
+        }
+      },
+      "h": 3,
+      "menu": "zero",
+      "predicted_signed_abs_lower": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      },
+      "predicted_signed_abs_upper": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      },
+      "predicted_signed_mean": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction_sums_sha256": "4309858285c3af3aa67848f1bfece1df105639e9e873411c6a0d8330b519ea02",
+      "retained_resonance_abs_upper": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      },
+      "rho_lower": {
+        "decimal_diagnostic": 0.6359674843322825,
+        "denominator": 8311667241305479233398636544,
+        "numerator": 5285950106060087807877668459
+      },
+      "rho_upper": {
+        "decimal_diagnostic": 0.6359674843322825,
+        "denominator": 11082222988407305644531515392,
+        "numerator": 7047933474746783743837071865
+      },
+      "signed_orbit_cost_upper": {
+        "decimal_diagnostic": 0.0,
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "QCO1_certificate_upper": {
+        "decimal_diagnostic": 0.6969214166371722,
+        "denominator": 167035168106463010494663891208217685028885836988541236255925156122092339940294656,
+        "numerator": 116410385984984410368899259087538895935453568305036458936672755295161949765040805
+      },
+      "W_abs_lower": {
+        "decimal_diagnostic": 0.007612765781358609,
+        "denominator": 1208925819614629174706176,
+        "numerator": 9203269111763159857145
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.007612765781358609,
+        "denominator": 604462909807314587353088,
+        "numerator": 4601634555881579928639
+      },
+      "W_box": [
+        -3680657228757141049812,
+        -3680657228757141049794,
+        8435219304080461431875,
+        8435219304080461431893
+      ],
+      "direct_certificate_upper": {
+        "decimal_diagnostic": 0.6596957263508346,
+        "denominator": 33246668965221916933594546176,
+        "numerator": 21932685431757822995886203117
+      },
+      "factors": {
+        "multiplicative_cosets": 8,
+        "nonresonant_factor_upper": {
+          "decimal_diagnostic": 2.645752170039477,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13292569518855361654965101022071304055970968108533795
+        },
+        "period_square_sum_exact": 192508,
+        "resonance_factor": {
+          "decimal_diagnostic": 0.12499943184142467,
+          "denominator": 220009,
+          "numerator": 27501
+        },
+        "total_factor_upper": {
+          "decimal_diagnostic": 2.7707516018809017,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13920581339609067297988843781204593107901558747039779
+        }
+      },
+      "h": 3,
+      "menu": "one",
+      "predicted_signed_abs_lower": {
+        "decimal_diagnostic": 0.021022536558372332,
+        "denominator": 1208925819614629174706176,
+        "numerator": 25414687239208778372963
+      },
+      "predicted_signed_abs_upper": {
+        "decimal_diagnostic": 0.021022536558372332,
+        "denominator": 1208925819614629174706176,
+        "numerator": 25414687239208778373011
+      },
+      "predicted_signed_mean": [
+        24763517151662705254485,
+        24763517151662705254486,
+        -5716165300803374646227,
+        -5716165300803374646226
+      ],
+      "prediction_sums_sha256": "73139885dc5cd3cbc8e4ed2df6f79f639664a84ae421d81bdc9fb1f0151e9b34",
+      "retained_resonance_abs_upper": {
+        "decimal_diagnostic": 0.002627805125662121,
+        "denominator": 265974560647594950097931075584,
+        "numerator": 698929313765480614036175511
+      },
+      "rho_lower": {
+        "decimal_diagnostic": 0.6386731897924622,
+        "denominator": 33246668965221916933594546176,
+        "numerator": 21233756117992342381849557731
+      },
+      "rho_upper": {
+        "decimal_diagnostic": 0.6386731897924622,
+        "denominator": 16623334482610958466797273088,
+        "numerator": 10616878058996171190925013803
+      },
+      "signed_orbit_cost_upper": {
+        "decimal_diagnostic": 0.055620421719047845,
+        "denominator": 6073785248044180593238932810014824371073264135432938302459007167815437254656,
+        "numerator": 337826496927148930776453707429339038680747605004466510788292258784809406745
+      }
+    },
+    {
+      "QCO1_certificate_upper": {
+        "decimal_diagnostic": 0.7395560777735476,
+        "denominator": 41758792026615752623665972802054421257221459247135309063981289030523084985073664,
+        "numerator": 30882968443765237017157617352086843474713989290388130309182707335929438730547203
+      },
+      "W_abs_lower": {
+        "decimal_diagnostic": 0.007612765781358609,
+        "denominator": 1208925819614629174706176,
+        "numerator": 9203269111763159857145
+      },
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.007612765781358609,
+        "denominator": 604462909807314587353088,
+        "numerator": 4601634555881579928639
+      },
+      "W_box": [
+        -3680657228757141049812,
+        -3680657228757141049794,
+        8435219304080461431875,
+        8435219304080461431893
+      ],
+      "direct_certificate_upper": {
+        "decimal_diagnostic": 0.6938414462477712,
+        "denominator": 8311667241305479233398636544,
+        "numerator": 5766979219437616746097256897
+      },
+      "factors": {
+        "multiplicative_cosets": 8,
+        "nonresonant_factor_upper": {
+          "decimal_diagnostic": 2.645752170039477,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13292569518855361654965101022071304055970968108533795
+        },
+        "period_square_sum_exact": 192508,
+        "resonance_factor": {
+          "decimal_diagnostic": 0.12499943184142467,
+          "denominator": 220009,
+          "numerator": 27501
+        },
+        "total_factor_upper": {
+          "decimal_diagnostic": 2.7707516018809017,
+          "denominator": 5024117401992728439548039005641823607366907231993856,
+          "numerator": 13920581339609067297988843781204593107901558747039779
+        }
+      },
+      "h": 3,
+      "menu": "two",
+      "predicted_signed_abs_lower": {
+        "decimal_diagnostic": 0.025816512873526692,
+        "denominator": 1208925819614629174706176,
+        "numerator": 31210248985219880242669
+      },
+      "predicted_signed_abs_upper": {
+        "decimal_diagnostic": 0.025816512873526692,
+        "denominator": 302231454903657293676544,
+        "numerator": 7802562246304970060677
+      },
+      "predicted_signed_mean": [
+        29846984734621243604751,
+        29846984734621243604752,
+        -9123439262180957651954,
+        -9123439262180957651953
+      ],
+      "prediction_sums_sha256": "3af07daa3a27e703b5eec6c175461e68b263f3e979948687512e1c7e0c1f2064",
+      "retained_resonance_abs_upper": {
+        "decimal_diagnostic": 0.003227049441317662,
+        "denominator": 66493640161898737524482768896,
+        "numerator": 214578264335632981638678177
+      },
+      "rho_lower": {
+        "decimal_diagnostic": 0.6680249333742445,
+        "denominator": 4155833620652739616699318272,
+        "numerator": 2776200477550991882229228125
+      },
+      "rho_upper": {
+        "decimal_diagnostic": 0.6680249333742445,
+        "denominator": 259739601290796226043707392,
+        "numerator": 173512529846936992639330585
+      },
+      "signed_orbit_cost_upper": {
+        "decimal_diagnostic": 0.06830409495798534,
+        "denominator": 1518446312011045148309733202503706092768316033858234575614751791953859313664,
+        "numerator": 103716101084205065716425336021891055744124266949885801630313553382655079215
+      }
+    }
+  ],
+  "source": {
+    "carry_sha256": "7c6431419bcf89060a351979f5dfb547b1891b81c986de763a5ee71619a45747",
+    "carry_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "denominator_bits": 952449,
+    "last": 110004,
+    "modular_checkpoints": [
+      55003,
+      110004
+    ],
+    "source_contract": "4,-2,-1,-1; poles7,4,3,2; literal U0=0",
+    "unwrapped_sha256": "b20a84b9e2284bbf3ad83a5494ad9fe4f9345e16dee8cc12a8e9d5b7d00330e7"
+  },
+  "unseen_feature_counts": {
+    "one": 0,
+    "two": 0,
+    "zero": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "RH": "OPEN",
+  "bits": 80,
+  "hashes": {
+    "SPECTRAL_PREREGISTRATION.md": "070e8c9d43ec424cdc5ec80fa06b2f16b0bdab1da1f7844247e6288983f8c898",
+    "intervals.py": "29427bced79d67139df4ddfb179aaf47ffe181797a0fe11695fd2bac5231a75a",
+    "run_spectral_probe.py": "eed7540f75951ab6b9ff8ed564434d386ee4446a3a315d4cbf7c972dcd68d379",
+    "source.py": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3"
+  },
+  "pi_normality": "OPEN",
+  "preregistered_at": "42f9ed6d",
+  "primes": [
+    {
+      "file": "spectral_281.json",
+      "p": 281,
+      "sha256": "5be2002961594b8fa8e7355d779a84f3b6cc7c5dd5c5139de7d902eecb4f321d"
+    },
+    {
+      "file": "spectral_617.json",
+      "p": 617,
+      "sha256": "322a07ccf32f21a06b38b03b946dc322781c94a05ff6b1235944f5179df58af6"
+    },
+    {
+      "file": "spectral_1009.json",
+      "p": 1009,
+      "sha256": "94fce2157ab42346e815e5c68c8f298ebc44ab3c5020f9704cea122af7608cdb"
+    },
+    {
+      "file": "spectral_1601.json",
+      "p": 1601,
+      "sha256": "367073fb74a5a0bd84f063321ccbe571c50d2b30d07f95604bb9d903b0af56b3"
+    },
+    {
+      "file": "spectral_2017.json",
+      "p": 2017,
+      "sha256": "ed75d6eab65119d1ffd162bff35b9314624953223dd333aa777934558c4c6b66"
+    }
+  ],
+  "scale": 1208925819614629174706176
+}

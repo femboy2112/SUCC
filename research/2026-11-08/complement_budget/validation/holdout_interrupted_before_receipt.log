@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/source_budget.py", line 188, in <module>
+    main()
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/source_budget.py", line 173, in main
+    source = json.loads(args.reuse_source.read_text()) if args.reuse_source else stream_source(args.A)
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/complement_budget/source_budget.py", line 67, in stream_source
+    floor, rem = divmod(unwrapped, den)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/_pylong.py", line 285, in int_divmod
+    return _divmod_pos(a, b)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/_pylong.py", line 265, in _divmod_pos
+    q_digit, r = _div2n1n((r << n) + a_digit, b, n)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/_pylong.py", line 190, in _div2n1n
+    q2, r = _div3n2n(r, a & mask, b, b1, b2, half_n)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/_pylong.py", line 202, in _div3n2n
+    r = (r << n | a3) - q * b2
+                        ~~^~~~
+KeyboardInterrupt

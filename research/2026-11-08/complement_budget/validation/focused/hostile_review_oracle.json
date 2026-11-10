@@ -1,0 +1,46 @@
+{
+  "exact_rational_CB1_checks": 240,
+  "fft": {
+    "independent_interval_DFT_outputs": 65,
+    "method": "mpmath interval direct sums, independent of inherited Taylor/Machin FFT phase engine",
+    "precision_decimal_digits": 65,
+    "rows": [
+      {
+        "largest_certified_radius_fraction": 0.00043368400981200753,
+        "length": 3,
+        "radius_integer": 21044
+      },
+      {
+        "largest_certified_radius_fraction": 3.6595763994202406e-05,
+        "length": 7,
+        "radius_integer": 650765
+      },
+      {
+        "largest_certified_radius_fraction": 1.3798890166452447e-05,
+        "length": 13,
+        "radius_integer": 17935277
+      },
+      {
+        "largest_certified_radius_fraction": 4.111094729078707e-06,
+        "length": 17,
+        "radius_integer": 170618222
+      },
+      {
+        "largest_certified_radius_fraction": 2.874846193447865e-06,
+        "length": 25,
+        "radius_integer": 421358469
+      }
+    ],
+    "wrong_scaling_rejections": 65,
+    "wrong_sign_rejections": 60
+  },
+  "reviewed_hashes": {
+    "research/2026-11-08/complement_budget/THEOREMS.md": "ee2247951f3d312cdfacf4662f420c8f2bf34fe8e9f843b30411457d4a6f8a77",
+    "research/2026-11-08/complement_budget/certified_fft.py": "5c1d5aec8a097e2d8b17a63010a654443834568376f5d609316539491274f23a",
+    "research/2026-11-08/complement_budget/hostile/THEOREMS.md": "401b6298624e3b70ef555bac5ae15d5af5f6fb2429146bf3e5b56e53d41dbf75",
+    "research/2026-11-08/complement_budget/hostile/review_oracle.py": "f3d8ec8e2e09a03009eb985048f523f3df03ea78ca1aab0c209e7f22323ef605",
+    "research/2026-11-08/complement_budget/model/THEOREMS.md": "36067496ebfb0b5be4cb01f5159446793b7191bebbabb720b713d70dcabfc60f",
+    "research/2026-11-08/complement_budget/resonance/THEOREMS.md": "4ce5800605ec09a4ae72eeefd91bd037afbe30018b1d795389f54fb877f0835d"
+  },
+  "scope": "finite independent checks and separately recorded paper review, not global certification"
+}

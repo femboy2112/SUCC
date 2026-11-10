@@ -1,0 +1,30 @@
+{
+  "RH": "OPEN",
+  "checks_counted": 73484,
+  "counts": {
+    "block_pair_identities": 10936,
+    "blocking_inequalities": 49104,
+    "constant_controls": 85,
+    "exact_phase_factorizations": 1680,
+    "finite_vdc_and_contraction": 10936,
+    "gaussian_sequences": 1364,
+    "order_degeneracies": 5,
+    "source_bounds": 365,
+    "source_lag_identities": 280,
+    "weight_identities": 93
+  },
+  "dependencies": {
+    "PREREGISTRATION.md": "00a45889f9a2e326dea12d35e049a919ad0321e7671ccdc4bfe20dce5ce9ec7e",
+    "THEOREMS.md": "2feaf94b8f3c0b7fe1b5e04b1eee1b09e97793c8a3d649a805a0351e0a7de016",
+    "exact_oracle.py": "72597b0f3066b3a0d921e1e120270a4154f46ffaf050f4e620990008a32bc18c"
+  },
+  "implementation": "independent literal four-pole Fraction recurrence; exact Gaussian rationals",
+  "pi_base16_normality": "OPEN",
+  "signed_control": {
+    "absolute_replacement": "235/256",
+    "aperture": 8,
+    "length": 32,
+    "signed_energy": "1/256"
+  },
+  "status": "CERTIFIED-FINITE"
+}

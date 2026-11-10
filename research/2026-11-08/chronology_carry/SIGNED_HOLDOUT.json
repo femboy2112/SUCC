@@ -1,0 +1,1378 @@
+{
+  "RH": "OPEN",
+  "code_sha256": "151c66bf090a6432501be98bf093fb0eb3871180849b3dceb4a1c27f23d8197f",
+  "interval_scale": 1208925819614629174706176,
+  "pi_normality": "OPEN",
+  "rows": [
+    {
+      "h": 1,
+      "menu": "zero",
+      "model_mean": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "poisson": null,
+      "windows": {
+        "diagonal": [
+          1208925819614629174706166,
+          1208925819614629174706186
+        ],
+        "length": 55002,
+        "mean": [
+          -4075726049539569988872,
+          -4075726049539569988864,
+          28712624318049692184,
+          28712624318049692192
+        ],
+        "rows": [
+          {
+            "H": 32,
+            "V_interval": [
+              36664578706436759077333,
+              36664578706436759082067
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.17415001772434321,
+              "denominator": 1208925819614629174706176,
+              "numerator": 210534452913303810381669
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.17415001772434321,
+              "denominator": 604462909807314587353088,
+              "numerator": 105267226456651905197631
+            },
+            "diagonal_interval": [
+              37800224668450628711003,
+              37800224668450628711006
+            ],
+            "signed_cross_term_interval": [
+              -1135645962013869633673,
+              -1135645962013869628936
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.17415001772434321,
+              "denominator": 604462909807314587353088,
+              "numerator": 105267226456651905197631
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 128,
+            "V_interval": [
+              9608408291700344990101,
+              9608408291700344990716
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.08915093413076658,
+              "denominator": 1208925819614629174706176,
+              "numerator": 107776866113446806457695
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.08915093413076658,
+              "denominator": 1208925819614629174706176,
+              "numerator": 107776866113446806461145
+            },
+            "diagonal_interval": [
+              9466540919752760662732,
+              9466540919752760662735
+            ],
+            "signed_cross_term_interval": [
+              141867371947584327366,
+              141867371947584327984
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.08915093413076658,
+              "denominator": 1208925819614629174706176,
+              "numerator": 107776866113446806461145
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 512,
+            "V_interval": [
+              2199401678199347439395,
+              2199401678199347439474
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.04265328155515227,
+              "denominator": 1208925819614629174706176,
+              "numerator": 51564653363316008882641
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.04265328155515227,
+              "denominator": 75557863725914323419136,
+              "numerator": 3222790835207250555223
+            },
+            "diagonal_interval": [
+              2383119982578293650665,
+              2383119982578293650668
+            ],
+            "signed_cross_term_interval": [
+              -183718304378946211273,
+              -183718304378946211191
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.04265328155515227,
+              "denominator": 75557863725914323419136,
+              "numerator": 3222790835207250555223
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          }
+        ]
+      }
+    },
+    {
+      "h": 1,
+      "menu": "one",
+      "model_mean": [
+        24140446156497471220841,
+        24140446156497471220842,
+        14268387110948810683136,
+        14268387110948810683137
+      ],
+      "poisson": {
+        "exceptional_interior_states": 0,
+        "finite_sum_identity_exact": true,
+        "mean_prediction": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.02319571389193971,
+            "denominator": 1208925819614629174706176,
+            "numerator": 28041897428359652266533
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.02319571389193971,
+            "denominator": 1208925819614629174706176,
+            "numerator": 28041897428359652266577
+          },
+          "im": {
+            "decimal_diagnostic": 0.011802533190578363,
+            "denominator": 307593478144,
+            "numerator": 3630382235
+          },
+          "re": {
+            "decimal_diagnostic": 0.01996850903903496,
+            "denominator": 461390217216,
+            "numerator": 9213274723
+          }
+        },
+        "pieces": {
+          "boundary": {
+            "abs_lower": {
+              "decimal_diagnostic": 1.887113941684113e-06,
+              "denominator": 604462909807314587353088,
+              "numerator": 1140690384328329803
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 1.8871139416845512e-06,
+              "denominator": 302231454903657293676544,
+              "numerator": 570345192164297379
+            },
+            "im": {
+              "decimal_diagnostic": 1.5390681759244177e-06,
+              "denominator": 461390217216,
+              "numerator": 710111
+            },
+            "re": {
+              "decimal_diagnostic": -1.0920019133481705e-06,
+              "denominator": 461390217216,
+              "numerator": -503839
+            }
+          },
+          "exception_defect": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "im": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "re": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "interior_mean": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.023115014237330558,
+              "denominator": 1208925819614629174706176,
+              "numerator": 27944337532268667282373
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.023115014237330558,
+              "denominator": 1208925819614629174706176,
+              "numerator": 27944337532268667282439
+            },
+            "im": {
+              "decimal_diagnostic": 0.012040005021103663,
+              "denominator": 4921495650304,
+              "numerator": 59254832341
+            },
+            "re": {
+              "decimal_diagnostic": 0.019731755174940545,
+              "denominator": 14764486950912,
+              "numerator": 291329241799
+            }
+          },
+          "last_prediction": {
+            "abs_lower": {
+              "decimal_diagnostic": 1.0139717645934753e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 1225816646577259091
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 1.0139717645942912e-06,
+              "denominator": 18889465931478580854784,
+              "numerator": 19153385102785083
+            },
+            "im": {
+              "decimal_diagnostic": 6.063197474970193e-08,
+              "denominator": 153796739072,
+              "numerator": 9325
+            },
+            "re": {
+              "decimal_diagnostic": 1.0121573509248767e-06,
+              "denominator": 307593478144,
+              "numerator": 311333
+            }
+          },
+          "signed_innovation": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.00033651954227935507,
+              "denominator": 604462909807314587353088,
+              "numerator": 203413581733204595019
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.00033651954227935507,
+              "denominator": 604462909807314587353088,
+              "numerator": 203413581733204596505
+            },
+            "im": {
+              "decimal_diagnostic": -0.00023907153067597562,
+              "denominator": 14764486950912,
+              "numerator": -3529768495
+            },
+            "re": {
+              "decimal_diagnostic": 0.00023683370865683941,
+              "denominator": 4921495650304,
+              "numerator": 1165576067
+            }
+          }
+        },
+        "poisson_identity_exact": true,
+        "scope": "Reference P is uniform append; actual transitions are measured, not assumed iid.",
+        "uniform_table_mean": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.023115434502675503,
+            "denominator": 604462909807314587353088,
+            "numerator": 13972422800947630387325
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.023115434502675503,
+            "denominator": 1208925819614629174706176,
+            "numerator": 27944845601895260774651
+          },
+          "im": {
+            "decimal_diagnostic": 0.012040223926305771,
+            "denominator": 268435456,
+            "numerator": 3232023
+          },
+          "re": {
+            "decimal_diagnostic": 0.019732113927602768,
+            "denominator": 268435456,
+            "numerator": 5296799
+          }
+        }
+      },
+      "windows": {
+        "diagonal": [
+          1215842809394851637967604,
+          1215842809394851637967624
+        ],
+        "length": 55002,
+        "mean": [
+          -28216172206037041209713,
+          -28216172206037041209705,
+          -14239674486630760990952,
+          -14239674486630760990944
+        ],
+        "rows": [
+          {
+            "H": 32,
+            "V_interval": [
+              36743157541100039405432,
+              36743157541100039410172
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.19753224925380677,
+              "denominator": 604462909807314587353088,
+              "numerator": 119400918164739793420209
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.19753224925380677,
+              "denominator": 1208925819614629174706176,
+              "numerator": 238801836329479586854057
+            },
+            "diagonal_interval": [
+              38016502427995158239853,
+              38016502427995158239856
+            ],
+            "signed_cross_term_interval": [
+              -1273344886895118834424,
+              -1273344886895118829681
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.17433653536186708,
+              "denominator": 151115727451828646838272,
+              "numerator": 26344992362639991823435
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 128,
+            "V_interval": [
+              10196854879967667231900,
+              10196854879967667232537
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.11503601368307706,
+              "denominator": 1208925819614629174706176,
+              "numerator": 139070007127013638227871
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.11503601368307706,
+              "denominator": 151115727451828646838272,
+              "numerator": 17383750890876704778923
+            },
+            "diagonal_interval": [
+              9520704678797017601278,
+              9520704678797017601281
+            ],
+            "signed_cross_term_interval": [
+              676150201170649630619,
+              676150201170649631259
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.09184029979113735,
+              "denominator": 1208925819614629174706176,
+              "numerator": 111028109698653985964807
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 512,
+            "V_interval": [
+              2978578271540948462268,
+              2978578271540948462359
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.07283261749390083,
+              "denominator": 604462909807314587353088,
+              "numerator": 44024615899246415158953
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.07283261749390083,
+              "denominator": 302231454903657293676544,
+              "numerator": 22012307949623207579717
+            },
+            "diagonal_interval": [
+              2396755241497482441635,
+              2396755241497482441637
+            ],
+            "signed_cross_term_interval": [
+              581823030043466020631,
+              581823030043466020724
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.049636903601961116,
+              "denominator": 1208925819614629174706176,
+              "numerator": 60007334370133178052291
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          }
+        ]
+      }
+    },
+    {
+      "h": 1,
+      "menu": "two",
+      "model_mean": [
+        19058543253846691106127,
+        19058543253846691106128,
+        6741521666191778503349,
+        6741521666191778503350
+      ],
+      "poisson": {
+        "exceptional_interior_states": 0,
+        "finite_sum_identity_exact": true,
+        "mean_prediction": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.01672206904723143,
+            "denominator": 604462909807314587353088,
+            "numerator": 10107870514288338388817
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.01672206904723143,
+            "denominator": 1208925819614629174706176,
+            "numerator": 20215741028576676777695
+          },
+          "im": {
+            "decimal_diagnostic": 0.005576456021380023,
+            "denominator": 461390217216,
+            "numerator": 2572922255
+          },
+          "re": {
+            "decimal_diagnostic": 0.01576485748308528,
+            "denominator": 922780434432,
+            "numerator": 14547502037
+          }
+        },
+        "pieces": {
+          "boundary": {
+            "abs_lower": {
+              "decimal_diagnostic": 2.43992903531539e-06,
+              "denominator": 604462909807314587353088,
+              "numerator": 1474846604410094487
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 2.4399290353157287e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 2949693208820598823
+            },
+            "im": {
+              "decimal_diagnostic": -5.4740473047732736e-08,
+              "denominator": 4921495650304,
+              "numerator": -269405
+            },
+            "re": {
+              "decimal_diagnostic": -2.439314899308123e-06,
+              "denominator": 14764486950912,
+              "numerator": -36015233
+            }
+          },
+          "exception_defect": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "im": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "re": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "interior_mean": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.017386119169941195,
+              "denominator": 302231454903657293676544,
+              "numerator": 5254632091859693657571
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.017386119169941195,
+              "denominator": 604462909807314587353088,
+              "numerator": 10509264183719387315171
+            },
+            "im": {
+              "decimal_diagnostic": 0.006630602577601953,
+              "denominator": 78743930404864,
+              "numerator": 522119707913
+            },
+            "re": {
+              "decimal_diagnostic": 0.01607209535963793,
+              "denominator": 236231791214592,
+              "numerator": 3796739875379
+            }
+          },
+          "last_prediction": {
+            "abs_lower": {
+              "decimal_diagnostic": 3.61981849325378e-06,
+              "denominator": 604462909807314587353088,
+              "numerator": 2188046019406508937
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 3.6198184932540084e-06,
+              "denominator": 302231454903657293676544,
+              "numerator": 1094023009703323533
+            },
+            "im": {
+              "decimal_diagnostic": -3.5986794648978985e-06,
+              "denominator": 922780434432,
+              "numerator": -3320791
+            },
+            "re": {
+              "decimal_diagnostic": -3.906303022363906e-07,
+              "denominator": 461390217216,
+              "numerator": -180233
+            }
+          },
+          "signed_innovation": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.001093709293207852,
+              "denominator": 302231454903657293676544,
+              "numerator": 330553350927859841379
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.001093709293207852,
+              "denominator": 1208925819614629174706176,
+              "numerator": 1322213403711439366431
+            },
+            "im": {
+              "decimal_diagnostic": -0.0010504931362839839,
+              "denominator": 236231791214592,
+              "numerator": -248159875243
+            },
+            "re": {
+              "decimal_diagnostic": -0.0003044079313511046,
+              "denominator": 78743930404864,
+              "numerator": -23970276961
+            }
+          }
+        },
+        "poisson_identity_exact": true,
+        "scope": "Reference P is uniform append; actual transitions are measured, not assumed iid.",
+        "uniform_table_mean": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.017386435275451455,
+            "denominator": 1208925819614629174706176,
+            "numerator": 21018910515551853279319
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.017386435275451455,
+            "denominator": 151115727451828646838272,
+            "numerator": 2627363814443981659915
+          },
+          "im": {
+            "decimal_diagnostic": 0.0066307231318205595,
+            "denominator": 4294967296,
+            "numerator": 28478739
+          },
+          "re": {
+            "decimal_diagnostic": 0.016072387574240565,
+            "denominator": 4294967296,
+            "numerator": 69030379
+          }
+        }
+      },
+      "windows": {
+        "diagonal": [
+          1306705418931510823385417,
+          1306705418931510823385437
+        ],
+        "length": 55002,
+        "mean": [
+          -23134269303386261094999,
+          -23134269303386261094991,
+          -6712809041873728811166,
+          -6712809041873728811158
+        ],
+        "rows": [
+          {
+            "H": 32,
+            "V_interval": [
+              36088762279189951497160,
+              36088762279189951501854
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.18949916384969923,
+              "denominator": 1208925819614629174706176,
+              "numerator": 229090431973284539787813
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.18949916384969923,
+              "denominator": 1208925819614629174706176,
+              "numerator": 229090431973284539801459
+            },
+            "diagonal_interval": [
+              40857559338784177815902,
+              40857559338784177815904
+            ],
+            "signed_cross_term_interval": [
+              -4768797059594226318744,
+              -4768797059594226314048
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.1727770948024678,
+              "denominator": 302231454903657293676544,
+              "numerator": 52218672736176965755941
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 128,
+            "V_interval": [
+              9701489339366870377713,
+              9701489339366870378334
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.1063037853425456,
+              "denominator": 604462909807314587353088,
+              "numerator": 64256695411687268690655
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.1063037853425456,
+              "denominator": 604462909807314587353088,
+              "numerator": 64256695411687268692419
+            },
+            "diagonal_interval": [
+              10232207897024662197285,
+              10232207897024662197287
+            ],
+            "signed_cross_term_interval": [
+              -530718557657791819574,
+              -530718557657791818951
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.08958171629531417,
+              "denominator": 1208925819614629174706176,
+              "numerator": 108297649794797860607143
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 512,
+            "V_interval": [
+              2631488289604552089722,
+              2631488289604552089808
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.06337735915801321,
+              "denominator": 604462909807314587353088,
+              "numerator": 38309262932555923802211
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.06337735915801321,
+              "denominator": 1208925819614629174706176,
+              "numerator": 76618525865111847605405
+            },
+            "diagonal_interval": [
+              2575870036584783292630,
+              2575870036584783292632
+            ],
+            "signed_cross_term_interval": [
+              55618253019768797090,
+              55618253019768797178
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.04665529011078178,
+              "denominator": 604462909807314587353088,
+              "numerator": 28201392418267585413855
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          }
+        ]
+      }
+    },
+    {
+      "h": 3,
+      "menu": "zero",
+      "model_mean": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "poisson": null,
+      "windows": {
+        "diagonal": [
+          1208925819614629174706166,
+          1208925819614629174706186
+        ],
+        "length": 55002,
+        "mean": [
+          -3680657228757141049807,
+          -3680657228757141049799,
+          8435219304080461431880,
+          8435219304080461431888
+        ],
+        "rows": [
+          {
+            "H": 32,
+            "V_interval": [
+              36095276400078127336874,
+              36095276400078127341580
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.17279268746937027,
+              "denominator": 604462909807314587353088,
+              "numerator": 104446770661161458069443
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.17279268746937027,
+              "denominator": 151115727451828646838272,
+              "numerator": 26111692665290364519063
+            },
+            "diagonal_interval": [
+              37800224668450628711003,
+              37800224668450628711006
+            ],
+            "signed_cross_term_interval": [
+              -1704948268372501374132,
+              -1704948268372501369423
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.17279268746937027,
+              "denominator": 151115727451828646838272,
+              "numerator": 26111692665290364519063
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 128,
+            "V_interval": [
+              8978056333348468310793,
+              8978056333348468311386
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.08617699308605967,
+              "denominator": 1208925819614629174706176,
+              "numerator": 104181591998488914527483
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.08617699308605967,
+              "denominator": 302231454903657293676544,
+              "numerator": 26045397999622228632731
+            },
+            "diagonal_interval": [
+              9466540919752760662732,
+              9466540919752760662735
+            ],
+            "signed_cross_term_interval": [
+              -488484586404292351942,
+              -488484586404292351346
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.08617699308605967,
+              "denominator": 302231454903657293676544,
+              "numerator": 26045397999622228632731
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 512,
+            "V_interval": [
+              2341590120967502682343,
+              2341590120967502682422
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.04401043002073505,
+              "denominator": 302231454903657293676544,
+              "numerator": 13301336296102350765181
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.04401043002073505,
+              "denominator": 604462909807314587353088,
+              "numerator": 26602672592204701530811
+            },
+            "diagonal_interval": [
+              2383119982578293650665,
+              2383119982578293650668
+            ],
+            "signed_cross_term_interval": [
+              -41529861610790968325,
+              -41529861610790968243
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.04401043002073505,
+              "denominator": 604462909807314587353088,
+              "numerator": 26602672592204701530811
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          }
+        ]
+      }
+    },
+    {
+      "h": 3,
+      "menu": "one",
+      "model_mean": [
+        24763517151662705254485,
+        24763517151662705254486,
+        -5716165300803374646227,
+        -5716165300803374646226
+      ],
+      "poisson": {
+        "exceptional_interior_states": 0,
+        "finite_sum_identity_exact": true,
+        "mean_prediction": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.021022536558372332,
+            "denominator": 1208925819614629174706176,
+            "numerator": 25414687239208778372963
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.021022536558372332,
+            "denominator": 1208925819614629174706176,
+            "numerator": 25414687239208778373011
+          },
+          "im": {
+            "decimal_diagnostic": -0.004728301114972897,
+            "denominator": 922780434432,
+            "numerator": -4363183757
+          },
+          "re": {
+            "decimal_diagnostic": 0.020483901286479762,
+            "denominator": 28836888576,
+            "numerator": 590691979
+          }
+        },
+        "pieces": {
+          "boundary": {
+            "abs_lower": {
+              "decimal_diagnostic": 2.3870997096290644e-06,
+              "denominator": 604462909807314587353088,
+              "numerator": 1442913236482579945
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 2.387099709629411e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 2885826472965578809
+            },
+            "im": {
+              "decimal_diagnostic": 2.306584449105859e-06,
+              "denominator": 922780434432,
+              "numerator": 2128471
+            },
+            "re": {
+              "decimal_diagnostic": 6.147464541217499e-07,
+              "denominator": 76898369536,
+              "numerator": 47273
+            }
+          },
+          "exception_defect": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "im": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "re": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "interior_mean": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.020233492518358317,
+              "denominator": 604462909807314587353088,
+              "numerator": 12230395763211397156295
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.020233492518358317,
+              "denominator": 18889465931478580854784,
+              "numerator": 382199867600356161135
+            },
+            "im": {
+              "decimal_diagnostic": -0.004423534164928483,
+              "denominator": 14764486950912,
+              "numerator": -65311212455
+            },
+            "re": {
+              "decimal_diagnostic": 0.019744026058080767,
+              "denominator": 14764486950912,
+              "numerator": 291510415093
+            }
+          },
+          "last_prediction": {
+            "abs_lower": {
+              "decimal_diagnostic": 1.3800060323392661e-06,
+              "denominator": 604462909807314587353088,
+              "numerator": 834162461859439865
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 1.3800060323398656e-06,
+              "denominator": 604462909807314587353088,
+              "numerator": 834162461859802183
+            },
+            "im": {
+              "decimal_diagnostic": -1.3676731245140003e-06,
+              "denominator": 461390217216,
+              "numerator": -631031
+            },
+            "re": {
+              "decimal_diagnostic": -1.8408387701085107e-07,
+              "denominator": 307593478144,
+              "numerator": -56623
+            }
+          },
+          "signed_innovation": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.0008001464488447605,
+              "denominator": 1208925819614629174706176,
+              "numerator": 967317701481386938721
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.0008001464488447605,
+              "denominator": 1208925819614629174706176,
+              "numerator": 967317701481386939971
+            },
+            "im": {
+              "decimal_diagnostic": -0.0003057058613690059,
+              "denominator": 4921495650304,
+              "numerator": -1504530067
+            },
+            "re": {
+              "decimal_diagnostic": 0.0007394445658218843,
+              "denominator": 14764486950912,
+              "numerator": 10917519643
+            }
+          }
+        },
+        "poisson_identity_exact": true,
+        "scope": "Reference P is uniform append; actual transitions are measured, not assumed iid.",
+        "uniform_table_mean": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.020233860393351833,
+            "denominator": 604462909807314587353088,
+            "numerator": 12230618130000423017599
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.020233860393351833,
+            "denominator": 1208925819614629174706176,
+            "numerator": 24461236260000846035199
+          },
+          "im": {
+            "decimal_diagnostic": -0.004423614591360092,
+            "denominator": 268435456,
+            "numerator": -1187455
+          },
+          "re": {
+            "decimal_diagnostic": 0.0197443850338459,
+            "denominator": 268435456,
+            "numerator": 5300093
+          }
+        }
+      },
+      "windows": {
+        "diagonal": [
+          1215843160709212999171336,
+          1215843160709212999171356
+        ],
+        "length": 55002,
+        "mean": [
+          -28444174380419846304292,
+          -28444174380419846304284,
+          14151384604883836078106,
+          14151384604883836078114
+        ],
+        "rows": [
+          {
+            "H": 32,
+            "V_interval": [
+              38230383108805389638621,
+              38230383108805389643458
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.1988523195478327,
+              "denominator": 1208925819614629174706176,
+              "numerator": 240397703391633783369907
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.1988523195478327,
+              "denominator": 1208925819614629174706176,
+              "numerator": 240397703391633783383557
+            },
+            "diagonal_interval": [
+              38016513412756649180595,
+              38016513412756649180597
+            ],
+            "signed_cross_term_interval": [
+              213869696048740458024,
+              213869696048740462863
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.17782978298946037,
+              "denominator": 604462909807314587353088,
+              "numerator": 107491508076212502505273
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 128,
+            "V_interval": [
+              10109810117386691401653,
+              10109810117386691402276
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.11247000194530758,
+              "denominator": 1208925819614629174706176,
+              "numerator": 135967889283789903618623
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.11247000194530758,
+              "denominator": 1208925819614629174706176,
+              "numerator": 135967889283789903622079
+            },
+            "diagonal_interval": [
+              9520707429777866519529,
+              9520707429777866519531
+            ],
+            "signed_cross_term_interval": [
+              589102687608824882122,
+              589102687608824882747
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.09144746538693525,
+              "denominator": 302231454903657293676544,
+              "numerator": 27638300511145281312267
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 512,
+            "V_interval": [
+              3228531204744512984453,
+              3228531204744512984544
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.07270017601285139,
+              "denominator": 604462909807314587353088,
+              "numerator": 43944559936232086235247
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.07270017601285139,
+              "denominator": 1208925819614629174706176,
+              "numerator": 87889119872464172471423
+            },
+            "diagonal_interval": [
+              2396755934033170854262,
+              2396755934033170854264
+            ],
+            "signed_cross_term_interval": [
+              831775270711342130189,
+              831775270711342130282
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.051677639454479056,
+              "denominator": 302231454903657293676544,
+              "numerator": 15618608158313848524603
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          }
+        ]
+      }
+    },
+    {
+      "h": 3,
+      "menu": "two",
+      "model_mean": [
+        29846984734621243604751,
+        29846984734621243604752,
+        -9123439262180957651954,
+        -9123439262180957651953
+      ],
+      "poisson": {
+        "exceptional_interior_states": 0,
+        "finite_sum_identity_exact": true,
+        "mean_prediction": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.025816512873526692,
+            "denominator": 1208925819614629174706176,
+            "numerator": 31210248985219880242669
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.025816512873526692,
+            "denominator": 302231454903657293676544,
+            "numerator": 7802562246304970060677
+          },
+          "im": {
+            "decimal_diagnostic": -0.007546732077481188,
+            "denominator": 922780434432,
+            "numerator": -6963976705
+          },
+          "re": {
+            "decimal_diagnostic": 0.024688847115644865,
+            "denominator": 922780434432,
+            "numerator": 22782385067
+          }
+        },
+        "pieces": {
+          "boundary": {
+            "abs_lower": {
+              "decimal_diagnostic": 4.7319277114500496e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 5720549586921927291
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 4.731927711450224e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 5720549586922138623
+            },
+            "im": {
+              "decimal_diagnostic": 4.526405030001528e-06,
+              "denominator": 461390217216,
+              "numerator": 2088439
+            },
+            "re": {
+              "decimal_diagnostic": 1.3794192150199957e-06,
+              "denominator": 14764486950912,
+              "numerator": 20366417
+            }
+          },
+          "exception_defect": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "im": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            },
+            "re": {
+              "decimal_diagnostic": 0.0,
+              "denominator": 1,
+              "numerator": 0
+            }
+          },
+          "interior_mean": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.024596104151240368,
+              "denominator": 1208925819614629174706176,
+              "numerator": 29734865370365044925087
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.024596104151240368,
+              "denominator": 1208925819614629174706176,
+              "numerator": 29734865370365044925149
+            },
+            "im": {
+              "decimal_diagnostic": -0.007877452498870322,
+              "denominator": 7382243475456,
+              "numerator": -58153272313
+            },
+            "re": {
+              "decimal_diagnostic": 0.02330051676565791,
+              "denominator": 236231791214592,
+              "numerator": 5504322811777
+            }
+          },
+          "last_prediction": {
+            "abs_lower": {
+              "decimal_diagnostic": 3.674643231439494e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 4442371080359339719
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 3.674643231439719e-06,
+              "denominator": 1208925819614629174706176,
+              "numerator": 4442371080359611855
+            },
+            "im": {
+              "decimal_diagnostic": -3.5487228356934925e-06,
+              "denominator": 76898369536,
+              "numerator": -272891
+            },
+            "re": {
+              "decimal_diagnostic": 9.5371332893692e-07,
+              "denominator": 76898369536,
+              "numerator": 73339
+            }
+          },
+          "signed_innovation": {
+            "abs_lower": {
+              "decimal_diagnostic": 0.0014246819156609812,
+              "denominator": 1208925819614629174706176,
+              "numerator": 1722334752580591778025
+            },
+            "abs_upper": {
+              "decimal_diagnostic": 0.0014246819156609812,
+              "denominator": 151115727451828646838272,
+              "numerator": 215291844072573972341
+            },
+            "im": {
+              "decimal_diagnostic": 0.0003297427391948269,
+              "denominator": 7382243475456,
+              "numerator": 2434241185
+            },
+            "re": {
+              "decimal_diagnostic": 0.0013859972174429989,
+              "denominator": 236231791214592,
+              "numerator": 327416605295
+            }
+          }
+        },
+        "poisson_identity_exact": true,
+        "scope": "Reference P is uniform append; actual transitions are measured, not assumed iid.",
+        "uniform_table_mean": {
+          "abs_lower": {
+            "decimal_diagnostic": 0.024596551345003232,
+            "denominator": 1208925819614629174706176,
+            "numerator": 29735405994451340902375
+          },
+          "abs_upper": {
+            "decimal_diagnostic": 0.024596551345003232,
+            "denominator": 151115727451828646838272,
+            "numerator": 3716925749306417612797
+          },
+          "im": {
+            "decimal_diagnostic": -0.007877595722675323,
+            "denominator": 134217728,
+            "numerator": -1057313
+          },
+          "re": {
+            "decimal_diagnostic": 0.023300940403714776,
+            "denominator": 4294967296,
+            "numerator": 100076777
+          }
+        }
+      },
+      "windows": {
+        "diagonal": [
+          1316262623178041037289365,
+          1316262623178041037289385
+        ],
+        "length": 55002,
+        "mean": [
+          -33527641963378384654558,
+          -33527641963378384654550,
+          17558658566261419083833,
+          17558658566261419083841
+        ],
+        "rows": [
+          {
+            "H": 32,
+            "V_interval": [
+              42240492552882475290122,
+              42240492552882475295188
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.21274033827958597,
+              "denominator": 1208925819614629174706176,
+              "numerator": 257187287819741929406335
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.21274033827958597,
+              "denominator": 604462909807314587353088,
+              "numerator": 128593643909870964709963
+            },
+            "diagonal_interval": [
+              41156390302487371143972,
+              41156390302487371143975
+            ],
+            "signed_cross_term_interval": [
+              1084102250395104146147,
+              1084102250395104151216
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.18692382540605929,
+              "denominator": 604462909807314587353088,
+              "numerator": 112988519417261024588609
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 128,
+            "V_interval": [
+              11435484296028335663163,
+              11435484296028335663823
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.12307498759336408,
+              "denominator": 151115727451828646838272,
+              "numerator": 18598566281295997385161
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.12307498759336408,
+              "denominator": 1208925819614629174706176,
+              "numerator": 148788530250367979084721
+            },
+            "diagonal_interval": [
+              10307045958723975995293,
+              10307045958723975995295
+            ],
+            "signed_cross_term_interval": [
+              1128438337304359667868,
+              1128438337304359668530
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.09725847471983738,
+              "denominator": 1208925819614629174706176,
+              "numerator": 117578281265148098842013
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          },
+          {
+            "H": 512,
+            "V_interval": [
+              3732882624119221214815,
+              3732882624119221214913
+            ],
+            "certificate_lower": {
+              "decimal_diagnostic": 0.08138420254664061,
+              "denominator": 1208925819614629174706176,
+              "numerator": 98387463767380484696469
+            },
+            "certificate_upper": {
+              "decimal_diagnostic": 0.08138420254664061,
+              "denominator": 1208925819614629174706176,
+              "numerator": 98387463767380484697391
+            },
+            "diagonal_interval": [
+              2594709872783127208123,
+              2594709872783127208125
+            ],
+            "signed_cross_term_interval": [
+              1138172751336094006690,
+              1138172751336094006790
+            ],
+            "sqrt_V_upper": {
+              "decimal_diagnostic": 0.055567689673113915,
+              "denominator": 1208925819614629174706176,
+              "numerator": 67177214782160604454683
+            },
+            "threshold_one_quarter": "PASS_FINITE"
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Finite signed residual certificate; actual all-epoch source estimates OPEN.",
+  "source_clock": {
+    "A": 55003,
+    "L": 55002,
+    "last": 110004,
+    "m": 27501,
+    "n0": 55003,
+    "p": 220009,
+    "q": 2
+  },
+  "source_file_sha256": "02cc3a15ab2e40c2db5006fae961586afbbdd4df048f80dab6da6e98974f11ca",
+  "table_file_sha256": "2462a0e3b814a5fb8664701a12832698b04cbd62c7c60ecf63abc669bc4f3887"
+}

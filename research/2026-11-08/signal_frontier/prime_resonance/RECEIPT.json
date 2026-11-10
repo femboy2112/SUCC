@@ -1,0 +1,1297 @@
+{
+  "RH": "OPEN",
+  "counts": {
+    "exact_power_lifting_histograms": 100,
+    "exact_source_coset_power_lifting_histograms": 18,
+    "hidden_alias_controls": 60,
+    "independent_direct_source_sums": 6,
+    "independent_polynomial_divisions": 100,
+    "independent_selector_candidates": 1254,
+    "nonvacuous_source_weil_corroborations": 18,
+    "numerical_weil_corroborations": 100,
+    "quotient_evaluation_checks": 1580,
+    "signed_mixture_identities": 10,
+    "source_principal_part_checks": 3188
+  },
+  "imports_read": [
+    {
+      "accessed": "2026-11-08",
+      "name": "Ford",
+      "pdf_sha256": "294868ae793281bbe89213f40bcca20984dd7651bb8e7497b08ef1703fe0e46c",
+      "scope": "downloaded and theorem statement inspected; imported proof not formalized",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v168-n2-p01.pdf"
+    },
+    {
+      "accessed": "2026-11-08",
+      "name": "Agrawal-Pollack",
+      "pdf_sha256": "9c68f10c9c2512d9eec7aa52d3a55af8ecf25fd45b13c2f43c58bc94b6a3189b",
+      "scope": "downloaded and theorem statement inspected; imported proof not formalized",
+      "url": "https://www.pollack-math.net/nearprimitive.pdf"
+    },
+    {
+      "accessed": "2026-11-08",
+      "name": "Kowalski",
+      "pdf_sha256": "ff30b82d143cedcaf76f1ef2f15a49856c0eabc2c95ba7ac0da2e3e43da9a866",
+      "scope": "downloaded and theorem statement inspected; imported proof not formalized",
+      "url": "https://people.math.ethz.ch/~kowalski/exponential-sums-elementary.pdf"
+    }
+  ],
+  "numerical_rows": [
+    {
+      "abs_mean": "0.9324722294043558045731159",
+      "h": 1,
+      "input_degree": 0,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2736629900720828635390779",
+      "h": 1,
+      "input_degree": 1,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.4457383557765382673964575",
+      "h": 3,
+      "input_degree": 0,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.8502171357296141521341439",
+      "h": 3,
+      "input_degree": 1,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.4457383557765382673964575",
+      "h": 1,
+      "input_degree": 0,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.7390089172206591159245343",
+      "h": 1,
+      "input_degree": 1,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.9829730996839017782819488",
+      "h": 3,
+      "input_degree": 0,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.09226835946330199523965111",
+      "h": 3,
+      "input_degree": 1,
+      "p": 17,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3186631201730152543095752",
+      "h": 1,
+      "input_degree": 0,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.5858608696782583207467664",
+      "h": 1,
+      "input_degree": 1,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3720548032676522512742299",
+      "h": 1,
+      "input_degree": 2,
+      "p": 41,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3082611170382111468378317",
+      "h": 1,
+      "input_degree": 3,
+      "p": 41,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.8721343100597943420673178",
+      "h": 1,
+      "input_degree": 4,
+      "p": 41,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1294876109125302386417189",
+      "h": 3,
+      "input_degree": 0,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.5858608696782583207467664",
+      "h": 3,
+      "input_degree": 1,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3639050893089995995256987",
+      "h": 3,
+      "input_degree": 2,
+      "p": 41,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.7417468636194381012650102",
+      "h": 3,
+      "input_degree": 3,
+      "p": 41,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.337877922362694890105695",
+      "h": 3,
+      "input_degree": 4,
+      "p": 41,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1294876109125302386417189",
+      "h": 1,
+      "input_degree": 0,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3186631201730152543095752",
+      "h": 1,
+      "input_degree": 1,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.8202031756098904830739762",
+      "h": 1,
+      "input_degree": 2,
+      "p": 41,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.4784642660245372166172722",
+      "h": 1,
+      "input_degree": 3,
+      "p": 41,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.4276106159004553295875165",
+      "h": 1,
+      "input_degree": 4,
+      "p": 41,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.5083835322289643544412407",
+      "h": 3,
+      "input_degree": 0,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3186631201730152543095752",
+      "h": 3,
+      "input_degree": 1,
+      "p": 41,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2794784678021982659015463",
+      "h": 3,
+      "input_degree": 2,
+      "p": 41,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1308223989092071608078049",
+      "h": 3,
+      "input_degree": 3,
+      "p": 41,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3188274413129861209787494",
+      "h": 3,
+      "input_degree": 4,
+      "p": 41,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 1,
+      "input_degree": 0,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 1,
+      "input_degree": 1,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2866627840430525569454606",
+      "h": 1,
+      "input_degree": 2,
+      "p": 73,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.4079424891251633230555804",
+      "h": 1,
+      "input_degree": 3,
+      "p": 73,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3036216987809124829015805",
+      "h": 1,
+      "input_degree": 4,
+      "p": 73,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.4708817940889464627171663",
+      "h": 1,
+      "input_degree": 5,
+      "p": 73,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 3,
+      "input_degree": 0,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 3,
+      "input_degree": 1,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3868719060613060988580599",
+      "h": 3,
+      "input_degree": 2,
+      "p": 73,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.4404854161891012268351458",
+      "h": 3,
+      "input_degree": 3,
+      "p": 73,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1694734839152400817584669",
+      "h": 3,
+      "input_degree": 4,
+      "p": 73,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1261028056405580572448488",
+      "h": 3,
+      "input_degree": 5,
+      "p": 73,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 1,
+      "input_degree": 0,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 1,
+      "input_degree": 1,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3040344691137752197686258",
+      "h": 1,
+      "input_degree": 2,
+      "p": 73,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.4903966515365978386380796",
+      "h": 1,
+      "input_degree": 3,
+      "p": 73,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2372005262257006589313622",
+      "h": 1,
+      "input_degree": 4,
+      "p": 73,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1983254760196749637389309",
+      "h": 1,
+      "input_degree": 5,
+      "p": 73,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 3,
+      "input_degree": 0,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3142696805273544552892642",
+      "h": 3,
+      "input_degree": 1,
+      "p": 73,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.949333749479725685319072",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2737991835971642054545428",
+      "h": 3,
+      "input_degree": 2,
+      "p": 73,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.4686540273295247851992307",
+      "h": 3,
+      "input_degree": 3,
+      "p": 73,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3208335122190718353599263",
+      "h": 3,
+      "input_degree": 4,
+      "p": 73,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3112101039854768198394862",
+      "h": 3,
+      "input_degree": 5,
+      "p": 73,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.09386328919988887244925465",
+      "h": 1,
+      "input_degree": 0,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.09386328919988887244925465",
+      "h": 1,
+      "input_degree": 1,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.0303202306101314501582705",
+      "h": 1,
+      "input_degree": 2,
+      "p": 137,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1871539979683639422954945",
+      "h": 1,
+      "input_degree": 3,
+      "p": 137,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1039988908306874309243126",
+      "h": 1,
+      "input_degree": 4,
+      "p": 137,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3332091020274817996363269",
+      "h": 1,
+      "input_degree": 5,
+      "p": 137,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2026215618451409881442179",
+      "h": 3,
+      "input_degree": 0,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1491644706910605752119424",
+      "h": 3,
+      "input_degree": 1,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1649495568196817264463065",
+      "h": 3,
+      "input_degree": 2,
+      "p": 137,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1894916276291087530430914",
+      "h": 3,
+      "input_degree": 3,
+      "p": 137,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.3563549238777585699725696",
+      "h": 3,
+      "input_degree": 4,
+      "p": 137,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.03204898940686917438258344",
+      "h": 3,
+      "input_degree": 5,
+      "p": 137,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2026215618451409881442179",
+      "h": 1,
+      "input_degree": 0,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2026215618451409881442179",
+      "h": 1,
+      "input_degree": 1,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.4824949522903800651109515",
+      "h": 1,
+      "input_degree": 2,
+      "p": 137,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1874360023345324153453096",
+      "h": 1,
+      "input_degree": 3,
+      "p": 137,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3312512645538964877305435",
+      "h": 1,
+      "input_degree": 4,
+      "p": 137,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1472856171508665124871253",
+      "h": 1,
+      "input_degree": 5,
+      "p": 137,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.3680986322263019569684075",
+      "h": 3,
+      "input_degree": 0,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.09386328919988887244925465",
+      "h": 3,
+      "input_degree": 1,
+      "p": 137,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.6885117594540955946530646",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1735109007206239452286594",
+      "h": 3,
+      "input_degree": 2,
+      "p": 137,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.5589846900745002777260714",
+      "h": 3,
+      "input_degree": 3,
+      "p": 137,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2345270368326673296942516",
+      "h": 3,
+      "input_degree": 4,
+      "p": 137,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2649990613315111565115918",
+      "h": 3,
+      "input_degree": 5,
+      "p": 137,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1038563555564646382017332",
+      "h": 1,
+      "input_degree": 0,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2021823980001159406391496",
+      "h": 1,
+      "input_degree": 1,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.09098589868013002862533408",
+      "h": 1,
+      "input_degree": 2,
+      "p": 281,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.9578888350994405787683255",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1062146530535728708706088",
+      "h": 1,
+      "input_degree": 3,
+      "p": 281,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1375143562888036264048377",
+      "h": 1,
+      "input_degree": 4,
+      "p": 281,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1458591178140725907717653",
+      "h": 1,
+      "input_degree": 5,
+      "p": 281,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2021823980001159406391496",
+      "h": 3,
+      "input_degree": 0,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2021823980001159406391496",
+      "h": 3,
+      "input_degree": 1,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1477842751273980187316436",
+      "h": 3,
+      "input_degree": 2,
+      "p": 281,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.9578888350994405787683255",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.09542466922146158189272846",
+      "h": 3,
+      "input_degree": 3,
+      "p": 281,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.04357865894785604463246955",
+      "h": 3,
+      "input_degree": 4,
+      "p": 281,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.1664653421272320758146178",
+      "h": 3,
+      "input_degree": 5,
+      "p": 281,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 1
+    },
+    {
+      "abs_mean": "0.2021823980001159406391496",
+      "h": 1,
+      "input_degree": 0,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1374472615937575415512659",
+      "h": 1,
+      "input_degree": 1,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2032485013948328641746541",
+      "h": 1,
+      "input_degree": 2,
+      "p": 281,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.9578888350994405787683255",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1912155367910772376466258",
+      "h": 1,
+      "input_degree": 3,
+      "p": 281,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.09872554091621401924455456",
+      "h": 1,
+      "input_degree": 4,
+      "p": 281,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2277306192999632617725677",
+      "h": 1,
+      "input_degree": 5,
+      "p": 281,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1374472615937575415512659",
+      "h": 3,
+      "input_degree": 0,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1374472615937575415512659",
+      "h": 3,
+      "input_degree": 1,
+      "p": 281,
+      "reduced_degree": 1,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.4789444175497202893841627",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1458888201390632576228648",
+      "h": 3,
+      "input_degree": 2,
+      "p": 281,
+      "reduced_degree": 2,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "0.9578888350994405787683255",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.02857282039761746791019223",
+      "h": 3,
+      "input_degree": 3,
+      "p": 281,
+      "reduced_degree": 3,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.1616450822808662386879356",
+      "h": 3,
+      "input_degree": 4,
+      "p": 281,
+      "reduced_degree": 4,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.2558554574282790659062209",
+      "h": 3,
+      "input_degree": 5,
+      "p": 281,
+      "reduced_degree": 5,
+      "scope": "80-digit corroboration; not an interval or proof",
+      "upper_bound": "1.0",
+      "xi": 3
+    },
+    {
+      "abs_mean": "0.04451072427270215113328756",
+      "h": 1,
+      "input_degree": 2,
+      "p": 4201,
+      "reduced_degree": 2,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.2469147493043627014895365",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.0397998003457873053459727",
+      "h": 1,
+      "input_degree": 3,
+      "p": 4201,
+      "reduced_degree": 3,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.3703721239565440522343048",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.0783242322564354504654393",
+      "h": 1,
+      "input_degree": 5,
+      "p": 4201,
+      "reduced_degree": 5,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.6172868732609067537238413",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.04451072427270215113328756",
+      "h": 3,
+      "input_degree": 2,
+      "p": 4201,
+      "reduced_degree": 2,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.2469147493043627014895365",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.0397998003457873053459727",
+      "h": 3,
+      "input_degree": 3,
+      "p": 4201,
+      "reduced_degree": 3,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.3703721239565440522343048",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.0783242322564354504654393",
+      "h": 3,
+      "input_degree": 5,
+      "p": 4201,
+      "reduced_degree": 5,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.6172868732609067537238413",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.01658644859432155159607863",
+      "h": 1,
+      "input_degree": 2,
+      "p": 4217,
+      "reduced_degree": 2,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.2464456636820374906150991",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.01658644859432155159607863",
+      "h": 1,
+      "input_degree": 3,
+      "p": 4217,
+      "reduced_degree": 3,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.3696684955230562359226486",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.01658644859432155159607863",
+      "h": 1,
+      "input_degree": 5,
+      "p": 4217,
+      "reduced_degree": 5,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.6161141592050937265377477",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.01658644859432155159607863",
+      "h": 3,
+      "input_degree": 2,
+      "p": 4217,
+      "reduced_degree": 2,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.2464456636820374906150991",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.01658644859432155159607863",
+      "h": 3,
+      "input_degree": 3,
+      "p": 4217,
+      "reduced_degree": 3,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.3696684955230562359226486",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.01658644859432155159607863",
+      "h": 3,
+      "input_degree": 5,
+      "p": 4217,
+      "reduced_degree": 5,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.6161141592050937265377477",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.03366716932510083235122455",
+      "h": 1,
+      "input_degree": 2,
+      "p": 4337,
+      "reduced_degree": 2,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.2430107132992908687846212",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.02400947880989125256335309",
+      "h": 1,
+      "input_degree": 3,
+      "p": 4337,
+      "reduced_degree": 3,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.3645160699489363031769317",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.02400947880989125256335309",
+      "h": 1,
+      "input_degree": 5,
+      "p": 4337,
+      "reduced_degree": 5,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.6075267832482271719615529",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.03366716932510083235122455",
+      "h": 3,
+      "input_degree": 2,
+      "p": 4337,
+      "reduced_degree": 2,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.2430107132992908687846212",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.02400947880989125256335309",
+      "h": 3,
+      "input_degree": 3,
+      "p": 4337,
+      "reduced_degree": 3,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.3645160699489363031769317",
+      "xi": 4
+    },
+    {
+      "abs_mean": "0.02400947880989125256335309",
+      "h": 3,
+      "input_degree": 5,
+      "p": 4337,
+      "reduced_degree": 5,
+      "scope": "80-digit nonvacuous source-coset corroboration; not an interval or proof",
+      "upper_bound": "0.6075267832482271719615529",
+      "xi": 4
+    }
+  ],
+  "pi_base16_normality": "OPEN",
+  "selections": [
+    {
+      "A": 137,
+      "p": null,
+      "split": "development"
+    },
+    {
+      "A": 1050,
+      "p": null,
+      "split": "development"
+    },
+    {
+      "A": 1051,
+      "L": 1050,
+      "eps_exact": "2/1051",
+      "k": 3,
+      "local_degree_one_squared_cap": "4201/275625",
+      "m": 525,
+      "p": 4201,
+      "split": "development"
+    },
+    {
+      "A": 1201,
+      "L": 1198,
+      "eps_exact": "10/1201",
+      "k": 3,
+      "local_degree_one_squared_cap": "4793/358801",
+      "m": 599,
+      "p": 4793,
+      "split": "development"
+    },
+    {
+      "A": 1601,
+      "L": 1582,
+      "eps_exact": "74/1601",
+      "k": 3,
+      "local_degree_one_squared_cap": "6329/625681",
+      "m": 791,
+      "p": 6329,
+      "split": "holdout"
+    },
+    {
+      "A": 2203,
+      "L": 2188,
+      "eps_exact": "58/2203",
+      "k": 3,
+      "local_degree_one_squared_cap": "8753/1196836",
+      "m": 1094,
+      "p": 8753,
+      "split": "holdout"
+    },
+    {
+      "A": 3001,
+      "L": 2974,
+      "eps_exact": "106/3001",
+      "k": 3,
+      "local_degree_one_squared_cap": "11897/2211169",
+      "m": 1487,
+      "p": 11897,
+      "split": "holdout"
+    }
+  ],
+  "source": {
+    "builder_sha256": "05e02a46f0a5b28564cc7f31c995d09ea496b2f1553789656533a57c4e8767e3",
+    "carry_sha256": "f82b1222a4e0b1af2fc43ab234c1c9d74feaa13af7d3770dc9ff3363065259df",
+    "last": 2168,
+    "primes": [
+      4201,
+      4217,
+      4337
+    ],
+    "scope": "shared exact common-denominator builder; separate direct modular sums and new clock formula",
+    "unwrapped_sha256": "4df69fa610977f5590acf9d84ada1e456d1ce04b62fbc3d7da1f45c7ff842d4a"
+  },
+  "status": "exact finite algebra and source checks; numerical bounds separately scoped"
+}

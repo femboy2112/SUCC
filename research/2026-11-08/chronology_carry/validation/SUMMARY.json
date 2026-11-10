@@ -1,0 +1,138 @@
+{
+  "RH": "OPEN",
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "a1fffc32c04bdafbce2513c5fabc175d8fd48499635f47c6d636a5a5da82621a",
+      "name": "root_tests",
+      "seconds": 1.4651494598947465,
+      "tests": 8
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/model",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0222c629c28d0d6554937907683094e2bc54a078879428677845436b51175dbb",
+      "name": "model_tests",
+      "seconds": 0.2718819440342486,
+      "tests": 8
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/theory",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "edca682ebbb41fac34ecae736829660888149a4076156a43d705a09e06e6d26d",
+      "name": "theory_tests",
+      "seconds": 0.85787224303931,
+      "tests": 13
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/crucible",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e1574e0848c23cf52001f819cca68ccede17a1379ac8acad182de7360a6101a1",
+      "name": "crucible_tests",
+      "seconds": 4.090013630921021,
+      "tests": 14
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "name": "verify_provenance",
+      "seconds": 1.1323830669280142,
+      "tests": null
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "name": "observer_foundations_probe",
+      "seconds": 0.15957120712846518,
+      "tests": null
+    },
+    {
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "name": "ordinal_succ_report_probe",
+      "seconds": 8.413094516145065,
+      "tests": null
+    },
+    {
+      "command": [
+        "lean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-learning-yoneda/research/2026-11-08/chronology_carry/CarryPoisson.lean"
+      ],
+      "exit_code": 0,
+      "log_sha256": "bcf9f8f3704667e259fbceba2f748780a567cbbf613dc0f2e21d02955a6d9bcb",
+      "name": "lean_kernel",
+      "seconds": 3.8823180440813303,
+      "tests": null
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "whitespace",
+      "seconds": 0.16738644987344742,
+      "tests": null
+    }
+  ],
+  "focused_tests": 43,
+  "native_suite": "Separate actual run; see native_corrected_environment.log and VALIDATION.md.",
+  "pi_normality": "OPEN",
+  "replays": [],
+  "starting_head": "19d98078b60e47092c9b9d050a70b6b7eabb7cd2"
+}

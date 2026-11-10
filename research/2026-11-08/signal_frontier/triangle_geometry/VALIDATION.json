@@ -1,0 +1,44 @@
+{
+  "commands": [
+    {
+      "name": "tests",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-08/signal_frontier/triangle_geometry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.12314431299455464
+    },
+    {
+      "name": "exact",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "research/2026-11-08/signal_frontier/triangle_geometry/oracle.py",
+        "--output",
+        "research/2026-11-08/signal_frontier/triangle_geometry/EXACT_RECEIPT.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.1870857779867947
+    },
+    {
+      "name": "numerical",
+      "command": [
+        "/tmp/succ-learning-yoneda-venv/bin/python",
+        "research/2026-11-08/signal_frontier/triangle_geometry/oracle.py",
+        "--numerical",
+        "--output",
+        "research/2026-11-08/signal_frontier/triangle_geometry/NUMERICAL_RECEIPT.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.09752317587845027
+    }
+  ],
+  "code_hash": "ef8aadc910877654bdca0d82340f1cd576c4be5d4b00d843b336f8497d8b2775"
+}

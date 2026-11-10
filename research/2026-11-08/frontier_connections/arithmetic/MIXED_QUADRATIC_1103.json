@@ -1,0 +1,436 @@
+{
+  "RH": "OPEN",
+  "code_sha256": "e0d039b67a316b810d3442363c03a33cb0af0f1d3bf8409267f4f64fd120c901",
+  "pi_normality": "OPEN",
+  "protocol_sha256": "c36cfac3eda768a4d9ad2cef99f61d70a07cf8722d05ac618f145a9d92cd1a7d",
+  "rows": [
+    {
+      "M_upper": {
+        "decimal_diagnostic": 0.70692898285884,
+        "denominator": 299040371755712512,
+        "numerator": 211400305838995227
+      },
+      "Q": 67108864,
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.02839617431163788,
+        "denominator": 67108864,
+        "numerator": 1905635
+      },
+      "center_sha256": "2d25178e99e8330dbe78e7d1aa939b09e335891e4e8edd11b3553ad1f45b851b",
+      "coefficients_evaluated": 19439281,
+      "correlation_L1_error": {
+        "decimal_diagnostic": 3.1036720260502193e-07,
+        "denominator": 2251799813685248,
+        "numerator": 698884809
+      },
+      "correlation_denominator": 2481483394681143296,
+      "direct_checks": [
+        {
+          "a": 0,
+          "b": 0,
+          "center_numerator": [
+            100199275585077248,
+            -26850575723266048
+          ],
+          "direct_box": [
+            48814960266125607135003,
+            48814960266125607135015,
+            -13081019105639830577788,
+            -13081019105639830577776
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.4839733136773416e-08,
+            "denominator": 666118126607660675263102976,
+            "numerator": 9885015236425131489
+          }
+        },
+        {
+          "a": 0,
+          "b": 644,
+          "center_numerator": [
+            123102106775772290,
+            169608408953708647
+          ],
+          "direct_box": [
+            59972722731442994180848,
+            59972722731442994180866,
+            82629601509098795105373,
+            82629601509098795105391
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 3.385582583818503e-10,
+            "denominator": 22969590572677954319417344,
+            "numerator": 7776544580030015
+          }
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "center_numerator": [
+            -16390635854843139,
+            10286230800006760
+          ],
+          "direct_box": [
+            -7985168718663872375415,
+            -7985168718663872375397,
+            5011232240089067857458,
+            5011232240089067857476
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 3.6808938098685976e-10,
+            "denominator": 666118126607660675263102976,
+            "numerator": 245191008887140483
+          }
+        },
+        {
+          "a": 1,
+          "b": 4408,
+          "center_numerator": [
+            5589143037022003,
+            -41588832260675869
+          ],
+          "direct_box": [
+            2722912140171095390763,
+            2722912140171095390781,
+            -20261193692757651270295,
+            -20261193692757651270276
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.503861605585352e-09,
+            "denominator": 166529531651915168815775744,
+            "numerator": 250437368847425811
+          }
+        },
+        {
+          "a": 436,
+          "b": 980,
+          "center_numerator": [
+            -224617233949459857,
+            -198182607557471079
+          ],
+          "direct_box": [
+            -109428729288875720824443,
+            -109428729288875720824425,
+            -96550341960197903435329,
+            -96550341960197903435311
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 6.430966489287733e-10,
+            "denominator": 166529531651915168815775744,
+            "numerator": 107094583753024741
+          }
+        },
+        {
+          "a": 1469,
+          "b": 881,
+          "center_numerator": [
+            56663900204349351,
+            -57970062738533557
+          ],
+          "direct_box": [
+            27605443601285660877919,
+            27605443601285660877938,
+            -28241779526237289241337,
+            -28241779526237289241319
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.139699497698528e-09,
+            "denominator": 333059063303830337631551488,
+            "numerator": 379587247151317691
+          }
+        },
+        {
+          "a": 4408,
+          "b": 4408,
+          "center_numerator": [
+            6090479059631054,
+            11937000577847387
+          ],
+          "direct_box": [
+            2967152351795092960025,
+            2967152351795092960043,
+            5815452099467291888999,
+            5815452099467291889017
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 7.638117200574568e-10,
+            "denominator": 166529531651915168815775744,
+            "numerator": 127197208011412023
+          }
+        }
+      ],
+      "direct_terms": 3857,
+      "energy_lower": {
+        "decimal_diagnostic": 0.49939167213537905,
+        "denominator": 1208925819614629174706176,
+        "numerator": 603727486544983258951143
+      },
+      "h": 1,
+      "input_radius_units": 2,
+      "linear_extremum": [
+        0,
+        644,
+        123102106775772290,
+        169608408953708647
+      ],
+      "linear_modulus_upper": {
+        "decimal_diagnostic": 0.08445532352998769,
+        "denominator": 620370848670285824,
+        "numerator": 52393620733022027
+      },
+      "linear_weight_lower": {
+        "decimal_diagnostic": 0.12050871361729887,
+        "denominator": 36976984064,
+        "numerator": 4456048783
+      },
+      "m": 551,
+      "maximum_product_center_L1": 94905033,
+      "nonlinear_L1_extremum": [
+        436,
+        980,
+        -224617233949459857,
+        -198182607557471079
+      ],
+      "nonlinear_L1_upper": {
+        "decimal_diagnostic": 0.17038220468620865,
+        "denominator": 1240741697340571648,
+        "numerator": 211400305838995227
+      },
+      "nonresonant_atoms": 19439280,
+      "overflow_bound": 4962902246371518312,
+      "overflow_limit": 9223372036854775807,
+      "p": 4409,
+      "product_radius_units": 9,
+      "quadratic_weight_lower": {
+        "decimal_diagnostic": 0.24101742723459774,
+        "denominator": 18488492032,
+        "numerator": 4456048783
+      },
+      "rho_plus_atomwise_budget_lower": {
+        "decimal_diagnostic": 0.4848183432358378,
+        "denominator": 1243254687918245875286016,
+        "numerator": 602752678016712498605543
+      },
+      "root_center_L1": 94906264,
+      "root_radius_units": 2
+    },
+    {
+      "M_upper": {
+        "decimal_diagnostic": 0.7351616081808283,
+        "denominator": 299040371755712512,
+        "numerator": 219843000610922363
+      },
+      "Q": 67108864,
+      "W_abs_upper": {
+        "decimal_diagnostic": 0.05079841613769531,
+        "denominator": 524288,
+        "numerator": 26633
+      },
+      "center_sha256": "9f94b8604b99884a0861613d7c36ed1499360024c635e707907837a4849d7bc2",
+      "coefficients_evaluated": 19439281,
+      "correlation_L1_error": {
+        "decimal_diagnostic": 3.1036748238122414e-07,
+        "denominator": 2251799813685248,
+        "numerator": 698885439
+      },
+      "correlation_denominator": 2481483394681143296,
+      "direct_checks": [
+        {
+          "a": 0,
+          "b": 0,
+          "center_numerator": [
+            17886390498885632,
+            -27960783967092736
+          ],
+          "direct_box": [
+            8713877287648395140339,
+            8713877287648395140351,
+            -13621888890638298352397,
+            -13621888890638298352384
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.5029337528734523e-08,
+            "denominator": 666118126607660675263102976,
+            "numerator": 10011314158794849241
+          }
+        },
+        {
+          "a": 0,
+          "b": 969,
+          "center_numerator": [
+            21363097320676102,
+            -218801792399732922
+          ],
+          "direct_box": [
+            10407646151707793364801,
+            10407646151707793364820,
+            -106595570198670067604774,
+            -106595570198670067604756
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 7.833002461402928e-10,
+            "denominator": 333059063303830337631551488,
+            "numerator": 260885246265145675
+          }
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "center_numerator": [
+            96924948385883583,
+            -16699768666095329
+          ],
+          "direct_box": [
+            47219770234028358725145,
+            47219770234028358725163,
+            -8135771637713584890935,
+            -8135771637713584890917
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.255949722083039e-09,
+            "denominator": 333059063303830337631551488,
+            "numerator": 418305437993683063
+          }
+        },
+        {
+          "a": 1,
+          "b": 4406,
+          "center_numerator": [
+            -96921000413737905,
+            9457105338765440
+          ],
+          "direct_box": [
+            -47217845077559939028690,
+            -47217845077559939028671,
+            4607301430228497546012,
+            4607301430228497546031
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.5137056376288505e-09,
+            "denominator": 41632382912978792203943936,
+            "numerator": 63019172723299025
+          }
+        },
+        {
+          "a": 1469,
+          "b": 881,
+          "center_numerator": [
+            35005133911019280,
+            -65154358661349486
+          ],
+          "direct_box": [
+            17053754258101835938015,
+            17053754258101835938033,
+            -31741815291217325046859,
+            -31741815291217325046841
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.1039262108744606e-09,
+            "denominator": 166529531651915168815775744,
+            "numerator": 183836314875197277
+          }
+        },
+        {
+          "a": 1474,
+          "b": 408,
+          "center_numerator": [
+            -250779201459712573,
+            -154392294863318462
+          ],
+          "direct_box": [
+            -122174281627233768793904,
+            -122174281627233768793886,
+            -75216634886725965520642,
+            -75216634886725965520623
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 5.621875919849436e-10,
+            "denominator": 666118126607660675263102976,
+            "numerator": 374483345575082501
+          }
+        },
+        {
+          "a": 4408,
+          "b": 4408,
+          "center_numerator": [
+            -19137222957464380,
+            12872451649626195
+          ],
+          "direct_box": [
+            -9323247305271159776380,
+            -9323247305271159776361,
+            6271185329445526762522,
+            6271185329445526762540
+          ],
+          "direct_distance_upper": {
+            "decimal_diagnostic": 1.174210524690025e-09,
+            "denominator": 83264765825957584407887872,
+            "numerator": 97770364368689715
+          }
+        }
+      ],
+      "direct_terms": 3857,
+      "energy_lower": {
+        "decimal_diagnostic": 0.48935013755153733,
+        "denominator": 604462909807314587353088,
+        "numerator": 295794008059011888892985
+      },
+      "h": 3,
+      "input_radius_units": 2,
+      "linear_extremum": [
+        0,
+        969,
+        21363097320676102,
+        -218801792399732922
+      ],
+      "linear_modulus_upper": {
+        "decimal_diagnostic": 0.08859337970269632,
+        "denominator": 2481483394681143296,
+        "numerator": 219843000610922363
+      },
+      "linear_weight_lower": {
+        "decimal_diagnostic": 0.12050871361729887,
+        "denominator": 36976984064,
+        "numerator": 4456048783
+      },
+      "m": 551,
+      "maximum_product_center_L1": 94905663,
+      "nonlinear_L1_extremum": [
+        1474,
+        408,
+        -250779201459712573,
+        -154392294863318462
+      ],
+      "nonlinear_L1_upper": {
+        "decimal_diagnostic": 0.16327825016409073,
+        "denominator": 2481483394681143296,
+        "numerator": 405172266494784813
+      },
+      "nonresonant_atoms": 19439280,
+      "overflow_bound": 4962935191182940632,
+      "overflow_limit": 9223372036854775807,
+      "p": 4409,
+      "product_radius_units": 9,
+      "quadratic_weight_lower": {
+        "decimal_diagnostic": 0.24101742723459774,
+        "denominator": 18488492032,
+        "numerator": 4456048783
+      },
+      "rho_plus_atomwise_budget_lower": {
+        "decimal_diagnostic": 0.46323790652312247,
+        "denominator": 635168668239508742864896,
+        "numerator": 294234204164349743385657
+      },
+      "root_center_L1": 94906264,
+      "root_radius_units": 2
+    }
+  ],
+  "scope": "Complete mixed-quadratic atomwise PR8 budget, finite only; unrestricted free resonance.",
+  "source_interval": [
+    1103,
+    2204
+  ],
+  "source_receipt_sha256": "cdb812fa6940bf68e813a65a4e6657c775d689d4331d82a73c6dcc2b9eb3bea5",
+  "source_reused_development": true,
+  "source_selector_A": 1103
+}
