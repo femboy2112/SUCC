@@ -111,6 +111,36 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 | 3 | Quantified seed-blindness obstruction (ratio ~25.6) | PROVED (obstruction) |
 | 4 | Lag-1 source autocorrelation bound r(n)r(n+1) < (15/4)²/(n(n+1))² | PROVED (new elementary inequality) |
 | 5 | Uniform lag-k bound r(n)r(n+k) < (15/4)²/(n(n+k))² | PROVED (uniform two-time correlation) |
+| 6 | Zero-seed/shadow separation gap: |s_A+π/16| ≤ r(N+1)/(15·16^N)+1/D | PROVED (quantified obstruction) |
+
+---
+
+## Attack 5 (quantified obstruction): the exact separation gap and the Diophantine wall
+
+**Theorem F-8 (PROVED).**  Both the zero-seed completed orbit `16^(n−1)π` and the
+PPP-08 p-integral shadow orbit `16^n(s_A+π/16)` are **irrational** at every `n`
+(the shadow does not rationalise the orbit: `s_A+π/16` is rational + irrational).
+The shadow is an *astronomically close* approximation, with exact gap bound
+
+    0 < |s_A + π/16| ≤ r(N+1)/(15·16^N) + 1/D,
+    N = 2A+16,  D = p·16^(2A+48)+1,
+
+and the scaled completed-digit gap obeys `16^n|s_A+π/16| < 1/16` on `[A,2A+8)`,
+so every completed hexadecimal digit of the shadow vanishes on the epoch.
+
+**Theorem F-9 (quantified obstruction, PROVED as a reduction).**  Separating the
+two orbits on *every* epoch requires a lower bound on `|16^(n−1)π − m|` for the
+shadow-forced integers `m`, i.e. an **effective irrationality (transcendence)
+measure** `|π − m/q| > c q^{−μ}` with explicit `c, μ`.  No finite arithmetic
+(forcing, CRT, carries, local prime marginals) supplies such a measure.  This
+pins the entire zero-seed-selectivity gap onto a **Diophantine input of a
+different type**, and explains precisely why every finite-precision attack so
+far has been seed-blind.
+
+**Receipt:** `observational_succ/zero_seed_selectivity_gap.py` +
+`tests/test_zero_seed_selectivity_gap.py` (4/4, exit 0).  The gap bound is exact
+rational algebra; no π oracle is used to compute it (only the classical
+irrationality of π is cited).
 
 ---
 
