@@ -6,7 +6,7 @@
 
 Let `ω_k = λx. x x ... x` with `k≥2` left-associated copies, and let `E_k(m)` be the left-associated application of `m` copies of `ω_k`.
 
-**Finitary theorem (already in [OMEGA_INTERPRETER](../scott_omega_causal_weld/OMEGA_INTERPRETER.md)):** the unique beta-redex of `E_k(m)`, for `m≥2`, is at the left-child address `f^(m-2)`, and
+**Finitary theorem (already in [OMEGA_INTERPRETER](../../2026-11-09/scott_omega_causal_weld/OMEGA_INTERPRETER.md)):** the unique beta-redex of `E_k(m)`, for `m≥2`, is at the left-child address `f^(m-2)`, and
 ```math
 E_k(m)\to_\beta E_k(m+k-2).
 ```
@@ -38,6 +38,6 @@ Thus `Ω₃` supplies **topologically stabilizing syntax**, not a productive ari
 
 - Kennaway, Severi, Sleep, de Vries, *Infinitary Rewriting: From Syntax to Semantics*, **Example 37(3)**: `Ω₃` reduces to an infinite left spine; Lemma 38 distinguishes weak-head/head undefinedness. [Primary PDF](https://www.cs.le.ac.uk/people/fdv1/fdv1/Distribution/kssv2005.pdf).
 - Endrullis, Hendriks, Klop, Polonsky, *Discriminating Lambda-Terms Using Clocked Böhm Trees*, *Logical Methods in Computer Science* **10(2:4)**, 2014: computational clocks distinguish certain extensionally identical infinite terms. [Publisher](https://lmcs.episciences.org/880).
-- [Current SUCC exact growth law, corrected redex addresses and separate rational evaluator](../scott_omega_causal_weld/OMEGA_INTERPRETER.md).
+- [Current SUCC exact growth law, corrected redex addresses and separate rational evaluator](../../2026-11-09/scott_omega_causal_weld/OMEGA_INTERPRETER.md).
 
 **Claims:** infinite-left-spine convergence = **CLASSICAL, reconstructed proof**; exact finite rational carry cocycle = **PROVED** in [README](README.md), finite tested; source-faithful guarded omega compiler = **UNVERIFIED**; original-zero parity balance and pi normality = **OPEN**.
