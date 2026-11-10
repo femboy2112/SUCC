@@ -1,5 +1,12 @@
 # Local validation receipts, limits, and replay commands
 
+**Historical initial-round scope:** additive-file statements and validation counts
+below describe the original causal-weld submission, not the complete current
+branch. Later DeepSeek additions are audited and repaired in the
+[Cayley follow-up](../cayley_source_observer/README.md); its
+[validation record](../cayley_source_observer/VALIDATION.md) owns current execution
+status. No inherited count is promoted to a fresh run.
+
 ## Actual execution on exported artifacts in this response
 
 Four historical local scripts were re-executed from their previous files with `python`, with exit code 0:

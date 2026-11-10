@@ -1,4 +1,4 @@
-"""Exact tests for the syntactic C-monoid and SUCC source-action embedding."""
+"""Finite lambda-identity and separate arithmetic-action regression tests."""
 import unittest
 from fractions import Fraction as Q
 
@@ -12,15 +12,12 @@ class CMonoidTests(unittest.TestCase):
             self.assertTrue(v, k)
 
     def test_karoubi_object_idempotent(self):
-        # A genuine idempotent retract: the projector p = <p1, p1> is idempotent
-        # only as a retract; test the Karoubi arrow law f a e = a on a projector.
-        e = cm.pair(cm.PROJ1, cm.PROJ1)  # not idempotent in general
-        # The split idempotent: idempotent means e∘e = e.  PROJ1∘PROJ1 is a
-        # different morphism; test the actual retract structure instead.
-        # Karoubi: id_e = e, and arrows a: e -> f satisfy f∘a∘e = a.
-        # Verify composition is well-defined on the identity idempotent id.
-        idem = cm.ID  # ID is idempotent: id∘id = id
-        self.assertTrue(cm.eq(cm.compose(idem, idem), idem))
+        # e(x)=<fst x,fst x> is an actual idempotent: its first component
+        # stays fst x on a second application.  PROJ1 alone is not idempotent.
+        e = cm.pair(cm.PROJ1, cm.PROJ1)
+        self.assertTrue(cm.idempotent_retract(e))
+        self.assertTrue(cm.idempotent_retract(cm.ID))
+        self.assertFalse(cm.idempotent_retract(cm.PROJ1))
 
     def test_affine_relation(self):
         self.assertTrue(cm.verify_affine_relation())

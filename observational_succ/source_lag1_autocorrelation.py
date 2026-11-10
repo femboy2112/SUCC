@@ -14,9 +14,11 @@ is a degree-8 polynomial in t = n-1 with all positive coefficients:
     + 189263771 t^4 + 119749987 t^3 + (172106417/4) t^2
     + 7679368 t + 7335831/16  >  0.
 
-Hence D(n) > 0 for all n >= 1, and the bound follows.  This is a NEW
-elementary arithmetic inequality for the source forcing; it gives a clean
-two-time (lag-1) second-moment control, a concrete "proved bound" deliverable.
+Hence D(n) > 0 for all n >= 1, and the bound follows.  The legacy bound is
+valid but NOT asymptotically sharp: n^2 r(n) tends to 15/64, so the lag
+constant is 225/4096.  The positive three-difference source decomposition
+below supplies a simple tighter envelope with the correct asymptotic
+constant.  It reuses the original source; no novelty priority is claimed.
 It does NOT bound any signed Weyl mean and does NOT advance normality/parity.
 """
 from __future__ import annotations
@@ -24,6 +26,36 @@ from __future__ import annotations
 from fractions import Fraction as Q
 
 from observational_succ import duck_bbp
+
+
+SOURCE_ASYMPTOTIC_CONSTANT = Q(15, 64)
+LAG_ASYMPTOTIC_CONSTANT = SOURCE_ASYMPTOTIC_CONSTANT**2
+
+
+def source_envelope(n: int) -> tuple[Q, Q]:
+    """Strict bounds 15/[p(p+5)] < r(n) < 15/[p(p+3)], p=8n-7.
+
+    r(n)=6/[p(p+3)]+4/[p(p+4)]+5/[p(p+5)].  Positivity gives
+    the envelope and its exact leading constant without extrapolation.
+    """
+    if type(n) is not int or n < 1:
+        raise ValueError('integer n>=1 required')
+    p = 8*n-7
+    return Q(15, p*(p+5)), Q(15, p*(p+3))
+
+
+def sharp_lag_envelope(n: int, k: int) -> tuple[Q, Q]:
+    """Asymptotically exact bounds, uniformly over all integer lags k>=1.
+
+    The ratio of either envelope to the true product tends to one as
+    n->infinity, uniformly k>=1.  A paper squeeze, not finite tests, proves
+    n^2(n+k)^2 r(n)r(n+k) -> 225/4096 uniformly in these lags.
+    """
+    if type(k) is not int or k < 1:
+        raise ValueError('integer k>=1 required')
+    low, high = source_envelope(n)
+    low2, high2 = source_envelope(n+k)
+    return low*low2, high*high2
 
 
 def lag1_bound(n: int) -> Q:

@@ -1,0 +1,18 @@
+{
+  "command": "python -m unittest discover -s tests -p 'test_*.py'",
+  "completion_observed_utc": "2026-11-10 05:40:33 UTC",
+  "earlier_environment_failure_retained": "FULL_TEST_PREINSTALL_LOG.txt",
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "protected_paths_changed": [],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "raw_log_sha256": "1454552bcedfc7d0588e280b5161dbd1423824374cf3c1b36ae65c872bdbaf09",
+  "reported_seconds": "1052.897",
+  "selected_original_zero_signed_cancellation_proved": false,
+  "status": "PASS",
+  "tested_python_file_count": 24,
+  "tested_source_manifest": "TESTED_SOURCE_HASHES.json",
+  "tested_source_manifest_sha256": "cbe5e1901ac8b3252ef3a9082ba6e89add5efbd19106a4dcf915f824d6a10aa8",
+  "tests_run": 12946
+}

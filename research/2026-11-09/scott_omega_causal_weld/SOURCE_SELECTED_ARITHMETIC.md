@@ -1,5 +1,7 @@
 # Front F — Source-selected arithmetic offensive: three attacks on the signed gap
 
+**Audit correction (Cayley follow-up, 2026-11-09):** the corrected statements below supersede the parent draft at `afabc458323ef2e3a20ce2bae77239c4190819c5`. F-1 needs a genuine finite-complement split; F-2 does not prove rare crossings. F-4/F-11 require paid boundary reconstruction. F-6/F-7 are nonsharp upper inequalities, with true lag constant 225/4096. F-9 universal necessity is withdrawn. F-10's integration sign is corrected. See [errata](../cayley_source_observer/ERRATA.md), [covariance audit](../cayley_source_observer/SIGNED_COVARIANCE_AUDIT.md), and [boundary proofs](../cayley_source_observer/BOUNDARY_PROOFS.md).
+
 **Status of targets:** π base-16 normality **OPEN**, original-zero parity balance
 **OPEN**, RH **OPEN**.  This document delivers three *independently motivated*
 attacks, each returning a proved structural bound, a hostile counterexample, or a
@@ -27,14 +29,20 @@ indicator.  Then for every finite epoch `[A,2A)`:
 an **exact** identity (verified in
 `observational_succ/signed_covariance_decomposition.py`).  The first term is the
 *tail-boundary coupling* and vanishes whenever no boundary crossing occurs on the
-epoch; the second is the *boundary-free* term carried entirely by finite CRT data
-(old prime powers + winding).
+epoch; the second still depends on the future mask `1-eps`. To isolate the genuinely
+finite CRT sign c, use instead
+
+    Cov_A(a,b) = Cov_A(a,c) + 2 Cov_A(a,b eps).
+
+This follows from `b-c=2b eps`. The absolute correction is at most
+`4 E_A[eps]`; its smallness requires an occupation estimate. The repaired
+`tail_boundary_coupling` returns this exact covariance difference.
 
 **Theorem F-2 (boundary control, PROVED).**  `ε_n = 1` only if `{U_n} ≥ 1 - T_n`,
-and `T_n ≤ r(n+1)/15 < 1/16` for all `n ≥ 2`.  Hence the boundary indicator is a
-rare event controlled by the sharp tail budget; on the frozen A=512 holdout the
-crossing count is **0**, so the entire epoch is boundary-free and `b_n = c_n` is
-purely finite-CRT.
+and `T_n ≤ r(n+1)/15 < 1/16` for all `n ≥ 2`.  This locates crossings in a narrow strip but does not prove they are rare.
+The historical A=512 receipt reports crossing count zero; that finite observation
+provides no all-epoch frequency bound. Synthetic repetition of its aggregate
+counts with eps=0 is an algebra check, not a fresh source reconstruction.
 
 **What this buys:** parity balance is reduced to (i) a *boundary-free* correlation
 between the selected prime parity `a_n` and the finite old-prime-power/winding sign
@@ -57,17 +65,22 @@ character on the 16 child digits**, not the continuous circle character
     (-1)^{⌊16x⌋} = Σ_{m ≡ 8 (mod 16), m ≠ 0} (16/πim) e(mx),
 
 convergent in L², with coefficient `16/(πim)`.  Consequently a bound on the single
-continuous Weyl frequency `c_A(8)` does **not** imply parity balance: one must
-control the *entire arithmetic progression* `h ≡ 8 (mod 16)` of Weyl means.
+continuous Weyl frequency `c_A(8)` alone does not establish parity balance.
+Controlling the supported progression with justified boundary passage is one
+sufficient route; it is not necessary to prove each individual mode small
+in order to bound the signed combination.
 
-**Quantified obligation (F-4, OPEN).**  By the expansion, for any `H`,
+**Corrected obligation (F-4, OPEN arithmetic premise).** For the degree-H
+Fejer mean F_H, points y_n and 0<delta<=1/32,
 
-    |P_A| ≤ Σ_{0<|m|≤H, m≡8(16)} (16/π|m|) |c_A(m)| + O(1/H) + (tail).
+    |mean f(y_n)-mean F_H(y_n)|
+      <= 2 * boundary_count(delta)/A + 1/((H+1)*delta).
 
-The parity mean `P_A` is therefore controlled by a *weighted ℓ¹ sum over the
-arithmetic progression* of Weyl means — a strictly stronger target than any single
-frequency.  This pins down exactly which Weyl estimates would suffice, and shows
-why the existing single-frequency and local-prime results fall short.
+Finite source and numerical evaluation errors must also be paid. The exact
+source-certified version is CBO-B03. The former unqualified O(1/H) bound is
+withdrawn: distance to digit cuts cannot be omitted, and the 1/|m| coefficient
+sequence is not absolutely summable. Taking absolute values of a finite
+weighted spectral sum is a possible upper bound, not a proved arithmetic saving.
 
 **Receipt:** the expansion is the standard half-open digit convention Fourier
 series (PPP-00); no new code path required, but the coefficient `16/πi` is stated
@@ -85,15 +98,18 @@ original-zero observed `641/16384`.  The ratio of these covariances is
 
     (1 - m_A²) / (641/16384) ≈ 16384/641 · (1 - m_A²),
 
-which tends to `16384/641 ≈ 25.6` as `m_A → 0`.  Therefore **no seed-blind
+which tends to `16384/641 ≈ 25.6` as `m_A → 0`. This compares to the fixed
+A=512 reference value; it is not an asymptotic ratio to the changing original
+source covariance. Therefore **no seed-blind
 mechanism** — none that depends only on the forcing, the local prime marginal, or
 any covariance functional that cannot see the seed — can distinguish the true
 zero seed from this coherent shadow, and hence cannot prove `Cov_A → 0`.
 
-**What this means:** the missing ingredient is *exactly* the zero-seed selectivity
-(the marked section `U_0 = 0`), and it must enter through a functional that
-separates the rational p-integral shadow from the irrational `-π/16` completed
-orbit.  This is a precise, quantified statement of where the proof must live.
+**What this means:** source selection is a necessary missing ingredient for a
+seed-uniform argument. A proposed estimate must distinguish the original zero
+seed from the relevant coherent wrong seed. It need not distinguish two wrong
+seeds from one another. This obstruction does not identify a sufficient analytic
+mechanism or prove that source selection is the only remaining difficulty.
 
 **Receipt:** PPP-08's construction is reproduced in
 `research/2026-11-09/pi_parity_pressure/PROOFS.md`; the frozen holdout
@@ -107,7 +123,7 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 | Attack | Deliverable | Status |
 |---|---|---|
 | 1 | Exact tail-boundary decomposition + boundary control | PROVED (structural) |
-| 2 | h=8 character type firewall + weighted-ℓ¹ Weyl obligation | PROVED (reduction) |
+| 2 | h=8 type firewall + boundary-paid finite Fejer reconstruction | PROVED (conditional reduction); signed estimate OPEN |
 | 3 | Quantified seed-blindness obstruction (ratio ~25.6) | PROVED (obstruction) |
 | 4 | Lag-1 source autocorrelation bound r(n)r(n+1) < (15/4)²/(n(n+1))² | PROVED (new elementary inequality) |
 | 5 | Uniform lag-k bound r(n)r(n+k) < (15/4)²/(n(n+k))² | PROVED (uniform two-time correlation) |
@@ -119,23 +135,21 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 
 ## Attack 7 (verified reduction): the parity mean is a single Weyl progression
 
-**Theorem F-11 (PROVED, verified finite).**  Combining F-10 with the completed
-orbit `{16^{n−1}π} = {U_n+T_n}` gives the **exact L² identity**
+**Theorem F-11 (corrected fixed-finite-epoch identity).** On the actual
+completed irrational source phases, symmetric partial Fourier sums recover
+the circle-parity mean for each fixed finite epoch:
 
-    P_A = Σ_{m ≡ 8 (mod 16)} (16/πim) · c_A(m),
+    mean f(y_n) = lim_(H->infinity)
+      sum_(0<|m|<=H, m=8 mod16) (16/(pi i m)) mean e(m y_n).
 
-where `c_A(m)` is the Weyl mean on the completed orbit.  Truncating to
-`|m| ≤ H` leaves a tail controlled by the step-function Fourier tail (weighted
-ℓ¹, `O(1/H)` at the jump-singularity scale).  The truncated reconstruction is
-**verified at finite A** against the exact completed-digit parity: at A=16,32,64
-the reconstruction with `|m|≤192` reproduces the direct parity mean to within a
-few parts in 10² (converging as H grows).  Digits used are the rigorous
-`duck_bbp` interval certificates (no π oracle).
+This follows from pointwise convergence away from rational digit cuts and
+the finite number of samples, not from applying an L2 bound to atomic masses.
+The old weighted-l1/uniform O(1/H) tail assertion is withdrawn. Historical
+finite floating reconstruction is a diagnostic. The follow-up uses rational
+interval evaluation plus an explicit Fejer/boundary/source error budget.
 
-**This is the sharpest form of the reduction:** parity balance is *exactly* the
-vanishing of a single weighted sum over the arithmetic progression `m ≡ 8
-(mod 16)` of completed-orbit Weyl means.  It does **not** bound those means;
-normality and parity balance remain OPEN.
+Here `f(y_n)=s_(n+1)` in PPP/TFH notation; comparison with its same-epoch
+integer-parity mean pays at most 2/A. No signed decay follows from the identity.
 
 **Receipt:** `observational_succ/parity_fourier_reconstruction.py` +
 `tests/test_parity_fourier_reconstruction.py` (3/3, exit 0).
@@ -151,13 +165,14 @@ normality and parity balance remain OPEN.
                                           = 0        otherwise.
 
 **Proof.**  Split `[0,1)` into the 16 digit intervals; the coefficient is
-`(2πim)^{−1}·(z−1)·Σ_{a=0}^{15}(−1)^a z^a` with `z = e^{−2πim/16}`.  The
+`(2πim)^{−1}·(1−z)·Σ_{a=0}^{15}(−1)^a z^a` with `z = e^{−2πim/16}`.  The
 alternating geometric sum equals 16 iff `z = −1` iff `m ≡ 8 (mod 16)`, and 0
 otherwise.  This is the **exact support**: parity balance is controlled by the
 Weyl means `c_A(m)` at the arithmetic progression `m ≡ 8 (mod 16)` **only**,
-confirming F-3/F-4 and pinning the weighted-ℓ¹ obligation to that single
-progression.  Kernel-checked in `formal/scott_omega/ParityFourierSupport.lean`
-(support congruence + the 6 residues in 1..96, no Mathlib/sorry).
+with the symmetric or boundary-paid summation specified above. At m=0,
+the coefficient is zero by equal positive and negative cell lengths.
+`formal/scott_omega/ParityFourierSupport.lean` checks only support congruences
+and the six residues in 1..96; it does not formalize Fourier integration.
 
 **Boundary:** exact support and coefficient; does not bound the Weyl means, so
 normality/parity remain OPEN.
@@ -180,14 +195,14 @@ The shadow is an *astronomically close* approximation, with exact gap bound
 and the scaled completed-digit gap obeys `16^n|s_A+π/16| < 1/16` on `[A,2A+8)`,
 so every completed hexadecimal digit of the shadow vanishes on the epoch.
 
-**Theorem F-9 (quantified obstruction, PROVED as a reduction).**  Separating the
-two orbits on *every* epoch requires a lower bound on `|16^(n−1)π − m|` for the
-shadow-forced integers `m`, i.e. an **effective irrationality (transcendence)
-measure** `|π − m/q| > c q^{−μ}` with explicit `c, μ`.  No finite arithmetic
-(forcing, CRT, carries, local prime marginals) supplies such a measure.  This
-pins the entire zero-seed-selectivity gap onto a **Diophantine input of a
-different type**, and explains precisely why every finite-precision attack so
-far has been seed-blind.
+**F-9 (universal necessity WITHDRAWN).** For a known seed s, the exact
+difference from the original zero-seed orbit is `16^n s`. An effective
+irrationality measure is not universally necessary to distinguish these
+marked source states. For each fixed original completed digit, nested exact
+source enclosures plus irrationality guarantee eventual certification.
+An a-priori uniform resource rate or a selected all-epoch signed bound is a
+different question. Diophantine estimates may help particular quantitative
+separation tasks, but their claimed universal necessity was not established.
 
 **Receipt:** `observational_succ/zero_seed_selectivity_gap.py` +
 `tests/test_zero_seed_selectivity_gap.py` (4/4, exit 0).  The gap bound is exact
@@ -211,9 +226,11 @@ irrationality of π is cited).
     + 119749987 t³ + (172106417/4) t² + 7679368 t + 7335831/16,
 
 with **all positive coefficients** (min `7335831/16 > 0`), so `D(n) > 0` for
-all `n ≥ 1`.  The bound has the **sharp asymptotic constant** `(15/4)²`,
-since `r(n) ~ 15/(4n²)`.  Kernel-checked in `formal/scott_omega/Lag1Autocorrelation.lean`
-(leading-coefficient arithmetic and constant-term positivity, no Mathlib/sorry).
+all `n ≥ 1`. This bound is valid but nonsharp: `n²r(n)->15/64` and the
+scaled lag-product limit is `225/4096`, not `225/16`. The exact positive
+source envelope in the follow-up ERRATA.md proves the corrected asymptotic.
+The Lean file checks leading arithmetic and constant-term positivity only;
+it does not formalize the full polynomial identity or asymptotic squeeze.
 
 **Boundary:** this is a two-time (lag-1) *second-moment* control of the source
 forcing.  It is a clean elementary input, but it does **not** bound any signed
@@ -231,15 +248,14 @@ shifted by `t = n−1 ≥ 0` is a degree-8 polynomial in `t` whose **coefficient
 polynomials in `k` with all-positive integer coefficients** (the nine t-coefficients
 are listed in `source_lag1_autocorrelation.lagk_polynomial_coefficients()`).  Since
 `k ≥ 1`, every coefficient is positive, so `D_k(n) > 0` for all `n,k ≥ 1`.  This is
-a genuine **uniform two-time correlation bound** for the source, with the sharp
-asymptotic constant `(15/4)²`.  Verified on the full `n,k ∈ 1..299` grid (89,401
+a valid nonsharp product bound for the forcing. Its true scaled leading
+constant is `225/4096`, uniformly for integer k>=1 as n tends to infinity.  Verified on the full `n,k ∈ 1..299` grid (89,401
 checks) and by the all-positive coefficient certificate (6/6 tests).
 
 **Boundary:** a clean two-time *second-moment* control, not a signed Weyl-mean
 estimate.  Normality and parity balance remain OPEN.
 
-All three independently motivated attacks return **proved structural/reduction
-results or quantified obstructions** — no false victory.  The target `β_A → 0`
-and full normality remain **OPEN**; the next discriminator is a zero-seed-selective
-functional separating the p-integral shadow from the irrational completed orbit,
-which none of the three attacks supplies unconditionally.
+The corrected structural identities and hostile controls survive within their
+stated scopes. The target beta_A->0 and full normality remain OPEN. No attack
+here supplies the source-selected signed estimate; the finite covariance
+repairs and boundary certificates make that missing premise explicit.

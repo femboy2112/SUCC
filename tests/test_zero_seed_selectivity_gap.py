@@ -24,10 +24,23 @@ class ZeroSeedSelectivityTests(unittest.TestCase):
         g20 = zsg.shadow_gap_bound(20, 1217)
         self.assertLess(g20, g10 / 1000)
 
-    def test_separation_input_is_diophantine(self):
+    def test_universal_diophantine_necessity_is_withdrawn(self):
         s = zsg.separation_requires_irrationality_measure()
-        self.assertIn('irrationality measure', s)
-        self.assertIn('Diophantine', s)
+        self.assertIn('WITHDRAWN', s)
+        self.assertIn('not required', s)
+
+    def test_seed_difference_is_exact_without_pi(self):
+        from observational_succ.duck_bbp import forcing
+        for seed in (Q(1, 5), Q(-19, 113), Q(1, 16)):
+            original, shadow = Q(), seed
+            for n in range(20):
+                self.assertEqual(shadow-original, zsg.exact_seed_separation(n, seed))
+                original = 16*original+forcing(n+1)
+                shadow = 16*shadow+forcing(n+1)
+
+    def test_circle_alias_does_not_erase_source_seed(self):
+        self.assertEqual(zsg.exact_seed_separation(1, Q(1, 16)) % 1, 0)
+        self.assertNotEqual(zsg.exact_seed_separation(0, Q(1, 16)), 0)
 
 
 if __name__ == '__main__':

@@ -11,10 +11,27 @@ class Lag1AutocorrelationTests(unittest.TestCase):
         for n in range(1, 500):
             self.assertLess(lag.lag1_product(n), lag.lag1_bound(n), n)
 
-    def test_bound_is_asymptotically_sharp_constant(self):
-        # r(n) ~ 15/(4 n^2), so r(n)r(n+1) ~ (15/4)^2/(n(n+1))^2; the bound has
-        # the correct asymptotic constant (no wasted factor).
+    def test_legacy_bound_constant_is_not_asymptotically_sharp(self):
+        # Keep the legacy finite value, but test the actual leading rational
+        # coefficients independently: numerator 120, denominator 2*4*8*8.
         self.assertEqual(lag.lag1_bound(1), Q(225, 16) / 4)
+        self.assertEqual(lag.SOURCE_ASYMPTOTIC_CONSTANT, Q(120, 2*4*8*8))
+        self.assertEqual(lag.LAG_ASYMPTOTIC_CONSTANT, Q(225, 4096))
+        n = 10000
+        scaled = lag.lag1_product(n)*(n*(n+1))**2
+        self.assertLess(abs(scaled-lag.LAG_ASYMPTOTIC_CONSTANT), Q(1, 10000))
+        self.assertGreater(abs(scaled-Q(225, 16)), 14)
+
+    def test_sharp_envelope_against_four_original_poles(self):
+        for n in (1, 2, 5, 31, 127, 997):
+            for k in (1, 3, 97, 100003):
+                def source(t):
+                    return Q(4, 8*t-7)-Q(2, 8*t-4)-Q(1, 8*t-3)-Q(1, 8*t-2)
+                lo, hi = lag.sharp_lag_envelope(n, k)
+                product = source(n)*source(n+k)
+                self.assertLess(lo, product)
+                self.assertLess(product, hi)
+                self.assertLess(hi, lag.lagk_bound(n, k))
 
     def test_positive_coefficient_certificate(self):
         c = lag.polynomial_positive_coefficients()
@@ -34,6 +51,25 @@ class Lag1AutocorrelationTests(unittest.TestCase):
         for name, coeffs in lag.lagk_polynomial_coefficients():
             for c in coeffs:
                 self.assertGreater(c, 0, (name, c))
+
+    def test_full_polynomial_identity_by_independent_symbolic_expansion(self):
+        import sympy as sp
+        t, k = sp.symbols('t k')
+        def numerator(x):
+            return 120*x*x-89*x+16
+        def denominator(x):
+            return (2*x-1)*(4*x-1)*(8*x-7)*(8*x-3)
+        n = t+1
+        difference = sp.expand(sp.Rational(225, 16)*denominator(n)*denominator(n+k)
+                               - numerator(n)*numerator(n+k)*n*n*(n+k)**2)
+        coefficients = [sp.Rational(c.numerator, c.denominator) if isinstance(c, Q)
+                        else sp.Integer(c) for c in lag.polynomial_positive_coefficients()['coeffs']]
+        self.assertEqual(sp.Poly(difference.subs(k, 1), t).all_coeffs(), coefficients)
+        for (name, expected), actual in zip(lag.lagk_polynomial_coefficients(),
+                                            sp.Poly(difference, t).all_coeffs()):
+            parsed = [sp.Rational(c.numerator, c.denominator) if isinstance(c, Q)
+                      else sp.Integer(c) for c in expected]
+            self.assertEqual(sp.Poly(actual, k).all_coeffs(), parsed, name)
 
 
 if __name__ == '__main__':

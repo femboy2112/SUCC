@@ -1,5 +1,7 @@
 # Front D — Scott causal weld: cofinal schedules and the completion discipline
 
+**Audit correction (Cayley follow-up, 2026-11-09):** D-2 and D-3 below are corrected. Arbitrary finite prefixes cannot certify cofinality. See [semantic repair and counterexamples](../cayley_source_observer/SEMANTIC_AUDIT.md). The original statements remain in parent commit `afabc458323ef2e3a20ce2bae77239c4190819c5`.
+
 **Status:** PROVED (cofinality + continuity transport), with the mandatory
 distinction that Scott continuity does **not** manufacture equality.
 
@@ -27,27 +29,35 @@ retains `A` and `B` as distinct (deck displacement 1).
 
 ## Theorem D-2 (cofinal schedules, PROVED)
 
-In the product-directed poset `N × N` (pointwise order), a double-clock schedule
-`(n_k, L_k)` is **cofinal** iff both `n_k → ∞` and `L_k → ∞`.  Equivalently, a
-schedule can approximate the joint completed observation of the two independent
-clocks exactly when neither coordinate is eventually bounded.
+In the product-directed poset `N × N` (pointwise order), a **coordinatewise
+nondecreasing** double-clock schedule `(n_k,L_k)` is cofinal iff both coordinates
+are unbounded. Given two thresholds, take the later of indices reaching each;
+monotonicity gives joint domination. An arbitrary subset needs the actual
+quantifier `forall N,L exists k: n_k>=N and L_k>=L`.
+
+Separate unbounded projections alone do not suffice: the alternating sequence
+`s(2k)=(k,0)`, `s(2k+1)=(0,k)` never dominates `(1,1)`.
 
 - **Canonical schedule** (seam): `(k, k)` — cofinal, witnesses the weld.
 - **Hostile schedule** (diagonal): `(k, 2)` with `L_k ≡ 2` — **not** cofinal;
   the source horizon is frozen, so the completed-source limit is never approached
   and the weld's completed equivalence is not witnessed.
 
-Verified in `observational_succ/scott_cofinal_schedule.py`; the characterisation is
-the standard fact that a subset of a product of directed sets is cofinal iff each
-projection is cofinal.
+The repaired `scott_cofinal_schedule.py` certifies the explicitly declared affine
+family `(a+bk,c+dk)`, with nonnegative integer parameters: cofinal iff `b,d>0`.
+It provides an exact threshold witness. Arbitrary finite prefixes remain UNKNOWN.
+For a BBP source cone, `L>=n` is an additional admissibility condition; growing
+oscillator frequencies also require the paid clock coupling in CAY-05.
 
 ## Theorem D-3 (product completion, PROVED)
 
-For two directed sets `D_1, D_2` of finite source information, the product `D_1 × D_2`
-is directed, and a map `f : D_1 × D_2 → X` is Scott-continuous iff it is continuous
-in each argument separately (for the standard product topology of the Scott
-topologies).  The independent clocks therefore admit a well-defined joint completion,
-and the cofinal schedules of D-2 are exactly those approaching it.
+For dcpos `P,Q,R`, a map `f:P×Q→R` separately Scott-continuous in each variable
+is jointly Scott-continuous for the product order. For directed `D⊆P×Q`, separate
+supremum preservation gives `f(sup π_P D,sup π_Q D)=sup_(a,b) f(a,b)` over the
+product of the projections. Each such pair is dominated by one member of D,
+so this supremum equals `sup f(D)`. The converse follows by fixing a coordinate.
+This proves the needed order-theoretic statement; it does not identify the Scott
+topology on the product with the product of the Scott topologies.
 
 ## What this buys vs. what remains
 

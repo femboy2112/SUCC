@@ -8,10 +8,12 @@ Front F, the crux obstruction.  The zero seed U_0=0 selects the completed orbit
 Both completed orbits are IRRATIONAL (pi/16 is irrational; s_A + pi/16 is
 rational + irrational).  The shadow is not literally the zero orbit: it is an
 astronomically close rational-approximation shadow whose completed digits vanish
-on the epoch.  This module proves the EXACT gap bound and shows that separating
-the two requires an effective irrationality measure for pi -- a Diophantine
-input, not a finite arithmetic one.  This is a precise, quantified obstruction,
-not a proof of parity balance (which stays OPEN).
+on the epoch.  This module supplies an EXACT upper gap bound.  The original
+assertion that every separation requires an effective irrationality measure
+is withdrawn: lifted orbit differences are exactly 16**n times the seed
+difference, and finite digit certification terminates by shrinking source
+intervals and irrationality.  A quantitative uniform rate is a distinct
+question.  Original-zero parity balance stays OPEN.
 """
 from __future__ import annotations
 
@@ -27,6 +29,8 @@ def shadow_gap_bound(A: int, p: int) -> Q:
                 = tail_error          + {D alpha_N}/D
     so  0 < |s_A + pi/16| <= r(N+1)/(15*16^N) + 1/D.
     """
+    if type(A) is not int or A < 1 or type(p) is not int or p < 2:
+        raise ValueError('positive epoch A and integer p>=2 required')
     N = 2 * A + 16
     D = p * 16 ** (2 * A + 48) + 1
     tail = duck_bbp.source_tail_budget(N) / 16 ** N
@@ -41,21 +45,21 @@ def completed_digit_gap(A: int, p: int) -> Q:
 
 
 def separation_requires_irrationality_measure() -> str:
-    """The precise statement of what input would separate the two orbits.
-
-    To distinguish the true zero-seed orbit {16^(n-1) pi} from the shadow
-    {16^n (s_A + pi/16)} on every epoch, one needs a lower bound on the
-    distance |16^(n-1) pi - m| to integers m of the form forced by the shadow,
-    i.e. an EFFECTIVE irrationality/transcendence measure for pi: for every
-    integer q, |pi - m/q| > c q^{-mu} with explicit c, mu.  No finite
-    arithmetic (forcing, CRT, carries) provides such a measure; it is a
-    Diophantine input of a different type.
-    """
+    """Historical API name retained; return the explicit correction to F-9."""
     return (
-        'Separating the zero-seed orbit from the p-integral shadow requires '
-        'an effective irrationality measure for pi (|pi - m/q| > c q^{-mu}), '
-        'which is a Diophantine/transcendence input, not finite arithmetic.'
+        'F-9 necessity claim WITHDRAWN. An effective irrationality measure '
+        'is not required to distinguish known seeds: the lifted difference '
+        'is exactly 16**n times their difference. Diophantine estimates may '
+        'supply a priori uniform resolution rates for specific tasks; neither '
+        'finite distinguishability nor such a rate proves signed cancellation.'
     )
+
+
+def exact_seed_separation(n: int, seed: Q) -> Q:
+    """U_n(seed)-U_n(0)=16**n*seed, with no pi value or measure input."""
+    if type(n) is not int or n < 0 or type(seed) not in (int, Q):
+        raise ValueError('nonnegative integer n and exact rational seed required')
+    return 16**n*Q(seed)
 
 
 if __name__ == '__main__':

@@ -1,5 +1,12 @@
 # Source and provenance map
 
+**Historical initial-round scope:** additive-file statements and validation counts
+below describe the original causal-weld submission, not the complete current
+branch. Later DeepSeek additions are audited and repaired in the
+[Cayley follow-up](../cayley_source_observer/README.md); its
+[validation record](../cayley_source_observer/VALIDATION.md) owns current execution
+status. No inherited count is promoted to a fresh run.
+
 ## Immutable arithmetic origin
 
 - Repository `https://github.com/femboy2112/SUCC`, baseline **Main XXII** commit `43886e830cee5ff6d6b37719e18d809819673bd9`, Git tree `4814b5520bd065b14950f996d1b47c0e4ecb1312` (checked via GitHub connection in this round). Main XXII integrated PR #575 and 28 research PR heads. Its `docs/PI_NORMALITY_FRONTIER.md` remains canonical.

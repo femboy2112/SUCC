@@ -1,5 +1,12 @@
 # SUCC × Scott × Ω — Causal Weld / Computational Descent
 
+**Historical initial-round scope:** additive-file statements and validation counts
+below describe the original causal-weld submission, not the complete current
+branch. Later DeepSeek additions are audited and repaired in the
+[Cayley follow-up](../cayley_source_observer/README.md); its
+[validation record](../cayley_source_observer/VALIDATION.md) owns current execution
+status. No inherited count is promoted to a fresh run.
+
 **Research branch; additive to verified Main XXII `43886e830cee5ff6d6b37719e18d809819673bd9`.** No main merge, release, alteration of frozen source/provenance/Lean. **π normality, original-zero hexadecimal parity balance, and RH remain OPEN.**
 
 ## Research thesis

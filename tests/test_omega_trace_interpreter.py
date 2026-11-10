@@ -2,8 +2,8 @@
 
 Standard library only (fractions, dataclasses, unittest).  No floating point.
 Covers: explicit positional syntax, leftmost beta stepper, exact growth law
-E_k(m) -> E_k(m+k-2) for k in 2..8, the finite strongly-normalizing compiled
-SUCC step, the separate guarded trace for raw Omega_k, the simulation theorem
+E_k(m) -> E_k(m+k-2) for k in 2..8, the finite rational BBP
+evaluation, the separate guarded trace for raw Omega_k, the simulation theorem
 (commuting square), the reflection/non-alias condition, and the hostile
 control that raw Omega_3/4/5 reach no finite normal form within any bounded
 budget.
@@ -31,11 +31,11 @@ from observational_succ.omega_trace_interpreter import (
 
 class SyntaxTests(unittest.TestCase):
     def test_positions_are_explicit_addresses(self):
-        # E_k(m) has m-1 redexes at addresses 0..m-2; leftmost is always 0.
+        # E_k(m) has one redex at the deepest left application, if m>=2.
         for k in range(2, 9):
             for m in range(1, 9):
                 t = Term(k=k, m=m)
-                self.assertEqual(t.redex_addresses(), tuple(range(m - 1)))
+                self.assertEqual(t.redex_addresses(), (("f",)*(m-2),) if m>=2 else ())
                 self.assertEqual(t.is_normal_form(), m == 1)
                 self.assertEqual(t.head_unsolvable(), m >= 2)
 
@@ -60,7 +60,7 @@ class GrowthLawTests(unittest.TestCase):
                 step = contract_leftmost(Term(k=k, m=m))
                 self.assertEqual(step.after.m, m + (k - 2))
                 self.assertEqual(step.delta, k - 2)
-                self.assertEqual(step.address, 0)
+                self.assertEqual(step.address, ("f",)*(m-2))
                 self.assertEqual(step.before.m, m)
 
     def test_growth_law_verifier(self):
@@ -77,11 +77,11 @@ class GrowthLawTests(unittest.TestCase):
 
 class StepperTests(unittest.TestCase):
     def test_leftmost_reduction_sequence(self):
-        # E_4(2) -> E_4(4) -> E_4(6) -> ... each step fires address 0.
+        # E_4(2) -> E_4(4) -> E_4(6); actual paths deepen by two edges.
         t = Term(k=4, m=2)
         steps = list(reduce_leftmost(t, 6))
         self.assertEqual(len(steps), 6)
-        self.assertEqual([s.address for s in steps], [0] * 6)
+        self.assertEqual([s.address for s in steps], [("f",)*(2*j) for j in range(6)])
         self.assertEqual([s.delta for s in steps], [2] * 6)
         self.assertEqual([s.after.m for s in steps], [4, 6, 8, 10, 12, 14])
 
@@ -122,7 +122,7 @@ class CompiledSUCCStepTests(unittest.TestCase):
 
     def test_compiled_trace_is_positional_and_finite(self):
         step = compile_succ_step(5, Q(3))
-        self.assertEqual(len(step.trace), 3)  # fixed length -> strong normalization
+        self.assertEqual(len(step.trace), 3)  # fixed rational operation count
         self.assertEqual([e.address for e in step.trace], [0, 1, 2])
         self.assertEqual(step.normal_form(), 16 * Q(3) + bbp_forcing(6))
 
@@ -133,8 +133,8 @@ class GuardedOmegaTests(unittest.TestCase):
             report = guarded_omega_trace(k, budget=20)
             self.assertFalse(report.has_finite_normal_form)
             self.assertEqual(len(report.prefixes), 20)
-            # Each prefix is a leftmost step firing address 0.
-            self.assertEqual([s.address for s in report.prefixes], [0] * 20)
+            # Each path is that of the unique redex of the before-term.
+            self.assertEqual([s.address for s in report.prefixes], [("f",)*(j*(k-2)) for j in range(20)])
 
     def test_omega2_identity_loop(self):
         # omega_2 omega_2 -> omega_2 omega_2 exactly; no normal form either.
@@ -167,14 +167,15 @@ class ReflectionTests(unittest.TestCase):
         step_b = contract_leftmost(b)
         self.assertEqual(step_a.after.m, 4)
         self.assertEqual(step_b.after.m, 4)  # count-only would conflate
-        self.assertNotEqual(step_a.delta, step_b.delta)  # positional separates
+        self.assertNotEqual(step_a.delta, step_b.delta)
+        self.assertNotEqual(step_a.address, step_b.address)  # () vs ("f",)
         self.assertNotEqual(step_a.after.k, step_b.after.k)
 
     def test_observe_produces_full_positional_trace(self):
         t = Term(k=3, m=2)
         obs = observe(t, budget=5)
         self.assertEqual(obs.k, 3)
-        self.assertEqual(obs.addresses, (0, 0, 0, 0, 0))
+        self.assertEqual(obs.addresses, tuple(("f",)*j for j in range(5)))
         # copy counts grow by 1 each step: 3,4,5,6,7
         self.assertEqual(obs.copy_counts, (3, 4, 5, 6, 7))
 

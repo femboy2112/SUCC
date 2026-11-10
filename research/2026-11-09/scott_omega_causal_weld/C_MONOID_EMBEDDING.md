@@ -1,90 +1,80 @@
-# Front A — A genuine C-monoid hosting the SUCC source action
+# Front A — lambda fragment, arithmetic actions and the unproved C-monoid embedding
 
-**Status:** CONSTRUCTED + EXECUTABLE-VERIFIED (finite fragment). **Boundary:** the
-C-monoid axioms are verified on a syntactic lambda-algebra fragment by exact
-normal-form comparison; the paper proof (Church-Rosser + the lambda-algebra
-presentation) is the authority, the executable check is a finite witness.
+**Corrected status:** TESTED FINITE MODEL; full C-monoid/source embedding
+**UNVERIFIED**. The parent draft at
+`afabc458323ef2e3a20ce2bae77239c4190819c5` claimed more than its implementation
+established. The [semantic audit](../cayley_source_observer/SEMANTIC_AUDIT.md)
+records capture, operator, budget and axiom-list defects and their repairs.
+The archived session files are unchanged.
 
-## 1. What was built
+## 1. What is actually implemented
 
-A genuine nontrivial **C-monoid** (Lambek–Scott §15–16) as the *syntactic
-lambda-algebra*: closed lambda-terms with surjective pairing, quotiented by
-βη-equivalence.  The carrier is **not** ordinary Set; this is exactly what
-evades the Cantor obstruction (CW-13), which rules out a nontrivial Set object
-with `U ≅ U^U` (for `|U| ≥ 2`, `|U^U| = |U|^|U| ≥ 2^|U| > |U|`).
+`c_monoid_succ_embedding.py` implements a de Bruijn lambda syntax with products,
+projections, beta contraction, eta and surjective-pairing sample reductions.
+Capture-free beta contraction uses shift/substitute/unshift. A global reduction
+budget returns a normal form only when one is reached within the budget;
+exhaustion does not decide whether the term has a normal form.
 
-Concrete combinators (de Bruijn-indexed, exact):
+The displayed combinators include identity, composition, pairing, projections,
+evaluation and currying. Their finite test reductions are useful operational
+evidence. A universal confluence/model theorem for this exact presentation is
+not supplied by that evidence.
 
-| Name | Term | Role |
-|---|---|---|
-| `id` | `λx. x` | monoid unit |
-| `a∘b` | `λx. a(bx)` | monoid composition |
-| `⟨a,b⟩` | `λx. ⟨a x, b x⟩` | surjective pairing |
-| `p₁`, `p₂` | `λx. fst x`, `λx. snd x` | projections |
-| `ε` | `λp. (fst p)(snd p)` | evaluation |
-| `Λ(a)` | `λx.λy. a⟨x,y⟩` | abstraction (curry) |
+## 2. The historical C1–C9 checker has restricted authority
 
-## 2. The C-monoid equations (C1–C9)
+The function name `check_cmonoid_equations` and its C1–C9 keys are retained for
+compatibility. They name **sample equations**, not a verified transcription of
+the complete Lambek–Scott axioms. In particular, old C8/C9 were derived equations,
+and C9 originally returned hardcoded True. It now evaluates the equation.
 
-Checked by exact βη + surjective-pairing normal-form comparison.  All nine
-PASS on the fragment (see `observational_succ/c_monoid_succ_embedding.py` and
-`tests/test_c_monoid_succ_embedding.py`, 7/7 tests, exit 0):
+A successful comparison demonstrates a common reduct for the displayed terms.
+A mismatch or budget exception does not decide their equality in the full
+intended equational theory. Independent named-variable substitution and generic
+AST regressions test the evaluator, not the existence of a nontrivial model.
 
-- **C1** associativity `(a∘b)∘c = a∘(b∘c)`
-- **C2** unit `a∘id = id∘a = a`
-- **C3** projections `p₁∘⟨a,b⟩ = a`, `p₂∘⟨a,b⟩ = b`
-- **C4** pairing naturality `⟨a,b⟩∘c = ⟨a∘c, b∘c⟩`
-- **C5** `⟨p₁,p₂⟩ = id` (surjective pairing)
-- **C6** beta `ε(⟨Λ(a), b⟩) = λy. a⟨b,y⟩`
-- **C7** eta `Λ(ε) = id`
-- **C8** `Λ(a∘⟨p₁,p₂⟩) = Λ(a)` (via C2+C5)
-- **C9** `ε∘⟨p₁,p₂⟩ = ε` (entailed by C2+C5)
+## 3. Karoubi direction remains conditional
 
-The **surjective-pairing η-rule** `⟨fst p, snd p⟩ = p` is added explicitly; it
-is the load-bearing law that turns the λ-calculus-with-products into the C-monoid
-reflexive structure (this is the `U × U ≅ U` witness on the syntactic carrier).
+The proposed route through the idempotent splitting of a **genuine** C-monoid
+retains its classical Lambek–Scott motivation. To apply it here, a complete
+presentation and a consistency/nontrivial-model argument must first be supplied.
+Finite identity checks do not establish this premise.
 
-## 3. Karoubi envelope (Scott's theorem)
+The sample projector `e(x)=<fst x,fst x>` is idempotent by two projections.
+The corrected test checks this retract and rejects `PROJ1` alone as idempotent.
+The earlier finite transformation-monoid proxy remains a proxy, not a C-monoid
+model; the Set self-power obstruction is unchanged.
 
-By Lambek–Scott Theorem 16.1, for a genuine C-monoid `M`, the idempotent
-splitting `Kar(M)` is a CCC:
-- objects = idempotents `e² = e`;
-- arrows `a : e → f` satisfy `f a e = a`;
-- `id_e = e`; composition = monoid multiplication.
+## 4. Natural affine action and chronological BBP action are distinct
 
-The one-object category `BM` embeds fully faithfully as the object `1_M`.
-The executable fragment checks `id` is idempotent and the Karoubi arrow law
-`f a e = a` on the identity idempotent.  A finite *proxy* (full transformation
-monoid on 3 points) was already documented as NOT a C-monoid in the session
-archive; we do not repeat that mistake here.
+On natural numbers, for every n>=0 and integer p>=1,
 
-## 4. SUCC source-action embedding (CW-18 addressed)
-
-The chronological successor `S` and affine dilation `V_p` embed as exact
-rational carrier maps:
-
-```
-S : U_n ↦ U_{n+1} = 16 U_n + r(n+1),
-V_p S = S^p V_p   (exact on the unreduced carrier, V_p = S^p here).
+```math
+S(n)=n+1,\qquad V_p(n)=pn,\qquad V_p S=S^p V_p.
 ```
 
-Verified symbolically: `V_p S = S^p V_p` for `p = 3` (and general p) on the
-exact unreduced rational carrier.  The marked zero seed `U_0 = 0` is the
-**selected section**, preserved as data; it is not an orbit-independent
-property of the monoid.  This is the honest reading of CW-18: the affine
-source action embeds faithfully into the arithmetic carrier, but the full
-C-monoid endomorphism embedding of the *entire* source submonoid (with all
-carries and the completed tail) remains a stated next gate, not a completed
-construction.
+Church numeral terms implement these maps: successor sends n to n+1 and
+multiplication by p sends n to pn. The identity follows by unfolding them;
+the tests include the false-commutation control `V_p S != S V_p` for p>1.
 
-## 5. Honest limitations
+The exact indexed BBP action instead sends
+`SuccState(n,u)` to `SuccState(n+1,16u+r(n+1))`. Its iterates live under the
+separate `iterate_bbp_steps` API. Substituting a time iterate for V_p did not
+prove the natural-number affine relation, and does not prove source faithfulness.
+The carrier rejects negative/Boolean clocks and inexact floating states.
 
-- **Proved / verified** (finite, structural): C1–C9 on the fragment; the affine
-  `V_p S = S^p V_p` relation; the Cantor firewall (no Set carrier).
-- **Classical** (cited, not new): Lambek–Scott Thm 16.1 (Kar(M) is CCC);
-  the λ-algebra ↔ C-monoid correspondence.
-- **UNVERIFIED / still open**: a *fully* source-faithful embedding of the
-  entire chronological source functor + completed Green tail into the C-monoid
-  as a *proved* natural transformation (CW-18's strongest reading); and any
-  consequence for π normality, parity balance, or RH — **all of which remain
-  OPEN** and are not claimed here.
+## 5. What remains to prove
+
+The follow-up now gives a [faithful source-clock action](../cayley_source_observer/AFFINE_SOURCE_ACTION.md)
+on indexed rational states, with actual BBP successor and a declared clock
+dilation obeying the affine relation. It does not identify dilation with
+multiplication of the rational value or supply the C-monoid realization.
+
+A faithful computational source embedding needs an explicit encoding of the
+clock, rational state, source history and retained observations; preservation
+of each intended reduction; and a reflection/non-alias theorem on the declared
+source domain. The completed Green tail needs its own compatible observational
+limit contract. None follows merely from the numeral action.
+
+CW-18 therefore remains **UNVERIFIED**. Original-zero parity balance, pi
+base-16 normality and RH remain **OPEN**. See the follow-up validation record
+for executed finite checks and their distinct authority.

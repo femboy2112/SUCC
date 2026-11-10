@@ -1,24 +1,18 @@
-"""A genuine C-monoid with a faithful SUCC source-action embedding.
+"""Finite lambda-calculus witnesses and separate arithmetic source actions.
 
-Constructs an explicit nontrivial C-monoid (Lambek-Scott §15-16) as the
-syntactic lambda-algebra (closed lambda-terms with surjective pairing, up to
-beta-eta), verifies the C1-C9 equations on a finite fragment by EXACT
-beta-reduction using de Bruijn indices (no capture), and exhibits the SUCC
-chronological successor S and affine dilation V_p with the marked zero seed.
+The reducer implements capture-avoiding de Bruijn beta substitution, eta and
+pairing rules with an explicit reduction budget.  Positive comparisons witness
+common reducts on the tested terms.  This module does NOT certify a genuine
+C-monoid, decide general beta-eta equality, or embed the indexed BBP source into
+one.  Those stronger claims in the original PR #576 are withdrawn by the
+semantic audit in research/2026-11-09/cayley_source_observer/SEMANTIC_AUDIT.md.
 
-Scope and honesty:
-  * Carrier is SYNTACTIC (lambda-algebra), not ordinary Set.  This evades the
-    Cantor obstruction CW-13: a nontrivial Set object cannot satisfy U ~= U^U,
-    but a reflexive object in a lambda-algebra can.  No Set realization is
-    claimed.
-  * Equations C1-C9 are checked by exact normal-form comparison on closed
-    terms; the paper proof (Church-Rosser + the lambda-algebra presentation)
-    is the authority, the executable check is a finite witness.
-  * Addresses CW-18 (embedding) on the constructed fragment only.
-  * Nothing here asserts pi-normality, parity balance, or RH (all OPEN).
+Church successor and multiplication represent the genuine arithmetic actions
+S(n)=n+1 and V_p(n)=p*n.  Their affine relation V_p S=S^p V_p is distinct from
+iterating the indexed BBP recurrence.  The latter remains an exact rational
+Python operation with its original zero seed, not a proved lambda compiler.
 
-Refs: Lambek-Scott §15-16 Thm 16.1; Scott representation theorem; van der Leer
-et al. ITP 2025.
+No pi-normality, selected parity balance, or RH result is asserted.
 """
 from __future__ import annotations
 
@@ -39,7 +33,10 @@ class T:
     a: 'T' | None = None      # APP arg / PAIR snd
 
 
-def V(i: int) -> T:  return T('VAR', idx=i)
+def V(i: int) -> T:
+    if type(i) is not int or i < 0:
+        raise ValueError("a de Bruijn index must be a nonnegative integer")
+    return T('VAR', idx=i)
 def CONST(n: str) -> T: return T('CONST', name=n)
 def ABS(b: T) -> T:  return T('ABS', body=b)
 def APP(f: T, a: T) -> T: return T('APP', f=f, a=a)
@@ -68,13 +65,17 @@ def shift(t: T, d: int, cutoff: int = 0) -> T:
 
 
 def subst(t: T, j: int, s: T) -> T:
-    """substitute s for de Bruijn index j (with standard shifting)."""
+    """Raw substitution [j := s]; shift s when crossing a binder.
+
+    This operation does not remove a binder.  ``beta_redex`` performs the
+    outer up-shift and final down-shift required when contracting one.
+    """
     if t.tag == 'VAR':
-        return shift(s, 0, 0) if t.idx == j else t
+        return s if t.idx == j else t
     if t.tag == 'CONST':
         return t
     if t.tag == 'ABS':
-        return ABS(subst(t.body, j + 1, s))
+        return ABS(subst(t.body, j + 1, shift(s, 1)))
     if t.tag == 'APP':
         return APP(subst(t.f, j, s), subst(t.a, j, s))
     if t.tag == 'PAIR':
@@ -89,103 +90,97 @@ def subst(t: T, j: int, s: T) -> T:
 def beta_redex(t: T):
     """Return the redex if t is (lambda x. b) a, else None."""
     if t.tag == 'APP' and t.f.tag == 'ABS':
-        return subst(t.f.body, 0, t.a)
+        return shift(subst(t.f.body, 0, shift(t.a, 1)), -1)
     return None
 
 
-def norm(t: T, limit: int = 200000) -> T:
-    """Normalize (beta + pair projections + eta), leftmost-outermost.
+def reduce_once(t: T) -> tuple[T, bool]:
+    """One leftmost-outermost beta/eta/pairing contraction, if one exists.
 
-    Uses a bounded worklist so that every rule strictly decreases a measure
-    (redex count / subterm depth) and normalization terminates on the finite
-    closed fragment used by the C-monoid checks.
+    The flag records a contraction even when its output equals its input
+    (for example Omega).  A beta step need not decrease term size or redexes.
     """
-    steps = 0
-    while True:
-        steps += 1
-        if steps > limit:
+    r = beta_redex(t)
+    if r is not None:
+        return r, True
+    if t.tag == 'FST' and t.f.tag == 'PAIR':
+        return t.f.f, True
+    if t.tag == 'SND' and t.f.tag == 'PAIR':
+        return t.f.a, True
+    if t.tag == 'PAIR' and t.f.tag == 'FST' and t.a.tag == 'SND' \
+            and t.f.f == t.a.f:
+        return t.f.f, True
+    if t.tag == 'ABS':
+        b = t.body
+        if b.tag == 'APP' and b.a.tag == 'VAR' and b.a.idx == 0 \
+                and not occurs(b.f, 0):
+            return shift(b.f, -1), True
+        b, changed = reduce_once(b)
+        return (ABS(b), True) if changed else (t, False)
+    if t.tag in ('APP', 'PAIR'):
+        f, changed = reduce_once(t.f)
+        constructor = APP if t.tag == 'APP' else PAIR
+        if changed:
+            return constructor(f, t.a), True
+        a, changed = reduce_once(t.a)
+        return (constructor(t.f, a), True) if changed else (t, False)
+    if t.tag in ('FST', 'SND'):
+        f, changed = reduce_once(t.f)
+        constructor = FST if t.tag == 'FST' else SND
+        return (constructor(f), True) if changed else (t, False)
+    if t.tag in ('VAR', 'CONST'):
+        return t, False
+    raise ValueError(t.tag)
+
+
+def norm(t: T, limit: int = 200000) -> T:
+    """Find a reduct with no applicable rules within ``limit`` contractions.
+
+    The budget is global across the entire term.  Exhaustion is UNKNOWN,
+    signaled by RuntimeError, and is not evidence that no normal form exists.
+    No termination, confluence, or decidability theorem is claimed here.
+    """
+    if type(limit) is not int or limit < 0:
+        raise ValueError("limit must be a nonnegative integer")
+    for steps in range(limit + 1):
+        result, contracted = reduce_once(t)
+        if not contracted:
+            return t
+        if steps == limit:
             raise RuntimeError('no normal form within limit')
-        r = beta_redex(t)
-        if r is not None:
-            t = r
-            continue
-        if t.tag == 'FST' and t.f.tag == 'PAIR':
-            t = t.f.f
-            continue
-        if t.tag == 'SND' and t.f.tag == 'PAIR':
-            t = t.f.a
-            continue
-        # surjective pairing: <fst p, snd p> = p
-        if t.tag == 'PAIR' and t.f.tag == 'FST' and t.a.tag == 'SND' \
-                and t.f.f == t.a.f:
-            t = t.f.f
-            continue
-        if t.tag == 'ABS':
-            b = norm(t.body, limit - steps)
-            if b.tag == 'APP' and b.a.tag == 'VAR' and b.a.idx == 0 \
-                    and not occurs(b.f, 0, 0):
-                return shift(b.f, -1, 0)
-            return ABS(b)
-        if t.tag == 'APP':
-            f = norm(t.f, limit - steps)
-            a = norm(t.a, limit - steps)
-            if f.tag == 'ABS':
-                t = subst(f.body, 0, a)
-                continue
-            return APP(f, a)
-        if t.tag == 'PAIR':
-            f = norm(t.f, limit - steps)
-            a = norm(t.a, limit - steps)
-            if f == t.f and a == t.a:
-                # already fully normalized; only the surjective-pairing rule
-                # could reduce it further, which requires FST/SND children.
-                if t.f.tag == 'FST' and t.a.tag == 'SND' and t.f.f == t.a.f:
-                    t = t.f.f
-                    continue
-                return t
-            t = PAIR(f, a)
-            continue
-        if t.tag == 'FST':
-            f = norm(t.f, limit - steps)
-            if f.tag == 'PAIR':
-                t = f.f
-                continue
-            return FST(f)
-        if t.tag == 'SND':
-            f = norm(t.f, limit - steps)
-            if f.tag == 'PAIR':
-                t = f.a
-                continue
-            return SND(f)
-        return t
+        t = result
+    raise AssertionError("unreachable")
 
 
-def occurs(t: T, idx: int, cutoff: int) -> bool:
-    """True if de Bruijn index idx occurs free (>= cutoff context)."""
+def occurs(t: T, idx: int) -> bool:
+    """Whether the root-context variable ``idx`` occurs, tracking binders."""
     if t.tag == 'VAR':
         return t.idx == idx
     if t.tag == 'CONST':
         return False
     if t.tag == 'ABS':
-        return occurs(t.body, idx + 1, cutoff)
+        return occurs(t.body, idx + 1)
     if t.tag == 'APP':
-        return occurs(t.f, idx, cutoff) or occurs(t.a, idx, cutoff)
+        return occurs(t.f, idx) or occurs(t.a, idx)
     if t.tag == 'PAIR':
-        return occurs(t.f, idx, cutoff) or occurs(t.a, idx, cutoff)
+        return occurs(t.f, idx) or occurs(t.a, idx)
     if t.tag == 'FST':
-        return occurs(t.f, idx, cutoff)
+        return occurs(t.f, idx)
     if t.tag == 'SND':
-        return occurs(t.f, idx, cutoff)
+        return occurs(t.f, idx)
     raise ValueError(t.tag)
 
 
 def eq(a: T, b: T) -> bool:
-    """beta-eta equality: compare normal forms."""
+    """Compare bounded reducts; True witnesses equality on these terms.
+
+    False is not a general decision of inequivalence in the intended theory.
+    """
     return norm(a) == norm(b)
 
 
 # ---------------------------------------------------------------------------
-# Closed C-monoid combinators
+# Closed combinators for the finite displayed identity checks
 # ---------------------------------------------------------------------------
 ID      = ABS(V(0))                       # lambda x. x
 TRUE_   = ABS(ABS(V(1)))                  # K = lambda x. lambda y. x
@@ -211,9 +206,14 @@ def curry(a: T) -> T:
 
 
 # ---------------------------------------------------------------------------
-# C-monoid equations (Lambek-Scott §15) — exact checks on closed terms
+# Historical C1-C9 sample labels — not a complete C-monoid certification
 # ---------------------------------------------------------------------------
 def check_cmonoid_equations() -> dict:
+    """Finite sample identities; historical key names are kept for compatibility.
+
+    In particular the old C8/C9 labels name derived identities, not a checked
+    transcription of the complete Lambek-Scott axiom list.
+    """
     # Use closed "black-box" atoms: a,b,c are free metavariables, represented
     # as abstract constants (variables at level 0, treated as atoms).
     a, b, c = CONST('a'), CONST('b'), CONST('c')
@@ -231,7 +231,7 @@ def check_cmonoid_equations() -> dict:
     results['C4_pairing_nat'] = eq(compose(pair(a, b), c), pair(compose(a, c), compose(b, c)))
     # C5 <p1,p2> = id
     results['C5_proj_pair_id'] = eq(pair(PROJ1, PROJ2), ID)
-    # C6 beta (Lambek-Scott §15): eps(<Lambda(a), b>) = lambda y. a<b,y>
+    # Historical C6 beta sample: eps(<Lambda(a), b>) = lambda y. a<b,y>
     #   Direct beta law of the reflexive structure, checked exactly.
     results['C6_beta'] = eq(
         APP(EVAL, PAIR(curry(a), b)), ABS(APP(a, PAIR(b, V(0)))))
@@ -241,47 +241,105 @@ def check_cmonoid_equations() -> dict:
     #   a∘<p1,p2> = a (by C5 <p1,p2>=id and C2), so Lambda(a∘<p1,p2>) = Lambda(a).
     results['C8_lambda_nat'] = eq(
         curry(compose(a, pair(PROJ1, PROJ2))), curry(a))
-    # C9 evaluation on projections: eps(<p1,p2>) = eps.
-    #   By C5 <p1,p2>=id and C2 (right unit), eps∘id = eps.  C9 is therefore
-    #   entailed by C2+C5 (both PASS); we record it as entailed rather than
-    #   re-deriving it through the reducer's eta edge case.
-    results['C9_eval_nat'] = True  # entailed by C2_right_id + C5_proj_pair_id
+    # Evaluate the displayed identity; never return an unconditional pass.
+    results['C9_eval_nat'] = eq(compose(EVAL, pair(PROJ1, PROJ2)), EVAL)
 
     return results
 
 
 # ---------------------------------------------------------------------------
-# SUCC source-action embedding (Front A deliverable)
+# Separate indexed BBP arithmetic and ordinary natural-number lambda actions
 # ---------------------------------------------------------------------------
 @dataclass(frozen=True)
 class SuccState:
     n: int          # source index
     u: Q            # exact rational state U_n
 
+    def __post_init__(self) -> None:
+        if type(self.n) is not int or self.n < 0:
+            raise ValueError("source time must be a nonnegative integer")
+        if type(self.u) not in (int, Q):
+            raise TypeError("source value must be an exact int or Fraction")
+        object.__setattr__(self, 'u', Q(self.u))
+
 
 def forcing(n: int) -> Q:
     """r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2), immutable four-pole source."""
+    if type(n) is not int or n < 1:
+        raise ValueError("source index must be a positive integer")
     return Q(4, 8*n-7) - Q(2, 8*n-4) - Q(1, 8*n-3) - Q(1, 8*n-2)
 
 
 def succ_step(s: SuccState) -> SuccState:
-    """S: U_n -> U_{n+1} = 16 U_n + r(n+1)."""
+    """S_BBP: U_n -> U_{n+1}=16 U_n+r(n+1), retaining the source clock."""
+    if type(s) is not SuccState:
+        raise TypeError("an exact SuccState is required")
     return SuccState(s.n + 1, 16 * s.u + forcing(s.n + 1))
 
 
-def dilation_Vp(s: SuccState, p: int) -> SuccState:
+def iterate_bbp_steps(s: SuccState, steps: int) -> SuccState:
+    """Advance the source clock by ``steps``; this is S_BBP^steps, not V_p."""
+    if type(s) is not SuccState:
+        raise TypeError("an exact SuccState is required")
+    if type(steps) is not int or steps < 0:
+        raise ValueError("steps must be a nonnegative integer")
     out = s
-    for _ in range(p):
+    for _ in range(steps):
         out = succ_step(out)
     return out
 
 
+def arithmetic_successor(n: int) -> int:
+    if type(n) is not int or n < 0:
+        raise ValueError("n must be a nonnegative integer")
+    return n + 1
+
+
+def dilation_Vp(n: int, p: int) -> int:
+    """The actual arithmetic dilation V_p(n)=p*n on N_0.
+
+    A SuccState is intentionally rejected: the indexed source-action
+    embedding would require an additional, currently unproved construction.
+    """
+    if type(n) is not int or n < 0 or type(p) is not int or p < 1:
+        raise ValueError("n >= 0 and p >= 1 must be integers")
+    return p * n
+
+
+def church_numeral(n: int) -> T:
+    """Closed Church numeral lambda f x. f^n(x)."""
+    if type(n) is not int or n < 0:
+        raise ValueError("n must be a nonnegative integer")
+    body = V(0)
+    for _ in range(n):
+        body = APP(V(1), body)
+    return ABS(ABS(body))
+
+
+# lambda n f x. f (n f x)
+CHURCH_SUCC = ABS(ABS(ABS(APP(V(1), APP(APP(V(2), V(1)), V(0))))))
+
+
+def church_dilation(p: int) -> T:
+    """lambda n f x. n (p f) x: multiplication by the fixed Church p."""
+    if type(p) is not int or p < 1:
+        raise ValueError("p must be a positive integer")
+    return ABS(ABS(ABS(APP(APP(V(2), APP(church_numeral(p), V(1))), V(0)))))
+
+
 def verify_affine_relation(p: int = 3, n0: int = 1) -> bool:
-    """V_p S = S^p V_p on the exact unreduced carrier (V_p = S^p here)."""
-    s = SuccState(n0, Q(0))
-    lhs = dilation_Vp(succ_step(s), p)
-    rhs = succ_step(dilation_Vp(s, p))
-    return lhs.u == rhs.u and lhs.n == rhs.n
+    """Finite witness of V_p S=S^p V_p on integers and Church numerals."""
+    lhs_integer = dilation_Vp(arithmetic_successor(n0), p)
+    rhs_integer = dilation_Vp(n0, p)
+    for _ in range(p):
+        rhs_integer = arithmetic_successor(rhs_integer)
+    n_term = church_numeral(n0)
+    lhs = APP(church_dilation(p), APP(CHURCH_SUCC, n_term))
+    rhs = APP(church_dilation(p), n_term)
+    for _ in range(p):
+        rhs = APP(CHURCH_SUCC, rhs)
+    return lhs_integer == rhs_integer and eq(lhs, rhs) \
+        and eq(lhs, church_numeral(lhs_integer))
 
 
 # ---------------------------------------------------------------------------
@@ -298,6 +356,6 @@ if __name__ == '__main__':
               'C4_pairing_nat','C5_proj_pair_id','C6_beta','C7_lambda_eval_id',
               'C8_lambda_nat','C9_eval_nat']:
         print(f'  {k}: {"PASS" if res[k] else "FAIL"}')
-    print(f'\nAll C-monoid equations: {"ALL PASS" if all(res.values()) else "SOME FAIL"}')
-    print(f'affine V_p S = S^p V_p (exact unreduced carrier): {verify_affine_relation()}')
+    print(f'\nFinite sample identities: {"ALL PASS" if all(res.values()) else "SOME FAIL"}')
+    print(f'affine V_p S = S^p V_p (integer/Church sample): {verify_affine_relation()}')
     print(f'PROJ1 idempotent retract: {idempotent_retract(PROJ1)}')

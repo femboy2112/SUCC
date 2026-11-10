@@ -1,18 +1,18 @@
-"""Omega-indexed causal computation: an executable beta-reduction interpreter.
+"""Restricted omega-chain beta traces and separate finite BBP arithmetic.
 
 Scope (see research/2026-11-09/scott_omega_causal_weld/OMEGA_INTERPRETER.md):
 
 * An explicit syntax for omega_k = lambda x. x x ... x (k left-associated
   copies) and E_k(m) = the left-associated chain of m copies of omega_k.
-  Every redex carries a POSITION (address), not merely a count.
+  Its unique redex carries its actual binary application-tree address.
 
 * A leftmost-beta reduction stepper returning (term, redex_address, step).
 
 * Exact verification of the growth law  E_k(m) -> E_k(m+k-2), k in 2..8.
 
-* A FINITE strongly-normalizing "compiled SUCC step": a typed computation
-  that reduces to a normal form carrying an explicit trace, and is
-  structurally shown to terminate.
+* A FINITE rational BBP evaluator with an explicit operation trace.  The
+  historical name "compiled SUCC step" is retained, but this is not a
+  source-to-lambda compiler or a simulation theorem for arbitrary terms.
 
 * A SEPARATE guarded/coinductive trace for raw Omega_k that reports
   "no finite normal form" without hanging.
@@ -54,27 +54,31 @@ class Term:
         if not isinstance(self.m, int) or self.m < 1:
             raise ValueError("chain length m must be >= 1")
 
-    # -- positional address of every redex ------------------------------
-    # E_k(m) = omega_k omega_k ... omega_k (m copies, left-associated).
-    # A left-associated application spine  t0 t1 t2 ... t_{m-1}  has the
-    # redex candidates at the *leftmost* occurrence of the pattern
-    # (omega_k omega_k).  We name redexes by the index of their left
-    # component.  For the chain, the leftmost redex is always at index 0
-    # (head position):  (omega_k omega_k) omega_k ...
-    #
-    # Addresses are the spine indices 0 .. m-2 where a contraction may fire.
-    # The LEFT spine is: index 0 = head application (omega_k applied to
-    # omega_k), index 1 = that result applied to the next omega_k, etc.
-    # Because every component is omega_k and application is left-associated,
-    # the leftmost redex is ALWAYS at address 0 while m >= 2.
-    def redex_addresses(self) -> tuple[int, ...]:
-        """All candidate redex positions in the current chain.
+    def redex_addresses(self) -> tuple[tuple[str, ...], ...]:
+        """Actual beta-redex paths; ``f`` descends an application's left child.
 
-        Returns the spine addresses at which a beta contraction could fire.
-        For the pure chain E_k(m) every application of omega_k to omega_k is
-        a redex, so there are m-1 redexes at addresses 0..m-2.
+        For m >= 2, E_k(m) has exactly ONE redex, omega_k omega_k,
+        at ("f",)*(m-2).  Outer applications have an application (not an
+        abstraction) on the left; no other omega body contains a beta redex.
+        The empty tuple is the root address when m=2.
         """
-        return tuple(range(self.m - 1))
+        return (("f",) * (self.m - 2),) if self.m >= 2 else ()
+
+    def syntax(self):
+        """Materialize the actual de Bruijn AST for finite independent probes.
+
+        The compressed stepper avoids building enormous left spines.  This
+        method makes its asserted representation separately inspectable.
+        """
+        from .c_monoid_succ_embedding import V, ABS, APP
+        body = V(0)
+        for _ in range(self.k - 1):
+            body = APP(body, V(0))
+        omega = ABS(body)
+        term = omega
+        for _ in range(self.m - 1):
+            term = APP(term, omega)
+        return term
 
     def is_normal_form(self) -> bool:
         """A chain is a normal form iff it has no beta redex.
@@ -103,7 +107,7 @@ class Term:
 class Step:
     """One leftmost beta contraction, fully witnessed."""
     before: Term          # term before contraction
-    address: int          # redex position that fired (leftmost)
+    address: tuple[str, ...]  # actual path to the contracted beta redex
     after: Term           # term after contraction
     delta: int            # exact copy-count change  m_after - m_before
 
@@ -127,7 +131,7 @@ def contract_leftmost(t: Term) -> Step:
     k = t.k
     m_after = k + (t.m - 2)
     after = Term(k=k, m=m_after)
-    return Step(before=t, address=0, after=after, delta=k - 2)
+    return Step(before=t, address=t.redex_addresses()[0], after=after, delta=k - 2)
 
 
 def reduce_leftmost(t: Term, max_steps: int) -> Iterator[Step]:
@@ -175,17 +179,14 @@ def verify_growth_law(k_range: range = range(2, 9), m_range: range = range(2, 13
 
 
 # ---------------------------------------------------------------------------
-# 4. FINITE strongly-normalizing compiled SUCC step
+# 4. Finite BBP rational evaluation (historical "compiled" API names)
 # ---------------------------------------------------------------------------
 
 # The source recurrence is  U_{n+1} = 16 * U_n + r(n+1)  with
 #   r(j) = 4/(8j-7) - 2/(8j-4) - 1/(8j-3) - 1/(8j-2),  U_0 = 0.
-# This is a FINITE typed arithmetic computation: for each n it is a fixed
-# finite rational expression with no recursion and no beta redex.  We model
-# it as a "compiled SUCC step" that (a) has a normal form, (b) carries an
-# explicit trace, and (c) is strongly normalizing by construction (the trace
-# is a finite list of atomic rational operations, each strictly consuming a
-# fixed budget).
+# For each n this is a fixed finite rational expression.  The three-slot
+# operation trace records exact arithmetic; it does not encode a lambda AST
+# or prove an omega-to-BBP compiler theorem.
 
 
 def bbp_forcing(j: int) -> Q:
@@ -199,9 +200,8 @@ def bbp_forcing(j: int) -> Q:
 class CompiledTraceEntry:
     """One atomic operation in the compiled SUCC step's reduction trace.
 
-    Each entry names a redex POSITION (address) in a flat, typed evaluation
-    of the rational expression  16*U + r(n+1), so the trace is positional and
-    the reduction is terminating by a strict structural measure.
+    Each entry names an operation slot in a fixed rational evaluation of
+    16*U + r(n+1).  These slots are not lambda beta-redex addresses.
     """
     address: int      # position in the flattened expression tree
     op: str           # operation name (add / scale / force)
@@ -210,11 +210,10 @@ class CompiledTraceEntry:
 
 @dataclass(frozen=True)
 class CompiledSUCCStep:
-    """A finite, typed, strongly-normalizing compiled SUCC step.
+    """A finite exact rational result with a fixed operation trace.
 
-    It reduces (in one shot) to a normal form  U_{n+1} and carries an explicit
-    positional trace.  Strong normalization is structural: the trace length is
-    a fixed constant (independent of n), so the reduction can never loop.
+    The Python evaluation terminates.  A typed lambda-calculus term and a
+    preservation/reflection theorem for its compiler are not supplied.
     """
     n: int
     u_next: Q
@@ -227,9 +226,8 @@ class CompiledSUCCStep:
 def compile_succ_step(n: int, u: Q = Q(0)) -> CompiledSUCCStep:
     """Compile the finite SUCC step U -> 16*U + r(n+1) to a normal form.
 
-    The trace is a fixed finite sequence of positional atomic operations
-    (addresses 0,1,2), which makes strong normalization immediate: there is no
-    redex that recreates itself, so the compiled fragment is terminating.
+    The trace is a fixed sequence of rational operation slots (0,1,2).
+    This evaluator terminates; a sound lambda compiler is not supplied.
 
     The normal form is the exact rational 16*U + r(n+1), matching the source
     recurrence  U_{n+1} = 16 U_n + r(n+1).
@@ -315,7 +313,7 @@ def guarded_omega_trace(k: int, budget: int) -> GuardedOmegaReport:
 class Observation:
     """The observationally-visible trace of a reduction (the data preserved)."""
     k: int
-    addresses: tuple[int, ...]  # the sequence of redex positions fired
+    addresses: tuple[tuple[str, ...], ...]  # actual application-tree paths
     copy_counts: tuple[int, ...]  # the sequence of copy counts (lengths)
 
 
@@ -335,63 +333,22 @@ def observe(t: Term, budget: int) -> Observation:
 
 
 def reflection_non_alias_example() -> tuple[Term, Term]:
-    """Two terms with distinct positional traces but equal count-only data.
+    """Different arities already distinguished by the copy-count stream.
 
-    Consider E_4(2) = omega_4 omega_4 (two copies) versus E_4(3) =
-    omega_4 omega_4 omega_4 (three copies).  Their FIRST contraction:
-
-        E_4(2) -> E_4(4)   (address 0 fires, then normal-form candidate)
-        E_4(3) -> E_4(5)   (address 0 fires, then still has a redex at 0)
-
-    Both fire at address 0 on step 1, but the full positional traces differ:
-    E_4(2) reaches a redex-count that a count-only observer sees as "m -> m+2",
-    while E_4(3) carries a distinct continuation.  More decisively, consider
-    the two arities at equal first delta is impossible (delta = k-2 differs by
-    arity).  The cleanest non-alias pair is two DIFFERENT arities with the SAME
-    first-step copy-count jump only when k-2 is equal, i.e. never.
-
-    The real non-alias witness: a count-only semantics that records only the
-    multiset of copy counts cannot distinguish E_k(2) from a term that jumps
-    by the same amount but at a DIFFERENT address.  Because the pure chain has
-    all redexes at address 0, we exhibit the distinction through the ADDRESS
-    STREAM of two terms with identical copy-count increments but different
-    arity/length signatures.
-
-    We return (E_3(2), E_4(2)): both are head-unsolvable, both fire at address
-    0 forever, but their copy-count increments differ (1 vs 2), so a
-    count-only observer DOES separate them.  To get a genuine address-level
-    separation we compare E_4(2) and E_4(3):
-        - E_4(2): after one step, m=4, redexes at {0,1,2}; next step fires 0.
-        - E_4(3): after one step, m=5, redexes at {0,1,2,3}; next step fires 0.
-    The address stream is identical ({0} forever) but the copy-count streams
-    differ, so count-only already separates them.
-
-    The precise, provable non-alias statement is therefore the CONVERSE: the
-    positional trace is a strictly richer invariant than the copy-count trace,
-    and there EXIST two terms whose full (address, count) traces differ while
-    a naive count-only summary (just the final length) coincides.  We exhibit
-    that pair directly in the theorem file; here we return the cleanest pair.
+    This historical helper does not prove an independent address invariant.
+    Within a fixed-k pure-chain family, the addresses are determined by m.
     """
     return Term(k=3, m=2), Term(k=4, m=2)
 
 
 def count_only_conflation_witness() -> tuple[Term, Term]:
-    """Explicit pair: same first copy-count jump, distinguishable by address.
+    """Equal first reached counts; different actual contraction addresses.
 
-    A naive count-only semantics might record only "m grows" without the
-    arity/length signature.  We exhibit two terms that a pure count observer
-    conflates at the FIRST step delta level are impossible (delta=k-2 differs).
-    Instead the honest non-alias pair is: two terms that reach the SAME
-    intermediate copy count but from DIFFERENT arities.
-
-        E_4(2) -> E_4(4)   (copy count 4)
-        E_3(3) -> E_3(4)   (copy count 4, delta 1)
-
-    Both land on copy count 4 after one step, but their positional traces
-    differ: E_4(2) has arity 4 (delta 2, addresses {0} on step 1 with m->4),
-    E_3(3) has arity 3 (delta 1, addresses {0} on step 1 with m->4).  A
-    count-only observer that records ONLY the reached copy count 4 would
-    conflate them; the positional trace (arity + address + delta) separates.
+    E_4(2) -> E_4(4) contracts at the root ().
+    E_3(3) -> E_3(4) contracts at ("f",).
+    A summary recording ONLY the final count 4 loses this distinction.
+    Full copy-count histories plus arity already recover the addresses;
+    no independent spatial dimension is inferred from this example.
     """
     return Term(k=4, m=2), Term(k=3, m=3)
 

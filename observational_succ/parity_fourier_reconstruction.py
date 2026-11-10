@@ -2,15 +2,17 @@
 
 Theorem F-10 gives the exact Fourier support of the parity character:
     (-1)^{floor(16x)} = sum_{m ≡ 8 (mod 16)} (16/(pi i m)) e(m x)   (in L^2).
-Therefore the epoch parity mean satisfies the EXACT identity
+For each fixed finite epoch of irrational completed phases, the parity mean
+is the limit of SYMMETRIC Fourier partial sums:
 
-    P_A = sum_{m ≡ 8 (mod 16)} (16/(pi i m)) c_A(m),
+    P_A = lim_{H->infinity} sum_{|m|<=H, m ≡ 8 (mod 16)} (16/(pi i m)) c_A(m),
 
 where c_A(m) = A^{-1} sum_{n=A}^{2A-1} e(m {16^{n-1} pi}) is the Weyl mean on the
-COMPLETED orbit.  Truncating to |m| <= H leaves an L^2 tail bounded by the
-Fourier tail of the step function (O(1/H) in a weighted-l1 sense).  This module
-verifies the truncated reconstruction against the exact completed-digit parity
-at finite A using rigorous rational digit certificates (duck_bbp + selected_orbit).
+COMPLETED orbit.  An L^2 tail bound does NOT control evaluation on an atomic
+empirical measure, and these coefficients are not absolutely summable.  There
+is no uniform O(1/H) error near digit boundaries.  This module's exponential
+evaluations are numerical diagnostics, not certified Fourier values.  Use
+parity_boundary_certificate for exact interval, boundary and Fejer payments.
 
 This is a reduction, not a bound on c_A(m): normality/parity stay OPEN.
 """
@@ -20,19 +22,12 @@ import mpmath as mp
 from fractions import Fraction as Q
 
 from observational_succ import duck_bbp, selected_orbit as so
+from observational_succ.parity_boundary_certificate import certified_source_digit
 
 
 def completed_digit(n: int) -> int:
     """Exact hex digit d_n = floor(16 {U_n + T_n}) via rigorous interval."""
-    o = so.SelectedOrbit()
-    U = o.state(n)
-    lo, hi = duck_bbp.tail_interval(n, 8)
-    frac_lo = (U + lo) % 1
-    frac_hi = (U + hi) % 1
-    d_lo = int((16 * frac_lo) % 16)
-    d_hi = int((16 * frac_hi) % 16)
-    assert d_lo == d_hi, (n, d_lo, d_hi)
-    return d_lo
+    return certified_source_digit(n)[0]
 
 
 def parity(n: int) -> int:
@@ -40,7 +35,11 @@ def parity(n: int) -> int:
 
 
 def c_A_completed(A: int, m: int, dps: int = 40) -> mp.mpc:
-    """Weyl mean over the completed orbit {16^{n-1} pi} = {U_n + T_n}."""
+    """Numerical Weyl-mean approximation using depth-eight midpoint phases.
+
+    Precision dps controls arithmetic rounding, not the omitted source tail.
+    The associated phase error grows with |m| and is not certified here.
+    """
     o = so.SelectedOrbit()
     with mp.workdps(dps):
         acc = mp.mpc(0)

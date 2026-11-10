@@ -10,7 +10,10 @@ that are NONZERO exactly when m ≡ 8 (mod 16), with the exact value
     a_m = 16/(pi i m)   (m ≡ 8 mod 16),   a_m = 0 otherwise.
 
 This is the precise "h=8 character firewall": parity balance is controlled by
-the Weyl means c_A(m) at m ≡ 8 (mod 16) ONLY, via the weighted-l1 sum of F-4.
+the Weyl means c_A(m) at m ≡ 8 (mod 16) ONLY. Finite irrational sample
+reconstruction uses symmetric summation; certified truncation pays the
+digit-boundary mass explicitly, as in parity_boundary_certificate. The
+coefficient sequence is not absolutely summable.
 It is an exact structural statement; it does NOT bound the Weyl means.
 """
 from __future__ import annotations
