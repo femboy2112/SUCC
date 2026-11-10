@@ -132,6 +132,8 @@ Let a source-observer presheaf `F` assign finite observations to chart contexts,
 
 For program objects/transformations, a stack or higher descent theory requires isomorphisms on overlaps plus cocycle/higher coherence; pointwise pin agreement alone is not enough. For nontrivial phase connections, compare transported paths around plaquettes and keep holonomy rather than quotienting it away. At the sphere's center, polar `R+×S²` must collapse the angular S² to a single apex to obtain the full 3-ball. These boundary and quotient rules are **additional carrier data**.
 
+**Important categorical exactness distinction:** the special pullback `(X×Y)×_Y(Y×Z)≅X×Y×Z` uses only finite products, so a CCC already supports it. But **arbitrary** fiber products, quotients, and gluing of curved/overlapping charts do not follow from Cartesian closure alone. A presheaf completion `PSh(K)=[K^op,Set]` of `K=Kar(M)` supplies limits, colimits, exponentials, and Yoneda embedding, at the cost of introducing formal observational objects. To return from formal objects to the original SUCC carrier, require a *representability or source-realization certificate*; Yoneda completion alone is not causal/physical realization.
+
 ## F. Falsification checklist and integration target
 
 1. **Omega compiler:** Can one tagged `Omega_5` execution recover all three independent successor directions and preserve causal provenance? Bare Omega_5 is a countermodel.
