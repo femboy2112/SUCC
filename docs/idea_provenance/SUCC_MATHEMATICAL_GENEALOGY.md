@@ -36,23 +36,23 @@ The central thread is not “a succession of proofs that π must be normal.” I
 
 ## 4. Euler–Mascheroni and the “Oily–Macaroni” window (October 24–26)
 
-**USER–DIRECT from earlier project discussion:** the user proposed \(\gamma=\lim_{r\to1^+}(\sum_{k\ge1}k^{-r}-\sum_{k\ge1}r^{-k})\), and asked how to SUCC/FUCC its underlying arithmetic. The second series equals \(1/(r-1)\); this is the familiar finite part of ζ's pole at 1.
+**USER–DIRECT from earlier project discussion:** the user proposed $`\gamma=\lim_{r\to1^+}(\sum_{k\ge1}k^{-r}-\sum_{k\ge1}r^{-k})`$, and asked how to SUCC/FUCC its underlying arithmetic. The second series equals $`1/(r-1)`$; this is the familiar finite part of ζ's pole at 1.
 
-**Steelman.** Measure the discrepancy between additive harmonic successor time and logarithmic/Gamma time. Use source-positive Laplace moments to track finite-part errors, endpoint Gamma distributions and source-dependent normalization. The user's recurring \(\Omega_{\rm OM}=\phi^{-1}-\gamma\) is a *declared reference contrast*, not a universal physical constant.
+**Steelman.** Measure the discrepancy between additive harmonic successor time and logarithmic/Gamma time. Use source-positive Laplace moments to track finite-part errors, endpoint Gamma distributions and source-dependent normalization. The user's recurring $`\Omega_{\rm OM}=\phi^{-1}-\gamma`$ is a *declared reference contrast*, not a universal physical constant.
 
 **Survived.** Exact harmonic-log and Gamma identities, the positive BBP four-pole Laplace source, order-statistic triangular representations and different typed Euler finite parts. See [Gamma/zero-one bridge](../../research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md), [Oily triangle](../../research/2026-10-29/oily_triangle_sheet/README.md), [Gamma observable definitions](../MAIN_XXII_GAMMA_OBSERVABLES.md).
 
-**Resisted.** The source-positive Gamma(2) endpoint law is also shared by altered source kernels; \(\phi^{-1}-\gamma\) is not by itself an invariant selecting π. Correct finite parts do not bound authentic signed time averages.
+**Resisted.** The source-positive Gamma(2) endpoint law is also shared by altered source kernels; $`\phi^{-1}-\gamma`$ is not by itself an invariant selecting π. Correct finite parts do not bound authentic signed time averages.
 
 ## 5. Four-pole BBP as a selected arithmetic path (October 26–November 9)
 
 **USER–RECONSTRUCTED.** The base-16 BBP formula should be taken as an actual rational successor *source*, perhaps a higher-order realization of a more atomic or symmetric geometry; the literal U0=0 origin should matter.
 
-**Steelman.** Freeze \(r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)\), \(U_0=0\), \(U_n=16U_{n-1}+r(n)\). Define the positive Green tail and prove \(U_n+T_n=16^{n-1}\pi\). The global target is actual original-zero signed Weyl decay \(A^{-1}\sum_{n=A}^{2A-1}e(hU_n)\to0\) for each h≠0, or an equivalent all-word frequency estimate.
+**Steelman.** Freeze $`r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)`$, $`U_0=0`$, $`U_n=16U_{n-1}+r(n)`$. Define the positive Green tail and prove $`U_n+T_n=16^{n-1}\pi`$. The global target is actual original-zero signed Weyl decay $`A^{-1}\sum_{n=A}^{2A-1}e(hU_n)\to0`$ for each h≠0, or an equivalent all-word frequency estimate.
 
 **Survived.** Exact polynomial-source factorization, tail error estimates, rational integer/LCM carrier, prime birth fingerprints and rigorous finite certified digit data; conditional normality reductions and sharp obstacles. See [current frontier](../PI_NORMALITY_FRONTIER.md) and [authenticated source](../../observational_succ/duck_bbp.py).
 
-**Resisted.** Classical BBP itself, exact π identity, fixed-frequency source matching and lots of certified digits do not establish normality. The coherent irrational seed \(-\pi/16\) yields a constant completed orbit with the same forcing; epoch-dependent rational shadows preserve many local signatures while spoofing a finite window. A **fixed rational** seed shift generally preserves normality status rather than furnishing a global nonnormal rational counterexample; see [seed-superposition erratum](../../research/2026-10-31/seed_superposition/RATIONAL_SEED_NORMALITY_ERRATUM.md).
+**Resisted.** Classical BBP itself, exact π identity, fixed-frequency source matching and lots of certified digits do not establish normality. The coherent irrational seed $`-\pi/16`$ yields a constant completed orbit with the same forcing; epoch-dependent rational shadows preserve many local signatures while spoofing a finite window. A **fixed rational** seed shift generally preserves normality status rather than furnishing a global nonnormal rational counterexample; see [seed-superposition erratum](../../research/2026-10-31/seed_superposition/RATIONAL_SEED_NORMALITY_ERRATUM.md).
 
 ## 6. Totient/cototient, CRT and the 2/3/5 exceptional primes (late October)
 
