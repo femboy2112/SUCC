@@ -11,6 +11,9 @@
 
 This note isolates two **proved** generic arithmetic/computation facts, their **source-specific missing premise**, and a proposed (not yet constructed) proof-relevant lambda compiler.
 
+
+> **New Ω₄ × Ω₅ × Haar result:** [full source-driven wavelet/monodromy and oriented-defect proof](OMEGA_HAAR_WAVELET.md), with [exact rational and Fourier-probe library](omega_haar.py) and [12 fast standalone regressions](test_omega_haar.py). The derived six-step clock diamond, rank-two lossy commutator, source-positive chronological area, and inverse-branch Möbius parity bundle do **not** imply signed cancellation or π normality. These are paper proofs and bounded local tests; the long repository suite is not rerun.
+
 ## 1. Three different infinities, not one obstruction
 
 1. **Arithmetic:** `P_∞ = Σ_(j≥1)16^{-j}r(j) = π/16` is a limit of rational partial sums. Its equality to pi is the authenticated classical BBP identity.
