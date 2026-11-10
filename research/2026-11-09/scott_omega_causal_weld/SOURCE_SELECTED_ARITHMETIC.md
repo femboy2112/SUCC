@@ -113,6 +113,32 @@ orbit.  This is a precise, quantified statement of where the proof must live.
 | 5 | Uniform lag-k bound r(n)r(n+k) < (15/4)²/(n(n+k))² | PROVED (uniform two-time correlation) |
 | 6 | Zero-seed/shadow separation gap: |s_A+π/16| ≤ r(N+1)/(15·16^N)+1/D | PROVED (quantified obstruction) |
 | 7 | Parity Fourier support exactly on m ≡ 8 (mod 16), coeff 16/(π i m) | PROVED (exact structural) |
+| 8 | Parity mean = Σ_{m≡8(16)} (16/πim)·c_A(m), verified finite reconstruction | PROVED (exact reduction, verified) |
+
+---
+
+## Attack 7 (verified reduction): the parity mean is a single Weyl progression
+
+**Theorem F-11 (PROVED, verified finite).**  Combining F-10 with the completed
+orbit `{16^{n−1}π} = {U_n+T_n}` gives the **exact L² identity**
+
+    P_A = Σ_{m ≡ 8 (mod 16)} (16/πim) · c_A(m),
+
+where `c_A(m)` is the Weyl mean on the completed orbit.  Truncating to
+`|m| ≤ H` leaves a tail controlled by the step-function Fourier tail (weighted
+ℓ¹, `O(1/H)` at the jump-singularity scale).  The truncated reconstruction is
+**verified at finite A** against the exact completed-digit parity: at A=16,32,64
+the reconstruction with `|m|≤192` reproduces the direct parity mean to within a
+few parts in 10² (converging as H grows).  Digits used are the rigorous
+`duck_bbp` interval certificates (no π oracle).
+
+**This is the sharpest form of the reduction:** parity balance is *exactly* the
+vanishing of a single weighted sum over the arithmetic progression `m ≡ 8
+(mod 16)` of completed-orbit Weyl means.  It does **not** bound those means;
+normality and parity balance remain OPEN.
+
+**Receipt:** `observational_succ/parity_fourier_reconstruction.py` +
+`tests/test_parity_fourier_reconstruction.py` (3/3, exit 0).
 
 ---
 
