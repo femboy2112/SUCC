@@ -1,5 +1,7 @@
 # Ω arrows, productive BBP, and the exact carry cocycle
 
+> **Quantum-dagger continuation (10 Nov):** [Ω₄ × Ω₅ × Haar → finite quantum circuits](quantum_bridge/README.md) constructs reversible 2/3 butterflies, a rank-two Hermitian chirality observable, a heralded two-route defect interferometer, an explicit controlled four-qubit parity monodromy, and a strict rational BBP phase-precision bound. The old zero-seed signed cancellation remains **OPEN**; these are finite-dimensional constructions, not a MERA/quantum-speedup proof.
+
 > **Corrected research direction (10 Nov):** Instead of imposing an independent raw Ω clock, unfold the original four-pole BBP tree and recover its self-application by reverse-beta folding. The [two BBP fixed-point roots, exact Mellin intertwiner, and inverse-instability proof](INVERSE_BETA_BBP_ROOT.md) supersede the earlier assumption that Ω3 should be the starting object. See the [280 exact rational fold checks](inverse_beta_fold_probe.py). This is a paper-level construction, not yet a faithful AST lambda compiler or a π-normality proof.
 
 
