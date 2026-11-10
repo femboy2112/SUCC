@@ -30,3 +30,9 @@ New [SIGNED_BASEL_TAUBERIAN.md](SIGNED_BASEL_TAUBERIAN.md) proves for every boun
 An explicit inverse-Abel inequality bounds the epoch mean by 10 times the supremum of later weighted shell means. Applying this to the source-selected original-zero π orbit gives a precisely typed **normality-equivalent signed Ω–Basel trace criterion**, not a proof that its required o(1/A) cancellation holds. The fixed coherent bad seed has tail asymptotic 1/A and fails the gate.
 
 Focused stdlib test: python -W error research/2026-11-10/basel_crt_omega_phasebridge/test_signed_basel_tauberian.py (8 tests run locally). No expensive full suite or hosted CI claimed.
+
+## Lambert-W exact source-horizon inversion (follow-up)
+
+[LAMBERT_W_SIGNED_BASEL_GATE.md](LAMBERT_W_SIGNED_BASEL_GATE.md) proves a **finite, original-source-signed Basel tail certificate**: with integer (A\ge11,R\ge1,M=AR,h\ne0), the rational precision threshold (L^2 16^L\ge(11|h|AR/112)\sum_{n=A}^{M}16^n/n^2) guarantees an absolute discrepancy below (2/R) after multiplying by (A). Its exact continuous inverse uses the principal Lambert (W_0) branch and the horizon asymptotic (L=M-3\log_{16}M+O(1)) under the prior coupon-clock schedule. The separate (W_{-1}) formula inverts phase-sensitivity scale; **neither branch yields the original-zero asymptotic cancellation**. Includes Fourier-index decimation and irrational sparse-digit bad-seed controls.
+
+Focused independent file: `python -W error research/2026-11-10/basel_crt_omega_phasebridge/test_lambert_basel_gate.py` (**12 tests passed locally**, including Fraction-exact certificate inequalities, W branch checks and a noncertifying numerical phase smoke check). See [validation receipt](LAMBERT_VALIDATION.md). Full native/hosted CI not run or claimed for this research commit.
