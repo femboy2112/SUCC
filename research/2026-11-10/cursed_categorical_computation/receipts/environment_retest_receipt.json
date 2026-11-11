@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_eodcs_meta_choice_descent.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.239,
+  "repair": "python -m pip install --no-deps --no-build-isolation -e .",
+  "scope": "entire affected test module, including actual subprocess entrypoint; no source modification",
+  "full_suite_rerun_after_repair": false
+}

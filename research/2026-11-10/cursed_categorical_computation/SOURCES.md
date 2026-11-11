@@ -81,6 +81,46 @@ The freshly executed checks include the ten-idempotent/348-arrow transformation 
 
 The proof of full equivariant-map classification, the general category equivalences, the sparse affine inverse, the contraction theorem, and the exact-antipode obstruction are mathematical arguments. Their universal scope comes from those arguments, not from finite enumeration. Full repository tests, hosted CI, formal compilation, and external mathematical refereeing are distinct gates and are not asserted by this receipt.
 
+## Round III source extension
+
+The new notes contain their own theorem-level source links. The root audit
+directly opened Avery–Leinster's primary manuscript (including Examples 6.10
+and 6.12), Day's original paper scan, Bailey's BBP algorithm note and
+self-contained pi-transcendence proof, DLMF's continued-fraction formulas, and
+Edalat–Sünderhauf's exact-real domain paper. The constructor bearing read Booij's
+locator paper and Taylor's cut/interval development. These are primary
+mathematical bearings; same-model review is not external refereeing.
+
+- [Avery–Leinster, Isbell conjugacy and the reflexive completion](https://www.pure.ed.ac.uk/ws/portalfiles/portal/207987727/2102.08290_1_.pdf)
+  supplies the common completion mechanism: order cuts and enriched module duals
+  are different instances with different enrichments.
+- [Day, On closed categories of functors](https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/DayReport.pdf)
+  is the background for rational witness convolution. The exact Boolean
+  specialization used here is proved in the compiler note.
+- [Bailey, The BBP Algorithm for Pi](https://www.davidhbailey.com/dhbpapers/bbp-alg.pdf)
+  identifies the completed authentic source. The new rational tail bound is
+  derived directly from the four poles in COMPUTATION_GRAPH.md.
+- [Bailey, An elementary, self-contained proof that pi is transcendental](https://www.davidhbailey.com/dhbpapers/dhb-pi-trans.pdf)
+  is the directly inspected proof behind the classical hypothesis in Q(t) ≅ Q(pi).
+  Lindemann's [original publication record](https://doi.org/10.1007/BF01446522)
+  was verified; an archive PDF fetch was unavailable and is not claimed as read
+  by the root audit.
+- [Edalat–Sünderhauf, A domain-theoretic approach to computability on the real line](https://www.doc.ic.ac.uk/~ae/papers/real.pdf)
+  provides the interval-domain/computable-analysis background. The finite
+  certificate interface here has its own stated proofs and error budgets.
+- [Booij, Extensional constructive real analysis via locators](https://doi.org/10.1017/S0960129520000171)
+  distinguishes locatedness from locator structure. Computability is an explicit
+  additional hypothesis in this dossier.
+
+Additional pinned repository bearings:
+
+- [Signed-overlap construction at 41bbbe56](https://github.com/femboy2112/SUCC/blob/41bbbe56bbb36bcbf2a171669bf508caea6f688b/research/2026-11-10/zero_anchored_lambda_haar/CONSTRUCTION.md).
+- [Source-zero microscope at 81c2dccb](https://github.com/femboy2112/SUCC/blob/81c2dccb443e951b890ae55ad7a6f837c5609366/research/2026-11-10/zero_seed_microscope/MICROSCOPE_THEOREMS.md).
+- [Authentic 2-by-3 prime defect at 75dc9f9a](https://github.com/femboy2112/SUCC/blob/75dc9f9a230c5c71b3f580c5ac2f17780ba1d560/research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/DIRICHLET_PRIME_DEFECT.md).
+  Round III freshly recovers all eight individual phase cells underlying its
+  seven-row table and the inequality Im(a_6-a_3-a_2+a_1)<1-sqrt(3). This is a
+  known-result recovery, not a newly claimed all-clock result.
+
 ## Corrections and preserved limits
 
 1. The completed source normalization is $\pi=\sum_{n\ge1}16^{-(n-1)}r(n)$; $P_\infty=\pi/16$.
