@@ -1,0 +1,85 @@
+{
+  "truth_state": "OBSERVED_FINITE; pi normality and asymptotic contraction OPEN",
+  "source": "frozen four-pole BBP, original zero seed; rational shadow uses -P_100",
+  "tests": "exact rational source, certified completed phases, interval W1",
+  "rows": [
+    {
+      "seed": "original_zero",
+      "N": 16,
+      "parity": "1/4",
+      "haar_midpoint_display_only": "0.068336780728",
+      "haar_error_upper_display_only": "1.677e-19",
+      "theta_3_4_excess_sign": null,
+      "zero_anchor": true
+    },
+    {
+      "seed": "original_zero",
+      "N": 32,
+      "parity": "1/16",
+      "haar_midpoint_display_only": "0.115532192332",
+      "haar_error_upper_display_only": "1.065e-19",
+      "theta_3_4_excess_sign": "POSITIVE",
+      "zero_anchor": true
+    },
+    {
+      "seed": "original_zero",
+      "N": 64,
+      "parity": "7/32",
+      "haar_midpoint_display_only": "0.067482792577",
+      "haar_error_upper_display_only": "6.160e-20",
+      "theta_3_4_excess_sign": "NEGATIVE",
+      "zero_anchor": true
+    },
+    {
+      "seed": "original_zero",
+      "N": 128,
+      "parity": "3/32",
+      "haar_midpoint_display_only": "0.043046656583",
+      "haar_error_upper_display_only": "3.342e-20",
+      "theta_3_4_excess_sign": "NEGATIVE",
+      "zero_anchor": true
+    },
+    {
+      "seed": "original_zero",
+      "N": 256,
+      "parity": "-1/32",
+      "haar_midpoint_display_only": "0.014679132493",
+      "haar_error_upper_display_only": "1.745e-20",
+      "theta_3_4_excess_sign": "NEGATIVE",
+      "zero_anchor": true
+    },
+    {
+      "seed": "rational_shadow",
+      "N": 16,
+      "parity": "1",
+      "haar_midpoint_display_only": "0.468750000000",
+      "haar_error_upper_display_only": "2.662e-122",
+      "theta_3_4_excess_sign": null,
+      "zero_anchor": false
+    },
+    {
+      "seed": "rational_shadow",
+      "N": 32,
+      "parity": "1",
+      "haar_midpoint_display_only": "0.468750000000",
+      "haar_error_upper_display_only": "2.717e-122",
+      "theta_3_4_excess_sign": "POSITIVE",
+      "zero_anchor": false
+    },
+    {
+      "seed": "rational_shadow",
+      "N": 64,
+      "parity": "1",
+      "haar_midpoint_display_only": "0.468750000000",
+      "haar_error_upper_display_only": "4.177e-65",
+      "theta_3_4_excess_sign": "POSITIVE",
+      "zero_anchor": false
+    }
+  ],
+  "constant_zero_counterorbit": {
+    "source_seed": "s_*=-pi/16 (nonrational, symbolic)",
+    "haar_defect_exact": "15/32",
+    "contraction_excess_theta_3_4_exact": "15/128",
+    "claim": "Same forcing and tail fixed point; source-zero authentication fails"
+  }
+}
