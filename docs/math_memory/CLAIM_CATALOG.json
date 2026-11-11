@@ -22151,7 +22151,7 @@
     "claim_supplements_scanned": 207,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2825
+    "source_documents_found": 2883
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -37638,6 +37638,96 @@
       "title": "Validation and provenance — BBP spatial Haar to two-digit lift"
     },
     {
+      "path": "research/2026-11-09/cayley_source_observer/AFFINE_SOURCE_ACTION.md",
+      "sha256": "f40cb70e1a0a60514c9fc5557dcdd90ac0767fa86f3cab158a467eb1f1befabf",
+      "size": 6591,
+      "title": "A faithful affine action on the indexed rational BBP source"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/BOUNDARY_PROOFS.md",
+      "sha256": "00c2112bb306c4dbc31fa28ad5ed82da43354fd17175ae458da9c20da44af69d",
+      "size": 24798,
+      "title": "Parity observation with boundary payment and finite source certificates"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/CAYLEY_PROOFS.md",
+      "sha256": "0eedea6effad1e080d2e00be31ef00dcf5edb85d8a617a7ad48f03589df2c361",
+      "size": 16128,
+      "title": "Cayley source observer: the circle on a line, with paid completion clocks"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/CLAIM_LEDGER.md",
+      "sha256": "ba6a95684aa02520d2f24cf6da871ec667211ddbb363b3bc1aae212a8abd8a0f",
+      "size": 6253,
+      "title": "Local claim ledger and arithmetic hole contract"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/ERRATA.md",
+      "sha256": "b10e5c6e6e09936b2cb90bbffb636c0b1454150e792c89440a1d1edd822b4fd3",
+      "size": 5680,
+      "title": "PR #576 audit: reproducible defects, repairs and surviving claims"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/NEXT.md",
+      "sha256": "33773c5dd0db2968d71b3b046a44165dd018d6c6ad6bd13ad86f8a223c4ea9e9",
+      "size": 4079,
+      "title": "Next source-selected theorem"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/PARITY_INDEPENDENT_REVIEW.md",
+      "sha256": "913c5284068da937738af596f453fb7b92350d8bebc93adeff5812a7b3ab9bb8",
+      "size": 8979,
+      "title": "Independent read-only audit: parity boundary certificate"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/PROTOCOL.md",
+      "sha256": "f913ba04850f702f72e384a90af63e63eee6c4bbe1c0a15371bb61eb1495ee6c",
+      "size": 2537,
+      "title": "Frozen finite probe protocol"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/README.md",
+      "sha256": "ab900e81e27d8ba88e915de1b40cc0eb8e4cbcb1f927c966b9103276ae29c79d",
+      "size": 4498,
+      "title": "Cayley line-circle observer, sound source semantics and parity frontier"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/SEMANTIC_AUDIT.md",
+      "sha256": "be090a0c34b8be168c52ab714f7b79950095ab5f00ec8a481dfe17004bafd2a6",
+      "size": 12313,
+      "title": "Semantic repairs to the Scott × Omega branch"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/SEMANTIC_INDEPENDENT_REVIEW.md",
+      "sha256": "28201ace426d04a29e9611cebd1153ff38448b752e6201cd8d232272f109bf77",
+      "size": 8696,
+      "title": "Independent semantic review of the repair working tree"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/SIGNED_COVARIANCE_AUDIT.md",
+      "sha256": "3626c28377a7407a0a894481de13e073fb3c7481af35fece320654f05a7507ce",
+      "size": 6411,
+      "title": "Signed covariance and finite parity convention audit"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/SOURCE_MAP.md",
+      "sha256": "0ed67f32dcadcd50104d24824444eb075dfeac5cfb0e8aaada157bb614f24c64",
+      "size": 5129,
+      "title": "Source and dependency map"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/VALIDATION.md",
+      "sha256": "34a7f7836e835d1c294a04fc3e09de73a21c6517aa3c0da73c0bf86304a5d6ba",
+      "size": 7030,
+      "title": "Validation record and execution limits"
+    },
+    {
+      "path": "research/2026-11-09/cayley_source_observer/review_probes/README.md",
+      "sha256": "167b659745bc3c0691b41a2c62f2302972ac04575f9aabe15b34ba5fb3cc74a7",
+      "size": 1919,
+      "title": "Reproducible independent review probes"
+    },
+    {
       "path": "research/2026-11-09/floor_layercake_prime_carry/CLAIM_LEDGER.md",
       "sha256": "af379bc661d7461c3590004a5b58ba11a5127934769b751eead2d1dc69631b50",
       "size": 2491,
@@ -37806,6 +37896,114 @@
       "title": "Validation and provenance"
     },
     {
+      "path": "research/2026-11-09/scott_omega_causal_weld/CLAIM_LEDGER.md",
+      "sha256": "fd15a055327a127e0c81530cc46aba8c75e3203f68b48760ffccb13bd03eefde",
+      "size": 6672,
+      "title": "Claim ledger — Scott × Omega × SUCC causal weld"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/CONNECTION_ATLAS.md",
+      "sha256": "ce1b924d26e0feda6347507222fe611b2a0aefa094bad10f2feabfc2255b758f",
+      "size": 7229,
+      "title": "Computational-recipe connection atlas: which SUCC tools actually attach?"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/C_MONOID_EMBEDDING.md",
+      "sha256": "9e3ebd45592f01638e2bb153c079b81dce59fc16d787e21a8cac8c9d244c3c9e",
+      "size": 4174,
+      "title": "Front A — lambda fragment, arithmetic actions and the unproved C-monoid embedding"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/DEEPSEEK_THEOREM_CAMPAIGN.md",
+      "sha256": "ea76940be125dc41bf529628dfc0ccbae416b0efb405a1bfb15c0c7cf8abeb13",
+      "size": 16188,
+      "title": "DeepSeek maximum theorem campaign — SUCC × Scott × Ω × C-monoid × causal weld"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/NEXT.md",
+      "sha256": "e5477b0374d3b50060bef42f0e2abcfbf0c5d89333fa84bc059839ea8429d08c",
+      "size": 4232,
+      "title": "Next proof obligations: the strict build sequence"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/OMEGA_INTERPRETER.md",
+      "sha256": "aa750bf33f2b0918384e811057699c54c2e0359f8aebc20e8a2bfbb8b1e5d938",
+      "size": 7972,
+      "title": "Omega-indexed causal computation: interpreter, simulation, and reflection"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/PINBED_TYPED_CALCULUS.md",
+      "sha256": "3af686b0e4dda067ae5db9d34692aa712076f3a52acaadb141f080d1f0009473",
+      "size": 11294,
+      "title": "Pinbed typed calculus: exact dimensional relations, CRT, and higher cells"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/README.md",
+      "sha256": "327eabf5cff1b76ce009b96d0ff7296715a97f8d07e8c9c20986a056ffbeda03",
+      "size": 5449,
+      "title": "SUCC × Scott × Ω — Causal Weld / Computational Descent"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/SCOTT_COFINAL_SCHEDULE.md",
+      "sha256": "09bf164e763ebddce195b2776ac0931a1fcd9f21af0ed4244aff366464695ada",
+      "size": 4167,
+      "title": "Front D — Scott causal weld: cofinal schedules and the completion discipline"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/SESSION_INDEX.md",
+      "sha256": "4aa45b1dc1c6a17b89c5924f223196bdefb06a4a8f31cab9480c63354d48bf2a",
+      "size": 4553,
+      "title": "Session idea → theorem chain (preserved without retrospective inflation)"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/SOURCE_MAP.md",
+      "sha256": "d5c17416fffd59de854a4318ad0ee89ec327adbddf872d0b4a13e09f9310b527",
+      "size": 3465,
+      "title": "Source and provenance map"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/SOURCE_SELECTED_ARITHMETIC.md",
+      "sha256": "7690dde2cf2cb4b10a146b8ee92eaaf6d137269ad5858004cd00ab3f9f1e21ee",
+      "size": 14011,
+      "title": "Front F — Source-selected arithmetic offensive: three attacks on the signed gap"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/THEOREMS.md",
+      "sha256": "c4651918fea2a3a5e4b98099e2164c30fd1b960de679430d1ab30c86e2249bbd",
+      "size": 9988,
+      "title": "Source-faithful causal completion: theorems, proofs, and boundaries"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/VALIDATION.md",
+      "sha256": "23148cb00019291e56481bdb1ea7519e35403539496f02dd7990154d868f5344",
+      "size": 2964,
+      "title": "Local validation receipts, limits, and replay commands"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/session_archive/SUCC_C_MONOID_CAUSAL_SHADOWS_LOCAL.md",
+      "sha256": "51a01042dd7011365efa1964a2be5559e9120724104aa50348e7b91f70bca2f7",
+      "size": 19993,
+      "title": "SUCC — C-monoid Carrier and Causally Generated Categorical Shadows"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/session_archive/SUCC_OMEGA_INFINITY_DESCENT_LOCAL.md",
+      "sha256": "e1fa10702e7dce9138067992a9758f6c4c2e45051cb500b377c46ec54c252cca",
+      "size": 14062,
+      "title": "SUCC Omega–Lambda: finite gluing defects, completion, and the Archimedean circle"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/session_archive/SUCC_OMEGA_LAMBDA_DIMENSIONAL_CALCULUS_LOCAL.md",
+      "sha256": "6b910fe75c0887dc981f7e1b2e63c26bf7811b1bc394932a959457c4935994d8",
+      "size": 19237,
+      "title": "SUCC × generalized omega combinators × dimensional pin-bed calculus"
+    },
+    {
+      "path": "research/2026-11-09/scott_omega_causal_weld/session_archive/SUCC_SCOTT_OMEGA_CAUSAL_WELD_LOCAL.md",
+      "sha256": "e2fa60419d4133266135f5812eaaba3070575ff84e3fb5869acc53733566270c",
+      "size": 10235,
+      "title": "SUCC × Ω × Scott: source-indexed causal weld at an infinite observational boundary"
+    },
+    {
       "path": "research/2026-11-09/tenacious_d_haar/CLAIM_LEDGER.md",
       "sha256": "21bb6255dbc11094771cd9f69d6508852a5001e1fa59927bccc4334601592d70",
       "size": 2031,
@@ -37840,6 +38038,138 @@
       "sha256": "7dc3b51475bf8b0381d87af5d40de53bd7bf067924e8a131a9efad04e91ceae6",
       "size": 2565,
       "title": "Validation, source binding and exact proof scope"
+    },
+    {
+      "path": "research/2026-11-10/bbp_graph_resonance/README.md",
+      "sha256": "dd297fbd20ddf169ea26bd4000e4fdaa67d33ab9cbbb383e73690c0262661f3a",
+      "size": 2625,
+      "title": "BBP fixed-point computational graph: resonance and statistical boundary"
+    },
+    {
+      "path": "research/2026-11-10/bbp_graph_resonance/RESEARCH_NOTE.md",
+      "sha256": "37b50187ef5d68a9a6b8fe2b795d6d1f92e0b724c9b19747a8da96e161040429",
+      "size": 12320,
+      "title": "BBP computational graph: algebraic resonance, holonomic closure, and the statistical fixed-point seam"
+    },
+    {
+      "path": "research/2026-11-10/bbp_graph_resonance/VALIDATION.md",
+      "sha256": "587758f81682da8721e9286e32d3b5ed5ecd4296699c31f51ebad04fe68a5832",
+      "size": 1983,
+      "title": "Claim authority and replay — BBP graph-resonance research"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/HAMILTONIAN_ENDPOINT.md",
+      "sha256": "d058d3c479b842ac0edc207ee5c26e4a291312180e0f607dd74cd08ec0261885",
+      "size": 11873,
+      "title": "Intrinsic arithmetic Hamiltonian and its operator domain"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/MELLIN_AUTHENTICATION.md",
+      "sha256": "60972f4769af2280a8206bca7ec553619cb4e468f5b923451628193dead49f50",
+      "size": 8037,
+      "title": "Exact finite Mellin aliases and source authentication"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/MELLIN_PHASE_PRECISION.md",
+      "sha256": "19ad42d1d05ddec728d8a73e43aa033d1c08b86f712fee9b9fe32664a30f3d7a",
+      "size": 2802,
+      "title": "Exact phase precision from positive Mellin data"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/PARITY_BOUNDARY.md",
+      "sha256": "088b5ddfbc6eada6d51a6eff3d89baaeebef123e48a218e0fc9bd9144b52bd3f",
+      "size": 7808,
+      "title": "Quantitative parity boundary control"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/PARITY_SCOPE.md",
+      "sha256": "c33e359429cab74c1cb2c840d54f988a9d3891f9d6968360a31223434e0bd8bb",
+      "size": 1699,
+      "title": "How much does the odd-eight gate ask for?"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/REVERSIBLE_BBP_ORACLE.md",
+      "sha256": "3b3460a9aa7ed007dfcaa942ae8bd4e025576e951448b59b5ab7e6c64ef172d5",
+      "size": 4811,
+      "title": "Finite reversible BBP carry oracle"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/INFINITARY_LEFT_SPINE.md",
+      "sha256": "d29351aae0edd0b8a25ae45b6482fea152552c9fd72917d923b56df6d5f6464c",
+      "size": 4828,
+      "title": "Ω₃: strong infinitary convergence without a head value"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/INVERSE_BETA_BBP_ROOT.md",
+      "sha256": "b20dcc77c8cdd3a359716fa3795043f0e38cb13cc731eb62ac33c692256b4772",
+      "size": 9329,
+      "title": "Reverse-beta folding of the authentic BBP tree: two roots and a faithful Mellin witness"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/OMEGA_HAAR_WAVELET.md",
+      "sha256": "7f3df14ede8d45b17445fd2ce7aabd98116c84d3bca7efd99b1c7f09c91b42f8",
+      "size": 14128,
+      "title": "Ω₄ × Ω₅ × Haar: the source clock, inverse-branch Möbius packet, and oriented defect"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/README.md",
+      "sha256": "ccad71a1425bb2f65ab371b8faf95b05028d4e1d7d7394265e8d90bfa0cad361",
+      "size": 12089,
+      "title": "Ω arrows, productive BBP, and the exact carry cocycle"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/CLAIM_LEDGER.md",
+      "sha256": "7183b11d94c85cdb8737919aed33bbd2b4b8e787c7c6a0a684b5335b3927bf36",
+      "size": 5499,
+      "title": "Claim ledger — arithmetic-carrier Ω–Haar and finite-Mellin reverse defects"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/NEXT.md",
+      "sha256": "de2ceeeea9e31d27be34217627a95a1555934f7575c35f0e81d760957297d174",
+      "size": 4288,
+      "title": "Next proof-producing objectives (π first; RH exploratory)"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/PROOFS.md",
+      "sha256": "e7172a62689923c3e6d46aca6dda74d16cbf6f6e88b1ac4c787104ea88112903",
+      "size": 8750,
+      "title": "Proof contracts, edge formulas, and hostile controls"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/README.md",
+      "sha256": "cb6395dafdb6330166965a60d5d30b22b6d18291a8469e94583ebbc17f994e10",
+      "size": 12801,
+      "title": "Source-first Ω–Haar carrier extension: arithmetic Hamiltonians and finite-Mellin inverse aliases"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/SOL_6_1_ULTRA_MAIN_INTEGRATION_PROMPT.md",
+      "sha256": "55dba7f4896dce1da40fb2bcdb7423008c40072098706b25c29e9e701e9df4cb",
+      "size": 10557,
+      "title": "GPT-6.1 SOL / CHATGPT WORK / ULTRA — OPERATION SUCC MAIN FRONTIER CONSOLIDATION"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/VALIDATION.md",
+      "sha256": "271492773e4092d72a2452af52af2a9e9c0e2daa08d838e09bdfab62cbf2659a",
+      "size": 3092,
+      "title": "Fast local validation and CI boundary — 2026-11-10"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/quantum_bridge/NEXT.md",
+      "sha256": "4826d9a1a254c08317ebaafc6254f42db5732d11ac440940d86ce37270f04189",
+      "size": 2794,
+      "title": "Next discriminating work: Ω–Haar quantum bridge"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/quantum_bridge/README.md",
+      "sha256": "24e76b3b652715aa34b54702acb97fc0d02651284c92532dcec9d6f7f55f482e",
+      "size": 18177,
+      "title": "Ω₄ × Ω₅ × Haar → finite quantum circuits: source-faithful dagger bridge"
+    },
+    {
+      "path": "research/2026-11-10/omega_bbp_operational_completion/quantum_bridge/VALIDATION.md",
+      "sha256": "7b591979ffa3895377a9faec97215c11f6f89056002ed5ada0f30d490791ac88",
+      "size": 2201,
+      "title": "Focused quantum bridge validation — 2026-11-10"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
@@ -39064,6 +39394,24 @@
       "sha256": "3d9311b5501a676b205c5b5ef62f91abd72f130b03fc455a9320fa5a63b2563c",
       "size": 1741,
       "title": ""
+    },
+    {
+      "path": "formal/scott_omega/FiniteSourceSquareCore.lean",
+      "sha256": "ce06dc9487a6afa9ba4ba04806abfed04bd3808fdf1ae1aaf622fa4d04e67617",
+      "size": 1958,
+      "title": "Finite source square — Lean kernel check (core-only, no Mathlib)"
+    },
+    {
+      "path": "formal/scott_omega/Lag1Autocorrelation.lean",
+      "sha256": "d2eb52a02041b95c32d92bbae9ed7a50286e4059c23041ae6ef47d3baeaeee09",
+      "size": 2288,
+      "title": "Lag-1 source autocorrelation bound — Lean kernel check (core-only)"
+    },
+    {
+      "path": "formal/scott_omega/ParityFourierSupport.lean",
+      "sha256": "ebe032c91dccdd1de4c93116fe1b0f5f2ca0705cdc0ad7f4cfdeeee3dafb599f",
+      "size": 876,
+      "title": "Parity character Fourier support — Lean kernel check (core-only)"
     },
     {
       "path": "formal/slope_rigidity/PrimitiveSlope.lean",

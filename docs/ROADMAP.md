@@ -1,4 +1,11 @@
-**2026-11-09 Main XXII — current research target.** The [canonical frontier](PI_NORMALITY_FRONTIER.md) and [next-round protocol](MAIN_XXII_NEXT_ROUND.md) supersede the dated entrypoints below. Prove an original-zero, all-epoch bound on the two prime-sign-conditioned complementary responses. Preserve all prime powers, global winding and real-tail costs, and reject the p-integral coherent control. This would prove only hexadecimal parity balance; parity, full pi normality and RH remain OPEN. [Integration audit](SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md).
+**2026-11-10 Main XXIII — integration candidate.** The [frontier](PI_NORMALITY_FRONTIER.md)
+and [tool atlas](MAIN_XXIII_TOOL_ATLAS.md) track the all-epoch odd-eight signed
+estimate for the literal zero seed. The narrower one-digit contrast remains a
+separate target. Both require the signed CRT and real-winding complement.
+The [integration audit](SUCC_MAIN_XXIII_INTEGRATION_AUDIT_2026-11-10.md)
+records proof scope and merge gates.
+
+**2026-11-09 Main XXII — prior research target.** The [canonical frontier](PI_NORMALITY_FRONTIER.md) and [next-round protocol](MAIN_XXII_NEXT_ROUND.md) supersede the dated entrypoints below. Prove an original-zero, all-epoch bound on the two prime-sign-conditioned complementary responses. Preserve all prime powers, global winding and real-tail costs, and reject the p-integral coherent control. This would prove only hexadecimal parity balance; parity, full pi normality and RH remain OPEN. [Integration audit](SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md).
 
 **2026-11-07 Operation Main XXI — pin-bed × golden/Fejér × adelic reunification (research integration).** Integrated the seven ancestry-minimal leaves (#532, #535, #537, #539, #540, #542, #543). Together they carry all 19 open research PRs not yet in main (#525–#543).
 - **Graph.** The Git graph corrects the planning schematic. #529 and #530 are *siblings* off #528. The shared root #525→#528 is carried once, and #543 carries #541. #542 is an independent sibling.
