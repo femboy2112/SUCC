@@ -1,3 +1,5 @@
+**Main XXIV current frontier (2026-11-11).** Source → exact carrier → zero-seed authentication → Dedekind/Yoneda identity → computational observers → signed statistical obligations. See [canonical frontier](PI_NORMALITY_FRONTIER.md), [handoff](MAIN_XXIV_HANDOFF.md), [integration audit](SUCC_MAIN_XXIV_INTEGRATION_AUDIT_2026-11-11.md) and [claim corrections](CLAIM_SUPPLEMENT_MAIN_XXIV.md). The next theorem is an original-zero, all-mode signed Basel tail estimate `A F_h(A;0)→0` for every fixed nonzero integer h and every sufficiently large integer epoch. Productive pi computation, exact seed identification, finite-height exclusion and two Haar marginals do not pay this estimate. Parity balance, pi normality, completed-Weil positivity and RH remain OPEN. The dated entries below are historical.
+
 **2026-11-10 Main XXIII — integration candidate.** The [frontier](PI_NORMALITY_FRONTIER.md)
 and [tool atlas](MAIN_XXIII_TOOL_ATLAS.md) track the all-epoch odd-eight signed
 estimate for the literal zero seed. The narrower one-digit contrast remains a

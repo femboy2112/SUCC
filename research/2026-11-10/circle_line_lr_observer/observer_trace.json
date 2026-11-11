@@ -1,0 +1,7215 @@
+{
+  "arrow_certificates": [
+    {
+      "arrow": "L",
+      "endpoints": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "mediant": "7/2",
+      "source_consumed": 1,
+      "source_stage": 1,
+      "step": 1
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        3,
+        1,
+        10,
+        3
+      ],
+      "mediant": "10/3",
+      "source_consumed": 0,
+      "source_stage": 1,
+      "step": 2
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        3,
+        1,
+        13,
+        4
+      ],
+      "mediant": "13/4",
+      "source_consumed": 1,
+      "source_stage": 2,
+      "step": 3
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        3,
+        1,
+        16,
+        5
+      ],
+      "mediant": "16/5",
+      "source_consumed": 0,
+      "source_stage": 2,
+      "step": 4
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        3,
+        1,
+        19,
+        6
+      ],
+      "mediant": "19/6",
+      "source_consumed": 1,
+      "source_stage": 3,
+      "step": 5
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "mediant": "22/7",
+      "source_consumed": 3,
+      "source_stage": 6,
+      "step": 6
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        25,
+        8,
+        22,
+        7
+      ],
+      "mediant": "25/8",
+      "source_consumed": 0,
+      "source_stage": 6,
+      "step": 7
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        47,
+        15,
+        22,
+        7
+      ],
+      "mediant": "47/15",
+      "source_consumed": 0,
+      "source_stage": 6,
+      "step": 8
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        69,
+        22,
+        22,
+        7
+      ],
+      "mediant": "69/22",
+      "source_consumed": 0,
+      "source_stage": 6,
+      "step": 9
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        91,
+        29,
+        22,
+        7
+      ],
+      "mediant": "91/29",
+      "source_consumed": 1,
+      "source_stage": 7,
+      "step": 10
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        113,
+        36,
+        22,
+        7
+      ],
+      "mediant": "113/36",
+      "source_consumed": 0,
+      "source_stage": 7,
+      "step": 11
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        135,
+        43,
+        22,
+        7
+      ],
+      "mediant": "135/43",
+      "source_consumed": 0,
+      "source_stage": 7,
+      "step": 12
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        157,
+        50,
+        22,
+        7
+      ],
+      "mediant": "157/50",
+      "source_consumed": 1,
+      "source_stage": 8,
+      "step": 13
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        179,
+        57,
+        22,
+        7
+      ],
+      "mediant": "179/57",
+      "source_consumed": 0,
+      "source_stage": 8,
+      "step": 14
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        201,
+        64,
+        22,
+        7
+      ],
+      "mediant": "201/64",
+      "source_consumed": 0,
+      "source_stage": 8,
+      "step": 15
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        223,
+        71,
+        22,
+        7
+      ],
+      "mediant": "223/71",
+      "source_consumed": 1,
+      "source_stage": 9,
+      "step": 16
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        245,
+        78,
+        22,
+        7
+      ],
+      "mediant": "245/78",
+      "source_consumed": 0,
+      "source_stage": 9,
+      "step": 17
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        267,
+        85,
+        22,
+        7
+      ],
+      "mediant": "267/85",
+      "source_consumed": 1,
+      "source_stage": 10,
+      "step": 18
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        289,
+        92,
+        22,
+        7
+      ],
+      "mediant": "289/92",
+      "source_consumed": 0,
+      "source_stage": 10,
+      "step": 19
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        311,
+        99,
+        22,
+        7
+      ],
+      "mediant": "311/99",
+      "source_consumed": 1,
+      "source_stage": 11,
+      "step": 20
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "mediant": "333/106",
+      "source_consumed": 1,
+      "source_stage": 12,
+      "step": 21
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "mediant": "355/113",
+      "source_consumed": 5,
+      "source_stage": 17,
+      "step": 22
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        688,
+        219,
+        355,
+        113
+      ],
+      "mediant": "688/219",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 23
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1043,
+        332,
+        355,
+        113
+      ],
+      "mediant": "1043/332",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 24
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1398,
+        445,
+        355,
+        113
+      ],
+      "mediant": "1398/445",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 25
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1753,
+        558,
+        355,
+        113
+      ],
+      "mediant": "1753/558",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 26
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        2108,
+        671,
+        355,
+        113
+      ],
+      "mediant": "2108/671",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 27
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        2463,
+        784,
+        355,
+        113
+      ],
+      "mediant": "2463/784",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 28
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        2818,
+        897,
+        355,
+        113
+      ],
+      "mediant": "2818/897",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 29
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        3173,
+        1010,
+        355,
+        113
+      ],
+      "mediant": "3173/1010",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 30
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        3528,
+        1123,
+        355,
+        113
+      ],
+      "mediant": "3528/1123",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 31
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        3883,
+        1236,
+        355,
+        113
+      ],
+      "mediant": "3883/1236",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 32
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        4238,
+        1349,
+        355,
+        113
+      ],
+      "mediant": "4238/1349",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 33
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        4593,
+        1462,
+        355,
+        113
+      ],
+      "mediant": "4593/1462",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 34
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        4948,
+        1575,
+        355,
+        113
+      ],
+      "mediant": "4948/1575",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 35
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        5303,
+        1688,
+        355,
+        113
+      ],
+      "mediant": "5303/1688",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 36
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        5658,
+        1801,
+        355,
+        113
+      ],
+      "mediant": "5658/1801",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 37
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        6013,
+        1914,
+        355,
+        113
+      ],
+      "mediant": "6013/1914",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 38
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        6368,
+        2027,
+        355,
+        113
+      ],
+      "mediant": "6368/2027",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 39
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        6723,
+        2140,
+        355,
+        113
+      ],
+      "mediant": "6723/2140",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 40
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        7078,
+        2253,
+        355,
+        113
+      ],
+      "mediant": "7078/2253",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 41
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        7433,
+        2366,
+        355,
+        113
+      ],
+      "mediant": "7433/2366",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 42
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        7788,
+        2479,
+        355,
+        113
+      ],
+      "mediant": "7788/2479",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 43
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        8143,
+        2592,
+        355,
+        113
+      ],
+      "mediant": "8143/2592",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 44
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        8498,
+        2705,
+        355,
+        113
+      ],
+      "mediant": "8498/2705",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 45
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        8853,
+        2818,
+        355,
+        113
+      ],
+      "mediant": "8853/2818",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 46
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        9208,
+        2931,
+        355,
+        113
+      ],
+      "mediant": "9208/2931",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 47
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        9563,
+        3044,
+        355,
+        113
+      ],
+      "mediant": "9563/3044",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 48
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        9918,
+        3157,
+        355,
+        113
+      ],
+      "mediant": "9918/3157",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 49
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        10273,
+        3270,
+        355,
+        113
+      ],
+      "mediant": "10273/3270",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 50
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        10628,
+        3383,
+        355,
+        113
+      ],
+      "mediant": "10628/3383",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 51
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        10983,
+        3496,
+        355,
+        113
+      ],
+      "mediant": "10983/3496",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 52
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        11338,
+        3609,
+        355,
+        113
+      ],
+      "mediant": "11338/3609",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 53
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        11693,
+        3722,
+        355,
+        113
+      ],
+      "mediant": "11693/3722",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 54
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        12048,
+        3835,
+        355,
+        113
+      ],
+      "mediant": "12048/3835",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 55
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        12403,
+        3948,
+        355,
+        113
+      ],
+      "mediant": "12403/3948",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 56
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        12758,
+        4061,
+        355,
+        113
+      ],
+      "mediant": "12758/4061",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 57
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        13113,
+        4174,
+        355,
+        113
+      ],
+      "mediant": "13113/4174",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 58
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        13468,
+        4287,
+        355,
+        113
+      ],
+      "mediant": "13468/4287",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 59
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        13823,
+        4400,
+        355,
+        113
+      ],
+      "mediant": "13823/4400",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 60
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        14178,
+        4513,
+        355,
+        113
+      ],
+      "mediant": "14178/4513",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 61
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        14533,
+        4626,
+        355,
+        113
+      ],
+      "mediant": "14533/4626",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 62
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        14888,
+        4739,
+        355,
+        113
+      ],
+      "mediant": "14888/4739",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 63
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        15243,
+        4852,
+        355,
+        113
+      ],
+      "mediant": "15243/4852",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 64
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        15598,
+        4965,
+        355,
+        113
+      ],
+      "mediant": "15598/4965",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 65
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        15953,
+        5078,
+        355,
+        113
+      ],
+      "mediant": "15953/5078",
+      "source_consumed": 0,
+      "source_stage": 17,
+      "step": 66
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        16308,
+        5191,
+        355,
+        113
+      ],
+      "mediant": "16308/5191",
+      "source_consumed": 1,
+      "source_stage": 18,
+      "step": 67
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        16663,
+        5304,
+        355,
+        113
+      ],
+      "mediant": "16663/5304",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 68
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        17018,
+        5417,
+        355,
+        113
+      ],
+      "mediant": "17018/5417",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 69
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        17373,
+        5530,
+        355,
+        113
+      ],
+      "mediant": "17373/5530",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 70
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        17728,
+        5643,
+        355,
+        113
+      ],
+      "mediant": "17728/5643",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 71
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        18083,
+        5756,
+        355,
+        113
+      ],
+      "mediant": "18083/5756",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 72
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        18438,
+        5869,
+        355,
+        113
+      ],
+      "mediant": "18438/5869",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 73
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        18793,
+        5982,
+        355,
+        113
+      ],
+      "mediant": "18793/5982",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 74
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        19148,
+        6095,
+        355,
+        113
+      ],
+      "mediant": "19148/6095",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 75
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        19503,
+        6208,
+        355,
+        113
+      ],
+      "mediant": "19503/6208",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 76
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        19858,
+        6321,
+        355,
+        113
+      ],
+      "mediant": "19858/6321",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 77
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        20213,
+        6434,
+        355,
+        113
+      ],
+      "mediant": "20213/6434",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 78
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        20568,
+        6547,
+        355,
+        113
+      ],
+      "mediant": "20568/6547",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 79
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        20923,
+        6660,
+        355,
+        113
+      ],
+      "mediant": "20923/6660",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 80
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        21278,
+        6773,
+        355,
+        113
+      ],
+      "mediant": "21278/6773",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 81
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        21633,
+        6886,
+        355,
+        113
+      ],
+      "mediant": "21633/6886",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 82
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        21988,
+        6999,
+        355,
+        113
+      ],
+      "mediant": "21988/6999",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 83
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        22343,
+        7112,
+        355,
+        113
+      ],
+      "mediant": "22343/7112",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 84
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        22698,
+        7225,
+        355,
+        113
+      ],
+      "mediant": "22698/7225",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 85
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        23053,
+        7338,
+        355,
+        113
+      ],
+      "mediant": "23053/7338",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 86
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        23408,
+        7451,
+        355,
+        113
+      ],
+      "mediant": "23408/7451",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 87
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        23763,
+        7564,
+        355,
+        113
+      ],
+      "mediant": "23763/7564",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 88
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        24118,
+        7677,
+        355,
+        113
+      ],
+      "mediant": "24118/7677",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 89
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        24473,
+        7790,
+        355,
+        113
+      ],
+      "mediant": "24473/7790",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 90
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        24828,
+        7903,
+        355,
+        113
+      ],
+      "mediant": "24828/7903",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 91
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        25183,
+        8016,
+        355,
+        113
+      ],
+      "mediant": "25183/8016",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 92
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        25538,
+        8129,
+        355,
+        113
+      ],
+      "mediant": "25538/8129",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 93
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        25893,
+        8242,
+        355,
+        113
+      ],
+      "mediant": "25893/8242",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 94
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        26248,
+        8355,
+        355,
+        113
+      ],
+      "mediant": "26248/8355",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 95
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        26603,
+        8468,
+        355,
+        113
+      ],
+      "mediant": "26603/8468",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 96
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        26958,
+        8581,
+        355,
+        113
+      ],
+      "mediant": "26958/8581",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 97
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        27313,
+        8694,
+        355,
+        113
+      ],
+      "mediant": "27313/8694",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 98
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        27668,
+        8807,
+        355,
+        113
+      ],
+      "mediant": "27668/8807",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 99
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "mediant": "28023/8920",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 100
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        28378,
+        9033,
+        355,
+        113
+      ],
+      "mediant": "28378/9033",
+      "source_consumed": 0,
+      "source_stage": 18,
+      "step": 101
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        28733,
+        9146,
+        355,
+        113
+      ],
+      "mediant": "28733/9146",
+      "source_consumed": 1,
+      "source_stage": 19,
+      "step": 102
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        29088,
+        9259,
+        355,
+        113
+      ],
+      "mediant": "29088/9259",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 103
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        29443,
+        9372,
+        355,
+        113
+      ],
+      "mediant": "29443/9372",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 104
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        29798,
+        9485,
+        355,
+        113
+      ],
+      "mediant": "29798/9485",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 105
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        30153,
+        9598,
+        355,
+        113
+      ],
+      "mediant": "30153/9598",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 106
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        30508,
+        9711,
+        355,
+        113
+      ],
+      "mediant": "30508/9711",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 107
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        30863,
+        9824,
+        355,
+        113
+      ],
+      "mediant": "30863/9824",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 108
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        31218,
+        9937,
+        355,
+        113
+      ],
+      "mediant": "31218/9937",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 109
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        31573,
+        10050,
+        355,
+        113
+      ],
+      "mediant": "31573/10050",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 110
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        31928,
+        10163,
+        355,
+        113
+      ],
+      "mediant": "31928/10163",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 111
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        32283,
+        10276,
+        355,
+        113
+      ],
+      "mediant": "32283/10276",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 112
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        32638,
+        10389,
+        355,
+        113
+      ],
+      "mediant": "32638/10389",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 113
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        32993,
+        10502,
+        355,
+        113
+      ],
+      "mediant": "32993/10502",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 114
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        33348,
+        10615,
+        355,
+        113
+      ],
+      "mediant": "33348/10615",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 115
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        33703,
+        10728,
+        355,
+        113
+      ],
+      "mediant": "33703/10728",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 116
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        34058,
+        10841,
+        355,
+        113
+      ],
+      "mediant": "34058/10841",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 117
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        34413,
+        10954,
+        355,
+        113
+      ],
+      "mediant": "34413/10954",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 118
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        34768,
+        11067,
+        355,
+        113
+      ],
+      "mediant": "34768/11067",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 119
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        35123,
+        11180,
+        355,
+        113
+      ],
+      "mediant": "35123/11180",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 120
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        35478,
+        11293,
+        355,
+        113
+      ],
+      "mediant": "35478/11293",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 121
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        35833,
+        11406,
+        355,
+        113
+      ],
+      "mediant": "35833/11406",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 122
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        36188,
+        11519,
+        355,
+        113
+      ],
+      "mediant": "36188/11519",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 123
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        36543,
+        11632,
+        355,
+        113
+      ],
+      "mediant": "36543/11632",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 124
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        36898,
+        11745,
+        355,
+        113
+      ],
+      "mediant": "36898/11745",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 125
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        37253,
+        11858,
+        355,
+        113
+      ],
+      "mediant": "37253/11858",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 126
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        37608,
+        11971,
+        355,
+        113
+      ],
+      "mediant": "37608/11971",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 127
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        37963,
+        12084,
+        355,
+        113
+      ],
+      "mediant": "37963/12084",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 128
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        38318,
+        12197,
+        355,
+        113
+      ],
+      "mediant": "38318/12197",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 129
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        38673,
+        12310,
+        355,
+        113
+      ],
+      "mediant": "38673/12310",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 130
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        39028,
+        12423,
+        355,
+        113
+      ],
+      "mediant": "39028/12423",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 131
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        39383,
+        12536,
+        355,
+        113
+      ],
+      "mediant": "39383/12536",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 132
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        39738,
+        12649,
+        355,
+        113
+      ],
+      "mediant": "39738/12649",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 133
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        40093,
+        12762,
+        355,
+        113
+      ],
+      "mediant": "40093/12762",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 134
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        40448,
+        12875,
+        355,
+        113
+      ],
+      "mediant": "40448/12875",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 135
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        40803,
+        12988,
+        355,
+        113
+      ],
+      "mediant": "40803/12988",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 136
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        41158,
+        13101,
+        355,
+        113
+      ],
+      "mediant": "41158/13101",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 137
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        41513,
+        13214,
+        355,
+        113
+      ],
+      "mediant": "41513/13214",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 138
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        41868,
+        13327,
+        355,
+        113
+      ],
+      "mediant": "41868/13327",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 139
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        42223,
+        13440,
+        355,
+        113
+      ],
+      "mediant": "42223/13440",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 140
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        42578,
+        13553,
+        355,
+        113
+      ],
+      "mediant": "42578/13553",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 141
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        42933,
+        13666,
+        355,
+        113
+      ],
+      "mediant": "42933/13666",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 142
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        43288,
+        13779,
+        355,
+        113
+      ],
+      "mediant": "43288/13779",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 143
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        43643,
+        13892,
+        355,
+        113
+      ],
+      "mediant": "43643/13892",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 144
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        43998,
+        14005,
+        355,
+        113
+      ],
+      "mediant": "43998/14005",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 145
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        44353,
+        14118,
+        355,
+        113
+      ],
+      "mediant": "44353/14118",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 146
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        44708,
+        14231,
+        355,
+        113
+      ],
+      "mediant": "44708/14231",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 147
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        45063,
+        14344,
+        355,
+        113
+      ],
+      "mediant": "45063/14344",
+      "source_consumed": 0,
+      "source_stage": 19,
+      "step": 148
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        45418,
+        14457,
+        355,
+        113
+      ],
+      "mediant": "45418/14457",
+      "source_consumed": 1,
+      "source_stage": 20,
+      "step": 149
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        45773,
+        14570,
+        355,
+        113
+      ],
+      "mediant": "45773/14570",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 150
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        46128,
+        14683,
+        355,
+        113
+      ],
+      "mediant": "46128/14683",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 151
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        46483,
+        14796,
+        355,
+        113
+      ],
+      "mediant": "46483/14796",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 152
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        46838,
+        14909,
+        355,
+        113
+      ],
+      "mediant": "46838/14909",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 153
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        47193,
+        15022,
+        355,
+        113
+      ],
+      "mediant": "47193/15022",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 154
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        47548,
+        15135,
+        355,
+        113
+      ],
+      "mediant": "47548/15135",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 155
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        47903,
+        15248,
+        355,
+        113
+      ],
+      "mediant": "47903/15248",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 156
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        48258,
+        15361,
+        355,
+        113
+      ],
+      "mediant": "48258/15361",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 157
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        48613,
+        15474,
+        355,
+        113
+      ],
+      "mediant": "48613/15474",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 158
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        48968,
+        15587,
+        355,
+        113
+      ],
+      "mediant": "48968/15587",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 159
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        49323,
+        15700,
+        355,
+        113
+      ],
+      "mediant": "49323/15700",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 160
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        49678,
+        15813,
+        355,
+        113
+      ],
+      "mediant": "49678/15813",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 161
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        50033,
+        15926,
+        355,
+        113
+      ],
+      "mediant": "50033/15926",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 162
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        50388,
+        16039,
+        355,
+        113
+      ],
+      "mediant": "50388/16039",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 163
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        50743,
+        16152,
+        355,
+        113
+      ],
+      "mediant": "50743/16152",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 164
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        51098,
+        16265,
+        355,
+        113
+      ],
+      "mediant": "51098/16265",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 165
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        51453,
+        16378,
+        355,
+        113
+      ],
+      "mediant": "51453/16378",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 166
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        51808,
+        16491,
+        355,
+        113
+      ],
+      "mediant": "51808/16491",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 167
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        52163,
+        16604,
+        355,
+        113
+      ],
+      "mediant": "52163/16604",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 168
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        52518,
+        16717,
+        355,
+        113
+      ],
+      "mediant": "52518/16717",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 169
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        52873,
+        16830,
+        355,
+        113
+      ],
+      "mediant": "52873/16830",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 170
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        53228,
+        16943,
+        355,
+        113
+      ],
+      "mediant": "53228/16943",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 171
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        53583,
+        17056,
+        355,
+        113
+      ],
+      "mediant": "53583/17056",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 172
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        53938,
+        17169,
+        355,
+        113
+      ],
+      "mediant": "53938/17169",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 173
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        54293,
+        17282,
+        355,
+        113
+      ],
+      "mediant": "54293/17282",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 174
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        54648,
+        17395,
+        355,
+        113
+      ],
+      "mediant": "54648/17395",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 175
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        55003,
+        17508,
+        355,
+        113
+      ],
+      "mediant": "55003/17508",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 176
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        55358,
+        17621,
+        355,
+        113
+      ],
+      "mediant": "55358/17621",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 177
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        55713,
+        17734,
+        355,
+        113
+      ],
+      "mediant": "55713/17734",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 178
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        56068,
+        17847,
+        355,
+        113
+      ],
+      "mediant": "56068/17847",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 179
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        56423,
+        17960,
+        355,
+        113
+      ],
+      "mediant": "56423/17960",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 180
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        56778,
+        18073,
+        355,
+        113
+      ],
+      "mediant": "56778/18073",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 181
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        57133,
+        18186,
+        355,
+        113
+      ],
+      "mediant": "57133/18186",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 182
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        57488,
+        18299,
+        355,
+        113
+      ],
+      "mediant": "57488/18299",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 183
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        57843,
+        18412,
+        355,
+        113
+      ],
+      "mediant": "57843/18412",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 184
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        58198,
+        18525,
+        355,
+        113
+      ],
+      "mediant": "58198/18525",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 185
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        58553,
+        18638,
+        355,
+        113
+      ],
+      "mediant": "58553/18638",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 186
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        58908,
+        18751,
+        355,
+        113
+      ],
+      "mediant": "58908/18751",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 187
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        59263,
+        18864,
+        355,
+        113
+      ],
+      "mediant": "59263/18864",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 188
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        59618,
+        18977,
+        355,
+        113
+      ],
+      "mediant": "59618/18977",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 189
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        59973,
+        19090,
+        355,
+        113
+      ],
+      "mediant": "59973/19090",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 190
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        60328,
+        19203,
+        355,
+        113
+      ],
+      "mediant": "60328/19203",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 191
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        60683,
+        19316,
+        355,
+        113
+      ],
+      "mediant": "60683/19316",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 192
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        61038,
+        19429,
+        355,
+        113
+      ],
+      "mediant": "61038/19429",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 193
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        61393,
+        19542,
+        355,
+        113
+      ],
+      "mediant": "61393/19542",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 194
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        61748,
+        19655,
+        355,
+        113
+      ],
+      "mediant": "61748/19655",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 195
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        62103,
+        19768,
+        355,
+        113
+      ],
+      "mediant": "62103/19768",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 196
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        62458,
+        19881,
+        355,
+        113
+      ],
+      "mediant": "62458/19881",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 197
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        62813,
+        19994,
+        355,
+        113
+      ],
+      "mediant": "62813/19994",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 198
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        63168,
+        20107,
+        355,
+        113
+      ],
+      "mediant": "63168/20107",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 199
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        63523,
+        20220,
+        355,
+        113
+      ],
+      "mediant": "63523/20220",
+      "source_consumed": 0,
+      "source_stage": 20,
+      "step": 200
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        63878,
+        20333,
+        355,
+        113
+      ],
+      "mediant": "63878/20333",
+      "source_consumed": 1,
+      "source_stage": 21,
+      "step": 201
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        64233,
+        20446,
+        355,
+        113
+      ],
+      "mediant": "64233/20446",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 202
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        64588,
+        20559,
+        355,
+        113
+      ],
+      "mediant": "64588/20559",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 203
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        64943,
+        20672,
+        355,
+        113
+      ],
+      "mediant": "64943/20672",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 204
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        65298,
+        20785,
+        355,
+        113
+      ],
+      "mediant": "65298/20785",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 205
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        65653,
+        20898,
+        355,
+        113
+      ],
+      "mediant": "65653/20898",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 206
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        66008,
+        21011,
+        355,
+        113
+      ],
+      "mediant": "66008/21011",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 207
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        66363,
+        21124,
+        355,
+        113
+      ],
+      "mediant": "66363/21124",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 208
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        66718,
+        21237,
+        355,
+        113
+      ],
+      "mediant": "66718/21237",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 209
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        67073,
+        21350,
+        355,
+        113
+      ],
+      "mediant": "67073/21350",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 210
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        67428,
+        21463,
+        355,
+        113
+      ],
+      "mediant": "67428/21463",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 211
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        67783,
+        21576,
+        355,
+        113
+      ],
+      "mediant": "67783/21576",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 212
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        68138,
+        21689,
+        355,
+        113
+      ],
+      "mediant": "68138/21689",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 213
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        68493,
+        21802,
+        355,
+        113
+      ],
+      "mediant": "68493/21802",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 214
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        68848,
+        21915,
+        355,
+        113
+      ],
+      "mediant": "68848/21915",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 215
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        69203,
+        22028,
+        355,
+        113
+      ],
+      "mediant": "69203/22028",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 216
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        69558,
+        22141,
+        355,
+        113
+      ],
+      "mediant": "69558/22141",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 217
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        69913,
+        22254,
+        355,
+        113
+      ],
+      "mediant": "69913/22254",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 218
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        70268,
+        22367,
+        355,
+        113
+      ],
+      "mediant": "70268/22367",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 219
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        70623,
+        22480,
+        355,
+        113
+      ],
+      "mediant": "70623/22480",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 220
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        70978,
+        22593,
+        355,
+        113
+      ],
+      "mediant": "70978/22593",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 221
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        71333,
+        22706,
+        355,
+        113
+      ],
+      "mediant": "71333/22706",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 222
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        71688,
+        22819,
+        355,
+        113
+      ],
+      "mediant": "71688/22819",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 223
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        72043,
+        22932,
+        355,
+        113
+      ],
+      "mediant": "72043/22932",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 224
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        72398,
+        23045,
+        355,
+        113
+      ],
+      "mediant": "72398/23045",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 225
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        72753,
+        23158,
+        355,
+        113
+      ],
+      "mediant": "72753/23158",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 226
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        73108,
+        23271,
+        355,
+        113
+      ],
+      "mediant": "73108/23271",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 227
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        73463,
+        23384,
+        355,
+        113
+      ],
+      "mediant": "73463/23384",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 228
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        73818,
+        23497,
+        355,
+        113
+      ],
+      "mediant": "73818/23497",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 229
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        74173,
+        23610,
+        355,
+        113
+      ],
+      "mediant": "74173/23610",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 230
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        74528,
+        23723,
+        355,
+        113
+      ],
+      "mediant": "74528/23723",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 231
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        74883,
+        23836,
+        355,
+        113
+      ],
+      "mediant": "74883/23836",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 232
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        75238,
+        23949,
+        355,
+        113
+      ],
+      "mediant": "75238/23949",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 233
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        75593,
+        24062,
+        355,
+        113
+      ],
+      "mediant": "75593/24062",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 234
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        75948,
+        24175,
+        355,
+        113
+      ],
+      "mediant": "75948/24175",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 235
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        76303,
+        24288,
+        355,
+        113
+      ],
+      "mediant": "76303/24288",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 236
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        76658,
+        24401,
+        355,
+        113
+      ],
+      "mediant": "76658/24401",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 237
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        77013,
+        24514,
+        355,
+        113
+      ],
+      "mediant": "77013/24514",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 238
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        77368,
+        24627,
+        355,
+        113
+      ],
+      "mediant": "77368/24627",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 239
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        77723,
+        24740,
+        355,
+        113
+      ],
+      "mediant": "77723/24740",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 240
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        78078,
+        24853,
+        355,
+        113
+      ],
+      "mediant": "78078/24853",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 241
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        78433,
+        24966,
+        355,
+        113
+      ],
+      "mediant": "78433/24966",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 242
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        78788,
+        25079,
+        355,
+        113
+      ],
+      "mediant": "78788/25079",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 243
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        79143,
+        25192,
+        355,
+        113
+      ],
+      "mediant": "79143/25192",
+      "source_consumed": 0,
+      "source_stage": 21,
+      "step": 244
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        79498,
+        25305,
+        355,
+        113
+      ],
+      "mediant": "79498/25305",
+      "source_consumed": 1,
+      "source_stage": 22,
+      "step": 245
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        79853,
+        25418,
+        355,
+        113
+      ],
+      "mediant": "79853/25418",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 246
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        80208,
+        25531,
+        355,
+        113
+      ],
+      "mediant": "80208/25531",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 247
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        80563,
+        25644,
+        355,
+        113
+      ],
+      "mediant": "80563/25644",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 248
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        80918,
+        25757,
+        355,
+        113
+      ],
+      "mediant": "80918/25757",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 249
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        81273,
+        25870,
+        355,
+        113
+      ],
+      "mediant": "81273/25870",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 250
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        81628,
+        25983,
+        355,
+        113
+      ],
+      "mediant": "81628/25983",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 251
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        81983,
+        26096,
+        355,
+        113
+      ],
+      "mediant": "81983/26096",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 252
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        82338,
+        26209,
+        355,
+        113
+      ],
+      "mediant": "82338/26209",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 253
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        82693,
+        26322,
+        355,
+        113
+      ],
+      "mediant": "82693/26322",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 254
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        83048,
+        26435,
+        355,
+        113
+      ],
+      "mediant": "83048/26435",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 255
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        83403,
+        26548,
+        355,
+        113
+      ],
+      "mediant": "83403/26548",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 256
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        83758,
+        26661,
+        355,
+        113
+      ],
+      "mediant": "83758/26661",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 257
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        84113,
+        26774,
+        355,
+        113
+      ],
+      "mediant": "84113/26774",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 258
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        84468,
+        26887,
+        355,
+        113
+      ],
+      "mediant": "84468/26887",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 259
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        84823,
+        27000,
+        355,
+        113
+      ],
+      "mediant": "84823/27000",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 260
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        85178,
+        27113,
+        355,
+        113
+      ],
+      "mediant": "85178/27113",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 261
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        85533,
+        27226,
+        355,
+        113
+      ],
+      "mediant": "85533/27226",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 262
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        85888,
+        27339,
+        355,
+        113
+      ],
+      "mediant": "85888/27339",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 263
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        86243,
+        27452,
+        355,
+        113
+      ],
+      "mediant": "86243/27452",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 264
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        86598,
+        27565,
+        355,
+        113
+      ],
+      "mediant": "86598/27565",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 265
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        86953,
+        27678,
+        355,
+        113
+      ],
+      "mediant": "86953/27678",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 266
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        87308,
+        27791,
+        355,
+        113
+      ],
+      "mediant": "87308/27791",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 267
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        87663,
+        27904,
+        355,
+        113
+      ],
+      "mediant": "87663/27904",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 268
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        88018,
+        28017,
+        355,
+        113
+      ],
+      "mediant": "88018/28017",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 269
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        88373,
+        28130,
+        355,
+        113
+      ],
+      "mediant": "88373/28130",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 270
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        88728,
+        28243,
+        355,
+        113
+      ],
+      "mediant": "88728/28243",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 271
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        89083,
+        28356,
+        355,
+        113
+      ],
+      "mediant": "89083/28356",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 272
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        89438,
+        28469,
+        355,
+        113
+      ],
+      "mediant": "89438/28469",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 273
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        89793,
+        28582,
+        355,
+        113
+      ],
+      "mediant": "89793/28582",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 274
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        90148,
+        28695,
+        355,
+        113
+      ],
+      "mediant": "90148/28695",
+      "source_consumed": 0,
+      "source_stage": 22,
+      "step": 275
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        90503,
+        28808,
+        355,
+        113
+      ],
+      "mediant": "90503/28808",
+      "source_consumed": 1,
+      "source_stage": 23,
+      "step": 276
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        90858,
+        28921,
+        355,
+        113
+      ],
+      "mediant": "90858/28921",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 277
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        91213,
+        29034,
+        355,
+        113
+      ],
+      "mediant": "91213/29034",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 278
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        91568,
+        29147,
+        355,
+        113
+      ],
+      "mediant": "91568/29147",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 279
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        91923,
+        29260,
+        355,
+        113
+      ],
+      "mediant": "91923/29260",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 280
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        92278,
+        29373,
+        355,
+        113
+      ],
+      "mediant": "92278/29373",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 281
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        92633,
+        29486,
+        355,
+        113
+      ],
+      "mediant": "92633/29486",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 282
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        92988,
+        29599,
+        355,
+        113
+      ],
+      "mediant": "92988/29599",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 283
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        93343,
+        29712,
+        355,
+        113
+      ],
+      "mediant": "93343/29712",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 284
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        93698,
+        29825,
+        355,
+        113
+      ],
+      "mediant": "93698/29825",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 285
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        94053,
+        29938,
+        355,
+        113
+      ],
+      "mediant": "94053/29938",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 286
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        94408,
+        30051,
+        355,
+        113
+      ],
+      "mediant": "94408/30051",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 287
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        94763,
+        30164,
+        355,
+        113
+      ],
+      "mediant": "94763/30164",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 288
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        95118,
+        30277,
+        355,
+        113
+      ],
+      "mediant": "95118/30277",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 289
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        95473,
+        30390,
+        355,
+        113
+      ],
+      "mediant": "95473/30390",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 290
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        95828,
+        30503,
+        355,
+        113
+      ],
+      "mediant": "95828/30503",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 291
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        96183,
+        30616,
+        355,
+        113
+      ],
+      "mediant": "96183/30616",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 292
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        96538,
+        30729,
+        355,
+        113
+      ],
+      "mediant": "96538/30729",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 293
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        96893,
+        30842,
+        355,
+        113
+      ],
+      "mediant": "96893/30842",
+      "source_consumed": 0,
+      "source_stage": 23,
+      "step": 294
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        97248,
+        30955,
+        355,
+        113
+      ],
+      "mediant": "97248/30955",
+      "source_consumed": 1,
+      "source_stage": 24,
+      "step": 295
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        97603,
+        31068,
+        355,
+        113
+      ],
+      "mediant": "97603/31068",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 296
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        97958,
+        31181,
+        355,
+        113
+      ],
+      "mediant": "97958/31181",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 297
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        98313,
+        31294,
+        355,
+        113
+      ],
+      "mediant": "98313/31294",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 298
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        98668,
+        31407,
+        355,
+        113
+      ],
+      "mediant": "98668/31407",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 299
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        99023,
+        31520,
+        355,
+        113
+      ],
+      "mediant": "99023/31520",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 300
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        99378,
+        31633,
+        355,
+        113
+      ],
+      "mediant": "99378/31633",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 301
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        99733,
+        31746,
+        355,
+        113
+      ],
+      "mediant": "99733/31746",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 302
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        100088,
+        31859,
+        355,
+        113
+      ],
+      "mediant": "100088/31859",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 303
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        100443,
+        31972,
+        355,
+        113
+      ],
+      "mediant": "100443/31972",
+      "source_consumed": 0,
+      "source_stage": 24,
+      "step": 304
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        100798,
+        32085,
+        355,
+        113
+      ],
+      "mediant": "100798/32085",
+      "source_consumed": 1,
+      "source_stage": 25,
+      "step": 305
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        101153,
+        32198,
+        355,
+        113
+      ],
+      "mediant": "101153/32198",
+      "source_consumed": 0,
+      "source_stage": 25,
+      "step": 306
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        101508,
+        32311,
+        355,
+        113
+      ],
+      "mediant": "101508/32311",
+      "source_consumed": 0,
+      "source_stage": 25,
+      "step": 307
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        101863,
+        32424,
+        355,
+        113
+      ],
+      "mediant": "101863/32424",
+      "source_consumed": 0,
+      "source_stage": 25,
+      "step": 308
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        102218,
+        32537,
+        355,
+        113
+      ],
+      "mediant": "102218/32537",
+      "source_consumed": 0,
+      "source_stage": 25,
+      "step": 309
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        102573,
+        32650,
+        355,
+        113
+      ],
+      "mediant": "102573/32650",
+      "source_consumed": 1,
+      "source_stage": 26,
+      "step": 310
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        102928,
+        32763,
+        355,
+        113
+      ],
+      "mediant": "102928/32763",
+      "source_consumed": 0,
+      "source_stage": 26,
+      "step": 311
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        103283,
+        32876,
+        355,
+        113
+      ],
+      "mediant": "103283/32876",
+      "source_consumed": 0,
+      "source_stage": 26,
+      "step": 312
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        103638,
+        32989,
+        355,
+        113
+      ],
+      "mediant": "103638/32989",
+      "source_consumed": 1,
+      "source_stage": 27,
+      "step": 313
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "mediant": "103993/33102",
+      "source_consumed": 1,
+      "source_stage": 28,
+      "step": 314
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        103993,
+        33102,
+        104348,
+        33215
+      ],
+      "mediant": "104348/33215",
+      "source_consumed": 0,
+      "source_stage": 28,
+      "step": 315
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        208341,
+        66317,
+        104348,
+        33215
+      ],
+      "mediant": "208341/66317",
+      "source_consumed": 3,
+      "source_stage": 31,
+      "step": 316
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        208341,
+        66317,
+        312689,
+        99532
+      ],
+      "mediant": "312689/99532",
+      "source_consumed": 0,
+      "source_stage": 31,
+      "step": 317
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        521030,
+        165849,
+        312689,
+        99532
+      ],
+      "mediant": "521030/165849",
+      "source_consumed": 2,
+      "source_stage": 33,
+      "step": 318
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        833719,
+        265381,
+        312689,
+        99532
+      ],
+      "mediant": "833719/265381",
+      "source_consumed": 1,
+      "source_stage": 34,
+      "step": 319
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        833719,
+        265381,
+        1146408,
+        364913
+      ],
+      "mediant": "1146408/364913",
+      "source_consumed": 0,
+      "source_stage": 34,
+      "step": 320
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1980127,
+        630294,
+        1146408,
+        364913
+      ],
+      "mediant": "1980127/630294",
+      "source_consumed": 2,
+      "source_stage": 36,
+      "step": 321
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        3126535,
+        995207,
+        1146408,
+        364913
+      ],
+      "mediant": "3126535/995207",
+      "source_consumed": 1,
+      "source_stage": 37,
+      "step": 322
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        4272943,
+        1360120,
+        1146408,
+        364913
+      ],
+      "mediant": "4272943/1360120",
+      "source_consumed": 2,
+      "source_stage": 39,
+      "step": 323
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        4272943,
+        1360120,
+        5419351,
+        1725033
+      ],
+      "mediant": "5419351/1725033",
+      "source_consumed": 0,
+      "source_stage": 39,
+      "step": 324
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        9692294,
+        3085153,
+        5419351,
+        1725033
+      ],
+      "mediant": "9692294/3085153",
+      "source_consumed": 1,
+      "source_stage": 40,
+      "step": 325
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        15111645,
+        4810186,
+        5419351,
+        1725033
+      ],
+      "mediant": "15111645/4810186",
+      "source_consumed": 1,
+      "source_stage": 41,
+      "step": 326
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        20530996,
+        6535219,
+        5419351,
+        1725033
+      ],
+      "mediant": "20530996/6535219",
+      "source_consumed": 0,
+      "source_stage": 41,
+      "step": 327
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        25950347,
+        8260252,
+        5419351,
+        1725033
+      ],
+      "mediant": "25950347/8260252",
+      "source_consumed": 1,
+      "source_stage": 42,
+      "step": 328
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        31369698,
+        9985285,
+        5419351,
+        1725033
+      ],
+      "mediant": "31369698/9985285",
+      "source_consumed": 0,
+      "source_stage": 42,
+      "step": 329
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        36789049,
+        11710318,
+        5419351,
+        1725033
+      ],
+      "mediant": "36789049/11710318",
+      "source_consumed": 1,
+      "source_stage": 43,
+      "step": 330
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        42208400,
+        13435351,
+        5419351,
+        1725033
+      ],
+      "mediant": "42208400/13435351",
+      "source_consumed": 0,
+      "source_stage": 43,
+      "step": 331
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        47627751,
+        15160384,
+        5419351,
+        1725033
+      ],
+      "mediant": "47627751/15160384",
+      "source_consumed": 0,
+      "source_stage": 43,
+      "step": 332
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        53047102,
+        16885417,
+        5419351,
+        1725033
+      ],
+      "mediant": "53047102/16885417",
+      "source_consumed": 1,
+      "source_stage": 44,
+      "step": 333
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        58466453,
+        18610450,
+        5419351,
+        1725033
+      ],
+      "mediant": "58466453/18610450",
+      "source_consumed": 0,
+      "source_stage": 44,
+      "step": 334
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        63885804,
+        20335483,
+        5419351,
+        1725033
+      ],
+      "mediant": "63885804/20335483",
+      "source_consumed": 1,
+      "source_stage": 45,
+      "step": 335
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        69305155,
+        22060516,
+        5419351,
+        1725033
+      ],
+      "mediant": "69305155/22060516",
+      "source_consumed": 0,
+      "source_stage": 45,
+      "step": 336
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        74724506,
+        23785549,
+        5419351,
+        1725033
+      ],
+      "mediant": "74724506/23785549",
+      "source_consumed": 1,
+      "source_stage": 46,
+      "step": 337
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        80143857,
+        25510582,
+        5419351,
+        1725033
+      ],
+      "mediant": "80143857/25510582",
+      "source_consumed": 2,
+      "source_stage": 48,
+      "step": 338
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        80143857,
+        25510582,
+        85563208,
+        27235615
+      ],
+      "mediant": "85563208/27235615",
+      "source_consumed": 0,
+      "source_stage": 48,
+      "step": 339
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        80143857,
+        25510582,
+        165707065,
+        52746197
+      ],
+      "mediant": "165707065/52746197",
+      "source_consumed": 0,
+      "source_stage": 48,
+      "step": 340
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        245850922,
+        78256779,
+        165707065,
+        52746197
+      ],
+      "mediant": "245850922/78256779",
+      "source_consumed": 3,
+      "source_stage": 51,
+      "step": 341
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        245850922,
+        78256779,
+        411557987,
+        131002976
+      ],
+      "mediant": "411557987/131002976",
+      "source_consumed": 0,
+      "source_stage": 51,
+      "step": 342
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        657408909,
+        209259755,
+        411557987,
+        131002976
+      ],
+      "mediant": "657408909/209259755",
+      "source_consumed": 2,
+      "source_stage": 53,
+      "step": 343
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1068966896,
+        340262731,
+        411557987,
+        131002976
+      ],
+      "mediant": "1068966896/340262731",
+      "source_consumed": 3,
+      "source_stage": 56,
+      "step": 344
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        1068966896,
+        340262731,
+        1480524883,
+        471265707
+      ],
+      "mediant": "1480524883/471265707",
+      "source_consumed": 0,
+      "source_stage": 56,
+      "step": 345
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        1068966896,
+        340262731,
+        2549491779,
+        811528438
+      ],
+      "mediant": "2549491779/811528438",
+      "source_consumed": 0,
+      "source_stage": 56,
+      "step": 346
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        3618458675,
+        1151791169,
+        2549491779,
+        811528438
+      ],
+      "mediant": "3618458675/1151791169",
+      "source_consumed": 2,
+      "source_stage": 58,
+      "step": 347
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        6167950454,
+        1963319607,
+        2549491779,
+        811528438
+      ],
+      "mediant": "6167950454/1963319607",
+      "source_consumed": 3,
+      "source_stage": 61,
+      "step": 348
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        6167950454,
+        1963319607,
+        8717442233,
+        2774848045
+      ],
+      "mediant": "8717442233/2774848045",
+      "source_consumed": 0,
+      "source_stage": 61,
+      "step": 349
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        6167950454,
+        1963319607,
+        14885392687,
+        4738167652
+      ],
+      "mediant": "14885392687/4738167652",
+      "source_consumed": 0,
+      "source_stage": 61,
+      "step": 350
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        14885392687,
+        4738167652
+      ],
+      "mediant": "21053343141/6701487259",
+      "source_consumed": 8,
+      "source_stage": 69,
+      "step": 351
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        35938735828,
+        11439654911
+      ],
+      "mediant": "35938735828/11439654911",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 352
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        56992078969,
+        18141142170
+      ],
+      "mediant": "56992078969/18141142170",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 353
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        78045422110,
+        24842629429
+      ],
+      "mediant": "78045422110/24842629429",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 354
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        99098765251,
+        31544116688
+      ],
+      "mediant": "99098765251/31544116688",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 355
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        120152108392,
+        38245603947
+      ],
+      "mediant": "120152108392/38245603947",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 356
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        141205451533,
+        44947091206
+      ],
+      "mediant": "141205451533/44947091206",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 357
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        162258794674,
+        51648578465
+      ],
+      "mediant": "162258794674/51648578465",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 358
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        183312137815,
+        58350065724
+      ],
+      "mediant": "183312137815/58350065724",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 359
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        204365480956,
+        65051552983
+      ],
+      "mediant": "204365480956/65051552983",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 360
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        225418824097,
+        71753040242
+      ],
+      "mediant": "225418824097/71753040242",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 361
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        246472167238,
+        78454527501
+      ],
+      "mediant": "246472167238/78454527501",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 362
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        267525510379,
+        85156014760
+      ],
+      "mediant": "267525510379/85156014760",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 363
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        288578853520,
+        91857502019
+      ],
+      "mediant": "288578853520/91857502019",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 364
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        309632196661,
+        98558989278
+      ],
+      "mediant": "309632196661/98558989278",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 365
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        330685539802,
+        105260476537
+      ],
+      "mediant": "330685539802/105260476537",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 366
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        351738882943,
+        111961963796
+      ],
+      "mediant": "351738882943/111961963796",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 367
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        372792226084,
+        118663451055
+      ],
+      "mediant": "372792226084/118663451055",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 368
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        393845569225,
+        125364938314
+      ],
+      "mediant": "393845569225/125364938314",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 369
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        414898912366,
+        132066425573
+      ],
+      "mediant": "414898912366/132066425573",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 370
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        435952255507,
+        138767912832
+      ],
+      "mediant": "435952255507/138767912832",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 371
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        457005598648,
+        145469400091
+      ],
+      "mediant": "457005598648/145469400091",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 372
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        478058941789,
+        152170887350
+      ],
+      "mediant": "478058941789/152170887350",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 373
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        499112284930,
+        158872374609
+      ],
+      "mediant": "499112284930/158872374609",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 374
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        520165628071,
+        165573861868
+      ],
+      "mediant": "520165628071/165573861868",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 375
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        541218971212,
+        172275349127
+      ],
+      "mediant": "541218971212/172275349127",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 376
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        562272314353,
+        178976836386
+      ],
+      "mediant": "562272314353/178976836386",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 377
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        583325657494,
+        185678323645
+      ],
+      "mediant": "583325657494/185678323645",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 378
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        604379000635,
+        192379810904
+      ],
+      "mediant": "604379000635/192379810904",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 379
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        625432343776,
+        199081298163
+      ],
+      "mediant": "625432343776/199081298163",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 380
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        646485686917,
+        205782785422
+      ],
+      "mediant": "646485686917/205782785422",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 381
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        667539030058,
+        212484272681
+      ],
+      "mediant": "667539030058/212484272681",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 382
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        688592373199,
+        219185759940
+      ],
+      "mediant": "688592373199/219185759940",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 383
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        709645716340,
+        225887247199
+      ],
+      "mediant": "709645716340/225887247199",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 384
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        730699059481,
+        232588734458
+      ],
+      "mediant": "730699059481/232588734458",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 385
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        751752402622,
+        239290221717
+      ],
+      "mediant": "751752402622/239290221717",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 386
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        772805745763,
+        245991708976
+      ],
+      "mediant": "772805745763/245991708976",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 387
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        793859088904,
+        252693196235
+      ],
+      "mediant": "793859088904/252693196235",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 388
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        814912432045,
+        259394683494
+      ],
+      "mediant": "814912432045/259394683494",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 389
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        835965775186,
+        266096170753
+      ],
+      "mediant": "835965775186/266096170753",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 390
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        857019118327,
+        272797658012
+      ],
+      "mediant": "857019118327/272797658012",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 391
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        878072461468,
+        279499145271
+      ],
+      "mediant": "878072461468/279499145271",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 392
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        899125804609,
+        286200632530
+      ],
+      "mediant": "899125804609/286200632530",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 393
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        920179147750,
+        292902119789
+      ],
+      "mediant": "920179147750/292902119789",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 394
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        941232490891,
+        299603607048
+      ],
+      "mediant": "941232490891/299603607048",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 395
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        962285834032,
+        306305094307
+      ],
+      "mediant": "962285834032/306305094307",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 396
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        983339177173,
+        313006581566
+      ],
+      "mediant": "983339177173/313006581566",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 397
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1004392520314,
+        319708068825
+      ],
+      "mediant": "1004392520314/319708068825",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 398
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1025445863455,
+        326409556084
+      ],
+      "mediant": "1025445863455/326409556084",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 399
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1046499206596,
+        333111043343
+      ],
+      "mediant": "1046499206596/333111043343",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 400
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1067552549737,
+        339812530602
+      ],
+      "mediant": "1067552549737/339812530602",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 401
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1088605892878,
+        346514017861
+      ],
+      "mediant": "1088605892878/346514017861",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 402
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1109659236019,
+        353215505120
+      ],
+      "mediant": "1109659236019/353215505120",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 403
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1130712579160,
+        359916992379
+      ],
+      "mediant": "1130712579160/359916992379",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 404
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1151765922301,
+        366618479638
+      ],
+      "mediant": "1151765922301/366618479638",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 405
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1172819265442,
+        373319966897
+      ],
+      "mediant": "1172819265442/373319966897",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 406
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1193872608583,
+        380021454156
+      ],
+      "mediant": "1193872608583/380021454156",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 407
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1214925951724,
+        386722941415
+      ],
+      "mediant": "1214925951724/386722941415",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 408
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1235979294865,
+        393424428674
+      ],
+      "mediant": "1235979294865/393424428674",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 409
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1257032638006,
+        400125915933
+      ],
+      "mediant": "1257032638006/400125915933",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 410
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1278085981147,
+        406827403192
+      ],
+      "mediant": "1278085981147/406827403192",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 411
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1299139324288,
+        413528890451
+      ],
+      "mediant": "1299139324288/413528890451",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 412
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1320192667429,
+        420230377710
+      ],
+      "mediant": "1320192667429/420230377710",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 413
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1341246010570,
+        426931864969
+      ],
+      "mediant": "1341246010570/426931864969",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 414
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1362299353711,
+        433633352228
+      ],
+      "mediant": "1362299353711/433633352228",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 415
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1383352696852,
+        440334839487
+      ],
+      "mediant": "1383352696852/440334839487",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 416
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1404406039993,
+        447036326746
+      ],
+      "mediant": "1404406039993/447036326746",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 417
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1425459383134,
+        453737814005
+      ],
+      "mediant": "1425459383134/453737814005",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 418
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1446512726275,
+        460439301264
+      ],
+      "mediant": "1446512726275/460439301264",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 419
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1467566069416,
+        467140788523
+      ],
+      "mediant": "1467566069416/467140788523",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 420
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1488619412557,
+        473842275782
+      ],
+      "mediant": "1488619412557/473842275782",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 421
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1509672755698,
+        480543763041
+      ],
+      "mediant": "1509672755698/480543763041",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 422
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1530726098839,
+        487245250300
+      ],
+      "mediant": "1530726098839/487245250300",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 423
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1551779441980,
+        493946737559
+      ],
+      "mediant": "1551779441980/493946737559",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 424
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1572832785121,
+        500648224818
+      ],
+      "mediant": "1572832785121/500648224818",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 425
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1593886128262,
+        507349712077
+      ],
+      "mediant": "1593886128262/507349712077",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 426
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1614939471403,
+        514051199336
+      ],
+      "mediant": "1614939471403/514051199336",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 427
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1635992814544,
+        520752686595
+      ],
+      "mediant": "1635992814544/520752686595",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 428
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1657046157685,
+        527454173854
+      ],
+      "mediant": "1657046157685/527454173854",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 429
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1678099500826,
+        534155661113
+      ],
+      "mediant": "1678099500826/534155661113",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 430
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1699152843967,
+        540857148372
+      ],
+      "mediant": "1699152843967/540857148372",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 431
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1720206187108,
+        547558635631
+      ],
+      "mediant": "1720206187108/547558635631",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 432
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1741259530249,
+        554260122890
+      ],
+      "mediant": "1741259530249/554260122890",
+      "source_consumed": 0,
+      "source_stage": 69,
+      "step": 433
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1762312873390,
+        560961610149
+      ],
+      "mediant": "1762312873390/560961610149",
+      "source_consumed": 1,
+      "source_stage": 70,
+      "step": 434
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        21053343141,
+        6701487259,
+        1783366216531,
+        567663097408
+      ],
+      "mediant": "1783366216531/567663097408",
+      "source_consumed": 1,
+      "source_stage": 71,
+      "step": 435
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1804419559672,
+        574364584667,
+        1783366216531,
+        567663097408
+      ],
+      "mediant": "1804419559672/574364584667",
+      "source_consumed": 5,
+      "source_stage": 76,
+      "step": 436
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        3587785776203,
+        1142027682075,
+        1783366216531,
+        567663097408
+      ],
+      "mediant": "3587785776203/1142027682075",
+      "source_consumed": 3,
+      "source_stage": 79,
+      "step": 437
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        3587785776203,
+        1142027682075,
+        5371151992734,
+        1709690779483
+      ],
+      "mediant": "5371151992734/1709690779483",
+      "source_consumed": 0,
+      "source_stage": 79,
+      "step": 438
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        5371151992734,
+        1709690779483
+      ],
+      "mediant": "8958937768937/2851718461558",
+      "source_consumed": 5,
+      "source_stage": 84,
+      "step": 439
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        14330089761671,
+        4561409241041
+      ],
+      "mediant": "14330089761671/4561409241041",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 440
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        23289027530608,
+        7413127702599
+      ],
+      "mediant": "23289027530608/7413127702599",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 441
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        32247965299545,
+        10264846164157
+      ],
+      "mediant": "32247965299545/10264846164157",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 442
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        41206903068482,
+        13116564625715
+      ],
+      "mediant": "41206903068482/13116564625715",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 443
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        50165840837419,
+        15968283087273
+      ],
+      "mediant": "50165840837419/15968283087273",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 444
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        59124778606356,
+        18820001548831
+      ],
+      "mediant": "59124778606356/18820001548831",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 445
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        68083716375293,
+        21671720010389
+      ],
+      "mediant": "68083716375293/21671720010389",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 446
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        77042654144230,
+        24523438471947
+      ],
+      "mediant": "77042654144230/24523438471947",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 447
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        86001591913167,
+        27375156933505
+      ],
+      "mediant": "86001591913167/27375156933505",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 448
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        94960529682104,
+        30226875395063
+      ],
+      "mediant": "94960529682104/30226875395063",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 449
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        103919467451041,
+        33078593856621
+      ],
+      "mediant": "103919467451041/33078593856621",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 450
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        112878405219978,
+        35930312318179
+      ],
+      "mediant": "112878405219978/35930312318179",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 451
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        121837342988915,
+        38782030779737
+      ],
+      "mediant": "121837342988915/38782030779737",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 452
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        130796280757852,
+        41633749241295
+      ],
+      "mediant": "130796280757852/41633749241295",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 453
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        8958937768937,
+        2851718461558,
+        139755218526789,
+        44485467702853
+      ],
+      "mediant": "139755218526789/44485467702853",
+      "source_consumed": 0,
+      "source_stage": 84,
+      "step": 454
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        148714156295726,
+        47337186164411,
+        139755218526789,
+        44485467702853
+      ],
+      "mediant": "148714156295726/47337186164411",
+      "source_consumed": 4,
+      "source_stage": 88,
+      "step": 455
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        288469374822515,
+        91822653867264,
+        139755218526789,
+        44485467702853
+      ],
+      "mediant": "288469374822515/91822653867264",
+      "source_consumed": 2,
+      "source_stage": 90,
+      "step": 456
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        139755218526789,
+        44485467702853
+      ],
+      "mediant": "428224593349304/136308121570117",
+      "source_consumed": 5,
+      "source_stage": 95,
+      "step": 457
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        567979811876093,
+        180793589272970
+      ],
+      "mediant": "567979811876093/180793589272970",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 458
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        996204405225397,
+        317101710843087
+      ],
+      "mediant": "996204405225397/317101710843087",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 459
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        1424428998574701,
+        453409832413204
+      ],
+      "mediant": "1424428998574701/453409832413204",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 460
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        1852653591924005,
+        589717953983321
+      ],
+      "mediant": "1852653591924005/589717953983321",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 461
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        2280878185273309,
+        726026075553438
+      ],
+      "mediant": "2280878185273309/726026075553438",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 462
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        2709102778622613,
+        862334197123555
+      ],
+      "mediant": "2709102778622613/862334197123555",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 463
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        3137327371971917,
+        998642318693672
+      ],
+      "mediant": "3137327371971917/998642318693672",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 464
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        3565551965321221,
+        1134950440263789
+      ],
+      "mediant": "3565551965321221/1134950440263789",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 465
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        3993776558670525,
+        1271258561833906
+      ],
+      "mediant": "3993776558670525/1271258561833906",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 466
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        4422001152019829,
+        1407566683404023
+      ],
+      "mediant": "4422001152019829/1407566683404023",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 467
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        4850225745369133,
+        1543874804974140
+      ],
+      "mediant": "4850225745369133/1543874804974140",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 468
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        5278450338718437,
+        1680182926544257
+      ],
+      "mediant": "5278450338718437/1680182926544257",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 469
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        428224593349304,
+        136308121570117,
+        5706674932067741,
+        1816491048114374
+      ],
+      "mediant": "5706674932067741/1816491048114374",
+      "source_consumed": 0,
+      "source_stage": 95,
+      "step": 470
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        6134899525417045,
+        1952799169684491,
+        5706674932067741,
+        1816491048114374
+      ],
+      "mediant": "6134899525417045/1952799169684491",
+      "source_consumed": 6,
+      "source_stage": 101,
+      "step": 471
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        6134899525417045,
+        1952799169684491,
+        11841574457484786,
+        3769290217798865
+      ],
+      "mediant": "11841574457484786/3769290217798865",
+      "source_consumed": 0,
+      "source_stage": 101,
+      "step": 472
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        6134899525417045,
+        1952799169684491,
+        17976473982901831,
+        5722089387483356
+      ],
+      "mediant": "17976473982901831/5722089387483356",
+      "source_consumed": 0,
+      "source_stage": 101,
+      "step": 473
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        6134899525417045,
+        1952799169684491,
+        24111373508318876,
+        7674888557167847
+      ],
+      "mediant": "24111373508318876/7674888557167847",
+      "source_consumed": 0,
+      "source_stage": 101,
+      "step": 474
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        6134899525417045,
+        1952799169684491,
+        30246273033735921,
+        9627687726852338
+      ],
+      "mediant": "30246273033735921/9627687726852338",
+      "source_consumed": 0,
+      "source_stage": 101,
+      "step": 475
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        36381172559152966,
+        11580486896536829,
+        30246273033735921,
+        9627687726852338
+      ],
+      "mediant": "36381172559152966/11580486896536829",
+      "source_consumed": 3,
+      "source_stage": 104,
+      "step": 476
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        30246273033735921,
+        9627687726852338
+      ],
+      "mediant": "66627445592888887/21208174623389167",
+      "source_consumed": 4,
+      "source_stage": 108,
+      "step": 477
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        96873718626624808,
+        30835862350241505
+      ],
+      "mediant": "96873718626624808/30835862350241505",
+      "source_consumed": 0,
+      "source_stage": 108,
+      "step": 478
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        163501164219513695,
+        52044036973630672
+      ],
+      "mediant": "163501164219513695/52044036973630672",
+      "source_consumed": 0,
+      "source_stage": 108,
+      "step": 479
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        230128609812402582,
+        73252211597019839
+      ],
+      "mediant": "230128609812402582/73252211597019839",
+      "source_consumed": 0,
+      "source_stage": 108,
+      "step": 480
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        296756055405291469,
+        94460386220409006
+      ],
+      "mediant": "296756055405291469/94460386220409006",
+      "source_consumed": 0,
+      "source_stage": 108,
+      "step": 481
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        363383500998180356,
+        115668560843798173
+      ],
+      "mediant": "363383500998180356/115668560843798173",
+      "source_consumed": 0,
+      "source_stage": 108,
+      "step": 482
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        66627445592888887,
+        21208174623389167,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "430010946591069243/136876735467187340",
+      "source_consumed": 0,
+      "source_stage": 108,
+      "step": 483
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        496638392183958130,
+        158084910090576507,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "496638392183958130/158084910090576507",
+      "source_consumed": 3,
+      "source_stage": 111,
+      "step": 484
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        926649338775027373,
+        294961645557763847,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "926649338775027373/294961645557763847",
+      "source_consumed": 1,
+      "source_stage": 112,
+      "step": 485
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1356660285366096616,
+        431838381024951187,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "1356660285366096616/431838381024951187",
+      "source_consumed": 1,
+      "source_stage": 113,
+      "step": 486
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        1786671231957165859,
+        568715116492138527,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "1786671231957165859/568715116492138527",
+      "source_consumed": 1,
+      "source_stage": 114,
+      "step": 487
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        2216682178548235102,
+        705591851959325867,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "2216682178548235102/705591851959325867",
+      "source_consumed": 2,
+      "source_stage": 116,
+      "step": 488
+    },
+    {
+      "arrow": "R",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        430010946591069243,
+        136876735467187340
+      ],
+      "mediant": "2646693125139304345/842468587426513207",
+      "source_consumed": 7,
+      "source_stage": 123,
+      "step": 489
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        3076704071730373588,
+        979345322893700547
+      ],
+      "mediant": "3076704071730373588/979345322893700547",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 490
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        5723397196869677933,
+        1821813910320213754
+      ],
+      "mediant": "5723397196869677933/1821813910320213754",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 491
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        8370090322008982278,
+        2664282497746726961
+      ],
+      "mediant": "8370090322008982278/2664282497746726961",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 492
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        11016783447148286623,
+        3506751085173240168
+      ],
+      "mediant": "11016783447148286623/3506751085173240168",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 493
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        13663476572287590968,
+        4349219672599753375
+      ],
+      "mediant": "13663476572287590968/4349219672599753375",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 494
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        16310169697426895313,
+        5191688260026266582
+      ],
+      "mediant": "16310169697426895313/5191688260026266582",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 495
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        18956862822566199658,
+        6034156847452779789
+      ],
+      "mediant": "18956862822566199658/6034156847452779789",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 496
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        21603555947705504003,
+        6876625434879292996
+      ],
+      "mediant": "21603555947705504003/6876625434879292996",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 497
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        24250249072844808348,
+        7719094022305806203
+      ],
+      "mediant": "24250249072844808348/7719094022305806203",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 498
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        26896942197984112693,
+        8561562609732319410
+      ],
+      "mediant": "26896942197984112693/8561562609732319410",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 499
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        29543635323123417038,
+        9404031197158832617
+      ],
+      "mediant": "29543635323123417038/9404031197158832617",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 500
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        32190328448262721383,
+        10246499784585345824
+      ],
+      "mediant": "32190328448262721383/10246499784585345824",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 501
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        34837021573402025728,
+        11088968372011859031
+      ],
+      "mediant": "34837021573402025728/11088968372011859031",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 502
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        37483714698541330073,
+        11931436959438372238
+      ],
+      "mediant": "37483714698541330073/11931436959438372238",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 503
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        40130407823680634418,
+        12773905546864885445
+      ],
+      "mediant": "40130407823680634418/12773905546864885445",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 504
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        42777100948819938763,
+        13616374134291398652
+      ],
+      "mediant": "42777100948819938763/13616374134291398652",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 505
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        45423794073959243108,
+        14458842721717911859
+      ],
+      "mediant": "45423794073959243108/14458842721717911859",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 506
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        48070487199098547453,
+        15301311309144425066
+      ],
+      "mediant": "48070487199098547453/15301311309144425066",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 507
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        50717180324237851798,
+        16143779896570938273
+      ],
+      "mediant": "50717180324237851798/16143779896570938273",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 508
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        53363873449377156143,
+        16986248483997451480
+      ],
+      "mediant": "53363873449377156143/16986248483997451480",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 509
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        56010566574516460488,
+        17828717071423964687
+      ],
+      "mediant": "56010566574516460488/17828717071423964687",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 510
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        58657259699655764833,
+        18671185658850477894
+      ],
+      "mediant": "58657259699655764833/18671185658850477894",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 511
+    },
+    {
+      "arrow": "L",
+      "endpoints": [
+        2646693125139304345,
+        842468587426513207,
+        61303952824795069178,
+        19513654246276991101
+      ],
+      "mediant": "61303952824795069178/19513654246276991101",
+      "source_consumed": 0,
+      "source_stage": 123,
+      "step": 512
+    }
+  ],
+  "arrow_source_stage": 123,
+  "digit_certificates": [
+    {
+      "digit": "3",
+      "exponent": 0,
+      "floor": 3,
+      "source_stage": 123
+    },
+    {
+      "digit": "2",
+      "exponent": 1,
+      "floor": 50,
+      "source_stage": 123
+    },
+    {
+      "digit": "4",
+      "exponent": 2,
+      "floor": 804,
+      "source_stage": 123
+    },
+    {
+      "digit": "3",
+      "exponent": 3,
+      "floor": 12867,
+      "source_stage": 123
+    },
+    {
+      "digit": "F",
+      "exponent": 4,
+      "floor": 205887,
+      "source_stage": 123
+    },
+    {
+      "digit": "6",
+      "exponent": 5,
+      "floor": 3294198,
+      "source_stage": 123
+    },
+    {
+      "digit": "A",
+      "exponent": 6,
+      "floor": 52707178,
+      "source_stage": 123
+    },
+    {
+      "digit": "8",
+      "exponent": 7,
+      "floor": 843314856,
+      "source_stage": 123
+    },
+    {
+      "digit": "8",
+      "exponent": 8,
+      "floor": 13493037704,
+      "source_stage": 123
+    },
+    {
+      "digit": "8",
+      "exponent": 9,
+      "floor": 215888603272,
+      "source_stage": 123
+    },
+    {
+      "digit": "5",
+      "exponent": 10,
+      "floor": 3454217652357,
+      "source_stage": 123
+    },
+    {
+      "digit": "A",
+      "exponent": 11,
+      "floor": 55267482437722,
+      "source_stage": 123
+    },
+    {
+      "digit": "3",
+      "exponent": 12,
+      "floor": 884279719003555,
+      "source_stage": 123
+    },
+    {
+      "digit": "0",
+      "exponent": 13,
+      "floor": 14148475504056880,
+      "source_stage": 123
+    },
+    {
+      "digit": "8",
+      "exponent": 14,
+      "floor": 226375608064910088,
+      "source_stage": 123
+    },
+    {
+      "digit": "D",
+      "exponent": 15,
+      "floor": 3622009729038561421,
+      "source_stage": 123
+    },
+    {
+      "digit": "3",
+      "exponent": 16,
+      "floor": 57952155664616982739,
+      "source_stage": 123
+    },
+    {
+      "digit": "1",
+      "exponent": 17,
+      "floor": 927234490633871723825,
+      "source_stage": 123
+    },
+    {
+      "digit": "3",
+      "exponent": 18,
+      "floor": 14835751850141947581203,
+      "source_stage": 123
+    },
+    {
+      "digit": "1",
+      "exponent": 19,
+      "floor": 237372029602271161299249,
+      "source_stage": 123
+    },
+    {
+      "digit": "9",
+      "exponent": 20,
+      "floor": 3797952473636338580787993,
+      "source_stage": 123
+    },
+    {
+      "digit": "8",
+      "exponent": 21,
+      "floor": 60767239578181417292607896,
+      "source_stage": 123
+    },
+    {
+      "digit": "A",
+      "exponent": 22,
+      "floor": 972275833250902676681726346,
+      "source_stage": 123
+    },
+    {
+      "digit": "2",
+      "exponent": 23,
+      "floor": 15556413332014442826907621538,
+      "source_stage": 123
+    },
+    {
+      "digit": "E",
+      "exponent": 24,
+      "floor": 248902613312231085230521944622,
+      "source_stage": 123
+    },
+    {
+      "digit": "0",
+      "exponent": 25,
+      "floor": 3982441812995697363688351113952,
+      "source_stage": 123
+    },
+    {
+      "digit": "3",
+      "exponent": 26,
+      "floor": 63719069007931157819013617823235,
+      "source_stage": 123
+    },
+    {
+      "digit": "7",
+      "exponent": 27,
+      "floor": 1019505104126898525104217885171767,
+      "source_stage": 123
+    },
+    {
+      "digit": "0",
+      "exponent": 28,
+      "floor": 16312081666030376401667486162748272,
+      "source_stage": 123
+    },
+    {
+      "digit": "7",
+      "exponent": 29,
+      "floor": 260993306656486022426679778603972359,
+      "source_stage": 123
+    },
+    {
+      "digit": "3",
+      "exponent": 30,
+      "floor": 4175892906503776358826876457663557747,
+      "source_stage": 123
+    },
+    {
+      "digit": "4",
+      "exponent": 31,
+      "floor": 66814286504060421741230023322616923956,
+      "source_stage": 123
+    },
+    {
+      "digit": "4",
+      "exponent": 32,
+      "floor": 1069028584064966747859680373161870783300,
+      "source_stage": 125
+    },
+    {
+      "digit": "A",
+      "exponent": 33,
+      "floor": 17104457345039467965754885970589932532810,
+      "source_stage": 131
+    },
+    {
+      "digit": "4",
+      "exponent": 34,
+      "floor": 273671317520631487452078175529438920524964,
+      "source_stage": 138
+    },
+    {
+      "digit": "0",
+      "exponent": 35,
+      "floor": 4378741080330103799233250808471022728399424,
+      "source_stage": 138
+    },
+    {
+      "digit": "9",
+      "exponent": 36,
+      "floor": 70059857285281660787732012935536363654390793,
+      "source_stage": 143
+    },
+    {
+      "digit": "3",
+      "exponent": 37,
+      "floor": 1120957716564506572603712206968581818470252691,
+      "source_stage": 146
+    },
+    {
+      "digit": "8",
+      "exponent": 38,
+      "floor": 17935323465032105161659395311497309095524043064,
+      "source_stage": 152
+    },
+    {
+      "digit": "2",
+      "exponent": 39,
+      "floor": 286965175440513682586550324983956945528384689026,
+      "source_stage": 156
+    },
+    {
+      "digit": "2",
+      "exponent": 40,
+      "floor": 4591442807048218921384805199743311128454155024418,
+      "source_stage": 159
+    },
+    {
+      "digit": "2",
+      "exponent": 41,
+      "floor": 73463084912771502742156883195892978055266480390690,
+      "source_stage": 161
+    },
+    {
+      "digit": "9",
+      "exponent": 42,
+      "floor": 1175409358604344043874510131134287648884263686251049,
+      "source_stage": 165
+    },
+    {
+      "digit": "9",
+      "exponent": 43,
+      "floor": 18806549737669504701992162098148602382148218980016793,
+      "source_stage": 169
+    },
+    {
+      "digit": "F",
+      "exponent": 44,
+      "floor": 300904795802712075231874593570377638114371503680268703,
+      "source_stage": 175
+    },
+    {
+      "digit": "3",
+      "exponent": 45,
+      "floor": 4814476732843393203709993497126042209829944058884299251,
+      "source_stage": 180
+    },
+    {
+      "digit": "1",
+      "exponent": 46,
+      "floor": 77031627725494291259359895954016675357279104942148788017,
+      "source_stage": 181
+    },
+    {
+      "digit": "D",
+      "exponent": 47,
+      "floor": 1232506043607908660149758335264266805716465679074380608285,
+      "source_stage": 193
+    },
+    {
+      "digit": "0",
+      "exponent": 48,
+      "floor": 19720096697726538562396133364228268891463450865190089732560,
+      "source_stage": 193
+    },
+    {
+      "digit": "0",
+      "exponent": 49,
+      "floor": 315521547163624616998338133827652302263415213843041435720960,
+      "source_stage": 193
+    },
+    {
+      "digit": "8",
+      "exponent": 50,
+      "floor": 5048344754617993871973410141242436836214643421488662971535368,
+      "source_stage": 199
+    },
+    {
+      "digit": "2",
+      "exponent": 51,
+      "floor": 80773516073887901951574562259878989379434294743818607544565890,
+      "source_stage": 201
+    },
+    {
+      "digit": "E",
+      "exponent": 52,
+      "floor": 1292376257182206431225192996158063830070948715901097720713054254,
+      "source_stage": 205
+    },
+    {
+      "digit": "F",
+      "exponent": 53,
+      "floor": 20678020114915302899603087938529021281135179454417563531408868079,
+      "source_stage": 209
+    },
+    {
+      "digit": "A",
+      "exponent": 54,
+      "floor": 330848321838644846393649407016464340498162871270681016502541889274,
+      "source_stage": 213
+    },
+    {
+      "digit": "9",
+      "exponent": 55,
+      "floor": 5293573149418317542298390512263429447970605940330896264040670228393,
+      "source_stage": 217
+    },
+    {
+      "digit": "8",
+      "exponent": 56,
+      "floor": 84697170390693080676774248196214871167529695045294340224650723654296,
+      "source_stage": 221
+    },
+    {
+      "digit": "E",
+      "exponent": 57,
+      "floor": 1355154726251089290828387971139437938680475120724709443594411578468750,
+      "source_stage": 225
+    },
+    {
+      "digit": "C",
+      "exponent": 58,
+      "floor": 21682475620017428653254207538231007018887601931595351097510585255500012,
+      "source_stage": 230
+    },
+    {
+      "digit": "4",
+      "exponent": 59,
+      "floor": 346919609920278858452067320611696112302201630905525617560169364088000196,
+      "source_stage": 233
+    },
+    {
+      "digit": "E",
+      "exponent": 60,
+      "floor": 5550713758724461735233077129787137796835226094488409880962709825408003150,
+      "source_stage": 238
+    },
+    {
+      "digit": "6",
+      "exponent": 61,
+      "floor": 88811420139591387763729234076594204749363617511814558095403357206528050406,
+      "source_stage": 241
+    },
+    {
+      "digit": "C",
+      "exponent": 62,
+      "floor": 1420982722233462204219667745225507275989817880189032929526453715304448806508,
+      "source_stage": 245
+    },
+    {
+      "digit": "8",
+      "exponent": 63,
+      "floor": 22735723555735395267514683923608116415837086083024526872423259444871180904136,
+      "source_stage": 249
+    },
+    {
+      "digit": "9",
+      "exponent": 64,
+      "floor": 363771576891766324280234942777729862653393377328392429958772151117938894466185,
+      "source_stage": 254
+    }
+  ],
+  "endpoints": [
+    "2646693125139304345/842468587426513207",
+    "61303952824795069178/19513654246276991101"
+  ],
+  "final_source_interval": [
+    "230113326634399962745665573606799282267696519071436477157708228880355694465526986555838795638332441359399751198169242085549428726509068098770143190095132632764732433050207060765222543425150428347907990450341277388115017728/73247346810369298651903071099557979072216039642432949710389234675732768750102001285974817825809831148661290123993641325086924401900965008305646606428886048721946203288377842830920059623434101646117412656625454480462852875",
+    "659350506115759205574972990277361840308586014531336610767072289055460442594633601864747697298567903788598512075228322212798244151305495818279201575716805214115076735937377204121221827167170686211908861862006801848860672/209877784556932087827802495987272146338727907284908165359281474715566672636395419157520967982263126500462149352417310387068551294845171943569187984036922775707582244379306139916676388605828371478846454603511330889578375"
+  ],
+  "final_source_stage": 254,
+  "global_root_prefix": "RRRL",
+  "hexadecimal": "3.243F6A8885A308D313198A2E03707344A4093822299F31D0082EFA98EC4E6C89",
+  "interval_width": "1/16439640728390357956339811571797970907",
+  "last_run_may_be_incomplete": true,
+  "root_interval": [
+    "3",
+    "4"
+  ],
+  "runs": [
+    {
+      "arrow": "L",
+      "count": 6
+    },
+    {
+      "arrow": "R",
+      "count": 15
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 292
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 1
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 2
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 3
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 14
+    },
+    {
+      "arrow": "L",
+      "count": 2
+    },
+    {
+      "arrow": "R",
+      "count": 1
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 2
+    },
+    {
+      "arrow": "L",
+      "count": 2
+    },
+    {
+      "arrow": "R",
+      "count": 2
+    },
+    {
+      "arrow": "L",
+      "count": 2
+    },
+    {
+      "arrow": "R",
+      "count": 1
+    },
+    {
+      "arrow": "L",
+      "count": 84
+    },
+    {
+      "arrow": "R",
+      "count": 2
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 1
+    },
+    {
+      "arrow": "L",
+      "count": 15
+    },
+    {
+      "arrow": "R",
+      "count": 3
+    },
+    {
+      "arrow": "L",
+      "count": 13
+    },
+    {
+      "arrow": "R",
+      "count": 1
+    },
+    {
+      "arrow": "L",
+      "count": 4
+    },
+    {
+      "arrow": "R",
+      "count": 2
+    },
+    {
+      "arrow": "L",
+      "count": 6
+    },
+    {
+      "arrow": "R",
+      "count": 6
+    },
+    {
+      "arrow": "L",
+      "count": 23
+    }
+  ],
+  "schema": "succ.circle-line-lr.v1",
+  "semantics": {
+    "circle": "x*x + y*y = 1",
+    "line": "y = t*(x + 1)",
+    "metric": "ds*ds = dx*dx + dy*dy",
+    "ratio": "Euclidean circumference / diameter",
+    "runtime": "exact integers and rational numbers"
+  },
+  "source": "circle_beta_matrix",
+  "steps": 512,
+  "word": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLL"
+}

@@ -1,0 +1,108 @@
+{
+  "arithmetic": "integers and fractions.Fraction only",
+  "counts": {
+    "family_naturality_and_composition_cases": 7,
+    "floor_cases": 7,
+    "quadratic_matrix_products": 10000,
+    "rational_function_evaluations": 1944,
+    "sign_cases": 7
+  },
+  "floor_certificates": {
+    "0": {
+      "floor": 3,
+      "terms": 1
+    },
+    "1": {
+      "floor": 50,
+      "terms": 1
+    },
+    "16": {
+      "floor": 57952155664616982739,
+      "terms": 15
+    },
+    "2": {
+      "floor": 804,
+      "terms": 2
+    },
+    "32": {
+      "floor": 1069028584064966747859680373161870783300,
+      "terms": 30
+    },
+    "4": {
+      "floor": 205887,
+      "terms": 3
+    },
+    "8": {
+      "floor": 13493037704,
+      "terms": 7
+    }
+  },
+  "mutation_controls": [
+    "wrong quadratic relation",
+    "wrong factor cancellation",
+    "zero denominator",
+    "finite probe collision",
+    "lost variable correlation",
+    "unresolved sign interval"
+  ],
+  "python": "3.12.14",
+  "scope": "Finite implementation checks; algebraic and termination theorems require the note's proofs and pi transcendence. No normality claim.",
+  "script_sha256": "bcd652f5501779d890f3cfd3b01dbd8d436ce7819915e1349780c78f52b52eef",
+  "shared_pi_name_sha256": "8a2c1b494783af92a4a06f213334e25b15336c270792aeceb6846f241a6f0fae",
+  "sign_certificates": {
+    "22_over_7_minus_pi": {
+      "interval": [
+        "2741/2227680",
+        "47/32760"
+      ],
+      "sign": 1,
+      "terms": 2
+    },
+    "355_over_113_minus_pi": {
+      "interval": [
+        "25202227/102785511628800",
+        "5945969/12848188953600"
+      ],
+      "sign": 1,
+      "terms": 4
+    },
+    "exact_zero": {
+      "method": "exact polynomial identity",
+      "sign": 0,
+      "terms": 0
+    },
+    "pi_minus_3": {
+      "interval": [
+        "2/15",
+        "13/90"
+      ],
+      "sign": 1,
+      "terms": 1
+    },
+    "pi_minus_333_over_106": {
+      "interval": [
+        "809959/10389899520",
+        "8723983/103898995200"
+      ],
+      "sign": 1,
+      "terms": 3
+    },
+    "rational_function": {
+      "interval": [
+        "62/15",
+        "373/90"
+      ],
+      "sign": 1,
+      "terms": 1
+    },
+    "squared_close_difference": {
+      "interval": [
+        "94661621173171427/103422952079197470720000",
+        "236116770528691427/103422952079197470720000"
+      ],
+      "sign": 1,
+      "terms": 4
+    }
+  },
+  "status": "VERIFIED_FINITE"
+}

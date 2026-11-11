@@ -1,0 +1,49 @@
+{
+  "arithmetic": "exact integers and fractions; no floating point",
+  "boundary": "Finite regressions only; no asymptotic or normality claim",
+  "coding": {
+    "integer_order_comparisons": 2209,
+    "nonreduced_code_mutation": "REJECTED",
+    "roundtrips": 1187
+  },
+  "completion": {
+    "antichain_three": {
+      "fixed_cuts": 5,
+      "galois_pairs": 64,
+      "lattice_pairs": 25,
+      "subsets": 8
+    },
+    "chain_six": {
+      "fixed_cuts": 6,
+      "galois_pairs": 4096,
+      "lattice_pairs": 36,
+      "subsets": 64
+    },
+    "diamond_four": {
+      "fixed_cuts": 4,
+      "galois_pairs": 256,
+      "lattice_pairs": 16,
+      "subsets": 16
+    },
+    "union_without_closure_mutation": "REJECTED"
+  },
+  "python": "3.12.14",
+  "script_sha256": "b0f4cc8e374150975faadfc3d806d81c49f898716c367815d6293b7116e42c84",
+  "sqrt_two": {
+    "dyadic_enclosures": 128,
+    "finite_profile_implies_equality_mutation": "REJECTED",
+    "fresh_separating_probe": "1449/1024",
+    "indistinguishable_fixed_probes": 65,
+    "locator_paths": [
+      {
+        "prefer_lower": true,
+        "steps": 80
+      },
+      {
+        "prefer_lower": false,
+        "steps": 80
+      }
+    ]
+  },
+  "status": "PASS"
+}

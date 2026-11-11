@@ -1,0 +1,3115 @@
+[
+  {
+    "plan": {
+      "candidate_word": "L",
+      "construction_output_length": 1,
+      "derivative_bound_on_prefix": "1",
+      "escape_blocks": 7,
+      "escaped_cylinder": [
+        3,
+        1,
+        25,
+        8
+      ],
+      "escaped_width": "1/8",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 2,
+      "fixed_polynomial": [
+        0,
+        1,
+        -3
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 6,
+      "period": 1,
+      "period_witness_start_at_most": 5,
+      "polynomial_gap": "2056867/14549535",
+      "polynomial_range": [
+        "2056867/14549535",
+        "187337/1322685"
+      ],
+      "prefix": "",
+      "prefix_bracket": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "previous_width": "1/7",
+      "root_distance_lower_bound": "2056867/14549535",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "source_stage": 10,
+      "start": 0,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 16,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 16,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 5,
+      "different_output_index": 6,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLR",
+      "output_source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "output_source_stage": 10
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LL",
+      "construction_output_length": 2,
+      "derivative_bound_on_prefix": "1",
+      "escape_blocks": 4,
+      "escaped_cylinder": [
+        3,
+        1,
+        28,
+        9
+      ],
+      "escaped_width": "1/9",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 2,
+      "fixed_polynomial": [
+        0,
+        1,
+        -3
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 7,
+      "period": 2,
+      "period_witness_start_at_most": 5,
+      "polynomial_gap": "2056867/14549535",
+      "polynomial_range": [
+        "2056867/14549535",
+        "187337/1322685"
+      ],
+      "prefix": "",
+      "prefix_bracket": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "previous_width": "1/7",
+      "root_distance_lower_bound": "2056867/14549535",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "source_stage": 10,
+      "start": 0,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 16,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 16,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 4,
+      "different_output_index": 6,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLR",
+      "output_source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "output_source_stage": 10
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLL",
+      "construction_output_length": 5,
+      "derivative_bound_on_prefix": "1",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        3,
+        1,
+        34,
+        11
+      ],
+      "escaped_width": "1/11",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 3,
+      "fixed_polynomial": [
+        0,
+        1,
+        -3
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 9,
+      "period": 5,
+      "period_witness_start_at_most": 4,
+      "polynomial_gap": "6763763/47805615",
+      "polynomial_range": [
+        "6763763/47805615",
+        "47388581/334639305"
+      ],
+      "prefix": "",
+      "prefix_bracket": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "previous_width": "1/6",
+      "root_distance_lower_bound": "6763763/47805615",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "150180608/47805615",
+        "1051306496/334639305"
+      ],
+      "source_stage": 11,
+      "start": 0,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 16,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 16,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 1,
+      "different_output_index": 6,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLR",
+      "output_source_interval": [
+        "150180608/47805615",
+        "1051306496/334639305"
+      ],
+      "output_source_stage": 11
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLLLR",
+      "construction_output_length": 7,
+      "derivative_bound_on_prefix": "8",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        197,
+        63,
+        172,
+        55
+      ],
+      "escaped_width": "1/3465",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 6,
+      "fixed_polynomial": [
+        1,
+        -14,
+        34
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 13,
+      "period": 7,
+      "period_witness_start_at_most": 6,
+      "polynomial_gap": "2385937888731213696494/21190071060718340405625",
+      "polynomial_range": [
+        "-29484453778112668046/261605815564423955625",
+        "-2385937888731213696494/21190071060718340405625"
+      ],
+      "prefix": "",
+      "prefix_bracket": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "previous_width": "1/56",
+      "rational_mixed_width_bound": "1/25",
+      "root_distance_lower_bound": "1192968944365606848247/84760284242873361622500",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "source_stage": 14,
+      "start": 0,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 52776558133258,
+        "height_bit_length": 6,
+        "last_output_index_sufficient": 369435906932805,
+        "polynomial_height_with_floor": 34,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 52776558133258
+      }
+    },
+    "witness": {
+      "comparison_start": 0,
+      "different_output_index": 7,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRR",
+      "output_source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "output_source_stage": 14
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLLLRRRRRRR",
+      "construction_output_length": 13,
+      "derivative_bound_on_prefix": "56",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        6905,
+        2199,
+        964,
+        307
+      ],
+      "escaped_width": "1/675093",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 8,
+      "fixed_polynomial": [
+        43,
+        -314,
+        562
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 25,
+      "period": 13,
+      "period_witness_start_at_most": 12,
+      "polynomial_gap": "1363846730939976814146782/20363658289350325129805625",
+      "polynomial_range": [
+        "-1366795174109219565778142/20363658289350325129805625",
+        "-1363846730939976814146782/20363658289350325129805625"
+      ],
+      "prefix": "",
+      "prefix_bracket": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "previous_width": "1/350",
+      "rational_mixed_width_bound": "1/25",
+      "root_distance_lower_bound": "681923365469988407073391/570182432101809103634557500",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "14176772325376/4512611027925",
+        "14176787234816/4512611027925"
+      ],
+      "source_stage": 16,
+      "start": 0,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 87960930222094,
+        "height_bit_length": 10,
+        "last_output_index_sufficient": 1143492092887221,
+        "polynomial_height_with_floor": 562,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 87960930222094
+      }
+    },
+    "witness": {
+      "comparison_start": 0,
+      "different_output_index": 13,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRR",
+      "output_source_interval": [
+        "14176772325376/4512611027925",
+        "14176787234816/4512611027925"
+      ],
+      "output_source_stage": 16
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "L",
+      "construction_output_length": 2,
+      "derivative_bound_on_prefix": "1",
+      "escape_blocks": 6,
+      "escaped_cylinder": [
+        3,
+        1,
+        25,
+        8
+      ],
+      "escaped_width": "1/8",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 2,
+      "fixed_polynomial": [
+        0,
+        1,
+        -3
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 6,
+      "period": 1,
+      "period_witness_start_at_most": 5,
+      "polynomial_gap": "2056867/14549535",
+      "polynomial_range": [
+        "2056867/14549535",
+        "187337/1322685"
+      ],
+      "prefix": "L",
+      "prefix_bracket": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "previous_width": "1/7",
+      "root_distance_lower_bound": "2056867/14549535",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "source_stage": 10,
+      "start": 1,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 16,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 16,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 5,
+      "different_output_index": 6,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLR",
+      "output_source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "output_source_stage": 10
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LL",
+      "construction_output_length": 3,
+      "derivative_bound_on_prefix": "1",
+      "escape_blocks": 3,
+      "escaped_cylinder": [
+        3,
+        1,
+        25,
+        8
+      ],
+      "escaped_width": "1/8",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 2,
+      "fixed_polynomial": [
+        0,
+        1,
+        -3
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 6,
+      "period": 2,
+      "period_witness_start_at_most": 4,
+      "polynomial_gap": "2056867/14549535",
+      "polynomial_range": [
+        "2056867/14549535",
+        "187337/1322685"
+      ],
+      "prefix": "L",
+      "prefix_bracket": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "previous_width": "1/6",
+      "root_distance_lower_bound": "2056867/14549535",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "source_stage": 10,
+      "start": 1,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 16,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 16,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 4,
+      "different_output_index": 6,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLR",
+      "output_source_interval": [
+        "45705472/14549535",
+        "4155392/1322685"
+      ],
+      "output_source_stage": 10
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLL",
+      "construction_output_length": 6,
+      "derivative_bound_on_prefix": "1",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        3,
+        1,
+        37,
+        12
+      ],
+      "escaped_width": "1/12",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 6,
+      "fixed_polynomial": [
+        0,
+        1,
+        -3
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 10,
+      "period": 5,
+      "period_witness_start_at_most": 5,
+      "polynomial_gap": "20609566559/145568097675",
+      "polynomial_range": [
+        "20609566559/145568097675",
+        "2290179623/16174233075"
+      ],
+      "prefix": "L",
+      "prefix_bracket": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "previous_width": "1/7",
+      "root_distance_lower_bound": "20609566559/145568097675",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "source_stage": 14,
+      "start": 1,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 16,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 16,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 1,
+      "different_output_index": 6,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLR",
+      "output_source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "output_source_stage": 14
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLLRR",
+      "construction_output_length": 8,
+      "derivative_bound_on_prefix": "18",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        561,
+        179,
+        257,
+        82
+      ],
+      "escaped_width": "1/14678",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 6,
+      "fixed_polynomial": [
+        23,
+        -156,
+        263
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 14,
+      "period": 7,
+      "period_witness_start_at_most": 7,
+      "polynomial_gap": "80531637587626329719/921307437422536539375",
+      "polynomial_range": [
+        "-43306859641904977/494528951917625625",
+        "-80531637587626329719/921307437422536539375"
+      ],
+      "prefix": "L",
+      "prefix_bracket": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "previous_width": "1/105",
+      "rational_mixed_width_bound": "1/50",
+      "root_distance_lower_bound": "80531637587626329719/16583533873605657708750",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "source_stage": 14,
+      "start": 1,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 79164837199885,
+        "height_bit_length": 9,
+        "last_output_index_sufficient": 554153860399195,
+        "polynomial_height_with_floor": 263,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 1,
+      "different_output_index": 8,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRR",
+      "output_source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "output_source_stage": 14
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLLRRRRRRRR",
+      "construction_output_length": 14,
+      "derivative_bound_on_prefix": "72",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        7515,
+        2393,
+        917,
+        292
+      ],
+      "escaped_width": "1/698756",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 8,
+      "fixed_polynomial": [
+        107,
+        -714,
+        1187
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 26,
+      "period": 13,
+      "period_witness_start_at_most": 13,
+      "polynomial_gap": "1005162041462681068903093/20363658289350325129805625",
+      "polynomial_range": [
+        "-1007967601494455288535733/20363658289350325129805625",
+        "-1005162041462681068903093/20363658289350325129805625"
+      ],
+      "prefix": "L",
+      "prefix_bracket": [
+        3,
+        1,
+        7,
+        2
+      ],
+      "previous_width": "1/399",
+      "rational_mixed_width_bound": "1/50",
+      "root_distance_lower_bound": "1005162041462681068903093/1466183396833223409346005000",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "14176772325376/4512611027925",
+        "14176787234816/4512611027925"
+      ],
+      "source_stage": 16,
+      "start": 1,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 96757023244303,
+        "height_bit_length": 11,
+        "last_output_index_sufficient": 1257841302175939,
+        "polynomial_height_with_floor": 1187,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 96757023244303
+      }
+    },
+    "witness": {
+      "comparison_start": 1,
+      "different_output_index": 14,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRR",
+      "output_source_interval": [
+        "14176772325376/4512611027925",
+        "14176787234816/4512611027925"
+      ],
+      "output_source_stage": 16
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "R",
+      "construction_output_length": 7,
+      "derivative_bound_on_prefix": "7",
+      "escape_blocks": 17,
+      "escaped_cylinder": [
+        377,
+        120,
+        22,
+        7
+      ],
+      "escaped_width": "1/840",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 6,
+      "fixed_polynomial": [
+        0,
+        7,
+        -22
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 22,
+      "period": 1,
+      "period_witness_start_at_most": 21,
+      "polynomial_gap": "20425102/2310604725",
+      "polynomial_range": [
+        "-185875966/20795442525",
+        "-20425102/2310604725"
+      ],
+      "prefix": "LLLLLL",
+      "prefix_bracket": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "previous_width": "1/791",
+      "root_distance_lower_bound": "20425102/16174233075",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "source_stage": 14,
+      "start": 6,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 22,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 22,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 20,
+      "different_output_index": 21,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "945118609408/300840735195",
+        "14176786382848/4512611027925"
+      ],
+      "output_source_stage": 17
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RR",
+      "construction_output_length": 8,
+      "derivative_bound_on_prefix": "7",
+      "escape_blocks": 9,
+      "escaped_cylinder": [
+        399,
+        127,
+        22,
+        7
+      ],
+      "escaped_width": "1/889",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 6,
+      "fixed_polynomial": [
+        0,
+        7,
+        -22
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 23,
+      "period": 2,
+      "period_witness_start_at_most": 21,
+      "polynomial_gap": "20425102/2310604725",
+      "polynomial_range": [
+        "-185875966/20795442525",
+        "-20425102/2310604725"
+      ],
+      "prefix": "LLLLLL",
+      "prefix_bracket": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "previous_width": "1/791",
+      "root_distance_lower_bound": "20425102/16174233075",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "457313859584/145568097675",
+        "50812878848/16174233075"
+      ],
+      "source_stage": 14,
+      "start": 6,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 22,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 22,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 19,
+      "different_output_index": 21,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "945118609408/300840735195",
+        "14176786382848/4512611027925"
+      ],
+      "output_source_stage": 17
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRR",
+      "construction_output_length": 11,
+      "derivative_bound_on_prefix": "7",
+      "escape_blocks": 4,
+      "escaped_cylinder": [
+        443,
+        141,
+        22,
+        7
+      ],
+      "escaped_width": "1/987",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 7,
+      "fixed_polynomial": [
+        0,
+        7,
+        -22
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 25,
+      "period": 5,
+      "period_witness_start_at_most": 20,
+      "polynomial_gap": "5702703554/644658718275",
+      "polynomial_range": [
+        "-5733454274/644658718275",
+        "-5702703554/644658718275"
+      ],
+      "prefix": "LLLLLL",
+      "prefix_bracket": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "previous_width": "1/742",
+      "root_distance_lower_bound": "5702703554/4512611027925",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "14176758347776/4512611027925",
+        "14176789098496/4512611027925"
+      ],
+      "source_stage": 15,
+      "start": 6,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 22,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 22,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 16,
+      "different_output_index": 21,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "945118609408/300840735195",
+        "14176786382848/4512611027925"
+      ],
+      "output_source_stage": 17
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRR",
+      "construction_output_length": 13,
+      "derivative_bound_on_prefix": "7",
+      "escape_blocks": 3,
+      "escaped_cylinder": [
+        465,
+        148,
+        22,
+        7
+      ],
+      "escaped_width": "1/1036",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 8,
+      "fixed_polynomial": [
+        0,
+        7,
+        -22
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 26,
+      "period": 7,
+      "period_witness_start_at_most": 19,
+      "polynomial_gap": "5704567234/644658718275",
+      "polynomial_range": [
+        "-5719476674/644658718275",
+        "-5704567234/644658718275"
+      ],
+      "prefix": "LLLLLL",
+      "prefix_bracket": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "previous_width": "1/693",
+      "root_distance_lower_bound": "5704567234/4512611027925",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "14176772325376/4512611027925",
+        "14176787234816/4512611027925"
+      ],
+      "source_stage": 16,
+      "start": 6,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 22,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 22,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 14,
+      "different_output_index": 21,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "945118609408/300840735195",
+        "14176786382848/4512611027925"
+      ],
+      "output_source_stage": 17
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRRRRRRRR",
+      "construction_output_length": 19,
+      "derivative_bound_on_prefix": "7",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        575,
+        183,
+        22,
+        7
+      ],
+      "escaped_width": "1/1281",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 10,
+      "fixed_polynomial": [
+        0,
+        7,
+        -22
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 31,
+      "period": 13,
+      "period_witness_start_at_most": 18,
+      "polynomial_gap": "2222263094/251077606065",
+      "polynomial_range": [
+        "-211245345034/23852372576175",
+        "-2222263094/251077606065"
+      ],
+      "prefix": "LLLLLL",
+      "prefix_bracket": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "previous_width": "1/644",
+      "root_distance_lower_bound": "2222263094/1757543242455",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "74934421618688/23852372576175",
+        "5521485070336/1757543242455"
+      ],
+      "source_stage": 18,
+      "start": 6,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 22,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 5,
+        "polynomial_height_with_floor": 22,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 43980465111049
+      }
+    },
+    "witness": {
+      "comparison_start": 8,
+      "different_output_index": 21,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "74934421618688/23852372576175",
+        "5521485070336/1757543242455"
+      ],
+      "output_source_stage": 18
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "L",
+      "construction_output_length": 22,
+      "derivative_bound_on_prefix": "106",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        333,
+        106,
+        688,
+        219
+      ],
+      "escaped_width": "1/23214",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        106,
+        -333
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 22,
+      "period": 1,
+      "period_witness_start_at_most": 21,
+      "polynomial_gap": "284749517944434307/32281713585895799025",
+      "polynomial_range": [
+        "284749517944434307/32281713585895799025",
+        "29458689075328349/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "previous_width": "1/11978",
+      "root_distance_lower_bound": "284749517944434307/3421861640104954696650",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 21,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 333,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 333,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 21,
+      "different_output_index": 22,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLR",
+      "output_source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "output_source_stage": 25
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LR",
+      "construction_output_length": 23,
+      "derivative_bound_on_prefix": "205/7",
+      "escape_blocks": 3,
+      "escaped_cylinder": [
+        4505,
+        1434,
+        2774,
+        883
+      ],
+      "escaped_width": "1/1266222",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        10445,
+        -65625,
+        103079
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 26,
+      "period": 2,
+      "period_witness_start_at_most": 24,
+      "polynomial_gap": "16159838939854560878335582780796251/208421806408361881467069393028638190125",
+      "polynomial_range": [
+        "16159838939854560878335582780796251/208421806408361881467069393028638190125",
+        "172968578990061739686283251532699/2230435502586512405711800876644166125"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "previous_width": "1/182932",
+      "rational_mixed_width_bound": "1/92750",
+      "root_distance_lower_bound": "16159838939854560878335582780796251/6103781473387740814392746510124404139375",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 21,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 149533581377557,
+        "height_bit_length": 17,
+        "last_output_index_sufficient": 299067162755134,
+        "polynomial_height_with_floor": 103079,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 149533581377557
+      }
+    },
+    "witness": {
+      "comparison_start": 21,
+      "different_output_index": 23,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRR",
+      "output_source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "output_source_stage": 25
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LRRRR",
+      "construction_output_length": 26,
+      "derivative_bound_on_prefix": "184/7",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        10185,
+        3242,
+        2108,
+        671
+      ],
+      "escaped_width": "1/2175382",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        8072,
+        -50712,
+        79649
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 30,
+      "period": 5,
+      "period_witness_start_at_most": 25,
+      "polynomial_gap": "79949914888328071351964860900214273/1042109032041809407335346965143190950625",
+      "polynomial_range": [
+        "79949914888328071351964860900214273/1042109032041809407335346965143190950625",
+        "855928493690625340255818541456577/11152177512932562028559004383220830625"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "previous_width": "1/63054",
+      "rational_mixed_width_bound": "1/18550",
+      "root_distance_lower_bound": "79949914888328071351964860900214273/27392580270813275849957691655192447845000",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 21,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 149533581377557,
+        "height_bit_length": 17,
+        "last_output_index_sufficient": 747667906887805,
+        "polynomial_height_with_floor": 79649,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 149533581377557
+      }
+    },
+    "witness": {
+      "comparison_start": 21,
+      "different_output_index": 26,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRR",
+      "output_source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "output_source_stage": 25
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LRRRRRR",
+      "construction_output_length": 28,
+      "derivative_bound_on_prefix": "170/7",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        19371,
+        6166,
+        2818,
+        897
+      ],
+      "escaped_width": "1/5530902",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        6490,
+        -40770,
+        64029
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 34,
+      "period": 7,
+      "period_witness_start_at_most": 27,
+      "polynomial_gap": "1443340515412695442281627131473387/18947436946214716497006308457148926375",
+      "polynomial_range": [
+        "1443340515412695442281627131473387/18947436946214716497006308457148926375",
+        "15454282900318238208583395102763/202766863871501127791981897876742375"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "previous_width": "1/88592",
+      "rational_mixed_width_bound": "1/18550",
+      "root_distance_lower_bound": "1443340515412695442281627131473387/460152040122357400641581776816473926250",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 21,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 140737488355348,
+        "height_bit_length": 16,
+        "last_output_index_sufficient": 985162418487456,
+        "polynomial_height_with_floor": 64029,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 140737488355348
+      }
+    },
+    "witness": {
+      "comparison_start": 21,
+      "different_output_index": 28,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRR",
+      "output_source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "output_source_stage": 25
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LRRRRRRRRRRRR",
+      "construction_output_length": 34,
+      "derivative_bound_on_prefix": "128/7",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        63969,
+        20362,
+        4948,
+        1575
+      ],
+      "escaped_width": "1/32070150",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        1744,
+        -10944,
+        17169
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 46,
+      "period": 13,
+      "period_witness_start_at_most": 33,
+      "polynomial_gap": "77685168725808783246063386223502321/1042109032041809407335346965143190950625",
+      "polynomial_range": [
+        "77685168725808783246063386223502321/1042109032041809407335346965143190950625",
+        "832156756998136385120891298238129/11152177512932562028559004383220830625"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "previous_width": "1/165206",
+      "rational_mixed_width_bound": "1/18550",
+      "root_distance_lower_bound": "77685168725808783246063386223502321/19055708014478800591274915934046920240000",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 21,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 131941395333139,
+        "height_bit_length": 15,
+        "last_output_index_sufficient": 1715238139330827,
+        "polynomial_height_with_floor": 17169,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 131941395333139
+      }
+    },
+    "witness": {
+      "comparison_start": 21,
+      "different_output_index": 34,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRR",
+      "output_source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "output_source_stage": 25
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "R",
+      "construction_output_length": 23,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 294,
+      "escaped_cylinder": [
+        104703,
+        33328,
+        355,
+        113
+      ],
+      "escaped_width": "1/3766064",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 315,
+      "period": 1,
+      "period_witness_start_at_most": 314,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "prefix_bracket": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "previous_width": "1/3753295",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 22,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 313,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RR",
+      "construction_output_length": 24,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 147,
+      "escaped_cylinder": [
+        104703,
+        33328,
+        355,
+        113
+      ],
+      "escaped_width": "1/3766064",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 315,
+      "period": 2,
+      "period_witness_start_at_most": 313,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "prefix_bracket": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "previous_width": "1/3740526",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 22,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 312,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRR",
+      "construction_output_length": 27,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 59,
+      "escaped_cylinder": [
+        105058,
+        33441,
+        355,
+        113
+      ],
+      "escaped_width": "1/3778833",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 316,
+      "period": 5,
+      "period_witness_start_at_most": 311,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "prefix_bracket": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "previous_width": "1/3714988",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 22,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 309,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRR",
+      "construction_output_length": 29,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 42,
+      "escaped_cylinder": [
+        104703,
+        33328,
+        355,
+        113
+      ],
+      "escaped_width": "1/3766064",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 315,
+      "period": 7,
+      "period_witness_start_at_most": 308,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "prefix_bracket": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "previous_width": "1/3676681",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 22,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 307,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRRRRRRRR",
+      "construction_output_length": 35,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 23,
+      "escaped_cylinder": [
+        106478,
+        33893,
+        355,
+        113
+      ],
+      "escaped_width": "1/3829909",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 320,
+      "period": 13,
+      "period_witness_start_at_most": 307,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+      "prefix_bracket": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "previous_width": "1/3663912",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 22,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 301,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "R",
+      "construction_output_length": 26,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 291,
+      "escaped_cylinder": [
+        104703,
+        33328,
+        355,
+        113
+      ],
+      "escaped_width": "1/3766064",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 315,
+      "period": 1,
+      "period_witness_start_at_most": 314,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRR",
+      "prefix_bracket": [
+        1398,
+        445,
+        355,
+        113
+      ],
+      "previous_width": "1/3753295",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 25,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 313,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RR",
+      "construction_output_length": 27,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 146,
+      "escaped_cylinder": [
+        105058,
+        33441,
+        355,
+        113
+      ],
+      "escaped_width": "1/3778833",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 316,
+      "period": 2,
+      "period_witness_start_at_most": 314,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRR",
+      "prefix_bracket": [
+        1398,
+        445,
+        355,
+        113
+      ],
+      "previous_width": "1/3753295",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 25,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 312,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRR",
+      "construction_output_length": 30,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 59,
+      "escaped_cylinder": [
+        106123,
+        33780,
+        355,
+        113
+      ],
+      "escaped_width": "1/3817140",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 319,
+      "period": 5,
+      "period_witness_start_at_most": 314,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRR",
+      "prefix_bracket": [
+        1398,
+        445,
+        355,
+        113
+      ],
+      "previous_width": "1/3753295",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 25,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 309,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRR",
+      "construction_output_length": 32,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 42,
+      "escaped_cylinder": [
+        105768,
+        33667,
+        355,
+        113
+      ],
+      "escaped_width": "1/3804371",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 318,
+      "period": 7,
+      "period_witness_start_at_most": 311,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRR",
+      "prefix_bracket": [
+        1398,
+        445,
+        355,
+        113
+      ],
+      "previous_width": "1/3714988",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 25,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 307,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRRRRRRRR",
+      "construction_output_length": 38,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 23,
+      "escaped_cylinder": [
+        107543,
+        34232,
+        355,
+        113
+      ],
+      "escaped_width": "1/3868216",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 17,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 323,
+      "period": 13,
+      "period_witness_start_at_most": 310,
+      "polynomial_gap": "100525913414573/3339487612334048175",
+      "polynomial_range": [
+        "-990736397874739/32281713585895799025",
+        "-100525913414573/3339487612334048175"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRR",
+      "prefix_bracket": [
+        1398,
+        445,
+        355,
+        113
+      ],
+      "previous_width": "1/3702219",
+      "root_distance_lower_bound": "100525913414573/377362100193747443775",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "101415994090766467072/32281713585895799025",
+        "10491309750908616704/3339487612334048175"
+      ],
+      "source_stage": 25,
+      "start": 25,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 301,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "R",
+      "construction_output_length": 101,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 215,
+      "escaped_cylinder": [
+        104348,
+        33215,
+        355,
+        113
+      ],
+      "escaped_width": "1/3753295",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 18,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 314,
+      "period": 1,
+      "period_witness_start_at_most": 313,
+      "polynomial_gap": "51540748109133967/1710930820052477348325",
+      "polynomial_range": [
+        "-156103144647043501/5132792460157432044975",
+        "-51540748109133967/1710930820052477348325"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "previous_width": "1/3740526",
+      "root_distance_lower_bound": "51540748109133967/193335182665929940360725",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "16125143073033130344448/5132792460157432044975",
+        "5375047695379480969216/1710930820052477348325"
+      ],
+      "source_stage": 26,
+      "start": 100,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 313,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RR",
+      "construction_output_length": 102,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 108,
+      "escaped_cylinder": [
+        104703,
+        33328,
+        355,
+        113
+      ],
+      "escaped_width": "1/3766064",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 19,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 315,
+      "period": 2,
+      "period_witness_start_at_most": 313,
+      "polynomial_gap": "22096585035445163/733256065736776006425",
+      "polynomial_range": [
+        "-155403082677758381/5132792460157432044975",
+        "-22096585035445163/733256065736776006425"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "previous_width": "1/3740526",
+      "root_distance_lower_bound": "22096585035445163/82857935428255688726025",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "16125143079228369010688/5132792460157432044975",
+        "2303591869380269441024/733256065736776006425"
+      ],
+      "source_stage": 27,
+      "start": 100,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 312,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRR",
+      "construction_output_length": 105,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 43,
+      "escaped_cylinder": [
+        104348,
+        33215,
+        355,
+        113
+      ],
+      "escaped_width": "1/3753295",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 19,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 314,
+      "period": 5,
+      "period_witness_start_at_most": 309,
+      "polynomial_gap": "22096585035445163/733256065736776006425",
+      "polynomial_range": [
+        "-155403082677758381/5132792460157432044975",
+        "-22096585035445163/733256065736776006425"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "previous_width": "1/3689450",
+      "root_distance_lower_bound": "22096585035445163/82857935428255688726025",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "16125143079228369010688/5132792460157432044975",
+        "2303591869380269441024/733256065736776006425"
+      ],
+      "source_stage": 27,
+      "start": 100,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 309,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRR",
+      "construction_output_length": 107,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 31,
+      "escaped_cylinder": [
+        105058,
+        33441,
+        355,
+        113
+      ],
+      "escaped_width": "1/3778833",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 19,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 316,
+      "period": 7,
+      "period_witness_start_at_most": 309,
+      "polynomial_gap": "22096585035445163/733256065736776006425",
+      "polynomial_range": [
+        "-155403082677758381/5132792460157432044975",
+        "-22096585035445163/733256065736776006425"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "previous_width": "1/3689450",
+      "root_distance_lower_bound": "22096585035445163/82857935428255688726025",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "16125143079228369010688/5132792460157432044975",
+        "2303591869380269441024/733256065736776006425"
+      ],
+      "source_stage": 27,
+      "start": 100,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 307,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRRRRRRRR",
+      "construction_output_length": 113,
+      "derivative_bound_on_prefix": "113",
+      "escape_blocks": 17,
+      "escaped_cylinder": [
+        106478,
+        33893,
+        355,
+        113
+      ],
+      "escaped_width": "1/3829909",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 19,
+      "fixed_polynomial": [
+        0,
+        113,
+        -355
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 320,
+      "period": 13,
+      "period_witness_start_at_most": 307,
+      "polynomial_gap": "22096585035445163/733256065736776006425",
+      "polynomial_range": [
+        "-155403082677758381/5132792460157432044975",
+        "-22096585035445163/733256065736776006425"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "previous_width": "1/3663912",
+      "root_distance_lower_bound": "22096585035445163/82857935428255688726025",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "16125143079228369010688/5132792460157432044975",
+        "2303591869380269441024/733256065736776006425"
+      ],
+      "source_stage": 27,
+      "start": 100,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 355,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 9,
+        "polynomial_height_with_floor": 355,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 79164837199885
+      }
+    },
+    "witness": {
+      "comparison_start": 301,
+      "different_output_index": 314,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "16125143082275824467968/5132792460157432044975",
+        "16125143085436148645888/5132792460157432044975"
+      ],
+      "output_source_stage": 28
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "L",
+      "construction_output_length": 315,
+      "derivative_bound_on_prefix": "33102",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        103993,
+        33102,
+        208341,
+        66317
+      ],
+      "escaped_width": "1/2195225334",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 28,
+      "fixed_polynomial": [
+        0,
+        33102,
+        -103993
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 315,
+      "period": 1,
+      "period_witness_start_at_most": 314,
+      "polynomial_gap": "31671776370806199645439/1661467157312023129687350025",
+      "polynomial_range": [
+        "31671776370806199645439/1661467157312023129687350025",
+        "413254063173190928625907/21599073045056300685935550325"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "previous_width": "1/1099482930",
+      "root_distance_lower_bound": "31671776370806199645439/54997885841342589638910660527550",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "140930631420898040535385636864/44859613247424624501558450675",
+        "1832098208472915122680005394432/583174972216520118520259858775"
+      ],
+      "source_stage": 36,
+      "start": 314,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 103993,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 17,
+        "polynomial_height_with_floor": 103993,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 149533581377557
+      }
+    },
+    "witness": {
+      "comparison_start": 314,
+      "different_output_index": 315,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLR",
+      "output_source_interval": [
+        "140930631420898040535385636864/44859613247424624501558450675",
+        "1832098208472915122680005394432/583174972216520118520259858775"
+      ],
+      "output_source_stage": 36
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LR",
+      "construction_output_length": 316,
+      "derivative_bound_on_prefix": "66091/113",
+      "escape_blocks": 6,
+      "escaped_cylinder": [
+        24281489,
+        7729038,
+        15006587,
+        4776745
+      ],
+      "escaped_width": "1/36919643621310",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 34,
+      "fixed_polynomial": [
+        1091989109,
+        -6861169923,
+        10777500509
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 325,
+      "period": 2,
+      "period_witness_start_at_most": 323,
+      "polynomial_gap": "28347094933819094437855661800104729533526865065081844764599/838074064262089434750574679832316281816656572525279439742905975011875",
+      "polynomial_range": [
+        "28347094933819094437855661800104729533526865065081844764599/838074064262089434750574679832316281816656572525279439742905975011875",
+        "115314203947804389193848445483932633286740347098391/3402199377294576862970666153400731720063343404828806205513475"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "previous_width": "1/5386316868436",
+      "rational_mixed_width_bound": "1/58445718750",
+      "root_distance_lower_bound": "3203221727521557671477689783411834437288535752354248458399687/55389152981145752832100231164797615381544649534768243452048398794509830625",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "396431242447560339685087455238684672/126187983663182839765532348501593275",
+        "25258441697837797300163141697536/8040011702018658156453160146645"
+      ],
+      "source_stage": 42,
+      "start": 314,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 299067162755110,
+        "height_bit_length": 34,
+        "last_output_index_sufficient": 598134325510533,
+        "polynomial_height_with_floor": 10777500509,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 299067162755110
+      }
+    },
+    "witness": {
+      "comparison_start": 316,
+      "different_output_index": 318,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRR",
+      "output_source_interval": [
+        "396431242447560339685087455238684672/126187983663182839765532348501593275",
+        "25258441697837797300163141697536/8040011702018658156453160146645"
+      ],
+      "output_source_stage": 42
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LRLRR",
+      "construction_output_length": 319,
+      "derivative_bound_on_prefix": "197934/113",
+      "escape_blocks": 3,
+      "escaped_cylinder": [
+        81498251,
+        25941699,
+        30952661,
+        9852538
+      ],
+      "escaped_width": "1/255591575182062",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 37,
+      "fixed_polynomial": [
+        3264720211,
+        -20512842052,
+        32221496932
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 328,
+      "period": 5,
+      "period_witness_start_at_most": 323,
+      "polynomial_gap": "2684835255652940898444970328605756576161183806926532693375692/189099413189475558981299458380935184553410790867289400902350234382776875",
+      "polynomial_range": [
+        "2684835255652940898444970328605756576161183806926532693375692/189099413189475558981299458380935184553410790867289400902350234382776875",
+        "190081314570005278058446814220344409618086991024293098252/13353535286312799871569766145112293238712717383467933119295970226875"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "previous_width": "1/2608146946556",
+      "rational_mixed_width_bound": "1/467565750",
+      "root_distance_lower_bound": "151693191944391160762140823566225246553106885091349097175726598/18714601625122827645702263497586012409697405739763030139102895646160278988125",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "35282380577833160866084293156240621568/11230730546023272739132379016641801475",
+        "296490593091035316706230284910067712/94375886941372039824641840475981525"
+      ],
+      "source_stage": 45,
+      "start": 314,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 307863255777319,
+        "height_bit_length": 35,
+        "last_output_index_sufficient": 1539316278886908,
+        "polynomial_height_with_floor": 32221496932,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 307863255777319
+      }
+    },
+    "witness": {
+      "comparison_start": 316,
+      "different_output_index": 321,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRR",
+      "output_source_interval": [
+        "35282380577833160866084293156240621568/11230730546023272739132379016641801475",
+        "296490593091035316706230284910067712/94375886941372039824641840475981525"
+      ],
+      "output_source_stage": 45
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LRLRRLR",
+      "construction_output_length": 321,
+      "derivative_bound_on_prefix": "726888/113",
+      "escape_blocks": 3,
+      "escaped_cylinder": [
+        1333881907,
+        424587798,
+        773816170,
+        246313337
+      ],
+      "escaped_width": "1/104581637374861926",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 37,
+      "fixed_polynomial": [
+        12008126904,
+        -75449286504,
+        118515462059
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 334,
+      "period": 7,
+      "period_witness_start_at_most": 327,
+      "polynomial_gap": "41701355073895801861474242094217285554296664161417319299793177/1025441533312034128784770233659217626805894288686845775624939888888716875",
+      "polynomial_range": [
+        "41701355073895801861474242094217285554296664161417319299793177/1025441533312034128784770233659217626805894288686845775624939888888716875",
+        "2951803484007251022689633907480760423021672921972880542537/72413073463175914750707593648698370652206361746122856833905789766875"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "previous_width": "1/155165761542750",
+      "rational_mixed_width_bound": "1/467565750",
+      "root_distance_lower_bound": "4712253123350225610346589356646553267635523050240157080876629001/745381145266117863804104065604081382313682887715003952152461305954541631835000",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "35282380577833160866084293156240621568/11230730546023272739132379016641801475",
+        "296490593091035316706230284910067712/94375886941372039824641840475981525"
+      ],
+      "source_stage": 45,
+      "start": 314,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 325455441821737,
+        "height_bit_length": 37,
+        "last_output_index_sufficient": 2278188092752472,
+        "polynomial_height_with_floor": 118515462059,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 325455441821737
+      }
+    },
+    "witness": {
+      "comparison_start": 314,
+      "different_output_index": 321,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRR",
+      "output_source_interval": [
+        "35282380577833160866084293156240621568/11230730546023272739132379016641801475",
+        "296490593091035316706230284910067712/94375886941372039824641840475981525"
+      ],
+      "output_source_stage": 45
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LRLRRLRRRLRRR",
+      "construction_output_length": 327,
+      "derivative_bound_on_prefix": "3424076/113",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        4722025087,
+        1503067268,
+        1246450375,
+        396757477
+      ],
+      "escaped_width": "1/596353177012962836",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 42,
+      "fixed_polynomial": [
+        56363562619,
+        -354142708278,
+        556286064963
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 339,
+      "period": 13,
+      "period_witness_start_at_most": 326,
+      "polynomial_gap": "1643885031881044526039620841213227024110831254167985187496811703094681/133033445379237863971351050341762382672941611922924099260945150701179775724261875",
+      "polynomial_range": [
+        "1643885031881044526039620841213227024110831254167985187496811703094681/133033445379237863971351050341762382672941611922924099260945150701179775724261875",
+        "263942596393932942122071695293328602840099467529664858788744618041/21316046367447182177752131123499820969867266771819275638670910222909754161875"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "previous_width": "1/11273468437227",
+      "rational_mixed_width_bound": "1/93513150",
+      "root_distance_lower_bound": "185759008602558031442477155057094653724523931720982326187139722449698953/455516627520359268315567819050020372213235222786598258101020027832292841742827703902500",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "345661482521031857943887826387887013756928/110027467159390003025279917226039729050575",
+        "4375461804063694558238802420685007224832/1392752748853038012978226800329616823425"
+      ],
+      "source_stage": 50,
+      "start": 314,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 351843720888364,
+        "height_bit_length": 40,
+        "last_output_index_sufficient": 4573968371549045,
+        "polynomial_height_with_floor": 556286064963,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 351843720888364
+      }
+    },
+    "witness": {
+      "comparison_start": 314,
+      "different_output_index": 327,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRR",
+      "output_source_interval": [
+        "345661482521031857943887826387887013756928/110027467159390003025279917226039729050575",
+        "4375461804063694558238802420685007224832/1392752748853038012978226800329616823425"
+      ],
+      "output_source_stage": 50
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRRRRRRRRR",
+      "construction_output_length": 1612,
+      "derivative_bound_on_prefix": "14296919621614224321863933128453694228347510834514774828114776206039131456409769672930806764341818548",
+      "escape_blocks": 6,
+      "escaped_cylinder": [
+        5606735703793499561249124244605548514539539090644239786386756962971081503833334763007802156788718172397,
+        1784679403737104333017243678242488627232924126772111844046483434756602070190715548033146760719653312339,
+        44915097652227013653533602995902629284295508996873851237390978948115229317264708780581792694620589863,
+        14296919621614224321863933128453694228347510834514774828114776206039131456409769672930806764341818548
+      ],
+      "escaped_width": "1/25515417985579781160943300706814391011127925238804846049694237031740172466870581055964545959878709059456012387910914103184029386056991619373674654365445408853565096184607030127122875288241191283107463772",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 668,
+      "fixed_polynomial": [
+        0,
+        14296919621614224321863933128453694228347510834514774828114776206039131456409769672930806764341818548,
+        -44915097652227013653533602995902629284295508996873851237390978948115229317264708780581792694620589863
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 1666,
+      "period": 11,
+      "period_witness_start_at_most": 1655,
+      "polynomial_gap": "2415282401093596901411023669604513368163801932870076975281192328393281764784083593656115478291632785947115455020863379027987804653605075910976882044363714970396998907941246496659937027359376324746958459995617529660245133614550542159151131905921252438140089381917077966436890560996365224727451035321856111244048705305434706600260878596114150427006547162752634406035627500189554448208868245952088399927393675494791718960352263499893392419326353399166748094651446576229380466747129/4185923085467750173702137076111619579830153051693471036229838114147996990279756435579166299748237434703139743926044563754179495570152595504603406894768150174030245840169031176197513074651320969951415469991293263620522174892579592920797484185464945760286110711009858328255374062807533750328263444482991896350025946084967604923803694806760221049605013958734443234706976447859971999769230744109767458218406567425976483156536546902539609229680494616783312557941350247711873134976935030256507050410661996974848026109581526725988945153996839955160865437198393049863697743241016193969375",
+      "polynomial_range": [
+        "-16952495050075877179410613434642694267096386640239877991975911021113537824610444281026144135533790139149227407366432113176569167261964205657607119014432093104183416237547235780097565447090548705528653800386632490649563592633640340752473901568461861032838860197271544855326284159030950862473777674085654894108254845110116706386558198182063972225909255904483365272559345923147364856001896488847547800571771502637775432459252721685525265835810084352920291290507909541509941303709903/29301461598274251215914959532781337058811071361854297253608866799035978931958295049054164098237662042921978207482311946279256468991068168532223848263377051218211720881183218233382591522559246789659908289939052845343655224248057150445582389298254620322002774977069008297787618439652736252297844111380943274450181622594773234466625863647321547347235097711141102642948835135019803998384615208768372207528845971981835382095755828317777264607763462317483187905589451733983111944838545211795549352874633978823936182767070687081922616077977879686126058060388751349045884202687113357785625",
+        "-2415282401093596901411023669604513368163801932870076975281192328393281764784083593656115478291632785947115455020863379027987804653605075910976882044363714970396998907941246496659937027359376324746958459995617529660245133614550542159151131905921252438140089381917077966436890560996365224727451035321856111244048705305434706600260878596114150427006547162752634406035627500189554448208868245952088399927393675494791718960352263499893392419326353399166748094651446576229380466747129/4185923085467750173702137076111619579830153051693471036229838114147996990279756435579166299748237434703139743926044563754179495570152595504603406894768150174030245840169031176197513074651320969951415469991293263620522174892579592920797484185464945760286110711009858328255374062807533750328263444482991896350025946084967604923803694806760221049605013958734443234706976447859971999769230744109767458218406567425976483156536546902539609229680494616783312557941350247711873134976935030256507050410661996974848026109581526725988945153996839955160865437198393049863697743241016193969375"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRLLRRLLLLLLRRRLLLLLRLRRRRRRLLLLLLLLRLLLLLLLRLLRRRLLLLLLLRLLRLRRRRRRRRRRRRLRLRRRLRLLLLLLLLRLRRLRRRRRRLRLLLLLRRLLRRRLRRLLLLRRRRLLLLLLLLLLLLLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRLRRLLRLLLLRLLRRRRRRRRRRRRRRRRRRRRRRRRLRRLRRRLRRLRLLLLLLLLLLRRLLLLLRRRRLRRLLRRRRRRRRLRRRRRLLRRLLLLLLLLLLLLLLLLLLLLLLLLLLRLLLLRLRRRRRRRRLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLLLLLLLRRRLLLRLRRRRRRRLLRRRRLLLLLLLLLRRRRRRRLLRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRLRRRRRRRRRLLLLLLLLLLLLLLLLLLLRLLRRRRRRRRRRRRRRRRRRLRRRLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRRLLLRRRLRRLLLLLLLLRLRRLRRRRRRRRRRRRRRRLRRLLLLLLLLLLLLLRLLRLLLLRLLLLLLLLLLLLRLRRRLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRLLLRRLLLLLLLLLLLLLLLLLLLLRLRLRRRRLRLRRRRRLLLRRLRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "prefix_bracket": [
+        2642339258746516660115906446875974981776035496850565604718952352395476368893863983489403838943759241439,
+        841082708710565527774224091764544808161988411694136705390908205158019394067670749619713514273093288171,
+        44915097652227013653533602995902629284295508996873851237390978948115229317264708780581792694620589863,
+        14296919621614224321863933128453694228347510834514774828114776206039131456409769672930806764341818548
+      ],
+      "previous_width": "1/23266996968243905194191209253719855960535698174025688173968730359125848193942009104855056108406015881741749813447820797603710681292030323329779717219164613379662383487279584822589054635096661381782352428",
+      "root_distance_lower_bound": "2415282401093596901411023669604513368163801932870076975281192328393281764784083593656115478291632785947115455020863379027987804653605075910976882044363714970396998907941246496659937027359376324746958459995617529660245133614550542159151131905921252438140089381917077966436890560996365224727451035321856111244048705305434706600260878596114150427006547162752634406035627500189554448208868245952088399927393675494791718960352263499893392419326353399166748094651446576229380466747129/59845805895191833189674253217626305453657429051870995932207632157584547874111718861134607173657996103818308444402517863931058666436772827989834234707415390563818871654708327052603857803220372443075904597365640932264048898730548768175070276025047045429517040042351786165137752408732677370641764692132792221770175682843253897741493320377370500582282732324650540113840306885533133396644661333388551402221367955679266018710125053776971909637838472310341395142156493757873654820551731096617955947685771260581674346219763742842273855709453332083857662908610363456436386920865676224134881705015726748512325557433405567528737174422911335527080725146120523607493087880751228319598118967500",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "92053256496581829026729706706498111847188577175833000339483556520316224257515209521666258037330886656509364331725024246993508469384300357013600687114317978850770289456588011594839233310284574959239816011513377191374571445873822560341333337993553627050291310109073469116080995870310083262128814617254395169025670320571356254124895027380117877620013724001329493683214424022253460305746755785883600668882680071083217365313683147546591273627957853036611133466869151897509763848832200639128646278851166007512058148386352567602961936447640205421225126248559577897061520530945867843108864/29301461598274251215914959532781337058811071361854297253608866799035978931958295049054164098237662042921978207482311946279256468991068168532223848263377051218211720881183218233382591522559246789659908289939052845343655224248057150445582389298254620322002774977069008297787618439652736252297844111380943274450181622594773234466625863647321547347235097711141102642948835135019803998384615208768372207528845971981835382095755828317777264607763462317483187905589451733983111944838545211795549352874633978823936182767070687081922616077977879686126058060388751349045884202687113357785625",
+        "13150465213797404146675672386642587406741225310833285762783365217188032036787887074523751148190126665215623475960717749570501209912042908144800098159188282692967184208084001656405604758612082137034259430216651567295936405640487415485279657190717877772215174531158917355601751733848885127533585640282090771813245624190555075509444757890738050633258565231872293198072090751006290578887752610821622205996326384920383982272781524368830516736973032979558727534703548353276546761918677758616164970742595198505870073538316202520045941815270458868506168679746861879077723990050510892695552/4185923085467750173702137076111619579830153051693471036229838114147996990279756435579166299748237434703139743926044563754179495570152595504603406894768150174030245840169031176197513074651320969951415469991293263620522174892579592920797484185464945760286110711009858328255374062807533750328263444482991896350025946084967604923803694806760221049605013958734443234706976447859971999769230744109767458218406567425976483156536546902539609229680494616783312557941350247711873134976935030256507050410661996974848026109581526725988945153996839955160865437198393049863697743241016193969375"
+      ],
+      "source_stage": 676,
+      "start": 1601,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 44915097652227013653533602995902629284295508996873851237390978948115229317264708780581792694620589863,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 335,
+        "polynomial_height_with_floor": 44915097652227013653533602995902629284295508996873851237390978948115229317264708780581792694620589863,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 2946691162440019
+      }
+    },
+    "witness": {
+      "comparison_start": 1652,
+      "different_output_index": 1663,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRLLRRLLLLLLRRRLLLLLRLRRRRRRLLLLLLLLRLLLLLLLRLLRRRLLLLLLLRLLRLRRRRRRRRRRRRLRLRRRLRLLLLLLLLRLRRLRRRRRRLRLLLLLRRLLRRRLRRLLLLRRRRLLLLLLLLLLLLLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRLRRLLRLLLLRLLRRRRRRRRRRRRRRRRRRRRRRRRLRRLRRRLRRLRLLLLLLLLLLRRLLLLLRRRRLRRLLRRRRRRRRLRRRRRLLRRLLLLLLLLLLLLLLLLLLLLLLLLLLRLLLLRLRRRRRRRRLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLLLLLLLRRRLLLRLRRRRRRRLLRRRRLLLLLLLLLRRRRRRRLLRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRLRRRRRRRRRLLLLLLLLLLLLLLLLLLLRLLRRRRRRRRRRRRRRRRRRLRRRLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRRLLLRRRLRRLLLLLLLLRLRRLRRRRRRRRRRRRRRRLRRLLLLLLLLLLLLLRLLRLLLLRLLLLLLLLLLLLRLRRRLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRLLLRRLLLLLLLLLLLLLLLLLLLLRLRLRRRRLRLRRRRRLLLRRLRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+      "output_source_interval": [
+        "92053256496581829026729706706498111847188577175833000339483556520316224257515209521666258037330886656509364331725024246993508469384300357013600687114317978850770289456588011594839233310284574959239816011513377191374571445873822560341333337993553627050291310109073469116080995870310083262128814617254395169025670320571356254124895027380117877620013724001329493683214424022253460305746755785883600668882680071083217365313683147546591273627957853036611133466869151897509763848832200639128646278851166007512058148386352567602961936447640205421225126248559577897061520530945867843108864/29301461598274251215914959532781337058811071361854297253608866799035978931958295049054164098237662042921978207482311946279256468991068168532223848263377051218211720881183218233382591522559246789659908289939052845343655224248057150445582389298254620322002774977069008297787618439652736252297844111380943274450181622594773234466625863647321547347235097711141102642948835135019803998384615208768372207528845971981835382095755828317777264607763462317483187905589451733983111944838545211795549352874633978823936182767070687081922616077977879686126058060388751349045884202687113357785625",
+        "13150465213797404146675672386642587406741225310833285762783365217188032036787887074523751148190126665215623475960717749570501209912042908144800098159188282692967184208084001656405604758612082137034259430216651567295936405640487415485279657190717877772215174531158917355601751733848885127533585640282090771813245624190555075509444757890738050633258565231872293198072090751006290578887752610821622205996326384920383982272781524368830516736973032979558727534703548353276546761918677758616164970742595198505870073538316202520045941815270458868506168679746861879077723990050510892695552/4185923085467750173702137076111619579830153051693471036229838114147996990279756435579166299748237434703139743926044563754179495570152595504603406894768150174030245840169031176197513074651320969951415469991293263620522174892579592920797484185464945760286110711009858328255374062807533750328263444482991896350025946084967604923803694806760221049605013958734443234706976447859971999769230744109767458218406567425976483156536546902539609229680494616783312557941350247711873134976935030256507050410661996974848026109581526725988945153996839955160865437198393049863697743241016193969375"
+      ],
+      "output_source_stage": 676
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "LLLLLLLLLLLLLLLLL",
+      "construction_output_length": 2350,
+      "derivative_bound_on_prefix": "15103493372765657274145753764324412346673615736564990480645229502691940095166708783466819743670409392336434093031760588386010342390699617474201564040715683",
+      "escape_blocks": 22,
+      "escaped_cylinder": [
+        47449023823422717451594836169381198840134089164995011450245185618387776847176840854174067173766596944222479515740143273879768480709913455315809719544718248,
+        15103493372765657274145753764324412346673615736564990480645229502691940095166708783466819743670409392336434093031760588386010342390699617474201564040715683,
+        21390352210711825162036972971469306584549564800947786952879344737854854672337389812064033941065354671089642639960371451717592043511920603429958836616997162963,
+        6808760577622876243416016933058490951926819272687240160695191977365374646334564951690675172332536873666871216332383317119245698241932518118152401301228088511
+      ],
+      "escaped_width": "1/102836070260875179922183869696234148135561595521744917905975963574649938520993983781175760589115972987490375924936140589520601784033617684612538900284970729193127415203782118238968292144927997620168276979812516347273004756198567416700357967547098505791457358458814120153539392975883775378244696716221566509818013",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 1028,
+      "fixed_polynomial": [
+        0,
+        15103493372765657274145753764324412346673615736564990480645229502691940095166708783466819743670409392336434093031760588386010342390699617474201564040715683,
+        -47449023823422717451594836169381198840134089164995011450245185618387776847176840854174067173766596944222479515740143273879768480709913455315809719544718248
+      ],
+      "kind": "single_letter_parabolic",
+      "last_output_index_to_read": 2706,
+      "period": 17,
+      "period_witness_start_at_most": 2689,
+      "polynomial_gap": "417727251916572718187733369031530608756797973648728176688222458653289010038863720946797482737428288481217728713214766859043465013999391004180435507810830349645788757543691468754750574377684753912084380800040718514525841215484320018568626208270976767404811611117650324826710205796363973131911357410521406273528897962867385037624932043848772099516779610360469920105220956741931862207866772670574076345799386096155581452253597622190452086657335584372860232707034752853636805709753180446348908181702758689141587614325669868290680960721198721922944150082107105844978171037910966866648180824194475447063877049867375918347423814019594621444626846213384015328968686653633098629734730182957892263953225239438382792866600589571948691528/2766890067708968564583920476513228627538578560149107763565530357952181129138499644413252654593834357159978848155410468617434797738585574725760763076764277952494056174561472952017964687339044847019668491420108517174392133177129680575430119216934463171601209016623238069358406775792844616248030285051601701736867579038185302946090620283151478142717079177511851964379176998739983959497871842701586796128257677008208802894697611561031056208838120000276986425066213859237248807726707391807712027880257964517573364181310750144119832239509895376089625951646109853017735381428579952865835806674916158570058086067672508084135004686775248324628405081559563709984139039408023544310919019457641744601496560863629444287361797547984953694535330143660556747107633515269354663211575198287155905361913834245555894748290222671187717185737125088060651922826652825037317972582545053044839907642195266875",
+      "polynomial_range": [
+        "417727251916572718187733369031530608756797973648728176688222458653289010038863720946797482737428288481217728713214766859043465013999391004180435507810830349645788757543691468754750574377684753912084380800040718514525841215484320018568626208270976767404811611117650324826710205796363973131911357410521406273528897962867385037624932043848772099516779610360469920105220956741931862207866772670574076345799386096155581452253597622190452086657335584372860232707034752853636805709753180446348908181702758689141587614325669868290680960721198721922944150082107105844978171037910966866648180824194475447063877049867375918347423814019594621444626846213384015328968686653633098629734730182957892263953225239438382792866600589571948691528/2766890067708968564583920476513228627538578560149107763565530357952181129138499644413252654593834357159978848155410468617434797738585574725760763076764277952494056174561472952017964687339044847019668491420108517174392133177129680575430119216934463171601209016623238069358406775792844616248030285051601701736867579038185302946090620283151478142717079177511851964379176998739983959497871842701586796128257677008208802894697611561031056208838120000276986425066213859237248807726707391807712027880257964517573364181310750144119832239509895376089625951646109853017735381428579952865835806674916158570058086067672508084135004686775248324628405081559563709984139039408023544310919019457641744601496560863629444287361797547984953694535330143660556747107633515269354663211575198287155905361913834245555894748290222671187717185737125088060651922826652825037317972582545053044839907642195266875",
+        "28468487389687517968032008984071581059644297413421904067428347312847665274312671656633598438146769785109305729249102287522254782738866170276949814214536537383700238578037311437293875500649283315027741329245979543177978532989012323326694994630985823584833264709152355628330821801084877934438974019533543480627913621155475396605274754285239208680698998017455706038098857483739364883992474648433417683884206893526975071422682946700945175321801616723731220364448670215275064408613881291529573801114172691218508660032823354388489606429563216137596538375267871837808307632744323726757732139373458397601540894328963083048837397938063222444756847958875982147385535735692006329639192746920134616925688562911219117164690731992035111819204616/187863534927235838629554448593818684123986868498443969822808814713879242125116710356726615488957571348091083853207904587717970462056744767154978530623064180140488932084200329023163748376259127978094431561951107990589702666327573922029978804472199245962207288601667995195227744856006770909392512264148600742828098013955667514130714845365135911456061524915522212825452980683448690898027004503909638696720311495826353090141283732159325623411481833658806547302720722400631482298220251781568223556985875016849678707818456002535304249566003366350357333238915920690345179192856293059731653765806782418431233869736760281388514413217979035497294819822649697216793088358686574588078468664115501533207811992957848378779003968115534400997865310764120821458366992786243373568076321238103024506357863603770508585724661248705632433759993582104054083604161246861558778384437061466585495209182132035011875"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRLLRRLLLLLLRRRLLLLLRLRRRRRRLLLLLLLLRLLLLLLLRLLRRRLLLLLLLRLLRLRRRRRRRRRRRRLRLRRRLRLLLLLLLLRLRRLRRRRRRLRLLLLLRRLLRRRLRRLLLLRRRRLLLLLLLLLLLLLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRLRRLLRLLLLRLLRRRRRRRRRRRRRRRRRRRRRRRRLRRLRRRLRRLRLLLLLLLLLLRRLLLLLRRRRLRRLLRRRRRRRRLRRRRRLLRRLLLLLLLLLLLLLLLLLLLLLLLLLLRLLLLRLRRRRRRRRLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLLLLLLLRRRLLLRLRRRRRRRLLRRRRLLLLLLLLLRRRRRRRLLRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRLRRRRRRRRRLLLLLLLLLLLLLLLLLLLRLLRRRRRRRRRRRRRRRRRRLRRRLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRRLLLRRRLRRLLLLLLLLRLRRLRRRRRRRRRRRRRRRLRRLLLLLLLLLLLLLRLLRLLLLRLLLLLLLLLLLLRLRRRLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRLLLRRLLLLLLLLLLLLLLLLLLLLRLRLRRRRLRLRRRRRLLLRRLRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLRRRLRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRLRRRLLLLLLLRLLLLLLLLLLLLLLLLRLLRLLLLLLLLLLLLLLLLLLLLLRRLRLLRRRRRRRRRLRRRRRRLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLRRRRRLRRRLLLLLLLLLLLLLRRRRRRRLLLLLLLLLRLRLRLLLLLRRRRLRLLLRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLRLRRLLRLLLRLRLLLRLRRRRRRRRRRLLLRLLLRLLRLLLLLLLLLLLLRLLLLRLRLRRRRRRRLRLLRLLLLLLLLLLLRRRLRRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLLLRLLLLRRRRRLLRLRRRRLLLRLLRRRLRRLLRLLRRRRRLLLLLLLLLLLLLLLLLLLLRLRRRRRLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+      "prefix_bracket": [
+        47449023823422717451594836169381198840134089164995011450245185618387776847176840854174067173766596944222479515740143273879768480709913455315809719544718248,
+        15103493372765657274145753764324412346673615736564990480645229502691940095166708783466819743670409392336434093031760588386010342390699617474201564040715683,
+        3644417300751728835140504244120738218339415453239652670487645316577826131493251332602932818076647413950435301073557867286558631726412971141846001507272538211,
+        1160054056208520422885505025201160734270886987211933720933876143358589050742215866674084588199803760933044865538504857062877830187810861182801016350000423069
+      ],
+      "previous_width": "1/98958106555835185720426248484181253328837209526889397345856733049035786524670122100839789301371859714317223177043487743370723751794853060593954255893347755337698420790202116842765415271344157633254415411569254051262057068068232351896564713919273249645528162102581955410685446335668702985232111718480322193157700",
+      "root_distance_lower_bound": "417727251916572718187733369031530608756797973648728176688222458653289010038863720946797482737428288481217728713214766859043465013999391004180435507810830349645788757543691468754750574377684753912084380800040718514525841215484320018568626208270976767404811611117650324826710205796363973131911357410521406273528897962867385037624932043848772099516779610360469920105220956741931862207866772670574076345799386096155581452253597622190452086657335584372860232707034752853636805709753180446348908181702758689141587614325669868290680960721198721922944150082107105844978171037910966866648180824194475447063877049867375918347423814019594621444626846213384015328968686653633098629734730182957892263953225239438382792866600589571948691528/41789705800813527447252605794144058067328647144972833895524200889777194695714499043007306312172872034564339493402706400312369236047415050887719827946079775671583135738746733974316754470938954053965668464282340512648813598505614292842129641333154323478109143206178568100753040406629782653279912869751229342075845551299923485598310454772518113449130336081486243358499103636207764546137754855947034939705459355291579049336240564483310906603456496150037784884130959777279883957142882305550370090737301701616636682151058543798865021246930563188965506866679282619913575704428518244945388382716396543991230180929065508616273625534379666400138147480102521647701283482068069482562523366554013600695610270768779273549961820575778580689868739653989788052939235095671642693516835972892265443974142905197555703546713563252369960496608590319619851814511746954365390931642441235775782389087948699558255924794891661296053804407703185605892219751637809150516444909681461958994796864843172189161169704894033195068651835520727103811721285831292410182900625",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "7292958426894246378857347446317933297857705677814742200019621946027139341964083777210166119681811769766517139702724112743002933576244213066876327596241782866408218353490192729918740842865579433463649717273533119185446503703954781216202497058520099208936780827402086148616905877407118724077037136249420640327533165788601136001801525274509586650573500982624291701781155150210546616706831021507185018700166374659044499101596637003111245264980963349903526661116516146387598930778697049226939023035488872237883832026725275605042934260743280990951954185669378704445358278234930977092622073880367606881614943987793215669977162322613870453660692337298672128203261519023867447133547439328783542464137446565228714631121670659564390966065559154666590642405905748767024102855679906815538178166115645049050272718334424669861269684574083017537371136604888597129613128466452560947842077627250034868224/2321420766807824625685909279794598818504867411965101413631479970321879967347201201662718977204227025657222253602389383170027795302673297194913280221405229202142513130457075806743072372677458626649501864301471045909314999735611802002785870023008014600973414364946896740191703284890196633032097409158293827757231898813037469171770030417564090161739629429932443798114129501942846542018714476026631321951608191009887185628651296099705056159215182680232391610630553427900051749682707501726670391391536432230244052548119719370916539248948802220539196173431086166681879985018578580454436241800254657040278734210777234282589268932204433344363231863428473952676692654063331753676861057324961423720655614564585103757096548142759376149715141990531207110823304519310988562434511591362923804598645706932021395693815496821126494718833447948882886963251561720206309778996755299504620682511801828908125",
+        "495169998310838646385277319562648717124644642406587551154732271269404679901335396221238649028035973731837214234395859082911670181026253334601702014802028331280518801546923615783292747008044246793881424853721078193334261261987417780236500942782339175989180607838119443232642058358311140008658590439926913216318519363440300192486383648804659364336852469961382890184244292089456898851442273937221666458712865984961765322746607400848005057998233439198988150526825621482602337784128711805899575273871295606757933746474505834334520296656590831474787134560660796388907041784237225039399216390748450769169403607662675844884945636185763662532514628979079435483059971088934765320207176347069547047148496015356070855101274396586099951857990537320182050847296598261143701275531805433421867307196361534461382507556949459866107077845076689963787004807813710100484857843192986345760506600421528983388028928/157617505803950868610196182370213875980024982670194490681336595544944684142972919989293630395235402361048419352841431949095377217665608859643026987192750847137870214018644076050434384887681408373621228080476979604104760537048834520583152216952175167362291915136799447968796077934189680792980317789620676023232774233708805044355669755261349029711635619404123136560555050793413451663444656778780186866548341344998310242628537051281674198042233258439738693186982686094129813648206791244735739564311149139136880435859684586127120265385876824367949802587450457459199605342806429877114857509511890449063805216709141876084963592689884410782230353831203095964889401132938036079397835209192905786361354262091634789795584329248933362437208995731097369203569906947658190423616033518768437560834247563563456703422990787664025611924634615385301376143891286116847815064542694570465230480503808777374963125"
+      ],
+      "source_stage": 1036,
+      "start": 2333,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_symbolic": {
+          "base": 47449023823422717451594836169381198840134089164995011450245185618387776847176840854174067173766596944222479515740143273879768480709913455315809719544718248,
+          "coefficient": 9,
+          "exponent": 8796093022209
+        },
+        "height_bit_length": 514,
+        "polynomial_height_with_floor": 47449023823422717451594836169381198840134089164995011450245185618387776847176840854174067173766596944222479515740143273879768480709913455315809719544718248,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 4521191813415430
+      }
+    },
+    "witness": {
+      "comparison_start": 2676,
+      "different_output_index": 2693,
+      "earlier_letter": "L",
+      "is_first_period_mismatch": true,
+      "later_letter": "R",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRLLRRLLLLLLRRRLLLLLRLRRRRRRLLLLLLLLRLLLLLLLRLLRRRLLLLLLLRLLRLRRRRRRRRRRRRLRLRRRLRLLLLLLLLRLRRLRRRRRRLRLLLLLRRLLRRRLRRLLLLRRRRLLLLLLLLLLLLLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRLRRLLRLLLLRLLRRRRRRRRRRRRRRRRRRRRRRRRLRRLRRRLRRLRLLLLLLLLLLRRLLLLLRRRRLRRLLRRRRRRRRLRRRRRLLRRLLLLLLLLLLLLLLLLLLLLLLLLLLRLLLLRLRRRRRRRRLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLLLLLLLRRRLLLRLRRRRRRRLLRRRRLLLLLLLLLRRRRRRRLLRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRLRRRRRRRRRLLLLLLLLLLLLLLLLLLLRLLRRRRRRRRRRRRRRRRRRLRRRLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRRLLLRRRLRRLLLLLLLLRLRRLRRRRRRRRRRRRRRRLRRLLLLLLLLLLLLLRLLRLLLLRLLLLLLLLLLLLRLRRRLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRLLLRRLLLLLLLLLLLLLLLLLLLLRLRLRRRRLRLRRRRRLLLRRLRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLRRRLRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRLRRRLLLLLLLRLLLLLLLLLLLLLLLLRLLRLLLLLLLLLLLLLLLLLLLLLRRLRLLRRRRRRRRRLRRRRRRLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLRRRRRLRRRLLLLLLLLLLLLLRRRRRRRLLLLLLLLLRLRLRLLLLLRRRRLRLLLRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLRLRRLLRLLLRLRLLLRLRRRRRRRRRRLLLRLLLRLLRLLLLLLLLLLLLRLLLLRLRLRRRRRRRLRLLRLLLLLLLLLLLRRRLRRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLLLRLLLLRRRRRLLRLRRRRLLLRLLRRRLRRLLRLLRRRRRLLLLLLLLLLLLLLLLLLLLRLRRRRRLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLR",
+      "output_source_interval": [
+        "29127646959461096846192783503685218654390861318034561832631310074670863523607964483602273472237410219519836131435050534288921775354485490270688353811884019487089341267466095046076043941649661576110672050218886952549074191881612810602147114281314069175834153402242320190155415197547714118156387672936877248018736432970012749325121758469907192772635399743436048978598717119678038404149825831185220353601260046999697061934263226010494315646012257912196146389632962053071997163060487754238881261681242611971988837637073796104851354756356638590469404202683763271001205370813954384861516706112846828010594227461470071786099963303344781321088050583282533986311071139680491070844057761380768735780530011325764917665464204180687974436040443490153298716209297688020322064294688615415131947408505454449929920138604264126759200989488121885620010933447981501502614306726878691327565360480105969477484544/9271617988467698153540951904130227998824998980599675922431564443820275537821936469958448846778553080061671726637731291123257483392094638802530999246632402772815894942273180944143199111040082845507131063557469388476750619826402030622538365703069127491899524419811732233458592819658216517234136340565922119013692601982870884962098220897726413512449154082595478621209120634906673627261450398751775698032255373235194720154619826545980835178954897555278746658057805064360577273423928896749161150841832302302169437403510858007477662669757460256938223681614732791717623843694495875124403382912464144062576777453478933887350799569993200634248844343011946821464082419584590357611637365246641516844785544828919693517387313485231374261012293866535139364915876879274011201389178442280496327107896915503732747260175928686119153642625565610900080949640663889226342062620158504145013557676694633963233125",
+        "29127646959461096846192783503685218654390861318034561832631310074670863523607964483602273472237410219519836131435050534288921775354485490270688353811884019487089341267466095046076043941649661576110672050218886952549074191881612810602147114281314069175834153402242320190155415197547714118156387672936877248018736433143213029105216213757482228691138856080010806928966409289409265550285157229868038589690748166676291702417143000869826080047338079217480913835337467598214520307178029254733736144590482692238862306265850821450062984413440571700811312816752335039716392646371606002091506480508066593431525321003220564659820869811297664078080431635120703207352531644566296118069611042053901739506852085620184650622241257555450888365937924603957085369699240701930516286752675176775326438531082833985605575362128128566011597834965018605930940630552004118510665598698966241072229098504979287705124864/9271617988467698153540951904130227998824998980599675922431564443820275537821936469958448846778553080061671726637731291123257483392094638802530999246632402772815894942273180944143199111040082845507131063557469388476750619826402030622538365703069127491899524419811732233458592819658216517234136340565922119013692601982870884962098220897726413512449154082595478621209120634906673627261450398751775698032255373235194720154619826545980835178954897555278746658057805064360577273423928896749161150841832302302169437403510858007477662669757460256938223681614732791717623843694495875124403382912464144062576777453478933887350799569993200634248844343011946821464082419584590357611637365246641516844785544828919693517387313485231374261012293866535139364915876879274011201389178442280496327107896915503732747260175928686119153642625565610900080949640663889226342062620158504145013557676694633963233125"
+      ],
+      "output_source_stage": 1037
+    }
+  },
+  {
+    "plan": {
+      "candidate_word": "RRRLLLLLLLLLLLLLLLLLLLL",
+      "construction_output_length": 3095,
+      "derivative_bound_on_prefix": "1715883287561006697272310051773281940610159546992186060625818015046096892393779733599578193543407781274089198967830796684487089358941656622544473595055569887738339599161332292143772556664010350943245436/19869350391167767430095661498203728300208570420616312177704252156155082119646279010283728464720294874959275840712311751364946807651246332180405734770303977687683122395206801887676035738144582031338497",
+      "escape_blocks": 2,
+      "escaped_cylinder": [
+        70597487237654587294640465647853781213374167442303490731379171463390417294298751457465469226649716446543271915503918379091503341018327552324006934976543653240303157800435355491026700143495727583518814781,
+        22471878127479446177421564202672536419001016069556626216237121508509765106035437301055845425348823660633187976866277127239151422977144023702143320841267349851435114775340372619523192630836393935749686282,
+        1435101578388816241247016199812838527504192567118231221299721263765572914951300256672180133935760759670867176435753815436646664086662619557906898317295880543762943281193227225412409658303111395940622489663,
+        456807020079122444243276886715105511118078048673808517863851134292014582080238368601709831902866638371467670290055527857955812938126177797087190489702383038289639028475967837413413069547800314807209306265
+      ],
+      "escaped_width": "1/10265311682995095843741541917980043764605757609362346501752379455159955893557086583554300939789701377482755343911370652712668546561472856881953559836905617071175558194803288936432614038098325433058426596896519152773720038346927125629806268816935688043703138704331161115918935951742291886823330491069944710607538105213645461763737017431929037708959136477393997009327667849958454875599224271849794384607156730",
+      "extra_source_refinements": 8,
+      "first_separation_stage": 1332,
+      "fixed_polynomial": [
+        446330528205591670147365789031152883441901053009084647168179204017195342483435760234313677209696300927085766111658148572923111072736853567935074663791038298500151794629097943407195517327664526969316360420208261660312581932419812694705450746250108823604318385939987370089520219825740589527115215298362480904972504966468462896071949584905982413273850201627176968877380840757792988250703332617837104323605,
+        -2804377416967077584216163793191646424712513197124023638804993570015385304379191441569582566946792104502740874007731818257758890023807786924604402133381630301506153617977134743264082796050375626293318878408662460179314646780951392930205124682736427476613765537898716187961587439905490082492325404857305107618818221408263921828483350858486535708090049081662126399625999960509798411592849592861368947893370,
+        4405105745518445660039502210252919356990176072980832741690601693019675379580418225273403717862305687335154360533479633310255560786960832899690942596425877650701770809245743146250889958407891512780454928400563490070578741579057799999779176954031398867901228475673242911615836497879493908030726092974672241966785779138930551574366741514060136989242685695420566228812322002061732266815656901289429102526693
+      ],
+      "kind": "mixed_hyperbolic",
+      "last_output_index_to_read": 3117,
+      "period": 23,
+      "period_witness_start_at_most": 3094,
+      "polynomial_gap": "33181478135430531755133816665952254881119444620145748459303443518945793939679404067411426458786509561958121164285970445849470196358745816732642616727561992053915775031060403952922253339052950813352411568512911156083023401476941763573062468137948688473992781878918950925089668077623301033623382732503873987938133034252355953953328312070406038911330909488691491586178046317181466513493691349945569410263361634644938452413528894055077154651695783189603819662528767364863886240909484287570782241166921301066694913979964920511346015426719983159670594448370796125686835194344084275770697210031372392313125551880456492848906252039788186737523170308271171557405194939749992277368161002435258287548229508422422939777869041640516423443120633711142297960702504100921167732147360381341655610039728395766704735576148485832911680619802252350669813305159996701021247480907444709670727823957154075674412688706120255237721973490716021913761336726015795172559251512711229659702416886444470135347272682759444031436550134283329896682792440654465957977709790124258958994714179252323084226505072573316597973398901598657655691119683703836166188840291077848515813732336438799094047904483601996910514778119547247657723435608722079887967927727931804074896352311034484627405607302828770942497932323572637661290603162375925244211920477073969763020878768383224981836604553431152846102130840982066116309716887114223243266254587639450478365554807096239952595379952321610151258765718397531384813423367216085528404651174403370225496635157718297169106192058855569078859265582232149986837405827958059955427673814294414490413229389274728333723053618743663194811553659678674389097984732646128069899199656957436996968854157079939356120399052445666222675946593511333532369197486101619295868862174034391841447766174337354037887601423014906260421217424846803648273544450501072587166434670966074836555423403841945906635273682230867954214377/8343071463444702445411010943215401442723183152710063329501450988992029902911904132423606660828261110344934695424315254878119685269671557440686873009799515119376279022743112537457066308197100611590441113648224673455558178200473582222513850918606013485635662191843804188842627018349521723112807218670961810104941082781548169033392780309344530163862564761463247097884783197638081964902141997864854454364149206073016492061777382913372644455561100525978331891059832913642881139327110077178641356338210822486962782570635016355852524040689399817872867731234670638111832089244706836483009351214926674836879351089640992772079925026500545950743155304534648501296576049010921559990904353185471138084252694759298071915790753705101701122027613905473538230469203054836533354568456233466496480848697013089654300114067861692138639202147072264993557338952564320988067570857562991054520772255540537552691547081361257056122991335909584550861252848748361233958366007093704814421013627184624497261405715715366749975029097210015180152871418002159080491226588954035401608584422309393800264749366931660720494541864230201651859613123380211930403019747210479300973595283927317768581126741877858062761657849041223010665270906171144084041815346693949983256582201078833860990903099498834134217711621898671774108088782339887080700147787042172895616022954002356394773588803809399923851522745819640208538869781815432860558177939790853473834486128026401790552031490966553556172301501313099163692107157490651627447125235753804272999217042736090119460000015088354466104656318089857326664526556393471492112549044874465690671292176668434537089734351052555724245428861455108857246881043951141684113465607777481128298641039280175723909024215863092447625409791940224396576418788296336943897013986982835415340243910058762602459984377351304802758044915537490591692681839757818855930033199541412673021018978595130068932906780751114803265274569844308832676427575797771658395543784482299192692707577040106594185892379185543596223222623645971480277272954386009492833912640831227338089835547385868750642730336730428305082185409415340724266126256344263976530863083501485813132366807222563107884171438661679788347487171981948597259355888738459925418151974024156420100891687085243004416858423332914898955309665570552590977982978699193909296826796875",
+      "polynomial_range": [
+        "-8590532286161591682794191819457434912115036895679291638953093108246068429466863704288849927434968571184100453590064982441262942517681703477176257140661062284194658387698746053033289694225700670954595974363551713219499212100594466785184399742110459461772170492895430213435288142146647321967010383235834606364068733872794537036072436738292657416841664938237052964544500044042353914437064723492858528946057785397064744705109992241720552202597028403212970665465412917453555854574028509465945416843912909327863496249412021257824312050720813810662992253464203582071547639838295443163902892634224158372645981030874872823735480739877084235721849107306113126600658845176771466864367012259141118693012918619796509573274237865012662622386330182702670324183102179737780132271759032947643468645273311678213064862714631567834192930904191856631949963381285816880079088136436906762516749186136791521386343000354869283425788003427179494633742436242515186402744752067235339235122285743485978783215196917777092589253022963904116396234079183835843784686349273970619758768749712221782268905514273597512308630486562105465562422818458477373570731231716313776707798304143198453798046536879430302016260975485568941976100337848342276722747146542161884801893574488845415707057196605359853757858877132125992594787439142149585728497581043361579797742235923407180566515699610940238908356287435790899243244828853930847699579408809096063666043913757354606072002144309754231161357290604555266903916603745673559897207548393977108738487796056373702361479189715963831660217152877704307868866371545002531827281134675272000025559513334742176680355112789149369765901135671543121013363442381981069412495016616989030408753103903385293120901958712765234236918146737194338208116536251125143599718917828828840997392365853169754348747868339805438286668748192441499786329012029041002900189863228906766456738765117484900784543001520037577/2126597758152468324983950491671490595072249854168162004004853808296767277734175950424465895362346179985429144869805670640462606608239121079596672993899176965709115480175294545905957148124362785035359121079013046787345016304723905362501458555736232009089984816179920672489015081928640812522922725674807039293358945248509531516870730995209836731067556208503196694062181054557804223162080025922196964711070241565401242128972351646705226344343769449467487202842437512274064058970900075763736942358903438609213806943672836613163163381570795110363721987412822105219492466611095819326428972640250607611870201766194686784727269381341277003216516044209809673230751586452249816693622095213882686406591901379762216183741808383492709053190268322834306370217853492694125968582362392379869140357948526481407733740518833900790802782372704864203747313875877723427267813821948528903724443282047413380699115633073267815308731125822527880988096574285531829186948762629251059647711510332879180931707813904182979844491166480217238258623988372030654130043261221400081416017461004221296782217136712477044000275047280264219116568458270869596457214597716883795486656880197062208331180434636214162462863689239326490109098018147344872490494312464418060799641310075433665942124317509979293900556519367413940416513275857789119730919068119749977745048749223038052993591365597130464937769818394782402905975953886512935051335622298024777712492963731324110685853443326682481276802953403623257771268073547764750329204721513443436414997533734933552046120340844475412509478360896438990615343055528628066326618364097788712131437482908494395315890296760793540093500283390508060711755595751370409398334696215760881586676619785982733878314160551297899547611748580898549811899763350868126867967557819630568831667471345397292320184589318602060511335999554611356250088449595021869563848287555557070229555845749751617241163280117537810536606626313142627687503618284200188330739286075907906005436237375260300689005084412705558460809634373210007275329968080365981949474820265678067707498481986185863478141168067528917698076244182780828554911437035979633818043699712586761742734857754299943801283819077193567066936526191656441161882614724207460800796352059309334560130939121167087862266950697036471125501157842674274348137834989710889296875",
+        "-33181478135430531755133816665952254881119444620145748459303443518945793939679404067411426458786509561958121164285970445849470196358745816732642616727561992053915775031060403952922253339052950813352411568512911156083023401476941763573062468137948688473992781878918950925089668077623301033623382732503873987938133034252355953953328312070406038911330909488691491586178046317181466513493691349945569410263361634644938452413528894055077154651695783189603819662528767364863886240909484287570782241166921301066694913979964920511346015426719983159670594448370796125686835194344084275770697210031372392313125551880456492848906252039788186737523170308271171557405194939749992277368161002435258287548229508422422939777869041640516423443120633711142297960702504100921167732147360381341655610039728395766704735576148485832911680619802252350669813305159996701021247480907444709670727823957154075674412688706120255237721973490716021913761336726015795172559251512711229659702416886444470135347272682759444031436550134283329896682792440654465957977709790124258958994714179252323084226505072573316597973398901598657655691119683703836166188840291077848515813732336438799094047904483601996910514778119547247657723435608722079887967927727931804074896352311034484627405607302828770942497932323572637661290603162375925244211920477073969763020878768383224981836604553431152846102130840982066116309716887114223243266254587639450478365554807096239952595379952321610151258765718397531384813423367216085528404651174403370225496635157718297169106192058855569078859265582232149986837405827958059955427673814294414490413229389274728333723053618743663194811553659678674389097984732646128069899199656957436996968854157079939356120399052445666222675946593511333532369197486101619295868862174034391841447766174337354037887601423014906260421217424846803648273544450501072587166434670966074836555423403841945906635273682230867954214377/8343071463444702445411010943215401442723183152710063329501450988992029902911904132423606660828261110344934695424315254878119685269671557440686873009799515119376279022743112537457066308197100611590441113648224673455558178200473582222513850918606013485635662191843804188842627018349521723112807218670961810104941082781548169033392780309344530163862564761463247097884783197638081964902141997864854454364149206073016492061777382913372644455561100525978331891059832913642881139327110077178641356338210822486962782570635016355852524040689399817872867731234670638111832089244706836483009351214926674836879351089640992772079925026500545950743155304534648501296576049010921559990904353185471138084252694759298071915790753705101701122027613905473538230469203054836533354568456233466496480848697013089654300114067861692138639202147072264993557338952564320988067570857562991054520772255540537552691547081361257056122991335909584550861252848748361233958366007093704814421013627184624497261405715715366749975029097210015180152871418002159080491226588954035401608584422309393800264749366931660720494541864230201651859613123380211930403019747210479300973595283927317768581126741877858062761657849041223010665270906171144084041815346693949983256582201078833860990903099498834134217711621898671774108088782339887080700147787042172895616022954002356394773588803809399923851522745819640208538869781815432860558177939790853473834486128026401790552031490966553556172301501313099163692107157490651627447125235753804272999217042736090119460000015088354466104656318089857326664526556393471492112549044874465690671292176668434537089734351052555724245428861455108857246881043951141684113465607777481128298641039280175723909024215863092447625409791940224396576418788296336943897013986982835415340243910058762602459984377351304802758044915537490591692681839757818855930033199541412673021018978595130068932906780751114803265274569844308832676427575797771658395543784482299192692707577040106594185892379185543596223222623645971480277272954386009492833912640831227338089835547385868750642730336730428305082185409415340724266126256344263976530863083501485813132366807222563107884171438661679788347487171981948597259355888738459925418151974024156420100891687085243004416858423332914898955309665570552590977982978699193909296826796875"
+      ],
+      "prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRLLRRLLLLLLRRRLLLLLRLRRRRRRLLLLLLLLRLLLLLLLRLLRRRLLLLLLLRLLRLRRRRRRRRRRRRLRLRRRLRLLLLLLLLRLRRLRRRRRRLRLLLLLRRLLRRRLRRLLLLRRRRLLLLLLLLLLLLLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRLRRLLRLLLLRLLRRRRRRRRRRRRRRRRRRRRRRRRLRRLRRRLRRLRLLLLLLLLLLRRLLLLLRRRRLRRLLRRRRRRRRLRRRRRLLRRLLLLLLLLLLLLLLLLLLLLLLLLLLRLLLLRLRRRRRRRRLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLLLLLLLRRRLLLRLRRRRRRRLLRRRRLLLLLLLLLRRRRRRRLLRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRLRRRRRRRRRLLLLLLLLLLLLLLLLLLLRLLRRRRRRRRRRRRRRRRRRLRRRLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRRLLLRRRLRRLLLLLLLLRLRRLRRRRRRRRRRRRRRRLRRLLLLLLLLLLLLLRLLRLLLLRLLLLLLLLLLLLRLRRRLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRLLLRRLLLLLLLLLLLLLLLLLLLLRLRLRRRRLRLRRRRRLLLRRLRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLRRRLRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRLRRRLLLLLLLRLLLLLLLLLLLLLLLLRLLRLLLLLLLLLLLLLLLLLLLLLRRLRLLRRRRRRRRRLRRRRRRLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLRRRRRLRRRLLLLLLLLLLLLLRRRRRRRLLLLLLLLLRLRLRLLLLLRRRRLRLLLRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLRLRRLLRLLLRLRLLLRLRRRRRRRRRRLLLRLLLRLLRLLLLLLLLLLLLRLLLLRLRLRRRRRRRLRLLRLLLLLLLLLLLRRRLRRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLLLRLLLLRRRRRLLRLRRRRLLLRLLRRRLRRLLRLLRRRRRLLLLLLLLLLLLLLLLLLLLRLRRRRRLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRLRRLLRLRLRLLLLLRLLRLLLRRRRRRLLLLLLLLLLLRRRRLLLRLRLLRRRRRLLLLRRRRRRLLLLLLLLLRLLLLLRLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLRRRRLLLLRRRRRLLRLLLLRLLLLLLRLRLLLLRRRLLRRLRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRLRRLRRLRLLRRLLLLLLLRLLLLLLLLLLLLLLLRLLLLRRRRRRRRLRLLLLRRLRLRRRLRLRRLRLRLRRRRRRRRRLRRRRLLLRRRRRRRRRRRRRRRLRRLRRRRRRRRRRRRRLRL",
+      "prefix_bracket": [
+        205665252173689090587449347180651987909615358491293596492242682605608801731519651434233911076585598816295470105720128694612271049237566387134129277771761678789341505815184863756798178626348328855609643,
+        65465283011367581433321295235132280324705665219400916245445360709598995651875374122819310707523761097066581065636511450323785112483359586465016188604666403309669031931115522360401301546916928632866952,
+        312107026102470713810785244461473171778965755775992372824475095830367098863849745806329035757946209240587356123951561982366423693628150552197984134583151563624480247019941283880978555092948814641541003,
+        99346751955838837150478307491018641501042852103081560888521260780775410598231395051418642323601474374796379203561558756824734038256231660902028673851519888438415611976034009438380178690722910156692485
+      ],
+      "previous_width": "1/2678838630518132325110789512302846788010151100881708426226710509811994236869669400972237040216949842076479174402958773745274755092785318613655481144638608805091273437655770767795543399068567193901973482873498819465242890620799666535773118362935108599030887181320798729817408492603352530669855113585323194731363211346726439947441361781259560137322466344050470847309200626508688402387433854287138601314375",
+      "rational_mixed_width_bound": "1/162594080826228131736023640610548068221426115804824513789282417356098679427734174373702280953442986312454452436677557541896016103150440867356024211391501877631124810911920835799252086246357369913566956270397803109812556000110973793122217149816608931768578673709045854406591256102515965648560174131367401525062062235318514209438914395834845933705108757034197540952666061459676956359909108047384581393000",
+      "root_distance_lower_bound": "7839317196819792373405340942391915426917778037499858947600555724074965289034439781624451194942429238824231519961846161449435906170611358137758406880264083315155608614839223204781892016430237007939887169116477931923299378756181173685953042716103578843396854509736437578101700087523185605818743541865473089060557404030885626551533888366148922533287803167722094283866096201265717916078448046168313751718461668422698182627417310775145360868874369094916533249687554421705092251523345373622657959590939959095222892826878765486416834492930645861037428785502976320895222853659760945153421214886636787475137930244447923039268701538581888277480025317077426361797703012746728365867417045222113824984187129306462079692008132620010326676507793067343994457688687273173638115005963353395556976889092737820575161748472289635559389060557425754967223752107956450721117112685803319066797167546320634828346513402143919349565321092720793244758016161806285028534591621611736282417217595579002240208723260470705330455394811785154961994299642447932446094332534330374265497775755327492635973360839740386479874717056981158348955520601258629135904591025497343120748255946276560076460282821370936519333939591574602740510400791336582093860662550487512104010768434364183001645817330415094193296290874826085652970465236058383456762984729640565580214293814141013341495687907609122017969457724942427047196057319767249144831215815318015060099608297171555665186481662892129083086780760659443366886886032947919324920987387771146537892105529454165538600159883465699729527589188585560674766698896434991210360000130611633314397390465680217325172742507669204286961266700802743575539354017198669377692793862311311266801411168375282603383977861129846946110879905869887980487813761294016791542588927062925879516346326557259553926138609832840848754361500761933973499464432884864578781257005983579940450768641853934924900153566155480415079982597443406557302646853705973399243904211418021072016442702439663875467578126049642973381027459050210134337662172913272515278780743209333785193321682972030708501218237018331688960900969759526728469/170220768968881646372608583803332724744533181084219013436787220846943941385091495333994101650158527449962322418809690616663771337117124963118044108954897231798013288209302271789734831286805910544742020950387428417761107426516568431151733503498527041612648051263441976817015244798601301018254272607050085446418709547578065206395532767106105928817681812396965855255947224145850819739181758666294243537658940691326616207179556645000958880414012960155430791236698152094128249451463647047506384580714677423494272634833508240121294794796617752307474103764702832720743644009278764823845805229558028004379761046099723941476946738628111812412554864878911484920906281844922435068428540108251115632597787289743943180563278526178353165658007825892683204722676200030280544977278650356857593816244953607696405503344285275816456821949894816478206026921387940180266903689639116097233265868665809128590752087144630967115096065496199618207703003363545158711181461933736527635452031454805533441307448585729615088953335604113419948846055004118450767746701209656423838782361211940183008639538372803871171839253156485609355433149758144343197777290994608858851335789352714840344256069178152827451421308607904242123410278093172496872451096760225638049469021044885982483282367311626762884131476878797411833056106409521596685937879521221132473380890840968060585970661549249430751152855106049713460975918032258992625796030378023778734082592806388976869427380880229699399716326844797930152140116559999608467447884054604580172391861987375211832964931268562512753180388775832528984467778971234358526081155157038731335905130464839028980513613987879500801693595450898421751821199526563359300736159454486151766498453447274068681144788331802878214790734179246045378419012629367437308891055259752642607179641896544057690140614116762629625553236790185842420666232377653329562282173327545988390914885908992306845094670094580756311236667476356745659276389644505050755044469640575908148038186642198485170364199391852249254619009475014250801470922608632322037266612170828894079477120002546363726749755821789033780037771505259822525723703916420011744876214145898106003391082549323261708155127630867067758459075560389446225879000265800279249476197338804543608920519217442818860360106039362172352067102964541938489105595040442558355865750801012446131641439662894386395383494037041145526929717057851649156894479067908887121572709453097163887205492446696912488057448897000880801925437569767744914358430020802239576846289171943325019936562500",
+      "schema": "succ.aperiodic-period.v1",
+      "source": "circle_beta_matrix",
+      "source_interval": [
+        "27103574501572532797641092206790717384798595427563676299178757968385244622104208507745796668994258744099829105619040803099334211394291183374079469295379951573229955834750465298600708784338383850355421619124455592732872480349072859476161940186697752764854985922344289392867522674554485264017632347057386492443819515018744892561028461113115049425144442835787101664813716860733921484372962651722787769852784926754770411308856117568102511623730293905521871629375355631566054566429687404864718275565474731228708063472706293747473579372358942870544207452244006093493269556755095724961335349257890013324814467674066908784776875891972045832064029296651628001657437509819644649145932777160389754437574777604931667966829549000221887588320991389404320931425124813081440192139800892482625252690868611339303828897422663705142851777712893831563578859026680826683735687275197933820266653221459739857194937204642705127573194583863792632097325014325493816200121823755962594853334596401020356610888764480796911185684308035229045610896647769246674323041682108419281397375860624611508353359768965806070317206098460620418540535883363191874294504193069300039385031376896/8627335714769443894266325712967290831227183795138347630121504257700652029773878740574408636019929476067498940186341573239301525183402938359108698263595765786035580055795840360529879975707571719276214459588705773047070207129055277587308363830196738780302526065183846736339190761491352560418816138270886908185302908569310643492534430275328971524160459778727820117763776633671508489828061934696514942118906616648171850741774829468816294983351327737659641482531211531577364907691532430565486992248048450331434270970357384156614545609190502752620986738526239949987890544582006640897463799729851206757894296324631989079447706288454525163371300807902783202717670234888925988133093263837023941067028638294128044288933566384841698694144084281330177613087042986249119285890152913138020946417380021449843399891799588668535687887843576727398416937739578678786584992241731644421390874966645786201471038587396619821911253426977699509436553224509424115254309263821559283586584728538884634526782739145575127245573810975460347272146583916093424759838869681123861507399211647646117873880255614581842730818991301676321177007238672163933378645733063927644468178619375",
+        "53684248334102532096674035537104082148831930148219965575122140386697495866255138261110448821764750203648854191176016697046191023734609578307941942000207572861230036180103671620343047796764288148866181323597022298298630274552874581590235000015159458641002647604089204812326308509216955946478241592004470723533418024272128145853379519476462440213818416054913042417020905671788805605474242048384289561023775898131761847868537705291687819241935865068161930468392275054613832499823362410526046442881426186333854588266859903494460734931321835944570419729959441923409905299006134635938246786008237406566817787852404063986917961676019707195464431715843568522949532872197743040092775620950532237978759938032763887312650456687720963542718471916665650701390559777817614472009983036901688239313686516968733580581947340554698390736697635796890710569885505804741405054018470500212603304211506831433013937449243450504759320448304100902173368576124933854333173608470803175113014374285565297816691816554524816441627506721656884384221783422798916599266630847407017242398931140743008407209812833986482244882415110618790103406229740280366989103764239082609128644913659904/17088226977090530956328635239618554173490935824863172504744810713746640260631876064470906120062011044438183449599819824907083842893145590761094104324106062041906424896368887800933439584078931506114685367042419685936085962213254878965554266299669438039258239981158902673448032745120762197050039994459523290898055217122076781643542159712907084109891384833431891315694598454727549584157245894018762974013031400765399703094848588447148841446414096932868337198899442860191859189968820906190064223255408941535742578322725678292061234984798818000917017367048229758501624469145370178064442383225889918282971656347000956125679726340953744731517560178267734661207299563538897330982935874705875054392983626517752301186829414452356329493969437570793716921492333509031822636289107998122574220429488150290739821019832995028856455553265585913543854660899840120136092210608750856385773940613813113454518574942533953637014414135400780474678854897785020072577736609894756289287389249266202006958182913738366109963068380866003886381067120322976364178579384583765552906204453138870575278535162883038460154319011332142252840575142568969777213327837472890245844300426849375"
+      ],
+      "source_stage": 1340,
+      "start": 3072,
+      "uniform_classical_budget": {
+        "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+        "escape_blocks_sufficient": 11769172463715646,
+        "height_bit_length": 1338,
+        "last_output_index_sufficient": 270690966665462929,
+        "polynomial_height_with_floor": 4405105745518445660039502210252919356990176072980832741690601693019675379580418225273403717862305687335154360533479633310255560786960832899690942596425877650701770809245743146250889958407891512780454928400563490070578741579057799999779176954031398867901228475673242911615836497879493908030726092974672241966785779138930551574366741514060136989242685695420566228812322002061732266815656901289429102526693,
+        "root_bound_exponent": 8796093022209,
+        "source_sign_stage_sufficient": 11769172463715646
+      }
+    },
+    "witness": {
+      "comparison_start": 3072,
+      "different_output_index": 3095,
+      "earlier_letter": "R",
+      "is_first_period_mismatch": true,
+      "later_letter": "L",
+      "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRLRRRLRRRRRRRRRRRRRRLLRLRRLLRRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRLRLLLLLLLLLLLLLLLRRRLLLLLLLLLLLLLRLLLLRRLLLLLLRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRLLRRLLLLLLRRRLLLLLRLRRRRRRLLLLLLLLRLLLLLLLRLLRRRLLLLLLLRLLRLRRRRRRRRRRRRLRLRRRLRLLLLLLLLRLRRLRRRRRRLRLLLLLRRLLRRRLRRLLLLRRRRLLLLLLLLLLLLLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRLRRLLRLLLLRLLRRRRRRRRRRRRRRRRRRRRRRRRLRRLRRRLRRLRLLLLLLLLLLRRLLLLLRRRRLRRLLRRRRRRRRLRRRRRLLRRLLLLLLLLLLLLLLLLLLLLLLLLLLRLLLLRLRRRRRRRRLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLLLLLLLRRRLLLRLRRRRRRRLLRRRRLLLLLLLLLRRRRRRRLLRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRLRRRRRRRRRLLLLLLLLLLLLLLLLLLLRLLRRRRRRRRRRRRRRRRRRLRRRLLLLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRLRRRLLLRRRLRRLLLLLLLLRLRRLRRRRRRRRRRRRRRRLRRLLLLLLLLLLLLLRLLRLLLLRLLLLLLLLLLLLRLRRRLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRLLLRRLLLLLLLLLLLLLLLLLLLLRLRLRRRRLRLRRRRRLLLRRLRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLRLRRRLRRRRRRRRRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRLRRRLLLLLLLRLLLLLLLLLLLLLLLLRLLRLLLLLLLLLLLLLLLLLLLLLRRLRLLRRRRRRRRRLRRRRRRLLLLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLRRRRRLRRRLLLLLLLLLLLLLRRRRRRRLLLLLLLLLRLRLRLLLLLRRRRLRLLLRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLRLRRLLRLLLRLRLLLRLRRRRRRRRRRLLLRLLLRLLRLLLLLLLLLLLLRLLLLRLRLRRRRRRRLRLLRLLLLLLLLLLLRRRLRRRRRRRLRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRLLLLLLLLLLLLLLLLRLLLLRRRRRLLRLRRRRLLLRLLRRRLRRLLRLLRRRRRLLLLLLLLLLLLLLLLLLLLRLRRRRRLLLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRRRRLRRLLRLRLRLLLLLRLLRLLLRRRRRRLLLLLLLLLLLRRRRLLLRLRLLRRRRRLLLLRRRRRRLLLLLLLLLRLLLLLRLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRLLLLLLLLLLLLLLLLLLLLLLLLRRRRLLLLRRRRRLLRLLLLRLLLLLLRLRLLLLRRRLLRRLRLLRLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLRRRRRLRRLRRLRLLRRLLLLLLLRLLLLLLLLLLLLLLLRLLLLRRRRRRRRLRLLLLRRLRLRRRLRLRRLRLRLRRRRRRRRRLRRRRLLLRRRRRRRRRRRRRRRLRRLRRRRRRRRRRRRRLRLRRRLLLLLLLLLLLLLLLLLLLLL",
+      "output_source_interval": [
+        "27103574501572532797641092206790717384798595427563676299178757968385244622104208507745796668994258744099829105619040803099334211394291183374079469295379951573229955834750465298600708784338383850355421619124455592732872480349072859476161940186697752764854985922344289392867522674554485264017632347057386492443819515018744892561028461113115049425144442835787101664813716860733921484372962651722787769852784926754770411308856117568102511623730293905521871629375355631566054566429687404864718275565474731228708063472706293747473579372358942870544207452244006093493269556755095724961335349257890013324814467674066908784776875891972045832064029296651628001657437509819644649145932777160389754437574777604931667966829549000221887588320991389404320931425124813081440192139800892482625252690868611339303828897422663705142851777712893831563578859026680826683735687275197933820266653221459739857194937204642705127573194583863792632097325014325493816200121823755962594853334596401020356610888764480796911185684308035229045610896647769246674323041682108419281397375860624611508353359768965806070317206098460620418540535883363191874294504193069300039385031376896/8627335714769443894266325712967290831227183795138347630121504257700652029773878740574408636019929476067498940186341573239301525183402938359108698263595765786035580055795840360529879975707571719276214459588705773047070207129055277587308363830196738780302526065183846736339190761491352560418816138270886908185302908569310643492534430275328971524160459778727820117763776633671508489828061934696514942118906616648171850741774829468816294983351327737659641482531211531577364907691532430565486992248048450331434270970357384156614545609190502752620986738526239949987890544582006640897463799729851206757894296324631989079447706288454525163371300807902783202717670234888925988133093263837023941067028638294128044288933566384841698694144084281330177613087042986249119285890152913138020946417380021449843399891799588668535687887843576727398416937739578678786584992241731644421390874966645786201471038587396619821911253426977699509436553224509424115254309263821559283586584728538884634526782739145575127245573810975460347272146583916093424759838869681123861507399211647646117873880255614581842730818991301676321177007238672163933378645733063927644468178619375",
+        "53684248334102532096674035537104082148831930148219965575122140386697495866255138261110448821764750203648854191176016697046191023734609578307941942000207572861230036180103671620343047796764288148866181323597022298298630274552874581590235000015159458641002647604089204812326308509216955946478241592004470723533418024272128145853379519476462440213818416054913042417020905671788805605474242048384289561023775898131761847868537705291687819241935865068161930468392275054613832499823362410526046442881426186333854588266859903494460734931321835944570419729959441923409905299006134635938246786008237406566817787852404063986917961676019707195464431715843568522949532872197743040092775620950532237978759938032763887312650456687720963542718471916665650701390559777817614472009983036901688239313686516968733580581947340554698390736697635796890710569885505804741405054018470500212603304211506831433013937449243450504759320448304100902173368576124933854333173608470803175113014374285565297816691816554524816441627506721656884384221783422798916599266630847407017242398931140743008407209812833986482244882415110618790103406229740280366989103764239082609128644913659904/17088226977090530956328635239618554173490935824863172504744810713746640260631876064470906120062011044438183449599819824907083842893145590761094104324106062041906424896368887800933439584078931506114685367042419685936085962213254878965554266299669438039258239981158902673448032745120762197050039994459523290898055217122076781643542159712907084109891384833431891315694598454727549584157245894018762974013031400765399703094848588447148841446414096932868337198899442860191859189968820906190064223255408941535742578322725678292061234984798818000917017367048229758501624469145370178064442383225889918282971656347000956125679726340953744731517560178267734661207299563538897330982935874705875054392983626517752301186829414452356329493969437570793716921492333509031822636289107998122574220429488150290739821019832995028856455553265585913543854660899840120136092210608750856385773940613813113454518574942533953637014414135400780474678854897785020072577736609894756289287389249266202006958182913738366109963068380866003886381067120322976364178579384583765552906204453138870575278535162883038460154319011332142252840575142568969777213327837472890245844300426849375"
+      ],
+      "output_source_stage": 1340
+    }
+  }
+]

@@ -1,0 +1,17 @@
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///workspace/scratch/b8a61198c3dd/SUCC_worktree
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: observational-succ
+  Building editable for observational-succ (pyproject.toml): started
+  Building editable for observational-succ (pyproject.toml): finished with status 'done'
+  Created wheel for observational-succ: filename=observational_succ-0.3.0-0.editable-py3-none-any.whl size=7182 sha256=93636330f289e5bb24afcd2bf32e9fa46cc3a3294366976f40dee419e2be41c8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-g_zvem7v/wheels/45/76/1b/b767b87fb367c283e4f17d08c464d98308d70f472bb8a56fb8
+Successfully built observational-succ
+Installing collected packages: observational-succ
+Successfully installed observational-succ-0.3.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip

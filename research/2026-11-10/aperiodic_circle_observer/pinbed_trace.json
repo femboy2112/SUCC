@@ -1,0 +1,148 @@
+{
+  "optimality_scope": "m-1 fixed nonadaptive rational threshold probes for m distinct ordered states",
+  "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+  "requested_states": [
+    0,
+    6,
+    21,
+    22,
+    100,
+    314
+  ],
+  "schema": "succ.rational-residual-pinbed.v1",
+  "source": "circle_beta_matrix",
+  "source_interval": [
+    "951383441942762720591872/302834755149288490653525",
+    "951383442034412121751552/302834755149288490653525"
+  ],
+  "source_stage": 29,
+  "states_in_value_order": [
+    {
+      "bracket": [
+        3,
+        1,
+        4,
+        1
+      ],
+      "index": 0,
+      "lower_cut_signature": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residual_interval": [
+        "42879176494897248631297/259955578654391242022228",
+        "42879176586546649790977/259955578562741840862548"
+      ]
+    },
+    {
+      "bracket": [
+        103993,
+        33102,
+        355,
+        113
+      ],
+      "index": 314,
+      "lower_cut_signature": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residual_interval": [
+        "2949373568500121619/9138465226755119839",
+        "5983152045687848979/9128108844424075999"
+      ]
+    },
+    {
+      "bracket": [
+        333,
+        106,
+        22,
+        7
+      ],
+      "index": 21,
+      "lower_cut_signature": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "residual_interval": [
+        "2671381219780995114607/2680519685007750234446",
+        "2671390934617518040687/2680519043461942116686"
+      ]
+    },
+    {
+      "bracket": [
+        3,
+        1,
+        22,
+        7
+      ],
+      "index": 6,
+      "lower_cut_signature": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "residual_interval": [
+        "42879176494897248631297/2680519685007750234446",
+        "42879176586546649790977/2680519043461942116686"
+      ]
+    },
+    {
+      "bracket": [
+        28023,
+        8920,
+        355,
+        113
+      ],
+      "index": 100,
+      "lower_cut_signature": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "residual_interval": [
+        "1958580932094095767165/9138465226755119839",
+        "1959398444752440112765/9128108844424075999"
+      ]
+    },
+    {
+      "bracket": [
+        333,
+        106,
+        355,
+        113
+      ],
+      "index": 22,
+      "lower_cut_signature": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residual_interval": [
+        "2671381219780995114607/9138465226755119839",
+        "2671390934617518040687/9128108844424075999"
+      ]
+    }
+  ],
+  "thresholds": [
+    "1158555976585156475328670693684435798117915/4751190030393249973138140428053077733779544",
+    "40422615375971947292850211296669774748027/48936150888744166373696866087678343323108",
+    "2180342234805915603504411550809623417543324/256613716501352894397542417099742785305927",
+    "5641863350827713448685991211124347053307893/48991660136663707592590522189630503067108",
+    "21145276545919757347771099265723665831114/83416905260805278595018695090088644161"
+  ]
+}

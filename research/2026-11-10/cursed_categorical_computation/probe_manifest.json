@@ -1,0 +1,21 @@
+{
+  "scope": "exact standalone probe source files; receipt hashes checked before publication",
+  "probes": [
+    {
+      "file": "round_ii_probe.py",
+      "sha256": "ff78e604971197bfda2ae95d23341b77551e059b7e32cd91df87a8a7cae44fc0"
+    },
+    {
+      "file": "round_iii_dedekind/dedekind_order_probe.py",
+      "sha256": "b0f4cc8e374150975faadfc3d806d81c49f898716c367815d6293b7116e42c84"
+    },
+    {
+      "file": "round_iii_dedekind/computation_probe.py",
+      "sha256": "8a2c1b494783af92a4a06f213334e25b15336c270792aeceb6846f241a6f0fae"
+    },
+    {
+      "file": "round_iii_dedekind/rational_compiler_probe.py",
+      "sha256": "bcd652f5501779d890f3cfd3b01dbd8d436ce7819915e1349780c78f52b52eef"
+    }
+  ]
+}

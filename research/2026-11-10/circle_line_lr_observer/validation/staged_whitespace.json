@@ -1,0 +1,13 @@
+{
+  "name": "staged_whitespace",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.029,
+  "log": "research/2026-11-10/circle_line_lr_observer/validation/staged_whitespace.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

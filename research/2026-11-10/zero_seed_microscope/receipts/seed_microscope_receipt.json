@@ -1,0 +1,77 @@
+{
+  "truth_state": "PROVED_PAPER all-N first h=8 seed Haar sign; OBSERVED finite floating probes; PI NORMALITY OPEN",
+  "parent_pr": 591,
+  "branch": "research/zero-seed-radix-microscope-2026-11-10",
+  "sign_certificate": {
+    "pi_lower": "1574353035058098242816726960753383747979148678087888676629836/501132135402448902498734193931140174949627402324676513671875",
+    "pi_upper": "3597144788622195741816151737039073386719688033186645699212537048/1145006748252931350385207835661626317331906673927513885498046875",
+    "delta_lower": "6516264210539527439580906016362415647044364783950771159311800291861078917652797639229578891251723440933107599676324396/16742227808867892042477341461791219962478749692814216868308529264967241353347925330529944350346340797841548919677734375",
+    "delta_upper": "34018117077282184895777248280923266560053408491632644984369047081302166402815228002520938931329343629987105944581145694429304/87402696902983447333840334029183942130411776442544515848904045343578389871417832076601413656894675356685183942317962646484375",
+    "sine_lower": "1093/3000",
+    "tail_absolute_bound": "1/225",
+    "sign": "POSITIVE_FOR_EVERY_N_GE_2"
+  },
+  "N_experiments": [
+    {
+      "N": 2,
+      "frequency": 8,
+      "first_detail_float": 0.008052366231930619,
+      "theorem_lower_float": 0.005658842421045091,
+      "source_midpoint_analytic_error_upper": "10126067/38403105844765447267070083826760642723840",
+      "uniform_seed_energy": 0.5,
+      "selected_zero_weyl_power_float": 0.037395686168224286,
+      "last_cell_energy_float": 0.5969575638032709,
+      "coherent_zero_control_first_detail_float": 0.0,
+      "signed_details_have_both_signs": false
+    },
+    {
+      "N": 4,
+      "frequency": 8,
+      "first_detail_float": 0.0021049067104633723,
+      "theorem_lower_float": 0.0014147106052612728,
+      "source_midpoint_analytic_error_upper": "200532731/1753679441894025842786021712144894001152000",
+      "uniform_seed_energy": 0.25,
+      "selected_zero_weyl_power_float": 0.18633734403923918,
+      "last_cell_energy_float": 0.23959402894316145,
+      "coherent_zero_control_first_detail_float": 0.0,
+      "signed_details_have_both_signs": true
+    },
+    {
+      "N": 8,
+      "frequency": 8,
+      "first_detail_float": 0.0005260162534990453,
+      "theorem_lower_float": 0.0003536776513153182,
+      "source_midpoint_analytic_error_upper": "996380048377/22687459094417923658338670345264194489889587200",
+      "uniform_seed_energy": 0.125,
+      "selected_zero_weyl_power_float": 0.12694968571829857,
+      "last_cell_energy_float": 0.05595194246526388,
+      "coherent_zero_control_first_detail_float": 0.0,
+      "signed_details_have_both_signs": true
+    },
+    {
+      "N": 16,
+      "frequency": 8,
+      "first_detail_float": 0.00013150406449202734,
+      "theorem_lower_float": 8.841941282882955e-05,
+      "source_midpoint_analytic_error_upper": "568409363406718392340523/40261534064539134779398742890915711244321299221889155072000",
+      "uniform_seed_energy": 0.0625,
+      "selected_zero_weyl_power_float": 0.10658890854035775,
+      "last_cell_energy_float": 0.10586283418250986,
+      "coherent_zero_control_first_detail_float": 0.0,
+      "signed_details_have_both_signs": true
+    },
+    {
+      "N": 24,
+      "frequency": 8,
+      "first_detail_float": 5.844625088535088e-05,
+      "theorem_lower_float": 3.929751681281313e-05,
+      "source_midpoint_analytic_error_upper": "15848424930820592052591724033/2417374649314764628960800864771504413505178105217544331261378560",
+      "uniform_seed_energy": 0.041666666666666664,
+      "selected_zero_weyl_power_float": 0.04822412067648678,
+      "last_cell_energy_float": 0.03143974424838617,
+      "coherent_zero_control_first_detail_float": 0.0,
+      "signed_details_have_both_signs": true
+    }
+  ],
+  "warning": "Float complex evaluations are not rigorous sine/cosine enclosures. Analytic source-phase interval is separate."
+}
