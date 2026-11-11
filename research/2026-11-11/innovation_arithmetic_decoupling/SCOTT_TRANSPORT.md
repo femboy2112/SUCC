@@ -13,14 +13,14 @@ places."*
 are sharp. (1) *Transport:* normality is carried unchanged through every Scott-continuous stream
 map that is a density-zero edit of a sliding-block code (SWT-01), and the weld between the finite
 places and the analytic place is exactly such a channel: the literal carries of the **rational**
-source are a redundant radix-16 name of π/16, and π is normal iff that rational carry stream is
-(SWT-02…04). (2) *All ω's the same:* limits over two different ω's may be merged along **any**
+source are a redundant radix-16 name of π/16, and π is normal iff every block over `{0,…,15}` has
+frequency `16^(-k)` in that rational carry stream (SWT-02…04). (2) *All ω's the same:* limits over two different ω's may be merged along **any**
 cofinal schedule when the statistical functional is antitone in one of them (SWT-05A); the Fejér
 window of the Main XXIV handoff is of this kind, which is why its schedule is free (IAD-02). When
 the functional is isotone (SWT-05B), merging is precisely the open content. (3) *Limit of the
 channel:* transport moves normality between names of the same point; it creates none, and the
-hijack theorem IAD-07 shows the "channel" from finite places to the real phase is not even a
-function unless the place census is complete.
+hijack theorem IAD-07 shows that on any finite horizon the "channel" from finite places to the real phase is not
+even a function unless the place census is complete.
 
 Status labels as in THEOREMS.md.
 
@@ -55,8 +55,9 @@ A **tame channel** `u ↦ v` is one for which `v` is a density-zero edit of `Φ(
 **Lemma.** (i) If `v` is a density-zero edit of `v'`, then for every word `w` of length `k`,
 `|occ_N(w; v) - occ_N(w; v')| ≤ k·#{n < N+k : v_n ≠ v'_n} = o(N)`. (ii) If `u` is generic for a
 shift-invariant measure `μ` (all block frequencies converge to `μ`), then every tame image `v` is
-generic for `Φ_* μ`. (iii) Tame channels compose. In particular a tame channel with a tame inverse
-transports normality in both directions.
+generic for `Φ_* μ`. (iii) Tame channels compose. In particular a **density-zero edit** (`Φ` the
+identity) transports normality in both directions; a general tame channel transports normality
+exactly when `Φ_*` maps the uniform Bernoulli measure to the uniform Bernoulli measure.
 
 *Proof.* (i) A length-`k` window of `v` differs from that of `v'` only if it contains an edited
 position, and each edited position lies in at most `k` windows. (ii) Block counts of `Φ(u)` are
@@ -65,8 +66,11 @@ edit is a density-zero edit of the sliding-block image (window `m` multiplies th
 most `m`). ∎
 
 Tame channels are Scott-continuous when the edit positions are decided by finite look-ahead (as in
-SWT-03). Scott continuity alone is **not** enough: the constant map and the map deleting every
-second digit are Scott-continuous and destroy normality. The transported invariant is the
+SWT-03). Scott continuity alone is **not** enough: the constant map and the digit-doubling map
+`u_0u_0u_1u_1…` are Scott-continuous and destroy normality. Nor is tameness with a tame inverse
+enough across alphabets: `v_n = 2u_n + u_(n+1)` on binary `u` is invertible by a block code, yet the
+block `(1,0)` never occurs in `v`. (Both examples corrected after audit: decimation along an
+arithmetic progression, used in an earlier draft, *preserves* normality.) The transported invariant is the
 statistical tameness, which the order does not see but does not obstruct.
 
 ## SWT-02 — the rational source emits a redundant radix-16 name of π/16 (PROVED LOCAL)
@@ -103,7 +107,8 @@ Let `ε_n = ⌊Y_n⌋ - C_n` and let `d_n = ⌊Y_(n+1)⌋ - 16⌊Y_n⌋ ∈ {0,�
    some finite `a ≥ 0`: the seam is decided by finite look-ahead in the rational stream, and
    `d_n ≠ κ_(n+1)` only for `n` inside or immediately before such a pattern.
 
-*Proof.* (1) `Y_n = C_n + {U_n} + T_n` and `0 < T_n < 1`. (2) `⌊Y_(n+1)⌋ = 16⌊Y_n⌋ + d_n` and
+*Proof.* For `n = 0`: `U_0 = 0`, `Y_0 = x ∈ (0,1)`, so `ε_0 = 0`, and `κ_1 = ⌊r(1)⌋ = 3`; items 3–5
+are vacuous or immediate there. (1) `Y_n = C_n + {U_n} + T_n` and `0 < T_n < 1`. (2) `⌊Y_(n+1)⌋ = 16⌊Y_n⌋ + d_n` and
 `C_(n+1) = 16C_n + κ_(n+1)`. (3) `{Y_n} < T_n < 1/16` for `n ≥ 1`, so `d_n = ⌊16{Y_n}⌋ = 0`; then
 (2) gives `κ_(n+1) = 16 - ε_(n+1)`. (4) `κ_(n+1) = 16` means `16{U_n} + r(n+1) ≥ 16`, i.e.
 `{U_n} ≥ 1 - r(n+1)/16 > 1 - T_n` because `T_n = r(n+1)/16 + T_(n+1)/16`; so `ε_n = 1`, hence
@@ -134,7 +139,8 @@ normality.
 
 ## SWT-04 — normality is transported across the finite/analytic weld (PROVED LOCAL)
 
-**Theorem.** The following are equivalent.
+**Theorem.** The following are equivalent. (`κ^+` is a 17-letter stream; statement 2 concerns the
+frequencies of its blocks over the 16 letters `0,…,15` only.)
 
 1. `x = π/16` is normal in base 16 (every block `w ∈ {0,…,15}^k` has limiting frequency `16^(-k)`
    in `d`).
@@ -144,7 +150,7 @@ normality.
 In either case the letter 16 has frequency 0, `ρ(N) = o(N)`, and for every block `w` of length `k`
 
 ```text
-| occ_N(w; d) - occ_N(w; κ^+) | ≤ 2k · ρ(N + k).
+| occ_N(w; d) - occ_N(w; κ^+) | ≤ 2k · ρ(N + k + 1).
 ```
 
 *Proof.* By SWT-03(2), `d_n ≠ κ_(n+1)` only if `ε_n = 1` or `ε_(n+1) = 1`; this is the displayed
@@ -177,8 +183,9 @@ limsup_B a(B, λ(B)) ≤ inf_λ α_λ.
 
 *Proof.* `limsup_B a(B, λ(B)) ≤ α_λ + limsup_B λ/λ(B) = α_λ` for each `λ`. ∎
 
-**(B) Isotone side — the schedule is the content.** Suppose `a(B, ·)` is nondecreasing and
-`lim_B a(B, λ) = α_λ` with `α_∞ = sup_λ α_λ < ∞`. Then *some* `λ(B) → ∞` has
+**(B) Isotone side — the schedule is the content.** Suppose `lim_B a(B, λ) = α_λ` with
+`α_∞ = sup_λ α_λ < ∞` (the isotone case `a(B, ·)` nondecreasing is the one of interest; the
+extraction below does not use it). Then *some* `λ(B) → ∞` has
 `limsup_B a(B, λ(B)) ≤ α_∞` (diagonal extraction), but a prescribed schedule may fail.
 
 *Proof.* Choose `B_1 < B_2 < …` with `a(B, λ) ≤ α_λ + 1/λ` for `B ≥ B_λ` and set
@@ -190,7 +197,7 @@ limsup_B a(B, λ(B)) ≤ inf_λ α_λ.
 |---|---|---|---|
 | Source depth `L` in `U_n + T_n^(L)` (causal weld) | nested rational intervals | fully directed in the interval domain | ordinary Scott continuity: exact weld, both limits commute |
 | Fejér window of the handoff | `a = √γ_L` (IAD-02, (2.1)) | **A** | every schedule `L(B) → ∞` is the same statement as normality |
-| von Neumann window means of any bounded sequence | `‖window mean‖²` | **A** | finite form of the mean ergodic theorem |
+| von Neumann window means of any bounded sequence | `‖window mean‖` (ℓ² norm) | **A** | finite form of the mean ergodic theorem |
 | Near-pair energy `J_(A,q) = ‖μ_A * g_q‖²` (LL-01) | isotone in `q` along divisibility | **B** | a slow diagonal `q_A` is free; a prescribed `q_A` is genuine content; `J_(A,q) ≥ q/A` |
 
 (For LL-01: `g_q` is the average of `k` translates of `g_(kq)`, so `‖μ * g_q‖ ≤ ‖μ * g_(kq)‖` by
@@ -204,7 +211,8 @@ monotonicity in **one** index only: the ω of windows and the ω of shells may b
 path that is cofinal in the sense of D-2 of `scott_omega_causal_weld/SCOTT_COFINAL_SCHEDULE.md`,
 although `a` is not monotone in `B` at all. In case B the net increases in `𝕃` and the target
 "`sup < ∞`" is an upper bound on a directed family — the one kind of statement the order cannot
-help with (here the supremum over `q` is the `L²` norm of an atomic measure, i.e. `∞`).
+help with. (At a fixed shell `A`, `sup_q J_(A,q) = ∞` because the empirical measure is atomic, while
+`α_∞ = 1` under normality: the two limits do not commute, and uniformity in `A` is the content.)
 
 So "all ω's can be considered the same" is a **theorem on the 𝕌-side and false on the 𝕃-side**.
 This is a usable sorting rule for future interfaces: put the open statement in antitone form and
@@ -216,9 +224,9 @@ estimate.
 - **Transport creates nothing.** SWT-01 and SWT-04 move normality between two names of the same
   real number. Every hostile seed is transported just as faithfully: the coherent seed is carried
   to `κ ≡ 15`.
-- **The finite places alone are not a domain of definition.** By IAD-07, for every odd prime `q`
-  there are seeds with identical data at all places `≠ q` and completed orbit `≈ 0` on a whole
-  shell. A "channel" from an incomplete place census to the real phase is not single-valued, so
+- **The finite places alone are not a domain of definition on a finite horizon.** By IAD-07, for
+  every odd prime `q` and every shell there are seeds with identical data at all places `≠ q` and
+  completed orbit `≈ 0` on that whole shell. A "channel" from an incomplete place census to the real phase is not single-valued, so
   there is nothing for Scott continuity to transport. The weld requires the complete census plus
   the integer floor — which is exactly the object `⌊U_n⌋` of SWT-02.
 - **The 2-adic clock is not an entropy source.** RS-04 of `adelic_return_bridge` shows there is no

@@ -1,0 +1,83 @@
+{
+  "claim": "O-7 finite LP evidence; floating point; lower bounds on the supremum",
+  "grid": 6000,
+  "reference_values": {
+    "(sqrt(3)-1)/2": 0.366025404,
+    "1/sqrt(5)": 0.447213595
+  },
+  "rows": [
+    {
+      "a": 30,
+      "atom": 0.5,
+      "b": 30,
+      "max_constraint_residual": 0.0,
+      "ratio": 1.0,
+      "support_points": 1
+    },
+    {
+      "a": 20,
+      "atom": 0.497188943,
+      "b": 22,
+      "max_constraint_residual": 2.22e-16,
+      "ratio": 1.1,
+      "support_points": 3
+    },
+    {
+      "a": 40,
+      "atom": 0.497184602,
+      "b": 44,
+      "max_constraint_residual": 2.56e-16,
+      "ratio": 1.1,
+      "support_points": 5
+    },
+    {
+      "a": 10,
+      "atom": 0.447213596,
+      "b": 15,
+      "max_constraint_residual": 1.728e-13,
+      "ratio": 1.5,
+      "support_points": 3
+    },
+    {
+      "a": 20,
+      "atom": 0.447213595,
+      "b": 30,
+      "max_constraint_residual": 1.544e-14,
+      "ratio": 1.5,
+      "support_points": 6
+    },
+    {
+      "a": 40,
+      "atom": 0.447213595,
+      "b": 60,
+      "max_constraint_residual": 1.216e-13,
+      "ratio": 1.5,
+      "support_points": 11
+    },
+    {
+      "a": 80,
+      "atom": 0.447213595,
+      "b": 120,
+      "max_constraint_residual": 5.407e-13,
+      "ratio": 1.5,
+      "support_points": 21
+    },
+    {
+      "a": 20,
+      "atom": 0.375758811,
+      "b": 39,
+      "max_constraint_residual": 8.391e-14,
+      "ratio": 1.95,
+      "support_points": 20
+    },
+    {
+      "a": 40,
+      "atom": 0.366034716,
+      "b": 79,
+      "max_constraint_residual": 3.122e-15,
+      "ratio": 1.975,
+      "support_points": 40
+    }
+  ],
+  "two_point_kernel_bound": 0.5
+}

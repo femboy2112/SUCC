@@ -66,7 +66,7 @@ shell. ∎
 
 Checked points (normalization, padding, support, endpoints, signs):
 
-- `1/(2B) ≤ ω_B`, hence `max p_n = p_B ≤ 2/B`, `S ≤ max p_n ≤ 2/B`, `σ_B ≤ 2` (and `σ_B → 7/6`).
+- `1/(2B) ≤ ω_B`, hence `max p_n = p_B ≤ 2/B`, `S ≤ max p_n ≤ 2/B`, `σ_B ≤ 2`; also `σ_B ≥ 1` by Cauchy–Schwarz (`1 = (Σp_n)² ≤ B·S`), and `σ_B → 7/6`.
 - `V_L(m) ≠ 0` only for `B-L+1 ≤ m ≤ 2B-1`: `B+L-1` values. Cauchy–Schwarz on
   `L·Σ_n v_n = Σ_m V_L(m)` gives `L²|B_B(h)|² ≤ (B+L-1) E_L`, so with (1.1)
 
@@ -75,14 +75,18 @@ Checked points (normalization, padding, support, endpoints, signs):
   ```
 
 - Trivial range: `0 ≤ γ_L ≤ 1` gives `-σ_B/L ≤ R_(B,L,h) ≤ σ_B(1 - 1/L)`.
-- **First informative scale of the prescribed schedule.** `4/L < 1` needs `L ≥ 5`. For
-  `L(B) = ⌊½ log_16 B⌋` that is `B ≥ 16^10 ≈ 1.1·10^12`. Below that scale (1.2) cannot beat the
-  trivial bound `|B_B(h)| ≤ 1` for that schedule, whatever `R` is.
+- **First informative scale of the prescribed schedule.** For the *coarse* form
+  `4/L + 2R⁺` of (1.2), `4/L < 1` needs `L ≥ 5`; for `L(B) = ⌊½ log_16 B⌋` that is
+  `B ≥ 16^10 ≈ 1.1·10^12`, and below that scale the coarse form cannot beat `|B_B(h)| ≤ 1`
+  whatever `R` is. This threshold is an artefact of the constant 4: the *sharp* middle form of
+  (1.2) has leading term `((B+L-1)/L)·S ≈ σ_B/L ≈ 7/(6L)`, which is below 1 already at `L = 2`,
+  i.e. from `B ≥ 16^4` on that schedule. (Correction after audit: an earlier draft attributed the
+  `16^10` threshold to (1.2) itself.)
 
 The identity is retained as a **conditional proof interface**. No source-derived estimate of `R`
 exists; IAD-02 shows that none can be obtained merely by choosing the schedule.
 
-## IAD-02 — schedule-freeness: every Fejér schedule is the same normality restatement (PROVED LOCAL)
+## IAD-02 — schedule-freeness: every Fejér schedule is the same normality restatement (PROVED LOCAL; the converse direction imports the repository's Basel–Tauberian bound and Weyl's criterion)
 
 **Lemma (window-energy monotonicity).** For any complex sequence `v` of finite support and all
 integers `1 ≤ J ≤ L`:
@@ -95,8 +99,9 @@ integers `1 ≤ J ≤ L`:
 translation is isometric, so `√E_L ≤ k√E_J + √E_ρ`, and `E_ρ ≤ ρ² S` by Cauchy–Schwarz. Divide by
 `L√S` and use `kJ ≤ L`, `ρ < J`. For `ρ = 0` the second term is absent. ∎
 
-**Theorem.** Fix `h ≠ 0`. Suppose that for every fixed `ℓ ≥ 1` the shell means of
-`e(h(16^ℓ-1)Y_n)` tend to 0 (true for all `ℓ` if `x` is base-16 normal). Then for **every**
+**Theorem.** Fix `h ≠ 0`. Suppose that for every fixed `ℓ ≥ 1` the Cesàro means
+`N^(-1) Σ_(n<N) e(h(16^ℓ-1)Y_n)` tend to 0 (true for all `ℓ` if `x` is base-16 normal; equivalent
+to the shell means tending to 0, by dyadic decomposition). Then for **every**
 integer schedule `L(B) → ∞`:
 
 ```text
@@ -111,21 +116,27 @@ for all `1 ≤ J ≤ L`. Consequently, for every schedule `L(B) → ∞`, `L(B) 
 
 *Proof.* (2.2) is (2.1) with `γ = 1/L + R/σ_B`. For fixed `J`, `R_(B,J,h)` is a fixed finite
 combination of weighted lag sums at the fixed nonzero modes `h(16^ℓ-1)`, `ℓ < J`; the weights
-`p_n p_(n+ℓ)` are positive, monotone and `O(B^(-2))`, so Abel summation and the hypothesis give
+`p_n p_(n+ℓ)` are positive, decreasing and `O(B^(-2))`, and the hypothesis gives partial sums
+`Σ_(B≤n<N') e(h(16^ℓ-1)Y_n) = o(B)` uniformly in `B ≤ N' ≤ 2B`; Abel summation gives
 `R_(B,J,h) → 0`. Hence `limsup_B γ_(L(B)) ≤ 1/J` for every `J`, so `γ_(L(B)) → 0` and
-`R = σ_B(γ - 1/L) → 0`. The converse direction is (1.2) plus the existing Basel–Tauberian and Weyl
-equivalences. ∎
+`R = σ_B(γ - 1/L) → 0` (using `1 ≤ σ_B ≤ 2`). The converse direction is (1.2) plus the existing
+Basel–Tauberian and Weyl equivalences (imports). ∎
+
+*Per single mode this is a chain, not an equivalence:* decay of the Weyl sums at the modes
+`h(16^ℓ-1)`, `ℓ ≥ 1`, gives `R_(B,L(B),h) → 0` for every schedule, which gives `B_B(h) → 0`. The
+equivalence with normality is for all modes together.
 
 **Consequences for Phase 1 of the mission.**
 
 1. *Why unrestricted existence of a slowly growing `L(B)` only recasts normality:* the displayed
    equivalence. It holds for the signed quantity `R`, not only for some diagonal schedule.
 2. *Does the prescribed `L(B) = ⌊½ log_16 B⌋` demand stronger frequency uniformity?* **No — this
-   suspicion is refuted for the signed Fejér functional.** The window energy is antitone in the
-   window length (2.1), so normality pays every schedule at once, including `L(B) = B`. Uniformity
+   suspicion is refuted for the signed Fejér functional.** The window energy is antitone in
+   the window length along divisibility, and up to the additive `J/L` in general (2.1), so normality
+   pays every schedule at once, including `L(B) = B`. Uniformity
    over the growing frequency set `h(16^ℓ-1)`, `ℓ < L(B)`, *would* be demanded by a term-by-term or
-   absolute-value version (`Σ_ℓ (1-ℓ/L)|c_ℓ|`), which is a different and strictly stronger
-   statement. The Fejér sum never needs it because it is a positive quadratic form.
+   absolute-value version (`Σ_ℓ (1-ℓ/L)|c_ℓ|`), which is a different statement that this
+   argument does not deliver (whether it is strictly stronger is not decided here). The Fejér sum never needs it because it is a positive quadratic form.
 3. *What the schedule does control* is only the **rate** in (1.2): `|B_B(h)|² ≤ 4/L + 2R⁺` can
    never certify better than `4/L(B)`.
 4. *Relation to SP-01* (`arithmetic_barrier/SPECTRAL_AND_SELECTION.md`): SP-01 trades the mode `h`
@@ -256,13 +267,18 @@ So for `ℓ ≤ ½ log_16 B` the innovation phase is within `(π/32)hB^(-3/2)` o
 the shell mean of `Z` is `1 - O(h16^(-K))` for every `ℓ ≤ 2 log_16 B - K`. Innovation-only
 cancellation starts exactly at `16^ℓ ≍ B²/h`.
 
-**The age ladder (PROVED LOCAL).** The `k`-th finite difference in `n` of `hΔ_ℓ(n)` has size
-`≍_k h·16^ℓ/B^(k+2)`. So the innovation phase itself winds (exceeds 1) at `ℓ ≈ 2 log_16 B`, its
-first difference at `3 log_16 B` (Kusmin–Landau aliasing: the step `g` meets integers, and each
-crossing is a stationary-phase resonance; there are `≍ h16^ℓ/B³` of them), its second difference
-at `4 log_16 B`, and so on. A *single* pole term `c·16^k/(8m-a)` winds already at age
-`k ≈ log_16 B`: the gap between `1·log_16 B` and `2·log_16 B` is paid by the four-pole
-cancellation `4-2-1-1 = 0`, which is purely Archimedean (IAD-09d).
+**The age ladder (sizes PROVED LOCAL; resonance reading is interpretation).** From the integral
+form of IAD-03a, the `k`-th forward difference in `n` of `Δ_ℓ(n)` is
+`∫_0^1 z^(8n) (z⁸-1)^k g(z) (16^ℓ - z^(8ℓ))/(16 - z⁸) dz`. It has sign `(-1)^k`, and since
+`16^(ℓ-1) ≤ (16^ℓ - z^(8ℓ))/(16 - z⁸) ≤ 16^ℓ/15` on `[0,1]` and
+`∫_0^1 z^(8n)(1-z⁸)^k(1-z) dz ≍_k n^(-(k+2))`, its size is `≍_k 16^ℓ/n^(k+2)`. So the phase
+`hΔ_ℓ(n)` itself exceeds 1 from `ℓ ≈ 2 log_16 B`, its first difference from `3 log_16 B`, its
+second difference from `4 log_16 B`, and so on. Beyond `3 log_16 B` the step `g` is still
+decreasing and passes `≍ h16^ℓ/B³` integers across the shell (its total variation there), so the
+Kusmin–Landau hypothesis fails; reading each passage as a stationary-phase resonance is the
+standard heuristic, not a statement proved here. A *single* pole term `c·16^k/(8m-a)` exceeds 1
+already at age `k ≈ log_16 B`: the gap between `1·log_16 B` and `2·log_16 B` is paid by the
+four-pole cancellation `4-2-1-1 = 0`, which is purely Archimedean (IAD-09d).
 
 **Beyond the first-derivative window (CLASSICAL IMPORT, not re-proved here).** The real-variable
 phase `φ(t) = h Σ_(j=1)^ℓ 16^(ℓ-j) r(t+j)` has every derivative of constant sign with
@@ -306,7 +322,8 @@ shell, with `E` the weighted mean and `|e(-hτ_n) - 1| ≤ 2π|h|T_n ≤ (π/32)
 | Cov(A, Z) - E[C] |  ≤  |E[Z]| + (π/32)|h| B^(-2),      Cov(A,Z) = E[AZ] - E[A]E[Z].
 ```
 
-In the mesoscopic window `|E[Z]| ≤ 4401 h^(-1) B^(-δ)` (uniform weights), so
+In the mesoscopic window `|E[Z]| ≤ 4401 h^(-1) B^(-δ)·B/(B-ℓ)` (uniform weights on the `B-ℓ`
+admissible times), so
 
 ```text
 A and Z decouple (Cov → 0)   ⟺   the completed lag-ℓ correlation E[C] → 0.
@@ -314,8 +331,9 @@ A and Z decouple (Cov → 0)   ⟺   the completed lag-ℓ correlation E[C] → 
 
 The "arithmetic conditional decoupling" of Objective A, taken for the trivial filtration, is
 therefore **literally** the lag correlation at frequency `h(16^ℓ-1)`: no reduction has occurred.
-For the coherent seed `s = -x`: `C ≡ 1`, `A = conj(Z)·e(-hτ)`, and `Cov(A,Z) → 1`: maximal
-coupling with the *same* innovation. The untwisted innovation estimate IAD-04 is blind to this.
+For the coherent seed `s = -x`: `C ≡ 1`, `A = conj(Z)·e(-hτ)`, and in the mesoscopic window (where
+`E[Z] → 0`) `Cov(A,Z) → 1`: maximal coupling with the *same* innovation. (For short lags `Z ≈ 1`
+and the covariance is trivially small for every seed.) The untwisted innovation estimate IAD-04 is blind to this.
 
 **Corollary 2 (no filtration shortcut).** Let `F` be any σ-algebra on the weighted shell and
 `a_F = ‖A - E[A|F]‖_1`. Then
@@ -329,10 +347,10 @@ coupling with the *same* innovation. The untwisted innovation estimate IAD-04 is
 `| |conj(Ã)E[C|F]| - |E[C|F]| | ≤ 1 - |Ã|`, and on each cell `1 - |Ã| = E|A| - |E A| ≤ E|A - Ã|`,
 so `E[1-|Ã|] ≤ a_F`. ∎
 
-So a filtration satisfying both Objective A.1 (`A` approximately `F`-measurable, `a_F` small) and
-Objective A.2 (`‖E[Z|F]‖_1` small) exists **iff** the completed orbit already has *cell-by-cell*
-lag-ℓ cancellation `‖E[C|F]‖_1 → 0` on that filtration — which implies, and is strictly stronger
-than, the global target `E[C] → 0`. The innovation/history split cannot make the problem easier;
+So, among filtrations for which `A` is approximately measurable (Objective A.1, `a_F` small),
+Objective A.2 (`‖E[Z|F]‖_1` small) holds **iff** the completed orbit already has *cell-by-cell*
+lag-ℓ cancellation `‖E[C|F]‖_1 → 0` on that filtration — which implies the global target, since
+`|E[C]| ≤ ‖E[C|F]‖_1`, and is a priori a stronger demand (no separating example is claimed). The innovation/history split cannot make the problem easier;
 it moves the unknown correlation into `A`. In the opposite extreme (`F` = full clock), `Z` is
 `F`-measurable and `E[Z|F] = Z` has modulus one: no decay.
 
@@ -377,7 +395,9 @@ Taking `H = {0, ℓ_0, 2ℓ_0, …, (k-1)ℓ_0}`:
 - *A favourable band* `[a, b]` of lags supports a difference set `H` with all nonzero differences
   in the band only if `k ≤ 1 + b/a`. The Kusmin–Landau band of IAD-04 has
   `b/a = (3-δ)/(2+δ) < 2`, so it supports only `k = 2`: even a complete twisted theorem on that
-  band yields `limsup |W_B(h)|² ≤ 1/2` by this route, never `o(1)`.
+  band yields `limsup |W_B(h)|² ≤ 1/2` by this route, never `o(1)`. (A better positive-definite
+  kernel on the band cannot change the verdict: the extremal constant is `≈ 0.447` at ratio `3/2`
+  by the floating-point LP of OBSTRUCTIONS O-7 — OBSERVED FINITE, not a theorem.)
 - *The short lags are not needed.* A band `[(2+δ) log_16 B, K(2+δ) log_16 B]` supports `k = K`
   and (6.2) gives `limsup |W_B(h)|² ≤ 1/K`. Hence:
 
@@ -410,28 +430,39 @@ Choose `k` with `q^k ≥ M·16^(K+2)` and `a = M·round(-x q^k / M)`. For the ra
    `p ≠ q` (identical `p`-component of the real phase, identical denominators, identical fresh-prime
    births) and the same residue modulo `p^(j_p)` at every `p ∈ S`;
 3. *(coherent real orbit)* `|Y_n(s)| = 16^n|x+s| ≤ ½·16^(n-K-2)` for `0 ≤ n ≤ K`. With `K = 2B`:
-   `|W_B(h; s) - 1| ≤ π|h|/(3840B)`, and every lag correlation inside the shell is within the same
-   distance of 1.
+   `|W_B(h; s) - 1| ≤ π|h|/(3840B)`; likewise every summand `e(h(Y_(n+d)(s) - Y_n(s)))` with
+   `n + d < 2B` is within `π|h|·16^(n+d-2B-2)` of 1, so `|c_d(B; s) - (B-d)/B| ≤ π|h|/(3840B)`
+   (the lag sums have `B-d` terms under the `1/B` normalization).
 
 *Proof.* `|x + a/q^k| ≤ M/(2q^k) ≤ ½·16^(-K-2)`. Item 2: `a ∈ MZ` and `q` is a `p`-adic unit.
 Item 3: `|e(t)-1| ≤ 2π|t|` and `Σ_(n=B)^(2B-1) 16^(n-2B-2) < 16^(-2)/15 = 1/3840`. ∎
 
 **Consequence (a class of prime-to-real transfers that cannot work).** Call a transfer
-*census-incomplete* if its hypotheses depend on the seed only through the forcing and through
-local data at places `≠ q` for some odd prime `q` (classes in `Q_p/Z_p` at all `p ≠ q`, and
-residues to any finite precision at finitely many of them). No census-incomplete transfer can
-conclude `|W_B(h)| ≤ 1-η`, nor any nontrivial bound on any lag correlation, on all large shells:
-its hypotheses hold for `s_B = a/q^k` whenever they hold for `s = 0`, and the conclusion fails
-there. This covers: any fixed or growing finite set of primes; all primes up to any bound,
-including all primes `≤ 16^(2B)`; fresh-prime births; the 2-adic odometer; prime marginals and
-their joint laws on any set of places omitting one prime.
+*finite-horizon and census-incomplete* if it derives a bound for the shell `[B, 2B)` from
+hypotheses that depend on the seed only through the forcing and through local data, at times
+`n ≤ 2B`, at places other than one odd prime `q` (classes in `Q_p/Z_p` at all `p ≠ q`; residues to
+any finite precision at finitely many of them). `q` may depend on `B`; in particular the class
+contains every transfer using only primes `≤ P(B)` for any bound `P(B)` (take `q_B > P(B)`),
+e.g. all primes `≤ 16^(2B)`. **No such transfer can conclude `|W_B(h)| ≤ 1-η`, or
+`|c_d(B)| ≤ (1-η)(B-d)/B` for any lag, at any shell with `π|h|/(3840B) < η`:** its hypotheses hold
+for `s_B = a/q^k` whenever they hold for `s = 0`, and the conclusion fails there. This covers
+fresh-prime births, the 2-adic odometer, and prime marginals or joint laws on any set of places
+omitting one prime.
+
+*Scope of the no-go (quantifier, added after audit).* The hijack seed depends on the shell. For a
+**fixed** rational seed `s`, the completed orbit is that of `x + s`, which is normal iff `x` is
+(Wall, import), so `s` and `0` agree asymptotically. The theorem therefore excludes transfers
+whose threshold `B_0` is determined by the census data — effective, shell-by-shell statements —
+and does not exclude a purely asymptotic statement with a seed-dependent threshold, nor any
+argument that uses the Archimedean place directly.
 
 **The missing invariant.** What separates `s = 0` from `s_B` is *census completeness*: the
 denominator of `U_n(0)` is supported on primes `≤ 8n-2` (CG-01, `log den = 6n + o(n)`), with no
 further place. Equivalently the product-formula closure `{U_n} ≡ Σ_(p ≤ 8n) {U_n}_p (mod 1)` holds
 with **no missing term**; for `s_B` the place `q` carries an extra component of height
-`q^k ≥ 16^(2B)`. Any working transfer must use every prime of the genealogy simultaneously
-*and* an a priori exclusion of extraneous places — a height statement. PPP-08
+`q^k ≥ 16^(2B)`. A working finite-horizon transfer *from finite-place data* must therefore use every prime of the
+genealogy simultaneously together with an a priori exclusion of extraneous places — a height
+statement. PPP-08
 (`pi_parity_pressure/PROOFS.md`) is the special case of one selected prime and the denominator
 `p·16^(2A+48)+1`; the seed authentication `Z_n = s` of the zero-anchor kernel already rejects all
 of these seeds as identities, which is not the same as a transfer theorem that uses the rejection.
@@ -459,15 +490,16 @@ Consequently:
 ‖16^B x‖ = ‖16^(B-1) π‖  ≥  (15η/(2π|h|)) · B · 16^(-B),
 ```
 
-i.e. `|π - a/q| ≥ c_(h,η)·(log q)·q^(-2)` for every denominator `q = 16^(B-1)` and every integer
-`a`: the base-16 restricted irrationality exponent of π is at most 2. In digits: the run of
+i.e. `|π - a/q| ≥ c_(h,η)·(log q)·q^(-2)` for every denominator `q = 16^(B-1)`, `B ≥ B_0`, and every
+integer `a`: the base-16 restricted irrationality exponent of π is at most 2. In digits: the run of
 identical digits `0` (or `F`) starting after hexadecimal position `B` has length at most
 `B - log_16 B + O_(h,η)(1)`.
 
 (b) *(Correlation form, `Θ = 16^ℓ - 1`.)* If the lag-ℓ shell correlation satisfies
 `|c_ℓ(B)| ≤ (1-η)(B-ℓ)/B` for all large `B`, then
 `‖(16^ℓ-1)16^B x‖ ≥ (15η/(2π|h|))(B-ℓ)16^(-(B-ℓ))`: the same exponent-2 bound at the denominators
-`q = 16^(B-1)(16^ℓ-1)`.
+`q = 16^(B-1)(16^ℓ-1)`. Since `‖Θy‖ ≤ Θ‖y‖`, it also gives
+`‖16^B x‖ ≥ (15η/(2π|h|))(B-ℓ)16^(-B)`, the Weyl-form conclusion with `B-ℓ` in place of `B`.
 
 (c) *(Basel weights.)* The same with `B_B(h)` and constant `15η/(4π|h|)`, since `p_n ≤ 2/B`.
 
@@ -496,7 +528,8 @@ says `v_16(π) ≤ 1` and, more sharply, `‖16^B x‖ ≥ c·B·16^(-B)` with *
 > theorem for π at the denominators `16^B`.
 
 This is a necessary condition only. It is satisfied by non-normal numbers: for `x' = 1/17` one
-has `‖16^B x'‖ = 1/17` for every `B` while `W_B(h; x') = cos(2πh/17)`. The Diophantine type is
+has `‖16^B x'‖ = 1/17` for every `B` while `W_B(h; x') = cos(2πh/17) + O(1/B)` (exactly the
+cosine for even `B`). The Diophantine type is
 **necessary and far from sufficient**: the missing invariant is strictly stronger than height.
 
 **Why this is the right price tag for prime-to-real transfer.** Finite-place information yields
@@ -519,8 +552,9 @@ event exactly one of the four factors is divisible by `p`, and any two distinct 
 at least `(p-5)/8` apart.
 
 *Proof.* The four event classes are `m ≡ 7/8, 1/2, 3/8, 1/4 (mod p)`. Two factors vanishing at
-the same `m` would force `p | 3, 5, 4` or `1`. If `m ≠ m'` are events with `m - m' ≡ c/8 (mod p)`,
-`c ∈ {±1,…,±5}` (the pairwise class differences), then `p | 8(m-m') - c ≠ 0`. The smallest
+the same `m` would force `p | 1, 3, 4` or `5`, impossible for `p ≥ 7`. If `m ≠ m'` are events in
+different classes, `m - m' ≡ c/8 (mod p)` with `c ∈ {±1,…,±5}` (the pairwise class differences),
+so `p | 8(m-m') - c ≠ 0` and `|m - m'| ≥ (p-5)/8`; in the same class `|m - m'| ≥ p`. The smallest
 positive solutions give `β(p)`. ∎
 
 **(b) The fresh component is pure innovation.** Let `n ≥ 8`, `1 ≤ ℓ ≤ n/4`, and let `p` be born at
@@ -533,17 +567,21 @@ positive solutions give `β(p)`. ∎
 
 It does not depend on the seed's history at all (for any seed that is `p`-integral).
 
-**(c) Exact inequation.** If the window `(n, n+ℓ]` contains a birth of a prime `p ∤ h`, then
-`h(U_(n+ℓ) - U_n) ∉ Z`, so `A_n Z_n ≠ 1`. This is an equality-level statement with **no** metric
+**(c) Exact inequation.** Under the hypotheses of (b) (`n ≥ 8`, `ℓ ≤ n/4`, a `p`-integral seed), if
+the window `(n, n+ℓ]` contains a birth of a prime `p ∤ h`, then `h(U_(n+ℓ) - U_n) ∉ Z`, so
+`A_n Z_n ≠ 1`. (Without `ℓ ≤ n/4` a second event of `p` inside the window can cancel the first.) This is an equality-level statement with **no** metric
 content: the only general lower bound is `‖h(U_(n+ℓ)-U_n)‖ ≥ 1/den = exp(-(6+o(1))(n+ℓ))`.
 
 **(d) Welding of the two places at a fresh pole.** For a fresh pole term `c·16^k/p` of age
-`k = ℓ-j`, its class in `Q_p/Z_p` and its real value modulo one are the *same rational number*.
-While `|c|·16^k < p` (age `< log_16 B + O(1)`) the `p`-adic component literally equals the real
-term; afterwards it winds. The real innovation stays `< 1` until age `2 log_16 B` only because the
-four simultaneous poles — living at four different places — cancel to order `1/n²`. Each single
-place sees none of that cancellation. This is the smallest exact instance of "full CRT winding is
-not determined by the prime marginals".
+`k = ℓ-j` with `c·16^k ∈ Z` — the poles `8m-7` and `8m-3` at every age, and the pole `4m-1`
+(`c = -1/2`) at ages `k ≥ 1` — its class in `Q_p/Z_p` and its real value modulo one are the *same
+rational number*. (At age 0 the term `-1/(2p)` of the pole `4m-1` also has the 2-adic component
+`1/2`, which the sibling pole `-1/(2(2m-1))` cancels; the weld then holds after removing that
+component. Corrected after audit.) While `|c|·16^k < p` (age `< log_16 B + O(1)`) the `p`-adic
+component literally equals the real term; afterwards it winds. The real innovation stays `< 1`
+until age `2 log_16 B` only because the four simultaneous poles — living at four different places —
+cancel to order `1/n²`. Each single place sees none of that cancellation. This is the smallest
+exact instance of "full CRT winding is not determined by the prime marginals".
 
 **(e) Birth mass (CLASSICAL IMPORT: prime number theorem in progressions mod 8).** The number of
 prime births in `[B, 2B)` (counted with multiplicity) is `(6 + o(1)) B/ln B`: two units each from `p ≡ 1 (8)` in
@@ -561,13 +599,13 @@ and correlation `≈ 1`.
 
 | | Statement | Status |
 |---|---|---|
-| IAD-01 | Weighted lag identity, (1.2), first informative scale `B ≥ 16^10` for the prescribed schedule | PROVED LOCAL (verification) |
+| IAD-01 | Weighted lag identity, (1.2); the `B ≥ 16^10` threshold belongs to the coarse constant `4/L` only | PROVED LOCAL (verification) |
 | IAD-02 | Window-energy monotonicity; every schedule `L(B)→∞` is equivalent to normality; no extra uniformity demanded | PROVED LOCAL |
 | IAD-03 | Innovation calculus, moment representation, sharp derivative brackets | PROVED LOCAL |
 | IAD-04 | Mesoscopic innovation theorem with constant 4401, uniform on subintervals and progressions; no saving below `2 log_16 B`; age ladder | PROVED LOCAL (higher-derivative extension: CLASSICAL IMPORT, not re-proved) |
 | IAD-05 | Gauge identity `A = C·conj(Z)·e(-hτ)`; decoupling ⟺ correlation decay; no filtration shortcut | PROVED LOCAL |
 | IAD-06 | Exact transport; sparse van der Corput budget `1/k`; sufficient mesoscopic gate | PROVED LOCAL; gate premise OPEN |
-| IAD-07 | One-missing-place indistinguishability; census completeness is the missing invariant | PROVED LOCAL |
+| IAD-07 | One-missing-place indistinguishability; no finite-horizon census-incomplete transfer; census completeness necessary, not sufficient | PROVED LOCAL |
 | IAD-08 | Liouville wall: any fixed-saving shell estimate ⟹ restricted exponent ≤ 2 for π at `16^B` | PROVED LOCAL; literature calibration IMPORT |
 | IAD-09 | Fresh-prime exact component, inequation, place weld, birth mass `≈ 2.164c` | PROVED LOCAL + PNT-AP IMPORT |
 | — | A source-derived bound on `R`, on any `c^U_d`, or on any `W_B(h)` for the zero seed | **OPEN** |
