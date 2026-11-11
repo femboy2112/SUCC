@@ -243,11 +243,22 @@ In particular, for `0 < δ < 1/2`, `B^δ ≥ h`, and every lag in the window
 - *(arithmetic progressions: a genuine conditional expectation)* For a modulus `q ≥ 1` with
   `q·h·16^ℓ ≤ (15/8)B³` and any residue `a`, the same proof applied to `n ↦ f(a+qn)` (step
   `g_q ∈ [qλ, 1/2]`, still monotone) gives `|Σ_(n∈I, n≡a (q)) e(hΔ_ℓ(n))| ≤ cot(πqλ/2) ≤ 2/(πqλ)`.
-  For uniform counting measure on `n ∈ [B, 2B-1-ℓ]` and the clock-residue filtration `F_q = σ(n mod q)`:
+  Let `ℓ < B`, take uniform counting measure on the `B-ℓ` times `n ∈ [B, 2B-1-ℓ]` and the
+  clock-residue filtration `F_q = σ(n mod q)`. **Occupied-cell condition: `1 ≤ q ≤ B-ℓ`.** Then
+  every residue cell contains at least `⌊(B-ℓ)/q⌋ ≥ 1` times, `⌊y⌋ ≥ y/2` for `y ≥ 1`, and
 
   ```text
-  ‖ E[ Z_(·,ℓ,h) | F_q ] ‖_∞  ≤  (q/(B-ℓ-q)) · 2/(πqλ)  ≤  4401·B²/((1-(ℓ+q)/B) h 16^ℓ).
+  ‖ E[ Z_(·,ℓ,h) | F_q ] ‖_∞  ≤  cot(πqλ/2)/⌊(B-ℓ)/q⌋  ≤  4/(πλ(B-ℓ))  ≤  8802·B²/((1-ℓ/B) h 16^ℓ).
   ```
+
+  *(Repaired 2026-11-11, second audit.)* The earlier display,
+  `(q/(B-ℓ-q))·2/(πqλ) ≤ 4401·B²/((1-(ℓ+q)/B) h 16^ℓ)`, was stated without the occupied-cell
+  condition and is **false as written**: `B = 100, ℓ = 1, h = 1, q = 1000` satisfies
+  `q·h·16^ℓ ≤ (15/8)B³`, yet every cell holds at most one time, so the left side is `|Z| = 1` while
+  the right side is negative. It is correct for `q < B-ℓ` only. The repaired form needs
+  `q ≤ B-ℓ`, loses a factor 2 in the constant, and has no `q` in the denominator. For `q > B-ℓ`
+  some cells are empty, the occupied ones are singletons, and no saving exists. The regression is
+  `test_iad04_progression_occupied_cells` in `test_zsc.py`.
 
   This is a nontrivial, explicitly bounded conditional innovation law relative to a chosen measure
   and filtration for a fully deterministic sequence. Deterministic dynamics do not obstruct
@@ -495,11 +506,26 @@ integer `a`: the base-16 restricted irrationality exponent of π is at most 2. I
 identical digits `0` (or `F`) starting after hexadecimal position `B` has length at most
 `B - log_16 B + O_(h,η)(1)`.
 
-(b) *(Correlation form, `Θ = 16^ℓ - 1`.)* If the lag-ℓ shell correlation satisfies
-`|c_ℓ(B)| ≤ (1-η)(B-ℓ)/B` for all large `B`, then
-`‖(16^ℓ-1)16^B x‖ ≥ (15η/(2π|h|))(B-ℓ)16^(-(B-ℓ))`: the same exponent-2 bound at the denominators
-`q = 16^(B-1)(16^ℓ-1)`. Since `‖Θy‖ ≤ Θ‖y‖`, it also gives
-`‖16^B x‖ ≥ (15η/(2π|h|))(B-ℓ)16^(-B)`, the Weyl-form conclusion with `B-ℓ` in place of `B`.
+(b) *(Correlation form, `Θ = 16^ℓ - 1`; the lag may depend on `B`, `1 ≤ ℓ < B`.)* If the lag-ℓ
+shell correlation satisfies `|c_ℓ(B)| ≤ (1-η)(B-ℓ)/B` for all large `B`, then for those `B`
+
+```text
+‖(16^ℓ-1)·16^B x‖ ≥ (15η/(2π|h|)) · (B-ℓ) · 16^(-(B-ℓ)),
+‖16^B x‖          ≥ (15η/(2π|h|)) · (B-ℓ) · 16^(-B)          (because ‖Θy‖ ≤ Θ‖y‖).
+```
+
+The factor is `B-ℓ`, the number of terms of the lag sum, **not** `B`. By lag regime
+(repaired 2026-11-11, second audit; an earlier summary wrote `c·B·16^(-B)` for every lag):
+
+- *fixed lag*, or any `ℓ(B) ≤ (1-θ)B` with a fixed `θ ∈ (0, 1]` — this includes the logarithmic
+  and mesoscopic lags `ℓ ≍ log B`: `B-ℓ ≥ θB`, so `‖16^B x‖ ≥ (15ηθ/(2π|h|))·B·16^(-B)`, the
+  Weyl-form conclusion up to the constant `θ`;
+- *nearly full-shell lags*, `B-ℓ = k(B) = o(B)`: only `‖16^B x‖ ≥ c·k(B)·16^(-B)`. For bounded `k`
+  this is weaker than the Weyl form by a factor `B`, and the hypothesis itself then concerns a sum
+  of `k` terms.
+
+The first displayed inequality is the sharper one in every regime: it is the exponent-2 bound at
+the denominators `q = 16^(B-1)(16^ℓ-1)`, with nothing lost to the factor `16^ℓ`.
 
 (c) *(Basel weights.)* The same with `B_B(h)` and constant `15η/(4π|h|)`, since `p_n ≤ 2/B`.
 
@@ -520,12 +546,20 @@ says `v_16(π) ≤ 1` and, more sharply, `‖16^B x‖ ≥ c·B·16^(-B)` with *
   confirmed, it gives `‖16^B x‖ ≥ 16^(-(1+ε)B)`, i.e. runs of length `≤ (1+ε)B` at position `B`,
   which still does **not** reach the wall's `B - log_16 B + O(1)`: the wall sits at the exact
   borderline exponent with a logarithmic gain and no ε.
+- *Sharpened in the continuation (ZSC-01 of [CARRY_FLUX](CARRY_FLUX.md)).* The endpoint form
+  above uses only the shell that starts at the approximation. Using the best shell that
+  contains the coherent stretch, a fixed saving `η` forces
+  `‖16^m x‖ ≥ c·16^(-((2-η)/(2+η))·m)`: the restricted exponent must be **strictly below 1**.
+  Since `v_16 ≤ μ - 1` and `μ ≥ 2` for every irrational, no bound on the unrestricted
+  irrationality exponent — `μ(π) = 2` included — can supply this.
 
 > **Any** all-large-shell estimate of the kind sought — for one mode `h`, with a *fixed* saving
-> `η` (not even `η → 1`), for the Weyl sum or for a single lag correlation — implies
-> `‖16^B x‖ ≥ c·B·16^(-B)` for all large `B`: `v_16(π) ≤ 1` without ε-loss, where the refereed
-> record is `6.1033`. Outcome A of the mission is therefore at least as hard as that Diophantine
-> theorem for π at the denominators `16^B`.
+> `η` (not even `η → 1`), for the Weyl sum, or for a single lag correlation at a lag
+> `ℓ(B) ≤ (1-θ)B` with fixed `θ > 0` — implies `‖16^B x‖ ≥ c·B·16^(-B)` for all large `B`
+> (`c` depends on `h`, `η`, `θ`): `v_16(π) ≤ 1` without ε-loss, where the refereed record is
+> `6.1033`. For nearly full-shell lags the conclusion is `c·(B-ℓ)·16^(-B)` only. Outcome A of the
+> mission is therefore at least as hard as that Diophantine theorem for π at the denominators
+> `16^B`; ZSC-01 shows it is in fact strictly harder.
 
 This is a necessary condition only. It is satisfied by non-normal numbers: for `x' = 1/17` one
 has `‖16^B x'‖ = 1/17` for every `B` while `W_B(h; x') = cos(2πh/17) + O(1/B)` (exactly the
