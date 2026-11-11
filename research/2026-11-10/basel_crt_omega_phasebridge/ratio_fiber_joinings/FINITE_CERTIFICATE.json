@@ -1,0 +1,68 @@
+{
+  "base_pr": 588,
+  "base_sha": "896c9ff3ceec5eb062a72cf5fc9230b6f80e2467",
+  "epochs": [
+    {
+      "A": 263,
+      "J_length": 44,
+      "ell_first": 132,
+      "ell_last": 175,
+      "h": 8,
+      "imag_outward_ticks_12dp": [
+        -127208057554,
+        -127208057553
+      ],
+      "pi_enclosure_hex_digits": 538,
+      "real_outward_ticks_12dp": [
+        -31276714603,
+        -31276714602
+      ],
+      "same_first_digit": 4,
+      "same_first_two_digits": 0,
+      "same_parity_first_digit": 24
+    },
+    {
+      "A": 521,
+      "J_length": 87,
+      "ell_first": 261,
+      "ell_last": 347,
+      "h": 8,
+      "imag_outward_ticks_12dp": [
+        44604117458,
+        44604117459
+      ],
+      "pi_enclosure_hex_digits": 1054,
+      "real_outward_ticks_12dp": [
+        88010046868,
+        88010046869
+      ],
+      "same_first_digit": 11,
+      "same_first_two_digits": 0,
+      "same_parity_first_digit": 50
+    },
+    {
+      "A": 1031,
+      "J_length": 172,
+      "ell_first": 516,
+      "ell_last": 687,
+      "h": 8,
+      "imag_outward_ticks_12dp": [
+        -2937036627,
+        -2937036626
+      ],
+      "pi_enclosure_hex_digits": 2074,
+      "real_outward_ticks_12dp": [
+        54382687585,
+        54382687586
+      ],
+      "same_first_digit": 5,
+      "same_first_two_digits": 1,
+      "same_parity_first_digit": 88
+    }
+  ],
+  "leaves_asymptotic_open": true,
+  "outward_scale": 1000000000000,
+  "scope": "finite original-zero four-pole BBP certified h=8 ratio fiber; not normality",
+  "source_only": true,
+  "tests": "13 focused stdlib tests passed, -W error; independent mpmath 180-digit smoke passed; not blind"
+}
