@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-10",
+  "base_commit": "50481e49592af00d87c602f671a28f3503709de0",
+  "python": "3.12.14",
+  "full_native_suite": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py'",
+    "exit_code": 0,
+    "tests": 12995,
+    "seconds_reported": "1065.317",
+    "result": "OK",
+    "log": "receipts/full-suite.log",
+    "log_sha256": "3b7d0199d039390129a5ae22b839f58e3170daf79bc537ad86e999f6f824e515",
+    "nested_fixture_summaries_are_not_added_to_native_count": true
+  },
+  "frozen_package_and_test_hashes_match": true,
+  "sha256": {
+    "observational_succ/zero_anchored_lambda.py": "262c1b4b1b3bbc672e72a10742c6d5f4b9547e13f064b14e4c5b573307c3f7cd",
+    "observational_succ/zero_anchored_haar.py": "bd86fa1909f61f73948287762ac987449ecc31b9fcd680666550a7bbd4bac6f4",
+    "tests/test_zero_anchored_lambda.py": "0f3ac0f07a42a4b02cfbd039829d7c1ea0b290da98131b2fb2f9a2b675876485",
+    "tests/test_zero_anchored_haar.py": "ae488b23ed72c753d50726e14ba33f61d91b78c23b069ae1392ece297c059d2a"
+  },
+  "protected_files_byte_identical_to_base": [
+    "observational_succ/duck_bbp.py",
+    "provenance/IMPORT_MANIFEST.json"
+  ],
+  "focused_tests": {
+    "tests": 90,
+    "seconds_reported": "1.182",
+    "result": "OK",
+    "new_tests": 49
+  },
+  "statistical_contraction_proved": false,
+  "pi_normality_proved": false,
+  "paper_proofs_formally_verified": false,
+  "hosted_check_scope": "Separate from local suite; consult PR #591 for the current commit."
+}
