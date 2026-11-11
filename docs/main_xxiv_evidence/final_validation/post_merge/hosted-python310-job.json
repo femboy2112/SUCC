@@ -1,0 +1,476 @@
+{
+  "id": 130356663553,
+  "run_id": 42970201945,
+  "workflow_name": "Observational SUCC validation",
+  "head_branch": "main",
+  "run_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/42970201945",
+  "run_attempt": 1,
+  "node_id": "CR_kwDOVESeB88AAAAeWdzVAQ",
+  "head_sha": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "url": "https://api.github.com/repos/femboy2112/SUCC/actions/jobs/130356663553",
+  "html_url": "https://github.com/femboy2112/SUCC/actions/runs/42970201945/job/130356663553",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-11T06:07:20Z",
+  "started_at": "2026-11-11T06:07:22Z",
+  "completed_at": "2026-11-11T06:41:35Z",
+  "name": "Python 3.10 mathematical and epistemic checks",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-11T06:07:23Z",
+      "completed_at": "2026-11-11T06:07:23Z"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-11T06:07:23Z",
+      "completed_at": "2026-11-11T06:07:27Z"
+    },
+    {
+      "name": "Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-11-11T06:07:27Z",
+      "completed_at": "2026-11-11T06:07:34Z"
+    },
+    {
+      "name": "Install research and test extras",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4,
+      "started_at": "2026-11-11T06:07:34Z",
+      "completed_at": "2026-11-11T06:07:48Z"
+    },
+    {
+      "name": "Verify source Git blob provenance",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5,
+      "started_at": "2026-11-11T06:07:48Z",
+      "completed_at": "2026-11-11T06:07:48Z"
+    },
+    {
+      "name": "Verify Academic Main VII ancestry, namespaces and admitted propositions",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6,
+      "started_at": "2026-11-11T06:07:48Z",
+      "completed_at": "2026-11-11T06:07:55Z"
+    },
+    {
+      "name": "Check carrier-relative ontology, proof policy and E meta tower receipts",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7,
+      "started_at": "2026-11-11T06:07:55Z",
+      "completed_at": "2026-11-11T06:07:55Z"
+    },
+    {
+      "name": "Run all mathematical, logic, quantum, source and hostile tests",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8,
+      "started_at": "2026-11-11T06:07:55Z",
+      "completed_at": "2026-11-11T06:40:21Z"
+    },
+    {
+      "name": "Replay Euler--Mascheroni exact source and completed-Li certificates",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9,
+      "started_at": "2026-11-11T06:40:21Z",
+      "completed_at": "2026-11-11T06:40:22Z"
+    },
+    {
+      "name": "Replay exact categorical repair and cross-model bridge receipt",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10,
+      "started_at": "2026-11-11T06:40:22Z",
+      "completed_at": "2026-11-11T06:40:22Z"
+    },
+    {
+      "name": "Replay exact source-driven RC inverse reconstruction receipt",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11,
+      "started_at": "2026-11-11T06:40:22Z",
+      "completed_at": "2026-11-11T06:40:22Z"
+    },
+    {
+      "name": "Reconstruct the historical Galilean-to-Lorentz SUCC repair",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-11T06:40:22Z",
+      "completed_at": "2026-11-11T06:40:22Z"
+    },
+    {
+      "name": "Exact source-relative coverage and correlated-update checks",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-11T06:40:22Z",
+      "completed_at": "2026-11-11T06:40:23Z"
+    },
+    {
+      "name": "Independent Gaussian sieve CRT source and mixing debt",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14,
+      "started_at": "2026-11-11T06:40:23Z",
+      "completed_at": "2026-11-11T06:40:23Z"
+    },
+    {
+      "name": "Exact Gaussian loop holonomy and multi-climber proof descent",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 15,
+      "started_at": "2026-11-11T06:40:23Z",
+      "completed_at": "2026-11-11T06:40:23Z"
+    },
+    {
+      "name": "Verify periodic Gaussian source and replay saved confinement certificate",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 16,
+      "started_at": "2026-11-11T06:40:23Z",
+      "completed_at": "2026-11-11T06:40:27Z"
+    },
+    {
+      "name": "Audit direct lattice components and shared information controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 17,
+      "started_at": "2026-11-11T06:40:27Z",
+      "completed_at": "2026-11-11T06:40:34Z"
+    },
+    {
+      "name": "Prove observer-to-semantic distinguishability contraction",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 18,
+      "started_at": "2026-11-11T06:40:34Z",
+      "completed_at": "2026-11-11T06:40:34Z"
+    },
+    {
+      "name": "Source-faithful observer trap and lawful repair receipt",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 19,
+      "started_at": "2026-11-11T06:40:34Z",
+      "completed_at": "2026-11-11T06:40:34Z"
+    },
+    {
+      "name": "Absorbing Hard SUCC, constructive limit and finite communication",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 20,
+      "started_at": "2026-11-11T06:40:34Z",
+      "completed_at": "2026-11-11T06:40:34Z"
+    },
+    {
+      "name": "Knowledge-aided SUCC interobserver ladder and future-transport controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 21,
+      "started_at": "2026-11-11T06:40:34Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Relative path value deltas and proof-shaped probes",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 22,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Cross-language circle algebra and path witness calibration",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 23,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Twin observer same probes, reasoning and focus-only knowledge relay",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 24,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Probe carrier coherence and proof support rewiring",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 25,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Shared-basis relative deltas and exact boundary reconstruction",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 26,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Discrete derivative SUCC integration and moving-frame proofs",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 27,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Zeta minus-one authentic Euler-to-Archimedean transport",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 28,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:35Z"
+    },
+    {
+      "name": "Prime-local p-adic Euler units and Archimedean nonrecovery",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 29,
+      "started_at": "2026-11-11T06:40:35Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "SUCC prime clocks, Mahler jets and source-corrected Kummer congruences",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 30,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Variable-unit proto SUCC and higher Pascal successor",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 31,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Source-relative SUCC precision and proof transport",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 32,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Source-changing proof-support debt and exact Zeno obstruction",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 33,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Noncommuting source shadow, future bisimulation and oriented holonomy",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 34,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Adaptive original-source proof-policy least fixed point",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 35,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Actual Yoneda naturality, source coalgebra descent and adaptive rank",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 36,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:36Z"
+    },
+    {
+      "name": "Arithmetic prime-clock SUCC FUCC Yoneda and true-source aliases",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 37,
+      "started_at": "2026-11-11T06:40:36Z",
+      "completed_at": "2026-11-11T06:40:37Z"
+    },
+    {
+      "name": "Exact Yoneda local-global descent and independent Gaussian E tower",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 38,
+      "started_at": "2026-11-11T06:40:37Z",
+      "completed_at": "2026-11-11T06:40:56Z"
+    },
+    {
+      "name": "Verify Lorentz covariance, causal receipt ancestry and proof descent",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 39,
+      "started_at": "2026-11-11T06:40:56Z",
+      "completed_at": "2026-11-11T06:40:57Z"
+    },
+    {
+      "name": "General SUCC CLI",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 40,
+      "started_at": "2026-11-11T06:40:57Z",
+      "completed_at": "2026-11-11T06:40:58Z"
+    },
+    {
+      "name": "G\u00f6del, Turing and ordinal proof evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 41,
+      "started_at": "2026-11-11T06:40:58Z",
+      "completed_at": "2026-11-11T06:40:58Z"
+    },
+    {
+      "name": "Retrospective ordinal correlation",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 42,
+      "started_at": "2026-11-11T06:40:58Z",
+      "completed_at": "2026-11-11T06:41:02Z"
+    },
+    {
+      "name": "Certified source-side RH bridge",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 43,
+      "started_at": "2026-11-11T06:41:02Z",
+      "completed_at": "2026-11-11T06:41:02Z"
+    },
+    {
+      "name": "Shared-carrier ring and exact discrete holography",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 44,
+      "started_at": "2026-11-11T06:41:02Z",
+      "completed_at": "2026-11-11T06:41:02Z"
+    },
+    {
+      "name": "Verify dual-boundary correlation and shared-carrier interface gluing",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 45,
+      "started_at": "2026-11-11T06:41:02Z",
+      "completed_at": "2026-11-11T06:41:02Z"
+    },
+    {
+      "name": "Exact logistic inverse-tree observer SUCC",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 46,
+      "started_at": "2026-11-11T06:41:02Z",
+      "completed_at": "2026-11-11T06:41:03Z"
+    },
+    {
+      "name": "Verify diagonal Q / adelic zeta source and independent observer proof",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 47,
+      "started_at": "2026-11-11T06:41:03Z",
+      "completed_at": "2026-11-11T06:41:03Z"
+    },
+    {
+      "name": "Source-aware dynamic Fourier and virtual-zeta zeros",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 48,
+      "started_at": "2026-11-11T06:41:03Z",
+      "completed_at": "2026-11-11T06:41:04Z"
+    },
+    {
+      "name": "Verify empirical Shadow-SUCC and analytic stable-divisor certificates",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 49,
+      "started_at": "2026-11-11T06:41:04Z",
+      "completed_at": "2026-11-11T06:41:04Z"
+    },
+    {
+      "name": "Exact field-relative closure and obstruction-to-repair certificates",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 50,
+      "started_at": "2026-11-11T06:41:04Z",
+      "completed_at": "2026-11-11T06:41:04Z"
+    },
+    {
+      "name": "Verify source-faithful chaotic observer quotient and dual-E horizon",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 51,
+      "started_at": "2026-11-11T06:41:04Z",
+      "completed_at": "2026-11-11T06:41:05Z"
+    },
+    {
+      "name": "Verify exact Misiurewicz chaotic carrier and source-law-robust E phase",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 52,
+      "started_at": "2026-11-11T06:41:05Z",
+      "completed_at": "2026-11-11T06:41:31Z"
+    },
+    {
+      "name": "Persist verified finite evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 53,
+      "started_at": "2026-11-11T06:41:31Z",
+      "completed_at": "2026-11-11T06:41:32Z"
+    },
+    {
+      "name": "Post Run actions/setup-python@v5",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 105,
+      "started_at": "2026-11-11T06:41:32Z",
+      "completed_at": "2026-11-11T06:41:32Z"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 106,
+      "started_at": "2026-11-11T06:41:32Z",
+      "completed_at": "2026-11-11T06:41:32Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 107,
+      "started_at": "2026-11-11T06:41:32Z",
+      "completed_at": "2026-11-11T06:41:32Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/femboy2112/SUCC/check-runs/130356663553",
+  "labels": [
+    "ubuntu-latest"
+  ],
+  "runner_id": 1000046942,
+  "runner_name": "GitHub Actions 1000046942",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}

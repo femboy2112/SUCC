@@ -1,5 +1,5 @@
 {
-  "status": "POST_MERGE_VERIFIED_MAIN_PUSH_CI_RUNNING",
+  "status": "COMPLETE",
   "candidate_head": "9e68b830e834d5560b95bd4c428fb5f079e9db33",
   "candidate_tree": "666d586c1827380f58f11eea1862e3703b983e9e",
   "pr": 598,
@@ -17,7 +17,21 @@
     "source_heads_accounted": 19,
     "open_prs": 0,
     "source_prs_closed_as_superseded": 15,
-    "main_push_workflow": 42970201945
+    "main_push_workflow": 42970201945,
+    "status": "PASS",
+    "hosted_checks_passed": 6,
+    "hosted_checks_failed": 0,
+    "hosted_workflow_status": "success",
+    "native_matrices": {
+      "310": {
+        "tests": 13047,
+        "seconds": 1938.189
+      },
+      "313": {
+        "tests": 13047,
+        "seconds": 1123.693
+      }
+    }
   },
   "open_mathematics": [
     "source-selected signed cancellation",
@@ -34,5 +48,9 @@
     "python310_native_tests": 13047,
     "python313_native_tests": 13047,
     "synthetic_merge": "41a81e8fc8707add2a84980fc32b4e88a5502711"
-  }
+  },
+  "remaining_integration_blockers": [],
+  "deferred_non_pr_head": "b26a607cc47b41f5f79e9ecd462c7891b42342d8",
+  "no_force_push_tag_release_or_license_change": true,
+  "historical_refs_preserved_except_authorized_main": 1067
 }
