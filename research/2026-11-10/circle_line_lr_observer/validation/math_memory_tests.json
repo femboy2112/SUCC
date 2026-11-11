@@ -1,0 +1,17 @@
+{
+  "name": "math_memory_tests",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_math_memory*.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.117,
+  "log": "research/2026-11-10/circle_line_lr_observer/validation/math_memory_tests.log",
+  "log_sha256": "b338b1dc841c08c6634e2b786c566dafd3a0370e29c20bf24caf7b8b9dc22a9b"
+}

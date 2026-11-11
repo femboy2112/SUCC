@@ -1,0 +1,15 @@
+{
+  "name": "observer_exact_probe",
+  "command": [
+    "python",
+    "-W",
+    "error",
+    "research/2026-11-10/circle_line_lr_observer/observer_probe.py",
+    "--output",
+    "research/2026-11-10/circle_line_lr_observer/observer_receipt.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.664,
+  "log": "research/2026-11-10/circle_line_lr_observer/validation/observer_exact_probe.log",
+  "log_sha256": "6c5f4b12402809bbda4a16c9ee194956fd7919bb15073f2902fdc6e37c3cf1b6"
+}

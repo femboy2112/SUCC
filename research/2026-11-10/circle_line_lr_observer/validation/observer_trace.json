@@ -1,0 +1,19 @@
+{
+  "name": "observer_trace",
+  "command": [
+    "python",
+    "-W",
+    "error",
+    "research/2026-11-10/circle_line_lr_observer/circle_line_observer.py",
+    "--steps",
+    "512",
+    "--digits",
+    "64",
+    "--output",
+    "research/2026-11-10/circle_line_lr_observer/observer_trace.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.101,
+  "log": "research/2026-11-10/circle_line_lr_observer/validation/observer_trace.log",
+  "log_sha256": "2d77ec3a3cf99166a28636e3d9afea772ad33354e33dedd02196464a1a5607b0"
+}
