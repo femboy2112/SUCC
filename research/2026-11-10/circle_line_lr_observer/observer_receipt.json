@@ -1,0 +1,198 @@
+{
+  "arrows_per_source": 512,
+  "conic_composition_pairs": 1089,
+  "conic_lift_maps": 33,
+  "countermodel_prefix": {
+    "digits": 1000,
+    "one_positions": [
+      1,
+      2,
+      6,
+      24,
+      120,
+      720
+    ],
+    "zero_count": 994
+  },
+  "epoch_precision_majorant_checks": 18,
+  "exact_circle_incidence_and_speed_parameters": 87,
+  "hexadecimal": "3.243F6A8885A308D313198A2E03707344A4093822299F31D0082EFA98EC4E6C89",
+  "hexadecimal_fractional_digits_per_source": 64,
+  "imported_api_decimal_cap_640_control": "PASS; 600 hexadecimal digits returned",
+  "independent_bbp_terms": 180,
+  "independent_cf_coefficients": [
+    3,
+    7,
+    15,
+    1,
+    292,
+    1,
+    1,
+    1,
+    2,
+    1,
+    3,
+    1,
+    14,
+    2,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    84,
+    2,
+    1,
+    1,
+    15,
+    3,
+    13,
+    1,
+    4,
+    2,
+    6,
+    6,
+    99,
+    1
+  ],
+  "lr_initial_runs": [
+    {
+      "arrow": "L",
+      "count": 6
+    },
+    {
+      "arrow": "R",
+      "count": 15
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 292
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 1
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 2
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 3
+    },
+    {
+      "arrow": "L",
+      "count": 1
+    },
+    {
+      "arrow": "R",
+      "count": 14
+    }
+  ],
+  "matrix_source_stages": 254,
+  "matrix_source_stages_for_arrows": 123,
+  "metric_cocycle_checks": 256,
+  "mutations": [
+    {
+      "mutation": "flipped_arrow",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "corrupted_denominator",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "unearned_precision",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "altered_mediant",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "left_instead_of_right_endpoint_action",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "erased_arclength_density",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "missing_diameter_normalization",
+      "verdict": "REJECTED"
+    },
+    {
+      "mutation": "pi_radians_substituted_for_pi_turns",
+      "verdict": "REJECTED"
+    }
+  ],
+  "production_from_imports": [
+    "__future__",
+    "dataclasses",
+    "fractions",
+    "itertools",
+    "math",
+    "pathlib",
+    "typing"
+  ],
+  "python": "3.12.14",
+  "riemann_checks": [
+    {
+      "subdivisions": 2,
+      "width": "1"
+    },
+    {
+      "subdivisions": 4,
+      "width": "1/2"
+    },
+    {
+      "subdivisions": 8,
+      "width": "1/4"
+    },
+    {
+      "subdivisions": 16,
+      "width": "1/8"
+    },
+    {
+      "subdivisions": 32,
+      "width": "1/16"
+    },
+    {
+      "subdivisions": 64,
+      "width": "1/32"
+    },
+    {
+      "subdivisions": 128,
+      "width": "1/64"
+    }
+  ],
+  "rotation_enclosures": 64,
+  "rotation_source_stages": 63,
+  "scope": "finite exact checks; universal proofs are in notes",
+  "source_sha256": {
+    "circle_line_observer.py": "a7b02e06e5e53a7a9d66b0b2d6fd8b4b0a8529b1fdecdfb995a01bc5cb9239fa",
+    "observer_probe.py": "55f4aa94293c3bbaa45e8f865464e73d9d10158886945c0ace0eb3d31d332fdf"
+  },
+  "status": "PASS",
+  "truth_boundary": "No normality, RH, cancellation, or infinite physical run claimed",
+  "two_geometric_sources_agree": true,
+  "word_sha256": "3a6b7fe8c558ace21eac7f9f71b068fa6eea0bc70f4aa4312c6fecc6408b599d"
+}

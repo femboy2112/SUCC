@@ -1,0 +1,73 @@
+{
+  "plan": {
+    "candidate_word": "R",
+    "construction_output_length": 23,
+    "derivative_bound_on_prefix": "113",
+    "escape_blocks": 294,
+    "escaped_cylinder": [
+      104703,
+      33328,
+      355,
+      113
+    ],
+    "escaped_width": "1/3766064",
+    "extra_source_refinements": 8,
+    "first_separation_stage": 17,
+    "fixed_polynomial": [
+      0,
+      113,
+      -355
+    ],
+    "kind": "single_letter_parabolic",
+    "last_output_index_to_read": 315,
+    "period": 1,
+    "period_witness_start_at_most": 314,
+    "polynomial_gap": "100525913414573/3339487612334048175",
+    "polynomial_range": [
+      "-990736397874739/32281713585895799025",
+      "-100525913414573/3339487612334048175"
+    ],
+    "prefix": "LLLLLLRRRRRRRRRRRRRRRL",
+    "prefix_bracket": [
+      333,
+      106,
+      355,
+      113
+    ],
+    "previous_width": "1/3753295",
+    "root_distance_lower_bound": "100525913414573/377362100193747443775",
+    "schema": "succ.aperiodic-period.v1",
+    "source": "circle_beta_matrix",
+    "source_interval": [
+      "101415994090766467072/32281713585895799025",
+      "10491309750908616704/3339487612334048175"
+    ],
+    "source_stage": 25,
+    "start": 22,
+    "uniform_classical_budget": {
+      "classical_import": "Waldschmidt1978 Corollary3.2; conservative degree2 corollary",
+      "escape_blocks_symbolic": {
+        "base": 355,
+        "coefficient": 9,
+        "exponent": 8796093022209
+      },
+      "height_bit_length": 9,
+      "polynomial_height_with_floor": 355,
+      "root_bound_exponent": 8796093022209,
+      "source_sign_stage_sufficient": 79164837199885
+    }
+  },
+  "witness": {
+    "comparison_start": 313,
+    "different_output_index": 314,
+    "earlier_letter": "R",
+    "is_first_period_mismatch": true,
+    "later_letter": "L",
+    "output_prefix": "LLLLLLRRRRRRRRRRRRRRRLRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRL",
+    "output_source_interval": [
+      "16125143082275824467968/5132792460157432044975",
+      "16125143085436148645888/5132792460157432044975"
+    ],
+    "output_source_stage": 28
+  }
+}

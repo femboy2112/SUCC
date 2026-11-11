@@ -1,0 +1,104 @@
+{
+  "baseline_commit": "4e311d03e3ac9c3dbcbdc32477cd113f2ac0743b",
+  "final_integrity": {
+    "frozen_code_tests_dependencies_workflows": "No changes; diff restricted to new dossier, prior navigation, generated catalog",
+    "relative_markdown_links": "PASS",
+    "staged_diff_check_exit_code": 0,
+    "unchanged_circle_source_sha256": "a7b02e06e5e53a7a9d66b0b2d6fd8b4b0a8529b1fdecdfb995a01bc5cb9239fa"
+  },
+  "gates": [
+    {
+      "command": [
+        "python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.80309,
+      "exit_code": 0,
+      "gate": "catalog_freshness",
+      "log": "catalog_freshness.log",
+      "log_sha256": "83e9272e540f638b3ad4e28143aa72d0daf8da83293420ec888fea21a53ed4dd"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_math_memory*.py"
+      ],
+      "elapsed_seconds": 0.118419,
+      "exit_code": 0,
+      "gate": "catalog_readers",
+      "log": "catalog_readers.log",
+      "log_sha256": "5b45c7e65defdfb112c01e52b77078aa980712c0cf5bcf3fc3d7c45e6080ee98"
+    },
+    {
+      "command": [
+        "python",
+        "-W",
+        "error",
+        "research/2026-11-10/aperiodic_circle_observer/cycle_independent_probe.py"
+      ],
+      "elapsed_seconds": 6.866113,
+      "exit_code": 0,
+      "gate": "constructor_probe",
+      "log": "constructor_probe.log",
+      "log_sha256": "3159f498c36a7f6ba4e4857edccadc07eb710fa1d102503dac0cecbaf3f7a6d0"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "elapsed_seconds": 0.108325,
+      "exit_code": 0,
+      "gate": "observer_foundations",
+      "log": "observer_foundations.log",
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "elapsed_seconds": 2.029298,
+      "exit_code": 0,
+      "gate": "ordinal_succ",
+      "log": "ordinal_succ.log",
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "elapsed_seconds": 0.045425,
+      "exit_code": 0,
+      "gate": "provenance",
+      "log": "provenance.log",
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "command": [
+        "python",
+        "-W",
+        "error",
+        "research/2026-11-10/aperiodic_circle_observer/aperiodic_probe.py",
+        "--output",
+        "research/2026-11-10/aperiodic_circle_observer/audit_receipt.json"
+      ],
+      "elapsed_seconds": 2.766873,
+      "exit_code": 0,
+      "gate": "root_certificate_probe",
+      "log": "root_certificate_probe.log",
+      "log_sha256": "ba1dbf0d742c07065f3900c21f2f60df6d3b8a82174afcfde863be6d166850db"
+    }
+  ],
+  "recorded_at_utc": "2026-11-11T04:35:44.117679+00:00",
+  "scope": "Assembled additive tree; full frozen-baseline regression recorded separately",
+  "status": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "catalog_freshness",
+  "command": [
+    "python",
+    "scripts/build_math_memory.py",
+    "--check"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.633,
+  "log": "research/2026-11-10/circle_line_lr_observer/validation/catalog_freshness.log",
+  "log_sha256": "1901641554ab17ff0cca22ec5199604ad29f6a6e9277dcce287497dc66513727"
+}

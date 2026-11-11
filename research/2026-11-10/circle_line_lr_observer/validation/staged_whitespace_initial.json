@@ -1,0 +1,14 @@
+{
+  "name": "staged_whitespace",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exit_code": 2,
+  "elapsed_seconds": 0.044,
+  "log": "research/2026-11-10/circle_line_lr_observer/validation/staged_whitespace_initial.log",
+  "log_sha256": "75dd87b31107c25f0d3841d2fdcd789d67c102b39b3632f3ff2d9cbe40dfe87b",
+  "resolution": "Removed one extra EOF blank line from baseline_ci.json; rerun follows."
+}

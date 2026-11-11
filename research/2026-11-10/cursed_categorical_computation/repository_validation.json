@@ -1,0 +1,47 @@
+{
+  "base_commit": "43886e830cee5ff6d6b37719e18d809819673bd9",
+  "catalog": {
+    "sha256": "5b906000e38f64d60704d69725d3cd0983c703ec2b244b0c54e0a4ca4e911d6c",
+    "source_documents": 2834,
+    "warning_count": 170,
+    "warnings_unchanged_from_base": true
+  },
+  "environment_repair": {
+    "affected_module_exit_code": 0,
+    "affected_module_tests": 11,
+    "command": "python -m pip install --no-deps --no-build-isolation -e .",
+    "full_suite_rerun_after_repair": false,
+    "observed_failure": "ModuleNotFoundError: No module named observational_succ in scripts/meta_choice_descent_probe.py subprocess",
+    "source_code_changed": false
+  },
+  "final_fast_gates": {
+    "build_math_memory_check": 0,
+    "observer_foundations_probe": 0,
+    "ordinal_succ_report_probe": 0,
+    "staged_diff_check": 0,
+    "verify_provenance": 0
+  },
+  "first_push_commit": "3f68a7d6be38c811591f8f85f2e8cdb47673a58c",
+  "full_suite": {
+    "clean_full_pass_claimed": false,
+    "elapsed_runner_seconds": 1062.048,
+    "errors": 1,
+    "exit_code": 1,
+    "passed": 12805,
+    "tests": 12806
+  },
+  "hosted_ci": "Separate final-head draft-PR gate; no hosted pass claimed in this local receipt",
+  "mathematical_scope": "Scoped proofs and finite exact executions; no full formal build, source normality, parity balance or RH proof",
+  "patch_scope": "new research dossier plus generated discovery catalog; no existing core, tests, workflow or imported archive modifications",
+  "probe_manifest": "probe_manifest.json",
+  "provenance": {
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema": "succ.cursed_categories.validation.v1"
+}
