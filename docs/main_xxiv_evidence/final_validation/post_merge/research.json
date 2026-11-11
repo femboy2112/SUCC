@@ -1,0 +1,25 @@
+{
+  "head": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+  "command": [
+    "/tmp/succ-main-xxiv-venv/bin/python",
+    "scripts/main_xxiv_research_gate.py",
+    "--out",
+    "/tmp/succ-main-xxiv-final-validation/post_merge/research"
+  ],
+  "cwd": "/tmp/succ-main-xxiv-main-verify",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1"
+  },
+  "start_utc": "2026-11-11T06:08:04.593578+00:00",
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 33.47036253800616,
+  "tracked_candidate_unchanged": true,
+  "log_sha256": "d7d8bff402e912588f7243cbf3e5bc7f1c8a2ace7d45a8a6194b279399f4d051",
+  "finish_utc": "2026-11-11T06:08:38.064310+00:00"
+}

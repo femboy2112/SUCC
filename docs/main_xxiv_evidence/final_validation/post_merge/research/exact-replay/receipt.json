@@ -1,0 +1,49 @@
+{
+  "head": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "authority": "finite exact certificate replay; no universal proof promotion",
+  "results": [
+    {
+      "pr": 591,
+      "archived": "research/2026-11-10/zero_anchored_lambda_haar/receipts/FINITE_REPORT.json",
+      "sha256": "3600b40ef3fd1fd481765ba129c025fdbdd2c3d5969052b11dba93c2df8a8f7d",
+      "blocks": [
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096
+      ],
+      "ignored_metadata_only": [
+        "python",
+        "local_head_at_run"
+      ]
+    },
+    {
+      "pr": 593,
+      "archived": "research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/FINITE_CERTIFICATE.json",
+      "sha256": "b17e65366b3b383f35bcb2bf8258cba337b30e86f31b1833da2b6c22ba42120b",
+      "epochs": [
+        263,
+        521,
+        1031
+      ],
+      "authority": "integer outward ticks and exact digit counts"
+    },
+    {
+      "pr": 596,
+      "archived": "research/2026-11-10/circle_line_lr_observer/height_shield/height_shield_receipt.json",
+      "sha256": "00d937e34b5b9f2c244120808ea6353499ce2cbf601525d7179f9aa632b1e61e",
+      "certificates": 7,
+      "authority": "complete rational source/run/Farey summaries"
+    },
+    {
+      "pr": 597,
+      "archived": "research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/finite_receipt.json",
+      "sha256": "169660add4159fb651954ef111a76b42210e6e35c34022ea170e22b3748c70af",
+      "authority": "byte-exact rebuild in disposable directory"
+    }
+  ],
+  "status": "PASS"
+}

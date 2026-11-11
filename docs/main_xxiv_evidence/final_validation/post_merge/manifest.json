@@ -1,0 +1,27 @@
+{
+  "head": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+  "command": [
+    "/tmp/succ-main-xxiv-venv/bin/python",
+    "scripts/main_xxiv_manifest.py",
+    "--check",
+    "docs/SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json",
+    "--integration",
+    "HEAD"
+  ],
+  "cwd": "/tmp/succ-main-xxiv-main-verify",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1"
+  },
+  "start_utc": "2026-11-11T06:08:08.850722+00:00",
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 4.059259976958856,
+  "tracked_candidate_unchanged": true,
+  "log_sha256": "f4e3a468dd84907d6cb228c2b73dcebd7c9d8c9764b56077fa81e7c1ce9303b0",
+  "finish_utc": "2026-11-11T06:08:12.910755+00:00"
+}

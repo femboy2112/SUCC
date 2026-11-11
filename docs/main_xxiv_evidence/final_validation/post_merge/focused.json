@@ -1,0 +1,33 @@
+{
+  "head": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+  "command": [
+    "/tmp/succ-main-xxiv-venv/bin/python",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "-q",
+    "tests.test_main_xxiv_manifest",
+    "tests.test_main_xxiv_cross_front",
+    "tests.test_zero_anchored_lambda",
+    "tests.test_zero_anchored_haar",
+    "tests.test_seed_microscope",
+    "tests.test_zero_anchored_lambda_haar"
+  ],
+  "cwd": "/tmp/succ-main-xxiv-main-verify",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1"
+  },
+  "start_utc": "2026-11-11T06:08:13.049673+00:00",
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 3.9233698898460716,
+  "tracked_candidate_unchanged": true,
+  "log_sha256": "2228e16b1106d2621cda2f05e976bce0404dc45e0ec5b835ca5695080f9ce626",
+  "finish_utc": "2026-11-11T06:08:16.973400+00:00"
+}

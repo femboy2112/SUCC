@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_VALIDATION_PASSED_HOSTED_PENDING",
+  "status": "POST_MERGE_VERIFIED_MAIN_PUSH_CI_RUNNING",
   "candidate_head": "9e68b830e834d5560b95bd4c428fb5f079e9db33",
   "candidate_tree": "666d586c1827380f58f11eea1862e3703b983e9e",
   "pr": 598,
@@ -7,7 +7,18 @@
   "native_seconds": 1090.899,
   "research_commands_passed": 21,
   "gate_receipt_index": "files.json",
-  "post_merge": null,
+  "post_merge": {
+    "main": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+    "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+    "equals_tested_tree": true,
+    "small_gates": "PASS",
+    "focused_tests": 101,
+    "research_gates": 21,
+    "source_heads_accounted": 19,
+    "open_prs": 0,
+    "source_prs_closed_as_superseded": 15,
+    "main_push_workflow": 42970201945
+  },
   "open_mathematics": [
     "source-selected signed cancellation",
     "original-zero parity",
@@ -15,5 +26,13 @@
     "completed Weil positivity",
     "RH",
     "full irrational-module typed compiler reflection"
-  ]
+  ],
+  "hosted_integration_checks": {
+    "passed": 13,
+    "failed": 0,
+    "workflow_count": 4,
+    "python310_native_tests": 13047,
+    "python313_native_tests": 13047,
+    "synthetic_merge": "41a81e8fc8707add2a84980fc32b4e88a5502711"
+  }
 }

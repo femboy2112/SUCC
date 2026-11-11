@@ -1,0 +1,24 @@
+{
+  "head": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+  "command": [
+    "/tmp/succ-main-xxiv-venv/bin/python",
+    "scripts/build_math_memory.py",
+    "--check"
+  ],
+  "cwd": "/tmp/succ-main-xxiv-main-verify",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1"
+  },
+  "start_utc": "2026-11-11T06:08:07.985864+00:00",
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 0.5603770930320024,
+  "tracked_candidate_unchanged": true,
+  "log_sha256": "31f736a561bde6325d6afe97a4cea47122cad5fd8d9110cd6d063cd9abe1958a",
+  "finish_utc": "2026-11-11T06:08:08.546648+00:00"
+}
