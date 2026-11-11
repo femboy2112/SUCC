@@ -1,3 +1,7 @@
+# Main XXIV — source and signed-statistics entrypoint
+
+[Canonical frontier](../PI_NORMALITY_FRONTIER.md) · [next theorem](../MAIN_XXIV_HANDOFF.md) · [exact contribution manifest](../SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json) · [governing claims](../CLAIM_SUPPLEMENT_MAIN_XXIV.md) · [research history](../RESEARCH_HISTORY.md). The single generated catalog below is rebuilt from the integrated tree. Catalog rows are discovery metadata, not proof authority. Source-selected cancellation, parity, pi normality and RH remain OPEN. Historical catalog counts and integration announcements below describe their dated snapshots.
+
 # Mathematical Memory — front page
 
 **What this is.** A cross-topic *discovery layer* for all SUCC mathematics: it makes results recoverable and sources checkable without re-excavating megabytes of branches. It does **not** replace the canonical record ([`docs/CLAIM_LEDGER.md`](../CLAIM_LEDGER.md), [`docs/CLAIM_INDEX.md`](../CLAIM_INDEX.md), [`docs/CLAIM_NAMESPACE_REGISTRY.json`](../CLAIM_NAMESPACE_REGISTRY.json), the categorical observer atlas, the RH property graph) and it **certifies no proof** — statuses live in the supplements, proofs in the dossiers/Lean.

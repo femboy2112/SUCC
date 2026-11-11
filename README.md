@@ -2,179 +2,168 @@
 
 **How does a finite observer turn causal contact into mathematical knowledge?**
 
-Observational SUCC studies that question through explicit sources, carrier dynamics,
-observations and proof certificates. An observer receives a finite history of interactions,
-builds a relational model, and reasons within a declared proof system. The mathematics asks
-which features survive changes of representation, what information an observation loses,
-and what additional evidence would distinguish models that currently look the same.
+Observational SUCC studies explicit sources, their evolving carriers, the information
+an observer can recover, and the certificates that justify a conclusion. Category
+theory organizes actual maps and their coherence; exact arithmetic and analysis
+test what survives those maps. Physical and semantic intuition motivates the theory.
+Its mathematical interpretations have separately stated hypotheses.
 
-The arithmetic applications test the framework; their missing estimates remain separate
-proof obligations.
+The current arithmetic machine follows one chain:
 
-| Current status | What the repository supports |
+**source → exact carrier → zero-seed authentication → Dedekind/Yoneda identity
+→ computational observers → signed statistical proof obligations.**
+
+The machinery now identifies and computes the intended π source in several coherent
+ways. The source-selected cancellation needed for normality remains unproved.
+
+| Research target | Current status |
 |---|---|
-| Foundations and toolkit | Exact finite models, transport identities, information bounds, counterexamples and scoped kernel-checked lemmas |
-| π base-16 normality | **OPEN** — the original-source signed cancellation estimate is missing |
-| Original-zero hexadecimal parity balance | **OPEN** — fair parity words and even one-digit balance need a source-selected estimate |
-| Riemann hypothesis | **OPEN** — a separate prime–Archimedean positivity program |
+| Source identities, finite observers and categorical reconstruction | Scoped classical/paper proofs and exact finite certificates; proof authority is stated per result |
+| Source-selected signed cancellation | **OPEN** |
+| Original-zero hexadecimal parity balance and parity words | **OPEN** |
+| π base-16 normality | **OPEN** |
+| Completed Weil positivity / Riemann hypothesis | **OPEN**, a separate prime–Archimedean program |
 
-Start with the [current mathematical frontier](docs/PI_NORMALITY_FRONTIER.md), or read the
-[foundations](docs/FOUNDATIONS.md) for the general theory. The
-[Main XXIII audit](docs/SUCC_MAIN_XXIII_INTEGRATION_AUDIT_2026-11-10.md) records the candidate's
-coverage, qualifications and validation limits.
+Start with the [mathematical frontier](docs/PI_NORMALITY_FRONTIER.md) and the
+[next research handoff](docs/MAIN_XXIV_HANDOFF.md). Exact integration coverage,
+repairs and candidate validation receipts belong to the
+[Main XXIV audit](docs/SUCC_MAIN_XXIV_INTEGRATION_AUDIT_2026-11-11.md) and
+[manifest](docs/SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json).
 
-## The mathematical idea
+## Source and exact carrier
 
-The organizing pipeline is:
-
-**source → carrier dynamics → observation → relational model → proof certificate**
-
-A **source** specifies what actually drives a system. Its **carrier** evolves by a lawful
-successor operation; an **observation** exposes only part of that state. A **relational model**
-records the distinctions and compatibility laws available to the observer. A **certificate**
-justifies a precisely scoped conclusion using an explicit checker or derivation.
-
-Each arrow has a mathematical contract. Transporting an observable accurately does not
-prove that its long-time mean vanishes. An observer that predicts a path perfectly need not
-observe a typical path. A positive covariance does not identify an arithmetic functional.
-Keeping these distinctions explicit lets a failed shortcut produce a useful theorem,
-counterexample or sharper experimental question.
-
-SUCC uses categorical diagrams to organize actual maps and coherence laws, finite-state
-models to expose information limits, and classical analysis and exact arithmetic to test
-source-specific claims. Physical and semantic intuition motivates the work; its mathematical
-interpretations carry separate hypotheses. Finite observations do not execute an infinity
-or establish a universal theorem.
-
-## A concrete source: the BBP orbit
-
-The authenticated example keeps all four signed poles and the literal zero seed:
+The authenticated BBP recurrence retains all four signed poles and the literal origin:
 
 ```math
-r(n)=\frac{4}{8n-7}-\frac{2}{8n-4}-\frac{1}{8n-3}-\frac{1}{8n-2}.
+r(n)=\frac4{8n-7}-\frac2{8n-4}-\frac1{8n-3}-\frac1{8n-2},
+\qquad U_0=0,\qquad U_n=16U_{n-1}+r(n).
 ```
+
+Its rational states have the exact completed identity
 
 ```math
-U_0=0,\qquad U_n=16U_{n-1}+r(n).
+T_n=\sum_{j\ge1}16^{-j}r(n+j),\qquad U_n+T_n=16^n\frac\pi{16}.
 ```
 
-The positive future correction connects this rational recurrence to π exactly:
+The [source](observational_succ/duck_bbp.py),
+[integer carrier](observational_succ/integer_bbp_carrier.py), and
+[import provenance](provenance/IMPORT_MANIFEST.json) fix what is being observed.
+Source clocks, integer carries, old prime powers, global CRT winding and real
+future tails remain part of the transport contract.
+
+Scott–Ω syntax, [source-clock actions](research/2026-11-09/cayley_source_observer/AFFINE_SOURCE_ACTION.md),
+[intrinsic arithmetic operators](research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/PROOFS.md),
+and [graph resonance](research/2026-11-10/bbp_graph_resonance/RESEARCH_NOTE.md)
+provide complementary representations. Their exact algebra does not determine the
+long-time signed law of the selected orbit.
+
+## Authenticate the zero and identify the real
+
+Write $`x=\pi/16`$ and $`P_n=\sum_{j=1}^n16^{-j}r(j)`$. An unwrapped seeded state obeys
 
 ```math
-T_n=\sum_{j\ge1}16^{-j}r(n+j),\qquad U_n+T_n=16^{n-1}\pi.
+U_n(s)=16^n(s+P_n),\qquad Z_n=16^{-n}U_n(s)-P_n=s.
 ```
 
-This is an exact source identity. The open normality problem asks whether the completed
-orbit visits every hexadecimal word of length $`k`$ with limiting frequency $`16^{-k}`$.
-Proved Green-tail bounds transfer suitable observations between the rational and completed
-orbits. They do not supply the signed cancellation that would prove normality.
+The [identity kernel](research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/README.md)
+extends seeds to the exact module $`s=a+bx`$, $`a,b\in\mathbb Q`$. Imported π
+irrationality makes these coordinates unique. It rejects both the coherent wrong
+seed $`-x`$ and the rational shift $`1/16`$, even though the latter aliases all later
+fractional phases. Recovering the seed requires the complete unwrapped state.
 
-The [source implementation](observational_succ/duck_bbp.py),
-[integer carrier](observational_succ/integer_bbp_carrier.py) and
-[source provenance](provenance/README.md) make the contract inspectable. Research retains
-integer carries, old prime powers, the global CRT winding and real boundary costs.
+Strict rational source intervals determine the real's Dedekind cut. Rational cut
+presheaves recover order fully faithfully; [numerical categories and rational
+witnesses](research/2026-11-10/cursed_categorical_computation/README.md) make the
+maps and their variance explicit. The [independent irrational-cut formulation](research/2026-11-10/cursed_categories_dedekind_yoneda/README.md)
+retains its distinct domain. An ordered category, a labelled computation graph and
+an action groupoid have different equivalence contracts.
 
-## Current research frontier
+## Compute certified observations
 
-The [Main XXIII tool atlas](docs/MAIN_XXIII_TOOL_ATLAS.md) connects the complete
-BBP carry and CRT state to inverse-beta and Mellin roots, the Ω₄/Ω₅ Haar
-diamond, and reversible arithmetic. It identifies the exact signed estimate
-still needed for hexadecimal parity words. Intrinsic Hamiltonians and
-the Riemann hypothesis occupy a separate downstream track.
+The [geometric circle/line observer](research/2026-11-10/circle_line_lr_observer/README.md)
+derives rational enclosures from the Euclidean metric, without a supplied π-value
+oracle. A finite program with unbounded integer registers produces every requested
+finite Stern–Brocot L/R prefix. Its [aperiodic extension](research/2026-11-10/aperiodic_circle_observer/README.md)
+turns each proposed periodic tail into a finite rejection certificate, under explicit
+classical nonquadraticity assumptions. Infinite mathematical recovery is distinct
+from physically executing an infinite computation.
 
-**Cayley source observers and semantic repairs** connect the line–circle picture
-to the actual BBP source without changing its seed. The
-[research follow-up](research/2026-11-09/cayley_source_observer/README.md)
-adds exact projective dynamics, source-clock compatibility, boundary-aware parity
-certificates, and a conditional binary-future criterion strictly weaker than full
-normality. It also corrects the lambda, omega, cofinality and asymptotic claims
-in the causal-weld draft. The original-zero signed estimate remains **OPEN**.
+For every denominator bound $`H`$, the [Farey shield](research/2026-11-10/circle_line_lr_observer/height_shield/README.md)
+computes one certificate separating π from **every** reduced rational of denominator
+at most $`H`$, with a strict rational margin. A computable nonnormal irrational also
+admits such shields. Complete identification and productive computation therefore
+leave the statistical theorem unpaid.
 
-**Young Nastyman's Haar measure** asks how uniformity of a complete observed law can be
-certified. The recursive sixteen-child construction retains the entire future tail;
-[its sharp transport inequality](research/2026-11-09/recursive_haar_pinbed/THEOREMS.md)
-separates true Haar symmetry from a merely uniform first digit.
+The [typed Lambda–Haar compiler](research/2026-11-10/zero_anchored_lambda_haar/README.md)
+preserves rational source states through finite, capture-free reductions. Its
+interval, digit-character, Pascal and signed-CDF backends certify finite observations.
+[The alternative compiler](research/2026-11-10/zero_anchored_lambda_haar/README_ALTERNATIVE_589.md)
+keeps independent tests and countermodels. The symbolic irrational seed kernel is
+separate; a full compiler integration for that enlarged module remains unverified.
+Exhausted computation reports UNKNOWN/UNRESOLVED.
 
-**Wonderboy's signed successor wavelets** compare the two orientations of chronological
-word transport. Their [exact junction identities](research/2026-11-09/tenacious_d_haar/PROOFS.md)
-retain endpoint costs and distinguish positive collision energy from signed cancellation.
-Fine-scale empirical energy has an unavoidable finite-sample floor, even for normal paths.
+## The statistical frontier
 
-**Complete CRT parity** expresses real digit parity as a prime-local sign times its entire
-real/CRT/winding complement. [The parity dossier](research/2026-11-09/pi_parity_pressure/PROOFS.md)
-keeps the terms that prime-by-prime marginal uniformity cannot determine.
+The target is the actual original-zero radix orbit, with Fourier arguments in turns:
 
-**The Aphex two-fiber observer** identifies the fitted coefficient with half the difference
-between the two prime-sign-conditioned complementary responses. Its
-[sharp finite certificate](research/2026-11-09/aphex_two_fiber_haar/PROOFS.md) bounds the gap
-between that coefficient and actual digit parity by the prime-sign imbalance. Decay of the
-coefficient is **OPEN**. A same-forcing coherent wrong seed has zero fitting loss and
-maximally biased parity, so learning accuracy cannot close the theorem.
+```math
+W_{N,h}=\frac1N\sum_{n=0}^{N-1}
+\exp\!\left(2\pi i h16^n\frac\pi{16}\right)\longrightarrow0
+\quad\text{for every fixed }h\in\mathbb Z\setminus\{0\}.
+```
 
-These are connected tools with different domains. Binary conditional Haar is not full
-sixteen-child Haar; digit Walsh parity is not one real-circle Weyl character. The
-[maintained frontier](docs/PI_NORMALITY_FRONTIER.md) gives the definitions, hypotheses,
-controls and exact next target. The [Gamma definition table](docs/MAIN_XXII_GAMMA_OBSERVABLES.md)
-keeps the distinct source finite parts, Mellin laws and matrix observers separate.
+This is the classical Weyl criterion for π's base-16 normality. The
+[Basel–Tauberian bridge](research/2026-11-10/basel_crt_omega_phasebridge/SIGNED_BASEL_TAUBERIAN.md)
+recasts it as a signed source-selected tail estimate. The
+[signed CDF overlap](research/2026-11-10/zero_anchored_lambda_haar/CONSTRUCTION.md)
+isolates cancellation between adjacent temporal blocks. The
+[zero-seed microscope](research/2026-11-10/zero_seed_microscope/README.md)
+separates universal coarse seed averaging from the deep resolution needed to recover
+the distinguished zero. These are precise proof interfaces; their missing arithmetic
+estimates remain **OPEN**.
 
-## Mathematical toolkit
+The [2→3 joining controls](research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/README.md)
+show that Haar marginals can coexist with strong dependence. One vanishing mixed
+coefficient does not prove independence or normality. Hexadecimal digit parity is
+a discontinuous digit character, so it also needs boundary and index corrections
+when compared with smooth Fourier observations.
 
-- **Observation and proof access:** finite histories, causal models, forgetting and recovery
-  contracts; [observer atlas](docs/CATEGORICAL_OBSERVER_ATLAS.md).
-- **Exact arithmetic and certificates:** rational source states, integer digit enclosures,
-  hostile controls and scoped Lean checks; [architecture](docs/ARCHITECTURE.md).
-- **Harmonic and symbolic analysis:** signed Fourier/Walsh observations, Haar projectors,
-  entropy and collision identities; [frontier](docs/PI_NORMALITY_FRONTIER.md).
-- **Research navigation:** typed concepts and claim discovery in the
-  [mathematical memory index](docs/math_memory/INDEX.md), with current scope in the
-  [Main XXII supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXII.md).
-- **Independent RH research:** completed source, Gamma/pole terms and signed positivity
-  obligations; [RH handoff](docs/RH_HANDOFF.md).
+The [frontier](docs/PI_NORMALITY_FRONTIER.md) retains the full sixteen-child Haar
+projector, signed overlap and error payments, conditional prime/parity machinery,
+hostile seeds and source mutants. The [completed Weil research](research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/README.md)
+keeps genuine prime powers, Gamma/pole terms and winding; positivity supplies no
+automatic off-diagonal decay or RH-to-normality implication.
 
-## Quickstart
+## Run and navigate
 
-Python 3.10 and 3.13 are the supported CI targets. From a local checkout:
+From a checkout with the repository's test dependencies installed:
 
 ```sh
-python -m venv .venv
-. .venv/bin/activate
 python -m pip install -e '.[test]'
 export PYTHONPATH="$PWD"
 python -m observational_succ demo
 python scripts/verify_provenance.py
 python scripts/observer_foundations_probe.py
 python scripts/ordinal_succ_report_probe.py
-python -m unittest discover -s tests -p 'test_aphex_two_fiber_haar.py' -v
+python -m unittest discover -s tests -p 'test_zero_anchored*.py'
 ```
 
-For complete native validation, run
-`python -m unittest discover -s tests -p 'test_*.py'`.
-The suite is substantial; use the [round's validation receipts](docs/SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md)
-for exact tested commits and outcomes. A passing test certifies its tested behavior;
-analytic and kernel proof authority are recorded separately.
-
-## Documentation
+Full native validation is `python -m unittest discover -s tests -p 'test_*.py'`.
+The [handoff](docs/MAIN_XXIV_HANDOFF.md) lists focused research replays. Test success,
+written proof and kernel verification retain their separate authority; exact tested
+commit identities and hosted outcomes are recorded in the integration audit.
 
 | Read | Purpose |
 |---|---|
-| [Foundations](docs/FOUNDATIONS.md) | Objects, physical intuition and logical boundaries |
-| [Method](docs/METHOD.md) | Steelman → crucible → labeled verdict |
-| [Architecture](docs/ARCHITECTURE.md) | Maps, modules and trust boundaries |
-| [Current π frontier](docs/PI_NORMALITY_FRONTIER.md) | Proved tools, open arithmetic gates and countermodels |
-| [Claim ledger](docs/CLAIM_LEDGER.md) · [Main XXII supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXII.md) | Claim status and supporting evidence |
-| [Roadmap](docs/ROADMAP.md) | Longer-term research directions |
-| [Research history](docs/RESEARCH_HISTORY.md) | Archived README, integration history and primary dossiers |
-| [Intellectual provenance](docs/idea_provenance/README.md) | Original intuitions → steelmans → exact results → counterexamples, including the Aphex equation story |
-| [Contribution guide](CONTRIBUTING.md) | Reproduction, attribution and review expectations |
+| [Foundations](docs/FOUNDATIONS.md) · [Method](docs/METHOD.md) | Theory, interpretation and steelman–crucible–verdict discipline |
+| [Architecture](docs/ARCHITECTURE.md) · [Observer atlas](docs/CATEGORICAL_OBSERVER_ATLAS.md) | Actual maps and trust boundaries |
+| [Claim ledger](docs/CLAIM_LEDGER.md) · [Main XXIV supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md) | Scoped claims and their evidence |
+| [Mathematical memory index](docs/math_memory/INDEX.md) | Concepts and generated claim discovery |
+| [Roadmap](docs/ROADMAP.md) · [Research history](docs/RESEARCH_HISTORY.md) | Next campaigns and preserved earlier work |
+| [RH handoff](docs/RH_HANDOFF.md) | Separate completed-source positivity program |
+| [Intellectual provenance](docs/idea_provenance/README.md) · [Contributing](CONTRIBUTING.md) | Original intuitions, attribution and reproduction |
 
-## Research honesty
-
-A classical theorem keeps its attribution. An exact finite identity, a conditional reduction,
-a numerical observation and a kernel-checked lemma carry different authority. Every
-substantial proposal should expose its domain, hypotheses, quantifiers, provenance,
-adversarial controls and next falsification opportunity. Attractive diagrams and many
-agreeing measurements do not pay a missing proof obligation.
-
-The [frozen import manifest](provenance/IMPORT_MANIFEST.json) preserves the project's original
-source history. Earlier dossiers remain available with their historical meaning; maintained
-supplements clarify their scope. No redistribution license has been selected by the maintainer.
+The [previous README](docs/archive/README_PRE_MAIN_XXIV_2026-11-11.md) is preserved
+byte for byte. Classical theorems keep their attribution; finite certificates do
+not establish universal statistics. No redistribution license has been selected
+by the maintainer.

@@ -1,0 +1,51 @@
+test_archimedean_height_gap (test_basel_omega.BaselTests.test_archimedean_height_gap) ... ok
+test_commutator_blocks (test_basel_omega.BaselTests.test_commutator_blocks) ... ok
+test_crt (test_basel_omega.BaselTests.test_crt) ... ok
+test_cycle_green (test_basel_omega.BaselTests.test_cycle_green) ... ok
+test_haar_energy (test_basel_omega.BaselTests.test_haar_energy) ... ok
+test_multiplicative_2_3_residual (test_basel_omega.BaselTests.test_multiplicative_2_3_residual) ... ok
+test_refinement_diamond (test_basel_omega.BaselTests.test_refinement_diamond) ... ok
+test_thermal_numerical_with_tail (test_basel_omega.BaselTests.test_thermal_numerical_with_tail) ... ok
+test_thermal_symbolic (test_basel_omega.BaselTests.test_thermal_symbolic) ... ok
+test_W0_continuous_inverse (test_lambert_basel_gate.LambertBaselGate.test_W0_continuous_inverse) ... ok
+test_branch_Wminusone_inversion (test_lambert_basel_gate.LambertBaselGate.test_branch_Wminusone_inversion) ... ok
+test_coherent_wrong_seed (test_lambert_basel_gate.LambertBaselGate.test_coherent_wrong_seed) ... ok
+test_double_reciprocal_square_asymptotic (test_lambert_basel_gate.LambertBaselGate.test_double_reciprocal_square_asymptotic) ... ok
+test_exact_positive_tail_bound (test_lambert_basel_gate.LambertBaselGate.test_exact_positive_tail_bound) ... ok
+test_irrational_sparse_digit_seed_adversary (test_lambert_basel_gate.LambertBaselGate.test_irrational_sparse_digit_seed_adversary) ... ok
+test_periodic_nonnormal_seed (test_lambert_basel_gate.LambertBaselGate.test_periodic_nonnormal_seed) ... ok
+test_rational_phase_lift_and_exact_winding (test_lambert_basel_gate.LambertBaselGate.test_rational_phase_lift_and_exact_winding) ... ok
+test_source_contract_and_prefix (test_lambert_basel_gate.LambertBaselGate.test_source_contract_and_prefix) ... ok
+test_strict_phase_budget_numerical_control (test_lambert_basel_gate.LambertBaselGate.test_strict_phase_budget_numerical_control) ... ok
+test_truncated_tail_error_all_bounded_sequences (test_lambert_basel_gate.LambertBaselGate.test_truncated_tail_error_all_bounded_sequences) ... ok
+test_w_threshold_minimal (test_lambert_basel_gate.LambertBaselGate.test_w_threshold_minimal) ... ok
+test_basel_weights_and_exact_height_compensation (test_phase_weyl.PhaseBridgeTests.test_basel_weights_and_exact_height_compensation) ... ok
+test_exact_real_lift_phase_and_weyl_identity (test_phase_weyl.PhaseBridgeTests.test_exact_real_lift_phase_and_weyl_identity) ... ok
+test_exact_six_cell_nearest_neighbor_edges (test_phase_weyl.PhaseBridgeTests.test_exact_six_cell_nearest_neighbor_edges) ... ok
+test_genuine_bbp_poles_and_causal_weld (test_phase_weyl.PhaseBridgeTests.test_genuine_bbp_poles_and_causal_weld) ... ok
+test_numerical_phase_sum_smoke_and_periodic_controls (test_phase_weyl.PhaseBridgeTests.test_numerical_phase_sum_smoke_and_periodic_controls) ... ok
+test_real_winding_cannot_be_dropped_before_rational_twist (test_phase_weyl.PhaseBridgeTests.test_real_winding_cannot_be_dropped_before_rational_twist) ... ok
+test_seed_and_wrong_seed_controls (test_phase_weyl.PhaseBridgeTests.test_seed_and_wrong_seed_controls) ... ok
+test_six_translates_are_exact_partition_of_unity (test_phase_weyl.PhaseBridgeTests.test_six_translates_are_exact_partition_of_unity) ... ok
+test_strict_source_tail_certificate_is_rational (test_phase_weyl.PhaseBridgeTests.test_strict_source_tail_certificate_is_rational) ... ok
+test_coherent_wrong_seed (test_rh_spectral_gate.SpectralGateControls.test_coherent_wrong_seed) ... ok
+test_discrete_dirichlet_shift_with_endpoint (test_rh_spectral_gate.SpectralGateControls.test_discrete_dirichlet_shift_with_endpoint) ... ok
+test_log_block_counterexample_epoch (test_rh_spectral_gate.SpectralGateControls.test_log_block_counterexample_epoch) ... ok
+test_mellin_block_formula (test_rh_spectral_gate.SpectralGateControls.test_mellin_block_formula) ... ok
+test_mellin_nonreal_boundary_poles (test_rh_spectral_gate.SpectralGateControls.test_mellin_nonreal_boundary_poles) ... ok
+test_mellin_regular_at_one (test_rh_spectral_gate.SpectralGateControls.test_mellin_regular_at_one) ... ok
+test_radix_frequency_shift (test_rh_spectral_gate.SpectralGateControls.test_radix_frequency_shift) ... ok
+test_rational_fixed_phase_counterexample (test_rh_spectral_gate.SpectralGateControls.test_rational_fixed_phase_counterexample) ... ok
+test_alternating_tail_cancellation_certificate (test_signed_basel_tauberian.SignedBaselTests.test_alternating_tail_cancellation_certificate) ... ok
+test_constant_wrong_seed_does_not_cancel (test_signed_basel_tauberian.SignedBaselTests.test_constant_wrong_seed_does_not_cancel) ... ok
+test_dyadic_block_countermodel_shell (test_signed_basel_tauberian.SignedBaselTests.test_dyadic_block_countermodel_shell) ... ok
+test_exact_inverse_abel (test_signed_basel_tauberian.SignedBaselTests.test_exact_inverse_abel) ... ok
+test_finite_dyadic_tail_decomposition (test_signed_basel_tauberian.SignedBaselTests.test_finite_dyadic_tail_decomposition) ... ok
+test_quantitative_5_and_10_bounds (test_signed_basel_tauberian.SignedBaselTests.test_quantitative_5_and_10_bounds) ... ok
+test_shell_weights_compare_integral (test_signed_basel_tauberian.SignedBaselTests.test_shell_weights_compare_integral) ... ok
+test_weighted_shell_versus_tail_bound (test_signed_basel_tauberian.SignedBaselTests.test_weighted_shell_versus_tail_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 2.878s
+
+OK

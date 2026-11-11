@@ -653,6 +653,12 @@
       "title": "Main XXII — scoped claim supplement"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md",
+      "registered_namespaces": [],
+      "sha256": "d0a6e9641e5d7fd63c02235c9ec8b172ca9696fb34bb64ac60ceca8062db1180",
+      "title": "Main XXIV — integration claims and governing corrections"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
       "registered_namespaces": [
         "MAIN_XX_FORGE"
@@ -22148,10 +22154,10 @@
   ],
   "coverage": {
     "claim_rows_found": 2055,
-    "claim_supplements_scanned": 207,
+    "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2892
+    "source_documents_found": 2961
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38040,6 +38046,156 @@
       "title": "Validation, source binding and exact proof scope"
     },
     {
+      "path": "research/2026-11-10/aperiodic_circle_observer/CLAIM_LEDGER.md",
+      "sha256": "6ebdc34b396faae40f8a68ec6ecc69bb57c9515defaa8e51d9fd0c22a4b6da56",
+      "size": 7537,
+      "title": "Aperiodic circle observer claim ledger"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/CYCLE_ESCAPE_PROOF.md",
+      "sha256": "107e28528f9a0f6de1d54ade23950be6d9a15fa56444539e2500dc3ee6d17b27",
+      "size": 19988,
+      "title": "Effective escape from every proposed L/R cycle"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/HOLE_CONTRACT.md",
+      "sha256": "835dd1999e3eaa659466a84d3aabe533e0c74ec54a35f7ae8d63a861131979b7",
+      "size": 3994,
+      "title": "Round V contract: finite rules, productive aperiodic execution"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/HOSTILE_PERIODS.md",
+      "sha256": "477f6b7d1ccc2dac154ceae027513ab53610ae84befb7eece08ddff29339d330",
+      "size": 21948,
+      "title": "Round V hostile bearing: periods, residuals, and escape certificates"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/PRODUCTIVE_GEOMETRY.md",
+      "sha256": "0c109dcc58beb08195835fcfa704830ec05b4a32deed4f4405d07fa1b6057de9",
+      "size": 32006,
+      "title": "Productive geometry, maximal runs, and rational probes"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/README.md",
+      "sha256": "ca6e77c6ab29c252a3293d82fd32d5bc2ddb14c9e0b3b0da94f88b78aecfe3d6",
+      "size": 14957,
+      "title": "Aperiodic circle observer: finite rules, infinite execution"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/UNIFORM_BOUNDS.md",
+      "sha256": "63561b38320f472d6c179e5e0673157541cbfa1d14386187ea01bc59dc99b7f2",
+      "size": 8529,
+      "title": "Uniform escape budgets from a classical transcendence measure"
+    },
+    {
+      "path": "research/2026-11-10/aperiodic_circle_observer/VALIDATION.md",
+      "sha256": "e71c954011b4479097d36a8302ecb5fa34d915c0a9edc5c6ac9c3a6c6609b839",
+      "size": 6202,
+      "title": "Validation of the productive aperiodic observer"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/LAMBERT_VALIDATION.md",
+      "sha256": "2f52a369f6cc33e772814785c735fb8223db3553fe7b2d4c861bc1bb9482f6e5",
+      "size": 1961,
+      "title": "Lambert-W signed Basel gate — local validation record"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/LAMBERT_W_SIGNED_BASEL_GATE.md",
+      "sha256": "39d5f9ce9a917dcc7941525285a4d8501bcb28ae8683955064165fe3c2cb015c",
+      "size": 11893,
+      "title": "Lambert-W inversion of the authentic BBP × signed Basel phase budget"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/PHASE_OBSERVER.md",
+      "sha256": "56fcad4b757daca5bb8c216db098df95d2fca6a95b92e513e2c35a4f97e5ff72",
+      "size": 8566,
+      "title": "Six-frame Omega-Haar -> exact signed Weyl observer (Basel-calibrated)"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/PROOFS.md",
+      "sha256": "998d72845c82f60272d97ef73083daf02ecd1d9c82bd851e0dc30041b3a7c239",
+      "size": 13003,
+      "title": "SUCC research note: Basel × 2/3 CRT × Ω-Haar × Γ"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/README.md",
+      "sha256": "0da23a000442c74e95ae2bd2393e00c3f8b380309f01d46bced4befcb6c78275",
+      "size": 4018,
+      "title": "Basel × 2/3 CRT × Ω–Haar × signed Weyl"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/RH_SPECTRAL_INTERFEROMETRY.md",
+      "sha256": "4d96b23df126f9ec316d4a2b80ca8fd8ed83b02cd5a1b224715a943a1e321f1f",
+      "size": 9052,
+      "title": "RH => pi normal? A source-locked Mellin boundary test and two no-go controls"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/SIGNED_BASEL_TAUBERIAN.md",
+      "sha256": "6ffde623e005665b257fe7f24baffe67d33bf5fed677d44f882842de9b84bd35",
+      "size": 7682,
+      "title": "Signed Basel tails are exactly a Weyl/Cesaro gate (source-selected Omega trace)"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/CLAIM_LEDGER.md",
+      "sha256": "cf9b9373e004e9c83d4902620464969b9689847a110a88065b24f561fae98ca8",
+      "size": 4010,
+      "title": "Claim ledger — source-selected Weil × 2/3 prime phase"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/DIRICHLET_PRIME_DEFECT.md",
+      "sha256": "2971b7aa99a4acd9232090a58138cae5c25b6139a5af73f89604f0595c35cff5",
+      "size": 7053,
+      "title": "Möbius–prime-jet transport and a **certified original-π 2×3 defect**"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/RATIO_FIBER_TORUS.md",
+      "sha256": "1706e4b22a4930b037a8fa063217eb946a22cc203f5870e75e4eb9b0729a2a15",
+      "size": 14482,
+      "title": "Prime-phase tomography inside the half-to-double ratio interval"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/README.md",
+      "sha256": "8165daaaa4da6aa452087d8626128e541e34fa25029891e491252d23a76c8c60",
+      "size": 6507,
+      "title": "Operation PRIME–ARCHIMEDEAN × Basel–Ω × Weil wavepacket"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/VALIDATION.md",
+      "sha256": "684adcb4789f188e54e77d7f8d4b3c4680e18fcf950993d41f8d8bdda789aea4",
+      "size": 3619,
+      "title": "Reproduction, controls, and CI firewall"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/WEIL_PACKET_PROOFS.md",
+      "sha256": "5c8fd05f8ea06de55c2631404ee97c5988aa5a2c99dc05c93030f214c627cd3f",
+      "size": 8003,
+      "title": "Source-selected logarithmic packets in the **completed** Weil formula"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/CLAIM_LEDGER.md",
+      "sha256": "933eb55818198a04d3fe4157c7b6c5b55789915080bd542021436add45817333",
+      "size": 2650,
+      "title": "Signed 3/2 fiber joining claim ledger — 2026-11-10"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/PROOFS.md",
+      "sha256": "5bd2d3799c61c7bf49d4a71955d29418cd797df9b65ffea42993f6980fe5656c",
+      "size": 18539,
+      "title": "The 3/2 ratio fiber: two-to-three invariant joinings, signed controls, and original-zero π receipts"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/README.md",
+      "sha256": "21f30d70828f7ece2ee778ea7e5eba257abc936cc367be957025d7f8a21da89a",
+      "size": 3297,
+      "title": "Signed 3/2 prime ratio: true two-to-three Haar joinings and source-selected finite probe"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/VALIDATION.md",
+      "sha256": "23a53ea65d1adaf5e2274c1264377245b3b00239031ad18866b3adfec84ed872",
+      "size": 3327,
+      "title": "Validation record / CI boundary"
+    },
+    {
       "path": "research/2026-11-10/bbp_graph_resonance/README.md",
       "sha256": "dd297fbd20ddf169ea26bd4000e4fdaa67d33ab9cbbb383e73690c0262661f3a",
       "size": 2625,
@@ -38056,6 +38212,240 @@
       "sha256": "587758f81682da8721e9286e32d3b5ed5ecd4296699c31f51ebad04fe68a5832",
       "size": 1983,
       "title": "Claim authority and replay — BBP graph-resonance research"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/CIRCLE_GEOMETRY.md",
+      "sha256": "8c6553fe4b77337b7723587bb3b1718359e8673bab3cf7f5aa641f1a5441a2ad",
+      "size": 16172,
+      "title": "A circle-and-line observer that emits an infinite L/R name of pi"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/CLAIM_LEDGER.md",
+      "sha256": "37e27a07986a5b0a45dfa91e001e394a4a4a5b0f33e2d6dd3599afbe5d446d48",
+      "size": 6788,
+      "title": "Circle/line observer claim ledger"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/HOSTILE_OBSERVER.md",
+      "sha256": "d15e4102330b9da6bc141115e90fa29f921aef71dca939b11817d490deea246e",
+      "size": 35059,
+      "title": "Circle–line observer: adversarial proof audit"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/IMPLEMENTATION_CONFORMANCE.md",
+      "sha256": "78394e400ce5b83f327b301debf710c7fa09c581ec906afc300d52086fd1cb27",
+      "size": 14010,
+      "title": "Independent circle observer implementation conformance"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/LR_TRANSLATION.md",
+      "sha256": "0d1b938c210a68bd591481f8115f4a2f0358d31100e151ea22dc4b9d74bdb9d7",
+      "size": 23246,
+      "title": "Circle/line geometry as a productive L/R observer"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/PRECISION_TRANSFER.md",
+      "sha256": "b950f621a4b28a2d9401437d4e7c5e934b5ee155fd45639d100b01d2091fcbc7",
+      "size": 4490,
+      "title": "From the geometric source clock to the expanding Fourier observer"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/README.md",
+      "sha256": "0997fb9cc9e17b3a2194dcbcfecb2ebc40838d5336869dbc92abf4e12b9f671b",
+      "size": 16359,
+      "title": "The circle/line observer: a finite program that recovers pi"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/VALIDATION.md",
+      "sha256": "caa811c9ce2f9ac37c0fe21c95498058ee8d4ca1dde62dbf76c13cae51cb1b8a",
+      "size": 6272,
+      "title": "Validation of the circle/line observer"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/height_shield/HEIGHT_SHIELD_THEOREMS.md",
+      "sha256": "8b492e3a99091d4900a8e88f55856fc2698455449e5bd91d0b5417fd67ffc7e6",
+      "size": 10115,
+      "title": "H-01–H-08: finite-height Farey shields and effective Dedekind–Yoneda"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/height_shield/HOSTILE_GATES.md",
+      "sha256": "5197aaf8aaafbbda1e867f159e88fe65cf308cebc6c0318d3ec380efe77354e7",
+      "size": 3631,
+      "title": "H-hostile gate matrix: infinite near-misses are not a refutation"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/height_shield/README.md",
+      "sha256": "78af68818309ec4b726619fec90f13ca66ff9af0cf8670ddb3a9a0ba4e7f520f",
+      "size": 4977,
+      "title": "SUCC Cursed Computation V — finite-height Farey shields"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/height_shield/VALIDATION.md",
+      "sha256": "35defe7107d544e9a1c568da1efa0179f29d2e7294313166a7659d56e03c4cd2",
+      "size": 6798,
+      "title": "Validation and provenance ledger: Farey height shields"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/HOSTILE_GATES.md",
+      "sha256": "b9dbe017b5a07b08e37797edb459418198e95b74bfea8f2d8cb2834ca0ab6deb",
+      "size": 5435,
+      "title": "Hostile controls: an identity theorem is not an equidistribution theorem"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/README.md",
+      "sha256": "79804dfb46c9d75efa048228c164628e399d00d4db6593f15bd517e86b22bb6c",
+      "size": 5439,
+      "title": "SUCC — Zero-Anchored Dedekind Fingerprint and Signed-Observer Bridge"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/THEOREMS.md",
+      "sha256": "80ebe839c3857ac6d30d0f565147c6b1c7b45076852b14a2ab88cbf791d3fdbd",
+      "size": 11248,
+      "title": "Zero-Anchored Identity Kernel — definitions, theorems, and proof contracts"
+    },
+    {
+      "path": "research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/VALIDATION.md",
+      "sha256": "52b7674bbca8ec1c0e08b60a085688be850d587d6d78423309b78c73be1ade86",
+      "size": 6831,
+      "title": "Validation and non-claims — Zero-Anchored Identity Kernel"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/CLAIM_LEDGER.md",
+      "sha256": "8032576bf170c1a92adb04952793cae2d0faca61160cdeb9cc3c67ce784452a9",
+      "size": 10414,
+      "title": "Local claim ledger — cursed categorical computation"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/README.md",
+      "sha256": "0a499347154ae63a164bd62d499138ba243c63fc1d9f424ea0f2b4c729a2f6fc",
+      "size": 6825,
+      "title": "Cursed categorical computation: coherent numerical arrows"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/ROUND_I.md",
+      "sha256": "f1733bfbae830fe98771aa1a6dc2cf9e90ba00ae2994c092b1f11bca79629ea2",
+      "size": 14208,
+      "title": "Cursed categorical computation, round I"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/ROUND_II.md",
+      "sha256": "3a3a3edd713e634b1024c6f6a37c34e79374eafd72386c5298ac97cdc7e8d462",
+      "size": 25345,
+      "title": "Cursed categorical computation, round II"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/SOURCES.md",
+      "sha256": "2cd57fb350aeb6baae1e7449cf4c92df6c618934eb19138c017f623cbb462cdf",
+      "size": 14808,
+      "title": "Sources, provenance, and evidence boundaries"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/VALIDATION.md",
+      "sha256": "ed27d6f3dcdc2c7fed0bf652c9ac8f93b0d7f35eab09bc37c82f8b92cb38ea47",
+      "size": 7090,
+      "title": "Validation and publication checkpoints"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/COMPUTATION_GRAPH.md",
+      "sha256": "bec5b8da84cdd3a9c43b2dbfb254e3e73c91577468dfb91877cd202da22d3641",
+      "size": 17196,
+      "title": "Round III: irrational numbers as certified rational computation graphs"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/DEDEKIND_YONEDA.md",
+      "sha256": "40168de0962c1345d135e3b72ec64d2bcca4ce850686e511f3d42e2c33f53b98",
+      "size": 29171,
+      "title": "Dedekind–Yoneda: an irrational number as a coherent family of rational probes"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/RATIONAL_ARITHMETIC_COMPILER.md",
+      "sha256": "be64fb90dfe89ecb64fc2d9faa96fe676b63ec9c02ccbbdbe0b4e02a28536b75",
+      "size": 25987,
+      "title": "Round III — irrational semantics, rational arithmetic"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categories_dedekind_yoneda/COMPUTATION_GRAPH.md",
+      "sha256": "c2601e2eb2fcc785ff2f92af8ac044b6baac3ec7fd54017f77fcad78e49b8dde",
+      "size": 7642,
+      "title": "Rational computation graphs of irrational cuts: Stern–Brocot, affine arrows, and authenticated BBP"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categories_dedekind_yoneda/CUT_YONEDA_THEOREMS.md",
+      "sha256": "aad750967bc02335d8576f77d4e555bdffc4d9357beb2fece46f9cf079f3f26e",
+      "size": 8038,
+      "title": "Dedekind–Yoneda: exact category definitions, theorems, and boundaries"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categories_dedekind_yoneda/HOSTILE_GATES.md",
+      "sha256": "eb53cbee2b02f5eb3774d63e462851f70fa824cc72b8c4977a3de8c7fb4aa3bf",
+      "size": 8899,
+      "title": "Crucible: failures, witnesses, and the first serious new SUCC target"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categories_dedekind_yoneda/README.md",
+      "sha256": "fef78eb7660449b33b45c10afa1b6921767c5de3e8cca2a5f82fe8fc85473579",
+      "size": 4793,
+      "title": "SUCC Cursed Categories III — the Dedekind–Yoneda irrational computation graph"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categories_dedekind_yoneda/ROUNDS_I_II.md",
+      "sha256": "0bfa656e420b4ee88f6a3081d989737b11e81906f6ca6a2cde69f77524f1fdf2",
+      "size": 8924,
+      "title": "Cursed Categories, Rounds I–II: archived mechanisms and exact boundaries"
+    },
+    {
+      "path": "research/2026-11-10/cursed_categories_dedekind_yoneda/VALIDATION.md",
+      "sha256": "64825ad17997e0fe91bf973be9590964efbac2c2f737acb7ab874f37ddeb3fe0",
+      "size": 3359,
+      "title": "Validation receipt: additive cursed-cut research, not whole-repository CI"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/CLAIM_LEDGER.md",
+      "sha256": "9954d7a674cde6ed469cbce72e9d249c5b4ce31e79bd60d0885ec6323e1c3ac4",
+      "size": 4166,
+      "title": "Claim ledger — Gaussian lattice × pinbed × BBP long-lag offensive"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/GEMINI_AUDIT.md",
+      "sha256": "4d7f521f7f2075bf1550d119a3599b213443d7f200403ffa0c38d3a19dcab070",
+      "size": 4767,
+      "title": "Source audit: Gemini's √2 / π / grid / circle intuition"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/LONG_LAG.md",
+      "sha256": "e2776808cbae6ea0f807d6366c79e721ee6ae48a6d1c3dd05fc54ac6018cfafd",
+      "size": 7166,
+      "title": "The actual π near-return target, the two-clock geometry, and a source-selected obstruction"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/NEXT.md",
+      "sha256": "ee97b2fd2796c83d4a3599456e846f6e05a68857c0eaf3907f540c1262fa4983",
+      "size": 3229,
+      "title": "Next offensive — source-selected Gaussian pinbed pullback or long-lag bound"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/README.md",
+      "sha256": "01982b9f39fed621f2b83e64a14e2da1b09623197235ad97ed02bbe98f4253aa",
+      "size": 4792,
+      "title": "Gaussian-circle × Viète × BBP: a one-sided pinbed offensive"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/SOURCE_MAP.md",
+      "sha256": "1bfa6cbd6f4f9311f749b9a201840f731347d01e132e301ef1f136ac291eddd5",
+      "size": 1639,
+      "title": "Mathematical provenance and source contracts"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/THEOREMS.md",
+      "sha256": "6dfaf5369ecca4a8fdfba876ac0b0ba18db40aa30a71ee17ce526135bdcb1f90",
+      "size": 8316,
+      "title": "Theorems: Gaussian angular pinbeds, primitive directions and viable source transport"
+    },
+    {
+      "path": "research/2026-11-10/gaussian_circle_long_lag/VALIDATION.md",
+      "sha256": "91cb2481f9a0e5c2a4a3f7a55289e42d199b06ba05e032e7cdb27c0772b3451e",
+      "size": 3931,
+      "title": "Validation receipt, scope, and exact replay"
     },
     {
       "path": "research/2026-11-10/main_xxiii/HAMILTONIAN_ENDPOINT.md",
@@ -38220,10 +38610,40 @@
       "title": "Zero-Anchored Lambda–Haar Compiler"
     },
     {
+      "path": "research/2026-11-10/zero_anchored_lambda_haar/README_ALTERNATIVE_589.md",
+      "sha256": "dd9866768408fda9f55c63a5dcb7ff8acda8cf566b8e901dcb2835db7f8e8b79",
+      "size": 14117,
+      "title": "Zero-Anchored Lambda–Haar Compiler (ZALHC)"
+    },
+    {
       "path": "research/2026-11-10/zero_anchored_lambda_haar/VALIDATION.md",
       "sha256": "64a58317c01f4313282af971c435a6a78018efdb614965dc3a683db92048116b",
       "size": 5689,
       "title": "Validation and provenance"
+    },
+    {
+      "path": "research/2026-11-10/zero_seed_microscope/MICROSCOPE_THEOREMS.md",
+      "sha256": "fac2b8d786523e475c91b3b9c7427a05ba2c43fe1edbd9f2b5c849dbb1b97873",
+      "size": 13611,
+      "title": "Source-zero cylinder microscope: a 16-adic observational tower with a signed BBP witness"
+    },
+    {
+      "path": "research/2026-11-10/zero_seed_microscope/NEXT.md",
+      "sha256": "1e6d34dd87477a3ffb88f2564737325e8b6504c73de3e960d13f2518901db316",
+      "size": 2762,
+      "title": "Next experiment: deep selected-zero Haar flux versus arithmetic source"
+    },
+    {
+      "path": "research/2026-11-10/zero_seed_microscope/README.md",
+      "sha256": "0e2cba241f87d65e019a615cd56ae4f880c4824dc1b5b8f7b0cbc1ef8cb7dd9b",
+      "size": 3430,
+      "title": "Zero-seed radix microscope · signed BBP Haar packet"
+    },
+    {
+      "path": "research/2026-11-10/zero_seed_microscope/VALIDATION.md",
+      "sha256": "933fae733abf26bdc4a93bbeae641f74cbce5cf3885c326704dd699c251525b0",
+      "size": 5657,
+      "title": "Execution, provenance and exact status"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
@@ -39661,6 +40081,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_META_CONTOUR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OBSERVER_TATE_ATOM.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OILY_CARRY_RESONANCE.md",

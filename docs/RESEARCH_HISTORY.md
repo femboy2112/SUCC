@@ -1,3 +1,17 @@
+# Main XXIV — consolidated research navigation
+
+The maintained mathematical story is in the [README](../README.md), [frontier](PI_NORMALITY_FRONTIER.md) and [handoff](MAIN_XXIV_HANDOFF.md). The [manifest](SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json) preserves exact origins and destinations; [claim corrections](CLAIM_SUPPLEMENT_MAIN_XXIV.md) govern historical endpoint/API mistakes.
+
+| Front | Dossiers | Distinction retained |
+|---|---|---|
+| A | [canonical Lambda–Haar](../research/2026-11-10/zero_anchored_lambda_haar/README.md), [alternative #589](../research/2026-11-10/zero_anchored_lambda_haar/README_ALTERNATIVE_589.md), [microscope](../research/2026-11-10/zero_seed_microscope/README.md) | Finite source-tail contraction versus OPEN statistical contraction |
+| B | [Basel](../research/2026-11-10/basel_crt_omega_phasebridge/README.md), [completed Weil and ratio](../research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/README.md), [joinings](../research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/README.md), [Gaussian](../research/2026-11-10/gaussian_circle_long_lag/README.md) | Completed source, real winding, nonproduct Haar marginals |
+| C | [strict irrational cuts #594](../research/2026-11-10/cursed_categories_dedekind_yoneda/README.md), [categorical rounds #595](../research/2026-11-10/cursed_categorical_computation/README.md) | Strict/closed rational endpoints and typed essential images |
+| D | [circle/line](../research/2026-11-10/circle_line_lr_observer/README.md), [aperiodic observer](../research/2026-11-10/aperiodic_circle_observer/README.md) | Classical pi/nonquadraticity imports versus new productive observers |
+| E | [height shields](../research/2026-11-10/circle_line_lr_observer/height_shield/README.md), [symbolic identity](../research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/README.md) | Finite rational separation/seed recovery versus statistical normality |
+
+All preceding primary dossiers, theorem histories and failed controls remain intact.
+
 # Research history and primary dossiers
 
 For the **human and mathematical origin** of the research—not merely its file chronology—see the [intellectual provenance atlas](idea_provenance/README.md), especially the [Aphex Twin equation case study](idea_provenance/APHEX_TWIN_FORMULA_CASE_STUDY.md). It records the originating prompts, later mathematical interpretations, successful results and counterexamples without changing the historical dossiers.

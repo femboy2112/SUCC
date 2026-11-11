@@ -1,274 +1,290 @@
-# π base-16 normality — Main XXIII frontier
+# π base-16 normality — Main XXIV frontier
 
-Maintained 2026-11-10. **π base-16 normality, original-zero hexadecimal parity
-balance and parity words, and RH are OPEN.** This is the Main XXIII integration
-candidate. See its [audit](SUCC_MAIN_XXIII_INTEGRATION_AUDIT_2026-11-10.md),
-[tool atlas](MAIN_XXIII_TOOL_ATLAS.md), and
-[Main XXII snapshot](archive/PI_NORMALITY_FRONTIER_MAIN_XXII_2026-11-09.md).
+Maintained 2026-11-11. **Source-selected signed cancellation, original-zero
+hexadecimal parity balance and parity words, π base-16 normality, completed Weil
+positivity, and RH remain OPEN.** Main XXIV consolidates the source, identity and
+observer machinery; it supplies no missing statistical estimate. The
+[audit](SUCC_MAIN_XXIV_INTEGRATION_AUDIT_2026-11-11.md),
+[manifest](SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json), and
+[claim supplement](CLAIM_SUPPLEMENT_MAIN_XXIV.md) record exact integration and
+validation authority. The [Main XXIII entrypoint](archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md)
+is preserved byte for byte, including earlier sufficient criteria and references.
 
-## 1. Authenticated original source
+## 1. Source → exact carrier → authenticated origin
+
+For integer $`n\ge1`$, retain the source and literal zero seed:
 
 ```math
-r(n)=\frac4{8n-7}-\frac2{8n-4}-\frac1{8n-3}-\frac1{8n-2}.
+r(n)=\frac4{8n-7}-\frac2{8n-4}-\frac1{8n-3}-\frac1{8n-2},
+\qquad U_0=0,\qquad U_n=16U_{n-1}+r(n).
 ```
+
+Set $`x=\pi/16`$, $`P_n=\sum_{j=1}^n16^{-j}r(j)`$, and
+$`T_n=\sum_{j\ge1}16^{-j}r(n+j)`$. The classical BBP evaluation and exact recurrence give
 
 ```math
-U_0=0,\qquad U_n=16U_{n-1}+r(n).
+U_n(0)=16^nP_n,\qquad U_n(0)+T_n=16^nx=16^{n-1}\pi,
+\qquad 0<T_n<\frac{r(n+1)}{15}.
 ```
 
-Put $`C_n=\lfloor U_n\rfloor`$, $`\kappa_n=C_n-16C_{n-1}`$ and
-$`T_n=\sum_{j\ge1}16^{-j}r(n+j)`$. Then
-$`U_n+T_n=16^{n-1}\pi`$. Preserve literal carries, including 16, before reducing any
-coordinate. For seed $`s`$, the same forcing gives
-$`U_n(s)+T_n=16^n(s+\pi/16)`$; that seed dependence is decisive.
+The [rational source](../observational_succ/duck_bbp.py),
+[integer carrier](../observational_succ/integer_bbp_carrier.py), and
+[selected orbit](../observational_succ/selected_orbit.py) retain their distinct coordinates.
+For $`C_n=\lfloor U_n\rfloor`$, the literal carry is
+$`\kappa_n=C_n-16C_{n-1}`$; retain carry 16 before any reduction.
+The critical-carry bit in `selected_orbit` is a different observable. Original
+imports are authenticated by the [frozen provenance manifest](../provenance/IMPORT_MANIFEST.json).
 
-Canonical implementations: [rational source](../observational_succ/duck_bbp.py),
-[integer carrier](../observational_succ/integer_bbp_carrier.py),
-[selected orbit](../observational_succ/selected_orbit.py). The critical-carry bit in
-`selected_orbit` is a different observable from the integer carry above.
-[Import provenance](../provenance/IMPORT_MANIFEST.json) authenticates the original imported
-files; the integration manifest authenticates the research heads separately.
+For seeds in the declared symbolic module $`s=a+bx`$, $`a,b\in\mathbb Q`$,
 
-## 2. Strongest established tools and their authority
+```math
+U_n(s)=16^n(s+P_n),\qquad
+Z_n:=16^{-n}U_n(s)-P_n=s,\qquad U_n(s)+T_n=16^n(x+s).
+```
 
-| Result | Status and actual content | Boundary / source |
+The [zero-anchor kernel](../research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/THEOREMS.md)
+checks exact coordinates, using imported π irrationality for uniqueness. The coherent
+seed $`s=-x`$ produces a zero completed orbit but has recovered seed $`(0,-1)`$.
+The rational shift $`1/16`$ aliases later phases but has seed $`(1/16,0)`$.
+Authentication distinguishes both. Later circle statistics cannot distinguish the
+rational alias; this is a loss of information, not a failed statistical test.
+Equality in this module does not decide equality of arbitrary computable reals.
+
+## 2. Claim status and authority
+
+| Claim | Required treatment | Supporting domain / boundary |
 |---|---|---|
-| Green completion | PROVED PAPER; exact identity above with rigorous tail enclosures | Transport to π; no mean-decay estimate. [source contract](PI_FRONTIER_CONTRACT.md) |
-| Absolute Fourier loss | PROVED PAPER under the stated classical imports; logarithmic loss from maximal reinforcement | Not sublinear signed cancellation. [selected-phase synthesis](../research/2026-10-25/PI_SELECTED_PHASE_FORGE.md) |
-| #544 carry observer | PROVED PAPER; bounded continuous $`\Phi_h`$ on the integer-lift 16-adic carrier, with $`O_h(\log A/A)`$ comparison to the authentic epoch Weyl mean | Signed mean decay remains Weyl-equivalent and OPEN. [proof](../research/2026-11-08/chronology_carry/crucible/EXPLICIT_INNOVATION.md) |
-| #554 balanced prime | CONDITIONAL TRANSFER with declared classical PNT/AP, exponential-sum and completion inputs; local nonzero-frequency estimate | Fixed-Gram claim needs $`p\nmid h`$. No real-complement estimate. [balanced epoch](../research/2026-11-08/three_channel_prime_tomography/BALANCED_EPOCH.md) |
-| #565 recursive Haar | PROVED PAPER; sharp interval-W1 descent retaining sixteen children and the entire future tail | Its zero-seed symmetry-defect premise is OPEN; see the supplement for the precise projector |
-| #571 successor junction | PROVED PAPER; signed high/low word junctions and endpoint-corrected transport inequalities | Positive finite collision energy is not a signed estimate. [proof](../research/2026-11-09/tenacious_d_haar/PROOFS.md) |
-| #572 complete CRT parity | PROVED PAPER; exact prime-power/real winding factorization | Cannot omit old prime powers or the section. [proof](../research/2026-11-09/pi_parity_pressure/PROOFS.md) |
-| #574 two-fiber certificate | PROVED LOCAL finite algebra; sharp error and precision constants | No asymptotic contrast estimate. [proof](../research/2026-11-09/aphex_two_fiber_haar/PROOFS.md) |
-| #561 source digits | EXACT FINITE certificate: integer enclosures for a 40,960-digit prefix | A finite prefix cannot prove normality. [proof](../research/2026-11-08/lambert_entropy_forge/THEOREMS.md) |
+| Exact four-pole BBP recurrence | **Established source contract** | Original coefficients, rational clock and literal $`U_0=0`$; [source contract](PI_FRONTIER_CONTRACT.md) |
+| Geometric and BBP π identification | **Classical identity with source provenance** | Euclidean arclength and classical BBP evaluation; finite overlap of names alone is insufficient |
+| Finite L/R observer productivity | **Proved within declared hypotheses** | Correct shrinking intervals and imported irrationality; unbounded integer registers |
+| Complete Dedekind-cut reconstruction | **Proved within declared category** | Labelled rational probes; strict/closed and order/action distinctions retained |
+| Finite-height Farey exclusion | **Proved within declared domain** | Every integer $`H\ge1`$, source-selected irrational in the initial Farey bracket |
+| Symbolic zero-seed recovery | **Exact algebraic identity** | $`\mathbb Q+\mathbb Qx`$, with imported irrationality for coordinate uniqueness |
+| Certified finite Weyl/Haar observations | **Finite mathematical certificates** | Exact rational intervals, paid approximation errors and branch guards |
+| Source-selected signed cancellation | **OPEN** | All-large-epoch signed estimate for the actual source and zero seed is missing |
+| Original-zero parity balance | **OPEN** | Conditional prime balance does not bound the real complementary contrast |
+| π base-16 normality | **OPEN** | Requires the all-nonzero-mode Weyl criterion below |
+| Completed Weil positivity sufficient for RH | **OPEN** | Universal positivity on the valid completed test-function domain remains unproved; the classical criterion is retained |
+| Riemann hypothesis | **OPEN** | Independent completed prime–Archimedean program |
 
-The new analytic results are paper proofs. The four #544 Lean identities have integer-coordinate
-scope; they do not formalize signed cancellation. Current execution status belongs to the
-integration audit, not inherited research test counts.
+“Proved” here refers to the stated paper derivations or classical imports. Finite
+implementation checks and scoped Lean identities carry their own authority. No
+full compiler, signed estimate or infinite theorem becomes kernel-verified by
+passing native tests. Exact candidate receipts belong to the integration audit.
 
-## 3. Sufficient but unproved normality criteria
+## 3. Identity → computational observers
 
-For $`e(x)=\exp(2\pi i x)`$, define
-$`c_A(h)=A^{-1}\sum_{n=A}^{2A-1}e(hU_n)`$.
-Vanishing for every fixed nonzero integer $`h`$ and all integer epochs $`A\to\infty`$
-is equivalent to base-16 normality, by Weyl and the Green-tail comparison.
+Strict original-source intervals
 
-Earlier sufficient gates remain available: critical Fejér energy
-$`C^x_{A,A}=o(\log A)`$, the fixed golden-aperture energy tending to zero,
-and the joint log-stationarity/source-lattice criteria (LS) and (H2*).
-The [archived frontier](archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md)
-retains their exact hypotheses and references. None is proved for the selected zero seed.
-#561's growing-word entropy premise is stronger than normality; full-conductor empirical
-Haar is an impossible finite-window target. Do not substitute either for an easier theorem.
+```math
+P_L<x<P_L+\frac{r(L+1)}{15\,16^L}
+```
 
-## 4. One-digit parity and the complete signed complement
+define a unique real and a computable rational cut. The
+[irrational-cut formulation](../research/2026-11-10/cursed_categories_dedekind_yoneda/CUT_YONEDA_THEOREMS.md)
+uses $`F_x(q)=\{*\}`$ iff $`q<x`$ on $`\mathbb Q_{\le}^{op}`$.
+The [real restricted nerve](../research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/DEDEKIND_YONEDA.md)
+uses $`q\le x`$. They agree for irrational targets and differ at rational endpoints.
+Each specified embedding is fully faithful; equivalence is onto its stated essential
+image. Rational affine/projective action groupoids are separate categories.
+The category of rational witnesses has its labelled colimit in the real completion,
+not generally in the rational category.
 
-Use the #572 source-clock sign $`s_n=(-1)^{\lfloor U_n+T_n\rfloor}`$.
-For $`n\ge2`$ this is the parity of the $(n-1)$st fractional hexadecimal digit.
-The complete CRT ledger gives
+The [geometric observer](../research/2026-11-10/circle_line_lr_observer/README.md)
+derives rational beta and rotation sources from the Euclidean circle/line metric.
+Stern–Brocot endpoint matrices $`E=\left(\begin{smallmatrix}a&c\\b&d\end{smallmatrix}\right)`$
+have determinant -1; L/R updates multiply on the right by determinant-one shears.
+Residual charts swap the generator convention. The conic lift respects projective
+scalar classes and retains the rational metric-distortion cocycle. Geometric radians
+are distinct from Fourier arguments measured in turns.
+
+Productivity follows under imported irrationality. [Aperiodic cycle rejection](../research/2026-11-10/aperiodic_circle_observer/README.md)
+additionally imports nonquadraticity; its quantitative uniform budget imports the
+named transcendence measure. A strictly decreasing interval potential alone does
+not imply nonperiodic output, as the retained quadratic periodic control shows.
+[Height shields](../research/2026-11-10/circle_line_lr_observer/height_shield/HEIGHT_SHIELD_THEOREMS.md)
+give, for each $`H`$, a finite Farey certificate and rational $`\delta_H>0`$ satisfying
+$`|\pi-p/q|>\delta_H`$ for **all** reduced rationals with $`1\le q\le H`$.
+Coherent finite cut restrictions reconstruct the full cut mathematically; no infinite
+physical computation is asserted.
+
+The [canonical typed compiler](../research/2026-11-10/zero_anchored_lambda_haar/COMPILER.md)
+and [alternative implementation](../research/2026-11-10/zero_anchored_lambda_haar/README_ALTERNATIVE_589.md)
+preserve rational source states and capture-free finite reductions. Tail contraction
+is in source/observer depth. Statistical contraction is in temporal sample length
+and remains OPEN. Cross-front checks cover the rational restriction of the symbolic
+seed kernel; a full irrational-module-to-typed-compiler reflection theorem is
+**UNVERIFIED**. Exhausted computation returns UNKNOWN/UNRESOLVED.
+
+## 4. The canonical signed target and the Basel bridge
+
+Let $`e(t)=\exp(2\pi i t)`$, with $`t`$ measured in turns, and $`Y_n=16^nx`$.
+
+```math
+W_{N,h}=\frac1N\sum_{n=0}^{N-1}e(hY_n),
+\qquad \forall h\in\mathbb Z\setminus\{0\}:\quad W_{N,h}\longrightarrow0.
+```
+
+This all-mode criterion is equivalent to π base-16 normality. The
+[Basel–Tauberian theorem](../research/2026-11-10/basel_crt_omega_phasebridge/SIGNED_BASEL_TAUBERIAN.md)
+provides an exact equivalent gate. Define, for integers $`A\ge1`$,
+
+```math
+F_h(A;0)=\sum_{n=A}^{\infty}\frac{e(hY_n)}{n^2},\qquad
+\omega_A=\sum_{n=A}^{2A-1}n^{-2},\qquad
+B_A(h)=\frac{F_h(A;0)-F_h(2A;0)}{\omega_A}.
+```
+
+For bounded phases, signed summation by parts gives
+
+```math
+\frac1A\sum_{n=A}^{2A-1}e(hY_n)\to0
+\quad\Longleftrightarrow\quad A F_h(A;0)\to0
+\quad\Longleftrightarrow\quad B_A(h)\to0.
+```
+
+The original chronological two-/three-block Ω-Haar commutators supply an exact
+six-frame directed-trace realization of $`F_h`$ for $`A\ge11`$, retaining the real
+phase and Archimedean weight $`n^{-2}`$. Unphased Basel energy only gives
+$`|F_h(A;0)|=O(1/A)`$. The needed **signed** saving is $`o(1/A)`$ for every fixed
+nonzero mode. The [handoff](MAIN_XXIV_HANDOFF.md) states its quantifiers and a
+weighted correlation lemma worth attacking.
+
+The [zero-seed microscope](../research/2026-11-10/zero_seed_microscope/MICROSCOPE_THEOREMS.md)
+separately measures energy over seed cylinders. Coarse depth $`K=o(N)`$ decays for
+any source, even a nonnormal control. At $`K=N-o(N)`$, its energy criterion recovers
+the pointwise Weyl obligation. The fixed-depth signed fingerprint is established;
+its deep cumulative signed estimate is OPEN.
+
+## 5. Sixteen-child Haar and the signed chronological CDF overlap
+
+Put $`z_n=\{Y_n\}`$, $`\mu_N=N^{-1}\sum_{n<N}\delta_{z_n}`$ and
+
+```math
+T(z)=\{16z\},\qquad B_a(y)=\frac{a+y}{16},\qquad
+C\nu=\frac1{16}\sum_{a=0}^{15}(B_a)_*\nu,\qquad Q\nu=C T_*\nu.
+```
+
+Here $`Q`$ replaces the leading digit uniformly **while retaining the full future
+phase**. All sixteen children are required. It is also the average of the sixteen
+translations by $`a/16`$ modulo one. $`C`$ contracts ordinary interval Wasserstein
+distance by $`1/16`$; $`Q`$ is idempotent and is not a strict contraction.
+Binary conditional Haar, prime-local Haar and seed-cylinder Haar are distinct tools.
+
+With ordinary interval cost $`|u-v|`$ on $`[0,1]`$, set
+$`H_\nu(t)=F_\nu(t)-F_{Q\nu}(t)`$ and $`D(\nu)=\int_0^1|H_\nu(t)|\,dt`$.
+For adjacent temporal blocks of length $`M`$, use $`\mu^-_M`$ on clocks $`0\le n<M`$
+and $`\mu^+_M`$ on $`M\le n<2M`$, and write $`H_\pm=H_{\mu^\pm_M}`$.
+The [exact signed identity](../research/2026-11-10/zero_anchored_lambda_haar/CONSTRUCTION.md) is
+
+```math
+\Omega_M=\int_0^1\min(|H_-(t)|,|H_+(t)|)
+\mathbf1_{H_-(t)H_+(t)<0}\,dt,\qquad
+D_{2M}=\frac{D(\mu^-_M)+D(\mu^+_M)}2-\Omega_M.
+```
+
+This is a decomposition, not a proved all-$`M`$ overlap gain. A sufficient route would
+control both the late-block defect and overlap with independently bounded vanishing
+errors. Odd lengths require the weighted version: $`p=L/N`$, $`q=(N-L)/N`$,
+$`L=\lfloor N/2\rfloor`$, and
+$`D_N=pD_-+qD_+-2\int\min(p|H_-|,q|H_+|)\mathbf1_{H_-H_+<0}`$.
+Dyadic observations alone do not pay all integer lengths.
+
+For consecutive orbit laws, the proved endpoint-corrected reconstruction gives
+
+```math
+W_1(\mu_N,\lambda)\le\frac{16}{15}D_N+
+\frac{|z_N-z_0|}{15N}.
+```
+
+The [finite backend](../research/2026-11-10/zero_anchored_lambda_haar/BACKEND_PROOFS.md)
+certifies each phase inside one hexadecimal cell. At grid denominator $`q=16^k`$,
+its absolute defect error is at most $`2/q`$ and overlap error at most $`4/q`$.
+The [identity kernel](../research/2026-11-10/circle_line_lr_observer/zero_anchor_identity/THEOREMS.md)
+also supplies rational-midpoint bounds: if each phase interval stays in one digit
+chart with midpoint error $`\epsilon_n`$, then
+$`|D_N-\widehat D_N|\le2N^{-1}\sum\epsilon_n`$; combine the two half-block and
+whole-block errors through the displayed overlap identity. Global interval-Lipschitz
+translation across a branch seam is false. Neither backend silently changes to the
+circle geodesic metric. Finite exact overlap, improved precision and source-tail
+contraction provide no asymptotic signed saving.
+
+## 6. Parity, prime marginals and joining obstructions
+
+Preserve the #572 source-clock sign
+$`s_n=(-1)^{\lfloor U_n+T_n\rfloor}`$. For $`n\ge2`$ this is the parity of the
+$`(n-1)`$st fractional hexadecimal digit. Its full CRT factorization is
 
 ```math
 s_n=(-1)^{n+\sum_m k_{m,n}+\ell_n+\varepsilon_n}=a_nb_n,
 \qquad a_n=(-1)^{k_{p_A,n}}.
 ```
 
-Here $`m`$ ranges over the full prime-power coordinates, $`k_{m,n}`$ are their
-normalized CRT numerators, $`\ell_n`$ is the global CRT winding, and
-$`\varepsilon_n`$ pays the real future-tail digit boundary. The complementary sign
-$`b_n`$ retains the parity clock, all other prime powers, winding and tail.
-The selected simple-pole prime is balanced at $`p_A\sim12A/5`$.
+The complement $`b_n`$ retains all other prime powers, global winding, the clock and
+the real-tail boundary. In contrast, $`f(t)=(-1)^{\lfloor16\{t\}\rfloor}`$ satisfies
+$`f(U_n+T_n)=s_{n+1}`$. The corresponding epoch means differ by
+$`(s_{2A}-s_A)/A`$, at most $`2/A`$. Discrete digit parity is the digit-group
+$`h=8`$ character, not the single smooth real character $`e(8t)`$.
 
-The circle observable $`f(t)=(-1)^{\lfloor16\{t\}\rfloor}`$ instead satisfies
-$`f(U_n+T_n)=s_{n+1}`$. Its epoch mean differs from the source-clock mean by
-$`(s_{2A}-s_A)/A`$, of magnitude at most $`2/A`$. Their limiting balance targets
-agree; their finite tables require this explicit endpoint correction. This
-repairs the earlier entrypoint's missing one-step index shift; PPP-02 already
-stated the source-clock convention correctly.
-
-**Digit parity is the h=8 character of the discrete digit group.** It is a step function
-of a real phase, not the single real-circle character $`e(8x)`$.
-Its real Fourier expansion has infinitely many frequencies; at jumps the symmetric series
-converges to the midpoint. Irrational completed π phases avoid those rational jump points.
-
-## 5. Two-fiber Haar / Aphex calibration
-
-For the uniform epoch average, with both source-sign fibers nonempty, put
-$`m_A=\mathbb E_A[a]`$, $`u_\pm(A)=\mathbb E_A[b\mid a=\pm1]`$ and
-$`t_A=(u_++u_-)/2`$. Then the fitted coefficient is exactly
+With both prime-sign fibers populated, the
+[two-fiber identity](../research/2026-11-09/aphex_two_fiber_haar/PROOFS.md) is
 
 ```math
-\beta_A^*=\frac{u_+(A)-u_-(A)}2
-=\frac{\mathrm{Cov}_A(a,b)}{1-m_A^2},\qquad
-P_A:=\mathbb E_A[s]=\beta_A^*+m_At_A.
+\beta_A^*=\frac{u_+(A)-u_-(A)}2,\qquad
+\mathbb E_A[s]=\beta_A^*+m_At_A,\qquad
+|\mathbb E_A[s]-\beta_A^*|\le|m_A|.
 ```
 
-Consequently $`|P_A-\beta_A^*|\le|m_A|`$ with sharp constant 1.
-At fixed exact prime labels, mean absolute complement error $`\epsilon`$ changes the
-detail by at most $`\epsilon/(1-|m_A|)`$, also sharply.
-[#573](../research/2026-11-09/aphex_haar_feedback/PROOFS.md) and
-[#574](../research/2026-11-09/aphex_two_fiber_haar/PROOFS.md) prove the calibration;
-fitting uses observed real-complement data and is retrospective.
+Here $`u_\pm=\mathbb E_A[b\mid a=\pm1]`$, $`m_A=\mathbb E_A[a]`$ and
+$`t_A=(u_++u_-)/2`$. The balanced-prime estimate remains conditional on its stated
+PNT/AP, exponential-sum and completion hypotheses; the fixed-Gram statement requires
+$`p\nmid h`$. It pays the prime marginal, not $`u_+-u_-\to0`$.
+The [odd-eight route](../research/2026-11-09/cayley_source_observer/BOUNDARY_PROOFS.md)
+plus its boundary payments is sufficient for fair parity words and is weaker than
+full normality. Its source-selected premise remains OPEN.
 
-The inherited #554 all-nonzero-frequency estimate $`\mathcal E_A`$ gives, conditionally,
+The [3/2 ratio fiber](../research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/RATIO_FIBER_TORUS.md)
+retains exact prime ratios and complete real winding. The
+[2→3 joining dossier](../research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings/README.md)
+constructs individually normal/Haar marginals with locked, nonproduct joint laws,
+and a nonproduct joining with a selected mixed coefficient zero. Neither two Haar
+marginals nor one vanishing mixed mode implies independence. A bound on this distinct
+mixed fiber alone would not imply ordinary Weyl decay.
 
-```math
-|m_A|\le p_A^{-1}+(2+\log p_A)\mathcal E_A=o(1).
-```
+## 7. Hostile controls a proof must survive
 
-Retain every hypothesis and the uniformity needed for this Fourier-l1 transfer.
-**This pays the prime marginal, not the Archimedean conditional contrast.**
-Conditional on that imported estimate, parity balance is equivalent to
-$`\beta_A^*\to0`$. The latter is OPEN. Binary conditional Haar is distinct from #565's
-full sixteen-child future-conditioned projector and from local prime Haar.
-
-## 6. Complete-source wrong-seed controls
-
-The irrational mathematical seed $`s_*=-\pi/16`$ gives the coherent completed orbit zero;
-it preserves forcing but does not define rational p-adic coordinates. #572 supplies the
-separate mandatory **rational p-integral, odd-denominator, epoch-dependent** control
-$`s_A`$: source-only rational prefix construction, unchanged forcing, identical selected
-p-primary history and parity clock, all real digits zero over the certified epoch.
-For its populated fibers, $`b=a`$, $`u_+=1`$, $`u_-=-1`$, contrast 2,
-$`\beta^*=1`$, $`P=1`$ and minimum Aphex fitting loss zero.
-
-Any seed-blind descent, forcing-only Gamma invariant, local-prime marginal argument or
-low-loss criterion must confront this control. It does not refute a genuinely zero-seed
-selective theorem. [Exact construction PPP-08](../research/2026-11-09/pi_parity_pressure/PROOFS.md).
-
-## 7. Positive pressure and failed shortcuts
-
-| Shortcut | Falsifying receipt / boundary |
+| Control | What it rules out |
 |---|---|
-| Local prime Haar implies real Haar | PPP-07: even global CRT representatives have biased parity with arbitrarily uniform fixed local marginals |
-| Perfect learning implies normality | PPP-08 / TFH-03: coherent same-forcing control, zero loss, parity 1 |
-| Fine-scale collision growth is anti-normality | Universal $`N`$-sample floor $`E_k\ge16^k/N-1`$; #571/#572 separate floor from excess collisions |
-| Pair eigenvalues determine Haar | #567 nilpotent doubly stochastic perturbation: Haar eigenvalues, nonzero pair defect |
-| Gamma detects a defect, so it contracts it | #569 coercivity only compares two defects; source-only finite parts survive wrong seeds |
-| Spatial 2-adic Haar implies real temporal Haar | #566 preserves spatial Haar with a non-Haar temporal word law |
-| More representation accuracy proves decay | #544 and #549 compare signed statistics without bounding their common value |
+| Coherent same-forcing $`s=-x`$ | Source-blind decay: completed phase is zero, $`A F_h(A;s)\to1`$, $`D_N=15/32`$, $`\Omega_M=0`$ |
+| Rational shift $`1/16`$ | Later phases do not authenticate a seed; reject it through $`Z_n`$ |
+| Epoch-dependent p-integral PPP-08 | Identical selected prime history can have $`b=a`$, contrast 2, parity 1 and zero fitted loss |
+| Factorial-sparse computable irrational | Productivity, Farey separation and complete cut identity coexist with nonnormal digits |
+| Rational periodic orbits | Exact source-style computations and Fourier transport can preserve a non-Haar law |
+| Positive additional-pole and matched-moment mutants | Finite samples, positive moments and bounded fixed points do not identify the original four-pole source |
+| Correct local prime marginals, incorrect full winding | Prime Haar does not determine the real/CRT complement |
+| Normal locked 2→3 orbits; nonproduct mixed-zero joining | Marginal uniformity and one mixed mode do not identify joint laws |
+| False universal Haar contraction | Retained quantization/discrepancy controls forbid the claimed too-small remainder |
+| Hexadecimal branch seams and omitted carries | Interval transport needs a common chart and complete integer lift |
 
-The [historical frontier](archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md) preserves
-additional carry, Galois, seed-ensemble, collision and refinement countermodels.
-The [typed Gamma table](MAIN_XXII_GAMMA_OBSERVABLES.md) prevents identification of distinct
-Mellin, q-Gamma, Euler–Mascheroni and 16×16 matrix objects.
+The [Main XXIII archive](archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md)
+retains the earlier collision floors, Fejér, Galois, prime-clock, Gamma and carry
+criteria with their exact references. Those tools remain available under their
+original hypotheses. The [Gaussian-circle/primitive-character front](../research/2026-11-10/gaussian_circle_long_lag/README.md) supplies a
+separate conditional anticlustering route; no source-attested long-lag saving is
+silently imported from a geometric model.
 
-## 8. Next source-selected theorem
+## 8. Completed Weil remains a separate open program
 
-For every fixed odd integer $`k`$, show that the literal zero-seed orbit satisfies
+The [completed prime–Archimedean packet](../research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/WEIL_PACKET_PROOFS.md)
+keeps genuine prime powers, the involution $`f^\sharp(x)=x^{-1}f(1/x)`$, valid smooth
+test domains and Gamma/pole terms. Ordinary positive Hilbert overlap and the signed
+completed Weil quadratic form are different objects. Positivity, even when supplied
+conditionally by RH, gives no source-selected off-diagonal overlap decay.
+Fake composite and matched non-Euler controls remain mandatory; no nontrivial zero
+positions are construction inputs. **Universal completed Weil positivity and RH
+remain OPEN.** See the [RH handoff](RH_HANDOFF.md),
+[typed Gamma table](MAIN_XXII_GAMMA_OBSERVABLES.md), and
+[Main XXIII tool atlas](MAIN_XXIII_TOOL_ATLAS.md).
 
-```math
-\frac{1}{A}\sum_{n=A}^{2A-1} e(8k\,16^{n-1}\pi)\longrightarrow 0
-\qquad (A\to\infty,\; A\in\mathbb N).
-```
-
-Put $`y_n=\{8\cdot16^{n-1}\pi\}`$. The limit gives half-turn symmetry
-of each stationary subsequential law of $`y_n`$. This symmetry excludes
-atoms on radix cuts, then flips the first parity while preserving the
-complete future. Thus every fixed length-$`d`$ parity word has limiting
-epoch frequency $`2^{-d}`$. The
-[proof and finite Fejér boundary payment](../research/2026-11-10/main_xxiii/PARITY_BOUNDARY.md)
-give the boundary step and explicit constants.
-
-This route also has a narrower independent goal. Under the #554 prime marginal
-estimate, decay of the two-fiber contrast in §5 gives one-digit parity balance.
-Neither route has its source-selected signed estimate. Any proof must fail
-on PPP-08 and the coherent seed $`-\pi/16`$. Finite-moment and low-residue
-tests alone also admit [positive zero-seed dyadic mutants](../research/2026-11-10/main_xxiii/MELLIN_AUTHENTICATION.md).
-The four-pole support and endpoint cancellation, together with three
-exact Mellin values, exclude those mutants.
-
-## 9. Causal-weld audit and Cayley source-observer follow-up
-
-The [follow-up dossier](../research/2026-11-09/cayley_source_observer/README.md)
-is based on causal-weld PR #576 at `afabc458323ef2e3a20ce2bae77239c4190819c5`.
-Its [errata](../research/2026-11-09/cayley_source_observer/ERRATA.md) withdraw
-capture-unsafe lambda reduction, invented omega redex addresses, finite-prefix
-cofinality certification, a purported arithmetic embedding that substituted time
-iteration for dilation, and unsupported sharp/uniform estimates. The revised
-implementations and hostile regressions have deliberately restricted contracts;
-full faithful C-monoid/source compilation remains **UNVERIFIED**.
-
-A constructive intermediate result is now available: the
-[faithful affine source-clock action](../research/2026-11-09/cayley_source_observer/AFFINE_SOURCE_ACTION.md)
-on indexed rational states. Its successor is the authentic BBP step, and
-its clock dilation sends n to pn while preserving the complete source seed
-fiber. It satisfies the affine relation with exact source-functor naturality.
-All forcing sequences admit analogous abstract conjugacies, so the source
-and Archimedean observer must remain attached; the action laws imply no
-selected signed cancellation.
-
-The [Cayley proofs](../research/2026-11-09/cayley_source_observer/CAYLEY_PROOFS.md)
-transport continuous circle observables to the real projective line, including
-infinity. The normalized reciprocal-pi density is the classical Cauchy measure
-$`dx/[\pi(1+x^2)]`$, not a source-selected cancellation law. For a source horizon
-$`L\to\infty`$, time bound $`N\le L`$ and whole frequency band $`|h|\le H`$,
-uniform finite-to-completed transport holds exactly when
-$`H16^{N-L}/L^2\to0`$. Averaging the epoch $`A\le n<2A`$ at a **common** horizon
-$`L=2A`$ is more forgiving: a clipped geometric bound tends to zero whenever
-$`\log(1+H_A)=o(A)`$. The finite signed mean itself still needs an estimate.
-
-The [boundary proofs](../research/2026-11-09/cayley_source_observer/BOUNDARY_PROOFS.md)
-pay source precision, Fejer truncation, arithmetic evaluation and digit-boundary
-mass separately. They also isolate a sufficient **binary future fairness** gate:
-
-```math
-\forall k\in2\mathbb Z+1,\qquad
-\frac1A\sum_{n=A}^{2A-1}e\!\left(8k(U_n+T_n)\right)\longrightarrow0.
-```
-
-For consecutive orbit laws, their stationary weak limits then have half-turn
-symmetry after folding by eight. This forces vanishing shrinking-boundary mass
-and fair frequencies for every fixed parity word. It is strictly weaker than
-hexadecimal normality: the invariant law with independent fair digits 0 and 1
-satisfies the gate and is not Haar. It is stronger than fair parity words alone;
-a dependent digit countermodel proves the distinction. This is a **conditional
-paper theorem**, and the displayed hypothesis is **OPEN for the original zero
-seed**. It is another sufficient route, not a necessary condition for one-digit
-parity balance or a replacement for the less demanding contrast target in §5.
-
-The new real half-turn contrast and the prime-conditioned complement in §5 are
-different objects. Their [source map and next obligation](../research/2026-11-09/cayley_source_observer/NEXT.md)
-retain that distinction and the coherent wrong-seed controls. The exact finite
-certificates validate the observer and its budgets; they supply no asymptotic
-signed saving.
-
-## 10. Source-first clocks and reversible readout
-
-The [inverse-beta BBP root](../research/2026-11-10/omega_bbp_operational_completion/INVERSE_BETA_BBP_ROOT.md)
-folds the actual four-pole source, selects the bounded arithmetic solution,
-and intertwines it with a continuous Mellin fixed point. The finite moment
-observer is non-identifying in the unrestricted positive source class.
-The [six-step diamond](../research/2026-11-10/omega_bbp_operational_completion/OMEGA_HAAR_WAVELET.md)
-identifies two exact chronological groupings. Inserting lossy two- and
-three-cell averages creates the noncommuting Haar projections and their
-rank-two oscillator. The inverse-fiber parity character lives in the
-Möbius line bundle. These operations leave the signed zero-seed bound open.
-
-The [quantum dagger model](../research/2026-11-10/omega_bbp_operational_completion/quantum_bridge/README.md)
-supplies finite unitary and phase precision results. A separate
-[reversible BBP circuit](../research/2026-11-10/main_xxiii/REVERSIBLE_BBP_ORACLE.md)
-implements exact finite classical-basis arithmetic, with explicit register
-widths, gate counts and inverse checks. A typed source-to-lambda compiler
-and a scalable quantum phase implementation remain unverified.
-
-## 11. Independent RH program
-
-The [intrinsic arithmetic Hamiltonians](../research/2026-11-10/omega_bbp_operational_completion/intrinsic_carrier/PROOFS.md)
-give self-adjoint star blocks on the positive-integer carrier. The
-[prime field endpoint audit](../research/2026-11-10/main_xxiii/HAMILTONIAN_ENDPOINT.md)
-addresses operator domains. The Gibbs generator $`H_0\lvert n\rangle=\log(n)\lvert n\rangle`$
-is a different operator. The signed completed Weil identification is open.
-
-[#550](../research/2026-11-08/xi_cayley_prime_pinbed/PROOFS.md) retains the genuine
-Euler/Gamma source, horodisk of convergence and conditional Jensen certificate.
-[#553](../research/2026-11-08/theta_extruded_interference/PROOFS.md) retains completed
-theta/Gamma moment identities and the unresolved signed Li/Weil positivity seam.
-Finite Schur positivity, positive Fourier kernels and Pascal moment inequalities do not
-prove completed Weil positivity. Positive Pascal fake sources can have off-critical roots.
-No nontrivial zero locations are construction inputs. **RH remains OPEN** and is not a
-step in the π proof chain. See [RH handoff](RH_HANDOFF.md).
-
-[Research history and primary dossiers](RESEARCH_HISTORY.md) ·
-[Main XXI audit](SUCC_MAIN_XXI_INTEGRATION_AUDIT_2026-11-07.md) ·
-[Main XXII audit](SUCC_MAIN_XXII_INTEGRATION_AUDIT_2026-11-09.md)
+Resume with the [Main XXIV handoff](MAIN_XXIV_HANDOFF.md): prove a genuinely
+source-derived signed bound with all integer-epoch and all-mode quantifiers.
