@@ -15,6 +15,7 @@ countermodels, executable rational probes, and an explicit statistical boundary.
 | [COMPUTATION_GRAPH.md](round_iii_dedekind/COMPUTATION_GRAPH.md) | Integer Pell and Stern–Brocot machines; authentic BBP interval bounds; certified digits and Fourier observers; discontinuity controls. |
 | [RATIONAL_ARITHMETIC_COMPILER.md](round_iii_dedekind/RATIONAL_ARITHMETIC_COMPILER.md) | Cut convolution; rational quadratic matrices; Q(pi) as Q(t); natural-number arrow codes; finite-power functor families; enriched Isbell completion. |
 | [Circle/line observer — Round IV](../circle_line_lr_observer/README.md) | Geometry-derived matrix and rational-rotation sources; productive L/R program; conic equivalence, metric cocycle, and explicit Fourier precision schedule. |
+| [Productive aperiodic observer — Round V](../aperiodic_circle_observer/README.md) | All-time nonreturn; prospective cycle-escape certificates; explicit uniform bounds; maximal natural-number runs; rational cut probes. |
 | [CLAIM_LEDGER.md](CLAIM_LEDGER.md) | Scoped proof, finite-check, refutation, and open-obligation labels. |
 | [SOURCES.md](SOURCES.md) | Pinned repository context and checked primary mathematical sources. |
 | [VALIDATION.md](VALIDATION.md) | Exact validation scope and publication checkpoints. |

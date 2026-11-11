@@ -1,0 +1,199 @@
+{
+  "baseline_matched_output_count": 24051,
+  "exact_polynomial_range_controls": 4,
+  "expectation_method": "Independent integer tuple matrices, exact rational ranges, linear cylinder scan",
+  "extra_source_refinements": 8,
+  "failure_correction_history": [
+    {
+      "corrected_bc_minus_ad": 1,
+      "corrected_chart": [
+        688,
+        219,
+        355,
+        113
+      ],
+      "failure": "Fourth synthetic chart was reversed; Bracket correctly raised ValueError",
+      "invalid_bc_minus_ad": -1,
+      "invalid_chart": [
+        355,
+        113,
+        688,
+        219
+      ],
+      "phase": "Initial exploratory combined invocation, after eight period cases and baseline match",
+      "result": "Corrected synthetic suite passed; no production-code change"
+    }
+  ],
+  "invalid_farey_fixture_rejected": true,
+  "invalid_request_controls": 3,
+  "matrix_cases": [
+    {
+      "actual_first_mismatch_index": 6,
+      "actual_period_witness_start": 2,
+      "candidate": "LLLL",
+      "fresh_when_declared": false,
+      "last_output_index_to_read": 7,
+      "minimal_escape_blocks": 2,
+      "period": 4,
+      "polynomial_degree": 1,
+      "preparation_output_length": 4,
+      "source_stage": 10,
+      "start": 0
+    },
+    {
+      "actual_first_mismatch_index": 314,
+      "actual_period_witness_start": 309,
+      "candidate": "RRRRR",
+      "fresh_when_declared": false,
+      "last_output_index_to_read": 319,
+      "minimal_escape_blocks": 59,
+      "period": 5,
+      "polynomial_degree": 1,
+      "preparation_output_length": 30,
+      "source_stage": 25,
+      "start": 25
+    },
+    {
+      "actual_first_mismatch_index": 318,
+      "actual_period_witness_start": 316,
+      "candidate": "RL",
+      "fresh_when_declared": false,
+      "last_output_index_to_read": 320,
+      "minimal_escape_blocks": 3,
+      "period": 2,
+      "polynomial_degree": 2,
+      "preparation_output_length": 317,
+      "source_stage": 42,
+      "start": 315
+    },
+    {
+      "actual_first_mismatch_index": 330,
+      "actual_period_witness_start": 323,
+      "candidate": "RRRLRRR",
+      "fresh_when_declared": false,
+      "last_output_index_to_read": 333,
+      "minimal_escape_blocks": 2,
+      "period": 7,
+      "polynomial_degree": 2,
+      "preparation_output_length": 327,
+      "source_stage": 51,
+      "start": 320
+    },
+    {
+      "actual_first_mismatch_index": 2693,
+      "actual_period_witness_start": 2692,
+      "candidate": "L",
+      "fresh_when_declared": true,
+      "last_output_index_to_read": 2694,
+      "minimal_escape_blocks": 386,
+      "period": 1,
+      "polynomial_degree": 1,
+      "preparation_output_length": 2310,
+      "source_stage": 1036,
+      "start": 2309
+    },
+    {
+      "actual_first_mismatch_index": 2693,
+      "actual_period_witness_start": 2686,
+      "candidate": "LLLLLLL",
+      "fresh_when_declared": true,
+      "last_output_index_to_read": 2699,
+      "minimal_escape_blocks": 47,
+      "period": 7,
+      "polynomial_degree": 1,
+      "preparation_output_length": 2378,
+      "source_stage": 1036,
+      "start": 2371
+    },
+    {
+      "actual_first_mismatch_index": 3020,
+      "actual_period_witness_start": 3001,
+      "candidate": "LRRLRLRRRLRLRRLRLRL",
+      "fresh_when_declared": true,
+      "last_output_index_to_read": 3038,
+      "minimal_escape_blocks": 2,
+      "period": 19,
+      "polynomial_degree": 2,
+      "preparation_output_length": 3020,
+      "source_stage": 1295,
+      "start": 3001
+    },
+    {
+      "actual_first_mismatch_index": 24050,
+      "actual_period_witness_start": 24019,
+      "candidate": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+      "fresh_when_declared": true,
+      "last_output_index_to_read": 24121,
+      "minimal_escape_blocks": 649,
+      "period": 31,
+      "polynomial_degree": 1,
+      "preparation_output_length": 4034,
+      "source_stage": 1451,
+      "start": 4003
+    }
+  ],
+  "module_sha256": "07126c2f5ea63f7b40ea58a4d735f374abe19a4dc15952a9b2b0488d6e9fde72",
+  "preparation_output_guard": "Exactly N+p arrows; any further next_arrow call raises",
+  "probe_sha256": "a6435080bcb579666f295f405e47ab38b546a712bd328fe4ea8abe5d482b5d8f",
+  "rotation_cases": [
+    {
+      "actual_first_mismatch_index": 6,
+      "actual_period_witness_start": 2,
+      "last_output_index_to_read": 7,
+      "minimal_escape_blocks": 2,
+      "period": 4,
+      "source_stage": 10,
+      "start": 0
+    },
+    {
+      "actual_first_mismatch_index": 318,
+      "actual_period_witness_start": 316,
+      "last_output_index_to_read": 320,
+      "minimal_escape_blocks": 3,
+      "period": 2,
+      "source_stage": 17,
+      "start": 315
+    }
+  ],
+  "schema": "succ.independent-cycle-audit.v1",
+  "scope": [
+    "Four fresh cases were fixed before their words were observed in this bearing.",
+    "Each preparation had its own source and output guard; all plans were fixed before rejection calls.",
+    "The two fresh starts 2309 and 2371 unexpectedly share the run ending at 2693.",
+    "This finite audit is corroboration of the proof interface, not a proof of universal aperiodicity.",
+    "Baseline and staged observer share the circle source; they are separate emission implementations."
+  ],
+  "status": "PASS",
+  "strict_equality_deadline_cases": 120,
+  "synthetic_algebra_cases": 1016,
+  "synthetic_charts": [
+    [
+      3,
+      1,
+      4,
+      1
+    ],
+    [
+      17,
+      5,
+      24,
+      7
+    ],
+    [
+      333,
+      106,
+      355,
+      113
+    ],
+    [
+      688,
+      219,
+      355,
+      113
+    ]
+  ],
+  "synthetic_word_lengths": [
+    1,
+    7
+  ]
+}

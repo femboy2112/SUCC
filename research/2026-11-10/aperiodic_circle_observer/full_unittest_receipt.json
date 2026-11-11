@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "base_commit": "4e311d03e3ac9c3dbcbdc32477cd113f2ac0743b",
+  "scope": "Frozen pre-round checkout; package already installed; new work staged outside checkout",
+  "started_unix": 1794370655.0108757,
+  "state": "FINISHED",
+  "exit_code": 0,
+  "elapsed_seconds": 1045.902,
+  "unittest_count": 12806,
+  "unittest_seconds": 1040.104
+}

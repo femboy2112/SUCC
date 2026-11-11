@@ -19,6 +19,13 @@ geometric input suffices to approximate the existing expanding Fourier
 observer. It supplies comparison accuracy; the selected signed cancellation
 problem remains open.
 
+## Productive execution follow-up
+
+[Round V](../aperiodic_circle_observer/README.md) proves semantic and normalized
+state nonreturn, constructs finite deadlines against every proposed repeating
+tail, computes whole L/R run lengths, and distinguishes normalized states by
+finite rational cut probes. The existing geometric source below is retained.
+
 ## Run the observer
 
 From this directory:
