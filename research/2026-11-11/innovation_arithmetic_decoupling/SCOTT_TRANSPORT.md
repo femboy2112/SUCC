@@ -52,7 +52,8 @@ Let `A, Γ` be finite alphabets. A *sliding-block code* is `Φ(u)_n = φ(u_n, �
 fixed `φ : A^m → Γ`. Say `v` is a *density-zero edit* of `v'` if `#{n < N : v_n ≠ v'_n} = o(N)`.
 A **tame channel** `u ↦ v` is one for which `v` is a density-zero edit of `Φ(u)`.
 
-**Lemma.** (i) If `v` is a density-zero edit of `v'`, then for every word `w` of length `k`,
+**Lemma.** (`occ_N(w; v)` counts the starting positions `n < N` at which `w` occurs in `v`.)
+(i) If `v` is a density-zero edit of `v'`, then for every word `w` of length `k`,
 `|occ_N(w; v) - occ_N(w; v')| ≤ k·#{n < N+k : v_n ≠ v'_n} = o(N)`. (ii) If `u` is generic for a
 shift-invariant measure `μ` (all block frequencies converge to `μ`), then every tame image `v` is
 generic for `Φ_* μ`. (iii) Tame channels compose. In particular a **density-zero edit** (`Φ` the
@@ -66,7 +67,7 @@ edit is a density-zero edit of the sliding-block image (window `m` multiplies th
 most `m`). ∎
 
 Tame channels are Scott-continuous when the edit positions are decided by finite look-ahead (as in
-SWT-03). Scott continuity alone is **not** enough: the constant map and the digit-doubling map
+SWT-03). Scott continuity alone is **not** enough: the constant map to `0^ω` and the digit-doubling map
 `u_0u_0u_1u_1…` are Scott-continuous and destroy normality. Nor is tameness with a tame inverse
 enough across alphabets: `v_n = 2u_n + u_(n+1)` on binary `u` is invertible by a block code, yet the
 block `(1,0)` never occurs in `v`. (Both examples corrected after audit: decimation along an
@@ -115,7 +116,11 @@ are vacuous or immediate there. (1) `Y_n = C_n + {U_n} + T_n` and `0 < T_n < 1`.
 `d_n = 0` and (2) gives `ε_(n+1) = 0`. If `κ_(n+1) = 15` and `ε_(n+1) = 1`, (2) gives
 `d_n = 16 - 16ε_n ≤ 15`, forcing `ε_n = 1`. (5) By (3) a run of `ε = 1` reads `15, 15, …` in `κ`
 until a 16 ends it, and by (4) the pattern conversely forces the run backwards. A run cannot be
-infinite: `ε_n = 1` for all `n ≥ n_0` would give `d_n = 0` for all `n ≥ n_0`, so `x ∈ Q`. ∎
+infinite: `ε_n = 1` for all `n ≥ n_0` would give `d_n = 0` for all `n ≥ n_0`, so `x ∈ Q`. Nor can
+the carries be 15 forever with `ε = 0`: if `κ_m = 15` for all `m > n_0` and `ε_m = 0` for one such
+`m`, then (4) gives `ε_(m') = 0` for all `m' ≥ m`, and (2) gives `d_(m') = 15` for all `m' ≥ m`, so
+again `x ∈ Q`. Hence the look-ahead that decides `ε_n` is finite in both cases (added after the
+second audit). ∎
 
 Controls. The coherent seed `s = -x` has `U_n(s) = -T_n`, `C_n = -1`, `κ ≡ 15`, `ε ≡ 1`: an
 infinite seam run, legal because its completed point `x + s = 0` is rational. The finiteness
@@ -136,6 +141,12 @@ unconditionally**: it says that the positions followed by `≈ 2 log_16 n` zeros
 the hexadecimal expansion of π. Heuristically `Σ_n T_n < ∞` predicts only finitely many seam
 events; none occurs for `n ≤ 1300` (OBSERVED FINITE, see PROBES). **OPEN**, strictly weaker than
 normality.
+
+*Continuation (ZSC of [CARRY_FLUX](CARRY_FLUX.md)).* The letter 16 has density zero in `κ`
+**unconditionally** and for every seed (ZSC-03: each 16 is followed by `≥ ⌊log_4 2n⌋` zeros), and
+`ρ(N) ≤ H_N ≤ ρ(N) + 1 + b_N` with `H_N` the displayed source-side bound. The density statement
+`ρ(N) = o(N)` itself stays OPEN; it is independent of the wall and of every fixed saving for
+seeded carriers (ZSC-05), and only `N - ρ(N) ≫ log N` is known (ZSC-04).
 
 ## SWT-04 — normality is transported across the finite/analytic weld (PROVED LOCAL)
 

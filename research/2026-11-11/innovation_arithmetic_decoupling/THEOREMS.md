@@ -88,7 +88,7 @@ exists; IAD-02 shows that none can be obtained merely by choosing the schedule.
 
 ## IAD-02 — schedule-freeness: every Fejér schedule is the same normality restatement (PROVED LOCAL; the converse direction imports the repository's Basel–Tauberian bound and Weyl's criterion)
 
-**Lemma (window-energy monotonicity).** For any complex sequence `v` of finite support and all
+**Lemma (window-energy monotonicity).** For any complex sequence `v ≢ 0` of finite support and all
 integers `1 ≤ J ≤ L`:
 
 ```text
@@ -120,25 +120,29 @@ combination of weighted lag sums at the fixed nonzero modes `h(16^ℓ-1)`, `ℓ 
 `Σ_(B≤n<N') e(h(16^ℓ-1)Y_n) = o(B)` uniformly in `B ≤ N' ≤ 2B`; Abel summation gives
 `R_(B,J,h) → 0`. Hence `limsup_B γ_(L(B)) ≤ 1/J` for every `J`, so `γ_(L(B)) → 0` and
 `R = σ_B(γ - 1/L) → 0` (using `1 ≤ σ_B ≤ 2`). The converse direction is (1.2) plus the existing
-Basel–Tauberian and Weyl equivalences (imports). ∎
+Basel–Tauberian and Weyl equivalences and the classical equivalence of base-16 normality of `x`
+with uniform distribution of `16^n x` (Wall) — all imports. ∎
 
 *Per single mode this is a chain, not an equivalence:* decay of the Weyl sums at the modes
-`h(16^ℓ-1)`, `ℓ ≥ 1`, gives `R_(B,L(B),h) → 0` for every schedule, which gives `B_B(h) → 0`. The
-equivalence with normality is for all modes together.
+`h(16^ℓ-1)`, `ℓ ≥ 1`, gives `R_(B,L(B),h) → 0` for every schedule, which gives `B_B(h) → 0` when `L(B) ≤ B` (the factor
+`(B+L-1)/B ≤ 2` in (1.2)). The equivalence with normality is for all modes together. (Receipt that
+the chain is not an equivalence, from the second audit: a non-normal point whose orbit dwells near
+the fixed points `k/15`, cycling through them inside each shell, has `B_B(1) → 0` while its lag-1
+correlation at mode 15 tends to 1.)
 
 **Consequences for Phase 1 of the mission.**
 
 1. *Why unrestricted existence of a slowly growing `L(B)` only recasts normality:* the displayed
    equivalence. It holds for the signed quantity `R`, not only for some diagonal schedule.
 2. *Does the prescribed `L(B) = ⌊½ log_16 B⌋` demand stronger frequency uniformity?* **No — this
-   suspicion is refuted for the signed Fejér functional.** The window energy is antitone in
-   the window length along divisibility, and up to the additive `J/L` in general (2.1), so normality
+   suspicion is refuted for the signed Fejér functional.** The *normalized* window energy `γ_L` is
+   antitone in the window length along divisibility, and up to the additive `J/L` in general (2.1), so normality
    pays every schedule at once, including `L(B) = B`. Uniformity
    over the growing frequency set `h(16^ℓ-1)`, `ℓ < L(B)`, *would* be demanded by a term-by-term or
    absolute-value version (`Σ_ℓ (1-ℓ/L)|c_ℓ|`), which is a different statement that this
    argument does not deliver (whether it is strictly stronger is not decided here). The Fejér sum never needs it because it is a positive quadratic form.
-3. *What the schedule does control* is only the **rate** in (1.2): `|B_B(h)|² ≤ 4/L + 2R⁺` can
-   never certify better than `4/L(B)`.
+3. *What the schedule does control* is only the **rate** in (1.2): the coarse form
+   `|B_B(h)|² ≤ 4/L + 2R⁺` can never certify better than `4/L(B)`.
 4. *Relation to SP-01* (`arithmetic_barrier/SPECTRAL_AND_SELECTION.md`): SP-01 trades the mode `h`
    for the modes `h(16^d-1)` at fixed `d` and records NON-IMPROVEMENT. IAD-02 closes the remaining
    loophole in that verdict: letting the lag window grow by any schedule adds no content either.
@@ -358,7 +362,7 @@ and the covariance is trivially small for every seed.) The untwisted innovation 
 `| |conj(Ã)E[C|F]| - |E[C|F]| | ≤ 1 - |Ã|`, and on each cell `1 - |Ã| = E|A| - |E A| ≤ E|A - Ã|`,
 so `E[1-|Ã|] ≤ a_F`. ∎
 
-So, among filtrations for which `A` is approximately measurable (Objective A.1, `a_F` small),
+So, along filtrations for which `A` is asymptotically measurable (Objective A.1, `a_F → 0`),
 Objective A.2 (`‖E[Z|F]‖_1` small) holds **iff** the completed orbit already has *cell-by-cell*
 lag-ℓ cancellation `‖E[C|F]‖_1 → 0` on that filtration — which implies the global target, since
 `|E[C]| ≤ ‖E[C|F]‖_1`, and is a priori a stronger demand (no separating example is claimed). The innovation/history split cannot make the problem easier;
@@ -440,23 +444,33 @@ Choose `k` with `q^k ≥ M·16^(K+2)` and `a = M·round(-x q^k / M)`. For the ra
    and every `n ≥ 0`. So the two histories have the same class in `Q_p/Z_p` at **every** place
    `p ≠ q` (identical `p`-component of the real phase, identical denominators, identical fresh-prime
    births) and the same residue modulo `p^(j_p)` at every `p ∈ S`;
-3. *(coherent real orbit)* `|Y_n(s)| = 16^n|x+s| ≤ ½·16^(n-K-2)` for `0 ≤ n ≤ K`. With `K = 2B`:
-   `|W_B(h; s) - 1| ≤ π|h|/(3840B)`; likewise every summand `e(h(Y_(n+d)(s) - Y_n(s)))` with
-   `n + d < 2B` is within `π|h|·16^(n+d-2B-2)` of 1, so `|c_d(B; s) - (B-d)/B| ≤ π|h|/(3840B)`
-   (the lag sums have `B-d` terms under the `1/B` normalization).
+3. *(coherent real orbit)* `|Y_n(s)| = 16^n|x+s| ≤ ½·16^(n-K-2)` for `0 ≤ n ≤ K`. With
+   `K = 2B + t`, `t ≥ 0`: `|W_B(h; s) - 1| ≤ π|h|16^(-t)/(3840B)`; likewise, for every lag
+   `1 ≤ d ≤ B-1`, every summand `e(h(Y_(n+d)(s) - Y_n(s)))` with `n + d < 2B` is within
+   `π|h|·16^(n+d-2B-t-2)` of 1, so `|c_d(B; s) - (B-d)/B| ≤ π|h|16^(-t)/(3840B)` (the lag sum has
+   `B-d ≥ 1` terms under the `1/B` normalization; for `d ≥ B` it is empty and nothing is claimed).
 
 *Proof.* `|x + a/q^k| ≤ M/(2q^k) ≤ ½·16^(-K-2)`. Item 2: `a ∈ MZ` and `q` is a `p`-adic unit.
 Item 3: `|e(t)-1| ≤ 2π|t|` and `Σ_(n=B)^(2B-1) 16^(n-2B-2) < 16^(-2)/15 = 1/3840`. ∎
 
+(The proof does not use that `q` is odd: for `q = 2` and odd `M` the same seed agrees with seed 0
+at every odd place.)
+
 **Consequence (a class of prime-to-real transfers that cannot work).** Call a transfer
 *finite-horizon and census-incomplete* if it derives a bound for the shell `[B, 2B)` from
 hypotheses that depend on the seed only through the forcing and through local data, at times
-`n ≤ 2B`, at places other than one odd prime `q` (classes in `Q_p/Z_p` at all `p ≠ q`; residues to
-any finite precision at finitely many of them). `q` may depend on `B`; in particular the class
+`n ≤ 2B`, at **finite** places `p ≠ q` for one odd prime `q` (classes in `Q_p/Z_p` at all
+`p ≠ q`; residues to any finite precision at finitely many of them; the Archimedean place is not
+among the preserved data). `q` may depend on `B`; in particular the class
 contains every transfer using only primes `≤ P(B)` for any bound `P(B)` (take `q_B > P(B)`),
 e.g. all primes `≤ 16^(2B)`. **No such transfer can conclude `|W_B(h)| ≤ 1-η`, or
-`|c_d(B)| ≤ (1-η)(B-d)/B` for any lag, at any shell with `π|h|/(3840B) < η`:** its hypotheses hold
-for `s_B = a/q^k` whenever they hold for `s = 0`, and the conclusion fails there. This covers
+`|c_d(B)| ≤ (1-η)(B-d)/B` for a lag `1 ≤ d ≤ B-1`, at any shell and for any `η > 0`:** its
+hypotheses hold for `s_B = a/q^k` whenever they hold for `s = 0`, and the conclusion fails there
+once the horizon is `K = 2B + t` with `π|h|16^(-t) < 3840·η·(B-d)` (respectively `< 3840·ηB` for
+`W_B`). *(Repaired 2026-11-11, second audit: the earlier text fixed `K = 2B` and the shell
+condition `π|h|/(3840B) < η`, which does not suffice for lags close to `B` — at
+`B = 100, h = 2000, q = 3, d = 98, η = 0.05` the hijacked correlation is `0.846·(B-d)/B` — and it
+allowed the empty lags `d ≥ B`.)* This covers
 fresh-prime births, the 2-adic odometer, and prime marginals or joint laws on any set of places
 omitting one prime.
 
@@ -470,12 +484,13 @@ argument that uses the Archimedean place directly.
 **The missing invariant.** What separates `s = 0` from `s_B` is *census completeness*: the
 denominator of `U_n(0)` is supported on primes `≤ 8n-2` (CG-01, `log den = 6n + o(n)`), with no
 further place. Equivalently the product-formula closure `{U_n} ≡ Σ_(p ≤ 8n) {U_n}_p (mod 1)` holds
-with **no missing term**; for `s_B` the place `q` carries an extra component of height
-`q^k ≥ 16^(2B)`. A working finite-horizon transfer *from finite-place data* must therefore use every prime of the
+with **no missing term**; for `s_B` the place `q` carries an extra component of nominal
+denominator `q^k ≥ 16^(2B)` (its reduced height is smaller if `q | a`; no lower bound is claimed). A working finite-horizon transfer *from finite-place data* must therefore use every prime of the
 genealogy simultaneously together with an a priori exclusion of extraneous places — a height
 statement. PPP-08
-(`pi_parity_pressure/PROOFS.md`) is the special case of one selected prime and the denominator
-`p·16^(2A+48)+1`; the seed authentication `Z_n = s` of the zero-anchor kernel already rejects all
+(`pi_parity_pressure/PROOFS.md`) is the analogous construction with the odd denominator
+`D = p·16^(2A+48)+1`, which is in general not a prime power (it omits every place dividing `D`);
+IAD-07 sharpens it to a single omitted place; the seed authentication `Z_n = s` of the zero-anchor kernel already rejects all
 of these seeds as identities, which is not the same as a transfer theorem that uses the rejection.
 
 **Necessary, not sufficient.** Census completeness and the literal zero seed still do not imply
@@ -586,7 +601,7 @@ event exactly one of the four factors is divisible by `p`, and any two distinct 
 at least `(p-5)/8` apart.
 
 *Proof.* The four event classes are `m ≡ 7/8, 1/2, 3/8, 1/4 (mod p)`. Two factors vanishing at
-the same `m` would force `p | 1, 3, 4` or `5`, impossible for `p ≥ 7`. If `m ≠ m'` are events in
+the same `m` would force `p | 1, 2, 3, 4` or `5`, impossible for `p ≥ 7`. If `m ≠ m'` are events in
 different classes, `m - m' ≡ c/8 (mod p)` with `c ∈ {±1,…,±5}` (the pairwise class differences),
 so `p | 8(m-m') - c ≠ 0` and `|m - m'| ≥ (p-5)/8`; in the same class `|m - m'| ≥ p`. The smallest
 positive solutions give `β(p)`. ∎
@@ -603,7 +618,9 @@ It does not depend on the seed's history at all (for any seed that is `p`-integr
 
 **(c) Exact inequation.** Under the hypotheses of (b) (`n ≥ 8`, `ℓ ≤ n/4`, a `p`-integral seed), if
 the window `(n, n+ℓ]` contains a birth of a prime `p ∤ h`, then `h(U_(n+ℓ) - U_n) ∉ Z`, so
-`A_n Z_n ≠ 1`. (Without `ℓ ≤ n/4` a second event of `p` inside the window can cancel the first.) This is an equality-level statement with **no** metric
+`A_n Z_n ≠ 1`. (The hypotheses are sufficient and are not shown to be necessary: the separation
+bound of (a) already allows `ℓ ≤ n/2`, and the only cancellations found by the second audit have
+`n < 8`, e.g. `n = 1, ℓ = 9, p = 19`.) This is an equality-level statement with **no** metric
 content: the only general lower bound is `‖h(U_(n+ℓ)-U_n)‖ ≥ 1/den = exp(-(6+o(1))(n+ℓ))`.
 
 **(d) Welding of the two places at a fresh pole.** For a fresh pole term `c·16^k/p` of age
@@ -612,9 +629,10 @@ content: the only general lower bound is `‖h(U_(n+ℓ)-U_n)‖ ≥ 1/den = exp
 rational number*. (At age 0 the term `-1/(2p)` of the pole `4m-1` also has the 2-adic component
 `1/2`, which the sibling pole `-1/(2(2m-1))` cancels; the weld then holds after removing that
 component. Corrected after audit.) While `|c|·16^k < p` (age `< log_16 B + O(1)`) the `p`-adic
-component literally equals the real term; afterwards it winds. The real innovation stays `< 1`
-until age `2 log_16 B` only because the four simultaneous poles — living at four different places —
-cancel to order `1/n²`. Each single place sees none of that cancellation. This is the smallest
+component equals the real term modulo one with no winding (for the negative coefficients the
+representative in `[0,1)` is `1 - |c|16^k/p`); afterwards it winds. The real innovation stays `< 1`
+until age `2 log_16 B` only because the four simultaneous poles — living at up to four different
+places (two of them can share the prime 3 or 5) — cancel to order `1/n²`. Each single place sees none of that cancellation. This is the smallest
 exact instance of "full CRT winding is not determined by the prime marginals".
 
 **(e) Birth mass (CLASSICAL IMPORT: prime number theorem in progressions mod 8).** The number of
@@ -622,8 +640,9 @@ prime births in `[B, 2B)` (counted with multiplicity) is `(6 + o(1)) B/ln B`: tw
 `(8B, 16B]`, `p ≡ 5 (8)` in `(8B, 16B]` and `p ≡ 3 (4)` in `(4B, 8B]`. Averaged over `n` in the
 shell, the number of births in the innovation window `(n, n+ℓ]` is `(6+o(1))ℓ/ln B`. For
 `ℓ = c·log_16 B` this mean is `6c/ln 16 ≈ 2.164·c`: between 4.3 and 6.5 across the mesoscopic
-window. **Fresh-prime birth events are not a zero-density phenomenon at mesoscopic lag** — a
-typical window contains several — but by (c) and IAD-07 their presence carries no averaged
+window. **Fresh-prime birth events are not a zero-density phenomenon at mesoscopic lag** — the
+mean number per window is several (a statement about the mean, converging slowly: the count is
+about `0.85` of `6B/ln B` at `B = 10^5…10^6`) — but by (c) and IAD-07 their presence carries no averaged
 cancellation: the hijacked seed of IAD-07 has exactly the same births, the same fresh components
 and correlation `≈ 1`.
 

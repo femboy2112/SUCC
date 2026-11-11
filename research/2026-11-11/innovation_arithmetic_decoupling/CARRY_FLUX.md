@@ -71,23 +71,28 @@ Equivalently: `liminf_B (1 - Re W_B(h; ξ)) ≤ 2(1 - v)/(1 + v)` with `v = min(
    `η` forces the restricted exponent strictly below 1**, namely `≤ (2-η)/(2+η) = 1 - η + O(η²)`.
 2. *No theorem about `μ(π)` can pay it.* Every bound on the unrestricted irrationality exponent
    yields at best `v_16 ≤ μ - 1`, and `μ - 1 ≥ 1`. So neither the refereed record
-   `μ(π) ≤ 7.1032`, nor `μ(π) = 2` if it is ever confirmed, implies the necessary condition for
-   *any* fixed saving at *any* mode. This is not an artefact of the inequality `v_16 ≤ μ - 1`:
+   `μ(π) ≤ 7.1032`, nor `μ(π) = 2` if it is ever confirmed, implies **by itself** the necessary
+   condition for *any* fixed saving at *any* mode: there is no implication from `μ` alone. This
+   is not an artefact of the inequality `v_16 ≤ μ - 1`:
    Shallit's number `K = Σ_(k≥0) 16^(-2^k)` has bounded partial quotients (CLASSICAL IMPORT, seen),
    so `μ(K) = 2`, while `‖16^(2^k) K‖ ≤ 2·16^(-2^k)` and, by (1.1) with `m = B = 2^k`,
    `N = B - ⌈log_16 B⌉`, `Re W_(2^k)(h; K) → 1`. Best-possible unrestricted Diophantine type is
    compatible with no saving at all.
 3. *Full decay at one mode needs exponent 0.* If `W_B(h; ξ) → 0` for one `h`, then
-   `S(M) = Σ_(n<M) e(h y_n) = o(M)`, and a coherent stretch `[m, m+N)` has
-   `|S(m+N) - S(m)| ≥ (N-k)(1 - 2π|h|16^(-k))` whenever `‖16^m ξ‖ ≤ 16^(-N)`; hence `N = o(m)` and
-   `v_16(ξ) = 0`. The law (1.2) interpolates between `η → 0` (exponent 1) and this endpoint only
+   `S(M) = Σ_(n<M) e(h y_n) = o(M)` (split `[1, M)` into `O(log M)` shells and one initial block).
+   If `‖16^m ξ‖ ≤ 16^(-N)` then `‖h y_(m+j)‖ ≤ |h|16^(j-N)` for `0 ≤ j < N`, so
+   `|S(m+N) - S(m)| ≥ Re(S(m+N) - S(m)) ≥ N - 2π|h| Σ_(i=1)^N 16^(-i) ≥ N - 2π|h|/15`; hence
+   `N = o(m)` and `v_16(ξ) = 0`. (An earlier form of this display, with the factor
+   `(N-k)(1 - 2π|h|16^(-k))`, was false — it ignored the last `k` terms — and was caught by the
+   audit; the conclusion is unchanged.) The law (1.2) interpolates between `η → 0` (exponent 1) and this endpoint only
    down to `1/3` at `η = 1`; the difference is that (1.2) uses one shell, the remark two partial
    sums.
 4. *Near-sharpness.* For `0 < λ < 1` let `ξ_λ` have digit `0` on `[2^k, 2^k + ⌊λ2^k⌋)` and digit
    `7` on the rest of `[2^k, 2^(k+1))`. Then `v_16(ξ_λ) = λ` and
    `liminf_B (1 - Re W_B(1; ξ_λ)) = (1 - cos(14π/15))·(1-λ)/(1+λ) = 1.978…·(1-λ)/(1+λ)`, against the
    bound `2(1-λ)/(1+λ)`. (The zero fraction of a shell is maximal, `2λ/(1+λ)`, at
-   `B = (1+λ)2^(k-1)`.) The constant 2 in (1.2) cannot be lowered below `1.978`.
+   `B = (1+λ)2^(k-1)`.) So within bounds of the shape `liminf saving ≤ C(1-v)/(1+v)` the constant
+   `C = 2` cannot be lowered below `1.978`.
 5. *Lag correlations.* (1.1)–(1.2) apply verbatim to `Θξ` for an integer multiplier `Θ`, hence to
    the lag-`ℓ` correlation (`Θ = 16^ℓ - 1`, IAD-08(b)) for fixed `ℓ`. For lags growing with `B`
    only the endpoint statement of IAD-08(b), with its `B - ℓ` factor, is claimed.
@@ -145,8 +150,8 @@ a run of length `L+1`. ∎
   statement about escapes of the `×16` orbit from the sixteen fixed points `j/15`.
 - *(d)*: (CH) forces the restricted exponent at the denominators `15·16^m` below
   `(1-c)/(1+c) < 1`, consistently with ZSC-01.
-- The converse of (c) fails (two long constant runs of different digits give a saving at mode 1
-  with no changes), and (CH) gives no saving at modes whose periodic points have digit changes
+- The converse of (c) fails (two long constant runs of different digits per shell give a saving
+  at mode 1 with change density tending to 0), and (CH) gives no saving at modes whose periodic points have digit changes
   (`ξ = 1/17`: `c_B = 1`, `W_B(17) = 1`).
 
 ## ZSC-03 — sixteen is sparse for every seed; (CH) is a statement about `⌊U_n⌋` (PROVED LOCAL)
@@ -175,15 +180,19 @@ only under either normality hypothesis.)
 **Corollary 2 (carry changes are digit changes).** For the zero seed and `B ≥ 2`:
 
 ```text
-| c^κ_B - c_B |  ≤  3 (1 + (B+1)/log_4 B) / B   →  0.
+| c^κ_B - c_B |  ≤  3 (2 + B/log_4 B) / B   →  0.
 ```
 
 *Proof.* By the cocycle `d_n = κ_(n+1) + ε_(n+1) - 16ε_n` (SWT-03), the change indicators of `d`
 and of `κ^+` at `n` agree when `(ε_n, ε_(n+1), ε_(n+2)) ∈ {(0,0,0), (1,1,1), (0,1,1), (0,1,0)}`
 (in the last two both change: `κ_(n+1) = d_n - 1 ≤ 14` against 15 or 16). `(1,0,1)` is impossible
-for `n ≥ 2` (after a seam `d_(n+1) = 0`, but a seam starting at `n+2` needs `d_(n+1) ≥ 1`). The
+for `n ≥ 2`: after the end of a seam, `{Y_(n+1)} = {U_(n+1)} + T_(n+1) < r(n+1) + T_(n+1) < 1/16`
+(this needs `n ≥ 2`), so `d_(n+1) = 0`, while a seam starting at `n+2` needs `d_(n+1) ≥ 1`. The
 remaining patterns `(0,0,1)`, `(1,1,0)`, `(1,0,0)` occur at most once each per seam run, seam runs
-are in bijection with letters 16, and consecutive seam runs are separated as in Corollary 1. ∎
+are in bijection with letters 16, and consecutive seam runs are separated as in Corollary 1. The
+runs concerned are those whose letter 16 lies in `[B+1, 2B+2]`, at most `1 + (B+1)/log_4(2B)` of
+them, plus at most one run that starts before `2B+2` and ends beyond; and
+`(B+1)/log_4(2B) ≤ B/log_4 B` because `log_4 B ≤ B/2`. ∎
 
 Therefore **(CH) ⟺ (CH_κ)**: *the literal carries of the zero-seeded rational source change at a
 positive lower density of times in every large shell.* This is a statement about the integer
@@ -198,7 +207,8 @@ positive integers `p` and `q ≥ 2`, `|π - p/q| > q^(-42)`.*
 **Theorem.** For every `n ≥ 2`:
 
 1. a run of equal hexadecimal digits `d_n = … = d_(n+L-1)` of `x` has `L ≤ 41n`; a run of zeros
-   or of `F`'s, and hence every seam run and every run of literal carries 15, has `L < 41(n-1)`;
+   or of `F`'s, and hence every seam run starting at `n` and every run of literal carries
+   `κ_(n+1) = … = κ_(n+L) = 15` (RIO-11), has `L < 41(n-1)`;
 2. *(exact finite look-ahead)* for every `J ≥ 41(n-1)`: `⌊16^(n-1)π⌋ = ⌊ C_(n+J) / 16^J ⌋`. The
    first `n-1` hexadecimal digits of π are read off, with certainty, from the integer part of the
    rational `U_(42n-41)`;
@@ -223,7 +233,7 @@ and would improve to `1 + ε` under `μ(π) = 2`.
 |---|---|---|
 | L0 | infinitely many changes | known (irrationality) |
 | L1 | `≥ log_42 N - 2` changes among the first `N` digits, every `N` | known (Mahler; this file) |
-| L2 | at least one change in every shell `[B, 2B)`, `B` large | **OPEN**; needs the borderline `v ≤ 1` at denominators `15·16^m`; not implied by `μ(π) = 2`, which leaves an `ε` |
+| L2 | at least one change in every shell `[B, 2B)`, `B` large | **OPEN**; needs the borderline `v ≤ 1` at denominators `15·16^m`; no implication from `μ` alone, and `μ(π) = 2` would leave an `ε` |
 | L3 = (CH) | `≥ cB` changes in every large shell | **OPEN**; `⟺` a real saving at mode 15; `⟹` a saving at mode 1; needs exponent `≤ (1-c)/(1+c) < 1` |
 | L4 | `W_B(h) → 0` for every `h ≠ 0` | **OPEN** (normality) |
 
@@ -240,7 +250,7 @@ All three examples are seeded carriers of the **unchanged** forcing (seed `ξ - 
 |---|---|---|---|---|
 | **W1**: digit 1 at `a_0 = 16`, `a_(j+1) = a_j + ⌈√a_j⌉ + 1`; 0 elsewhere | 0 | `→ 0` | `→ 1` | none: `W_B(h) → 1` for all `h` |
 | **W2**: digit `E` at `b_0 = 2`, `b_(j+1) = b_j²`; `F` elsewhere | `∞` | `→ 0` | `0` (seam-free) | none |
-| **W3**: blocks `k = 1, 2, …` of length `2k`: `k` zeros, then `k` digits `1212…` | 0 | `→ 1/2` | `→ 1/2` | `limsup_B |W_B(1)| < 1` by ZSC-02(c) |
+| **W3**: blocks `k = 1, 2, …` of length `2k`: `k` zeros, then `k` digits `1212…` | 0 | `→ 1/2` | `→ 1/2` | `limsup_B |W_B(1)| < 1` by ZSC-02(c) (it satisfies (CH) with every `c < 1/2`) |
 
 *Proofs.* W1: for `m ≥ 16` the next digit 1 is at distance `≤ √m + 1`, and no two 1's are
 adjacent, so `16^(-√m-2) ≤ {y_m} < 1/2`: `v_16 = 0`. A shell contains at most `√B + 2` ones, hence
@@ -256,12 +266,16 @@ position. ∎
   Remark 3) — implies **neither** a saving **nor** seam density zero (W1).
 - Seam-freeness, the strongest form of Target A, implies **neither** a Diophantine bound **nor**
   a saving (W2).
-- A fixed saving at mode 1, even (CH) with `c = 1/2`, does **not** imply seam density zero (W3).
+- A fixed saving at mode 1, even (CH) with every `c < 1/2`, does **not** imply seam density zero
+  (W3).
 
-So for seeded carriers of the authentic forcing, `ρ(N) = o(N)`, the wall, and (CH) are pairwise
-independent; they meet only at normality. Any derivation of one from another must use the zero
-seed in a way that fails for `W1`–`W3`, and by ZSC-06 the only such information is the identity of
-the real number `x`.
+So for seeded carriers of the authentic forcing the **seam target is independent, in both
+directions, of the wall and of (CH)**. The other two are *not* independent of each other: (CH)
+implies the wall for every real `ξ` (ZSC-02(d): exponent `≤ (1-c)/(1+c) < 1`), while the wall —
+even `v_16 = 0` — does not imply (CH) (W1). Five non-implications are witnessed here; the sixth
+is false. (An earlier draft said "pairwise independent"; corrected after audit.) Any derivation of
+the seam target from the others, or of a saving from the seam target, must use the zero seed in a
+way that fails for `W1`–`W3`.
 
 ## ZSC-06 — the moduli of sources: what the zero seed is (PROVED LOCAL; one CLASSICAL IMPORT)
 
@@ -281,13 +295,21 @@ The authentic source is `(g_π, 0)`, `g_π = 4 - 2z³ - z⁴ - z⁵ = K(z)(1-z)`
 `(g - (16-z⁸)h, s + ∫_0^1 h)` has `G' = G - h` and
 
 ```text
-U'_n = U_n + a(n),     T'_n = T_n - a(n),     ξ' = ξ,     |a(n)| ≤ ‖h‖_1/(8n+1).
+U'_n = U_n + a(n),     T'_n = T_n - a(n),     ξ' = ξ,     |a(n)| ≤ ‖h‖_1/(8n+1)
 ```
 
-Hence `|D'_(B,k) - D_(B,k)| ≤ 2π|k|·‖h‖_1/(8B+1)`: every limit statement about shell means, lag
-correlations or block frequencies off a density-zero set is **gauge-invariant**. The seed and the
-set of poles are **not**: `h ≡ c` moves the seed by `c` and adds the poles `-16c/(8n-7) + c/(8n+1)`
-(this is RIO-01's static translation; the `H(n) - 16H(n-1)` control of RS is another instance).
+(`‖h‖_1` = sum of the absolute values of the coefficients of `h`). Hence
+`|D'_(B,k) - D_(B,k)| ≤ 2π|k|·‖h‖_1/(8B+1)`: every limit statement about shell means and lag
+correlations of the **phases** `e(kU_n)`, and every statistic of the completed orbit `Y_n`, is
+**gauge-invariant** (indeed it depends only on `ξ`, since `|e(kU_n) - e(kY_n)| ≤ 2π|k||T_n|`).
+Three things are **not** gauge-invariant: the seed, the set of poles (`h ≡ c` moves the seed by
+`c` and adds the poles `-16c/(8n-7) + c/(8n+1)`), and — corrected after audit — the **literal
+carries and the seam**. The gauge-equivalent sources `(g_H, 0)` and `(A_0, 2)` of (f)3 have the
+same completed point 2; the first has all late carries 15 and seam density 1, the second has all
+carries 0 and seam density 0. Carry statistics of two carriers of one point agree only off the
+set where a state lies within `|a(n)|` of an integer, and the density of that set is a seam-type
+statement. (RIO-01's static translation and the `H(n) - 16H(n-1)` control of RS are analogous
+coboundary constructions, not instances of this one.)
 
 **(c) Proper form.** Each gauge class has exactly one member with `deg g ≤ 7` (polynomial
 division), i.e. forcing `Σ_(j=1)^8 A_j/(8n-8+j)`, the BBP normal form
@@ -362,17 +384,24 @@ Over `Q` this is a linear system of rank 7 on `Q⁸` (exact computation in `Q(�
    has literal zero seed, rational simple poles, residue sum 0 (`r_H = O(n^(-2))`), a moment
    density that is positive on `[0,1)` with a simple zero at 1 (the same shape as `g_π`, so the
    innovation calculus of IAD-03 and a Kusmin–Landau window as in IAD-04 hold with other
-   constants), and the prime genealogy of the null source: its states are
+   constants: `g_H/(1-z)` is a polynomial, positive on `[0,1]`), and — apart from the two current
+   poles `8n+1`, `4n+1` — the prime genealogy of the null source: its states are
    `U^H_n = U^0_n + 2·16^n - 3/(8n+1) + 1/(4n+1)` with `U^0_n` the state of `(g_0, 0)`.
    Its completed point is `ξ_H = 2`: `U^H_n = 2·16^n - T^H_n`,
    `0 < T^H_n → 0`, so `{U^H_n} → 1`, every late carry is 15, the seam density is 1 and
    `D_(B,h) → 1` for every `h`. *Positivity of `g_H`:* `(16-z⁸)(3-2z) ≥ 15` and `g_0 ≥ -15` on
    `[0,1]`, each with equality only at `z = 1`. In proper form it is `(A_0, s = 2)`.
 4. *The census is not an invariant of π.* For every rational `ρ` the proper zero-seeded source
-   `A_π + ρA_0` completes to `π/16`. For `ρ ≠ 0` it has seven poles per step instead of four,
-   different denominators and a different prime genealogy; its states differ from the authentic
-   ones by `ρ·U^0_n = O(ρ/n)`, and all its asymptotic statistics coincide with the authentic ones
-   by (b). The four-pole source is the unique member of this line with `r = O(n^(-2))`.
+   `A_π + ρA_0` completes to `π/16` (these sources are **not** gauge-equivalent to one another:
+   distinct proper forms, one completed point). For `ρ ∉ {0, -1/4, -1/2}` it has seven poles per
+   step instead of four (six at `ρ = -1/4`; four, at `8n-6, 8n-5, 8n-4, 8n-1`, at `ρ = -1/2`),
+   in every case different denominators and a different prime genealogy. Its states differ from
+   the authentic ones by `ρ·U^0_n`, `0 < U^0_n < 1/(8n+1)`, so
+   `|D^ρ_(B,k) - D_(B,k)| ≤ 2π|kρ|/(8B+1)` and all shell means and lag correlations of its phases
+   have the same limits as the authentic ones. (Whether its *carry* statistics agree is a
+   seam-type density statement and is OPEN; on `n ≤ 2422` the carries of `ρ = 1` differ from the
+   authentic ones at two times.) The four-pole source is the unique member of this line with
+   `r = O(n^(-2))`.
 5. *Asymptotic no-go (upgrades IAD-07).* IAD-07 used shell-dependent seeds and excluded only
    finite-horizon transfers. The sources in 2–3 are **fixed**, zero-seeded and census-complete, so:
    *no argument, finite-horizon or asymptotic, whose hypotheses are satisfied by every
@@ -383,31 +412,37 @@ Over `Q` this is a linear system of rank 7 on `Q⁸` (exact computation in `Q(�
 **Reading.** In proper form, *(rational forcing, zero seed, `A ∉ Q·A_0`)* is equivalent to
 *`ξ` is a nonzero element of the seven-dimensional period space `V`*. That membership has a proved
 non-statistical consequence — transcendence, and with it the finiteness of every seam run
-(SWT-03) and the ceilings of ZSC-04. By (b), every statistical statement about the selected path
-is a statement about the single real number `ξ`; by 4, the complete prime genealogy is not
-determined by `ξ`; by ZSC-05, the base-16 Diophantine exponent of a completed point decides none
-of the statistical targets. No hostile element of `V \ {0}` is known, and none is constructed here: "every nonzero
+(SWT-03); for `ξ = x` specifically, Mahler's theorem adds the explicit ceilings of ZSC-04 (no
+quantitative statement for the rest of `V` is imported). By (b), every statement about limits of
+shell means and lag correlations of the phases of the selected path is a statement about the
+single real number `ξ`; by 4, the complete prime genealogy is not determined by `ξ`; and the
+base-16 exponent of a completed point is one-sided information: `v_16 ≥ 1` refutes every fixed
+saving and (CH) (ZSC-01, ZSC-02(d)), while a small exponent, even `v_16 = 0`, implies none of the
+statistical targets (ZSC-05). No hostile element of `V \ {0}` is known, and none is constructed here: "every nonzero
 element of `V` is normal in base 16" is the Bailey–Crandall-type conjecture of which π is one
 instance, and (CH) is open for every element of `V \ {0}`.
 
 ## ZSC-07 — Target A, instrument triage and the acceptance test
 
-**Target A (seam density).** `ρ(N) ≤ H_N ≤ ρ(N) + 1 + b_N`, and `ε_n = 1 ⟺ {Y_n} < T_n`
-(SWT-03): `ρ(N) = o(N)` says that positions followed by `≈ 2 log_16 n` zeros have density zero.
-Unconditionally only `N - ρ(N) ≫ log N` is available (ZSC-04). No arithmetic input found in this
-round improves it, and three facts say why none of the available kind can: the rare-carry
-inequality `{U_n} ≥ 1 - r(n+1)/16` is an inequality for a rational of denominator
-`exp((6+o(1))n)` at scale `n^(-2)` (no exclusion); `v_16 = 0` is compatible with seam density 1
-(W1); and a zero-seeded positive `O(n^(-2))` rational source has seam density exactly 1
-(ZSC-06(f)3). By ZSC-05 the target would in any case yield no saving. **Target A stays OPEN and
-is demoted:** it is neither on the path to a signed estimate nor reachable from the Diophantine
-side. What the source does give for every seed is ZSC-03: the letter 16 has density zero.
+**Target A (seam density).** With `H_N = 1 + b_N + Σ_(j≤N, κ_j=16) (1 + a_j)` the source-side
+bound of SWT-03 (`a_j` the length of the run of 15's before the 16 at `j`, `b_N` the terminal run
+of 15's): `ρ(N) ≤ H_N ≤ ρ(N) + 1 + b_N`, and `ε_n = 1 ⟺ {Y_n} < T_n`: `ρ(N) = o(N)` says that
+positions followed by `≈ 2 log_16 n` zeros have density zero. Unconditionally only
+`N - ρ(N) ≫ log N` is available (ZSC-04). No arithmetic input found in this round improves it.
+Three facts bound what the available kinds of input can do: the rare-carry inequality
+`{U_n} ≥ 1 - r(n+1)/16` is an inequality for a rational of denominator `exp((6+o(1))n)` at scale
+`n^(-2)` (no exclusion); `v_16 = 0` is compatible with seam density 1 (W1), so the target is not
+implied by the Diophantine exponent alone; and **there is** a zero-seeded positive `O(n^(-2))`
+rational source — the non-proper `g_H` — with seam density exactly 1 (ZSC-06(f)3), so it is not
+implied by those source properties either. By ZSC-05 the target does not by itself imply any
+saving. **Target A stays OPEN and is demoted** as a stepping stone. What the source does give for
+every seed is ZSC-03: the letter 16 has density zero.
 
 **Instrument triage (Phase 2).**
 
 | Instrument | Discriminating fact | Verdict |
 |---|---|---|
-| Complete arithmetic genealogy | the census differs along the line `A_π + ρA_0` while every statistic agrees (ZSC-06(f)4); complete census with zero seed is coherent for `g_H` | not an invariant; closed for transfers, finite-horizon (IAD-07) and asymptotic (ZSC-06(f)5) |
+| Complete arithmetic genealogy | the census differs along the line `A_π + ρA_0` while every phase statistic agrees (ZSC-06(f)4); complete census with zero seed is coherent for `g_H` | not an invariant; closed for transfers, finite-horizon (IAD-07) and asymptotic (ZSC-06(f)5) |
 | Carry-renewal dynamics | escapes from the fixed points `j/15` are exactly digit changes; their density is equivalent to a mode-15 saving and sufficient for a mode-1 saving (ZSC-02); 16-events renew with a rigid `15^a 16 0^b` shape (ZSC-03) | **selected**; yields the criterion (CH), not an estimate |
 | Arithmetic cylinder refinement | the seeds sharing the first `N` carries of the zero seed form an interval of length `≤ 16^(-N)` around 0; which words are excluded for `ξ ∈ V\{0}` is a Diophantine question, answered to the extent known by ZSC-04 | reduces to L1; no discrepancy content |
 | Two-index dispersion | every pair identity found is `U_(n+ℓ) - U_n = (16^ℓ-1)U_n + Δ_ℓ(n)`, the gauge of IAD-05 | no new partition found |
@@ -419,7 +454,7 @@ side. What the source does give for every seed is ZSC-03: the letter 16 has dens
 | Source-dependent input | none (holds for every real `ξ`) | forcing only (`r` decreasing, `T_n` brackets) | rational `g`, zero seed, Baker |
 | Where the zero seed is used | not used | only in ZSC-03 Cor. 2 (cocycle with `ε`) | proper-form invariant `s = 0` |
 | Old claim strengthened | IAD-08(a): endpoint → exponent `(2-η)/(2+η)` | RIO-10 (`16→0` → `16→0^J`), SWT-04 (letter 16 density 0 unconditionally) | AT-07 (uniqueness), IAD-07 (asymptotic scope) |
-| Holds for the coherent wrong seed | yes (vacuously: no saving) | yes (`c_B = 0`, no saving) | it is the point `0 ∈ V` reached by `A_0` |
+| Holds for the coherent wrong seed | yes (vacuously: no saving) | yes (`c_B = 0`, no saving) | the seed `-x` is irrational, outside the class; its analogue inside the class is the point `0 ∈ V`, reached by `A_0` |
 | New theorem or equivalent criterion | necessary condition (theorem) | criterion: (CH) `⟹` saving; (CH) itself OPEN | classification (theorem) |
 | Falsifying control | any `ξ` with a saving and `v_16 > (2-η)/(2+η)` | any shell violating (a)–(c) | a second proper null vector; a rational `L(A)`, `A ∉ Q·A_0` |
 
@@ -433,10 +468,10 @@ carries of `⌊U_n⌋`).
 |---|---|---|
 | ZSC-01 | A fixed saving `η` at one mode on all large shells forces `‖16^m ξ‖ ≥ c·16^(-((2-η)/(2+η))m)`; no bound on `μ` can supply it; constant 2 sharp to within `1.978/2` | PROVED LOCAL (Shallit witness: IMPORT, seen) |
 | ZSC-02 | `c_B/3321 ≤ 1 - Re W_B(15) ≤ 2(k-1)(c_B+(k-1)/B) + 450π²16^(-2k)`; `|W_B(1)| ≤ 1 - (c_B - 1/B)/65793`; (CH) forces exponent `≤ (1-c)/(1+c)` | PROVED LOCAL |
-| ZSC-03 | `16 → 0^(J(n))`, `J(n) ≥ ⌊log_4 2n⌋`, every seed; letter 16 has density 0 unconditionally; `|c^κ_B - c_B| → 0`; (CH) `⟺` (CH_κ) | PROVED LOCAL |
+| ZSC-03 | `16 → 0^(J(n))`, `J(n) ≥ ⌊log_4 2n⌋`, every seed; letter 16 has density 0 unconditionally; `|c^κ_B - c_B| ≤ 3(2 + B/log_4 B)/B`; (CH) `⟺` (CH_κ) | PROVED LOCAL |
 | ZSC-04 | For all `n ≥ 2`: equal-digit runs `≤ 41n`; exact look-ahead `J = 41(n-1)`; `≥ log_42 N - 2` changes | PROVED LOCAL from Mahler 1953 (IMPORT, seen) |
-| ZSC-05 | Seam density, the wall and (CH) are pairwise independent for seeded carriers of the authentic forcing (W1–W3) | PROVED LOCAL |
-| ZSC-06 | Gauge and proper form; elementary null relation; `{A : L(A) ∈ Q} = Q·A_0`; zero seed `⟺ ξ ∈ V`; hostile positive `O(n^(-2))` zero-seeded source `g_H`; census not an invariant of π | PROVED LOCAL; rigidity (e) uses Baker (IMPORT, not re-read) |
+| ZSC-05 | For seeded carriers of the authentic forcing the seam target is independent of the wall and of (CH) in both directions (W1–W3); (CH) implies the wall, not conversely | PROVED LOCAL |
+| ZSC-06 | Gauge and proper form (phase statistics invariant; seed, poles, carries and seam not); elementary null relation; `{A : L(A) ∈ Q} = Q·A_0`; zero seed `⟺ ξ ∈ V`; hostile positive `O(n^(-2))` zero-seeded source `g_H`; census not an invariant of π | PROVED LOCAL; rigidity (e) uses Baker (IMPORT, not re-read) |
 | (CH) | positive lower shell density of digit changes of π in base 16 | **OPEN** — the next missing inequality |
 | SEAM-DENSITY | `ρ(N) = o(N)` | **OPEN**, demoted (ZSC-07) |
 | — | any all-shell signed estimate for the zero seed; π base-16 normality | **OPEN** |

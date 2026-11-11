@@ -1,78 +1,98 @@
 # Next — the single strongest falsifiable obligation
 
 **π normality remains OPEN.** This file names one obligation, why it is the right one, what would
-count as progress, and what would refute it.
+count as progress, and what would refute it. It was rewritten in the continuation round
+(2026-11-11, ZSC): the previous obligation WALL-16 is kept below as a necessary condition, with
+its ladder corrected by ZSC-01.
 
-## The obligation: WALL-16
+## The obligation: (CH)
 
-> **Bound the base-16 Diophantine exponent of π from the four-pole source.**
-> Prove, using the BBP source structure and not only a general irrationality measure, an explicit
-> `v* < 6.1033` such that for all large `n`
->
-> ```text
-> ‖16^n x‖ ≥ 16^(-v*·n)        (x = π/16),
-> ```
->
-> equivalently: a run of literal carries `κ = 15` (or of hexadecimal digits `0`/`F`) starting at
-> time `n` has length at most `v*·n + O(1)`.
+> **Positive density of digit changes.** Prove that there are `c > 0` and `B_0` such that for every
+> `B ≥ B_0` at least `cB` of the positions `n ∈ [B, 2B)` satisfy `d_n ≠ d_(n+1)` in the
+> hexadecimal expansion of π — equivalently (ZSC-03), that the literal carries
+> `κ_n = ⌊U_n⌋ - 16⌊U_(n-1)⌋` of the zero-seeded rational source change value at `≥ c'B` of the
+> times in every large shell.
 
-**Why this one.** By IAD-08, *every* estimate this programme is looking for — a Weyl bound for one
-mode, a bound on a single lag correlation, with any fixed saving `η > 0` on all large shells —
-implies `‖16^B x‖ ≥ c·B·16^(-B)`. So no source-selected signed estimate can be proved by a method
-that does not, along the way, prove WALL-16 with `v* ≤ 1`. The refereed record is `v* = 6.1033`
-(from `μ(π) ≤ 7.1032`), with no base-restricted improvement known. WALL-16 is therefore the first
-rung that any successful mechanism must climb, it is strictly arithmetic, and it is stated in the
-carry language of the rational source (RIO-11, SWT-03).
+**Why this one.**
 
-**Ladder of thresholds.**
+- It is **sufficient** for the primary target of the programme at one specified mode:
+  `(CH) ⟹ limsup_B |W_B(1)| < 1` and `limsup_B |D_(B,1)| < 1`, with the explicit saving
+  `c/65793` (ZSC-02(c)). No other statement known to this dossier that is weaker than normality
+  implies a fixed saving.
+- It is **equivalent** to a real saving at the single mode `h = 15` (ZSC-02(a,b)); it is the
+  weakest statistical statement in the signed family.
+- It is a statement about escapes of the `×16` orbit from sixteen fixed points, in the carry
+  language of the rational source, with no tail and no seam hypothesis.
+- It is far below normality (`c_B → 15/16`), and far above what is known: the best unconditional
+  count is `≥ log_42 N - 2` changes among the first `N` digits (ZSC-04, from Mahler's bound), and
+  for irrational algebraic numbers `≫ (log N)^(3/2)(log log N)^(-1/2)` (Bugeaud–Evertse).
 
-| `v*` | Meaning | Status |
+**What it costs (necessary conditions, proved).**
+
+| Statement | Needs, at denominators `16^m` or `15·16^m` | Status of that input |
 |---|---|---|
-| `6.1033` | general irrationality measure | refereed record (import) |
-| `< 6.1033` by a BBP argument | first source-specific Diophantine gain | **OPEN — this obligation** |
-| `1 + ε` | would follow from `μ(π) = 2` | unrefereed claim exists; not imported |
-| `1`, sharp with a `log` gain | necessary for any fixed-saving shell estimate (IAD-08) | OPEN |
-| `0` | necessary for normality | OPEN |
+| L2: one change in every large shell | endpoint `‖15·16^m x‖ ≥ c·16^(-m)` (`v ≤ 1`, no ε) | OPEN; `μ(π) = 2` would give `1 + ε` only |
+| L3 = (CH) with density `c` | exponent `≤ (1-c)/(1+c) < 1` (ZSC-02(d)) | OPEN; **no bound on `μ(π)` can supply it** (`v_16 ≤ μ - 1`, `μ ≥ 2`) |
+| any fixed saving `η` at any mode | exponent `≤ (2-η)/(2+η) < 1` (ZSC-01) | OPEN; same remark |
+| decay at one mode | exponent `0` (ZSC-01, Remark 3) | OPEN |
 
-**What would count as progress.** Any proof of `v* < 6.1033` that uses the forcing, the zero seed
-and the complete place census (all three are needed: see the table closing OBSTRUCTIONS). The
-argument must visibly fail for the coherent seed, for the IAD-07 hijack seed and for the AT-07
-forcing; an argument that goes through for any of them is wrong.
+The refereed starting line is still `v_16(π) ≤ 6.1033`. WALL-16 ("a BBP-specific bound below
+`6.1033`") therefore remains a necessary first rung, but ZSC-01 changes its reading: the wall that
+matters is not the borderline `v = 1` with a logarithmic gain, it is `v < 1`, and that region is
+unreachable by any theorem about the unrestricted irrationality exponent. A proof must work at
+the restricted denominators themselves.
+
+**What would count as progress.**
+
+1. (CH) for π, or for **any** nonzero element of the period space `V` of ZSC-06 (`log 2`, `log 3`,
+   `√2·log(1+√2)`, … are proper zero-seeded sources of the same class). None is known.
+2. L2 for π: a digit change in every shell `[B, 2B)`.
+3. A restricted exponent `< 1` at denominators `16^m` or `15·16^m` for any nonzero element of `V`.
+
+An argument for any of these must fail for the null source `A_0`, for the hostile source `g_H`
+(zero seed, positive `O(n^(-2))` forcing, complete census, completed point 2), for the seeded
+carriers W1–W3 and for the Shallit point; one that goes through for any of them is wrong.
 
 **What would refute or redirect it.**
 
-- A same-forcing seed family that satisfies every source-side carry constraint currently available
-  (RIO-09/10, IAD-09) and has 15-carry runs longer than `v·n` for every `v < μ(π) - 1` would show
-  that the source structure recorded so far yields nothing beyond the general measure, and that a
-  new invariant is required before WALL-16 can be attacked.
-- An independent kernel check of the unrefereed `μ(π) = 2` formalization would move the starting
-  line from `6.1033` to `1 + ε` and make the sharp borderline the live obligation.
+- A nonzero element of `V` with change density tending to 0 would refute the natural conjecture
+  that (CH) holds throughout `V \ {0}` and would make the forcing coefficients themselves the
+  missing invariant.
+- A proper zero-seeded source outside `Q·A_0` with rational completed point is impossible by
+  ZSC-06(e); an exhibited one would mean an error there or in the use of Baker's theorem.
 
-## Falsifiable finite companion: SEAM-FREE
+## Falsifiable finite companion: SEAM-FREE (unchanged)
 
 > **Conjecture (finite-checkable).** For the literal zero seed, `κ_n ≠ 16` and `ε_n = 0` for every
-> `n ≥ 0`; equivalently `{16^n x} ≥ T_n` for all `n`, i.e. the hexadecimal digits of π are exactly
-> the shifted literal carries, `d_n = κ_(n+1)`, with no seam event ever.
+> `n ≥ 0`.
 
-Heuristic expectation of the number of events beyond `n` is `Σ_(m>n) T_m < 1/(64n)`. Verified for
-`n ≤ 3200` in this dossier (see PROBES). One event at any `n` refutes it. It is strictly stronger
-than the seam-density statement `ρ(N) = o(N)` of SWT-03, which is itself OPEN and strictly weaker
-than normality.
+Verified for `n ≤ 3200` earlier and re-observed for `n ≤ 2600` here. One event at any `n` refutes
+it. The density form `ρ(N) = o(N)` stays OPEN and is **demoted** (ZSC-05, ZSC-07): it is logically
+independent of (CH) and of the wall for seeded carriers of the authentic forcing, and by ZSC-03
+the one seam-related fact needed downstream — the letter 16 has density zero — is unconditional.
 
-## Second-priority obligations (not the single strongest)
+## Second-priority obligations
 
-1. **Sufficient mesoscopic gate (IAD-06).** `limsup_B Re c^U_(jℓ_0(B))(B) ≤ 0` for every fixed
-   `j ≥ 1`, `ℓ_0 = ⌈(2+δ)log_16 B⌉`. Sufficient for mode `h`; by IAD-08(b) it is beyond WALL-16
-   with `v* ≤ 1`.
-2. **Band extremal constant (O-7).** Turn the floating-point LP into an exact dual certificate and
-   identify the constant (numerically `1/√5` at ratio `3/2`).
-3. **Verify or replace the imports** flagged in SOURCE_MAP (Graham–Kolesnik statements not seen;
-   the `(log B)^(3/2)` range quoted from memory in O-4).
+1. **Re-read Baker's theorem at source** and replace the from-memory quotation in ZSC-06(e); then
+   record the effective irrationality exponent for the class `V \ {0}` if a usable statement
+   exists.
+2. **Sufficient mesoscopic gate (IAD-06)**, unchanged; by ZSC-01 it requires exponent `< 1`.
+3. **Band extremal constant (O-7)** and the Graham–Kolesnik import (IAD-04x), unchanged.
 
 ## Next verdict-changing probe
 
-Build and kernel-check the published Lean development claiming `μ(π) = 2` (it was scanned, not
-built, by the literature helper). Outcome A: it checks — import it with its exact statement, set
-the WALL-16 starting line to `1 + ε`, and attack the sharp borderline in the carry language.
-Outcome B: it fails or cannot be reproduced — the starting line stays `6.1033` and the first
-source-specific gain is the obligation.
+The previous round proposed kernel-checking the unrefereed Lean development of `μ(π) = 2`. The
+literature preflight of this round found no independent kernel pass on record (see SOURCE_MAP),
+and ZSC-01 shows that even a confirmed `μ(π) = 2` yields `v_16 ≤ 1 + ε` and therefore **no**
+saving, no (CH) and not even L2. That probe is no longer verdict-changing for this programme.
+
+The probe that would change the verdict is on the other side: **search the class `V` for a
+restricted-denominator construction.** Concretely, for the simplest element (`log 2`, where
+Padé-type approximants with denominators `2^a·d_k` are classical), determine whether a bound
+`‖2^m log 2‖ ≥ 2^(-cm)` with an explicit `c < 1` is proved in the literature (the helper could not
+confirm the recollected value `c ≈ 0.79` attributed to Rhin 1987) and, if so, whether its method
+transfers along the four-dimensional family `{K·q}` of ZSC-06(d) to the π-line. Outcome A: such a
+bound exists and transfers — the first source-class statement below the wall. Outcome B: it
+exists for `log 2` and provably uses a structure the π-line lacks — that structure is the named
+missing invariant. Outcome C: no restricted bound below 1 exists for any element of `V` — L2 is
+open across the whole class and is the honest frontier.

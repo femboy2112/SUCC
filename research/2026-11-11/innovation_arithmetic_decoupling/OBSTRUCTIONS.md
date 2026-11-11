@@ -136,7 +136,50 @@ each of which destroys the conclusion:
 | seed `0 → a/q^k` (IAD-07) | the above **and** all places `≠ q` | coherence on a full shell |
 | forcing → AT-07 null source | zero seed, complete census, conductor growth | orbit ≡ 0 |
 | `x → 1/17` | Diophantine type at `16^B` | equidistribution |
+| source `(g_π, 0) → (g_H, 0)` (ZSC-06) | zero seed, complete census, rational simple poles, positive `O(n^(-2))` forcing, innovation theorem — for **all** shells at once | everything (completed point 2, carries ≡ 15) |
+| `A_π → A_π + ρA_0` (ZSC-06) | the completed point `π/16`, zero seed, every limit of phase means and correlations | the census and the pole set |
+| seed `0 →` W1 (ZSC-05) | forcing, `v_16 = 0` | any saving; seam density |
 
-A successful argument must be sensitive to all four at once: the specific forcing, the
-authenticated zero seed, the complete place census, **and** something strictly beyond Diophantine
-type. No such mechanism was found in this round.
+A successful argument must be sensitive to all of these at once. After the continuation round the
+list collapses to one sentence (ZSC-06): it must use that the completed point is a **nonzero
+element of the period space `V`** — properness, zero seed and `A ∉ Q·A_0` together — and it must
+use this for something strictly beyond Diophantine type. The census is not an invariant of that
+point. No such mechanism was found in either round.
+
+## Continuation round (ZSC) — additional failed mechanisms
+
+### O-11. "Seam density is the accessible first step toward a signed estimate" — REFUTED AS A STEP (ZSC-05, ZSC-07)
+
+Target A asked for `ρ(N) = o(N)` from the rare-carry inequality `{U_n} ≥ 1 - r(n+1)/16`. The
+inequality concerns a rational of denominator `exp((6+o(1))n)` at scale `n^(-2)` and excludes
+nothing. Three receipts: W1 has `v_16 = 0` and seam density 1; `g_H` is a zero-seeded positive
+`O(n^(-2))` rational source with seam density exactly 1; W3 has a fixed saving and seam density
+`1/2`, W2 is seam-free with no saving. So the target is unreachable from the Diophantine side and
+would buy nothing on the signed side. The only seam fact used downstream — letter 16 has density
+zero — is unconditional (ZSC-03).
+
+### O-12. "`μ(π) = 2`, once verified, opens the wall" — REFUTED (ZSC-01)
+
+A fixed saving `η` needs restricted exponent `≤ (2-η)/(2+η) < 1`; `μ = 2` gives `≤ 1 + ε`.
+Receipt: the Shallit point has bounded partial quotients and `Re W_(2^k) → 1`. The preflight also
+found no independent kernel acceptance of the formalization (SOURCE_MAP).
+
+### O-13. "The zero seed is extra arithmetic information" — REFUTED IN GENERAL, TRUE IN PROPER FORM ONLY (ZSC-06)
+
+Outside the proper normal form the seed is a gauge coordinate: `(g, s)` and
+`(g - (16-z⁸)h, s + ∫h)` have states differing by `O(1/n)` and the same completed point. In proper
+form the zero seed says exactly `ξ ∈ V`; with Baker's theorem this yields transcendence unless
+`A ∈ Q·A_0`, and nothing statistical.
+
+### O-14. "Complete prime genealogy constrains the Archimedean statistics" — REFUTED ASYMPTOTICALLY (ZSC-06(f)4–5)
+
+IAD-07 left asymptotic transfers open. The line `A_π + ρA_0` has different genealogies and
+identical limits of phase means and correlations; `g_H` has a complete genealogy, zero seed and a coherent orbit on every
+shell. No transfer whose hypotheses are satisfied throughout either class can prove a saving.
+
+### O-15. "Carry-renewal structure gives cancellation" — GIVES A CRITERION, NOT AN ESTIMATE (ZSC-02, ZSC-03)
+
+Renewals (letters 16) are logarithmically sparse for every seed and have a rigid local shape.
+Escapes from the fixed points are digit changes; their density is equivalent to a mode-15 saving
+and sufficient for a mode-1 saving. Proving a positive density is the open problem (CH); the
+known rate is logarithmic (ZSC-04).

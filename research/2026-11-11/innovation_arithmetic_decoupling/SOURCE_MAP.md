@@ -36,7 +36,7 @@ refereeing). "Seen" = the cited statement was read in the source or in a faithfu
 |---|---|---|
 | `μ(π) ≤ 7.103205334137…` | D. Zeilberger, W. Zudilin, *Moscow J. Combin. Number Theory* 9 (2020) 407–419; arXiv:1912.06345 | confirmed; best **refereed** bound found |
 | `μ(π) < 7.101862832357` | Y. Bai, arXiv:2609.11276 (2026) | **unrefereed claim**; not imported |
-| `μ(π) = 2` | preprint with Lean formalization in the `openai/math` repository (2026) | **unrefereed claim**; the helper scanned the sources but did **not** build or kernel-check them; not imported |
+| `μ(π) = 2` | preprint (dated 2026-09-24) with Lean formalization in the `openai/math` repository (files first committed 2026-10-06) | **unrefereed claim; not imported.** Second preflight (2026-11-11, continuation): the challenge file `ComparatorChallenges/PiExponent.lean` states the standard `μ(π) = 2` (ineffective threshold) and ends in `sorry`; the purported proof is the separate module `OAI.NumberTheory.PiExponent.Main` over a tree of ≈ 870 files that the helper did **not** scan for `sorry`/`axiom`; the Comparator config whitelists the three standard axioms with the second kernel (nanoda) **disabled**; no CI build and no published `#print axioms`; the entry is absent from the repository's own catalog of main results (`review: unchecked`); the one third-party attempt found ended in a memory limit with no verdict. No independent kernel acceptance is on record. Paper-to-code correspondence unchecked. By ZSC-01 the result would not change any verdict of this dossier |
 | Exponents `v_b`, `v'_b`; `v_b = v_(b^t)`; `μ - 1 ≥ v'_b ≥ v_b` | M. Amou, Y. Bugeaud, "Exponents of Diophantine approximation and expansions in integer bases" (author PDF read; journal details UNVERIFIED) | seen |
 | No improved `v_2(π)`/`v_16(π)` or run-length bound for π | — | none found (absence by search; medium-high confidence) |
 | Complexity of expansions under small `μ` | B. Adamczewski, *Math. Ann.* 346 (2010) 107–116; Y. Bugeaud, D. H. Kim, *Ann. Sc. Norm. Super. Pisa* (5) XVII (2017) 931–947 | seen; inapplicable to π at `μ ≤ 7.10` |
@@ -58,3 +58,28 @@ All derivations are by one model family in one session, with a same-model advers
 (recorded in [VALIDATION](VALIDATION.md)). That is neither external peer review nor kernel
 verification. The maintainer's Scott-transport thesis is quoted verbatim in SCOTT_TRANSPORT.md and
 kept separate from the mathematical statements that test it.
+
+## Continuation round (ZSC) — additional sources
+
+Internal: RIO-09/10/11 (sharpened by ZSC-03/04), AT-06/AT-07 (the null source; ZSC-06 adds an
+elementary proof of the relation and its uniqueness), RIO-01 and the RS hostile control
+`H(n) - 16H(n-1)` (coboundary constructions analogous to the gauge of ZSC-06(b)), RS-03 (existence of separated phases,
+against which (CH) asks for density).
+
+External, checked on 2026-11-11 by a delegated bounded web search (same-model helper; citation
+check, not refereeing). "Seen" as above.
+
+| Fact | Citation | Check |
+|---|---|---|
+| `|π - p/q| > q^(-42)` for all positive integers `p`, `q ≥ 2` | K. Mahler, "On the approximation of π", *Indag. Math.* 15 (1953) 30–42, Theorem 1 | **seen** (reprint in *Documenta Math.* Extra Vol. Mahler Selecta, 2019); used in ZSC-04 |
+| `Σ_(k≥0) u^(-2^k)`, integer `u ≥ 3`, has bounded partial quotients (in `{u-2, u-1, u, u+2}`) | J. Shallit, *J. Number Theory* 11 (1979) 209–217, Theorems 8–9 | **seen** (author's copy); `u = 16` covered; used only as a witness in ZSC-01, Remark 2 |
+| Digit changes of irrational algebraic numbers `≫ (log n)^(3/2)(log log n)^(-1/2)` | Y. Bugeaud, J.-H. Evertse, *Acta Arith.* 133 (2008), Thm 3.1 | **seen** (arXiv:0709.1560); comparison only |
+| Zero relation `0 = P(1,16,8,(-8,8,4,8,2,2,-1,0))`; one zero relation for this shape | D. H. Bailey, "A compendium of BBP-type formulas", §12 eq. (111), Table 1 | **seen**; the count there is a PSLQ computation, not a theorem. ZSC-06(d) proves the relation; ZSC-06(e) proves uniqueness given Baker |
+| Baker's theorem (linear independence of `1, log α_1, …, log α_k` over the algebraic numbers when the logarithms are independent over `Q`) | A. Baker, *Transcendental Number Theory*, CUP 1975, Thm 2.1 | **not re-read this round** (quoted from the standard statement; the helper spent no request on it). Used in ZSC-06(e) only |
+| A bound `‖2^k log 2‖ > 2^(-ck)`, `c < 1` | attributed from memory to G. Rhin (1987) | **unverified**; not used; named in NEXT as a probe |
+| "Finite `μ` ⟹ order `log n` digit changes" | — | no source located; ZSC-04 proves the explicit statement for π directly |
+| Complexity `p(n) - n → ∞` under small `μ` (Adamczewski 2010; Bugeaud–Kim) | as in the first table | thresholds not re-verified; not used |
+
+**Authorship of the continuation.** Same model family, one session. The second adversarial audit
+(recorded in VALIDATION) was a separate read-only instance given no indication of the suspected
+defects; it is not external review.

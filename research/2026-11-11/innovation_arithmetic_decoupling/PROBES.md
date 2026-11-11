@@ -156,3 +156,109 @@ They do not show that the twisted correlations of the true seed tend to 0, that 
 on all large shells, or anything about normality. The true seed looks random-scale on four
 shells; so would any generic point. The decisive content of this dossier is in the theorems and
 the obstructions, not in these tables.
+
+---
+
+# Continuation probe (ZSC)
+
+**Scope.** `probe_zsc.py` tests instances of ZSC-01…06 of [CARRY_FLUX](CARRY_FLUX.md) and the
+repaired IAD-04 corollary, after [PREREGISTRATION_ZSC](PREREGISTRATION_ZSC.md) was committed
+(`d6bdb2bd`). **No outcome changes the status of any OPEN claim.** Raw data: `RESULTS_zsc.json`
+(19 kB; deterministic; fixed seed; no timestamps). Run time ≈ 15 s.
+
+## Instruments and calibration
+
+- Two routes to the digits of `x`: integer arithmetic on an mpmath enclosure, and the literal
+  carries of exact rationals through the cocycle `d_n = κ_(n+1) + ε_(n+1) - 16ε_n` with rational
+  tail enclosures; they agree for `2 ≤ n ≤ 2600`. The look-ahead identity of ZSC-04 compares
+  `⌊16^(n-1)π⌋` from the first route with `⌊C_(42n-41)/16^(41(n-1))⌋` from the second for
+  `2 ≤ n ≤ 40`.
+- Fractional parts are kept to 40 hexadecimal digits and phases are reduced exactly modulo one
+  before a float is formed; inequalities are checked with tolerance `10^-9`.
+- Known answers first: `g_π` through the general source class reproduces the frozen forcing
+  exactly; `L(A_π)` encloses `π/16` and `L(A_0)` encloses 0 to 60 digits; the shadow `1/17` returns
+  `|cos(2π/17)|` at mode 1 and modulus 1 at mode 17.
+
+## Design
+
+Calibration shells `B ∈ {64, 128}`; fresh holdout shells `B ∈ {243, 420, 811, 1210}`; modes
+`h ∈ {1, 3, 15, 17}`; zero-seed horizon `n ≤ 2600`.
+
+## Theorem-grade checks: 247 588, 0 failures
+
+| ID | Checks | Content |
+|---|---|---|
+| ZC-1 | 10 243 (all non-trivial) | stretch lemma (1.1) on π, the witnesses, the Shallit point, shadows, random strings and 40 near-dyadic points |
+| ZC-2 | 9 925 | law (1.2) for `ξ_λ` (`λ = 1/4, 1/2, 3/4`), a random string and W3, hypothesis verified on `32 ≤ B ≤ 2048` |
+| ZC-3 | 177 165 | locality lemma at every position of twelve digit strings |
+| ZC-4 | 360 | ZSC-02 (a), (b) for `k = 2, 3, 4`, (c), on every shell of every string |
+| ZC-5 | 2 872 | renewal lemma from 260 admissible states and on six forced-seam seeds; `J(n) ≥ ⌊log_4 2n⌋` for `n ≤ 2600`; RIO-09 window |
+| ZC-6 | 6 715 | cocycle and the `(ε_n, ε_(n+1), ε_(n+2))` case table: zero seed to 2600, six forced-seam seeds |
+| ZC-7 | 2 737 | runs `≤ 41n`; exact look-ahead for `2 ≤ n ≤ 40` |
+| ZC-8 | 37 360 | W1–W3 on prefixes of length 20 000 |
+| ZC-9 | 90 | gauge identity for three `h`; proper form; rank 7 and kernel `Q·A_0`; partial fractions; null, hostile and `ρ`-family sources for `n ≤ 400` |
+| ZC-10 | 13 | repaired IAD-04 corollary on occupied cells; the retired display is violated at `(100, 1, 1, 1000)` (left side 1, right side negative) |
+| ZC-11 | 24 | `|D_(B,h) - W_B(h)| ≤ (π/32)|h|B^(-2)` between the two routes |
+| controls | 84 | below |
+
+## Zero seed on the shells (π; `c_B` = change density)
+
+| `B` | `c_B` | `|W_B(1)|` | `|W_B(3)|` | `|W_B(15)|` | `|W_B(17)|` | longest run |
+|---|---|---|---|---|---|---|
+| 64 (cal.) | 0.9375 | 0.0629 | 0.0807 | 0.0946 | 0.0427 | 2 |
+| 128 (cal.) | 0.9688 | 0.0654 | 0.0803 | 0.0465 | 0.0630 | 2 |
+| 243 | 0.9424 | 0.0908 | 0.0703 | 0.0289 | 0.0221 | 2 |
+| 420 | 0.9310 | 0.0732 | 0.0260 | 0.0620 | 0.0502 | 2 |
+| 811 | 0.9383 | 0.0454 | 0.0603 | 0.0205 | 0.0270 | 3 |
+| 1210 | 0.9306 | 0.0178 | 0.0385 | 0.0316 | 0.0312 | 4 |
+
+**Predictions (holdout).** ZP-1 (`|c_B - 15/16| ≤ 4·sqrt(15/(256B))`): met, 4 of 4. ZP-2
+(`|W_B(h)| ≤ 4/√B`): met, 16 of 16. ZP-3 (no letter 16, no seam for `n ≤ 2600`): met, not fresh.
+ZP-4 (longest equal-digit run in a shell `≤ 6`): met. ZP-5 (carries of `A_π` and `A_π + A_0`
+differ at `≤ 12` times): met — they differ at exactly two times, `n = 162, 163`, of 2422. These
+readings are what any generic point would give; they are not evidence for (CH) beyond the four
+shells.
+
+## Witnesses and controls (all outcomes as stated in advance)
+
+| Object | Reading |
+|---|---|
+| `ξ_λ` (ZSC-01, Remark 4), least saving `1 - Re W_B(1)` over `32 ≤ B ≤ 2048` | `λ = 1/4`: 1.1859 (formula 1.1869, ceiling 1.2); `1/2`: 0.6585 (0.6594, 0.6667); `3/4`: 0.2819 (0.2826, 0.2857) |
+| Shallit point `K` | `Re W_B(1) = 0.99970, 0.99985, 0.99993` at `B = 256, 512, 1024` |
+| W1 | changes per shell 24, 56, 104, 148 at `B = 243, 1210, 4096, 8192`; seam density `≥ 0.75, 0.85, 0.91, 0.93`; `Re W_B(1) ≥ 0.996` |
+| W2 | no digit 0; at most 2 changes per shell; `Re W_B(1) ≥ 0.9996` |
+| W3 | `c_B = 0.494 … 0.514`; seam density `0.42 … 0.48`; `|W_B(1)| ≈ 0.943 … 0.945` |
+| forced-seam seeds (six) | one letter 16 each, followed by `J(n)+1` zeros; 2–3 carry/digit discrepancies per seam run, never more than 3 |
+| null source `A_0`, zero seed | all carries 0; `|D - 1| ≤ 2π|h|/(8B+1)` |
+| hostile source `g_H`, zero seed | carries 15 from `n = 2`; seam bit 1; `Re D_(B,h) ≥ 1 - 2π|h|T^H_B` |
+| IAD-07 hijack seed, `B = 243`, `q = 1009` | `|W_B(1) - 1| = 1.3·10^-7`; digits constant on the shell |
+| shadows `1/17`, `7/15` | `c_B = 1`, `|W_B(17)| = 1`; `c_B = 0`, `W_B(15) = 1` |
+| two random strings | 60 band instances, 0 misses (positive control for ZP-1, ZP-2) |
+
+## Mutation controls
+
+ZM-2 (stretch lemma with `2N - B + 1`), ZM-3 (renewal length `J + 3`), ZM-4 (the retired IAD-04
+display) and ZM-5 (null vector `A_0 + e_8`) are each rejected.
+
+**ZM-1 was mis-specified in the preregistration and is reported as such.** The registered input
+`y = 1/15 + 3/(2·15·256)` satisfies `‖15y‖ < 1/128` but has **no** digit change (at `j = 1` the
+upward margin is `14/(15·256)`), so it does not exhibit the failure of the mutated threshold. The
+mirror input `y = 1/15 - 3/(2·15·256)` does (`0.10…` in base 16) and rejects the mutation. Both
+are recorded in `RESULTS_zsc.json`; the unit test additionally checks the equality case
+`y = 239/256` and an exhaustive grid of 30 720 points.
+
+## Deviations from the preregistration
+
+- ZC-3/ZC-4 digit strings have length 4300, not 5000.
+- ZC-5: the zero seed, the coherent seed, the null source and the hostile source contain no
+  letter 16 on the horizon, so the renewal lemma is vacuous there (and the last two have a
+  different forcing). It was tested instead from 260 admissible states `{U_n} ∈ [1 - r(n+1)/16, 1)`
+  and on the six forced-seam seeds.
+- Coherent-seed control: only the phase bound was run; its carries were verified in the first
+  round's probe and follow algebraically (`⌊16 - T_n⌋ = 15`).
+- ZC-1 was run on all twelve strings, a superset of the registered inputs.
+
+## What this probe does not show
+
+Nothing about (CH), the seam density, any saving for the zero seed on all large shells, or
+normality. Four holdout shells with `c_B ≈ 15/16` are four shells.
