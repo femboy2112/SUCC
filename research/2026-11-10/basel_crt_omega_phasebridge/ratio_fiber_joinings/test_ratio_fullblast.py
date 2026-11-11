@@ -2,7 +2,7 @@
 import unittest
 from fractions import Fraction as F
 from math import gcd, cos, pi
-from fiber_controls import f, parent, root, coupled_digits, block_counts,period9_mean_components
+from fiber_controls import f, parent, root, coupled_digits, block_counts,period9_mean_components,coupled_digits_null_twist
 from certified_fiber import (bbp_r,bbp_pi_enclosure,fiber_indices,K32,source_digit_correlations,
                              phase_fraction_ticks,atan_interval_recip,pi_machin,
                              trig_interval,certified_mean)
@@ -136,6 +136,20 @@ class RatioExactTests(unittest.TestCase):
             mean=sum(cmath.exp(2j*pi*8*(shift_fraction(3*ell)-shift_fraction(2*ell)))
                      for ell in J)/len(J)
             self.assertGreater(((-1)**delta)*mean.real,cos(pi/16)-1e-10)
+
+    def test_symmetric_twist_null_is_nonproduct(self):
+        # Exact h=8 sign: one additional first-digit step toggles the phase
+        # by half a turn, including hexadecimal wrap 15 -> 0.
+        for d0 in range(16):
+            delta_mod=((d0+1)%16)-d0
+            self.assertEqual((8*delta_mod)%16,8)
+            self.assertEqual(8*(0)//16,0)
+        d=coupled_digits_null_twist(6000)
+        self.assertTrue(all(d[3*ell+1]==d[2*ell+1]
+                            for ell in range(1,1900)))
+        # Both marginals have all 16 symbols in a finite example, but the
+        # exact null and the nonproduct joining are proved in PROOFS.md.
+        self.assertEqual(len(block_counts(d,1)),16)
 
     def test_source_vs_two_digit_locked_joinings(self):
         for A,N,same1,same2,samepar in [

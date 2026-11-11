@@ -3,9 +3,9 @@
 ## Scoped execution
 
 - Baseline: `femboy2112/SUCC` PR #588 at pinned commit `896c9ff3ceec5eb062a72cf5fc9230b6f80e2467`, based on #585 and #584. New files are additive only. AGENTS.md instructions read. The branch is not eligible for main merge ahead of ancestors or their required full gates.
-- Python: 3.13.5, standard library only in the new tests and source certificate. `python -W error -m unittest -q test_ratio_fullblast.py`: **13 tests PASS**, no warnings. Individual functions use exact integer/Fraction arithmetic, with floating outputs only for presentation; exact public tick intervals are rounded OUTWARD.
+- Python: 3.13.5, standard library only in the new tests and source certificate. `python -W error -m unittest -q test_ratio_fullblast.py`: **14 tests PASS**, no warnings. Individual functions use exact integer/Fraction arithmetic, with floating outputs only for presentation; exact public tick intervals are rounded OUTWARD.
 - Independent basis check: original `r(n)` 4-pole sum equals the separate one-fraction formula over n=1..29. Machin rational arctan bounds independently enclose the BBP source-derived π interval. These routes share the same researcher and are not blind external reviewers.
-- Finite two-to-three controls: `f(2ell)=3ell`, `f(2ell+1)=3ell+1`, root-class distinctness, twisted digit-copy constraints, synthetic uniform block counts, `K` recurrence/gcd, period-9 residues, coherent wrong seed and `1/240` common gauge.
+- Finite two-to-three controls: `f(2ell)=3ell`, `f(2ell+1)=3ell+1`, root-class distinctness, twisted digit-copy constraints, symmetric null-twist calibration, synthetic uniform block counts, `K` recurrence/gcd, period-9 residues, coherent wrong seed and `1/240` common gauge.
 - **Source finite holdout (not blind or random):** exact `h=8` phase means for A=263,521,1031; original source only, guard=12 extra hex digits, `2π` from rational Machin. Denote `N=L_A`; exact outward ticks are divided by 10^12:
   - A263, N44: Re [−31276714603,−31276714602], Im [−127208057554,−127208057553]
   - A521, N87: Re [88010046868,88010046869], Im [44604117458,44604117459]

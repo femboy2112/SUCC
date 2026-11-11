@@ -61,8 +61,9 @@
     }
   ],
   "leaves_asymptotic_open": true,
+  "null_joining_control": "independent fair first-digit twist yields zero h=8 mixed coefficient, but second-digit equality makes joining nonproduct",
   "outward_scale": 1000000000000,
   "scope": "finite original-zero four-pole BBP certified h=8 ratio fiber; not normality",
   "source_only": true,
-  "tests": "13 focused stdlib tests passed, -W error; independent mpmath 180-digit smoke passed; not blind"
+  "tests": "14 focused stdlib tests passed, -W error; independent mpmath 180-digit smoke passed; not blind"
 }

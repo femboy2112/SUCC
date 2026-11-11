@@ -3,6 +3,7 @@
 | ID | Scope / status | Formal receipt / falsifier |
 |---|---|---|
 | FJ-01 | DISCLOSED: two invariant `T²×T³` joinings with identical Haar marginals and mixed real `h=8` coefficient ≥+cos(π/16) or ≤−cos(π/16) | `PROOFS.md` §1, digit-block iid construction and first-two-digit bound; refutes marginal→joint Haar |
+| FJ-01N | DISCLOSED: fair independent first-digit twists give exact zero mixed h=8 coefficient while preserving equality of second digits; both marginals Haar, pairing remains nonproduct | `PROOFS.md` §1 STEALTH-NULL; sign average over `Δ_0=0,1`; normal-orbit realization in §2 |
 | FJ-02 | DISCLOSED: base-16 NORMAL α with nondecaying mixed h=8 fiber for every epoch; ± orientations | §2, injective `f(n)=floor(3n/2)` chain, finite dependency Var `O_k(N log N)`, square Borel–Cantelli; same-seed synthetic tests are NOT a proof of any single generated sample's normality |
 | FJ-03 | DISCLOSED: periodic `α=1/9`, h not divisible by 3, `|T_A|≤2/L_A` despite nonnormal | §3, `K_ell mod9=6,3,0` and `1+ω+ω²=0`; test all residues |
 | FJ-04 | DISCLOSED: irrational α avoids eventual uniform phase locking, limsup ≥1/1052929; not an average cancellation | §4, integer recurrence and unstable roots; irrational sparse radix16 digit counterexample shows subsequence T_A→1 |

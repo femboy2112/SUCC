@@ -61,3 +61,19 @@ def period9_mean_components(J,h):
     c=Counter((h*periodic_K9(ell)//3)%3 for ell in J)
     # 1 real=1; w^1/w^2 real=-1/2, imaginary = +/-sqrt(3)/2
     return (2*c[0]-c[1]-c[2],c[1]-c[2])
+
+
+def coupled_digits_null_twist(N:int,seed:int=2026):
+    """Finite fair-independent edge-twist control; never a normality proof."""
+    if N<=0: return []
+    roots=random.Random(seed)
+    twists=random.Random(seed+101)
+    a=[0]*(N+1)
+    for n in range(1,N+1):
+        pred=parent(n)
+        if pred is None:
+            a[n]=roots.randrange(16)
+        else:
+            delta=twists.randrange(2) if pred%2==0 else 0
+            a[n]=(a[pred]+delta)%16
+    return a

@@ -71,6 +71,18 @@ For odd-eight `h=8`, the first contribution is a half-integer phase of parity `�
 
 This is an **operational two-frame twist** with declared relative digit parity and a common basis. It is NOT a scalar Wilson-loop holonomy (vertex phase products still telescope to 1); nor is it a quantum phase, an RH result, or an inference from marginal Haar to joint Haar. In particular both joinings share identical *complete* Haar marginals, but have nearly opposite mixed Fourier coefficients. The product joining has zero nontrivial mixed coefficients; neither `ν_0` nor `ν_1` is that joining.
 
+### Null calibration: exactly zero h=8 with a NONPRODUCT joining
+
+Use the *same* 2:3 packet, but replace the fixed twist by independent fair bits `Δ_r∈{0,1}` for each block: `Y_(3r)=(X_(2r)+Δ_r) mod16`, `Y_(3r+1)=X_(2r+1)`, `Y_(3r+2)=Z_r`. The two marginals remain Haar, and the law `ν_null` remains invariant under `(T²,T³)` because the full packets are independent and identically distributed. The first two digits of `x,y` agree in their **second** digit, while their first digits differ by `Δ_0 (mod16)`.
+
+For `h=8`, the phase splits into `e(8(y−x))=(-1)^(Δ_0) e(8ε)`, with `|ε|≤16^(-2)` and with the tail `ε` independent of `Δ_0` (the latter changes **only** `Y_0`; all other packet twists `Δ_r`, `r≥1`, are independent). Therefore
+
+\[\boxed{\int e(8(y-x))\,d\nu_{\rm null}=0,\quad
+\nu_{\rm null}(\text{second digits agree})=1\ne1/16
+\text{ for product Haar}.}\tag{STEALTH-NULL}\]
+
+This is a *genuine calibrated null*: a single mixed Fourier mode vanishes exactly, yet the coupling is maximally nonproduct on another directly observable cylinder. Thus even **zero signed 3/2 h=8 amplitude plus individually perfect Haar marginals does not imply two-time independence**. It also gives a third, neither-positive-nor-negative null orientation with the same local carrier. No source-specific π consequence follows from this abstract joining.
+
 ## 2. Theorem FJ-02: the joinings are realized by base-16 NORMAL single orbits
 
 **Status: DISCLOSED via variance/Borel–Cantelli.** Define the *injective two-to-three successor* on positive integers `n≥2`:
@@ -113,6 +125,8 @@ Let `Z_n(w)` be its occurrence indicator and `C_N(w)=Σ_(n≤N)Z_n(w)`. Two indi
 Chebyshev at the square checkpoints `N_j=j²` gives `Pr(|C_(N_j)/N_j−16^(−k)|>ε)≪_(k,ε)log(j)/j²`, summable. Borel–Cantelli gives convergence almost surely along the squares. Since successive squares have relative gap tending to zero and indicators are between zero and one, this extends to all `N`. Intersect the probability-one events for all finite words. **Therefore for each δ, almost every chain assignment gives a base-16 NORMAL α_δ satisfying NORMAL-COHERENCE for every A.** This is a quantified construction, not a single finite pseudorandom output being certified normal.
 
 Moreover, the empirical pair measures `ν_(A,αδ)` converge almost surely (on cylinder sets, hence weakly) to the *explicit* `ν_δ` in FJ-01. For each fixed pair of finite digit windows and sufficiently large `\ell`, the only shared chain between the windows at `2\ell+i` and `3\ell+j` is at `j=\lfloor3i/2\rfloor`, while there are no within-window identifications. Thus its pair-word law is precisely the independent 2:3-PACKET law. Across `\ell`, the indicators have the same `O_k(log A)` dependency bound. The previous square-checkpoint argument proves joint empirical convergence, with the start-set `J_A` a contiguous interval of growing size; convergence of global prefixes transfers to intervals `[A/2,2A/3]` by subtraction and the fixed positive relative length. This establishes a **nonproduct invariant joining realized by a single normal radix-16 orbit**, with sign tunable by one digit twist.
+
+If each even-parent edge instead carries an independent fair digit twist and odd-parent edges still copy, the same root-class independence proof shows that almost every resulting single digit sequence is normal. The cross-scale pair laws now converge almost surely to `ν_null` above: fixed windows identify each even-parent edge once, the fair twist is independent of the tail, and the same `O_k(N log N)` variance argument applies. The resulting normal orbit has asymptotically **zero** ratio-fiber h=8 mean while its limiting joining remains nonproduct. This proves that zero mixed coefficient is not a proxy for a uniquely Haar product joining.
 
 **Crucible:** This proves that original-zero ratio-fiber cancellation, if ever established, would be stronger than base-16 normality; it cannot be deduced from normality or from the two Haar marginals. A theorem tailored to the authentic `α=π` may still succeed, but must reject these *other-seed* source controls.
 
@@ -207,7 +221,7 @@ The finite phases have magnitudes approximately 0.1310, 0.0987 and 0.0545, respe
 ## 7. Exact status and next falsification opportunity
 
 - **DISCLOSED (paper elementary, scoped):** invariant 2:3 joinings, normal single-orbit realization with opposite h=8 mixed sign, exact periodic false positive, recurrence anti-locking, interval energy identity, and finite original-source rational enclosures.
-- **OBSERVED (local):** 13 focused stdlib unit tests; exact rational output intervals and source digit comparisons. Other repo tests/hosted CI/Lean were not executed this round.
+- **OBSERVED (local):** 14 focused stdlib unit tests; exact rational output intervals and source digit comparisons. Other repo tests/hosted CI/Lean were not executed this round.
 - **REFUTED by explicit controls:** 'marginal Haar implies mixed h=8 fiber decay'; 'normality implies 3/2 fiber h=8 decay'; 'single-mode 3/2 fiber decay implies normality'; 'π irrationality + all-prime K passport forces cancellation'; and 'averaging source uncertainty is the same as selecting original zero'.
 - **UNVERIFIED / OPEN:** source-selected `T_(A,8)(π)→0`, and even if proved, a transport to ordinary signed Basel/Weyl decay; π base-16 normality and RH; a completed Weil source-selected inequality that controls the mixed joining coefficient. None of these is promoted by the finite table.
 
