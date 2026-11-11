@@ -5,7 +5,7 @@ created from `41bbbe56bbb36bcbf2a171669bf508caea6f688b` (draft #591).
 
 ## Actually executed in this work session
 
-- Python 3.13 standard-library unit tests: **19 methods passed**, ~0.72 s.
+- Python 3.13 standard-library unit tests: **22 methods passed**, ~0.77 s.
 - Positive controls: several rational alpha choices, exact orthogonality,
   exact integer counts, zero-cell Fourier DFT reconstruction, independent
   midpoint Riemann quadrature, independent closed-form formula for first
@@ -70,3 +70,31 @@ python -m unittest discover -s tests -p 'test_*.py'
 
 The last four lines are mandatory repository gates for an eventual merge,
 **not** claims about commands executed in this work session.
+
+## Additive fixed-depth infinite-series fingerprint, second pass
+
+- **22/22 focused tests PASS** (Python 3.13, 0.714 s on the last clean
+  run) after adding fixed-depth coefficient evaluation and hostile checks.
+  The unchanged canonical source shim was still needed for the isolated
+  local testing workspace; no full-repo suite is claimed.
+- Proved on paper the absolutely convergent signed kernel coefficient
+  `A_(K,h)(alpha)` for every fixed K, with rational omitted-tail certificate
+  `512*K*16^(K-N)/(675*|h|)`. The identity follows from the same exact
+  high/high orthogonality as MS-01 and not from fitted source data.
+- An independent **mpmath 100-digit evaluation** of the closed-form genuine
+  `h=8,K=1` sine series agreed with the separate complex-cell-kernel
+  implementation at N=4,8,12,20 to the prescribed analytic tail bound
+  plus a `1e-12` floating allowance. The approximate limit was
+  `0.0336650405099602078179239647489392279333`. The result is a
+  numerical calibration, **not** a rigorous mpmath enclosure or an
+  asymptotic normality proof. Full receipt:
+  `receipts/fixed_depth_fingerprint.json`.
+- The first attempted ad hoc mpmath import omitted registering its
+  dataclass module in `sys.modules`, producing a Python dataclass import
+  error before executing any mathematical assertion. Registering the
+  module correctly fixed this local harness state; the actual unit-test
+  loader already used the correct setup. The successful rerun was retained.
+- `python -m compileall -q` succeeded on both changed Python files.
+- All proof-status labels remain: fixed-depth fingerprint PROVED PAPER,
+  numerical phase data OBSERVED FINITE, and signed *deep*-scale BBP
+  cancellation, statistical contraction, pi digit parity and pi normality OPEN.

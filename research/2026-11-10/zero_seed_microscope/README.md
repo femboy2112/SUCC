@@ -57,3 +57,16 @@ on rational Machin bounds and geometric majorants.
 **OPEN:** pi base-16 normality, original-zero hexadecimal digit parity,
 source-selected cumulative deep-packet decay, the independently bounded
 statistical Haar contraction in issue #590, and RH.
+
+## Addendum: fixed-depth signed asymptotic fingerprint tower
+
+For every fixed seed microscope depth K and every integer Fourier frequency
+h≠0, the first K early–late rows of the exact signed pair kernel converge
+absolutely to a coefficient A_(K,h)(alpha), with a certified geometric
+truncation error. The scalar energy satisfies
+`E_(N,K,h)=1/N+A_(K,h)(alpha)/N²+O_(K,h)(16^(K-N)/N²)`.
+The true h=8 zero-seed sign implies `A_(1,8)(pi/16)>0`; the coherent
+completed-zero counterseed has `A_(1,8)(0)=0`. This is a useful
+source-selected *fixed-depth* fingerprint, but it cannot control the
+deep window K=N-o(N) relevant to π normality. See MS-04b in
+`MICROSCOPE_THEOREMS.md`.

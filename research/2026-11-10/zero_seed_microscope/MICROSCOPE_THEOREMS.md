@@ -241,6 +241,77 @@ bound: any source whose selected value is pi/16 has the same first packet.
 It is genuine source-selected finite-*scale* information, not a proof
 of the missing global source-specific innovation estimate.
 
+## MS-04b: fixed-depth infinite signed fingerprint tower — PROVED PAPER
+
+For each **fixed** integer K>=0 and each nonzero integer h, the
+coefficient of N^-2 in the spatial seed-cell Fourier energy has a
+source-dependent limit. Define the convergent signed series
+
+\[
+A_{K,h}(\alpha)=2\operatorname{Re}
+\sum_{m=0}^{K-1}\sum_{n=m+1}^{\infty}
+ e\!\left(h(16^n-16^m)\alpha\right)
+\Phi_K\!\left(h(16^n-16^m)\right).
+\tag{MS11}
+\]
+
+At K=0 the sum is empty and `A_(0,h)=0`. For every N>=max(K,1),
+all high/high offdiagonal terms cancel exactly by MS1, so
+
+\[
+\boxed{\left|N^2\left(\mathcal E_{N,K}(h)-\frac1N\right)
+ -A_{K,h}(\alpha)\right|
+ <\frac{512K}{675|h|}16^{K-N}.}
+\tag{MS12}
+\]
+
+**Proof.** Every term with `m,n>=K`, `m!=n`, vanishes by the exact
+seed-cell orthogonality. Hence `N^2(E_(N,K)-1/N)` consists precisely of
+the finite pairs `0<=m<K, m<n<N`, each paired with its conjugate. For
+`n>=N>=K`, MS2's kernel bound gives
+`|Phi_K(h(16^n-16^m))|<=16^(K-n+1)/(15*pi*|h|)`.
+There are exactly K possible early values of m at each n>=N.
+The omitted signed tail is therefore bounded absolutely by
+
+\[
+ 2K\sum_{n=N}^\infty\frac{16^{K-n+1}}{15\pi|h|}
+ =\frac{512K}{225\pi|h|}16^{K-N}
+ <\frac{512K}{675|h|}16^{K-N},
+\]
+
+using `pi>3`. Thus the infinite series converges absolutely, with a
+uniform rational certificate of its truncation error. QED.
+
+This produces an **infinite vector of infinite vectors**
+`(A_(K,h)(alpha))_(K>=0,h!=0)`, each coordinate a genuine signed
+source-dependent convergent series rather than a finite-digit histogram.
+It is a rigorous reconstruction instrument, not a source-derived theorem
+that its coordinates eventually vanish or force normality.
+
+The corresponding signed *first-child* coefficient obeys
+
+\[
+\boxed{\lim_{N\to\infty}N^2\mathcal J_{N,K}(h)
+ =A_{K+1,h}(\alpha)-A_{K,h}(\alpha).}
+\tag{MS13}
+\]
+
+The MS8 theorem additionally implies
+`A_(1,8)(pi/16)>=16/(225*pi)>0` for authentic pi;
+for the coherent counterseed with completed alpha=0,
+`A_(1,8)(0)=0`. This is a sign-sensitive difference between the two
+realized values, certified by a source-independent analytic tail formula.
+No claim of priority outside SUCC is made for the elementary
+Fourier-series limit.
+
+**Strong boundary:** K is fixed **before** N tends to infinity.
+The error has a factor `16^(K-N)` and says nothing useful about the
+aggregate at K=N-o(N) without new estimates uniform in K and the
+source-selected signed phase. The complete fixed-depth tower can be
+reconstructed for any alpha, including rational nonnormal controls.
+It does not supply the missing real-carry/CRT cancellation or prove the
+original-zero statistical contraction.
+
 ## MS-05: next proof obligation (OPEN)
 
 Fix any `K_N=N-o(N)`, e.g. `N-floor(sqrt(N))`. A sufficient and
@@ -289,6 +360,7 @@ source-specific signed cancellation *across all levels*.
 | MS-02 spatial/local limits and fixed-depth bound | PROVED PAPER | No selected-zero signed decay |
 | MS-03 zero-child packet and telescope | PROVED PAPER | Representation of existing Weyl obstruction |
 | MS-04 first authentic h=8 sign | PROVED PAPER + finite exact rational arithmetic | O(N^-2), not hexadecimal digit parity |
+| MS-04b fixed-depth signed coefficient and geometric tail | PROVED PAPER + finite approximate calibration | Requires K fixed before N grows |
 | MS-05 cumulative deep-packet decay | OPEN | Equivalent to original pi Weyl gate |
 | Statistical D_N dyadic contraction | OPEN | No independently vanishing epsilon_N derived |
 | Exact numerical sign from float diagnostics | OBSERVED only | Rational analytic sign witness is separate |

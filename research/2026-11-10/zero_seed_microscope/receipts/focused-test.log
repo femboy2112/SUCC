@@ -10,6 +10,8 @@ test_source_alpha_contract_canonical (test_seed_microscope.AnalyticVsIndependent
 test_uniform_seed_parseval (test_seed_microscope.AnalyticVsIndependentQuadrature.test_uniform_seed_parseval) ... ok
 test_zero_scale_telescoping (test_seed_microscope.AnalyticVsIndependentQuadrature.test_zero_scale_telescoping) ... ok
 test_exact_high_high_orthogonality (test_seed_microscope.ExactRadixTests.test_exact_high_high_orthogonality) ... ok
+test_fixed_depth_h8_sign_survives_infinite_limit (test_seed_microscope.ExactRadixTests.test_fixed_depth_h8_sign_survives_infinite_limit) ... ok
+test_fixed_depth_scaled_fingerprint_tail_bound (test_seed_microscope.ExactRadixTests.test_fixed_depth_scaled_fingerprint_tail_bound) ... ok
 test_invalid_inputs_rejected (test_seed_microscope.ExactRadixTests.test_invalid_inputs_rejected) ... ok
 test_kernel_conjugacy (test_seed_microscope.ExactRadixTests.test_kernel_conjugacy) ... ok
 test_kernel_zero_exact_even_at_large_frequency (test_seed_microscope.ExactRadixTests.test_kernel_zero_exact_even_at_large_frequency) ... ok
@@ -17,8 +19,9 @@ test_machin_rational_certificate (test_seed_microscope.ExactRadixTests.test_mach
 test_pair_counter (test_seed_microscope.ExactRadixTests.test_pair_counter) ... ok
 test_point_and_quantization_budgets (test_seed_microscope.ExactRadixTests.test_point_and_quantization_budgets) ... ok
 test_rigorous_fixed_depth_cross_pair_bound (test_seed_microscope.ExactRadixTests.test_rigorous_fixed_depth_cross_pair_bound) ... ok
+test_scaled_limit_strict_validation (test_seed_microscope.ExactRadixTests.test_scaled_limit_strict_validation) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.681s
+Ran 22 tests in 0.714s
 
 OK

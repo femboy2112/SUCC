@@ -1,0 +1,42 @@
+{
+  "bound_is_source_independent": true,
+  "checks": [
+    {
+      "N": 4,
+      "difference_from_mp_nonrigorous": "0.0000134668574539081821",
+      "omitted_tail_bound_rational": "1/43200",
+      "partial_float_nonrigorous": "0.033678507367414116",
+      "within_exact_analytic_tail_plus_float_allowance": true
+    },
+    {
+      "N": 8,
+      "difference_from_mp_nonrigorous": "2.86020847817923965e-10",
+      "omitted_tail_bound_rational": "1/2831155200",
+      "partial_float_nonrigorous": "0.03366504022393936",
+      "within_exact_analytic_tail_plus_float_allowance": true
+    },
+    {
+      "N": 12,
+      "difference_from_mp_nonrigorous": "1.80781792396474894e-15",
+      "omitted_tail_bound_rational": "1/185542587187200",
+      "partial_float_nonrigorous": "0.0336650405099584",
+      "within_exact_analytic_tail_plus_float_allowance": true
+    },
+    {
+      "N": 20,
+      "difference_from_mp_nonrigorous": "2.78179239647489392e-17",
+      "omitted_tail_bound_rational": "1/796899343984252629811200",
+      "partial_float_nonrigorous": "0.03366504050996018",
+      "within_exact_analytic_tail_plus_float_allowance": true
+    }
+  ],
+  "claim": "For fixed K,h!=0, N^2 (E_(N,K,h)-1/N) converges to A_(K,h)(alpha), absolute tail <512K/(675|h|)*16^(K-N)",
+  "coherent_counterseed_first_coeff_exact": "A_(1,8)(0)=0",
+  "example": "K=1,h=8",
+  "independent_mp_h8_closed_form_float": "0.0336650405099602078179239647489392279333",
+  "positive_all_N_sign_certified_rational": "A_(1,8)(pi/16)>=16/(225*pi)>0",
+  "python_module_sha256": "ca217e13e72b440a9198d57f5785782d20e7587828a95a448ade33d41e41e10f",
+  "status": "FINITE_NUMERICAL_CALIBRATION + PROVED PAPER RATIONAL ANALYTIC TAIL; PI NORMALITY OPEN",
+  "true_seed": "alpha=pi/16 via imported classical BBP identity, phase bracket from unchanged four-pole r(n)",
+  "warning": "mpmath and complex kernel are NUMERICAL diagnostics. Rational truncation error controls the infinite series, not floating-point rounding. A proof of pi normality or source-selected Haar contraction has not been produced."
+}

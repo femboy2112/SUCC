@@ -38,3 +38,14 @@ independently source-derived all-N upper bound
 conditioned high-depth packet sum. That would imply pi normality and,
 via #591's established Haar identities, the existence of the desired
 statistical contraction error. Until then, the statement remains OPEN.
+
+### Tower coefficient transport
+
+The newly proved fixed-depth coefficient A_(K,h)(alpha) is an absolutely
+convergent signed row series, with explicit O(16^(K-N)) tail. This allows
+arithmetic investigation of **which residues and carries control the
+increment** A_(K+1,h)-A_(K,h), rather than finite sample energies. The
+critical unsolved step is a nontrivial bound uniform in K up to N-o(N).
+No reordering of the fixed-K limit and K~N is authorized without a
+quantitative uniform proof. Test any proposed transfer against alpha=0
+and PR #591's rational counterseed shadows.

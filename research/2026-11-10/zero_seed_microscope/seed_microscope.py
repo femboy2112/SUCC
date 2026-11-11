@@ -221,6 +221,43 @@ def seed_energy(alpha: F, n: int, k: int, h: int = 1) -> float:
     return _energy(alpha, n, h, k, None)
 
 
+def fixed_depth_scaled_limit_tail(k: int, h: int, cutoff: int) -> F:
+    """Rational upper bound on |A_(K,h) - N^2(E_(N,K,h)-1/N)|.
+
+    A_(K,h) is the absolutely convergent infinite off-diagonal series,
+    and the cutoff N must satisfy N>=max(1,K). This bound pays all omitted
+    early/late pairs and is uniform over source phases alpha. It is
+    independent of floating-point evaluation or the source's normality.
+    """
+    _natural(k, "depth")
+    _frequency(h)
+    _natural(cutoff, "cutoff", max(k, 1))
+    return F(512 * k, 675 * abs(h) * 16 ** (cutoff - k))
+
+
+def scaled_fixed_depth_partial(alpha: F, k: int, h: int, cutoff: int) -> float:
+    """Approximate the first cutoff pair terms of A_(K,h)(alpha).
+
+    A_(K,h) = 2 Re sum_(0<=m<K, n>m) e(h(16^n-16^m)alpha)
+                     * Phi_K(h(16^n-16^m)).
+    This uses approximate trig, NOT a rounded certified value; the separate
+    returned rational error bound accounts only for omitted analytic terms.
+    """
+    if type(alpha) not in (F, int):
+        raise TypeError("rational alpha required")
+    _natural(k, "depth")
+    _frequency(h)
+    _natural(cutoff, "cutoff", max(1, k))
+    terms = 0.0
+    for m in range(k):
+        for n in range(m + 1, cutoff):
+            q = signed_frequency(n, m, h)
+            kernel = normalized_cell_kernel(q, k)
+            if kernel != 0j:
+                terms += 2 * (_angle(q * F(alpha)) * kernel).real
+    return terms
+
+
 def child_energy(alpha: F, n: int, k: int, a: int, h: int = 1) -> float:
     """Approximate energy on child a of zero seed cell at level k."""
     return _energy(alpha, n, h, k, a)

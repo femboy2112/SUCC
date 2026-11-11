@@ -60,6 +60,41 @@ class ExactRadixTests(unittest.TestCase):
                             abs(m.seed_energy(a,n,k,h)-1/n),
                             float(m.fixed_depth_deviation_upper(n,k,h))+1e-12)
 
+    def test_fixed_depth_scaled_fingerprint_tail_bound(self):
+        # The first K rows of the signed pair matrix survive as N increases.
+        # A fixed-depth infinite row sum exists, with source-independent
+        # rational tail bound, even for the constant-zero hostile source.
+        for a in (F(0), F(1,96), F(7,19)):
+            for k in (0, 1, 2, 3):
+                for h in (1, 8, -3):
+                    for n in (max(4,k), 8, 12):
+                        trunc = m.scaled_fixed_depth_partial(a,k,h,n)
+                        actual = n*n*(m.seed_energy(a,n,k,h)-1/n)
+                        self.assertAlmostEqual(trunc, actual, delta=3e-12)
+                        future = m.scaled_fixed_depth_partial(a,k,h,n+14)
+                        self.assertLessEqual(abs(future-trunc),
+                            float(m.fixed_depth_scaled_limit_tail(k,h,n)) + 3e-12)
+        self.assertEqual(m.scaled_fixed_depth_partial(F(0),0,8,8),0.0)
+        self.assertEqual(m.fixed_depth_scaled_limit_tail(0,8,9),F(0))
+
+    def test_fixed_depth_h8_sign_survives_infinite_limit(self):
+        c = m.certify_first_weyl8_detail()
+        lo,hi = m.source_alpha_interval(32)
+        a=(lo+hi)/2
+        for horizon in (4,8,16):
+            finite = m.scaled_fixed_depth_partial(a,1,8,horizon)
+            tail = m.fixed_depth_scaled_limit_tail(1,8,horizon)
+            self.assertGreater(finite-float(tail), 16/(225*float(c.pi_upper))-1e-11)
+        self.assertAlmostEqual(m.scaled_fixed_depth_partial(F(0),1,8,16),0.0,delta=1e-12)
+
+    def test_scaled_limit_strict_validation(self):
+        for k,h,cutoff in [(-1,8,4),(1,0,4),(1,1,0),(5,1,4),(True,1,4)]:
+            with self.subTest(k=k,h=h,cutoff=cutoff), self.assertRaises(ValueError):
+                m.fixed_depth_scaled_limit_tail(k,h,cutoff)
+        for a in (0.5,'0',None,True):
+            with self.subTest(a=a),self.assertRaises(TypeError):
+                m.scaled_fixed_depth_partial(a,1,1,5)
+
     def test_machin_rational_certificate(self):
         c=m.certify_first_weyl8_detail()
         self.assertEqual(c.sign,"POSITIVE_FOR_EVERY_N_GE_2")
