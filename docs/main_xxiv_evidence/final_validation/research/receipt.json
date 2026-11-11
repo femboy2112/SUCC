@@ -1,0 +1,333 @@
+{
+  "head": "9e68b830e834d5560b95bd4c428fb5f079e9db33",
+  "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "name": "basel_crt_omega_phasebridge",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-10/basel_crt_omega_phasebridge",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 3.596,
+      "log": "basel_crt_omega_phasebridge.log",
+      "sha256": "2e5778f0dd21f005c4279a40192dd2a6dcb7c9328b7500bbe713bde3500fdc7e"
+    },
+    {
+      "name": "basel_crt_omega_phasebridge-prime_archimedean",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.135,
+      "log": "basel_crt_omega_phasebridge-prime_archimedean.log",
+      "sha256": "785f9b07d279aa2faeec730aa331052356104a2f32fca2319b1cecd133fb0f20"
+    },
+    {
+      "name": "basel_crt_omega_phasebridge-ratio_fiber_joinings",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-10/basel_crt_omega_phasebridge/ratio_fiber_joinings",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 4.126,
+      "log": "basel_crt_omega_phasebridge-ratio_fiber_joinings.log",
+      "sha256": "3726cef6de2a627931ae3782f7ff8f3bbd0693f709c684d955616d2e6f342f3e"
+    },
+    {
+      "name": "cursed_categories_dedekind_yoneda",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-10/cursed_categories_dedekind_yoneda",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.099,
+      "log": "cursed_categories_dedekind_yoneda.log",
+      "sha256": "d80b659643296db742d94bfd48966f632869036aceb3550176073f86dc180b72"
+    },
+    {
+      "name": "circle_line_lr_observer-height_shield",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-10/circle_line_lr_observer/height_shield",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.159,
+      "log": "circle_line_lr_observer-height_shield.log",
+      "sha256": "748b97711344163dcf20c9434353ba657a5625b142c06973a87b170c2ff5670b"
+    },
+    {
+      "name": "circle_line_lr_observer-zero_anchor_identity",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-10/circle_line_lr_observer/zero_anchor_identity",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.317,
+      "log": "circle_line_lr_observer-zero_anchor_identity.log",
+      "sha256": "28586fde028eb0b9e415a04d3095cebcd2736a98a086e1d565392f47c0d589ae"
+    },
+    {
+      "name": "gaussian_circle_long_lag-gaussian_circle_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/gaussian_circle_long_lag/gaussian_circle_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.103,
+      "log": "gaussian_circle_long_lag-gaussian_circle_probe.py.log",
+      "sha256": "07735a1fcf652c69ac2dd3de0b7c0d33f898e6b9a33407bf94aa94ba5bc1cb1a"
+    },
+    {
+      "name": "gaussian_circle_long_lag-viete_three_way_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/gaussian_circle_long_lag/viete_three_way_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.033,
+      "log": "gaussian_circle_long_lag-viete_three_way_probe.py.log",
+      "sha256": "855efa52041b1050a0fe3feb5b4ecfe090a0150321e09f1bd00549fdc9470c9c"
+    },
+    {
+      "name": "gaussian_circle_long_lag-source_pair_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/gaussian_circle_long_lag/source_pair_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.284,
+      "log": "gaussian_circle_long_lag-source_pair_probe.py.log",
+      "sha256": "52c3eda22910b00a61cfaa65d2dd0be759ce1a65549a9b48a838301be35dcdb3"
+    },
+    {
+      "name": "gaussian_circle_long_lag-long_lag_holdout.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/gaussian_circle_long_lag/long_lag_holdout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.509,
+      "log": "gaussian_circle_long_lag-long_lag_holdout.py.log",
+      "sha256": "90cc6b985c08d1299469ab6e5246d632595e2915c6c4b534d4b857f702249507"
+    },
+    {
+      "name": "cursed_categorical_computation-round_ii_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/cursed_categorical_computation/round_ii_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.891,
+      "log": "cursed_categorical_computation-round_ii_probe.py.log",
+      "sha256": "8049beffcd104f037fdec16491c2d2190c9166b0400303ff9d97e87ee8deeffc"
+    },
+    {
+      "name": "cursed_categorical_computation-round_iii_dedekind-dedekind_order_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/dedekind_order_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.089,
+      "log": "cursed_categorical_computation-round_iii_dedekind-dedekind_order_probe.py.log",
+      "sha256": "74c45a2f72a3d7f55a778f7c0f3011c251e01e13773125bad4d82322f8b27948"
+    },
+    {
+      "name": "cursed_categorical_computation-round_iii_dedekind-computation_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/computation_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.263,
+      "log": "cursed_categorical_computation-round_iii_dedekind-computation_probe.py.log",
+      "sha256": "5d44f4cf16f9d2257739aa0b0bf8920b9e40ecc0b6d6214e41bab2be50a06ee9"
+    },
+    {
+      "name": "cursed_categorical_computation-round_iii_dedekind-rational_compiler_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/cursed_categorical_computation/round_iii_dedekind/rational_compiler_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.524,
+      "log": "cursed_categorical_computation-round_iii_dedekind-rational_compiler_probe.py.log",
+      "sha256": "20dcfac9c80d786e9365af5944552488ec3bc23c12e360b8190d999e51744373"
+    },
+    {
+      "name": "circle_line_lr_observer-observer_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/circle_line_lr_observer/observer_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.601,
+      "log": "circle_line_lr_observer-observer_probe.py.log",
+      "sha256": "ef13b7db3abbd7e0a75004fbc517d47f8ccd44e577400b288a64b44517261012"
+    },
+    {
+      "name": "aperiodic_circle_observer-aperiodic_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/aperiodic_circle_observer/aperiodic_probe.py",
+        "--output",
+        "/tmp/succ-main-xxiv-final-validation/research/aperiodic_circle_observer-aperiodic_probe.py/receipt.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.365,
+      "log": "aperiodic_circle_observer-aperiodic_probe.py.log",
+      "sha256": "bd237dd651503566f87fabe93ccb2a53e8b156cf321fd01ebf3bcce53ba14ff3"
+    },
+    {
+      "name": "aperiodic_circle_observer-cycle_independent_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/aperiodic_circle_observer/cycle_independent_probe.py",
+        "--output",
+        "/tmp/succ-main-xxiv-final-validation/research/aperiodic_circle_observer-cycle_independent_probe.py/receipt.json"
+      ],
+      "exit_code": 0,
+      "seconds": 6.485,
+      "log": "aperiodic_circle_observer-cycle_independent_probe.py.log",
+      "sha256": "3da19bb884e2ef0c89cdb3f9794926c55bc7dc6b50bd220206edc799bd6e3325"
+    },
+    {
+      "name": "zero_anchored_lambda_haar-adversarial_probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/zero_anchored_lambda_haar/adversarial_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.927,
+      "log": "zero_anchored_lambda_haar-adversarial_probe.py.log",
+      "sha256": "9e03f13f9482dfa55f24a69fd0dfadddf6f8837ccb8d9963f040e3cc3c9a1782"
+    },
+    {
+      "name": "zero_seed_microscope-probe.py",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-10/zero_seed_microscope/probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.174,
+      "log": "zero_seed_microscope-probe.py.log",
+      "sha256": "f18ba161202fae667f4a869b9c040a0716ea5b8be1121215bd589697119f9772"
+    },
+    {
+      "name": "lambda-haar-canonical-full-finite-protocol",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "scripts/zero_anchored_lambda_haar_probe.py",
+        "--output",
+        "/tmp/succ-main-xxiv-final-validation/research/lambda_haar_canonical_finite_report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.898,
+      "log": "lambda-haar-canonical-full-finite-protocol.log",
+      "sha256": "21dbad48b455bf0dbfca5c16b37a7822b371c73dde35e8c787ce441278cc65fe"
+    },
+    {
+      "name": "exact-archived-certificate-replay",
+      "command": [
+        "/tmp/succ-main-xxiv-venv/bin/python",
+        "-W",
+        "error",
+        "scripts/main_xxiv_certificate_replay.py",
+        "--out",
+        "/tmp/succ-main-xxiv-final-validation/research/exact-replay"
+      ],
+      "exit_code": 0,
+      "seconds": 6.863,
+      "log": "exact-archived-certificate-replay.log",
+      "sha256": "f638625ec0b29965ecac873cf09db60f229d34dd0c8b25321105592b01670e6a"
+    }
+  ],
+  "tracked_candidate_unchanged": true,
+  "status": "PASS",
+  "authority": "finite implementation/certificate replay; no universal proof promotion"
+}

@@ -1,0 +1,30 @@
+{
+  "head": "9e68b830e834d5560b95bd4c428fb5f079e9db33",
+  "tree": "666d586c1827380f58f11eea1862e3703b983e9e",
+  "command": [
+    "/tmp/succ-main-xxiv-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/home/leah/SUCC-main-xxiv",
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1"
+  },
+  "start_utc": "2026-11-11T05:25:47.592423+00:00",
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 1100.567397036124,
+  "tracked_candidate_unchanged": true,
+  "log_sha256": "f376ec69aeacc1e58583b9ab0e5f8574e29b8c5f55e44b3e21a8af5fc20bf637",
+  "finish_utc": "2026-11-11T05:44:08.163118+00:00"
+}
