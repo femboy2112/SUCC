@@ -105,6 +105,44 @@ class HeightShieldTests(unittest.TestCase):
                 self.assertLessEqual(b.hi,prior.hi)
             old=c
 
+    def test_reused_observer_keeps_root_ancestry(self):
+        for kind in ("circle_beta", "bbp_four_pole"):
+            observer = MacroObserver(kind)
+            previous = None
+            for height in (10, 100, 1000):
+                cert = observer.shield(height)
+                self.assertTrue(verify_height_certificate(cert))
+                expanded = "".join(run.arrow*run.count for run in cert.runs)
+                self.assertEqual(expanded, naive_prefix(cert.steps, kind))
+                self.assertEqual(sum(run.count for run in cert.runs), cert.steps)
+                if previous is not None:
+                    self.assertEqual(cert.runs[:len(previous.runs)], previous.runs)
+                previous = cert
+            self.assertTrue(verify_height_certificate(observer.shield(1000)))
+            with self.assertRaises(ValueError):
+                observer.shield(1)
+
+    def test_explicit_run_is_included_in_later_shield(self):
+        observer = MacroObserver("circle_beta")
+        run = observer.next_run()
+        cert = observer.shield(1000)
+        self.assertEqual(cert.runs[0], run)
+        self.assertTrue(verify_height_certificate(cert))
+
+    def test_replay_requires_exact_clock_and_count_types(self):
+        small = certify_height(1)
+        for stage in (small.final_source_stage-Q(1, 2),
+                      float(small.final_source_stage), True, -1):
+            with self.subTest(stage=stage), self.assertRaises(ValueError):
+                verify_height_certificate(replace(small, final_source_stage=stage))
+        cert = certify_height(100)
+        for steps in (float(cert.steps), True, -1):
+            with self.subTest(steps=steps), self.assertRaises(ValueError):
+                verify_height_certificate(replace(cert, steps=steps))
+        run = cert.runs[0]
+        with self.assertRaises(ValueError):
+            verify_height_certificate(replace(cert, runs=(replace(run, complete_run=1),)+cert.runs[1:]))
+
     def test_exhaustive_bounded_denominator_family(self):
         c=certify_height(30)
         b=FareyBracket(*c.final)

@@ -212,6 +212,7 @@ class MacroObserver:
         self.s = source(kind)
         self.b = FareyBracket()
         self.steps = 0
+        self._runs: list[RunCertificate] = []
 
     def refine_to_interior(self, max_refinements: int = 1024) -> None:
         """Get a rational source interval strictly inside current Farey bracket."""
@@ -267,23 +268,31 @@ class MacroObserver:
                 old = self.b
                 self.b = old.run(arrow, n)
                 self.steps += n
-                return RunCertificate(old.tuple, self.b.tuple, arrow, n,
+                run = RunCertificate(old.tuple, self.b.tuple, arrow, n,
                     complete, self.s.stage, lo, hi, ratio_min, ratio_max)
+                self._runs.append(run)
+                return run
             if count >= max_refinements:
                 raise BudgetExhausted("UNKNOWN: run length unresolved at depth budget")
             self.s.refine()
             count += 1
 
     def shield(self, height: int, max_refinements: int = 1024) -> ShieldCertificate:
+        """Return the complete certificate from the root, retaining prior runs.
+
+        A growing observer may already have emitted more arrows than this
+        height's H-1 bound permits. Use certify_height for a fresh smaller
+        request instead of issuing a certificate with a false step receipt.
+        """
         _integer(height,"height",1)
-        runs=[]
+        if self.steps > max(0, height-1):
+            raise ValueError("height too small for this observer's accumulated arrow history")
         while self.b.denominator_threshold <= height:
-            run=self.next_run(target_height=height, max_refinements=max_refinements)
-            runs.append(run)
+            self.next_run(target_height=height, max_refinements=max_refinements)
         self.refine_to_interior(max_refinements)
         gap = min(self.s.interval.lo-self.b.lo, self.b.hi-self.s.interval.hi)
         assert gap>0 and self.b.denominator_threshold>height
-        return ShieldCertificate(self.kind,height,self.steps,tuple(runs),self.b.tuple,
+        return ShieldCertificate(self.kind,height,self.steps,tuple(self._runs),self.b.tuple,
             self.s.stage,self.s.interval.lo,self.s.interval.hi,gap)
 
 
@@ -301,6 +310,8 @@ def verify_height_certificate(cert: ShieldCertificate) -> bool:
     if type(cert) is not ShieldCertificate:
         raise ValueError("invalid certificate")
     _integer(cert.height,"height",1)
+    _integer(cert.steps,"steps")
+    _integer(cert.final_source_stage,"final_source_stage")
     src=source(cert.source_kind)
     cur=FareyBracket()
     steps=0
@@ -308,6 +319,8 @@ def verify_height_certificate(cert: ShieldCertificate) -> bool:
     for run in cert.runs:
         if type(run) is not RunCertificate or run.before!=cur.tuple:
             raise ValueError("broken arrow ancestry")
+        if type(run.complete_run) is not bool:
+            raise ValueError("complete_run must be a Boolean")
         _integer(run.source_stage,"source_stage")
         if run.source_stage < last_stage:
             raise ValueError("source precision moved backward")
