@@ -67,8 +67,8 @@ class BaselTests(unittest.TestCase):
         self.assertEqual(bdy.T,-bdy)
         self.assertEqual(bulk**3,-sp.Rational(2,9)*bulk)
         la=sp.Symbol("lambda")
-        self.assertEqual(bulk.charpoly().as_expr().factor(),la**4*(la**2+sp.Rational(2,9)))
-        self.assertEqual(bdy.charpoly().as_expr().factor(),la**3*(la**2+sp.Rational(5,36)))
+        self.assertEqual(sp.expand(bulk.charpoly(la).as_expr()-la**4*(la**2+sp.Rational(2,9))),0)
+        self.assertEqual(sp.expand(bdy.charpoly(la).as_expr()-la**3*(la**2+sp.Rational(5,36))),0)
         self.assertEqual(list((-bulk**2).diagonal()),[sp.Rational(1,18),sp.Rational(1,18),sp.Rational(1,9),sp.Rational(1,9),sp.Rational(1,18),sp.Rational(1,18)])
         self.assertEqual(list((-bdy**2).diagonal()),[0,sp.Rational(1,12),sp.Rational(1,12),sp.Rational(1,18),sp.Rational(1,18)])
     def test_haar_energy(self):
