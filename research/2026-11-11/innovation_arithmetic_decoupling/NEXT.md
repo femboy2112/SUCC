@@ -5,6 +5,18 @@ count as progress, and what would refute it. It was rewritten in the continuatio
 (2026-11-11, ZSC): the previous obligation WALL-16 is kept below as a necessary condition, with
 its ladder corrected by ZSC-01.
 
+> **Update 2026-11-12 (frontier rungs round).** Two things in this file are superseded by
+> [`research/2026-11-12/frontier_rungs/`](../../2026-11-12/frontier_rungs/FRONTIER_ANALYSIS.md).
+> (1) (CH) is not the bottom rung of the signed family: below it lie R1 (`limsup |W_B(1)| < 1`) and
+> **R0** (`limsup Re W_B(1) < 1` ⟺ positive lower shell density of *binary* digit changes), which
+> is now the named obligation; (CH) keeps every property proved for it below. (2) The probe of the
+> last section is resolved as **Outcome B**: the recollected bound for `log 2` was false (the
+> constant belongs to `‖(3/2)^k‖`), but Rivoal (2007) proves a restricted exponent below 1 for
+> `log(16/15) ∈ V` (`v_16 ≤ 0.8813`, hence L2 for that element), by a mechanism — a non-unit at 2
+> in the argument of a real logarithm, with a large effective base — that the π-line lacks. So
+> item 3 of "What would count as progress" is achieved for one element of `V` (by import) and
+> remains open for π.
+
 ## The obligation: (CH)
 
 > **Positive density of digit changes.** Prove that there are `c > 0` and `B_0` such that for every
