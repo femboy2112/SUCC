@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/build_math_memory.py",
+      "--write"
+    ],
+    "exit_code": 0,
+    "log": "catalog-write.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/build_math_memory.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "catalog.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/verify_math_memory_graph.py"
+    ],
+    "exit_code": 0,
+    "log": "math-memory-graph.log"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "diff-check.log"
+  }
+]

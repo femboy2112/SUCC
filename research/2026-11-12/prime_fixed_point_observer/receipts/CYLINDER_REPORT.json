@@ -1,0 +1,343 @@
+{
+  "commutator_rank_one_control": {
+    "belongs_to_arithmetic_shift_algebra": false,
+    "degree_difference": 1,
+    "from": 4,
+    "to": 8
+  },
+  "conjugation_composite_edge": [
+    14,
+    15
+  ],
+  "conjugation_odd_composite_edge": [
+    33,
+    35
+  ],
+  "fejer_bound": {
+    "error_upper": "9/1024",
+    "is_analytic_bound_not_numeric_phase_measurement": true,
+    "steps": 256,
+    "window": 10000
+  },
+  "finite_clock_aliases": [
+    {
+      "clock": 2,
+      "is_prime": false,
+      "mode1_survives": 1,
+      "n": 8,
+      "omega": 3
+    },
+    {
+      "clock": 3,
+      "is_prime": false,
+      "mode1_survives": 1,
+      "n": 16,
+      "omega": 4
+    },
+    {
+      "clock": 4,
+      "is_prime": false,
+      "mode1_survives": 1,
+      "n": 32,
+      "omega": 5
+    },
+    {
+      "clock": 8,
+      "is_prime": false,
+      "mode1_survives": 1,
+      "n": 512,
+      "omega": 9
+    },
+    {
+      "clock": 16,
+      "is_prime": false,
+      "mode1_survives": 1,
+      "n": 131072,
+      "omega": 17
+    }
+  ],
+  "global_infinite_clock_accuracy_claimed": false,
+  "goldbach_proved": false,
+  "interposed_twist_3_5": {
+    "from3": {
+      "5": {
+        "2": 1
+      }
+    },
+    "from5": {
+      "3": {
+        "0": 1
+      }
+    }
+  },
+  "isospectral_single_cylinder": {
+    "ordinary": {
+      "1": 25,
+      "2": 34,
+      "3": 21,
+      "4": 11,
+      "5": 4,
+      "6": 2
+    },
+    "ordinary_pair_degree2_at100": 12,
+    "transported": {
+      "1": 25,
+      "2": 34,
+      "3": 21,
+      "4": 11,
+      "5": 4,
+      "6": 2
+    },
+    "transported_pair_degree2_at100": 0,
+    "window": [
+      2,
+      98
+    ]
+  },
+  "opposite_twist_false_pair": {
+    "N": 8,
+    "charges": [
+      2,
+      2
+    ],
+    "pair": [
+      4,
+      4
+    ]
+  },
+  "pair_samples": [
+    {
+      "N": 4,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 1
+      },
+      "clock": 1,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 1,
+      "same_orientation_clock_survivors": 1,
+      "same_orientation_exact_pairs": 1,
+      "sufficient_clock_bound": 1
+    },
+    {
+      "N": 8,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "clock": 3,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 3,
+      "same_orientation_clock_survivors": 2,
+      "same_orientation_exact_pairs": 2,
+      "sufficient_clock_bound": 3
+    },
+    {
+      "N": 20,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 4,
+        "3": 4,
+        "4": 5,
+        "6": 4
+      },
+      "clock": 5,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 9,
+      "same_orientation_clock_survivors": 4,
+      "same_orientation_exact_pairs": 4,
+      "sufficient_clock_bound": 5
+    },
+    {
+      "N": 100,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 12,
+        "3": 18,
+        "4": 22,
+        "5": 14,
+        "6": 9,
+        "7": 6,
+        "8": 14,
+        "10": 2
+      },
+      "clock": 10,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 37,
+      "same_orientation_clock_survivors": 12,
+      "same_orientation_exact_pairs": 12,
+      "sufficient_clock_bound": 10
+    },
+    {
+      "N": 512,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 22,
+        "3": 86,
+        "4": 98,
+        "5": 96,
+        "6": 70,
+        "7": 42,
+        "8": 36,
+        "9": 20,
+        "10": 14,
+        "11": 8,
+        "12": 8,
+        "13": 4,
+        "14": 2,
+        "15": 2,
+        "16": 1
+      },
+      "clock": 15,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 141,
+      "same_orientation_clock_survivors": 22,
+      "same_orientation_exact_pairs": 22,
+      "sufficient_clock_bound": 15
+    },
+    {
+      "N": 2048,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 50,
+        "3": 262,
+        "4": 354,
+        "5": 412,
+        "6": 286,
+        "7": 214,
+        "8": 154,
+        "9": 104,
+        "10": 72,
+        "11": 42,
+        "12": 36,
+        "13": 20,
+        "14": 14,
+        "15": 8,
+        "16": 8,
+        "17": 4,
+        "18": 2,
+        "19": 2,
+        "20": 1
+      },
+      "clock": 19,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 507,
+      "same_orientation_clock_survivors": 50,
+      "same_orientation_exact_pairs": 50,
+      "sufficient_clock_bound": 19
+    },
+    {
+      "N": 16384,
+      "alias_count": 0,
+      "charge_histogram": {
+        "2": 302,
+        "3": 1272,
+        "4": 2460,
+        "5": 3050,
+        "6": 2576,
+        "7": 2074,
+        "8": 1426,
+        "9": 1040,
+        "10": 684,
+        "11": 500,
+        "12": 310,
+        "13": 220,
+        "14": 154,
+        "15": 104,
+        "16": 72,
+        "17": 42,
+        "18": 36,
+        "19": 20,
+        "20": 14,
+        "21": 8,
+        "22": 8,
+        "23": 4,
+        "24": 2,
+        "25": 2,
+        "26": 1
+      },
+      "clock": 25,
+      "clock_certified_by_window": true,
+      "goldbach_proved": false,
+      "opposite_orientation_survivors": 3841,
+      "same_orientation_clock_survivors": 302,
+      "same_orientation_exact_pairs": 302,
+      "sufficient_clock_bound": 25
+    }
+  ],
+  "quantum_speedup_proved": false,
+  "single_clock": 13,
+  "single_window": 10000,
+  "single_window_exact": true,
+  "step1_prime_edges_through_100": [
+    [
+      2,
+      3
+    ]
+  ],
+  "step2_prime_edges_through_100": [
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      17,
+      19
+    ],
+    [
+      29,
+      31
+    ],
+    [
+      41,
+      43
+    ],
+    [
+      59,
+      61
+    ],
+    [
+      71,
+      73
+    ]
+  ],
+  "two_step_wiggle_3_5": {
+    "compressed_each_step": {},
+    "compressed_final": {
+      "3": 1
+    },
+    "from5_via_composite15": {
+      "3": 1
+    },
+    "from5_via_unit": {
+      "3": 1
+    }
+  },
+  "unit_contamination_false_pair": {
+    "N": 10,
+    "charges": [
+      0,
+      2
+    ],
+    "pair": [
+      1,
+      9
+    ]
+  }
+}
