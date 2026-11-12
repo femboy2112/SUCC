@@ -57,3 +57,13 @@ unbounded universal arithmetic statement.
 - The pre-existing pi-normality, source-selected cancellation, and RH gates.
 
 The finite tests and exact spectral manipulations do not promote these items.
+
+## Shared-carrier follow-up
+
+`CARRIER_COUPLING.md` contains the additional CAR claim ledger, definitions,
+proofs, primary sources, and falsifiers. It distinguishes exact savings for
+specified coding interfaces from an unsupported universal superiority of
+carrier ontologies. The entropy-orientation counterexample and the transported
+arithmetic source prevent a compression result from being promoted into an
+additive positivity theorem. `receipts/CARRIER_REPORT.json` is a separate
+finite calibration receipt, not an extension of the initial 74,229-check count.

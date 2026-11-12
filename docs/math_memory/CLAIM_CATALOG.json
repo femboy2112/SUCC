@@ -22157,7 +22157,7 @@
     "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2975
+    "source_documents_found": 2977
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38647,14 +38647,20 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
-      "sha256": "e874198f61f4e434994c538525b6d884d950f0989fa6566128c6cd89f9265c16",
-      "size": 4407,
+      "sha256": "07ba5cd7047fea2c70e93783cce55c42ed12c4d36e010210708cd3a7b8ce03c9",
+      "size": 5634,
       "title": "Audit findings and dispositions"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/CARRIER_COUPLING.md",
+      "sha256": "a3f95d220e0c58d9787bd11657a31bcfc2aee41eb85ce27b82d3dad24264b88a",
+      "size": 30284,
+      "title": "Shared carrier, information cost, and arithmetic coupling"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
-      "sha256": "1c55d7982fcd1f2cd0b1b0985944913f94319278d1a962033c67400cdba03716",
-      "size": 6720,
+      "sha256": "f2b746857810e81e1f3581de52c5f2dae5912d92b709ab8a8827fdc92a0a7a49",
+      "size": 7284,
       "title": "Claim ledger — prime observer and cylinder"
     },
     {
@@ -38683,14 +38689,14 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
-      "sha256": "f0cb42a67823f86ae7576ed27bd9ce06fcfcb5b88fc630cfb0c64e3a55e109b5",
-      "size": 4807,
+      "sha256": "72dad8c0eded145e5484845ad8d103fc6f6280b0866025f7a7709e683a6f80cc",
+      "size": 5354,
       "title": "Prime fixed-point observer and twisted arithmetic cylinder"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
-      "sha256": "53ccc6ef242f1ce7d6258b872e4f8594d11d57be653833a31edfe6c2565e24da",
-      "size": 5037,
+      "sha256": "c41b132b3a888e3c629be462507f4030c568f70c400d51f8a5e3d2bf33401a0d",
+      "size": 5596,
       "title": "Source map and provenance"
     },
     {
@@ -38701,8 +38707,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
-      "sha256": "e6144c06bb7ae5c8f1e228147d20cc1d13e83921f538e46723cc6688510a6fcf",
-      "size": 5307,
+      "sha256": "cede3daf581c580cfd5d44d30fbc89a9e06562f3dcefccf807fddbcea92101c4",
+      "size": 7456,
       "title": "Validation, actual runs, and retained limitations"
     },
     {
@@ -38710,6 +38716,12 @@
       "sha256": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
       "size": 5280,
       "title": "Focused runtime audit — prime fixed-point observer"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/carrier_code_audit.md",
+      "sha256": "cdcef7db48c920b65789b1cc0b28320f7131933f93dba578ebee09bcb23c607f",
+      "size": 3334,
+      "title": "Carrier probe code audit"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md",

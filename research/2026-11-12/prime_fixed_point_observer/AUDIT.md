@@ -47,3 +47,25 @@ untouched main and passed in a corrected targeted replay. A later full retry
 lost its execution handle before a final summary; it is not counted as a pass.
 The new dossier's final47-test suite and exact probes passed. This research
 branch remains draft, with no merge authorization inferred from these results.
+
+## Shared-carrier follow-up
+
+The information, source-rigidity, and domain-theory decompositions were checked
+against explicit countercontrols. The root verified the carrier-cost chain
+rule, anchored intertwining argument, bivariate coefficient identity, and
+finite-to-infinite continuity proof. Their standard frameworks are cited in
+the addendum; no priority or universal compression claim is made.
+
+`reviews/carrier_code_audit.md` preserves a separate targeted review of the
+new executable and receipt. It checked source hashes, weighted Cauchy
+multiplication, exact entropy scope, and direct enumeration of coherently
+transported pairs. It also records the limited scope of the quarter-turn
+calibration. As in the original round, these are same-model checks.
+
+Important guards retained in the final text include: carrier cost is charged;
+equal total correlation need not imply positive overlap; the anchor is needed
+in addition to the braid; the approximate bound is for basis vectors; the
+pair product is formed in ordinary sets before its sum map to the carrier;
+an undamped infinite torus wave is not assumed to converge; and the joint
+additive generating series is not silently assigned a multiplicative Euler
+product.

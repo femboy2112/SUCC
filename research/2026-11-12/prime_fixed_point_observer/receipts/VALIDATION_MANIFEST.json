@@ -41,23 +41,37 @@
     ]
   },
   "artifact_sha256": {
-    "docs/math_memory/CLAIM_CATALOG.json": "edca8d13035b48e336af0cf3891c074e87055b9062e0bf26555fe6150a93c683",
-    "research/2026-11-12/prime_fixed_point_observer/AUDIT.md": "e874198f61f4e434994c538525b6d884d950f0989fa6566128c6cd89f9265c16",
-    "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md": "1c55d7982fcd1f2cd0b1b0985944913f94319278d1a962033c67400cdba03716",
+    "docs/math_memory/CLAIM_CATALOG.json": "8e6ef6a2306854876b92164087bdb526510413b8f171623961e5a4fba8e4a306",
+    "research/2026-11-12/prime_fixed_point_observer/AUDIT.md": "07ba5cd7047fea2c70e93783cce55c42ed12c4d36e010210708cd3a7b8ce03c9",
+    "research/2026-11-12/prime_fixed_point_observer/CARRIER_COUPLING.md": "a3f95d220e0c58d9787bd11657a31bcfc2aee41eb85ce27b82d3dad24264b88a",
+    "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md": "f2b746857810e81e1f3581de52c5f2dae5912d92b709ab8a8827fdc92a0a7a49",
     "research/2026-11-12/prime_fixed_point_observer/CYLINDER.md": "85ce0e371e79695f3959162322d668c16dce42bd86421557955ea10546ec0e24",
     "research/2026-11-12/prime_fixed_point_observer/NEXT.md": "fc67949ae3870eb1f8160233b2d2661674bfb8ced7a4617d287efffbc332a002",
     "research/2026-11-12/prime_fixed_point_observer/PRIME_INTERFEROMETER.md": "77394a87dddf0112d059519fed35fb5ab131764ba4edf142c6affe3f9e417596",
     "research/2026-11-12/prime_fixed_point_observer/PROTOCOL.md": "9654505195126243d0b44af942c06e5221df919928a2e58f77eb25536a0e4436",
-    "research/2026-11-12/prime_fixed_point_observer/README.md": "f0cb42a67823f86ae7576ed27bd9ce06fcfcb5b88fc630cfb0c64e3a55e109b5",
-    "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md": "53ccc6ef242f1ce7d6258b872e4f8594d11d57be653833a31edfe6c2565e24da",
+    "research/2026-11-12/prime_fixed_point_observer/README.md": "72dad8c0eded145e5484845ad8d103fc6f6280b0866025f7a7709e683a6f80cc",
+    "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md": "c41b132b3a888e3c629be462507f4030c568f70c400d51f8a5e3d2bf33401a0d",
     "research/2026-11-12/prime_fixed_point_observer/THEOREMS.md": "187ca6d4ff8c4d2d4f18d7027e64eccfef29d30a1be298e684c5d51b505ec5fd",
-    "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md": "e6144c06bb7ae5c8f1e228147d20cc1d13e83921f538e46723cc6688510a6fcf",
+    "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md": "cede3daf581c580cfd5d44d30fbc89a9e06562f3dcefccf807fddbcea92101c4",
+    "research/2026-11-12/prime_fixed_point_observer/carrier_probe.py": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d",
     "research/2026-11-12/prime_fixed_point_observer/cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
     "research/2026-11-12/prime_fixed_point_observer/lambda_observer.py": "527eb36225b6cc01115f037ef26f108b280628a3c7ee97daf7ebcd2e03c971fe",
     "research/2026-11-12/prime_fixed_point_observer/prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50",
     "research/2026-11-12/prime_fixed_point_observer/probe.py": "4a720a428620fb9ecc01091ca0aa893393e564da16b94cbaefe647737487139f",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/CARRIER_REPORT.json": "6882cd5e257097b1e2855a8b31630a6c640505fb34de5dc549d0bd45f932840b",
     "research/2026-11-12/prime_fixed_point_observer/receipts/CYLINDER_REPORT.json": "c51e63ea944f66f6b629a576b73899ce88f9cde2cfeda256df84bdea666acceb",
     "research/2026-11-12/prime_fixed_point_observer/receipts/FINITE_REPORT.json": "fa5b7d051ec63f917aa2e75926b1842bafd94226408bd9f96a63e18cf62d8bb9",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-catalog-write.log": "28647429bf6e4377a8a6f77ce4fa0828c6f69fb5623e1b5e327193f9d632266c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-catalog.log": "28647429bf6e4377a8a6f77ce4fa0828c6f69fb5623e1b5e327193f9d632266c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-checks.json": "f87653eb0758cec9a265058dab075585388cf2027bebd73d7b106318f4357b32",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-focused-suite.log": "de37c4b99044bb817adf126dc70c2af0a4999bac7f77e4e6e97ef80deb3f2f40",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-integration-checks.json": "8cd220b5b65fc112542e728b9f784256d4b1c945c00448c5c76392372eb39c09",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-probe.log": "7a0efa8c036bcd6788d8cfc97a501694cba445e7fff18a59109b2004b2d5263b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
     "research/2026-11-12/prime_fixed_point_observer/receipts/catalog-write.log": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
     "research/2026-11-12/prime_fixed_point_observer/receipts/catalog.log": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
     "research/2026-11-12/prime_fixed_point_observer/receipts/cylinder-tests.log": "b74ccdce02f0256559cf7016e7f0881eca860703f1176a0d25dbcaf61b0d529b",
@@ -77,6 +91,7 @@
     "research/2026-11-12/prime_fixed_point_observer/receipts/provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
     "research/2026-11-12/prime_fixed_point_observer/receipts/untouched-base-import-replay.log": "b7d8217a0a771f3b0144c7d327a441a43356ab0eee8541d1f456691aad837738",
     "research/2026-11-12/prime_fixed_point_observer/reviews/adversary_code_audit.md": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/carrier_code_audit.md": "cdcef7db48c920b65789b1cc0b28320f7131933f93dba578ebee09bcb23c607f",
     "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md": "4d040707ac143c8261b21101f3974611b5aa6d4546fc91ecf9e065bee029393f",
     "research/2026-11-12/prime_fixed_point_observer/reviews/final_cylinder_audit.md": "ac6f8e50491d26da2e724a491776e6bd61fc84fedb5c29156984bdc5e9ff6bf7",
     "research/2026-11-12/prime_fixed_point_observer/reviews/final_proof_audit.md": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
@@ -173,5 +188,64 @@
     "scipy": "1.17.0",
     "sympy": "1.14.0"
   },
-  "schema": "prime-observer-validation-v1"
+  "schema": "prime-observer-validation-v1",
+  "shared_carrier_followup": {
+    "all_integer_targets": [
+      4,
+      512
+    ],
+    "dossier_test_methods_rerun": 47,
+    "dossier_test_status": "PASS",
+    "explicit_checks": 691,
+    "failures": 0,
+    "general_operator_bound_numerically_validated": false,
+    "integration_checks": [
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/build_math_memory.py",
+          "--write"
+        ],
+        "exit_code": 0,
+        "log": "carrier-catalog-write.log"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/build_math_memory.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "carrier-catalog.log"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/verify_math_memory_graph.py"
+        ],
+        "exit_code": 0,
+        "log": "carrier-math-memory-graph.log"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "carrier-diff-check.log"
+      }
+    ],
+    "native_full_suite_rerun": false,
+    "original_seven_source_test_hashes_unchanged": true,
+    "parent_commit": "836d03806183c1f73488dca1d37e149a9826eb53",
+    "report": "receipts/CARRIER_REPORT.json",
+    "source_sha256": {
+      "carrier_probe.py": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d",
+      "cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+      "prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50"
+    },
+    "universal_compression_advantage_claimed": false
+  }
 }

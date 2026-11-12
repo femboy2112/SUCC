@@ -22,10 +22,12 @@ Relevant source files read:
 | `observational_succ/zero_anchored_lambda.py` | Existing compiler's stronger type/source contract; not silently extended with general Y recursion |
 | `provenance/IMPORT_MANIFEST.json` and its verifier | Frozen imports mechanically verified; no archival source rewritten |
 
-The finite report hashes the inherited beta kernel and every new executable
-source/test. Final validation records the unchanged imported paths and final
-artifact hashes. Current source identity is established by the checkout and
-receipts, not by conversational memory.
+The initial finite report hashes the inherited beta kernel and its seven
+executable source/test files. The follow-up `CARRIER_REPORT.json` hashes the
+additional carrier probe and its arithmetic dependencies. Final validation
+records the unchanged imported paths and current artifact hashes. Current
+source identity is established by the checkout and receipts, not by
+conversational memory.
 
 ## External primary sources read
 
@@ -59,9 +61,16 @@ receipts, not by conversational memory.
    circle action. No almost-everywhere claim for random characters is
    transferred to this selected one-parameter diagonal circle.
 
-All listed sources were retrieved during this turn. Their full PDFs are not
+Sources 1 through 5 above were retrieved during the initial cylinder round. Their full PDFs are not
 copied into the repository. The new proofs are elementary consequences and
 constructions; no literature-completeness or priority assertion is made.
+
+The shared-carrier follow-up starts from published commit
+`836d03806183c1f73488dca1d37e149a9826eb53`. Its primary sources (Shannon;
+Gacs, Tromp and Vitanyi; Gacs; Abramsky and Jung; Helfgott) are separately
+identified in `CARRIER_COUPLING.md` and were retrieved during the follow-up.
+Their standard information and domain-theoretic frameworks are distinguished
+from our explicitly proved arithmetic applications.
 
 ## Provenance and independence limits
 

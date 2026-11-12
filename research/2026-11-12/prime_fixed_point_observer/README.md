@@ -5,6 +5,12 @@ Research branch from Main XXIV `071ce1e0ee6ab8f8c07113e901131aa646d6b95d`,
 finite beta-reducing observer, and circle/twist/back-and-forth continuation.
 It also reconstructs and replays the preceding Prime Interferometer work.
 
+The follow-up [CARRIER_COUPLING.md](CARRIER_COUPLING.md) makes the shared
+carrier / local waves proposal precise: exact information accounting,
+anchored arithmetic rigidity, a joint position-degree generating series,
+and Scott-continuous finite-to-infinite semantics. Its exact finite controls
+are reproducible with `python research/2026-11-12/prime_fixed_point_observer/carrier_probe.py`.
+
 **Goldbach, pi normality, and RH remain OPEN.** The new results are elementary
 constructions, exact local proofs, finite certificates, and explicit hostile
 models. There is no priority, asymptotic speedup, physical realization, or
@@ -53,6 +59,8 @@ formal-kernel acceptance claim.
 - [SOURCE_MAP.md](SOURCE_MAP.md): exact repository base and classical sources.
 - [VALIDATION.md](VALIDATION.md): actual execution, retained failures, and scope.
 - [NEXT.md](NEXT.md): what remains missing and how to test the next proposal.
+- [CARRIER_COUPLING.md](CARRIER_COUPLING.md): shared descriptions, coupling
+  orientation, and the information lost by forgetting the arithmetic embedding.
 
 ## Reproduce from the repository root
 
