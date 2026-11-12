@@ -1,0 +1,31 @@
+{
+  "checks_by_group": {
+    "anchor_survives_braid_fails": 1,
+    "coherent_reference_recovery": 5,
+    "coherent_sum_discriminates": 1,
+    "corrected_sieve_vs_marking": 10001,
+    "crt_pair_count": 1524,
+    "crt_wave_product": 1524,
+    "endpoint_corrected_pair_count": 514,
+    "finite_phase_alias": 1,
+    "fixed_cutoff_alias": 1,
+    "full_intensity_countermodel": 1,
+    "local_interference": 656,
+    "mean_one_packet": 15,
+    "multiplicity_blindness": 1,
+    "noncongruent_homometry": 1,
+    "odd_target_endpoint": 1,
+    "ordinary_sum_fiber_changed": 1,
+    "positive_period_empty_interval": 1,
+    "prime2_diagonal": 1,
+    "prime_power_degree_reconstruction": 256,
+    "safe_fourier_sampling": 45,
+    "transport_involution": 2500,
+    "transport_preserves_small_projectors": 7500,
+    "transport_residue": 2500,
+    "whole_finite_phase_bank": 3
+  },
+  "explicit_checks": 27054,
+  "failures": 0,
+  "status": "PASS"
+}

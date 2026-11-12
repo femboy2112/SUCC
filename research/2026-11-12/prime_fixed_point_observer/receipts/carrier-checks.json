@@ -1,0 +1,49 @@
+[
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "research/2026-11-12/prime_fixed_point_observer/carrier_probe.py"
+    ],
+    "exit_code": 0,
+    "log": "carrier-probe.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/2026-11-12/prime_fixed_point_observer",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "carrier-focused-suite.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "log": "carrier-provenance.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "log": "carrier-observer-foundations.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "log": "carrier-ordinal-succ.log"
+  }
+]
