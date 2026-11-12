@@ -1,0 +1,7 @@
+# Scoped validation — 2026-11-12
+
+- Python 3.13, standard library only. `python -m unittest -v test_scott_defect` — **8 test families passed** after correcting one wrongly stated test expectation (`?9,?11` upper pair defect is 4, not 5). Retained audit note: this initial finite test failure was in the test oracle, not in the observer implementation; no results were promoted until corrected and rerun.
+- Factorization trees tested on 2..600 over minimum/balanced/reverse policies; interval refinement and true factor count through 699, source-faithful transport for primes 2,3,5,7,11 and m through 179; 200 midpoint bounds compared with an independent Eratosthenes sieve, complete evidence through 400; 140 Horn-closure steps compared against sieve classifications through 100.
+- Mutation/negative controls: invalid prime certificate for 9, invalid factor split, incompatible factorization paths, fake 1(mod 4) prime alphabet with no 4k sums, unresolved composite erroneously appearing as possible grade-zero state.
+- Independent route means trial division vs sieve for the finite ranges, not blind peer review. Paper-level Scott-domain continuity relies on stated domain facts, not a theorem-prover kernel. Unverified: full repo CI, completed external mathematical review, any Goldbach/π-normality/RH proof.
+- No source contract, seed, historical provenance or main-branch code modified.
