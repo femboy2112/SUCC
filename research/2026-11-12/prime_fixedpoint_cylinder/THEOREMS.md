@@ -78,7 +78,7 @@ Phase-conjugating the wiggle gives `W_2(theta)=U_n(theta)W_2 U_n(theta)^*`, a un
 
 `forall sufficiently large n: min_(d in D_n) h_n(d)<=1`.
 
-This is a **proved corollary of an imported classical theorem**; it is not a new proof of Chen's theorem and does NOT establish `min h_n=0`. An explicit published Chen theorem provides `2n>exp(36)` as one sufficient range; no finite verification up to that threshold is asserted here. Source: [Bordignon–Johnston–Starichkova, *An explicit version of Chen's theorem*](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/an-explicit-version-of-chens-theorem/2E6F5B87A198E00561CF2C21D147346A).
+This is a **proved corollary of an imported classical theorem**; it is not a new proof of Chen's theorem and does NOT establish `min h_n=0`. An explicit published Chen theorem provides `2n>exp(36)` as one sufficient range; no finite verification up to that threshold is asserted here. Source: [Matteo Bordignon, *An explicit version of Chen's theorem*, Bull. Aust. Math. Soc. 105 (2022), 344–346](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/an-explicit-version-of-chens-theorem/2E6F5B87A198E00561CF2C21D147346A).
 
 The difference from `<=1` to `=0` is the binary Goldbach obstruction. The classical sieve parity problem is a warning: positive counts of prime + semiprime states need not imply positive counts of prime + prime states without further source-sensitive estimates.
 
