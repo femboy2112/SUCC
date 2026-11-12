@@ -92,5 +92,27 @@ reason and replaced by a bounded check, as recorded above.
 
 ## Validation
 
-Recorded in the final documentary commit of this integration (the section below), for the exact
-content candidate named there, and in the pull request description.
+Content candidate: `1603994cfbd4b3380a554d191628138e5feb7bf6`, tree
+`e054aab20e406888518533bf9ca74057896550ac` (everything except this section; the catalog was
+regenerated afterwards and came out identical). All commands were run serially in a clean detached worktree at that commit,
+Python 3.12.3 with the project's declared test dependencies, `PYTHONPATH` = worktree root; the
+worktree had 0 tracked changes afterwards.
+
+| Gate | Outcome |
+|---|---|
+| `scripts/verify_provenance.py` | exit 0, `SOURCE_PROVENANCE_VERIFIED` |
+| `scripts/observer_foundations_probe.py`, `scripts/ordinal_succ_report_probe.py` | exit 0, exit 0 |
+| `scripts/build_math_memory.py --check` | exit 0 (catalog fresh) |
+| `scripts/verify_math_memory_graph.py` | `PASS: 51 typed nodes, 60 typed edges` |
+| `scripts/main_xxv_manifest.py --check … --integration HEAD` | `MAIN_XXV_MANIFEST_OK` (4 origins, 123 contributed files, 83 protected paths) |
+| `scripts/main_xxv_research_gate.py` with the Lean replay | `PASS`, 12 of 12 entries, tracked candidate unchanged: dossier tests 72 + 50 + 47 + 9 + 8 + 11; five full probes reproducing their committed `RESULTS_*.json` byte for byte; `KERNEL_CHECKED` 33 theorems, 9 mutant controls |
+| `python -m unittest discover -s tests -p 'test_*.py'` | **Ran 13050 tests in 1212.959 s — OK** (13 047 of Main XXIV plus the 3 manifest regressions) |
+
+Hosted checks on the content candidate and on the final head are recorded in the pull request
+description (#603), which also names the final head; this file cannot name its own commit. The
+final head differs from the content candidate only by this section.
+
+Not run: the Main XXIV research gate (its dossiers are byte-identical to Main XXIV, as the
+manifest's protected and ancestry checks and an unchanged tree under `research/2026-11-10/` show);
+a native run on Python 3.10 or 3.13 locally (the hosted matrix covers both). Same-model audits are
+not external refereeing; kernel authority is limited to the listed exact lemmas.
