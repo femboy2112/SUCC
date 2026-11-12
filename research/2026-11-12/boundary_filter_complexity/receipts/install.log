@@ -1,0 +1,14 @@
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///workspace/scratch/61c37f2e44ca/SUCC
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: observational-succ
+  Building editable for observational-succ (pyproject.toml): started
+  Building editable for observational-succ (pyproject.toml): finished with status 'done'
+  Created wheel for observational-succ: filename=observational_succ-0.3.0-0.editable-py3-none-any.whl size=7743 sha256=22183a2297c45e03aad6ede4f4c825cf4af3171d83798265f6943b1cf467f156
+  Stored in directory: /tmp/pip-ephem-wheel-cache-m3fd547m/wheels/7d/34/1b/902052a038acf85cdb32516a18a4f9476f0394401ea3e73c3f
+Successfully built observational-succ
+Installing collected packages: observational-succ
+Successfully installed observational-succ-0.3.0
