@@ -22163,7 +22163,7 @@
     "claim_supplements_scanned": 209,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 3010
+    "source_documents_found": 3042
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38724,6 +38724,84 @@
       "title": "Validation record"
     },
     {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/ADAPTIVE_APERTURE.md",
+      "sha256": "270e5554fb8704222129eb905e56e237b80cc2280d7edb1ba9e84082fc298320",
+      "size": 4648,
+      "title": "One channel when the damping can move"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/CLAIM_LEDGER.md",
+      "sha256": "e3642c4e7cea70d5976d9749dc72e3318ad8c16b02e2a3984f14f10dd90f5f17",
+      "size": 9018,
+      "title": "Scoped claim ledger: adaptive boundary resolution"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/COMPLEX_BANKS.md",
+      "sha256": "d2b27fecdb75eaa6a567c25202ddd9073ddc56102fc792c921f889cf68c0bbbc",
+      "size": 16201,
+      "title": "Fixed complex banks cannot evade the averaged arithmetic obstruction"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/COMPLEX_POINTWISE_AUDIT.md",
+      "sha256": "449cb28de2fffc4116d97d81949e992e037835d72ba6be91a431b406d7fef3ac",
+      "size": 16046,
+      "title": "Adversarial proof audit: complex banks and the pointwise gap"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/INTEGER_APERTURE_AUDIT.md",
+      "sha256": "ae70f7fc7fc1036a2e12e46aa0471aa3c19e0f2e91dc76f1a1737dd0d0e81269",
+      "size": 14892,
+      "title": "Independent audit of integer information and adaptive aperture"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/INTEGER_INFORMATION.md",
+      "sha256": "04352e2d36b92dea24a1e2afba9e30a9df7e36af8b86edc16381930b3e545c04",
+      "size": 15849,
+      "title": "What the integer boundary packet can and cannot determine"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/NEXT.md",
+      "sha256": "159cca9ea12df520eb9ca9f55616080ca9df8db0dcc14ad7b79f084a83c1628c",
+      "size": 4814,
+      "title": "Next research: pay the source-specific pointwise estimate"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/PHASE_APERTURE.md",
+      "sha256": "fc981b5649f782b01b088ed56ccbfb3b8db8bbca658ab1364aac0f26482ce878",
+      "size": 9171,
+      "title": "Angular aperture: exact projection, finite aliases, and changing resolution"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/POINTWISE_GAP.md",
+      "sha256": "26cb8901871b6fc424958b2aeeaca666a28c8d0444fa25b73982fb38dc642a8c",
+      "size": 17215,
+      "title": "Adaptive filters: exact equivalence, individual schedules, and density one"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/PREREGISTRATION.md",
+      "sha256": "7598425bc631bf9b2ee4aada87ded3e120be9837f52ba46e171d468bbd0a7769",
+      "size": 7597,
+      "title": "Adaptive boundary resolution: research contract"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/README.md",
+      "sha256": "4f52804a1d80c10815f7f348e230d1ea4b73a006228078fbce8c74fe482e0a7e",
+      "size": 12694,
+      "title": "Adaptive boundary resolution"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/SOURCE_MAP.md",
+      "sha256": "118404c3bfacbd5047ea75a54aff7b3d26aa3705efce30dac6c5211ea9d27a95",
+      "size": 7950,
+      "title": "Source map and dependency audit"
+    },
+    {
+      "path": "research/2026-11-12/adaptive_boundary_resolution/VALIDATION.md",
+      "sha256": "eca35547c714cf8716eb97ecdc4cb0f0d0dbbe4777ffc70237d9125415c5a5b2",
+      "size": 9081,
+      "title": "Validation, counterexamples and publication scope"
+    },
+    {
       "path": "research/2026-11-12/carrier_first_goldbach/CLAIMS.md",
       "sha256": "b7f08bf3b4746ab9be9586104f496c85051ea43651d25d032ae9984e7b27612c",
       "size": 1773,
@@ -38812,6 +38890,120 @@
       "sha256": "9e587a74b47f24f1b1219605a206f8cfb26c826efda7d3d27664a7457c54d954",
       "size": 33575,
       "title": "Kernel checks for small exact lemmas of ZSC (CARRY_FLUX.md, 2026-11-11 dossier)"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/CLAIM_LEDGER.md",
+      "sha256": "7bbc775c0d4ae41340652653fa05fac5511910fd95928d0c251633437eebbb67",
+      "size": 11799,
+      "title": "Scoped claim ledger: holographic boundary filters"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/DAMPED_AUDIT.md",
+      "sha256": "44889a96e3e43798f0bb8b552d331cb71a054fe238b2674da34ed61291fff16e",
+      "size": 11451,
+      "title": "Separate audit of the damped integer-grade filters"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/DAMPED_DERIVATION_AUDIT.md",
+      "sha256": "edfca635c0a97c7e5d43864253150e9bdc9964d64859088d3d8fde6e15c7845f",
+      "size": 11070,
+      "title": "Independent derivation audit: damped grade filters"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/DAMPED_FILTERS.md",
+      "sha256": "78d4ae113668889e1441ee11c89a18a2913014a695e0ceac3d1602bcd2ac5b2c",
+      "size": 14760,
+      "title": "Cancel low grades from the boundary: a stable damped projector"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/FIXED_RESOLUTION.md",
+      "sha256": "4f3ed3ae89215172ea95ac88bd99417db452103a2efde047db07887494e9acbb",
+      "size": 14933,
+      "title": "A source-specific obstruction to every fixed finite damped lower filter"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/FIXED_RESOLUTION_AUDIT.md",
+      "sha256": "c67d461ca6449501c3dfca45aa3e4a03481b813508615ce39bd2ad07c3483b9f",
+      "size": 14311,
+      "title": "Independent audit: fixed damped lower filters eventually fail on average"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/GOLDBACH_AUDIT.md",
+      "sha256": "9947da54e24a76bc2b4b3732f1c205218d3ef2ade244848c1bf818e5486f951e",
+      "size": 7925,
+      "title": "Independent bearing: Goldbach filter audit"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/GOLDBACH_FILTERS.md",
+      "sha256": "95a1b16ab41eaf6ee5885a1f1c4d8547f817fd5834d44032e94e8c81be361844",
+      "size": 14889,
+      "title": "Goldbach boundary filters: certify the target without reconstructing the whole interior"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/NEXT.md",
+      "sha256": "314cd464e50f66fa9c62be4f5d0f603fbf77ba63750b64e0c5ac14b03aabd402",
+      "size": 6224,
+      "title": "Next cuts after the boundary-filter round"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/ORDERED_REALIZATION.md",
+      "sha256": "5b83717ceada2fc5b2a8a1bbf772941d6341759f1d9cd60623c70b03fe6fb0c5",
+      "size": 15877,
+      "title": "Ordered boundary filters: a finite closure certificate"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/PHASE_AND_TARGET.md",
+      "sha256": "ff6160fd41d75364e0a7aae1aac485c97658d9bf584b344c110ef251da63860d",
+      "size": 21547,
+      "title": "Boundary filters: target completeness, phase, and the cost of inversion"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/PHASE_AUDIT.md",
+      "sha256": "cf7dd1662c89c6063fa14f3f4e3895bc737fd5dce94c12a7c3bec2f3e6523db9",
+      "size": 11231,
+      "title": "Separate derivation audit of the phase and target dossier"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/PI_AUDIT.md",
+      "sha256": "e7aacf85c121d70c2d4eb0fa600fa6f1dfe82bbdba87127d1104e7b85d303803",
+      "size": 10041,
+      "title": "Separate audit of the source-bound signed pi filter"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/PI_FILTERS.md",
+      "sha256": "80863110a22a8c4f86150fd83947ed9573555e2e497f144ab6b470aad9e31a7b",
+      "size": 8654,
+      "title": "A boundary filter aimed directly at the weakest signed pi rung"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/PREREGISTRATION.md",
+      "sha256": "34a907f411783f5b39ebfbdd2678f35a4cb33b775c883a0efeeb234ad97d316e",
+      "size": 6605,
+      "title": "Boundary filters: research contract and preregistered probes"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/PREREGISTRATION_DAMPED.md",
+      "sha256": "abd4936989dd03934e877485c3070fb6f379764a1c4e8f27f3ad889dfa8462ac",
+      "size": 2321,
+      "title": "Follow-up contract: damped grade filters"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/README.md",
+      "sha256": "5cfbe80f5852c44cf14798aa5da5f7277d5be1c59997be347ea794dae34d55ca",
+      "size": 12479,
+      "title": "Holographic boundary filters: reconstruct, certify, and increase resolution"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/SOURCE_MAP.md",
+      "sha256": "39862361e46c39042dcb69ba618b642de1662615907c9148356cde263006c0e4",
+      "size": 17128,
+      "title": "Source map, inherited results, and novelty boundary"
+    },
+    {
+      "path": "research/2026-11-12/holographic_boundary_filters/VALIDATION.md",
+      "sha256": "6492735954bf5a66ed4318ad55f6a6ce94edc90baef3fc969cb2645d2e1b0b5e",
+      "size": 9698,
+      "title": "Validation and repair record"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",

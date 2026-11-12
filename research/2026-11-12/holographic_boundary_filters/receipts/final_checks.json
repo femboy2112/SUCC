@@ -1,0 +1,50 @@
+{
+  "base_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "checks": [
+    {
+      "name": "focused",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-W",
+        "error",
+        "/workspace/scratch/ec86a7b97431/SUCC/research/2026-11-12/holographic_boundary_filters/run_checks.py"
+      ],
+      "returncode": 0,
+      "log": "focused.log"
+    },
+    {
+      "name": "integration",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_holographic_boundary_filters.py"
+      ],
+      "returncode": 0,
+      "log": "integration.log"
+    },
+    {
+      "name": "catalog",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "log": "catalog.log"
+    },
+    {
+      "name": "graph",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "returncode": 0,
+      "log": "graph.log"
+    }
+  ]
+}

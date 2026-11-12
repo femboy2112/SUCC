@@ -1,5 +1,37 @@
 # Research claim ledger
 
+## Adaptive boundary resolution (research continuation, 2026-11-12)
+
+The [adaptive-resolution dossier](../research/2026-11-12/adaptive_boundary_resolution/README.md)
+adds nearly sharp fixed-base integer information bounds, a one-channel
+moving-damping alternative, and a source-specific negative-aggregate
+theorem for every fixed finite complex exponential minorant bank on the
+punctured closed unit disk. It distinguishes a complete angular profile
+from finite phase samples with unpaid aliases. A sharper integer
+completeness threshold, a truly per-midpoint positive aggregate and an
+explicitly imported classical density-one transfer locate the remaining
+pointwise arithmetic obligation. The
+[local ledger](../research/2026-11-12/adaptive_boundary_resolution/CLAIM_LEDGER.md)
+and [validation record](../research/2026-11-12/adaptive_boundary_resolution/VALIDATION.md)
+separate derivations, classical imports, finite controls and source-access
+assumptions. No universal Goldbach, R0, pi-normality or RH status is
+promoted; no worldwide novelty or response-acquisition speedup is claimed.
+
+## Holographic boundary filters (research draft, 2026-11-12)
+
+The [boundary-filter dossier](../research/2026-11-12/holographic_boundary_filters/README.md)
+adds scoped ordered closure and target-ambiguity certificates; a stable
+integer-grade zero-sector filter with coefficient norm below nine and
+monotone lower/upper refinement; exact Goldbach and BBP source receipts;
+and a source-specific obstruction to fixed finite damped minorant banks.
+Its [local claim ledger](../research/2026-11-12/holographic_boundary_filters/CLAIM_LEDGER.md)
+separates classical imports, new local proofs, finite checks and countermodels.
+The fixed-resolution obstruction does not exclude adaptive filters. The
+required uniform coupled-source estimates, R0, pi normality, Goldbach and
+RH remain **OPEN**. No historical theorem status or formal authority is
+promoted by this additive research entry.
+
+
 The proposed [Contextual Zero Backbone, CZB-01–12](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md)
 adds a *foundations-level*, finite source-context observer: a current
 uncertainty fiber, evidence-relative zero ideal, exact probes and movement,

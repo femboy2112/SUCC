@@ -1,0 +1,195 @@
+{
+  "base_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "damped": {
+    "Goldbach_proved": false,
+    "certificates": 18,
+    "exact_count_recovered": 11,
+    "positive": 14,
+    "receipt_reproduced": true
+  },
+  "errors": 0,
+  "failures": 0,
+  "file_sha256": {
+    "DAMPED_RESULTS.json": "7bbd2b25d0309bfe83c073733b05564cc2ed47cbd5a176660a5991b5be9009a7",
+    "PI_RESULTS.json": "aede1461f23d4841d649198b324499ef63e37deb16683b20a8057c5dabf25be5",
+    "boundary_realization.py": "511a6b63314ecb704526af25378c0a12cfdfd72624d44cde1ffc50be7942eba5",
+    "damped_filters.py": "b379b3fdf194661d46d5842f1f2e68f03a42ef9cc8c9703cb89e09e4638b6700",
+    "goldbach_filters.py": "b024e048a001ec8f9ec9c11471cbdc9bfb162c93fc46b225c2ed46abe7cb8d16",
+    "phase_filters.py": "13a9fae92c9a170ae6fff5afca04a9947af23ede9876991d4abce5318cd8966b",
+    "pi_filters.py": "a1c2a783150a69e90e6ff348badfc79aa509ea323fe25315cea4ad36858cabd1",
+    "run_checks.py": "9d0a7f24c360f90d2136a832a56260554e1deab77a05cc954ebbc996b955ca3b",
+    "test_boundary_realization.py": "b96bd7ce2138c6d2354cd0f2e2c0a5f8fc3e34da70b20d665e988f74c7131130",
+    "test_damped_filters.py": "b8c1476a30cf68c524eea8f63c66cb36ffc8d6213c7f77779c5f9b3efd9a357a",
+    "test_fixed_resolution.py": "204233e91c44c9d6e2ed5c467f7471eefea86bafa55033195ef7b6928fe146b3",
+    "test_goldbach_filters.py": "2b9bed1d7d659f5defcb717140e2088bf6e12a2fec0ea0a92b82e242e3f2fb63",
+    "test_phase_filters.py": "4bf8bd29cfc96885b4f0a7a75f2a185a0be4ef15d65a6ccce5f9cabd4a7d17b0",
+    "test_pi_filters.py": "db158dc2bab0066673e2a2ddc2f16033ebd44dfce69e7a25e35e9d4f36941611",
+    "tests/test_holographic_boundary_filters.py": "146a2689dfc0b7e6a1f5dddbcf411bdbe304ae4e1040002fa040bf93b16c97e1"
+  },
+  "goldbach_moments": {
+    "circle_alias": {
+      "modulus_15_count": 2,
+      "modulus_4_count": 5,
+      "ordinary_count": 2,
+      "source_primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "target": 8
+    },
+    "midpoint_10": {
+      "direct_unordered_count": 2,
+      "lower_bound": "1/2",
+      "moments": [
+        "9",
+        "16",
+        "46"
+      ],
+      "support_ceiling": 4,
+      "weights": [
+        "1",
+        "-5/4",
+        "1/4"
+      ]
+    },
+    "moment_twins": {
+      "histograms": [
+        [
+          1,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          1
+        ]
+      ],
+      "moments": [
+        [
+          "4",
+          "6",
+          "12"
+        ],
+        [
+          "4",
+          "6",
+          "12"
+        ]
+      ],
+      "zero_grade_masses": [
+        1,
+        0
+      ]
+    },
+    "power_spectrum_control": {
+      "a": [
+        0,
+        1,
+        4,
+        10,
+        11,
+        14,
+        25,
+        26,
+        29
+      ],
+      "b": [
+        0,
+        1,
+        4,
+        15,
+        16,
+        19,
+        25,
+        26,
+        29
+      ],
+      "same_difference_counts": true,
+      "sum_10_counts": [
+        2,
+        0
+      ]
+    },
+    "scope": "finite exact certificate and hostile controls; Goldbach OPEN"
+  },
+  "ordered": {
+    "certificate": {
+      "ambient_contraction_bounds_certified": false,
+      "ambient_dimension_or_ontology_identified": false,
+      "arithmetic_asymptotic_bound_certified": false,
+      "closed_under_every_declared_filter": true,
+      "contraction_on_observed_span": {
+        "x": true,
+        "y": true
+      },
+      "metric_residual_trace": {
+        "x": "0",
+        "y": "0"
+      },
+      "observed_dimension": 2,
+      "source_authentication_certified": false
+    },
+    "chronological_y_then_x_returns": {
+      "minus": {
+        "imaginary": "-1",
+        "real": "0"
+      },
+      "plus": {
+        "imaginary": "1",
+        "real": "0"
+      }
+    },
+    "reconstruction_mismatches": [],
+    "reconstruction_words_checked": 127,
+    "same_intensity_words_checked": 127,
+    "status": "VERIFIED_FINITE",
+    "universal_proof": "ORDERED_REALIZATION.md; finite checks are not its proof"
+  },
+  "phase": {
+    "homometric": {
+      "equal_autocorrelation": true,
+      "equal_exact_power": true,
+      "same_triples": false,
+      "sum_at_3": [
+        0,
+        2
+      ],
+      "sum_at_5": [
+        2,
+        0
+      ]
+    },
+    "near_haar": {
+      "equal_autocorrelation": true,
+      "maximum_triple_difference_coefficient": 3078,
+      "minimum_l1_over_translations_coefficient": 18
+    },
+    "scope": "EXACT_FINITE_CONTROLS; no asymptotic arithmetic estimate",
+    "support_zero": {
+      "equal_autocorrelation": true,
+      "equal_exact_bispectrum": true,
+      "equal_triples": true,
+      "support": [
+        0,
+        1,
+        5
+      ],
+      "translations": [],
+      "triangle_relation_rank": 2
+    }
+  },
+  "pi": {
+    "ambiguous_cells": 0,
+    "certificates": 18,
+    "receipt_reproduced": true,
+    "uniform_R0_proved": false
+  },
+  "scope": "finite exact tests and reproducibility; no automatic proof authority",
+  "skipped": 0,
+  "tests_run": 71
+}
