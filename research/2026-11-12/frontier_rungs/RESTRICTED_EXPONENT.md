@@ -12,8 +12,9 @@ This file answers the "next verdict-changing probe" of
 `‖b^m ξ‖ ≥ b^(-vm)` at restricted denominators with `v` below the unrestricted `μ - 1`, and do the
 natural constructions for `log 2` and `π` supply it?*
 
-Status labels: `PROVED LOCAL` (complete proof here; same-model authorship, **not audited at the
-time of writing**, not external review, not Lean), `CLASSICAL IMPORT` (cited theorem; where it was
+Status labels: `PROVED LOCAL` (complete proof here; same-model authorship; audited once on
+2026-11-12 by a separate read-only instance with its own code, see VALIDATION.md — the repairs made
+after that audit were not audited again; not external review, not Lean), `CLASSICAL IMPORT` (cited theorem; where it was
 read is stated), `COMPUTED FROM IMPORT` (numerical evaluation of an imported closed formula),
 `OBSERVED` (exact finite computation, no asymptotic authority), `CONDITIONAL`, `OPEN`.
 Code: [`rde_core.py`](rde_core.py), tests [`test_rde.py`](test_rde.py) (24 tests, about 2 s),
@@ -70,8 +71,9 @@ and `u_m = (EA)_S` as soon as `m ≥ m_0 := max_p ⌈(v_p(EA) - v_p(gEB))/v_p(b)
 **S-free part of `EA`**: the lemma sees the height of the approximant *with the primes of the base
 removed*, and powers of `b` in the denominator of `B` cost nothing.
 
-No non-vanishing hypothesis is needed: case (ii) is an exact evaluation. In applications it is
-handled either by a lower bound for `|I|` (RDT-05) or by a second form (Rivoal's device).
+No non-vanishing hypothesis is needed *for the lemma*: case (ii) is an exact evaluation. The
+resulting min-bound is informative only if `I ≠ 0`, and useful only with a lower bound for `|I|`
+(RDT-05) or a second form (Rivoal's device).
 
 *Checks.* `test_random_forms_never_violate_the_lemma` (600 random forms, five constants, five
 bases, multipliers `g ∈ {1, 3, 15}`; `> 1500` instances with a non-empty bound, none violated);
@@ -93,19 +95,25 @@ height `q_0 = λE|A|` and error `e_0 = λE|I|`. For `m ≥ m_0`,
 H = q_0 / G,     Q = e_0 / G,      G := ∏_(p∈S) p^( (v_p(A) - v_p(B))^+ )  ≥ 1.              (2.1)
 ```
 
-So a restricted bound improves on the unrestricted one from the same form **iff `A` is more
-divisible than `B` at a prime of the base**, and by exactly that factor in both the height and
+So, for `m ≥ m_0`, a restricted bound improves on the unrestricted one from the same form **iff
+`A` is more divisible than `B` at a prime of the base**, and by exactly that factor in both the height and
 the error. If `v_p(A) ≤ v_p(B)` for all `p ∈ S`, the two coincide for every `m`.
 (`test_gain_is_exactly_the_S_adic_imbalance`.)
 
 **(c) No rescue.** For every `m ≥ 0`: `b^m Q_m ≥ E|I| / (EB)_S`, where `Q_m = E|I|/u_m`. Hence a
-form is silent at every `m` unless `E|I| < (EB)_S`. For a prime-power base, normalise by (a) so
-that `v_p(EB) = 0`; then the condition is `E|I| < 1`, i.e. *the gcd-normalised integer form must
-already have error below 1*. Asymptotically: **a family of forms that does not prove
-irrationality by the classical criterion (integer-normalised errors `→ 0`) proves nothing at
-restricted denominators either**, however large its imbalance `G`.
+form is silent at every `m` unless `E|I| < (EB)_S`. Sharper, for every base:
+`u_m ≤ ∏_p p^(min(v_p(EA), v_p(EB)) + m v_p(b)) = b^m/λ`, so `b^m Q_m ≥ e_0 := λE|I|` for every
+`m ≥ 0`: **a single form whose gcd-normalised integer error `e_0` is `≥ 1` is silent at every `m`**,
+however large its imbalance `G`. For families, the sufficient conditions (2.2) work at
+`m ≥ m_0(n)` and therefore force `α > δ`, the classical criterion. Below `m_0(n)` RDT-01 can
+still certify bounds from families whose integer-normalised errors do not tend to 0: for
+`ξ = 1/3`, `b = 2`, the forms `(2^k, (2^k - 1)/3)`, `k` even, have `e_0 = 1/3` for every `k` and
+certify `‖2^m/3‖ ≥ 1/3` at `m = k`. (Corrected after the audit: the first version asserted that a
+family failing the classical criterion proves nothing at restricted denominators; that sentence
+was false, by this example.)
 
-*Proof.* By (1.2), `u_m ≤ ∏_p p^(v_p(EB) + m v_p(b)) = b^m (EB)_S`. ∎
+*Proof.* By (1.2), `u_m ≤ ∏_p p^(v_p(EB) + m v_p(b)) = b^m (EB)_S`, and equally with `EA` in place
+of `EB`. ∎
 (`test_no_rescue_inequality`.) This corrects the provisional criterion "`α + σ - δ > 0`" of the
 round brief, which omitted the constraint `m ≥ m_0`; the correct pair of conditions is (2.2).
 
@@ -128,7 +136,7 @@ v_b(ξ)  ≤  (β + δ - γ) / (α - δ + γ)     provided   α > δ   (the clas
 *Proof.* Fix small `ε > 0` and, for large `m`, let `n = ⌈m log b/(θ - ε)⌉ + n_1` with `n_1` so
 large that `b^m E_n|I_n|/u_n ≤ 1/2`; then `m ≥ m_0(n)` for large `m` by the third condition. In
 case (i) of RDT-01, `‖b^m ξ‖ ≥ 1/(2H_n) ≥ e^(-(χ+ε)n)`. In case (ii),
-`‖b^m ξ‖ = b^m|I_n|/|A_n| ≥ e^((n - n_1 - 1)(θ-ε) - (α+β+2ε)n)`. Divide by `m log b ≥ (n - n_1 - 1)(θ - ε)`
+`|b^m ξ - p_*| = b^m|I_n|/|A_n| ≥ e^((n - n_1 - 1)(θ-ε) - (α+β+2ε)n)`. Divide by `m log b ≥ (n - n_1 - 1)(θ - ε)`
 and let `ε → 0`. ∎
 
 **Example with a provable gain (`μ = ∞`, `v_2 < 1`).** Let `ξ_6 = Σ_(k≥1) 6^(-k!)`. Then
@@ -144,8 +152,8 @@ so for `m ≥ k!`: `u = 2^(k!)`, `H = 3^(k!)`, and `2^m B_k/A_k = 2^(m-k!) B_k/3
 integer. RDT-01 gives `‖2^m ξ_6‖ ≥ 1/(2·3^(k!))` for
 `k! ≤ m ≤ M_k := ⌊(k+1)! log_2 6 - k! log_2 3 - 2⌋`. Every `m ≥ 2` lies in such a window with
 `m > M_(k-1)`, whence `3^(k!) ≤ 2^((log 3/log 6 + o(1)) m)`. ∎ (`LiouvilleExample`.)
-Together with Shallit's number (`μ = 2`, `v_16 = 1`; ZSC-01, Remark 2) this shows that `μ - 1` and
-the restricted exponent are independent in both directions.
+Together with Shallit's number (`μ = 2`, `v_16 = 1`; ZSC-01, Remark 2) this shows that the gap
+`μ - 1 - v_b ≥ 0` can be `0` (Shallit) or `∞` (`ξ_6`).
 
 **Example with no possible gain.** For Shallit's `K = Σ 16^(-2^k)`, `v_16(K) = 1 = μ(K) - 1`: no
 family of forms can give a restricted exponent below the unrestricted one.
@@ -185,7 +193,8 @@ a_(k+1)  >  G²·16^(L-n)/225  -  2.
 Conversely, if a convergent has `q_k | 15·16^n` then `‖15·16^n ξ‖ < 15·16^n/(a_(k+1) q_k²)`, and a
 run of length `⌊log_16(a_(k+1) q_k² /(15·16^n))⌋` starts at `n`. *Proof.*
 `1/((a_(k+1)+2) q_k²) < |ξ - p_k/q_k| < 1/(a_(k+1) q_k²)`, and (a). ∎ Thus **runs with `L > n + 2`
-are exactly large partial quotients at convergent denominators dividing `15·16^n`**, and the
+are, up to the stated constants, large partial quotients at convergent denominators dividing
+`15·16^n`**, and the
 ZSC-04 run bound (`L ≤ 41n` for `x = π/16`, `n ≥ 2`, from Mahler) reads: if a convergent
 denominator `q_k` of `π/16` divides `15·16^n`, then `a_(k+1) q_k² < 15·16^(42n+1)`.
 
@@ -215,30 +224,35 @@ the sharper constant anywhere.
 **Consequence.** If L2 fails at `B`, then `15·16^B = r q_(m+1) + s q_m` for consecutive
 convergent denominators with `min(r,t)·s < 57` (`c = 225/16`; the local statement does not need
 `p, q` coprime. With the import, applied to the reduced fraction: `15·16^B/G = r q_(m+1) ± s q_m`,
-`rs < 29`). **L2 for `ξ` ⟺ a bounded family of binary forms in consecutive convergent
-denominators takes values of the shape `15·16^B/G` only finitely often.** For π nothing is known
-about this; for runs of medium length (`1 ≪ L < n`) the approximation quality `16^(-L)/q` is
-weaker than `1/q²` and carries no continued-fraction information at all — that is the range in
-which (CH) lives.
+`rs < 29`). **L2 for `ξ` ⟸ a bounded family of binary forms in consecutive convergent
+denominators takes values of the shape `15·16^B/G` only finitely often** (sufficient; the converse
+is not proved: such a value with small `r, s` does not force `q‖qξ‖ < 15/16`). For π nothing is
+known about this; for runs of medium length (`1 ≪ L < n`) the approximation quality `16^(-L)/q`
+is weaker than `1/q²`, the decomposition (c) holds only with `c ≈ 16^(n-L)` growing, and the
+continued-fraction information degrades accordingly — that is the range in which (CH) lives.
 
 *Checks.* `ContinuedFractionDictionary` (locality in both directions on 4000 exact rationals;
 the decomposition on `> 1000` random near-convergents of `π/16`, with the imported `2c` form never
 violated; the partial-quotient inequality on 29 convergents; longest run among the first 3050
-hexadecimal digits of `π/16` is `≤ 5` — observational).
+hexadecimal digits of `π/16` is `≤ 5` (the audit found it equal to 4) — observational).
 
 ## RDT-04 — series do not certify their own digits; the effective base (PROVED LOCAL, elementary)
 
 **(a) Partial sums are silent.** Let `b` be a prime power, `ξ = Σ_(j≥1) b^(-j) ρ(j)` with
 rational `ρ(j)`, `P_n` the `n`-th partial sum, `I_n = ξ - P_n`, and `D_n` the least positive
 integer prime to `b` with `D_n P_n ∈ Z[1/b]`. For the form `(1, P_n, I_n)` and `E = D_n`:
-`u_m ≤ 1` for every `m`, so `b^m Q_m ≥ b^m D_n|I_n|`; and if `v_p(D_n P_n) ≤ -n·v_p(b)` (the last
-term is present to full depth), then `u_m ≤ b^(m-n)` for `m ≤ n`. In that case
-`b^m Q_m ≥ D_n·b^n|I_n|` **for every `m`**, and `b^n I_n = ρ(n+1)/b + O(|ρ(n+2)|/b²)`: the lemma
-is silent as soon as `D_n|ρ(n+1)| ≥ 2b`. For rational-function forcing, `D_n` grows exponentially
-(for the frozen four-pole source it is divisible by every odd number below `2n`) while
+`u_m ≤ 1` for every `m`, so `b^m Q_m ≥ b^m D_n|I_n|`; and if `v_p(D_n P_n) ≤ -(n - k_n)·v_p(b)`
+(the last term is present to depth `n - k_n`), then `u_m ≤ b^(m-n+k_n)` for `m ≤ n - k_n`. In that
+case `b^m Q_m ≥ D_n·b^(n-k_n)|I_n|` **for every `m`**, and
+`b^n I_n = ρ(n+1)/b + O(|ρ(n+2)|/b²)`: the lemma is silent as soon as
+`D_n|ρ(n+1)| ≥ 2b^(1+k_n)`. (For the frozen source the full-depth case `k_n = 0` fails, e.g.
+`v_2(D_10 P_10) = -39`; the audit found `k_n ≤ 8` for `n ≤ 400`, and `k_n = O(log n)` in general.)
+For rational-function forcing, `D_n` grows exponentially (for the frozen four-pole source every
+prime `p ∈ (4n, 8n)` with `p ≡ 1 (mod 4)` divides `D_n` exactly once, since it occurs once among
+the odd denominator parts `8k+1, 2k+1, 8k+5, 4k+3`, `k < n`; so `log D_n ≥ (2 + o(1))n`; OBSERVED
+by the audit: `log D_n/n ≈ 6.01` at `n = 400`) while
 `ρ(n+1)` decays polynomially. **A BBP-type series does not certify a restricted bound through its
-own partial sums, whatever the base.** (The Dalzell-type integrals in (c) fail for the same
-reason, RDT-02(c).)
+own partial sums, whatever the base.** (The Dalzell-type integrals in (c) are examined separately.)
 
 **(b) The effective base.** What a series offers per unit of denominator growth is its *effective
 base* `b_eff = b^(1/d)`, where the `j`-th term introduces denominators of size `≈ d·j`. In the
@@ -276,9 +290,12 @@ max_(0<a<1) φ(a) = φ(√2 - 1) = 4 log(1 + √2) = 3.5255… < 4 = lim (1/n) l
 so the first condition already requires that more than 11.8 % of the logarithm of the generic
 denominator cancel. OBSERVED
 (`RESULTS_rde.json`, `a = b = 1`, `n ≤ 8`): `v_2(B_n) ≤ 4` while `v_2(A_n) = 2n - 2`, and
-`log(E_n|I_n|)/n` increases through `0` at `n = 4`. So these forms carry a **large 2-adic
-imbalance on the coefficient of π** — the kind RDT-02(b) wants — and are useless by RDT-02(c):
-they do not converge. (`DalzellAndSeries`.)
+`log(E_n|I_n|)/n` passes through `0` at `n = 4` (not monotonically). So these forms carry a
+**large 2-adic imbalance on the coefficient of π** — the kind RDT-02(b) wants — and are OBSERVED
+to be silent: the per-form condition `E_n|I_n| ≥ 2^(v_2(E_n B_n))` of RDT-02(c) holds for
+`a = b = 1`, `5 ≤ n ≤ 10` (audit), though not for `n ≤ 4`; the weight optimum above shows that
+the family cannot converge unless more than 11.8 % of the generic denominator cancels.
+(`DalzellAndSeries`.)
 
 ## RDT-05 — `log 2` at powers of two: a restricted exponent below the unrestricted record (PROVED LOCAL; imports: prime number theorem)
 
@@ -345,8 +362,10 @@ I_n = A_n log 2 - B_n,      A_n = p_(cn),      B_n = - Σ_(i≠cn) p_i (2^(i-cn)
    `v_2(p_i) ≥ (bn - i)^+`; hence `2^((b-c)n) | A_n`. In `B_n`, a term with `i < cn` has valuation
    `≥ (bn - i) - (cn - i) - v_2(cn - i) ≥ (b-c)n - v_2(cn-i)` and a term with `i > cn` has valuation
    `≥ -v_2(i - cn)`; so `v_2(B_n) ≥ -λ_n`, `λ_n := ⌊log_2(N_* n)⌋`. The tilt is real: `A_n` carries
-   `2^((b-c)n)` and `B_n` does not (OBSERVED: `-4 ≤ v_2(B_n) ≤ 0` in every case of
-   `RESULTS_rde.json`; only the lower bound is used).
+   `2^((b-c)n)` and `B_n` does not (OBSERVED: `-4 ≤ v_2(B_n) ≤ 0` in the six cases of
+   `RESULTS_rde.json`; the audit found the range `-5 … +3` for `(2,4,3)`, `n ≤ 40`; only the lower
+   bound is used). Also `A_n ≠ 0` for large `n`: if `A_n = 0` then
+   `0 < I_n = -B_n ≥ 1/(2^(λ_n) Δ_n)`, contradicting `α > δ'` (step 3).
 3. *Odd denominators and saved primes.* The odd part of the denominator of `B_n` divides the odd
    part `D_n` of `lcm(1, …, N_* n)`. Let `p` be an odd prime with `p² > N_* n` and
    `(an mod p) + (bn mod p) < (cn mod p)`. Writing `an = a_0 + a_1 p`, `bn = b_0 + b_1 p`,
@@ -416,7 +435,8 @@ For `A_n`: the coefficient of `z^j` in `(z²-2z+2)^(an)` is divisible by `2^(an 
 
 So **in every such family the rational part `B_n` is 2-adically small**: the 2-adic counterpart
 of the form `A_n·log(p/p̄) + i B_n` is a convergent 2-adic integral, and its "period" `log_2(i)`
-is zero. By RDT-02(b) the imbalance `v_2(A_n) < v_2(B_n)` is on the wrong side for π:
+is zero. The lemma bounds `v_2(B_n)` from below only and says nothing about `v_2(A_n)`; that the
+imbalance is in fact `v_2(A_n) < v_2(B_n)`, the wrong side for π by RDT-02(b), is an observation:
 
 **(b) OBSERVED.** For the seven families `(a, deg-1 factor, (z-2)-factor, c)` of
 `RESULTS_rde.json` and `n ∈ {12, 18}`: `v_2(A_n/2) < v_2(B_n)` in every case (e.g. Hata type:
@@ -424,13 +444,14 @@ is zero. By RDT-02(b) the imbalance `v_2(A_n) < v_2(B_n)` is on the wrong side f
 **equal** at every tested `n`. The even real family of the round's scout,
 `∫_(-1)^1 t^(2bn)(1-t²)^(an)(1+t²)^(-cn-1) dt` (two real poles, conjugate endpoints in the same
 coordinates), shows the same equality for almost all weights tried and never converges. Numerator roots 2-adically closer to the pole than the
-endpoints (`(z-2)^b`, `b > c`) do raise `v_2(A_n)` but cost at least as much at the Archimedean
-place (product formula) and by RDT-02(c) cannot rescue a family.
+endpoints (`(z-2)^b`, `b > c`) do raise `v_2(A_n)` (family `(1,0,2,1)`, `n = 12`: `v_2(A_n/2) = 25`
+against `v_2(B_n) = 30` and a shadow bound of `11.9`), but in the cases computed not above
+`v_2(B_n)` (OBSERVED; no general statement is proved).
 
 **(c) Where a π-side imbalance does occur.** With *real endpoints and conjugate poles* (Dalzell,
 RDT-04(c)) the coefficient of π is highly 2-divisible and `B_n` is not — the `log 2` mechanism,
-the endpoint `1` being congruent to the poles `±i` modulo `1 + i`. But a pure π-form of this type
-needs pole order 1 (higher order brings `log 2` in), and then the family does not converge.
+the endpoint `1` being congruent to the poles `±i` modulo `1 + i`. But the pure π-forms of this type that were examined have pole order 1 (higher order brings
+`log 2` in), and those do not converge (OBSERVED/heuristic, RDT-04(c)).
 **OBSERVED dichotomy:** the forms that converge have the imbalance on the constant term; the
 forms with the imbalance on π do not converge. No family with both properties was found; none is
 proved not to exist.
@@ -442,15 +463,17 @@ admissible for `m ≥ an + 1`. For `N = (z²-2z+2)²(z-1)²`, `c = 3`: on the se
 `|z| = ρ`, the maximum being at `z = -ρ`), odd denominators `≤ e^((3 - s + o(1)) n)` with
 `s ≥ s_60 = 0.6425` (the Frobenius argument of RDT-05 step 3 with the condition
 `3·(2n mod p) < (3n mod p)`; checked exactly for `n ≤ 25`). RDT-01 then yields: *for every large
-`m` and every integer `p` other than the single value `p_*(m) = -2^(m-1) A_n/B_n`,*
+`m` for which `p_*(m) = -2^(m-1) A_n/B_n` is not an integer,*
 
 ```text
-| 2^m/π - p |  ≥  2^(-3.11 m).
+‖ 2^m/π ‖  ≥  2^(-3.11 m).
 ```
 
-The exceptional integer is not excluded (no lower bound for the oscillating `|J_n|` and no
-determinant identity is proved here), so **`v_2(1/π) ≤ 3.11` is CONDITIONAL** on a non-vanishing
-statement; unconditionally the exceptional case only has the unrestricted bound. Finite
+(When `p_*(m)` is an integer it is the nearest integer, and case (ii) of RDT-01 needs a lower
+bound for the oscillating `|J_n|`; mere non-vanishing of `J_n` is not enough.) So
+**`v_2(1/π) ≤ 3.11` is CONDITIONAL on the existence of `lim (1/n) log|J_n|`** (corrected after the
+audit: the first version named a non-vanishing statement as the condition and displayed an
+inequality for `p ≠ p_*` that is trivially true). Finite
 certified exponents from the exact forms (`n ≤ 24`): `1.6–2.0` for `1/π` against `3.7–4.7`
 unrestricted, and no gain for π (`RESULTS_rde.json`; `test_lemma_on_pi_and_reciprocal_pi`). This
 concerns approximations `π ≈ 2^m/p` (numerators powers of two), not the hexadecimal digits of π.
@@ -497,12 +520,15 @@ and RDT-01 is verified against the true `‖g·16^m ξ_*‖` for `g ∈ {1, 2, 4
 1. Every run of equal hexadecimal digits of `ξ_*` starting at position `n` has length
    `≤ (0.8813 + ε) n + 1` for `n ≥ n_0(ε)` (RDT-03(a) with `g = 15`).
 2. **L2 holds for `ξ_*`:** every shell `[B, 2B)` with `B` large contains a digit change — indeed
-   every window `[n, n + ⌈0.89 n⌉]` does. This is the first rung above L1 for a nonzero element
-   of `V`, and it uses the multiplier 15 (for runs of `0` or `F` the import alone suffices).
+   every window `[n, n + ⌈0.89 n⌉]` does. This places `ξ_*` on rung L2 of the ZSC-04 ladder; it
+   uses the multiplier 15 (for runs of `0` or `F` the import alone suffices). The extension also
+   uses the prime number theorem for `d_(pn)` (as in Rivoal), the approximation of the real
+   optimal `κ` by rationals `p/q` with continuity of `L(κ)`, and `B ≠ 0` (his Lemma 1 (iii)).
 3. The number of changes among the first `N` digits is `≥ log N/log 1.89 - O(1)`: still
    logarithmic. **(CH) for `ξ_*` is OPEN.**
-4. The necessary Diophantine cost of a saving (ZSC-01) is **paid** for `ξ_*`: the law no longer
-   forbids a saving `η ≤ 2(1-v)/(1+v) = 0.126` at any mode. It gives no saving.
+4. The necessary Diophantine cost of a saving (ZSC-01) is **paid up to `η ≤ 2(1-v)/(1+v) = 0.126`**
+   for `ξ_*`: the law no longer forbids savings of that size at any mode (larger ones remain
+   undecided). It gives no saving.
 
 **Which elements of `span_Q{log 2, log 3, log 5} ⊂ V` this reaches (COMPUTED FROM IMPORT).** The
 candidates are `log(N/2^i)` with `N` odd and `{3,5}`-smooth, `0 < N < 2^(i+1)`. For `i ≤ 12`:
@@ -516,7 +542,8 @@ candidates are `log(N/2^i)` with `N` odd and `{3,5}`-smooth, `0 < N < 2^(i+1)`. 
 | `log(3/4)` | `(1, 4)` | 3.004521 | | `log(9/16)`, `log(25/32)`, `log(81/64)`, … | | admissible set empty |
 
 Only `log(15/16)` is below 2. For numerator `±1` this is the complete list: `2^i ∓ 1` is
-`{3,5}`-smooth only for `i ≤ 4` (a primitive prime divisor `≥ 7` exists otherwise). The three
+`{3,5}`-smooth only for `i ≤ 4` (a prime divisor `≥ 7` exists otherwise: a primitive one by
+   Zsigmondy–Bang, except `2^6 - 1 = 63`, which is divisible by 7 anyway). The three
 values `log(15/16)`, `log(125/128)`, `log(243/256)` form a `Z`-basis of
 `Z log 2 + Z log 3 + Z log 5`, but restricted exponents are not linear, so nothing follows for
 `log 2`, `log 3` or `log 5` themselves (for `log 2`, RDT-05 gives `2.3767`).
@@ -529,7 +556,7 @@ values `log(15/16)`, `log(125/128)`, `log(243/256)` form a `Z`-basis of
 *Proof.* `|x|² = 1 - 2r cos θ + r² ≥ sin²θ` if `cos θ > 0` (minimum at `r = cos θ`) and `≥ 1`
 otherwise; among the admissible `θ` only `θ ≡ ±π/4` has `cos θ > 0`. ∎
 
-So a single logarithm `log(1 - x)` whose imaginary part is a nonzero multiple of `π/4` has
+So a single logarithm `log(1 - x)` (principal branch) whose imaginary part is a nonzero multiple of `π/4` has
 effective base `1/|x| ≤ √2`, and the extremal point `x = (1 ± i)/2` is **exactly the BBP point**:
 `π = 4 Im Σ_k ((1+i)/2)^k/k`, `((1+i)/2)^8 = 1/16`, the frozen four-pole source being this series
 grouped modulo 8. More generally all eight natural generators `log(1 - ζ_8^k/√2)` of `V` have
@@ -542,15 +569,18 @@ collapse can carry an argument.
 - A restricted exponent below 1 **exists** in `V`: `v_16(log(16/15)) ≤ 0.8813` (IMPORT, Rivoal),
   with L2 as a consequence at the denominators `15·16^m` (PROVED LOCAL extension).
 - A restricted exponent below the best known unrestricted one exists for `log 2`:
-  `v_2(log 2) ≤ 2.3814 < 2.5746` (PROVED LOCAL, unaudited; still above 1).
+  `v_2(log 2) ≤ 2.3814 < 2.5746` (PROVED LOCAL; the exact forms to `n = 40`, the rates and the
+  saving were recomputed independently by the audit; still above 1).
 - Both use one structure: **a non-unit, at a prime of the base, in the argument of the
   logarithm** (`16/15` against base 16; the ratio 2 of endpoint distances for `log 2`), which
   makes the coefficient `A_n` of the number more divisible than the constant term `B_n`
   (RDT-02(b)), and — to get below 1 — a large effective base (`≥ 12` in the import).
-- The π-line lacks both. Its argument is a root of unity, congruent to 1 at the prime above 2:
-  the single-logarithm effective base is at most `√2` (Lemma), and in the convergent Gaussian
-  families the 2-adic imbalance falls on `B_n` (RDT-06(a)), so the forms bound restricted
-  *numerators* (`‖2^m/π‖`) and give for π exactly the unrestricted exponent (OBSERVED).
+- The π-line lacks both. For arguments in `Q(i)` — where the argument of `1 - x` is forced into
+  `(π/4)Z` — the single-logarithm effective base is at most `√2` (Lemma; for other cyclotomic
+  fields this fails, e.g. `x = (1 - i√3)/4` has `|x| = 1/2`, but yields `π√3`, not π, over `Q`),
+  and in the convergent Gaussian families examined the 2-adic imbalance falls on `B_n`
+  (RDT-06(b), OBSERVED), so the forms bound restricted *numerators* (`‖2^m/π‖`, CONDITIONAL,
+  RDT-06(d)) and give for π exactly the unrestricted exponent (OBSERVED).
 - **Not claimed:** that `v_16(π) < 1`, or even `v_2(π) < μ(π) - 1`, is false or unprovable. Only
   that the Padé table of one logarithm and the one-pole Gaussian families examined here do not
   reach it. Machin-type representations (several logarithms with small arguments, e.g.
@@ -562,14 +592,16 @@ collapse can carry an argument.
 1. (π, OPEN) Exhibit a family of forms `A_n π - B_n` with integer-normalised errors `→ 0` and
    `v_2(A_n) - v_2(B_n) ≥ cn`, `c > 0`; or prove that the 2-adic shadow argument of RDT-06(a)
    extends to every family built from logarithms of Gaussian (or cyclotomic) numbers with a
-   convergent 2-adic counterpart, which would make the wrong-side imbalance a theorem.
+   convergent 2-adic counterpart **and** that `v_2(A_n) ≤ v_2(B_n) + o(n)` there (the shadow lemma
+   alone bounds only `v_2(B_n)`); together these would make the wrong-side imbalance a theorem.
 2. (`log 2`, OPEN) `v_2(log 2) < 1`. The tilt of RDT-05 is one factor of 2 per step against
-   denominators `e^(δ')`; reaching 1 needs an effective base of Rivoal's size, which `log 2`
+   denominators `e^(δ')`; heuristically, reaching 1 needs an effective base of Rivoal's size, which `log 2`
    does not have at `x = 1/2` or `x = -1`.
 3. (`ξ_* = log(16/15)`, OPEN) (CH). It is now the natural test object of the programme: a proper
-   zero-seeded element of `V` for which L2 is proved and the Diophantine obstruction of ZSC-01 is
-   absent, so that any failure of (CH) there would have to come from the medium scale alone.
-4. (`1/π`, CONDITIONAL) the non-vanishing statement of RDT-06(d).
+   zero-seeded element of `V` for which L2 is proved and `v_16 ≤ 0.8813 < 1`, so that ZSC-01 no
+   longer excludes savings `η ≤ 0.126` and ZSC-02(d) no longer excludes (CH) with `c ≤ 0.063`;
+   larger values remain undecided by the exponent.
+4. (`1/π`, CONDITIONAL) the existence of `lim (1/n) log|J_n|` in RDT-06(d).
 
 ## Falsifiers and what was not verified
 
@@ -588,4 +620,7 @@ collapse can carry an argument.
 - Literature values `3.57455391`, `3.89139978` are as printed in the fetched Marcovecchio text;
   Dujella's theorem as printed in arXiv cs/0402052. Legendre's theorem and the 2-adic logarithm
   are used from their standard statements.
-- No part of this file was reviewed by a second reader at the time of writing.
+- The file was audited once (VALIDATION.md); the audit's four false or unsupported sentences
+  (RDT-02(c) "no rescue" for families, the divisibility claim in RDT-04(a), the condition in
+  RDT-06(d), "the obstruction is absent" in the remaining statements) are corrected in place and
+  marked. The corrections were not audited again.
