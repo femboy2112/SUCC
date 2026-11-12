@@ -1,9 +1,17 @@
-# π base-16 normality — Main XXIV frontier
+# π base-16 normality — Main XXV frontier
 
-Maintained 2026-11-11. **Source-selected signed cancellation, original-zero
+Maintained 2026-11-12. **Source-selected signed cancellation, original-zero
 hexadecimal parity balance and parity words, π base-16 normality, completed Weil
 positivity, and RH remain OPEN.** Main XXIV consolidates the source, identity and
-observer machinery; it supplies no missing statistical estimate. The
+observer machinery; it supplies no missing statistical estimate. Main XXV adds the
+exact ladder of signed statements below the canonical target, thresholds for its rungs
+in the canonical units, the necessary Diophantine cost of any saving, and a settled
+restricted-exponent probe (§9); it also supplies no estimate. The Main XXV
+[audit](SUCC_MAIN_XXV_INTEGRATION_AUDIT_2026-11-12.md),
+[manifest](SUCC_MAIN_XXV_INTEGRATION_MANIFEST_2026-11-12.json) and
+[claim supplement](CLAIM_SUPPLEMENT_MAIN_XXV.md) record this integration; the
+[Main XXIV entrypoint](archive/PI_NORMALITY_FRONTIER_MAIN_XXIV_2026-11-12.md) is preserved
+byte for byte. The Main XXIV
 [audit](SUCC_MAIN_XXIV_INTEGRATION_AUDIT_2026-11-11.md),
 [manifest](SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json), and
 [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXIV.md) record exact integration and
@@ -62,6 +70,8 @@ Equality in this module does not decide equality of arbitrary computable reals.
 | Symbolic zero-seed recovery | **Exact algebraic identity** | $`\mathbb Q+\mathbb Qx`$, with imported irrationality for coordinate uniqueness |
 | Certified finite Weyl/Haar observations | **Finite mathematical certificates** | Exact rational intervals, paid approximation errors and branch guards |
 | Source-selected signed cancellation | **OPEN** | All-large-epoch signed estimate for the actual source and zero seed is missing |
+| Ladder of signed rungs, thresholds, saving–exponent law (§9) | **Proved within declared hypotheses** | Every real number, hence every seed; same-model paper proofs with one independent audit each; exact carry lemmas kernel-checked |
+| R0: `limsup Re W_(B,1) < 1` (binary digit changes of π have positive lower shell density) | **OPEN** | The weakest open signed statement; its necessary restricted Diophantine exponent `< 1` is itself open for π |
 | Original-zero parity balance | **OPEN** | Conditional prime balance does not bound the real complementary contrast |
 | π base-16 normality | **OPEN** | Requires the all-nonzero-mode Weyl criterion below |
 | Completed Weil positivity sufficient for RH | **OPEN** | Universal positivity on the valid completed test-function domain remains unproved; the classical criterion is retained |
@@ -286,5 +296,95 @@ remain OPEN.** See the [RH handoff](RH_HANDOFF.md),
 [typed Gamma table](MAIN_XXII_GAMMA_OBSERVABLES.md), and
 [Main XXIII tool atlas](MAIN_XXIII_TOOL_ATLAS.md).
 
-Resume with the [Main XXIV handoff](MAIN_XXIV_HANDOFF.md): prove a genuinely
-source-derived signed bound with all integer-epoch and all-mode quantifiers.
+## 9. Main XXV: the ladder below the canonical target
+
+The statements of this section hold for **every real number** `ξ` (so for every seed and
+every source completing to it). They prove nothing about π's statistics. Proofs,
+falsifiers and audits: [innovation × arithmetic decoupling](../research/2026-11-11/innovation_arithmetic_decoupling/README.md)
+(IAD, SWT, ZSC) and [frontier rungs](../research/2026-11-12/frontier_rungs/README.md) (LMF, RDT).
+
+**Shell means and limit measures.** With $`z_n=\{16^n\xi\}`$ and integers $`B\ge1`$, put
+
+```math
+W_B(h)=\frac1B\sum_{n=B}^{2B-1}e(hz_n),\qquad
+\nu_B=\frac1B\sum_{n=B}^{2B-1}\delta_{z_n},\qquad
+M(\xi)=\{\text{weak-* limit points of }(\nu_B)\}.
+```
+
+$`M(\xi)`$ is nonempty, compact, connected, consists of $`\times16`$-invariant measures and
+depends only on the completed point; normality is $`M(\xi)=\{\lambda\}`$ (LMF-01). A real
+saving at mode $`h`$ on all large shells is the exclusion from $`M(\xi)`$ of the invariant
+measures on periodic points $`p`$ with $`hp\in\mathbb Z`$ (LMF-02).
+
+**The ladder** (LMF-03; every implication is strict, with explicit witnesses):
+
+| Rung | Signed form | Digit form |
+|---|---|---|
+| R0 | $`\limsup_B\operatorname{Re}W_B(1)<1`$ | binary digit changes have positive lower shell density |
+| R1 | $`\limsup_B\lvert W_B(1)\rvert<1`$ | no shell limit is a single fixed-point mass |
+| (CH) | $`\limsup_B\operatorname{Re}W_B(15)<1`$ | hexadecimal digit changes $`d_n\ne d_{n+1}`$ have positive lower shell density |
+| (CH$`_k`$) | $`\limsup_B\operatorname{Re}W_B(16^k-1)<1`$ | $`d_n\ne d_{n+k}`$ with positive lower shell density |
+| normality | $`W_B(h)\to0`$ for all $`h\ne0`$ | — |
+
+normality ⟹ (CH$`_k`$) ⟹ (CH) ⟹ R1 ⟹ R0. For the literal zero seed, (CH) is also a statement
+about the literal carries $`\kappa_n`$ (ZSC-03). **For π all rungs are OPEN.**
+
+**Thresholds in the canonical units of §5** (LMF-04, LMF-05; interval cost on $`[0,1]`$,
+$`D(\nu)=W_1(\nu,Q\nu)`$):
+
+```math
+\limsup_B D(\nu_B)<\tfrac14\ \Rightarrow\ \text{R1},\qquad
+\limsup_B D(\nu_B)<\tfrac1{60}\ \Rightarrow\ \text{(CH)},\qquad
+\limsup_B D(\nu_B)<\tfrac1{4(16^k-1)}\ \Rightarrow\ (\text{CH}_k),
+```
+
+and the same with $`W_1(\nu_B,\lambda)`$ in place of $`D(\nu_B)`$; for prefixes,
+$`\limsup_ND_N<15/256`$ implies R1 and $`\limsup_ND_N<1/256`$ implies (CH). The constants $`1/4`$
+and $`1/60`$ are sharp for shells. The coherent control has $`D=15/32`$. Thresholds are
+sufficient conditions; a finite set of shells below a threshold is not evidence.
+
+**Necessary Diophantine cost** (ZSC-01, ZSC-02, LMF-03). A real saving $`\eta`$ at one mode
+on all large shells forces
+
+```math
+\lVert16^m\xi\rVert\ \ge\ c\,16^{-\frac{2-\eta}{2+\eta}m}\qquad(m\ge m_0),
+```
+
+a restricted exponent strictly below 1 at the denominators $`16^m`$. No bound on the
+irrationality exponent can supply it ($`v_{16}\le\mu-1`$, $`\mu\ge2`$): an unrefereed claim
+$`\mu(\pi)=2`$, even if correct, yields no saving. The refereed record is
+$`v_{16}(\pi)\le6.1033`$. The cost is necessary, not sufficient: explicit points have
+$`v_{16}=0`$ and no saving. For algebraic irrationals the cost is paid (Ridout, ineffective)
+and a positive density of digit changes is still not known.
+
+**Restricted exponents** (RDT). From a linear form $`A\xi-B=I`$ the bound at denominators
+$`g\,b^m`$ beats the unrestricted bound of the same form exactly by the $`b`$-adic imbalance
+of $`A`$ over $`B`$. Rivoal (2007, import) gives
+$`v_{16}(\log(16/15))\le0.8813`$; $`\log(16/15)=\sum_{n\ge1}16^{-n}/n`$ is a proper
+zero-seeded element of the seven-dimensional period space $`V`$ of the source class
+(ZSC-06), and the local extension to $`15\cdot16^m`$ gives a digit change in every large
+shell for that element. For π, the families examined show no gain (observed), and the
+effective base of the relevant logarithm series is $`\sqrt2`$ (the BBP point
+$`x=(1\pm i)/2`$, $`|x|=2^{-1/2}`$) against the $`\ge12`$ used by the import. Not claimed:
+that $`v_{16}(\pi)<1`$ is false.
+
+**Source moduli** (ZSC-06). Sources $`(g,s)`$ with the gauge
+$`(g-(16-z^8)h,\ s+\int_0^1h)`$ share the completed point and all phase statistics; seed,
+poles, literal carries and seam are not gauge-invariant. In proper form the zero seed says
+exactly that $`\pi/16\in V`$. A fixed zero-seeded rational source with positive
+$`O(n^{-2})`$ forcing and complete census is coherent on every shell: no transfer using
+only those properties can work.
+
+**Kernel authority.** Thirty-three exact statements behind ZSC-02 (locality lemma), ZSC-03
+(renewal lemma) and ZSC-06 (null relation) are checked in Lean 4.14.0 against the pinned
+mathlib, with nine refuted mutants. No statistical or asymptotic statement is
+kernel-checked.
+
+Additional hostile controls a proof must survive: points with $`v_{16}=0`$ on the wrong
+side of each rung (LMF-03); the two-digit run point (R1 holds, (CH) fails); the lift $`1`$
+of the fixed point $`0`$ on the interval (the error in a provisional threshold of this
+round); the null source and the hostile source of ZSC-06.
+
+Resume with the [Main XXV handoff](MAIN_XXV_HANDOFF.md) and, for the full signed theorem,
+the [Main XXIV handoff](MAIN_XXIV_HANDOFF.md): prove a genuinely source-derived signed
+bound with all integer-epoch and all-mode quantifiers.

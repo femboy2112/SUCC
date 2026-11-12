@@ -1,0 +1,177 @@
+{
+  "RH_proved": false,
+  "actual_beta_observer": {
+    "beta_steps": 3181,
+    "delta_steps": 44018,
+    "max_steps": 1000000,
+    "program_sha256": "40ce1d172a3abbac7b2faa6fbddb8748040396953cfbd9ddf778224601731622",
+    "requested_count": 30,
+    "status": "COMPLETE",
+    "values": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113
+    ]
+  },
+  "artifact_sha256": {
+    "docs/math_memory/CLAIM_CATALOG.json": "edca8d13035b48e336af0cf3891c074e87055b9062e0bf26555fe6150a93c683",
+    "research/2026-11-12/prime_fixed_point_observer/AUDIT.md": "e874198f61f4e434994c538525b6d884d950f0989fa6566128c6cd89f9265c16",
+    "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md": "1c55d7982fcd1f2cd0b1b0985944913f94319278d1a962033c67400cdba03716",
+    "research/2026-11-12/prime_fixed_point_observer/CYLINDER.md": "85ce0e371e79695f3959162322d668c16dce42bd86421557955ea10546ec0e24",
+    "research/2026-11-12/prime_fixed_point_observer/NEXT.md": "fc67949ae3870eb1f8160233b2d2661674bfb8ced7a4617d287efffbc332a002",
+    "research/2026-11-12/prime_fixed_point_observer/PRIME_INTERFEROMETER.md": "77394a87dddf0112d059519fed35fb5ab131764ba4edf142c6affe3f9e417596",
+    "research/2026-11-12/prime_fixed_point_observer/PROTOCOL.md": "9654505195126243d0b44af942c06e5221df919928a2e58f77eb25536a0e4436",
+    "research/2026-11-12/prime_fixed_point_observer/README.md": "f0cb42a67823f86ae7576ed27bd9ce06fcfcb5b88fc630cfb0c64e3a55e109b5",
+    "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md": "53ccc6ef242f1ce7d6258b872e4f8594d11d57be653833a31edfe6c2565e24da",
+    "research/2026-11-12/prime_fixed_point_observer/THEOREMS.md": "187ca6d4ff8c4d2d4f18d7027e64eccfef29d30a1be298e684c5d51b505ec5fd",
+    "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md": "e6144c06bb7ae5c8f1e228147d20cc1d13e83921f538e46723cc6688510a6fcf",
+    "research/2026-11-12/prime_fixed_point_observer/cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+    "research/2026-11-12/prime_fixed_point_observer/lambda_observer.py": "527eb36225b6cc01115f037ef26f108b280628a3c7ee97daf7ebcd2e03c971fe",
+    "research/2026-11-12/prime_fixed_point_observer/prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50",
+    "research/2026-11-12/prime_fixed_point_observer/probe.py": "4a720a428620fb9ecc01091ca0aa893393e564da16b94cbaefe647737487139f",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/CYLINDER_REPORT.json": "c51e63ea944f66f6b629a576b73899ce88f9cde2cfeda256df84bdea666acceb",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/FINITE_REPORT.json": "fa5b7d051ec63f917aa2e75926b1842bafd94226408bd9f96a63e18cf62d8bb9",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/catalog-write.log": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/catalog.log": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/cylinder-tests.log": "b74ccdce02f0256559cf7016e7f0881eca860703f1176a0d25dbcaf61b0d529b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/final-focused-suite.log": "771fce2baa03f0d716d42e91708f278b335fccbd51b5f24adf386e0d3cec10c4",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/focused-math.log": "8ca9abef4c5019d4bd37501cdc4b72f1acac6cc5aa386cb0e4fa8238905347bc",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/focused-suite.log": "6882c1eaf7e232de4a48fa1794533c0c5044dcb53d84e31e1545c68fc4a102f0",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/integration-checks.json": "7ea6fc63b0b7d9e2a1726d8067ffd1bd0f673436132d8bfea40ecefe85b07d7e",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/native-failure-corrected.log": "f46ceb648c0b94adef94758ee9ce2b34d08757f3e1ecd97c86408645a0833b21",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/native-failure-replay.log": "018a5f53b7c7ca59b7cda4556bb72b986986a7a3e2985c9b4d78ea7b9b08658a",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/native-suite-corrected-environment.log": "80d9f88d864ff40e0230f2d1078c843c69c0b01c414645611039f3c182f61348",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/native-suite.log": "00a7f5194d003bcd51502408b6181845434db0ae105e57c9d792683247c84c85",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/probe.log": "a31536f403785ca61993997e5864e2a8f7f0ea11db63e686b5763e2d8a5dc28d",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/untouched-base-import-replay.log": "b7d8217a0a771f3b0144c7d327a441a43356ab0eee8541d1f456691aad837738",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/adversary_code_audit.md": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md": "4d040707ac143c8261b21101f3974611b5aa6d4546fc91ecf9e065bee029393f",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/final_cylinder_audit.md": "ac6f8e50491d26da2e724a491776e6bd61fc84fedb5c29156984bdc5e9ff6bf7",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/final_proof_audit.md": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
+    "research/2026-11-12/prime_fixed_point_observer/test_cylinder.py": "c194d528ee7d6ab299c6ccae14ab096e8426b5a511941c6d6aa57d8b8f1f1b94",
+    "research/2026-11-12/prime_fixed_point_observer/test_lambda_observer.py": "b42eec4ad40aafad08e87e01a0186c826ff681340c8c4415617755c990c40f08",
+    "research/2026-11-12/prime_fixed_point_observer/test_prime_observer.py": "5d7455dc58a6043b7f478787d47c1d5529af1a77aeff4192d4d2bc78cdbdea5d"
+  },
+  "base_commit": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "branch": "research/prime-fixed-point-observer-2026-11-12",
+  "existing_native_source_and_tests_changed": false,
+  "finite_probe": {
+    "explicit_checks": 74229,
+    "failures": 0,
+    "report": "receipts/FINITE_REPORT.json"
+  },
+  "formal_kernel_proof": false,
+  "goldbach_proved": false,
+  "hash_scope": "All dossier files except this manifest and Python caches, plus the regenerated catalog. Paths are relative to repository root.",
+  "inherited_beta_kernel_sha256": "ba0c9d8420e8c39c7bc2acc8f6db65d8e68eb3299491e15a77711c185dcc0a04",
+  "integration_checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--write"
+      ],
+      "exit_code": 0,
+      "log": "catalog-write.log"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "catalog.log"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "exit_code": 0,
+      "log": "math-memory-graph.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "diff-check.log"
+    }
+  ],
+  "native_suite": {
+    "base_reproduction": "receipts/untouched-base-import-replay.log",
+    "completed_run": {
+      "elapsed_seconds": 1055.659,
+      "errors": 1,
+      "log": "receipts/native-suite.log",
+      "passed": 13046,
+      "tests": 13047
+    },
+    "corrected_full_retry": {
+      "log": "receipts/native-suite-corrected-environment.log",
+      "reason": "Execution handle no longer available; retained log has no final summary.",
+      "status": "INCOMPLETE_UNVERIFIED"
+    },
+    "corrected_targeted_replay": {
+      "log": "receipts/native-failure-corrected.log",
+      "status": "PASS",
+      "tests": 11
+    },
+    "single_clean_full_suite_certified": false
+  },
+  "new_test_suite": {
+    "log": "receipts/final-focused-suite.log",
+    "status": "PASS",
+    "test_methods": 47
+  },
+  "pi_normality_proved": false,
+  "quantum_speedup_proved": false,
+  "required_script_gates": {
+    "observer_foundations": "PASS",
+    "ordinal_succ_report": "PASS",
+    "provenance": "PASS_72_ITEMS"
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "schema": "prime-observer-validation-v1"
+}

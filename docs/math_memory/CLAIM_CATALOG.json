@@ -659,6 +659,12 @@
       "title": "Main XXIV — integration claims and governing corrections"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXV.md",
+      "registered_namespaces": [],
+      "sha256": "9b8fa28071e3577da1604cea3ce90fdbdbbb1c8524bbb7501a8eccd1814deb14",
+      "title": "Main XXV — integration claims and governing corrections"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
       "registered_namespaces": [
         "MAIN_XX_FORGE"
@@ -22154,10 +22160,10 @@
   ],
   "coverage": {
     "claim_rows_found": 2055,
-    "claim_supplements_scanned": 208,
+    "claim_supplements_scanned": 209,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2961
+    "source_documents_found": 3010
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38646,6 +38652,300 @@
       "title": "Execution, provenance and exact status"
     },
     {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
+      "sha256": "fb10a8962067fc890e40533e0b41298515e7447f0f8c2f7b5e3fb275a131a317",
+      "size": 34274,
+      "title": "Zero-selected carry × signed arithmetic flux — continuation theorems (ZSC)"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/CLAIM_LEDGER.md",
+      "sha256": "53366e32caea496970b345a92a6b02e01c6de231cbda0ebd92eaacc65c6daff0",
+      "size": 9263,
+      "title": "Claim ledger — innovation × arithmetic decoupling"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/NEXT.md",
+      "sha256": "ba2190368fb4d96fbf3fa7709b141dd89b8fe2278cd6856dd09d8bf0e995fae9",
+      "size": 7790,
+      "title": "Next — the single strongest falsifiable obligation"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/OBSTRUCTIONS.md",
+      "sha256": "4904f6ba6552a69ab4169749db08a30bc89352e09976cec7efce9ca434372050",
+      "size": 12856,
+      "title": "Obstructions — arguments that were actually tried, and why each fails"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/PREREGISTRATION.md",
+      "sha256": "df9da3b6cea115612e85cc9e320e66dd51b91a0c78252c16d6e9755c90e14ffb",
+      "size": 7018,
+      "title": "Preregistration — written and committed before any holdout probe is run"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/PREREGISTRATION_ZSC.md",
+      "sha256": "ced900ef0eb23f14196a90fc513c76540d507ef543e4e27b1bee8ea185d55335",
+      "size": 5696,
+      "title": "Preregistration — zero-selected carry continuation (ZSC)"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/PROBES.md",
+      "sha256": "42fb564b36535f3e7b1b0059b1b925ed7aeab16df502e51dda9567524007e07b",
+      "size": 17749,
+      "title": "Probes — what was run and what came out"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/README.md",
+      "sha256": "abddf58250a2721049f231794e151e259ce5c3fa8d5645df857d0f671aed06ec",
+      "size": 6855,
+      "title": "Innovation × arithmetic decoupling (2026-11-11)"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/SCOTT_TRANSPORT.md",
+      "sha256": "f03df1e96c9561e6ef3c725c324a26acf4b382b90a4b1a745456ddf9630e73c5",
+      "size": 17365,
+      "title": "Scott transport — what the domain order carries even though it cannot see normality"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/SOURCE_MAP.md",
+      "sha256": "f7d706f2122b8795276fac431a1136711b7b4828c71b12c4effb2b7c6f10045c",
+      "size": 8647,
+      "title": "Source map and provenance"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md",
+      "sha256": "485a5c5e135f5626f00dd6b202cbc49ddcbe9314ac9a8924dff9f0432c68bf6c",
+      "size": 41382,
+      "title": "Innovation × arithmetic decoupling — theorems"
+    },
+    {
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/VALIDATION.md",
+      "sha256": "e4505a9796926bff27b784c461251ae8839f26b89d91a412db1e13cc57d94f98",
+      "size": 16761,
+      "title": "Validation record"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/CLAIMS.md",
+      "sha256": "b7f08bf3b4746ab9be9586104f496c85051ea43651d25d032ae9984e7b27612c",
+      "size": 1773,
+      "title": "Carrier-first Goldbach — claim ledger (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/MIXED_COUPLING.md",
+      "sha256": "6e8943a1a695f4c14eb5cb8828a1f276837f00507f1657e344246115ec9ceeb8",
+      "size": 4218,
+      "title": "The mixed additive–multiplicative intertwining defect"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/README.md",
+      "sha256": "b446471dc978f593cbf3ee7dbbd4780efc196843b30f32451daf611dfd2ea279",
+      "size": 11088,
+      "title": "Carrier-first arithmetic: additive–multiplicative coproduct coupling"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/SHANNON_CARRIER.md",
+      "sha256": "7448e78412afe99eb8a2dfc09685e32a67ff00224af894a7bf957a6865fb7f49",
+      "size": 3920,
+      "title": "A precise information-theoretic carrier advantage"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/VALIDATION.md",
+      "sha256": "a8a0212a6550a470aef224ff726145a67d0b31fca8ec8434f27ed814e8ed67a8",
+      "size": 834,
+      "title": "Validation — 2026-11-12"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/CLAIM_LEDGER.md",
+      "sha256": "e277862145bdc698672d7558fb1fe5c15e7dd7608e60a840bad4593eb5580042",
+      "size": 6426,
+      "title": "Claim ledger — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/FRONTIER_ANALYSIS.md",
+      "sha256": "fce69c633517d21065fc5e0488681793604f5b4941077fba31355dcdc65e75ac",
+      "size": 13507,
+      "title": "The π normality frontier after the rungs round — analysis and next obligation"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+      "sha256": "c230d9ce9e889c0d1be8c99162fe6662099d2755163a768c2774c6a3558e967e",
+      "size": 38168,
+      "title": "Limit faces — the rungs of the signed ladder as excluded faces, with thresholds"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/PREREGISTRATION_RUNGS.md",
+      "sha256": "6680781d996ff8aa8ffd52a6398f8c5a5a541a6467f090da3f904666a1ce4670",
+      "size": 3917,
+      "title": "Preregistration — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/README.md",
+      "sha256": "5994bba60ed2fe1ac07464ec64df9d117e61af059059014badb2c4ec7a045a72",
+      "size": 5287,
+      "title": "Frontier rungs — limit faces, canonical thresholds and restricted exponents"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+      "sha256": "7e9d51325f5f0a97ba0b6d4a64d45d6c608c24d234d5aef900735dfd6134728b",
+      "size": 40442,
+      "title": "Restricted denominators — transference, the 2-adic tilt, and what the π-line lacks (RDT)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/SOURCE_MAP.md",
+      "sha256": "c15bc487b2ff733878cab9c857be5df489043b7f92659df0c83642c82c9cf13d",
+      "size": 8934,
+      "title": "Source map — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/VALIDATION.md",
+      "sha256": "24a8320e3fac02593676d3991214262bddf3f4c17e984d37d95f9257dca96ed6",
+      "size": 9218,
+      "title": "Validation record — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/lean/README.md",
+      "sha256": "8345191903eac434c2a8ff1d0c1b08656d942230b03d54be3117a41e382f78b1",
+      "size": 9421,
+      "title": "ZSC carry-flux lemmas: kernel checks (Lean 4.14.0, pinned mathlib)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/lean/ZSCCarryFlux.lean",
+      "sha256": "9e587a74b47f24f1b1219605a206f8cfb26c826efda7d3d27664a7457c54d954",
+      "size": 33575,
+      "title": "Kernel checks for small exact lemmas of ZSC (CARRY_FLUX.md, 2026-11-11 dossier)"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
+      "sha256": "e874198f61f4e434994c538525b6d884d950f0989fa6566128c6cd89f9265c16",
+      "size": 4407,
+      "title": "Audit findings and dispositions"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
+      "sha256": "1c55d7982fcd1f2cd0b1b0985944913f94319278d1a962033c67400cdba03716",
+      "size": 6720,
+      "title": "Claim ledger — prime observer and cylinder"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/CYLINDER.md",
+      "sha256": "85ce0e371e79695f3959162322d668c16dce42bd86421557955ea10546ec0e24",
+      "size": 20808,
+      "title": "The twisted arithmetic cylinder and the prime commutator"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/NEXT.md",
+      "sha256": "fc67949ae3870eb1f8160233b2d2661674bfb8ced7a4617d287efffbc332a002",
+      "size": 4733,
+      "title": "Next dependency cut: preserve the additive coupling"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/PRIME_INTERFEROMETER.md",
+      "sha256": "77394a87dddf0112d059519fed35fb5ab131764ba4edf142c6affe3f9e417596",
+      "size": 6881,
+      "title": "Prime Interferometer: reconstructed companion and new replay"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/PROTOCOL.md",
+      "sha256": "9654505195126243d0b44af942c06e5221df919928a2e58f77eb25536a0e4436",
+      "size": 6508,
+      "title": "Prime fixed-point observer: initial hole contract"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
+      "sha256": "f0cb42a67823f86ae7576ed27bd9ce06fcfcb5b88fc630cfb0c64e3a55e109b5",
+      "size": 4807,
+      "title": "Prime fixed-point observer and twisted arithmetic cylinder"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
+      "sha256": "53ccc6ef242f1ce7d6258b872e4f8594d11d57be653833a31edfe6c2565e24da",
+      "size": 5037,
+      "title": "Source map and provenance"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/THEOREMS.md",
+      "sha256": "187ca6d4ff8c4d2d4f18d7027e64eccfef29d30a1be298e684c5d51b505ec5fd",
+      "size": 24876,
+      "title": "Prime fixed points, productive observers, and the additive compatibility gap"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
+      "sha256": "e6144c06bb7ae5c8f1e228147d20cc1d13e83921f538e46723cc6688510a6fcf",
+      "size": 5307,
+      "title": "Validation, actual runs, and retained limitations"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/adversary_code_audit.md",
+      "sha256": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
+      "size": 5280,
+      "title": "Focused runtime audit — prime fixed-point observer"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md",
+      "sha256": "4d040707ac143c8261b21101f3974611b5aa6d4546fc91ecf9e065bee029393f",
+      "size": 4312,
+      "title": "Final targeted audit: coherent center and hostile-source scope"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_cylinder_audit.md",
+      "sha256": "ac6f8e50491d26da2e724a491776e6bd61fc84fedb5c29156984bdc5e9ff6bf7",
+      "size": 1639,
+      "title": "Final targeted cylinder audit"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_proof_audit.md",
+      "sha256": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
+      "size": 8343,
+      "title": "Hostile proof audit of THEOREMS.md"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/CLAIMS.md",
+      "sha256": "3eceaebef78e71fe2d45d8aeacdefc790afb6cfbee95f7371aeb406b9478817c",
+      "size": 1914,
+      "title": "Claim ledger (this research subtree; 2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/README.md",
+      "sha256": "a5113b095d5afed82b9549df1d6b6b9a5b148d214f9dfc9076a76e3b2835786f",
+      "size": 3761,
+      "title": "Prime Fixed Points × Twisted Arithmetic Cylinder × Goldbach"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/THEOREMS.md",
+      "sha256": "ce67a2e27a95dd245778f70f3b3b227a1a44bebea8776f6ff80e76ee7328987f",
+      "size": 11378,
+      "title": "Theorems and obstruction map — primitive primes and the arithmetic cylinder"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/VALIDATION.md",
+      "sha256": "5ab1141b39bfd526ef57a848dfae4afdd04f83497e02afa430505d43ea453261",
+      "size": 1341,
+      "title": "Validation scope"
+    },
+    {
+      "path": "research/2026-11-12/prime_interferometer_legacy/RESEARCH_NOTE.md",
+      "sha256": "9f95d11253712c967a18f527a1bda409897ee2f50ade24b2721351cfb2a1afea",
+      "size": 17259,
+      "title": "Operation Prime Interferometer"
+    },
+    {
+      "path": "research/2026-11-12/scott_relative_defect/README.md",
+      "sha256": "c29d1df4e16d8a935dd3356b27883e2b74bde3c246b8c73dd35e11d6a6545cd4",
+      "size": 1490,
+      "title": "Scott-relative defect: information fibers over the prime cylinder"
+    },
+    {
+      "path": "research/2026-11-12/scott_relative_defect/SCOTT_PATH_RELATIVITY.md",
+      "sha256": "130e328d17d48a9e049fccb9cb0fa82612ecf6c26c2dfd521ddd2224eecb3ae6",
+      "size": 15787,
+      "title": "Scott-domain relativistic defect: certified information, invariant arithmetic, and the Goldbach cylinder"
+    },
+    {
+      "path": "research/2026-11-12/scott_relative_defect/SCOTT_VALIDATION.md",
+      "sha256": "6664e32c375088f49fba6bf8b88a6121f885f811b9fbce5878cd6c979ad68df7",
+      "size": 1395,
+      "title": "Scoped validation — 2026-11-12"
+    },
+    {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
       "sha256": "faffb447b8d3b29ecad45730b0f0abd405f3ea2cbbee5b88958d8337535f72e2",
       "size": 6264,
@@ -40082,6 +40382,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_MAIN_XXV.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_META_CONTOUR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OBSERVER_TATE_ATOM.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OILY_CARRY_RESONANCE.md",

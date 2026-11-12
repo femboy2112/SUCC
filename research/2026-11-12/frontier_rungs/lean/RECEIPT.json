@@ -1,0 +1,486 @@
+{
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "command_seconds": {
+    "axiom-export": 27.848,
+    "locality-change-threshold-mutant": 1.719,
+    "locality-change-threshold-positive": 1.688,
+    "locality-change-threshold-refuted": 1.695,
+    "locality-run-constant-mutant": 1.713,
+    "locality-run-constant-positive": 1.679,
+    "locality-run-constant-refuted": 1.687,
+    "module-kernel": 41.229,
+    "null-integral-numerator-mutant": 1.759,
+    "null-integral-numerator-positive": 1.735,
+    "null-integral-numerator-refuted": 1.715,
+    "null-numerator-coefficient-mutant": 2.045,
+    "null-numerator-coefficient-positive": 1.978,
+    "null-numerator-coefficient-refuted": 1.968,
+    "partial-fraction-sign-mutant": 1.817,
+    "partial-fraction-sign-positive": 1.804,
+    "partial-fraction-sign-refuted": 1.755,
+    "renewal-kernel-overrun-mutant": 1.76,
+    "renewal-kernel-overrun-positive": 1.712,
+    "renewal-kernel-overrun-refuted": 1.724,
+    "renewal-lemma-overrun-mutant": 1.718,
+    "renewal-lemma-overrun-positive": 1.693,
+    "renewal-lemma-overrun-refuted": 1.758,
+    "sixteen-factorisation-mutant": 1.816,
+    "sixteen-factorisation-positive": 1.815,
+    "sixteen-factorisation-refuted": 1.804,
+    "window-two-n-mutant": 1.692,
+    "window-two-n-positive": 1.686,
+    "window-two-n-refuted": 1.683
+  },
+  "commit_at_end": "9d6f2e56d6be3f1630f41788d42bf6aef7222a7d",
+  "commit_at_start": "9d6f2e56d6be3f1630f41788d42bf6aef7222a7d",
+  "dependency_project": "formal/mathlib_bridge",
+  "dependency_revisions": {
+    "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d",
+    "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+    "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+    "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+    "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+    "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+    "mathlib": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+    "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+    "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d"
+  },
+  "failures": [],
+  "historical_authority_modified": false,
+  "lean_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "mathlib_pin": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "negative_controls": [
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "= z / (z ^ 2 - 2) + (z - 1)",
+        "old": "= z / (z ^ 2 - 2) - (z - 1)"
+      },
+      "name": "partial-fraction-sign",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_partial_fraction_sign_flip",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc06_null_partial_fraction"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "+ 8 * X ^ 3",
+        "old": "- 8 * X ^ 3"
+      },
+      "name": "null-numerator-coefficient",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_null_numerator_coefficient",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc06_null_numerator"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "((2 + X ^ 2)",
+        "old": "((2 - X ^ 2)"
+      },
+      "name": "sixteen-factorisation",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_sixteen_factorisation",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc06_sixteen_factorisation"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "4 * z + 3) /",
+        "old": "4 * z + 2) /"
+      },
+      "name": "null-integral-numerator",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_null_integral_numerator",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc06_null_integral"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "< 1 / 200",
+        "old": "< 1 / 256"
+      },
+      "name": "locality-change-threshold",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_locality_change_threshold",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc02_locality_change"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "\u2264 14 / 16 ^ k",
+        "old": "\u2264 15 / 16 ^ k"
+      },
+      "name": "locality-run-constant",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_locality_run_constant",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc02_locality_run"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "4 ^ L \u2264 4 * n",
+        "old": "4 ^ L \u2264 2 * n"
+      },
+      "name": "window-two-n",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_window_four_n",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc03_window"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "j \u2264 J + 1 \u2192",
+        "old": "j \u2264 J \u2192"
+      },
+      "name": "renewal-kernel-overrun",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_renewal_kernel_overrun",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc03_renewal_kernel"
+    },
+    {
+      "mutant_exit": 1,
+      "mutant_type_mismatch": true,
+      "mutation": {
+        "new": "(j : \u2124) \u2264 Jn n + 1 \u2192",
+        "old": "(j : \u2124) \u2264 Jn n \u2192"
+      },
+      "name": "renewal-lemma-overrun",
+      "passed": true,
+      "positive_exit": 0,
+      "refutation": "ObservationalSUCC.ZSCCarryFlux.refute_renewal_lemma_overrun",
+      "refuted_exit": 0,
+      "theorem": "ObservationalSUCC.ZSCCarryFlux.zsc03_renewal_lemma"
+    }
+  ],
+  "normality_proved": false,
+  "observation_sha256": "bd3f9aa6f994bc2dbb3e2bb3aa66ae9d194cb17449e2156195304643b3fe9d83",
+  "runtime_seconds": 117.3,
+  "schema": "succ.zsc-carry-flux.lean-receipt.v1",
+  "scope": {
+    "kernel_checked_dossier_items": [
+      "ZSC-06(d) partial fraction (any field), 16-z^8=K*m, g_pi=K*(1-z), g_0=K*(z^2-4z+2) with coefficient vector A_0, g_H expansion (Q[X])",
+      "ZSC-06(d) integral of (z^2-4z+2)/m over [0,1] is 0; integral of g_0/(16-z^8) is 0; L(A_0)=sum_j A_j v_j=0 with v_j in integral form",
+      "ZSC-02 Lemma 1 (every xi, n, k) and Lemma 2 (every xi, n); two-digit form",
+      "ZSC-03 renewal lemma for the four-pole forcing rPi, every real seed, with J(n)=floor(logb 16 (15/(16 r(n+1)))); J(n) >= floor(logb 4 (2n)) for n>=1; abstract kernel; r(n+1)>0, r decreasing, r(n+1)<=15/((8n+1)(8n+2))"
+    ],
+    "not_formalised": [
+      "BBP series form v_j = sum_k 16^(-k-1)/(8k+j) and xi = pi/16",
+      "rPi(n) = integral of z^(8n-8) g_pi(z) over [0,1] (rPi is taken in closed form)",
+      "ZSC-06(e) Baker rigidity and ZSC-06(f)",
+      "RIO-09 upper window for the zero run; ZSC-03 Corollaries 1-2",
+      "ZSC-01, ZSC-02 Theorem (a)-(d), ZSC-04, ZSC-05, (CH), normality, RH"
+    ]
+  },
+  "source_hashes": {
+    "formal/kernel_audit/ExportCommand.lean": "026bd4a8d919f83a4e83fd593499c108757f87868dfe66ca05a7bc340c339d60",
+    "formal/mathlib_bridge/lake-manifest.json": "80d5b4bd8497f01e75164c1d030add71ed7fadd7d26e2fc140f4b9462759a41d",
+    "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md": "fb10a8962067fc890e40533e0b41298515e7447f0f8c2f7b5e3fb275a131a317",
+    "research/2026-11-12/frontier_rungs/lean/ZSCCarryFlux.lean": "9e587a74b47f24f1b1219605a206f8cfb26c826efda7d3d27664a7457c54d954",
+    "research/2026-11-12/frontier_rungs/lean/check_zsc_carry_flux_lean.py": "0f9e00eee2b32a617a79b2e23bc7f6ebd04d94c1f8a859208034ee080c044bbb"
+  },
+  "source_tracked_at_commit": false,
+  "sources_unchanged": true,
+  "status": "KERNEL_CHECKED",
+  "theorems": {
+    "ObservationalSUCC.ZSCCarryFlux.Jn_le_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "8736778d693120befcc72241015deb075733da6b00270bd48180f261326b4d2d"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.rPi_succ_antitone": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "80b75e3da3472ef3fefcd00967938084ff309c5d8e9b7d26ca9d756d0dc52377"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.rPi_succ_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "45e24b38017860c797295bb3739146abe57e4f342194ca716803d679bc11b29a"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.rPi_succ_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "7614951fc5429274f45c54295993bd6e2d664170ece22ae3e4d04e9cbffbaf8c"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_locality_change_threshold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "1055b28db53965e82e5c243a216a61d7e2263f1e42a53ae77ba7570915013423"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_locality_run_constant": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "bb03ff92770470bad2157a21b0e88e1a541003e9e42882c3c9b757c757578639"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_null_integral_numerator": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "47e5744c7e93c36199c70d055f4d3ff93c9841d109eb266bd9cf73d4aef0053d"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_null_numerator_coefficient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "3f54e3c77cd7ed1720de6fa1cfdfb20953373dd2347f0d2110060b361a90e3b9"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_partial_fraction_sign_flip": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "abe7af3de63761d88f29cf2082685999099f28af693d4eb5f293f5d0ae49cf4e"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_renewal_kernel_overrun": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "a764baf2b371d4be66017d90862b0b43dbf82343101bec9d270e94be9e2e5603"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_renewal_lemma_overrun": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "3270be4237151508151f8b639584e2649b0b50d4c10ef03702cf19e41db5d010"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_sixteen_factorisation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "f23ce824d6117d451770a09e3e764e47c4f7656306f26467c1593cc82a84cfef"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.refute_window_four_n": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "e77aa5bef0e7e1f5c38a0dbde54d5f0ea331c3cbeab0ac073a7e0b29b7469c6c"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc02_locality_change": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "bd61205fbea3a2a22c052d79206d0a6f328e53de0a1e199e3745557f42b2c4c2"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc02_locality_change_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "631cb8d50829aaf553c8709157fac7f4796282d7f2271183ccc4a10132ca5e91"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc02_locality_run": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "463ee81f990e2fc1d3eb03d768a643653f95c3ee83075b2d741b0c88d98a8da9"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc02_locality_run_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "9da26a698b616e6a5bbf3cc0fc64927861743b3ee19c1dd9cb4c364f63e78a76"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc02_two_digit_form": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "aa19af444188b66cb0614ccd7f07d662a75f1502eac71f15d8025a7a684c4fd7"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc03_J_ge": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "58c35fdef50042d10671117b74963d6f42bb2d0c050837d26a861651caa9ecea"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc03_renewal_authentic": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "449d4652c16df5fcc2682a57b139ad6618e02064ef1e3d2abc2e8882c0b18ff4"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc03_renewal_kernel": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "c336487488c50274ad8b65ca805b292a3e919f30374582a8c054330f6ff10ad5"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc03_renewal_lemma": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "c9eb6f91fa26477b01a851e92b5442dab120c56056474f67e17716d782224319"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc03_window": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "e538107813f3e83993d859d1f132475679d210ff3a8d33d7cc76058c2c322b9a"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_L_A0_eq_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "dc972f0e0079cddf3dab6c2fe88376bd2ca0f3750d49f7713c3dd2d94b70778e"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_authentic_numerator": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "1eb55e05a379b7d7b53fbe45d05026df148f2f245b8c406a280c7a04acd6878c"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_hostile_numerator": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "ac8d0227dc6513fecf385779173c3d2c77f40d65f67583f76ef6fd750c59cba3"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_null_coeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "78516d43868aa9e5817a95bddf6e4151ad0ef43007d39d939e8985eec41278db"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_null_coefficient_vector": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "a74d3736ca10188004d39f2c113fedaf03fcbd0545bddeb571b37ae3d5c114da"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_null_integral": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "a62ac79b1e3e203f9fa106f13844e52f3c6eb1ace2d59437f86879abd623de86"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_null_numerator": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "a52ab5c43e992adbff2ea6e05523a35712db018c5f3eba20e45fd87252188f3d"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_null_partial_fraction": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "291bd4a49bb3b6dd74bd7424b60425b15130b7131a469272c3d6b40cf855ca49"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_null_period_integral": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "74965cff9c83aeb2453a6e602005ceb8e84cae6cbac3d27746e151b95f14bba0"
+    },
+    "ObservationalSUCC.ZSCCarryFlux.zsc06_sixteen_factorisation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "type_sha256": "256e67f044818796a9b77ed18b3ead944bb243d4c32d33177853c44a969c0711"
+    }
+  },
+  "toolchain": "leanprover/lean4:v4.14.0"
+}

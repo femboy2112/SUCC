@@ -1,0 +1,587 @@
+{
+ "meta": {
+  "file": "RESULTS_rde.json",
+  "note": "exploration record for RESTRICTED_EXPONENT.md; finite-n quotients are OBSERVED, not asymptotic exponents; no entry bears on normality",
+  "generator": "scratch script (not in the repository); every number is reproducible from rde_core.py"
+ },
+ "log2_tilted_family": [
+  {
+   "weights": [
+    1,
+    1,
+    1
+   ],
+   "alpha": 1.762747,
+   "logR": 1.762747,
+   "Nstar": 1,
+   "gamma": 0.0,
+   "saving_s": 0.0,
+   "s60": 0.0,
+   "restricted": 3.6221,
+   "unrestricted_same_forms": 3.6221
+  },
+  {
+   "weights": [
+    2,
+    4,
+    3
+   ],
+   "alpha": 4.591777,
+   "logR": 5.624722,
+   "Nstar": 3,
+   "gamma": 0.693147,
+   "saving_s": 0.740695,
+   "s60": 0.736528,
+   "restricted": 2.37666,
+   "unrestricted_same_forms": 3.38012
+  },
+  {
+   "weights": [
+    4,
+    6,
+    5
+   ],
+   "alpha": 8.259745,
+   "logR": 9.154247,
+   "Nstar": 5,
+   "gamma": 0.693147,
+   "saving_s": 1.15748,
+   "s60": 1.153313,
+   "restricted": 2.40758,
+   "unrestricted_same_forms": 2.94229
+  },
+  {
+   "weights": [
+    3,
+    5,
+    4
+   ],
+   "alpha": 6.444168,
+   "logR": 7.389987,
+   "Nstar": 4,
+   "gamma": 0.693147,
+   "saving_s": 0.891834,
+   "s60": 0.887945,
+   "restricted": 2.43352,
+   "unrestricted_same_forms": 3.14693
+  },
+  {
+   "weights": [
+    6,
+    8,
+    7
+   ],
+   "alpha": 11.844978,
+   "logR": 12.681472,
+   "Nstar": 7,
+   "gamma": 0.693147,
+   "saving_s": 1.457754,
+   "s60": 1.453587,
+   "restricted": 2.50584,
+   "unrestricted_same_forms": 2.8914
+  },
+  {
+   "weights": [
+    1,
+    2,
+    1
+   ],
+   "alpha": 2.176829,
+   "logR": 2.869976,
+   "Nstar": 2,
+   "gamma": 0.693147,
+   "saving_s": 0.0,
+   "s60": 0.0,
+   "restricted": 4.80108,
+   "unrestricted_same_forms": 27.54059
+  },
+  {
+   "weights": [
+    2,
+    3,
+    2
+   ],
+   "alpha": 3.988984,
+   "logR": 4.682131,
+   "Nstar": 3,
+   "gamma": 0.693147,
+   "saving_s": 0.0,
+   "s60": 0.0,
+   "restricted": 4.15484,
+   "unrestricted_same_forms": 7.7677
+  }
+ ],
+ "literature_unrestricted_mu_minus_1": {
+  "Rukhadze_1987": 2.89139978,
+  "Marcovecchio_2009": 2.57455391,
+  "status": "values as printed in the fetched Marcovecchio text (scratch copy); not refereed here"
+ },
+ "log2_finite_n": [
+  {
+   "weights": [
+    2,
+    4,
+    3
+   ],
+   "n": 4,
+   "v2A": 6,
+   "tilt": 4,
+   "v2B": -2,
+   "saved_primes": [
+    7
+   ]
+  },
+  {
+   "weights": [
+    2,
+    4,
+    3
+   ],
+   "n": 8,
+   "v2A": 10,
+   "tilt": 8,
+   "v2B": -3,
+   "saved_primes": [
+    5,
+    13
+   ]
+  },
+  {
+   "weights": [
+    2,
+    4,
+    3
+   ],
+   "n": 16,
+   "v2A": 18,
+   "tilt": 16,
+   "v2B": -4,
+   "saved_primes": [
+    7,
+    29,
+    31
+   ]
+  },
+  {
+   "weights": [
+    4,
+    6,
+    5
+   ],
+   "n": 4,
+   "v2A": 5,
+   "tilt": 4,
+   "v2B": -2,
+   "saved_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "weights": [
+    4,
+    6,
+    5
+   ],
+   "n": 8,
+   "v2A": 9,
+   "tilt": 8,
+   "v2B": -3,
+   "saved_primes": [
+    23
+   ]
+  },
+  {
+   "weights": [
+    4,
+    6,
+    5
+   ],
+   "n": 12,
+   "v2A": 16,
+   "tilt": 12,
+   "v2B": -2,
+   "saved_primes": [
+    23,
+    31
+   ]
+  }
+ ],
+ "rivoal_Lambda_smooth_over_powers_of_two": [
+  {
+   "value": "log(15/16)",
+   "a": 1,
+   "b": 16,
+   "Lambda": 1.881272,
+   "kappa": 5.5106
+  },
+  {
+   "value": "log(125/128)",
+   "a": 3,
+   "b": 128,
+   "Lambda": 2.111892,
+   "kappa": 2.8278
+  },
+  {
+   "value": "log(9/8)",
+   "a": -1,
+   "b": 8,
+   "Lambda": 2.211331,
+   "kappa": 4.8544
+  },
+  {
+   "value": "log(5/4)",
+   "a": -1,
+   "b": 4,
+   "Lambda": 2.901691,
+   "kappa": 3.0791
+  },
+  {
+   "value": "log(3/4)",
+   "a": 1,
+   "b": 4,
+   "Lambda": 3.004521,
+   "kappa": 3.5679
+  },
+  {
+   "value": "log(3/2)",
+   "a": -1,
+   "b": 2,
+   "Lambda": 3.547471,
+   "kappa": 1.0
+  },
+  {
+   "value": "log(2025/2048)",
+   "a": 23,
+   "b": 2048,
+   "Lambda": 3.889991,
+   "kappa": 1.4894
+  },
+  {
+   "value": "log(135/128)",
+   "a": -7,
+   "b": 128,
+   "Lambda": 3.896656,
+   "kappa": 1.5828
+  },
+  {
+   "value": "log(1/2)",
+   "a": 1,
+   "b": 2,
+   "Lambda": 4.622101,
+   "kappa": 1.0
+  },
+  {
+   "value": "log(243/256)",
+   "a": 13,
+   "b": 256,
+   "Lambda": 6.699298,
+   "kappa": 1.2637
+  },
+  {
+   "value": "log(27/32)",
+   "a": 5,
+   "b": 32,
+   "Lambda": 7.553349,
+   "kappa": 1.2732
+  },
+  {
+   "value": "log(5/8)",
+   "a": 3,
+   "b": 8,
+   "Lambda": 67.465458,
+   "kappa": 1.0311
+  }
+ ],
+ "rivoal_Lambda_powers": [
+  {
+   "b": 2,
+   "Lambda": 4.622101
+  },
+  {
+   "b": 4,
+   "Lambda": 3.004521
+  },
+  {
+   "b": 8,
+   "Lambda": 2.229102
+  },
+  {
+   "b": 16,
+   "Lambda": 1.881272
+  },
+  {
+   "b": 32,
+   "Lambda": 1.684667
+  },
+  {
+   "b": 64,
+   "Lambda": 1.55867
+  },
+  {
+   "b": 256,
+   "Lambda": 1.407106
+  }
+ ],
+ "pi_gaussian_one_pole": [
+  {
+   "family": [
+    2,
+    2,
+    0,
+    3
+   ],
+   "n": 12,
+   "v2A": 7,
+   "v2B": 33,
+   "shadow_bound": 23.31,
+   "q_unrestricted": 2.941445859688019,
+   "q_restricted": 2.941445859688019
+  },
+  {
+   "family": [
+    2,
+    2,
+    0,
+    3
+   ],
+   "n": 18,
+   "v2A": 13,
+   "v2B": 43,
+   "shadow_bound": 37.73,
+   "q_unrestricted": 4.750431948831218,
+   "q_restricted": 4.750431948831218
+  },
+  {
+   "family": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "n": 12,
+   "v2A": 8,
+   "v2B": 21,
+   "shadow_bound": 12.29,
+   "q_unrestricted": 6.636321309268241,
+   "q_restricted": 6.636321309268241
+  },
+  {
+   "family": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "n": 18,
+   "v2A": 10,
+   "v2B": 25,
+   "shadow_bound": 20.72,
+   "q_unrestricted": 9.573893507972251,
+   "q_restricted": 9.573893507972251
+  },
+  {
+   "family": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "n": 12,
+   "v2A": 7,
+   "v2B": 18,
+   "shadow_bound": 12.86,
+   "q_unrestricted": null,
+   "q_restricted": null
+  },
+  {
+   "family": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "n": 18,
+   "v2A": 11,
+   "v2B": 25,
+   "shadow_bound": 21.29,
+   "q_unrestricted": null,
+   "q_restricted": null
+  },
+  {
+   "family": [
+    1,
+    0,
+    2,
+    1
+   ],
+   "n": 12,
+   "v2A": 25,
+   "v2B": 30,
+   "shadow_bound": 11.89,
+   "q_unrestricted": 75.30067241555454,
+   "q_restricted": 75.30067241555454
+  },
+  {
+   "family": [
+    1,
+    0,
+    2,
+    1
+   ],
+   "n": 18,
+   "v2A": 37,
+   "v2B": 43,
+   "shadow_bound": 20.31,
+   "q_unrestricted": null,
+   "q_restricted": null
+  },
+  {
+   "family": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "n": 12,
+   "v2A": 19,
+   "v2B": 42,
+   "shadow_bound": 23.09,
+   "q_unrestricted": null,
+   "q_restricted": null
+  },
+  {
+   "family": [
+    2,
+    1,
+    2,
+    3
+   ],
+   "n": 18,
+   "v2A": 29,
+   "v2B": 61,
+   "shadow_bound": 37.51,
+   "q_unrestricted": null,
+   "q_restricted": null
+  },
+  {
+   "family": [
+    1,
+    2,
+    0,
+    3
+   ],
+   "n": 12,
+   "v2A": 1,
+   "v2B": 6,
+   "shadow_bound": -0.11,
+   "q_unrestricted": 75.30067241555454,
+   "q_restricted": 75.30067241555454
+  },
+  {
+   "family": [
+    1,
+    2,
+    0,
+    3
+   ],
+   "n": 18,
+   "v2A": 1,
+   "v2B": 7,
+   "shadow_bound": 2.31,
+   "q_unrestricted": null,
+   "q_restricted": null
+  },
+  {
+   "family": [
+    3,
+    2,
+    0,
+    4
+   ],
+   "n": 12,
+   "v2A": 13,
+   "v2B": 48,
+   "shadow_bound": 40.9,
+   "q_unrestricted": 10.095375692309931,
+   "q_restricted": 10.095375692309931
+  },
+  {
+   "family": [
+    3,
+    2,
+    0,
+    4
+   ],
+   "n": 18,
+   "v2A": 17,
+   "v2B": 69,
+   "shadow_bound": 64.32,
+   "q_unrestricted": 15.092260436883793,
+   "q_restricted": 15.092260436883793
+  }
+ ],
+ "hata_type_2_2_0_3_best_certified_finite_exponents": [
+  {
+   "n": 6,
+   "1/pi_restricted": 2.0295,
+   "1/pi_unrestricted": 4.3016,
+   "pi_restricted": 4.9007,
+   "pi_unrestricted": 4.9007
+  },
+  {
+   "n": 10,
+   "1/pi_restricted": 1.961,
+   "1/pi_unrestricted": 3.935,
+   "pi_restricted": 4.2384,
+   "pi_unrestricted": 4.2384
+  },
+  {
+   "n": 14,
+   "1/pi_restricted": 1.6579,
+   "1/pi_unrestricted": 3.7156,
+   "pi_restricted": 3.9001,
+   "pi_unrestricted": 3.9001
+  },
+  {
+   "n": 18,
+   "1/pi_restricted": 1.9581,
+   "1/pi_unrestricted": 4.7314,
+   "pi_restricted": 4.8743,
+   "pi_unrestricted": 4.8743
+  },
+  {
+   "n": 24,
+   "1/pi_restricted": 1.6041,
+   "1/pi_unrestricted": 4.5633,
+   "pi_restricted": 4.7254,
+   "pi_unrestricted": 4.7254
+  }
+ ],
+ "dalzell_1_1": [
+  {
+   "n": 1,
+   "v2A": 0,
+   "v2B": 1,
+   "log_E_times_I_over_n": -4.7272
+  },
+  {
+   "n": 2,
+   "v2A": 2,
+   "v2B": 2,
+   "log_E_times_I_over_n": -1.4523
+  },
+  {
+   "n": 4,
+   "v2A": 6,
+   "v2B": 3,
+   "log_E_times_I_over_n": 0.0431
+  },
+  {
+   "n": 8,
+   "v2A": 14,
+   "v2B": 4,
+   "log_E_times_I_over_n": 1.3287
+  }
+ ]
+}

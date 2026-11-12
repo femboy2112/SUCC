@@ -20,15 +20,27 @@ ways. The source-selected cancellation needed for normality remains unproved.
 |---|---|
 | Source identities, finite observers and categorical reconstruction | Scoped classical/paper proofs and exact finite certificates; proof authority is stated per result |
 | Source-selected signed cancellation | **OPEN** |
+| Weakest signed rung R0: binary digit changes of π have positive lower shell density (`limsup Re W_(B,1) < 1`) | **OPEN** |
 | Original-zero hexadecimal parity balance and parity words | **OPEN** |
 | π base-16 normality | **OPEN** |
 | Completed Weil positivity / Riemann hypothesis | **OPEN**, a separate prime–Archimedean program |
 
 Start with the [mathematical frontier](docs/PI_NORMALITY_FRONTIER.md) and the
-[next research handoff](docs/MAIN_XXIV_HANDOFF.md). Exact integration coverage,
+[next research handoff](docs/MAIN_XXV_HANDOFF.md) (which continues the
+[Main XXIV handoff](docs/MAIN_XXIV_HANDOFF.md)). Exact integration coverage,
 repairs and candidate validation receipts belong to the
+[Main XXV audit](docs/SUCC_MAIN_XXV_INTEGRATION_AUDIT_2026-11-12.md) and
+[manifest](docs/SUCC_MAIN_XXV_INTEGRATION_MANIFEST_2026-11-12.json); the
 [Main XXIV audit](docs/SUCC_MAIN_XXIV_INTEGRATION_AUDIT_2026-11-11.md) and
-[manifest](docs/SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json).
+[manifest](docs/SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json) remain the record of the
+previous consolidation.
+
+Main XXV adds no estimate. It identifies the signed statements strictly between
+"irrational" and "normal" as a ladder (R0 ⟸ R1 ⟸ digit-change density ⟸ … ⟸ normality),
+gives each rung a threshold in the canonical Haar-defect units (`1/4`, `1/60`, …), proves
+that any fixed saving needs a base-16 Diophantine exponent strictly below 1 — which no
+irrationality measure of π can supply — and records where such an exponent is known
+(`log(16/15)`, by import) and why that mechanism does not reach π.
 
 ## Source and exact carrier
 
@@ -149,7 +161,7 @@ python -m unittest discover -s tests -p 'test_zero_anchored*.py'
 ```
 
 Full native validation is `python -m unittest discover -s tests -p 'test_*.py'`.
-The [handoff](docs/MAIN_XXIV_HANDOFF.md) lists focused research replays. Test success,
+The handoffs ([XXV](docs/MAIN_XXV_HANDOFF.md), [XXIV](docs/MAIN_XXIV_HANDOFF.md)) list focused research replays. Test success,
 written proof and kernel verification retain their separate authority; exact tested
 commit identities and hosted outcomes are recorded in the integration audit.
 
@@ -157,13 +169,13 @@ commit identities and hosted outcomes are recorded in the integration audit.
 |---|---|
 | [Foundations](docs/FOUNDATIONS.md) · [Method](docs/METHOD.md) | Theory, interpretation and steelman–crucible–verdict discipline |
 | [Architecture](docs/ARCHITECTURE.md) · [Observer atlas](docs/CATEGORICAL_OBSERVER_ATLAS.md) | Actual maps and trust boundaries |
-| [Claim ledger](docs/CLAIM_LEDGER.md) · [Main XXIV supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md) | Scoped claims and their evidence |
+| [Claim ledger](docs/CLAIM_LEDGER.md) · [Main XXV supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXV.md) · [Main XXIV supplement](docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md) | Scoped claims and their evidence |
 | [Mathematical memory index](docs/math_memory/INDEX.md) | Concepts and generated claim discovery |
 | [Roadmap](docs/ROADMAP.md) · [Research history](docs/RESEARCH_HISTORY.md) | Next campaigns and preserved earlier work |
 | [RH handoff](docs/RH_HANDOFF.md) | Separate completed-source positivity program |
 | [Intellectual provenance](docs/idea_provenance/README.md) · [Contributing](CONTRIBUTING.md) | Original intuitions, attribution and reproduction |
 
-The [previous README](docs/archive/README_PRE_MAIN_XXIV_2026-11-11.md) is preserved
-byte for byte. Classical theorems keep their attribution; finite certificates do
+The [previous README](docs/archive/README_PRE_MAIN_XXV_2026-11-12.md) is preserved
+byte for byte, as is [its predecessor](docs/archive/README_PRE_MAIN_XXIV_2026-11-11.md). Classical theorems keep their attribution; finite certificates do
 not establish universal statistics. No redistribution license has been selected
 by the maintainer.
