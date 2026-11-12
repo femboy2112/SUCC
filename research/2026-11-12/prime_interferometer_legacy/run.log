@@ -1,0 +1,23 @@
+Validated finite experiment; saved /mnt/data/prime_interferometer/results.json
+n  R(2n)  unord G   lowpass   detail-sum
+    2       1        1     1.000       0.000
+    5       3        2     1.000       1.000
+   10       4        2     0.562       1.438
+   11       5        3     1.000       2.000
+   50      12        6     2.188       3.812
+  100      16        8     3.750       4.250
+  101      17        9     4.102       4.898
+  256      22       11     8.902       2.098
+  257      27       14     9.070       4.930
+  512      44       22    14.062       7.938
+ 1024      50       25    22.878       2.122
+ 2048     106       53    38.350      14.650
+ 4096     152       76    63.640      12.360
+Countermodel overlap 0 positive control 8 lowpass 2
+CRT n=100 [{'ell': 2, 'admissible_residues': 1, 'forbidden_residues': 1}, {'ell': 3, 'admissible_residues': 1, 'forbidden_residues': 2}, {'ell': 5, 'admissible_residues': 4, 'forbidden_residues': 1}, {'ell': 7, 'admissible_residues': 5, 'forbidden_residues': 2}, {'ell': 11, 'admissible_residues': 9, 'forbidden_residues': 2}, {'ell': 13, 'admissible_residues': 11, 'forbidden_residues': 2}]
+CRT Haar certificates: [(2, 128, 0), (3, 128, 2), (3, 64, 6), (3, 32, 9), (3, 16, 13), (3, 8, 21), (5, 128, 11), (5, 64, 17), (7, 128, 21)]
+Matched-source counterfeit: {'n': 1024, 'cutoff': 2, 'block_size': 128, 'coarse_margin_counts_identical_to_actual_source': True, 'crt_admissible_positions_only': True, 'fake_plus_count': 137, 'fake_minus_count': 171, 'fake_goldbach_witnesses': 0, 'actual_goldbach_witnesses': 25}
+sieve n 100 [(3, 16, 7), (5, 13, 7), (7, 9, 6), (11, 7, 6)]
+sieve n 256 [(3, 42, 10), (5, 25, 10), (7, 18, 10), (11, 15, 10)]
+sieve n 1024 [(3, 170, 25), (5, 102, 25), (7, 72, 25), (11, 59, 25)]
+Independent audit PASS: 13 prime counts, 9 CRT-Haar certificates, FFT cases ['10', '100', '256']

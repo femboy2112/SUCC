@@ -1,0 +1,22 @@
+{
+  "sympy_checked_midpoints": 13,
+  "sympy_checked_crt_haar_certificates": 9,
+  "numpy_fourier_reconstructions": {
+    "10": {
+      "fft_count": 4.0,
+      "expected_integer": 4,
+      "imag_error": 3.469446951953614e-16
+    },
+    "100": {
+      "fft_count": 16.0,
+      "expected_integer": 16,
+      "imag_error": -2.190443592018147e-15
+    },
+    "256": {
+      "fft_count": 22.0,
+      "expected_integer": 22,
+      "imag_error": 2.3245294578089215e-16
+    }
+  },
+  "status": "PASS (independent library route, still same operator/team)"
+}
