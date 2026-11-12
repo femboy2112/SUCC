@@ -72,6 +72,17 @@ identified in `CARRIER_COUPLING.md` and were retrieved during the follow-up.
 Their standard information and domain-theoretic frameworks are distinguished
 from our explicitly proved arithmetic applications.
 
+The prime-wave extension starts from published commit
+`b3ddf81c4e893866aac04903f682fb5aa01830e2`. `PRIME_WAVES.md` identifies the
+primary sources retrieved for this round: Cuntz's canonical affine
+shift/dilation representation; Hedenmalm–Lindqvist–Seip's prime coordinates;
+Ramanujan's original sums in a declared transcription; Tao's sieve notes;
+Helfgott's Fourier exposition; and Ranieri–Chebira–Lu–Vetterli's reproduction
+of the classical homometric example. The root agent opened each source.
+No full external paper is redistributed. The modulo30 transport, explicit
+finite interfaces, and written calculations are scoped applications, with
+no historical novelty or literature-completeness assertion.
+
 ## Provenance and independence limits
 
 The construction, adversary, and translation bearings are same-model

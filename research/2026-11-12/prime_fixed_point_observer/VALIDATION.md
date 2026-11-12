@@ -2,10 +2,12 @@
 
 Base: `071ce1e0ee6ab8f8c07113e901131aa646d6b95d`. Runtime: Python3.12.14,
 SymPy1.14.0, NumPy2.3.5, SciPy1.17.0, mpmath1.3.0. No new dependency or
-production-module modification is required. Native source/test bytes are
+production-module modification is required for the mathematical implementation.
+Regenerating the optional wave figure uses Matplotlib, available in this
+execution environment; it is not needed for the exact tests. Native source/test bytes are
 unchanged from the base; new executables/tests are isolated in this dossier.
 
-## New code and exact probes
+## Initial observer/cylinder code and exact probes
 
 | Check | Actual result | Receipt |
 |---|---|---|
@@ -26,7 +28,7 @@ separate diagnostic campaigns. Do not combine these into an invented count of
 independent mathematical witnesses. Code SHA256 digests are part of the
 finite report and final validation manifest.
 
-## Required repository gates
+## Initial required repository gates (historical record)
 
 | Command / gate | Actual result |
 |---|---|
@@ -48,10 +50,10 @@ adding the root via `PYTHONPATH=.` fixes the affected module without modifying
 code. The initial failure and incomplete retry are retained, not erased or
 reported as successful full-suite runs.
 
-Thus every native test case has a passing result across the completed run and
-the corrected targeted replay, but **a single all-green native full-suite run
-is not certified here**. Hosted checks have separate authority. Do not merge
-on an implication that the incomplete retry passed.
+At that stage every native test case had a passing result across the completed
+run and corrected targeted replay, but a single all-green native full-suite
+run was not certified. The incomplete retry remains unverified. New full
+runs are recorded separately below; hosted checks have separate authority.
 
 ## Proof and provenance scope
 
@@ -103,7 +105,57 @@ errors and supplied separate calculation paths. These are recorded in
 `AUDIT.md`; they are not external peer review, multi-model independence, or
 Lean/kernel acceptance. No physical realization or speedup has been tested.
 
-## Reproduction setup
+## Prime-wave continuation
+
+The wave continuation starts from publication
+`b3ddf81c4e893866aac04903f682fb5aa01830e2`. It adds the proved categorical
+and phase identities in `PRIME_WAVES.md`, isolated rational arithmetic,
+exact controls, and a reproducible explanatory SVG.
+
+| Check | Actual result | Receipt |
+|---|---|---|
+| Main exact wave probe | 27,054 checks, zero failures | `receipts/WAVE_REPORT.json`, `receipts/waves-probe.log` |
+| Independent Mobius/gcd replay | 10,424 checks, zero failures | `receipts/WAVE_INDEPENDENT_AUDIT.json`, `receipts/waves-independent.log` |
+| Adversarial arithmetic appendix, root replay | 10,999 checks, zero failures | `receipts/waves-adversary-replay.log`, `receipts/waves-adversary-check.json` |
+| Dossier unittest suite after repairs | 61 methods PASS, including 14 new wave methods | `receipts/waves-focused-suite.log` |
+| Full native repository suite, corrected environment | 13,047 tests PASS in 1185.784s; wrapper exit0 | `receipts/waves-native-suite.log`, `receipts/waves-native-check.json` |
+| Provenance, observer foundations, ordinal probes | All PASS | `receipts/waves-checks.json` and named logs |
+| Scientific figure | Rendered and visually inspected; exact inputs, illustrative drawing | `figures/prime_wave_interference.svg`, `plot_prime_waves.py` |
+
+The main probe checks every label 0..10000 against an independent marking
+sieve, including the explicit 0/1 exclusion. It checks every integer target
+4..512 and holdouts 514,582,997,1024,4096, local interference for primes
+through47, complete CRT periods through210, and the homometric, modulo30,
+endpoint, alias, and coherent-reference controls. The independent replay
+uses a Mobius divisor formula rather than importing `prime_waves.py`.
+The unittest suite also reduces roots of unity by exact cyclotomic
+polynomials; no floating tolerance decides a mathematical equality.
+
+The adversarial review found two input-interface gaps: a nonbinary mask
+could enter `pair_count`, and an empty left spectrum skipped checking a bad
+coefficient on the right. Both were repaired, regression cases were added,
+and the complete 61-method dossier suite was rerun. The mathematical valid-
+input formulas were unchanged. Reviews are retained in
+`reviews/wave_adversary_audit.md` and `reviews/wave_resonance_audit.md`.
+The latter also caught and repaired an overbroad singular-series quantifier:
+the finite positive limit is stated for fixed even N>=4 and exhausting
+prime sets, excluding N=0 and nonexhaustive sequences.
+
+These execution counts have overlapping mathematical content and shared
+provenance. They remain separate receipts, not a count of independent proof
+witnesses. The code and proofs leave the universal prime-pair remainder
+estimate open. The figure is an illustration, not numerical proof evidence.
+
+### Reproduction commands
+
+This continuation completed a single clean full native-suite run with the
+checkout root explicitly set in `PYTHONPATH`. It resolves the local
+full-run certification gap described in the historical record above; those
+earlier failure and incomplete-retry logs remain preserved. The wrapper took
+1190.924 seconds including startup and captured the full final summary.
+Native source, tests, provenance files and dependency declarations were not
+changed; their preservation and the eight earlier dossier executable/test
+hashes are recorded in `receipts/waves-source-preservation.json`.
 
 From the repository root, either install the declared test extras in the
 chosen environment or expose the current checkout to subprocesses:

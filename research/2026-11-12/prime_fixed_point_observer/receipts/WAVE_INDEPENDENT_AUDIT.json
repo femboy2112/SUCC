@@ -1,0 +1,45 @@
+{
+  "N16_Q30": {
+    "actual_ordered_pairs": 4,
+    "finite_interval_screened": 0,
+    "normalized_mean": "45/32",
+    "period_residues": [
+      17,
+      23,
+      29
+    ]
+  },
+  "checks": 10424,
+  "failure_count": 0,
+  "failures": [],
+  "implementation": "Independent integer Mobius-divisor, gcd, trial-division and Fraction replay; no prime_waves imports.",
+  "scope": {
+    "external_or_different_model_review": false,
+    "moduli": [
+      1,
+      2,
+      6,
+      30,
+      210
+    ],
+    "ordered_pair_reconstruction": "Every integer 4 <= N <= 120, z=max(2,isqrt(N-2))",
+    "pair_target_range_per_modulus": "Every integer N with 0 <= N < 2Q",
+    "prime_reconstruction": "Every 2 <= n <= X <= 120, z=isqrt(X)",
+    "primitive_denominator_orthogonality": "Every d,e dividing 30 and every N modulo 30",
+    "universal_proof": false
+  },
+  "section_checks": {
+    "adaptive_prime_reconstruction": 7140,
+    "crt_reflected_product": 498,
+    "endpoint_corrected_pair_count": 117,
+    "finite_ramanujan_expansion": 249,
+    "interval_countercontrol_period": 1,
+    "interval_countercontrol_window": 1,
+    "primitive_denominator_orthogonality": 1920,
+    "ramanujan_reflected_diagonal": 498
+  },
+  "source_sha256": {
+    "waves_independent_audit.py": "e43f341a0236bce8efa4e7d953452d12cf29a32a8da759771e1a37e252036118"
+  },
+  "status": "PASS"
+}

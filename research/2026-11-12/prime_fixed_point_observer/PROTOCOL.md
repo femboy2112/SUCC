@@ -118,3 +118,32 @@ walk versus a productive increasing prime enumeration. Finite windows will use
 proved logarithmic clock bounds and exact cyclotomic checks. Every surviving
 fixed-cutoff counterexample must be retained rather than mistaken for a
 refutation of an adaptive finite program.
+
+## Addendum: prime waves in the shared carrier
+
+The new request is to assign each prime a reproducible wave and study their
+interference in the category. The construction fixes a common phase
+`e(t)=exp(2*pi*i*t)`, ordinary addition, multiplicative dilation, and each
+observation map. Candidate identities and exact falsifiers are:
+
+- Coherent circle averages equal divisor projections; averaging individual
+  intensities is the zero-discrimination control.
+- Prime-power packets recover valuations; prime-level divisibility alone
+  cannot distinguish the multiplicity in 2 and 4.
+- Reflected Ramanujan waves predict one excluded residue if p divides N,
+  two otherwise. Independent full-period counts and Mobius expansion must
+  agree with the declared normalization and sign.
+- Corrected finite sieve banks predict exact prime labels on their stated
+  horizon. Omitted prime squares and primes removed by their own packets
+  calibrate resolution and the necessary exceptions.
+- Full intensity is tested against the classical homometric pair; coherent
+  phase recovery has an explicit four-reference protocol.
+- Finite rational phase observations are tested against a residue-preserving
+  transported source; the authentic pointed additive braid must distinguish it.
+- Local periodic positivity is tested against N16,Q30 before being used for
+  any interval claim. A uniform remainder estimate remains a separate target.
+
+The note supplies elementary proofs and the implementation records exact
+finite comparisons. These are same-model decompositions with distinct
+arithmetic implementations, not independent external oracles. No empirical
+success count is converted into a universal arithmetic status.

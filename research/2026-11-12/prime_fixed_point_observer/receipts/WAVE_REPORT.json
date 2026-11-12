@@ -1,0 +1,150 @@
+{
+  "checks_by_group": {
+    "anchor_survives_braid_fails": 1,
+    "coherent_reference_recovery": 5,
+    "coherent_sum_discriminates": 1,
+    "corrected_sieve_vs_marking": 10001,
+    "crt_pair_count": 1524,
+    "crt_wave_product": 1524,
+    "endpoint_corrected_pair_count": 514,
+    "finite_phase_alias": 1,
+    "fixed_cutoff_alias": 1,
+    "full_intensity_countermodel": 1,
+    "local_interference": 656,
+    "mean_one_packet": 15,
+    "multiplicity_blindness": 1,
+    "noncongruent_homometry": 1,
+    "odd_target_endpoint": 1,
+    "ordinary_sum_fiber_changed": 1,
+    "positive_period_empty_interval": 1,
+    "prime2_diagonal": 1,
+    "prime_power_degree_reconstruction": 256,
+    "safe_fourier_sampling": 45,
+    "transport_involution": 2500,
+    "transport_preserves_small_projectors": 7500,
+    "transport_residue": 2500,
+    "whole_finite_phase_bank": 3
+  },
+  "explicit_checks": 27054,
+  "failures": 0,
+  "finite_interval_control": {
+    "bulk_pairs_in_target_interval": 0,
+    "endpoint_corrected_pairs": 4,
+    "modulus": 30,
+    "normalized_period_correlation": "45/32",
+    "residues": [
+      17,
+      23,
+      29
+    ],
+    "target": 16
+  },
+  "finite_sampling_control": {
+    "actual": 1,
+    "aliased": 4,
+    "clock": 5,
+    "source": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "target": 4
+  },
+  "homometric_control": {
+    "A": [
+      2,
+      3,
+      6,
+      12,
+      14,
+      19
+    ],
+    "B": [
+      2,
+      3,
+      10,
+      13,
+      15,
+      19
+    ],
+    "pair_counts": [
+      2,
+      0
+    ],
+    "same_full_intensity": true,
+    "target": 8
+  },
+  "largest_complete_CRT_period": 210,
+  "limits": [
+    "Finite controls, not a universal prime-pair theorem.",
+    "Cyclotomic symbolic wave checks are in test_prime_waves.py.",
+    "No physical propagation law or speedup is certified."
+  ],
+  "local_interference_primes_through": 47,
+  "mod30_counterfeit": {
+    "braid_basis_index": 6,
+    "braid_outputs": [
+      434,
+      14
+    ],
+    "histogram_windows": [
+      713,
+      1024,
+      2048
+    ],
+    "pair_counts": [
+      6,
+      0
+    ],
+    "swaps": [
+      [
+        7,
+        217
+      ],
+      [
+        11,
+        341
+      ],
+      [
+        13,
+        403
+      ],
+      [
+        17,
+        527
+      ],
+      [
+        19,
+        589
+      ],
+      [
+        23,
+        713
+      ]
+    ],
+    "target": 30
+  },
+  "pair_targets": {
+    "all_integers_inclusive": [
+      4,
+      512
+    ],
+    "holdouts": [
+      514,
+      582,
+      997,
+      1024,
+      4096
+    ]
+  },
+  "parent_commit": "b3ddf81c4e893866aac04903f682fb5aa01830e2",
+  "prime_classification_max": 10000,
+  "source_sha256": {
+    "cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+    "prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50",
+    "prime_waves.py": "68604be9c4655281be1926029c55aaddc36fe72c5521f358a9b187411898db30",
+    "wave_probe.py": "026cf807aa84c1a85031f8bc7f45fa854b2f16e014a226694475a942ac25ab01"
+  },
+  "status": "PASS"
+}

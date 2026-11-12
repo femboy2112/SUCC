@@ -67,3 +67,18 @@ carrier ontologies. The entropy-orientation counterexample and the transported
 arithmetic source prevent a compression result from being promoted into an
 additive positivity theorem. `receipts/CARRIER_REPORT.json` is a separate
 finite calibration receipt, not an extension of the initial 74,229-check count.
+
+## Prime-wave extension
+
+`PRIME_WAVES.md` defines and proves WAV-01 through WAV-10, including the
+graded/action category, root-of-unity divisor projector, prime-power degree
+reconstruction, corrected finite sieve, reflected Ramanujan correlation,
+finite CRT product, and coherent Fourier observation. The local-density
+singular series is classical; its positivity is not an interval theorem.
+
+The added failure receipts are full-intensity homometry (sum 8 counts 2/0),
+a modulo 30 phase-bank transport (sum 30 counts 6/0), and positive full-period
+correlation with no interval survivor (N16,Q30). Common-reference phase
+recovery and sufficiently fine finite sampling provide an explicit repair
+for the intensity-loss observation. Exact finite receipts are separately
+recorded as `WAVE_REPORT.json` and `WAVE_INDEPENDENT_AUDIT.json`.

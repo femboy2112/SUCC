@@ -39,7 +39,7 @@ Readable raw targeted audits retained under `reviews/` are historical review
 receipts; this consolidated dossier governs the corrected statements. Their
 original scratch paths identify what was inspected at review time.
 
-## Remaining validation limitation
+## Initial validation limitation (historical record)
 
 The native repository suite is recorded honestly in `VALIDATION.md`: its
 completed run had one import-path setup error, which also reproduced on
@@ -69,3 +69,32 @@ pair product is formed in ordinary sets before its sum map to the carrier;
 an undamped infinite torus wave is not assumed to converge; and the joint
 additive generating series is not silently assigned a multiplicative Euler
 product.
+
+## Prime-wave continuation
+
+The category, local-resonance and hostile-source decompositions were checked
+against explicit formulas and exact controls. `PRIME_WAVES.md` contains the
+graded/action-category maps, pullback intertwiners, bounded divisor projection
+identity, declared degree domain, corrected sieve, Ramanujan interference,
+finite CRT product, coherent phase recovery, and three failure receipts.
+
+`reviews/wave_resonance_audit.md` records the independent Mobius/gcd replay
+and a repaired singular-series quantifier. `reviews/wave_adversary_audit.md`
+records source and sign checks plus two repaired input-validation gaps.
+The root replayed both executable arithmetic paths; their counts remain
+separate from the main probe and the 61-method dossier test suite.
+
+The final cross-circle identity was also checked on the basis: both sides of
+`U_alpha W_beta V_m = e(beta Omega(m)) V_m U_(m alpha) W_beta` send e_n to
+`e(mn alpha + beta(Omega(m)+Omega(n))) e_(mn)`. These operators are bounded.
+The convergent harmonic-cylinder addition was reviewed separately: positive
+height gives uniform convergence and differentiated convergence away from
+zero, the Laplace signs cancel, the geometric tail bound is valid, and the
+ordered-pair coefficient has the correct damping normalization. Height is a
+declared smoothing parameter; no physical-time identification is inferred.
+
+The corrected full native run completed **13,047 tests, all PASS**, alongside
+the **61-test dossier suite**. Exact logs and historical failures remain in
+`VALIDATION.md` and `receipts/`. This closes the previous local full-run
+certification gap. It does not change the draft status, mathematical proof
+scope, or the unresolved source-derived prime-pair estimate.

@@ -1,5 +1,29 @@
 # Next dependency cut: preserve the additive coupling
 
+## Current frontier after the prime-wave extension
+
+`PRIME_WAVES.md` now supplies the requested individual prime resonances and
+their exact interference law. The prime-period filter is the multiplicative
+range projection; prime powers reconstruct the cylinder's degree; the
+normalized reflected wave product gives the classical local factors.
+Common-reference measurements retain complex phase, and an adaptive finite
+clock can recover every requested finite source.
+
+The remaining target is a source-derived bound for the actual interval or
+Fourier remainder after the local contribution is identified. Include the
+small-prime exceptions explicitly. A positive complete-period product is
+insufficient: at N16,Q30 it coexists with no screened interval survivor.
+The modulo 30 transported source also preserves the whole sampled
+position–degree field and small divisor projectors while changing R30
+from 6 to 0. The authentic pointed braid detects it.
+
+Any proposed new estimate should declare its source, cutoff and observation
+before reading the actual target's prime pairs, then say which mixed
+arithmetic relation excludes this counterfeit and how that relation bounds
+the remainder. Passing the controls below is a prerequisite for the relevant
+claims, not a substitute for the uniform estimate. This supersedes a return
+to unlabelled single-register spectra or intensity alone.
+
 ## Earned state
 
 The category and observer construction requested in this round is complete.
