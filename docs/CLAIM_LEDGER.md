@@ -1,5 +1,20 @@
 # Research claim ledger
 
+## Holographic boundary filters (research draft, 2026-11-12)
+
+The [boundary-filter dossier](../research/2026-11-12/holographic_boundary_filters/README.md)
+adds scoped ordered closure and target-ambiguity certificates; a stable
+integer-grade zero-sector filter with coefficient norm below nine and
+monotone lower/upper refinement; exact Goldbach and BBP source receipts;
+and a source-specific obstruction to fixed finite damped minorant banks.
+Its [local claim ledger](../research/2026-11-12/holographic_boundary_filters/CLAIM_LEDGER.md)
+separates classical imports, new local proofs, finite checks and countermodels.
+The fixed-resolution obstruction does not exclude adaptive filters. The
+required uniform coupled-source estimates, R0, pi normality, Goldbach and
+RH remain **OPEN**. No historical theorem status or formal authority is
+promoted by this additive research entry.
+
+
 The proposed [Contextual Zero Backbone, CZB-01–12](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md)
 adds a *foundations-level*, finite source-context observer: a current
 uncertainty fiber, evidence-relative zero ideal, exact probes and movement,
