@@ -1,0 +1,11 @@
+# Twin rendezvous / coherent-path syndrome supplement
+
+**Research-only, 2026-11-12.** Draft PR #604 continuation. No source contracts, imported original or Main XXV frontier result has been modified. **R0, π base-16 normality, Goldbach, signed Weil positivity, RH and physical collapse mechanism remain OPEN.**
+
+An explicitly *larger* system `S×H_A×H_B×H_E` admits a pair of local/global-rooted model observers. Earlier events in separated patches are not directly equated; only **current reported outputs at the shared rendezvous event** are compared, after explicit Lorentz/gauge frame transport. The reports carry the authenticated *mathematical* source selector `Z_n=16^-n U_n-P_n`; physical event provenance is not established by a report's claim.
+
+For chosen balanced Bell/environment state `(|00>e0+|11>e1)/√2`, `γ=<e0|e1>` gives exactly `F_(Phi+)=(1+Re γ)/2`, `Tr rho_AB²=(1+|γ|²)/2`. Carrier interactions can produce temporary loss of reduced coherence *without measurement* and reversible interactions can restore it. **No universal wave-collapse time is inferred.** A single Bell click never certifies purity.
+
+The main no-go is `(U⊗conj U)|Phi_d>=|Phi_d>`: twin relational agreement alone cannot certify **both individual paths**. Sixteen Pauli path-pair errors give four equal-sized Bell-syndrome classes; both simultaneous `Z` errors look like no error. Restricted repair: use **two additional distinct Bell witness pairs** tied separately to the twins' action, with independent reference ports held for rendezvous. In a noiseless Pauli error model with trusted uniform local coupling, the ordered reference syndromes distinguish all 16 error pairs and certify both faults absent. Arbitrary continuous paths, different errors per register, environment leaks and forged source histories remain outside this conditional result.
+
+Proof dossier: [TWIN_RENDEZVOUS.md](../research/2026-11-12/arity_0_5_observer_ladder/TWIN_RENDEZVOUS.md) · [claim ledger](../research/2026-11-12/arity_0_5_observer_ladder/RENDEZVOUS_CLAIMS.md) · [validation](../research/2026-11-12/arity_0_5_observer_ladder/RENDEZVOUS_VALIDATION.md). Pure-stdlib model: [twin_rendezvous.py](../observational_succ/twin_rendezvous.py); [tests](../tests/test_twin_rendezvous.py).
