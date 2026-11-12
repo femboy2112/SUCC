@@ -1,0 +1,83 @@
+{
+  "arithmetic": [
+    {
+      "a_priori_grade_ceiling": 10,
+      "actual_zero_count": 6,
+      "calibration_not_holdout": true,
+      "complex_responses": [
+        {
+          "imag": "0",
+          "real": "2239/128"
+        },
+        {
+          "imag": "717/128",
+          "real": "121/32"
+        },
+        {
+          "imag": "0",
+          "real": "153/128"
+        },
+        {
+          "imag": "-717/128",
+          "real": "121/32"
+        }
+      ],
+      "mass": 66,
+      "mass_corrected_lower": "13/5",
+      "midpoint": 67,
+      "phase_average": "105/16",
+      "phase_points": 4,
+      "radius": "1/2"
+    },
+    {
+      "a_priori_grade_ceiling": 14,
+      "actual_zero_count": 15,
+      "calibration_not_holdout": true,
+      "complex_responses": [
+        {
+          "imag": "0",
+          "real": "110021/2048"
+        },
+        {
+          "imag": "31059/2048",
+          "real": "573/128"
+        },
+        {
+          "imag": "0",
+          "real": "14171/2048"
+        },
+        {
+          "imag": "-31059/2048",
+          "real": "573/128"
+        }
+      ],
+      "mass": 262,
+      "mass_corrected_lower": "131/120",
+      "midpoint": 263,
+      "phase_average": "2227/128",
+      "phase_points": 4,
+      "radius": "1/2"
+    }
+  ],
+  "checks": 19,
+  "noisy_floor_mutant": {
+    "center": "99/100",
+    "certified_interval": [
+      "367/375",
+      "1"
+    ],
+    "error": "1/100",
+    "raw_floor": 0
+  },
+  "phase_points": 4,
+  "radius": "1/2",
+  "scope": "Exact finite phase controls; classical algebra; no asymptotic inference.",
+  "strict_budget_boundary": {
+    "corrected_lower": "0",
+    "mass": 16,
+    "zero_count": 1
+  },
+  "synthetic_corrected_lower": "0",
+  "synthetic_grade_four_average": "1/16",
+  "unit_circle_grade_zero_and_four_indistinguishable": true
+}

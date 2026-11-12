@@ -1,5 +1,22 @@
 # Research claim ledger
 
+## Adaptive boundary resolution (research continuation, 2026-11-12)
+
+The [adaptive-resolution dossier](../research/2026-11-12/adaptive_boundary_resolution/README.md)
+adds nearly sharp fixed-base integer information bounds, a one-channel
+moving-damping alternative, and a source-specific negative-aggregate
+theorem for every fixed finite complex exponential minorant bank on the
+punctured closed unit disk. It distinguishes a complete angular profile
+from finite phase samples with unpaid aliases. A sharper integer
+completeness threshold, a truly per-midpoint positive aggregate and an
+explicitly imported classical density-one transfer locate the remaining
+pointwise arithmetic obligation. The
+[local ledger](../research/2026-11-12/adaptive_boundary_resolution/CLAIM_LEDGER.md)
+and [validation record](../research/2026-11-12/adaptive_boundary_resolution/VALIDATION.md)
+separate derivations, classical imports, finite controls and source-access
+assumptions. No universal Goldbach, R0, pi-normality or RH status is
+promoted; no worldwide novelty or response-acquisition speedup is claimed.
+
 ## Holographic boundary filters (research draft, 2026-11-12)
 
 The [boundary-filter dossier](../research/2026-11-12/holographic_boundary_filters/README.md)
