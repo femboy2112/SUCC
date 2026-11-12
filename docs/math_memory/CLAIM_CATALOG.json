@@ -22157,7 +22157,7 @@
     "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2973
+    "source_documents_found": 2983
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38647,26 +38647,26 @@
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
-      "sha256": "11fc64f50ddd97b7e1d2562e4398e4080f38ecbb53c9036cf0f4b5f0df95e9de",
-      "size": 32923,
+      "sha256": "fb10a8962067fc890e40533e0b41298515e7447f0f8c2f7b5e3fb275a131a317",
+      "size": 34274,
       "title": "Zero-selected carry × signed arithmetic flux — continuation theorems (ZSC)"
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/CLAIM_LEDGER.md",
-      "sha256": "6873c1506cd1d7c7b370ebae1c7185a618ce802c8e7984e9ae1febfad5369fd8",
-      "size": 9259,
+      "sha256": "53366e32caea496970b345a92a6b02e01c6de231cbda0ebd92eaacc65c6daff0",
+      "size": 9263,
       "title": "Claim ledger — innovation × arithmetic decoupling"
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/NEXT.md",
-      "sha256": "6c66eeb44fe5d04c621a3f4d57afd09f060715a92e36c316c3539ae5d7adc708",
-      "size": 6223,
+      "sha256": "ba2190368fb4d96fbf3fa7709b141dd89b8fe2278cd6856dd09d8bf0e995fae9",
+      "size": 7790,
       "title": "Next — the single strongest falsifiable obligation"
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/OBSTRUCTIONS.md",
-      "sha256": "12aaa1b416d00fe9725bf8625c81a7cf5be54685387a3c4438655f82ef641ed5",
-      "size": 12810,
+      "sha256": "4904f6ba6552a69ab4169749db08a30bc89352e09976cec7efce9ca434372050",
+      "size": 12856,
       "title": "Obstructions — arguments that were actually tried, and why each fails"
     },
     {
@@ -38689,14 +38689,14 @@
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/README.md",
-      "sha256": "03f5ed44a9b5c394d039fe2a07b3fde5c625fa007fe7bfc72a9d75e6f4c127f2",
-      "size": 6636,
+      "sha256": "abddf58250a2721049f231794e151e259ce5c3fa8d5645df857d0f671aed06ec",
+      "size": 6855,
       "title": "Innovation × arithmetic decoupling (2026-11-11)"
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/SCOTT_TRANSPORT.md",
-      "sha256": "cecf63419c3d1f44a062ed4999db261b18709cd23f9bc216f81c9869e64f0338",
-      "size": 17350,
+      "sha256": "f03df1e96c9561e6ef3c725c324a26acf4b382b90a4b1a745456ddf9630e73c5",
+      "size": 17365,
       "title": "Scott transport — what the domain order carries even though it cannot see normality"
     },
     {
@@ -38707,8 +38707,8 @@
     },
     {
       "path": "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md",
-      "sha256": "70f1a6e3471cd7cb8934e0b693de7c9c8054ca0a500556afaaa689637af7fcc9",
-      "size": 41234,
+      "sha256": "485a5c5e135f5626f00dd6b202cbc49ddcbe9314ac9a8924dff9f0432c68bf6c",
+      "size": 41382,
       "title": "Innovation × arithmetic decoupling — theorems"
     },
     {
@@ -38716,6 +38716,66 @@
       "sha256": "e4505a9796926bff27b784c461251ae8839f26b89d91a412db1e13cc57d94f98",
       "size": 16761,
       "title": "Validation record"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/CLAIM_LEDGER.md",
+      "sha256": "e277862145bdc698672d7558fb1fe5c15e7dd7608e60a840bad4593eb5580042",
+      "size": 6426,
+      "title": "Claim ledger — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/FRONTIER_ANALYSIS.md",
+      "sha256": "fce69c633517d21065fc5e0488681793604f5b4941077fba31355dcdc65e75ac",
+      "size": 13507,
+      "title": "The π normality frontier after the rungs round — analysis and next obligation"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+      "sha256": "c230d9ce9e889c0d1be8c99162fe6662099d2755163a768c2774c6a3558e967e",
+      "size": 38168,
+      "title": "Limit faces — the rungs of the signed ladder as excluded faces, with thresholds"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/PREREGISTRATION_RUNGS.md",
+      "sha256": "6680781d996ff8aa8ffd52a6398f8c5a5a541a6467f090da3f904666a1ce4670",
+      "size": 3917,
+      "title": "Preregistration — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/README.md",
+      "sha256": "5994bba60ed2fe1ac07464ec64df9d117e61af059059014badb2c4ec7a045a72",
+      "size": 5287,
+      "title": "Frontier rungs — limit faces, canonical thresholds and restricted exponents"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+      "sha256": "7e9d51325f5f0a97ba0b6d4a64d45d6c608c24d234d5aef900735dfd6134728b",
+      "size": 40442,
+      "title": "Restricted denominators — transference, the 2-adic tilt, and what the π-line lacks (RDT)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/SOURCE_MAP.md",
+      "sha256": "c15bc487b2ff733878cab9c857be5df489043b7f92659df0c83642c82c9cf13d",
+      "size": 8934,
+      "title": "Source map — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/VALIDATION.md",
+      "sha256": "24a8320e3fac02593676d3991214262bddf3f4c17e984d37d95f9257dca96ed6",
+      "size": 9218,
+      "title": "Validation record — frontier rungs round (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/lean/README.md",
+      "sha256": "8345191903eac434c2a8ff1d0c1b08656d942230b03d54be3117a41e382f78b1",
+      "size": 9421,
+      "title": "ZSC carry-flux lemmas: kernel checks (Lean 4.14.0, pinned mathlib)"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/lean/ZSCCarryFlux.lean",
+      "sha256": "9e587a74b47f24f1b1219605a206f8cfb26c826efda7d3d27664a7457c54d954",
+      "size": 33575,
+      "title": "Kernel checks for small exact lemmas of ZSC (CARRY_FLUX.md, 2026-11-11 dossier)"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
