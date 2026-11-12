@@ -659,6 +659,12 @@
       "title": "Main XXIV — integration claims and governing corrections"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXV.md",
+      "registered_namespaces": [],
+      "sha256": "9b8fa28071e3577da1604cea3ce90fdbdbbb1c8524bbb7501a8eccd1814deb14",
+      "title": "Main XXV — integration claims and governing corrections"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_MAIN_XX_FORGE.md",
       "registered_namespaces": [
         "MAIN_XX_FORGE"
@@ -22154,10 +22160,10 @@
   ],
   "coverage": {
     "claim_rows_found": 2055,
-    "claim_supplements_scanned": 208,
+    "claim_supplements_scanned": 209,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2997
+    "source_documents_found": 3010
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38718,6 +38724,36 @@
       "title": "Validation record"
     },
     {
+      "path": "research/2026-11-12/carrier_first_goldbach/CLAIMS.md",
+      "sha256": "b7f08bf3b4746ab9be9586104f496c85051ea43651d25d032ae9984e7b27612c",
+      "size": 1773,
+      "title": "Carrier-first Goldbach — claim ledger (2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/MIXED_COUPLING.md",
+      "sha256": "6e8943a1a695f4c14eb5cb8828a1f276837f00507f1657e344246115ec9ceeb8",
+      "size": 4218,
+      "title": "The mixed additive–multiplicative intertwining defect"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/README.md",
+      "sha256": "b446471dc978f593cbf3ee7dbbd4780efc196843b30f32451daf611dfd2ea279",
+      "size": 11088,
+      "title": "Carrier-first arithmetic: additive–multiplicative coproduct coupling"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/SHANNON_CARRIER.md",
+      "sha256": "7448e78412afe99eb8a2dfc09685e32a67ff00224af894a7bf957a6865fb7f49",
+      "size": 3920,
+      "title": "A precise information-theoretic carrier advantage"
+    },
+    {
+      "path": "research/2026-11-12/carrier_first_goldbach/VALIDATION.md",
+      "sha256": "a8a0212a6550a470aef224ff726145a67d0b31fca8ec8434f27ed814e8ed67a8",
+      "size": 834,
+      "title": "Validation — 2026-11-12"
+    },
+    {
       "path": "research/2026-11-12/frontier_rungs/CLAIM_LEDGER.md",
       "sha256": "e277862145bdc698672d7558fb1fe5c15e7dd7608e60a840bad4593eb5580042",
       "size": 6426,
@@ -38860,6 +38896,54 @@
       "sha256": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
       "size": 8343,
       "title": "Hostile proof audit of THEOREMS.md"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/CLAIMS.md",
+      "sha256": "3eceaebef78e71fe2d45d8aeacdefc790afb6cfbee95f7371aeb406b9478817c",
+      "size": 1914,
+      "title": "Claim ledger (this research subtree; 2026-11-12)"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/README.md",
+      "sha256": "a5113b095d5afed82b9549df1d6b6b9a5b148d214f9dfc9076a76e3b2835786f",
+      "size": 3761,
+      "title": "Prime Fixed Points × Twisted Arithmetic Cylinder × Goldbach"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/THEOREMS.md",
+      "sha256": "ce67a2e27a95dd245778f70f3b3b227a1a44bebea8776f6ff80e76ee7328987f",
+      "size": 11378,
+      "title": "Theorems and obstruction map — primitive primes and the arithmetic cylinder"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixedpoint_cylinder/VALIDATION.md",
+      "sha256": "5ab1141b39bfd526ef57a848dfae4afdd04f83497e02afa430505d43ea453261",
+      "size": 1341,
+      "title": "Validation scope"
+    },
+    {
+      "path": "research/2026-11-12/prime_interferometer_legacy/RESEARCH_NOTE.md",
+      "sha256": "9f95d11253712c967a18f527a1bda409897ee2f50ade24b2721351cfb2a1afea",
+      "size": 17259,
+      "title": "Operation Prime Interferometer"
+    },
+    {
+      "path": "research/2026-11-12/scott_relative_defect/README.md",
+      "sha256": "c29d1df4e16d8a935dd3356b27883e2b74bde3c246b8c73dd35e11d6a6545cd4",
+      "size": 1490,
+      "title": "Scott-relative defect: information fibers over the prime cylinder"
+    },
+    {
+      "path": "research/2026-11-12/scott_relative_defect/SCOTT_PATH_RELATIVITY.md",
+      "sha256": "130e328d17d48a9e049fccb9cb0fa82612ecf6c26c2dfd521ddd2224eecb3ae6",
+      "size": 15787,
+      "title": "Scott-domain relativistic defect: certified information, invariant arithmetic, and the Goldbach cylinder"
+    },
+    {
+      "path": "research/2026-11-12/scott_relative_defect/SCOTT_VALIDATION.md",
+      "sha256": "6664e32c375088f49fba6bf8b88a6121f885f811b9fbce5878cd6c979ad68df7",
+      "size": 1395,
+      "title": "Scoped validation — 2026-11-12"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
@@ -40298,6 +40382,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_MAIN_XXIV.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_MAIN_XXV.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_META_CONTOUR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OBSERVER_TATE_ATOM.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OILY_CARRY_RESONANCE.md",

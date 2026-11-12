@@ -1,0 +1,1139 @@
+{
+  "baseline_main": {
+    "commit": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+    "tree": "666d586c1827380f58f11eea1862e3703b983e9e"
+  },
+  "integration_ref_at_generation": "HEAD",
+  "origins": [
+    {
+      "branch": "research/innovation-arithmetic-decoupling-2026-11-11",
+      "claim": "Innovation x arithmetic decoupling (IAD-01..09), Scott transport limits (SWT-00..06), zero-selected carry flux (ZSC-01..07): saving-exponent law, digit-change rung (CH), carry renewal, source moduli.",
+      "claim_status": "PROVED LOCAL paper proofs with independent same-model audits; pi normality, (CH) and every source-selected signed estimate OPEN",
+      "disposition": "integrated in full; repaired passages re-audited and repaired again in pr-602",
+      "files": [
+        {
+          "blob": "7f5ba07903c95a4c87096dcead1827e71343a35d",
+          "path": "docs/math_memory/CLAIM_CATALOG.json",
+          "sha256": "27671c47cddfe51374c644741a65e10830ab3490c90fed1c1f7c69ec67d9d601",
+          "status": "M"
+        },
+        {
+          "blob": "d119e2df0b325e6410acb1ba874491b50e83a2cb",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
+          "sha256": "11fc64f50ddd97b7e1d2562e4398e4080f38ecbb53c9036cf0f4b5f0df95e9de",
+          "status": "A"
+        },
+        {
+          "blob": "01208553a12762971ae0ab6b1f9e95d511bec87b",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/CLAIM_LEDGER.md",
+          "sha256": "6873c1506cd1d7c7b370ebae1c7185a618ce802c8e7984e9ae1febfad5369fd8",
+          "status": "A"
+        },
+        {
+          "blob": "b7045172f652c28faf606e2500e8283faab11795",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/NEXT.md",
+          "sha256": "6c66eeb44fe5d04c621a3f4d57afd09f060715a92e36c316c3539ae5d7adc708",
+          "status": "A"
+        },
+        {
+          "blob": "823909adb753f987f61ccb0f908ccba9dcd8b51c",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/OBSTRUCTIONS.md",
+          "sha256": "12aaa1b416d00fe9725bf8625c81a7cf5be54685387a3c4438655f82ef641ed5",
+          "status": "A"
+        },
+        {
+          "blob": "782b4ff96e3dabf9a6ce0e53f90ea9927cf296b9",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/PREREGISTRATION.md",
+          "sha256": "df9da3b6cea115612e85cc9e320e66dd51b91a0c78252c16d6e9755c90e14ffb",
+          "status": "A"
+        },
+        {
+          "blob": "e6ae4b520e6dcf4ab307fe958e7efa47d7fbe0ee",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/PREREGISTRATION_ZSC.md",
+          "sha256": "ced900ef0eb23f14196a90fc513c76540d507ef543e4e27b1bee8ea185d55335",
+          "status": "A"
+        },
+        {
+          "blob": "afb934d63ed3d0be26e8d63f6b389a58493b0438",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/PROBES.md",
+          "sha256": "42fb564b36535f3e7b1b0059b1b925ed7aeab16df502e51dda9567524007e07b",
+          "status": "A"
+        },
+        {
+          "blob": "effbad8b2c64609781bd0c6c624b296d21cba4a2",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/README.md",
+          "sha256": "03f5ed44a9b5c394d039fe2a07b3fde5c625fa007fe7bfc72a9d75e6f4c127f2",
+          "status": "A"
+        },
+        {
+          "blob": "406bd6ea46239adc9aeb69f745ab993508f9cf3b",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_analytic.json",
+          "sha256": "c0e695689046c171fb0370b79988488ff6c9fb83e18043a37812fcaef3bbab5f",
+          "status": "A"
+        },
+        {
+          "blob": "d9f96fcfea983a2a1a53c8207a68d00a6438199a",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_arithmetic.json",
+          "sha256": "043b66f674613983f0981a0869dd44a1e569b5accc0ba0a700f12bbc701369e6",
+          "status": "A"
+        },
+        {
+          "blob": "2afe4ce2537a1714391e1626622c80931711acc8",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_band_lp.json",
+          "sha256": "94b89af125e55d279f370ee538ebf2eb10f0d3990ed14f1fa54df77b5c50538d",
+          "status": "A"
+        },
+        {
+          "blob": "d147874073a537abf2706f8d47400eb9391c2558",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_zsc.json",
+          "sha256": "2d5b13fb752e9c0fa4c2adfe18ccbf3fbbb273cc29eb59d4802efbb8e9cad186",
+          "status": "A"
+        },
+        {
+          "blob": "6c1ef2d398a7d85420a259f02b4405c58ff20050",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/SCOTT_TRANSPORT.md",
+          "sha256": "cecf63419c3d1f44a062ed4999db261b18709cd23f9bc216f81c9869e64f0338",
+          "status": "A"
+        },
+        {
+          "blob": "b21a8f6bf3ca87fb2e80baeec99f4eba70105847",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/SOURCE_MAP.md",
+          "sha256": "f7d706f2122b8795276fac431a1136711b7b4828c71b12c4effb2b7c6f10045c",
+          "status": "A"
+        },
+        {
+          "blob": "ea146a9d3f6fd988fb43f195e391019ac9717ec6",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md",
+          "sha256": "70f1a6e3471cd7cb8934e0b693de7c9c8054ca0a500556afaaa689637af7fcc9",
+          "status": "A"
+        },
+        {
+          "blob": "f35ec4ac26847f78e73d2c72172644b209b4c707",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/VALIDATION.md",
+          "sha256": "e4505a9796926bff27b784c461251ae8839f26b89d91a412db1e13cc57d94f98",
+          "status": "A"
+        },
+        {
+          "blob": "d2b58b40c3ed641d62f4407d01808850c9611498",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/band_lp_probe.py",
+          "sha256": "57123c338a0199dafee6912012a876e3f50787a608a1fb491f9e858e0487f860",
+          "status": "A"
+        },
+        {
+          "blob": "397e8b14eb605f7155f4693a8e6acedb9337049e",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/iad_core.py",
+          "sha256": "9596731c11b8fcf8fa6e006f1323b2796f66387b5a3a93fb3edc4a63ed80b9cc",
+          "status": "A"
+        },
+        {
+          "blob": "c872bfe6f9f65386d2259939e78ec56794dfb112",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/probe_analytic.py",
+          "sha256": "83755a77bd500316043b4c4b90ae134ae733194a83dc94d224d7305b8ac9312d",
+          "status": "A"
+        },
+        {
+          "blob": "d08e41ffcd76b601d84c395f4c5300b0691983f1",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/probe_arithmetic.py",
+          "sha256": "3206815a3f1505591fc4b58d095b0a047a18d510b1889c9d9bd5f18f834de026",
+          "status": "A"
+        },
+        {
+          "blob": "b9af9e9e22da26a1a0fa109fd7147ccf37a4b856",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/probe_zsc.py",
+          "sha256": "8e4f71830f86d5dded6e240ecad7b40e8de1412443223e47e3d81aeed149bc81",
+          "status": "A"
+        },
+        {
+          "blob": "4b5b0766d65a8e81bde93429e73ea683eef10acb",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/test_iad_analytic.py",
+          "sha256": "da2042a77039cdc4d273c9633ee9f69043e3c458918fec4f1522cd42b0f1508a",
+          "status": "A"
+        },
+        {
+          "blob": "b09953d77d1c2f2e84f73446ebb20e4e4f930a1b",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/test_iad_arithmetic.py",
+          "sha256": "73d92635917ad15696182c0253f30568295a431cb5378e32b6dc173a29247bbd",
+          "status": "A"
+        },
+        {
+          "blob": "b2d6cedd80f8a4e68891bb1e48bfb85f9be93929",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/test_zsc.py",
+          "sha256": "dd4e9d379c8ac016587242234496daa91404293cdf31e085510e1d79438ecc3c",
+          "status": "A"
+        },
+        {
+          "blob": "e2abc020ecec875651d83305a65a4756a7754293",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/zsc_core.py",
+          "sha256": "d33c819bfa1c8cd9b996e327be2cee513a165c6b0de4b5a49a19e23b0cf5788d",
+          "status": "A"
+        }
+      ],
+      "head": "8de33430fb35dc0360dacff92c4ee1e4364ad458",
+      "head_tree": "9c5148f3a6d6b19576793daace28661552ebdee6",
+      "id": "pr-599-iad-zsc",
+      "own_base": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "pr": 599
+    },
+    {
+      "branch": "research/frontier-rungs-restricted-exponent-2026-11-12",
+      "claim": "Limit faces and canonical thresholds (LMF-01..06), restricted-exponent transference and the Rivoal import (RDT-01..08), Lean kernel check of exact ZSC lemmas, re-audit repairs of the 2026-11-11 dossier.",
+      "claim_status": "PROVED LOCAL paper proofs audited once each; 33 exact lemmas KERNEL-CHECKED; R0, R1, (CH), pi normality OPEN",
+      "disposition": "integrated in full",
+      "files": [
+        {
+          "blob": "80dd377f482dd063d433ab61c3fbb6f319730d19",
+          "path": "docs/math_memory/CLAIM_CATALOG.json",
+          "sha256": "60928415e2a812d1bc7f897f4f7901c450808252047626a6e3697ea4f5ece09e",
+          "status": "M"
+        },
+        {
+          "blob": "4fae056de867579d0880c56983837f9319020317",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
+          "sha256": "fb10a8962067fc890e40533e0b41298515e7447f0f8c2f7b5e3fb275a131a317",
+          "status": "M"
+        },
+        {
+          "blob": "9042fbbb6e91497efe4005d5d76b6cb2e0930f41",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/CLAIM_LEDGER.md",
+          "sha256": "53366e32caea496970b345a92a6b02e01c6de231cbda0ebd92eaacc65c6daff0",
+          "status": "M"
+        },
+        {
+          "blob": "1c0b964b4624cc5142f0e71be3ac965db3ea996c",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/NEXT.md",
+          "sha256": "ba2190368fb4d96fbf3fa7709b141dd89b8fe2278cd6856dd09d8bf0e995fae9",
+          "status": "M"
+        },
+        {
+          "blob": "a1e6d1603286f7d94cf6a3b8e34b64c949cc91c1",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/OBSTRUCTIONS.md",
+          "sha256": "4904f6ba6552a69ab4169749db08a30bc89352e09976cec7efce9ca434372050",
+          "status": "M"
+        },
+        {
+          "blob": "5bad7a2103051619f34f466c980d8f1f0c8f8247",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/README.md",
+          "sha256": "abddf58250a2721049f231794e151e259ce5c3fa8d5645df857d0f671aed06ec",
+          "status": "M"
+        },
+        {
+          "blob": "e85ac61c40f69373d5720fe533d4f76f1b69f126",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/SCOTT_TRANSPORT.md",
+          "sha256": "f03df1e96c9561e6ef3c725c324a26acf4b382b90a4b1a745456ddf9630e73c5",
+          "status": "M"
+        },
+        {
+          "blob": "4e015ca29c59c27032cdcf094b547e5de6bcd242",
+          "path": "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md",
+          "sha256": "485a5c5e135f5626f00dd6b202cbc49ddcbe9314ac9a8924dff9f0432c68bf6c",
+          "status": "M"
+        },
+        {
+          "blob": "e57ab0abc6215fa97fef6e7d8c9f452e5e104ace",
+          "path": "research/2026-11-12/frontier_rungs/CLAIM_LEDGER.md",
+          "sha256": "e277862145bdc698672d7558fb1fe5c15e7dd7608e60a840bad4593eb5580042",
+          "status": "A"
+        },
+        {
+          "blob": "992a27e1da010035e85fd016bb41ac73cf7c0e06",
+          "path": "research/2026-11-12/frontier_rungs/FRONTIER_ANALYSIS.md",
+          "sha256": "fce69c633517d21065fc5e0488681793604f5b4941077fba31355dcdc65e75ac",
+          "status": "A"
+        },
+        {
+          "blob": "8ee134ef1e6f25a3c387a77bf1f37a7b8fc49c52",
+          "path": "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+          "sha256": "c230d9ce9e889c0d1be8c99162fe6662099d2755163a768c2774c6a3558e967e",
+          "status": "A"
+        },
+        {
+          "blob": "3b2fa02c690c26de5db135fed79f7567d1e1bbef",
+          "path": "research/2026-11-12/frontier_rungs/PREREGISTRATION_RUNGS.md",
+          "sha256": "6680781d996ff8aa8ffd52a6398f8c5a5a541a6467f090da3f904666a1ce4670",
+          "status": "A"
+        },
+        {
+          "blob": "e7ebca0cb2155ebf35dfa42ec5ff8497c18b4283",
+          "path": "research/2026-11-12/frontier_rungs/README.md",
+          "sha256": "5994bba60ed2fe1ac07464ec64df9d117e61af059059014badb2c4ec7a045a72",
+          "status": "A"
+        },
+        {
+          "blob": "da261e759c86e123aaf4f8133b5e096c972711fb",
+          "path": "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+          "sha256": "7e9d51325f5f0a97ba0b6d4a64d45d6c608c24d234d5aef900735dfd6134728b",
+          "status": "A"
+        },
+        {
+          "blob": "57bb943e78f4822d881de15643e4fc9afdb6a078",
+          "path": "research/2026-11-12/frontier_rungs/RESULTS_rde.json",
+          "sha256": "fc11424e846558b28960c72912d75486963e9680f4d4912e3ec2b74392decbf1",
+          "status": "A"
+        },
+        {
+          "blob": "7bfeeb99c784fa1f70a1c2c5b1647a460e68ae4b",
+          "path": "research/2026-11-12/frontier_rungs/RESULTS_rungs.json",
+          "sha256": "ba3d4d02e47726eda5090e4d13cbafefdc553bcc7bbea04ec40401ad7e2265ee",
+          "status": "A"
+        },
+        {
+          "blob": "59d4023666ea79a68297706877eda330eb35b3ee",
+          "path": "research/2026-11-12/frontier_rungs/SOURCE_MAP.md",
+          "sha256": "c15bc487b2ff733878cab9c857be5df489043b7f92659df0c83642c82c9cf13d",
+          "status": "A"
+        },
+        {
+          "blob": "fd967097ed777df29ca38a9c4a199ea16dd84a92",
+          "path": "research/2026-11-12/frontier_rungs/VALIDATION.md",
+          "sha256": "24a8320e3fac02593676d3991214262bddf3f4c17e984d37d95f9257dca96ed6",
+          "status": "A"
+        },
+        {
+          "blob": "c423aa03e714452ab80e94498066e47b4981bc85",
+          "path": "research/2026-11-12/frontier_rungs/faces_core.py",
+          "sha256": "ca01b4468a637d8b505df527e9fe878345c1a0edfdba92b0eff2d26cbc278979",
+          "status": "A"
+        },
+        {
+          "blob": "d39dd9b502830d328f7716c910cc464e300c5206",
+          "path": "research/2026-11-12/frontier_rungs/lean/README.md",
+          "sha256": "8345191903eac434c2a8ff1d0c1b08656d942230b03d54be3117a41e382f78b1",
+          "status": "A"
+        },
+        {
+          "blob": "7391c48197e6c16f6d58ec64a322e388e38912e8",
+          "path": "research/2026-11-12/frontier_rungs/lean/RECEIPT.json",
+          "sha256": "e76aeec053d8be12a74793a2772976b1cd5cc2328ca130ec7dfcb0e1cada7f39",
+          "status": "A"
+        },
+        {
+          "blob": "908300cbdbc11753db9ee85b0c0ee9a85d944476",
+          "path": "research/2026-11-12/frontier_rungs/lean/ZSCCarryFlux.lean",
+          "sha256": "9e587a74b47f24f1b1219605a206f8cfb26c826efda7d3d27664a7457c54d954",
+          "status": "A"
+        },
+        {
+          "blob": "7aa13cd7f533dbb7261229deffee794cfde92dd6",
+          "path": "research/2026-11-12/frontier_rungs/lean/check_zsc_carry_flux_lean.py",
+          "sha256": "0f9e00eee2b32a617a79b2e23bc7f6ebd04d94c1f8a859208034ee080c044bbb",
+          "status": "A"
+        },
+        {
+          "blob": "fc4af31f173ba922fa204e733a0af1739c6a4a6f",
+          "path": "research/2026-11-12/frontier_rungs/probe_rungs.py",
+          "sha256": "b549a19f756664e13918c2e19155c1a837c3ae22830c2a8707587dee2b84685f",
+          "status": "A"
+        },
+        {
+          "blob": "9dfa87e229ec8e469d76b8bcfa3695f7e8127547",
+          "path": "research/2026-11-12/frontier_rungs/rde_core.py",
+          "sha256": "f70babb4a1f8f545f03771cd87e8b0b8f9e467805a73d306848edbff79c40afa",
+          "status": "A"
+        },
+        {
+          "blob": "e891f432d127263920c0ed364d3de5c0130626d1",
+          "path": "research/2026-11-12/frontier_rungs/test_faces.py",
+          "sha256": "865ecdb083254c4f593a33a673105a4339c824e1a90156c1764d535f2749dc6c",
+          "status": "A"
+        },
+        {
+          "blob": "f63839753c3243b7b0de7ad7cda14a6769510011",
+          "path": "research/2026-11-12/frontier_rungs/test_rde.py",
+          "sha256": "94dca58d131cf2521181f46243574672739913c17ff89ff232a92cc47fef0b6e",
+          "status": "A"
+        }
+      ],
+      "head": "29ecc96d7d812b64ab6d15994ee9ab56dfd1dabc",
+      "head_tree": "af43c2aa9b37abab51f496bf01e08d7596653c84",
+      "id": "pr-602-frontier-rungs",
+      "own_base": "8de33430fb35dc0360dacff92c4ee1e4364ad458",
+      "pr": 602
+    },
+    {
+      "branch": "research/prime-fixed-point-observer-2026-11-12",
+      "claim": "Prime fixed-point category, lazy lambda prime observer, twisted arithmetic cylinder (PFO-01..13, CYL-01..10); exact finite certificates.",
+      "claim_status": "PROVED within declared models (re-derived by a read-only integration audit); Goldbach, pi normality, RH OPEN",
+      "disposition": "integrated at the audited snapshot; the pull request is still active and later commits are not integrated",
+      "files": [
+        {
+          "blob": "8e57c2d640a45719dad82f0f70bb69fe2e4b76a8",
+          "path": "docs/math_memory/CLAIM_CATALOG.json",
+          "sha256": "edca8d13035b48e336af0cf3891c074e87055b9062e0bf26555fe6150a93c683",
+          "status": "M"
+        },
+        {
+          "blob": "c04d8277560f41fdb3eb118575239d141010d160",
+          "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
+          "sha256": "e874198f61f4e434994c538525b6d884d950f0989fa6566128c6cd89f9265c16",
+          "status": "A"
+        },
+        {
+          "blob": "22c99034b19d5e17cf9a6ab11b1890e697965725",
+          "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
+          "sha256": "1c55d7982fcd1f2cd0b1b0985944913f94319278d1a962033c67400cdba03716",
+          "status": "A"
+        },
+        {
+          "blob": "7c3e2a9b8c50e8e0eb8ccf2bff4c891979ebe3e5",
+          "path": "research/2026-11-12/prime_fixed_point_observer/CYLINDER.md",
+          "sha256": "85ce0e371e79695f3959162322d668c16dce42bd86421557955ea10546ec0e24",
+          "status": "A"
+        },
+        {
+          "blob": "29e4465c2d9d974ce17036a974070af168114a60",
+          "path": "research/2026-11-12/prime_fixed_point_observer/NEXT.md",
+          "sha256": "fc67949ae3870eb1f8160233b2d2661674bfb8ced7a4617d287efffbc332a002",
+          "status": "A"
+        },
+        {
+          "blob": "c2eeeec060739b3e57a316e00a438078f928d83c",
+          "path": "research/2026-11-12/prime_fixed_point_observer/PRIME_INTERFEROMETER.md",
+          "sha256": "77394a87dddf0112d059519fed35fb5ab131764ba4edf142c6affe3f9e417596",
+          "status": "A"
+        },
+        {
+          "blob": "b804c5216464bbbbfe2c32395c464330db808e0a",
+          "path": "research/2026-11-12/prime_fixed_point_observer/PROTOCOL.md",
+          "sha256": "9654505195126243d0b44af942c06e5221df919928a2e58f77eb25536a0e4436",
+          "status": "A"
+        },
+        {
+          "blob": "4eeee600e13d5ce417df76c6195f9c7a549c33e3",
+          "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
+          "sha256": "f0cb42a67823f86ae7576ed27bd9ce06fcfcb5b88fc630cfb0c64e3a55e109b5",
+          "status": "A"
+        },
+        {
+          "blob": "849f6564c2fba7e93da9196ab880e7ded31a9395",
+          "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
+          "sha256": "53ccc6ef242f1ce7d6258b872e4f8594d11d57be653833a31edfe6c2565e24da",
+          "status": "A"
+        },
+        {
+          "blob": "1e6b329bc93da878aa43e5062f2eeed9cfddea95",
+          "path": "research/2026-11-12/prime_fixed_point_observer/THEOREMS.md",
+          "sha256": "187ca6d4ff8c4d2d4f18d7027e64eccfef29d30a1be298e684c5d51b505ec5fd",
+          "status": "A"
+        },
+        {
+          "blob": "9b95bb7e115fae76a5a003c1464bed3c48d0c2ca",
+          "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
+          "sha256": "e6144c06bb7ae5c8f1e228147d20cc1d13e83921f538e46723cc6688510a6fcf",
+          "status": "A"
+        },
+        {
+          "blob": "43791196e45833b3148142c8cb73e3df482e990b",
+          "path": "research/2026-11-12/prime_fixed_point_observer/cylinder.py",
+          "sha256": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+          "status": "A"
+        },
+        {
+          "blob": "dbe56667e106abe8c7c732a381ece792e18986e0",
+          "path": "research/2026-11-12/prime_fixed_point_observer/lambda_observer.py",
+          "sha256": "527eb36225b6cc01115f037ef26f108b280628a3c7ee97daf7ebcd2e03c971fe",
+          "status": "A"
+        },
+        {
+          "blob": "c723678d1d6c20c5415f5df3ca3adbffdb90d50e",
+          "path": "research/2026-11-12/prime_fixed_point_observer/prime_observer.py",
+          "sha256": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50",
+          "status": "A"
+        },
+        {
+          "blob": "3d58d86c58fb88a948093a486a778ab79c57932b",
+          "path": "research/2026-11-12/prime_fixed_point_observer/probe.py",
+          "sha256": "4a720a428620fb9ecc01091ca0aa893393e564da16b94cbaefe647737487139f",
+          "status": "A"
+        },
+        {
+          "blob": "47de90bac3a24a7d34b9dd1b9be7eef4482399d8",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/CYLINDER_REPORT.json",
+          "sha256": "c51e63ea944f66f6b629a576b73899ce88f9cde2cfeda256df84bdea666acceb",
+          "status": "A"
+        },
+        {
+          "blob": "6f7d0474c519449f3f02a4b7029b06eebb69f16c",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/FINITE_REPORT.json",
+          "sha256": "fa5b7d051ec63f917aa2e75926b1842bafd94226408bd9f96a63e18cf62d8bb9",
+          "status": "A"
+        },
+        {
+          "blob": "25ad9c3f5e8e60c3dc5488b7dec57b7b107753c1",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/VALIDATION_MANIFEST.json",
+          "sha256": "35d904cf5841b1d6ab6a2999c0f1a732e9078d4d5a97da03c97b167729050c45",
+          "status": "A"
+        },
+        {
+          "blob": "33ecbd2aed423b96d2a8143977387e5d087d67da",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/catalog-write.log",
+          "sha256": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
+          "status": "A"
+        },
+        {
+          "blob": "33ecbd2aed423b96d2a8143977387e5d087d67da",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/catalog.log",
+          "sha256": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
+          "status": "A"
+        },
+        {
+          "blob": "283358b76473c518be45e0a106205b88f4111d83",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/cylinder-tests.log",
+          "sha256": "b74ccdce02f0256559cf7016e7f0881eca860703f1176a0d25dbcaf61b0d529b",
+          "status": "A"
+        },
+        {
+          "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/diff-check.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "status": "A"
+        },
+        {
+          "blob": "9655d883ef56c5beb439c54917ccc4bccd6dc881",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/final-focused-suite.log",
+          "sha256": "771fce2baa03f0d716d42e91708f278b335fccbd51b5f24adf386e0d3cec10c4",
+          "status": "A"
+        },
+        {
+          "blob": "d81171e1d8fb809e5a188e3d39290438192d8ac9",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/focused-math.log",
+          "sha256": "8ca9abef4c5019d4bd37501cdc4b72f1acac6cc5aa386cb0e4fa8238905347bc",
+          "status": "A"
+        },
+        {
+          "blob": "a0193e2a9d3c969caef9a210b67d6aee13f47ccb",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/focused-suite.log",
+          "sha256": "6882c1eaf7e232de4a48fa1794533c0c5044dcb53d84e31e1545c68fc4a102f0",
+          "status": "A"
+        },
+        {
+          "blob": "ccf9127b1e6da5ba09353dc531402dbcd02f59b2",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/integration-checks.json",
+          "sha256": "7ea6fc63b0b7d9e2a1726d8067ffd1bd0f673436132d8bfea40ecefe85b07d7e",
+          "status": "A"
+        },
+        {
+          "blob": "e74b05bd856178dada72ebf92318605e0148d4e6",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/math-memory-graph.log",
+          "sha256": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+          "status": "A"
+        },
+        {
+          "blob": "6cc37e33bfae11f5c44e4119eb37fbb4401ec307",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/native-failure-corrected.log",
+          "sha256": "f46ceb648c0b94adef94758ee9ce2b34d08757f3e1ecd97c86408645a0833b21",
+          "status": "A"
+        },
+        {
+          "blob": "2f57a0519d863bc85522a0f38dc7f5d477493ec4",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/native-failure-replay.log",
+          "sha256": "018a5f53b7c7ca59b7cda4556bb72b986986a7a3e2985c9b4d78ea7b9b08658a",
+          "status": "A"
+        },
+        {
+          "blob": "b0ef111296abd019de6b35e78274efdcbbd1f1f2",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/native-suite-corrected-environment.log",
+          "sha256": "80d9f88d864ff40e0230f2d1078c843c69c0b01c414645611039f3c182f61348",
+          "status": "A"
+        },
+        {
+          "blob": "51e684b0a5c42c0cab67ab793c053125536de877",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/native-suite.log",
+          "sha256": "00a7f5194d003bcd51502408b6181845434db0ae105e57c9d792683247c84c85",
+          "status": "A"
+        },
+        {
+          "blob": "eac4755eb99a53410882c8361928788fea4b75d9",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/observer-foundations.log",
+          "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+          "status": "A"
+        },
+        {
+          "blob": "d9f5a7da2eb6e92ded350e5a3f2e7b6e74a900ed",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/ordinal-succ.log",
+          "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+          "status": "A"
+        },
+        {
+          "blob": "dce6fa64fd1c7edde2c00582d46cddb440d89003",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/probe.log",
+          "sha256": "a31536f403785ca61993997e5864e2a8f7f0ea11db63e686b5763e2d8a5dc28d",
+          "status": "A"
+        },
+        {
+          "blob": "824ba40a8edb0f7b112cd04dee2f17759f622a3f",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/provenance.log",
+          "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+          "status": "A"
+        },
+        {
+          "blob": "bca7062176664697f69743d77f9774d00a4983e6",
+          "path": "research/2026-11-12/prime_fixed_point_observer/receipts/untouched-base-import-replay.log",
+          "sha256": "b7d8217a0a771f3b0144c7d327a441a43356ab0eee8541d1f456691aad837738",
+          "status": "A"
+        },
+        {
+          "blob": "f0e87bf42aa04cb0393f97ee0b57a9e1b4bc9ac1",
+          "path": "research/2026-11-12/prime_fixed_point_observer/reviews/adversary_code_audit.md",
+          "sha256": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
+          "status": "A"
+        },
+        {
+          "blob": "256fab6bb9f7387d5b1a7ae6f5741acc994c219f",
+          "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md",
+          "sha256": "4d040707ac143c8261b21101f3974611b5aa6d4546fc91ecf9e065bee029393f",
+          "status": "A"
+        },
+        {
+          "blob": "b02af435bb00772b9541dfbd2256109c879a80cc",
+          "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_cylinder_audit.md",
+          "sha256": "ac6f8e50491d26da2e724a491776e6bd61fc84fedb5c29156984bdc5e9ff6bf7",
+          "status": "A"
+        },
+        {
+          "blob": "76a4f025ed1aab0b76621483d30d7673e4f73dbf",
+          "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_proof_audit.md",
+          "sha256": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
+          "status": "A"
+        },
+        {
+          "blob": "3fa862b76609519a4f42503b9713dd19fa6fa767",
+          "path": "research/2026-11-12/prime_fixed_point_observer/test_cylinder.py",
+          "sha256": "c194d528ee7d6ab299c6ccae14ab096e8426b5a511941c6d6aa57d8b8f1f1b94",
+          "status": "A"
+        },
+        {
+          "blob": "7ea18c3447c09d83b05b10c20a67ef7686f9ac3f",
+          "path": "research/2026-11-12/prime_fixed_point_observer/test_lambda_observer.py",
+          "sha256": "b42eec4ad40aafad08e87e01a0186c826ff681340c8c4415617755c990c40f08",
+          "status": "A"
+        },
+        {
+          "blob": "375c6e67b55c15b1930c6157a47bc5ebc126854d",
+          "path": "research/2026-11-12/prime_fixed_point_observer/test_prime_observer.py",
+          "sha256": "5d7455dc58a6043b7f478787d47c1d5529af1a77aeff4192d4d2bc78cdbdea5d",
+          "status": "A"
+        }
+      ],
+      "head": "836d03806183c1f73488dca1d37e149a9826eb53",
+      "head_tree": "8b37ca81a6700e75c9ce24d2b400f38f7898ff75",
+      "id": "pr-601-prime-fixed-point-observer-snapshot",
+      "own_base": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "pr": 601
+    },
+    {
+      "branch": "research/prime-fixedpoint-cylindrical-interferometer-2026-11-12",
+      "claim": "Prime-only primitive fixed points of a reduced divisor coproduct, cylinder commutator, Scott-domain path relativity of the Omega defect, CRT-Haar witness certificates, carrier-first Goldbach reformulations.",
+      "claim_status": "PROVED within the declared algebraic model (re-derived by a read-only integration audit); governing corrections in CLAIM_SUPPLEMENT_MAIN_XXV; Goldbach OPEN",
+      "disposition": "integrated at the audited snapshot; the pull request is still active and later commits are not integrated",
+      "files": [
+        {
+          "blob": "e4bc917e3d512eab53231b1019c7609e61c18d3b",
+          "path": "research/2026-11-12/carrier_first_goldbach/CLAIMS.md",
+          "sha256": "b7f08bf3b4746ab9be9586104f496c85051ea43651d25d032ae9984e7b27612c",
+          "status": "A"
+        },
+        {
+          "blob": "76547fe6b32864c6ebcc09ba06b5607926656bb3",
+          "path": "research/2026-11-12/carrier_first_goldbach/MIXED_COUPLING.md",
+          "sha256": "6e8943a1a695f4c14eb5cb8828a1f276837f00507f1657e344246115ec9ceeb8",
+          "status": "A"
+        },
+        {
+          "blob": "cca656703d89c3a9000dc7449631a8c8d0faf851",
+          "path": "research/2026-11-12/carrier_first_goldbach/README.md",
+          "sha256": "b446471dc978f593cbf3ee7dbbd4780efc196843b30f32451daf611dfd2ea279",
+          "status": "A"
+        },
+        {
+          "blob": "5fc34295e48ba4755962c67cdbdb4d42bf567f48",
+          "path": "research/2026-11-12/carrier_first_goldbach/RECEIPT.json",
+          "sha256": "eea7b6becfdcd9153a7422f21eaf2e277f58be7d92c26fe20a13c444b282580d",
+          "status": "A"
+        },
+        {
+          "blob": "5491175ac91f31c9aa8b217492f305a24290631d",
+          "path": "research/2026-11-12/carrier_first_goldbach/SHANNON_CARRIER.md",
+          "sha256": "7448e78412afe99eb8a2dfc09685e32a67ff00224af894a7bf957a6865fb7f49",
+          "status": "A"
+        },
+        {
+          "blob": "3c41010f427b4aac00decd4698718844b050b8ee",
+          "path": "research/2026-11-12/carrier_first_goldbach/VALIDATION.md",
+          "sha256": "a8a0212a6550a470aef224ff726145a67d0b31fca8ec8434f27ed814e8ed67a8",
+          "status": "A"
+        },
+        {
+          "blob": "1b18078bcce6bb781c7744114566cdf44610892e",
+          "path": "research/2026-11-12/carrier_first_goldbach/carrier_probe.py",
+          "sha256": "1a9c7e0451e3ab5da7bcbc1b12cc7b24b222be88888b88c5e310d9ea73091fca",
+          "status": "A"
+        },
+        {
+          "blob": "9cbbdf539dce92938c67437248168b4390b7d598",
+          "path": "research/2026-11-12/carrier_first_goldbach/test_carrier.py",
+          "sha256": "3ee523cc8139695bfb4bb10d6eb9bfbac7016cbafdc5af3b65bda115ebcd2647",
+          "status": "A"
+        },
+        {
+          "blob": "798b494045324b89519aa9320d3717d4173f9d0d",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/CLAIMS.md",
+          "sha256": "3eceaebef78e71fe2d45d8aeacdefc790afb6cfbee95f7371aeb406b9478817c",
+          "status": "A"
+        },
+        {
+          "blob": "64928eabb1d0c9e4ef143667831cb2dca9c89576",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/PROBE_RESULTS.json",
+          "sha256": "436aa5e3fc5894d41d9677d375efceeddbfc4a95385c2820db63a1364a0b4566",
+          "status": "A"
+        },
+        {
+          "blob": "ff867fc6cbed098aca3de424aef2cd902b983694",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/README.md",
+          "sha256": "a5113b095d5afed82b9549df1d6b6b9a5b148d214f9dfc9076a76e3b2835786f",
+          "status": "A"
+        },
+        {
+          "blob": "138da1048a2cdb21cde22a6af7878540e2647de1",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/THEOREMS.md",
+          "sha256": "ce67a2e27a95dd245778f70f3b3b227a1a44bebea8776f6ff80e76ee7328987f",
+          "status": "A"
+        },
+        {
+          "blob": "b95f03666bd1ad29eba703372f1026223433f5fb",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/VALIDATION.md",
+          "sha256": "5ab1141b39bfd526ef57a848dfae4afdd04f83497e02afa430505d43ea453261",
+          "status": "A"
+        },
+        {
+          "blob": "b20724c80f998016dc4aa0af8e7fab66a8adeca1",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/prime_cylinder.py",
+          "sha256": "8b4e4b15e93e4a0a231495f0d910fd6a5a78c6fe3cb9735e6d53dad9e6eaa76e",
+          "status": "A"
+        },
+        {
+          "blob": "6a0878e53882b26691d393a1c95661ac3c5525b1",
+          "path": "research/2026-11-12/prime_fixedpoint_cylinder/test_prime_cylinder.py",
+          "sha256": "e5e2a20fa065caf4d99738b384ef8b8b8974093ce60112ae7a7f2ad84b16e75f",
+          "status": "A"
+        },
+        {
+          "blob": "cecd31dc8f4167ce34d9215cc57c87197764ea4d",
+          "path": "research/2026-11-12/prime_interferometer_legacy/RESEARCH_NOTE.md",
+          "sha256": "9f95d11253712c967a18f527a1bda409897ee2f50ade24b2721351cfb2a1afea",
+          "status": "A"
+        },
+        {
+          "blob": "9adbff88bd7845f22e3cf86157ebcab1176de68c",
+          "path": "research/2026-11-12/prime_interferometer_legacy/independent_audit.json",
+          "sha256": "8fc9000a33c16a47a2f757511c6705a25af9f6b118b063f7fa5024cffd905d42",
+          "status": "A"
+        },
+        {
+          "blob": "95dcec72e7ccc818b462bb560361dd2c8c9908ff",
+          "path": "research/2026-11-12/prime_interferometer_legacy/independent_audit.py",
+          "sha256": "8d00f719b1af0ceb81c583b7fff8eaf3ffb2a3e35fd796a6f4eaa209811a068d",
+          "status": "A"
+        },
+        {
+          "blob": "29c015e3f393fbbbbd03c5a15a913a0f1ef6d31c",
+          "path": "research/2026-11-12/prime_interferometer_legacy/prime_interferometer.py",
+          "sha256": "85c8c449446d7946f82238de7359be45da80d3774054f7d9c3a8b27c729f8b6c",
+          "status": "A"
+        },
+        {
+          "blob": "01e8ce5fda13d60083d8841bccb23e31e9316d77",
+          "path": "research/2026-11-12/prime_interferometer_legacy/results.json",
+          "sha256": "5a0d856993483a40c36bd2eff396aa1025d5995f6d9d642664e72271a50406a4",
+          "status": "A"
+        },
+        {
+          "blob": "56eb687946f4f7c68a6f3878891df0644d1a4fdf",
+          "path": "research/2026-11-12/prime_interferometer_legacy/run.log",
+          "sha256": "ba077ed2d1636ca32c61142d3b7bd6efd3bbae726a62cba5ccd875e267a50a02",
+          "status": "A"
+        },
+        {
+          "blob": "5d58929bade82dafe3d30d7200721b5c1fa34a27",
+          "path": "research/2026-11-12/scott_relative_defect/README.md",
+          "sha256": "c29d1df4e16d8a935dd3356b27883e2b74bde3c246b8c73dd35e11d6a6545cd4",
+          "status": "A"
+        },
+        {
+          "blob": "7084de255ecac580a0ccc54ab9e4fa60107c08d8",
+          "path": "research/2026-11-12/scott_relative_defect/SCOTT_PATH_RELATIVITY.md",
+          "sha256": "130e328d17d48a9e049fccb9cb0fa82612ecf6c26c2dfd521ddd2224eecb3ae6",
+          "status": "A"
+        },
+        {
+          "blob": "4677690d50c67ef5a4be997fe7280fab77a01c94",
+          "path": "research/2026-11-12/scott_relative_defect/SCOTT_RESULTS.json",
+          "sha256": "733b2a2da15d8af1643978e2586f53d19a3f94890a5ba492e0096fc6f5a009c7",
+          "status": "A"
+        },
+        {
+          "blob": "d4bb0c2b3646cd64fa783a28e0461ce4ae92ee98",
+          "path": "research/2026-11-12/scott_relative_defect/SCOTT_VALIDATION.md",
+          "sha256": "6664e32c375088f49fba6bf8b88a6121f885f811b9fbce5878cd6c979ad68df7",
+          "status": "A"
+        },
+        {
+          "blob": "c31b63b18209145fd1d026f713556515cae748a7",
+          "path": "research/2026-11-12/scott_relative_defect/scott_defect.py",
+          "sha256": "19c9e2320b40b9bfe4ef3e33e462f781770f31a17786e62c9e1db53fa7c23e9d",
+          "status": "A"
+        },
+        {
+          "blob": "3810e0b3c4bbc762988df030f3f3c3ac30b0a42c",
+          "path": "research/2026-11-12/scott_relative_defect/test_scott_defect.py",
+          "sha256": "a9ed9e7e23db1c77b8d30dc6be97ee561fccd0957c69e594d98d749d4662ad20",
+          "status": "A"
+        }
+      ],
+      "head": "8bf797d71b746a3d253da6ee7699e612801c43e5",
+      "head_tree": "3673fb5f2c0f8f7199d7e0786c3709549b162298",
+      "id": "pr-600-prime-fixedpoint-cylinder-snapshot",
+      "own_base": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "pr": 600
+    }
+  ],
+  "protected": [
+    {
+      "blob": "7eea3dff854af81b9e01c16b489b91613ac7f77a",
+      "path": "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md"
+    },
+    {
+      "blob": "b2f609c7d4705e0e3f5271ad92c7ac490bf61274",
+      "path": "docs/archive/README_POST_547_2026-11-09.md"
+    },
+    {
+      "blob": "96e71e9df1eb92d64c5d99b8a68520a3c4853094",
+      "path": "docs/archive/README_PRE_MAIN_XXII_2026-11-09.md"
+    },
+    {
+      "blob": "320f85a1d9f7531d6d025927c174af7d2e810337",
+      "path": "observational_succ/__init__.py"
+    },
+    {
+      "blob": "1f4339530b2575102f1bae4e94763e071c9f8731",
+      "path": "observational_succ/__main__.py"
+    },
+    {
+      "blob": "219910d245950b58c7cd4423f504b6f9b26e93c4",
+      "path": "observational_succ/arithmetic.py"
+    },
+    {
+      "blob": "c9399cc83ca436748f516788f83188d855274b28",
+      "path": "observational_succ/balanced_theta_li.py"
+    },
+    {
+      "blob": "8c145278122f8c9de337c200843c6fd4d2ae84e6",
+      "path": "observational_succ/circle_transport.py"
+    },
+    {
+      "blob": "9bb8df66eef89b40b57e28e24dec07b0ee4bb49e",
+      "path": "observational_succ/core.py"
+    },
+    {
+      "blob": "7f99150117c563c583be0fcc35fae1998a472162",
+      "path": "observational_succ/dirichlet_lambert.py"
+    },
+    {
+      "blob": "34cb7b64f6975e05586ec220a4655961a8e7b636",
+      "path": "observational_succ/duck_bbp.py"
+    },
+    {
+      "blob": "181019ed0d9c8a62e63c5d871406a1a40220f912",
+      "path": "observational_succ/engine.py"
+    },
+    {
+      "blob": "432c7fc28bba75c9f990d987ae5ec76ec2692e29",
+      "path": "observational_succ/gamma_interferometer.py"
+    },
+    {
+      "blob": "5c4b5bd86b03be0863cc3b6e589c6d3264b55055",
+      "path": "observational_succ/gamma_succ_path.py"
+    },
+    {
+      "blob": "d855791bc45c8f8c8c7b26c4c88ab7f58161ee5d",
+      "path": "observational_succ/godel_succ.py"
+    },
+    {
+      "blob": "361b8a4db22974fdea11f4f5367b73c93e6a106d",
+      "path": "observational_succ/hasse_theta_seam.py"
+    },
+    {
+      "blob": "b5fe838217758ab0345c24ba90020d5f2fd76317",
+      "path": "observational_succ/infinite_realization.py"
+    },
+    {
+      "blob": "1c034fca97c3466393692b72a3f863e1d71230ed",
+      "path": "observational_succ/integer_bbp_carrier.py"
+    },
+    {
+      "blob": "88cb3313486730702c50005065c398b34e835d12",
+      "path": "observational_succ/lambert_succ.py"
+    },
+    {
+      "blob": "79bed8e3a417617e096b206f8ba66adb9f3d2009",
+      "path": "observational_succ/local_global.py"
+    },
+    {
+      "blob": "a2c294bee04e3e733f58fc941f2c94e4d5db9b27",
+      "path": "observational_succ/observer_logic.py"
+    },
+    {
+      "blob": "587f08baf239d41cb208c994ef4151742a55f5f4",
+      "path": "observational_succ/observer_reflection.py"
+    },
+    {
+      "blob": "99baa3be8f3900af7886abe892a9e593dfa392a9",
+      "path": "observational_succ/ordinal_succ_report.py"
+    },
+    {
+      "blob": "69d44bef4de5bff4ffb193e2a229a26105b7c93a",
+      "path": "observational_succ/phenomenology.py"
+    },
+    {
+      "blob": "b3cfd2f8e55cac17c9f98cfbcef3181676dfbbfa",
+      "path": "observational_succ/resource_probe.py"
+    },
+    {
+      "blob": "22224a487a9afcf3e2d1fae4b325ff752d4939a8",
+      "path": "observational_succ/selected_orbit.py"
+    },
+    {
+      "blob": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+      "path": "observational_succ/source_prime_certificates.py"
+    },
+    {
+      "blob": "495ecf4abb43367ced92ff64096f0ff611be96cc",
+      "path": "observational_succ/succ_shadow_window.py"
+    },
+    {
+      "blob": "de06d879c08a398acb9869dd2e98176591ea44cc",
+      "path": "observational_succ/yoneda.py"
+    },
+    {
+      "blob": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae",
+      "path": "provenance/IMPORT_MANIFEST.json"
+    },
+    {
+      "blob": "416c98b335027213beb9efdb76bfe8ab53e7b047",
+      "path": "provenance/README.md"
+    },
+    {
+      "blob": "6303066b65665beb4d3dd7e3085ba96beb179071",
+      "path": "provenance/cambrian/BUNDLE_MANIFEST.json"
+    },
+    {
+      "blob": "bd96f4694a9359b2e7369f0e094550655bae5c4e",
+      "path": "provenance/cambrian/CAMBRIAN_COMMITS.bundle.base64"
+    },
+    {
+      "blob": "1c9da4dbdc35bd864691201f7b834e5e30b746ac",
+      "path": "provenance/cambrian/README.md"
+    },
+    {
+      "blob": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
+      "path": "provenance/origins/fuckingrh/actualization/README.md"
+    },
+    {
+      "blob": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+      "path": "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md"
+    },
+    {
+      "blob": "b23ae374cee8553d346ac9475c74990d6d2a5a06",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/BALANCED_THETA_LI_WINDOW.md"
+    },
+    {
+      "blob": "3068b1239cb1c55902e0667ea81a2f7379d6f1f5",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_EVIDENCE.json"
+    },
+    {
+      "blob": "10b42296495593f1447b3f88a92255bb521a3b47",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md"
+    },
+    {
+      "blob": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/CERTIFIED_FINITE_PRIME_TRANSPORT.md"
+    },
+    {
+      "blob": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md"
+    },
+    {
+      "blob": "8e6cd9634cfdc20809599174bb7dfe810182cfa3",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md"
+    },
+    {
+      "blob": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md"
+    },
+    {
+      "blob": "7b3f87e5ee9ff28c1339bab93d4327326d8d7526",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md"
+    },
+    {
+      "blob": "28e722250768f2c020727a133ff2bcbb2b80adad",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/LAMBERT_SUCC_INVERSE_TREE.md"
+    },
+    {
+      "blob": "04408ed96bd369b5063868eb5ad5664824d18043",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md"
+    },
+    {
+      "blob": "e17ca3189805c62b4d7a984d8051469377786181",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_GODEL_BRIDGE.md"
+    },
+    {
+      "blob": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md"
+    },
+    {
+      "blob": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md"
+    },
+    {
+      "blob": "d6c590b2032599d37428b3c4b1c2f71ec86a3ec7",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_SHADOW_WINDOW_CANONICAL_SELECTION.md"
+    },
+    {
+      "blob": "8233709bd77b89ff67477313f6911d3cec44fb07",
+      "path": "provenance/origins/fuckingrh/wiki/09-observational-succ-and-computability.md"
+    },
+    {
+      "blob": "e54fdd1ec90d00a4b365e941624b612dd85a969f",
+      "path": "scripts/audit_actualization.py"
+    },
+    {
+      "blob": "18208f6bb92df778c8add69a7c08bab23bb38d3b",
+      "path": "scripts/balanced_theta_li_probe.py"
+    },
+    {
+      "blob": "ea6c80d96d4b1524e5a04266eaa07d132aa04819",
+      "path": "scripts/dirichlet_lambert_probe.py"
+    },
+    {
+      "blob": "24a3c87d5b204b7f6fcc5d7d247e5f4ef4879f3d",
+      "path": "scripts/gamma_succ_path_probe.py"
+    },
+    {
+      "blob": "5d4e2202467c5aed7e34148f99e8489b0a1ce51b",
+      "path": "scripts/hasse_theta_seam_probe.py"
+    },
+    {
+      "blob": "f2c113bbcc10fca835cf7d463168c8bf683561b6",
+      "path": "scripts/infinite_realization_demo.py"
+    },
+    {
+      "blob": "8510f16f7e874d2c9695de1d2f5686eed078b7e4",
+      "path": "scripts/lambert_succ_probe.py"
+    },
+    {
+      "blob": "4e2e2e44a0ce1305ff568917ab3981279d68e5a7",
+      "path": "scripts/mutate_actualization.py"
+    },
+    {
+      "blob": "fdfbe50052aa2fdced417ab59f9b59f4c9e5a835",
+      "path": "scripts/observer_foundations_probe.py"
+    },
+    {
+      "blob": "0d02422392f00a73b4455684d6bcd54c2f510fb9",
+      "path": "scripts/operational_actualization_probe.py"
+    },
+    {
+      "blob": "21cf54813695584360ab828acf51455f27c91425",
+      "path": "scripts/ordinal_succ_report_probe.py"
+    },
+    {
+      "blob": "ab25fcc1c73cbf20a5727c57b3d5fe9a0f2852dd",
+      "path": "scripts/prime_source_certificates_probe.py"
+    },
+    {
+      "blob": "37c01cdb20db90d1d6c3523277c5ba8cd63deb5d",
+      "path": "tests/test_balanced_theta_li.py"
+    },
+    {
+      "blob": "1d9bc8a954fe012707222d2b65b7f8a77c7e554c",
+      "path": "tests/test_category.py"
+    },
+    {
+      "blob": "d462bead323831bd4e91a817f9b22e4ccfe9c9ab",
+      "path": "tests/test_circle_transport.py"
+    },
+    {
+      "blob": "ebd0bb59a528b21f36a676c80619472016e084f0",
+      "path": "tests/test_dirichlet_lambert.py"
+    },
+    {
+      "blob": "072cc3079045309cc08e598da85cd88c918b59d5",
+      "path": "tests/test_engine.py"
+    },
+    {
+      "blob": "bd8612e3fb6b57f3f0e6f94a371c5426c3326e49",
+      "path": "tests/test_fields.py"
+    },
+    {
+      "blob": "d35d45374a1e50e0d621f33b19553c9b931adf72",
+      "path": "tests/test_gamma_interferometer.py"
+    },
+    {
+      "blob": "81e9239c36d55319706932b7ee1ceb8d61be27a5",
+      "path": "tests/test_gamma_succ_path.py"
+    },
+    {
+      "blob": "fd5de20fa26c22eb87c3aeeaa70d7636be119115",
+      "path": "tests/test_godel_succ.py"
+    },
+    {
+      "blob": "79aa92467026331ec983c0d8a1dc8d04b24b96b9",
+      "path": "tests/test_hasse_theta_seam.py"
+    },
+    {
+      "blob": "5d63eaa1b97f4a01d5c9eefd7ec3de2b64fabfd7",
+      "path": "tests/test_infinite_realization.py"
+    },
+    {
+      "blob": "bcbb2880b80b151a0271fa22f71e4622a70cd67c",
+      "path": "tests/test_lambert_succ.py"
+    },
+    {
+      "blob": "931857df528b330bfde99d24cb0c3005a3fc96a0",
+      "path": "tests/test_local_global.py"
+    },
+    {
+      "blob": "5d931ae22678f02b672b13d4ded249df5965cd4c",
+      "path": "tests/test_observer_logic.py"
+    },
+    {
+      "blob": "b14af219f4b51d9f778516a621ec9b60d739954e",
+      "path": "tests/test_observer_reflection.py"
+    },
+    {
+      "blob": "547eb33163c0b543b08cd27a8315f51c52b12eb7",
+      "path": "tests/test_ordinal_succ_report.py"
+    },
+    {
+      "blob": "15e4391145f1e2586db95d59f5f022bc1e826b5b",
+      "path": "tests/test_resource_probe.py"
+    },
+    {
+      "blob": "02ee0ecae118552afe8a4b64e368e715a0476bcf",
+      "path": "tests/test_shadow.py"
+    },
+    {
+      "blob": "6f8f42d77cc56ec13be3f65a09b6f3db74bb2b1a",
+      "path": "tests/test_source_prime_certificates.py"
+    },
+    {
+      "blob": "fa8192d1404d800bbde1cb929b5178334e9ebda8",
+      "path": "tests/test_succ_shadow_window.py"
+    }
+  ],
+  "regenerated": [
+    "docs/math_memory/CLAIM_CATALOG.json"
+  ],
+  "schema_version": 1,
+  "scope": "Main XXV contribution bytes and ancestry, not proof certification",
+  "self_reference_policy": "No final commit/tree self-hash; check with an explicit --integration ref."
+}
