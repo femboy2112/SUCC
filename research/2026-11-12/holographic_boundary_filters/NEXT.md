@@ -1,0 +1,8 @@
+# Boundary filters — next discriminating round
+
+1. Use the *existing* spectral_boundary_rigidity positive Jacobi inverse as a positive control, then feed its same boundary response into the generic Hankel rank detector. The minimal order must agree. Independently compute at least one hidden-block counterfeit and record identical complete moments.
+2. Replace arbitrary diagonal masks by a **source-realized** filter family: prime-power Λ(p^k) characters, complete Gamma/pole half-density, real BBP carry and source-corrected open paths. Prove these filters exist as maps on the same carrier before calling them observables. Check their rank, conditioning and phase conventions.
+3. Test signed future-conditioned first-digit G_h(w) against actual source-certified hexadecimal intervals and a periodic/alias/matched-marginal adversary. Pay the completed-tail and branch-seam errors. Do not conflate finite conditional counts with all-N decay.
+4. Seek an all-epoch *source-specific* bound on the selected conditional signed response. A positive Gram, exact inverse, numerical spectrum or finite reconstruction alone does not count. Aim first at Main XXV R0; then conditional Haar.
+5. For RH, transport the **actual signed** completed Weil distribution to a declared boundary response; preserve negative contact and pole terms. Find a source-derived Schur complement or counterexample, not a fitted positive operator.
+6. Validate on exact branch SHA: `python scripts/verify_provenance.py`; `python -m unittest discover -s tests -p 'test_*.py'`; `python scripts/observer_foundations_probe.py`; `python scripts/ordinal_succ_report_probe.py`. Record raw outputs and statuses. Do not merge until gates pass.
