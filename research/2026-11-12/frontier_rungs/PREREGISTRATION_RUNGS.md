@@ -1,5 +1,8 @@
 # Preregistration — frontier rungs round (2026-11-12)
 
+(Corrected in a second commit, still before any probe code existed: the first version misquoted
+the shells of the IAD round and chose holdout shells inside the already-read range `n ≤ 3200`.)
+
 Written and committed before any code of this round reads π data on the shells named below.
 Parent: `8de33430fb35dc0360dacff92c4ee1e4364ad458` (draft PR #599 head), itself a descendant of
 Main XXIV `071ce1e0ee6ab8f8c07113e901131aa646d6b95d`.
@@ -16,9 +19,18 @@ inequalities or observations; none is evidence for an asymptotic claim.
 ## Shells
 
 - Calibration (may be used while debugging): `B ∈ {64, 128}`.
-- Fresh holdout (first computed by the full run of this round's probe): `B ∈ {331, 577, 947, 1291}`.
-  None of these was used in the IAD or ZSC rounds (their shells were `{64,128}`, `{97,…}` of IAD and
-  `{243, 420, 811, 1210}` of ZSC).
+- Fresh holdout (first computed by the full run of this round's probe):
+  `B ∈ {3301, 4099, 5003, 6007}`, i.e. digit positions `3301 ≤ n < 12014`.
+  The IAD round read shells `{64, 256, 512, 1024}` (calibration) and `{200, 360, 729, 1000}`
+  (holdout) and the seam range `n ≤ 3200`; the ZSC round read `{64, 128}` and
+  `{243, 420, 811, 1210}` with zero-seed horizon `n ≤ 2600`. No position `n > 3200` has been read
+  by any code of this dossier family, so the holdout is fresh in the data and not only in the
+  shell boundaries.
+- Authentication of the data path: beyond `n = 2600` the phases `y_n` are computed from a
+  high-precision value of π rather than from exact zero-seed rationals. The probe must first show
+  that the two paths give identical hexadecimal digits on the whole overlap `1 ≤ n ≤ 2600`
+  (exact carrier of `zsc_core`/`iad_core` against the high-precision path), and must carry enough
+  guard digits that every reported digit and every cell membership is certified.
 - Shell measure: `ν_B = B^(-1) Σ_(n=B)^(2B-1) δ_(y_n)` on `[0,1)`, interval cost `|u-v|`.
 
 ## Quantities
