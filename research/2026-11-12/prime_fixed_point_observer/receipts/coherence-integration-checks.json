@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "catalog",
+      "command": [
+        "python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.124,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-catalog.log"
+    },
+    {
+      "name": "graph",
+      "command": [
+        "python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.088,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-graph.log"
+    },
+    {
+      "name": "format",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.064,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-format.log"
+    }
+  ],
+  "catalog_advisory_warning_count": 171,
+  "catalog_is_proof_checker": false,
+  "all_pass": true
+}

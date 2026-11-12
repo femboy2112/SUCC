@@ -1,0 +1,27 @@
+{
+  "checks": 39,
+  "checks_by_group": {
+    "controlled_calibration": 1,
+    "fresh_message": 11,
+    "joint_output_boundary": 5,
+    "receiver_channel_matrix_units": 16,
+    "signed_response": 3,
+    "wire_calibration": 1,
+    "wire_coherence": 2
+  },
+  "message_control": {
+    "with_wire_Z_by_message": [
+      "1",
+      "-1"
+    ],
+    "without_wire_Z_by_message": [
+      "0",
+      "0"
+    ]
+  },
+  "response_convention": "Input exp(-i s A); derivative = i Tr(rho [A,V* B V]).",
+  "restricted_equivalence": "Receiver channels agree on all 16 input matrix units; joint outputs differ on a specified pure input.",
+  "schema": "succ.er-epr-intervention.v1",
+  "scope": "Exact finite quantum channel controls. No bulk metric, traversable wormhole, objective collapse or arithmetic theorem is simulated or established.",
+  "status": "PASS"
+}

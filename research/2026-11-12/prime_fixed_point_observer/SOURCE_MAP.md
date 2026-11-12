@@ -211,3 +211,71 @@ Agreement among them is not independent empirical confirmation.
 No source PDF or copyrighted source chapter is redistributed. A failed
 lookup of an older Watrous domain was replaced by the working author-hosted
 chapter URLs above; no claim relies on the failed URL.
+
+## Coherent paths, protected arithmetic codes, and the outside bond
+
+The canonical continuation parent is
+`e9639c0ddb07385c6000b670d26cf0f7b91dacaa`, whose tree is
+`d591ba032b6b0cef8f62a32100455f9c3857b681`. The prior local commit
+`599c55ef` has the identical tree. The remote parent was fetched and the
+isolated worktree rebased onto its ancestry before publication. Earlier
+Python, imported/native sources, tests and provenance were preserved;
+the exact preservation check is retained with the validation receipts.
+
+### Existing repository antecedents actually inspected
+
+| Source | Contribution retained | Boundary retained |
+| --- | --- | --- |
+| `TWIN_OBSERVERS.md`, `twin_transport.py` | Fresh-record arithmetic isometry, typed current meeting, frame/evolution distinction | A retained history is not automatically an accessible current readout |
+| `TWIN_CORRELATION_AND_READOUT.md`, `twin_correlation_probe.py` | Gaussian-rational primitives, conjugate twin transport, deferred readout | Weighted infinite conditioning, state equality versus physical acceptance |
+| `COMMON_ROOT_AND_LIMITS.md` | Centered convention `epsilon_k=e_(k+1)` and strong/norm distinction | Root convergence does not preserve a nontrivial infinite code |
+| `research/2026-10-22/ARITHMETIC_ER_EPR_FOUNDATIONS.md` | Normalized arithmetic thermofield state for `beta>1`; section A8 no-signalling | Selected filters require success flags; no unqualified infinite normalization |
+| `research/2026-10-22/PRIME_MIRROR_RIGIDITY.md` | Weighted opposite-side arithmetic mirrors | Domains and weight-conditioned boundedness remain explicit |
+| `research/2026-10-22/PADIC_BULK_RECONSTRUCTION.md` | Finite encoded reconstruction and recovery | Intertwining, compression and a CPTP decoder are distinct |
+| `research/2026-10-22/ARITHMETIC_HOLOGRAPHY_OBSTRUCTIONS.md` | Same copy encoder on star and binary tree, with differing distances | A boundary state/channel does not uniquely supply a metric |
+| `docs/CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md` | Existing Prime Bridge claim statuses and QEC/no-signalling antecedents | No promotion of old conjectures through new terminology |
+
+The new arithmetic record-sector classification, common-range code proof,
+prefix-lcm formula, source-prime countercontrol and finite-path bounds are
+derived in the continuation itself. Classical quantum-information
+structure is identified as antecedent. No priority claim is made.
+
+### Primary sources freshly retrieved for this continuation
+
+| Primary source | Exact part used | Role in the argument |
+| --- | --- | --- |
+| John Watrous, [The Theory of Quantum Information, Chapter 2](https://jhwatrous.github.io/TQI.2.pdf) | Choi/Kraus and isometric channel representations; dephasing examples | Finite channel foundations; local proofs fix all conventions |
+| Emanuel Knill and Raymond Laflamme, [A Theory of Quantum Error-Correcting Codes](https://arxiv.org/pdf/quant-ph/9604034) | Section 3, especially Theorems 3.2 and 3.5 | Classical exact recovery criterion and logical/syndrome factorization |
+| Watrous, [Chapter 3](https://jhwatrous.github.io/TQI.3.pdf) | Theorem 3.4 and state discrimination | Present state-distinguishability and operational trace-distance scope |
+| Maximilian Schlosshauer, [Decoherence, the measurement problem, and interpretations of quantum mechanics](https://arxiv.org/pdf/quant-ph/0312059) | Opening scope and measurement/decoherence distinction | Reduced-state decoherence does not establish an objective collapse law |
+| Wojciech Zurek, [Decoherence, einselection, and the quantum origins of the classical](https://arxiv.org/pdf/quant-ph/0105127) | Sections IV.C and VIII.B | Environmental records and the distinction from phase averaging |
+| Samson Abramsky and Bob Coecke, [A categorical semantics of quantum protocols](https://arxiv.org/pdf/quant-ph/0402130) | Sections 3 and 9.1 | Compact duality, scalars, branching and classical communication |
+| [IBM Quantum / Watrous, Quantum teleportation](https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation) | Protocol, reference correlations, one ebit plus two classical bits | Resource and complete-state interpretation of the explicit teleportation calculation |
+| Charles Bennett et al., [Teleporting an unknown quantum state via dual classical and Einstein--Podolsky--Rosen channels](https://research.ibm.com/publications/teleporting-an-unknown-quantum-state-via-dual-classical-and-einstein-podolsky-rosen-channels), 1993 | Original publication and protocol | Historical attribution; not a new communication protocol claim |
+| Juan Maldacena and Leonard Susskind, [Cool horizons for entangled black holes](https://arxiv.org/pdf/1306.0533), v2 | Sections 3.1--3.4, Figure 10, printed pp. 16--19 | Exterior non-signalling, possible interior meeting, conjectural generalized bridge |
+| Ping Gao, Daniel Jafferis and Aron Wall, [Traversable Wormholes via a Double Trace Deformation](https://arxiv.org/pdf/1608.05687), v3 | Introduction, equation (1.2), Section 5 | Specified boundary coupling and gravitational regime; traversability has added dynamics |
+| Juan Maldacena, Douglas Stanford and Zhenbin Yang, [Diving into traversable wormholes](https://arxiv.org/pdf/1704.05333), v1 | Section 2.1.1, equation (2.3); Section 2.2; Section 2.5 | Receiver-only equivalence, intervention response and scoped transfer limits |
+
+The root opened the ER=EPR and traversability papers and directly checked
+the interior-meeting text and the receiver/global-state distinction. The
+standalone audit preserves precise sections, version identifiers and
+operational hypotheses. In particular, a bulk-local operation need not
+look local in a boundary encoding, but its actual access and influence
+must be represented consistently. Exterior no-signalling is not a claim
+that appropriately infalling observers cannot meet or cooperate inside.
+
+### Independence and evidence accounting
+
+The new finite channel, arithmetic and adversarial probes share the same
+model family. Some quantum probes reuse the parent's scalar primitives;
+their receipts identify that dependency. The cross-arithmetic probe imports
+no project implementation, and the adversarial density implementation is
+separate. This increases implementation diversity without supplying
+independent physical evidence or external peer review.
+
+The root actually replayed the completed probes and required gates; counts
+and raw outputs are recorded separately. Written universal proofs are not
+replaced by those finite counts. State preparation, output access, phase
+calibration, source authentication and resource costs remain distinct
+constraints. No gravitational spacetime or physical collapse was measured,
+and no copyrighted source paper is redistributed.

@@ -1,0 +1,53 @@
+{
+  "checks": 474,
+  "checks_by_group": {
+    "arithmetic_encoding": 5,
+    "causal_cone": 4,
+    "fresh_record_monotonicity": 21,
+    "fresh_record_product": 42,
+    "fresh_record_purity": 21,
+    "global_isometry": 84,
+    "kraus_calibration": 4,
+    "no_signalling": 168,
+    "path_budget": 24,
+    "phase_excursion": 2,
+    "present_probability_bound": 96,
+    "record_reuse": 3
+  },
+  "interface": "Present joint output after declared frame calibration; private records are traced and no cross-observer history is read.",
+  "product_examples": [
+    {
+      "gamma_im": "0",
+      "gamma_re": "3/5",
+      "length": 1
+    },
+    {
+      "gamma_im": "0",
+      "gamma_re": "100/377",
+      "length": 2
+    },
+    {
+      "gamma_im": "0",
+      "gamma_re": "20/29",
+      "length": 3
+    },
+    {
+      "gamma_im": "-4/5",
+      "gamma_re": "3/5",
+      "length": 4
+    },
+    {
+      "gamma_im": "9/65",
+      "gamma_re": "12/65",
+      "length": 5
+    },
+    {
+      "gamma_im": "-36/377",
+      "gamma_re": "-48/377",
+      "length": 6
+    }
+  ],
+  "schema": "succ.coherent-path-transport.v1",
+  "scope": "Exact finite calibrations of proved finite-path identities; no physical quantum experiment, objective collapse, infinite meeting, or arithmetic distribution theorem.",
+  "status": "PASS"
+}

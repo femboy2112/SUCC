@@ -1,0 +1,64 @@
+{
+  "exact_checks": 204,
+  "finite_scope": {
+    "local_maps": [
+      "identity",
+      "X",
+      "Z",
+      "phase",
+      "rotation",
+      "dephase",
+      "reset_zero",
+      "reset_one",
+      "amplitude_damping"
+    ],
+    "no_signalling_joint_matrix_units_per_map": 16,
+    "reference_dimensions": [
+      2,
+      2
+    ],
+    "teleportation_matrix_units": 4
+  },
+  "groups": {
+    "all_matrix_units_identity": 4,
+    "all_matrix_units_twirl": 4,
+    "branch_correction": 4,
+    "branch_probability": 4,
+    "chosen_message_no_signalling": 144,
+    "coherent_control_unitary": 1,
+    "coherent_factorization": 2,
+    "complete_instrument": 1,
+    "literal_branch_formula": 4,
+    "literal_circuit_isometry": 1,
+    "local_map_calibration": 9,
+    "message_joint_state_control": 2,
+    "missing_correction_mutation": 2,
+    "normalized_snake": 4,
+    "normalized_snake_probability": 4,
+    "one_bit_control": 4,
+    "postselection_scope": 4,
+    "reference_no_message": 2,
+    "reference_preservation": 2,
+    "scalar_calibration": 2
+  },
+  "normalization": {
+    "dimension_d_selected_amplitude": "1/d",
+    "dimension_d_selected_probability": "1/d^2",
+    "qubit_selected_amplitude": "1/2",
+    "qubit_selected_probability": "1/4"
+  },
+  "protocol": {
+    "after_complete_correction": "identity channel",
+    "before_message": "rho -> Tr(rho) I/2",
+    "branch": "X^b Z^a / 2",
+    "coherent_output": "|++>_syndrome tensor |psi>_Bob, including arbitrary reference",
+    "coherent_resources": "Actual coherent syndrome transmission or supplied joint controlled coupling; not an entangled-state-only implementation.",
+    "correction": "Z^a X^b",
+    "standard_resources": "One Bell pair and two classical bits, plus local circuit/measurement/corrections.",
+    "syndrome_order": "a=input qubit S, b=Alice Bell half A"
+  },
+  "scope": "Exact finite algebraic controls of proved channel identities. No physical wormhole, objective collapse, free communication, infinite-input certificate, or new arithmetic asymptotic is claimed.",
+  "script_sha256": "8a523336f0f8323691891caa31fb81ed8e97fca1ded76d1ba336551f8a46f8f6",
+  "shared_scalar_dependency_sha256": "c1164f2083477bc7abdc3251f7fd0ed6e48c8b6d9a297b7860d8abb7ef54023c",
+  "status": "PASS"
+}

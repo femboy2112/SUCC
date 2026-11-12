@@ -1,0 +1,93 @@
+{
+  "dimensions": {
+    "holdout": 7,
+    "main": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "record_holdouts": [
+      3,
+      4,
+      7
+    ]
+  },
+  "exact_checks": 696,
+  "groups": {
+    "amplitude_damping": 4,
+    "channel_trace_preservation": 32,
+    "coefficient_norm": 32,
+    "computed_record_fibers": 25,
+    "computed_record_irrecoverability": 2,
+    "fidelity_direct_trace": 32,
+    "fidelity_range": 32,
+    "fidelity_residual": 32,
+    "fixed_output_positive": 32,
+    "fresh_record_product": 6,
+    "full_complement_constancy": 162,
+    "full_matrix_unit_transport": 162,
+    "hidden_superposition_leak": 5,
+    "multilevel_record_identity": 45,
+    "mutation_controls": 1,
+    "phase_calibration": 3,
+    "pure_replacement": 4,
+    "records_coarse_agreement": 5,
+    "records_current_fidelity": 5,
+    "records_exact_gram": 5,
+    "records_individual_marginals": 10,
+    "records_pairwise_distance": 5,
+    "records_partial_transpose": 10,
+    "records_purity": 5,
+    "records_trace_preservation": 5,
+    "reused_record_recoherence": 4,
+    "scalar_calibration": 3,
+    "syndrome_complement": 4,
+    "syndrome_mixed_output": 1,
+    "syndrome_recovery": 6,
+    "syndrome_twin_recovery": 1,
+    "unitary_positive": 16
+  },
+  "provenance": "Reuses existing Gaussian-rational primitives; direct Choi contractions, Kraus residuals, complementary channels and full-matrix-unit recovery are separate calculation paths, not independent-model testimony.",
+  "scope": "Exact finite Gaussian-rational current-channel controls; universal statements have written proofs. No physical collapse law, history-comparison access, or arithmetic asymptotic follows.",
+  "shared_scalar_dependency_sha256": "c1164f2083477bc7abdc3251f7fd0ed6e48c8b6d9a297b7860d8abb7ef54023c",
+  "source_sha256": "8553d7978e0657c3cd3700a3ae6c624ba15869ce6d6c20df08df30b38244c40f",
+  "status": "PASS",
+  "witnesses": {
+    "equal": {
+      "fixed_fidelity": "1",
+      "gamma_im": "0",
+      "gamma_re": "1",
+      "joint_purity": "1",
+      "pt_middle_determinant": "-1/4"
+    },
+    "opposite": {
+      "fixed_fidelity": "0",
+      "gamma_im": "0",
+      "gamma_re": "-1",
+      "joint_purity": "1",
+      "pt_middle_determinant": "-1/4"
+    },
+    "orthogonal": {
+      "fixed_fidelity": "1/2",
+      "gamma_im": "0",
+      "gamma_re": "0",
+      "joint_purity": "1/2",
+      "pt_middle_determinant": "0"
+    },
+    "partial": {
+      "fixed_fidelity": "4/5",
+      "gamma_im": "0",
+      "gamma_re": "3/5",
+      "joint_purity": "17/25",
+      "pt_middle_determinant": "-9/100"
+    },
+    "quarter_phase": {
+      "fixed_fidelity": "1/2",
+      "gamma_im": "-1",
+      "gamma_re": "0",
+      "joint_purity": "1",
+      "pt_middle_determinant": "-1/4"
+    }
+  }
+}

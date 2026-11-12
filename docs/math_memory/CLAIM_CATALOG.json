@@ -22157,7 +22157,7 @@
     "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2996
+    "source_documents_found": 3006
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38646,9 +38646,15 @@
       "title": "Execution, provenance and exact status"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/ARITHMETIC_COHERENCE.md",
+      "sha256": "d5429fb267b67913d3d3f5be4613aa109d0edab8aec978a1c17690d4b02ce391",
+      "size": 19290,
+      "title": "Arithmetic coherence: branch sectors and protected logical encodings"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
-      "sha256": "d4354c0723ee6358da809b6d6192076ae01a04e1be493cb6522672e195709323",
-      "size": 14575,
+      "sha256": "57a9726fa4923632e5617b66eefaec701c3dab1e07f1f5d09c2876d6cdfeed40",
+      "size": 18747,
       "title": "Audit findings and dispositions"
     },
     {
@@ -38664,6 +38670,18 @@
       "title": "A Borwein ratchet on the arithmetic cylinder"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/BRIDGE_COMMUNICATION.md",
+      "sha256": "6a9a5a4c7899cbe59d208e1dce31fecc3efd12a91579f50763725cd580d40d06",
+      "size": 14584,
+      "title": "A shared bridge: coherent communication needs an actual channel"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/CARRIER_BOND_DUALITY.md",
+      "sha256": "a822516aa384ce66a08371887a15f096df408baa0a4cf8aeaa260ac410060287",
+      "size": 20059,
+      "title": "One carrier bond and two internal twins: an exact finite dictionary"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/CARRIER_COUPLING.md",
       "sha256": "a3f95d220e0c58d9787bd11657a31bcfc2aee41eb85ce27b82d3dad24264b88a",
       "size": 30284,
@@ -38671,9 +38689,33 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
-      "sha256": "3bdf8347cb5ef13b285af4f3c1e02a68199e3f3be371dea020228053be6d7b6d",
-      "size": 16703,
+      "sha256": "0875a1ead37add0d9e91fe35e324cf5758fdef31e51db6a37b81de4ff2908ec7",
+      "size": 25690,
       "title": "Claim ledger — prime observer and cylinder"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/COHERENT_CHANNELS.md",
+      "sha256": "5c50fcaa8e3c2906376dce744b867399fc634d3906745fec3ad0aa19f4ad47cd",
+      "size": 18780,
+      "title": "Coherent transport: what an inaccessible carrier may learn"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/COHERENT_PATH_CONTRACT.md",
+      "sha256": "0b8d6ab04b93998bae0a72e5c664dcc0129e4427474bd13bacbac19444b54ea6",
+      "size": 10114,
+      "title": "Coherent twin paths: contract and discriminating probes"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/COHERENT_PATH_TRANSPORT.md",
+      "sha256": "7054a1a1aa1f31761c49ee1d4688a608d0139fa8ced1d43bef8df2440f58a9d7",
+      "size": 11335,
+      "title": "Protected transport, accumulated error, and causal reach"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/COHERENT_TWIN_PATHS.md",
+      "sha256": "373cc2c736dec784fb0d1eb168726abd02e3b8f7db711d350cb2fc12dea70c5c",
+      "size": 21559,
+      "title": "Coherent twin paths: a working arithmetic construction"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/COMMON_ROOT_AND_LIMITS.md",
@@ -38695,8 +38737,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/NEXT.md",
-      "sha256": "8c9bb8211eac3beb57ecf6c732de44f144d7c72c676f0eef9b308c1b8beaa87b",
-      "size": 12254,
+      "sha256": "3bbd22aece5dad5b704d2ba9dd3a1580f97ea86c1d99b6de738477791d0c0abc",
+      "size": 14708,
       "title": "Next dependency cut: preserve the additive coupling"
     },
     {
@@ -38725,8 +38767,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
-      "sha256": "1d98c5c8630949994a41b152ac501ee61823f38e1071d059937a3bfa9588a5a9",
-      "size": 14894,
+      "sha256": "17b6c584cfbd4701a041c1129a23f1b6ce67769e3bcb44a2061b433bce53dcfd",
+      "size": 18192,
       "title": "Prime observers, return-path families, and arithmetic transport"
     },
     {
@@ -38737,8 +38779,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
-      "sha256": "5b4eb8cfa991a02e22ca2173a1826a11fe034ea22e21de9190fe972173454e5c",
-      "size": 14491,
+      "sha256": "f8218ede75279358da69abf0165527d9fa9ba1c590c58888351826c533218689",
+      "size": 21299,
       "title": "Source map and provenance"
     },
     {
@@ -38779,8 +38821,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
-      "sha256": "f80d5ea63fa62e8590ff3300a4a297f99f6d83f77df09a8cb4f40e109b62fa83",
-      "size": 27506,
+      "sha256": "10fe0b79e8822fb63db176f0f2eb27ba75412dc94c0c6d785fda0c73c257bd1b",
+      "size": 36515,
       "title": "Validation, actual runs, and retained limitations"
     },
     {
@@ -38802,10 +38844,28 @@
       "title": "Carrier probe code audit"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/coherence_cross_audit.md",
+      "sha256": "89f75ba31c73858cbe6a5e0ac379815abdd8d5c947b90048bc98de70faf5ad43",
+      "size": 10149,
+      "title": "Cross-audit: arithmetic coherent sectors and source semantics"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/coherent_path_adversarial_audit.md",
+      "sha256": "359afecd1e565b3fe577a60bf1136d9a29898554cac6c25ad86dc23ed1a27993",
+      "size": 24722,
+      "title": "Coherent paths: present discrimination and retained counterexamples"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/common_root_audit.md",
       "sha256": "d541cb0811dbc4632d87d8636ebf00f9b9f9d682b440949bb0e95800eb950c3a",
       "size": 10237,
       "title": "Common root, strong limits, and analytic observation: audit"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/er_epr_equivalence_audit.md",
+      "sha256": "ab13ccf3357c4846471df8e0efe9e3d5d68224781eec9366ebaef30c7a79fe14",
+      "size": 16650,
+      "title": "ER=EPR refinement: shared carrier, chosen messages, and exact output equivalence"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md",

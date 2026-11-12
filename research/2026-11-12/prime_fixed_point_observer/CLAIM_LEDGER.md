@@ -227,3 +227,71 @@ The finite prefix bound carries an explicit smallest-weight condition
 factor. A weighted opposite-side mirror can be unbounded even for successor.
 These results give local proofs and countermodels; they do not promote
 an infinite physical meeting or a universal arithmetic truth certificate.
+
+## Protected coherent paths and the external carrier bond
+
+The synthesis is [COHERENT_TWIN_PATHS.md](COHERENT_TWIN_PATHS.md). The
+registered [contract](COHERENT_PATH_CONTRACT.md) retains the initial
+UNVERIFIED state and later ER=EPR refinement. The statuses below refer to
+the written proofs in the named finite/code models, not physical tests,
+historical priority or formal-kernel certification.
+
+| ID | Statement and domain | Status / evidence | Boundary or falsifier |
+| --- | --- | --- | --- |
+| CCH-01 | A specified finite-code isometry preserves the full reference twin iff its inaccessible record factors as one input-independent vector | CLASSICAL / PROVED LOCAL; `COHERENT_CHANNELS.md` §1 | Known inert/reference transport; arbitrary initial input/carrier correlations require an explicit encoding |
+| CCH-02 | Exact present CPTP recovery iff `E_a* E_b=lambda_ab I`, iff the full complementary channel is constant | CLASSICAL Knill--Laflamme; explicit proof in §2 | Basis-state record marginals alone do not test superposition leakage |
+| CCH-03 | A copied function record dephases between its fibers; a coordinate code survives directly iff the function is constant there | PROVED LOCAL; §3 | A larger encoded code or accessible recovery changes the question |
+| CCH-04 | The specified twin-overlap deficit equals the sum of squared Kraus residuals from the desired isometry | PROVED LOCAL; §4 | Combines coherent mismatch and leakage; not a mechanism probability |
+| CCH-05 | The environment Gram matrix determines current twin purity and target overlap | PROVED LOCAL; §5 | Equal record rays with different phases can preserve entanglement while changing the target overlap |
+| AC-01 | Every finite fresh-record arithmetic route is an injective basis map into output plus full record | PROVED LOCAL; `ARITHMETIC_COHERENCE.md` §1 | Reusing one record does not satisfy the fresh-record model |
+| AC-02 | Every finite record sector has an exact divisibility/nondivisibility predicate and emptiness test | PROVED LOCAL; §2 | The final multiplier alone omits intermediate domain constraints |
+| AC-03 | Current and complementary arithmetic channels have the stated record/output collision formulas | PROVED LOCAL; §3 | A pure current output can have erased the entire protected distinction |
+| AC-04 | An arithmetic coordinate code is directly isometric iff all its labels have the same complete record | PROVED LOCAL; §3 | Does not classify superposition encodings |
+| AC-05 | Common output ranges and fixed branch amplitudes construct every directly isometric code for the finite arithmetic channel | PROVED LOCAL; §4 and separate cross-audit | Codes needing a further recovery are a broader class |
+| AC-06 | The all-success product is `D_M D_L*`, where `L` is the lcm of reduced prefix denominators | PROVED LOCAL; §5 | Finite-horizon encoding uses source labels up to `L(d-1)` |
+| AC-07 | Along any infinite strict proper-return route, `L_N-M_N>=N` and the fixed all-success intersection is only the root line | PROVED LOCAL; §6 | Coherent rejection sectors and horizon-dependent encodings remain possible |
+| CPT-01 | Typed protected path isometries with fresh independent records compose with a fixed product record | PROVED LOCAL; `COHERENT_PATH_TRANSPORT.md` §2 | Initial auxiliary preparation and code interfaces are explicit hypotheses |
+| CPT-02 | Finite path operator-norm errors add, also with an external reference | PROVED LOCAL; §2 | Stated isometric model; no arbitrary noise process is silently included |
+| CPT-03 | Two separately bounded arms plus calibrated mismatch give target-projection failure at most `min(1,(E_A+E_B+delta)^2)` | PROVED LOCAL; §2 | Shared correlated carriers need their actual joint isometry and bound |
+| CPT-04 | In the declared nondemolition moving basis, fresh record overlaps multiply | PROVED LOCAL; §3 | Reused accessible records can restore contrast; phase can cancel |
+| CPT-05 | A finite local circuit change outside a present observable's backward support leaves its expectation unchanged | PROVED LOCAL; §4 | A specified interaction graph, not an inferred relativistic light cone |
+| CPA-01 | `ZZ=1, ZI=0` characterize the balanced even two-qubit sector, where `gamma=XX-i XY` | PROVED LOCAL; adversarial audit §2 | True expectations; sampling needs its own calibration and repeated preparations |
+| CPA-02 | In that sector purity is `(1+abs(gamma)^2)/2`, negativity is `abs(gamma)/2` | PROVED LOCAL; audit §2 | One Bell overlap and both local marginals do not distinguish phase from dephasing |
+| CPA-03 | A recorded-then-reversed path and an idle path can have identical complete final states | PROVED LOCAL counterexample; audit §4 | Present equality cannot identify an untouched past |
+| CPA-04 | Every chosen local CPTP map preserves the other observer's unconditioned marginal | CLASSICAL / PROVED LOCAL; audit §5 | Selected outcomes and actual communication are different resources |
+| CPA-05 | The present quadrature reconstruction has an explicit trace-distance bound with imperfect sector guards | PROVED LOCAL; audit §2 | Positive even-sector mass; true guard values; guard sampling uncertainty remains additional |
+| CBD-01 | The finite conjugate-space bond has the normalized trace contraction and the stated basis-change law | CLASSICAL / PROVED LOCAL; `CARRIER_BOND_DUALITY.md` §1 | Ordinary same-direction transpose/adjoint substitution is invalid |
+| CBD-02 | Isometric outside encoding and inside twins give identical probabilities for all transported present effects | PROVED LOCAL; §2 | State/effect equivalence alone does not equate interventions or communication resources |
+| CBD-03 | Separately protected paths transport the carrier bond with input-independent records | PROVED LOCAL; §4 | A common correlated carrier needs its actual joint evolution |
+| CBD-04 | Two disjoint code-preserving endpoint representations of the same concrete logical algebra force it to be commutative | PROVED LOCAL; §6 | State-specific mirrors and compression-only representatives are weaker hypotheses |
+| BCOM-01 | Normalized cup and selected cap contract to `I/d`, with probability `1/d^2` | CLASSICAL / PROVED LOCAL; `BRIDGE_COMMUNICATION.md` §1 | Removing normalization conceals postselection |
+| BCOM-02 | All four Bell branches with communicated corrections implement the qubit identity channel, including references | CLASSICAL teleportation; explicit proof in §2 | One Bell pair, two classical bits and the declared operations are resources |
+| BCOM-03 | Without the syndrome message, the receiver channel is `rho -> Tr(rho) I/2` | PROVED LOCAL; §3 | One correction bit still leaves a dephasing channel |
+| BCOM-04 | A shared entangled state plus local CPTP choices cannot transmit a freely selected message | CLASSICAL no-signalling; §3 | A supplied channel or joint coupling changes the operation class |
+| BCOM-05 | A supplied coherent controlled correction factors the final syndrome and preserves the complete input/reference state | PROVED LOCAL; §4 | Requires actual coherent communication or a joint interaction |
+| ERE-01 | Controlled unitary and outcome-forgotten measurement/feed-forward have the same receiving-side channel, including an external reference | CLASSICAL / PROVED LOCAL; `reviews/er_epr_equivalence_audit.md` §3 | Joint current states need not agree; the meeting can distinguish them |
+| ERE-02 | Entanglement-only local processing and a supplied fresh-message wire differ under a chosen-message intervention | PROVED LOCAL counterexample; audit §4 | Does not refute a duality that maps the added interaction and access consistently |
+
+### Additional controls and unresolved edges
+
+The separate [arithmetic cross-audit](reviews/coherence_cross_audit.md)
+computes `J* P_prime J=diag(16/25,1)` and
+`V* P_prime V=I` on the protected qubit. Source coordinate `epsilon_k`
+means original positive integer `k+1`. Logical preservation does not
+intertwine the unchanged ordinary prime observable. A faithful current
+effect must satisfy `V* O_out V=J* O_source J` with its construction and
+resource cost declared.
+
+The [ER=EPR audit](reviews/er_epr_equivalence_audit.md) separates exact
+encoded-state equivalence, resource-qualified channel simulation, and
+an UNVERIFIED geometric realization. The original ER=EPR paper permits
+an interior meeting under its assumptions, while traversability uses
+additional coupling. Receiver-only equivalence of coherent coupling and
+measurement/feed-forward does not imply equivalence at a joint current
+meeting: Bell and dephased outputs have equal marginals but different `XX`.
+
+Neither a final pure selection nor twin agreement proves that only one
+objective physical collapse occurred. A metric/wormhole interpretation,
+unlimited free messaging, independent truth evidence from communicating
+twins, and a new uniform prime-pair estimate are not certified by these
+identities. Goldbach, pi normality and RH remain OPEN.

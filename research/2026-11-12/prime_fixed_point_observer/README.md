@@ -75,6 +75,27 @@ The [contract](TWIN_OBSERVER_CONTRACT.md), [transport derivation](reviews/twin_t
 and [gluing audit](reviews/twin_observer_adversarial_audit.md) record the
 proof obligations, frames, source fidelity and retained countermodels.
 
+[COHERENT_TWIN_PATHS.md](COHERENT_TWIN_PATHS.md) develops the next refinement:
+the walkers may interact with the carrier while preserving an encoded
+logical twin. It gives an exact arithmetic code using both accepted and
+rejected branches, a complete finite-path classification of directly
+isometric codes, and a finite-horizon success encoding with an explicit
+source-scale cost. The present meeting distinguishes phase mismatch from
+lost coherence; a clean final state alone cannot identify an untouched
+history. The prime-observable countercontrol separates logical preservation
+from authentic arithmetic interpretation.
+
+[CARRIER_BOND_DUALITY.md](CARRIER_BOND_DUALITY.md) gives the requested
+outside/inside dictionary: an encoded carrier bond and the internal twin
+state have exactly the same transported present observations.
+[BRIDGE_COMMUNICATION.md](BRIDGE_COMMUNICATION.md) constructs coherent
+communication when an actual message channel or controlled coupling is
+supplied. The [ER=EPR audit](reviews/er_epr_equivalence_audit.md) connects
+this to the original interior-meeting picture, distinguishes a shared state
+from a traversable channel, and checks why receiver-only equivalence can
+fail at the eventual joint meeting. No gravitational metric is inferred
+from these state identities.
+
 **Goldbach, pi normality, and RH remain OPEN.** The new results are elementary
 constructions, exact local proofs, finite certificates, and explicit hostile
 models. There is no priority, asymptotic speedup, physical realization, or
@@ -148,6 +169,22 @@ formal-kernel acceptance claim.
     path costs through `(I-W(z))^-1`. Amplitude, units, and resource cost
     remain distinct. The equality `S V_2 S=S^3 V_2` has history costs3/4,
     so positive additive implementation cost does not survive that quotient.
+16. A specified logical transport preserves a full reference twin exactly
+    when its inaccessible carrier state is input independent. General
+    present recovery has the classical Knill--Laflamme criterion. Exact
+    arithmetic common-range codes realize the direct factorization.
+17. Every finite proper-return route has an exact protected all-success
+    encoding determined by the lcm of its reduced prefix denominators.
+    For an infinite strict route, the fixed all-success intersection is
+    only the root line; changing the finite-horizon encoding has a cost.
+18. Present quadratures separate a pure phase-shifted twin from dephasing
+    when basis agreement and one Bell overlap cannot. Record reversal and
+    final postselection prevent retrodiction of an untouched path.
+19. An encoded external bond exactly reproduces the internal twins'
+    transported present effects. A normalized selected Bell connection
+    has probability `1/d^2`; complete teleportation requires the declared
+    communication and corrections. A coherent version preserves all
+    reference correlations with an actual coherent channel or coupling.
 
 ## Read in this order
 
@@ -177,6 +214,18 @@ formal-kernel acceptance claim.
   Hardy dual, exact observation norms, and finite coefficient conditioning.
 - [TYPED_CHANNELS.md](TYPED_CHANNELS.md): typed couplings, graded paths,
   implementation costs, and compatible roots across channels.
+- [COHERENT_TWIN_PATHS.md](COHERENT_TWIN_PATHS.md): protected arithmetic
+  paths, source semantics, current diagnostics, and the external bond.
+- [COHERENT_CHANNELS.md](COHERENT_CHANNELS.md): exact finite channel and
+  recovery criteria, complementary records, and quantitative residuals.
+- [ARITHMETIC_COHERENCE.md](ARITHMETIC_COHERENCE.md): record sectors,
+  all directly isometric codes, prefix lattices, and the infinite limit.
+- [COHERENT_PATH_TRANSPORT.md](COHERENT_PATH_TRANSPORT.md): typed path
+  composition, explicit error budgets, fresh records and causal support.
+- [CARRIER_BOND_DUALITY.md](CARRIER_BOND_DUALITY.md): encoded bond
+  equivalence, source-observable transport and shared-algebra boundaries.
+- [BRIDGE_COMMUNICATION.md](BRIDGE_COMMUNICATION.md): normalized cup/cap,
+  complete teleportation, no-signalling and coherent communication.
 
 ![Local prime-wave interference at targets 30 and32](figures/prime_wave_interference.svg)
 

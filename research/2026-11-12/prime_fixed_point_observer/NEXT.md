@@ -1,5 +1,47 @@
 # Next dependency cut: preserve the additive coupling
 
+## Protected paths, outside bonds, and communication update
+
+The coherent-path construction now has exact arithmetic codes and a
+channel-level criterion. A carrier interaction is harmless to the code
+when the inaccessible carrier's complete state reveals no logical input.
+The full finite-path common-range classification and the all-success
+prefix-lcm encoding close concrete construction gaps. A fixed nontrivial
+all-success code still cannot traverse infinitely many strict proper
+returns; a finite-horizon construction declares its growing source scale.
+
+The next arithmetic obligation is now sharper. Fix source and output
+encodings `J,V`, an authentic additive/source observable `O_source`, and
+an implementable current readout `O_out`. Prove
+`V* O_out V = J* O_source J` with explicit computation, preparation and
+error costs. The displayed protected qubit is a calibrated negative
+control for leaving the ordinary prime observable unchanged: its source
+compression is `diag(16/25,1)`, while the output prime projection is `I`.
+No new prime-pair estimate follows from correcting the code alone.
+
+The external bond dictionary is exact for its specified state and
+transported present effects. The ER=EPR refinement therefore splits the
+next tasks by operational scope:
+
+- If the target is coherent communication, specify the actual channel or
+  joint interaction and prove complete input/reference preservation.
+  Local operations on a shared state alone fail the chosen-message test.
+  The complete teleportation construction is a positive resource control.
+- If the target is equivalence at the meeting, quantify over the allowed
+  **joint current effects** and interventions. Matching only the receiving
+  marginal is insufficient: coherent CNOT and its dephased-control
+  version have the same receiver output but different joint `XX`.
+- If the target is geometric, supply a source-derived locality/metric
+  and dynamical dictionary that distinguishes the existing same-encoder,
+  different-distance graphs. Tensor-state equivalence leaves this open.
+
+The weakest verdict-changing probe is not another uncontrolled Bell return.
+It is the declared source-observable transport or an intervention that
+distinguishes a correlation bond from the proposed communication channel.
+The joint meeting still uses only present outputs. Histories require
+their event/frame/evolution transport, and shared messages do not create
+independent source evidence.
+
 ## Present-output twin update
 
 The two-boundary architecture now has a lossless extension of the current

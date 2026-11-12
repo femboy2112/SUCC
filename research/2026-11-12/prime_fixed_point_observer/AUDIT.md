@@ -219,3 +219,72 @@ repair are recorded in `VALIDATION.md` and the twin receipts. The wrapper
 initially omitted the correlation count because its report uses the key
 `checks`; the complete396-check report had passed and was retained.
 The metadata was corrected from that actual report without changing code.
+
+## Coherent paths, carrier bonds, and actual communication
+
+The new audit uses separate same-model derivations and exact implementations
+for the finite channel criterion, arithmetic specialization and present
+diagnostics. The root replayed their completed probes. Agreement is not
+external peer review, independent empirical evidence or formal checking.
+The beginning hypothesis and verdict-changing controls remain in
+`COHERENT_PATH_CONTRACT.md`.
+
+The strongest positive result is a concrete arithmetic superposition code
+whose accepted and rejected branches end in the same fixed carrier record.
+Its full reference correlation survives. The common-range construction
+classifies all directly isometric codes of the finite fresh-record channel;
+general recoverability has the separately stated classical criterion.
+The independent integer implementation checked record predicates, prefix
+domains, inverse histories and an explicit entangled reference without
+importing the arithmetic implementation.
+
+Review forced four load-bearing qualifications into the synthesis:
+
+1. A fixed channel on all inputs requires a fixed input-independent auxiliary
+   preparation, or an explicit known input/carrier encoding. An arbitrary
+   pre-existing correlation is not silently a Stinespring channel.
+2. The two-arm error estimate assumes separate arm isometries and independent
+   auxiliary preparations. A shared interacting carrier requires the actual
+   joint isometry; preservation of one Bell vector is not a full-channel test.
+3. Preserving an encoded logical state does not preserve the interpretation
+   of every untransported source observable. The exact prime compression
+   discrepancy is `9/25` on the first logical basis vector.
+4. Robust quadrature bounds use true guard expectations. Finite sampling of
+   those guards needs additional uncertainty propagation, especially near
+   zero mass in the chosen sector.
+
+The present-output audit retains phase-only, partial-leakage, pure-erasure,
+record-and-reversal, identical-marginal, and final-postselection controls.
+They distinguish a repairable channel or interpretation issue from an
+identifiability boundary. In particular, no present observation distinguishes
+two identical complete final states merely because their paths differed.
+The final comparator never receives untransported cross-observer histories.
+
+The user's ER=EPR steering adds a genuine representation construction:
+encoded carrier bond and internal twin effects have identical probabilities.
+The stronger operation claim is calibrated by a selected-message test,
+normalized cup/cap scalar, complete teleportation and coherent correction.
+A bond alone cannot supply the missing message. An actual carrier coupling
+can, when it is explicitly included on both sides of the dictionary.
+
+The shared-algebra audit distinguishes code-preserving representations from
+state-only mirror equations and arbitrary compressions. Compression maps
+are not automatically multiplicative; disjoint physical operators can have
+noncommuting compressions when they leak out of the code. This does not
+evade the theorem for genuine code-preserving endpoint representations.
+
+The physics source audit identifies a particularly close positive analogy:
+Maldacena--Susskind's interior meeting. It also preserves the source's
+nontraversable-exterior qualification. Gao--Jafferis--Wall adds boundary
+coupling; Maldacena--Stanford--Yang's measurement/feed-forward equivalence
+is only a receiving-side output identity. A joint current comparison can
+distinguish its coherent and dephased global outputs. These source scopes
+are not promoted to an arithmetic gravitational realization.
+
+The existing October same-encoder/different-geometry countermodel remains
+an explicit unresolved dependency. The new results dominate an untouched
+carrier requirement by allowing protected interaction, and dominate a
+single-return diagnostic by resolving phase and visibility. They do not
+close source-authentication, geometric reconstruction or the additive
+arithmetic remainder. Execution, integration history and artifact hashes
+are recorded in `VALIDATION.md` and the continuation receipts.

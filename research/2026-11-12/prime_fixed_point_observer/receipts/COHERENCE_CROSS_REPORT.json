@@ -1,0 +1,43 @@
+{
+  "exact_checks": 107156,
+  "groups": {
+    "code_orthonormal": 3,
+    "joint_inverse": 23760,
+    "prefix_admission": 11880,
+    "prefix_descent": 88,
+    "prefix_integer": 88,
+    "prefix_output": 1174,
+    "pure_erasure_reference": 2,
+    "reference_current_density": 1,
+    "reference_current_purity": 1,
+    "reference_factorization": 1,
+    "reverse_integrality": 8905,
+    "sector_emptiness": 625,
+    "sector_membership": 60625,
+    "source_prime_semantics": 3
+  },
+  "inspected_source_hashes": {
+    "ARITHMETIC_COHERENCE.md": "d5429fb267b67913d3d3f5be4613aa109d0edab8aec978a1c17690d4b02ce391",
+    "COMMON_ROOT_AND_LIMITS.md": "877e01003553f343278c7840417d03b640ec19f898742ca89b7c6e4eaf4c3280",
+    "twin_transport.py": "52564670386a20fc34a46b3ed337f3becd65b1bc209924b874f780a01013a60c"
+  },
+  "path_and_reference_checks": 107153,
+  "prime_countercontrol": {
+    "first_diagonal_defect": "9/25",
+    "output_prime_diagonal": [
+      "1",
+      "1"
+    ],
+    "source_convention": "epsilon_k corresponds to original positive label k+1",
+    "source_prime_diagonal": [
+      "16/25",
+      "1"
+    ]
+  },
+  "reference_case": "Maximally entangled code/reference, normalized at density level by 1/2.",
+  "schedules": 88,
+  "scope": "Finite independent literal integer/Fraction audit; no project implementation imported. Same-model review is not external peer review. Universal results use written proofs.",
+  "script_sha256": "dfb197e571ba8f1fbb238e74c278234a4859cb064f7ee5dc2b6a1c6a29a76139",
+  "source_semantic_checks": 3,
+  "status": "PASS"
+}

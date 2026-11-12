@@ -428,3 +428,147 @@ The final integration receipt records source preservation, local links,
 catalog, typed graph and staged formatting. The updated manifest hashes
 all retained artifacts except itself. All27 preceding dossier Python files
 and the native source/test/provenance/dependency paths remain unchanged.
+
+
+## Coherent paths, external bonds, and communication
+
+This continuation uses published parent
+`e9639c0ddb07385c6000b670d26cf0f7b91dacaa`, tree
+`d591ba032b6b0cef8f62a32100455f9c3857b681`. The root freshly replayed
+the unchanged parent correlation probe: **396 checks PASS**. The isolated
+worktree was then based on the published ancestry before committing the
+new continuation. The original parent and imported mathematical sources
+were not rewritten.
+
+The user supplied two refinements during the work: carrier interactions
+should preserve a clean encoded twin, and an outside carrier-bond/wormhole
+view should be compared with the inside observers. Both were integrated
+into the same contract, proofs, exact controls and single publication.
+The final comparison remains restricted to present outputs in a calibrated
+common frame. Internal proof traces are analyst verification, not covert
+access to both observer histories.
+
+### Actual exact-probe replay
+
+The root executed all eight completed probes. The full stdout, exit code,
+source hash and elapsed time for each run are retained in
+`receipts/COHERENCE_ROOT_REPLAY.json`. The individual reports preserve
+group counts, input ranges, controls and source dependencies.
+
+| Probe | Actual completed result | Individual receipt |
+| --- | --- | --- |
+| Finite channels, recovery and reference fidelity | 696 exact checks PASS | `COHERENT_CHANNELS_REPORT.json` |
+| Arithmetic record sectors, codes and prefix lattices | 69,957 exact checks PASS | `ARITHMETIC_COHERENCE_REPORT.json` |
+| Typed protected paths, error budgets and causal support | 474 exact checks PASS | `COHERENT_PATH_TRANSPORT_REPORT.json` |
+| Present phase/visibility and robust reconstruction audit | 9,188 exact checks PASS | `COHERENT_PATH_ADVERSARY_REPORT.json` |
+| Separate literal integer/reference/source-semantic implementation | 107,156 exact checks PASS | `COHERENCE_CROSS_REPORT.json` |
+| Outside bond, arithmetic twins and shared-algebra controls | 421 exact checks PASS | `CARRIER_BOND_REPORT.json` |
+| Full teleportation, normalized cup/cap and coherent correction | 204 exact checks PASS | `BRIDGE_COMMUNICATION_REPORT.json` |
+| Chosen-message interventions and restricted output equivalence | 39 exact checks PASS | `ER_EPR_INTERVENTION_REPORT.json` |
+
+Receipt names in the last column are relative to `receipts/`. These counts
+have overlapping mathematical content. They are not summed into a truth
+score or presented as independent votes. The universal statements have
+written proofs in their declared domains; the finite checks calibrate the
+implementations and retain failure controls.
+
+The channel probe includes complete logical matrix-unit comparisons,
+independent syndrome recovery, a basis-only complementary-channel blindspot,
+pure replacement and partial/phase-only record controls. The arithmetic
+probe covers 80 routes, including three additional schedules, 31 one-step
+code pairs, route length through nine, exact record emptiness and labels
+through 72,687,053. The separate arithmetic oracle imports no project
+implementation and checks 88 schedules, including three longer schedules,
+with direct branch reconstruction and an explicit entangled reference.
+
+The present-state audit uses 610 Gaussian-rational coherence parameters
+across denominators 5 and 13, plus general-state guard algebra, radial
+projection, independently evaluated trace-distance families and perturbed
+quadrature controls. The robust bound assumes true guard expectations;
+no finite sampled confidence claim is made. The bond probe covers logical
+dimensions 1, 2, 3, 4, 5 and 7, exact source-observable contractions, unequal
+route lengths and the nonpositive inverse of a surjective compression map.
+
+The bridge probe derives all four Bell branches from the literal circuit,
+checks the complete input matrix basis, and checks local no-signalling on
+all 16 joint matrix units for each of nine CPTP choices. The intervention
+probe compares receiver channels on all 16 input matrix units, while a
+joint current `XX` control distinguishes the coherent and measured global
+outputs. No physical wormhole, gravitational dynamics or quantum device
+was simulated or measured by these rational-algebra probes.
+
+### Required repository gates and integration checks
+
+| Gate | Actual completed result | Receipt |
+| --- | --- | --- |
+| Existing dossier suite | 99 tests PASS in 11.478 seconds; wrapper exit 0 | `coherence-dossier.log`, `coherence-checks.json` |
+| Required native suite | 13,047 tests PASS in 1369.478 seconds; wrapper exit 0 in 1379.605 seconds | `coherence-native-suite.log`, `coherence-native-check.json` |
+| Imported provenance | SOURCE_PROVENANCE_VERIFIED; 72 items, exit 0 | `coherence-provenance.log` |
+| Observer foundations | Exit 0; scoped finite/foundation report retained | `coherence-foundations.log` |
+| Ordinal report | Exit 0; scoped finite report retained | `coherence-ordinal.log` |
+| Prior code/source preservation | 2,231 checked existing files byte-identical to parent | `COHERENCE_SOURCE_PRESERVATION.json` |
+| Changed-document local links | 98 local targets in 16 documents PASS | `COHERENCE_LINK_CHECK.json` |
+
+Only the new research probes and documentation are added; the existing
+research Python, native source/tests, scripts, imported archives and
+configuration remain unchanged. The new probes are executed separately;
+they are not represented as additional native unittest methods. The full
+native run is not restarted for documentation edits. Its final outer
+summary, rather than any nested fixture summary, supplies its result.
+Hosted CI remains separate from completed local validation.
+
+The generated catalog, graph check, formatting gate and artifact manifest
+are finalized after the proof notes and validation logs stabilize. Their
+actual completed results and advisory namespace warnings are recorded in
+`receipts/coherence-integration-checks.json`. The catalog is a reference
+index, not a proof checker. The manifest preserves every historical section
+and updates the hashes of the complete dossier plus the generated catalog;
+it excludes itself and Python caches to avoid self-reference.
+
+### Retained integration history and review scope
+
+`receipts/coherence-integration-history.json` retains the initial transport
+probe's scalar-conversion `TypeError`: a Gaussian-rational value was passed
+to its constructor rather than the existing conversion helper. The helper
+and normalized calibration state repaired the implementation before its
+completed 474-check run. This was a construction-time implementation error,
+not evidence against a proved channel identity.
+
+Review also sharpened the hypotheses for independent path environments,
+input/carrier initialization, true versus sampled sector guards, and
+whole-code reconstruction. The shared-algebra countercontrol now shows
+both endpoint compression maps are surjective as linear maps, yet an
+inverse sends a positive logical projector to `diag(1,-9/16)`. A genuine
+*-representation with full-algebra compression equality does force code
+preservation; the counterexample does not claim otherwise. The bridge note
+was changed from resource-equivalence wording to a channel implementation
+with declared resources. These repairs and their boundaries are retained.
+
+Separate same-model review checked the arithmetic proof against a literal
+integer implementation, the path bounds against their isometric assumptions,
+and the bond/bridge construction against its normalization and access model.
+The root inspected the derivations and replayed the actual probes. This is
+not external peer review or a formal-kernel certificate. Classical quantum
+error correction, compact duality, teleportation and no-signalling are
+attributed to their primary antecedents. The ER=EPR source audit distinguishes
+the possible interior meeting from exterior signalling and receiver-only
+output equivalence from equality at the joint current meeting.
+
+The earned result is a protected arithmetic construction and an exact
+state/observable dictionary, with a positive coherent communication protocol
+when its channel is supplied. Source-specific additive estimates, a
+geometric/gravitational realization and objective collapse timing remain
+unverified. Goldbach, pi normality and RH remain OPEN.
+
+### Reproduce the new probes
+
+```bash
+python research/2026-11-12/prime_fixed_point_observer/coherent_channels_probe.py
+python research/2026-11-12/prime_fixed_point_observer/arithmetic_coherence_probe.py
+python research/2026-11-12/prime_fixed_point_observer/coherent_path_transport_probe.py
+python research/2026-11-12/prime_fixed_point_observer/reviews/coherent_path_adversary_probe.py
+python research/2026-11-12/prime_fixed_point_observer/reviews/coherence_cross_probe.py
+python research/2026-11-12/prime_fixed_point_observer/carrier_bond_probe.py
+python research/2026-11-12/prime_fixed_point_observer/bridge_communication_probe.py
+python research/2026-11-12/prime_fixed_point_observer/reviews/er_epr_intervention_probe.py
+```

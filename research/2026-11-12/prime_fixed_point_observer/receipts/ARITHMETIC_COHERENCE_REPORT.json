@@ -1,0 +1,143 @@
+{
+  "current_output_contract": "Only present calibrated output states and declared decoders are meeting data. Internal record labels are analyst-side verification data, not directly compared observer histories.",
+  "exact_checks": 69957,
+  "explicit_witnesses": {
+    "different_record_cross_term": {
+      "after_cross_term": "0",
+      "before_cross_term": "12/25",
+      "source": {
+        "1": "3/5",
+        "3": "4/5"
+      }
+    },
+    "endpoint_multiplier_loses_domain": {
+      "rejected_input": 3,
+      "route": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "total_ratio": "1/3",
+      "true_input_lattice": 6,
+      "true_output_lattice": 2
+    },
+    "protected_qubit": {
+      "code_1": {
+        "2": "4/5",
+        "3": "3/5"
+      },
+      "code_2": {
+        "4": "4/5",
+        "6": "3/5"
+      },
+      "common_record_amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "common_record_density": [
+        [
+          "9/25",
+          "12/25"
+        ],
+        [
+          "12/25",
+          "16/25"
+        ]
+      ],
+      "outputs": [
+        2,
+        4
+      ],
+      "return": [
+        3,
+        2
+      ]
+    },
+    "pure_current_output_not_information": {
+      "distinct_inputs": [
+        2,
+        3
+      ],
+      "records": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "return": [
+        3,
+        2
+      ],
+      "same_output": 2
+    }
+  },
+  "finite_scope": {
+    "empty_record_cells": 32,
+    "holdout_routes": 3,
+    "largest_tested_source_label": 72687053,
+    "maximum_route_length": 9,
+    "nonempty_record_cells": 23,
+    "one_step_code_pairs": 31,
+    "routes": 80,
+    "sector_description_routes": 5,
+    "seed": 2026111219
+  },
+  "groups": {
+    "all_success_lattice": 5862,
+    "all_success_output": 633,
+    "code_orthonormality": 13752,
+    "common_range_factorization": 1296,
+    "complement_channel_formula": 80,
+    "compressed_product": 5862,
+    "compressed_vs_flag_sector": 5862,
+    "current_channel_formula": 80,
+    "current_logical_basis": 1296,
+    "current_trace": 80,
+    "different_records_remove_cross_term": 1,
+    "distinct_classical_inputs_alias": 1,
+    "empty_cell_negative_control": 1,
+    "encoding_normalization": 124,
+    "enlarged_norm": 80,
+    "finite_horizon_encoding": 80,
+    "fixed_full_record_state": 1296,
+    "fixed_prefix_termination": 105,
+    "infinite_reject_sector_positive_control": 90,
+    "literal_vs_existing_flags": 5862,
+    "logical_superposition_preserved": 124,
+    "logical_superposition_record_constant": 124,
+    "lost_information_in_record": 1,
+    "malformed_records_rejected": 4,
+    "moving_input_norm_witness": 15,
+    "multiple_record_path_code": 4,
+    "multiple_record_path_environment": 1,
+    "multiple_record_path_pure_output": 4,
+    "multiple_record_path_superposition": 1,
+    "mutation_denominator_product_rejected": 2,
+    "mutation_dropped_record_rejected": 1,
+    "mutation_final_ratio_domain_rejected": 2,
+    "nested_success_lattices": 79,
+    "prefix_integer_image": 80,
+    "pure_output_can_erase_logical_state": 1,
+    "realized_record_cell": 5862,
+    "record_cell_output_multiplier": 5862,
+    "repeated_return_exact_powers": 15,
+    "same_record_preserves_cross_term": 1,
+    "sector_empty_criterion": 55,
+    "sector_periodicity": 7095,
+    "sector_positive_witness": 23,
+    "sector_predicate": 7095,
+    "sector_range_integer": 23,
+    "strict_descent_budget": 80,
+    "twin_postselection_probability": 480,
+    "twin_postselection_rank": 480
+  },
+  "scope": "Finite exact implementation controls of written universal proofs. No physical collapse law, complete infinite traversal, quantum speedup, source-independent truth certificate, or arithmetic asymptotic estimate.",
+  "status": "PASS"
+}

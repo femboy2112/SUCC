@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "name": "dossier",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/scratch/6cb51214dd47/SUCC/research/2026-11-12/prime_fixed_point_observer",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.131,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-dossier.log",
+      "tail": "...................................................................................................\n----------------------------------------------------------------------\nRan 99 tests in 11.478s\n\nOK\n"
+    },
+    {
+      "name": "provenance",
+      "command": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.089,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-provenance.log",
+      "tail": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n"
+    },
+    {
+      "name": "foundations",
+      "command": [
+        "python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.171,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-foundations.log",
+      "tail": "  \"RH_side\": \"independent positive observer-to-FULL Weil distribution identity\",\n    \"analytic_side\": \"rigorous prime/Gamma interval oracle for Suzuki negative witness\",\n    \"quantum_side\": \"validated record-to-semantic covariance functor\",\n    \"theory_side\": \"representable G\\u00f6del substitution/derivability formalization\"\n  },\n  \"ordinal_reflection\": {\n    \"claimed_truth\": null,\n    \"declared_axiom_is_external\": \"EXTERNAL_ASSUMPTION_ONLY\",\n    \"reflection_follows_from_observation\": false,\n    \"successor_stages\": 3\n  },\n  \"physical_infinite_time_executed\": false,\n  \"rational_gram_certificates\": {\n    \"Suzuki_interval_oracle_built\": false,\n    \"bounded_search\": \"STRICT_NEGATIVE_WITNESS\",\n    \"negative_exact_quartic_upper\": \"-24\",\n    \"negative_status\": \"STRICT_NEGATIVE_WITNESS_CONDITIONAL_ON_INTERVAL_ORACLE\",\n    \"positive_exact_quadratic_lower\": \"0\",\n    \"positive_probe_status\": \"FINITE_PROBE_UNRESOLVED\",\n    \"source_is_actual_Suzuki\": false,\n    \"universal_positivity_proved\": false\n  },\n  \"status\": \"OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS\",\n  \"turing_observations\": {\n    \"delayed_prefix_17\": \"unresolved\",\n    \"delayed_prefix_19\": \"refuted\",\n    \"finite_survival_claims_are_universal_proofs\": false,\n    \"first_observed_counterexample\": 19,\n    \"loop_prefix_17\": \"unresolved\"\n  }\n}\n"
+    },
+    {
+      "name": "ordinal",
+      "command": [
+        "python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.495,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-ordinal.log",
+      "tail": "98997121333476148466e-73\",\n    \"oscillator_second_curvature_can_be_negative\": true,\n    \"quartic_determinant\": \"-192\",\n    \"quartic_kernel\": [\n      [\n        \"2\",\n        \"-14\"\n      ],\n      [\n        \"-14\",\n        \"2\"\n      ]\n    ],\n    \"quartic_psi_nonnegative\": true,\n    \"quartic_quadratic_vector_ones\": \"-24\",\n    \"quartic_second_derivative_nonnegative\": true\n  },\n  \"semantic_second_derivative_information_geometry\": {\n    \"Weil_identification_established\": false,\n    \"both_information_geometries_PSD\": true,\n    \"fake_covariance_determinant\": \"41/343\",\n    \"fake_six_Hessian\": [\n      [\n        \"24/49\",\n        \"-1/49\"\n      ],\n      [\n        \"-1/49\",\n        \"12/49\"\n      ]\n    ],\n    \"genuine_Hessian\": [\n      [\n        \"5/9\",\n        \"-1/18\"\n      ],\n      [\n        \"-1/18\",\n        \"2/9\"\n      ]\n    ],\n    \"genuine_covariance_determinant\": \"13/108\",\n    \"source\": \"Hessian log finite positive evidence partition function\"\n  },\n  \"status\": \"FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE\",\n  \"two_observer_mixed_finite_difference\": {\n    \"distributional_limit\": \"Psi''(t-u) = Weil distribution\",\n    \"h\": \"1/20\",\n    \"k\": \"1/30\",\n    \"mixed_covariance_increment\": \"0.000964653856973416905507178662116\",\n    \"positive_definiteness_proved\": false,\n    \"t\": \"3/5\",\n    \"u\": \"1/5\"\n  }\n}\n"
+    }
+  ]
+}
