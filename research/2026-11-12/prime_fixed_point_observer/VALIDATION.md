@@ -261,3 +261,87 @@ number of independent witnesses.
 
 Final catalog, graph and formatting results are retained in the named
 `borwein-integration-checks.json` receipts and the validation manifest.
+
+## Return families, common roots, and typed channels
+
+This continuation starts from published commit
+`3b2a3058ac6973da43554cbeeaaeee806a891d67`. The initial triadic witness was
+replayed before building on it. New source implementations remain isolated
+in this research dossier; earlier dossier Python files and native sources
+are preserved byte for byte. The new proofs are in `RETURN_PATHS.md`,
+`COMMON_ROOT_AND_LIMITS.md`, `TYPED_CHANNELS.md`, and
+`MOTION_AND_COHERENCE.md`.
+
+| Check | Actual result | Receipt |
+| --- | --- | --- |
+| Main return-family probe | 107,806 exact checks, zero failures | `RETURN_PATH_REPORT.json`, `return-probe.log` |
+| Separate literal-word/category audit | 353,330 exact checks, zero failures | `RETURN_PATH_INDEPENDENT_AUDIT.json`, `return-independent.log` |
+| Source-swap control | 788 exact checks, zero failures | `RETURN_SOURCE_REPORT.json`, `return-source.log` |
+| Quaternion/coherence probe | 1,559 exact checks, zero failures | `MOTION_REPORT.json`, `return-motion.log` |
+| Centered-root and analytic-boundary probe | 28,076 exact checks, zero failures | `ROOT_LIMIT_REPORT.json`, `return-root-limit.log` |
+| Typed-channel probe | 354 exact checks, zero failures; 3,575 literal histories through cost9 | `TYPED_CHANNEL_REPORT.json`, `return-typed-channels.log` |
+| Complete dossier suite | 86 methods PASS in12.905s, including12 new return-family methods | `return-focused-suite.log`, `return-checks.json` |
+| Required native suite | 13,047 tests PASS in1517.658s; wrapper exit0 in1523.964s | `return-native-suite.log`, `return-native-check.json` |
+| Provenance, observer foundations, ordinal report | All PASS | `return-checks.json` and named logs |
+
+All receipt filenames in this section are relative to `receipts/`. The root
+actually replayed every listed probe. The final root/typed reports were
+compared to the recorded deterministic reports, with exact agreement; their
+separate wrapper is `return-extension-checks.json`. The 86-method suite
+preceded the two final standalone probes, whose files are not imported by
+that suite. The new tests use literal word execution, correct partial
+domains and sparse states without artificial finite-matrix truncation.
+
+The main arithmetic holdouts include137,169,221,257,289,331,437,509,667,1009.
+The separate audit also enumerates seven literal histories to5 and their
+five affine equivalence classes. The universal common-domain criterion,
+prime projection equivalence, fixed-space and strong-limit results rest on
+written proofs, not a finite range of these holdouts.
+
+The centered-root probe retains the d-1 affine offset, the strict q^j>M
+finite-window threshold, a noncoprime iteration mutation, norm-one moving
+inputs, exact moment bounds, and the r=1 analytic exception. Its coefficient
+conditioning test compares overlapping worst-case measurement balls at
+epsilon=rho^N/2 with separated balls at rho^N/3. This is a declared
+observation-interface bound, not a proof-hardness certificate.
+
+The typed probe checks formal coefficients against literal paths, both
+inverse identities, noncancelling resource counts under cancelling
+amplitudes, the zero-cost loop, cost3/4 equivalent implementations, and
+flat/twisted compatible-root conditions. Positive-cost formal series are
+not silently promoted to numerically convergent analytic functions. The
+unit and map types are tested separately from their amplitudes.
+
+The implementation accepts real rational amplitudes. Complex coefficient
+and phase statements in the notes have analytic proofs; the finite return
+API does not implement arbitrary complex phases. The motion probe uses
+exact rational quaternion arithmetic. Counts across these related probes
+are not summed as independent evidence for a universal conjecture.
+
+### Integration history and proof-review boundaries
+
+The root/category review distinguished the unique common fixed line from
+all common eigenspaces: epsilon1 is a common eigenvalue-zero vector for
+the strict returns. The forward category and its added partial-operator
+returns remain different typed settings. The proper-lower-presheaf gluing
+obstruction and37/50 versus13/50 phase counterfeit are preserved.
+
+Three nonmathematical integration repairs are retained in
+`return-integration-history.json`: an added-file patch was rejected before
+writing because one line lacked its prefix, and a wrapper initially compared
+the typed probe's short stdout summary to its full saved report. Both probes
+in that wrapper had exited zero. Correct schema-aware comparisons then
+passed without changing their mathematical implementations. A local-link
+regular expression also mistook an unchanged displayed coefficient-extraction
+formula for a Markdown link; excluding mathematics and code repaired that
+checker. No earlier proof or actual link was changed.
+
+The full native suite completed once in this continuation, with its final
+13,047-test summary selected after the nested fixture summaries. Its result
+is PASS, not inferred from progress dots. The native source/test tree was
+unchanged; new isolated executables were checked by the separate probes.
+
+Source preservation, local links, catalog, graph, formatting and artifact
+hashes are recorded in the final integration receipts and validation
+manifest. These same-model audits are not external peer review. Hosted CI
+is distinct from the completed local checks.

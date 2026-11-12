@@ -1,0 +1,24 @@
+[
+  {
+    "name": "return-root-limit",
+    "command": [
+      "python",
+      "/workspace/scratch/66b470ffd34d/SUCC/research/2026-11-12/prime_fixed_point_observer/root_limit_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.097,
+    "checks": 28076,
+    "deterministic_report_agreement": true
+  },
+  {
+    "name": "return-typed-channels",
+    "command": [
+      "python",
+      "/workspace/scratch/66b470ffd34d/SUCC/research/2026-11-12/prime_fixed_point_observer/typed_channels_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.139,
+    "checks": 354,
+    "deterministic_report_agreement": true
+  }
+]

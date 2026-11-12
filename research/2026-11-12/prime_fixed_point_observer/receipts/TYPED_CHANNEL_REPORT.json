@@ -1,0 +1,327 @@
+{
+  "scope": "Finite exact rational toy; general proofs are in TYPED_CHANNELS.md",
+  "matrix_convention": "target row, source column",
+  "arithmetic": "Python Fraction; no floating point",
+  "total_checks": 354,
+  "checks": {
+    "literal_path_vs_recurrence": 10,
+    "formal_inverse_left": 10,
+    "formal_inverse_right": 10,
+    "parallel_histories_exist": 1,
+    "coherent_parallel_cancel": 1,
+    "separate_intensity_does_not_cancel": 1,
+    "cost_three_two_return_routes": 1,
+    "basis_independence_not_dynamic": 1,
+    "unit_ratio_telescopes": 1,
+    "generator_has_extra_inverse_time": 1,
+    "zero_cost_rejected": 1,
+    "negative_cost_rejected": 1,
+    "fractional_cost_rejected": 1,
+    "wrong_units_rejected": 1,
+    "zero_cost_infinite_history_control": 1,
+    "equal_affine_semantics": 1,
+    "unequal_history_cost": 1,
+    "same_action_all_sampled_inputs": 100,
+    "minimum_cost_strict_example": 1,
+    "minimum_cost_subadditivity_samples": 196,
+    "root_holonomy_determinant": 4,
+    "flat_transport_compatible_roots": 2,
+    "twisted_transport_nonzero_determinant": 2,
+    "positive_flat_root": 1,
+    "negative_self_loop_excludes_nonzero_root": 1,
+    "local_roots_do_not_fix_aggregate": 1,
+    "normalized_aggregate_fixes_root": 1,
+    "positive_cost_matrix_has_zero_constant": 1
+  },
+  "failures": [],
+  "budget": 9,
+  "literal_histories_visited": 3575,
+  "channel_units_length_time": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "coefficient_matrices": [
+    [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1/2",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "2"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "4"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "2"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "2",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "8",
+        "0"
+      ],
+      [
+        "0",
+        "4"
+      ]
+    ]
+  ],
+  "history_count_matrices": [
+    [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "2",
+        "4"
+      ]
+    ],
+    [
+      [
+        "2",
+        "2"
+      ],
+      [
+        "4",
+        "9"
+      ]
+    ],
+    [
+      [
+        "2",
+        "4"
+      ],
+      [
+        "10",
+        "20"
+      ]
+    ],
+    [
+      [
+        "4",
+        "10"
+      ],
+      [
+        "22",
+        "44"
+      ]
+    ],
+    [
+      [
+        "12",
+        "22"
+      ],
+      [
+        "48",
+        "98"
+      ]
+    ],
+    [
+      [
+        "24",
+        "48"
+      ],
+      [
+        "108",
+        "218"
+      ]
+    ],
+    [
+      [
+        "52",
+        "108"
+      ],
+      [
+        "240",
+        "484"
+      ]
+    ],
+    [
+      [
+        "120",
+        "240"
+      ],
+      [
+        "532",
+        "1076"
+      ]
+    ]
+  ],
+  "parallel_control": {
+    "cost": 1,
+    "histories": 2,
+    "coherent_amplitude": "0",
+    "separate_squared_amplitudes": "2"
+  },
+  "zero_cost_loop_histories_at_length_cutoffs_zero_to_seven": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "cost_quotient_control": {
+    "map": [
+      2,
+      3
+    ],
+    "short_cost": 3,
+    "long_cost": 4,
+    "generators": [
+      "S",
+      "V_2"
+    ],
+    "words_checked_through_length_six": 127,
+    "minimum_cost": 3
+  },
+  "compatible_root_controls": [
+    {
+      "forward": "-1",
+      "return": "-1",
+      "holonomy": "1",
+      "constraint_determinant": "0",
+      "nonzero_compatible_family": true
+    },
+    {
+      "forward": "-1",
+      "return": "1",
+      "holonomy": "-1",
+      "constraint_determinant": "-2",
+      "nonzero_compatible_family": false
+    },
+    {
+      "forward": "1",
+      "return": "-1",
+      "holonomy": "-1",
+      "constraint_determinant": "-2",
+      "nonzero_compatible_family": false
+    },
+    {
+      "forward": "1",
+      "return": "1",
+      "holonomy": "1",
+      "constraint_determinant": "0",
+      "nonzero_compatible_family": true
+    }
+  ],
+  "aggregate_root_control": {
+    "input": [
+      1,
+      1
+    ],
+    "unnormalized_output": [
+      2,
+      2
+    ],
+    "normalized_output": [
+      1,
+      1
+    ]
+  }
+}

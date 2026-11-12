@@ -1,4 +1,4 @@
-# Prime observers, Borwein ratchets, and arithmetic transport
+# Prime observers, return-path families, and arithmetic transport
 
 Research branch from Main XXIV `071ce1e0ee6ab8f8c07113e901131aa646d6b95d`,
 2026-11-12. This package develops the requested prime fixed-point category,
@@ -33,6 +33,30 @@ steps instead form a bipartite graph. A mixed SUCC/dilation loop supplies an
 exact source anchor, with a strong-convergence boundary and retained
 countermodels. Three is not asserted to be the origin of all dynamics or
 linear algebra.
+
+[RETURN_PATHS.md](RETURN_PATHS.md) develops the next proposal: 5 has four
+proper canonical SUCC/dilation return channels, obtained from seven literal
+forward histories and five affine maps. For a general `n`, their summed
+initial projection has diagonal `gcd(n,m-1)-1`. Its normalization is an
+orthogonal projection exactly when `n` is prime. The note gives the precise
+Yoneda link, an obstruction to gluing the whole representable from only
+smaller ones, and phase/source countermodels that pass weaker observations.
+[MOTION_AND_COHERENCE.md](MOTION_AND_COHERENCE.md) checks the quaternion
+analogy and the classical five-parenthesization pentagon. Position,
+transformation dimension, representation coordinates, and coherence remain
+distinct.
+
+[COMMON_ROOT_AND_LIMITS.md](COMMON_ROOT_AND_LIMITS.md) identifies the shared
+root as a nonzero fixed basis vector at coordinate zero, becoming the
+constant function one in Hardy space. Its exact strong/norm and interior
+analytic bounds quantify the finite/global distinction. A fixed-radius
+coefficient observation has sharp amplification `rho^-N`, giving a
+declared conditioning scale rather than an absolute proof-hardness claim.
+[TYPED_CHANNELS.md](TYPED_CHANNELS.md) combines channel spaces, coupling
+maps, unit types and resource grades. Positive-cost path amplitudes have a
+formal transfer-matrix inverse; equal affine operations need not have equal
+implementation costs. Compatible local roots form a natural family and
+must pass their loop holonomy tests.
 
 **Goldbach, pi normality, and RH remain OPEN.** The new results are elementary
 constructions, exact local proofs, finite certificates, and explicit hostile
@@ -86,6 +110,27 @@ formal-kernel acceptance claim.
     but not in norm, to its projection. The all-d construction and a
     pointed-source counterfeit prevent a numerical mystique from replacing
     an arithmetic coupling theorem.
+12. The return family `R_(n,a)=V_n* S^(n-a) V_a`, `1<=a<n`, has initial
+    periods `n/gcd(n,a)`. All coincide exactly for primes. Its normalized
+    family Gram is a projection iff `n` is prime, while its fixed space is
+    the same pointed congruence class for every `n`. A sign mutation preserves
+    the entire diagonal profile and unit limits but changes a coherent
+    intensity from `37/50` to `13/50`.
+13. Each forward route has a Yoneda natural-transformation link. Root-route
+    sets alone do not recover naturality, and proper lower representables
+    cannot glue to the whole in the specified forward category. Quaternion
+    path lifting and the monoidal pentagon give precise, distinct examples
+    of information retained beyond endpoints or isolated local maps.
+14. Recentring the return family gives a common eigenvalue-one line, but
+    successor moves it. The root is constant one under the l2/Hardy
+    identification. The return powers have strong error tending to zero
+    and global norm error one; explicit support and moment bounds bridge
+    back to finite data. Interior analytic observations can hide a
+    coefficient of norm one.
+15. A finite typed graph with positive resource grades represents all finite
+    path costs through `(I-W(z))^-1`. Amplitude, units, and resource cost
+    remain distinct. The equality `S V_2 S=S^3 V_2` has history costs3/4,
+    so positive additive implementation cost does not survive that quotient.
 
 ## Read in this order
 
@@ -107,6 +152,14 @@ formal-kernel acceptance claim.
   lift, true rectification, degree filter, and exact failure controls.
 - [TRIADIC_TRANSPORT.md](TRIADIC_TRANSPORT.md): triangles, linearization,
   transported phases, source anchors, and the scope of the proposed third role.
+- [RETURN_PATHS.md](RETURN_PATHS.md): exact arithmetic return families,
+  prime/composite domain profiles, coherent phases, and the Yoneda boundary.
+- [MOTION_AND_COHERENCE.md](MOTION_AND_COHERENCE.md): quaternion coordinates,
+  path lifting, rotation dimensions, and the five-parenthesization pentagon.
+- [COMMON_ROOT_AND_LIMITS.md](COMMON_ROOT_AND_LIMITS.md): common fixed line,
+  Hardy dual, exact observation norms, and finite coefficient conditioning.
+- [TYPED_CHANNELS.md](TYPED_CHANNELS.md): typed couplings, graded paths,
+  implementation costs, and compatible roots across channels.
 
 ![Local prime-wave interference at targets 30 and32](figures/prime_wave_interference.svg)
 
@@ -146,6 +199,18 @@ python research/2026-11-12/prime_fixed_point_observer/borwein_probe.py
 python research/2026-11-12/prime_fixed_point_observer/borwein_independent_audit.py
 
 python research/2026-11-12/prime_fixed_point_observer/triadic_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/return_paths_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/return_paths_independent_audit.py
+
+python research/2026-11-12/prime_fixed_point_observer/return_paths_source_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/motion_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/root_limit_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/typed_channels_probe.py
 ```
 
 The repo's test extras include SymPy, used for independent exact cyclotomic

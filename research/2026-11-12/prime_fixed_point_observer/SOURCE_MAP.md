@@ -83,6 +83,47 @@ No full external paper is redistributed. The modulo30 transport, explicit
 finite interfaces, and written calculations are scoped applications, with
 no historical novelty or literature-completeness assertion.
 
+## Return families, common roots, and typed channels
+
+This continuation begins at `3b2a3058ac6973da43554cbeeaaeee806a891d67`.
+All earlier production and dossier Python sources remain unchanged. The
+root inspected the current triadic theorem, claim ledger, next dependency,
+root instructions and actual branch state before constructing the new
+family. The elementary gcd and tail identities are proved directly.
+
+The root opened these primary or official authored sources:
+
+- Emily Riehl, [*Category Theory in Context*](https://emilyriehl.github.io/files/context.pdf),
+  Theorem2.2.4, Corollary2.2.8, the category-of-elements discussion, and
+  Definition6.5.11 on dense probes. The current author PDF replaces the
+  obsolete JHU PDF address that returned404.
+- Etingof, Gelaki, Nikshych and Ostrik,
+  [*Tensor Categories*](https://math.mit.edu/~etingof/tenscat.pdf),
+  Definition1.1.1 and equation1.1.2 for the pentagon.
+- John Baez, authored [quaternion exposition](https://math.ucr.edu/home/baez/octonions/conway_smith/),
+  for unit quaternions and the rotation-group double covers. The local
+  rational quaternion witness is independently multiplied in the probe.
+- Vincent Bouchard, [Lie groups notes](https://sites.ualberta.ca/~vbouchar/MAPH464/section-Lie-groups.html),
+  Example4.1.9 for orthogonal-group dimension; a tangent-space derivation is
+  also supplied in the motion note.
+- ETH Zürich, Functional Analysis I (J. Teichmann, autumn2021),
+  [Problem5.7](https://metaphor.ethz.ch/x/2021/hs/401-3461-00L/ex/Solution05.pdf)
+  and [Problem6.7(d)](https://metaphor.ethz.ch/x/2021/hs/401-3461-00L/ex/Solution06.pdf),
+  for the l2/Hardy correspondence and evaluation kernel. The exact sparse
+  return norm and conditioning bounds are proved in the dossier.
+- John Baez and Christopher Walker,
+  [*Comparing Operator Topologies*](https://math.ucr.edu/home/baez/quantum_theory_and_analysis/HW1.pdf),
+  Problem2 for the classical strong/not-norm tail mechanism.
+- Richard Stanley, [*Enumerative Combinatorics*, volume1](https://math.mit.edu/~rstan/ec/ec1.pdf),
+  section4.7, Theorems4.7.1–4.7.2 for weighted path transfer matrices. The
+  typed positive-cost version is derived coefficient by coefficient here.
+
+No source PDF is redistributed. Independent literal-word code and the
+constructor's gcd implementation provide different bug detectors; their
+common arithmetic model and same-model authorship remain explicit. The
+Hardy representation is unitary and therefore not an independent source
+of evidence for a broader conjecture.
+
 ## Provenance and independence limits
 
 ### Borwein and triadic continuation

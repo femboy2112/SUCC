@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/workspace/scratch/66b470ffd34d/SUCC",
+  "parent_commit": "3b2a3058ac6973da43554cbeeaaeee806a891d67",
+  "exit_code": 0,
+  "elapsed_seconds": 1523.964,
+  "final_unittest_summary": [
+    "13047",
+    "1517.658"
+  ],
+  "log": "research/2026-11-12/prime_fixed_point_observer/receipts/return-native-suite.log",
+  "scope": "Required native suite; new isolated dossier modules are checked separately."
+}

@@ -130,3 +130,41 @@ first-crossing simplex, rectification Laplace product and maximal inequality.
 The third-relation extension has its own exact matrix and source-map probe.
 Its simple-graph assumptions and the difference between a local unit anchor
 and the full source braid remain part of the claim boundary.
+
+## Return-family, root, and typed-channel continuation
+
+The continuation from `3b2a3058ac6973da43554cbeeaaeee806a891d67` separates
+literal histories, affine maps, Hilbert return operators, representable
+presheaves, coherent amplitudes and implementation costs. The root checked
+the gcd-domain and family-Gram derivations, prime/composite witness,
+strong-limit tail proof, and all numerical examples in the new main note.
+
+[return_paths_category_audit.md](reviews/return_paths_category_audit.md)
+records a separate literal-word implementation and the precise Yoneda
+boundary. Its categorical proof includes the nonempty identity evaluation
+that prevents proper lower representables from gluing to the whole in the
+chosen forward category. The root independently replayed the audit and
+the source transposition11/13 control. A relative sign mutation preserves
+the full diagonal family profile while changing coherent output37/50 to
+13/50, demonstrating the information lost by taking that profile.
+
+[common_root_audit.md](reviews/common_root_audit.md) checks the centered
+algebra and analytic observation norms. It prevents calling the root the
+only common eigenvector at every eigenvalue: epsilon1 is a common zero
+eigenvector, while the fixed space at eigenvalue1 is precisely the root
+line. Original multiplication retains d-1 after recentering. The compact
+analytic norm requires fixed radius below1 and r>1 for unit-ball decay;
+coefficient norm never has a global finite-stage gap. The implementation
+uses exact real-rational fixtures, while the proofs allow complex states.
+
+The motion and typed-channel companions include hostile controls rather
+than relying on analogy: opposite quaternion signs can encode the same
+rotation, local associator signs can fail the pentagon, equal affine maps
+can have different history costs, and dimensionally legal maps can lack a
+compatible nonzero root. The graded path sum is formal and locally finite;
+it is not silently evaluated as a convergent analytic series.
+
+These reviews share model provenance and are not external refereeing.
+Universal claims depend on the written derivations; finite executions
+certify their specified code paths and counterexamples. Actual gate counts
+and retained integration history belong in `VALIDATION.md`.

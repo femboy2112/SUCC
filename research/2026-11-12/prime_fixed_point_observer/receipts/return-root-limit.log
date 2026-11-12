@@ -1,0 +1,540 @@
+{
+  "centering": {
+    "common_return_fixed_line": "C epsilon_0, proved by the single T_(2,1) tail argument",
+    "original_dilation": "k -> d*k+d-1",
+    "pointed_dilation": "k -> d*k",
+    "scope": "epsilon_0 is not fixed by successor; the claim is relative to the return family",
+    "successor": "k -> k+1",
+    "successor_commutator": "[S,E0]=|1><0|",
+    "unitary": "J e_(k+1)=epsilon_k"
+  },
+  "checks": {
+    "basis_fixed_points": 2727,
+    "common_root": 27,
+    "conditioning_H2_norm": 8,
+    "conditioning_coefficient_amplification": 8,
+    "conditioning_error_balls_disjoint": 8,
+    "conditioning_error_balls_touch": 8,
+    "conditioning_midpoint_monomial_hypothesis": 8,
+    "conditioning_midpoint_zero_hypothesis": 8,
+    "conditioning_sup_disk_norm": 8,
+    "coprimality_is_load_bearing": 1,
+    "dropped_d_minus_1_mutation": 1,
+    "escaping_hardy_monomial": 12,
+    "escaping_hardy_norm": 12,
+    "exact_tail_identity": 120,
+    "finite_window_exactness": 5682,
+    "hardy_coefficient_extraction": 60,
+    "hardy_rational_evaluation": 180,
+    "interior_disk_decay_exact": 12,
+    "interior_disk_supremum_value": 12,
+    "invalid_parameter_control": 4,
+    "label_order_not_depth_order": 1,
+    "literal_vs_closed_power": 16362,
+    "norm_one_escaping_witness": 108,
+    "r_equals_one_nondecay_control": 6,
+    "recentered_original_dilation_affine_offset": 1010,
+    "recentered_pointed_dilation": 1010,
+    "recentered_successor": 101,
+    "root_coefficient_preserved": 120,
+    "root_not_fixed_by_successor": 1,
+    "strict_window_threshold": 108,
+    "successor_root_commutator": 101,
+    "valuation_survival_depth": 2,
+    "weighted_moment_bound": 240
+  },
+  "coefficient_conditioning": {
+    "case_count": 8,
+    "cases": [
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "2",
+        "exponent": 1,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "1/4",
+        "radius": "1/2",
+        "separating_error": "1/6",
+        "separation_gap": "1/6",
+        "sup_disk_distance": "1/2"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "4",
+        "exponent": 2,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "1/8",
+        "radius": "1/2",
+        "separating_error": "1/12",
+        "separation_gap": "1/12",
+        "sup_disk_distance": "1/4"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "32",
+        "exponent": 5,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "1/64",
+        "radius": "1/2",
+        "separating_error": "1/96",
+        "separation_gap": "1/96",
+        "sup_disk_distance": "1/32"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "1048576",
+        "exponent": 20,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "1/2097152",
+        "radius": "1/2",
+        "separating_error": "1/3145728",
+        "separation_gap": "1/3145728",
+        "sup_disk_distance": "1/1048576"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "3/2",
+        "exponent": 1,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "1/3",
+        "radius": "2/3",
+        "separating_error": "2/9",
+        "separation_gap": "2/9",
+        "sup_disk_distance": "2/3"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "9/4",
+        "exponent": 2,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "2/9",
+        "radius": "2/3",
+        "separating_error": "4/27",
+        "separation_gap": "4/27",
+        "sup_disk_distance": "4/9"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "243/32",
+        "exponent": 5,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "16/243",
+        "radius": "2/3",
+        "separating_error": "32/729",
+        "separation_gap": "32/729",
+        "sup_disk_distance": "32/243"
+      },
+      {
+        "H2_norm_squared": 1,
+        "coefficient_error_amplification": "3486784401/1048576",
+        "exponent": 20,
+        "midpoint_observation": "z^N/2",
+        "overlap_error": "524288/3486784401",
+        "radius": "2/3",
+        "separating_error": "1048576/10460353203",
+        "separation_gap": "1048576/10460353203",
+        "sup_disk_distance": "1048576/3486784401"
+      }
+    ],
+    "coefficient_error_amplification": "rho^(-N)",
+    "hypotheses": "0 versus z^N",
+    "observation_interface": "The entire function on |z|<=rho, with worst-case sup-norm error <=epsilon",
+    "scope": "measurement-interface conditioning, not proof/computational lower bound",
+    "uniform_distinguishability": "2*epsilon < rho^N; otherwise the midpoint z^N/2 fits both hypotheses"
+  },
+  "depth_counterexample": [
+    {
+      "history": [
+        8,
+        4,
+        2,
+        1,
+        null
+      ],
+      "iterations_until_rejection": 4,
+      "label": 8,
+      "v2": 3
+    },
+    {
+      "history": [
+        9,
+        null
+      ],
+      "iterations_until_rejection": 1,
+      "label": 9,
+      "v2": 0
+    }
+  ],
+  "escaping_analytic_witnesses": [
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1/4",
+      "input_exponent": 3,
+      "output_exponent": 2,
+      "q": 3,
+      "r": 2,
+      "radius": "1/2",
+      "rounds": 1
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1/16",
+      "input_exponent": 9,
+      "output_exponent": 4,
+      "q": 3,
+      "r": 2,
+      "radius": "1/2",
+      "rounds": 2
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1/256",
+      "input_exponent": 27,
+      "output_exponent": 8,
+      "q": 3,
+      "r": 2,
+      "radius": "1/2",
+      "rounds": 3
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1/65536",
+      "input_exponent": 81,
+      "output_exponent": 16,
+      "q": 3,
+      "r": 2,
+      "radius": "1/2",
+      "rounds": 4
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1/4294967296",
+      "input_exponent": 243,
+      "output_exponent": 32,
+      "q": 3,
+      "r": 2,
+      "radius": "1/2",
+      "rounds": 5
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1/18446744073709551616",
+      "input_exponent": 729,
+      "output_exponent": 64,
+      "q": 3,
+      "r": 2,
+      "radius": "1/2",
+      "rounds": 6
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "9/16",
+      "input_exponent": 3,
+      "output_exponent": 2,
+      "q": 3,
+      "r": 2,
+      "radius": "3/4",
+      "rounds": 1
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "81/256",
+      "input_exponent": 9,
+      "output_exponent": 4,
+      "q": 3,
+      "r": 2,
+      "radius": "3/4",
+      "rounds": 2
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "6561/65536",
+      "input_exponent": 27,
+      "output_exponent": 8,
+      "q": 3,
+      "r": 2,
+      "radius": "3/4",
+      "rounds": 3
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "43046721/4294967296",
+      "input_exponent": 81,
+      "output_exponent": 16,
+      "q": 3,
+      "r": 2,
+      "radius": "3/4",
+      "rounds": 4
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "1853020188851841/18446744073709551616",
+      "input_exponent": 243,
+      "output_exponent": 32,
+      "q": 3,
+      "r": 2,
+      "radius": "3/4",
+      "rounds": 5
+    },
+    {
+      "H2_norm_squared": 1,
+      "disk_supremum": "3433683820292512484657849089281/340282366920938463463374607431768211456",
+      "input_exponent": 729,
+      "output_exponent": 64,
+      "q": 3,
+      "r": 2,
+      "radius": "3/4",
+      "rounds": 6
+    }
+  ],
+  "failures": 0,
+  "finite_scope": {
+    "amplitudes": "exact real rational",
+    "analytic_fixture_radii": [
+      "1/2",
+      "3/4",
+      "-2/3"
+    ],
+    "coprime_pairs": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        8
+      ]
+    ],
+    "finite_window_cases": 391,
+    "initial_labels": [
+      0,
+      100
+    ],
+    "moment_orders": [
+      1,
+      2
+    ],
+    "power_rounds": [
+      0,
+      5
+    ],
+    "window_sampling": "All labels through min(M,40), plus M; universal equality has a separate proof."
+  },
+  "hardy_coefficient_formula": "T^j f(z)=sum_(k>=0)c_(q^j*k) z^(r^j*k)",
+  "moment_bound": "error^2 <= C^2*q^(-2*s*j) when sum_(k>=1) k^(2*s)|x_k|^2 <= C^2",
+  "moment_examples": [
+    {
+      "C_squared": "27136100286/25050025",
+      "bound_squared": "3015122254/225450225",
+      "error_squared": "464762/1002001",
+      "fixture": 1,
+      "q": 3,
+      "r": 2,
+      "rounds": 2,
+      "s": 1
+    }
+  ],
+  "proof_boundary": "Finite controls certify only their declared exact cases. Common fixed space, strong convergence, and universal moment bounds require the displayed proofs. Uniform H2 operator convergence fails. No universal proof-hardness measure is defined or inferred.",
+  "schema": "succ-centered-root-limit-v1",
+  "source_sha256": "7651f97cf01677773ab5c4a639ea329482053495c802c7f143a03dd9ed824b15",
+  "status": "PASS",
+  "strict_threshold_witnesses": [
+    {
+      "input_label": 2,
+      "output_label": 1,
+      "q": 2,
+      "r": 1,
+      "rounds": 1,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 4,
+      "output_label": 1,
+      "q": 2,
+      "r": 1,
+      "rounds": 2,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 8,
+      "output_label": 1,
+      "q": 2,
+      "r": 1,
+      "rounds": 3,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 16,
+      "output_label": 1,
+      "q": 2,
+      "r": 1,
+      "rounds": 4,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 3,
+      "output_label": 2,
+      "q": 3,
+      "r": 2,
+      "rounds": 1,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 9,
+      "output_label": 4,
+      "q": 3,
+      "r": 2,
+      "rounds": 2,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 27,
+      "output_label": 8,
+      "q": 3,
+      "r": 2,
+      "rounds": 3,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 81,
+      "output_label": 16,
+      "q": 3,
+      "r": 2,
+      "rounds": 4,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 5,
+      "output_label": 3,
+      "q": 5,
+      "r": 3,
+      "rounds": 1,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 25,
+      "output_label": 9,
+      "q": 5,
+      "r": 3,
+      "rounds": 2,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 125,
+      "output_label": 27,
+      "q": 5,
+      "r": 3,
+      "rounds": 3,
+      "squared_error_after_root_projection": 1
+    },
+    {
+      "input_label": 625,
+      "output_label": 81,
+      "q": 5,
+      "r": 3,
+      "rounds": 4,
+      "squared_error_after_root_projection": 1
+    }
+  ],
+  "tail_identity": "||(T_(q,r)^j-E0)x||^2=sum_(k>=1)|x_(q^j*k)|^2",
+  "total_checks": 28076
+}

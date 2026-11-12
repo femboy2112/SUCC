@@ -1,5 +1,58 @@
 # Next dependency cut: preserve the additive coupling
 
+## Root, observation, and resource update
+
+The return family has a common fixed reference at source zero after a
+declared recentering, and that vector is constant one in its Hardy
+representation. The new quantitative bridge distinguishes coefficient norm
+from interior analytic observation: finite source support gives an exact
+stage, moment control gives a rate, and recovering coefficient N from fixed
+radius rho has sharp noise amplification `rho^-N`.
+
+A typed channel model now keeps amplitudes, resource grades and coupling
+maps separate. Positive-cost path enumeration is locally finite, but path
+cost does not descend through every arithmetic equivalence. A proposed
+complexity scale should therefore declare its implementation or observation
+interface and prove bounds there before it is used as a hardness claim.
+
+For a new multi-channel carrier, require compatible local roots and check
+their cycle transports. The existence of a common reference does not
+authenticate the remaining dynamics: successor moves this reference, and
+arbitrary dynamics can be adjoined on its orthogonal complement. A useful
+next estimate must control that complement and the target observation,
+not merely reproduce root invariance.
+
+## Return-family update
+
+The 5-path proposal now has an exact arithmetic implementation. Proper
+returns `V_n* S^(n-a) V_a` share one admission period iff `n` is prime;
+their family Gram is the periodic kernel `gcd(n,m-1)-1`. This closes a
+construction question, not the additive-overlap estimate below.
+
+The new controls strengthen the interface requirements. Unit returns for
+every `n<=10` survive the source swap `(11 13)`, while nonunit return-domain
+observations reject it. Even the full domain profile and each strong unit
+limit survive a relative channel phase change that alters a coherent
+intensity from `37/50` to `13/50`. A future path-based estimate must declare
+which mixed products it uses and how authentic source composition fixes
+their relative transports.
+
+Each route is Yoneda-linked once the category is specified. Proper lower
+representables do not generate the whole representable by colimits in the
+chosen forward affine category, as the identity evaluation demonstrates.
+Changing to a category with returns or a coverage is a legitimate new
+construction, but requires new typing and reconstruction proofs. The
+quaternion/pentagon comparison supplies a model of path memory and
+coherence; it does not supply the arithmetic estimate.
+
+**Next discriminating question:** can a source-selected, phase-calibrated
+cross-channel observable yield an interval-overlap bound with an explicit
+error, while rejecting both the domain and relative-phase countermodels?
+The observable must be fixed before reading the target's prime pairs.
+The gcd profile by itself is not such a result. Keep this as a sharply
+stated open edge; do not repeat prime enumeration or the already proved
+projection criterion as if it closed that edge.
+
 ## Borwein and triadic update
 
 The requested walking mechanism is now explicit: a support-triggered

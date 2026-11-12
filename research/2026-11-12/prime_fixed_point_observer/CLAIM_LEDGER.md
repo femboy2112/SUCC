@@ -115,3 +115,74 @@ Exact calibration receipts are `receipts/BORWEIN_REPORT.json`,
 Their counts have shared mathematical content and are not independent votes
 for a universal conjecture. The proof and code reviews retain their common
 model provenance.
+
+## Return families, Yoneda, and motion
+
+[RETURN_PATHS.md](RETURN_PATHS.md) proves RPF-01 through RPF-07. The exact
+return law reduces each channel by `gcd(n,a)`, and the summed family Gram
+has diagonal `gcd(n,m-1)-1`. For `n>=2`, normalized idempotence is equivalent
+to primality. The common initial domain, not the number of available paths,
+is the prime feature. The normalized Gram's fixed space is the congruence
+class one modulo `n` for every `n`, so fixed space alone does not distinguish
+the primes in this construction.
+
+The unit-referenced Fourier realization identifies the domain projections
+with finite character averages. Each forward route has an actual Yoneda
+natural-transformation link. In the specified forward affine category,
+however, smaller representables alone cannot have the whole representable
+as their presheaf colimit: evaluation at the whole object's identity gives
+an empty/nonempty contradiction. This is a scoped no-go, not an obstruction
+for all possible enlarged categories.
+
+Two different countermodels calibrate the observation. The transposition
+of source labels 11 and 13 preserves all unit return words for `n<=10` and
+preserves degree, but changes the `n=5` return strengths at source 11 from
+4 to 1. A relative sign change in one channel preserves the complete `K_5`
+and all strong unit limits, but changes a shared-frame coherent intensity
+from `37/50` to `13/50`. Domain profiles therefore retain less information
+than the full phase-coupled family.
+
+[MOTION_AND_COHERENCE.md](MOTION_AND_COHERENCE.md) supplies MOT-01 through
+MOT-06. Unit quaternions use four constrained coordinates for three rotation
+degrees of freedom. Their covering lift retains path information; it does
+not establish an extra spatial dimension or a universal successive-numeral
+law. Four tensor inputs have five parenthesizations, and a sign-mutated
+associator demonstrates why local natural equivalences can fail global
+coherence. No monoidal structure on the arithmetic family is assumed.
+
+The family construction is an exact gcd reformulation with explicit
+coupling tests. Its analytic complex-amplitude identity is broader than the
+implemented real-rational probe. The source-specific prime-pair estimate
+remains OPEN; no faster primality algorithm, physical realization, or
+academic priority is asserted.
+
+## Common root and typed resource channels
+
+[COMMON_ROOT_AND_LIMITS.md](COMMON_ROOT_AND_LIMITS.md) supplies ROOT-01
+through ROOT-06. The unique common eigenvalue-one space is `C epsilon_0`
+for the declared proper return family; `epsilon_1` is also a common
+eigenvector at eigenvalue zero. Successor moves the root and destroys the
+root character. Recentring original multiplication retains the offset
+`d-1`; pointed dilation is the distinct operation that fixes coordinate0.
+
+The Hardy realization maps the root to the constant function one. Exact
+compact-disk error is `rho^(r^j)/sqrt(1-rho^(2r^j))`; decay over the whole
+unit ball requires r>1 and a fixed radius below one. Coefficient norm error
+remains one at each finite stage. Support and moment bounds provide explicit
+finite bridges. The sharp coefficient conditioning factor `rho^-N` belongs
+to a specified measurement interface, not a universal proof-complexity scale.
+
+[TYPED_CHANNELS.md](TYPED_CHANNELS.md) supplies TYP-01 through TYP-07.
+Independent coordinates can have coupled dynamics; types allow maps without
+determining their coefficients; amplitudes can cancel while resource costs
+remain. A finite positive-cost graph gives a well-defined formal graded
+path sum. The identical maps `S V_2 S` and `S^3 V_2` have different primitive
+costs, refuting additive cost descent under that semantic identification.
+Compatible local roots are a natural transformation and obey loop transport;
+a direct-sum aggregate requires its own normalization to fix the whole root.
+
+The exact countercontrols distinguish fixed points from all eigenvectors,
+finite support from moving inputs, analytic observation from coefficient
+norm, r=1 from r>1, formal series from analytic evaluation, and scalar type
+names from actual coupling maps. These results do not upgrade the open
+source-specific prime-pair estimate.

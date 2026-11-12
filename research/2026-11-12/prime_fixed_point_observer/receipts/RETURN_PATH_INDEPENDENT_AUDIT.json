@@ -1,0 +1,108 @@
+{
+  "check_counts": {
+    "adjoint_reverses_nonzero_column": 17654,
+    "associativity": 2158,
+    "family_diagonal_gcd": 8190,
+    "finite_columns_orthogonal": 2016,
+    "five_has_seven_histories": 1,
+    "history_normal_forms": 10,
+    "holdout_family_diagonal": 56,
+    "hom_cardinality": 55,
+    "iteration_and_norm_one_witness": 720,
+    "left_identity": 127,
+    "literal_vs_reduced_fraction": 262080,
+    "phase_control_individual_norms": 1,
+    "phase_control_intensities": 1,
+    "phase_control_unit_input": 1,
+    "projection_iff_trial_prime": 63,
+    "reject_composite_common_domain": 1,
+    "reject_identity_in_nontrivial_family": 1,
+    "reject_missing_point_offset": 1,
+    "reject_rounded_partial_inverse": 1,
+    "return_reverses_nonzero_adjoint_column": 57422,
+    "right_identity": 127,
+    "root_restriction_not_full": 1,
+    "root_swap_fails_naturality": 2,
+    "same_vertices_distinct_actions": 1,
+    "typed_composition": 622,
+    "unit_anchor": 2016,
+    "word_quotient_braid": 1,
+    "word_quotient_multiplication": 1
+  },
+  "history_counts": {
+    "1": {
+      "affine_maps": 1,
+      "literal_histories": 1
+    },
+    "10": {
+      "affine_maps": 10,
+      "literal_histories": 37
+    },
+    "2": {
+      "affine_maps": 2,
+      "literal_histories": 2
+    },
+    "3": {
+      "affine_maps": 3,
+      "literal_histories": 3
+    },
+    "4": {
+      "affine_maps": 4,
+      "literal_histories": 6
+    },
+    "5": {
+      "affine_maps": 5,
+      "literal_histories": 7
+    },
+    "6": {
+      "affine_maps": 6,
+      "literal_histories": 13
+    },
+    "7": {
+      "affine_maps": 7,
+      "literal_histories": 14
+    },
+    "8": {
+      "affine_maps": 8,
+      "literal_histories": 23
+    },
+    "9": {
+      "affine_maps": 9,
+      "literal_histories": 27
+    }
+  },
+  "holdout_ns": [
+    67,
+    97,
+    101,
+    121,
+    143,
+    169,
+    221,
+    257
+  ],
+  "independence": "No constructor imports. Literal generator words and sparse finite maps are compared with separately derived gcd and category identities. Same-model review is not an external proof witness.",
+  "phase_countermodel": {
+    "altered_coherent_intensity": "13/50",
+    "authentic_coherent_intensity": "37/50",
+    "input": {
+      "11": "4/5",
+      "6": "3/5"
+    },
+    "separate_intensity": "1/2"
+  },
+  "prefix": {
+    "n": [
+      2,
+      64
+    ],
+    "source_labels": [
+      1,
+      130
+    ]
+  },
+  "scope": "Finite implementation and counterexample audit only. Universal results are proved in the accompanying mathematical documents.",
+  "script_sha256": "7478a78af8c900013ecf0beeaaac8f9e8d823b81248f17abb1a91e1c3b0009cc",
+  "status": "PASS",
+  "total_checks": 353330
+}

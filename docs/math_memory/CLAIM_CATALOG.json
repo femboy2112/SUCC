@@ -22157,7 +22157,7 @@
     "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2984
+    "source_documents_found": 2991
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38647,8 +38647,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
-      "sha256": "b4d22b2d6f24cd6c5e7ef608eb79ccaf6d5f22b6a5091d82eaaecc9af75b1114",
-      "size": 9268,
+      "sha256": "f2ad7f2b6a229c6ff8a2f0a4bde3138c9c01129646523aed971019796aff99dc",
+      "size": 11552,
       "title": "Audit findings and dispositions"
     },
     {
@@ -38671,9 +38671,15 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
-      "sha256": "dc80909842f7d052448dabdbb5047002f224b04e3f978c126b0f230b7fed087e",
-      "size": 10024,
+      "sha256": "7e401414a4e9712922e9d3ca1aa4978ce5496885878d52a78bd3e407a75382c5",
+      "size": 14215,
       "title": "Claim ledger — prime observer and cylinder"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/COMMON_ROOT_AND_LIMITS.md",
+      "sha256": "877e01003553f343278c7840417d03b640ec19f898742ca89b7c6e4eaf4c3280",
+      "size": 10924,
+      "title": "A common root, its analytic image, and the finite-observation boundary"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/CYLINDER.md",
@@ -38682,10 +38688,22 @@
       "title": "The twisted arithmetic cylinder and the prime commutator"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/MOTION_AND_COHERENCE.md",
+      "sha256": "37de76f94b390feab7eae577e867af053c5865f051733d8ffa8dd8b5c17be046",
+      "size": 11700,
+      "title": "Position, transformation, and coherence"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/NEXT.md",
-      "sha256": "9aa7e1914604d0db0bd83cf9b1b7eb19a51ea3c9e6ff8c12e70ac55b81c293f3",
-      "size": 7768,
+      "sha256": "851b30fa2cdbb65e48cbb63308dfbe12da295b33f38f534d90ad1255c8cc7818",
+      "size": 10730,
       "title": "Next dependency cut: preserve the additive coupling"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/PATH_FAMILY_CONTRACT.md",
+      "sha256": "aeae83b867d2e6264db6fd08f069c54e1a78563b48f5ec018d349dc8e1143752",
+      "size": 5661,
+      "title": "Return-path family: research contract"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/PRIME_INTERFEROMETER.md",
@@ -38707,14 +38725,20 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
-      "sha256": "c10d84cee4e7888ce40eec86a1f2c102cdf62375b8a1ae406a09446b50ec7048",
-      "size": 9663,
-      "title": "Prime observers, Borwein ratchets, and arithmetic transport"
+      "sha256": "c1ed3b44ec28dfbd5ccc086abfdabc747dd35252501fb818fa47fd59d50493dc",
+      "size": 13707,
+      "title": "Prime observers, return-path families, and arithmetic transport"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/RETURN_PATHS.md",
+      "sha256": "ea065f78509ade9225a689add8c5487079b66ecb17c63d44e5cea4c4167f3f18",
+      "size": 19291,
+      "title": "A number as a family of source-linked return paths"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
-      "sha256": "03dc7f902a74d6ab1eae7c6968d271b12c8ab8d7deff5c6e1c20af71232a1fad",
-      "size": 8658,
+      "sha256": "154931a4bcf4b2ec0baa13e3e600875e101c7e223b7a97e4cf2e82851d7b5243",
+      "size": 11199,
       "title": "Source map and provenance"
     },
     {
@@ -38730,9 +38754,15 @@
       "title": "Three relations, shared frames, and arithmetic transport"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/TYPED_CHANNELS.md",
+      "sha256": "a896400d701e0fea4a748c3f2e488901d79080849d698c839e517c222014d18d",
+      "size": 14953,
+      "title": "Typed channels, amplitudes, and implementation cost"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
-      "sha256": "4a5e39a8014741a3cc474e48e39b6dbec0bbd5aeff6d60589a07ebc1bdf5ec00",
-      "size": 16811,
+      "sha256": "7c7575a09e89b274483b695aa7c7fd4b5fc89efeb68cc5979958b6835c6b989f",
+      "size": 22184,
       "title": "Validation, actual runs, and retained limitations"
     },
     {
@@ -38754,6 +38784,12 @@
       "title": "Carrier probe code audit"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/common_root_audit.md",
+      "sha256": "d541cb0811dbc4632d87d8636ebf00f9b9f9d682b440949bb0e95800eb950c3a",
+      "size": 10237,
+      "title": "Common root, strong limits, and analytic observation: audit"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md",
       "sha256": "4d040707ac143c8261b21101f3974611b5aa6d4546fc91ecf9e065bee029393f",
       "size": 4312,
@@ -38770,6 +38806,12 @@
       "sha256": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
       "size": 8343,
       "title": "Hostile proof audit of THEOREMS.md"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/return_paths_category_audit.md",
+      "sha256": "259f73cafdd1123461da58ddad375ca63e505c5bee89ce05b78ad127ae5bbb98",
+      "size": 12705,
+      "title": "Return paths: independent category and operator audit"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/wave_adversary_audit.md",

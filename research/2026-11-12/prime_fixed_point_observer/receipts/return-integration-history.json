@@ -1,0 +1,23 @@
+{
+  "schema": "succ-return-integration-history-v1",
+  "events": [
+    {
+      "stage": "common-root note creation",
+      "outcome": "patch rejected before writing",
+      "reason": "One added-file line lacked the required patch prefix.",
+      "repair": "The patch was rebuilt by prefixing every content line programmatically and applied successfully."
+    },
+    {
+      "stage": "extension replay wrapper",
+      "outcome": "metadata assertion failed after both probes exited zero",
+      "reason": "The wrapper assumed stdout was the complete report for every probe. The typed-channel probe prints a summary and writes the full report separately.",
+      "repair": "Compare the summary's count, failure field and history count to the written report, and compare the complete report before and after execution. No mathematical implementation changed."
+    },
+    {
+      "stage": "local Markdown link checker",
+      "outcome": "false positive in an unchanged earlier proof",
+      "reason": "A regular expression treated the displayed coefficient extraction [z^{100}w^2](Z^f_{98}) as a Markdown link.",
+      "repair": "Exclude displayed/inline mathematics and code before scanning Markdown links, including both display-math delimiter conventions after a first incomplete parser repair; rerun the checker. The earlier proof and all actual links were unchanged."
+    }
+  ]
+}
