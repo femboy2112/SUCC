@@ -40,7 +40,7 @@ class BoundaryTests(unittest.TestCase):
         readings=filtered_outputs(a,b,c,bank,5)
         v=b
         for t in range(5):
-            self.assertEqual(reconstruct_state_from_filters(c,bank,[x[0] for x in readings[t]]),
+            self.assertEqual(reconstruct_state_from_filters(c,bank,readings[t]),
                              tuple(x[0] for x in v))
             v=mul(a,v)
 
