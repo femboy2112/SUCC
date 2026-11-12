@@ -1,0 +1,26 @@
+[
+  {
+    "category": "metadata_schema_repair",
+    "initial_count": null,
+    "correct_count": 396,
+    "report": "TWIN_CORRELATION_REPORT.json",
+    "cause": "The correlation probe names its count checks, whereas the wrapper initially looked only for exact_checks or total_checks. The complete report and run passed; only count extraction was missing.",
+    "disposition": "Corrected metadata from the already saved exact report; no mathematical code or raw output changed."
+  },
+  {
+    "category": "patch_delivery",
+    "cause": "One executor transport closure and two unmatched patch contexts prevented the proposed document edits from applying.",
+    "disposition": "Fresh reads confirmed the files; the exact scoped edits were then applied successfully. No proof or test failure was hidden."
+  },
+  {
+    "category": "review_clarifications",
+    "changes": [
+      "Present-only comparison and historical frame transport adopted from user steering before final tests.",
+      "Explicit square endomorphism domain and orthonormal basis for finite tensor comparator.",
+      "D>=1 for finite prefix minimum.",
+      "Gluing existence for an actual faithful shared source distinguished from surjectivity for all candidate pairs.",
+      "One-step compression distinguished from functorial/power dilation.",
+      "Removed redundant non-discriminating checks before final probe counts."
+    ]
+  }
+]

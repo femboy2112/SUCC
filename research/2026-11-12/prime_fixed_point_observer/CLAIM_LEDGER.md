@@ -186,3 +186,44 @@ finite support from moving inputs, analytic observation from coefficient
 norm, r=1 from r>1, formal series from analytic evaluation, and scalar type
 names from actual coupling maps. These results do not upgrade the open
 source-specific prime-pair estimate.
+
+## Twin observers and the present meeting frame
+
+[TWIN_OBSERVERS.md](TWIN_OBSERVERS.md) supplies TWIN-01 through TWIN-06.
+The direct comparator sees two current outputs at one event in a common
+calibrated frame/type. Historical records require event-specific transport
+and a separately justified dynamical interpretation. The frame-change
+law leaves the current readout invariant; a nonunitary coordinate change
+also transports its metric. Path dependence is measured by holonomy and
+can remain invisible to a coarse output.
+
+Adjoint propagation gives a cut-independent pairing for any bounded finite
+typed chain. Complete-vector discrepancy is cut independent for unitary
+chains; projection and nonsurjective-isometry controls show why weaker
+hypotheses fail. Each partial return has the explicit unitary block
+extension `[[T,I-P_r],[I-P_q,-T*]]`. Rejected inputs survive in the larger
+carrier. Reusing one environment does not reproduce powers; fresh records
+preserve products in the all-success sector, with all other sectors retained.
+This is compression, not automatic functorial equivalence of the old category.
+
+Full generator intertwiners yield naturality; an invertible comparison with
+one already valid functor transfers its relations. Identical invalid
+assignments, root agreement and a shared source relabeling are calibrated
+negative controls. Current output determines a target exactly iff that
+target is constant on its output fibers. Matching interface outputs gives
+global existence/uniqueness only under the stated fiber conditions.
+
+[TWIN_CORRELATION_AND_READOUT.md](TWIN_CORRELATION_AND_READOUT.md) supplies
+TCR-01 through TCR-07. The finite full-map diagnostic has squared norm
+`||A-B||_F^2/d`; transpose and conjugate transport are explicit. A physical
+comparison can accept unequal states, and a unitary environment interaction
+can suppress a local output's coherence before the meeting. A designated
+readout may be postponed under the constructed record/control protocol;
+an objective physical collapse law remains UNVERIFIED.
+
+Positive-weight infinite twins are exactly separating for bounded maps,
+but tail sign defects have norm2 while their diagnostic tends to zero.
+The finite prefix bound carries an explicit smallest-weight condition
+factor. A weighted opposite-side mirror can be unbounded even for successor.
+These results give local proofs and countermodels; they do not promote
+an infinite physical meeting or a universal arithmetic truth certificate.

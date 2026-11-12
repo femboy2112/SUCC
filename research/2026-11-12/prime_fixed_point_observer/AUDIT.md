@@ -168,3 +168,54 @@ These reviews share model provenance and are not external refereeing.
 Universal claims depend on the written derivations; finite executions
 certify their specified code paths and counterexamples. Actual gate counts
 and retained integration history belong in `VALIDATION.md`.
+
+## Twin observers: present outputs and frame-aware transport
+
+The continuation from `7622063945ab06c72b092371747a1a5bbbf35e3a` began
+by replaying the centered-root and typed-channel canonical witnesses and
+inspecting the October twin-frame and dual-boundary dossiers. Earlier
+Python implementations and native code paths remain unchanged.
+
+The user's refinement became a hard comparator boundary before the final
+probes: only current outputs at a common meeting event are compared.
+History records must carry their event/frame; changing coordinates alone
+does not propagate an old observation to a new event. A model-specific
+evolution rule is a separate hypothesis. The frame probe rejects event,
+unit and uncalibrated-frame mismatches and tests the transported metric.
+
+The [transport audit](reviews/twin_transport_derivation.md) gives both a
+block multiplication proof and a signed-permutation description of the
+larger-carrier arithmetic unitary. It retains the counterexample to
+reusing one environment and distinguishes compression from intertwining
+or a relation-preserving category equivalence. Its all-cut diagnostic is
+an analyst's calibration object, not access to both observer histories.
+
+The [gluing audit](reviews/twin_observer_adversarial_audit.md) distinguishes
+current-output target recovery, global existence, uniqueness, and source
+authentication. A full even-parity countermodel matches the overlap
+while violating a global constraint. One valid representation plus
+invertible generator comparisons suffices to transfer relations; two
+identical invalid assignments do not. A certified common actual source
+already supplies existence for its observed pair; universal pullback
+surjectivity is a stronger guarantee for all candidate pairs.
+
+The [correlation companion](TWIN_CORRELATION_AND_READOUT.md) distinguishes
+transpose from adjoint, conjugate from identical unitary transport,
+literal matrix equality from physical phase equivalence, and a final
+measurement result from an exact equality proof. It derives the current
+local coherence counterexample and the unbounded weighted mirror. The
+root independently replayed its exact Gaussian-rational probe.
+
+Review clarifications made the finite diagnostic's square-map and common
+orthonormal-basis hypotheses explicit, stated `D>=1` in the prefix bound,
+and retained the distinction between coordinate transport and evolution.
+The root checked the telescoping typed defect and its norm bound, the
+gauge/metric law, and the positive-weight infinite separation proof.
+No physical collapse law or source-specific arithmetic remainder was
+promoted. Same-model review is not external peer review.
+
+The complete raw runs, exact finite counts, source hashes and metadata
+repair are recorded in `VALIDATION.md` and the twin receipts. The wrapper
+initially omitted the correlation count because its report uses the key
+`checks`; the complete396-check report had passed and was retained.
+The metadata was corrected from that actual report without changing code.

@@ -1,5 +1,31 @@
 # Next dependency cut: preserve the additive coupling
 
+## Present-output twin update
+
+The two-boundary architecture now has a lossless extension of the current
+partial arithmetic returns and a precisely typed meeting protocol. A
+comparison sees only current outputs at the meeting, after calibration;
+raw histories are not accessible to it. Historical evidence must be
+interpreted with its event, frame, and a separately justified evolution
+or prediction rule. A gauge change is not passage of time.
+
+The new exact frame, cut, gluing and tensor identities close construction
+questions. They do not select a sufficiently informative arithmetic output.
+The next contract should fix a current output `q`, admissible source class
+`S`, target `tau`, calibration/transport, and computation or measurement
+budget, then prove that `q(s)=q(t)` implies `tau(s)=tau(t)` on that class,
+or prove a quantitative approximate version. Requiring the target itself
+as an unexplained output would merely restate the task.
+
+For the existing prime-pair program, choose an output that retains the
+authentic additive source coupling and phase information, and derive the
+remaining interval estimate without inputting the desired prime pairs.
+Reject the old source relabelings, relative phase mutation, hidden-component
+and finite-window controls. If using a weighted infinite twin, include a
+support/tail/precision bound and prove the proposed opposite transport is
+bounded on its declared domain. Reversible storage by itself does not make
+its information available in the permitted current readout.
+
 ## Root, observation, and resource update
 
 The return family has a common fixed reference at source zero after a

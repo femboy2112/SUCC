@@ -22157,7 +22157,7 @@
     "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2991
+    "source_documents_found": 2996
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38647,8 +38647,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
-      "sha256": "f2ad7f2b6a229c6ff8a2f0a4bde3138c9c01129646523aed971019796aff99dc",
-      "size": 11552,
+      "sha256": "d4354c0723ee6358da809b6d6192076ae01a04e1be493cb6522672e195709323",
+      "size": 14575,
       "title": "Audit findings and dispositions"
     },
     {
@@ -38671,8 +38671,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
-      "sha256": "7e401414a4e9712922e9d3ca1aa4978ce5496885878d52a78bd3e407a75382c5",
-      "size": 14215,
+      "sha256": "3bdf8347cb5ef13b285af4f3c1e02a68199e3f3be371dea020228053be6d7b6d",
+      "size": 16703,
       "title": "Claim ledger — prime observer and cylinder"
     },
     {
@@ -38695,8 +38695,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/NEXT.md",
-      "sha256": "851b30fa2cdbb65e48cbb63308dfbe12da295b33f38f534d90ad1255c8cc7818",
-      "size": 10730,
+      "sha256": "8c9bb8211eac3beb57ecf6c732de44f144d7c72c676f0eef9b308c1b8beaa87b",
+      "size": 12254,
       "title": "Next dependency cut: preserve the additive coupling"
     },
     {
@@ -38725,8 +38725,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
-      "sha256": "c1ed3b44ec28dfbd5ccc086abfdabc747dd35252501fb818fa47fd59d50493dc",
-      "size": 13707,
+      "sha256": "1d98c5c8630949994a41b152ac501ee61823f38e1071d059937a3bfa9588a5a9",
+      "size": 14894,
       "title": "Prime observers, return-path families, and arithmetic transport"
     },
     {
@@ -38737,8 +38737,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
-      "sha256": "154931a4bcf4b2ec0baa13e3e600875e101c7e223b7a97e4cf2e82851d7b5243",
-      "size": 11199,
+      "sha256": "5b4eb8cfa991a02e22ca2173a1826a11fe034ea22e21de9190fe972173454e5c",
+      "size": 14491,
       "title": "Source map and provenance"
     },
     {
@@ -38754,6 +38754,24 @@
       "title": "Three relations, shared frames, and arithmetic transport"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/TWIN_CORRELATION_AND_READOUT.md",
+      "sha256": "5989b3cfe6c598af02582d5b13d1871c738dcb786e00bef22cb4e1ee570021bf",
+      "size": 14440,
+      "title": "Twin correlation, calibrated current outputs, and deferred readout"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/TWIN_OBSERVERS.md",
+      "sha256": "91ce377306d246f60f31e1ba0412f8697e92ce8741db5603ca1ba0f54e6607b2",
+      "size": 23441,
+      "title": "Twin observers: present outputs, transported frames, and a lossless carrier"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/TWIN_OBSERVER_CONTRACT.md",
+      "sha256": "cb8d502bfdc1c2ff9a016779a4b618eed2e0330d4402fcdf84729d6836e8e1af",
+      "size": 7880,
+      "title": "Twin observers: registered construction and falsifiers"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/TYPED_CHANNELS.md",
       "sha256": "a896400d701e0fea4a748c3f2e488901d79080849d698c839e517c222014d18d",
       "size": 14953,
@@ -38761,8 +38779,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
-      "sha256": "7c7575a09e89b274483b695aa7c7fd4b5fc89efeb68cc5979958b6835c6b989f",
-      "size": 22184,
+      "sha256": "f80d5ea63fa62e8590ff3300a4a297f99f6d83f77df09a8cb4f40e109b62fa83",
+      "size": 27506,
       "title": "Validation, actual runs, and retained limitations"
     },
     {
@@ -38812,6 +38830,18 @@
       "sha256": "259f73cafdd1123461da58ddad375ca63e505c5bee89ce05b78ad127ae5bbb98",
       "size": 12705,
       "title": "Return paths: independent category and operator audit"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/twin_observer_adversarial_audit.md",
+      "sha256": "6bb19c25b9e73c0b4e9eff39eeb3a6a03cec6a68ad28fb80306524c12ef7bfba",
+      "size": 14118,
+      "title": "Twin observers: current-output agreement, gluing, and source fidelity"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/twin_transport_derivation.md",
+      "sha256": "e3bf6b0fe5d1995b4db8fa5cfbf244221464cca5f9ccbe7cd6faabd58691da4f",
+      "size": 12769,
+      "title": "Two-sided transport and retained arithmetic branches"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/wave_adversary_audit.md",

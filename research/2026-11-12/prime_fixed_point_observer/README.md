@@ -58,6 +58,23 @@ formal transfer-matrix inverse; equal affine operations need not have equal
 implementation costs. Compatible local roots form a natural family and
 must pass their loop holonomy tests.
 
+[TWIN_OBSERVERS.md](TWIN_OBSERVERS.md) develops the two-boundary continuation
+under the user's present-only comparison rule. Current outputs are calibrated
+at one meeting event; historical records need explicit frame transport and
+a separately justified evolution model. A unitary chain preserves its
+complete-state discrepancy at every cut. Each arithmetic partial return has
+an explicit larger-carrier unitary extension retaining its rejected branch,
+with fresh-record and quotient-relation controls.
+[TWIN_CORRELATION_AND_READOUT.md](TWIN_CORRELATION_AND_READOUT.md) supplies
+the exact finite twin-map diagnostic, conjugate transport, a deferred
+readout construction, and local-decoherence/measurement counterexamples.
+Weighted infinite twins separate bounded maps but require a quantified
+observation regime; an opposite-side mirror can be unbounded. Agreement
+of current outputs determines only the targets those outputs separate.
+The [contract](TWIN_OBSERVER_CONTRACT.md), [transport derivation](reviews/twin_transport_derivation.md),
+and [gluing audit](reviews/twin_observer_adversarial_audit.md) record the
+proof obligations, frames, source fidelity and retained countermodels.
+
 **Goldbach, pi normality, and RH remain OPEN.** The new results are elementary
 constructions, exact local proofs, finite certificates, and explicit hostile
 models. There is no priority, asymptotic speedup, physical realization, or

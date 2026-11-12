@@ -175,3 +175,39 @@ The preceding Prime Interferometer conversation is a design source. Its
 package was reconstructed here with fresh executable receipts; no unavailable
 old run is certified or retroactively claimed. Important convention repairs
 (prime2 endpoint, screened interior upper bound, shared center) are explicit.
+
+## Twin observers: frames, dilation, and current outputs
+
+This continuation starts from `7622063945ab06c72b092371747a1a5bbbf35e3a`.
+The October twin-frame and dual-boundary notes were inspected before the
+new construction. They already establish conditional semantic agreement,
+potential/flux gluing, distinct observation joins, and nontrivial chart
+transitions. They remain unchanged. The new realization specializes
+classical dilation to the current arithmetic return family and explicitly
+restricts comparisons to present outputs in calibrated frames.
+
+The root freshly opened the following primary/author-hosted sources:
+
+| Source | Inspected part | Role in this continuation |
+| --- | --- | --- |
+| Richard Kenyon, [Spanning forests and the vector bundle Laplacian](https://arxiv.org/pdf/1001.4028), 2011 | Section3.1, PDF pp4–5 | Graph fibers, inverse transports, gauge changes and monodromy conventions |
+| P. L. Robinson, [Julia operators and Halmos dilations](https://arxiv.org/pdf/1803.09329), 2018 | Theorem2, PDF p2 | Standard one-step unitary block extension; distinguished from a power dilation |
+| Samson Abramsky and Bob Coecke, [A categorical semantics of quantum protocols](https://arxiv.org/pdf/quant-ph/0402130), 2004 manuscript, retrieved v5 of2007 | Sections3 and7, especially the finite-dimensional Hilbert example | Compact duality and the declared finite-dimensional quantum setting |
+| Emily Riehl, [Category Theory in Context](https://emilyriehl.github.io/files/context.pdf), author-hosted edition | Definition1.4.1 and Section3.1 | Naturality and pullback definitions; elementary proofs are supplied locally |
+| [Stacks Project, Definition6.7.1](https://stacks.math.columbia.edu/tag/006T) | Official sheaf axiom | Existence and uniqueness are extra gluing properties, not mere overlap equality |
+| John Watrous, [The Theory of Quantum Information, Chapter1](https://jhwatrous.github.io/TQI.1.pdf) | Printed p24, equations1.131–1.132 | Vectorization norm and transpose convention |
+| Watrous, [Chapter2](https://jhwatrous.github.io/TQI.2.pdf) | Corollary2.27, printed p89; Theorem2.42, printed p109 | Finite isometric channel and measurement representations |
+| Watrous, [Chapter3](https://jhwatrous.github.io/TQI.3.pdf) | Theorem3.4, printed p128 | Physical state-discrimination boundary |
+| [IBM Quantum, Multiple systems and reduced states](https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/density-matrices/multiple-systems) | Reduced states and partial trace | Current local readout from a globally correlated state |
+
+The cut and frame identities, arithmetic signed-permutation realization,
+weighted-prefix estimate and countermodels have self-contained proofs.
+The sources locate classical antecedents; no priority or physical
+realization is inferred. The finite map probe and gluing probe have
+separate implementations. All three delegated proof bearings nevertheless
+share the same model family, and the source carrier is shared provenance.
+Agreement among them is not independent empirical confirmation.
+
+No source PDF or copyrighted source chapter is redistributed. A failed
+lookup of an older Watrous domain was replaced by the working author-hosted
+chapter URLs above; no claim relies on the failed URL.

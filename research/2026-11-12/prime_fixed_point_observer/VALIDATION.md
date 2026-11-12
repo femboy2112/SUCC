@@ -345,3 +345,86 @@ Source preservation, local links, catalog, graph, formatting and artifact
 hashes are recorded in the final integration receipts and validation
 manifest. These same-model audits are not external peer review. Hosted CI
 is distinct from the completed local checks.
+
+## Twin observers, present frames, and retained branches
+
+This continuation starts from published commit
+`7622063945ab06c72b092371747a1a5bbbf35e3a`. The root replayed the existing
+centered-root and typed-channel canonical probes before building on them.
+`twin-baseline-replay.json` binds the unchanged sources and prior reports.
+The October twin-frame and dual-boundary notes were inspected and preserved.
+
+The user refined the protocol while work was active: only present outputs
+at one meeting event may be compared. Earlier observations require their
+event/frame transport and a separate evolution or prediction rule. That
+refinement entered the contract, proofs and controls before final testing.
+
+| Check | Actual completed result | Receipt |
+| --- | --- | --- |
+| Typed transport and arithmetic extension | 122,975 exact checks PASS | `TWIN_TRANSPORT_REPORT.json`, `twin-transport.log` |
+| Present outputs, frame/metric transport and seam | 1,219 exact checks PASS | `TWIN_SEAM_REPORT.json`, `twin-seam.log` |
+| Separate gluing and naturality implementation | 7,315 exact checks PASS | `TWIN_GLUING_REPORT.json`, `twin-gluing.log` |
+| Gaussian-rational tensor/readout implementation | 396 exact checks PASS | `TWIN_CORRELATION_REPORT.json`, `twin-correlation.log` |
+| Complete dossier suite | 99 methods PASS in12.785s, including13 new methods | `twin-focused-suite.log`, `twin-checks.json` |
+| Required native suite | 13,047 tests PASS in1404.833s; wrapper exit0 in1411.864s | `twin-native-suite.log`, `twin-native-check.json` |
+| Provenance, observer foundations, ordinal report | All PASS | Named twin logs and `twin-checks.json` |
+
+Receipt filenames in this section are relative to `receipts/`. The root
+actually ran every listed check. Related check counts are kept separate;
+they are not independent votes for a universal theorem. The native suite
+ran once for this continuation and its final summary, after nested fixture
+summaries, was used. Earlier native sources/tests were unchanged throughout.
+New research code is isolated and checked by the separate dossier suite
+and probes. Hosted CI is distinct from these local completed runs.
+
+The transport oracle covers96 rational typed chains,99 reduced return pairs,
+134 basis labels including104729, and four fresh-flag schedules. Sparse
+infinite-operator actions have no artificial finite-matrix boundary. Its
+controls distinguish adjoints from inverses, unitary from nonsurjective
+isometric transport, principal compression from a unitary extension, and
+fresh records from reusing one environment.
+
+The frame probe compares only two declared present outputs. It rejects
+mismatched events, frames, units and dimensions, and a raw history list.
+It checks gauge-covariant current output, transported nonunitary metrics,
+path holonomy, coarse-output blindspots, typed defect telescoping, and the
+weighted finite-prefix bound. Rational frame fixtures use denominators7,
+11 and13 and finite paths through length6; unitary paths extend through8.
+Universal frame and norm statements rest on the written algebraic proofs.
+
+The gluing oracle exhausts all255 nonempty restrictions of a three-bit
+source and all4,096 binary-report/target triples on a four-state source.
+Exactly99 restrictions glue every compatible pair;1,880 target triples
+factor through the present joint output. Its naturality controls cover
+2,040 paths through length7. It retains global parity, hidden-coordinate,
+shared-invalid-relation and source-interpretation countermodels.
+
+The tensor probe uses exact Gaussian rationals, including holdout dimensions
+7 and9. It distinguishes transpose, adjoint and conjugate transport; computes
+Bell readout probabilities, deferred readout identities, environment overlap,
+the17/25 acceptance counterexample, and finite/infinite weighted boundaries.
+The full physical-collapse claim remains UNVERIFIED; this is a mathematical
+protocol, not a reported quantum experiment.
+
+### Integration history and proof scope
+
+`twin-integration-history.json` preserves the metadata repair: the wrapper
+initially left the correlation count null because that report uses the key
+`checks`. The actual full396-check report and process had passed. The count
+was extracted from the saved report without changing its source or rerunning
+mathematics. Patch delivery/context retries occurred before the corresponding
+document edits were applied and are recorded separately from mathematical
+validation. Redundant non-discriminating development checks were removed
+before the final396 count. No failed mathematical check was concealed.
+
+The independent decompositions are same-model audits, not external review.
+They sharpened the square-map/common-orthonormal-basis domain, the D>=1
+prefix condition, existence for a certified actual source pair versus
+surjectivity for all pairs, and the nonfunctoriality of individual dilations.
+The written proofs establish the universal statements within those domains.
+No finite count supplies an infinite meeting or an arithmetic remainder bound.
+
+The final integration receipt records source preservation, local links,
+catalog, typed graph and staged formatting. The updated manifest hashes
+all retained artifacts except itself. All27 preceding dossier Python files
+and the native source/test/provenance/dependency paths remain unchanged.

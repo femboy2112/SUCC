@@ -1,0 +1,101 @@
+[
+  {
+    "name": "twin-transport",
+    "command": [
+      "python",
+      "research/2026-11-12/prime_fixed_point_observer/twin_transport_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.027,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-transport.log",
+    "report": "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_TRANSPORT_REPORT.json",
+    "exact_checks": 122975
+  },
+  {
+    "name": "twin-seam",
+    "command": [
+      "python",
+      "research/2026-11-12/prime_fixed_point_observer/twin_seam_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.31,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-seam.log",
+    "report": "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_SEAM_REPORT.json",
+    "exact_checks": 1219
+  },
+  {
+    "name": "twin-gluing",
+    "command": [
+      "python",
+      "research/2026-11-12/prime_fixed_point_observer/twin_gluing_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.195,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-gluing.log",
+    "report": "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_GLUING_REPORT.json",
+    "exact_checks": 7315
+  },
+  {
+    "name": "twin-correlation",
+    "command": [
+      "python",
+      "research/2026-11-12/prime_fixed_point_observer/twin_correlation_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 4.704,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-correlation.log",
+    "report": "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_CORRELATION_REPORT.json",
+    "exact_checks": 396
+  },
+  {
+    "name": "twin-focused-suite",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/2026-11-12/prime_fixed_point_observer",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 13.367,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-focused-suite.log",
+    "final_unittest_summary": [
+      "99",
+      "12.785"
+    ]
+  },
+  {
+    "name": "twin-provenance",
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.046,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-provenance.log"
+  },
+  {
+    "name": "twin-observer-foundations",
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.328,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-observer-foundations.log"
+  },
+  {
+    "name": "twin-ordinal-succ",
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.422,
+    "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-ordinal-succ.log"
+  }
+]
