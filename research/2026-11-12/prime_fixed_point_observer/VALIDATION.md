@@ -169,3 +169,95 @@ PYTHONPATH=. python -m unittest discover \
 Only the second, short command is the new dossier suite. The native suite is
 much larger. The task publishes a draft research branch; no merge, tag, release,
 main-branch modification, or solved-conjecture status is asserted.
+
+## Borwein ratchet and triadic transport continuation
+
+This continuation starts from published commit
+`e855200a9a447933ef93b3ee0947d14d00ef42de`. New mathematical executables,
+tests, proofs, audits and a figure remain isolated in the dossier. The exact
+general convolution queries reuse the October Borwein CDF without changing
+that dependency. Existing factorial-hologram results are attributed rather
+than presented as new discoveries.
+
+| Check | Actual result | Receipt |
+|---|---|---|
+| Main exact Borwein probe | 4,285 assertions, zero failures | `receipts/BORWEIN_REPORT.json`, `receipts/borwein-probe-check.json` |
+| Separate geometric audit | 382 assertions, zero failures | `receipts/BORWEIN_INDEPENDENT_AUDIT.json` |
+| Complete dossier suite | 74 methods PASS in 13.380s, including 13 new Borwein methods | `receipts/borwein-focused-suite.log`, `receipts/borwein-focused-check.json` |
+| Required full native suite | 13,047 tests PASS in 1348.871s; wrapper exit0, 1356.879s | `receipts/borwein-native-suite.log`, `receipts/borwein-native-check.json` |
+| Provenance | PASS: 72 imported items | `receipts/borwein-provenance.log` |
+| Observer foundations and ordinal probes | Both PASS | `receipts/borwein-checks.json` and named logs |
+| Earlier executable preservation | All 13 earlier dossier Python hashes unchanged; native source/tests/provenance/dependencies unchanged | `receipts/borwein-source-preservation.json` |
+| Explanatory figure | Regenerated and visually inspected after layout adjustment | `figures/borwein_ratchet.svg`, `plot_borwein_ratchet.py` |
+
+The Borwein probe uses exact rational geometry to check shifted and scaled
+window queries, sign-quadrant geometry for the positive-part CDF, independent
+prime-power marking for degrees at labels 1..1000, and exact source-braid
+checks. It records the first three odd-width releases at 7,56,418 and retains
+exact formula parameters even when the resulting rational has very large
+numerator and denominator. Decimal logarithms are explicitly approximate
+display diagnostics; none decides an equality, release or sign.
+
+The constant-half-width observer visits every label 2..90 in its recorded
+180-stage prefix and reports precisely the source primes. This checks the
+same controller on a different width schedule. It is a Python arithmetic
+run, not a new measured beta-reduction trace. Infinite productive traversal
+and the stochastic rectification theorem are supported by written proofs.
+
+The independent audit calibrates rational polygon clipping against full,
+empty, half and quarter boxes. Its geometric oracle does not call the
+inherited inclusion-exclusion CDF; that routine is a comparator. The tests
+still share the classical uniform-convolution model, so they are not
+independent evidence for a source-specific number-theory conjecture.
+
+### Repairs and retained history
+
+The proof review corrected a unit-projector coefficient and made the full
+carrier explicit in the multiplier-independence argument. The code review
+found public summaries with impossible width products that could produce
+purported probabilities 50 and 25/12. Exact necessary product bounds,
+singleton consistency and a probability guard now reject these cases. The
+regressions also retain valid extremal summaries. Reviews contain the
+original witnesses and their successful replays. The 74-method suite above
+was run after these changes.
+
+An integration helper initially used a nonexistent manifest key `artifacts`
+instead of `artifact_sha256`. It failed before producing a preservation
+receipt; the schema was then read and the comparison rerun successfully.
+This nonmathematical helper failure is recorded in
+`receipts/borwein-integration-history.json`.
+
+Finalization also repaired a metadata parser that initially selected a nested
+four-test fixture summary instead of the final 13,047-test native summary,
+and removed one trailing blank line reported by the formatting gate. Both
+receipts are preserved in that integration history. The full native log was
+unchanged and passed; these were reporting and formatting repairs.
+
+The native suite was run once in this continuation, with the checkout root
+explicitly available through `PYTHONPATH`. Its full output and final summary
+were observed before publication. All earlier full-run records, including
+the historical import-path failure and incomplete retry, remain intact.
+Hosted CI results are separate from these local receipts.
+
+### Triadic source and phase replay
+
+The root executed the finalized `triadic_probe.py` from `/tmp`, confirming
+its explicit repository-root import bootstrap. The run passed and is
+preserved in `receipts/TRIADIC_REPORT.json` and `receipts/triadic-check.json`.
+It includes symbolic determinant and gauge identities, all 64 fourth-root
+phase triples (16 flat and 48 nonflat), all 64 pure-gauge configurations,
+16 composed-chord controls, and exact agreement between the boundary and
+vertex transport conventions. The edge Gram determinant is checked as the
+squared holonomy defect.
+
+The source portion checks 587 prime edges through label 500, 12,000 exact
+anchor-word/formula cases, both orders of A2/A3 composition on 500 labels,
+and 24 explicit norm-error-one witnesses. It reproduces the preserved local
+unit loops of the transposition (5 7), its 14/10 braid discrepancy, and its
+19/13 mixed-composition discrepancy. The unique global fixed spaces and
+strong limits are proved in the note; finite basis checks alone would not
+establish them. These distinct case counts are not combined into a purported
+number of independent witnesses.
+
+Final catalog, graph and formatting results are retained in the named
+`borwein-integration-checks.json` receipts and the validation manifest.

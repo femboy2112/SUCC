@@ -1,5 +1,34 @@
 # Next dependency cut: preserve the additive coupling
 
+## Borwein and triadic update
+
+The requested walking mechanism is now explicit: a support-triggered
+Borwein clock releases all teeth, retains winding, and advances the ordinary
+successor source. A separate fixed window filters the supplied arithmetic
+degree. An actual positive-part pawl has a proved almost-sure progress
+criterion under independence. None of these operations estimates a two-prime
+interval remainder by itself.
+
+The proposed third role now has an exact test: compare two routes and their
+common transported reference. A phase-decorated triangle has determinant
+`H-1`; an arithmetic SUCC/dilation loop can anchor the unit. These comparisons
+are stronger than ignoring the joint embedding, but they still require an
+authentic source and an independently justified quantitative observation.
+Prime-only multiplicative wiggles have no odd cycle, and alternating the
+mixed anchors `A_2,A_3` simply gives `A_6`. A local anchor is not a substitute
+for the full pointed braid.
+
+**Next discriminating contract:** predeclare a growing finite source window,
+a genuinely mixed route observable, its phase/reference transport, and a
+bound on its measurement or truncation error. Derive an interval-overlap
+estimate without reading the target's actual prime pairs. Test the same
+construction on the modulo 30 counterfeit and the small finite relabelings
+that retain the unit and selected local loops. A useful success must invoke
+a relation those sources violate and show how it controls the remainder.
+Passing a support tooth or displaying a nonzero holonomy is not that bound.
+
+The prior exact target and its unresolved estimate remain below.
+
 ## Current frontier after the prime-wave extension
 
 `PRIME_WAVES.md` now supplies the requested individual prime resonances and

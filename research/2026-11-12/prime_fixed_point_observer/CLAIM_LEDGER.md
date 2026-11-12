@@ -82,3 +82,36 @@ correlation with no interval survivor (N16,Q30). Common-reference phase
 recovery and sufficiently fine finite sampling provide an explicit repair
 for the intensity-loss observation. Exact finite receipts are separately
 recorded as `WAVE_REPORT.json` and `WAVE_INDEPENDENT_AUDIT.json`.
+
+## Borwein ratchet and triadic transport
+
+[BORWEIN_RATCHET.md](BORWEIN_RATCHET.md) supplies BRT-01 through BRT-09:
+the normalized shifted window, strict all-tooth releases, automatic shallow
+first-crossing certificates, productive source traversal with its winding,
+independent positive-part rectification, and the exact arithmetic-degree
+filter `P_1+P_2/2`. Its rational `23/24` lower bound refutes interpreting the
+growing odd-width sinc product itself as a prime projector. The all-target
+prime-pair improvement remains OPEN.
+
+The public summary constructors initially admitted impossible products and
+could return purported probabilities greater than one. Exact feasible-product
+checks and probability guards repair those interfaces; the witnesses and
+their replays are retained in the adversarial audit and regression tests.
+The optional-unit correction is half a unit projector on the canonical
+extended carrier, not a whole projector. These repairs are recorded rather
+than erased from the audit history.
+
+[TRIADIC_TRANSPORT.md](TRIADIC_TRANSPORT.md) supplies the TRI ledger. Its
+minimum-three claim is explicitly for simple loop-free undirected graphs,
+not all categories or dynamical systems. The twisted incidence matrix gives
+an exact phase-closure condition; a pure vertex gauge has trivial loop
+transport. Prime-step multiplicative graphs are bipartite. The mixed source
+anchor exists for every integer dilation d>=2, and its strong convergence
+has no global norm gap. The retained source counterfeit prevents a local
+anchor from being promoted to global arithmetic authenticity.
+
+Exact calibration receipts are `receipts/BORWEIN_REPORT.json`,
+`receipts/BORWEIN_INDEPENDENT_AUDIT.json`, and `receipts/TRIADIC_REPORT.json`.
+Their counts have shared mathematical content and are not independent votes
+for a universal conjecture. The proof and code reviews retain their common
+model provenance.

@@ -22157,7 +22157,7 @@
     "claim_supplements_scanned": 208,
     "registered_claim_rows": 1921,
     "registered_namespace_count": 179,
-    "source_documents_found": 2980
+    "source_documents_found": 2984
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -38647,9 +38647,21 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md",
-      "sha256": "df42004b5a9b6c6d93798689e7910629a7c988ad1675f91f3645d6aa146325d1",
-      "size": 7396,
+      "sha256": "b4d22b2d6f24cd6c5e7ef608eb79ccaf6d5f22b6a5091d82eaaecc9af75b1114",
+      "size": 9268,
       "title": "Audit findings and dispositions"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/BORWEIN_DERIVATION_AUDIT.md",
+      "sha256": "a30159d15a9b1b75ede5167467b3370b278cc9e334d6474ff88c94e4384f2abe",
+      "size": 27612,
+      "title": "Borwein cylinder ratchet: derivation and boundary audit"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/BORWEIN_RATCHET.md",
+      "sha256": "6b7870250e6e9c5ee3a019531191f9cad99e3101b57ca5657b71516866a40caa",
+      "size": 25958,
+      "title": "A Borwein ratchet on the arithmetic cylinder"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/CARRIER_COUPLING.md",
@@ -38659,8 +38671,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md",
-      "sha256": "30f12ea2f6abaabccda441241c2092c819c7c4bf6593a8ebb03318754ec9f22a",
-      "size": 8118,
+      "sha256": "dc80909842f7d052448dabdbb5047002f224b04e3f978c126b0f230b7fed087e",
+      "size": 10024,
       "title": "Claim ledger — prime observer and cylinder"
     },
     {
@@ -38671,8 +38683,8 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/NEXT.md",
-      "sha256": "5fbadc1f3c37e27efe0552ae749484156b796847087b04b0a9fa1a73056a6319",
-      "size": 6119,
+      "sha256": "9aa7e1914604d0db0bd83cf9b1b7eb19a51ea3c9e6ff8c12e70ac55b81c293f3",
+      "size": 7768,
       "title": "Next dependency cut: preserve the additive coupling"
     },
     {
@@ -38695,14 +38707,14 @@
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/README.md",
-      "sha256": "7af4c50a5fec3b8b9cb544a6a3986872def6c4e48bc264af41ce6f3fbf58a34e",
-      "size": 7019,
-      "title": "Prime observers, arithmetic carriers, and wave interference"
+      "sha256": "c10d84cee4e7888ce40eec86a1f2c102cdf62375b8a1ae406a09446b50ec7048",
+      "size": 9663,
+      "title": "Prime observers, Borwein ratchets, and arithmetic transport"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md",
-      "sha256": "b4e4e6284d45d75e068cf7eb7174fe8879fe3d6ab1d35e46c4a12564a0f67fec",
-      "size": 6313,
+      "sha256": "03dc7f902a74d6ab1eae7c6968d271b12c8ab8d7deff5c6e1c20af71232a1fad",
+      "size": 8658,
       "title": "Source map and provenance"
     },
     {
@@ -38712,9 +38724,15 @@
       "title": "Prime fixed points, productive observers, and the additive compatibility gap"
     },
     {
+      "path": "research/2026-11-12/prime_fixed_point_observer/TRIADIC_TRANSPORT.md",
+      "sha256": "a46d40bc13837c5107a32633a2ed3732fa116f0ab1f7baaa55a1708b8da43406",
+      "size": 12073,
+      "title": "Three relations, shared frames, and arithmetic transport"
+    },
+    {
       "path": "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md",
-      "sha256": "87e9d7e527307e76df393617d013772f77ee5e2e0afb209bf461be741ae0362f",
-      "size": 11092,
+      "sha256": "4a5e39a8014741a3cc474e48e39b6dbec0bbd5aeff6d60589a07ebc1bdf5ec00",
+      "size": 16811,
       "title": "Validation, actual runs, and retained limitations"
     },
     {
@@ -38722,6 +38740,12 @@
       "sha256": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
       "size": 5280,
       "title": "Focused runtime audit — prime fixed-point observer"
+    },
+    {
+      "path": "research/2026-11-12/prime_fixed_point_observer/reviews/borwein_adversary_audit.md",
+      "sha256": "c48141467b249e81e35ea3ca55b1776bcb7fef5905c1b2ce9383d1600866740b",
+      "size": 24886,
+      "title": "Adversarial audit: Borwein filters and an arithmetic ratchet"
     },
     {
       "path": "research/2026-11-12/prime_fixed_point_observer/reviews/carrier_code_audit.md",

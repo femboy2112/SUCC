@@ -85,6 +85,44 @@ no historical novelty or literature-completeness assertion.
 
 ## Provenance and independence limits
 
+### Borwein and triadic continuation
+
+This continuation begins at `e855200a9a447933ef93b3ee0947d14d00ef42de`.
+The earlier October Borwein and factorial-hologram dossiers were inspected
+before constructing a new clock. Their production files remain unchanged:
+
+| Existing dependency | Exact originating commit inspected | Role |
+|---|---|---|
+| `observational_succ/borwein_prime_clock.py` | `932a2f2d4b8dd24690bcabf642ea0f14b841bedc` | Exact finite uniform-sum CDF and earlier fixed-threshold results |
+| `observational_succ/factorial_borwein_hologram.py` | `938319e10db142310afa3bb257457e58eb3691dc` | Stable cardinal carrier and existing factorial prime signature |
+| `observational_succ/hologram_transport_calculus.py` | `2ede8b26ad8c5e707d7e6a10f8089609afb8b655` | Prior source-clock naturality and lifted arithmetic maps |
+
+External primary material freshly opened by the root agent:
+
+- Borwein and Borwein, *Some Remarkable Properties of Sinc and Related
+  Integrals* (2001), [author paper](https://gwern.net/doc/math/humor/2001-borwein.pdf),
+  Theorem 1 and the convolution development.
+- Majumdar and Trizac, *When random walkers help solving intriguing
+  integrals* (2019), [author manuscript](https://arxiv.org/pdf/1906.04545),
+  especially the declared independent uniform-step characteristic functions.
+- Gilbert Strang, *ZoomNotes for Linear Algebra* (2021),
+  [MIT-hosted text](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/4d876a9159e32543eb0d73b4d4382f4c_MIT18_06S10ZoomNotes.pdf),
+  section 3.6 on graph incidence matrices, loop currents and nullspaces.
+- Richard Kenyon, *Spanning forests and the vector bundle Laplacian*,
+  *Annals of Probability* 39 (2011),
+  [author manuscript](https://arxiv.org/pdf/1001.4028), for connection and
+  monodromy conventions. The elementary triangle determinant is derived
+  directly in this dossier.
+
+These sources establish classical antecedents, not the novelty or physical
+interpretation of this specific controller. Their full papers are not
+redistributed. The additional exact polygon clipping oracle differs in
+algorithm from the inherited inclusion-exclusion CDF; both still share the
+same mathematical uniform-convolution model. New matrix identities and
+integer controls are checked exactly, without numerical phase tolerances.
+
+### Shared provenance remains explicit
+
 The construction, adversary, and translation bearings are same-model
 decompositions, not blind external witnesses. Their arithmetic checks use
 different algorithms where stated: square-root factor pairs, full-range

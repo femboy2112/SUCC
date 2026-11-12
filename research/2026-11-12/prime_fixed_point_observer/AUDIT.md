@@ -98,3 +98,35 @@ the **61-test dossier suite**. Exact logs and historical failures remain in
 `VALIDATION.md` and `receipts/`. This closes the previous local full-run
 certification gap. It does not change the draft status, mathematical proof
 scope, or the unresolved source-derived prime-pair estimate.
+# Borwein and triadic continuation audit
+
+The continuation from `e855200a9a447933ef93b3ee0947d14d00ef42de` has separate
+construction, proof, geometric and adversarial views. The proof audit is
+[BORWEIN_DERIVATION_AUDIT.md](BORWEIN_DERIVATION_AUDIT.md); the implementation
+and countermodel review is
+[borwein_adversary_audit.md](reviews/borwein_adversary_audit.md). These are
+same-model reviews with different calculations, not external peer review.
+
+Concrete corrections retained in this round:
+
+- The canonical degree filter gives the unit eigenvalue one half. Adding
+  half a unit projector fixes it; adding a whole projector would give 3/2.
+- The multiplier-independence argument explicitly uses the carrier that
+  includes the unit. The prime-filter norm statement separately uses n>=2.
+- Empty-bank Fourier half-values and closed-window point-mass values are
+  distinct executable interfaces. Winding uses the anchored address n-1.
+- Public summary constructors initially accepted impossible products and
+  returned purported probabilities 50 and 25/12. Exact feasible-product
+  bounds and a probability guard now reject both witnesses; valid extremal
+  summaries still pass independent CDF comparisons.
+
+The root replay records 4,285 new exact Borwein checks and 382 separate
+geometric audit checks. The complete dossier test suite contains 74 passing
+methods, including 13 Borwein methods after the repair. Additional subagent
+comparisons remain scoped in their review rather than added to those counts.
+Infinite claims are justified by the displayed proofs, including the
+first-crossing simplex, rectification Laplace product and maximal inequality.
+
+The third-relation extension has its own exact matrix and source-map probe.
+Its simple-graph assumptions and the difference between a local unit anchor
+and the full source braid remain part of the claim boundary.
