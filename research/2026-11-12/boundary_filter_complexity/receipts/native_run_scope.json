@@ -1,0 +1,8 @@
+{
+  "native_run_start_module_sha256": "e6f0f4dd3607fccc1a867eaac2f51977e2b1d5f6c9fc59d919d9db0ad802d88a",
+  "final_module_sha256": "f3fc14ecd54c2b51beb7860b09ff01efda12f22964364bec4d37f97cb56a484d",
+  "native_run_start_test_sha256": "4d2e173d4f2d7fc5cd566b363cbca5818921859619722ca9527344206650b332",
+  "final_test_sha256": "093d7706a2d1a3b17a4ef0956ed7fa3b946af6a216345565a7598acf3076be60",
+  "delta": "Only the finite implementation guard was tightened to include lookahead in actual horizon; a regression assertion was added within an existing test. Final focused suite replays that change.",
+  "hash_provenance": "Initial versions reconstructed exactly from the recorded guard-only patch; final versions hashed directly."
+}
