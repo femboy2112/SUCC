@@ -33,8 +33,8 @@ numerics, an instance and not evidence for an asymptotic claim. **OPEN** = not k
   `Cν = (1/16) Σ_(a=0)^(15) (B_a)_* ν` with `B_a(y) = (a+y)/16`, `Q = C T_*`,
   `G(ν) = W_1(ν, Cν)`, `D(ν) = W_1(ν, Qν)`. For a shell, `T_* ν_B` is the shifted segment
   `B^(-1) Σ_(n=B+1)^(2B) δ_(y_n)`.
-- `Fix16 = {j/15 : 0 ≤ j ≤ 15} ⊂ [0,1]`: the *sixteen* points that shell measures can approach on
-  the interval. The circle point `0` has two lifts, `0` (digits `000…`) and `1` (digits `FFF…`).
+- `Fix16 = {j/15 : 0 ≤ j ≤ 15} ⊂ [0,1]`: the *sixteen* lifts to `[0,1]` of the fifteen fixed points. The
+  circle point `0` has the two lifts `0` (digits `000…`) and `1` (digits `FFF…`).
   Forgetting the lift `1` is exactly the error in the provisional threshold `4/225` (LMF-04 (e)).
 - Change densities on the shell `[B, 2B)`: `c_B = #{n : d_n ≠ d_(n+1)}/B` (ZSC-02),
   `c^(k)_B = #{n : d_n ≠ d_(n+k)}/B`, and the binary density
@@ -45,7 +45,7 @@ Two elementary inequalities are used throughout: `8s² ≤ 1 - cos 2πs ≤ 2π�
 
 ---
 
-## LMF-01 — the limit set of shell measures (PROVED LOCAL; (e) uses one IMPORT)
+## LMF-01 — the limit set of shell measures (PROVED LOCAL; (e) uses two classical IMPORTs, Weyl and Wall)
 
 **Theorem.** For every real `ξ`:
 
@@ -73,7 +73,7 @@ of points at distance `≥ δ` from both, producing a limit point outside `A ∪
 `Lip(f)·max_(n≥B) ‖u_n - 16^n ξ‖ → 0`, and Lipschitz functions are dense. Dyadic `q`:
 `16^n q ∈ Z` for large `n`. `16ξ`: its shell measure is `ν_B` shifted by one step, at total
 variation distance `≤ 2/B`. Sources: `U_n + T_n = 16^n ξ` with `T_n → 0` for the zero-seeded
-proper source, and a gauge transformation adds `a(n) = ∫_0^1 z^(8n) h(z) dz → 0` (ZSC-06 (a)).
+proper source, and a gauge transformation adds `a(n) = ∫_0^1 z^(8n) h(z) dz → 0` (ZSC-06 (b)).
 (e) By Weyl's criterion together with Wall's theorem (IMPORT, classical), normality is
 `N^(-1) Σ_(n<N) e(h y_n) → 0` for every `h ≠ 0`. Prefix ⟹ shell: `B W_B(h) = 2B μ̂_(2B)(h) - B μ̂_B(h)`.
 Shell ⟹ prefix: with `N_0 = N`, `N_(i+1) = ⌊N_i/2⌋`, the interval `[1, N)` is the disjoint union
@@ -212,10 +212,11 @@ Therefore, with `R0 :⟺ limsup_B Re W_B(1; ξ) < 1`:
 
 ```text
 R0   ⟺   δ_0 ∉ M(ξ)   ⟺   liminf_B c^bin_B > 0
-     ⟺   ξ has no sparse alternating signed-binary expansion along any sequence of shells.
+     ⟺   there is no sequence of windows [4B_i, 8B_i) on which the nonzero δ_m of (iv) have density → 0.
 ```
 
-(The windows `[4B, 8B)` and the general binary shells `[M, 2M)` differ by at most 3 changes, so
+(Every binary shell `[M, 2M)` with `4B ≤ M ≤ 4B+3` contains the window `[4B, 8B)` except at most 3
+positions, and every window is a binary shell, so
 "positive lower shell density of binary digit changes" may be read either way.) R0 is the real part
 of the canonical Main XXIV target at `h = 1`; by (g), `R0 ⟺ limsup_A Re B_A(1) < 1`.
 
@@ -269,8 +270,9 @@ happens for at most `L(c^(k)_B B + L - 1)` values of `n`. Faces: LMF-02 (f), (c)
 `E_k = {y : d_0(y) = d_k(y)}`, a union of hexadecimal cylinders, neither open nor closed. Three
 things must be checked before writing `ν_B(E_k) → μ(E_k)`: (1) one must work on the **circle**; on
 `[0,1)` the map `T` is discontinuous and limits can charge the missing endpoint `1` (digits
-`FFF…`), and on `[0,1]` the point `0 ≡ 1` is a boundary point of `E_k` carrying the atom of
-`δ_0`, the most important measure in the question; on the circle `0` is interior to `E_k`.
+`FFF…`), and on `[0,1]` the second lift `1` of the point `0` is a boundary point of `E_k ⊂ [0,1)` and is
+charged by limits such as `δ_1`, the interval form of `δ_0`, the most important measure in the
+question; on the circle `0` is interior to `E_k`.
 (2) The remaining boundary points are nonzero `16^(k+1)`-adic rationals; a general limit of
 measures may charge them, and only **invariance** (Lemma B (1): they are not periodic) gives
 `μ(∂E_k) = 0`. (3) `μ(E_k) = 1` is not "support in `Per_k`" without invariance again
@@ -305,7 +307,7 @@ entropy `log 16` of `T` (IMPORT, classical). ∎
 | (CH) ⇏ (CH_2) | `0F0F0F…` (`ξ = 1/17`) | `c_B = 1`, `c^(2)_B = 0` |
 | (CH_k) ⇏ (CH_k') for `k' ∤ k` | a point of exact period `k'` | `c^(k')_B = 0`; `c^(k)_B > 0` because `k' ∤ k` |
 | (AM) ⇏ (E) | superblock `s`: for `k = 1 … ⌊log_2 s⌋ + 1` the word `0^(k-1)1` repeated `⌈s/2^k⌉` times | each `(CH_k)` holds with `liminf c^(k)_B ≥ 1/(3·2^(k+1))`; every `μ ∈ M` is purely atomic on periodic points, hence of entropy zero (IMPORT: entropy is affine under ergodic decomposition) |
-| (E) ⇏ (N) | hexadecimal digits `d_n ∈ {0,1}` equal to the bits of the binary Champernowne number | the only shell limit is the Bernoulli(1/2,1/2) measure on digits `{0,1}`, entropy `log 2` (IMPORT: Champernowne) |
+| (E) ⇏ (N) | hexadecimal digits `d_n ∈ {0,1}` equal to the bits of the binary Champernowne number | the only shell limit is the Bernoulli(1/2,1/2) measure on digits `{0,1}`, entropy `log 2` (IMPORT: the binary Champernowne word is normal in base 2) |
 
 *Proofs of the two rows that need one.* Runs `1^k 2^k`: superblock `k` has length `2k` and starts
 at `k(k-1)`, so a shell meets `O(√B)` runs and contains whole superblocks except `O(√B)`
@@ -391,8 +393,9 @@ Example: a shell with `W_1(ν_B, λ) ≤ 1/120` has `c_B ≥ 1/8 - 1/B`.
 `d_n = … = d_(n+k-1)` has `‖15 y_n‖ ≤ 15·16^(-k)` (ZSC-02, locality lemma (1)); the other positions
 of the shell number at most `(k-1)(c_B B + k - 1)` (ZSC-02 (b), proof) and have `‖15 y_n‖ ≤ 1/2`.
 So `(1/15)·mean ‖15 y_n‖ ≤ (k-1)(c_B + (k-1)/B)/30 + 16^(-k)`. With `16^(-k) ≤ ε/2` the displayed
-bound on `c_B` follows. Normality: LMF-01 (e), (d), and `W_1`-convergence to `λ` is weak
-convergence. ∎
+bound on `c_B` follows. Normality: LMF-01 (e), LMF-04 (d); `W_1`-convergence to `λ` is weak convergence on
+`[0,1]`, and weak-* convergence to `λ` on the circle gives weak convergence on `[0,1]` because
+`λ({0}) = 0`. ∎
 
 **(e) Sharpness, and the two provisional constants.**
 
@@ -412,7 +415,7 @@ convergence. ∎
    `min {W_1(ν, λ) : ν on the fifteen points j/15 < 1}` (exact, `faces_core.min_w1_fix15`); it is
    the wrong set, because shell measures on `[0,1)` approach the lift `1`. Explicit receipt: the
    shell `B = 30k` consisting of the single superblock `0^k 1^(2k) … E^(2k) F^k` followed by
-   `F`'s has `c_B = 1/(2k)` and `W_1(ν_B, λ) ≤ 1/60 + 16/(450k) < 4/225` for every `k ≥ 33`
+   a finite run of `F`'s and then a digit `≠ F` has `c_B = 1/(2k)` and `W_1(ν_B, λ) ≤ 1/60 + 16/(450k) < 4/225` for every `k ≥ 33`
    (`k = 40`: `c_B = 1/80`, `W_1 = 0.016611…`). The provisional `D`-threshold `1/60` is correct,
    by coincidence of two different constants (`(15/16)(4/225) = 1/60` was the provisional
    derivation; the true reason is item 1).
@@ -420,7 +423,7 @@ convergence. ∎
    `W_1(ν_B, λ) → 1/4`, `D(ν_B) → 1/4` (limit `(δ_0 + δ_1)/2` on the interval). For R0 and for R1
    the threshold is the same: `inf W_1(·, λ)` over `{aδ_0 + (1-a)δ_1}` is `1/4` (at `a = 1/2`),
    over single fixed-point masses it is `113/450 > 1/4` (at `7/15`, `8/15`), and `G ≥ 1/4` on
-   both families with equality at `(δ_0 + δ_1)/2`, `δ_(7/15)`, `δ_(8/15)`.
+   both families, with equality for `aδ_0 + (1-a)δ_1`, `a ∈ [7/15, 8/15]`, and at `δ_(7/15)`, `δ_(8/15)`.
 5. *The elementary bound.* `|ν̂(h)| ≤ 2πh·W_1(ν, λ)` (the function `e(h·)` is `2πh`-Lipschitz) is
    stronger than (c) when `W_1` is small and gives a saving only below `1/(2πh) < 1/(4h)`. The
    content of this theorem is the sharp constant, not a new mechanism.
@@ -454,12 +457,14 @@ inequality: the tangent of `ψ` at `v_0 = a/30` gives `ψ(v) ≥ (a/30)v - a²/1
 (interior) and width `a/30` (endpoints), flat inside them apart from the jumps. ∎
 
 **Lemma (jump).** If a probability measure `ρ` on `[0,1]` gives mass `≥ J` to an arc of the circle
-of length `ℓ ≤ J` (an interval, or `[0,t] ∪ [1-t,1]` with `ℓ = 2t`), then
+of length `ℓ ≤ J` (an interval, or `[0,t_1] ∪ [1-t_2,1]` with `ℓ = t_1 + t_2`), then
 `W_1(ρ, λ) ≥ (J - ℓ)²/4`.
 
 *Proof.* Interval `[p, p+ℓ]`, `f = F_ρ(p^-)`: the cost is at least
-`((p - f)^+)²/2 + ((f + J - p - ℓ)^+)²/2 ≥ (J - ℓ)²/4`. Wrapped arc with masses `a, b`, `a + b ≥ J`:
-on `(t, 1-t)`, `F_ρ ∈ [a, 1-b]`, an interval of length `≤ 1 - J`. ∎
+`((p - f)^+)²/2 + ((f + J - p - ℓ)^+)²/2 ≥ (J - ℓ)²/4`. Wrapped arc with masses `a` on `[0,t_1]`, `b` on `[1-t_2,1]`,
+`a + b ≥ J`, `a ≤ 1-b`: `F_ρ ≥ a` on `(t_1, a)` and `F_ρ ≤ 1-b` on `(1-b, 1-t_2)`, so the cost is
+`≥ ((a-t_1)^+)²/2 + ((b-t_2)^+)²/2 ≥ (J-ℓ)²/4`. ∎ (Repaired after the audit: the first version
+treated only the symmetric wrap and stopped before the conclusion; (d) needs the asymmetric one.)
 
 **Theorem (prefix thresholds).** For every real `ξ`, `B ≥ 1`, `k ≥ 2`, `N ≥ 2B`, with `β` the
 fraction of `n ∈ [B, 2B)` for which `d_n, …, d_(n+k-1)` are not all equal
@@ -527,8 +532,10 @@ digits):
 | 6007 | 0.003690 | 0.003614 | 0.934243 | 0.499750 | 0.007252 | 0.002199 |
 
 All four shells are below `1/60` in both units (on the calibration shells `B = 64, 128` they are
-not: `W_1 ≈ 0.026, 0.025`, the size expected of any 64- or 128-point sample). These are the
-values a generic point shows; a finite set of shells says nothing about `limsup`, and the same
+not: `W_1 ≈ 0.026, 0.025`, the size expected of any 64- or 128-point sample). For
+comparison, `B` independent uniform points give `E W_1 ≈ (π/8)√(2/(πB))` (about `0.0055–0.0040`
+on these shells), and single shells below `1/60` also occur for points failing (CH) (`S*` of
+LMF-04 (e)); this is not evidence. A finite set of shells says nothing about `limsup`, and the same
 holds for the two pseudo-random control strings. Predictions RP-1…RP-4 of the preregistration
 were met; mutation controls RM-1…RM-3 behaved as preregistered.
 
@@ -537,9 +544,11 @@ were met; mutation controls RM-1…RM-3 behaved as preregistered.
 ## Reading
 
 1. **What the rungs are.** A rung of the signed ladder is the statement that the limit set
-   `M(ξ)` of shell measures avoids a closed face of the simplex of `×16`-invariant measures:
-   `{δ_0}` for R0, the fifteen vertices `δ_(j/15)` for R1, the simplex `Δ(Fix)` for R2 = (CH),
-   `Δ(Per_k)` for `(CH_k)`, all finitely supported invariant measures for savings at every mode;
+   `M(ξ)` of shell measures avoids a set of `×16`-invariant measures: the closed face `{δ_0}` (R0);
+   the union of the fifteen closed faces `{δ_(j/15)}` (R1; not itself a face); the closed face
+   `Δ(Fix)` (R2 = (CH)); the closed face `Δ(Per_k)` (`(CH_k)`); and, for savings at every mode, the
+   face of finitely supported invariant measures, which is the increasing union of the `Δ(Per_k)`
+   and is not closed (it is weak-* dense);
    normality is `M = {λ}` (LMF-02, LMF-03). The lowest rung R0 — the real part of the canonical
    target at `h = 1` — is equivalent to a positive lower shell density of binary digit changes
    (LMF-03 (a)), and it already costs a restricted exponent `< 1` at the denominators `2^m`
@@ -564,9 +573,9 @@ were met; mutation controls RM-1…RM-3 behaved as preregistered.
 | ID | Statement | Status |
 |---|---|---|
 | LMF-01 | `M(ξ)` nonempty, compact, connected, invariant; depends only on `ξ` mod dyadic rationals and is gauge-invariant; normal ⟺ `M = {λ}` | PROVED LOCAL (Weyl–Wall IMPORT in (e)) |
-| LMF-02 | invariant `μ` with `\|μ̂(h)\| = 1` ⟺ `μ ∈ Δ(K_(h,j))`, value `e(j/15)`; savings ⟺ excluded faces; Basel sandwich with constants `1/2, 2`; `A·F_h` one-directional, converse false | PROVED LOCAL |
+| LMF-02 | invariant `μ` with `\|μ̂(h)\| = 1` ⟺ `μ ∈ Δ(K_(h,j))`, value `e(j/15)`; a real saving ⟺ one excluded face, a modulus saving ⟺ the excluded union `⋃_j Δ(K_(h,j))`; Basel sandwich with constants `1/2, 2`; `A·F_h` one-directional, converse false | PROVED LOCAL |
 | LMF-03 | R0 ⟺ binary change density, constants `1/53` and (ii), cost `(1-c)/(1+c)` at `2^m`; R1; `(CH_k)` ⟺ real saving at `16^k - 1`, constants `8·16^(-2k-2)` and `(b_k)`; (AM), (E), (N); chain with strictness witnesses | PROVED LOCAL (three IMPORTs in (d), (e)) |
-| LMF-04 | `W_1(ν, λ)`, `G(ν)` `≥ (1/h)(1/4 - ∫‖hy - θ‖dν)`; shell thresholds `1/4` (R1), `1/60` ((CH)), `1/(4N_k)` (`(CH_k)`), all sharp for shells; `4/225` refuted | PROVED LOCAL |
-| LMF-05 | Fix-mass lemma `a²/60`; jump lemma; prefix thresholds `1/240`, `1/16` for `W_1` and `1/256`, `15/256` for `D_N`; `1/120` refuted; orbit sharpness not determined | PROVED LOCAL |
+| LMF-04 | `W_1(ν,λ) ≥ (1/h)(1/4 - ∫‖hy - θ‖dν)` for all `h ≥ 1`; the same bound for `G(ν)` when `16 ∤ h` (false for `h = 16`); shell thresholds `1/4` (R1), `1/60` ((CH)), `1/(4N_k)` (`(CH_k)`); sharp for shells at `1/4` and `1/60`; for `k ≥ 2`, `1/(4N_k)` is the minimum over measures on the lifts of `Per_k` and shell sharpness is not proved here; `4/225` refuted as a threshold | PROVED LOCAL |
+| LMF-05 | Fix-mass lemma `a²/60`; jump lemma; prefix thresholds `1/240`, `1/16` for `W_1` and `1/256`, `15/256` for `D_N`; provisional extremal value `1/120` refuted (the threshold `1/120` is unproved, not disproved); orbit sharpness not determined | PROVED LOCAL |
 | LMF-06 | controls on the correct side; π holdout values | exact checks / OBSERVED |
 | — | R0, R1, (CH), `(CH_k)`, (AM), (E), normality for π | **OPEN** |

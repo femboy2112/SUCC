@@ -66,9 +66,11 @@ def f9(x) -> str:
 
 # ---------------------------------------------------------------- shell data
 class Shell:
-    """Exact data of the shell [B, 2B) of a digit string (points truncated to 40 hex digits; the
-    truncated points form a genuine finite orbit segment of the truncated point, so every
-    inequality proved for all measures / all points applies to them exactly)."""
+    """Exact data of the shell [B, 2B) of a digit string (points truncated to 40 hex digits).
+    The truncated points are NOT an exact orbit segment (T(trunc y_n) = trunc y_(n+1) only when
+    d_(n+40) = 0); the inequalities checked here are those proved for arbitrary measures and for
+    the shifted list actually used, and the computed D differs from the true one by at most
+    16^(-40) (audit note, 2026-11-12)."""
 
     def __init__(self, d: list[int], B: int):
         self.d, self.B = d, B
