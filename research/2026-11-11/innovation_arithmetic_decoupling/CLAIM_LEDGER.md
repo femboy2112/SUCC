@@ -15,7 +15,7 @@ source-selected signed estimate, parity balance or RH; all remain OPEN.**
 | IAD-05 | `A = C·conj(Z)·e(-hτ)`; `|Cov(A,Z) - E[C]| ≤ |E[Z]| + (π/32)|h|B^(-2)`; filtration inequality (5.2) | PROVED LOCAL | PR-1.5: any seed/partition violating (5.2) |
 | IAD-06 | Transport `|c_d - c^U_d| ≤ (π/32)|h|B^(-2)`; sparse vdC (6.1); band of ratio `< 2` pays at most `1/2` **by this route** | PROVED LOCAL | PR-1.6 |
 | IAD-06g | Sufficient mesoscopic gate: `limsup Re c^U_(jℓ_0) ≤ 0 ∀j ⟹ W_B(h) → 0` | PROVED CONDITIONAL; premise **OPEN** | Premise implies WALL-16 with `v* ≤ 1` (IAD-08b) |
-| IAD-07 | For every odd prime `q`, modulus `M` coprime to `q`, horizon `K`: rational seed equal to seed 0 at all places `≠ q` (mod `Z_p`, and mod `M`), completed orbit `≤ ½·16^(n-K-2)` | PROVED LOCAL (generalizes PPP-08) | PR-1.7: exact place-by-place comparison |
+| IAD-07 | For every odd prime `q`, modulus `M` coprime to `q`, horizon `K`: rational seed equal to seed 0 at all finite places `p ≠ q` (mod `Z_p`, and mod `M`), completed orbit `≤ ½·16^(n-K-2)` | PROVED LOCAL (generalizes PPP-08) | PR-1.7: exact place-by-place comparison |
 | IAD-07c | No **finite-horizon** census-incomplete transfer (data at finite places `p ≠ q`) can give a nontrivial bound on a shell, for `W_B` or for a lag `1 ≤ d ≤ B-1`, at any `η > 0` (horizon `K = 2B + t`; **repaired after the second audit**, which blocked the `K = 2B` form for lags near `B` and the empty lags `d ≥ B`). Asymptotic transfers are addressed by ZSC-06(f)5 | PROVED LOCAL | Exhibit a transfer in the class with a valid conclusion |
 | IAD-08 | Fixed saving `η` on all large shells `⟹ ‖16^B x‖ ≥ cB16^(-B)` for the Weyl sum and for a lag `ℓ(B) ≤ (1-θ)B`; for a general lag the factor is `B-ℓ` (**regimes declared after the second audit**). Sharpened by ZSC-01 | PROVED LOCAL | PR-1.8 synthetic near-dyadic points |
 | IAD-08k | Refereed record `v_16(π) ≤ 6.1033`; no base-restricted improvement known | CLASSICAL IMPORT + literature search (absence not provable) | A published restricted-denominator bound would recalibrate |
@@ -42,7 +42,7 @@ source-selected signed estimate, parity balance or RH; all remain OPEN.**
 | NORM | A source-derived bound on `R`, on any `c^U_d`, or on any `W_B(h)`; π base-16 normality | **OPEN** | Requires an all-large-shell arithmetic estimate |
 
 **TLICA separation.** κ (contact) is high for the exact identities and the smooth innovation
-estimate. φ (toolkit-relative indistinguishability): the four changes tabulated at the end of
+estimate. φ (toolkit-relative indistinguishability): the changes tabulated at the end of
 OBSTRUCTIONS are indistinguishable to every method tried. σ (source correctness): the forcing is
 imported unchanged; the literature calibration is a same-day search, labelled. ρ (commitment
 coupling): the author expected the prescribed schedule to be the stronger target and a

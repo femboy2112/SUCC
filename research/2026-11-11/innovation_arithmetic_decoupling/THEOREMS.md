@@ -539,8 +539,9 @@ The factor is `B-ℓ`, the number of terms of the lag sum, **not** `B`. By lag r
   this is weaker than the Weyl form by a factor `B`, and the hypothesis itself then concerns a sum
   of `k` terms.
 
-The first displayed inequality is the sharper one in every regime: it is the exponent-2 bound at
-the denominators `q = 16^(B-1)(16^ℓ-1)`, with nothing lost to the factor `16^ℓ`.
+The first displayed inequality is the sharper one in every regime: at the denominators
+`q = 16^(B-1)(16^ℓ-1)` it reads `|π - a/q| ≥ c(B-ℓ)16^(2ℓ-1) q^(-2)`, which is stronger than an
+exponent-2 bound whenever `ℓ ≥ 1`.
 
 (c) *(Basel weights.)* The same with `B_B(h)` and constant `15η/(4π|h|)`, since `p_n ≤ 2/B`.
 
@@ -569,12 +570,12 @@ says `v_16(π) ≤ 1` and, more sharply, `‖16^B x‖ ≥ c·B·16^(-B)` with *
   irrationality exponent — `μ(π) = 2` included — can supply this.
 
 > **Any** all-large-shell estimate of the kind sought — for one mode `h`, with a *fixed* saving
-> `η` (not even `η → 1`), for the Weyl sum, or for a single lag correlation at a lag
-> `ℓ(B) ≤ (1-θ)B` with fixed `θ > 0` — implies `‖16^B x‖ ≥ c·B·16^(-B)` for all large `B`
+> `η` (not even `η → 1`), for the Weyl sum, or for a single lag correlation, in the normalized form
+> `|c_ℓ(B)| ≤ (1-η)(B-ℓ)/B`, at a lag `ℓ(B) ≤ (1-θ)B` with fixed `θ > 0` — implies `‖16^B x‖ ≥ c·B·16^(-B)` for all large `B`
 > (`c` depends on `h`, `η`, `θ`): `v_16(π) ≤ 1` without ε-loss, where the refereed record is
 > `6.1033`. For nearly full-shell lags the conclusion is `c·(B-ℓ)·16^(-B)` only. Outcome A of the
 > mission is therefore at least as hard as that Diophantine theorem for π at the denominators
-> `16^B`; ZSC-01 shows it is in fact strictly harder.
+> `16^B`; ZSC-01 shows that it implies the strictly stronger `v_16(π) ≤ (2-η)/(2+η) < 1`.
 
 This is a necessary condition only. It is satisfied by non-normal numbers: for `x' = 1/17` one
 has `‖16^B x'‖ = 1/17` for every `B` while `W_B(h; x') = cos(2πh/17) + O(1/B)` (exactly the

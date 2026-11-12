@@ -17,13 +17,15 @@ its ladder corrected by ZSC-01.
 
 - It is **sufficient** for the primary target of the programme at one specified mode:
   `(CH) ⟹ limsup_B |W_B(1)| < 1` and `limsup_B |D_(B,1)| < 1`, with the explicit saving
-  `c/65793` (ZSC-02(c)). No other statement known to this dossier that is weaker than normality
-  implies a fixed saving.
-- It is **equivalent** to a real saving at the single mode `h = 15` (ZSC-02(a,b)); it is the
-  weakest statistical statement in the signed family.
-- It is a statement about escapes of the `×16` orbit from sixteen fixed points, in the carry
+  `c/65793` (ZSC-02(c)). It is the only *density* statement in this dossier shown to imply a
+  saving at mode 1.
+- It is **equivalent** to a real saving at the single mode `h = 15` (ZSC-02(a,b)). It is not the
+  weakest signed statement: a fixed saving at mode 1 is strictly weaker (witness `ξ_(1/2)` of
+  ZSC-01 Remark 4: `c_B → 0` on a sequence of shells, yet `limsup |W_B(1)| < 1`); the rungs below
+  (CH) are identified in `research/2026-11-12/frontier_rungs/LIMIT_FACES.md` (R0, R1).
+- It is a statement about escapes of the `×16` orbit from its fifteen fixed points `j/15`, in the carry
   language of the rational source, with no tail and no seam hypothesis.
-- It is far below normality (`c_B → 15/16`), and far above what is known: the best unconditional
+- It is far below normality (`c_B → 15/16`), and far above what is known: the best explicit all-`N`
   count is `≥ log_42 N - 2` changes among the first `N` digits (ZSC-04, from Mahler's bound), and
   for irrational algebraic numbers `≫ (log N)^(3/2)(log log N)^(-1/2)` (Bugeaud–Evertse).
 
@@ -49,9 +51,13 @@ the restricted denominators themselves.
 2. L2 for π: a digit change in every shell `[B, 2B)`.
 3. A restricted exponent `< 1` at denominators `16^m` or `15·16^m` for any nonzero element of `V`.
 
-An argument for any of these must fail for the null source `A_0`, for the hostile source `g_H`
-(zero seed, positive `O(n^(-2))` forcing, complete census, completed point 2), for the seeded
-carriers W1–W3 and for the Shallit point; one that goes through for any of them is wrong.
+An argument for (CH) must fail for the null source `A_0`, for the hostile source `g_H` (zero
+seed, positive `O(n^(-2))` forcing, complete census, completed point 2), for W1, W2 and for the
+Shallit point. An argument for L2 must fail for `A_0`, `g_H` and W2. An argument for target 3
+must fail for `A_0`, `g_H`, W2 and the Shallit point. W3 satisfies all three targets and is a
+positive control; W1 satisfies L2 and target 3; the Shallit point satisfies L2. (Corrected
+2026-11-12 after the re-audit: the earlier sentence demanded failure on all of W1–W3 and the
+Shallit point for every target, which is false.)
 
 **What would refute or redirect it.**
 

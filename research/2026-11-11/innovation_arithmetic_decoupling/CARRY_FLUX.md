@@ -32,7 +32,8 @@ A real `ξ` is the completed point of the **seeded carrier** with the same forci
 - *Change set:* `Ch(ξ) = {n ≥ 0 : d_n(ξ) ≠ d_(n+1)(ξ)}`, shell density `c_B = #(Ch ∩ [B, 2B))/B`.
 - *Carry-change set (zero seed):* `Ch^κ = {n ≥ 0 : κ_(n+1) ≠ κ_(n+2)}`, shell density `c^κ_B`.
 - *Base-16 exponent* (Amou–Bugeaud normalization): `v_16(ξ) = limsup_m -log_16 ‖16^m ξ‖ / m`.
-  Always `v_16 ≤ μ - 1`, and `μ ≥ 2` for every irrational (Dirichlet).
+  For irrational `ξ`, `v_16 ≤ μ - 1`, and `μ ≥ 2` (Dirichlet). (For a 16-adic rational `v_16 = ∞`
+  while `μ = 1`.)
 
 ---
 
@@ -93,8 +94,10 @@ Equivalently: `liminf_B (1 - Re W_B(h; ξ)) ≤ 2(1 - v)/(1 + v)` with `v = min(
    bound `2(1-λ)/(1+λ)`. (The zero fraction of a shell is maximal, `2λ/(1+λ)`, at
    `B = (1+λ)2^(k-1)`.) So within bounds of the shape `liminf saving ≤ C(1-v)/(1+v)` the constant
    `C = 2` cannot be lowered below `1.978`.
-5. *Lag correlations.* (1.1)–(1.2) apply verbatim to `Θξ` for an integer multiplier `Θ`, hence to
-   the lag-`ℓ` correlation (`Θ = 16^ℓ - 1`, IAD-08(b)) for fixed `ℓ`. For lags growing with `B`
+5. *Lag correlations.* (1.1)–(1.2) apply verbatim to `Θξ` for an integer multiplier `Θ`, hence,
+   with `η` replaced by `η - ℓ/B` (the correlation has `B - ℓ` terms and differs from
+   `W_B(h; Θξ)` by at most `ℓ/B`), to the lag-`ℓ` correlation (`Θ = 16^ℓ - 1`, IAD-08(b)) for
+   fixed `ℓ`. For lags growing with `B`
    only the endpoint statement of IAD-08(b), with its `B - ℓ` factor, is claimed.
 
 ## ZSC-02 — the first statistical rung is the density of digit changes (PROVED LOCAL)
@@ -147,7 +150,8 @@ a run of length `L+1`. ∎
   > positions `n ∈ [B, 2B)` have `d_n ≠ d_(n+1)` in the hexadecimal expansion of π.
 
   (CH) is implied by normality (then `c_B → 15/16`) and is far weaker: it is a one-parameter
-  statement about escapes of the `×16` orbit from the sixteen fixed points `j/15`.
+  statement about escapes of the `×16` orbit from its fifteen fixed points `j/15`, `0 ≤ j ≤ 14`
+  (named by the sixteen constant digit words; `0^ω` and `F^ω` name the same point of the circle).
 - *(d)*: (CH) forces the restricted exponent at the denominators `15·16^m` below
   `(1-c)/(1+c) < 1`, consistently with ZSC-01.
 - The converse of (c) fails (two long constant runs of different digits per shell give a saving
@@ -238,8 +242,12 @@ and would improve to `1 + ε` under `μ(π) = 2`.
 | L4 | `W_B(h) → 0` for every `h ≠ 0` | **OPEN** (normality) |
 
 For comparison (CLASSICAL IMPORT, seen): for irrational *algebraic* numbers the best known count
-of digit changes is `≫ (log N)^(3/2)(log log N)^(-1/2)` (Bugeaud–Evertse 2008, Thm 3.1). L2 and
-L3 are open there as well.
+of digit changes is `≫ (log N)^(3/2)(log log N)^(-1/2)` (Bugeaud–Evertse 2008, Thm 3.1). For
+irrational algebraic numbers L2 **holds**, ineffectively: Ridout's theorem (CLASSICAL IMPORT, quoted
+from secondary sources, see SOURCE_MAP) gives `‖(b-1) b^n ξ‖ > b^(-εn)` for large `n`, the
+denominators `(b-1)b^n` being `S`-units, so runs of equal digits starting at `n` have length `o(n)`.
+L3 is open there. (Corrected 2026-11-12 after the re-audit: the earlier sentence said that L2 was
+open for algebraic numbers as well, which is false.)
 
 ## ZSC-05 — the seam target is independent of the saving and of the wall (PROVED LOCAL)
 
@@ -306,9 +314,9 @@ Three things are **not** gauge-invariant: the seed, the set of poles (`h ≡ c` 
 `c` and adds the poles `-16c/(8n-7) + c/(8n+1)`), and — corrected after audit — the **literal
 carries and the seam**. The gauge-equivalent sources `(g_H, 0)` and `(A_0, 2)` of (f)3 have the
 same completed point 2; the first has all late carries 15 and seam density 1, the second has all
-carries 0 and seam density 0. Carry statistics of two carriers of one point agree only off the
-set where a state lies within `|a(n)|` of an integer, and the density of that set is a seam-type
-statement. (RIO-01's static translation and the `H(n) - 16H(n-1)` control of RS are analogous
+carries 0 and seam density 0. The carries of two carriers of one point agree at every `n` for
+which neither `U_n` nor `U_(n-1)` lies within `|a(·)|` of an integer; the density of the remaining
+set is a seam-type statement. (RIO-01's static translation and the `H(n) - 16H(n-1)` control of RS are analogous
 coboundary constructions, not instances of this one.)
 
 **(c) Proper form.** Each gauge class has exactly one member with `deg g ≤ 7` (polynomial
@@ -335,8 +343,10 @@ re-read this round): *if the logarithms of nonzero algebraic numbers `α_1,…,�
 independent over `Q`, then `1, log α_1, …, log α_k` are linearly independent over the algebraic
 numbers.*
 
-> **Theorem.** `{A ∈ Q⁸ : L(A) ∈ Q} = Q·A_0`. Equivalently: the period space `V = L(Q⁸)` has
-> dimension 7 over `Q`, `V ∩ Q = {0}`, and every nonzero element of `V` is transcendental.
+> **Theorem.** `{A ∈ Q⁸ : L(A) ∈ Q} = Q·A_0`. Consequently the period space `V = L(Q⁸)` has
+> dimension 7 over `Q` and `V ∩ Q = {0}`; moreover (Baker's theorem over the algebraic numbers,
+> an additional consequence and not an equivalent form) every nonzero element of `V` is
+> transcendental.
 
 *Proof.* Partial fractions at the eight roots `α` of `z⁸ = 16` give, with `P_A(z) = Σ_j A_j z^j`,
 `L(A) = -(1/128) Σ_α P_A(α) Log(1 - 1/α)`. The eight logarithms are rational combinations of
@@ -383,8 +393,10 @@ Over `Q` this is a linear system of rank 7 on `Q⁸` (exact computation in `Q(�
 
    has literal zero seed, rational simple poles, residue sum 0 (`r_H = O(n^(-2))`), a moment
    density that is positive on `[0,1)` with a simple zero at 1 (the same shape as `g_π`, so the
-   innovation calculus of IAD-03 and a Kusmin–Landau window as in IAD-04 hold with other
-   constants: `g_H/(1-z)` is a polynomial, positive on `[0,1]`), and — apart from the two current
+   innovation brackets of IAD-03(b) hold with other constants: `g_H = (1-z)Q` with
+   `Q = -2z⁸+z⁷+z⁶+2z⁴+4z³+12z²+16z+56`, `Q' > 0` on `[0,1]` since `24z+16 ≥ 16z⁷`, so
+   `56(1-z) ≤ g_H ≤ 90(1-z)` and the brackets hold with `(4, 15)` replaced by `(56, 90)`; the
+   Kusmin–Landau theorem IAD-04 itself was not re-run for `g_H`), and — apart from the two current
    poles `8n+1`, `4n+1` — the prime genealogy of the null source: its states are
    `U^H_n = U^0_n + 2·16^n - 3/(8n+1) + 1/(4n+1)` with `U^0_n` the state of `(g_0, 0)`.
    Its completed point is `ξ_H = 2`: `U^H_n = 2·16^n - T^H_n`,
@@ -400,8 +412,8 @@ Over `Q` this is a linear system of rank 7 on `Q⁸` (exact computation in `Q(�
    `|D^ρ_(B,k) - D_(B,k)| ≤ 2π|kρ|/(8B+1)` and all shell means and lag correlations of its phases
    have the same limits as the authentic ones. (Whether its *carry* statistics agree is a
    seam-type density statement and is OPEN; on `n ≤ 2422` the carries of `ρ = 1` differ from the
-   authentic ones at two times.) The four-pole source is the unique member of this line with
-   `r = O(n^(-2))`.
+   authentic ones at two times.) The authentic source (`ρ = 0`) is the unique member of this line with
+   `r = O(n^(-2))`; the other four-pole member, `ρ = -1/2`, has residue sum `15/2`.
 5. *Asymptotic no-go (upgrades IAD-07).* IAD-07 used shell-dependent seeds and excluded only
    finite-horizon transfers. The sources in 2–3 are **fixed**, zero-seeded and census-complete, so:
    *no argument, finite-horizon or asymptotic, whose hypotheses are satisfied by every
@@ -411,8 +423,10 @@ Over `Q` this is a linear system of rank 7 on `Q⁸` (exact computation in `Q(�
 
 **Reading.** In proper form, *(rational forcing, zero seed, `A ∉ Q·A_0`)* is equivalent to
 *`ξ` is a nonzero element of the seven-dimensional period space `V`*. That membership has a proved
-non-statistical consequence — transcendence, and with it the finiteness of every seam run
-(SWT-03); for `ξ = x` specifically, Mahler's theorem adds the explicit ceilings of ZSC-04 (no
+non-statistical consequence — transcendence, and with it the finiteness of every seam run (by the
+irrationality argument of SWT-03, which is proved there for the authentic forcing with
+`0 < T_n < 1/16`; when `T_n < 0`, as for `A_π + ρA_0` with `ρ > 0`, the seam has `ε_n ∈ {-1, 0}`
+and corresponds to runs of `F`); for `ξ = x` specifically, Mahler's theorem adds the explicit ceilings of ZSC-04 (no
 quantitative statement for the rest of `V` is imported). By (b), every statement about limits of
 shell means and lag correlations of the phases of the selected path is a statement about the
 single real number `ξ`; by 4, the complete prime genealogy is not determined by `ξ`; and the
@@ -444,7 +458,7 @@ every seed is ZSC-03: the letter 16 has density zero.
 |---|---|---|
 | Complete arithmetic genealogy | the census differs along the line `A_π + ρA_0` while every phase statistic agrees (ZSC-06(f)4); complete census with zero seed is coherent for `g_H` | not an invariant; closed for transfers, finite-horizon (IAD-07) and asymptotic (ZSC-06(f)5) |
 | Carry-renewal dynamics | escapes from the fixed points `j/15` are exactly digit changes; their density is equivalent to a mode-15 saving and sufficient for a mode-1 saving (ZSC-02); 16-events renew with a rigid `15^a 16 0^b` shape (ZSC-03) | **selected**; yields the criterion (CH), not an estimate |
-| Arithmetic cylinder refinement | the seeds sharing the first `N` carries of the zero seed form an interval of length `≤ 16^(-N)` around 0; which words are excluded for `ξ ∈ V\{0}` is a Diophantine question, answered to the extent known by ZSC-04 | reduces to L1; no discrepancy content |
+| Arithmetic cylinder refinement | the seeds sharing the first `N` carries of the zero seed form, modulo 1, an interval of length `≤ 16^(-N)` around 0; which words are excluded for `ξ ∈ V\{0}` is a Diophantine question, answered to the extent known by ZSC-04 | reduces to L1; no discrepancy content |
 | Two-index dispersion | every pair identity found is `U_(n+ℓ) - U_n = (16^ℓ-1)U_n + Δ_ℓ(n)`, the gauge of IAD-05 | no new partition found |
 
 **Acceptance test for the statements of this file.**

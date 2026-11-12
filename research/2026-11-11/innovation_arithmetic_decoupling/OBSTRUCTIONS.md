@@ -24,7 +24,7 @@ Filtrations examined on the shell with counting measure:
 |---|---|---|---|
 | trivial | `→ 0` in the window (IAD-04) | no | O-1 |
 | full clock `σ(n)` | `= Z`, modulus 1 | yes | no decay; tautological |
-| clock residues `σ(n mod q)`, `q·h16^ℓ ≤ (15/8)B³` | `≤ 4401B²/((1-(ℓ+q)/B)h16^ℓ)` uniformly (IAD-04 corollary) | no | a genuine conditional innovation bound, but item 1 fails |
+| clock residues `σ(n mod q)`, `1 ≤ q ≤ B-ℓ`, `q·h16^ℓ ≤ (15/8)B³` | `≤ 8802B²/((1-ℓ/B)h16^ℓ)` uniformly (IAD-04 corollary, repaired) | no | a genuine conditional innovation bound, but item 1 fails |
 | 2-power clock `σ(n mod 2^k)` | as above | `U_n mod 2^k` **is** measurable (RS-01, 2-adic isometry), the real phase of `(16^ℓ-1)U_n` is not | 2-adic measurability does not transfer (RS-04/RS-08) |
 | fresh-prime strata (birth pattern of the window) | not controlled | no | by IAD-09c only an inequation per cell |
 | `σ(C)` or `σ(A)` | — | yes | chosen to make the conclusion tautological; rejected by the mission's own rule |
@@ -133,10 +133,10 @@ each of which destroys the conclusion:
 | Change | Preserves | Destroys |
 |---|---|---|
 | seed `0 → -x` (coherent) | forcing, innovations, all smooth estimates | everything (orbit ≡ 0) |
-| seed `0 → a/q^k` (IAD-07) | the above **and** all places `≠ q` | coherence on a full shell |
+| seed `0 → a/q^k` (IAD-07) | the above **and** all finite places `p ≠ q` | coherence on a full shell |
 | forcing → AT-07 null source | zero seed, complete census, conductor growth | orbit ≡ 0 |
 | `x → 1/17` | Diophantine type at `16^B` | equidistribution |
-| source `(g_π, 0) → (g_H, 0)` (ZSC-06) | zero seed, complete census, rational simple poles, positive `O(n^(-2))` forcing, innovation theorem — for **all** shells at once | everything (completed point 2, carries ≡ 15) |
+| source `(g_π, 0) → (g_H, 0)` (ZSC-06) | zero seed, complete census, rational simple poles, positive `O(n^(-2))` forcing, innovation theorem — for **all** shells at once | everything (completed point 2, carries 15 for `n ≥ 2`) |
 | `A_π → A_π + ρA_0` (ZSC-06) | the completed point `π/16`, zero seed, every limit of phase means and correlations | the census and the pole set |
 | seed `0 →` W1 (ZSC-05) | forcing, `v_16 = 0` | any saving; seam density |
 

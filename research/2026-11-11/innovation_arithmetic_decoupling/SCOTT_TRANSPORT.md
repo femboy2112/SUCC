@@ -139,7 +139,7 @@ at position `N`:
 `ρ(N) = o(N)` is implied by normality of either stream (next theorem) but is **not known
 unconditionally**: it says that the positions followed by `≈ 2 log_16 n` zeros have density zero in
 the hexadecimal expansion of π. Heuristically `Σ_n T_n < ∞` predicts only finitely many seam
-events; none occurs for `n ≤ 1300` (OBSERVED FINITE, see PROBES). **OPEN**, strictly weaker than
+events; none occurs for `0 ≤ n ≤ 3200` (OBSERVED FINITE, see PROBES). **OPEN**, strictly weaker than
 normality.
 
 *Continuation (ZSC of [CARRY_FLUX](CARRY_FLUX.md)).* The letter 16 has density zero in `κ`
@@ -236,7 +236,7 @@ estimate.
   real number. Every hostile seed is transported just as faithfully: the coherent seed is carried
   to `κ ≡ 15`.
 - **The finite places alone are not a domain of definition on a finite horizon.** By IAD-07, for
-  every odd prime `q` and every shell there are seeds with identical data at all places `≠ q` and
+  every odd prime `q` and every shell there are seeds with identical data at all finite places `p ≠ q` and
   completed orbit `≈ 0` on that whole shell. A "channel" from an incomplete place census to the real phase is not single-valued, so
   there is nothing for Scott continuity to transport. The weld requires the complete census plus
   the integer floor — which is exactly the object `⌊U_n⌋` of SWT-02.
