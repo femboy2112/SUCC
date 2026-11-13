@@ -1,0 +1,123 @@
+{
+  "RI01_section_sha256_at_execution": "f20bac32fa76fcfa29cd6090b57b371bb663ebb25b839e1f3b5f0d9f8f567056",
+  "assertions_passed": 2520,
+  "audit_code_sha256": "4f2b81ec75253926b0ed59fe0da9837ef3a85a0f8701756d573cb2c1911c3df8",
+  "baseline": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "boundary_control": "q0=-1/16, q1=...=q20=0; forcing0; residuals1,0,...; exact energy kappa_star",
+  "execution_commit": "17e58672bbd3954a8e72ec9de9ca90c1c2b5de0d",
+  "extended_paper_audit": {
+    "after_fix_sha256": "cae2aa2bf8e568e13a78268bb86ac2a10edd65a6bc59ddcded9f4c4924814e70",
+    "authorization": "Root explicitly authorized only the RI-04 digit-position correction in the constructor source; other reviewed source sections were not edited.",
+    "before_fix_sha256": "b1f1640be2476307d8d4c14583919828110d6c0a682af27d7d5c99ee75e80f6d",
+    "corrected_defect": {
+      "before_section_sha256": "71b68afa507344a1c99f0d8f777671e85ad515709debbc2665b9aee7da3fef95",
+      "countercalculation": "With xi=sum b_m16^(-m) and digits 0 or 1, every fractional state lies in [0,1/15], so its balanced carry is a_n=b_(n+1). The original last carry a_(N+N/4-1)=b_(N+N/4) is 1.",
+      "impact": "The exact all-zero assertion required correction. The R0-versus-quarter-shell separation and SAA sufficient implication were not invalidated; even the old example had only one carry on that quarter-shell.",
+      "original_claim": "Zero hexadecimal digit positions [N,N+N/4) give every balanced carry zero on B=N,L=N/4.",
+      "preserved_density_proof": "For the largest block start N=16^K with N+1<=2B, even including its whole block the total zero digits through position 2B are at most sum_(k<=K)16^k/4=4(N-1)/15<8B/15. Thus every shell retains at least 7B/15 first digits equal to 1.",
+      "repair": "Shift the zero digit positions to [N+1,N+N/4+1); now every a_N,...,a_(N+N/4-1) is exactly zero.",
+      "section": "RI-04 separating real-point example"
+    },
+    "external_independence": false,
+    "new_executable_assertions": 0,
+    "paper_evidence": [
+      {
+        "checked": "For m=floor(beta^j), M=floor(beta^(j+1)), M>=beta*m-1 and T=M-m-1>=(beta-1)m-2. The selected inverse gives coefficient at most 16*(2/15+1/64+1/256)<3 for M>=2, hence error <48*16^(-beta*m). Choosing mu(pi)<rho<beta beats the polynomial h-band uniformly. Initial repeated floor values and initial ineligible blocks affect only O(1), with fixed c,beta,h.",
+        "section": "RI-8"
+      },
+      {
+        "checked": "The finite forward difference operator has norm <=17. Appending a_last_prime=16*e_last gives the exact inverse kernel 16^(-j-1) with l1 norm <=1/15, so 225E<=C+256e_last^2<=C+64. Since D<=C<=64D, both displayed cosine bounds and the R0 iff liminf(D/B)>0 assertion follow, including B=1.",
+        "section": "RI-9/10"
+      },
+      {
+        "checked": "On each zero-carry component, K_n=16^(n-s)K_s and e_n=16^(n-s)e_s. Deleting the first L and last L states of each component costs <=2L(D+1) and leaves both stated divisibility and real smallness. The phrase within L positions is read in this precise first-L/last-L sense. L=floor(sqrt(B/(D+1))) tends to infinity on failure shells and the deleted proportion tends to zero; no logarithmic rate is supplied.",
+        "section": "RI-11/12"
+      },
+      {
+        "checked": "Directly combining the four poles gives numerator 120n^2-89n+16 over Q=(2n-1)(4n-1)(8n-7)(8n-3), whose leading coefficient is 512. Factoring each product over j=1..n yields Gamma shifts 1/2,3/4,1/8,5/8. A_(n+1)=16Q(n+1)A_n+P(n+1)Delta_n and subtraction of Delta_(n+1)K_(n+1) gives RI-14 with exactly a_n=K_(n+1)-16K_n. Delta is a common product denominator, not claimed reduced.",
+        "section": "RI-13/14"
+      },
+      {
+        "checked": "Delta is odd, so v2(A_n)=v2(n) from the imported authentic source theorem. If 16^L divides K_n and v2(n)<4L, unequal valuations force v2(Z_n)=v2(n). The exceptional count is <=B/16^L+1. The identity gcd(A_n-Delta_n K_n,Delta_n)=gcd(A_n,Delta_n) is exact.",
+        "section": "RI-15"
+      },
+      {
+        "checked": "Expanding D(t)=(8t+1)(8t+3)(8t+5) gives 512t^3+576t^2+184t+15. Subtraction factors as (s-t)*(15-576st-512st(s+t)); all factors except s-t are units on all Z2. The forcing difference has valuations v2(s-t) and v2(s-t)+4, so its least-valuation term is unique. This proves the isometry property, not equality with the authentic source values.",
+        "section": "RI-16"
+      },
+      {
+        "checked": "Partial fractions of h give A(t), and the forward tail telescopes to A(n). A derivative numerator 15-576t^2-1024t^3 is negative for real t>=1, giving eventual positive forcing; r_iso(1)=-1/1287 remains negative. The degree-12 nonproper source, different poles and zero completed period are expressly retained as lost authentic hypotheses.",
+        "section": "RI-03 scope"
+      },
+      {
+        "checked": "The balanced telescope and Lambda=16^(-L)U_(B+L) give residual 16^(-L)*(e_(B+L)-T_(B+L)), with the stated absolute budget. L=B includes one carry beyond D_B, harmless for the o(B) implication. L=floor(B/4) lies within the shell for all sufficiently large B; SAA forces more than delta L authentic nonzero carries and therefore R0. Multiplication by 16^L Delta_(B+L) gives the displayed integer separation without a denominator/sign change. The candidate is explicitly open and stronger than R0.",
+        "section": "RI-17 and SAA"
+      }
+    ],
+    "pointwise_fingerprint_control": "The hostile isometry does not preserve the authentic values: U_1=47/15 is 1 modulo16, while V_1=-1/1287 is 9 modulo16. Its preserved property is the complete distance/valuation isometry, including v2(V_n)=v2(n), not equality of all source residues.",
+    "prior_2520_scope_unchanged": true,
+    "reproduction_scope": "audit_r0.py reproduces the earlier 2520 executable assertions. This additive paper-only review and its source correction are separately recorded here and are not regenerated by that unchanged script.",
+    "same_model_family": true,
+    "section_hashes_after_fix": [
+      {
+        "section": "RI-8 block-ratio corollary",
+        "sha256": "e5a69d6c269427802d88397686490803f7cde8d0da533baf9a9da3c5e1d5cbe4"
+      },
+      {
+        "section": "RI-02 carry energy and Gamma integer residual",
+        "sha256": "18635a59326a0e7ea1a3d6dd4ad18081f40aacda985dbc021f4067f2fc47b67e"
+      },
+      {
+        "section": "RI-03 hostile full Z2 isometry",
+        "sha256": "374d37edb2517cdf5c6fcfde00a2325f86c54f77ad48af678679e1a66f1fb5dd"
+      },
+      {
+        "section": "RI-04 SAA sufficient condition and separation",
+        "sha256": "5e5a0f59b9c51df64083bb8d94b51d209c6a02d6f7ad7e7215898dbda3eef02e"
+      }
+    ],
+    "source_document": "research/2026-11-13/leah_gamma_twist/R0_INVERSE.md",
+    "status": "paper-only post-derivation audit; one local indexing defect found and corrected; no further mathematical defect found in the specified sections"
+  },
+  "gram_parameter_cases": 676,
+  "inputs": [
+    {
+      "path": "research/2026-11-13/leah_gamma_twist/R0_INVERSE.md",
+      "sha256": "d1fcf1f5490c380ccec769c0fcc4a74dfadefb4f765100e8f24eaaafcd7505d8"
+    },
+    {
+      "path": "research/2026-11-13/leah_gamma_twist/r0_probe.py",
+      "sha256": "215bcc633bca199d94541bdf67c4e17b18da4569657329df0bc8588bc55439cc"
+    },
+    {
+      "path": "research/2026-11-13/leah_gamma_twist/gamma_prime_probe.py",
+      "sha256": "4b44d85665435b362cc7c9b44a700fd2c9afb985337d952aaa8726d1d022026a"
+    }
+  ],
+  "inverse_arc_cases": 384,
+  "paper_audit": {
+    "checked": [
+      "quiet-transition selection and pairwise-integer residual normalization",
+      "single-defect energy cost and local-only cosine coefficient",
+      "window endpoints and denominator 255+delta_left+delta_right",
+      "constant-branch lift signs for both frequency orientations",
+      "source-selected block start, factor16, denominator and exponent",
+      "uniform-in-band contradiction and complete-block counting",
+      "strict fixed-c scope, non-effective onset, and no R0 consequence"
+    ],
+    "external_independence": false,
+    "finding": "no mathematical defect found in this pass",
+    "not_a_machine_proof": true,
+    "scope": "RI-01 finite lemma and RI-4 through RI-7 as read; no later block-ratio extension, RI-02 or RI-03 audit"
+  },
+  "primary_import": {
+    "authors": "Doron Zeilberger and Wadim Zudilin",
+    "published_pdf": "https://msp.org/cnt/2020/9-4/moscow-v9-n4-p06-s.pdf",
+    "statement": "mu(pi) <= 7.103205334137... < 15/2",
+    "url": "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/pimeas.html",
+    "verification_scope": "published theorem statement verified on primary author page; proof imported, not reproduced"
+  },
+  "provenance": "same model family; separate algebraic implementation; shared BBP source and standard Fraction arithmetic",
+  "source_green_cases": 5,
+  "status": "observed exact finite controls plus separately stated same-model paper audit"
+}
