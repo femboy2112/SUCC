@@ -1,0 +1,101 @@
+{
+  "original_sha256": "c0e695689046c171fb0370b79988488ff6c9fb83e18043a37812fcaef3bbab5f",
+  "regenerated_sha256": "bf76a2776b5cdb1efcae283eaf4230df4544f3b7b56a81e242d79133ef4b0a72",
+  "changed_leaves": 1188,
+  "kinds": {
+    "float": 1186,
+    "other": 2
+  },
+  "max_absolute_float_change": 5.1770098624670524e-12,
+  "sample": [
+    [
+      "/shells/256/iad01/9_random/1/windows/L_0032/R_definition",
+      "float",
+      -0.012158644535062645,
+      -0.012158644535062643
+    ],
+    [
+      "/shells/256/iad01/9_random/1/windows/L_0016/R_definition",
+      "float",
+      0.0007156581018782299,
+      0.0007156581018782301
+    ],
+    [
+      "/shells/256/iad01/9_random/3/windows/L_0128/R_definition",
+      "float",
+      -0.0065092252487751355,
+      -0.006509225248775135
+    ],
+    [
+      "/shells/256/iad01/1_true/1/windows/L_0256/R_definition",
+      "float",
+      -0.0006817156512100075,
+      -0.0006817156512100076
+    ],
+    [
+      "/shells/256/iad01/1_true/1/windows/L_0064/R_definition",
+      "float",
+      -0.0009310651893163608,
+      -0.0009310651893163606
+    ],
+    [
+      "/shells/256/iad01/4_alias/1/windows/L_0256/R_definition",
+      "float",
+      -0.0006817156512100075,
+      -0.0006817156512100076
+    ],
+    [
+      "/shells/256/iad01/4_alias/1/windows/L_0064/R_definition",
+      "float",
+      -0.0009310651893163608,
+      -0.0009310651893163606
+    ],
+    [
+      "/shells/256/iad06/5_hijack/3/c_U_d_for_d_1_to_dmax/56/1",
+      "float",
+      5.184845095629735e-07,
+      5.184845095629737e-07
+    ],
+    [
+      "/shells/256/iad06/5_hijack/3/c_U_d_for_d_1_to_dmax/57/0",
+      "float",
+      0.7734374999997337,
+      0.7734374999997338
+    ],
+    [
+      "/shells/256/iad06/9_random/1/random_H_rhs/46",
+      "float",
+      0.389611298048844,
+      0.38961129804884387
+    ],
+    [
+      "/shells/256/iad06/9_random/1/c_d_for_d_1_to_dmax/5/0",
+      "float",
+      -0.015238589747609822,
+      -0.015238589747609818
+    ],
+    [
+      "/shells/256/iad06/9_random/1/c_d_for_d_1_to_dmax/11/0",
+      "float",
+      -0.028225771697877478,
+      -0.028225771697877475
+    ]
+  ],
+  "all_exact_nonfloat_leaves_identical": false,
+  "baseline_command_exit_codes_all_zero": true,
+  "wrapper_status": "FAIL: candidate HEAD changed during run and regenerated floating receipt differs",
+  "historical_artifact_restored": true,
+  "nonfloat_changes": [
+    [
+      "/shells/64/PR-1/checks/PR-1.6/c^U_d_equals_shell_mean_of_A_Z/worst/lag",
+      5,
+      2
+    ],
+    [
+      "/shells/64/PR-1/checks/PR-1.6/c^U_d_equals_shell_mean_of_A_Z/worst/control",
+      "2_coherent",
+      "5_hijack"
+    ]
+  ],
+  "nonfloat_change_interpretation": "Two worst-case argmax labels changed after floating roundoff; no exact source certificate or discrete arithmetic result changed."
+}

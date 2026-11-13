@@ -1,0 +1,1074 @@
+{
+  "R0_proved": false,
+  "additional_known_result_controls": [
+    {
+      "n": 2,
+      "ordinary_gamma_log_derivative_is_U": false,
+      "weighted_log_derivative_is_U": true
+    },
+    {
+      "n": 3,
+      "ordinary_gamma_log_derivative_is_U": false,
+      "weighted_log_derivative_is_U": true
+    },
+    {
+      "n": 7,
+      "ordinary_gamma_log_derivative_is_U": false,
+      "weighted_log_derivative_is_U": true
+    },
+    {
+      "n": 16,
+      "ordinary_gamma_log_derivative_is_U": false,
+      "weighted_log_derivative_is_U": true
+    }
+  ],
+  "baseline": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "disclosure": "Product controls were added after the prospective declaration as classical calibration, not holdouts. No numerical minimization, floating asymptotic fit, or pi digit oracle is used.",
+  "execution_commit": "17e58672bbd3954a8e72ec9de9ca90c1c2b5de0d",
+  "lag_holdouts": [
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.00001245323809096841361",
+        "outward_decimal_digits": 23,
+        "upper": "-0.00001245323809096841360"
+      },
+      "coefficients": [
+        -16,
+        1
+      ],
+      "error": {
+        "lower": "0.00000006345599027245051519",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000006345599027245051520"
+      },
+      "n": 137,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.00001242006507746986933",
+        "outward_decimal_digits": 23,
+        "upper": "-0.00001242006507746986932"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.0000001813028293498586148",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000001813028293498586149"
+      },
+      "coefficients": [
+        16,
+        -17,
+        1
+      ],
+      "error": {
+        "lower": "0.000000003345861305274663528",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000003345861305274663529"
+      },
+      "n": 137,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.0000001788705253272850884",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000001788705253272850885"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.000000003955698094906006142",
+        "outward_decimal_digits": 27,
+        "upper": "-0.000000003955698094906006141"
+      },
+      "coefficients": [
+        -16,
+        33,
+        -18,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000001542518663711455013",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000001542518663711455014"
+      },
+      "n": 137,
+      "q": 2,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.000000003836432324217578359",
+        "outward_decimal_digits": 27,
+        "upper": "-0.000000003836432324217578358"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.0000000001149703351834624855",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000001149703351834624856"
+      },
+      "coefficients": [
+        16,
+        -49,
+        51,
+        -19,
+        1
+      ],
+      "error": {
+        "lower": "0.000000000007668166638824403525",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000007668166638824403526"
+      },
+      "n": 137,
+      "q": 3,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.0000000001089330975082290799",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000001089330975082290800"
+      }
+    },
+    {
+      "P16": 15,
+      "center": {
+        "lower": "-0.00000001208685528999057433",
+        "outward_decimal_digits": 26,
+        "upper": "-0.00000001208685528999057432"
+      },
+      "coefficients": [
+        -1,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000001813028293498586148",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000001813028293498586149"
+      },
+      "n": 137,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.00000001190768307900679333",
+        "outward_decimal_digits": 26,
+        "upper": "-0.00000001190768307900679332"
+      }
+    },
+    {
+      "P16": 257,
+      "center": {
+        "lower": "0.000001660431745462455147",
+        "outward_decimal_digits": 24,
+        "upper": "0.000001660431745462455148"
+      },
+      "coefficients": [
+        1,
+        0,
+        1
+      ],
+      "error": {
+        "lower": "0.00000003021713822497643580",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000003021713822497643581"
+      },
+      "n": 137,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.000001630860898902951273",
+        "outward_decimal_digits": 24,
+        "upper": "0.000001630860898902951274"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.000003383613834920248222",
+        "outward_decimal_digits": 24,
+        "upper": "-0.000003383613834920248221"
+      },
+      "coefficients": [
+        -16,
+        1
+      ],
+      "error": {
+        "lower": "0.000000008992993581183383978",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000008992993581183383979"
+      },
+      "n": 263,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.000003378908091341102589",
+        "outward_decimal_digits": 24,
+        "upper": "-0.000003378908091341102588"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.00000002569426737480966851",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000002569426737480966852"
+      },
+      "coefficients": [
+        16,
+        -17,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000002474353072621614187",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000002474353072621614188"
+      },
+      "n": 263,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.00000002551356397610209664",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000002551356397610209665"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.0000000002925343534133928104",
+        "outward_decimal_digits": 28,
+        "upper": "-0.0000000002925343534133928103"
+      },
+      "coefficients": [
+        -16,
+        33,
+        -18,
+        1
+      ],
+      "error": {
+        "lower": "0.000000000005955180135869289390",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000005955180135869289391"
+      },
+      "n": 263,
+      "q": 2,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.0000000002878857835133037044",
+        "outward_decimal_digits": 28,
+        "upper": "-0.0000000002878857835133037043"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.000000000004438643579529905135",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000004438643579529905136"
+      },
+      "coefficients": [
+        16,
+        -49,
+        51,
+        -19,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000000001546162573912075959",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000001546162573912075960"
+      },
+      "n": 263,
+      "q": 3,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.000000000004314964960915886782",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000004314964960915886783"
+      }
+    },
+    {
+      "P16": 15,
+      "center": {
+        "lower": "-0.000000001712951158320644568",
+        "outward_decimal_digits": 27,
+        "upper": "-0.000000001712951158320644567"
+      },
+      "coefficients": [
+        -1,
+        1
+      ],
+      "error": {
+        "lower": "0.00000000001340782453144717047",
+        "outward_decimal_digits": 29,
+        "upper": "0.00000000001340782453144717048"
+      },
+      "n": 263,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.000000001699626049621859137",
+        "outward_decimal_digits": 27,
+        "upper": "-0.000000001699626049621859136"
+      }
+    },
+    {
+      "P16": 257,
+      "center": {
+        "lower": "0.0000004511485113226997629",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000004511485113226997630"
+      },
+      "coefficients": [
+        1,
+        0,
+        1
+      ],
+      "error": {
+        "lower": "0.000000004282377895801611418",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000004282377895801611419"
+      },
+      "n": 263,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.0000004469143831713945885",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000004469143831713945886"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.0000008628261698628624086",
+        "outward_decimal_digits": 25,
+        "upper": "-0.0000008628261698628624085"
+      },
+      "coefficients": [
+        -16,
+        1
+      ],
+      "error": {
+        "lower": "0.000000001158433601350282783",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000001158433601350282784"
+      },
+      "n": 521,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.0000008622196885313277390",
+        "outward_decimal_digits": 25,
+        "upper": "-0.0000008622196885313277389"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.000000003309810289572236522",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000003309810289572236523"
+      },
+      "coefficients": [
+        16,
+        -17,
+        1
+      ],
+      "error": {
+        "lower": "0.00000000001610478161033470791",
+        "outward_decimal_digits": 29,
+        "upper": "0.00000000001610478161033470792"
+      },
+      "n": 521,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.000000003298019589188612529",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000003298019589188612530"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.00000000001904013589399177291",
+        "outward_decimal_digits": 29,
+        "upper": "-0.00000000001904013589399177290"
+      },
+      "coefficients": [
+        -16,
+        33,
+        -18,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000000001958918047085342559",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000001958918047085342560"
+      },
+      "n": 521,
+      "q": 2,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.00000000001888643067649261577",
+        "outward_decimal_digits": 29,
+        "upper": "-0.00000000001888643067649261576"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.0000000000001460063140684727373",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000001460063140684727374"
+      },
+      "coefficients": [
+        16,
+        -49,
+        51,
+        -19,
+        1
+      ],
+      "error": {
+        "lower": "0.000000000000002571026373750058982",
+        "outward_decimal_digits": 33,
+        "upper": "0.000000000000002571026373750058983"
+      },
+      "n": 521,
+      "q": 3,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.0000000000001439318707600080888",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000001439318707600080889"
+      }
+    },
+    {
+      "P16": 15,
+      "center": {
+        "lower": "-0.0000000002206540193048157682",
+        "outward_decimal_digits": 28,
+        "upper": "-0.0000000002206540193048157681"
+      },
+      "coefficients": [
+        -1,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000000008726728951412895913",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000008726728951412895914"
+      },
+      "n": 521,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.0000000002197840755401471198",
+        "outward_decimal_digits": 28,
+        "upper": "-0.0000000002197840755401471197"
+      }
+    },
+    {
+      "P16": 257,
+      "center": {
+        "lower": "0.0000001150434893150483211",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000001150434893150483212"
+      },
+      "coefficients": [
+        1,
+        0,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000005516350482620394204",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000005516350482620394205"
+      },
+      "n": 521,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.0000001144950108991111237",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000001144950108991111238"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.0000002204123915846548893",
+        "outward_decimal_digits": 25,
+        "upper": "-0.0000002204123915846548892"
+      },
+      "coefficients": [
+        -16,
+        1
+      ],
+      "error": {
+        "lower": "0.0000000001495951269996445739",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000001495951269996445740"
+      },
+      "n": 1031,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.0000002203340529467637039",
+        "outward_decimal_digits": 25,
+        "upper": "-0.0000002203340529467637038"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.0000000004274146485704130685",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000004274146485704130686"
+      },
+      "coefficients": [
+        16,
+        -17,
+        1
+      ],
+      "error": {
+        "lower": "0.000000000001051444179105596860",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000001051444179105596861"
+      },
+      "n": 1031,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.0000000004266438919547093083",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000004266438919547093084"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "-0.000000000001243086714213513530",
+        "outward_decimal_digits": 30,
+        "upper": "-0.000000000001243086714213513529"
+      },
+      "coefficients": [
+        -16,
+        33,
+        -18,
+        1
+      ],
+      "error": {
+        "lower": "0.000000000000006466721951237955596",
+        "outward_decimal_digits": 33,
+        "upper": "0.000000000000006466721951237955597"
+      },
+      "n": 1031,
+      "q": 2,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.000000000001237999322247974468",
+        "outward_decimal_digits": 30,
+        "upper": "-0.000000000001237999322247974467"
+      }
+    },
+    {
+      "P16": 0,
+      "center": {
+        "lower": "0.000000000000004819916982289159450",
+        "outward_decimal_digits": 33,
+        "upper": "0.000000000000004819916982289159451"
+      },
+      "coefficients": [
+        16,
+        -49,
+        51,
+        -19,
+        1
+      ],
+      "error": {
+        "lower": "0.00000000000000004292026874221628539",
+        "outward_decimal_digits": 35,
+        "upper": "0.00000000000000004292026874221628540"
+      },
+      "n": 1031,
+      "q": 3,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.000000000000004785134292716155953",
+        "outward_decimal_digits": 33,
+        "upper": "0.000000000000004785134292716155954"
+      }
+    },
+    {
+      "P16": 15,
+      "center": {
+        "lower": "-0.00000000002849430990469420458",
+        "outward_decimal_digits": 29,
+        "upper": "-0.00000000002849430990469420457"
+      },
+      "coefficients": [
+        -1,
+        1
+      ],
+      "error": {
+        "lower": "0.00000000000005697480773478603677",
+        "outward_decimal_digits": 32,
+        "upper": "0.00000000000005697480773478603678"
+      },
+      "n": 1031,
+      "q": 1,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "-0.00000000002843742532846546705",
+        "outward_decimal_digits": 29,
+        "upper": "-0.00000000002843742532846546704"
+      }
+    },
+    {
+      "P16": 257,
+      "center": {
+        "lower": "0.00000002938831887795398523",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000002938831887795398524"
+      },
+      "coefficients": [
+        1,
+        0,
+        1
+      ],
+      "error": {
+        "lower": "0.00000000007123577476173551142",
+        "outward_decimal_digits": 29,
+        "upper": "0.00000000007123577476173551143"
+      },
+      "n": 1031,
+      "q": 0,
+      "rational_recurrence_identity": true,
+      "tail_interval": {
+        "lower": "0.00000002931728973089549481",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000002931728973089549482"
+      }
+    }
+  ],
+  "mutations": [
+    {
+      "authentic_identity_rejected": true,
+      "n": 137,
+      "n_times_mutant_tail": {
+        "lower": "0.008435018384106056710",
+        "outward_decimal_digits": 21,
+        "upper": "0.008439064715912667777"
+      },
+      "proved_tail_limit": "1/120",
+      "total_residue": 1
+    },
+    {
+      "authentic_identity_rejected": true,
+      "n": 263,
+      "n_times_mutant_tail": {
+        "lower": "0.008386478537918256612",
+        "outward_decimal_digits": 21,
+        "upper": "0.008388588228415647695"
+      },
+      "proved_tail_limit": "1/120",
+      "total_residue": 1
+    },
+    {
+      "authentic_identity_rejected": true,
+      "n": 521,
+      "n_times_mutant_tail": {
+        "lower": "0.008360208983123784178",
+        "outward_decimal_digits": 21,
+        "upper": "0.008361274582820001675"
+      },
+      "proved_tail_limit": "1/120",
+      "total_residue": 1
+    },
+    {
+      "authentic_identity_rejected": true,
+      "n": 1031,
+      "n_times_mutant_tail": {
+        "lower": "0.008346926788613765755",
+        "outward_decimal_digits": 21,
+        "upper": "0.008347465449185204353"
+      },
+      "proved_tail_limit": "1/120",
+      "total_residue": 1
+    }
+  ],
+  "old_cofactor_shadows": [
+    {
+      "A": 31,
+      "M": 93,
+      "completed_mean_energy_upper": {
+        "lower": "0.002048835782840580972",
+        "outward_decimal_digits": 21,
+        "upper": "0.002048835782840580973"
+      },
+      "old_clock_bits": 249,
+      "preserved_newborn_primes": [
+        257,
+        281,
+        313,
+        337,
+        353,
+        401,
+        409,
+        433,
+        449,
+        457
+      ],
+      "radius_bound": {
+        "lower": "0.01012135312801747119",
+        "outward_decimal_digits": 20,
+        "upper": "0.01012135312801747120"
+      },
+      "seed_is_nonzero_rational": true,
+      "short_arc_certified": true,
+      "source_mean_energy_upper": {
+        "lower": "0.002055243288845064167",
+        "outward_decimal_digits": 21,
+        "upper": "0.002055243288845064168"
+      },
+      "source_radius_bound": {
+        "lower": "0.01013716747628513871",
+        "outward_decimal_digits": 20,
+        "upper": "0.01013716747628513872"
+      },
+      "zero_anchor_preserved": false
+    },
+    {
+      "A": 63,
+      "M": 189,
+      "completed_mean_energy_upper": {
+        "lower": "0.00000000000000000003161150057147138642",
+        "outward_decimal_digits": 38,
+        "upper": "0.00000000000000000003161150057147138643"
+      },
+      "old_clock_bits": 533,
+      "preserved_newborn_primes": [
+        521,
+        569,
+        577,
+        593,
+        601,
+        617,
+        641,
+        673,
+        761,
+        769,
+        809,
+        857,
+        881,
+        929,
+        937,
+        953,
+        977
+      ],
+      "radius_bound": {
+        "lower": "0.00000000003975644637758220615",
+        "outward_decimal_digits": 29,
+        "upper": "0.00000000003975644637758220616"
+      },
+      "seed_is_nonzero_rational": true,
+      "short_arc_certified": true,
+      "source_mean_energy_upper": {
+        "lower": "0.0000000003015481917346945791",
+        "outward_decimal_digits": 28,
+        "upper": "0.0000000003015481917346945792"
+      },
+      "source_radius_bound": {
+        "lower": "0.000003882964020788079483",
+        "outward_decimal_digits": 24,
+        "upper": "0.000003882964020788079484"
+      },
+      "zero_anchor_preserved": false
+    },
+    {
+      "A": 127,
+      "M": 381,
+      "completed_mean_energy_upper": {
+        "lower": "0.00000000000000000000000000000000000000000000000000000002595816729911168561",
+        "outward_decimal_digits": 74,
+        "upper": "0.00000000000000000000000000000000000000000000000000000002595816729911168562"
+      },
+      "old_clock_bits": 1106,
+      "preserved_newborn_primes": [
+        1033,
+        1049,
+        1097,
+        1129,
+        1153,
+        1193,
+        1201,
+        1217,
+        1249,
+        1289,
+        1297,
+        1321,
+        1361,
+        1409,
+        1433,
+        1481,
+        1489,
+        1553,
+        1601,
+        1609,
+        1657,
+        1697,
+        1721,
+        1753,
+        1777,
+        1801,
+        1873,
+        1889,
+        1913,
+        1993,
+        2017
+      ],
+      "radius_bound": {
+        "lower": "0.00000000000000000000000000003602649531880091553",
+        "outward_decimal_digits": 47,
+        "upper": "0.00000000000000000000000000003602649531880091554"
+      },
+      "seed_is_nonzero_rational": true,
+      "short_arc_certified": true,
+      "source_mean_energy_upper": {
+        "lower": "0.00000000001851383485328946300",
+        "outward_decimal_digits": 29,
+        "upper": "0.00000000001851383485328946301"
+      },
+      "source_radius_bound": {
+        "lower": "0.0000009621287557621761210",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000009621287557621761211"
+      },
+      "zero_anchor_preserved": false
+    }
+  ],
+  "preregistration_sha256": "3af86719e304ce8961f7ec4833f798debc5e71bb6ed70f67c95c5d23b5bb599d",
+  "preregistration_utc": "2026-11-13 00:15:46 UTC",
+  "prime_gamma_clock_holdouts": [
+    {
+      "forcing_clock": 350385,
+      "forcing_coset_candidates": 1,
+      "full_old_cofactor_reconstruction": true,
+      "n": 18,
+      "newborn_residue": 4,
+      "p": 137,
+      "state_clock_bits": 144,
+      "state_coset_capacity_on_same_window": 7616823354161154855521651073006405816,
+      "state_is_claimed_inside_forcing_window": false,
+      "window_width": {
+        "lower": "0.0000006700547973334926373",
+        "outward_decimal_digits": 25,
+        "upper": "0.0000006700547973334926374"
+      }
+    },
+    {
+      "forcing_clock": 2893605,
+      "forcing_coset_candidates": 1,
+      "full_old_cofactor_reconstruction": true,
+      "n": 36,
+      "newborn_residue": 4,
+      "p": 281,
+      "state_clock_bits": 294,
+      "state_coset_capacity_on_same_window": 878369510378124722035144318192215712971640370434335964716224353863424157884610253,
+      "state_is_claimed_inside_forcing_window": false,
+      "window_width": {
+        "lower": "0.00000003785524094376562539",
+        "outward_decimal_digits": 26,
+        "upper": "0.00000003785524094376562540"
+      }
+    },
+    {
+      "forcing_clock": 26596947,
+      "forcing_coset_candidates": 1,
+      "full_old_cofactor_reconstruction": true,
+      "n": 75,
+      "newborn_residue": 4,
+      "p": 593,
+      "state_clock_bits": 616,
+      "state_coset_capacity_on_same_window": 517112656608419353524186182369958797578077394716209314059309741911065804635545528912346416318429823248132201615527348576500508669045543331039487537932010192199717473250063119587,
+      "state_is_claimed_inside_forcing_window": false,
+      "window_width": {
+        "lower": "0.000000001908586504581830241",
+        "outward_decimal_digits": 27,
+        "upper": "0.000000001908586504581830242"
+      }
+    }
+  ],
+  "provenance": "same model family; separately implemented four poles versus inherited combined formula; not external independence",
+  "rational_alias": {
+    "R0_gap_interval": {
+      "lower": "0.08645454235739882847",
+      "outward_decimal_digits": 20,
+      "upper": "0.08645454235739938053"
+    },
+    "completed_boundary": "1/15",
+    "frequency_15_energy": 0,
+    "normal": false,
+    "same_forcing_seed": "1/15 - pi/16",
+    "zero_anchor_preserved": false
+  },
+  "source_calibration_n": [
+    1,
+    128
+  ],
+  "state_energy_holdouts": [
+    {
+      "A": 137,
+      "L": 137,
+      "branch_margin": {
+        "lower": "0.2499999799628499093",
+        "outward_decimal_digits": 19,
+        "upper": "0.2499999799628499094"
+      },
+      "coherent_energy_upper": {
+        "lower": "0.000000000003995832489976731761",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000003995832489976731762"
+      },
+      "completed_counterseed_energy": 0,
+      "energy_interval": {
+        "lower": "0.000000000003988587556853776073",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000003988694110543891277"
+      },
+      "forcing_margin": {
+        "lower": "0.4999875799349225301",
+        "outward_decimal_digits": 19,
+        "upper": "0.4999875799349225302"
+      },
+      "h": 1,
+      "method": "exact rational consequences of proved branch-projection lemma",
+      "quadratic_projection_interval": {
+        "lower": "0.00000000002768279625033876780",
+        "outward_decimal_digits": 29,
+        "upper": "0.00000000002768353578002571756"
+      },
+      "scaled_A4_interval": {
+        "lower": "0.001405081121470771990",
+        "outward_decimal_digits": 21,
+        "upper": "0.001405118657710423206"
+      }
+    },
+    {
+      "A": 263,
+      "L": 263,
+      "branch_margin": {
+        "lower": "0.2499999971697282590",
+        "outward_decimal_digits": 19,
+        "upper": "0.2499999971697282591"
+      },
+      "coherent_energy_upper": {
+        "lower": "0.0000000000002940114718985294826",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000002940114718985294827"
+      },
+      "completed_counterseed_energy": 0,
+      "energy_interval": {
+        "lower": "0.0000000000002937367601420921923",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000002937388829386711828"
+      },
+      "forcing_margin": {
+        "lower": "0.4999966210919086588",
+        "outward_decimal_digits": 19,
+        "upper": "0.4999966210919086589"
+      },
+      "h": 1,
+      "method": "exact rational consequences of proved branch-projection lemma",
+      "quadratic_projection_interval": {
+        "lower": "0.000000000003913670942643478821",
+        "outward_decimal_digits": 30,
+        "upper": "0.000000000003913699226097840208"
+      },
+      "scaled_A4_interval": {
+        "lower": "0.001405339633172141220",
+        "outward_decimal_digits": 21,
+        "upper": "0.001405349789375144802"
+      }
+    },
+    {
+      "A": 521,
+      "L": 521,
+      "branch_margin": {
+        "lower": "0.2499999996360692755",
+        "outward_decimal_digits": 19,
+        "upper": "0.2499999996360692756"
+      },
+      "coherent_energy_upper": {
+        "lower": "0.00000000000001908415293866111968",
+        "outward_decimal_digits": 32,
+        "upper": "0.00000000000001908415293866111969"
+      },
+      "completed_counterseed_energy": 0,
+      "energy_interval": {
+        "lower": "0.00000000000001907520395943558083",
+        "outward_decimal_digits": 32,
+        "upper": "0.00000000000001907523902974679840"
+      },
+      "forcing_margin": {
+        "lower": "0.4999991377803114686",
+        "outward_decimal_digits": 19,
+        "upper": "0.4999991377803114687"
+      },
+      "h": 1,
+      "method": "exact rational consequences of proved branch-projection lemma",
+      "quadratic_projection_interval": {
+        "lower": "0.0000000000005034741444049258057",
+        "outward_decimal_digits": 31,
+        "upper": "0.0000000000005034750700545379586"
+      },
+      "scaled_A4_interval": {
+        "lower": "0.001405465157150441938",
+        "outward_decimal_digits": 21,
+        "upper": "0.001405467741138564505"
+      }
+    },
+    {
+      "A": 1031,
+      "L": 1031,
+      "branch_margin": {
+        "lower": "0.2499999999530459281",
+        "outward_decimal_digits": 19,
+        "upper": "0.2499999999530459282"
+      },
+      "coherent_energy_upper": {
+        "lower": "0.000000000000001244246662859914561",
+        "outward_decimal_digits": 33,
+        "upper": "0.000000000000001244246662859914562"
+      },
+      "completed_counterseed_energy": 0,
+      "energy_interval": {
+        "lower": "0.000000000000001243952689993760091",
+        "outward_decimal_digits": 33,
+        "upper": "0.000000000000001243953273534885972"
+      },
+      "forcing_margin": {
+        "lower": "0.4999997796659470532",
+        "outward_decimal_digits": 19,
+        "upper": "0.4999997796659470533"
+      },
+      "h": 1,
+      "method": "exact rational consequences of proved branch-projection lemma",
+      "quadratic_projection_interval": {
+        "lower": "0.00000000000006497298023630483183",
+        "outward_decimal_digits": 32,
+        "upper": "0.00000000000006497301071524759486"
+      },
+      "scaled_A4_interval": {
+        "lower": "0.001405524837958272995",
+        "outward_decimal_digits": 21,
+        "upper": "0.001405525497293272625"
+      }
+    }
+  ],
+  "status": "exact finite controls; paper theorems are not inferred from these runs"
+}
