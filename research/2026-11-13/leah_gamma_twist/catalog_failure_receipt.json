@@ -1,0 +1,141 @@
+{
+  "commit": "afc1a0cbd91a526c64a3cc34ada6356896a20a46",
+  "tree": "b332c8c45532c1b759b2eb8a86688de75e69eb26",
+  "status": "FAIL",
+  "started_utc": "2026-11-13T01:46:07.541549+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "name": "provenance",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/provenance.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.094,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "name": "native_tests",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/native_tests.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 1504.399,
+      "log_sha256": "5ffbe870a54344b18c2c4a4a50363a7236043f69f5653d48d0075c6cf6378f0f"
+    },
+    {
+      "name": "observer_foundations",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/observer_foundations.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.133,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "name": "ordinal_succ",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/ordinal_succ.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 3.267,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "name": "new_research_tests",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-13/leah_gamma_twist",
+        "-p",
+        "test_*.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/new_research_tests.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 6.613,
+      "log_sha256": "dbe128f886254140bb97702d209885910cb5728fda8db0947f349f0e82754e8a"
+    },
+    {
+      "name": "r0_exact_audit",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "research/2026-11-13/leah_gamma_twist/audit_r0.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/r0_exact_audit.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.228,
+      "log_sha256": "96b942d0c1432be24a5fed8a8cec2265ac262c76313cb30b33c96e5921e554bd"
+    },
+    {
+      "name": "math_memory_catalog",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/math_memory_catalog.log",
+      "status": "FAIL",
+      "exit_code": 1,
+      "elapsed_seconds": 2.344,
+      "log_sha256": "568002b749a609e3df1b402124df7f010abed3c1ac6742ddff1a087a517d241c"
+    },
+    {
+      "name": "math_memory_graph",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/math_memory_graph.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.045,
+      "log_sha256": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968"
+    },
+    {
+      "name": "diff_check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/diff_check.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.024,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "final_commit": "afc1a0cbd91a526c64a3cc34ada6356896a20a46",
+  "final_tree": "b332c8c45532c1b759b2eb8a86688de75e69eb26",
+  "tracked_status": "",
+  "finished_utc": "2026-11-13T02:11:24.739248+00:00",
+  "raw_log_archive": "catalog_failure_logs.json.gz",
+  "raw_log_archive_sha256": "4442a1bab48fe48eb8af4127ee4c582c4c7fd089af7c087334acd803a850ecb5",
+  "diagnosis": "The catalog builder was invoked without --write after endpoint documentation changed. Its default action reported statistics; --check correctly rejected the unchanged generated catalog. All other commands exited zero.",
+  "repair": "Regenerate with python scripts/build_math_memory.py --write, check it before committing, then run the complete required gate on the repaired final commit. No mathematical or executable source changes."
+}

@@ -44,6 +44,16 @@ inequalities, rounded block count and absence of threshold-dependent arithmetic
 constants. No new finite assertions are claimed for that extension. The final
 gate below must still run on the actual commit containing it.
 
+The endpoint candidate `afc1a0cbd91a526c64a3cc34ada6356896a20a46`
+passed every command except the catalog consistency check. The builder had
+been invoked without `--write`, which only reports statistics and left stale
+document hashes. `catalog_failure_receipt.json` and `catalog_failure_logs.json.gz`
+retain that FAIL verdict and every raw log. The repair is explicit regeneration
+with `python scripts/build_math_memory.py --write`; the final gate checks the
+catalog before the long native suite. No mathematical or executable source was
+changed by this repair. A successful earlier native suite is not relabeled as
+a successful complete gate.
+
 ## Baseline replay and its failed wrapper
 
 The Main XXV runner was executed before extending its mathematics. All eleven
