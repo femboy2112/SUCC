@@ -21,6 +21,16 @@ class GaugeNormalityAuditTest(unittest.TestCase):
         for n in range(1,len(s)):
             self.assertEqual(s[n],16*s[n-1]+duck_bbp.forcing(n))
 
+    def test_positive_source_decomposition_proves_tail_envelope_input(self):
+        for n in range(1, 32):
+            p = 8*n - 7
+            r = Q(6,p*(p+3))+Q(4,p*(p+4))+Q(5,p*(p+5))
+            self.assertEqual(duck_bbp.forcing(n),r)
+            self.assertGreater(r,0)
+            self.assertGreater(duck_bbp.forcing(n),duck_bbp.forcing(n+1))
+            # T_n < r(n+1)/15 is the separately imported analytic tail fact.
+            self.assertLess(duck_bbp.forcing(n+1)/15,Q(1,64*n*n))
+
     def test_b4_parity_under_circle_inversion(self):
         for a in range(-22, 22):
             t=Q(a,17)
