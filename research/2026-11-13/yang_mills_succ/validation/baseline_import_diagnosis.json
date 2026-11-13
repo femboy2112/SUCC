@@ -1,0 +1,55 @@
+[
+  {
+    "name": "baseline_import_probe",
+    "working_tree_base": "db9fb4b84672050efa79b13377f1e73364598a14",
+    "cwd": "/workspace/scratch/87e770cb18ab/SUCC_baseline",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/meta_choice_descent_probe.py"
+    ],
+    "PYTHONPATH_override": null,
+    "exit_code": 1,
+    "log": "validation/baseline_import_probe.log",
+    "sha256": "98ac301463dc6e79265823c3f902eb3116b255f205d3f40106be44d5f90e61c6"
+  },
+  {
+    "name": "baseline_affected_suite",
+    "working_tree_base": "db9fb4b84672050efa79b13377f1e73364598a14",
+    "cwd": "/workspace/scratch/87e770cb18ab/SUCC_baseline",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_eodcs_meta_choice_descent.py",
+      "-v"
+    ],
+    "PYTHONPATH_override": null,
+    "exit_code": 1,
+    "log": "validation/baseline_affected_suite.log",
+    "sha256": "8ebcfec8b2da1bbfffce48b9b4c8d154c6286fa1ce53a64738d4959cb2f21a8d"
+  },
+  {
+    "name": "affected_suite_with_project_path",
+    "working_tree_base": "db9fb4b84672050efa79b13377f1e73364598a14",
+    "cwd": "/workspace/scratch/87e770cb18ab/SUCC",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_eodcs_meta_choice_descent.py",
+      "-v"
+    ],
+    "PYTHONPATH_override": "/workspace/scratch/87e770cb18ab/SUCC",
+    "exit_code": 0,
+    "log": "validation/affected_suite_with_project_path.log",
+    "sha256": "62e174ed22a93420eab33db478e5f7d993c449480c28cf9f8c489b7541b3a474"
+  }
+]
