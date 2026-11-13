@@ -1,0 +1,125 @@
+{
+  "authority": "exact finite checks; conditional asymptotic claims have paper proofs",
+  "centered_carry_range_count": 319,
+  "centered_carry_range_horizon": 320,
+  "first_pulse_times": [
+    16,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37
+  ],
+  "green_plus_terminal_grouped_cases": 602,
+  "holographic_repair": {
+    "endpoint_gap": 0,
+    "h": 32,
+    "interior_gap": 2,
+    "q": 1
+  },
+  "shell_count_cases": 10,
+  "shell_count_rows": [
+    {
+      "B": 16,
+      "K": 8,
+      "rational_lower": "6",
+      "rational_upper": "17"
+    },
+    {
+      "B": 31,
+      "K": 15,
+      "rational_lower": "27/2",
+      "rational_upper": "32"
+    },
+    {
+      "B": 64,
+      "K": 32,
+      "rational_lower": "30",
+      "rational_upper": "65"
+    },
+    {
+      "B": 127,
+      "K": 63,
+      "rational_lower": "123/2",
+      "rational_upper": "128"
+    },
+    {
+      "B": 256,
+      "K": 85,
+      "rational_lower": "250/3",
+      "rational_upper": "129"
+    },
+    {
+      "B": 511,
+      "K": 170,
+      "rational_lower": "505/3",
+      "rational_upper": "513/2"
+    },
+    {
+      "B": 1024,
+      "K": 341,
+      "rational_lower": "1018/3",
+      "rational_upper": "513"
+    },
+    {
+      "B": 2048,
+      "K": 682,
+      "rational_lower": "2042/3",
+      "rational_upper": "1025"
+    },
+    {
+      "B": 4096,
+      "K": 1024,
+      "rational_lower": "1022",
+      "rational_upper": "4099/3"
+    },
+    {
+      "B": 8192,
+      "K": 2048,
+      "rational_lower": "2046",
+      "rational_upper": "8195/3"
+    }
+  ],
+  "source_green_cases": 40,
+  "status": "PASS",
+  "terminal_root_rows": [
+    {
+      "B": 3,
+      "M": 6,
+      "terminal_zero": true
+    },
+    {
+      "B": 8,
+      "M": 16,
+      "terminal_zero": true
+    },
+    {
+      "B": 17,
+      "M": 34,
+      "terminal_zero": true
+    },
+    {
+      "B": 37,
+      "M": 74,
+      "terminal_zero": true
+    },
+    {
+      "B": 83,
+      "M": 166,
+      "terminal_zero": true
+    },
+    {
+      "B": 127,
+      "M": 254,
+      "terminal_zero": true
+    }
+  ],
+  "terminal_states_checked": 550,
+  "waiting_time_cases": 8177
+}

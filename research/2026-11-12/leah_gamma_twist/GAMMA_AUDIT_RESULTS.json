@@ -1,0 +1,43 @@
+{
+  "passport_checks": 12,
+  "ratio_checks": 6,
+  "exact_convex_breakpoint_checks": 150,
+  "windows": [
+    {
+      "n": 31,
+      "t": 39,
+      "fresh_survivors": 9,
+      "old_survivors": 20,
+      "excluded_divisors": 0,
+      "finite_source_cancellations": 0,
+      "distinct_selected_old_primes": 20
+    },
+    {
+      "n": 83,
+      "t": 110,
+      "fresh_survivors": 23,
+      "old_survivors": 43,
+      "excluded_divisors": 1,
+      "finite_source_cancellations": 0,
+      "distinct_selected_old_primes": 44
+    },
+    {
+      "n": 137,
+      "t": 205,
+      "fresh_survivors": 54,
+      "old_survivors": 51,
+      "excluded_divisors": 1,
+      "finite_source_cancellations": 0,
+      "distinct_selected_old_primes": 52
+    },
+    {
+      "n": 211,
+      "t": 422,
+      "fresh_survivors": 167,
+      "old_survivors": 56,
+      "excluded_divisors": 0,
+      "finite_source_cancellations": 0,
+      "distinct_selected_old_primes": 56
+    }
+  ]
+}
