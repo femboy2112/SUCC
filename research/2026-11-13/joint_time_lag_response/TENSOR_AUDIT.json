@@ -1,0 +1,31 @@
+{
+  "AL1_tensor_inequality_checks": 1164,
+  "AL2_weighted_cauchy_checks": 414,
+  "implementation": "Independent fractions.Fraction implementation",
+  "lengths": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34,
+    55,
+    89
+  ],
+  "mutation": {
+    "G_H": "829/1000",
+    "G_J": "1/10",
+    "H": 100,
+    "J": 10,
+    "kind": "Non-positive-definite triangular correlation array",
+    "rejected": true
+  },
+  "random_seed": 20261113,
+  "scope": "Finite exact formula audit; no BBP statistical claim",
+  "status": "PASS",
+  "trials_per_length": 6,
+  "vector_payload_sha256": "de7b967939b6761873b6bc6b85db82fb5824f1e234f60f4dcdd1080112254512",
+  "vectors": 60
+}
