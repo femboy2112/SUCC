@@ -1,0 +1,50 @@
+{
+  "additional_test_count": 40,
+  "code_sha256": {
+    "observational_succ/ym_graph_semantics.py": "0eeb93e1cd84fa963dbee0304e89ddf575d58541de7128e2fe26d48a05e28498",
+    "observational_succ/ym_haar_bridge.py": "8b2a18e78094af5b611d30b995d200c21689230f310412cd2633ac1f22179a99",
+    "observational_succ/ym_succ_character.py": "b2d499f01bd23dcb90f7bb47e67868fa2cc15bd21ba2b68f831f9129f5f3534b",
+    "scripts/yang_mills_qm_bridge_probe.py": "572356f9681ecaf23ad7236dd70974a9c50ba6c54b1ec4067f41b4caeaf5def0",
+    "tests/test_ym_graph_semantics.py": "920660725c387643c6a9ee01e911f428a3e2c8e3a2ba234212e02c1a12140d7f",
+    "tests/test_ym_haar_bridge.py": "c079ee3af1614cacdb68cf317d2353d6a8660fb9f772d1797d1ba88da16a5b19",
+    "tests/test_ym_qm_integration.py": "d4ef4d5b48a69825fe2552f1d9bc7cee88da847df80837f364cb5433faff7ea1",
+    "tests/test_ym_succ_character.py": "609035a1d6976a0e464eaa9cf51408b9cde6d191cbb3f1fbd52b544967afb7d2"
+  },
+  "commands": [
+    {
+      "command": "PYTHONPATH=. python -m unittest discover -s tests -p 'test_ym_*.py' -v",
+      "exit_code": 0,
+      "log": "focused_tests.log",
+      "sha256": "6ea820b099e375362e8222bcf6fbf9fa46860c14bef5a04e58928a2e096bdd25"
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "log": "provenance.log",
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "log": "foundations.log",
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "log": "ordinal.log",
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "command": "python scripts/yang_mills_qm_bridge_probe.py",
+      "exit_code": 0,
+      "log": "finite_probe.log",
+      "sha256": "24fbe5abdfe7056bf475502ef624ee6555273b5e7bc45621bdd7b3e46ba4e9f9"
+    }
+  ],
+  "cwd": "/workspace/scratch/87e770cb18ab/SUCC",
+  "focused_test_count": 76,
+  "parent_commit": "3929e30930438881bebcb371646389d9e66bfbde",
+  "probe_rerun_note": "The standalone probe was rerun after adding weighted Chebyshev composition checks; no production module or test changed during the full-suite run.",
+  "python_version": "Python 3.12.14"
+}

@@ -4,6 +4,11 @@ Base: `db9fb4b84672050efa79b13377f1e73364598a14` (Main XXV).
 Date: 2026-11-13. All new code is standard-library Python using exact rational
 arithmetic. No upstream Lean declaration was compiled or kernel-replayed here.
 
+**Historical first-round record.** The quantum/Haar continuation has since
+completed the full rerun with the diagnosed project import path: **13,126 tests
+passed, exit 0**. Its [validation and raw receipts](qm_graph_bridge/VALIDATION.md)
+are separate. The original run, diagnosis and logs below remain unchanged.
+
 ## 1. Reproduced gates
 
 | Command | Result | Evidence |
@@ -54,8 +59,9 @@ The repository's [CI workflow](../../../.github/workflows/ci.yml) installs the
 project with `python -m pip install -e ".[test]"` before its full test command;
 this local checkout was not installed. The diagnosis establishes a missing
 package-import precondition in the local run, rather than a regression from
-the new modules. No historical script or test was changed. The complete suite
-was not rerun after supplying the path, so its recorded raw result remains
+the new modules. No historical script or test was changed. At the end of that
+first round, the complete suite had not been rerun after supplying the path,
+so its recorded raw result remains
 **one error**, not a clean full-suite pass. Remote CI is a separate result and
 is not claimed here.
 

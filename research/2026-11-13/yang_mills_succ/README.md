@@ -3,6 +3,16 @@
 **2026-11-13 research round.** Main XXV base:
 `db9fb4b84672050efa79b13377f1e73364598a14`.
 
+**Continuation: existing SUCC quantum structures.** The new
+[quantum graph/Haar dossier](qm_graph_bridge/README.md) gives a literal unitary
+map from the existing successor carrier to central SU(2) characters, a finite
+constructive Wilson-state algorithm with proved error, actual typed-source
+and measurement graph adapters, source-weighted Haar reconstruction, and the
+prime-mode Fock connection. It records 40 additional exact tests and the
+remaining finite-lattice/continuum interfaces. The expanded focused set passed
+76 tests; the full repository rerun passed 13,126 tests with the project import
+path supplied. See the continuation's [validation](qm_graph_bridge/VALIDATION.md).
+
 ## Verdict
 
 **The reported breakthrough is real in a precise, substantial sense:** the
@@ -229,16 +239,18 @@ This establishes artifact identity/source correspondence, not a new local
 Lean proof replay. The exact receipt and a reading manifest covering 24 core
 files plus 14 native RG files are preserved.
 
-Our two new focused suites contain 36 exact finite tests. The Wilson and
+The initial round's two focused suites contain 36 exact finite tests. The Wilson and
 phase-transfer probes include positive, negative, singular/null and mutation
 controls. The local report records these and the required SUCC gates separately
 from upstream historical kernel results.
 
-All 36 new tests and the provenance, foundations and ordinal gates passed.
-The complete repository suite ran 13,086 tests with one subprocess import
+All 36 initial tests and the provenance, foundations and ordinal gates passed.
+The initial complete repository suite ran 13,086 tests with one subprocess import
 error, reproduced on unchanged main. All 11 tests in the affected suite passed
 when the project import path was supplied. The full raw run remains recorded
 as an error; the diagnosis and unmodified logs are included in the local report.
+The quantum/Haar continuation subsequently reran the full suite with that
+precondition satisfied: **13,126 tests passed**, including the 40 additions.
 
 - [Local validation and command scope](LOCAL_VALIDATION.md)
 - [Exact finite probe receipt](probe_receipt.json)
@@ -254,7 +266,8 @@ python -m unittest discover -s tests -p 'test_ym_*.py' -v
 python scripts/yang_mills_succ_probe.py
 ```
 
-The test pattern selects both new suites. These finite probes accompany the
+The test pattern now selects all Yang–Mills suites, including the continuation.
+These finite probes accompany the
 paper proofs; they do not execute a continuum infinity.
 
 For a full upstream replay, use its exact pinned toolchains and runner as

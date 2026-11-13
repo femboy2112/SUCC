@@ -1,0 +1,19 @@
+{
+  "base_commit": "3929e30930438881bebcb371646389d9e66bfbde",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/workspace/scratch/87e770cb18ab/SUCC",
+  "PYTHONPATH": "/workspace/scratch/87e770cb18ab/SUCC",
+  "exit_code": 0,
+  "elapsed_seconds": 1038.976,
+  "log": "full_suite.log",
+  "sha256": "7133ed35c46e40e83c2b6b6341debb14e15cf189e131c599e583bd93acc30107"
+}

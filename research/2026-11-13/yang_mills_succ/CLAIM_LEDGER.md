@@ -6,6 +6,11 @@ Multiple agent reports from the same model are not independent expert
 endorsements; their alternate implementations are recorded only at their
 actual computational scope.
 
+The [quantum/Haar continuation ledger](qm_graph_bridge/CLAIM_LEDGER.md) adds
+QC-01–QC-18: exact successor and multiplication character maps, a constructive
+Wilson graph state, weighted graph/QM semantics, source-preserving Haar,
+prime-mode Fock structure, and the remaining finite-lattice/continuum boundary.
+
 | ID | Claim | Earned status and evidence | Boundary / next discriminator |
 |---|---|---|---|
 | YM-EXT-01 | Public October submission constructs a 4d Wilson scaling-limit QFT in its declared group class | **EXTERNAL FORMALLY CHECKED / committee-endorsed**; primary assessment and pinned specs | Full local kernel replay not run; semantic/domain review continues |
