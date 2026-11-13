@@ -289,3 +289,13 @@ residual estimate, or a separately executed full upstream formal replay.
 The push is an additive research dossier and reproducible mathematical slice,
 not a claim to have solved those problems or independently reproduced the
 complete four-dimensional existence proof.
+
+## Coupled-source continuation
+
+[Coupled Wilson graphs and reflection order](coupled_wilson/README.md) extends
+the one-plaquette interface to exact compact SU(2) shared-link calculations,
+proves a factorwise reflection-positive approximation under an explicit split,
+and supplies a finite reflected Hilbert quotient. It retains a global-Taylor
+counterexample, a complete signed triple-trace gauge observer with a conditioned
+inverse bound, and bounded Lean replay receipts. Its finite estimates do not
+claim the continuum limit or mass gap. See its scoped claim ledger and tests.

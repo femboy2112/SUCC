@@ -1220,3 +1220,14 @@ Research-draft `TG-` namespace; nothing here promotes π normality or RH.
 **Firewall unchanged:** π base-16/base-3 normality, RH, the gate `T_N(h)=o(N)` (`Sbar_N(h)=o(1)`),
 general Collatz, shifted Lonely Runner n=18..94 all **OPEN**. Main XVI is correction + classical
 analysis + an obstruction; no mathematical status was promoted.
+
+## Research draft — coupled SU(2) Wilson construction (2026-11-13)
+
+The [scoped ledger](../research/2026-11-13/yang_mills_succ/coupled_wilson/CLAIM_LEDGER.md)
+records finite exact compact-group certificates (CW-01/02), the global-polynomial
+reflection-positivity counterexample and factorwise repair (RO-01–04), and the
+classical complete triple-trace gauge observer with a conditioned inverse
+estimate (TO-01/04). Each entry links a proof, hypotheses, hostile controls and
+next falsifier. Bounded Lean replay is explicitly distinguished from reproducing
+the external 4D Yang–Mills endpoint. This draft does not promote pi normality,
+RH, or the Yang–Mills mass gap; its parent PR #613 remains unmerged.

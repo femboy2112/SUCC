@@ -1,0 +1,49 @@
+{
+  "upstream_head": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98",
+  "upstream_source": "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/submission/YM/UVExtension/Orchard/Barrel.lean",
+  "source_sha256": "e3b65f4eb934fe60668bfe6642abe6314cfcc73a90efe22cc7cd3378e9c50912",
+  "lean_release_sha256": "fca846f3588724a38ad19ee40292c67cb7438d7555903372e3308eef795ba516",
+  "steps": [
+    {
+      "label": "upstream_generator",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/af4759a8623f/ym-replay/bounded/YM/UVExtension/Orchard/Barrel.olean",
+        "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/submission/YM/UVExtension/Orchard/Barrel.lean"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "input file '/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/submission/YM/UVExtension/Orchard/Barrel.lean' must be contained in root directory (/workspace/scratch/af4759a8623f/ym-replay/bounded/)\n"
+    },
+    {
+      "label": "positive_transport",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/af4759a8623f/ym-replay/bounded/ValidTransport.olean",
+        "/workspace/scratch/af4759a8623f/ym-replay/bounded/ValidTransport.lean"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "stdout": "/workspace/scratch/af4759a8623f/ym-replay/bounded/ValidTransport.lean:1:0: error: object file '/workspace/scratch/af4759a8623f/ym-replay/bounded/YM/UVExtension/Orchard/Barrel.olean' of module YM.UVExtension.Orchard.Barrel does not exist\n",
+      "stderr": ""
+    },
+    {
+      "label": "negative_wrong_variant",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "/workspace/scratch/af4759a8623f/ym-replay/bounded/InvalidTransport.lean"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "/workspace/scratch/af4759a8623f/ym-replay/bounded/InvalidTransport.lean:1:0: error: object file '/workspace/scratch/af4759a8623f/ym-replay/bounded/YM/UVExtension/Orchard/Barrel.olean' of module YM.UVExtension.Orchard.Barrel does not exist\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Only upstream proof-transport generator plus newly authored positive/negative controls; no Yang-Mills endpoint compiled."
+}

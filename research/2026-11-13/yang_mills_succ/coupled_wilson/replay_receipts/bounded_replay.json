@@ -1,0 +1,190 @@
+{
+  "scope": "Upstream integrity/text correspondence, one proof-transport generator, new positive/negative controls, and a finite rational Gram certificate. No Yang-Mills endpoint, Comparator, or full dependency graph is compiled.",
+  "upstream_head_expected": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98",
+  "lean_archive_sha256_expected": "fca846f3588724a38ad19ee40292c67cb7438d7555903372e3308eef795ba516",
+  "lean_archive_url": "https://github.com/leanprover/lean4/releases/download/v4.32.0/lean-4.32.0-linux.tar.zst",
+  "steps": [
+    {
+      "label": "upstream_head",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/YM-audit",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98\n",
+      "stderr": ""
+    },
+    {
+      "label": "lean_version",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "Lean (version 4.32.0, x86_64-unknown-linux-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)\n",
+      "stderr": ""
+    },
+    {
+      "label": "upstream_integrity",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/scripts/verify.py",
+        "integrity",
+        "--run-dir",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/integrity"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "Results: /workspace/scratch/af4759a8623f/ym-replay/final-run-v2/integrity/result.json\n",
+      "stderr": ""
+    },
+    {
+      "label": "upstream_generator",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/YM/UVExtension/Orchard/Barrel.olean",
+        "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/submission/YM/UVExtension/Orchard/Barrel.lean"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/submission",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "valid_transport",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/ValidTransport.olean",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/ValidTransport.lean"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "theorem Vintage.YM.authenticatedValue_eq : Vintage.YM.authenticatedValue = 7 :=\nrfl\n'Vintage.YM.authenticatedValue_eq' does not depend on any axioms\n",
+      "stderr": ""
+    },
+    {
+      "label": "invalid_transport",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/InvalidTransport.lean"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/InvalidTransport.lean:9:0: error: aged version of YM.authenticatedValue_eq: (kernel) declaration type mismatch, 'Vintage.YM.authenticatedValue_eq' has type\n  Vintage.YM.authenticatedValue = Vintage.YM.authenticatedValue\nbut it is expected to have type\n  Vintage.YM.authenticatedValue = 7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rational_gram_certificate",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/WilsonTaylorNegative.olean",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/WilsonTaylorNegative.lean"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "'SUCC.WilsonTaylor.moment_to_gram' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.partition_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.normalized_negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.not_positive_semidefinite' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "label": "wrong_sign_control",
+      "command": [
+        "/workspace/scratch/af4759a8623f/ym-replay/lean-4.32.0-linux/bin/lean",
+        "-DwarningAsError=true",
+        "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/WrongSign.lean"
+      ],
+      "cwd": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/build/WrongSign.lean:52:64: error: Tactic `decide` failed for proposition\n  quadratic witness = 71 / 512\nbecause its `Decidable` instance\n  instDecidableEqRat (quadratic witness) (71 / 512)\ndid not reduce to `isTrue` or `isFalse`.\n\nReduction got stuck at the `Decidable` instance\n  match\n    ((witness 0 * gram 0 0 * witness 0 + witness 0 * gram 0 1 * witness 1 + witness 0 * gram 0 2 * witness 2 +\n                    witness 1 * gram 1 0 * witness 0 +\n                  witness 1 * gram 1 1 * witness 1 +\n                witness 1 * gram 1 2 * witness 2 +\n              witness 2 * gram 2 0 * witness 0 +\n            witness 2 * gram 2 1 * witness 1).add\n        (witness 2 * gram 2 2 * witness 2)).num,\n    (Rat.mul 71 (Rat.inv 512)).num with\n  | Int.ofNat a, Int.ofNat b =>\n    match decEq a b with\n    | isTrue h => isTrue \u22ef\n    | isFalse h => isFalse \u22ef\n  | Int.ofNat a, Int.negSucc a_1 => isFalse \u22ef\n  | Int.negSucc a, Int.ofNat a_1 => isFalse \u22ef\n  | Int.negSucc a, Int.negSucc b =>\n    match decEq a b with\n    | isTrue h => isTrue \u22ef\n    | isFalse h => isFalse \u22ef\n'SUCC.WilsonTaylor.moment_to_gram' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.negative_direction' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.partition_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.normalized_negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SUCC.WilsonTaylor.not_positive_semidefinite' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "status": "passed",
+  "lean_archive_sha256_actual": "fca846f3588724a38ad19ee40292c67cb7438d7555903372e3308eef795ba516",
+  "upstream_head_actual": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98",
+  "source_sha256": "e3b65f4eb934fe60668bfe6642abe6314cfcc73a90efe22cc7cd3378e9c50912",
+  "upstream_integrity": {
+    "started_utc": "2026-11-13T21:36:13.821747+00:00",
+    "stage": "integrity",
+    "status": "passed",
+    "source": "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/submission",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "run_directory": "/workspace/scratch/af4759a8623f/ym-replay/final-run-v2/integrity",
+    "commands": [],
+    "source_build_present_at_start": false,
+    "LEAN_NUM_THREADS": null,
+    "mathlib_cache_directory": "/workspace/scratch/af4759a8623f/YM-audit/submissions/openai-20261028/runs/cache/mathlib",
+    "input_manifest_hashes": {
+      "provenance/package-files.json": "dbfae791e08c90190d1e4d9f26ffb15ac6729ebe78ca59abaf72c4a51935b861",
+      "provenance/review-imports.json": "f1045a64c01149afb0c0c9d97714ded36e725373ce0f127a3e477e0584860507",
+      "provenance/october-import.json": "1ee2d290dfa6786ccd7888a4db7be48cbb55aad72a53e2533b2e1834b2ff1bb8"
+    },
+    "comparator_mode": "upstream development launcher; no Landrun isolation or external kernel",
+    "integrity_before": {
+      "submission_files": 9508,
+      "review_modules": 43,
+      "submission_manifest_sha256": "7b4aefb2b7554495342c87ae9123e3e4137d02f0c03a08ed3eefe5988f4d9329",
+      "passed": true
+    },
+    "os_correspondence": {
+      "passed": true,
+      "declarations": [
+        {
+          "name": "OSInnerProduct",
+          "upstream": "Specification.lean",
+          "local": "YangMills/OSRecon/Vendored/Axioms.lean",
+          "whole_declaration_matches": true
+        },
+        {
+          "name": "OsterwalderSchraderAxioms",
+          "upstream": "Specification.lean",
+          "local": "YangMills/OSRecon/Vendored/Axioms.lean",
+          "whole_declaration_matches": true
+        },
+        {
+          "name": "OSArityLinearGrowthCondition",
+          "upstream": "Specification.lean",
+          "local": "YangMills/OSRecon/Growth.lean",
+          "whole_declaration_matches": true
+        },
+        {
+          "name": "BorchersSequence",
+          "upstream": "Specification/Wightman.lean",
+          "local": "YangMills/OSRecon/Vendored/OSConj.lean",
+          "whole_declaration_matches": true
+        }
+      ],
+      "limitation": "Text correspondence after documented normalization; full upstream projects are not jointly compiled."
+    },
+    "integrity_after": {
+      "submission_files": 9508,
+      "review_modules": 43,
+      "submission_manifest_sha256": "7b4aefb2b7554495342c87ae9123e3e4137d02f0c03a08ed3eefe5988f4d9329",
+      "passed": true
+    },
+    "finished_utc": "2026-11-13T21:36:14.875013+00:00"
+  },
+  "fixtures_sha256": {
+    "ValidTransport.lean": "361a678a5e09c5d68c1c4f8ec61cf1199d926493e637e84cd698a255bbaabe57",
+    "InvalidTransport.lean": "8c9972ebb4e706f231abbae081ccde59ed715a1f12349e789be3eace46730f00",
+    "WilsonTaylorNegative.lean": "a8c6eb7affcba8b6953902b8c348d189e45ce1bc8bb13b1d6172ec64ac387155"
+  },
+  "source_sha256_after": "e3b65f4eb934fe60668bfe6642abe6314cfcc73a90efe22cc7cd3378e9c50912"
+}
