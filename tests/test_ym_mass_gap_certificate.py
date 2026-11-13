@@ -154,5 +154,19 @@ class MassGapCertificateTests(unittest.TestCase):
             entrywise_error_gap(((Q(1),),), ((Q(1,2),),), Q(3,4), Q(-1), Q(0))
 
 
+    def test_unique_vacuum_gapless_coherence_cutoffs(self):
+        # On the direct-sum excitation bank, each finite block has q_N<1
+        # but q_N -> 1, while every diagonal coarse/detail bound is 3/5.
+        for n in (2, 4, 8, 32, 128):
+            cross = Q(2, 5)*(1-Q(1, n))
+            t = ((Q(3, 5), cross), (cross, Q(3, 5)))
+            eye = ((Q(1), Q(0)), (Q(0), Q(1)))
+            q_n = 1-Q(2, 5*n)
+            self.assertTrue(two_block_gap(Q(3, 5), Q(3, 5), cross))
+            self.assertTrue(gram_gap_at_one_time(eye, t, q_n))
+            self.assertFalse(gram_gap_at_one_time(eye, t, Q(3, 4)))
+            self.assertEqual(Q(3, 5)+cross, q_n)
+
+
 if __name__ == "__main__":
     unittest.main()
