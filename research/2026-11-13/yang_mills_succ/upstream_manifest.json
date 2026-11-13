@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-13",
+  "purpose": "Pinned source provenance and limited local verification for the SUCC Yang-Mills existence transfer study.",
+  "claim_boundary": "This records an upstream existence construction and a local integrity/source-correspondence replay. It is not a SUCC proof of Yang-Mills existence, a full local Lean replay, or any mass-gap proof.",
+  "upstreams": [
+    {
+      "repository": "yang-mills-group/YM",
+      "commit": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98",
+      "url": "https://github.com/yang-mills-group/YM",
+      "commit_time_utc": "2026-11-11T03:37:54Z",
+      "assessment_date": "2026-11-10",
+      "role": "Committee assessment, original submission copy, review specifications and historical verification evidence"
+    },
+    {
+      "repository": "yang-mills-group/OpenAI-YM-20261028",
+      "commit": "3456e5e75cf8d4cd558955a5c7638fba2d68f464",
+      "url": "https://github.com/yang-mills-group/OpenAI-YM-20261028",
+      "commit_time_utc": "2026-11-05T23:01:12Z",
+      "role": "Separate original submission repository; commit metadata and selected source files independently retrieved"
+    }
+  ],
+  "public_primary_sources": [
+    {
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "date": "2026-10-26",
+      "role": "OpenAI announcement; not a substitute for committee assessment"
+    },
+    {
+      "url": "https://www.kitp.ucsb.edu/sites/default/files/3rd-Statement-About-Quantum-YangMills-Theory_Nov-9.pdf",
+      "date": "2026-11-09",
+      "role": "Committee announcement of public release"
+    }
+  ],
+  "inspected_files": [
+    {
+      "path": "README.md",
+      "bytes": 5768,
+      "sha256": "2ac0a80cfa2dd8a5e32f734507a547fbed0d7e3d43e8a523c69334efbf897776",
+      "inspection_scope": "Full README: committee verdict and November submission status.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/README.md"
+    },
+    {
+      "path": "docs/assessment-1.pdf",
+      "bytes": 657626,
+      "sha256": "8e658c00900bf723cbe90436eb1f78fca4f287e008a85c21fdceaf59e61db219",
+      "inspection_scope": "PDF text extraction; assessment, construction and validation sections, selected glossary entries. Not a line-by-line audit of the underlying proof.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/docs/assessment-1.pdf"
+    },
+    {
+      "path": "docs/examples/README.md",
+      "bytes": 3057,
+      "sha256": "a63ac06278f1794684ec4fe2beb74cd23fbb4a346e6c77e30cb6733199520689",
+      "inspection_scope": "Full worked-example index.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/docs/examples/README.md"
+    },
+    {
+      "path": "submissions/openai-20261028/docs/checks.md",
+      "bytes": 6846,
+      "sha256": "169e7b3d043345f4a2ad4968f572bb5b26d253c4dc23cd86c13e3ab66f05112b",
+      "inspection_scope": "Full check-scope document.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/docs/checks.md"
+    },
+    {
+      "path": "submissions/openai-20261028/docs/rerun.md",
+      "bytes": 6798,
+      "sha256": "d646239b8200b7fe78e2e943d0476dabdec3236a7e13f3478f9a9ea29fbb1f4d",
+      "inspection_scope": "Full reproduction instructions.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/docs/rerun.md"
+    },
+    {
+      "path": "submissions/openai-20261028/evidence/README.md",
+      "bytes": 4596,
+      "sha256": "8cd7c2f91e925cdb620b6c90cb3a0df140f739004a2e244989b603d97e1a4e9c",
+      "inspection_scope": "Full dated-evidence summary; this is upstream testimony, not fresh replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/evidence/README.md"
+    },
+    {
+      "path": "submissions/openai-20261028/docs/examples/OctoberChain.lean",
+      "bytes": 14677,
+      "sha256": "0cdf5fb7d1a5b5a05284f991004741f0e3ee0b6beb36c2a91505cbeec63ca8a2",
+      "inspection_scope": "Full commented seven-lemma source; read, not compiled here.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/docs/examples/OctoberChain.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/checks/AcceptanceSpec.lean",
+      "bytes": 9292,
+      "sha256": "c303146d967bda49354b97ef6b7c6a4c94bd3952835a50aabeaa55a233b4f2e9",
+      "inspection_scope": "Full combined acceptance specification.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/checks/AcceptanceSpec.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/checks/CombinedAcceptance.lean",
+      "bytes": 6192,
+      "sha256": "40f8c57aa96db688784fe57491c87ad6cc69f061d58174802b8593ac83ef0d92",
+      "inspection_scope": "Full assembly proof source; no fresh compilation.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/checks/CombinedAcceptance.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/checks/OPESpec.lean",
+      "bytes": 2324,
+      "sha256": "3ea7ffb5f7b386036ddb9bab7753d5bcc3e198853aee70b09f06be67891813dc",
+      "inspection_scope": "Full explicit OPE specification.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/checks/OPESpec.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/checks/OPECheck.lean",
+      "bytes": 4567,
+      "sha256": "ef5926e323e8fa47b8096a04e5a4c4cdaeba7a90545be9613e77c6eda5f75578",
+      "inspection_scope": "Full OPE adapter and phase-difference proof source; no fresh compilation.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/checks/OPECheck.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/README.md",
+      "bytes": 8909,
+      "sha256": "5477aa6f388153d48125efa8810733fc4a2d05c9b685c7a19acd734436c28126",
+      "inspection_scope": "Full original-submission README; distinguishes submitted verifier from later committee Comparator.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/README.md"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/Challenge.lean",
+      "bytes": 257,
+      "sha256": "d31b227db6e6e1f2aa5eaa66d3b004609fe7470dc2ac3825e0dce882a5fa4fe9",
+      "inspection_scope": "Full reference stub; deliberate sorry is separated from solution.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/Challenge.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/ChallengeSpec.lean",
+      "bytes": 10157,
+      "sha256": "e48b0be2b72d16b9b87c6c1923b3ae814270387bf9312b5cb0661dfa3e243749",
+      "inspection_scope": "Full public challenge and its joint existential quantifiers.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/ChallengeSpec.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/PublicTheory.lean",
+      "bytes": 13123,
+      "sha256": "94111ad258b4218a263fcc0a7136446d5a6eff0e090809b72036fb3a7aecfff8",
+      "inspection_scope": "GaugeGroup, IsSimple, basic fields, WightmanTheory and W0-W3 portions; other definitions not completely audited.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/PublicTheory.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/Solution.lean",
+      "bytes": 505,
+      "sha256": "1838214ba7159a2babe703000cfd9c43905fb909c1f27b73c46aae48c11ece24",
+      "inspection_scope": "Full endpoint projection proof.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/Solution.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/lakefile.toml",
+      "bytes": 651,
+      "sha256": "059b094901a965a455f46956a99f2f860aecf99b1d3e86d3eb51b8ed858bfe26",
+      "inspection_scope": "Full direct dependency and build target configuration.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/lakefile.toml"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/lean-toolchain",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e",
+      "inspection_scope": "Full toolchain pin.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/lean-toolchain"
+    },
+    {
+      "path": "submissions/openai-20261028/verification/tool-pins.json",
+      "bytes": 513,
+      "sha256": "2ab65d789bf76002b624b5956e5245d634ab547c3e01dc22c77f982a50d18d1b",
+      "inspection_scope": "Full Comparator/exporter revisions and mode.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/verification/tool-pins.json"
+    },
+    {
+      "path": "submissions/openai-20261028/verification/acceptance.json",
+      "bytes": 248,
+      "sha256": "710440530a850faf6cddb2daac24d43b4ab2b94351f647ef118cd63257d211f4",
+      "inspection_scope": "Full Comparator target configuration.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/verification/acceptance.json"
+    },
+    {
+      "path": "submissions/openai-20261028/verification/submission.json",
+      "bytes": 213,
+      "sha256": "999fe22d03854bd94606516c212dbf5663976ff8151b1ed7efa086947ca08237",
+      "inspection_scope": "Full Comparator target configuration.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/verification/submission.json"
+    },
+    {
+      "path": "submissions/openai-20261028/verification/ope.json",
+      "bytes": 216,
+      "sha256": "60c4ac055447d037bcdf54d1f9ce8bd6be46b2571106116df16ee5fdf83946ad",
+      "inspection_scope": "Full Comparator target configuration.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/verification/ope.json"
+    },
+    {
+      "path": "submissions/openai-20261028/scripts/verify.py",
+      "bytes": 16297,
+      "sha256": "24e71f5e379502c68b35e3b85ab4bb2ea11fe75828ecc435f641c28fa9e2680f",
+      "inspection_scope": "Integrity and OS-correspondence functions and command setup inspected; integrity stage executed.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/scripts/verify.py"
+    },
+    {
+      "path": "submissions/openai-20261028/provenance/october-import.json",
+      "bytes": 2660381,
+      "sha256": "1ee2d290dfa6786ccd7888a4db7be48cbb55aad72a53e2533b2e1834b2ff1bb8",
+      "inspection_scope": "Metadata inspected; all manifest entries consumed by integrity stage.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/provenance/october-import.json"
+    }
+  ],
+  "verification_input_manifests": {
+    "provenance/package-files.json": "dbfae791e08c90190d1e4d9f26ffb15ac6729ebe78ca59abaf72c4a51935b861",
+    "provenance/review-imports.json": "f1045a64c01149afb0c0c9d97714ded36e725373ce0f127a3e477e0584860507",
+    "provenance/october-import.json": "1ee2d290dfa6786ccd7888a4db7be48cbb55aad72a53e2533b2e1834b2ff1bb8"
+  },
+  "local_run": {
+    "command": "python3 scripts/verify.py integrity --run-dir /workspace/scratch/87e770cb18ab/ym-integrity-20261113",
+    "working_directory": "/workspace/scratch/87e770cb18ab/external-YM/submissions/openai-20261028",
+    "receipt_path": "upstream_integrity_receipt.json",
+    "receipt_sha256": "7d6dfc3f12c52dd612c7a5387d10b03d4debaf900965249190205c5907b894dd",
+    "raw_receipt_preserved_byte_for_byte": true,
+    "status": "passed",
+    "started_utc": "2026-11-13T20:15:00.462983+00:00",
+    "finished_utc": "2026-11-13T20:15:01.482660+00:00",
+    "submission_files": 9508,
+    "review_modules": 43,
+    "normalized_os_declarations": 4,
+    "fresh_lean_build": false,
+    "fresh_kernel_replay": false,
+    "fresh_comparator_run": false,
+    "interpretation": "Hash checks before/after and normalized source correspondence only. The receipt comparator_mode field describes runner configuration, not an executed Comparator stage."
+  },
+  "pinned_tools": {
+    "submission_lean": "4.32.0",
+    "mathlib": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "comparator": {
+      "commit": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+      "lean": "4.34.0"
+    },
+    "lean4export": {
+      "commit": "4e7915201d3f9f04470d9eae002fa695f7cdc589",
+      "lean": "4.32.0"
+    }
+  },
+  "resource_report": {
+    "provenance": "Upstream docs/rerun.md and assessment section 9.1; not measured by SUCC.",
+    "recorded_source_build_minutes_approx": 184,
+    "recorded_completed_dependency_and_build_tree_gib_approx": 52,
+    "additional_space_required_for_tools_and_temporary_files": true,
+    "local_full_replay_performed": false
+  },
+  "november_4_submission": "Listed as work in progress at the pinned committee revision; not audited in this package.",
+  "native_rg_inspected_files": [
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Literal.lean",
+      "bytes": 4272,
+      "sha256": "d832c7df22e70819f9f5511849294a4ee0d544c23cae70b8adb60299aab5b635",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Literal.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Discrete.lean",
+      "bytes": 3270,
+      "sha256": "6727438c227d6e641218303fd44776c562bf6948ae2b3a426cf84192e6db77ae",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Discrete.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/RG/History.lean",
+      "bytes": 9957,
+      "sha256": "ab604669cec205cd92020d34e4e672417ab40a0f484621067803548ba7bf81f6",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/RG/History.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Cross.lean",
+      "bytes": 5597,
+      "sha256": "95002a0da3b21e51311a7ed289dbfae9c53a2505f613bb6eb699fe16c3adeff2",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Cross.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Rent.lean",
+      "bytes": 6952,
+      "sha256": "4a686b7a3be8915966f7d4b4585624c170e26ec2ea0137acd98e24f968b4dd4c",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Rent.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/Cells/Tiling.lean",
+      "bytes": 10110,
+      "sha256": "e0c8344b9003e980cdd28eabd05f56988ac84a3571c4e250c0af94fcdb94742e",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/Cells/Tiling.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/Extraction/Center.lean",
+      "bytes": 4786,
+      "sha256": "e1a3d5a0a2c295f077cef1495391da4e0ea4f67492627cfbe0136a1644db6eea",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/Extraction/Center.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Moneys.lean",
+      "bytes": 5551,
+      "sha256": "e4508ef831ab0e2a939887dfe706653b953559ecc57d17cdb45c2da97ed86e3f",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Moneys.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Cohort.lean",
+      "bytes": 4783,
+      "sha256": "c797c0a1e6334d47db1a747b29e31d97f97a53c049cac6f0788350114054dafe",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Cohort.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/Cells/Certificate.lean",
+      "bytes": 1055,
+      "sha256": "9132fa91c1213753c4f77832c8c36b26b9dd8d367f5217bd351c526889355f6e",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/Cells/Certificate.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/Cells/Embedded.lean",
+      "bytes": 2108,
+      "sha256": "832d39d3288a1538e189edcf5f8285a17c987df4d5be34d6c72348a22b4cd6d7",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/Cells/Embedded.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Sluggish.lean",
+      "bytes": 8141,
+      "sha256": "faa6b557ab8461355577215b08a6fb3c1a74156407d3fca377165bd5c1074efa",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Sluggish.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Profiles.lean",
+      "bytes": 3369,
+      "sha256": "ddcec78fb024b75afc15a0b16dac58f2b626f22ea935641307e8af421835075e",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Profiles.lean"
+    },
+    {
+      "path": "submissions/openai-20261028/submission/YM/FullVolume/Tuned.lean",
+      "bytes": 7981,
+      "sha256": "a3a19ae61c8ce3585cf14ad161815342b30e351bc387e8db576932824c58ec7f",
+      "inspection_scope": "Type and immediate proof/definition context in the bounded native RG import map; not complete proof audit or local Lean replay.",
+      "url": "https://github.com/yang-mills-group/YM/blob/55ba9fc36293b3f4d52c6b1f813169a0be76ee98/submissions/openai-20261028/submission/YM/FullVolume/Tuned.lean"
+    }
+  ]
+}
