@@ -4,6 +4,40 @@
   "audit_code_sha256": "4f2b81ec75253926b0ed59fe0da9837ef3a85a0f8701756d573cb2c1911c3df8",
   "baseline": "db9fb4b84672050efa79b13377f1e73364598a14",
   "boundary_control": "q0=-1/16, q1=...=q20=0; forcing0; residuals1,0,...; exact energy kappa_star",
+  "endpoint_coefficient_paper_audit": {
+    "checked": [
+      "K=ceil(log_256 T) gives d<=1/T; epsilon=8/sqrt(T), a>0 and T>=2K+1 hold eventually.",
+      "The quiet-transition size condition is exactly 257 c_T<=64 and follows from c_T<kappa_star<1/10.",
+      "sqrt(c_T/lambda)=a sqrt(1-1/T); convexity gives (256+d)^(-1/2)>=1/16-d/8192, yielding a strict inverse-Gram margin.",
+      "The explicit deficit is <=4pi E+(kappa_star+pi/4096)/T and is O_beta(sqrt(j+1) beta^(-j/2)) on rounded geometric blocks, hence summable.",
+      "For fixed h the authentic forcing span O_h(m^-2) is below epsilon/2 eventually; the selected inverse arc and Diophantine contradiction use only the common |q|<1/16 bound and have no c_T-dependent arithmetic constant.",
+      "Complete rounded blocks give kappa_star times floor(log_beta N) minus a finite total deficit; summable source tails transfer the theorem to the completed orbit."
+    ],
+    "derived_after_checkpoint": "f62616067093751850d5fc9b1e252e1a274c00fb",
+    "external_independence": false,
+    "hostile_control": "One phase e(-1/16) and T phases 1 have loss T+1-|T+e(-1/16)|<kappa_star for every finite T, tending to kappa_star; a per-block endpoint assertion is false and is not claimed.",
+    "new_executable_assertions": 0,
+    "prior_2520_scope_unchanged": true,
+    "recorded_utc": "2026-11-13T01:43:38.031146+00:00",
+    "reproduction_scope": "The unchanged audit_r0.py checks its original finite algebra only. The endpoint schedule is certified by the displayed paper proof and this separate review record, not by an unrun numerical test.",
+    "reviewer_roles": [
+      "arithmetic adversary",
+      "Gamma-prime proof referee"
+    ],
+    "same_model_family": true,
+    "scope_guards": [
+      "fixed h and beta",
+      "arithmetic onset not numerically extracted",
+      "no uniform growing-frequency band",
+      "no per-block loss >=kappa_star",
+      "no R0 or normality conclusion"
+    ],
+    "section": "RI-8E endpoint-coefficient corollary",
+    "section_sha256": "5beef1b8839546c8ddc1542df9c8fa946a5e0011d3be121147162591519d15ab",
+    "source_sha256": "4d887a3ae9c312b0a10f0dce01c6fd7f41dcbf91b4131815a93a749454423a46",
+    "status": "paper-proved extension; both same-model read-only review passes found no defect",
+    "theorem": "For fixed nonzero integer h and fixed beta with mu(pi)<rho<beta from a proved import, |S_N^U(h)| <= N-kappa_star log_beta N + O_(beta,h)(1); beta=15/2 is admitted."
+  },
   "execution_commit": "17e58672bbd3954a8e72ec9de9ca90c1c2b5de0d",
   "extended_paper_audit": {
     "after_fix_sha256": "cae2aa2bf8e568e13a78268bb86ac2a10edd65a6bc59ddcded9f4c4924814e70",

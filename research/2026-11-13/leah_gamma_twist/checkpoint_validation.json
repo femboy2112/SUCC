@@ -1,0 +1,180 @@
+{
+  "commit": "f62616067093751850d5fc9b1e252e1a274c00fb",
+  "tree": "3d7a3abb8583a624613c7f28caef96639821a655",
+  "status": "PASS",
+  "started_utc": "2026-11-13T01:11:48.350997+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "name": "provenance",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/provenance.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.083,
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "name": "native_tests",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/native_tests.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 1531.45,
+      "log_sha256": "c58ac40b5283bd5f75456b0eede5eb60fa76fc6c226386fd276d412778d42d62"
+    },
+    {
+      "name": "observer_foundations",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/observer_foundations.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.154,
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "name": "ordinal_succ",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/ordinal_succ.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 3.571,
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "name": "new_research_tests",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-11-13/leah_gamma_twist",
+        "-p",
+        "test_*.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/new_research_tests.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 6.142,
+      "log_sha256": "dd1c790a32d5aeff3fc91eea07a0d56f30a77962e75cbcca07fc924a8a368e4f"
+    },
+    {
+      "name": "r0_exact_audit",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "research/2026-11-13/leah_gamma_twist/audit_r0.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/r0_exact_audit.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.265,
+      "log_sha256": "269c2e2fa15697dccc61aefd3e71c67a9918d9b75fe8e3e47233e748dd1f6126"
+    },
+    {
+      "name": "math_memory_catalog",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/math_memory_catalog.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 2.23,
+      "log_sha256": "0147396bb0f0ae747942e9fb83e0aefdf4e9d562b4e159f7c6c09c4534871063"
+    },
+    {
+      "name": "math_memory_graph",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/math_memory_graph.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.056,
+      "log_sha256": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968"
+    },
+    {
+      "name": "diff_check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/diff_check.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.018,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "final_commit": "f62616067093751850d5fc9b1e252e1a274c00fb",
+  "final_tree": "3d7a3abb8583a624613c7f28caef96639821a655",
+  "tracked_status": "",
+  "finished_utc": "2026-11-13T01:37:32.371691+00:00",
+  "receipt_kind": "completed pre-endpoint checkpoint gate; final endpoint commit still requires its own gate",
+  "native_tests_observed": 13050,
+  "focused_tests_observed": 60,
+  "raw_log_archive": "checkpoint_validation_logs.json.gz",
+  "raw_log_archive_sha256": "899437bf706b72c87fc024f98ac517a82a94dc193a07f05811af96c713365dfe",
+  "interrupted_attempt": {
+    "commit": "f62616067093751850d5fc9b1e252e1a274c00fb",
+    "tree": "3d7a3abb8583a624613c7f28caef96639821a655",
+    "status": "INTERRUPTED",
+    "started_utc": "2026-11-13T01:06:38.426575+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "commands": [
+      {
+        "name": "provenance",
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/verify_provenance.py"
+        ],
+        "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/provenance.log",
+        "status": "PASS",
+        "exit_code": 0,
+        "elapsed_seconds": 0.085,
+        "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+      },
+      {
+        "name": "native_tests",
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_*.py"
+        ],
+        "log": "/workspace/scratch/ec86a7b97431/leah_gamma_final_validation/native_tests.log",
+        "status": "INTERRUPTED"
+      }
+    ],
+    "interruption_observed_utc": "2026-11-13T01:11:42.773011+00:00",
+    "interruption_reason": "Executor returned Unknown process id 97951; no native-suite exit status or completion summary was received. Cause not established."
+  }
+}

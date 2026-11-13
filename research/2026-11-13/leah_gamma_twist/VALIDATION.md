@@ -30,6 +30,20 @@ scope recorded in `audit_r0_results.json`. Subsequent paper review and any repai
 are separately recorded there. These tests check finite implementations and
 countermodels; the universal statements require the displayed proofs.
 
+The first complete gate on checkpoint
+`f62616067093751850d5fc9b1e252e1a274c00fb` passed: 13,050 native tests,
+all 60 new tests, the 2,520-assertion audit, provenance, both required probes,
+catalog/graph checks and diff check. Its receipt and raw logs are retained in
+`checkpoint_validation.json` and `checkpoint_validation_logs.json.gz`.
+An earlier execution session disappeared before the native suite returned;
+that attempt is recorded as interrupted, not as a passing run.
+
+The subsequent endpoint-coefficient theorem RI-8E is a paper extension with
+an explicit summable parameter schedule. Two same-model reviewers checked its
+inequalities, rounded block count and absence of threshold-dependent arithmetic
+constants. No new finite assertions are claimed for that extension. The final
+gate below must still run on the actual commit containing it.
+
 ## Baseline replay and its failed wrapper
 
 The Main XXV runner was executed before extending its mathematics. All eleven
@@ -79,7 +93,7 @@ inferred from native unittest discovery.
 
 | Claim | Status | Load-bearing hypotheses / boundary | Next falsifier |
 |---|---|---|---|
-| RI-01, RI-8 | PROVED PAPER; classical arithmetic import | literal four poles, zero seed, fixed h and c; non-effective onset | a defect in the local branch proof, zero-source transfer or block count |
+| RI-01, RI-8, RI-8E | PROVED PAPER; classical arithmetic import | literal four poles, zero seed, fixed h and beta; RI-8E pays a summable changing-threshold schedule; non-effective onset | a defect in the local branch proof, parameter schedule, zero-source transfer or block count |
 | RI-02 | PROVED PAPER | every real initial value, nearest-integer carries; endpoint term retained | an exact finite orbit violating the two-sided energy bound |
 | RI-03 | PROVED PAPER; finite controls OBSERVED | nonproper null source, negative first forcing; isometry law rather than identical 2-adic data | an algebraic failure of the subtraction/telescope identity |
 | RI-04 | OPEN prospective theorem | exact authentic sparse source packet at every late quarter-shell | an exact sparse competitor above a claimed explicit onset |

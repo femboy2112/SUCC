@@ -75,19 +75,25 @@
       "proved": [
         "operator intertwining with a changed cyclic vector",
         "source-selected positive tail representation and auxiliary circle cancellation",
-        "OB-03 exact all-order Beta bounds and fixed-order Gamma limits"
+        "OB-03 exact all-order Beta bounds and fixed-order Gamma limits",
+        "Two quadratic coefficient atoms satisfy M^8=I/16 and integrate to the actual four-pole source; a four-dimensional coefficient realization does not bound the infinite Hankel rank of the arithmetic-time tail."
       ],
       "refuted": [
         "common source or operator implies equal selected response",
         "common centering creates modulus loss",
         "e(E f) can be replaced by E e(f)",
-        "auxiliary Haar convergence implies arithmetic orbit normality"
+        "auxiliary Haar convergence implies arithmetic orbit normality",
+        "The golden grading fixed point is invariant under exact source-preserving regrouping.",
+        "The auxiliary Gamma-Poisson joining is the natural source joining."
       ],
       "first_conditional_pi_arrow": "Construct an observable-preserving map with a controlled signed residual from the auxiliary law to the actual zero-seed phase; auxiliary positivity does not supply it.",
       "new_instrument": "D_m(n) implemented as a 2^m-letter source-loop translation; n^(m+2)D_m(n) -> 15 Gamma(m+2)/64",
       "source_paths": [
         "research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md",
-        "research/2026-10-26/OILY_MACARONI_SOURCE_BRIDGE.md"
+        "research/2026-10-26/OILY_MACARONI_SOURCE_BRIDGE.md",
+        "research/2026-10-25/SEINFELD_FOUR_POINT_GOLDEN_KRONECKER.md",
+        "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md",
+        "research/2026-10-26/FOUR_POLE_ATOMIC_SUBSTRATE.md"
       ]
     },
     {
@@ -188,6 +194,12 @@
       "RH signed-form bridge",
       "abc useful joint error-radical bridge",
       "Goldbach pointwise grade-zero positivity"
-    ]
+    ],
+    "root_postcheckpoint_geometry_reads": {
+      "complete": 2,
+      "partial": 1,
+      "manifest_field": "root_additional_reads",
+      "not_added_to_original_lane_counts": true
+    }
   }
 }

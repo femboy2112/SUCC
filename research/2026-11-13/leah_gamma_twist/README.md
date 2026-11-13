@@ -78,6 +78,19 @@ The source-preserving map to the selected pi cancellation has not been supplied
 by any of these comparisons. See the typed genealogy for each first conditional
 arrow and its originating text.
 
+The final historical cross-check kept the original constructions of
+`Omega=phi^(-1)-gamma` distinct. A declared golden fourth point gives a
+Gamma first-jet comparison; an all-ones Farey/Gauss itinerary gives a different
+comparison with harmonic-versus-invariant-law tails; and the specified BBP
+binary grading gives `G(z)=(2-z)^(-2)`, whose minimal fixed point is
+`phi^(-2)`, compared with the Gamma(2) log mean `1-gamma`. Source-preserving
+regrouping changes that grading fixed point. The same archive reconstructs
+the literal tail kernel from two quadratic matrix atoms with `M^8=I/16`, but
+harmonic integration changes its finite coefficient realization into an
+infinite-rank arithmetic-time tail. These are actual maps and exact scope
+boundaries, not an identification of the three Omega carriers. The three
+additional reads are recorded separately in the source manifest and G3.
+
 The live main check still returned the stated baseline. Open PRs at the initial
 snapshot were #600, #601 and #604–#607. The newer #607 was not in the original
 brief; it adds source-grid complexity and dual-certificate barriers. Main XXV
@@ -308,21 +321,22 @@ one-pole families do not supply that gain. No new restricted exponent is claimed
 
 ## E. The best actual source-selected theorem
 
-For every fixed nonzero integer h, every fixed
-`0<c<1-cos(pi/8)`, and beta=15/2,
+For every fixed nonzero integer h, with beta=15/2,
 
 \[
 \boxed{\left|\sum_{n=1}^N e(hU_n)\right|
-\le N-c\log_{15/2}N+O_{c,h}(1).}
+\le N-[1-\cos(\pi/8)]\log_{15/2}N+O_h(1).}
 \]
 
-The complete proof is RI-01, including the finite quantitative hypotheses and
-the separate block-ratio corollary. The source tail transfers the same form to
+The complete proof is RI-01, including the finite quantitative hypotheses,
+the block-ratio corollary and its new endpoint extension RI-8E. The source tail
+transfers the same form to
 the completed orbit with a bounded fixed-frequency error. The previous
 1/14 logarithmic coefficient came from relaxing a branch transition to two
 coordinates. The new proof retains the surrounding geometric orbit.
 
-Here is the checkable core. If a block's modulus loss is at most c, rotate its
+Here is the checkable core, initially for any fixed c below kappa_*.
+If a block's modulus loss is at most c, rotate its
 resultant and choose centered phase lifts q_t. Their losses sum to at most c, so every
 q_t lies inside an interval of radius less than 1/16. A quiet transition and
 the slowly varying source reduce the recurrence to
@@ -343,13 +357,24 @@ rational approximation to pi with denominator `15|h|16^m` and error
 `<3*16^(-M)`. On geometric blocks M approximately beta m this contradicts
 the published Zeilberger–Zudilin irrationality-measure bound, using any
 intermediate exponent below beta=7.5. Summing the fixed loss over disjoint
-blocks gives the displayed logarithm.
+blocks first gives every fixed coefficient below the displayed endpoint.
+
+The final review paid the remaining parameter dependence. On a block of length
+T choose K=ceil(log_256 T), epsilon=8/sqrt(T), and a local threshold c_T below
+the endpoint. RI-8E gives its explicit formula and proves
+`kappa_*-c_T=O(sqrt(log(T)/T))`. These deficits are summable along the rounded
+geometric blocks. The source and Diophantine onsets use the common arc bound
+`|q|<1/16`, so they do not acquire a hidden dependence on c_T. Summing the
+thresholds therefore reaches the exact endpoint coefficient with a bounded
+remainder. This is a further paper result after the first validated checkpoint,
+with two same-model audits and no newly claimed executable assertions.
 
 The classical irrationality-measure result is an explicit imported premise;
 its full proof was not reverified here. Unrefereed 2026 exponent-two claims
 remain outside the contract, as already required by Main XXV. The onset is
-not numerically extracted. Choosing c or beta as a function of N without
-controlling that onset is not licensed. The bound still gives vanishing
+not numerically extracted. RI-8E explicitly controls the changing local loss;
+it does not license an uncontrolled changing beta or growing frequency. Nor does
+it assert that each finite block loses at least kappa_*. The bound still gives vanishing
 normalized saving and therefore **does not establish R0**.
 
 Additional unconditional results pay different kinds of rent:

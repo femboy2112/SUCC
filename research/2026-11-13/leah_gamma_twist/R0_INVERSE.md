@@ -322,6 +322,141 @@ This corollary supplies the rounding and parameterized application; it
 is not a separate new irrationality theorem. No unreviewed 2026 claim
 that `mu(pi)=2` is used.
 
+### Endpoint-coefficient corollary: a summable schedule pays the parameter debt
+
+**RI-8E, PROVED PAPER.** For every fixed nonzero integer `h` and every
+fixed `beta` admitting a proved exponent `mu(pi)<rho<beta`,
+
+\[
+\boxed{|S_N^U(h)|\le N-\kappa_*\log_\beta N+O_{\beta,h}(1),
+\qquad \kappa_*=1-\cos(\pi/8).} \tag{RI-8E}
+\]
+
+In particular `beta=15/2` is available from the published import above.
+The completed pi orbit has the same bound after a bounded fixed-frequency
+tail correction. This is an endpoint **coefficient in the summed bound**,
+not a claim that each individual block has loss at least `kappa_*`.
+It gives no R0 saving and no new uniform growing-frequency band.
+
+This extension was derived during the final review after the first
+validated checkpoint `f62616067093751850d5fc9b1e252e1a274c00fb`.
+It is a paper derivation, not a newly preregistered numerical finding.
+Two reviewing agents checked it read-only; they share the model family.
+No new executable assertions are inferred from those reviews.
+
+**Proof.** We control the finite lemma's parameters instead of taking
+`c` to its endpoint inside an unspecified `O_c(1)`. For an integer
+block length `T` sufficiently large, set
+
+\[
+K=\lceil\log_{256}T\rceil,\quad
+\epsilon=\frac8{\sqrt T},\quad
+E=\frac{\epsilon\sqrt{2K+2}}{15},\quad
+d=\frac{255}{256^{K+1}-1},
+\]
+\[
+a=\frac1{16}-2E-\frac d{8192},\qquad
+c_T=F(a)(1-1/T),\qquad \lambda=F(a)/a^2.
+\]
+
+Since `256^K>=T`, we have `0<d<=1/T`. Also
+`E=O(sqrt(log(T)/T))`, so eventually `0<a<1/16` and
+`0<c_T<F(a)<kappa_*`. The conditions `epsilon<=1/16` and
+`T>=2K+1` hold eventually. The remaining size condition simplifies to
+
+\[
+T\ge257c_T/\epsilon^2\quad\Longleftrightarrow\quad
+64\ge257c_T,
+\]
+
+which follows from `c_T<kappa_*<1/10`.
+
+Convexity of `d -> (256+d)^(-1/2)` gives the tangent lower bound
+
+\[
+\frac1{\sqrt{256+d}}\ge\frac1{16}-\frac d{8192}.
+\]
+
+The inverse-Gram hypothesis is therefore strict:
+
+\[
+\sqrt{c_T/\lambda}+E
+=a\sqrt{1-1/T}+E
+<a+E
+=\frac1{16}-E-\frac d{8192}
+<\frac1{\sqrt{256+d}}.
+\]
+
+Thus the exact finite lemma applies with these changing parameters.
+Moreover, `|F'|<=2pi` yields the explicit deficit estimate
+
+\[
+0<\kappa_*-c_T
+\le4\pi E+\frac{\pi d}{4096}+\frac{\kappa_*}{T}
+\le4\pi E+\frac{\kappa_*+\pi/4096}{T}. \tag{RI-8E.1}
+\]
+
+Now let `m_j=floor(beta^j)`, `M=m_(j+1)`, and
+`T_j=M-m_j-1`. After finitely many initial blocks,
+`T_j~(beta-1)beta^j` is positive. For fixed `h`, the span of the
+authentic forcing on `U_(m+1),...,U_M` is at most
+`15|h|/(64(m+1)^2)=O_h(m^(-2))`. This is eventually below
+`epsilon_j/2`, whose order is `m^(-1/2)`.
+
+If that block's modulus loss were at most `c_(T_j)`, the finite lemma
+and the same zero-source inverse arc would give
+
+\[
+\left|\pi-\frac p{15|h|16^m}\right|<3\,16^{-M}
+\le48\,16^{-\beta m}.
+\]
+
+The inverse arc uses only `|q_t|<1/16`; its coefficient and denominator
+do not depend on the approaching value `c_(T_j)`. Choose `rho` and
+its Diophantine constant `C_rho>0` once. The same contradiction
+
+\[
+C_\rho16^{(\beta-\rho)m}>48(15|h|)^\rho
+\]
+
+therefore holds for all sufficiently late blocks, independently of
+their individual thresholds. Every such block loses more than
+`c_(T_j)`.
+
+By (RI-8E.1), the deficits are
+`O_beta(sqrt(j+1) beta^(-j/2))`, so
+
+\[
+\sum_{j\ge J}(\kappa_*-c_{T_j})<\infty.
+\]
+
+For `L=floor(log_beta N)`, the complete disjoint blocks
+`j=J,...,L-1` lie in the first `N` states. Triangle inequality gives
+
+\[
+N-|S_N^U(h)|
+\ge\sum_{j=J}^{L-1}c_{T_j}
+\ge\kappa_*(L-J)-\sum_{j\ge J}(\kappa_*-c_{T_j}).
+\]
+
+The last sum is finite. Replacing `L` by `log_beta N` changes the
+right side by a bounded amount. Absorb the finitely many earlier
+indices into the constant, proving (RI-8E). QED.
+
+**Hostile endpoint control.** One phase `e(-1/16)` and `T` phases
+equal to one have modulus loss
+
+\[
+T+1-|T+e(-1/16)|<\kappa_*\qquad(T\ge1),
+\]
+
+because the squared modulus is
+`(T+cos(pi/8))^2+sin(pi/8)^2`. The loss tends to `kappa_*`.
+Consequently a per-block endpoint claim would be false even in this
+simple source-free control. The summable-deficit theorem makes no
+such claim. Its arithmetic onset is still not numerically extracted,
+and its normalized saving still tends to zero.
+
 ## RI-02: a linear, exact inverse dictionary for R0 failure
 
 For any real `xi`, use the fixed nearest-integer convention
@@ -640,8 +775,8 @@ it is the strongest explicit next cut from this inverse lane.
 
 ## Source cuts, novelty accounting, and finite receipt
 
-The main new unconditional source-selected theorem is RI-01 (and its
-block-ratio application). RI-02 is an exact deterministic inverse
+The main new unconditional source-selected theorem is RI-01, its
+block-ratio application and the endpoint coefficient in RI-8E. RI-02 is an exact deterministic inverse
 dictionary. RI-03 is a source-family counterexample with declared lost
 hypotheses. RI-04 is an open sufficient arithmetic condition.
 

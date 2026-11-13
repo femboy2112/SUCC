@@ -170,6 +170,31 @@ original #309 head `8e9d8a4d...`,
 #324, #337, #459 and #498–500 tracks the later arithmetic attempts; those
 whole donor dossiers were not independently re-read by this lane.
 
+### Three original constructions of Omega, and the actual quadratic source
+
+A final read-only historical check, after the first validated research
+checkpoint, inspected three additional archived texts. Their hashes and
+exact read scopes appear in `root_additional_reads` in the source manifest.
+They clarify how `Omega=phi^(-1)-gamma` acquired several realizations.
+
+| Original text | Declared source and proved construction | First missing pi bridge |
+|---|---|---|
+| `research/2026-10-25/SEINFELD_FOUR_POINT_GOLDEN_KRONECKER.md` | The projective triple has distinct 0,1,infinity; a fourth point is selected by the additional rule lambda=1/(1+lambda). Its Legendre curve has j=2048. A normalized Gamma first jet is lambda-gamma. | The actual BBP fourth point is already 2/15 at n=1. Scalar j forgets marked orientation; matching degree-16 maps does not supply a conjugacy. |
+| `research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md` | An oriented circle cut and an additional Farey tessellation lead to the all-ones continued-fraction fixed path. The Gauss invariant law gives normalized tails log(1+1/k), whose difference from 1/k sums to gamma. | A selected periodic path and an invariant distribution are different objects. This is expressly a later realization of the early intuition, not the historical derivation of the Oily packet law. |
+| `research/2026-10-26/FOUR_POLE_ATOMIC_SUBSTRATE.md` | The authentic coefficient kernel has two rational quadratic atoms, M^8=I/16 and an exact marked cycle 0,-1,infinity,1,0. Harmonic integration recovers r(n),T_n. A specified binary grading has G(z)=(2-z)^(-2), minimal fixed point phi^(-2), and Gamma(2) logarithmic mean 1-gamma. | The golden fixed point changes under exact source-preserving regrouping. The natural source joining and a Gamma-Poisson auxiliary coupling have mixed moments 4 and 6 respectively. Neither may replace the selected signed arithmetic phase. |
+
+The third manuscript supplies an especially useful type boundary for
+holographic reconstruction. The scalar coefficient transfer has minimal
+linear realization dimension four, with nonzero 4-by-4 Hankel determinant.
+The integrated sequence T_n has positive Hankel matrices of every size and
+therefore infinite rank. Exact recovery of that four-state coefficient
+generator is not a four-state realization of the arithmetic-time dynamics.
+The harmonic observation map is the step at which the clock changes.
+
+These checks confirm the distinctions already used in G3. They do not
+reverify every external geometric theorem cited inside the old manuscripts,
+and they introduce no new statistical pi estimate.
+
 ## G4. A backward observer needs the returning boundary record and the state
 
 **Original intuition.** A local observer climbing from zero and a global
