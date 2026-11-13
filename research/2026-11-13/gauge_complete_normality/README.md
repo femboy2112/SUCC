@@ -112,6 +112,6 @@ The fixed-lag pinbed is a normality-complete *observer*, but proving `E(nu^U_(B,
 - **GCN-03:** EXACT ALGEBRA + FINITE TEST (15-torsion and chart symmetries). Gauge-of-normality does not authenticate zero seed.
 - **GCN-04:** ARCHIVE CROSSWALK, not an exhaustive theorem audit; statuses inherit source provenance. Missing full content coverage remains an access/time gap, not a mathematical no-go.
 - **GCN-05:** PROPOSED METHOD; not a theorem.
-- **Local isolated validation:** 12/12 tests passed with a minimal exact replication of `duck_bbp.forcing`. That shadow is **not** a complete repo checkout or independent source implementation. Source four-pole equality is tested, and independent B4-pair and sorted-energy formulas agree. Full `AGENTS.md` gates, hosted CI and proof-assistant authority must be checked on the published branch before any integration.
+- **Local isolated validation:** 13/13 tests passed with a minimal exact replication of `duck_bbp.forcing`. That shadow is **not** a complete repo checkout or independent source implementation. Source four-pole equality is tested, and independent B4-pair and sorted-energy formulas agree. Full `AGENTS.md` gates, hosted CI and proof-assistant authority must be checked on the published branch before any integration.
 
 **Files:** `observational_succ/normality_gauge_bridge.py`, `tests/test_normality_gauge_bridge.py`, `scripts/normality_probe_contract_inventory.py`. No merge/release or source mutations. This report is steelman → crucible → verdict, with refutations limited to their exact quantified targets.
