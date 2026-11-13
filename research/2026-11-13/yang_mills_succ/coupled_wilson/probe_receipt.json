@@ -1,0 +1,90 @@
+{
+  "certificate": {
+    "betas": [
+      "1/8"
+    ],
+    "degrees": [
+      2
+    ],
+    "density_terms": 15,
+    "error_bound": "1/128",
+    "expectation": "16/513",
+    "partition": "513/512",
+    "tolerance": "1/100"
+  },
+  "character_reconstruction_cases": 20,
+  "coupled_source": {
+    "haar_xyz": "1/16",
+    "haar_zt": "-1/8",
+    "individual_expectations": [
+      "0",
+      "0"
+    ],
+    "individual_product_expectation": "1/33",
+    "two_factor_partition": "1771/1728"
+  },
+  "fresh_trace_conjugations": 2,
+  "global_square_rp_counterexample": {
+    "character": [
+      "1",
+      "0",
+      "-12",
+      "0",
+      "16"
+    ],
+    "density": [
+      "1",
+      "1",
+      "1/2",
+      "1/8",
+      "1/64"
+    ],
+    "gram": [
+      [
+        "1",
+        "1/1290"
+      ],
+      [
+        "1/1290",
+        "0"
+      ]
+    ],
+    "partition": "645/512",
+    "reflected_square": "-1",
+    "witness": [
+      "-1289",
+      "0",
+      "15480",
+      "0",
+      "-20640"
+    ]
+  },
+  "scope": "Exact finite SU(2) calculations; no continuum or mass-gap certificate",
+  "sphere_moments": {
+    "0": "1",
+    "1": "0",
+    "10": "21/512",
+    "11": "0",
+    "12": "33/1024",
+    "13": "0",
+    "14": "429/16384",
+    "15": "0",
+    "16": "715/32768",
+    "17": "0",
+    "18": "2431/131072",
+    "19": "0",
+    "2": "1/4",
+    "20": "4199/262144",
+    "24": "52003/4194304",
+    "3": "0",
+    "30": "9694845/1073741824",
+    "38": "883631595/137438953472",
+    "4": "1/8",
+    "5": "0",
+    "6": "5/64",
+    "7": "0",
+    "8": "7/128",
+    "9": "0"
+  },
+  "status": "passed"
+}
