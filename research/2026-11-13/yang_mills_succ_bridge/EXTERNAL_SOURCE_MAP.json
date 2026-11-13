@@ -1,0 +1,25 @@
+{
+  "as_of_date": "2026-11-13",
+  "source_kind": "independent_public_sources_read_only",
+  "openai_announcement": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+  "openai_october_submission": {
+    "repo": "yang-mills-group/OpenAI-YM-20261028",
+    "commit_sha": "3456e5e75cf8d4cd558955a5c7638fba2d68f464",
+    "claim_theorem": "YangMills.jointExistence : YangMills.JointExistence",
+    "files_inspected": ["README.md", "ChallengeSpec.lean", "Solution.lean", "Construction.lean"],
+    "trusted_as_local_axiom": false,
+    "mass_gap_asserted": false
+  },
+  "external_assessment": {
+    "repo": "yang-mills-group/YM",
+    "commit_sha": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98",
+    "assessment": "docs/assessment-1.pdf",
+    "files_inspected": ["docs/README.md", "submissions/openai-20261028/docs/checks.md", "submissions/openai-20261028/docs/rerun.md", "submissions/openai-20261028/checks/ReflectionPositivity.lean", "submissions/openai-20261028/checks/RemainingObligations.lean"],
+    "external_build_rerun": false,
+    "full_referee_certification_by_succ": false
+  },
+  "succ_parent": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "new_succ_scope": "exact Z/q lattice and S3 finite gauges, positive transfer-kernel countermodels only",
+  "clay_problem": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+  "clay_full_mass_gap_status": "OPEN"
+}
