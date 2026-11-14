@@ -1,8 +1,44 @@
-# Addendum: A-priori inflation, finite causal separation and delta-like observer sectors
+# Addendum: A-priori differentiation axiom; optional inflation and causal-sector defects
 
-**Origin:** Leah's 2026-11-14 proposal: inflation preceding observation may itself be an *analytic defect from a finite observer's perspective*, making different realizable mathematical frames cease to be fully equivalent. The "Dirac delta for frames" and "more categories in a CCC type one-category" are author metaphors; below is their strongest explicit mathematical reconstruction, not an established physical identification.
+**Author's clarification (2026-11-14):** Here *inflation* means the **pre-activation setup of a nontrivial causal carrier**: before an observer or system's operational record begins, reality contains at least two strictly distinct objects already related by causal structure. It does **not** primitively mean exponential expansion, Hubble flow, distance growth, or a cosmological epoch. The earlier FLRW, finite/limit and delta constructions below are **optional models and consequences under added assumptions**, not the definition of this axiom.
 
 **Status:** Exact discrete finite/limit witness and smooth-FLRW nonidentifiability lemma (**PROVED in the stated toy classes**); category/CCC and physical inflation interpretation **CONJECTURED / UNVERIFIED**. No assertion that SUCC observer axioms produce a physical Big Bang, an actual metric, Einstein dynamics, QFT vacuum or gravitational entropy.
+
+
+## 0. The pre-activation distinction axiom — the primitive, not a metric
+
+**PI-0 (candidate axiom; semantic commitment, not a derived physical law).** Let the model have two indexed stages, *prepared* and *operational*. Before the first observer record, the prepared carrier \(\mathcal C_-\) contains source-identified objects \(a,b\) with
+\[
+a\ne b,\qquad a\mathrel{R_-^*}b\ \ \text{or, with a source root \(s\),}\ \ s\mathrel{R_-^*}a\text{ and }s\mathrel{R_-^*}b.
+\]
+Here \(\ne\) means **source-level identity distinction**, not merely different names for an observationally identical object; \(R_-^*\) is a lawful *potential* causal reachability structure, not a claim that an event has already occurred. If the intended meaning of connected requires a **direct communicable path**, use the first disjunct; a common root alone is strictly weaker and does not guarantee descendant-to-descendant communication.
+
+An **activation map** \(i:\mathcal C_-\to\mathcal C_0\) transports the identities and permitted causal interfaces into the operational stage. The observer's realized record is initially empty. This distinction matters: "the system gets set up before it turns on" refers to *readout/operation becoming active*, not an assertion that realized signals have been exchanged before the source dynamics exist. Such exchange would require additional pre-activation evolution and receipts.
+
+For any mathematical theory with causal objects, PI-0 says only that the initial source is **not an undifferentiated single object**. It makes no claim about how many physical dimensions exist, what metric signature they carry, whether the connections are symmetric, or how fast information propagates. The prepared objects can be isomorphic yet distinct as source-labelled individuals; requiring them to be non-isomorphic is a stronger and generally unnecessary axiom.
+
+**Minimal exact witnesses.**
+- Two labelled objects \(a\ne b\), identity arrows and one possible causal arrow \(f:a\to b\), with no observer record before activation: PI-0 holds without any distance, time-scale or physical expansion. There is one *category with two objects*, not automatically two different categories.
+- Three labelled objects \(s,a,b\) with arrows \(s\to a\), \(s\to b\): common causal ancestry exists but no arrow \(a\to b\) follows. This is the countermodel to "common origin \(\Rightarrow\) continued mutual contact."
+- Two different prepared graphs with identical empty/late observer records but different source edges: the presence of an edge does not descend through their shared observations. This is a direct **source-map adequacy/probe gap**; it is not a claim that reality has no determinate structure.
+
+**Axiom economy.** Mere existence of multiple causally related objects is a very weak axiom. Every nontrivial causally linked finite graph satisfies it; it cannot by itself derive an expanding scale factor, Lorentzian metric, curvature, Einstein equations, area entropy, or extra independent categories. Its important work is to prevent a degenerate, globally collapsed initial carrier from being confused with a genuine source containing unobserved distinctions. Those distinctions may become observationally salient only after activation.
+
+**CCC terminology.** If "CCC" means *cartesian closed category*, a literal **one-object** cartesian closed category is terminal (its only object is terminal, so it has only one endomorphism) and cannot represent a nontrivial causal arrow. A standard **1-category** is different: it may contain many distinct objects. Pre-activation differentiation can be modeled within one 1-category; a family of observer-relative categories or distinct connected components requires further construction, not merely PI-0.
+
+**Relation to the previous inflation/horizon note.** Sections A–D below investigate how additional expansion dynamics *could* amplify this primitive into finite causal separation, a hidden early-history target, or a limit-kernel defect. Those are distinct research questions. In particular, **PI-0 is true in a static causal network** and so cannot justify asserting physical cosmological inflation. A source-faithful later instrument could also resolve the initial distinction without any expansion at all.
+
+### Steelman / falsification contract
+
+- **Declared axiom:** source identities \(a\ne b\) and a specified potential causal relation before observer activation.
+- **Independently testable within a source model:** at least two distinct source IDs, relevant edge/path witness, and an activation map preserving them.
+- **Negative control:** single source object, aliased two-label presentation, disconnected objects (for direct path version), or a source-only common ancestor lacking descendant communication.
+- **Unverified physical question:** whether the intended actual carrier has the axiom's pre-observation identities and lawful causal interfaces, and whether observations ever expose them.
+- **Next stronger theorem:** under an explicit observation functor \(E\), prove the minimum additional probes required to distinguish two PI-0 preparations that currently have equal transcripts.
+
+**Verdict:** PI-0 is a minimal *modeling assumption* about prior differentiation, not a derived inflation dynamics. It is mathematically coherent and supplies the nontrivial source structure needed for observer-gluing constructions. Its physical truth and the generation of a spacetime metric remain UNVERIFIED.
+
+---
 
 ## A. The distinction: a source origin is not ongoing causal contact
 
