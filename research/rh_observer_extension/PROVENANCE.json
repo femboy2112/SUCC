@@ -1,0 +1,73 @@
+{
+  "repository": "femboy2112/SUCC",
+  "base_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "base_tree": "4b0dc4572a1f971d83e23125ee14cfb06cbb0b8b",
+  "authorization": "User requested continuation and publication on SUCC; use non-main branch and draft PR, no merge.",
+  "date_utc": "2026-11-14",
+  "archive_sha256": "829a478e2a7419d422b1ce52ff445655c68f04c7aa8c789c9ed5a7022138c4c3",
+  "archive_policy": "Byte-preserved user-supplied round-one pack; extracted manifest and verifier replayed.",
+  "local_state": "Isolated additive staging directory, not a complete repository checkout. Git clone failed DNS; reads/writes use connected GitHub.",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy_proposer_only": "2.3.5",
+  "scipy_proposer_only": "1.17.0",
+  "verification_dependencies": "Python standard library only",
+  "source_families": {
+    "classical_criterion": [
+      "https://arxiv.org/abs/math/0607733",
+      "https://arxiv.org/abs/math/0205003"
+    ]
+  },
+  "construction_inputs": "Integer remainder probes, Mobius values, Gram entries; no nontrivial zero positions.",
+  "independence": "Same-model proof derivations are not blind independent review. Baseline replay reuses the original verifier. Periodic-tail verification changes the arithmetic route but shares the carrier/criterion.",
+  "executed": [
+    {
+      "command": "sha256sum -c SHA256SUMS (inside extracted round1)",
+      "status": "PASS"
+    },
+    {
+      "command": "python verify.py --output baseline_replay.json (inside extracted round1)",
+      "status": "PASS: seven certificate verdicts and archived controls"
+    },
+    {
+      "command": "python -m unittest discover -s . -p 'test_*.py' -v",
+      "status": "PASS: 14 tests"
+    },
+    {
+      "command": "python certify.py certificates.json --cutoff 50000 --output results/new_certificates.json",
+      "status": "PASS: N48/K144 LT_1"
+    },
+    {
+      "command": "python certify.py holdout.json --cutoff 50000 --output results/holdout.json",
+      "status": "PASS: N64/K192 GT_1"
+    },
+    {
+      "command": "python certify.py ARCHIVED/certificates.json --cutoff 10000 --output results/round1_tighter.json",
+      "status": "PASS: all seven verdicts"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python propose.py --N 48 --K 144 --output certificates.json",
+      "status": "EXECUTED: proposal only"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python propose.py --N 64 --K 192 --output holdout.json",
+      "status": "EXECUTED: next-size candidate, chosen before reading its result"
+    }
+  ],
+  "not_run": [
+    "python scripts/verify_provenance.py",
+    "python -m unittest discover -s tests -p 'test_*.py' (root suite)",
+    "python scripts/observer_foundations_probe.py",
+    "python scripts/ordinal_succ_report_probe.py",
+    "Independent human or proof-assistant review"
+  ],
+  "claim_limits": [
+    "No proof of RH",
+    "No proof of God",
+    "No certified fixed-K optimal lower bounds",
+    "No physical instrumentation or thermodynamic implementation",
+    "No merge/readiness/CI claim"
+  ],
+  "inspected_principia_reference_commit": "f9efa624da06a28e1a8ac99a56499acd11197928",
+  "ref_resolution": "Explicit heads/main was resolved immediately before publication. The separately inspected Principia reference is not asserted to be the main tip."
+}
