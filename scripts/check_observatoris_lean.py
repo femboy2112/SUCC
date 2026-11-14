@@ -75,22 +75,51 @@ theorem ghost : ¬ ExactAt propQ edge report .a := by
 end WeightedGhostControl
 """
 
-# The must-side bound is not a may-side bound.
-SANDWICH_CONTROL = """
-open ObservationalSUCC.ObservatorisQuantale
-example {V X Y : Type} (K : LaxQuantale V) (R : X → X → V) (q : X → Y)
-    (x : X) (b : Y) :
-    K.le (star K (quotAll K R q) (q x) b) (push K q (star K R x) b) :=
-  quotAll_star_le_push_star K R q x b
-"""
+# The must-quotient is silent exactly where the may-quotient invents.  The
+# control PROVES the negation of the mutated statement inside the same
+# instance (the last example), so a rejected mutation is a false statement
+# and not merely an ill-fitting proof term.
+SANDWICH_CONTROL = GHOST_CONTROL.replace("end WeightedGhostControl", """
+theorem mustEmpty (y z : Bool) : ¬ quotAll propQ edge report y z := by
+  intro h
+  cases h with
+  | intro t ht =>
+    cases y with
+    | false =>
+      cases ht.1 .a rfl ht.2 with
+      | intro r hr =>
+        cases hr.1 with
+        | intro v hv =>
+          have hedge : edge .a v := hv.2 ▸ hr.2
+          cases hedge.1
+    | true =>
+      cases ht.1 .c rfl ht.2 with
+      | intro r hr =>
+        cases hr.1 with
+        | intro v hv =>
+          have hedge : edge .c v := hv.2 ▸ hr.2
+          cases hedge.1
+theorem mustStays {a b : Bool} {p : Prop}
+    (path : PathW propQ (quotAll propQ edge report) a b p) : p → a = b := by
+  induction path with
+  | refl => intro _; rfl
+  | tail _ _ => intro h; exact absurd h.2 (mustEmpty _ _)
+theorem silent : ¬ star propQ (quotAll propQ edge report) (report .a) true := by
+  intro h
+  cases h with
+  | intro p hp => exact absurd (mustStays hp.1 hp.2) (by decide)
+example : ¬ ¬ star propQ (quot propQ edge report) (report .a) true :=
+  fun h => h observed
+end WeightedGhostControl""")
 
 CONTROLS = (
     ("selected-source-ghost", GHOST_CONTROL,
      GHOST_CONTROL.replace("theorem ghost : ¬ ExactAt propQ edge report .a",
                            "theorem ghost : ¬ ExactAt propQ edge report .b")),
-    ("must-is-not-may", SANDWICH_CONTROL,
-     SANDWICH_CONTROL.replace("star K (quotAll K R q) (q x) b",
-                              "star K (quot K R q) (q x) b")),
+    ("must-is-silent-where-may-invents", SANDWICH_CONTROL,
+     SANDWICH_CONTROL.replace(
+         "theorem silent : ¬ star propQ (quotAll propQ edge report) (report .a) true",
+         "theorem silent : ¬ star propQ (quot propQ edge report) (report .a) true")),
 )
 
 

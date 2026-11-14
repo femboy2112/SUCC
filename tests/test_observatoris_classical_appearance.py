@@ -19,6 +19,7 @@ from observational_succ.observatoris_classical_appearance import (
     qubit_transcripts,
     static_partition,
     transcript_is_static,
+    window_ambiguity_formula,
     window_carrier,
 )
 
@@ -97,21 +98,47 @@ class FreeObservation(unittest.TestCase):
 class PredictiveHorizon(unittest.TestCase):
     def test_window_shift_is_free_deterministic_and_locally_lawful(self):
         c = window_carrier(4, 2)
-        # The readout never disturbs; only the declared dynamics moves the state.
+        # Relative to the declared observation ("look") observation is free;
+        # the declared dynamics ("step") moves the state, as dynamics should.
+        self.assertTrue(is_free_observation(c, readouts=("look",)))
+        self.assertFalse(is_free_observation(c))
         self.assertEqual({name for name, _ in disturbing_instruments(c)}, {"step"})
+        with self.assertRaises(ValueError):
+            is_free_observation(c, readouts=("peek",))
         # the all-experiment behaviour quotient is discrete: nothing is hidden forever
         self.assertEqual(len(behavioral_partition(c)), 16)
 
-    def test_prediction_fails_exactly_at_the_resolution(self):
-        # Known window of r bits predicts the future window with ambiguity
-        # 2**min(r, t): perfect at t = 0, nothing left at t >= r.
-        for bits, width in ((4, 1), (4, 2), (3, 1)):
-            c = window_carrier(bits, width)
-            for t in range(bits - width + 1):
-                self.assertEqual(predictive_ambiguity(c, t), 2 ** min(width, t))
+    def test_prediction_ambiguity_closed_form_on_every_allowed_register(self):
+        # CA-4 (repaired after adversarial review): the ambiguity is
+        # 2**min(s, n-s, r, n-r) with s = t mod n.  Exhaustive over every
+        # register the carrier contract allows and two full periods.
+        for bits in range(1, 5):
+            for width in range(1, bits + 1):
+                c = window_carrier(bits, width)
+                for t in range(2 * bits + 1):
+                    self.assertEqual(predictive_ambiguity(c, t),
+                                     window_ambiguity_formula(bits, width, t))
+
+    def test_the_earlier_monotone_formula_is_false(self):
+        # Refuted corpse, kept: 2**min(r, t) fails because the register is cyclic.
         c = window_carrier(4, 2)
+        self.assertEqual(predictive_ambiguity(c, 2), 4)      # nothing predicted
+        self.assertEqual(predictive_ambiguity(c, 3), 2)      # prediction partly recovers
+        self.assertEqual(predictive_ambiguity(c, 4), 1)      # and is perfect after a period
+        self.assertNotEqual(predictive_ambiguity(c, 3), 2 ** min(2, 3))
         for future in future_readouts(c, 2).values():
             self.assertEqual(future, {Q(0), Q(1), Q(2), Q(3)})
+
+    def test_free_observation_alone_fails_in_the_destructive_carrier(self):
+        # Witness that free observation is separable from the other diagnostics:
+        # deterministic core, perfectly predictable (every operation resets to
+        # state 0), and yet every operation disturbs.
+        c = Carrier("abc", 3, (
+            Instrument("a", "A", (Q(1), Q(0), Q(0)), (0, 0, 0)),
+            Instrument("b", "B", (Q(0), Q(1), Q(0)), (0, 0, 0)),
+        ))
+        self.assertFalse(is_free_observation(c))
+        self.assertEqual({nxt for inst in c.instruments for nxt in inst.next_states}, {0})
 
 
 class DeclaredHilbertModel(unittest.TestCase):

@@ -271,11 +271,16 @@ class LimitIdentificationTests(unittest.TestCase):
 
     def test_no_learner_is_right_on_both_extremal_sequences_at_2d_minus_1(self):
         for d in range(1, 6):
+            # Repaired after adversarial review (the earlier assertion could not
+            # fail).  The claim quantifies over ALL learners; a learner is a
+            # function of the prefix, so the falsifiable content is that two
+            # DISTINCT members of LR_d share the prefix of length 2d-1.
             e = extremal_linear_pair(d, d, 2 * d + 2)
-            self.assertEqual(e["a"][:2 * d - 1], e["b"][:2 * d - 1])
-            conj = conservative_learner_trace(e["a"][:2 * d - 1])[-1]
-            g = generate(conj[0], conj[1], 2 * d + 2)
-            self.assertFalse(g == e["a"] and g == e["b"])
+            a, b = list(e["a"]), list(e["b"])
+            self.assertEqual(a[:2 * d - 1], b[:2 * d - 1])
+            self.assertNotEqual(a[2 * d - 1], b[2 * d - 1])
+            self.assertLessEqual(berlekamp_massey(a)[0], d)
+            self.assertLessEqual(berlekamp_massey(b)[0], d)
 
     def test_every_halting_certifier_is_unsound(self):
         x = generate((F(1), F(1)), (F(0), F(1)), 40)        # Fibonacci, order 2
@@ -325,9 +330,16 @@ class FoundingPairInLinearTheoryTests(unittest.TestCase):
                              hilbert_det_closed_form(n + 1) / hilbert_det_closed_form(n))
 
     def test_declared_dimension_admits_b_H_iff_H_le_n_minus_2(self):
-        for n in range(1, 9):
-            for H in range(1, 12):
-                self.assertEqual(founding_b_order(H) <= n, H <= n - 2)
+        # Repaired after adversarial review: the order is now MEASURED from the
+        # data by Berlekamp-Massey instead of read from the closed form, and the
+        # case H = 0 (order 1) is included.
+        for H in range(0, 12):
+            length = 2 * (H + 2) + 4
+            data = [F(1, k + 1) if k <= H else F(1) for k in range(length)]
+            order = berlekamp_massey(data)[0]
+            self.assertEqual(order, founding_b_order(H))
+            for n in range(1, 9):
+                self.assertEqual(order <= n, H == 0 or H <= n - 2)
 
 
 # ------------------------------------------------------------------ FH-7

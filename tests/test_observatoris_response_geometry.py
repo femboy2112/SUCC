@@ -21,12 +21,14 @@ from observational_succ.observatoris_response_geometry import (
     is_balanced_up_to_sign,
     is_nonnegative,
     matrix,
+    perturbation_effect_time,
     powers,
     quotient_pattern,
     relevance,
     rescale,
     simple_cycle_products,
     structural_distance,
+    support_distance,
     switching_function,
     triangle_violations,
     walk_exists,
@@ -306,8 +308,9 @@ class Gauge(unittest.TestCase):
 
 class ConesAndQuotients(unittest.TestCase):
     def test_quotient_distance_never_exceeds_source_distance(self):
-        # Tropical instance of weighted PAP-02, all 4-node patterns with a
-        # random labelling each, plus strictness.
+        # Tropical instance of weighted PAP-02 on 600 SAMPLED 4-node patterns
+        # with a random labelling each, plus strictness.  (The statement itself
+        # is kernel-checked for every value structure.)
         rng = random.Random(23)
         strict = 0
         for _ in range(600):
@@ -367,6 +370,71 @@ class ConesAndQuotients(unittest.TestCase):
                 self.assertEqual([base[s] for s in sensors], [other[s] for s in sensors])
                 base = [sum(a[v][u] * base[u] for u in range(n)) for v in range(n)]
                 other = [sum(a[v][u] * other[u] for u in range(n)) for v in range(n)]
+
+    def test_aligned_perturbations_arrive_exactly_at_the_structural_distance(self):
+        # HQ-2(b) as repaired after adversarial review: passive observer,
+        # balanced carrier, perturbation aligned with the switching signs.
+        rng = random.Random(41)
+        checked = 0
+        for _ in range(300):
+            n = 5
+            # balanced by construction: A = S |A| S for a random sign vector S
+            signs = [rng.choice((1, -1)) for _ in range(n)]
+            mag = random_matrix(rng, n, (1, 2, Fraction(1, 2)), 0.35)
+            a = matrix(tuple(tuple(signs[v] * mag[v][u] * signs[u] for u in range(n))
+                             for v in range(n)))
+            sigma = switching_function(a)
+            self.assertIsNotNone(sigma)
+            delta = [sigma[h] * rng.randint(0, 2) for h in range(n)]
+            if not any(delta):
+                continue
+            for y in range(n):
+                self.assertEqual(perturbation_effect_time(a, delta, y),
+                                 support_distance(a, delta, y))
+            checked += 1
+        self.assertGreater(checked, 50)
+
+    def test_mixed_sign_cause_refutes_the_unrepaired_sharpness_claim(self):
+        # Referee receipt R-6, replayed: a NONNEGATIVE carrier, two cause nodes
+        # feeding y, perturbation (+1, -1).  Structure says distance 1; the
+        # target never moves.  A single-sign perturbation arrives at lag 1.
+        a = matrix(((0, 0, 0), (0, 0, 0), (1, 1, 0)))
+        self.assertEqual(support_distance(a, (1, -1, 0), 2), 1)
+        self.assertIsNone(perturbation_effect_time(a, (1, -1, 0), 2))
+        self.assertEqual(perturbation_effect_time(a, (1, 1, 0), 2), 1)
+
+    def test_an_acting_observer_can_fake_a_cone_violation(self):
+        # Referee receipt R-7, replayed: source = model, edges x -> s and a -> y
+        # (with persistence on s, a, y).  A record-driven policy that copies the
+        # sensor s into the actuator a makes y depend on x although no path
+        # x -> y exists.  A passive observer sees no such effect.
+        x, s_, a_, y = 0, 1, 2, 3
+        table = matrix((
+            (0, 0, 0, 0),
+            (1, 1, 0, 0),
+            (0, 0, 1, 0),
+            (0, 0, 1, 1),
+        ))
+        self.assertIsNone(structural_distance(table)[x][y])
+        self.assertIsNone(effect_time(table, x, y))
+
+        def run(start, policy):
+            state, record, ys = list(start), [], []
+            for _ in range(6):
+                record.append(state[s_])
+                ys.append(state[y])
+                nxt = [sum(table[v][u] * state[u] for u in range(4)) for v in range(4)]
+                if policy:
+                    nxt[a_] = record[-1]          # override chosen from the record
+                state = nxt
+            return ys
+
+        base, other = [Fraction(0)] * 4, [Fraction(1), 0, 0, 0]
+        self.assertEqual(run(base, False), run(other, False))
+        acting = [u != v for u, v in zip(run(base, True), run(other, True))]
+        self.assertEqual(acting.index(True), 3)
+        # ... and never before the sensor could have been reached: d(x, s) = 1.
+        self.assertGreater(acting.index(True), structural_distance(table)[x][s_])
 
     def test_malformed_tables_are_refused(self):
         with self.assertRaises(ResponseGeometryError):

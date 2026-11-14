@@ -305,13 +305,41 @@ def quotient_pattern(a: Matrix, labels: tuple[int, ...]) -> Matrix:
     return tuple(tuple(row) for row in table)
 
 
+def perturbation_effect_time(a: Matrix, perturbation, node: int) -> int | None:
+    """Least lag at which a passive carrier's value at `node` differs between
+    two runs whose initial states differ by `perturbation` (a vector).
+
+    By linearity this does not depend on the common initial state.  ``None``
+    is an all-lag statement for the declared dimension (Cayley-Hamilton).
+    """
+    n = len(a)
+    vec = [Fraction(v) for v in perturbation]
+    if len(vec) != n:
+        raise ResponseGeometryError("One perturbation entry per node required")
+    for tau in range(n):
+        if vec[node] != 0:
+            return tau
+        vec = [sum((a[v][u] * vec[u] for u in range(n)), Fraction(0)) for v in range(n)]
+    return None
+
+
+def support_distance(a: Matrix, perturbation, node: int) -> int | None:
+    """Structural distance from the support of `perturbation` to `node`."""
+    dist = structural_distance(a)
+    reached = [dist[h][node] for h, v in enumerate(perturbation)
+               if v != 0 and dist[h][node] is not None]
+    return min(reached) if reached else None
+
+
 def detection_lower_bound(a: Matrix, cause: int, sensors: tuple[int, ...]) -> int | None:
     """Least structural distance from the cause to any sensor (``None``: never).
 
     No lawful record-driven policy on this declared carrier can have a record
     that depends on the cause before this time; see the cone lemma in
-    CAUSAL_GEOMETRY.md.  It is a lower bound, attained by cancellation-free
-    carriers and possibly exceeded by signed ones.
+    CAUSAL_GEOMETRY.md.  It is a lower bound.  It is attained by a PASSIVE
+    observer on a balanced carrier when the perturbation is aligned with the
+    sign pattern; it can be exceeded by signed carriers and by perturbations
+    of mixed sign on several nodes.
     """
     dist = structural_distance(a)[cause]
     reached = [dist[s] for s in sensors if dist[s] is not None]

@@ -14,15 +14,15 @@
       }
     },
     {
-      "name": "must-is-not-may",
+      "name": "must-is-silent-where-may-invents",
       "negative": {
         "exit_code": 1,
-        "source_sha256": "d38eae286931be211f63b57b9a7d7bad0b0a4c62cc60f72820c448b32a7233af"
+        "source_sha256": "361148888cc2cfd89a992cac41473b8426cb106314eab873fcce51bfd6191bea"
       },
       "passed": true,
       "positive": {
         "exit_code": 0,
-        "source_sha256": "bfe2151c6920d6bead20e37a543da68cd36789a4cafd720837bd6fa597d4d750"
+        "source_sha256": "0e1fd3af3943a8aa6704eda5c944d92a06c1809a5bc89e3a62c89f75aa0d0c7b"
       }
     }
   ],

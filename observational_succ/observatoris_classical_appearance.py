@@ -32,16 +32,28 @@ def static_partition(carrier: Carrier) -> tuple[tuple[int, ...], ...]:
     return tuple(tuple(g) for g in groups.values())
 
 
-def disturbing_instruments(carrier: Carrier) -> tuple[tuple[str, int], ...]:
+def disturbing_instruments(carrier: Carrier,
+                           readouts: tuple[str, ...] | None = None) -> tuple[tuple[str, int], ...]:
     """Pairs (instrument, state) where using the instrument changes the
-    behaviour class of the state.  Empty iff observation is free."""
+    behaviour class of the state.
+
+    `readouts` names the operations DECLARED to be observations; the others are
+    dynamics or actions and are expected to move the state.  With `readouts`
+    omitted every operation is treated as an observation.  Behaviour classes
+    are always taken with respect to the whole toolkit.
+    """
     owner = {x: j for j, block in enumerate(behavioral_partition(carrier)) for x in block}
+    names = {a.name for a in carrier.instruments}
+    if readouts is not None and not set(readouts) <= names:
+        raise ValueError("declared readout outside the toolkit")
     return tuple((a.name, x) for a in carrier.instruments for x in range(carrier.size)
-                 if owner[a.next_states[x]] != owner[x])
+                 if (readouts is None or a.name in readouts)
+                 and owner[a.next_states[x]] != owner[x])
 
 
-def is_free_observation(carrier: Carrier) -> bool:
-    return not disturbing_instruments(carrier)
+def is_free_observation(carrier: Carrier, readouts: tuple[str, ...] | None = None) -> bool:
+    """No declared observation changes the behaviour class of any state."""
+    return not disturbing_instruments(carrier, readouts)
 
 
 def transcript_is_static(carrier: Carrier, max_length: int) -> bool:
@@ -99,6 +111,15 @@ def future_readouts(carrier: Carrier, steps: int) -> dict[Fraction, set[Fraction
 def predictive_ambiguity(carrier: Carrier, steps: int) -> int:
     """Worst-case number of future readouts compatible with one present readout."""
     return max(len(v) for v in future_readouts(carrier, steps).values())
+
+
+def window_ambiguity_formula(bits: int, width: int, steps: int) -> int:
+    """Closed form for `window_carrier`: 2 ** min(s, bits-s, width, bits-width)
+    with s = steps mod bits.  The register is cyclic, so the unseen part of the
+    future window grows, saturates, and then SHRINKS again: prediction fails at
+    some horizons and recovers at others (it is perfect whenever s = 0)."""
+    s = steps % bits
+    return 2 ** min(s, bits - s, width, bits - width)
 
 
 # --- A declared Hilbert model with exact amplitudes in Q(sqrt 2) -----------
