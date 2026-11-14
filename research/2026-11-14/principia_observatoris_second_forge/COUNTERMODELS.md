@@ -18,10 +18,10 @@ Identifiers: `QG/RG/HQ` = [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md); `FO` =
 |---|---|---|---|---|
 | C-1 | A live structural path implies a net response at some lag | founding intuition, tested by PI | signed diamond `x→y (1), x→y' (1), y→z (1), y'→z (−1)`: `(A^τ)_{zx} = 0` for all `τ` | true for balanced carriers (RG-4); four nodes are minimal for an all-lag failure |
 | C-2 | Net response generates a directed path geometry (triangle inequality) | PI | same diamond: `R(x,y)·R(y,z) = 1 > 0 = R(x,z)` | true for balanced carriers (RG-3) |
-| C-3 | An unbalanced sign pattern forces some cancellation | PI | directed 3-cycle with one negative edge: unbalanced, never cancels | imbalance is necessary, not sufficient |
-| C-4 | Equal directed cycle products imply unit-equivalence | PI | acyclic diamond with parallel-path ratio `2`: no directed cycles, not unit-equivalent | true under strong connectivity; in general use undirected holonomy (RG-5) |
+| C-3 | An unbalanced sign pattern forces some cancellation | PI | directed 4-cycle with one negative edge: not balanced up to sign, at most one walk per length, never cancels (the 3-cycle first used is balanced for `ε = −1`) | imbalance is necessary, not sufficient |
+| C-4 | Equal directed cycle products imply unit-equivalence | PI | acyclic diamond with parallel-path ratio `2`: no directed cycles, not unit-equivalent | true when every edge lies on a directed cycle; in general use undirected holonomy (RG-5) |
 | C-5 | "`x` is closer to `y` than `z` is" is observer-independent | founding note's uncalibrated reading | weights `2, 1` into a common target; rescaling the first source by `4` reverses the order | round-trip products and lag ratios are unit-free |
-| C-6 | Coarse-graining can hide a causal ancestor | PI | — (QG-5 proves the opposite for may-quotients) | hidden ancestors need an *omitted edge*, not a coarse view |
+| C-6 | Coarse-graining can hide a causal ancestor | PI | **mixed verdict.** False for may-quotients (QG-5: `Q∃*` is the least quasar-free geometry). **True for must-quotients**: `q=(0,0,1)`, single edge `1→2`: `d_∀ = ∞`, `d_C(1,2) = 1` (referee R-3). The first version listed this as REFUTED with no receipt, which broke the receipt rule | may-quotients err only by ghosts, must-quotients only by quasars |
 | C-7 | A quotient path lifts from the selected start | inherited SUCC corpse (PAP-04) | three-state ghost `b→c`, reports `A,A,B`, start `a` | exactness criterion QG-3 |
 | C-8 | `Q∀* = Q∃*` characterises exactness | PI | PAP-04 chain `0→1→2`, `q=(0,0,1)`: exact, yet must-closure < may-closure | it is sufficient; the exact criterion is `Q∃(R) ≤ Q∀(R*)` |
 | C-9 | The source value is a function of the quotient closures | PI ("a fixed point between the two?") | edges `{1→2, 1→0}` versus `{0→1, 1→2}` with `q=(0,0,1)`: same `Q∃, Q∀, Q∃*, Q∀*`, different reachable reports from `0` | recovered through the coarsest exact refinement (Geometer CG-10) |
@@ -67,11 +67,39 @@ Identifiers: `QG/RG/HQ` = [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md); `FO` =
 | C-34 | Failing determinism and free observation certifies a non-classical carrier | — | toolkit `{X, H, Z}`: a four-state classical stochastic machine matches every transcript | same |
 | C-35 | A deterministic, local, freely observed law is predictable | — | shift register through an `r`-bit window: ambiguity `2^{min(r,t)}` | predictive closure is horizon-relative |
 
-## 5. Adversarial review
+## 5. First-version claims refuted or repaired under adversarial review
 
-The findings of the hostile referee (OPUS IV), the repairs made in response, and the statements
-that survived are recorded in
-[agents/OPUS_IV_HOSTILE_REFEREE.md](agents/OPUS_IV_HOSTILE_REFEREE.md) and summarised in
-[PROVENANCE_AND_INDEPENDENCE.md](PROVENANCE_AND_INDEPENDENCE.md) §5. The referee reviewed the
-documents before the identifiers `CG-n` in CAUSAL_GEOMETRY.md were renamed `QG-n`; its `CG-n`
-therefore means this package's `QG-n`.
+The hostile referee's full reports are
+[agents/OPUS_IV_HOSTILE_REFEREE.md](agents/OPUS_IV_HOSTILE_REFEREE.md) (findings `R-n`, receipts
+in `tests/test_observatoris_referee_receipts.py`) and
+[agents/OPUS_IV_REFEREE_ROUND2.md](agents/OPUS_IV_REFEREE_ROUND2.md) (findings `S-n`). The first
+referee began before `CG-n` in CAUSAL_GEOMETRY.md was renamed `QG-n`. Every row below was a
+statement of this package's first version; the corpse is kept and the live documents carry the
+repaired form.
+
+| # | First-version statement | Referee | Receipt | Repaired statement |
+|---|---|---|---|---|
+| C-36 | HQ-3: any effect at a lag below the model distance witnesses a hidden edge | R-7 REFUTED | model = source, edges `x→s`, `a→y`; a policy copying the sensor into the actuator makes `y` respond at lag 3 with `d_M(x,y)=∞` | add `τ ≤ d_M(x,S)` (or a passive/open-loop observer), preparations differing exactly at `x`, a fixed time convention |
+| C-37 | HQ-4: `d_C(x,y) ≤ T_eff` for every observer | R-7 REFUTED | same receipt | holds for passive or open-loop observers |
+| C-38 | HQ-2(b): on every nonnegative linear carrier effect and detection times equal structural distances | R-6 REFUTED | `h₁→y`, `h₂→y`, perturbation `(+1,−1)`: target never moves; a clamping policy also blocks the effect | passive observer, carrier balanced up to sign, perturbation aligned with the switching signs |
+| C-39 | HQ-4: `d_Q∃(q x,q y) = d_C(x,y)` iff cost-exact | R-4 REFUTED | single edge `0→2`, labels `(0,1,1)`: exact everywhere, `d_Q∃(q0,q1)=1<∞=d_C(0,1)` | exactness equates quotient distance with distance to the *fibre* |
+| C-40 | RG-3: for unbalanced carriers no transform of the response gives a triangle inequality | R-9 REFUTED | a never-cancelling unbalanced cycle satisfies it | what defeats every transform is an all-lag cancellation |
+| C-41 | RG-3: `−log` of the response is derived, unlike the note's `log(1+1/R)` | R-10 OVERCLAIM | `log(1+1/R)` satisfies the same inequality on 1 000 exact triples | `−log` is singled out only by turning products into sums exactly |
+| C-42 | RG-3: `D_T` is a Lawvere-type distance | R-11 OVERCLAIM | chain at `T=1`; `A=[[2]]` gives a negative value; the discount reverses an order | graded family; the clamped all-lag version is a quasi-metric and still depends on `γ` |
+| C-43 | §2: ghosts are found by invariants, quasars only by contrasts | R-2 OVERCLAIM | two sources with identical quotient data, one with a ghost at the start | a difference of data regimes, not of failure types |
+| C-44 | RG-4 (after the `ε` update): Harary's all-closed-walks-positive criterion; "balance = unit-equivalence to a nonnegative carrier" | R-13 REQUIRES REPAIR | `A=[[−1]]` | closed walks have sign `ε^{|W|}`; `A` or `−A` is unit-equivalent to a nonnegative carrier |
+| C-45 | RG-1(c): four nodes are minimal for an all-lag cancellation | R-12 scope | three nodes suffice for self-return at positive lags | minimal for distinct nodes |
+| C-46 | QG-3(5): "may = must for the closure" | R-8 REQUIRES REPAIR | fails whenever `q` is not onto (empty meet) | on the image of `q` |
+| C-47 | CA-4: window ambiguity is `2^{min(r,t)}` | R-18 REFUTED | `(n,r,t)=(4,2,3)` gives `2` | `2^{min(s, n−s, r, n−r)}`, `s = t mod n` |
+| C-48 | CA-3: the diagnostics are pairwise independent, every cell computed | R-19 OVERCLAIM | no pair realises all four combinations; the module's predicate called the shift register not free | three diagnostics are each shown to fail alone; determinism is not separated from free observation |
+| C-49 | FH-6: surviving `b_H` are "equivalently those deviating at or before index `n−1`" | R-22 REFUTED at `n=1,H=0` | `b₀` has order 1 and first deviates at index 1 | add "or `H = 0`" |
+| C-50 | the Lean "must-is-not-may" control shows the mutated statement false | R-27 REFUTED | the same harness rejects a true statement | the control now proves the negation inside the instance |
+| C-51 | two finite-horizon tests | R-23 VACUOUS | one asserted a tautology, one compared a formula with itself | replaced by tests of the falsifiable premises |
+
+**Survived hostile review** (what was tried is in the report): the Lean core QG-1…QG-4 including
+the reversed-order cost structure, a noncommutative language structure, empty `X` and off-image
+`Y` (R-26); QG-5 in its universal-property form (R-1); HQ-1 with memoryful acting observers,
+sharpened (R-5); RG-1(a,b), RG-2; RG-5 with a weaker hypothesis (R-14, R-15); RG-6 (R-16); CA-6
+for words of every length, with a twelve-identity certificate (R-17); FH-3, FH-7, FH-8, FH-9 with
+every constant re-derived and brute-forced (R-20, R-21, R-24, R-25); FH-1, FH-2, FH-5, FH-6(d),
+FH-10, FH-11, FH-12, FH-14 re-derived on paper (R-28).

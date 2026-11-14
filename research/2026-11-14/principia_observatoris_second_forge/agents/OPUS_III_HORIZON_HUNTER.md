@@ -631,3 +631,23 @@ For K ⊆ V^ℕ with V countable:
 - No result here bears on RH, on π-normality, on actual physical carriers or brains, or on any claim that finite observations prove universal statements.
 - A finite search over models is not a proof of the general theorem; the general theorems rest on the paper proofs above.
 - No CI run is claimed beyond the single local test command listed at the top.
+
+---
+
+## Erratum added by the principal investigator after adversarial review (2026-11-14)
+
+The text above is the workstream's report as delivered. The hostile referee
+([OPUS_IV_HOSTILE_REFEREE.md](OPUS_IV_HOSTILE_REFEREE.md)) found the following; the report body
+is left unchanged so the corrections stay visible.
+
+- **FH-6, "Which b_H remain admissible" (R-22).** The clause "equivalently, the finite-surprise
+  members surviving the declaration are those whose deviation comes at or before index n−1" is
+  false at `n = 1`, `H = 0`: `b₀` has order 1 and first deviates at index 1. The preceding
+  criterion (`H = 0`, or `1 ≤ H ≤ n−2`) is correct.
+- **Tests (R-23).** `test_no_learner_is_right_on_both_extremal_sequences_at_2d_minus_1` and
+  `test_declared_dimension_admits_b_H_iff_H_le_n_minus_2` could not fail as written. Both were
+  replaced by tests of the falsifiable premises.
+- **FH-14 (R-28).** The explicit witness `g = f + t(t−1)⋯(t−d+1)` needs characteristic `0` or
+  `> d`; over other fields with at least `d+1` elements sharpness follows by interpolation.
+- **Attribution (R-29).** FH-7 is the unary case of Moore's 1956 theorem; the uniqueness lemma in
+  FH-5 is Massey's minimal-LFSR uniqueness at length `≥ 2L`.

@@ -106,8 +106,9 @@ SUCC target descent (inherited) ─► FH-10 ;  finite-information topology (cla
 
 - **Signed diamond / cancellation:** invisible to every experiment on `(x, z)`; exposed by an
   intervention on one branch.
-- **Hidden wire (HQ-3):** no invariant of the model reveals it; a finite contrast violating the
-  model cone does.
+- **Hidden wire (HQ-3):** nothing computable from the model alone reveals it; a finite contrast
+  violating the model cone does, provided the observer has not yet had time to act on its own
+  record.
 - **Interaction order (FO-4):** a dependency at order `h` needs `h` simultaneous interventions.
 - **Gating (FO-8):** needs a context outside the realised range.
 - **Unknown dimension (FH-5):** needs a premise about the source, not an instrument.
@@ -124,7 +125,7 @@ that our receipts contradict; each is a test to run at the interface.
 |---|---|---|
 | closeness is a single symmetric metric fixed by relevance | RG-5, RG-1c | one-way order reversed by units; signed diamond breaks the triangle inequality |
 | causal relevance ⇔ nonzero derivative or first-order response | FO-4, RG-1c | AND gate invisible below order `k`; cancelled path |
-| a coarse-grained observer sees a sub-geometry (distances preserved or lost) | QG-2 | quotient distances only shrink; ghosts are invented, never hidden |
+| a coarse-grained observer sees a sub-geometry (distances preserved or lost) | QG-2, QG-4 | may-quotient distances only shrink (ghosts, never quasars); must-quotient distances only grow (quasars, never ghosts) |
 | knowledge is closed under conjunction | FO-10d | four-state carrier |
 | measurement and action are separable without loss | FO-1(6) | splitting changes single-copy access |
 | more instruments only refine | FO-3 | an intervention enlarges the reachable set |
@@ -132,7 +133,7 @@ that our receipts contradict; each is a test to run at the interface.
 | sufficiently long agreement justifies a universal or limit claim | FH-5, FH-10 | no certifier; unconstrained limit |
 | the observer's geometry determines what the source can do | C-9 | two sources, same four quotient closures, different futures |
 | exactness is stable under any reasonable change of scale | QG-8 limits | lax and oplax receipts |
-| hidden causes are those outside a coarse view | QG-5 | a coarse view cannot hide an ancestor; an omitted edge can |
+| hidden causes are those outside a coarse view | QG-5 | `Q∃*` is the least geometry with no unseen ancestor; a quasar is exactly an uncovered source edge |
 
 If Astra's axioms *imply* any left-hand statement, one of the two systems is wrong and the
 receipt decides. If they are merely compatible with it, the receipt is a required countermodel.
@@ -145,9 +146,12 @@ receipt decides. If they are merely compatible with it, the receipt is a require
 2. QG-5 says a may-quotient geometry has no unseen ancestors. Is that a theorem about observers
    or a tautology of defining the geometry from the unseen source? What is the strongest version
    for an observer who only has a quotient of a *subgraph*?
-3. RG-3 claims `−log` of the response is derived for balanced carriers. Is the object obtained a
-   Lawvere metric (sign, diagonal, dependence on horizon and discount), or only a graded family?
-4. Break HQ-1 with a policy that has memory, randomisation, or sensors that are actuators.
+3. RG-3 (already repaired once): the graded family is not a metric and the discount is a
+   choice. Is there any *canonical* normalisation, or is response geometry irreducibly a family?
+4. HQ-1 survived memoryful acting observers; break it with asynchronous updates or private
+   randomness, and find the right statement there.
+4b. HQ-3 needed `τ ≤ d_M(x,S)` because an acting observer is itself a causal channel. Is there a
+   formulation in which the observer is a node of the graph, so that no side condition is needed?
 5. FH-5: is "no sound certifier halts" robust to certifiers allowed a bounded error probability?
 6. FO-10d: does a *resettable* copy or a second copy restore conjunction-closure, and at what
    exact cost?
@@ -157,6 +161,15 @@ receipt decides. If they are merely compatible with it, the receipt is a require
 9. Which of our "premises" (KERNEL §5) can Astra's axioms *derive*? Any such derivation is a
    theorem we could not prove from below.
 10. Find a carrier where our kernel's totalisation of refusal over-reports what can be known.
+
+## 8b. What our own adversarial review already broke
+
+Two hostile referees attacked this package before handoff. Sixteen first-version statements were
+refuted or repaired ([COUNTERMODELS.md](COUNTERMODELS.md) §5), among them the hidden-wire theorem
+(faked by an observer that copies a sensor into an actuator), the sharpness of the warning
+margin (false for mixed-sign causes), three overclaims about response geometry, and a wrong
+closed form. A rival examiner should start from the repaired statements and from the referee's
+"walls": the classical attributions were written from memory and not checked against sources.
 
 ## 9. Promising but unproved
 
@@ -180,6 +193,7 @@ input type preserving the listed data; the output then holds there verbatim.
 |---|---|---|---|
 | QG-1 | `(X, R: X×X→V)`, start `x` | edge weights, unit | `R*(x,·)` = least potential with unit at `x`; potential certificates are sound lower/upper bounds |
 | QG-2 / QG-4 | `(X, R, q: X→Y)` | fibres of `q`, edge weights | `Q∀*(q x,b) ≤ ⋁_{q z=b}R*(x,z) ≤ Q∃*(q x,b)` |
+| QG-5 | `(X, R, q)` and any geometry `G` on `Y` | same | `G` has no unseen ancestor ⇔ `Q∃ ≤ G*` |
 | QG-3 / QG-7 / QG-10 | same | same | six equivalent exactness conditions; a verdict plus a ghost witness when it fails |
 | QG-6 | same, plus a quotient potential `ψ` | same | `Cl_Q q_!φ ≤ ψ ⇔ φ ≤ q^*ψ`; ghost defect of a start |
 | QG-8 | an exactness certificate over `V`, a strict map `h: V→W` | joins, products, unit | exactness of `h∘R` over `W` at the same start |
@@ -187,8 +201,8 @@ input type preserving the listed data; the output then holds there verbatim.
 | RG-1 / RG-4 | a square matrix over an ordered field | zero pattern, signs | response support ⊆ structure; equality if balanced up to a global sign |
 | RG-2 | same, dimension `n` | dimension | "no response for `n` lags" ⇒ "no response ever" |
 | RG-5 | two matrices with equal patterns and signs | pattern, signs | unit-equivalence verdict with a certificate; `b₁` free magnitudes |
-| HQ-1 / HQ-2 | a dependency digraph, sensor set, cause set, target | edges (parents), synchronous update, record-driven policy | no record depends on the cause before `d(H,S)`; lead time ≤ `d(H,y) − d(H,S)` |
-| HQ-3 | a model graph and one finite contrast | node identification between model and source | a source edge absent from the model |
+| HQ-1 / HQ-2 | a dependency digraph, sensor set, cause set, target | edges (parents), synchronous update, sensors read before the update, deterministic record-driven policy | no record depends on the cause before `d(H,S)`; attained for a passive observer, balanced carrier, sign-aligned perturbation |
+| HQ-3 | a model graph and one finite contrast between preparations differing exactly at `x`, at a lag `τ ≤ d_M(x,S)` or with a passive observer | node identification, time convention | a source edge absent from the model |
 | FO-2 | two pointed finite carriers over the same operations | readouts, transitions, start | equal responses to length `n+m−1` ⇔ isomorphic cores |
 | FO-4 / FO-6 | a function on `k` binary inputs, a baseline, an order budget | values on the Hamming ball | detected dependencies; exact cost of certifying absence within degree `d` |
 | FO-9 | a potential-parent DAG and an experiment family | which nodes are clamped, free and read | identifiability verdict for the unrestricted class |

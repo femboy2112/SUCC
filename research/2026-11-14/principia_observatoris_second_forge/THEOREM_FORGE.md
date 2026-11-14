@@ -24,12 +24,12 @@ declared table describes a real source.
 | ID | Statement (scope: any set `X`, observation `q: X→Y`, value structure `V` with the unital-quantale inequalities; no commutativity) | Authority | Proof | Depends on |
 |---|---|---|---|---|
 | QG-1 | `R*(x,·)` is the least potential with unit at `x` | KERNEL; CLASSICAL in content | CAUSAL_GEOMETRY §1; Lean `star_closed`, `star_le_of_closed` | — |
-| QG-2 | `R*(x,z) ≤ Q∃*(q(x),q(z))` | KERNEL | §1; `star_le_quot_star` | QG-1 |
+| QG-2 | `R*(x,z) ≤ Q∃*(q(x),q(z))` | KERNEL; CLASSICAL in content (soundness of existential abstraction) | §1; `star_le_quot_star` | QG-1 |
 | QG-3 | all-start exactness ⇔ fibre constancy ⇔ `q_!` preserves potentials ⇔ saturation preserves potentials; selected-start form | KERNEL | §1; `exact_iff_*`, `exactAt_iff_saturated_star_closed` | QG-1, QG-2 |
 | QG-4 | `Q∀*(q(x),b) ≤ (q_!R*(x,·))(b) ≤ Q∃*(q(x),b)` | KERNEL | §1; `quotAll_star_le_push_star` | QG-1 |
-| QG-5 | a may-quotient geometry has no unseen ancestors | PROVED (corollary) | §2 | QG-2 |
+| QG-5 | for any geometry `G` on reports: no unseen ancestors ⇔ every source edge covered ⇔ `Q∃ ≤ G*`; so `Q∃*` is the least quasar-free geometry; must-quotients can hide ancestors | PROVED; strengthened by the referee (R-1), exhaustively tested there | §2 | QG-1, QG-2 |
 | QG-6 | `Cl_Q∘q_! ⊣ q^*`; it maps `R*(x,·)` to `Q∃*(q(x),·)`; exactness at `x` ⇔ ghost defect vanishes | KERNEL | Lean `closure_push_adjunction`, `closure_push_star_le_quot_star`, `quot_star_le_closure_push_star`, `exactAt_iff_closure_push_le` | QG-1…3 |
-| QG-7 | all-start exactness ⇔ `Sat_q∘Cl_R` idempotent | KERNEL | Lean `satClosed_iff_sat_closure_idempotent` | QG-3 |
+| QG-7 | all-start exactness ⇔ `Sat_q∘Cl_R` idempotent | KERNEL; possibly the completeness condition of abstract interpretation (correspondence UNVERIFIED) | Lean `satClosed_iff_sat_closure_idempotent` | QG-3 |
 | QG-8 | selected-start exactness transports along homomorphisms of value structures; not conversely | KERNEL (transport); REPLAYED receipt (non-converse) | Lean `exactAt_map`; `test_observatoris_integration` | QG-3 |
 | QG-9 | over truth values the weighted closure is reflexive-transitive closure (PAP recovered) | KERNEL | Lean `star_propQ_iff` | — |
 
@@ -57,27 +57,27 @@ and exhaustive models by a different agent). Additional results registered from 
 
 | ID | Statement (scope: finite square matrix `A` over an ordered field; `A_{vu}` = edge `u→v`) | Authority | Proof | Depends on |
 |---|---|---|---|---|
-| RG-1 | response support ⊆ structural walks; equality if `A ≥ 0`; fails for signed `A`; four nodes minimal for an all-lag failure | PROVED; OBSERVED exhaustively for 3×3 sign tables | CAUSAL_GEOMETRY §3 | — |
+| RG-1 | response support ⊆ structural walks; equality if `A ≥ 0`; fails for signed `A`; four nodes minimal for an all-lag failure between **distinct** nodes (three suffice for self-return) | PROVED; (a),(b) CLASSICAL combinatorial matrix theory; OBSERVED exhaustively for 3×3 sign tables | CAUSAL_GEOMETRY §3 | — |
 | RG-2 | `n` zero lags force zero at every lag; `n−1` do not | PROVED from CLASSICAL Cayley–Hamilton | §3 | — |
-| RG-3 | `A ≥ 0`: `R_{S+T}(x,z) ≥ R_S(x,y)R_T(y,z)`; finiteness pattern = structural ancestry | PROVED | §4 | RG-1 |
-| RG-4 | balanced (up to a global sign `ε`) ⇒ `(A^τ)_{yx} = ε^τσ_yσ_x(|A|^τ)_{yx}`; hidden dependency requires imbalance of `A` and `−A`; converse false | PROVED; CORROBORATED (PI and Geometer independently); balance criterion CLASSICAL (Harary) | §4 | — |
-| RG-5 | unit changes act by potentials; unit-equivalence ⇔ trivial holonomy; `b₁ = |E|−|V|+c` free magnitudes | PROVED; (b) CLASSICAL diagonal similarity | §5 | — |
+| RG-3 | `A ≥ 0`: `R_{S+T}(x,z) ≥ R_S(x,y)R_T(y,z)` (a **graded** family; the clamped all-lag version is a directed quasi-metric depending on the chosen discount); finiteness pattern = structural ancestry | PROVED; three first-version overclaims withdrawn (C-40…42) | §4 | RG-1 |
+| RG-4 | balanced up to a global sign `ε` ⇒ `(A^τ)_{yx} = ε^τσ_yσ_x(|A|^τ)_{yx}`; hidden dependency requires imbalance of `A` and `−A`; converse false (negative 4-cycle) | PROVED; CORROBORATED (PI and Geometer independently); CLASSICAL in content (Harary balance; signature similarity); criterion repaired (C-44) | §4 | — |
+| RG-5 | unit changes act by potentials; unit-equivalence ⇔ trivial holonomy (directed cycles suffice when every edge lies on one); `b₁ = |E|−|V|+c` free magnitudes | PROVED; CLASSICAL in content (diagonal similarity; cycle space; gain-graph switching); survived review, hypothesis weakened by the referee | §5 | — |
 
 ## C. Causal horizon
 
 | ID | Statement (scope: finite synchronous network, sensors `S`, record-driven policy) | Authority | Proof | Depends on |
 |---|---|---|---|---|
-| HQ-1 | for `t < d(H,S)` records agree and states agree outside the radius-`t` ball | PROVED; OBSERVED on sampled linear carriers | CAUSAL_GEOMETRY §6 | — |
-| HQ-2 | no evidence before `d(H,S)`; lead time bounded by `d(H,y) − d(H,S)`; attained on balanced linear carriers | PROVED | §6 | HQ-1, RG-1, RG-4 |
-| HQ-3 | a model-cone violation witnesses a source edge absent from the model | PROVED | §6 | HQ-1 |
-| HQ-4 | `d_Q∃ ≤ d_C ≤ T_eff`; `d_C(x, fibre) ≤ d_Q∀` | PROVED | §6 | QG-2, QG-4, HQ-1 |
+| HQ-1 | for `t < d(H,S)` records agree; for `t ≤ d(H,S)` states agree outside the radius-`t` ball; deterministic record-driven policies with memory | PROVED; survived review on 300 nonlinear networks with acting observers | CAUSAL_GEOMETRY §6 | — |
+| HQ-2 | no evidence before `d(H,S)`; bounds attained for a **passive** observer on a carrier balanced up to sign with a **sign-aligned** perturbation | PROVED as repaired; first version REFUTED (C-38) | §6 | HQ-1, RG-1, RG-4 |
+| HQ-3 | an effect at lag `τ < d_M(x,y)` with `τ ≤ d_M(x,S)` (or a passive observer), preparations differing exactly at `x`, witnesses a source edge absent from the model | PROVED as repaired; first version REFUTED (C-36) | §6 | HQ-1 |
+| HQ-4 | `d_Q∃(qx,qy) ≤ d_C(x,q⁻¹qy) ≤ d_C(x,y) ≤ T_eff` (passive observer); `d_C(x, fibre) ≤ d_Q∀`; first equality for all reports ⇔ exact at `x` | PROVED as repaired; first version REFUTED (C-37, C-39) | §6 | QG-2, QG-4, HQ-1 |
 
 ## D. Finite observer (delegated: OPUS I)
 
 | ID | Statement | Authority | Proof |
 |---|---|---|---|
 | FO-1 | observation is a function of `(X, A, (o_a,t_a), start)`; measure/act splitting preserves the core, not single-copy access | PROVED | agents/OPUS_I §A1 |
-| FO-2 | responses equal on words of length `≤ n+m−1` ⇔ cores isomorphic (uniquely); sharp; reconstruction from length `≤ 2n−1` | CLASSICAL (Moore, Nerode) + PROVED sharpness; OBSERVED on 46 916 carriers | §A1 |
+| FO-2 | responses equal on words of length `≤ n+m−1` ⇔ cores isomorphic (uniquely); sharp; reconstruction from length `≤ 2n−1` (core sizes; readout before transition; refusal sink counted) | CLASSICAL (Moore, Nerode) + PROVED sharpness; OBSERVED on 46 916 carriers | §A1 |
 | FO-3 | `core_A(M) ≅ core(core_{A∪B}(M)|_A)`; exposure minimal at 2 states (readout), 3 (intervention) | PROVED; OBSERVED exhaustively | §A1 |
 | FO-4 | dependency on `j` detected at order exactly `h_j = min{|S|: j∈S, Δ_S f ≠ 0}` | PROVED; Möbius inversion CLASSICAL; PI spot-check on all 256 functions of 3 inputs | §A2 |
 | FO-5 | baseline transport formula; degree is baseline-invariant; `h_j` need not reach `deg_j` | PROVED; strengthening REFUTED | §A2 |
@@ -91,9 +91,13 @@ and exhaustive models by a different agent). Additional results registered from 
 
 Registered with exact constants in [FINITE_HORIZONS.md](FINITE_HORIZONS.md) §2–§7 (FH-1 … FH-14).
 Headline authorities: FH-3 PROVED and CORROBORATED (PI's separate implementation for
-`n,m ≤ 3`); FH-5 PROVED; FH-6 PROVED and CORROBORATED (PI's separate elimination for `n ≤ 6`);
-FH-7 PROVED and CORROBORATED (PI's brute force for `(n,m) ≤ (3,3)`); FH-10 PROVED;
-FH-11, FH-12, FH-13 CLASSICAL.
+`n,m ≤ 3`; the referee's independent re-derivation and brute force); FH-5 PROVED (the
+uniqueness lemma at length `≥ 2L` is CLASSICAL, Massey); FH-6 PROVED and CORROBORATED (PI's
+separate elimination for `n ≤ 6`; referee by hand for `n = 1, 2`); FH-7 PROVED and CORROBORATED
+(PI's and the referee's brute force; the unary case of Moore's theorem is CLASSICAL); FH-8, FH-9
+CORROBORATED by the referee's independent evaluation; FH-10 PROVED; FH-11, FH-12, FH-13
+CLASSICAL. One clause of FH-6 was refuted at `n=1, H=0` and two tests were vacuous; both are
+repaired (C-49, C-51). FH-14's explicit witness needs characteristic `0` or `> d`.
 
 ## F. Classical appearance
 
@@ -101,10 +105,10 @@ FH-11, FH-12, FH-13 CLASSICAL.
 |---|---|---|---|
 | CA-1 | if no operation changes the behaviour class, then behaviour = joint one-shot readout, transcripts are static, and one copy suffices | PROVED (below); CORROBORATED by FO-10(b1); OBSERVED | this file |
 | CA-2 | the converse of CA-1 fails | REFUTED converse; receipt: the two-state swap | `test_static_behaviour_does_not_imply_free_observation` |
-| CA-3 | free observation, predictive closure at a horizon, determinism of the core, and alignment are pairwise independent diagnostics | OBSERVED by exact witnesses (table below) | `tests/test_observatoris_classical_appearance.py`, `test_observatoris_response_geometry.py` |
-| CA-4 | a window of `r` bits on a cyclic shift register predicts the window `t` steps ahead with ambiguity exactly `2^{min(r,t)}` | PROVED (count the unseen bits); OBSERVED | same |
+| CA-3 | free observation, predictive closure and alignment are each separable from the other diagnostics (each fails alone in some exact witness); determinism of the core is **not** separated from free observation | OBSERVED by exact witnesses (table below); the first version's "pairwise independent" was an overclaim (C-48) | `tests/test_observatoris_classical_appearance.py`, `test_observatoris_response_geometry.py` |
+| CA-4 | a window of `r` bits on a cyclic `n`-bit register predicts the window `t` steps ahead with ambiguity exactly `2^{min(s, n−s, r, n−r)}`, `s = t mod n` | PROVED (overlap of two cyclic intervals); OBSERVED exhaustively on every allowed register; first version REFUTED (C-47) | same |
 | CA-5 | a declared qubit with toolkit `{X, Z-readout}` is transcript-identical to a deterministic bit | PROVED (both operations preserve the computational basis); OBSERVED for all words of length ≤ 7 | same |
-| CA-6 | with `H` added, every transcript distribution equals that of a four-state classical stochastic machine, for words of every length | PROVED (below); OBSERVED for all words of length ≤ 6 | this file; same tests |
+| CA-6 | with `H` added, every transcript distribution equals that of a four-state classical stochastic machine, for words of every length | PROVED (below); CORROBORATED by the referee's independent twelve-identity certificate; CLASSICAL in content (one-qubit stabiliser fragment; Gottesman–Knill) | this file; same tests |
 
 **Proof of CA-1.** Suppose `t_a(x) ∼ x` for all `a, x`. By induction on the word, every readout
 in a transcript from `x` is taken at a state equivalent to `x`, hence equals the one-shot readout
@@ -125,16 +129,17 @@ by tests, the remaining ✓ entries are immediate from the definitions).
 
 | Carrier | free observation | predictive at long horizon | deterministic core | aligned (no hidden wire) |
 |---|---|---|---|---|
-| shift register through a window | ✓ (readout) | ✗ beyond the resolution | ✓ | ✓ |
+| shift register through a window | ✓ (relative to the declared readout) | ✗ at some horizons (it recovers after a full period) | ✓ | ✓ |
 | classical network with a hidden shortcut (HQ-3) | ✓ | ✓ on the experiments used to build the model, ✗ on the held-out contrast | ✓ | ✗ |
 | declared qubit, toolkit `{X, Z}` | ✓ | ✓ | ✓ | ✓ |
 | declared qubit, toolkit `{X, H, Z}` | ✗ | ✓ (in distribution) | ✗ | ✓ |
-| destructive A,B,C carrier (inherited SUCC) | ✗ | ✓ | ✓ | ✓ |
+| destructive A,B,C carrier (inherited SUCC) | ✗ | ✓ (every operation resets the state) | ✓ | ✓ |
 
 **Verdict on the founding hypothesis (§8 of the note).** *"A system appears classical when
 geometric closeness lines up with computational form and observation is free"* **SURVIVES as a
 family of toolkit-relative diagnostics and FAILS as a single predicate**: the rows above realise
-different pass/fail patterns, and row three shows that passing every diagnostic is compatible
+different pass/fail patterns (rows one, two and five are the witnesses in which exactly one
+diagnostic fails), and row three shows that passing every diagnostic is compatible
 with a non-classical declared carrier, while row four shows that failing some is compatible with
 an exact classical stochastic model. The qualifier *appears* is not removable.
 

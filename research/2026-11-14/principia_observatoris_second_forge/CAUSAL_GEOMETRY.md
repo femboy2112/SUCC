@@ -15,7 +15,7 @@ different algebra:
 |---|---|---|
 | value algebra | an idempotent one: a quantale (truth values, costs, best-path weights, path languages) | a ring (signed reals); no idempotence |
 | composition | joins of path weights never cancel | sums of path weights can cancel |
-| geometry | a directed (Lawvere-type) distance; triangle inequality is a theorem | no triangle inequality in general |
+| geometry | the closure `R*` is a directed (Lawvere-type) distance: its triangle inequality is transitivity of closure | no triangle inequality once a response can cancel |
 | under an observation quotient | can only get *closer* (QG-2); exactness has a four-way criterion (QG-3) | can be invented **and** deleted |
 | bridge | `supp` is a homomorphism on nonnegative weights and only *lax* on signed ones (RG-1) | |
 
@@ -26,6 +26,13 @@ horizon". Section 7 lists what failed.
 Executable evidence: `tests/test_observatoris_quantale_quotient.py`,
 `tests/test_observatoris_response_geometry.py`; kernel evidence:
 `formal/ObservatorisQuantale.lean` (see [THEOREM_FORGE.md](THEOREM_FORGE.md) for receipts).
+
+**This is the text as repaired after adversarial review.** A hostile referee refuted or forced
+repair of several statements of the first version (HQ-2(b), HQ-3, the HQ-4 chain, parts of RG-3,
+RG-4's criterion, the scope of RG-1(c), QG-3 item 5 off the image, and the ghost/quasar
+asymmetry). The refuted versions are kept as corpses in [COUNTERMODELS.md](COUNTERMODELS.md) §5,
+with the referee's receipts in `tests/test_observatoris_referee_receipts.py`; each repaired
+statement below says what changed.
 
 ---
 
@@ -91,7 +98,8 @@ never hides a route.
 5. *One-step may is below closure must:* every source edge `u → v` is realised, up to its weight,
    by the closure from **every** representative of `q(u)`:
    `R(u,v) ≤ (q_! R*(x',·))(q(v))` whenever `q(x') = q(u)`; equivalently `Q∃(R) ≤ Q∀(R*)`.
-   (Found by the delegated workstream; equivalently "may = must for the closure".)
+   (Found by the delegated workstream. The equality form "may = must for the closure" holds
+   **on the image of `q`** only: on an empty fibre the must-value is the empty meet `⊤`.)
 
 *Status: PROVED twice by different authors and routes — the PI's paper proof formalised in Lean
 (`exact_iff_fibreConstant`, `exact_iff_pushClosed`, `exact_iff_satClosed`,
@@ -172,34 +180,58 @@ and rejection behaviour). **What it does not establish:** anything about signed 
 
 ---
 
-## 2. Ghosts versus quasars: two different geometric failures
+## 2. Ghosts and quasars: the two one-sided errors of an observer's geometry
 
-Let the source be a network with dependency digraph `G_C` and structural distance `d_C`.
+Let the source be a network with dependency digraph `G_C` and structural distance `d_C`, and let
+`G` be any value relation on the report set `Y` — the observer's geometry, however obtained.
 
-**QG-5 (an honest coarse-graining has no unseen ancestors).** If the observer's geometry is the
-may-quotient distance `d_Q` of the source, then for every horizon `τ` and target `y`,
+- A **ghost** is a route the geometry asserts that the selected source state lacks
+  (`G*(q x, b)` exceeds what `x` can do).
+- A **quasar** is a source dependency the geometry does not account for
+  (`R*(x,y) ≰ G*(q x, q y)`): an unseen ancestor.
 
-```
-{ x : d_C(x,y) ≤ τ }  ⊆  { x : d_Q(q(x),q(y)) ≤ τ } .
-```
+**QG-5 (the quasar-free geometries; universal property).** For any `G`, in every value
+structure, the following are equivalent:
 
-So the founding note's unseen causal set `U_{R,τ}(y) = Anc_C(y;τ) \ B^G_R(y)` is **empty**
-whenever `R ≥ τ` and the geometry is a may-quotient of the source. *PROVED (corollary of QG-2).*
+1. no unseen ancestors at any horizon: `R*(x,y) ≤ G*(q x, q y)` for all `x, y`;
+2. every source edge is covered: `R(u,v) ≤ G*(q u, q v)`;
+3. `Q∃ ≤ G*`.
 
-**Consequence.** There are exactly two ways geometry and computation can disagree, and they are
-detected by different instruments:
+Hence **`Q∃*` is the least geometry without quasars, and a quasar is exactly an uncovered source
+edge.** *PROVED* (the proof of QG-2 with `G*` in place of `Q∃*`); *CLASSICAL* in content: this is
+soundness of existential abstraction (simulation preserves reachability). The first version of
+this document stated only the special case `G = Q∃`, which the referee correctly called a
+near-tautology; the equivalence above is the referee's strengthening (its R-1, exhaustively
+tested on 4 928 cases).
 
-- **Ghosts** — the geometry claims a route the selected source state lacks. Cause: collapsing
-  states (QG-2 strict). Detector: a potential / hereditary invariant (QG-1; SUCC's PAP-05
-  certificate). No experiment is needed; a closed set containing the start is the receipt.
-- **Quasars** — a source dependency reaches the target from outside the geometric neighbourhood.
-  By QG-5 this *cannot* arise from coarse-graining alone; it requires the observer's graph to
-  **omit a source edge** (a hidden wire), i.e. the model is wrong rather than coarse. Detector:
-  a finite intervention contrast that violates the model's cone (HQ-3 below). No invariant of
-  the model can reveal it, because the model does not contain it.
+**The symmetric picture.** The two quotient constructions of §1 are the two one-sided-error
+geometries:
 
-This asymmetry is the precise content we can extract from "the observer's effective light cone
-and the source dependency cone fail to coincide under the available projection".
+| geometry | ghosts (invented routes) | quasars (unseen ancestors) |
+|---|---|---|
+| may-quotient `Q∃` | possible | **impossible** (QG-5) |
+| must-quotient `Q∀` | **impossible** (QG-4) | possible |
+| exact observation (QG-3) | none | none |
+| a model omitting a source edge | possible | possible |
+
+*Receipt that a must-quotient hides an ancestor (referee R-3):* `q = (0,0,1)` with the single
+edge `1 → 2`: `Q∀` is empty, so `d_∀ = ∞`, while `d_C(1,2) = 1`.
+
+**Who can detect what (repaired; the first version overclaimed an asymmetry).**
+With the source table in hand, both errors are decidable by computation: a ghost by a potential /
+hereditary invariant containing the start (QG-1, SUCC's PAP-05), a quasar by the uncovered-edge
+test above. With only quotient or model data, **neither** is decidable without an experiment:
+two sources can share `Q∃`, `Q∀` and both closures while one has a ghost at the start and the
+other does not (receipt: edges `{1→2, 1→0}` versus `{0→1, 1→2}`, `q = (0,0,1)`), and a quasar
+shows only through a cone violation (HQ-3). So the asymmetry between "found by an invariant" and
+"found by a contrast" is a difference between *data regimes*, not between failure types.
+For value structures that are not totally ordered (path languages) one pair of nodes can be a
+ghost and a quasar at once.
+
+What survives of "the observer's effective light cone and the source dependency cone fail to
+coincide": the failure has exactly these two directions, each geometry construction errs in one
+of them only, and an omitted edge — a wrong model rather than a coarse one — is the only way a
+*may*-type geometry acquires a quasar.
 
 ---
 
@@ -216,7 +248,8 @@ with coordinate input and readout. *(The chain-rule identity itself is CLASSICAL
 `y`. *No response without ancestry.*
 (b) If `A ≥ 0` entrywise, the converse holds: response support **equals** structural walks, at
 every lag.
-(c) The converse fails for signed `A`, and the smallest all-lag failure has four nodes.
+(c) The converse fails for signed `A`. For **distinct** nodes `x ≠ z` the smallest all-lag
+failure has four nodes.
 
 *Proof.* `(A^τ)_{yx}` is the sum over walks `x=w_0→…→w_τ=y` of the products of edge weights;
 non-walks contribute zero, which gives (a). If `A ≥ 0`, each walk contributes a strictly positive
@@ -230,7 +263,9 @@ forces `A_{zx}=0`, and then `(A²)_{zx} = A_{zw}A_{wx} + A_{zz}A_{zx} + A_{zx}A_
 which is nonzero whenever the only possible route `x→w→z` exists. ∎
 
 (A cancellation at a *single* lag already occurs with two nodes: `A = [[1,0],[1,−1]]` has
-`(A²)_{21} = 0` and `(A)_{21} = 1`.)
+`(A²)_{21} = 0` and `(A)_{21} = 1`. *Scope repaired after review:* for self-return (`x = z`,
+positive lags) three nodes suffice — `x→w (+1), x→z' (−1), w→x, z'→x` has `(A^τ)_{xx} = 0` for
+all `τ ≥ 1` — and two nodes never do; referee R-12.)
 
 **RG-2 (finite decision of "never responds").** For an `n`-node linear carrier,
 `ρ_τ(x→y) = 0` for `τ = 0,…,n−1` implies `ρ_τ(x→y) = 0` for all `τ`; and `n−1` zeros do not
@@ -256,44 +291,65 @@ spirit):* as a polynomial in indeterminate edge weights, `(A^τ)_{yx}` has nonne
 coefficients and is nonzero iff a walk exists, so exact cancellation is a proper algebraic
 condition requiring mixed signs.
 
-## 4. When the response *is* a geometry: balance (RG-3, RG-4)
+## 4. When the response supports a geometry: balance (RG-3, RG-4)
 
-**RG-3 (nonnegative carriers generate a directed distance).** Let `A ≥ 0`, `γ > 0`, and
-`R_T(x,y) = max_{0≤τ≤T} γ^τ ρ_τ(x→y)`. Then
+**RG-3 (nonnegative carriers: a graded supermultiplicative relevance).** Let `A ≥ 0`, `γ > 0`,
+and `R_T(x,y) = max_{0≤τ≤T} γ^τ ρ_τ(x→y)`. Then
 
 ```
 R_{S+T}(x,z) ≥ R_S(x,y) · R_T(y,z),     R_T(x,x) ≥ 1,     R_T(x,y) > 0 ⟺ d_C(x,y) ≤ T.
 ```
 
 *PROVED.* `(A^{s+t})_{zx} = Σ_y (A^t)_{zy}(A^s)_{yx}` and every term is nonnegative; take the
-maximising lags. Hence `D_T = −log R_T` satisfies the directed triangle inequality
-`D_{S+T}(x,z) ≤ D_S(x,y) + D_T(y,z)`, and its finiteness pattern is exactly structural ancestry
-within the horizon.
+maximising lags.
 
-This answers a question the founding note left open. There, the edge-to-length transform
-`ℓ = log(1 + 1/R)` was "an explicit choice, not a derived law". For nonnegative (more generally
-balanced, RG-4) carriers, `−log` of the response is **derived**: it is the transform that turns
-composition into addition, and the triangle inequality is a theorem rather than a consequence of
-taking shortest paths. For unbalanced carriers no transform of `|ρ|` can work: in the signed
-diamond `R(x,y)·R(y,z) = 1 > 0 = R(x,z)` (*receipt; REFUTES "net response always generates a
-path geometry"*).
+**What this is and is not (repaired after review; three overclaims withdrawn).**
 
-**RG-4 (balance excludes cancellation).** Call `A` *balanced* if there are `σ ∈ {±1}^N` and
-`ε ∈ {±1}` with `ε·σ_v A_{vu} σ_u ≥ 0` for all `u,v`. Then for all `τ,x,y`:
+- The family `D_T = −log R_T` is **graded**: `D_{S+T}(x,z) ≤ D_S(x,y) + D_T(y,z)`. At a fixed
+  horizon it is *not* a metric (chain `x→y→z` at `T=1`), it can be negative (`A = [[2]]`), and
+  the order it induces depends on the discount `γ`, which is chosen, not derived.
+- A genuine `[0,∞]`-valued directed (Lawvere) quasi-metric is obtained by taking all lags and
+  clamping: `D(x,y) = max(0, −log sup_{τ≥0} γ^τ ρ_τ(x→y))`. Then `D(x,x) = 0` and the triangle
+  inequality holds because the supremum over all lags is supermultiplicative. It still depends
+  on `γ`.
+- The triangle inequality does **not** single out `−log`: every decreasing `φ` with
+  `φ(ab) ≤ φ(a) + φ(b)` works, including the founding note's own `log(1 + 1/R)` (since
+  `1 + 1/(ab) ≤ (1+1/a)(1+1/b)`). What is special about `−log` is only that, up to scale, it is
+  the monotone transform turning products into sums *exactly*. So the note's edge-length
+  transform remains a choice; what the theorem adds is that for balanced carriers the **response
+  itself** (not only a path construction built from single edges) obeys the triangle inequality
+  under any such transform.
+- What defeats every transform is **cancellation, not imbalance**: if some structurally reachable
+  pair has zero response at every lag, then for any `φ` with `φ(0) = ∞` and `φ(r) < ∞` for
+  `r > 0` the graded inequality fails (signed diamond: `R(x,y)·R(y,z) = 1 > 0 = R(x,z)`).
+  A carrier that is not balanced up to sign but never cancels (the negative directed 4-cycle)
+  satisfies it.
+
+**RG-4 (balance excludes cancellation).** Call `A` *balanced up to sign* if there are
+`σ ∈ {±1}^N` and `ε ∈ {±1}` with `ε·σ_v A_{vu} σ_u ≥ 0` for all `u,v`. Then for all `τ,x,y`:
 `(A^τ)_{yx} = ε^τ σ_y σ_x (|A|^τ)_{yx}`. Consequently response support equals structural walks,
 `|ρ|` satisfies RG-3, and **any hidden (cancelled) dependency requires that neither `A` nor `−A`
-is balanced.** *PROVED;* the cycle characterisation of balance (every closed walk of the
-underlying undirected signed multigraph has positive sign product) is CLASSICAL (Harary 1953).
-*CORROBORATED:* the PI proved the case `ε = 1`; the Causal Geometer independently proved the
-statement with the global sign `ε` (its CG-13(2)), which is the form recorded here. The module's
-`switching_function` tests the case `ε = 1` only.
+is balanced.** *PROVED.*
 
 *Proof.* With `S = diag(σ)`, `S A S = ε|A|`, so `A^τ = ε^τ S |A|^τ S`. ∎
 
-*The converse fails:* a directed 3-cycle with one negative edge is unbalanced, yet it has at
-most one walk of each length between two nodes, so nothing can cancel. Imbalance is necessary
-for hidden dependency, not sufficient. (An exact criterion for *possible* cancellation at a
-given `(x,y,τ)` in terms of the sign pattern is open; it is semi-algebraic in the magnitudes.)
+*Criterion (repaired after review).* `A` is balanced up to sign iff for some `ε` every closed
+walk `W` of the underlying undirected signed multigraph has sign product `ε^{|W|}`. For `ε = 1`
+this is Harary's balance theorem (CLASSICAL, 1953); the identity above is signature similarity
+from qualitative matrix theory (CLASSICAL). The first version quoted the `ε = 1` criterion for
+the `ε`-notion, which is wrong for `A = [[−1]]`. The referee checked the repaired criterion on
+all 19 683 sign tables of size three.
+
+*CORROBORATED:* the PI proved the case `ε = 1`; the Causal Geometer independently proved the
+statement with the global sign (its CG-13(2)). The module's `switching_function` tests `ε = 1`;
+`is_balanced_up_to_sign` tests both.
+
+*The converse fails:* a directed 4-cycle with one negative edge is not balanced up to sign, yet
+it has at most one walk of each length between two nodes, so nothing can cancel. (The negative
+directed 3-cycle, used in the first version, is unbalanced for `ε = 1` but balanced for
+`ε = −1`.) Imbalance is necessary for hidden dependency, not sufficient. An exact criterion for
+*possible* cancellation at a given `(x,y,τ)` in terms of the sign pattern is open; it is
+semi-algebraic in the magnitudes.
 
 ---
 
@@ -303,7 +359,10 @@ The founding note insists that "relatively relevant" needs calibrated units. The
 the unit freedom exact.
 
 **RG-5 (unit changes are potentials; the invariant content is holonomy).** *PROVED;* part (b) is
-the CLASSICAL diagonal-similarity theorem (Engel–Schneider; Fiedler–Pták), reproved here.
+the CLASSICAL diagonal-similarity theorem, reproved here (attributed from memory to
+Engel–Schneider and Fiedler–Pták; the exact statements were not checked against the sources);
+(c) is the dimension of the cycle space (Kirchhoff); the "holonomy" language is switching of
+gain graphs (Zaslavsky). The weakening of strong connectivity in (b) is the referee's (R-14).
 
 (a) A change of node units `z' = Dz` (`D` positive diagonal) gives `A' = DAD^{-1}` and
 `ρ'_τ(x→y) = (d_y/d_x)·ρ_τ(x→y)`. In log form every directed distance shifts by a potential:
@@ -312,8 +371,8 @@ the CLASSICAL diagonal-similarity theorem (Engel–Schneider; Fiedler–Pták), 
 (b) Let `A, B` have the same zero pattern and entry signs, with ratios `r(u→v) = B_{vu}/A_{vu}`.
 Then `B = DAD^{-1}` for some positive diagonal `D` **iff** the product of `r^{±1}` around every
 closed walk of the underlying undirected multigraph is `1` (exponent `−1` when an edge is
-traversed backwards). If the digraph is strongly connected it suffices that all *directed* cycle
-products of `A` and `B` agree.
+traversed backwards). If every edge lies on a directed cycle (in particular if the digraph is
+strongly connected) it suffices that all *directed* cycle products of `A` and `B` agree.
 
 (c) The space of positive weightings of a fixed pattern modulo unit changes has dimension
 `b₁ = |E| − |V| + c` (first Betti number; `c` = number of weak components).
@@ -342,75 +401,108 @@ locally constant functions (dimension `c`); its cokernel has dimension `|E| − 
 - *Cycle products are not enough without strong connectivity.* The acyclic diamond has no
   directed cycle, but its two parallel paths carry one unit-free ratio (`b₁ = 1`).
 
-**The unifying remark.** Allowing signed unit changes `D ∈ diag(ℝ^×)`, balance (RG-4) is
-exactly unit-equivalence to a nonnegative carrier. The unit-free content of a carrier is a
-holonomy class on the cycle space of its structure graph: a positive part (unit-free magnitudes)
-and a `ℤ/2` part (frustration). **Both the calibration-independent magnitudes and the
-possibility of cancelled, hidden dependencies live in the same place — the loops and parallel
-paths of the carrier.** A tree-shaped carrier has neither.
+**The unifying remark (repaired).** Allowing signed unit changes `D ∈ diag(ℝ^×)`, `A` is
+balanced up to sign exactly when `A` or `−A` is unit-equivalent to a nonnegative carrier. The
+unit-free content of a carrier is a holonomy class on the cycle space of its structure graph: a
+positive part (unit-free magnitudes) and a sign part (frustration). **Both the
+calibration-independent magnitudes and the possibility of cancelled, hidden dependencies live in
+the same place — the loops and parallel paths of the carrier.** A tree-shaped carrier has
+neither.
 
 ---
 
 ## 6. The unseen causal horizon (HQ-1 … HQ-4)
 
-**Setting.** A finite network: nodes `N`, value sets, synchronous updates
+**Setting.** A finite network: nodes `N`, value sets, **synchronous** updates
 `z_{t+1,v} = f_v(z_t|_{pa(v)})`, dependency digraph `G` with an edge `u → v` for each declared
-parent. An observer reads sensor nodes `S ⊆ N` at every step and may override actuator nodes;
-the override applied at time `t+1` is a function of the sensor record through time `t` (a
-*lawful record-driven policy*). `d` is directed distance in `G`; `d(H,·) = min_{h∈H} d(h,·)`.
+parent. An observer reads sensor nodes `S ⊆ N` at every step, *before* the update, and may
+override actuator nodes; the override applied at time `t+1` is a function of the sensor record
+through time `t` (a *lawful record-driven policy*, possibly with memory). `d` is directed
+distance in `G`; `d(H,·) = min_{h∈H} d(h,·)`. Comparing two runs means two preparations of the
+carrier (resettable or independent copies); on a single unresettable copy the comparison is
+counterfactual.
 
 **HQ-1 (cone lemma with an acting observer).** Let two initial states differ only on `H ⊆ N`,
-and run the same policy on both. Then for every `t < d(H,S)` the two sensor records through time
-`t` are identical, and the two states agree at every node `v` with `d(H,v) > t`.
-*PROVED; finite propagation is CLASSICAL, the care is in the acting observer.*
+and run the same deterministic policy on both. Then the two sensor records through time `t` are
+identical for every `t < d(H,S)`, and the two states agree at every node `v` with `d(H,v) > t`
+for every `t ≤ d(H,S)`. *PROVED; finite propagation is CLASSICAL, the care is in the acting
+observer.* The referee attacked it with 300 random nonlinear networks, memoryful policies,
+sensors that are actuators and `H` meeting `S`; it survived, and the range `t ≤ d(H,S)` for
+states is the referee's sharpening (R-5).
 
 *Proof.* Induction on `t`. At `t=0` the states differ only on `H`. If the claim holds at `t` and
-`t+1 < d(H,S)`: the records through `t` agree, so the policy applies the same overrides in both
+`t < d(H,S)`: the records through `t` agree, so the policy applies the same overrides in both
 runs; a node `v` with `d(H,v) > t+1` has all parents at distance `> t`, hence equal inputs, hence
-equal values (or the same override). Sensors have `d(H,s) > t+1`, so the records agree through
-`t+1`. ∎
+equal values (or the same override). ∎
 
-The restriction `t < d(H,S)` is essential and not cosmetic: after detection the observer itself
-is a causal channel from sensors to actuators, which is not an edge of `G`.
+*Boundaries (each is a hypothesis, not a defect).* After detection the observer itself is a
+causal channel from sensors to actuators, which is not an edge of `G`; with sequential
+(Gauss–Seidel) updates the chain `h→v→s` is detected one step early; randomised policies need
+shared coins, otherwise the conclusion holds only in law.
 
 **HQ-2 (effect versus detection: the warning margin).** Define the structural lead time
 `m = d(H,y) − d(H,S)` for a target node `y`.
 
 (a) *No-go.* For every carrier on `G` and every lawful policy, no record depends on the cause
-before time `d(H,S)`. If `m ≤ 0`, evidence can never strictly precede the earliest possible
-effect on the target; if `m < 0`, on any carrier that realises its structural distances the
-effect precedes all possible evidence by `|m|` steps. This is relative to the toolkit
-`(S, actuators)` and to `G`.
-(b) *Sharpness.* On every nonnegative (or balanced) linear carrier with pattern `G`, effect and
-earliest detection times equal the structural distances exactly (RG-1b, RG-4).
-(c) *Signed carriers.* Effect and detection times are never earlier than the structural
-distances and can be strictly later, or never (RG-1c).
+before time `d(H,S)`. If `m ≤ 0`, on a carrier that realises its structural distances evidence
+can never strictly precede the first effect on the target. Relative to the toolkit and to `G`.
 
-*PROVED (a) from HQ-1; (b),(c) from Section 3. Receipt: the six-node carrier in
-`test_warning_margin_and_detection_bound` — the same hidden cause is seen one step early by a
-near sensor and one step late by a far one.*
+(b) *Sharpness (repaired after review).* Let the carrier be linear and balanced up to sign with
+switching signs `σ`, let the observer be **passive**, and let the two initial states differ by a
+perturbation `δ₀` **aligned with the sign pattern** (`σ_h δ₀(h) ≥ 0` for all `h`). Then, for
+every common initial state, the first effect at `y` occurs exactly at `d(supp δ₀, y)` and the
+first sensor difference exactly at `d(supp δ₀, S)`. *PROVED:* `A^τ δ₀ = ε^τ S|A|^τ(Sδ₀)` with
+`Sδ₀ ≥ 0`, so component `y` is nonzero iff a walk of length `τ` from the support reaches `y`.
+
+*Refuted first version:* "on every nonnegative linear carrier effect and detection times equal
+the structural distances". Receipts (referee R-6, replayed in
+`test_mixed_sign_cause_refutes_the_unrepaired_sharpness_claim`): with `h₁→y`, `h₂→y` and
+perturbation `(+1, −1)` the target never moves although `d(H,y) = 1`; and an open-loop policy
+clamping an actuator on the only route blocks the effect for good.
+
+(c) *Signed carriers.* For a passive observer, effect and detection times are never earlier than
+the structural distances and can be strictly later, or never (RG-1c).
 
 This is the exact form of "it matters before the observer has evidence that it matters": it is
-a statement about **which sensor is structurally closer to the cause than the target is**, and
-nothing more mysterious.
+a statement about **which sensor is structurally closer to the cause than the target is**, valid
+as a lower bound for every policy and attained under the hypotheses of (b).
 
-**HQ-3 (a model-cone violation is a finite witness of a hidden wire).** Let the observer's model
-have dependency graph `G_M` on the same nodes. If some lawful finite contrast shows an effect of
-`x` on `y` at a lag `τ < d_M(x,y)`, then the source has a dependency edge absent from `G_M`.
-*PROVED (HQ-1 applied to the model, contrapositive).* The converse fails: a hidden wire can
-cancel (signed diamond), be gated off in every reachable context, or lie beyond every available
-intervention; then it is `UNVERIFIED`, not absent.
-
-**HQ-4 (the chain).** For an observation `q`, source nodes `x,y`, and a carrier on `G_C`:
+**HQ-3 (a model-cone violation is a finite witness of a hidden wire — repaired).** Let the
+observer's model have dependency graph `G_M` on the same nodes, with the same synchronous time
+convention. Suppose two preparations differ **exactly** on `{x}`, and `y` differs between them
+at some lag `τ` with
 
 ```
-d_Q∃(q(x),q(y))  ≤  d_C(x,y)  ≤  T_eff(x→y),          d_C(x, q⁻¹(b)) ≤ d_Q∀(q(x), b).
+τ < d_M(x,y)      and      ( τ ≤ d_M(x,S)   or   the policy is passive / open-loop ).
 ```
 
-The first inequality is QG-2 (equality iff cost-exactness, QG-3); the second is HQ-1 (equality
-on balanced linear carriers); the last is QG-4. So a may-quotient geometry gives sound
-"not-before" bounds, a must-quotient geometry gives sound "route-exists-by" bounds, and the gap
-between structure and effect is exactly cancellation or gating.
+Then the source has a dependency edge absent from `G_M`. *PROVED* by HQ-1 applied to the model,
+contrapositive.
+
+*Refuted first version:* the same statement without the second condition. Receipt (referee R-7,
+replayed in `test_an_acting_observer_can_fake_a_cone_violation`): model = source with edges
+`x→s`, `a→y`; a policy copying the sensor `s` into the actuator `a` makes `y` respond at lag 3
+although `d_M(x,y) = ∞` and there is no hidden edge. The apparent hidden wire is the observer.
+Two further ways the witness can be fake, each excluded by a stated hypothesis: a preparation
+that also perturbs another declared node, and a time-convention slip (sensors read after the
+update). The converse fails as before: a hidden wire can cancel, be gated off, or lie beyond
+every available intervention; then it is `UNVERIFIED`, not absent.
+
+**HQ-4 (the chain — repaired).** For an observation `q`, source nodes `x,y`, and a carrier on
+`G_C`:
+
+```
+d_Q∃(q x, q y)  ≤  d_C(x, q⁻¹(q y))  ≤  d_C(x,y)  ≤  T_eff(x→y)   (passive or open-loop observer),
+d_C(x, q⁻¹(b))  ≤  d_Q∀(q x, b).
+```
+
+The first inequality is QG-2 and is an equality **for all reports `b` iff the observation is
+exact at `x`** (QG-3): exactness concerns the distance to a *fibre*, not to a chosen
+representative. *Refuted first version:* "`d_Q∃(q x,q y) = d_C(x,y)` iff cost-exact"; receipt
+(referee R-4): single edge `0→2`, labels `(0,1,1)`: exact at every start, yet
+`d_Q∃(q0,q1) = 1 < ∞ = d_C(0,1)`. The third inequality is HQ-1 and needs a passive or open-loop
+observer (or `τ ≤ d(x,S)`), by the receipt under HQ-3; it is an equality under the hypotheses of
+HQ-2(b). The last line is QG-4.
 
 **Boundary.** These are statements about declared finite networks with synchronous updates. No
 superluminal influence, measurement postulate or physical horizon is modelled. Quantum
@@ -425,15 +517,17 @@ not respond to a remote intervention has no response edge there, whatever its jo
 | Conjecture | Verdict | Receipt |
 |---|---|---|
 | Net response always generates a directed path geometry | REFUTED | signed diamond: `R(x,y)R(y,z)=1`, `R(x,z)=0` |
-| A live structural path implies a response at some lag | REFUTED for signed carriers; PROVED for balanced ones | signed diamond; RG-4 |
-| Imbalance implies some cancellation | REFUTED | negative directed 3-cycle |
-| Equal directed cycle products imply unit-equivalence | REFUTED without strong connectivity | acyclic diamond with parallel-path ratio 2 |
+| A live structural path implies a response at some lag | REFUTED for signed carriers; PROVED for carriers balanced up to sign | signed diamond; RG-4 |
+| Imbalance implies some cancellation | REFUTED | negative directed 4-cycle |
+| Equal directed cycle products imply unit-equivalence | REFUTED when some edge lies on no directed cycle | acyclic diamond with parallel-path ratio 2 |
 | "x is closer to y than z is" is observer-independent | REFUTED without transported calibration | unit change reverses the order |
-| Coarse-graining can hide a causal ancestor | REFUTED for may-quotients (QG-5) | — it can only invent them |
+| Coarse-graining can hide a causal ancestor | REFUTED for may-quotients (QG-5); **TRUE for must-quotients** | `q=(0,0,1)`, edge `1→2` |
 | A may-quotient path lifts from the selected start | REFUTED (inherited: SUCC three-state ghost) | PAP-04 |
+| *First-version claims refuted by the referee* | see COUNTERMODELS §5 | `tests/test_observatoris_referee_receipts.py` |
 
 **Next falsification opportunities.** (i) Nonlinear carriers: find the right replacement for
 balance (monotone systems are cancellation-free but can still *gate*; see the finite-observer
 report). (ii) Stochastic carriers: is there a must/may sandwich for hitting probabilities, where
 the value algebra is not idempotent? (iii) An exact sign-pattern criterion for possible
-cancellation at a given lag.
+cancellation at a given lag. (iv) An intercept theorem: when can the observer act in time, given
+that acting makes it a causal channel?

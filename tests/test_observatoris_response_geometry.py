@@ -192,6 +192,15 @@ class Balance(unittest.TestCase):
         a = matrix(((0, 0, -1), (1, 0, 0), (0, 1, 0)))
         self.assertIsNone(switching_function(a))
         self.assertEqual(cancellations(a, 9), ())
+        # The 3-cycle is nevertheless balanced for the global sign -1.  A
+        # negative directed 4-cycle is not balanced up to sign at all, and still
+        # has at most one walk per length, so it never cancels and obeys the
+        # graded triangle inequality.
+        self.assertTrue(is_balanced_up_to_sign(a))
+        b = matrix(((0, 0, 0, -1), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0)))
+        self.assertFalse(is_balanced_up_to_sign(b))
+        self.assertEqual(cancellations(b, 12), ())
+        self.assertEqual(triangle_violations(b, 3, 4), ())
 
     def test_global_sign_flip_also_excludes_cancellation(self):
         # RG-4 with eps = -1: -A balanced.  A negative self-loop is the smallest

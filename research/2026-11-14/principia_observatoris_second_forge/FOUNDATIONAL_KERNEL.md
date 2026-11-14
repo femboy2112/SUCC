@@ -124,8 +124,10 @@ was found by a theorem failing when the premise was removed.
 4. **A modulus of convergence.** Without it a prefix says nothing about a limit (FH-10).
 5. **Observability of refusal** for partial operations.
 6. **Calibration transport.** One-way magnitude comparisons are not unit-free (RG-5).
-7. **Completeness of the model's wiring.** A coarse-graining cannot hide an ancestor, an omitted
-   edge can (QG-5, HQ-3).
+7. **Completeness of the model's wiring.** A geometry has no unseen ancestor exactly when it
+   covers every source edge (QG-5); whether it does is not readable from the geometry itself.
+8. **The observer's own causal role.** Once it acts on its record the observer is a channel from
+   sensors to actuators that is not an edge of the carrier (HQ-1, HQ-3).
 
 ## 6. What an observer can distinguish, compute, know — in the kernel's terms
 
@@ -136,7 +138,7 @@ was found by a theorem failing when the premise was removed.
 | What does the observer's geometry assert? | `Q∃*` (possible) and `Q∀*` (guaranteed) (KT-5). |
 | What can be known about a target? | whether `P` is constant on the surviving fibre (KT-3). |
 | What can one copy actually find out? | the belief fixed point (KT-4). |
-| What cannot yet be known, and why? | one of the seven premises in §5 is missing, or the target is discontinuous at the source (FH-1). |
+| What cannot yet be known, and why? | one of the eight premises in §5 is missing, or the target is discontinuous at the source (FH-1). |
 | When does finite evidence justify an exact conclusion? | when the conclusion is constant on the fibre of sources compatible with the evidence **and** the premises; the theorems of FINITE_HORIZONS give the exact horizons. |
 
 ## 7. Boundary

@@ -46,10 +46,12 @@ python scripts/check_observatoris_lean.py        # needs the pinned Lean 4.14 on
 1. **Observation–dynamics commutation** (kernel-checked): an observer's quotient geometry is
    exact iff "evolve, then blur" is already closed; in general the truth is bracketed by the
    must- and may-quotients.
-2. **Ghosts versus quasars:** coarse-graining can only invent causal routes, never hide one;
-   a hidden cause needs an omitted edge, and is found by a contrast, not an invariant.
-3. **Structure is not response:** balance is exactly what makes them coincide; the unit-free
-   content of a carrier and the possibility of cancellation both live on its cycles.
+2. **Ghosts versus quasars:** the two one-sided errors of an observer's geometry. A may-type
+   coarse-graining can invent causal routes but never hide one; a must-type one can hide but
+   never invent; the least geometry with no unseen ancestor is exactly the may-quotient.
+3. **Structure is not response:** balance (up to a global sign) is sufficient for them to
+   coincide, and a cancelled dependency requires its failure; the unit-free content of a carrier
+   and the possibility of cancellation both live on its cycles.
 4. **Limit-identifiable, never certified:** with a declared complexity bound a finite record
    settles all future records at an exact sharp horizon; without it the observer converges and
    can never know that it has.
