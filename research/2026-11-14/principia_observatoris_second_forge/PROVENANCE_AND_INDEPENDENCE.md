@@ -121,3 +121,42 @@ infinite carriers (paper only); exhaustive three-state models over the larger va
 the cited classical sources (diagonal similarity, the probabilistic-automaton bound, the
 abstract-interpretation completeness literature, the descriptive-set-theoretic completeness
 result), all written from memory.
+
+## 6. Receipts
+
+**Repository state**
+
+- Repository `femboy2112/SUCC`; branch `ccr-db6a5bf5-l6g6wu` (the session's designated
+  non-main branch); base `db9fb4b84672050efa79b13377f1e73364598a14` (Main XXV).
+- Draft pull request: [#620](https://github.com/femboy2112/SUCC/pull/620). Not merged, not
+  tagged, not released.
+- Last commit that changed code or tests: `b7616bc7db5ed15422adfe7111152d61a515700a`. Commits
+  after it, up to and including `5bd0cd2ba1501eb36618a17c1cdebc484185f82c` and the commit adding this section, change documentation
+  only.
+
+**Local validation (this session's container, Python 3.13 unless stated)**
+
+| Command | Result |
+|---|---|
+| `python scripts/verify_provenance.py` | `SOURCE_PROVENANCE_VERIFIED` |
+| `python scripts/observer_foundations_probe.py` | exit 0 |
+| `python scripts/ordinal_succ_report_probe.py` | exit 0 (after installing the test extras) |
+| `python -m unittest discover -s tests -p 'test_*.py'` at `b7616bc7` | **13,305 tests, OK** (23 min 41 s) |
+| same command, earlier intermediate tree | 13,227 tests, 1 error: an existing test shells out to a probe that imports the package, which was not yet installed in the container; it passes after `pip install -e .`, as CI does |
+| `python -m unittest discover -s tests -p 'test_observatoris_*.py'` | 255 tests: 15 classical appearance, 45 finite horizons, 42 finite observer, 7 integration, 45 quantale quotient, 29 + 39 referee receipts, 33 response geometry |
+| the same 255 tests under Python 3.11 | OK (run before the last test edits; counts unchanged) |
+| `python scripts/check_observatoris_lean.py` (Lean 4.14.0) | `KERNEL_CHECKED`; 18 declarations; no axioms; both controls pass; source sha256 prefix `b326f653bc84dcda` |
+
+**Continuous integration on the pull request** (read once, at the time this section was written;
+not a claim about later pushes): 20 of 21 check runs had completed, all successful, including
+the dedicated exact-model jobs on Python 3.10 and 3.13, the pinned-Lean kernel job, and the full
+suite on Python 3.13. The full suite on Python 3.10 was still in progress. Python 3.10 was not
+available locally.
+
+**Not done**
+
+- No independent check of the cited literature.
+- No proof-assistant formalisation of the delegated paper proofs beyond the declarations listed
+  in §4 (the finite-observer, finite-horizon, response-geometry and causal-horizon theorems are
+  paper proofs with exact tests).
+- No comparison with, or use of, the parallel axiomatic campaign.
