@@ -1,5 +1,12 @@
 # Research claim ledger
 
+**Additive register, 2026-11-13:**
+[Principia Observatoris claims and dependencies](principia_observatoris/REFERENCE.md).
+This includes complete conditional paper proofs, exact finite certificates and
+retained countermodels. Existing theorem attribution and status are preserved.
+No new formal-kernel authority, academic priority, physical observation,
+π-normality or RH conclusion is asserted.
+
 The proposed [Contextual Zero Backbone, CZB-01–12](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md)
 adds a *foundations-level*, finite source-context observer: a current
 uncertainty fiber, evidence-relative zero ideal, exact probes and movement,

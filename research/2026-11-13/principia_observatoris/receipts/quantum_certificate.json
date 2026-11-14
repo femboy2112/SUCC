@@ -1,0 +1,1844 @@
+{
+  "general_complex_certificate_claimed": false,
+  "invalid_inputs_rejected": [
+    "incomplete_instrument",
+    "negative_kraus_weight",
+    "unnormalized_kernel"
+  ],
+  "matrix_scope": "Real symmetric 2x2; diagonal algebra with two minimal projections",
+  "physical_experiment_claimed": false,
+  "reset_x_optimal_error_for_declared_kernel": "1/2",
+  "results": {
+    "bitflip_z_exact": {
+      "all_signs_checked": 16,
+      "certified": true,
+      "checks": [
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "defect_order": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defects": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "epsilon": "0",
+      "failed_sign_indices": []
+    },
+    "reset_x_false_third_error": {
+      "all_signs_checked": 16,
+      "certified": false,
+      "checks": [
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "1"
+            ],
+            [
+              "1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            -1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "1"
+            ],
+            [
+              "1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            -1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "1"
+            ],
+            [
+              "1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            -1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "1"
+            ],
+            [
+              "1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "-1"
+            ],
+            [
+              "-1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "-1"
+            ],
+            [
+              "-1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "-1"
+            ],
+            [
+              "-1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "-1"
+            ],
+            [
+              "-1",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "-5/9"
+          ],
+          "psd": false,
+          "signs": [
+            1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "2/3"
+            ]
+          ],
+          "principal_minors": [
+            "2/3",
+            "2/3",
+            "4/9"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "defect_order": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defects": [
+        [
+          [
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-1/2"
+          ],
+          [
+            "-1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "epsilon": "1/3",
+      "failed_sign_indices": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    "reset_x_half_error": {
+      "all_signs_checked": 16,
+      "certified": true,
+      "checks": [
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "principal_minors": [
+            "1",
+            "1",
+            "1"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "defect_order": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defects": [
+        [
+          [
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-1/2"
+          ],
+          [
+            "-1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "epsilon": "1/2",
+      "failed_sign_indices": []
+    },
+    "z_exact": {
+      "all_signs_checked": 16,
+      "certified": true,
+      "checks": [
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            -1,
+            1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "bound_matrix": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "principal_minors": [
+            "0",
+            "0",
+            "0"
+          ],
+          "psd": true,
+          "signs": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "defect_order": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defects": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "epsilon": "0",
+      "failed_sign_indices": []
+    }
+  },
+  "saturating_minus_outcome_law": [
+    "0",
+    "1"
+  ],
+  "saturating_plus_outcome_law": [
+    "1",
+    "0"
+  ],
+  "scalar_arithmetic": "fractions.Fraction",
+  "script_sha256": "42ec5f836422ead9d10d142e4c6dec8edd64c194a5dfa141b71cf367b90006d6",
+  "source_semantics": "Declared weighted rational Kraus maps, not external measurements",
+  "status": "EXACT_REAL_QUBIT_FINITE_CERTIFICATES",
+  "theorem": "PO-C2a",
+  "total_sign_matrices_checked": 64
+}
