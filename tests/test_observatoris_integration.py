@@ -129,5 +129,63 @@ class AncestralChainIsACostGhost(unittest.TestCase):
         self.assertEqual(structural_distance(quotient_pattern(a, (0, 0, 1)))[0][1], 1)
 
 
+def cyclic_map(modulus, f):
+    """Pattern matrix of x -> f(x) on Z/modulus, as edges x -> f(x)."""
+    return matrix(tuple(tuple(int(f(u) % modulus == v) for u in range(modulus))
+                        for v in range(modulus)))
+
+
+def reachable_reports(a, labels, start):
+    dist = structural_distance(a)[start]
+    return {labels[v] for v in range(len(a)) if dist[v] is not None}
+
+
+class SuccessorAndMultiplierUnderObservation(unittest.TestCase):
+    """SUCC (x -> x+1) and FUCC-2 (x -> 2x) on Z/12 under two observations."""
+
+    N = 12
+
+    def exact_levels(self, a, labels):
+        truth = cost = True
+        dq = structural_distance(quotient_pattern(a, labels))
+        ds = structural_distance(a)
+        for x in range(self.N):
+            for b in set(labels):
+                source = [ds[x][z] for z in range(self.N)
+                          if labels[z] == b and ds[x][z] is not None]
+                quotient = dq[labels[x]][b]
+                if (quotient is None) != (not source):
+                    truth = False
+                elif source and min(source) != quotient:
+                    cost = False
+        return truth, truth and cost
+
+    def test_residue_observation_is_exact_for_both_operations(self):
+        residue = tuple(x % 3 for x in range(self.N))
+        self.assertEqual(self.exact_levels(cyclic_map(self.N, lambda x: x + 1), residue),
+                         (True, True))
+        self.assertEqual(self.exact_levels(cyclic_map(self.N, lambda x: 2 * x), residue),
+                         (True, True))
+
+    def test_magnitude_observation_of_successor_is_a_cost_ghost_only(self):
+        # Blocks {0..3}, {4..7}, {8..11}: every report is eventually reached from
+        # every start, but the quotient claims one step where a carry needs four.
+        magnitude = tuple(x // 4 for x in range(self.N))
+        succ = cyclic_map(self.N, lambda x: x + 1)
+        self.assertEqual(self.exact_levels(succ, magnitude), (True, False))
+        self.assertEqual(structural_distance(succ)[0][4], 4)
+        self.assertEqual(structural_distance(quotient_pattern(succ, magnitude))[0][1], 1)
+
+    def test_magnitude_observation_of_multiplier_is_a_truth_ghost(self):
+        # 0 is fixed by doubling, 1 is not, and both are read as "small".
+        magnitude = tuple(x // 4 for x in range(self.N))
+        fucc = cyclic_map(self.N, lambda x: 2 * x)
+        self.assertEqual(self.exact_levels(fucc, magnitude)[0], False)
+        self.assertEqual(reachable_reports(fucc, magnitude, 0), {0})
+        self.assertEqual(reachable_reports(fucc, magnitude, 1), {0, 1, 2})
+        # hereditary invariant {0} is the obstruction certificate (PAP-05)
+        self.assertEqual(structural_distance(fucc)[0], (0,) + (None,) * 11)
+
+
 if __name__ == "__main__":
     unittest.main()
