@@ -447,6 +447,74 @@ theorem exactAt_iff_closure_push_le (R : X → X → V) (q : X → Y) (x : X) :
   · intro h b
     exact K.le_trans (quot_star_le_closure_push_star K R q x b) (h b)
 
+/-! ## Exactness as commutation of two closure operators
+
+`closure K R` is the dynamical closure (what the carrier can reach) and
+`sat K q` is the observational closure (what the observer cannot separate).
+All-start exactness holds precisely when "evolve, then blur" is already
+idempotent, i.e. is itself a closure operator. -/
+
+/-- Saturation: the observational closure of a predicate. -/
+def sat (q : X → Y) (φ : X → V) (u : X) : V := push K q φ (q u)
+
+theorem le_sat (q : X → Y) (φ : X → V) (u : X) : K.le (φ u) (sat K q φ u) :=
+  le_push K q φ u
+
+theorem sat_mono (q : X → Y) {φ φ' : X → V} (h : ∀ u, K.le (φ u) (φ' u))
+    (u : X) : K.le (sat K q φ u) (sat K q φ' u) := by
+  refine K.sSup_le ?_
+  intro t ht
+  cases ht with
+  | intro s hs =>
+      cases hs with
+      | intro e1 e2 =>
+          subst e2
+          exact K.le_trans (h s) (K.le_sSup ⟨s, e1, rfl⟩)
+
+theorem sat_idem (q : X → Y) (φ : X → V) (u : X) :
+    K.le (sat K q (sat K q φ) u) (sat K q φ u) := by
+  refine K.sSup_le ?_
+  intro t ht
+  cases ht with
+  | intro s hs =>
+      cases hs with
+      | intro e1 e2 =>
+          subst e2
+          show K.le (push K q φ (q s)) (push K q φ (q u))
+          rw [e1]
+          exact K.le_refl _
+
+theorem closed_of_closure_le {R : X → X → V} {φ : X → V}
+    (h : ∀ b, K.le (closure K R φ b) (φ b)) : Closed K R φ := by
+  intro u v
+  exact K.le_trans (K.mul_mono (le_closure K R φ u) (K.le_refl _))
+    (K.le_trans (closure_closed K R φ u v) (h v))
+
+/-- **Exactness ⇔ `sat ∘ closure` is idempotent.** -/
+theorem satClosed_iff_sat_closure_idempotent (R : X → X → V) (q : X → Y) :
+    SatClosed K R q ↔
+      ∀ (φ : X → V) (u : X),
+        K.le (sat K q (closure K R (sat K q (closure K R φ))) u)
+          (sat K q (closure K R φ) u) := by
+  constructor
+  · intro h φ u
+    have closedSat : Closed K R (sat K q (closure K R φ)) :=
+      h _ (closure_closed K R φ)
+    exact K.le_trans
+      (sat_mono K q (fun b => closure_le_of_closed K closedSat b) u)
+      (sat_idem K q (closure K R φ) u)
+  · intro h φ hφ
+    refine closed_of_closure_le K (φ := sat K q φ) ?_
+    intro b
+    have h1 : K.le (closure K R (sat K q φ) b)
+        (closure K R (sat K q (closure K R φ)) b) :=
+      closure_mono K R (fun a => sat_mono K q (fun c => le_closure K R φ c) a) b
+    have h2 := le_sat K q (closure K R (sat K q (closure K R φ))) b
+    have h3 := h φ b
+    have h4 : K.le (sat K q (closure K R φ) b) (sat K q φ b) :=
+      sat_mono K q (fun c => closure_le_of_closed K hφ c) b
+    exact K.le_trans h1 (K.le_trans h2 (K.le_trans h3 h4))
+
 end Core
 
 /-! ## Change of value structure

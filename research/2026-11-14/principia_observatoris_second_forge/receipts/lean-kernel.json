@@ -5,24 +5,24 @@
       "name": "selected-source-ghost",
       "negative": {
         "exit_code": 1,
-        "source_sha256": "782dd26e92d4f9407db76ca0e9da6bcbe1a635b08055a32b27db165dc62ab94d"
+        "source_sha256": "fb8f06710f2562471353a90c03b5371e575994a9368a43ba9930cc9c7c5c3f07"
       },
       "passed": true,
       "positive": {
         "exit_code": 0,
-        "source_sha256": "d71d0a618f46978877d16565084e832d638a1fb7e35f3ed6eb84be6480102e35"
+        "source_sha256": "2088f9ba6063799bf5a4aaa9a8dfe56c364f859b1e2007b387727234b3235279"
       }
     },
     {
       "name": "must-is-not-may",
       "negative": {
         "exit_code": 1,
-        "source_sha256": "84aba11ff7372c9a0a1a3080ba60e80c747200db408d374c0537d1798cf24875"
+        "source_sha256": "d64718d1f61b37a272905fb178a095f36d7c463dd0cb75d4208d01d32a186274"
       },
       "passed": true,
       "positive": {
         "exit_code": 0,
-        "source_sha256": "2586d2e9e96e7d8ce081ebf08bbecd57660e8aba86c279900d969b02098a42fc"
+        "source_sha256": "58327ba15e64aeb3e94bc505e0c3cc5aa1152d8cac61df30bc4f5bc2200397be"
       }
     }
   ],
@@ -99,6 +99,11 @@
     },
     {
       "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.satClosed_iff_sat_closure_idempotent",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.satClosed_iff_sat_closure_idempotent : \u2200 {V : Type u_1} {X : Type u_2}\n  {Y : Type u_3} (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y),\n  ObservationalSUCC.ObservatorisQuantale.SatClosed K R q \u2194\n    \u2200 (\u03c6 : X \u2192 V) (u : X),\n      K.le\n        (ObservationalSUCC.ObservatorisQuantale.sat K q\n          (ObservationalSUCC.ObservatorisQuantale.closure K R\n            (ObservationalSUCC.ObservatorisQuantale.sat K q (ObservationalSUCC.ObservatorisQuantale.closure K R \u03c6)))\n          u)\n        (ObservationalSUCC.ObservatorisQuantale.sat K q (ObservationalSUCC.ObservatorisQuantale.closure K R \u03c6) u)"
+    },
+    {
+      "axioms": [],
       "name": "ObservationalSUCC.ObservatorisQuantale.exactAt_map",
       "type": "@ObservationalSUCC.ObservatorisQuantale.exactAt_map : \u2200 {V W : Type u_1} {X : Type u_2} {Y : Type u_3}\n  {K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V} {L : ObservationalSUCC.ObservatorisQuantale.LaxQuantale W}\n  {h : V \u2192 W},\n  ObservationalSUCC.ObservatorisQuantale.QHom K L h \u2192\n    \u2200 (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X),\n      ObservationalSUCC.ObservatorisQuantale.ExactAt K R q x \u2192\n        ObservationalSUCC.ObservatorisQuantale.ExactAt L (fun u v => h (R u v)) q x"
     },
@@ -111,7 +116,7 @@
   "imports": [],
   "scope": "Encoded statements only; no source authentication, no signed-weight claim, no Python implementation is certified.",
   "source": "formal/ObservatorisQuantale.lean",
-  "source_sha256": "fe0ceceee4411a899522476cfa36d1de80db9833601679e404a5ff00730edb18",
+  "source_sha256": "26f355cc81ef2440b73978081774cc9be626acab7fa6575d4904d3e98272e486",
   "status": "KERNEL_CHECKED",
   "toolchain": "leanprover/lean4:v4.14.0"
 }

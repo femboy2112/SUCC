@@ -34,6 +34,7 @@ THEOREMS = (
     "closure_push_star_le_quot_star",
     "quot_star_le_closure_push_star",
     "exactAt_iff_closure_push_le",
+    "satClosed_iff_sat_closure_idempotent",
     "exactAt_map",
     "star_propQ_iff",
 )
