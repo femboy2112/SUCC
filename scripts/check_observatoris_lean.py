@@ -29,6 +29,7 @@ THEOREMS = (
     "exact_iff_fibreConstant",
     "exact_iff_satClosed",
     "exact_iff_pushClosed",
+    "exact_iff_edgeRealised",
     "quotAll_star_le_push_star",
     "closure_push_adjunction",
     "closure_push_star_le_quot_star",

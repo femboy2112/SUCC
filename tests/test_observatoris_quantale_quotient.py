@@ -23,6 +23,7 @@ from observational_succ.observatoris_quantale_quotient import (
     is_exact_partition, left_zero_monoid, lumped_matrix, m3_lattice_monoid, mat_pow,
     mean_quotient, min_length_hom, model, partition_join, partition_meet,
     path_sum_oracle, predicate_closure, pull, push, push_forall, refines, residuated_meet,
+    resolvent,
     restricted_growth, saturating_tropical, signed_lumpable, structural_walks, supp,
     truncated_free_monoid, truncated_tropical, walk_polynomial,
 )
@@ -386,8 +387,12 @@ class TestCG5BaseChange(unittest.TestCase):
                 for _ in range(400)]
             for R in rels:
                 for q in restricted_growth(len(R)):
-                    if model(V, R, q).cond1_all_start():
-                        self.assertTrue(model(W, base_change(h, R), q).cond1_all_start())
+                    lab, labW = model(V, R, q), model(W, base_change(h, R), q)
+                    if lab.cond1_all_start():
+                        self.assertTrue(labW.cond1_all_start())
+                    for x in range(len(R)):    # hereditary selected exactness transports
+                        if all(lab.selected_exact(z) for z in lab.support_reachable(x)):
+                            self.assertTrue(labW.selected_exact(x))
         half = maps[0][2]
         R = trop_rel(4, {(0, 1): 1, (0, 3): 2, (2, 3): 1})
         q = (0, 1, 1, 2)
@@ -420,6 +425,34 @@ class TestCG7MayMustSandwich(unittest.TestCase):
         self.assertTrue(chain.cond1_all_start() and not chain.may_equals_must_on_image())
         ghost = model(B, bool_rel(3, {(1, 2)}), (0, 0, 1))
         self.assertTrue(ghost.unpointed_exact() and not ghost.cond1_all_start())
+
+    def test_source_value_is_not_a_function_of_may_and_must_closures(self):
+        B = boolean()
+        ghost = model(B, bool_rel(3, {(1, 2), (1, 0)}), (0, 0, 1))
+        fed = model(B, bool_rel(3, {(0, 1), (1, 2)}), (0, 0, 1))
+        self.assertEqual((ghost.Q, ghost.QA, ghost.Qs, ghost.QAs),
+                         (fed.Q, fed.QA, fed.Qs, fed.QAs))
+        self.assertNotEqual(ghost.profiles[0], fed.profiles[0])
+
+    def test_coarsest_exact_refinement_computes_true_source_values(self):
+        rng = random.Random(77)
+        for V in (boolean(), truncated_tropical(3), cyclic_monoid(3)):
+            el = V.elements()
+            for _ in range(40):
+                n = 4
+                R = tuple(tuple(rng.choice(el) if rng.random() < 0.35 else V.bottom
+                                for _ in range(n)) for _ in range(n))
+                q = tuple(rng.randrange(2) for _ in range(n))
+                q = tuple(a if a in q else 0 for a in q)
+                fine = coarsest_exact_refinement(V, R, q)
+                lab = model(V, R, q, max(q) + 1)
+                labf = model(V, R, fine)
+                self.assertTrue(labf.cond1_all_start())
+                for x in range(n):
+                    for b in range(lab.m):
+                        blocks = {fine[z] for z in range(n) if q[z] == b}
+                        self.assertEqual(lab.profiles[x][b],
+                                         V.join(labf.Qs[fine[x]][c] for c in blocks))
 
     def test_off_image_reports_and_empty_fibres_are_harmless(self):
         B = boolean()
@@ -455,6 +488,16 @@ class TestCG8AdjunctionsAndBeckChevalley(unittest.TestCase):
                         self.assertTrue(is_closed(V, R, tuple(map(V.join2, p1, p2))))
                         self.assertTrue(is_closed(V, R, tuple(map(V.meet2, p1, p2))))
 
+    def test_q_lower_star_pairs_with_backward_not_forward_must(self):
+        B = boolean()
+        lab = model(B, bool_rel(3, {(0, 2)}), (0, 1, 1))     # u=0 -> v1=2; v0=1 idle
+        phi = (T, F, T)
+        self.assertTrue(is_closed(B, lab.R, phi))
+        star = push_forall(B, phi, lab.q, lab.m)
+        self.assertEqual(star, (T, F))
+        self.assertFalse(is_closed(B, lab.QA, star))           # forward must: fails
+        self.assertTrue(is_closed(B, backward_must_quotient(B, lab.R, lab.q, lab.m), star))
+
     def test_forward_and_backward_exactness_are_time_reverses(self):
         B = boolean()
         ghost = model(B, bool_rel(3, {(1, 2)}), (0, 0, 1))
@@ -472,6 +515,17 @@ class TestCG9GhostDefect(unittest.TestCase):
         self.assertEqual((pushed[1], lifted[1], defect[1]), (2, 1, 1))
         self.assertEqual(lab.ghost_reports(0), (1,))
         self.assertEqual(lab.ghost_reports(1), ())
+        self.assertEqual(lab.global_defect(), 1)              # worst shortcut, not 0 = k
+        lab2 = model(S, trop_rel(3, {(0, 2): 3, (1, 2): 1}), (0, 0, 1))
+        self.assertEqual(lab2.global_defect(), 2)             # 3 - 1
+        self.assertEqual(model(S, trop_rel(3, {(0, 1): 1}), (0, 1, 1)).global_defect(), 0)
+
+    def test_global_defect_zero_iff_exact_exhaustive(self):
+        for V, n in ((boolean(), 3), (truncated_tropical(2), 2), (left_zero_monoid(), 2)):
+            for R in all_relations(V, n):
+                for q in restricted_growth(n):
+                    lab = model(V, R, q)
+                    self.assertEqual(V.leq(V.unit, lab.global_defect()), lab.cond1_all_start())
 
     def test_boolean_defect_lists_invented_endpoints(self):
         B = boolean()
@@ -642,6 +696,36 @@ class TestCG13SignedWeights(unittest.TestCase):
         self.assertTrue(found_signed_not_boolean)
         with self.assertRaises(QuantaleError):
             lumped_matrix(((Fr(0), Fr(0)), (Fr(1), Fr(0))), (0, 0), 1)
+
+    def test_resolvent_lumpability_equals_one_step_lumpability(self):
+        # Contrast with CG-3: for idempotent V, lumpability of R* (exactness) is
+        # strictly weaker than lumpability of R; the invertible resolvent is not.
+        checked = 0
+        for vs in product((-1, 0, 1), repeat=9):
+            A = tuple(tuple(Fr(vs[3 * i + j]) for j in range(3)) for i in range(3))
+            N = resolvent(A)
+            if N is None:
+                continue
+            for q in restricted_growth(3):
+                self.assertEqual(signed_lumpable(N, q, max(q) + 1),
+                                 signed_lumpable(A, q, max(q) + 1))
+                checked += 1
+        self.assertGreater(checked, 50000)
+        B = boolean()   # the idempotent closure: R* lumpable, R not
+        chain = model(B, bool_rel(3, {(0, 1), (1, 2)}), (0, 0, 1))
+        self.assertTrue(chain.cond2_fibre_constant() and not chain.lumpable())
+
+    def test_balanced_signs_cannot_cancel(self):
+        rng = random.Random(8)
+        for _ in range(200):
+            n = 4
+            P = [[Fr(rng.randint(0, 2)) for _ in range(n)] for _ in range(n)]
+            d = [rng.choice((-1, 1)) for _ in range(n)]
+            eps = rng.choice((-1, 1))
+            A = tuple(tuple(eps * d[i] * P[i][j] * d[j] for j in range(n)) for i in range(n))
+            for t in (1, 2, 3, 4):
+                Pt, W = mat_pow(A, t), structural_walks(A, t)
+                self.assertEqual(tuple(tuple(supp(v) for v in r) for r in Pt), W)
 
     def test_generic_faithfulness_walk_polynomial(self):
         edges = ((0, 0), (0, 1), (1, 1), (1, 2), (0, 2), (2, 0))

@@ -1,7 +1,7 @@
 """Quantale-weighted ancestral quotients: a small exact laboratory.
 
 Companion to research/2026-11-14/principia_observatoris_second_forge/agents/
-OPUS_II_CAUSAL_GEOMETER.md (theorems CG-1 ... CG-12).  Stdlib only; exact values
+OPUS_II_CAUSAL_GEOMETER.md (theorems CG-1 ... CG-13).  Stdlib only; exact values
 (bool, int, ``fractions.Fraction``, frozensets, ``math.inf`` as the tropical
 bottom).
 
@@ -669,6 +669,22 @@ class QuotientLab:
     def defect_is_zero(self, phi: Sequence) -> bool:
         return all(self.V.leq(self.V.unit, d) for d in self.ghost_defect(phi)[2])
 
+    def global_defect(self):
+        """G = /\\_{x,b} Q*(qx,b) \\ rho^_x(b); exact iff k <= G.  Tropical: the worst
+        shortcut max_{x,b}(d_src - d_Q); Boolean: True iff no ghost anywhere."""
+        return self.V.meet(self.V.ldiv(self.Qs[self.q[x]][b], self.profiles[x][b])
+                           for x in range(self.n) for b in range(self.m))
+
+    def support_reachable(self, x: int) -> set:
+        seen, stack = {x}, [x]
+        while stack:
+            u = stack.pop()
+            for v in range(self.n):
+                if self.R[u][v] != self.V.bottom and v not in seen:
+                    seen.add(v)
+                    stack.append(v)
+        return seen
+
     def ghost_reports(self, x: int) -> tuple:
         """Reports b at which the quotient over-claims from the selected start x."""
         return tuple(b for b, d in enumerate(self.ghost_defect(self.Rs[x])[2])
@@ -837,6 +853,32 @@ def mat_pow(A, t: int):
     for _ in range(t):
         P = mat_mul(A, P)
     return P
+
+
+def mat_inv(A):
+    """Exact Gauss-Jordan inverse over Fractions; None if singular."""
+    n = len(A)
+    M = [[Fraction(v) for v in row] + [Fraction(int(i == j)) for j in range(n)]
+         for i, row in enumerate(A)]
+    for col in range(n):
+        piv = next((r for r in range(col, n) if M[r][col] != 0), None)
+        if piv is None:
+            return None
+        M[col], M[piv] = M[piv], M[col]
+        p = M[col][col]
+        M[col] = [v / p for v in M[col]]
+        for r in range(n):
+            if r != col and M[r][col] != 0:
+                f = M[r][col]
+                M[r] = [a - f * b for a, b in zip(M[r], M[col])]
+    return tuple(tuple(row[n:]) for row in M)
+
+
+def resolvent(A):
+    """(I - A)^{-1}, the signed analogue of the closure sum_t A^t; None if singular."""
+    n = len(A)
+    return mat_inv(tuple(tuple(Fraction(int(i == j)) - A[i][j] for j in range(n))
+                         for i in range(n)))
 
 
 def supp(a) -> bool:

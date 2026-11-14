@@ -290,6 +290,69 @@ theorem exact_iff_pushClosed (R : X → X → V) (q : X → Y) :
       (satClosed_of_fibreConstant K R q (fibreConstant_of_exact K R q h)),
    exact_of_pushClosed K R q⟩
 
+/-- Every source edge is realised, up to its weight, by the closure from EVERY
+representative of its start report: "one-step may is below closure must". -/
+def EdgeRealised (R : X → X → V) (q : X → Y) : Prop :=
+  ∀ u v x', q x' = q u → K.le (R u v) (push K q (star K R x') (q v))
+
+/-- **A fifth form of exactness** (found on paper by the delegated quotient
+geometry workstream, formalised here): all-start exactness holds iff every
+source edge is realised from every representative of its start report. -/
+theorem exact_iff_edgeRealised (R : X → X → V) (q : X → Y) :
+    EndpointExact K R q ↔ EdgeRealised K R q := by
+  constructor
+  · intro h u v x' e
+    exact K.le_trans (edge_le_star K R u v)
+      (K.le_trans (le_push K q (star K R u) v)
+        (fibreConstant_of_exact K R q h u x' e.symm (q v)))
+  · intro h x
+    refine exactAt_of_push_closed K R q x ?_
+    intro a b
+    refine K.le_trans (K.mul_sSup_le _ _) (K.sSup_le ?_)
+    intro t ht
+    cases ht with
+    | intro r hr =>
+        cases hr with
+        | intro hr e =>
+            cases hr with
+            | intro u hu =>
+                cases hu with
+                | intro v hv =>
+                    cases hv with
+                    | intro ha hv =>
+                        cases hv with
+                        | intro hb er =>
+                            subst e; subst er; subst ha; subst hb
+                            refine K.le_trans (K.sSup_mul_le _ _) (K.sSup_le ?_)
+                            intro t' ht'
+                            cases ht' with
+                            | intro s hs =>
+                                cases hs with
+                                | intro hs e' =>
+                                    cases hs with
+                                    | intro z hz =>
+                                        cases hz with
+                                        | intro hz es =>
+                                            subst e'; subst es
+                                            refine K.le_trans
+                                              (K.mul_mono (K.le_refl _) (h u v z hz)) ?_
+                                            refine K.le_trans (K.mul_sSup_le _ _)
+                                              (K.sSup_le ?_)
+                                            intro t'' ht''
+                                            cases ht'' with
+                                            | intro c hc =>
+                                                cases hc with
+                                                | intro hc e'' =>
+                                                    cases hc with
+                                                    | intro w hw =>
+                                                        cases hw with
+                                                        | intro hw ec =>
+                                                            subst e''; subst ec
+                                                            have h3 := le_push K q (star K R x) w
+                                                            rw [hw] at h3
+                                                            exact K.le_trans
+                                                              (closed_star K (star_closed K R x) z w) h3
+
 /-- The direct image of a closure from an actual start is always a potential
 for the universal ("must") quotient. -/
 theorem push_star_closed_quotAll (R : X → X → V) (q : X → Y) (x : X) :
