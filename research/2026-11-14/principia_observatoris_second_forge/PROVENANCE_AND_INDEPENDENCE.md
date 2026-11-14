@@ -44,15 +44,16 @@ uncertain inside the reports. No scholarly novelty is claimed for any result.
 
 | Workstream | Model / effort (as configured) | Product | Independence from the PI's own argument |
 |---|---|---|---|
-| Principal investigator | session model (see PR description), high | `formal/ObservatorisQuantale.lean`; `observatoris_response_geometry`; `observatoris_classical_appearance`; integration tests; all top-level documents | — |
+| Principal investigator | principal session, high effort | `formal/ObservatorisQuantale.lean`; `observatoris_response_geometry`; `observatoris_classical_appearance`; integration tests; all top-level documents | — |
 | OPUS I Finite Observer | Opus, high | FO-1…FO-10, lab and 42 tests | brief stated targets without proofs; four PI conjectures refuted |
 | OPUS II Causal Geometer | Opus, high | Geometer CG-1…CG-13, lab and 45 tests | brief stated conjectures without proofs; did not see the Lean file; eight corrections |
 | OPUS III Horizon Hunter | Opus, high | FH-1…FH-14, lab and 45 tests | brief stated targets without proofs; five corrections of constants and hypotheses |
 | OPUS IV Hostile Referee (two seats) | Opus, high | adversarial reports with executable receipts | reviewed finished text and code; no access to the PI's reasoning |
 
-The delegated agents ran through the session's sub-agent mechanism with `model: opus` and
-`effort: high` set explicitly per invocation. The resolved model identifier of each agent was not
-separately read back, so "Opus, high" is the **requested** configuration.
+The delegated agents ran through the session's sub-agent mechanism with the Opus model class
+and high effort set explicitly on each invocation (not merely requested in prose). The resolved
+model of each agent was not separately read back, so "Opus, high" is the **requested**
+configuration. No agent was run at maximum effort, and none needed escalation beyond high.
 
 **What counts as an independent witness here.**
 
