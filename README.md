@@ -8,6 +8,8 @@ theory organizes actual maps and their coherence; exact arithmetic and analysis
 test what survives those maps. Physical and semantic intuition motivates the theory.
 Its mathematical interpretations have separately stated hypotheses.
 
+The [Principia Observatoris synthesis](docs/principia_observatoris/SYNTHESIS.md) gives exact conditions for an observer to preserve actions, make predictions and act on time. Its [theorem register](research/2026-11-14/tenacious_d/UNIFIED_THEOREMS.md) links each result to proofs and countermodels.
+
 The current arithmetic machine follows one chain:
 
 **source → exact carrier → zero-seed authentication → Dedekind/Yoneda identity
