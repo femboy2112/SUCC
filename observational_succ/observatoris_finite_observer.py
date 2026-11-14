@@ -6,7 +6,7 @@ research/2026-11-14/principia_observatoris_second_forge/agents/OPUS_I_FINITE_OBS
 Scope: declared FINITE models only, exact int / Fraction / hashable labels.
 Nothing here certifies a physical instrument, a brain, RH or normality.
 
-Four parts, matching theorems FO-1 .. FO-12 of the report:
+Four parts, matching theorems FO-1 .. FO-10 of the report:
 
 A1  pointed finite carriers (X, A, o_a, t_a, x0); transcript convention is the
     one of carrier_relative_targets.trace (each readout is recorded BEFORE that
