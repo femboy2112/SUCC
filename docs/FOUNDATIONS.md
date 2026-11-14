@@ -1,5 +1,11 @@
 # Foundations: a finite, physical observer constructing mathematical knowledge
 
+**Additive foundational manuscript:** [Principia Observatoris](principia_observatoris/README.md)
+develops a typed interaction kernel, target/policy separation, exact linear
+prediction defects, finite discrimination and conditional quantum/classical
+interfaces. It reuses the results below with explicit provenance; it does not
+replace their source contracts or assert a complete physical ontology.
+
 **Version:** founding research frame, October 2026. **Status:** proposal plus cited/classified mathematics, not a complete theory of cognition or a proof of RH.
 
 The [Principia connection](PRINCIPIA_CONNECTION.md) places this program alongside

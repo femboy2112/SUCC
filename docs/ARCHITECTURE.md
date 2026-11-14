@@ -1,5 +1,11 @@
 # Architecture of Observational SUCC
 
+The additive [Principia Observatoris manuscript](principia_observatoris/README.md)
+organizes the observer kernel and its current preservation/failure theorems.
+Its [reference register](principia_observatoris/REFERENCE.md) separates lawful
+quotients, target identification, executable access, calibrated geometry and
+source adequacy. Existing modules and historical behavior remain unchanged.
+
 **Source-faithful internal matrix successor (2026-10-25, draft stacked on
 SGO #293):** a single external \(n\mapsto n+1\) evolves a Hermitian
 Fourier Gram by an exact rank-one source current, whose time

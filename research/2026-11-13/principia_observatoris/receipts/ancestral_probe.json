@@ -1,0 +1,90 @@
+{
+  "convention": "Reflexive finite-path closure, including isolated states",
+  "endpoint_exact_but_not_trace_exact": {
+    "all_starts_endpoint_exact": true,
+    "stronger_existing_audit": {
+      "autonomous": false,
+      "factor": [],
+      "future_obstruction": {
+        "left": "a",
+        "right": "b",
+        "word": [
+          "next",
+          "next"
+        ]
+      },
+      "future_safe": false,
+      "update_obstruction": [
+        "successor",
+        "a",
+        "b",
+        "next"
+      ]
+    }
+  },
+  "pi_normality_proved": false,
+  "same_observation_selected_a": {
+    "ghost_reports": [
+      "B"
+    ],
+    "obstruction": {
+      "boundary": {
+        "action": "next",
+        "cost": "1",
+        "start": "b",
+        "target": "c"
+      },
+      "reachable_representative": "a",
+      "reachable_states": [
+        "a"
+      ],
+      "reports": [
+        "A",
+        "B"
+      ],
+      "source_edges": [
+        {
+          "action": "next",
+          "cost": "1",
+          "start": "b",
+          "target": "c"
+        }
+      ]
+    },
+    "quotient_reports": [
+      "A",
+      "B"
+    ],
+    "reachable_reports": [
+      "A"
+    ],
+    "reachable_states": [
+      "a"
+    ],
+    "start": "a"
+  },
+  "same_observation_selected_b": {
+    "ghost_reports": [],
+    "obstruction": null,
+    "quotient_reports": [
+      "A",
+      "B"
+    ],
+    "reachable_reports": [
+      "A",
+      "B"
+    ],
+    "reachable_states": [
+      "b",
+      "c"
+    ],
+    "start": "b"
+  },
+  "source_authentication_claimed": false,
+  "source_hashes": {
+    "observational_succ/ancestral_observer.py": "ef1f9cb4c365d45a58febf4c6878e6b003adeefdd44aeb0d42c7674bab54c96e",
+    "observational_succ/future_safe_quotient.py": "dcec2acc73e16e0bc21a7a32273672c1092300c5872f6ee3d65975b5c806f070",
+    "scripts/principia_ancestral_probe.py": "1ca177c369927eac0924d888f1ff28a7ee4457127383d53b7c399848923ce9c4"
+  },
+  "status": "EXACT_FINITE_MODEL"
+}
