@@ -104,19 +104,29 @@ FH-11, FH-12, FH-13 CLASSICAL.
 | CA-3 | free observation, predictive closure at a horizon, determinism of the core, and alignment are pairwise independent diagnostics | OBSERVED by exact witnesses (table below) | `tests/test_observatoris_classical_appearance.py`, `test_observatoris_response_geometry.py` |
 | CA-4 | a window of `r` bits on a cyclic shift register predicts the window `t` steps ahead with ambiguity exactly `2^{min(r,t)}` | PROVED (count the unseen bits); OBSERVED | same |
 | CA-5 | a declared qubit with toolkit `{X, Z-readout}` is transcript-identical to a deterministic bit | PROVED (both operations preserve the computational basis); OBSERVED for all words of length ≤ 7 | same |
-| CA-6 | with `H` added, every transcript distribution equals that of a four-state classical stochastic machine | OBSERVED for all words of length ≤ 6; general statement under review | same |
+| CA-6 | with `H` added, every transcript distribution equals that of a four-state classical stochastic machine, for words of every length | PROVED (below); OBSERVED for all words of length ≤ 6 | this file; same tests |
 
 **Proof of CA-1.** Suppose `t_a(x) ∼ x` for all `a, x`. By induction on the word, every readout
 in a transcript from `x` is taken at a state equivalent to `x`, hence equals the one-shot readout
 `o_a(x)`. So equal one-shot readouts imply equal transcripts, i.e. `∼` is the joint one-shot
 partition, and reading each instrument once identifies the class. ∎
 
-**Witness table for CA-3** (✓ passes, ✗ fails; each cell is computed by a test).
+**Proof of CA-6.** Up to a nonzero scalar, the branch state after any outcome history lies in
+`{|0⟩, |1⟩, |+⟩, |−⟩}`: this set is preserved by `X` (which swaps `|0⟩,|1⟩` and fixes `|±⟩` up to
+sign) and by `H` (which swaps `|0⟩↔|+⟩`, `|1⟩↔|−⟩`); a `Z` readout of `|0⟩` or `|1⟩` returns that
+value and leaves the state, and of `|±⟩` returns each value with squared amplitude `1/2` and
+leaves `|0⟩` or `|1⟩`. The classical machine has exactly these four states, these transitions
+and these outcome probabilities, and Born probabilities ignore the scalar. Induct on the word. ∎
+The statement concerns this three-operation toolkit only. It is the one-qubit stabiliser
+fragment; it says nothing about larger toolkits, several systems, or locality constraints.
+
+**Witness table for CA-3** (✓ passes, ✗ fails; every ✗ and the decisive ✓ entries are computed
+by tests, the remaining ✓ entries are immediate from the definitions).
 
 | Carrier | free observation | predictive at long horizon | deterministic core | aligned (no hidden wire) |
 |---|---|---|---|---|
 | shift register through a window | ✓ (readout) | ✗ beyond the resolution | ✓ | ✓ |
-| classical network with a hidden shortcut (HQ-3) | ✓ | ✓ | ✓ | ✗ |
+| classical network with a hidden shortcut (HQ-3) | ✓ | ✓ on the experiments used to build the model, ✗ on the held-out contrast | ✓ | ✗ |
 | declared qubit, toolkit `{X, Z}` | ✓ | ✓ | ✓ | ✓ |
 | declared qubit, toolkit `{X, H, Z}` | ✗ | ✓ (in distribution) | ✗ | ✓ |
 | destructive A,B,C carrier (inherited SUCC) | ✗ | ✓ | ✓ | ✓ |
