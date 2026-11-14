@@ -57,7 +57,7 @@ A calibrated clock breaks this particular ambiguity: a static observer measures 
 Fix finitely many observed times \(t_i\) and a maximum jet order \(m\ge0\). For \(\varepsilon\ne0\), let
 
 \[
-\sigma(t)=\varepsilon\prod_i(t-t_i)^{m+1},\qquad \widetilde g=e^{2\sigma(t)}g_0.
+\sigma(t)=\varepsilon\prod_i(t-t_i)^{\max(m+1,3)},\qquad \widetilde g=e^{2\sigma(t)}g_0.
 \]
 
 Every derivative of \(\sigma\) through order \(m\) vanishes at every \(t_i\), so the metric and its derivatives through order \(m\) agree there with the flat reference. All null cones agree **everywhere**. Yet \(\sigma\) is nonconstant, and on open subsets \(R[\widetilde g]=2e^{-2\sigma}\sigma''\) is nonzero (choose \(m\ge2\) for curvature-jet equality at the sampled points). Thus a finite fixed-order probe bank, without a source restriction on \(\sigma\), cannot determine global curvature even if those measurements are exact. For \(t_i=0,1/2\), \(m=2\), \(\sigma=t^3(t-1/2)^3\), its 0/1/2 jets vanish at both points but \(\sigma''(1/4)=3/128\). This is a **constructible finite-horizon witness**, not a claim that analytic continuation from a full open set is impossible.
