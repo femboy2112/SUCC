@@ -274,7 +274,7 @@ This also explains why merely increasing microscope resolution or taking more sa
 
 ### Steelman–crucible–verdict
 
-- **DISLOSED / mathematical scope:** the finite indistinguishability pair above has a short exact proof. It certifies a no-uniform-discriminator result only for finite readout access without stronger promises. The limit example is standard analysis.
+- **DISCLOSED / mathematical scope:** the finite indistinguishability pair above has a short exact proof. It certifies a no-uniform-discriminator result only for finite readout access without stronger promises. The limit example is standard analysis.
 - **CONJECTURED:** experimentally meaningful classical appearance can be modeled as **operational stability of the alignment between geometric observation and source-level computational causality**, rather than as an intrinsic classical/quantum label.
 - **UNVERIFIED:** the geometry–causality mismatch is the actual mechanism behind any specific unexplained physical phenomenon or arithmetic obstruction; no carrier-grounded intervention experiment was performed.
 - **Counterweight:** some classically deterministic systems have unseen ancestors, and some quantum systems permit stable effective classical observations. Thus the mismatch is **not** a definition of fundamental quantum/classical ontology, nor is it a sufficient proof that the source is nonclassical.
