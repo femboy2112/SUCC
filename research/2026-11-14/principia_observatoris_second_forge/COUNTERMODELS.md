@@ -30,7 +30,7 @@ Identifiers: `QG/RG/HQ` = [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md); `FO` =
 | C-12 | Exact partitions might not be closed under joins | PI | — refuted: they are join-closed (Geometer CG-10) | but **meets fail**: edges `{0→0,0→3,1→0,1→2,2→3,3→0}`, `{012|3}` and `{01|23}` exact, meet `{01|2|3}` not (PI re-checked) |
 | C-13 | Selected-start exactness has a canonical coarsest refinement | Geometer's own crucible | edges `{2→0, 2→1, 3→0}`, start `0`: `{03|1|2}` and `{0|1|23}` exact at `0`, their join invents report `1` | all-start version is canonical |
 | C-14 | Three states are minimal for a ghost in every value structure | PI (generalising PAP-04) | non-integral value structures admit two-state ghosts (Geometer CG-6) | true for integral value structures |
-| C-15 | Signed quotients, like idempotent ones, can only invent | PI | edges `x→z (1), x'→z (−1), x'→w (1)` with `x,x'` merged: one report deleted, another invented, at the same start | idempotent case: deletion impossible (QG-2) |
+| C-15 | Signed quotients, like idempotent ones, can only invent | PI | edges `x→z (1), x'→z (−1), x'→w (1)` with `x,x'` merged: one report deleted, another invented, at the same start (a three-state receipt exists too: C-52) | idempotent case: deletion impossible (QG-2) |
 | C-16 | The universal image `q_*` pairs with the forward must-quotient | PI | edge `0→2`, `q=(0,1,1)` | it pairs with the backward must-quotient |
 
 ## 2. Finite observer
@@ -96,7 +96,23 @@ repaired form.
 | C-50 | the Lean "must-is-not-may" control shows the mutated statement false | R-27 REFUTED | the same harness rejects a true statement | the control now proves the negation inside the instance |
 | C-51 | two finite-horizon tests | R-23 VACUOUS | one asserted a tautology, one compared a formula with itself | replaced by tests of the falsifiable premises |
 
-**Survived hostile review** (what was tried is in the report): the Lean core QG-1…QG-4 including
+| C-52 | Geometer CG-13(4): no three-state example at `τ = 1` where a signed quotient both invents and deletes | S-9 REFUTED | `x→x (1)`, `x′→x′ (−1)`, `x′→z (1)`, `q=(A,A,B)`: source `(1,0)`, quotient `(0,½)` | three states at `τ = 1` is the minimum |
+| C-53 | Geometer CG-7: the cited receipt shows both outer sandwich links strict at one `(x,b)` | S-3 REQUIRES REPAIR | the cited chain is `(∞,∞,2,1,1)` | valid receipt `(∞,3,2,1,0)` over the saturating tropical structure; impossible over truth values |
+| C-54 | Geometer CG-6(2): a grading into ℕ on the truncated word monoid | S-7 REQUIRES REPAIR | the overflow element forces degree `0` | grading into `ℕ ∪ {∞}` |
+| C-55 | FO-4(ii): "consistent with every `j`-independent function" | S-13 wording | — | "some" |
+| C-56 | FO-9 summary row without `|V_p| ≥ 2` | S-15 boundary | single-valued parent | hypothesis restored |
+| C-57 | the single-copy depth bound `(s−1)(q−1)` is sharp | S-17 | at `(s,q) = (3,3)` the maximum is `3 < 4` | a valid bound, attained at `(2,3)` |
+
+**Survived the second review:** the seven-way exactness equivalence over a noncommutative,
+non-integral value structure with non-surjective observations and empty fibres (S-1); both
+Beck–Chevalley conditions (S-4); join-closure and the refinement algorithm (S-5); strictness of
+the truncated change-of-base maps (S-6); whole-distance preservation (S-8); the core
+identification bound with exactly 11 500 cores (S-11); toolkit monotonicity (S-12); the exact
+cost of certifying absence by full brute force (S-14); the wiring minimality claims (S-16); the
+identifiability criterion on a different graph shape (S-15); and the all-horizon single-copy
+criterion with every census count reproduced by an independent implementation (S-17).
+
+**Survived hostile review, seat 1** (what was tried is in the report): the Lean core QG-1…QG-4 including
 the reversed-order cost structure, a noncommutative language structure, empty `X` and off-image
 `Y` (R-26); QG-5 in its universal-property form (R-1); HQ-1 with memoryful acting observers,
 sharpened (R-5); RG-1(a,b), RG-2; RG-5 with a weaker hypothesis (R-14, R-15); RG-6 (R-16); CA-6

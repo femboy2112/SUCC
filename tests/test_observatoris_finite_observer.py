@@ -379,6 +379,9 @@ class InteractionHorizon(unittest.TestCase):
         self.assertEqual(certification_cost(5, 5), 32)
 
     def test_naive_dimension_count_is_only_half(self):
+        # Note added after adversarial review (finding S-18): this checks a
+        # binomial identity only and is not evidence for FO-6.  The independent
+        # brute-force evidence is in tests/test_observatoris_referee_round2.py.
         for k in range(1, 7):
             for d in range(1, k + 1):
                 dim_p = sum(comb(k, i) for i in range(d + 1))

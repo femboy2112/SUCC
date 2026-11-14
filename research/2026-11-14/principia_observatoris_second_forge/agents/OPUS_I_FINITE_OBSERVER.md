@@ -514,3 +514,28 @@ Free observability ⟺ the initial belief {([x],[x]) : x ∈ S} lies in the **le
   - Nothing here asserts that a brain, a physical apparatus or a quantum system realises these models.
   - Nothing here asserts that finite observations prove universal statements.
   - Nothing here bears on RH, Weil positivity or π-normality.
+
+---
+
+## Erratum added by the principal investigator after adversarial review (2026-11-14)
+
+The text above is the workstream's report as delivered. The second hostile referee
+([OPUS_IV_REFEREE_ROUND2.md](OPUS_IV_REFEREE_ROUND2.md), findings `S-n`, independent receipts in
+`tests/test_observatoris_referee_round2.py`) found the following; the body is left unchanged.
+Every theorem it could test survived.
+
+- **FO-4(ii) (S-13, wording).** "Consistent with every `j`-independent function" should read
+  "consistent with **some** `j`-independent function". The mathematics (horizon = ball horizon,
+  the signed transport formula, the 192/720 count) was reproduced independently.
+- **FO-6 (S-14, S-18).** The exact cost survived a full independent brute force; but the
+  workstream's own test checked both bounds with the lab's predicate (circular), and
+  `test_naive_dimension_count_is_only_half` only checks a binomial identity. The lower bound is
+  the classical interpolation-set (Reed–Muller) argument.
+- **FO-9 (S-15).** The hypothesis `|V_p| ≥ 2` is load-bearing: with a single-valued parent the
+  literal "clamp all parents" condition is not necessary. The summary row that drops the
+  hypothesis is incorrect as written.
+- **FO-10 (S-17).** All six census counts and all receipts were reproduced by an independent
+  belief game without fusion pruning. The depth bound `(s−1)(q−1)` holds on every start subset
+  tested and is attained at `(s,q) = (2,3)` but not at `(3,3)` (maximum 3 < 4): it is not sharp
+  in general.
+- **FO-2(b) (S-19).** The stated Fine–Wilf lineage is loose.

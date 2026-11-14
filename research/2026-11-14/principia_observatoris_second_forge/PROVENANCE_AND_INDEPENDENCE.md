@@ -104,7 +104,20 @@ classical-appearance code, and the finite-horizon report.
 Every refuted statement is kept as a corpse (COUNTERMODELS §5) and every live document carries
 the repaired form. The principal investigator accepted all findings; none was contested.
 
-**What the review could not check** (and therefore remains unverified): the exact statements of
+**Seat 2** ([agents/OPUS_IV_REFEREE_ROUND2.md](agents/OPUS_IV_REFEREE_ROUND2.md), 19 findings,
+39 executable receipts in `tests/test_observatoris_referee_round2.py`, which does not import the
+modules under review) attacked the finite-observer and quotient-geometry reports. **Every
+theorem it could test survived**, including over a value structure and a graph shape the authors
+had not used. The damage was at the edges: one false "no example exists" observation (a
+three-state counter-receipt), one receipt that did not show what it was cited for, one grading
+hypothesis the lab's own example cannot satisfy, one wording error, one non-sharp depth bound,
+census numbers that no test pinned (now pinned by independent code), two circular or vacuous
+tests in the delegated suites, and missing classical citations. These are recorded as errata
+appended to the two delegated reports and as C-52…C-57.
+
+**What the reviews could not check** (and therefore remains unverified): statements about
+infinite carriers (paper only); exhaustive three-state models over the larger value structures
+(sampled only); and the exact statements of
 the cited classical sources (diagonal similarity, the probabilistic-automaton bound, the
 abstract-interpretation completeness literature, the descriptive-set-theoretic completeness
 result), all written from memory.

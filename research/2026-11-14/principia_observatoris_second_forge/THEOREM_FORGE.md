@@ -48,10 +48,10 @@ and exhaustive models by a different agent). Additional results registered from 
 | CG-7 | `Q∀* ≤ M ≤ ρ̂_x ≤ S ≤ Q∃*`, each link strict; lumpable ⇒ `Q∀*=Q∃*` ⇒ exact ⇒ unpointed, each strict | PROVED; outer links also KERNEL |
 | CG-8 | `Cl_Q∘q_! ⊣ q^* ⊣ Int_Q∘q_*`; left Beck–Chevalley ⇔ forward exactness; right ⇔ backward exactness | PROVED; left adjunction also KERNEL |
 | CG-9 | ghost defect functional, zero iff exact | PROVED; selected-start form also KERNEL |
-| CG-10 | exact partitions are join-closed; unique coarsest exact refinement; meets and selected-start variants fail | PROVED; join closure and the meet receipt re-checked by the PI |
+| CG-10 | exact partitions are join-closed; unique coarsest exact refinement; meets and selected-start variants fail | PROVED; CORROBORATED (PI and referee independently); CLASSICAL in content (coarsest lumpable refinement / partition refinement) |
 | CG-11 | weighted ghost certificate, sound and complete | PROVED |
 | CG-12 | whole-distance preservation ⇔ `q` merges only isomorphic states | CLASSICAL |
-| CG-13 | signed weights: lax support, balance, invent-and-delete, `(I−A)^{-1}` lumpable ⇔ `A` lumpable, generic faithfulness | PROVED; OBSERVED on 69 280 pairs |
+| CG-13 | signed weights: lax support, balance, invent-and-delete (three states at lag 1 suffice), `(I−A)^{-1}` lumpable ⇔ `A` lumpable, generic faithfulness | PROVED; one "no example" observation REFUTED and corrected (C-52); OBSERVED on 69 280 pairs |
 
 ## B. Response geometry
 
@@ -81,11 +81,11 @@ and exhaustive models by a different agent). Additional results registered from 
 | FO-3 | `core_A(M) ≅ core(core_{A∪B}(M)|_A)`; exposure minimal at 2 states (readout), 3 (intervention) | PROVED; OBSERVED exhaustively | §A1 |
 | FO-4 | dependency on `j` detected at order exactly `h_j = min{|S|: j∈S, Δ_S f ≠ 0}` | PROVED; Möbius inversion CLASSICAL; PI spot-check on all 256 functions of 3 inputs | §A2 |
 | FO-5 | baseline transport formula; degree is baseline-invariant; `h_j` need not reach `deg_j` | PROVED; strengthening REFUTED | §A2 |
-| FO-6 | certifying absence within degree `d` costs exactly `2·Σ_{i<d} C(k−1,i)` evaluations | PROVED; OBSERVED for `k ≤ 4` | §A2 |
+| FO-6 | certifying absence within degree `d` costs exactly `2·Σ_{i<d} C(k−1,i)` evaluations | PROVED; CORROBORATED by the referee's full independent brute force; lower bound CLASSICAL (interpolation sets) | §A2 |
 | FO-7 | polynomial jets suffice; smooth jets do not | CLASSICAL | §A2 |
 | FO-8 | wiring is not a response invariant; cancellation and gating are distinct mechanisms, with minimal sizes | PROVED; OBSERVED exhaustively | §A3 |
-| FO-9 | essential graph of an unrestricted class identifiable ⇔ joint clamping of all potential parents over all contexts | PROVED | §A3 |
-| FO-10 | single-copy access decided for all horizons by a belief fixed point; two sufficient conditions; target-wise access does not compose | PROVED; (b1) CORROBORATED by the PI's independent CA-1 | §A4 |
+| FO-9 | essential graph of an unrestricted class with value sets of size ≥ 2 identifiable ⇔ joint clamping of all potential parents over all contexts | PROVED; survived review on a different graph shape; the size hypothesis is load-bearing | §A3 |
+| FO-10 | single-copy access decided for all horizons by a belief fixed point; two sufficient conditions; target-wise access does not compose; depth bound `(s−1)(q−1)` valid, not sharp in general | PROVED; (b1) CORROBORATED by the PI's independent CA-1; census CORROBORATED by the referee's independent implementation | §A4 |
 
 ## E. Finite horizons (delegated: OPUS III)
 

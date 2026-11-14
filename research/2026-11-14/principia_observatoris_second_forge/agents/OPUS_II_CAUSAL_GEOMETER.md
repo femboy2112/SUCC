@@ -513,3 +513,32 @@ Mutation tests use M3 (not a quantale), opposite-side closedness, the wrong resi
 - No positive Weil form, RH, π or physics statement.
 - No promotion of any existing ledger item.
 - The "relevance geometry" here is the V-category structure of declared finite tables. Its empirical calibration, from intervention identification and unit scales in the founding note, is untouched.
+
+---
+
+## Erratum added by the principal investigator after adversarial review (2026-11-14)
+
+The text above is the workstream's report as delivered. The second hostile referee
+([OPUS_IV_REFEREE_ROUND2.md](OPUS_IV_REFEREE_ROUND2.md), findings `S-n`, independent receipts in
+`tests/test_observatoris_referee_round2.py`) found the following; the body is left unchanged so
+the corrections stay visible. Every theorem it could test survived, including over a
+noncommutative, non-integral value structure the workstream had not used.
+
+- **CG-13(4) (S-9, REFUTED observation).** The statement that an exhaustive search found no
+  three-state example at `τ = 1` in which the signed quotient both invents and deletes is false.
+  Receipt: `x→x (1)`, `x′→x′ (−1)`, `x′→z (1)`, `q = (A,A,B)`: from `x` the source gives `(1, 0)`
+  and the fibre-mean quotient gives `(0, ½)`. Three states at `τ = 1` is therefore the minimum;
+  the four-state receipt in the text is valid but not minimal. The "three-state `τ = 2` example"
+  mentioned in the text is never exhibited: UNVERIFIED.
+- **CG-7 (S-3, REQUIRES REPAIR).** "Both outer links strict at one `(x,b)`" is true but the cited
+  receipt has chain `(∞, ∞, 2, 1, 1)`, in which both outer links are equalities; it cannot happen
+  over truth values. A valid receipt over the saturating tropical structure with all four links
+  strict has chain `(∞, 3, 2, 1, 0)` (in the referee's tests).
+- **CG-6(2) (S-7, REQUIRES REPAIR).** The grading `deg : M → ℕ` cannot exist on the truncated
+  monoid used in the lab (the overflow element forces `deg(x) = 0`). With values in `ℕ ∪ {∞}` the
+  theorem survives.
+- **Census numbers (S-18).** The counts 462/384/384/240/240 quoted for CG-7 were not pinned by
+  any test of the workstream; the referee reproduced them with independent code and pinned them.
+- **Attribution (S-19).** CG-10 is the classical coarsest-lumpable-refinement / partition
+  refinement fact (attributed by the referee, from memory, to Buchholz, Paige–Tarjan and
+  Derisavi–Hermanns–Sanders); the global sign `ε = −1` in CG-13(2) is antibalance (Harary).
