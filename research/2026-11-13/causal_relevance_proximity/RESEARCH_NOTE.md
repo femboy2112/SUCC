@@ -171,7 +171,7 @@ The conditions are *hypotheses to test*, not automatic facts: propagation delays
 
 **Free observability** cannot literally mean zero physical interaction or complete hidden-state access. Make it *low-disturbance access for a declared target*: an admissible observation instrument \(\mathcal I\) has outcome/readout but modifies subsequent target-observable distributions by at most \(\epsilon_{\rm obs}\) under a specified operational norm and horizon, relative to a no-observation control. An instrument can be informative yet not low-disturbance. State dependence, destructive probes, and inaccessible variables remain explicit. This is a testable *relative* requirement, not an unrestricted observer power.
 
-**“Verify more than falsify”** is best expressed as robust *predictive agreement* on independent, discriminating experiments rather than the raw number of successes minus failures. A thousand redundant matches cannot outweigh one decisive counterexample to a universal statement. Specify a proper score or error tolerance \(\delta\), coverage \(q\), and a fixed suite of positive, negative and hostile holdouts *before* evaluating \(M\); report supported predictions and residual contradictions separately. A model may predict most tests while a single reproducible residual refutes a claimed universal law.
+**“Verify more than falsify” — clarified in Section 9.** The author's emphasis is *not* a vote-counting rule for evidence. Rather, a finite observer can repeatedly find that a model is useful, predictive and locally verifiable while lacking any instrument that distinguishes (i) an eventual finite counterexample from (ii) persistent shrinking defects that disappear only in the analytic limit. Both can remain observationally indistinguishable in the available geometric/probe frame even when their source-level computational futures differ. Independent held-out agreement still matters, and one decisive counterexample still refutes a universal claim, but the primary proposed mechanism is **a mismatch between observable geometric locality and source-level computational causality**, not a preponderance of positive tests.
 
 Thus a possible **operational diagnostic**, not a definition of classical physics, is:
 
@@ -198,3 +198,86 @@ No scalar “classicality” is asserted. Keep the three diagnostics separate so
 Predeclare two models that are observationally equivalent on a training toolkit but disagree on an *unseen intervention*. Construct a small graph carrier with independently given coordinates, transitions and readouts. Train an effective \(M\) and \(d_C^M\) on one family; compute \(R\) from held-out interventions using independent finite contrasts. Compare (i) aligned local edges, (ii) a hidden shortcut, (iii) a canceling two-path mechanism, and (iv) a destructive probe. Record geometry–computation alignment, observation disturbance and prediction failures **separately**. The hypothesis earns empirical support only if it predicts *which* effective descriptions remain stable when the toolkit or scale changes—not merely which descriptions fit their construction data.
 
 **Scope firewall:** This note asserts no physical collapse mechanism, no equivalence of correlation and signaling, no unique spacetime geometry, and no deduction of RH, π normality, or a Yang–Mills mass gap.
+
+
+## 9. Addendum — delayed finite falsification versus limit-only defect; the unseen causal horizon (Leah, 2026-11-13)
+
+### The sharpened author's hypothesis (not a majority-vote test)
+
+> A finite observer can inhabit a model that seems true until a finite, constructible but prohibitively difficult counterexample arrives; or one that continually compensates for finer and finer defects, attaining exact agreement only in an analytic limit. The observer cannot tell the regimes apart by the available observations when the **computational structure of causal dependence is misaligned with the geometry of observation**. The causal event is like a quasar outside the available observational horizon: it matters before the observer has evidence that it matters.
+
+Here "**seems true**" means *consistent with the declared finite evidence and useful as an effective model*, not a logical universal truth that later becomes false. "**Analytic place**" means a limit or completion with its own quantifiers and possible continuous extension, *not* an event that happens at a final finite step.
+
+**Two rival regimes (not asserted exhaustive):**
+
+- **Finite-surprise/hidden-witness regime:** there exists a finite source index \(N\) and a valid counterexample \(w_N\) whose construction or detection lies beyond the present observer's resource, intervention or geometric horizon. The first decisive failure is finite, although perhaps astronomically late.
+- **Limit-only/asymptotic-defect regime:** a signed or unsigned correction \(e_n\) remains nonzero at every finite resolution \(n\) yet converges to zero: \(e_n\ne0\) for all finite \(n\), \(\lim_{n\to\infty}e_n=0\). The *limit object* may have an exact identity that no finite truncation realizes.
+
+The second regime need not represent failure of the analytic theorem: a nonzero finite residual and an exact limiting equality are logically compatible. The first regime really refutes whichever universal statement the witness violates. Mere finite usefulness does not distinguish them.
+
+### A small exact indistinguishability certificate (CLASSICAL, finite-access scope)
+
+For any fixed finite observation horizon \(H\in\mathbb N\), consider the computable sequences
+
+\[
+a(n)=\frac{1}{n+1}\quad(n\ge0),\qquad
+b_H(n)=
+\begin{cases}
+\frac{1}{n+1},&0\le n\le H,\\
+1,&n>H.
+\end{cases}
+\]
+
+These are **exactly identical for all finite observations at indices \(0,\ldots,H\)**, even with infinite numerical precision at those indices. Yet:
+
+\[
+a(n)>0\ \forall n<\infty,\qquad \lim_{n\to\infty}a(n)=0;
+\]
+
+while \(b_H\) **first breaks** the candidate finite law \(e(n)=1/(n+1)\) at the constructible finite witness \(n=H+1\) and has \(\lim b_H(n)=1\).
+
+**Proof/receipt:** equality through \(H\) follows by substitution; at \(H+1\), \(1\ne1/(H+2)\); both limits follow immediately from their formulas. Both formulas are elementary computable objects. If a deterministic finite protocol reads an arbitrary finite list of indices rather than a prefix, choose \(H\) larger than its greatest queried index, and it receives the same entire transcript from both candidates. An adaptive protocol with finitely many terminating queries can be handled by running it on \(a\), then choosing \(H\) beyond its largest query. This proves **no uniformly guaranteed finite readout-only discriminator for this unrestricted pair family**, not the uncomputability of either sequence.
+
+**What would defeat the ambiguity?** Access to the generating formulas, a source authentication constraint, a valid global proof of a uniform bound or convergence rate, or a probe allowed to reach an independently bounded witness can distinguish the particular cases. This is an **instrument- and model-class-relative** indistinguishability result, not a metaphysical assertion that nobody can ever know in advance. Finite computational accessibility and practical tractability must also be distinguished.
+
+### The geometric–computational mismatch is the mechanism to test
+
+Let \(G_{\mathrm{obs}}\) be the observer's effective geometry, equipped with an accessible region \(B^G_R(y)\) around a target readout \(y\). Let \(\operatorname{Anc}_C(y;\tau,c)\) be the **actual source-level causal ancestors** capable of influencing \(y\) within horizon \(\tau\) in context \(c\) (a structural dependence set, not necessarily the support of a derivative at one baseline). Define the unseen causal set
+
+\[
+\boxed{
+U_{R,\tau,c}(y)
+=\operatorname{Anc}_C(y;\tau,c)\setminus B^G_R(y).
+}
+\]
+
+Here the notions of "within \(\tau\)" and "within \(R\)" must be declared and calibrated separately; the formula uses a common typed node map into the geometric chart. If that map is unavailable, the set is itself **undefined** and the lack of a bridge is the access gap. \(U\ne\varnothing\) says the observer's spatially nearby/probe-accessible region omits a computationally relevant cause. An ancestor can remain inactive for the observed context, only manifest at a later horizon, or be hidden below sensitivity.
+
+For differentiable comparable carrier/model readouts with a common calibrated chart, propose the **causal derivative of the model defect**
+
+\[
+\boxed{
+D^{\mathrm{defect}}_{x\to y}(\tau,c)
+=D^C_{x\to y}(\tau,c)-D^M_{x\to y}(\tau,c).
+}
+\]
+
+When accessible, a nonzero response difference is a potential *early discriminator* even if the unperturbed trajectories agree. When the source cannot be perturbed/read at \(x\), or the defect activates only outside the current horizon or operating context, it is **UNVERIFIED**, not zero. Nondifferentiable gates require finite causal contrasts instead.
+
+This is the proposed "unseen quasar": **the observer's effective causal light cone and the true source dependency cone fail to coincide under the available projection**. The metaphor does not imply superluminal signaling or literal quantum measurement collapse; it describes limits of model locality, access, detection latency and possible hidden dependencies.
+
+### Why the earlier "confirmation versus refutation" safeguard was insufficient
+
+The fact that *one exact counterexample defeats a universal theorem* is correct, but was not the point at issue. The stronger concern is that many successful finite tests may leave **both** a latent finite-witness model and a genuine asymptotic-limit model alive in the same observational equivalence class. A rare falsifying witness is one route out; a justified source theorem or new counterfactual intervention is another. No quantity of repeated tests *inside the same blind horizon* necessarily discriminates them.
+
+This also explains why merely increasing microscope resolution or taking more samples in the same chart need not repair the obstruction. The missing probe may require a different source map, a new intervention channel, a longer clock, a hostile counterseed, or an analytic bound that closes the tail.
+
+### Steelman–crucible–verdict
+
+- **DISLOSED / mathematical scope:** the finite indistinguishability pair above has a short exact proof. It certifies a no-uniform-discriminator result only for finite readout access without stronger promises. The limit example is standard analysis.
+- **CONJECTURED:** experimentally meaningful classical appearance can be modeled as **operational stability of the alignment between geometric observation and source-level computational causality**, rather than as an intrinsic classical/quantum label.
+- **UNVERIFIED:** the geometry–causality mismatch is the actual mechanism behind any specific unexplained physical phenomenon or arithmetic obstruction; no carrier-grounded intervention experiment was performed.
+- **Counterweight:** some classically deterministic systems have unseen ancestors, and some quantum systems permit stable effective classical observations. Thus the mismatch is **not** a definition of fundamental quantum/classical ontology, nor is it a sufficient proof that the source is nonclassical.
+- **Next verdict-changing probe:** hold an observer's geometric chart \(G_{\rm obs}\) and finite record fixed; construct two source-faithful candidate carriers matching all observed readouts but differing between a delayed finite gate and a shrinking analytic defect. Specify an out-of-chart intervention \(u_x\), predict \(D^{\rm defect}_{x\to y}\) or a finite contrast *before* probing, and test whether the intervention separates them. Include a negative control (no link), a positive control (known link), a mutation (hidden shortcut), and a holdout (later time/changed context). If no feasible intervention separates them, report a **probe gap** rather than interpreting matched observations as a proof of either regime.
+
+**Connection to SUCC frontiers:** this framing highlights the difference between finitely computable counterexample search and a source-specific uniform analytic cancellation theorem. It does *not* establish either a counterexample or the missing \(\pi\)-normality estimate. Exact analytic completion cannot be inferred from arbitrarily persuasive finite prefixes without a valid tail theorem.
