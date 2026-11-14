@@ -46,7 +46,9 @@ structure LaxQuantale (V : Type u) where
   sSup_mul_le : ∀ (S : V → Prop) (a : V),
     le (mul (sSup S) a) (sSup (fun t => ∃ s, S s ∧ t = mul s a))
   mul_assoc_le : ∀ a b c, le (mul a (mul b c)) (mul (mul a b) c)
+  mul_assoc_ge : ∀ a b c, le (mul (mul a b) c) (mul a (mul b c))
   mul_one_le : ∀ a, le (mul a one) a
+  le_mul_one : ∀ a, le a (mul a one)
   le_one_mul : ∀ a, le a (mul one a)
 
 section Core
@@ -332,7 +334,245 @@ theorem quotAll_star_le_push_star (R : X → X → V) (q : X → Y) (x : X) (b :
   star_le_of_closed K (push_star_closed_quotAll K R q x)
     (K.le_trans (one_le_star K R x) (le_push K q (star K R x) x)) b
 
+/-! ## The adjunction between potentials upstairs and downstairs -/
+
+/-- The least potential above an arbitrary `V`-predicate. -/
+def closure (R : X → X → V) (ψ : X → V) (b : X) : V :=
+  K.sSup (fun t => ∃ a, t = K.mul (ψ a) (star K R a b))
+
+theorem le_closure (R : X → X → V) (ψ : X → V) (b : X) :
+    K.le (ψ b) (closure K R ψ b) :=
+  K.le_trans (K.le_mul_one _)
+    (K.le_trans (K.mul_mono (K.le_refl _) (one_le_star K R b))
+      (K.le_sSup ⟨b, rfl⟩))
+
+theorem closure_closed (R : X → X → V) (ψ : X → V) :
+    Closed K R (closure K R ψ) := by
+  intro u v
+  refine K.le_trans (K.sSup_mul_le _ _) (K.sSup_le ?_)
+  intro t ht
+  cases ht with
+  | intro s hs =>
+      cases hs with
+      | intro hs e =>
+          cases hs with
+          | intro a ea =>
+              subst e; subst ea
+              exact K.le_trans (K.mul_assoc_ge _ _ _)
+                (K.le_trans (K.mul_mono (K.le_refl _) (star_closed K R a u v))
+                  (K.le_sSup ⟨a, rfl⟩))
+
+theorem closure_le_of_closed {R : X → X → V} {ψ : X → V}
+    (hψ : Closed K R ψ) (b : X) : K.le (closure K R ψ b) (ψ b) := by
+  refine K.sSup_le ?_
+  intro t ht
+  cases ht with
+  | intro a e => subst e; exact closed_star K hψ a b
+
+theorem closure_mono (R : X → X → V) {φ ψ : X → V}
+    (h : ∀ a, K.le (φ a) (ψ a)) (b : X) :
+    K.le (closure K R φ b) (closure K R ψ b) := by
+  refine K.sSup_le ?_
+  intro t ht
+  cases ht with
+  | intro a e =>
+      subst e
+      exact K.le_trans (K.mul_mono (h a) (K.le_refl _)) (K.le_sSup ⟨a, rfl⟩)
+
+/-- Pulling a quotient potential back along the observation gives a source
+potential.  This direction needs no hypothesis on the observation. -/
+theorem pullback_closed (R : X → X → V) (q : X → Y) {ψ : Y → V}
+    (hψ : Closed K (quot K R q) ψ) : Closed K R (fun u => ψ (q u)) := by
+  intro u v
+  exact K.le_trans (K.mul_mono (K.le_refl _) (edge_le_quot K R q u v))
+    (hψ (q u) (q v))
+
+/-- **The adjunction.**  `L = closure ∘ push` is left adjoint to pullback
+`ψ ↦ ψ ∘ q` between predicates upstairs and potentials downstairs. -/
+theorem closure_push_adjunction (R : X → X → V) (q : X → Y) (φ : X → V)
+    {ψ : Y → V} (hψ : Closed K (quot K R q) ψ) :
+    (∀ b, K.le (closure K (quot K R q) (push K q φ) b) (ψ b)) ↔
+      (∀ u, K.le (φ u) (ψ (q u))) := by
+  constructor
+  · intro h u
+    exact K.le_trans (le_push K q φ u)
+      (K.le_trans (le_closure K (quot K R q) (push K q φ) (q u)) (h (q u)))
+  · intro h b
+    have h1 : ∀ a, K.le (push K q φ a) (ψ a) := by
+      intro a
+      refine K.sSup_le ?_
+      intro t ht
+      cases ht with
+      | intro u hu =>
+          cases hu with
+          | intro e1 e2 => subst e1; subst e2; exact h u
+    exact K.le_trans (closure_mono K (quot K R q) h1 b)
+      (closure_le_of_closed K hψ b)
+
+/-- The left adjoint sends the source closure from `x` to the quotient closure
+from `q x` (one inequality; the other is `quot_star_le_closure_push_star`). -/
+theorem closure_push_star_le_quot_star (R : X → X → V) (q : X → Y) (x : X)
+    (b : Y) :
+    K.le (closure K (quot K R q) (push K q (star K R x)) b)
+      (star K (quot K R q) (q x) b) := by
+  refine K.sSup_le ?_
+  intro t ht
+  cases ht with
+  | intro a e =>
+      subst e
+      exact K.le_trans
+        (K.mul_mono (push_star_le_quot_star K R q x a) (K.le_refl _))
+        (closed_star K (star_closed K (quot K R q) (q x)) a b)
+
+theorem quot_star_le_closure_push_star (R : X → X → V) (q : X → Y) (x : X)
+    (b : Y) :
+    K.le (star K (quot K R q) (q x) b)
+      (closure K (quot K R q) (push K q (star K R x)) b) :=
+  K.le_trans (K.le_one_mul _)
+    (K.le_trans
+      (K.mul_mono (K.le_trans (one_le_star K R x) (le_push K q (star K R x) x))
+        (K.le_refl _))
+      (K.le_sSup ⟨q x, rfl⟩))
+
+/-- **Exactness is the vanishing of the ghost defect.**  The selected start is
+exact precisely when the left adjoint adds nothing to the direct image of its
+closure, i.e. when that direct image is already a quotient potential. -/
+theorem exactAt_iff_closure_push_le (R : X → X → V) (q : X → Y) (x : X) :
+    ExactAt K R q x ↔
+      ∀ b, K.le (closure K (quot K R q) (push K q (star K R x)) b)
+        (push K q (star K R x) b) := by
+  constructor
+  · intro h b
+    exact K.le_trans (closure_push_star_le_quot_star K R q x b) (h b)
+  · intro h b
+    exact K.le_trans (quot_star_le_closure_push_star K R q x b) (h b)
+
 end Core
+
+/-! ## Change of value structure
+
+Exactness transports along homomorphisms of value structures.  The strict
+hierarchy `endpoint < cost < trace` of the Boolean development is a chain of
+such changes (path languages → cost → truth); the converse transport fails,
+as the finite receipts in the research package show. -/
+
+section BaseChange
+
+variable {V : Type u} {W : Type u} {X : Type v} {Y : Type w}
+
+/-- A homomorphism of value structures, stated through the preorders. -/
+structure QHom (K : LaxQuantale V) (L : LaxQuantale W) (h : V → W) : Prop where
+  mono : ∀ {a b}, K.le a b → L.le (h a) (h b)
+  map_sSup_le : ∀ S : V → Prop,
+    L.le (h (K.sSup S)) (L.sSup (fun t => ∃ s, S s ∧ t = h s))
+  map_mul_le : ∀ a b, L.le (h (K.mul a b)) (L.mul (h a) (h b))
+  mul_map_le : ∀ a b, L.le (L.mul (h a) (h b)) (h (K.mul a b))
+  map_one_le : L.le (h K.one) L.one
+  one_le_map : L.le L.one (h K.one)
+
+variable {K : LaxQuantale V} {L : LaxQuantale W} {h : V → W}
+
+theorem map_star_le (hom : QHom K L h) (R : X → X → V) (x z : X) :
+    L.le (h (star K R x z)) (star L (fun u v => h (R u v)) x z) := by
+  refine L.le_trans (hom.map_sSup_le _) (L.sSup_le ?_)
+  intro t ht
+  cases ht with
+  | intro p hp =>
+      cases hp with
+      | intro path e =>
+          subst e
+          have key : ∃ p', PathW L (fun u v => h (R u v)) x z p' ∧ L.le (h p) p' := by
+            induction path with
+            | refl => exact ⟨_, PathW.refl, hom.map_one_le⟩
+            | tail _ ih =>
+                cases ih with
+                | intro p' hp' =>
+                    exact ⟨_, PathW.tail hp'.1,
+                      L.le_trans (hom.map_mul_le _ _)
+                        (L.mul_mono hp'.2 (L.le_refl _))⟩
+          cases key with
+          | intro p' hp' => exact L.le_trans hp'.2 (L.le_sSup hp'.1)
+
+theorem star_map_le (hom : QHom K L h) (R : X → X → V) (x z : X) :
+    L.le (star L (fun u v => h (R u v)) x z) (h (star K R x z)) := by
+  refine L.sSup_le ?_
+  intro p' path
+  have key : ∃ p, PathW K R x z p ∧ L.le p' (h p) := by
+    induction path with
+    | refl => exact ⟨_, PathW.refl, hom.one_le_map⟩
+    | tail _ ih =>
+        cases ih with
+        | intro p hp =>
+            exact ⟨_, PathW.tail hp.1,
+              L.le_trans (L.mul_mono hp.2 (L.le_refl _)) (hom.mul_map_le _ _)⟩
+  cases key with
+  | intro p hp => exact L.le_trans hp.2 (hom.mono (K.le_sSup hp.1))
+
+theorem star_mono_rel (L : LaxQuantale W) {S S' : X → X → W}
+    (hS : ∀ u v, L.le (S u v) (S' u v)) (x z : X) :
+    L.le (star L S x z) (star L S' x z) := by
+  refine star_le_of_closed L (φ := star L S' x) ?_ (one_le_star L S' x) z
+  intro u v
+  exact L.le_trans (L.mul_mono (L.le_refl _) (hS u v)) (star_closed L S' x u v)
+
+theorem push_mono (L : LaxQuantale W) (q : X → Y) {φ φ' : X → W}
+    (hφ : ∀ u, L.le (φ u) (φ' u)) (b : Y) :
+    L.le (push L q φ b) (push L q φ' b) := by
+  refine L.sSup_le ?_
+  intro t ht
+  cases ht with
+  | intro u hu =>
+      cases hu with
+      | intro e1 e2 =>
+          subst e1; subst e2
+          exact L.le_trans (hφ u) (le_push L q φ' u)
+
+/-- **Change of base.**  Selected-start exactness over `K` implies
+selected-start exactness of the image relation over `L`. -/
+theorem exactAt_map (hom : QHom K L h) (R : X → X → V) (q : X → Y) (x : X)
+    (exact : ExactAt K R q x) :
+    ExactAt L (fun u v => h (R u v)) q x := by
+  intro b
+  have step1 : L.le (star L (quot L (fun u v => h (R u v)) q) (q x) b)
+      (star L (fun a c => h (quot K R q a c)) (q x) b) := by
+    refine star_mono_rel L ?_ (q x) b
+    intro a c
+    refine L.sSup_le ?_
+    intro t ht
+    cases ht with
+    | intro u hu =>
+        cases hu with
+        | intro v hv =>
+            cases hv with
+            | intro ha hv =>
+                cases hv with
+                | intro hc e =>
+                    subst e
+                    exact hom.mono (K.le_sSup ⟨u, v, ha, hc, rfl⟩)
+  have step2 := star_map_le hom (quot K R q) (q x) b
+  have step3 : L.le (h (star K (quot K R q) (q x) b))
+      (h (push K q (star K R x) b)) := hom.mono (exact b)
+  have step4 : L.le (h (push K q (star K R x) b))
+      (push L q (fun u => h (star K R x u)) b) := by
+    refine L.le_trans (hom.map_sSup_le _) (L.sSup_le ?_)
+    intro t ht
+    cases ht with
+    | intro s hs =>
+        cases hs with
+        | intro hs e =>
+            cases hs with
+            | intro u hu =>
+                cases hu with
+                | intro e1 e2 =>
+                    subst e; subst e2
+                    exact L.le_sSup ⟨u, e1, rfl⟩
+  have step5 : L.le (push L q (fun u => h (star K R x u)) b)
+      (push L q (star L (fun u v => h (R u v)) x) b) :=
+    push_mono L q (fun u => map_star_le hom R x u) b
+  exact L.le_trans step1 (L.le_trans step2 (L.le_trans step3
+    (L.le_trans step4 step5)))
+
+end BaseChange
 
 /-! ## The truth-value instance recovers ordinary reachability -/
 
@@ -350,7 +590,9 @@ def propQ : LaxQuantale Prop where
   mul_sSup_le _ _ := fun ⟨ha, p, hp, pp⟩ => ⟨_, ⟨p, hp, rfl⟩, ha, pp⟩
   sSup_mul_le _ _ := fun ⟨⟨p, hp, pp⟩, ha⟩ => ⟨_, ⟨p, hp, rfl⟩, pp, ha⟩
   mul_assoc_le _ _ _ := fun ⟨ha, hb, hc⟩ => ⟨⟨ha, hb⟩, hc⟩
+  mul_assoc_ge _ _ _ := fun ⟨⟨ha, hb⟩, hc⟩ => ⟨ha, hb, hc⟩
   mul_one_le _ := fun h => h.1
+  le_mul_one _ := fun h => ⟨h, True.intro⟩
   le_one_mul _ := fun h => ⟨True.intro, h⟩
 
 inductive Reach {X : Type v} (R : X → X → Prop) : X → X → Prop where

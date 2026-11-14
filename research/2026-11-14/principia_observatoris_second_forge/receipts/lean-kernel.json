@@ -5,24 +5,24 @@
       "name": "selected-source-ghost",
       "negative": {
         "exit_code": 1,
-        "source_sha256": "359c57efa2a7da85d561bbdf7fb7f79c9174c4c391c3ba269fd1e8c2c63dffca"
+        "source_sha256": "782dd26e92d4f9407db76ca0e9da6bcbe1a635b08055a32b27db165dc62ab94d"
       },
       "passed": true,
       "positive": {
         "exit_code": 0,
-        "source_sha256": "f5e285f6ef073614efc8cfce306341bfddd406fe85f59c4b44f4f77a37745596"
+        "source_sha256": "d71d0a618f46978877d16565084e832d638a1fb7e35f3ed6eb84be6480102e35"
       }
     },
     {
       "name": "must-is-not-may",
       "negative": {
         "exit_code": 1,
-        "source_sha256": "65d73b87c191c73e3360fc02cad01ae376e36701df65dcadfccdd1bc406f32b6"
+        "source_sha256": "84aba11ff7372c9a0a1a3080ba60e80c747200db408d374c0537d1798cf24875"
       },
       "passed": true,
       "positive": {
         "exit_code": 0,
-        "source_sha256": "6981b44f71c578da333596d84a1c7827bf17f6f69ba6aaeb46c2e7b86210a675"
+        "source_sha256": "2586d2e9e96e7d8ce081ebf08bbecd57660e8aba86c279900d969b02098a42fc"
       }
     }
   ],
@@ -79,6 +79,31 @@
     },
     {
       "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.closure_push_adjunction",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.closure_push_adjunction : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (\u03c6 : X \u2192 V) {\u03c8 : Y \u2192 V},\n  ObservationalSUCC.ObservatorisQuantale.Closed K (ObservationalSUCC.ObservatorisQuantale.quot K R q) \u03c8 \u2192\n    ((\u2200 (b : Y),\n        K.le\n          (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n            (ObservationalSUCC.ObservatorisQuantale.push K q \u03c6) b)\n          (\u03c8 b)) \u2194\n      \u2200 (u : X), K.le (\u03c6 u) (\u03c8 (q u)))"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.closure_push_star_le_quot_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.closure_push_star_le_quot_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X) (b : Y),\n  K.le\n    (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n      (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x)) b)\n    (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quot K R q) (q x) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.quot_star_le_closure_push_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.quot_star_le_closure_push_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X) (b : Y),\n  K.le (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quot K R q) (q x) b)\n    (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n      (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x)) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exactAt_iff_closure_push_le",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exactAt_iff_closure_push_le : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X),\n  ObservationalSUCC.ObservatorisQuantale.ExactAt K R q x \u2194\n    \u2200 (b : Y),\n      K.le\n        (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n          (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x)) b)\n        (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exactAt_map",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exactAt_map : \u2200 {V W : Type u_1} {X : Type u_2} {Y : Type u_3}\n  {K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V} {L : ObservationalSUCC.ObservatorisQuantale.LaxQuantale W}\n  {h : V \u2192 W},\n  ObservationalSUCC.ObservatorisQuantale.QHom K L h \u2192\n    \u2200 (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X),\n      ObservationalSUCC.ObservatorisQuantale.ExactAt K R q x \u2192\n        ObservationalSUCC.ObservatorisQuantale.ExactAt L (fun u v => h (R u v)) q x"
+    },
+    {
+      "axioms": [],
       "name": "ObservationalSUCC.ObservatorisQuantale.star_propQ_iff",
       "type": "@ObservationalSUCC.ObservatorisQuantale.star_propQ_iff : \u2200 {X : Type u_1} (R : X \u2192 X \u2192 Prop) (x z : X),\n  ObservationalSUCC.ObservatorisQuantale.star ObservationalSUCC.ObservatorisQuantale.propQ R x z \u2194\n    ObservationalSUCC.ObservatorisQuantale.Reach R x z"
     }
@@ -86,7 +111,7 @@
   "imports": [],
   "scope": "Encoded statements only; no source authentication, no signed-weight claim, no Python implementation is certified.",
   "source": "formal/ObservatorisQuantale.lean",
-  "source_sha256": "7091ab43dcf643ea502351801806efca904905dceda3e2d7447131e9abe37f2c",
+  "source_sha256": "fe0ceceee4411a899522476cfa36d1de80db9833601679e404a5ff00730edb18",
   "status": "KERNEL_CHECKED",
   "toolchain": "leanprover/lean4:v4.14.0"
 }
