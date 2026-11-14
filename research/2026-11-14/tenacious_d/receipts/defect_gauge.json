@@ -1,0 +1,40 @@
+{
+  "D2_1": {
+    "exact_generator_models": 225,
+    "joint_law_tv_despite_equal_marginals": "1",
+    "two_action_tables": 729
+  },
+  "D2_2": {
+    "diameter_half": "3/8",
+    "excluded_mass": "1/4",
+    "identical_support_bernoulli_radius": "1/4",
+    "mask_radius": "1/2",
+    "three_point_radius": "2/3"
+  },
+  "D2_3_hitting": {
+    "four_state_chains": 256,
+    "horizon": 4,
+    "sharp_endpoint_bounds": 36,
+    "strict_lower": [
+      0,
+      1,
+      1
+    ],
+    "strict_upper": [
+      0,
+      0,
+      1
+    ]
+  },
+  "D2_3_transport": {
+    "signed_telescoping_comparisons": 192,
+    "strict_bounds": 160
+  },
+  "D2_4_5": {
+    "balanced_source_aggregate_response": "0",
+    "cyclic_positive_controls": 27,
+    "dag_sign_patterns": 64,
+    "rational_zeros": 32,
+    "sign_definite_patterns": 32
+  }
+}

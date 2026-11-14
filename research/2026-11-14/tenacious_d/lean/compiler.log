@@ -1,0 +1,138 @@
+$ lean -o ObservatorisQuantale.olean ObservatorisQuantale.lean
+
+$ lean -o FutureSafeForgetting.olean FutureSafeForgetting.lean
+'ObservationalSUCC.FutureSafeForgetting.fiber_safe_iff_descent' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.descended_structure_unique' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.finite_trace_preserved' depends on axioms: [propext]
+'ObservationalSUCC.FutureSafeForgetting.availability_reflected' depends on axioms: [propext]
+'ObservationalSUCC.FutureSafeForgetting.quotient_step_lifts_from_each_representative' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.quotient_path_lifts_from_each_representative' depends on axioms: [propext]
+
+$ lean -o ObserverBridge.olean ObserverBridge.lean
+
+$ lean Declarations.lean
+'ObservationalSUCC.ObservatorisQuantale.LaxQuantale' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.PathW' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.Closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.quot' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.quotAll' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.push' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.path_mul_le_of_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closed_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.one_le_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.edge_le_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.path_le_of_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star_le_of_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.edge_le_quot' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star_le_quot_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.le_push' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.push_star_le_quot_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.ExactAt' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.EndpointExact' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.FibreConstant' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.PushClosed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.SatClosed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.push_closed_of_sat_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exactAt_of_push_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exactAt_iff_saturated_star_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.fibreConstant_of_exact' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.satClosed_of_fibreConstant' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.pushClosed_of_satClosed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exact_of_pushClosed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exact_iff_fibreConstant' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exact_iff_satClosed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exact_iff_pushClosed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.EdgeRealised' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exact_iff_edgeRealised' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.push_star_closed_quotAll' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.quotAll_star_le_push_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closure' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.le_closure' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closure_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closure_le_of_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closure_mono' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.pullback_closed' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closure_push_adjunction' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closure_push_star_le_quot_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.quot_star_le_closure_push_star' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exactAt_iff_closure_push_le' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.sat' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.le_sat' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.sat_mono' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.sat_idem' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.closed_of_closure_le' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.satClosed_iff_sat_closure_idempotent' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.QHom' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.map_star_le' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star_map_le' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star_mono_rel' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.push_mono' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.exactAt_map' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.propQ' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.Reach' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.reach_of_path' does not depend on any axioms
+'ObservationalSUCC.ObservatorisQuantale.star_propQ_iff' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.System' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.mapStep' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.FiberSafe' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.Descends' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.fiber_safe_iff_descent' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.descended_structure_unique' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.Trace' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.trace' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.finite_trace_preserved' depends on axioms: [propext]
+'ObservationalSUCC.FutureSafeForgetting.availability_reflected' depends on axioms: [propext]
+'ObservationalSUCC.FutureSafeForgetting.quotient_step_lifts_from_each_representative' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.execute' does not depend on any axioms
+'ObservationalSUCC.FutureSafeForgetting.quotient_path_lifts_from_each_representative' depends on axioms: [propext]
+'ObservationalSUCC.TenaciousBridge.admittedEdge' does not depend on any axioms
+'ObservationalSUCC.TenaciousBridge.descent_edgeRealised' does not depend on any axioms
+'ObservationalSUCC.TenaciousBridge.descent_endpointExact' does not depend on any axioms
+'ObservationalSUCC.TenaciousBridge.endpointExact_and_wordLift' depends on axioms: [propext]
+'ObservationalSUCC.TenaciousBridge.inhabitedRight' does not depend on any axioms
+'ObservationalSUCC.TenaciousBridge.left_unit_can_expand' does not depend on any axioms
+@ObservationalSUCC.TenaciousBridge.admittedEdge : {X : Type u_1} →
+  {A : Type u_2} →
+    {O : Type u_3} →
+      {C : Type u_4} → ObservationalSUCC.FutureSafeForgetting.System X A O C → (A → C → Prop) → X → X → Prop
+@ObservationalSUCC.TenaciousBridge.descent_edgeRealised : ∀ {X : Type u_1} {Y : Type u_5} {A : Type u_2} {O : Type u_3}
+  {C : Type u_4} (M : ObservationalSUCC.FutureSafeForgetting.System X A O C)
+  (T : ObservationalSUCC.FutureSafeForgetting.System Y A O C) (q : X → Y),
+  ObservationalSUCC.FutureSafeForgetting.Descends M T q →
+    ∀ (allow : A → C → Prop),
+      ObservationalSUCC.ObservatorisQuantale.EdgeRealised ObservationalSUCC.ObservatorisQuantale.propQ
+        (ObservationalSUCC.TenaciousBridge.admittedEdge M allow) q
+@ObservationalSUCC.TenaciousBridge.descent_endpointExact : ∀ {X : Type u_1} {Y : Type u_5} {A : Type u_2} {O : Type u_3}
+  {C : Type u_4} (M : ObservationalSUCC.FutureSafeForgetting.System X A O C)
+  (T : ObservationalSUCC.FutureSafeForgetting.System Y A O C) (q : X → Y),
+  ObservationalSUCC.FutureSafeForgetting.Descends M T q →
+    ∀ (allow : A → C → Prop),
+      ObservationalSUCC.ObservatorisQuantale.EndpointExact ObservationalSUCC.ObservatorisQuantale.propQ
+        (ObservationalSUCC.TenaciousBridge.admittedEdge M allow) q
+@ObservationalSUCC.TenaciousBridge.endpointExact_and_wordLift : ∀ {X : Type u_1} {Y : Type u_5} {A : Type u_2}
+  {O : Type u_3} {C : Type u_4} (M : ObservationalSUCC.FutureSafeForgetting.System X A O C)
+  (T : ObservationalSUCC.FutureSafeForgetting.System Y A O C) (q : X → Y),
+  ObservationalSUCC.FutureSafeForgetting.Descends M T q →
+    ∀ (allow : A → C → Prop),
+      ObservationalSUCC.ObservatorisQuantale.EndpointExact ObservationalSUCC.ObservatorisQuantale.propQ
+          (ObservationalSUCC.TenaciousBridge.admittedEdge M allow) q ∧
+        ∀ (word : List A) (s : X) (b : Y) (costs : List C),
+          ObservationalSUCC.FutureSafeForgetting.execute T word (q s) = some (b, costs) →
+            ∃ last, ObservationalSUCC.FutureSafeForgetting.execute M word s = some (last, costs) ∧ q last = b
+ObservationalSUCC.TenaciousBridge.inhabitedRight : ObservationalSUCC.ObservatorisQuantale.LaxQuantale (Bool → Prop)
+ObservationalSUCC.TenaciousBridge.left_unit_can_expand : ¬ObservationalSUCC.TenaciousBridge.inhabitedRight.le
+    (ObservationalSUCC.TenaciousBridge.inhabitedRight.mul ObservationalSUCC.TenaciousBridge.inhabitedRight.one fun i =>
+      i = true)
+    fun i => i = true
+
+$ lean positive.lean [exit 0]
+
+$ lean negative.lean [exit 1]
+negative.lean:4:26: error: type mismatch
+  left_unit_can_expand
+has type
+  ¬inhabitedRight.le (inhabitedRight.mul inhabitedRight.one fun i => i = true) fun i => i = true : Prop
+but is expected to have type
+  MissingField : Prop

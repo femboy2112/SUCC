@@ -1,0 +1,51 @@
+name: Principia Observatoris synthesis
+
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/tenacious_acquisition.py'
+      - 'tests/test_tenacious_acquisition.py'
+      - 'research/2026-11-14/tenacious_d/**'
+      - 'formal/ObservatorisQuantale.lean'
+      - 'formal/FutureSafeForgetting.lean'
+      - 'lean-toolchain'
+      - '.github/workflows/tenacious-observer-descent.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthesis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce finite experiments
+        env:
+          PYTHONPATH: .
+        run: |
+          dossier=research/2026-11-14/tenacious_d
+          python -m unittest discover -s tests -p 'test_tenacious_acquisition.py' -v
+          for probe in descent defect_and_gauge warning_classicality polyhedral_interception weighted_forcing joint_precision; do
+            python "$dossier/${probe}_probe.py" > "$RUNNER_TEMP/$probe.json"
+            receipt="$probe"
+            if [ "$probe" = defect_and_gauge ]; then receipt=defect_gauge; fi
+            cmp "$RUNNER_TEMP/$probe.json" "$dossier/receipts/$receipt.json"
+          done
+      - name: Install pinned core Lean
+        run: |
+          archive="$RUNNER_TEMP/lean.tar.zst"
+          curl --fail --location https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst --output "$archive"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $archive" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$archive" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Replay formal bridge and negative controls
+        run: |
+          dossier=research/2026-11-14/tenacious_d/lean
+          python "$dossier/replay.py" --lean lean --out "$RUNNER_TEMP/bridge"
+          cmp "$dossier/audit.json" "$RUNNER_TEMP/bridge/audit.json"
+          cmp "$dossier/compiler.log" "$RUNNER_TEMP/bridge/compiler.log"
