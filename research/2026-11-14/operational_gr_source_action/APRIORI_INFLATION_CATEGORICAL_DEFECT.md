@@ -84,6 +84,9 @@ This model captures the author's "realizable frames, not completely equivalent":
 
 If "CCC" means **Cartesian closed category**, the construction requires extra categorical checks: arbitrary accessible subcategories and quotients need not remain Cartesian closed. In particular, a bare one-category is not forced to split into multiple distinct categories when metric connectivity changes. A family of indexed observational categories, or a Grothendieck construction over time/toolkit, is the more faithful candidate. If CCC has another SUCC-specific meaning, keep the acronym unresolved until its source contract is supplied.
 
+
+**Terminological precision:** if "one-category" means an ordinary **1-category**, there is no obstruction to many objects, functors or observer-indexed sectors. If instead it literally means a **one-object cartesian closed category**, that category is necessarily terminal: the sole object must be a terminal object, so there is exactly one endomorphism. Nontrivial causal processes would therefore require a richer ambient category (or relaxing cartesian closure). This distinction should be settled from the author's intended CCC contract before making a foundational claim.
+
 ## E. Steelman–crucible–verdict
 
 **DISLOSED within the declared carrier:** rational exact finite/limit contact theorem; target non-descent; smooth pre-observation expansion family with different past conformal reaches and identical post-observation metric jets; delta-kernel limit on finite frames.
