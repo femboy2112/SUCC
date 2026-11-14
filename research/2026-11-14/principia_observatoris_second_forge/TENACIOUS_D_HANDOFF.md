@@ -143,9 +143,9 @@ receipt decides. If they are merely compatible with it, the receipt is a require
 1. Is `LaxQuantale` really weaker than a unital quantale in every field, including for the
    reversed-order cost structure? Exhibit a quantale failing a field, or a pathological
    `LaxQuantale` instance in which a theorem is vacuous.
-2. QG-5 says a may-quotient geometry has no unseen ancestors. Is that a theorem about observers
-   or a tautology of defining the geometry from the unseen source? What is the strongest version
-   for an observer who only has a quotient of a *subgraph*?
+2. QG-5 (already strengthened once by our referee): `Q∃*` is the least geometry with no unseen
+   ancestor. What is the corresponding statement for an observer who holds only a quotient of a
+   *subgraph*, or only response data, and can it be decided without the source table?
 3. RG-3 (already repaired once): the graded family is not a metric and the discount is a
    choice. Is there any *canonical* normalisation, or is response geometry irreducibly a family?
 4. HQ-1 survived memoryful acting observers; break it with asynchronous updates or private

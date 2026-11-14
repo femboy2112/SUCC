@@ -65,7 +65,7 @@ Identifiers: `QG/RG/HQ` = [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md); `FO` =
 | C-32 | "Classical" is one predicate of a system | strongest reading of the founding note §8 | witness table in THEOREM_FORGE §F: five carriers with different pass/fail patterns | a family of toolkit-relative diagnostics |
 | C-33 | Passing every diagnostic certifies a classical carrier | — | declared qubit with toolkit `{X, Z}`: transcript-identical to a bit | "appears classical relative to a toolkit" |
 | C-34 | Failing determinism and free observation certifies a non-classical carrier | — | toolkit `{X, H, Z}`: a four-state classical stochastic machine matches every transcript | same |
-| C-35 | A deterministic, local, freely observed law is predictable | — | shift register through an `r`-bit window: ambiguity `2^{min(r,t)}` | predictive closure is horizon-relative |
+| C-35 | A deterministic, local, freely observed law is predictable | — | cyclic shift register through an `r`-bit window: ambiguity `2^{min(s, n−s, r, n−r)}`, `s = t mod n` (maximal at mid-period, perfect again after a full period) | predictive closure is horizon-relative |
 
 ## 5. First-version claims refuted or repaired under adversarial review
 
