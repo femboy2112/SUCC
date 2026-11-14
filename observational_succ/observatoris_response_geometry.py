@@ -148,6 +148,13 @@ def switching_function(a: Matrix) -> tuple[int, ...] | None:
     return tuple(int(s) for s in sign)  # type: ignore[arg-type]
 
 
+def is_balanced_up_to_sign(a: Matrix) -> bool:
+    """Balance of ``A`` or of ``-A``: every walk of a given length between two
+    nodes then has the same sign, so nothing can cancel at any lag (RG-4)."""
+    negated = tuple(tuple(-v for v in row) for row in a)
+    return switching_function(a) is not None or switching_function(negated) is not None
+
+
 def cancellations(a: Matrix, horizon: int) -> tuple[tuple[int, int, int], ...]:
     """All ``(tau, x, y)`` with a structural walk but zero net response."""
     n = len(a)

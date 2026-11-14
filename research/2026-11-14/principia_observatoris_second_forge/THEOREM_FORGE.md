@@ -23,20 +23,35 @@ declared table describes a real source.
 
 | ID | Statement (scope: any set `X`, observation `q: X→Y`, value structure `V` with the unital-quantale inequalities; no commutativity) | Authority | Proof | Depends on |
 |---|---|---|---|---|
-| CG-1 | `R*(x,·)` is the least potential with unit at `x` | KERNEL; CLASSICAL in content | CAUSAL_GEOMETRY §1; Lean `star_closed`, `star_le_of_closed` | — |
-| CG-2 | `R*(x,z) ≤ Q∃*(q(x),q(z))` | KERNEL | §1; `star_le_quot_star` | CG-1 |
-| CG-3 | all-start exactness ⇔ fibre constancy ⇔ `q_!` preserves potentials ⇔ saturation preserves potentials; selected-start form | KERNEL | §1; `exact_iff_*`, `exactAt_iff_saturated_star_closed` | CG-1, CG-2 |
-| CG-4 | `Q∀*(q(x),b) ≤ (q_!R*(x,·))(b) ≤ Q∃*(q(x),b)` | KERNEL | §1; `quotAll_star_le_push_star` | CG-1 |
-| CG-5 | a may-quotient geometry has no unseen ancestors | PROVED (corollary) | §2 | CG-2 |
-| CG-6 | `Cl_Q∘q_! ⊣ q^*`; it maps `R*(x,·)` to `Q∃*(q(x),·)`; exactness at `x` ⇔ ghost defect vanishes | KERNEL | Lean `closure_push_adjunction`, `closure_push_star_le_quot_star`, `quot_star_le_closure_push_star`, `exactAt_iff_closure_push_le` | CG-1…3 |
-| CG-7 | all-start exactness ⇔ `Sat_q∘Cl_R` idempotent | KERNEL | Lean `satClosed_iff_sat_closure_idempotent` | CG-3 |
-| CG-8 | selected-start exactness transports along homomorphisms of value structures; not conversely | KERNEL (transport); REPLAYED receipt (non-converse) | Lean `exactAt_map`; `test_observatoris_integration` | CG-3 |
-| CG-9 | over truth values the weighted closure is reflexive-transitive closure (PAP recovered) | KERNEL | Lean `star_propQ_iff` | — |
+| QG-1 | `R*(x,·)` is the least potential with unit at `x` | KERNEL; CLASSICAL in content | CAUSAL_GEOMETRY §1; Lean `star_closed`, `star_le_of_closed` | — |
+| QG-2 | `R*(x,z) ≤ Q∃*(q(x),q(z))` | KERNEL | §1; `star_le_quot_star` | QG-1 |
+| QG-3 | all-start exactness ⇔ fibre constancy ⇔ `q_!` preserves potentials ⇔ saturation preserves potentials; selected-start form | KERNEL | §1; `exact_iff_*`, `exactAt_iff_saturated_star_closed` | QG-1, QG-2 |
+| QG-4 | `Q∀*(q(x),b) ≤ (q_!R*(x,·))(b) ≤ Q∃*(q(x),b)` | KERNEL | §1; `quotAll_star_le_push_star` | QG-1 |
+| QG-5 | a may-quotient geometry has no unseen ancestors | PROVED (corollary) | §2 | QG-2 |
+| QG-6 | `Cl_Q∘q_! ⊣ q^*`; it maps `R*(x,·)` to `Q∃*(q(x),·)`; exactness at `x` ⇔ ghost defect vanishes | KERNEL | Lean `closure_push_adjunction`, `closure_push_star_le_quot_star`, `quot_star_le_closure_push_star`, `exactAt_iff_closure_push_le` | QG-1…3 |
+| QG-7 | all-start exactness ⇔ `Sat_q∘Cl_R` idempotent | KERNEL | Lean `satClosed_iff_sat_closure_idempotent` | QG-3 |
+| QG-8 | selected-start exactness transports along homomorphisms of value structures; not conversely | KERNEL (transport); REPLAYED receipt (non-converse) | Lean `exactAt_map`; `test_observatoris_integration` | QG-3 |
+| QG-9 | over truth values the weighted closure is reflexive-transitive closure (PAP recovered) | KERNEL | Lean `star_propQ_iff` | — |
 
-Independent paper derivations, exhaustive finite models over several value structures, and
-further results (exact relation between `Q∀* = Q∃*` and exactness; coarsest exact refinements;
-signed lumpability) are in [agents/OPUS_II_CAUSAL_GEOMETER.md](agents/OPUS_II_CAUSAL_GEOMETER.md);
-they are registered in section F once reviewed.
+| QG-10 | all-start exactness ⇔ every source edge is realised from every representative of its start report (`Q∃(R) ≤ Q∀(R*)`) | KERNEL (`exact_iff_edgeRealised`); CORROBORATED (Geometer paper proof; PI brute force on 6 000 model/partition pairs) | Geometer CG-3(5) | QG-3 |
+
+**Delegated quotient geometry (OPUS II).** The report
+[agents/OPUS_II_CAUSAL_GEOMETER.md](agents/OPUS_II_CAUSAL_GEOMETER.md) numbers its own theorems
+`CG-1 … CG-13` ("Geometer CG-n"). Geometer CG-1…4 are independent paper proofs of QG-1…3 and the
+selected-start form, which makes those rows **CORROBORATED** (kernel proof by the PI, paper proof
+and exhaustive models by a different agent). Additional results registered from that report:
+
+| Geometer ID | Statement | Authority |
+|---|---|---|
+| CG-5 | strict maps transport exactness; oplax maps transport all-start exactness only; lax maps do not; converses fail | PROVED + REFUTED parts with receipts; strict case also KERNEL |
+| CG-6 | three states minimal for a ghost only when `V` is integral; over graded `𝒫(M)` exactness ⇔ lumpability (bisimulation for letter-valued relations) | PROVED |
+| CG-7 | `Q∀* ≤ M ≤ ρ̂_x ≤ S ≤ Q∃*`, each link strict; lumpable ⇒ `Q∀*=Q∃*` ⇒ exact ⇒ unpointed, each strict | PROVED; outer links also KERNEL |
+| CG-8 | `Cl_Q∘q_! ⊣ q^* ⊣ Int_Q∘q_*`; left Beck–Chevalley ⇔ forward exactness; right ⇔ backward exactness | PROVED; left adjunction also KERNEL |
+| CG-9 | ghost defect functional, zero iff exact | PROVED; selected-start form also KERNEL |
+| CG-10 | exact partitions are join-closed; unique coarsest exact refinement; meets and selected-start variants fail | PROVED; join closure and the meet receipt re-checked by the PI |
+| CG-11 | weighted ghost certificate, sound and complete | PROVED |
+| CG-12 | whole-distance preservation ⇔ `q` merges only isomorphic states | CLASSICAL |
+| CG-13 | signed weights: lax support, balance, invent-and-delete, `(I−A)^{-1}` lumpable ⇔ `A` lumpable, generic faithfulness | PROVED; OBSERVED on 69 280 pairs |
 
 ## B. Response geometry
 
@@ -45,7 +60,7 @@ they are registered in section F once reviewed.
 | RG-1 | response support ⊆ structural walks; equality if `A ≥ 0`; fails for signed `A`; four nodes minimal for an all-lag failure | PROVED; OBSERVED exhaustively for 3×3 sign tables | CAUSAL_GEOMETRY §3 | — |
 | RG-2 | `n` zero lags force zero at every lag; `n−1` do not | PROVED from CLASSICAL Cayley–Hamilton | §3 | — |
 | RG-3 | `A ≥ 0`: `R_{S+T}(x,z) ≥ R_S(x,y)R_T(y,z)`; finiteness pattern = structural ancestry | PROVED | §4 | RG-1 |
-| RG-4 | balanced ⇒ `(A^τ)_{yx} = σ_yσ_x(|A|^τ)_{yx}`; hidden dependency requires imbalance; converse false | PROVED; balance criterion CLASSICAL (Harary) | §4 | — |
+| RG-4 | balanced (up to a global sign `ε`) ⇒ `(A^τ)_{yx} = ε^τσ_yσ_x(|A|^τ)_{yx}`; hidden dependency requires imbalance of `A` and `−A`; converse false | PROVED; CORROBORATED (PI and Geometer independently); balance criterion CLASSICAL (Harary) | §4 | — |
 | RG-5 | unit changes act by potentials; unit-equivalence ⇔ trivial holonomy; `b₁ = |E|−|V|+c` free magnitudes | PROVED; (b) CLASSICAL diagonal similarity | §5 | — |
 
 ## C. Causal horizon
@@ -55,7 +70,7 @@ they are registered in section F once reviewed.
 | HQ-1 | for `t < d(H,S)` records agree and states agree outside the radius-`t` ball | PROVED; OBSERVED on sampled linear carriers | CAUSAL_GEOMETRY §6 | — |
 | HQ-2 | no evidence before `d(H,S)`; lead time bounded by `d(H,y) − d(H,S)`; attained on balanced linear carriers | PROVED | §6 | HQ-1, RG-1, RG-4 |
 | HQ-3 | a model-cone violation witnesses a source edge absent from the model | PROVED | §6 | HQ-1 |
-| HQ-4 | `d_Q∃ ≤ d_C ≤ T_eff`; `d_C(x, fibre) ≤ d_Q∀` | PROVED | §6 | CG-2, CG-4, HQ-1 |
+| HQ-4 | `d_Q∃ ≤ d_C ≤ T_eff`; `d_C(x, fibre) ≤ d_Q∀` | PROVED | §6 | QG-2, QG-4, HQ-1 |
 
 ## D. Finite observer (delegated: OPUS I)
 

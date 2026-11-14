@@ -18,6 +18,7 @@ from observational_succ.observatoris_response_geometry import (
     edges,
     effect_time,
     gauge_invariant_dimension,
+    is_balanced_up_to_sign,
     is_nonnegative,
     matrix,
     powers,
@@ -189,6 +190,30 @@ class Balance(unittest.TestCase):
         a = matrix(((0, 0, -1), (1, 0, 0), (0, 1, 0)))
         self.assertIsNone(switching_function(a))
         self.assertEqual(cancellations(a, 9), ())
+
+    def test_global_sign_flip_also_excludes_cancellation(self):
+        # RG-4 with eps = -1: -A balanced.  A negative self-loop is the smallest
+        # table that is unbalanced yet balanced up to a global sign.
+        self.assertTrue(is_balanced_up_to_sign(matrix(((-1,),))))
+        rng = random.Random(31)
+        strictly_new = 0
+        for _ in range(300):
+            a = random_matrix(rng, 4, (1, -1, 2, Fraction(-1, 2)), 0.5)
+            if is_balanced_up_to_sign(a):
+                self.assertEqual(cancellations(a, 5), ())
+                strictly_new += switching_function(a) is None
+        self.assertGreater(strictly_new, 0)
+        self.assertFalse(is_balanced_up_to_sign(SIGNED_DIAMOND))
+
+    def test_cancellation_requires_imbalance_of_both_signs(self):
+        rng = random.Random(37)
+        seen = 0
+        for _ in range(500):
+            a = random_matrix(rng, 4, (1, -1, 2, -3, Fraction(1, 2)), 0.6)
+            if cancellations(a, 5):
+                seen += 1
+                self.assertFalse(is_balanced_up_to_sign(a))
+        self.assertGreater(seen, 0)
 
     def test_negative_self_loop_is_unbalanced(self):
         self.assertIsNone(switching_function(matrix(((-1,),))))

@@ -8,7 +8,7 @@ model*, and whether a declared model describes a real source is a separate oblig
 nothing here discharges.
 
 Proof pointers: `FO-*` = [agents/OPUS_I_FINITE_OBSERVER.md](agents/OPUS_I_FINITE_OBSERVER.md);
-`CG-*`, `RG-*`, `HQ-*` = [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md);
+`QG-*`, `RG-*`, `HQ-*` = [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md);
 `FH-*` = [FINITE_HORIZONS.md](FINITE_HORIZONS.md); Lean = `formal/ObservatorisQuantale.lean`.
 
 ## 1. Primitive data
@@ -40,7 +40,7 @@ Testing each component (FO-1, PROVED):
 | Records | **derived** | a record is the transcript of a word: `(o_{a₁}(x), o_{a₂}(t_{a₁}x), …)`, each readout taken before its operation acts. |
 | Resources | **not part of observation** | costs never change the core; they matter for bounded or single-copy execution, and then they are a `V`-weight (K3). |
 | Target | **indispensable for knowledge, irrelevant for observation** | without a target the only canonical question is the full behavioural class. |
-| Source selection | **indispensable** | unpointed diagrams can commute while the selected-start claim is false (SUCC's three-state ghost, inherited; weighted form CG-3). |
+| Source selection | **indispensable** | unpointed diagrams can commute while the selected-start claim is false (SUCC's three-state ghost, inherited; weighted form QG-3). |
 | Partial transitions | **reducible only under a premise** | refusal may be totalised to an observable `⊥` *only if refusal is observable*; that is an assumption about the source, not a theorem. |
 
 ## 3. Derived notions
@@ -50,7 +50,7 @@ Testing each component (FO-1, PROVED):
 - **Behavioural equivalence** `x ∼ y`: equal transcripts for all words. (Classical: Moore, Nerode;
   SUCC's `behavioral_partition`.)
 - **Core:** `Reach(x₀)/∼` with induced readouts and transitions.
-- **Structural reachability / distance:** the closure `R*` over the chosen `V` (CG-1).
+- **Structural reachability / distance:** the closure `R*` over the chosen `V` (QG-1).
 - **Two closure operators on `V`-valued predicates over `X`:**
   the **dynamical closure** `Cl_R` (close under what the carrier can do) and the
   **observational closure** `Sat_q = q^* q_!` for an observation `q` (close under what the
@@ -85,7 +85,7 @@ readout; class-injective dynamics also suffices. Neither is necessary, "commutin
 is **not** sufficient, and **executable knowledge is not closed under conjunction**: there is a
 4-state carrier in which every Boolean target is separately accessible and the class is not.
 
-**KT-5 Geometry under observation (CG-2, CG-3, CG-4; Lean, axiom-free).** For every value
+**KT-5 Geometry under observation (QG-2, QG-3, QG-4; Lean, axiom-free).** For every value
 structure: the may-quotient never under-reports (`R* ≤ Q∃*`); the must-quotient never
 over-reports (`Q∀* ≤ q_!R*`); and selected-start exactness has an exact criterion.
 
@@ -125,14 +125,14 @@ was found by a theorem failing when the premise was removed.
 5. **Observability of refusal** for partial operations.
 6. **Calibration transport.** One-way magnitude comparisons are not unit-free (RG-5).
 7. **Completeness of the model's wiring.** A coarse-graining cannot hide an ancestor, an omitted
-   edge can (CG-5, HQ-3).
+   edge can (QG-5, HQ-3).
 
 ## 6. What an observer can distinguish, compute, know — in the kernel's terms
 
 | Question | Kernel answer |
 |---|---|
 | What can be distinguished? | `∼`-classes: the core (KT-1). |
-| What can be reached / how far? | `R*` over the chosen value structure (CG-1). |
+| What can be reached / how far? | `R*` over the chosen value structure (QG-1). |
 | What does the observer's geometry assert? | `Q∃*` (possible) and `Q∀*` (guaranteed) (KT-5). |
 | What can be known about a target? | whether `P` is constant on the surviving fibre (KT-3). |
 | What can one copy actually find out? | the belief fixed point (KT-4). |

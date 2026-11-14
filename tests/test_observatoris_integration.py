@@ -108,7 +108,7 @@ class AncestralChainIsACostGhost(unittest.TestCase):
         # Same table read over step counts: the quotient reaches B from the
         # report of `a` in one step; the source needs two.  Exactness does not
         # transport backwards along the cost -> truth change of base, and the
-        # quotient distance is a lower bound, never an upper bound (CG-2).
+        # quotient distance is a lower bound, never an upper bound (QG-2).
         a = matrix(((0, 0, 0), (1, 0, 0), (0, 1, 0)))
         source = structural_distance(a)
         quotient = structural_distance(quotient_pattern(a, (0, 0, 1)))

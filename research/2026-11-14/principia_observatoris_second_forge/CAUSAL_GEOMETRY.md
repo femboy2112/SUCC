@@ -16,7 +16,7 @@ different algebra:
 | value algebra | an idempotent one: a quantale (truth values, costs, best-path weights, path languages) | a ring (signed reals); no idempotence |
 | composition | joins of path weights never cancel | sums of path weights can cancel |
 | geometry | a directed (Lawvere-type) distance; triangle inequality is a theorem | no triangle inequality in general |
-| under an observation quotient | can only get *closer* (CG-2); exactness has a four-way criterion (CG-3) | can be invented **and** deleted |
+| under an observation quotient | can only get *closer* (QG-2); exactness has a four-way criterion (QG-3) | can be invented **and** deleted |
 | bridge | `supp` is a homomorphism on nonnegative weights and only *lax* on signed ones (RG-1) | |
 
 Sections 1–2 are the structural side (quotient geometry over a quantale). Sections 3–5 are the
@@ -29,7 +29,7 @@ Executable evidence: `tests/test_observatoris_quantale_quotient.py`,
 
 ---
 
-## 1. Weighted ancestral reachability (CG-1 … CG-4)
+## 1. Weighted ancestral reachability (QG-1 … QG-4)
 
 **Inherited starting point.** SUCC's Principia-ancestral supplement
 ([PAP-01…PAP-05](../../../docs/CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md)) treats Boolean
@@ -59,7 +59,7 @@ Q∀(a,b) = ⋀_{q(u)=a} ⋁_{q(v)=b} R(u,v)            (must-quotient)
 (q_!φ)(b) = ⋁ { φ(u) : q(u)=b }                    (direct image of a potential)
 ```
 
-**CG-1 (weighted PAP-01).** `R*(x,·)` is a potential with `k ≤ R*(x,x)`, and it is the least
+**QG-1 (weighted PAP-01).** `R*(x,·)` is a potential with `k ≤ R*(x,x)`, and it is the least
 such: for every potential `φ` with `k ≤ φ(x)`, `R*(x,z) ≤ φ(z)` for all `z`.
 *Status: PROVED; Lean `star_closed`, `one_le_star`, `star_le_of_closed`. Classical in content
 (enriched closure / shortest-path duality with feasible potentials).*
@@ -71,26 +71,33 @@ empty path gives `k ≤ φ(x)`; extending by an edge gives `w ⊗ R(y,z) ≤ φ(
 In the cost instance this is the classical statement that the shortest-path distance is the
 largest feasible potential difference.
 
-**CG-2 (weighted PAP-02: the quotient never under-reports).** For all `x,z`:
+**QG-2 (weighted PAP-02: the quotient never under-reports).** For all `x,z`:
 `R*(x,z) ≤ Q∃*(q(x), q(z))`. *Status: PROVED; Lean `star_le_quot_star`.*
 
 *Proof.* `z ↦ Q∃*(q(x),q(z))` is an `R`-potential, because `R(u,v) ≤ Q∃(q(u),q(v))` and
-`Q∃*(q(x),·)` is a `Q∃`-potential; apply CG-1. ∎
+`Q∃*(q(x),·)` is a `Q∃`-potential; apply QG-1. ∎
 
 Read in the cost instance: **`d_Q(q(x),q(z)) ≤ d_source(x,z)`**. An observer who collapses
 states can only see things as *closer* than they are. Coarse-graining invents shortcuts; it
 never hides a route.
 
-**CG-3 (weighted PAP-03: the exactness criterion).** The following are equivalent.
+**QG-3 (weighted PAP-03: the exactness criterion).** The following are equivalent.
 
 1. *Endpoint exactness at every start:* `Q∃*(q(x),b) ≤ (q_! R*(x,·))(b)` for all `x ∈ X`,
-   `b ∈ Y` (the reverse inequality always holds by CG-2).
+   `b ∈ Y` (the reverse inequality always holds by QG-2).
 2. *Fibre constancy:* `q(x) = q(x')` implies `q_! R*(x,·) = q_! R*(x',·)`.
 3. `q_!` maps `R`-potentials to `Q∃`-potentials.
 4. `q^* q_!` (saturation) maps `R`-potentials to `R`-potentials.
+5. *One-step may is below closure must:* every source edge `u → v` is realised, up to its weight,
+   by the closure from **every** representative of `q(u)`:
+   `R(u,v) ≤ (q_! R*(x',·))(q(v))` whenever `q(x') = q(u)`; equivalently `Q∃(R) ≤ Q∀(R*)`.
+   (Found by the delegated workstream; equivalently "may = must for the closure".)
 
-*Status: PROVED; Lean `exact_iff_fibreConstant`, `exact_iff_pushClosed`, `exact_iff_satClosed`,
-axiom-free. New-to-project synthesis of classical ingredients.*
+*Status: PROVED twice by different authors and routes — the PI's paper proof formalised in Lean
+(`exact_iff_fibreConstant`, `exact_iff_pushClosed`, `exact_iff_satClosed`,
+`exact_iff_edgeRealised`, axiom-free) and the Causal Geometer's independent paper proof with
+exhaustive finite models over six value structures, one of them noncommutative. New-to-project
+synthesis of classical ingredients.*
 
 *Proof.* (1⇒2) Both sides equal `Q∃*(q(x),·)`. (2⇒4) Let `φ` be a potential and `s,t ∈ X`.
 By right distribution it suffices to bound `φ(u) ⊗ R(s,t)` for each `u` with `q(u)=q(s)`. Now
@@ -98,14 +105,14 @@ By right distribution it suffices to bound `φ(u) ⊗ R(s,t)` for each `u` with 
 `φ(u) ⊗ R(s,t) ≤ ⋁_{q(v)=q(t)} φ(u) ⊗ R*(u,v) ≤ ⋁_{q(v)=q(t)} φ(v) = (q_!φ)(q(t))`,
 using that a potential propagates along the whole closure (left distribution and associativity).
 (4⇒3) `(q_!φ)(a) ⊗ Q∃(a,b) = ⋁_{q(u)=a,q(v)=b} (q_!φ)(q(u)) ⊗ R(u,v) ≤ (q_!φ)(b)`.
-(3⇒1) `q_!R*(x,·)` is then a `Q∃`-potential with unit at `q(x)`; apply CG-1 to `Q∃`. ∎
+(3⇒1) `q_!R*(x,·)` is then a `Q∃`-potential with unit at `q(x)`; apply QG-1 to `Q∃`. ∎
 
 **Selected-start form.** For one chosen `x`:
 `[∀b: Q∃*(q(x),b) ≤ (q_!R*(x,·))(b)]  ⟺  q^*q_!R*(x,·) is an R-potential.`
 *PROVED; Lean `exactAt_iff_saturated_star_closed`.* As in the Boolean case, failure at another
 start does not refute exactness at the selected one.
 
-**CG-4 (may/must sandwich).** For every actual start `x` and report `b`:
+**QG-4 (may/must sandwich).** For every actual start `x` and report `b`:
 
 ```
 Q∀*(q(x), b)  ≤  (q_! R*(x,·))(b)  ≤  Q∃*(q(x), b).
@@ -117,7 +124,7 @@ elementary transposition.*
 
 *Proof of the left inequality.* `q_!R*(x,·)` is a `Q∀`-potential: for `q(u)=a`,
 `R*(x,u) ⊗ Q∀(a,b) ≤ R*(x,u) ⊗ ⋁_{q(v)=b} R(u,v) = ⋁_{q(v)=b} R*(x,u) ⊗ R(u,v) ≤ (q_!R*(x,·))(b)`.
-Apply CG-1 to `Q∀`. ∎
+Apply QG-1 to `Q∀`. ∎
 
 In the cost instance: **`d_∃ ≤ d_source(x, fibre of b) ≤ d_∀`.** From quotient data alone the
 observer gets a certified two-sided bracket: the may-distance is a time before which nothing can
@@ -125,9 +132,42 @@ arrive; the must-distance is a time by which a route is guaranteed from *every* 
 Both inequalities are strict in general, and `Q∀* = Q∃*` is sufficient but not necessary for
 exactness (see [COUNTERMODELS.md](COUNTERMODELS.md), and the agent report for the receipts).
 
+### 1b. Results of the delegated quotient-geometry workstream
+
+Full statements, proofs and receipts are in
+[agents/OPUS_II_CAUSAL_GEOMETER.md](agents/OPUS_II_CAUSAL_GEOMETER.md). That report numbers its
+theorems `CG-1 … CG-13`; they are cited here as "Geometer CG-n" and are distinct from the `QG-n`
+identifiers of this document. The PI checked three of them by a separate brute force
+(condition 5 above, join-closure, and the meet-failure receipt on four states).
+
+- **A strict four-step hierarchy (Geometer CG-7, PROVED, each step strict by receipt).**
+  one-step lumpable (`Q∀ = Q∃`) ⇒ `Q∀* = Q∃*` ⇒ **exact** ⇒ unpointed closure commutation.
+  In particular `Q∀* = Q∃*` does **not** characterise exactness (the PI's question; REFUTED by
+  SUCC's own PAP-04 chain), and the source value is **not** a function of the four quotient
+  closures: two models share all of them and differ in what the start can reach.
+- **A canonical repair (Geometer CG-10, PROVED).** All-start exact partitions are closed under
+  arbitrary joins, so every observation has a **unique coarsest exact refinement** `q̂`, computed
+  by profile splitting, and the true source values are recovered through it. Meets of exact
+  partitions can fail (four states are needed), and for *selected-start* exactness there is no
+  canonical coarsest refinement. The PI's worry that joins might fail was wrong.
+- **Change of value structure (Geometer CG-5).** Strict homomorphisms transport selected-start
+  exactness (also Lean `exactAt_map`). *Oplax* maps transport all-start exactness only; *lax*
+  maps transport nothing, even with strict unit and joins (receipts). Converses fail at every
+  link of language → cost → truth.
+- **Time reversal (Geometer CG-8).** `q^*` has a left adjoint `Cl_Q∘q_!` and a right adjoint
+  `Int_Q∘q_*` on potentials. Invertibility of the left Beck–Chevalley mate is forward exactness;
+  of the right mate, **backward** exactness (the same theorem for the reversed relation). The
+  universal image `q_*` pairs with the *backward* must-quotient, not the forward one.
+- **Whole-distance preservation (Geometer CG-12, CLASSICAL).** `R*(x,z) = Q*(q(x),q(z))` for all
+  pairs iff `q` merges only states at mutual unit distance.
+- **Minimal ghosts (Geometer CG-6).** Three states are minimal only for *integral* value
+  structures; two suffice otherwise.
+
 **What this buys.** One theorem now covers reachability, cost, elapsed time, best-path relevance
 and trace languages; SUCC's strict hierarchy *endpoint < cost < trace* (PAP-04) becomes a chain
-of changes of value structure. **What it does not establish:** anything about signed weights
+of changes of value structure. Identifying SUCC's `future_safe_quotient` trace contract with
+language-level exactness is **not established** (that contract also tracks costs, source tags
+and rejection behaviour). **What it does not establish:** anything about signed weights
 (Section 3), probabilities, frequencies, or the authenticity of a declared source table.
 
 ---
@@ -136,7 +176,7 @@ of changes of value structure. **What it does not establish:** anything about si
 
 Let the source be a network with dependency digraph `G_C` and structural distance `d_C`.
 
-**CG-5 (an honest coarse-graining has no unseen ancestors).** If the observer's geometry is the
+**QG-5 (an honest coarse-graining has no unseen ancestors).** If the observer's geometry is the
 may-quotient distance `d_Q` of the source, then for every horizon `τ` and target `y`,
 
 ```
@@ -144,16 +184,16 @@ may-quotient distance `d_Q` of the source, then for every horizon `τ` and targe
 ```
 
 So the founding note's unseen causal set `U_{R,τ}(y) = Anc_C(y;τ) \ B^G_R(y)` is **empty**
-whenever `R ≥ τ` and the geometry is a may-quotient of the source. *PROVED (corollary of CG-2).*
+whenever `R ≥ τ` and the geometry is a may-quotient of the source. *PROVED (corollary of QG-2).*
 
 **Consequence.** There are exactly two ways geometry and computation can disagree, and they are
 detected by different instruments:
 
 - **Ghosts** — the geometry claims a route the selected source state lacks. Cause: collapsing
-  states (CG-2 strict). Detector: a potential / hereditary invariant (CG-1; SUCC's PAP-05
+  states (QG-2 strict). Detector: a potential / hereditary invariant (QG-1; SUCC's PAP-05
   certificate). No experiment is needed; a closed set containing the start is the receipt.
 - **Quasars** — a source dependency reaches the target from outside the geometric neighbourhood.
-  By CG-5 this *cannot* arise from coarse-graining alone; it requires the observer's graph to
+  By QG-5 this *cannot* arise from coarse-graining alone; it requires the observer's graph to
   **omit a source edge** (a hidden wire), i.e. the model is wrong rather than coarse. Detector:
   a finite intervention contrast that violates the model's cone (HQ-3 below). No invariant of
   the model can reveal it, because the model does not contain it.
@@ -205,6 +245,17 @@ every experiment that only touches `x` and reads `z`.
 
 ---
 
+**RG-6 (signed quotients; resolvent lumpability — Geometer CG-13, PROVED there).** For signed
+weights the quotient can both *invent* and *delete* a response at the same start (receipt in the
+report), in contrast with QG-2 where deletion is impossible. The correct signed quotient notion
+is Kemeny–Snell lumpability (CLASSICAL). With `I − A` invertible and `q` surjective,
+**`(I−A)^{-1}` is lumpable iff `A` is lumpable**. For idempotent values the analogous statement
+is false: closure-exactness (QG-3) is strictly weaker than one-step lumpability. The gap exists
+because `R ↦ R*` is not injective while `A ↦ (I−A)^{-1}` is. *Generic faithfulness (CLASSICAL in
+spirit):* as a polynomial in indeterminate edge weights, `(A^τ)_{yx}` has nonnegative integer
+coefficients and is nonzero iff a walk exists, so exact cancellation is a proper algebraic
+condition requiring mixed signs.
+
 ## 4. When the response *is* a geometry: balance (RG-3, RG-4)
 
 **RG-3 (nonnegative carriers generate a directed distance).** Let `A ≥ 0`, `γ > 0`, and
@@ -227,14 +278,17 @@ taking shortest paths. For unbalanced carriers no transform of `|ρ|` can work: 
 diamond `R(x,y)·R(y,z) = 1 > 0 = R(x,z)` (*receipt; REFUTES "net response always generates a
 path geometry"*).
 
-**RG-4 (balance excludes cancellation).** Call `A` *balanced* if there is `σ ∈ {±1}^N` with
-`σ_v A_{vu} σ_u ≥ 0` for all `u,v`. Then for all `τ,x,y`:
-`(A^τ)_{yx} = σ_y σ_x (|A|^τ)_{yx}`. Consequently response support equals structural walks,
-`|ρ|` satisfies RG-3, and **any hidden (cancelled) dependency requires an unbalanced sign
-pattern.** *PROVED;* the cycle characterisation of balance (every closed walk of the underlying
-undirected signed multigraph has positive sign product) is CLASSICAL (Harary 1953).
+**RG-4 (balance excludes cancellation).** Call `A` *balanced* if there are `σ ∈ {±1}^N` and
+`ε ∈ {±1}` with `ε·σ_v A_{vu} σ_u ≥ 0` for all `u,v`. Then for all `τ,x,y`:
+`(A^τ)_{yx} = ε^τ σ_y σ_x (|A|^τ)_{yx}`. Consequently response support equals structural walks,
+`|ρ|` satisfies RG-3, and **any hidden (cancelled) dependency requires that neither `A` nor `−A`
+is balanced.** *PROVED;* the cycle characterisation of balance (every closed walk of the
+underlying undirected signed multigraph has positive sign product) is CLASSICAL (Harary 1953).
+*CORROBORATED:* the PI proved the case `ε = 1`; the Causal Geometer independently proved the
+statement with the global sign `ε` (its CG-13(2)), which is the form recorded here. The module's
+`switching_function` tests the case `ε = 1` only.
 
-*Proof.* With `S = diag(σ)`, `S A S = |A|`, so `A^τ = S |A|^τ S`. ∎
+*Proof.* With `S = diag(σ)`, `S A S = ε|A|`, so `A^τ = ε^τ S |A|^τ S`. ∎
 
 *The converse fails:* a directed 3-cycle with one negative edge is unbalanced, yet it has at
 most one walk of each length between two nodes, so nothing can cancel. Imbalance is necessary
@@ -353,8 +407,8 @@ intervention; then it is `UNVERIFIED`, not absent.
 d_Q∃(q(x),q(y))  ≤  d_C(x,y)  ≤  T_eff(x→y),          d_C(x, q⁻¹(b)) ≤ d_Q∀(q(x), b).
 ```
 
-The first inequality is CG-2 (equality iff cost-exactness, CG-3); the second is HQ-1 (equality
-on balanced linear carriers); the last is CG-4. So a may-quotient geometry gives sound
+The first inequality is QG-2 (equality iff cost-exactness, QG-3); the second is HQ-1 (equality
+on balanced linear carriers); the last is QG-4. So a may-quotient geometry gives sound
 "not-before" bounds, a must-quotient geometry gives sound "route-exists-by" bounds, and the gap
 between structure and effect is exactly cancellation or gating.
 
@@ -375,7 +429,7 @@ not respond to a remote intervention has no response edge there, whatever its jo
 | Imbalance implies some cancellation | REFUTED | negative directed 3-cycle |
 | Equal directed cycle products imply unit-equivalence | REFUTED without strong connectivity | acyclic diamond with parallel-path ratio 2 |
 | "x is closer to y than z is" is observer-independent | REFUTED without transported calibration | unit change reverses the order |
-| Coarse-graining can hide a causal ancestor | REFUTED for may-quotients (CG-5) | — it can only invent them |
+| Coarse-graining can hide a causal ancestor | REFUTED for may-quotients (QG-5) | — it can only invent them |
 | A may-quotient path lifts from the selected start | REFUTED (inherited: SUCC three-state ghost) | PAP-04 |
 
 **Next falsification opportunities.** (i) Nonlinear carriers: find the right replacement for

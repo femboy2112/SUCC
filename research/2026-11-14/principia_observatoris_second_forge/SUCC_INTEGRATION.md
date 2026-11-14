@@ -17,17 +17,17 @@ normality, RH, Goldbach or any physical claim.
 
 | Existing | New | Relationship | Level |
 |---|---|---|---|
-| PAP-01 hereditary-predicate characterisation | CG-1 | PAP-01 is CG-1 over truth values; Lean `star_propQ_iff` identifies the weighted closure over `Prop` with reflexive-transitive closure | DERIVED + kernel-checked |
-| PAP-02 projection soundness | CG-2 | same statement over every value structure; over costs it reads `d_Q ≤ d_source` | DERIVED + kernel-checked |
-| PAP-03 four-way exactness; selected-start form (5) | CG-3 | generalised verbatim; commutativity never used | DERIVED + kernel-checked |
+| PAP-01 hereditary-predicate characterisation | QG-1 | PAP-01 is QG-1 over truth values; Lean `star_propQ_iff` identifies the weighted closure over `Prop` with reflexive-transitive closure | DERIVED + kernel-checked |
+| PAP-02 projection soundness | QG-2 | same statement over every value structure; over costs it reads `d_Q ≤ d_source` | DERIVED + kernel-checked |
+| PAP-03 four-way exactness; selected-start form (5) | QG-3 | generalised verbatim; commutativity never used | DERIVED + kernel-checked |
 | PAP-04 strict hierarchy endpoint < cost < trace | change of base (`exactAt_map`) | exactness transports along homomorphisms of value structures and not backwards; SUCC's chain `a→b→c` is exact over truth and a one-step ghost over step counts | REPLAYED (`test_observatoris_integration.AncestralChainIsACostGhost`) |
 | PAP-04 three-state ghost | ghost defect | the same `Machine` is audited by `audit_ancestral_observer` and by the cost geometry; the Lean control replays it through the truth-value instance | REPLAYED |
 | PAP-05 hereditary obstruction certificate | potentials | a `V`-valued potential with unit at the start that is small at the report is the weighted certificate; over costs it is a feasible potential certifying a distance lower bound | DERIVED |
-| `FutureSafeForgetting.lean` (transition congruence lifts whole paths from every representative) | CG-4 | a congruence makes may- and must-quotients agree, which is sufficient (not necessary) for exactness at every value level | DERIVED (see the Causal Geometer report for the exact relation) |
+| `FutureSafeForgetting.lean` (transition congruence lifts whole paths from every representative) | QG-4 | a congruence makes may- and must-quotients agree, which is sufficient (not necessary) for exactness at every value level | DERIVED (see the Causal Geometer report for the exact relation) |
 
-New relative to the existing supplement: the must-side bound and the two-sided sandwich (CG-4);
+New relative to the existing supplement: the must-side bound and the two-sided sandwich (QG-4);
 the adjunction `Cl_Q∘q_! ⊣ q^*` and "exactness ⇔ `Sat∘Cl` idempotent" (KT-6); and the corollary
-that a may-quotient geometry has no unseen ancestors (CG-5).
+that a may-quotient geometry has no unseen ancestors (QG-5).
 
 ## 2. Finite observers and carrier-relative targets
 
@@ -100,7 +100,7 @@ No relationship to the existing Haar-clock or Fourier–Yoneda modules was audit
 
 ## 7. Yoneda and Scott
 
-- *Yoneda (DERIVED, modest).* CG-1 says `x ↦ R*(x,·)` is the representable potential, and KT-1
+- *Yoneda (DERIVED, modest).* QG-1 says `x ↦ R*(x,·)` is the representable potential, and KT-1
   says `x ↦` (its response function) is injective exactly on the core. Both are the standard
   "an object is known by its responses" statement for this kernel. No comparison with
   `fourier_yoneda_pinbed` was made: UNAUDITED.
