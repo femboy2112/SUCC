@@ -82,3 +82,29 @@ exists the register says OBSERVED.
 A Lean compilation proves the encoded statements relative to their (empty) axiom dependencies.
 It does not show that the encoding describes any physical or arithmetic source, and it does not
 certify any Python implementation.
+
+## 5. Adversarial review
+
+Two hostile referees were run against finished text and code, with no access to the authors'
+reasoning and an explicit instruction that agreement without attack is failure.
+
+**Seat 1** ([agents/OPUS_IV_HOSTILE_REFEREE.md](agents/OPUS_IV_HOSTILE_REFEREE.md), 29 findings,
+29 executable receipts in `tests/test_observatoris_referee_receipts.py`) reviewed the principal
+investigator's causal-geometry document, the Lean encoding, the response-geometry and
+classical-appearance code, and the finite-horizon report.
+
+| Outcome | Count | Items |
+|---|---|---|
+| Refuted as stated, then repaired | 8 | HQ-3; HQ-4 (two links); HQ-2(b); RG-3 "no transform"; CA-4; one FH-6 clause; the Lean must/may control |
+| Overclaim withdrawn or statement repaired | 7 | RG-3 "derived"; RG-3 "Lawvere distance"; §2 asymmetry; C-6 labelled refuted without a receipt; RG-4 criterion; RG-1(c) scope; QG-3(5) off the image; CA-3 |
+| Tests that could not fail, replaced | 2 | two finite-horizon tests |
+| Attribution corrections | several | existential abstraction, signature similarity, gain graphs, stabiliser fragment, Moore, Massey |
+| Survived, with the attack recorded | 14 | Lean core; QG-5 (strengthened); HQ-1 (sharpened); RG-1(a,b); RG-2; RG-5 (weakened hypothesis); RG-6; CA-6; FH-3; FH-7; FH-8; FH-9; FH-6(d); FH-11 and the paper re-derivations |
+
+Every refuted statement is kept as a corpse (COUNTERMODELS §5) and every live document carries
+the repaired form. The principal investigator accepted all findings; none was contested.
+
+**What the review could not check** (and therefore remains unverified): the exact statements of
+the cited classical sources (diagonal similarity, the probabilistic-automaton bound, the
+abstract-interpretation completeness literature, the descriptive-set-theoretic completeness
+result), all written from memory.
