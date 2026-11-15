@@ -1,0 +1,62 @@
+{
+  "base_commit": "83ade09a46fefa88fbbddfb5bcc483d8f689586f",
+  "base_pr": 629,
+  "files": [
+    {
+      "git_blob_sha1": "8fbbb02053d7c76ac2393bb81c865c5df3af621f",
+      "path": "observational_succ/gauge_anchored_observer.py",
+      "sha256": "81093fba8c586177aa9cb56939316daec4c5874d050bf679fcc9bb03b8b69f7c",
+      "size": 7624
+    },
+    {
+      "git_blob_sha1": "05344e24f8cd07cc73b3f23754c5dccfad8fdfed",
+      "path": "research/2026-11-14/gauge_anchored_source/FOCUSED_LOG.txt",
+      "sha256": "a14a389b15994bf9616252724974270c873ff75786be0da7fc3838a6798eaca7",
+      "size": 2700
+    },
+    {
+      "git_blob_sha1": "9789a0ee2603d7abd7ba5ba274cc4818e22d4dfd",
+      "path": "research/2026-11-14/gauge_anchored_source/INDEPENDENT_LOG.txt",
+      "sha256": "5efcddcd70a44ce869a10cc8f8ce41a3148b12477678627af7e93b87419e9b96",
+      "size": 69
+    },
+    {
+      "git_blob_sha1": "1194eb3cf564208846fe5c5b8d92a21917f66e9f",
+      "path": "research/2026-11-14/gauge_anchored_source/NEXT.md",
+      "sha256": "cbadcc87da6ff149718bc07d453b1aec8925ba4af361a76bb0b0ebac7a48b9da",
+      "size": 2022
+    },
+    {
+      "git_blob_sha1": "52b82ad84c08c4b02f793c254d8a92b70759b0df",
+      "path": "research/2026-11-14/gauge_anchored_source/README.md",
+      "sha256": "dbf082e67726077929921bd4a01dcd9e848b3417caf14016197be92f340ce293",
+      "size": 1204
+    },
+    {
+      "git_blob_sha1": "f34a57b71f47133ca84a419ea215d7d321e127a6",
+      "path": "research/2026-11-14/gauge_anchored_source/THEOREMS.md",
+      "sha256": "60b6954420718387a91e784c977d2a1187504c7d771117eff1c3b337199503fd",
+      "size": 14058
+    },
+    {
+      "git_blob_sha1": "0a09ade567471389ac20082b23dc064d8d7308d8",
+      "path": "research/2026-11-14/gauge_anchored_source/VALIDATION.md",
+      "sha256": "91e6084d07c8b88ab3f861b35c6503d02fb442b4890672d9bd90d87564d362a0",
+      "size": 1640
+    },
+    {
+      "git_blob_sha1": "2207658e608086c6f77b64ca1756b17e8c2f7b7f",
+      "path": "research/2026-11-14/gauge_anchored_source/independent_oracle.py",
+      "sha256": "6bc122681c02fbfe1537d81bf961510038dda1fd594808324b2c3de7dee90ed2",
+      "size": 1487
+    },
+    {
+      "git_blob_sha1": "b449432818f04ee5b5ce959a194a65557cd0199a",
+      "path": "tests/test_gauge_anchored_observer.py",
+      "sha256": "2ba96d5769bda423740cafd35d42a266d0bc03ff682c2c5f295227416f2d16fe",
+      "size": 5998
+    }
+  ],
+  "project": "femboy2112/SUCC",
+  "scope": "additive finite source-relative gauge pinning; no external physical calibration"
+}
