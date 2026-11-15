@@ -37,6 +37,8 @@ Thus `Γ(t+1)=∫₀∞ r^t e^{-r}dr` if the exponent is named `t`. The integrat
 
 The real powers are linearly independent in finite families on an interval, but they are not automatically orthogonal or statistically independent. For example, the Gram matrix of `1,t` in `L²(e^{-t}dt)` is `[[1,1],[1,2]]`. A continuum of Dirac distributions can express a distributional resolution of a carrier; it is not a collection of unit vectors in ordinary `L²`, and its independence is not a consequence of the Gamma integral. These corrections specify a carrier rather than refute the proposed geometric intuition.
 
+**The author's centering at s.** For real `s>0`, normalize the carrier as `g_s(t)=t^(s−1)e^(-t)/Γ(s)`. The Gamma successor identity gives `E[T]=s` and `Var(T)=s`. Its density in log coordinates is `q_s(u)=e^(su−e^u)/Γ(s)`; differentiating its log gives `s−e^u`, so its unique mode is `u=log s`, corresponding to `t=s`. The density with respect to `dt` instead peaks at `t=s−1` when `s>1`. Thus the volume is centered at `s` in two precise senses (mean in the original coordinate, mode in the logarithmic chart), while its shape and width change with `s`. It is not a rigid translate of one fixed profile. This classical centering was also developed in concurrent draft #634, GG-01, inspected after this round's initial publication; see the pinned cross-reference in `PROVENANCE.md`.
+
 **Provenance:** Euler integral and Mellin/Fourier change of variables are classical, DLMF 5.2.1 and 1.14(iv). **Next discriminator:** a proposed alternate measure or basis must reproduce the Jacobian, domain, and transform convention.
 
 ## GV-02. Ordered causal volumes force the Gamma normalization

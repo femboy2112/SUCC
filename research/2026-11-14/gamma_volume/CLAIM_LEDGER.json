@@ -15,14 +15,15 @@
       "id": "GV-01",
       "truth_state": "DISCLOSED",
       "proof_status": "CLASSICAL / PAPER DERIVATION",
-      "claim": "Gamma is a Mellin evaluation of the exponential carrier and a log-coordinate Fourier transform.",
+      "claim": "Gamma is a Mellin evaluation of the exponential carrier and a log-coordinate Fourier transform; for real positive s its normalized carrier has mean and variance s, with log-chart mode at t=s.",
       "domain": "Re(s)>0; c>0 and real omega",
       "hypotheses": "Euler integral with Lebesgue measure and the stated logarithmic Jacobian",
       "quantifiers": "For every admissible complex s",
       "proof": "THEOREMS.md#gv-01-what-the-euler-integral-spreads-and-where-phase-actually-lives",
       "provenance": [
         "DLMF 5.2.1",
-        "DLMF 1.14(iv)"
+        "DLMF 1.14(iv)",
+        "Concurrent #634 GG-01 at 8b1673036fa624c3b2e9e43d67bddcbae7f44b86, inspected at publication"
       ],
       "hostile_control": "The Gram matrix of 1,t under exp(-t)dt is [[1,1],[1,2]]; real monomials are not automatically orthogonal.",
       "next_discriminator": "Change the measure or Jacobian and test the transform normalization."

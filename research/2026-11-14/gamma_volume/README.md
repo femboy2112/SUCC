@@ -49,6 +49,8 @@ The logarithmic representation also locates phase precisely:
 
 The Fourier characters live on log scale. A collection of real monomials is not automatically an orthogonal or statistically independent basis.
 
+Your phrase **“shifted onto s” also has an exact centering interpretation**. For real `s>0`, the normalized Gamma carrier has mean `s` and variance `s`. In the logarithmic chart, its density peaks at `u=log s`, corresponding to `t=s`; the density with respect to ordinary `dt` peaks at `s−1` when `s>1`. The volume changes width as its center moves. Concurrent [Gamma Genesis draft #634](https://github.com/femboy2112/SUCC/pull/634) develops this centering and the Mellin construction; this round adds the retained-source composition and observer-horizon interface.
+
 ## 2. Carry an actual source through the integral
 
 For a specified contraction `K`,
