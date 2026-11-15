@@ -1,0 +1,1501 @@
+{
+  "schema_version": 1,
+  "parent_commit": "8097d9e802da1d83a615d8812e74279820f5ae7e",
+  "branch": "research/pi-interference-atlas-2026-11-15",
+  "scope": "Named families in audited canonical frontier, route contract, Main XXIV/XXV handoffs, Main XXI-XXIV archived frontiers, gearbox/tool atlases and directly referenced dossiers. Not all possible experiments or all unknown repository documents.",
+  "relation_convention": "Unless an explanation names a weaker target, relations concern full base-16 normality. NECESSARY rows include strict weaker rungs. Conditional implications retain every qualifier. OBSERVER_ONLY does not assert a new arithmetic bound.",
+  "implementation_convention": "These labels classify mathematical representation requirements, not a claim that every row has been implemented in the current production compiler. Direct finite response assumes its authenticated source-labelled inputs.",
+  "coverage_count": 74,
+  "source_path_count": 42,
+  "frontier_map_sha256": "01cca7937b6cfa911919c3eb0b7011f5bf3422dac0ba6b1413af8ee787795f53",
+  "targets": [
+    {
+      "id": "F01",
+      "title": "Fixed-mode Weyl cancellation",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "docs/PI_FRONTIER_CONTRACT.md"
+      ],
+      "exact_target": "Fixed-mode Weyl: \\(W_B(h)\\to0\\), or raw/prefix versions",
+      "response_construction": "Compile real and imaginary parts with a retained unit phase reference; raw/completed transport is charged separately.",
+      "quantifiers": "**EQ:** every fixed nonzero integer \\(h\\), every integer \\(B\\to\\infty\\). No power rate is required.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** every fixed nonzero integer \\(h\\), every integer \\(B\\to\\infty\\). No power rate is required.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Coherent same-forcing seed; finitely many modes do not suffice. [P0], [P1]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "superseded_wording",
+          "source": "docs/PI_GEARBOX_ATLAS.md",
+          "issue": "Its power-saving wording is stronger than the actual required fixed-mode o(N) criterion."
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "title": "Completed radix word frequencies",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "research/2026-11-06/joint_character_entropy/THEOREMS.md",
+        "research/2026-11-08/lambert_entropy_forge/THEOREMS.md"
+      ],
+      "exact_target": "Completed word frequencies: \\(p_{N,k}(w)\\to16^{-k}\\)",
+      "response_construction": "Use certified completed radix words, finite cell indicators and exact count averages; a pure continuous-character compiler needs a boundary-paid approximation.",
+      "quantifiers": "**EQ:** every fixed depth \\(k\\), every word \\(w\\), all large horizons.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** every fixed depth \\(k\\), every word \\(w\\), all large horizons.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "A periodic de Bruijn word passes its finite tested depths. [P0], [JC], [LWE]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F03",
+      "title": "Basel tail and shell response",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "docs/MAIN_XXIV_HANDOFF.md"
+      ],
+      "exact_target": "Basel tail and shell: \\(F_h(A)=\\sum_{n\\ge A}n^{-2}e(hY_n)\\); \\(B_A(h)=[F_h(A)-F_h(2A)]/\\sum_{A\\le n<2A}n^{-2}\\)",
+      "response_construction": "Use weighted complex phase means with a certified infinite Basel tail; apply inherited Abel transport.",
+      "quantifiers": "**EQ:** \\(AF_h(A)\\to0\\), or \\(B_A(h)\\to0\\), for every fixed \\(h\\ne0\\) and all integer \\(A\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** \\(AF_h(A)\\to0\\), or \\(B_A(h)\\to0\\), for every fixed \\(h\\ne0\\) and all integer \\(A\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Absolute Basel energy \\(O(A^{-1})\\) is not the required signed little-oh. [P0], [P2]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F04",
+      "title": "Chronological Omega-Haar directed trace",
+      "source_paths": [
+        "docs/MAIN_XXIV_HANDOFF.md",
+        "docs/MAIN_XXIII_TOOL_ATLAS.md"
+      ],
+      "exact_target": "Chronological Ω-Haar directed trace realizing \\(F_h\\)",
+      "response_construction": "Retain the exact directed trace, six source frames and phase orientation; invoke the Basel comparison only in its stated domain.",
+      "quantifiers": "**TRANSFER/EQ after F03:** exact six-frame construction, its stated starting-index domain and directed phase retained.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER/EQ after F03:** exact six-frame construction, its stated starting-index domain and directed phase retained.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "An unphased norm or an arbitrarily inserted projection is a different quantity. [P2], [OT]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F05",
+      "title": "Weighted Fejer lag response",
+      "source_paths": [
+        "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md"
+      ],
+      "exact_target": "Weighted Fejér lag response \\(R_{B,L,h}\\), defined in §7 below",
+      "response_construction": "Expand the finite Hermitian moving-block square with the actual inverse-square shell weights and zero extension.",
+      "quantifiers": "**EQ as an all-mode family:** for every fixed \\(h\\ne0\\), \\(R_{B,L(B),h}\\to0\\), for any prescribed \\(L(B)\\to\\infty\\), \\(L\\le B\\). IAD-02 removes the schedule choice.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ as an all-mode family:** for every fixed \\(h\\ne0\\), \\(R_{B,L(B),h}\\to0\\), for any prescribed \\(L(B)\\to\\infty\\), \\(L\\le B\\). IAD-02 removes the schedule choice.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "This is not a per-single-mode equivalence; fixed-point mixtures distinguish \\(W(1)\\) from lag mode 15. [IAD]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F06",
+      "title": "Continuous carry innovation",
+      "source_paths": [
+        "research/2026-11-08/chronology_carry/crucible/EXPLICIT_INNOVATION.md"
+      ],
+      "exact_target": "Bounded carry innovation: shell mean of \\(\\Phi_h(\\lfloor U_n\\rfloor,c_{n+1})\\)",
+      "response_construction": "Truncate the uniformly convergent carry-memory series with its geometric tail; preserve literal carry16 and one-transition delay.",
+      "quantifiers": "**EQ:** all fixed \\(h\\ne0\\); comparison to raw Weyl is \\(O_h(\\log B/B)\\). The response is read after one transition.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** all fixed \\(h\\ne0\\); comparison to raw Weyl is \\(O_h(\\log B/B)\\). The response is read after one transition.",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Averaging the *reference* next digit uniformly is not the actual carry law. Literal 16 and the integer lift are retained. [EI]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F07",
+      "title": "Signed carry-arrival bin decoder",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md"
+      ],
+      "exact_target": "Signed carry/arrival bin decoder \\(\\widetilde C_{N,M}(h)\\) in §7",
+      "response_construction": "Combine the certified arrival bin and literal carry phase; retain cross-bin signs and the prescribed midpoint correction.",
+      "quantifiers": "**EQ:** all fixed \\(h\\ne0\\) and any prescribed \\(M_N\\to\\infty\\), using the displayed finite source-error bound.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** all fixed \\(h\\ne0\\) and any prescribed \\(M_N\\to\\infty\\), using the displayed finite source-error bound.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Squaring conditional bins removes cross-bin cancellation and changes the gate. [P1], [SB]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F08",
+      "title": "Deep zero-seed cylinder microscope",
+      "source_paths": [
+        "research/2026-11-10/zero_seed_microscope/MICROSCOPE_THEOREMS.md"
+      ],
+      "exact_target": "Deep zero-seed cylinder energy \\(\\mathcal E_{N,K}(h)=16^K\\int_0^{16^{-K}}\\lvert N^{-1}\\sum_{n<N}e(h16^n(\\pi/16+s))\\rvert^2ds\\)",
+      "response_construction": "Integrate the finite phase square over the actual nested zero-seed cell using its exact sinc coefficients.",
+      "quantifiers": "**EQ:** all fixed \\(h\\ne0\\), \\(K=N-o(N)\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** all fixed \\(h\\ne0\\), \\(K=N-o(N)\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "At \\(K=o(N)\\), it tends to zero for *every* source, including a locked one. [MS]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F09",
+      "title": "Signed zero-child flux telescope",
+      "source_paths": [
+        "research/2026-11-10/zero_seed_microscope/MICROSCOPE_THEOREMS.md"
+      ],
+      "exact_target": "Signed zero-child flux \\(\\sum_{K=0}^{N-1}\\mathcal J_{N,K}(h)\\), where \\(\\mathcal J_{N,K}=\\mathcal E_{N,K+1,0}-\\mathcal E_{N,K}\\)",
+      "response_construction": "Subtract zero-child and parent energies and telescope; do not replace the signed details by their absolute values.",
+      "quantifiers": "**EQ:** the flux tends to zero for all fixed modes, by \\(\\lvert W_N(h)\\rvert^2=N^{-1}+\\sum_K\\mathcal J_{N,K}+O_h(N^{-1})\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** the flux tends to zero for all fixed modes, by \\(\\lvert W_N(h)\\rvert^2=N^{-1}+\\sum_K\\mathcal J_{N,K}+O_h(N^{-1})\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Details are signed, not nonnegative chronological Haar energies; a fixed-depth fingerprint does not bound the growing sum. [MS]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F10",
+      "title": "Reversible source-clock output normality",
+      "source_paths": [
+        "research/2026-11-06/joint_character_entropy/THEOREMS.md"
+      ],
+      "exact_target": "Reversible 112-state clock observer: \\(c_n=(d_n+q_n+\\sigma_n)\\bmod16\\), \\(q_{n+1}=(q_n+3d_n+2\\sigma_n)\\bmod16\\), period-7 \\(\\sigma_n\\)",
+      "response_construction": "Run and invert the declared causal finite-state digit transducer with its period-7 source clock.",
+      "quantifiers": "**EQ:** full block normality of output \\(c\\), not one-symbol balance. The inverse and finite source clock are retained.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** full block normality of output \\(c\\), not one-symbol balance. The inverse and finite source clock are retained.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "An unaccounted normal auxiliary tape can manufacture normal output from constant input. [JC, J13–J16]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F11",
+      "title": "Fixed-radius Clausen energy",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_a/PROOFS.md"
+      ],
+      "exact_target": "Fixed-radius Clausen energy \\(Q_{1/2}(\\nu_B)=\\sum_{h\\ge1}2^{-h}\\lvert W_B(h)\\rvert^2/h\\) and finite causal Clausen cut",
+      "response_construction": "Use positive Fourier weights 2^(-h)/h, truncate with their summable tail, or use the equivalent causal-cut observable.",
+      "quantifiers": "**EQ:** energy \\(\\to0\\); cut differs from its negative by \\(O(B^{-1})\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** energy \\(\\to0\\); cut differs from its negative by \\(O(B^{-1})\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Fixed positive summable weights are a compact encoding of all modes, not a new signed estimate. [FA]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F12",
+      "title": "Golden fixed-aperture characteristic energy",
+      "source_paths": [
+        "research/2026-11-07/golden_aperture_fejer/THEOREMS.md"
+      ],
+      "exact_target": "Golden fixed-aperture energy \\(E_a(\\nu)=\\lVert\\nu*\\nu_a-1\\rVert_2^2\\), \\(a=(\\sqrt5-1)/2\\)",
+      "response_construction": "Evaluate the golden triangular pair kernel or its positive summable sinc-squared Fourier expansion.",
+      "quantifiers": "**EQ:** \\(E_a(\\nu_B)\\to0\\). Its exact pair kernel is \\((b-\\lVert t\\rVert)_+/b-b\\), \\(b=a^2\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** \\(E_a(\\nu_B)\\to0\\). Its exact pair kernel is \\((b-\\lVert t\\rVert)_+/b-b\\), \\(b=a^2\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Irrational aperture gives every nonzero Fourier weight positive. A generic arc-grid bound needs orbit rigidity to imply Haar. [GA]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F13",
+      "title": "Poisson characteristic energy",
+      "source_paths": [
+        "research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md"
+      ],
+      "exact_target": "Poisson energy \\(\\mathcal P_B=\\sum_{h\\ge1}2^{-h}\\lvert W_B(h)\\rvert^2\\)",
+      "response_construction": "Sample independent source times I,J and H with Pr(H=h)=2^(-h); reference click mean is (1-P)/2. Equivalently use (P_(1/2)-1)/2 pair kernel.",
+      "quantifiers": "**EQ:** \\(\\mathcal P_B\\to0\\). Exactly \\(\\mathbb E_{I,J}[(P_{1/2}(Y_I-Y_J)-1)/2]\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** \\(\\mathcal P_B\\to0\\). Exactly \\(\\mathbb E_{I,J}[(P_{1/2}(Y_I-Y_J)-1)/2]\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Already SCE-01 with normalization \\(E_B=1+2\\mathcal P_B\\); the current click packaging must credit that exact predecessor. [SCE]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "exact_inherited_overlap",
+          "source": "research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md",
+          "issue": "SCE-01 uses exactly the r=1/2 Poisson kernel; current energy is (old E-1)/2."
+        }
+      ],
+      "aliases": [
+        "Poisson energy",
+        "SCE-01 kernel energy after affine normalization",
+        "all-mode geometric Fourier energy"
+      ]
+    },
+    {
+      "id": "F14",
+      "title": "Positive and greedy Poisson regret",
+      "source_paths": [
+        "research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md"
+      ],
+      "exact_target": "Positive/greedy Poisson regret: \\(R_N=\\sum_{n<N}[\\Phi_n(z_n)-n]_+\\), \\(Q_N=\\sum_{n<N}[\\Phi_n(z_n)-\\min_z\\Phi_n(z)]\\)",
+      "response_construction": "Recover the Poisson potential on actual preceding source points, then apply positive-part or minimization postprocessing.",
+      "quantifiers": "**EQ:** either is \\(o(N^2)\\), with \\(\\Phi_n(z)=\\sum_{j<n}P_{1/2}(z-z_j)\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** either is \\(o(N^2)\\), with \\(\\Phi_n(z)=\\sum_{j<n}P_{1/2}(z-z_j)\\).",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "SCE-01 corrects older wording that regarded positive regret as asymptotically stronger. [SCE]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "corrected_strength",
+          "source": "research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md",
+          "issue": "SCE-01 proves positive and greedy regret equivalent to Haar; older descriptions as strictly stronger are superseded."
+        }
+      ]
+    },
+    {
+      "id": "F15",
+      "title": "Mesoscopic pair budget",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_c/PROOFS.md"
+      ],
+      "exact_target": "Mesoscopic near-pair budget \\(B_A(t)=A^{-2}\\#\\{(n,m)\\in I_A^2:\\lVert z_n-z_m\\rVert<t\\}\\)",
+      "response_construction": "Count all ordered near pairs including diagonal at each fixed mesoscopic radius; preserve invariant orbit-law hypothesis.",
+      "quantifiers": "**EQ:** there exists finite \\(C\\) and \\(\\delta_j\\downarrow0\\) with \\(\\limsup_A B_A(2\\delta_j)\\le2C\\delta_j\\) for every \\(j\\).",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** there exists finite \\(C\\) and \\(\\delta_j\\downarrow0\\) with \\(\\limsup_A B_A(2\\delta_j)\\le2C\\delta_j\\) for every \\(j\\).",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Includes diagonal; ×16 invariant shell limits are essential. The inherited phrase “fix any C” needs the correction in §10. [FC, C3-1]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "inherited_constant_error",
+          "source": "research/2026-11-05/main_xx_forge/front_c/PROOFS.md",
+          "issue": "C3-1 says fix any C<infinity; Haar needs C>=2 under the displayed B(2delta)<=2Cdelta convention. Use existence of finite C."
+        }
+      ]
+    },
+    {
+      "id": "F16",
+      "title": "One shrinking-scale pair budget",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_c/PROOFS.md"
+      ],
+      "exact_target": "One shrinking-scale pair budget",
+      "response_construction": "Count near pairs at a declared shrinking radius, including diagonal and its scale lower bound.",
+      "quantifiers": "**EQ:** there exist finite \\(C\\) and \\(\\delta_A\\downarrow0\\) with \\(B_A(2\\delta_A)\\le2C\\delta_A\\) eventually.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ:** there exist finite \\(C\\) and \\(\\delta_A\\downarrow0\\) with \\(B_A(2\\delta_A)\\le2C\\delta_A\\) eventually.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Diagonal forces \\(\\delta_A\\ge(2CA)^{-1}\\); a fixed microscopic exclusion radius alone is insufficient. [FC, C3-2]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F17",
+      "title": "Log-scale stationarity and critical-carry uniformity",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_b/PROOFS.md",
+        "research/2026-11-05/main_xx_forge/front_a/PROOFS.md"
+      ],
+      "exact_target": "Critical-carry factorization: log-scale stationarity LS **and** source-lattice uniformity H2*",
+      "response_construction": "Measure both macroscopic-window discrepancy and centered critical carry bits at actual admissible source scales.",
+      "quantifiers": "**EQ jointly:** exact definitions in §7. Each factor separately is weaker.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ jointly:** exact definitions in §7. Each factor separately is weaker.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Nonstationary calibrated same-forcing seeds satisfy the carry family without normality. Actual admissibility must be used. [FB], [FA]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "finite_scope_only",
+          "source": "research/2026-11-05/main_xx_forge/front_b/PROOFS.md",
+          "issue": "Closed-form admissibility checked through d<=200 is not an all-depth theorem; use actual tail admissibility."
+        }
+      ]
+    },
+    {
+      "id": "F18",
+      "title": "Sixteen-child future-projector defect",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "docs/MAIN_XXIV_HANDOFF.md"
+      ],
+      "exact_target": "Sixteen-child future projector defect \\(D(\\nu_B)=W_1(\\nu_B,Q\\nu_B)\\), \\(Q=CT_*\\)",
+      "response_construction": "Construct Q=C T_* preserving the real future, then integrate the absolute signed CDF defect in the fixed interval chart.",
+      "quantifiers": "**EQ on actual completed orbit:** \\(D\\to0\\) is sufficient by the endpoint-paid inequality; normality also gives \\(D\\to0\\) by continuity at Haar.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**EQ on actual completed orbit:** \\(D\\to0\\) is sufficient by the endpoint-paid inequality; normality also gives \\(D\\to0\\) by continuity at Haar.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "\\(Q\\) replaces only the first digit and preserves the genuine future; it is idempotent, not a strict contraction. Interval chart matters. [P0], [P2]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F19",
+      "title": "Fourier-Yoneda observer surfaces",
+      "source_paths": [
+        "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md",
+        "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md"
+      ],
+      "exact_target": "Fourier–Yoneda observation surfaces",
+      "response_construction": "Use the exact inverse appropriate to each of the three separately typed surface conventions; pay boundary/truncation costs.",
+      "quantifiers": "**TRANSFER/EQ in their separate contracts:** #541 Bernoulli \\(B_2\\) inverse \\(\\mu=\\lambda-\\tfrac12D^2F\\); #543 forward first-order inverse; #542 finite two-tone/backward convolution.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER/EQ in their separate contracts:** #541 Bernoulli \\(B_2\\) inverse \\(\\mu=\\lambda-\\tfrac12D^2F\\); #543 forward first-order inverse; #542 finite two-tone/backward convolution.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "#542 and #543 multipliers differ by conjugation; learning/pinning a path does not make it typical. [A21], [A23]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "incompatible_conventions",
+          "source": "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md",
+          "issue": "Three Fourier-Yoneda formalisms have distinct inverse operators and conjugation conventions."
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "title": "R0 anchored anti-locking",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "docs/MAIN_XXV_HANDOFF.md",
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "R0: \\(\\limsup_B\\Re W_B(1)<1\\)",
+      "response_construction": "Use anchored first-mode reference click with positive uniform expected rate; pair differences alone do not identify the anchor.",
+      "quantifiers": "**WEAK:** equivalent to \\(\\delta_0\\notin\\mathcal M\\), positive lower shell density of binary changes, and the corresponding real Basel margin.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** equivalent to \\(\\delta_0\\notin\\mathcal M\\), positive lower shell density of binary changes, and the corresponding real Basel margin.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Pairwise differences are globally phase-blind: fixed orbits 0 and 1/15 have identical pair responses but different R0. [P0], [P3], [LMF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F21",
+      "title": "R1 first-mode modulus margin",
+      "source_paths": [
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "R1: \\(\\limsup_B\\lvert W_B(1)\\rvert<1\\)",
+      "response_construction": "Use independent source-time pair interference to obtain |W(1)|^2 and test a uniform gap below1.",
+      "quantifiers": "**WEAK:** excludes every single ×16 fixed-point mass \\(\\delta_{j/15}\\); R1 implies R0.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** excludes every single ×16 fixed-point mass \\(\\delta_{j/15}\\); R1 implies R0.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "\\(\\xi=1/15\\) satisfies R0 and fails R1. [LMF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F22",
+      "title": "R2 / CH hexadecimal change density",
+      "source_paths": [
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+        "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md"
+      ],
+      "exact_target": "R2 = CH: \\(\\limsup_B\\Re W_B(15)<1\\)",
+      "response_construction": "Use anchored reference character at frequency15, or certified adjacent completed digit changes.",
+      "quantifiers": "**WEAK:** positive lower density of hexadecimal changes; excludes shell limits supported on the fixed-point set.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** positive lower density of hexadecimal changes; excludes shell limits supported on the fixed-point set.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Long alternating runs of digits 1 and 2 satisfy R1 but fail CH. R2 is an alias, not a new rung. [LMF], [CF]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "alias",
+          "source": "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+          "issue": "R2 and CH name the same rung."
+        }
+      ],
+      "aliases": [
+        "R2",
+        "CH",
+        "positive hexadecimal change density"
+      ]
+    },
+    {
+      "id": "F23",
+      "title": "CH_k periodic-change hierarchy",
+      "source_paths": [
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "CH_k: \\(\\limsup_B\\Re W_B(16^k-1)<1\\)",
+      "response_construction": "Use anchored reference character at 16^k-1 for fixed k, or certified lag-k digit changes.",
+      "quantifiers": "**WEAK:** for each specified fixed \\(k\\), positive lower density of \\(d_n\\ne d_{n+k}\\); CH_k implies CH_j when \\(j\\mid k\\).",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** for each specified fixed \\(k\\), positive lower density of \\(d_n\\ne d_{n+k}\\); CH_k implies CH_j when \\(j\\mid k\\).",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Periodic \\(0F\\) satisfies CH and fails CH_2. [LMF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F24",
+      "title": "AM all-mode modulus margin",
+      "source_paths": [
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "AM: \\(\\forall h\\ne0,\\limsup_B\\lvert W_B(h)\\rvert<1\\)",
+      "response_construction": "Maintain all fixed-frequency modulus margins; a finite selected band is insufficient.",
+      "quantifiers": "**WEAK:** equivalent to all CH_k and to excluding every finitely supported shell limit. Margins may depend on fixed \\(h\\).",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** equivalent to all CH_k and to excluding every finitely supported shell limit. Margins may depend on fixed \\(h\\).",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "An infinite atomic periodic-mixture limit can satisfy AM with zero entropy. [LMF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F25",
+      "title": "E positive-entropy shell limits",
+      "source_paths": [
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "E: every \\(\\nu\\in\\mathcal M\\) has positive metric entropy",
+      "response_construction": "Analyze all invariant shell-limit measures and their metric entropies; finite entropy samples alone do not certify this property.",
+      "quantifiers": "**WEAK:** normality implies E implies AM; E is not maximal entropy.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** normality implies E implies AM; E is not maximal entropy.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Fair digits 0/1 interpreted in base16 give entropy \\(\\log2\\), not Haar entropy \\(\\log16\\). [LMF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F26",
+      "title": "Log-scale stationarity alone",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_b/PROOFS.md"
+      ],
+      "exact_target": "LS alone",
+      "response_construction": "Compare CDFs of all declared macroscopic subwindows against the containing shell.",
+      "quantifiers": "**WEAK:** macroscopic subwindows have the same empirical law as the whole shell, uniformly over declared relative lengths.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** macroscopic subwindows have the same empirical law as the whole shell, uniformly over declared relative lengths.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "It must be combined with H2* for normality; arbitrary stationary non-Haar orbit laws are controls. [FB]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F27",
+      "title": "Critical-carry source-lattice uniformity alone",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_b/PROOFS.md"
+      ],
+      "exact_target": "H2* alone",
+      "response_construction": "Compile the centered critical carry bit with source-tail certification; retain fixed k, uniform scale and endpoint exclusion.",
+      "quantifiers": "**WEAK:** all fixed critical-carry gaps \\(k\\), uniform admissible source-lattice scales away from the upper endpoint.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** all fixed critical-carry gaps \\(k\\), uniform admissible source-lattice scales away from the upper endpoint.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Same-forcing nonstationary seeds refute H2* alone implying normality. [FB]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F28",
+      "title": "One-digit parity balance",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "research/2026-11-09/pi_parity_pressure/PROOFS.md"
+      ],
+      "exact_target": "One-digit parity balance \\(\\mathbb E_B(-1)^{d_n}\\to0\\)",
+      "response_construction": "Use certified completed parity indicators; pay the one-step source-clock endpoint correction.",
+      "quantifiers": "**WEAK:** one digit character; source-clock convention \\((-1)^{\\lfloor Y_n\\rfloor}\\) is shifted by one index with error \\(\\le2/B\\).",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK:** one digit character; source-clock convention \\((-1)^{\\lfloor Y_n\\rfloor}\\) is shifted by one index with error \\(\\le2/B\\).",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Uniform parity does not imply all digit modes or parity words. [P0], [PPP]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "index_correction",
+          "source": "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md",
+          "issue": "Source-clock integer-part parity is one index earlier than first completed-digit parity; finite shell correction <=2/B."
+        }
+      ]
+    },
+    {
+      "id": "F29",
+      "title": "Odd-eight smooth Fourier gate",
+      "source_paths": [
+        "research/2026-11-10/main_xxiii/PARITY_BOUNDARY.md",
+        "research/2026-11-10/main_xxiii/PARITY_SCOPE.md"
+      ],
+      "exact_target": "Odd-eight smooth gate \\(W_B(8k)\\to0\\) for every odd integer \\(k\\)",
+      "response_construction": "Compile all odd multiples of frequency8; use the inherited boundary recursion before concluding parity-word fairness.",
+      "quantifiers": "**WEAK/SUFF:** sufficient for every fixed parity word; strictly weaker than full normality and stronger than parity-word fairness alone.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**WEAK/SUFF:** sufficient for every fixed parity word; strictly weaker than full normality and stronger than parity-word fairness alone.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Jump/boundary control is part of the proof. \\(e(8t)\\) alone is not digit parity. [PB], [PS]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F30",
+      "title": "Prime-complement two-fiber contrast",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "research/2026-11-09/aphex_two_fiber_haar/PROOFS.md",
+        "research/2026-11-09/pi_parity_pressure/PROOFS.md"
+      ],
+      "exact_target": "Two-fiber/Aphex complement contrast \\(\\beta_B^*=(u_+-u_-)/2\\)",
+      "response_construction": "Retain actual prime-sign fibers, full complementary sign and their masses; compute conditional means with explicit denominator costs.",
+      "quantifiers": "**Conditional equivalence to parity**, if imported prime marginal \\(m_B=\\mathbb E a\\to0\\): \\(\\mathbb E(ab)=\\beta_B^*+m_B(u_++u_-)/2\\).",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**Conditional equivalence to parity**, if imported prime marginal \\(m_B=\\mathbb E a\\to0\\): \\(\\mathbb E(ab)=\\beta_B^*+m_B(u_++u_-)/2\\).",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Both fibers must be populated; full complement includes old prime powers, winding and tail. A perfectly fitted counterseed has \\(\\beta^*=1\\). [P0], [TFH], [PPP]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F31",
+      "title": "Restricted irrationality and saving-exponent law",
+      "source_paths": [
+        "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+        "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "Restricted irrationality exponent / saving–exponent law",
+      "response_construction": "Use authenticated rational approximation and digit-run inequalities; this is an arithmetic consequence, not an interference inversion.",
+      "quantifiers": "**NEC:** a fixed real Fourier saving forces a restricted radix exponent below 1, with the stated quantitative law.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**NEC:** a fixed real Fourier saving forces a restricted radix exponent below 1, with the stated quantitative law.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Exponent 0 examples can still fail R0, R1 or CH; Diophantine separation alone is insufficient. [RDT], [CF], [LMF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F32",
+      "title": "Green-tail seam density",
+      "source_paths": [
+        "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md"
+      ],
+      "exact_target": "Tail seam density \\(B^{-1}\\sum_{I_B}\\mathbf1[\\{Y_n\\}<T_n]\\to0\\) (“Target A”)",
+      "response_construction": "Certify the discontinuous Green-tail seam event at each source time before counting it.",
+      "quantifiers": "**SEPARATE from the weak savings:** normality supplies boundary decay, but seam-free behavior and CH/exponent savings do not imply each other in the control class.",
+      "logical_relation": "NECESSARY",
+      "logical_relation_explanation": "**SEPARATE from the weak savings:** normality supplies boundary decay, but seam-free behavior and CH/exponent savings do not imply each other in the control class.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "ZSC-05 W1/W2/W3 controls; W3 has CH and positive seam density. [CF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F33",
+      "title": "Logarithmic signed loss and dose amplification",
+      "source_paths": [
+        "research/2026-10-27/GLOBAL_BRANCH_COERCIVITY.md",
+        "research/2026-11-15/pi_carrier_collision/THEOREMS.md"
+      ],
+      "exact_target": "Proven GB12 logarithmic reinforcement loss and dose amplification",
+      "response_construction": "Apply inherited GB12 to actual source reference clicks; amplify with independent repeated queries and explicit dose.",
+      "quantifiers": "**PROVED weak source separation:** for fixed \\(h\\), large uncomputed-onset \\(m\\), \\(\\lvert\\sum_{m<n\\le8m}e(hU_n)\\rvert<7m-1/14\\); reference-click hit probability \\(>1/(196m)\\).",
+      "logical_relation": "AUXILIARY",
+      "logical_relation_explanation": "**PROVED weak source separation:** for fixed \\(h\\), large uncomputed-onset \\(m\\), \\(\\lvert\\sum_{m<n\\le8m}e(hU_n)\\rvert<7m-1/14\\); reference-click hit probability \\(>1/(196m)\\).",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Inherited logarithmic loss is proved within its imports; its universal onset is not numerically extracted. A uniform per-query margin or sublinear signed bound remains open.",
+      "controls": [
+        "\\(M=\\lceil196m\\log m\\rceil\\) repetitions amplify a finite hit; vanishing per-query margin is not R0. No explicit universal onset was extracted. [GB], [PC]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F34",
+      "title": "Log(16/15) intermediate source rungs",
+      "source_paths": [
+        "docs/MAIN_XXV_HANDOFF.md",
+        "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md"
+      ],
+      "exact_target": "R0/CH for \\(\\xi_*=\\log(16/15)\\), a proper zero-seeded member of V",
+      "response_construction": "Supply the different zero-seeded source for log(16/15), then apply the same fixed-mode reference responses.",
+      "quantifiers": "**SEPARATE intermediate source:** same definitions as F20/F22 applied to \\(\\xi_*\\), not π. Imported restricted bound removes one obstruction, not the medium-scale estimate.",
+      "logical_relation": "SEPARATE",
+      "logical_relation_explanation": "**SEPARATE intermediate source:** same definitions as F20/F22 applied to \\(\\xi_*\\), not π. Imported restricted bound removes one obstruction, not the medium-scale estimate.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Supply the separate source/model/arithmetic theorem and any proved transport to the pi frontier; no automatic pi implication is claimed.",
+      "controls": [
+        "A theorem for one period in V does not prove π's theorem. [P3], [RDT]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F35",
+      "title": "Restricted approximants and effectivity tasks",
+      "source_paths": [
+        "docs/MAIN_XXV_HANDOFF.md",
+        "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md"
+      ],
+      "exact_target": "Approximation and effectivity tasks: \\(A_n\\pi-B_n\\), prescribed \\(v_2(A_n)-v_2(B_n)\\), RDT starting indices, \\(\\Lambda(1,16,1)\\) enclosure, Baker source check",
+      "response_construction": "Construct the specified rational approximants/import certificates and effective constants before any numerical response is claimed.",
+      "quantifiers": "**SEPARATE arithmetic/effectivity obligations**, not automatically finite phase-grammar responses.",
+      "logical_relation": "SEPARATE",
+      "logical_relation_explanation": "**SEPARATE arithmetic/effectivity obligations**, not automatically finite phase-grammar responses.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Supply the separate source/model/arithmetic theorem and any proved transport to the pi frontier; no automatic pi implication is claimed.",
+      "controls": [
+        "The defining approximants/imports must be supplied before an experiment is claimed. [P3], [RDT]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F36",
+      "title": "Internal matrix purity",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-10-25/OPERATION_SPECTRAL_PURITY.md",
+        "research/2026-10-25/SPECTRAL_PURITY_INNOVATION.md"
+      ],
+      "exact_target": "IMW matrix purity \\(D_{N,H}=\\operatorname{tr}(A_{N,H}^2)-H=2\\sum_{j=1}^{H-1}(H-j)\\lvert S_N^U(j)/N\\rvert^2\\)",
+      "response_construction": "Form the finite source Gram matrix or equivalent nonnegative weighted Fourier energy; retain prescribed width.",
+      "quantifiers": "**SUFF** at prescribed \\(H_N\\to\\infty\\) with \\(D/H_N\\to0\\); **EQ** only for existence of an arbitrarily slow schedule.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF** at prescribed \\(H_N\\to\\infty\\) with \\(D/H_N\\to0\\); **EQ** only for existence of an arbitrarily slow schedule.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Positive Gram matrix alone supplies no bound; moving source twists obstruct uniform operator convergence. [P1], [OSP]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "quantifier_distinction",
+          "source": "docs/PI_FRONTIER_CONTRACT.md",
+          "issue": "Existence of an arbitrarily slow purity window is equivalent; a prescribed window remains sufficient only."
+        }
+      ]
+    },
+    {
+      "id": "F37",
+      "title": "Conductor-flat signed innovation",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-10-25/OPERATION_SPECTRAL_PURITY.md",
+        "research/2026-10-25/SPECTRAL_PURITY_INNOVATION.md"
+      ],
+      "exact_target": "OSP conductor-flat innovation \\(\\frac2{N^2H_N}\\sum_{m<N:Q_{m+1}=Q_m}m(q_{m,H_N}-H_N)\\)",
+      "response_construction": "Compute q_(m,H)=m^(-1) sum_(j<=m)|sum_(k=0)^(H-1)e(k(U_(m+1)-U_j))|^2 and select exactly the conductor-flat times.",
+      "quantifiers": "**SUFF:** limsup \\(\\le0\\), with \\(H_N=\\max(2,1+\\lfloor\\sqrt{\\lfloor\\log_2N\\rfloor}\\rfloor)\\). Birth contribution is already bounded.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** limsup \\(\\le0\\), with \\(H_N=\\max(2,1+\\lfloor\\sqrt{\\lfloor\\log_2N\\rfloor}\\rfloor)\\). Birth contribution is already bounded.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Selected innovation need not be bounded by its cyclotomic trace. \\(Q_n\\) is monotone forcing conductor, not final reduced denominator. [P1], [OSP]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F38",
+      "title": "Conductor-birth-censored profile purity",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-10-25/PI_SELECTED_PHASE_FORGE.md"
+      ],
+      "exact_target": "PSF conductor-birth-censored carry-profile purity",
+      "response_construction": "Delete only declared conductor-birth carries from the bounded infinite profile, retaining its tail and spectral transport budget.",
+      "quantifiers": "**SUFF** at prescribed \\(H\\asymp(\\log N)^{3/2}\\); generally source transfer needs \\(\\sqrt H\\log H=o(\\log N)\\).",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF** at prescribed \\(H\\asymp(\\log N)^{3/2}\\); generally source transfer needs \\(\\sqrt H\\log H=o(\\log N)\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Censored profile is a declared observable, not an independent source; all future boundary costs remain. [P1], [PSF]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F39",
+      "title": "Critical Fejer collision energy",
+      "source_paths": [
+        "research/2026-11-06/epoch_critical_transfer/THEOREMS.md"
+      ],
+      "exact_target": "Critical Fejér energy \\(C^x_{A,A}=\\sum_{\\lvert h\\rvert\\le A}(1-\\lvert h\\rvert/(A+1))\\lvert c_A^x(h)\\rvert^2\\)",
+      "response_construction": "Compile the finite Fejer weighted Fourier square at H=A and use separately proved frequency-ray rigidity.",
+      "quantifiers": "**SUFF:** \\(o(\\log A)\\) on every A or relative-gap-dense checkpoints. Uses proved ×16 frequency-ray rigidity.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(o(\\log A)\\) on every A or relative-gap-dense checkpoints. Uses proved ×16 frequency-ray rigidity.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Uniformly bounded finite samples do not prove the limit; a fixed finite Fejér kernel is not characteristic. [ET]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F40",
+      "title": "All-radius source anticlustering",
+      "source_paths": [
+        "research/2026-11-06/epoch_critical_transfer/THEOREMS.md",
+        "research/2026-11-07/golden_aperture_fejer/THEOREMS.md"
+      ],
+      "exact_target": "All-radius anticlustering \\(\\#\\{(n,m):\\lVert x_n-x_m\\rVert\\le\\delta\\}\\le A+KA^2\\delta\\)",
+      "response_construction": "Certify every real-radius source pair count; a finite mesh is useful only with a rigorous interpolation envelope.",
+      "quantifiers": "**SUFF:** one finite K, every radius and all large actual source shells.",
+      "logical_relation": "STRICTLY_STRONGER",
+      "logical_relation_explanation": "**SUFF:** one finite K, every radius and all large actual source shells.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Nongeneric grids on an arc can satisfy K=3 and remain non-Haar; source orbit rigidity is indispensable. [ET], [GA]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F41",
+      "title": "Prescribed polylogarithmic Fourier band",
+      "source_paths": [
+        "research/2026-11-03/selected_current_front/PROOFS.md",
+        "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md"
+      ],
+      "exact_target": "Polylog Fourier band \\(\\sum_{1\\le\\lvert h\\rvert\\le q_A^2}\\lvert c_A(h)\\rvert^2=o(K_A)\\)",
+      "response_construction": "Compile all Fourier squares through the prescribed q_A^2 cutoff; no converse from a tent energy is assumed.",
+      "quantifiers": "**SUFF:** \\(K_A=\\lfloor\\log_{16}\\log A\\rfloor\\), \\(m_A=16^{K_A}\\), \\(q_A=m_A/2\\).",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(K_A=\\lfloor\\log_{16}\\log A\\rfloor\\), \\(m_A=16^{K_A}\\), \\(q_A=m_A/2\\).",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Band ⇒ tent J ⇒ canonical E; converse J ⇒ band is false. [SC], [A21]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F42",
+      "title": "Translated-origin tent energy",
+      "source_paths": [
+        "research/2026-11-03/selected_current_front/PROOFS.md"
+      ],
+      "exact_target": "Common-origin tent energy \\(J_{A,q}=qA^{-2}\\sum_{n,t}(1-q\\lVert x_n-x_t\\rVert)_+\\)",
+      "response_construction": "Use the common-origin tent pair kernel or a Fourier truncation with the explicit O(q^2/H) tail.",
+      "quantifiers": "**SUFF:** \\(J_{A,m_A/2}=o(K_A)\\). Exact Fourier weights are sinc-squared.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(J_{A,m_A/2}=o(K_A)\\). Exact Fourier weights are sinc-squared.",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Translate the bin origin jointly for all points; independently translating each point changes the source statistic. [SC]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F43",
+      "title": "Prescribed canonical cylinder energy",
+      "source_paths": [
+        "research/2026-11-03/selected_current_front/PROOFS.md",
+        "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md"
+      ],
+      "exact_target": "Canonical cylinder energy \\(E_{A,m}=m\\sum_jp_j^2\\) at \\(m=m_A\\)",
+      "response_construction": "Certify canonical source cell labels, count their squared masses and apply the inherited source-to-completed transfer.",
+      "quantifiers": "**SUFF:** \\(E=o(\\log m)\\) on its inherited horizon schedule.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(E=o(\\log m)\\) on its inherited horizon schedule.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Diagonal sample floor and canonical bin boundaries must be paid; this E includes baseline 1, unlike LWE/TDH E. [SC], [A21]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F44",
+      "title": "Unit-child successor Haar energy",
+      "source_paths": [
+        "research/2026-11-09/tenacious_d_haar/PROOFS.md"
+      ],
+      "exact_target": "Signed unit-child successor energy \\(J_j=16^{j+1}\\sum_{w,a}[p_{j+1}(wa)-p_{j+1}(w,a-1)]^2\\)",
+      "response_construction": "Reconstruct all adjacent child-cell signed differences in the declared oriented word space, then form their squared sum.",
+      "quantifiers": "**SUFF:** \\(j(N)\\to\\infty\\), \\(16^{j(N)}/N\\to0\\), \\(J_{j(N)}\\to0\\).",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(j(N)\\to\\infty\\), \\(16^{j(N)}/N\\to0\\), \\(J_{j(N)}\\to0\\).",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Child-label successor is not chronological successor; endpoint cost \\(4\\cdot16^j/N\\). [TDH]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F45",
+      "title": "Lambert-depth collision entropy",
+      "source_paths": [
+        "research/2026-11-08/lambert_entropy_forge/THEOREMS.md"
+      ],
+      "exact_target": "Lambert-depth collision deficit \\(\\log(1+E_{k_W(N)}(N))\\), \\(E_k=16^k\\sum_wp_w^2-1\\)",
+      "response_construction": "Compute cyclic depth-k word collision counts then logarithmic entropy postprocessing at the Lambert design depth.",
+      "quantifiers": "**SUFF, strictly stronger:** \\(o(\\log N)\\), all N or checkpoints with ratio tending to1; \\(k_W=\\log_{16}N-\\log_{16}\\log N+O(1)\\).",
+      "logical_relation": "STRICTLY_STRONGER",
+      "logical_relation_explanation": "**SUFF, strictly stronger:** \\(o(\\log N)\\), all N or checkpoints with ratio tending to1; \\(k_W=\\log_{16}N-\\log_{16}\\log N+O(1)\\).",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "A normal word with sparse large zero clumps fails this prescribed-scale gate; the iid coupon law is only a clock design. [LWE]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "strict_strength",
+          "source": "research/2026-11-08/lambert_entropy_forge/THEOREMS.md",
+          "issue": "Normal-but-spiky source proves prescribed Lambert-depth condition is not necessary."
+        }
+      ]
+    },
+    {
+      "id": "F46",
+      "title": "Trimmed joint collision entropy",
+      "source_paths": [
+        "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+        "research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md",
+        "research/2026-11-08/lambert_entropy_forge/THEOREMS.md"
+      ],
+      "exact_target": "Trimmed joint collision/entropy \\(C_G=16^d\\sum_wq_G(w)^2\\)",
+      "response_construction": "Record retained original starts and their real/carry-safe cell labels, compute collision, and apply full-window entropy with trimming budget.",
+      "quantifiers": "**SUFF:** \\(d\\to\\infty\\), vanishing removed fraction, \\(\\log C_G=o(d)\\), all horizons/dense coverage; arbitrary slow source-adapted depth gives an equivalence.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(d\\to\\infty\\), vanishing removed fraction, \\(\\log C_G=o(d)\\), all horizons/dense coverage; arbitrary slow source-adapted depth gives an equivalence.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "The retained subset need not be stationary; apply entropy to the full original window. Source-to-completed cell transport costs factor2. [TJ], [SCE], [LWE]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F47",
+      "title": "Growing output entropy deficit J20",
+      "source_paths": [
+        "research/2026-11-06/joint_character_entropy/THEOREMS.md"
+      ],
+      "exact_target": "J20 reversible-output growing entropy deficit",
+      "response_construction": "Read the reversible observer output on the actual segment; compute all-block entropy deficit with clock/state/endpoint budgets.",
+      "quantifiers": "**SUFF:** \\(k\\mid L\\), \\(k\\to\\infty\\), \\(k/L\\to0\\), \\(kL/A\\to0\\), and \\((k/L)\\Delta_C(L)\\to0\\).",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(k\\mid L\\), \\(k\\to\\infty\\), \\(k/L\\to0\\), \\(kL/A\\to0\\), and \\((k/L)\\Delta_C(L)\\to0\\).",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Full source/state budget \\(\\log112\\) and endpoint entropy terms remain; depths above \\(\\log_{16}A\\) meet a sample-count obstruction. [JC]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F48",
+      "title": "Conditional branch and arrival energies",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md"
+      ],
+      "exact_target": "Conditional branch energies, arrival energies and parity variance",
+      "response_construction": "Use exact joint branch/arrival records and conditional finite-character means; parity variance is one specified component.",
+      "quantifiers": "**SUFF for their stated branch/parity gate:** use \\(M_N=o(N^2)\\) for arrival transport; prescribed parity \\(M\\asymp\\log N\\).",
+      "logical_relation": "AUXILIARY",
+      "logical_relation_explanation": "**SUFF for their stated branch/parity gate:** use \\(M_N=o(N^2)\\) for arrival transport; prescribed parity \\(M\\asymp\\log N\\).",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "At \\(M\\ge Q_N\\), exact conditioning gives energy1 and defect15. Full-clock conditioning cannot mix. [P1], [SB]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F49",
+      "title": "Selected real prime-window collision",
+      "source_paths": [
+        "research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md"
+      ],
+      "exact_target": "Selected real prime-window collision \\(K_p(1)\\)",
+      "response_construction": "Count selected real small-ball collisions on the prescribed good-prime windows; retain the carry-safe depth and coverage argument.",
+      "quantifiers": "**SUFF:** \\(K_p(1)=p^{o(1)}\\) on every large good \\(p=8u+1\\), \\(\\operatorname{ord}_p16>\\sqrt p/\\log p\\), at fixed depth \\(\\lfloor(2/5)\\log_{16}p\\rfloor\\).",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(K_p(1)=p^{o(1)}\\) on every large good \\(p=8u+1\\), \\(\\operatorname{ord}_p16>\\sqrt p/\\log p\\), at fixed depth \\(\\lfloor(2/5)\\log_{16}p\\rfloor\\).",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Selected real cells, not dyadic residues or Galois averages; good-prime relative density and carry transport are part of the proof. [SCE]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F50",
+      "title": "Selected prime-complement cancellation",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-11-09/pi_parity_pressure/PROOFS.md"
+      ],
+      "exact_target": "Selected prime/complement sum \\(\\sum_{t\\in W_p}e(4h16^t/p)e(hw_t)\\)",
+      "response_construction": "Compile the selected local prime character multiplied by its actual full complementary source phase.",
+      "quantifiers": "**Arithmetic gate only:** stated local power saving and its exceptional-prime/coverage hypotheses; no unconditional local-to-global normality implication.",
+      "logical_relation": "AUXILIARY",
+      "logical_relation_explanation": "**Arithmetic gate only:** stated local power saving and its exceptional-prime/coverage hypotheses; no unconditional local-to-global normality implication.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Dropping \\(w_t\\), old prime powers or winding replaces the target. Local Haar alone is paid, joining is not. [P1 Route D], [PPP]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F51",
+      "title": "Harmonic Fejer mixture",
+      "source_paths": [
+        "research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md"
+      ],
+      "exact_target": "Harmonic Fejér mixture \\(N^{-1}\\sum_{k<K_N}w_{K_N,k}\\lvert W_{k,N}(h)\\rvert\\)",
+      "response_construction": "Use the valid positive mixture of finite moving-block squares, its harmonic weights and the separately paid forcing error.",
+      "quantifiers": "**SUFF:** tends to0 for every fixed nonzero h; exact weights/cutoff in §7.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** tends to0 for every fixed nonzero h; exact weights/cutoff in §7.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Naive signed \\(1/k\\) lag kernel is negative at K4, angleπ. Correct positive mixture still requires signed source saving. [HM]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F52",
+      "title": "Sparse mesoscopic van der Corput gate",
+      "source_paths": [
+        "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md"
+      ],
+      "exact_target": "Sparse/mesoscopic van der Corput lags",
+      "response_construction": "For every fixed nonzero integer h, compile c_d^U(B;h)=B^(-1) sum_(n=B)^(2B-1-d) e(h(U_(n+d)-U_n)) at d=j ceil((2+delta_h)log_16 B). The inherited O_h(B^(-2)) comparison is uniform in d. Do not replace the two-time phase by an uncompensated growing-mode raw phase.",
+      "quantifiers": "**SUFF for full normality:** for every fixed nonzero integer h, there is \\(\\delta_h>0\\) such that every fixed integer \\(j\\ge1\\) has \\(\\limsup_B\\Re c^U_{j\\ell_0(B)}(B;h)\\le0\\), where \\(\\ell_0(B)=\\lceil(2+\\delta_h)\\log_{16}B\\rceil\\); B runs through all integers.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF for full normality:** for every fixed nonzero integer h, there is \\(\\delta_h>0\\) such that every fixed integer \\(j\\ge1\\) has \\(\\limsup_B\\Re c^U_{j\\ell_0(B)}(B;h)\\le0\\), where \\(\\ell_0(B)=\\lceil(2+\\delta_h)\\log_{16}B\\rceil\\); B runs through all integers.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "The response is the raw two-time lag, equivalent here to the completed lag by uniform \\(O_h(B^{-2})\\) transport. One narrow lag band supports only a small differencing set; untwisted innovation cancellation alone is seed-blind. [IAD-06]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F53",
+      "title": "Conditional innovation-history gate",
+      "source_paths": [
+        "research/2026-11-11/innovation_arithmetic_decoupling/THEOREMS.md"
+      ],
+      "exact_target": "Conditional innovation/history decoupling",
+      "response_construction": "Compute conditional character means under the declared empirical filtration and pay history-approximation error.",
+      "quantifiers": "**TRANSFER / unpaid conditional gate:** if history phase is approximated in a filtration, conditional innovation norm equals conditional completed lag norm up to the declared error.",
+      "logical_relation": "AUXILIARY",
+      "logical_relation_explanation": "**TRANSFER / unpaid conditional gate:** if history phase is approximated in a filtration, conditional innovation norm equals conditional completed lag norm up to the declared error.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Calling this “decoupling” does not remove the original phase estimate. Full chronology conditioning has modulus1. [IAD-05]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F54",
+      "title": "Real return-fiber energy",
+      "source_paths": [
+        "research/2026-11-06/fejer_gamma_split/THEOREMS.md"
+      ],
+      "exact_target": "Return-fiber energy \\(R_{Q,M}(h)=Q^{-1}\\sum_{a<Q}\\lvert M^{-1}\\sum_{t<M}e(hU_{a+tQ})\\rvert^2\\)",
+      "response_construction": "Keep the same residue label in a phase and its conjugate; exact finite DFT reconstructs every clock-twist channel.",
+      "quantifiers": "**SUFF** if it vanishes for every fixed nonzero mode on all integer horizons N=QM, or checkpoints with consecutive ratio tending to1; a prescribed growing Q can be stronger than normality.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF** if it vanishes for every fixed nonzero mode on all integer horizons N=QM, or checkpoints with consecutive ratio tending to1; a prescribed growing Q can be stronger than normality.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Fixed-N refinement increases R to1; shared fiber label must be glued, not independently redrawn. [FG]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F55",
+      "title": "Golden spatial and dyadic-time fiber energy",
+      "source_paths": [
+        "research/2026-11-07/golden_aperture_fejer/THEOREMS.md"
+      ],
+      "exact_target": "Golden spatial × dyadic-time fiber energy \\(G_{Q,M}^{gold}=Q^{-1}\\sum_a E_a(\\mu_a)\\)",
+      "response_construction": "Average the golden characteristic energy within actual dyadic time fibers, retaining the between-fiber term.",
+      "quantifiers": "**SUFF:** \\(G\\to0\\) on all integer horizons or checkpoints with consecutive ratio tending to1. \\(G=E_a(\\mu)+\\text{between-fiber variance}\\).",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**SUFF:** \\(G\\to0\\) on all integer horizons or checkpoints with consecutive ratio tending to1. \\(G=E_a(\\mu)+\\text{between-fiber variance}\\).",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "It is monotone nondecreasing under fixed-N refinement. Q=N gives the locked-point energy, not a contraction. [GA-05]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F56",
+      "title": "Gaussian-angle source pullback",
+      "source_paths": [
+        "research/2026-11-10/gaussian_circle_long_lag/THEOREMS.md"
+      ],
+      "exact_target": "Gaussian-angle source pullback",
+      "response_construction": "Provide a proved source-to-Gaussian map with alignment and bounded multiplicity; complete disk statistics alone do not implement the source response.",
+      "quantifiers": "**Conditional SUFF:** a map from actual BBP times to a full Gaussian disk with phase error \\(\\le c/q\\), multiplicity \\(\\le BA/M_R\\), uniform c,B and suitable growing q.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "**Conditional SUFF:** a map from actual BBP times to a full Gaussian disk with phase error \\(\\le c/q\\), multiplicity \\(\\le BA/M_R\\), uniform c,B and suitable growing q.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Complete disk/primitive-direction equidistribution is a different source; the alignment map is not established. [GC-06]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F57",
+      "title": "Fekete and stronger microscopic budgets",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_c/PROOFS.md"
+      ],
+      "exact_target": "Fekete energy and stronger microscopic pair budgets",
+      "response_construction": "Evaluate the declared logarithmic distance energy or microscopic budgets, with collision singularities and diagonal convention explicit.",
+      "quantifiers": "**SUFF, not necessary:** the inherited Fekete lower-energy premise or all-scale bounds.",
+      "logical_relation": "STRICTLY_STRONGER",
+      "logical_relation_explanation": "**SUFF, not necessary:** the inherited Fekete lower-energy premise or all-scale bounds.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Sparse near-repeats can preserve normality while violating these strong budgets. Pure microscopic exclusion is too weak. [FC]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F58",
+      "title": "Four-bit Walsh interaction",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+      ],
+      "exact_target": "Four-bit Walsh/factorial cells: \\(16Z-Q_0=\\sum_{\\varnothing\\ne A\\subseteq\\{1,2,3,4\\}}M_A\\)",
+      "response_construction": "Use finite Walsh character inversion on all 16 actual bit cells, including the highest interaction.",
+      "quantifiers": "**TRANSFER:** complete finite-character inversion. A selected highest-order saving is an additional arithmetic obligation, not implied by proper marginals.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER:** complete finite-character inversion. A selected highest-order saving is an additional arithmetic obligation, not implied by proper marginals.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Uniform even-parity law has all proper marginals uniform but nonzero top interaction. [P1 Route C], [TJ]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F59",
+      "title": "Joint conditional collision chain",
+      "source_paths": [
+        "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+      ],
+      "exact_target": "Joint conditioned collision chain \\(\\log C_d=\\sum_{k<d}\\log[1+\\mathbb E_{\\xi_k}\\chi^2(q_v\\Vert u)]\\)",
+      "response_construction": "Recover the full finite joint law, then compute collision-weighted conditional chi-square defects or a correlated-reference decoder.",
+      "quantifiers": "**TRANSFER:** prefix weights are proportional to squared actual mass; correlated reference version also retained.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER:** prefix weights are proportional to squared actual mass; correlated reference version also retained.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Product-of-marginals substitution misses parity/base5 triple constraints. A decoder needs its exact reference pushforward. [TJ]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F60",
+      "title": "Deterministic-lag character resonance",
+      "source_paths": [
+        "research/2026-10-27/BBP_ECHO_DELAY_TRANSPORT.md",
+        "docs/PI_NORMALITY_FRONTIER.md"
+      ],
+      "exact_target": "Finite deterministic-lag characters \\(e(\\sum_j a_jY_{n+j})\\)",
+      "response_construction": "Reduce the finite lag polynomial P(X) modulo X-16. Zero evaluation is a resonant constant channel with Haar response1.",
+      "quantifiers": "**TRANSFER:** equals \\(e(P(16)Y_n)\\), \\(P(X)=\\sum_ja_jX^j\\). Haar benchmark is \\(\\mathbf1_{P(16)=0}\\), not product-Haar over lag coordinates.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER:** equals \\(e(P(16)Y_n)\\), \\(P(X)=\\sum_ja_jX^j\\). Haar benchmark is \\(\\mathbf1_{P(16)=0}\\), not product-Haar over lag coordinates.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "\\((Y_n,Y_{n+1})\\) lies on the graph \\(y=16x\\); character \\((-16,1)\\) is identically1 even under normality. See `TRANSLATION_NOTES.md`."
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "benchmark_guard",
+          "source": "research/2026-10-27/BBP_ECHO_DELAY_TRANSPORT.md",
+          "issue": "Deterministic lag coordinates have graph-Haar benchmark delta_(P(16)=0), not product-Haar."
+        }
+      ]
+    },
+    {
+      "id": "F61",
+      "title": "Retained source-clock random probe frame",
+      "source_paths": [
+        "research/2026-11-15/pi_carrier_collision/THEOREMS.md"
+      ],
+      "exact_target": "Retained source-clock echo \\(e((h-16K)U_n+KU_{n+1})=e(hU_n+Kr(n+1))\\)",
+      "response_construction": "Use exact source recurrence to preserve h U_n while applying the randomized r(n+1) label; retain frame calibration and sampling costs.",
+      "quantifiers": "**TRANSFER:** calibrated random probe frames with known node gaps, conditioning and sampling law.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER:** calibrated random probe frames with known node gaps, conditioning and sampling law.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Independent rows, whitening, resource growth and inverse noise cost matter. This does not force the phase vector mean to vanish. [PC]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F62",
+      "title": "Referenced frame R0 residual",
+      "source_paths": [
+        "research/2026-11-15/pi_carrier_collision/THEOREMS.md"
+      ],
+      "exact_target": "Referenced frame residual \\(\\mathbb E_K\\lvert F_c(K)-F_1(K)\\rvert^2\\)",
+      "response_construction": "Subtract the retained reference amplitude before squaring, and use the B-normalized uniformly conditioned frame bounds.",
+      "quantifiers": "**Conditional EQ to R0:** the across-B frame condition needs a uniform \\(\\eta\\le\\eta_*<1\\), fixed h1 and the B-dependent normalization.",
+      "logical_relation": "EQUIVALENT",
+      "logical_relation_explanation": "**Conditional EQ to R0:** the across-B frame condition needs a uniform \\(\\eta\\le\\eta_*<1\\), fixed h1 and the B-dependent normalization.",
+      "implementation_scope": "direct finite response",
+      "unpaid_obligation": "Prove a uniform source-anchored residual lower bound under uniform frame conditioning; calibration by itself does not establish R0.",
+      "controls": [
+        "A pairwise magnitude-only frame without reference has global-phase gauge and cannot recover R0. [PC-06]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "uniform_condition_guard",
+          "source": "research/2026-11-15/pi_carrier_collision/THEOREMS.md",
+          "issue": "Across-B R0 equivalence requires eta<=eta_*<1, not merely eta_B<1 separately."
+        }
+      ]
+    },
+    {
+      "id": "F63",
+      "title": "Gamma clock rotation and compensation",
+      "source_paths": [
+        "research/2026-11-15/pi_carrier_collision/THEOREMS.md"
+      ],
+      "exact_target": "Gamma clock rotation / recorded compensation",
+      "response_construction": "Keep the independent clock label for exact phase compensation; inversion after averaging is a separate noisy channel.",
+      "quantifiers": "**TRANSFER/SEPARATE randomization:** conditional multipliers, exact recorded-clock compensation and inverse averaged-channel noise budgets are distinct.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER/SEPARATE randomization:** conditional multipliers, exact recorded-clock compensation and inverse averaged-channel noise budgets are distinct.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "A forgotten independent clock can make a locked source look Haar; imported randomness is not π cancellation. [PC], donor #642 HD07"
+      ],
+      "superseded_or_error_flags": [],
+      "external_donor_urls": [
+        "https://github.com/femboy2112/SUCC/blob/89c6f645938c3f1e4f002f5e81411f458db1689c/research/2026-11-14/pi_resonant_interferometer/THEOREMS.md"
+      ]
+    },
+    {
+      "id": "F64",
+      "title": "Intrinsic source Haar and Markov Gamma leakage",
+      "source_paths": [
+        "research/2026-11-15/observer_haar_causal_volume/THEOREMS.md"
+      ],
+      "exact_target": "Intrinsic Oily/source-\\(x\\) Haar variance, reversible Markov Gamma leakage",
+      "response_construction": "Use the declared intrinsic source measure/partition or finite reversible generator; do not identify its sample law with pi chronology.",
+      "quantifiers": "**SEPARATE source/partition theorem:** authentic continuous source measure can have a Haar variance decomposition; a declared finite reversible generator has Gram leakage identities.",
+      "logical_relation": "SEPARATE",
+      "logical_relation_explanation": "**SEPARATE source/partition theorem:** authentic continuous source measure can have a Haar variance decomposition; a declared finite reversible generator has Gram leakage identities.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Supply the separate source/model/arithmetic theorem and any proved transport to the pi frontier; no automatic pi implication is claimed.",
+      "controls": [
+        "Neither source coordinate x nor a chosen Markov generator is the temporal π phase law. Nonreversibility can reverse the defect sign. [AH]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F65",
+      "title": "Coarse microscope and fixed-depth fingerprints",
+      "source_paths": [
+        "research/2026-11-10/zero_seed_microscope/MICROSCOPE_THEOREMS.md"
+      ],
+      "exact_target": "Seed-cylinder coarse energy and fixed-depth signed fingerprints",
+      "response_construction": "Evaluate the fixed-depth sinc coefficients and geometric tails; coarse limits and signed fixed packets have explicitly limited scope.",
+      "quantifiers": "**TRANSFER / proved finite-scale information:** fixed K asymptotic and signed first h8 packet; no deep-scale bound.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER / proved finite-scale information:** fixed K asymptotic and signed first h8 packet; no deep-scale bound.",
+      "implementation_scope": "limit with certified truncation",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Universal coarse decay and positive \\(N^{-2}\\) packet do not imply digit parity or normality. [MS]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F66",
+      "title": "Chronological CDF overlap and word junctions",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "research/2026-11-09/tenacious_d_haar/PROOFS.md",
+        "research/2026-11-15/observer_haar_causal_volume/THEOREMS.md"
+      ],
+      "exact_target": "CDF chronological opposite-sign overlap \\(\\Omega\\), high/low word junctions and conditional Haar",
+      "response_construction": "Recover the signed CDF/edge-current data in its declared coordinate and apply exact polarization; contraction requires additional arithmetic bounds.",
+      "quantifiers": "**TRANSFER; SUFF after new bounds:** exact telescopes and finite constants, with full future and endpoint terms.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER; SUFF after new bounds:** exact telescopes and finite constants, with full future and endpoint terms.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "No automatic statistical contraction; child successor, chronological successor and source revelation are distinct. [P0], [TDH], [AH]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F67",
+      "title": "Finite source authentication and adaptive evidence",
+      "source_paths": [
+        "research/2026-11-14/source_auth_field_frontier/THEOREMS.md"
+      ],
+      "exact_target": "Finite source authentication / observational equivalence / adaptive evidence",
+      "response_construction": "Supply a source class, joint transition-observation law, predictable policy, transcript and resource budget; test only claims identified by those data.",
+      "quantifiers": "**TRANSFER:** only within a declared source class, policy, likelihood, transcript and resource contract.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER:** only within a declared source class, policy, likelihood, transcript and resource contract.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Equal all-word output laws defeat all transcript-only policies; matching finite observations never universally authenticates an unrestricted source. [FSA]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F68",
+      "title": "Cayley Scott-Omega and affine observer architecture",
+      "source_paths": [
+        "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md",
+        "docs/MAIN_XXIII_TOOL_ATLAS.md"
+      ],
+      "exact_target": "Cayley/source-clock/Scott–Ω/affine observer architecture",
+      "response_construction": "Apply only repaired guarded coordinate/semantic maps with source labels; no unproved compiler or cofinality theorem is inferred.",
+      "quantifiers": "**TRANSFER in repaired domains:** source-attached coordinate maps and guarded finite semantic identities.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER in repaired domains:** source-attached coordinate maps and guarded finite semantic identities.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Historical capture-unsafe reductions, invented redex addresses and finite-prefix cofinality claims are withdrawn; full faithful C-monoid/source compilation remains unverified. [A23], [OT]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "withdrawn_claims",
+          "source": "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md",
+          "issue": "Capture-unsafe lambda reductions, invented redex addresses and finite-prefix cofinality certification were withdrawn."
+        }
+      ]
+    },
+    {
+      "id": "F69",
+      "title": "Prime dyadic Pascal Lucas and Galois quotients",
+      "source_paths": [
+        "docs/PI_GEARBOX_ATLAS.md",
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "docs/archive/PI_NORMALITY_FRONTIER_MAIN_XXI_2026-11-09.md"
+      ],
+      "exact_target": "Prime/2-adic/Pascal/Lucas/Galois quotient Haar and moving-frequency losses",
+      "response_construction": "Evaluate each exact quotient in its own metric and period domain; retain winding/clock data when returning to real phases.",
+      "quantifiers": "**TRANSFER / own-domain estimates:** exact quotient laws, selected weak losses and clock naturality.",
+      "logical_relation": "OBSERVER_ONLY",
+      "logical_relation_explanation": "**TRANSFER / own-domain estimates:** exact quotient laws, selected weak losses and clock naturality.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "No decay follows from reconstruction/transport alone. A source-specific estimate or additional authenticated input must be supplied before a statistical conclusion.",
+      "controls": [
+        "Spatial Haar, denominator growth, Galois Haar and seed-blind moving bands do not prove real temporal Haar. [G], [P1], [A21]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F70",
+      "title": "Mixed arithmetic-label and angular-radial responses",
+      "source_paths": [
+        "research/2026-11-05/main_xx_forge/front_c/PROOFS.md"
+      ],
+      "exact_target": "Mixed arithmetic-label / angular-radial correlations",
+      "response_construction": "Preserve the arithmetic label and its correct Haar baseline; BV labels reduce by partial summation, non-BV labels require new arithmetic control.",
+      "quantifiers": "**TRANSFER or SEPARATE:** bounded-variation labels reduce exactly to original prefix sums; non-BV prime labels can be independent of normality in both directions.",
+      "logical_relation": "AUXILIARY",
+      "logical_relation_explanation": "**TRANSFER or SEPARATE:** bounded-variation labels reduce exactly to original prefix sums; non-BV prime labels can be independent of normality in both directions.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the stated source-selected asymptotic estimate with all displayed quantifiers; the finite response identity does not establish decay.",
+      "controls": [
+        "Correct Haar baseline need not be zero for carry-coupled functions; reflection changes orientation without changing normality. [FC]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F71",
+      "title": "Other bases and mixed-base joining",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "docs/PI_GEARBOX_ATLAS.md"
+      ],
+      "exact_target": "Other bases and mixed-base joining",
+      "response_construction": "Specify the actual additional-base dynamics and joint sample law; base16 phase response does not supply another-base marginal or joining.",
+      "quantifiers": "**SEPARATE:** base16 implies multiplicatively dependent powers of2; base3/base10/base11/10 and product joining need independent theorems.",
+      "logical_relation": "SEPARATE",
+      "logical_relation_explanation": "**SEPARATE:** base16 implies multiplicatively dependent powers of2; base3/base10/base11/10 and product joining need independent theorems.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Supply the separate source/model/arithmetic theorem and any proved transport to the pi frontier; no automatic pi implication is claimed.",
+      "controls": [
+        "Correct marginals do not prove product Haar. [P1 Route E], [G]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F72",
+      "title": "Completed Weil RH and prime/Goldbach programs",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "docs/PI_FRONTIER_CONTRACT.md",
+        "docs/MAIN_XXV_HANDOFF.md",
+        "research/2026-11-14/gauge_frontier_bridge/THEOREMS.md"
+      ],
+      "exact_target": "Completed Weil/Li/RH, prime fixed points and Goldbach",
+      "response_construction": "Provide the completed functional or arithmetic predicate and full universal domain; finite phase compilation does not transfer a pi theorem.",
+      "quantifiers": "**SEPARATE:** authentic completed form on its full legal test domain, or independently valid equivalent arithmetic predicates.",
+      "logical_relation": "SEPARATE",
+      "logical_relation_explanation": "**SEPARATE:** authentic completed form on its full legal test domain, or independently valid equivalent arithmetic predicates.",
+      "implementation_scope": "outside grammar",
+      "unpaid_obligation": "Supply the separate source/model/arithmetic theorem and any proved transport to the pi frontier; no automatic pi implication is claimed.",
+      "controls": [
+        "A positive Hilbert surrogate, finite jets, finite positive compressions, or finite Goldbach checks do not settle the universal statement. [P0 §8], [P1 Route F], [P3], [GFT]"
+      ],
+      "superseded_or_error_flags": []
+    },
+    {
+      "id": "F73",
+      "title": "Positive shell and prefix defect thresholds for weaker rungs",
+      "source_paths": [
+        "docs/PI_NORMALITY_FRONTIER.md",
+        "research/2026-11-12/frontier_rungs/LIMIT_FACES.md"
+      ],
+      "exact_target": "Positive defect thresholds: shell \\(\\limsup_B D(\\nu_B)<1/4\\Rightarrow R1\\), \\(<1/60\\Rightarrow CH\\), \\(<1/[4(16^k-1)]\\Rightarrow CH_k\\); the same shell thresholds hold for \\(W_1(\\nu_B,\\lambda)\\). Prefix \\(\\limsup_ND_N<15/256\\Rightarrow R1\\), \\(<1/256\\Rightarrow CH\\).",
+      "response_construction": "Use the fixed interval chart [0,1] to compute D(nu)=W1(nu,Qnu), with Q preserving the future, or shell W1(nu,lambda). Compare their all-large-horizon limsups with the stated strict thresholds; for prefixes use D_N=D(mu_N). Certified finite CDF postprocessing does not certify the asymptotic limsup.",
+      "quantifiers": "**SUFF explicitly for the specified weaker rung, not full normality.** Interval cost on [0,1], \\(D(\\nu)=W_1(\\nu,Q\\nu)\\), \\(D_N=D(\\mu_N)\\); every fixed integer \\(k\\ge1\\), all integer shells/prefixes, and a strict eventual margin.",
+      "logical_relation": "SUFFICIENT",
+      "logical_relation_explanation": "Sufficient only for the named weaker target R1, CH or CH_k, not for full normality. Shell D or W1 thresholds are 1/4, 1/60, 1/[4(16^k-1)] respectively. Prefix D_N thresholds are 15/256 for R1 and 1/256 for CH. Every relevant integer horizon and a strict margin are required.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Prove the corresponding original-zero-source all-large-shell or all-large-prefix strict defect bound. No such bound follows from the threshold theorem, finite subthreshold observations or response compilation.",
+      "controls": [
+        "Finitely many subthreshold shells do not establish a limsup. The lift 1 at the interval endpoint matters. The coherent control has D=15/32; W3 satisfies CH far above its sufficient threshold. Only the shell constants 1/4 and 1/60 are asserted sharp here. [P0 §9], [LMF-04/05]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "superseded_thresholds",
+          "source": "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+          "issue": "Use current LMF-04/05 constants. The provisional shell W1 threshold4/225 is refuted. Provisional prefix constants were replaced by the proved sufficient constants; prefix orbit sharpness is not established."
+        },
+        {
+          "kind": "weaker_target_scope",
+          "source": "docs/PI_NORMALITY_FRONTIER.md",
+          "issue": "SUFFICIENT refers to R1/CH/CH_k, not full normality; finite threshold crossings do not certify a limsup."
+        }
+      ]
+    },
+    {
+      "id": "F74",
+      "title": "Route C selected top four-bit interaction saving",
+      "source_paths": [
+        "docs/PI_FRONTIER_CONTRACT.md"
+      ],
+      "exact_target": "Route C selected highest-order interaction: prove a nontrivial/power-saving bound for \\(M_{\\{1,2,3,4\\}}\\) over the original source window in \\(16Z-Q_0=\\sum_{A\\ne\\varnothing}M_A\\), with the four-pole Fourier jet at the recorded branch point.",
+      "response_construction": "Retain the joint source-selected four-bit character/jet and the recorded branch point. Once its actual source window and normalization are specified, compile the signed top interaction using complete Walsh data. Keep this open estimate distinct from the exact F58 inversion.",
+      "quantifiers": "**AUXILIARY / conditional arithmetic target; OPEN.** The canonical contract does not specify a unique window growth, rate exponent or normalization sufficient to define a quantitative asymptotic claim. Those must be supplied; no automatic full-normality implication is asserted.",
+      "logical_relation": "AUXILIARY",
+      "logical_relation_explanation": "An open selected highest-interaction estimate. The canonical contract requests a nontrivial/power-saving bound but leaves numerical rate and window normalization underspecified. No automatic normality implication is assigned.",
+      "implementation_scope": "conditional",
+      "unpaid_obligation": "Specify the source-window family, normalization, rate exponent and uniformity before proving a nontrivial bound for M_{1,2,3,4}. Further transfers and all-word/all-horizon quantifiers would be needed for a normality conclusion.",
+      "controls": [
+        "F58 is the finite Walsh identity, not this estimate. Uniform even-parity data have every proper marginal uniform and a biased full interaction. A bound at one event/window does not supply all-word/all-horizon equidistribution. [P1 Route C]"
+      ],
+      "superseded_or_error_flags": [
+        {
+          "kind": "underspecified_target",
+          "source": "docs/PI_FRONTIER_CONTRACT.md",
+          "issue": "Route C states a selected top-interaction power-saving ambition without a complete quantitative rate/window normalization. The finite identity alone does not resolve that missing contract."
+        }
+      ],
+      "related_ids": [
+        "F58"
+      ]
+    }
+  ]
+}

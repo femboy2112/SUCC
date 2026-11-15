@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "scripts/verify_provenance.py"
+  ],
+  "environment": {
+    "PYTHONPATH": "."
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 0.043
+}

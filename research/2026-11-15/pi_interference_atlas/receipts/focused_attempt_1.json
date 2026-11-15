@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "tests_executed": 0,
+  "cause": "unittest discover with explicit top_level_dir=. rejected the namespace tests directory as not importable before running tests.",
+  "correction": "Load the named tests modules directly; do not change the tests namespace or production code."
+}
