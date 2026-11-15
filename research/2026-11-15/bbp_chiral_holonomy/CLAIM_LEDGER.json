@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-15",
+  "scope": "Original four-pole zero seeded SUCC BBP, finite 2-adic return-clock operators, real circle phase measurements",
+  "statuses": [
+    {"id":"CH01","claim":"J mod16 = 7+4(++--)","status":"PROVED PAPER FINITE","requires":"n>=k+1, k>=1, original unreduced source","controls":"SymPy coefficientwise mod16, exact q=16,256"},
+    {"id":"CH02","claim":"T2 M=-M T2; central commutator -I","status":"PROVED PAPER FINITE","requires":"4-state source-clock representation","controls":"exact integral Pauli/clock basis"},
+    {"id":"CH03","claim":"mod32 source lift yields two-step commutator ±i by time parity","status":"PROVED PAPER FINITE","requires":"n>=k+2, original rational forcing","controls":"SymPy coefficientwise mod32 and divided Taylor coefficient; exact q=16,256"},
+    {"id":"CH04","claim":"(+,+,-,-) four-tap temporal Haar and complete 4-channel Walsh inversion","status":"CLASSICAL EXACT","requires":"source carrier time labels and separately retained DC","controls":"exact channel reconstruction, coherent counterfeit"},
+    {"id":"CH05","claim":"two-time and four-time complex collision reconstruct real Weyl modes","status":"PROVED PAPER IDENTITY","requires":"literal real BBP completion, original jet, fixed lag k","controls":"finite original source smoke, wrong seed and rational period"},
+    {"id":"CH06","claim":"all-mode four-time decay iff base16 normality; positive single-mode margin sufficient R0","status":"CLASSICAL EQUIVALENCE/CONDITIONAL SUFFICIENT","requires":"fixed k, all frequencies for normality or uniform all-shell energy bound for R0","controls":"Wall normality theorem and elementary cos inequality; hypotheses not proved"},
+    {"id":"CH07","claim":"zero-anchored 2-adically isometric coboundary mutant commutes rather than anticommutes","status":"PROVED FINITE COUNTERMODEL","requires":"mutant is not the original BBP forcing; backward zero anchor conditional on BC-0","controls":"exact telescoping, 2-adic valuations, mutant q-jet"},
+    {"id":"OPEN01","claim":"derive original-source all-shell signed spectral saving or R0 from four-pole cofactor/winding","status":"OPEN","requires":"authentic zero source, temporal sign and real circle odd-CRT correlation","controls":"full source passport, coherent counterseed, mutation, independent holdout"}
+  ],
+  "physics": "No physical quantum realization, Higgs boson, or energy scale in joules established"
+}

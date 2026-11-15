@@ -1,0 +1,9 @@
+numerator P: 120*t**2 - 89*t + 16
+denominator D: 512*t**4 - 1024*t**3 + 712*t**2 - 206*t + 21
+d/dt r(t) numerator: -122880*t**5 + 259584*t**4 - 215040*t**3 + 87800*t**2 - 17744*t + 1427
+for each residue t=4u+j the polynomial L-cD² has all coefficients divisible by 16
+residue class 0 r' mod16 11 polynomial degree 8 mod16 coefficients [0, 0, 0, 0, 0, 0, 0, 0, 0]
+residue class 1 r' mod16 11 polynomial degree 8 mod16 coefficients [0, 0, 0, 0, 0, 0, 0, 0, 0]
+residue class 2 r' mod16 3 polynomial degree 8 mod16 coefficients [0, 0, 0, 0, 0, 0, 0, 0, 0]
+residue class 3 r' mod16 3 polynomial degree 8 mod16 coefficients [0, 0, 0, 0, 0, 0, 0, 0, 0]
+SOURCE algebra and four modular polynomial certificates PASS

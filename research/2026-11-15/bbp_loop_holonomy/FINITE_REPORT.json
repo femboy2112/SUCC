@@ -1,0 +1,85 @@
+{
+  "mutation_control": {
+    "mutant_does_not_preserve_original_loop": true,
+    "mutated_return_after_16_mod16": 7,
+    "original_return_after_16_mod16": 0,
+    "pole_changed": "4/(8n-7) to 3/(8n-7)"
+  },
+  "normality_status": "OPEN",
+  "original_source_sha256_of_r1_through_r32": "f1bb02b8c1bc134b83f52912b73ab5e4104e694e268e3fd18fc7aecd235fb981",
+  "original_zero_seed": true,
+  "phase_floor_decimal_annotation": "0.13505554119129",
+  "phase_floor_symbolic": "4*sin(pi/17)^2",
+  "scope": "Finite source-certified BBP return-loop/2-adic jet; no infinite real normality assertion",
+  "source_scope": "Authenticated four-pole rational BBP forcing, not a digit fixture",
+  "tested_source_loops": [
+    {
+      "beats_universal_1_over_17": true,
+      "carrier_mod_q_returns": true,
+      "circle_distance_lower_decimal_annotation": "0.071747163343",
+      "circle_distance_lower_exact": "81508847717632381929769861472600290228187311183659936312228852798132437753488977931739559737770081456703516529029/1136056729217147703088532620051195239284714801943793404641227169869662155202586429464630621295601594531157167308800",
+      "jet_is_nonzero_unit": true,
+      "jet_mod16": 3,
+      "k": 1,
+      "n": 2,
+      "odd_crt_passports": [
+        {
+          "crt_exact_reconstruction": true,
+          "crt_integer_winding": 2,
+          "n": 2,
+          "odd_denominator_bits": 12,
+          "odd_prime_factors": 4,
+          "source_full_rational_sha256": "c026795c632f9f955a0a30cdf111948e047dfd6798a923d4605d5c5223ffe40e",
+          "source_integer_winding_decimal_digits": 2
+        },
+        {
+          "crt_exact_reconstruction": true,
+          "crt_integer_winding": 14,
+          "n": 18,
+          "odd_denominator_bits": 151,
+          "odd_prime_factors": 26,
+          "source_full_rational_sha256": "69fc71751d6c0f47044ae37472b2c51f07cdf26a12d578c8142435ede0e48084",
+          "source_integer_winding_decimal_digits": 21
+        }
+      ],
+      "original_green_difference_interval_width_exact": "161263960713/15393471584519114292042056317743923200",
+      "phase_chord_energy_lower_decimal_annotation": "0.199802945968",
+      "q": 16,
+      "source_sign_sector": "omega^3"
+    },
+    {
+      "beats_universal_1_over_17": true,
+      "carrier_mod_q_returns": true,
+      "circle_distance_lower_decimal_annotation": "0.099916185936",
+      "circle_distance_lower_exact": "18630003587718444985654229467646707883602716284556397280427269567757740785075962892082080451003685901978121075919098281956538446388975710369286239778398895942048700919183240241527984037239173726149201683675427384702470227246345027750520640429310706241602785789796145506441500999303237823977955057076094567730191908818089566530093632902011053020802052738134340243749225503975084611122827004671612811688086006925002994831205855494781809161072908789805978191288069866369013148137908813719739842384308534719096606260739229159813392605983468747308212854590506928320436673008551143869935749459686517730924109385356912928276101154000645360918665227323146993839700577414278353390054703310403864004873061273024436428644400012155631088111547482983/186456312489342267334713992539161759759522764287443617269386141346282785223188827639977087201823501985821330592326142818188383038731742122407067873095096608922389303926599541501067887554238130850647609063516787830356759660217803511439714749156124825850955383556354659586327655420993710099995792135780947415841806898622876167979223072267615993206035642134817537024977637430412934564728148493144926158294553925300074932084929017390805135434250968013895963250164371502979284846430927114580654508628719024031204622028832395928949165298534159543039052724772175220415326084899624359923292449994894276735117453142201991518841600009964100714374307203770745735901242777280487128658225785606408270106534957228915000349783870524357359408429137920000",
+      "jet_is_nonzero_unit": true,
+      "jet_mod16": 3,
+      "k": 2,
+      "n": 3,
+      "odd_crt_passports": [
+        {
+          "crt_exact_reconstruction": true,
+          "crt_integer_winding": 2,
+          "n": 3,
+          "odd_denominator_bits": 20,
+          "odd_prime_factors": 6,
+          "source_full_rational_sha256": "47934bf8c363e4e15c8eb2cc139bb6f3db7892c312d11c0e37ab21fb9602bbe6",
+          "source_integer_winding_decimal_digits": 3
+        },
+        {
+          "crt_exact_reconstruction": true,
+          "crt_integer_winding": 127,
+          "n": 259,
+          "odd_denominator_bits": 2209,
+          "odd_prime_factors": 240,
+          "source_full_rational_sha256": "583b18910860342145422d1c496ed8edd59b1ab2754c42e170b35acad56aeb81",
+          "source_integer_winding_decimal_digits": 312
+        }
+      ],
+      "original_green_difference_interval_width_exact": "4762619027044093/653416738815149278179600745378721090764800",
+      "phase_chord_energy_lower_decimal_annotation": "0.381347157534",
+      "q": 256,
+      "source_sign_sector": "omega^3"
+    }
+  ]
+}
