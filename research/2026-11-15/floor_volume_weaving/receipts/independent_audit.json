@@ -1,0 +1,588 @@
+{
+  "status": "EXACT_FINITE_AUDIT_PASSED",
+  "arithmetic": "Python integers and fractions.Fraction",
+  "production_imports": false,
+  "normality_proved": false,
+  "positive_carry_lower_density_proved": false,
+  "assertions": 19014,
+  "categories": {
+    "aligned_probe_hits_gate": 1,
+    "all_symmetric_laws_invariant": 80,
+    "authentic_aligned_gate": 512,
+    "authentic_clock_transport": 512,
+    "authentic_selected_event": 512,
+    "beta_product_moments": 1675,
+    "bilinear_clock_cofactor": 16,
+    "branch_valuations": 517,
+    "carry_aligned_decomposition": 16,
+    "carry_grade_sign": 513,
+    "clock_only_locked_control_gate_mass": 1,
+    "clock_only_locked_control_maximum_cdf_polynomial": 4,
+    "clock_only_locked_control_uniform_x_polynomial": 4,
+    "complex_rotation_imag": 125,
+    "complex_rotation_real": 125,
+    "dependence_mutation_rejected": 1,
+    "exact_laplace_tail": 276,
+    "five_beta_source": 517,
+    "floor_defect_control": 1,
+    "floor_shift_mutation_rejected": 276,
+    "gate_laplace": 276,
+    "group_returns_to_carrier": 517,
+    "half_dyadic_cancellation": 517,
+    "independent_carry_recurrence": 512,
+    "inherited_carry_receipt_hash": 1,
+    "inherited_receipt_length": 1,
+    "maximum_law": 325,
+    "nested_floor": 2052,
+    "nonpositive_density_mutation_rejected": 1,
+    "observed_shell_identity": 7,
+    "ordered_response": 5,
+    "orthogonal_control_misses_gate": 1,
+    "phase_laplace": 276,
+    "pole_mutation_rejected": 517,
+    "positive_branches": 517,
+    "positive_joint_law": 20,
+    "quadratic_addition": 4225,
+    "quadratic_period": 513,
+    "root_floor_layercake": 512,
+    "same_squared_response": 5,
+    "sharp_max_bound_attained": 1,
+    "sharp_max_bound_cdf": 3,
+    "sharp_max_bound_columns": 1,
+    "sharp_max_bound_rows": 1,
+    "sharp_uniform_copula_gate_mass": 1,
+    "sharp_uniform_copula_maximum_cdf_polynomial": 4,
+    "sharp_uniform_copula_uniform_x_polynomial": 4,
+    "sharp_uniform_copula_uniform_y_polynomial": 4,
+    "sharp_upper_uniform_copula_gate_mass": 1,
+    "sharp_upper_uniform_copula_maximum_cdf_polynomial": 4,
+    "sharp_upper_uniform_copula_uniform_x_polynomial": 4,
+    "sharp_upper_uniform_copula_uniform_y_polynomial": 4,
+    "signed_boundary_flux": 420,
+    "signed_carry_mean": 5,
+    "signed_gate_defect": 1,
+    "slope_residue": 513,
+    "source_clock": 517,
+    "source_three_count_bound": 7,
+    "sqrt_floor_closed_form": 64,
+    "squarewave_laplace": 276,
+    "temporal_period_four": 125,
+    "three_count_mutation_rejected": 1,
+    "three_count_pointwise_certificate": 16,
+    "uniform_column": 20,
+    "uniform_row": 20,
+    "walsh_bits": 513
+  },
+  "ordered_controls": {
+    "W": [
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "G": [
+      [
+        0,
+        -2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        -2,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        -2
+      ],
+      [
+        -2,
+        0,
+        2,
+        0
+      ]
+    ],
+    "controls": [
+      {
+        "epsilon": "-1/2",
+        "carry_mean": "1/2",
+        "selected_probability": "1/4",
+        "ordered_response": "-1",
+        "squared_response": "2"
+      },
+      {
+        "epsilon": "-1/4",
+        "carry_mean": "1/4",
+        "selected_probability": "3/8",
+        "ordered_response": "-1/2",
+        "squared_response": "2"
+      },
+      {
+        "epsilon": "0",
+        "carry_mean": "0",
+        "selected_probability": "1/2",
+        "ordered_response": "0",
+        "squared_response": "2"
+      },
+      {
+        "epsilon": "1/4",
+        "carry_mean": "-1/4",
+        "selected_probability": "5/8",
+        "ordered_response": "1/2",
+        "squared_response": "2"
+      },
+      {
+        "epsilon": "1/2",
+        "carry_mean": "-1/2",
+        "selected_probability": "3/4",
+        "ordered_response": "1",
+        "squared_response": "2"
+      }
+    ],
+    "sharp_coarse_maximum_control": {
+      "integer_table": [
+        [
+          1,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          0,
+          1
+        ]
+      ],
+      "denominator": 16,
+      "selected_probability": "1/16"
+    }
+  },
+  "continuous_controls": {
+    "sharp_uniform_copula": {
+      "quarter_masses": [
+        [
+          "1/16",
+          "3/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "1/16",
+          "0",
+          "3/16"
+        ],
+        [
+          "3/16",
+          "0",
+          "0",
+          "1/16"
+        ]
+      ],
+      "cofactor_marginal": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "selected_probability": "1/16",
+      "full_maximum_cdf": "r^2, 0<=r<=1"
+    },
+    "clock_only_locked_control": {
+      "quarter_masses": [
+        [
+          "1/16",
+          "3/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "3/16"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "cofactor_marginal": [
+        "5/16",
+        "3/16",
+        "5/16",
+        "3/16"
+      ],
+      "selected_probability": "0",
+      "full_maximum_cdf": "r^2, 0<=r<=1"
+    },
+    "sharp_upper_uniform_copula": {
+      "quarter_masses": [
+        [
+          "1/16",
+          "0",
+          "1/16",
+          "1/8"
+        ],
+        [
+          "3/16",
+          "0",
+          "0",
+          "1/16"
+        ],
+        [
+          "0",
+          "1/4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "3/16",
+          "1/16"
+        ]
+      ],
+      "cofactor_marginal": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "selected_probability": "7/8",
+      "full_maximum_cdf": "r^2, 0<=r<=1"
+    }
+  },
+  "authentic_observations": {
+    "scope": "New decomposition of inherited finite certificates; not new digits or a holdout",
+    "parent_commit": "fec5cdda24ca36328e123b0b367a0628491e1eb8",
+    "inherited_residue_sha256": "63337cca1230d967fc9a8d0897be1983cd88e1910a52821915a3bcaf4f81958e",
+    "rational_recurrence_crosscheck": 512,
+    "shells": [
+      {
+        "start": 256,
+        "length": 256,
+        "H_mean": "1/32",
+        "F_mean": "3/32",
+        "selected_count": 132,
+        "selected_fraction": "33/64",
+        "joint_counts": [
+          [
+            13,
+            15,
+            15,
+            21
+          ],
+          [
+            15,
+            18,
+            14,
+            17
+          ],
+          [
+            17,
+            15,
+            13,
+            19
+          ],
+          [
+            8,
+            15,
+            17,
+            24
+          ]
+        ],
+        "max_cdf_at_quarter": "13/256",
+        "max_cdf_at_half": "61/256",
+        "cofactor_quarter_one": "63/256",
+        "three_count_lower_bound": "15/256",
+        "three_count_absolute_error_budget": "7/256"
+      },
+      {
+        "start": 512,
+        "length": 512,
+        "H_mean": "-1/64",
+        "F_mean": "-5/128",
+        "selected_count": 253,
+        "selected_fraction": "253/512",
+        "joint_counts": [
+          [
+            35,
+            26,
+            28,
+            39
+          ],
+          [
+            29,
+            33,
+            35,
+            31
+          ],
+          [
+            44,
+            26,
+            31,
+            27
+          ],
+          [
+            40,
+            32,
+            24,
+            32
+          ]
+        ],
+        "max_cdf_at_quarter": "35/512",
+        "max_cdf_at_half": "123/512",
+        "cofactor_quarter_one": "117/512",
+        "three_count_lower_bound": "29/512",
+        "three_count_absolute_error_budget": "19/512"
+      },
+      {
+        "start": 1024,
+        "length": 1024,
+        "H_mean": "-5/256",
+        "F_mean": "-1/32",
+        "selected_count": 509,
+        "selected_fraction": "509/1024",
+        "joint_counts": [
+          [
+            61,
+            70,
+            65,
+            60
+          ],
+          [
+            67,
+            71,
+            70,
+            48
+          ],
+          [
+            68,
+            72,
+            55,
+            61
+          ],
+          [
+            71,
+            72,
+            57,
+            56
+          ]
+        ],
+        "max_cdf_at_quarter": "61/1024",
+        "max_cdf_at_half": "269/1024",
+        "cofactor_quarter_one": "285/1024",
+        "three_count_lower_bound": "77/1024",
+        "three_count_absolute_error_budget": "45/1024"
+      },
+      {
+        "start": 2048,
+        "length": 2048,
+        "H_mean": "-15/256",
+        "F_mean": "1/128",
+        "selected_count": 1058,
+        "selected_fraction": "529/1024",
+        "joint_counts": [
+          [
+            114,
+            127,
+            140,
+            131
+          ],
+          [
+            133,
+            115,
+            122,
+            142
+          ],
+          [
+            132,
+            132,
+            121,
+            127
+          ],
+          [
+            131,
+            129,
+            119,
+            133
+          ]
+        ],
+        "max_cdf_at_quarter": "57/1024",
+        "max_cdf_at_half": "489/2048",
+        "cofactor_quarter_one": "503/2048",
+        "three_count_lower_bound": "1/16",
+        "three_count_absolute_error_budget": "23/1024"
+      },
+      {
+        "start": 4096,
+        "length": 4096,
+        "H_mean": "-37/1024",
+        "F_mean": "-1/512",
+        "selected_count": 2083,
+        "selected_fraction": "2083/4096",
+        "joint_counts": [
+          [
+            246,
+            277,
+            260,
+            241
+          ],
+          [
+            252,
+            272,
+            231,
+            269
+          ],
+          [
+            269,
+            262,
+            241,
+            252
+          ],
+          [
+            264,
+            265,
+            265,
+            230
+          ]
+        ],
+        "max_cdf_at_quarter": "123/2048",
+        "max_cdf_at_half": "1047/4096",
+        "cofactor_quarter_one": "269/1024",
+        "three_count_lower_bound": "275/4096",
+        "three_count_absolute_error_budget": "85/4096"
+      },
+      {
+        "start": 8192,
+        "length": 8192,
+        "H_mean": "45/4096",
+        "F_mean": "-53/4096",
+        "selected_count": 4047,
+        "selected_fraction": "4047/8192",
+        "joint_counts": [
+          [
+            519,
+            540,
+            501,
+            488
+          ],
+          [
+            517,
+            537,
+            507,
+            487
+          ],
+          [
+            503,
+            489,
+            510,
+            546
+          ],
+          [
+            494,
+            522,
+            540,
+            492
+          ]
+        ],
+        "max_cdf_at_quarter": "519/8192",
+        "max_cdf_at_half": "2113/8192",
+        "cofactor_quarter_one": "261/1024",
+        "three_count_lower_bound": "247/4096",
+        "three_count_absolute_error_budget": "7/512"
+      },
+      {
+        "start": 16384,
+        "length": 16384,
+        "H_mean": "3/1024",
+        "F_mean": "-1/2048",
+        "selected_count": 8178,
+        "selected_fraction": "4089/8192",
+        "joint_counts": [
+          [
+            1008,
+            1061,
+            980,
+            1047
+          ],
+          [
+            1025,
+            1036,
+            1008,
+            1027
+          ],
+          [
+            1024,
+            1019,
+            1033,
+            1020
+          ],
+          [
+            1032,
+            1030,
+            1026,
+            1008
+          ]
+        ],
+        "max_cdf_at_quarter": "63/1024",
+        "max_cdf_at_half": "2065/8192",
+        "cofactor_quarter_one": "2073/8192",
+        "three_count_lower_bound": "1/16",
+        "three_count_absolute_error_budget": "25/4096"
+      }
+    ]
+  }
+}

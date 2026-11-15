@@ -405,3 +405,20 @@ law and violating the carry gate. Thus the next signed estimate must retain
 the literal four-pole arithmetic and the zero-selected real cofactor together.
 The dossier includes an exact 32,768-index source probe and records the complete
 carry-Haar normality equivalence separately from this single sufficient gate.
+
+## 2026-11-15 follow-up: floor volumes and a sharp maximum-law certificate
+
+The [floor-volume weaving dossier](../research/2026-11-15/floor_volume_weaving/README.md)
+proves the exact finite inequality `d >= P(K=1)+P(J=K=0)-P(J<2,K<2)` for
+the selected difference-residue gate. Uniform marginals and the square-root
+maximum law imply `d>=1/16`, sharply even for continuous joint densities.
+The literal source coordinates are `J_n=n mod4` and `K_n=[{U_n}]_4`, with
+dyadic rational reduction. An eventual positive lower bound on those three
+empirical masses would prove the current anti-lock target; it remains open.
+
+The dossier also connects the slope sign `11,11,3,3` to Walsh/quadratic/Clifford
+forms, gives a calibrated ordered Haar rotation model, and derives the actual
+carry mask's `sech`/Gamma/Dirichlet-beta transform. These exact constructions
+do not identify an auxiliary sampling law with the authentic BBP trajectory.
+Explicit controls retain the entire maximum law while isolating the cofactor
+marginal needed for the positive bound. No new asymptotic pi estimate is claimed.

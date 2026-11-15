@@ -1,0 +1,38 @@
+{
+  "status": "ALL_REQUIRED_LOCAL_GATES_PASSED",
+  "parent_commit": "fec5cdda24ca36328e123b0b367a0628491e1eb8",
+  "python": "3.12.14",
+  "full_suite": {
+    "command": "PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'",
+    "exit_code": 0,
+    "tests": 13545,
+    "seconds": 1043.803,
+    "result": "OK"
+  },
+  "required_probes": [
+    {
+      "command": "PYTHONPATH=. python scripts/verify_provenance.py",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONPATH=. python scripts/observer_foundations_probe.py",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONPATH=. python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0
+    }
+  ],
+  "exact_audit": {
+    "command": "python research/2026-11-15/floor_volume_weaving/independent_audit.py",
+    "exit_code": 0,
+    "assertions": 19014,
+    "production_imports": false
+  },
+  "hosted_ci_claimed": false,
+  "external_referee_claimed": false,
+  "kernel_checked_proof_claimed": false,
+  "source_anti_lock_proved": false,
+  "pi_normality_proved": false,
+  "receipt_parser": "Final successful unittest summary; earlier nested subprocess summaries are preserved in raw log."
+}
