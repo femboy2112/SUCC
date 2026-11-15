@@ -141,6 +141,34 @@ z_n=\left\{\frac{b_n}{d_n}+T_n\right\}\in\mathbb R/\mathbb Z,\quad q=16^k.}\tag{
 
 The modular inverse \(d_n^{-1}\pmod q\) exists because all denominators are odd. Thus the ordinary integer winding \(m_n\), the original odd denominator \(d_n\), and the same numerator remainder \(b_n\) jointly specify the arithmetic 2-adic observation and the rational real-circle phase; the BBP Green tail completes the real observation. **This is the authenticated bridge.** Projecting away \(d_n\) or \(m_n\) generally destroys this phase coupling, even if the marginal 2-adic register visits every address. A source-coupled proof must use a nontrivial constraint on this **joint** data, not only the perfect 2-adic permutation law.
 
+### 2c. The actual 2-adic `−1 → 0` source path and exact finite defect valuation (new corollary)
+
+The origin theorem has a stronger negative-index consequence *inside the declared 2-adic analytic extension*; it is not a claim that the physical BBP real-time source has negative epochs. For each positive integer \(m\), iterate the exact same affine law \(F(t+1)=16F(t)+r(t+1)\) forward from \(t=-m\) to \(t=0\). The zero anchor gives
+
+\[
+\boxed{0=16^m F(-m)+\sum_{j=0}^{m-1}16^j r(-j),\qquad
+F(-m)=-16^{-m}\sum_{j=0}^{m-1}16^j r(-j).}\tag{BC-5}
+\]
+
+Thus the entire **negative source-time orbit consists of rational 2-adic integers**, computable by finite original-formula rational arithmetic. At the first neighboring state, \(r(0)=16/21\), hence
+
+\[
+\boxed{F(-1)=-\frac1{21},\quad 16F(-1)+r(0)=0=F(0),\quad
+\mathcal S_F(-1/21)=0.}\tag{BC-6}
+\]
+
+Here \(-1\) is the **2-adic source-time index**, and \(-1/21\) is its **2-adic carrier value**. These are distinct objects. The two values are one causal successor apart, even though their standard 2-adic metric distance is one. This is an exact, nontrivial source-coupled realization of the user's `−1 → 0` observation, without claiming a continuous path in totally disconnected \(\mathbb Z_2\) or a physical time reversal.
+
+Finally, the already proved isometry plus \(F(0)=0\) yields
+\(v_2(F(-m))=v_2(m)\), and consequently the **sharp valuation identity**
+
+\[
+\boxed{v_2\!\left(\sum_{j=0}^{m-1}16^j r(-j)\right)
+=4m+v_2(m)\qquad\text{for every integer }m\ge1.}\tag{BC-7}
+\]
+
+No asymptotic extrapolation is involved: (BC-7) is a deductive consequence of (BC-0) and isometry. It implies an entire infinite family of exact rational-source 2-adic divisibility certificates, and it provides independent finite adversarial witnesses for any faulty anchor or sign convention. It does **not** imply the real Fourier orbit is normal.
+
 ## 3. Monna/digit-reversal circle quotient and its exact defects (classical structure, new source application)
 
 For \(a=\sum_{j\ge1}d_j16^{j-1}\in\mathbb Z_2\), \(0\le d_j\le15\), define the radix-16 Monna map to the circle
@@ -304,6 +332,7 @@ Possible discriminating avenues: prove a non-product joining/conditional covaria
 |---|---|---|
 | BC-1/2 | 2-adic analytic source extension, isometric bijection and odometer conjugacy | **PROVED PAPER**, exact finite controls |
 | BC-3/4 | Exact zero-source anchor coupling \(F(n)=U_n\); all-block arithmetic register permutation | **PROVED PAPER**, modular controls |
+| BC-5/6/7 | Rational negative-index carrier path, exact \(-1/21\) predecessor and sharp 2-adic valuation \(4m+v_2(m)\) | **PROVED PAPER**, exact rational controls |
 | BC-0 | Infinite 2-adic anchor via root filter and 2-adic logarithms | **PROVED PAPER**, review / Lean pending |
 | DC-0 | Exact odd-denominator + integer-winding bridge between arithmetic and real observations | **PROVED PAPER**, rational controls |
 | CM-1 | Monna map, seam fibres, no continuous circle section | **CLASSICAL**, specialized explicit digit proof |

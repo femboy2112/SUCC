@@ -1,6 +1,48 @@
 {
   "first_arithmetic_padic_residue_mod16": 1,
   "first_real_hex_digit_of_rational_state": 2,
+  "negative_clock_exact_valuations": [
+    {
+      "F_minus_m": "-1/21",
+      "m": 1,
+      "partial_sum_2adic_valuation": 4
+    },
+    {
+      "F_minus_m": "-2/231",
+      "m": 2,
+      "partial_sum_2adic_valuation": 9
+    },
+    {
+      "F_minus_m": "-4063/1514205",
+      "m": 3,
+      "partial_sum_2adic_valuation": 12
+    },
+    {
+      "F_minus_m": "-336356/261524835",
+      "m": 4,
+      "partial_sum_2adic_valuation": 18
+    },
+    {
+      "F_minus_m": "-23848333/31121455365",
+      "m": 5,
+      "partial_sum_2adic_valuation": 20
+    },
+    {
+      "F_minus_m": "-2923184158/5717860117515",
+      "m": 6,
+      "partial_sum_2adic_valuation": 25
+    },
+    {
+      "F_minus_m": "-115048365499/314482306463325",
+      "m": 7,
+      "partial_sum_2adic_valuation": 28
+    },
+    {
+      "F_minus_m": "-147892280606344/538079226358749075",
+      "m": 8,
+      "partial_sum_2adic_valuation": 35
+    }
+  ],
   "predeclared_finite_shells": [
     {
       "B": 8,
@@ -65,6 +107,7 @@
   ],
   "source": "original four-pole BBP, U_0=0; classical BBP identity for pi imported",
   "source_first_state": "47/15",
+  "source_negative_predecessor_F_minus_1": "-1/21",
   "stable_padic_clocks": [
     {
       "distinct_residues": 16,

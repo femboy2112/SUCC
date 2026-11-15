@@ -7,7 +7,8 @@ from fractions import Fraction
 from probe import (forcing, forcing_four_poles, mod_fraction, stable_clock,
                    lifted_states, green_bounds, certified_prefix, global_prefix,
                    reverse_digits, seam_delta, bridge, bridge_direct,
-                   character_means, critical_depth, shell_receipt)
+                   character_means, critical_depth, shell_receipt,
+                   negative_clock, v2_fraction)
 
 
 class BbpSourceTests(unittest.TestCase):
@@ -238,6 +239,22 @@ class PAdicAnchorControls(unittest.TestCase):
                            for v,x in zip(vals,a))/B for t in range(q)]
                 self.assertAlmostEqual(sum(abs(v)**2 for v in mixed),q/B,places=9)
                 self.assertAlmostEqual(abs(mixed[0]-sum(vals)/B),0,places=10)
+
+    def test_negative_index_2adic_predecessor_and_sharp_all_m_valuation(self):
+        # Paper proof uses BC-0 and source isometry. These are exact finite checks.
+        self.assertEqual(forcing(0),Fraction(16,21))
+        self.assertEqual(negative_clock(1),Fraction(-1,21))
+        self.assertEqual(negative_clock(2),Fraction(-2,231))
+        self.assertEqual(16*negative_clock(1)+forcing(0),0)
+        for m in range(1,33):
+            fm=negative_clock(m)
+            self.assertEqual(fm.denominator%2,1)
+            self.assertEqual(v2_fraction(fm),v2_fraction(Fraction(m)))
+            partial=sum((16**j*forcing(-j) for j in range(m)),Fraction())
+            self.assertEqual(v2_fraction(partial),4*m+v2_fraction(Fraction(m)))
+            for k in (1,2,3,8):
+                q=16**k
+                self.assertEqual(mod_fraction(fm,q),stable_clock(-m,k))
 
     def test_arithmetic_real_denominator_bridge(self):
         states=lifted_states(39)

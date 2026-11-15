@@ -43,6 +43,27 @@ def stable_clock(n: int, k: int) -> int:
                for j in range(k)) % q
 
 
+def negative_clock(m: int) -> Fraction:
+    """Exact rational 2-adic source predecessor F(-m), using F(0)=0.
+
+    This is the 2-adic analytic continuation of the original *formula*,
+    NOT a claim that original physical real BBP forcing has negative time.
+    """
+    if type(m) is not int or m < 1:
+        raise ValueError('positive backwards source depth required')
+    return -sum((16**j*forcing(-j) for j in range(m)),Fraction())/16**m
+
+
+def v2_fraction(value: Fraction) -> int:
+    """Exact two-adic valuation of a nonzero rational number."""
+    if not value:
+        raise ValueError('valuation of zero is infinite')
+    def v2_int(n):
+        n=abs(n)
+        return (n & -n).bit_length()-1
+    return v2_int(value.numerator)-v2_int(value.denominator)
+
+
 def lifted_states(count: int, seed: Fraction = Fraction()) -> list[Fraction]:
     """Exact original recurrence (without reducing its integer carries)."""
     if count < 0:
@@ -217,6 +238,12 @@ def make_report(shells=(8,16,32,64,96)) -> dict:
         'first_arithmetic_padic_residue_mod16':mod_fraction(first,16),
         'first_real_hex_digit_of_rational_state':local_first,
         'stable_padic_clocks':examples,
+        'source_negative_predecessor_F_minus_1':str(negative_clock(1)),
+        'negative_clock_exact_valuations':[
+            {'m':m,'F_minus_m':str(negative_clock(m)),
+             'partial_sum_2adic_valuation':v2_fraction(
+                 sum((16**j*forcing(-j) for j in range(m)),Fraction()))}
+            for m in range(1,9)],
         'predeclared_finite_shells':[shell_receipt(B,states) for B in shells],
         'status':'FINITE OBSERVATIONS only; R0 and pi normality OPEN'}
 

@@ -4,15 +4,19 @@
 
 ## Executed commands and results
 
-- `python -m unittest -v test_probe.py`: **23 tests PASS**, using the exact production `probe.py` imported by `test_probe.py` (see `TEST_OUTPUT.txt`).
+- `python -m unittest -v test_probe.py`: **24 tests PASS**, using the exact production `probe.py` imported by `test_probe.py` (see `TEST_OUTPUT.txt`).
 - `python probe.py`: **PASS**; produced `FINITE_REPORT.json` for preselected finite shells `B=[8,16,32,64,96]`, literal `U_0=0`, authentic four poles, strictly rational Green enclosures, and exact signed critical-frequency phase jumps.
 - Exact 2-adic stable-clock residue permutations: **16/16, 256/256, 4096/4096 distinct** for stable clock and zero-seeded original recurrence from the literal first block; corroborates the proved all-depth isometry and newly proved `F(0)=0`, not constituting those analytic proofs.
 - Exact origin modular sanity check: `F(0) ≡ 0 (mod 16^256)` **OBSERVED-FINITE**. The infinite identity is proved separately by a source-root-filter/p-adic logarithm paper derivation in `THEOREMS.md` §2a, independently algebraically checked against the eight roots using SymPy (NOT an independent theorem prover).
-- Independent-formula comparisons: polynomial forcing vs four partial-fraction poles, modulo-4096 valuation checks, global-root BBP interval vs shifted rational source/tail intervals, direct DFT vs digit-product Fourier matrix, selected Gram-row unitarity, exact source seam identity vs complex numerical evaluation, and high-depth sample-floor calibration, plus odd-denominator/source-winding transport, the source polynomial root list and cancellation identities, the pole-coefficient mutation counterexample, and the source-attached mixed Fourier Parseval noncollision floor.
+- Independent-formula comparisons: polynomial forcing vs four partial-fraction poles, modulo-4096 valuation checks, global-root BBP interval vs shifted rational source/tail intervals, direct DFT vs digit-product Fourier matrix, selected Gram-row unitarity, exact source seam identity vs complex numerical evaluation, and high-depth sample-floor calibration, plus odd-denominator/source-winding transport, the source polynomial root list and cancellation identities, the pole-coefficient mutation counterexample, 32 exact backward-source rational predecessor/valuation controls (through 2^32-adic precision), and the source-attached mixed Fourier Parseval noncollision floor.
 
 ## Independent symbolic algebra oracle (executed)
 
 An external SymPy polynomial oracle, **not imported into the pure-standard-library test suite**, checked that `Q(z)=4-2z^3-z^4-z^5=(1-z)(z²+2)(z²+2z+2)` and all eight roots `±sqrt(2), ±i sqrt(2), ±1±i` satisfy `alpha^8=16`; `Q(alpha)=0` for `±i sqrt(2)` and `-1±i`; `alpha Q(alpha)=-16` at both `±sqrt(2)`; and `(1-sqrt(2))(1+sqrt(2))=-1`. The 2-adic convergence, root-filter identity and torsion logarithm law are supplied as **paper derivations**, not established by the SymPy algebra checks. A finite modular check and an algebraic audit are distinct from a blind independent mathematical referee.
+
+## Exact negative-index carrier / valuation observations
+
+The origin proof plus source isometry yields the *all-m* paper identity `v2(sum_{j=0}^{m-1}16^j r(-j)) = 4m+v2(m)`. Its finite checks independently evaluate the same original rational formula with negative 2-adic indices and compare 32 exact source predecessors to 2-adic stable clocks at depths 1,2,3,8. `F(-1)=-1/21` and `F(-2)=-2/231` are exact rational identities; no p-adic floating-point approximation is used. These tests do not establish the infinite theorem by themselves.
 
 ## Original-zero finite shell observations (not asymptotic evidence)
 
