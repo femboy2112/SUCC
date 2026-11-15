@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "parent": "85a14bb68aeae31d3a2796350529fda9a5c39072",
+  "python_files_compiled": [
+    "observational_succ/bbp_collision_frame.py",
+    "observational_succ/phase_detection.py",
+    "observational_succ/random_probe_frames.py",
+    "tests/test_bbp_collision_frame.py",
+    "tests/test_phase_detection.py",
+    "tests/test_random_probe_frames.py",
+    "research/2026-11-15/pi_carrier_collision/independent_audit.py",
+    "research/2026-11-15/pi_carrier_collision/numerical_probe.py"
+  ],
+  "json_files_parsed_before_generated_manifest": [
+    "research/2026-11-15/pi_carrier_collision/CLAIM_LEDGER.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/environment.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/focused.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/foundations.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/full_baseline.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/inherited_blobs.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/numerical_probe.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/numerical_probe_plan.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/numerical_probe_run.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/ordinal.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/proof_review.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/provenance.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/root_independent_audit_run.json",
+    "research/2026-11-15/pi_carrier_collision/receipts/translator_independent.json"
+  ],
+  "local_markdown_links_checked": 45,
+  "six_focused_file_hashes_match": true,
+  "final_proof_review_hashes_match": true,
+  "inherited_blobs_unchanged": 13,
+  "parent_baseline_count": 13404,
+  "parent_baseline_raw_log_hash_matches": true,
+  "focused_tests": 211,
+  "new_tests": 60,
+  "tracked_parent_tree_unchanged_before_staging": true,
+  "scope": "Static artifact and receipt consistency; no additional arithmetic experiment or universal theorem validation."
+}
