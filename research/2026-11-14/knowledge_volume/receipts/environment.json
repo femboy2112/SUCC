@@ -1,0 +1,27 @@
+{
+  "base_sha": "3ce3ce42b3e40b41bea019e9c154891bcafb77b1",
+  "branch_repaired_result": "PASS",
+  "branch_repaired_tests": 17,
+  "fetched_historical_commits": [
+    "610efacf02556e1c5922bc5d4e87d0087f19b446",
+    "e42096ec0186228dd0f748767599e470f2ca2e1d",
+    "f309d9104ba480c1999c962af1df7c50f19e1bfe"
+  ],
+  "first_error": "meta_choice_descent_probe.py: ModuleNotFoundError for observational_succ",
+  "focused_result": "PASS",
+  "focused_with_existing_frontier_tests": 71,
+  "full_discovery_initial_errors": 2,
+  "full_discovery_repeated_after_repair": false,
+  "full_discovery_tests": 13206,
+  "initial_environment": "shallow clone; project not installed and subprocess import path not set",
+  "new_focused_tests": 27,
+  "parent_repaired_result": "PASS",
+  "parent_repaired_tests": 17,
+  "parent_reproduction_initial_errors": 2,
+  "parent_reproduction_tests": 17,
+  "python_optimization": 0,
+  "python_version": "3.12.14",
+  "repair": "Fetched exact historical commits; ran affected suites with PYTHONPATH=.",
+  "second_error": "Missing pinned Git source object in institute audit",
+  "source_files_modified_for_environment_repair": false
+}

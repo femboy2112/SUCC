@@ -1,0 +1,57 @@
+test_all_729_simple_labeled_graphs_on_four_vertices (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_all_729_simple_labeled_graphs_on_four_vertices) ... ok
+test_all_eight_parity_triangles_match_independent_oracle (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_all_eight_parity_triangles_match_independent_oracle) ... ok
+test_cross_source_and_basis_relabeling_is_forbidden (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_cross_source_and_basis_relabeling_is_forbidden) ... ok
+test_disconnected_and_empty_domains (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_disconnected_and_empty_domains) ... ok
+test_even_triangle_has_exactly_two_global_assignments (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_even_triangle_has_exactly_two_global_assignments) ... ok
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ERROR
+test_odd_triangle_local_choices_exist_but_no_global_section (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_odd_triangle_local_choices_exist_but_no_global_section) ... ok
+test_parallel_conflict_and_self_loop_are_detected (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_parallel_conflict_and_self_loop_are_detected) ... ok
+test_spoofed_original_identity_is_not_a_physical_certificate (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_spoofed_original_identity_is_not_a_physical_certificate) ... ok
+test_uniform_oracle_budget_restriction (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_uniform_oracle_budget_restriction) ... ok
+test_witness_mutations_are_rejected (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_witness_mutations_are_rejected) ... ok
+test_fake_source_identity_is_rejected (tests.test_round2_registry.ActualGraphControls.test_fake_source_identity_is_rejected) ... ok
+test_inherited_hypothesis_deletion_is_rejected (tests.test_round2_registry.ActualGraphControls.test_inherited_hypothesis_deletion_is_rejected) ... ok
+test_paper_forward_proof_cannot_become_kernel (tests.test_round2_registry.ActualGraphControls.test_paper_forward_proof_cannot_become_kernel) ... ok
+test_real_graph_retains_history_and_checks_new_sources (tests.test_round2_registry.ActualGraphControls.test_real_graph_retains_history_and_checks_new_sources) ... ERROR
+test_stale_kernel_evidence_is_rejected (tests.test_round2_registry.ActualGraphControls.test_stale_kernel_evidence_is_rejected) ... ok
+test_topology_mutation_is_rejected (tests.test_round2_registry.ActualGraphControls.test_topology_mutation_is_rejected) ... ok
+
+======================================================================
+ERROR: test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/4d7fd3bbcae5/SUCC-parent/tests/test_eodcs_meta_choice_descent.py", line 141, in test_exact_probe_receipt_and_independent_count
+    run = subprocess.run(
+          ^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', 'scripts/meta_choice_descent_probe.py']' returned non-zero exit status 1.
+
+======================================================================
+ERROR: test_real_graph_retains_history_and_checks_new_sources (tests.test_round2_registry.ActualGraphControls.test_real_graph_retains_history_and_checks_new_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/4d7fd3bbcae5/SUCC-parent/observational_succ/institute_audit.py", line 91, in audit_registry
+    commit_kind = subprocess.check_output(["git", "cat-file", "-t", commit],
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'cat-file', '-t', '610efacf02556e1c5922bc5d4e87d0087f19b446']' returned non-zero exit status 128.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/4d7fd3bbcae5/SUCC-parent/tests/test_round2_registry.py", line 25, in test_real_graph_retains_history_and_checks_new_sources
+    out=audit_registry(self.graph,ROOT)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4d7fd3bbcae5/SUCC-parent/observational_succ/institute_audit.py", line 98, in audit_registry
+    raise CapsuleError("Missing pinned Git source object") from exc
+observational_succ.source_proof_certificate.CapsuleError: Missing pinned Git source object
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.106s
+
+FAILED (errors=2)
