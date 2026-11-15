@@ -1,0 +1,93 @@
+{
+  "oily_full_kernel_vs_rational_truncation": 6820,
+  "haar_direct_vs_histogram": 360,
+  "authentic_zero_BBP_haar": 48,
+  "rational_pi_digit_samples": {
+    "2": [
+      "43f6a888",
+      "3f6a8885"
+    ],
+    "3": [
+      "3f6a8885",
+      "f6a8885a",
+      "6a8885a3"
+    ],
+    "4": [
+      "f6a8885a",
+      "6a8885a3",
+      "a8885a30"
+    ],
+    "7": [
+      "8885a308",
+      "885a308d",
+      "85a308d3"
+    ],
+    "12": [
+      "308d3131",
+      "08d31319",
+      "8d313198"
+    ],
+    "24": [
+      "e0370734",
+      "03707344",
+      "3707344a"
+    ]
+  },
+  "pi_phase_smoke_not_certificate": [
+    {
+      "B": 1,
+      "harmonics": 16,
+      "pi_complete": "0.9999033610026041667",
+      "rational_source": "0.9999033610026041667",
+      "difference": "1.22727336632443164e-91",
+      "proved_budget": "7/12",
+      "within_budget_smoke": true
+    },
+    {
+      "B": 2,
+      "harmonics": 16,
+      "pi_complete": "0.9680372567884180732",
+      "rational_source": "0.9726272467583906895",
+      "difference": "0.00458998996997261629",
+      "proved_budget": "7/48",
+      "within_budget_smoke": true
+    },
+    {
+      "B": 4,
+      "harmonics": 16,
+      "pi_complete": "0.163218398292759118",
+      "rational_source": "0.1631193316345158251",
+      "difference": "0.0000990666582432929087",
+      "proved_budget": "7/192",
+      "within_budget_smoke": true
+    },
+    {
+      "B": 8,
+      "harmonics": 16,
+      "pi_complete": "0.1088199863272557451",
+      "rational_source": "0.1087494994992918466",
+      "difference": "0.0000704868279638985911",
+      "proved_budget": "7/768",
+      "within_budget_smoke": true
+    },
+    {
+      "B": 16,
+      "harmonics": 16,
+      "pi_complete": "0.09817773424838720319",
+      "rational_source": "0.09817098259891173219",
+      "difference": "6.75164947547100124e-6",
+      "proved_budget": "7/3072",
+      "within_budget_smoke": true
+    }
+  ],
+  "synthetic_independent_uniform_null_expected_energy": {
+    "2": "1/2",
+    "3": "1/3",
+    "4": "1/4",
+    "8": "1/8",
+    "16": "1/16"
+  },
+  "all_exact_checks_pass": true,
+  "pi_normality": "OPEN",
+  "RH": "OPEN"
+}

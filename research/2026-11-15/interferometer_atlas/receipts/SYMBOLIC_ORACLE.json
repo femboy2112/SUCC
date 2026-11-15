@@ -1,0 +1,18 @@
+{
+  "factorized_BBP_Oily": true,
+  "oily_conditioned_PGF": "-z*(z - 4)/(3*(z - 2)**2)",
+  "kernel_roots": [
+    "1",
+    "-13/75",
+    "-5/27",
+    "-13/75"
+  ],
+  "mean_h": "8/3",
+  "haar_general_16_child_parseval": true,
+  "iid_diagonal_energy": "1/B",
+  "source_transport_coefficient": "7/12",
+  "independent_symbolic_tests": 12,
+  "all_pass": true,
+  "pi_normality": "OPEN",
+  "RH": "OPEN"
+}
