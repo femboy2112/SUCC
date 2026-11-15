@@ -1,0 +1,34 @@
+test_critical_band (test_pi_resonant_interferometer.ExactSource.test_critical_band) ... ok
+test_direct_lag (test_pi_resonant_interferometer.ExactSource.test_direct_lag) ... ok
+test_innovation_recurrence (test_pi_resonant_interferometer.ExactSource.test_innovation_recurrence) ... ok
+test_invalid_source_time (test_pi_resonant_interferometer.ExactSource.test_invalid_source_time) ... ok
+test_lag_has_rational_alias_despite_history (test_pi_resonant_interferometer.ExactSource.test_lag_has_rational_alias_despite_history) ... ok
+test_original_first_pole (test_pi_resonant_interferometer.ExactSource.test_original_first_pole) ... ok
+test_rational_forcing_rewrite (test_pi_resonant_interferometer.ExactSource.test_rational_forcing_rewrite) ... ok
+test_recurrence (test_pi_resonant_interferometer.ExactSource.test_recurrence) ... ok
+test_resonant_error (test_pi_resonant_interferometer.ExactSource.test_resonant_error) ... ok
+test_seed_blind_compensated (test_pi_resonant_interferometer.ExactSource.test_seed_blind_compensated) ... ok
+test_strict_leading_difference (test_pi_resonant_interferometer.ExactSource.test_strict_leading_difference) ... ok
+test_uncompensated_retains_seed (test_pi_resonant_interferometer.ExactSource.test_uncompensated_retains_seed) ... ok
+test_unique_pointed_origin (test_pi_resonant_interferometer.ExactSource.test_unique_pointed_origin) ... ok
+test_actual_pi_value_inside (test_pi_resonant_interferometer.FiniteClicks.test_actual_pi_value_inside) ... ok
+test_bad_harmonic (test_pi_resonant_interferometer.FiniteClicks.test_bad_harmonic) ... ok
+test_coherent_zero_no_click (test_pi_resonant_interferometer.FiniteClicks.test_coherent_zero_no_click) ... ok
+test_completed_contains_uncompleted (test_pi_resonant_interferometer.FiniteClicks.test_completed_contains_uncompleted) ... ok
+test_finite_source_clicks_valid (test_pi_resonant_interferometer.FiniteClicks.test_finite_source_clicks_valid) ... ok
+test_pi_enclosure_positive (test_pi_resonant_interferometer.FiniteClicks.test_pi_enclosure_positive) ... ok
+test_rational_U_click_value_inside (test_pi_resonant_interferometer.FiniteClicks.test_rational_U_click_value_inside) ... ok
+test_rational_periodic_clicks_false_normality (test_pi_resonant_interferometer.FiniteClicks.test_rational_periodic_clicks_false_normality) ... ok
+test_shell_interval (test_pi_resonant_interferometer.FiniteClicks.test_shell_interval) ... ok
+test_symmetry (test_pi_resonant_interferometer.FiniteClicks.test_symmetry) ... ok
+test_exact_pair_energy_as_complex (test_pi_resonant_interferometer.UnbiasedProbeChoice.test_exact_pair_energy_as_complex) ... ok
+test_gamma_dephasing_coherent_false_click (test_pi_resonant_interferometer.UnbiasedProbeChoice.test_gamma_dephasing_coherent_false_click) ... ok
+test_horvitz_thompson (test_pi_resonant_interferometer.UnbiasedProbeChoice.test_horvitz_thompson) ... ok
+test_non_normal_periodic_has_perfect_pair_energy (test_pi_resonant_interferometer.UnbiasedProbeChoice.test_non_normal_periodic_has_perfect_pair_energy) ... ok
+test_pair_symmetry (test_pi_resonant_interferometer.UnbiasedProbeChoice.test_pair_symmetry) ... ok
+test_pathological_policy_rejected (test_pi_resonant_interferometer.UnbiasedProbeChoice.test_pathological_policy_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.176s
+
+OK
