@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-14",
+  "scope": "gauge-anchored pi and RH frontier; research-only",
+  "claims": [
+    {"id":"GFT-01", "status":"CLASSICAL/EXISTING_SUCC", "claim":"Original four-pole, zero-seed BBP Green correction exactly conjugates the inhomogeneous recurrence to x->16x; finite truncation defect exact", "proof":"THEOREMS.md 1; independent exact rational and symbolic controls", "missing":"all-mode real signed cancellation"},
+    {"id":"GFT-02", "status":"PROVED_PAPER", "claim":"Every finite base-16 cylinder contains normal and nonnormal completions, with an explicit nearby finite Weyl-character bound", "proof":"THEOREMS.md 2", "source_firewall":"completions have altered selected seeds, not the original U0=0 BBP source"},
+    {"id":"GFT-03", "status":"CLASSICAL_IMPORTED", "claim":"RH iff de Bruijn-Newman Lambda=0, using unconditional Rodgers-Tao Lambda>=0 and classical RH iff Lambda<=0", "authority":"Rodgers-Tao arxiv:1801.05914; de Bruijn/Newman", "missing":"Lambda<=0, equivalent to RH"},
+    {"id":"GFT-04", "status":"PROVED_PAPER_EXACT_MODEL", "claim":"Finite jets and completed-source-like reflection/reality symmetry cannot distinguish an all-real-zero even order-one entire function from one with off-real zeros inside the broad entire-function class", "proof":"THEOREMS.md 4; SymPy holdout", "source_firewall":"does not preserve original Euler product or authentic zeta"},
+    {"id":"GFT-05", "status":"CLASSICAL_IMPORTED_PLUS_EXACT_FINITE", "claim":"Lagarias RH-equivalent inequality finite n=1..512 rigorously enclosed by rational series: 511 strict PASS, equality n1", "proof":"original Lagarias paper + receipts/lagarias_rational_512.json", "missing":"universal n, not certified"},
+    {"id":"GFT-06", "status":"OPEN", "claim":"The actual source-selected zero-seed BBP Weyl saving (and R0) and authentic completed signed Weil full positivity are not discharged", "missing":"source-derived signed temporal inequality and full Weil test-domain positivity"},
+    {"id":"GFT-07", "status":"REFUTED_GENERAL", "claim":"Symmetry/gauge anchoring plus finitely many samples implies RH or pi normality", "refutation":"GFT-02/04 source-family counterexamples, not actual source counterexamples"},
+    {"id":"GFT-08", "status":"UNVERIFIED", "claim":"RH is mathematically unprovable or finite-looking-true is the absolute best proof can do", "missing":"specified formal system and independence/unprovability theorem"},
+    {"id":"GFT-09", "status":"UNVERIFIED", "claim":"Source-preserving pi normality-to-RH analytic intertwiner", "missing":"typed, genuine Euler/Archimedean and original BBP signed phase transport"}
+  ],
+  "rh_proved": false,
+  "pi_normality_proved": false,
+  "external_physical_source_authenticated": false
+}
