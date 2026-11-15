@@ -1,0 +1,13 @@
+# Next falsifying probe: two-slice tomography without accidental signalling
+
+**First gate:** authenticate an actual source of *independently prepared* paired systems and its separation/coupling privileges. Maintain a separate classical common-cause rival. Fix source frame and its real covariant transport; do not infer a qubit Hilbert source from radix-16 digit similarities.
+
+1. Preregister random basis probabilities for the full local digit/Haar setting family and genuinely complementary X/Y probes; retain nonzero exploration support or declare the excluded targets nonidentifiable. Log action, outcome, timestamps, number of repeated preparations and source law.
+2. Estimate diagonal and complementary two-sided correlations, including XY phase quadrature. Test whether the source admits a single separable hidden-state model over all observed settings; use proper independent Bell/steering witnesses, not correlated Z outcomes alone.
+3. **Local no-signaling control:** compare B's *unconditioned* statistics for interventions on A; they should not respond without a causal message/coupling. Separately compare **conditioned** B assemblages only after A's outcome reaches a lawful comparator.
+4. **Gamma gauge and dephasing control:** rotate both frames oppositely as a compensated description; compare with a truly unrecorded one-sided phase channel. Predict `γ_α=γ(1+iω)^(-α)` only for a calibrated Gamma-distributed phase action. A drifting ordinary phase is an alternative rival, not proof of Γ.
+5. **Adaptive sampling control:** compare naive and propensity-corrected Haar coefficients, track variance and independent fresh holdouts. A self-confirming policy must be permitted to fail.
+6. **ER=EPR gate:** if a gravitational dual is proposed, supply an independent metric/boundary dictionary, interacting source law and causal access. No amount of finite Bell coherence alone can prove a traversable wormhole.
+7. **Arithmetic gate:** display a source-preserving typed morphism from the original zero-seeded signed BBP four-pole recurrence and carried phases to this quantum source instrument, or leave it unverified. Compute original `Ω_M` and signed Weyl estimates only under that actual source law. Neither π normality nor completed Weil/RH follows from synthetic two-qubit experiments.
+
+Hostile mutation controls: correlated separable mixed Bell-sector state; wrong random phase chart; forced high-slice policy with zero exploration; copied repeated evidence; outcome-dependent stopping with wrong martingale; fresh-message wire disguised as entanglement; fake source gauge that changes readout probabilities; invalid physical density matrix.
