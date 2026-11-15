@@ -15,9 +15,14 @@ test_bridge_unitarity (test_probe.FourierTransportTests.test_bridge_unitarity) .
 test_complete_basis_reconstructs_circle_phase (test_probe.FourierTransportTests.test_complete_basis_reconstructs_circle_phase) ... ok
 test_high_depth_energy_diagonal_floor (test_probe.FourierTransportTests.test_high_depth_energy_diagonal_floor) ... ok
 test_signed_seam_identity_with_critical_harmonic (test_probe.FourierTransportTests.test_signed_seam_identity_with_critical_harmonic) ... ok
-test_finite_2adic_origin_vanishes_256_levels_not_a_proof (test_probe.UnprovedOriginControl.test_finite_2adic_origin_vanishes_256_levels_not_a_proof) ... ok
+test_arithmetic_real_denominator_bridge (test_probe.PAdicAnchorControls.test_arithmetic_real_denominator_bridge) ... ok
+test_critical_joint_fourier_norm_is_sampling_floor (test_probe.PAdicAnchorControls.test_critical_joint_fourier_norm_is_sampling_floor) ... ok
+test_every_first_full_arithmetic_clock_is_permutation (test_probe.PAdicAnchorControls.test_every_first_full_arithmetic_clock_is_permutation) ... ok
+test_mutated_original_pole_breaks_zero_anchor (test_probe.PAdicAnchorControls.test_mutated_original_pole_breaks_zero_anchor) ... ok
+test_origin_exact_modular_256_levels_sanity_not_infinite_proof (test_probe.PAdicAnchorControls.test_origin_exact_modular_256_levels_sanity_not_infinite_proof) ... ok
+test_weight_polynomial_root_filter_coefficients (test_probe.PAdicAnchorControls.test_weight_polynomial_root_filter_coefficients) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.073s
+Ran 23 tests in 0.078s
 
 OK

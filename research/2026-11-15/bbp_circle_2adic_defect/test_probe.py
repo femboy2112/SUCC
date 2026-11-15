@@ -39,7 +39,7 @@ class BbpSourceTests(unittest.TestCase):
         states=lifted_states(65)
         for k in (1,2,3):
             q=16**k
-            for n in range(k,65):
+            for n in range(0,65):
                 self.assertEqual(mod_fraction(states[n],q),stable_clock(n,k))
         self.assertEqual(states[0],0)
         self.assertEqual(states[1],Fraction(47,15))
@@ -180,7 +180,77 @@ class FourierTransportTests(unittest.TestCase):
 if __name__=='__main__':
     unittest.main(verbosity=2)
 
-class UnprovedOriginControl(unittest.TestCase):
-    def test_finite_2adic_origin_vanishes_256_levels_not_a_proof(self):
-        # CONJECTURE BC-0, exact observation only. Not a universal theorem.
-        self.assertEqual(stable_clock(0,256), 0)
+class PAdicAnchorControls(unittest.TestCase):
+    def test_origin_exact_modular_256_levels_sanity_not_infinite_proof(self):
+        # The *paper proof* of BC-0 is in THEOREMS §2a; no finite test proves it.
+        self.assertEqual(stable_clock(0,256),0)
+
+    def test_mutated_original_pole_breaks_zero_anchor(self):
+        # Hostile source: change the 4/(8n-7) pole weight to 3.
+        # Its backwards continuation has F_mut(0) odd (already mod 2).
+        # This is an exact source-specific mutation control.
+        q=16**3
+        def changed(n):
+            return forcing(n)-Fraction(1,8*n-7)
+        fixed=sum(16**j*mod_fraction(forcing(-j),q)
+                  for j in range(3))%q
+        altered=sum(16**j*mod_fraction(changed(-j),q)
+                    for j in range(3))%q
+        self.assertEqual(fixed,0)
+        self.assertNotEqual(altered,0)
+        self.assertEqual(altered%2,1)
+
+    def test_every_first_full_arithmetic_clock_is_permutation(self):
+        # Requires the 2-adic zero anchor, tests it against an independent recurrence.
+        for k in (1,2,3):
+            q=16**k
+            u=0
+            witnessed=[]
+            for n in range(q):
+                witnessed.append(u)
+                u=(16*u+mod_fraction(forcing(n+1),q))%q
+            self.assertEqual(len(set(witnessed)),q)
+            for n in (0,1,q//2,q-1):
+                self.assertEqual(witnessed[n],stable_clock(n,k))
+
+    def test_weight_polynomial_root_filter_coefficients(self):
+        # Independent pure-integer coefficient extraction; no p-adic log imported.
+        # For sum roots(alpha^8=16) alpha^l: only multiples of 8 survive.
+        # αQ(α)=4α - 2α^4 - α^5 - α^6, log(1-α)=-sum α^m/m.
+        weights={1:4,4:-2,5:-1,6:-1}
+        for j in range(12):
+            extracted=sum(Fraction(-w*16**(j+1),16*(8*(j+1)-exponent))
+                          for exponent,w in weights.items())
+            self.assertEqual(extracted,16**j*forcing(-j))
+
+    def test_critical_joint_fourier_norm_is_sampling_floor(self):
+        # Source 2-adic anti-aliasing is exact, but combined positive norm
+        # is q/B even for a coherent nonnormal real-phase model.
+        states=lifted_states(45)
+        for B,k in ((8,1),(16,2)):
+            q=16**k
+            a=[mod_fraction(states[n],q) for n in range(B,2*B)]
+            self.assertEqual(len(set(a)),B)
+            for vals in ([complex(1)]*B,
+                         [cmath.exp(2j*math.pi*float(states[n]%1))
+                          for n in range(B,2*B)]):
+                mixed=[sum(v*cmath.exp(-2j*math.pi*t*x/q)
+                           for v,x in zip(vals,a))/B for t in range(q)]
+                self.assertAlmostEqual(sum(abs(v)**2 for v in mixed),q/B,places=9)
+                self.assertAlmostEqual(abs(mixed[0]-sum(vals)/B),0,places=10)
+
+    def test_arithmetic_real_denominator_bridge(self):
+        states=lifted_states(39)
+        for k in (1,2,3):
+            q=16**k
+            for n in range(1,40):
+                value=states[n]
+                denom=value.denominator
+                winding=value.numerator//denom
+                b=value.numerator-denom*winding
+                self.assertEqual(value%1,Fraction(b,denom))
+                self.assertEqual((winding+b*pow(denom,-1,q))%q,
+                                 mod_fraction(value,q))
+                if n in (1,8,19,35):
+                    self.assertEqual(certified_prefix(value,n,k)['uncompleted'],
+                                     (q*b)//denom)

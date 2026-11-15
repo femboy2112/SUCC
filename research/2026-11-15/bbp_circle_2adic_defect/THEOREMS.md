@@ -72,16 +72,74 @@ Indeed both sides follow from the recurrence and the initial difference \(F(0)-U
 F(n)\equiv\sum_{j=0}^{k-1}16^j r(n-j)\pmod{16^k}.
 \]
 
-For \(n\ge k\), \(16^nF(0)\equiv0\pmod{16^k}\), giving the **unconditional exact shell permutation law**
+The original zero seed has a stronger source-specific identity proved in §2a below: **\(F(0)=0\)** in \(\mathbb Z_2\). Consequently the exact source-time identity is
+
+\[
+\boxed{U_n=F(n)\text{ in }\mathbb Z_2\qquad\text{for every }n\ge0.}\tag{BC-3a}
+\]
+
+Because \(F\) is an isometric bijection, **every** complete consecutive block of \(q=16^k\) original zero-seeded BBP states, including the block starting at the literal origin, has the exact permutation property
 
 \[
 \boxed{\{U_n\bmod16^k:n=B,\ldots,B+16^k-1\}=\mathbb Z/16^k\mathbb Z}
-\quad(B\ge k),\tag{BC-4}
+\quad(B\ge0,k\ge1),\tag{BC-4}
 \]
 
-with each residue appearing **once**. Every fixed-modulus arithmetic 2-adic Fourier character has zero average over a complete late period. This is true independently of whether pi is normal. It is also true for many altered or seed-shifted sources satisfying the isometry hypotheses; it cannot by itself establish a real Weyl saving.
+with every residue appearing **once**. More generally the same holds modulo \(2^m\) for all \(m\ge1\). Every nontrivial finite arithmetic 2-adic character has identically zero average over these complete blocks. This is an **exact source-specific finite-clock equidistribution theorem**; it is **NOT** the real-circle equidistribution or normality of \(\pi\).
 
-**Unproved source-specific origin surprise.** Exact modular computation shows \(F(0)\equiv0\pmod{16^{256}}\). We have **not proved** \(F(0)=0\) in \(\mathbb Z_2\); the infinite identity \(\sum_{j\ge0}16^j r(-j)=0\) is an **OPEN CONJECTURE** here. Do NOT replace (BC-3) by \(F(n)=U_n\) without proving it. Finite modular zero at arbitrarily many tested levels is not universal proof. A symbolic p-adic log/cyclotomic reduction or an exact telescoping identity would settle this specific smaller problem.
+### 2a. The original source annihilates its own 2-adic backward origin (new source-specific paper proof; independent review pending)
+
+Write the *different*, original BBP source **weight polynomial**
+
+\[
+Q(z)=4-2z^3-z^4-z^5=(1-z)(z^2+2)(z^2+2z+2).
+\]
+
+Do not confuse \(Q(z)\) with the quadratic numerator \(P(t)\) in §1. Work in the finite extension \(K=\mathbb Q_2(\sqrt 2,i)\), containing all eight roots \(\alpha\) of \(\alpha^8=16\). They all have 2-adic valuation \(v_2(\alpha)=1/2>0\). The convergent 2-adic logarithm
+\(\log_2(1-\alpha)=-\sum_{m\ge1}\alpha^m/m\)
+therefore exists for all eight roots. Normalized roots-of-unity filtering gives
+
+\[
+\sum_{\alpha^8=16}\alpha^\ell=\begin{cases}8\cdot16^{\ell/8}&8\mid\ell,\\0&8\nmid\ell.\end{cases}
+\]
+
+For every integer \(j\ge0\), the declared 2-adic extension of the *same rational forcing* satisfies
+
+\[
+r(-j)=-\frac4{8j+7}+\frac2{8j+4}+\frac1{8j+3}+\frac1{8j+2}.
+\]
+
+Substitute \(zQ(z)=4z-2z^4-z^5-z^6\) into the finite root-filter sum and expand each logarithm. The four surviving degrees, \(8j+7,8j+4,8j+3,8j+2\), reconstruct **exactly** the four original signed poles with their original coefficients. The expansions converge rapidly in \(K\), permitting interchange of sums. Therefore
+
+\[
+\boxed{F(0)=\sum_{j=0}^\infty16^jr(-j)
+=\frac1{128}\sum_{\alpha^8=16}\alpha Q(\alpha)\log_2(1-\alpha).}\tag{BC-0a}
+\]
+
+Now enumerate all eight roots, with no unaccounted term:
+
+* At \(\alpha=\pm i\sqrt2\) and \(\alpha=-1\pm i\), \(Q(\alpha)=0\).
+* At \(\alpha=1\pm i\), \(1-\alpha=\mp i\) is a fourth root of unity. Its **2-adic** logarithm is zero, because the logarithm is a homomorphism on \(1+\mathfrak m_K\) and a characteristic-zero additive group has no torsion. The corresponding coefficient \(Q(\alpha)\) need not vanish.
+* At \(\alpha=\pm\sqrt2\), direct substitution gives \(\alpha Q(\alpha)=-16\) for **both** signs. Their combined contribution is \(-16[\log_2(1-\sqrt2)+\log_2(1+\sqrt2)]\). Both arguments belong to \(1+\mathfrak m_K\), their product is \(-1\), and \(\log_2(-1)=0\). Hence their sum vanishes.
+
+Every source-root contribution is zero or cancels in a declared pair, proving
+
+\[
+\boxed{F(0)=0\quad\text{in }\mathbb Z_2.}\tag{BC-0}
+\]
+
+Together with (BC-3), this proves (BC-3a)/(BC-4) **without** finite-precision extrapolation. The earlier independent modular check \(F(0)\equiv0\pmod{16^{256}}\) now serves as a finite sanity check, *not* the proof. This is a paper derivation, not Lean-verified and not externally refereed. The BBP source weight polynomial factorization already appears in SUCC #430; this research makes no academic priority claim for the factorization, 2-adic log, or root-of-unity filter.
+
+### 2b. Exact arithmetic-real denominator/carry attachment (source coupling, proved)
+
+Let \(d_n>0\) be the **reduced, odd** denominator of the original \(U_n\), \(a_n=d_nU_n\in\mathbb Z\), \(m_n=\lfloor U_n\rfloor\), and \(b_n=a_n-d_nm_n\in\{0,\ldots,d_n-1\}\). The **same rational number** has two observations:
+
+\[
+\boxed{U_n\bmod q\;\equiv\;m_n+b_nd_n^{-1}\pmod q,\qquad
+z_n=\left\{\frac{b_n}{d_n}+T_n\right\}\in\mathbb R/\mathbb Z,\quad q=16^k.}\tag{DC-0}
+\]
+
+The modular inverse \(d_n^{-1}\pmod q\) exists because all denominators are odd. Thus the ordinary integer winding \(m_n\), the original odd denominator \(d_n\), and the same numerator remainder \(b_n\) jointly specify the arithmetic 2-adic observation and the rational real-circle phase; the BBP Green tail completes the real observation. **This is the authenticated bridge.** Projecting away \(d_n\) or \(m_n\) generally destroys this phase coupling, even if the marginal 2-adic register visits every address. A source-coupled proof must use a nontrivial constraint on this **joint** data, not only the perfect 2-adic permutation law.
 
 ## 3. Monna/digit-reversal circle quotient and its exact defects (classical structure, new source application)
 
@@ -204,7 +262,7 @@ The same-forcing coherent seed \(s=-x=-\pi/16\) has the **exact** unwrapped stat
 
 The rational seed \(s=1/16\) is a different control: \(U_n(s)-U_n(0)=16^{n-1}\) for \(n\ge1\), so its later real circle phases are identical. The original source passport \(16^{-n}U_n(s)-P_n=s\) still discriminates the seeds; at any fixed 2-adic precision, their integer-state differences eventually become invisible because they gain four powers of 2 per time step. This illustrates finite-toolkit identity loss; it is not a new pi-normality implication.
 
-**A stronger falsifier of shortcut claims:** The unconditional arithmetic 2-adic permutation law (BC-4) holds alongside the open real π question; "2-adic uniformity -> real normality" is not a theorem. The map from real hex prefixes to the actual rational \(U_n\bmod q\) is not digit reversal, and the relation must retain its full source/carry and odd-denominator information. Dropping the pairing is exactly an invalid change of frame.
+**A stronger falsifier of shortcut claims:** The unconditional **all-block** arithmetic 2-adic permutation law (BC-4) holds alongside the open real π question; "2-adic uniformity -> real normality" is not a theorem. The map from real hex prefixes to the actual rational \(U_n\bmod q\) is not digit reversal, and the relation must retain its full source/carry and odd-denominator information. Dropping the pairing is exactly an invalid change of frame.
 
 ## 7. A typed next arithmetic gate, not a promised proof
 
@@ -219,6 +277,25 @@ J_{B,k}(h,t)=\frac1B\sum_{n=B}^{2B-1}
 
 with the \(U_n\bmod q\) factor taken from **arithmetic \(\mathbb Z_2\)**, not the reversed-code variable used in (FT-3). Its \(t=0\) marginal reconstructs real Weyl phases, while \(h=0\) late-window marginal is explicitly periodic/permutation-controlled. A **new nontrivial source-selected signed bound** must constrain the *joint* modes, their phase alignment or conditional defects. A marginal uniformity statement is provably insufficient. In particular, any proposed estimator from the exact odometer of §2 must pass the coherent counterseed, seed passport and independent residual checks before it can imply even R0.
 
+### 7a. Exact finite source-clock anti-aliasing and a mixed-norm no-go
+
+The new BC-0 source anchor upgrades the arithmetic clock to \(U_n\bmod q=F(n)\bmod q\) **for every nonnegative** \(n\). Since \(F\) is an isometry, the arithmetic residues \(a_n=U_n\bmod q\) are pairwise different whenever source indices \(n\) lie in any contiguous epoch of length \(B\le q=16^k\). In particular, at the **critical real Green scale** \(q\asymp B^2\), the original arithmetic register has *zero collisions* across the entire source shell. This anti-aliasing statement is exact and holds without any real equidistribution hypothesis.
+
+For any real phases \(z_n\) (in particular the original completed \(z_n=\{16^n\pi/16\}\)), form a full mixed character bank
+\[
+\mathcal J_{B,q}(h,t)=\frac1B\sum_{n=B}^{2B-1}
+ e\left(hz_n-\frac{t a_n}{q}\right),\quad t=0,\ldots,q-1.
+\]
+
+Finite character orthogonality and the exact source arithmetic noncollision prove
+\[
+\boxed{\sum_{t=0}^{q-1}|\mathcal J_{B,q}(h,t)|^2
+=\frac{q}{B}\quad(B\le q),\qquad
+\mathcal J_{B,q}(h,0)=W_B^\pi(h).}\tag{N-2}
+\]
+
+Thus \(\sum_{t\ne0}|\mathcal J|^2=q/B-|W_B^\pi(h)|^2\). **The huge positive energy outside the zero frequency is guaranteed even for coherent \(z_n\equiv0\)**; it does not prove π normality or R0. The exact joint carrier-inherited information is in **where** this norm lies, its phase orientation and source-selected conditional defects, not the raw aggregate. In particular, the normalized share of \(t=0\) tends to zero automatically as \(q/B\to\infty\), even if \(W_B(h)=1\) forever. A claim that this vanishing normalized share establishes real Fourier decay is therefore **REFUTED** by the coherent null control.
+
 Possible discriminating avenues: prove a non-product joining/conditional covariance bound for (N-1) from the *original* four-pole rational source; derive a source-specific estimate on (FT-5)/(FT-6) controlling fixed \(h\) rather than merely moving \(h\); and explicitly test whether the π Euclidean circle arclength/BBP identity constrains the odd-prime cofactor winding left invisible by the 2-adic marginal. None is established here.
 
 ### Claim ledger
@@ -226,13 +303,14 @@ Possible discriminating avenues: prove a non-product joining/conditional covaria
 | ID | Statement | Status |
 |---|---|---|
 | BC-1/2 | 2-adic analytic source extension, isometric bijection and odometer conjugacy | **PROVED PAPER**, exact finite controls |
-| BC-3/4 | Authenticated zero-source defect \(16^nF(0)\); late-permutation law | **PROVED PAPER**, exact finite controls |
-| BC-0 | Infinite 2-adic anchor \(F(0)=0\) | **CONJECTURE**, 256 finite levels only |
+| BC-3/4 | Exact zero-source anchor coupling \(F(n)=U_n\); all-block arithmetic register permutation | **PROVED PAPER**, modular controls |
+| BC-0 | Infinite 2-adic anchor via root filter and 2-adic logarithms | **PROVED PAPER**, review / Lean pending |
+| DC-0 | Exact odd-denominator + integer-winding bridge between arithmetic and real observations | **PROVED PAPER**, rational controls |
 | CM-1 | Monna map, seam fibres, no continuous circle section | **CLASSICAL**, specialized explicit digit proof |
 | CD-1/2/3 | Source circle carry, digit-reversal gap, seam Fourier coefficients | **PROVED PAPER**, exact finite controls |
 | FT-1..6 | Finite unitary basis transport and signed real/carry discrepancy | **PROVED PAPER**, numerical Fourier checks |
 | FT-7 | Critical-depth full-register energy floor | **CLASSICAL**, exact algebra |
-| N-1 | Mixed selected arithmetic/real join | **DEFINED**, no asymptotic saving |
+| N-1/2 | Mixed source-selected join; exact high-depth noncollision/Parseval no-go | **PROVED FINITE**, no signed asymptotic saving |
 | R0 / pi normality | Source-signed all-shell bound | **OPEN** |
 
 No external blind peer review or Lean kernel proof was performed. The local exact modular/permutation tests, root/Green interval computations, independent DFT and finite shell witnesses are documented in `VALIDATION.md`.
