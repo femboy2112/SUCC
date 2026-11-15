@@ -1,0 +1,175 @@
+{
+  "schema": "succ.gamma_volume.payload_hashes.v1",
+  "parent_commit": "5258eec596ddc882a9063eb6bd01d4e955fe5971",
+  "excludes_self": "FILE_HASHES.json",
+  "files": [
+    {
+      "path": "observational_succ/gamma_source_volume.py",
+      "bytes": 11248,
+      "sha256": "20ad270c09b53d737a5e926cfb5050717490e4613eed57b51ac4200b49814163",
+      "git_blob_sha1": "b52607bc7b0ac468252c7aa4dc1ce399e42c0309"
+    },
+    {
+      "path": "observational_succ/gamma_observer_descent.py",
+      "bytes": 7095,
+      "sha256": "af3191c1c25b8a6ef090481e34b9bf260ee9e079a36952d022e5c324913fc39a",
+      "git_blob_sha1": "83b53f1c64cf95b69fe6d2ec20c68f35df2cfa64"
+    },
+    {
+      "path": "tests/test_gamma_source_volume.py",
+      "bytes": 10693,
+      "sha256": "d86f94f92362657c93994a5f99295c309a4690248e1090e870b3b6c5151eca15",
+      "git_blob_sha1": "63cdb654e73f954ba5f10890157e18ca08527a1d"
+    },
+    {
+      "path": "tests/test_gamma_observer_descent.py",
+      "bytes": 8476,
+      "sha256": "d4aefe3fa5815924ffcc02a84eac88e6a87c610e4e61600f75176a41c072a8aa",
+      "git_blob_sha1": "0ee2a1c4e9b6df19b60eaf28f4cfab78976f1c59"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/CLAIM_LEDGER.json",
+      "bytes": 14462,
+      "sha256": "d1ca7b61ed29eaab449aa0988b42e8c23ab1813475fa0417bbcbf97011961cbc",
+      "git_blob_sha1": "113bc5c2d1a44b610019f5b36cd4d84af3448f29"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/HOLE_CONTRACT.md",
+      "bytes": 5112,
+      "sha256": "da7034e35dc5c35875f8c2da508df2a1e8f9ab6fac23c5c3da3488b9f68a3177",
+      "git_blob_sha1": "224df8c5c421680be8ae9efb9756c155f6491f14"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/NEXT.md",
+      "bytes": 3045,
+      "sha256": "af61ec22fd9d10dcab9e7cdd70c5fb251fd0b1662ffe22ba2efa34e235595177",
+      "git_blob_sha1": "21e1985d037fc96f68d702a27a0df31f0cb9ec68"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/PROVENANCE.md",
+      "bytes": 7898,
+      "sha256": "f28dd57f48840183e47678029cc289f97581b47430ac488beffee5468ebec1d2",
+      "git_blob_sha1": "e4a41ba5a55b9d3e06bc46697bc1a97497843d57"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/README.md",
+      "bytes": 9195,
+      "sha256": "7884eb5f7728f2c46863e9d8f2ffdc9cee20d2c5d12f9934e31857400c9174d6",
+      "git_blob_sha1": "019d726706ae78869f1a1bf4c0d5566e70ba147b"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/THEOREMS.md",
+      "bytes": 24304,
+      "sha256": "dc9be61a090ac6cdd49e5da83eda4e64cd34c401bb0ff8dbeda5382cf7ef5b31",
+      "git_blob_sha1": "d1b12e29d0c10183a8485150f8e6cfb984ba8e73"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/VALIDATION.md",
+      "bytes": 5924,
+      "sha256": "64a7489773eb5fd36e25dd69d2cd810f89d52144ef0e223a7cd84c66228bc566",
+      "git_blob_sha1": "9e3847c2dcac29c6e3c3346db30842d45cf4f46c"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/independent_audit.py",
+      "bytes": 21992,
+      "sha256": "843aa7f5f1dc08cee9186af060863e7dc5a0ede3c15e9ba1663b323fc7afd5ad",
+      "git_blob_sha1": "3d1f62aebd082ca8888c3440e6b322668280f6f6"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/environment.json",
+      "bytes": 472,
+      "sha256": "2afc7e2e3a7acab0598008518788c6c47d2f6995c58e5596e08b6cb959427f44",
+      "git_blob_sha1": "766bc03dd2992b9b3ecea326a14f080d411176c8"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/focused.json",
+      "bytes": 496,
+      "sha256": "715ff058ce80c4ee446159f1df5d8ff1e5b6aa18080fe470475aa3025c79df4c",
+      "git_blob_sha1": "da51946137bcca3fdfdcb605954a0fcfc3d16360"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/focused.log",
+      "bytes": 19074,
+      "sha256": "9d71f0e4a105a497c232fbe69fc99f2c941b1554ecd4a2e96822e1cf04740d71",
+      "git_blob_sha1": "97ace2219e4d3bef8d5930647e83b44c77db8cb3"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/focused_selector_error.json",
+      "bytes": 1692,
+      "sha256": "eb1c48f84d5bc7ccd030a97c5b1feb2a5015e447addf8faec40ca4894c3b3a4b",
+      "git_blob_sha1": "fe2dfc7c9efe90337acd137c52377dffeced6776"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/foundations.json",
+      "bytes": 154,
+      "sha256": "a018ecbcad0581311f49079f22ad4ba0ae93c94515b5f9b59161167036f27f84",
+      "git_blob_sha1": "78734379f614cc0897ad2a0ade4faaafe68d0d4c"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/foundations.log",
+      "bytes": 2498,
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "git_blob_sha1": "eac4755eb99a53410882c8361928788fea4b75d9"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/full_baseline.json",
+      "bytes": 415,
+      "sha256": "a4294a214435b7447d484e47d0c2268846478d26e763bdc97181bb1767fa5dd9",
+      "git_blob_sha1": "fb382001794707add526f6c62ade930243e09a2a"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/full_baseline.log",
+      "bytes": 14076,
+      "sha256": "65c5debabde1deb852bdb22a6995fb32d92cdcce9491a996ca46cd7c7b7d4d3a",
+      "git_blob_sha1": "d75b692aee55e9dd1a92780450770abfe3077e63"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/independent.json",
+      "bytes": 60831,
+      "sha256": "2f434674225a9a1a7b32f106b0338de4d0c67a0f5977cfeea623038c55c1d88d",
+      "git_blob_sha1": "7da9765f8cee3f8af6519ce286138139ef6415e0"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/ordinal.json",
+      "bytes": 152,
+      "sha256": "761c9215de79465a87d2ef5a9eaa7fdbe292b9f8f2b89dfd3e8e0f7dcac6223d",
+      "git_blob_sha1": "b95d3c91eb4de7ab0549b4e4b7dd98e64259dbd7"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/ordinal.log",
+      "bytes": 3612,
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "git_blob_sha1": "d9f5a7da2eb6e92ded350e5a3f2e7b6e74a900ed"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/proof_review.json",
+      "bytes": 1514,
+      "sha256": "4c3e339425c4a0d4aab3b19409a18965ecc2f5a94821f5724cf50c9695ee99ad",
+      "git_blob_sha1": "566495bf5e1c1d29571208dac75e3cf21347d5c6"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/provenance.json",
+      "bytes": 146,
+      "sha256": "e0712bd57f674beb55b9c3ac94f054249296aea11ef9564c8b41e554c7cae1c3",
+      "git_blob_sha1": "94237f8111bd1ef4bfec62bc836c651334e46889"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/provenance.log",
+      "bytes": 249,
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "git_blob_sha1": "824ba40a8edb0f7b112cd04dee2f17759f622a3f"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/receipts/root_replay.json",
+      "bytes": 1630,
+      "sha256": "e028d826b66faec824209b23947f815b72ee3bb4944be200a844fba180f977a1",
+      "git_blob_sha1": "dd527a583181060d00e3bccf178ac7dee4d0cefc"
+    },
+    {
+      "path": "research/2026-11-14/gamma_volume/root_replay.py",
+      "bytes": 6053,
+      "sha256": "76043e42f726ef68a3fcb8a76050e3b5e648e1149770e61794898fa22aab8243",
+      "git_blob_sha1": "2e21016955e047ef484a4d32ac54da8884f3ba75"
+    }
+  ]
+}

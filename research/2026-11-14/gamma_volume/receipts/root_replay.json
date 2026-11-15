@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite replay; no universal conclusion from enumeration.",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "script_sha256": "76043e42f726ef68a3fcb8a76050e3b5e648e1149770e61794898fa22aab8243",
+  "source_receipt_comparisons": 39,
+  "independent_matrix_power_cases": 342,
+  "rank_and_witness_certificate_replays": 648,
+  "cycle_orders_checked": [
+    1,
+    12
+  ],
+  "cycle_admitted_orders": [
+    6,
+    12
+  ],
+  "positive_cycle_gamma6_multiplier": "-1/27",
+  "tail_certificates": [
+    {
+      "order": 1,
+      "cutoff": 0,
+      "exact_error_norm": "1/2",
+      "theorem_bound": "4/3"
+    },
+    {
+      "order": 1,
+      "cutoff": 5,
+      "exact_error_norm": "1/64",
+      "theorem_bound": "128/729"
+    },
+    {
+      "order": 1,
+      "cutoff": 20,
+      "exact_error_norm": "1/2097152",
+      "theorem_bound": "4194304/10460353203"
+    },
+    {
+      "order": 2,
+      "cutoff": 0,
+      "exact_error_norm": "3/4",
+      "theorem_bound": "8/3"
+    },
+    {
+      "order": 2,
+      "cutoff": 5,
+      "exact_error_norm": "1/16",
+      "theorem_bound": "256/729"
+    },
+    {
+      "order": 2,
+      "cutoff": 20,
+      "exact_error_norm": "23/4194304",
+      "theorem_bound": "8388608/10460353203"
+    },
+    {
+      "order": 6,
+      "cutoff": 0,
+      "exact_error_norm": "63/64",
+      "theorem_bound": "128/3"
+    },
+    {
+      "order": 6,
+      "cutoff": 5,
+      "exact_error_norm": "1/2",
+      "theorem_bound": "4096/729"
+    },
+    {
+      "order": 6,
+      "cutoff": 20,
+      "exact_error_norm": "41841/33554432",
+      "theorem_bound": "134217728/10460353203"
+    }
+  ]
+}

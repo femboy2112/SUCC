@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "tests.test_gamma_source_volume",
+    "tests.test_gamma_observer_descent",
+    "tests.test_wavefront_oracle_two_stage",
+    "tests.test_wavefront_oscillator_completion",
+    "tests.test_pascal_gamma_turn",
+    "tests.test_predictive_horizons",
+    "tests.test_nonlinear_foresight",
+    "-v"
+  ],
+  "PYTHONPATH": ".",
+  "exit_code": 0,
+  "seconds": 1.2163434028625488,
+  "includes_final_strict_dataclass_and_stability_controls": true
+}
