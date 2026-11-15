@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_eodcs_meta_choice_descent.py",
+    "-v"
+  ],
+  "environment_override": {
+    "PYTHONPATH": "."
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 0.285,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "308a64f1927708c222b7fd8554e7f1d53fad4641190ad0e340e25b6cef30ef01",
+  "source_changes": "none"
+}
