@@ -388,3 +388,20 @@ round); the null source and the hostile source of ZSC-06.
 Resume with the [Main XXV handoff](MAIN_XXV_HANDOFF.md) and, for the full signed theorem,
 the [Main XXIV handoff](MAIN_XXIV_HANDOFF.md): prove a genuinely source-derived signed
 bound with all integer-epoch and all-mode quantifiers.
+
+## 2026-11-15 follow-up: carry quadrature and calibrated source excitation
+
+The [carry-quadrature assault](../research/2026-11-15/carry_quadrature_assault/README.md)
+proves a finite source echo with a uniform nonzero response at logarithmic
+delay, and a bounded reference decoder for the authentic fourth-root carry
+phase. It also identifies the exact joint winding-residue/ending-sign cells
+whose positive lower shell mass would imply R0. The inherited logarithmic
+anti-lock rate is not improved. The original carry-density gate, R0, and
+normality remain **OPEN**.
+
+New controls preserve the global analytic zero pin and, for any chosen fixed
+precision, all authentic source-clock bits, while changing the finite source
+law and violating the carry gate. Thus the next signed estimate must retain
+the literal four-pole arithmetic and the zero-selected real cofactor together.
+The dossier includes an exact 32,768-index source probe and records the complete
+carry-Haar normality equivalence separately from this single sufficient gate.
