@@ -6,7 +6,15 @@
     "run": 14476,
     "skipped": 2,
     "failures": 0,
-    "exit_code": 0
+    "exit_code": 0,
+    "skipped_cases_later_replayed": {
+      "count": 2,
+      "passed": 2,
+      "skipped": 0,
+      "compiler": "Lean4.14.0",
+      "exit_code": 0,
+      "receipt": "skipped_lean_receipt.json"
+    }
   },
   "xxiv": {
     "commands": 21,

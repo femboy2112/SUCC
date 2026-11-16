@@ -1,0 +1,38 @@
+{
+  "scope": "Separate execution of exactly two tests skipped by default-PATH native suite; native original receipt preserved unchanged",
+  "head": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+  "tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+  "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R26_survives_reversed_cost_and_noncommutative_language_instances",
+    "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R27_refutes_must_is_not_may_control_as_a_falsity_control",
+    "-v"
+  ],
+  "environment_overrides": {
+    "PATH_prepend": "/workspace/scratch/f2795564bfc4/toolchains/lean-4.14.0-linux/bin",
+    "PYTHONPATH": "/workspace/scratch/f2795564bfc4/SUCC:/workspace/scratch/f2795564bfc4/SUCC/tests",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "tests/test_observatoris_referee_receipts.py": "29ef57397a886e719b60534981a68f234f3c3493d7698121bacb1dff274ebb10",
+    "formal/ObservatorisQuantale.lean": "b326f653bc84dcdad14d6d9bf24425637b1a70fe53ed7628b4cc784bb1d0e4c4",
+    "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14"
+  },
+  "exit_code": 0,
+  "seconds": 7.028974361997825,
+  "test_count": 2,
+  "skipped": 0,
+  "cases": [
+    "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R26_survives_reversed_cost_and_noncommutative_language_instances",
+    "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R27_refutes_must_is_not_may_control_as_a_falsity_control"
+  ],
+  "stdout_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_log_sha256": "8481c81f67666c5c8e8753dbce85a58963735210ceedc0d1ff8338bdb9bdf719",
+  "head_tree_and_tracked_checkout_unchanged": true,
+  "source_hashes_unchanged": true,
+  "status": "PASS"
+}

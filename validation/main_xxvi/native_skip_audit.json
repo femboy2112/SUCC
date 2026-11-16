@@ -1,0 +1,53 @@
+{
+  "candidate_commit": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+  "operation": "unittest discovery and skip-flag inspection only; no test execution",
+  "discovered_test_count": 14476,
+  "static_skip_flags": [
+    {
+      "test": "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R26_survives_reversed_cost_and_noncommutative_language_instances",
+      "reason": "pinned Lean 4.14.0 not available",
+      "source": "class decorator",
+      "coverage": "Original native run skipped; subsequent exact targeted replay PASS at same immutable head/tree with explicit pinned Lean 4.14.0."
+    },
+    {
+      "test": "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R27_refutes_must_is_not_may_control_as_a_falsity_control",
+      "reason": "pinned Lean 4.14.0 not available",
+      "source": "class decorator",
+      "coverage": "Original native run skipped; subsequent exact targeted replay PASS at same immutable head/tree with explicit pinned Lean 4.14.0."
+    }
+  ],
+  "loader_errors": [],
+  "discovery_stdout": "",
+  "discovery_stderr": "",
+  "native_log_skip_count": 2,
+  "unresolved_dynamic_skips": "None indicated: discovery reproduces 14,476 tests, with exactly the two static skip flags matching the native run total. Identification is from current exact-candidate discovery/flags; the original nonverbose log does not name them.",
+  "lean_coverage": {
+    "fresh_receipt": "final_lean_receipts/receipt.json",
+    "receipt_sha256": "9e19fa153a1f0271528da6862f839bc489e38b79f62c72f208ae76f48ee4b00b",
+    "candidate_commit": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+    "compiler": "Lean 4.14.0 explicit toolchain path",
+    "fresh_checks_cover": "ObservatorisQuantale base, 18 declaration exports and two semantic positive/negative control pairs; FutureSafeForgetting and Tenacious bridge. These are fresh passes of distinct fixtures.",
+    "exact_R26_fixture": "NOT REPLAYED by recorded fresh commands: test-local INSTANCES string defines costQ/langQ, absent from check_observatoris_lean.py and Tenacious replay fixtures. Generic theorems are checked, not this concrete instantiation fixture.",
+    "exact_R27_fixture": "NOT REPLAYED by recorded fresh commands: test-local TRUE_MUTATION/TRUE_MUTATION_PROOF pair (reject ill-fitting proof of a true statement, then accept valid proof) is distinct from checker semantic false-statement controls.",
+    "verdict": "Both exact native skipped Lean cases were subsequently executed separately with explicit pinned Lean 4.14.0 PATH: 2 passed, 0 skipped. Original native receipt remains accurately 14,476 run with 2 skipped.",
+    "available_targeted_lamp": "Prepend toolchains/lean-4.14.0-linux/bin to PATH and run only unittest cases LeanEncodingReceipts.test_R26... and test_R27..., without editing the candidate. This audit did not execute them.",
+    "original_identification_verdict": "Both exact native Lean regression cases remain skipped/unverified in this operation; do not count them as passes from the separate base/semantic Lean checks.",
+    "separate_replay_receipt": "final_skipped_lean_receipts/receipt.json",
+    "separate_replay_receipt_sha256": "4cac13c1220aa441a8a7d846cb9676981f6f1879bd16b8d7b5da176e11fcfdba"
+  },
+  "candidate_tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+  "native_receipt": {
+    "path": "final_native_receipts/receipt.json",
+    "sha256": "a14825ac3dcb0cd81b1c31e7bf69b4319f8fe3896737c07587899100d35b6b16",
+    "recorded_count": 14476,
+    "recorded_skip_count": 2,
+    "test_log_sha256": "09d55d10262737c5a423b22c9edb5d44af8f95750ad67eb84e2d8a5656b7e8fa"
+  },
+  "skip_configuration": {
+    "module": "tests/test_observatoris_referee_receipts.py",
+    "class_decorator_line": 922,
+    "guard": "lean_ok(); subprocess [LEAN, --version], requires stdout prefix Lean (version 4.14.0,",
+    "LEAN_definition": "shutil.which(\"lean\") or str(Path.home() / \".elan/bin/lean\")",
+    "reason_for_mismatch": "Native/default PATH lookup does not use the explicit local toolchain binary recorded by separate Lean commands."
+  }
+}
