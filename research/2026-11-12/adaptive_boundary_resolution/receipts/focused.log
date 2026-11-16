@@ -1,0 +1,22 @@
+..........................................
+----------------------------------------------------------------------
+Ran 42 tests in 0.401s
+
+OK
+{
+  "Goldbach_proved": false,
+  "arithmetic_damped_certificates": 12,
+  "focused_tests": 42,
+  "integer_product_twins": 18,
+  "packet_exact_counts": 8,
+  "positive_damped_certificates": 10,
+  "reports": [
+    "AUDIT_RESULTS.json",
+    "COMPLEX_RESULTS.json",
+    "INTEGER_RESULTS.json",
+    "PHASE_APERTURE_RESULTS.json",
+    "VALIDATION_RESULTS.json"
+  ],
+  "single_channel_exact_counts": 4,
+  "uniform_mass_budget_exact_counts": 7
+}

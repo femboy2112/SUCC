@@ -1,0 +1,20 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "scipy": "1.17.0"
+  },
+  "env": {
+    "PYTHONPATH": ".",
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null
+  },
+  "head": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "tree": "4b0dc4572a1f971d83e23125ee14cfb06cbb0b8b",
+  "lean_in_path": false,
+  "lake_in_path": false
+}

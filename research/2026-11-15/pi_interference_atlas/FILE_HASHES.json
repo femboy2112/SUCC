@@ -1,0 +1,270 @@
+{
+  "parent_commit": "8097d9e802da1d83a615d8812e74279820f5ae7e",
+  "scope": "Every added deliverable except this manifest itself; SHA-256 plus Git blob identity.",
+  "files": [
+    {
+      "path": "observational_succ/interference_controls.py",
+      "bytes": 13694,
+      "sha256": "29b618fa2b716a81df46adc16f698b59db382e1f9bde12f1aeb76dfced0b4dcc",
+      "git_blob": "d49ae777a1412075a31fda5f63a77b582449f61d"
+    },
+    {
+      "path": "observational_succ/interference_forms.py",
+      "bytes": 20219,
+      "sha256": "e3ad03fe74f51da65603041dfb98ffa98a9bac005cbc3c26a81bb8acb41a8350",
+      "git_blob": "1f26bc6aaf5800dc7ee0604be1af08feb9ea0c14"
+    },
+    {
+      "path": "observational_succ/universal_interference_detector.py",
+      "bytes": 6490,
+      "sha256": "19deabb504a4072e80aff4c4a9485395a1b4a6880ad715b1c484db81a82d9392",
+      "git_blob": "81c34fbb51db75b618ea5f44e61811cd7daa3a05"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/ADVERSARY_NOTES.md",
+      "bytes": 28205,
+      "sha256": "fbfed640fd5ad3b1d794cd14605c7c44d7eee3ff276c7708a3d71147302e1321",
+      "git_blob": "12db1abf6c060839c82c7ba831ff7c144513fd38"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/CLAIM_LEDGER.json",
+      "bytes": 11469,
+      "sha256": "4e7046aade51ef6dc2525803fe6a7d48c6481a8f870afe3eccf8659654820f9e",
+      "git_blob": "5018a5151f444b74b4eac1d651cee9cc81575738"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/CONSTRUCTOR_NOTES.md",
+      "bytes": 34103,
+      "sha256": "163d75bf921bae63a041983368e0bfd1c97c5a7188f8d5f658451c3f8ace4a81",
+      "git_blob": "f3aee1ad2b12f900dd06527a14d3543a94e96193"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/FRONTIER_MAP.md",
+      "bytes": 40179,
+      "sha256": "01cca7937b6cfa911919c3eb0b7011f5bf3422dac0ba6b1413af8ee787795f53",
+      "git_blob": "005498aa90304789a44c3ee16c917a256a22369e"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/FRONTIER_TARGETS.json",
+      "bytes": 99582,
+      "sha256": "c04eb724046d0c12894b11c16498b57ba105e17a7e5cc905d8f4f90c822d804c",
+      "git_blob": "3f83f447b5ffc6d542d8f9bb83195b24310561d1"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/HOLE_CONTRACT.md",
+      "bytes": 4597,
+      "sha256": "bb45eacef9895ad2b1f1df895230007c0d2d9ace819ab395a80af474a395bab5",
+      "git_blob": "82bc4dfb7382dca1bbfc241f6ab4346c02ef8b77"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/NEXT.md",
+      "bytes": 5026,
+      "sha256": "1d60d276d282f5f2b7a09b6255e127bbb281ee7fa6ba6e6f2f4c1292eaacf273",
+      "git_blob": "ad61a0edea2794879bfa6a78925cd18cefa4e9a1"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/PROVENANCE.md",
+      "bytes": 7296,
+      "sha256": "e6471dd885c5b62ae8783721f3d9d4badd06b40d17b7018baa4ca8850cf49efa",
+      "git_blob": "6a80e5752388304c47821a4015c673626ea54188"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/README.md",
+      "bytes": 7428,
+      "sha256": "c9c660aa870ab1ee2bfcef4032de94dc0f82a7d16c607eadc884682f64a8f252",
+      "git_blob": "53ba6a7c1f528a34589b1aebfc902291641bb253"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/REFRAME.md",
+      "bytes": 4099,
+      "sha256": "4621af4ccd55257bc5f715aef463c25dd92d959a688c2b7d3ac5eac76d9c8415",
+      "git_blob": "f8412683d2e0c10ab048eaa7e08d436f49fe0794"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/THEOREMS.md",
+      "bytes": 23127,
+      "sha256": "00066c945a9e8896f09e08405ffb89172ac7542a7dc5c0f4fdf3453cd4f7ea5e",
+      "git_blob": "7f768c2fc4a53a8ae15d46e8425f014e8d7e20e0"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/TRANSLATION_NOTES.md",
+      "bytes": 27917,
+      "sha256": "8e06d7791176cd8d4cc26bc63731f6fab44c51a1ef7d06a9cc80ad799ef788d6",
+      "git_blob": "7c43aa33f213ddf0a71b17a010cf65b8808a40cf"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/VALIDATION.md",
+      "bytes": 8876,
+      "sha256": "639390926ad804c7053c97c36b6603f09a340cfd690a8a23d81fea5f5e4964ff",
+      "git_blob": "68d3463c403974f5c23d98347c71369b2b723674"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/catalogue_audit.py",
+      "bytes": 4827,
+      "sha256": "4a2a23642e86305244deaab2420d965fc48a932eb943f977d0e3d6d52fcabb71",
+      "git_blob": "f563191d0a2bc4048ec7bb483e0b99bf2450d253"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/independent_audit.py",
+      "bytes": 20787,
+      "sha256": "bad5b5179b57aca4a20afd7e45d7ab1a01b6027fa1a55678741b4097d16282c5",
+      "git_blob": "68a18903b8cfe5639301d7c740f9d239cc939b9a"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/artifact_check.json",
+      "bytes": 3532,
+      "sha256": "f728992ae459deeb29479d52cd76d3a00e7df12b0534c61430d78ec5d782d321",
+      "git_blob": "6a93bd2a22d017858e00b27fde31992a094738cb"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/catalogue.json",
+      "bytes": 1117,
+      "sha256": "ea4bae579cb6eea5fa68a0cd9cad93b852dd9f23859be850bd6bcc4b429592cc",
+      "git_blob": "3d2f47f025cb383a4c8063337fa32cb5e1e0b85e"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/catalogue_attempt_1.json",
+      "bytes": 639,
+      "sha256": "0de79b5db920f1452a0199c2b25492588d25e027b17ffbcb917b2ddf10a3f52e",
+      "git_blob": "9b092ba9aaff21c8672eee73db3e3c34b0d4fc1b"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/focused.json",
+      "bytes": 1504,
+      "sha256": "bba3eba8d27b44d30c106ac5c44479ce524d36768ed1e17e0080bef3435d02be",
+      "git_blob": "671ca774b26332432437a28d37128f5916f355fe"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/focused.log",
+      "bytes": 32963,
+      "sha256": "78bd3881b98ae44273236da4e0ee987f8749b3c76efff879073018e35c142dc4",
+      "git_blob": "ea98ff0b27b1c560a29895646a48305f60f5589c"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/focused_attempt_1.json",
+      "bytes": 297,
+      "sha256": "ad9ad543b0d567fcfad198326df0b6b36dab40928e9710c957a414cb629e13a8",
+      "git_blob": "26569e1a15d8468f252619122787a186a10f55c3"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/focused_attempt_1.log",
+      "bytes": 370,
+      "sha256": "07232202357dc38f928b62dfe1e59036f5e0f290eb0a3bd4098ef3228ec7affe",
+      "git_blob": "0d16f0aafa9d5de4a022376c08b2104841fa5c6a"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/foundations.json",
+      "bytes": 239,
+      "sha256": "10fc931e33d02253ec62914f0df1e8330b40caf07cf5d31d70ca7551827b8b4b",
+      "git_blob": "c39682605a45cfd5c39676ac09e2c24f95baf975"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/foundations.log",
+      "bytes": 2498,
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "git_blob": "eac4755eb99a53410882c8361928788fea4b75d9"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/full_snapshot.json",
+      "bytes": 1010,
+      "sha256": "07992974461c38d910c2c5b69e5d588f165dd10d1f273c20f9d53fb1b3bd5745",
+      "git_blob": "337bc75fee6b7020908f2925371482f91d66b21e"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/full_suite.json",
+      "bytes": 1226,
+      "sha256": "9d2bad804b3437c3911e86d6d91b5a1c884dc84d15623158dcfb9c4ee84a5f17",
+      "git_blob": "9dee9f546f69e5fd7b6e2ebb7d40e60ac07aac7c"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/full_suite.log",
+      "bytes": 15087,
+      "sha256": "e627ac5af26e0d6aa6f8c1f5f90fde6f2a91f9bbca165263ffbe5e494382d54b",
+      "git_blob": "ecd9a6833ade835c822d7c29cddbee29a8536fed"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/independent.json",
+      "bytes": 28121,
+      "sha256": "9f76ce791faa1b56a8f5f564c3532c29d2b6697897511a0734debba41ca694e2",
+      "git_blob": "c18ae414ecc9fd094abfb866eebfd416382746eb"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/independent_root.json",
+      "bytes": 28121,
+      "sha256": "16d8ede21fab39e376d4e91fd384b33fd3d409f268f4411bd1e1989777a31a59",
+      "git_blob": "939188c4ee4f5bb9f678b35f04e97cf2a48434c5"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/independent_root_before_provenance_fix.json",
+      "bytes": 28121,
+      "sha256": "ab9a9a6dfedf93fb91a80a135b94fe652ae84f9f486698c5a1efc6270cd77ea5",
+      "git_blob": "93243f1eeb1f8de9eba008a31fb445360fd95f94"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/inherited_blobs.json",
+      "bytes": 13446,
+      "sha256": "34421b7a5dfe59336f3eaf0ead2a058e8bb97d5af25463e351a173ff43e7382b",
+      "git_blob": "5bb6c15f06c425dba9ff6f5306b6c51a0eb437a0"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/ordinal.json",
+      "bytes": 238,
+      "sha256": "c8a5150ef377ea1329f45b1fcfebca10feb55942cc624ed797abf47d594e35ee",
+      "git_blob": "3a8ee6e0b319dde82f5a4c520c11fe21d3cc4a80"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/ordinal.log",
+      "bytes": 3612,
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "git_blob": "d9f5a7da2eb6e92ded350e5a3f2e7b6e74a900ed"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/proof_review.json",
+      "bytes": 3447,
+      "sha256": "f5ecaab10bc3a5e11c2497d302f4e32f42a6dc943fc658110f76f60869958695",
+      "git_blob": "3995ed23ef951e1497813b64c7b8447e233a4251"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/provenance.json",
+      "bytes": 230,
+      "sha256": "fc6216b4644dbe91d36ca253a1ac959dd83a7ea09183057e05f3b83a6f0394a3",
+      "git_blob": "266f08704c933643bef7a11ad6b5ed2f091f5ecb"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/provenance.log",
+      "bytes": 249,
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "git_blob": "824ba40a8edb0f7b112cd04dee2f17759f622a3f"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/remote_before_publication.json",
+      "bytes": 485,
+      "sha256": "7a3b85fa39ae0fea7157b487071f3e7b42ee27dd0f8c8d2eb5bc9c02730c6adf",
+      "git_blob": "b0a673b46f14f192cf48fa262de80d2f7a9154cd"
+    },
+    {
+      "path": "research/2026-11-15/pi_interference_atlas/receipts/validation_summary.json",
+      "bytes": 1783,
+      "sha256": "6d9a7e2c97580180abca77a25d8814f43a241243b85b23f623e9a2b8617d3d25",
+      "git_blob": "b50bee4d48b9e34a1b80035eb42fd4d876f498d7"
+    },
+    {
+      "path": "tests/test_interference_controls.py",
+      "bytes": 17673,
+      "sha256": "955bd4c995c3e9ab3fa16f4b804a74358aa878ac0bde41c5e7edd39310657dad",
+      "git_blob": "5ffd635f91cd4f4fb59b3df5088f0294375cd2cd"
+    },
+    {
+      "path": "tests/test_interference_forms.py",
+      "bytes": 20562,
+      "sha256": "29c32a4c319ebf8da27f1384fe8525dec08775fde6b97fb87ed25baa4c1243f6",
+      "git_blob": "8144d5651ab2dc4b2a15d0a0d4721b74ed7abfdf"
+    },
+    {
+      "path": "tests/test_universal_interference_detector.py",
+      "bytes": 9045,
+      "sha256": "57e7ac3022d93687dca1dc8d5e29d99efaf29e1ba54eec5813987dbc69ecd76b",
+      "git_blob": "f3ba08c47f8fcf36cd58b2a142782e040a3ea0e6"
+    }
+  ]
+}

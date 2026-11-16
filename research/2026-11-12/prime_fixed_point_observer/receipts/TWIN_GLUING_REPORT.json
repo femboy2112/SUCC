@@ -1,0 +1,57 @@
+{
+  "checks_by_section": {
+    "existence_mutation": 3,
+    "finite_meeting": 138,
+    "finite_window": 446,
+    "frame_calibration": 2,
+    "full_gluing": 18,
+    "generator_naturality": 16,
+    "history_nonidentifiability": 2,
+    "no_uniform_meeting": 5,
+    "noninvertible_intertwiner": 2,
+    "path_naturality": 2040,
+    "restricted_gluing": 510,
+    "root_and_coarse_output": 4,
+    "shared_invalid_relation": 3,
+    "shared_source_relabeling": 4,
+    "target_factorization": 4096,
+    "target_recovery": 16,
+    "uniqueness_mutation": 8,
+    "valid_relation": 2
+  },
+  "comparison_contract": "Only calibrated current model outputs at the meeting; no raw histories.",
+  "exact_checks": 7315,
+  "scope": "Finite exact controls, with universal proofs in the companion audit; no physical or arithmetic asymptotic claim.",
+  "status": "PASS",
+  "witnesses": {
+    "matched_but_not_gluable": {
+      "forced_triple": [
+        0,
+        0,
+        1
+      ],
+      "global_even_parity": false,
+      "left": [
+        0,
+        0
+      ],
+      "right": [
+        0,
+        1
+      ]
+    },
+    "naturality": {
+      "change_of_frame_parameters": 4,
+      "maximum_word_length": 7,
+      "words_checked": 2040
+    },
+    "restricted_gluing": {
+      "all_compatible_pairs_glue": 99,
+      "nonempty_source_subsets": 255
+    },
+    "target_factorization": {
+      "factorable_triples": 1880,
+      "report_target_triples": 4096
+    }
+  }
+}

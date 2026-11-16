@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-W",
+        "error",
+        "research/2026-11-12/adaptive_boundary_resolution/run_checks.py"
+      ],
+      "log": "focused.log",
+      "name": "focused",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--write"
+      ],
+      "log": "catalog_write.log",
+      "name": "catalog_write",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "log": "catalog.log",
+      "name": "catalog",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "log": "graph.log",
+      "name": "graph",
+      "returncode": 0
+    }
+  ],
+  "finished_utc": "2026-11-12T23:57:49.373491+00:00",
+  "native_test_count": 13163,
+  "published_parent": "f4151c4ae877ee43c4b7d130174b6bec1dbab9d6"
+}

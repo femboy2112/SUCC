@@ -1,5 +1,46 @@
 # Research claim ledger
 
+Main XXVI: [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXVI.md), [atlas](MAIN_XXVI_CONSTRUCTIVE_INTERFERENCE_ATLAS.md), and [54-PR disposition map](MAIN_XXVI_PR_DISPOSITIONS.md). Gauge correction, quantitative interfaces and original-source asymptotic debt are explicit. R0, pi normality and RH remain OPEN.
+
+
+**Additive register, 2026-11-13:**
+[Principia Observatoris claims and dependencies](principia_observatoris/REFERENCE.md).
+This includes complete conditional paper proofs, exact finite certificates and
+retained countermodels. Existing theorem attribution and status are preserved.
+No new formal-kernel authority, academic priority, physical observation,
+π-normality or RH conclusion is asserted.
+## Adaptive boundary resolution (research continuation, 2026-11-12)
+
+The [adaptive-resolution dossier](../research/2026-11-12/adaptive_boundary_resolution/README.md)
+adds nearly sharp fixed-base integer information bounds, a one-channel
+moving-damping alternative, and a source-specific negative-aggregate
+theorem for every fixed finite complex exponential minorant bank on the
+punctured closed unit disk. It distinguishes a complete angular profile
+from finite phase samples with unpaid aliases. A sharper integer
+completeness threshold, a truly per-midpoint positive aggregate and an
+explicitly imported classical density-one transfer locate the remaining
+pointwise arithmetic obligation. The
+[local ledger](../research/2026-11-12/adaptive_boundary_resolution/CLAIM_LEDGER.md)
+and [validation record](../research/2026-11-12/adaptive_boundary_resolution/VALIDATION.md)
+separate derivations, classical imports, finite controls and source-access
+assumptions. No universal Goldbach, R0, pi-normality or RH status is
+promoted; no worldwide novelty or response-acquisition speedup is claimed.
+
+## Holographic boundary filters (research draft, 2026-11-12)
+
+The [boundary-filter dossier](../research/2026-11-12/holographic_boundary_filters/README.md)
+adds scoped ordered closure and target-ambiguity certificates; a stable
+integer-grade zero-sector filter with coefficient norm below nine and
+monotone lower/upper refinement; exact Goldbach and BBP source receipts;
+and a source-specific obstruction to fixed finite damped minorant banks.
+Its [local claim ledger](../research/2026-11-12/holographic_boundary_filters/CLAIM_LEDGER.md)
+separates classical imports, new local proofs, finite checks and countermodels.
+The fixed-resolution obstruction does not exclude adaptive filters. The
+required uniform coupled-source estimates, R0, pi normality, Goldbach and
+RH remain **OPEN**. No historical theorem status or formal authority is
+promoted by this additive research entry.
+
+
 The proposed [Contextual Zero Backbone, CZB-01–12](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md)
 adds a *foundations-level*, finite source-context observer: a current
 uncertainty fiber, evidence-relative zero ideal, exact probes and movement,
@@ -1220,3 +1261,14 @@ Research-draft `TG-` namespace; nothing here promotes π normality or RH.
 **Firewall unchanged:** π base-16/base-3 normality, RH, the gate `T_N(h)=o(N)` (`Sbar_N(h)=o(1)`),
 general Collatz, shifted Lonely Runner n=18..94 all **OPEN**. Main XVI is correction + classical
 analysis + an obstruction; no mathematical status was promoted.
+
+## Research draft — coupled SU(2) Wilson construction (2026-11-13)
+
+The [scoped ledger](../research/2026-11-13/yang_mills_succ/coupled_wilson/CLAIM_LEDGER.md)
+records finite exact compact-group certificates (CW-01/02), the global-polynomial
+reflection-positivity counterexample and factorwise repair (RO-01–04), and the
+classical complete triple-trace gauge observer with a conditioned inverse
+estimate (TO-01/04). Each entry links a proof, hypotheses, hostile controls and
+next falsifier. Bounded Lean replay is explicitly distinguished from reproducing
+the external 4D Yang–Mills endpoint. This draft does not promote pi normality,
+RH, or the Yang–Mills mass gap; its parent PR #613 remains unmerged.

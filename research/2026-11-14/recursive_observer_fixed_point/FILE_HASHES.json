@@ -1,0 +1,73 @@
+{
+  "parent_pr": 627,
+  "parent_sha": "a459d531050bda54856d01c2c0ec3e4be7ce07cb",
+  "verified_local_code": "31 unittests; 5950 traces; 70+70 policies; 882 filter; 300 predictive; independent symbolic PASS",
+  "files": [
+    {
+      "path": "observational_succ/recursive_observer.py",
+      "bytes": 16908,
+      "sha256": "4fa9ec8a2f4b59b525f046aa23bea4b6f43b3f0ba7049b9cfe35849b8c135253",
+      "git_blob_sha1": "b32575cc099e4514484192a260393e15951404a7"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/NEXT.md",
+      "bytes": 3350,
+      "sha256": "944949569c12983768d16080027e48d294d4c07802a58fa921d4b356421d9d95",
+      "git_blob_sha1": "86be48eec0a6ff803835f9d55b39053e879a50c6"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/README.md",
+      "bytes": 2388,
+      "sha256": "2910aebffe55e481e345a1d1df62722dcb4c773b4f4b8f0c88c3f338e67ea9dd",
+      "git_blob_sha1": "3f707ae25067e6ab069735d81edf591796752466"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/THEOREMS.md",
+      "bytes": 24212,
+      "sha256": "5f6b91df1c9b2f69bb86d8370c917b9257c5acbd29128b47d6cbf8d3097b5ad3",
+      "git_blob_sha1": "9c8e3416049913ca999f6f5f9eac5cf726fa1ad0"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/VALIDATION.md",
+      "bytes": 4179,
+      "sha256": "e75a5c74f483c046928530aa1f8b8b467d09adee38c457e22dc164fb359503c2",
+      "git_blob_sha1": "32f86b336faa6621d2c2f326e7069623c578151e"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/independent_oracle.py",
+      "bytes": 8009,
+      "sha256": "eb03b0c5086ece5b7b4bbcebe21ff0d6b02f58e0436ca9c93aa34866bb6cd450",
+      "git_blob_sha1": "346ba510d9afd3eafec89855cf660583385797f9"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/independent_symbolic.py",
+      "bytes": 1450,
+      "sha256": "1228977fa2c1507bbc6001e4099add4106ce1b32088fb35d044532407dd76d07",
+      "git_blob_sha1": "020ea79769811dd2e12e14223a231b0e38fdb2bd"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/receipts/focused_tests.log",
+      "bytes": 5421,
+      "sha256": "76b0d6680f97588245d26e374728494825d5d92929e9d0bf771be57085c372ab",
+      "git_blob_sha1": "4f76930e3d863be489da62922214ec1bbc0d1ce2"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/receipts/independent_oracle.log",
+      "bytes": 155,
+      "sha256": "3fabbc3d479aebcfcaf9d9a951dec2d73ad6adea097573d8bc76d74dd5a5df2e",
+      "git_blob_sha1": "636129bfc16f7fda1b0bb3cc68256b7d506f0d0f"
+    },
+    {
+      "path": "research/2026-11-14/recursive_observer_fixed_point/receipts/independent_symbolic.log",
+      "bytes": 307,
+      "sha256": "41f970b4b9f47ebb9125cbdfa64238b72129e7b7765024757d5d6bbeb7a92e37",
+      "git_blob_sha1": "80fb3f227a3e44ab41e1e74c6635118dc8993a4b"
+    },
+    {
+      "path": "tests/test_recursive_observer.py",
+      "bytes": 17235,
+      "sha256": "63fc4107415c9c0169d4fa0e6562505e5fc604ad59e23aac32c00a43cdc4378b",
+      "git_blob_sha1": "ad5662f27694102ebbedd88f13fd07144008f034"
+    }
+  ]
+}

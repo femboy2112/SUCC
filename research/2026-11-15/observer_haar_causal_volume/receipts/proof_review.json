@@ -1,0 +1,30 @@
+{
+  "authority": "Bounded paper proof review; no formal checker or physical experiment.",
+  "theorem_sha256": "eb7c26b99eac112364db19a746e45e979cfc0abf98f34a29e34487586f0b9125",
+  "reviews": {
+    "constructor": "AH-01\u201304 PASS after all listed scope and policy fixes.",
+    "adversary": "AH-01\u201310 PASS within stated domains; primary focus AH-07\u201310 and hostile controls.",
+    "translator": "AH-05\u201306 and AH-10 PASS; original-source/weighted-Gram/provenance scope checked."
+  },
+  "closed_findings": [
+    "deterministic initial posterior",
+    "constant report versus informative deterministic report",
+    "complex modulus for squared Haar coefficient",
+    "conditional independence of policy randomness",
+    "reference probability support and finite utilities",
+    "Ville parameter domain",
+    "fixed versus optional two-stage plan",
+    "precise beta-to-infinity supported maximizer law",
+    "positive native Gamma depths",
+    "normalized CP instruments and initial density",
+    "selected-state positive-probability guard",
+    "outcome coarsening retains actual interventions/feedback"
+  ],
+  "document_sha256": {
+    "THEOREMS.md": "eb7c26b99eac112364db19a746e45e979cfc0abf98f34a29e34487586f0b9125",
+    "CONSTRUCTOR_NOTES.md": "87b51123015037eb5117870ca8d55154173c1e15daff31c9acee6bc59453e63f",
+    "ADVERSARY_NOTES.md": "abcfe6ccf03729cc9efe7b50083c669da4e2e785208b73d59863893f4e03f930",
+    "TRANSLATION_NOTES.md": "43babb54b4bdb8551108094834075b8c7c19616b1912e0dadaa0c500bb18765c"
+  },
+  "independence_boundary": "Agents share a model family and repository provenance. Distinct proofs, exact code paths and countermodels diagnose errors; agreement is not a truth probability."
+}

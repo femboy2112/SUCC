@@ -1,0 +1,35 @@
+{
+  "compressed_receipt_sha256": "04aec5f816d588abb35795f8a2248f76169fa94d4e8048ce4a2441a93669e941",
+  "evidence_status": "observed finite; no external physical law authenticated",
+  "execution": "local separate Python subprocess; OS-random tape and postrun commitment replay",
+  "protocol": "SUCC-COMMIT-TAPE-v1",
+  "raw_receipt_sha256": "85511482abd9f2f04e0a0d65fc355ae6e55ed3012f9fcaaade609cbf6cceb413",
+  "sessions_total": 24,
+  "source_law_model": "P=3/4 vs Q=1/2 (separately declared, actual model disclosed only after session)",
+  "source_sha256": "738d3e77d617262411f950c03947d81de78edbcacbdb1d0ae39d1e425232d162",
+  "steps_total": 480,
+  "truth_groups": {
+    "P": {
+      "credit_total": 558,
+      "ever_e_ge_20": 6,
+      "ever_e_ge_4": 8,
+      "mean_brier_P_exact": "3423659807787017/8493223003829200",
+      "mean_brier_Q_exact": "1/2",
+      "scored_binary_events": 234,
+      "sessions": 12,
+      "steps": 240,
+      "terminal_e_ge_4": 8
+    },
+    "Q": {
+      "credit_total": 504,
+      "ever_e_ge_20": 1,
+      "ever_e_ge_4": 2,
+      "mean_brier_P_exact": "4266750599/7116681600",
+      "mean_brier_Q_exact": "1/2",
+      "scored_binary_events": 216,
+      "sessions": 12,
+      "steps": 240,
+      "terminal_e_ge_4": 1
+    }
+  }
+}

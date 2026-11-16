@@ -1,0 +1,49 @@
+{
+  "R0": "OPEN",
+  "finite_shells": [
+    {
+      "B": 4,
+      "claim": "FINITE CERTIFICATE; NO ASYMPTOTIC R0 CLAIM",
+      "ell": 2,
+      "finite_completed_pi_click_lower": "0.6753058315299322011975764496",
+      "finite_completed_pi_click_upper": "0.6785063948714710465131092473",
+      "leading": "0.2490234375",
+      "rigorous_error_upper": "0.4",
+      "source_innovation": "0.2051650639918765162946666547"
+    },
+    {
+      "B": 8,
+      "claim": "FINITE CERTIFICATE; NO ASYMPTOTIC R0 CLAIM",
+      "ell": 3,
+      "finite_completed_pi_click_lower": "0.6478309811839063526674364365",
+      "finite_completed_pi_click_upper": "0.6486155936672052958512282429",
+      "leading": "0.999755859375",
+      "rigorous_error_upper": "0.8",
+      "source_innovation": "0.9020664681097072444374066199"
+    },
+    {
+      "B": 16,
+      "claim": "FINITE CERTIFICATE; NO ASYMPTOTIC R0 CLAIM",
+      "ell": 3,
+      "finite_completed_pi_click_lower": "0.4503665701529881635504404494",
+      "finite_completed_pi_click_upper": "0.4505605818294744475873931139",
+      "leading": "0.24993896484375",
+      "rigorous_error_upper": "0.1",
+      "source_innovation": "0.2370620658444443560629844988"
+    },
+    {
+      "B": 32,
+      "claim": "FINITE CERTIFICATE; NO ASYMPTOTIC R0 CLAIM",
+      "ell": 4,
+      "finite_completed_pi_click_lower": "0.4689598213386886770110123210",
+      "finite_completed_pi_click_upper": "0.4690080449223877554800763549",
+      "leading": "0.9999847412109375",
+      "rigorous_error_upper": "0.2",
+      "source_innovation": "0.9734501125138616526593179419"
+    }
+  ],
+  "harmonic": 1,
+  "pi_normality": "OPEN",
+  "resonance": "16^ell/(64B^2)~1",
+  "source": "original BBP, U0=0"
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "Root actually replayed these prior canonical witnesses before new probes; prior deterministic reports were preserved. Raw stdout was returned by the tool; these metadata bind the existing reports and unchanged source.",
+  "replays": [
+    {
+      "command": [
+        "python",
+        "research/2026-11-12/prime_fixed_point_observer/root_limit_probe.py"
+      ],
+      "exit_code": 0,
+      "observed_checks": 28076,
+      "source_sha256": "7651f97cf01677773ab5c4a639ea329482053495c802c7f143a03dd9ed824b15",
+      "report": "research/2026-11-12/prime_fixed_point_observer/receipts/ROOT_LIMIT_REPORT.json",
+      "report_sha256": "2aaeef3592144a7de4d6ea6df678c389a4553cd5361651c01df4cf8e9fafc5a6"
+    },
+    {
+      "command": [
+        "python",
+        "research/2026-11-12/prime_fixed_point_observer/typed_channels_probe.py"
+      ],
+      "exit_code": 0,
+      "observed_checks": 354,
+      "source_sha256": "4f9049cd600094b2dc651bb3a7ddc35c2722220ffb6c0e94ac2bd728ddc8630f",
+      "report": "research/2026-11-12/prime_fixed_point_observer/receipts/TYPED_CHANNEL_REPORT.json",
+      "report_sha256": "8a9f1699ac926b7fa526a3fa8ed787e5d9399118a37316f96220274538c19923"
+    }
+  ]
+}

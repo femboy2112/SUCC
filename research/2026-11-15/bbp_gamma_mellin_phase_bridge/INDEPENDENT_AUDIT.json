@@ -1,0 +1,191 @@
+{
+  "audit": "Independent symbolic and t-domain integration, no import of tested implementation",
+  "checks": {
+    "Q_factor": true,
+    "R_original": true,
+    "K_expansion": true,
+    "beta_twist_coefficients": true,
+    "four_poles_1": true,
+    "four_poles_2": true,
+    "four_poles_3": true,
+    "four_poles_7": true,
+    "four_poles_11": true,
+    "pi_original_import_numeric": true,
+    "mutant_same_gamma_lead_different_total": true,
+    "deep_asymptotic_40_0": true,
+    "deep_asymptotic_40_0.5": true,
+    "deep_asymptotic_120_0": true,
+    "deep_asymptotic_120_0.5": true,
+    "deep_asymptotic_280_0": true,
+    "deep_asymptotic_280_0.5": true,
+    "four_positive_30_fixed": true,
+    "four_scale_30_fixed": true,
+    "four_positive_30_linear": true,
+    "four_scale_30_linear": true,
+    "four_positive_30_quadratic": true,
+    "four_scale_30_quadratic": true,
+    "four_positive_90_fixed": true,
+    "four_scale_90_fixed": true,
+    "four_positive_90_linear": true,
+    "four_scale_90_linear": true,
+    "four_positive_90_quadratic": true,
+    "four_scale_90_quadratic": true,
+    "four_positive_250_fixed": true,
+    "four_scale_250_fixed": true,
+    "four_positive_250_linear": true,
+    "four_scale_250_linear": true,
+    "four_positive_250_quadratic": true,
+    "four_scale_250_quadratic": true,
+    "signed_source_gamma_0": true,
+    "signed_source_gamma_1": true,
+    "signed_source_gamma_2": true,
+    "signed_source_gamma_3": true
+  },
+  "numeric": [
+    {
+      "n": 40,
+      "xi": 0.0,
+      "beta": "0",
+      "obs": "(9.557077392500043e-6 + 0.0j)",
+      "error_0": 2.0854760749995654e-07,
+      "error_1": 5.075439375043232e-09,
+      "error_2": 1.6976936519114235e-10
+    },
+    {
+      "n": 40,
+      "xi": 0.5,
+      "beta": "(0.4 + 0.7j)",
+      "obs": "(-2.460199646295962e-6 + 4.294876641128717e-7j)",
+      "error_0": 1.0194692433148686e-07,
+      "error_1": 3.542367929674208e-09,
+      "error_2": 1.249656792070888e-10
+    },
+    {
+      "n": 120,
+      "xi": 0.0,
+      "beta": "0",
+      "obs": "(1.077221516410576e-6 + 0.0j)",
+      "error_0": 7.84792803386801e-09,
+      "error_1": 6.403666520609573e-11,
+      "error_2": 7.189982535879089e-13
+    },
+    {
+      "n": 120,
+      "xi": 0.5,
+      "beta": "(0.4 + 0.7j)",
+      "obs": "(-1.091285559594484e-7 + 1.473642719170228e-7j)",
+      "error_0": 2.48836357641736e-09,
+      "error_1": 2.8835076260926707e-11,
+      "error_2": 3.3971835475151754e-13
+    },
+    {
+      "n": 280,
+      "xi": 0.0,
+      "beta": "0",
+      "obs": "(1.98677835780887e-7 + 0.0j)",
+      "error_0": 6.206336068681303e-10,
+      "error_1": 2.174109968613199e-12,
+      "error_2": 1.0483425903408687e-14
+    },
+    {
+      "n": 280,
+      "xi": 0.5,
+      "beta": "(0.4 + 0.7j)",
+      "obs": "(-1.129744196904313e-9 + 2.414792735466065e-8j)",
+      "error_0": 1.4048261465372119e-10,
+      "error_1": 6.977789300864195e-13,
+      "error_2": 3.5251997638092924e-15
+    },
+    {
+      "n": 30,
+      "q": 4,
+      "regime": "fixed",
+      "four_time": "6.0951265734448e-7",
+      "ratio_to_leading": 0.6582736699320348
+    },
+    {
+      "n": 30,
+      "q": 30,
+      "regime": "linear",
+      "four_time": "1.7470722494351e-6",
+      "ratio_to_leading": 0.8625545277210896
+    },
+    {
+      "n": 30,
+      "q": 900,
+      "regime": "quadratic",
+      "four_time": "2.0166904333555e-6",
+      "ratio_to_leading": 0.8712102672095924
+    },
+    {
+      "n": 90,
+      "q": 4,
+      "regime": "fixed",
+      "four_time": "9.8594443343915e-9",
+      "ratio_to_leading": 0.8625041903725701
+    },
+    {
+      "n": 90,
+      "q": 90,
+      "regime": "linear",
+      "four_time": "7.1313830467943e-8",
+      "ratio_to_leading": 0.9506337355178095
+    },
+    {
+      "n": 90,
+      "q": 8100,
+      "regime": "quadratic",
+      "four_time": "8.1778559561607e-8",
+      "ratio_to_leading": 0.9538651187265815
+    },
+    {
+      "n": 250,
+      "q": 4,
+      "regime": "fixed",
+      "four_time": "1.8184310754307e-10",
+      "ratio_to_leading": 0.9470995184535123
+    },
+    {
+      "n": 250,
+      "q": 250,
+      "regime": "linear",
+      "four_time": "3.4362283737578e-9",
+      "ratio_to_leading": 0.9817795353593606
+    },
+    {
+      "n": 250,
+      "q": 62500,
+      "regime": "quadratic",
+      "four_time": "3.9319453635869e-9",
+      "ratio_to_leading": 0.9829863408967309
+    },
+    {
+      "k": 0,
+      "n": 240,
+      "positive_source_step_difference": "2.70282390117857e-7",
+      "gamma_ratio": 0.9963690029304678
+    },
+    {
+      "k": 1,
+      "n": 240,
+      "positive_source_step_difference": "4.44104287286622e-9",
+      "gamma_ratio": 0.9822876267920413
+    },
+    {
+      "k": 2,
+      "n": 240,
+      "positive_source_step_difference": "1.08564619978602e-10",
+      "gamma_ratio": 0.9605102762138861
+    },
+    {
+      "k": 3,
+      "n": 240,
+      "positive_source_step_difference": "3.5099760903659e-12",
+      "gamma_ratio": 0.9316206618857901
+    }
+  ],
+  "observed": 39,
+  "total": 39,
+  "all_pass": true,
+  "scope": "Finite exact algebra; high precision numeric diagnostics; no pi normality theorem"
+}

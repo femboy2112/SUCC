@@ -1,0 +1,88 @@
+{
+  "coherent_wrong_seed_critical_pulse": {
+    "imag": -0.270598050073,
+    "real": -0.653281482438
+  },
+  "critical_original_shells": [
+    {
+      "B": 8,
+      "complex_signed_imag": 0.0,
+      "complex_signed_real": 0.0,
+      "k": 2,
+      "max_future_terms": 1,
+      "pi_normality": "OPEN",
+      "q": 256,
+      "seam_hits": 0,
+      "signed_parity": 0
+    },
+    {
+      "B": 16,
+      "complex_signed_imag": 0.057742470782,
+      "complex_signed_real": 0.023917714523,
+      "k": 3,
+      "max_future_terms": 1,
+      "pi_normality": "OPEN",
+      "q": 4096,
+      "seam_hits": 3,
+      "signed_parity": 1
+    },
+    {
+      "B": 32,
+      "complex_signed_imag": 0.040830092652,
+      "complex_signed_real": -0.01691237813,
+      "k": 3,
+      "max_future_terms": 1,
+      "pi_normality": "OPEN",
+      "q": 4096,
+      "seam_hits": 2,
+      "signed_parity": 0
+    },
+    {
+      "B": 64,
+      "complex_signed_imag": 0.0,
+      "complex_signed_real": 0.0,
+      "k": 4,
+      "max_future_terms": 2,
+      "pi_normality": "OPEN",
+      "q": 65536,
+      "seam_hits": 8,
+      "signed_parity": 0
+    },
+    {
+      "B": 96,
+      "complex_signed_imag": 0.011274918753,
+      "complex_signed_real": 0.027220061768,
+      "k": 4,
+      "max_future_terms": 1,
+      "pi_normality": "OPEN",
+      "q": 65536,
+      "seam_hits": 4,
+      "signed_parity": 4
+    }
+  ],
+  "first_residue_map": [
+    0,
+    1,
+    14,
+    15,
+    12,
+    13,
+    10,
+    11,
+    8,
+    9,
+    6,
+    7,
+    4,
+    5,
+    2,
+    3
+  ],
+  "nontrivial_clock_kernel": {
+    "imag": 0.270598050073,
+    "real": 0.653281482438
+  },
+  "original_pi_normality": "OPEN",
+  "signed_mixer_normality_bound": "OPEN",
+  "source": "original zero-seeded four-pole BBP; F(0)=0 paper premise of #646"
+}

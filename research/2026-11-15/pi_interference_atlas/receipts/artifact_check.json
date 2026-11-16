@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "python_files_compiled": [
+    "observational_succ/interference_controls.py",
+    "observational_succ/interference_forms.py",
+    "observational_succ/universal_interference_detector.py",
+    "research/2026-11-15/pi_interference_atlas/catalogue_audit.py",
+    "research/2026-11-15/pi_interference_atlas/independent_audit.py",
+    "tests/test_interference_controls.py",
+    "tests/test_interference_forms.py",
+    "tests/test_universal_interference_detector.py"
+  ],
+  "json_files_parsed": [
+    "research/2026-11-15/pi_interference_atlas/CLAIM_LEDGER.json",
+    "research/2026-11-15/pi_interference_atlas/FRONTIER_TARGETS.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/catalogue.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/catalogue_attempt_1.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/focused.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/focused_attempt_1.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/foundations.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/full_snapshot.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/full_suite.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/independent.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/independent_root.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/independent_root_before_provenance_fix.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/inherited_blobs.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/ordinal.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/proof_review.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/provenance.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/remote_before_publication.json",
+    "research/2026-11-15/pi_interference_atlas/receipts/validation_summary.json"
+  ],
+  "local_links_checked": [
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/CONSTRUCTOR_NOTES.md",
+      "target": "HOLE_CONTRACT.md"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "THEOREMS.md"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "FRONTIER_MAP.md"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "FRONTIER_TARGETS.json"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "NEXT.md"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "VALIDATION.md"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "PROVENANCE.md"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "CLAIM_LEDGER.json"
+    },
+    {
+      "document": "research/2026-11-15/pi_interference_atlas/README.md",
+      "target": "HOLE_CONTRACT.md"
+    }
+  ],
+  "review_and_final_audit_hashes_match": true,
+  "full_tests": 13535,
+  "frozen_code_hashes_match_full_snapshot": true,
+  "historical_receipts": "independent.json and independent_root_before_provenance_fix.json intentionally retain earlier catalogue hashes.",
+  "post_review_changes": "Only recorded EOF normalization and catalogue map-hash refresh; see proof_review.json.",
+  "staged_whitespace_check": "PASS",
+  "all_changes_are_additions": true,
+  "before_final_receipts_staged_additions": 43
+}

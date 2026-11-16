@@ -1,0 +1,227 @@
+{
+  "current_output_contract": "Only declared present observables in calibrated endpoint frames. Whole-code source algebra reconstruction requires actual intertwining and code preservation, not single-state mirrors or compressed expectations.",
+  "exact_checks": 421,
+  "explicit_witnesses": {
+    "compression_only_counterexample": {
+      "code_leakage_squared_norm": "576/625",
+      "code_u": [
+        "3/5",
+        "4/5",
+        "0",
+        "0"
+      ],
+      "code_v": [
+        "12/25",
+        "-9/25",
+        "4/5",
+        "0"
+      ],
+      "compressed_commutator_01": "2304/3125",
+      "endpoint_compression_determinants": [
+        "2304/15625",
+        "4329/15625"
+      ],
+      "inverse_A_of_positive_logical_projector": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-9/16"
+        ]
+      ]
+    },
+    "different_route_bond": {
+      "A_route": [
+        [
+          3,
+          2
+        ]
+      ],
+      "B_route": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "fixed_records": [
+        [
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "present_bond_labels": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "source_bond_labels": [
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          12
+        ]
+      ]
+    },
+    "encoded_arithmetic_bond": {
+      "XX": "1",
+      "ZZ": "1",
+      "code_vectors": [
+        {
+          "2": "4/5",
+          "3": "3/5"
+        },
+        {
+          "4": "4/5",
+          "6": "3/5"
+        }
+      ],
+      "fixed_record_vector_each_end": [
+        "3/5",
+        "4/5"
+      ],
+      "local_purity_before_and_after": "1/2",
+      "logical_bond_normalization": "1/sqrt(2)",
+      "output_bond_labels": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    "normalized_cup_cap": "identity/d, not identity",
+    "weighted_observable_boundary": {
+      "mirror_hermitian": false,
+      "pauli_x_mirror": [
+        [
+          "0",
+          "3/4"
+        ],
+        [
+          "4/3",
+          "0"
+        ]
+      ],
+      "schmidt_amplitudes": [
+        "3/5",
+        "4/5"
+      ]
+    }
+  },
+  "finite_scope": {
+    "arithmetic_matrix_source_window": [
+      0,
+      6
+    ],
+    "asymmetric_route_source_labels": [
+      3,
+      6,
+      12
+    ],
+    "complex_scalar_field": "Q(i)",
+    "holdout_dimensions": [
+      5,
+      7
+    ],
+    "local_channel_controls": 4,
+    "logical_dimensions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "protected_logical_dimension": 2,
+    "random_seed": 2026111227
+  },
+  "groups": {
+    "after_endpoint_schmidt_purity": 1,
+    "arithmetic_code_factorization": 1,
+    "arithmetic_code_isometry": 1,
+    "arithmetic_code_observable_transport": 4,
+    "arithmetic_output_corner_x": 1,
+    "arithmetic_output_corner_z": 1,
+    "arithmetic_output_noncommuting": 1,
+    "arithmetic_route_isometry": 1,
+    "before_endpoint_schmidt_purity": 1,
+    "bond_normalization": 6,
+    "both_endpoint_compression_maps_surjective": 2,
+    "compressed_representative_not_positive": 2,
+    "compression_can_create_noncommutation": 1,
+    "compression_control_a": 1,
+    "compression_control_b": 1,
+    "compression_control_code_isometry": 1,
+    "compression_explicit_leakage": 1,
+    "compression_map_real_pauli_coordinates": 8,
+    "compression_missing_preservation_A": 1,
+    "compression_missing_preservation_B": 1,
+    "declared_conjugate_frame": 6,
+    "different_internal_records_not_compared": 1,
+    "different_routes_same_present_bond": 1,
+    "disjoint_physical_commutation": 1,
+    "duplicated_x_A_refuted": 1,
+    "duplicated_x_B_refuted": 1,
+    "encoded_bond_normalization": 6,
+    "endpoint_isometries": 12,
+    "exterior_vs_internal_contraction": 38,
+    "hermitian_current_contraction": 38,
+    "hermitian_expectation_real": 38,
+    "joint_x_survives": 1,
+    "literal_arithmetic_route": 7,
+    "local_channel_trace_preserving": 4,
+    "mirror_not_same_algebra_representation": 1,
+    "mirror_reverses_product": 1,
+    "mirror_wrong_order_state_detected": 1,
+    "no_signal_trace": 8,
+    "normalized_snake_factor": 6,
+    "outside_bond_frame_invariance": 6,
+    "outside_record_pair_constant": 1,
+    "physical_parent_commutes": 1,
+    "present_bond_xx": 1,
+    "present_bond_zz": 1,
+    "record_discard_preserves_entire_bond": 1,
+    "remote_marginal_unchanged": 8,
+    "same_frame_mutation_detected": 5,
+    "selected_outcome_probability": 1,
+    "selected_remote_state_needs_flag": 1,
+    "shared_diagonal_A": 1,
+    "shared_diagonal_B": 1,
+    "single_bond_mirror": 3,
+    "source_compression_excursion_identity": 38,
+    "source_corner_adjoints": 38,
+    "source_corner_intertwining": 38,
+    "source_corner_products": 38,
+    "two_arithmetic_endpoint_bond": 1,
+    "unnormalized_snake": 6,
+    "weighted_bond_contraction": 16,
+    "weighted_bond_norm": 1,
+    "weighted_commuting_frame_invariant": 1,
+    "weighted_conjugate_swap_not_invariant": 1,
+    "weighted_mirror_identity": 1,
+    "weighted_mirror_not_hermitian": 1,
+    "weighted_mirror_values": 1
+  },
+  "scope": "Exact finite state/code/tensor-contraction controls; no freely shared changing memory, quantum communication channel, gravitational dual, traversable wormhole, or objective collapse law is established.",
+  "status": "PASS"
+}

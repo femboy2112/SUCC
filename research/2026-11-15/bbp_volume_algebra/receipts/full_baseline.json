@@ -1,0 +1,27 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "environment": {
+    "PYTHONPATH": "."
+  },
+  "tests": 13257,
+  "runner_seconds": 1057.332,
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "Inherited discovery suite at parent e14d46c17a65e1e5f231c619657b9332caa181c0; discovery started before either new test module was created. Final new modules are separately included in the 104-test focused run.",
+  "log_sha256": "eea72860bb64bccc65685dcc308eb2b7a6ed327329c32d7127176f701beecced",
+  "verified_utc": "2026-11-15T03:05:24.323947+00:00",
+  "parser": "Last complete unittest summary; nested child summaries and trailing JSON are preserved in the raw log.",
+  "nested_summary_counts": [
+    4,
+    7
+  ]
+}

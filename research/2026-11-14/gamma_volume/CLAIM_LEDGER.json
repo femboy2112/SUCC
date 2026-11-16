@@ -1,0 +1,259 @@
+{
+  "schema": "succ.gamma_volume.claim_ledger.v1",
+  "parent_commit": "5258eec596ddc882a9063eb6bd01d4e955fe5971",
+  "research_date": "2026-11-14 America/New_York",
+  "scope": "Paper proofs and exact finite instruments; no scholarly priority, formal-kernel verification, physical observation, RH or normality claim.",
+  "evidence": {
+    "focused": "receipts/focused.log",
+    "independent": "receipts/independent.json",
+    "root_replay": "receipts/root_replay.json",
+    "full_suite": "receipts/full_baseline.log"
+  },
+  "independence": "Same-model agents and inherited source identities are not independent empirical witnesses; separate implementations and decompositions are enumerated in PROVENANCE.md.",
+  "claims": [
+    {
+      "id": "GV-01",
+      "truth_state": "DISCLOSED",
+      "proof_status": "CLASSICAL / PAPER DERIVATION",
+      "claim": "Gamma is a Mellin evaluation of the exponential carrier and a log-coordinate Fourier transform; for real positive s its normalized carrier has mean and variance s, with log-chart mode at t=s.",
+      "domain": "Re(s)>0; c>0 and real omega",
+      "hypotheses": "Euler integral with Lebesgue measure and the stated logarithmic Jacobian",
+      "quantifiers": "For every admissible complex s",
+      "proof": "THEOREMS.md#gv-01-what-the-euler-integral-spreads-and-where-phase-actually-lives",
+      "provenance": [
+        "DLMF 5.2.1",
+        "DLMF 1.14(iv)",
+        "Concurrent #634 GG-01 at 8b1673036fa624c3b2e9e43d67bddcbae7f44b86, inspected at publication"
+      ],
+      "hostile_control": "The Gram matrix of 1,t under exp(-t)dt is [[1,1],[1,2]]; real monomials are not automatically orthogonal.",
+      "next_discriminator": "Change the measure or Jacobian and test the transform normalization."
+    },
+    {
+      "id": "GV-02",
+      "truth_state": "DISCLOSED",
+      "proof_status": "CLASSICAL / INHERITED",
+      "claim": "Gamma uniquely normalizes positive continuous homogeneous causal-volume kernels under depth convolution and a fixed unit kernel.",
+      "domain": "Positive real depths; t>0; ordered finite simplices at integer depth",
+      "hypotheses": "Homogeneous kernels c(alpha)t^(alpha-1), positive continuous c, convolution law, c(1)=1",
+      "quantifiers": "All alpha,beta>0 and every finite positive integer simplex dimension",
+      "proof": "THEOREMS.md#gv-02-ordered-causal-volumes-force-the-gamma-normalization",
+      "provenance": [
+        "DLMF 5.12.1",
+        "PG-03",
+        "PB15"
+      ],
+      "hostile_control": "Different unit kernels or dropping homogeneity remove this uniqueness conclusion.",
+      "next_discriminator": "Mutate the unit law or normalization and replay the Beta convolution."
+    },
+    {
+      "id": "GV-03",
+      "truth_state": "DISCLOSED",
+      "proof_status": "CLASSICAL / PAPER DERIVATION",
+      "claim": "Tempered fractional integration equals exponential conjugation of a rooted fractional integral.",
+      "domain": "L1[a,b] on a finite causal interval; alpha>0; lambda>=0",
+      "hypotheses": "Almost-everywhere operators and bounded finite-interval exponential multipliers",
+      "quantifiers": "Every admissible input f and depth pair",
+      "proof": "THEOREMS.md#gv-03-the-exact-twist--evolve--untwist-rooted-at-any-a",
+      "provenance": [
+        "Sabzikar–Meerschaert–Chen (19),(23)"
+      ],
+      "hostile_control": "Real positive rate is not unitary; whole-half-line positive exponential multiplication is unbounded. Wrong signs and powers fail audit holdouts.",
+      "next_discriminator": "Replay a nonconstant input at a nonzero basepoint; require domains for any global extension."
+    },
+    {
+      "id": "GV-04",
+      "truth_state": "DISCLOSED",
+      "proof_status": "CLASSICAL / INHERITED WITH EXPLICIT TAIL BOUND",
+      "claim": "Gamma averaging of Poissonized source evolution gives (2I-K)^(-alpha), a depth semigroup with certified finite-prefix error.",
+      "domain": "Complex Banach contraction K; alpha>0; 1<r<2",
+      "hypotheses": "Specified source-step operator and declared time orientation",
+      "quantifiers": "All positive depths and nonnegative truncation cutoffs",
+      "proof": "THEOREMS.md#gv-04-a-gamma-integral-can-carry-an-entire-source-operator",
+      "provenance": [
+        "PG-03",
+        "PB15",
+        "Euler integral"
+      ],
+      "hostile_control": "Forward source evolution averages future observables; retarded delay is a different interpretation. Algebraic invertibility alone does not imply positive-series convergence.",
+      "next_discriminator": "Check the positive six-cycle truncation errors against the exact tail majorant."
+    },
+    {
+      "id": "GV-05",
+      "truth_state": "DISCLOSED",
+      "proof_status": "SOURCE-CONDITIONAL PAPER PROOF / CLASSICAL ASSEMBLY",
+      "claim": "The authenticated Oily unit PGF has a retained-source positive fractional-depth semigroup with explicit bounded generator.",
+      "domain": "x in [0,1], positive depth; Banach contraction K; strongly measurable bounded fields",
+      "hypotheses": "Original u,v,R,p_j; fractional depths declared extension; x=1 uses conditional limit",
+      "quantifiers": "Every fixed x and all positive depth pairs",
+      "proof": "THEOREMS.md#gv-05-the-original-oily-unit-law-has-a-source-preserving-depth-lift",
+      "provenance": [
+        "WEO-01/04",
+        "PG-03",
+        "four-pole cancellation"
+      ],
+      "hostile_control": "Only depth one is the original normalized grade law; endpoint has two loops and raw R(1)=0.",
+      "next_discriminator": "Compare to inherited SourceGeometry; mutate a loop or omit the endpoint factor two."
+    },
+    {
+      "id": "GV-06",
+      "truth_state": "DISCLOSED",
+      "proof_status": "SOURCE-SPECIFIC PAPER PROOF",
+      "claim": "Marginalizing the authentic shared source breaks depth composition; the simplest defect is (7pi-20)/(5pi^2)>0.",
+      "domain": "mu(dx)=16R(x)dx/pi; alpha,beta>0; real 0<=z<1",
+      "hypotheses": "Same retained source across both layers; positive nondegenerate source measure",
+      "quantifiers": "All declared depths and z; exact z=0 alpha=beta=1 specialization",
+      "proof": "THEOREMS.md#gv-06-integrating-out-the-shared-source-breaks-depth-composition",
+      "provenance": [
+        "WPI-01/03",
+        "OILY_CROSS_TIME_GRAMMAR §5",
+        "new exact depth specialization"
+      ],
+      "hostile_control": "Fixed x and z=1 give zero; separately averaging describes source redraw. General operator defect is not asserted PSD.",
+      "next_discriminator": "Compare joint two-layer grades with fixed-source and redraw controls."
+    },
+    {
+      "id": "GV-07",
+      "truth_state": "DISCLOSED",
+      "proof_status": "SOURCE-SPECIFIC PAPER PROOF / INHERITED RANK MECHANISM",
+      "claim": "Every shifted Hankel matrix of m_n=E[a_X^n] is positive definite; no finite autonomous linear depth realization exists.",
+      "domain": "Integer N>=1,r>=0; original source mu",
+      "hypotheses": "a_x strictly monotone on an interval, positive source density, a_x>0",
+      "quantifiers": "All finite Hankel sizes and shifts; eventual recurrences also excluded",
+      "proof": "THEOREMS.md#gv-07-every-source-depth-hankel-matrix-has-full-rank",
+      "provenance": [
+        "PI_SOURCE_GENESIS_GREEN G2",
+        "new a_X moment specialization"
+      ],
+      "hostile_control": "Fixed-x control has rank one. Finite nonlinear or programmable descriptions are not excluded.",
+      "next_discriminator": "Test any proposed finite linear realization above its claimed state dimension."
+    },
+    {
+      "id": "GV-08",
+      "truth_state": "DISCLOSED",
+      "proof_status": "SOURCE-SPECIFIC PAPER PROOF / EXACT ALGORITHM",
+      "claim": "m_n=(c_n/2)m_1 with rational computable c_n and no amplification of absolute scalar-input error.",
+      "domain": "Every integer n>=1 under the authenticated source family",
+      "hypotheses": "Known a_x polynomial and source normalization; exact coefficient arithmetic",
+      "quantifiers": "All integer depths; implementation explicitly caps n<=16",
+      "proof": "THEOREMS.md#gv-08-a-finite-source-bound-program-predicts-every-integer-depth",
+      "provenance": [
+        "four-pole R=(1-x)/(4a_x)",
+        "knowledge-volume toolkit/stability distinction"
+      ],
+      "hostile_control": "One measured moment does not authenticate the source class; exact operation count is not constant bit cost.",
+      "next_discriminator": "Use a finite-moment-matched alternate source, or audit bit cost at larger depths."
+    },
+    {
+      "id": "GV-09",
+      "truth_state": "DISCLOSED",
+      "proof_status": "PAPER PROOF / EXACT CERTIFICATE INSTRUMENT",
+      "claim": "Raw source descent, shape-one descent, and descent of the complete Gamma family are equivalent.",
+      "domain": "Finite-dimensional K with spectrum in closed unit disk; linear P",
+      "hypotheses": "Global report kernel, not one observed trajectory; analytic functional calculus",
+      "quantifiers": "Every K,P in the declared domain",
+      "proof": "THEOREMS.md#gv-09-coherent-gamma-descent-has-an-exact-report-condition",
+      "provenance": [
+        "prior observer fiber criterion",
+        "finite-dimensional invertible-subspace argument"
+      ],
+      "hostile_control": "Implementation merely requires nonsingular 2I-K for integer algebra and does not infer spectral hypotheses.",
+      "next_discriminator": "Replay Q or the kernel/collision witness against the supplied matrices."
+    },
+    {
+      "id": "GV-10",
+      "truth_state": "DISCLOSED",
+      "proof_status": "PAPER PROOF / EXACT COUNTEREXAMPLE",
+      "claim": "Single-shape descent agrees with source descent for 0<alpha<6; order six can alias the source.",
+      "domain": "Finite-dimensional complex K with spectrum in closed unit disk; linear P",
+      "hypotheses": "Principal branch and full Jordan interpolation, not just eigenvalue comparison",
+      "quantifiers": "All depths in the open interval; exact positive six-cycle counterexample at six",
+      "proof": "THEOREMS.md#gv-10-sharp-alias-threshold-at-gamma-order-six",
+      "provenance": [
+        "classical holomorphic/Hermite matrix calculus",
+        "new exact cycle specialization"
+      ],
+      "hostile_control": "Positive six-cycle P F6=-P/27, but states1,5 have equal current report and next reports -1/2,1. A mean is not the full report distribution.",
+      "next_discriminator": "Test an order below six, or add a phase-separating report coordinate."
+    },
+    {
+      "id": "GV-11",
+      "truth_state": "DISCLOSED",
+      "proof_status": "PAPER PROOF / CONTINUOUS-HORIZON INTERFACE",
+      "claim": "Admitted Gamma orders are {0}, d*N0, or all nonnegative reals; discrete d>=6.",
+      "domain": "Same finite-dimensional domain as GV-09",
+      "hypotheses": "Invertibility, finite-dimensional invariant kernel implies onto, continuity",
+      "quantifiers": "Every linear report; six-cycle realizes d=6",
+      "proof": "THEOREMS.md#gv-11-continuous-gamma-order-horizons-are-a-closed-subgroup-trace",
+      "provenance": [
+        "closed subgroups of R",
+        "GV-10",
+        "knowledge-volume horizon comparison"
+      ],
+      "hostile_control": "Infinite-dimensional invariant subspaces need not be onto; arbitrary integer source horizon monoids are a different theorem.",
+      "next_discriminator": "An infinite-dimensional extension requires a new inverse-invariance argument."
+    },
+    {
+      "id": "GV-R1",
+      "truth_state": "REFUTED",
+      "proof_status": "EXACT SOURCE COUNTEREXAMPLE",
+      "claim": "Every source-marginalized Gamma depth family is a semigroup.",
+      "domain": "The specific authentic Oily source suffices to refute the universal claim",
+      "hypotheses": "Original mu and alpha=beta=1,z=0",
+      "quantifiers": "One exact counterexample",
+      "proof": "THEOREMS.md#gv-06-integrating-out-the-shared-source-breaks-depth-composition",
+      "provenance": [
+        "GV-06"
+      ],
+      "hostile_control": "Nonzero exact defect (7pi-20)/(5pi^2); certified rational positive interval.",
+      "next_discriminator": "Repair by retaining x or by declaring independent redraw as a changed process."
+    },
+    {
+      "id": "GV-R2",
+      "truth_state": "REFUTED",
+      "proof_status": "EXACT POSITIVE-SOURCE COUNTEREXAMPLE",
+      "claim": "A predictable Gamma-averaged observable entails a predictable next SUCC report.",
+      "domain": "Positive six-cycle with the specified first-harmonic report",
+      "hypotheses": "Gamma order6; globally equal current reports",
+      "quantifiers": "One exact report collision",
+      "proof": "THEOREMS.md#gv-10-sharp-alias-threshold-at-gamma-order-six",
+      "provenance": [
+        "GV-10",
+        "root_replay.py"
+      ],
+      "hostile_control": "P F6=-P/27; h(1)=h(5)=1/2 while h(T1)=-1/2,h(T5)=1.",
+      "next_discriminator": "Repair by choosing the actual future target and proving its separate descent."
+    },
+    {
+      "id": "GV-R3",
+      "truth_state": "REFUTED",
+      "proof_status": "EXACT CONSTRUCTIVE COUNTEREXAMPLE",
+      "claim": "Infinite Hankel rank rules out every finite program predicting the sequence.",
+      "domain": "Authentic m_n sequence",
+      "hypotheses": "Known polynomial source rule",
+      "quantifiers": "A single finite algorithm works for every finite n",
+      "proof": "THEOREMS.md#gv-08-a-finite-source-bound-program-predicts-every-integer-depth",
+      "provenance": [
+        "GV-07",
+        "GV-08"
+      ],
+      "hostile_control": "Rational coefficient c_n/2 predicts all depths stably despite full Hankel rank.",
+      "next_discriminator": "Restrict the lower bound to fixed finite autonomous linear realizations."
+    },
+    {
+      "id": "GV-U1",
+      "truth_state": "UNVERIFIED",
+      "proof_status": "SOURCE/PROBE IDENTIFICATION REMAINS OPEN",
+      "claim": "The constructed fractional-depth law is the actually received physical or selected BBP carry observation channel.",
+      "domain": "Physical or arithmetic-time observation claims beyond the declared auxiliary model",
+      "hypotheses": "Requires an authenticated source/probe map and target-specific intertwining with costs/errors",
+      "quantifiers": "No universal identification supplied",
+      "proof": "NEXT.md",
+      "provenance": [
+        "AGENTS.md",
+        "WEO observer-model boundary"
+      ],
+      "hostile_control": "Positive source packets, matching marginals, and Gamma formulas alone do not identify the signed selected orbit.",
+      "next_discriminator": "Specify actual reports and source-labelled probes, then prove or falsify the intertwiner."
+    }
+  ]
+}

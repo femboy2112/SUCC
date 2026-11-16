@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-15",
+  "baseline_commit": "895c0ae63af7b09548c608a1b0b6f298cea0e6d1",
+  "claims": [
+    {
+      "id": "CQ-01",
+      "status": "PROVED",
+      "kind": "quantitative_construction",
+      "claim": "Uniform finite echo 1/128<R_n<1/4 and extensive squared response.",
+      "domain": "Original four-pole real forcing; any real seed; n>=4; theta in {1,1/4}.",
+      "hypotheses": "m=ceil(log_4 n), q=16^m; finite forcing sum defines R.",
+      "quantifiers": "For every n>=4, and every integer shell B>=4.",
+      "evidence": "SOURCE_EXCITATION.md SE-01 through SE-04; elementary rational inequalities.",
+      "boundary": "Echo magnitude is exactly seed-blind; not a signed-density estimate.",
+      "next_falsifier": "A valid source index violating either exact rational endpoint bound."
+    },
+    {
+      "id": "CQ-02",
+      "status": "EXACT_REDUCTION",
+      "kind": "instrument",
+      "claim": "Finite source reference recovers actual carry phase with bounded inverse gain.",
+      "domain": "Authentic rational trajectory; n>=4.",
+      "hypotheses": "J=1-e(-R/4); actual later phase and fractional carry correction are observed.",
+      "quantifiers": "Every n>=4; bounded shell averages differ by at most 2 ceil(log_4(2B))/B.",
+      "evidence": "SOURCE_EXCITATION.md SE-05/06; algebraic reference identity.",
+      "boundary": "Contains the later source phase; no computational speedup or signed saving.",
+      "next_falsifier": "Wrong reference conjugation or an unaccounted carry/boundary transport."
+    },
+    {
+      "id": "CQ-03",
+      "status": "PROVED",
+      "kind": "inherited_isometry_corollary",
+      "claim": "A closed k-bit source loop flips the next-bit character and gives response4.",
+      "domain": "Original rational diagonal source; n,k>=0.",
+      "hypotheses": "Inherited analytic source zero identity and interpolation isometry DSI-3/4.",
+      "quantifiers": "For all n,k>=0, v2(U_(n+2^k)-U_n)=k.",
+      "evidence": "SOURCE_EXCITATION.md SE-07 and its exact cofactor transport.",
+      "boundary": "Finite quotient closure; not full rational-state return or carry Haar.",
+      "next_falsifier": "An invalid inherited zero pin or an incorrect fractional-cofactor sign."
+    },
+    {
+      "id": "CQ-04",
+      "status": "PROVED",
+      "kind": "quantized_winding_reformulation",
+      "claim": "Nonzero nearest-integer winding forces adjacent real energy at least9/257.",
+      "domain": "Original source n>=1; centered epsilon in [-1/2,1/2).",
+      "hypotheses": "K=M_(n+1)-16 M_n integer; 0<r(n+1)<1/4.",
+      "quantifiers": "Every nonzero late K; with published mu(pi)<15/2, every sufficiently late [M,8M) has one.",
+      "evidence": "WINDING_PACKETS.md WP6-WP17.",
+      "boundary": "Logarithmic count reproduces inherited order; does not improve OILY signed deficit.",
+      "next_falsifier": "Failure of integer transport, packet inequality, or stated irrationality implication."
+    },
+    {
+      "id": "CQ-05",
+      "status": "EXACT_REDUCTION",
+      "kind": "joint_signed_obligation",
+      "claim": "Selected event equals the three specified winding-residue/ending-sign cells.",
+      "domain": "Original literal carry and centered winding; n>=1.",
+      "hypotheses": "Tie convention fixed; C=M-1_{epsilon<0}.",
+      "quantifiers": "Pointwise identity at every n; all-shell density remains unbounded.",
+      "evidence": "WINDING_PACKETS.md WP25/26; NEXT.md.",
+      "boundary": "No positive mass in these cells is derived.",
+      "next_falsifier": "A mismatched index or tie sign in the exact four-residue table."
+    },
+    {
+      "id": "CQ-06",
+      "status": "PROVED",
+      "kind": "countermodel",
+      "claim": "Zero-pinned analytic isometry and any fixed authentic dyadic precision permit locked changed sources.",
+      "domain": "Positive rational odd-denominator analytic sources; endpoints1 or1/5.",
+      "hypotheses": "The exact finite four-pole law is deliberately not imposed; Mahler coefficients have free odd denominators.",
+      "quantifiers": "For every fixed L and either endpoint, there exists a changed source matching modulo2^L at every index, with no positive-time selected events.",
+      "evidence": "CONTROLS.md section5; analytic valuation and real rounding proof.",
+      "boundary": "Not one changed source at all precisions; no counterexample to original four poles plus zero seed.",
+      "next_falsifier": "A gap in analytic convergence, positivity, fixed-L matching, or exact floor proof."
+    },
+    {
+      "id": "CQ-07",
+      "status": "REFUTED",
+      "kind": "overbroad_implication",
+      "claim": "Extensive positive winding packets alone force this particular fourth-root event.",
+      "domain": "Same authentic forcing with arbitrary real seed.",
+      "hypotheses": "Only forcing, finite irrationality type and positive packet density.",
+      "quantifiers": "Claimed for all such seeds.",
+      "evidence": "Scaled Thue-Morse control: positive packets at density1/2, no selected events for n>=5.",
+      "boundary": "Seed changes. It has R0 and therefore also refutes the converse R0=>this event gate.",
+      "next_falsifier": "A proposed strengthened argument must explicitly retain the authentic selected boundary."
+    },
+    {
+      "id": "CQ-08",
+      "status": "EXACT_REDUCTION",
+      "kind": "normality_equivalence",
+      "claim": "Base16 normality iff integer carry archive is Haar in Z2 iff D_B tends to0.",
+      "domain": "Original four-pole source and original zero seed; all integer shells.",
+      "hypotheses": "Vanishing Green tail, standard radix/Weyl criterion, fixed-depth limit followed by geometric tail.",
+      "quantifiers": "Every fixed modulus2^k, every residue; B tends to infinity.",
+      "evidence": "CARRY_HAAR_BRIDGE.md CH1-CH6.",
+      "boundary": "Rational U_n Haar is distinct; no limit theorem is proved.",
+      "next_falsifier": "An uncontrolled bin-boundary mass or depth/time exchange."
+    },
+    {
+      "id": "CQ-09",
+      "status": "OBSERVED",
+      "kind": "exact_finite_certificate",
+      "claim": "32768 original-source carry observations, including8178 selected events on shellB16384.",
+      "domain": "Finite indices1..32768 only.",
+      "hypotheses": "Outward integer BBP prefix plus certified Green-tail comparison; no numerical pi oracle.",
+      "quantifiers": "Only the recorded finite horizon.",
+      "evidence": "receipts/finite_probe.json and raw prefix/residue files; direct rational checks through512.",
+      "boundary": "Shared production forcing; standalone audit uses expanded fractions. No finite-to-asymptotic extrapolation.",
+      "next_falsifier": "A certificate or independent rational-path mismatch."
+    },
+    {
+      "id": "OPEN-CQ",
+      "status": "OPEN",
+      "kind": "source_selected_density",
+      "claim": "Positive lower shell density of C_n mod4 in{1,2}.",
+      "domain": "Exact original four poles and real zero seed.",
+      "hypotheses": "All authentic source and carry conditions.",
+      "quantifiers": "Exists delta>0, B0; every integerB>=B0 has at leastdelta B selected events.",
+      "evidence": "No proof obtained; finite values only; exact target in HOLE_CONTRACT.md.",
+      "boundary": "Would imply R0; stronger than general R0; weaker than complete normality.",
+      "next_falsifier": "A source-derived signed estimate or arbitrarily late shells with vanishing selected density."
+    },
+    {
+      "id": "OPEN-R0",
+      "status": "OPEN",
+      "kind": "original_real_phase",
+      "claim": "Uniform positive lower shell anchored angular response for the original pi trajectory.",
+      "domain": "alpha=pi/16 and original source.",
+      "hypotheses": "Original source; fixed first circle mode.",
+      "quantifiers": "Positive liminf shell mean of1-cos(2pi16^n alpha).",
+      "evidence": "Inherited logarithmic bounds and new instruments do not close it.",
+      "boundary": "No frontier status promotion.",
+      "next_falsifier": "A quantitative signed theorem retaining source and seed."
+    }
+  ],
+  "diagnostic_separation": {
+    "constructible_probe_path": "resolved for finite echo and exact calibrated readout",
+    "source_map": "explicit authentic four-pole path; changed-premise controls declared",
+    "signed_distribution_path": "unresolved",
+    "tool_access": "no outstanding access gap",
+    "independence": "shared model family and mathematical source; separate derivations and one standalone arithmetic implementation"
+  },
+  "not_proved": [
+    "original carry positive lower density",
+    "R0",
+    "pi normality",
+    "physical quantum or Higgs mechanism",
+    "new asymptotic signed saving"
+  ]
+}

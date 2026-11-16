@@ -1,0 +1,68 @@
+{
+  "project": "Observational SUCC",
+  "date": "2026-11-14",
+  "source_parent": "PR #628 e852e217c8969793909a3200b780eb6d20453742",
+  "claims": [
+    {
+      "id": "FSA-01",
+      "status": "CLASSICAL/PAPER PROVED",
+      "scope": "declared finite joint J and read-old reset",
+      "authority": "conditional probability algebra"
+    },
+    {
+      "id": "FSA-02",
+      "status": "OBSERVED",
+      "scope": "24 executed local sessions post-commit tape replay",
+      "authority": "independent auditor and committed program SHA; no OS attestation"
+    },
+    {
+      "id": "FSA-03",
+      "status": "CLASSICAL + TESTED MODEL",
+      "scope": "retrospective plus current belief and predictable action selection",
+      "authority": "finite Bayes identity; independent implementation comparison"
+    },
+    {
+      "id": "FSA-04",
+      "status": "CLASSICAL + EXACT FINITE TEST",
+      "scope": "null E-process for P/Q under modeled observation filtration",
+      "authority": "conditional martingale derivation and independent exact census"
+    },
+    {
+      "id": "FSA-05",
+      "status": "PROVED COUNTEREXAMPLE",
+      "scope": "every finite horizon admits a delayed source mutant if complexity unbounded",
+      "authority": "explicit hidden-counter construction"
+    },
+    {
+      "id": "FSA-06",
+      "status": "CLASSICAL + EXACT FINITE TEST",
+      "scope": "predictive equivalence does not imply hidden identity",
+      "authority": "finite invariant predictive span; hidden tag countermodel"
+    },
+    {
+      "id": "FSA-07",
+      "status": "CLASSICAL SYNTHESIS / INHERITED",
+      "scope": "SimpleField/IdealHardField/FuckedField/Unresolved relative to source target tools",
+      "authority": "original SUCC observer-proof-access and field-limit definitions"
+    },
+    {
+      "id": "FSA-08",
+      "status": "CLASSICAL + OBSERVED DIAGNOSTIC",
+      "scope": "proper Brier scoring on prerecorded separate subprocess batches",
+      "authority": "exact algebra; finite local holdout samples"
+    },
+    {
+      "id": "FSA-09",
+      "status": "UNVERIFIED",
+      "scope": "external physical source-map/clock energy law",
+      "authority": "no external physical sensor probed"
+    }
+  ],
+  "non_goals": [
+    "RH",
+    "pi normality",
+    "physical GR",
+    "physical no-disturbance omniscience"
+  ],
+  "source_map_adequacy": "UNVERIFIED FOR EXTERNAL PHYSICS"
+}

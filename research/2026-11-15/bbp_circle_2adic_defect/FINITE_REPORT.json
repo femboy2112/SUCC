@@ -1,0 +1,132 @@
+{
+  "first_arithmetic_padic_residue_mod16": 1,
+  "first_real_hex_digit_of_rational_state": 2,
+  "negative_clock_exact_valuations": [
+    {
+      "F_minus_m": "-1/21",
+      "m": 1,
+      "partial_sum_2adic_valuation": 4
+    },
+    {
+      "F_minus_m": "-2/231",
+      "m": 2,
+      "partial_sum_2adic_valuation": 9
+    },
+    {
+      "F_minus_m": "-4063/1514205",
+      "m": 3,
+      "partial_sum_2adic_valuation": 12
+    },
+    {
+      "F_minus_m": "-336356/261524835",
+      "m": 4,
+      "partial_sum_2adic_valuation": 18
+    },
+    {
+      "F_minus_m": "-23848333/31121455365",
+      "m": 5,
+      "partial_sum_2adic_valuation": 20
+    },
+    {
+      "F_minus_m": "-2923184158/5717860117515",
+      "m": 6,
+      "partial_sum_2adic_valuation": 25
+    },
+    {
+      "F_minus_m": "-115048365499/314482306463325",
+      "m": 7,
+      "partial_sum_2adic_valuation": 28
+    },
+    {
+      "F_minus_m": "-147892280606344/538079226358749075",
+      "m": 8,
+      "partial_sum_2adic_valuation": 35
+    }
+  ],
+  "predeclared_finite_shells": [
+    {
+      "B": 8,
+      "critical_h": 128,
+      "critical_phase_jump": "0",
+      "depth_k": 2,
+      "global_minus_one_hits": 0,
+      "max_future_terms_for_certification": 1,
+      "normality": "OPEN",
+      "q": 256,
+      "seam_hits": 0,
+      "signed_parity": 0
+    },
+    {
+      "B": 16,
+      "critical_h": 2048,
+      "critical_phase_jump": "-1/8",
+      "depth_k": 3,
+      "global_minus_one_hits": 0,
+      "max_future_terms_for_certification": 1,
+      "normality": "OPEN",
+      "q": 4096,
+      "seam_hits": 3,
+      "signed_parity": 1
+    },
+    {
+      "B": 32,
+      "critical_h": 2048,
+      "critical_phase_jump": "0",
+      "depth_k": 3,
+      "global_minus_one_hits": 0,
+      "max_future_terms_for_certification": 1,
+      "normality": "OPEN",
+      "q": 4096,
+      "seam_hits": 2,
+      "signed_parity": 0
+    },
+    {
+      "B": 64,
+      "critical_h": 32768,
+      "critical_phase_jump": "0",
+      "depth_k": 4,
+      "global_minus_one_hits": 0,
+      "max_future_terms_for_certification": 2,
+      "normality": "OPEN",
+      "q": 65536,
+      "seam_hits": 8,
+      "signed_parity": 0
+    },
+    {
+      "B": 96,
+      "critical_h": 32768,
+      "critical_phase_jump": "-1/12",
+      "depth_k": 4,
+      "global_minus_one_hits": 0,
+      "max_future_terms_for_certification": 1,
+      "normality": "OPEN",
+      "q": 65536,
+      "seam_hits": 4,
+      "signed_parity": 4
+    }
+  ],
+  "source": "original four-pole BBP, U_0=0; classical BBP identity for pi imported",
+  "source_first_state": "47/15",
+  "source_negative_predecessor_F_minus_1": "-1/21",
+  "stable_padic_clocks": [
+    {
+      "distinct_residues": 16,
+      "is_permutation": true,
+      "k": 1,
+      "modulus": 16
+    },
+    {
+      "distinct_residues": 256,
+      "is_permutation": true,
+      "k": 2,
+      "modulus": 256
+    },
+    {
+      "distinct_residues": 4096,
+      "is_permutation": true,
+      "k": 3,
+      "modulus": 4096
+    }
+  ],
+  "status": "FINITE OBSERVATIONS only; R0 and pi normality OPEN"
+}

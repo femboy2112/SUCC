@@ -1,0 +1,38 @@
+[
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.07,
+    "log": "borwein-provenance.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.11,
+    "log": "borwein-observer-foundations.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.071,
+    "log": "borwein-ordinal-succ.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/66b470ffd34d/SUCC/research/2026-11-12/prime_fixed_point_observer/borwein_independent_audit.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.171,
+    "log": "BORWEIN_INDEPENDENT_AUDIT.json"
+  }
+]

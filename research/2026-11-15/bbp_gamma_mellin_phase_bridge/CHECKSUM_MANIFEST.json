@@ -1,0 +1,83 @@
+{
+  "source": "femboy2112/SUCC original zero, four-pole BBP",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "tests": "34/34 PASS",
+  "independent_audit": "39/39 PASS",
+  "compileall": "PASS",
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "336da66bebeaa7e2fa0b850a7410f36c2aa913e03d9dbdb83696b39db8f38902",
+      "bytes": 4538
+    },
+    {
+      "file": "THEOREMS.md",
+      "sha256": "97dfea0559fe8391776bc87a3b180d057f69dc61e5f46d228fc650e8f6252189",
+      "bytes": 15461
+    },
+    {
+      "file": "NEXT.md",
+      "sha256": "afaa269bdb1fda95ac90468e0dbdfe8332896cd446ea6992a6af5560dc1a64ca",
+      "bytes": 5337
+    },
+    {
+      "file": "SOURCE_MAP.md",
+      "sha256": "fa6b1404d34a0ca7647dc653ea396b2bbad1318f51129c17cd596f1846a4c823",
+      "bytes": 3284
+    },
+    {
+      "file": "REPAIR_HISTORY.md",
+      "sha256": "c9edef5d1936308867321055d9892f1f2509e5846372c3f737a6f0783464ac60",
+      "bytes": 2174
+    },
+    {
+      "file": "CLAIM_LEDGER.json",
+      "sha256": "3c0b2b8ed3155647aa2c990a8b2de48943e5f73c7c86a9e3a290c15e810af31c",
+      "bytes": 2745
+    },
+    {
+      "file": "VALIDATION.md",
+      "sha256": "101cc9934e2ce0145579fa064f7c404cf55fe6890cbf14134bf46588f0d0ad56",
+      "bytes": 2486
+    },
+    {
+      "file": "gamma_phase.py",
+      "sha256": "5c4c4e5cc0a245be5200862ea3b1afe27159801b734cfc105565014708d92403",
+      "bytes": 4577
+    },
+    {
+      "file": "gamma_signed_shell.py",
+      "sha256": "ac68a2fe12512bb8b63cc73792b1c900954dcf5bfe37d1958215160197949820",
+      "bytes": 2895
+    },
+    {
+      "file": "test_gamma_phase.py",
+      "sha256": "3c2fd5942e9af504bb7f6cb7695b75e6cc066e926fa2bfdfe98d74f2d8a20339",
+      "bytes": 8955
+    },
+    {
+      "file": "independent_audit.py",
+      "sha256": "d8733cb376ea3b8f604d50741454601be70a069f305d57ee2b494ee24741af30",
+      "bytes": 4705
+    },
+    {
+      "file": "INDEPENDENT_AUDIT.json",
+      "sha256": "0f14e7a5109a23974e6519aa6c9a50c3913ae8dc8ba23bb9688696052255c540",
+      "bytes": 5095
+    },
+    {
+      "file": "TEST_OUTPUT.txt",
+      "sha256": "26d7e763212dd4c4bd1b044ce925fa53d96d03a47fa2b8c6e3a6cd3f3415e144",
+      "bytes": 3416
+    },
+    {
+      "file": "AUDIT_OUTPUT.txt",
+      "sha256": "4ce43c307c15193c4944d8bf52e9349c4c49541e9554833860866d03ade79162",
+      "bytes": 98
+    }
+  ],
+  "status": "pi normality OPEN; root gates and Lean NOT RUN",
+  "parent_pr": 654,
+  "parent_commit": "9abe34595eb1715f3e53ad46cad7983e40a67bd0"
+}

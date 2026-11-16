@@ -1,0 +1,21 @@
+# Principia Observatoris: the two-forge synthesis
+
+A source action takes \(x\) to a new state and returns a receipt. An observer replaces \(x\) by a report \(q(x)\). Whether the replacement loses something depends on what the next experiment asks.
+
+For an explicit example, use the one-action chain \(u\to v\to t\to t\). Report \(u,v\) as \(A\) and \(t\) as \(B\). From either possible \(A\) state the source can eventually reach both \(A\) and \(B\), counting the empty path. The quotient is exact for this question. At the next tick, \(u\) still reports \(A\), whereas \(v\) reports \(B\). The target “will the next report be \(B\)?” has incompatible answers on the same present fiber. For this target one can refine \(A\), retain action timing, or supply a source law and prior that excludes one of the two states.
+
+The common foundation is **factorization through the actual experiment**. For a target value this means constancy over states that admit the same record. For a controlled process it means that the projected joint outcome and successor report of *each* action descends. For a weighted path observer it means equality after the specified path valuation and choice of start. A pooled start, a selected source and every representative answer different questions. At a deadline the desired object can be a choice from *overlapping sets* of safe commands, for which full target identification is unnecessary.
+
+| Read in this order | What can be recovered | What extra information the next layer needs |
+|---|---|---|
+| [Typed carrier and observation](../../research/2026-11-14/tenacious_d/AXIOM_AND_TYPE_MAP.md) | Lawful transitions, labels, current reports, retained original/current pairs | Performed-event and source-adequacy assumptions |
+| [Action and path descent](../../research/2026-11-14/tenacious_d/DESCENT_PROOFS.md) | Exact preservation of decorated words and its equivalence to a rooted finite relation test | Explicit public edge labels and starting representative |
+| [Defects and geometry](../../research/2026-11-14/tenacious_d/DEFECT_AND_GAUGE.md) | Which source probabilities a report discards, where signed responses cancel, how errors propagate | Calibrated linear or stochastic operations, gauges and readout map |
+| [Warning](../../research/2026-11-14/tenacious_d/WARNING_AND_CLASSICALITY.md) and [continuous controls](../../research/2026-11-14/tenacious_d/POLYHEDRAL_INTERCEPTION.md) | A timely decision and a checkable certificate if every permitted intervention fails | Sensor timing, actuator authority, joined state and target criterion |
+| [Finite-precision acquisition and stopping](../../research/2026-11-14/tenacious_d/FINITE_PRECISION_ACQUISITION.md) | Exact worst-case scalar recovery under finite interval sensing and limits on probabilistic certification | A certified sensor/complexity contract and a convergence modulus when needed |
+| [Restricted qubit models](../../research/2026-11-14/tenacious_d/WARNING_AND_CLASSICALITY.md) | Classical transcript laws relative to the specified preparation class and toolkit | Whether the preparation encoding must preserve probabilistic mixtures |
+| [Source-authenticated arithmetic](../../research/2026-11-14/tenacious_d/ARITHMETIC_FRONTIER.md) | A sharp weighted precision threshold against bounded-dimensional stationary rivals and [joint onset/dimension bounds](../../research/2026-11-14/tenacious_d/JOINT_PRECISION.md) | A separate signed estimate for the zero-seeded orbit to advance π normality |
+
+Thus intrinsic conclusions are available at particular levels. The existence of a labelled lift is invariant under faithful relabelling. A cycle gain survives consistent changes of node units. A finite root can be reached in the source yet its signed signal can vanish in the observer. Absolute magnitudes and the price of measuring two coordinates require a calibration. A single measure of “closeness” cannot retain all these distinctions under the permitted transformations.
+
+[Theorem register and dependency graph](../../research/2026-11-14/tenacious_d/UNIFIED_THEOREMS.md) · [The two sets of original proofs](../../research/2026-11-14/tenacious_d/PRINCIPIA_INTEGRATION.md) · [What remains open](../../research/2026-11-14/tenacious_d/NEXT_FOUNDATIONAL_THEOREM.md)

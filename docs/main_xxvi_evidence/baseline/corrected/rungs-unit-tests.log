@@ -1,0 +1,59 @@
+test_committed_results_record_a_clean_full_run (test_faces.CommittedResults.test_committed_results_record_a_clean_full_run) ... ok
+test_child_average_of_the_triangle_wave_is_constant (test_faces.Constants.test_child_average_of_the_triangle_wave_is_constant) ... ok
+test_coherent_control_and_single_deltas (test_faces.Constants.test_coherent_control_and_single_deltas) ... ok
+test_convexity_brute_force_agrees_with_the_certificate (test_faces.Constants.test_convexity_brute_force_agrees_with_the_certificate)
+Random points of the simplex never beat 1/60 (W1 and defect). ... ok
+test_dual_certificate_and_primal_point (test_faces.Constants.test_dual_certificate_and_primal_point) ... ok
+test_fifteen_point_minimum_is_the_provisional_constant (test_faces.Constants.test_fifteen_point_minimum_is_the_provisional_constant) ... ok
+test_fix_mass_lemma_equality_and_half_prefix (test_faces.Constants.test_fix_mass_lemma_equality_and_half_prefix) ... ok
+test_jump_lemma (test_faces.Constants.test_jump_lemma)
+LMF-05 (c): mass >= J in an arc of length l <= J forces W_1 >= (J - l)^2 / 4. ... ok
+test_kantorovich_bound_is_attained (test_faces.Constants.test_kantorovich_bound_is_attained) ... ok
+test_operators (test_faces.Constants.test_operators) ... ok
+test_provisional_threshold_is_refuted_by_an_explicit_shell (test_faces.Constants.test_provisional_threshold_is_refuted_by_an_explicit_shell) ... ok
+test_decimal_strings_are_truncations (test_faces.DataPath.test_decimal_strings_are_truncations) ... ok
+test_route_B_refuses_an_undecided_floor (test_faces.DataPath.test_route_B_refuses_an_undecided_floor) ... ok
+test_three_routes_agree_on_a_short_overlap (test_faces.DataPath.test_three_routes_agree_on_a_short_overlap) ... ok
+test_mode_one_and_mode_fifteen (test_faces.Faces.test_mode_one_and_mode_fifteen) ... ok
+test_unimodular_cosets (test_faces.Faces.test_unimodular_cosets) ... ok
+test_all_theorem_grade_checks_pass (test_faces.QuickProbe.test_all_theorem_grade_checks_pass) ... ok
+test_hostile_controls_are_on_the_far_side_of_every_threshold (test_faces.QuickProbe.test_hostile_controls_are_on_the_far_side_of_every_threshold) ... ok
+test_mutation_controls (test_faces.QuickProbe.test_mutation_controls) ... ok
+test_quick_mode_never_touches_the_holdout (test_faces.QuickProbe.test_quick_mode_never_touches_the_holdout) ... ok
+test_R0_diophantine_cost_on_finite_strings (test_faces.Rungs.test_R0_diophantine_cost_on_finite_strings)
+If every binary shell [M, 2M), M0 <= M <= M1, has change density >= c, then a run of ... ok
+test_R0_fails_on_runs_of_0_and_F_and_meets_the_mode_one_thresholds (test_faces.Rungs.test_R0_fails_on_runs_of_0_and_F_and_meets_the_mode_one_thresholds) ... ok
+test_R0_holds_R1_fails_on_one_nonzero_digit (test_faces.Rungs.test_R0_holds_R1_fails_on_one_nonzero_digit) ... ok
+test_R1_holds_R2_fails_on_two_alternating_long_runs (test_faces.Rungs.test_R1_holds_R2_fails_on_two_alternating_long_runs) ... ok
+test_binary_signed_representation_identity (test_faces.Rungs.test_binary_signed_representation_identity)
+xi - b_0 = sum_m (b_(m+1) - b_m) 2^(-(m+1)) on a rational point with periodic bits. ... ok
+test_period_k_rungs (test_faces.Rungs.test_period_k_rungs) ... ok
+test_L2_window_on_pi (test_rde.ContinuedFractionDictionary.test_L2_window_on_pi) ... ok
+test_legendre_regime (test_rde.ContinuedFractionDictionary.test_legendre_regime) ... ok
+test_locality_both_directions_exact (test_rde.ContinuedFractionDictionary.test_locality_both_directions_exact) ... ok
+test_two_convergent_decomposition (test_rde.ContinuedFractionDictionary.test_two_convergent_decomposition) ... ok
+test_dalzell_coefficient_is_a_power_of_two (test_rde.DalzellAndSeries.test_dalzell_coefficient_is_a_power_of_two) ... ok
+test_dalzell_weight_optimum (test_rde.DalzellAndSeries.test_dalzell_weight_optimum) ... ok
+test_series_self_certification_table (test_rde.DalzellAndSeries.test_series_self_certification_table) ... ok
+test_gaussian_saved_primes (test_rde.GaussianFamilies.test_gaussian_saved_primes) ... ok
+test_lemma_on_pi_and_reciprocal_pi (test_rde.GaussianFamilies.test_lemma_on_pi_and_reciprocal_pi) ... ok
+test_two_adic_shadow_lemma (test_rde.GaussianFamilies.test_two_adic_shadow_lemma) ... ok
+test_window_bounds (test_rde.LiouvilleExample.test_window_bounds) ... ok
+test_formula_reproduces_published_table (test_rde.RivoalImport.test_formula_reproduces_published_table) ... ok
+test_lambda_at_sixteen (test_rde.RivoalImport.test_lambda_at_sixteen) ... ok
+test_pade_forms_and_multiplier (test_rde.RivoalImport.test_pade_forms_and_multiplier) ... ok
+test_single_pole_source_is_log_16_over_15 (test_rde.RivoalImport.test_single_pole_source_is_log_16_over_15) ... ok
+test_certified_bounds_at_finite_n (test_rde.TiltedLegendreLog2.test_certified_bounds_at_finite_n) ... ok
+test_form_integrality_valuations_savings_sizes (test_rde.TiltedLegendreLog2.test_form_integrality_valuations_savings_sizes) ... ok
+test_rates_and_exponents (test_rde.TiltedLegendreLog2.test_rates_and_exponents) ... ok
+test_saved_primes_exist_and_mutation (test_rde.TiltedLegendreLog2.test_saved_primes_exist_and_mutation) ... ok
+test_symmetries_give_proportional_forms (test_rde.TiltedLegendreLog2.test_symmetries_give_proportional_forms) ... ok
+test_gain_is_exactly_the_S_adic_imbalance (test_rde.TransferenceLemma.test_gain_is_exactly_the_S_adic_imbalance) ... ok
+test_mutation_overclaimed_unit_is_rejected (test_rde.TransferenceLemma.test_mutation_overclaimed_unit_is_rejected) ... ok
+test_no_rescue_inequality (test_rde.TransferenceLemma.test_no_rescue_inequality) ... ok
+test_random_forms_never_violate_the_lemma (test_rde.TransferenceLemma.test_random_forms_never_violate_the_lemma) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 8.556s
+
+OK

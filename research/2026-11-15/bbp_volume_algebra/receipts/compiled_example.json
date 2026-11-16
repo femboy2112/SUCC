@@ -1,0 +1,461 @@
+{
+  "source": "four original signed poles, radix16, U0=0",
+  "word_semantics": "G_b(f * remaining_word), inclusive zero-seeded sum; empty word1",
+  "square_words": [
+    {
+      "coefficient": "32",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_1"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-16",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_4"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-16",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1",
+            "pole_1"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "16",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1",
+            "pole_4"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1",
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_1",
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-16",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_1"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_4"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4",
+            "pole_4"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4",
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_4",
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_5"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_1"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_5"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_4"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "2",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_5"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "2",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_5"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_5",
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-2",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_5",
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-8",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_6"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_1"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "4",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_6"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_4"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "2",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_6"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_5"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "2",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_6"
+          ]
+        },
+        {
+          "radix": "16",
+          "source_factors": [
+            "pole_6"
+          ]
+        }
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "stages": [
+        {
+          "radix": "256",
+          "source_factors": [
+            "pole_6",
+            "pole_6"
+          ]
+        }
+      ]
+    }
+  ],
+  "word_count": 26,
+  "exact_state_comparisons": 13,
+  "gamma_square_slots": [
+    {
+      "shift": 0,
+      "order": 1,
+      "coefficient": "-134/15",
+      "inverse_kernel_coefficient": "-134/15"
+    },
+    {
+      "shift": 0,
+      "order": 2,
+      "coefficient": "16",
+      "inverse_kernel_coefficient": "16"
+    },
+    {
+      "shift": 3,
+      "order": 1,
+      "coefficient": "34/3",
+      "inverse_kernel_coefficient": "34/3"
+    },
+    {
+      "shift": 3,
+      "order": 2,
+      "coefficient": "4",
+      "inverse_kernel_coefficient": "4"
+    },
+    {
+      "shift": 4,
+      "order": 1,
+      "coefficient": "0",
+      "inverse_kernel_coefficient": "0"
+    },
+    {
+      "shift": 4,
+      "order": 2,
+      "coefficient": "1",
+      "inverse_kernel_coefficient": "1"
+    },
+    {
+      "shift": 5,
+      "order": 1,
+      "coefficient": "-12/5",
+      "inverse_kernel_coefficient": "-12/5"
+    },
+    {
+      "shift": 5,
+      "order": 2,
+      "coefficient": "1",
+      "inverse_kernel_coefficient": "1"
+    }
+  ],
+  "gamma_square_taylor_through_6": [
+    "0",
+    "0",
+    "0",
+    "75/2",
+    "-295/4",
+    "10771/120",
+    "-4997/60"
+  ],
+  "proof": "THEOREMS.md VA-02/04/05",
+  "status": "EXACT_FINITE_COMPILED_EXAMPLE"
+}

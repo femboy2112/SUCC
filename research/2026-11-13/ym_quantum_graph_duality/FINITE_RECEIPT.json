@@ -1,0 +1,159 @@
+{
+  "S3_edge_mode_entanglement": {
+    "Schmidt_rank": 6,
+    "coarse_pure_state_purity": "1",
+    "entanglement_created_by_subdivision_in_extended_link_tensor_factorization": true,
+    "formal_entropy": "log(6)",
+    "group": "SUCC-S3",
+    "physical_purity_not_lost": true,
+    "refined_link_factor_reduced_purity": "1/6"
+  },
+  "S3_joint_two_loop_gauge_orbits": 11,
+  "S3_subdivision": {
+    "coarse_dimension": 6,
+    "fine_dimension": 36,
+    "gauge_average_equals_orthogonal_projection": true,
+    "gauge_detail_norm": "214624/45",
+    "group": "SUCC-S3",
+    "group_order": 6,
+    "haar_isometry": true,
+    "internal_gauge_invariant_dimension": 6,
+    "physical_norm": "1221706/225",
+    "pure_gauge_detail_dimension": 30
+  },
+  "SUCC_base16_conditional_haar": {
+    "E_child": "1573095/5285401",
+    "E_parent": "6103/5285401",
+    "parents": 1,
+    "q": 16,
+    "sample_count": 2299,
+    "wavelet_detail_energy": "1566992/5285401"
+  },
+  "YM_mass_gap": "OPEN",
+  "Z2_density_twirl_mutant": {
+    "density_trace": "1",
+    "density_twirl_does_not_enforce_gauss_law": true,
+    "gauge_odd_vector_physical_norm": "0",
+    "twirled_density_unchanged": true
+  },
+  "Z2_edge_mode_entanglement": {
+    "Schmidt_rank": 2,
+    "coarse_pure_state_purity": "1",
+    "entanglement_created_by_subdivision_in_extended_link_tensor_factorization": true,
+    "formal_entropy": "log(2)",
+    "group": "Z/2",
+    "physical_purity_not_lost": true,
+    "refined_link_factor_reduced_purity": "1/2"
+  },
+  "claim_status": "EXACT FINITE CALCULATIONS + PAPER PROOFS; NOT YANG-MILLS CONTINUUM",
+  "finite_Z2_Hamiltonian": {
+    "continuum_mass_gap_claimed": false,
+    "determinant": "8",
+    "discriminant": "68",
+    "formal_gap": "2*sqrt(lambda^2+16)",
+    "lambda": "1",
+    "matrix": [
+      [
+        "4",
+        "-4"
+      ],
+      [
+        "-4",
+        "6"
+      ]
+    ],
+    "physical_dimension": 2,
+    "trace": "10"
+  },
+  "finite_reflection_positive_Gram": {
+    "full_OS_QFT_claimed": false,
+    "gram": [
+      [
+        "1",
+        "1/4",
+        "31/32"
+      ],
+      [
+        "1/4",
+        "29/64",
+        "379/512"
+      ],
+      [
+        "31/32",
+        "379/512",
+        "6445/4096"
+      ]
+    ],
+    "reflected_positive_by_factorization": true,
+    "transfer_matrix": [
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "5/8"
+      ]
+    ]
+  },
+  "full_SUCC_suite_run_by_this_script": false,
+  "graph_vs_matrix_path_n3": "-368",
+  "module_sha256": "c791fe56cad4e254ad7b0247202d429c0926fa7bfffa374560979bd5c3afa31a",
+  "new_Z2_physical_cycle": {
+    "coarse_gauge_quotient_dimension": 2,
+    "different_from_pure_subdivision": true,
+    "exhibited_detail_norm": "1",
+    "fine_gauge_quotient_dimension": 4,
+    "physical_new_detail_dimension": 2
+  },
+  "nontrivial_RG_source_transport_defect": {
+    "Haar_reference_commutes": false,
+    "bare_action_reuse_is_exact": false,
+    "coarse_law": [
+      "3/4",
+      "1/4"
+    ],
+    "coarse_wilson_mean": "1/2",
+    "fine_product_pushforward": [
+      "5/8",
+      "3/8"
+    ],
+    "fine_pushed_wilson_mean": "1/4",
+    "source_transport_TV_defect": "1/8"
+  },
+  "original_YM_Lean_proof_rebuilt": false,
+  "physical_margin_linear": {
+    "actual_YM_source_bound": false,
+    "excited_transfer_eigenvalue": "15/16",
+    "family": "linear",
+    "physical_scale_normalized_margin": "1/2",
+    "spacing": "1/8",
+    "wavelet_Poincare_constant": "1/16"
+  },
+  "physical_margin_quadratic": {
+    "actual_YM_source_bound": false,
+    "excited_transfer_eigenvalue": "31/32",
+    "family": "quadratic",
+    "physical_scale_normalized_margin": "1/4",
+    "spacing": "1/8",
+    "wavelet_Poincare_constant": "1/32"
+  },
+  "source_contract": "SUCC PR #614 finite group S3 source and Z2 lattice gauge toy",
+  "tests_sha256": "40bbc8d1ec216dd45c366befa989a508cec7ea574e5634082840d5aeba479787",
+  "toy_Wilson_source": {
+    "Gibbs_orbit_probabilities": [
+      "3/4",
+      "1/4"
+    ],
+    "Haar_normalized_partition": "2",
+    "gauge_invariant": true,
+    "gauge_orbit_weights": [
+      "3",
+      "1"
+    ],
+    "interacting_law_is_Haar": false,
+    "wilson_loop_expectation": "1/2"
+  },
+  "upstream_succ_main_at_start": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "warning": "Gauge-invariant Hilbert details, finite positivity and graph path counts are NOT a 4D source-selected mass-gap estimate."
+}

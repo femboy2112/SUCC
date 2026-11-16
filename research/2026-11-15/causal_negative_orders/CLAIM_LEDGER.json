@@ -1,0 +1,153 @@
+{
+  "schema": "succ-claim-ledger-v1",
+  "research_round": "causal-negative-orders-2026-11-15",
+  "parent_commit": "55bcde3d0c5ceb47d50cb499bd39f4a97c96bfc5",
+  "authority": "Paper proofs for universal claims; separately scoped implementation and numeric evidence",
+  "academic_priority": "UNVERIFIED; classical and inherited objects are credited",
+  "claims": [
+    {
+      "id": "CN-01",
+      "status": "DISCLOSED",
+      "claim": "Classical entire causal convolution group; Phi_-m=D^m delta; D X-X D=I",
+      "domain": "Causal distributions on R supported in [0,infinity); specified positive-half-plane germ",
+      "proof": "THEOREMS.md#cn-01-a-copy-of-the-integers-inside-forward-supported-volumes",
+      "provenance_and_controls": "Classical fractional/distribution calculus; source refs in PROVENANCE.md",
+      "boundary": "Forward support is preserved; positivity is not; negative order is not negative time."
+    },
+    {
+      "id": "CN-02",
+      "status": "DISCLOSED",
+      "claim": "Signed forward atom differences converge to delta derivatives with mhM/2 error and 2^m/h^m noise gain",
+      "domain": "Integer m>=0, h>0; test functions C^(m+1) with the declared derivative bound",
+      "proof": "THEOREMS.md#cn-02-constructing-negative-orders-from-forward-samples",
+      "provenance_and_controls": "Iterated fundamental theorem of calculus; exact stencil and mutation controls",
+      "boundary": "A finite noisy observer needs a resolution/error budget."
+    },
+    {
+      "id": "CN-03",
+      "status": "DISCLOSED",
+      "claim": "Original BBP positive-depth law extends to an entire signed convolution group with exact inverse delta polynomial and decaying remainder",
+      "domain": "Literal four poles; complex source depth; positive Laplace variable; specified logarithm branch",
+      "proof": "THEOREMS.md#cn-03-the-full-original-source-has-a-signed-inverse-volume-group",
+      "provenance_and_controls": "Positive roots and Levy law inherited; explicit negative-depth interface proved here",
+      "boundary": "No bounded inverse on arbitrary continuous data and no backward BBP chronology."
+    },
+    {
+      "id": "CN-04",
+      "status": "DISCLOSED",
+      "claim": "Normalized Mellin values at negative integers equal signed endpoint derivatives",
+      "domain": "Smooth endpoint, locally integrable interior, rapid decay; finite Laurent principal part handled explicitly",
+      "proof": "THEOREMS.md#cn-04-negative-mellin-values-are-endpoint-derivative-reports",
+      "provenance_and_controls": "Classical endpoint subtraction and Gamma residues",
+      "boundary": "Continued value is not the divergent literal integral."
+    },
+    {
+      "id": "CN-05",
+      "status": "DISCLOSED",
+      "claim": "Native full BBP family has only the simple real zero at zero and is negative at every negative real order",
+      "domain": "0<=regulator<1; original four source coefficients; actual pi specialization only at s=1,z=1/16",
+      "proof": "THEOREMS.md#cn-05-the-authentic-source-continues-but-has-no-negative-even-zeros",
+      "provenance_and_controls": "Inherited entire Lerch family plus explicit all-real corollary",
+      "boundary": "Changing the regulator to one changes the boundary problem."
+    },
+    {
+      "id": "CN-06",
+      "status": "DISCLOSED",
+      "claim": "Face-depth k gives exactly the simple real zeros 0,-1,...,-k, and the same endpoint order gives Gamma(k+2)",
+      "domain": "Integer k>=0 and 0<=z<1; positive rate measure with all moments",
+      "proof": "THEOREMS.md#cn-06-the-gammak2-faces-have-exactly-k1-simple-real-zeros",
+      "provenance_and_controls": "Explicit rate-measure construction, rising-factorial identity, exact finite identities",
+      "boundary": "Complex residual zeros are not classified; the Gamma tail zoom fixes k."
+    },
+    {
+      "id": "CN-07",
+      "status": "DISCLOSED",
+      "claim": "Original j-fold convolution has exactly 2j-1 consecutive simple real Mellin zeros and first contact -15^j",
+      "domain": "Integer j>=1 and positive age tilt",
+      "proof": "THEOREMS.md#cn-07-the-convolution-gamma2j-hierarchy-has-the-analogous-contact",
+      "provenance_and_controls": "Positive simplex mixture of literal source intervals; inherited kernel compiler",
+      "boundary": "Convolution depth j differs from face depth k and Mellin order s."
+    },
+    {
+      "id": "CN-08",
+      "status": "DISCLOSED",
+      "claim": "Normalized growing original faces converge locally uniformly on C to reciprocal Gamma",
+      "domain": "k>=2, native regulator, A_k=log(k)/8 and normalization B_k(1)",
+      "proof": "THEOREMS.md#cn-08-infinitely-many-normalized-faces-recover-reciprocal-gamma",
+      "provenance_and_controls": "Beta scaling and eventual positive/inverse moment proof; independent coordinate quadrature diagnostic",
+      "boundary": "Without normalization limit is zero; finite-depth convergence can be slow; no numerical interval or uniform rate claimed."
+    },
+    {
+      "id": "CN-09a",
+      "status": "DISCLOSED",
+      "claim": "Universal positive Pascal-face averaging gives eta and finite negative-order values of zeta",
+      "domain": "Universal stride-one source and geometric grade weights 2^-n-1",
+      "proof": "THEOREMS.md#cn-09-what-selects-zetas-negative-even-integers",
+      "provenance_and_controls": "Explicitly inherited ZETA_NEGATIVE_INTEGER_TANGENT_FAMILY.md ZT1-3",
+      "boundary": "This is not a newly discovered zeta construction or ordinary divergent summation."
+    },
+    {
+      "id": "CN-09b",
+      "status": "DISCLOSED",
+      "claim": "The identical grade averaging on original BBP faces gives value 8 at s=-2",
+      "domain": "Native BBP kernel, stride eight, same positive weights",
+      "proof": "THEOREMS.md#cn-09-what-selects-zetas-negative-even-integers",
+      "provenance_and_controls": "Exact kernel aggregation and -112/2+256/4=8",
+      "boundary": "This refutes automatic source identification, not every possible future intertwiner."
+    },
+    {
+      "id": "CN-09c",
+      "status": "DISCLOSED",
+      "claim": "Zeta negative-even zeros follow from the parity of its specified positive counting kernel",
+      "domain": "Bose Laurent germ or equivalent Fermi analytic germ; classical normalization",
+      "proof": "THEOREMS.md#cn-09-what-selects-zetas-negative-even-integers",
+      "provenance_and_controls": "Endpoint reflection identity; Bernoulli heat inversion; DLMF primary sources",
+      "boundary": "The Gaussian half-argument requires its declared quadratic lattice map."
+    },
+    {
+      "id": "CF-01",
+      "status": "REFUTED",
+      "claim": "Gamma shape alone forces zeta-style negative-even zeros",
+      "domain": "Proposed generic implication across positive causal kernels",
+      "proof": "THEOREMS.md#cn-09-what-selects-zetas-negative-even-integers",
+      "provenance_and_controls": "Original BBP B(-2)=-112; positive Bose perturbation gives epsilon*2n*(2n-1)",
+      "boundary": "A source-specific reflection theorem is not ruled out."
+    },
+    {
+      "id": "CF-02",
+      "status": "REFUTED",
+      "claim": "Compactness or density alone supplies inverse dynamics and analytic continuation",
+      "domain": "General compact causal systems without group or analytic hypotheses",
+      "proof": "THEOREMS.md#cn-10-geometry-identification-and-stability-boundaries",
+      "provenance_and_controls": "Constant map on compact interval; path and holomorphic-germ requirements",
+      "boundary": "Compact reversible groups do permit approximation of inverse powers in their topology."
+    },
+    {
+      "id": "CF-03",
+      "status": "REFUTED",
+      "claim": "All positive integer samples, positivity and normalization uniquely determine negative orders",
+      "domain": "Entire causal families without the semigroup law",
+      "proof": "THEOREMS.md#cn-10-geometry-identification-and-stability-boundaries",
+      "provenance_and_controls": "Explicit positive probability rival agrees at every positive integer and changes every negative one",
+      "boundary": "A specified germ or full convolution law adds real discriminating information."
+    },
+    {
+      "id": "OBS-01",
+      "status": "OBSERVED",
+      "claim": "Finite exact audits and numerical coordinate comparisons agree on their stated domains",
+      "domain": "Bounded implementation ranges, exact Fraction/SymPy checks and separately labelled mpmath diagnostics",
+      "proof": "VALIDATION.md",
+      "provenance_and_controls": "Raw receipts, source hashes, mutation controls",
+      "boundary": "Finite computation does not prove analytic continuation or an all-depth limit."
+    },
+    {
+      "id": "OPEN-01",
+      "status": "UNVERIFIED",
+      "claim": "Source-preserving BBP to zeta reflection and selected chronological cancellation",
+      "domain": "Original poles, zero seed, native regulator and literal carry/phase retained",
+      "proof": "NEXT.md",
+      "provenance_and_controls": "No such intertwiner or all-horizon signed estimate supplied",
+      "boundary": "Pi normality and RH remain open; an explicit map and discriminating estimate are the next lamp."
+    }
+  ]
+}

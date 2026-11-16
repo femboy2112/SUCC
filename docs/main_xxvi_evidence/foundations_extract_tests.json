@@ -1,0 +1,28 @@
+[
+  {
+    "head": "96f76f27ae1e68d28ca94d5b8a7e2504a76f1d62",
+    "command": [
+      "python",
+      "exact_probe.py"
+    ],
+    "cwd": "/workspace/scratch/f2795564bfc4/foundation_extracts/research/2026-11-15/compiled_knowledge_probe",
+    "exit": 0,
+    "seconds": 0.06870544499906828,
+    "output": "{\"finite_sources_checked\": 510, \"fresh_cached_queries_checked\": 87380, \"max_discovery_calls_for_8_bits\": 255, \"stale_source_mismatches_checked\": 510, \"unresolved_rival_pairs\": 8}\n"
+  },
+  {
+    "head": "6255b84b538994975910cc738761620d3b69f9ff",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-p",
+      "test_*.py"
+    ],
+    "cwd": "/workspace/scratch/f2795564bfc4/foundation_extracts/research/rh_observer_extension",
+    "exit": 0,
+    "seconds": 0.20111402799921052,
+    "output": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.101s\n\nOK\n"
+  }
+]

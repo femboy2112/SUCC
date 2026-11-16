@@ -1,0 +1,96 @@
+{
+  "project": "SUCC",
+  "base_commit": "89c6f645938c3f1e4f002f5e81411f458db1689c",
+  "generated_utc_date": "2026-11-15",
+  "files": [
+    {
+      "path": "observational_succ/interferometer_atlas.py",
+      "bytes": 12036,
+      "sha256": "3eaa151fe83ecaec1bcebfa30383172e5fe23c7e038d8f8080dc950b97fc86e3",
+      "git_blob_sha1": "152c05dc3c616e00c2fc1d0d43e3226d9809605e"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/INSTRUMENT_LEDGER.json",
+      "bytes": 14046,
+      "sha256": "d481151529e0911932ae0e8dd9052e060540a011fee0f9ae99f4f5b86c85633e",
+      "git_blob_sha1": "0d9b20acda35aadeecb911e3d7addb8edb810f1e"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/NEXT.md",
+      "bytes": 3308,
+      "sha256": "443fc24e5446a102fa72294b0d7f9c0b70021a7db880396ae42ab81290085c43",
+      "git_blob_sha1": "513f052cf850828aec1a30df0c5fb38eabd39184"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/README.md",
+      "bytes": 2095,
+      "sha256": "caa31c3fd2704743d1a2c04de27c7ec3931440a277ee82941d757615264c4d2d",
+      "git_blob_sha1": "619fc65901f590077e59cf1bc29029ff67aef45f"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/THEOREMS.md",
+      "bytes": 25714,
+      "sha256": "b464d79659131872154b6909bc252c26dba28638751f61c419cc6aa044628808",
+      "git_blob_sha1": "a9ee009e4d64ec20dd58e3bcc04b02e51746641e"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/VALIDATION.md",
+      "bytes": 7147,
+      "sha256": "3754d0f6e1250958e546b6bb66154f2c73cf1fd863c8a4976ee1725c7eecccb9",
+      "git_blob_sha1": "516b080b36951c35823aab08411ab69a3a568d95"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/independent_oracle.py",
+      "bytes": 4819,
+      "sha256": "019d4f1d2bc72456579ed1df09e06181aa088b6d3a8b6e2351da8cfcdc900c96",
+      "git_blob_sha1": "10f5073b1d2659c47f9e435ee3c4ac92b84e7de0"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/independent_symbolic.py",
+      "bytes": 2042,
+      "sha256": "fd1f10bd5c1f0d273fd255aac86ee9ecc5d417344cf916fdee57cec9581dc040",
+      "git_blob_sha1": "ede217547a446fea3667a76cce6648418b6642e4"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/probe.py",
+      "bytes": 2209,
+      "sha256": "a5795c6081453d7ad9536c04e61c2307de0d7ffc1bafb4136106fc8893ed4e44",
+      "git_blob_sha1": "2ea84535ef69ca555c8d2264318716a43626eac8"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/receipts/CERTIFIED_SOURCE_SHELLS.json",
+      "bytes": 2287,
+      "sha256": "0acfbcb35552ed29b87243876f0489345d8e25d504936ec5ed3977a0bb078797",
+      "git_blob_sha1": "db16e1ca4a2b5bfdebf90d6330cfb31368356b46"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/receipts/FOCUSED_TESTS.log",
+      "bytes": 98,
+      "sha256": "f432c15e4406c4fe0e77ac968b914a79c0f044f31ce5d984f8598244b773f6c4",
+      "git_blob_sha1": "cac883ad8c7569691ad9abf8bb7bc133af78dc88"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/receipts/INDEPENDENT_ORACLE.json",
+      "bytes": 2126,
+      "sha256": "63cee33ba306620f2dd87ae095abdd55587ccd9fe44cdee58bfd438bcbef062f",
+      "git_blob_sha1": "8b7fed04b5561f247c7b7879e6f26f613088d26d"
+    },
+    {
+      "path": "research/2026-11-15/interferometer_atlas/receipts/SYMBOLIC_ORACLE.json",
+      "bytes": 396,
+      "sha256": "8f74614f0b9a8ec2989c9e6cf7850154d9edee2be7272790537a192dc918d800",
+      "git_blob_sha1": "4256d2e02d4141e71622b8299fc676ce43ce0d82"
+    },
+    {
+      "path": "tests/test_interferometer_atlas.py",
+      "bytes": 9165,
+      "sha256": "e3643721c501c546fa9b6789a8c86add6934abbba490f20f6c49af2e045250af",
+      "git_blob_sha1": "0757a37673afae8639af2033877698e94e36e162"
+    }
+  ],
+  "test_status": "30/30 local focused; source semigroup and full repo not re-run",
+  "claims": {
+    "pi_normality": "OPEN",
+    "RH": "OPEN"
+  }
+}

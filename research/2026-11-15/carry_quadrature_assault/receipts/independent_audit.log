@@ -1,0 +1,296 @@
+{
+  "audit_file_sha256": "e12dd0d2b36c7f14e3665255f1e07a02b95b7b11b7707906a9aa19b38c8ca531",
+  "audit_version": 1,
+  "authentic_source": {
+    "all_pair_state_isometries": 32896,
+    "extra_states_for_echoes_and_loops": 16,
+    "finite_target_hits": 129,
+    "first_two_nonzero_states": [
+      "47/15",
+      "205826/4095"
+    ],
+    "loop_depths": [
+      0,
+      8
+    ],
+    "loop_start_indices": [
+      0,
+      16
+    ],
+    "original_zero_seed": true,
+    "positive_density_inferred": false,
+    "source_identity_indices": [
+      1,
+      256
+    ],
+    "state_identity_indices": [
+      0,
+      256
+    ],
+    "states_sha256": "332a2050be46c1d9e1c9891065947443c08893284021b201dd7b016f8a1e8779",
+    "target_hit_index_range": [
+      1,
+      256
+    ]
+  },
+  "check_counts": {
+    "echo.amplification_scale": 257,
+    "echo.documented_lower_bound": 257,
+    "echo.finite_source_identity": 253,
+    "echo.quarter_carry_decoder": 253,
+    "echo.reference_decoder": 506,
+    "echo.reference_nonzero_exponent": 506,
+    "echo.sampling_symmetric_difference": 253,
+    "echo.uniform_rational_interval": 257,
+    "mahler.all_pair_correction_contraction": 4704,
+    "mahler.all_pair_source_isometry": 4512,
+    "mahler.all_pair_state_isometry": 4704,
+    "mahler.authentic_low_bits": 192,
+    "mahler.authentic_low_source_bits": 192,
+    "mahler.changed_literal_source": 4,
+    "mahler.coefficient_divisibility": 192,
+    "mahler.exact_origin": 4,
+    "mahler.finite_interpolation": 192,
+    "mahler.locked_carry_floor": 192,
+    "mahler.odd_diagonal_state": 192,
+    "mahler.odd_grid_resolution": 192,
+    "mahler.positive_completed_tail": 192,
+    "mahler.positive_odd_source": 192,
+    "mahler.real_approximation": 192,
+    "mahler.rounding_bound": 192,
+    "mahler.source_error_identity": 188,
+    "mahler.strong_correction_divisibility": 192,
+    "polynomial.lower_identity": 1,
+    "polynomial.lower_shift_identity": 1,
+    "polynomial.positive_shift_coefficients": 1,
+    "polynomial.upper_identity": 1,
+    "source.all_pair_isometry": 32896,
+    "source.carry_cofactor_phase": 257,
+    "source.dyadic_carry_transport": 153,
+    "source.dyadic_next_bit_flip": 153,
+    "source.expanded_four_pole_identity": 256,
+    "source.fourth_root_clock": 257,
+    "source.literal_carry_recurrence": 256,
+    "source.lower_bound": 256,
+    "source.odd_denominators": 257,
+    "source.spatial_nibble": 257,
+    "source.upper_bound": 255,
+    "tm.exact_winding_certificate": 123,
+    "tm.fractional_interval_certificate": 124,
+    "tm.interval_floor_certificate": 124,
+    "tm.interval_nearest_certificate": 124,
+    "tm.no_target_event": 124,
+    "tm.shell_packet_balance": 60,
+    "tm.tail_enclosure_separation": 124
+  },
+  "claims": {
+    "authentic_positive_shell_density_proved": false,
+    "finite_calibration_passed": true,
+    "finite_computation_used_as_infinite_proof": false,
+    "pi_normality_proved": false
+  },
+  "fixed_L_mahler_controls": [
+    {
+      "carry_residue_at_every_positive_checked_index": 3,
+      "coefficient_indices": [
+        1,
+        48
+      ],
+      "coefficient_samples": {
+        "1": "81648/6353",
+        "2": "440712512/2448001",
+        "48": "26010397185162761382481160174565770387017491409044641324539671304910425494434912249987020619776/114208743143074785134832694656499712001"
+      },
+      "coefficients_sha256": "6674c255919e6e0ee6090ed4e850ccde4f73f6de5e8c3933150bba6ffc44a1f8",
+      "control": "L2_a1_1",
+      "infinite_analyticity_or_endpoint_inferred_from_checks": false,
+      "literal_four_pole_source_preserved": false,
+      "maximum_rounding_denominator_bits": 127,
+      "prescribed_endpoint": "1",
+      "retained_authentic_bits_L": 2,
+      "scope": "finite calibration of the fixed-L analytic construction",
+      "source_indices": [
+        1,
+        48
+      ],
+      "source_pair_count": 1128,
+      "state_indices": [
+        0,
+        48
+      ],
+      "state_pair_count": 1176,
+      "states_sha256": "9943104f705402ec3cf54bfe5a5288a2f2f80fcb4dcc5e1bf7b07549a46369eb",
+      "target_events": 0
+    },
+    {
+      "carry_residue_at_every_positive_checked_index": 3,
+      "coefficient_indices": [
+        1,
+        48
+      ],
+      "coefficient_samples": {
+        "1": "5600/108001",
+        "2": "2030912/2448001",
+        "48": "118148246336665951234123120536774208602083942301870233205968508809678565296607088514386886656/114208743143074785134832694656499712001"
+      },
+      "coefficients_sha256": "758406847fdd86bde92e613691d32a727076669709913b965e2630e8cd60c79d",
+      "control": "L2_a1_5",
+      "infinite_analyticity_or_endpoint_inferred_from_checks": false,
+      "literal_four_pole_source_preserved": false,
+      "maximum_rounding_denominator_bits": 127,
+      "prescribed_endpoint": "1/5",
+      "retained_authentic_bits_L": 2,
+      "scope": "finite calibration of the fixed-L analytic construction",
+      "source_indices": [
+        1,
+        48
+      ],
+      "source_pair_count": 1128,
+      "state_indices": [
+        0,
+        48
+      ],
+      "state_pair_count": 1176,
+      "states_sha256": "3eee1bf2b77b706315c4d2f0a63101b283ef057bd8d30d2850237968f95e6645",
+      "target_events": 0
+    },
+    {
+      "carry_residue_at_every_positive_checked_index": 3,
+      "coefficient_indices": [
+        1,
+        48
+      ],
+      "coefficient_samples": {
+        "1": "88832000/6912001",
+        "2": "28205600768/156672001",
+        "48": "1664665419850416728478794251172209304754771555459344004873153023254560547238727001791648413777920/7309359561156786248629292458015981568001"
+      },
+      "coefficients_sha256": "28d828f09598af25eafa1e0e3ca673601ab3a98b4e9181c3fd1d1c05f98c0f7c",
+      "control": "L8_a1_1",
+      "infinite_analyticity_or_endpoint_inferred_from_checks": false,
+      "literal_four_pole_source_preserved": false,
+      "maximum_rounding_denominator_bits": 133,
+      "prescribed_endpoint": "1",
+      "retained_authentic_bits_L": 8,
+      "scope": "finite calibration of the fixed-L analytic construction",
+      "source_indices": [
+        1,
+        48
+      ],
+      "source_pair_count": 1128,
+      "state_indices": [
+        0,
+        48
+      ],
+      "state_pair_count": 1176,
+      "states_sha256": "ef1dfc2506b3b94cba2df7c6b753714c1c9f0cee5a462aabf30156958e6f1c15",
+      "target_events": 0
+    },
+    {
+      "carry_residue_at_every_positive_checked_index": 3,
+      "coefficient_indices": [
+        1,
+        48
+      ],
+      "coefficient_samples": {
+        "1": "358400/6912001",
+        "2": "129978368/156672001",
+        "48": "7561487765546620878983879714353549350468199192606459040511058372183380865069052866859072749568/7309359561156786248629292458015981568001"
+      },
+      "coefficients_sha256": "bac69a7e05b1cb4e1479c20773d86ec7755e68d9941e6b8ba0a1147acd216b45",
+      "control": "L8_a1_5",
+      "infinite_analyticity_or_endpoint_inferred_from_checks": false,
+      "literal_four_pole_source_preserved": false,
+      "maximum_rounding_denominator_bits": 133,
+      "prescribed_endpoint": "1/5",
+      "retained_authentic_bits_L": 8,
+      "scope": "finite calibration of the fixed-L analytic construction",
+      "source_indices": [
+        1,
+        48
+      ],
+      "source_pair_count": 1128,
+      "state_indices": [
+        0,
+        48
+      ],
+      "state_pair_count": 1176,
+      "states_sha256": "469eb636d337089acbd44008ee1f24e16e64d64eb91209e8398bbb9a4de98306",
+      "target_events": 0
+    }
+  ],
+  "floating_point_used": false,
+  "method": "standalone Python standard library exact arithmetic",
+  "observational_succ_imports": false,
+  "polynomial_certificates": {
+    "coefficient_order": "ascending powers of t; n=t+1",
+    "lower_shift_coefficients": [
+      2783,
+      12770,
+      19336,
+      9664
+    ],
+    "scope": "exact symbolic identities used in the documented tail proof",
+    "upper_shift_coefficients": [
+      225,
+      2910,
+      7672,
+      5696
+    ]
+  },
+  "rounding_convention": "nearest integer; exact ties toward positive infinity",
+  "source_excitation": {
+    "additional_echo_indices": [
+      512,
+      1024,
+      4096,
+      65536
+    ],
+    "complex_identity_method": "finite exact group algebra of Q/Z",
+    "echo_indices": [
+      4,
+      256
+    ],
+    "exact_echo_interval": [
+      "1/128",
+      "1/4"
+    ],
+    "readout_thetas": [
+      "1",
+      "1/4"
+    ],
+    "signed_density_bound_inferred": false,
+    "trigonometric_numerics_used": false,
+    "uniform_norm_bounds": {
+      "authority": "documented analytic sine bound; not evaluated numerically",
+      "theta_1": "|J| > 2 sin(pi/128)",
+      "theta_1_over_4": "|J| > 2 sin(pi/512)"
+    }
+  },
+  "status": "PASS",
+  "thue_morse_control": {
+    "completed_endpoint_digit_set": [
+      0,
+      3
+    ],
+    "enclosure_authority": "digit tail bound and documented n^-2 source-tail theorem",
+    "endpoint_enclosure_width": "1/(5*16^160)",
+    "floor_certificates": 124,
+    "irrationality_exponent_tested_or_inferred": false,
+    "nearest_integer_certificates": 124,
+    "nonzero_positive_packets": 62,
+    "original_four_pole_forcing_preserved": true,
+    "original_zero_seed_preserved": false,
+    "prefix_length": 160,
+    "scope": "finite rational interval certificates; universal proof is in WINDING_PACKETS.md",
+    "state_index_range": [
+      5,
+      128
+    ],
+    "tail_remainder_bound": "16^(-12)/(64*(n+12)^2)",
+    "tail_terms": 12,
+    "target_events": 0,
+    "winding_certificates": 123
+  },
+  "total_exact_assertions": 55022
+}

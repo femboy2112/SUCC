@@ -1,0 +1,137 @@
+{
+  "all_object_based_proofs_ruled_out": false,
+  "checks": {
+    "anchor_free_braid": 48,
+    "anchor_free_composition": 48,
+    "anchor_is_necessary": 3,
+    "approximate_braid_bound": 16,
+    "carrier_cost_identity": 6,
+    "coherent_transport_preserves_count": 1,
+    "different_embedding": 1,
+    "entropy_controls": 6,
+    "entropy_precision_guard": 1,
+    "fair_order_control": 8,
+    "finite_horizon": 28,
+    "histogram_assignment_count": 1,
+    "joint_coefficient_vs_sieve": 509,
+    "orientation_counterexample": 1,
+    "pairwise_blindness": 3,
+    "permanent_source_defect": 5,
+    "premature_prefix_control": 1,
+    "same_spectrum": 1,
+    "square_not_absolute_square": 1,
+    "transport_breaks_braid": 1,
+    "transport_preserves_anchor": 1,
+    "unit_contamination": 1
+  },
+  "coherently_transported_sum100": 12,
+  "entropy_controls": {
+    "bloated": {
+      "all_one_probability": "1/2",
+      "carrier_bits": "3",
+      "carrier_code_bits": "3",
+      "conditional_local_bits": "0",
+      "extra_carrier_bits": "2",
+      "gain_over_separate": "-1",
+      "joint_bits": "1",
+      "residual_total_correlation": "0",
+      "separate_bits": "2",
+      "total_correlation": "1"
+    },
+    "independent": {
+      "all_one_probability": "1/4",
+      "carrier_bits": "0",
+      "carrier_code_bits": "2",
+      "conditional_local_bits": "2",
+      "extra_carrier_bits": "0",
+      "gain_over_separate": "0",
+      "joint_bits": "2",
+      "residual_total_correlation": "0",
+      "separate_bits": "2",
+      "total_correlation": "0"
+    },
+    "opposite": {
+      "all_one_probability": "0",
+      "carrier_bits": "1",
+      "carrier_code_bits": "1",
+      "conditional_local_bits": "0",
+      "extra_carrier_bits": "0",
+      "gain_over_separate": "1",
+      "joint_bits": "1",
+      "residual_total_correlation": "0",
+      "separate_bits": "2",
+      "total_correlation": "1"
+    },
+    "parity": {
+      "all_one_probability": "0",
+      "carrier_bits": "2",
+      "carrier_code_bits": "2",
+      "conditional_local_bits": "0",
+      "extra_carrier_bits": "0",
+      "gain_over_separate": "1",
+      "joint_bits": "2",
+      "residual_total_correlation": "0",
+      "separate_bits": "3",
+      "total_correlation": "1"
+    },
+    "shared": {
+      "all_one_probability": "1/2",
+      "carrier_bits": "1",
+      "carrier_code_bits": "1",
+      "conditional_local_bits": "0",
+      "extra_carrier_bits": "0",
+      "gain_over_separate": "1",
+      "joint_bits": "1",
+      "residual_total_correlation": "0",
+      "separate_bits": "2",
+      "total_correlation": "1"
+    },
+    "unexplained": {
+      "all_one_probability": "1/2",
+      "carrier_bits": "0",
+      "carrier_code_bits": "2",
+      "conditional_local_bits": "2",
+      "extra_carrier_bits": "0",
+      "gain_over_separate": "0",
+      "joint_bits": "1",
+      "residual_total_correlation": "1",
+      "separate_bits": "2",
+      "total_correlation": "1"
+    }
+  },
+  "entropy_units": "exact rational bits",
+  "failures": 0,
+  "finite_computation_proves_universal_claims": false,
+  "goldbach_proved": false,
+  "histogram": {
+    "1": 25,
+    "2": 34,
+    "3": 21,
+    "4": 11,
+    "5": 4,
+    "6": 2
+  },
+  "histogram_assignment_control": {
+    "conditional_entropy_if_uniform": "log2(214580985024058001751101636543937416253673591982307675264000)",
+    "fixed_width_bits_required": 198,
+    "is_lower_bound_for_actual_arithmetic_description": false,
+    "labels": 97,
+    "number_of_assignments": "214580985024058001751101636543937416253673591982307675264000"
+  },
+  "joint_coefficient_targets": {
+    "all_integers": true,
+    "max": 512,
+    "min": 4
+  },
+  "ordinary_sum100": 12,
+  "parent_commit": "836d03806183c1f73488dca1d37e149a9826eb53",
+  "schema": "shared-carrier-v1",
+  "source_sha256": {
+    "carrier_probe.py": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d",
+    "cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+    "prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50"
+  },
+  "total_checks": 691,
+  "transported_sum100": 0,
+  "universal_compression_advantage_claimed": false
+}

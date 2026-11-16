@@ -1,0 +1,19 @@
+{
+  "scope": "finite n=1..512, NOT RH proof",
+  "n_min": 1,
+  "n_max": 512,
+  "exp_degree": 16,
+  "log_terms": 30,
+  "strict_rational_certificates": 511,
+  "equality_at_one": 1,
+  "inconclusive": 0,
+  "negative_certificates": 0,
+  "minimal_positive_margin_at_n": 2,
+  "minimal_positive_lower_gap_numerator": "1649470203068118369408898372268187869921150263699346395498506597720948558511",
+  "minimal_positive_lower_gap_denominator": "5200610960125590953998585464432835578918457031250000000000000000000000000000",
+  "minimal_positive_lower_gap_decimal_for_display": "0.317168543410577",
+  "max_enclosure_width_decimal_for_display": "1.286303498694e+00",
+  "time_seconds_observed": 16.847,
+  "source": "Lagarias exact divisor-sum criterion, proof imported, rational series bounds internally derived",
+  "rh_proved": false
+}

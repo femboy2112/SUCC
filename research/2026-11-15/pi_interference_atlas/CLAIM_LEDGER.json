@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "parent_commit": "8097d9e802da1d83a615d8812e74279820f5ae7e",
+  "theorem_sha256": "00066c945a9e8896f09e08405ffb89172ac7542a7dc5c0f4fdf3453cd4f7ea5e",
+  "scope": "Paper proofs, finite observations, disproved shortcuts and remaining arithmetic debt are separate. Catalogue relation labels are not claim truth states. No formal proof-assistant verification of IA01-12 is claimed.",
+  "claims": [
+    {
+      "id": "IA-01",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Finite Hermitian signed intensity compiler",
+      "boundary": "Gaussian-rational Hermitian form on declared bounded channels; explicit normalization, sampling and noise costs.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-01"
+      }
+    },
+    {
+      "id": "IA-02",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Finite unit-character closure and recurrence quotient",
+      "boundary": "Finite unit-phase grammar; fixed lag words reduce through P(16), with graph-Haar benchmark and explicit raw forcing compensation.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-02"
+      }
+    },
+    {
+      "id": "IA-03",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Character report identifiability and source seed kernels",
+      "boundary": "Jointly retained complex character values on the candidate torus; separate same-forcing seed intersection. No closure for products of separately averaged reports.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-03"
+      }
+    },
+    {
+      "id": "IA-04",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Reference, pair and rung readouts",
+      "boundary": "Uniform independent full-shell draws with replacement; reference phases, fixed modes and eventual uniform rung margins retained.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-04"
+      }
+    },
+    {
+      "id": "IA-05",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Gamma-sampled readout of the inherited complete Poisson energy",
+      "boundary": "External Gamma(1,scale1), conditional Poisson and H=K+1; all integer shells. The criterion is exactly inherited SCE-01 under affine normalization.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-05"
+      }
+    },
+    {
+      "id": "IA-06",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Cutoff, uniform source transfer and observation consistency",
+      "boundary": "Unnormalized geometric cutoff; original zero-seeded four-pole tail; independent U-based trials with positive precision, valid confidence budgets. Infinite-experiment consistency, not a finite normality decision.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-06"
+      }
+    },
+    {
+      "id": "IA-07",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Resolution-weighted domination of finite Fourier responses",
+      "boundary": "Fixed trigonometric polynomials and fixed finite lag polynomials; growing families must pay their coefficient norms and approximation costs.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-07"
+      }
+    },
+    {
+      "id": "IA-08",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Actual radix-orbit finite counterfeits",
+      "boundary": "Invariant laws or complete-period sampling of explicit periodic radix points; same-forcing attachment changes the seed and fails literal-zero authentication.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-08"
+      }
+    },
+    {
+      "id": "IA-09",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Retained harmonic-label discrimination cost",
+      "boundary": "Two declared rivals, independent trials, reporting only (H,bit) or bit. No clock IDs, full phases, targeted known resonance or universal pi-complexity lower bound.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-09"
+      }
+    },
+    {
+      "id": "IA-10",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Conditional energy, coherent carry decoder and high-order interactions",
+      "boundary": "Shared-label conditional product sampling, correct coherent phase transport, populated prime fibers, complete Walsh cells. No implied source cancellation.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-10"
+      }
+    },
+    {
+      "id": "IA-11",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Weighted chronological CDF overlap identity",
+      "boundary": "Actual finite block CDF defects with proper relative lengths and certified breakpoints; nonlinear classical postprocessing, not a single phase quadratic.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-11"
+      }
+    },
+    {
+      "id": "IA-12",
+      "truth_state": "DISCLOSED",
+      "mathematical_status": "PROVED_WITHIN_STATED_MODEL",
+      "claim": "Declared completeness boundary",
+      "boundary": "Finite grammar and pinned named-family inventory only. The catalogue does not establish every inherited theorem or every possible experiment.",
+      "proof": {
+        "path": "THEOREMS.md",
+        "section": "IA-12"
+      }
+    },
+    {
+      "id": "OBS-FULL",
+      "truth_state": "OBSERVED",
+      "mathematical_status": "FINITE_EXECUTED",
+      "claim": "13535 full-discovery tests passed",
+      "boundary": "Isolated parent 8097d9e plus all six frozen new production/test files; includes the 71 new tests. Dossier prose is checked separately. No new formal proof-assistant verification."
+    },
+    {
+      "id": "OBS-FOCUSED",
+      "truth_state": "OBSERVED",
+      "mathematical_status": "FINITE_EXECUTED",
+      "claim": "208 focused tests passed, including 71 new tests",
+      "boundary": "Exact frozen six-file snapshot; overlap with full discovery is not extra independent evidence."
+    },
+    {
+      "id": "OBS-AUDIT",
+      "truth_state": "OBSERVED",
+      "mathematical_status": "FINITE_EXECUTED",
+      "claim": "5416 exact independent-script assertions passed",
+      "boundary": "Independent implementation without production imports; shared theorem premises. Optional Gamma quadrature is numerical diagnostic only."
+    },
+    {
+      "id": "OBS-GATES",
+      "truth_state": "OBSERVED",
+      "mathematical_status": "FINITE_EXECUTED",
+      "claim": "Provenance, foundations and ordinal probes exited 0",
+      "boundary": "Actual commands and logs in receipts; these gates do not prove the new arithmetic claims."
+    },
+    {
+      "id": "OPEN-R0",
+      "truth_state": "UNVERIFIED",
+      "mathematical_status": "OPEN",
+      "claim": "Uniform original-source R0 escape",
+      "boundary": "Need one positive margin for all sufficiently large integer shells; an amplified hit at a vanishing rate is insufficient."
+    },
+    {
+      "id": "OPEN-N",
+      "truth_state": "UNVERIFIED",
+      "mathematical_status": "OPEN",
+      "claim": "Base-16 normality of pi / all-mode energy decay",
+      "boundary": "Need the actual original-source all-shell limit. Equivalent response identities do not supply it."
+    },
+    {
+      "id": "OPEN-PARITY",
+      "truth_state": "UNVERIFIED",
+      "mathematical_status": "OPEN",
+      "claim": "Selected prime/complement parity contrast decay",
+      "boundary": "Imported prime marginal must be valid, both fibers populated and the full selected complement retained."
+    },
+    {
+      "id": "OPEN-SCALES",
+      "truth_state": "UNVERIFIED",
+      "mathematical_status": "OPEN",
+      "claim": "Prescribed-scale purity, entropy, conditional and collision gates",
+      "boundary": "Each catalogue row retains its own scale, coverage, tail and boundary hypotheses."
+    },
+    {
+      "id": "OPEN-WALSH",
+      "truth_state": "UNVERIFIED",
+      "mathematical_status": "OPEN",
+      "claim": "Selected top four-bit interaction saving",
+      "boundary": "Route-C target is separately registered in F74; canonical rate and window normalization are underspecified, so no full-normality implication is supplied."
+    },
+    {
+      "id": "OPEN-JOINT-GAMMA",
+      "truth_state": "UNVERIFIED",
+      "mathematical_status": "OPEN",
+      "claim": "Intrinsic source/Gamma/phase joint law",
+      "boundary": "Current Gamma law is an external declared probe policy. No source-derived endogenous joint mechanism is proved."
+    },
+    {
+      "id": "REF-GAUGE",
+      "truth_state": "REFUTED",
+      "mathematical_status": "COUNTEREXAMPLE",
+      "claim": "Pair-only data universally determine anchored R0",
+      "evidence": "IA-03/04: actual fixed points 0 and 1/3 agree on pair data and disagree on R0.",
+      "boundary": "Declared control class; no refutation of a literal-zero source theorem."
+    },
+    {
+      "id": "REF-FINITE-MODES",
+      "truth_state": "REFUTED",
+      "mathematical_status": "COUNTEREXAMPLE",
+      "claim": "Passing any prescribed finite Fourier band certifies normality",
+      "evidence": "IA-08: actual 1/(3^a5^b) radix orbit passes every mode below its period and is periodic.",
+      "boundary": "Declared control class; no refutation of a literal-zero source theorem."
+    },
+    {
+      "id": "REF-FINITE-WORDS",
+      "truth_state": "REFUTED",
+      "mathematical_status": "COUNTEREXAMPLE",
+      "claim": "Passing all words through one finite depth certifies normality",
+      "evidence": "IA-08: repeated de Bruijn radix point passes those depths and fails longer ones.",
+      "boundary": "Declared control class; no refutation of a literal-zero source theorem."
+    },
+    {
+      "id": "REF-MARGINALS",
+      "truth_state": "REFUTED",
+      "mathematical_status": "COUNTEREXAMPLE",
+      "claim": "All proper-coordinate marginals determine the top interaction",
+      "evidence": "IA-10: full-parity law has uniform proper marginals and nonzero top Walsh coefficient.",
+      "boundary": "Declared control class; no refutation of a literal-zero source theorem."
+    },
+    {
+      "id": "REF-REFINEMENT",
+      "truth_state": "REFUTED",
+      "mathematical_status": "COUNTEREXAMPLE",
+      "claim": "Finer source conditioning automatically lowers conditional phase energy",
+      "evidence": "IA-10: singleton cells have energy 1 regardless of global cancellation.",
+      "boundary": "Declared control class; no refutation of a literal-zero source theorem."
+    },
+    {
+      "id": "REF-GAP",
+      "truth_state": "REFUTED",
+      "mathematical_status": "COUNTEREXAMPLE",
+      "claim": "The universal energy has a uniform positive gap for all nonnormal radix laws",
+      "evidence": "IA-08/09: periodic-coset energy 1/(2^M-1) tends to zero.",
+      "boundary": "Declared control class; no refutation of a literal-zero source theorem."
+    }
+  ],
+  "TLICA": "No scalar truth score or invented diagnostic values. Operational report kernels and source-map adequacy remain distinct."
+}

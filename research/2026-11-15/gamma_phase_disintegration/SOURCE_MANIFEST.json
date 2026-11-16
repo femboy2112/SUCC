@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "parent_commit": "94c7252ac7db3c8b14229544087119bd9cc01933",
+  "payload_root": "research/2026-11-15/gamma_phase_disintegration",
+  "input_manifest": "SOURCE_INPUTS.json",
+  "hash_policy": "SHA-256 of final bytes; SOURCE_MANIFEST.json excludes itself; Python bytecode excluded.",
+  "runtime": {
+    "python": "3.12.14",
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "inherited_python_files_verified_unchanged": 1666,
+  "payload_count": 38,
+  "files": [
+    {
+      "path": "CLAIM_LEDGER.json",
+      "bytes": 8273,
+      "sha256": "066814adebec4caed4496790fc317a870166f5fe2d94b1db0871267e2ffe3ff9"
+    },
+    {
+      "path": "FORCING_THEOREMS.md",
+      "bytes": 10794,
+      "sha256": "a2e9a3ea3ff599b0b096e5868c89184982ce8b77684698486425275bb1d924e5"
+    },
+    {
+      "path": "HOLE_CONTRACT.md",
+      "bytes": 4929,
+      "sha256": "3f33792cc7465f345e9a6ee681ce06c4630b5f34bce0d1f9d0fca84e7ef4a85c"
+    },
+    {
+      "path": "LAGUERRE_THEOREMS.md",
+      "bytes": 16545,
+      "sha256": "8d0dd497b4637c86abeda66a40d56d7e74b24d5b5d0dddd89ce21c23b764c673"
+    },
+    {
+      "path": "NEXT.md",
+      "bytes": 2710,
+      "sha256": "ba3a9cced374eb2ee5562e586eb8fcd7b87df8a33cd8a42b31a4306c61fc62c8"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 6308,
+      "sha256": "eecfc56727604922b6e9145ad3e2a8f1fc852cc1f4cac7e17b9228250ed33b50"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3186,
+      "sha256": "dd782c6eb9f647114d3b8734494141bba8672147bc4afe98e93a9f3462b415e8"
+    },
+    {
+      "path": "REPRODUCE.sh",
+      "bytes": 696,
+      "sha256": "d8247a5c3eaf957e5f78b22c2c9361f67e9d37e9227fd34f021e3628e15ec9f5"
+    },
+    {
+      "path": "RESONANCE_THEOREMS.md",
+      "bytes": 9833,
+      "sha256": "9650d9a8f0f7729b9830a4a99b34f6e52ea8425ed7eaade5bc0cc457ebd0f3da"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 4665,
+      "sha256": "8e322a35a01841bb1215d7f875beebbcf194d85bca512d9d6a1d960a2167611f"
+    },
+    {
+      "path": "SOURCE_INPUTS.json",
+      "bytes": 2900,
+      "sha256": "9efa21ab9921d9b4aa8d0c1ba15dd982dd99c34ec7499535941a34363788d0a5"
+    },
+    {
+      "path": "THEOREMS.md",
+      "bytes": 14499,
+      "sha256": "41edda912dc0c4fd18cd56df8f30df6dadd485c74d3b9c9bf9b16ebff869b9df"
+    },
+    {
+      "path": "TILT_HIERARCHY.md",
+      "bytes": 8735,
+      "sha256": "ed7a7c0733276e9cab3a837cf96c6bebcbaf4b08f99581ff86b1648bb20a6784"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 7344,
+      "sha256": "6430b5e0523af45b0548555307e3db07092d18a36b4d0c4790e72f5cf94365ae"
+    },
+    {
+      "path": "audit_forcing.py",
+      "bytes": 15524,
+      "sha256": "e017fc98d806a5ece24cc50190125e3edd7669577204c5140f92ff7ec0e851c7"
+    },
+    {
+      "path": "audit_modes.py",
+      "bytes": 19218,
+      "sha256": "6439e6223d4fb48f27401192202078e5779240ec98e447d97197ccce9bb09359"
+    },
+    {
+      "path": "audit_resonance.py",
+      "bytes": 4120,
+      "sha256": "89ab8e6378b18c3c9dec7b313b6c2dfbd6e1c9f1c7653d73ab373a2474dea169"
+    },
+    {
+      "path": "audit_tilt_hierarchy.py",
+      "bytes": 5348,
+      "sha256": "b1094312ee658f8c534ad0b4b0c72790a2b18a327cdda6938882571a497ca087"
+    },
+    {
+      "path": "gamma_mode_energy.png",
+      "bytes": 174491,
+      "sha256": "48de5eeea1eff3a5fb0e73a970ddd980b82ff690024a1dde6444c36b841ff820"
+    },
+    {
+      "path": "gamma_phase_probe.py",
+      "bytes": 7649,
+      "sha256": "048ace5d76d067f0c802db5a07d9b634221b538eb105192cb1b3083172b636fd"
+    },
+    {
+      "path": "make_figure.py",
+      "bytes": 2702,
+      "sha256": "54413a21b14885c00aa55f900547c0f7db406373aacb5f75fd29166c519a2409"
+    },
+    {
+      "path": "receipts/figure_values.json",
+      "bytes": 379,
+      "sha256": "322edd158115ea5603b5a4308856ff30904f21bceb1ce80317c815cba5c7b913"
+    },
+    {
+      "path": "receipts/focused_tests.txt",
+      "bytes": 3419,
+      "sha256": "da074a0e13878193afaf14956d9ed8cc1de34332e998d24d7e5ea796f9fbf7bb"
+    },
+    {
+      "path": "receipts/forcing_audit.json",
+      "bytes": 10111,
+      "sha256": "78414c2776cca502ae55ed1411da575f0409f47aed4a7aff1684101820e7d403"
+    },
+    {
+      "path": "receipts/full_unittest.txt",
+      "bytes": 15519,
+      "sha256": "29c5c6a7009c4d828a973a43693b925b674c2ea0c8b4859cd54b8c640d1e1549"
+    },
+    {
+      "path": "receipts/full_unittest_run.json",
+      "bytes": 268,
+      "sha256": "bb9aeedcf1c49449bd855aafe4ced4296f242585677df6b8c70b34c625dd7fe7"
+    },
+    {
+      "path": "receipts/inherited_failure_probe.txt",
+      "bytes": 255,
+      "sha256": "d88b4c773411e9dc039f7ea19509b07da5418f8333f4a99a4e5c04a279ebffa7"
+    },
+    {
+      "path": "receipts/inherited_failure_probe_repaired.json",
+      "bytes": 627,
+      "sha256": "04843301cf9caf98021f9508b98d0fa51f9bc1a48ae5db0892ca509ac78b34d4"
+    },
+    {
+      "path": "receipts/inherited_failure_rerun.txt",
+      "bytes": 1869,
+      "sha256": "431bb20f5e9b098f78804934ff347692054d4629a550375e1e77f9cd4579e8df"
+    },
+    {
+      "path": "receipts/inherited_python_hashes.json",
+      "bytes": 191803,
+      "sha256": "7acc086c592290c60861c6f0cfc4db2d51b424e269996219fb5d8ec94d1e5572"
+    },
+    {
+      "path": "receipts/mode_audit.json",
+      "bytes": 66010,
+      "sha256": "11ca894fb24af68e07bda1348ad5a68c3d6a2621c23b386011b4d19ff1ba4703"
+    },
+    {
+      "path": "receipts/observer.txt",
+      "bytes": 2498,
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "path": "receipts/ordinal.txt",
+      "bytes": 3612,
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "path": "receipts/parent_focused_tests.txt",
+      "bytes": 5638,
+      "sha256": "093c1cf1c081b5d81fb66b407a20efeb5745529a98bf37b596a05c4d2a98017e"
+    },
+    {
+      "path": "receipts/provenance.txt",
+      "bytes": 249,
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "path": "receipts/resonance_audit.json",
+      "bytes": 20666,
+      "sha256": "d12516a408cf2cf409e18e65d1ef2cbf82600faa67696e6f4866bb8f97242e4c"
+    },
+    {
+      "path": "receipts/tilt_hierarchy_audit.json",
+      "bytes": 11893,
+      "sha256": "bc9c915e08e01380118487eab97894902549d95915a3c164e9761addf65a8dff"
+    },
+    {
+      "path": "test_gamma_phase_probe.py",
+      "bytes": 8815,
+      "sha256": "53448b4aee9eaa5aec4e978f2bf095d0d9b028fa0b360febddcebc7d3426ee54"
+    }
+  ]
+}

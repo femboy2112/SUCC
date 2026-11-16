@@ -1,0 +1,463 @@
+{
+  "status": "FINITE_SOURCE_CERTIFICATES_ONLY",
+  "horizon": 32768,
+  "borrow_indices": [],
+  "certificate_counts": {
+    "analytic_n2": 32768
+  },
+  "exact_cross_checks": 2048,
+  "rational_packet_inequalities": 484,
+  "shells": [
+    {
+      "start": 16,
+      "length": 16,
+      "counts_mod4": [
+        3,
+        4,
+        3,
+        6
+      ],
+      "selected_events": 7,
+      "selected_fraction": "7/16",
+      "mean_quadrature": "1/8",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 6,
+      "clock_cofactor_counts": [
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "start": 32,
+      "length": 32,
+      "counts_mod4": [
+        12,
+        6,
+        10,
+        4
+      ],
+      "selected_events": 16,
+      "selected_fraction": "1/2",
+      "mean_quadrature": "0",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 3,
+      "clock_cofactor_counts": [
+        [
+          3,
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          1,
+          3
+        ],
+        [
+          4,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "start": 64,
+      "length": 64,
+      "counts_mod4": [
+        21,
+        17,
+        11,
+        15
+      ],
+      "selected_events": 28,
+      "selected_fraction": "7/16",
+      "mean_quadrature": "1/8",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 4,
+      "clock_cofactor_counts": [
+        [
+          4,
+          4,
+          5,
+          3
+        ],
+        [
+          4,
+          7,
+          4,
+          1
+        ],
+        [
+          3,
+          3,
+          5,
+          5
+        ],
+        [
+          2,
+          2,
+          7,
+          5
+        ]
+      ]
+    },
+    {
+      "start": 128,
+      "length": 128,
+      "counts_mod4": [
+        22,
+        41,
+        31,
+        34
+      ],
+      "selected_events": 72,
+      "selected_fraction": "9/16",
+      "mean_quadrature": "-1/8",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 6,
+      "clock_cofactor_counts": [
+        [
+          4,
+          6,
+          9,
+          13
+        ],
+        [
+          12,
+          4,
+          8,
+          8
+        ],
+        [
+          7,
+          8,
+          5,
+          12
+        ],
+        [
+          8,
+          7,
+          8,
+          9
+        ]
+      ]
+    },
+    {
+      "start": 256,
+      "length": 256,
+      "counts_mod4": [
+        68,
+        68,
+        64,
+        56
+      ],
+      "selected_events": 132,
+      "selected_fraction": "33/64",
+      "mean_quadrature": "-1/32",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 5,
+      "clock_cofactor_counts": [
+        [
+          13,
+          15,
+          15,
+          21
+        ],
+        [
+          15,
+          18,
+          14,
+          17
+        ],
+        [
+          17,
+          15,
+          13,
+          19
+        ],
+        [
+          8,
+          15,
+          17,
+          24
+        ]
+      ]
+    },
+    {
+      "start": 512,
+      "length": 512,
+      "counts_mod4": [
+        131,
+        118,
+        135,
+        128
+      ],
+      "selected_events": 253,
+      "selected_fraction": "253/512",
+      "mean_quadrature": "3/256",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 8,
+      "clock_cofactor_counts": [
+        [
+          35,
+          26,
+          28,
+          39
+        ],
+        [
+          29,
+          33,
+          35,
+          31
+        ],
+        [
+          44,
+          26,
+          31,
+          27
+        ],
+        [
+          40,
+          32,
+          24,
+          32
+        ]
+      ]
+    },
+    {
+      "start": 1024,
+      "length": 1024,
+      "counts_mod4": [
+        243,
+        256,
+        253,
+        272
+      ],
+      "selected_events": 509,
+      "selected_fraction": "509/1024",
+      "mean_quadrature": "3/512",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 10,
+      "clock_cofactor_counts": [
+        [
+          61,
+          70,
+          65,
+          60
+        ],
+        [
+          67,
+          71,
+          70,
+          48
+        ],
+        [
+          68,
+          72,
+          55,
+          61
+        ],
+        [
+          71,
+          72,
+          57,
+          56
+        ]
+      ]
+    },
+    {
+      "start": 2048,
+      "length": 2048,
+      "counts_mod4": [
+        483,
+        515,
+        543,
+        507
+      ],
+      "selected_events": 1058,
+      "selected_fraction": "529/1024",
+      "mean_quadrature": "-17/512",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 7,
+      "clock_cofactor_counts": [
+        [
+          114,
+          127,
+          140,
+          131
+        ],
+        [
+          133,
+          115,
+          122,
+          142
+        ],
+        [
+          132,
+          132,
+          121,
+          127
+        ],
+        [
+          131,
+          129,
+          119,
+          133
+        ]
+      ]
+    },
+    {
+      "start": 4096,
+      "length": 4096,
+      "counts_mod4": [
+        989,
+        1020,
+        1063,
+        1024
+      ],
+      "selected_events": 2083,
+      "selected_fraction": "2083/4096",
+      "mean_quadrature": "-35/2048",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 13,
+      "clock_cofactor_counts": [
+        [
+          246,
+          277,
+          260,
+          241
+        ],
+        [
+          252,
+          272,
+          231,
+          269
+        ],
+        [
+          269,
+          262,
+          241,
+          252
+        ],
+        [
+          264,
+          265,
+          265,
+          230
+        ]
+      ]
+    },
+    {
+      "start": 8192,
+      "length": 8192,
+      "counts_mod4": [
+        2058,
+        2034,
+        2013,
+        2087
+      ],
+      "selected_events": 4047,
+      "selected_fraction": "4047/8192",
+      "mean_quadrature": "49/4096",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 11,
+      "clock_cofactor_counts": [
+        [
+          519,
+          540,
+          501,
+          488
+        ],
+        [
+          517,
+          537,
+          507,
+          487
+        ],
+        [
+          503,
+          489,
+          510,
+          546
+        ],
+        [
+          494,
+          522,
+          540,
+          492
+        ]
+      ]
+    },
+    {
+      "start": 16384,
+      "length": 16384,
+      "counts_mod4": [
+        4085,
+        4117,
+        4061,
+        4121
+      ],
+      "selected_events": 8178,
+      "selected_fraction": "4089/8192",
+      "mean_quadrature": "7/4096",
+      "tail_borrows": 0,
+      "longest_no_hit_run": 16,
+      "clock_cofactor_counts": [
+        [
+          1008,
+          1061,
+          980,
+          1047
+        ],
+        [
+          1025,
+          1036,
+          1008,
+          1027
+        ],
+        [
+          1024,
+          1019,
+          1033,
+          1020
+        ],
+        [
+          1032,
+          1030,
+          1026,
+          1008
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "succ.coherence-integration-history.v1",
+  "parent_commit": "e9639c0ddb07385c6000b670d26cf0f7b91dacaa",
+  "initial_parent_tree": "d591ba032b6b0cef8f62a32100455f9c3857b681",
+  "retained_events": [
+    {
+      "event": "transport probe scalar conversion",
+      "observed_failure": "Initial transport probe applied Q to an already Gaussian-rational Q, causing a TypeError before completion.",
+      "repair": "Use the existing scalar conversion helper; normalized the no-signalling calibration state.",
+      "completed_result": "474 exact checks PASS; root and separate same-model replay."
+    },
+    {
+      "event": "joint-carrier hypothesis audit",
+      "repair": "Stated independent auxiliary preparations for the separate-arm error budget; arbitrary shared interactions require their actual joint bound.",
+      "mathematical_scope": "No universal product-channel claim for correlated carrier noise."
+    },
+    {
+      "event": "shared-algebra compression audit",
+      "repair": "Distinguished arbitrary compression from whole-code intertwining and genuine *-representations; added surjective compression maps and a nonpositive inverse-effect control.",
+      "completed_result": "421 exact carrier-bond checks PASS in agent run; root replay recorded separately."
+    },
+    {
+      "event": "resource wording audit",
+      "repair": "Replaced resource-equivalent wording with channel implementation; no code change.",
+      "mathematical_scope": "A demonstrated resource conversion is not automatically reversible equivalence."
+    }
+  ],
+  "nonclaims": [
+    "No physical quantum experiment",
+    "No gravitational geometry derived",
+    "No objective collapse timing established",
+    "No mathematical novelty or formal-kernel claim",
+    "No inference of independent truth evidence from shared-message agreement"
+  ]
+}

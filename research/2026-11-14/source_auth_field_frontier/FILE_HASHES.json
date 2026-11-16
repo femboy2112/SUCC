@@ -1,0 +1,102 @@
+{
+  "base_commit": "e852e217c8969793909a3200b780eb6d20453742",
+  "files": [
+    {
+      "bytes": 9458,
+      "git_blob_sha1": "33116a774da66b9775eae221eacae90b8c69dede",
+      "path": "observational_succ/source_authentication.py",
+      "sha256": "06ba9370eb7e1e380326ff5effd5b6b01c71207ac44b2f11704ef3aba367ae87"
+    },
+    {
+      "bytes": 11047,
+      "git_blob_sha1": "eea05c42a6292a5ca8cd43fe872fee32d66ecf4d",
+      "path": "tests/test_source_authentication.py",
+      "sha256": "c18c2af76f989aaeeebc900d4e38b6dc6e0b0c72bc7f988a867a38389a619e32"
+    },
+    {
+      "bytes": 2731,
+      "git_blob_sha1": "2ffc201ab2a4d0ffdd8de03e41cbb9b4e024b226",
+      "path": "research/2026-11-14/source_auth_field_frontier/source_process.py",
+      "sha256": "738d3e77d617262411f950c03947d81de78edbcacbdb1d0ae39d1e425232d162"
+    },
+    {
+      "bytes": 6937,
+      "git_blob_sha1": "c942d28247ca92f884930b7d88dcf6db791cdd19",
+      "path": "research/2026-11-14/source_auth_field_frontier/independent_replay.py",
+      "sha256": "4cf9c4a44d5870ecc09b5bcca2bd0d468cb8bfbcf086c3eb91c7fe35985e849e"
+    },
+    {
+      "bytes": 5663,
+      "git_blob_sha1": "166061f6ed27166af4ee1878cd73cb6f5a0cf198",
+      "path": "research/2026-11-14/source_auth_field_frontier/run_live_holdout.py",
+      "sha256": "2c9592a8445b9aeac2fe1d0207963c0cb739d7e11ecdbd1900cd23d944fe5cdb"
+    },
+    {
+      "bytes": 3921,
+      "git_blob_sha1": "45df67937f5fd8513843958aabd7f15e423cbd6b",
+      "path": "research/2026-11-14/source_auth_field_frontier/independent_oracle.py",
+      "sha256": "23ac4da5a198e2a4e856fbd71e4b90f6cfb08e603cc7657c2be1759687ccc6ff"
+    },
+    {
+      "bytes": 22211,
+      "git_blob_sha1": "072965d50367c1d79fd3ba748a8bbd6be64e984c",
+      "path": "research/2026-11-14/source_auth_field_frontier/THEOREMS.md",
+      "sha256": "7392df1b4d22af696cbe1f123d60dc896e2e8af59e538ef64d257238dab13da6"
+    },
+    {
+      "bytes": 6090,
+      "git_blob_sha1": "d76d26ad9f619efc8d68c623ed880b6bd1f68f93",
+      "path": "research/2026-11-14/source_auth_field_frontier/VALIDATION.md",
+      "sha256": "a0365a7422bb9456d4d6b71960370d0c70a1332d1ca06975cfac22a5ef510be0"
+    },
+    {
+      "bytes": 3359,
+      "git_blob_sha1": "ff25bab2bb76be31442b8edf82a62ec80ba7def0",
+      "path": "research/2026-11-14/source_auth_field_frontier/README.md",
+      "sha256": "33b4ed2b200c28995c795cb8f40cb567b44eb64c9e720592042daa575542de1d"
+    },
+    {
+      "bytes": 3192,
+      "git_blob_sha1": "11ebc28aedf493d854df6ead3f6519a9cf7dcb6e",
+      "path": "research/2026-11-14/source_auth_field_frontier/NEXT.md",
+      "sha256": "caa6e19454cf3d02651599dae13703c170332feb5fe8f31b7028723b451561a6"
+    },
+    {
+      "bytes": 2377,
+      "git_blob_sha1": "9dd377991226c5469158c294a83e2a14c5ba7d32",
+      "path": "research/2026-11-14/source_auth_field_frontier/CLAIM_LEDGER.json",
+      "sha256": "c5bd8ba5fe1d9dab0b07bfb67a625db7663cbead88076ae7edd0f1b69ec655c5"
+    },
+    {
+      "bytes": 9357,
+      "git_blob_sha1": "29f3497c3b14d5255da25ce54ee9ac3cfa279f6f",
+      "path": "research/2026-11-14/source_auth_field_frontier/receipts/combined_focused_tests.log",
+      "sha256": "85bb30b7592307c8b59fc2f94ebc71d71965b50f4fa99599f17a520468ab0c59"
+    },
+    {
+      "bytes": 123,
+      "git_blob_sha1": "71fcd24745df7dcd80a8e6838604947f7eb55f77",
+      "path": "research/2026-11-14/source_auth_field_frontier/receipts/independent_oracle.log",
+      "sha256": "3d4e5220cee09cfcacb528136b3b4ccfb60627bf5d194f7ff8b6af486ea8bbdb"
+    },
+    {
+      "bytes": 299,
+      "git_blob_sha1": "3f49673ccf7c25cb0e1186b9ab99abd7e17b2601",
+      "path": "research/2026-11-14/source_auth_field_frontier/receipts/live_holdout.log",
+      "sha256": "c54517321d837d14e24d9365eba6b8b9eb508af654b877121c73bc79b8ccdd01"
+    },
+    {
+      "bytes": 1254,
+      "git_blob_sha1": "d9286e73df0085e1e68c1dae217727b923fbf827",
+      "path": "research/2026-11-14/source_auth_field_frontier/receipts/holdout_summary.json",
+      "sha256": "1c4dc22d5cc66ffc73b4ff429df8bbf04c797a42f896547d33eef9ea328b8a1a"
+    },
+    {
+      "bytes": 14989,
+      "git_blob_sha1": "d9827c24ee058b9caf5be05a310275c5e77963ef",
+      "path": "research/2026-11-14/source_auth_field_frontier/receipts/holdout_sessions.json.gz",
+      "sha256": "04aec5f816d588abb35795f8a2248f76169fa94d4e8048ce4a2441a93669e941"
+    }
+  ],
+  "project": "SUCC"
+}

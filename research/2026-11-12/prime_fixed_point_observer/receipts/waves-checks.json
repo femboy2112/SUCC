@@ -1,0 +1,63 @@
+[
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/2026-11-12/prime_fixed_point_observer",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 6.535,
+    "log": "waves-focused-suite.log"
+  },
+  {
+    "command": [
+      "python",
+      "research/2026-11-12/prime_fixed_point_observer/waves_independent_audit.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.138,
+    "log": "waves-independent.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.096,
+    "log": "waves-observer-foundations.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.623,
+    "log": "waves-ordinal-succ.log"
+  },
+  {
+    "command": [
+      "python",
+      "research/2026-11-12/prime_fixed_point_observer/wave_probe.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.537,
+    "log": "waves-probe.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.071,
+    "log": "waves-provenance.log"
+  }
+]

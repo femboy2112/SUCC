@@ -1,0 +1,60 @@
+{
+  "abelian_gauge_orbits": {
+    "configurations": 243,
+    "configurations_per_orbit": 27,
+    "cycle_rank": 2,
+    "edges": 5,
+    "gauge_orbits": 9,
+    "group": "Z/3Z",
+    "orbit_distribution_energy_under_uniform_enumeration": "0/1",
+    "vertices": 4
+  },
+  "clay_yang_mills_mass_gap": "OPEN",
+  "forbidden_inference": "finite gauge completeness, reflection-like PSD and nonzero finite gaps do not prove four-dimensional continuum Yang-Mills existence or its mass gap",
+  "four_torus": {
+    "dimension": 4,
+    "discrete_bianchi_satisfied": true,
+    "distinct_global_wilson_holonomy": [
+      0,
+      1
+    ],
+    "gauge": "Z/3Z",
+    "links": 64,
+    "plaquettes": 96,
+    "side": 2,
+    "vertices": 16,
+    "zero_local_curvature_both": true
+  },
+  "nonabelian_S3_quotient": {
+    "joint_conjugacy_orbits": 11,
+    "link_configurations": 216,
+    "mixed_trace_control": {
+      "trace_first": 1,
+      "trace_product_control": 3,
+      "trace_product_other": 0,
+      "trace_second_control": 1,
+      "trace_second_other": 1
+    },
+    "noncommuting_order_mutation_rejected": true,
+    "oriented_two_link_gauge_square_cases": 7776,
+    "sample_gauge_square_commutes": true
+  },
+  "openai_wightman_existence": "EXTERNAL_FORMAL_AND_ASSESSED_NOT_REPLAYED_HERE",
+  "original_public_sources": {
+    "openai_yang_mills_submission_commit": "3456e5e75cf8d4cd558955a5c7638fba2d68f464",
+    "succ_main_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+    "yang_mills_group_assessment_commit": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98"
+  },
+  "status": "CERTIFIED_FINITE_EXACT_ONLY",
+  "two_state_transfer_control": {
+    "entrywise_positive_kernel_that_is_not_psd_eigenvalues": [
+      "3/1",
+      "-1/1"
+    ],
+    "linear_physical_mass_lower_bound": "32/65",
+    "linear_spectral_ratio": "63/65",
+    "mesh": "1/16",
+    "quadratic_physical_mass_upper_bound": "8192/65535",
+    "quadratic_spectral_ratio": "255/257"
+  }
+}

@@ -1,0 +1,1105 @@
+{
+  "schema": "succ-causal-face-limit-diagnostic-v1",
+  "source": "q(t)=4-2exp(-3t)-exp(-4t)-exp(-5t), native radix regulator 1/16",
+  "definition": "C_k(s)=((log k)/8)^(1-s)*B_(1/16,k)(s)/B_(1/16,k)(1)",
+  "classification": "finite numerical diagnostic supplemented by labelled exact zeros",
+  "interval_certificate": false,
+  "universal_convergence_inferred_from_numerics": false,
+  "monotonicity_or_all_k_error_bound_asserted": false,
+  "imports_production_modules": false,
+  "python_version": "3.12.14",
+  "mpmath_version": "1.3.0",
+  "working_decimal_digits": 40,
+  "depths": [
+    8,
+    32,
+    128,
+    512,
+    2048
+  ],
+  "numerical_rows": 30,
+  "exact_zero_rows": 10,
+  "max_C_coordinate_difference": "1.377532442369868173400863129557319153694e-40",
+  "max_Z_coordinate_difference": "0.0",
+  "normalizations": [
+    {
+      "k": 8,
+      "A_k": "0.2599301927099794910314620455468162130283",
+      "Z_k_t": {
+        "real": "2.656052948346799268932173263543478515682",
+        "imag": "0.0"
+      },
+      "Z_k_y_regularized": {
+        "real": "2.656052948346799268932173263543478515682",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "ratio_to_Gamma_1_8_over_2k_1_8": {
+        "real": "0.914388432003053813535199937384614566106",
+        "imag": "0.0"
+      }
+    },
+    {
+      "k": 32,
+      "A_k": "0.4332169878499658183857700759113603550472",
+      "Z_k_t": {
+        "real": "2.328896645968661319192814380036027397642",
+        "imag": "0.0"
+      },
+      "Z_k_y_regularized": {
+        "real": "2.328896645968661319192814380036027397642",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "ratio_to_Gamma_1_8_over_2k_1_8": {
+        "real": "0.9534583117135730318820851835306194997539",
+        "imag": "0.0"
+      }
+    },
+    {
+      "k": 128,
+      "A_k": "0.6065037829899521457400781062759044970661",
+      "Z_k_t": {
+        "real": "2.00127580275939464461966772970190335098",
+        "imag": "0.0"
+      },
+      "Z_k_y_regularized": {
+        "real": "2.00127580275939464461966772970190335098",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "ratio_to_Gamma_1_8_over_2k_1_8": {
+        "real": "0.9743521255810777073533545920864496641015",
+        "imag": "0.0"
+      }
+    },
+    {
+      "k": 512,
+      "A_k": "0.7797905781299384730943861366404486390849",
+      "Z_k_t": {
+        "real": "1.70233146780286400146649295127929938216",
+        "imag": "0.0"
+      },
+      "Z_k_y_regularized": {
+        "real": "1.70233146780286400146649295127929938216",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "ratio_to_Gamma_1_8_over_2k_1_8": {
+        "real": "0.985622521679592785503197815017635732115",
+        "imag": "0.0"
+      }
+    },
+    {
+      "k": 2048,
+      "A_k": "0.9530773732699248004486941670049927811038",
+      "Z_k_t": {
+        "real": "1.440501254304099784687390083041181740522",
+        "imag": "0.0"
+      },
+      "Z_k_y_regularized": {
+        "real": "1.440501254304099784687390083041181740522",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "ratio_to_Gamma_1_8_over_2k_1_8": {
+        "real": "0.9918308925591305352981847988424906829256",
+        "imag": "0.0"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "k": 8,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "2.688642110618700130834849591410930634041",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "2.688642110618700130834849591410930634041",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.2911720579992681702553506454424147039502",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.2911720579992681702553506454424147039502",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.5641895835477562869480794515607725858441",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.2730175255484881166927288061183578818938"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "3.684978043401840312909397384522381140872",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "3.684978043401840312909397384522381140872",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "5.337543743681326926358273479343269896024",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "5.337543743681326926358273479343269896024",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "1.0",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "4.337543743681326926358273479343269896024"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "3.875098567038589147773268257575333277046",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "3.875098567038589147773268257575333277046",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "-0.05454138806283760609593156406322072979069",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.05454138806283760609593156406322072979069",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "-0.282094791773878143474039725780386292922",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.2275534037110405373781081617171655631313"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "-3/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "8.376522520774846989559899320690200524755",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "8.376522520774846989559899320690200524755",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.04596795473589689507728309328846304090974",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.04596795473589689507728309328846304090974",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.423142187660817215211059588670579439383",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.3771742329249203201337764953821163984733"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "3/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "2.34327164853139070104763747460397622059",
+        "imag": "-0.2566054803797820755003683333881994525513"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "2.34327164853139070104763747460397622059",
+        "imag": "-0.2566054803797820755003683333881994525513"
+      },
+      "C_k_t": {
+        "real": "-0.1363885351914105204102936119487429059303",
+        "imag": "0.5729644788401377209724672826196071733317"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.1363885351914105204102936119487429059303",
+        "imag": "0.5729644788401377209724672826196071733317"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.8059995578072983899739517250583548137298",
+        "imag": "1.0220808890262377879565582100178787218"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "1.043935279470998873494502130259301270977"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "5/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "2.0704443529544524604094550139009246203",
+        "imag": "-1.921183450152242989096812239125876519923"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "2.0704443529544524604094550139009246203",
+        "imag": "-1.921183450152242989096812239125876519923"
+      },
+      "C_k_t": {
+        "real": "-0.4186960664107174522814132518360892058192",
+        "imag": "-0.3399581651502183290831437257170069383026"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.4186960664107174522814132518360892058192",
+        "imag": "-0.3399581651502183290831437257170069383026"
+      },
+      "reciprocal_Gamma": {
+        "real": "-3.704130287917527799007646433884820163564",
+        "imag": "0.9623044920440230163635933235505498018645"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "3.53411460654159701868836168836934791498"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "-1",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 8,
+      "s_real_exact": "-2",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "2.162204908260589227157194867967709642864",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "2.162204908260589227157194867967709642864",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.3447660048582469830292291321760925253557",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.3447660048582469830292291321760925253557",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.5641895835477562869480794515607725858441",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.2194235786895093039188503193846800604884"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "3.54583124883917501593597527865275628122",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "3.54583124883917501593597527865275628122",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "3.514490463892048537978102533764129558828",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "3.514490463892048537978102533764129558828",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "1.0",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "2.514490463892048537978102533764129558828"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "2.364610790113435969858587006844614503627",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "2.364610790113435969858587006844614503627",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "-0.08167003414558557333614036778386017856102",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.08167003414558557333614036778386017856102",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "-0.282094791773878143474039725780386292922",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.200424757628292570137899357996526114361"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "-3/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "3.346820711720253748278950359860793812103",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "3.346820711720253748278950359860793812103",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.07511596580026407157735595474327806269973",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.07511596580026407157735595474327806269973",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.423142187660817215211059588670579439383",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.3480262218605531436337036339273013766833"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "3/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.968171189611635220688123986717480611127",
+        "imag": "0.08433033931697072645309046124054105029144"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.968171189611635220688123986717480611127",
+        "imag": "0.08433033931697072645309046124054105029144"
+      },
+      "C_k_t": {
+        "real": "-0.00178667747280668171418655631265012427022",
+        "imag": "0.7246954730786327146139432616615763879788"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.00178667747280668171418655631265012427022",
+        "imag": "0.7246954730786327146139432616615763879788"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.8059995578072983899739517250583548137298",
+        "imag": "1.0220808890262377879565582100178787218"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.8607884104275192606883334477580704398558"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "5/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.844069185471203556775291160862380194788",
+        "imag": "-0.5942548905468254364404194453757403399365"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.844069185471203556775291160862380194788",
+        "imag": "-0.5942548905468254364404194453757403399365"
+      },
+      "C_k_t": {
+        "real": "-0.8053612851260034451813983007660958851458",
+        "imag": "-0.4190012413984516773296388647780435724349"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.8053612851260034451813983007660958851458",
+        "imag": "-0.4190012413984516773296388647780435724349"
+      },
+      "reciprocal_Gamma": {
+        "real": "-3.704130287917527799007646433884820163564",
+        "imag": "0.9623044920440230163635933235505498018645"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "3.211053917452340363057918150144582043317"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "-1",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 32,
+      "s_real_exact": "-2",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.72079759530893040249473387187776202787",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.72079759530893040249473387187776202787",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.3778023602615156584118763504979275246602",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.3778023602615156584118763504979275246602",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.5641895835477562869480794515607725858441",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.1863872232862406285362031010628450611838"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "3.355812376970370937008148970047723792024",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "3.355812376970370937008148970047723792024",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "2.764758570641234407181354500091177677743",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "2.764758570641234407181354500091177677743",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "1.0",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "1.764758570641234407181354500091177677743"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.52138111275829944354395121946085966266",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.52138111275829944354395121946085966266",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "-0.1012922959202478608098127792044009731937",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.1012922959202478608098127792044009731937",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "-0.282094791773878143474039725780386292922",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.1808024958536302826642269465759853197284"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "-3/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.622778028189283336246944254816202253695",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.622778028189283336246944254816202253695",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.09829293127349573611349577157536578648549",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.09829293127349573611349577157536578648549",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.423142187660817215211059588670579439383",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.3248492563873214790975638170952136528975"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "3/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.580148758459565855716910667089804480081",
+        "imag": "0.2765740076784533237233213944938195433453"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.580148758459565855716910667089804480081",
+        "imag": "0.2765740076784533237233213944938195433453"
+      },
+      "C_k_t": {
+        "real": "0.09681671768646583862092022485961015411436",
+        "imag": "0.8067679506349077855457840853021876277612"
+      },
+      "C_k_y_regularized": {
+        "real": "0.09681671768646583862092022485961015411436",
+        "imag": "0.8067679506349077855457840853021876277612"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.8059995578072983899739517250583548137298",
+        "imag": "1.0220808890262377879565582100178787218"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.7411477330199148717672339134513917747313"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "5/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.317172734394534736151986714092647654664",
+        "imag": "0.007363238225160142177958364498836418713947"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.317172734394534736151986714092647654664",
+        "imag": "0.007363238225160142177958364498836418713947"
+      },
+      "C_k_t": {
+        "real": "-1.106443313865240805598453536895245962422",
+        "imag": "-0.4374076544355805326439960954764027827848"
+      },
+      "C_k_y_regularized": {
+        "real": "-1.106443313865240805598453536895245962422",
+        "imag": "-0.4374076544355805326439960954764027827848"
+      },
+      "reciprocal_Gamma": {
+        "real": "-3.704130287917527799007646433884820163564",
+        "imag": "0.9623044920440230163635933235505498018645"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "2.950791708705219047730570344501411221552"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "-1",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 128,
+      "s_real_exact": "-2",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.369248687888007171964590015436578758288",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.369248687888007171964590015436578758288",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.4007303739039233201305253753218386473103",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.4007303739039233201305253753218386473103",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.5641895835477562869480794515607725858441",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.1634592096438329668175540762389339385338"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "3.132854481244799837993547686592464019583",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "3.132854481244799837993547686592464019583",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "2.360033197296106891661346337764053169204",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "2.360033197296106891661346337764053169204",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "1.0",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "1.360033197296106891661346337764053169204"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.020492243799764056447621771327283032409",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.020492243799764056447621771327283032409",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "-0.1164468176391754071702451402461426566758",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.1164468176391754071702451402461426566758",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "-0.282094791773878143474039725780386292922",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.1656479741347027363037945855342436362462"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "-3/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "0.8810235621504895683906678458677654689681",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "0.8810235621504895683906678458677654689681",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.1175911619951605279537633693668577970076",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.1175911619951605279537633693668577970076",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.423142187660817215211059588670579439383",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.3055510256656566872572962193037216423755"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "3/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.24341300304899825941487093353862661845",
+        "imag": "0.3628481641200764260353868414671686938334"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.24341300304899825941487093353862661845",
+        "imag": "0.3628481641200764260353868414671686938334"
+      },
+      "C_k_t": {
+        "real": "0.1714060156897276812799716417155589286757",
+        "imag": "0.8576191949798681572732616435938038418572"
+      },
+      "C_k_y_regularized": {
+        "real": "0.1714060156897276812799716417155589286757",
+        "imag": "0.8576191949798681572732616435938038418572"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.8059995578072983899739517250583548137298",
+        "imag": "1.0220808890262377879565582100178787218"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.6555582449377985521087364907153553600121"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "5/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "0.8832706107445839299090838409461185248691",
+        "imag": "0.2263462596749381690530734755295126979938"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "0.8832706107445839299090838409461185248691",
+        "imag": "0.2263462596749381690530734755295126979938"
+      },
+      "C_k_t": {
+        "real": "-1.345296290494712249503945101347518486239",
+        "imag": "-0.4273779028815277113630526969003259929841"
+      },
+      "C_k_y_regularized": {
+        "real": "-1.345296290494712249503945101347518486239",
+        "imag": "-0.4273779028815277113630526969003259929841"
+      },
+      "reciprocal_Gamma": {
+        "real": "-3.704130287917527799007646433884820163564",
+        "imag": "0.9623044920440230163635933235505498018645"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "2.737757291317788406237647248582607835011"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "-1",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 512,
+      "s_real_exact": "-2",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "1.092843416572317537596106434722519844848",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "1.092843416572317537596106434722519844848",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.4178625429167447323175304098197640279721",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.4178625429167447323175304098197640279721",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.5641895835477562869480794515607725858441",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.1463270406310115546305490417410085578719"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "2.893058374887702651330802323636768474973",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "2.893058374887702651330802323636768474974",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "2.107246769695578571984122207501600291557",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "2.107246769695578571984122207501600291557",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "1.0",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "1.377532442369868173400863129557319153694e-40",
+      "absolute_difference_from_reciprocal_Gamma": "1.107246769695578571984122207501600291557"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "0.7063734736112657046861577697718554007333",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "0.7063734736112657046861577697718554007333",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "-0.1287087426956686612166651992129531235529",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "-0.1287087426956686612166651992129531235529",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "-0.282094791773878143474039725780386292922",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.1533860490782094822573745265674331693692"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "-3/2",
+      "s_imag_exact": "0",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "0.5149924050496897041251287255833763215071",
+        "imag": "0.0"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "0.5149924050496897041251287255833763215071",
+        "imag": "0.0"
+      },
+      "C_k_t": {
+        "real": "0.1341509981989036265024429593559592892989",
+        "imag": "0.0"
+      },
+      "C_k_y_regularized": {
+        "real": "0.1341509981989036265024429593559592892989",
+        "imag": "0.0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.423142187660817215211059588670579439383",
+        "imag": "0.0"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.2889911894619135887086166293146201500841"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "1/2",
+      "s_imag_exact": "3/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "0.970065150051152311972938716719202415944",
+        "imag": "0.3865039242822927742265433274927392828907"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "0.970065150051152311972938716719202415944",
+        "imag": "0.3865039242822927742265433274927392828907"
+      },
+      "C_k_t": {
+        "real": "0.2301718253632019478662708515580345110641",
+        "imag": "0.8919481642837243254891689695491491655732"
+      },
+      "C_k_y_regularized": {
+        "real": "0.2301718253632019478662708515580345110641",
+        "imag": "0.8919481642837243254891689695491491655732"
+      },
+      "reciprocal_Gamma": {
+        "real": "0.8059995578072983899739517250583548137298",
+        "imag": "1.0220808890262377879565582100178787218"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "0.5903491369525500490379077105245409608938"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "-1/2",
+      "s_imag_exact": "5/4",
+      "status": "numerical_diagnostic_only",
+      "Mellin_integral_t": {
+        "real": "0.5799970511877052302440985138614684582256",
+        "imag": "0.2803301791452918967033801809930939003289"
+      },
+      "Mellin_integral_y_regularized": {
+        "real": "0.5799970511877052302440985138614684582256",
+        "imag": "0.2803301791452918967033801809930939003289"
+      },
+      "C_k_t": {
+        "real": "-1.540488116681460451208230378505677642775",
+        "imag": "-0.4034155632660423447559514136131904464136"
+      },
+      "C_k_y_regularized": {
+        "real": "-1.540488116681460451208230378505677642775",
+        "imag": "-0.4034155632660423447559514136131904464136"
+      },
+      "reciprocal_Gamma": {
+        "real": "-3.704130287917527799007646433884820163564",
+        "imag": "0.9623044920440230163635933235505498018645"
+      },
+      "absolute_coordinate_difference": "0.0",
+      "absolute_difference_from_reciprocal_Gamma": "2.558620471001365956206583228779478858009"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "-1",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    },
+    {
+      "k": 2048,
+      "s_real_exact": "-2",
+      "s_imag_exact": "0",
+      "status": "exact_analytic_rising_factorial_zero",
+      "C_k": {
+        "real": "0",
+        "imag": "0"
+      },
+      "reciprocal_Gamma": {
+        "real": "0",
+        "imag": "0"
+      },
+      "explanation": "s is one of 0,-1,...,-k; (s)_(k+1)=0"
+    }
+  ],
+  "elapsed_seconds": 8.637,
+  "script_sha256": "49cffc7672e5e4e08a52ecb33af6912189a8a4aba153792ecf4c4888baf345d1"
+}

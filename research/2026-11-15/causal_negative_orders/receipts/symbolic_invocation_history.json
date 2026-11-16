@@ -1,0 +1,8 @@
+{
+  "initial_ad_hoc_invocation": {
+    "exit_code": 130,
+    "outcome": "interrupted by root",
+    "reason": "Repeated differentiation of uncollected symbolic rational expressions expanded excessively; no completed pass or failed assertion was reported."
+  },
+  "replacement": "root_symbolic_audit.py retains polynomial numerators and verifies the same source identities by exact denominator clearing. Its receipt is separate."
+}

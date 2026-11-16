@@ -1,0 +1,127 @@
+{
+  "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "controls": [
+    {
+      "name": "selected-source-ghost",
+      "negative": {
+        "exit_code": 1,
+        "source_sha256": "dc8cd6585b383bfd61a25768935d0a43ec98034b6e3e28f1f6b613c5218bd77f"
+      },
+      "passed": true,
+      "positive": {
+        "exit_code": 0,
+        "source_sha256": "652dbc0f0bff629b087537ca36a234662c7c7acd01604d6bf2d659d3d430b604"
+      }
+    },
+    {
+      "name": "must-is-silent-where-may-invents",
+      "negative": {
+        "exit_code": 1,
+        "source_sha256": "361148888cc2cfd89a992cac41473b8426cb106314eab873fcce51bfd6191bea"
+      },
+      "passed": true,
+      "positive": {
+        "exit_code": 0,
+        "source_sha256": "0e1fd3af3943a8aa6704eda5c944d92a06c1809a5bc89e3a62c89f75aa0d0c7b"
+      }
+    }
+  ],
+  "declarations": [
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.closed_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.closed_star : \u2200 {V : Type u_1} {X : Type u_2}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) {R : X \u2192 X \u2192 V} {\u03c6 : X \u2192 V},\n  ObservationalSUCC.ObservatorisQuantale.Closed K R \u03c6 \u2192\n    \u2200 (x z : X), K.le (K.mul (\u03c6 x) (ObservationalSUCC.ObservatorisQuantale.star K R x z)) (\u03c6 z)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.star_closed",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.star_closed : \u2200 {V : Type u_1} {X : Type u_2}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (x : X),\n  ObservationalSUCC.ObservatorisQuantale.Closed K R (ObservationalSUCC.ObservatorisQuantale.star K R x)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.star_le_of_closed",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.star_le_of_closed : \u2200 {V : Type u_1} {X : Type u_2}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) {R : X \u2192 X \u2192 V} {\u03c6 : X \u2192 V},\n  ObservationalSUCC.ObservatorisQuantale.Closed K R \u03c6 \u2192\n    \u2200 {x : X}, K.le K.one (\u03c6 x) \u2192 \u2200 (z : X), K.le (ObservationalSUCC.ObservatorisQuantale.star K R x z) (\u03c6 z)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.star_le_quot_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.star_le_quot_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x z : X),\n  K.le (ObservationalSUCC.ObservatorisQuantale.star K R x z)\n    (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quot K R q) (q x) (q z))"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.push_star_le_quot_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.push_star_le_quot_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X) (b : Y),\n  K.le (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x) b)\n    (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quot K R q) (q x) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exactAt_iff_saturated_star_closed",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exactAt_iff_saturated_star_closed : \u2200 {V : Type u_1} {X : Type u_2}\n  {Y : Type u_3} (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X),\n  ObservationalSUCC.ObservatorisQuantale.ExactAt K R q x \u2194\n    ObservationalSUCC.ObservatorisQuantale.Closed K R fun s =>\n      ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x) (q s)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exact_iff_fibreConstant",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exact_iff_fibreConstant : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y),\n  ObservationalSUCC.ObservatorisQuantale.EndpointExact K R q \u2194\n    ObservationalSUCC.ObservatorisQuantale.FibreConstant K R q"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exact_iff_satClosed",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exact_iff_satClosed : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y),\n  ObservationalSUCC.ObservatorisQuantale.EndpointExact K R q \u2194 ObservationalSUCC.ObservatorisQuantale.SatClosed K R q"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exact_iff_pushClosed",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exact_iff_pushClosed : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y),\n  ObservationalSUCC.ObservatorisQuantale.EndpointExact K R q \u2194 ObservationalSUCC.ObservatorisQuantale.PushClosed K R q"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exact_iff_edgeRealised",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exact_iff_edgeRealised : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y),\n  ObservationalSUCC.ObservatorisQuantale.EndpointExact K R q \u2194 ObservationalSUCC.ObservatorisQuantale.EdgeRealised K R q"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.quotAll_star_le_push_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.quotAll_star_le_push_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X) (b : Y),\n  K.le (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quotAll K R q) (q x) b)\n    (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.closure_push_adjunction",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.closure_push_adjunction : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (\u03c6 : X \u2192 V) {\u03c8 : Y \u2192 V},\n  ObservationalSUCC.ObservatorisQuantale.Closed K (ObservationalSUCC.ObservatorisQuantale.quot K R q) \u03c8 \u2192\n    ((\u2200 (b : Y),\n        K.le\n          (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n            (ObservationalSUCC.ObservatorisQuantale.push K q \u03c6) b)\n          (\u03c8 b)) \u2194\n      \u2200 (u : X), K.le (\u03c6 u) (\u03c8 (q u)))"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.closure_push_star_le_quot_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.closure_push_star_le_quot_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X) (b : Y),\n  K.le\n    (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n      (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x)) b)\n    (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quot K R q) (q x) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.quot_star_le_closure_push_star",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.quot_star_le_closure_push_star : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X) (b : Y),\n  K.le (ObservationalSUCC.ObservatorisQuantale.star K (ObservationalSUCC.ObservatorisQuantale.quot K R q) (q x) b)\n    (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n      (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x)) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exactAt_iff_closure_push_le",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exactAt_iff_closure_push_le : \u2200 {V : Type u_1} {X : Type u_2} {Y : Type u_3}\n  (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X),\n  ObservationalSUCC.ObservatorisQuantale.ExactAt K R q x \u2194\n    \u2200 (b : Y),\n      K.le\n        (ObservationalSUCC.ObservatorisQuantale.closure K (ObservationalSUCC.ObservatorisQuantale.quot K R q)\n          (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x)) b)\n        (ObservationalSUCC.ObservatorisQuantale.push K q (ObservationalSUCC.ObservatorisQuantale.star K R x) b)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.satClosed_iff_sat_closure_idempotent",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.satClosed_iff_sat_closure_idempotent : \u2200 {V : Type u_1} {X : Type u_2}\n  {Y : Type u_3} (K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V) (R : X \u2192 X \u2192 V) (q : X \u2192 Y),\n  ObservationalSUCC.ObservatorisQuantale.SatClosed K R q \u2194\n    \u2200 (\u03c6 : X \u2192 V) (u : X),\n      K.le\n        (ObservationalSUCC.ObservatorisQuantale.sat K q\n          (ObservationalSUCC.ObservatorisQuantale.closure K R\n            (ObservationalSUCC.ObservatorisQuantale.sat K q (ObservationalSUCC.ObservatorisQuantale.closure K R \u03c6)))\n          u)\n        (ObservationalSUCC.ObservatorisQuantale.sat K q (ObservationalSUCC.ObservatorisQuantale.closure K R \u03c6) u)"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.exactAt_map",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.exactAt_map : \u2200 {V W : Type u_1} {X : Type u_2} {Y : Type u_3}\n  {K : ObservationalSUCC.ObservatorisQuantale.LaxQuantale V} {L : ObservationalSUCC.ObservatorisQuantale.LaxQuantale W}\n  {h : V \u2192 W},\n  ObservationalSUCC.ObservatorisQuantale.QHom K L h \u2192\n    \u2200 (R : X \u2192 X \u2192 V) (q : X \u2192 Y) (x : X),\n      ObservationalSUCC.ObservatorisQuantale.ExactAt K R q x \u2192\n        ObservationalSUCC.ObservatorisQuantale.ExactAt L (fun u v => h (R u v)) q x"
+    },
+    {
+      "axioms": [],
+      "name": "ObservationalSUCC.ObservatorisQuantale.star_propQ_iff",
+      "type": "@ObservationalSUCC.ObservatorisQuantale.star_propQ_iff : \u2200 {X : Type u_1} (R : X \u2192 X \u2192 Prop) (x z : X),\n  ObservationalSUCC.ObservatorisQuantale.star ObservationalSUCC.ObservatorisQuantale.propQ R x z \u2194\n    ObservationalSUCC.ObservatorisQuantale.Reach R x z"
+    }
+  ],
+  "imports": [],
+  "scope": "Encoded statements only; no source authentication, no signed-weight claim, no Python implementation is certified.",
+  "source": "formal/ObservatorisQuantale.lean",
+  "source_sha256": "b326f653bc84dcdad14d6d9bf24425637b1a70fe53ed7628b4cc784bb1d0e4c4",
+  "status": "KERNEL_CHECKED",
+  "toolchain": "leanprover/lean4:v4.14.0"
+}

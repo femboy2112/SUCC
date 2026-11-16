@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-15",
+  "parent_sha": "e14d46c17a65e1e5f231c619657b9332caa181c0",
+  "proof_authority": "Written mathematical derivations plus separately scoped exact finite checks; not Lean or external peer review",
+  "academic_novelty": "UNVERIFIED",
+  "diagnostics": {
+    "contact": "Exact repository and original source available",
+    "pathway": "Finite typed calculus constructed; full signed estimate remains open",
+    "source_map": "Original source labels and zero seed preserved; declared lag independence is not digit randomness",
+    "probe_availability": "Exact finite arithmetic, independent decompositions, hostile controls and proofs",
+    "independence": "Shared source and model family; separate code is not independent empirical authority",
+    "coherence": "Typed identities agree within their explicit domains",
+    "discrimination": "Wrong radix, lost boundary, lost carry, wrong convolution and convergence-domain mutants distinguished"
+  },
+  "claims": [
+    {
+      "id": "VA-01",
+      "status": "CLASSICAL_INHERITED",
+      "claim": "Original four poles are the Laplace observation of the positive signed exponential kernel q.",
+      "domain": "Real a>0; original shifts 0,3,4,5 and residues 4,-2,-1,-1; n>=1, U0=0.",
+      "evidence": [
+        "THEOREMS.md VA-01",
+        "tests/test_bbp_gamma_kernel_algebra.py"
+      ],
+      "hostile_control": "Replace signed residues by their absolute values.",
+      "boundary": "No stochastic digit law or source authentication from positivity.",
+      "provenance": "Original BBP; 2026-10-26 source Mellin/Hilbert.",
+      "next_falsifier": "Replace signed residues by their absolute values."
+    },
+    {
+      "id": "VA-02",
+      "status": "PROVED_LOCAL_CLASSICAL_SPECIALIZATION",
+      "claim": "The j-fold forcing power has exactly four pole locations with order j, a 4j-slot inverse-Laplace kernel, and first nonzero Taylor coefficient 15^j/(2j-1)!.",
+      "domain": "All integers j>=1, real a>0; implementation j<=12, Taylor degree<=64.",
+      "evidence": [
+        "THEOREMS.md VA-02",
+        "TRANSLATION_NOTES.md",
+        "tests/test_bbp_gamma_kernel_algebra.py"
+      ],
+      "hostile_control": "Change a pole or use pointwise q^j in place of convolution.",
+      "boundary": "Kernel-jet cancellation is not chronological phase cancellation; basis slots may have zero lower coefficients.",
+      "provenance": "Classical partial fractions, Laplace product and Beta convolution; source Gamma(2) endpoint inherited.",
+      "next_falsifier": "Change a pole or use pointwise q^j in place of convolution."
+    },
+    {
+      "id": "VA-02-TV",
+      "status": "PROVED_LOCAL_CLASSICAL_SPECIALIZATION",
+      "claim": "Scaled j-fold independent lag sum is within TV <= 1-(a^2 R(a)/15)^j <= min(1,59j/(15a)) of Gamma(2j,1).",
+      "domain": "a>0, integer j>=1; independent lag variables with the declared normalized source density; TV=half L1.",
+      "evidence": [
+        "THEOREMS.md VA-02",
+        "TRANSLATION_NOTES.md"
+      ],
+      "hostile_control": "Remove the independent convolution construction or replace the full source by its endpoint jet.",
+      "boundary": "Does not identify a physical channel or arithmetic time distribution.",
+      "provenance": "Classical Gamma envelope argument applied to exact source q<=15t.",
+      "next_falsifier": "Remove the independent convolution construction or replace the full source by its endpoint jet."
+    },
+    {
+      "id": "VA-03",
+      "status": "PROVED_LOCAL_CLASSICAL_SPECIALIZATION",
+      "claim": "Graded Green product uses radix bc and negative equal-time correction, with full seed cross terms.",
+      "domain": "Finite sequences in a commutative scalar algebra, positive b,c; declared seeds.",
+      "evidence": [
+        "THEOREMS.md VA-03",
+        "receipts/independent.json",
+        "tests/test_bbp_volume_algebra.py"
+      ],
+      "hostile_control": "Use radix b instead of bc, omit fg, or retain only a homogeneous seed product.",
+      "boundary": "Continuous Gamma depth composition is a different operation.",
+      "provenance": "Classical Rota-Baxter family weight -1; inherited SA-04 ungraded rule.",
+      "next_falsifier": "Use radix b instead of bc, omit fg, or retain only a homogeneous seed product."
+    },
+    {
+      "id": "VA-04",
+      "status": "PROVED_LOCAL_IMPLEMENTED",
+      "claim": "The specified source-labelled word product is terminating, associative, commutative and sound under finite source evaluation.",
+      "domain": "Positive rational radices, rational coefficients, finite words and source tables; explicit implementation depth/term/horizon budgets.",
+      "evidence": [
+        "THEOREMS.md VA-04",
+        "TRANSLATION_NOTES.md",
+        "tests/test_bbp_volume_algebra.py"
+      ],
+      "hostile_control": "Compare binary products and three-way ordered partitions; specialize distinct source labels to equal rows.",
+      "boundary": "Formal normal form is not a complete semantic equality procedure.",
+      "provenance": "Classical quasi-shuffle/Rota-Baxter structures; explicit local radix-labelled recursion.",
+      "next_falsifier": "Compare binary products and three-way ordered partitions; specialize distinct source labels to equal rows."
+    },
+    {
+      "id": "VA-05",
+      "status": "PROVED_LOCAL_CLASSICAL_SPECIALIZATION",
+      "claim": "Degree-d polynomial outputs of the original state close in dimension d+1 over Q(n); source powers have the graded Green hierarchy.",
+      "domain": "d>=0; power identity k>=1; finite rational initial state with original zero selected here.",
+      "evidence": [
+        "THEOREMS.md VA-05",
+        "CONSTRUCTOR_NOTES.md",
+        "tests/test_bbp_volume_algebra.py"
+      ],
+      "hostile_control": "Check independent original recurrence and graded-power drivers.",
+      "boundary": "No minimal dimension claim; arithmetic-operation count is not bit cost.",
+      "provenance": "Classical affine symmetric-power lift; original Green construction inherited.",
+      "next_falsifier": "Check independent original recurrence and graded-power drivers."
+    },
+    {
+      "id": "VA-06",
+      "status": "PROVED_LOCAL",
+      "claim": "For each fixed nonzero integer h, e(h U_n) has no nonzero eventual finite-order homogeneous recurrence over C(n).",
+      "domain": "Original four signed poles, U0=0, h in Z excluding 0; finitely many rational-function coefficient expressions.",
+      "evidence": [
+        "THEOREMS.md VA-06",
+        "CONSTRUCTOR_NOTES.md CN-07 through CN-10",
+        "ADVERSARY_NOTES.md",
+        "receipts/prime_birth.json"
+      ],
+      "hostile_control": "Fresh first-pole prime beyond coefficient-field degree and last coefficient roots; h=0 and p dividing h are required nulls.",
+      "boundary": "Does not exclude nonlinear programs, growing phase carriers, or prove signed cancellation.",
+      "provenance": "Inherited PG-09 extended to fixed number fields and algebraic coefficient descent.",
+      "next_falsifier": "Fresh first-pole prime beyond coefficient-field degree and last coefficient roots; h=0 and p dividing h are required nulls."
+    },
+    {
+      "id": "VA-06-CONTROL",
+      "status": "REFUTED_GENERAL_INFERENCE",
+      "claim": "Non-P-recursiveness by itself would imply cancellation.",
+      "domain": "Generic root-of-unity sequences, explicitly outside the original BBP source.",
+      "evidence": [
+        "THEOREMS.md VA-06",
+        "CONSTRUCTOR_NOTES.md"
+      ],
+      "hostile_control": "eta_n=exp(2pi i/p_n) tends to 1 while having the same fresh-prime closure obstruction.",
+      "boundary": "Not a counterexample to the original zero-seeded BBP normality question.",
+      "provenance": "Explicit mathematical countermodel.",
+      "next_falsifier": "eta_n=exp(2pi i/p_n) tends to 1 while having the same fresh-prime closure obstruction."
+    },
+    {
+      "id": "VA-07",
+      "status": "PROVED_LOCAL_CLASSICAL_SPECIALIZATION",
+      "claim": "Exact affine block composition retains the weighted carry cocycle and gives the original phase recurrence.",
+      "domain": "Positive integer radix, rational forcing, integer lift and representative in [0,1); fixed integer harmonic.",
+      "evidence": [
+        "THEOREMS.md VA-07",
+        "receipts/independent.json",
+        "tests/test_bbp_volume_algebra.py"
+      ],
+      "hostile_control": "Drop the carry seam or reverse block order.",
+      "boundary": "Noninteger dilation requires more lift information; phase is nonlinear.",
+      "provenance": "Inherited original literal carry; classical affine action and section cocycle.",
+      "next_falsifier": "Drop the carry seam or reverse block order."
+    },
+    {
+      "id": "VA-07-GAMMA",
+      "status": "PROVED_LOCAL",
+      "claim": "Weighted phase from fundamental input phases requires integer lift mod den(h w_j); rate-one integer-shape Gamma requires unbounded coordinate moduli.",
+      "domain": "Finite coordinates for descent; arbitrary finite-support lift changes; rational weights; fundamental phases e(U_j); integer Gamma shape m>=1 and fixed h!=0 for unboundedness.",
+      "evidence": [
+        "THEOREMS.md VA-07",
+        "ADVERSARY_NOTES.md",
+        "receipts/independent.json"
+      ],
+      "hostile_control": "Half-weight authentic U1=47/15, or alter one lift by one without its required modulus.",
+      "boundary": "Does not license arbitrary modifications of the canonical BBP orbit or apply unchanged to inputs only at harmonic h.",
+      "provenance": "Inherited rational-filter carry obstructions; explicit all-grade Gamma consequence.",
+      "next_falsifier": "Half-weight authentic U1=47/15, or alter one lift by one without its required modulus."
+    },
+    {
+      "id": "VA-08",
+      "status": "PROVED_LOCAL",
+      "claim": "Raw forward Gamma-weighted BBP states are summable iff rate lambda>15; retained tail always has an exact source integral.",
+      "domain": "Real shape alpha>0, rate lambda>0, actual BBP U and tail T, fixed n>=0.",
+      "evidence": [
+        "THEOREMS.md VA-08",
+        "ADVERSARY_NOTES.md",
+        "receipts/independent.json",
+        "tests/test_bbp_volume_algebra.py"
+      ],
+      "hostile_control": "At lambda=15 and alpha=1/2 the terms decrease but exact partial sums diverge; rate-one raw-state terms grow.",
+      "boundary": "An algebraic resolvent outside the positive-series domain is not that average.",
+      "provenance": "Inherited Gamma operator on bounded sequences and authentic Green identity; new source-domain specialization.",
+      "next_falsifier": "At lambda=15 and alpha=1/2 the terms decrease but exact partial sums diverge; rate-one raw-state terms grow."
+    },
+    {
+      "id": "VA-08-BOUNDARY",
+      "status": "PROVED_LOCAL",
+      "claim": "For rates 0<lambda<=15 the homogeneous subtraction constant is uniquely xi=pi/16; for lambda>15 any constant is summable.",
+      "domain": "Same original source, fixed shape alpha>0 and n>=0; subtract 16^(n+j)c before summing.",
+      "evidence": [
+        "THEOREMS.md VA-08",
+        "ADVERSARY_NOTES.md"
+      ],
+      "hostile_control": "Any nonzero boundary error below threshold leaves the divergent homogeneous part.",
+      "boundary": "Convergence selection is not a signed phase estimate or a free finite-precision oracle.",
+      "provenance": "Exact Green homogeneous decomposition.",
+      "next_falsifier": "Any nonzero boundary error below threshold leaves the divergent homogeneous part."
+    },
+    {
+      "id": "VA-09",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "claim": "Mellin shift and integration-by-parts rules retain endpoints and the noncommuting relation EN=(N+1)E.",
+      "domain": "Weighted integrability, local absolute continuity, finite endpoint and zero lower weighted boundary as stated in THEOREMS.md.",
+      "evidence": [
+        "THEOREMS.md VA-09",
+        "TRANSLATION_NOTES.md"
+      ],
+      "hostile_control": "Use f=1 after deleting the endpoint, or commute E and N.",
+      "boundary": "No unconditional boundary-free transform rule.",
+      "provenance": "Classical Mellin transform and Ore shift algebra.",
+      "next_falsifier": "Use f=1 after deleting the endpoint, or commute E and N."
+    },
+    {
+      "id": "VA-FINITE",
+      "status": "OBSERVED_FINITE",
+      "claim": "The final focused suite passed 104 tests, including 31 new tests; separate exact source/Green/carry and prime-birth audits passed.",
+      "domain": "Commands and exact budgets in receipts and VALIDATION.md.",
+      "evidence": [
+        "receipts/focused.json",
+        "receipts/independent_run.json",
+        "receipts/prime_birth_run.json"
+      ],
+      "hostile_control": "Mutation controls and separate algebraic decompositions.",
+      "boundary": "Finite tests do not prove universal analytic claims; counts overlap.",
+      "provenance": "Executed locally in this round; no hosted CI or Lean claim.",
+      "next_falsifier": "Mutation controls and separate algebraic decompositions."
+    },
+    {
+      "id": "VA-OPEN",
+      "status": "UNVERIFIED_OPEN",
+      "claim": "The calculus yields a uniform sublinear bound for every original fixed-frequency signed Weyl sum.",
+      "domain": "Canonical zero-seeded four-pole source; every fixed integer h!=0 and all sufficiently large temporal horizons.",
+      "evidence": [
+        "NEXT.md"
+      ],
+      "hostile_control": "Produce a source-preserving signed bound with certified remainder and coherent/source-mutant controls.",
+      "boundary": "The present exact algebra does not supply this bound.",
+      "provenance": "Inherited original signed cancellation frontier remains open.",
+      "next_falsifier": "Produce a source-preserving signed bound with certified remainder and coherent/source-mutant controls."
+    }
+  ]
+}

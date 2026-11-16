@@ -1,0 +1,23 @@
+[
+  {
+    "step": "Initial source-preservation helper",
+    "status": "FAILED_THEN_REPAIRED",
+    "error": "KeyError: 'artifacts'",
+    "cause": "Helper used an incorrect manifest key; actual schema uses artifact_sha256.",
+    "resolution": "Read the actual schema and reran exact comparisons successfully.",
+    "source_modification_required": false
+  },
+  {
+    "step": "Initial native-summary metadata extraction",
+    "status": "REPAIRED_BEFORE_PUBLICATION",
+    "cause": "First regex match selected a nested four-test fixture summary from the full suite log.",
+    "resolution": "Selected the final native summary and asserted its observed 13047-test count; the original full log remains unchanged.",
+    "actual_native_test_failure": false
+  },
+  {
+    "step": "Initial staged formatting check",
+    "status": "FAILED_THEN_REPAIRED",
+    "raw_output": "research/2026-11-12/prime_fixed_point_observer/AUDIT.md:133: new blank line at EOF.\n",
+    "resolution": "Removed one trailing blank line at end of AUDIT.md; mathematical content unchanged."
+  }
+]

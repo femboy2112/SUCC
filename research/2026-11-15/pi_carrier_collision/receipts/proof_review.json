@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-15",
+  "theorem_sha256": "03938f2d19125d214ad2e517982365d4f73f33fe8a264a6ef3278741d3021e1b",
+  "verdict": "BOUNDED PASS",
+  "reviews": [
+    {
+      "role": "constructor",
+      "notes": "CONSTRUCTOR_NOTES.md",
+      "notes_sha256": "c07fce729c18d57649d0f44b9f0bea0fcc708e5b3cf86231f5dad40a4d94f547",
+      "scope": [
+        "PC-01",
+        "PC-02",
+        "PC-03",
+        "PC-04",
+        "PC-05",
+        "PC-06",
+        "PC-09"
+      ],
+      "verdict": "BOUNDED PASS"
+    },
+    {
+      "role": "adversary",
+      "notes": "ADVERSARY_NOTES.md",
+      "notes_sha256": "af5a9c3279eee29c9fa15a1741060f0cf5fac759d83e763f123719ec1e581f20",
+      "scope": [
+        "PC-01",
+        "PC-02",
+        "PC-03",
+        "PC-04",
+        "PC-05",
+        "PC-06",
+        "PC-07",
+        "PC-08",
+        "PC-09",
+        "PC-10"
+      ],
+      "verdict": "BOUNDED PASS"
+    },
+    {
+      "role": "translator",
+      "notes": "TRANSLATION_NOTES.md",
+      "notes_sha256": "dbb8c0ad1576a63f1e70a0996f627e8e4632b459ff5f629c786774174e6e12c1",
+      "scope": [
+        "PC-03",
+        "PC-04",
+        "PC-06",
+        "PC-09"
+      ],
+      "verdict": "BOUNDED PASS"
+    }
+  ],
+  "dependence": "Shared model family and repository; these are bounded proof reviews, not independent probability estimates."
+}

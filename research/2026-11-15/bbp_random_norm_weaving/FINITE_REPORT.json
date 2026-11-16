@@ -1,0 +1,98 @@
+{
+  "basis": "original immutable four-pole r, zero seed; declared external iid uniform observer",
+  "chiral_twist_mp": "0.1963282919111300504144010934074924163914703945694412",
+  "defect_probability_mp": "0.00002124893823202698951411804747651387085269289150291042",
+  "finite_circle_probe_smoke": [
+    {
+      "h": 1,
+      "n": 5,
+      "p_in_phase": 0.1294315709369347,
+      "p_quadrature": 0.1643230133271988,
+      "source_phase_imag": -0.6713539733456023,
+      "source_phase_real": -0.7411368581261305,
+      "source_reference_error": 1.5242840565028426e-14,
+      "z_float_smoke": 0.4161456606896759
+    },
+    {
+      "h": 1,
+      "n": 9,
+      "p_in_phase": 0.12460071095631878,
+      "p_quadrature": 0.1697343890358872,
+      "source_phase_imag": -0.6605312219282256,
+      "source_phase_real": -0.7507985780873624,
+      "source_reference_error": 2.289348793560854e-14,
+      "z_float_smoke": 0.5220189585989826
+    },
+    {
+      "h": 1,
+      "n": 17,
+      "p_in_phase": 0.006232857083243863,
+      "p_quadrature": 0.42129797603731073,
+      "source_phase_imag": -0.1574040479253786,
+      "source_phase_real": -0.9875342858335122,
+      "source_reference_error": 9.628944835169366e-15,
+      "z_float_smoke": 0.0746084558808791
+    },
+    {
+      "h": 2,
+      "n": 29,
+      "p_in_phase": 0.8289470141759799,
+      "p_quadrature": 0.8765552573855631,
+      "source_phase_imag": 0.7531105147711261,
+      "source_phase_real": 0.6578940283519599,
+      "source_reference_error": 9.056079071906431e-14,
+      "z_float_smoke": 0.450266124964522
+    }
+  ],
+  "geometric_stopped_mc_not_certificate": {
+    "click_fraction": 0.19585483870967743,
+    "click_hits": 12143,
+    "exact_probability": "0.19634954084936207740391521145496893",
+    "rows": 62000,
+    "seed": 2026111504
+  },
+  "jet_mod16_q16": {
+    "10": 3,
+    "11": 3,
+    "12": 11,
+    "5": 11,
+    "6": 3,
+    "7": 3,
+    "8": 11,
+    "9": 11
+  },
+  "jet_mod16_q256": {
+    "10": 3,
+    "5": 11,
+    "6": 3,
+    "7": 3,
+    "8": 11,
+    "9": 11
+  },
+  "joint_moment_defect": "-34/45",
+  "monte_carlo_not_certificate": {
+    "chiral_click_fraction": 0.2005,
+    "expected_rare_hits": 0.5099745175686478,
+    "pi_click_fraction": 0.2005,
+    "rare_defect_hits": 0,
+    "rows": 24000,
+    "seed": 202611151706,
+    "warning": "A zero-hit run is entirely compatible with the exact rare-event probability."
+  },
+  "original_pi16_mp": "0.1963495408493620774039152114549689302623230874609441",
+  "positive_defect_lower_bound": "829/40212480",
+  "status": "finite smoke and exact symbolic or analytic identities; \u03c0 base-16 normality OPEN",
+  "third_joint_cumulant": "-1/45",
+  "time_coherent_phasor_smoke_not_certificate": {
+    "fresh_product_imag": -0.0007167558612808015,
+    "fresh_product_real": 0.0027237415119227056,
+    "h": 1,
+    "rows": 32000,
+    "seed": 2026111534,
+    "shared_product_imag": -0.3306031865408179,
+    "shared_product_real": -0.37578299726908093,
+    "source_n": 9,
+    "target_imag": -0.6605312219282256,
+    "target_real": -0.7507985780873624
+  }
+}

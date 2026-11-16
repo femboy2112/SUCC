@@ -1,0 +1,38 @@
+[
+  {
+    "name": "astra_exact",
+    "command": "python scripts/principia_observatoris_probe.py",
+    "exit": 0,
+    "seconds": 0.175
+  },
+  {
+    "name": "astra_independent",
+    "command": "python research/2026-11-13/principia_observatoris/independent_audit.py",
+    "exit": 0,
+    "seconds": 5.4
+  },
+  {
+    "name": "astra_sharp",
+    "command": "python research/2026-11-13/principia_observatoris/sharp_rival_probe.py",
+    "exit": 0,
+    "seconds": 0.752
+  },
+  {
+    "name": "astra_scale",
+    "command": "python research/2026-11-13/principia_observatoris/arithmetic_scale_probe.py",
+    "exit": 0,
+    "seconds": 0.121
+  },
+  {
+    "name": "astra_adaptive",
+    "command": "python research/2026-11-13/principia_observatoris/adaptive_linear_probe.py",
+    "exit": 0,
+    "seconds": 0.049
+  },
+  {
+    "name": "ancestral",
+    "command": "python scripts/principia_ancestral_probe.py",
+    "exit": 0,
+    "seconds": 0.066
+  }
+]

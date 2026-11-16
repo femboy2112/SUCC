@@ -1,0 +1,30 @@
+{
+  "command": "Named-module unittest suite (listed patterns below)",
+  "patterns": {
+    "test_interference_forms.py": 25,
+    "test_interference_controls.py": 31,
+    "test_universal_interference_detector.py": 15,
+    "test_bbp_echo_delay_transport.py": 8,
+    "test_bbp_collision_frame.py": 21,
+    "test_phase_detection.py": 29,
+    "test_random_probe_frames.py": 10,
+    "test_bbp_binwindow_conjugacy.py": 16,
+    "test_source_authentication.py": 27,
+    "test_collective_spectral.py": 26
+  },
+  "tests_run": 208,
+  "new_tests": 71,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 2.242,
+  "exit_code": 0,
+  "file_sha256": {
+    "observational_succ/interference_forms.py": "e3ad03fe74f51da65603041dfb98ffa98a9bac005cbc3c26a81bb8acb41a8350",
+    "observational_succ/interference_controls.py": "29b618fa2b716a81df46adc16f698b59db382e1f9bde12f1aeb76dfced0b4dcc",
+    "observational_succ/universal_interference_detector.py": "19deabb504a4072e80aff4c4a9485395a1b4a6880ad715b1c484db81a82d9392",
+    "tests/test_interference_forms.py": "29c32a4c319ebf8da27f1384fe8525dec08775fde6b97fb87ed25baa4c1243f6",
+    "tests/test_interference_controls.py": "955bd4c995c3e9ab3fa16f4b804a74358aa878ac0bde41c5e7edd39310657dad",
+    "tests/test_universal_interference_detector.py": "57e7ac3022d93687dca1dc8d5e29d99efaf29e1ba54eec5813987dbc69ecd76b"
+  },
+  "scope": "Final frozen new modules and related inherited tests; overlaps full discovery. The first harness attempt ran no tests and is retained separately."
+}

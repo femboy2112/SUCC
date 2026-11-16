@@ -39,7 +39,7 @@ Readable raw targeted audits retained under `reviews/` are historical review
 receipts; this consolidated dossier governs the corrected statements. Their
 original scratch paths identify what was inspected at review time.
 
-## Remaining validation limitation
+## Initial validation limitation (historical record)
 
 The native repository suite is recorded honestly in `VALIDATION.md`: its
 completed run had one import-path setup error, which also reproduced on
@@ -47,3 +47,244 @@ untouched main and passed in a corrected targeted replay. A later full retry
 lost its execution handle before a final summary; it is not counted as a pass.
 The new dossier's final47-test suite and exact probes passed. This research
 branch remains draft, with no merge authorization inferred from these results.
+
+## Shared-carrier follow-up
+
+The information, source-rigidity, and domain-theory decompositions were checked
+against explicit countercontrols. The root verified the carrier-cost chain
+rule, anchored intertwining argument, bivariate coefficient identity, and
+finite-to-infinite continuity proof. Their standard frameworks are cited in
+the addendum; no priority or universal compression claim is made.
+
+`reviews/carrier_code_audit.md` preserves a separate targeted review of the
+new executable and receipt. It checked source hashes, weighted Cauchy
+multiplication, exact entropy scope, and direct enumeration of coherently
+transported pairs. It also records the limited scope of the quarter-turn
+calibration. As in the original round, these are same-model checks.
+
+Important guards retained in the final text include: carrier cost is charged;
+equal total correlation need not imply positive overlap; the anchor is needed
+in addition to the braid; the approximate bound is for basis vectors; the
+pair product is formed in ordinary sets before its sum map to the carrier;
+an undamped infinite torus wave is not assumed to converge; and the joint
+additive generating series is not silently assigned a multiplicative Euler
+product.
+
+## Prime-wave continuation
+
+The category, local-resonance and hostile-source decompositions were checked
+against explicit formulas and exact controls. `PRIME_WAVES.md` contains the
+graded/action-category maps, pullback intertwiners, bounded divisor projection
+identity, declared degree domain, corrected sieve, Ramanujan interference,
+finite CRT product, coherent phase recovery, and three failure receipts.
+
+`reviews/wave_resonance_audit.md` records the independent Mobius/gcd replay
+and a repaired singular-series quantifier. `reviews/wave_adversary_audit.md`
+records source and sign checks plus two repaired input-validation gaps.
+The root replayed both executable arithmetic paths; their counts remain
+separate from the main probe and the 61-method dossier test suite.
+
+The final cross-circle identity was also checked on the basis: both sides of
+`U_alpha W_beta V_m = e(beta Omega(m)) V_m U_(m alpha) W_beta` send e_n to
+`e(mn alpha + beta(Omega(m)+Omega(n))) e_(mn)`. These operators are bounded.
+The convergent harmonic-cylinder addition was reviewed separately: positive
+height gives uniform convergence and differentiated convergence away from
+zero, the Laplace signs cancel, the geometric tail bound is valid, and the
+ordered-pair coefficient has the correct damping normalization. Height is a
+declared smoothing parameter; no physical-time identification is inferred.
+
+The corrected full native run completed **13,047 tests, all PASS**, alongside
+the **61-test dossier suite**. Exact logs and historical failures remain in
+`VALIDATION.md` and `receipts/`. This closes the previous local full-run
+certification gap. It does not change the draft status, mathematical proof
+scope, or the unresolved source-derived prime-pair estimate.
+# Borwein and triadic continuation audit
+
+The continuation from `e855200a9a447933ef93b3ee0947d14d00ef42de` has separate
+construction, proof, geometric and adversarial views. The proof audit is
+[BORWEIN_DERIVATION_AUDIT.md](BORWEIN_DERIVATION_AUDIT.md); the implementation
+and countermodel review is
+[borwein_adversary_audit.md](reviews/borwein_adversary_audit.md). These are
+same-model reviews with different calculations, not external peer review.
+
+Concrete corrections retained in this round:
+
+- The canonical degree filter gives the unit eigenvalue one half. Adding
+  half a unit projector fixes it; adding a whole projector would give 3/2.
+- The multiplier-independence argument explicitly uses the carrier that
+  includes the unit. The prime-filter norm statement separately uses n>=2.
+- Empty-bank Fourier half-values and closed-window point-mass values are
+  distinct executable interfaces. Winding uses the anchored address n-1.
+- Public summary constructors initially accepted impossible products and
+  returned purported probabilities 50 and 25/12. Exact feasible-product
+  bounds and a probability guard now reject both witnesses; valid extremal
+  summaries still pass independent CDF comparisons.
+
+The root replay records 4,285 new exact Borwein checks and 382 separate
+geometric audit checks. The complete dossier test suite contains 74 passing
+methods, including 13 Borwein methods after the repair. Additional subagent
+comparisons remain scoped in their review rather than added to those counts.
+Infinite claims are justified by the displayed proofs, including the
+first-crossing simplex, rectification Laplace product and maximal inequality.
+
+The third-relation extension has its own exact matrix and source-map probe.
+Its simple-graph assumptions and the difference between a local unit anchor
+and the full source braid remain part of the claim boundary.
+
+## Return-family, root, and typed-channel continuation
+
+The continuation from `3b2a3058ac6973da43554cbeeaaeee806a891d67` separates
+literal histories, affine maps, Hilbert return operators, representable
+presheaves, coherent amplitudes and implementation costs. The root checked
+the gcd-domain and family-Gram derivations, prime/composite witness,
+strong-limit tail proof, and all numerical examples in the new main note.
+
+[return_paths_category_audit.md](reviews/return_paths_category_audit.md)
+records a separate literal-word implementation and the precise Yoneda
+boundary. Its categorical proof includes the nonempty identity evaluation
+that prevents proper lower representables from gluing to the whole in the
+chosen forward category. The root independently replayed the audit and
+the source transposition11/13 control. A relative sign mutation preserves
+the full diagonal family profile while changing coherent output37/50 to
+13/50, demonstrating the information lost by taking that profile.
+
+[common_root_audit.md](reviews/common_root_audit.md) checks the centered
+algebra and analytic observation norms. It prevents calling the root the
+only common eigenvector at every eigenvalue: epsilon1 is a common zero
+eigenvector, while the fixed space at eigenvalue1 is precisely the root
+line. Original multiplication retains d-1 after recentering. The compact
+analytic norm requires fixed radius below1 and r>1 for unit-ball decay;
+coefficient norm never has a global finite-stage gap. The implementation
+uses exact real-rational fixtures, while the proofs allow complex states.
+
+The motion and typed-channel companions include hostile controls rather
+than relying on analogy: opposite quaternion signs can encode the same
+rotation, local associator signs can fail the pentagon, equal affine maps
+can have different history costs, and dimensionally legal maps can lack a
+compatible nonzero root. The graded path sum is formal and locally finite;
+it is not silently evaluated as a convergent analytic series.
+
+These reviews share model provenance and are not external refereeing.
+Universal claims depend on the written derivations; finite executions
+certify their specified code paths and counterexamples. Actual gate counts
+and retained integration history belong in `VALIDATION.md`.
+
+## Twin observers: present outputs and frame-aware transport
+
+The continuation from `7622063945ab06c72b092371747a1a5bbbf35e3a` began
+by replaying the centered-root and typed-channel canonical witnesses and
+inspecting the October twin-frame and dual-boundary dossiers. Earlier
+Python implementations and native code paths remain unchanged.
+
+The user's refinement became a hard comparator boundary before the final
+probes: only current outputs at a common meeting event are compared.
+History records must carry their event/frame; changing coordinates alone
+does not propagate an old observation to a new event. A model-specific
+evolution rule is a separate hypothesis. The frame probe rejects event,
+unit and uncalibrated-frame mismatches and tests the transported metric.
+
+The [transport audit](reviews/twin_transport_derivation.md) gives both a
+block multiplication proof and a signed-permutation description of the
+larger-carrier arithmetic unitary. It retains the counterexample to
+reusing one environment and distinguishes compression from intertwining
+or a relation-preserving category equivalence. Its all-cut diagnostic is
+an analyst's calibration object, not access to both observer histories.
+
+The [gluing audit](reviews/twin_observer_adversarial_audit.md) distinguishes
+current-output target recovery, global existence, uniqueness, and source
+authentication. A full even-parity countermodel matches the overlap
+while violating a global constraint. One valid representation plus
+invertible generator comparisons suffices to transfer relations; two
+identical invalid assignments do not. A certified common actual source
+already supplies existence for its observed pair; universal pullback
+surjectivity is a stronger guarantee for all candidate pairs.
+
+The [correlation companion](TWIN_CORRELATION_AND_READOUT.md) distinguishes
+transpose from adjoint, conjugate from identical unitary transport,
+literal matrix equality from physical phase equivalence, and a final
+measurement result from an exact equality proof. It derives the current
+local coherence counterexample and the unbounded weighted mirror. The
+root independently replayed its exact Gaussian-rational probe.
+
+Review clarifications made the finite diagnostic's square-map and common
+orthonormal-basis hypotheses explicit, stated `D>=1` in the prefix bound,
+and retained the distinction between coordinate transport and evolution.
+The root checked the telescoping typed defect and its norm bound, the
+gauge/metric law, and the positive-weight infinite separation proof.
+No physical collapse law or source-specific arithmetic remainder was
+promoted. Same-model review is not external peer review.
+
+The complete raw runs, exact finite counts, source hashes and metadata
+repair are recorded in `VALIDATION.md` and the twin receipts. The wrapper
+initially omitted the correlation count because its report uses the key
+`checks`; the complete396-check report had passed and was retained.
+The metadata was corrected from that actual report without changing code.
+
+## Coherent paths, carrier bonds, and actual communication
+
+The new audit uses separate same-model derivations and exact implementations
+for the finite channel criterion, arithmetic specialization and present
+diagnostics. The root replayed their completed probes. Agreement is not
+external peer review, independent empirical evidence or formal checking.
+The beginning hypothesis and verdict-changing controls remain in
+`COHERENT_PATH_CONTRACT.md`.
+
+The strongest positive result is a concrete arithmetic superposition code
+whose accepted and rejected branches end in the same fixed carrier record.
+Its full reference correlation survives. The common-range construction
+classifies all directly isometric codes of the finite fresh-record channel;
+general recoverability has the separately stated classical criterion.
+The independent integer implementation checked record predicates, prefix
+domains, inverse histories and an explicit entangled reference without
+importing the arithmetic implementation.
+
+Review forced four load-bearing qualifications into the synthesis:
+
+1. A fixed channel on all inputs requires a fixed input-independent auxiliary
+   preparation, or an explicit known input/carrier encoding. An arbitrary
+   pre-existing correlation is not silently a Stinespring channel.
+2. The two-arm error estimate assumes separate arm isometries and independent
+   auxiliary preparations. A shared interacting carrier requires the actual
+   joint isometry; preservation of one Bell vector is not a full-channel test.
+3. Preserving an encoded logical state does not preserve the interpretation
+   of every untransported source observable. The exact prime compression
+   discrepancy is `9/25` on the first logical basis vector.
+4. Robust quadrature bounds use true guard expectations. Finite sampling of
+   those guards needs additional uncertainty propagation, especially near
+   zero mass in the chosen sector.
+
+The present-output audit retains phase-only, partial-leakage, pure-erasure,
+record-and-reversal, identical-marginal, and final-postselection controls.
+They distinguish a repairable channel or interpretation issue from an
+identifiability boundary. In particular, no present observation distinguishes
+two identical complete final states merely because their paths differed.
+The final comparator never receives untransported cross-observer histories.
+
+The user's ER=EPR steering adds a genuine representation construction:
+encoded carrier bond and internal twin effects have identical probabilities.
+The stronger operation claim is calibrated by a selected-message test,
+normalized cup/cap scalar, complete teleportation and coherent correction.
+A bond alone cannot supply the missing message. An actual carrier coupling
+can, when it is explicitly included on both sides of the dictionary.
+
+The shared-algebra audit distinguishes code-preserving representations from
+state-only mirror equations and arbitrary compressions. Compression maps
+are not automatically multiplicative; disjoint physical operators can have
+noncommuting compressions when they leak out of the code. This does not
+evade the theorem for genuine code-preserving endpoint representations.
+
+The physics source audit identifies a particularly close positive analogy:
+Maldacena--Susskind's interior meeting. It also preserves the source's
+nontraversable-exterior qualification. Gao--Jafferis--Wall adds boundary
+coupling; Maldacena--Stanford--Yang's measurement/feed-forward equivalence
+is only a receiving-side output identity. A joint current comparison can
+distinguish its coherent and dephased global outputs. These source scopes
+are not promoted to an arithmetic gravitational realization.
+
+The existing October same-encoder/different-geometry countermodel remains
+an explicit unresolved dependency. The new results dominate an untouched
+carrier requirement by allowing protected interaction, and dominate a
+single-return diagnostic by resolving phase and visibility. They do not
+close source-authentication, geometric reconstruction or the additive
+arithmetic remainder. Execution, integration history and artifact hashes
+are recorded in `VALIDATION.md` and the continuation receipts.

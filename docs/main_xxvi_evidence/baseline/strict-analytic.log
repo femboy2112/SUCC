@@ -1,0 +1,76 @@
+global forcing checks ...
+shell B=64 (calibration) ...
+  B=64: source/tails/innovations built (0.0s)
+  B=64: controls built (0.1s)
+  B=64: completed phases and c_d built (0.2s)
+  B=64: PR-1.1/1.2 done (0.3s)
+  B=64: PR-1.3 done (0.3s)
+  B=64: PR-1.4 done (0.4s)
+  B=64: PR-1.5 done (0.7s)
+  B=64: PR-1.6 done (0.7s)
+  B=64: done (0.7s)
+shell B=256 (calibration) ...
+  B=256: source/tails/innovations built (0.2s)
+  B=256: controls built (0.6s)
+  B=256: completed phases and c_d built (1.6s)
+  B=256: PR-1.1/1.2 done (1.7s)
+  B=256: PR-1.3 done (2.0s)
+  B=256: PR-1.4 done (2.2s)
+  B=256: PR-1.5 done (3.7s)
+  B=256: PR-1.6 done (3.7s)
+  B=256: done (3.7s)
+shell B=200 (holdout) ...
+  B=200: source/tails/innovations built (0.1s)
+  B=200: controls built (0.3s)
+  B=200: completed phases and c_d built (0.7s)
+  B=200: PR-1.1/1.2 done (0.8s)
+  B=200: PR-1.3 done (0.9s)
+  B=200: PR-1.4 done (1.1s)
+  B=200: PR-1.5 done (2.0s)
+  B=200: PR-1.6 done (2.0s)
+  B=200: done (2.0s)
+shell B=360 (holdout) ...
+  B=360: source/tails/innovations built (0.2s)
+  B=360: controls built (0.7s)
+  B=360: completed phases and c_d built (2.1s)
+  B=360: PR-1.1/1.2 done (2.2s)
+  B=360: PR-1.3 done (2.6s)
+  B=360: PR-1.4 done (2.9s)
+  B=360: PR-1.5 done (5.8s)
+  B=360: PR-1.6 done (5.8s)
+  B=360: done (5.8s)
+shell B=729 (holdout) ...
+  B=729: source/tails/innovations built (0.5s)
+  B=729: controls built (4.2s)
+  B=729: completed phases and c_d built (7.4s)
+  B=729: PR-1.1/1.2 done (7.7s)
+  B=729: PR-1.3 done (8.9s)
+  B=729: PR-1.4 done (9.8s)
+  B=729: PR-1.5 done (24.2s)
+  B=729: PR-1.6 done (24.3s)
+  B=729: done (24.3s)
+shell B=1000 (holdout) ...
+  B=1000: source/tails/innovations built (0.7s)
+  B=1000: controls built (7.9s)
+  B=1000: completed phases and c_d built (13.3s)
+  B=1000: PR-1.1/1.2 done (13.8s)
+  B=1000: PR-1.3 done (16.9s)
+  B=1000: PR-1.4 done (18.6s)
+  B=1000: PR-1.5 done (46.8s)
+  B=1000: PR-1.6 done (46.8s)
+  B=1000: done (46.8s)
+wrote /workspace/scratch/f2795564bfc4/baseline/research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_analytic.json
+global      PR-1.3: checks=168993 failures=0 strict_ineq_failures=0
+calibration PR-1.1: checks=4616 failures=0 strict_ineq_failures=0
+calibration PR-1.2: checks=44577 failures=0 strict_ineq_failures=0
+calibration PR-1.3: checks=19334 failures=0 strict_ineq_failures=0
+calibration PR-1.4: checks=115922 failures=0 strict_ineq_failures=0
+calibration PR-1.5: checks=89249 failures=0 strict_ineq_failures=0
+calibration PR-1.6: checks=7929 failures=0 strict_ineq_failures=0
+holdout     PR-1.1: checks=11170 failures=0 strict_ineq_failures=0
+holdout     PR-1.2: checks=290979 failures=0 strict_ineq_failures=0
+holdout     PR-1.3: checks=166142 failures=0 strict_ineq_failures=0
+holdout     PR-1.4: checks=603559 failures=0 strict_ineq_failures=0
+holdout     PR-1.5: checks=714658 failures=0 strict_ineq_failures=0
+holdout     PR-1.6: checks=16017 failures=0 strict_ineq_failures=0
+PR-1 exit code 0; wall 87.6s

@@ -1,0 +1,94 @@
+{
+  "clay_status_url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+  "external": [
+    {
+      "authority": "external Lean statements observed, not rebuilt",
+      "files": [
+        "ChallengeSpec.lean",
+        "Construction.lean",
+        "Solution.lean"
+      ],
+      "head": "3456e5e75cf8d4cd558955a5c7638fba2d68f464",
+      "repository": "yang-mills-group/OpenAI-YM-20261028"
+    },
+    {
+      "authority": "external reviewers report existence only; no continuum mass gap",
+      "files": [
+        "submissions/openai-20261028/docs/checks.md",
+        "submissions/openai-20261028/docs/rerun.md",
+        "docs/assessment-1.pdf"
+      ],
+      "head": "55ba9fc36293b3f4d52c6b1f813169a0be76ee98",
+      "repository": "yang-mills-group/YM"
+    }
+  ],
+  "status": "READ ONLY SOURCE GENEALOGY; THEOREMS NOT SILENTLY IMPORTED",
+  "succ": {
+    "main_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+    "parent_head": "0faa85a798de5b0b9af4d62295f405165b408eb7",
+    "parent_pr": 614,
+    "repository": "femboy2112/SUCC"
+  },
+  "succ_modules": [
+    {
+      "git_blob_sha": "1e3eb3bbbd98f83055d9dba549da0e372acd5df5",
+      "path": "observational_succ/haar_successor_junction.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "0d20ded15748ec7cebe74c3f758ac6b03188c45e",
+      "path": "observational_succ/haar_pascal_successor.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "7f078ab311591dac17c393a855942e17885781cd",
+      "path": "observational_succ/profinite_hilbert.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "57584609ccb031dad554860182d591f95e503517",
+      "path": "observational_succ/institute_atomic_haar.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "76fae4755c93c1d192388b0c4d1973705df4e1b7",
+      "path": "observational_succ/quantum_records.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "de06d879c08a398acb9869dd2e98176591ea44cc",
+      "path": "observational_succ/yoneda.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "c46ebba232b4c02f6d2f8e09b5488a3c0f0f0a3d",
+      "path": "observational_succ/source_path_projector.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "338fac6e6a7e5293c8c06422baf1a0e31809241d",
+      "path": "observational_succ/interacting_arithmetic_hamiltonian.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "b83dca07ccd57e14887863288671048388e5312c",
+      "path": "observational_succ/fourier_yoneda_pinbed.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "fd457586cd7bb8159f7a2af1214e8d2139c03a01",
+      "path": "observational_succ/holonomy_proof_transport.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "a2c2a4238ffbb76bc01967f8aaa2c61af7600ca7",
+      "path": "observational_succ/hilbert_succ.py",
+      "ref": "db9fb4b84672050efa79b13377f1e73364598a14"
+    },
+    {
+      "git_blob_sha": "b6580f8474d6ec2ae560c415816268e9e917d7c7",
+      "path": "observational_succ/yang_mills_gauge_oracle.py",
+      "ref": "0faa85a798de5b0b9af4d62295f405165b408eb7"
+    }
+  ]
+}

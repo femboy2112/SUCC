@@ -1,9 +1,100 @@
-# Prime fixed-point observer and twisted arithmetic cylinder
+# Prime observers, return-path families, and arithmetic transport
 
 Research branch from Main XXIV `071ce1e0ee6ab8f8c07113e901131aa646d6b95d`,
 2026-11-12. This package develops the requested prime fixed-point category,
 finite beta-reducing observer, and circle/twist/back-and-forth continuation.
 It also reconstructs and replays the preceding Prime Interferometer work.
+
+The follow-up [CARRIER_COUPLING.md](CARRIER_COUPLING.md) makes the shared
+carrier / local waves proposal precise: exact information accounting,
+anchored arithmetic rigidity, a joint position-degree generating series,
+and Scott-continuous finite-to-infinite semantics. Its exact finite controls
+are reproducible with `python research/2026-11-12/prime_fixed_point_observer/carrier_probe.py`.
+
+The next addition [PRIME_WAVES.md](PRIME_WAVES.md) supplies an actual wave
+realization of the category: coherent additive characters and multiplicative
+dilations, exact divisor-resonance projections, and reflected Ramanujan-wave
+correlations. It preserves phase, small-prime exceptions, and the ordinary
+arithmetic embedding. The main executable is `prime_waves.py`; exact controls
+are in `wave_probe.py` and a separate `waves_independent_audit.py`.
+
+[BORWEIN_RATCHET.md](BORWEIN_RATCHET.md) adds an exact support-threshold
+clock, a lifted successor observer, an optional genuinely rectified stochastic
+walk, and a separate fixed Borwein bank whose arithmetic-degree filter has
+exact nonprime error `2^-r`. It builds on the October Borwein modules rather
+than rediscovering them. Growing support, sample-path motion and spectral
+suppression are explicitly distinguished.
+
+The subsequent [TRIADIC_TRANSPORT.md](TRIADIC_TRANSPORT.md) tests the proposed
+role of three: a triangle is the first simple nonbacktracking cycle, its
+linearized circulation is an incidence-matrix kernel, and declared phase
+transport produces a measurable closure defect. Prime-only multiplicative
+steps instead form a bipartite graph. A mixed SUCC/dilation loop supplies an
+exact source anchor, with a strong-convergence boundary and retained
+countermodels. Three is not asserted to be the origin of all dynamics or
+linear algebra.
+
+[RETURN_PATHS.md](RETURN_PATHS.md) develops the next proposal: 5 has four
+proper canonical SUCC/dilation return channels, obtained from seven literal
+forward histories and five affine maps. For a general `n`, their summed
+initial projection has diagonal `gcd(n,m-1)-1`. Its normalization is an
+orthogonal projection exactly when `n` is prime. The note gives the precise
+Yoneda link, an obstruction to gluing the whole representable from only
+smaller ones, and phase/source countermodels that pass weaker observations.
+[MOTION_AND_COHERENCE.md](MOTION_AND_COHERENCE.md) checks the quaternion
+analogy and the classical five-parenthesization pentagon. Position,
+transformation dimension, representation coordinates, and coherence remain
+distinct.
+
+[COMMON_ROOT_AND_LIMITS.md](COMMON_ROOT_AND_LIMITS.md) identifies the shared
+root as a nonzero fixed basis vector at coordinate zero, becoming the
+constant function one in Hardy space. Its exact strong/norm and interior
+analytic bounds quantify the finite/global distinction. A fixed-radius
+coefficient observation has sharp amplification `rho^-N`, giving a
+declared conditioning scale rather than an absolute proof-hardness claim.
+[TYPED_CHANNELS.md](TYPED_CHANNELS.md) combines channel spaces, coupling
+maps, unit types and resource grades. Positive-cost path amplitudes have a
+formal transfer-matrix inverse; equal affine operations need not have equal
+implementation costs. Compatible local roots form a natural family and
+must pass their loop holonomy tests.
+
+[TWIN_OBSERVERS.md](TWIN_OBSERVERS.md) develops the two-boundary continuation
+under the user's present-only comparison rule. Current outputs are calibrated
+at one meeting event; historical records need explicit frame transport and
+a separately justified evolution model. A unitary chain preserves its
+complete-state discrepancy at every cut. Each arithmetic partial return has
+an explicit larger-carrier unitary extension retaining its rejected branch,
+with fresh-record and quotient-relation controls.
+[TWIN_CORRELATION_AND_READOUT.md](TWIN_CORRELATION_AND_READOUT.md) supplies
+the exact finite twin-map diagnostic, conjugate transport, a deferred
+readout construction, and local-decoherence/measurement counterexamples.
+Weighted infinite twins separate bounded maps but require a quantified
+observation regime; an opposite-side mirror can be unbounded. Agreement
+of current outputs determines only the targets those outputs separate.
+The [contract](TWIN_OBSERVER_CONTRACT.md), [transport derivation](reviews/twin_transport_derivation.md),
+and [gluing audit](reviews/twin_observer_adversarial_audit.md) record the
+proof obligations, frames, source fidelity and retained countermodels.
+
+[COHERENT_TWIN_PATHS.md](COHERENT_TWIN_PATHS.md) develops the next refinement:
+the walkers may interact with the carrier while preserving an encoded
+logical twin. It gives an exact arithmetic code using both accepted and
+rejected branches, a complete finite-path classification of directly
+isometric codes, and a finite-horizon success encoding with an explicit
+source-scale cost. The present meeting distinguishes phase mismatch from
+lost coherence; a clean final state alone cannot identify an untouched
+history. The prime-observable countercontrol separates logical preservation
+from authentic arithmetic interpretation.
+
+[CARRIER_BOND_DUALITY.md](CARRIER_BOND_DUALITY.md) gives the requested
+outside/inside dictionary: an encoded carrier bond and the internal twin
+state have exactly the same transported present observations.
+[BRIDGE_COMMUNICATION.md](BRIDGE_COMMUNICATION.md) constructs coherent
+communication when an actual message channel or controlled coupling is
+supplied. The [ER=EPR audit](reviews/er_epr_equivalence_audit.md) connects
+this to the original interior-meeting picture, distinguishes a shared state
+from a traversable channel, and checks why receiver-only equivalence can
+fail at the eventual joint meeting. No gravitational metric is inferred
+from these state identities.
 
 **Goldbach, pi normality, and RH remain OPEN.** The new results are elementary
 constructions, exact local proofs, finite certificates, and explicit hostile
@@ -40,6 +131,60 @@ formal-kernel acceptance claim.
    but changes the sum100 pair count from12 to0. The authentic SUCC/FUCC
    additive braid rejects it. Shared-center preservation also improves the
    earlier finite CRT/Haar certificate in a concrete strict example.
+9. A prime determines a periodic divisor wave, with the exact operator
+   identity `Q_p=V_p V_p*=mean_j U_(j/p)`. Reflected local interference gives
+   `p/(p-1)` when `p|N`, and `p(p-2)/(p-1)^2` otherwise. CRT combines these
+   into the classical local-density factors. Full-intensity homometry,
+   a modulo 30 phase-bank counterfeit, and an interval-boundary control
+   distinguish those proved identities from an all-target pair estimate.
+10. Every integer support tooth releases for the odd reciprocal Borwein
+    clock; each first release has an exact shallow-simplex certificate.
+    The first three stages are 7,56,418. A fixed second bank realizes
+    `T=P_1+P_2/2` on the arithmetic degree carrier; allowing that bank to
+    grow past its plateau destroys prime fixation.
+11. A phase-decorated triangle has twisted incidence determinant `H-1`,
+    where `H` is the declared loop transport. Mixed operators
+    `A_d=V_d* S^(d-1)` fix precisely the unit span and converge strongly,
+    but not in norm, to its projection. The all-d construction and a
+    pointed-source counterfeit prevent a numerical mystique from replacing
+    an arithmetic coupling theorem.
+12. The return family `R_(n,a)=V_n* S^(n-a) V_a`, `1<=a<n`, has initial
+    periods `n/gcd(n,a)`. All coincide exactly for primes. Its normalized
+    family Gram is a projection iff `n` is prime, while its fixed space is
+    the same pointed congruence class for every `n`. A sign mutation preserves
+    the entire diagonal profile and unit limits but changes a coherent
+    intensity from `37/50` to `13/50`.
+13. Each forward route has a Yoneda natural-transformation link. Root-route
+    sets alone do not recover naturality, and proper lower representables
+    cannot glue to the whole in the specified forward category. Quaternion
+    path lifting and the monoidal pentagon give precise, distinct examples
+    of information retained beyond endpoints or isolated local maps.
+14. Recentring the return family gives a common eigenvalue-one line, but
+    successor moves it. The root is constant one under the l2/Hardy
+    identification. The return powers have strong error tending to zero
+    and global norm error one; explicit support and moment bounds bridge
+    back to finite data. Interior analytic observations can hide a
+    coefficient of norm one.
+15. A finite typed graph with positive resource grades represents all finite
+    path costs through `(I-W(z))^-1`. Amplitude, units, and resource cost
+    remain distinct. The equality `S V_2 S=S^3 V_2` has history costs3/4,
+    so positive additive implementation cost does not survive that quotient.
+16. A specified logical transport preserves a full reference twin exactly
+    when its inaccessible carrier state is input independent. General
+    present recovery has the classical Knill--Laflamme criterion. Exact
+    arithmetic common-range codes realize the direct factorization.
+17. Every finite proper-return route has an exact protected all-success
+    encoding determined by the lcm of its reduced prefix denominators.
+    For an infinite strict route, the fixed all-success intersection is
+    only the root line; changing the finite-horizon encoding has a cost.
+18. Present quadratures separate a pure phase-shifted twin from dephasing
+    when basis agreement and one Bell overlap cannot. Record reversal and
+    final postselection prevent retrodiction of an untouched path.
+19. An encoded external bond exactly reproduces the internal twins'
+    transported present effects. A normalized selected Bell connection
+    has probability `1/d^2`; complete teleportation requires the declared
+    communication and corrections. A coherent version preserves all
+    reference correlations with an actual coherent channel or coupling.
 
 ## Read in this order
 
@@ -53,6 +198,50 @@ formal-kernel acceptance claim.
 - [SOURCE_MAP.md](SOURCE_MAP.md): exact repository base and classical sources.
 - [VALIDATION.md](VALIDATION.md): actual execution, retained failures, and scope.
 - [NEXT.md](NEXT.md): what remains missing and how to test the next proposal.
+- [CARRIER_COUPLING.md](CARRIER_COUPLING.md): shared descriptions, coupling
+  orientation, and the information lost by forgetting the arithmetic embedding.
+- [PRIME_WAVES.md](PRIME_WAVES.md): exact prime-wave category, resonance,
+  interference, phase-reference recovery, and the remaining remainder bound.
+- [BORWEIN_RATCHET.md](BORWEIN_RATCHET.md): the all-tooth clock, cylinder
+  lift, true rectification, degree filter, and exact failure controls.
+- [TRIADIC_TRANSPORT.md](TRIADIC_TRANSPORT.md): triangles, linearization,
+  transported phases, source anchors, and the scope of the proposed third role.
+- [RETURN_PATHS.md](RETURN_PATHS.md): exact arithmetic return families,
+  prime/composite domain profiles, coherent phases, and the Yoneda boundary.
+- [MOTION_AND_COHERENCE.md](MOTION_AND_COHERENCE.md): quaternion coordinates,
+  path lifting, rotation dimensions, and the five-parenthesization pentagon.
+- [COMMON_ROOT_AND_LIMITS.md](COMMON_ROOT_AND_LIMITS.md): common fixed line,
+  Hardy dual, exact observation norms, and finite coefficient conditioning.
+- [TYPED_CHANNELS.md](TYPED_CHANNELS.md): typed couplings, graded paths,
+  implementation costs, and compatible roots across channels.
+- [COHERENT_TWIN_PATHS.md](COHERENT_TWIN_PATHS.md): protected arithmetic
+  paths, source semantics, current diagnostics, and the external bond.
+- [COHERENT_CHANNELS.md](COHERENT_CHANNELS.md): exact finite channel and
+  recovery criteria, complementary records, and quantitative residuals.
+- [ARITHMETIC_COHERENCE.md](ARITHMETIC_COHERENCE.md): record sectors,
+  all directly isometric codes, prefix lattices, and the infinite limit.
+- [COHERENT_PATH_TRANSPORT.md](COHERENT_PATH_TRANSPORT.md): typed path
+  composition, explicit error budgets, fresh records and causal support.
+- [CARRIER_BOND_DUALITY.md](CARRIER_BOND_DUALITY.md): encoded bond
+  equivalence, source-observable transport and shared-algebra boundaries.
+- [BRIDGE_COMMUNICATION.md](BRIDGE_COMMUNICATION.md): normalized cup/cap,
+  complete teleportation, no-signalling and coherent communication.
+
+![Local prime-wave interference at targets 30 and32](figures/prime_wave_interference.svg)
+
+The plotted values are exact integer-position samples for prime 3. The lines
+are drawing aids; the displayed full-period means are local correlations,
+not prime-pair counts. The figure can be regenerated by `plot_prime_waves.py`.
+The optional figure generator uses Matplotlib; the exact wave implementation
+and its tests use the repository's existing Python/SymPy dependencies.
+
+![Borwein support clock, fixed degree filter, and lifted arithmetic walk](figures/borwein_ratchet.svg)
+
+The second figure separates the advancing clock from the fixed readout bank.
+The helix displays successor order and retained winding, not elapsed time of
+the odd-width clock. Leakage logarithms are illustrative evaluations of exact
+certificates; no floating point decides a release. Regenerate it with
+`plot_borwein_ratchet.py`.
 
 ## Reproduce from the repository root
 
@@ -66,6 +255,28 @@ PYTHONPATH=. python research/2026-11-12/prime_fixed_point_observer/lambda_observ
 python research/2026-11-12/prime_fixed_point_observer/probe.py
 
 python research/2026-11-12/prime_fixed_point_observer/cylinder.py
+
+python research/2026-11-12/prime_fixed_point_observer/wave_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/waves_independent_audit.py
+
+python research/2026-11-12/prime_fixed_point_observer/borwein_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/borwein_independent_audit.py
+
+python research/2026-11-12/prime_fixed_point_observer/triadic_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/return_paths_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/return_paths_independent_audit.py
+
+python research/2026-11-12/prime_fixed_point_observer/return_paths_source_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/motion_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/root_limit_probe.py
+
+python research/2026-11-12/prime_fixed_point_observer/typed_channels_probe.py
 ```
 
 The repo's test extras include SymPy, used for independent exact cyclotomic

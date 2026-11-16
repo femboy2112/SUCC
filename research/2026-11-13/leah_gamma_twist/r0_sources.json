@@ -1,0 +1,165 @@
+{
+  "base_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "branch": "research/leah-gamma-twist-2026-11-13",
+  "dependency_caveats": [
+    "All repository descriptions of the same recurrence are dependent sources.",
+    "Author, publisher, and arXiv versions of the same theorem are one source family.",
+    "Same-model collaborators provide decomposition audits, not external independent refereeing.",
+    "Finite controls certify their stated instances; infinite statements require the displayed proofs.",
+    "Recent unreviewed 2026 irrationality claims were not imported.",
+    "Only assigned research files were written; no commit, push, import edit, or publication by this agent."
+  ],
+  "external_sources": [
+    {
+      "claim_imported": "mu(pi) <= 7.103205334137... < 15/2",
+      "current_record_claim": false,
+      "family": "Zeilberger-Zudilin 2020 irrationality measure theorem",
+      "inspection_scope": "Author page opened and theorem statement read; publisher PDF theorem statement retrieved in fresh primary search. Direct arXiv-v2 opening failed. Full proof imported, not reaudited.",
+      "retrieved_utc_date": "2026-11-13",
+      "urls": [
+        "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/pimeas.html",
+        "https://msp.org/cnt/2020/9-4/moscow-v9-n4-p06-s.pdf",
+        "https://arxiv.org/abs/1912.06345v2"
+      ]
+    },
+    {
+      "family": "NIST DLMF Gamma recurrence",
+      "inspection_scope": "Opened section 5.5 and read equation 5.5.1; used only Gamma(z+1)=z Gamma(z).",
+      "retrieved_utc_date": "2026-11-13",
+      "url": "https://dlmf.nist.gov/5.5.E1"
+    },
+    {
+      "family": "Rivoal 2007 and other restricted-exponent literature",
+      "inspection_scope": "Read through the pinned Main XXV dossier and its explicit source-map scopes; original papers not reread in this lane. Used as context/calibration, not as an input to RI-01."
+    }
+  ],
+  "files_inspected": [
+    {
+      "base_git_blob": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "inspection_scope": "Full repository instructions read before work.",
+      "path": "AGENTS.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "base_git_blob": "4c97b4e91144049abf884f42eeb98e3f79f82faf",
+      "inspection_scope": "Full handoff.",
+      "path": "docs/MAIN_XXV_HANDOFF.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/docs/MAIN_XXV_HANDOFF.md",
+      "sha256": "c19aca5c683613c546c7390826d4e6ed5651546b884f009b1a60fa9308098ed1"
+    },
+    {
+      "base_git_blob": "da261e759c86e123aaf4f8133b5e096c972711fb",
+      "inspection_scope": "RDT-01 through RDT-04; RDT-06 through RDT-08; source and falsifier boundaries. RDT-05 inspected via summaries, not its full proof.",
+      "path": "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+      "sha256": "7e9d51325f5f0a97ba0b6d4a64d45d6c608c24d234d5aef900735dfd6134728b"
+    },
+    {
+      "base_git_blob": "992a27e1da010035e85fd016bb41ac73cf7c0e06",
+      "inspection_scope": "Sections 1 through 4, including source, medium-scale, Gaussian and continued-fraction cuts.",
+      "path": "research/2026-11-12/frontier_rungs/FRONTIER_ANALYSIS.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-11-12/frontier_rungs/FRONTIER_ANALYSIS.md",
+      "sha256": "fce69c633517d21065fc5e0488681793604f5b4941077fba31355dcdc65e75ac"
+    },
+    {
+      "base_git_blob": "59d4023666ea79a68297706877eda330eb35b3ee",
+      "inspection_scope": "Full source map, imported-versus-unverified distinctions.",
+      "path": "research/2026-11-12/frontier_rungs/SOURCE_MAP.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-11-12/frontier_rungs/SOURCE_MAP.md",
+      "sha256": "c15bc487b2ff733878cab9c857be5df489043b7f92659df0c83642c82c9cf13d"
+    },
+    {
+      "base_git_blob": "8ee134ef1e6f25a3c387a77bf1f37a7b8fc49c52",
+      "inspection_scope": "Notation, LMF-01, LMF-02, LMF-03(a), approximately first 220 lines. Other rungs not fully reread.",
+      "path": "research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-11-12/frontier_rungs/LIMIT_FACES.md",
+      "sha256": "c230d9ce9e889c0d1be8c99162fe6662099d2755163a768c2774c6a3558e967e"
+    },
+    {
+      "base_git_blob": "4fae056de867579d0880c56983837f9319020317",
+      "inspection_scope": "ZSC-01 through ZSC-03, ZSC-05 through ZSC-06 and selected ZSC-04 statements; no claim of reauditing every literature input.",
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-11-11/innovation_arithmetic_decoupling/CARRY_FLUX.md",
+      "sha256": "fb10a8962067fc890e40533e0b41298515e7447f0f8c2f7b5e3fb275a131a317"
+    },
+    {
+      "base_git_blob": "6db5cca8968cfd0345d1a6f68dd4f6ba94612d4e",
+      "inspection_scope": "Full claim supplement.",
+      "path": "docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md",
+      "sha256": "6421e998330d28fdd0f25e239709da497e9075e50e92be225e04b163fb143824"
+    },
+    {
+      "base_git_blob": "de81fd3cbd40aa4350efe86af6f4d123b2ac8195",
+      "inspection_scope": "Full implementation of inherited finite branch, inverse arc and source certificates.",
+      "path": "observational_succ/global_branch_coercivity.py",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/observational_succ/global_branch_coercivity.py",
+      "sha256": "44f3d6f64378b48de738d17d9674e25f5746d68ef5e674c4dd09589978076453"
+    },
+    {
+      "base_git_blob": "444cd3e98a9fde5debfddefdc102c5ad2358fb5e",
+      "inspection_scope": "Full local direct-arithmetic predecessor.",
+      "path": "research/2026-10-26/OILY_DIRECT_ARITHMETIC.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-10-26/OILY_DIRECT_ARITHMETIC.md",
+      "sha256": "349650dcd668e5d608d9c691aaf51f4c3d63d6e3999536430fdfb9d4d79bf58d"
+    },
+    {
+      "base_git_blob": "51c27295ddf62e47f3d29713cd7c7a603040f3e2",
+      "inspection_scope": "Full synthesis.",
+      "path": "research/2026-10-27/GLOBAL_SIGNED_SYNTHESIS.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-10-27/GLOBAL_SIGNED_SYNTHESIS.md",
+      "sha256": "ead73bddea3d79b3b066f66efb80e3e0f4aa321a1f7f68fb821e6c817be17f40"
+    },
+    {
+      "base_git_blob": "0e2b0c667c5b106a30e5b8f97e9e011f0167ea0d",
+      "inspection_scope": "Sections 1 through 3, including the local proof, source Green identity, and classical input; all-N assembly checked against code/synthesis.",
+      "path": "research/2026-10-27/GLOBAL_BRANCH_COERCIVITY.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-10-27/GLOBAL_BRANCH_COERCIVITY.md",
+      "sha256": "4a49c56a5dd915174748f79fdea6346e344ec4d8df6a5bd29014e1d53596b6ed"
+    },
+    {
+      "base_git_blob": "34ccbbdba9a9de95504d20a08aca896b691029a7",
+      "inspection_scope": "Full audit, specifically the existing isometry and collision-exponent mechanism.",
+      "path": "research/2026-10-27/PI_FRONTIER_AUDIT_STRENGTHENING_2026-10-27.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-10-27/PI_FRONTIER_AUDIT_STRENGTHENING_2026-10-27.md",
+      "sha256": "ee175df9ead4b25e032427f90e70757663e0e9bb4e78d3459e2741bcfb928ce2"
+    },
+    {
+      "base_git_blob": "437a9577c4b590364e65e0631a5b3c0ad7107e6a",
+      "inspection_scope": "Full module through truncation_preperiod; inherited source isometry and valuation, not a new result.",
+      "path": "observational_succ/bbp_two_adic.py",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/observational_succ/bbp_two_adic.py",
+      "sha256": "6b2b54ac51851ffafaee0d3072a39efb81f05ca14e4938c312568d65b7c07ac7"
+    },
+    {
+      "base_git_blob": "7b96e625d7203844387d07b8968343d4381fc49a",
+      "inspection_scope": "Sections 0 through 7, approximately first 190 lines. Reconstruction and positivity boundaries.",
+      "path": "research/2026-10-19/FACTORIAL_BORWEIN_HOLOGRAPHIC_CLOCK.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-10-19/FACTORIAL_BORWEIN_HOLOGRAPHIC_CLOCK.md",
+      "sha256": "57fd28aea024b368a7c6fc53774b6a6695ab917fc2809b91205c8762c327f950"
+    },
+    {
+      "base_git_blob": "925f7103fe372268ad60a335ee40c3fcc385937d",
+      "inspection_scope": "Sections 0 through 4, and beginning of section 5; primitive integer ABC residual and missing joint radical estimate.",
+      "path": "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md",
+      "pinned_url": "https://github.com/femboy2112/SUCC/blob/db9fb4b84672050efa79b13377f1e73364598a14/research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md",
+      "sha256": "b188a4146c4c29bcae3f4ffd3cbce77a99143a5380445bc045e9b6331143c120"
+    }
+  ],
+  "own_exact_artifacts": [
+    {
+      "path": "research/2026-11-13/leah_gamma_twist/r0_probe.py",
+      "sha256": "215bcc633bca199d94541bdf67c4e17b18da4569657329df0bc8588bc55439cc"
+    },
+    {
+      "path": "research/2026-11-13/leah_gamma_twist/test_r0_probe.py",
+      "sha256": "2058cfbd9fe551d5417df9fc517adcaf4657880b664693c368aa851cb6f81f9c"
+    },
+    {
+      "path": "research/2026-11-13/leah_gamma_twist/r0_results.json",
+      "sha256": "cc929f56d4760f555ef0052407c38335b8efb7282453509c668313b1504a8b88"
+    }
+  ],
+  "worktree_head_at_manifest": "17e58672bbd3954a8e72ec9de9ca90c1c2b5de0d"
+}

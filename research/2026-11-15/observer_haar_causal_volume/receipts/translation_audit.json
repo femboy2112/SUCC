@@ -1,0 +1,118 @@
+{
+  "script_sha256": "fd9cc7cc3c8270cb813df49b596c827210274caedd345e9f02e04009d5744d85",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "exact": {
+    "label": "exact rational identities and finite matrix controls",
+    "checks_passed": 111,
+    "reversible_matrix_cases": 18,
+    "rates": [
+      "1",
+      "2",
+      "3/2"
+    ],
+    "integer_depths": [
+      1,
+      2,
+      3
+    ],
+    "stationary_weights": [
+      [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      [
+        "1/10",
+        "1/5",
+        "3/10",
+        "2/5"
+      ]
+    ],
+    "wrong_euclidean_adjoint_detected": true,
+    "nonreversible_defect": [
+      [
+        "-1/100",
+        "-1/100",
+        "1/100",
+        "1/100"
+      ],
+      [
+        "-1/100",
+        "-1/100",
+        "1/100",
+        "1/100"
+      ],
+      [
+        "1/100",
+        "1/100",
+        "-1/100",
+        "-1/100"
+      ],
+      [
+        "1/100",
+        "1/100",
+        "-1/100",
+        "-1/100"
+      ]
+    ],
+    "nonreversible_negative_eigenvalue": "-1/25",
+    "unequal_depth_defect_is_not_self_adjoint": true,
+    "oily_first_unnormalized_moment": "1/8",
+    "oily_second_unnormalized_moment": "7/80"
+  },
+  "diagnostic": {
+    "label": "non-rigorous numerical diagnostic; no interval certificate",
+    "precision_decimal_digits": 50,
+    "source_mass": "0.19634954084936207740391521145496893026232308746094",
+    "source_mass_minus_pi_over_16": "0.0",
+    "variance": "0.040349106087955854377356684604129658079051909384292",
+    "variance_minus_closed_formula": "5.011433831e-52",
+    "rows": [
+      {
+        "depth": 0,
+        "haar_sum": "0.0",
+        "residual": "0.040349106087955854377356684604129658079051909384292",
+        "proved_bound_value": "0.25",
+        "diagnostic_bound_comparison": true
+      },
+      {
+        "depth": 1,
+        "haar_sum": "0.027476558663719009347375931109954876398194735159277",
+        "residual": "0.012872547424236845029980753494174781680857174225015",
+        "proved_bound_value": "0.0625",
+        "diagnostic_bound_comparison": true
+      },
+      {
+        "depth": 2,
+        "haar_sum": "0.036955683152261830744897868183525810299102408291233",
+        "residual": "0.0033934229356940236324588164206038477799495010930594",
+        "proved_bound_value": "0.015625",
+        "diagnostic_bound_comparison": true
+      },
+      {
+        "depth": 3,
+        "haar_sum": "0.039487099704051891939591292573064307585920884934418",
+        "residual": "0.00086200638390396243776539203106535049313102444987438",
+        "proved_bound_value": "0.00390625",
+        "diagnostic_bound_comparison": true
+      },
+      {
+        "depth": 4,
+        "haar_sum": "0.040132524129799189023173019564454967475280970328051",
+        "residual": "0.00021658195815666535418366503967469060377093905624132",
+        "proved_bound_value": "0.0009765625",
+        "diagnostic_bound_comparison": true
+      },
+      {
+        "depth": 5,
+        "haar_sum": "0.040294877119765539700690868040584902460832890804046",
+        "residual": "0.000054228968190314676665816563544755618219018580246619",
+        "proved_bound_value": "0.000244140625",
+        "diagnostic_bound_comparison": true
+      }
+    ]
+  }
+}

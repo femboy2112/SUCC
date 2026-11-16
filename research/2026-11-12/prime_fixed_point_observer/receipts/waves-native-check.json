@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "PYTHONPATH": "/workspace/scratch/66b470ffd34d/SUCC",
+  "exit_code": 0,
+  "elapsed_seconds": 1190.924,
+  "log": "waves-native-suite.log",
+  "status": "PASS",
+  "started_from_commit": "b3ddf81c4e893866aac04903f682fb5aa01830e2"
+}

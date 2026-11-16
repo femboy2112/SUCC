@@ -1,0 +1,131 @@
+{
+  "arithmetic": "int/Fraction",
+  "causal_distribution": {
+    "monomial_stencil_checks": 468,
+    "negative_pairings_on_nonnegative_tests": [
+      -2,
+      -4,
+      -12,
+      -48,
+      -240,
+      -1440,
+      -10080,
+      -80640
+    ],
+    "total_variation_checks": 36,
+    "worst_case_noise_checks": 32
+  },
+  "identification": {
+    "entire_noise_checks": 192,
+    "finite_sample_rival_checks": 18
+  },
+  "mutations_rejected": {
+    "discard_initial_value": {
+      "checks": 3,
+      "function": "1+t",
+      "lost_boundary": 1
+    },
+    "drop_original_exponential_channel": {
+      "changed_source_control": true,
+      "deleted_minus_exp_minus_5t_B_0": "16/15",
+      "native_B_0": "0"
+    },
+    "erase_gamma_contact": {
+      "delta_on_t_to_m": "(-1)^m*m!, never zero",
+      "orders_checked": [
+        0,
+        8
+      ]
+    },
+    "extra_endpoint_zero": {
+      "counterexamples": 11,
+      "first_nonzero": "(-1)^(k+1)*16*8^k*(k+1)!"
+    },
+    "native_negative_even_zero": {
+      "B_minus_2": "-112"
+    },
+    "no_noise_amplification": {
+      "attained_output_error": "262144/25",
+      "input_tolerance": "1/100",
+      "order": 4,
+      "spacing": "1/16"
+    },
+    "positive_difference_weights": {
+      "constant_test_true": 0,
+      "positive_weights_false": 8
+    },
+    "reverse_difference_orientation": {
+      "false": 1,
+      "true": -1
+    }
+  },
+  "native_face": {
+    "B_k_at_orders_0_through_minus_6": {
+      "0": [
+        "0",
+        "-16",
+        "-112",
+        "-880",
+        "-9520",
+        "-136816",
+        "-2391472"
+      ],
+      "1": [
+        "0",
+        "0",
+        "256",
+        "5760",
+        "103936",
+        "1845120",
+        "34744576"
+      ],
+      "2": [
+        "0",
+        "0",
+        "0",
+        "-6144",
+        "-282624",
+        "-9154560",
+        "-263055360"
+      ],
+      "3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "196608",
+        "15237120",
+        "773652480"
+      ]
+    },
+    "checks": 275,
+    "first_nonzero_checks": 11,
+    "regulator": "1/16"
+  },
+  "production_imports": false,
+  "random_seed": null,
+  "regulator_boundary_guard": {
+    "native_rho_1_over_16_B_0": "0",
+    "same_regulator": false,
+    "unregulated_analytic_B_0": "15/8"
+  },
+  "result": "PASS",
+  "source_face": {
+    "ages": [
+      "1/7",
+      "1",
+      "11/3",
+      "17",
+      "101"
+    ],
+    "checks": 1375,
+    "face_counts": [
+      0,
+      10
+    ],
+    "negative_orders": [
+      0,
+      24
+    ]
+  }
+}

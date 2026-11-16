@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "parent_commit": "fec5cdda24ca36328e123b0b367a0628491e1eb8",
+  "normality_proved": false,
+  "source_anti_lock_proved": false,
+  "claims": [
+    {
+      "id": "FV-01",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "The derivative residue is 7+4*(-1)^floor(n/2); the period-four sign is the quadratic refinement (-1)^(n(n-1)/2), Walsh upper-bit character and Clifford reversion grade sign. The carry mask uses the shifted conjugation sign.",
+      "domain": "Integer n for residue identities; nonnegative grades for the Clifford interpretation.",
+      "hypotheses": "Original four-pole forcing for the derivative assertion.",
+      "quantifiers": "Every integer index in the algebraic identities.",
+      "evidence": [
+        "PERIOD_FOUR_NOTES.md",
+        "independent_audit.py"
+      ],
+      "boundary": "A modular derivative representative is not a real derivative; source time and carry index differ.",
+      "next_falsifier": "A residue-class or addition-law counterexample."
+    },
+    {
+      "id": "FV-02",
+      "status": "CLASSICAL_CONSTRUCTION",
+      "truth_state": "Disclosed",
+      "statement": "A uniform root is a maximum law and a norm-ball radial law; radius sqrt(U), ratio V and a fair orientation construct two independent uniforms pathwise.",
+      "domain": "Independent uniforms on (0,1); finite dimensional norm balls with normalized Lebesgue measure.",
+      "hypotheses": "Declared volume measure and independence of the construction inputs.",
+      "quantifiers": "Every radius in [0,1]; any finite dimension d>=1.",
+      "evidence": [
+        "README.md",
+        "PERIOD_FOUR_NOTES.md",
+        "WEAVING_ADVERSARY_NOTES.md"
+      ],
+      "boundary": "A radial law does not specify an ordered pair or full vector law.",
+      "next_falsifier": "Marginal, Jacobian or CDF failure under the explicit construction."
+    },
+    {
+      "id": "FV-03",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "The aligned antisymmetric Haar density preserves every symmetric pair observable law while changing the ordered carry response; its stationary Markov mode rotates by i*epsilon and realizes the period-four sign in lag correlations.",
+      "domain": "Unit square; |epsilon|<=1/2; nonnegative integer lags.",
+      "hypotheses": "Explicit kernel 1+epsilon*(a tensor c-c tensor a), uniform stationary start.",
+      "quantifiers": "All bounded measurable symmetric observables and all nonnegative lags.",
+      "evidence": [
+        "WEAVING_ADVERSARY_NOTES.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "A diagnostic probability model, not the law of the BBP source.",
+      "next_falsifier": "Failure of positivity, stationarity, a declared phase sign, or the orthogonal-wedge mutation."
+    },
+    {
+      "id": "FV-04",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "Under uniform marginals and max CDF r^2, the selected difference-quarter gate has sharp range [1/16,7/8]. Explicit continuous densities attain both endpoints.",
+      "domain": "All joint probability laws on [0,1)^2 satisfying the hypotheses.",
+      "hypotheses": "Both marginals uniform and P(max(X,Y)<r)=r^2 for every r in [0,1].",
+      "quantifiers": "Universal over such laws; existence of absolutely continuous extremizers and all convex-mixture values.",
+      "evidence": [
+        "MAX_GATE_CERTIFICATE.md",
+        "THREE_MASS_ANTI_LOCK.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "Removing the cofactor marginal allows a full-maximum-law zero-hit example.",
+      "next_falsifier": "A failed cell inequality or marginal/diagonal polynomial in an extremizer."
+    },
+    {
+      "id": "FV-05",
+      "status": "PROVED_IMPLICATION_OPEN_SOURCE_PREMISE",
+      "truth_state": "Disclosed within the stated implication",
+      "statement": "For every finite source shell, selected frequency d_B>=F1_B+c1_B-F2_B. An eventual positive lower bound on that three-mass statistic implies the open selected carry-density target.",
+      "domain": "Authentic U_0=0 four-pole recurrence, J=n mod4, K=[fractional(U_n)]_4 via dyadic rational reduction.",
+      "hypotheses": "Inherited exact source clock; eventual three-mass premise only for the asymptotic consequence.",
+      "quantifiers": "Finite inequality for every integer B>=1; target requires every sufficiently large integer B.",
+      "evidence": [
+        "THREE_MASS_ANTI_LOCK.md",
+        "NEXT.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "No eventual source estimate has been proved. The implication does not prove full normality.",
+      "next_falsifier": "Source-specific violation of a proposed error budget or a hidden replacement of K by a uniform sample."
+    },
+    {
+      "id": "FV-06",
+      "status": "INHERITED_IDENTITIES_WITH_TYPED_ASSEMBLY",
+      "truth_state": "Disclosed",
+      "statement": "The four original poles equal five positive Beta(k,2) volumes; normalized branches have two-uniform product/two-exponential-sum constructions. Two branches of valuation -1 must combine to restore an odd denominator.",
+      "domain": "Original n>=1; real k>0 for the probability construction.",
+      "hypotheses": "Exact inherited coefficient vector (4,4,4,2,1).",
+      "quantifiers": "All n>=1 and all declared branch parameters.",
+      "evidence": [
+        "VOLUME_CONSTRUCTOR_NOTES.md",
+        "PROVENANCE.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "The +2 Gamma argument differs from arithmetic time advance +8. Auxiliary draws do not supply an orbit coupling.",
+      "next_falsifier": "Pole-coefficient mutation, denominator-valuation error, or an invalid integral interchange."
+    },
+    {
+      "id": "FV-07",
+      "status": "PROVED_LOCAL_TRANSFORM",
+      "truth_state": "Disclosed",
+      "statement": "The actual period-four gate has Laplace transform 1/(2t cosh t); its exponential-probe Mellin response is Gamma(s)*DirichletBeta(s) and its s=1 scale integral is pi/4.",
+      "domain": "x>=0, real t>0; complex s with Re(s)>0.",
+      "hypotheses": "Declared right-continuous floor gate and exponential probe law.",
+      "quantifiers": "Every allowed parameter.",
+      "evidence": [
+        "VOLUME_CONSTRUCTOR_NOTES.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "This is a universal mask response, not empirical BBP sampling. Dirichlet beta has odd character parity.",
+      "next_falsifier": "Shifted-gate mutation, convergence-domain violation, or wrong character parity."
+    },
+    {
+      "id": "FV-08",
+      "status": "PROVED_LOCAL_SOURCE_TRANSFORM",
+      "truth_state": "Disclosed",
+      "statement": "All four poles remain in an explicit source-attached sech gate transform; the native Gamma(2) endpoint has probability 2e^-1/(1+e^-2)^2, not 1/2.",
+      "domain": "Original positive log-source mu_a, a>0, probe scale L>0; native limit L=a to infinity.",
+      "hypotheses": "Normalized original positive source measure; inherited Gamma(2) convergence.",
+      "quantifiers": "All finite allowed a,L, and stated limit.",
+      "evidence": [
+        "VOLUME_CONSTRUCTOR_NOTES.md",
+        "PROVENANCE.md"
+      ],
+      "boundary": "Applying a gate after the trajectory integral differs from averaging the gate of the integrand.",
+      "next_falsifier": "A source-to-orbit transport that fails the signed boundary-flux control."
+    },
+    {
+      "id": "FV-09",
+      "status": "OBSERVED_FINITE",
+      "truth_state": "Observed",
+      "statement": "On the inherited certified shell B=16384, counts (F1,c1,F2)*B=(1008,4146,4130), giving lower certificate1/16; actual selected count8178.",
+      "domain": "Previously certified data through n=32768, reanalyzed here.",
+      "hypotheses": "Parent receipt hash; independent direct rational crosscheck through n512.",
+      "quantifiers": "Only the stated finite shells.",
+      "evidence": [
+        "receipts/independent_audit.json",
+        "receipts/source_provenance.json"
+      ],
+      "boundary": "No new digit sample or fresh holdout; no infinite source estimate.",
+      "next_falsifier": "A raw-recurrence disagreement or a later certified shell violating a proposed quantitative claim."
+    },
+    {
+      "id": "FV-10",
+      "status": "OPEN",
+      "truth_state": "UNVERIFIED",
+      "statement": "The authentic source meets an eventual three-mass defect budget below1/16, or otherwise has positive selected carry density; pi normality remains open.",
+      "domain": "Exact original four poles and zero seed, every sufficiently late integer shell.",
+      "hypotheses": "No unproved independence or empirical law allowed.",
+      "quantifiers": "Existence of a uniform positive eventual lower bound; all-mode limits additionally needed for normality.",
+      "evidence": [
+        "NEXT.md"
+      ],
+      "boundary": "The constructed joint laws and exact finite observations do not discharge this premise.",
+      "next_falsifier": "A source-derived inequality or counterexample with correct seed and all required quantifiers."
+    }
+  ]
+}

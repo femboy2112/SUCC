@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "parent_commit": "bf27f7ec8e757482613808bff693ba520ac13b3b",
+  "normality_proved": false,
+  "source_anti_lock_proved": false,
+  "authentic_three_count_budget_proved": false,
+  "claims": [
+    {
+      "id": "TC-01",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "L_B is exactly the signed three-cell clock/carry contrast with weights -1,+1,+1.",
+      "domain": "Clock and carry labels modulo four.",
+      "hypotheses": "K=J-C mod4, authentic clock for source application.",
+      "quantifiers": "Every finite integer shell.",
+      "evidence": [
+        "ADVERSARY_NOTES.md",
+        "independent_audit.py"
+      ],
+      "boundary": "This is an identity, not a positive source estimate.",
+      "next_falsifier": "A failed cell identity or clock convention."
+    },
+    {
+      "id": "TC-02",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "Eight shifted/reflected lower certificates sum pointwise to the selected gate; d_B/8<=max_frame L_B<=d_B.",
+      "domain": "All joint label laws and their empirical distributions.",
+      "hypotheses": "Four common shifts plus reflection (J,K)->(-J,1-K).",
+      "quantifiers": "All label pairs and every shell.",
+      "evidence": [
+        "ADVERSARY_NOTES.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "The maximizing frame can change with B; positivity is still a source obligation.",
+      "next_falsifier": "A frame that fails the pointwise bound or sum."
+    },
+    {
+      "id": "TC-03",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "Raw/completed averages of the selected gate and the eight signed masks differ by at most ceil(B/(m_B+1))/B, m_B=floor(log16(64B^2)).",
+      "domain": "Every real completed endpoint and the stated positive tail.",
+      "hypotheses": "0<T_n<1/(64n^2), masks match at residues0 and3, unit adjacent jumps.",
+      "quantifiers": "Every integer B>=1, uniform over endpoints.",
+      "evidence": [
+        "TRANSLATOR_NOTES.md",
+        "ADVERSARY_NOTES.md",
+        "independent_audit.py"
+      ],
+      "boundary": "Does not bound the total number of raw borrows; unmatched masks fail.",
+      "next_falsifier": "A discrepancy within the forced zero-run or the endpoint-zero mutation."
+    },
+    {
+      "id": "TC-04",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "The logarithmic mask-transfer rate and its leading constant are sharp for the exact four-pole tail; either signed flux occurs.",
+      "domain": "Changed real completed endpoints with original forcing.",
+      "hypotheses": "Minimal multiple-of-four marker gaps satisfying the explicit tail inequality.",
+      "quantifiers": "One fixed endpoint for each sign, all sufficiently late shells.",
+      "evidence": [
+        "CONSTRUCTOR_NOTES.md",
+        "ADVERSARY_NOTES.md"
+      ],
+      "boundary": "The seeds are nonzero; their rationality is not asserted. No lower bound on the canonical error.",
+      "next_falsifier": "Failure of marker borrow or the asymptotic gap count."
+    },
+    {
+      "id": "TC-05",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "Any finite carry word has an explicit rational shadow seed in2^L Z_(2), preserving authentic bits to depthL+4n at all times, with height<=2^(L+4N+8)+1.",
+      "domain": "Original forcing with rational changed seeds.",
+      "hypotheses": "N>=1,L>=2; original finite rational prefix used in the construction.",
+      "quantifiers": "For every N,L,word there exists a seed; prescribed word only through N.",
+      "evidence": [
+        "ADVERSARY_NOTES.md",
+        "independent_audit.py",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "Not one seed for all horizons, not zero seed, and not a fixed-rational-seed nonnormality result.",
+      "next_falsifier": "An invalid real rounding margin, denominator, or dyadic congruence."
+    },
+    {
+      "id": "TC-06",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "An explicit real grid condition permits bad late carry words while retaining the authentic current odd denominator divisor and dyadic state congruence.",
+      "domain": "States at time B with denominator dividing D_B=lcm(odd integers<=8B-1).",
+      "hypotheses": "2^M/D_B<16^(-(B-1)); desired residues in{1,3}.",
+      "quantifiers": "Every grid satisfying the condition; concrete B8/M48 receipt.",
+      "evidence": [
+        "CONSTRUCTOR_NOTES.md",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "Deletes the zero-seeded ancestry. Global odd seed typing requires sufficient state precision; the concrete receipt satisfies it.",
+      "next_falsifier": "A failed pullback interval, grid spacing, or denominator divisor."
+    },
+    {
+      "id": "TC-07",
+      "status": "PROVED_CONDITIONAL",
+      "truth_state": "Disclosed",
+      "statement": "Sharp pressure thresholds are3.9793957988 bits/hex digit for positive signed mean and3.9949244219 for mean>1/32.",
+      "domain": "Invariant clocked symbolic laws and all-shell limits.",
+      "hypotheses": "Declared four-slot score and Gibbs entropy bound; every source shell-limit exceeds threshold for source conclusion.",
+      "quantifiers": "All invariant laws; every subsequential limit for a source consequence.",
+      "evidence": [
+        "TRANSLATOR_NOTES.md",
+        "independent_audit.py"
+      ],
+      "boundary": "No source entropy lower bound is supplied; numeric decimals illustrate exact formulas.",
+      "next_falsifier": "A tilted extremizer or pressure derivative contradicting the exact formula."
+    },
+    {
+      "id": "TC-08",
+      "status": "PROVED_IMPLICATION_OPEN_SOURCE_PREMISE",
+      "truth_state": "Disclosed",
+      "statement": "A fixed all-limit entropy margin above3 bits/hex digit, or separately above1 bit/mod4 residue, forces positive selected density by binary entropy.",
+      "domain": "Invariant digit or residue laws of all empirical shells.",
+      "hypotheses": "A fixed positive margin for every shell limit; correct entropy rate, not one-letter histogram.",
+      "quantifiers": "All sufficiently late shells after a possibly smaller positive density margin.",
+      "evidence": [
+        "TRANSLATOR_NOTES.md"
+      ],
+      "boundary": "Full and residue entropy premises are not equivalent; no source premise is proved.",
+      "next_falsifier": "The eight-symbol zero-gate law, a periodic uniform histogram, or a missing all-limit quantifier."
+    },
+    {
+      "id": "TC-09",
+      "status": "PROVED_LOCAL",
+      "truth_state": "Disclosed",
+      "statement": "The endpoint set E={beta:liminf_B d_B(beta)=0} has exact Hausdorff dimension7/8.",
+      "domain": "beta in[0,1), fixed literal BBP tail, usual Euclidean metric.",
+      "hypotheses": "Mask transfer; eight selected and eight unselected hex symbols.",
+      "quantifiers": "All integer shells; exact exceptional set, not a finite estimate.",
+      "evidence": [
+        "EXCEPTIONAL_SET.md",
+        "EXCEPTIONAL_SET_AUDIT.md"
+      ],
+      "boundary": "Does not decide membership of pi/16. Strict-exponent mass bounds suffice; no critical Frostman constant is claimed.",
+      "next_falsifier": "A cylinder-cover count or lower product-measure estimate fails."
+    },
+    {
+      "id": "TC-10",
+      "status": "CLASSICAL_IMPORT_WITH_PROVED_APPLICATION",
+      "truth_state": "Disclosed",
+      "statement": "E contains a dense family with ordinary irrationality exponent2 and restricted power16 exponent0, matching every finite hex prefix.",
+      "domain": "Eventually zero/three Thue-Morse completed endpoints.",
+      "hypotheses": "Bugeaud2011 exponent theorem and inherited source-tail control; rational affine prefix insertion.",
+      "quantifiers": "Every finite prefix has such endpoints; a pair ensures a nonzero alternate seed.",
+      "evidence": [
+        "EXCEPTIONAL_SET.md",
+        "CONSTRUCTOR_NOTES.md",
+        "PROVENANCE.md"
+      ],
+      "boundary": "Their rational source-state typing is not asserted; properties alone do not exclude the canonical point.",
+      "next_falsifier": "Failure of prefix preservation, tail nonborrow, or the imported theorem scope."
+    },
+    {
+      "id": "TC-11",
+      "status": "OBSERVED_EXACT_FINITE",
+      "truth_state": "Observed",
+      "statement": "All32768 fresh integer shells B32769..65536 meet the one-sided tolerance1/32; minimum L=1997/33657, maximum error=136/33785.",
+      "domain": "Certified authentic source through131072.",
+      "hypotheses": "Frozen protocol, original BBP outward enclosure, exact tail certificates.",
+      "quantifiers": "Only the stated finite range.",
+      "evidence": [
+        "HOLDOUT_PROTOCOL.md",
+        "receipts/fresh_source/finite_probe.json",
+        "receipts/independent_audit.json"
+      ],
+      "boundary": "Not an eventual bound or confidence statement; same source provenance across algorithms.",
+      "next_falsifier": "An indexing, enclosure, overlap-hash or independent recount discrepancy."
+    },
+    {
+      "id": "TC-12",
+      "status": "REFUTED_GENERAL_INFERENCE",
+      "truth_state": "Refuted",
+      "statement": "A positive drift with uniformly bounded potential, uniform onset and uniform sublinear errors cannot hold over the enlarged rational seed family.",
+      "domain": "All rational seeds sharing a prescribed finite dyadic depth.",
+      "hypotheses": "Original forcing retained; seed is allowed to vary with horizon.",
+      "quantifiers": "Refutation of a uniform-in-seed assertion, not a fixed-zero assertion.",
+      "evidence": [
+        "ADVERSARY_NOTES.md",
+        "CONSTRUCTOR_NOTES.md"
+      ],
+      "boundary": "Zero-seed-only and quantified seed-height corrections survive.",
+      "next_falsifier": "A claimed scope restriction legitimately excludes the constructed seed."
+    },
+    {
+      "id": "TC-13",
+      "status": "OPEN_SOURCE_THEOREM",
+      "truth_state": "UNVERIFIED",
+      "statement": "The canonical source has liminf L_B>0, or the weaker liminf d_B>0.",
+      "domain": "Literal four poles and exactly U0=0.",
+      "hypotheses": "No generic endpoint or auxiliary sampling substitution.",
+      "quantifiers": "Every sufficiently large integer shell.",
+      "evidence": [
+        "README.md",
+        "NEXT.md"
+      ],
+      "boundary": "Unproved. Positive carry density would close this sufficient anti-lock gate, not all normality modes.",
+      "next_falsifier": "A new source-specific signed, entropy, or arithmetic exclusion theorem."
+    },
+    {
+      "id": "TC-14",
+      "status": "OPEN_NORMALITY_THEOREM",
+      "truth_state": "UNVERIFIED",
+      "statement": "Every nonzero fixed real Fourier mode cancels for the original BBP trajectory.",
+      "domain": "Original source, equivalent completed point pi/16.",
+      "hypotheses": "Authentic source selection and all-mode estimates.",
+      "quantifiers": "All fixed nonzero integers h as shell size tends to infinity.",
+      "evidence": [
+        "README.md",
+        "NEXT.md"
+      ],
+      "boundary": "Neither the source budget nor pi normality is established in this dossier.",
+      "next_falsifier": "A validated source proof controlling all required modes."
+    }
+  ]
+}

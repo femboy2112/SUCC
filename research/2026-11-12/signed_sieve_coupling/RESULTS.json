@@ -1,0 +1,257 @@
+{
+  "date": "2026-11-12",
+  "independent_audit": {
+    "even_targets": 4095,
+    "first_failure": 0,
+    "least_signed": 1,
+    "limit": 8192,
+    "method": "independent trial divisor primality and roughness, direct pair loops"
+  },
+  "sample_rows": [
+    {
+      "N": 20,
+      "certifies": true,
+      "cutoff": 2,
+      "goldbach_ordered": 4,
+      "one_sided_composite_pairs": 2,
+      "prime_rough_pairs": 6,
+      "rough_composite_pairs": 0,
+      "rough_pairs": 8,
+      "signed_lower": 4
+    },
+    {
+      "N": 100,
+      "certifies": true,
+      "cutoff": 4,
+      "goldbach_ordered": 12,
+      "one_sided_composite_pairs": 4,
+      "prime_rough_pairs": 14,
+      "rough_composite_pairs": 2,
+      "rough_pairs": 18,
+      "signed_lower": 10
+    },
+    {
+      "N": 256,
+      "certifies": true,
+      "cutoff": 6,
+      "goldbach_ordered": 16,
+      "one_sided_composite_pairs": 6,
+      "prime_rough_pairs": 22,
+      "rough_composite_pairs": 0,
+      "rough_pairs": 28,
+      "signed_lower": 16
+    },
+    {
+      "N": 512,
+      "certifies": true,
+      "cutoff": 8,
+      "goldbach_ordered": 22,
+      "one_sided_composite_pairs": 9,
+      "prime_rough_pairs": 29,
+      "rough_composite_pairs": 2,
+      "rough_pairs": 38,
+      "signed_lower": 20
+    },
+    {
+      "N": 1000,
+      "certifies": true,
+      "cutoff": 10,
+      "goldbach_ordered": 56,
+      "one_sided_composite_pairs": 23,
+      "prime_rough_pairs": 75,
+      "rough_composite_pairs": 4,
+      "rough_pairs": 98,
+      "signed_lower": 52
+    },
+    {
+      "N": 2048,
+      "certifies": true,
+      "cutoff": 12,
+      "goldbach_ordered": 50,
+      "one_sided_composite_pairs": 37,
+      "prime_rough_pairs": 83,
+      "rough_composite_pairs": 4,
+      "rough_pairs": 120,
+      "signed_lower": 46
+    },
+    {
+      "N": 4096,
+      "certifies": true,
+      "cutoff": 16,
+      "goldbach_ordered": 106,
+      "one_sided_composite_pairs": 57,
+      "prime_rough_pairs": 151,
+      "rough_composite_pairs": 12,
+      "rough_pairs": 208,
+      "signed_lower": 94
+    },
+    {
+      "N": 8192,
+      "certifies": true,
+      "cutoff": 20,
+      "goldbach_ordered": 152,
+      "one_sided_composite_pairs": 95,
+      "prime_rough_pairs": 223,
+      "rough_composite_pairs": 24,
+      "rough_pairs": 318,
+      "signed_lower": 128
+    },
+    {
+      "N": 100000,
+      "certifies": true,
+      "cutoff": 46,
+      "goldbach_ordered": 1620,
+      "one_sided_composite_pairs": 1145,
+      "prime_rough_pairs": 2429,
+      "rough_composite_pairs": 336,
+      "rough_pairs": 3574,
+      "signed_lower": 1284
+    },
+    {
+      "N": 300094,
+      "certifies": true,
+      "cutoff": 66,
+      "goldbach_ordered": 2920,
+      "one_sided_composite_pairs": 2433,
+      "prime_rough_pairs": 4490,
+      "rough_composite_pairs": 863,
+      "rough_pairs": 6923,
+      "signed_lower": 2057
+    },
+    {
+      "N": 500000,
+      "certifies": true,
+      "cutoff": 79,
+      "goldbach_ordered": 6104,
+      "one_sided_composite_pairs": 4598,
+      "prime_rough_pairs": 9208,
+      "rough_composite_pairs": 1494,
+      "rough_pairs": 13806,
+      "signed_lower": 4610
+    }
+  ],
+  "scan": {
+    "argmin": 4,
+    "failures": 0,
+    "first_failure": 0,
+    "fresh_holdout_above_300000_count": 100000,
+    "fresh_holdout_argmin": 300094,
+    "fresh_holdout_failures": 0,
+    "fresh_holdout_minimum": 2057,
+    "last_failure": 0,
+    "limit": 500000,
+    "max_cutoff_over_cuberoot_ratio_at_N": 4,
+    "max_cutoff_over_cuberoot_ratio_denominator": 1,
+    "max_cutoff_over_cuberoot_ratio_numerator": 1,
+    "max_first_certifying_cutoff": 23,
+    "max_first_certifying_cutoff_at_N": 296798,
+    "method": "integer-NTT, verified direct samples",
+    "minimum_signed": 1,
+    "quartic_cutoff_nonpositive_count": 8,
+    "quartic_failure_cases": [
+      [
+        12,
+        -1
+      ],
+      [
+        14,
+        -1
+      ],
+      [
+        14318,
+        -1
+      ],
+      [
+        14348,
+        0
+      ],
+      [
+        80552,
+        -2
+      ],
+      [
+        81878,
+        -1
+      ],
+      [
+        82178,
+        -1
+      ],
+      [
+        82862,
+        -2
+      ]
+    ],
+    "quartic_first_failure": 12,
+    "quartic_last_failure": 82862,
+    "scanned_even": 249999,
+    "uncertified_under_global_cuberoot": 0,
+    "upper_half_argmin": 250178,
+    "upper_half_minimum": 1813
+  },
+  "scope": "finite only, exact rational/integer operations",
+  "signed_haar_example": {
+    "N": 2048,
+    "constant": "81081/2048",
+    "cutoff": 12,
+    "scale_bands": [
+      {
+        "value": "23",
+        "width": 2
+      },
+      {
+        "value": "-14",
+        "width": 4
+      },
+      {
+        "value": "-23/8",
+        "width": 8
+      },
+      {
+        "value": "-9/8",
+        "width": 16
+      },
+      {
+        "value": "21/32",
+        "width": 32
+      },
+      {
+        "value": "3/4",
+        "width": 64
+      },
+      {
+        "value": "61/128",
+        "width": 128
+      },
+      {
+        "value": "-7/128",
+        "width": 256
+      },
+      {
+        "value": "-83/512",
+        "width": 512
+      },
+      {
+        "value": "-25/256",
+        "width": 1024
+      },
+      {
+        "value": "-325/2048",
+        "width": 2048
+      }
+    ],
+    "signed_lower": 46
+  },
+  "source_hashes_sha256": {
+    "exact_scan.cpp": "8b8c678fe2c87082087c5e9c195f519741121ed4f645a9d87758063f008c02db",
+    "independent_audit.py": "2ebcc9c9e245189eadd3bc638247062863fc5ad6792d3913fba5f2e53fa1d396",
+    "signed_sieve.py": "aadfe37b1522ce1e363f66e120d8d0c9d669426a0956f8f726406df899f754c0",
+    "test_signed_sieve.py": "0c0256ca001a2afe6223a681161cf4d3bca4e904040e050a3d80bac050dfe670"
+  },
+  "source_mutant": {
+    "N": 1000,
+    "signed_lower": -20,
+    "source": "primes 1 mod 4",
+    "witnesses": 0
+  }
+}

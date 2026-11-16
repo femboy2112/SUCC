@@ -1,0 +1,84 @@
+{
+  "status": "EXACT_FINITE_MODEL_CHECKS_NOT_UNIVERSAL_PROOF",
+  "scalar_cases": 669,
+  "endpoint_ratios": [
+    {
+      "alpha": 1,
+      "epsilon": "1/10",
+      "ratio": "210/121",
+      "upper": 2
+    },
+    {
+      "alpha": 1,
+      "epsilon": "1/100",
+      "ratio": "20100/10201",
+      "upper": 2
+    },
+    {
+      "alpha": 1,
+      "epsilon": "1/1000",
+      "ratio": "2001000/1002001",
+      "upper": 2
+    },
+    {
+      "alpha": 2,
+      "epsilon": "1/10",
+      "ratio": "46410/14641",
+      "upper": 4
+    },
+    {
+      "alpha": 2,
+      "epsilon": "1/100",
+      "ratio": "406040100/104060401",
+      "upper": 4
+    },
+    {
+      "alpha": 2,
+      "epsilon": "1/1000",
+      "ratio": "4006004001000/1004006004001",
+      "upper": 4
+    },
+    {
+      "alpha": 3,
+      "epsilon": "1/10",
+      "ratio": "7715610/1771561",
+      "upper": 6
+    },
+    {
+      "alpha": 3,
+      "epsilon": "1/100",
+      "ratio": "6152015060100/1061520150601",
+      "upper": 6
+    },
+    {
+      "alpha": 3,
+      "epsilon": "1/1000",
+      "ratio": "6015020015006001000/1006015020015006001",
+      "upper": 6
+    },
+    {
+      "alpha": 4,
+      "epsilon": "1/10",
+      "ratio": "1143588810/214358881",
+      "upper": 8
+    },
+    {
+      "alpha": 4,
+      "epsilon": "1/100",
+      "ratio": "82856705628080100/10828567056280801",
+      "upper": 8
+    },
+    {
+      "alpha": 4,
+      "epsilon": "1/1000",
+      "ratio": "8028056070056028008001000/1008028056070056028008001",
+      "upper": 8
+    }
+  ],
+  "noncontraction_mutant": {
+    "k": "19/10",
+    "b": "9/5",
+    "left": "5",
+    "false_upper": "1/10"
+  }
+}

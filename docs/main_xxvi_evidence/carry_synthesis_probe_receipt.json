@@ -1,0 +1,50 @@
+{
+  "status": "EXACT_FINITE_INTERFACE_AUDIT",
+  "canonical_fraction_states": 512,
+  "growing_CRT_states": 512,
+  "phase_controls": {
+    "exact_transport_cases": 15,
+    "orientation_mutant_rejected": true,
+    "forgotten_winding_mutant_rejected": true,
+    "zero_reference_mutant_rejected": true,
+    "errors": [
+      "7/4",
+      "0",
+      "7/4",
+      "7/48",
+      "0",
+      "7/48",
+      "2011/1441440",
+      "0",
+      "2011/1441440",
+      "26172949269942323426667101/10809297226082946445818163200",
+      "0",
+      "26172949269942323426667101/10809297226082946445818163200",
+      "83120336198315657642861113464586840819154352457220405161662300775153606003440710505624732835013715072276992167/315891082126295926910577781227224287724292610539360964446613232134622171131547646804022812353601802887579593856000",
+      "0",
+      "83120336198315657642861113464586840819154352457220405161662300775153606003440710505624732835013715072276992167/315891082126295926910577781227224287724292610539360964446613232134622171131547646804022812353601802887579593856000"
+    ],
+    "Gamma_quadrature_claimed": false
+  },
+  "retained_recount": {
+    "status": "RETAINED_SHARED_SOURCE_RECOUNT_ONLY",
+    "shells": 32768,
+    "shell_range": [
+      32769,
+      65536
+    ],
+    "minimum_L": "1997/33657",
+    "minimum_L_B": 33657,
+    "minimum_d": "16393/32911",
+    "minimum_d_B": 32911,
+    "maximum_error": "136/33785",
+    "maximum_error_B": 33785,
+    "failures": 0,
+    "residues_normalized_sha256": "ae15aa4aaf63849ba61f29c925e3f69581542bbb71a3df788835a96556546962",
+    "residues_file_sha256": "c8868a139dee1b217c654da72f70480fc6e3bbbc619760b137e5c7abce37b08e",
+    "fresh_source_computation_claimed": false
+  },
+  "pi_normality_proved": false,
+  "R0_proved": false,
+  "source_selected_saving_proved": false
+}

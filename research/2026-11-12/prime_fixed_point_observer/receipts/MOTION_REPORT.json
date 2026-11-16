@@ -1,0 +1,161 @@
+{
+  "scope": "Exact finite implementation and countermodel checks; universal claims use displayed proofs/classical sources.",
+  "arithmetic": "Python Fraction; no floating point",
+  "counts": {
+    "24_rational_units": 1,
+    "unit_norm": 26,
+    "two_sided_inverse": 26,
+    "orthogonal_action": 26,
+    "orientation_preserved": 26,
+    "sign_redundancy": 26,
+    "action_composition": 676,
+    "24_unit_closure": 576,
+    "basis_associativity": 64,
+    "half_turn_bad_witness": 1,
+    "order_witness_qr": 1,
+    "order_witness_rq": 1,
+    "different_rotations": 1,
+    "bracketing_counts": 8,
+    "pentagon_vertices": 1,
+    "pentagon_edges": 1,
+    "pentagon_degree": 5,
+    "pentagon_closure": 5,
+    "pentagon_connected": 1,
+    "cartesian_pentagon": 81,
+    "scalar_associator_mutation": 4,
+    "canonical_associator_control": 1,
+    "three_range_mirror_ambiguity": 1
+  },
+  "total_checks": 1559,
+  "failures": [],
+  "rotation_witness": {
+    "q": [
+      "3/5",
+      "4/5",
+      "0",
+      "0"
+    ],
+    "r": [
+      "3/5",
+      "0",
+      "4/5",
+      "0"
+    ],
+    "qr_on_i": [
+      "0",
+      "-7/25",
+      "576/625",
+      "168/625"
+    ],
+    "rq_on_i": [
+      "0",
+      "-7/25",
+      "0",
+      "-24/25"
+    ]
+  },
+  "half_turn_control": "i*j=k and j*i=-k are unequal but have equal conjugation action",
+  "pentagon": {
+    "vertices": [
+      [
+        "A",
+        [
+          "B",
+          [
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      [
+        "A",
+        [
+          [
+            "B",
+            "C"
+          ],
+          "D"
+        ]
+      ],
+      [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      [
+        [
+          "A",
+          [
+            "B",
+            "C"
+          ]
+        ],
+        "D"
+      ],
+      [
+        [
+          [
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ]
+    ],
+    "edges": 5,
+    "short_path_steps": 2,
+    "long_path_steps": 3,
+    "minus_associator_outputs": {
+      "short": 1,
+      "long": -1
+    }
+  },
+  "dimension_table": [
+    {
+      "space": 1,
+      "translation": 1,
+      "rotation": 0,
+      "rigid_motion": 1
+    },
+    {
+      "space": 2,
+      "translation": 2,
+      "rotation": 1,
+      "rigid_motion": 3
+    },
+    {
+      "space": 3,
+      "translation": 3,
+      "rotation": 3,
+      "rigid_motion": 6
+    },
+    {
+      "space": 4,
+      "translation": 4,
+      "rotation": 6,
+      "rigid_motion": 10
+    },
+    {
+      "space": 5,
+      "translation": 5,
+      "rotation": 10,
+      "rigid_motion": 15
+    }
+  ],
+  "bracketing_counts_one_to_eight_inputs": [
+    1,
+    1,
+    2,
+    5,
+    14,
+    42,
+    132,
+    429
+  ]
+}

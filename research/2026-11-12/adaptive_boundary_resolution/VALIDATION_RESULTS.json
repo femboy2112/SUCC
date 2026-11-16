@@ -1,0 +1,25 @@
+{
+  "Goldbach_proved": false,
+  "code_sha256": {
+    "research/2026-11-12/adaptive_boundary_resolution/audit_probe.py": "a592ffafe041b4682e9d81f0d9432f12d302ec35ffc8735fe8f07823f586ed0d",
+    "research/2026-11-12/adaptive_boundary_resolution/complex_banks.py": "a2097888d9f271a94106450430f68a486f36815cb99e9d68428a500a69efbd94",
+    "research/2026-11-12/adaptive_boundary_resolution/integer_information.py": "3de86c94ea1df547f55733037a647b0a7f8c4534a81ec3194e5a67325b3e81e7",
+    "research/2026-11-12/adaptive_boundary_resolution/phase_aperture.py": "b90de94f49055786cb6d52b4fd9711e2ca2ba735faae778abc0c9a7807407894",
+    "research/2026-11-12/adaptive_boundary_resolution/pointwise_certificates.py": "2e474ee6c4d729a00e62b7fb89e40e3f4bc53ac2647f50ccc8adfe08d58a47cb",
+    "research/2026-11-12/adaptive_boundary_resolution/run_checks.py": "8ab9829b83b3505441d9cf5b552c20084cd16bb7a9855baff9fb7a6a6988c788",
+    "research/2026-11-12/adaptive_boundary_resolution/test_complex_banks.py": "2a51e5e7ee1c6cbf36a1eec0ec391a6a03ccb42393de8a390ac097c6d0f6fab3",
+    "research/2026-11-12/adaptive_boundary_resolution/test_integer_information.py": "d5a6540369e28dae61e822708dd662887394a588f30cf4cf9acf8f9db5d18181",
+    "research/2026-11-12/adaptive_boundary_resolution/test_pointwise_certificates.py": "c827e1b5cfb71ff98aa51cdc5e918ab2930971941cb1a28e493d7dc8797588f2",
+    "tests/test_adaptive_boundary_resolution.py": "1a02c9555661157b497dd4612e60ac94df79fdd56fc9b86da4cff78d44be2d3f"
+  },
+  "focused_test_count": 42,
+  "formal_proof_assistant_verification": false,
+  "published_parent": "f4151c4ae877ee43c4b7d130174b6bec1dbab9d6",
+  "reports_sha256": {
+    "AUDIT_RESULTS.json": "1375b874f8be3467942721d6615e2c7ef9b99cfee6559066519eb6c85d13b645",
+    "COMPLEX_RESULTS.json": "5a6ec29b56cdbad00604a3cfdc466c9a2227f4f04d5effd6b72753c4a3dbe40e",
+    "INTEGER_RESULTS.json": "a53cb99734edcabb14bb30b7900e0a80409438fea45300b412e50cfd8864eaa6",
+    "PHASE_APERTURE_RESULTS.json": "850fe8795026b136539544f96f9ac9bf4b909e0715fbe44b16a420f41c248ae1"
+  },
+  "scope": "Finite exact controls; paper theorems and classical imports are separately audited."
+}
