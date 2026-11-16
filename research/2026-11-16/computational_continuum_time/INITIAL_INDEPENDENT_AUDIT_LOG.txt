@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/data/succ_computational_continuum/independent_audit.py", line 64, in <module>
+    run()
+    ~~~^^
+  File "/mnt/data/succ_computational_continuum/independent_audit.py", line 16, in run
+    assert sp.factor(q) == (1-t)*(t*t+2)*(t*t+2*t+2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

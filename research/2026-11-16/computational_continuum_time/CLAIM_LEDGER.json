@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "scope": "computational continuum time for source-selected BBP histories; paper statements and calibrated finite probes",
+  "claims": [
+    {"id": "CCT-01", "status": "CLASSICAL/PROVED PAPER", "statement": "degree obstruction to global continuous circle interpolation between id and degree-16 expansion", "boundary": "enlarged source carrier or pointed trajectory permitted"},
+    {"id": "CCT-02", "status": "PROVED PAPER", "statement": "source-labelled pointed real lift gives gamma_x(t)=e(16^t x) and original integer BBP orbit", "boundary": "not a well-defined fractional-time circle endomorphism"},
+    {"id": "CCT-03", "status": "PROVED PAPER", "statement": "integer deck shifts are invisible at all integer observations but relative selected-path winding equals 15*k*16^n", "boundary": "winding is interpolation- and lift-dependent; not an unlabelled target invariant"},
+    {"id": "CCT-04", "status": "PROVED PAPER", "statement": "d_path is a metric on real lifts, and its squared distance for nonzero integer deck shifts lies within 15/(16*pi*abs(k)*log(16)) of 2", "boundary": "no metric on the unlabelled circle from this formula"},
+    {"id": "CCT-05", "status": "CLASSICAL/PROVED PAPER", "statement": "16-adic solenoid natural extension has a mapping-torus suspension; source lift selects one compatible past", "boundary": "suspension flow differs from fractional real dilation unless an intertwiner is constructed"},
+    {"id": "CCT-06", "status": "CLASSICAL/PROVED PAPER", "statement": "Gamma time-translation acts as a convolution semigroup; pre-average path difference is a metric at fixed alpha>0", "boundary": "fractional-time instrument is additional declared structure"},
+    {"id": "CCT-07", "status": "PROVED COUNTEREXAMPLE", "statement": "Gamma-smoothed fractional-time path tends to zero even for the perfectly integer-locked endpoint x=1", "refutes": "Gamma continuum attenuation implies discrete base-16 normality"},
+    {"id": "CCT-08", "status": "CLASSICAL/PROVED PAPER", "statement": "discrete endpoints alone do not determine internal winding; operational path pseudometric depends on time-resolved source probes", "boundary": "no spontaneous increase of source contact or unique interpolation"},
+    {"id": "CCT-09", "status": "UNVERIFIED", "statement": "original zero-seeded BBP source selects a signed time-resolution connection with a nontrivial all-large-shell lower-bound", "next_probe": "source-typed mixed time/resolution square plus zero-seed, A-FS shadow, gauge and x=1 controls"}
+  ]
+}
