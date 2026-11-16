@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "date_local": "2026-11-15",
+  "parent_commit": "94c7252ac7db3c8b14229544087119bd9cc01933",
+  "status_policy": "PROVED_LOCAL means checked paper proof within declared assumptions, not Lean or external referee verification.",
+  "global_mathematical_priority": "UNVERIFIED",
+  "pi_normality": "OPEN",
+  "claims": [
+    {
+      "id": "GP-01",
+      "status": "CLASSICAL_AND_CORRECTION",
+      "statement": "Gamma is the Fourier transform of a positive log-density; the previous coin failure is integer-circle aliasing, with the informal expectation direction corrected.",
+      "domain": "alpha>0; omega,theta real; C Bernoulli(x)",
+      "hypotheses": "Euler integral and declared log/circle conventions",
+      "proof": "THEOREMS.md GP-01; DLMF5.2",
+      "provenance": "classical; parent#651 PS-04",
+      "adversary": "At theta=pi the coin character is1-2x, so full-spectrum annihilation is false.",
+      "next_probe": "Reject any change of expectation order or frequency domain."
+    },
+    {
+      "id": "GP-02",
+      "status": "PROVED_LOCAL",
+      "statement": "The unit log-phase has complete Laguerre coefficients c_m=Gamma(alpha+i omega)/Gamma(alpha)*(-i omega)_m/sqrt(m!(alpha)_m).",
+      "domain": "Every alpha>0,omega real,m>=0; L2(Gamma(alpha,1))",
+      "hypotheses": "classical Laguerre normalization; explicitly proved completeness",
+      "proof": "LAGUERRE_THEOREMS.md §§2–3",
+      "provenance": "classical identities; new scoped observer assembly",
+      "adversary": "Wrong Pochhammer sign or omitted factorial fails exact polynomial integration.",
+      "next_probe": "Direct coefficients for any proposed new observer or time joining."
+    },
+    {
+      "id": "GP-03",
+      "status": "PROVED_LOCAL",
+      "statement": "Native Gamma2 has mean degree omega², two-sided rational truncation bounds, fixed-frequency M^-2 energy tail and inverse-Gamma2 large-frequency degree scaling.",
+      "domain": "All real omega; M>=1 for bounds; fixed nonzero omega for tail asymptotic; |omega|->infinity for degree limit",
+      "hypotheses": "GP-02, exact Gamma product, specified Laguerre basis",
+      "proof": "LAGUERRE_THEOREMS.md §§4–5",
+      "provenance": "new scoped derivation from classical product; global priority unverified",
+      "adversary": "omega0 is a separate one-mode case; fixed M loses all energy as frequency grows; finite sums do not certify the limit.",
+      "next_probe": "Compare a genuinely different basis; no universal complexity claim."
+    },
+    {
+      "id": "GP-04",
+      "status": "PROVED_LOCAL",
+      "statement": "Source-labelled Gamma/label/scalar conditional projections have an exact three-term Pythagorean energy split; retaining labels preserves the native mode-error budget.",
+      "domain": "Each n>=1; a=8n; authentic tilted B law and independent Gamma2 variable",
+      "hypotheses": "inherited exact Green Gamma mixture and declared product measure",
+      "proof": "THEOREMS.md GP-04; LAGUERRE_THEOREMS.md §6",
+      "provenance": "October26 mixture inherited; conditional projection application in this dossier",
+      "adversary": "Changing seed does not change B; independent temporal redraws do not authenticate the shared arithmetic field.",
+      "next_probe": "Construct and prove a genuine shared temporal observer before using cross-time energies."
+    },
+    {
+      "id": "GP-05",
+      "status": "PROVED_LOCAL",
+      "statement": "Authentic forcing log-Fourier transform obeys Gamma1/Gamma2 sandwich and right-half-plane correction; is globally nonzero; its log convolution has finite-band recovery and no bounded full inverse.",
+      "domain": "Every real rate a>0, every real frequency; L2(R) with declared Fourier convention",
+      "hypotheses": "positive coefficients in the exact three-gap four-pole kernel",
+      "proof": "FORCING_THEOREMS.md §§1–4",
+      "provenance": "inherited Mellin formula; new global estimates",
+      "adversary": "A coherent Green mixture need not preserve the forcing zero-free bound; high-frequency unit-norm test functions defeat a bounded full inverse.",
+      "next_probe": "Any extension to joint Mellin/Fourier variables or Green mixtures needs a new proof."
+    },
+    {
+      "id": "GP-05B",
+      "status": "PROVED_LOCAL",
+      "statement": "Forcing Mellin transform analytic on Re z>-2 is zero-free on Re z>-1, and also on Re z=-1 for positive rational a.",
+      "domain": "a>0 for open half-plane; a rational positive for boundary",
+      "hypotheses": "authentic positive three gaps3,4,5 and coefficients2,1,1",
+      "proof": "FORCING_THEOREMS.md §5",
+      "provenance": "dominant-term and elementary coprimality derivations",
+      "adversary": "A one-gap positive kernel has exact boundary zeros. No statement made in-2<Re z<-1.",
+      "next_probe": "Locate or exclude zeros in the remaining convergence strip."
+    },
+    {
+      "id": "GP-06",
+      "status": "PROVED_LOCAL",
+      "statement": "Green residual limiting real zeros are exactly2piZ excluding0; bounded real detuning has uniform expansion aPsi(ac+d)=d/c-7/2-i/c+O(1/a), with an explicit nonzero eventual lower bound.",
+      "domain": "Every fixed k nonzero integer; c=2pi k; D finite; all |d|<=D; n>=1 for remainder and explicit cutoff for nonvanishing",
+      "hypotheses": "authentic source rate law and inverse-square tilt; fourth moment finite",
+      "proof": "RESONANCE_THEOREMS.md §§1–3",
+      "provenance": "undetuned limit inherited; zero classification and uniform detuning new to this dossier",
+      "adversary": "Removing tilt flips the imaginary coefficient; small-n convergence is not monotone; no global finite-n zero classification.",
+      "next_probe": "Prove a source-preserving transport to ordered real arithmetic phases."
+    },
+    {
+      "id": "GP-06B",
+      "status": "PROVED_LOCAL",
+      "statement": "General rate-observer tilt has residue d/c-E B+i(1-beta)/c; beta1 at mean detuning has second residue Var(B)-ic*kappa3(B)/2. A positive rational-endpoint control matches both.",
+      "domain": "B=K+V>=0, integer K and independent uniform V; fixed beta>=0 and nonzero lattice harmonic; bounded detuning for first order; fixed mean detuning and beta1 for second order",
+      "hypotheses": "Fourth moment for first order, sixth for second; beta2 alone is the authentic BBP tail observer",
+      "proof": "TILT_HIERARCHY.md T1-T6; THEOREMS.md GP-06B",
+      "provenance": "Root conjecture, same-model independent derivation, global remainder, independent exact/symbolic and high-precision diagnostics",
+      "adversary": "K=2,3,11 with weights2/3,1/4,1/12 matches first three moments but endpoint35/264 has harmonic33 locked. Changed forcing, not a counterexample to literal original source.",
+      "next_probe": "Any source-authenticating use must distinguish this exact moment-matching control and retain the original temporal coupling."
+    },
+    {
+      "id": "GP-07",
+      "status": "REFUTED_INFERENCE",
+      "statement": "Generic Gamma damping, endpoint hierarchy or seed-insensitive source geometry alone implies pi-normality.",
+      "domain": "the proposed generic or all-seed inference only",
+      "hypotheses": "hypotheses deliberately omit the full original source/zero-seed coupling",
+      "proof": "THEOREMS.md GP-07; LAGUERRE_THEOREMS.md §§8–9",
+      "provenance": "inherited counterseed; explicit rational endpoint control",
+      "adversary": "Same-forcing seed-pi/16 makes completed phase1; R0(t)=1-t gives rational endpoint1/2.",
+      "next_probe": "A theorem explicitly fixing four poles and zero seed is not refuted by these controls."
+    },
+    {
+      "id": "GP-08",
+      "status": "OPEN",
+      "statement": "There exist eta>0,B0 such that Re W_B(1)<=1-eta for all B>=B0 for original zero-seeded BBP.",
+      "domain": "literal four poles,U0=0; all sufficiently large integer shells",
+      "hypotheses": "no new statistical premise supplied",
+      "proof": null,
+      "provenance": "Main XXV R0 frontier",
+      "adversary": "All finite source/phase observations remain finite; equivalent rational-phase restatement does not prove the estimate.",
+      "next_probe": "NEXT.md: genuine signed temporal transport and source-derived bound."
+    }
+  ]
+}

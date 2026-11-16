@@ -1,0 +1,33 @@
+test_exact_moments (test_gamma_phase_probe.AuthenticRateLaw.test_exact_moments) ... ok
+test_moment_independent_unit_cell_clock (test_gamma_phase_probe.AuthenticRateLaw.test_moment_independent_unit_cell_clock) ... ok
+test_rate_tail_jensen_consistency (test_gamma_phase_probe.AuthenticRateLaw.test_rate_tail_jensen_consistency) ... ok
+test_resonance_certified_constant_decreases (test_gamma_phase_probe.AuthenticRateLaw.test_resonance_certified_constant_decreases) ... ok
+test_resonance_domain (test_gamma_phase_probe.AuthenticRateLaw.test_resonance_domain) ... ok
+test_tail_identity_vs_original_four_poles (test_gamma_phase_probe.AuthenticRateLaw.test_tail_identity_vs_original_four_poles) ... ok
+test_closed_coefficients_against_polynomial_integration (test_gamma_phase_probe.ModalIdentities.test_closed_coefficients_against_polynomial_integration) ... ok
+test_conjugacy (test_gamma_phase_probe.ModalIdentities.test_conjugacy) ... ok
+test_energy_recurrence_vs_independent_coefficients (test_gamma_phase_probe.ModalIdentities.test_energy_recurrence_vs_independent_coefficients) ... ok
+test_exact_orthogonality (test_gamma_phase_probe.ModalIdentities.test_exact_orthogonality) ... ok
+test_factorial_mutation_fails (test_gamma_phase_probe.ModalIdentities.test_factorial_mutation_fails) ... ok
+test_first_coefficient_orientation (test_gamma_phase_probe.ModalIdentities.test_first_coefficient_orientation) ... ok
+test_laguerre_low_degree (test_gamma_phase_probe.ModalIdentities.test_laguerre_low_degree) ... ok
+test_mode_domain (test_gamma_phase_probe.ModalIdentities.test_mode_domain) ... ok
+test_nonzero_mode_tail_has_positive_lower_bound (test_gamma_phase_probe.ModalIdentities.test_nonzero_mode_tail_has_positive_lower_bound) ... ok
+test_null_frequency_exactly_one_mode (test_gamma_phase_probe.ModalIdentities.test_null_frequency_exactly_one_mode) ... ok
+test_rational_tail_bounds_order_and_symmetry (test_gamma_phase_probe.ModalIdentities.test_rational_tail_bounds_order_and_symmetry) ... ok
+test_sufficient_cutoff_certificate (test_gamma_phase_probe.ModalIdentities.test_sufficient_cutoff_certificate) ... ok
+test_half_character_retains_coin_parameter (test_gamma_phase_probe.NonlinearControls.test_half_character_retains_coin_parameter) ... ok
+test_integer_circle_character_aliases_every_coin (test_gamma_phase_probe.NonlinearControls.test_integer_circle_character_aliases_every_coin) ... ok
+test_matching_endpoint_rational_source (test_gamma_phase_probe.NonlinearControls.test_matching_endpoint_rational_source) ... ok
+test_source_seed_control (test_gamma_phase_probe.NonlinearControls.test_source_seed_control) ... ok
+test_all_rational_disk_margins (test_gamma_phase_probe.SourceContract.test_all_rational_disk_margins) ... ok
+test_authentic_boundary_coprime_witnesses (test_gamma_phase_probe.SourceContract.test_authentic_boundary_coprime_witnesses) ... ok
+test_dropped_pole_control_is_detected (test_gamma_phase_probe.SourceContract.test_dropped_pole_control_is_detected) ... ok
+test_literal_source_against_combined_polynomial (test_gamma_phase_probe.SourceContract.test_literal_source_against_combined_polynomial) ... ok
+test_positive_rate_regrouping (test_gamma_phase_probe.SourceContract.test_positive_rate_regrouping) ... ok
+test_source_domain (test_gamma_phase_probe.SourceContract.test_source_domain) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.069s
+
+OK
