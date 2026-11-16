@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-11-16T14:25:23.078525+00:00",
+  "status": "PASS_ALL_EXPECTED_HOSTED_CI",
+  "repository": "femboy2112/SUCC",
+  "pr": 656,
+  "pr_url": "https://github.com/femboy2112/SUCC/pull/656",
+  "candidate": {
+    "head": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+    "tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+    "base": "db9fb4b84672050efa79b13377f1e73364598a14"
+  },
+  "synthetic_pr_merge": {
+    "commit": "e4566100cdc73481a26ce29ebf3c95b0ff9f3c1f",
+    "parents": [
+      "db9fb4b84672050efa79b13377f1e73364598a14",
+      "554de88c17a09fc24777fbe5101730dbd6b44ebf"
+    ],
+    "tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+    "exact_candidate_tree_match": true,
+    "receipt": "2026-11-16T13-52-42-490Z_synthetic_merge_commit.json"
+  },
+  "workflow_count": 12,
+  "expanded_job_count": 30,
+  "check_runs_count": 30,
+  "all_runs_and_checks_bound_to_exact_head": true,
+  "job_ids_equal_check_run_ids": true,
+  "all_latest_attempts_successful": true,
+  "workflow_runs": [
+    {
+      "workflow": ".github/workflows/principia-observatoris.yml",
+      "name": "Principia Observatoris second forge",
+      "run_id": 43879890840,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890840",
+      "job_ids": [
+        133342656027,
+        133342656235,
+        133342656321
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890840.json"
+    },
+    {
+      "workflow": ".github/workflows/mathlib_bridge.yml",
+      "name": "Pinned formal kernel and proposition exports",
+      "run_id": 43879890855,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890855",
+      "job_ids": [
+        133342655994
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890855.json"
+    },
+    {
+      "workflow": ".github/workflows/academic-transmutation.yml",
+      "name": "Academic transmutation exact and formal certificates",
+      "run_id": 43879891015,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879891015",
+      "job_ids": [
+        133342656382,
+        133342656795,
+        133342656847,
+        133342656869
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879891015.json"
+    },
+    {
+      "workflow": ".github/workflows/one-object-residual-shorting.yml",
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "run_id": 43879890947,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890947",
+      "job_ids": [
+        133342656088,
+        133342656739
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890947.json"
+    },
+    {
+      "workflow": ".github/workflows/collective-observer.yml",
+      "name": "Collective observer source and certificate replay",
+      "run_id": 43879890928,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890928",
+      "job_ids": [
+        133342656032,
+        133342656521
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890928.json"
+    },
+    {
+      "workflow": ".github/workflows/orbit-clock-genesis.yml",
+      "name": "Orbit clock genesis exact source checks",
+      "run_id": 43879890933,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890933",
+      "job_ids": [
+        133342656021,
+        133342656548
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890933.json"
+    },
+    {
+      "workflow": ".github/workflows/bidirectional-cut.yml",
+      "name": "Bidirectional SUCC exact arithmetic cut checks",
+      "run_id": 43879890946,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890946",
+      "job_ids": [
+        133342655587,
+        133342656076
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890946.json"
+    },
+    {
+      "workflow": ".github/workflows/source-minimality.yml",
+      "name": "Source-minimality clock carry renewal exact checks",
+      "run_id": 43879890941,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890941",
+      "job_ids": [
+        133342656226,
+        133342656823
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890941.json"
+    },
+    {
+      "workflow": ".github/workflows/tenacious-observer-descent.yml",
+      "name": "Principia Observatoris synthesis",
+      "run_id": 43879890948,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890948",
+      "job_ids": [
+        133342655397
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890948.json"
+    },
+    {
+      "workflow": ".github/workflows/pi-lag-carry.yml",
+      "name": "Selected BBP lag carries and collision certificates",
+      "run_id": 43879890922,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890922",
+      "job_ids": [
+        133342655499,
+        133342656062
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890922.json"
+    },
+    {
+      "workflow": ".github/workflows/institute.yml",
+      "name": "Institute theorem contracts and core Lean",
+      "run_id": 43879890934,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890934",
+      "job_ids": [
+        133342656881,
+        133342657417,
+        133342657984
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890934.json"
+    },
+    {
+      "workflow": ".github/workflows/ci.yml",
+      "name": "Observational SUCC validation",
+      "run_id": 43879890943,
+      "run_attempt": 1,
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943",
+      "job_ids": [
+        133342656423,
+        133342656740,
+        133342656745,
+        133342656868,
+        133342656873,
+        133342656976
+      ],
+      "metadata": "2026-11-16T14-23-41-554Z_final_jobs_43879890943.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": 133342657984,
+      "name": "contracts (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890934/job/133342657984"
+    },
+    {
+      "id": 133342657417,
+      "name": "contracts (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890934/job/133342657417"
+    },
+    {
+      "id": 133342656976,
+      "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943/job/133342656976"
+    },
+    {
+      "id": 133342656881,
+      "name": "lean",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890934/job/133342656881"
+    },
+    {
+      "id": 133342656873,
+      "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943/job/133342656873"
+    },
+    {
+      "id": 133342656869,
+      "name": "exact (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879891015/job/133342656869"
+    },
+    {
+      "id": 133342656868,
+      "name": "Python 3.13 mathematical and epistemic checks",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943/job/133342656868"
+    },
+    {
+      "id": 133342656847,
+      "name": "lean",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879891015/job/133342656847"
+    },
+    {
+      "id": 133342656823,
+      "name": "exact-stdlib (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890941/job/133342656823"
+    },
+    {
+      "id": 133342656795,
+      "name": "exact (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879891015/job/133342656795"
+    },
+    {
+      "id": 133342656745,
+      "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943/job/133342656745"
+    },
+    {
+      "id": 133342656740,
+      "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943/job/133342656740"
+    },
+    {
+      "id": 133342656739,
+      "name": "finite_source (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890947/job/133342656739"
+    },
+    {
+      "id": 133342656548,
+      "name": "exact-stdlib (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890933/job/133342656548"
+    },
+    {
+      "id": 133342656521,
+      "name": "Collective observer exact replay (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890928/job/133342656521"
+    },
+    {
+      "id": 133342656423,
+      "name": "Python 3.10 mathematical and epistemic checks",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890943/job/133342656423"
+    },
+    {
+      "id": 133342656382,
+      "name": "paired-original-source",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879891015/job/133342656382"
+    },
+    {
+      "id": 133342656321,
+      "name": "exact-models (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890840/job/133342656321"
+    },
+    {
+      "id": 133342656235,
+      "name": "kernel",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890840/job/133342656235"
+    },
+    {
+      "id": 133342656226,
+      "name": "exact-stdlib (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890941/job/133342656226"
+    },
+    {
+      "id": 133342656088,
+      "name": "finite_source (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890947/job/133342656088"
+    },
+    {
+      "id": 133342656076,
+      "name": "exact-source (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890946/job/133342656076"
+    },
+    {
+      "id": 133342656062,
+      "name": "exact (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890922/job/133342656062"
+    },
+    {
+      "id": 133342656032,
+      "name": "Collective observer exact replay (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890928/job/133342656032"
+    },
+    {
+      "id": 133342656027,
+      "name": "exact-models (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890840/job/133342656027"
+    },
+    {
+      "id": 133342656021,
+      "name": "exact-stdlib (3.10)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890933/job/133342656021"
+    },
+    {
+      "id": 133342655994,
+      "name": "Exact Lean types, source hashes, axioms and negative controls",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890855/job/133342655994"
+    },
+    {
+      "id": 133342655587,
+      "name": "exact-source (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890946/job/133342655587"
+    },
+    {
+      "id": 133342655499,
+      "name": "exact (3.13)",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890922/job/133342655499"
+    },
+    {
+      "id": 133342655397,
+      "name": "synthesis",
+      "head_sha": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/femboy2112/SUCC/actions/runs/43879890948/job/133342655397"
+    }
+  ],
+  "native_outer_suites": [
+    {
+      "python": "3.10",
+      "job_id": 133342656423,
+      "log": "main_python310_job133342656423.log",
+      "bytes": 2198128,
+      "sha256": "5f60e97c33f9b431a59539b20beb804a12c57688d6689a998878feef2cb9b0b3",
+      "outer_unittest": {
+        "tests_run": 14476,
+        "seconds": 1753.351,
+        "skipped": 2,
+        "outer_result": "OK",
+        "source_line": 15479,
+        "verbatim_summary_lines": [
+          "2026-11-16T14:21:44.7445533Z Ran 14476 tests in 1753.351s",
+          "2026-11-16T14:21:44.7445699Z ",
+          "2026-11-16T14:21:44.7445802Z OK (skipped=2)"
+        ]
+      },
+      "encoding": "Exact UTF-8 encoding of decoded plugin log content, preserving initial BOM and terminal newline."
+    },
+    {
+      "python": "3.13",
+      "job_id": 133342656868,
+      "log": "main_python313_job133342656868.log",
+      "bytes": 2863312,
+      "sha256": "323a488b6e5b6fddef890758418c7325e512cdf75caf5ad5e357cbfdcd9130ba",
+      "outer_unittest": {
+        "tests_run": 14476,
+        "seconds": 963.694,
+        "skipped": 2,
+        "outer_result": "OK",
+        "source_line": 15465,
+        "verbatim_summary_lines": [
+          "2026-11-16T14:08:46.4163598Z Ran 14476 tests in 963.694s",
+          "2026-11-16T14:08:46.4163731Z ",
+          "2026-11-16T14:08:46.4163815Z OK (skipped=2)"
+        ]
+      },
+      "encoding": "Exact UTF-8 encoding of decoded plugin log content, preserving initial BOM and terminal newline."
+    }
+  ],
+  "legacy_commit_statuses": {
+    "reported_state": "pending",
+    "total_count": 0,
+    "statuses": [],
+    "interpretation": "No legacy status contexts exist; aggregate pending with zero contexts is not a pending check."
+  },
+  "failed_steps": [],
+  "reruns_or_remote_mutations_performed_by_monitor": false,
+  "final_metadata_files": {
+    "runs": "2026-11-16T14-23-41-554Z_final_runs.json",
+    "checks": "2026-11-16T14-23-41-554Z_final_checks.json",
+    "pr": "2026-11-16T14-23-41-554Z_final_pr.json",
+    "legacy_status": "2026-11-16T14-23-41-554Z_final_status.json"
+  },
+  "scope": "Hosted verification of exact candidate and its identical synthetic merge tree. Parent performs independent guarded merge and post-merge verification; this receipt does not assert that later merge outcome."
+}

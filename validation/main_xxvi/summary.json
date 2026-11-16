@@ -37,6 +37,37 @@
   },
   "protected_paths": 92,
   "historical_xxv_manifest": "FAIL_RETAINED; all8 paths exact authorized later donor601, historical baseline passes; see explicit reconciliation",
-  "hosted_ci": "PENDING; separate exact-candidate gate, no CI success claimed",
-  "authority": "Exact finite implementation/certificate replay, scoped paper proofs and fresh encoded Lean statements; pi normality and R0 remain OPEN."
+  "hosted_ci": {
+    "status": "PASS",
+    "workflows": 12,
+    "jobs_and_checks": 30,
+    "head": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+    "raw_receipts": "hosted_ci_receipts.tar.gz"
+  },
+  "authority": "Exact finite implementation/certificate replay, scoped paper proofs and fresh encoded Lean statements; pi normality and R0 remain OPEN.",
+  "status": "COMPLETE_MERGED_AND_VERIFIED",
+  "main": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "integration_pr": 656,
+  "integration_url": "https://github.com/femboy2112/SUCC/pull/656",
+  "postmerge": {
+    "status": "PASS",
+    "identical_validated_tree": true,
+    "included_source_pr_heads": 54,
+    "protected_paths": 92
+  },
+  "mathematical_frontier": {
+    "pi_normality": "OPEN",
+    "R0": "OPEN",
+    "new_source_selected_saving": "not established",
+    "strongest_composite": "quantitative Gamma/carry decoder and signed observer-defect transport bounds"
+  },
+  "postmerge_ci_rerun": "Separate push-triggered repetition; premerge exact-candidate 12/12 workflows and30/30 checks passed. No claim of postmerge rerun completion.",
+  "pr_dispositions": {
+    "included_count": 54,
+    "automatically_closed_as_merged": 18,
+    "closed_as_absorbed": 36,
+    "deferred": 0,
+    "blocked": 0,
+    "branches_deleted": 0
+  }
 }

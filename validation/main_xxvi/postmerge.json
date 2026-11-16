@@ -1,0 +1,138 @@
+{
+  "main": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+  "candidate": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+  "same_tree_as_validated_candidate": true,
+  "parents": [
+    "db9fb4b84672050efa79b13377f1e73364598a14",
+    "554de88c17a09fc24777fbe5101730dbd6b44ebf"
+  ],
+  "integration_pr": 656,
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11571034600274288,
+      "log": "gate-1.log",
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.21659332000126597,
+      "log": "gate-2.log",
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.2426533680009015,
+      "log": "gate-3.log",
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 2.7750568850024138,
+      "log": "gate-4.log",
+      "sha256": "609f2b0edcdb5c3b3d2cb95c306b249a6a81fc08ad3fa4f55aa6186f52e1ce30"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11542106100023375,
+      "log": "gate-5.log",
+      "sha256": "42f78f1e1186ec5e0def5562b1e5cd616bd7ba71afb644f64cf8aea6435eed5c"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/main_xxvi_manifest.py",
+        "--check",
+        "docs/SUCC_MAIN_XXVI_INTEGRATION_MANIFEST_2026-11-16.json",
+        "--integration",
+        "81be6b897ae980b801a3b9de9e22ef81e8360bfb"
+      ],
+      "exit_code": 0,
+      "seconds": 3.7933781840001757,
+      "log": "gate-6.log",
+      "sha256": "463f287b5102a7899f414d0cc40771f3b5623eca3366ff9f532c83b683048722"
+    }
+  ],
+  "included_pr_heads": [
+    600,
+    601,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655
+  ],
+  "included_count": 54,
+  "tracked_main_unchanged": true,
+  "status": "PASS",
+  "scope": "Postmerge identity/ancestry/protected bytes/source replays. Full native and hosted CI validated this identical source tree before merge; no claim that postmerge CI rerun has completed."
+}
