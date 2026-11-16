@@ -78,3 +78,8 @@ checker. It separates a known deletion-value clarification, local-rule converse
 and velocity compression, restricted ladder optimality, and two-entry growth
 bounds. Follow [LRN claims](../CLAIM_SUPPLEMENT_LONELY_RUNNER.md) to precise proof
 authority; this discovery entry certifies no theorem or academic priority.
+
+
+## Main XXVI source/operator interfaces
+
+The [Constructive Interference Atlas](../MAIN_XXVI_CONSTRUCTIVE_INTERFERENCE_ATLAS.md) maps authenticated source, rational/integer carrier, Gamma/Green phase, carry masks, Haar detectors and observer defects. The [source-phase interface](../MAIN_XXVI_SOURCE_PHASE_INTERFACE.md) distinguishes the unpaid selected carry gate from the weakest overall rung R0. The typed relation graph adds explicit transport and does-not-imply edges; full donor ancestry is in the Main XXVI manifest.

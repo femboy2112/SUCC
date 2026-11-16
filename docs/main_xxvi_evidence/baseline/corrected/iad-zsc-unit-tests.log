@@ -1,0 +1,80 @@
+test_exact_lag_helpers_at_boundaries (test_iad_analytic.TestExitCodeAndInstrument.test_exact_lag_helpers_at_boundaries) ... ok
+test_exit_code_reacts_only_to_pr1 (test_iad_analytic.TestExitCodeAndInstrument.test_exit_code_reacts_only_to_pr1) ... ok
+test_kl_bound_float_agrees_with_tan (test_iad_analytic.TestExitCodeAndInstrument.test_kl_bound_float_agrees_with_tan) ... ok
+test_phase_matches_mpmath_kernel_on_huge_denominators (test_iad_analytic.TestExitCodeAndInstrument.test_phase_matches_mpmath_kernel_on_huge_denominators) ... ok
+test_identity_holds_and_wrong_normalizations_fail (test_iad_analytic.TestIAD01Mutation.test_identity_holds_and_wrong_normalizations_fail) ... ok
+test_inequality_1_2_and_wrong_constant (test_iad_analytic.TestIAD01Mutation.test_inequality_1_2_and_wrong_constant) ... ok
+test_monotonicity_and_mutants (test_iad_analytic.TestIAD02Mutation.test_monotonicity_and_mutants) ... ok
+test_brackets_sharp_constant_and_pole_mutation (test_iad_analytic.TestIAD03Mutation.test_brackets_sharp_constant_and_pole_mutation) ... ok
+test_innovation_routes_and_tail_identity_detect_pole_mutation (test_iad_analytic.TestIAD03Mutation.test_innovation_routes_and_tail_identity_detect_pole_mutation) ... ok
+test_step_bracket_and_mutated_upper_constant (test_iad_analytic.TestIAD03Mutation.test_step_bracket_and_mutated_upper_constant) ... ok
+test_deviation_bound_4_3_and_wrong_constant (test_iad_analytic.TestIAD04Mutation.test_deviation_bound_4_3_and_wrong_constant) ... ok
+test_kl_inequality_on_data_and_calibration_on_linear_phase (test_iad_analytic.TestIAD04Mutation.test_kl_inequality_on_data_and_calibration_on_linear_phase) ... ok
+test_kusmin_landau_hypotheses_and_pole_mutation (test_iad_analytic.TestIAD04Mutation.test_kusmin_landau_hypotheses_and_pole_mutation) ... ok
+test_corollaries_and_dropped_terms (test_iad_analytic.TestIAD05Mutation.test_corollaries_and_dropped_terms) ... ok
+test_gauge_identity_and_mutations (test_iad_analytic.TestIAD05Mutation.test_gauge_identity_and_mutations) ... ok
+test_sparse_van_der_corput_and_dropped_factors (test_iad_analytic.TestIAD06Mutation.test_sparse_van_der_corput_and_dropped_factors) ... ok
+test_transport_bound_and_wrong_constant (test_iad_analytic.TestIAD06Mutation.test_transport_bound_and_wrong_constant) ... ok
+test_every_control_runs_through_sequence_checks (test_iad_analytic.TestQuickProbe.test_every_control_runs_through_sequence_checks) ... ok
+test_every_preregistered_check_is_exercised_on_holdout_and_calibration (test_iad_analytic.TestQuickProbe.test_every_preregistered_check_is_exercised_on_holdout_and_calibration) ... ok
+test_exit_code_zero_and_no_pr1_failure (test_iad_analytic.TestQuickProbe.test_exit_code_zero_and_no_pr1_failure) ... ok
+test_output_is_deterministic_formatting_without_timestamps (test_iad_analytic.TestQuickProbe.test_output_is_deterministic_formatting_without_timestamps) ... ok
+test_pr2_is_recorded_not_enforced (test_iad_analytic.TestQuickProbe.test_pr2_is_recorded_not_enforced) ... ok
+test_pr3_alias_and_hostile_seeds (test_iad_analytic.TestQuickProbe.test_pr3_alias_and_hostile_seeds) ... ok
+test_mutated_null_vector_breaks_bounds (test_iad_arithmetic.TestAT07.test_mutated_null_vector_breaks_bounds) ... ok
+test_null_source_bounds_and_depths (test_iad_arithmetic.TestAT07.test_null_source_bounds_and_depths) ... ok
+test_authentication_rejects_hijack_but_not_true_seed (test_iad_arithmetic.TestIAD07Hijack.test_authentication_rejects_hijack_but_not_true_seed) ... ok
+test_mutation_M_missing_a_prime_square_breaks_residue_equality (test_iad_arithmetic.TestIAD07Hijack.test_mutation_M_missing_a_prime_square_breaks_residue_equality) ... ok
+test_mutation_a_not_multiple_of_M_breaks_residue_at_3 (test_iad_arithmetic.TestIAD07Hijack.test_mutation_a_not_multiple_of_M_breaks_residue_at_3) ... ok
+test_mutation_q_inside_the_census_breaks_class_equality (test_iad_arithmetic.TestIAD07Hijack.test_mutation_q_inside_the_census_breaks_class_equality) ... ok
+test_mutation_qk_too_small_breaks_coherence (test_iad_arithmetic.TestIAD07Hijack.test_mutation_qk_too_small_breaks_coherence) ... ok
+test_theorem_holds_exactly_on_small_shell (test_iad_arithmetic.TestIAD07Hijack.test_theorem_holds_exactly_on_small_shell) ... ok
+test_81_holds_on_seeded_synthetic_cases (test_iad_arithmetic.TestIAD08Wall.test_81_holds_on_seeded_synthetic_cases) ... ok
+test_81_is_nearly_sharp_for_tiny_same_sign_phases (test_iad_arithmetic.TestIAD08Wall.test_81_is_nearly_sharp_for_tiny_same_sign_phases) ... ok
+test_mutation_bound_without_16_power_is_violated (test_iad_arithmetic.TestIAD08Wall.test_mutation_bound_without_16_power_is_violated) ... ok
+test_mutation_eps_at_wrong_time_is_violated (test_iad_arithmetic.TestIAD08Wall.test_mutation_eps_at_wrong_time_is_violated) ... ok
+test_one_seventeenth_meets_the_wall_but_does_not_cancel (test_iad_arithmetic.TestIAD08Wall.test_one_seventeenth_meets_the_wall_but_does_not_cancel) ... ok
+test_birth_law_by_brute_force (test_iad_arithmetic.TestIAD09FreshPrimes.test_birth_law_by_brute_force) ... ok
+test_ell_pair_matches_float_formula_on_holdout_shells (test_iad_arithmetic.TestIAD09FreshPrimes.test_ell_pair_matches_float_formula_on_holdout_shells) ... ok
+test_exact_fresh_component (test_iad_arithmetic.TestIAD09FreshPrimes.test_exact_fresh_component) ... ok
+test_iad09d_literal_weld_fails_exactly_at_half_coefficient_age_zero (test_iad_arithmetic.TestIAD09FreshPrimes.test_iad09d_literal_weld_fails_exactly_at_half_coefficient_age_zero)
+Pins a defect in the literal IAD-09(d) statement (see RESULTS theorem_statement_findings): ... ok
+test_inequation_hD_not_integer (test_iad_arithmetic.TestIAD09FreshPrimes.test_inequation_hD_not_integer) ... ok
+test_mutation_wrong_birth_formula_is_caught (test_iad_arithmetic.TestIAD09FreshPrimes.test_mutation_wrong_birth_formula_is_caught) ... ok
+test_mutation_wrong_birth_pole_is_caught (test_iad_arithmetic.TestIAD09FreshPrimes.test_mutation_wrong_birth_pole_is_caught) ... ok
+test_mutation_wrong_rho_is_caught (test_iad_arithmetic.TestIAD09FreshPrimes.test_mutation_wrong_rho_is_caught) ... ok
+test_quick_probe_exit_zero_and_deterministic (test_iad_arithmetic.TestQuickRun.test_quick_probe_exit_zero_and_deterministic) ... ok
+test_coherent_seed_control (test_iad_arithmetic.TestSeamLaw.test_coherent_seed_control) ... ok
+test_forced_seam_control_satisfies_items_3_to_5 (test_iad_arithmetic.TestSeamLaw.test_forced_seam_control_satisfies_items_3_to_5) ... ok
+test_machin_instrument_calibration (test_iad_arithmetic.TestSeamLaw.test_machin_instrument_calibration) ... ok
+test_mutation_dropping_carry_16_breaks_reconstruction (test_iad_arithmetic.TestSeamLaw.test_mutation_dropping_carry_16_breaks_reconstruction) ... ok
+test_mutation_pole_mutated_forcing_breaks_digit_agreement (test_iad_arithmetic.TestSeamLaw.test_mutation_pole_mutated_forcing_breaks_digit_agreement) ... ok
+test_mutation_wrong_cocycle_sign_is_caught (test_iad_arithmetic.TestSeamLaw.test_mutation_wrong_cocycle_sign_is_caught) ... ok
+test_true_seed_seam_law_against_independent_pi (test_iad_arithmetic.TestSeamLaw.test_true_seed_seam_law_against_independent_pi) ... ok
+test_swt01_bound_is_attained_and_halved_bound_fails (test_iad_arithmetic.TestTransport.test_swt01_bound_is_attained_and_halved_bound_fails) ... ok
+test_swt01_on_planted_streams (test_iad_arithmetic.TestTransport.test_swt01_on_planted_streams) ... ok
+test_swt05b_isotone_and_mutation (test_iad_arithmetic.TestTransport.test_swt05b_isotone_and_mutation) ... ok
+test_committed_results_record_a_clean_full_run (test_zsc.CommittedResults.test_committed_results_record_a_clean_full_run) ... ok
+test_iad04_progression_occupied_cells (test_zsc.IAD04Repair.test_iad04_progression_occupied_cells) ... ok
+test_exhaustive_grid (test_zsc.LocalityLemma.test_exhaustive_grid)
+Both parts of the lemma for every y = i/(15*256*8), i.e. a grid 8 times finer than the ... ok
+test_all_theorem_grade_checks_pass (test_zsc.QuickProbe.test_all_theorem_grade_checks_pass) ... ok
+test_mutation_controls_are_rejected (test_zsc.QuickProbe.test_mutation_controls_are_rejected) ... ok
+test_zero_seed_has_no_seam_on_quick_horizon (test_zsc.QuickProbe.test_zero_seed_has_no_seam_on_quick_horizon) ... ok
+test_J_bounds (test_zsc.Renewal.test_J_bounds) ... ok
+test_sixteen_is_followed_by_J_zeros (test_zsc.Renewal.test_sixteen_is_followed_by_J_zeros) ... ok
+test_law_exponent_values (test_zsc.SavingExponentLaw.test_law_exponent_values) ... ok
+test_shallit_point_is_coherent_on_dyadic_shells (test_zsc.SavingExponentLaw.test_shallit_point_is_coherent_on_dyadic_shells) ... ok
+test_stretch_lemma_is_tight_on_an_antialigned_tail (test_zsc.SavingExponentLaw.test_stretch_lemma_is_tight_on_an_antialigned_tail) ... ok
+test_carries_and_seam_are_not_gauge_invariant (test_zsc.SourceModuli.test_carries_and_seam_are_not_gauge_invariant)
+Audit finding D4: (g_H, 0) and its proper form (A_0, 2) are gauge-equivalent with the ... ok
+test_gauge_changes_seed_and_poles_but_not_the_completion (test_zsc.SourceModuli.test_gauge_changes_seed_and_poles_but_not_the_completion) ... ok
+test_hostile_source_is_coherent_with_zero_seed (test_zsc.SourceModuli.test_hostile_source_is_coherent_with_zero_seed) ... ok
+test_null_relation_by_antiderivative_endpoints (test_zsc.SourceModuli.test_null_relation_by_antiderivative_endpoints) ... ok
+test_pole_counts_along_the_pi_line (test_zsc.SourceModuli.test_pole_counts_along_the_pi_line) ... ok
+test_rank_and_null_vector (test_zsc.SourceModuli.test_rank_and_null_vector) ... ok
+
+----------------------------------------------------------------------
+Ran 72 tests in 10.546s
+
+OK

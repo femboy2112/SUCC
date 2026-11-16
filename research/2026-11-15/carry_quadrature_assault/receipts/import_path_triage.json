@@ -1,0 +1,36 @@
+{
+  "issue": "Inherited subprocess import path; no source change",
+  "failing_test": "test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+  "current_without_pythonpath": {
+    "chunk_id": "03f2af",
+    "wall_time_seconds": 8.1082e-05,
+    "exit_code": 1,
+    "original_token_count": 66,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/scratch/4d7fd3bbcae5/SUCC-carry/scripts/meta_choice_descent_probe.py\", line 11, in <module>\n    from observational_succ.meta_choice_descent import (\nModuleNotFoundError: No module named 'observational_succ'\n"
+  },
+  "parent_without_pythonpath": {
+    "chunk_id": "cbea97",
+    "wall_time_seconds": 2.0386e-05,
+    "exit_code": 1,
+    "original_token_count": 64,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/scratch/4d7fd3bbcae5/SUCC/scripts/meta_choice_descent_probe.py\", line 11, in <module>\n    from observational_succ.meta_choice_descent import (\nModuleNotFoundError: No module named 'observational_succ'\n"
+  },
+  "parent_with_pythonpath": {
+    "chunk_id": "fbf8e0",
+    "wall_time_seconds": 0.191908479,
+    "exit_code": 0,
+    "original_token_count": 484,
+    "output": "test_all_729_simple_labeled_graphs_on_four_vertices (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_all_729_simple_labeled_graphs_on_four_vertices) ... ok\ntest_all_eight_parity_triangles_match_independent_oracle (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_all_eight_parity_triangles_match_independent_oracle) ... ok\ntest_cross_source_and_basis_relabeling_is_forbidden (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_cross_source_and_basis_relabeling_is_forbidden) ... ok\ntest_disconnected_and_empty_domains (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_disconnected_and_empty_domains) ... ok\ntest_even_triangle_has_exactly_two_global_assignments (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_even_triangle_has_exactly_two_global_assignments) ... ok\ntest_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ok\ntest_odd_triangle_local_choices_exist_but_no_global_section (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_odd_triangle_local_choices_exist_but_no_global_section) ... ok\ntest_parallel_conflict_and_self_loop_are_detected (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_parallel_conflict_and_self_loop_are_detected) ... ok\ntest_spoofed_original_identity_is_not_a_physical_certificate (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_spoofed_original_identity_is_not_a_physical_certificate) ... ok\ntest_uniform_oracle_budget_restriction (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_uniform_oracle_budget_restriction) ... ok\ntest_witness_mutations_are_rejected (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_witness_mutations_are_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.145s\n\nOK\n"
+  },
+  "current_with_pythonpath": {
+    "chunk_id": "79cc2a",
+    "wall_time_seconds": 0.18892255,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "changed_probe_or_test": false,
+  "parent_commit": "895c0ae63af7b09548c608a1b0b6f298cea0e6d1",
+  "correction": "PYTHONPATH=. python -m unittest tests.test_eodcs_meta_choice_descent -v",
+  "full_green_rerun_claimed": false
+}

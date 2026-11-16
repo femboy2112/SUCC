@@ -1,0 +1,72 @@
+{
+  "scope": "Independent replay from immutable donor Git blobs; same model, separate implementation for gauge control",
+  "commands": [
+    {
+      "command": "Immutable git-show donor module/test replay in memory",
+      "tests": 220,
+      "failures": 0,
+      "errors": 0,
+      "success": true,
+      "elapsed_seconds": 11.194915549000143,
+      "output": "............................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 220 tests in 11.195s\n\nOK\n"
+    }
+  ],
+  "source_blobs": {
+    "research/2026-11-15/bbp_circle_2adic_defect/probe.py": {
+      "commit": "a991aa8ada68f5fa9d18bbc6fb6aaf2da842b281",
+      "sha256": "9c944561f45ccd8c1ca58b387cd089709a320c970b1b89776e522fb4d30d8842"
+    },
+    "research/2026-11-15/bbp_loop_holonomy/loop_probe.py": {
+      "commit": "9d1a2bf6c3ed8c767003bc78f366269b8b3f48cc",
+      "sha256": "5c2c492b4427f47cccba9ff4bc2ea7ea01f754e5492cc5aec64a87d9a701c9b2"
+    },
+    "research/2026-11-15/bbp_chiral_holonomy/chiral_probe.py": {
+      "commit": "9d1a2bf6c3ed8c767003bc78f366269b8b3f48cc",
+      "sha256": "d0d8a61b397213b0376fcdbbe48914f2e2af4b0f96949655ce61c9eb6c662f85"
+    },
+    "research/2026-11-15/bbp_random_norm_weaving/weaving_probe.py": {
+      "commit": "55236438e6f38dadcb207011ff3bc7086d41fea0",
+      "sha256": "317d8973e8fbbe1606bb424cdcd4c3d07367c0e675c46380d37feb7d2fa6174b"
+    },
+    "research/2026-11-15/bbp_pi_slot_lifting/pi_slot_probe.py": {
+      "commit": "94c7252ac7db3c8b14229544087119bd9cc01933",
+      "sha256": "1440427c64f57024c06f32019907d402d684718dc2d40708518ae09b43ecc602"
+    },
+    "research/2026-11-15/gamma_phase_disintegration/gamma_phase_probe.py": {
+      "commit": "fb3a685e40798417077ba548cda62f10eff0cb41",
+      "sha256": "048ace5d76d067f0c802db5a07d9b634221b538eb105192cb1b3083172b636fd"
+    },
+    "research/2026-11-15/bbp_gamma_mellin_phase_bridge/gamma_phase.py": {
+      "commit": "595c4e8f64b5a3578f343d486eb98c2440bd7ef1",
+      "sha256": "5c4c4e5cc0a245be5200862ea3b1afe27159801b734cfc105565014708d92403"
+    },
+    "research/2026-11-15/bbp_gamma_mellin_phase_bridge/gamma_signed_shell.py": {
+      "commit": "595c4e8f64b5a3578f343d486eb98c2440bd7ef1",
+      "sha256": "ac68a2fe12512bb8b63cc73792b1c900954dcf5bfe37d1958215160197949820"
+    }
+  },
+  "checks": {
+    "integer_coboundary": {
+      "status": "PASS",
+      "prefix_cases": 129,
+      "tail_remainder_cases": 80,
+      "identity": "U_tilde=U+2n\u00b2; prefix difference=2N\u00b2/16^N; finite tail difference=-2n\u00b2+2(n+J)\u00b2/16^J",
+      "infinite_boundary": "2(n+J)\u00b2/16^J -> 0; hence completed real orbit unchanged; no numerical infinite lift"
+    },
+    "integer_winding": {
+      "U1": "47/15",
+      "integer_winding": 3,
+      "full_state_mod16": 1,
+      "fractional_state_mod16": 14,
+      "first_real_digit": 2
+    },
+    "BC0_independent_algebra": {
+      "Q_factorization": true,
+      "eight_roots_polynomial": true,
+      "Q_zero_four_roots": true,
+      "sqrt2_weight_equal_minus16": true,
+      "root_filter_coefficient_cases": 20,
+      "origin_finite_modular_depths": 64
+    }
+  }
+}

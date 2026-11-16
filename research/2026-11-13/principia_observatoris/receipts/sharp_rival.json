@@ -1,0 +1,21 @@
+{
+  "N100000_scaled_error_within_one_percent": {
+    "d1": true,
+    "d2": true,
+    "d3": true,
+    "d4": true
+  },
+  "attaining_companion_recurrences": 32,
+  "corrected_principal_minors": 796,
+  "malformed_indices_rejected": 4,
+  "scope": "finite rational controls only",
+  "singular_source_mutant_rejected": true,
+  "small_exact_uniform_errors": {
+    "N1_d1": "362310761/10769637060",
+    "N2_d2": "5220570284669774786252/46275566132953839929818725"
+  },
+  "source_dimension_cases": 32,
+  "status": "PASS",
+  "sturm_open_interval_root_certificates": 32,
+  "wrong_perturbations_rejected": 96
+}

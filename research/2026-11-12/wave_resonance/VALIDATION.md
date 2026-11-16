@@ -1,0 +1,9 @@
+# Validation — exact scope / historical oracle correction
+
+**Local package:** standard-library Python test_resonance.py: 12 test families PASS after one initial incorrect test expectation. The erroneous oracle assumed nonunit residue class r=0 contains no primes, ignoring the exceptional prime dividing modulus (e.g. 7 mod 7 =0). The oracle was corrected to count the prime divisors of M; no mathematical theorem was repaired by concealing the first red run.
+
+**Independent verification:** independent_audit.py uses trial-division primality, not production prime-sieve helpers. At N=4200, Q=7,M=420, it reconstructed 165 unordered original representations, 50 ordered cube-root rough-semiprime-pair representations, and a genuine-prime-only swapped source with zero target representations. Exact signed original margin +280, mutant -50.
+
+**Exact scans:** C++17 integer NTT modulus 998244353 primitive root 3, size below 2^23 and every convolution coefficient <=X<modulus; no integer wrap. Sixty-four direct integer convolution checks for each horizon. Exploratory X=40,000,120,000,240,000. The X=360,000 holdout preregistered thresholds before execution: positive signed aggregates for each even residue mod 12 in windows [180,000,360,000] and [360,000,540,000], and class-0/class-2 ratio in [1.95,2.10]. Both passed, with ratios 2.0138269427 and 2.0110930087. Extra boundary [540,000,720,000] had 233 NEGATIVE individual even coefficients but positive aggregate, correctly retained as truncated-source negative control, not a counterexample to adaptive z_N.
+
+**Analytic status:** WAVE-03 and WAVE-05 import the classical Siegel–Walfisz/PNT in AP and have paper derivations; neither was Lean formalized or externally refereed. No full SUCC suite or hosted CI claimed for this additive draft. Goldbach, π normality, and RH remain open. Frozen source contracts and main are untouched.

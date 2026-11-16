@@ -1,0 +1,81 @@
+[
+  {
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.050428225000359816,
+    "log": "../baseline_receipts/cheap-gates/0.log",
+    "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.31354079700031434,
+    "log": "../baseline_receipts/cheap-gates/1.log",
+    "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 5.445056335998743,
+    "log": "../baseline_receipts/cheap-gates/2.log",
+    "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/build_math_memory.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 1.204978983001638,
+    "log": "../baseline_receipts/cheap-gates/3.log",
+    "sha256": "b57204f32ba83e4329b2b398860d7986236c5add7a603217197f2d661192a098"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/verify_math_memory_graph.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.05063545200027875,
+    "log": "../baseline_receipts/cheap-gates/4.log",
+    "sha256": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/main_xxv_manifest.py",
+      "--check",
+      "docs/SUCC_MAIN_XXV_INTEGRATION_MANIFEST_2026-11-12.json",
+      "--integration",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "seconds": 0.7079493119999825,
+    "log": "../baseline_receipts/cheap-gates/5.log",
+    "sha256": "e99ea3c7010b87cb7169fdc250ca454dd43500e770fd88a615a416d61021482d"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/main_xxiv_manifest.py",
+      "--check",
+      "docs/SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json",
+      "--integration",
+      "HEAD"
+    ],
+    "exit_code": 1,
+    "seconds": 4.425781832000212,
+    "log": "../baseline_receipts/cheap-gates/6.log",
+    "sha256": "4c7737b960137ca175d600ec1499c1c03b67556c354f36fdd3f9251453a01a91"
+  }
+]

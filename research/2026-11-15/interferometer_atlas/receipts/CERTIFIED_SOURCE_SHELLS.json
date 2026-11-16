@@ -1,0 +1,65 @@
+{
+  "claim": "CERTIFIED-FINITE original four-pole BBP U0=0 only",
+  "pi_normality": "OPEN",
+  "RH": "OPEN",
+  "original_source": "four poles + exact rational BBP tail, Machin & Taylor outward bounds",
+  "all_frequency_scanning_source": "Oily2 nonzero conditional grade, not an authenticated physical BBP oscillator",
+  "certified_shells": [
+    {
+      "B": 4,
+      "Haar_exact_depth": 8,
+      "Haar_lower_outward": "0.2240234375",
+      "Haar_upper_outward": "0.2279296875",
+      "Haar_unseen_bound": "1/256",
+      "Oily_harmonics": 16,
+      "Oily_lower_outward": "0.1265643593",
+      "Oily_upper_outward": "0.1996743040",
+      "Oily_harmonic_tail": "19/196608",
+      "Oily_source_rational_to_pi_error": "7/192",
+      "Oily_Taylor_Machin_error_lt_1e-12": true,
+      "strict_global_conclusion": "UNVERIFIED"
+    },
+    {
+      "B": 8,
+      "Haar_exact_depth": 8,
+      "Haar_lower_outward": "0.1437825520",
+      "Haar_upper_outward": "0.1476888021",
+      "Haar_unseen_bound": "1/256",
+      "Oily_harmonics": 16,
+      "Oily_lower_outward": "0.0995382771",
+      "Oily_upper_outward": "0.1179607219",
+      "Oily_harmonic_tail": "19/196608",
+      "Oily_source_rational_to_pi_error": "7/768",
+      "Oily_Taylor_Machin_error_lt_1e-12": true,
+      "strict_global_conclusion": "UNVERIFIED"
+    },
+    {
+      "B": 16,
+      "Haar_exact_depth": 8,
+      "Haar_lower_outward": "0.0693522135",
+      "Haar_upper_outward": "0.0732584636",
+      "Haar_unseen_bound": "1/256",
+      "Oily_harmonics": 16,
+      "Oily_lower_outward": "0.0957956977",
+      "Oily_upper_outward": "0.1005462675",
+      "Oily_harmonic_tail": "19/196608",
+      "Oily_source_rational_to_pi_error": "7/3072",
+      "Oily_Taylor_Machin_error_lt_1e-12": true,
+      "strict_global_conclusion": "UNVERIFIED"
+    },
+    {
+      "B": 32,
+      "Haar_exact_depth": 8,
+      "Haar_lower_outward": "0.0311279296",
+      "Haar_upper_outward": "0.0350341797",
+      "Haar_unseen_bound": "1/256",
+      "Oily_harmonics": 16,
+      "Oily_lower_outward": "0.0279846476",
+      "Oily_upper_outward": "0.0293172486",
+      "Oily_harmonic_tail": "19/196608",
+      "Oily_source_rational_to_pi_error": "7/12288",
+      "Oily_Taylor_Machin_error_lt_1e-12": true,
+      "strict_global_conclusion": "UNVERIFIED"
+    }
+  ]
+}

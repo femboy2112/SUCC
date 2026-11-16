@@ -1,0 +1,140 @@
+{
+  "claim_boundary": "No original-pi all-large-shell lower bound, R0 or normality established.",
+  "date": "2026-11-15",
+  "finite_four_time_complex_smoke": [
+    {
+      "B": 8,
+      "interval_status": "source T intervals exact; transcendental complex arithmetic float NOT certified",
+      "k": 1,
+      "local_source_tail_bound": "original r(n)/15 positive Green interval",
+      "mean_normalized_two_path_energy": 0.99755847035277,
+      "mean_signed_imag": -0.03611120163139,
+      "mean_signed_real": -0.00244152964723,
+      "q": 16
+    },
+    {
+      "B": 16,
+      "interval_status": "source T intervals exact; transcendental complex arithmetic float NOT certified",
+      "k": 1,
+      "local_source_tail_bound": "original r(n)/15 positive Green interval",
+      "mean_normalized_two_path_energy": 0.79337997237374,
+      "mean_signed_imag": 0.09389946527211,
+      "mean_signed_real": -0.20662002762626,
+      "q": 16
+    },
+    {
+      "B": 32,
+      "interval_status": "source T intervals exact; transcendental complex arithmetic float NOT certified",
+      "k": 1,
+      "local_source_tail_bound": "original r(n)/15 positive Green interval",
+      "mean_normalized_two_path_energy": 1.05057258395034,
+      "mean_signed_imag": 0.02358926936691,
+      "mean_signed_real": 0.05057258395034,
+      "q": 16
+    }
+  ],
+  "mutated_jet16": [
+    11,
+    15,
+    11,
+    15,
+    11,
+    15,
+    11,
+    15
+  ],
+  "negative_controls": {
+    "coherent_same_forcing_wrong_real_seed": "z_n=0, v_(n+2)=-v_n and two-path output zero",
+    "isometric_zero_pointed_coboundary_mutant": "g(n)=2n\u00b2; J\u0303_n=J_n+4n mod16; source commutator +1",
+    "rational_period_q": "x=1/(16^16-1), z_(n+16)=z_n and four-time output zero"
+  },
+  "original_jet16": [
+    11,
+    11,
+    3,
+    3,
+    11,
+    11,
+    3,
+    3
+  ],
+  "original_jet32": [
+    11,
+    27,
+    3,
+    3,
+    27,
+    11,
+    19,
+    19
+  ],
+  "original_source_qperiod_samples": [
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 4,
+      "source_jet_mod16": 11,
+      "source_jet_mod32": 11,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 24
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 5,
+      "source_jet_mod16": 11,
+      "source_jet_mod32": 27,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 8
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 6,
+      "source_jet_mod16": 3,
+      "source_jet_mod32": 3,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 24
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 7,
+      "source_jet_mod16": 3,
+      "source_jet_mod32": 3,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 8
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 8,
+      "source_jet_mod16": 11,
+      "source_jet_mod32": 27,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 24
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 9,
+      "source_jet_mod16": 11,
+      "source_jet_mod32": 11,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 8
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 10,
+      "source_jet_mod16": 3,
+      "source_jet_mod32": 19,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 24
+    },
+    {
+      "mutated_two_step_ratio_mod16": 0,
+      "n": 11,
+      "source_jet_mod16": 3,
+      "source_jet_mod32": 19,
+      "two_step_ratio_mod16": 8,
+      "two_step_ratio_mod32": 8
+    }
+  ],
+  "source": "SUCC original rational 4-pole U0=0; unreduced Fraction arithmetic",
+  "source_core_git_blob": "34cb7b64f6975e05586ec220a4655961a8e7b636",
+  "status": "CERTIFIED FINITE modular arithmetic; COMPLEX SMOKE ONLY for real circle"
+}

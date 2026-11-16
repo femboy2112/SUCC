@@ -1,0 +1,49 @@
+{
+  "exact_checks": 9188,
+  "gamma_grid_cases": {
+    "5": 81,
+    "13": 529
+  },
+  "groups": {
+    "bell_overlap": 610,
+    "calibration": 5,
+    "environment_overlap": 24,
+    "eraser": 7,
+    "global_phase": 1,
+    "history_nonidentifiability": 4,
+    "holonomy_without_decoherence": 1,
+    "mechanism_nonidentifiability": 1,
+    "no_signalling": 132,
+    "phase_calibration": 48,
+    "phase_vs_leakage": 6,
+    "postselection_counterexample": 3,
+    "purity_and_marginals": 1830,
+    "quadrature_reconstruction": 4880,
+    "radial_projection_contraction": 120,
+    "robust_full_bound": 375,
+    "robust_guard_algebra": 333,
+    "robust_noisy_quadratures": 750,
+    "robust_pure_projection": 48,
+    "robust_trace_distance_calibration": 1,
+    "robust_zero_sector_boundary": 1,
+    "sector_guard": 6,
+    "shared_invalid_relation": 2
+  },
+  "key_counterexample": {
+    "both_bell_overlap": "1/2",
+    "mixed_XY": "0",
+    "mixed_gamma": "0",
+    "mixed_purity": "1/2",
+    "pure_XY": "-1",
+    "pure_gamma": "i",
+    "pure_purity": "1",
+    "same_local_marginals": "I/2"
+  },
+  "postselection": {
+    "conditional_output": "Phi+",
+    "dephased_input_success_probability": "1/2"
+  },
+  "scope": "Exact finite matrix controls, not a device run, history reconstruction, arithmetic theorem or objective-collapse experiment.",
+  "source_dependency": "Self-contained standard-library Gaussian-rational and tensor implementation; companion universal proofs are separate from the finite enumeration.",
+  "status": "PASS"
+}

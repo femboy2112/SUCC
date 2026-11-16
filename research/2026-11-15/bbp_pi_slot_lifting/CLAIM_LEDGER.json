@@ -1,0 +1,61 @@
+{
+  "source": "Original zero-seeded four-pole BBP and parent #649 random coin",
+  "target": "pi base-16 normality \u2014 OPEN",
+  "claims": [
+    {
+      "id": "PS-01",
+      "status": "PROVED-PAPER",
+      "claim": "Original U_n and T_n equal two moments of a single source coin; Bernoulli Green Hankel Gram T_(n+m)",
+      "falsifier": "independent-time coin destroys covariance"
+    },
+    {
+      "id": "PS-02",
+      "status": "PROVED-PAPER",
+      "claim": "Multiplication operator L=tau^8 and finite resolvent telescope recover entire original source",
+      "falsifier": "mutate source polynomial Q or four-pole coefficients"
+    },
+    {
+      "id": "PS-03",
+      "status": "PROVED-PAPER",
+      "claim": "Completely monotone Green tail and strictly positive signed finite differences; Green chiral Gamma energies",
+      "falsifier": "use source with signed/nonpositive conditional density"
+    },
+    {
+      "id": "PS-04",
+      "status": "REFUTED",
+      "claim": "Illegal inference E[e(h16^n C)] = e(h16^n E C) for Bernoulli source coin",
+      "falsifier": "C integer yields left side 1 for every integer h,n"
+    },
+    {
+      "id": "PS-05",
+      "status": "PROVED-PAPER",
+      "claim": "Exact marked-Poisson complex phase lifting with source-specific exact squared error",
+      "falsifier": "forget shared marks, misuse unit modulus or omit intensity compensator"
+    },
+    {
+      "id": "PS-06",
+      "status": "PROVED-PAPER",
+      "claim": "Original \u03c0 four-time chiral phase equals rational finite-source phase times positive Green integral with uniform-in-q O(n^-3) defect",
+      "falsifier": "mutate seed or use reduced integer winding before 2-adic calculation"
+    },
+    {
+      "id": "PS-07",
+      "status": "REFUTED",
+      "claim": "Previous #648 prose that polynomial integer coboundary g(n)=2n\u00b2 changes pi/16 target",
+      "falsifier": "exact telescoping shows source sum unchanged and Green tail shifts by -g(n)"
+    },
+    {
+      "id": "PS-08",
+      "status": "OPEN",
+      "claim": "Any unproved original-source signed all-large-shell margin or pi base-16 normality",
+      "falsifier": "genuine all-B signed source bound or explicit counterexample required"
+    },
+    {
+      "id": "PS-09",
+      "status": "PROVED-PAPER",
+      "claim": "Single harmonic-randomized two-replica Poisson instrument unbiased for complete Oily normality energy, with finite mean source cost 64 lambda0 /3 and uniform second moment",
+      "falsifier": "use one noisy norm with self-bias, same row replicas, or intensity lambda not scaling as h^2"
+    }
+  ],
+  "validation_scope": "Isolated focused exact tests, independent SymPy/mpmath finite diagnostics; not Lean or full SUCC suite"
+}

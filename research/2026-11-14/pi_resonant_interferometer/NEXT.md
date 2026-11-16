@@ -1,0 +1,9 @@
+# Next arithmetic detector gate — do not confuse detection confidence with truth
+
+1. Preserve literal pointed BBP and the *uncompensated* same-harmonic lag phase in the exact original-source shell. Never replace it by the seed-blind innovation-only factor or a random seed average.
+2. At `ell≈log_16(64B²)` the native source twist is order-one under HD2; seek a new all-B, source-selected **signed** inequality controlling an entire Fejér/Gamma-weighted collection of lags, not a single positive source spectrum or a fitted finite event sample. An independently proved original-source bound should imply R0 or a separately specified Weyl rung. If it merely restates a signed sum, classify it as equivalence, not progress.
+3. Run chronological Haar CDF-overlap and deep zero-child probes on authenticated finite π phase intervals. Compare a nonnormal rational period, positive-zero-seeded other source and the source-blind compensated-lag negative controls. The wrong-seed counterexample is relevant only to claims that are *seed-blind*, not to source-selected theorems.
+4. Test adaptively sampled indices with randomized sampling law preregistered and bounded away from zero. Inverse-propensity correct all selection effects. Record costs as CPU/instrument resource units, not invented joules.
+5. If physically modeling a quantum source, authenticate the phase oracle, separately measure complementary quadratures, distinguish co-moving gauge from one-sided dephasing, and check the identical-zero-phase dephasing control. Synthetic qubit mathematics is not quantum evidence about π.
+6. Construct source-specific uniform arithmetic estimates that survive infinite-shell limits. A finite probability near one for seeing a click is an *observation likelihood*, not a probability that π normality is true.
+7. Formalize HD1 and HD2 in Lean only with actual kernel receipts; do not infer Lean from Python or SymPy. Native full-root tests/CI are required before any merge.

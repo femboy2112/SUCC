@@ -1,0 +1,29 @@
+{
+  "exploration_shells": [
+    4,
+    8
+  ],
+  "fresh_holdout_shells": [
+    13,
+    29
+  ],
+  "reproducible_prng_seed": 20261115,
+  "law": "K=1+U+V, U,V uniform integers in 0..M-1; M=ceil(2/d_B)",
+  "population_eta_certificate": "<=1/4",
+  "relative_error": "1/2",
+  "failure_budget": "1/64",
+  "controls": [
+    "authentic original zero seed",
+    "locked unit phase",
+    "exact zero-mean roots-of-unity vector",
+    "same-forcing counterseed using enclosed tail midpoint"
+  ],
+  "expected_discriminators": [
+    "frame conditioning survives all carrier choices",
+    "raw detector energy scales near1/B even for locked carrier",
+    "oriented residual rejects locked carrier",
+    "labelled complex inverse recovers original coherent mean",
+    "insufficient variance fails adjacent-column resolution"
+  ],
+  "scope": "Frozen plan before root numerical probe. Pseudorandom finite diagnostics are not physical independence or interval certificates."
+}

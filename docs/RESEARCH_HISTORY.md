@@ -1,5 +1,15 @@
 # Main XXIV — consolidated research navigation
 
+## Unmerged research: Leah–Gamma twist, 2026-11-13
+
+The [Leah–Gamma dossier](../research/2026-11-13/leah_gamma_twist/README.md)
+reconstructs the source/observer genealogy, sharpens the original-zero logarithmic
+Fourier-loss coefficient, gives stable target moment filters, and records explicit
+neutral-phase and source-isometry countermodels. Its proofs, failed controls,
+finite source certificates and validation scopes are retained together. This is
+research after Main XXV, not an integration of the open donor PRs. R0 and pi
+normality remain OPEN; the canonical frontier and imported provenance are unchanged.
+
 The maintained mathematical story is in the [README](../README.md), [frontier](PI_NORMALITY_FRONTIER.md) and [handoff](MAIN_XXIV_HANDOFF.md). The [manifest](SUCC_MAIN_XXIV_INTEGRATION_MANIFEST_2026-11-11.json) preserves exact origins and destinations; [claim corrections](CLAIM_SUPPLEMENT_MAIN_XXIV.md) govern historical endpoint/API mistakes.
 
 | Front | Dossiers | Distinction retained |

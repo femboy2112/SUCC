@@ -1,0 +1,43 @@
+{
+  "nonconvex_prior": {
+    "adaptive_target_fibers": 7,
+    "adaptive_worst_error_squared": "0",
+    "best_fixed_worst_error_squared": "1/16",
+    "fixed_schedules": {
+      "a": "1/4",
+      "aa": "1/4",
+      "ab": "1/16",
+      "ac": "1/4",
+      "b": "1/2",
+      "ba": "1/16",
+      "bb": "1/2",
+      "bc": "1/4",
+      "c": "1/4",
+      "ca": "1/4",
+      "cb": "1/4",
+      "cc": "1/4",
+      "empty": "1/2"
+    },
+    "prior_size": 7
+  },
+  "nonlinear_actions": {
+    "adaptive_error": "0",
+    "each_fixed_action_worst_error_at_least": "4/5",
+    "rational_unit_disk_controls": 4,
+    "removed_assumption": "homogeneous linear actions"
+  },
+  "scope": "Exact finite controls; universal adaptive theorem has a separate proof",
+  "state_dependent_costs": {
+    "adaptive_error": "0",
+    "best_uniformly_feasible_fixed_error": "1",
+    "budget": 1,
+    "removed_assumption": "state-independent action costs"
+  },
+  "unit_ball_randomization": {
+    "deterministic_worst_squared_error": "1",
+    "objective_changed_for_randomization": true,
+    "randomized_worst_expected_squared_error": "1/2",
+    "rational_hidden_points": 25,
+    "zero_path_choices": 3
+  }
+}

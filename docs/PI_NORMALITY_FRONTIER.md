@@ -1,6 +1,6 @@
-# π base-16 normality — Main XXV frontier
+# π base-16 normality — Main XXVI frontier
 
-Maintained 2026-11-12. **Source-selected signed cancellation, original-zero
+Maintained 2026-11-16. **Source-selected signed cancellation, original-zero
 hexadecimal parity balance and parity words, π base-16 normality, completed Weil
 positivity, and RH remain OPEN.** Main XXIV consolidates the source, identity and
 observer machinery; it supplies no missing statistical estimate. Main XXV adds the
@@ -17,6 +17,38 @@ byte for byte. The Main XXIV
 [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXIV.md) record exact integration and
 validation authority. The [Main XXIII entrypoint](archive/PI_NORMALITY_FRONTIER_MAIN_XXIII_2026-11-11.md)
 is preserved byte for byte, including earlier sufficient criteria and references.
+
+## Main XXVI integration boundary
+
+Main XXVI preserves the source and every open asymptotic quantifier below. It reconciles
+54 active research endpoints through their ancestry, corrects the arithmetic-gauge claim,
+and connects carry readout to the complex Gamma/Green observer with an explicit error.
+See the [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXVI.md),
+[Constructive Interference Atlas](MAIN_XXVI_CONSTRUCTIVE_INTERFERENCE_ATLAS.md),
+[source/phase interface](MAIN_XXVI_SOURCE_PHASE_INTERFACE.md),
+[observer transport](MAIN_XXVI_OBSERVER_TRANSPORT.md),
+[audit](SUCC_MAIN_XXVI_INTEGRATION_AUDIT_2026-11-16.md), and
+[handoff](MAIN_XXVI_HANDOFF.md). The previous [Main XXV frontier](archive/PI_NORMALITY_FRONTIER_MAIN_XXV_2026-11-16.md)
+is preserved verbatim.
+
+The strongest new composite interfaces are quantitative observation transports, not
+source-selected cancellation. For fixed real Gamma labels with nonzero reference amplitude
+`a`, the normalized carry/Gamma readout recovers selected carry density with error at most
+`7 sqrt(2)/(8 |a| B)`. This does not establish a positive density. The carry-tail transfer
+from #652 has error `O(1/log B)` and its failed-carry endpoint set has Hausdorff dimension
+`7/8`; neither determines membership of the specific endpoint `pi/16`.
+
+The **smallest open rung remains R0**: there exist `eta>0,B0` such that
+`Re W_B(1)<=1-eta` for every integer `B>=B0`. A sufficient focused offensive is positive
+lower density of `floor(U_n) mod4 in {1,2}` on every late shell, derived from the original
+signed rational/cofactor history. Fixed-label Gamma transport is an equivalent instrument
+for that statistic. The stronger clocked three-count budget and entropy thresholds retain
+their explicit unpaid hypotheses. No invented independent prime clocks are substituted.
+
+A subexponential coboundary with `g(0)=0` gives `U'_n=U_n+g(n)` and `T'_n=T_n-g(n)`.
+It preserves the completed real orbit but can change 2-adic addresses and integer carries.
+In particular `g(n)=2n^2` changes the source passport, not pi. The fixed original positive
+tail and four-pole hypotheses cannot be silently transferred to that mutant.
 
 ## 1. Source → exact carrier → authenticated origin
 
@@ -388,3 +420,74 @@ round); the null source and the hostile source of ZSC-06.
 Resume with the [Main XXV handoff](MAIN_XXV_HANDOFF.md) and, for the full signed theorem,
 the [Main XXIV handoff](MAIN_XXIV_HANDOFF.md): prove a genuinely source-derived signed
 bound with all integer-epoch and all-mode quantifiers.
+
+## 2026-11-15 follow-up: carry quadrature and calibrated source excitation
+
+The [carry-quadrature assault](../research/2026-11-15/carry_quadrature_assault/README.md)
+proves a finite source echo with a uniform nonzero response at logarithmic
+delay, and a bounded reference decoder for the authentic fourth-root carry
+phase. It also identifies the exact joint winding-residue/ending-sign cells
+whose positive lower shell mass would imply R0. The inherited logarithmic
+anti-lock rate is not improved. The original carry-density gate, R0, and
+normality remain **OPEN**.
+
+New controls preserve the global analytic zero pin and, for any chosen fixed
+precision, all authentic source-clock bits, while changing the finite source
+law and violating the carry gate. Thus the next signed estimate must retain
+the literal four-pole arithmetic and the zero-selected real cofactor together.
+The dossier includes an exact 32,768-index source probe and records the complete
+carry-Haar normality equivalence separately from this single sufficient gate.
+
+## 2026-11-15 follow-up: floor volumes and a sharp maximum-law certificate
+
+The [floor-volume weaving dossier](../research/2026-11-15/floor_volume_weaving/README.md)
+proves the exact finite inequality `d >= P(K=1)+P(J=K=0)-P(J<2,K<2)` for
+the selected difference-residue gate. Uniform marginals and the square-root
+maximum law imply `d>=1/16`, sharply even for continuous joint densities.
+The literal source coordinates are `J_n=n mod4` and `K_n=[{U_n}]_4`, with
+dyadic rational reduction. An eventual positive lower bound on those three
+empirical masses would prove the current anti-lock target; it remains open.
+
+The dossier also connects the slope sign `11,11,3,3` to Walsh/quadratic/Clifford
+forms, gives a calibrated ordered Haar rotation model, and derives the actual
+carry mask's `sech`/Gamma/Dirichlet-beta transform. These exact constructions
+do not identify an auxiliary sampling law with the authentic BBP trajectory.
+Explicit controls retain the entire maximum law while isolating the cofactor
+marginal needed for the positive bound. No new asymptotic pi estimate is claimed.
+
+## 2026-11-15--16 follow-up: three-count Hail Mary and exact exceptional set
+
+The [three-count assault](../research/2026-11-15/three_count_hail_mary/README.md)
+collapses the proposed budget to the signed clock/carry cells
+`+(2,1)+(3,2)-(1,1)`. A periodic same-forcing changed-seed control has uniform
+carry residues and density 1/2 but budget -1/4. Eight shifted/reflected
+certificates sum exactly to the selected gate, removing an unnecessary fixed
+clock orientation without proving the source density.
+
+For the selected gate and these masks, raw-to-completed floor transfer now
+has a deterministic error `ceil(B/(1+floor(log_16(64B^2))))/B` on every
+integer shell. The bound uses matching values at residues 0 and 3, not rarity
+of all raw borrows. Sparse-marker endpoints show its logarithmic order and
+leading constant are sharp even for the exact four-pole tail.
+
+The failed-gate endpoint set `E={beta:liminf_B d_B(beta)=0}` has exact
+Hausdorff dimension 7/8. Its raw and completed definitions agree by that
+transfer. Dense eventual-Thue--Morse controls in E have irrationality
+exponent 2 and restricted exponent 0, so those approximation properties
+and finite prefix correctness do not alone exclude the canonical point.
+
+An explicit rational seed can prescribe any finite carry word while
+preserving the literal forcing and arbitrary fixed dyadic depth, with
+height at most `2^(L+4N+8)+1`. This refutes a seed-uniform bounded-potential
+route, not an estimate using exactly zero seed. Conditional entropy
+thresholds are sharp: the fixed budget costs more than 3.9794 bits per
+hex digit; the selected event only needs a fixed all-limit margin above
+3 bits, or separately above 1 bit per mod-four residue. No such original
+source entropy premise is proved.
+
+A frozen certified extension through 131072 passed all 32768 fresh integer
+shells 32769<=B<=65536 at the inherited one-sided tolerance 1/32. This is
+finite evidence only. The original three-count budget, selected carry
+density, R0, and pi normality remain **OPEN**. The next task is a
+source-specific exclusion of `pi/16` from E, or another genuine all-shell
+signed estimate; the dimension statement itself does not perform it.

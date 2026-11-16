@@ -1,0 +1,66 @@
+{
+  "action_quotient": {
+    "congruences": 225,
+    "invented_path_mutation_rejected": true,
+    "two_action_three_state_models": 729
+  },
+  "native_differential": {
+    "all_ternary_3x3_single_action_matrices": 19683,
+    "malformed_contracts_rejected": 9,
+    "predictive_completion_cases": 400,
+    "source_hankel_cross_formula_cases": 30,
+    "switched_multi_preparation_cases": 400,
+    "two_realization_comparisons": 150
+  },
+  "optimal_quotient_defect": {
+    "candidate_model_comparisons": 9720,
+    "nonorthogonal_section_mutation_rejected": true,
+    "source_map_action_pairs": 1944
+  },
+  "quantum_instruments": {
+    "depth": 4,
+    "initial_density_matrices": 13,
+    "subnormalized_branch_comparisons": 10140,
+    "sum_only_invariance_mutation_rejected": true
+  },
+  "scope": "Exact finite checks; no formal assistant, physical experiment, or novelty certification",
+  "word_defect": {
+    "max_length": 6,
+    "ordered_word_cases": 250
+  },
+  "word_horizon": {
+    "matrix_pairs": 6561,
+    "output_cases": 19683,
+    "sharp_nilpotent_chains": [
+      {
+        "dimension": 2,
+        "first_nonzero_length": 1
+      },
+      {
+        "dimension": 3,
+        "first_nonzero_length": 2
+      },
+      {
+        "dimension": 4,
+        "first_nonzero_length": 3
+      },
+      {
+        "dimension": 5,
+        "first_nonzero_length": 4
+      },
+      {
+        "dimension": 6,
+        "first_nonzero_length": 5
+      },
+      {
+        "dimension": 7,
+        "first_nonzero_length": 6
+      },
+      {
+        "dimension": 8,
+        "first_nonzero_length": 7
+      }
+    ],
+    "zero_prefix_closure_cases": 729
+  }
+}

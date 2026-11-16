@@ -1,0 +1,313 @@
+{
+  "anchored_contraction": {
+    "A2_A3_and_A3_A2_equal_A6_cases": 500,
+    "basis_cases_checked": 12000,
+    "d_range": [
+      2,
+      7
+    ],
+    "definition": "A_d=V_d^* S^(d-1)",
+    "label_range": [
+      1,
+      500
+    ],
+    "norm_error_one_witnesses": [
+      {
+        "E11_output": 0,
+        "d": 2,
+        "input": 3,
+        "output": 2,
+        "power": 1
+      },
+      {
+        "E11_output": 0,
+        "d": 2,
+        "input": 5,
+        "output": 2,
+        "power": 2
+      },
+      {
+        "E11_output": 0,
+        "d": 2,
+        "input": 9,
+        "output": 2,
+        "power": 3
+      },
+      {
+        "E11_output": 0,
+        "d": 2,
+        "input": 17,
+        "output": 2,
+        "power": 4
+      },
+      {
+        "E11_output": 0,
+        "d": 3,
+        "input": 4,
+        "output": 2,
+        "power": 1
+      },
+      {
+        "E11_output": 0,
+        "d": 3,
+        "input": 10,
+        "output": 2,
+        "power": 2
+      },
+      {
+        "E11_output": 0,
+        "d": 3,
+        "input": 28,
+        "output": 2,
+        "power": 3
+      },
+      {
+        "E11_output": 0,
+        "d": 3,
+        "input": 82,
+        "output": 2,
+        "power": 4
+      },
+      {
+        "E11_output": 0,
+        "d": 4,
+        "input": 5,
+        "output": 2,
+        "power": 1
+      },
+      {
+        "E11_output": 0,
+        "d": 4,
+        "input": 17,
+        "output": 2,
+        "power": 2
+      },
+      {
+        "E11_output": 0,
+        "d": 4,
+        "input": 65,
+        "output": 2,
+        "power": 3
+      },
+      {
+        "E11_output": 0,
+        "d": 4,
+        "input": 257,
+        "output": 2,
+        "power": 4
+      },
+      {
+        "E11_output": 0,
+        "d": 5,
+        "input": 6,
+        "output": 2,
+        "power": 1
+      },
+      {
+        "E11_output": 0,
+        "d": 5,
+        "input": 26,
+        "output": 2,
+        "power": 2
+      },
+      {
+        "E11_output": 0,
+        "d": 5,
+        "input": 126,
+        "output": 2,
+        "power": 3
+      },
+      {
+        "E11_output": 0,
+        "d": 5,
+        "input": 626,
+        "output": 2,
+        "power": 4
+      },
+      {
+        "E11_output": 0,
+        "d": 6,
+        "input": 7,
+        "output": 2,
+        "power": 1
+      },
+      {
+        "E11_output": 0,
+        "d": 6,
+        "input": 37,
+        "output": 2,
+        "power": 2
+      },
+      {
+        "E11_output": 0,
+        "d": 6,
+        "input": 217,
+        "output": 2,
+        "power": 3
+      },
+      {
+        "E11_output": 0,
+        "d": 6,
+        "input": 1297,
+        "output": 2,
+        "power": 4
+      },
+      {
+        "E11_output": 0,
+        "d": 7,
+        "input": 8,
+        "output": 2,
+        "power": 1
+      },
+      {
+        "E11_output": 0,
+        "d": 7,
+        "input": 50,
+        "output": 2,
+        "power": 2
+      },
+      {
+        "E11_output": 0,
+        "d": 7,
+        "input": 344,
+        "output": 2,
+        "power": 3
+      },
+      {
+        "E11_output": 0,
+        "d": 7,
+        "input": 2402,
+        "output": 2,
+        "power": 4
+      }
+    ],
+    "power_range": [
+      1,
+      4
+    ],
+    "scope": "Finite exact word controls; global fixed-space and strong-limit proofs are separate.",
+    "unit_fixed_for_every_checked_d_and_power": true
+  },
+  "counterfeit": {
+    "A2f_e1": 1,
+    "A3f_e1": 1,
+    "B2_B3_adjoint_input": 3,
+    "B2_B3_adjoint_output": 19,
+    "B6_adjoint_output": 13,
+    "S_squared_V2f_output": 10,
+    "V2f_S_output": 14,
+    "braid_input": 4,
+    "conclusion": "Local triangle closure alone does not certify the ordinary source braid.",
+    "fixed_local_labels": [
+      1,
+      2,
+      3
+    ],
+    "mixed_definition": "B_d=(V_d^f)^* S^(d-1); (B2 B3)^*=B3^* B2^*",
+    "permutation": "(5 7)",
+    "transported_multiplier": "V_d^f=U_f V_d U_f^*"
+  },
+  "prime_graph": {
+    "all_edges_flip_Omega_parity": true,
+    "edges_checked": 587,
+    "maximum_label": 500,
+    "mixed_triangle_edges": [
+      "S",
+      "S",
+      "V_3^*"
+    ],
+    "mixed_triangle_vertices": [
+      1,
+      2,
+      3,
+      1
+    ],
+    "prime_multipliers": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "scope": "A triangle uses additive edges; the prime-multiplication graph is bipartite.",
+    "square_Omega_parities": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "square_prime_labels": [
+      2,
+      3,
+      2,
+      3
+    ],
+    "square_vertices": [
+      1,
+      2,
+      6,
+      3,
+      1
+    ]
+  },
+  "schema": "succ-triadic-transport-probe-v1",
+  "status": "PASS: finite exact controls",
+  "triangle": {
+    "boundary_and_vertex_conventions_checked": true,
+    "composed_chords_checked": 16,
+    "edge_gram_determinant": "abs(holonomy - 1)**2",
+    "examples": [
+      {
+        "determinant": "0",
+        "holonomy": "1",
+        "kernel_dimension": 1,
+        "phases": [
+          "1",
+          "1",
+          "1"
+        ],
+        "rank": 2
+      },
+      {
+        "determinant": "-2",
+        "holonomy": "-1",
+        "kernel_dimension": 0,
+        "phases": [
+          "1",
+          "1",
+          "-1"
+        ],
+        "rank": 3
+      },
+      {
+        "determinant": "-1 + I",
+        "holonomy": "I",
+        "kernel_dimension": 0,
+        "phases": [
+          "I",
+          "1",
+          "1"
+        ],
+        "rank": 3
+      },
+      {
+        "determinant": "0",
+        "holonomy": "1",
+        "kernel_dimension": 1,
+        "phases": [
+          "-1",
+          "I",
+          "I"
+        ],
+        "rank": 2
+      }
+    ],
+    "flat_banks": 16,
+    "nonflat_banks": 48,
+    "orientation": "1->2->3->1; rows u*x1-x2, v*x2-x3, w*x3-x1",
+    "phase_banks_checked": 64,
+    "pure_gauge_banks_checked": 64,
+    "symbolic_determinant": "u*v*w - 1",
+    "symbolic_gauge_covariance": true
+  }
+}

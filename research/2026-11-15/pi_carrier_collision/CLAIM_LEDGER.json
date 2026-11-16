@@ -1,0 +1,131 @@
+{
+  "parent": "85a14bb68aeae31d3a2796350529fda9a5c39072",
+  "theorem_sha256": "03938f2d19125d214ad2e517982365d4f73f33fe8a264a6ef3278741d3021e1b",
+  "status_scope": "DISCLOSED means a written proof within explicit hypotheses, not a proof-assistant certificate. UNVERIFIED marks an unpaid proof or realization obligation, not a negative truth verdict.",
+  "claims": [
+    {
+      "id": "PC-01",
+      "status": "DISCLOSED",
+      "claim": "Matched two-tap identity retains the target phase for the literal affine BBP source.",
+      "domain": "All exact source states, integer h and tap K.",
+      "dependency_boundary": "Inherited polynomial-division echo algebra; no new general identity."
+    },
+    {
+      "id": "PC-02",
+      "status": "DISCLOSED",
+      "claim": "The literal source has the certified finite spacing and cubic inverse-gap scale.",
+      "domain": "B>=2, original four-pole source; exact d_B as written.",
+      "dependency_boundary": "B^2/B^3 source hierarchy is inherited; finite constants specialize it."
+    },
+    {
+      "id": "PC-03",
+      "status": "DISCLOSED",
+      "claim": "Declared Gamma--Poisson and triangular laws give uniformly stable population frames.",
+      "domain": "External recorded integer probes; stated source gap and eta<1.",
+      "dependency_boundary": "The law is not identified with intrinsic Oily or quantum-source randomness."
+    },
+    {
+      "id": "PC-04",
+      "status": "DISCLOSED",
+      "claim": "Independent rows give a stable finite frame with stated failure bound; summable failure budgets imply eventual faithfulness almost surely.",
+      "domain": "Complex readout access; independent rows within each design; no cross-scale independence needed.",
+      "dependency_boundary": "Imports classical matrix Chernoff; no original Weyl-mean cancellation follows."
+    },
+    {
+      "id": "PC-05",
+      "status": "DISCLOSED",
+      "claim": "Full-vector linear frame stability requires frequency variance of order at least B^6.",
+      "domain": "Finite-variance tap law and all coefficient vectors; closest-column argument.",
+      "dependency_boundary": "Does not lower-bound every nonlinear, special-source or mean-only algorithm."
+    },
+    {
+      "id": "PC-06",
+      "status": "DISCLOSED",
+      "claim": "Complex labelled recovery, temporal Haar transport and the oriented residual comparison are stable with the stated normalization and error costs.",
+      "domain": "eta<1 for inversion; h=1 and eta_B<=eta_*<1 for R0 equivalence.",
+      "dependency_boundary": "The R0 detector target is equivalent to the existing obligation, not an independent arithmetic bound."
+    },
+    {
+      "id": "PC-07",
+      "status": "DISCLOSED",
+      "claim": "Forgotten Gamma clocks attenuate all sources, while retained clocks permit recovery; mean inversion and the declared rival-class test incur explicit costs.",
+      "domain": "Gamma parameters positive; circle-density lower bound uses nonzero harmonic and declared rivals.",
+      "dependency_boundary": "No pi complexity lower bound or physical quantum realization is inferred."
+    },
+    {
+      "id": "PC-08",
+      "status": "DISCLOSED",
+      "claim": "Fresh-trial detection amplification requires a source event rate; the same-forcing counterseed has vanishing rate and quartic fixed-confidence dose.",
+      "domain": "Stated confidence domains and exact changed seed -pi/16.",
+      "dependency_boundary": "A changed-seed control is not a refutation of the original-zero-seed target."
+    },
+    {
+      "id": "PC-09",
+      "status": "DISCLOSED",
+      "claim": "A growing-budget detector separates the authentic zero-seeded orbit from the named counterseed with error tending to zero.",
+      "domain": "Inherited GB-12 onset m>=m_2 remains unextracted; fixed nonzero h for the false-hit asymptotic.",
+      "dependency_boundary": "Derived readout corollary of existing irrationality/GB arithmetic, not a stronger signed loss."
+    },
+    {
+      "id": "PC-10",
+      "status": "DISCLOSED",
+      "claim": "The source-dependent signed estimate remains outside the generic frame argument.",
+      "domain": "Uniform stable detector family; faithful retained phase and source labels.",
+      "dependency_boundary": "The reduction identifies its remaining arithmetic premise and does not discharge it."
+    },
+    {
+      "id": "FAIL-ENERGY",
+      "status": "REFUTED",
+      "claim": "Small raw detector energy alone certifies original source cancellation.",
+      "domain": "Locked vector has the same order 1/B detector energy.",
+      "dependency_boundary": "PC-06 exact universal energy law and locked-control computation."
+    },
+    {
+      "id": "FAIL-FORGOTTEN-CLOCK",
+      "status": "REFUTED",
+      "claim": "Uniform forgotten-clock output implies uniform original phases.",
+      "domain": "Locked source under increasingly oscillatory independent Gamma clocks.",
+      "dependency_boundary": "PC-07 characteristic multiplier and finite-circle controls."
+    },
+    {
+      "id": "FAIL-DOSE",
+      "status": "REFUTED",
+      "claim": "A hit probability approaching one by increasing trial count implies a uniform positive shell event rate.",
+      "domain": "Same-forcing changed-seed rate tends to zero while adequate dose forces hits.",
+      "dependency_boundary": "PC-08 counterexample; PC-09 retains its growing-dose qualification."
+    },
+    {
+      "id": "OPEN-R0",
+      "status": "UNVERIFIED",
+      "claim": "The original zero-seeded source has a positive uniform dyadic-shell escape rate.",
+      "domain": "All sufficiently large shells; h=1.",
+      "dependency_boundary": "No lower bound for liminf B D_B has been proved here."
+    },
+    {
+      "id": "OPEN-NORMALITY",
+      "status": "UNVERIFIED",
+      "claim": "Every nonzero Fourier mode of the selected original orbit has vanishing long mean.",
+      "domain": "Fixed authentic source and zero seed.",
+      "dependency_boundary": "This is the pi-normality target; finite probes and detector probabilities do not establish it."
+    },
+    {
+      "id": "OPEN-PHYSICAL-REALIZATION",
+      "status": "UNVERIFIED",
+      "claim": "The BBP source is physically realized by an entangled instrument or ER=EPR geometry.",
+      "domain": "Requires an operational source-to-instrument identification.",
+      "dependency_boundary": "No such identification or discriminator is provided by this mathematical construction."
+    }
+  ],
+  "diagnostics": {
+    "contact": "Exact source reconstruction, frozen repository inputs and explicit observation laws are available.",
+    "phi_pathway": "Detector construction resolved within the declared model; uniform signed arithmetic pathway remains open.",
+    "sigma_source_map": "Original BBP source is pinned. External probe law, temporal Haar coordinates and quantum donor model remain distinct typed objects.",
+    "rho_commitment": "Same-model collaborative review is disclosed and hostile controls are retained; no numerical commitment score is assigned.",
+    "mu_probe_availability": "Exact finite audits and numerical frame probes executed. An all-scale source-specific arithmetic estimate is unavailable.",
+    "tool_closure": "Finite rational computation, numerical diagnostics, mathematical derivation, primary-source inspection and repository review.",
+    "independence": "Independent implementations share mathematical and model provenance. They are not independent empirical truth sources.",
+    "coherence": "Operational complex character e(t)=exp(2*pi*i*t), orientation and recorded clock are declared; no metaphorical phase is counted.",
+    "discrimination": "Locked, zero-mean, same-forcing counterseed, deleted-channel, copied-row and forgotten-clock controls separate identified failure modes.",
+    "aggregate_truth_score": null
+  }
+}

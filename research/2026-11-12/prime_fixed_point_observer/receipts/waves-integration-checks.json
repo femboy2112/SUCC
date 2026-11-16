@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "python",
+      "scripts/build_math_memory.py",
+      "--write"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.277,
+    "log": "waves-catalog-write.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/build_math_memory.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.825,
+    "log": "waves-catalog.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/verify_math_memory_graph.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.053,
+    "log": "waves-math-memory-graph.log"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "waves-diff-check.log"
+  }
+]

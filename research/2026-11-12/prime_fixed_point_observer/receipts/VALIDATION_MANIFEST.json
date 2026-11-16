@@ -41,25 +41,127 @@
     ]
   },
   "artifact_sha256": {
-    "docs/math_memory/CLAIM_CATALOG.json": "edca8d13035b48e336af0cf3891c074e87055b9062e0bf26555fe6150a93c683",
-    "research/2026-11-12/prime_fixed_point_observer/AUDIT.md": "e874198f61f4e434994c538525b6d884d950f0989fa6566128c6cd89f9265c16",
-    "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md": "1c55d7982fcd1f2cd0b1b0985944913f94319278d1a962033c67400cdba03716",
+    "docs/math_memory/CLAIM_CATALOG.json": "df6215cae65b51d0c153cddd0612bd2ae8ea9ef48d9a9624a24ad7112ec36315",
+    "research/2026-11-12/prime_fixed_point_observer/ARITHMETIC_COHERENCE.md": "d5429fb267b67913d3d3f5be4613aa109d0edab8aec978a1c17690d4b02ce391",
+    "research/2026-11-12/prime_fixed_point_observer/AUDIT.md": "57a9726fa4923632e5617b66eefaec701c3dab1e07f1f5d09c2876d6cdfeed40",
+    "research/2026-11-12/prime_fixed_point_observer/BORWEIN_DERIVATION_AUDIT.md": "a30159d15a9b1b75ede5167467b3370b278cc9e334d6474ff88c94e4384f2abe",
+    "research/2026-11-12/prime_fixed_point_observer/BORWEIN_RATCHET.md": "6b7870250e6e9c5ee3a019531191f9cad99e3101b57ca5657b71516866a40caa",
+    "research/2026-11-12/prime_fixed_point_observer/BRIDGE_COMMUNICATION.md": "6a9a5a4c7899cbe59d208e1dce31fecc3efd12a91579f50763725cd580d40d06",
+    "research/2026-11-12/prime_fixed_point_observer/CARRIER_BOND_DUALITY.md": "a822516aa384ce66a08371887a15f096df408baa0a4cf8aeaa260ac410060287",
+    "research/2026-11-12/prime_fixed_point_observer/CARRIER_COUPLING.md": "a3f95d220e0c58d9787bd11657a31bcfc2aee41eb85ce27b82d3dad24264b88a",
+    "research/2026-11-12/prime_fixed_point_observer/CLAIM_LEDGER.md": "0875a1ead37add0d9e91fe35e324cf5758fdef31e51db6a37b81de4ff2908ec7",
+    "research/2026-11-12/prime_fixed_point_observer/COHERENT_CHANNELS.md": "5c50fcaa8e3c2906376dce744b867399fc634d3906745fec3ad0aa19f4ad47cd",
+    "research/2026-11-12/prime_fixed_point_observer/COHERENT_PATH_CONTRACT.md": "0b8d6ab04b93998bae0a72e5c664dcc0129e4427474bd13bacbac19444b54ea6",
+    "research/2026-11-12/prime_fixed_point_observer/COHERENT_PATH_TRANSPORT.md": "7054a1a1aa1f31761c49ee1d4688a608d0139fa8ced1d43bef8df2440f58a9d7",
+    "research/2026-11-12/prime_fixed_point_observer/COHERENT_TWIN_PATHS.md": "373cc2c736dec784fb0d1eb168726abd02e3b8f7db711d350cb2fc12dea70c5c",
+    "research/2026-11-12/prime_fixed_point_observer/COMMON_ROOT_AND_LIMITS.md": "877e01003553f343278c7840417d03b640ec19f898742ca89b7c6e4eaf4c3280",
     "research/2026-11-12/prime_fixed_point_observer/CYLINDER.md": "85ce0e371e79695f3959162322d668c16dce42bd86421557955ea10546ec0e24",
-    "research/2026-11-12/prime_fixed_point_observer/NEXT.md": "fc67949ae3870eb1f8160233b2d2661674bfb8ced7a4617d287efffbc332a002",
+    "research/2026-11-12/prime_fixed_point_observer/MOTION_AND_COHERENCE.md": "37de76f94b390feab7eae577e867af053c5865f051733d8ffa8dd8b5c17be046",
+    "research/2026-11-12/prime_fixed_point_observer/NEXT.md": "3bbd22aece5dad5b704d2ba9dd3a1580f97ea86c1d99b6de738477791d0c0abc",
+    "research/2026-11-12/prime_fixed_point_observer/PATH_FAMILY_CONTRACT.md": "aeae83b867d2e6264db6fd08f069c54e1a78563b48f5ec018d349dc8e1143752",
     "research/2026-11-12/prime_fixed_point_observer/PRIME_INTERFEROMETER.md": "77394a87dddf0112d059519fed35fb5ab131764ba4edf142c6affe3f9e417596",
-    "research/2026-11-12/prime_fixed_point_observer/PROTOCOL.md": "9654505195126243d0b44af942c06e5221df919928a2e58f77eb25536a0e4436",
-    "research/2026-11-12/prime_fixed_point_observer/README.md": "f0cb42a67823f86ae7576ed27bd9ce06fcfcb5b88fc630cfb0c64e3a55e109b5",
-    "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md": "53ccc6ef242f1ce7d6258b872e4f8594d11d57be653833a31edfe6c2565e24da",
+    "research/2026-11-12/prime_fixed_point_observer/PRIME_WAVES.md": "e95b4971110bd5a534b7b742da803676a15e1dfd42b9ccb00b16f3ad59e67a32",
+    "research/2026-11-12/prime_fixed_point_observer/PROTOCOL.md": "e408a5b59b89ae1010bd92de0a3a6233f46b1185bb839fa59b13851bc08e3000",
+    "research/2026-11-12/prime_fixed_point_observer/README.md": "17b6c584cfbd4701a041c1129a23f1b6ce67769e3bcb44a2061b433bce53dcfd",
+    "research/2026-11-12/prime_fixed_point_observer/RETURN_PATHS.md": "ea065f78509ade9225a689add8c5487079b66ecb17c63d44e5cea4c4167f3f18",
+    "research/2026-11-12/prime_fixed_point_observer/SOURCE_MAP.md": "f8218ede75279358da69abf0165527d9fa9ba1c590c58888351826c533218689",
     "research/2026-11-12/prime_fixed_point_observer/THEOREMS.md": "187ca6d4ff8c4d2d4f18d7027e64eccfef29d30a1be298e684c5d51b505ec5fd",
-    "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md": "e6144c06bb7ae5c8f1e228147d20cc1d13e83921f538e46723cc6688510a6fcf",
+    "research/2026-11-12/prime_fixed_point_observer/TRIADIC_TRANSPORT.md": "a46d40bc13837c5107a32633a2ed3732fa116f0ab1f7baaa55a1708b8da43406",
+    "research/2026-11-12/prime_fixed_point_observer/TWIN_CORRELATION_AND_READOUT.md": "5989b3cfe6c598af02582d5b13d1871c738dcb786e00bef22cb4e1ee570021bf",
+    "research/2026-11-12/prime_fixed_point_observer/TWIN_OBSERVERS.md": "91ce377306d246f60f31e1ba0412f8697e92ce8741db5603ca1ba0f54e6607b2",
+    "research/2026-11-12/prime_fixed_point_observer/TWIN_OBSERVER_CONTRACT.md": "cb8d502bfdc1c2ff9a016779a4b618eed2e0330d4402fcdf84729d6836e8e1af",
+    "research/2026-11-12/prime_fixed_point_observer/TYPED_CHANNELS.md": "a896400d701e0fea4a748c3f2e488901d79080849d698c839e517c222014d18d",
+    "research/2026-11-12/prime_fixed_point_observer/VALIDATION.md": "10fe0b79e8822fb63db176f0f2eb27ba75412dc94c0c6d785fda0c73c257bd1b",
+    "research/2026-11-12/prime_fixed_point_observer/arithmetic_coherence_probe.py": "5faa596750b41aac7054ff258a418bb4a2cef72631669ab1bafead7e8aa653df",
+    "research/2026-11-12/prime_fixed_point_observer/borwein_independent_audit.py": "8016751897a0dbf3b2345a15ec13a22be28cd9d0eb47d391843cc7f1c7ce1279",
+    "research/2026-11-12/prime_fixed_point_observer/borwein_probe.py": "b52f321b16bd847007d7b8480d2f16a3822ae40d085cf60802bb14217ad8911c",
+    "research/2026-11-12/prime_fixed_point_observer/borwein_ratchet.py": "6e36ba576013514ce276cab67718b8143b808dd26a6b7302b744264c2a68be7a",
+    "research/2026-11-12/prime_fixed_point_observer/bridge_communication_probe.py": "8a523336f0f8323691891caa31fb81ed8e97fca1ded76d1ba336551f8a46f8f6",
+    "research/2026-11-12/prime_fixed_point_observer/carrier_bond_probe.py": "f5d845336592f7a207e71a4b733c6ace3e113ecc8494dd576c369a1b18176d9c",
+    "research/2026-11-12/prime_fixed_point_observer/carrier_probe.py": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d",
+    "research/2026-11-12/prime_fixed_point_observer/coherent_channels_probe.py": "8553d7978e0657c3cd3700a3ae6c624ba15869ce6d6c20df08df30b38244c40f",
+    "research/2026-11-12/prime_fixed_point_observer/coherent_path_transport_probe.py": "3af81d2753e80ae399af07ab66a61d2c89148cf11595781d94ed164c0b82d826",
     "research/2026-11-12/prime_fixed_point_observer/cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+    "research/2026-11-12/prime_fixed_point_observer/figures/borwein_ratchet.svg": "734f9d15b3d299f4559fd6becf08c8657bf6e004c47287ae72584aa47d293eab",
+    "research/2026-11-12/prime_fixed_point_observer/figures/prime_wave_interference.svg": "3bca18466b305d16edd4f60bbc085f7211a509263490fe6a84469311545d32fe",
     "research/2026-11-12/prime_fixed_point_observer/lambda_observer.py": "527eb36225b6cc01115f037ef26f108b280628a3c7ee97daf7ebcd2e03c971fe",
+    "research/2026-11-12/prime_fixed_point_observer/motion_probe.py": "7175c82b5e4e68fd3de1d5c239c5c0bc7b3d0cb839108f95a4da23e8f3251936",
+    "research/2026-11-12/prime_fixed_point_observer/plot_borwein_ratchet.py": "6e24cb877e4fb8468ff04a4e5ff884b005c09eebdb6fe53b1e6823e384972a5c",
+    "research/2026-11-12/prime_fixed_point_observer/plot_prime_waves.py": "126873e5e42b378e36c4d2e9e75be61cedd24b3ae0c457ef6b45243ff86174e7",
     "research/2026-11-12/prime_fixed_point_observer/prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50",
+    "research/2026-11-12/prime_fixed_point_observer/prime_waves.py": "68604be9c4655281be1926029c55aaddc36fe72c5521f358a9b187411898db30",
     "research/2026-11-12/prime_fixed_point_observer/probe.py": "4a720a428620fb9ecc01091ca0aa893393e564da16b94cbaefe647737487139f",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/ARITHMETIC_COHERENCE_REPORT.json": "a5f4d62cd1ee00cb5111dbc82f0042b2fc35a0c0e55bd40efeb4d32ed0300a4e",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/BORWEIN_INDEPENDENT_AUDIT.json": "ce61fca92a1300918157e485c420e49ecbb0519dd683c154480877592bc5d564",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/BORWEIN_REPORT.json": "6f1d60642a1c963111a00ce129eb8cb23137b147adfb3f30a37569979879daba",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/BRIDGE_COMMUNICATION_REPORT.json": "ad2524b2767860d7727c47fc29bfd2d366e7467c7d4e8519030b8128d37c8fcd",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/CARRIER_BOND_REPORT.json": "281a3c3c4442b733659e7b35ac99adadcdf8c2518e351ee276b7e779ffc78ea1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/CARRIER_REPORT.json": "6882cd5e257097b1e2855a8b31630a6c640505fb34de5dc549d0bd45f932840b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENCE_CROSS_REPORT.json": "0a9283272cf0e1bc0b9b626cf26e0a65366ee89b35a4b1456801a341657680a6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENCE_LINK_CHECK.json": "83dc018c1bdb9d661b090179165e4732388a7750efe841e7d254c43c523c06fe",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENCE_ROOT_REPLAY.json": "ca337016e8a9476f3f7af93cc57bcf2288c4b1b9da9be1b51ac7d0e8814bb941",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENCE_SOURCE_PRESERVATION.json": "22c82bced828f76ad2d7b4a32820a55dcfb5184f2392e88211cba4bfe338bf26",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENT_CHANNELS_REPORT.json": "9ef46def14482ed756d271e419d6140eb158771c00e4cf0142e0f08b1218c3a4",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENT_PATH_ADVERSARY_REPORT.json": "53eefa41e3802aa16b12c2d5643daa017208960b6ff6ae75088a98f42fa453c2",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENT_PATH_TRANSPORT_REPORT.json": "f04fe7ed502a46589eb062afd1fc1a24ef8d8a7c2c0606f013a095f2972cb7c7",
     "research/2026-11-12/prime_fixed_point_observer/receipts/CYLINDER_REPORT.json": "c51e63ea944f66f6b629a576b73899ce88f9cde2cfeda256df84bdea666acceb",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/ER_EPR_INTERVENTION_REPORT.json": "d50e8944a2f37e938f55d3fad40411170f63a193cb1bf89962f4bfe111808563",
     "research/2026-11-12/prime_fixed_point_observer/receipts/FINITE_REPORT.json": "fa5b7d051ec63f917aa2e75926b1842bafd94226408bd9f96a63e18cf62d8bb9",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/MOTION_REPORT.json": "63f31d1f70ee7efec45e8c97166373abc7b5d6a92e174a2990003d347c3816df",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/RETURN_PATH_INDEPENDENT_AUDIT.json": "8522f1c038be5d722ad7b70b1b25f0ba325647e158d611196d06e9b6260f478c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/RETURN_PATH_REPORT.json": "7b09b3c9dc8f2228f14d90e9b22838e77a903acf703c3081f6f4ec6673deae78",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/RETURN_SOURCE_REPORT.json": "ef42424bab283576cd4522034e2cdce1ceadb3379b07544daa27e9e495f11582",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/ROOT_LIMIT_REPORT.json": "2aaeef3592144a7de4d6ea6df678c389a4553cd5361651c01df4cf8e9fafc5a6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/TRIADIC_REPORT.json": "8733a51c38d438c45f0e647b84ff7d49d8649494b1ca445d05d42ab6c337e5dc",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_CORRELATION_REPORT.json": "2551ecdb0ee0fc9d68431f7e221cd6b19e229dcab15fd587d23a256bff12243b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_GLUING_REPORT.json": "e34d97d78c7211d1df17d0a6c2f88819244317abb39d0cec4b9eb5a8f8222029",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_SEAM_REPORT.json": "11edacd9db59122a63a057f67e586eb3b016130f62672d151012f3f417a35025",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/TWIN_TRANSPORT_REPORT.json": "a4b3eddfc54b662342812c779af6831027a4e8c2c0df808331e48fdede54f0c6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/TYPED_CHANNEL_REPORT.json": "8a9f1699ac926b7fa526a3fa8ed787e5d9399118a37316f96220274538c19923",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/WAVE_INDEPENDENT_AUDIT.json": "306f0d69eef4f9f68ef0b15115abd7a7e2bd9fb16d1f72648ec2f3c15d211d5c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/WAVE_REPORT.json": "fcac1e93846133c4b07c3905d37da36d09f396f2c6caa8ae8db661a4eb248bf1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-catalog-write.log": "813be00d04b886840f19e1c21c51b03f667b8b3f1fd3d104c4b733e18ce2486e",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-catalog.log": "813be00d04b886840f19e1c21c51b03f667b8b3f1fd3d104c4b733e18ce2486e",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-checks.json": "3592cb1f0e772840ca8436e0010b089be5d22aff8f379e36e6bf76a1d10b69db",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-focused-check.json": "f5ae14d0aefecbc1e258233263741ef9dfc456e83bb40f2cb4fbee3ef104244d",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-focused-suite.log": "df565637af0f4c1c52a823314b17cd171498ca19bad141f3ee55f082b9eb0359",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-integration-checks.json": "c07876124d6ed96f12f62e3291e74859c5097c7f5109466caae17240170ad0c1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-integration-history.json": "7f77bcf6a0aeca030267ea8fe1a7d1da91dbe193964c84950f156e0b07f3fbe8",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-links.json": "f006d0c5111d557340f34be3467c1d0205189d01cccad5c3e69cd8ecc3f4347c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-native-check.json": "17b474adf86c41f49d65c01f3744ea6dff66d41a27013fb521414313c628ce62",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-native-suite.log": "b78d885f3b61caa641c5978167d0f1ce713778078a47c60312ae9da6e75fd881",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-probe-check.json": "36058df0a412f83ada54bab621604cd41c8209821f10e7760e199f607ff8c340",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/borwein-source-preservation.json": "37d5eba0531bb77a73f1b69a93644ea31ac7005da92b8b71acd922e22aec59ee",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-catalog-write.log": "28647429bf6e4377a8a6f77ce4fa0828c6f69fb5623e1b5e327193f9d632266c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-catalog.log": "28647429bf6e4377a8a6f77ce4fa0828c6f69fb5623e1b5e327193f9d632266c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-checks.json": "f87653eb0758cec9a265058dab075585388cf2027bebd73d7b106318f4357b32",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-focused-suite.log": "de37c4b99044bb817adf126dc70c2af0a4999bac7f77e4e6e97ef80deb3f2f40",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-integration-checks.json": "8cd220b5b65fc112542e728b9f784256d4b1c945c00448c5c76392372eb39c09",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-probe.log": "7a0efa8c036bcd6788d8cfc97a501694cba445e7fff18a59109b2004b2d5263b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/carrier-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
     "research/2026-11-12/prime_fixed_point_observer/receipts/catalog-write.log": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
     "research/2026-11-12/prime_fixed_point_observer/receipts/catalog.log": "78343065457c730a4c7acbb493f61f880f7c87d498584af0627f671f4072baa5",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-catalog.log": "e1516e4660f6ec81e3d9d93192984e1ba43cae3bf5dad1bfb8cb7d43c0b72c08",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-checks.json": "b9d4bd7740f21dabce6ebf2b42d16bb94cbf528b75712362d45821b1f047c94e",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-dossier.log": "55eb8f985b01f8e6319ec54e2daa977ded33b4a0fd49fbbffe73add42c5d4758",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-integration-checks.json": "c88e77b5b61743e10b6d06a0510afaae01c878c4c7e35389b5c29555921293c3",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-integration-history.json": "333034076a930de8f4afb22ce1757d1a0873c9f441ca8e80af8f2ac5eacfe251",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-native-check.json": "99499b0137daed25ba22c29430e8e47e677c6eb3c9f5c8ecc758287163acfd4b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-native-suite.log": "0d46290077f256e974ff4ca75ca0f010694452c1050a47dbd4ee4f17a25eee38",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-ordinal.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
     "research/2026-11-12/prime_fixed_point_observer/receipts/cylinder-tests.log": "b74ccdce02f0256559cf7016e7f0881eca860703f1176a0d25dbcaf61b0d529b",
     "research/2026-11-12/prime_fixed_point_observer/receipts/diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "research/2026-11-12/prime_fixed_point_observer/receipts/final-focused-suite.log": "771fce2baa03f0d716d42e91708f278b335fccbd51b5f24adf386e0d3cec10c4",
@@ -75,17 +177,355 @@
     "research/2026-11-12/prime_fixed_point_observer/receipts/ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
     "research/2026-11-12/prime_fixed_point_observer/receipts/probe.log": "a31536f403785ca61993997e5864e2a8f7f0ea11db63e686b5763e2d8a5dc28d",
     "research/2026-11-12/prime_fixed_point_observer/receipts/provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-catalog.log": "ff9da7260a8c52accd6fbefe3be53b8701fb6565f6d58b196aa8fbf36a2dba33",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-checks.json": "4f412100789ca9955271b829c47f1ad24f8c37b6f13a151540fe2a09577a65f2",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-extension-checks.json": "1560124c4ec9c35135b780e19c210162536ccbe6a4890eef09b7b927317ab8ec",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-focused-suite.log": "ffca5c1c43ef01a24be058c248351c5421a79c7c3d4b008dd6c22c97c7ea4a1b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-independent.log": "7235cb256270d68740352b0abeec02deef3f7892e66e406e8ab196b614cc45e3",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-integration-checks.json": "b7afb60c4c8139017a89c8404da2266d5919397e870196cf49a339a5d1d18c8b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-integration-history.json": "2e3ca2166b8be1f8e052115859e678a4411b8c458bd841deee1f3c0195329b46",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-links.json": "d6cd63e948f174e97532328f07be84ebb61f196895350a7f27bd2bf4398f150f",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-motion.log": "65fa32f3cd7b9220fd23cab6e7cc1a3dcf819130e34929fc0032590385fdebe1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-native-check.json": "e6393b6b8624c2c618e023828b14a4c403c5229d1a89956a5ff5f7ec84924af1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-native-suite.log": "c93c3b724a04b3cd016177af4ae8efea77c5119fe34c4a1c1d7049e3f23b7d4d",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-probe.log": "7b09b3c9dc8f2228f14d90e9b22838e77a903acf703c3081f6f4ec6673deae78",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-root-limit.log": "2aaeef3592144a7de4d6ea6df678c389a4553cd5361651c01df4cf8e9fafc5a6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-source-preservation.json": "afa8972d39edd7bf2e0071b4472bf60b7e17d41935df631c87439fa0b8a66a2b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-source.log": "ef42424bab283576cd4522034e2cdce1ceadb3379b07544daa27e9e495f11582",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/return-typed-channels.log": "a6cfdb5259c55f43b98416931f7e6b2a7a918dc2f8f3b664fb322aeb6e735c17",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/triadic-check.json": "21c0cc7b5ef4da50723a877c83a2f114f6e09a412c779a8b85eba609258d6467",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-baseline-replay.json": "1ea6a76ce2ace97fc22bc794b309e85e36fcd81194c88e21ce6b46a277abaff9",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-catalog-write.log": "9e614c34e9d044b8bbc2d74acedcf546b189ee3d224167cf15eb7f4ac2736e6c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-catalog.log": "9e614c34e9d044b8bbc2d74acedcf546b189ee3d224167cf15eb7f4ac2736e6c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-checks.json": "2f9f74cba5295826a19a062b38ab72f13cb723718d9ae510936d0e101366251c",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-correlation.log": "2551ecdb0ee0fc9d68431f7e221cd6b19e229dcab15fd587d23a256bff12243b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-focused-suite.log": "8f1ba1ecac96a6bcdec63640d349b976025d664110575701a62322c9e2c7e9e7",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-gluing.log": "e34d97d78c7211d1df17d0a6c2f88819244317abb39d0cec4b9eb5a8f8222029",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-integration-checks.json": "122c8982cd098055c35cb733648aa7cb0f07982ce7967859ec064b08d3208c30",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-integration-history.json": "60dcd0471e672758deb7e99edce0050d4c5a108de34a38e95438e6d4408cebc9",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-links.json": "d541bf4648b3b72b9dd8154a51ce6a9c0bfee066f4037471f382d771a7faaa92",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-native-check.json": "46749ae47fcadccf5112dca44613c6067e879278833a06fe28bee20ea11f6897",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-native-suite.log": "d7125c72fb50fbec3d64eb9e538f1ec386eb1e42c1c6871330a4ae5a002818f1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-seam.log": "11edacd9db59122a63a057f67e586eb3b016130f62672d151012f3f417a35025",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-source-preservation.json": "30dbfb16ccef8bc872ebd4865fa82456204186dfde1cc1d6564cae3d8ebc5c89",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/twin-transport.log": "a4b3eddfc54b662342812c779af6831027a4e8c2c0df808331e48fdede54f0c6",
     "research/2026-11-12/prime_fixed_point_observer/receipts/untouched-base-import-replay.log": "b7d8217a0a771f3b0144c7d327a441a43356ab0eee8541d1f456691aad837738",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-adversary-check.json": "5bb1adc1088f5f4f240e8a3562e38d9bd93c093e81199dbcba7af2cd8d78fc70",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-adversary-replay.log": "09f44b1d2c885824aea08ef6dfc952a36de6aec476fa9397f30861e9d6ef9698",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-catalog-write-check.json": "1bf68b361c436575a9118c07632dcffff19d65059a36da28eaac4bdebf4b4a48",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-catalog-write.log": "1ab59a0363e20ca7e64bc1ebffc4eda4d2ca93cdb8f784df555d2e3a652c17ee",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-catalog.log": "1ab59a0363e20ca7e64bc1ebffc4eda4d2ca93cdb8f784df555d2e3a652c17ee",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-checks.json": "9bd1a0479f6697ede128a9f4a180e1138ebb1c570f89c7b42d5eae946837b12d",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-focused-suite.log": "b0ce3503d723df9aa85d45cfab4e636390155dd0a780897b7d8a8db80829acc3",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-format-history.json": "fe03bd3f3c2ec0620e75ad1ca6979dd1330fa251b55afc05d937601da817d2bf",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-independent.log": "84299e9f245e4d44ba6b9db0536a34e7b39072b02ef5982aae67e6a5e44e5c10",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-integration-checks.json": "5f124ca50b6507787640efcbe515ecfd54c7d993417addb6dbd905cec3836c84",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-math-memory-graph.log": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-native-check.json": "a82718a4bdb051fc7718453990a446dc93f56bf736f2a381dae83e80e3386fa1",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-native-suite.log": "1436787b51527b20cc46cbad1e67ea836457ef38401583ec55d339de27e84383",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-observer-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-ordinal-succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-probe.log": "f2fa2e45f5123df8981e4d466ae3f9daefcd784baf1a78c320a4d4a374bcb272",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-11-12/prime_fixed_point_observer/receipts/waves-source-preservation.json": "627c3d81cb6b952b43d468557e0b40b47e57c70cfd8d1d72500f3f8c224c4d27",
+    "research/2026-11-12/prime_fixed_point_observer/return_paths.py": "96fb5770fc03e110707475dcdcc99facbe0b58fea6153414ca35026885f70cca",
+    "research/2026-11-12/prime_fixed_point_observer/return_paths_independent_audit.py": "7478a78af8c900013ecf0beeaaac8f9e8d823b81248f17abb1a91e1c3b0009cc",
+    "research/2026-11-12/prime_fixed_point_observer/return_paths_probe.py": "285ef5f381676bc489d9d03713fa764238d46062eb138fa1c3be32d908cc673e",
+    "research/2026-11-12/prime_fixed_point_observer/return_paths_source_probe.py": "465b63e668a226e94402c404d36aac2dd06260de4816978296284d7f237f3a82",
     "research/2026-11-12/prime_fixed_point_observer/reviews/adversary_code_audit.md": "1d0b5a006e2e95fbdad15fcbb441ccc998951e216f1b86dcc86ef97adf1db3e4",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/borwein_adversary_audit.md": "c48141467b249e81e35ea3ca55b1776bcb7fef5905c1b2ce9383d1600866740b",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/carrier_code_audit.md": "cdcef7db48c920b65789b1cc0b28320f7131933f93dba578ebee09bcb23c607f",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/coherence_cross_audit.md": "89f75ba31c73858cbe6a5e0ac379815abdd8d5c947b90048bc98de70faf5ad43",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/coherence_cross_probe.py": "dfb197e571ba8f1fbb238e74c278234a4859cb064f7ee5dc2b6a1c6a29a76139",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/coherent_path_adversarial_audit.md": "359afecd1e565b3fe577a60bf1136d9a29898554cac6c25ad86dc23ed1a27993",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/coherent_path_adversary_probe.py": "0d5831ff97949f9fdae20ccd15e5920f9715d81e64de7dfaa5164189f4904c61",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/common_root_audit.md": "d541cb0811dbc4632d87d8636ebf00f9b9f9d682b440949bb0e95800eb950c3a",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/er_epr_equivalence_audit.md": "ab13ccf3357c4846471df8e0efe9e3d5d68224781eec9366ebaef30c7a79fe14",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/er_epr_intervention_probe.py": "e08c4de9865ad0e23c495e3881779d7ba9a97c1d9a8df5805770529db9016b35",
     "research/2026-11-12/prime_fixed_point_observer/reviews/final_center_audit.md": "4d040707ac143c8261b21101f3974611b5aa6d4546fc91ecf9e065bee029393f",
     "research/2026-11-12/prime_fixed_point_observer/reviews/final_cylinder_audit.md": "ac6f8e50491d26da2e724a491776e6bd61fc84fedb5c29156984bdc5e9ff6bf7",
     "research/2026-11-12/prime_fixed_point_observer/reviews/final_proof_audit.md": "94fbcc5f65ef15bc809aed833337ad1da6502cecb63c7c6faa978022755e1d28",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/return_paths_category_audit.md": "259f73cafdd1123461da58ddad375ca63e505c5bee89ce05b78ad127ae5bbb98",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/twin_observer_adversarial_audit.md": "6bb19c25b9e73c0b4e9eff39eeb3a6a03cec6a68ad28fb80306524c12ef7bfba",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/twin_transport_derivation.md": "e3bf6b0fe5d1995b4db8fa5cfbf244221464cca5f9ccbe7cd6faabd58691da4f",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/wave_adversary_audit.md": "1c0d37dfde83f06a2dbaa920ac2ae50cd5d8592d5496215865b7c7df7e61e146",
+    "research/2026-11-12/prime_fixed_point_observer/reviews/wave_resonance_audit.md": "e5b820b3aa10f6bcf3cd8e16373c3a4742de951dc8a2d9d39763317b118d51df",
+    "research/2026-11-12/prime_fixed_point_observer/root_limit_probe.py": "7651f97cf01677773ab5c4a639ea329482053495c802c7f143a03dd9ed824b15",
+    "research/2026-11-12/prime_fixed_point_observer/test_borwein_ratchet.py": "e869ca0482a72615abfe4dda19c2f9276c9d28b7206632a37d187779cb17f1a5",
     "research/2026-11-12/prime_fixed_point_observer/test_cylinder.py": "c194d528ee7d6ab299c6ccae14ab096e8426b5a511941c6d6aa57d8b8f1f1b94",
     "research/2026-11-12/prime_fixed_point_observer/test_lambda_observer.py": "b42eec4ad40aafad08e87e01a0186c826ff681340c8c4415617755c990c40f08",
-    "research/2026-11-12/prime_fixed_point_observer/test_prime_observer.py": "5d7455dc58a6043b7f478787d47c1d5529af1a77aeff4192d4d2bc78cdbdea5d"
+    "research/2026-11-12/prime_fixed_point_observer/test_prime_observer.py": "5d7455dc58a6043b7f478787d47c1d5529af1a77aeff4192d4d2bc78cdbdea5d",
+    "research/2026-11-12/prime_fixed_point_observer/test_prime_waves.py": "8082e86e310e69e020e427ffb8d5dbcf79a38faf0fbf0bf73103cf0b25752b8b",
+    "research/2026-11-12/prime_fixed_point_observer/test_return_paths.py": "b1c69dc236eb6a6933f103ff4ee7f41c0cdf4ec87e4d613df5ee5fe3037b1136",
+    "research/2026-11-12/prime_fixed_point_observer/test_twin_transport.py": "18f173287891b085b008f3f47fa1cb14f5d2c68d2e0b536f0a4100c0e1219349",
+    "research/2026-11-12/prime_fixed_point_observer/triadic_probe.py": "4271230693d2e4345b94502b61382959371c50a84a878ec5e8903884a75a3a57",
+    "research/2026-11-12/prime_fixed_point_observer/twin_correlation_probe.py": "c1164f2083477bc7abdc3251f7fd0ed6e48c8b6d9a297b7860d8abb7ef54023c",
+    "research/2026-11-12/prime_fixed_point_observer/twin_gluing_probe.py": "894a191d3cb39c44c0e79788625562a1b0b850fc307df9ac60350cd2d8e4b334",
+    "research/2026-11-12/prime_fixed_point_observer/twin_seam_probe.py": "1c9d059d020ff8d401f968280127d8bed7b57cf34e86f6fd0bdc3429a1c9f528",
+    "research/2026-11-12/prime_fixed_point_observer/twin_transport.py": "52564670386a20fc34a46b3ed337f3becd65b1bc209924b874f780a01013a60c",
+    "research/2026-11-12/prime_fixed_point_observer/twin_transport_probe.py": "ddc40e2d12e0241c005733461e714853fd848d95ede5118db18501936a4ab34b",
+    "research/2026-11-12/prime_fixed_point_observer/typed_channels_probe.py": "4f9049cd600094b2dc651bb3a7ddc35c2722220ffb6c0e94ac2bd728ddc8630f",
+    "research/2026-11-12/prime_fixed_point_observer/wave_probe.py": "026cf807aa84c1a85031f8bc7f45fa854b2f16e014a226694475a942ac25ab01",
+    "research/2026-11-12/prime_fixed_point_observer/waves_independent_audit.py": "e43f341a0236bce8efa4e7d953452d12cf29a32a8da759771e1a37e252036118"
   },
   "base_commit": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+  "borwein_ratchet_extension": {
+    "algorithmic_speedup_claimed": false,
+    "approximate_logarithms_used_for_decisions": false,
+    "catalog_namespace_warnings": 171,
+    "claims": "BRT-01 through BRT-09 (BRT-09 remains OPEN)",
+    "dossier_test_methods": 74,
+    "figure": "figures/borwein_ratchet.svg",
+    "figure_visually_inspected": true,
+    "figure_whitespace_normalized": true,
+    "finite_tests_prove_universal_prime_distribution": false,
+    "geometric_audit_checks": 382,
+    "geometric_report": "receipts/BORWEIN_INDEPENDENT_AUDIT.json",
+    "impossible_summary_regressions_repaired": true,
+    "infinite_claims_have_displayed_proofs": true,
+    "integration_checks": [
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/build_math_memory.py",
+          "--write"
+        ],
+        "elapsed_seconds": 0.807,
+        "exit_code": 0,
+        "log": "borwein-catalog-write.log"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/build_math_memory.py",
+          "--check"
+        ],
+        "elapsed_seconds": 0.975,
+        "exit_code": 0,
+        "log": "borwein-catalog.log"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/verify_math_memory_graph.py"
+        ],
+        "elapsed_seconds": 0.053,
+        "exit_code": 0,
+        "log": "borwein-math-memory-graph.log"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "borwein-diff-check.log"
+      }
+    ],
+    "integration_history": "receipts/borwein-integration-history.json",
+    "main_exact_checks": 4285,
+    "main_failures": 0,
+    "main_report": "receipts/BORWEIN_REPORT.json",
+    "native_test_methods": 13047,
+    "new_beta_trace_executed": false,
+    "new_borwein_test_methods": 13,
+    "parent_commit": "e855200a9a447933ef93b3ee0947d14d00ef42de",
+    "physical_ratchet_tested": false,
+    "previous_catalog_namespace_warnings": 171,
+    "prior_python_files_preserved": 13,
+    "source_preservation": "receipts/borwein-source-preservation.json"
+  },
   "branch": "research/prime-fixed-point-observer-2026-11-12",
+  "coherent_path_and_carrier_bond_continuation": {
+    "audit_provenance": "Three same-model delegated lanes, separate implementations and reciprocal read-only reviews, followed by root proof inspection and actual replay. Not external peer review.",
+    "changed_paths_outside_dossier_and_generated_catalog": [],
+    "channel_and_state_scope": "Exact encoded bond/current-effect dictionary; complete coherent communication when actual channel or coupling is supplied; receiver-only equivalence need not survive joint meeting access.",
+    "contract": "research/2026-11-12/prime_fixed_point_observer/COHERENT_PATH_CONTRACT.md",
+    "dossier_suite": {
+      "exit_code": 0,
+      "new_test_methods": 0,
+      "receipt": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-checks.json",
+      "test_seconds": 11.478,
+      "tests": 99
+    },
+    "draft_pr": 601,
+    "evidence_boundary": {
+      "entanglement_alone_supplies_free_messages": false,
+      "finite_checks_are_universal_proofs": false,
+      "formal_kernel_checked": false,
+      "gravitational_geometry_derived": false,
+      "objective_collapse_law_established": false,
+      "physical_quantum_experiment": false,
+      "source_specific_additive_estimate_proved": false
+    },
+    "exact_probes": [
+      {
+        "checks": 696,
+        "elapsed_seconds": 12.225,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/coherent_channels_probe.py",
+        "script_sha256": "8553d7978e0657c3cd3700a3ae6c624ba15869ce6d6c20df08df30b38244c40f"
+      },
+      {
+        "checks": 69957,
+        "elapsed_seconds": 0.397,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/arithmetic_coherence_probe.py",
+        "script_sha256": "5faa596750b41aac7054ff258a418bb4a2cef72631669ab1bafead7e8aa653df"
+      },
+      {
+        "checks": 474,
+        "elapsed_seconds": 0.56,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/coherent_path_transport_probe.py",
+        "script_sha256": "3af81d2753e80ae399af07ab66a61d2c89148cf11595781d94ed164c0b82d826"
+      },
+      {
+        "checks": 9188,
+        "elapsed_seconds": 4.542,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/reviews/coherent_path_adversary_probe.py",
+        "script_sha256": "0d5831ff97949f9fdae20ccd15e5920f9715d81e64de7dfaa5164189f4904c61"
+      },
+      {
+        "checks": 107156,
+        "elapsed_seconds": 0.122,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/reviews/coherence_cross_probe.py",
+        "script_sha256": "dfb197e571ba8f1fbb238e74c278234a4859cb064f7ee5dc2b6a1c6a29a76139"
+      },
+      {
+        "checks": 204,
+        "elapsed_seconds": 0.383,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/bridge_communication_probe.py",
+        "script_sha256": "8a523336f0f8323691891caa31fb81ed8e97fca1ded76d1ba336551f8a46f8f6"
+      },
+      {
+        "checks": 421,
+        "elapsed_seconds": 2.899,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/carrier_bond_probe.py",
+        "script_sha256": "f5d845336592f7a207e71a4b733c6ace3e113ecc8494dd576c369a1b18176d9c"
+      },
+      {
+        "checks": 39,
+        "elapsed_seconds": 0.173,
+        "exit_code": 0,
+        "script": "research/2026-11-12/prime_fixed_point_observer/reviews/er_epr_intervention_probe.py",
+        "script_sha256": "e08c4de9865ad0e23c495e3881779d7ba9a97c1d9a8df5805770529db9016b35"
+      }
+    ],
+    "hosted_ci": "Separate from local validation. Inspect after the single publication; no pass inferred from missing, queued or running workflow data.",
+    "integration_checks": {
+      "all_pass": true,
+      "catalog_advisory_warning_count": 171,
+      "catalog_is_proof_checker": false,
+      "results": [
+        {
+          "command": [
+            "python",
+            "scripts/build_math_memory.py",
+            "--check"
+          ],
+          "elapsed_seconds": 1.124,
+          "exit_code": 0,
+          "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-catalog.log",
+          "name": "catalog"
+        },
+        {
+          "command": [
+            "python",
+            "scripts/verify_math_memory_graph.py"
+          ],
+          "elapsed_seconds": 0.088,
+          "exit_code": 0,
+          "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-graph.log",
+          "name": "graph"
+        },
+        {
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "elapsed_seconds": 0.064,
+          "exit_code": 0,
+          "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-format.log",
+          "name": "format"
+        }
+      ]
+    },
+    "integration_history": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-integration-history.json",
+    "local_links": {
+      "documents": 16,
+      "local_links": 98,
+      "missing": [],
+      "scope": "Existence of local link targets in changed/new continuation Markdown documents. External URLs and document semantics are separate checks.",
+      "status": "PASS"
+    },
+    "local_work_branch": "research/coherent-twin-transport-2026-11-12",
+    "native_suite": {
+      "executions": 1,
+      "exit_code": 0,
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-native-suite.log",
+      "receipt": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-native-check.json",
+      "test_seconds": 1369.478,
+      "tests": 13047,
+      "wrapper_seconds": 1379.605
+    },
+    "parent_commit": "e9639c0ddb07385c6000b670d26cf0f7b91dacaa",
+    "parent_tree": "d591ba032b6b0cef8f62a32100455f9c3857b681",
+    "present_output_rule": "Compare only declared present outputs in calibrated common frames. Histories need event/frame/evolution transport.",
+    "publication_branch": "research/prime-fixed-point-observer-2026-11-12",
+    "required_small_gates": [
+      {
+        "exit_code": 0,
+        "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-provenance.log",
+        "name": "provenance"
+      },
+      {
+        "exit_code": 0,
+        "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-foundations.log",
+        "name": "foundations"
+      },
+      {
+        "exit_code": 0,
+        "log": "research/2026-11-12/prime_fixed_point_observer/receipts/coherence-ordinal.log",
+        "name": "ordinal"
+      }
+    ],
+    "root_replay_receipt": "research/2026-11-12/prime_fixed_point_observer/receipts/COHERENCE_ROOT_REPLAY.json",
+    "source_preservation": {
+      "categories": [
+        "native source",
+        "native tests",
+        "scripts",
+        "provenance",
+        "existing dossier Python",
+        "dependency configuration",
+        "root instructions"
+      ],
+      "changed": [],
+      "checked_files": 2231,
+      "parent_commit": "e9639c0ddb07385c6000b670d26cf0f7b91dacaa",
+      "status": "PASS"
+    },
+    "synthesis": "research/2026-11-12/prime_fixed_point_observer/COHERENT_TWIN_PATHS.md"
+  },
   "existing_native_source_and_tests_changed": false,
   "finite_probe": {
     "explicit_checks": 74229,
@@ -96,6 +536,11 @@
   "goldbach_proved": false,
   "hash_scope": "All dossier files except this manifest and Python caches, plus the regenerated catalog. Paths are relative to repository root.",
   "inherited_beta_kernel_sha256": "ba0c9d8420e8c39c7bc2acc8f6db65d8e68eb3299491e15a77711c185dcc0a04",
+  "initial_dossier_test_suite": {
+    "log": "receipts/final-focused-suite.log",
+    "status": "PASS",
+    "test_methods": 47
+  },
   "integration_checks": [
     {
       "command": [
@@ -152,19 +597,173 @@
       "status": "PASS",
       "tests": 11
     },
-    "single_clean_full_suite_certified": false
+    "current_clean_run": {
+      "PYTHONPATH": "/workspace/scratch/66b470ffd34d/SUCC",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "elapsed_seconds": 1356.879,
+      "exit_code": 0,
+      "historical_failure_logs_retained": true,
+      "log": "receipts/borwein-native-suite.log",
+      "started_from_commit": "e855200a9a447933ef93b3ee0947d14d00ef42de",
+      "status": "PASS",
+      "tests": 13047,
+      "unittest_elapsed_seconds": 1348.871
+    },
+    "single_clean_full_suite_certified": true,
+    "wave_clean_run": {
+      "PYTHONPATH": "/workspace/scratch/66b470ffd34d/SUCC",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "elapsed_seconds": 1190.924,
+      "exit_code": 0,
+      "historical_failure_logs_retained": true,
+      "log": "receipts/waves-native-suite.log",
+      "started_from_commit": "b3ddf81c4e893866aac04903f682fb5aa01830e2",
+      "status": "PASS",
+      "tests": 13047,
+      "unittest_elapsed_seconds": 1185.784
+    }
   },
   "new_test_suite": {
-    "log": "receipts/final-focused-suite.log",
+    "log": "receipts/borwein-focused-suite.log",
+    "new_borwein_methods": 13,
     "status": "PASS",
-    "test_methods": 47
+    "test_methods": 74
   },
   "pi_normality_proved": false,
+  "prime_wave_extension": {
+    "adversary_replay": "receipts/waves-adversary-replay.log",
+    "algorithmic_speedup_claimed": false,
+    "catalog_namespace_warnings": 171,
+    "claims": "WAV-01 through WAV-10",
+    "figure": "figures/prime_wave_interference.svg",
+    "figure_visually_inspected": true,
+    "figure_whitespace_normalization_preserves_geometry": true,
+    "formal_kernel_proof": false,
+    "format_history": "receipts/waves-format-history.json",
+    "independent_mobius_gcd_checks": 10424,
+    "independent_report": "receipts/WAVE_INDEPENDENT_AUDIT.json",
+    "integration_checks": [
+      {
+        "command": [
+          "python",
+          "scripts/build_math_memory.py",
+          "--write"
+        ],
+        "elapsed_seconds": 1.277,
+        "exit_code": 0,
+        "log": "waves-catalog-write.log"
+      },
+      {
+        "command": [
+          "python",
+          "scripts/build_math_memory.py",
+          "--check"
+        ],
+        "elapsed_seconds": 0.825,
+        "exit_code": 0,
+        "log": "waves-catalog.log"
+      },
+      {
+        "command": [
+          "python",
+          "scripts/verify_math_memory_graph.py"
+        ],
+        "elapsed_seconds": 0.053,
+        "exit_code": 0,
+        "log": "waves-math-memory-graph.log"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "waves-diff-check.log"
+      }
+    ],
+    "main_exact_checks": 27054,
+    "main_failures": 0,
+    "main_report": "receipts/WAVE_REPORT.json",
+    "native_test_methods": 13047,
+    "optional_figure_runtime_matplotlib": "3.10.8",
+    "parent_commit": "b3ddf81c4e893866aac04903f682fb5aa01830e2",
+    "physical_model_identification_proved": false,
+    "previous_catalog_namespace_warnings": 171,
+    "root_adversarial_appendix_checks": 10999,
+    "source_preservation": "receipts/waves-source-preservation.json",
+    "test_methods": 61
+  },
   "quantum_speedup_proved": false,
   "required_script_gates": {
     "observer_foundations": "PASS",
     "ordinal_succ_report": "PASS",
     "provenance": "PASS_72_ITEMS"
+  },
+  "return_family_and_root_continuation": {
+    "catalog_warning_count": 171,
+    "dossier_methods": 86,
+    "finite_boundaries": [
+      "Infinite statements rely on displayed proofs; finite counts are not independent votes.",
+      "Common fixed space is relative to the return family; successor moves its root.",
+      "Analytic conditioning is an observation-interface statement, not a proof-hardness lower bound.",
+      "The typed path resolvent is formal; analytic evaluation requires separate convergence.",
+      "Return APIs use exact real-rational states; the analytic proofs allow complex states."
+    ],
+    "integration_history": "research/2026-11-12/prime_fixed_point_observer/receipts/return-integration-history.json",
+    "main_return_checks": 107806,
+    "motion_checks": 1559,
+    "native_run": {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/66b470ffd34d/SUCC",
+      "elapsed_seconds": 1523.964,
+      "exit_code": 0,
+      "final_unittest_summary": [
+        "13047",
+        "1517.658"
+      ],
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/return-native-suite.log",
+      "parent_commit": "3b2a3058ac6973da43554cbeeaaeee806a891d67",
+      "scope": "Required native suite; new isolated dossier modules are checked separately."
+    },
+    "native_tests": 13047,
+    "parent_commit": "3b2a3058ac6973da43554cbeeaaeee806a891d67",
+    "root_limit_checks": 28076,
+    "separate_category_checks": 353330,
+    "source_preservation_receipt": "research/2026-11-12/prime_fixed_point_observer/receipts/return-source-preservation.json",
+    "source_swap_checks": 788,
+    "status": "PASS: exact finite controls and required local gates",
+    "typed_channel_checks": 354,
+    "typed_histories_through_cost_9": 3575,
+    "universal_prime_pair_estimate_proved": false
   },
   "runtime": {
     "mpmath": "1.3.0",
@@ -173,5 +772,126 @@
     "scipy": "1.17.0",
     "sympy": "1.14.0"
   },
-  "schema": "prime-observer-validation-v1"
+  "schema": "prime-observer-validation-v1",
+  "shared_carrier_followup": {
+    "all_integer_targets": [
+      4,
+      512
+    ],
+    "dossier_test_methods_rerun": 47,
+    "dossier_test_status": "PASS",
+    "explicit_checks": 691,
+    "failures": 0,
+    "general_operator_bound_numerically_validated": false,
+    "integration_checks": [
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/build_math_memory.py",
+          "--write"
+        ],
+        "exit_code": 0,
+        "log": "carrier-catalog-write.log"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/build_math_memory.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "carrier-catalog.log"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "scripts/verify_math_memory_graph.py"
+        ],
+        "exit_code": 0,
+        "log": "carrier-math-memory-graph.log"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "carrier-diff-check.log"
+      }
+    ],
+    "native_full_suite_rerun": false,
+    "original_seven_source_test_hashes_unchanged": true,
+    "parent_commit": "836d03806183c1f73488dca1d37e149a9826eb53",
+    "report": "receipts/CARRIER_REPORT.json",
+    "source_sha256": {
+      "carrier_probe.py": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d",
+      "cylinder.py": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+      "prime_observer.py": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50"
+    },
+    "universal_compression_advantage_claimed": false
+  },
+  "triadic_transport_extension": {
+    "anchor_basis_cases": 12000,
+    "boundary_vertex_conventions_exactly_checked": true,
+    "check": "receipts/triadic-check.json",
+    "claims": "TRI-01 through TRI-06; TRI-06 is interpretation",
+    "independent_external_peer_review": false,
+    "mixed_composition_labels": 500,
+    "phase_banks": 64,
+    "prime_edges": 587,
+    "pure_gauge_banks": 64,
+    "report": "receipts/TRIADIC_REPORT.json",
+    "source_counterfeit": "(5 7), braid14/10 and mixed-adjoint19/13",
+    "three_is_universal_origin_of_linear_algebra": false,
+    "triangle_framework_is_classical": true
+  },
+  "twin_present_output_continuation": {
+    "catalog_warning_count": 171,
+    "correlation_checks": 396,
+    "current_outputs_only": true,
+    "dossier_methods": 99,
+    "finite_boundaries": [
+      "Infinite statements rely on displayed proofs, not finite check counts.",
+      "Only current outputs in calibrated frames are compared; internal records are not raw comparator inputs.",
+      "Coordinate change is distinct from justified temporal or dynamical prediction.",
+      "Arithmetic unitary extension is a one-step compression, not automatic power or category-equivalence dilation.",
+      "Infinite weighted comparison needs precision and tail conditions; an opposite-side partner can be unbounded.",
+      "Deferred designated readout does not establish an objective physical collapse law."
+    ],
+    "gluing_checks": 7315,
+    "historical_frame_transport_required": true,
+    "integration_history": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-integration-history.json",
+    "native_run": {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/66b470ffd34d/SUCC",
+      "elapsed_seconds": 1411.864,
+      "exit_code": 0,
+      "final_unittest_summary": [
+        "13047",
+        "1404.833"
+      ],
+      "log": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-native-suite.log",
+      "parent_commit": "7622063945ab06c72b092371747a1a5bbbf35e3a",
+      "scope": "Required native suite; new isolated dossier modules are checked separately."
+    },
+    "native_tests": 13047,
+    "parent_commit": "7622063945ab06c72b092371747a1a5bbbf35e3a",
+    "physical_realization_verified": false,
+    "present_frame_seam_checks": 1219,
+    "source_preservation_receipt": "research/2026-11-12/prime_fixed_point_observer/receipts/twin-source-preservation.json",
+    "status": "PASS: exact finite controls and required local gates",
+    "transport_checks": 122975,
+    "universal_prime_pair_estimate_proved": false
+  }
 }

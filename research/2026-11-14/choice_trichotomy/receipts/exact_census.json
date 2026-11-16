@@ -1,0 +1,73 @@
+{
+  "farkas_certificate": {
+    "At_lambda_nonnegative": true,
+    "b_dot_lambda": "-1",
+    "rows": [
+      [
+        "normal",
+        0
+      ],
+      [
+        "action",
+        0,
+        0,
+        1
+      ],
+      [
+        "action",
+        0,
+        1,
+        1
+      ]
+    ],
+    "weights": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  "finite_census": {
+    "2": {
+      "1": {
+        "total": 4,
+        "without_equivariant_point": 1,
+        "without_equivariant_probability": 0
+      },
+      "2": {
+        "total": 8,
+        "without_equivariant_point": 0,
+        "without_equivariant_probability": 0
+      }
+    },
+    "3": {
+      "1": {
+        "total": 27,
+        "without_equivariant_point": 8,
+        "without_equivariant_probability": 0
+      },
+      "2": {
+        "total": 90,
+        "without_equivariant_point": 30,
+        "without_equivariant_probability": 24
+      },
+      "3": {
+        "total": 162,
+        "without_equivariant_point": 0,
+        "without_equivariant_probability": 0
+      }
+    }
+  },
+  "independent_sympy": "PASS",
+  "integer_shift_tv": {
+    "0": "1",
+    "1": "1/3",
+    "10": "1/21",
+    "2": "1/5",
+    "5": "1/11",
+    "50": "1/101"
+  },
+  "python": "3.13.5",
+  "scope": "finite exact model and independently generated symbolic oracle, not all-parameter proof authority",
+  "status": "PASS",
+  "unit_tests": 23
+}

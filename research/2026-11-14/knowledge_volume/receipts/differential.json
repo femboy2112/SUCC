@@ -1,0 +1,34 @@
+{
+  "all_sources_n_le_4": 3984,
+  "audit_script_sha256": "a8b0083525f32da89a3c63363b88d10e2c44b71166d1c6e7835fd9c447578f21",
+  "composition_input_horizons_inclusive": [
+    0,
+    4
+  ],
+  "decoder_compositions": 60342,
+  "failures": 0,
+  "generator_subsets_size_le_4_from_1_to_9": 256,
+  "malformed_horizon_certificates_rejected": 23,
+  "malformed_profiles_rejected": 17,
+  "membership_and_realization_horizons_each": 301,
+  "monoid_horizons_inclusive": [
+    0,
+    300
+  ],
+  "monoid_oracle": "Independent Boolean coin dynamic programming.",
+  "pairwise_horizon_checks": 99600,
+  "permutation_classification": "Checked every permutation source among the enumerated tables.",
+  "scope": "Finite declared-source differential checks; not a formal or empirical source proof.",
+  "sha256": {
+    "observational_succ/predictive_horizons.py": "1c2394c915acc2ef9755b6646117dc92adc8e5d9bcac9d9110e464d0f6c97c79",
+    "research/2026-11-14/knowledge_volume/HORIZON_THEOREMS.md": "8ce90d92431d63ad988bcfb5cec339f756da753c1308eb2be71df48b87d3da6e",
+    "tests/test_predictive_horizons.py": "ca757f364292be617c392fccaaaf99ecf2eca9e9a446c0f106c11f664d4f6246"
+  },
+  "source_horizons_inclusive": [
+    0,
+    24
+  ],
+  "source_oracle": "Direct repeated walks; all equal-present-report source-state pairs.",
+  "status": "PASS",
+  "unexpected_exceptions": 0
+}

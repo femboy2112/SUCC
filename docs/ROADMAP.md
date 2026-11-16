@@ -58,6 +58,15 @@ records proof scope and merge gates.
 
 # Research roadmap
 
+**Principia Observatoris first milestone:** the
+[living manuscript](principia_observatoris/README.md) now supplies a typed kernel,
+minimal linear predictive refinement, exact hidden-fiber error, bounded
+discrimination and a conditional classical instrument quotient. The next
+foundational obligation is resource- and disturbance-aware acquisition of a
+predictive statistic on one carrier; fixed schedules have the restricted CG10
+criterion. Original-source arithmetic signed estimates remain separate open
+obligations. See its [claim register](principia_observatoris/REFERENCE.md).
+
 **2026-10-24 Harmonic mirror SUCC / critical Fourier lag continuation.**
 [HMS claim supplement](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md) and
 [rigorous mirror/Fejér dossier](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md).

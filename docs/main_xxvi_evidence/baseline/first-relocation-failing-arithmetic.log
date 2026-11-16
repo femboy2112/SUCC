@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/f2795564bfc4/baseline_receipts/xxv-portable/replay-source-r2kkxdsj/research/2026-11-11/innovation_arithmetic_decoupling/probe_arithmetic.py", line 1427, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/workspace/scratch/f2795564bfc4/baseline_receipts/xxv-portable/replay-source-r2kkxdsj/research/2026-11-11/innovation_arithmetic_decoupling/probe_arithmetic.py", line 1413, in main
+    R, ok = run(args.quick)
+            ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/f2795564bfc4/baseline_receipts/xxv-portable/replay-source-r2kkxdsj/research/2026-11-11/innovation_arithmetic_decoupling/probe_arithmetic.py", line 1309, in run
+    at07 = at07_section()
+           ^^^^^^^^^^^^^^
+  File "/workspace/scratch/f2795564bfc4/baseline_receipts/xxv-portable/replay-source-r2kkxdsj/research/2026-11-11/innovation_arithmetic_decoupling/probe_arithmetic.py", line 1215, in at07_section
+    t = load_at07_transport()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/f2795564bfc4/baseline_receipts/xxv-portable/replay-source-r2kkxdsj/research/2026-11-11/innovation_arithmetic_decoupling/probe_arithmetic.py", line 1210, in load_at07_transport
+    spec.loader.exec_module(mod)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/f2795564bfc4/baseline_receipts/xxv-portable/replay-source-r2kkxdsj/research/2026-10-30/arithmetic_barrier/arithmetic/transport.py'

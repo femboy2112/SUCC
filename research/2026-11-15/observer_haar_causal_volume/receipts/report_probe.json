@@ -1,0 +1,235 @@
+{
+  "python": "3.12.14",
+  "script_sha256": "9e0a10f4254c7db76d7b18b5154f6e12f50ae2e9d17cd54081df249c1db272d9",
+  "scope": "Declared model tables; no empirical quantum or physical BBP experiment.",
+  "structural_probe": {
+    "rows": [
+      {
+        "fresh_favorable_reports": 0,
+        "p": "1/2",
+        "haar_detail_energy": "1/4",
+        "information_nats": {
+          "lower": "0.130812035941",
+          "upper": "0.130812035942",
+          "label": "certified outward rational decimal enclosure"
+        },
+        "deep_vs_stop_policy_numerical": 0.4616992503206045
+      },
+      {
+        "fresh_favorable_reports": 1,
+        "p": "3/4",
+        "haar_detail_energy": "9/16",
+        "information_nats": {
+          "lower": "0.316377019303",
+          "upper": "0.316377019304",
+          "label": "certified outward rational decimal enclosure"
+        },
+        "deep_vs_stop_policy_numerical": 0.7910086689687962
+      },
+      {
+        "fresh_favorable_reports": 2,
+        "p": "9/10",
+        "haar_detail_energy": "81/100",
+        "information_nats": {
+          "lower": "0.494631921551",
+          "upper": "0.494631939708",
+          "label": "certified outward rational decimal enclosure"
+        },
+        "deep_vs_stop_policy_numerical": 0.9403105832568875
+      },
+      {
+        "fresh_favorable_reports": 3,
+        "p": "27/28",
+        "haar_detail_energy": "729/784",
+        "information_nats": {
+          "lower": "0.603539982533",
+          "upper": "0.603582455968",
+          "label": "certified outward rational decimal enclosure"
+        },
+        "deep_vs_stop_policy_numerical": 0.9741323300184136
+      },
+      {
+        "fresh_favorable_reports": 4,
+        "p": "81/82",
+        "haar_detail_energy": "6561/6724",
+        "information_nats": {
+          "lower": "0.655386267994",
+          "upper": "0.656690084897",
+          "label": "certified outward rational decimal enclosure"
+        },
+        "deep_vs_stop_policy_numerical": 0.9828384274371875
+      }
+    ],
+    "promotion_energy": "1/16",
+    "fixed_two_step_net_nats": {
+      "lower": "0.013980480852",
+      "upper": "0.013980480853",
+      "label": "certified outward rational decimal enclosure"
+    },
+    "optional_continuation_net_nats": {
+      "lower": "0.073188509651",
+      "upper": "0.073188509652",
+      "label": "certified outward rational decimal enclosure"
+    },
+    "numerical_menu": {
+      "direct_deep_net": -0.019187964058863027,
+      "immediate_preparatory_net": -0.01,
+      "preparatory_then_optional_deep_net": 0.07318850965175425,
+      "deep_after_outcome": [
+        false,
+        true
+      ],
+      "first_action": "preparatory"
+    }
+  },
+  "native_source": {
+    "terms": 16,
+    "levels": 5,
+    "mass": {
+      "lower": "0.196349540849",
+      "upper": "0.196349540850",
+      "label": "certified outward rational decimal enclosure"
+    },
+    "total_covariance": {
+      "lower": "0.040349106087",
+      "upper": "0.040349106088",
+      "label": "certified outward rational decimal enclosure"
+    },
+    "haar_level_energies": [
+      {
+        "lower": "0.027476558663",
+        "upper": "0.027476558664",
+        "label": "certified outward rational decimal enclosure"
+      },
+      {
+        "lower": "0.009479124488",
+        "upper": "0.009479124489",
+        "label": "certified outward rational decimal enclosure"
+      },
+      {
+        "lower": "0.002531416551",
+        "upper": "0.002531416552",
+        "label": "certified outward rational decimal enclosure"
+      },
+      {
+        "lower": "0.000645424425",
+        "upper": "0.000645424426",
+        "label": "certified outward rational decimal enclosure"
+      },
+      {
+        "lower": "0.000162352989",
+        "upper": "0.000162352990",
+        "label": "certified outward rational decimal enclosure"
+      }
+    ],
+    "remaining_variance": {
+      "lower": "0.000054228968",
+      "upper": "0.000054228969",
+      "label": "certified outward rational decimal enclosure"
+    },
+    "analytic_remainder_bound": "1/4096"
+  },
+  "classical_gamma_control": {
+    "trace_defect": "1/49",
+    "defect": [
+      [
+        "1/196",
+        "1/196",
+        "-1/196",
+        "-1/196"
+      ],
+      [
+        "1/196",
+        "1/196",
+        "-1/196",
+        "-1/196"
+      ],
+      [
+        "-1/196",
+        "-1/196",
+        "1/196",
+        "1/196"
+      ],
+      [
+        "-1/196",
+        "-1/196",
+        "1/196",
+        "1/196"
+      ]
+    ]
+  },
+  "quantum_model": {
+    "rows": [
+      {
+        "coherence": "-1",
+        "ZZ": "1",
+        "XX": "-1",
+        "trusted_two_axis_score": "2",
+        "rational_rotated_CHSH": "2/5",
+        "bob_marginal": [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      {
+        "coherence": "0",
+        "ZZ": "1",
+        "XX": "0",
+        "trusted_two_axis_score": "1",
+        "rational_rotated_CHSH": "8/5",
+        "bob_marginal": [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      {
+        "coherence": "3/4",
+        "ZZ": "1",
+        "XX": "3/4",
+        "trusted_two_axis_score": "7/4",
+        "rational_rotated_CHSH": "5/2",
+        "bob_marginal": [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      {
+        "coherence": "1",
+        "ZZ": "1",
+        "XX": "1",
+        "trusted_two_axis_score": "2",
+        "rational_rotated_CHSH": "14/5",
+        "bob_marginal": [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ]
+      }
+    ],
+    "restricted_XZ_classical_replica_verified": true,
+    "warning": "Trusted-qubit witness and rotated CHSH have different source assumptions."
+  }
+}

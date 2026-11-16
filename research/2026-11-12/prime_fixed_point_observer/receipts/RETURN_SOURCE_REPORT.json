@@ -1,0 +1,85 @@
+{
+  "checks": 788,
+  "degree_labels_checked": 300,
+  "failures": 0,
+  "finite_injection_cases": 90,
+  "permutation": "(11 13)",
+  "schema": "succ-return-source-probe-v1",
+  "scope": "Exact finite calibration; universal statements have separate proofs. The permutation preserves primes as a set; this is a coupling test, not a changed prime-pair count.",
+  "status": "PASS",
+  "unit_path_cases": 45,
+  "witnesses": [
+    {
+      "genuine_outputs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "genuine_strength": 4,
+      "input_label": 1,
+      "n": 5,
+      "transported_outputs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "transported_strength": 4
+    },
+    {
+      "genuine_outputs": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "genuine_strength": 4,
+      "input_label": 6,
+      "n": 5,
+      "transported_outputs": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "transported_strength": 4
+    },
+    {
+      "genuine_outputs": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "genuine_strength": 4,
+      "input_label": 11,
+      "n": 5,
+      "transported_outputs": [
+        3,
+        null,
+        null,
+        null
+      ],
+      "transported_strength": 1
+    },
+    {
+      "genuine_outputs": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "genuine_strength": 0,
+      "input_label": 13,
+      "n": 5,
+      "transported_outputs": [
+        null,
+        5,
+        7,
+        9
+      ],
+      "transported_strength": 3
+    }
+  ]
+}

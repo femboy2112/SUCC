@@ -1,0 +1,51 @@
+name: Principia Observatoris second forge
+
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/observatoris_*.py'
+      - 'tests/test_observatoris_*.py'
+      - 'formal/ObservatorisQuantale.lean'
+      - 'scripts/check_observatoris_lean.py'
+      - 'lean-toolchain'
+      - '.github/workflows/principia-observatoris.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: principia-observatoris-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  exact-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Exact finite models, exhaustive small searches and mutation controls
+        run: python -m unittest discover -s tests -p 'test_observatoris_*.py' -v
+  kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned core Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Export theorem types, require no axioms, reject both mutations
+        run: python3 scripts/check_observatoris_lean.py --output "$RUNNER_TEMP/observatoris-kernel.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: principia-observatoris-kernel
+          path: ${{ runner.temp }}/observatoris-kernel.json

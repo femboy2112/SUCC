@@ -1,0 +1,142 @@
+{
+  "baseline": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "scope": "exact finite rational certificates; not asymptotic evidence",
+  "rows": [
+    {
+      "B": 8,
+      "role": "development",
+      "impulse_count": 8,
+      "integer_energy": 253,
+      "anti_lock_interval": [
+        "5563904969/4294967296",
+        "5572486311/4294967296"
+      ],
+      "current_bound": [
+        "3683233823/4294967296",
+        "379101481/134217728"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 8,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 16,
+      "role": "development",
+      "impulse_count": 14,
+      "integer_energy": 289,
+      "anti_lock_interval": [
+        "241774481/268435456",
+        "967628403/1073741824"
+      ],
+      "current_bound": [
+        "528128391/1073741824",
+        "6906924967/4294967296"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 16,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 32,
+      "role": "development",
+      "impulse_count": 30,
+      "integer_energy": 657,
+      "anti_lock_interval": [
+        "2014138799/2147483648",
+        "4028805023/4294967296"
+      ],
+      "current_bound": [
+        "1212180093/2147483648",
+        "3894160151/2147483648"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 32,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 64,
+      "role": "development",
+      "impulse_count": 62,
+      "integer_energy": 1469,
+      "anti_lock_interval": [
+        "2266555119/2147483648",
+        "2266620853/2147483648"
+      ],
+      "current_bound": [
+        "5314125/8388608",
+        "8678169131/4294967296"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 64,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 97,
+      "role": "held_out",
+      "impulse_count": 89,
+      "integer_energy": 2193,
+      "anti_lock_interval": [
+        "2196444005/2147483648",
+        "137279537/134217728"
+      ],
+      "current_bound": [
+        "1341317237/2147483648",
+        "4270172785/2147483648"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 97,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 193,
+      "role": "held_out",
+      "impulse_count": 183,
+      "integer_energy": 4574,
+      "anti_lock_interval": [
+        "2257322309/2147483648",
+        "2257329523/2147483648"
+      ],
+      "current_bound": [
+        "2815033349/4294967296",
+        "4472226393/2147483648"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 193,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 389,
+      "role": "held_out",
+      "impulse_count": 371,
+      "integer_energy": 8895,
+      "anti_lock_interval": [
+        "4558287715/4294967296",
+        "2279145633/2147483648"
+      ],
+      "current_bound": [
+        "1358657187/2147483648",
+        "4313269955/2147483648"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 389,
+      "exact_checks_passed": true
+    },
+    {
+      "B": 769,
+      "role": "held_out",
+      "impulse_count": 706,
+      "integer_energy": 15865,
+      "anti_lock_interval": [
+        "1054048711/1073741824",
+        "4216195753/4294967296"
+      ],
+      "current_bound": [
+        "306520227/536870912",
+        "486354781/268435456"
+      ],
+      "source_scale_separated_count_delta_1_over_8": 769,
+      "exact_checks_passed": true
+    }
+  ],
+  "finite_coherent_control": {
+    "H": 1600,
+    "tested_horizon": 1538,
+    "all_impulses_zero": true,
+    "seed_is_original_zero": false
+  },
+  "R0": "OPEN",
+  "pi_normality": "OPEN"
+}

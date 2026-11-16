@@ -1,0 +1,884 @@
+{
+  "schema_version": 1,
+  "title": "Leah-Gamma twist typed genealogy",
+  "baseline": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "scope": "Archival reconstruction, not a new proof or exhaustive read of all files.",
+  "coverage": {
+    "checkout_files_at_clone": 10944,
+    "remote_branch_references_observed": 603,
+    "live_pr_records": 32,
+    "primary_source_records": 26,
+    "reading_scope": "Primary theorem text or relevant sections; some long outputs were inspected by targeted sections. Full archival proof audit not claimed."
+  },
+  "pr_metadata": [
+    {
+      "pr": 20,
+      "title": "Proof-Backaction SUCC: proportional knowledge debt, asymmetric proof transport and Zeno horizon",
+      "state": "closed",
+      "merged": false,
+      "head": "3c350bee700c804b4177d483f2896107a0f1e5d4",
+      "branch": "research/proof-backaction-debt-zeno-2026-10-11",
+      "base": "8feac0a49095780f924ab0dc271210d6c7db2063",
+      "merge_commit": "9f8da4b764330e466db1842bbd59078c45feb931",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 21,
+      "title": "Noncommuting SUCC Proof Transport: source shadows, future bisimulation and GF(2) holonomy",
+      "state": "closed",
+      "merged": false,
+      "head": "1c1a83d5194f0541fd85e77d3f90bd2fec376e8e",
+      "branch": "research/noncommuting-source-proof-transport-2026-10-11",
+      "base": "3c350bee700c804b4177d483f2896107a0f1e5d4",
+      "merge_commit": "e00be56256ef03497957c073bf3fb1ac3d0b61b5",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 22,
+      "title": "Operational Yoneda SUCC: source-indexed proof-policy descent, restricted probes and continuation bisimulation",
+      "state": "closed",
+      "merged": false,
+      "head": "f060d465a808877210a02bae4c37b73268513a5d",
+      "branch": "research/operational-yoneda-policy-descent-2026-10-11",
+      "base": "1c1a83d5194f0541fd85e77d3f90bd2fec376e8e",
+      "merge_commit": "91a77fb4cd85e03480583b0b11d695ffa6284087",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 23,
+      "title": "Research: Gaussian moat certificates and shared information transport",
+      "state": "closed",
+      "merged": true,
+      "head": "b606b78bb8ea716fd30fe858043b971c0d43a788",
+      "branch": "research/gaussian-moat-certificate-duality-2026-10-12",
+      "base": "68b33157df2086355c00300fc7b534251f6b09c0",
+      "merge_commit": "b606b78bb8ea716fd30fe858043b971c0d43a788",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 24,
+      "title": "ObsSUCC: source-relative coverage lower bounds and certified transport",
+      "state": "closed",
+      "merged": false,
+      "head": "a65acc4000ecbe8d53d20464cf7fe68747c56c28",
+      "branch": "research/source-relative-coverage-2026-10-12",
+      "base": "b606b78bb8ea716fd30fe858043b971c0d43a788",
+      "merge_commit": "6140885dd9d38ba3690be64d38b067e8c5c7b38c",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 25,
+      "title": "Swarm audit of the Gaussian-moat/entropy branch: corrections + new results (draft)",
+      "state": "closed",
+      "merged": false,
+      "head": "a851db14e3355e5bce64a8dd801f43e05ceb4cc2",
+      "branch": "integration/gaussian-moat-audit-2026-10-12",
+      "base": "b606b78bb8ea716fd30fe858043b971c0d43a788",
+      "merge_commit": "7ba405185f4fafaa50fe312bc049c73bce11ebc6",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 26,
+      "title": "SUCC/FUCC holonomy and diagonal A/B climbing proof tower to E",
+      "state": "closed",
+      "merged": true,
+      "head": "a737061cf880292261a63a703b73eb3f198a6600",
+      "branch": "research/diagonal-ice-climber-tower-holonomy-2026-10-12",
+      "base": "7c8b59cf3685ddd92c937b0eb0dc5b92ac1cd239",
+      "merge_commit": "a737061cf880292261a63a703b73eb3f198a6600",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 27,
+      "title": "Local-to-global SUCC: independent Čech/Yoneda gluing and proof construction at E",
+      "state": "closed",
+      "merged": false,
+      "head": "8110536ecc6851028d5eef2f3143815b8f9bac3c",
+      "branch": "research/local-global-yoneda-gluing-2026-10-12",
+      "base": "a737061cf880292261a63a703b73eb3f198a6600",
+      "merge_commit": "36bccd3b4db0f8635c1b01669fbec3bac02ce44e",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 28,
+      "title": "Shared-carrier SUCC boundary descent and harmonic E-ring reconstruction",
+      "state": "closed",
+      "merged": false,
+      "head": "4733d5e5534bf64f8f41d57e9da05ecc5bc42c61",
+      "branch": "research/shared-carrier-boundary-descent-2026-10-12",
+      "base": "8110536ecc6851028d5eef2f3143815b8f9bac3c",
+      "merge_commit": "63347c6c05c9ea9e4a4ca526fb841851c7e824b9",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 218,
+      "title": "Research: π polygon SUCC, exact path-space quotient and normality transport (POL-01–09)",
+      "state": "closed",
+      "merged": true,
+      "head": "8f9444c3984e4b981422d400c4c3ebde7a0a6715",
+      "branch": "research/pi-polygon-normality-path-defect-2026-10-20",
+      "base": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "merge_commit": "f3d0df22d4e191a9cfc7aa5fefbcd31fe8a4f8b7",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 232,
+      "title": "Duck → Lean → π: checked source identity, conditional normality transport, and hostile controls",
+      "state": "closed",
+      "merged": true,
+      "head": "bf55ab16dde844524318faf312ad30c2d7184c9f",
+      "branch": "research/duck-principle-pi-proof-first-2026-10-21",
+      "base": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "merge_commit": "4796439c2b1e99621fd157a242f27643ef32e95b",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 306,
+      "title": "Skeleton Key Main XII: signed K→PKP* discharged as negative theorem + is_cartesian firewall (staging, do not merge)",
+      "state": "closed",
+      "merged": true,
+      "head": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+      "branch": "research/pi-signed-pushforward-obstruction-2026-10-26",
+      "base": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+      "merge_commit": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 309,
+      "title": "BBP quadratic atoms, finite binary compiler, and graded golden–Gamma bridge",
+      "state": "closed",
+      "merged": false,
+      "head": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+      "branch": "research/oily-macaroni-laplace-mellin-2026-10-26",
+      "base": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+      "merge_commit": "13de153b485a3b20334aab8a9b840788196a1d88",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 310,
+      "title": "[DRAFT] Oily–Macaroni Totient: exact Möbius grades, third-order golden–Gamma shadow, signed no-go",
+      "state": "closed",
+      "merged": false,
+      "head": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+      "branch": "research/oily-macaroni-totient-third-shadow-2026-10-26",
+      "base": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+      "merge_commit": "3a9d1738b3041529d16a4a5aad3b149f7abd1697",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 324,
+      "title": "[DRAFT] Selected π boundary: nonlinear echo saturation, exact CRT energy gate, finite-Fourier counterfeit",
+      "state": "closed",
+      "merged": false,
+      "head": "fca58d3e0289e57596dd8ca74bace325a450df31",
+      "branch": "research/pi-selected-boundary-crt-finite-spectral-2026-10-27",
+      "base": "ae5dad40bfcbcd7a50676ed61c297fdc46846f37",
+      "merge_commit": "80149d04debde6ff0979b2b465455cf4f2fbcb69",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 337,
+      "title": "[DRAFT] Furstenberg firewall: finite-type Kempner counterexample and corrected π rigidity gate",
+      "state": "closed",
+      "merged": false,
+      "head": "0e36f9c5107ffac97e642ef00511ec4a6f6bdd8d",
+      "branch": "research/furstenberg-kempner-firewall-2026-10-27",
+      "base": "206644c293c2672ce338b08f2f73df642942dbcc",
+      "merge_commit": "01daec22bd26532586ae2b13c237a8082f0aa0ae",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 459,
+      "title": "[DRAFT] Original BBP prime clocks, exponential conductor and Galois trace false-cancellation firewall",
+      "state": "closed",
+      "merged": true,
+      "head": "ec9c5a98772c60ab06bd4bb0a3d52a751a8bdc6a",
+      "branch": "research/selected-prime-phase-cofactor-2026-11-01",
+      "base": "81045770234a114247e43eb08ae5c6d446e9514a",
+      "merge_commit": "ec9c5a98772c60ab06bd4bb0a3d52a751a8bdc6a",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 498,
+      "title": "[DRAFT] Gamma Pigeonhole — Euler–Mascheroni prime-window source pinning and CRT barrier",
+      "state": "closed",
+      "merged": true,
+      "head": "247030219931ef0722e973eb909960ee4ea7eeac",
+      "branch": "research/gamma-prime-window-pigeonhole-2026-11-04",
+      "base": "a673ec95dfac4ef6a61c60222be8b615fd08535d",
+      "merge_commit": "b371ab0e8ab3fd7faa3d980bbdd2884ba7aa8b16",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 499,
+      "title": "[DRAFT] Prime-Frobenius χ₋₄ self-quotient: two-state Gaussian primal, 8N denominator & source Weyl equivalence",
+      "state": "closed",
+      "merged": false,
+      "head": "4ff640637d18b8161599402f7c6ba23388a63652",
+      "branch": "research/bbp-prime-character-primal-quotient-2026-11-04",
+      "base": "4383bd31340af700e312f13d7ef28af090c152d5",
+      "merge_commit": "b3facd424c38cf91e7239a6b24ecb099292a200d",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 500,
+      "title": "[Draft] Europa Weyl: restore the primal, bound pair-denominator loss, reconstruct signed beta arithmetic",
+      "state": "closed",
+      "merged": false,
+      "head": "bf103c4a25bbd83b6cfbad1dd77895928300ddd9",
+      "branch": "research/europa-weyl-source-2026-11-04",
+      "base": "4ff640637d18b8161599402f7c6ba23388a63652",
+      "merge_commit": "599f20e4f85940a4430770625cf136e1141e14d1",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 528,
+      "title": "[DRAFT] BBP cross-place return: exact 2-adic source clone × real carry seam × expansivity (π OPEN)",
+      "state": "closed",
+      "merged": false,
+      "head": "45c5d41435fdf94998d81901b0e58b9fa7775106",
+      "branch": "research/adelic-odometer-real-phase-bridge-2026-11-06",
+      "base": "c550cd4089db0367464ff38884797e06359fbcbc",
+      "merge_commit": "a7ff459ce5991363696a6e2c465d873bc9150952",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 533,
+      "title": "[DRAFT] Spectral Exorcism: ×16 frequency-ray rigidity × BBP Fejér mesoscopic source transport (π OPEN)",
+      "state": "closed",
+      "merged": false,
+      "head": "34d1c1f40b34f2dcf76283f307062069c87a579c",
+      "branch": "research/spectral-obstruction-selected-seed-2026-11-06",
+      "base": "06b46d5715153412215947a0e9ee4800c9bd9a5f",
+      "merge_commit": "2de0456878929ce825a91b134b59f120bf692792",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 565,
+      "title": "[DRAFT] Recursive Haar Yoneda: two-digit BBP = one radix-256 BBP, sharp one-symmetry rigidity (π OPEN)",
+      "state": "closed",
+      "merged": false,
+      "head": "35a664c19e91ab5bd11678c82566ce88336e0309",
+      "branch": "research/recursive-haar-yoneda-bbp-blocking-2026-11-09",
+      "base": "642323361df57567d16d7b24e5472e282dc898b1",
+      "merge_commit": "dab24b10b9446f3dbc99ace500620202efd1cbda",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 584,
+      "title": "Main XXIII — audited BBP parity frontier and intrinsic arithmetic Hamiltonians",
+      "state": "closed",
+      "merged": true,
+      "head": "50481e49592af00d87c602f671a28f3503709de0",
+      "branch": "integration/succ-main-xxiii-intrinsic-frontier",
+      "base": "43886e830cee5ff6d6b37719e18d809819673bd9",
+      "merge_commit": "c5f2fd6b69ad164808c48fe936b53649a78a3e12",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 598,
+      "title": "Main XXIV — source identity, categorical observers and signed normality frontier",
+      "state": "closed",
+      "merged": true,
+      "head": "9e68b830e834d5560b95bd4c428fb5f079e9db33",
+      "branch": "integration/succ-main-xxiv-categorical",
+      "base": "c5f2fd6b69ad164808c48fe936b53649a78a3e12",
+      "merge_commit": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 599,
+      "title": "IAD + ZSC: innovation × arithmetic decoupling, saving–exponent law, digit-change rung, source moduli (π normality OPEN)",
+      "state": "closed",
+      "merged": true,
+      "head": "8de33430fb35dc0360dacff92c4ee1e4364ad458",
+      "branch": "research/innovation-arithmetic-decoupling-2026-11-11",
+      "base": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "merge_commit": "8de33430fb35dc0360dacff92c4ee1e4364ad458",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 602,
+      "title": "Frontier rungs: limit faces, canonical thresholds, restricted exponents, Lean-checked carry lemmas (π normality OPEN)",
+      "state": "closed",
+      "merged": true,
+      "head": "29ecc96d7d812b64ab6d15994ee9ab56dfd1dabc",
+      "branch": "research/frontier-rungs-restricted-exponent-2026-11-12",
+      "base": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "merge_commit": "0e8aa7acb9af887ca301494bdbe74f95af00c930",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 603,
+      "title": "Main XXV — signed ladder, canonical thresholds, restricted exponents and prime fixed-point observers (π normality OPEN)",
+      "state": "closed",
+      "merged": true,
+      "head": "312b5af27bcc5327f7bb4e83513b65f52a41019b",
+      "branch": "integration/succ-main-xxv-frontier-rungs",
+      "base": "071ce1e0ee6ab8f8c07113e901131aa646d6b95d",
+      "merge_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "head_is_ancestor_of_main": true
+    },
+    {
+      "pr": 604,
+      "title": "[DRAFT] Same-carrier observer ladder: 0→5, two-root selection, and entangled twin rendezvous",
+      "state": "open",
+      "merged": false,
+      "head": "220df67b4ee3f558de63f08cc76ed52b34138302",
+      "branch": "research/arity-0-5-loop-spinor-gns-2026-11-12",
+      "base": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "merge_commit": "9dfb571a542a778d762fa51789a0d5ea04f2b00b",
+      "head_is_ancestor_of_main": false
+    },
+    {
+      "pr": 605,
+      "title": "Research: boundary reconstruction, adaptive resolution and complex filter limits",
+      "state": "open",
+      "merged": false,
+      "head": "8fa0fe392f8c59f168a5d59a1f9c998c9e0de814",
+      "branch": "research/holographic-boundary-filters-2026-11-12",
+      "base": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "merge_commit": "f0475cf82dab74bfc68e0d0873de7b6945386a48",
+      "head_is_ancestor_of_main": false
+    },
+    {
+      "pr": 606,
+      "title": "[DRAFT] Holographic boundary filters × active observability × quantum backaction/QND",
+      "state": "open",
+      "merged": false,
+      "head": "f133e37b2dc736a1200a6cb15184291b4557e0fd",
+      "branch": "research/holographic-boundary-filter-tomography-2026-11-12",
+      "base": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "merge_commit": "2ba816d0fc724836e7add8c3625d0d6dc07a2f9b",
+      "head_is_ancestor_of_main": false
+    },
+    {
+      "pr": 607,
+      "title": "Boundary reconstruction: source-grid costs and calibrated transducers",
+      "state": "open",
+      "merged": false,
+      "head": "18a32aa23e1861a67b9f8d904f625b41aac00c1a",
+      "branch": "research/boundary-filter-complexity-2026-11-12",
+      "base": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "merge_commit": "b784e988262651dbfcde7b98b27251049b2c1022",
+      "head_is_ancestor_of_main": false
+    }
+  ],
+  "source_records": [
+    {
+      "path": "research/2026-10-11/OPERATIONAL_YONEDA_POLICY_DESCENT.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "1ac8487a5fe5f438834dc4ec2fce4c32f43731f2"
+    },
+    {
+      "path": "research/2026-10-12/LOCAL_GLOBAL_YONEDA_GLUE_2026-10-12.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "92efffbe3a4df8deea01c84a59efc89afb742d02"
+    },
+    {
+      "path": "research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "c912a7e827edd8b3d017daa155c9d82a5208c82c"
+    },
+    {
+      "path": "research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "2f705007eb5e2aa257d7c280ec18c0a3fafc917a"
+    },
+    {
+      "path": "research/2026-10-21/DUCK_PRINCIPLE_AND_PI_PROOF_FRONTIER.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "36a45158cd64cd802b57f5343135176a58f2458a"
+    },
+    {
+      "path": "research/2026-10-21/DUCK_BBP_SOURCE_IDENTITY.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "3d5d84d1753a7048e3f062311eba307428610b64"
+    },
+    {
+      "path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "a6ce9c0f7d2946f2ea789451c57d947782ffd1d3"
+    },
+    {
+      "path": "research/2026-10-26/SEINFELD_INVERSE_AVERAGING_AND_REALIZATION.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "2bf39e3e5bc6129cd11f382ceb2358e18ba6614e"
+    },
+    {
+      "path": "docs/CLAIM_SUPPLEMENT_SIGNED_PUSHFORWARD_OBSTRUCTION.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "49b463f3eb05f86f02c70a753f32b208ecac5440"
+    },
+    {
+      "path": "research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "ddc9d13b0ccba7f2881f04c7feb105d66cd81426"
+    },
+    {
+      "path": "research/2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "5e7893a63f65ad77bb434f6768cbed5dc160e669"
+    },
+    {
+      "path": "research/2026-11-01/selected_prime_phase/PROOFS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "1e6046b30116b2a34da9a8a48c48a515f75ea0b4"
+    },
+    {
+      "path": "research/2026-11-01/selected_prime_phase/FINITE_SIGNED_WINDOW.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "f08e92f0b9bdd5ebc9548da8a1185e257b3c7cc8"
+    },
+    {
+      "path": "research/2026-11-04/gamma_pigeonhole/PROOFS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "f3ed7f0a9d87111052ccad12e0a9aacc3903e2b5"
+    },
+    {
+      "path": "research/2026-11-04/prime_character_primal/PRIMAL_QUOTIENT_THEOREM.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "06e5ebb29efe88788f3a57f87c18e2217abb1ebc"
+    },
+    {
+      "path": "research/2026-11-06/adelic_return_bridge/THEOREMS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "c05b49550fa23f5333bf34cc2f8e12431163a1f7"
+    },
+    {
+      "path": "research/2026-11-06/spectral_exorcism/THEOREMS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "b571fe9658f240ff2a231fdf8812f72f711ff3ed"
+    },
+    {
+      "path": "research/2026-11-07/pinbed_yoneda_oscillators/ANCHORED_PATHS_VS_HOLONOMY.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "16ea75b5ae4860309b61a56ef28593e224886d5e"
+    },
+    {
+      "path": "research/2026-11-09/recursive_haar_pinbed/THEOREMS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "81807d50e9ca280d2fa2d1268c67eee87d2fd7a1"
+    },
+    {
+      "path": "research/2026-11-10/basel_crt_omega_phasebridge/SIGNED_BASEL_TAUBERIAN.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "e07983e868637577152288f6f9d1213fd15c77a6"
+    },
+    {
+      "path": "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "da261e759c86e123aaf4f8133b5e096c972711fb"
+    },
+    {
+      "path": "research/2026-10-19/ABC_TRIPLE_MOMENT.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "a72ef07eb006134e27bff2bbd9c1f66c3cb668d0"
+    },
+    {
+      "path": "research/2026-10-20/ABC_EFFECTIVE_MEAN.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "4e8917081db6c36196549532c5dcc14f9c77316e"
+    },
+    {
+      "path": "research/2026-10-19/FACTORIAL_BORWEIN_HOLOGRAPHIC_CLOCK.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "7b96e625d7203844387d07b8968343d4381fc49a"
+    },
+    {
+      "path": "research/2026-11-10/main_xxiii/HAMILTONIAN_ENDPOINT.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "6641702bc28059c8b6d09250f09d661def46837b"
+    },
+    {
+      "path": "docs/FOUNDATIONS.md",
+      "read_scope": "primary theorem text or relevant sections; not an audit of every cited proof",
+      "snapshot": "db9fb4b84672050efa79b13377f1e73364598a14",
+      "blob": "24d7e61ab10d7313f661c6505164fa51dc4fee70"
+    }
+  ],
+  "additional_read_paths": [
+    "research/2026-10-26/OILY_TOTIENT_THIRD_SHADOW.md",
+    "research/2026-10-26/FOUR_POLE_ATOMIC_SUBSTRATE.md"
+  ],
+  "unmerged_goldbach": {
+    "snapshot": "dbc7fed19189016f6ab27550f3e84940b632b09b",
+    "paths": [
+      "research/2026-11-12/signed_sieve_coupling/THEOREMS.md",
+      "research/2026-11-12/wave_resonance/THEOREMS.md"
+    ],
+    "status": "Read original signed/polarization and wave/localization statements, not re-proved; no pi bridge."
+  },
+  "nodes": [
+    {
+      "id": "history",
+      "kind": "instrument",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "statement": "Source-labelled legal histories, restricted-probe separation, exact policy descent.",
+      "source_path": "research/2026-10-11/OPERATIONAL_YONEDA_POLICY_DESCENT.md"
+    },
+    {
+      "id": "gluing",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "statement": "Global sections iff all complete overlap holonomies vanish; ordered products in nonabelian case.",
+      "source_path": "research/2026-10-12/LOCAL_GLOBAL_YONEDA_GLUE_2026-10-12.md"
+    },
+    {
+      "id": "target_descent",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "statement": "Target decoder exists iff target is constant on actual observation fibers.",
+      "source_path": "research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md"
+    },
+    {
+      "id": "polygon",
+      "kind": "transport",
+      "status": "PROVED_LOCAL",
+      "statement": "Certified geometric source and expanding orbit error; finite refinement/time limits may not commute.",
+      "source_path": "research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md"
+    },
+    {
+      "id": "duck",
+      "kind": "instrument",
+      "status": "SCOPED_FORMAL_AND_PAPER",
+      "statement": "One-step commuting factor maps transport all words; resemblance alone supplies no factor.",
+      "source_path": "research/2026-10-21/DUCK_PRINCIPLE_AND_PI_PROOF_FRONTIER.md"
+    },
+    {
+      "id": "bbp",
+      "kind": "source",
+      "status": "CLASSICAL_IDENTITY_SCOPED_FORMAL",
+      "statement": "Four-pole zero-seeded U_n+T_n=16^n*pi/16.",
+      "source_path": "research/2026-10-21/DUCK_BBP_SOURCE_IDENTITY.md"
+    },
+    {
+      "id": "farey_gamma",
+      "kind": "comparison",
+      "status": "DECLARED_CLASSICAL_COMPARISON",
+      "statement": "Farey/Gauss phi inverse and harmonic-Gauss discrepancy gamma share a declared environment, not a BBP signed estimate.",
+      "source_path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md"
+    },
+    {
+      "id": "residual",
+      "kind": "instrument",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "statement": "Retain coarse law plus signed fiber-null residual; selected expectation is a signed innovation pairing.",
+      "source_path": "research/2026-10-26/SEINFELD_INVERSE_AVERAGING_AND_REALIZATION.md"
+    },
+    {
+      "id": "cartesian",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "statement": "Finite signed base change for every amplitude iff square cartesian; realization alone insufficient.",
+      "source_path": "docs/CLAIM_SUPPLEMENT_SIGNED_PUSHFORWARD_OBSTRUCTION.md"
+    },
+    {
+      "id": "smooth_transfer",
+      "kind": "transport",
+      "status": "PROVED_LOCAL",
+      "statement": "Summable-tail nonlinear smooth cylinder transport with paid Lipschitz budget; seams excluded.",
+      "source_path": "research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md"
+    },
+    {
+      "id": "kempner",
+      "kind": "counterexample",
+      "status": "CLASSICAL_IMPORT_AND_ELEMENTARY_PROOF",
+      "statement": "Transcendental irrationality exponent two does not force entropy or digit-change density.",
+      "source_path": "research/2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md"
+    },
+    {
+      "id": "prime_cofactor",
+      "kind": "instrument",
+      "status": "PROVED_LOCAL",
+      "statement": "Exact prime birth factorization; Galois trace can be exponentially small without selected cancellation.",
+      "source_path": "research/2026-11-01/selected_prime_phase/PROOFS.md"
+    },
+    {
+      "id": "finite_joint",
+      "kind": "certificate",
+      "status": "ARCHIVED_EXACT_FINITE_CERTIFICATE",
+      "statement": "p=257 primary mean >49/100; selected joint h=1 mean <1/16 on n=33..128 only.",
+      "source_path": "research/2026-11-01/selected_prime_phase/FINITE_SIGNED_WINDOW.md"
+    },
+    {
+      "id": "gamma_pinning",
+      "kind": "inequality",
+      "status": "PROVED_LOCAL",
+      "statement": "Corrected Gamma window isolates original forcing for eligible p>=41, not accumulated state.",
+      "source_path": "research/2026-11-04/gamma_pigeonhole/PROOFS.md"
+    },
+    {
+      "id": "gaussian",
+      "kind": "transport",
+      "status": "PROVED_LOCAL",
+      "statement": "Prime-Frobenius angular/radial split, null radial period and O_h(log N) Weyl sum transfer.",
+      "source_path": "research/2026-11-04/prime_character_primal/PRIMAL_QUOTIENT_THEOREM.md"
+    },
+    {
+      "id": "carry_seam",
+      "kind": "instrument",
+      "status": "PROVED_LOCAL",
+      "statement": "2-adic state plus integer carry and enough denominator resolution reconstruct real rational phase.",
+      "source_path": "research/2026-11-06/adelic_return_bridge/THEOREMS.md"
+    },
+    {
+      "id": "collision",
+      "kind": "conditional_gate",
+      "status": "ESTABLISHED_IMPLICATION_OPEN_PREMISE",
+      "statement": "Source-selected mesoscopic collision o(log N) would imply normality; bound open.",
+      "source_path": "research/2026-11-06/spectral_exorcism/THEOREMS.md"
+    },
+    {
+      "id": "loop_blindness",
+      "kind": "counterexample",
+      "status": "PROVED_LOCAL",
+      "statement": "Every corrected temporal loop is seed blind; open zero-anchored paths retain selector.",
+      "source_path": "research/2026-11-07/pinbed_yoneda_oscillators/ANCHORED_PATHS_VS_HOLONOMY.md"
+    },
+    {
+      "id": "haar",
+      "kind": "conditional_gate",
+      "status": "ESTABLISHED_IMPLICATION_OPEN_PREMISE",
+      "statement": "Conditional one-digit/future defect controls distance to Haar; actual defect decay open.",
+      "source_path": "research/2026-11-09/recursive_haar_pinbed/THEOREMS.md"
+    },
+    {
+      "id": "basel",
+      "kind": "equivalent_gate",
+      "status": "ESTABLISHED_EQUIVALENCE_OPEN_TARGET",
+      "statement": "A*F_h(A;0)->0 iff shell Weyl means vanish; signed estimate open.",
+      "source_path": "research/2026-11-10/basel_crt_omega_phasebridge/SIGNED_BASEL_TAUBERIAN.md"
+    },
+    {
+      "id": "restricted",
+      "kind": "instrument",
+      "status": "PROVED_LOCAL",
+      "statement": "Restricted transference sees radix-prime valuation imbalance; required pi bound open.",
+      "source_path": "research/2026-11-12/frontier_rungs/RESTRICTED_EXPONENT.md"
+    },
+    {
+      "id": "abc",
+      "kind": "inequality",
+      "status": "PROVED_LOCAL",
+      "statement": "Effective primitive abc moment mean for t<2/3; no BBP transport.",
+      "source_path": "research/2026-10-20/ABC_EFFECTIVE_MEAN.md"
+    },
+    {
+      "id": "borwein",
+      "kind": "instrument",
+      "status": "PROVED_LOCAL_CLASSICAL",
+      "statement": "Stable cardinal reconstruction with actual Fourier port; samples can erase prime-width data.",
+      "source_path": "research/2026-10-19/FACTORIAL_BORWEIN_HOLOGRAPHIC_CLOCK.md"
+    },
+    {
+      "id": "hamiltonian",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL_AND_CLASSICAL_IMPORT",
+      "statement": "Ordered prime dilation correlation yields logarithmic derivative in original half-plane; completed signed identification open.",
+      "source_path": "research/2026-11-10/main_xxiii/HAMILTONIAN_ENDPOINT.md"
+    },
+    {
+      "id": "rh",
+      "kind": "conditional_gate",
+      "status": "CLASSICAL_EQUIVALENCE_OPEN_TARGET",
+      "statement": "Completed Suzuki/Weil positivity is RH-equivalent; generic positive covariance not identified.",
+      "source_path": "docs/FOUNDATIONS.md"
+    },
+    {
+      "id": "r0",
+      "kind": "open_target",
+      "status": "OPEN",
+      "statement": "Exists eta>0,B0: for every integer B>=B0, average (1-cos(2*pi*16^n*x)) over [B,2B) >=eta."
+    },
+    {
+      "id": "weyl",
+      "kind": "open_target",
+      "status": "OPEN",
+      "statement": "Every fixed integer h!=0 has normalized selected real Weyl sum tending to zero."
+    },
+    {
+      "id": "normality",
+      "kind": "open_target",
+      "status": "OPEN",
+      "statement": "Pi normal to base 16."
+    }
+  ],
+  "edges": [
+    {
+      "from": "history",
+      "to": "target_descent",
+      "type": "licensed_interface",
+      "scope": "Retaining original source and actual probe family is necessary for the factorization test."
+    },
+    {
+      "from": "gluing",
+      "to": "target_descent",
+      "type": "distinct_gate",
+      "scope": "Compatible charts do not imply source realizability or target sufficiency."
+    },
+    {
+      "from": "duck",
+      "to": "bbp",
+      "type": "source_map",
+      "scope": "Exact source identity supplies the map; resemblance alone does not."
+    },
+    {
+      "from": "polygon",
+      "to": "restricted",
+      "type": "shared_obstruction",
+      "scope": "Uniform time/precision is the common issue, not an implication between theorems."
+    },
+    {
+      "from": "bbp",
+      "to": "smooth_transfer",
+      "type": "proved_transport",
+      "scope": "Summable positive tail bounds actual nonlinear cylinder errors."
+    },
+    {
+      "from": "bbp",
+      "to": "gaussian",
+      "type": "proved_transform",
+      "scope": "Original tap representation splits into angular and radial components."
+    },
+    {
+      "from": "gamma_pinning",
+      "to": "prime_cofactor",
+      "type": "does_not_determine",
+      "scope": "Forcing denominator differs from accumulated old-prime cofactor."
+    },
+    {
+      "from": "prime_cofactor",
+      "to": "finite_joint",
+      "type": "finite_certificate",
+      "scope": "Actual cofactor can cancel coherent primary in the declared finite window."
+    },
+    {
+      "from": "farey_gamma",
+      "to": "gaussian",
+      "type": "no_proved_source_map",
+      "scope": "Shared constants or names do not identify the source constructions."
+    },
+    {
+      "from": "residual",
+      "to": "haar",
+      "type": "linear_specialization",
+      "scope": "mu-Qmu is a signed residual under first-digit/future pushforward."
+    },
+    {
+      "from": "residual",
+      "to": "prime_cofactor",
+      "type": "shared_formal_pattern",
+      "scope": "Different empirical disintegrations; fibers are not asserted identical."
+    },
+    {
+      "from": "cartesian",
+      "to": "residual",
+      "type": "transport_condition",
+      "scope": "Signed laws require actual cartesian base change or an explicitly paid defect."
+    },
+    {
+      "from": "loop_blindness",
+      "to": "history",
+      "type": "requires_anchor",
+      "scope": "Closed corrected recurrence loops erase source seed."
+    },
+    {
+      "from": "carry_seam",
+      "to": "weyl",
+      "type": "missing_estimate",
+      "scope": "Exact phase reconstruction still lacks selected temporal cancellation."
+    },
+    {
+      "from": "collision",
+      "to": "weyl",
+      "type": "conditional_sufficient",
+      "scope": "All-scale source collision bound is the open premise."
+    },
+    {
+      "from": "haar",
+      "to": "weyl",
+      "type": "conditional_sufficient",
+      "scope": "Actual conditional defect tending to zero forces Haar."
+    },
+    {
+      "from": "basel",
+      "to": "weyl",
+      "type": "equivalent_gate",
+      "scope": "All-mode signed tail estimate equivalent to all-mode Weyl decay."
+    },
+    {
+      "from": "weyl",
+      "to": "normality",
+      "type": "classical_equivalence",
+      "scope": "Weyl criterion for the radix orbit."
+    },
+    {
+      "from": "normality",
+      "to": "r0",
+      "type": "proved_implication",
+      "scope": "Normality gives shell first-mode mean tending to zero, hence eventual saving."
+    },
+    {
+      "from": "kempner",
+      "to": "r0",
+      "type": "does_not_imply_from_generic_type",
+      "scope": "Irrationality exponent two does not force anti-locking."
+    },
+    {
+      "from": "restricted",
+      "to": "r0",
+      "type": "no_converse_established",
+      "scope": "Necessary restricted exponent consequence does not alone imply density."
+    },
+    {
+      "from": "abc",
+      "to": "weyl",
+      "type": "no_source_bridge",
+      "scope": "Positive triple averages do not estimate BBP phases."
+    },
+    {
+      "from": "borwein",
+      "to": "target_descent",
+      "type": "calibration",
+      "scope": "An honest stable reconstruction example with a separately declared port."
+    },
+    {
+      "from": "hamiltonian",
+      "to": "rh",
+      "type": "missing_signed_completion",
+      "scope": "Prime-power trace is not the completed Weil sign theorem."
+    },
+    {
+      "from": "rh",
+      "to": "normality",
+      "type": "no_source_bridge",
+      "scope": "No implication in either direction established."
+    }
+  ]
+}

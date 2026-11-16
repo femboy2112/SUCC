@@ -1,0 +1,76 @@
+{
+  "source": "SUCC",
+  "branch_scope": "gauge-frontier-bridge",
+  "status": "research-only",
+  "python": "3.13.5",
+  "files": [
+    {
+      "path": "observational_succ/gauge_frontier_bridge.py",
+      "sha256": "cbde516c033e13da306de890bf60d6701e2d448855e7e0ccb4e1ea82061502a7",
+      "git_blob_sha1": "2e6c31d2da5ab1884d604dad4bd837f737f9b330",
+      "bytes": 7957
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/CLAIM_LEDGER.json",
+      "sha256": "f3dc53836c21f192bce29a95009358ef7ad78d1176e86d5e68b73497d4035bb5",
+      "git_blob_sha1": "5bcd5ed0909d7967fa6c80aefba003ca519273c1",
+      "bytes": 2745
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/NEXT.md",
+      "sha256": "049e20c50edbd0bb5c62851fc3f5c121a11ab1d3202a032a01543a7017da3dd7",
+      "git_blob_sha1": "c24cb786c9d25143c9e403bb1d6cd1de4911071a",
+      "bytes": 2360
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/README.md",
+      "sha256": "ea9d697fc133d52d6fb37ecee4a7c1413044c0d66331501740c15b775993a737",
+      "git_blob_sha1": "7b01dd6beb04b015a8f41d58cdcd69e8751c06c1",
+      "bytes": 1537
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/THEOREMS.md",
+      "sha256": "ba2195f38528d462bcf18e2c7c1e39e1e6d3139544e58985658649f9af4bec27",
+      "git_blob_sha1": "87496a207c3504111ebaecfb18d52461f7816e42",
+      "bytes": 18545
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/VALIDATION.md",
+      "sha256": "cc2679a205517df0c6e84ae5758a717461d9cfce3ff605bfbe5347e6c7406d9c",
+      "git_blob_sha1": "a65100311b0781908d5dcf01249f669531d243a7",
+      "bytes": 5057
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/independent_sympy_oracle.py",
+      "sha256": "67f8d9eb3b7a65d2c9d5473e73e3b33eae022f2a51a4032085809b25fbf07af3",
+      "git_blob_sha1": "5c3e5578b007ef176d2bad763e67e4232d066883",
+      "bytes": 2305
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/receipts/focused_tests.log",
+      "sha256": "d1d1309886ed53b2c9a7f8c9b717751c366f7e3d3b71437499be1f926fd509d7",
+      "git_blob_sha1": "84943966c7da00bafe72bff73d2ba92a234175e8",
+      "bytes": 1979
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/receipts/independent_sympy.log",
+      "sha256": "c54d541cbae5a7533f39d9b6437a8d095ed36242b6a7f285c510d4dacc14472a",
+      "git_blob_sha1": "894c9e7f83beb50a241df14111fe5405c5ba714b",
+      "bytes": 287
+    },
+    {
+      "path": "research/2026-11-14/gauge_frontier_bridge/receipts/lagarias_rational_512.json",
+      "sha256": "3500423973a64cf7c939fb9c3298b8f72fa3c20260902c3d8ff8fb29b644330d",
+      "git_blob_sha1": "42dcbfe2bc463d50cfb46153cf5fc3fbf4dd9448",
+      "bytes": 821
+    },
+    {
+      "path": "tests/test_gauge_frontier_bridge.py",
+      "sha256": "01efda1b529ef5b0050abd65a65e7a1e4e63143830608ad0a54b18fc96f231e0",
+      "git_blob_sha1": "4c6c39ae2af08f95bac6a330880ccbd7b7996137",
+      "bytes": 4557
+    }
+  ],
+  "rh_proved": false,
+  "pi_normality_proved": false
+}

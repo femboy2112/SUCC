@@ -1,0 +1,407 @@
+{
+  "status": "PASS",
+  "scope": "Finite hostile numerical checks; not a universal interval theorem",
+  "provenance": "Separate implementation and audit within the same model family; no external-referee claim",
+  "random_seed": 20261112,
+  "mpmath_decimal_precision": 100,
+  "numerical_comparison_slack": "1e-90",
+  "interval_bits": 24,
+  "cases_count": 16,
+  "matrix_entry_checks": 216,
+  "undersampled_false_positive_count": 0,
+  "actual_horizon_guard_passed": true,
+  "cases": [
+    {
+      "case": 0,
+      "rows": 1,
+      "columns": 2,
+      "harmonic": 1,
+      "phase_intervals": [
+        [
+          "-334/33",
+          "-235/33"
+        ]
+      ],
+      "sample_phases": [
+        "-3043/330"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 1,
+      "rows": 2,
+      "columns": 3,
+      "harmonic": -2,
+      "phase_intervals": [
+        [
+          "-43419/19000",
+          "-43381/19000"
+        ],
+        [
+          "959921/79000",
+          "960079/79000"
+        ]
+      ],
+      "sample_phases": [
+        "-434057/190000",
+        "9599447/790000"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 2,
+      "rows": 3,
+      "columns": 4,
+      "harmonic": 3,
+      "phase_intervals": [
+        [
+          "8119901/990000",
+          "8120099/990000"
+        ],
+        [
+          "-1090047/470000",
+          "-1089953/470000"
+        ],
+        [
+          "3124969/310000",
+          "3125031/310000"
+        ]
+      ],
+      "sample_phases": [
+        "81199703/9900000",
+        "-2180047/940000",
+        "31250217/3100000"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 3,
+      "rows": 4,
+      "columns": 5,
+      "harmonic": -1,
+      "phase_intervals": [
+        [
+          "-1245/62",
+          "-1059/62"
+        ],
+        [
+          "-407/114",
+          "-65/114"
+        ],
+        [
+          "1/10",
+          "31/10"
+        ],
+        [
+          "-3/5",
+          "12/5"
+        ]
+      ],
+      "sample_phases": [
+        "-2211/124",
+        "-407/114",
+        "2/5",
+        "9/20"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 4,
+      "rows": 1,
+      "columns": 2,
+      "harmonic": 2,
+      "phase_intervals": [
+        [
+          "37183/1700",
+          "37217/1700"
+        ]
+      ],
+      "sample_phases": [
+        "372/17"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 5,
+      "rows": 2,
+      "columns": 3,
+      "harmonic": -3,
+      "phase_intervals": [
+        [
+          "493929/71000",
+          "494071/71000"
+        ],
+        [
+          "-259027/27000",
+          "-258973/27000"
+        ]
+      ],
+      "sample_phases": [
+        "493929/71000",
+        "-259/27"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 6,
+      "rows": 3,
+      "columns": 4,
+      "harmonic": 1,
+      "phase_intervals": [
+        [
+          "939/26",
+          "1017/26"
+        ],
+        [
+          "-577/78",
+          "-343/78"
+        ],
+        [
+          "-485/27",
+          "-404/27"
+        ]
+      ],
+      "sample_phases": [
+        "9897/260",
+        "-5653/780",
+        "-404/27"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 7,
+      "rows": 4,
+      "columns": 5,
+      "harmonic": -2,
+      "phase_intervals": [
+        [
+          "48299957/4300000",
+          "48300043/4300000"
+        ],
+        [
+          "-65000057/5700000",
+          "-64999943/5700000"
+        ],
+        [
+          "-29250043/4300000",
+          "-29249957/4300000"
+        ],
+        [
+          "73799989/1100000",
+          "73800011/1100000"
+        ]
+      ],
+      "sample_phases": [
+        "241499957/21500000",
+        "-81250057/7125000",
+        "-292499699/43000000",
+        "738/11"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 8,
+      "rows": 1,
+      "columns": 2,
+      "harmonic": 3,
+      "phase_intervals": [
+        [
+          "11473/2700",
+          "11527/2700"
+        ]
+      ],
+      "sample_phases": [
+        "57473/13500"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 9,
+      "rows": 2,
+      "columns": 3,
+      "harmonic": -1,
+      "phase_intervals": [
+        [
+          "-587/38",
+          "-473/38"
+        ],
+        [
+          "683/170",
+          "1193/170"
+        ]
+      ],
+      "sample_phases": [
+        "-5471/380",
+        "157/34"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 10,
+      "rows": 3,
+      "columns": 4,
+      "harmonic": 2,
+      "phase_intervals": [
+        [
+          "1494999/10000",
+          "1495001/10000"
+        ],
+        [
+          "137993/70000",
+          "138007/70000"
+        ],
+        [
+          "1194969/310000",
+          "1195031/310000"
+        ]
+      ],
+      "sample_phases": [
+        "14949993/100000",
+        "1379979/700000",
+        "2987531/775000"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 11,
+      "rows": 4,
+      "columns": 5,
+      "harmonic": -3,
+      "phase_intervals": [
+        [
+          "-560017/1700000",
+          "-559983/1700000"
+        ],
+        [
+          "-1210009/900000",
+          "-1209991/900000"
+        ],
+        [
+          "76099963/3700000",
+          "76100037/3700000"
+        ],
+        [
+          "-77700073/7300000",
+          "-77699927/7300000"
+        ]
+      ],
+      "sample_phases": [
+        "-5600153/17000000",
+        "-6050027/4500000",
+        "76100037/3700000",
+        "-97125073/9125000"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 12,
+      "rows": 1,
+      "columns": 2,
+      "harmonic": 1,
+      "phase_intervals": [
+        [
+          "-55/6",
+          "-37/6"
+        ]
+      ],
+      "sample_phases": [
+        "-83/12"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 13,
+      "rows": 2,
+      "columns": 3,
+      "harmonic": -2,
+      "phase_intervals": [
+        [
+          "-91879/4000",
+          "-91871/4000"
+        ],
+        [
+          "20249/1000",
+          "20251/1000"
+        ]
+      ],
+      "sample_phases": [
+        "-91873/4000",
+        "101253/5000"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 14,
+      "rows": 3,
+      "columns": 4,
+      "harmonic": 3,
+      "phase_intervals": [
+        [
+          "-7070093/930000",
+          "-7069907/930000"
+        ],
+        [
+          "-8410071/710000",
+          "-8409929/710000"
+        ],
+        [
+          "1525999/10000",
+          "1526001/10000"
+        ]
+      ],
+      "sample_phases": [
+        "-70700651/9300000",
+        "-42050213/3550000",
+        "15259997/100000"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "case": 15,
+      "rows": 4,
+      "columns": 5,
+      "harmonic": -1,
+      "phase_intervals": [
+        [
+          "-227/49",
+          "-80/49"
+        ],
+        [
+          "-293/94",
+          "-11/94"
+        ],
+        [
+          "-149/6",
+          "-131/6"
+        ],
+        [
+          "-1175/62",
+          "-989/62"
+        ]
+      ],
+      "sample_phases": [
+        "-3217/980",
+        "-1183/470",
+        "-271/12",
+        "-5131/310"
+      ],
+      "lower_bound": "0",
+      "verdict": "INCONCLUSIVE"
+    }
+  ]
+}

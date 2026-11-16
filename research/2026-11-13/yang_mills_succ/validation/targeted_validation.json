@@ -1,0 +1,71 @@
+{
+  "recorded_utc": "2026-11-13T20:27:21.977767+00:00",
+  "base_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "commands": [
+    {
+      "name": "provenance",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "log": "validation/provenance.log",
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "name": "foundations",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "log": "validation/foundations.log",
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "name": "ordinal",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "log": "validation/ordinal.log",
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "name": "focused_tests",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_ym_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "validation/focused_tests.log",
+      "log_sha256": "af615695cfb4212cb81dc280ac1c42273b239f18994a5d232f84e9b70f6d5c41"
+    },
+    {
+      "name": "finite_probe",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/yang_mills_succ_probe.py"
+      ],
+      "exit_code": 0,
+      "log": "validation/finite_probe.log",
+      "log_sha256": "dd151d2c0fe65176d4da81cb92e9dd1df3cdb461a7a9e95d2772b825f7f4a2b1"
+    }
+  ],
+  "source_hashes": {
+    "observational_succ/ym_reflection_bridge.py": "925b60c3e312736a5ca0029688ca19b2eb56db8b17bf518c67c4ac6c5d5aa0b1",
+    "observational_succ/ym_phase_transport.py": "0fc7dba4f21010f9aef9b503fb09b5777e8b0d274aa5745c3c8618515fc36294",
+    "tests/test_ym_reflection_bridge.py": "e84bd4fc9382a52f03bec9189e3fb92df4dc8f8fb01d25ce68d9d7a511e08de5",
+    "tests/test_ym_phase_transport.py": "ba55040419f25a7eb148508c6cdae76fd4e041280cae972c93d0656d64c4a7ee",
+    "scripts/yang_mills_succ_probe.py": "7ad33a883db1f010d7f38c05325d04d90f1e9508839e1df281dd15c8a02cc06f"
+  },
+  "scope": "local finite instruments and three required non-suite gates; full-suite result recorded separately"
+}

@@ -1,0 +1,92 @@
+{
+  "arithmetic": "exact Gaussian rationals; no floating point",
+  "boundaries": [
+    "Finite exact controls accompany proofs; they do not prove infinite statements by enumeration.",
+    "Vector norm zero is a mathematical diagnostic, not a single-shot physical equality oracle.",
+    "Partial maps need an instrument/dilation before being interpreted as physical operations.",
+    "A readout schedule does not determine a physical collapse mechanism.",
+    "No arithmetic theorem, source authentication, quantum speedup or physical implementation is claimed."
+  ],
+  "checks": 396,
+  "checks_by_group": {
+    "arithmetic_calibration": 4,
+    "basis_outcomes": 8,
+    "conjugate_transport": 40,
+    "deferred_readout": 96,
+    "environment_overlap": 8,
+    "environment_record": 6,
+    "finite_support": 10,
+    "phase_mutation": 5,
+    "physical_comparison": 3,
+    "vectorization": 159,
+    "weighted_diagnostic": 52,
+    "weighted_mirror": 5
+  },
+  "current_output_contract": "Only the declared present diagnostic in an explicitly calibrated common basis is compared; raw histories are not compared.",
+  "failures": [],
+  "schema": "succ.twin-correlation.v1",
+  "status": "PASS",
+  "witnesses": {
+    "bell_ZX_probabilities": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "bell_ZZ_probabilities": [
+      "1/2",
+      "0",
+      "0",
+      "1/2"
+    ],
+    "finite_support_blindspots": [
+      {
+        "missed_index": 2,
+        "observed_dimension": 2
+      },
+      {
+        "missed_index": 3,
+        "observed_dimension": 3
+      },
+      {
+        "missed_index": 5,
+        "observed_dimension": 5
+      },
+      {
+        "missed_index": 8,
+        "observed_dimension": 8
+      },
+      {
+        "missed_index": 13,
+        "observed_dimension": 13
+      }
+    ],
+    "local_off_diagonal_after_record": "0",
+    "local_off_diagonal_before_record": "12/25",
+    "same_phase_twins": "diag(1,i) tensor diag(1,i) sends Phi+ to the orthogonal Phi-",
+    "swap_accepts_distinct_states_probability": "17/25",
+    "unitary_undo_restores_input": true,
+    "weighted_mirror_growth": [
+      {
+        "dimension": 2,
+        "last_mirror_weight": "2"
+      },
+      {
+        "dimension": 3,
+        "last_mirror_weight": "8"
+      },
+      {
+        "dimension": 5,
+        "last_mirror_weight": "128"
+      },
+      {
+        "dimension": 7,
+        "last_mirror_weight": "2048"
+      },
+      {
+        "dimension": 9,
+        "last_mirror_weight": "32768"
+      }
+    ]
+  }
+}

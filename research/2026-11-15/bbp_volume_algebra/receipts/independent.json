@@ -1,0 +1,126 @@
+{
+  "arithmetic": "int/Fraction",
+  "carry": {
+    "affine_cases": 4500,
+    "cocycle_checks": 64,
+    "integer_lifts_per_case": 3
+  },
+  "gamma_convolution_checks": 208,
+  "gamma_lift_residues": {
+    "coefficient_checks": 820,
+    "fixed_residue_counterexamples": 120,
+    "frequencies": [
+      -7,
+      -2,
+      1,
+      3,
+      16
+    ],
+    "residues": [
+      1,
+      2,
+      4,
+      16,
+      256,
+      65536
+    ],
+    "shapes": [
+      1,
+      2,
+      3,
+      5
+    ]
+  },
+  "green_product": {
+    "bases": [
+      "-3/2",
+      "-1/2",
+      "0",
+      "2/3",
+      "1",
+      "2",
+      "16"
+    ],
+    "checks": 23814,
+    "maximum_horizon": 17,
+    "seeds": [
+      "-2/3",
+      "0",
+      "5/4"
+    ],
+    "tape_pairs": 3
+  },
+  "mutations_rejected": {
+    "authentic_first_state_carry_drop": {
+      "U1": "47/15",
+      "character_ratio": "-1",
+      "weighted_fraction_only_mod1": "1/15",
+      "weighted_full_mod1": "17/30"
+    },
+    "critical_terms_to_zero_implies_summability": {
+      "exact_partial_sum": "product_(k=1)^M(1+1/(2k))",
+      "rate": 15,
+      "shape": "1/2"
+    },
+    "dropped_finite_Green_boundary": {
+      "counterexamples": 240,
+      "sign": "strictly positive omitted term"
+    },
+    "hadamard_equals_cascade": {
+      "cascade": "1/4",
+      "hadamard": "1/16"
+    },
+    "homogeneous_seed_term_only": {
+      "false": "0",
+      "true": "1"
+    },
+    "omitted_carry_seam": {
+      "false": 0,
+      "true": 1
+    },
+    "omitted_diagonal_subtraction": {
+      "false": "2",
+      "true": "1"
+    },
+    "phase_inside_average": {
+      "mean_of_phases": "1",
+      "phase_of_mean": "-1"
+    },
+    "raw_future_gamma_sum_converges": {
+      "ratio_lower_bound": 8,
+      "source": "original zero-seeded BBP"
+    },
+    "shared_source_redrawn": {
+      "redrawn": "1/4",
+      "shared": "1/2"
+    },
+    "ungraded_product_base": {
+      "false": "7",
+      "true": "9"
+    }
+  },
+  "original_bbp_block_checks": 1330,
+  "production_imports": false,
+  "random_seed": null,
+  "raw_U_gamma_growth": {
+    "checks": 72,
+    "every_next_term_exceeds_eight_times_previous": true
+  },
+  "result": "PASS",
+  "retained_tail": {
+    "finite_boundary_checks": 240,
+    "polynomial_integral_checks": 240
+  },
+  "tempering": {
+    "critical_half_shape_partial_identities": 256,
+    "critical_half_shape_terms_decrease": true,
+    "critical_integer_partial_identities": 68,
+    "positive_geometric_enclosures": 136,
+    "rates": [
+      1,
+      15,
+      16,
+      31
+    ]
+  }
+}

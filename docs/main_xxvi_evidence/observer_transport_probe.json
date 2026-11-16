@@ -1,0 +1,34 @@
+{
+  "R0_or_pi_normality_proved": false,
+  "matrix_integer_shape_cases": 320,
+  "noncontraction_mutant": {
+    "actual_error": "5",
+    "invalid_upper_bound": "1/10"
+  },
+  "retained_original_source_coordinates": 21,
+  "reversed_orientation_mutants_rejected": 78,
+  "scalar_contraction_cases": 648,
+  "status": "EXACT_FINITE_CONTROLS_PASS_NOT_UNIVERSAL_PROOF",
+  "two_loop_endpoint_ratios": [
+    {
+      "alpha": 1,
+      "ratio": "2001000/1002001",
+      "upper": 2
+    },
+    {
+      "alpha": 2,
+      "ratio": "4006004001000/1004006004001",
+      "upper": 4
+    },
+    {
+      "alpha": 3,
+      "ratio": "6015020015006001000/1006015020015006001",
+      "upper": 6
+    },
+    {
+      "alpha": 4,
+      "ratio": "8028056070056028008001000/1008028056070056028008001",
+      "upper": 8
+    }
+  ]
+}

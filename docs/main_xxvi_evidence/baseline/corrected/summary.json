@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "baseline_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "baseline_tree": "4b0dc4572a1f971d83e23125ee14cfb06cbb0b8b",
+  "tracked_candidate_unchanged": true,
+  "all_command_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "command_count": 11,
+  "lean_replayed": false,
+  "runner_scope": "Baseline mathematical sources; integration runner repair copied as untracked script. Not validation of final combined candidate.",
+  "runner_sha256": "ce5816aa46f288784300b7ee4b63cd1bf08729b23a2e63c037314819cb900372",
+  "helper_sha256": "de69d5c920a99f9748ce39a8923d3e9dca50ca7abf1e97fc4ae96e931d2edc38",
+  "same_primary_regenerated_sha256": "bf76a2776b5cdb1efcae283eaf4230df4544f3b7b56a81e242d79133ef4b0a72",
+  "replay_statuses": [
+    {
+      "status": "PASS",
+      "difference_count": 0,
+      "accepted_difference_count": 0,
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_arithmetic.json",
+      "archived_sha256": "043b66f674613983f0981a0869dd44a1e569b5accc0ba0a700f12bbc701369e6",
+      "replay_sha256": "043b66f674613983f0981a0869dd44a1e569b5accc0ba0a700f12bbc701369e6"
+    },
+    {
+      "status": "PASS",
+      "difference_count": 1188,
+      "accepted_difference_count": 1188,
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_analytic.json",
+      "archived_sha256": "c0e695689046c171fb0370b79988488ff6c9fb83e18043a37812fcaef3bbab5f",
+      "replay_sha256": "bf76a2776b5cdb1efcae283eaf4230df4544f3b7b56a81e242d79133ef4b0a72"
+    },
+    {
+      "status": "PASS",
+      "difference_count": 0,
+      "accepted_difference_count": 0,
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_band_lp.json",
+      "archived_sha256": "94b89af125e55d279f370ee538ebf2eb10f0d3990ed14f1fa54df77b5c50538d",
+      "replay_sha256": "94b89af125e55d279f370ee538ebf2eb10f0d3990ed14f1fa54df77b5c50538d"
+    },
+    {
+      "status": "PASS",
+      "difference_count": 0,
+      "accepted_difference_count": 0,
+      "path": "research/2026-11-11/innovation_arithmetic_decoupling/RESULTS_zsc.json",
+      "archived_sha256": "2d5b13fb752e9c0fa4c2adfe18ccbf3fbbb273cc29eb59d4802efbb8e9cad186",
+      "replay_sha256": "2d5b13fb752e9c0fa4c2adfe18ccbf3fbbb273cc29eb59d4802efbb8e9cad186"
+    },
+    {
+      "status": "PASS",
+      "difference_count": 0,
+      "accepted_difference_count": 0,
+      "path": "research/2026-11-12/frontier_rungs/RESULTS_rungs.json",
+      "archived_sha256": "ba3d4d02e47726eda5090e4d13cbafefdc553bcc7bbea04ec40401ad7e2265ee",
+      "replay_sha256": "ba3d4d02e47726eda5090e4d13cbafefdc553bcc7bbea04ec40401ad7e2265ee"
+    }
+  ]
+}

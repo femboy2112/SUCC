@@ -1,0 +1,71 @@
+{
+  "RH": "OPEN",
+  "base_commit": "8b1673036fa624c3b2e9e43d67bddcbae7f44b86",
+  "file_count_before_manifest": 10,
+  "files": [
+    {
+      "git_blob_sha1": "2167e6196b7d58f092c1f7d095871162b6e1b848",
+      "path": "observational_succ/causal_volume_rewrite.py",
+      "sha256": "333759a1c829573b136da26d569e16dcd911b0ff2101ad6cdc2581dd74ca6902",
+      "size_bytes": 13511
+    },
+    {
+      "git_blob_sha1": "1f88da3ca35772399de365cdab6b150e99b42fcf",
+      "path": "research/2026-11-14/causal_volume_rewrite/CLAIM_LEDGER.json",
+      "sha256": "2a4a47c3227f696a48c5a80f5e2b0bf6db393a8280c9d7851bf6e27d7d3c2429",
+      "size_bytes": 3061
+    },
+    {
+      "git_blob_sha1": "e727e8d70a3278f5073881f7049d83a758053a53",
+      "path": "research/2026-11-14/causal_volume_rewrite/NEXT.md",
+      "sha256": "6daeefffcc0054b7e91af9373774a47650cb7fe13165330f276142640ccc1b49",
+      "size_bytes": 1988
+    },
+    {
+      "git_blob_sha1": "d383343101c65b0b1b473f6665cb774947f4c658",
+      "path": "research/2026-11-14/causal_volume_rewrite/README.md",
+      "sha256": "a189d0e3cea69fa1731b641b567c6312b935f619f42739f072542ab9f607c675",
+      "size_bytes": 1750
+    },
+    {
+      "git_blob_sha1": "b916ec3a447517a24d497d0be514b321d5ba3145",
+      "path": "research/2026-11-14/causal_volume_rewrite/THEOREMS.md",
+      "sha256": "4163954c42ef97b99c9991087480e1f6c1609bb85c3b68ba200681b8bd289a43",
+      "size_bytes": 20376
+    },
+    {
+      "git_blob_sha1": "0740cabf764e7ef51723ef26d4ba217e953b750f",
+      "path": "research/2026-11-14/causal_volume_rewrite/VALIDATION.md",
+      "sha256": "58f2539f01d9a96f2250a9c858532b120da959e1ca5b799b693110c66308f23e",
+      "size_bytes": 3997
+    },
+    {
+      "git_blob_sha1": "d18de9ea4ff6e7460c1af081553a145ea389bc63",
+      "path": "research/2026-11-14/causal_volume_rewrite/independent_sympy_oracle.py",
+      "sha256": "8f6323a4b6446b5eedca29f00c390a691b0e4b3ce167c3fb0fe7ec6adc0a44b1",
+      "size_bytes": 3928
+    },
+    {
+      "git_blob_sha1": "bddcd37307c0fdfe90526db06780672a9f56fc20",
+      "path": "research/2026-11-14/causal_volume_rewrite/receipts/focused_unittest.log",
+      "sha256": "ecc75270c635cc573dd735d57a0616fb40710407268db34fb2bbe10c79737192",
+      "size_bytes": 4379
+    },
+    {
+      "git_blob_sha1": "3532f69bd51a7d513d34f629798ab9109c7c76c4",
+      "path": "research/2026-11-14/causal_volume_rewrite/receipts/independent_oracle.log",
+      "sha256": "7d44df5a7369da5a0d6bb36842b8862d4e7e4b4138031b78f22ba8ee1f7de4ea",
+      "size_bytes": 518
+    },
+    {
+      "git_blob_sha1": "7342a15ad024435ac0b690449702eaa52f3ded43",
+      "path": "tests/test_causal_volume_rewrite.py",
+      "sha256": "c7dfa470b3672620436f81466409059c09b5170ebe14c542ea1780c50901ddda",
+      "size_bytes": 11354
+    }
+  ],
+  "new_full_repo_gates": "NOT_RUN_IN_ISOLATED_SCAFFOLD",
+  "pi_normality": "OPEN",
+  "source_branch": "research/principia-bbp-causal-volume-rewrite-2026-11-14",
+  "source_frozen": true
+}

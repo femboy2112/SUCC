@@ -1,0 +1,93 @@
+{
+  "all_unchanged": true,
+  "base_commit": "3b2a3058ac6973da43554cbeeaaeee806a891d67",
+  "native_changes": [],
+  "native_paths_checked": [
+    "observational_succ",
+    "tests",
+    "scripts",
+    "provenance",
+    "pyproject.toml",
+    "requirements.txt",
+    "uv.lock"
+  ],
+  "prior_python_files_checked": 19,
+  "prior_python_sha256": {
+    "research/2026-11-12/prime_fixed_point_observer/borwein_independent_audit.py": {
+      "after": "8016751897a0dbf3b2345a15ec13a22be28cd9d0eb47d391843cc7f1c7ce1279",
+      "before": "8016751897a0dbf3b2345a15ec13a22be28cd9d0eb47d391843cc7f1c7ce1279"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/borwein_probe.py": {
+      "after": "b52f321b16bd847007d7b8480d2f16a3822ae40d085cf60802bb14217ad8911c",
+      "before": "b52f321b16bd847007d7b8480d2f16a3822ae40d085cf60802bb14217ad8911c"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/borwein_ratchet.py": {
+      "after": "6e36ba576013514ce276cab67718b8143b808dd26a6b7302b744264c2a68be7a",
+      "before": "6e36ba576013514ce276cab67718b8143b808dd26a6b7302b744264c2a68be7a"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/carrier_probe.py": {
+      "after": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d",
+      "before": "1722d79b75eb4d4ae8db891ebf2686a50bdc1704c8a279a3a98340912e99833d"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/cylinder.py": {
+      "after": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa",
+      "before": "99a2fc7006c23010ac9b7c657cec23c4340e704ccfccdef8be6b5baaf0744ffa"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/lambda_observer.py": {
+      "after": "527eb36225b6cc01115f037ef26f108b280628a3c7ee97daf7ebcd2e03c971fe",
+      "before": "527eb36225b6cc01115f037ef26f108b280628a3c7ee97daf7ebcd2e03c971fe"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/plot_borwein_ratchet.py": {
+      "after": "6e24cb877e4fb8468ff04a4e5ff884b005c09eebdb6fe53b1e6823e384972a5c",
+      "before": "6e24cb877e4fb8468ff04a4e5ff884b005c09eebdb6fe53b1e6823e384972a5c"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/plot_prime_waves.py": {
+      "after": "126873e5e42b378e36c4d2e9e75be61cedd24b3ae0c457ef6b45243ff86174e7",
+      "before": "126873e5e42b378e36c4d2e9e75be61cedd24b3ae0c457ef6b45243ff86174e7"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/prime_observer.py": {
+      "after": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50",
+      "before": "07258f1cdce59237ded91baaa3355c1d79bae10b0e50177ac02e82c402d64a50"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/prime_waves.py": {
+      "after": "68604be9c4655281be1926029c55aaddc36fe72c5521f358a9b187411898db30",
+      "before": "68604be9c4655281be1926029c55aaddc36fe72c5521f358a9b187411898db30"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/probe.py": {
+      "after": "4a720a428620fb9ecc01091ca0aa893393e564da16b94cbaefe647737487139f",
+      "before": "4a720a428620fb9ecc01091ca0aa893393e564da16b94cbaefe647737487139f"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/test_borwein_ratchet.py": {
+      "after": "e869ca0482a72615abfe4dda19c2f9276c9d28b7206632a37d187779cb17f1a5",
+      "before": "e869ca0482a72615abfe4dda19c2f9276c9d28b7206632a37d187779cb17f1a5"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/test_cylinder.py": {
+      "after": "c194d528ee7d6ab299c6ccae14ab096e8426b5a511941c6d6aa57d8b8f1f1b94",
+      "before": "c194d528ee7d6ab299c6ccae14ab096e8426b5a511941c6d6aa57d8b8f1f1b94"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/test_lambda_observer.py": {
+      "after": "b42eec4ad40aafad08e87e01a0186c826ff681340c8c4415617755c990c40f08",
+      "before": "b42eec4ad40aafad08e87e01a0186c826ff681340c8c4415617755c990c40f08"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/test_prime_observer.py": {
+      "after": "5d7455dc58a6043b7f478787d47c1d5529af1a77aeff4192d4d2bc78cdbdea5d",
+      "before": "5d7455dc58a6043b7f478787d47c1d5529af1a77aeff4192d4d2bc78cdbdea5d"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/test_prime_waves.py": {
+      "after": "8082e86e310e69e020e427ffb8d5dbcf79a38faf0fbf0bf73103cf0b25752b8b",
+      "before": "8082e86e310e69e020e427ffb8d5dbcf79a38faf0fbf0bf73103cf0b25752b8b"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/triadic_probe.py": {
+      "after": "4271230693d2e4345b94502b61382959371c50a84a878ec5e8903884a75a3a57",
+      "before": "4271230693d2e4345b94502b61382959371c50a84a878ec5e8903884a75a3a57"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/wave_probe.py": {
+      "after": "026cf807aa84c1a85031f8bc7f45fa854b2f16e014a226694475a942ac25ab01",
+      "before": "026cf807aa84c1a85031f8bc7f45fa854b2f16e014a226694475a942ac25ab01"
+    },
+    "research/2026-11-12/prime_fixed_point_observer/waves_independent_audit.py": {
+      "after": "e43f341a0236bce8efa4e7d953452d12cf29a32a8da759771e1a37e252036118",
+      "before": "e43f341a0236bce8efa4e7d953452d12cf29a32a8da759771e1a37e252036118"
+    }
+  }
+}

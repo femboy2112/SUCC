@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/build_math_memory.py",
+      "--write"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.807,
+    "log": "borwein-catalog-write.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/build_math_memory.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.975,
+    "log": "borwein-catalog.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/verify_math_memory_graph.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.053,
+    "log": "borwein-math-memory-graph.log"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "borwein-diff-check.log"
+  }
+]

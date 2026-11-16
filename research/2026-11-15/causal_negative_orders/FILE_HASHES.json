@@ -1,0 +1,228 @@
+{
+  "base_commit": "55bcde3d0c5ceb47d50cb499bd39f4a97c96bfc5",
+  "scope": "All new payload files except this self-excluded manifest; no original source edits.",
+  "files": [
+    {
+      "path": "observational_succ/bbp_causal_inverse.py",
+      "bytes": 9133,
+      "sha256": "d37f9b0086fe42833977217c1db969f6936c32dbb3764f738b7caa341779fb32",
+      "git_blob_sha1": "3792c1fa15c0d4c550a6f2801cb74a6f128d68ff"
+    },
+    {
+      "path": "observational_succ/causal_negative_orders.py",
+      "bytes": 11399,
+      "sha256": "da162c3e1bc91d70f260c5ae1e16d13200ddb793d21673de518975132cc88cc0",
+      "git_blob_sha1": "06da5006eaa9e395857763cfa383725dc10e14ac"
+    },
+    {
+      "path": "tests/test_bbp_causal_inverse.py",
+      "bytes": 8894,
+      "sha256": "f5339ff8d20d0c7c3f311e7e24643bf737e34dc87e37563bfcdb5ab13e07aa5e",
+      "git_blob_sha1": "6b00e1817f4a897eaa6a9071beab0260934ad278"
+    },
+    {
+      "path": "tests/test_causal_negative_orders.py",
+      "bytes": 11749,
+      "sha256": "b19e8b0415cf5cc04f8c545dd4733bf6c11c59d6e6862cc2271d54840561a82f",
+      "git_blob_sha1": "845efe5a076773f0dca04f0346f488b8c79e1fcf"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/ADVERSARY_NOTES.md",
+      "bytes": 29687,
+      "sha256": "fe928843774beaa7a0451e80df920019635199bd7b8793a246e499ff03bd9093",
+      "git_blob_sha1": "b847c8cfaa7ce1d033009ec921d42f1c7acac2d7"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/CLAIM_LEDGER.json",
+      "bytes": 9164,
+      "sha256": "319e5136a036229398d7ae1dc6d2cdcd894fcc2249bb5030429adce05c190e29",
+      "git_blob_sha1": "63c49fa08454dfc1c60da6e2834599a4b4338bd8"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/CONCURRENT_SUSPENSION.md",
+      "bytes": 5980,
+      "sha256": "757517a60238e03ed8e622ebf7b8ff4a9be7eb4d88de4c64ecfe2c960c46abfb",
+      "git_blob_sha1": "1c65b7f8d565b58836ad23afc4a731d873c6221e"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/CONSTRUCTOR_NOTES.md",
+      "bytes": 23136,
+      "sha256": "50841436192c9ee62bc121fdf4d2f6cdf89f2218a264de842239517ab3c4eec1",
+      "git_blob_sha1": "623346eaba224e8ea5254c83a0cdea7b774350df"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/HOLE_CONTRACT.md",
+      "bytes": 3323,
+      "sha256": "bba6677269950c0c0411340c2fb5dc9344d2fad12e12e575914e616549d39877",
+      "git_blob_sha1": "ad80fd8bc4acbd26e23f5a55194e98bfcf31552c"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/NEXT.md",
+      "bytes": 2107,
+      "sha256": "b684d1d564acaa7993d18ded73bae33bd2d7dd76c91aaa108e709fcd26bea78c",
+      "git_blob_sha1": "6469e190869f47b0172550cc52bb07fdcdf262f2"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/PROVENANCE.md",
+      "bytes": 8047,
+      "sha256": "982ac9f439c45df8115617ff6379b68b5884489c5d1625751f8e0bc5095bbf22",
+      "git_blob_sha1": "baa48dffa42225fb9968e8c2187dc798e87599c1"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/README.md",
+      "bytes": 4951,
+      "sha256": "ff02899221f83d475790077d0080bb65e70e3fcd12c0784b6061f5bbde463f22",
+      "git_blob_sha1": "6b36d67e63f40ce5c69e1d87975daccac7ec1644"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/THEOREMS.md",
+      "bytes": 29472,
+      "sha256": "112634fd9d370be421b5ca4d9619c9ea01fd259b8cdbd4ecef6f97f422db04f1",
+      "git_blob_sha1": "2c7d8e9b7c4358e3d7dac3e3b0619b6cad7990f5"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/TRANSLATION_NOTES.md",
+      "bytes": 31859,
+      "sha256": "d861b88eac3cc3aac87b90f4534f0eeb77d318da1a96f7e8aa8e5f05db28a012",
+      "git_blob_sha1": "4215f8645612e1cb3175d4afafe77e0ccfcaaaeb"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/VALIDATION.md",
+      "bytes": 8442,
+      "sha256": "fddd404132684b176f8594b0a75d0f58714019601bd8f7ea030e1538143d8437",
+      "git_blob_sha1": "081878dbca782b82dd1d4978d462aa741703f95c"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/face_limit_probe.py",
+      "bytes": 7777,
+      "sha256": "49cffc7672e5e4e08a52ecb33af6912189a8a4aba153792ecf4c4888baf345d1",
+      "git_blob_sha1": "41c0dc141a71cc74cbcd9d3431f8fee79d6e80e9"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/independent_audit.py",
+      "bytes": 9403,
+      "sha256": "63442e2a9ec68017febbece4363140e8c5c5ae274fe1a508644ed42dd6f04f0f",
+      "git_blob_sha1": "c6c6e5bc989be8ff61bc2a43abeadd4aef821c35"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/artifact_check.json",
+      "bytes": 395,
+      "sha256": "a095cb54299c66eeec93071c70f52cfafab5064210779754745e12ce8f5bdc66",
+      "git_blob_sha1": "076ae7f25471b8806f7bfca5edc790483e22bf5e"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/environment.json",
+      "bytes": 521,
+      "sha256": "22f6dc3e1a1b0a2e40d4ade1fe8e05877f552df831db2be3de51043f22a7592c",
+      "git_blob_sha1": "1096d726108b0892ea9c990b38173ca86d4a521c"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/face_limit.json",
+      "bytes": 35086,
+      "sha256": "188ac2640f3f0a4b5128e0bb487d3df18ac5975b4ead72af39d1f3fe49a61a33",
+      "git_blob_sha1": "0eda7f3bdc7acc92653f3a564d9dcc0a6a91dfc6"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/face_limit_root.json",
+      "bytes": 35087,
+      "sha256": "965ee57df5a6283393cf642ed31f3cf82cf02c248f82451c394faf519b2735de",
+      "git_blob_sha1": "de2c3dabb598c38461409e593fc8311a6dfeda84"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/focused.json",
+      "bytes": 194,
+      "sha256": "cef96981a8ff548a748aaa6c0a4d30227f6ea2d35125047077b63a4a8149dd7d",
+      "git_blob_sha1": "673947436949b608dd923ba0a5ed70f6873eb182"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/focused.log",
+      "bytes": 22061,
+      "sha256": "c843a436d02827ae9263b099048bb37ccdddd7b78b7427ec6aa91f569aa8d102",
+      "git_blob_sha1": "5672c4cd8962d0a38502c9f489bee79656d4b985"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/focused_initial.log",
+      "bytes": 3540,
+      "sha256": "ec2326685ced87d056623a78b8282c8d73a111483d36802490ce1d535eae4531",
+      "git_blob_sha1": "eeea01be0508f27920c41774715d9ddf7e8617fe"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/foundations.json",
+      "bytes": 129,
+      "sha256": "7e4e640b4abc899821d0d1fa97d4bfc004c1caef5d14010d01e46859b323cd6a",
+      "git_blob_sha1": "ca535b8e78f7702f754f7092dc4e240464f4f831"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/foundations.log",
+      "bytes": 2498,
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "git_blob_sha1": "eac4755eb99a53410882c8361928788fea4b75d9"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/full_baseline.json",
+      "bytes": 518,
+      "sha256": "6fe747d4138147a333c43ba771b4cb3ef9ba9993ba10f5e47266980fa879b2db",
+      "git_blob_sha1": "10fef2ea8a0d89956c1bba0761398985381aa294"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/full_baseline.log",
+      "bytes": 14131,
+      "sha256": "26c08ea67a26ea55dc7ae94ea6056dd32366bd12a9db764c08c07324c79fc683",
+      "git_blob_sha1": "3631f8c0fe38c1141429978226c3bb5ec725b4b7"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/independent.json",
+      "bytes": 2514,
+      "sha256": "3954cb9b271076faa004edc0f016082c7bcbf9d7c1dd3bf98598b6f9155086e5",
+      "git_blob_sha1": "0e916d17bb59173a3770c28217b7d6b2b959bcbf"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/ordinal.json",
+      "bytes": 129,
+      "sha256": "ce3908045eb39468f72373ec65ed6adb27a47302fd547d767bf41114e18bf57e",
+      "git_blob_sha1": "a2113a344fcfc810c61ae71d333370a3acd6c644"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/ordinal.log",
+      "bytes": 3612,
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "git_blob_sha1": "d9f5a7da2eb6e92ded350e5a3f2e7b6e74a900ed"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/proof_review.json",
+      "bytes": 2367,
+      "sha256": "da306690c1e37255274e195549c694ddd28124003af96ca9c6a93ee709fd6028",
+      "git_blob_sha1": "d552f43ec27736923d5630b4acd09572ae9e6c57"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/provenance.json",
+      "bytes": 355,
+      "sha256": "1d2c2fed90e746336eb0a9d8f8f52e028670bd5fb2852719f11a633824aa09cc",
+      "git_blob_sha1": "891e16a5622a16a9e4416a2a21fbedd4f9e894e1"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/provenance.log",
+      "bytes": 249,
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "git_blob_sha1": "824ba40a8edb0f7b112cd04dee2f17759f622a3f"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/root_symbolic.json",
+      "bytes": 2433,
+      "sha256": "35dd95f51a7708ea53f0b4691ad7a82669f542f5cc4a1134a35e21367fe5b5ae",
+      "git_blob_sha1": "6814318e8da64cf5c19ba050842c4d8fd5b7bead"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/receipts/symbolic_invocation_history.json",
+      "bytes": 430,
+      "sha256": "55516be17ed7cf237c4a258c86fb8cc0fa53bf64dfba6b874cedc402dd25fb4a",
+      "git_blob_sha1": "e2d8f81968a7d352f748462af205e9cee2fdcecf"
+    },
+    {
+      "path": "research/2026-11-15/causal_negative_orders/root_symbolic_audit.py",
+      "bytes": 2902,
+      "sha256": "8db2df505750f1d94411eb13d34a55a95496b48321359256e9bc103ac17803a9",
+      "git_blob_sha1": "82efe9e53a4f06fc9723c4bb95857c927beb5b83"
+    }
+  ]
+}

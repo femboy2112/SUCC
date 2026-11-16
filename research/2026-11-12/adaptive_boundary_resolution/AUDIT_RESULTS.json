@@ -1,0 +1,628 @@
+{
+  "aperture_audit": {
+    "damping_rule": "1/(4M)",
+    "histogram_noise_cases": 726,
+    "mutation_controls": [
+      "noninteger target",
+      "M*s equals one",
+      "flooring noisy center",
+      "omitted actual normalization mass"
+    ],
+    "raw_error_radius": "1/4",
+    "scope": "synthetic exact finite controls, not arithmetic asymptotics"
+  },
+  "arithmetic_audit": {
+    "Goldbach_proved": false,
+    "asymptotic_theorem_tested": false,
+    "damped_certificates": [
+      {
+        "degree": 2,
+        "direct_unordered_count": 6,
+        "filtered_response": "22859/8192",
+        "histogram": [
+          6,
+          13,
+          11,
+          10,
+          9,
+          12,
+          2,
+          3
+        ],
+        "integer_interval_from_observed_packet": [
+          3,
+          9
+        ],
+        "midpoint": 67,
+        "observed_packet_recovers_count": false,
+        "positive": true,
+        "recovered_count_under_budget": null,
+        "responses": [
+          "2239/128",
+          "166155/16384"
+        ],
+        "sharp_mass_completeness_budget_met": false
+      },
+      {
+        "degree": 4,
+        "direct_unordered_count": 6,
+        "filtered_response": "25073735/4194304",
+        "histogram": [
+          6,
+          13,
+          11,
+          10,
+          9,
+          12,
+          2,
+          3
+        ],
+        "integer_interval_from_observed_packet": [
+          6,
+          6
+        ],
+        "midpoint": 67,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 6,
+        "responses": [
+          "2239/128",
+          "166155/16384",
+          "16397587/2097152",
+          "1840946211/268435456"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      },
+      {
+        "degree": 6,
+        "direct_unordered_count": 6,
+        "filtered_response": "805306051/134217728",
+        "histogram": [
+          6,
+          13,
+          11,
+          10,
+          9,
+          12,
+          2,
+          3
+        ],
+        "integer_interval_from_observed_packet": [
+          6,
+          6
+        ],
+        "midpoint": 67,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 6,
+        "responses": [
+          "2239/128",
+          "166155/16384",
+          "16397587/2097152",
+          "1840946211/268435456",
+          "220496965699/34359738368",
+          "27293613604995/4398046511104"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      },
+      {
+        "degree": 2,
+        "direct_unordered_count": 15,
+        "filtered_response": "4028561/2097152",
+        "histogram": [
+          15,
+          36,
+          50,
+          32,
+          38,
+          41,
+          27,
+          15,
+          6,
+          1,
+          0,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          2,
+          30
+        ],
+        "midpoint": 263,
+        "observed_packet_recovers_count": false,
+        "positive": true,
+        "recovered_count_under_budget": null,
+        "responses": [
+          "110021/2048",
+          "116690065/4194304"
+        ],
+        "sharp_mass_completeness_budget_met": false
+      },
+      {
+        "degree": 4,
+        "direct_unordered_count": 15,
+        "filtered_response": "4096568951101/274877906944",
+        "histogram": [
+          15,
+          36,
+          50,
+          32,
+          38,
+          41,
+          27,
+          15,
+          6,
+          1,
+          0,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          15,
+          15
+        ],
+        "midpoint": 263,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 15,
+        "responses": [
+          "110021/2048",
+          "116690065/4194304",
+          "174842870849/8589934592",
+          "307049539789057/17592186044416"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      },
+      {
+        "degree": 6,
+        "direct_unordered_count": 15,
+        "filtered_response": "33776947657783533/2251799813685248",
+        "histogram": [
+          15,
+          36,
+          50,
+          32,
+          38,
+          41,
+          27,
+          15,
+          6,
+          1,
+          0,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          15,
+          15
+        ],
+        "midpoint": 263,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 15,
+        "responses": [
+          "110021/2048",
+          "116690065/4194304",
+          "174842870849/8589934592",
+          "307049539789057/17592186044416",
+          "582760105522693121/36028797018963968",
+          "1149219715685658660865/73786976294838206464"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      },
+      {
+        "degree": 2,
+        "direct_unordered_count": 22,
+        "filtered_response": "-6874935/2097152",
+        "histogram": [
+          22,
+          67,
+          85,
+          77,
+          71,
+          80,
+          58,
+          32,
+          17,
+          8,
+          2,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          0,
+          54
+        ],
+        "midpoint": 521,
+        "observed_packet_recovers_count": false,
+        "positive": false,
+        "recovered_count_under_budget": null,
+        "responses": [
+          "193645/2048",
+          "191417545/4194304"
+        ],
+        "sharp_mass_completeness_budget_met": false
+      },
+      {
+        "degree": 4,
+        "direct_unordered_count": 22,
+        "filtered_response": "5994717189085/274877906944",
+        "histogram": [
+          22,
+          67,
+          85,
+          77,
+          71,
+          80,
+          58,
+          32,
+          17,
+          8,
+          2,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          22,
+          22
+        ],
+        "midpoint": 521,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 22,
+        "responses": [
+          "193645/2048",
+          "191417545/4194304",
+          "273791525905/8589934592",
+          "466887704123425/17592186044416"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      },
+      {
+        "degree": 6,
+        "direct_unordered_count": 22,
+        "filtered_response": "49539484199391085/2251799813685248",
+        "histogram": [
+          22,
+          67,
+          85,
+          77,
+          71,
+          80,
+          58,
+          32,
+          17,
+          8,
+          2,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          22,
+          22
+        ],
+        "midpoint": 521,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 22,
+        "responses": [
+          "193645/2048",
+          "191417545/4194304",
+          "273791525905/8589934592",
+          "466887704123425/17592186044416",
+          "871146689619599425/36028797018963968",
+          "1702112434563290792065/73786976294838206464"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      },
+      {
+        "degree": 2,
+        "direct_unordered_count": 34,
+        "filtered_response": "-140846031/8388608",
+        "histogram": [
+          34,
+          111,
+          183,
+          138,
+          146,
+          144,
+          133,
+          75,
+          34,
+          23,
+          6,
+          4,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          0,
+          99
+        ],
+        "midpoint": 1033,
+        "observed_packet_recovers_count": false,
+        "positive": false,
+        "recovered_count_under_budget": null,
+        "responses": [
+          "692121/4096",
+          "1276617777/16777216"
+        ],
+        "sharp_mass_completeness_budget_met": false
+      },
+      {
+        "degree": 4,
+        "direct_unordered_count": 34,
+        "filtered_response": "147833988032125/4398046511104",
+        "histogram": [
+          34,
+          111,
+          183,
+          138,
+          146,
+          144,
+          133,
+          75,
+          34,
+          23,
+          6,
+          4,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          34,
+          34
+        ],
+        "midpoint": 1033,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": null,
+        "responses": [
+          "692121/4096",
+          "1276617777/16777216",
+          "3507750686625/68719476736",
+          "11734243807032897/281474976710656"
+        ],
+        "sharp_mass_completeness_budget_met": false
+      },
+      {
+        "degree": 6,
+        "direct_unordered_count": 34,
+        "filtered_response": "4899899961506453805/144115188075855872",
+        "histogram": [
+          34,
+          111,
+          183,
+          138,
+          146,
+          144,
+          133,
+          75,
+          34,
+          23,
+          6,
+          4,
+          1
+        ],
+        "integer_interval_from_observed_packet": [
+          34,
+          34
+        ],
+        "midpoint": 1033,
+        "observed_packet_recovers_count": true,
+        "positive": true,
+        "recovered_count_under_budget": 34,
+        "responses": [
+          "692121/4096",
+          "1276617777/16777216",
+          "3507750686625/68719476736",
+          "11734243807032897/281474976710656",
+          "43409588373898893441/1152921504606846976",
+          "168964327146518434570497/4722366482869645213696"
+        ],
+        "sharp_mass_completeness_budget_met": true
+      }
+    ],
+    "degrees": [
+      2,
+      4,
+      6
+    ],
+    "midpoints": [
+      67,
+      263,
+      521,
+      1033
+    ],
+    "scope": "four preregistered midpoints; independent finite arithmetic wiring check",
+    "single_channel_certificates": [
+      {
+        "certificate": {
+          "count_recovered": true,
+          "integer_lower": 6,
+          "integer_upper": 6,
+          "source_and_integrality_promises_required": true,
+          "uniform_width_budget": "3/4"
+        },
+        "direct_unordered_count": 6,
+        "midpoint": 67,
+        "node": "1/264",
+        "response": "60075492233661755/9930816991789056"
+      },
+      {
+        "certificate": {
+          "count_recovered": true,
+          "integer_lower": 15,
+          "integer_upper": 15,
+          "source_and_integrality_promises_required": true,
+          "uniform_width_budget": "3/4"
+        },
+        "direct_unordered_count": 15,
+        "midpoint": 263,
+        "node": "1/1048",
+        "response": "25180254454643786749923861973988929/1674843025703255180973123045425152"
+      },
+      {
+        "certificate": {
+          "count_recovered": true,
+          "integer_lower": 22,
+          "integer_upper": 22,
+          "source_and_integrality_promises_required": true,
+          "uniform_width_budget": "3/4"
+        },
+        "direct_unordered_count": 22,
+        "midpoint": 521,
+        "node": "1/2080",
+        "response": "69463260530751093189160689484093239361/3152801907333279094354739200000000000"
+      },
+      {
+        "certificate": {
+          "count_recovered": true,
+          "integer_lower": 34,
+          "integer_upper": 34,
+          "source_and_integrality_promises_required": true,
+          "uniform_width_budget": "3/4"
+        },
+        "direct_unordered_count": 34,
+        "midpoint": 1033,
+        "node": "1/4128",
+        "response": "833102910514959490156318342297134074096244865/24483655688777851557182970177242170776354816"
+      }
+    ]
+  },
+  "integer_audit": {
+    "construction": "elementary symmetric sums; distinct from production multiplication",
+    "improved_two_channel_witness_mass": 14,
+    "product_witnesses": [
+      {
+        "base": 2,
+        "channels": 1,
+        "equal_response_coordinates_including_mass": 2,
+        "mass": 3
+      },
+      {
+        "base": 2,
+        "channels": 2,
+        "equal_response_coordinates_including_mass": 3,
+        "mass": 15
+      },
+      {
+        "base": 2,
+        "channels": 3,
+        "equal_response_coordinates_including_mass": 4,
+        "mass": 135
+      },
+      {
+        "base": 2,
+        "channels": 4,
+        "equal_response_coordinates_including_mass": 5,
+        "mass": 2295
+      },
+      {
+        "base": 2,
+        "channels": 5,
+        "equal_response_coordinates_including_mass": 6,
+        "mass": 75735
+      },
+      {
+        "base": 2,
+        "channels": 6,
+        "equal_response_coordinates_including_mass": 7,
+        "mass": 4922775
+      },
+      {
+        "base": 3,
+        "channels": 1,
+        "equal_response_coordinates_including_mass": 2,
+        "mass": 4
+      },
+      {
+        "base": 3,
+        "channels": 2,
+        "equal_response_coordinates_including_mass": 3,
+        "mass": 40
+      },
+      {
+        "base": 3,
+        "channels": 3,
+        "equal_response_coordinates_including_mass": 4,
+        "mass": 1120
+      },
+      {
+        "base": 3,
+        "channels": 4,
+        "equal_response_coordinates_including_mass": 5,
+        "mass": 91840
+      },
+      {
+        "base": 3,
+        "channels": 5,
+        "equal_response_coordinates_including_mass": 6,
+        "mass": 22408960
+      },
+      {
+        "base": 3,
+        "channels": 6,
+        "equal_response_coordinates_including_mass": 7,
+        "mass": 16358540800
+      },
+      {
+        "base": 5,
+        "channels": 1,
+        "equal_response_coordinates_including_mass": 2,
+        "mass": 6
+      },
+      {
+        "base": 5,
+        "channels": 2,
+        "equal_response_coordinates_including_mass": 3,
+        "mass": 156
+      },
+      {
+        "base": 5,
+        "channels": 3,
+        "equal_response_coordinates_including_mass": 4,
+        "mass": 19656
+      },
+      {
+        "base": 5,
+        "channels": 4,
+        "equal_response_coordinates_including_mass": 5,
+        "mass": 12304656
+      },
+      {
+        "base": 5,
+        "channels": 5,
+        "equal_response_coordinates_including_mass": 6,
+        "mass": 38464354656
+      },
+      {
+        "base": 5,
+        "channels": 6,
+        "equal_response_coordinates_including_mass": 7,
+        "mass": 601044005854656
+      }
+    ]
+  },
+  "phase_prefix_audit": {
+    "entries": [
+      {
+        "declared_failure_grade": 12,
+        "delta": "64/6561",
+        "first_positive_grade": 12,
+        "outer_positive_real_coefficient": "0",
+        "passing_prefix": 8,
+        "response_at_declared_failure": "3575713/55037657088"
+      },
+      {
+        "declared_failure_grade": 36,
+        "delta": "1073741824/1853020188851841",
+        "first_positive_grade": 36,
+        "outer_positive_real_coefficient": "0",
+        "passing_prefix": 32,
+        "response_at_declared_failure": "16912154860489121531313793/4375320215957357070255211771664007168"
+      },
+      {
+        "declared_failure_grade": 68,
+        "delta": "4611686018427387904/3433683820292512484657849089281",
+        "first_positive_grade": 68,
+        "outer_positive_real_coefficient": "0",
+        "passing_prefix": 64,
+        "response_at_declared_failure": "134598109158818215129028543582265465687678616780033/149558023376290107115922961775801812406837977672084662906600426368401408"
+      }
+    ],
+    "scope": "designed rational negative-node traps; no global minorant certification"
+  }
+}

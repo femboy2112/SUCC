@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "tests.test_bbp_volume_algebra",
+    "tests.test_bbp_gamma_kernel_algebra",
+    "tests.test_gamma_source_volume",
+    "tests.test_gamma_observer_descent",
+    "tests.test_bbp_cyclotomic_birth",
+    "tests.test_pascal_carry_joint",
+    "tests.test_pisot_gamma_gluing",
+    "-v"
+  ],
+  "started_utc": "2026-11-15T03:00:32.440593+00:00",
+  "seconds": 3.1521091860013257,
+  "exit_code": 0,
+  "status": "PASS",
+  "python_optimization": 0,
+  "tests": 104
+}

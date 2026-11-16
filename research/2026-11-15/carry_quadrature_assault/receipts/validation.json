@@ -1,0 +1,89 @@
+{
+  "status": "VALIDATED_WITH_REPRODUCED_BASELINE_ENVIRONMENT_QUALIFICATION",
+  "baseline_commit": "895c0ae63af7b09548c608a1b0b6f298cea0e6d1",
+  "python": "3.12.14",
+  "code_sha256": {
+    "observational_succ/carry_quadrature.py": "ada98cc0005372d031983bf88bf041112638704d2a8d80429816a7d1450a39e9",
+    "scripts/carry_quadrature_probe.py": "b9df9a1937463665096bcf5eb4c1f8f6361bd63a3eab35a4e2d7ae6c59531304",
+    "tests/test_carry_quadrature.py": "8c8621a83222e6b2de7321d138ca31025c8ed86d4073d10b526a1020ba70446c",
+    "research/2026-11-15/carry_quadrature_assault/independent_audit.py": "e12dd0d2b36c7f14e3665255f1e07a02b95b7b11b7707906a9aa19b38c8ca531"
+  },
+  "gates": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "exit_code": 1,
+      "tests": 13545,
+      "passed": 13544,
+      "errors": 1,
+      "elapsed_seconds": 1048.533,
+      "cause": "Unchanged subprocess omits repository import path; also fails on parent",
+      "receipt": "full_tests.log"
+    },
+    {
+      "command": "PYTHONPATH=. python -m unittest tests.test_eodcs_meta_choice_descent -v",
+      "exit_code": 0,
+      "tests": 11,
+      "also_passed_on_parent": true,
+      "receipt": "import_path_rerun.log"
+    },
+    {
+      "command": "python -m unittest tests.test_carry_quadrature -v",
+      "exit_code": 0,
+      "tests": 10,
+      "receipt": "focused_tests.log"
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "frozen_items": 72,
+      "receipt": "provenance.log"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "receipt": "observer_foundations.log"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "receipt": "ordinal_report.log"
+    },
+    {
+      "command": "python scripts/carry_quadrature_probe.py --horizon 32768",
+      "exit_code": 0,
+      "exact_cross_checks": 2048,
+      "horizon": 32768,
+      "receipt": "finite_probe.json"
+    },
+    {
+      "command": "python research/2026-11-15/carry_quadrature_assault/independent_audit.py --output research/2026-11-15/carry_quadrature_assault/receipts/independent_audit.json",
+      "exit_code": 0,
+      "exact_assertions": 55022,
+      "receipt": "independent_audit.json"
+    }
+  ],
+  "full_green_rerun_claimed": false,
+  "unchanged_baseline_probe_and_test": true,
+  "independence_scope": "Separate exact implementations and peer algebra audits share source definitions, standard rational arithmetic and model family.",
+  "mathematical_limits": [
+    "No original-source positive shell density bound",
+    "No R0 closure",
+    "No pi normality proof",
+    "No physical energy or quantum mechanism inferred"
+  ],
+  "receipt_sha256": {
+    "bbp_prefix_hex.txt": "370942b792abc719f0f9611be6864a956ee6de5f7174da1e5b913afc16362a86",
+    "carry_residues_mod4.txt": "445b030d299cc6c0e575ad78b2500cf9b5b356263fd005c06594356e1d6028d7",
+    "finite_probe.json": "b41b9c26228f105534d10a85789c23be2203d321e57bdad5d1b9db3ebd74aed9",
+    "finite_probe.log": "adebed28fbe0dec10ac360691a21b62161a6989164cdc956f081bce192abeb5e",
+    "focused_tests.log": "dd6caa726892b3c2ddb3578c48a03b585dc639c75841fb32f8675d1968252fdd",
+    "full_tests.log": "b9d22d954a93b17f66bd272f79ae9a9ad0b2b5354452ebb6bf320d8dc45900f7",
+    "import_path_rerun.log": "36d2bcd5a0bfa01a139a3bfae010cb3df973b2bd4ad43836b869f2c2e3184ef9",
+    "import_path_triage.json": "bb91a522c3ac6c72bbe1bc4c04ac21b55bf51cea14a2220a7f5a65d9ed4046a9",
+    "independent_audit.json": "b377d5b906a8df1bf1369b80682f95d90e7ddaf74c51df2c612c94d0519b351e",
+    "independent_audit.log": "b377d5b906a8df1bf1369b80682f95d90e7ddaf74c51df2c612c94d0519b351e",
+    "observer_foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "ordinal_report.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+  }
+}

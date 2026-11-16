@@ -1,0 +1,98 @@
+{
+  "actual_source_lambda": {
+    "multiply_2_mod_5_unitary": true,
+    "multiply_2_mod_6_unitary": false,
+    "successor_mod_6_unitary": true
+  },
+  "arithmetic_source_identified_with_wilson_source": false,
+  "coherent_cancellation_amplitude": "0",
+  "constructive_wilson_certificate": {
+    "beta": "3/2",
+    "cutoff": 14,
+    "density_trace": 1,
+    "error_bound": "59049/481517373489152000",
+    "expectation": "140176977843721087451611148321866642915152/407320699952544782762678684346313142525993",
+    "graph_vertices": 15,
+    "matrix_path_and_source_values_agree": true,
+    "norm_squared": "407320699952544782762678684346313142525993/311195856424425091689629036580039557120000",
+    "observable_coefficients": [
+      "0",
+      "1"
+    ],
+    "taylor_degree": 14,
+    "tolerance": "1/1000000000000"
+  },
+  "cutoff_3_first_defect_at_power_8": "1/256",
+  "discarding_measurement_record_changes_wilson_expectation": {
+    "after": "0",
+    "before": "4/17"
+  },
+  "full_4d_yang_mills_reproduced": false,
+  "haar_graph_moments_0_through_12": [
+    "1",
+    "0",
+    "1/4",
+    "0",
+    "1/8",
+    "0",
+    "5/64",
+    "0",
+    "7/128",
+    "0",
+    "21/512",
+    "0",
+    "33/1024"
+  ],
+  "multiplicative_succ_character_bridge": {
+    "bare_T2_pullback_of_x_norm_squared": "1/2",
+    "exact_character_identities": 56,
+    "exact_norm_checks": 56,
+    "formula": "W V_p W* f(x) = U_(p-1)(x) f(T_p(x))",
+    "multipliers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "original_x_norm_squared": "1/4",
+    "positive_integer_basis_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "universal_L2_isometry": "proved in SUCC_CHARACTER_PROOF.md, not inferred from finite checks"
+  },
+  "physical_mass_gap_proved": false,
+  "quantum_speedup_claimed": false,
+  "source": "normalized single SU(2) Wilson plaquette; trace x=Tr(U)/2",
+  "state_and_observable_binding": {
+    "biased_wilson_observable_expectation": "3/5",
+    "same_adapted_state": true,
+    "uniform_observable_expectation": "0"
+  },
+  "successor_carrier": "old e_(n+1) indexed as n>=0; open vacuum boundary",
+  "weighted_haar": {
+    "coefficients": [
+      "67/42",
+      "-115/21",
+      "3",
+      "-2"
+    ],
+    "energy": "479/21",
+    "inverse_exact": true,
+    "metric": [
+      "2",
+      "1/2",
+      "10/49",
+      "2/9"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source": "original four-pole BBP with literal U0=0; symbolic test module Q+Q*pi/16",
+  "target": "base-16 normality of pi/16 / lawful source representation",
+  "universal_result": "NOT_PROVED",
+  "pi_normality": "OPEN",
+  "R0": "OPEN",
+  "claims": [
+    {"id":"SRC-01", "status":"CLASSICAL-IMPORT+PROVED-ALGEBRA", "scope":"s=a+b*x in Q+Q*x", "result":"b!=-1 gives normality equivalent to x; b=-1 gives rational nonnormal value", "boundary":"Wall theorem imported; neither value of the x normality predicate known"},
+    {"id":"SRC-02", "status":"PROVED-PAPER", "scope":"proper rational polynomial source with rational seed", "result":"coherent seed -x is not admissible; true source gauge changes g and s together", "boundary":"does not classify arbitrary computable-real seed preparation"},
+    {"id":"SRC-03", "status":"PROVED-PAPER", "scope":"rational finite-depth preparation s_N=-P_N on moving horizon N", "result":"states near zero through horizon N with shell coherence 1-O(B^-4)", "boundary":"seed changes with horizon, does not contradict fixed s"},
+    {"id":"SRC-04", "status":"REFUTED-GENERAL", "scope":"using nonnormal -x to refute original zero-seed normality", "result":"invalid type change: seed alters completed number and fails rational source contract", "boundary":"still useful to refute all-real-seed source-blind extrapolation"},
+    {"id":"SRC-05", "status":"SUCC-IMPORT", "scope":"ZSC-06 alternative proper rational polynomial sources", "result":"zero seed alone insufficient: genuine distinct proper null source completes to zero", "boundary":"source g differs from original four-pole positive g_pi"}
+  ],
+  "next_probe": "original source-specific R0 signed anti-locking under exact forcing, zero seed, proper form, rational moment positivity and full carries"
+}

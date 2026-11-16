@@ -1,0 +1,101 @@
+{
+  "additivity": {
+    "all_report_tables": 16,
+    "all_transition_tables": 256,
+    "horizon": 24,
+    "models": 4096,
+    "report_alphabet_size": 2,
+    "states": 4
+  },
+  "arithmetic": "integers and fractions.Fraction",
+  "permutations": {
+    "all_report_tables": 81,
+    "all_transition_tables": 24,
+    "horizon": 24,
+    "models": 1944,
+    "report_alphabet_size": 3,
+    "states": 4
+  },
+  "polynomial_source": {
+    "bounded_multiplier_error_checks": 53508,
+    "descent_checks": 49,
+    "fraction_grid": [
+      "-7/3",
+      "-1",
+      "-1/5",
+      "0",
+      "1/7",
+      "1",
+      "5/2"
+    ],
+    "instability_family_checks": 112,
+    "jump_checks": 931,
+    "maximum_error_horizon": 12,
+    "maximum_jump_horizon": 18,
+    "multiplier_bounds": [
+      "0",
+      "1/3",
+      "1",
+      "3"
+    ],
+    "phantom_shadow_passes_source_rejects": true,
+    "phantom_triple": [
+      "0",
+      "0",
+      "1"
+    ]
+  },
+  "random_seed": null,
+  "repository_implementation_imports": false,
+  "result": "PASS",
+  "scope_mutants": {
+    "both_overclaim_mutants_rejected": true,
+    "delayed_three_state_source": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "different_target_breaks_addition": [
+      0,
+      1,
+      4,
+      5,
+      8
+    ],
+    "single_current_fiber_breaks_addition": [
+      0,
+      1,
+      3,
+      5,
+      7
+    ]
+  },
+  "two_rail_realization": {
+    "generator_cardinalities": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "generator_universe": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "largest_source_states": 98,
+    "minimum_horizon": 120,
+    "models": 93,
+    "one_pointed_unary_orbit_claimed": false,
+    "three_way_agreement": "quotient horizons, residue minima, coin-sum DP"
+  }
+}

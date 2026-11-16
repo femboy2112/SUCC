@@ -1,5 +1,8 @@
 # Observational SUCC
 
+**Main XXVI:** [recovery/integration audit](docs/SUCC_MAIN_XXVI_INTEGRATION_AUDIT_2026-11-16.md), [constructive interference atlas](docs/MAIN_XXVI_CONSTRUCTIVE_INTERFERENCE_ATLAS.md), [canonical pi frontier](docs/PI_NORMALITY_FRONTIER.md), [research handoff](docs/MAIN_XXVI_HANDOFF.md). Source-selected cancellation and pi normality remain OPEN.
+
+
 **How does a finite observer turn causal contact into mathematical knowledge?**
 
 Observational SUCC studies explicit sources, their evolving carriers, the information
@@ -7,6 +10,8 @@ an observer can recover, and the certificates that justify a conclusion. Categor
 theory organizes actual maps and their coherence; exact arithmetic and analysis
 test what survives those maps. Physical and semantic intuition motivates the theory.
 Its mathematical interpretations have separately stated hypotheses.
+
+The [Principia Observatoris synthesis](docs/principia_observatoris/SYNTHESIS.md) gives exact conditions for an observer to preserve actions, make predictions and act on time. Its [theorem register](research/2026-11-14/tenacious_d/UNIFIED_THEOREMS.md) links each result to proofs and countermodels.
 
 The current arithmetic machine follows one chain:
 

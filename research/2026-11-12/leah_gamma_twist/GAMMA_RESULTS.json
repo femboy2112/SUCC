@@ -1,0 +1,210 @@
+{
+  "base_commit": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "direct_prime_implications": 751,
+  "direct_prime_rows": [
+    {
+      "fresh": 28,
+      "inherited_no_injection": 76,
+      "n": 127,
+      "t": 158
+    },
+    {
+      "fresh": 50,
+      "inherited_no_injection": 89,
+      "n": 191,
+      "t": 254
+    },
+    {
+      "fresh": 103,
+      "inherited_no_injection": 93,
+      "n": 257,
+      "t": 385
+    },
+    {
+      "fresh": 232,
+      "inherited_no_injection": 80,
+      "n": 311,
+      "t": 622
+    }
+  ],
+  "envelopes": [
+    {
+      "active_gaps": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "inherited_before_loss": "923/252",
+      "log16_coefficient": "-1/4",
+      "rational_part": "1301/252",
+      "x": "1/4"
+    },
+    {
+      "active_gaps": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "inherited_before_loss": "3061/945",
+      "log16_coefficient": "-1/3",
+      "rational_part": "4951/945",
+      "x": "1/3"
+    },
+    {
+      "active_gaps": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "inherited_before_loss": "1271/441",
+      "log16_coefficient": "-3/7",
+      "rational_part": "2405/441",
+      "x": "3/7"
+    },
+    {
+      "active_gaps": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "inherited_before_loss": "37/14",
+      "log16_coefficient": "-1/2",
+      "rational_part": "79/14",
+      "x": "1/2"
+    },
+    {
+      "active_gaps": [
+        [
+          1,
+          4
+        ]
+      ],
+      "inherited_before_loss": "9/4",
+      "log16_coefficient": "-3/4",
+      "rational_part": "27/4",
+      "x": "3/4"
+    },
+    {
+      "active_gaps": [
+        [
+          1,
+          4
+        ]
+      ],
+      "inherited_before_loss": "2",
+      "log16_coefficient": "-1",
+      "rational_part": "8",
+      "x": "1"
+    }
+  ],
+  "log2_interval": [
+    "149337754816/215448838605",
+    "10154967342503/14650521025140"
+  ],
+  "mutation_control": "Wrong first-pole coefficient rejected",
+  "original_envelope_check_cases": 6,
+  "preregistration_scope": "Symbolic and original envelope cases predeclared in GAMMA_PRIME.md; direct-prime checks and root strengthening are non-blind regression checks",
+  "root_strengthening": [
+    {
+      "branch": "retain_inherited",
+      "fresh_mass": "3/2",
+      "inherited_interval": [
+        "21752736380741/7325260512570",
+        "2559145457441/861795354420"
+      ],
+      "x": "1/4"
+    },
+    {
+      "branch": "retain_inherited",
+      "fresh_mass": "3",
+      "inherited_interval": [
+        "4602324863216/3662630256285",
+        "541449984791/430897677210"
+      ],
+      "x": "1/2"
+    },
+    {
+      "branch": "retain_inherited",
+      "fresh_mass": "9/2",
+      "inherited_interval": [
+        "208230856588/1220876752095",
+        "48995496551/287265118140"
+      ],
+      "x": "3/4"
+    },
+    {
+      "branch": "fresh_only",
+      "fresh_mass": "6",
+      "inherited_interval": [
+        "-2829706829933/3662630256285",
+        "-166453342054/215448838605"
+      ],
+      "x": "1"
+    }
+  ],
+  "root_strengthening_check_cases": 4,
+  "schema": "SUCC-leah-gamma-prime-v1",
+  "scope": "Exact finite algebra; no R0 or normality certificate",
+  "status": "PASS",
+  "symbolic_check_cases": 10
+}

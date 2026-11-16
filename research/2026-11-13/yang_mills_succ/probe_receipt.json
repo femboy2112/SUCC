@@ -1,0 +1,81 @@
+{
+  "full_upstream_lean_replayed": false,
+  "phase_transport": {
+    "closing_margin_cases": [
+      {
+        "reader": [
+          [
+            "2"
+          ]
+        ],
+        "reader_norm": "2",
+        "target_difference_bound": "1"
+      },
+      {
+        "reader": [
+          [
+            "13"
+          ]
+        ],
+        "reader_norm": "13",
+        "target_difference_bound": "1"
+      },
+      {
+        "reader": [
+          [
+            "1009"
+          ]
+        ],
+        "reader_norm": "1009",
+        "target_difference_bound": "1"
+      }
+    ],
+    "invisible_resonance_reader": {
+      "reader": [
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "reader_norm": "2",
+      "target_difference_bound": "1/25"
+    },
+    "sharp_factor_two": {
+      "difference_budget": "1/2",
+      "difference_defect": "1/2",
+      "left_residual": "1/4",
+      "right_residual": "-1/4"
+    },
+    "visible_resonance_rejected": true
+  },
+  "pi_normality_proved": false,
+  "reflection": {
+    "cosine_reflected_one_point": "-1",
+    "cosine_toeplitz_psd": true,
+    "finite_hilbert_N17_t3": "17/72",
+    "finite_hilbert_error_bound": "1/17",
+    "hilbert_limit_t3": "1/4",
+    "hilbert_reflected_psd": true,
+    "physical_mass_bounds_at_spacing_1_100": [
+      "100/10001",
+      "1/100"
+    ]
+  },
+  "schema_version": 1,
+  "scope": "finite rational witnesses; universal claims have separate paper proofs",
+  "source_base": "db9fb4b84672050efa79b13377f1e73364598a14",
+  "su2_wilson": {
+    "beta": "3/2",
+    "gram_psd": true,
+    "moment_routes_agree": true,
+    "normalization": "1",
+    "odd_taylor_negative_square": "-1/4",
+    "source": "one SU(2) plaquette with action 1-Tr(U)/2",
+    "taylor_order": 20,
+    "trace_error_bound": "43046721/2721776953647431680000",
+    "trace_expectation": "10934311109512537707960/31772487345182308438481",
+    "two_moment_routes_agree_through_degree": 200
+  },
+  "yang_mills_continuum_reproduced": false,
+  "yang_mills_mass_gap_proved": false
+}

@@ -1,0 +1,73 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "elapsed_seconds": 0.071,
+      "finished_utc": "2026-11-12T23:27:28.637128+00:00",
+      "log": "provenance.log",
+      "name": "provenance",
+      "returncode": 0,
+      "started_utc": "2026-11-12T23:27:28.566393+00:00"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "elapsed_seconds": 1774.106,
+      "finished_utc": "2026-11-12T23:57:02.743872+00:00",
+      "log": "native_suite.log",
+      "name": "native_suite",
+      "returncode": 0,
+      "started_utc": "2026-11-12T23:27:28.637481+00:00"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "elapsed_seconds": 0.287,
+      "finished_utc": "2026-11-12T23:57:03.036353+00:00",
+      "log": "observer.log",
+      "name": "observer",
+      "returncode": 0,
+      "started_utc": "2026-11-12T23:57:02.748855+00:00"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "elapsed_seconds": 4.233,
+      "finished_utc": "2026-11-12T23:57:07.269332+00:00",
+      "log": "ordinal.log",
+      "name": "ordinal",
+      "returncode": 0,
+      "started_utc": "2026-11-12T23:57:03.036768+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-12T23:57:07.270371+00:00",
+  "parent_commit": "f4151c4ae877ee43c4b7d130174b6bec1dbab9d6",
+  "scope": "One complete native suite plus all three other required checks.",
+  "started_utc": "2026-11-12T23:27:28.565513+00:00",
+  "test_code_sha256_at_start": {
+    "research/2026-11-12/adaptive_boundary_resolution/complex_banks.py": "a2097888d9f271a94106450430f68a486f36815cb99e9d68428a500a69efbd94",
+    "research/2026-11-12/adaptive_boundary_resolution/integer_information.py": "3de86c94ea1df547f55733037a647b0a7f8c4534a81ec3194e5a67325b3e81e7",
+    "research/2026-11-12/adaptive_boundary_resolution/pointwise_certificates.py": "2e474ee6c4d729a00e62b7fb89e40e3f4bc53ac2647f50ccc8adfe08d58a47cb",
+    "research/2026-11-12/adaptive_boundary_resolution/test_complex_banks.py": "2a51e5e7ee1c6cbf36a1eec0ec391a6a03ccb42393de8a390ac097c6d0f6fab3",
+    "research/2026-11-12/adaptive_boundary_resolution/test_integer_information.py": "d5a6540369e28dae61e822708dd662887394a588f30cf4cf9acf8f9db5d18181",
+    "research/2026-11-12/adaptive_boundary_resolution/test_pointwise_certificates.py": "c827e1b5cfb71ff98aa51cdc5e918ab2930971941cb1a28e493d7dc8797588f2",
+    "tests/test_adaptive_boundary_resolution.py": "1a02c9555661157b497dd4612e60ac94df79fdd56fc9b86da4cff78d44be2d3f"
+  },
+  "test_code_unchanged": true
+}

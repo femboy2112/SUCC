@@ -22,7 +22,7 @@
       "id": "MM-I-001",
       "kind": "intuition",
       "status": "CONJECTURED",
-      "title": "Marked circle → cut line → recursive arithmetic triangles",
+      "title": "Marked circle \u2192 cut line \u2192 recursive arithmetic triangles",
       "statement": "One marked circle cut to a line; seek a coherent recursive arithmetic triangulation carrying ideal/global structure.",
       "provenance": [
         {
@@ -40,7 +40,7 @@
       "kind": "theorem",
       "status": "CLASSICAL",
       "title": "Cut circle retains a seam",
-      "statement": "S1 minus point ≅ R; oriented cut completion is an interval with two copies of the seam.",
+      "statement": "S1 minus point \u2245 R; oriented cut completion is an interval with two copies of the seam.",
       "provenance": [
         {
           "kind": "github_pr",
@@ -59,7 +59,7 @@
       "kind": "theorem",
       "status": "CLASSICAL",
       "title": "Farey tessellation is an arithmetic triangle system",
-      "statement": "PSL2(Z) images of (0,1,infinity) tile the upper half-plane; mediants of Farey neighbors retain determinant ±1.",
+      "statement": "PSL2(Z) images of (0,1,infinity) tile the upper half-plane; mediants of Farey neighbors retain determinant \u00b11.",
       "provenance": [
         {
           "kind": "web",
@@ -79,7 +79,7 @@
       "kind": "theorem",
       "status": "CLASSICAL",
       "title": "Golden reciprocal as Gauss fixed point",
-      "statement": "x_n=F_n/F_(n+1) via x→1/(1+x), tending to lambda=phi^(-1), fixed by the Gauss map.",
+      "statement": "x_n=F_n/F_(n+1) via x\u21921/(1+x), tending to lambda=phi^(-1), fixed by the Gauss map.",
       "provenance": [
         {
           "kind": "new_proof",
@@ -99,7 +99,7 @@
       "kind": "theorem",
       "status": "CLASSICAL",
       "title": "Gauss invariant density and digit-tail law",
-      "statement": "dmu=dx/((1+x)log2), with (log2) P(digit≥k)=log(1+1/k).",
+      "statement": "dmu=dx/((1+x)log2), with (log2) P(digit\u2265k)=log(1+1/k).",
       "provenance": [
         {
           "kind": "new_proof",
@@ -115,7 +115,7 @@
       "kind": "theorem",
       "status": "PROVED_LOCAL",
       "title": "Gamma as Gauss-harmonic discrepancy",
-      "statement": "E_N=Σ(1/k−log2 P(digit≥k))=H_N−log(N+1)→gamma, with positive remainder below 1/(2N).",
+      "statement": "E_N=\u03a3(1/k\u2212log2 P(digit\u2265k))=H_N\u2212log(N+1)\u2192gamma, with positive remainder below 1/(2N).",
       "provenance": [
         {
           "kind": "new_proof",
@@ -136,7 +136,7 @@
       "kind": "defined_comparison",
       "status": "PROVED_LOCAL",
       "title": "Oily Omega as declared same-carrier comparison",
-      "statement": "Omega=phi^(-1)−gamma compares Gauss periodic fixed point with its normalized invariant-law harmonic discrepancy; finite brackets certified.",
+      "statement": "Omega=phi^(-1)\u2212gamma compares Gauss periodic fixed point with its normalized invariant-law harmonic discrepancy; finite brackets certified.",
       "provenance": [
         {
           "kind": "new_proof",
@@ -193,7 +193,7 @@
       "kind": "theorem",
       "status": "PROVED_LOCAL",
       "title": "Oily packet grammar and golden fixed point",
-      "statement": "PR309 positive binary packets have grade PGF (2−z)^(-2), fixed q*=phi^(-2) and Gamma(2) centered offset phi^(-1)−gamma.",
+      "statement": "PR309 positive binary packets have grade PGF (2\u2212z)^(-2), fixed q*=phi^(-2) and Gamma(2) centered offset phi^(-1)\u2212gamma.",
       "provenance": [
         {
           "kind": "github_pr",
@@ -212,7 +212,7 @@
       "kind": "theorem",
       "status": "PROVED_LOCAL",
       "title": "Oily primitive Mellin character and log covariance",
-      "statement": "PR310 derives C_m(z), H_m(z)=2C−zC′ and a golden-centered Gamma logarithmic response.",
+      "statement": "PR310 derives C_m(z), H_m(z)=2C\u2212zC\u2032 and a golden-centered Gamma logarithmic response.",
       "provenance": [
         {
           "kind": "github_pr",
@@ -223,7 +223,7 @@
         }
       ],
       "scope": "Specified source grade and log centering.",
-      "limitation": "Covariance is not a real π Fourier Weyl saving.",
+      "limitation": "Covariance is not a real \u03c0 Fourier Weyl saving.",
       "next_probe": "Find signed grade/carry/phase coupling and negative controls."
     },
     {
@@ -280,7 +280,7 @@
         }
       ],
       "scope": "Declared finite graph, full cocycle and source sections.",
-      "limitation": "No universal finite-to-infinite π/RH theorem.",
+      "limitation": "No universal finite-to-infinite \u03c0/RH theorem.",
       "next_probe": "Test source cycles and non-commuting controls."
     },
     {
@@ -307,7 +307,7 @@
       "kind": "conjecture",
       "status": "UNVERIFIED",
       "title": "Lattice zoom-out to one Yoneda point proves global law",
-      "statement": "User's finite-lattice→completed-global-point research strategy needs actual source realization and target descent.",
+      "statement": "User's finite-lattice\u2192completed-global-point research strategy needs actual source realization and target descent.",
       "provenance": [
         {
           "kind": "user_recollection",
@@ -341,7 +341,7 @@
       "kind": "theorem",
       "status": "PROVED_LOCAL",
       "title": "Summable BBP Green-tail real Fourier transport",
-      "statement": "U_n=16^(n−1)pi−T_n and ΣT_n finite give O_h(1) signed orbit transport.",
+      "statement": "U_n=16^(n\u22121)pi\u2212T_n and \u03a3T_n finite give O_h(1) signed orbit transport.",
       "provenance": [
         {
           "kind": "github_pr",
@@ -360,7 +360,7 @@
       "kind": "theorem",
       "status": "PROVED_LOCAL",
       "title": "Authentic 2-adic BBP odometer",
-      "statement": "PR321 source map Φ gives exact residue permutations and Haar equidistribution in Z2.",
+      "statement": "PR321 source map \u03a6 gives exact residue permutations and Haar equidistribution in Z2.",
       "provenance": [
         {
           "kind": "github_pr",
@@ -405,7 +405,7 @@
       "kind": "counterexample",
       "status": "REFUTED",
       "title": "Transcendence plus finite type does not give entropy",
-      "statement": "Kempner counterexample: transcendental with irrationality exponent 2, binary orbit empirical limit δ0, nonnormal despite ×2 and ×3 invariance.",
+      "statement": "Kempner counterexample: transcendental with irrationality exponent 2, binary orbit empirical limit \u03b40, nonnormal despite \u00d72 and \u00d73 invariance.",
       "provenance": [
         {
           "kind": "github_pr",
@@ -423,8 +423,8 @@
       "id": "MM-O-022",
       "kind": "open_obligation",
       "status": "OPEN",
-      "title": "Selected π base16 Weyl cancellation",
-      "statement": "For each fixed integer h≠0 prove Σ_{n≤N}e(hU_n)=o(N).",
+      "title": "Selected \u03c0 base16 Weyl cancellation",
+      "statement": "For each fixed integer h\u22600 prove \u03a3_{n\u2264N}e(hU_n)=o(N).",
       "provenance": [
         {
           "kind": "main_repo_doc",
@@ -968,6 +968,102 @@
           "path": "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md"
         }
       ]
+    },
+    {
+      "id": "MM-XXVI-1",
+      "title": "Literal source and gauge interface",
+      "statement": "A subexponential zero-pinned coboundary preserves completed phase but can change arithmetic presentation.",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Convergent geometric tails and g(0)=0; exact rational source and integer lift retained.",
+      "limitation": "Source positivity and carry-tail bounds do not descend through arbitrary gauges.",
+      "next_probe": "Retest polynomial and rational gauges against exact completion.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "docs/CLAIM_SUPPLEMENT_MAIN_XXVI.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-XXVI-2",
+      "title": "Gamma-weighted selected carry decoder",
+      "statement": "For fixed labels with reference a nonzero, decoder error is at most 7sqrt(2)/(8|a|B).",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Original conditioned Green law; actual floor(U_n) and all integer shells.",
+      "limitation": "Equivalent instrument; supplies no positive source density.",
+      "next_probe": "Derive a zero-seed signed count estimate.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "docs/MAIN_XXVI_SOURCE_PHASE_INTERFACE.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-XXVI-3",
+      "title": "Selected carry all-shell estimate",
+      "statement": "There exist delta>0,B0 with selected carry density at least delta for every integer B>=B0.",
+      "kind": "open_obligation",
+      "status": "OPEN",
+      "scope": "Original zero-seeded recurrence only; exact growing CRT history.",
+      "limitation": "Stronger than R0; finite source shadows defeat seed-blind arguments.",
+      "next_probe": "Test a seed-height-sensitive potential on prescribed rational shadows.",
+      "provenance": [
+        {
+          "kind": "main_repo_doc",
+          "path": "docs/MAIN_XXVI_SOURCE_PHASE_INTERFACE.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-XXVI-4",
+      "title": "Matching-boundary carry-tail transport",
+      "statement": "Original carry mask and completed-digit mask differ by O(1/log B) on every integer shell.",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Fixed tail 0<T_n<1/(64n^2); masks match at zero/three boundary.",
+      "limitation": "General masks fail even at completed endpoint zero.",
+      "next_probe": "Calibrate long-zero-word packing and mismatched-mask mutant.",
+      "provenance": [
+        {
+          "kind": "main_repo_doc",
+          "path": "research/2026-11-15/three_count_hail_mary/TRANSLATOR_NOTES.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-XXVI-5",
+      "title": "Exceptional failed-carry endpoints",
+      "statement": "The fixed-tail failed-density endpoint set has Hausdorff dimension 7/8.",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Every integer shell and conventional base-sixteen expansions.",
+      "limitation": "Does not determine membership of pi/16.",
+      "next_probe": "Establish source-specific avoidance rather than almost-everywhere typicality.",
+      "provenance": [
+        {
+          "kind": "main_repo_doc",
+          "path": "research/2026-11-15/three_count_hail_mary/EXCEPTIONAL_SET.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-XXVI-6",
+      "title": "Gamma observer defect transport",
+      "statement": "Contraction Gamma resolvents transport signed defect with sharp coefficient alpha.",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Compatible Banach spaces, contractions, bounded P, alpha>=0.",
+      "limitation": "Observation error bound only; retained-source averaging precedes compression.",
+      "next_probe": "Reject early-compression and noncontraction mutants.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "docs/MAIN_XXVI_OBSERVER_TRANSPORT.md"
+        }
+      ]
     }
   ],
   "edges": [
@@ -1330,6 +1426,42 @@
       "target": "MM-T-010",
       "relation": "complements",
       "evidence": "The full-x source-marked lift preserves the actual Oily conditional packet marginals; it does not identify signed carries."
+    },
+    {
+      "source": "MM-XXVI-2",
+      "target": "MM-XXVI-1",
+      "relation": "shares_source_with",
+      "evidence": "Literal rational history, integer winding and fixed-source conditioned law remain distinct."
+    },
+    {
+      "source": "MM-XXVI-3",
+      "target": "MM-XXVI-2",
+      "relation": "complements",
+      "evidence": "The decoder is an instrument for the still unpaid positive-density estimate."
+    },
+    {
+      "source": "MM-XXVI-3",
+      "target": "MM-XXVI-4",
+      "relation": "complements",
+      "evidence": "Matching-mask transfer carries a proved density to completed digits; it does not establish the premise."
+    },
+    {
+      "source": "MM-XXVI-5",
+      "target": "MM-XXVI-3",
+      "relation": "constrains",
+      "evidence": "Small exceptional dimension is insufficient to select the authenticated endpoint."
+    },
+    {
+      "source": "MM-XXVI-2",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "No signed carry asymptotic estimate follows from the Gamma calibration."
+    },
+    {
+      "source": "MM-XXVI-6",
+      "target": "MM-XXVI-2",
+      "relation": "complements",
+      "evidence": "Both quantify observation transport while retaining source and signed defect."
     }
   ],
   "guardrails": [

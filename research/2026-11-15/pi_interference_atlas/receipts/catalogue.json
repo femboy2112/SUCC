@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "parent_commit": "8097d9e802da1d83a615d8812e74279820f5ae7e",
+  "catalogue_sha256": "c04eb724046d0c12894b11c16498b57ba105e17a7e5cc905d8f4f90c822d804c",
+  "map_sha256": "01cca7937b6cfa911919c3eb0b7011f5bf3422dac0ba6b1413af8ee787795f53",
+  "audit_script_sha256": "4a2a23642e86305244deaab2420d965fc48a932eb943f977d0e3d6d52fcabb71",
+  "coverage_count": 74,
+  "mapped_source_paths": 42,
+  "total_inherited_paths_pinned": 44,
+  "relation_counts": {
+    "AUXILIARY": 6,
+    "EQUIVALENT": 18,
+    "NECESSARY": 13,
+    "OBSERVER_ONLY": 12,
+    "SEPARATE": 5,
+    "STRICTLY_STRONGER": 3,
+    "SUFFICIENT": 17
+  },
+  "representation_counts": {
+    "conditional": 27,
+    "direct finite response": 21,
+    "limit with certified truncation": 11,
+    "outside grammar": 15
+  },
+  "source_version_checks": "All mapped and core inputs equal their parent Git blobs.",
+  "frozen_code_checks": "All six production/test hashes match the integrated-suite snapshot.",
+  "scope": "Finite declared catalogue integrity; representation is not implementation; relation counts include explicitly scoped weaker targets."
+}

@@ -1,0 +1,91 @@
+{
+  "arithmetic": "SymPy exact QQ polynomials",
+  "elapsed_seconds": 0.135602,
+  "inverse_all_implemented_orders": [
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 0,
+      "source_inverse_depth": 0
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 2,
+      "source_inverse_depth": 1
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 4,
+      "source_inverse_depth": 2
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 6,
+      "source_inverse_depth": 3
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 8,
+      "source_inverse_depth": 4
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 10,
+      "source_inverse_depth": 5
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 12,
+      "source_inverse_depth": 6
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 14,
+      "source_inverse_depth": 7
+    },
+    {
+      "cleared_global_identity": true,
+      "delta_degree": 16,
+      "source_inverse_depth": 8
+    }
+  ],
+  "native_Euler_derivative_checks": 33,
+  "native_negative_values_0_through_32": [
+    "0",
+    "-16",
+    "-112",
+    "-880",
+    "-9520",
+    "-136816",
+    "-2391472",
+    "-48482800",
+    "-1118755120",
+    "-29031562096",
+    "-837524090032",
+    "-26583982612720",
+    "-920506362883120",
+    "-34528471908708976",
+    "-1394785371473282992",
+    "-60367322192439750640",
+    "-2786932377376999497520",
+    "-136703644851708281305456",
+    "-7099981235461137138930352",
+    "-389238082685350974799736560",
+    "-22462073298764644931465462320",
+    "-1361048704691991690325215719536",
+    "-86397441825822131326811594952112",
+    "-5733677412463114498872276153130480",
+    "-397053502577156753238068103931401520",
+    "-28641355948074845535594056779970959216",
+    "-2148678593642735755442982835986413828272",
+    "-167393949383129628135964593133986440412400",
+    "-13523911556706854193842381887867483981699120",
+    "-1131631047911342010799455559249467540107472496",
+    "-97955910056086144235319891767014764384972198832",
+    "-8761871351134307135266214187633522514351191182320",
+    "-809005334219883112528991616122011060825540998499120"
+  ],
+  "proof_boundary": "finite implementation audit; universal claims require the paper proofs",
+  "python_version": "3.12.14",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

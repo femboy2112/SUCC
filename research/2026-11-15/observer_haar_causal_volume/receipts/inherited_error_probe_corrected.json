@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "scripts/meta_choice_descent_probe.py"
+  ],
+  "environment_override": {
+    "PYTHONPATH": "."
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 0.105,
+  "stdout_sha256": "04843301cf9caf98021f9508b98d0fa51f9bc1a48ae5db0892ca509ac78b34d4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_changes": "none"
+}
