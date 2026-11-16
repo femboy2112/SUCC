@@ -1,0 +1,247 @@
+{
+  "head": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+  "tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+  "workflows": [
+    {
+      "path": ".github/workflows/bidirectional-cut.yml",
+      "name": "Bidirectional SUCC exact arithmetic cut checks",
+      "jobs": [
+        {
+          "id": "exact-source",
+          "name": "exact-source",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/orbit-clock-genesis.yml",
+      "name": "Orbit clock genesis exact source checks",
+      "jobs": [
+        {
+          "id": "exact-stdlib",
+          "name": "exact-stdlib",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/source-minimality.yml",
+      "name": "Source-minimality clock carry renewal exact checks",
+      "jobs": [
+        {
+          "id": "exact-stdlib",
+          "name": "exact-stdlib",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "name": "Observational SUCC validation",
+      "jobs": [
+        {
+          "id": "test",
+          "name": "Python ${{ matrix.python-version }} mathematical and epistemic checks",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        },
+        {
+          "id": "heuristic-source-verification",
+          "name": "Contextual Bayesian SUCC heuristic guards",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        },
+        {
+          "id": "genetic-model-fusion-verification",
+          "name": "Typed genetic model fusion and source-coupling guards",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/institute.yml",
+      "name": "Institute theorem contracts and core Lean",
+      "jobs": [
+        {
+          "id": "contracts",
+          "name": "contracts",
+          "matrix": {
+            "python": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        },
+        {
+          "id": "lean",
+          "name": "lean",
+          "matrix": {},
+          "expanded_count": 1
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/collective-observer.yml",
+      "name": "Collective observer source and certificate replay",
+      "jobs": [
+        {
+          "id": "collective",
+          "name": "Collective observer exact replay (${{ matrix.python }})",
+          "matrix": {
+            "python": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/one-object-residual-shorting.yml",
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "jobs": [
+        {
+          "id": "finite_source",
+          "name": "finite_source",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/academic-transmutation.yml",
+      "name": "Academic transmutation exact and formal certificates",
+      "jobs": [
+        {
+          "id": "exact",
+          "name": "exact",
+          "matrix": {
+            "python": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        },
+        {
+          "id": "lean",
+          "name": "lean",
+          "matrix": {},
+          "expanded_count": 1
+        },
+        {
+          "id": "paired-original-source",
+          "name": "paired-original-source",
+          "matrix": {},
+          "expanded_count": 1
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/mathlib_bridge.yml",
+      "name": "Pinned formal kernel and proposition exports",
+      "jobs": [
+        {
+          "id": "formal_kernel",
+          "name": "Exact Lean types, source hashes, axioms and negative controls",
+          "matrix": {},
+          "expanded_count": 1
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/pi-lag-carry.yml",
+      "name": "Selected BBP lag carries and collision certificates",
+      "jobs": [
+        {
+          "id": "exact",
+          "name": "exact",
+          "matrix": {
+            "python-version": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/tenacious-observer-descent.yml",
+      "name": "Principia Observatoris synthesis",
+      "jobs": [
+        {
+          "id": "synthesis",
+          "name": "synthesis",
+          "matrix": {},
+          "expanded_count": 1
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/principia-observatoris.yml",
+      "name": "Principia Observatoris second forge",
+      "jobs": [
+        {
+          "id": "exact-models",
+          "name": "exact-models",
+          "matrix": {
+            "python": [
+              "3.10",
+              "3.13"
+            ]
+          },
+          "expanded_count": 2
+        },
+        {
+          "id": "kernel",
+          "name": "kernel",
+          "matrix": {},
+          "expanded_count": 1
+        }
+      ]
+    }
+  ],
+  "expanded_job_count": 30
+}

@@ -1,0 +1,34 @@
+{
+  "head": "554de88c17a09fc24777fbe5101730dbd6b44ebf",
+  "tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+  "local_status": "PASS",
+  "native": {
+    "run": 14476,
+    "skipped": 2,
+    "failures": 0,
+    "exit_code": 0
+  },
+  "xxiv": {
+    "commands": 21,
+    "research_test_executions": 148,
+    "status": "PASS"
+  },
+  "xxv": {
+    "commands": 12,
+    "research_test_executions": 249,
+    "probes": 5,
+    "lean_exports": 33,
+    "lean_mutant_controls": 9,
+    "status": "PASS"
+  },
+  "xxvi": {
+    "commands": 20,
+    "research_test_executions": 566,
+    "explicit_probes": 5,
+    "status": "PASS"
+  },
+  "protected_paths": 92,
+  "historical_xxv_manifest": "FAIL_RETAINED; all8 paths exact authorized later donor601, historical baseline passes; see explicit reconciliation",
+  "hosted_ci": "PENDING; separate exact-candidate gate, no CI success claimed",
+  "authority": "Exact finite implementation/certificate replay, scoped paper proofs and fresh encoded Lean statements; pi normality and R0 remain OPEN."
+}
