@@ -1,0 +1,102 @@
+{
+  "status": "EXACT_FINITE_AUDIT_ONLY",
+  "assertions": 127594,
+  "holdout": {
+    "status": "FINITE_PASS",
+    "normality_proved": false,
+    "source_budget_proved": false,
+    "fresh_n_start": 32769,
+    "certified_horizon": 131072,
+    "all_integer_B_range": [
+      32769,
+      65536
+    ],
+    "shells_tested": 32768,
+    "minimum_L": "1997/33657",
+    "minimum_L_at_B": [
+      33657
+    ],
+    "minimum_selected_density": "16393/32911",
+    "minimum_selected_density_at_B": [
+      32911
+    ],
+    "maximum_one_sided_error": "136/33785",
+    "maximum_one_sided_error_at_B": [
+      33785
+    ],
+    "predeclared_tolerance": "1/32",
+    "failing_B": [],
+    "extremal_and_endpoint_shells": [
+      {
+        "B": 32769,
+        "F1_count": 2080,
+        "c1_count": 8110,
+        "F2_count": 8230,
+        "L_count": 1960,
+        "selected_count": 16340,
+        "L": "1960/32769",
+        "d": "16340/32769",
+        "one_sided_error": "40/10923"
+      },
+      {
+        "B": 32911,
+        "F1_count": 2085,
+        "c1_count": 8158,
+        "F2_count": 8271,
+        "L_count": 1972,
+        "selected_count": 16393,
+        "L": "1972/32911",
+        "d": "16393/32911",
+        "one_sided_error": "113/32911"
+      },
+      {
+        "B": 33657,
+        "F1_count": 2128,
+        "c1_count": 8333,
+        "F2_count": 8464,
+        "L_count": 1997,
+        "selected_count": 16786,
+        "L": "1997/33657",
+        "d": "16786/33657",
+        "one_sided_error": "131/33657"
+      },
+      {
+        "B": 33785,
+        "F1_count": 2142,
+        "c1_count": 8358,
+        "F2_count": 8494,
+        "L_count": 2006,
+        "selected_count": 16856,
+        "L": "2006/33785",
+        "d": "16856/33785",
+        "one_sided_error": "136/33785"
+      },
+      {
+        "B": 65536,
+        "F1_count": 4052,
+        "c1_count": 16568,
+        "F2_count": 16463,
+        "L_count": 4157,
+        "selected_count": 32966,
+        "L": "4157/65536",
+        "d": "16483/32768",
+        "one_sided_error": "123/65536"
+      }
+    ],
+    "overlap_exact_match": true,
+    "independent_fraction_horizon": 512,
+    "borrow_indices": [],
+    "source_hashes": {
+      "prefix_sha256": "379b98f2d2e3d69976ec8d819cd21ea9e032bf229784ad88a4f3f216e43c1594",
+      "residues_sha256": "ae15aa4aaf63849ba61f29c925e3f69581542bbb71a3df788835a96556546962"
+    }
+  },
+  "entropy": {
+    "tilt": 0.6286669787764608,
+    "M_min": 0.9444741363334502,
+    "signed_budget_bits_per_digit": 3.979395798805217,
+    "budget_1_over_32_bits_per_digit": 3.9949244219209517,
+    "bad_shell_dimension_upper_bound": 0.9974244748506521,
+    "gate_zero_max_bits_per_digit": 3
+  }
+}

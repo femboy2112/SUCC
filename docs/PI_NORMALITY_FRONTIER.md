@@ -422,3 +422,40 @@ carry mask's `sech`/Gamma/Dirichlet-beta transform. These exact constructions
 do not identify an auxiliary sampling law with the authentic BBP trajectory.
 Explicit controls retain the entire maximum law while isolating the cofactor
 marginal needed for the positive bound. No new asymptotic pi estimate is claimed.
+
+## 2026-11-15--16 follow-up: three-count Hail Mary and exact exceptional set
+
+The [three-count assault](../research/2026-11-15/three_count_hail_mary/README.md)
+collapses the proposed budget to the signed clock/carry cells
+`+(2,1)+(3,2)-(1,1)`. A periodic same-forcing changed-seed control has uniform
+carry residues and density 1/2 but budget -1/4. Eight shifted/reflected
+certificates sum exactly to the selected gate, removing an unnecessary fixed
+clock orientation without proving the source density.
+
+For the selected gate and these masks, raw-to-completed floor transfer now
+has a deterministic error `ceil(B/(1+floor(log_16(64B^2))))/B` on every
+integer shell. The bound uses matching values at residues 0 and 3, not rarity
+of all raw borrows. Sparse-marker endpoints show its logarithmic order and
+leading constant are sharp even for the exact four-pole tail.
+
+The failed-gate endpoint set `E={beta:liminf_B d_B(beta)=0}` has exact
+Hausdorff dimension 7/8. Its raw and completed definitions agree by that
+transfer. Dense eventual-Thue--Morse controls in E have irrationality
+exponent 2 and restricted exponent 0, so those approximation properties
+and finite prefix correctness do not alone exclude the canonical point.
+
+An explicit rational seed can prescribe any finite carry word while
+preserving the literal forcing and arbitrary fixed dyadic depth, with
+height at most `2^(L+4N+8)+1`. This refutes a seed-uniform bounded-potential
+route, not an estimate using exactly zero seed. Conditional entropy
+thresholds are sharp: the fixed budget costs more than 3.9794 bits per
+hex digit; the selected event only needs a fixed all-limit margin above
+3 bits, or separately above 1 bit per mod-four residue. No such original
+source entropy premise is proved.
+
+A frozen certified extension through 131072 passed all 32768 fresh integer
+shells 32769<=B<=65536 at the inherited one-sided tolerance 1/32. This is
+finite evidence only. The original three-count budget, selected carry
+density, R0, and pi normality remain **OPEN**. The next task is a
+source-specific exclusion of `pi/16` from E, or another genuine all-shell
+signed estimate; the dimension statement itself does not perform it.
