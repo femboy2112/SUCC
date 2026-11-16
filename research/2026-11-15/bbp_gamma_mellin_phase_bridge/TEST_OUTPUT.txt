@@ -1,0 +1,35 @@
+test_complex_saturated (test_gamma_phase.FourTime.test_complex_saturated) ... ok
+test_fixed_q_quartic (test_gamma_phase.FourTime.test_fixed_q_quartic) ... ok
+test_four_time_positive (test_gamma_phase.FourTime.test_four_time_positive) ... ok
+test_four_time_source_finite_difference (test_gamma_phase.FourTime.test_four_time_source_finite_difference) ... ok
+test_proportional_cubic (test_gamma_phase.FourTime.test_proportional_cubic) ... ok
+test_saturated_cubic (test_gamma_phase.FourTime.test_saturated_cubic) ... ok
+test_beta0_equals_green (test_gamma_phase.GammaWindows.test_beta0_equals_green) ... ok
+test_complex_conjugate (test_gamma_phase.GammaWindows.test_complex_conjugate) ... ok
+test_exact_fractional_successor_square (test_gamma_phase.GammaWindows.test_exact_fractional_successor_square) ... ok
+test_first_order_source_correction (test_gamma_phase.GammaWindows.test_first_order_source_correction) ... ok
+test_invalid_beta_guard (test_gamma_phase.GammaWindows.test_invalid_beta_guard) ... ok
+test_original_forcing_successor_square (test_gamma_phase.GammaWindows.test_original_forcing_successor_square) ... ok
+test_second_order_source_correction (test_gamma_phase.GammaWindows.test_second_order_source_correction) ... ok
+test_source_fixed_beta_complex (test_gamma_phase.GammaWindows.test_source_fixed_beta_complex) ... ok
+test_wrong_source_gamma_marginal_blind (test_gamma_phase.GammaWindows.test_wrong_source_gamma_marginal_blind) ... ok
+test_zero_twist_real_positive (test_gamma_phase.GammaWindows.test_zero_twist_real_positive) ... ok
+test_K_upper_pointwise (test_gamma_phase.SourceAlgebra.test_K_upper_pointwise) ... ok
+test_density_upper (test_gamma_phase.SourceAlgebra.test_density_upper) ... ok
+test_four_poles (test_gamma_phase.SourceAlgebra.test_four_poles) ... ok
+test_green_source_rational_bounds (test_gamma_phase.SourceAlgebra.test_green_source_rational_bounds) ... ok
+test_original_factorization (test_gamma_phase.SourceAlgebra.test_original_factorization) ... ok
+test_pi_value_is_imported_identity (test_gamma_phase.SourceAlgebra.test_pi_value_is_imported_identity) ... ok
+test_positive_moment (test_gamma_phase.SourceAlgebra.test_positive_moment) ... ok
+test_source_density_identity (test_gamma_phase.SourceAlgebra.test_source_density_identity) ... ok
+test_zero_seed (test_gamma_phase.SourceAlgebra.test_zero_seed) ... ok
+test_gamma_frequency_nonzero (test_gamma_phase.TransportedPhases.test_gamma_frequency_nonzero) ... ok
+test_gamma_two_phase_conjugacy (test_gamma_phase.TransportedPhases.test_gamma_two_phase_conjugacy) ... ok
+test_invalid_n_and_gamma (test_gamma_phase.TransportedPhases.test_invalid_n_and_gamma) ... ok
+test_mass_deficit_bound (test_gamma_phase.TransportedPhases.test_mass_deficit_bound) ... ok
+test_uniform_two_phase_bound (test_gamma_phase.TransportedPhases.test_uniform_two_phase_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 9.188s
+
+OK

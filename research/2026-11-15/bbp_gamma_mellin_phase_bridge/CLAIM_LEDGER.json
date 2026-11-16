@@ -1,0 +1,18 @@
+{
+  "project": "OPERATION GAMMA INTERFEROMETRY — BBP complex-depth causal source",
+  "date": "2026-11-15",
+  "zero_seed": "U_0=0",
+  "source": "4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)",
+  "pi_normality": "OPEN",
+  "claims": [
+    {"id":"GM-01","claim":"Exact complex-depth successor square and source forcing (16-S)T=r","status":"PROVED PAPER / source algebra","dependency":"original BBP source, Re z>0, Re beta>-2"},
+    {"id":"GM-02","claim":"Two-axis complex Gamma expansion with authentic 7/55 corrections","status":"PROVED PAPER / independently algebra-tested","dependency":"endpoint expansion original four-pole K; fixed beta, additive-uniform xi"},
+    {"id":"GM-03","claim":"BBP log-scale Gamma2 total-variation bound and uniform two-frequency complex character error <=7/(4n)","status":"PROVED PAPER with imported GG-06 lower bound","dependency":"positive original BBP Green and declared posterior; not circle digit dynamics"},
+    {"id":"GM-04","claim":"Four-time source lag crossover q/n: quartic, cubic, Gamma shape-3 response","status":"PROVED PAPER / finite numeric checks","dependency":"fixed ell,beta,xi; exact source Green difference"},
+    {"id":"GM-05","claim":"Complete complex Mellin vertical response reconstructs original K; limiting Gamma log response zero-free but attenuated","status":"CLASSICAL / paper source application","dependency":"Fourier inversion regularity, NIST DLMF"},
+    {"id":"GM-06","claim":"Gamma-only source window implies pi normality","status":"REFUTED","falsifier":"same forcing, coherent seed s=-pi/16 gives completed constant-zero circle but identical source windows"},
+    {"id":"GM-07","claim":"Original zero-seeded source Gamma-to-circle signed all-shell saving","status":"UNVERIFIED / OPEN","next_probe":"original full integer winding/odd CRT cross-phase signed bound with hostile same-forcing counterseed"}
+  ],
+  "validation": "Finite scripts and tests in VALIDATION.md; no independent external referee, no full SUCC gates or Lean",
+  "unmodified": ["original source", "provenance", "main", "historical archives", "production", "formal", "workflows"]
+}
