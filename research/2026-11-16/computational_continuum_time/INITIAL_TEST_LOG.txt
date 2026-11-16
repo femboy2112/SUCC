@@ -1,0 +1,33 @@
+test_four_signed_poles (test_continuum_probe.TestContinuumTime.test_four_signed_poles) ... ok
+test_gamma_multipliers_semigroup (test_continuum_probe.TestContinuumTime.test_gamma_multipliers_semigroup) ... ok
+test_gamma_variance_decomposition (test_continuum_probe.TestContinuumTime.test_gamma_variance_decomposition) ... ok
+test_indistinguishable_to_depth_if_divisible (test_continuum_probe.TestContinuumTime.test_indistinguishable_to_depth_if_divisible) ... ok
+test_integer_lifts_different_prehistory (test_continuum_probe.TestContinuumTime.test_integer_lifts_different_prehistory) ... ok
+test_integer_lifts_same_present_circle (test_continuum_probe.TestContinuumTime.test_integer_lifts_same_present_circle) ... ok
+test_metric_exact_deck_bound (test_continuum_probe.TestContinuumTime.test_metric_exact_deck_bound) ... ok
+test_metric_translation_symmetry (test_continuum_probe.TestContinuumTime.test_metric_translation_symmetry) ... ok
+test_metric_triangle (test_continuum_probe.TestContinuumTime.test_metric_triangle) ... ok
+test_natural_extension_shift (test_continuum_probe.TestContinuumTime.test_natural_extension_shift) ... ok
+test_nonzero_source_lift (test_continuum_probe.TestContinuumTime.test_nonzero_source_lift) ... ok
+test_not_a_metric_on_unlabelled_circle (test_continuum_probe.TestContinuumTime.test_not_a_metric_on_unlabelled_circle) ... ok
+test_phase_integer_deck_vs_fractional (test_continuum_probe.TestContinuumTime.test_phase_integer_deck_vs_fractional) ... ok
+test_solenoid_inverse_limit (test_continuum_probe.TestContinuumTime.test_solenoid_inverse_limit) ... ok
+test_source_completion_interval (test_continuum_probe.TestContinuumTime.test_source_completion_interval) ... FAIL
+test_strictly_decaying_forcing (test_continuum_probe.TestContinuumTime.test_strictly_decaying_forcing) ... ok
+test_tail_bounds (test_continuum_probe.TestContinuumTime.test_tail_bounds) ... ok
+test_winding_exact_integer_counts (test_continuum_probe.TestContinuumTime.test_winding_exact_integer_counts) ... ok
+test_zero_seed_and_integer_deck (test_continuum_probe.TestContinuumTime.test_zero_seed_and_integer_deck) ... ok
+
+======================================================================
+FAIL: test_source_completion_interval (test_continuum_probe.TestContinuumTime.test_source_completion_interval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/succ_computational_continuum/test_continuum_probe.py", line 34, in test_source_completion_interval
+    self.assertLess(float(lo), target)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.19634954084936207 not less than 0.19634954084936207
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.021s
+
+FAILED (failures=1)
