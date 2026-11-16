@@ -35,7 +35,11 @@
     "four_positive_250_linear": true,
     "four_scale_250_linear": true,
     "four_positive_250_quadratic": true,
-    "four_scale_250_quadratic": true
+    "four_scale_250_quadratic": true,
+    "signed_source_gamma_0": true,
+    "signed_source_gamma_1": true,
+    "signed_source_gamma_2": true,
+    "signed_source_gamma_3": true
   },
   "numeric": [
     {
@@ -154,10 +158,34 @@
       "regime": "quadratic",
       "four_time": "3.9319453635869e-9",
       "ratio_to_leading": 0.9829863408967309
+    },
+    {
+      "k": 0,
+      "n": 240,
+      "positive_source_step_difference": "2.70282390117857e-7",
+      "gamma_ratio": 0.9963690029304678
+    },
+    {
+      "k": 1,
+      "n": 240,
+      "positive_source_step_difference": "4.44104287286622e-9",
+      "gamma_ratio": 0.9822876267920413
+    },
+    {
+      "k": 2,
+      "n": 240,
+      "positive_source_step_difference": "1.08564619978602e-10",
+      "gamma_ratio": 0.9605102762138861
+    },
+    {
+      "k": 3,
+      "n": 240,
+      "positive_source_step_difference": "3.5099760903659e-12",
+      "gamma_ratio": 0.9316206618857901
     }
   ],
-  "observed": 35,
-  "total": 35,
+  "observed": 39,
+  "total": 39,
   "all_pass": true,
   "scope": "Finite exact algebra; high precision numeric diagnostics; no pi normality theorem"
 }

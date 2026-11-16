@@ -1,6 +1,6 @@
 # Verdict-changing next offensive — source-conditioned Gamma, original zero, and real-circle phase
 
-The objective is not to establish another positive moment, equivalent normality criterion, or a generic Γ factor. The authentic target is the original zero-seeded BBP signed all-shell bound: for each fixed integer h≠0, `B^-1 sum_(n=B)^(2B-1) e(h(U_n+T_n)) -> 0`; weaker first rung R0 requires an eventual positive real-phase escape margin.
+The new GM-07 proves genuine moving-frequency signed cancellation for **original source Green differences**. The objective now is to transport that saving through the rational-history phases into the actual real pi circle, not to celebrate source-only interference. The authentic target is the original zero-seeded BBP signed all-shell bound: for each fixed integer h≠0, `B^-1 sum_(n=B)^(2B-1) e(h(U_n+T_n)) -> 0`; weaker first rung R0 requires an eventual positive real-phase escape margin.
 
 ## Pathway and probe hierarchy
 
@@ -23,3 +23,7 @@ The objective is not to establish another positive moment, equivalent normality 
 ## Status
 
 GM-01..05 are exact/classical/paper-proved within declared domains; numerical receipts are finite. GM-06 source-only no-go is proved by an explicit wrong seed. The missing source–real-circle signed bound and pi base-16 normality are OPEN. No claim of physical quantum energy, gravitational topology, or universal analytic continuation of SUCC.
+
+## GM-07 bridge explicitly still owed
+
+For fixed k,ell and growing h_B, source tail phases `exp(2pi i h_B D_(k,ell)(n))` average to zero at a proved `O(1/c_B+c_B/B)` rate. But actual completed circle phases multiply these by `exp(2pi i h_B (-1)^k Delta_ell^k U_n)`, and their source-sensitive covariance could cancel the Green-side saving. **Falsifier:** same original forcing with coherent seed `s=-x` makes completed circle constant zero despite intact signed tail cancellation. Required next step: original-zero-specific arithmetic estimate excluding such alignment, with full integer winding, odd denominator, CRT cofactor and pointwise Green. Moving-h source saving does not automatically imply fixed-h Weyl decay.

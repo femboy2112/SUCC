@@ -23,6 +23,10 @@ test_pi_value_is_imported_identity (test_gamma_phase.SourceAlgebra.test_pi_value
 test_positive_moment (test_gamma_phase.SourceAlgebra.test_positive_moment) ... ok
 test_source_density_identity (test_gamma_phase.SourceAlgebra.test_source_density_identity) ... ok
 test_zero_seed (test_gamma_phase.SourceAlgebra.test_zero_seed) ... ok
+test_fixed_finite_signed_shell_against_limit (test_gamma_phase.SourceHighFrequency.test_fixed_finite_signed_shell_against_limit) ... ok
+test_signed_phase_error_bound_is_positive (test_gamma_phase.SourceHighFrequency.test_signed_phase_error_bound_is_positive) ... ok
+test_source_positive_differences (test_gamma_phase.SourceHighFrequency.test_source_positive_differences) ... ok
+test_true_green_interval (test_gamma_phase.SourceHighFrequency.test_true_green_interval) ... ok
 test_gamma_frequency_nonzero (test_gamma_phase.TransportedPhases.test_gamma_frequency_nonzero) ... ok
 test_gamma_two_phase_conjugacy (test_gamma_phase.TransportedPhases.test_gamma_two_phase_conjugacy) ... ok
 test_invalid_n_and_gamma (test_gamma_phase.TransportedPhases.test_invalid_n_and_gamma) ... ok
@@ -30,6 +34,6 @@ test_mass_deficit_bound (test_gamma_phase.TransportedPhases.test_mass_deficit_bo
 test_uniform_two_phase_bound (test_gamma_phase.TransportedPhases.test_uniform_two_phase_bound) ... ok
 
 ----------------------------------------------------------------------
-Ran 30 tests in 9.188s
+Ran 34 tests in 10.984s
 
 OK

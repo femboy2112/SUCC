@@ -186,3 +186,45 @@ e(h16^nx)=e(hU_n)\exp\left(2\pi ih\int_0^\infty e^{-nv}K(v)dv\right).
 At fixed h, `|exp(2pi i h T_n)-1|<=2pi|h| T_n=O_h(n^-2)`; the difficult long-time behavior is in `e(hU_n)` and full winding, not the small positive source tail. Since finite fixed-depth Gamma windows converge to explicit nonzero coefficients, multiplying Weyl summands by them merely reweights the still-open sum; it does not prove decay.
 
 **Verdict-changing condition:** establish a genuinely source- and seed-attached signed inequality that constrains `e(h U_n)` jointly with phase-preserving `Gamma`/Mellin observations, full odd-denominator and CRT winding, and a predetermined finite time-lag family. It must separate original zero seed from coherent wrong seed and the #648 coboundary mutant. Show an all-large-shell fixed-h saving (or a prescribed positive R0 margin), not merely an all-harmonic detector, a Gamma response, finite checks or a moving-lag phase contrast. The attempt to infer pi normality from source-only Gamma attenuation is REFUTED by the counterseed; whether a strengthened joint operator gives such a saving is **UNVERIFIED**.
+
+## GM-07. A proved growing-frequency **signed** cancellation law for authentic Green source histories (NEW-TO-SUCC PAPER DERIVATION; NOT π NORMALITY)
+
+This is the strongest signed source-only statement available from the Gamma window. For **fixed** integer `k>=0`, fixed positive time step `ell`, let
+\[
+D_{k,\ell}(n)=(-1)^k\Delta_\ell^kT_n
+=\int_0^\infty e^{-nv}(1-e^{-\ell v})^kK(v)dv>0.
+\tag{GM16}
+\]
+The exact original endpoint profile `K(v)=v/64+O(v²)` and `1-e^-ell v=ell v+O_ell(v²)` give the **source-derived** expansion
+\[
+\boxed{D_{k,\ell}(n)
+=\frac{\ell^k\Gamma(k+2)}{64 n^{k+2}}
++O_{k,\ell}(n^{-k-3}).}\tag{GM17}
+\]
+
+Let `h_B` be any positive integer sequence, `c_B=h_B/B^(k+2)`, such that **`c_B->infinity` and `c_B/B->0`**. Define the original source *future-history* signed shell mean
+\[
+\mathcal S_{B,k,\ell}=
+\frac1B\sum_{n=B}^{2B-1}\exp(2\pi i h_B D_{k,\ell}(n)).
+\tag{GM18}
+\]
+Then
+\[
+\boxed{|\mathcal S_{B,k,\ell}|
+=O_{k,\ell}\left(c_B^{-1}+c_B/B\right)\to0.}\tag{GM19}
+\]
+
+**Proof:** Put `p=k+2`, `A=ell^k Gamma(k+2)/64>0`. Uniformly for integers `B<=n<2B`, (GM17) yields `h_B D_(k,ell)(n)=c_B A (n/B)^(-p)+O_(k,ell)(c_B/B)`. Since `|exp(2pi i a)-exp(2pi i b)|<=2pi|a-b|`, the source mean differs by `O(c_B/B)` from the elementary Riemann sum of `f_B(y)=exp(2pi i c_B A y^(-p))` on y in [1,2]. The derivative of f is `O_(k,ell)(c_B)`, so the Riemann-sum error is also `O(c_B/B)`. Integration by parts (phase derivative never zero on [1,2]) gives the explicit estimate
+\[
+\left|\int_1^2e^{2\pi i c_B A y^{-p}}dy\right|
+\le\frac{2^{p+1}}{\pi p A c_B}.
+\]
+This proves (GM19) with the stated all-shell quantifier, no numerical extrapolation. For `h_B` chosen close to `B^(k+5/2)`, `c_B~sqrt B` and the signed source phase mean is `O_(k,ell)(B^-1/2)`.
+
+**Why this matters and why it is NOT pi normality:** These phases genuinely arise from the original time-coupled Gamma/Green hierarchy. They prove high-frequency destructive interference on the *source-tail* side, where the continuous source endpoint and its factorial scaling control the phase derivative. The original completed circle character contains an additional phase `exp(2pi i h_B (-1)^k Delta_ell^k U_n)`. The complete real trajectory satisfies the exact identity
+\[
+(-1)^k\Delta_\ell^k(U_n+T_n)=(-1)^k(16^\ell-1)^k16^n x,
+\]
+whose source-history factor can potentially undo (GM19). Gamma positivity or (GM19) alone provides **no noncircular bound on that rational-source carrier factor**; the same-forcing coherent wrong seed is a decisive cancellation countermodel. The new theorem is a successful **source-side** signed saving under moving frequencies, not `W_B(h)->0` for fixed h, and cannot be promoted to R0.
+
+**Reproducibility:** finite `Fraction` source sums and certified remainder enclosures, signed phase diagnostic and independent t-domain checks are included in `gamma_signed_shell.py` and the focused test suite. Finite complex numerical phases are labelled diagnostics; the proof of the asymptotic is the displayed dominated endpoint expansion plus integration-by-parts argument.

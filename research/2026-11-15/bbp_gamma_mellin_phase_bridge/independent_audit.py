@@ -69,6 +69,18 @@ for n in (30,90,250):
   checks[f'four_positive_{n}_{typ}']=obs>0
   checks[f'four_scale_{n}_{typ}']=abs(obs/pred-1)<(mp.mpf('.47') if n==30 else mp.mpf('.2'))
 
+# Independent t-domain signed source differences: no imported numerics.
+for k in range(4):
+    n=240; ell=2
+    def src_integrand(t):
+        return (t**(8*n)*(1-t**(8*ell))**k*(1-t)
+                /((2-t*t)*(t*t-2*t+2)))
+    observed=mp.quad(src_integrand,[0,.5,.75,.9,.98,1])
+    asym=mp.mpf(ell)**k*mp.gamma(k+2)/(64*mp.power(n,k+2))
+    checks[f'signed_source_gamma_{k}']= (observed>0 and abs(observed/asym-1)<mp.mpf('.24'))
+    numeric.append({'k':k,'n':n,'positive_source_step_difference':mp.nstr(observed,15),
+                    'gamma_ratio':float(observed/asym)})
+
 payload={'audit':'Independent symbolic and t-domain integration, no import of tested implementation',
          'checks':{k:bool(v) for k,v in checks.items()},'numeric':numeric,
          'observed':sum(bool(v) for v in checks.values()),'total':len(checks),

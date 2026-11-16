@@ -186,4 +186,34 @@ class TransportedPhases(unittest.TestCase):
         with self.assertRaises(ValueError): tv_budget(0)
         with self.assertRaises(ValueError): four_time_window(1,0)
 
-if __name__=='__main__': unittest.main(verbosity=2)
+from gamma_signed_shell import tail_rational,tail_interval,positive_step_difference,shell_response,limiting_integral
+
+class SourceHighFrequency(unittest.TestCase):
+    def test_source_positive_differences(self):
+        for k in range(4):
+            for n in (8,18):
+                lo,hi=positive_step_difference(n,k,2,45)
+                self.assertGreater(lo,0)
+                self.assertGreater(hi,lo)
+
+    def test_true_green_interval(self):
+        for n in (3,23):
+            lo,hi=tail_interval(n,30)
+            target=green_integral(n,60)
+            self.assertLess(mp.mpf(lo.numerator)/lo.denominator,mp.re(target))
+            self.assertGreater(mp.mpf(hi.numerator)/hi.denominator,mp.re(target))
+
+    def test_fixed_finite_signed_shell_against_limit(self):
+        for k in (0,1,2):
+            r=shell_response(64,k,2,0.5,45,60)
+            l=limiting_integral(64,k,2,0.5,60)
+            self.assertLess(abs(r['value']-l),mp.mpf('0.085'))
+            self.assertLess(r['max_phase_halfwidth_bound'],mp.mpf('1e-35'))
+
+    def test_signed_phase_error_bound_is_positive(self):
+        r=shell_response(16,1,2,0.5,45,60)
+        self.assertGreater(r['max_phase_halfwidth_bound'],0)
+        self.assertLess(r['max_phase_halfwidth_bound'],mp.mpf('1e-32'))
+
+if __name__=="__main__":
+    unittest.main(verbosity=2)

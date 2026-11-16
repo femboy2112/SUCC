@@ -24,14 +24,17 @@ Preserve exact original four-pole forcing, zero seed and imported classical BBP 
 3. **Source-normalized all-frequency phase transport:** the original positive Green density conditioned at n induces `Y=-8 n log X`. In total variation `Law(Y)` is within `1-64 n^2 T_n <= 7/(8n)` of Gamma(2,1); hence **every** complex joint phase `exp(-i xi Y)Y^(i omega)` has an error at most `7/(4n)` uniformly over real xi,omega. The two frequency types are not silently identified.
 4. **Four-time causal-lag crossover:** `D_(n;q,ell)` constructed from original Green moments has a fourth-order law for `q=o(n)` and a third-order law when `q/n` is nonzero. At actual circle critical lags `q~n^2`, `n^3 D_(n;q,2)->1/16`. A complex Gamma(3+i omega) phase window emerges in this regime.
 5. **Reconstructability and its price:** the full complex vertical Mellin/Fourier response recovers the original positive Green density; the limiting Gamma log-Fourier response is zero-free yet exponentially damped in high log-frequency, making inverse recovery ill-conditioned.
-6. **No-go controls:** source-only Gamma moments cannot distinguish zero seed from coherent wrong seed `s=-x`, whose completed real circle is identically zero. Gaussian/Gamma attenuation, Gram positivity and fixed-source low-frequency phase corrections do NOT give Weyl cancellation automatically.
+6. **New proved high-frequency source cancellation:** For fixed k,ell, the positive original Green difference `D_(k,ell)(n)=(-1)^k Delta_ell^k T_n` has Gamma factorial leading coefficient, and the signed mean of `exp(2pi i h_B D_(k,ell)(n))` over n in [B,2B) is `O(1/c_B+c_B/B)` whenever `c_B=h_B/B^(k+2)->infinity` and `c_B=o(B)`. This is real signed cancellation on the SOURCE TAIL, not on the complete pi circle.
+7. **No-go controls:** source-only Gamma moments cannot distinguish zero seed from coherent wrong seed `s=-x`, whose completed real circle is identically zero. Gaussian/Gamma attenuation, Gram positivity and fixed-source low-frequency phase corrections do NOT give Weyl cancellation automatically.
 
 **Source and theorem genealogy:** Maintained Main XXV, `observational_succ/duck_bbp.py`, #634 Gamma Genesis (positive source Gamma/TV, Oily bridge), #638 Gamma suspension, #646 source zero/circle, #648 source chiral clock, #649 randomized norm, #651 source-preserving pi-slot/Poisson lifting. Classical Gamma facts cross-checked against NIST DLMF §5.2, §5.11.
+
+The finite-source test calibration/recovery record is in [REPAIR_HISTORY.md](REPAIR_HISTORY.md).
 
 ## Validation
 
 - `python -m unittest -v test_gamma_phase.py`
 - `python independent_audit.py`
-- `python -m compileall -q gamma_phase.py test_gamma_phase.py independent_audit.py`
+- `python -m compileall -q gamma_phase.py gamma_signed_shell.py test_gamma_phase.py independent_audit.py`
 
 Finite tests are not a proof of the infinite asymptotic assertions. The latter have paper derivations in [THEOREMS.md](THEOREMS.md). Original source, provenance manifest, historical files, production defaults and main are untouched. No merge, tag, release, Lean proof, full repository gate or external referee is claimed.

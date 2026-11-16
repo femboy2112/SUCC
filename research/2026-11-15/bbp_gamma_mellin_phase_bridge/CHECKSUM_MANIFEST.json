@@ -1,40 +1,45 @@
 {
-  "tested_python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "source": "femboy2112/SUCC original zero, four-pole BBP",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
   "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
-  "source": "femboy2112/SUCC, original 4-pole zero seed",
-  "tests": "30/30 PASS",
-  "independent_checks": "35/35 PASS",
+  "tests": "34/34 PASS",
+  "independent_audit": "39/39 PASS",
   "compileall": "PASS",
   "files": [
     {
       "file": "README.md",
-      "sha256": "d1fee4c0f3911de8f4136946c80cd3d09b87767e2c4d153049f6dca60b3cbdf1",
-      "bytes": 4002
+      "sha256": "336da66bebeaa7e2fa0b850a7410f36c2aa913e03d9dbdb83696b39db8f38902",
+      "bytes": 4538
     },
     {
       "file": "THEOREMS.md",
-      "sha256": "7ec53eb7ae8dfe83e9db8ac7ce9c5c9092c56b1af5b31f8ccd9a3816cb8f9946",
-      "bytes": 12382
+      "sha256": "97dfea0559fe8391776bc87a3b180d057f69dc61e5f46d228fc650e8f6252189",
+      "bytes": 15461
     },
     {
       "file": "NEXT.md",
-      "sha256": "24c4896ed33146db1dee71d1fcbc11a4bdbc32f46762dd789160e2084f6c3381",
-      "bytes": 4465
+      "sha256": "afaa269bdb1fda95ac90468e0dbdfe8332896cd446ea6992a6af5560dc1a64ca",
+      "bytes": 5337
     },
     {
       "file": "SOURCE_MAP.md",
-      "sha256": "db47730b06fa6c675b3b593463c13cd1db52e931a5a31716023314047c63a10b",
-      "bytes": 2773
+      "sha256": "fa6b1404d34a0ca7647dc653ea396b2bbad1318f51129c17cd596f1846a4c823",
+      "bytes": 3284
+    },
+    {
+      "file": "REPAIR_HISTORY.md",
+      "sha256": "c9edef5d1936308867321055d9892f1f2509e5846372c3f737a6f0783464ac60",
+      "bytes": 2174
     },
     {
       "file": "CLAIM_LEDGER.json",
-      "sha256": "7a0ba3f8682052bd48b459463cda886a3d0cb96dd294d6d09e77ef5af0b42cd5",
-      "bytes": 2106
+      "sha256": "3c0b2b8ed3155647aa2c990a8b2de48943e5f73c7c86a9e3a290c15e810af31c",
+      "bytes": 2745
     },
     {
       "file": "VALIDATION.md",
-      "sha256": "1c8c8ed3065f9c298fddec22f032ecb5b3bba1d1e0f676dcbb68b8956aebba82",
-      "bytes": 1886
+      "sha256": "101cc9934e2ce0145579fa064f7c404cf55fe6890cbf14134bf46588f0d0ad56",
+      "bytes": 2486
     },
     {
       "file": "gamma_phase.py",
@@ -42,31 +47,37 @@
       "bytes": 4577
     },
     {
+      "file": "gamma_signed_shell.py",
+      "sha256": "ac68a2fe12512bb8b63cc73792b1c900954dcf5bfe37d1958215160197949820",
+      "bytes": 2895
+    },
+    {
       "file": "test_gamma_phase.py",
-      "sha256": "e10fcda6fc360064226db3d9b96e7e58c876a831f4a9f158ee8e02fecde387cf",
-      "bytes": 7683
+      "sha256": "3c2fd5942e9af504bb7f6cb7695b75e6cc066e926fa2bfdfe98d74f2d8a20339",
+      "bytes": 8955
     },
     {
       "file": "independent_audit.py",
-      "sha256": "b20871c7489ebaac129b3b0a3b546fe038c0f0b00e3aaf19ee4a1a922ce1ab41",
-      "bytes": 4129
+      "sha256": "d8733cb376ea3b8f604d50741454601be70a069f305d57ee2b494ee24741af30",
+      "bytes": 4705
     },
     {
       "file": "INDEPENDENT_AUDIT.json",
-      "sha256": "61d9cb68ca69561ac864c15bed80b107fbc92042a28d95d0b8c0d16c1fc05776",
-      "bytes": 4366
+      "sha256": "0f14e7a5109a23974e6519aa6c9a50c3913ae8dc8ba23bb9688696052255c540",
+      "bytes": 5095
     },
     {
       "file": "TEST_OUTPUT.txt",
-      "sha256": "3be14dda5853aac589f4b2b8feb50f761ddd04df8a01e037ef3e585c1c0c8923",
-      "bytes": 2941
+      "sha256": "26d7e763212dd4c4bd1b044ce925fa53d96d03a47fa2b8c6e3a6cd3f3415e144",
+      "bytes": 3416
     },
     {
       "file": "AUDIT_OUTPUT.txt",
-      "sha256": "098bf91bbc98da693f2268481780eed1528306f712feeba7b7a356441c12cc25",
+      "sha256": "4ce43c307c15193c4944d8bf52e9349c4c49541e9554833860866d03ade79162",
       "bytes": 98
     }
   ],
-  "claims": "pi normality OPEN; full SUCC gates NOT RUN",
-  "validation_scope": "isolated Python bundle, no external referee or Lean"
+  "status": "pi normality OPEN; root gates and Lean NOT RUN",
+  "parent_pr": 654,
+  "parent_commit": "9abe34595eb1715f3e53ad46cad7983e40a67bd0"
 }
