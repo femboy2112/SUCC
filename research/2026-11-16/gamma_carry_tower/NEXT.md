@@ -1,0 +1,12 @@
+# The next source-selected connection theorem
+
+The abstract mod4 Gamma twist is completely solved. The missing object is a **time × resolution connection** for the exact original source, not an additional scalar Gamma continuation.
+
+1. Retain the full state `(n, C_n, {U_n}, odd denominator passport, zero seed)`; the actual update is not closed on `C_n mod4`.
+2. Compare `Gamma_alpha` along the actual BBP time map with `Gamma_alpha` along binary clock/refinement maps only through a declared common-basis transport. If a square does not commute, record its signed source-conditioned defect and which arrows are measured; don't call a missing map curvature.
+3. Test a potentially weaker **first-fiber conditional entropy** sufficient gate: `liminf H_B(upper-bit|lower-bit)>0` implies positive XOR density by `H(upper|lower) <= h2(d_B)`. This is a source-selected premise yet to prove, not a consequence of Γ smoothing. Predetermine a noncircular fixed-frequency consequence: positive lower shell mass of `C_n mod4 in {1,2}`, or direct R0 shell energy. All other positive norms and pointwise phase reconstructions are insufficient.
+4. Require rational A-FS finite zero-word shadows, the B8/M48 denominator-grid control, coherent seed `-pi/16`, rational alias, completed rational endpoint, and integer coboundary `g(n)=2n^2` with its correct mutated tail. A source-presentation invariant must distinguish the coboundary only via its authenticated source passport; a completed-circle invariant must not.
+5. Check the spectral barrier: any Gamma depth selected to damp the `j=1` mode of C_(2^m) needs depth Omega(4^m). If the proof needs source-shell fidelity from the generic `2alpha/B` bound, the overlapping regime requires 4^m=o(B). Search for a genuinely stronger *source-specific* transport budget; this would be progress beyond the current theory.
+6. Internal BBP wraps are deterministically O(B/log B) and cannot supply positive carry density alone. The ordinary source-digit cell selection between wrap events must be controlled using the literal zero ancestry. Freeze any candidate inequality and all controls before a new authenticated holdout beyond the integrated 131072-state horizon.
+
+**Verdict-changing theorem:** a source-derived signed lower bound on a two-axis transport defect, not gauge-trivial or source-blind, which implies a uniform all-late-shell carry margin (or the weaker R0) for U0=0 and fails at a specified negative control. This is presently UNVERIFIED.
