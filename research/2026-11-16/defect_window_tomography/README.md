@@ -6,6 +6,8 @@
 **Scope:** elementary finite-dimensional linear algebra; prospective nonlinear/source-specific extension.  
 **Research status:** DWT-01 and DWT-02 are paper-proved classical/local deductions; exact countermodels DWT-03–05 are testable finite examples; inverse source authentication and the π bridge are **CONJECTURED/UNVERIFIED**. No claim of academic priority.
 
+**2026-11-16 extension:** [Contextual Zero, the Third Observer, and Boundary Defect Bookkeeping](CONTEXTUAL_ZERO_THIRD_OBSERVER.md) adds the typed zero-fiber equivalence, active-probe defect decomposition, exact compensating-reservoir model, and adversarial resource/entropy controls (ZTO-01–08). This is an additive research interface, not a physical vacuum or arithmetic normality theorem.
+
 ## 1. Steelman: incompatibility is not a source verdict
 
 An observed incompatibility can mean at least three different things:
