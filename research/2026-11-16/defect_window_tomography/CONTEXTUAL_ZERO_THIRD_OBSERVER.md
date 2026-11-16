@@ -119,7 +119,7 @@ This *assumed* source action transfers \(u\) units from a reservoir into the vis
  s'=s+u,\qquad r'=r-u,\qquad s'+r'=s+r .
 \]
 
-The source-complete third reference uses \(P_{\rm total}=(1,1,0)\), while the "inside A" subsystem sees only \(P_s=(1,0,0)\). Take the effective forecast "no change" (\(B=1\)) for each scalar window. The exact signed defects are
+The source-complete third reference uses \(P_{\rm total}=(1,1,0)\), while the "inside A" subsystem sees \(P_s=(1,0,0)\) and the reservoir chart uses \(P_r=(0,1,0)\). Take the effective forecast "no change" (\(B=1\)) for each scalar window. The exact signed defects are
 
 \[
 \begin{aligned}
