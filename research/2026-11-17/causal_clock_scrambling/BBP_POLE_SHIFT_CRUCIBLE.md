@@ -106,6 +106,12 @@ For the locked rival (BPC1), the source poles occur in **shifted pairs**; the or
 
 **Boundary:** the actual *nonrational infinite* \(h(n)=T_{n-1}\) DOES solve (BPC5) as a sequence. Excluding a rational closed form is not excluding all analytic/nonrational completions, and **does not by itself prove any uniform shell phase separation**. This is an instance of classical rational difference-equation pole-orbit obstruction, related to Abramov's rational summation theory and later discrete-residue work; it is not a newly discovered general criterion.
 
+### A stronger second-BBP-form hostile control refutes a naive promotion of BPC-03
+
+The separately proved and exact [Two-BBP-Form Locked Countermodel](BBP_TWO_FORMULA_LOCKED_COUNTERMODEL.md) combines the authentic π source with another *published* BBP π representation and a rational coboundary. It produces a **different** rational zero-seeded forcing \(r_\flat(n)\) that is strictly positive, strictly decreasing, has the *same* leading \(15/(64n^2)\) coefficient, and **retains an isolated nonzero pole shift-residue at \(n=7/8\)**—yet completes to the rational endpoint \(13/128\) and locks exactly from clock \(n=2\).
+
+The infinite evaluations use two established BBP identities; universal positivity and monotonicity are certified by explicit positive integer-polynomial numerator/negative-derivative certificates; see the [independent exact validation](BBP_TWO_FORMULA_VALIDATION.md). Thus **even a nonzero weighted pole-orbit obstruction plus null seed and matched positive monotone asymptotics do not imply R0**. BPC-03 distinguishes rational telescoping *as an explanation*, not locked versus escaping endpoints in general. Any true π proof must depend on the **entire authenticated original r(n) and selected winding**, not just the existence of a pole-orbit invariant.
+
 ## 4. Higher-order terminal interferometry has an exact rank-one history collapse
 
 Let \(N=2B\) and perturb each forcing event by a hypothetical impulse vector \(a=(a_1,\ldots,a_N)\), keeping \(U_0=0\). The terminal state is
