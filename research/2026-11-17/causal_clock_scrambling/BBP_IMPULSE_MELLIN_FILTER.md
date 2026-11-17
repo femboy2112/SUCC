@@ -165,7 +165,11 @@ For a length-\(N\) cycle and mean-zero input \(f\), the smallest nonzero shift f
 \[
 \boxed{\|Q(S)f\|_2\ge\sqrt2\sin(\pi/N)\|f\|_2.}\tag{IMF19}
 \]
-This **finite-size** gap tends to zero as \(N\to\infty\). A fixed zero reference removes the DC ambiguity, but does **not** generate a uniform infinite-horizon coercivity bound. This is an exact mathematical illustration of why a finite-resolution null-wall or finite positive response is not automatically a π anti-locking theorem.
+Let \(\sigma_N\) denote the least nonzero singular value of \(Q(S)\) on mean-zero length-\(N\) vectors. By inspecting the first nonconstant Fourier mode as an upper-bound witness,
+\[
+\boxed{\sqrt2\sin(\pi/N)\le\sigma_N\le30\sin(\pi/N),\quad N\ge2.}\tag{IMF19a}
+\]
+Thus \(\sigma_N=\Theta(N^{-1})\): the filter's inverse on mean-zero data becomes progressively ill-conditioned, even though there are no *additional* unit-circle zeros. A fixed zero reference removes the DC ambiguity but does **not** generate a uniform infinite-horizon coercivity bound. This is an exact mathematical illustration of why a finite-resolution null-wall or finite positive response is not automatically a π anti-locking theorem.
 
 **Type firewall:** the shift \(S\) here translates *the auxiliary impulse/Mellin-exponent index*. It is **not automatically** the original BBP chronological radix map \(n\mapsto n+1\). Applying IMF18 to the actual BBP circle phases requires a separately constructed source-valid intertwiner. Without it, the spectral bounds are properties of the source's coefficient mask, **not** of the distribution of π's hexadecimal digits.
 
