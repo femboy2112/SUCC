@@ -72,6 +72,12 @@ The actual \(r(z)\in\mathbb Q(z)\) has simple poles and residues
 \end{array}
 \tag{BPC4}
 \]
+**An exact projected-zero/interferometry witness.** The *coarse* observer that remembers only the total residue sees
+\[
+\boxed{\tfrac12-\tfrac14-\tfrac18-\tfrac18=0.}
+\]
+But the four-component **integer-shift-orbit-resolved** residue is the nonzero vector \((1/2,-1/4,-1/8,-1/8)\). The global zero is cancellation, **not absence of four independent source-supported pole directions**. The shift-orbit weighted residues below are unchanged by adding any rational coboundary \((16-E)h\): this is a genuine source-class invariant relative to rational clock-gauge corrections, not an absolute invariant under arbitrary analytic completion or changes of forcing. The locked alternative also has total residue zero, but its **weighted residues vanish separately in each paired shift orbit**. This is an operational instance of a null coarse readout acquiring a nonzero source signature after a *lawful refinement of the observer algebra*. It does not yet impose a signed positive density on BBP integer carries.
+
 All four poles lie in **different** equivalence classes \(\alpha+\mathbb Z\) of integer shifts.
 
 Suppose a rational function \(h(z)\in\mathbb C(z)\) obeys
