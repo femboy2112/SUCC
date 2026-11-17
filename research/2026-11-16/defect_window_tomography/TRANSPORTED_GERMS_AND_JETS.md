@@ -81,9 +81,8 @@ The formula is the continuous-time counterpart of inherited [Principia CG-05/06]
 Take \(X=\mathbb Q^2\) at rational timestamps, \(K=\bigl(\begin{smallmatrix}0&1\\0&0\end{smallmatrix}\bigr)\), \(H=0\), and the moving row \(P(t)=(t,1)\). The polynomial propagator is
 \[
 U(t,s)=I+(t-s)K,\qquad
-\mathcal E(t)=(1,t)+(0,t)=(1,t)
+\mathcal E(t)=\dot P(t)+P(t)K=(1,0)+(0,t)=(1,t).
 \]
-**with a correction:** \(\dot P=(1,0)\), \(PK=(0,t)\), so \(\mathcal E(t)=(1,t)\) as displayed.
 
 Then
 \[
