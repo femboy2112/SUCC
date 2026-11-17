@@ -168,7 +168,7 @@ The local exact-rational verifier computes \(U_n\) from the literal zero seed an
 **IFS-05 (OBSERVED EXACT FINITE CERTIFICATE):** for every \(B\in\{32,64,128,256\}\),
 
 \[
-\boxed{\mathcal V_{B,\Pi_{\rm carry}}>
+\boxed{\mathcal V_{B,\Pi_{\rm carry}}\ge
 \mathcal Q_{B,\Pi_{\rm carry}}>\frac35.}
 \tag{IFS13}
 \]
