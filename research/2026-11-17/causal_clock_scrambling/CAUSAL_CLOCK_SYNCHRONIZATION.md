@@ -115,6 +115,12 @@ The \(k_{n+1}\) may include a final 16-valued carry; they are not declared indep
 
 **CCS-06 (NO-GO to overfitting proper time):** for any phase sequence \(z_n\), a chart chosen as its *exact unknown value* \(g_n(z)=z_n^{-1}z\) makes its apparent local phase identically one. Thus unrestricted "maximal agreement" can make even highly moving orbits appear stationary. A clock/frame alignment that uses the to-be-proved answer, the completed π orbit, or future digits to choose gauges is not a source-authenticated observation. The lawful rational chart \(e(-U_n)\) instead gives \(w_n=e(T_n)\to1\), which is already true on both original and locked analogues and does not force R0.
 
+### Seed-resonance continuation (SR-01–10)
+
+The companion [Seed-Resonance Interferometry and Differential Null Fiber](SEED_RESONANCE_AND_NULL_SUPPORT.md) proves that two equal-forcing copies satisfy \(z_n(s)/z_n(t)=e(16^n(s-t))\), so an **entirely relative-only observer loses the original forcing**. A changed seed \(a/16^m\) is exactly invisible to all original integer-circle observations for n≥m; the stronger declared Gamma continuation can detect its shifted real-lift gain, but that is a new probe.
+
+With Haar-randomized seeds, ordinary first moments and off-diagonal two-time covariances vanish while \(Z_n^{16}\overline{Z_{n+1}}=1\) at every sample: a 17-factor raw-phase resonance exposes the radix causal law without authenticating the original zero seed. The co-moving source-corrected expression \(e(-U_n(0))Z_n\) carries a corresponding exact high-order forcing phase \(e(-r(n+1))\), but is **still independent of the changed seed**. A later impulse and initial-seed shift can also generate identical full future real states, demonstrating a history/provenance access gap. The dense dyadic tail-null subgroup forces any nonconstant eventual R0 indicator to be nowhere continuous. [Exact 17-test and symbolic validation](SEED_RESONANCE_VALIDATION.md) is recorded separately. These no-gos refine CCS-05/06; R0 remains open.
+
 ## 5. What could turn causal-clock tomography into the missing arithmetic inequality?
 
 The authenticated Main XXVI target is
