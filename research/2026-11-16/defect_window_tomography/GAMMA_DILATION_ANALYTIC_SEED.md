@@ -242,7 +242,7 @@ A further source adversary is the literal wrong zero seed \(s=-x\), whose comple
 | GDB-05 | **PROVED PAPER / CLASSICAL** | Forward shape-two polynomial and conditional injectivity; full shape-three alias countermodel. |
 | GDB-06 | **PROVED PAPER / CLASSICAL** | Exact inverse sensitivity, exponentially shrinking Gamma deck gap and locked-orbit false positive. |
 | GDB-07 | **INHERITED AUTHORITY** | GM9's Gamma(2) Green calibration is a separate source law with the displayed absolute error. |
-| GDB-08 | **PROVED INSuffICIENCY OF A BOUND** | \(O(1/n)\) calibration cannot certify a phase for an \(O(16^{-2n})\) reference; no physical no-go claimed. |
+| GDB-08 | **PROVED INSUFFICIENCY OF THE STATED BOUND** | \(O(1/n)\) calibration cannot certify a phase for an \(O(16^{-2n})\) reference; no physical no-go claimed. |
 | GDB-09 | **UNVERIFIED** | Native original-zero BBP source supplies a stable, independently observable Gamma analytic seed or a π all-shell Fourier saving. |
 
 **Source map:** [SUCC's fixed BBP frontier](../../../docs/PI_NORMALITY_FRONTIER.md), [transported observer germs/jet](TRANSPORTED_GERMS_AND_JETS.md), [contextual zero](CONTEXTUAL_ZERO_THIRD_OBSERVER.md), [Gamma phase disintegration #653](https://github.com/femboy2112/SUCC/pull/653), [original Green Gamma phase #654](https://github.com/femboy2112/SUCC/pull/654), [Computational Continuum #659](https://github.com/femboy2112/SUCC/pull/659), [Prime Compensation #661](https://github.com/femboy2112/SUCC/pull/661), [Principia CG-05](../../../docs/principia_observatoris/02_causality_geometry.md), and [METHOD](../../../docs/METHOD.md). Shared formula family ≠ independent source verification.
