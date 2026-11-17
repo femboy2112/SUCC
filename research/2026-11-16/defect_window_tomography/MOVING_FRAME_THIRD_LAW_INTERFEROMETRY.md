@@ -122,6 +122,26 @@ Indeed \(|z^{16}-z|=|z^{15}-1|\le15|z-1|\), so \(\mathcal S_B\le450 A_B\). Eithe
 
 For irrational \(x\), \(\mathcal S_B>0\) at every finite \(B\) because no individual objective step is exactly stationary. **It does not follow that** \(\inf_{B\ge B_0}\mathcal S_B>0\). The existing sparse irrational hostile control \(x_\star=3/16+\sum_{j\ge1}16^{-4^j}\) has \(\mathcal S_{B_j}\to0\) on the selected shells \(B_j=2\cdot4^j\) because MF12 bounds \(\mathcal S_{B_j}\le8 A_{B_j}+8/B_j\), and \(A_{B_j}\to0\). It is irrational and moves at every tick, yet no eventual uniform speed margin exists. This is a **decisive refutation** of "always moving ⇒ R0."
 
+### The existing Gamma microscope transports *relative motion* without creating it
+
+The [adaptive source-typed Gamma observer](ADAPTIVE_GAMMA_ICE_CLIMB.md) is defined only after adding its declared fractional-time window. It has
+\[
+M_n(x)=q(x)z_n,\quad q(x)=(1-2\pi ix)^{-1},\qquad
+\mathscr D_{n-1}(x)=c(x)z_n,\quad |c(\pi/16)|>1/5 .
+\]
+Therefore the chronological motion energies transport *exactly*:
+\[
+\boxed{
+\frac1B\sum_{n=B}^{2B-1}|M_{n+1}-M_n|^2
+=|q(x)|^2\,\mathcal S_B(x),
+\qquad
+\frac1B\sum_{n=B}^{2B-1}|\mathscr D_n-\mathscr D_{n-1}|^2
+=|c(x)|^2\,\mathcal S_B(x).
+}\tag{MF13a}
+\]
+
+This exhibits the requested **\(A\to B\to C\) versus \(A\to C\)** retained-defect mechanism in the moving-frame setting. It is one algebraic view of the same chronological circle motion, not an independent source estimate. The source-computed lower certificate \(\mathcal Q_B\) below also bounds the second Gamma motion energy from below by \(\mathcal Q_B/25\) at the authentic \(x=\pi/16\). Its phase is essential: replacing the complex-valued defect with its constant modulus \(|c(x)|\) makes every such motion difference vanish. This does not fix the unproved eventual positive \(\mathcal Q_B\) bound.
+
 ## 5. Certified relative-speed lower bounds from the four BBP poles
 
 The full phase \(Y_n\) is not computed with floating π. Define the rational circular metric
