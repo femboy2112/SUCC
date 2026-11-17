@@ -6,6 +6,10 @@
 **Scope:** elementary finite-dimensional linear algebra; prospective nonlinear/source-specific extension.  
 **Research status:** DWT-01 and DWT-02 are paper-proved classical/local deductions; exact countermodels DWT-03–05 are testable finite examples; inverse source authentication and the π bridge are **CONJECTURED/UNVERIFIED**. No claim of academic priority.
 
+
+
+**2026-11-16 analytic-seed continuation:** [Transported Germs and Observer Differentials — the A → B → C Coherence Contract](TRANSPORTED_GERMS_AND_JETS.md) gives an exact moving-chart differential/Duhamel identity, a first-jet continuation law for genuine-prime compensation, an independently checkable prime-inventory collision, and the BBP real-lift derivative that separates otherwise identical integer-time circle observations. Arbitrary analytic functions require full germs or additional governing equations; monodromy/path history stays explicit.
+
 **2026-11-16 extension:** [Contextual Zero, the Third Observer, and Boundary Defect Bookkeeping](CONTEXTUAL_ZERO_THIRD_OBSERVER.md) adds the typed zero-fiber equivalence, active-probe defect decomposition, exact compensating-reservoir model, and adversarial resource/entropy controls (ZTO-01–08). This is an additive research interface, not a physical vacuum or arithmetic normality theorem.
 
 ## 1. Steelman: incompatibility is not a source verdict
