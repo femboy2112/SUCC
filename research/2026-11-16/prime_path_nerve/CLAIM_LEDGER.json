@@ -1,0 +1,15 @@
+{
+  "status_date": "2026-11-16",
+  "scope": "Authenticated finite rational primes; original BBP provenance kept distinct",
+  "claims": [
+    {"id": "PPN-01", "status": "CLASSICAL / EXACT", "claim": "Signed divisor-path simplex sum equals the finite prime survival projector", "falsifier": "49 with incomplete prime inventory; arbitrary parallel-edge graph"},
+    {"id": "PPN-02", "status": "CLASSICAL / EXACT", "claim": "CRT prime-state tensor projector equals Ramanujan additive Fourier expansion", "falsifier": "wrong DFT orientation or omit a local character"},
+    {"id": "PPN-03", "status": "CLASSICAL / EXACT", "claim": "Finite-prime Hurwitz continuation gives P_Q(-1)R_Q(-1)=-1/12 and all negative-odd companions", "falsifier": "fake composite Euler factor; bad Bernoulli normalization"},
+    {"id": "PPN-04", "status": "PROVED PAPER / EXACT NEGATIVE CONTROL", "claim": "All-prime pointwise sieve limit and fixed-prime analytic continuation do not commute at -1", "falsifier": "supply a justified common dominated convergence domain at -1"},
+    {"id": "PPN-05", "status": "CLASSICAL / COMPOSITE", "claim": "Gamma-completed reflection identifies xi(-1)=xi(2)=8*x_BBP/3; finite prime reflection defect is a unit phase on Re s=1/2", "falsifier": "mixed xi/Lambda conventions or wrong phase orientation"},
+    {"id": "PPN-06", "status": "PROVED NEGATIVE CONTROL", "claim": "Prime-only scalar/CRT data do not distinguish authenticated zero BBP seed from coherent same-forcing wrong seed", "falsifier": "source-labelled joint observation that includes the seed and signed phase"},
+    {"id": "PPN-07", "status": "UNVERIFIED", "claim": "A source-authenticated signed multi-time joint of finite prime projectors and actual BBP carries has an all-shell saving implying R0", "falsifier": "predeclared finite rational shadows, fake-6, coboundary and late shell controls"},
+    {"id": "PPN-08", "status": "REFUTED GENERALIZATION", "claim": "Every computational path-space with common endpoints is canonically a prime-state superposition", "receipt": "two unlabelled parallel graph edges have no prime-divisor object or canonical CRT map"},
+    {"id": "PPN-09", "status": "OPEN", "claim": "Original zero-seeded pi base-16 normality and completed Weil positivity/RH", "falsifier": "requires actual arithmetic signed theorem on correct infinite domain"}
+  ]
+}
