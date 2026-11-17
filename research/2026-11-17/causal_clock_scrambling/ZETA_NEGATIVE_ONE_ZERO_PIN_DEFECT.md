@@ -129,6 +129,16 @@ Define the positive **critical-line pinning scalar**
 \]
 This number is defined **without assuming RH**, but the construction presupposes the complete upper-half zero-ordinate multiset. Its irrationality is not known merely from the definition. If RH is true, it equals π; if RH is false, it is strictly larger than π.
 
+The *exact* nonnegative squared-gain defect can be written without logarithms:
+\[
+\boxed{
+L_\rho^2-|F_\rho|^2
+=\frac{4d\,\left[3t^2+t-1+(t+1)d\right]}
+{t^2\left[t^2+(2t-1)d+d^2\right]}\ge0.
+}\tag{ZPD9a}
+\]
+For actual zero heights \(\gamma>14\), \(t>\frac12\) makes each bracket strictly positive whenever \(d>0\). This displays the **squared horizontal displacement** as an explicit factor rather than hiding it inside an inequality. It is a formal zero-geometry statement, not a measured real-zero displacement.
+
 **ZPD-03 (EXACT RH-EQUIVALENT NONNEGATIVE DEFECT):**
 \[
 \boxed{
