@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "source": "Main XXVI plus PCE draft #661",
+  "claims": [
+    {"id": "PCE-12", "status": "EXACT", "statement": "Finite true-prime zeta(-1) hyperbola has an exact reconstruction from u and parity (-1)^omega(Q)", "domain": "finite distinct genuine rational prime sets, scalar endpoint s=-1", "falsifier": "forget parity at Q=3"},
+    {"id": "PCE-13", "status": "EXACT", "statement": "Prime insertion closes on the u-plus-one-bit observer and is full-transport-flat", "domain": "real u hyperbola, source orientation bit", "falsifier": "replace bit update by a fixed-sign section"},
+    {"id": "PCE-14", "status": "EXACT", "statement": "Wrong branch at Q=3 yields -5/4 projected defect after p=5, though both branches lie on invariant hyperbola", "domain": "explicit finite genuine primes 3 and 5", "falsifier": "independent rational 2x2 matrices"},
+    {"id": "PCE-15", "status": "EXACT", "statement": "Original zero-seeded BBP carry and fractional-source compensation sums to zero for each n>=1,h>=1", "domain": "literal four-pole source and U0=0", "falsifier": "independent exact rational source recurrence"},
+    {"id": "PCE-16", "status": "EXACT", "statement": "The original BBP lift from integer carry requires source history; other lifts correspond to explicitly changed seeds", "domain": "n>=1; full source versus carry-only observation", "falsifier": "same-carry different-fraction two-state countermodel"},
+    {"id": "PCE-17", "status": "EXACT", "statement": "A source-containing k-digit BBP cylinder gives exact finite future-carry ranges and quantifiable resolution debt", "domain": "n>=1, k,h positive integers, same four-pole forcing, changed-seed alternatives identified", "falsifier": "source-point outside rational half-open forecast interval"},
+    {"id": "PCE-18", "status": "UNVERIFIED", "statement": "A genuine source-selected prime-to-BBP signed carry transport yields all-large-shell saving", "domain": "literal zero-seed R0 frontier, source-authenticated primes and BBP time", "falsifier": "wrong seed, finite rational shadows, fake-six and gauge mutation"}
+  ],
+  "not_proved": ["RH", "completed Weil positivity", "pi base-16 normality", "R0", "physical causal force"]
+}

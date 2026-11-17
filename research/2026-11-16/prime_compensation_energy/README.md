@@ -23,3 +23,7 @@ python independent_audit.py
 ```
 
 **Verdict:** Exact new-to-SUCC finite coordinate/observer synthesis. No physical energy proof, RH, pi-normality, Weil positivity, prime discovery theorem, or all-shell carry theorem. Finite audit is not an independent mathematical referee. Repo-wide gates and GitHub Actions must be recorded separately if run.
+
+## PCE-12–18: source-valid observer sections
+
+[New theorem supplement](source_sections/THEOREMS.md) proves that the exact zeta(-1) Euler/Hurwitz hyperbola is reconstructed by the observed `u` plus the one-bit prime-history orientation `(-1)^omega(Q)`. A wrong-branch hyperbola-valid reset gives an exact `-5/4` gap after genuine prime insertions 3 and 5; retaining the authentic bit gives zero. The literal zero-seeded BBP recurrence now has a source-journal lift and source-containing set-valued radix-cylinder reinjection with certified hidden-coordinate/precision cost. Neither yields R0 or RH. [Tests and independent audit](source_sections/VALIDATION.md).

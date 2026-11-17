@@ -28,3 +28,7 @@ Next useful independent work: derive whether the conditional signed BBP carry pr
 ## The noninertial-observer probe (PCE-11)
 
 Before claiming intrinsic curvature, compute the complete path commutator (zero for the present authentic prime T_p), then compute the *projection/forgetting* term `P T_q(I-JP)T_pJ` on a declared instrument. The ambient calibration gives `45/32` for primes 3,5, zero for p=2, but its `J=(u,0)` is **not a source-valid section** of the zeta(-1) hyperbola. Next task: choose source-admissible conditional fibers and instrument disturbance/cost, derive an invariant relative to that declared observational protocol, then ask whether an analogous nonzero defect is forced for the actual BBP time/refinement square rather than only for the flat prime presentation.
+
+## Next after PCE-12–18: pointed source-valid sections
+
+Read [the new source-sections supplement](source_sections/THEOREMS.md): one prime-history parity bit closes the zeta(-1) observer exactly; the wrong source-hyperbola branch produces `-5/4`, while correct historical reinjection produces zero. On BBP, original zero ancestry fixes a unique fractional state; a carry-only observer cannot reconstruct it from a generic reported fiber. Source-containing set-valued cylinders give exact all-finite-horizon carry ranges, never a counterfeit zero-seeded reset. A genuine all-shell signed carry bound remains open and requires source-specific history beyond those identities.
