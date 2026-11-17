@@ -1,0 +1,75 @@
+{
+  "research_date": "2026-11-16",
+  "baseline": "main@81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "parent_pr": "#660 @6ece172c5f7faa22955129374cb93db005316c94",
+  "rh_proved": false,
+  "pi_normality_proved": false,
+  "claims": [
+    {
+      "id": "PCE-01",
+      "status": "EXACT / CLASSICAL",
+      "statement": "finite genuine-prime Hurwitz residual and Euler companion",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-02",
+      "status": "EXACT",
+      "statement": "two-component source-typed prime insertion preserves full product",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-03",
+      "status": "EXACT",
+      "statement": "mixed compensation term, positive normalized coefficient at -1",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-04",
+      "status": "EXACT",
+      "statement": "signed O(1,1) presentation-space action at -1",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-05",
+      "status": "EXACT / NEGATIVE CONTROL",
+      "statement": "flat prime insertion squares; projected h non-descent only on declared domain",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-06",
+      "status": "EXACT",
+      "statement": "finite derivative jet register and invariant endpoint derivative",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-07",
+      "status": "EXACT / NEGATIVE CONTROL",
+      "statement": "all-prime limit vs continued finite stages fails to commute for one coordinate",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-08",
+      "status": "EXACT / CLASSICAL",
+      "statement": "CRT atomic prime test with authenticated growing finite inventory",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-09",
+      "status": "EXACT IDENTITY / OPEN ESTIMATE",
+      "statement": "same-time signed prime x BBP carry joining and unproved all-shell margin",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-10",
+      "status": "CLASSICAL CONTACT / OPEN",
+      "statement": "zeta reflection/BBP scalar matches; no Weil positivity or π normality",
+      "primary_file": "THEOREMS.md"
+    },
+    {
+      "id": "PCE-11",
+      "status": "EXACT CALIBRATION / NONPHYSICAL ANALOGY",
+      "statement": "flat O(1,1) prime presentation supports an observer-dependent two-step compression defect; p=3,q=5 gives 45/32, but ambient section J is not source-hyperbola-valid",
+      "primary_file": "THEOREMS.md"
+    }
+  ]
+}

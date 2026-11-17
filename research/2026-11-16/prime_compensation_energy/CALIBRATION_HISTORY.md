@@ -1,0 +1,8 @@
+# Calibration / failed tests preserved
+
+1. Initial `prime_compensation.py` exact test run: 14 test methods, 11 passed, 3 errored because `math.prod(iterator, Fraction(1))` passed the start parameter positionally, whereas the runtime requires keyword-only `start=`. Corrected to `math.prod(iterator, start=Fraction(1))`. There was no mathematical counterexample; a malformed local test helper caused the errors.
+2. The independent SymPy oracle initially compared unsimplified symbolic matrices by structural equality `T.T*J*T==J` and returned False. Replaced with `simplify(T.T*J*T-J)==zeros(2)`, which is the correct mathematical equality check. Again, not a source counterexample.
+3. The independent oracle also initially used a positional `math.prod(..., one)` argument and was corrected to `start=`.
+4. After corrections, `TEST_LOG.txt` and `AUDIT_LOG.txt` are unmodified textual output from the final focused runs. No other failures are represented as proof. The exact arithmetic and first-jet checks are the primary calibration for the PCE formulas. **No fresh zero-seeded π holdout beyond n=131072 was attempted** because no new asymptotic estimate with frozen constants exists.
+
+5. Owner reinterpretation (same 2026-11-16 operation): finite compensating source changes can appear as *fictitious/noninertial forces* in a moving or coarse observation frame while ambient prime transport remains flat. Inserted PCE-11 explicitly distinguishes signed hyperbolic boosts (K²=+I) from physical spatial centrifugal rotation (J²=-I). The first calibration uses ambient J(u)=(u,0), which **is not a section of the actual negative source hyperbola**. Nonzero compression cannot be presented as measured source curvature. The exact 3,5 compressed defect is 45/32.

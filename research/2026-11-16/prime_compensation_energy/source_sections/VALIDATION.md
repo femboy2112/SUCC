@@ -1,0 +1,11 @@
+# Validation record — source-history sections
+
+**Scope:** isolated focused tests and an independently written symbolic/Fraction oracle; **not** the complete SUCC root gate suite, Main XXVI CI, formal Lean, or external peer review.
+
+- Command `python -m unittest -v test_source_sections.py`: **19/19 PASS**, Python `unittest`, exact `fractions.Fraction` arithmetic. Output preserved in `TEST_LOG.txt`.
+- Command `python independent_audit.py`: **1146 independent-source checks PASS**, of which 13 are symbolic 2×2/prime-coordinate consistency checks and the rest independently implemented Fraction/Hurwitz/Bernoulli source computations. Output preserved in `INDEPENDENT_AUDIT_LOG.txt`. This oracle does not import `source_sections.py` and re-derives the partial BBP state from a finite closed sum rather than its recurrence. It is independent code over shared mathematical definitions, not an external mathematical referee.
+- Exact cases: empty-prime `(u,v)=(11/24,13/24)`; after p=3 `(-1/6,-1/3)`; after p=5 `(-13/48,19/48)`; wrong positive branch predicts `u=47/48`, giving gap `-5/4`.
+- Every authentic first-hex-digit cylinder (all 16 possible digits, for each examined n=1..19) has exactly two possible next carries under the original forcing, including the genuine source point. Two-digit cylinders are unique except for at most 16 of 256 possibilities.
+- Actual zero-seed example n=3: `C_3=804`, first two hexadecimal fractional digits encode cell index `a_3=63` at M=256; the source-faithful next-carry interval is `[12867,12868]`, with the genuine `C_4=12867`. At n=4, depth-two prediction is unique `[205887,205887]` and matches `C_5=205887`.
+- Controls: fake/composite-6 prime rejected, repeated primes rejected, wrong-branch reset, correct parity branch, integer seed alias, rational changed-seed identification, original four-pole source and positive small r for n>=1, exact zero-anchored carry/fraction compensation, polynomial coboundary full-state gauge shift, one-digit ambiguity, multi-horizon precision debt.
+- **Not tested:** Main XXVI repository provenance / root unittest / math-memory / Lean gates in this isolated local overlay; no hosted GitHub CI result claimed before it runs. Nothing here yields a lower bound on carry density or RH/π-normality.
