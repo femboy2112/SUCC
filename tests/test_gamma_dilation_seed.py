@@ -12,6 +12,7 @@ import cmath
 from fractions import Fraction as F
 import math
 import unittest
+import mpmath as mp
 
 
 def c(a=0, b=0):
@@ -158,9 +159,15 @@ class GammaDilationSeedTests(unittest.TestCase):
                 self.assertEqual(j_c, F(b ** (d1 + d2)) * x)
                 # The logarithmic derivative has multiplier log(b),
                 # independently of Gamma shape and original BBP pole data.
-                self.assertAlmostEqual(math.log(b) * float(j_c),
-                                       math.log(b) * b ** (d1 + d2) * float(x),
-                                       places=11)
+                # An absolute decimal-place check on binary floats can fail
+                # solely from reassociating products at magnitude 10^6.
+                # Keep the exact rational transport above, and independently
+                # calibrate the common logarithmic factor at declared precision.
+                with mp.workdps(70):
+                    left = mp.log(b) * mp.mpf(j_c.numerator) / j_c.denominator
+                    right = (mp.log(b) * b ** (d1 + d2)
+                             * mp.mpf(x.numerator) / x.denominator)
+                    self.assertLess(abs(left - right), mp.mpf('1e-60'))
 
     def test_gamma_observer_reconstructs_logarithmic_derivative(self):
         for y in (0.0, 0.125, -0.25, 2.0):
@@ -224,14 +231,18 @@ class GammaDilationSeedTests(unittest.TestCase):
         self.assertLess(last, 1e-4)
 
     def test_native_gamma2_bound_does_not_resolve_moving_phase(self):
-        x = math.pi / 16
-        for n in range(2, 10):
-            y = 16 ** n * x
-            reference = 1 / (1 + 4 * math.pi ** 2 * y * y)
-            absolute_error_budget = 7 / (4 * n)
-            self.assertGreater(absolute_error_budget, reference)
-            self.assertLess(reference,
-                            1 / (4 * math.pi ** 2 * x * x * 16 ** (2 * n)))
+        # Binary floats round 1+q^2 to q^2 at the largest tested clocks,
+        # destroying a mathematically strict inequality. Preserve the unit
+        # term at sufficient precision instead of weakening the comparison.
+        with mp.workdps(70):
+            x = mp.pi / 16
+            for n in range(2, 10):
+                y = 16 ** n * x
+                q_squared = 4 * mp.pi ** 2 * y * y
+                reference = 1 / (1 + q_squared)
+                absolute_error_budget = mp.mpf(7) / (4 * n)
+                self.assertGreater(absolute_error_budget, reference)
+                self.assertLess(reference, 1 / q_squared)
 
     def test_shape_three_cannot_uniquely_invert_full_gamma_scalar(self):
         # Both (1 +/- i sqrt(3))**3 = -8 exactly by algebra.

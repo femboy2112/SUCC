@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "Gamma module13tests; independent triangle method under ambient35digits, restoring35 afterwards.",
+  "checks": [
+    {
+      "check": "gamma_precision",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_gamma_dilation_seed.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log_file": "gamma_precision.txt",
+      "published_log_sha256": "46eef92f30c5dcc55fc85206ee5b00dcc2badc05c199df14bb0585dd2f5304e4"
+    },
+    {
+      "check": "triangle_hostile_precision",
+      "command": [
+        "python",
+        "-c",
+        "import sys,unittest,mpmath as mp; sys.path.insert(0,'tests'); import test_triangle_genesis_repair as t; mp.mp.dps=35; result=unittest.TextTestRunner(verbosity=2).run(unittest.TestSuite([t.CrossCheckIndependentOracle('test_p1_oracle_agrees')])); assert result.wasSuccessful(); assert mp.mp.dps==35; print('Ambient precision restored:',mp.mp.dps)"
+      ],
+      "exit_code": 0,
+      "log_file": "triangle_hostile_precision.txt",
+      "published_log_sha256": "b4c140372de3c591e440ef37585313ad690e4f10df7148253f48ca932eb3381f"
+    }
+  ]
+}

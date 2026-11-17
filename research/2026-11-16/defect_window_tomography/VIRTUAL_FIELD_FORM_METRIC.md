@@ -3,7 +3,9 @@
 **Research continuation, 2026-11-16.**  
 **Originating hypothesis (Leah):** find a metric/norm of the zero/virtual field in which distance is a function of **form approximation**. In particular, compare an authenticated infinite BBP computation with finite periodic computational paths that shadow its observations; preserve the source label, transport, and horizon rather than identifying apparently equal endpoint values.
 
-**Claims:** VFM-01–07 are classical/elementary paper derivations in declared observer classes. VFM-08 is a new-to-SUCC exact bridge from a *single terminal rational BBP state* to the still-OPEN R0 criterion, not a new proof of any statistical bound. VFM-09 is an exact finite rational source certificate, not all-shell evidence. VFM-10 is a conditional normality/topology contrast. π base-16 normality and R0 remain **OPEN**. Mathematical priority, physical metric, quantum vacuum, temperature, entropy and universal numerical optimality of BBP are **not** claimed.
+**Claims:** VFM-01–04 establish the observer norm, alias kernel, finite periodic shadows and source approximation within their stated domains. VFM-05 is the exact single-terminal rational equivalence to the still-OPEN R0 criterion; VFM-06 is a sufficient digit certificate and VFM-07 records finite original-source values. VFM-08 is the topology obstruction and VFM-09 is the conditional normality/order-of-limits comparison. This corrects an introductory numbering error only. No all-shell lower bound, mathematical priority, physical metric, temperature, entropy or universal optimality of BBP is claimed. π base-16 normality and R0 remain **OPEN**.
+
+**Follow-on:** the [endpoint coercivity round](ENDPOINT_COERCIVITY_REPORT.md) audits this bridge, proves the exact geometry of its failure class, calibrates the coherent tail floor, and supplies exact finite certificates for every integer shell from 16 through 4096.
 
 ## 1. A relative norm on source-labelled forms (semidefinite before quotient)
 

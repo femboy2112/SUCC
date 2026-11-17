@@ -1,0 +1,392 @@
+{
+  "status": "ARTIFACT_HASHES",
+  "baseline_commit": "1f04b869182ad68deb764637034d72b19352ca48",
+  "files": [
+    {
+      "path": "observational_succ/duck_bbp.py",
+      "bytes": 2913,
+      "sha256": "85c635ab2b79fa09d198b24317a5d3e812ee1446710b1555387bf47085fb72b0"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/COLD_SHELL_EXCEPTIONAL_SET.md",
+      "bytes": 11579,
+      "sha256": "a172de28772b2c0570a001872df97298dac9c3e4e3492568a204201acc21d4e8"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/ENDPOINT_COERCIVITY_HOLE_CONTRACT.md",
+      "bytes": 4470,
+      "sha256": "a220fb1297847b5af3ad76dbba982fe987e1963f287534336881b3ea860c266b"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/ENDPOINT_COERCIVITY_REPORT.md",
+      "bytes": 16648,
+      "sha256": "f548bcbe1596ec5fb1e24deb2defaaa24f49fcd8adb81fe1e49fff9d19ed57b0"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/ENDPOINT_COERCIVITY_VALIDATION.md",
+      "bytes": 15912,
+      "sha256": "8ff3c1ba1dfc28ab7ef4d0a70f2b4f75ab225f5de6ffdbb1a98f4d500b2817d6"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/ENDPOINT_RECOVERY_MANIFEST.json",
+      "bytes": 6593,
+      "sha256": "8f0fe16891ad97f801e8b024dd62af0c5a079071bd5f812c9f4fa08d1cc0c8de"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/ENDPOINT_SHELL_CERTIFICATES.json",
+      "bytes": 188127,
+      "sha256": "0716e36c9922da002870361a12ad55712b561e48c6389fc1c49999e8d63d290e"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/ENDPOINT_SHELL_REPLAY.json",
+      "bytes": 580,
+      "sha256": "a8515ee77c4c9b73333ec144dfa77696d7b693bede08e225e1c34bebe38e5ccd"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/GAMMA_DILATION_VALIDATION.md",
+      "bytes": 6926,
+      "sha256": "07c3815c282de3d9d9ae248b0ac34d53400a3e7182d67235580619a46a17769c"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/README.md",
+      "bytes": 24789,
+      "sha256": "49ac71962ce0c89a81fda6460c17fc979f0c73eee6cc4e20c38c04e0b0afd08e"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/TERMINAL_TAIL_BASELINE.md",
+      "bytes": 8064,
+      "sha256": "19dd7d3d6bfc03ec120c2c5d7a8915639d2763adbe3a646992a0ef026b71c851"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/TERMINAL_WINDING_ERASURE.md",
+      "bytes": 9446,
+      "sha256": "4b168d75aa23c428374a2ab67626f2bd39b7534015ef199d7adb047a7088afbb"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/VIRTUAL_FIELD_FORM_METRIC.md",
+      "bytes": 18024,
+      "sha256": "780dfc1ba927b0e8340c03e9c553766a818796bd5cb2b36f2b302f967da22187"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_cold_shell_cover.py",
+      "bytes": 2400,
+      "sha256": "e6b7de8ea699f87e9601648619c3daa798bf32d7cf616b948c0feffcfaca5198"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_cold_shell_cover_receipt.json",
+      "bytes": 903,
+      "sha256": "a77aa0d0ad61be38a3d570c17b304e49fee77cb5132959bb6ca2d3f7aab77ca1"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_endpoint_grid.py",
+      "bytes": 1420,
+      "sha256": "cb54155aff092dc1733d851305cb419fcc15fbc1660858d5fb665fd5cd463065"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_tail_calibration.py",
+      "bytes": 2786,
+      "sha256": "d1fab90bd35c3984edb00a682040f8002eeee7921aa6be38065ab034202b0595"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_tail_calibration_receipt.json",
+      "bytes": 1352,
+      "sha256": "32abe68844fa1beb2372a6b30441765540069c82a5f5c42a282af6299bf436b7"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_winding_erasure.py",
+      "bytes": 3819,
+      "sha256": "c9202fdecf3a7d0450cbd088c59f10aeb92ab2cc27cf7d48f5579c66a4f8cddc"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/check_winding_erasure_receipt.json",
+      "bytes": 3086,
+      "sha256": "51ac953a8791f9214ec443f74204033b81244e60385a1cba8d610714ad559705"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/endpoint_grid_receipt.txt",
+      "bytes": 44,
+      "sha256": "cb3c9b6acccf96503f030b91d416cb15bb73a6a976d462be14590b6b06e7b12f"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/execution_setup_receipt.json",
+      "bytes": 1068,
+      "sha256": "88afc7f34162b1a1bb22927fb3ab70e6fea442ba0cbb197dfb4fedbb488f258f"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/finite_cover_receipt.json",
+      "bytes": 903,
+      "sha256": "a77aa0d0ad61be38a3d570c17b304e49fee77cb5132959bb6ca2d3f7aab77ca1"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_coverage.json",
+      "bytes": 42129,
+      "sha256": "787f223d22deec353e6e4782b7b82c8a167be2f8ad1fa1103e7e3ffb526dd161"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_receipt.json",
+      "bytes": 477,
+      "sha256": "08745104c08dcc1c91112bac9c3d126545093e2a4ac6851b0e76f61af6da957e"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_0.json",
+      "bytes": 494,
+      "sha256": "09e23c6f45022f35d1dd0a7e6335abb4a628d5035e1834b8cecc18f8504c7f23"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_0.txt",
+      "bytes": 2007,
+      "sha256": "0530c0e26dcc4049552e19dc186afb1dca018281bb9fd8b0c0f5b40e784da364"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_1.json",
+      "bytes": 494,
+      "sha256": "4e860516121d3a7bf8ae705a088f2a20af22e014ad4fa624fb7188629e6f2364"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_1.txt",
+      "bytes": 1879,
+      "sha256": "736a59a44666d2990456893f61be536e1f00c938cc1915399a5fcf2d6cbfb731"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_2.json",
+      "bytes": 494,
+      "sha256": "37403d8449f4e75ae67600893f3e516f5a5509e8e43e0462e265f21c36833ece"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_2.txt",
+      "bytes": 2016,
+      "sha256": "d2b191b3d47eaa49718be2885ef53b328de170c5d8d6418cae4bdeaa91034ebc"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_3.json",
+      "bytes": 494,
+      "sha256": "023b19c260e1478751d6fdb185032be9a950c68f0b1a1010749b83f342b21613"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_3.txt",
+      "bytes": 2458,
+      "sha256": "a9ac706f9814fbf7c6297595197eeb0a635749c869a321ac110f47813b3d4902"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_4.json",
+      "bytes": 495,
+      "sha256": "fdf2d66280b0849262db1b11e5f4b4d81f739393a76f1a814b8570f2655932f5"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_4.txt",
+      "bytes": 3140,
+      "sha256": "5c6a9fff52473dfe6253a8d04dfcce53dde81c9096803e993550a363a1ace045"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_5.json",
+      "bytes": 495,
+      "sha256": "ef1e7c96f5e9e0c68ed077866fb4811e2f31e6c54d7a6056af2bb839b9b319c6"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_5.txt",
+      "bytes": 2532,
+      "sha256": "c25bccd81738b89a928b29d5bcbe05718fafe5593f207447750e61df005f1a8d"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_6.json",
+      "bytes": 494,
+      "sha256": "387a5633b1553bac3369271baefeb21715ac22e054de037992e3cc3ba5a1316e"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_6.txt",
+      "bytes": 1890,
+      "sha256": "8a991b6a3ee9f765510e450addfa95a842acad30e818697e06349a986a7dbf03"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_7.json",
+      "bytes": 494,
+      "sha256": "2d41d5285ab5343939ca8455da41a0e532a7fbcd23666165469d53243e1db0a9"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/first_full_suite_attempt/full_suite_shard_7.txt",
+      "bytes": 2003,
+      "sha256": "2f2b979113e7e664ec1f8b1f57f5cf53c84c22997cb1178dd6a67fea38dcee5d"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_coverage.json",
+      "bytes": 42129,
+      "sha256": "787f223d22deec353e6e4782b7b82c8a167be2f8ad1fa1103e7e3ffb526dd161"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_receipt.json",
+      "bytes": 477,
+      "sha256": "a07d1ba34c919bdec9731743ca5610c9cc53b3fb64ba70ff838b2bf32088cd31"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_0.json",
+      "bytes": 494,
+      "sha256": "be24d5be0d9f5df235764ed51b5d3f9b0c3bff27b6b5e37fcd2198257ef98163"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_0.txt",
+      "bytes": 2007,
+      "sha256": "ea3176021d14e86b0e170132d5853e4ce9c5ec9eb06d028d80e08357860e2993"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_1.json",
+      "bytes": 494,
+      "sha256": "b6c34ae6062b9ab9432eda06d436223b8210b08d146297589d62e402669ed05f"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_1.txt",
+      "bytes": 1879,
+      "sha256": "1964b4775464c7f4aa92cf362f9e6f7c543d2d4e763769a88ab21a5f1b95762b"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_2.json",
+      "bytes": 494,
+      "sha256": "36214fcc622aeb9eb836a3bee04b480e5d19b553f666fdf846403fdc09045cf9"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_2.txt",
+      "bytes": 2016,
+      "sha256": "92d5bdb04768ae3bae91baccf724aa62e4d82b0f8f04c1e800602ace3e7c6663"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_3.json",
+      "bytes": 494,
+      "sha256": "3479e7cc1bf928e85e4985c199ca1d158598adf7f278ed5708261e10d7bd17f6"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_3.txt",
+      "bytes": 2458,
+      "sha256": "d57cdd96477ae091ad811e57c2e6de30a7af4837d41aeacac1c20f900c748de7"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_4.json",
+      "bytes": 494,
+      "sha256": "85389f239e2aecff44b4560b5a9a70f23314fd10bdf8c355348f8ded1154b771"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_4.txt",
+      "bytes": 1957,
+      "sha256": "53d552843220e4af22c9a29f8f9100edbdfd32560a76ebeeb0c090d6314a84fa"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_5.json",
+      "bytes": 494,
+      "sha256": "5acb00ba3d7d9c5abfafc27be578d28a2a6c7284d50fee3bf43b8544ffcfbab5"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_5.txt",
+      "bytes": 1941,
+      "sha256": "22e6eaae22283eaf08c801492fae3a55ba2656ff94f2e53763d19e4239ab1de3"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_6.json",
+      "bytes": 493,
+      "sha256": "309c41ae11b6ca9ff3d60ce700700f77d63473b55f6b3beb535dbe7d8bcac481"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_6.txt",
+      "bytes": 1890,
+      "sha256": "182f868130351df2443f37ea79d487a5a3e8bb844eaee33c1c55d43943c46e7d"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_7.json",
+      "bytes": 494,
+      "sha256": "3312bdfb4e05d8fcb99850f98d627ed47d5ef32a08faf8b5438f3a02c3f0dd23"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/full_suite_shard_7.txt",
+      "bytes": 2003,
+      "sha256": "60ca0799c94583e95e66c1f53c779c16e2fb503c13bf3561a15cd91990956950"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/gamma_precision.txt",
+      "bytes": 1978,
+      "sha256": "46eef92f30c5dcc55fc85206ee5b00dcc2badc05c199df14bb0585dd2f5304e4"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/lean_skip_receipt.json",
+      "bytes": 562,
+      "sha256": "5776fae99919751f6c21b412a42d0d5531249d4692223b2a692a674174c8e7d4"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/observer.txt",
+      "bytes": 2498,
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/observer_receipt.json",
+      "bytes": 465,
+      "sha256": "8e328997b56fb08415746c99aa50a1a5a7743d3e7a5dfac9b3ec80ecf8b4d858"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/ordinal.txt",
+      "bytes": 3612,
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/ordinal_receipt.json",
+      "bytes": 462,
+      "sha256": "54d2eb3eaa8d59cca5969ccca4d7d799efcd1c98974e59bbd77a20d036873b55"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/precision_repair_receipt.json",
+      "bytes": 1199,
+      "sha256": "4ccda88b7aa0e2ddedf2627e02620bdb5b856fb223c3704bf9585e113d333c47"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/provenance.txt",
+      "bytes": 249,
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/provenance_receipt.json",
+      "bytes": 460,
+      "sha256": "ebde564eaffdc4b8b6c8806e36f452546795c05d6dae669e8604956382de1c3f"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/run_full_suite_shards.py",
+      "bytes": 6662,
+      "sha256": "ad6e09652e49b4886c70e50e7e3ae2f20dc5bc64a98946640fc611c126156dec"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/triangle_hostile_precision.txt",
+      "bytes": 238,
+      "sha256": "b4c140372de3c591e440ef37585313ad690e4f10df7148253f48ca932eb3381f"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/unittest_initial_serial.txt",
+      "bytes": 10360,
+      "sha256": "85924cad3578095e26e80e348451565ae647af2d7a1838726885062edbc30f93"
+    },
+    {
+      "path": "research/2026-11-16/defect_window_tomography/endpoint_checks/unittest_receipt.json",
+      "bytes": 579,
+      "sha256": "41ef8e1ce2307d21f53bc039abef76baff9d250189dfdd821239acbe59708650"
+    },
+    {
+      "path": "scripts/endpoint_shell_certificate.py",
+      "bytes": 5612,
+      "sha256": "da311cf6daf31991a1cdcebd8f1ed6ba41a4a1d9311692c68747f16d1fdc8d23"
+    },
+    {
+      "path": "scripts/verify_endpoint_shell_certificate.py",
+      "bytes": 3385,
+      "sha256": "b0d078df4101f60f3d9b1492f1d17ab9de96b89ee4c2246274d814e9d5f724d5"
+    },
+    {
+      "path": "tests/test_endpoint_coercivity.py",
+      "bytes": 8047,
+      "sha256": "de78b14694510f6b1be93d80d1e8101da30ff7d546c772f501e50b6c495a384c"
+    },
+    {
+      "path": "tests/test_gamma_dilation_seed.py",
+      "bytes": 10396,
+      "sha256": "3053e07b84e10f2f9bb000d95f32db29d978ea99df1ceb501fac0c79ee2cd674"
+    },
+    {
+      "path": "tests/test_triangle_genesis_repair.py",
+      "bytes": 10344,
+      "sha256": "84ad6eaed0e9a9646ee3d6faa0f7d97f62061a8c05d86e8dfc3e0fce9024569e"
+    }
+  ],
+  "scope": "Hashes bind audited proof text, executed instruments, exact witnesses and preserved validation history. They do not prove theorems. The unchanged duck_bbp source dependency is bound explicitly. This manifest excludes itself."
+}

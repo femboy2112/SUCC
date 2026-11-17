@@ -90,13 +90,37 @@ These reinforce the *proved order comparison*: the known error ceiling is insuff
 
 ## Committed finite test suite and what has **not** been claimed
 
-The new standard-library test module [tests/test_gamma_dilation_seed.py](../../../tests/test_gamma_dilation_seed.py) has focused symbolic-rational models (Gaussian-rational pairs) and declared-tolerance Simpson/complex controls. Run it via:
+The test module [tests/test_gamma_dilation_seed.py](../../../tests/test_gamma_dilation_seed.py) has focused symbolic-rational models (Gaussian-rational pairs) and declared-tolerance Simpson/complex controls. The endpoint continuation below adds explicit mpmath precision to two comparisons. Run it via:
 
 ~~~sh
 python -m unittest discover -s tests -p 'test_gamma_dilation_seed.py' -v
 ~~~
 
 **Not executed from this session:** that actual GitHub-hosted Python file as a complete unittest module, the full root unittest suite, the three other AGENTS.md gates, Main XXIV/XXV/XXVI research gates, Lean proof compilation, and an external source-specific experiment. GitHub-hosted CI may be running separately; its status must be checked against the exact final PR head before making any pass claim. No imaginary CI outcome is recorded here.
+
+## Endpoint continuation: actual module replay and precision repairs
+
+The later endpoint-coercivity round executed the committed module under
+Python 3.12.14 and mpmath 1.3.0. Its first replay found two numerical failures:
+
+- Reassociating binary floating-point products at large magnitude broke an
+  absolute eleven-decimal-place check of logarithmic transport.
+- At large clocks, binary floating point rounded `1+q^2` to `q^2`, erasing
+  the strict inequality `1/(1+q^2)<1/q^2`.
+
+The repair retains the exact rational transport checks and evaluates the
+two numerical comparisons inside `mp.workdps(70)`. The first comparison now
+requires an absolute difference below `1e-60`; the second retains its original
+strict inequality. Neither repair changes a source law or weakens a theorem.
+The repaired focused module ran **13 tests, all passing**. The initial failed
+full-suite logs are retained in
+[the first complete attempt](endpoint_checks/first_full_suite_attempt/full_suite_shard_4.txt).
+See [the endpoint validation record](ENDPOINT_COERCIVITY_VALIDATION.md) for
+the subsequent complete repository replay and other gates.
+
+The earlier “not executed” paragraph describes the original Gamma session;
+this dated continuation supplies the actual later replay. It does not
+retroactively claim that the earlier session executed those checks.
 
 ## Verdict and next probe
 

@@ -1,0 +1,31 @@
+{
+  "rational_case_checks": 836,
+  "all_exact_checks_passed": true,
+  "sharp_289_control": "8/17, alternating residual +/-8/17 and |a|=8",
+  "mutant_288_rejected": true,
+  "fixed_nonunit_energy": "1/225",
+  "forced_zero_cases": [
+    {
+      "B": 4,
+      "M": 8,
+      "energy": "217437334293841/288230376151711744"
+    },
+    {
+      "B": 5,
+      "M": 12,
+      "energy": "3647993124761342463313/8462480737302404222943232"
+    },
+    {
+      "B": 7,
+      "M": 21,
+      "energy": "262865607637205015528749385905960275281/1219572003044643453052734593035457269858304"
+    },
+    {
+      "B": 16,
+      "M": 32,
+      "energy": "17227160462111867897692119754733015918595409/91343852333181432387730302044767688728495783936"
+    }
+  ],
+  "script_sha256": "e6b7de8ea699f87e9601648619c3daa798bf32d7cf616b948c0feffcfaca5198",
+  "scope": "Finite calibration; dimension and residuality rest on paper proof"
+}

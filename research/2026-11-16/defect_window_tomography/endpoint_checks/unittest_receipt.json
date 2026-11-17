@@ -1,0 +1,20 @@
+{
+  "gate": "unittest",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "exit_code": 124,
+  "duration_seconds": 900.033,
+  "log_sha256": "e0214655cad25215a30177cebdb94bfabe362216d11e3bdd59342a4d9543fc2d",
+  "status": "INCOMPLETE_TIMEOUT",
+  "setup": "Initial serial attempt omitted documented PYTHONPATH=.; see execution_setup_receipt.json.",
+  "published_log_sha256": "85924cad3578095e26e80e348451565ae647af2d7a1838726885062edbc30f93",
+  "log_normalization": "execution root replaced with <repo>"
+}

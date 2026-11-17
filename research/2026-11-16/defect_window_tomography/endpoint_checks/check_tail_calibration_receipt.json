@@ -1,0 +1,50 @@
+{
+  "square_marker_location_checks": 9991,
+  "generic_norm_controls": 196,
+  "zero_error_mutations_rejected": 28,
+  "source_bound_shells": 8,
+  "source_polynomial_checks": 128,
+  "coherent_partial_diagnostics": [
+    {
+      "B": 1,
+      "scaled_coherent_partial": 2.8963671922725666e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 2,
+      "scaled_coherent_partial": 4.044867399014583e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 3,
+      "scaled_coherent_partial": 4.569359767795119e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 16,
+      "scaled_coherent_partial": 5.670453471188724e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 31,
+      "scaled_coherent_partial": 5.818714128163187e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 64,
+      "scaled_coherent_partial": 5.9029251354957093e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 128,
+      "scaled_coherent_partial": 5.943159182585651e-08,
+      "critical_constant": 5.983838848039216e-08
+    },
+    {
+      "B": 512,
+      "scaled_coherent_partial": 5.973626717066843e-08,
+      "critical_constant": 5.983838848039216e-08
+    }
+  ],
+  "scope": "exact finite calibration; not a pi statistical theorem"
+}

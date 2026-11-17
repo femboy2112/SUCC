@@ -1,0 +1,15 @@
+{
+  "tests_run": 2,
+  "skipped": [
+    {
+      "id": "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R26_survives_reversed_cost_and_noncommutative_language_instances",
+      "reason": "pinned Lean 4.14.0 not available"
+    },
+    {
+      "id": "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R27_refutes_must_is_not_may_control_as_a_falsity_control",
+      "reason": "pinned Lean 4.14.0 not available"
+    }
+  ],
+  "successful": true,
+  "scope": "Audit of inherited conditional Lean skips; no Lean proof compilation was performed."
+}
