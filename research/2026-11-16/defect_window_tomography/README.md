@@ -8,6 +8,8 @@
 
 
 
+**2026-11-16 adaptive Gamma ice-climb:** [A→B→C microscopic Gamma transport and the R0 boundary](ADAPTIVE_GAMMA_ICE_CLIMB.md) constructs a forward-only scale-renormalized Gamma window with a stable seed, exact signed nonlinear compression defect, rigorous |c(π/16)|>1/5 decoder margin and source-prefix O(n^-2) calibration. [Exact tests and receipts](ADAPTIVE_GAMMA_VALIDATION.md) include a locked rational and sparse irrational nonnormal source that defeat any inference from path coherence alone to R0. No original source or main state is changed.
+
 **2026-11-16 Gamma-dilation continuation:** [Gamma Dilation Bridge — A Causal Analytic Seed from a Boundary Zero](GAMMA_DILATION_ANALYTIC_SEED.md) identifies the separate Fourier character, radix generator and Gamma/Mellin weight; derives a forward-only conditioned-Gamma endpoint identity, a source-typed transported jet, exact mixed-term compensation, shape-two transport and an explicit inverse-resolution barrier. This is a conditional added observer; it does not promote the original BBP R0 or π normality.
 
 **2026-11-16 analytic-seed continuation:** [Transported Germs and Observer Differentials — the A → B → C Coherence Contract](TRANSPORTED_GERMS_AND_JETS.md) gives an exact moving-chart differential/Duhamel identity, a first-jet continuation law for genuine-prime compensation, an independently checkable prime-inventory collision, and the BBP real-lift derivative that separates otherwise identical integer-time circle observations. Arbitrary analytic functions require full germs or additional governing equations; monodromy/path history stays explicit.
