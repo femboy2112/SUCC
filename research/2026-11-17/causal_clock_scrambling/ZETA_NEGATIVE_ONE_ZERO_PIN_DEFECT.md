@@ -91,6 +91,20 @@ hence
 
 **ZPD-02 (EXACT zero-set representation):** the entire zero set of ξ determines the completed scalar that also appears in the original BBP null jet. This is an *existing Hadamard encoding combined with two special-value identities*, not evidence that the BBP recurrence determines the real parts of the zeros. A scalar equality at one fixed argument cannot distinguish RH-true from RH-false possible zero configurations with the same completed ξ value.
 
+### A zero-valued observation can retain a nonzero analytic jet
+
+For **any** nontrivial zero \(\rho\) of completed \(\xi\), let \(m\ge1\) denote its *actual* finite multiplicity. Holomorphic local factorization gives
+\[
+\boxed{
+\xi(w)=(w-\rho)^m h_\rho(w),\qquad h_\rho(\rho)\ne0.
+}
+\]
+The point-value channel reports \(\xi(\rho)=0\), while its first nonzero derivative channel reports
+\[
+\boxed{\xi^{(m)}(\rho)=m!\,h_\rho(\rho)\ne0.}\tag{ZPD7a}
+\]
+This is a rigorous **null first observation / nonzero higher-order germ** analogous in form to \(G_\infty(0)=0,\ G_\infty'(0)=16/\pi\). It does **not** presume every nontrivial zero is simple (that is itself unproved), identify an arithmetic seed with a zero, or characterize which side of the critical line a zero occupies. If \(\rho\) is not independently located, these jets are not freely available measurements.
+
 ## 4. Critical-line projection and the genuine nonnegative bookkeeping defect
 
 Write any upper-half nontrivial zero as
