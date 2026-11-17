@@ -289,6 +289,6 @@ A distinguished *source-general impossibility* is now certified: neither finite 
 | TW-26 | **OPEN / UNVERIFIED** | Original exact four-pole terminal defect density uniformly positive on every sufficiently late B |
 | R0 / π normality / RH | **OPEN** | R0 is weaker than all-mode base-16 normality; no promotion |
 
-**Reproducibility:** the exact stdlib [test_terminal_wall_crucible.py](../../../../tests/test_terminal_wall_crucible.py), [VALIDATION](VALIDATION.md), [SOURCE_MAP](SOURCE_MAP.md) and [NEXT](NEXT.md) separate executed arithmetic, paper proofs and all outstanding source-selection debt. The first two levels are shared mathematical definitions and are not independent witnesses.
+**Reproducibility:** the exact stdlib [test_terminal_wall_crucible.py](../../../tests/test_terminal_wall_crucible.py), [VALIDATION](VALIDATION.md), [SOURCE_MAP](SOURCE_MAP.md) and [NEXT](NEXT.md) separate executed arithmetic, paper proofs and all outstanding source-selection debt. The first two levels are shared mathematical definitions and are not independent witnesses.
 
 **User's virtual-zero interpretation:** The terminal norm has two oriented zero-phase basins (all 0, all F) and paid transitions/in-between digits. This is a *precisely defined finite dynamical quotient with a computable defect norm*, not a literal quantum vacuum, thermodynamic absolute zero, or proof that π's digits are random.
