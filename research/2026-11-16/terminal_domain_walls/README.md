@@ -4,6 +4,8 @@
 
 > **One original source. One finite rational endpoint for each shell. A family of backward computational probes. A precise distance from the zero-phase reference. Prove the norm cannot collapse on arbitrarily late shells, and R0 follows.**
 
+**Full prior-work preservation:** [RESEARCH_ATLAS](RESEARCH_ATLAS.md) links all nine canonical source papers in still-open draft PR #657 and this independent offensive.
+
 **Read first:** [THEOREMS](THEOREMS.md) (mathematics), [NEXT](NEXT.md) (unpaid arithmetic), [VALIDATION](VALIDATION.md) (executed receipts), [SOURCE_MAP](SOURCE_MAP.md) (provenance), [CLAIM_LEDGER](CLAIM_LEDGER.json) (statuses), [exact tests](../../../tests/test_terminal_wall_crucible.py).
 
 ## Result and claim status
