@@ -185,6 +185,13 @@ An OpenAI September 24, 2026 [preprint](https://github.com/openai/math/tree/main
 \]
 This gives the restricted exponent \(v_{16}(\pi)\le1\), matching the *consequence* of the previously studied critical-quintic floor, **without proving that floor or R0**. The Kempner control (BPC12) establishes that even the stronger badly-approximable hypothesis is insufficient for any positive dyadic-shell average.
 
+**Further conditional critical-horizon implication.** Combining BPC-10's cold-run lemma with the claimed \(\mu(\pi)=2\), for any fixed \(\eta>0\) and all sufficiently large start clocks \(n\), the authentic π orbit cannot remain *strictly inside* the \(1/17\) neighborhood for \(L\ge(1+\eta)n\) consecutive ticks. Indeed a cold run would imply
+\[
+\left|x-\frac{p}{16^n}\right|
+<\frac{16^{-(n+L-1)}}{17},
+\]
+which is eventually a \(q^{-(2+\eta/2)}\)-type approximation with \(q=16^n\), in contradiction with \(\mu(x)=2\). **This controls exceptionally long contiguous cold runs, not their aggregate density.** Kempner's failing shells contain cold runs of length \(B-1\) starting at \(n=B\), showing why the critical length ratio 1 remains compatible with badly approximable sources and failure of R0.
+
 If the external theorem is independently accepted, its consequences should be integrated into the restricted-exponent claim ledger with source provenance; it must not be silently promoted to π normality or a proof of Main XXVI R0.
 
 ## 8. Source-faithful next offensive, with verdict-changing tests
