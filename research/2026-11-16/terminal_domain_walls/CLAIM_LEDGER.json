@@ -1,0 +1,112 @@
+{
+  "schema": "SUCC-terminal-domain-wall-claim-ledger-v1",
+  "date": "2026-11-16",
+  "baseline": {
+    "repository": "femboy2112/SUCC",
+    "main": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+    "related_draft_pr": 657
+  },
+  "status_policy": "Paper proof + executed exact finite controls are separate. Original-source positive all-B event density and all-mode π normality remain OPEN.",
+  "claims": [
+    {
+      "id": "TW-01",
+      "status": "PROVED PAPER",
+      "scope": "Universal two-sided digit-wall norm coercivity for U=C+u and any integer B>=1",
+      "probes": [
+        "Exact all length-three words, 3 fractional controls",
+        "independent recurrence of reversed digits"
+      ],
+      "source": "THEOREMS.md §2"
+    },
+    {
+      "id": "TW-02",
+      "status": "EXACT EQUIVALENCE / R0 OPEN",
+      "scope": "Actual original zero-seeded four-pole π R0 iff liminf(D_B+J_B)/B>0",
+      "probes": [
+        "Inherit VFM exact rational R0 bound",
+        "TW-01 coefficient bounds"
+      ],
+      "source": "THEOREMS.md TW7-8"
+    },
+    {
+      "id": "TW-03",
+      "status": "PROVED PAPER",
+      "scope": "One completed tail carry changes D by <=1, J by <=2",
+      "probes": [
+        "Exact source C+1 suffix controls"
+      ],
+      "source": "THEOREMS.md TW10-11"
+    },
+    {
+      "id": "TW-04",
+      "status": "PROVED PAPER",
+      "scope": "Low-energy terminal B-words form a subexponential-size symbolic language when E_B=o(B)",
+      "probes": [
+        "Exhaustive 4096 length-three word counts",
+        "combinatorial choose/flip upper bound"
+      ],
+      "source": "THEOREMS.md TW12-13",
+      "not_claimed": "Shannon entropy of π or physical heat"
+    },
+    {
+      "id": "TW-05",
+      "status": "PROVED SOURCE PRIME FACT / CRT-ONLY REFUTED",
+      "scope": "If p=8m-7 prime then p divides reduced denominator exactly once; finite odd CRT residue data still allow locked suffixes",
+      "probes": [
+        "Actual U_m for small fresh prime instances",
+        "odd Q and 0/F CRT mutants"
+      ],
+      "source": "THEOREMS.md TW14-16"
+    },
+    {
+      "id": "TW-06",
+      "status": "PROVED EXACT COUNTERMODEL",
+      "scope": "Same terminal phase, fractional state, reduced denominator and numerator residues, but altered integer winding and zero low suffix",
+      "probes": [
+        "Five authentic BBP terminal clones B=16..256",
+        "exact u²/(255B) energy identity"
+      ],
+      "source": "THEOREMS.md TW17-18",
+      "not_claimed": "Full authentic BBP history"
+    },
+    {
+      "id": "TW-07",
+      "status": "PROVED PAPER / FINITE MUTANT TESTED",
+      "scope": "For every finite M a strictly positive decreasing zero-seeded rational forcing matches authentic first M poles and leading 15/(64n²) source asymptotic, yet rational locked endpoint",
+      "probes": [
+        "Exact construction M=1,8,32,64",
+        "source seam positive polynomial",
+        "Gamma leading n^-2 expansions"
+      ],
+      "source": "THEOREMS.md TW19-25",
+      "not_claimed": "Mutant is original full four-pole recurrence"
+    },
+    {
+      "id": "TW-26",
+      "status": "UNVERIFIED / OPEN",
+      "scope": "Authentic zero-seeded original four-pole terminal E_B=D_B+J_B has liminf E_B/B>0",
+      "required_probes": [
+        "Arithmetic signed source-cofactor and quotient-winding lower bound",
+        "same-seed all source poles and changed-seed falsifiers",
+        "predictive new shell holdout after preregistration"
+      ],
+      "source": "THEOREMS.md §6"
+    },
+    {
+      "id": "R0",
+      "status": "OPEN",
+      "scope": "Re W_B(1)<=1-eta for every sufficiently late B",
+      "implication": "TW-26 would establish it"
+    },
+    {
+      "id": "PI_NORMALITY",
+      "status": "OPEN",
+      "scope": "Weyl cancellation at all nonzero harmonics h"
+    },
+    {
+      "id": "RH",
+      "status": "OPEN",
+      "scope": "No completed Weil positivity established by terminal-domain-wall statistics"
+    }
+  ]
+}
