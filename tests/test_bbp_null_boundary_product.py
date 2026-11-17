@@ -82,14 +82,18 @@ class NullBoundaryProductTests(unittest.TestCase):
                 self.assertEqual(first*later,product(N,s))
 
     def test_all_higher_jets_at_null_seed(self):
-        # Taylor around zero: G_N(s)=s/P_N - s²/P_N² + ...
+        # Compute coefficients of the truncated formal identity
+        # (P_N+s)*G_N(s)=s, independently of the closed jet formula.
         from math import factorial
         for N in (1,2,5,10):
             p=endpoint(N)
+            coefficient=[F(0)]
             for k in range(1,8):
-                derivative=F((-1)**(k-1)*factorial(k),1)/p**k
-                self.assertEqual(derivative,F((-1)**(k-1)*factorial(k),p**k))
-            self.assertEqual(F(1)/p,(F(1)/endpoint(1))*(endpoint(1)/p))
+                target=F(1) if k==1 else F(0)
+                coefficient.append((target-coefficient[k-1])/p)
+                derivative=factorial(k)*coefficient[k]
+                self.assertEqual(derivative,(-1)**(k-1)*factorial(k)/p**k)
+            self.assertEqual(coefficient[1],(F(1)/endpoint(1))*(endpoint(1)/p))
 
     def test_jet_coefficient_dual_number_product(self):
         # In Q[eps]/eps², only the coefficient of eps survives.
