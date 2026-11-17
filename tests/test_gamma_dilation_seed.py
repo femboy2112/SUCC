@@ -196,8 +196,12 @@ class GammaDilationSeedTests(unittest.TestCase):
             self.assertLessEqual(
                 gap, abs(k) / (2 * math.pi * 16 ** n * abs(x * (x + k))) *
                 (1 + 1e-13))
-            # Signed local jet contrast grows despite Gamma gap shrinking.
-            self.assertEqual(16 ** n * k, 16 ** n * k)
+            # Signed jet contrast grows while the compressed Gamma gap shrinks.
+            jet_contrast = 2 * math.pi * math.log(16) * (yp - y)
+            expected_jet = 2 * math.pi * math.log(16) * 16 ** n * k
+            self.assertAlmostEqual(jet_contrast, expected_jet,
+                                   delta=abs(expected_jet) * 1e-12)
+            self.assertGreater(abs(jet_contrast), gap)
 
     def test_exact_inverse_error_amplification(self):
         y = 5.0
