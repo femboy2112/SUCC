@@ -85,11 +85,24 @@ def original_energy(B):
     return polynomial_quadrature(original_phases(B))
 
 
-def certified_weyl_bound_from_energy(B,h):
-    """Theorem: |W_B^{pi}(h)| <= this upper bound, valid all h!=0."""
+def _rational_sqrt_upper(v):
+    from math import isqrt
+    if v<0: raise ValueError('squared energy must be nonnegative')
+    digits=10**8
+    up=isqrt((v.numerator*digits*digits+v.denominator-1)//v.denominator)
+    return F(up+1,digits)
+
+
+def certified_weyl_bound_from_energy(B,h,q=None):
+    """Exact rational bound for the actual pi shell Fourier mode h != 0.
+
+    Uses a certified rational upper root q >= sqrt(original_energy(B)).
+    """
     if type(h) is not int or h==0:raise ValueError('nonzero harmonic integer')
-    # Caller retains exact Q_B; avoid float until mathematical reporting.
-    return (original_energy(B),shadow_tail(B), F(h*h,1)/FOURIER_FLOOR)
+    v=original_energy(B)
+    q=_rational_sqrt_upper(v) if q is None else F(q)
+    if q<0 or q*q<v:raise ValueError('q must certify sqrt(energy)')
+    return min(F(1),F(h*h,1)*(q+shadow_tail(B))/FOURIER_FLOOR)
 
 
 def quantitative_interval_discrepancy(B,H,q=None):
@@ -101,13 +114,7 @@ def quantitative_interval_discrepancy(B,H,q=None):
     """
     if type(H) is not int or H<1:raise ValueError('positive cutoff')
     v=original_energy(B)
-    if q is None:
-        from math import isqrt
-        # Rational ceiling at 1e-8 resolution; remain exact.
-        digits=10**8
-        up=isqrt((v.numerator*digits*digits+v.denominator-1)//v.denominator)
-        q=F(up+1,digits)
-    q=F(q)
+    q=_rational_sqrt_upper(v) if q is None else F(q)
     if q<0 or q*q<v:raise ValueError('q must certify sqrt(energy)')
     return F(3,H+1) + F(3,2*FOURIER_FLOOR)*H*(H+1)*(q+shadow_tail(B))
 
