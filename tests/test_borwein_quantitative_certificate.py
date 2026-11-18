@@ -2,7 +2,7 @@
 import unittest
 from fractions import Fraction as F
 from math import pi,sin
-from borwein_quantitative_certificate import (C, DELTA, HAAR_MEAN, FOURIER_FLOOR,
+from observational_succ.borwein_quantitative_certificate import (C, DELTA, HAAR_MEAN, FOURIER_FLOOR,
      source_r,U,original_phases,L,swept,shadow_tail,origin_breakpoints,
      polynomial_quadrature,original_energy,quantitative_interval_discrepancy,
      discrete_interval_discrepancy)
@@ -79,18 +79,18 @@ class QuantitativeBorweinProofTests(unittest.TestCase):
 
 class BorweinAutocorrelationAndDigitTests(unittest.TestCase):
     def test_autocorrelation_complementarity(self):
-        from borwein_quantitative_certificate import autocorrelation,polynomial_quadrature,autocorrelation_energy
+        from observational_succ.borwein_quantitative_certificate import autocorrelation,polynomial_quadrature,autocorrelation_energy
         for t in (F(0),F(1,10),F(1,7),F(1,2),F(17,18)):
             self.assertEqual(autocorrelation(t),autocorrelation(-t))
             self.assertGreaterEqual(autocorrelation(t),0)
-        from borwein_quantitative_certificate import C,DELTA
+        from observational_succ.borwein_quantitative_certificate import C,DELTA
         exact_mean_square=2*C*C*(F(1,2)-DELTA)**5/5
         self.assertEqual(autocorrelation(0),exact_mean_square)
         for phases in ((F(0),),(F(0),F(1,2)),(F(1,7),F(2,9),F(4,17)),original_phases(4)):
             self.assertEqual(autocorrelation_energy(phases),polynomial_quadrature(phases))
 
     def test_locked_sources_fail_full_normality_energy(self):
-        from borwein_quantitative_certificate import autocorrelation_energy
+        from observational_succ.borwein_quantitative_certificate import autocorrelation_energy
         singleton=F(335872,304434045)
         for B in (2,4,8,16):
             self.assertEqual(autocorrelation_energy((F(0),)*B),singleton)
@@ -102,7 +102,7 @@ class BorweinAutocorrelationAndDigitTests(unittest.TestCase):
             self.assertLess(autocorrelation_energy(tuple(F(i,n) for i in range(n))),singleton)
 
     def test_source_rational_exact_hex_word_certificates(self):
-        from borwein_quantitative_certificate import certified_hex_words
+        from observational_succ.borwein_quantitative_certificate import certified_hex_words
         for B in (4,8,16,32,64):
             for k in (1,2,3):
                 counts,ambig=certified_hex_words(B,k)
@@ -113,7 +113,7 @@ class BorweinAutocorrelationAndDigitTests(unittest.TestCase):
                 self.assertLessEqual(len(ambig),B)
 
     def test_no_false_hex_ambiguities_in_finite_in_sample_BBP(self):
-        from borwein_quantitative_certificate import certified_hex_words
+        from observational_succ.borwein_quantitative_certificate import certified_hex_words
         for B in (32,64,128):
             for k in (1,2,3,4):
                 counts,ambig=certified_hex_words(B,k)
@@ -121,7 +121,7 @@ class BorweinAutocorrelationAndDigitTests(unittest.TestCase):
                 self.assertEqual(sum(counts.values()),B)
 
     def test_direct_zero_seed_words_agree_with_independent_source_recurrence(self):
-        from borwein_quantitative_certificate import certified_hex_words
+        from observational_succ.borwein_quantitative_certificate import certified_hex_words
         for B in (4,8,16,32):
             counts,ambig=certified_hex_words(B,1)
             if ambig: continue
