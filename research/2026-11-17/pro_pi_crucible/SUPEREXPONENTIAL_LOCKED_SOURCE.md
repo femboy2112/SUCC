@@ -461,3 +461,35 @@ winding to bound the source-selected endpoint away from the low-wall
 language. Preserving every finite pole and every real asymptotic coefficient
 is insufficient in the enlarged meromorphic source class; proving source
 identity is also insufficient by itself to establish the missing density.
+
+## 8. Closing-frontier addendum: the discrete backward seed (H-05)
+
+The new FQR-10 at 9ff8544c799b5e4c8eb1db33127438bc3f221045 asserts that this
+counterfeit's backward seed is -q. For the explicit meromorphic extension
+constructed in H-03, that assertion is false. Its interpolant is
+
+\[
+F(z)=\sum_{n>M}\delta_n e^{-(z-n)^2}\operatorname{sinc}(\pi(z-n)).
+\]
+
+For every integer k<=0, each k-n is a nonzero integer, so every sinc factor
+is zero. The established locally uniform convergence gives F(k)=0. Hence
+
+\[
+\widetilde r_{\rm mer}(-m)=r(-m)\quad(m\ge0),\qquad
+\sum_{m\ge0}16^m\widetilde r_{\rm mer}(-m)
+=\sum_{m\ge0}16^m r(-m)=0\quad\text{in }\mathbb Q_2.
+\]
+
+The last identity uses the authentic null-seed theorem with the repaired
+logarithmic sign; see audits/ADELIC_HISTORY_AUDIT.md. Thus the forward
+radix-rational lock and the zero discrete backward seed coexist for this
+extension. This gives no analytic continuation on Z_2 and no integrality
+claim for the positive-index perturbations. The complex meromorphic clock,
+its rational integer samples, and a Q_2 analytic clock are distinct objects.
+A real bound on delta_n also does not determine its 2-adic valuation.
+
+This is a paper deduction from H-03, not a newly executed numerical test.
+The latest-head claim and its exact scope are retained in
+audits/ADELIC_9ff8544c_DELTA_ADDENDUM.md. The stronger hypothesis of a common
+authenticated 2-adic analytic clock is not disproved by this counterfeit.

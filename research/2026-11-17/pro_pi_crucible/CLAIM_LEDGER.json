@@ -26,6 +26,14 @@
       "normality_novelty_tax": "Auxiliary arithmetic only; does not rule out authentic low-wall shells."
     },
     {
+      "id": "EPS-FQR",
+      "state": "Disclosed",
+      "kind": "credited_and_corrected_frontier_refinement",
+      "statement": "The late FQR lane restriction, with normalization repaired to F=16C, gives finite certificate p^2>=19H(K,r)^2 and eventual survival for A>4log2+6.",
+      "proof": "EFFECTIVE_PRIME_SURVIVAL.md",
+      "scope": "Finite certificate is elementary; asymptotic constant uses fixed-modulus PNT. Credit FQR-05; no optimal-threshold or R0 claim."
+    },
+    {
       "id": "CG-01-PRIOR",
       "state": "Disclosed",
       "kind": "inherited_not_new",
@@ -57,7 +65,7 @@
       "kind": "instrument_stability",
       "statement": "D_arc(mu)^5 <= (144324288/16807) integral |L*(mu-Haar)|^2; exponent 1/5 is sharp.",
       "proof": "BORWEIN_ENERGY_STABILITY.md",
-      "scope": "Direct semiconcavity/inverse proof, no Erdos-Turan import; improves inspected #663 instrument exponent without energy decay.",
+      "scope": "Direct semiconcavity/inverse proof and sharpness example; improves #663 V^(1/6). Late adelic ANC-11 also yields V^(1/5), so no exclusive exponent priority claim. No authentic energy decay.",
       "normality_novelty_tax": "A; C when evaluated"
     },
     {
@@ -122,9 +130,84 @@
       "id": "FINITE-EXACT-PROBES",
       "state": "Observed",
       "kind": "finite_implementation_validation",
-      "statement": "27 focused new tests, 145 separate edge-audit cases, known prime cancellations, 10 cross-implementation exact swept maxima and the listed parent replays passed.",
+      "statement": "27 focused new tests, 145 separate edge-audit cases, known prime cancellations, 10 cross-implementation exact swept maxima and the listed parent replays passed. The configured full suite ran 14503 tests with two pinned-Lean skips; later standalone exact audits are separately scoped in VALIDATION.md.",
       "proof": "TESTS.md",
       "scope": "See receipts for exact commands; no all-B inference from a finite run."
+    },
+    {
+      "id": "M-01-03",
+      "state": "Disclosed",
+      "kind": "joint_original_source_arithmetic",
+      "statement": "For the EPS-certified mesoscopic inventory, log q=O(B/log B). Preserving reduced Q, the 2-adic shell residue and selected prime principal parts permits exactly phi(q) terminal words eventually, with a complete finite progression and conditional zero-word criterion.",
+      "proof": "MESOSCOPIC_CRT_RIGIDITY.md",
+      "scope": "No exclusion of authentic low-wall words; q<=16^B is required for injectivity and the single-residue zero-word test.",
+      "normality_novelty_tax": "Auxiliary arithmetic, not D/E."
+    },
+    {
+      "id": "M-04",
+      "state": "Disclosed",
+      "kind": "credited_frontier_corollary",
+      "statement": "For the actual surviving simple-prime inventory credited to FQR-06/07 at 9ff8544c, the exact count is phi(q^ram)<=exp(O(sqrt B)); an elementary prime-power bound proves the cofactor size.",
+      "proof": "MESOSCOPIC_CRT_RIGIDITY.md",
+      "scope": "Stronger supplied inventory; not a theorem that all born primes above sqrt(16B) survive. No signed phase saving.",
+      "normality_novelty_tax": "Credited inventory plus exact-classification corollary; not D/E."
+    },
+    {
+      "id": "ANC12-REDUCED-DENOMINATOR",
+      "state": "Refuted",
+      "kind": "exact_counterexample_to_competing_claim",
+      "statement": "The published R_sharp=N mod(16^B Pi_star) construction always preserves the reduced denominator Q.",
+      "counterexample": "Literal B=3: gcd(R_sharp,Q)=3, so shadow denominator Q/3.",
+      "proof": "ANC12_EVENTUAL_REPAIR.md",
+      "scope": "Historical97c7433 claim persists unchanged at9ff8544c; finite exact failure, no original-source R0 refutation."
+    },
+    {
+      "id": "R-ANC12",
+      "state": "Disclosed",
+      "kind": "corrected_eventual_projection_counterexample",
+      "statement": "A primitive progression sieve repairs exact-denominator shadow preservation for all sufficiently large B with the stated small selected prime bands; all-zero terminal words coexist with those projections.",
+      "proof": "ANC12_EVENTUAL_REPAIR.md",
+      "scope": "Imports mainCG-01 and fixed-modulus prime-band asymptotics. No explicit B0 or all-B>=2 claim; shell-dependent rational shadows, not authentic histories."
+    },
+    {
+      "id": "ADELIC-SIGN-CHARACTER",
+      "state": "Refuted",
+      "kind": "exact_symbolic_claim_corrections",
+      "statement": "ANC7 printed primitive differentiates to its displayed authentic series, and ANC13 Gaussian sum equals4(alpha3-alpha4) on its full domain.",
+      "proof": "LATE_FRONTIER_AUDIT.md",
+      "scope": "The corrected null-seed theorem and eight-column partial-fraction matrix survive; no normality conclusion."
+    },
+    {
+      "id": "H-05",
+      "state": "Disclosed",
+      "kind": "source_extension_counterfeit_property",
+      "statement": "The H-03 complex meromorphic extension equals r at every nonpositive integer, hence its discrete 2-adic backward seed is0 despite its radix-rational forward completion.",
+      "proof": "SUPEREXPONENTIAL_LOCKED_SOURCE.md",
+      "scope": "Uses repaired authentic null-seed theorem. Does not construct a common analytic clock on Z2 or establish positive-index2adic integrality."
+    },
+    {
+      "id": "FQR10-H-BACKWARD-SEED",
+      "state": "Refuted",
+      "kind": "incorrect_hostile_source_attribution",
+      "statement": "The explicit H-03 extension has backward seed -q rather than0.",
+      "counterexample": "H-05, sinc vanishing at every nonpositive integer.",
+      "scope": "Does not refute a stronger analytic-clock source discriminator."
+    },
+    {
+      "id": "FQR-CORRECTIONS",
+      "state": "Disclosed",
+      "kind": "bounded_audit_and_corrected_identities",
+      "statement": "Printed valuation range and normalized denominator bound have exact small counterexamples. Top-block arithmetic requires modular wrap; corrected actual-simple-prime fiber and lane-height bounds survive.",
+      "proof": "audits/FQR_FRONTIER_ADDENDUM.md",
+      "scope": "Generic wrap example is not an authentic-source counterexample. No all-B no-wrap conclusion from the finite scan."
+    },
+    {
+      "id": "SOFTWARE-GATES",
+      "state": "Observed",
+      "kind": "execution_validation",
+      "statement": "Configured local full suite:14503 tests run,2 pinned-Lean skips,exit0. First published1d33174c hosted checks:19 successes.",
+      "proof": "VALIDATION.md",
+      "scope": "New final documentation/standalone probes retain separately scoped receipts. Software gates do not certify universal mathematical proofs."
     },
     {
       "id": "PI-TERMINAL-COERCIVITY",
@@ -157,7 +240,7 @@
   ],
   "diagnostics": {
     "contact": "Source and tool contact established at pinned heads.",
-    "phi_pathway": "Local lemmas resolved; source-to-winding statistical pathway unresolved.",
+    "phi_pathway": "Local prime, CRT and observer lemmas resolved; authentic selection inside the shrinking word fiber and signed cancellation unresolved.",
     "sigma_source_map": "Adequate for stated local theorems and controls; no claim it characterizes normality.",
     "rho_commitment": "Competitive motivation supplies no evidential weight.",
     "mu_probes": "Finite exact probes available; universal original-source estimate remains unproved.",

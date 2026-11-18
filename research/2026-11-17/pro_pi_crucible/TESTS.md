@@ -113,3 +113,31 @@ check. It is not itself a failed repository-catalog assertion.
 
 Lean was not on the local PATH. No Lean theorem, formal certificate,
 blind external review or full donor-branch integration is claimed.
+
+## 4. Late-frontier exact discrimination
+
+From the repository root, after fetching the audited object 97c7433:
+
+~~~sh
+python research/2026-11-17/pro_pi_crucible/audit_adelic_pinned.py
+python research/2026-11-17/pro_pi_crucible/crt_signature_probe.py
+~~~
+
+Both commands were executed with bounded timeouts and exited 0. Their
+receipts retain the command, script SHA-256, elapsed time and full output.
+The first is an exact SymPy/Fraction audit, not a donor-suite replay.
+The second checks the finite M-02 classification and its q<=16^B boundary.
+It does not assert that the finite choice Y=7 at n=6 meets the EPS cutoff.
+
+The pinned adelic native suite was separately replayed in scratch: 15 tests
+passed. Its source extraction hashes and B=2,...,80 hostile scan are in
+evidence/adelic_replay_hostile.json. To repeat that donor replay, extract
+the two modules and test identified in the receipt from the exact pin into
+a separate temporary package and run audits/replay_adelic_pinned.py there.
+This file preserves the actual runner and assumes that extraction layout;
+it is not intended to import the unmerged donor modules from this checkout.
+At least one native test uses floats. The hostile rational failures do not.
+
+The configured full repository suite completed with 14,503 tests run and
+two pinned-Lean skips. VALIDATION.md and evidence/full_suite_skips.json
+identify them. These are observed software gates, not proof certificates.

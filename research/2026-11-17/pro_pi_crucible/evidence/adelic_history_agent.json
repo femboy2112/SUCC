@@ -1,0 +1,56 @@
+{
+  "scope": "Focused exact algebra/counterexample calibration; no remote test suite rerun",
+  "head": "97c7433371feca631991a1b8227b656e92e4abcb",
+  "parent": "16d04ab58e213e75ab47e61a170138196dbcd292",
+  "blobs": {
+    "research/2026-11-17/causal_clock_scrambling/ADELIC_BBP_NULL_SEED_AND_NORMALITY_CRUCIBLE.md": "379c014f8ebdf7df82d433f26659660942fa1bbf",
+    "research/2026-11-17/causal_clock_scrambling/ADELIC_BBP_NULL_SEED_VALIDATION.md": "ee830a4b5ed721d81db4e681e3a2e07199800f25",
+    "observational_succ/adelic_bbp_normality_crucible.py": "ad61a1fd4ac15820e81a0a8aef8fd6101434bb0b",
+    "tests/test_adelic_bbp_normality_crucible.py": "8072237302a3042a74b1ad29d994fdf229d90b22"
+  },
+  "ANC7": {
+    "actual_Gprime_at_zero": "0",
+    "printed_Gprime_at_zero": "-1/2",
+    "printed_residual": "-(2*v**2 - 4*v + 1)/(2*(2*v**2 - 1)*(2*v**2 - 2*v + 1))",
+    "corrected_residual": "0",
+    "printed_primitive_matches_r2_derivative": true,
+    "correct_repair": "Flip the FIRST logarithm sign, leave the second minus sign unchanged"
+  },
+  "ANC10": {
+    "all_eight_partial_fraction_basis_identities": true
+  },
+  "ANC13": {
+    "correct_gaussian_character": "4*alpha_3",
+    "counterexample_polynomial": "Q(t)=1",
+    "alpha_3": "1/64",
+    "alpha_4": "1/64",
+    "four_times_alpha3_minus_alpha4": "0",
+    "gaussian_sum": "1/16"
+  },
+  "ANC12": {
+    "B": 3,
+    "N_6": "80827484660698633414",
+    "Q_6": "24536311574775",
+    "Pi_6_star": "19224941",
+    "prime_band": [
+      19,
+      23,
+      29,
+      37,
+      41
+    ],
+    "R_sharp": "67379365062",
+    "C_sharp": "3293184",
+    "V_sharp": "26934196254814399554/8178770524925",
+    "gcd_R_sharp_Q_6": 3,
+    "denominator_V_sharp": "8178770524925",
+    "fits": true,
+    "late_2adic_congruence_preserved": true,
+    "uncollided_principal_parts_preserved": true,
+    "D_B": 0,
+    "J_B": 0,
+    "backward_energy": "30392636097615060266289/3083149320757658819229122560000",
+    "energy_less_than_1_over_255B": true
+  },
+  "status": "All intended exact calibrations passed; original claims fail as described"
+}

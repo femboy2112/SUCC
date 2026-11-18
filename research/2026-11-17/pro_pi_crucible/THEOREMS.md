@@ -51,6 +51,8 @@ equivalences; none of the desired limits is established here.
 | EPS-01 | If p divides L_n, p>7, p^2>8n and p^2>=19*32^K for K=floor((8n-2)/p), then v_p(U_n)=-1. | [Prime survival](EFFECTIVE_PRIME_SURVIVAL.md), sections 2--4 |
 | EPS-02 | For each A>20 log 2, all born primes p>=A n/log n survive for every sufficiently large n, with an effective threshold. | Same, section 5 |
 | EPS-03 | Q_n divides L_n and log(L_n/Q_n)=O(n/log n), with the explicit finite Y-bound. | Same, section 6 |
+| EPS-FQR | Correcting and crediting late FQR-05, the lane-restricted finite height gives eventual survival for A>4 log2+6; the asymptotic refinement imports fixed-modulus PNT. | [Prime survival](EFFECTIVE_PRIME_SURVIVAL.md), section 8 |
+| M-01--04 | The surviving mesoscopic prime inventory leaves cofactor q with log q=O(B/log B); the full finite signature permits exactly phi(q) terminal words eventually, given by an explicit progression. | [CRT rigidity](MESOSCOPIC_CRT_RIGIDITY.md) |
 
 L_n is the LCM of the four native odd lanes; Q_n is the reduced denominator.
 All four signed chronological contributions are retained. Nonzero rational
@@ -63,8 +65,27 @@ external priority nor formal verification is claimed.
 
 **Novelty boundary:** CG-01 already gives rate-6 denominator growth and
 fixed-epsilon prime survival. The new growing packet-depth height estimate
-lowers the cutoff to order n/log n. It does not restrict floor(U_n) modulo
-radix powers. This is auxiliary arithmetic, not category D/E for coercivity.
+lowers the cutoff to order n/log n. EPS alone does not restrict floor(U_n)
+modulo radix powers. M-01--03 couples its larger inventory to the 2-adic
+signature and classifies the remaining words. It still supplies no low-wall
+exclusion. These are auxiliary arithmetic, not category D/E for coercivity.
+
+More explicitly, let U_(2B)=N/Q, Pi be the product of its born primes above
+Y=A(2B)/log(2B), q=Q/Pi, K=16^B, A_U=[N Q^(-1)]_K and R_0=[N]_Pi.
+For every sufficiently large B, q<K and the compatible words are exactly
+
+\[
+W_t=[A_U-Q^{-1}R_0-q^{-1}t]_K,
+\quad 0\le t<q,\quad \gcd(R_0+t\Pi,q)=1.
+\]
+
+There are exactly phi(q) of them. The original word belongs to this set;
+the theorem does not estimate its domain-wall energy or its distribution.
+The closing FQR-06/07 frontier at 9ff8544c identifies the smaller ramified
+cofactor when all actually surviving primes above sqrt(16B) are supplied.
+Corollary M-04 gives its exact phi(q^ram) word count and an elementary
+exp(O(sqrt B)) bound, crediting that inventory choice. This is not survival
+of all born primes above the square-root scale.
 
 ## 3. Quantitative swept-filter instrument
 
@@ -131,6 +152,10 @@ D_{\rm arc}(\mu_B)^5
 See [BORWEIN_ENERGY_STABILITY.md](BORWEIN_ENERGY_STABILITY.md). This improves
 the V^(1/6) static stability rate stated in pinned #663, without estimating
 the authentic energy as B grows. It remains instrument mathematics.
+The later-inspected adelic branch at 97c7433 also obtains V^(1/5) via
+Parseval--Cauchy--Schwarz and an Erdős--Turán input. The exponent is an
+overlap; this dossier separately proves sharpness and the displayed direct
+constant without that input. No exclusive priority claim is made.
 
 ## 4. Hostile theorems and exact quantifiers
 
@@ -170,13 +195,25 @@ concrete M=0 counterfeit.
 
 See [SUPEREXPONENTIAL_LOCKED_SOURCE.md](SUPEREXPONENTIAL_LOCKED_SOURCE.md).
 The simultaneous all-order match and radix lock strengthen the inspected
-CAT-12/13 and TW-07 constructions. Do not combine incompatible properties
-of this counterfeit and GSC.
+CAT-12/13 and TW-07 constructions. H-05 additionally proves zero discrete
+backward seed for its explicit meromorphic extension, correcting a false
+claim in the latest competing audit; it does not prove Z_2 analyticity.
+Do not combine incompatible properties of this counterfeit and GSC.
 
 **GG-01.** A single integer gauge of the authentic full history preserves
 the completed pi orbit and all fractional states while erasing every raw
 even-terminal suffix. Its large transformed tail invalidates the original
 small-tail comparison in that gauge. See [CRUCIBLE.md](CRUCIBLE.md).
+
+**R-ANC12.** The competing terminal CRT clone does not in general preserve
+the reduced denominator: B=3 cancels a factor 3. A primitive progression
+sieve repairs the theorem for every sufficiently large B when only its
+specified smaller prime bands are preserved. It retains reduced Q, the
+2-adic shell residue and those prime principal parts while forcing an
+all-zero terminal word. The construction is shell-dependent and does not
+realize an authentic chronological history. See
+[ANC12_EVENTUAL_REPAIR.md](ANC12_EVENTUAL_REPAIR.md). M-01--03 shows why
+the repair's available cofactor room disappears for the larger inventory.
 
 ## 5. Failed bridges
 

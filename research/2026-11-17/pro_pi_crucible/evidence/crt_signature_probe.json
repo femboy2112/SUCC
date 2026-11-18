@@ -1,0 +1,15 @@
+{
+  "command": [
+    "timeout",
+    "15s",
+    "python",
+    "/workspace/scratch/d2afcbfb001f/SUCC/research/2026-11-17/pro_pi_crucible/crt_signature_probe.py"
+  ],
+  "workdir": "/workspace/scratch/d2afcbfb001f/SUCC",
+  "exit_code": 0,
+  "seconds": 0.048,
+  "script_sha256": "afb04c07416e9a832a6b650f356a9f684bac33136b179dec36e92751c005d9a3",
+  "scope": "Exact focused late-frontier algebra, not an asymptotic test",
+  "stdout_file": "crt_signature_probe.stdout.json",
+  "stderr_file": "crt_signature_probe.stderr.log"
+}

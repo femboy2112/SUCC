@@ -8,7 +8,9 @@ declared norm. Entire positive-moment closeness is insufficient for locally
 uniform source-neighborhood wall coercivity. All asymptotic coefficients
 and all finite clock poles are insufficient in a broader meromorphic class.
 
-None of these statements bounds the authentic integer quotient.
+The mesoscopic CRT theorem now restricts the terminal word to an explicit
+subexponential progression. It still gives no lower bound on the authentic
+word's wall density or bound on its signed phase average.
 
 ## The unresolved arithmetic edge
 
@@ -27,10 +29,29 @@ N\bmod(16^kQ)=Q(C\bmod16^k)+R.
 Thus the tower retains the winding information that pure odd-primary
 principal parts discard. This identity is a coordinate description, not
 a proof of distribution. EPS controls large-prime survival in Q and its
-local principal coefficient. It does not yet restrict C mod 16^B.
+local principal coefficient. Combined with the 2-adic shell signature,
+M-01--03 now restricts C mod 16^B to the explicit set below.
 
-A verdict-changing next lemma must quantitatively constrain this integer
-part using the **same chronological signed forcing**. A useful candidate
+For Pi equal to the surviving mesoscopic prime product, q=Q/Pi,
+K=16^B, A_U=[N Q^(-1)]_K and R_0=[N]_Pi, this set is
+
+\[
+\mathcal W_B=\{[A_U-Q^{-1}R_0-q^{-1}t]_K:
+0\le t<q,\ \gcd(R_0+t\Pi,q)=1\}.
+\]
+
+Eventually it has exactly phi(q)<=exp(O(B/log B)) words. The authentic
+parameter is determined by the actual fractional remainder R: t=(R-R_0)/Pi.
+The count does not locate that parameter or exclude low-wall words.
+Even the all-zero word has an exact conditional test, rather than a
+proved exclusion. The finite U_6 calibration actually admits it. The closing
+FQR simple-prime inventory further shrinks the count to exp(O(sqrt B));
+M-04 proves exactly phi(q^ram) words under that stronger supplied signature.
+That improvement leaves the same missing exclusion and selection problem.
+
+A verdict-changing next lemma must quantitatively constrain this authentic
+parameter, or exclude the appropriate low-wall members, using the
+**same chronological signed forcing**. A useful candidate
 would show that a long low-wall radix language forces an incompatibility
 with a signed source packet whose height or congruence is independently
 controlled. No such incompatibility has been derived. Calling it an

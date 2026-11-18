@@ -310,7 +310,10 @@ terminal fraction can coexist with arbitrarily different low integer
 hexadecimal digits. The existing terminal-cofactor clone supplies that
 counterexample. To reach R0, a new inequality must constrain the actual
 zero-seeded integer quotient C_(2B) and its radix residue tower; no such
-inequality is derived here.
+positive wall-density lower bound is derived here. This observation does
+not fix the 2-adic residue modulo 16^B. The later M-02 classification adds
+that datum and explicitly restricts the compatible words; it still does
+not exclude their low-wall subset.
 
 ### Inspected source heads
 
@@ -322,3 +325,60 @@ inequality is derived here.
 - Inherited CG-01--03, AT-01--07 and PF-01--08 as present at the pinned main.
 
 No external priority claim, external referee claim, or Lean claim is made.
+
+## 8. Closing FQR refinement: lane-restricted height, with normalization repaired
+
+The closing source at 9ff8544c799b5e4c8eb1db33127438bc3f221045 introduces
+a useful smaller denominator envelope for the normalized coefficient.
+Credit for the lane restriction belongs to its FQR-05. Its printed
+normalization is incorrect; the rational coefficient used above satisfies
+F=16 C, term by term, where C is that paper's FQR-02 coefficient.
+
+For K=floor((8n-2)/p) and r=p mod4 in {1,3}, put
+
+\[
+S(K,r)=\{1\le k\le K:k\equiv r\pmod4\}
+\cup\{1\le k\le K/2:k\text{ odd}\},
+\quad H(K,r)=2^{\lfloor K/2\rfloor}\operatorname{lcm}S(K,r).
+\]
+
+**Corrected finite certificate EPS-FQR.** Under EPS-01's other hypotheses,
+
+\[
+p^2\ge19H(K,r)^2\quad\Longrightarrow\quad v_p(U_n)=-1.
+\]
+
+**Proof.** In the two 8j lanes the odd multiplier k satisfies k=p mod4;
+the two shorter lanes have k<=K/2. Thus den(F) divides H(K,r), retaining
+the same power-of-two factor as the earlier proof. The chronological sign
+argument already gives 0<|F|<64/15. For F=a/d reduced,
+
+\[
+0<a^2<(4096/225)H(K,r)^2<19H(K,r)^2\le p^2.
+\]
+
+Hence p does not divide a. Also d is prime to p because K<p when p^2>8n.
+The authentic principal-part congruence then proves the assertion. QED.
+
+For a fixed r, the first-power prime support of lcm S(K,r) comprises
+all odd primes <=K/2 and the primes congruent to r mod4 up to K. The
+fixed-modulus prime number theorem gives logarithmic weight 3K/4+o(K).
+Additional powers cost O(sqrt K log K)=o(K). Therefore
+
+\[
+\log H(K,r)=(\tfrac12\log2+\tfrac34+o(1))K.
+\]
+
+The same height comparison now proves eventual survival for every born
+p>=A n/log n whenever A>4 log2+6. For unbounded K, compare log p with
+log H at the cutoff; bounded K is covered by its finite height bound.
+The original explicit elementary EPS certificate remains valid. This
+refinement improves its sufficient constant; it does not prove that the
+new constant is optimal and is not a signed real-circle estimate.
+
+The imported fixed-modulus theorem was checked in the author's primary
+paper, Ivan Soprounov, Theorem 2.1 and its weighted formulation:
+[A short proof of the Prime Number Theorem for arithmetic progressions](https://academic.csuohio.edu/soprunov-ivan/wp-content/uploads/sites/93/2023/02/primes.pdf).
+The finite certificate itself uses no prime-distribution theorem.
+The normalization counterexample and exact scope are retained in
+audits/FQR_FRONTIER_ADDENDUM.md and evidence/fqr_minimal_arithmetic.json.

@@ -1,0 +1,118 @@
+{
+  "pin": "97c7433371feca631991a1b8227b656e92e4abcb",
+  "focused_tests": 15,
+  "success": true,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 1.5427430210002058,
+  "native_test_disclaimer": "One test uses floating math.sin/math.pi; this is not an all-exact suite.",
+  "files": {
+    "observational_succ/adelic_bbp_normality_crucible.py": {
+      "bytes": 16919,
+      "sha256": "badb7fe55e8591bfc10953881a234c3cb832a3e26b9bff0c39ef8a9f7cce8507",
+      "git_blob": "ad61a1fd4ac15820e81a0a8aef8fd6101434bb0b"
+    },
+    "observational_succ/borwein_quantitative_certificate.py": {
+      "bytes": 6228,
+      "sha256": "14a8fef9c885d934a2cfb13a6690a8c7e0897bf9174a617db172ffc0d170e28a",
+      "git_blob": "21168fe02d90365ff537ece2af6c302240bd772d"
+    },
+    "tests/test_adelic_bbp_normality_crucible.py": {
+      "bytes": 13951,
+      "sha256": "2995cb63f1b0f0b3baa269d9507561a2509029f50c20f79e641bed246f46144c",
+      "git_blob": "8072237302a3042a74b1ad29d994fdf229d90b22"
+    }
+  },
+  "denominator_counterexamples": [
+    {
+      "B": 3,
+      "N": "80827484660698633414",
+      "Q": "24536311574775",
+      "Pi_star": "19224941",
+      "modulus": "78745358336",
+      "R_sharp": "67379365062",
+      "gcd_R_Q": "3",
+      "reduced_shadow_denominator": "8178770524925",
+      "same_2adic_mod_16B": true,
+      "all_uncollided_principal_parts_match": true,
+      "domain_wall_counts": [
+        0,
+        0
+      ],
+      "fits": true
+    },
+    {
+      "B": 6,
+      "N": "17751446249468303794410631135140991241644",
+      "Q": "321191512015612578279214275",
+      "Pi_star": "42450702821",
+      "modulus": "712204610579726336",
+      "R_sharp": "14083368160628140",
+      "gcd_R_Q": "28985",
+      "reduced_shadow_denominator": "11081301087307661834715",
+      "same_2adic_mod_16B": true,
+      "all_uncollided_principal_parts_match": true,
+      "domain_wall_counts": [
+        0,
+        0
+      ],
+      "fits": true
+    },
+    {
+      "B": 9,
+      "N": "1444021660776841752425149369413334405523998054045785467047877212334",
+      "Q": "1557342479559497824892783071445027400848642625",
+      "Pi_star": "30145094278592488543",
+      "modulus": "2071555104982263219255035035648",
+      "R_sharp": "1463206523755289135844127078574",
+      "gcd_R_Q": "7",
+      "reduced_shadow_denominator": "222477497079928260698969010206432485835520375",
+      "same_2adic_mod_16B": true,
+      "all_uncollided_principal_parts_match": true,
+      "domain_wall_counts": [
+        0,
+        0
+      ],
+      "fits": true
+    },
+    {
+      "B": 10,
+      "N": "52551284147862844456251867542958074295966533299903796863570419429131294356",
+      "Q": "221387853640191636676894852064212965619702419784875",
+      "Pi_star": "763144534880411132526377",
+      "modulus": "839086289774719253820188434525847552",
+      "R_sharp": "807264826825302713983456368250984084",
+      "gcd_R_Q": "23",
+      "reduced_shadow_denominator": "9625558853921375507691080524530998505204453034125",
+      "same_2adic_mod_16B": true,
+      "all_uncollided_principal_parts_match": true,
+      "domain_wall_counts": [
+        0,
+        0
+      ],
+      "fits": true
+    },
+    {
+      "B": 11,
+      "N": "32646317377120890014591276974689885478876094430448987975738010073872559886019146306",
+      "Q": "537235484180897479166357107553515741493328890721782401125",
+      "Pi_star": "10957992376347823451946247343",
+      "modulus": "192775040558003100249665371701706319986688",
+      "R_sharp": "186118568262310704796269972091989004464706",
+      "gcd_R_Q": "23",
+      "reduced_shadow_denominator": "23358064529604238224624222067544162673622995248773147875",
+      "same_2adic_mod_16B": true,
+      "all_uncollided_principal_parts_match": true,
+      "domain_wall_counts": [
+        0,
+        0
+      ],
+      "fits": true
+    }
+  ],
+  "fit_failures": [],
+  "hostile_scan_B": [
+    2,
+    80
+  ]
+}

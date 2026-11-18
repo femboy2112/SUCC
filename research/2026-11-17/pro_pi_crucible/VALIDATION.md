@@ -9,7 +9,9 @@
   proposed. No original forcing, frozen source archive, main branch or
   donor branch was edited.
 - All remote heads were fetched; relevant open PRs #657--#663 were pinned
-  as recorded in SOURCE_SNAPSHOT.json. No unpushed Gemini work was assumed.
+  as recorded in SOURCE_SNAPSHOT.json. The named Gemini branch was initially
+  absent, then read-only audited at 97c7433371feca631991a1b8227b656e92e4abcb
+  once it appeared. No unpushed work was assumed.
 
 ## Completed baseline and focused runs
 
@@ -80,10 +82,19 @@ PYTHONPATH="$PWD" OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
 timeout 1800s python -m unittest discover -s tests -p 'test_*.py'
 ~~~
 
-**IN PROGRESS at the first dossier commit.** No pass is claimed for it here.
-The final operation will append its actual completion/timeout receipt.
-Discovery found 14,503 outer test cases in this additive checkout; discovery
-alone is not an execution result.
+**PASS: 14,503 tests run in 1,222.448 seconds; OK (skipped=2).**
+The bounded wrapper exited 0 after 1,227.983 seconds. The two skipped cases
+are the R26 and R27 methods in LeanEncodingReceipts, whose shared reason is
+"pinned Lean 4.14.0 not available". Their full identifiers and identification
+method are in evidence/full_suite_skips.json. The raw complete stdout, stderr
+and environment/command receipt are evidence/full_suite_configured.*.
+
+This run covers the first published implementation tree
+bcad7b2bafd996696a84087e2c14f4dc2a076f52, including the 27 new tests.
+The later additions are proof/audit documents, archived receipts and two
+standalone probes; those probes were executed separately as recorded below.
+No existing runtime module or either integrated test module changed after
+this full run. The full suite was not repeated for documentation additions.
 
 ## Other verification boundaries
 
@@ -98,6 +109,9 @@ alone is not an execution result.
 - No new code depends on the donor #663 implementation. Its head was read
   and audited; its stated 24-test receipt is an inspected donor receipt,
   not a local replay of those tests.
+- The refreshed #663 receipt of 53 tests was inspected, not replayed.
+  The later adelic branch's 15-test suite was replayed in scratch; its exact
+  denominator failure is preserved despite its native tests passing.
 - Hosted check states for donor heads are snapshots only. At observation
   #657 included two cancelled checks; #663 included one in-progress check.
   No cancelled or in-progress check was represented as successful.
@@ -112,3 +126,39 @@ publication are recorded by the draft PR and final operation report.
 
 Original-source terminal coercivity, R0, swept convergence and full
 base-16 pi normality remain **OPEN** regardless of software test outcomes.
+
+## Final late-frontier probes and publication
+
+The portable root audit of pinned 97c7433 exited 0 in 0.550 s. It verifies
+three precise algebraic errors and the surviving matrix/sign repair using
+SymPy and Fraction, without importing donor modules. The finite CRT signature
+probe exited 0 in 0.048 s: four cases, three direct reverse enumerations,
+including the q>K noninjectivity control and 240 admissible U_6 words.
+See evidence/audit_adelic_pinned.json and evidence/crt_signature_probe.json.
+The exact B=3 repaired witness and native 15-test replay are separately
+archived with their actual commands; no repeated execution is invented.
+
+Draft PR: https://github.com/femboy2112/SUCC/pull/664 .
+The first local content commit was 41ded6ab6952290f67b5791e159ec349861f3618.
+Direct git push failed because the CLI had no GitHub credentials. The
+authorized GitHub connector published commit
+1d33174c39625b39b54d49533b2aac028952d3ec with the identical tree
+bcad7b2bafd996696a84087e2c14f4dc2a076f52; the original local commit was
+preserved on the local-evidence branch. The publication receipt is
+evidence/publication_initial.json. Later receipt/audit additions are
+published as an ordinary descendant on the same draft branch; no history
+is rewritten. Hosted checks are stated only for the exact observed head.
+
+Closing source cutoff: evidence/frontier_closing_snapshot.json pins #663
+at 74b9f48 and the adelic branch at 9ff8544c. The latter25-test receipt and
+#663's new method were not replayed. One additional bounded exact prime-path
+probe checked the printed normalization/valuation failures and B=1,...,32
+modular-wrap identities; evidence/fqr_minimal_arithmetic.json records it.
+No absence of a wrap witness in that finite range was made into an all-B
+claim. The H-05 backward-seed correction and M-04/finite lane refinements
+are paper proofs, not newly claimed test suites.
+
+A later hosted query completed the first published head's record: all 19
+checks succeeded at 1d33174c. Exact names, head, timestamps and URLs are
+in evidence/first_published_head_ci_complete.json. This is not a claim
+that the final receipt commit's newly scheduled checks have completed.

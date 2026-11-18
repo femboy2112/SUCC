@@ -51,7 +51,7 @@
     },
     {
       "number": 660,
-      "title": "[DRAFT] Prime-path nerve: signed divisor superposition, CRT/Fourier state and Euler–Hurwitz reflection (RH/π OPEN)",
+      "title": "[DRAFT] Prime-path nerve: signed divisor superposition, CRT/Fourier state and Euler\u2013Hurwitz reflection (RH/\u03c0 OPEN)",
       "head": "research/prime-path-nerve-reflection-2026-11-16",
       "head_sha": "6ece172c5f7faa22955129374cb93db005316c94",
       "base": "main",
@@ -61,7 +61,7 @@
     },
     {
       "number": 659,
-      "title": "[DRAFT] Computational continuum time: source-history holonomy, Gamma metric and false-positive no-go (π OPEN)",
+      "title": "[DRAFT] Computational continuum time: source-history holonomy, Gamma metric and false-positive no-go (\u03c0 OPEN)",
       "head": "research/computational-continuum-time-source-history-2026-11-16",
       "head_sha": "e55f09fc71742495986f63a096342a8d6a634a6f",
       "base": "main",
@@ -71,7 +71,7 @@
     },
     {
       "number": 658,
-      "title": "[DRAFT] Gamma on nonsplit carry tower: 2-adic metric, 3–4–5 twist and resolution barrier (π OPEN)",
+      "title": "[DRAFT] Gamma on nonsplit carry tower: 2-adic metric, 3\u20134\u20135 twist and resolution barrier (\u03c0 OPEN)",
       "head": "research/gamma-nonsplit-carry-tower-2026-11-16",
       "head_sha": "cf46c9dac20b2ac58675ac7f98937e488307cbf7",
       "base": "main",
@@ -80,7 +80,7 @@
       "draft": true
     }
   ],
-  "gemini_named_remote_branch_observed": false,
+  "gemini_named_remote_branch_observed": true,
   "gemini_branch_name": "research/pi-normality-crucible-frontier-2026-11-17",
   "hosted_checks": {
     "657": {
@@ -1544,5 +1544,309 @@
     "Cancelled checks are not passes.",
     "Named Gemini branch was absent from the accessible remote, not asserted absent from other worktrees.",
     "Only the listed source heads were mathematically inspected; fetching all heads does not imply reading all historical branches."
-  ]
+  ],
+  "initial_snapshot_scope": "The original observation and hosted rows below are preserved; latest inspected heads and first-head CI are in final_refresh.",
+  "gemini_initially_absent": true,
+  "final_refresh": {
+    "observed_utc": "2026-11-18 02:01:30 UTC",
+    "repository": "femboy2112/SUCC",
+    "refresh": "All remote heads fetched; inspected source cutoff for final audit",
+    "heads": {
+      "663": "74b9f4806fdfebca4be66e2c5bfdbd9b5fc2273a",
+      "664": "1d33174c39625b39b54d49533b2aac028952d3ec",
+      "main": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+      "adelic": "9ff8544c799b5e4c8eb1db33127438bc3f221045"
+    },
+    "remote_ref_count": 664,
+    "local_head": "1d33174c39625b39b54d49533b2aac028952d3ec",
+    "base_tree": "ae89bcfb3d912098f0a27143ec3f411ca868e309",
+    "open_prs": [
+      {
+        "number": 664,
+        "title": "[DRAFT] Effective BBP prime survival and sharp Borwein stability (\u03c0 OPEN)",
+        "head": "research/pro-pi-normality-full-source-offensive-2026-11-17",
+        "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-18T01:30:06Z"
+      },
+      {
+        "number": 663,
+        "title": "[DRAFT] GPT-6 wavelet\u2013Pascal/Gamma \u03c0 crucible: rational Haar energy, source-time impulses and proof boundary",
+        "head": "research/bbp-borwein-kernel-discrepancy-crucible-2026-11-17",
+        "head_sha": "74b9f4806fdfebca4be66e2c5bfdbd9b5fc2273a",
+        "base": "research/defect-window-tomography-2026-11-16",
+        "base_sha": "7e406514ffdd1dac932cdfa6a0e1bf12b8059ebf",
+        "draft": true,
+        "updated_at": "2026-11-18T01:47:08Z"
+      },
+      {
+        "number": 662,
+        "title": "[DRAFT] SUCC Terminal Walls: exact virtual-zero norm, source cofactor clones and Gamma counterfeit",
+        "head": "research/terminal-form-domain-wall-crucible-2026-11-16",
+        "head_sha": "fc723029eddd7d3f32dff12218cd9c6bfa916f84",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-17T04:07:30Z"
+      },
+      {
+        "number": 661,
+        "title": "[DRAFT] Prime compensation: flat source transport, observer inertial defect and BBP joining",
+        "head": "research/prime-compensation-fictitious-force-2026-11-16",
+        "head_sha": "ea7eecd38e83b2b60887cfacd5ce2a8cf854f7ea",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-17T00:55:25Z"
+      },
+      {
+        "number": 660,
+        "title": "[DRAFT] Prime-path nerve: signed divisor superposition, CRT/Fourier state and Euler\u2013Hurwitz reflection (RH/\u03c0 OPEN)",
+        "head": "research/prime-path-nerve-reflection-2026-11-16",
+        "head_sha": "6ece172c5f7faa22955129374cb93db005316c94",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-17T00:10:40Z"
+      },
+      {
+        "number": 659,
+        "title": "[DRAFT] Computational continuum time: source-history holonomy, Gamma metric and false-positive no-go (\u03c0 OPEN)",
+        "head": "research/computational-continuum-time-source-history-2026-11-16",
+        "head_sha": "e55f09fc71742495986f63a096342a8d6a634a6f",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-16T20:26:56Z"
+      },
+      {
+        "number": 658,
+        "title": "[DRAFT] Gamma on nonsplit carry tower: 2-adic metric, 3\u20134\u20135 twist and resolution barrier (\u03c0 OPEN)",
+        "head": "research/gamma-nonsplit-carry-tower-2026-11-16",
+        "head_sha": "cf46c9dac20b2ac58675ac7f98937e488307cbf7",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-16T17:40:59Z"
+      },
+      {
+        "number": 657,
+        "title": "Research: BBP Borwein swept-impulse normality criterion, Mellin/Gamma observer ascent",
+        "head": "research/defect-window-tomography-2026-11-16",
+        "head_sha": "7e406514ffdd1dac932cdfa6a0e1bf12b8059ebf",
+        "base": "main",
+        "base_sha": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+        "draft": true,
+        "updated_at": "2026-11-18T00:29:58Z"
+      }
+    ],
+    "hosted_checks_first_published_head": {
+      "head": "1d33174c39625b39b54d49533b2aac028952d3ec",
+      "total_count": 19,
+      "counts": {
+        "success": 17,
+        "in_progress": 2
+      },
+      "rows": [
+        {
+          "id": 134506830852,
+          "name": "finite_source (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:30Z",
+          "completed_at": "2026-11-18T01:31:46Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282722/job/134506830852"
+        },
+        {
+          "id": 134506830274,
+          "name": "finite_source (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:21Z",
+          "completed_at": "2026-11-18T01:31:51Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282722/job/134506830274"
+        },
+        {
+          "id": 134506830235,
+          "name": "Python 3.10 mathematical and epistemic checks",
+          "status": "in_progress",
+          "conclusion": null,
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:14Z",
+          "completed_at": null,
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282760/job/134506830235"
+        },
+        {
+          "id": 134506830197,
+          "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:11Z",
+          "completed_at": "2026-11-18T01:31:35Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282760/job/134506830197"
+        },
+        {
+          "id": 134506830175,
+          "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:15Z",
+          "completed_at": "2026-11-18T01:31:45Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282760/job/134506830175"
+        },
+        {
+          "id": 134506830163,
+          "name": "Python 3.13 mathematical and epistemic checks",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:05Z",
+          "completed_at": "2026-11-18T01:47:44Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282760/job/134506830163"
+        },
+        {
+          "id": 134506830102,
+          "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:13Z",
+          "completed_at": "2026-11-18T01:31:37Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282760/job/134506830102"
+        },
+        {
+          "id": 134506830061,
+          "name": "Collective observer exact replay (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:20Z",
+          "completed_at": "2026-11-18T01:33:13Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282730/job/134506830061"
+        },
+        {
+          "id": 134506829769,
+          "name": "Collective observer exact replay (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:18Z",
+          "completed_at": "2026-11-18T01:32:21Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282730/job/134506829769"
+        },
+        {
+          "id": 134506829754,
+          "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:00Z",
+          "completed_at": "2026-11-18T01:31:23Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282760/job/134506829754"
+        },
+        {
+          "id": 134506829686,
+          "name": "contracts (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:31:08Z",
+          "completed_at": "2026-11-18T01:31:26Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282621/job/134506829686"
+        },
+        {
+          "id": 134506829583,
+          "name": "contracts (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:56Z",
+          "completed_at": "2026-11-18T01:31:07Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282621/job/134506829583"
+        },
+        {
+          "id": 134506829406,
+          "name": "lean",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:38Z",
+          "completed_at": "2026-11-18T01:30:51Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216282621/job/134506829406"
+        },
+        {
+          "id": 134506632976,
+          "name": "Python 3.13 mathematical and epistemic checks",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:06Z",
+          "completed_at": "2026-11-18T01:52:50Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216222643/job/134506632976"
+        },
+        {
+          "id": 134506632943,
+          "name": "Python 3.10 mathematical and epistemic checks",
+          "status": "in_progress",
+          "conclusion": null,
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:05Z",
+          "completed_at": null,
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216222643/job/134506632943"
+        },
+        {
+          "id": 134506632908,
+          "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:01Z",
+          "completed_at": "2026-11-18T01:30:23Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216222643/job/134506632908"
+        },
+        {
+          "id": 134506632905,
+          "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:03Z",
+          "completed_at": "2026-11-18T01:30:28Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216222643/job/134506632905"
+        },
+        {
+          "id": 134506632889,
+          "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:30:00Z",
+          "completed_at": "2026-11-18T01:30:19Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216222643/job/134506632889"
+        },
+        {
+          "id": 134506632533,
+          "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1d33174c39625b39b54d49533b2aac028952d3ec",
+          "started_at": "2026-11-18T01:29:49Z",
+          "completed_at": "2026-11-18T01:30:16Z",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/44216222643/job/134506632533"
+        }
+      ]
+    },
+    "history_notes": [
+      "PR663 inspected at16d04ab, then814cfe0, then74b9f48.",
+      "Named adelic branch initially absent, then97c7433, then9ff8544c.",
+      "Adelic9ff8544c includes merge of our earlier1d33174c; shared imported code is not independent validation.",
+      "No donor branch or other worktree modified; this snapshot precedes our final receipt commit."
+    ]
+  }
 }
