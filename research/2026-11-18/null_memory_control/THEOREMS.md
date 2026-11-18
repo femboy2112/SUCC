@@ -94,7 +94,15 @@ C_{\rm sham}=C_{\rm baseline},\quad
 }
 \tag{NMC8}
 \]
-If the null step prepares a shared mask used by later sensors, NMC8 may fail even while NMC1 is satisfied; classify the step as **option-value instrument preparation**, not a neutral control.
+To preserve the **probability of a future discovery**, not merely the next chosen probe, also require the conditional *future probe outcome* law to match under the same source and action:
+\[
+\boxed{\mathcal L(Y_{\rm next}\mid\Theta,M,Q_{\rm next}=q,\operatorname{do}N_0)
+=\mathcal L(Y_{\rm next}\mid\Theta,M,Q_{\rm next}=q,\operatorname{do}\operatorname{id})}
+\tag{NMC8b}
+\]
+for every admissible \(q,\Theta,M\), with budgets/time and admissible interventions held fixed. For a multi-step discovery event, require a declared continuation-kernel equivalence under each allowed fixed policy, or prove a finite-horizon induction from matched controlled kernels. Equality of the query distribution *alone* cannot establish equality of eventual discovery chances.
+
+If the null step prepares a shared mask used by later sensors, NMC8b may fail even while NMC1 is satisfied; classify the step as **option-value instrument preparation**, not a neutral control.
 
 Under a fixed action set and equal costs, the classical posterior-neutral experiment does not change **optimal one-step Bayes decision value**, because the posterior is unchanged at each sham outcome. This statement does not ensure an actual, potentially randomized or suboptimal policy will choose the same next probe.
 
