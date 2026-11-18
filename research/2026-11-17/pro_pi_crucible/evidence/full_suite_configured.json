@@ -1,0 +1,27 @@
+{
+  "command": [
+    "timeout",
+    "1800s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "exit_code": 0,
+  "seconds": 1227.983,
+  "threads": 1,
+  "environment_overrides": {
+    "PYTHONPATH": "/workspace/scratch/d2afcbfb001f/SUCC",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "stdout_file": "full_suite_configured.stdout.log",
+  "stderr_file": "full_suite_configured.stderr.log",
+  "baseline": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "reason_for_rerun": "The initial bounded full run timed out and exposed an unchanged baseline subprocess import failure without repository PYTHONPATH; the configured run resolves that environment cause."
+}

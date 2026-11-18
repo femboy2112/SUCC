@@ -1,0 +1,10 @@
+{
+  "command": "timeout 60s python prime_independent_audit.py",
+  "exit_code": 0,
+  "source_sha256": "8ea19d5166e4e984f27362eeb8bcd684560591b319ddec4f15a89bcab9740e6d",
+  "principal_part_cases": 128,
+  "lcm_cases": 17,
+  "total_cases": 145,
+  "imports_from_prime_agent": false,
+  "authority": "same-model distinct exact implementation; finite edge audit"
+}

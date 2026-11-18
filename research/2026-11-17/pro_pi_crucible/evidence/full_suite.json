@@ -1,0 +1,21 @@
+{
+  "command": [
+    "timeout",
+    "600s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "exit_code": 124,
+  "seconds": 600.061,
+  "threads": 1,
+  "stdout_file": "full_suite.stdout.log",
+  "stderr_file": "full_suite.stderr.log",
+  "baseline": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "scope": "baseline plus additive pro_pi_crucible research files and two test modules"
+}

@@ -1,0 +1,13 @@
+{
+  "suite": "full_suite_configured",
+  "reported_tests_run": 14503,
+  "reported_skipped": 2,
+  "reported_unittest_seconds": 1222.448,
+  "skip_reason": "pinned Lean 4.14.0 not available",
+  "source": "tests/test_observatoris_referee_receipts.py",
+  "tests": [
+    "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R26_survives_reversed_cost_and_noncommutative_language_instances",
+    "test_observatoris_referee_receipts.LeanEncodingReceipts.test_R27_refutes_must_is_not_may_control_as_a_falsity_control"
+  ],
+  "identification": "Matched the two skip positions in the completed outer result stream to ordered unittest discovery, then inspected the shared skipUnless predicate."
+}

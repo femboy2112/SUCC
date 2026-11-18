@@ -1,0 +1,64 @@
+{
+  "scope": "one exact B=3 repaired clone; no all-B assertion",
+  "pin_audited": "97c7433371feca631991a1b8227b656e92e4abcb",
+  "B": 3,
+  "N": "80827484660698633414",
+  "Q": "24536311574775",
+  "Pi_star": "19224941",
+  "M": "78745358336",
+  "Q_coll": "1276275",
+  "Q_coll_factorization": {
+    "3": 1,
+    "5": 2,
+    "7": 1,
+    "11": 1,
+    "13": 1,
+    "17": 1
+  },
+  "R_original": "67379365062",
+  "original_gcd_R_Q": 3,
+  "original_reduced_denominator": "8178770524925",
+  "candidate_count_that_fit": 311,
+  "first_coprime_t": 1,
+  "R_repaired": "146124723398",
+  "C_original": "3294198",
+  "C_zero": "3293184",
+  "repaired_numerator": "80802588843188556998",
+  "repaired_denominator": "24536311574775",
+  "repaired_gcd_R_Q": 1,
+  "2adic_mod_16B_original": 1514,
+  "2adic_mod_16B_repaired": 1514,
+  "prime_principal_parts": [
+    {
+      "p": 19,
+      "old_residue": 11,
+      "repaired_residue": 11
+    },
+    {
+      "p": 23,
+      "old_residue": 11,
+      "repaired_residue": 11
+    },
+    {
+      "p": 29,
+      "old_residue": 5,
+      "repaired_residue": 5
+    },
+    {
+      "p": 37,
+      "old_residue": 21,
+      "repaired_residue": 21
+    },
+    {
+      "p": 41,
+      "old_residue": 4,
+      "repaired_residue": 4
+    }
+  ],
+  "low_B_digits": "000",
+  "D_B": 0,
+  "J_B": 0,
+  "terminal_norm": "1286484195985556022150841/27748343886818929373062103040000",
+  "terminal_norm_upper_bound": "1/765",
+  "all_assertions_passed": true
+}

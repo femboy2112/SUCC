@@ -1,0 +1,15 @@
+{
+  "command": [
+    "timeout",
+    "30s",
+    "python",
+    "/workspace/scratch/d2afcbfb001f/SUCC/research/2026-11-17/pro_pi_crucible/audit_adelic_pinned.py"
+  ],
+  "workdir": "/workspace/scratch/d2afcbfb001f/SUCC",
+  "exit_code": 0,
+  "seconds": 0.55,
+  "script_sha256": "8b332385430e0801c82350ccdbfd680f75d56b8977615b345b1bfebe0c9e9783",
+  "scope": "Exact focused late-frontier algebra, not an asymptotic test",
+  "stdout_file": "audit_adelic_pinned.stdout.json",
+  "stderr_file": "audit_adelic_pinned.stderr.log"
+}

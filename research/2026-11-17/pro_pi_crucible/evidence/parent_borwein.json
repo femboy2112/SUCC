@@ -1,0 +1,19 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/workspace/scratch/d2afcbfb001f/frontier_read/657/tests",
+    "-p",
+    "test_borwein_bbp_sweep.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "seconds": 0.578,
+  "stdout": "",
+  "stderr": "test_borwein_energy_is_bounded_by_phase_energy (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_borwein_energy_is_bounded_by_phase_energy) ... ok\ntest_borwein_first_strict_support_escape_volume (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_borwein_first_strict_support_escape_volume) ... ok\ntest_cold_run_uses_exact_radix_expansion (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_cold_run_uses_exact_radix_expansion) ... ok\ntest_fixed_threshold_below_dynamical_barrier (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_fixed_threshold_below_dynamical_barrier) ... ok\ntest_fourier_transfer_never_zero (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_fourier_transfer_never_zero) ... ok\ntest_locked_and_nonunit_fixed_orbits_are_separated (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_locked_and_nonunit_fixed_orbits_are_separated) ... ok\ntest_origin_sweep_has_exact_rational_maximum (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_origin_sweep_has_exact_rational_maximum) ... ok\ntest_original_zero_seed_rational_shadow_and_tail (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_original_zero_seed_rational_shadow_and_tail) ... ok\ntest_two_sinc_leak_is_quadratic_rational_hinge (test_borwein_bbp_sweep.BorweinBbpSweepTests.test_two_sinc_leak_is_quadratic_rational_hinge) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.497s\n\nOK\n"
+}

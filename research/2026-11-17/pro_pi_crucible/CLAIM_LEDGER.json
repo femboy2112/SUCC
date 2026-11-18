@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-11-17",
+  "canonical_base": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "selected_source": "r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2); U_0=0; U_n=16U_(n-1)+r(n)",
+  "proof_authority": "Disclosed means a displayed paper proof within explicit hypotheses, not a formal theorem-prover certificate. Finite observations have separately bounded scope.",
+  "independence": "Four same-model paths and shared repository provenance; separate implementation checks are not external independent witnesses.",
+  "novelty_boundary": "No category D or E result for the missing pi-normality estimate. Local originality is relative to the inspected pinned sources; no external priority claim.",
+  "claims": [
+    {
+      "id": "EPS-01",
+      "state": "Disclosed",
+      "kind": "new_auxiliary_original_source_arithmetic",
+      "statement": "For born p>7 with p^2>8n and K=floor((8n-2)/p), p^2>=19*32^K implies v_p(U_n)=-1.",
+      "proof": "EFFECTIVE_PRIME_SURVIVAL.md",
+      "scope": "Literal original four-pole zero-seeded recurrence; prime valuations, not radix winding.",
+      "normality_novelty_tax": "A: proved auxiliary bound; not D or E for the requested missing coercivity."
+    },
+    {
+      "id": "EPS-02-03",
+      "state": "Disclosed",
+      "kind": "new_auxiliary_original_source_arithmetic",
+      "statement": "For any A>20 log 2, all born p>=A n/log n survive for all sufficiently large n; log(L_n/Q_n)=O(n/log n), with an explicit finite bound.",
+      "proof": "EFFECTIVE_PRIME_SURVIVAL.md",
+      "scope": "Effective growing packet-depth estimate; small primes and powers included in loss.",
+      "normality_novelty_tax": "Auxiliary arithmetic only; does not rule out authentic low-wall shells."
+    },
+    {
+      "id": "EPS-FQR",
+      "state": "Disclosed",
+      "kind": "credited_and_corrected_frontier_refinement",
+      "statement": "The late FQR lane restriction, with normalization repaired to F=16C, gives finite certificate p^2>=19H(K,r)^2 and eventual survival for A>4log2+6.",
+      "proof": "EFFECTIVE_PRIME_SURVIVAL.md",
+      "scope": "Finite certificate is elementary; asymptotic constant uses fixed-modulus PNT. Credit FQR-05; no optimal-threshold or R0 claim."
+    },
+    {
+      "id": "CG-01-PRIOR",
+      "state": "Disclosed",
+      "kind": "inherited_not_new",
+      "statement": "Rate-6 denominator growth and fixed-epsilon prime survival were already proved in inspected main CG-01.",
+      "proof": "SOURCE_MAP.md",
+      "scope": "The attempted rediscovery was retired as a novelty claim."
+    },
+    {
+      "id": "BI-INVERSE",
+      "state": "Disclosed",
+      "kind": "instrument_identity",
+      "statement": "(I+P/8)(mu-Haar)=-(289/288) tau (L*(mu-Haar))''; measure inverse and two-sided h^-2 Fourier conditioning.",
+      "proof": "BORWEIN_INVERSE.md",
+      "scope": "Every circle probability; spatial inversion, no temporal mixing.",
+      "normality_novelty_tax": "A"
+    },
+    {
+      "id": "BI-SUP",
+      "state": "Disclosed",
+      "kind": "instrument_stability",
+      "statement": "D_arc(mu)<=min(1,(34/7)sqrt(Delta)); exponent 1/2 is sharp, constant not claimed sharp.",
+      "proof": "BORWEIN_INVERSE.md",
+      "scope": "All circle probabilities; original-source specialization is a finite certificate.",
+      "normality_novelty_tax": "A; C when evaluated"
+    },
+    {
+      "id": "BI-ENERGY",
+      "state": "Disclosed",
+      "kind": "instrument_stability",
+      "statement": "D_arc(mu)^5 <= (144324288/16807) integral |L*(mu-Haar)|^2; exponent 1/5 is sharp.",
+      "proof": "BORWEIN_ENERGY_STABILITY.md",
+      "scope": "Direct semiconcavity/inverse proof and sharpness example; improves #663 V^(1/6). Late adelic ANC-11 also yields V^(1/5), so no exclusive exponent priority claim. No authentic energy decay.",
+      "normality_novelty_tax": "A; C when evaluated"
+    },
+    {
+      "id": "GSC",
+      "state": "Disclosed",
+      "kind": "hostile_source_theorem",
+      "statement": "Rational positive completely monotone zero-seeded sources can have all-degree relative Hankel error O(16^-B), locally convergent entire completions and unchanged weighted pole obstructions, while their selected B-shell has no walls and zero anchored Borwein response.",
+      "proof": "GAMMA_POSITIVE_SOURCE_SHELL_CLONE.md",
+      "scope": "Source changes with B; extra shifted poles. Not one fixed source with infinitely many cold shells.",
+      "normality_novelty_tax": "No-go for a broader stability bridge, not D/E for pi."
+    },
+    {
+      "id": "GSC-UNIFORM-BRIDGE",
+      "state": "Refuted",
+      "kind": "failed_inference",
+      "statement": "The displayed stable analytic properties alone imply a common positive wall/norm lower bound and common onset throughout a neighborhood of r.",
+      "counterexample": "GSC",
+      "scope": "Locally uniform source-neighborhood theorem only; exact-source R0 not refuted."
+    },
+    {
+      "id": "H-01-03",
+      "state": "Disclosed",
+      "kind": "hostile_source_theorem",
+      "statement": "For each finite M there is one positive decreasing rational-valued zero-seeded source matching the first M terms and all asymptotic coefficients superexponentially, with a radix-rational endpoint and the same four finite meromorphic principal parts.",
+      "proof": "SUPEREXPONENTIAL_LOCKED_SOURCE.md",
+      "scope": "Changed global forcing, not a rational clock function; different complex growth. All late walls vanish.",
+      "normality_novelty_tax": "Combined counterfeit strengthening, not D/E."
+    },
+    {
+      "id": "H-04",
+      "state": "Disclosed",
+      "kind": "decisive_hostile_property_test",
+      "statement": "The concrete M=0 flat counterfeit has a negative alternating difference at clock 3 of order 100000000, bounded above by an exact rational below -10^-15.",
+      "proof": "SUPEREXPONENTIAL_LOCKED_SOURCE.md",
+      "scope": "Analytic tail bound and exact finite rationals; no enumeration of 100000001 terms."
+    },
+    {
+      "id": "H-POSITIVE-MOMENT-CLAIM",
+      "state": "Refuted",
+      "kind": "failed_counterfeit_extension",
+      "statement": "The concrete flat locked counterfeit also admits a positive Hausdorff moment representation.",
+      "counterexample": "H-04",
+      "scope": "This counterfeit only; it must not be conflated with the different GSC positive-moment source."
+    },
+    {
+      "id": "GG-01",
+      "state": "Disclosed",
+      "kind": "global_gauge_control",
+      "statement": "A single integer gauge preserves the completed pi orbit, zero seed and every fractional state but erases every even-terminal raw radix suffix.",
+      "proof": "CRUCIBLE.md",
+      "scope": "Changed forcing and large transformed tail; original small-tail equivalence is not applicable."
+    },
+    {
+      "id": "TIME-CONTRACTION",
+      "state": "Refuted",
+      "kind": "failed_inference",
+      "statement": "The Borwein inverse Neumann factor 1/8 forces empirical measures toward Haar under multiplication by 16.",
+      "counterexample": "delta_0 and delta_(1/15)",
+      "scope": "Spatial inversion contraction was misidentified as chronological dynamics."
+    },
+    {
+      "id": "FINITE-EXACT-PROBES",
+      "state": "Observed",
+      "kind": "finite_implementation_validation",
+      "statement": "27 focused new tests, 145 separate edge-audit cases, known prime cancellations, 10 cross-implementation exact swept maxima and the listed parent replays passed. The configured full suite ran 14503 tests with two pinned-Lean skips; later standalone exact audits are separately scoped in VALIDATION.md.",
+      "proof": "TESTS.md",
+      "scope": "See receipts for exact commands; no all-B inference from a finite run."
+    },
+    {
+      "id": "M-01-03",
+      "state": "Disclosed",
+      "kind": "joint_original_source_arithmetic",
+      "statement": "For the EPS-certified mesoscopic inventory, log q=O(B/log B). Preserving reduced Q, the 2-adic shell residue and selected prime principal parts permits exactly phi(q) terminal words eventually, with a complete finite progression and conditional zero-word criterion.",
+      "proof": "MESOSCOPIC_CRT_RIGIDITY.md",
+      "scope": "No exclusion of authentic low-wall words; q<=16^B is required for injectivity and the single-residue zero-word test.",
+      "normality_novelty_tax": "Auxiliary arithmetic, not D/E."
+    },
+    {
+      "id": "M-04",
+      "state": "Disclosed",
+      "kind": "credited_frontier_corollary",
+      "statement": "For the actual surviving simple-prime inventory credited to FQR-06/07 at 9ff8544c, the exact count is phi(q^ram)<=exp(O(sqrt B)); an elementary prime-power bound proves the cofactor size.",
+      "proof": "MESOSCOPIC_CRT_RIGIDITY.md",
+      "scope": "Stronger supplied inventory; not a theorem that all born primes above sqrt(16B) survive. No signed phase saving.",
+      "normality_novelty_tax": "Credited inventory plus exact-classification corollary; not D/E."
+    },
+    {
+      "id": "ANC12-REDUCED-DENOMINATOR",
+      "state": "Refuted",
+      "kind": "exact_counterexample_to_competing_claim",
+      "statement": "The published R_sharp=N mod(16^B Pi_star) construction always preserves the reduced denominator Q.",
+      "counterexample": "Literal B=3: gcd(R_sharp,Q)=3, so shadow denominator Q/3.",
+      "proof": "ANC12_EVENTUAL_REPAIR.md",
+      "scope": "Historical97c7433 claim persists unchanged at9ff8544c; finite exact failure, no original-source R0 refutation."
+    },
+    {
+      "id": "R-ANC12",
+      "state": "Disclosed",
+      "kind": "corrected_eventual_projection_counterexample",
+      "statement": "A primitive progression sieve repairs exact-denominator shadow preservation for all sufficiently large B with the stated small selected prime bands; all-zero terminal words coexist with those projections.",
+      "proof": "ANC12_EVENTUAL_REPAIR.md",
+      "scope": "Imports mainCG-01 and fixed-modulus prime-band asymptotics. No explicit B0 or all-B>=2 claim; shell-dependent rational shadows, not authentic histories."
+    },
+    {
+      "id": "ADELIC-SIGN-CHARACTER",
+      "state": "Refuted",
+      "kind": "exact_symbolic_claim_corrections",
+      "statement": "ANC7 printed primitive differentiates to its displayed authentic series, and ANC13 Gaussian sum equals4(alpha3-alpha4) on its full domain.",
+      "proof": "LATE_FRONTIER_AUDIT.md",
+      "scope": "The corrected null-seed theorem and eight-column partial-fraction matrix survive; no normality conclusion."
+    },
+    {
+      "id": "H-05",
+      "state": "Disclosed",
+      "kind": "source_extension_counterfeit_property",
+      "statement": "The H-03 complex meromorphic extension equals r at every nonpositive integer, hence its discrete 2-adic backward seed is0 despite its radix-rational forward completion.",
+      "proof": "SUPEREXPONENTIAL_LOCKED_SOURCE.md",
+      "scope": "Uses repaired authentic null-seed theorem. Does not construct a common analytic clock on Z2 or establish positive-index2adic integrality."
+    },
+    {
+      "id": "FQR10-H-BACKWARD-SEED",
+      "state": "Refuted",
+      "kind": "incorrect_hostile_source_attribution",
+      "statement": "The explicit H-03 extension has backward seed -q rather than0.",
+      "counterexample": "H-05, sinc vanishing at every nonpositive integer.",
+      "scope": "Does not refute a stronger analytic-clock source discriminator."
+    },
+    {
+      "id": "FQR-CORRECTIONS",
+      "state": "Disclosed",
+      "kind": "bounded_audit_and_corrected_identities",
+      "statement": "Printed valuation range and normalized denominator bound have exact small counterexamples. Top-block arithmetic requires modular wrap; corrected actual-simple-prime fiber and lane-height bounds survive.",
+      "proof": "audits/FQR_FRONTIER_ADDENDUM.md",
+      "scope": "Generic wrap example is not an authentic-source counterexample. No all-B no-wrap conclusion from the finite scan."
+    },
+    {
+      "id": "SOFTWARE-GATES",
+      "state": "Observed",
+      "kind": "execution_validation",
+      "statement": "Configured local full suite:14503 tests run,2 pinned-Lean skips,exit0. First published1d33174c hosted checks:19 successes.",
+      "proof": "VALIDATION.md",
+      "scope": "New final documentation/standalone probes retain separately scoped receipts. Software gates do not certify universal mathematical proofs."
+    },
+    {
+      "id": "PI-TERMINAL-COERCIVITY",
+      "state": "UNVERIFIED",
+      "kind": "original_source_asymptotic_target",
+      "statement": "liminf_B R_B>0, equivalently positive late domain-wall density.",
+      "scope": "No universal lower bound established; no counterexample to the original source established."
+    },
+    {
+      "id": "PI-R0",
+      "state": "UNVERIFIED",
+      "kind": "original_source_asymptotic_target",
+      "statement": "Original-source R0.",
+      "scope": "OPEN."
+    },
+    {
+      "id": "PI-SWEPT-CONVERGENCE",
+      "state": "UNVERIFIED",
+      "kind": "original_source_asymptotic_target",
+      "statement": "widehat Delta_B ->0, equivalently authentic #663 squared energy ->0.",
+      "scope": "OPEN."
+    },
+    {
+      "id": "PI-FULL-NORMALITY",
+      "state": "UNVERIFIED",
+      "kind": "original_source_asymptotic_target",
+      "statement": "All nonzero base-16 Weyl prefix means for pi/16 tend to zero.",
+      "scope": "OPEN; no candidate universal proof was promoted."
+    }
+  ],
+  "diagnostics": {
+    "contact": "Source and tool contact established at pinned heads.",
+    "phi_pathway": "Local prime, CRT and observer lemmas resolved; authentic selection inside the shrinking word fiber and signed cancellation unresolved.",
+    "sigma_source_map": "Adequate for stated local theorems and controls; no claim it characterizes normality.",
+    "rho_commitment": "Competitive motivation supplies no evidential weight.",
+    "mu_probes": "Finite exact probes available; universal original-source estimate remains unproved.",
+    "scalar_truth_score": null
+  }
+}

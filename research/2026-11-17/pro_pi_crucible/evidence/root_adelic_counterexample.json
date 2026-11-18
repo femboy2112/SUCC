@@ -1,0 +1,39 @@
+{
+  "source_commit_audited": "97c7433371feca631991a1b8227b656e92e4abcb",
+  "implementation": "root existing literal four-pole recurrence",
+  "B": 3,
+  "U": "80827484660698633414/24536311574775",
+  "Q": 24536311574775,
+  "Pi": 19224941,
+  "R_bad": 67379365062,
+  "gcd_bad": 3,
+  "bad_denominator": 8178770524925,
+  "repaired_R": 146124723398,
+  "repaired_V": "80802588843188556998/24536311574775",
+  "repaired_denominator": 24536311574775,
+  "common_two_adic_residue_mod_4096": 1514,
+  "principal_parts": [
+    {
+      "p": 19,
+      "principal_part": 11
+    },
+    {
+      "p": 23,
+      "principal_part": 11
+    },
+    {
+      "p": 29,
+      "principal_part": 5
+    },
+    {
+      "p": 37,
+      "principal_part": 21
+    },
+    {
+      "p": 41,
+      "principal_part": 4
+    }
+  ],
+  "exit_code": 0,
+  "scope": "Exact counterexample to ANC-12 reduced denominator assertion, and one finite repaired candidate; not an all-B proof."
+}

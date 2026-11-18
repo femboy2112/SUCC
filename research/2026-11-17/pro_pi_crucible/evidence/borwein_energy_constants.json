@@ -1,0 +1,18 @@
+{
+  "status": "EXACT_RATIONAL_CALIBRATION",
+  "universal_proofs": "BORWEIN_L2_OPTIONAL_APPENDIX.md",
+  "pr663_head": "16d04ab58e213e75ab47e61a170138196dbcd292",
+  "inverse_factor": "289/126",
+  "semiconcavity_K": "324/289",
+  "fifth_power_coefficient": "144324288/16807",
+  "packet_low_frequency_constant": "729/167042",
+  "packet_high_frequency_upper_constant_using_pi_gt_3": "216/83521",
+  "packet_total_upper_constant": "1161/167042",
+  "checks_passed": 4,
+  "not_claimed": [
+    "energy_decay_for_original_BBP",
+    "broad_test_suite",
+    "formal_verification",
+    "external_referee"
+  ]
+}

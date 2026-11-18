@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "Four finite M-02 calibrations; no EPS threshold asserted for Y=7 at n=6",
+  "cases": [
+    {
+      "name": "small two-prime example",
+      "B": 1,
+      "Q": "15",
+      "Pi": "3",
+      "q": 5,
+      "admissible_t": 4,
+      "distinct_words": 4,
+      "phi_q": 4,
+      "q_le_radix": true,
+      "authentic_word_in_set": true,
+      "zero_word_present": true,
+      "t0": 2,
+      "reverse_enumeration_performed": true
+    },
+    {
+      "name": "q equals one",
+      "B": 1,
+      "Q": "105",
+      "Pi": "105",
+      "q": 1,
+      "admissible_t": 1,
+      "distinct_words": 1,
+      "phi_q": 1,
+      "q_le_radix": true,
+      "authentic_word_in_set": true,
+      "zero_word_present": true,
+      "t0": 0,
+      "reverse_enumeration_performed": true
+    },
+    {
+      "name": "q exceeds radix; no injectivity claim",
+      "B": 1,
+      "Q": "255",
+      "Pi": "15",
+      "q": 17,
+      "admissible_t": 16,
+      "distinct_words": 15,
+      "phi_q": 16,
+      "q_le_radix": false,
+      "authentic_word_in_set": true,
+      "zero_word_present": true,
+      "t0": 0,
+      "reverse_enumeration_performed": true
+    },
+    {
+      "name": "literal U6, all denominator primes above seven",
+      "B": 3,
+      "Q": "24536311574775",
+      "Pi": "46735831571",
+      "q": 525,
+      "admissible_t": 240,
+      "distinct_words": 240,
+      "phi_q": 240,
+      "q_le_radix": true,
+      "authentic_word_in_set": true,
+      "zero_word_present": true,
+      "t0": 215,
+      "reverse_enumeration_performed": false
+    }
+  ]
+}
