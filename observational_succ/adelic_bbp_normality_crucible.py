@@ -421,3 +421,134 @@ def construct_adelic_crt_shadow(B):
         "fits_in_single_unit_interval": r_sharp < q_2b,
         "V_sharp": v_sharp,
     }
+
+
+def bbp_partial_sum_r1(K):
+    """Exact K-th partial sum P_K^(r1) = sum_{n=1}^K 16^(-n) r_1(n)."""
+    if type(K) is not int or K < 0:
+        raise ValueError("nonnegative integer K required")
+    return sum((F(1, 16 ** n) * source_r_any_int(n) for n in range(1, K + 1)), F(0))
+
+
+def bbp_partial_sum_r2(K):
+    """Exact K-th partial sum P_K^(r2) = sum_{n=1}^K 16^(-n) r_2(n) of second BBP formula."""
+    if type(K) is not int or K < 0:
+        raise ValueError("nonnegative integer K required")
+    return sum((F(1, 16 ** n) * source_r2_any_int(n) for n in range(1, K + 1)), F(0))
+
+
+def exact_qr_fermat_coeff(p, N):
+    """Compute the exact rational Fermat-Quadratic-Reciprocity coefficient C_{p mod 8}(p, N)
+    such that for every prime p > sqrt(8N) (p >= 7):
+      p * U_N(0) == 16^N * C_{p mod 8}(p, N) (mod p Z_{(p)}).
+    """
+    if type(p) is not int or p < 7 or not _is_prime(p):
+        raise ValueError("prime p >= 7 required")
+    if type(N) is not int or N < 1:
+        raise ValueError("positive integer horizon N required")
+    leg2 = 1 if (p % 8 in (1, 7)) else -1
+    total = F(0)
+    for m in range(1, (8 * N - 7) // p + 1, 2):
+        if (m * p) % 8 == 1:
+            total += leg2 * F(4, m * (2 ** ((m + 7) // 2)))
+    for m in range(1, (8 * N - 3) // p + 1, 2):
+        if (m * p) % 8 == 5:
+            total -= leg2 * F(1, m * (2 ** ((m + 3) // 2)))
+    for m in range(1, (4 * N - 1) // p + 1, 2):
+        if (m * p) % 4 == 3:
+            total -= F(1, m * (2 ** (m + 2)))
+    for m in range(1, (2 * N - 1) // p + 1, 2):
+        total -= F(1, m * (2 ** (2 * m + 3)))
+    return total
+
+
+def lane_restricted_odd_lcm(K, r4):
+    """Compute the lane-restricted odd LCM D_odd(K, r4) for r4 = p mod 4 in {1, 3}.
+
+    In (K/2, K], only odd integers k == r4 (mod 4) can appear in C_{p mod 8}(p, N),
+    cutting the asymptotic log-LCM exponent from ChatGPT's log(4) ~ 1.3863 down to 3/4 = 0.75.
+    """
+    if type(K) is not int or K < 1 or r4 not in (1, 3):
+        raise ValueError("K >= 1 and r4 in {1, 3} required")
+    val = 1
+    for k in range(1, K + 1, 2):
+        if (k % 4 == r4) or (k <= K // 2):
+            val = (val * k) // gcd(val, k)
+    return val
+
+
+def ramified_cofactor_master_congruence(B):
+    """Compute the FQR-06/07 Ramified-Cofactor Master Carry Congruence data on shell B >= 2.
+
+    Factors Q_2B = Q_ram * Pi_simple where Pi_simple is the product of all simple-pole
+    primes p > max(6, isqrt(16*B)) dividing Q_2B, reconstructs R_tilde in [0, Pi_simple - 1]
+    purely from exact_qr_fermat_coeff(p, 2B), and computes Z_B^FQR mod 16^B.
+    """
+    if type(B) is not int or B < 1:
+        raise ValueError("positive integer B required")
+    n_hor = 2 * B
+    u_2b = U(n_hor)
+    n_2b, q_2b = u_2b.numerator, u_2b.denominator
+    c_2b = n_2b // q_2b
+    r_2b = n_2b % q_2b
+    lo_p = max(7, isqrt(8 * n_hor) + 1)
+    pi_simple = 1
+    primes_simple = []
+    for p in range(lo_p, 8 * n_hor):
+        if _is_prime(p) and (q_2b % p == 0):
+            pi_simple *= p
+            primes_simple.append(p)
+    q_ram = q_2b // pi_simple
+    l_ram = (q_ram.bit_length() + 3) // 4
+    r_tilde = 0
+    for p in primes_simple:
+        c_rat = exact_qr_fermat_coeff(p, n_hor)
+        p_un_mod_p = (pow(16, n_hor, p) * c_rat.numerator * pow(c_rat.denominator, -1, p)) % p
+        m_p = pi_simple // p
+        n_mod_p = (q_ram * m_p * p_un_mod_p) % p
+        r_tilde = (r_tilde + n_mod_p * m_p * pow(m_p, -1, p)) % pi_simple
+    m_2b = (r_2b - r_tilde) // pi_simple
+    mod = 16 ** B
+    u_b_2adic = sum(
+        (z2_mod(source_r_any_int(2 * B - m), B - m) << (4 * m)) % mod
+        for m in range(B)
+    ) % mod
+    z_fqr = (q_ram * u_b_2adic - z2_mod(F(r_tilde, pi_simple), B)) % mod
+    scaled_u = q_ram * u_2b
+    scaled_floor_mod = (scaled_u.numerator // scaled_u.denominator) % mod
+    scaled_frac = scaled_u - (scaled_u.numerator // scaled_u.denominator)
+    return {
+        "B": B,
+        "Q_2B": q_2b,
+        "Pi_simple": pi_simple,
+        "Q_ram": q_ram,
+        "L_ram": l_ram,
+        "R_tilde": r_tilde,
+        "m_2B": m_2b,
+        "Z_FQR": z_fqr,
+        "scaled_floor_mod": scaled_floor_mod,
+        "scaled_frac": scaled_frac,
+        "twisted_C_mod": (q_ram * c_2b) % mod,
+    }
+
+
+def exact_grid_borwein_energy_9div(N):
+    """Exact closed-form rational value V_N^grid = 576 / (417605 * N^4) when 9 | N (FQR-08)."""
+    if type(N) is not int or N < 9 or N % 9 != 0:
+        raise ValueError("positive integer N divisible by 9 required")
+    return F(576, 417605 * (N ** 4))
+
+
+def sharp_fejer_atomic_floor(N):
+    """Upgraded universal finite atomic Borwein floor using M = ceil(4N/3) and c_*^sharp (FQR-09).
+
+    For M = (4N + 2)//3 > N, sum_{h=1}^{M-1} |M_h|^2 >= (M/N - 1)/2, so
+      V_N >= (c_*^sharp)^2 * (M - N) / (N * (M - 1)^4).
+    Asymptotically (27/256) * (c_*^sharp)^2 / N^4, which is (13/10)^2 * (27/16) = 4563/1600
+    (~ 2.8519x) larger than WPG-01's (c_*)^2 / (16 N^4).
+    """
+    if type(N) is not int or N < 1:
+        raise ValueError("positive integer N required")
+    m_bw = (4 * N + 3) // 3
+    return (SHARP_FOURIER_FLOOR ** 2) * F(m_bw - N, N * ((m_bw - 1) ** 4))
+

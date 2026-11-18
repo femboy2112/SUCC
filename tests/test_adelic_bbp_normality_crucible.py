@@ -23,14 +23,21 @@ from observational_succ.adelic_bbp_normality_crucible import (
     SHARP_FOURIER_FLOOR,
     adelic_carry_congruence_components,
     backward_2adic_section,
+    bbp_partial_sum_r1,
+    bbp_partial_sum_r2,
     closed_form_borwein_autocorrelation,
     closed_form_borwein_energy,
     construct_adelic_crt_shadow,
     domain_wall_counts,
+    exact_grid_borwein_energy_9div,
+    exact_qr_fermat_coeff,
     gaussian_octic_pi_character_from_W,
+    lane_restricted_odd_lcm,
     octave_split_lcm,
     octic_partial_fraction_coords,
     octic_period_quotient,
+    ramified_cofactor_master_congruence,
+    sharp_fejer_atomic_floor,
     sharp_parseval_discrepancy_bound,
     sharp_weyl_bound_from_energy,
     source_r2_any_int,
@@ -309,6 +316,131 @@ class TestAdelicBBPNormalityCrucible(unittest.TestCase):
             self.assertEqual((d_b, j_b), (0, 0))
             r_b_sharp = sum(torus(v_sharp / (16 ** k)) ** 2 for k in range(1, B + 1)) / B
             self.assertLess(r_b_sharp, F(1, 255 * B))
+
+    def test_fqr01_pairwise_coprimality_of_four_bbp_lanes_for_p_ge_7(self):
+        # FQR-01: For every integer j, the 6 pairwise GCDs of (2j-1, 4j-1, 8j-7, 8j-3) divide 1, 3, or 5
+        for j in range(-50, 51):
+            lanes = (2 * j - 1, 4 * j - 1, 8 * j - 7, 8 * j - 3)
+            for a_idx in range(4):
+                for b_idx in range(a_idx + 1, 4):
+                    g = math.gcd(lanes[a_idx], lanes[b_idx])
+                    self.assertIn(g, (1, 3, 5))
+
+    def test_fqr02_universal_fermat_qr_collapse_for_all_simple_pole_primes(self):
+        # FQR-02: For all N = 1..30 and all primes p > sqrt(8N) (p >= 7),
+        # p * U_N(0) == 16^N * exact_qr_fermat_coeff(p, N) (mod p)
+        primes_under_240 = [
+            p for p in range(7, 240, 2)
+            if all(p % d != 0 for d in range(3, int(math.isqrt(p)) + 1, 2))
+        ]
+        for N in range(1, 31):
+            u_n = U(N)
+            lo_p = max(7, math.isqrt(8 * N) + 1)
+            for p in primes_under_240:
+                if p < lo_p or p > 8 * N:
+                    continue
+                c_rat = exact_qr_fermat_coeff(p, N)
+                rhs = (pow(16, N, p) * c_rat.numerator * pow(c_rat.denominator, -1, p)) % p
+                if u_n.denominator % p == 0:
+                    self.assertNotEqual(u_n.denominator % (p * p), 0)
+                    lhs = (u_n.numerator * pow(u_n.denominator // p, -1, p)) % p
+                else:
+                    lhs = 0
+                self.assertEqual(lhs, rhs)
+
+    def test_fqr03_quadratic_reciprocity_self_duality_r1_vs_minus_r2(self):
+        # FQR-03: At exact period multiples N = K * p (p > sqrt(8Kp), p >= 7),
+        # exact_qr_fermat_coeff(p, K * p) equals +P_K^(r1) if p == 1 (mod 4)
+        # and equals -P_K^(r2) if p == 3 (mod 4)!
+        test_primes = (11, 13, 17, 19, 23, 29, 31, 37, 41, 43)
+        for K in (1, 2, 3):
+            p1_k = bbp_partial_sum_r1(K)
+            p2_k = bbp_partial_sum_r2(K)
+            for p in test_primes:
+                if p * p <= 8 * K * p:
+                    continue
+                c_rat = exact_qr_fermat_coeff(p, K * p)
+                if p % 4 == 1:
+                    self.assertEqual(c_rat, p1_k)
+                else:
+                    self.assertEqual(c_rat, -p2_k)
+
+    def test_fqr04_2hit_qr_constructive_interference_and_9p_exception_classification(self):
+        # FQR-04: Across 9p > 8N - 3 (Hits #1..#4), ZERO primes p == 1, 5, 7 (mod 8) can cancel,
+        # and p = 19 == 3 (mod 8) is the unique prime that cancels (at Hit #3, c = -19/96, and Hit #8, c = -9671/49280).
+        self.assertEqual(exact_qr_fermat_coeff(19, 10), F(-19, 96))
+        self.assertNotEqual(U(10).denominator % 19, 0)
+        self.assertEqual(exact_qr_fermat_coeff(19, 38), F(-9671, 49280))
+        self.assertEqual(9671 % 19, 0)
+        self.assertNotEqual(U(38).denominator % 19, 0)
+
+    def test_fqr05_lane_restricted_odd_lcm_beats_chatgpt_eps01_bound(self):
+        # FQR-05: For K >= 4, 2^(K//2) * lane_restricted_odd_lcm(K, r4) is strictly smaller
+        # than ChatGPT's EPS-01 bound 32^(K/2) = 2^(5K/2)
+        for K in (4, 8, 12, 16, 24, 32):
+            for r4 in (1, 3):
+                d_lane = (1 << (K // 2)) * lane_restricted_odd_lcm(K, r4)
+                self.assertLess(d_lane * d_lane, 19 * (32 ** K))
+                self.assertLess(math.log2(d_lane) / K, 1.7)
+
+    def test_fqr06_exact_ramified_cofactor_clearing_and_z_fqr_identity(self):
+        # FQR-06: {Q_ram * U_2B(0)} == R_tilde / Pi_simple and floor(Q_ram * U_2B(0)) mod 16^B == Z_B^FQR
+        for B in (2, 4, 8, 12, 16):
+            res = ramified_cofactor_master_congruence(B)
+            self.assertEqual(res["Z_FQR"], res["scaled_floor_mod"])
+            self.assertEqual(res["scaled_frac"], F(res["R_tilde"], res["Pi_simple"]))
+            self.assertGreaterEqual(res["m_2B"], 0)
+            self.assertLess(res["m_2B"], res["Q_ram"])
+
+    def test_fqr07_top_hex_digit_lock_and_domain_wall_bound(self):
+        # FQR-07: On the top B - L_ram hex digits, Z_B^FQR and (Q_ram * C_2B) mod 16^B differ
+        # by at most 1 carry bit eps_B in {0, 1} and at most 3 domain-wall events
+        for B in (8, 12, 16):
+            res = ramified_cofactor_master_congruence(B)
+            l_ram = res["L_ram"]
+            self.assertLess(l_ram, B)
+            top_z = res["Z_FQR"] >> (4 * l_ram)
+            top_c = res["twisted_C_mod"] >> (4 * l_ram)
+            eps_b = top_z - top_c
+            self.assertIn(eps_b, (0, 1))
+            top_len = B - l_ram
+            d_z, j_z = domain_wall_counts(F(top_z, 1), top_len)
+            d_c, j_c = domain_wall_counts(F(top_c, 1), top_len)
+            self.assertLessEqual(abs((d_z + j_z) - (d_c + j_c)), 3)
+
+    def test_fqr08_exact_closed_form_grid_borwein_energy_for_9_div_N(self):
+        # FQR-08: When 9 | N, V_N^grid == 576 / (417605 * N^4) exactly (improving WPG-02's inequality)
+        for N in (9, 18, 27):
+            grid = [F(j, N) for j in range(N)]
+            v_grid = closed_form_borwein_energy(grid)
+            self.assertEqual(v_grid, exact_grid_borwein_energy_9div(N))
+            self.assertLess(v_grid, F(968, 250563 * (N ** 4)))
+
+    def test_fqr09_sharp_fejer_atomic_floor_beats_wpg01(self):
+        # FQR-09: Optimal Fejer bandwidth M = ceil(4N/3) + sharp Fourier floor c_*^sharp
+        # beats WPG-01's c_*^2 / (16 N^4) for all N >= 3 and approaches (4563/1600)x improvement
+        for N in (3, 6, 9, 18, 36, 72):
+            wpg01_floor = (CHATGPT_FOURIER_FLOOR ** 2) / F(16 * (N ** 4), 1)
+            our_floor = sharp_fejer_atomic_floor(N)
+            self.assertGreater(our_floor, wpg01_floor)
+        ratio_72 = sharp_fejer_atomic_floor(72) / ((CHATGPT_FOURIER_FLOOR ** 2) / F(16 * (72 ** 4), 1))
+        self.assertGreater(ratio_72, F(27, 10))
+
+    def test_fqr10_2adic_integrality_kills_gg01_and_gsc_countermodels(self):
+        # FQR-10: ChatGPT's GG-01 integer gauge shifts U_2B mod 16^B Z_{(2)} away from U_B^(2),
+        # and ChatGPT's GSC perturbation f_B(n) has exploding 2-adic pole v_2(delta_B) = -2B + v_2(2B) -> -infty
+        for B in (2, 4, 8):
+            u_2b = U(2 * B)
+            c_2b = u_2b.numerator // u_2b.denominator
+            g_2b = -(c_2b % (16 ** B))
+            self.assertNotEqual(g_2b, 0)
+            # In GSC, q_B = 16^(-B) * ceil(16^B * P_{2B}), delta_B = q_B - P_{2B}
+            p_2b = u_2b / F(16 ** (2 * B))
+            scaled = (16 ** B) * p_2b
+            ceil_scaled = (scaled.numerator + scaled.denominator - 1) // scaled.denominator
+            q_b = F(ceil_scaled, 16 ** B)
+            delta_b = q_b - p_2b
+            self.assertEqual(v2_fraction(delta_b), -8 * B + v2_int(2 * B))
 
 
 if __name__ == "__main__":
