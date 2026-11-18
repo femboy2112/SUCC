@@ -1,0 +1,20 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_integer_bbp_carrier.py",
+    "-v"
+  ],
+  "cwd_commit": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "exit_code": 0,
+  "seconds": 0.923,
+  "stdout": "",
+  "stderr": "test_actual_N_program_is_total_injective_and_not_ordinary_succ (test_integer_bbp_carrier.IntegerHostAndSource.test_actual_N_program_is_total_injective_and_not_ordinary_succ) ... ok\ntest_full_unwrapped_and_circle_recurrences_and_literal_carries (test_integer_bbp_carrier.IntegerHostAndSource.test_full_unwrapped_and_circle_recurrences_and_literal_carries) ... ok\ntest_least_nested_conductor_and_odd_lcm_upper_bound (test_integer_bbp_carrier.IntegerHostAndSource.test_least_nested_conductor_and_odd_lcm_upper_bound) ... ok\ntest_literal_carry16_is_not_hex_digit_zero (test_integer_bbp_carrier.IntegerHostAndSource.test_literal_carry16_is_not_hex_digit_zero) ... ok\ntest_odd_finite_phase_transition_is_injective_with_exact_partial_inverse (test_integer_bbp_carrier.IntegerHostAndSource.test_odd_finite_phase_transition_is_injective_with_exact_partial_inverse) ... ok\ntest_odd_reduced_source_against_original_four_poles (test_integer_bbp_carrier.IntegerHostAndSource.test_odd_reduced_source_against_original_four_poles) ... ok\ntest_recover_complete_phase_history_and_carries_from_final_integer (test_integer_bbp_carrier.IntegerHostAndSource.test_recover_complete_phase_history_and_carries_from_final_integer) ... ok\ntest_all_finite_phase_history_in_one_odd_clock (test_integer_bbp_carrier.ObserversAndLimits.test_all_finite_phase_history_in_one_odd_clock) ... ok\ntest_all_finite_time_congruence_decoders_have_real_error_floor (test_integer_bbp_carrier.ObserversAndLimits.test_all_finite_time_congruence_decoders_have_real_error_floor) ... ok\ntest_boundaries_in_true_digit_carry_cocycle (test_integer_bbp_carrier.ObserversAndLimits.test_boundaries_in_true_digit_carry_cocycle) ... ok\ntest_lossless_forward_transition_can_have_discontinuous_circle_inverse (test_integer_bbp_carrier.ObserversAndLimits.test_lossless_forward_transition_can_have_discontinuous_circle_inverse) ... ok\ntest_positive_odd_rational_fake_has_same_host_but_nonnormal_orbit (test_integer_bbp_carrier.ObserversAndLimits.test_positive_odd_rational_fake_has_same_host_but_nonnormal_orbit) ... ok\ntest_source_pair_collision_count_matches_independent_fraction_oracle (test_integer_bbp_carrier.ObserversAndLimits.test_source_pair_collision_count_matches_independent_fraction_oracle) ... ok\ntest_state_domain_and_source_mutants_fail_closed (test_integer_bbp_carrier.ObserversAndLimits.test_state_domain_and_source_mutants_fail_closed) ... ok\ntest_true_pi_digits_source_only_and_independent_machin_interval (test_integer_bbp_carrier.ObserversAndLimits.test_true_pi_digits_source_only_and_independent_machin_interval) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.806s\n\nOK\n"
+}

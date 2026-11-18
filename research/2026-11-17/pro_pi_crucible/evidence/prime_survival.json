@@ -1,0 +1,153 @@
+{
+  "candidate": "p^2 >= 19*32^K implies p survives, K=floor((8n-2)/p)",
+  "holdouts": [
+    17,
+    33,
+    65,
+    129,
+    257,
+    513,
+    1025
+  ],
+  "exact_residue_checks": 1665,
+  "certificate_cases": 988,
+  "sign_mutation_rejections": 1662,
+  "rows": [
+    {
+      "n": 17,
+      "exact_prime_checks": 20,
+      "cutoff_certified_primes": 6,
+      "native_denominator_bits": 137,
+      "reduced_denominator_bits": 137
+    },
+    {
+      "n": 33,
+      "exact_prime_checks": 37,
+      "cutoff_certified_primes": 11,
+      "native_denominator_bits": 271,
+      "reduced_denominator_bits": 271
+    },
+    {
+      "n": 65,
+      "exact_prime_checks": 67,
+      "cutoff_certified_primes": 36,
+      "native_denominator_bits": 542,
+      "reduced_denominator_bits": 542
+    },
+    {
+      "n": 129,
+      "exact_prime_checks": 124,
+      "cutoff_certified_primes": 67,
+      "native_denominator_bits": 1116,
+      "reduced_denominator_bits": 1110
+    },
+    {
+      "n": 257,
+      "exact_prime_checks": 225,
+      "cutoff_certified_primes": 115,
+      "native_denominator_bits": 2192,
+      "reduced_denominator_bits": 2183
+    },
+    {
+      "n": 513,
+      "exact_prime_checks": 418,
+      "cutoff_certified_primes": 264,
+      "native_denominator_bits": 4431,
+      "reduced_denominator_bits": 4423
+    },
+    {
+      "n": 1025,
+      "exact_prime_checks": 774,
+      "cutoff_certified_primes": 489,
+      "native_denominator_bits": 8894,
+      "reduced_denominator_bits": 8894
+    }
+  ],
+  "known_cancellations": [
+    {
+      "n": 10,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 4,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 11,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 4,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 12,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 4,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 13,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 5,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 14,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 5,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 15,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 6,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 16,
+      "p": 19,
+      "coefficient": "-19/6",
+      "K": 6,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    },
+    {
+      "n": 274,
+      "p": 73,
+      "coefficient": "357201535487/113700787200",
+      "K": 30,
+      "cancelled": true,
+      "cutoff_correctly_not_satisfied": true
+    }
+  ],
+  "observed_cancellations": [
+    {
+      "n": 129,
+      "p": 37,
+      "K": 27,
+      "coefficient": "12317427613/3920716800"
+    },
+    {
+      "n": 257,
+      "p": 47,
+      "K": 43,
+      "coefficient": "-55104637126801771/17540351009685504"
+    },
+    {
+      "n": 513,
+      "p": 113,
+      "K": 36,
+      "coefficient": "45721811122811/14553700761600"
+    }
+  ],
+  "scope": "Exact finite rational observations; universal proof separate. R0 and normality OPEN."
+}

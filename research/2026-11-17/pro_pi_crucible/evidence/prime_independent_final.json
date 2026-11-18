@@ -1,0 +1,19 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "research/2026-11-17/pro_pi_crucible/prime_independent_audit.py"
+  ],
+  "cwd_base": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "environment_overrides": {
+    "PYTHONPATH": "/workspace/scratch/d2afcbfb001f/SUCC",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "seconds": 0.037,
+  "stdout": "PASS: 128 exact principal-part cases, 17 LCM cases; 145 total cases.\nBorn-time cases by prime: [(11, 13), (13, 20), (17, 34), (23, 61)]\nEach principal-part case checks direct original recurrence, four-lane normalization, rational sign, absolute bound and denominator height; certified cases also check survival.\nScope: same-model independent implementation; finite edge audit, not a universal proof or external mathematical referee.\n",
+  "stderr": ""
+}
