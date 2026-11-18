@@ -1,0 +1,13 @@
+{
+  "gate": "provenance",
+  "command": [
+    "python",
+    "scripts/verify_provenance.py"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 0.065,
+  "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+  "published_log": "provenance.txt",
+  "published_log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+  "log_normalization": "absolute execution root replaced with <repo>; mathematical output unchanged"
+}

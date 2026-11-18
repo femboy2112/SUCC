@@ -189,12 +189,15 @@ class P3CarryObstruction(unittest.TestCase):
 
 class CrossCheckIndependentOracle(unittest.TestCase):
     def test_p1_oracle_agrees(self):
-        for r in (1, 2, 3, 4, 5, 6):
-            theta_sym, is_root = ORACLE.locus_root_substitution(r)
-            self.assertTrue(is_root, f"oracle: lambda^r not an exact root at r={r}")
-            _, least = ORACLE.least_root_numeric(r)
-            self.assertIsNotNone(least)
-            self.assertLess(abs(least - LAMF ** r), mp.mpf(10) ** (-45))
+        # Other research tests change mpmath's process-global precision.
+        # This 45-digit comparison must declare and restore its own budget.
+        with mp.workdps(60):
+            for r in (1, 2, 3, 4, 5, 6):
+                theta_sym, is_root = ORACLE.locus_root_substitution(r)
+                self.assertTrue(is_root, f"oracle: lambda^r not an exact root at r={r}")
+                _, least = ORACLE.least_root_numeric(r)
+                self.assertIsNotNone(least)
+                self.assertLess(abs(least - LAMF ** r), mp.mpf(10) ** (-45))
 
     def test_p2_oracle_modular_matches_seed_alias(self):
         for s in (Fr(1, 16), Fr(1, 256), Fr(1, 65536), Fr(1, 3), Fr(2, 5), Fr(1, 15), Fr(1, 7)):

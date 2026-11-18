@@ -1,0 +1,13 @@
+{
+  "gate": "observer",
+  "command": [
+    "python",
+    "scripts/observer_foundations_probe.py"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 0.165,
+  "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+  "published_log": "observer.txt",
+  "published_log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+  "log_normalization": "absolute execution root replaced with <repo>; mathematical output unchanged"
+}

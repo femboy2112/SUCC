@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_depth": 8198,
+  "all_integer_shells_verified": 4081,
+  "min_shell": 16,
+  "max_shell": 4096,
+  "endpoint_digest": "e222179e8c24abdecde98c2192d73cb93d2744974312ced7a9e7fb007c24d91e",
+  "minimum_phase_lower": "247384815345917/439804651110400",
+  "minimum_phase_lower_shell": 25,
+  "all_exceed_two_fifths": true,
+  "independence_scope": "different source expression, direction of summation, digit extraction and shell aggregation; shared Fraction library and mathematical BBP/tail premises",
+  "boundary": "finite certificates only; no proof of R0"
+}

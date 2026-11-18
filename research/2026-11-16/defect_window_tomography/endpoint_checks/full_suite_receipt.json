@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "tests_run": 14577,
+  "expected_tests": 14577,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 2,
+  "workers": 8,
+  "duration_seconds": 235.297,
+  "full_collection_sha256": "fe8ec45a7eadeacf0dffa47ef093257dd27c2d2a17814ba96d5b9033ec004315",
+  "coverage_receipt": "full_suite_coverage.json",
+  "scope": "Every root-discovered test, exact once-only partition; same tests and assertions as serial discovery. This does not run research-local tests or Lean."
+}

@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "exact_assertions": 581,
+  "shells": [
+    {
+      "B": 1,
+      "authentic_R": 0.020000314009013642,
+      "erased_R": 0.0002696974033970371,
+      "upper": 0.00392156862745098,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 2,
+      "authentic_R": 0.06590963573668712,
+      "erased_R": 0.0018172334869343881,
+      "upper": 0.00196078431372549,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 3,
+      "authentic_R": 0.0786179969922623,
+      "erased_R": 0.0005658821973077463,
+      "upper": 0.00130718954248366,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 7,
+      "authentic_R": 0.1368389846404749,
+      "erased_R": 0.00017036674272554722,
+      "upper": 0.0005602240896358543,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 16,
+      "authentic_R": 0.0750843109725664,
+      "erased_R": 2.0617436659808276e-05,
+      "upper": 0.00024509803921568627,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 37,
+      "authentic_R": 0.07997500513988882,
+      "erased_R": 3.2154460054662955e-05,
+      "upper": 0.00010598834128245893,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 73,
+      "authentic_R": 0.09243829990434364,
+      "erased_R": 2.9794619355704973e-07,
+      "upper": 5.372011818426001e-05,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 149,
+      "authentic_R": 0.09318859415039107,
+      "erased_R": 4.461529458957354e-07,
+      "upper": 2.6319252533228056e-05,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 293,
+      "authentic_R": 0.08471785604157868,
+      "erased_R": 3.85247634050783e-06,
+      "upper": 1.3384193267750786e-05,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    },
+    {
+      "B": 577,
+      "authentic_R": 0.08491242597901577,
+      "erased_R": 4.151536534041757e-06,
+      "upper": 6.796479423658545e-06,
+      "wrong_one_shift_rejected": true,
+      "seed_nonzero": true,
+      "odd_class_preserved": true,
+      "terminal_fraction_preserved": true
+    }
+  ],
+  "boundary": "finite calibration plus separately supplied proof; no R0 claim"
+}
