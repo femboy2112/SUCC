@@ -12,6 +12,9 @@ from .borwein_quantitative_certificate import (
 L_MAX = F(32, 289)
 L_LIP = F(144, 289)
 ATOMIC_FLOOR = FOURIER_FLOOR**2 / 16
+# Independently established improvement by Gemini Argon ANC-11 (same kernel).
+SHARP_FOURIER_FLOOR = F(5733, 279752)
+SHARP_ATOMIC_FLOOR = SHARP_FOURIER_FLOOR**2 / 16
 GRID_UPPER = F(8, 3) * (F(11, 289))**2
 
 
@@ -88,6 +91,11 @@ def phase_multiset_covers_dilated_mode(left,right,h):
 def atomic_floor_for_length(n):
     if type(n) is not int or n<1:raise ValueError
     return ATOMIC_FLOOR/n**4
+
+
+def sharp_atomic_floor_for_length(n):
+    if type(n) is not int or n<1:raise ValueError
+    return SHARP_ATOMIC_FLOOR/n**4
 
 
 def uniform_grid_upper_for_length(n):
