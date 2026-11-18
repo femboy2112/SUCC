@@ -149,3 +149,18 @@ class OrdinalWaveletBudgetTests(unittest.TestCase):
         pts=(F(0),F(1,9),F(1,3),F(2,3),F(7,9))
         self.assertEqual(wavelet_detail_budget(pts)+polynomial_quadrature(pts),F(335872,304434045))
 
+
+class ArgonSharpConstantCrossAudit(unittest.TestCase):
+    def test_sharp_floor_from_independent_argon_bound(self):
+        from observational_succ.borwein_scale_renormalization import (
+            SHARP_FOURIER_FLOOR, SHARP_ATOMIC_FLOOR, sharp_atomic_floor_for_length)
+        self.assertEqual(SHARP_FOURIER_FLOOR,F(5733,279752))
+        self.assertEqual(SHARP_FOURIER_FLOOR/
+                         F(2205,139876),F(13,10))
+        self.assertEqual(SHARP_ATOMIC_FLOOR,F(32867289,1252178904064))
+        self.assertEqual(SHARP_ATOMIC_FLOOR/ATOMIC_FLOOR,F(169,100))
+        for N in (1,2,3,4,8,12):
+            self.assertGreaterEqual(polynomial_quadrature(exact_uniform_grid(N)),
+                                    sharp_atomic_floor_for_length(N))
+            self.assertLessEqual(sharp_atomic_floor_for_length(N),
+                                 uniform_grid_upper_for_length(N))
