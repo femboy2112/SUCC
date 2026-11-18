@@ -131,7 +131,10 @@ class PascalKnowledgeVolumeTests(unittest.TestCase):
     def test_order_limit_dual_gamma_asymptotic_numerical_controls(self):
         # Numeric probes are finite diagnostics; the universal asymptotics
         # follow from endpoint Laplace/Beta estimates in the theorem note.
-        import mpmath as mp
+        try:
+            import mpmath as mp
+        except ImportError:
+            self.skipTest("optional mpmath not installed; exact rational and paper tests still run")
         mp.mp.dps=55
         def K(t):return (1-t)/((2-t*t)*(t*t-2*t+2))
         for N in (0,1):
