@@ -1,0 +1,19 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/workspace/scratch/d2afcbfb001f/frontier_read/662/tests",
+    "-p",
+    "test_terminal_wall_crucible.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "seconds": 0.855,
+  "stdout": "",
+  "stderr": "test_actual_fresh_prime_denominator_is_not_just_a_phase_witness (test_terminal_wall_crucible.TerminalWallCrucible.test_actual_fresh_prime_denominator_is_not_just_a_phase_witness) ... ok\ntest_all_odd_cofactor_residues_allow_locked_terminal_suffix (test_terminal_wall_crucible.TerminalWallCrucible.test_all_odd_cofactor_residues_allow_locked_terminal_suffix) ... ok\ntest_counterfeit_matched_gamma_leading_constant (test_terminal_wall_crucible.TerminalWallCrucible.test_counterfeit_matched_gamma_leading_constant) ... ok\ntest_digit_reconstruction_and_energy_exact (test_terminal_wall_crucible.TerminalWallCrucible.test_digit_reconstruction_and_energy_exact) ... ok\ntest_domain_wall_count_controls_digit_combinatorial_entropy (test_terminal_wall_crucible.TerminalWallCrucible.test_domain_wall_count_controls_digit_combinatorial_entropy) ... ok\ntest_exact_positive_zero_seed_locked_counterfeit (test_terminal_wall_crucible.TerminalWallCrucible.test_exact_positive_zero_seed_locked_counterfeit) ... ok\ntest_exhaustive_small_digit_words_against_wall_bound (test_terminal_wall_crucible.TerminalWallCrucible.test_exhaustive_small_digit_words_against_wall_bound) ... ok\ntest_full_shadows_and_zero_F_runs (test_terminal_wall_crucible.TerminalWallCrucible.test_full_shadows_and_zero_F_runs) ... ok\ntest_low_energy_implies_sparse_defects_and_long_extreme_run (test_terminal_wall_crucible.TerminalWallCrucible.test_low_energy_implies_sparse_defects_and_long_extreme_run) ... ok\ntest_original_source_and_prior_terminal_finite_replay (test_terminal_wall_crucible.TerminalWallCrucible.test_original_source_and_prior_terminal_finite_replay) ... ok\ntest_terminal_phase_fiber_clone_preserves_cofactor_but_erases_winding (test_terminal_wall_crucible.TerminalWallCrucible.test_terminal_phase_fiber_clone_preserves_cofactor_but_erases_winding) ... ok\ntest_terminal_plus_one_carry_changes_few_wall_events (test_terminal_wall_crucible.TerminalWallCrucible.test_terminal_plus_one_carry_changes_few_wall_events) ... ok\ntest_wrong_seed_same_forcing_is_stronger_than_numerical_test (test_terminal_wall_crucible.TerminalWallCrucible.test_wrong_seed_same_forcing_is_stronger_than_numerical_test) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.759s\n\nOK\n"
+}

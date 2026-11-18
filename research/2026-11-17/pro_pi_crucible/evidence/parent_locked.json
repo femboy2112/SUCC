@@ -1,0 +1,19 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/workspace/scratch/d2afcbfb001f/frontier_read/657/tests",
+    "-p",
+    "test_matched_nontele_locked_source.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "seconds": 0.086,
+  "stdout": "",
+  "stderr": "test_candidate_exact_partial_fraction_identity (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_candidate_exact_partial_fraction_identity) ... ok\ntest_positivity_all_n_via_polynomial_coefficient_certificate (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_positivity_all_n_via_polynomial_coefficient_certificate) ... ok\ntest_same_15_over_64_asymptotic_on_exact_rationals (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_same_15_over_64_asymptotic_on_exact_rationals) ... ok\ntest_second_pi_formula_is_a_distinct_rational_forcing (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_second_pi_formula_is_a_distinct_rational_forcing) ... ok\ntest_source_retains_uncancelled_original_shift_orbit (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_source_retains_uncancelled_original_shift_orbit) ... ok\ntest_strict_decrease_all_real_n_ge_1_from_derivative_polynomial (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_strict_decrease_all_real_n_ge_1_from_derivative_polynomial) ... ok\ntest_the_locked_rational_endpoint_is_eventually_zero_circle (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_the_locked_rational_endpoint_is_eventually_zero_circle) ... ok\ntest_zero_seed_and_exact_telescoping_correction (test_matched_nontele_locked_source.MatchedNonTelescopingLockTests.test_zero_seed_and_exact_telescoping_correction) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.005s\n\nOK\n"
+}

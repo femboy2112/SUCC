@@ -1,0 +1,13 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "scripts/verify_provenance.py"
+  ],
+  "cwd_commit": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "exit_code": 0,
+  "seconds": 0.041,
+  "stdout": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n",
+  "stderr": ""
+}

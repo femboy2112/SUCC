@@ -1,0 +1,19 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/workspace/scratch/d2afcbfb001f/frontier_read/657/tests",
+    "-p",
+    "test_bbp_pole_telescope_oracle.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "seconds": 0.084,
+  "stdout": "",
+  "stderr": "test_endpoint_impulse_jacobian_has_rank_one (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_endpoint_impulse_jacobian_has_rank_one) ... ok\ntest_full_clock_history_recovers_impulse_input (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_full_clock_history_recovers_impulse_input) ... ok\ntest_locked_forcing_is_positive_and_decreasing (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_locked_forcing_is_positive_and_decreasing) ... ok\ntest_locked_pole_pairs_have_vanishing_weighted_shift_residue (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_locked_pole_pairs_have_vanishing_weighted_shift_residue) ... ok\ntest_matching_locked_forcing_exact_finite_telescope (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_matching_locked_forcing_exact_finite_telescope) ... ok\ntest_original_four_poles_are_distinct_shift_classes (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_original_four_poles_are_distinct_shift_classes) ... ok\ntest_rational_telescope_is_not_original_source (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_rational_telescope_is_not_original_source) ... ok\ntest_same_leading_asymptotic_coefficient (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_same_leading_asymptotic_coefficient) ... ok\ntest_sparse_zero_seed_source_and_cold_shell_exact (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_sparse_zero_seed_source_and_cold_shell_exact) ... ok\ntest_two_causal_histories_share_all_terminal_probes (test_bbp_pole_telescope_oracle.BBPPoleTelescopeOracle.test_two_causal_histories_share_all_terminal_probes) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.009s\n\nOK\n"
+}

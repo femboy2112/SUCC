@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "scripts/meta_choice_descent_probe.py"
+  ],
+  "environment": "PYTHONPATH unset",
+  "base": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "baseline_files_byte_identical": {
+    "tests/test_eodcs_meta_choice_descent.py": true,
+    "scripts/meta_choice_descent_probe.py": true,
+    "observational_succ/meta_choice_descent.py": true
+  },
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/d2afcbfb001f/SUCC/scripts/meta_choice_descent_probe.py\", line 11, in <module>\n    from observational_succ.meta_choice_descent import (\nModuleNotFoundError: No module named 'observational_succ'\n"
+}

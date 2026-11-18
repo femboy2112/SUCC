@@ -1,0 +1,26 @@
+{
+  "command": [
+    "timeout",
+    "90s",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_pro_pi_*.py",
+    "-v"
+  ],
+  "cwd_base": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "environment_overrides": {
+    "PYTHONPATH": "/workspace/scratch/d2afcbfb001f/SUCC",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "seconds": 1.28,
+  "stdout": "",
+  "stderr": "test_elementary_lcm_bound_and_divisor_step (test_pro_pi_arithmetic_crucible.ProPiArithmeticTests.test_elementary_lcm_bound_and_divisor_step) ... ok\ntest_one_global_integer_gauge_erases_every_terminal_block (test_pro_pi_arithmetic_crucible.ProPiArithmeticTests.test_one_global_integer_gauge_erases_every_terminal_block) ... ok\ntest_prime_cutoff_and_known_cancelled_primes (test_pro_pi_arithmetic_crucible.ProPiArithmeticTests.test_prime_cutoff_and_known_cancelled_primes) ... ok\ntest_exact_finite_prefix_and_radix_endpoint (pro_pi_flat_lock_probe.Tests.test_exact_finite_prefix_and_radix_endpoint) ... ok\ntest_exact_forward_history_and_tail_telescope (pro_pi_flat_lock_probe.Tests.test_exact_forward_history_and_tail_telescope) ... ok\ntest_exact_high_order_complete_monotonicity_failure (pro_pi_flat_lock_probe.Tests.test_exact_high_order_complete_monotonicity_failure) ... ok\ntest_locked_terminal_all_F_and_exact_norm (pro_pi_flat_lock_probe.Tests.test_locked_terminal_all_F_and_exact_norm) ... ok\ntest_mutations_are_detected (pro_pi_flat_lock_probe.Tests.test_mutations_are_detected) ... ok\ntest_source_gap_calibration (pro_pi_flat_lock_probe.Tests.test_source_gap_calibration) ... ok\ntest_superexponential_bound_and_monotonicity (pro_pi_flat_lock_probe.Tests.test_superexponential_bound_and_monotonicity) ... ok\ntest_all_four_weighted_pole_residues_preserved (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_all_four_weighted_pole_residues_preserved) ... ok\ntest_coboundary_total_and_tail_are_exact (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_coboundary_total_and_tail_are_exact) ... ok\ntest_exact_norm_and_zero_borwein_anchor (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_exact_norm_and_zero_borwein_anchor) ... ok\ntest_mellin_residue_changes_only_at_two_depths (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_mellin_residue_changes_only_at_two_depths) ... ok\ntest_mutated_coboundary_is_rejected (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_mutated_coboundary_is_rejected) ... ok\ntest_original_and_perturbation_integrals (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_original_and_perturbation_integrals) ... ok\ntest_sweep_is_far_from_haar (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_sweep_is_far_from_haar) ... ok\ntest_uniform_relative_kernel_bound (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_uniform_relative_kernel_bound) ... ok\ntest_zero_seed_full_history_and_terminal_block (pro_pi_gamma_source_probe.PositiveSourceShellClone.test_zero_seed_full_history_and_terminal_block) ... ok\ntest_delta_atom_sweep_and_interval_discrepancy (test_pro_pi_borwein_inverse.BorweinInverseTests.test_delta_atom_sweep_and_interval_discrepancy) ... ok\ntest_distributional_inverse_via_exact_interval_integrals (test_pro_pi_borwein_inverse.BorweinInverseTests.test_distributional_inverse_via_exact_interval_integrals) ... ok\ntest_grid_and_unequal_atom_certificates (test_pro_pi_borwein_inverse.BorweinInverseTests.test_grid_and_unequal_atom_certificates) ... ok\ntest_invalid_probability_and_nonsmooth_derivative_rejected (test_pro_pi_borwein_inverse.BorweinInverseTests.test_invalid_probability_and_nonsmooth_derivative_rejected) ... ok\ntest_kernel_mean_by_exact_piecewise_integration (test_pro_pi_borwein_inverse.BorweinInverseTests.test_kernel_mean_by_exact_piecewise_integration) ... ok\ntest_source_states_and_rational_sweep_bounds (test_pro_pi_borwein_inverse.BorweinInverseTests.test_source_states_and_rational_sweep_bounds) ... ok\ntest_stationary_periodic_controls_prevent_temporal_inference (test_pro_pi_borwein_inverse.BorweinInverseTests.test_stationary_periodic_controls_prevent_temporal_inference) ... ok\ntest_wrong_sign_shift_and_coefficient_are_detected (test_pro_pi_borwein_inverse.BorweinInverseTests.test_wrong_sign_shift_and_coefficient_are_detected) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 1.194s\n\nOK\n"
+}
