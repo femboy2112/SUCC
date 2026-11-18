@@ -72,6 +72,17 @@ class QuantitativeBorweinProofTests(unittest.TestCase):
         self.assertEqual(discrete_interval_discrepancy((F(0),F(1,2))),F(1,2))
         self.assertEqual(discrete_interval_discrepancy((F(1,10),F(9,10))),F(4,5))
 
+    def test_weyl_bound_is_actual_rational_and_invalid_root_rejected(self):
+        from observational_succ.borwein_quantitative_certificate import certified_weyl_bound_from_energy
+        for B in (4,8,16):
+            for h in (-3,-1,1,3):
+                bound=certified_weyl_bound_from_energy(B,h)
+                self.assertIsInstance(bound,F)
+                self.assertGreaterEqual(bound,0)
+                self.assertLessEqual(bound,1)
+        with self.assertRaises(ValueError):
+            certified_weyl_bound_from_energy(8,1,F(0))
+
     def test_bad_square_root_certificate_rejected(self):
         with self.assertRaises(ValueError):
             quantitative_interval_discrepancy(4,3,F(0))
