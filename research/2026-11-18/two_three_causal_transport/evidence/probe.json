@@ -1,0 +1,36 @@
+{
+  "causal_windows": 48,
+  "controls": {
+    "ordered_words": {
+      "11": [
+        11,
+        17,
+        13
+      ],
+      "9": [
+        9,
+        7,
+        11
+      ]
+    },
+    "quotient_loss_at_n1": "5/6",
+    "rejected_odd_k_formula_is_nonintegral": true
+  },
+  "cyclic_determinants": {
+    "1": 15,
+    "10": 1116225,
+    "15": 1082196225,
+    "17": 17247240705,
+    "19": 274342083585,
+    "2": 45,
+    "3": 45,
+    "5": 825,
+    "6": 5265
+  },
+  "inverse_polynomial_certificates": 2,
+  "memory_depth_sharpness_cases": 30,
+  "original_source_indices": 768,
+  "positive_odd_valuation_words": 5460,
+  "scope": "VERIFIED_FINITE; no asymptotic normality or Collatz conclusion",
+  "terminal_memory_identities": 30948
+}
