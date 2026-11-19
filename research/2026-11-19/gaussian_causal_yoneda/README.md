@@ -39,6 +39,7 @@ including on an identically locked wrong-seed completion.
 | GYC-12 | causal square + dense Yoneda probes ⇒ target reconstruction | classical, explicitly limited to lawful observation class |
 | GYC-13 | finite rational terminal cancels source forcing exactly | genuine BBP source, every finite horizon; local Gaussian position defect O(n^-2) |
 | GYC-14 | terminal endpoint M=2B improves Gaussian error 64-fold | E/V source transfer O(1/(4096 B^2)); fixed rational M cannot be Haar |
+| GYC-15 | source-labeled Gaussian cross-covariance recovers the signed five-channel Jacobian | exact affine family; output covariance alone has orthogonal gauge; seed needs anchor |
 
 ## Two different spectra, two different frontiers
 
@@ -97,7 +98,7 @@ Jacobian rank, and spectral energy conservation are not enough.
 - [CLAIM_LEDGER.md](CLAIM_LEDGER.md): precise claim authority and residual debt.
 - [gaussian_causal.py](gaussian_causal.py): stdlib exact-rational BBP and
   Gaussian finite Fourier diagnostics.
-- [test_gaussian_causal.py](test_gaussian_causal.py): 26 focused tests, exact
+- [test_gaussian_causal.py](test_gaussian_causal.py): 29 focused tests, exact
   rational identities, independent quadrature, tails, mutation-like controls.
 - [VALIDATION.md](VALIDATION.md): actual executed tests and unexecuted gates.
 
