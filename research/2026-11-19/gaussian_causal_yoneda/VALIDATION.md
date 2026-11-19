@@ -6,7 +6,7 @@ Date: 2026-11-19. Base main: `81be6b897ae980b801a3b9de9e22ef81e8360bfb`.
 
 ```
 python -m unittest -v test_gaussian_causal
-Ran 26 tests in 0.039s
+Ran 29 tests in 0.061s
 OK
 ```
 
@@ -14,6 +14,8 @@ Additional focused controls: exact mean/variance energy split; one-sided
 polarity run-length bound; complete late-phase alias; stationary-delta versus
 uncertainty-heat distinction; phase-only magnitude blindness; high-harmonic
 blindness of a fixed finite probe set.
+
+Additional controls: source-labeled Gaussian cross-Jacobian and orthogonal self-covariance gauge; independent numerical quadrature of the complex Gaussian cross-phasor; covariance-only seed alias.
 
 Additional controls: exact finite-terminal recurrence/compensator identity;
 improved 64x terminal Gaussian transport on four shells; seed-independent
