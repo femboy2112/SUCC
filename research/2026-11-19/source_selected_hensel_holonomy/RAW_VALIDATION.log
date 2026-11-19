@@ -1,0 +1,40 @@
+Python 3.13.5
+SymPy 1.14.0
+=== Focused tests ===
+test_29_is_homogeneous_nonselected_control (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_29_is_homogeneous_nonselected_control) ... ok
+test_hensel_fibonacci_vs_radix (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_hensel_fibonacci_vs_radix) ... ok
+test_hensel_source_splitting (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_hensel_source_splitting) ... ok
+test_macroscopic_delayed_order_difference (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_macroscopic_delayed_order_difference) ... ok
+test_matched_jet_mutant_breaks_two_independent_signatures (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_matched_jet_mutant_breaks_two_independent_signatures) ... ok
+test_moving_frame_higher_precision (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_moving_frame_higher_precision) ... ok
+test_moving_frames_carry_extra_precision (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_moving_frames_carry_extra_precision) ... ok
+test_order_swap_difference_at_all_calibration_clocks (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_order_swap_difference_at_all_calibration_clocks) ... ok
+test_original_literal_source (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_original_literal_source) ... ok
+test_prime_square_ladder (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_prime_square_ladder) ... ok
+test_quartic_eigenchannel_and_dual (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_quartic_eigenchannel_and_dual) ... ok
+test_real_asymptotic_constant (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_real_asymptotic_constant) ... ok
+test_same_forcing_changes_seed_not_innovation (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_same_forcing_changes_seed_not_innovation) ... ok
+test_source_filter_exact (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_source_filter_exact) ... ok
+test_source_filter_mutant (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_source_filter_mutant) ... ok
+test_source_order_jacobian_four_coefficients (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_source_order_jacobian_four_coefficients) ... ok
+test_source_selected_image_and_kernel (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_source_selected_image_and_kernel) ... ok
+test_spurious_complex_weyl_mean (test_source_selected_hensel_holonomy.SourceHenselHolonomyTests.test_spurious_complex_weyl_mean) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.007s
+
+OK
+=== Source exact receipt ===
+PASS: exact source-selected 11-adic eigenline, Hensel lift, gauge, phase-masking mutant,
+      source-order commutator, prime-square residues, and logarithmic visibility
+H(M): ((8, 1), (1, 7)) H mutant determinants: 116 81
+11-adic eigenline: (4, 6, 9, 8, 1) 11-adic lifted A eigenvalue: 85 radix-matching T eigenvalue mod 121: 104
+11-adic gauge mod 121: 56 29-adic gauge mod 841: 117
+Prime source-order events: [(7, (6, -2, 3)), (11, (15, -2, 6)), (13, (21, -2, 5)), (17, (36, -2, 8)), (29, (105, -2, 27)), (41, (210, -2, 22)), (47, (276, -2, 34))]
+Visibility delays: [(7, 1), (11, 1), (17, 2), (29, 2), (55, 3), (89, 3), (144, 4), (233, 4), (610, 5), (987, 6)]
+No R0 or pi normality theorem asserted.
+=== Independent mathematical oracle ===
+PASS independent SymPy: source/mutant polynomials, matrices, charpoly, Hensel mod p²,
+signed commutator constants, real asymptotics, nine fresh prime-square residues
+=== Compile ===
+PASS compileall
