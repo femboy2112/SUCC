@@ -253,6 +253,39 @@ class GaussianTests(unittest.TestCase):
                                g.gaussian_haar_discrepancy(phases[:2]),places=14)
         self.assertGreater(g.gaussian_haar_discrepancy(phases),0.1)
 
+    def test_source_labeled_gaussian_jacobian_gauge(self):
+        variance=Fraction(3,11)
+        J=[g.jacobian_row(n) for n in range(1,6)]
+        cross=[[variance*j for j in row] for row in J]
+        self.assertEqual([[v/variance for v in row] for row in cross], [list(row) for row in J])
+        # J and -J have indistinguishable output self-covariances;
+        # source-labeled cross-covariances have opposite signs.
+        for row_a in J:
+            for row_b in J:
+                orig=g.output_covariance(row_a,row_b,variance)
+                mutant=g.output_covariance([-x for x in row_a],[-y for y in row_b],variance)
+                self.assertEqual(orig,mutant)
+        self.assertNotEqual(cross,[[-v for v in row] for row in cross])
+
+    def test_complex_gaussian_cross_formula_quadrature(self):
+        # Independent midpoint quadrature for E[Z exp(i*a*Z)]=i*a exp(-a^2/2).
+        norm=(2*math.pi)**-.5
+        for a in (0.25,1.15):
+            N=20000; step=18/N
+            integ=0j
+            for j in range(N):
+                z=-9+(j+.5)*step
+                integ+=z*cmath.exp(1j*a*z)*norm*math.exp(-z*z/2)*step
+            analytic=1j*a*math.exp(-a*a/2)
+            self.assertLess(abs(integ-analytic),1e-9)
+
+    def test_gaussian_jacobian_needs_unwrapped_anchor(self):
+        for n in (1,3,7):
+            self.assertEqual(g.jacobian_row(n),g.jacobian_row(n))
+            self.assertEqual(g.state(n,seed=Fraction(1,16))-g.state(n),
+                             Fraction(16**n,16))
+            self.assertNotEqual(g.state(n,seed=Fraction(1,16)),g.state(n))
+
     def test_severe_gaussian_inverse_conditioning(self):
         a=.4
         tv=2*a/math.pi
