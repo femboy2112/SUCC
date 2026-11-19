@@ -1,0 +1,109 @@
+{
+  "collatz_proved": false,
+  "development_receipt": "Height-only rejection test initially failed; mutation preserves tested heights. Leading-unit witness correctly rejects it at n=1.",
+  "fraction_first": 1,
+  "fraction_last": 6144,
+  "fresh_fraction_holdout": [
+    4096,
+    6144
+  ],
+  "fresh_modular_holdout": [
+    180002,
+    1000003
+  ],
+  "last_tap_sign_mutation_height_failure_through64": null,
+  "last_tap_sign_mutation_leading_unit_failure": 1,
+  "modular_first": 1,
+  "modular_last": 1000003,
+  "modulus": 81,
+  "normality_proved": false,
+  "null_full_history_window": true,
+  "recent_window_pairs": 28,
+  "rejected_odd_birth_formula": "(3**k+3)/8; corrected (3**k+1)/4 for odd k",
+  "rh_proved": false,
+  "scope": "finite exact audit; inherited all-n theorem has separate paper proof",
+  "script_sha256": "ba446b44f90617a6406409a8cff873b7a0b3d097e35ad29f6529bfe93f8c9d20",
+  "source": "literal four signed BBP fractions, U0=0",
+  "status": "PASS",
+  "tail_mod9_certificate": [
+    {
+      "c": -1,
+      "cumulative_mod9": 3,
+      "e": 2,
+      "increment_mod9": 3,
+      "j_mod3": 1,
+      "m": 2
+    },
+    {
+      "c": 4,
+      "cumulative_mod9": 4,
+      "e": 7,
+      "increment_mod9": 1,
+      "j_mod3": 2,
+      "m": 3
+    },
+    {
+      "c": -2,
+      "cumulative_mod9": 7,
+      "e": 4,
+      "increment_mod9": 3,
+      "j_mod3": 2,
+      "m": 4
+    },
+    {
+      "c": -1,
+      "cumulative_mod9": 4,
+      "e": 3,
+      "increment_mod9": 6,
+      "j_mod3": 0,
+      "m": 7
+    },
+    {
+      "c": -1,
+      "cumulative_mod9": 1,
+      "e": 2,
+      "increment_mod9": 6,
+      "j_mod3": 1,
+      "m": 10
+    },
+    {
+      "c": 4,
+      "cumulative_mod9": 7,
+      "e": 7,
+      "increment_mod9": 6,
+      "j_mod3": 2,
+      "m": 11
+    },
+    {
+      "c": -2,
+      "cumulative_mod9": 8,
+      "e": 4,
+      "increment_mod9": 1,
+      "j_mod3": 2,
+      "m": 12
+    },
+    {
+      "c": -1,
+      "cumulative_mod9": 6,
+      "e": 3,
+      "increment_mod9": 7,
+      "j_mod3": 0,
+      "m": 15
+    }
+  ],
+  "window_lengths": [
+    1,
+    2,
+    17,
+    64
+  ],
+  "window_starts": [
+    1,
+    2,
+    7,
+    11,
+    333,
+    4096,
+    5001
+  ]
+}
