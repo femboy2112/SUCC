@@ -12,7 +12,7 @@ $$
 \sum_{x,y\ge0}\binom{x+y}{x}z^{x+2y}=\frac1{1-z-z^2}.
 $$
 
-The projected pulse response is exactly F_(n+1). The corresponding one-dimensional recurrence has the disturbance Jacobian K_F=S+S², where S is the one-site shift. Its derivative is genuinely the same linear operator, not just a diagrammatic analogy. The two-state Fibonacci companion A and T=Sym^4(A²) of #667 are alternative finite-dimensional representations, **not automatically the same full-sheet dynamics**.
+The projected, accumulated pulse response is exactly F_(n+1). As a spatial response it solves f=delta+(S+S²)f, with S the one-site shift. The spatial propagation operator K_F=S+S² has derivative equal to itself. This resolvent/accumulation identity must not be silently identified with one step of chronological BBP evolution. The two-state Fibonacci companion A and T=Sym^4(A²) of #667 are alternative finite-dimensional representations, **not automatically the same full-sheet dynamics**.
 
 ## Fourier rotation and a real-field obstruction
 

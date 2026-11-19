@@ -173,6 +173,7 @@ def run():
     assert orders[5] == (1,5)
     assert orders[7] == (3,4)
     assert orders[11] == (5,5)
+    assert orders[29] == (7,7)
     v11=(4,2,10,10,1)
     v29=(4,6,14,20,1)
     for p,v in ((11,v11),(29,v29)):

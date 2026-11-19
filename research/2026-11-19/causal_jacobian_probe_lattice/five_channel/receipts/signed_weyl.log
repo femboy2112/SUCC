@@ -1,0 +1,54 @@
+{
+  "status": "FINITE_SOURCE_CERTIFICATES_ONLY",
+  "config_sha256": "db74bf59e3aaf5a35e446ebdd2f122da8fbb5283b263397e5e442f8a27b58ad5",
+  "controls": "PASS",
+  "shells": [
+    {
+      "B": 131073,
+      "modes": {
+        "1": {
+          "midpoint": [
+            0.0011813545068052318,
+            -0.0013191407099705954
+          ],
+          "finite_verdict": "PASS_FINITE"
+        },
+        "7": {
+          "midpoint": [
+            -0.0030453358738624452,
+            -0.0017318362198217722
+          ],
+          "finite_verdict": "PASS_FINITE"
+        },
+        "11": {
+          "midpoint": [
+            -0.0012961376868778605,
+            -0.0020040610169076295
+          ],
+          "finite_verdict": "PASS_FINITE"
+        },
+        "15": {
+          "midpoint": [
+            -0.0049534250564693474,
+            0.0008156475053562374
+          ],
+          "finite_verdict": "PASS_FINITE"
+        },
+        "720885": {
+          "midpoint": [
+            0.0013639297671921321,
+            0.0006591268137981233
+          ],
+          "finite_verdict": "PASS_FINITE"
+        },
+        "117440505": {
+          "midpoint": [
+            0.0008934881045245682,
+            0.00046556463154507314
+          ],
+          "finite_verdict": "PASS_FINITE"
+        }
+      }
+    }
+  ]
+}
