@@ -48,7 +48,11 @@ and comparison frame and use `Re C_B` with the same Cauchy bound.
 - **Two-resolution witness:** use the exact `T_16* K_lambda = K_(256lambda) T_16*`
   square; subtract only after compensating both scale and frame. If it
   gives the same nonzero bound for seed -x, kill it.
-- **Forward terminal witness:** substitute exact rational U_n for Y_n
+- **Forward terminal witness:** use the sharper exactly compensated
+  finite terminal P_(2B) and GYC-14 error <=const/(4096 B^2). Compare
+  against the uncompensated raw-U_n observer and require correct width
+  transport; do not fix M before taking late-shell statistics.
+  Alternatively substitute exact rational U_n for Y_n
   using GYC-06 and keep the explicit O(B^-2) error. Test whether the first
   nonvanishing signed term is genuinely arithmetic rather than the target
   Weyl sum in disguise.
