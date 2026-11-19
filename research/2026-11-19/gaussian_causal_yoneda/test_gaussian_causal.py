@@ -204,6 +204,55 @@ class GaussianTests(unittest.TestCase):
         self.assertAlmostEqual(abs(g.phase_moment(grid,16)),1)
         self.assertGreater(g.gaussian_haar_discrepancy(grid,16),0)
 
+    def test_terminal_compensation_exact(self):
+        for horizon in (7,12,23):
+            endpoint=g.prefix_x(horizon)
+            for n in range(1,horizon):
+                tn=g.finite_tail(n,horizon)
+                tnext=g.finite_tail(n+1,horizon)
+                self.assertEqual(tnext-16*tn,-g.forcing(n+1))
+                self.assertEqual(g.state(n)+tn,16**n*endpoint)
+                self.assertEqual(g.state(n+1)+tnext,16*(g.state(n)+tn))
+
+    def test_improved_terminal_gaussian_bounds(self):
+        _, S, R=g.gaussian_sums()
+        L=4*math.pi*R
+        for B in (2,4,8,16):
+            M=2*B
+            endpoint=g.prefix_x(M)
+            reference=g.prefix_x(M+60)
+            true=[g.fraction_mod1(reference*16**n) for n in range(B,2*B)]
+            terminal=[g.fraction_mod1(endpoint*16**n) for n in range(B,2*B)]
+            q=float(g.terminal_phase_error_upper(B,M))
+            self.assertLessEqual(q,1/(4096*B*B)+1e-30)
+            self.assertLessEqual(abs(g.gaussian_haar_discrepancy(true)**0.5-
+                                     g.gaussian_haar_discrepancy(terminal)**0.5),
+                                 2*math.pi*math.sqrt(S)*q+1e-12)
+            self.assertLessEqual(abs(sum(g.gaussian_displacement(x) for x in true)/B-
+                                     sum(g.gaussian_displacement(x) for x in terminal)/B),
+                                 L*q+1e-12)
+            self.assertAlmostEqual(g.terminal_shell_source(B)[0],
+                                   sum(g.gaussian_displacement(x) for x in terminal)/B, places=13)
+
+    def test_source_gaussian_step_defect_seed_independent(self):
+        for n in (1,2,5,40):
+            a=g.state(n,seed=Fraction(0)); b=g.state(n+1,seed=Fraction(0))
+            aa=g.state(n,seed=Fraction(1,13)); bb=g.state(n+1,seed=Fraction(1,13))
+            da=g.fraction_mod1(b-16*a)
+            db=g.fraction_mod1(bb-16*aa)
+            self.assertEqual(b-16*a,g.forcing(n+1))
+            self.assertEqual(bb-16*aa,g.forcing(n+1))
+            self.assertAlmostEqual(g.gaussian_displacement(da),g.gaussian_displacement(db),places=13)
+            self.assertAlmostEqual(g.source_gaussian_step_defect(n),
+                                   g.gaussian_displacement(float(g.forcing(n+1))),places=13)
+
+    def test_fixed_rational_terminal_is_not_haar(self):
+        # 16 mod 17 equals -1: q=1/17 has a two-point forward orbit.
+        phases=[1/17,16/17]*5
+        self.assertAlmostEqual(g.gaussian_haar_discrepancy(phases),
+                               g.gaussian_haar_discrepancy(phases[:2]),places=14)
+        self.assertGreater(g.gaussian_haar_discrepancy(phases),0.1)
+
     def test_severe_gaussian_inverse_conditioning(self):
         a=.4
         tv=2*a/math.pi
