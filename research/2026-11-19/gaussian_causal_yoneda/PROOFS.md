@@ -331,3 +331,91 @@ counterfactual interventions showing model-dependent carrier transitions.
 - Fourier uniqueness on finite measures, Parseval, Hermite chaos,
   Gaussian characteristic functions, Yoneda and restricted density:
   classical tools; no priority claims.
+
+## GYC-13 — finite-terminal source/tail cancellation is an exact causal square
+
+For each finite rational horizon `M>=1`, define
+
+`P_M=sum_(j=1)^M 16^(-j)*r(j)` and
+`T_n^[M]=sum_(j=n+1)^M 16^(n-j)*r(j)` for `0<=n<=M`.
+
+Every term is **exactly rational**, and the unmodified source recursion gives
+
+```
+U_n + T_n^[M] = 16^n * P_M,                         0<=n<=M,
+T_(n+1)^[M] - 16*T_n^[M] = -r(n+1),                0<=n<M,
+(U_(n+1)+T_(n+1)^[M]) - 16*(U_n+T_n^[M]) = 0.
+```
+
+Proof: expand `16 U_n` using the original finite prefix and move the
+single new source term between the two finite tail sums. The signed
+source innovation and the signed terminal compensator cancel **exactly at
+every finite horizon**, not only after taking an infinite limit.
+
+For the fixed-width Gaussian chart `K_lambda(U_n)`, the one-step defect
+relative to the unforced carrier `16*U_n` has exact norm
+
+`||K_lambda(.-U_(n+1))-K_lambda(.-16*U_n)||_2`
+`=sqrt(D_lambda(r(n+1)))`
+`=(2*pi*sqrt(S_lambda))*(15/64)*n^(-2) + O(n^-3)`.
+
+It depends on the original forcing, **but not on the seed**. The defects
+are absolutely summable. For the compensated finite terminal chart
+`K_lambda(.-(U_n+T_n^[M]))`, this *position* defect is zero at every step.
+When comparing actual **pushed-forward Gaussian measures**, separately
+transport width `lambda -> 256 lambda` as in GYC-02. Conflating the
+position and width effects is a wrong-frame calculation.
+
+This is a concrete lawful finite computation with exact source provenance,
+frame transport, and a visibly vanishing uncompensated *local* shadow.
+It does not imply distributional mixing of the selected orbit. The
+identically locked wrong seed retains the same forcing and finite local
+Gaussian defect until its compensator is restored.
+
+## GYC-14 — one finite rational endpoint per shell, with sharper Gaussian errors
+
+Let `M>=2B` and `theta_n^[M]={16^n*P_M}`. Because
+`x-P_M=16^(-M)*T_M` and `0<T_M<1/(64*M^2)`, for `B<=n<2B`
+
+`0 < 16^n*(x-P_M) < delta_(B,M)` with
+
+`delta_(B,M)=16^(2B-1-M)/(64*M^2)`.
+
+Define terminal Gaussian energies `E_B^[M]` and `V_B^[M]` by replacing
+all `theta_n` in GYC-03/04 by `theta_n^[M]`. The same Lipschitz and
+Hilbert triangle calculations as GYC-06 prove, **for every** such B,M,
+
+```
+|E_B-E_B^[M]| <= L_lambda*delta_(B,M),
+|sqrt(V_B)-sqrt(V_B^[M])|
+    <= (2*pi*sqrt(S_lambda))*delta_(B,M).
+```
+
+In particular, at the natural exact finite endpoint `M=2B`,
+
+`delta_(B,2B) = 1/(4096*B^2)`.
+
+This gives a **64-fold smaller** uniform error budget than using the raw
+uncompensated `U_n` on the same shell (GYC-06), without assuming any normality
+or empirical fit. Increasing M by k further reduces the factor by
+`16^(-k)` and also lowers `1/M^2`. Every terminal computation is finite,
+rational, source-anchored, and chronologically valid.
+
+### The fixed-terminal obstruction
+
+Do NOT fix M and send B to infinity as though the rational endpoint
+`P_M` were already pi/16. For every fixed M, `P_M` is rational. Under
+`theta |-> 16 theta mod 1`, its orbit is eventually periodic. The
+empirical shell phase measures therefore converge to the uniform measure
+on one finite periodic orbit. This atomic measure cannot equal Haar;
+GYC-01 shows its Gaussian smoothing differs from the constant-one Haar
+image. Consequently,
+
+`lim_(B->infinity) V_B^[M] > 0` for **every fixed M**.
+
+This holds even if a particular terminal period is extraordinarily long.
+A proof of actual pi normality must use the *coupled* horizon `M(B)` with
+a certified error, rather than quietly swapping the order of source
+completion and late-shell observation. The all-shell estimate for the
+selected `P_(2B)` is STILL OPEN. A fixed-M positive limit does not by
+itself establish any inequality about the joint-M(B) limit.
