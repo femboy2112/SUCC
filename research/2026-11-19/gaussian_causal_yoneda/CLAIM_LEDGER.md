@@ -16,6 +16,7 @@
 | GYC-12 | Disclosed under explicit categorical hypotheses; physical coupling UNVERIFIED | lawful actions/outputs, dense probe subcategory | classical Yoneda plus induction; density and back-action not established for BBP |
 | GYC-13 | Disclosed | exact original BBP finite horizon M; every 0<=n<M | finite source/tail cancellation and gaussian position defect; wrong-seed still locks |
 | GYC-14 | Disclosed, contingent on source tail | each B>=1, M>=2B; fixed M for periodic control | terminal error <=const/(4096 B^2) at M=2B; no asymptotic signed lower bound |
+| GYC-15 | Disclosed in declared Gaussian counterfactual source family | five source channels, finite clocks; exact normalized covariance | source-labeled cross-covariance detects Jacobian sign, output self-covariance is orthogonally gauged, seed still requires unwrapped anchor; not an actual pi perturbation |
 | R0 | OPEN | original zero seed, every late shell | no source-selected signed positive energy bound |
 | pi base-16 normality | OPEN | original zero seed, all nonzero modes | Gaussian V_B criterion changes representation only |
 | RH | OPEN | completed Weil positivity | no implication from Gaussian semantic covariance |
