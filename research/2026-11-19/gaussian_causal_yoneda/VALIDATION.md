@@ -6,7 +6,7 @@ Date: 2026-11-19. Base main: `81be6b897ae980b801a3b9de9e22ef81e8360bfb`.
 
 ```
 python -m unittest -v test_gaussian_causal
-Ran 22 tests in 0.024s
+Ran 26 tests in 0.039s
 OK
 ```
 
@@ -14,6 +14,10 @@ Additional focused controls: exact mean/variance energy split; one-sided
 polarity run-length bound; complete late-phase alias; stationary-delta versus
 uncertainty-heat distinction; phase-only magnitude blindness; high-harmonic
 blindness of a fixed finite probe set.
+
+Additional controls: exact finite-terminal recurrence/compensator identity;
+improved 64x terminal Gaussian transport on four shells; seed-independent
+Gaussian one-step source defect; rational periodic-orbit non-Haar control.
 
 Test groups: exact canonical four-pole recurrence; exact rational BBP finite tail;
 strict rational tail polynomials; exact five-parameter affine Jacobian;
