@@ -1,0 +1,259 @@
+{
+  "adaptive_controls": [
+    {
+      "different_parameters": true,
+      "identical_transcript": true,
+      "readings": 4,
+      "times": [
+        1,
+        4,
+        7,
+        9
+      ]
+    },
+    {
+      "different_parameters": true,
+      "identical_transcript": true,
+      "readings": 3,
+      "times": [
+        1,
+        3,
+        6
+      ]
+    }
+  ],
+  "arithmetic": "exact SymPy rational and polynomial arithmetic",
+  "assertions_passed": 116,
+  "audit_script_sha256": "e7ed9090b259358d87be64db7f85ef78d59e4723d81e333d896d8a351421f2dc",
+  "cauchy_coefficient_determinant": 120,
+  "cauchy_coefficient_matrix": [
+    [
+      -24,
+      -42,
+      -56,
+      -84
+    ],
+    [
+      26,
+      41,
+      50,
+      61
+    ],
+    [
+      -9,
+      -12,
+      -13,
+      -14
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "consecutive_asymptotics": {
+    "coefficient_infinity_gain_over_N_power_7_limit": "69632/3",
+    "det_C_times_N_power_16_limit": "45/33554432",
+    "every_inverse_entry_polynomial_degree": 7,
+    "inverse_leading_matrix": [
+      [
+        "512/45",
+        "-512/15",
+        "512/15",
+        "-512/45"
+      ],
+      [
+        "-1024/9",
+        "1024/3",
+        "-1024/3",
+        "1024/9"
+      ],
+      [
+        "512/3",
+        "-512/1",
+        "512/1",
+        "-512/3"
+      ],
+      [
+        "-1024/15",
+        "1024/5",
+        "-1024/5",
+        "1024/15"
+      ]
+    ],
+    "volume_over_N_power_16_times_16_power_minus_N_times_product_widths_limit": "1073741824/45"
+  },
+  "imports_source_acquisition": false,
+  "positive_expansion_terms": 36,
+  "schedules": [
+    {
+      "future_clock": 74,
+      "kernel_readings": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "kernel_sha256": "513d4af63108cc767374dfac8509df152be8bd1cddb950c2743e9f58e9634500",
+      "normalized_block_determinant": {
+        "denominator_bits": 1461,
+        "numerator_bits": 1074,
+        "sha256": "2f4b15e57f8f0d9342c91a0083a391bbb8e8a91da691ef37919e9cbf9c8c22e4",
+        "sign": 1
+      },
+      "rational_alias_seed": "1/16",
+      "raw_determinant": {
+        "denominator_bits": 910,
+        "numerator_bits": 1103,
+        "sha256": "519f95bcb13f9102d7b664c840a92e44b422361567de11391bb1eaa19db250c0",
+        "sign": 1
+      },
+      "raw_inverse_sha256": "3c8871444430525f0800ad5bb12fe180e60661082f92adce46116958d6f7d672",
+      "raw_sampling_matrix_sha256": "1df17ff844091958f8625504778062a79175be9b9d5fda83d2c77af32f677a92",
+      "symbolic_wrong_seed_recovery": [
+        "-x",
+        "4",
+        "-2",
+        "-1",
+        "-1"
+      ],
+      "times": [
+        4,
+        9,
+        21,
+        44,
+        67
+      ],
+      "wrapped_alias_equal": true
+    },
+    {
+      "future_clock": 62,
+      "kernel_readings": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "kernel_sha256": "bd5646e99b95d578bc318b730283a733704fb6937a8f5b20e4fee726fa3948a7",
+      "normalized_block_determinant": {
+        "denominator_bits": 1255,
+        "numerator_bits": 868,
+        "sha256": "d1f0ea429ced65d4251d5ec12e2905bc18c856e634839872c927600b42cc8490",
+        "sign": 1
+      },
+      "rational_alias_seed": "1/16",
+      "raw_determinant": {
+        "denominator_bits": 777,
+        "numerator_bits": 914,
+        "sha256": "9cdfed999e312d44d247fab01c227852223889dca35dc543c426c222986d1d54",
+        "sign": 1
+      },
+      "raw_inverse_sha256": "a51a95e86c25f3ad046fc2a8ce3a3bab4c0837f8116d29b354ae42d15706b818",
+      "raw_sampling_matrix_sha256": "40b903edcdd380bd0dd49eebeb4d8bde7798c0ca05684fac9ac80f6151337d8c",
+      "symbolic_wrong_seed_recovery": [
+        "-x",
+        "4",
+        "-2",
+        "-1",
+        "-1"
+      ],
+      "times": [
+        8,
+        13,
+        21,
+        34,
+        55
+      ],
+      "wrapped_alias_equal": true
+    },
+    {
+      "future_clock": 18,
+      "kernel_readings": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "kernel_sha256": "d9ad9f892a75b5c76d105d16147b76753bc1d331eeb9e6ce3746e4aef404c899",
+      "normalized_block_determinant": {
+        "denominator_bits": 223,
+        "numerator_bits": 1,
+        "sha256": "4947c5c790589226b284d75f68c508e4a8ae2d8bb00450b759b5e60fef218992",
+        "sign": 1
+      },
+      "rational_alias_seed": "1/16",
+      "raw_determinant": {
+        "denominator_bits": 82,
+        "numerator_bits": 40,
+        "sha256": "a24d1dd5b375629e735c968621eb0819e78f4ff4bc1e915ea4ada91c62514a8d",
+        "sign": 1
+      },
+      "raw_inverse_sha256": "d98b75c4af0c48ec009813da2b4e55c0b28f6a626587572f9c1dbe4302e76084",
+      "raw_sampling_matrix_sha256": "de70e1675dae801de6bf09ab818fd0d512224df54026da58ac7cdb4988e8ad0a",
+      "symbolic_wrong_seed_recovery": [
+        "-x",
+        "4",
+        "-2",
+        "-1",
+        "-1"
+      ],
+      "times": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "wrapped_alias_equal": true
+    },
+    {
+      "future_clock": 20,
+      "kernel_readings": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "kernel_sha256": "afa07ba86900c4f4d031a060cb2f7791f3e906df0c1968686de805b875da6c04",
+      "normalized_block_determinant": {
+        "denominator_bits": 299,
+        "numerator_bits": 124,
+        "sha256": "caed2b19d1bacdf62dd70205c1b93664bfb61f6981745c3d36f5510e9ed583ca",
+        "sign": 1
+      },
+      "rational_alias_seed": "1/16",
+      "raw_determinant": {
+        "denominator_bits": 168,
+        "numerator_bits": 149,
+        "sha256": "e79570c1159220445d1ec19550d7c6f16fc448ec30b48be9584b2f189c72f040",
+        "sign": 1
+      },
+      "raw_inverse_sha256": "4ce4ed75fb1f55aaf01ab90f4ad68c33581f4b9b350ba8da1912b8256ff2af41",
+      "raw_sampling_matrix_sha256": "4a692e19190efd7e67f1d04ff792e7cfae1adfdb012183c441c507bb128a67e3",
+      "symbolic_wrong_seed_recovery": [
+        "-x",
+        "4",
+        "-2",
+        "-1",
+        "-1"
+      ],
+      "times": [
+        3,
+        5,
+        8,
+        10,
+        13
+      ],
+      "wrapped_alias_equal": true
+    }
+  ],
+  "scope": "Finite implementation corroboration; universal claims require the paper proofs.",
+  "source_acquisition_sha256": "a8827b464ce9d87e9073bea8089d435df07570356ca1f8d5129b2d962564e43e",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

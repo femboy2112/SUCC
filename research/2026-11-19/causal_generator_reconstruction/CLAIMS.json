@@ -1,0 +1,576 @@
+{
+  "schema": "succ.causal-generator-claims.v1",
+  "date": "2026-11-19",
+  "base_commit": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "scope": "Paper proofs with explicit hypotheses; tests are implementation evidence, not universal proof.",
+  "independence": "Delegated reviewers share a model family; two source implementations use different exact arithmetic and decompositions but the same declared source.",
+  "claims": [
+    {
+      "id": "CGR-01",
+      "statement": "An accessible finite Hankel bank reconstructs every word and an absolutely convergent tagged path sum.",
+      "domain": "Complex responses on a finite free action monoid.",
+      "hypotheses": "Authenticated full Hankel rank at most d; measured invertible d-block and shifted/endpoint data; lawful common preparation; sum_a |z_a| ||M_a|| < 1.",
+      "quantifiers": "Every finite word; every tag family satisfying the norm inequality; every truncation length L.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "THEOREM.md section 2; REALIZATION.md CGR-R03/04; COMPLETE_SIGNED.md CS-01.",
+      "implementation_checks": [
+        "test_realization.py",
+        "test_signed_completion.py"
+      ],
+      "provenance": [
+        "Classical weighted-automaton realization and Neumann series; SUCC PO-H2--H5, BF-01."
+      ],
+      "adversarial_controls": [
+        "Delayed hidden chain",
+        "Unavailable replay",
+        "Divergent undamped scalar sum"
+      ],
+      "next_falsification_opportunity": "Remove or mutate one premise and compare an unchanged finite bank with a changed target."
+    },
+    {
+      "id": "CGR-02",
+      "statement": "Uniform finite-target and completion budgets give a certified completed target on each observation fiber.",
+      "domain": "Metric-valued targets on a nonempty compatible-model class.",
+      "hypotheses": "Two actual uniform bounds delta_L and r_L, tending to zero in sum.",
+      "quantifiers": "Every compatible model and every finite L; pairwise target diameter at most twice the total budget.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "THEOREM.md section 3.",
+      "implementation_checks": [
+        "Paper triangle-inequality proof; operator and source-tail calibrations in focused suite."
+      ],
+      "provenance": [
+        "Elementary triangle inequality; existing SUCC completion discipline."
+      ],
+      "adversarial_controls": [
+        "Pointwise limit without a modulus",
+        "Unpaid chronological limit"
+      ],
+      "next_falsification_opportunity": "Supply a model satisfying the displayed budgets while violating the conclusion, or show the proposed budgets are not uniform."
+    },
+    {
+      "id": "SA-02",
+      "statement": "Any five distinct exact raw state readings recover all four source coefficients and the seed.",
+      "domain": "U_0=s; U_n=16 U_(n-1)+sum_a c_a/(8n-d_a), d=(7,4,3,2), parameters in R^5.",
+      "hypotheses": "Known source family and clocks; unwrapped nonperturbative exact readings; no extra forcing.",
+      "quantifiers": "Every ordered five-tuple 0<=t0<...<t4 of finite integer clocks; every parameter vector.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "SOURCE_ACQUISITION.md SA-01/02; SOURCE_AUDIT.md sections 1 and 4.",
+      "implementation_checks": [
+        "test_source_acquisition.py",
+        "source_independent_audit.py",
+        "verify_source_audit.py"
+      ],
+      "provenance": [
+        "PR #668 FC-01/02 source-coordinate inverse; new raw-state block-minor interface in this dossier."
+      ],
+      "adversarial_controls": [
+        "Irregular and Fibonacci schedules",
+        "Changed coefficients",
+        "Wrong seed",
+        "Wrapped alias",
+        "Delayed out-of-family impulse"
+      ],
+      "next_falsification_opportunity": "Change an interval sign, pole order, or source term; rederive the determinant and test its claimed domain."
+    },
+    {
+      "id": "SA-03",
+      "statement": "Five raw scalar readings are necessary on an open free parameter class, including adaptive clocks.",
+      "domain": "Nonempty open subset of R^5 with deterministic sampling policy.",
+      "hypotheses": "At most four readings; each next strictly later clock and stopping decision depend only on earlier acquired readings.",
+      "quantifiers": "Every such policy fails for at least one pair of distinct parameters with the same transcript.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "SOURCE_ACQUISITION.md SA-03; SOURCE_AUDIT.md section 2.",
+      "implementation_checks": [
+        "test_source_acquisition.py four-reading kernel",
+        "source_independent_audit.py discontinuous adaptive policies"
+      ],
+      "provenance": [
+        "New explicit transcript-kernel lower bound for the SA-02 experiment; elementary rank-nullity."
+      ],
+      "adversarial_controls": [
+        "Four-reading kernel",
+        "Three-reading stopping branch",
+        "Source-triggered event times are excluded observations"
+      ],
+      "next_falsification_opportunity": "Propose a policy within the exact access model and check its transcript-fiber kernel; smaller priors require a new theorem."
+    },
+    {
+      "id": "SA-04",
+      "statement": "Bounded raw errors give an exact compatible parallelotope, volume, and sharp coordinate errors.",
+      "domain": "Full R^5 source family with fixed measurement and parameter units.",
+      "hypotheses": "Invertible sampling matrix; deterministic componentwise raw errors with positive volume widths.",
+      "quantifiers": "Every center reading and error box; every coordinate bound is individually sharp.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "SOURCE_ACQUISITION.md SA-04.",
+      "implementation_checks": [
+        "test_source_acquisition.py precision and volume controls"
+      ],
+      "provenance": [
+        "Linear change of variables; classical operator norm; distinct from #668 local-field Smith volume."
+      ],
+      "adversarial_controls": [
+        "Renormalized data and widths",
+        "Sign-aligned worst-case error"
+      ],
+      "next_falsification_opportunity": "Transport the complete error box under a new chart and test equality of the compatible fibers."
+    },
+    {
+      "id": "SA-04-LATE",
+      "statement": "Late consecutive five-clock fibers shrink in volume while worst directional sensitivity grows.",
+      "domain": "Clocks N,...,N+4 in the SA-02 source family.",
+      "hypotheses": "Fixed positive raw absolute error widths and parameter units.",
+      "quantifiers": "As N tends to infinity: det R_N ~ (1440/8^10)16^N/N^16; full inverse norm Theta(N^7); sigma_k(C_N)=Theta(N^(-(2k-1))).",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "SOURCE_ACQUISITION.md SA-04; SOURCE_AUDIT.md section 3, exterior-power proof.",
+      "implementation_checks": [
+        "source_independent_audit.py symbolic determinant and inverse coefficients"
+      ],
+      "provenance": [
+        "New explicit Cauchy-minor asymptotic and its knowledge-volume application in this dossier."
+      ],
+      "adversarial_controls": [
+        "Error-box units retained",
+        "Different schedules distinguished from cumulative observation"
+      ],
+      "next_falsification_opportunity": "Check an altered clock-spacing law or precision scaling; the fixed-consecutive asymptotic cannot be transferred unchanged."
+    },
+    {
+      "id": "SA-05",
+      "statement": "Recovered source parameters generate every finite state and a certified endpoint approximation.",
+      "domain": "Same four-pole source family.",
+      "hypotheses": "Authenticated coefficients and seed; M nonnegative; signed chronological target separately specified.",
+      "quantifiers": "Every M: endpoint tail <= ||c||_1/[15*16^M*(8M+1)]; every finite recurrence clock.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "SOURCE_ACQUISITION.md SA-05.",
+      "implementation_checks": [
+        "test_source_acquisition.py endpoint-tail cases"
+      ],
+      "provenance": [
+        "Geometric source tail; authentic BBP completion and terminal signed transport inherited from main and #668."
+      ],
+      "adversarial_controls": [
+        "Arbitrary seed shifts endpoint by s",
+        "Locked seed -pi/16",
+        "Unpaid signed terminal mean"
+      ],
+      "next_falsification_opportunity": "Attempt to infer Weyl decay from this tail alone; the locked source gives the falsifier."
+    },
+    {
+      "id": "CGR-R01",
+      "statement": "Future target equivalence is the coarsest action-preserved quotient carrying that target.",
+      "domain": "Deterministic carrier with lawful finite action words.",
+      "hypotheses": "Declared target and all lawful future compositions.",
+      "quantifiers": "All state pairs and all finite future words.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "REALIZATION.md section 1.",
+      "implementation_checks": [
+        "test_realization.py target-closure controls"
+      ],
+      "provenance": [
+        "Classical behavioral equivalence; SUCC CG-02/04."
+      ],
+      "adversarial_controls": [
+        "Hidden states outside target",
+        "Change target or toolkit"
+      ],
+      "next_falsification_opportunity": "Add a target or action distinguishing a formerly equivalent pair."
+    },
+    {
+      "id": "CGR-R02",
+      "statement": "Functional invariant features produce an exact finite realization.",
+      "domain": "Field-valued features on an arbitrary carrier.",
+      "hypotheses": "Phi(T_a x)=Phi(x)M_a and h(x)=Phi(x)beta for every admissible x.",
+      "quantifiers": "Every initial state and finite word.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "REALIZATION.md CGR-R02.",
+      "implementation_checks": [
+        "test_realization.py symbolic matrix closure"
+      ],
+      "provenance": [
+        "Classical invariant observable spaces; SUCC predictive row closure."
+      ],
+      "adversarial_controls": [
+        "A fit on sampled states only",
+        "Nonlinear target outside feature span"
+      ],
+      "next_falsification_opportunity": "Find a source state where the alleged functional identity fails."
+    },
+    {
+      "id": "CGR-R03",
+      "statement": "Hankel basis reconstruction yields the minimal linear state dimension.",
+      "domain": "Nonzero field-valued word response.",
+      "hypotheses": "Global rank bound d; invertible observed H; shifted blocks and endpoints accessible.",
+      "quantifiers": "Every word and every competing linear realization.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "REALIZATION.md section 2.",
+      "implementation_checks": [
+        "test_realization.py Fibonacci, noncommuting words, missing queries"
+      ],
+      "provenance": [
+        "Classical Carlyle-Paz/Ho-Kalman realization; SUCC BF-01 and PO-H2--H5."
+      ],
+      "adversarial_controls": [
+        "Delayed spike",
+        "Unpaid rank promise",
+        "Unavailable preparation"
+      ],
+      "next_falsification_opportunity": "Extend the response bank with a source-authenticated word outside the original training set."
+    },
+    {
+      "id": "CGR-R04",
+      "statement": "Minimal linear realizations of one response are similar with transported endpoints.",
+      "domain": "Minimal reachable and observable representations over a field.",
+      "hypotheses": "Exactly the same full nonzero response function.",
+      "quantifiers": "Every pair of minimal realizations.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "REALIZATION.md section 3.",
+      "implementation_checks": [
+        "test_realization.py similarity and support controls"
+      ],
+      "provenance": [
+        "Classical minimal-realization uniqueness."
+      ],
+      "adversarial_controls": [
+        "Similarity changes graph support",
+        "Hidden nonminimal summand"
+      ],
+      "next_falsification_opportunity": "Test a proposed physical graph inference under a support-changing similarity."
+    },
+    {
+      "id": "CGR-R05",
+      "statement": "A global Jacobian closure identity plus one anchor per generator integrates to value closure.",
+      "domain": "C1 maps on a connected open Euclidean domain.",
+      "hypotheses": "Derivative identity holds everywhere; one declared anchor fixes each additive constant.",
+      "quantifiers": "Every point and word; derivative-defect variant bounded by anchor error plus epsilon times intrinsic distance.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "REALIZATION.md section 5.",
+      "implementation_checks": [
+        "test_realization.py translation, disconnected-domain, affine repair"
+      ],
+      "provenance": [
+        "Elementary chain rule and integration; anchored SUCC closure synthesis."
+      ],
+      "adversarial_controls": [
+        "Translation missing constant",
+        "Disconnected domain",
+        "Finite sampled jets"
+      ],
+      "next_falsification_opportunity": "Find an unsampled derivative defect or a disconnected component without its anchor."
+    },
+    {
+      "id": "CGR-R06",
+      "statement": "Finite response agreement cannot authenticate an unspecified global finite-rank bound.",
+      "domain": "Unary responses queried at finitely many times.",
+      "hypotheses": "No uniform dimension bound on the admissible alternative.",
+      "quantifiers": "For every finite transcript, a later nilpotent spike matches it and changes a future response.",
+      "status": "PROVED_COUNTERMODEL",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "REALIZATION.md section 6.",
+      "implementation_checks": [
+        "test_realization.py delayed chain"
+      ],
+      "provenance": [
+        "Inherited SUCC PO-H5; explicit Fibonacci control."
+      ],
+      "adversarial_controls": [
+        "Finite observed rank plateau"
+      ],
+      "next_falsification_opportunity": "Attempt a finite certificate that excludes the delayed extension without adding a true closure premise."
+    },
+    {
+      "id": "PG-01",
+      "statement": "Forward root-path comparisons identify a known phase connection up to rooted vertex gauge.",
+      "domain": "Finite rooted directed multigraph with unit edge phases.",
+      "hypotheses": "Every vertex root-reachable; fixed out-arborescence; individually addressable edges; coherent replay or calibrated retained reports.",
+      "quantifiers": "Every connection and every finite directed path in the identified gauge.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "PATH_GEOMETRY.md section 2.",
+      "implementation_checks": [
+        "test_path_geometry.py forward diamond and gauge controls"
+      ],
+      "provenance": [
+        "Classical graph holonomy; explicit causal access contract in this dossier."
+      ],
+      "adversarial_controls": [
+        "Missing chord",
+        "Inaccessible root",
+        "Parallel-edge aggregation",
+        "Uncalibrated unequal durations"
+      ],
+      "next_falsification_opportunity": "Mutate one chord while retaining only the admitted acquired records."
+    },
+    {
+      "id": "PG-02",
+      "statement": "The phase quotient has E-V+1 independent coordinates, with a regular local measurement lower bound.",
+      "domain": "Known connected-support rooted phase graph.",
+      "hypotheses": "Scalar phase measurements and differentiable local inverse for the general lower bound.",
+      "quantifiers": "k >= beta for every such locally invertible acquisition; fresh traversal cost is separately explicit.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "PATH_GEOMETRY.md PG-02.",
+      "implementation_checks": [
+        "test_path_geometry.py omitted chord"
+      ],
+      "provenance": [
+        "Classical gauge dimension; rank of derivative of left inverse."
+      ],
+      "adversarial_controls": [
+        "Discontinuous encodings excluded",
+        "Phase datum distinguished from edge traversals"
+      ],
+      "next_falsification_opportunity": "Propose a lower-cost protocol with its real phase output dimension, memory and replay contract stated."
+    },
+    {
+      "id": "PG-03",
+      "statement": "Phase and resolvent errors have explicit path-length and pole-distance costs.",
+      "domain": "Unit phases and known moduli on finite weighted graphs.",
+      "hypotheses": "Correct gauge comparison; subordinate norm and strict convergence disk.",
+      "quantifiers": "Every finite path and every tag satisfying |z|M<1.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "PATH_GEOMETRY.md section 3.",
+      "implementation_checks": [
+        "test_path_geometry.py loop accumulation and resolvent conditioning"
+      ],
+      "provenance": [
+        "Elementary telescoping and resolvent identity."
+      ],
+      "adversarial_controls": [
+        "Repeated loop",
+        "Near-pole family"
+      ],
+      "next_falsification_opportunity": "Test any claimed uniform precision bound as the pole distance tends to zero."
+    },
+    {
+      "id": "PG-04",
+      "statement": "Jacobian products are exact tangent path sums and covariant under moving frames.",
+      "domain": "Finite differentiated trajectories with compatible coordinate charts.",
+      "hypotheses": "Actual Jacobians; chronological matrix order; transported initial vector and final covector.",
+      "quantifiers": "Every finite horizon and sequence of invertible frame derivatives.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "PATH_GEOMETRY.md section 4.",
+      "implementation_checks": [
+        "test_path_geometry.py noncommuting order and frame mutations"
+      ],
+      "provenance": [
+        "Inherited SUCC finite graph/QM semantics; chain rule."
+      ],
+      "adversarial_controls": [
+        "Dropped endpoint frame",
+        "Reversed noncommuting order",
+        "Equal jets at one point but unequal nonlinear maps"
+      ],
+      "next_falsification_opportunity": "Mutate one frame or offset while checking the invariant contracted response."
+    },
+    {
+      "id": "PG-05-06",
+      "statement": "A stationary operator has formal/analytic resolvent and trace-determinant path identities.",
+      "domain": "Finite complex matrices, or formal characteristic-zero series where appropriate.",
+      "hypotheses": "Formal identity; analytic statement only near zero or with the stated norm convergence condition.",
+      "quantifiers": "All nonnegative path lengths; all truncations in the convergence region.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "PATH_GEOMETRY.md section 5.",
+      "implementation_checks": [
+        "test_path_geometry.py exact finite path semantics"
+      ],
+      "provenance": [
+        "Classical Neumann series and Bowen-Lanford determinant identity."
+      ],
+      "adversarial_controls": [
+        "Rational continuation differs from series convergence",
+        "Ihara/Riemann identifications require source maps"
+      ],
+      "next_falsification_opportunity": "Ask whether the proposed final observable is actually determined by these scalar aggregates."
+    },
+    {
+      "id": "PG-07",
+      "statement": "A closed-walk zeta and a scalar boundary response can each discard carrier distinctions.",
+      "domain": "Finite weighted operators with specified input/output ports.",
+      "hypotheses": "No extra support or observability assumptions.",
+      "quantifiers": "Explicit scalar/Jordan and hidden-direct-sum counterexamples.",
+      "status": "PROVED_COUNTERMODEL",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "PATH_GEOMETRY.md PG-07; REALIZATION.md section 6.",
+      "implementation_checks": [
+        "test_path_geometry.py traces versus response; hidden mode",
+        "test_realization.py support ambiguity"
+      ],
+      "provenance": [
+        "Classical linear-algebra countermodels; SUCC dark-mode ancestry."
+      ],
+      "adversarial_controls": [
+        "Same zeta, different anchored response",
+        "Same response, different full zeta",
+        "Same intensities, different interference"
+      ],
+      "next_falsification_opportunity": "Add a probe that separates the surviving pair rather than treating one aggregate as complete."
+    },
+    {
+      "id": "CS-01",
+      "statement": "Local matrix defects telescope with explicit long-path growth and resolvent costs.",
+      "domain": "Finite compatible matrices in a subordinate norm.",
+      "hypotheses": "Actual local errors and factor bounds; convergence only where |z|M<1.",
+      "quantifiers": "Every finite product length and every convergent weighted sum.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "COMPLETE_SIGNED.md CS-01.",
+      "implementation_checks": [
+        "test_signed_completion.py product and resolvent certificates"
+      ],
+      "provenance": [
+        "Elementary telescoping; inherited SUCC transported defects."
+      ],
+      "adversarial_controls": [
+        "Expanding scalar factors",
+        "Near pole"
+      ],
+      "next_falsification_opportunity": "Track accumulated amplification before extrapolating a local tolerance."
+    },
+    {
+      "id": "CS-02",
+      "statement": "A bounded scalar signal with an authenticated minimal stationary realization has a mean given by its eigenvalue-one component.",
+      "domain": "Finite complex minimal scalar realization.",
+      "hypotheses": "All-time bounded output; full reachability and observability, or separately assumed power boundedness.",
+      "quantifiers": "All prefix and B..2B-1 shell means; selected input and output fixed.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "COMPLETE_SIGNED.md CS-02.",
+      "implementation_checks": [
+        "test_signed_completion.py stationary, oscillatory, Jordan and hidden-unstable cases"
+      ],
+      "provenance": [
+        "Finite-dimensional spectral averaging; O A^n R bounded-output argument."
+      ],
+      "adversarial_controls": [
+        "A=1 versus A=-1",
+        "Unobservable eigenvalue 2",
+        "Jordan block at 1"
+      ],
+      "next_falsification_opportunity": "Check the stationary target projection on the actual minimal quotient."
+    },
+    {
+      "id": "CS-03",
+      "statement": "A moving-frame signed mean splits exactly into boundary, signed projected residual, and readout error.",
+      "domain": "Finite retained dictionaries, variable matrices and covectors.",
+      "hypotheses": "All quantities and compensators retained; actual residual definitions.",
+      "quantifiers": "Every finite shell; every invertible sequence of frame changes.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "COMPLETE_SIGNED.md CS-03; THEOREM.md T6.",
+      "implementation_checks": [
+        "test_signed_completion.py transported signed identities"
+      ],
+      "provenance": [
+        "Elementary Poisson/telescoping identity; target-specific synthesis."
+      ],
+      "adversarial_controls": [
+        "Dropped compensator",
+        "Partial-sum circularity",
+        "Fixed-point obstruction"
+      ],
+      "next_falsification_opportunity": "Derive independent all-shell bounds from the authentic source; the identity alone is not progress on cancellation."
+    },
+    {
+      "id": "CS-04",
+      "statement": "An irrational radix phase has infinite stationary linear rank but a one-coordinate nonlinear generator.",
+      "domain": "z_n=exp(2*pi*i*h*b^n*x), b>=2 integer, h nonzero integer, x irrational.",
+      "hypotheses": "Exact phase sequence and fixed stationary linear realization category.",
+      "quantifiers": "Every finite proposed recurrence; root-count finite obstruction and all-time impossibility.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "COMPLETE_SIGNED.md CS-04.",
+      "implementation_checks": [
+        "test_signed_completion.py rational periodic controls and root counts"
+      ],
+      "provenance": [
+        "INHERITED HBC-01--03, not new in this dossier."
+      ],
+      "adversarial_controls": [
+        "Rational periodic orbit",
+        "One-coordinate nonlinear z->z^b",
+        "Sparse irrational nonnormal example"
+      ],
+      "next_falsification_opportunity": "Distinguish the model language before claiming finite causal generation is impossible."
+    },
+    {
+      "id": "CS-05",
+      "statement": "Every finite low-Hankel-rank approximation obeys a Gram-eigenvalue distortion floor.",
+      "domain": "Arbitrary finite complex sequences z,y of length L.",
+      "hypotheses": "0<=d<m<=L; rank H(y)<=d; N=L-m+1; ascending eigenvalues of H(z)*H(z)/N.",
+      "quantifiers": "MSE >= N/(mL) sum of the smallest m-d eigenvalues for every such pair.",
+      "status": "PROVED_PAPER",
+      "truth_state": "DISCLOSED_WITHIN_STATED_HYPOTHESES",
+      "proof": "COMPLETE_SIGNED.md CS-05, formula CS9.",
+      "implementation_checks": [
+        "test_signed_completion.py",
+        "signed_completion.py 84 exact compression cases"
+      ],
+      "provenance": [
+        "New explicit finite compression inequality in this dossier; elementary projection and multiplicity proof."
+      ],
+      "adversarial_controls": [
+        "Identity Gram finite sign controls",
+        "Rank-deficient Gram",
+        "Ensemble versus selected seed"
+      ],
+      "next_falsification_opportunity": "Check the finite spectral lower bound on a new source-certified window with rigorous arithmetic."
+    },
+    {
+      "id": "CS-11-12",
+      "statement": "For a normal radix phase, optimal fixed-state stationary linear MSE tends to one, including horizon-refitted models.",
+      "domain": "Base-b normal x; fixed nonzero frequency; fixed finite state budget d.",
+      "hypotheses": "Normality is assumed; m fixed before L tends to infinity, then m grows.",
+      "quantifiers": "Every horizon-indexed family c_L A_L^k v_L of dimension at most d; optimal infimum tends to one.",
+      "status": "PROVED_CONDITIONAL_THEOREM",
+      "truth_state": "DISCLOSED_IMPLICATION; PI_PREMISE_UNVERIFIED",
+      "proof": "COMPLETE_SIGNED.md CS10--12.",
+      "implementation_checks": [
+        "Finite CS9 controls only; no pi data used to validate normality premise."
+      ],
+      "provenance": [
+        "Finite CS9 plus classical Weyl characterization; HBC Gram ancestry."
+      ],
+      "adversarial_controls": [
+        "Zero model attains error one",
+        "Growing dimensions and nonlinear models are outside the statement"
+      ],
+      "next_falsification_opportunity": "Obtain uniform growing-width Gram bounds before claiming a dimension-growth rate."
+    },
+    {
+      "id": "OPEN-BBP-SIGNED",
+      "statement": "The authentic zero-seeded BBP chronological Weyl sums satisfy the desired all-late-shell cancellation or R0 gap.",
+      "domain": "Literal BBP forcing and U0=0, completed phase Y_n=16^n*pi/16.",
+      "hypotheses": "No new source-selected signed estimate supplied in this dossier.",
+      "quantifiers": "R0: exists eta>0,B0 such that all B>=B0 have Re W_B(1)<=1-eta; normality requires each nonzero integer frequency mean tending to zero.",
+      "status": "OPEN",
+      "truth_state": "UNVERIFIED",
+      "proof": "NEXT.md states the unpaid obligation, not a proof.",
+      "implementation_checks": [
+        "Wrong-seed and alias controls are adversarial calibration only."
+      ],
+      "provenance": [
+        "Existing docs/PI_NORMALITY_FRONTIER.md; no status promotion."
+      ],
+      "adversarial_controls": [
+        "Same forcing with seed -pi/16 has completed phase one",
+        "Finite coherent rank cannot imply cancellation"
+      ],
+      "next_falsification_opportunity": "Produce a source-derived dictionary and signed residual bound that separates the exact locked seed."
+    }
+  ]
+}

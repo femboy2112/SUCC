@@ -1,0 +1,61 @@
+{
+  "base_commit": "81be6b897ae980b801a3b9de9e22ef81e8360bfb",
+  "date": "2026-11-19",
+  "python": "3.12.14",
+  "results": {
+    "cross_implementation_determinant_matches": 8,
+    "cross_implementation_matrix_matches": 8,
+    "focused_unittest": {
+      "run": 53,
+      "seconds": 0.438,
+      "status": "OK"
+    },
+    "independent_symbolic_assertions": 116,
+    "json_files_parsed_before_manifest": 4,
+    "relative_file_links_checked": 48,
+    "root_unittest": {
+      "run": 14476,
+      "seconds": 1233.96,
+      "skipped": 2,
+      "status": "OK"
+    },
+    "signed_compression_cases": 84,
+    "staged_whitespace": "PASS"
+  },
+  "schema": "succ.causal-generator-reconstruction-receipts.v1",
+  "scope": "Hashes identify this audited local artifact set. They do not replace paper proofs or authenticate an unrestricted physical source.",
+  "sha256": {
+    "CLAIMS.json": "66cd0b39a58da243fe1bc7fa3e97f7a3b979d5a108a613e7503f5e47eddb7d5f",
+    "COMPLETE_SIGNED.md": "d811f2cd203651b9a26308e08b648a9ff4112c51305be3dea82bc26b7806ec19",
+    "HOLE_CONTRACT.md": "2bf71b1cd0e18f48500c21320084e51c821d2f9c8347199b3c2b486789be4375",
+    "NEXT.md": "3f1b6903b8717f41c4cf1e5d284dccbd13697153ea0ff1e2eeef43db18083612",
+    "PATH_GEOMETRY.md": "db23c59a7e7da3fb04d3eae07029cd916fc3e7bb00acffbfb737ea2306460bb9",
+    "PROVENANCE.md": "44f014370ba2a77b2af722102ac47ae14bb1c0b05b721564858cdef348b9a317",
+    "README.md": "f01097c9d8ff9d0b33b357e848df758aecbc8749060af0479c3178e3f8526f8d",
+    "REALIZATION.md": "4e4a447c4ebb62e20b59d89f7672a688850b9e8645e9fe764528d756bc7a0870",
+    "SOURCE_ACQUISITION.md": "1526f1b1f0442a5be40b0bb72e03f87cfdeaf93966e360b3854a0b39b6497d2d",
+    "SOURCE_AUDIT.md": "e456bdc83c673f858eca5f4b8b6e496d55e1052bd164973dcdc22369581614d4",
+    "THEOREM.md": "86c02d8b45abeb2783cf70d397325cdcaa0694ba716bb9391e859d408c758461",
+    "VALIDATION.md": "3ded587bab765b0ca88de9558142c210fed59496136b4704c6eeb455aa8da379",
+    "path_geometry.py": "99b9460eefca806fb54fefd46a36d15794e2de19b286b350507d05d67574819f",
+    "realization.py": "82be0b010b3234026e773d95b8416ba6223db584eb1303d78472ef62f1c5a403",
+    "receipts/focused_unittest.log": "ca9196125638d9c1e60df37cb9a92d095796b32cc13efdae0dcb526f6917f06c",
+    "receipts/observer_foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "receipts/ordinal_succ.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "receipts/provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "receipts/root_unittest.log": "98c6915bce239b8dad34d188d9cc26efa13cc8e55d38f08d449f8523de5d1f5e",
+    "receipts/signed_compression.json": "8021bc87cf8d3da0ecad4eacaa932960b233bb64be8bd6911a5c2bfbc322e693",
+    "receipts/source_acquisition_tests.log": "70b4b510aa87e78381302b4527cdeaf660a2c977135d5ad1d71bc9a2a7d843b9",
+    "receipts/source_cross_implementation.json": "eadbd2cdba4341a7cb5803a2c0614002a7d0fec61ebffa509336f9cb9d4121b5",
+    "receipts/source_independent_audit.json": "b4a816d55230acea84cafd6c2f3fa5c3b42100086b263d7423fa61256937ec2d",
+    "receipts/source_independent_audit.log": "b4a816d55230acea84cafd6c2f3fa5c3b42100086b263d7423fa61256937ec2d",
+    "signed_completion.py": "9b53ecc466e11faf250d01456508b4a0d81b270e193acaeb54368e1ef6d7d0f9",
+    "source_acquisition.py": "a8827b464ce9d87e9073bea8089d435df07570356ca1f8d5129b2d962564e43e",
+    "source_independent_audit.py": "e7ed9090b259358d87be64db7f85ef78d59e4723d81e333d896d8a351421f2dc",
+    "test_path_geometry.py": "1b4db0bab66da0bf2be6eca3aa395f93ff79d4e7bcf5e72d51cd7d58273232cc",
+    "test_realization.py": "82b2285e8636f02d72b23e5e2bbb28162dab9310419174e0287b99b769fb3d7c",
+    "test_signed_completion.py": "e6a585f4e339a489e42da6dabc35e48f3dc686af9356e63fb306e1cfabf61447",
+    "test_source_acquisition.py": "97c3d7c940ae3707ea605ed98ae69e5aea4d3825d4e66011b019451a6e7408ed",
+    "verify_source_audit.py": "e8913c685f613ee378f42627b47488ba40bdba456a905dd2d6da052ee98b1087"
+  }
+}
