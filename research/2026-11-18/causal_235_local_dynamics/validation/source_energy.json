@@ -1,0 +1,89 @@
+{
+  "source": "original four signed poles; U0=0; exact rational forward states",
+  "scope": "existing index range through512, finite calibration, not a fresh pi-digit holdout",
+  "tail_bound": "0<T_n<r(n+1)/15",
+  "energy": "mean ||16^n*pi/16||_T^2 for B<=n<2B",
+  "construction_uses_pi_numeric_value": false,
+  "rows": [
+    {
+      "B": 16,
+      "count_selected_carries": 7,
+      "energy_lower": [
+        82538512119,
+        1099511627776
+      ],
+      "energy_upper": [
+        82568652174,
+        1099511627776
+      ],
+      "approx_interval": [
+        0.07506833946445113,
+        0.07509575168478477
+      ]
+    },
+    {
+      "B": 32,
+      "count_selected_carries": 16,
+      "energy_lower": [
+        87765784049,
+        1099511627776
+      ],
+      "energy_upper": [
+        87773894592,
+        1099511627776
+      ],
+      "approx_interval": [
+        0.07982251558951248,
+        0.07982989208539948
+      ]
+    },
+    {
+      "B": 64,
+      "count_selected_carries": 28,
+      "energy_lower": [
+        96932949284,
+        1099511627776
+      ],
+      "energy_upper": [
+        96935155401,
+        1099511627776
+      ],
+      "approx_interval": [
+        0.08816000380102196,
+        0.08816201025274495
+      ]
+    },
+    {
+      "B": 128,
+      "count_selected_carries": 72,
+      "energy_lower": [
+        97912422220,
+        1099511627776
+      ],
+      "energy_upper": [
+        97912956716,
+        1099511627776
+      ],
+      "approx_interval": [
+        0.08905082924684393,
+        0.08905131536812405
+      ]
+    },
+    {
+      "B": 256,
+      "count_selected_carries": 132,
+      "energy_lower": [
+        97899844152,
+        1099511627776
+      ],
+      "energy_upper": [
+        97899982507,
+        1099511627776
+      ],
+      "approx_interval": [
+        0.08903938956063939,
+        0.08903951539377886
+      ]
+    }
+  ]
+}

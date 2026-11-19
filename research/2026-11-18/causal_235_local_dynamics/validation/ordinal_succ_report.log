@@ -1,0 +1,105 @@
+{
+  "bounded_query_stabilization": {
+    "earlier_observer_stage": 9,
+    "later_observer_stage": 28,
+    "max_matrix_change": "0.0",
+    "rational_times": [
+      "0",
+      "-1",
+      "1"
+    ],
+    "scope": "prime wavefront exact by finite stage; Gamma response separately analytic",
+    "sufficient_stage": 9
+  },
+  "connected_source_second_order": {
+    "composite_event": 6,
+    "fake_connected_curvature": "1",
+    "fake_slope_jump": "-0.731482740234792026106494701286",
+    "finite_observation_time": "9/5",
+    "predicted_second_order_delta": "-log(6)/sqrt(6) at t=log(6)",
+    "primes": [
+      2,
+      3
+    ],
+    "true_connected_curvature": "0",
+    "two_time_Weil_diagonal_fake_minus_true": "-0.0120556120601029081022494377731"
+  },
+  "formal_ordinals": {
+    "finite_run_is_not_limit": true,
+    "finite_successor": "n->n+1, complete source prefix",
+    "global_PSD_predicate_proved": false,
+    "limit_omega": "filtered colimit/union of coherent finite observations",
+    "omega_plus_one": "mathematical retrospective Suzuki/Weil report"
+  },
+  "hilbert_critical_line_observer_escape": {
+    "H_256_lower_bound": "5",
+    "finite_norm_squared": "1",
+    "fixed_local_projector": "P_3",
+    "harmonic_H_256": "102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217/16674490806895842671659008751776385350270324508909651849955453691538889375930032935391666564679008085339616000",
+    "identity_expectation": "1",
+    "local_projector_expectation": "30569899812642378231374849378256706475495594933001028391584998434487963855871727048218055368578181489789296000/102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217",
+    "normalizable_omega_vector_exists": false,
+    "source_inert_and_not_RH": true,
+    "stage": 256,
+    "weak_limit_zero_not_strong": true
+  },
+  "next_theorem": "Source-defined positive-definite DISTRIBUTION Psi'' on complete test-function core; RH equivalent, NOT proved",
+  "no_RH_or_Weil_positive_sign_assumed": true,
+  "no_actual_infinite_ordinal_computed": true,
+  "positive_observations_are_not_positive_correlations": {
+    "isolated_prime_impulse_negative_determinant": "-0.007213596830721357871484304",
+    "oscillator_Hilbert_Gram_identity_error": "2.8298997121333476148466e-73",
+    "oscillator_second_curvature_can_be_negative": true,
+    "quartic_determinant": "-192",
+    "quartic_kernel": [
+      [
+        "2",
+        "-14"
+      ],
+      [
+        "-14",
+        "2"
+      ]
+    ],
+    "quartic_psi_nonnegative": true,
+    "quartic_quadratic_vector_ones": "-24",
+    "quartic_second_derivative_nonnegative": true
+  },
+  "semantic_second_derivative_information_geometry": {
+    "Weil_identification_established": false,
+    "both_information_geometries_PSD": true,
+    "fake_covariance_determinant": "41/343",
+    "fake_six_Hessian": [
+      [
+        "24/49",
+        "-1/49"
+      ],
+      [
+        "-1/49",
+        "12/49"
+      ]
+    ],
+    "genuine_Hessian": [
+      [
+        "5/9",
+        "-1/18"
+      ],
+      [
+        "-1/18",
+        "2/9"
+      ]
+    ],
+    "genuine_covariance_determinant": "13/108",
+    "source": "Hessian log finite positive evidence partition function"
+  },
+  "status": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE",
+  "two_observer_mixed_finite_difference": {
+    "distributional_limit": "Psi''(t-u) = Weil distribution",
+    "h": "1/20",
+    "k": "1/30",
+    "mixed_covariance_increment": "0.000964653856973416905507178662116",
+    "positive_definiteness_proved": false,
+    "t": "3/5",
+    "u": "1/5"
+  }
+}

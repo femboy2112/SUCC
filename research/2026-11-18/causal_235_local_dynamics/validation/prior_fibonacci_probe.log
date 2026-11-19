@@ -1,0 +1,10 @@
+Exact checks: 711
+F_10=55, F_5=5, L_5=11: PASS
+BBP Q(A^-1)= [[7, -6], [-6, 13]] det= 55
+Pentagonal source Gram conjugacy difference = 57*all-ones: PASS
+Changing one of the five memory channels destroys the conjugacy: PASS
+Fibonacci rank-of-appearance / prime-order tests: PASS
+Resonant simple-prime witnesses for original U56: [(23, 11, 9), (31, 5, 19), (41, 5, 33), (89, 11, 30), (397, 11, 4)]
+Product of five primes: 1032889589 divides den(U56): True
+Order-9 p=73 at F12=144: source-local 8 -> 0, innovation 65
+Does not prove Weyl cancellation, R0, or base-16 normality of pi.
