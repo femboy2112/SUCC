@@ -37,6 +37,8 @@ including on an identically locked wrong-seed completion.
 | GYC-10 | one oriented near-zero streak length O(log N) | original positive tail; excluded upper-fringe orientation remains |
 | GYC-11 | independent signed Gaussian witness ⇒ R0 | conditional; crucial witness estimate UNVERIFIED |
 | GYC-12 | causal square + dense Yoneda probes ⇒ target reconstruction | classical, explicitly limited to lawful observation class |
+| GYC-13 | finite rational terminal cancels source forcing exactly | genuine BBP source, every finite horizon; local Gaussian position defect O(n^-2) |
+| GYC-14 | terminal endpoint M=2B improves Gaussian error 64-fold | E/V source transfer O(1/(4096 B^2)); fixed rational M cannot be Haar |
 
 ## Two different spectra, two different frontiers
 
@@ -77,8 +79,11 @@ For the exact BBP `U_n`, the inherited completed tail obeys
 
 where hats use only **finite exact rational** states `U_n`. These are
 all-shell rigorous analytic transport inequalities, not empirical fits.
+One finite source-rational terminal endpoint `P_(2B)` improves both errors
+from `1/(64*B^2)` to `1/(4096*B^2)` (GYC-14), while its compensated
+finite trajectory commutes **exactly** with the radix-16 successor (GYC-13).
 The signed source arithmetic needed to show a positive all-late-shell
-rational Ehat lower bound remains open.
+rational terminal energy lower bound remains open.
 
 The same exact original forcing and seed `-pi/16` produce `Y_n=0`
 for all n. Yet the Gaussian energy of the nonzero innovations `r(n)` is
@@ -92,7 +97,7 @@ Jacobian rank, and spectral energy conservation are not enough.
 - [CLAIM_LEDGER.md](CLAIM_LEDGER.md): precise claim authority and residual debt.
 - [gaussian_causal.py](gaussian_causal.py): stdlib exact-rational BBP and
   Gaussian finite Fourier diagnostics.
-- [test_gaussian_causal.py](test_gaussian_causal.py): 22 focused tests, exact
+- [test_gaussian_causal.py](test_gaussian_causal.py): 26 focused tests, exact
   rational identities, independent quadrature, tails, mutation-like controls.
 - [VALIDATION.md](VALIDATION.md): actual executed tests and unexecuted gates.
 
