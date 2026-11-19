@@ -192,6 +192,13 @@ and proving its global sign remain separate unpaid obligations.
 
 ## Navigation and reproduction
 
+The directly related [sister PR666 synthesis](SISTER_666_BRIDGE.md), read after
+it appeared during this run, strengthens the scalar source match to
+T=Sym4(I+Q(M)) modulo5 for the literal signed BBP polynomial. It also connects
+the complementary identity H(M)K(M)=16I-M^8, K(M)=3M, and the exact omitted
+boundary 16^L U_(n-L). Its earlier state/frame/readout counts remain explicitly
+distinct from the present local cycle construction.
+
 * [Fibonacci proof and local periods](FIBONACCI_LOCAL_BRIDGE.md)
 * [Source map, memory theorem, and pi dependency cut](THEOREMS.md)
 * [Constructive mixed-place shadows](CAUSAL_SHADOWS.md)

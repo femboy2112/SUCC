@@ -95,6 +95,21 @@ python research/2026-11-18/causal_235_local_dynamics/probe_discriminant.py
   Collatz fifth-prime discrete-log values are checked through 5^6. See
   `validation/discriminant_mechanism.json`.
 
+### Late sister-branch connection
+
+PR666 appeared during the validation run. Its exact head and the three read
+documents are pinned in `source_map.json`. After publication of the initial
+draft, `probe_discriminant.py` was extended and executed successfully to check
+HK=16-t^8, the H/K/Q Fibonacci reductions, and the new equality
+T=Sym4(I+Q(M)) modulo5. It also rejects an uncorrected lift modulo25 and the
+source mutation H+t^4 (rank-one square-zero output instead of invertible T).
+The output is `validation/sister_666_probe.log`.
+
+This follow-up changes research prose and this standalone exact probe, without
+changing production code or the 29 discovered test methods. It does not borrow
+the sister branch's full-suite or independent-audit results. The factorial-digit
+countermodel is shared classical material and is credited accordingly.
+
 ## Provenance, independence, and limits
 
 `validation/source_map.json` pins the base files and the exact reference-only

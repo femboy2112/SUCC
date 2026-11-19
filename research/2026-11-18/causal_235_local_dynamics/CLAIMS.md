@@ -24,6 +24,7 @@ finite tests, and independent implementations are distinct evidence types.
 | C235-16 | Universal Collatz termination or RH from these connections | UNVERIFIED / NOT CLAIMED | No conjugacy or completed-Weil-positive identification supplied. Primary literature is scoped in the translation note. |
 | C235-17 | Mod2 and mod3 reductions of T are semisimple of orders3 and2; mod5 is one size5 unipotent Jordan block arising from discriminant5 | PROVED LOCAL / CLASSICAL INGREDIENTS | Fibonacci section3.2; finite-difference proof of nilpotency index5 and exact rank receipt. Five polynomial coordinates retain their two-coordinate origin. |
 | C235-18 | Infinite irrational phase separation does not imply an eventual uniform R0 margin | REFUTATION / ELEMENTARY COUNTERMODEL | THEOREMS section3.1: beta=sum16^(-j!) has recurring separation1/16 and nearly aligned entire shells B=2k!. This beta is not pi. |
+| C235-19 | Literal signed source evaluated on the Fibonacci module satisfies Q(M)=-N mod5 and T=Sym4(I+Q(M)) mod5; complementary filter K(M)=3M locates ternary contraction | PROVED COMPOSITE SYNTHESIS | SISTER_666_BRIDGE: imports and checks PR666 FST-01, then proves the fifth-prime source/operator coupling. No chronological BBP conjugacy or signed real-phase bound. |
 
 ## Dependencies and novelty tax
 
