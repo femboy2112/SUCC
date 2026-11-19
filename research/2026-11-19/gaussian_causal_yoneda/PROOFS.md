@@ -419,3 +419,54 @@ a certified error, rather than quietly swapping the order of source
 completion and late-shell observation. The all-shell estimate for the
 selected `P_(2B)` is STILL OPEN. A fixed-M positive limit does not by
 itself establish any inequality about the joint-M(B) limit.
+
+## GYC-15 — Gaussian Jacobian cross-spectrum identifies source channels, not seed
+
+In the authenticated **five-parameter counterfactual family** let
+`p=(s,c1,c2,c3,c4)`, `c=(4,-2,-1,-1)` at the selected source, and
+
+`U_n(p)=16^n*s + sum_(j=1)^n 16^(n-j)sum_(k=1)^4 c_k/(8j-beta_k)`,
+`beta=(7,4,3,2)`.
+
+This is **affine**, so `U_n(p+xi)=U_n(p)+J_n xi` exactly, where
+
+`J_n=(16^n, sum_(j=1)^n 16^(n-j)/(8j-7), ...,
+              sum_(j=1)^n 16^(n-j)/(8j-2))`.
+
+For a *declared, source-labeled counterfactual* Gaussian perturbation
+`xi~N(0,sigma^2 I_5)`, and observations `Y_i=U_(n_i)(p+xi)`,
+
+```
+Cov(Y,xi) = sigma^2 * J,
+Cov(Y,Y)  = sigma^2 * J*J^T.
+```
+
+The first recovers every signed Jacobian coefficient provided the
+innovation labels are actually retained; the second cannot distinguish
+`J` from `J*Q` for any orthogonal `Q`, so mere output Gaussianity and
+its self-spectrum leave an internal gauge. An independently measured
+unwrapped mean `E[Y_i]=U_(n_i)(p)` supplies the affine anchor; the
+covariances alone cannot recover a changed seed `s`.
+
+For consecutive clocks `n_i=i, i=1,...,5`, exact rational elimination gives
+
+`det J = 32768/17039726835256125 != 0`.
+
+Thus these five exact, **unwrapped** state readings identify all five
+coefficients in this declared family; this is compatible with the stronger
+arbitrary-clock acquisition theorem of sibling draft #671, not a new proof
+of that stronger statement. For the nonlinear wrapped phase report
+`z_n(p+xi)=exp(2*pi*i*h*U_n(p+xi))`, Gaussian integration gives
+
+```
+E z_n = z_n(p)*exp(-2*pi^2*h^2*sigma^2*||J_n||^2),
+E[z_n*xi_k] = 2*pi*i*h*sigma^2*(J_n)_k * E z_n.
+```
+
+Its complex source-labeled cross-spectrum retains the direction and
+sign of the actual linearized response, unlike positive self-energy,
+but has exponentially poor absolute conditioning as the Jacobian grows.
+This observation instrument does **not** exist automatically for the
+immutable single pi trajectory; interventions, preparation and source
+labels are additional experimental assumptions. Neither identification
+of the finite coefficient family nor a high-rank Jacobian proves R0.
