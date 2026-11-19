@@ -2,6 +2,14 @@
 
 Main XXVI: [claim supplement](CLAIM_SUPPLEMENT_MAIN_XXVI.md), [atlas](MAIN_XXVI_CONSTRUCTIVE_INTERFERENCE_ATLAS.md), and [54-PR disposition map](MAIN_XXVI_PR_DISPOSITIONS.md). Gauge correction, quantitative interfaces and original-source asymptotic debt are explicit. R0, pi normality and RH remain OPEN.
 
+**Research continuation, 2026-11-18:** [causal 2–3–5 local dynamics](../research/2026-11-18/causal_235_local_dynamics/README.md)
+constructs a five-coordinate Fibonacci observer with exact prime-power periods,
+a compatible BBP local-clock factor, a joint-place actual-source phase nonfactor
+theorem, and mixed-place adaptive carry-word shadows. The
+[scoped claims](../research/2026-11-18/causal_235_local_dynamics/CLAIMS.md) distinguish
+classical/composite proofs, finite controls, and the missing signed estimate.
+Collatz and RH connections remain local/structural; no conjecture status is promoted.
+
 
 **Additive register, 2026-11-13:**
 [Principia Observatoris claims and dependencies](principia_observatoris/REFERENCE.md).

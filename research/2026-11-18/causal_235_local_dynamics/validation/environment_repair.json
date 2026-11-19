@@ -1,0 +1,41 @@
+{
+  "original_full_run": {
+    "tests": 14505,
+    "errors": 2,
+    "skipped": 2,
+    "seconds": 1414.384
+  },
+  "errors": [
+    {
+      "test": "test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+      "cause": "Subprocess cannot import observational_succ without installation or PYTHONPATH.",
+      "observed_exception": "ModuleNotFoundError: No module named observational_succ",
+      "repair": "PYTHONPATH=. as documented in README.md development setup."
+    },
+    {
+      "test": "test_round2_registry.ActualGraphControls.test_real_graph_retains_history_and_checks_new_sources",
+      "cause": "Initial clone was shallow and pinned historical Git source objects were missing.",
+      "repair": "git fetch --unshallow origin",
+      "pinned_commits": [
+        "610efacf02556e1c5922bc5d4e87d0087f19b446",
+        "e42096ec0186228dd0f748767599e470f2ca2e1d",
+        "f309d9104ba480c1999c962af1df7c50f19e1bfe"
+      ]
+    }
+  ],
+  "shallow_after_repair": "false",
+  "pinned_object_types_after_repair": {
+    "610efacf02556e1c5922bc5d4e87d0087f19b446": "commit",
+    "e42096ec0186228dd0f748767599e470f2ca2e1d": "commit",
+    "f309d9104ba480c1999c962af1df7c50f19e1bfe": "commit"
+  },
+  "source_code_changed_for_repairs": false,
+  "single_clean_full_rerun_performed": false,
+  "targeted_rerun": {
+    "command": "PYTHONPATH=. python -m unittest tests.test_eodcs_meta_choice_descent tests.test_round2_registry -v",
+    "tests": 17,
+    "seconds": 0.591,
+    "exit_code": 0,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "source_calibration_rows": 5,
+  "joint_clock_examples": [
+    {
+      "a": 1,
+      "b": 1,
+      "periods": [
+        3,
+        2,
+        6
+      ],
+      "source_clock": 6
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "source_clock": 144
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "periods": [
+        12,
+        18,
+        36
+      ],
+      "source_clock": 864
+    },
+    {
+      "a": 7,
+      "b": 4,
+      "periods": [
+        48,
+        54,
+        432
+      ],
+      "source_clock": 10368
+    }
+  ],
+  "R0_proved": false,
+  "pi_normality_proved": false
+}
