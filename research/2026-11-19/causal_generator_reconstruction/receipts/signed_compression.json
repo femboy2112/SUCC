@@ -1,0 +1,31 @@
+{
+  "case_payload_sha256": "9b8abe704255a5b8c2d0312fbd7bdf97c3ded2cdcd8c2ba7b915c8742c31a17c",
+  "compression_cases": 84,
+  "first_certificate": {
+    "error_lower_bound": "2/5",
+    "gram_lower_bound": "1",
+    "hankel_squared_error": "10",
+    "length": "5",
+    "mean_square_error": "29/20",
+    "multiplicity_upper_bound": "29/2",
+    "prediction_rank": "1",
+    "rank_budget": "1",
+    "rows": "4",
+    "width": "2"
+  },
+  "last_certificate": {
+    "error_lower_bound": "384/469",
+    "gram_lower_bound": "1",
+    "hankel_squared_error": "2912",
+    "length": "134",
+    "mean_square_error": "835/268",
+    "multiplicity_upper_bound": "5845/2",
+    "prediction_rank": "1",
+    "rank_budget": "1",
+    "rows": "128",
+    "width": "7"
+  },
+  "normality_corollary": "CONDITIONAL_PAPER_THEOREM",
+  "pi_normality": "OPEN",
+  "status": "EXACT_FINITE_CALIBRATION_ONLY"
+}

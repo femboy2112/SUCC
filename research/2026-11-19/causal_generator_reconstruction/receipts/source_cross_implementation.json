@@ -1,0 +1,54 @@
+{
+  "arithmetic": "Fraction versus independent SymPy",
+  "audited_source_hashes_match": true,
+  "determinant_matches": 8,
+  "matrix_matches": 8,
+  "schedules": [
+    {
+      "exact_determinant_matches": 2,
+      "exact_matrix_matches": 2,
+      "times": [
+        4,
+        9,
+        21,
+        44,
+        67
+      ]
+    },
+    {
+      "exact_determinant_matches": 2,
+      "exact_matrix_matches": 2,
+      "times": [
+        8,
+        13,
+        21,
+        34,
+        55
+      ]
+    },
+    {
+      "exact_determinant_matches": 2,
+      "exact_matrix_matches": 2,
+      "times": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "exact_determinant_matches": 2,
+      "exact_matrix_matches": 2,
+      "times": [
+        3,
+        5,
+        8,
+        10,
+        13
+      ]
+    }
+  ],
+  "scope": "Finite cross-implementation agreement, not source authentication.",
+  "status": "PASS"
+}
