@@ -128,3 +128,35 @@ def output_covariance(row_a, row_b, variance):
     if len(row_a) != len(row_b):
         raise ValueError("incompatible Jacobian rows")
     return Fraction(variance) * sum((a*b for a, b in zip(row_a, row_b)), Fraction(0))
+
+
+def terminal_shell_source(B, horizon=None, cutoff=12, lam=1.0):
+    """Finite rational terminal x_M and Gaussian shell energies, B<=n<2B."""
+    if B < 1:
+        raise ValueError("B must be positive")
+    if horizon is None:
+        horizon = 2*B
+    if horizon < 2*B:
+        raise ValueError("horizon must cover entire target shell")
+    endpoint = prefix_x(horizon)
+    phases = [fraction_mod1(16**n * endpoint) for n in range(B,2*B)]
+    return (sum(gaussian_displacement(p,cutoff,lam) for p in phases)/B,
+            gaussian_haar_discrepancy(phases,cutoff,lam))
+
+
+def terminal_phase_error_upper(B, horizon=None):
+    """Rational bound on |16^n*(x-P_horizon)| for every B<=n<2B."""
+    if B < 1:
+        raise ValueError("B must be positive")
+    if horizon is None:
+        horizon = 2*B
+    if horizon < 2*B:
+        raise ValueError("horizon must cover entire target shell")
+    return Fraction(1, 16**(horizon-(2*B-1))*64*horizon*horizon)
+
+
+def source_gaussian_step_defect(n, cutoff=12, lam=1.0):
+    """Squared Gaussian diagram defect ||K_(U_(n+1))-K_(16U_n)||^2."""
+    if n < 0:
+        raise ValueError("n must be nonnegative")
+    return gaussian_displacement(float(forcing(n+1)),cutoff,lam)
