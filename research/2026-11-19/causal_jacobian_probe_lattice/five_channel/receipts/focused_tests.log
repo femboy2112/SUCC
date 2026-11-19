@@ -1,0 +1,35 @@
+test_advance_is_append_only_and_no_future_observations (__main__.FiveChannelTests.test_advance_is_append_only_and_no_future_observations) ... ok
+test_anchor_is_finite_and_retains_seed_and_winding (__main__.FiveChannelTests.test_anchor_is_finite_and_retains_seed_and_winding) ... ok
+test_cauchy_formula_independent_permutation_oracle (__main__.FiveChannelTests.test_cauchy_formula_independent_permutation_oracle) ... ok
+test_fibonacci_volume_gain_scoped_to_declared_clocks (__main__.FiveChannelTests.test_fibonacci_volume_gain_scoped_to_declared_clocks) ... ok
+test_finite_causal_family_recovery (__main__.FiveChannelTests.test_finite_causal_family_recovery) ... ok
+test_invalid_clock_control (__main__.FiveChannelTests.test_invalid_clock_control) ... ok
+test_jacobian_exact_determinant_and_inverse (__main__.FiveChannelTests.test_jacobian_exact_determinant_and_inverse) ... ok
+test_locked_zero_family_has_same_full_jacobian (__main__.FiveChannelTests.test_locked_zero_family_has_same_full_jacobian) ... ok
+test_source_mutation_and_state_tampering_are_detected (__main__.FiveChannelTests.test_source_mutation_and_state_tampering_are_detected) ... ok
+test_all_odd_prime_polar_repair_reduces_to_scaled_permutation (__main__.PrimeResolutionTests.test_all_odd_prime_polar_repair_reduces_to_scaled_permutation) ... ok
+test_append_only_mod11_repair (__main__.PrimeResolutionTests.test_append_only_mod11_repair) ... ok
+test_composite_and_unpaid_pole_controls (__main__.PrimeResolutionTests.test_composite_and_unpaid_pole_controls) ... ok
+test_full_seed_channel_budget_is_not_hidden (__main__.PrimeResolutionTests.test_full_seed_channel_budget_is_not_hidden) ... ok
+test_general_prime_residue_theorem_finite_calibration (__main__.PrimeResolutionTests.test_general_prime_residue_theorem_finite_calibration) ... ok
+test_insufficient_polar_clock_depth_and_prime_two_controls (__main__.PrimeResolutionTests.test_insufficient_polar_clock_depth_and_prime_two_controls) ... ok
+test_local_prime_gain_need_not_improve_every_other_prime (__main__.PrimeResolutionTests.test_local_prime_gain_need_not_improve_every_other_prime) ... ok
+test_mod11_wrong_repair_fails_and_correct_preplan_works (__main__.PrimeResolutionTests.test_mod11_wrong_repair_fails_and_correct_preplan_works) ... ok
+test_modular_recovery_with_paid_precision (__main__.PrimeResolutionTests.test_modular_recovery_with_paid_precision) ... ok
+test_odd_prime_polar_clock_depth_and_small_prime_schedule (__main__.PrimeResolutionTests.test_odd_prime_polar_clock_depth_and_small_prime_schedule) ... ok
+test_one_less_digit_fails_on_a_constructed_worst_direction (__main__.PrimeResolutionTests.test_one_less_digit_fails_on_a_constructed_worst_direction) ... ok
+test_optional_polar_mod11_repair_is_earlier_and_declared (__main__.PrimeResolutionTests.test_optional_polar_mod11_repair_is_earlier_and_declared) ... ok
+test_original_prime_budget_exact_receipt (__main__.PrimeResolutionTests.test_original_prime_budget_exact_receipt) ... ok
+test_revisit_retained_history_does_not_reverse_source_time (__main__.PrimeResolutionTests.test_revisit_retained_history_does_not_reverse_source_time) ... ok
+test_seven_requires_polar_chart_for_four_distinct_residues (__main__.PrimeResolutionTests.test_seven_requires_polar_chart_for_four_distinct_residues) ... ok
+test_small_prime_polar_repair_measures_source_at_no_extra_inverse_cost (__main__.PrimeResolutionTests.test_small_prime_polar_repair_measures_source_at_no_extra_inverse_cost) ... ok
+test_cleared_units_do_not_preserve_real_measurement_noise (__main__.UniversalRepairTests.test_cleared_units_do_not_preserve_real_measurement_noise) ... ok
+test_exact_consecutive_determinant_including_failed_residue_controls (__main__.UniversalRepairTests.test_exact_consecutive_determinant_including_failed_residue_controls) ... ok
+test_integer_smith_via_all_minor_gcds (__main__.UniversalRepairTests.test_integer_smith_via_all_minor_gcds) ... ok
+test_universal_chart_all_sampled_odd_primes_and_binary_debt (__main__.UniversalRepairTests.test_universal_chart_all_sampled_odd_primes_and_binary_debt) ... ok
+test_universal_plan_nine_tick_bound_and_preserved_journal (__main__.UniversalRepairTests.test_universal_plan_nine_tick_bound_and_preserved_journal) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.224s
+
+OK

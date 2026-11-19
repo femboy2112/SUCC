@@ -1,0 +1,87 @@
+{
+  "scope": "Five-channel source observer; paper proofs and finite exact implementations; no external referee or formal-kernel claim",
+  "source": "original four signed BBP poles, literal U_0=0",
+  "claims": [
+    {
+      "id": "FCO-01",
+      "claim": "Four distinct elapsed innovations and the unwrapped normalized terminal state globally identify the four coefficients and seed in the declared family.",
+      "status": "PROVED_LOCAL",
+      "proof": "CONSTRUCTION.md FC-01 and FC-02",
+      "boundary": "Not authentication of an unrestricted arbitrary forcing from finite samples."
+    },
+    {
+      "id": "FCO-02",
+      "claim": "An exact finite causal moving frame displays the authentic zero-seeded state as zero forever while retaining the source character in its compensator.",
+      "status": "PROVED_LOCAL",
+      "proof": "ADVERSARIAL_AUDIT.md section1; FRAME_AGREEMENT.md",
+      "boundary": "The retained journal grows; a fixed display is not a fixed finite-state machine."
+    },
+    {
+      "id": "FCO-03",
+      "claim": "For every B>=1 and fixed nonzero h, the source terminal slice at2B transports its signed mean with error below2*pi*abs(h)*r(2B+1)/(225B).",
+      "status": "PROVED_LOCAL_INHERITED_INTERFACE",
+      "proof": "FRAME_AGREEMENT.md FA-03 and FA-05",
+      "boundary": "The transported mean has no proved all-large-B saving."
+    },
+    {
+      "id": "FCO-04",
+      "claim": "Every odd prime admits a four-row polar chart within p^a further ticks, a=1+max valuation of a pole difference.",
+      "status": "PROVED_LOCAL",
+      "proof": "CONSTRUCTION.md FC-06",
+      "boundary": "The fifth seed precision cost is separate; p2 is not a unit-clock case."
+    },
+    {
+      "id": "FCO-05",
+      "claim": "Four consecutive clocks starting n=2 mod3 and n!=0 mod5 have row-cleared integer Smith form(1,4,64,2048). A wholly future such block finishes within9ticks at every horizon.",
+      "status": "PROVED_LOCAL",
+      "proof": "CONSTRUCTION.md FC-07; independent all-minor audit",
+      "boundary": "All odd primes share this source-innovation chart. Row clearing changes real precision units; no five-channel isometry or statistical estimate follows."
+    },
+    {
+      "id": "FCO-06",
+      "claim": "At normalized prime precision a, the compatible coefficient lattice has volume p^(-sum max(a-s_j,0)); retaining observations intersects compatible fibers.",
+      "status": "PROVED_LOCAL",
+      "proof": "KNOWLEDGE_VOLUME.md",
+      "boundary": "A declared Haar volume, not a truth probability or independence of prime data."
+    },
+    {
+      "id": "FCO-07",
+      "claim": "The two inherited lag characters have exact255-point kernel; their unsigned energies also identify reflected phases.",
+      "status": "PROVED_LOCAL",
+      "proof": "ADVERSARIAL_AUDIT.md section4",
+      "boundary": "The implemented bank retains absoluteh1; a finite bank cannot establish all-mode normality."
+    },
+    {
+      "id": "FCO-08",
+      "claim": "The committed six-mode signed probe passes its rational finite thresholds on every index of shellB131073.",
+      "status": "OBSERVED_CERTIFIED_FINITE",
+      "proof": "WEYL_CERTIFICATE.md; receipts/signed_weyl.json",
+      "boundary": "One tested shell, now consumed data. No positive liminf or untested-shell conclusion."
+    },
+    {
+      "id": "FCO-10",
+      "claim": "Any admissible row-cleared consecutive block generates the integer row lattice of every cleared integer-clock source innovation. Uniform fixed congruence precision therefore saturates for this innovation family.",
+      "status": "PROVED_LOCAL",
+      "proof": "BINARY_CLOSURE.md; Newton interpolation and dyadic/integer intersection",
+      "boundary": "Arbitrary coefficient vectors in the declared family; not full five-channel closure or a lower bound after adding stronger priors, terminal information, other observables, or more precision."
+    },
+    {
+      "id": "FCO-09",
+      "claim": "Exist eta>0 and B0 with Re W_B(1)<=1-eta for all B>=B0, for the original zero-seeded source.",
+      "status": "OPEN",
+      "proof": "None; exact missing source-selected signed estimate",
+      "boundary": "R0 is weaker than full all-mode Weyl cancellation."
+    }
+  ],
+  "normality_proved": false,
+  "R0_proved": false,
+  "refuted_promotions": [
+    "Jacobian expansion forbids an authentic locally locked observer",
+    "A nonzero source-identification Jacobian forces temporal cancellation",
+    "The two selected lag probes have only the full all-lags15point kernel",
+    "Replacing233with147 repairs the original modulo11collision",
+    "A pole-free modulo7four-channel repair can always terminate",
+    "Individual means at7and11 determine the mean at1",
+    "Finite passing shells establish an infinite uniform bound"
+  ]
+}

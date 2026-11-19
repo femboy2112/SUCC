@@ -1,0 +1,23 @@
+{
+  "schema": "SUCC-FIVE-CHANNEL-WEYL-1",
+  "source": "r(n)=4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2); U_0=0",
+  "baseline_commit": "966f789b6523a4918b24e96fac7bc22cd791fb79",
+  "prior_source_training_horizon": 131072,
+  "shells": [131073],
+  "absolute_modes": [1, 7, 11, 15, 720885, 117440505],
+  "inherited_lag_pairs": [[4, 11], [6, 7]],
+  "lag_bank_multiplier_gcd": 255,
+  "phase_hex_width": 16,
+  "trigonometric_grid": 4096,
+  "table_scale_bits": 44,
+  "finite_r0_real_upper_threshold": "15/16",
+  "finite_stress_modulus_threshold": "1/16",
+  "sampling": "Every chronological n in [B,2B); no prime-dependent or phase-dependent deletion, reweighting, or stopping.",
+  "adaptation": "Prime charts and precision may be repaired from exact arithmetic. Frequencies, chronological shells, thresholds, and signs stay fixed.",
+  "outcomes": {
+    "pass": "All controls pass and rigorous finite signed enclosures meet the declared thresholds on this finite shell only.",
+    "fail": "A control fails, source authentication fails, or a rigorous finite bound excludes a declared threshold.",
+    "ambiguous": "An interval straddles a threshold or arithmetic precision is exhausted; preserve the record and do not drop the observation."
+  },
+  "proof_boundary": "No finite outcome proves R0, a positive liminf, or normality. No new all-shell bound is assumed."
+}
