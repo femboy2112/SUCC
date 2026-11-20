@@ -1,0 +1,25 @@
+{
+  "bbp_7_5_minors_checked": 21,
+  "bbp_code_parameters": {
+    "arbitrary_errors": 1,
+    "distance": 3,
+    "erasures": 2,
+    "heads": 7,
+    "parameters": 5
+  },
+  "bbp_five_first_det": "32768/17039726835256125",
+  "bbp_full_exact_one_bad_head": true,
+  "bbp_terminal_locked_checks": 13,
+  "gps2_code_parameters": {
+    "arbitrary_errors": 1,
+    "distance": 3,
+    "erasures": 2,
+    "heads": 5,
+    "parameters": 3
+  },
+  "gps2_full_exact_one_bad_head": true,
+  "gps2_minors_checked": 10,
+  "gps_sigma_min_clustered": 0.0005285990768019303,
+  "gps_sigma_min_well_spread": 1.4142135623730951,
+  "sigma_ratio_well_over_clustered": 2675.399228710743
+}

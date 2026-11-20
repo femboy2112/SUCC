@@ -1,0 +1,38 @@
+test_all_five_clock_subsets_have_rank_five (test_observer_pinbed.AuthenticBBP.test_all_five_clock_subsets_have_rank_five) ... ok
+test_delayed_source_outside_five_parameter_family (test_observer_pinbed.AuthenticBBP.test_delayed_source_outside_five_parameter_family) ... ok
+test_finite_terminal_locked_counterseed (test_observer_pinbed.AuthenticBBP.test_finite_terminal_locked_counterseed) ... ok
+test_irregular_five_head_schedule (test_observer_pinbed.AuthenticBBP.test_irregular_five_head_schedule) ... ok
+test_late_circle_heads_can_never_disambiguate_early_seed_alias (test_observer_pinbed.AuthenticBBP.test_late_circle_heads_can_never_disambiguate_early_seed_alias) ... ok
+test_seven_bbP_heads_correct_one_corruption (test_observer_pinbed.AuthenticBBP.test_seven_bbP_heads_correct_one_corruption) ... ok
+test_seven_head_code_has_distance_three (test_observer_pinbed.AuthenticBBP.test_seven_head_code_has_distance_three) ... ok
+test_six_heads_only_detect_one_error (test_observer_pinbed.AuthenticBBP.test_six_heads_only_detect_one_error) ... ok
+test_source_original_poles (test_observer_pinbed.AuthenticBBP.test_source_original_poles) ... ok
+test_wrong_seed_is_recoverable_from_unwrapped_heads (test_observer_pinbed.AuthenticBBP.test_wrong_seed_is_recoverable_from_unwrapped_heads) ... ok
+test_frame_chart_transport (test_observer_pinbed.FiniteHeads.test_frame_chart_transport) ... ok
+test_missing_source_calibration_xor_wrong_partner (test_observer_pinbed.FiniteHeads.test_missing_source_calibration_xor_wrong_partner) ... ok
+test_rank_and_consistency_solver (test_observer_pinbed.FiniteHeads.test_rank_and_consistency_solver) ... ok
+test_rank_kernel_target (test_observer_pinbed.FiniteHeads.test_rank_kernel_target) ... ok
+test_rank_shared_kernel_does_not_improve (test_observer_pinbed.FiniteHeads.test_rank_shared_kernel_does_not_improve) ... ok
+test_sequential_delayed_differential (test_observer_pinbed.FiniteHeads.test_sequential_delayed_differential) ... ok
+test_syndrome_exact (test_observer_pinbed.FiniteHeads.test_syndrome_exact) ... ok
+test_target_distance (test_observer_pinbed.FiniteHeads.test_target_distance) ... ok
+test_target_specific_even_without_full_rank (test_observer_pinbed.FiniteHeads.test_target_specific_even_without_full_rank) ... ok
+test_three_channel_zero_gain_breaks_fault_repair (test_observer_pinbed.FiniteHeads.test_three_channel_zero_gain_breaks_fault_repair) ... ok
+test_two_tone_pinbed_syndrome_and_third_head_repair (test_observer_pinbed.FiniteHeads.test_two_tone_pinbed_syndrome_and_third_head_repair) ... ok
+test_xor_synergy_source_fibers (test_observer_pinbed.FiniteHeads.test_xor_synergy_source_fibers) ... ok
+test_2d_bias_needs_three_generic_heads (test_observer_pinbed.GPSHeads.test_2d_bias_needs_three_generic_heads) ... ok
+test_2d_five_distance_three (test_observer_pinbed.GPSHeads.test_2d_five_distance_three) ... ok
+test_2d_five_full_spark_exact (test_observer_pinbed.GPSHeads.test_2d_five_full_spark_exact) ... ok
+test_2d_four_heads_detect_not_correct_one (test_observer_pinbed.GPSHeads.test_2d_four_heads_detect_not_correct_one) ... ok
+test_2d_one_bad_satellite_corrected (test_observer_pinbed.GPSHeads.test_2d_one_bad_satellite_corrected) ... ok
+test_3d_gps_four_generic_heads_and_bias (test_observer_pinbed.GPSHeads.test_3d_gps_four_generic_heads_and_bias) ... ok
+test_gps_bad_geometry_rank (test_observer_pinbed.GPSHeads.test_gps_bad_geometry_rank) ... ok
+test_redundant_extra_head_no_new_rank (test_observer_pinbed.GPSHeads.test_redundant_extra_head_no_new_rank) ... ok
+test_two_forward_paths_holonomy_invariant (test_observer_pinbed.ObserverGauge.test_two_forward_paths_holonomy_invariant) ... ok
+test_uncalibrated_phase_heads_gauge_failure (test_observer_pinbed.ObserverGauge.test_uncalibrated_phase_heads_gauge_failure) ... ok
+test_unmatched_paths_rejected (test_observer_pinbed.ObserverGauge.test_unmatched_paths_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.165s
+
+OK
