@@ -168,6 +168,44 @@ class TwoCarryTests(unittest.TestCase):
             self.assertEqual(mod_fraction(original),4%p)
             self.assertEqual(mod_fraction(mutant),5%p)
 
+    def test_r0_source_bridge_all_shell_inequality(self):
+        from two_carry_seam import conservative_r0_lower
+        nmax=96
+        # altered and authentic seeds; digits are *independently* certified
+        # from the BBP interval, not defined using the carry identity.
+        selected=[Fraction(0),Fraction(1,17)]
+        N=20; eps=forcing(N+1)/32
+        selected.append((-eps-prefix_unwrapped(N))/16**N)
+        for seed in selected:
+            M=nmax+38
+            left=sum((forcing(j)/16**j for j in range(1,M+1)),Fraction())+seed
+            right=left+forcing(M+1)/(15*16**M)
+            phi=seed%1
+            prev_delta=certified_completion_carry(phi,0)
+            data=[]; deltas={0:prev_delta};actual=[]
+            previous_floor=left.__floor__()
+            self.assertEqual(previous_floor,right.__floor__())
+            for n in range(1,nmax+1):
+                raw=step(phi,n)
+                phi=raw.phase
+                delta=certified_completion_carry(phi,n)
+                deltas[n]=delta
+                f1=(16**n*left).__floor__()
+                f2=(16**n*right).__floor__()
+                self.assertEqual(f1,f2)
+                digit=f1-16*previous_floor
+                data.append(raw)
+                actual.append(digit)
+                prev_delta=delta
+                previous_floor=f1
+            for B in (4,12,24,40):
+                raw_hits=sum(4<=data[n].raw_digit<=11 for n in range(B,2*B))
+                tail_hits=sum(deltas[n] for n in range(B,2*B+1))
+                completed_hits=sum(4<=actual[n]<=11 for n in range(B,2*B))
+                self.assertLessEqual(conservative_r0_lower(B,raw_hits,tail_hits),
+                                     Fraction(completed_hits,B))
+        with self.assertRaises(ValueError):conservative_r0_lower(2,3,0)
+
     def test_source_seed_alias_different(self):
         self.assertEqual(Fraction(1,16)*16,1)
         self.assertNotEqual(Fraction(1,16),0)

@@ -81,6 +81,22 @@ def cooldown(B:int)->int:
     return L
 
 
+def conservative_r0_lower(B:int,raw_quarter_hits:int,completion_hits:int)->Fraction:
+    """TCD-10 guaranteed source-backed lower bound for actual R0 energy.
+
+    raw_quarter_hits counts b_(n+1) in {4,...,11} on n in [B,2B).
+    completion_hits counts delta_n on n in [B,2B] inclusive.
+    The source-kick count is bounded by the all-seed cooldown theorem.
+    """
+    if type(B) is not int or B<2:raise ValueError('B>=2')
+    if (type(raw_quarter_hits) is not int or not 0<=raw_quarter_hits<=B
+        or type(completion_hits) is not int or not 0<=completion_hits<=B+1):
+        raise ValueError('ill-typed quarter/tail event counts')
+    L=cooldown(B)
+    kick_max=(B+L)//(L+1)
+    return max(Fraction(0), Fraction(raw_quarter_hits-kick_max-2*completion_hits,B))
+
+
 def moment_difference(n:int,k:int)->Fraction:
     """Return (-1)^k Delta^k r(n), which is strictly positive."""
     if n<1 or k<0:raise ValueError('n>=1,k>=0 required')

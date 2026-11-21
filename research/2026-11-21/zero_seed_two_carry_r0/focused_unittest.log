@@ -12,6 +12,7 @@ test_hankel_positive_small_exact (test_two_carry_seam.TwoCarryTests.test_hankel_
 test_high_clock_tail_no_borrow (test_two_carry_seam.TwoCarryTests.test_high_clock_tail_no_borrow) ... ok
 test_mutually_exclusive_source_and_tail_carry (test_two_carry_seam.TwoCarryTests.test_mutually_exclusive_source_and_tail_carry) ... ok
 test_prime_square_mutant_fingerprint (test_two_carry_seam.TwoCarryTests.test_prime_square_mutant_fingerprint) ... ok
+test_r0_source_bridge_all_shell_inequality (test_two_carry_seam.TwoCarryTests.test_r0_source_bridge_all_shell_inequality) ... ok
 test_r_bound_monotone (test_two_carry_seam.TwoCarryTests.test_r_bound_monotone) ... ok
 test_source_kick_positive_control (test_two_carry_seam.TwoCarryTests.test_source_kick_positive_control) ... ok
 test_source_seed_alias_different (test_two_carry_seam.TwoCarryTests.test_source_seed_alias_different) ... ok
@@ -21,6 +22,6 @@ test_unwrapped_rational_prefix (test_two_carry_seam.TwoCarryTests.test_unwrapped
 test_wrong_seed_exact_shadow_algebra (test_two_carry_seam.TwoCarryTests.test_wrong_seed_exact_shadow_algebra) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 0.537s
+Ran 22 tests in 0.530s
 
 OK

@@ -19,9 +19,12 @@ A source derivative need not be a derivative of the completed phase. The origina
 
 **Additional exact differential result:** the real four-pole forcing is a strictly completely monotone Hausdorff moment sequence; all native forcing Hankel determinants are positive, and every fixed-order signed source differential has explicit `n^(−k−2)` scale. This preserves all finite causal source directions, not a positive π phase density.
 
+
+**New all-shell source bridge (TCD-10):** for every integer `B>=2` on the selected original zero-seeded source, `A_B >= H_B_raw - ceil(B/(L(B)+1))/B - 2D_B`, with `H_B_raw` the fraction of rational source digits in 4..11 and `D_B` the analytic completion-carry fraction on the inclusive `[B,2B]` clocks. The forcing-kick debt is **already proved** `o(1)`; a positive uniform margin between the other two source statistics remains OPEN. This is an all-B inequality, not a claimed positive R0 constant.
+
 ## Read and reproduce
 
-- [THEOREMS.md](THEOREMS.md): TCD-01–09 and all proofs/controls.
+- [THEOREMS.md](THEOREMS.md): TCD-01–10 and all proofs/controls.
 - [two_carry_seam.py](two_carry_seam.py): exact rational instrument; `python two_carry_seam.py` prints a short check.
 - [test_two_carry_seam.py](test_two_carry_seam.py): the scoped stdlib test suite.
 - [independent_audit.py](independent_audit.py): independently written source formula, integral moments, modular BBP and changed-seed controls (still shared mathematical premise, not a blind referee).

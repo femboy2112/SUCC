@@ -126,4 +126,33 @@ A second critical control is `s=-x`: then `U_n(s)=-T_n`, so `phi_n=1-T_n` and `d
 
 The universal source-kick channel is now quantitatively controlled, and the source's all-order differential signature is strict. The original zero seed fixes one exact rational orbit and a nonzero analytic cofactor at every time. **What remains unproved is the signed distribution of ordinary radix digits and, separately, the zero-seed shrinking-target behavior `delta_n`.** The latter is not by itself equivalent to R0 (TCD-07). To advance R0, derive from the exact four-pole source, root anchor, prime-square marks `4/p²`, the complete integer winding and the oriented cofactor a **uniform all-large-integer-shell constraint on the regular quarter-sector/digit head**, not merely a generic seed/derivative statement. A candidate must survive `s=-x`, the changed-seed sparse-word TCD-07, the matched-jet mutant `Q+(1-t)^2`, fixed-frame Gaussian attenuation, and the differentially signed prime swap controls `p=7,79,131` of #684.
 
-**Ledger:** TCD-01–05 and TCD-07 are paper-proved within their declared mathematical models; TCD-06 is a finite, reproducible arithmetic certificate; TCD-08 and both π normality and the R0 rung remain **UNVERIFIED/OPEN**. No physical information/energy conservation, quantum superfluid, or Collatz termination claim follows.
+## TCD-10 — An explicit original-source all-shell R0 lower bound with a paid forcing-carry cost (PROVED CONDITIONAL BRIDGE)
+
+Retain the *literal zero seed*, original forcing, all integer carries and analytic tail. Define, for **every integer B>=2**, the raw rational quarter-sector count
+
+\[
+H_B^{\rm raw}=\frac1B\sum_{n=B}^{2B-1}\mathbf 1_{\{4\le b_{n+1}\le11\}},\qquad
+D_B=\frac1B\sum_{n=B}^{2B}\delta_n.
+\]
+
+Let `L(B)` be the source-computable positive cooldown from TCD-03. The actual completed R0 energy satisfies the **nonasymptotic inequality**
+
+\[
+\boxed{\mathcal A_B=\frac1B\sum_{n=B}^{2B-1}\bigl(1-\cos(2\pi\theta_n)\bigr)\;\ge\;
+H_B^{\rm raw}-\frac{\lceil B/(L(B)+1)\rceil}{B}-2D_B.}
+\]
+
+**Proof.** On clocks `n>=B`, the signed integer identity TCD-02, shifted to `n+1`, gives
+`d_(n+1)=b_(n+1)+e_(n+1)+delta_(n+1)−16delta_n`. If all three exceptional bits `e_(n+1),delta_n,delta_(n+1)` are zero, the completed digit equals the raw digit exactly. Thus, for the quarter-sector detector `q_n=1_{theta_n in (1/4,3/4)}`,
+
+\[
+q_n\ge\mathbf1_{\{4\le b_{n+1}\le11\}}-e_{n+1}-\delta_n-\delta_{n+1}.
+\]
+
+The completed point `x=pi/16` is irrational by the classical irrationality of pi, so no `theta_n` is a digit boundary. Moreover `1−cos(2pi theta_n)>=q_n`. Sum over `[B,2B)`, apply TCD-03 to source-kicks on `[B+1,2B]` (all indices are >=B), and bound `Σ_(n=B)^(2B−1)(delta_n+delta_(n+1)) <= 2Σ_(n=B)^(2B)delta_n`. This gives the formula. If desired, the right side may be clipped at zero, because `A_B>=0` by definition. No probabilistic assumption or *additional* source is used. QED.
+
+**New exact sufficient criterion, not yet established:** If the original zero-seeded arithmetic satisfies `liminf_(B→∞) H_B^raw > 2 limsup_(B→∞) D_B` (where the latter limsup exists as an extended finite value in `[0,1]`), then the proven `kick_count/B→0` gives `liminf A_B>0`, hence R0. This is a sufficient *raw-quarter versus analytic-crossing* source contract, not an equivalent reformulation and not an already-proved lower density of the raw quarter-sector head. In particular neither positivity of the native source Hankel matrices nor a bound on the source kick alone pays it. The exact countermodel TCD-07 has negligible kick and completion crossings but insufficient raw quarter mass; the wrong-seed lock TCD-07 has dense completion crossing.
+
+A bounded exact implementation `conservative_r0_lower(B,raw_quarter_hits,completion_hits)` returns the source-theorem lower bound (clipped at zero); its new test verifies all intermediate raw digits and exact completed digits independently from rigorous finite source interval enclosures for the original and changed-seed controls. **This gives a source-derived all-B inequality but not a uniform positive lower bound**. R0 and full base-16 pi normality remain OPEN.
+
+**Ledger:** TCD-01–05, TCD-07 and TCD-10 are paper-proved within their declared mathematical models; TCD-06 is a finite, reproducible arithmetic certificate; TCD-08 and both π normality and the R0 rung remain **UNVERIFIED/OPEN**. No physical information/energy conservation, quantum superfluid, or Collatz termination claim follows.
