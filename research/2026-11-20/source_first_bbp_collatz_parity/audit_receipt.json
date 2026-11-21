@@ -1,0 +1,28 @@
+{
+  "audit": "independent_sympy_mpmath",
+  "collatz_seed_mod_2_48": "0x138d4b466283",
+  "exact_and_high_precision_checks": 424,
+  "mpmath_decimal_digits": 360,
+  "parity_address_48_bits": "0xa5888a6f3423",
+  "prime_labels": [
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43
+  ],
+  "prime_square_events_checked": 11,
+  "result": "PASS",
+  "ring_f2_idempotents": [
+    0,
+    1
+  ],
+  "ring_resultant": 8,
+  "scope": "Finite independent-calculation audit, not independent proof of universal estimates or R0."
+}
