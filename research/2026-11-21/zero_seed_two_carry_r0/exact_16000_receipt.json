@@ -1,0 +1,33 @@
+{
+  "quarter_shells": {
+    "128": {
+      "hits": 66,
+      "total": 128,
+      "r0_lower_bound": "66/128"
+    },
+    "512": {
+      "hits": 262,
+      "total": 512,
+      "r0_lower_bound": "262/512"
+    },
+    "2048": {
+      "hits": 1017,
+      "total": 2048,
+      "r0_lower_bound": "1017/2048"
+    },
+    "8000": {
+      "hits": 3940,
+      "total": 8000,
+      "r0_lower_bound": "3940/8000"
+    }
+  },
+  "nmax": 16000,
+  "e_times": [],
+  "delta_times": [],
+  "unresolved": [],
+  "recovered_digits": 16000,
+  "prefix": "3243F6A8885A308D313198A2E0370734",
+  "suffix": "81E1227EEEA5AAE0F1FCE1B1B0149C63",
+  "digit_sha256": "bf4a797d6ed5ffdda36f549ba528cb697e8c9fe54182f1a48c4e3f5dd9b47ba9",
+  "zero_seed": true
+}

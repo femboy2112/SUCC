@@ -1,0 +1,22 @@
+{
+  "checks": 1766,
+  "source_events": [],
+  "potential_tail": [],
+  "source_clock_sample": [
+    1,
+    2,
+    3,
+    11,
+    47,
+    127,
+    256,
+    521,
+    1023,
+    2048,
+    4095
+  ],
+  "finite_replay": 4096,
+  "replay_sha256": "5e71bd5b45836cd44008ee6ce4c9321126269766353a8df24c0474a8c51bcd91",
+  "precision": "exact rational; symbolic determinants",
+  "math_status": "finite independent implementation of declared source, not independent proof of infinity"
+}

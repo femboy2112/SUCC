@@ -1,0 +1,10 @@
+# Provenance, typed imports and work boundary
+
+- Source contract: SUCC Main XXVI `81be6b897ae980b801a3b9de9e22ef81e8360bfb`, `AGENTS.md`, `docs/PI_NORMALITY_FRONTIER.md`, `observational_succ/duck_bbp.py`. Classical original BBP identity identifies `sum 16^-j r(j)=π/16`, imported rather than re-proved.
+- Parent research proposal: stacked draft #684 `d3de74a1cb410813cf56e4fc7a83a43e83642288` (source lag, prime swap, seed differential singular current), with ancestors #682 #681 #680 #679, and source-completion #672.
+- Important **distinct antecedent**: #652 (and integrated Main XXVI XXVI-04) already proved the `O(B/log B)` *selected carry-mask* transfer under a sparse **tail borrow**. The present `e_n` is instead the **positive forcing overflow** from `floor(16 phi_(n-1)+r(n))−floor(16 phi_(n-1))`, with an exact reset/refractory proof; `delta_n` separately records the analytic completion. This is not a rebranding of the #652 mask.
+- Classical tools: positive Hausdorff moments, Vandermonde/Gram Hankel determinants, Mellin/Beta endpoint asymptotics, Borel-Cantelli first lemma (no independence), standard radix16 digit extraction, and Bernstein–Lagarias 2-adic Collatz parity conjugacy.
+- External sibling Collatz sources were inspected in the parent #682: `femboy2112/collatz` and `collatz-proof`; finite parity transport is within a constructed Z2 companion, not a positive-integer Collatz theorem.
+- Exact source values and symbol orientation are immutably declared in THEOREMS.md. No altered source is used as a target: `s=-π/16`, `s=beta−x`, and matched source Q+(1−t)² are hostile controls only.
+- No source/provenance/archival/main/production/CI file edited. New directory contains source, tests, stand-alone independent audit and numerical receipts. Full root SUCC suite, mandatory root provenance/foundation/ordinal probes, hosted CI and Lean were not run in the scoped research round.
+- Mathematical novelty *outside* this repository has not been established; the exact two-carry refractory plus signed transfer is a new-to-this-dossier synthesis of elementary dynamics and authenticated source data.
