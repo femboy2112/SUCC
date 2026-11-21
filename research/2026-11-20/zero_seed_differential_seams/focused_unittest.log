@@ -1,0 +1,31 @@
+test_exact_pi_quarter_interval_vs_shadow (test_seam_differentials.DifferentialCurrentTests.test_exact_pi_quarter_interval_vs_shadow) ... ok
+test_fourier_support_and_orientation (test_seam_differentials.DifferentialCurrentTests.test_fourier_support_and_orientation) ... ok
+test_one_clock_finite_lag_distinguishes_mutant (test_seam_differentials.DifferentialCurrentTests.test_one_clock_finite_lag_distinguishes_mutant) ... ok
+test_prime_source_signed_quarter_controls (test_seam_differentials.DifferentialCurrentTests.test_prime_source_signed_quarter_controls) ... ok
+test_source_zero_anchor_does_not_follow_from_tail (test_seam_differentials.DifferentialCurrentTests.test_source_zero_anchor_does_not_follow_from_tail) ... ok
+test_variation_exact (test_seam_differentials.DifferentialCurrentTests.test_variation_exact) ... ok
+test_completed_rank_one (test_seam_differentials.JacobianTests.test_completed_rank_one) ... ok
+test_raw_full_rank (test_seam_differentials.JacobianTests.test_raw_full_rank) ... ok
+test_unwrapped_rows_nonproportional (test_seam_differentials.JacobianTests.test_unwrapped_rows_nonproportional) ... ok
+test_pi_first_twelve_without_decoding (test_seam_differentials.SeamTests.test_pi_first_twelve_without_decoding) ... ok
+test_prime_counterfactual_displacements (test_seam_differentials.SeamTests.test_prime_counterfactual_displacements) ... ok
+test_quarter_signed_changes_do_not_force_positivity (test_seam_differentials.SeamTests.test_quarter_signed_changes_do_not_force_positivity) ... ok
+test_signed_crossings_telescope (test_seam_differentials.SeamTests.test_signed_crossings_telescope) ... ok
+test_signed_orientation (test_seam_differentials.SeamTests.test_signed_orientation) ... ok
+test_source_quarter_prefix (test_seam_differentials.SeamTests.test_source_quarter_prefix) ... ok
+test_threshold_unassigned (test_seam_differentials.SeamTests.test_threshold_unassigned) ... ok
+test_wrong_seed_locked_phase (test_seam_differentials.SeamTests.test_wrong_seed_locked_phase) ... ok
+test_asymptotic_lag_means (test_seam_differentials.SourceTailTests.test_asymptotic_lag_means) ... ok
+test_exact_source_fourier_moments (test_seam_differentials.SourceTailTests.test_exact_source_fourier_moments) ... ok
+test_geometric_tv_bound (test_seam_differentials.SourceTailTests.test_geometric_tv_bound) ... ok
+test_lag_mean_interval (test_seam_differentials.SourceTailTests.test_lag_mean_interval) ... ok
+test_matched_jet_difference_limit (test_seam_differentials.SourceTailTests.test_matched_jet_difference_limit) ... ok
+test_monotone_mean_across_clocks (test_seam_differentials.SourceTailTests.test_monotone_mean_across_clocks) ... ok
+test_mutant_increment (test_seam_differentials.SourceTailTests.test_mutant_increment) ... ok
+test_original_poles (test_seam_differentials.SourceTailTests.test_original_poles) ... ok
+test_signed_mutant_response (test_seam_differentials.SourceTailTests.test_signed_mutant_response) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.952s
+
+OK
