@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "bbp_poles": 127,
+    "collatz_3_5_symbols": 3,
+    "first_mismatch": 765,
+    "joint_crt_digit": 240,
+    "mirror_gauges": 480,
+    "q_identity_clock": 711,
+    "source_digit_shadow": 6,
+    "two_adic_noncontinuity": 237,
+    "two_three_five_adic": 10620,
+    "valuation_suffix": 4389,
+    "wave_mirror": 48
+  },
+  "result": "PASS",
+  "scope": "Exact finite corroboration of elementary theorems; independent Python/SymPy derivations; no all-input Collatz or pi result",
+  "sympy": "1.14.0",
+  "total": 17626
+}
