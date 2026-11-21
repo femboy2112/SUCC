@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "tool": "standalone_sympy_mpmath_root_and_scattering_oracle",
+  "exact_symbolic_checks_plus_exact_impulse_terms_plus_mask_clocks_and_HP_ports": 165,
+  "checked_taylor_coefficients": 64,
+  "checked_original_source_clocks": 48,
+  "high_precision_dps": 85,
+  "source_mutant_radii_float_diagnostic": [
+    1.2975939565762522,
+    1.2975939565762522,
+    1.7232416706068319,
+    1.7232416706068319
+  ],
+  "independent_numeric_winding": {
+    "0.5": 0,
+    "1.25": 1,
+    "1.5": 5,
+    "2.0": 5
+  },
+  "scope": "root-filter algebra and declared synthetic scattering; NOT a pi-normality or physical scattering proof"
+}
