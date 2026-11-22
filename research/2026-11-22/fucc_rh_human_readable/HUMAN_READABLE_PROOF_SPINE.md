@@ -84,9 +84,25 @@ An unbounded evaluation functional sending `|n>` to n would produce `p^a` from `
 
 This is a concrete obstruction, not a claim that SUCC was conceptually unrelated.
 
-## D. How to manufacture arithmetic multiplicity — PROVED HERE in a formal local model
+## D. How FUCC constructs the local arithmetic-multiplicity source — PROVED in a scoped model
 
-Let p be a prime and work in Q_p[[T]] with the formal power series
+There is an additional *exact*, previously unrecorded SUCC bridge. The native FUCC prime-square shift `V_(p²)` produces the formal logarithm as a Neumann resolvent:
+
+```
+R_p=(I-p^(-1)V_(p²))^(-1)=sum_(j>=0)p^(-j)V_(p^(2j)),
+R_p|1> = sum_(j>=0) p^(-j)|p^(2j)>.
+```
+
+Transport the integer-labelled basis by `|n> ↦ T^n`. The resulting formal function solves the p²-Mahler equation
+
+```
+l_p(T)=T+p^(-1)l_p(T^(p²))
+      =T+sum_(j>=1)T^(p^(2j))/p^j.
+```
+
+This identity is **fully proved in [FUCC_MAHLER_RESOLVENT.md](FUCC_MAHLER_RESOLVENT.md)** and independently checked by finite matrices. It constructs the same formal-series input to the local multiplicity lemma from FUCC's existing prime-square channel. **But** the resolvent coefficient `1/p` is a deliberate *height-two-model choice*, not forced by FUCC's older critical `sqrt(log p)` weights. And this is not an authenticated representation of the actual theta-period map.
+
+Now work in Q_p[[T]] with that formal power series
 
 ```
 l_p(T)=T + sum_{j>=1} T^(p^(2j))/p^j.
@@ -118,7 +134,7 @@ v_p(the derivative)
 
 **This is the kind of growing arithmetic vanishing missing from a bare FUCC log commutator.** It is directly modeled on the local calculation in Rubinstein Part II §2 (not a new theorem about theta functions).
 
-**What is still missing:** no source-authenticated SUCC/FUCC map has been proved from this formal power series to Alpöge's theta kernels on CM elliptic curves; no compatibility with integral lattices, number fields, all finite places, ranks or norms has been established here. The working guide itself labels the requisite theta-kernel integrality assumption as imported from Lean.
+**What is still missing:** even though the formal power series itself now comes from a concrete FUCC resolvent, no source-authenticated SUCC/FUCC map has been proved from this formal power series to Alpöge's theta kernels on CM elliptic curves; no compatibility with integral lattices, number fields, all finite places, ranks or norms has been established here. The working guide itself labels the requisite theta-kernel integrality assumption as imported from Lean.
 
 ## E. The outside-in capacity inequality — PROVED HERE, elementary determinant model
 
@@ -171,7 +187,9 @@ prime-power von Mangoldt operator      [PROVED HERE]
      |
 Riesz-weighted prime statistic G(x)    [PROVED HERE]
      |
-**integral theta multiplicity maps**   [NOT YET DERIVED BY SUCC]
+FUCC p²-Mahler local log + p-adic jets  [PROVED here as a model]
+     |
+**actual theta integrality map**       [NOT YET DERIVED BY SUCC]
      |
 **uniform ranks and lattice slopes**   [NOT YET DERIVED BY SUCC]
      |

@@ -57,6 +57,33 @@ def riesz_log_prime_coeffs(X:int)->dict[int,Fraction]:
     return dict(out)
 
 
+
+def fucc_mahler_resolvent_coefficients(p:int,terms:int)->dict[int,Fraction]:
+    """Exact coefficients of (I-p^-1 V_(p^2))^-1|1>, truncated by term count.
+
+    Nonzero coefficient at basis |p^(2j)> is p^-j. These are the
+    coefficients of l_p(T)=T+sum T^(p^(2j))/p^j, not the original
+    critical sqrt(log p)*p^(-k/4) FUCC tower weighting.
+    """
+    if p<2 or terms<1:raise ValueError('p>=2 and positive term count')
+    return {p**(2*j):Fraction(1,p**j) for j in range(terms)}
+
+
+def fucc_mahler_resolvent_norm_sq(p:int)->Fraction:
+    """Exact Hilbert norm squared of the full resolvent vector."""
+    if p<2:raise ValueError('p>=2')
+    return Fraction(p*p,p*p-1)
+
+
+def fucc_mahler_residual_coefficients(p:int,terms:int)->dict[int,Fraction]:
+    """l_p(T) - p^-1*l_p(T^(p^2)) truncated through p^(2*(terms-1))."""
+    base=fucc_mahler_resolvent_coefficients(p,terms)
+    cut=p**(2*(terms-1))
+    out=dict(base)
+    for n,c in base.items():
+        if n*p*p<=cut:out[n*p*p]=out.get(n*p*p,Fraction())-c/p
+    return {n:c for n,c in out.items() if c}
+
 def poly_mul(a:list[Fraction],b:list[Fraction],N:int)->list[Fraction]:
     out=[Fraction(0) for _ in range(N+1)]
     for i,x in enumerate(a[:N+1]):

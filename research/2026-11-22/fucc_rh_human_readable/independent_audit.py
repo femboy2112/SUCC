@@ -38,6 +38,18 @@ for N in [12,24,36]:
             check(sp.simplify((logd*V[m]-V[m]*logd)[m-1,0]/k-sp.log(p))==0)
         else:
             check(len(fac)>1)
+    # Independent finite-matrix test of the FUCC prime-square Neumann resolvent:
+    # (I - V_(p^2)/p)^-1 |1> has coefficients p^-j at |p^(2j)>.
+    for p in (2,3,5):
+        if p*p>N:continue
+        R=(sp.eye(N)-sp.Rational(1,p)*V[p*p]).inv()
+        expected={};j=0
+        while p**(2*j)<=N:
+            expected[p**(2*j)]=sp.Rational(1,p**j);j+=1
+        for index in range(1,N+1):
+            check(R[index-1,0]==expected.get(index,0),(N,p,index,'FUCC-Honda resolvent'))
+        partial=sum(x*x for x in expected.values())
+        check(partial<=sp.Rational(p*p,p*p-1),(N,p,'Archimedean bound'))
     A=sp.zeros(N,N)
     for m in range(2,N+1):
         fac=sp.factorint(m)
@@ -122,7 +134,7 @@ check(det==15)
 check(sp.factorint(det)=={3:1,5:1})
 check(det**2<=int((M[0,0]**2+M[0,1]**2)*(M[1,0]**2+M[1,1]**2)))
 
-receipt={"status":"PASS","exact_assertions":checks,"methods":["SymPy finite matrix commutators and direct Riesz vacuum readout","independent SymPy formal inverse substitution and p-adic valuation","integral determinant Hadamard control"],"limitations":["finite examples only","shared classical arithmetic definitions","not a Lean or RH proof"]}
+receipt={"status":"PASS","exact_assertions":checks,"methods":["SymPy finite matrix commutators and direct Riesz vacuum readout","independent FUCC prime-square resolvent matrix inverse","independent SymPy formal inverse substitution and p-adic valuation","integral determinant Hadamard control"],"limitations":["finite examples only","shared classical arithmetic definitions","not a Lean or RH proof"]}
 path=Path(__file__).with_name('independent_audit_receipt.json')
 path.write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
 print(json.dumps(receipt,sort_keys=True))

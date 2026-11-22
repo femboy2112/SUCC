@@ -10,8 +10,8 @@ python independent_audit.py
 python -m compileall -q fucc_rh_bridge.py test_fucc_rh_bridge.py independent_audit.py
 ```
 
-- Focused stdlib tests: **10/10 PASS**, exit 0. Full raw output `focused_unittest.log`.
-- Independent SymPy implementation: **514 exact assertions PASS**, exit 0. Tests true finite shift matrices, the logarithmic commutator, direct Riesz vacuum coefficient, independently generated formal-logarithm inverse, local p-adic valuation bounds, and Hadamard integer determinant. See `independent_audit.py`, `independent_audit_receipt.json`, `independent_audit.log`.
+- Focused stdlib tests: **12/12 PASS**, exit 0. Full raw output `focused_unittest.log`.
+- Independent SymPy implementation: **701 exact assertions PASS**, exit 0. Tests true finite shift matrices, the logarithmic commutator, direct Riesz vacuum coefficient, explicit inverse of the prime-square FUCC resolvent matrices, independently generated formal-logarithm inverse, local p-adic valuation bounds, and Hadamard integer determinant. See `independent_audit.py`, `independent_audit_receipt.json`, `independent_audit.log`.
 - Python compilation: **PASS** (exit 0).
 - Markdown link/manifest validation: checked separately, exact SHA256 manifest `SHA256SUMS.txt`.
 
@@ -24,6 +24,7 @@ The independent path uses SymPy matrix and formal-series computations rather tha
 - **Fake-six:** the prime-power source never produces V_6 because 6 is not a prime power.
 - **Missing Euler-log normalization:** removing 1/k changes the p^k coefficient to k log p; recognized as a mutation, not part of the valid code.
 - **Unbounded evaluation:** V_p^a e_1=e_(p^a) retains unit coefficient despite support growth; p-adic valuation remains 0.
+- **Resolvent normalization:** `l_p=(I-p^-1 V_(p²))^-1 e_1` is exact but its `1/p` coefficient is a declared choice, not inherited from critical FUCC half-density nor proven to be integral for CM theta kernels.
 - **Local versus global:** local formal-logarithm tests do not exercise CM theta periods, covolumes, Harder–Narasimhan ranks or Galois cohomology.
 - **No imported RH status promotion:** external formal verification is credited, not reproduced.
 

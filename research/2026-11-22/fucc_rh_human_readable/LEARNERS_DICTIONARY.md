@@ -9,6 +9,7 @@ This is a **translation**, not a proof by analogy. It is intended for a reader w
 | SUCC causal index | Additive successor semigroup; filtered module or stream | Moves observer time or finite approximation level | Pure succession doesn't create arithmetic multiplicity |
 | FUCC | Multiplicative shifts V_p on integer-labeled Hilbert space | Moves among prime-factor channels | Label p^a is not coefficient divisibility by p^a |
 | FUCC with log N | Commutator [log N,V_p]=log p V_p | Produces the prime log-weight | Real log p has no inherited p-adic valuation |
+| FUCC prime-square resolvent | p²-Mahler functional equation / height-two formal log | Builds the local-model series `l_p(T)` from FUCC shift V_(p²) | The 1/p weight is **chosen**; no theta-integrality follows |
 | More differentiation at a point | Higher jets / formal group derivatives | May reveal higher-order structure; factorials enter | Need an *integral* coordinate to get p-adic divisibility |
 | Zero after many finite observers | p-adic valuation v_p(A)>=k | A≡0 mod p^k | Does not imply A=0 by itself |
 | Objective observer capacity | Hadamard bound / Hermitian lattice covolume and slope | Independently bounds real size of nonzero arithmetic object | Must concern **the very same** arithmetic object |

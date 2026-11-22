@@ -24,6 +24,10 @@ Date: 22 November 2026. The external theorem is attributed entirely to Levent Al
 12. SUCC main, `research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/WEIL_PACKET_PROOFS.md` (complete Guinand–Weil formula, with source-specific signed/prime and Gamma firewall). https://github.com/femboy2112/SUCC/blob/main/research/2026-11-10/basel_crt_omega_phasebridge/prime_archimedean/WEIL_PACKET_PROOFS.md
 13. SUCC `AGENTS.md` and `docs/METHOD.md` on main. SUCC prior draft #686 is the parent in the research stack; provenance of its contents is unchanged.
 
+## New intra-packet mathematical source construction
+
+14. `FUCC_MAHLER_RESOLVENT.md`: the native prime-square FUCC shift generates the height-two formal logarithm through an exact resolvent identity. This is a proved elementary crosswalk to Rubinstein Part II §2, not an identification with the actual CM theta lattice or the prior critical FUCC tower normalization.
+
 ## Intellectual honesty and scope
 
 `[D,V_p]=(log p)V_p`, Euler-logarithm differentiation, Mellin transform, formal inverse-valuation induction and determinant bounds are established mathematical methods. This packet assembles them into a FUCC-language account to help build a human-readable proof, **without claiming mathematical priority or independent rederivation of (M)**. The Lean archive has external verification. The additional SUCC-notation derivation has only this packet's paper arguments plus scoped Python checks, not Lean verification. We explicitly do not claim any theorem about π base-16 normality from the RH proof.

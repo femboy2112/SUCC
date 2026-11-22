@@ -54,7 +54,7 @@ m = x^(1/2+O(ε)), k=x^(9/2+O(ε)), n=x^(2+O(ε)).
 | M0 | Genuine Λ(p^k)=log p, no fake 6, correct Euler logarithm normalization | Classical | **PROVED** via finite FUCC commutator | Insert fake composite 6 or remove 1/k; must fail |
 | M1 | Exact Riesz kernel and its Mellin normalization to G(x) | Classical | **PROVED** via FUCC vacuum amplitude | Change sign of gamma correction; must leave pole at 1 |
 | M2 | Primitive auxiliary characters, positive combination and uniform window selection | In working guide, Estimates B/C proved from cited analytic number theory | **IMPORTED, not proved by SUCC** | Wrong q,d residues and short windows |
-| M3 | Formal height-two inverse-logarithm local p-adic jet valuation | Elementary local model in working guide | **PROVED** in `TECHNICAL_PROOFS.md`, under formal model hypotheses | Use p-height-one mutant or nonintegral f |
+| M3 | Formal height-two inverse-logarithm local p-adic jet valuation | Elementary local model in working guide | **PROVED** from a genuine FUCC prime-square resolvent via `FUCC_MAHLER_RESOLVENT.md` and `TECHNICAL_PROOFS.md` (only the formal-model hypotheses) | Use p-height-one mutant or nonintegral f |
 | M4 | Actual CM theta-kernel *integrality* in the formal-logarithm coordinates | In checked Lean proof; *not fully human-proved* by current working guide | **UNVERIFIED/ACCESS GAP** | Exact input lattice/coefficient model and basis-change denominators |
 | M5 | Period maps assembled from repeated theta lifts; compatible orientations and local factors | In checked Lean; prose guide quotes | **UNVERIFIED** | Type-check diagram and compare every local factor |
 | M6 | Divisibility of nonzero lattice minors after all lifts, including exceptional places and losses | In Lean; guide partially conditional | **UNVERIFIED** | Original integral minors with positive valuations; fake six/denominator mutations |
@@ -68,7 +68,7 @@ Status vocabulary: **PROVED** here is a paper derivation with bounded computatio
 
 ## The humanization strategy in its legitimate order
 
-**Round A: integrality.** Reconstruct M4 from the Lean source precisely, with the height-two local log's integral coordinate choice and denominators. Our formal model M3 is not enough.
+**Round A: integrality.** Reconstruct M4 from the Lean source precisely, with the height-two local log's integral coordinate choice and denominators. Our FUCC-resolvent-generated formal model M3 is not enough: actual theta-integrality is an independent theorem that must be reconstructed.
 
 **Round B: global arithmetic constraint.** Construct the *same* normalized theta period maps at all places; verify the local valuation lower bounds for their nonzero determinants and the real norm/covolume upper bounds. This produces the SUCC observer-gluing theorem with actual algebraic content, not merely diagrammatic commutativity.
 

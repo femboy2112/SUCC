@@ -5,7 +5,9 @@ from fucc_rh_bridge import (
     factorize,fucc_euler_log_coefficients,fucc_log_commutator_coefficients,
     riesz_log_prime_coeffs,inverse_height_two_log,poly_pow,poly_mul,
     lagrange_U_power_coefficient,padic_valuation_fraction,valuation_factorial,
-    local_model_derivative,local_model_lower_bound)
+    local_model_derivative,local_model_lower_bound,
+    fucc_mahler_resolvent_coefficients,fucc_mahler_resolvent_norm_sq,
+    fucc_mahler_residual_coefficients)
 
 class FUCCTest(unittest.TestCase):
     def test_euler_prime_powers(self):
@@ -53,6 +55,25 @@ class FUCCTest(unittest.TestCase):
             for k in range(1,9):
                 self.assertEqual(padic_valuation_fraction(Fraction(1),p),0)
                 self.assertEqual(factorize(p**k),{p:k})
+    def test_fucc_resolvent_exact_series(self):
+        for p in [2,3,5,7]:
+            for terms in [1,2,3,5]:
+                coeff=fucc_mahler_resolvent_coefficients(p,terms)
+                self.assertEqual(coeff,{p**(2*j):Fraction(1,p**j) for j in range(terms)})
+                self.assertEqual(fucc_mahler_residual_coefficients(p,terms),{1:Fraction(1)})
+            self.assertEqual(fucc_mahler_resolvent_norm_sq(p),Fraction(p*p,p*p-1))
+    def test_fucc_resolvent_matches_formal_log(self):
+        for p in [2,3,5]:
+            n=28
+            coeff=fucc_mahler_resolvent_coefficients(p,4)
+            U=inverse_height_two_log(p,n)
+            # From l(U)=U+sum p^(-j)U^(p^(2j))=z, direct coefficient identity.
+            series=U.copy()
+            for exponent,c in coeff.items():
+                if exponent>1 and exponent<=n:
+                    x=poly_pow(U,exponent,n)
+                    series=[a+c*b for a,b in zip(series,x)]
+            self.assertEqual(series,[Fraction(0),Fraction(1)]+[Fraction(0)]*(n-1))
     def test_hadamard_capacity_example(self):
         a,b,c,d=4,1,1,4
         det=a*d-b*c

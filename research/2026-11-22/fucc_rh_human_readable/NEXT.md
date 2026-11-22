@@ -6,7 +6,7 @@ A **legitimate complete human-readable proof of RH** must supply conventional an
 
 ## Priority 1 — arithmetic integrality *for the same theta map*
 
-Reconstruct Rubinstein §III.5 integrality hypothesis (B) from the exact external Lean declarations, including CM elliptic model, choice of invariant derivation, height-two formal-group coordinates, coefficient field, local uniformizers, and normalization. **Discriminator:** show that the actual local theta kernel's derivative has the height-two valuation gain, rather than merely showing our formal-model f∘U does. Reject a nonintegral mutant. This is first because the entire global argument is powerless without a source-authenticated integral object.
+Reconstruct Rubinstein §III.5 integrality hypothesis (B) from the exact external Lean declarations, including CM elliptic model, choice of invariant derivation, height-two formal-group coordinates, coefficient field, local uniformizers, and normalization. **Discriminator:** show that the actual local theta kernel's derivative has the height-two valuation gain, rather than merely showing our FUCC/Mahler-resolvent formal model f∘U does. Reject a nonintegral mutant. This is first because the entire global argument is powerless without a source-authenticated integral object.
 
 ## Priority 2 — local/global single-object capacity
 
@@ -22,6 +22,7 @@ Reconstruct all of Rubinstein §II.4's weighted P_(u,t,j), M_(u,t,j) terms and t
 
 ## Short-lane: improve SUCC interfaces without pretending to solve (M)
 
+- Extend the new **bounded FUCC prime-square resolvent** to an actual integral theta-period module, or produce an exact obstruction; the weighting `1/p` is a choice, not the critical FUCC tower amplitude.
 - Inspect FUCC's operator extension beyond `c_00`: prove exact boundedness/unboundedness of any proposed integer-evaluation functional. Never use a prohibited implicit ℓ² dual.
 - Express the global CM period maps as **source-typed observer heads** with exact commutators and rank; do not declare arbitrary identification with FUCC.
 - Determine whether the original `SUCC F_L^*F_L` cross-prime terms can arise as a Gram of those *specific* integral periods with **correct half-density and Gamma normalizations**. Positive source-agnostic energy is not enough.

@@ -13,7 +13,9 @@ Statuses: **PROVED PAPER** (all-quantified derivation included), **OBSERVED FINI
 | FHR-07 | IMPORTED FORMALLY VERIFIED EXTERNAL | Alpöge–Claude Lean library proves RH and GRH for Dirichlet L-functions; endorsed community verification. | Not independently reconstructed by SUCC, nor a human-readable proof by this packet. |
 | FHR-08 | IMPORTED PARTIAL HUMAN GUIDE | Rubinstein (M) + B/C → RH, with the actual local/global (M) supplied by formalized proof rather than the current prose. | The full human-readable (M) derivation is incomplete; see M4–M10. |
 | FHR-09 | UNVERIFIED | FUCC/SUCC can construct the full theta-integrality, global lattice slope/rank, and character averaging mechanism of (M) with all quantitative errors. | No SUCC proof of source-to-theta, integrality or rank/slope transfer. |
-| FHR-10 | OBSERVED FINITE | Ten focused test methods and standalone independent SymPy matrix/formal-inverse finite audit. | Finite tests are not formal proof of all-n inequalities or external theta/Lean theorem. |
+| FHR-10 | OBSERVED FINITE | Twelve focused test methods and standalone independent SymPy matrix/formal-inverse/resolvent finite audit. | Finite tests are not formal proof of all-n inequalities or external theta/Lean theorem. |
+
+| FHR-11 | PROVED PAPER | Native FUCC p²-shift resolvent `(I-p^-1 V_(p²))^-1 e_1` maps coefficientwise to the exact height-two logarithm `l_p(T)=T+p^-1 l_p(T^(p²))` and has squared Hilbert norm `p²/(p²-1)`. | The **weight 1/p is selected**, not derived from critical FUCC amplitudes; the actual theta-period source map remains UNVERIFIED. |
 
 ### Mutations/countermodels
 
