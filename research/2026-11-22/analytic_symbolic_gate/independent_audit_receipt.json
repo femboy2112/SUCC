@@ -1,0 +1,22 @@
+{
+  "assertions": 13641,
+  "external_theorems_not_computed": [
+    "Polya-Carlson",
+    "Zeilberger-Zudilin 2020",
+    "Kempner mu=2",
+    "OpenAI 2026 claimed mu=2"
+  ],
+  "kempner_shells": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "known_source_prefix_24": "3243F6A8885A308D313198A2",
+  "max_certified_digits": 48,
+  "pi_interval_depth": 70,
+  "source": "independent compact rational + Mellin polynomial",
+  "status": "PASS"
+}
