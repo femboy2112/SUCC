@@ -99,5 +99,6 @@ receipt={'status':'PASS','assertions':checks,
          'known_source_prefix_24':format((prefix*N**24).__floor__(),'024X'),
          'kempner_shells':[2,4,8,16,32,64],
          'external_theorems_not_computed':['Polya-Carlson','Zeilberger-Zudilin 2020','Kempner mu=2','OpenAI 2026 claimed mu=2']}
-with open('independent_audit_receipt.json','w') as out:json.dump(receipt,out,indent=2,sort_keys=True)
+with open('independent_audit_receipt.json','w') as out:
+    out.write(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
 print(json.dumps(receipt,sort_keys=True))
