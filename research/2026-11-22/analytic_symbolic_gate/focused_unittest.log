@@ -1,0 +1,26 @@
+test_control_not_eventually_periodic (test_source_to_digit.TestKempnerCriticalControl.test_control_not_eventually_periodic) ... ok
+test_energy_exact_shell_upper (test_source_to_digit.TestKempnerCriticalControl.test_energy_exact_shell_upper) ... ok
+test_geometric_phase_enclosure (test_source_to_digit.TestKempnerCriticalControl.test_geometric_phase_enclosure) ... ok
+test_initial_digits (test_source_to_digit.TestKempnerCriticalControl.test_initial_digits) ... ok
+test_invalid_phase_clock (test_source_to_digit.TestKempnerCriticalControl.test_invalid_phase_clock) ... ok
+test_kempner_gap_at_double_shell (test_source_to_digit.TestKempnerCriticalControl.test_kempner_gap_at_double_shell) ... ok
+test_bbp_hex_prefix_12 (test_source_to_digit.TestOriginalBBP.test_bbp_hex_prefix_12) ... ok
+test_bbp_hex_prefix_24 (test_source_to_digit.TestOriginalBBP.test_bbp_hex_prefix_24) ... ok
+test_first_pole_exact (test_source_to_digit.TestOriginalBBP.test_first_pole_exact) ... ok
+test_insufficient_certification_fails (test_source_to_digit.TestOriginalBBP.test_insufficient_certification_fails) ... ok
+test_pi16_positive_bounds (test_source_to_digit.TestOriginalBBP.test_pi16_positive_bounds) ... ok
+test_rational_source_decreasing (test_source_to_digit.TestOriginalBBP.test_rational_source_decreasing) ... ok
+test_source_invalid_input (test_source_to_digit.TestOriginalBBP.test_source_invalid_input) ... ok
+test_factorial_lacunary_breaks_every_fixed_bound (test_source_to_digit.TestPeriodicShadows.test_factorial_lacunary_breaks_every_fixed_bound) ... ok
+test_periodic_shadow_agrees_with_digits (test_source_to_digit.TestPeriodicShadows.test_periodic_shadow_agrees_with_digits) ... ok
+test_prefix_and_period_rational (test_source_to_digit.TestPeriodicShadows.test_prefix_and_period_rational) ... ok
+test_repeated_fives (test_source_to_digit.TestPeriodicShadows.test_repeated_fives) ... ok
+test_repeated_threes (test_source_to_digit.TestPeriodicShadows.test_repeated_threes) ... ok
+test_repetition_cap_limits (test_source_to_digit.TestPeriodicShadows.test_repetition_cap_limits) ... ok
+test_repetition_cap_symbolic (test_source_to_digit.TestPeriodicShadows.test_repetition_cap_symbolic) ... ok
+test_repetition_count (test_source_to_digit.TestPeriodicShadows.test_repetition_count) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.039s
+
+OK

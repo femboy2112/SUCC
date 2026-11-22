@@ -1,0 +1,18 @@
+# Operation ANALYTIC → SYMBOLIC TRUTH DEBT — source-selected π normality audit
+
+**Research-only, 22 Nov 2026.** Parent: [SUCC draft #685](https://github.com/femboy2112/SUCC/pull/685) on the authentic four-pole BBP zero-seed program. Draft-only non-main work. Original source, archive/provenance, main, production code, existing tests, source labels and historical proofs unchanged. No unpublished Collatz or R0 theorem assumed.
+
+## Why this dossier exists
+
+The hard question is not whether one can construct a new Fourier or observer *representation* of π's digits. It's whether such a representation yields a **source-selected signed arithmetic theorem** not also valid for a known nonnormal trajectory. Earlier SUCC found strict source differentials, exact analytic↔finite shifts, Collatz parity conjugacies, source-root Haar projectors, signed carry coboundaries and the paid forcing-kick term. It has *not* proved π's R0 or normality.
+
+This round produces a verifiable **zero-seed theorem and no-go** rather than another equivalent instrument:
+
+1. The original exponentially weighted BBP source Fourier series is analytic in `|z|<16`. The actual π hexadecimal digit generating function and the selected Collatz-parity generating function have natural boundary `|z|=1` by Pólya–Carlson and classical irrationality of π. This excludes fixed finite-dimensional stationary linear source-to-digit maps, and even D-finite digit journals. The singularity is in the nonlinear carry/threshold observation step, not in the smooth input Fourier clock.
+2. A periodic-shadow Diophantine theorem restricts the next L digits repeating a p-block after n digits: `L <= (nu-1)*n + nu*p + 1` for every `nu>mu(pi)` and sufficiently large n+p. **Unconditional:** peer-reviewed 2020 bound allows `nu=7.104`. The factorial-sparse nonnormal Liouville control violates any such finite cap. This *does* select the authentic zero seed against a real adversarial nonnormal example, without assuming R0.
+3. **The really important no-go:** generalized Kempner `beta=sum_{k>=0}16^{-2^k}` has **exact irrationality exponent 2** (published) yet `A_(2^k)(beta) <= 512*pi^2/(225*255*2^k) -> 0`. It also has a natural-boundary digit journal. Thus **even an optimal irrationality-exponent theorem and an infinite analytic boundary are insufficient for R0**. We need source-selected *signed distribution*, not simply more precision/exponent arguments.
+4. The September 2026 OpenAI `mu(pi)=2` preprint with Lean formalization is documented as an **external claim not independently reviewed here**. Its stronger repetition-bound consequence is reported **conditionally**; the entire main dossier, including the no-go and unconditional repetition bound, survives if that 2026 claim is withdrawn or corrected.
+
+Read [THEOREMS.md](THEOREMS.md) for full proofs, [CLAIM_LEDGER.md](CLAIM_LEDGER.md) for exact truth statuses and controls, [NEXT.md](NEXT.md) for a deliberately restrictive next research contract, [PROVENANCE.md](PROVENANCE.md) for pinned source families and external dependencies, [VALIDATION.md](VALIDATION.md) for actual execution receipts. [source_to_digit.py](source_to_digit.py), [test_source_to_digit.py](test_source_to_digit.py), and [independent_audit.py](independent_audit.py) contain the exact finite probes. There is no claim that finite tests verify Pólya–Carlson or the deep irrationality-exponent theorems.
+
+**Bottom line:** real theorem about **this** π endpoint, real Liouville falsifier, real ceiling on our previous proof ideas. **Still OPEN:** source-signed all-B R0, π base-16 normality, Collatz termination, and RH. No merge, publish, tag, release or historical status promotion.
