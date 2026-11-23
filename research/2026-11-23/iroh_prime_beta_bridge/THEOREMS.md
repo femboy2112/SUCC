@@ -122,6 +122,29 @@ arithmetic lattice), not another change of endpoint Fourier basis. The
 identity holds for any fixed `X`, without RH, and on locked and nonnormal
 perturbation endpoints too. It is an instrument/no-go theorem, not R0.
 
+## I8. μ=2 forces exponential denominator growth in the *actual* BBP rational prefix (conditional on external π exponent theorem)
+
+Let `P_n=a_n/q_n` be the original source's finite rational prefix in **lowest terms**, with `q_n>0`. Original-source positivity and the Mellin estimate `r(j)<15/[(8j−7)(8j−6)]` imply
+
+\[
+0<x-P_n=16^{-n}T_n<\frac{16^{-n}}{(8n+1)(8n+2)}
+<\frac{16^{-n}}{64n^2}.
+\]
+
+If the externally formalized theorem `μ(π)=2` is accepted, then `μ(x)=2` because multiplication by the nonzero rational `1/16` preserves irrationality exponent. For **every** `ε>0`, there exists `n_ε` such that for all `n≥n_ε`,
+
+\[
+\left|x-\frac{a_n}{q_n}\right|\ge q_n^{-(2+\epsilon)}.
+\]
+
+The denominators `q_n` eventually exceed each fixed threshold because the strictly increasing rational prefixes converge to the irrational `x`. Comparing these two bounds gives the **source-specific asymptotic consequence**
+
+\[
+\boxed{q_n>(64n^2 16^n)^{1/(2+\epsilon)}\quad\text{for all }n\ge n_\epsilon.}
+\]
+
+Equivalently, `liminf_(n→∞) (log q_n)/(n log 16)≥1/2`. The inequality is an **arithmetic constraint on the genuine zero-seeded BBP prefix**, rather than a generic digit-repetition statement. It is not an effective bound on the cutoff `n_ε` and does not force any signed parity, carry, shell variance, or Weyl cancellation. This consequence does not derive `μ=2` from RH: it transports the separate external π theorem into SUCC's exact rational source.
+
 ## What could falsify or advance this bridge?
 
 - **Finite arithmetic mutations:** replace `χ₄` by the principal sign, insert composite `6` into Λ, drop the `1/k`, replace `U₀=0` with a rational or cancelling seed; the normalized source coefficient fails in the predicted places.
