@@ -10,6 +10,8 @@
 | NJ-06 | Under external `μ(π)=2`, the finite digit-null radius satisfies `16^{-(2+ε)N}≤ρ_N≤(2·16^N)^{-1}` eventually | CONDITIONAL ON EXTERNAL FORMALIZED CLAIM | [THEOREMS `3](THEOREMS.md); threshold not effective |
 | NJ-07 | Exact nulls at transported scales `16^{-1},...,16^{-d}` force integer-polynomial height ≥`16^{d(d+1)/2}` unless zero | DISCLOSED / exact Gauss-lemma theorem; finite examples tested | [THEOREMS `5](THEOREMS.md); scale nulls require proof from actual carrier |
 | NJ-08 | Authentic two-carry integer field has coefficient mass ≤`16B`; forced excessive scale nulls imply identically zero carry difference | PROVED CONDITIONAL BRIDGE | [THEOREMS `5](THEOREMS.md); both hypotheses and positive-density phase conclusion unpaid |
+| NJ-11 | The k-th phase-only seed-derivative generating function has radius exactly `16^{-k}`; no jointly holomorphic two-variable seed/time germ exists | DISCLOSED / exact Cauchy–Hadamard and bidisk contradiction | [THEOREMS `7](THEOREMS.md); holds for locked rational controls |
+| NJ-12 | Renormalized all-order phase-only seed jets retain just the original phase journal, with no new source rank | DISCLOSED / exact termwise covariance | [THEOREMS `7](THEOREMS.md); nontrivial mixed source/carry lift still unknown |
 | NJ-09 | All pointwise seed derivatives zero + infinite seed uniqueness implies R0 | **REFUTED** | Generalized Kempner exponent-two nonnormal control (#686) |
 | NJ-10 | Source-certified R0 failure forces many transported nulls and contradicts nonzero field height | **UNVERIFIED / OPEN** | [NEXT](NEXT.md); genuine next verdict-changing probe |
 
