@@ -3,7 +3,7 @@
 | ID | Claim | Status | Proof / limitation |
 | --- | --- | --- | --- |
 | IROH-01 | `x=π/16=L(1,χ₄)/4` with unchanged BBP original-zero source | CLASSICAL / SOURCE AUTHENTICATED | BBP formula + Leibniz/Dirichlet beta; no signed shell estimate |
-| IROH-02 | Exact finite twisted FUCC commutator and rational scalar vacuum coefficient `Sχ(X)` | DISCLOSED / EXACT FINITE TESTED | [THEOREMS `I2](THEOREMS.md); 7 focused tests cover independent coefficient construction and hostile mutations |
+| IROH-02 | Exact finite twisted FUCC commutator and rational scalar vacuum coefficient `Sχ(X)` | DISCLOSED / EXACT FINITE TESTED | [THEOREMS §I2](THEOREMS.md); 7 focused tests cover independent coefficient construction and hostile mutations |
 | IROH-03 | `Sχ(X)=log(π/4)+O(X^-1/2 log X)` | CLASSICAL CONDITIONAL ON `GRH(χ₄)`; EXTERNALLY FORMALLY SUPPORTED | Dirichlet explicit formula + partial summation; not independently proved from theta kernel by SUCC |
 | IROH-04 | `W_B(h;π/16)=W_B(h;x_(16^(4B)B^6))+O_h(B^-2)` | PROVED CONDITIONAL ON IROH-03 | Signed circle Lipschitz transfer, *not* a saving of either Weyl mean |
 | IROH-05 | Direct genuine prime slots `8n−7` occupy only `O(B/log B)` per shell | CLASSICAL | PNT mod 8; propagating arithmetic effect across composite clocks remains open |
