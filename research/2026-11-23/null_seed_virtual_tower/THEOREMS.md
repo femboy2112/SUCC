@@ -127,7 +127,37 @@ All of these facts hold for a rational locked source too; they are **structural 
 
 **Corrective implication:** We may use an *analytic source moment* null germ (``1–2`), a *projective seed-cylinder* null object (`3`), and a *distributional signed seam* (`4`). We **may not** silently combine the entire completed phase seed-derivative tower into a fixed-radius holomorphic germ or claim higher normalized phase jets create independent information. A source-covariant mixed differential with authenticated carries and noncommuting source/observation transport is the required mathematical lift. Whether R0 failure forces excess multiplicity of that lift remains **UNVERIFIED**.
 
-## 8. Correct next falsification opportunity
+## 8. NEW: the arithmetic virtual tower needs Hasse jets, not ordinary derivatives
+
+A literal arithmetic multiplicity interpretation of the null seed requires a *typed integral/p-adic field*. Work first in the **auxiliary** ring `R=Z_p[[z]]`; a map from the authentic BBP source into this lattice has **not** yet been supplied. For `F(z)=\sum_{k\ge0}a_kz^k` define the `k`th Hasse (divided-power) derivative at the seed:
+\[
+D^{[k]}F(0):=[z^k]F(z)=a_k.
+\]
+The ordinary derivative is `F^{(k)}(0)=k!a_k`. **Factorial blindness:** in characteristic `p`, even the nonzero field `F(z)=z^p` has ordinary `p`th derivative `p!=0` modulo `p`, whereas its Hasse derivative is `D^{[p]}F(0)=1`. Treating ordinary p-adic derivative zeros as independent null information silently overcounts constraints.
+
+**Exact two-dimensional null information tower (source-order × p-adic resolution).** For any `F∈Z_p[[z]]`,
+\[
+\boxed{\forall k\ge0,\ \forall m\ge1:\ 
+D^{[k]}F(0)\equiv0\pmod{p^m}
+\quad\Longleftrightarrow\quad F=0.}
+\]
+Proof: each coefficient `a_k` lies in `\bigcap_{m\ge1}p^m Z_p=\{0\}`, so every coefficient vanishes. The converse is obvious. A vanishing finite collection of ordinary high derivatives is not equivalent to this two-axis completion.
+
+**Joint radix × prime capacity theorem (finite and exact).** Let `F∈Z[z]` be nonzero of degree at most `D`. Suppose `F(0)=0` and the `d` transported base-16 finite differences vanish at the seed:
+\[
+\nabla_{16^{-j}}F(0)=0\quad(j=1,\ldots,d).
+\]
+Suppose also `D^{[k]}F(0)\equiv0\pmod{p^m}` for *every* `0≤k≤D`. These Hasse conditions say every coefficient of `F` is divisible by `p^m`; write `F=p^mG` with `G∈Z[z]`. The exact radix null conditions pass to `G`. The ``5` Gauss-lemma factorization then gives
+\[
+\boxed{
+F(z)=p^m z\prod_{j=1}^d(1-16^jz)Q(z),\quad Q∈Z[z]\setminus\{0\},
+\qquad \|F\|_1\ge p^m16^{d(d+1)/2}.}
+\]
+This is a **literal** local-multiplicity-times-global-height inequality on the *same* nonzero integer field, without inventing a determinant. If a separately justified Archimedean coefficient budget `\|F\|_1<M<p^m16^{d(d+1)/2}` is available, the combined null hypothesis is impossible.
+
+**Source firewall:** This theorem is genuinely unconditional **as an algebraic statement**. However, SUCC does not yet possess a source-authenticated nonzero `F` whose base-16 transported roots and `p^m`-divisible Hasse coefficients follow from a putative R0-failing original-zero π shell. Nor is ordinary real logarithmic differentiation in FUCC a substitute for p-adic coefficient divisibility. The required arithmetic map must preserve the actual BBP denominators, prime/cofactor/carry history and nonzero field identity. This sharpens the **construction target** rather than claiming normality.
+
+## 9. Correct next falsification opportunity
 
 The new primary object is an **authenticated null-information virtual tower** simultaneously retaining: positive source measure/moment jets; actual `U_0=0`; unwrapped integer carry, signed future crossing and chronological memory; and the inverse-limit seed cylinder with its signed distributional seam current. **Only after constructing the tower** should we ask whether its forced null constraints entail an integer/p-adic determinant, height or impossible source capacity.
 
