@@ -131,6 +131,24 @@ class DirichletPrimeBridgeTests(unittest.TestCase):
                         self.assertEqual((v[i]*c[a])*(v[j]*c[b])
                                          - (v[i]*c[b])*(v[j]*c[a]), 0)
 
+    def test_exponent_two_parameter_witness_exact(self):
+        # Calibration of elementary parameter inequalities in the external
+        # interpolation-determinant proof, NOT the deep jet-surjectivity lemma.
+        nu, b, delta = Fraction(21, 10), Fraction(51, 100), Fraction(1, 1000)
+        theta, A, C = 1 - delta, 1 - b*delta, Fraction(2001, 2000)
+        B = (A + min(1/C, C*theta))/2
+        eta = Fraction(1, 1000000)
+        gap = nu*(A*(1 - eta) - theta) - (1 - theta)
+        self.assertLess(Fraction(1, 2), b)
+        self.assertLess(b, 1 - 1/nu)
+        self.assertTrue(0 < theta < A < B < 1)
+        self.assertTrue(A/theta < C < 1/A)
+        self.assertTrue(B < 1/C and B < C*theta < 1)
+        self.assertGreater(nu*(A-theta), 1-theta)
+        self.assertLess(A*A, theta)
+        self.assertEqual(gap, Fraction(26901071, 10**12))
+        self.assertGreater(gap, 0)
+
     def test_summand_sign_hostile_mutations(self):
         # Genuine signs at p ≡ 1,3 (mod 4), and real-vs-bare multiplier difference.
         w = euler_log_coefficients(100)
