@@ -10,4 +10,6 @@
 
 **Hostiles:** exact authenticated zero seed, cancelling wrong seed, rational alias 1/16, rational locked control, generalized Kempner exponent-two nonnormal number, #467 finite source-moment echoes, #685 16k-clock no-carry regime. Do not replace singular seam derivatives with ordinary pointwise jets or smooth them with uncosted Gaussian resolution; do not identify source moment jets with phase Weyl moments.
 
+**p-adic Hasse jet firewall:** Formal integer/p-adic nullness must be measured with coefficient/Hasse jets, not ordinary k! derivatives. The two-place height theorem is exact but currently on an auxiliary integer-polynomial field; establish a faithful source-normalized integral BBP/prime/carry lattice and prove null divisibility from the actual source before invoking it.
+
 **Pass criteria:** first an independent calibrated source-to-null transport theorem, second a nonzero capacity contradiction at all large integer shells, only then R0 (`Re W_B(1)≤1−η`), and later all-harmonic cancellation for normality. This is a new pathway program, not a proof claim.
