@@ -98,7 +98,36 @@ F_B(z)=z\sum_{j=0}^{B-1}a_{B+j}z^j,\qquad \|F_B\|_1\le16B.
 \]
 If all first `d` transported null probes vanish and `16^{d(d+1)/2}>16B`, then `F_B≡0`, forcing `δ_{B−1}=...=δ_{2B−1}=0`. **These hypotheses are not yet derived from R0 failure**, and this *particular* field may be identically zero: #685 certifies long original-source periods of zero completion carry. Nor does disappearance of both carry defects imply R0. The capacity theorem is a validated *instrument*, not the missing signed theorem by rearrangement.
 
-## 6. Correct next falsification opportunity
+## 7. NEW: the phase-only infinite seed-jet tower has no common analytic neighborhood
+
+This locates an exact missing **source/phase transport theorem** rather than inventing a new determinant. Fix any real `x` (including `π/16`), a nonzero integer character `h` and real seed `s`. Define
+\[
+\Psi_h(s,z)=\sum_{n=0}^\infty e(h16^n(x+s))\,z^n,\qquad e(t)=\exp(2\pi i t),\quad |z|<1.
+\]
+Every fixed-real-`s` slice is holomorphic in `z` for `|z|<1`, and the series is jointly continuous for real `s` on compact z-disks. Its formal seed-derivative sheet of order `k` is, on `|z|<16^{-k}`,
+\[
+\boxed{
+\partial_s^k\Psi_h(0,z)=(2\pi i h)^k
+\sum_{n=0}^\infty16^{kn}e(h16^nx)z^n.}
+\]
+**Exact radius theorem:** The complex power series on the right has radius **exactly** `16^{-k}` for every `k≥0`, since every coefficient has modulus `(2π|h|)^k16^{kn}`. Thus the radii of successive derivative sheets shrink to zero as `k→∞`, independently of normality, seed, source or phase structure.
+
+**No jointly holomorphic phase tower:** There is no common bidisk `|s|<a, |z|<b`, with `a,b>0`, supporting a function jointly holomorphic in `(s,z)` that agrees with these real-seed phase slices. If such a function existed, its `k`th derivative at `s=0` would be holomorphic throughout `|z|<b`; yet its Taylor coefficients in `z` have exact convergence radius `16^{-k}`. Choose `k` with `16^{-k}<b`: contradiction. The obstruction is *nonuniform seed sensitivity*, not any special unproved property of π.
+
+**Renormalization collapses the phase-only information:** Let `R_k` act on a formal series by multiplying its `z^n` coefficient by `16^{-kn}`. Then exactly
+\[
+R_k\bigl(\partial_s^k\Psi_h(0,z)\bigr)
+=(2\pi ih)^k\,\Psi_h(0,z).
+\]
+Thus rescaling restores a common analytic radius, but every normalized derivative sheet is just a scalar multiple of the original phase journal. No independent prime/cofactor/carry rank is recovered, even using all `k`. The countermodel `x=1/16,h=16` is completely locked and has the exact rational sheets
+\[
+(2\pi ih)^{-k}\partial_s^k\Psi_h(0,z)=\frac1{1-16^kz}.
+\]
+All of these facts hold for a rational locked source too; they are **structural no-gos**, not phase anti-lock theorems.
+
+**Corrective implication:** We may use an *analytic source moment* null germ (``1–2`), a *projective seed-cylinder* null object (`3`), and a *distributional signed seam* (`4`). We **may not** silently combine the entire completed phase seed-derivative tower into a fixed-radius holomorphic germ or claim higher normalized phase jets create independent information. A source-covariant mixed differential with authenticated carries and noncommuting source/observation transport is the required mathematical lift. Whether R0 failure forces excess multiplicity of that lift remains **UNVERIFIED**.
+
+## 8. Correct next falsification opportunity
 
 The new primary object is an **authenticated null-information virtual tower** simultaneously retaining: positive source measure/moment jets; actual `U_0=0`; unwrapped integer carry, signed future crossing and chronological memory; and the inverse-limit seed cylinder with its signed distributional seam current. **Only after constructing the tower** should we ask whether its forced null constraints entail an integer/p-adic determinant, height or impossible source capacity.
 
