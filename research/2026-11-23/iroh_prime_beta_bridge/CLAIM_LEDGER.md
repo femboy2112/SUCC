@@ -9,6 +9,7 @@
 | IROH-05 | Direct genuine prime slots `8n−7` occupy only `O(B/log B)` per shell | CLASSICAL | PNT mod 8; propagating arithmetic effect across composite clocks remains open |
 | IROH-06 | `μ(π)=2` independent of RH, as in OpenAI 2026 formalization | EXTERNALLY CLAIMED/FORMALIZED; NOT REBUILT BY SUCC | SUCC #686 already records conditional sharpening; does not yield R0 |
 | IROH-07 | `GRH(χ₄)` + IROH-01..06 implies positive all-shell phase dispersion for authentic π | **UNVERIFIED** | No valid signed prime/carry temporal decorrelation estimate; explicit Kempner `μ=2` no-go against a universal Diophantine shortcut |
+| IROH-10 | Reduced denominators of the original BBP rational prefixes obey `q_n>(64n²16^n)^(1/(2+ε))` eventually for every ε>0 | PROVED CONDITIONAL ON EXTERNAL μ(π)=2 | Genuine positive BBP tail + Diophantine bound; no Weyl/carry saving |
 | IROH-09 | Finite prime perturbation to endpoint Weyl Jacobian has complex rank at most 1 | DISCLOSED / EXACT FINITE TESTED | Chain rule outer product, all two-by-two minors vanish; no temporal decorrelation follows |
 | IROH-08 | π is base-16 normal | **OPEN** | All-harmonic signed Weyl saving unproved |
 
