@@ -2,6 +2,10 @@
 
 **Research date:** 2026-11-23. **Relationship:** additive draft child of Iroh #688; the source, zero seed, main, archived proofs, and all inherited production code are unchanged.
 
+## Recovered provenance — this is not a new user intuition
+
+This operation formalizes the user's previously articulated **null information / virtual field / inside-out differential** strategy (including the November 22, 2026 RH discussion): a zero-valued report can retain source-labelled hidden structure, and successively forced null differentials can impose arithmetic multiplicity beyond global carrier capacity. The product-of-geometric-linear-factors height mechanism was already explored in that prior discussion. Here it is **rescoped**, calibrated against the original BBP zero seed, distinguished from pointwise/distributional derivative pitfalls, and tied to finite source/carry controls. No claim of independent discovery or priority is made.
+
 ## Correction of the proof architecture
 
 The primary object is **not a guessed signed correlation or determinant**. It is a source-authenticated *virtual field* around the null homogeneous input `U_0=0`, equipped with its compatible source-moment, seed-cylinder and signed seam-response towers. Constraints from these towers might eventually **force** a determinant, height obstruction, or nonzero discrepancy, as in the externally verified RH arithmetic-multiplicity method. No unearned signed mixing inference is made.
