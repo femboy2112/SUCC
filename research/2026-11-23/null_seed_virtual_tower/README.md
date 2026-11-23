@@ -16,6 +16,8 @@ The [theorem dossier](THEOREMS.md) proves the following exact, bounded-scope res
 
 - The completed **phase-only** all-order seed-derivative generating series has exact convergence radius `16^{-k}` at order `k`; there is **no common jointly holomorphic seed/time bidisk**. Normalizing the derivatives restores a common radius but collapses all orders to scalar multiples of one phase journal. This is why source/carry seam observables must remain independent in the virtual tower.
 
+- At a genuine integral/p-adic source interface, ordinary derivatives are **factorial-blind**; Hasse derivatives identify coefficient constraints. A two-axis jet-order × prime-power-resolution null tower is separated, and simultaneous radix-scale roots and p-adic coefficient nulls force a mixed lower bound `p^m·16^{d(d+1)/2}` on any nonzero integral virtual field. No source-specific π null forcing has yet been proved.
+
 A combined **null reconstruction statement** follows from the first two bullets: if a finite signed source `ν` has all virtual-field difference jets zero relative to the actual positive BBP source `μ`, and its completed digit journal at seed `s` agrees at *every* finite depth with the genuine zero-seeded journal, then necessarily `ν=μ` and `s=0` modulo 1. This is a **source/seed identification theorem**, not a temporal equidistribution theorem.
 
 ## Adversaries and next nontrivial theorem
@@ -29,6 +31,6 @@ A combined **null reconstruction statement** follows from the first two bullets:
 
 ## Exact validation and authority
 
-The focused [source/cylinder tests](test_virtual_null_tower.py) and [phase-germ tests](test_phase_germ_no_go.py) ran **11/11 PASS**, Python stdlib (`Fraction`): actual four-pole Mellin identities, source analytic jets, rationally certified original BBP hexadecimal intervals, synthetic transported-null factorization/height and mutation, signed seam jump conservation, rational locked control, and a nonnormal irrational control. Uploaded test blob matches the exact locally executed SHA-1 `71aa4a0eaa3845a57941199e85fd9e7d32d03441`. These are finite tests of theorem inputs and exact examples, **not** proof of infinite statements or an external Lean build. Full SUCC gates and hosted CI were not run here.
+The focused [source/cylinder tests](test_virtual_null_tower.py) [phase-germ tests](test_phase_germ_no_go.py) and [Hasse/prime-height tests](test_hasse_null_tower.py) ran **13/13 PASS**, Python stdlib (`Fraction`): actual four-pole Mellin identities, source analytic jets, rationally certified original BBP hexadecimal intervals, synthetic transported-null factorization/height and mutation, signed seam jump conservation, rational locked control, and a nonnormal irrational control. Uploaded test blob matches the exact locally executed SHA-1 `71aa4a0eaa3845a57941199e85fd9e7d32d03441`. These are finite tests of theorem inputs and exact examples, **not** proof of infinite statements or an external Lean build. Full SUCC gates and hosted CI were not run here.
 
 [Claim ledger](CLAIM_LEDGER.md) · [Next hostile probe](NEXT.md). Keep as **draft**; do not merge, tag, publish, or promote normality.
