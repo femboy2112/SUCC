@@ -6,7 +6,7 @@
 
 **New-to-SUCC exact bridge:** The unmodified four-pole BBP zero-seeded endpoint `x=π/16` equals `L(1,χ₄)/4`. A genuine prime-power character twist of SUCC/FUCC's source dilation commutator has a finite vacuum matrix coefficient `Sχ(X)` such that `exp(Sχ(X))/4 → x`. Assuming the **Dirichlet-GRH for χ₄** furnished by the externally Lean-verified Alpöge–Claude argument, the error is `O(X^(-1/2) log X)`. Choosing `X_B=16^(4B) B^6` transfers every fixed-mode late-shell Weyl mean to this second, prime-defined observer with error `O_h(B^-2)`.
 
-This is a genuinely source-derived *representation and error theorem*, **not a signed Weyl saving**. Its prime-product approximation is computationally vastly more expensive than the BBP recurrence and does not prove R0 or normality. See [THEOREMS.md](THEOREMS.md) and [NEXT.md](NEXT.md).
+The same research also transports the external `μ(π)=2` theorem into a lower bound on the **reduced denominators of the exact original BBP rational prefixes**, `q_n>(64n²16^n)^(1/(2+ε))` eventually. This is a genuinely source-derived *representation, error and Diophantine-shadow packet*, **not a signed Weyl saving**. Its prime-product approximation is computationally vastly more expensive than the BBP recurrence and does not prove R0 or normality. See [THEOREMS.md](THEOREMS.md) and [NEXT.md](NEXT.md).
 
 ## Why the new source matters
 
