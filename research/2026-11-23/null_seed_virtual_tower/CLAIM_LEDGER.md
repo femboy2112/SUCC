@@ -12,6 +12,8 @@
 | NJ-08 | Authentic two-carry integer field has coefficient mass ≤`16B`; forced excessive scale nulls imply identically zero carry difference | PROVED CONDITIONAL BRIDGE | [THEOREMS `5](THEOREMS.md); both hypotheses and positive-density phase conclusion unpaid |
 | NJ-11 | The k-th phase-only seed-derivative generating function has radius exactly `16^{-k}`; no jointly holomorphic two-variable seed/time germ exists | DISCLOSED / exact Cauchy–Hadamard and bidisk contradiction | [THEOREMS `7](THEOREMS.md); holds for locked rational controls |
 | NJ-12 | Renormalized all-order phase-only seed jets retain just the original phase journal, with no new source rank | DISCLOSED / exact termwise covariance | [THEOREMS `7](THEOREMS.md); nontrivial mixed source/carry lift still unknown |
+| NJ-13 | Over `Z_p[[z]]` all Hasse jets vanish at every p-adic resolution iff the entire formal field is zero; ordinary high derivatives are factorial-blind | DISCLOSED / classical formal power series | [THEOREMS `8](THEOREMS.md); characteristic-p mutant `z^p` |
+| NJ-14 | An integral polynomial with both full coefficient null modulo `p^m` and d radix-scale exact zeros has nonzero height ≥`p^m·16^{d(d+1)/2}` | DISCLOSED / exact two-place algebraic capacity | [THEOREMS `8](THEOREMS.md); zero field and unforced source map remain barriers |
 | NJ-09 | All pointwise seed derivatives zero + infinite seed uniqueness implies R0 | **REFUTED** | Generalized Kempner exponent-two nonnormal control (#686) |
 | NJ-10 | Source-certified R0 failure forces many transported nulls and contradicts nonzero field height | **UNVERIFIED / OPEN** | [NEXT](NEXT.md); genuine next verdict-changing probe |
 
