@@ -6,7 +6,7 @@
 
 **New-to-SUCC exact bridge:** The unmodified four-pole BBP zero-seeded endpoint `x=π/16` equals `L(1,χ₄)/4`. A genuine prime-power character twist of SUCC/FUCC's source dilation commutator has a finite vacuum matrix coefficient `Sχ(X)` such that `exp(Sχ(X))/4 → x`. Assuming the **Dirichlet-GRH for χ₄** furnished by the externally Lean-verified Alpöge–Claude argument, the error is `O(X^(-1/2) log X)`. Choosing `X_B=16^(4B) B^6` transfers every fixed-mode late-shell Weyl mean to this second, prime-defined observer with error `O_h(B^-2)`.
 
-The same research also transports the external `μ(π)=2` theorem into a lower bound on the **reduced denominators of the exact original BBP rational prefixes**, `q_n>(64n²16^n)^(1/(2+ε))` eventually. This is a genuinely source-derived *representation, error and Diophantine-shadow packet*, **not a signed Weyl saving**. Its prime-product approximation is computationally vastly more expensive than the BBP recurrence and does not prove R0 or normality. See [THEOREMS.md](THEOREMS.md) and [NEXT.md](NEXT.md).
+The same research also transports the external `μ(π)=2` theorem into a lower bound on the **reduced denominators of the exact original BBP rational prefixes**, `q_n>(64n²16^n)^(1/(2+ε))` eventually. This is a genuinely source-derived *representation, error and Diophantine-shadow packet*, **not a signed Weyl saving**. Its prime-product approximation is computationally vastly more expensive than the BBP recurrence and does not prove R0 or normality. See [THEOREMS.md](THEOREMS.md), the primary-source [π exponent-two proof transport](PI_MU2_PROOF_TRANSPORT.md), and [NEXT.md](NEXT.md).
 
 ## Why the new source matters
 
@@ -27,6 +27,6 @@ The theorem constructs a common endpoint and quantitative transport (1) → (3) 
 
 ## Validation
 
-`python -m unittest discover -s research/2026-11-23/iroh_prime_beta_bridge -p 'test_prime_beta_bridge.py' -v` tests the finite arithmetic source via two distinct exact algorithms, rejects fake composite `6` and `1/k`/character-sign mutations, checks original BBP Mellin identity and literal-zero recurrence, and verifies finite prime-to-orbit Jacobian rank-one minors. **7/7 focused tests passed** on the locally authored test file before the remote PR upload. This is not a run of the full SUCC AGENTS gates, nor any proof assistant, and not a test of GRH or infinite asymptotics.
+`python -m unittest discover -s research/2026-11-23/iroh_prime_beta_bridge -p 'test_prime_beta_bridge.py' -v` tests the finite arithmetic source via two distinct exact algorithms, rejects fake composite `6` and `1/k`/character-sign mutations, checks original BBP Mellin identity and literal-zero recurrence, and verifies finite prime-to-orbit Jacobian rank-one minors. **8/8 focused tests passed** on the locally authored test file before the remote PR upload. This is not a run of the full SUCC AGENTS gates, nor any proof assistant, and not a test of GRH or infinite asymptotics.
 
 **Review only. No merge, source modification, status promotion, tag, or release.**
