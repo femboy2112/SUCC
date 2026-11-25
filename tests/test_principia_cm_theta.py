@@ -5,7 +5,7 @@ from observational_succ.principia_cm_theta import (
  CMSourceError, gaussian_shell, theta_shell_moment, det_bareiss,
  construct_cm_theta_certificate, verify_cm_theta_certificate,
  gaussian_moment_energy_upper_bound, lemniscate_derivative_jets,
- lemniscate_hasse_invariant, p_valuation)
+ lemniscate_hasse_invariant, p_valuation, theta_derivative_partial, theta_derivative_tail_bound)
 from observational_succ.principia_cm_period import (
  wp_laurent_coefficients, sigma2_wp_coefficients,
  normalized_theta_period_jets, lemma_theta_normalization_audit,
@@ -92,6 +92,20 @@ class CMThetaTests(unittest.TestCase):
     x=first_honda_coordinate_jet(p,unit)
     v=p_valuation(x.numerator,p)-p_valuation(x.denominator,p)
     self.assertEqual(v,expected,(p,unit,v))
+ def test_source_faithful_analytic_completion(self):
+  q=Fraction(1,2)
+  for r,N in ((0,12),(1,30),(2,50),(3,70)):
+   partial=theta_derivative_partial(r,q,N)
+   bound=theta_derivative_tail_bound(r,q,N)
+   extended=theta_derivative_partial(r,q,N+25)
+   self.assertLessEqual(abs(extended-partial),bound)
+   self.assertGreater(bound,0)
+  with self.assertRaises(CMSourceError):theta_derivative_tail_bound(5,q,0)
+ def test_t_equals_one_gaussian_tail_no_transcendental_rounding(self):
+  # pi>3 and e^3>20 give q=e^(-pi)<1/20; monotone bound is rigorous.
+  q_upper=Fraction(1,20)
+  for r,N in ((0,8),(1,20),(2,30)):
+   self.assertGreater(theta_derivative_tail_bound(r,q_upper,N),0)
  def test_CM_Hasse_invariant(self):
   for p in (3,7,11,19):self.assertEqual(lemniscate_hasse_invariant(p),0)
   for p in (5,13,17):self.assertNotEqual(lemniscate_hasse_invariant(p),0)
