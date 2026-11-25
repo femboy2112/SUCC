@@ -2,7 +2,10 @@ import unittest
 from fractions import Fraction
 from observational_succ.principia_coupling_mass import (
     MassSourceError, pushforward_tensor, evaluate_tensor,
+    mass_from_causal_memory, compress_mass, verify_compressed_mass,
 )
+
+from observational_succ.principia_causal_memory import carrier, initial_memory, future_quotient
 
 class HigherCouplingTests(unittest.TestCase):
     def test_three_way_parity_invisible_to_pairwise_source_marginals(self):
@@ -37,6 +40,20 @@ class HigherCouplingTests(unittest.TestCase):
             sign=lambda x: (-1)**sum(x)
             self.assertEqual(sum(sign(x) for x in even),2**(rank-1))
             self.assertEqual(sum(sign(x) for x in odd),-2**(rank-1))
+
+    def test_source_memory_to_exact_signed_kernel_preserves_zero(self):
+        c=carrier('minimal',('w0','w1'),('q',),('noop',),('q','q'),('0',),('same','same'),(('q',),),costs=(0,))
+        m=initial_memory(c,'0')
+        q=future_quotient(c)
+        self.assertEqual(len(set(q.colors)),1)
+        coupled=mass_from_causal_memory(c,m,q,(1,-1),((1,-1),(-1,1)))
+        compressed=verify_compressed_mass(coupled,compress_mass(coupled))
+        self.assertEqual((compressed.linear,compressed.pairing),((Fraction(0),),((Fraction(0),),)))
+        enhanced=mass_from_causal_memory(c,m,q,(1,1),((1,1),(1,1)))
+        cert=compress_mass(enhanced)
+        self.assertEqual(cert.linear,(Fraction(2),))
+        self.assertEqual(cert.pairing,((Fraction(4),),))
+        with self.assertRaises(MassSourceError):mass_from_causal_memory(c,m,q,(1,),((1,),))
 
     def test_arbitrary_arity_compression_exact(self):
         classes=('A','A','B')
