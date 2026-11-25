@@ -2,6 +2,41 @@
 
 **Date:** 2026-11-24. Research branch: research/principia-math-of-mathematics-2026-11-24. Pinned parent main: 81be6b897ae980b801a3b9de9e22ef81e8360bfb. **Status:** local mathematical/prototype validation. Not a complete SUCC worktree or original RH proof rebuild.
 
+## Latest causal-memory round — exact local and independent-source receipts
+
+**Executed after the prior CM round** in the same isolated Python 3.13.5 source-shaped overlay:
+
+    PYTHONPATH=. python -m unittest discover -s tests -p 'test_principia_*.py' -q
+
+Observed:
+
+    ----------------------------------------------------------------------
+    Ran 67 tests in 0.053s
+
+    OK
+
+The cumulative 67 consist of the previous **51** and **16** new methods from tests/test_principia_causal_memory.py. New controls verify the original-world/current-state memory update, forged/source-mutated histories, coarsest finite future-target congruence, independent pair-distinguishability, source-sensitive future-null versus a silent preparation, exact source-world coupling versus marginal readouts, reset/no-reset operational access, all-branches policy verification, and genuine Gaussian theta null mechanisms.
+
+Independent research oracle:
+
+    PYTHONPATH=. python independent_causal_memory_oracle.py
+
+Observed:
+
+    CAUSAL_MEMORY_INDEPENDENT_BRUTE_FORCE_PASS 84 fresh carriers, all <=N-1 words
+
+This oracle uses Random(20261124), generates 84 fresh deterministic mathematical source laws, enumerates all legal words through N−1 where N is the reachable marked-state count, compares their exact future response signatures against the native Moore quotient, independently replays four observed actions per source, and audits any finite produced target-identification policy. **Same researcher/model provenance**; algorithmically different checks, not an external blind referee. Compiler checks for the new Python files also passed.
+
+Exact newly uploaded GitHub source blobs checked against Git hash-object on the actually executed files:
+
+| New file | Git blob SHA-1 |
+| --- | --- |
+| observational_succ/principia_causal_memory.py | 917a14de44fb46fdd6cf7c23385d4a5778975fe2 |
+| tests/test_principia_causal_memory.py | b81aa69e4029670fe905a8440cca1bf8f47c7158 |
+| research/2026-11-24/principia_math_of_math/independent_causal_memory_oracle.py | 9cbd47e2a3fd2c0d698ee3e2f8c8c48f35064850 |
+
+All three new executable blobs MATCH. The CAUSAL_MEMORY.md mathematical proofs are classical paper derivations, not Lean kernel certifications. The **full SUCC root AGENTS.md gates, hosted GitHub CI, and original RH Lean build remain NOT RUN** in this environment.
+
 ## Executed source-shaped overlay
 
 All core Principia files from this draft were assembled in an isolated Python 3.13.5 source-shaped overlay. The following **was actually run** after adding the CM theta, period-normalized jets, sign-coordinate and analytic-completion branches:
