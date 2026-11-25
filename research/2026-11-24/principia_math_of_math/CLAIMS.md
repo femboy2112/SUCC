@@ -15,6 +15,8 @@
 | PGM-09 | Operation Principia is a novel foundational system replacing ZFC, category theory, type theory, or Lean. | **UNVERIFIED / NOT CLAIMED** | Need comparison to classical categorical semantics, independent mathematical utility and scholarly review |
 | PGM-10 | Principia Genesis proves RH, π normality, or the original BBP signed all-shell inequality. | **NOT CLAIMED / OPEN for native SUCC** | No proof of original zero-seed all-shell cancellation or M4–M10 native reconstruction |
 
+| PGM-11 | Authentic prime-square FUCC resolvent produces a height-two local formal logarithm whose compositional inverse and p-integral test kernels obey the expected valuation bounds. | **DISCLOSED classical local theorem**, THEOREMS.md T8 with exact proof, 8 focused tests and independent SymPy inverse cases; also present in earlier SUCC #687 T4/T4b | Still no actual integral CM theta-kernel coordinate/period identification (M4); height-one mutant and nonintegral kernel rejected |
+
 ## Diagnostic separation
 
 - **Contact \(\kappa\):** no external sensor/physical contact; only declared mathematical sources and a local Python execution.
