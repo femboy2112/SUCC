@@ -173,7 +173,7 @@ def verify_cm_theta_certificate(c: CMThetaCertificate) -> dict[str, object]:
         hadamard_sq *= v
     if analytic_det_sq > hadamard_sq:
         raise CMSourceError("Gaussian Hadamard bound failed on same map")
-    # Crucial cost: det(M*diag(q^norm)) differs by q^(sum norm).
+    # **Crucial cost:** determinant of M*diag(q^norm) differs by q^(sum norm).
     if analytic_det_sq != Fraction(determinant**2)*c.q**(2*sum(norms)):
         raise CMSourceError("missing analytic normalization cost")
     return {
@@ -191,7 +191,7 @@ def gaussian_moment_energy_upper_bound(prime: int, derivative_index: int, q: Fra
     """Upper bound for full p^2-supported theta 4r-jet Gaussian squared energy.
 
     E=Sum_{m>=1}|H_(4r)(p^2 m)|^2 q^(2 p^2 m).
-    Bound uses |H_(4r)(m)| <= r2(m)m^(2r), r2(m)<=4(m+1),
+    This is bounded using |H_(4r)(m)| <= r2(m)m^(2r), r2(m)<=4(m+1),
     and Sum m^s x^m <= s! x/(1-x)^(s+1).
     """
     if not is_prime(prime) or prime % 4 != 3 or not isinstance(derivative_index,int) or derivative_index < 0:
@@ -220,7 +220,7 @@ def lemniscate_derivative_jets(last_order: int) -> tuple[int, ...]:
 
 
 def lemniscate_hasse_invariant(prime:int)->int:
-    """[x^(p-1)](1-x^4)^((p-1)/2) mod p; bad at p=2."""
+    """Hasse-invariant coefficient [x^(p-1)](1-x^4)^((p-1)/2) mod p."""
     if not is_prime(prime) or prime == 2:
         raise CMSourceError("elliptic curve has bad reduction at 2")
     if (prime-1)%4:
