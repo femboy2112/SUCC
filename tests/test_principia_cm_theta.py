@@ -8,7 +8,8 @@ from observational_succ.principia_cm_theta import (
  lemniscate_hasse_invariant, p_valuation)
 from observational_succ.principia_cm_period import (
  wp_laurent_coefficients, sigma2_wp_coefficients,
- normalized_theta_period_jets, lemma_theta_normalization_audit)
+ normalized_theta_period_jets, lemma_theta_normalization_audit,
+ lemniscate_formal_log_coefficients, first_honda_coordinate_jet)
 
 class CMThetaTests(unittest.TestCase):
  def test_real_CM_source_shells(self):
@@ -77,6 +78,20 @@ class CMThetaTests(unittest.TestCase):
   r30=data['coefficients'][30]
   self.assertEqual(p_valuation(r30.numerator,3),14)
   self.assertLess(14,45)  # naive simple-theta multiplicity is insufficient
+ def test_actual_CM_formal_log_orientation(self):
+  a=lemniscate_formal_log_coefficients(9)
+  self.assertEqual(a[5],Fraction(1,10))
+  self.assertEqual(a[9],Fraction(1,24))
+  self.assertEqual(first_honda_coordinate_jet(3,1),Fraction(-7,24))
+  self.assertEqual(first_honda_coordinate_jet(3,-1),Fraction(3,8))
+  self.assertEqual(p_valuation(first_honda_coordinate_jet(3,1).numerator,3)-p_valuation(first_honda_coordinate_jet(3,1).denominator,3),-1)
+  self.assertEqual(p_valuation(first_honda_coordinate_jet(3,-1).numerator,3)-p_valuation(first_honda_coordinate_jet(3,-1).denominator,3),1)
+ def test_inert_orientation_holdout_primes(self):
+  for p in (3,7,11,19,23):
+   for unit,expected in ((1,-1),(-1,1)):
+    x=first_honda_coordinate_jet(p,unit)
+    v=p_valuation(x.numerator,p)-p_valuation(x.denominator,p)
+    self.assertEqual(v,expected,(p,unit,v))
  def test_CM_Hasse_invariant(self):
   for p in (3,7,11,19):self.assertEqual(lemniscate_hasse_invariant(p),0)
   for p in (5,13,17):self.assertNotEqual(lemniscate_hasse_invariant(p),0)
