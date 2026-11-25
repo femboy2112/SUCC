@@ -1,7 +1,7 @@
 import unittest
 from dataclasses import replace
 from observational_succ.principia_knowledge_volume import (
-    make_source, analyze, target_determined, InvalidLinearSource, rank
+    make_source, analyze, target_determined, verify_volume, InvalidLinearSource, rank
 )
 
 class KnowledgeVolumeTests(unittest.TestCase):
@@ -30,6 +30,22 @@ class KnowledgeVolumeTests(unittest.TestCase):
         with self.assertRaises(InvalidLinearSource): make_source([[1,0]],{'bad':[[1,0]]})
     def test_exact_rational_rank(self):
         self.assertEqual(rank([[1,0,1],[0,1,1],[1,1,2]],3),2)
+    def test_knowledge_volume_not_trusted_without_source_replay(self):
+        src=make_source([[1,0]],{'swap':[[0,1],[1,0]]})
+        actual=analyze(src,2)
+        self.assertEqual(verify_volume(src,actual,2),actual)
+        with self.assertRaises(InvalidLinearSource):
+            verify_volume(src,replace(actual,dimensions=(2,2,2)),2)
+    def test_full_exact_rank_can_have_weak_real_resolution(self):
+        from fractions import Fraction
+        n=1000000
+        src=make_source([[1,0]],{'weak':[[1,Fraction(1,n)],[0,1]]})
+        vol=analyze(src,1)
+        self.assertEqual(vol.dimensions,(1,2))
+        self.assertEqual(vol.report_rows[1][1],Fraction(1,n))
+        # The two independent rows have determinant only 1/n.
+        det=vol.report_rows[0][0]*vol.report_rows[1][1]-vol.report_rows[0][1]*vol.report_rows[1][0]
+        self.assertEqual(det,Fraction(1,n))
     def test_no_actions_does_not_invent_future_information(self):
         src=make_source([[1,0]],{})
         self.assertEqual(analyze(src,4).dimensions,(1,1,1,1,1))
