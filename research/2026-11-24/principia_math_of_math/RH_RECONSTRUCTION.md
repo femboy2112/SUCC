@@ -141,6 +141,12 @@ CAUSAL_MEMORY.md T15–T20 now adds the **mathematical-observation/coupling suff
 
 **RH-facing obligation:** a proposed compression of the *actual* theta-lift source must preserve the differences between nonzero integral source minors, rank, p-adic valuations, normalization/period and real Petersson bounds across all lawful lift paths. The finite classical theorem does not automatically extend to normed, infinite-dimensional or automorphic categories. A purported source-compression map that forgets a target-relevant theta-period valuation is **refuted for that target**, regardless of how many scalar zeros it matches.
 
+### New path-to-mass theorem (T21–T25)
+
+The causal-memory quotient must now carry **more than** observer-readable future behavior. On a finite source the unique signed/bilinear pushforwards are a_bar=Q^T a and K_bar=Q^T K Q. Actual Gaussian theta arithmetic already supplies a rigorous warning: |H4(2)|^2=256, while diagonal-only source terms total 64; H2(2)=0 has imaginary-channel diagonal mass 16 but zero coupled sum. The finite tensor theorem extends this to every declared finite arity. Even/odd r-bit parity families coincide on every proper-coordinate marginal and differ at full order r, so a universal fixed pairwise observer algebra is **refuted** without additional source restrictions.
+
+For the RH proof this creates a new *necessary semantic check*: every theta-period/lift compression must preserve its source-weighted integral coefficients, ranks, local valuations, and the **actual** real norm/period pairing, with all cross-terms or higher interactions that the mathematical target requires. This does not identify our elementary Gaussian-source quadratic with the automorphic Petersson form; constructing that actual source map is still the verdict-changing M4–M10 gap.
+
 ## 7. High-leverage next research cuts
 
 1. **Cut A — formal arithmetic seam, first.** Recover an actual CM height-two integral theta coefficient and a source-faithful map from its formal-group Hasse/ordinary jets to algebraic valuation. Predeclare at least one inert-prime divisibility success and one Gaussian theta negative control. Compare with the known simple-theta derivative loss rather than fitting it away.
