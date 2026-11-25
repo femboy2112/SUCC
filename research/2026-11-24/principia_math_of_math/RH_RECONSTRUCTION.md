@@ -104,6 +104,8 @@ The 2026-11-22 SUCC M0–M11 contract is the existing verification map:
 | M10 quantitative one-sided (M) | OPEN native | Recover the full weighted inequality and optimized error |
 | M11 analytic window criterion and RH | Classical/external | Reconstruct its exact proof conditions without inserting RH as a premise |
 
+**New native local vertical slice (2026-11-24):** THEOREMS.md T8 and observational_succ/principia_formal_group.py now construct the height-two formal logarithm from the actual FUCC prime-square resolvent, derive its inverse valuation bound, and validate the p-integral test-kernel derivative inequality. This integrates the model already derived in SUCC #687 into the Principia path semantics. It does **not** promote M4 (actual CM theta integrality), M5–M10, or RH to native proved status.
+
 The externally stated target is a bound schematically of the form
 
 \[
