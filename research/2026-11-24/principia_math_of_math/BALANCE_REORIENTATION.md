@@ -83,6 +83,30 @@ With at most \(e\) **adversarial report substitutions across the entire word**, 
 
 **Scope:** the error budget assumes correctly modelled state transitions, a correct map, a fixed action word, and an upper bound on *total* report corruptions. It is not a theorem about arbitrary motion failures, unknown measurement biases, indefinite sensor corruption, or an optimal adaptive noisy strategy. The local-code margin is a mathematical source-relative separation quantity—not a probability of truth.
 
+## T31 — quantitative reorientation for the SAME CM theta matrix (CLASSICAL / EXACT)
+
+The discrete Hamming margin controls finite symbolic report errors. A genuinely continuous/signed arithmetic observer needs a **separate quantitative inverse bound** on its actual observation map. Our existing Gaussian CM construction supplies an exact test.
+
+Let \(M=(H_{4r}(p^2 2^j))_{0\le r,j<k}\in\mathbb Z^{k\times k}\) be the genuine nonzero CM theta shell matrix from CM_THETA_TWO_PLACE.md T10, at inert prime \(p\equiv3\bmod4\). The real Gaussian realization at rational \(q\in(0,1)\) is
+\[
+W=M\operatorname{diag}\bigl(q^{p^22^0},\ldots,q^{p^22^{k-1}}\bigr).
+\]
+The code constructs the rational inverse of **this exact, authenticated matrix** in both the bare and Gaussian coordinate systems. It independently verifies the source CM theta coefficients, the matrix equality, and the inverse identity \(WW^{-1}=I\). For any \(x\in\mathbb Q^k\), if the measured real-side data are \(y=Wx+\eta\) and \(\|\eta\|_\infty\le\varepsilon\), then the reconstructed coordinate \(\hat x=W^{-1}y\) satisfies
+\[
+\boxed{
+\|\hat x-x\|_\infty
+\le \|W^{-1}\|_\infty\varepsilon,\quad
+\|W^{-1}\|_\infty=\max_i\sum_j |(W^{-1})_{ij}|.
+}
+\]
+**Proof:** the exact inverse gives \(\hat x-x=W^{-1}\eta\). Rowwise triangle inequalities yield the bound. It is sharp: select a row attaining the maximum absolute row sum, and choose each \(\eta_j=\varepsilon\,\operatorname{sgn}((W^{-1})_{ij})\). This gives equality in that output coordinate.
+
+**Crucible:** even though the same CM source proves \(M\) has full rank and growing \(p\)-adic determinant divisibility, the Gaussian weights \(q^{p^22^j}\) can make \(\|W^{-1}\|_\infty\) very large. This is not a contradiction: exact arithmetic identifiability is not robust real-side reorientation. Dividing out an unnoticed Gaussian or period normalization would falsely inflate the numerical stability claim.
+
+The independent SymPy checker reconstitutes the actual source matrix, its weighted real realization, inverse and exact norm (including an adversarial noise vector attaining the bound) in **24 separate** \(p,k,q\) cases, with positive checks and deliberately singular/forged-inverse/changed-source controls.
+
+**Scope:** this is a classical finite normed-linear theorem on an actual source-derived CM theta shell matrix. It is **not** the actual automorphic CM theta-period/Petersson map used for RH, not a bound on physical sensor error, and not a theorem about infinite-dimensional inverse stability. Its value to Principia is an exact source-typed distinction between *being able to reorient* and *being able to reorient robustly under finite precision*.
+
 ## 2. A unified meaning of balance — and its nonidentities
 
 There are at least four separate diagnostics:
@@ -107,4 +131,4 @@ Principia's source model should retain enough local arithmetic/analytic informat
 - `tests/test_principia_reorientation.py`, `tests/test_principia_reorientation_code.py`: positive and negative controls covering resets, original/current targets, heading ambiguity, repaired landmark, source mismatch, decreasing rank without hypothesis elimination, 1-error correction and geometric nonuniformity.
 - `research/2026-11-24/principia_math_of_math/independent_reorientation_oracle.py`: brute-depth AND/OR oracle on fresh finite sources, independent per-world policy replay and separately calculated beacon codewords/distances.
 
-**Claims:** T26–T30 DISCLOSED as elementary/classical mathematical deductions within the specified source and toolkit. Their finite executable checks are OBSERVED, not universal proofs. Extensions to unknown source laws, unbounded state/continuous spaces without landmarks, noisy motion, automorphic period geometry or global RH estimates remain **UNVERIFIED**. The next verdict-changing probe is to construct a quantitative inverse/reorientation theorem for the actual integral CM theta-period map, with gauge, source, and completion precisely typed.
+**Claims:** T26–T31 DISCLOSED as elementary/classical mathematical deductions within the specified source and toolkit. Their finite executable checks are OBSERVED, not universal proofs. Extensions to unknown source laws, unbounded state/continuous spaces without landmarks, noisy motion, automorphic period geometry or global RH estimates remain **UNVERIFIED**. The next verdict-changing probe is to construct a quantitative inverse/reorientation theorem for the actual integral CM theta-period map, with gauge, source, and completion precisely typed.
