@@ -1,82 +1,79 @@
-# Validation receipts — Principia mathematics-of-mathematics vertical slice
+# Principia Genesis — cumulative validation and source receipts
 
-**Date:** 2026-11-24. **Code environment:** local isolated source-shaped overlay with CPython and Python standard library; optional independent SymPy spot check. This was not a full SUCC checkout. No hosted CI, Lean, full-root test suite or external mathematical referee was executed during this round.
+**Date:** 2026-11-24. Research branch: research/principia-math-of-mathematics-2026-11-24. Pinned parent main: 81be6b897ae980b801a3b9de9e22ef81e8360bfb. **Status:** local mathematical/prototype validation. Not a complete SUCC worktree or original RH proof rebuild.
 
-## Scope and baseline
+## Executed source-shaped overlay
 
-Repository source: femboy2112/SUCC. Pinned baseline Main XXVI at 81be6b897ae980b801a3b9de9e22ef81e8360bfb.
-
-Current research branch: research/principia-math-of-mathematics-2026-11-24. All additions are opt-in and additive. No original BBP forcing, zero seed, archival theorem, frozen import, main/release history, or source checksum was modified. General root AGENTS.md gates remain required before any integration/claim promotion.
-
-## Executed tests
-
-Run from the local source-shaped root:
+All core Principia files from this draft were assembled in an isolated Python 3.13.5 source-shaped overlay. The following **was actually run** after adding the CM theta, period-normalized jets, sign-coordinate and analytic-completion branches:
 
     PYTHONPATH=. python -m unittest discover -s tests -p 'test_principia_*.py' -q
 
-**Observed output:**
+Observed:
 
     ----------------------------------------------------------------------
-    Ran 32 tests in 0.018s
+    Ran 51 tests in 0.041s
 
     OK
 
-The 32 focused tests include source-typed affine path construction and exact cochain pairing; missing/fake composite prime; malformed and forged path; exact rational root/division/checker; source-zero and nonzero requirement; false p-power coefficient divisibility; forged quotient path; changed source ID; nonintegral polynomial; no fictitious gain from duplicate root; finite exact rational knowledge volume; hidden-coordinate activation by swap; nilpotent three-stage row-space ascent; duplicated/identity report rank stabilization; forged knowledge rank rejected by replay; full-rank but weakly conditioned 1/N determinant; and malformed source dimensions.
+The 51 cases comprise the inherited **32** Principia Genesis focused tests (path/source, integer null-height, exact knowledge-volume and height-two formal resolvent) and **19** additional CM-theta/lemniscate cases. The new cases include numerous nested parameter combinations over inert primes 3, 7, 11; rank 1–4; independent nonzero integer minors; exact p-valuation floors; real Gaussian weighted-Hadamard and full-energy majorants; elliptic sine Hurwitz jets; the quartic Hasse invariant; the normalized \(\sigma^2\wp\) period-jet recurrence; simple-theta \(v_3(r_{30})=14<45\); the p=3 positive/negative Honda sign; signed Honda coordinate through degree 40; and exact rational finite-to-infinite holomorphic theta tail bounds.
 
-The additional eight tests cover genuine prime-square FUCC resolvent support, height-two formal inverse and p-adic derivative valuations, non-integral kernel and composite-prime controls, and height-one mutation.
+The hostile tests reject split/composite fake primes, source/normalization swaps, duplicate zero minors, radical/holomorphic derivative confusion, invalid heat weights, and inadmissible theta-tail cutoffs. Nonintegral and wrong-prime defects remain explicit failures.
 
-Run from the source-shaped root, with SymPy additionally installed:
+Also run:
 
-    PYTHONPATH=. python research/2026-11-24/principia_math_of_math/independent_spotcheck.py
+    python -m compileall -q observational_succ/principia_* tests/test_principia_*.py
 
-**Observed output:**
+Observed: exit code 0.
 
-    INDEPENDENT_SYMPY_SPOTCHECK_PASSED 360 polynomial cases 100 knowledge-rank cases
-    INDEPENDENT_SYMPY_FORMAL_INVERSE_PASSED 4 truncated inverse models
+## Independent analytic/arithmetic source checks
 
-The independent script uses a deterministic Random(20261124) stream. It constructs 360 nonzero integer-polynomial fixtures over radices 2, 3, 10, 16, genuine primes 2, 3, 5, 7, multiplicities and distinct-null depths, and checks exact roots and leading-coefficient bounds through SymPy's separate polynomial implementation. It also checks 100 independent exact rational row-space profiles via SymPy Matrix rank against the native Principia source-path enumeration.
+A separate SymPy oracle was executed on the local candidate:
 
-**Fresh controls:** source mismatch and missing exact root are distinct from malformed code; the fake-composite case is a source-passport rejection, not a claim the integer identity fails for composite multipliers. No statistical distribution of π or \(\zeta\)-zeros was sampled.
+    PYTHONPATH=. python research/2026-11-24/principia_math_of_math/independent_cm_theta_oracle.py
 
-## Exact uploaded-source identity audit
+Observed:
 
-All seven newly uploaded executable files were fetched through the GitHub connection from the research branch and their Git blob identities compared to the actually tested local source-shaped files via git hash-object:
+    SYMPY_INDEPENDENT_CM_THETA_CERTIFICATES_PASS 20
+    SYMPY_INDEPENDENT_LEMNISCATE_INVERSION_PASS 5
+    NUMERICAL_CM_PERIOD_THETA_CHECK_PASS (not an interval proof) 1.18034059901609623
 
-| Path | Exact blob SHA-1 | Match |
-| --- | --- | --- |
-| observational_succ/principia_semantic_core.py | 949cd521841d15583aeb3853c14b8c94bc271187 | MATCH |
-| tests/test_principia_semantic_core.py | 5202071bfe48842393dae6025716d13b96972a0d | MATCH |
-| observational_succ/principia_knowledge_volume.py | 11e0fe5c7f13609f5061cacf4f99df2dcaa9a8de | MATCH |
-| tests/test_principia_knowledge_volume.py | 3ae495e3c23b38d88ddd78dbc94ea2fd93c48a34 | MATCH |
-| observational_succ/principia_formal_group.py | 6cce9aa69dcaa4d504864cd87b7c2dea21536185 | MATCH |
-| tests/test_principia_formal_group.py | 4da18904c10175f37d49d58bd7e84d8fcc560bd9 | MATCH |
-| research/2026-11-24/principia_math_of_math/independent_spotcheck.py | cfe0d24d2984b7f38ff341a1eff6aae389f11218 | MATCH |
+The **20** SymPy checks independently recompute the Gaussian integer shell moments (using complex algebraic powers), the integer determinant and the Gaussian-weighted determinant for different inert primes and ranks. The **five** exact lemniscate controls compute the inverse elliptic integral by independent formal power-series reversion, rather than using the differentiated ODE source.
 
-The standalone SymPy test is an optional independent research script, **not** a root-test discovery dependency. It additionally independently expands four truncated formal inverse identities. These are finite exact mathematical checks, not RH proof certificates.
+The last check computes \(\Theta(0,1)\), the lemniscatic period \(\bar\omega\), and normalized theta derivatives \(r_1,r_2,r_3\) by independent 80-digit mpmath series/integrals and matches the classical period formulas. It is a **numerical diagnostic**, not an independently proved analytic theorem, nor a claimed interval arithmetic certificate. The termwise and finite-to-analytic theta-tail theorem is separately proved in CM_THETA_TWO_PLACE.md T14 using an explicit rational majorant.
 
-Also executed in the isolated overlay:
+Prior focused independent Genesis controls (unchanged from the previous version of this draft): **360** SymPy polynomial factorization/height cases, **100** SymPy knowledge-rank cases and **4** formal-inverse comparisons. They are prior recorded executions, not rerun here.
 
-    python -m compileall -q observational_succ/principia_* tests/test_principia_*
+## Exact source identity checked
 
-Observed: exit status 0.
+The following **three current branch blobs were fetched and compared to Git SHA-1 of the exactly tested local source files**:
 
-## Mathematical proof versus finite runtime
+| Source file | Current Git blob SHA-1 |
+| --- | --- |
+| observational_succ/principia_cm_theta.py | be249b7ff12caace9a75acfd197f5bcdcca9aa83 |
+| observational_succ/principia_cm_period.py | 2e26924d05859923a1736225e27f8a7f8b9720df |
+| tests/test_principia_cm_theta.py | 2657b449dc425a2d6ebc9e9fc8222150f0d67e17 |
 
-The universal source-null arithmetic capacity bound and the path/cochain algebra are supported by explicit classical derivations in THEOREMS.md, not by treating 360 finite randomized examples as a proof. The native code generates and checks finite certificates, and the independent implementation tests the arithmetic identities on held-out instances.
+**All three match the executed local files.** The separately uploaded independent_cm_theta_oracle.py is an optional research script with mathematically equivalent execution statements but was not byte-identical to the local oracle; it is **not** claimed as an exact-source-matched run. An independent agent should rerun it on the branch before promoting its receipt.
 
-The height-two formal-group lemma is proved in THEOREMS.md T8 from the original FUCC prime-square resolvent; actual CM-theta integrality is not proved. The conservative derivation-tagging and exact target-factorization theorems have classical proofs in THEOREMS.md; no independent formal-kernel certification is claimed. The full RH semantic reconstruction is a **research specification only**; there is no native theta-period integral map, no recovered global error estimate (M), and no SUCC-original RH proof.
+Prior Genesis executable blobs and checks are recorded in the previous version of this validation file / original #690 PR body.
 
-## Required root gates NOT run in this environment
+## Mathematical proof authority and boundaries
 
-The repository's AGENTS.md demands these on an actual full checkout before integration:
+T9–T11 and T14 in CM_THETA_TWO_PLACE.md supply complete elementary classical arguments for the Gaussian CM source shell transport, Vandermonde nonzero minor and valuation, same-map Gaussian norm and fully paid normalization cost, and analytic source completion. T12 supplies exact ODE and rational Taylor recurrences, **conditional on a cited classical theta/Weierstrass period identity** proved in the public November 22 exposition; that identity was not independently proved here. T13 proves p=3 degree-nine sign mismatch and checks additional finite inert-prime cases; **the full integral coordinate equivalence is unverified**.
+
+The full automorphic CM theta-kernel integrality, repeated theta lifts, real Petersson/Rallis norm, conductor/Galois and trace-formula estimates, the weighted main inequality (M), and a complete native SUCC mathematical reconstruction of RH are **not proved here**. The paper's lemniscate is an illustration **not used** in the external Lean proof; the present finite-shell matrix is not its automorphic theta-period map.
+
+## Mandatory SUCC gates NOT run
+
+The parent repository AGENTS.md requires, before merging or promoting an inherited theorem:
 
     python scripts/verify_provenance.py
     python -m unittest discover -s tests -p 'test_*.py'
     python scripts/observer_foundations_probe.py
     python scripts/ordinal_succ_report_probe.py
 
-They were **not** run here. Neither 24 focused passes nor cross-checks of uploaded bytes authorize a statement that full SUCC CI or the original RH Lean proof was rebuilt in this session.
+These were **not run** on a complete checkout; neither remote GitHub Actions nor a Lean build nor independent external peer review was executed during this round. Finite simulation is not a universal proof. The cited mathematical derivations, not the numeric examples, support the elementary universal claims.
 
-## Most useful independent reproduction
+## Next falsifier
 
-On the exact branch HEAD, a future independent agent should first replay the above native and SymPy scripts, then perform root AGENTS gates, check branch/source fingerprints and existing PR #619/#633 source compatibility, and inspect THEOREMS.md without relying on code as mathematical authority. Most importantly, its first native RH reconstruction must supply an actual *two-place CM theta-period minor* whose p-adic and Archimedean bounds are proved in the same source model, or a precise counterexample to the proposed route.
+Reconstruct an *actual* theta-lift kernel from the published RH proof in its integral CM formal-group coordinate and prove that its period-normalized nonzero lattice minors have simultaneous local valuations and independent real bounds; check trace/rank, conductor factors, and source-specific Frobenius units. Failure to provide that **same** source map is an access/pathway gap, not a reason to rename a different CM theta map as the proof's own.
