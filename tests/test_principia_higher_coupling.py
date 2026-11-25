@@ -24,6 +24,20 @@ class HigherCouplingTests(unittest.TestCase):
         features=tuple((('0',1),('1',-1)) for _ in range(3))
         self.assertEqual(evaluate_tensor(('0','1'),3,((t,1) for t in even),features),4)
         self.assertEqual(evaluate_tensor(('0','1'),3,((t,1) for t in odd),features),-4)
+    def test_all_proper_marginals_are_blind_to_unbounded_parity_order(self):
+        from itertools import combinations, product
+        from collections import Counter
+        for rank in range(2,8):
+            even=tuple(x for x in product((0,1),repeat=rank) if sum(x)%2==0)
+            odd=tuple(x for x in product((0,1),repeat=rank) if sum(x)%2==1)
+            for size in range(rank):
+                for subset in combinations(range(rank),size):
+                    self.assertEqual(Counter(tuple(x[j] for j in subset) for x in even),
+                                     Counter(tuple(x[j] for j in subset) for x in odd))
+            sign=lambda x: (-1)**sum(x)
+            self.assertEqual(sum(sign(x) for x in even),2**(rank-1))
+            self.assertEqual(sum(sign(x) for x in odd),-2**(rank-1))
+
     def test_arbitrary_arity_compression_exact(self):
         classes=('A','A','B')
         entries=(((0,1,2),2),((1,0,2),-1),((2,2,2),4))
