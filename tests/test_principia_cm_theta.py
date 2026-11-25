@@ -76,7 +76,7 @@ class CMThetaTests(unittest.TestCase):
   self.assertEqual(len(data["integral_normalized_jets"]),31)
   r30=data['coefficients'][30]
   self.assertEqual(p_valuation(r30.numerator,3),14)
-  self.assertLess(14,45)
+  self.assertLess(14,45)  # naive simple-theta multiplicity is insufficient
  def test_CM_Hasse_invariant(self):
   for p in (3,7,11,19):self.assertEqual(lemniscate_hasse_invariant(p),0)
   for p in (5,13,17):self.assertNotEqual(lemniscate_hasse_invariant(p),0)
