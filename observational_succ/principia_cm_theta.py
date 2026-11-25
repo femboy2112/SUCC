@@ -227,3 +227,31 @@ def lemniscate_hasse_invariant(prime:int)->int:
         return 0
     j=(prime-1)//4
     return ((-1)**j * comb((prime-1)//2,j))%prime
+
+
+def theta_derivative_partial(derivative_index: int, q: Fraction, cutoff: int) -> Fraction:
+    """Exact finite z^(4r) holomorphic derivative response at Gaussian q in (0,1)."""
+    if not isinstance(derivative_index,int) or derivative_index<0 or not isinstance(cutoff,int) or cutoff<0:
+        raise CMSourceError("invalid holomorphic source partial")
+    q=Fraction(q)
+    if not 0<q<1:
+        raise CMSourceError("non-Gaussian source parameter")
+    return sum((theta_shell_moment(n,4*derivative_index)*q**n for n in range(cutoff+1)),Fraction(0))
+
+
+def theta_derivative_tail_bound(derivative_index: int, q: Fraction, cutoff: int) -> Fraction:
+    """Rigorous rational bound for omitted theta 4r derivatives at analytic q.
+
+    For n>=N+1, |H_(4r)(n)| <=4(n+1)n^(2r).
+    Consecutive majorant ratios decrease; require the first ratio <1.
+    """
+    if not isinstance(derivative_index,int) or derivative_index<0 or not isinstance(cutoff,int) or cutoff<0:
+        raise CMSourceError("invalid holomorphic tail depth")
+    q=Fraction(q)
+    if not 0<q<1:
+        raise CMSourceError("non-Gaussian source parameter")
+    n=cutoff+1
+    ratio=q*Fraction(n+2,n+1)*Fraction(n+1,n)**(2*derivative_index)
+    if ratio>=1:
+        raise CMSourceError("cutoff does not yet yield an admissible geometric tail")
+    return 4*Fraction(n+1)*n**(2*derivative_index)*q**n/(1-ratio)
