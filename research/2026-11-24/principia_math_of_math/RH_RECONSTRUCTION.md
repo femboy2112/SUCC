@@ -147,6 +147,13 @@ The causal-memory quotient must now carry **more than** observer-readable future
 
 For the RH proof this creates a new *necessary semantic check*: every theta-period/lift compression must preserve its source-weighted integral coefficients, ranks, local valuations, and the **actual** real norm/period pairing, with all cross-terms or higher interactions that the mathematical target requires. This does not identify our elementary Gaussian-source quadratic with the automorphic Petersson form; constructing that actual source map is still the verdict-changing M4–M10 gap.
 
+### Internal feel and reason as source-coupled phase, not extra mathematical authority
+
+The latest FEEL_REASON_COMPASS.md (T32-T38) reconstructs a finite model of **one embodied observer maintaining its own causal path in the same carrier it reasons about**. It retains complete action/observation memory plus original-world/current-state coupling, an invertible Q(i) Fourier-coded signed self-path projection, and a reason reorientation rank. The exact source-covariant live update F'_k=i^(kd)F_k+a, full candidate-self fiber, gauge/phase no-go controls, and feel-guided but reason-certified finite reorientation are mathematical theorems with finite exact implementations.
+
+Its authentic Z[i] illustration produces H2(2)=0 while retaining an 8i angular Fourier mode: this clarifies the kind of source information scalar null evaluation forgets. However the constructed appraisal and selected Fourier signal do **not** directly encode the actual arithmetic integrality, rank, or Petersson norm of automorphic theta periods. Those remain the exact M4-M10 reconstruction debt. SUCC must prove any proposed analytic/CM transport between these typed objects instead of equating their similar-looking phase diagrams.
+
+
 ## 7. High-leverage next research cuts
 
 1. **Cut A — formal arithmetic seam, first.** Recover an actual CM height-two integral theta coefficient and a source-faithful map from its formal-group Hasse/ordinary jets to algebraic valuation. Predeclare at least one inert-prime divisibility success and one Gaussian theta negative control. Compare with the known simple-theta derivative loss rather than fitting it away.
