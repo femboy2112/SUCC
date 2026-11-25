@@ -2,6 +2,48 @@
 
 **Date:** 2026-11-24. Research branch: research/principia-math-of-mathematics-2026-11-24. Pinned parent main: 81be6b897ae980b801a3b9de9e22ef81e8360bfb. **Status:** local mathematical/prototype validation. Not a complete SUCC worktree or original RH proof rebuild.
 
+## Latest dual-compass/self-phase round — exact local source receipts
+
+**Independent local Python 3.13 source-shaped overlay** (not a full SUCC clone) ran:
+
+    PYTHONPATH=. python -m unittest discover -s tests -p 'test_principia_*.py' -q
+
+Observed:
+
+    ----------------------------------------------------------------------
+    Ran 136 tests in 0.254s
+
+    OK
+
+The cumulative 136 comprise the previous **112** Principia tests plus **24** new tests in test_principia_dual_compass.py and test_principia_self_coupling_fourier.py. These cover exact Q(i) DFT/IDFT and Parseval with 120 randomized Gaussian-rational vectors; phase and frame transport; autocorrelation; actual source-path appraisal with memory-conditioned original-world coupling; fake source and forged Fourier responses; closed-path nonzero self-history; dynamic shifted Fourier register updates on 100 randomized combinations; a genuine Z[i] zero DC/nonzero angular Fourier mode; reason-safe action filtering and a changing feel-guided action preference; modeled versus separately declared internal observations and their signed residuals; unknown-origin candidate Fourier fibers; and beacon/changed-chart no-omniscience controls.
+
+Additional **separately implemented SymPy oracle**:
+
+    PYTHONPATH=. python independent_dual_compass_oracle.py
+
+Observed:
+
+    INDEPENDENT_SYMPY_FOURIER_PASS 192
+    INDEPENDENT_DUAL_COMPASS_ALL_WORLD_REORIENT_PASS 31
+    INDEPENDENT_SOURCE_PHASE_FIBERS_PASS
+
+The 192 Fourier cases use a separately constructed symbolic complex DFT matrix on Q(i). The 31 original-world cases replay every source-world position through actual reported observations and check that the chosen feel-guided action decreases the reason rank until the target position is identified. The candidate-self fiber is rebuilt independently on ring source charts. These are different algorithms but **not external independent scholarly witnesses**.
+
+Also executed compileall on both new modules, both root-discoverable test files, and the independent oracle (exit zero).
+
+**GitHub connector fetched all five new executable files and their exact Git blob SHA-1s match the tested local source bytes**:
+
+| File | Exact checked Git blob SHA-1 |
+| --- | --- |
+| observational_succ/principia_dual_compass.py | 93ad65fa133a1c1f81e11d8935481a36981c0065 |
+| observational_succ/principia_self_coupling_fourier.py | 80d6d3522bc18f28fe1c426e32a7b0698cd5b7f8 |
+| tests/test_principia_dual_compass.py | 62604a5f11499a8496859498844a598011418b7c |
+| tests/test_principia_self_coupling_fourier.py | 5b919489c9403db147218a1fd54f4764b02fee50 |
+| research/2026-11-24/principia_math_of_math/independent_dual_compass_oracle.py | 2768166e5f413643e5da5f02771e38cee5f7fe66 |
+
+**Not run:** complete root AGENTS.md provenance/full SUCC suite, hosted GitHub CI, full Lean/RH rebuild, real-world physiological self-sensor calibration, or actual automorphic theta-period mathematical reconstruction. The finite universal theorems are justified by the derivations in FEEL_REASON_COMPASS.md; finite tests do not imply analytic/physical universality.
+
+
 ## Latest coupled-mass and higher-order rounds — exact receipts
 
 After the earlier 67-test causal-memory round, the source-shaped Python 3.13.5 overlay was extended with exact signed bilinear and arbitrary finite-arity coupling pushforwards and the source-memory-to-weighted-kernel bridge.
