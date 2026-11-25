@@ -18,7 +18,9 @@ The released Alpöge–Claude RH proof is the demanding case study: not to retyp
 
 **3. Null constraints becoming arithmetic mass/capacity.** A nonzero \(F\in\mathbb Z[z]\), an authenticated null at zero, additional distinct rational-root nulls, and integral Hasse coefficient divisibility produce a chain of explicit integral quotient witnesses. A separate verifier reconstructs the entire multiplication history and derives \(\|F\|_1\ge p^m b^{d(d+1)/2}\). This is the first exact source/null/differential/local-global *obstruction certificate*. See THEOREMS.md T4 and observational_succ/principia_semantic_core.py.
 
-**4. Conservative proof-path enrichment.** THEOREMS.md T3 states the elementary theorem that a tagged free derivation/path category has an erasure functor back to its original finitary calculus. This is useful bookkeeping but is **not** itself the desired native reconstruction of analytic mathematics.
+**4. Genuine RH-facing height-two formal logarithm.** The original FUCC prime-square operator produces a convergent resolvent whose coefficient transfer is the height-two formal logarithm used in the RH exposition. The exact inverse-coefficient and integral test-kernel derivative valuation bounds are reconstructed in THEOREMS.md T8 and checked in observational_succ/principia_formal_group.py. This is a genuine local model, not yet the integrality of the actual CM theta kernel.
+
+**5. Conservative proof-path enrichment.** THEOREMS.md T3 states the elementary theorem that a tagged free derivation/path category has an erasure functor back to its original finitary calculus. This is useful bookkeeping but is **not** itself the desired native reconstruction of analytic mathematics.
 
 ## How to read the research
 
@@ -36,7 +38,7 @@ This invokes standard-library rational/integer arithmetic only. A focused pass d
 
 ## The claim ladder
 
-**DISCLOSED, bounded:** the two source mathematical demonstrations are exact; independent checker and positive/hostile focused test cases ran in a local isolated overlay; elementary universal paper proofs are supplied. SOURCE PASSPORTS are declared mathematical models, not cryptographic proofs of external reality.
+**DISCLOSED, bounded:** the source mathematical demonstrations are exact; independent checker and positive/hostile focused test cases ran in a local isolated overlay; elementary universal paper proofs are supplied. SOURCE PASSPORTS are declared mathematical models, not cryptographic proofs of external reality.
 
 **CORROBORATED in existing SUCC theory:** path memory, source-relative nulls, target descent, knowledge-volume row spans, legal source arithmetic and integral capacity already exist in older research; this round combines a narrow native subset without renaming old results as original discoveries.
 
