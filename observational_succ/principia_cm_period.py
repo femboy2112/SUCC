@@ -59,3 +59,29 @@ def lemma_theta_normalization_audit(max_k:int)->dict[str,object]:
         raise PeriodSourceError("failed finite CM theta normalization audit")
     return {"degree":max_k,"coefficients":r,
             "integral_normalized_jets":tuple(int(4**k*a) for k,a in enumerate(r))}
+
+
+def lemniscate_formal_log_coefficients(degree:int)->tuple[Fraction,...]:
+    """Classical integral of (1-x^4)^(-1/2), exact monomial coefficients."""
+    from math import comb
+    if not isinstance(degree,int) or degree<1:
+        raise PeriodSourceError("invalid local CM formal logarithm degree")
+    c=[Fraction(0) for _ in range(degree+1)]
+    for j in range((degree-1)//4+1):
+        n=4*j+1
+        c[n]=Fraction(comb(2*j,j), 4**j*n)
+    return tuple(c)
+
+
+def first_honda_coordinate_jet(prime:int, unit:int)->Fraction:
+    """Degree p^2 of strict coordinate h: l_H(h)=l_E, l_H=T+unit*T^(p^2)/p+...
+    
+    This is ONLY the first potentially nonintegral coordinate coefficient.
+    An integral first jet does not imply an integral full coordinate change.
+    """
+    from math import isqrt
+    if prime<3 or prime%4!=3 or any(prime%d==0 for d in range(2,isqrt(prime)+1)):
+        raise PeriodSourceError("expected genuine inert prime")
+    if unit not in (-1,1):
+        raise PeriodSourceError("Honda sign unit must be +1 or -1")
+    return lemniscate_formal_log_coefficients(prime*prime)[prime*prime]-Fraction(unit,prime)
