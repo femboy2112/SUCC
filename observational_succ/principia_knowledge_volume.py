@@ -111,3 +111,10 @@ def target_determined(volume:KnowledgeVolume, target:Sequence[int | Fraction]) -
     if len(t)!=n:
         raise InvalidLinearSource('target has wrong dimension')
     return rank(volume.report_rows+(t,),n)==rank(volume.report_rows,n)
+
+
+def verify_volume(source:LinearSource, volume:KnowledgeVolume, max_depth:int) -> KnowledgeVolume:
+    """Recompute legal word paths; a reported row space alone is not a source receipt."""
+    if volume != analyze(source,max_depth):
+        raise InvalidLinearSource('forged knowledge volume or missing computational paths')
+    return volume
