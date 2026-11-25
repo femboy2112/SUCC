@@ -75,7 +75,7 @@ def lemniscate_formal_log_coefficients(degree:int)->tuple[Fraction,...]:
 
 def first_honda_coordinate_jet(prime:int, unit:int)->Fraction:
     """Degree p^2 of strict coordinate h: l_H(h)=l_E, l_H=T+unit*T^(p^2)/p+...
-    
+
     This is ONLY the first potentially nonintegral coordinate coefficient.
     An integral first jet does not imply an integral full coordinate change.
     """
