@@ -38,3 +38,16 @@ for _ in range(100):
  assert tuple(expect)==profile.dimensions, (expect,profile.dimensions)
  kchecks+=1
 print('INDEPENDENT_SYMPY_SPOTCHECK_PASSED',nchecks,'polynomial cases',kchecks,'knowledge-rank cases')
+
+from observational_succ.principia_formal_group import inverse_formal_log
+for p,d in [(2,8),(2,12),(3,10),(5,6)]:
+ u=inverse_formal_log(p,d)
+ U=sum(sp.Rational(a.numerator,a.denominator)*z**i for i,a in enumerate(u) if a)
+ L=U
+ j=1
+ while p**(2*j)<=d:
+  L+=sp.Rational(1,p**j)*U**(p**(2*j));j+=1
+ pol=sp.Poly(L,z,domain='QQ')
+ for k in range(d+1):
+  assert pol.nth(k)==(1 if k==1 else 0),(p,d,k,pol.nth(k))
+print('INDEPENDENT_SYMPY_FORMAL_INVERSE_PASSED',4,'truncated inverse models')
