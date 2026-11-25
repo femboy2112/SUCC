@@ -39,6 +39,12 @@ This invokes standard-library rational/integer arithmetic only. A focused pass d
 
 **5. Same-source CM theta and period integration.** From the actual Gaussian lattice Z[i] construct holomorphic theta-shell jets and a nonzero k-by-k minor. Prove its inert-prime valuation lower bound and an Archimedean Gaussian/Hadamard inequality on the **same finite matrix**, with the q-normalization cost explicitly paid. Independently reconstruct the standard lemniscate-period theta jets from Weierstrass differential equations, including the simple-theta negative valuation at order 120. The lemniscate is an external paper's illustration, *not* the automorphic theta lift of the RH proof. Rigorous theta-tail bounds and a p=3 Honda-sign mismatch provide discriminating completion/source-map tests.
 
+## Causal Memory — observations AND coupling (new integrated round)
+
+The author's next foundational instruction is that compressed mathematical knowledge must preserve **the memory of observations together with their causal coupling**. The new [CAUSAL_MEMORY.md](CAUSAL_MEMORY.md) supplies source-specific finite theorems T15–T20: an exact original-world/current-state coupling update, a unique coarsest target/future behavioral congruence with finite horizon bound, future-null versus option-value intervention, cross-action coupling not determined by individual marginals, an AND/OR executable target-identification policy criterion, and a **genuine CM arithmetic control** where two Gaussian-theta readouts equal zero for different source reasons (H_2(2)=H_2(3)=0 but H_4(2)=-16 and H_4(3)=0).
+
+The source-retained archive remains intact. The mathematical quotient is minimal **relative to a fixed target and action toolkit**, not a universal compression of arbitrary history or an automatically executable experiment. New code is observational_succ/principia_causal_memory.py and the focused tests; independent_causal_memory_oracle.py enumerates full finite response words on 84 randomly generated carriers. The current local cumulative focused suite has **67/67 passing** (51 prior + 16 new). Existing CM automorphic M4–M10 gaps are unchanged.
+
 ## The claim ladder
 
 **DISCLOSED, bounded:** the source mathematical demonstrations are exact; independent checker and positive/hostile focused test cases ran in a local isolated overlay; elementary universal paper proofs are supplied. SOURCE PASSPORTS are declared mathematical models, not cryptographic proofs of external reality.
