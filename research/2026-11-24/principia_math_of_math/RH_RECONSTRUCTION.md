@@ -135,6 +135,12 @@ A source-certified Gaussian-tail bound supplies the lawful finite-to-analytic co
 
 The last stage may use Lean or another checker **for external validation**, but SUCC's objective is a *mathematical reconstruction in its own operational vocabulary*, not implementing another Lean frontend.
 
+### Latest Principia causal-memory construction (2026-11-24)
+
+CAUSAL_MEMORY.md T15–T20 now adds the **mathematical-observation/coupling sufficiency layer** missing from a bare vector of zero reports. On a finite deterministic source, retained transcript plus the original-world/current-state coupling Γ_h supports the exact joint potential-response law. The coarsest future-target behavioral quotient is constructible and independently checkable; separate finite policy synthesis controls whether those mathematical distinctions can actually be acquired through the admitted toolkit. The genuine Gaussian source provides a particularly sharp test: H_2(2)=H_2(3)=0, yet a legal higher holomorphic jet distinguishes H_4(2)=-16 from H_4(3)=0.
+
+**RH-facing obligation:** a proposed compression of the *actual* theta-lift source must preserve the differences between nonzero integral source minors, rank, p-adic valuations, normalization/period and real Petersson bounds across all lawful lift paths. The finite classical theorem does not automatically extend to normed, infinite-dimensional or automorphic categories. A purported source-compression map that forgets a target-relevant theta-period valuation is **refuted for that target**, regardless of how many scalar zeros it matches.
+
 ## 7. High-leverage next research cuts
 
 1. **Cut A — formal arithmetic seam, first.** Recover an actual CM height-two integral theta coefficient and a source-faithful map from its formal-group Hasse/ordinary jets to algebraic valuation. Predeclare at least one inert-prime divisibility success and one Gaussian theta negative control. Compare with the known simple-theta derivative loss rather than fitting it away.
