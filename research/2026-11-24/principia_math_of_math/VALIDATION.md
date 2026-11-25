@@ -17,11 +17,13 @@ Run from the local source-shaped root:
 **Observed output:**
 
     ----------------------------------------------------------------------
-    Ran 24 tests in 0.006s
+    Ran 32 tests in 0.018s
 
     OK
 
-The 24 focused tests include source-typed affine path construction and exact cochain pairing; missing/fake composite prime; malformed and forged path; exact rational root/division/checker; source-zero and nonzero requirement; false p-power coefficient divisibility; forged quotient path; changed source ID; nonintegral polynomial; no fictitious gain from duplicate root; finite exact rational knowledge volume; hidden-coordinate activation by swap; nilpotent three-stage row-space ascent; duplicated/identity report rank stabilization; forged knowledge rank rejected by replay; full-rank but weakly conditioned 1/N determinant; and malformed source dimensions.
+The 32 focused tests include source-typed affine path construction and exact cochain pairing; missing/fake composite prime; malformed and forged path; exact rational root/division/checker; source-zero and nonzero requirement; false p-power coefficient divisibility; forged quotient path; changed source ID; nonintegral polynomial; no fictitious gain from duplicate root; finite exact rational knowledge volume; hidden-coordinate activation by swap; nilpotent three-stage row-space ascent; duplicated/identity report rank stabilization; forged knowledge rank rejected by replay; full-rank but weakly conditioned 1/N determinant; and malformed source dimensions.
+
+The additional eight tests cover genuine prime-square FUCC resolvent support, height-two formal inverse and p-adic derivative valuations, non-integral kernel and composite-prime controls, and height-one mutation.
 
 Run from the source-shaped root, with SymPy additionally installed:
 
@@ -30,6 +32,7 @@ Run from the source-shaped root, with SymPy additionally installed:
 **Observed output:**
 
     INDEPENDENT_SYMPY_SPOTCHECK_PASSED 360 polynomial cases 100 knowledge-rank cases
+    INDEPENDENT_SYMPY_FORMAL_INVERSE_PASSED 4 truncated inverse models
 
 The independent script uses a deterministic Random(20261124) stream. It constructs 360 nonzero integer-polynomial fixtures over radices 2, 3, 10, 16, genuine primes 2, 3, 5, 7, multiplicities and distinct-null depths, and checks exact roots and leading-coefficient bounds through SymPy's separate polynomial implementation. It also checks 100 independent exact rational row-space profiles via SymPy Matrix rank against the native Principia source-path enumeration.
 
@@ -37,7 +40,7 @@ The independent script uses a deterministic Random(20261124) stream. It construc
 
 ## Exact uploaded-source identity audit
 
-All five newly uploaded executable files were fetched through the GitHub connection from the research branch and their Git blob identities compared to the actually tested local source-shaped files via git hash-object:
+All seven newly uploaded executable files were fetched through the GitHub connection from the research branch and their Git blob identities compared to the actually tested local source-shaped files via git hash-object:
 
 | Path | Exact blob SHA-1 | Match |
 | --- | --- | --- |
@@ -45,9 +48,11 @@ All five newly uploaded executable files were fetched through the GitHub connect
 | tests/test_principia_semantic_core.py | 5202071bfe48842393dae6025716d13b96972a0d | MATCH |
 | observational_succ/principia_knowledge_volume.py | 11e0fe5c7f13609f5061cacf4f99df2dcaa9a8de | MATCH |
 | tests/test_principia_knowledge_volume.py | 3ae495e3c23b38d88ddd78dbc94ea2fd93c48a34 | MATCH |
-| research/2026-11-24/principia_math_of_math/independent_spotcheck.py | db95049924ee7ae77051b660239b5ca77a943100 | MATCH |
+| observational_succ/principia_formal_group.py | 6cce9aa69dcaa4d504864cd87b7c2dea21536185 | MATCH |
+| tests/test_principia_formal_group.py | 4da18904c10175f37d49d58bd7e84d8fcc560bd9 | MATCH |
+| research/2026-11-24/principia_math_of_math/independent_spotcheck.py | cfe0d24d2984b7f38ff341a1eff6aae389f11218 | MATCH |
 
-The standalone SymPy test is an optional independent research script, **not** a root-test discovery dependency or an additional claimed 460 independent scientific experiments.
+The standalone SymPy test is an optional independent research script, **not** a root-test discovery dependency. It additionally independently expands four truncated formal inverse identities. These are finite exact mathematical checks, not RH proof certificates.
 
 Also executed in the isolated overlay:
 
@@ -59,7 +64,7 @@ Observed: exit status 0.
 
 The universal source-null arithmetic capacity bound and the path/cochain algebra are supported by explicit classical derivations in THEOREMS.md, not by treating 360 finite randomized examples as a proof. The native code generates and checks finite certificates, and the independent implementation tests the arithmetic identities on held-out instances.
 
-The conservative derivation-tagging and exact target-factorization theorems have classical proofs in THEOREMS.md; no independent formal-kernel certification is claimed. The full RH semantic reconstruction is a **research specification only**; there is no native theta-period integral map, no recovered global error estimate (M), and no SUCC-original RH proof.
+The height-two formal-group lemma is proved in THEOREMS.md T8 from the original FUCC prime-square resolvent; actual CM-theta integrality is not proved. The conservative derivation-tagging and exact target-factorization theorems have classical proofs in THEOREMS.md; no independent formal-kernel certification is claimed. The full RH semantic reconstruction is a **research specification only**; there is no native theta-period integral map, no recovered global error estimate (M), and no SUCC-original RH proof.
 
 ## Required root gates NOT run in this environment
 
