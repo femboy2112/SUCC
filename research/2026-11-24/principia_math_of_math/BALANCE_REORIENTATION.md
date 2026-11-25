@@ -37,7 +37,7 @@ for non-goal winning beliefs; set \(D(B)=\infty\) on losing beliefs. Each action
 
 ## T27 — a completed finite observer can reorient after arbitrary prior drift (CONDITIONAL CLASSICAL)
 
-Suppose the full source map and local report law remain valid and every initially possible report class \(B_y=\{(w,\iota(w)):O(\iota(w))=y\}\) lies in the winning attractor for the **current-position target**. Then, after being placed at any admissible unknown starting state, the observer can use its first local report to select a certified finite reorientation policy. The maximum of the finite class ranks is a **uniform finite recovery horizon** for that fixed finite model.
+Suppose the full source map and local report law remain valid, the initial-source family contains **every position from which the observer may be re-rooted after unremembered drift** (equivalently, the initial map covers the relevant reachable state set), and every initially possible report class \(B_y=\{(w,\iota(w)):O(\iota(w))=y\}\) lies in the winning attractor for the **current-position target**. Then, after being placed at any state in that explicitly covered re-rooting class, the observer can use its first local report to select a certified finite reorientation policy. The maximum of the finite class ranks is a **uniform finite recovery horizon** for that fixed finite model.
 
 The source-memory update remains exact along the policy; unexpected reports with empty source-compatible fiber signal **model/source inadequacy or an out-of-contract observation** rather than permission to invent a new state. The same conclusion is not licensed across changed maps, unknown action slippage, missing reference points or insufficient sensory precision.
 
