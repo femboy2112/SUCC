@@ -146,3 +146,60 @@ The source labels in this prototype are **declared internal models**, not crypto
 Full SUCC gates, Lean verification, external peer review, a genuine RH-theorem reconstruction, and a source-attested original-BBP arithmetic bridge are **not** claimed.
 
 **References inside SUCC:** docs/principia_observatoris/README.md; research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md; research/2026-10-18/EQUIVARIANT_REDUNDANCY_WEIL.md; research/2026-11-12/adaptive_boundary_resolution/INTEGER_INFORMATION.md; SUCC PRs #72, #240, #619, #633, #687, #689. Prior mathematical ingredients (Yoneda, Gauss lemma, Hasse derivatives, linear observability) are classical.
+
+
+## T8. A genuine RH-facing local construction drops out of a FUCC path resolvent
+
+**Domain:** an authentic rational prime \(p\), the integer multiplication operator \(V_{p^2}|n\rangle=|p^2n\rangle\) on \(\ell^2(\mathbb N_{>0})\), and a declared coefficient map \(|n\rangle\mapsto T^n\). This is a local formal-group **model**, not an assertion of actual theta-kernel integrality.
+
+The bounded operator \(p^{-1}V_{p^2}\) has norm \(1/p<1\), so the geometric resolvent exists:
+
+\[
+\mathcal R_p=(I-p^{-1}V_{p^2})^{-1}
+=\sum_{j\ge0}p^{-j}V_{p^{2j}}.
+\]
+
+On the source unit basis vector, its coefficient representation is exactly
+
+\[
+\boxed{\ell_p(T)=T+\sum_{j\ge1}p^{-j}T^{p^{2j}}.}
+\]
+
+Hence
+
+\[
+\ell_p(T)-p^{-1}\ell_p(T^{p^2})=T.
+\]
+
+**Proof:** the terms of the Neumann series are orthogonal basis shifts on \(|1\rangle\) and converge in Hilbert norm. The displayed functional equation follows by cancellation of the successive prime-square terms. The formal power series has linear coefficient 1, so there is a unique compositional inverse \(U_p(z)\in\mathbb Q_p[[z]]\), with \(U_p(0)=0\), \(U_p'(0)=1\).
+
+**Valuation theorem (CLASSICAL / exact formal induction):**
+
+\[
+\boxed{v_p([z^a]U_p)\ge-\frac{a-1}{p^2-1}
+\quad(a\ge1).}
+\]
+
+Proof: from \(\ell_p(U_p)=z\),
+
+\[
+U_p=z-\sum_{j\ge1}p^{-j}U_p^{p^{2j}}.
+\]
+
+For \(a>1\) and \(r=p^{2j}\le a\), every monomial contributing to \([z^a]U_p^r\) is a product \(u_{i_1}\cdots u_{i_r}\), where \(i_h\ge1\), \(\sum_h i_h=a\), and \(i_h<a\). By induction its valuation is at least \(-(a-r)/(p^2-1)\). The factor \(p^{-j}\) costs \(j\), but \(j\le(r-1)/(p^2-1)\). Therefore every summand has valuation at least \(-(a-1)/(p^2-1)\); the nonarchimedean triangle inequality proves the result.
+
+For \(f(T)\in\mathbb Z_p[[T]]\), composition with \(U_p\) has the same coefficient bound at every degree \(a\ge1\), because all coefficients of \(f\) are \(p\)-integral and the composition terms partition \(a\) into positive indices. Ordinary differentiation then gives
+
+\[
+\boxed{v_p\bigl((f\circ U_p)^{(a)}(0)\bigr)
+\ge v_p(a!)-\frac{a-1}{p^2-1}.}
+\]
+
+Together with Legendre's factorial formula, the leading gain is
+\(a(1/(p-1)-1/(p^2-1))\), up to a logarithmic error. This is a **genuine mathematical ingredient appearing in the conventional RH exposition**, reconstructed using an authentic FUCC multiplication path and formal coefficient transport. The same local lemma was already derived in SUCC draft #687 T4/T4b; this round **integrates** it into the native path/knowledge/null reconstruction architecture rather than presenting it as an original discovery.
+
+**Executable exact check:** observational_succ/principia_formal_group.py constructs \(\ell_p\), computes \(U_p\) coefficientwise, checks \(\ell_p(U_p)=z\) modulo the declared truncation, checks valuations of \(U_p\) and of derivatives of \(f(U_p)\), and verifies the resolvent equation. Tests include a height-one mutant: \(\ell(T)=T+T^p/p\) has inverse coefficient \([z^p]U=-1/p\), which violates the height-two bound \(-1/(p+1)\). A non-\(p\)-integral test kernel and fake composite prime are rejected. Independent SymPy compositions were executed for several small primes and truncations.
+
+**The central unproved next arrow:** showing that the **actual automorphic/CM theta kernel** entering the released RH proof has coefficients in the correct integral local model *after the real period, conductor, and coordinate normalizations*. This source-identification statement is M4, and is not implied by the formal inverse lemma. Similarly, the model's \(p\)-adic gains do not produce RH by themselves without nonzero global period minors, rank and Archimedean bounds.
+
+**Scope:** universal paper theorem under stated ring hypotheses, finite exact computation as diagnostics, no original-BBP digit equidistribution, no automatic full CM theta transfer, and no independently proved RH.
