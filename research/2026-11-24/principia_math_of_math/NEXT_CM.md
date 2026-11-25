@@ -72,6 +72,15 @@ For an actual automorphic theta-period candidate:
 
 **Acceptance:** recover, from native SUCC source/path/coupling operations, a mathematically valid original-theta-lift period-map coefficient AND its integral and real pairing on the same source. The finite Gaussian shell proof is a prototype, not this acceptance.
 
+## D3. Situating the two compasses in the ACTUAL theta source
+
+The new FEEL_REASON_COMPASS.md establishes a finite exact foundation: an observer's model must retain its own actions and interpreted reports, original/current source coupling, a source-calibrated phase reference, and the full family of still-possible hidden self-phases. A source-chosen Fourier basis offers a compact phase-sensitive representation, not an epistemic shortcut.
+
+**Next critical source test:** select one actual mathematical automorphic CM theta-period map used in the published proof and construct an observer/transport of its source-legal transformations. Show how the local integral theta coordinates, signed Frobenius unit, conductor normalization and actual real period/Petersson pairing generate *both* an observer prediction and source-coupled path phases. A user-declared appraisal of the path is not a source-derived arithmetic weight without an explicit semantic map; keep it separate. Then test the target-relevant spectral pairing against source-independent numeric and algebraic checkers.
+
+**Holdouts:** homogeneous-source gauge aliases, phase-only basis change, magnitude-only loss, repeated path rank aliases, forged internal self readouts, a candidate self-fiber replaced by a guessed point, and the actual simple Gaussian theta valuation failure. One source model and signed chronological history must pass all of them before semantic equivalence is claimed.
+
+
 ## E. Priority for future research rounds
 
 First work on source authenticity and **one actual automorphic period coefficient**, not arbitrary generalizations. If an advertised map fails at the first p-adic unit, retain that failed receipt and try the correct sourced unit. Only scale to global rank and inequalities after the same object passes local and real normalization tests. Preserve every prior PR/branch and exact source.
