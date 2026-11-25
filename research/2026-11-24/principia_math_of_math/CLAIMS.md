@@ -17,6 +17,11 @@
 
 | PGM-11 | Authentic prime-square FUCC resolvent produces a height-two local formal logarithm whose compositional inverse and p-integral test kernels obey the expected valuation bounds. | **DISCLOSED classical local theorem**, THEOREMS.md T8 with exact proof, 8 focused tests and independent SymPy inverse cases; also present in earlier SUCC #687 T4/T4b | Still no actual integral CM theta-kernel coordinate/period identification (M4); height-one mutant and nonintegral kernel rejected |
 
+| PGM-12 | Gaussian CM theta finite-shell holomorphic jets at inert p have source-exact p-power transport, nonzero Vandermonde minor, and a real Gaussian Hadamard bound on the same integer matrix with explicit q-weight cost. | **DISCLOSED elementary source theorem**, CM_THETA_TWO_PLACE.md T9–T11; independent SymPy exact source oracle | Not an RH automorphic theta-period map; cheap local divisibility is not the full theta integrality theorem |
+| PGM-13 | Lemniscate Hurwitz jets, CM Hasse invariant and period-normalized theta derivatives are reconstructed from exact differential equations. | **DISCLOSED classical conditional on the cited theta/Weierstrass period identity**; exact Rational recurrence + finite checks | The theta↔period identity is imported from Rubinstein v2 §III.12, not independently proved by SUCC |
+| PGM-14 | Simple theta's exact normalized r30 has v3=14, less than the 45 multiplicity benchmark; positive-sign Honda coordinate has first p3 jet -7/24 nonintegral, negative-sign candidate 3/8 integral at this one order. | **DISCLOSED finite exact calculation**, hostile source-map control | Opposite first-jet sign is not full p-integral coordinate equivalence, and lemniscate is an illustration outside Lean's automorphic proof |
+| PGM-15 | Entire holomorphic Gaussian theta derivatives have a source-derived explicit rational tail majorant, permitting certified finite-to-analytic completion for every valid cutoff. | **DISCLOSED elementary analytic inequality**, CM_THETA_TWO_PLACE.md T14; exact checked tails | Does not provide automorphic Petersson norm or strong enough global size to prove RH |
+
 ## Diagnostic separation
 
 - **Contact \(\kappa\):** no external sensor/physical contact; only declared mathematical sources and a local Python execution.
