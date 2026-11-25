@@ -289,7 +289,6 @@ def cm_rotational_self_modes() -> tuple[tuple[GaussianRational,...], tuple[Gauss
     fourth=tuple(GaussianRational(*gaussian_power(a,b,4)) for a,b in points)
     return dft4(second),dft4(fourth)
 
-
 @dataclass(frozen=True)
 class DeclaredSelfReadout:
     """An instrument/user-declared internal report, not invented from a source model.
