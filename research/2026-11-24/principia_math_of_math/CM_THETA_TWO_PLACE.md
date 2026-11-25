@@ -192,6 +192,36 @@ This is a *first-coordinate positive control*, **not a full integral isomorphism
 
 The actual automorphic CM-theta integrality theorem still requires much more: the complete formal-coordinate map, proper period and conductor normalization, and persistence under all theta lifts.
 
+## T14. Effective analytic completion is an actual theorem, not an infinite-time experiment
+
+The theta shell construction itself supplies a rigorously controlled finite-to-analytic limit. Fix \(r\ge0\), \(q=e^{-\pi t}\in(0,1)\), and source truncation \(N\ge0\). Put
+\[
+S_{r,N}(q)=\sum_{n=0}^N H_{4r}(n)q^n,\qquad
+n_0=N+1.
+\]
+As above, \(|H_{4r}(n)|\le4(n+1)n^{2r}\) for \(n\ge1\).
+The ratio of two successive terms in this positive majorant is
+\[
+q\,\frac{n+2}{n+1}\left(\frac{n+1}{n}\right)^{2r},
+\]
+which is decreasing in \(n\ge1\). If
+\[
+R=q\,\frac{n_0+2}{n_0+1}\left(\frac{n_0+1}{n_0}\right)^{2r}<1,
+\]
+then the **entire infinite theta derivative** has a certified tail:
+\[
+\boxed{
+\left|\partial_z^{4r}\Theta(0,t)-S_{r,N}(q)\right|
+\le \frac{4(n_0+1)n_0^{2r}q^{n_0}}{1-R}.
+}
+\]
+
+**Proof:** compare the omitted absolutely convergent source series to the displayed positive majorant and dominate the latter by the geometric series with initial term \(4(n_0+1)n_0^{2r}q^{n_0}\) and ratio \(R\). Nothing is inferred from a finite number of observations alone; the global tail theorem follows from the actual Gaussian source law.
+
+The code evaluates the bound and rational-\(q\) partials using exact Fraction arithmetic; it refuses cutoffs where \(R\ge1\). At the paper's \(t=1\), classical \(\pi>3\) and the rational Taylor lower bound \(e^3>20\) imply \(q=e^{-\pi}<1/20\), so the same monotone rational formula at \(q=1/20\) is a **rigorous majorant** for the omitted tail there, even though the exact finite \(q=e^{-\pi}\) sum is transcendental.
+
+This supplies Principia's source-faithful *completion* arrow on a genuine analytic CM source. It does not imply an all-order theta-period integrality theorem or RH.
+
 ## 3. Mathematical acceptance and source mapping
 
 The branch now carries three genuinely different interfaces, and no two are silently identified:
@@ -221,7 +251,7 @@ The finite integer matrix in T10 is not a Petersson-period map. Its norm is an h
 
 - Native exact source engine: observational_succ/principia_cm_theta.py.
 - Exact period coefficient engine: observational_succ/principia_cm_period.py.
-- Focused tests: tests/test_principia_cm_theta.py; includes 14 cases and numerous parameterized exact matrix checks.
+- Focused tests: tests/test_principia_cm_theta.py; includes 18 cases and numerous parameterized exact matrix checks.
 - Independent SymPy/mPMath oracle: research/2026-11-24/principia_math_of_math/independent_cm_theta_oracle.py. The 20 independent SymPy determinant/weighted-norm and Gaussian shell cases and five exact formal inversion checks are arithmetic; the numerical \(T_0,\bar\omega,r_1,r_2,r_3\) comparison is a diagnostic, not an outward-rounded proof of the theta-period theorem.
 - External original: Rubinstein et al., 22 Nov 2026 guide, §I.3–I.4 and §III.12; standard Gaussian integer arithmetic, Jacobi theta/elliptic functions, Hasse invariant criterion.
 
