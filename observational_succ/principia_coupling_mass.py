@@ -147,3 +147,49 @@ def gaussian_shell_coupling(norm: int, order: int) -> CoupledMass:
     kernel = tuple(tuple(a*b for b in weights) for a in weights)
     return make_mass(f'Z[i]:N={norm}:holomorphic-power={order}:channel={channel}',
                      paths, classes, weights, kernel)
+
+
+def pushforward_tensor(class_of_path, arity: int, entries) -> tuple[tuple[tuple[str, ...], Fraction], ...]:
+    """Finite k-way source-coupling tensor along an observer quotient.
+
+    Each entry is (source index tuple, exact rational coefficient). Duplicate
+    original paths and mixed-sign contributions are summed, not counted as
+    independent new evidence. The tensor is a declared mathematical source.
+    """
+    labels = tuple(class_of_path)
+    if not isinstance(arity, int) or arity < 1 or any(type(c) is not str or not c for c in labels):
+        raise MassSourceError('invalid higher-order source arity or quotient')
+    result = {}
+    for indices, weight in entries:
+        if len(indices) != arity or any(type(i) is not int or not 0 <= i < len(labels) for i in indices):
+            raise MassSourceError('invalid source tensor index')
+        key = tuple(labels[i] for i in indices)
+        result[key] = result.get(key, Fraction(0)) + Fraction(weight)
+    return tuple(sorted(result.items()))
+
+
+def evaluate_tensor(class_of_path, arity: int, entries, features) -> Fraction:
+    """Check direct source tensor versus compressed tensor on class features."""
+    labels = tuple(class_of_path)
+    funcs = tuple(dict(f) for f in features)
+    if len(funcs) != arity:
+        raise MassSourceError('feature arity mismatch')
+    input_entries = tuple((tuple(i), Fraction(w)) for i, w in entries)
+    compressed = pushforward_tensor(labels, arity, input_entries)
+    try:
+        before = sum((weight * _tensor_product(funcs[d][labels[index]] for d, index in enumerate(indices))
+                      for indices, weight in input_entries), Fraction(0))
+        after = sum((weight * _tensor_product(funcs[d][label] for d, label in enumerate(names))
+                     for names, weight in compressed), Fraction(0))
+    except KeyError as exc:
+        raise MassSourceError('feature not defined for the declared source quotient') from exc
+    if before != after:
+        raise MassSourceError('higher-order source coupling lost under compression')
+    return after
+
+
+def _tensor_product(xs) -> Fraction:
+    result = Fraction(1)
+    for x in xs:
+        result *= Fraction(x)
+    return result
