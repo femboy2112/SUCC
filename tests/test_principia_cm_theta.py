@@ -9,7 +9,8 @@ from observational_succ.principia_cm_theta import (
 from observational_succ.principia_cm_period import (
  wp_laurent_coefficients, sigma2_wp_coefficients,
  normalized_theta_period_jets, lemma_theta_normalization_audit,
- lemniscate_formal_log_coefficients, first_honda_coordinate_jet)
+ lemniscate_formal_log_coefficients, first_honda_coordinate_jet,
+ signed_honda_coordinate_truncation)
 
 class CMThetaTests(unittest.TestCase):
  def test_real_CM_source_shells(self):
@@ -106,6 +107,15 @@ class CMThetaTests(unittest.TestCase):
   q_upper=Fraction(1,20)
   for r,N in ((0,8),(1,20),(2,30)):
    self.assertGreater(theta_derivative_tail_bound(r,q_upper,N),0)
+ def test_signed_honda_coordinate_depth_40(self):
+  good=signed_honda_coordinate_truncation(3,-1,40)
+  bad=signed_honda_coordinate_truncation(3,1,40)
+  self.assertEqual(good[9],Fraction(3,8))
+  self.assertEqual(bad[9],Fraction(-7,24))
+  for a in good:
+   if a:
+    self.assertGreaterEqual(p_valuation(a.numerator,3)-p_valuation(a.denominator,3),0)
+  self.assertLess(p_valuation(bad[9].numerator,3)-p_valuation(bad[9].denominator,3),0)
  def test_CM_Hasse_invariant(self):
   for p in (3,7,11,19):self.assertEqual(lemniscate_hasse_invariant(p),0)
   for p in (5,13,17):self.assertNotEqual(lemniscate_hasse_invariant(p),0)
