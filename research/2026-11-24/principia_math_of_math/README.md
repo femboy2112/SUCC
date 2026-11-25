@@ -25,6 +25,7 @@ The released Alpöge–Claude RH proof is the demanding case study: not to retyp
 ## How to read the research
 
 - THEOREMS.md — definitions, four scoped theorems, constructive proofs, independent-fiber/zero and integrality countermodels.
+- CM_THETA_TWO_PLACE.md — a genuine Gaussian CM theta source, nonzero inert-prime holomorphic jet minors with local valuations and real Gaussian sizes on the SAME map, the lemniscate period-jet recurrence, source-sensitive Honda sign defect and effective analytic completion; **not** the automorphic theta-lift maps of RH.
 - RH_RECONSTRUCTION.md — the semantic target \(R\circ E\simeq\mathrm{id}\) on an RH proof-bearing mathematical fragment; authentic external Lean theorem-source passports; the path/null/integral/real/rank/completion correspondence; M0–M11 status; source-specific acceptance tests.
 - KNOWLEDGE_VOLUME.md — why path rank, statistical/observational sufficiency, numerical conditioning and source-theorem strength are distinct.
 - CLAIMS.md — concise statuses, actual validation, most valuable next independent falsifier.
@@ -35,6 +36,8 @@ The released Alpöge–Claude RH proof is the demanding case study: not to retyp
     PYTHONPATH=. python -m unittest discover -s tests -p 'test_principia_*.py' -v
 
 This invokes standard-library rational/integer arithmetic only. A focused pass does not substitute for the full AGENTS.md root gates, and these tests do not mechanically prove every universal mathematics statement.
+
+**5. Same-source CM theta and period integration.** From the actual Gaussian lattice Z[i] construct holomorphic theta-shell jets and a nonzero k-by-k minor. Prove its inert-prime valuation lower bound and an Archimedean Gaussian/Hadamard inequality on the **same finite matrix**, with the q-normalization cost explicitly paid. Independently reconstruct the standard lemniscate-period theta jets from Weierstrass differential equations, including the simple-theta negative valuation at order 120. The lemniscate is an external paper's illustration, *not* the automorphic theta lift of the RH proof. Rigorous theta-tail bounds and a p=3 Honda-sign mismatch provide discriminating completion/source-map tests.
 
 ## The claim ladder
 
