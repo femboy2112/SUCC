@@ -165,6 +165,33 @@ v_3(r_{30})=14<45=\frac{120\cdot3}{3^2-1}.
 \]
 This is the published simple-theta **negative control**. A Gaussian-sized theta with the right CM lattice/period symmetry can still **fail** the RH proof's required full local multiplicity. That failure is not repaired by pointing to the correct source or adding formally duplicate paths.
 
+## T13. A source-sensitive Honda sign gate: first *actual* local coordinate defect
+
+There is a concrete, falsifiable difference between the auxiliary *positive* height-two Honda logarithm of Principia T8, \(\ell_{H,+}(T)=T+T^{p^2}/p+\cdots\), and the *actual lemniscate formal logarithm*
+\[
+\ell_E(T)=\int_0^T\frac{dx}{\sqrt{1-x^4}}
+=\sum_{j\ge0}\frac{\binom{2j}{j}}{4^j(4j+1)}T^{4j+1}.
+\]
+The latter is derived directly from the curve \(y^2=1-x^4\), not fitted to a desired p-adic valuation. At \(p=3\), \([T^9]\ell_E=1/24\), while the positive model has coefficient \(1/3\).
+
+If a strict coordinate \(h(T)=T+\cdots\) satisfies \(\ell_{H,+}(h(T))=\ell_E(T)\), then the first potentially nonintegral comparison coefficient is
+\[
+\boxed{[T^9]h=\frac1{24}-\frac13=-\frac7{24},
+\quad v_3([T^9]h)=-1.}
+\]
+Thus this **specific positive-sign** candidate fails the p-integral coordinate requirement, already at the first p-square jet. Merely naming both source germs “height two” cannot establish their integral compatibility.
+
+Try the opposite signed candidate \(\ell_{H,-}(T)=T-T^9/3+\cdots\). The first coefficient becomes
+\[
+\boxed{[T^9]h=\frac1{24}+\frac13=\frac38,
+\quad v_3([T^9]h)=1.}
+\]
+This is a *first-coordinate positive control*, **not a full integral isomorphism**. For the checked inert primes \(3,7,11,19,23\), exact binomial arithmetic produces \(v_p([T^{p^2}]h_+)=-1\) and \(v_p([T^{p^2}]h_-)=1\). The finite observations are diagnostics, not a proof of that valuation formula for all inert primes or of a globally integral formal-group coordinate.
+
+**Interpretation in Principia:** an apparently equivalent abstract local jet may fail to transport through the specific **integral** source map. The sign/unit data of Frobenius are not optional. This moves the M3→M4 obstruction from “integrality is a missing keyword” to an explicit first-degree, exact-rational, source-sensitive test.
+
+The actual automorphic CM-theta integrality theorem still requires much more: the complete formal-coordinate map, proper period and conductor normalization, and persistence under all theta lifts.
+
 ## 3. Mathematical acceptance and source mapping
 
 The branch now carries three genuinely different interfaces, and no two are silently identified:
