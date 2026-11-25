@@ -85,3 +85,21 @@ def first_honda_coordinate_jet(prime:int, unit:int)->Fraction:
     if unit not in (-1,1):
         raise PeriodSourceError("Honda sign unit must be +1 or -1")
     return lemniscate_formal_log_coefficients(prime*prime)[prime*prime]-Fraction(unit,prime)
+
+
+def signed_honda_coordinate_truncation(prime:int, unit:int, degree:int)->tuple[Fraction,...]:
+    """Strict coordinate l_H(h)=l_E mod T^(degree+1) for degree<p^4.
+
+    l_H(z)=z + unit*z^(p^2)/p in this finite range. This finite check
+    does NOT prove an integral full-coordinate isomorphism.
+    """
+    from observational_succ.principia_formal_group import power_truncated
+    first_honda_coordinate_jet(prime,unit)  # checks genuine inert prime/sign
+    if not isinstance(degree,int) or degree<1 or degree>=prime**4:
+        raise PeriodSourceError("unsupported degree; higher p-typical Honda terms required")
+    ell=lemniscate_formal_log_coefficients(degree)
+    h=[Fraction(0)]*(degree+1)
+    h[1]=Fraction(1)
+    for n in range(2,degree+1):
+        h[n]=ell[n]-Fraction(unit,prime)*power_truncated(h,prime*prime,n)[n]
+    return tuple(h)
