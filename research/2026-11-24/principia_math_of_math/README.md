@@ -1,0 +1,57 @@
+# Operation PRINCIPIA GENESIS — SUCC as a mathematics of mathematics
+
+**Research-only vertical slice, 24 November 2026.** Source root: Main XXVI at 81be6b897ae980b801a3b9de9e22ef81e8360bfb. Preserve every existing source contract and research history. The target is a *new-to-SUCC foundational reconstruction program*, not a claim of a new academic priority, independent Riemann hypothesis proof, formal replacement for Lean, or physical theory.
+
+## The initiating thesis
+
+The author's core hypothesis is that **SUCC can be a mathematics of how mathematical knowledge is constructed, connected, and constrained**. The difference between two computations that both report zero may reside entirely in their legal *construction paths*, so a faithful mathematics of mathematics must keep those paths, their sources, their relations, and their completion laws. The observer's internal model is not merely a prediction table: under authenticated mathematical source laws, it can certify that a hypothetical carrier state is impossible.
+
+In the author's terms, the framework is being constructed “from dirt”: elementary successor and multiplicative actions, source-relative nulls, lawful computation histories, observer/toolkit-relative knowledge volume, and derived quantitative restrictions. Familiar mathematics should *drop out as the ordinary-mathematics realization* of these constructions.
+
+The released Alpöge–Claude RH proof is the demanding case study: not to retype the Lean proof, but to reconstruct the proof's *mathematical objects and relations* within SUCC and recover the same proven statements. Before this can be claimed, we must first show a native mathematical vertical slice that derives a nontrivial theorem and transports it back to conventional mathematics.
+
+## This round's delivered mathematical slice
+
+**1. Retained null paths.** The genuine SUCC/FUCC square \(V_pS=S^pV_p\) has two distinct legal source paths with the same endpoints. An exact integer cochain detects their labelled difference even though endpoint evaluation returns zero. Ordinary exact gradients do not distinguish the same cycle. See THEOREMS.md T1 and observational_succ/principia_semantic_core.py.
+
+**2. Knowledge volume.** Given finite rational linear sources, an observer's legal action words generate the exact row-space filtration \(\mathcal K_0\subseteq\mathcal K_1\subseteq\cdots\). The implementation returns the rank at each horizon and a path witness for each added independent row. The target-factorization test checks whether the claimed target can actually be recovered from the full counterfactual report bank. See THEOREMS.md T2 and observational_succ/principia_knowledge_volume.py. It does not implement a single physical adaptive probe policy.
+
+**3. Null constraints becoming arithmetic mass/capacity.** A nonzero \(F\in\mathbb Z[z]\), an authenticated null at zero, additional distinct rational-root nulls, and integral Hasse coefficient divisibility produce a chain of explicit integral quotient witnesses. A separate verifier reconstructs the entire multiplication history and derives \(\|F\|_1\ge p^m b^{d(d+1)/2}\). This is the first exact source/null/differential/local-global *obstruction certificate*. See THEOREMS.md T4 and observational_succ/principia_semantic_core.py.
+
+**4. Conservative proof-path enrichment.** THEOREMS.md T3 states the elementary theorem that a tagged free derivation/path category has an erasure functor back to its original finitary calculus. This is useful bookkeeping but is **not** itself the desired native reconstruction of analytic mathematics.
+
+## How to read the research
+
+- THEOREMS.md — definitions, four scoped theorems, constructive proofs, independent-fiber/zero and integrality countermodels.
+- RH_RECONSTRUCTION.md — the semantic target \(R\circ E\simeq\mathrm{id}\) on an RH proof-bearing mathematical fragment; authentic external Lean theorem-source passports; the path/null/integral/real/rank/completion correspondence; M0–M11 status; source-specific acceptance tests.
+- KNOWLEDGE_VOLUME.md — why path rank, statistical/observational sufficiency, numerical conditioning and source-theorem strength are distinct.
+- CLAIMS.md — concise statuses, actual validation, most valuable next independent falsifier.
+- VALIDATION.md — exact local test commands, source hashes, outcomes and explicitly unrun root gates.
+
+### Run the finite executable demonstrator from the repository root
+
+    PYTHONPATH=. python -m unittest discover -s tests -p 'test_principia_*.py' -v
+
+This invokes standard-library rational/integer arithmetic only. A focused pass does not substitute for the full AGENTS.md root gates, and these tests do not mechanically prove every universal mathematics statement.
+
+## The claim ladder
+
+**DISCLOSED, bounded:** the two source mathematical demonstrations are exact; independent checker and positive/hostile focused test cases ran in a local isolated overlay; elementary universal paper proofs are supplied. SOURCE PASSPORTS are declared mathematical models, not cryptographic proofs of external reality.
+
+**CORROBORATED in existing SUCC theory:** path memory, source-relative nulls, target descent, knowledge-volume row spans, legal source arithmetic and integral capacity already exist in older research; this round combines a narrow native subset without renaming old results as original discoveries.
+
+**CONJECTURED:** the entire published RH argument can be *natively reconstructed* through a source-faithful Principia mathematical theory, rather than merely represented as external proof metadata.
+
+**UNVERIFIED:** the actual integral CM/theta lift, period-map lattice and real-side norm, trace-formula rank, conductor-uniform error, and complete smoothed-prime inequality as native SUCC derivations.
+
+## What would certify the ambitious claim?
+
+The burden is not just that every original mathematician's diagram can be given a SUCC label. The burden is that a source-faithful SUCC construction supplies *the same mathematical laws*, including nonzero integral witnesses, every prime-place and Archimedean normalization, rank/independence and the limit topology, with a realization back to ordinary mathematics that preserves each indispensable proof implication.
+
+The first verdict-changing challenge is a **nonzero, genuine CM theta-period minor** reconstructed in SUCC's source/path/null language, with independently certified p-adic valuation and Archimedean norm on that **same** object. This test should fail under nonintegral coordinate changes, duplicate lifts, fake composite primes, missing conductor factors, and alternate source kernels.
+
+## Provenance / neighboring work
+
+Older foundation and arithmetic inputs: SUCC docs/FOUNDATIONS.md; docs/principia_observatoris; research/2026-10-18/EQUIVARIANT_REDUNDANCY_WEIL.md; research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md; SUCC PRs #72 (prime/theta/Gamma interaction), #223 (lattice saturation), #240 (Witt carry), #290 (coherent zeros), #521 (null source jets), #553 (theta/Laguerre), #619 (observer), #633 (knowledge volume). Post-announcement comparison: #687 (RH human-readable main-inequality dependency), #689 (null-seed virtual-field tower). Original Lean proof: leanprover-community/riemann-hypothesis original@40e56bab026552e089d7afcfeff08d2defb9c005. These sources are neither independent historical witness families nor claims of scholarly priority.
+
+**Scope discipline:** no changes to main, historical imports, original four-pole BBP forcing, null seed, prior research archives, or releases. No promotion of RH, R0, π normality, or global Weil positivity.
