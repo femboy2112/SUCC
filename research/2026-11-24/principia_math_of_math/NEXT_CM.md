@@ -59,6 +59,19 @@ The first native reconstruction need only recover a *finite honest fragment* of 
 
 **Boundary:** the published external Lean theorem stands independently. No new independent RH proof is claimed, and this reconstruction does not change its authority. Do not merge main until AGENTS.md full gates are run and reviewed.
 
+## D2. The new quantitative source-coupling obligation
+
+COUPLING_MASS.md T21–T25 proves that a behavioral quotient preserving output and target labels is insufficient for arithmetic/analytic quantitative semantics unless the **source weights and complete target-relevant interaction tensors** descend. This is not an imported claim of Weil positivity; it is an exact finite pushforward theorem with hostile failures.
+
+For an actual automorphic theta-period candidate:
+- Pin original source paths and the full signed coefficient/kernel or appropriate higher multilinear source data; distinguish original inputs from fitted test values.
+- Before discarding any null path, show its contribution to the *actual target functional and period norm* is source-redundant, or transport its pushforward coefficient and cross terms explicitly.
+- Check nonzero determinant and rank under that same compression, with actual integral-coordinate maps, p-adic valuations and Archimedean normalization paid.
+- Test whether two source histories can have the same observable and pairwise projections but different higher-order theta-lift relationships. If so the toolkit requires higher coupling order or source restrictions; the parity family in T23 is a precise adversarial template.
+- Prove finite-to-infinite completion in the actual analytic topology; a finite tensor identity is not a global uniform estimate.
+
+**Acceptance:** recover, from native SUCC source/path/coupling operations, a mathematically valid original-theta-lift period-map coefficient AND its integral and real pairing on the same source. The finite Gaussian shell proof is a prototype, not this acceptance.
+
 ## E. Priority for future research rounds
 
 First work on source authenticity and **one actual automorphic period coefficient**, not arbitrary generalizations. If an advertised map fails at the first p-adic unit, retain that failed receipt and try the correct sourced unit. Only scale to global rank and inequalities after the same object passes local and real normalization tests. Preserve every prior PR/branch and exact source.
