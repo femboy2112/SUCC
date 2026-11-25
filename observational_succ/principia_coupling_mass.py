@@ -193,3 +193,30 @@ def _tensor_product(xs) -> Fraction:
     for x in xs:
         result *= Fraction(x)
     return result
+
+
+def mass_from_causal_memory(source, memory, quotient, world_weights, pair_kernel) -> CoupledMass:
+    """Source-faithful bridge: Γ_h + behavioral quotient -> signed kernel fiber.
+
+    world_weights and pair_kernel are DECLARED source coefficients, not
+    probabilistic posteriors. Observations RESTRICT possible original worlds;
+    they do not re-normalize signed arithmetic weights by a Bayes rule.
+    """
+    from .principia_causal_memory import (
+        verify_memory, verify_future_quotient,
+    )
+    rows = verify_memory(source, memory)
+    verify_future_quotient(source, quotient)
+    if len(world_weights) != len(source.worlds) or len(pair_kernel) != len(source.worlds) or any(
+        len(row) != len(source.worlds) for row in pair_kernel):
+        raise MassSourceError('missing original-source weight or pair coupling')
+    index = {atom: q for atom, q in zip(quotient.atoms, quotient.colors)}
+    original = {w: i for i, w in enumerate(source.worlds)}
+    labels = tuple(f'future-target-class-{index[(w, state)]}' for w, state in rows)
+    selected = tuple(original[w] for w, _ in rows)
+    weights = tuple(Fraction(world_weights[i]) for i in selected)
+    kernel = tuple(tuple(Fraction(pair_kernel[i][j]) for j in selected) for i in selected)
+    witness = str((memory.source, memory.first_report,
+                   tuple((step.action,step.outcome) for step in memory.steps)))
+    return make_mass('source-coupled-memory:' + witness,
+                     tuple(w for w, _ in rows), labels, weights, kernel)
