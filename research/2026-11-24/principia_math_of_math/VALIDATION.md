@@ -2,7 +2,45 @@
 
 **Date:** 2026-11-24. Research branch: research/principia-math-of-mathematics-2026-11-24. Pinned parent main: 81be6b897ae980b801a3b9de9e22ef81e8360bfb. **Status:** local mathematical/prototype validation. Not a complete SUCC worktree or original RH proof rebuild.
 
-## Latest causal-memory round — exact local and independent-source receipts
+## Latest coupled-mass and higher-order rounds — exact receipts
+
+After the earlier 67-test causal-memory round, the source-shaped Python 3.13.5 overlay was extended with exact signed bilinear and arbitrary finite-arity coupling pushforwards and the source-memory-to-weighted-kernel bridge.
+
+Executed:
+
+    PYTHONPATH=. python -m unittest discover -s tests -p 'test_principia_*.py' -q
+
+Observed:
+
+    ----------------------------------------------------------------------
+    Ran 81 tests in 0.065s
+
+    OK
+
+**81/81 cumulative passing:** previous 67 plus ten exact coupled-mass and four higher-order tensor/source-memory tests. The higher-order controls cover rank 2–7 binary parity families and every proper-coordinate marginal. All authentic Gaussian arithmetic input comes from the existing exact Z[i] source; no fitted theta moments.
+
+Additional independent validation:
+
+    PYTHONPATH=. python independent_coupling_mass_oracle.py
+
+Observed:
+
+    COUPLING_MASS_INDEPENDENT_SYMPY_PASS 180 source systems, 4 actual CM shell checks
+
+The independent SymPy implementation computes an incidence matrix Q on 180 deterministic fresh signed rational source systems and confirms the native results against Q^T a and Q^T K Q. It also tests arbitrary class-constant features and actual Gaussian norm-shell source coefficients. **Algorithmically independent, but not an external referee.** Prior 84-source causal-memory all-word brute-force oracle still passed.
+
+New current Git blobs matched the exact files executed in the local overlay:
+
+| Source | Exact uploaded blob SHA-1 |
+| --- | --- |
+| observational_succ/principia_coupling_mass.py | f41310e8ea2e59b6a50002c6acdb205cea156e02 |
+| tests/test_principia_coupling_mass.py | 4f17937c995b33241d66ec2b96f0887c31491a8d |
+| tests/test_principia_higher_coupling.py | 05635230fa9d6922e1fb92619925b32dad25b78b |
+| research/2026-11-24/principia_math_of_math/independent_coupling_mass_oracle.py | 973b1ec944cc24ebefd9f4c0059136656b0e9d3d |
+
+All four blob IDs match the tested sources. **Mandatory full-SUCC root tests, hosted CI, the full Lean repository and independent peer review have NOT been executed.** The universal finite mathematical claims are supported by derivations in COUPLING_MASS.md, not inferred from finitely many samples.
+
+## Prior causal-memory round — exact local and independent-source receipts
 
 **Executed after the prior CM round** in the same isolated Python 3.13.5 source-shaped overlay:
 
