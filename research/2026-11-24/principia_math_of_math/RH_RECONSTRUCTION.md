@@ -115,6 +115,16 @@ The externally stated target is a bound schematically of the form
 
 with a permitted source-selected choice of \(m,k,n\) giving square-root scale. The symbol meanings, exact weights, and all quantifiers must be imported **from the actual exposition/Lean definitions** and reconstructed before any SUCC theorem-status promotion. The displayed formula is a dependency *contract*, not a complete independent derivation.
 
+### Native CM pilot: T9–T14, same arithmetic source at both places
+
+The new CM_THETA_TWO_PLACE.md now constructs an **actual Gaussian theta finite-shell derivative map** \(M_{rj}=H_{4r}(p^2 2^j)\) from \(\mathbb Z[i]\), with a nonzero Vandermonde determinant, \(v_p(\det M)\ge2k(k-1)\), and a rigorous Gaussian-Hadamard squared-norm bound on that **same** map. The factor \(q^{\sum p^22^j}\) between integral and analytic determinants is retained. Unlike separate formal analogies, this is a genuine common-source two-place *finite example*.
+
+The exact CM lemniscate differential and the period-normalized theta recurrence recover the guide's rational \(r_k\). At \(p=3\), a naive positive Honda coordinate already has coefficient \(-7/24\), \(v_3=-1\); an opposite-sign candidate has \(3/8\), \(v_3=1\) at that first order, without establishing full integrality. The naive simple-theta normalized \(r_{30}\) has \(v_3=14\), **not** the RH-target 45. This proves the finite CM example is not automatically the actual integral theta-lift input (M4).
+
+A source-certified Gaussian-tail bound supplies the lawful finite-to-analytic completion arrow. **Status:** T9–T11, T14 elementary classical proofs; period identification imported from the official guide §III.12 and exact rational Taylor reconstruction native; non-RH.
+
+**Next critical cut:** obtain the **actual automorphic theta-lift kernel in its integral CM formal coordinates**, with its signed Frobenius unit, period/conductor normalization and real Petersson norm, then reproduce a nonzero minor and rank in that *specific* object. Finite CM theta shell rank is a proof-of-concept, not a substitute for M4–M10.
+
 ## 6. First native compilation versus claimed full RH compilation
 
 **Completed narrow slice:** THEOREMS.md T1, T4 plus the exact Python constructor/checker. It starts from an explicit arithmetic source, constructs path/null witnesses, interprets them back as integer algebra, and derives a nonzero capacity obstruction. This exercises *path semantics, observation loss, arithmetic null, integral transport, quantitative obstruction,* and hostile source controls.
