@@ -28,6 +28,12 @@
 | PGM-19 | A finite actual target-identification policy exists to depth d iff the source-conditioned AND/OR observation recursion holds. | **DISCLOSED classical source-relative theorem**, T19 with independent exhaustive branch verifier | Counterfactual all-experiment bank ≠ one-copy executable policy |
 | PGM-20 | Actual Gaussian theta coefficients H_2(2)=H_2(3)=0 have distinct source structure; legal derivative probe yields H_4(2)=-16 vs H_4(3)=0. | **DISCLOSED source-exact CM example**, T20; calculations from existing Gaussian lattice code | Not the published automorphic theta-lift map nor global RH multiplicity |
 
+| PGM-21 | Source signed linear and bilinear forms have unique quotient pushforward weights and coupling kernels: a_bar=Q^T a, K_bar=Q^T K Q. | **DISCLOSED classical theorem**, COUPLING_MASS.md T21; native and independently computed exact matrix controls | Valid on class-constant tests; changed source features require a finer quotient |
+| PGM-22 | Actual Gaussian theta H4(2)=-16 yields squared source amplitude 256, but diagonal-only path squares 64; H2(2)=0 imaginary channel has diagonal energy 16. | **DISCLOSED source-exact counterexamples**, T22; Gaussian lattice code and focused tests | Not an automorphic Petersson norm or a signed Weil positivity certificate |
+| PGM-23 | For any r, even/odd parity source supports agree on every proper-coordinate marginal but differ at r-way parity. | **DISCLOSED classical no-go**, T23 induction and tests for r=2..7 | No fixed order of marginal moments suffices for all possible source classes |
+| PGM-24 | A finite r-way source tensor has a unique quotient tensor preserving all class-constant r-multilinear tests. | **DISCLOSED classical theorem**, T24 and exact arbitrary-arity tensor checks | Infinite arity/analytic completion needs a separately justified topology and limits |
+| PGM-25 | Exact signed source weights and pair kernels can be transported through the source-retained causal-memory behavioral quotient without losing their declared linear/bilinear values. | **DISCLOSED finite source theorem**, T25 and end-to-end causal-memory integration control | The declared weights themselves require independent source authentication; not probabilistic normalization |
+
 ## Diagnostic separation
 
 - **Contact \(\kappa\):** no external sensor/physical contact; only declared mathematical sources and a local Python execution.
