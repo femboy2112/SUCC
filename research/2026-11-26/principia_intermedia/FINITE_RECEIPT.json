@@ -1,0 +1,126 @@
+{
+  "scope": "Exact BigInt rational finite controls; not universal proof or Lean verification",
+  "counts": {
+    "sourceMoments": 32,
+    "oddChartPartitions": 626,
+    "parityObservations": 8764,
+    "positiveNegativeControls": 5,
+    "graphOracles": 250,
+    "volumeOracles": 25,
+    "heightOracles": 36
+  },
+  "medianGrid": [
+    {
+      "denominator": 3,
+      "numerator": 1,
+      "residual": "-5261/10935",
+      "v2": 0
+    },
+    {
+      "denominator": 9,
+      "numerator": 4,
+      "residual": "2978977/7971615",
+      "v2": 0
+    },
+    {
+      "denominator": 27,
+      "numerator": 11,
+      "residual": "107349371/1162261467",
+      "v2": 0
+    },
+    {
+      "denominator": 81,
+      "numerator": 32,
+      "residual": "-9807884879/4236443047215",
+      "v2": 0
+    },
+    {
+      "denominator": 243,
+      "numerator": 96,
+      "residual": "-9807884879/4236443047215",
+      "v2": 0
+    },
+    {
+      "denominator": 729,
+      "numerator": 288,
+      "residual": "-9807884879/4236443047215",
+      "v2": 0
+    },
+    {
+      "denominator": 2187,
+      "numerator": 865,
+      "residual": "1967462987692585027/1641284836972685388135",
+      "v2": 0
+    },
+    {
+      "denominator": 6561,
+      "numerator": 2594,
+      "residual": "32914201481873393809/1196496646153087647950415",
+      "v2": 0
+    },
+    {
+      "denominator": 19683,
+      "numerator": 7782,
+      "residual": "32914201481873393809/1196496646153087647950415",
+      "v2": 0
+    },
+    {
+      "denominator": 59049,
+      "numerator": 23346,
+      "residual": "32914201481873393809/1196496646153087647950415",
+      "v2": 0
+    }
+  ],
+  "atomicLP": [
+    {
+      "N": 4,
+      "n": 1,
+      "vertices": 12,
+      "signChanges": 1,
+      "fractional": 1,
+      "objective": "4681856741/32212254720",
+      "weights": "exact BBP Q cell masses",
+      "nodes": "midpoint t^8, atomic quadrature not exact continuous higher moments"
+    },
+    {
+      "N": 5,
+      "n": 2,
+      "vertices": 12,
+      "signChanges": 2,
+      "fractional": 2,
+      "objective": "774705083169029/57220458984375000",
+      "weights": "exact BBP Q cell masses",
+      "nodes": "midpoint t^8, atomic quadrature not exact continuous higher moments"
+    },
+    {
+      "N": 6,
+      "n": 3,
+      "vertices": 12,
+      "signChanges": 3,
+      "fractional": 3,
+      "objective": "21874910986645171927213/62883248276119710691491840",
+      "weights": "exact BBP Q cell masses",
+      "nodes": "midpoint t^8, atomic quadrature not exact continuous higher moments"
+    },
+    {
+      "N": 7,
+      "n": 2,
+      "vertices": 60,
+      "signChanges": 2,
+      "fractional": 2,
+      "objective": "990307863099728121/35746935301330176448",
+      "weights": "exact BBP Q cell masses",
+      "nodes": "midpoint t^8, atomic quadrature not exact continuous higher moments"
+    },
+    {
+      "N": 7,
+      "n": 3,
+      "vertices": 30,
+      "signChanges": 3,
+      "fractional": 3,
+      "objective": "1594827787995525448834155/1648591746976348020140854784",
+      "weights": "exact BBP Q cell masses",
+      "nodes": "midpoint t^8, atomic quadrature not exact continuous higher moments"
+    }
+  ]
+}
