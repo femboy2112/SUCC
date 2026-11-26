@@ -1,0 +1,20 @@
+{
+  "algebra_controls": 1824,
+  "arithmetic": "exact Fraction/integer",
+  "finite_models": {
+    "anchored_graphs": 1024,
+    "seam_models": 65536,
+    "source_mutations_rejected": 14622,
+    "source_tag_cases": 16384
+  },
+  "retained_history_controls": 5,
+  "scalar_holdouts": {
+    "lattice_paths": 114,
+    "rational_scalar_paths": 12400,
+    "sharp_half_jump_controls": 3,
+    "strict_lattice_mutations": 2
+  },
+  "scope": "Finite controls only; universal claims use paper proofs.",
+  "status": "PASS",
+  "transport_models": 1944
+}
