@@ -1,0 +1,33 @@
+{
+  "arithmetic": "exact Fraction/integer",
+  "boundary": "Finite calibration only; continuum and universal claims use paper proofs.",
+  "counting": "Eight prime cases and five path cases per source pair, plus nine malformed places and eighteen capacity cases. Real reconstruction assertions are also checked but are not separately added to the preserved count.",
+  "independent_exact_checks": 33073,
+  "scope": {
+    "capacity_cases": 18,
+    "malformed_place_cases": 9,
+    "path": "infinity -> trivial -> 5",
+    "path_parameters": [
+      "1/13",
+      "6/13",
+      "1/2",
+      "7/13",
+      "12/13"
+    ],
+    "prime_readout_exponent": "3/7",
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "real_reconstruction_checks": 2542,
+    "source_denominators": "1 through 31",
+    "source_numerators": "-41 through 41, excluding zero"
+  },
+  "status": "PASS"
+}

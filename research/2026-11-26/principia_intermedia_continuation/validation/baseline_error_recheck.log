@@ -1,0 +1,55 @@
+Read-only scoped recheck of the sole full-suite error.
+cwd: /workspace/scratch/940863eddf5f/SUCC
+python: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python
+base: c5757d48a6788e1513e4276b111f7cdad075055f
+installed distribution: absent (fresh checkout not installed editable)
+Inherited byte identity scripts/meta_choice_descent_probe.py: base=9d9dc5ff871d7a30e44a091d56b971a7e7425aba working=9d9dc5ff871d7a30e44a091d56b971a7e7425aba match=True
+Inherited byte identity tests/test_eodcs_meta_choice_descent.py: base=7aa937a49eb72aac0e4f567fcdf8ed95975e5c90 working=7aa937a49eb72aac0e4f567fcdf8ed95975e5c90 match=True
+
+bare exact inherited unittest method
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+PYTHONPATH: <unset>
+exit: 1
+stdout:
+stderr:
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ERROR
+
+======================================================================
+ERROR: test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/940863eddf5f/SUCC/tests/test_eodcs_meta_choice_descent.py", line 141, in test_exact_probe_receipt_and_independent_count
+    run = subprocess.run(
+          ^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', 'scripts/meta_choice_descent_probe.py']' returned non-zero exit status 1.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.026s
+
+FAILED (errors=1)
+
+bare script exposes captured import error
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/meta_choice_descent_probe.py
+PYTHONPATH: <unset>
+exit: 1
+stdout:
+stderr:
+Traceback (most recent call last):
+  File "/workspace/scratch/940863eddf5f/SUCC/scripts/meta_choice_descent_probe.py", line 11, in <module>
+    from observational_succ.meta_choice_descent import (
+ModuleNotFoundError: No module named 'observational_succ'
+
+same exact inherited unittest method with PYTHONPATH=.
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+PYTHONPATH: .
+exit: 0
+stdout:
+stderr:
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.102s
+
+OK
