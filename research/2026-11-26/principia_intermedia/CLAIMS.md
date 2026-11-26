@@ -27,3 +27,11 @@
 | REF-4 | Real observer null completion implies p-adic completion | REFUTED by B3 on authentic BBP μ | Construct a joint source chart or explicit different-place transport. |
 
 **TLICA separation:** κ/contact = declared source and access (not physical calibration); φ/relative indistinguishability = specific moment/target quotient and completion topology; σ/source-map adequacy = original four poles plus zero seed, actual compact RH partner/normalizer maps remain unimplemented; ρ/commitment = not evidence, prioritize hostile controls; μ/probe = exact graph oracle, rational sign/moment oracle and height controls, no native automorphic executable. Cl(Tools) = stated source operations, not all possible observations. Coherence and rank are different from discrimination and source truth. Finite exact controls corroborate finite scopes only; universal claims follow from written proofs. 
+
+### Follow-on claims
+
+| ID | Claim | Status / proof | Boundary |
+|---|---|---|---|
+| B6 | Exact deepest-cut congruence for mixed rational denominators; odd deepest count forces valuation; all even moment t-medians irrational | PROVED PAPER, [B6](BBP_PLACE_COMPLETION.md) | Even deepest count necessary not sufficient; no general exclusion for arbitrary multi-cuts. |
+| B7 | Same rational BBP residual has product-formula compensation; fixed p-power grid p≠5 has exact p-adic blow-up | PROVED PAPER, B7 | No fixed place claim for unrestricted denominators; not actual RH or digit carries. |
+| B8 | Maintain place vector and common normalizer in coherent completion | PROVED boundary example, B8 | Need actual common source chart and chronological source transport for normality. |

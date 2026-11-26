@@ -10,3 +10,5 @@ To replay standalone finite controls (Node.js 18+ with BigInt):
     node probe.mjs
 
 The code is self-contained; no network, decimal approximations or external packages. It computes exact rational results. The entire repo gate and Lean rebuild remain NOT RUN; see validation. 
+
+**Follow-on:** [BBP_PLACE_COMPLETION.md](BBP_PLACE_COMPLETION.md) generalizes the parity theorem to mixed denominator depths, proves every even unweighted moment median irrational in t, and proves exact p-adic divergence as the real median is approached on p-power grids. A second executable independent Fraction oracle was run locally; see [PYTHON_RECEIPT.json](PYTHON_RECEIPT.json).

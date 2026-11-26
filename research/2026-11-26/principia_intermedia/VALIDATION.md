@@ -16,3 +16,7 @@ Raw results: FINITE_RECEIPT.json. For atom LP, the counts listed per instance su
 ## Not run / access boundary
 
 The container's git ls-remote failed DNS resolution for github.com; there is no full local repo checkout. GitHub connector was used to pin, create and update a non-main branch and to fetch sources. Full SUCC provenance, inherited root unittest suite, observer foundations probe, ordinal probe, remote hosted CI, external peer review, Lean compilation and independent kernel replay were NOT RUN in this round. The external compact Lean verification is separately cited in RH_ORACLE.md, not a local result. Standalone script's Node CLI entry point was generated from the executed code; Node itself was not separately launched in this round. No proof-assistant certification of I1–O4 is claimed. Review/draft only; do not merge until maintainer and required root gates pass.
+
+## Independent Python follow-on
+
+A separate Fraction implementation ran in the container: 360 mixed rational partitions / 2,520 moment checks, 1,673 odd-deepest-count valuation and 224 even-deepest-count congruence checks (other cases odd denominator), 1,683 single-cut even moment checks, and 24 prime-grid median tests. It uses a different language/runtime and factored cell integration, with fresh mixed-denominator regimes. See BBP_PLACE_COMPLETION.md and PYTHON_RECEIPT.json. Git blob expected 966409aef8f2efb3773dc39a618b170ec630f2de; receipt expected 2b95feb49e586d1b572a7ecdb93287f5db1c037b. Full root/Lean gates remain not run.
