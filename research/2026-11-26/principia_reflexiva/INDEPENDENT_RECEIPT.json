@@ -1,0 +1,66 @@
+{
+  "checks": {
+    "almost_sure_infinite_mean": 50,
+    "coupon_mean": 1,
+    "cyclic_full_support_bound": 3550,
+    "cyclic_normalization": 8,
+    "divisibility_root": 2080,
+    "graph_absorption_equations": 32,
+    "graph_two_step_bound": 72,
+    "matrix_composition_all_columns": 7776,
+    "phase_4_alias_count": 1,
+    "phase_8_alias_count": 1,
+    "phase_carrier_size": 1,
+    "positive_hazards_not_enough": 50
+  },
+  "coupon_mean": "25/3",
+  "graphs": {
+    "reachableGraphs": 32,
+    "trapGraphs": 17
+  },
+  "phase": {
+    "aliases": {
+      "4": [
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          81
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          4,
+          64
+        ],
+        [
+          5,
+          80
+        ],
+        [
+          6,
+          96
+        ],
+        [
+          8,
+          128
+        ],
+        [
+          16,
+          81
+        ]
+      ],
+      "8": []
+    },
+    "smoothCount": 38
+  },
+  "scope": "Independent finite exact checks; no infinite theorem/ML validation"
+}
