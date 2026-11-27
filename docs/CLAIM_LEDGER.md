@@ -1272,3 +1272,9 @@ estimate (TO-01/04). Each entry links a proof, hypotheses, hostile controls and
 next falsifier. Bounded Lean replay is explicitly distinguished from reproducing
 the external 4D Yang–Mills endpoint. This draft does not promote pi normality,
 RH, or the Yang–Mills mass gap; its parent PR #613 remains unmerged.
+
+## Grokking Abiogenesis — recursive differential toolkit closure (2026-11-26)
+
+See [research note](../research/2026-11-26/grokking_abiogenesis/RESEARCH_NOTE.md). GA-01 imports CG-04 (finite linear saturation); GA-02 finite-rival observational equivalence, GA-03 bounded compilation, GA-04 finite order contrast, and GA-05 conditional-hazard survival are scoped elementary deductions with stated assumptions and countermodels. Recursive learning, semantic rarity and stochastic nucleation as general mechanisms are CONJECTURED; empirical transfer and human correspondence are UNVERIFIED. No new SUCC kernel or arithmetic frontier claim. Validation suite not run on this documentation branch.
+
+**Basis-emergence extension (2026-11-26):** the same [research note](../research/2026-11-26/grokking_abiogenesis/RESEARCH_NOTE.md) adds GA-06 (novel readout iff it separates an old observation fiber; orthogonal residual conditional on metric), GA-07 (commuting mixed-history rank increase with null and in-span controls), and GA-08 (Boolean-lattice support-depth rank and complete signed inversion). DISCLOSED within the constructed finite linear domains by proof; [standalone exact probe](../research/2026-11-26/grokking_abiogenesis/basis_emergence_probe.mjs) and [raw receipt](../research/2026-11-26/grokking_abiogenesis/basis_emergence_receipt.json) record finite calibration, not full repo validation or neural evidence. Literal 90-degree learning-curve interpretation is unsupported; empirical functional-basis nucleation remains CONJECTURED/UNVERIFIED.
