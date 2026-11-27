@@ -1,0 +1,208 @@
+{
+  "scope": "Standalone exact JavaScript function run in ChatGPT connector execution; no Node CLI or full repository suite executed. The preserved .mjs wraps the same function in console.log. No neural data.",
+  "result": {
+    "matrix_controls": [
+      {
+        "name": "mixed_commuting",
+        "P": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "PA": [
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "PB": [
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "PAB": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "PBA": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "mixed": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "commute": true,
+        "pureRank": 3,
+        "mixedRank": 4
+      },
+      {
+        "name": "additive_null",
+        "P": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "PA": [
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "PB": [
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "PAB": [
+          "1",
+          "1",
+          "1",
+          "0"
+        ],
+        "PBA": [
+          "1",
+          "1",
+          "1",
+          "0"
+        ],
+        "mixed": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "commute": true,
+        "pureRank": 3,
+        "mixedRank": 3
+      },
+      {
+        "name": "mixed_order_sensitive",
+        "P": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "PA": [
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "PB": [
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "PAB": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "PBA": [
+          "1",
+          "1",
+          "1",
+          "0"
+        ],
+        "mixed": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "commute": false,
+        "pureRank": 3,
+        "mixedRank": 4
+      }
+    ],
+    "in_span_nonzero": {
+      "mixed": "2",
+      "rank": 1
+    },
+    "lattice": [
+      {
+        "m": 1,
+        "dimension": 2,
+        "mobiusIdentity": true,
+        "ranks": [
+          1,
+          2
+        ]
+      },
+      {
+        "m": 2,
+        "dimension": 4,
+        "mobiusIdentity": true,
+        "ranks": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "m": 3,
+        "dimension": 8,
+        "mobiusIdentity": true,
+        "ranks": [
+          1,
+          4,
+          7,
+          8
+        ]
+      },
+      {
+        "m": 4,
+        "dimension": 16,
+        "mobiusIdentity": true,
+        "ranks": [
+          1,
+          5,
+          11,
+          15,
+          16
+        ]
+      },
+      {
+        "m": 5,
+        "dimension": 32,
+        "mobiusIdentity": true,
+        "ranks": [
+          1,
+          6,
+          16,
+          26,
+          31,
+          32
+        ]
+      },
+      {
+        "m": 6,
+        "dimension": 64,
+        "mobiusIdentity": true,
+        "ranks": [
+          1,
+          7,
+          22,
+          42,
+          57,
+          63,
+          64
+        ]
+      }
+    ]
+  }
+}
