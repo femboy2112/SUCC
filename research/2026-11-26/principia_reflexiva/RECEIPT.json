@@ -1,0 +1,112 @@
+{
+  "execution": "Executed probe() in ChatGPT JS connector runtime; exact integer/BigInt checks; .mjs wraps the same function; Node CLI not run",
+  "development_failure": "First attempt had a malformed equivalence assertion in phase_grid_separation. Replaced with independent full grid enumeration, reran all groups; added zero sentinel guard to selector.",
+  "scope": "Exact finite calibration; no neural data, no infinite theorem or full SUCC validation",
+  "counts": {
+    "graph_dp_vs_walks": 392,
+    "graph_unreachable_survival": 312,
+    "graph_uniform_block_tail": 384,
+    "coupon_inclusion_exclusion": 21,
+    "coupon_union_bound": 20,
+    "summable_hazard_telescoping": 50,
+    "infinite_mean_hazard_telescoping": 50,
+    "tree_boundary": 23,
+    "tree_harmonic": 276,
+    "tree_return_below_half": 23,
+    "mixed_decoder": 625,
+    "mixed_commute": 625,
+    "additive_null": 625,
+    "pure_history_alias": 2500,
+    "phase_grid_separation": 1406,
+    "phase_positive_control": 1,
+    "phase_refinement": 1,
+    "root_selector": 12,
+    "matrix_units": 1728,
+    "matrix_unit_product": 20736,
+    "cocycle": 15625,
+    "hexagon_left": 15625,
+    "hexagon_right": 15625
+  },
+  "graphs": {
+    "reachableGraphs": 32,
+    "trapGraphs": 17
+  },
+  "coupon": [
+    {
+      "t": 0,
+      "complete": "0",
+      "total": "1"
+    },
+    {
+      "t": 4,
+      "complete": "24",
+      "total": "256"
+    },
+    {
+      "t": 8,
+      "complete": "40824",
+      "total": "65536"
+    },
+    {
+      "t": 12,
+      "complete": "14676024",
+      "total": "16777216"
+    },
+    {
+      "t": 20,
+      "complete": "1085570781624",
+      "total": "1099511627776"
+    }
+  ],
+  "phase": {
+    "smoothCount": 38,
+    "aliases": {
+      "4": [
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          81
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          4,
+          64
+        ],
+        [
+          5,
+          80
+        ],
+        [
+          6,
+          96
+        ],
+        [
+          8,
+          128
+        ],
+        [
+          16,
+          81
+        ]
+      ],
+      "8": []
+    }
+  },
+  "tree": {
+    "limit": "1/2 from depth 1"
+  },
+  "hazards": {
+    "summable_limit": "1/2",
+    "divergent_survival": "1/(k+1)"
+  }
+}
